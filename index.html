@@ -130,13 +130,14 @@ let allCards = []; // for search
 async function init() {
   try {
     const res = await fetch(BASE + 'manifest.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     manifest = await res.json();
     renderDateStrip();
     // Load latest date
     const latest = manifest.dates[manifest.dates.length - 1];
     await loadDate(latest);
   } catch(e) {
-    document.getElementById('content').innerHTML = '<div class="loading">无法加载数据，请确认 data/manifest.json 存在</div>';
+    document.getElementById('content').innerHTML = `<div class="loading">无法加载数据<br><small style="color:#666">${e.message}<br>请确认 data/manifest.json 存在且路径正确</small></div>`;
   }
 }
 
@@ -167,10 +168,11 @@ async function loadDate(date) {
 
   try {
     const res = await fetch(BASE + date + '.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}: ${BASE}${date}.json`);
     currentData = await res.json();
     renderContent();
   } catch(e) {
-    document.getElementById('content').innerHTML = '<div class="loading">该日期暂无数据</div>';
+    document.getElementById('content').innerHTML = `<div class="loading">该日期暂无数据<br><small style="color:#666">${e.message}</small></div>`;
   }
 }
 
