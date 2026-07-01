@@ -104,7 +104,9 @@ footer{margin-top:40px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 .digest-item{padding:14px 18px;border-radius:8px;border-left:3px solid var(--gold);background:var(--gold-light);cursor:pointer;transition:all .2s}
 .digest-item:hover{transform:translateX(2px);box-shadow:0 2px 8px rgba(196,155,44,.1)}
 .digest-item .di-label{font-size:11px;font-weight:700;letter-spacing:.5px;margin-bottom:6px}
-.digest-item .di-text{font-size:13px;color:var(--ink2);line-height:1.8}
+.digest-item .di-lines{display:flex;flex-direction:column;gap:0}
+.di-line{font-size:13px;color:var(--ink2);line-height:1.6;padding:5px 8px;border-radius:4px;cursor:pointer;transition:background .15s}
+.di-line:hover{background:rgba(0,0,0,.04)}
 
 @media(max-width:600px){
   .wrap{padding:0 14px 60px}
@@ -250,16 +252,20 @@ function renderDigest() {
   let html = `<div class="digest-title">当日速览 · ${currentDate} · 共 ${total} 条</div><div class="digest-grid">`;
   currentData.digest.forEach(d => {
     const info = colorMap[d.id] || {color: '#C49B2C', title: d.id, count: 0};
-    html += `<div class="digest-item" style="border-left-color:${info.color};background:${info.color}08" onclick="switchTab('${d.id}')">
+    const lines = d.text.split('\n').filter(l => l.trim());
+    html += `<div class="digest-item" style="border-left-color:${info.color};background:${info.color}08">
       <div class="di-label" style="color:${info.color}">${info.title} · ${info.count} 篇</div>
-      <div class="di-text">${d.text.replace(/\n/g, '<br>')}</div>
-    </div>`;
+      <div class="di-lines">`;
+    lines.forEach((line, i) => {
+      html += `<div class="di-line" onclick="jumpToCard('${d.id}', ${i})">${line}</div>`;
+    });
+    html += `</div></div>`;
   });
   html += '</div>';
   el.innerHTML = html;
 }
 
-function switchTab(tab) {
+function switchTab(tab, scrollToId) {
   currentTab = tab;
   renderTabs();
   if (tab === 'digest') {
@@ -268,7 +274,18 @@ function switchTab(tab) {
   } else {
     document.getElementById('digest').style.display = 'none';
     renderContent();
+    if (scrollToId) {
+      setTimeout(() => {
+        const el = document.getElementById(scrollToId);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 50);
+    }
   }
+}
+
+function jumpToCard(sectionId, itemIndex) {
+  const cardId = `card-${sectionId}-${itemIndex}`;
+  switchTab(sectionId, cardId);
 }
 
 function renderContent() {
@@ -284,7 +301,7 @@ function renderContent() {
       html += `<div class="sec-heading"><span class="sec-dot" style="background:${sec.color}"></span>${sec.title} · ${sec.title_en}（${sec.items.length}）</div>`;
     }
 
-    sec.items.forEach(item => {
+    sec.items.forEach((item, itemIdx) => {
       const borderColor = sec.color;
       const idxColor = sec.color;
       const idxBg = sec.color + '12';
@@ -299,7 +316,7 @@ function renderContent() {
       const tagsHtml = item.tags.map(t => `<span class="badge">${t}</span>`).join('');
 
       html += `
-        <article class="card" style="border-left-color:${borderColor}" data-section="${sec.id}" data-searchable="${(item.title + ' ' + item.summary + ' ' + item.analysis + ' ' + item.en_title + ' ' + item.tags.join(' ')).toLowerCase()}">
+        <article class="card" id="card-${sec.id}-${itemIdx}" style="border-left-color:${borderColor}" data-section="${sec.id}" data-searchable="${(item.title + ' ' + item.summary + ' ' + item.analysis + ' ' + item.en_title + ' ' + item.tags.join(' ')).toLowerCase()}">`
           <div class="card-top">
             <span class="card-idx" style="color:${idxColor};background:${idxBg}">${item.idx}</span>
             <span class="badge">${item.source}</span>
