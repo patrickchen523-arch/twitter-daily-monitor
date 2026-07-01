@@ -72,6 +72,17 @@ header{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.95);backdro
 .card .lab.analysis{color:var(--blue);background:var(--blue-light)}
 .card .val{margin:4px 0 0;color:var(--ink2);font-size:14px;line-height:1.75}
 
+/* Expand/collapse full tweet */
+.expand-wrap{margin:8px 0;text-align:center}
+.expand-btn,.collapse-btn{display:inline-flex;align-items:center;gap:4px;cursor:pointer;font-size:11px;color:var(--ink3);padding:4px 10px;border-radius:4px;transition:color .2s}
+.expand-btn:hover,.collapse-btn:hover{color:var(--gold)}
+.expand-arrow{font-size:9px}
+.expand-content{display:none;margin:10px 0;padding:12px 14px;background:var(--bg);border:1px solid var(--border-light);border-radius:6px;text-align:left;font-size:13px;color:var(--ink2);line-height:1.7;font-style:italic}
+.collapse-btn{display:none}
+.expand-wrap.open .expand-btn{display:none}
+.expand-wrap.open .expand-content{display:block}
+.expand-wrap.open .collapse-btn{display:inline-flex}
+
 /* Section heading (hidden when tab filtering, shown for "all") */
 .sec-heading{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin:28px 0 10px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;color:var(--ink3)}
 .sec-dot{width:7px;height:7px;border-radius:50%}
@@ -333,6 +344,17 @@ function renderContent() {
           <div class="link"><a href="${item.link}" target="_blank">${item.link.replace('https://','')}</a></div>
           ${mediaHtml}
           <div class="field"><span class="lab summary">摘要</span><p class="val">${item.summary}</p></div>
+          <div class="expand-wrap">
+            <div class="expand-btn" onclick="this.parentElement.classList.toggle('open')">
+              <span class="expand-arrow">▼</span>
+              <span class="expand-text">展开完整推文</span>
+            </div>
+            <div class="expand-content"><p>${item.full_text || item.en_title}</p></div>
+            <div class="collapse-btn" onclick="this.parentElement.classList.toggle('open')">
+              <span class="expand-arrow">▲</span>
+              <span class="expand-text">收起完整推文</span>
+            </div>
+          </div>
           <div class="field"><span class="lab analysis">观点解读</span><p class="val">${item.analysis}</p></div>
           ${renderEnrichment(item)}
         </article>`;
