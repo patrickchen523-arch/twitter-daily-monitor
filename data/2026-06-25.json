@@ -6,6 +6,24 @@
     "selected_count": 17,
     "crawl_time": "2026-06-26 16:00"
   },
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Agent 记忆系统 12 方案实测无通用赢家；单 Prompt 用 Codex+GPT-5.5 生成可玩赛车原型；SEGA 借 ARG 偷偷训练 AI 遭社区反弹。"
+    },
+    {
+      "id": "industry",
+      "text": "Bungie 大裁员波及 Destiny 大部分团队，白宫发争议 meme；Xbox 8月起全线涨价 $100-150；GTA 6 无光盘引爆数字所有权讨论。"
+    },
+    {
+      "id": "indie",
+      "text": "Deltarune Ch5 Steam 同时在线 29 万创独游新纪录；Valve 开放 SteamOS，任何厂商可造 Steam Machine。"
+    },
+    {
+      "id": "tools",
+      "text": "UE 5.8 发布 Zebra 角色动画示例；Unity 6.5 大幅提升 2D 性能；PixiJS 实验 2D→3D 渲染；RealityScan 支持 AMD GPU。"
+    }
+  ],
   "sections": [
     {
       "id": "ai",
@@ -244,7 +262,22 @@
           "link": "https://x.com/SteamDB/status/2069886544987533818",
           "media": null,
           "summary": "Toby Fox 的 Deltarune Ch5 创下 291,816 同时在线，好评率 96.94%。Chapter 6 确认 2027 年推出。",
-          "analysis": "个人开发者独游作品达近 30 万同时在线，证明强 IP + 分章节发行策略有效。Toby Fox 模式是独立开发者长线 IP 经营标杆。"
+          "analysis": "个人开发者独游作品达近 30 万同时在线，证明强 IP + 分章节发行策略有效。Toby Fox 模式是独立开发者长线 IP 经营标杆。",
+          "enrichment": {
+            "game_name": "Deltarune",
+            "genre": "RPG / ????",
+            "developer": "Toby Fox???????",
+            "platforms": [
+              "Steam",
+              "Switch",
+              "PS4/5"
+            ],
+            "price": "???Ch 1-2?",
+            "steam_rating": "96.94% ??",
+            "steam_url": "https://store.steampowered.com/app/1671210/DELTARUNE/",
+            "youtube_video": "https://www.youtube.com/watch?v=sXuEuVhJBos",
+            "why_notable": "Undertale ?? Toby Fox ????????? 29 ????????? IP + ?????????????"
+          }
         },
         {
           "idx": "热门独游 02",
