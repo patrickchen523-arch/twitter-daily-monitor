@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Twitter监控日报</title>
+<style>
+:root{
+  --ink:#16181d;--panel:#1e2127;--panel2:#23272f;--line:#33373f;
+  --text:#e9eaec;--muted:#9aa0aa;--soft:#c7ccd4;
+  --red:#D7263D;--gold:#E8B04B;--ai:#a78bfa;--blue:#60a5fa;
+  --accent:#D7263D;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--ink);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding:0 24px 80px}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(22,24,29,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.masthead{max-width:900px;margin:0 auto;padding:14px 24px 0;display:flex;align-items:center;justify-content:space-between}
+.masthead h1{font-size:20px;font-weight:800;letter-spacing:1px}
+.search{display:flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:20px;padding:5px 14px;background:var(--panel)}
+.search:focus-within{border-color:var(--ai)}
+.search input{border:0;background:transparent;outline:0;font-size:13px;color:var(--text);width:180px}
+.search input::placeholder{color:var(--muted)}
+.navbar{max-width:900px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:28px}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;padding:10px 0;cursor:pointer;position:relative;font-weight:500}
+nav a.on{color:var(--text);font-weight:700}
+nav a.on::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--accent)}
+
+/* Date strip */
+.datestrip{display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;margin:20px 0 24px;padding-bottom:14px;border-bottom:1px solid var(--line);scrollbar-width:thin}
+.datestrip::-webkit-scrollbar{height:6px}
+.datestrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+.datestrip button{flex:0 0 auto;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 14px;cursor:pointer;color:var(--text);font-size:13px;font-weight:600;transition:.15s}
+.datestrip button:hover{border-color:var(--soft)}
+.datestrip button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+
+/* Stats bar */
+.stats-bar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.stat-pill{font-size:12px;font-weight:600;padding:4px 12px;border-radius:999px;cursor:pointer;transition:.15s;border:1px solid transparent}
+.stat-pill:hover{opacity:.85}
+.stat-pill.ai{background:rgba(167,139,250,.15);color:var(--ai);border-color:rgba(167,139,250,.3)}
+.stat-pill.industry{background:rgba(215,38,61,.12);color:var(--red);border-color:rgba(215,38,61,.3)}
+.stat-pill.indie{background:rgba(232,176,75,.12);color:var(--gold);border-color:rgba(232,176,75,.3)}
+.stat-pill.tools{background:rgba(96,165,250,.12);color:var(--blue);border-color:rgba(96,165,250,.3)}
+
+/* Section */
+.sec-heading{font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin:30px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px}
+.sec-dot{width:8px;height:8px;border-radius:50%}
+
+/* Cards */
+.card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:10px;padding:20px 22px;margin:14px 0;transition:border-color .2s}
+.card:hover{border-color:#4a5568}
+.card-top{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.card-idx{font-weight:800;font-size:12px;letter-spacing:1px}
+.badge{font-size:11px;font-weight:700;color:#fff;background:#3a3f48;border:1px solid #474d57;border-radius:5px;padding:2px 7px}
+.card h2{font-size:17px;margin:4px 0;color:#fff;line-height:1.4;font-weight:700}
+.card .en-title{font-size:12px;color:var(--muted);font-style:italic;margin-bottom:8px}
+.card .link{font-size:12px;margin:6px 0 10px;word-break:break-all}
+.card .link a{color:#ff7a86;text-decoration:none}
+.card .link a:hover{text-decoration:underline}
+.card .media{margin:12px 0;border-radius:8px;overflow:hidden}
+.card .media img{width:100%;max-height:360px;object-fit:cover;display:block;border-radius:8px}
+.card .media video{width:100%;max-height:360px;border-radius:8px;display:block}
+.card .field{margin:8px 0}
+.card .lab{display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;color:var(--red);margin-bottom:2px}
+.card .val{margin:2px 0 0;color:var(--soft);font-size:14px;line-height:1.7}
+
+/* Empty / loading */
+.loading{text-align:center;color:var(--muted);padding:60px 0;font-size:14px}
+.no-results{text-align:center;color:var(--muted);padding:40px 0;font-size:14px;display:none}
+
+/* Footer */
+footer{margin-top:40px;text-align:center;color:#5d636d;font-size:12px;padding:20px 0;border-top:1px solid var(--line)}
+
+@media(max-width:600px){
+  .wrap{padding:0 12px 60px}
+  .masthead{padding:10px 12px 0}
+  .navbar{padding:0 12px;gap:18px;overflow-x:auto}
+  .search input{width:120px}
+  .card{padding:16px}
+  .card h2{font-size:15px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="masthead">
+    <h1>Twitter监控日报</h1>
+    <div class="search">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="searchInput" placeholder="搜索条目..." oninput="handleSearch()">
+    </div>
+  </div>
+  <div class="navbar">
+    <nav id="navTabs">
+      <a class="on" data-tab="daily">Twitter日报</a>
+      <!-- 后续扩展 -->
+      <!-- <a data-tab="weekly">周报</a> -->
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <!-- Date strip -->
+  <div class="datestrip" id="dateStrip"></div>
+
+  <!-- Stats pills (jump anchors) -->
+  <div class="stats-bar" id="statsBar"></div>
+
+  <!-- Content area -->
+  <div id="content">
+    <div class="loading">加载中...</div>
+  </div>
+
+  <div class="no-results" id="noResults">未找到匹配的条目</div>
+</div>
+
+<footer>Twitter监控日报 · Game & Tech Daily Monitor</footer>
+
+<script>
+const BASE = 'data/';
+let manifest = null;
+let currentDate = null;
+let currentData = null;
+let allCards = []; // for search
+
+async function init() {
+  try {
+    const res = await fetch(BASE + 'manifest.json');
+    manifest = await res.json();
+    renderDateStrip();
+    // Load latest date
+    const latest = manifest.dates[manifest.dates.length - 1];
+    await loadDate(latest);
+  } catch(e) {
+    document.getElementById('content').innerHTML = '<div class="loading">无法加载数据，请确认 data/manifest.json 存在</div>';
+  }
+}
+
+function renderDateStrip() {
+  const strip = document.getElementById('dateStrip');
+  strip.innerHTML = '';
+  // Show dates in reverse (newest first)
+  const dates = [...manifest.dates].reverse();
+  dates.forEach(d => {
+    const btn = document.createElement('button');
+    const parts = d.split('-');
+    btn.textContent = parts[1] + '-' + parts[2];
+    btn.title = d;
+    btn.dataset.date = d;
+    btn.onclick = () => loadDate(d);
+    strip.appendChild(btn);
+  });
+}
+
+async function loadDate(date) {
+  currentDate = date;
+  // Update date strip active state
+  document.querySelectorAll('.datestrip button').forEach(b => {
+    b.classList.toggle('on', b.dataset.date === date);
+  });
+
+  document.getElementById('content').innerHTML = '<div class="loading">加载中...</div>';
+
+  try {
+    const res = await fetch(BASE + date + '.json');
+    currentData = await res.json();
+    renderContent();
+  } catch(e) {
+    document.getElementById('content').innerHTML = '<div class="loading">该日期暂无数据</div>';
+  }
+}
+
+function renderContent() {
+  const container = document.getElementById('content');
+  allCards = [];
+  let html = '';
+
+  // Stats bar
+  let statsHtml = '';
+  currentData.sections.forEach(sec => {
+    const cls = sec.id === 'ai' ? 'ai' : sec.id === 'industry' ? 'industry' : sec.id === 'indie' ? 'indie' : 'tools';
+    statsHtml += `<a href="#sec-${sec.id}" class="stat-pill ${cls}">${sec.title} ${sec.items.length} 篇</a>`;
+  });
+  document.getElementById('statsBar').innerHTML = statsHtml;
+
+  // Sections
+  currentData.sections.forEach(sec => {
+    html += `<div class="sec-heading" id="sec-${sec.id}"><span class="sec-dot" style="background:${sec.color};box-shadow:0 0 6px ${sec.color}"></span>${sec.title} · ${sec.title_en}（${sec.items.length} 篇）</div>`;
+
+    sec.items.forEach(item => {
+      allCards.push(item);
+      const borderColor = sec.color;
+      const idxColor = sec.color;
+      let mediaHtml = '';
+      if (item.media) {
+        if (item.media.type === 'video') {
+          mediaHtml = `<div class="media"><video src="${item.media.url}" controls muted playsinline preload="metadata"></video></div>`;
+        } else {
+          mediaHtml = `<div class="media"><img src="${item.media.url}" alt="" loading="lazy"></div>`;
+        }
+      }
+
+      const tagsHtml = item.tags.map(t => `<span class="badge">${t}</span>`).join('');
+
+      html += `
+        <article class="card" style="border-left-color:${borderColor}" data-searchable="${(item.title + ' ' + item.summary + ' ' + item.analysis + ' ' + item.en_title + ' ' + item.tags.join(' ')).toLowerCase()}">
+          <div class="card-top">
+            <span class="card-idx" style="color:${idxColor}">${item.idx}</span>
+            <span class="badge">${item.source}</span>
+            ${tagsHtml}
+          </div>
+          <h2>${item.title}</h2>
+          <div class="en-title">${item.en_title}（@${item.author}，${item.date}，♥${item.likes.toLocaleString()} / 👁${item.views.toLocaleString()}）</div>
+          <div class="link"><a href="${item.link}" target="_blank">${item.link.replace('https://','')}</a></div>
+          ${mediaHtml}
+          <div class="field"><span class="lab">摘要</span><p class="val">${item.summary}</p></div>
+          <div class="field"><span class="lab">观点解读</span><p class="val">${item.analysis}</p></div>
+        </article>`;
+    });
+  });
+
+  container.innerHTML = html;
+  document.getElementById('noResults').style.display = 'none';
+}
+
+function handleSearch() {
+  const query = document.getElementById('searchInput').value.trim().toLowerCase();
+  const cards = document.querySelectorAll('.card');
+  let visibleCount = 0;
+
+  if (!query) {
+    cards.forEach(c => c.style.display = '');
+    document.querySelectorAll('.sec-heading').forEach(s => s.style.display = '');
+    document.getElementById('noResults').style.display = 'none';
+    return;
+  }
+
+  cards.forEach(c => {
+    const text = c.dataset.searchable || '';
+    const match = text.includes(query);
+    c.style.display = match ? '' : 'none';
+    if (match) visibleCount++;
+  });
+
+  // Hide section headings if all their cards are hidden
+  document.querySelectorAll('.sec-heading').forEach(heading => {
+    let next = heading.nextElementSibling;
+    let hasVisible = false;
+    while (next && !next.classList.contains('sec-heading')) {
+      if (next.classList.contains('card') && next.style.display !== 'none') {
+        hasVisible = true;
+        break;
+      }
+      next = next.nextElementSibling;
+    }
+    heading.style.display = hasVisible ? '' : 'none';
+  });
+
+  document.getElementById('noResults').style.display = visibleCount === 0 ? 'block' : 'none';
+}
+
+// Tab switching (for future use)
+document.querySelectorAll('#navTabs a').forEach(a => {
+  a.onclick = () => {
+    document.querySelectorAll('#navTabs a').forEach(x => x.classList.remove('on'));
+    a.classList.add('on');
+  };
+});
+
+// Init
+init();
+</script>
+</body>
+</html>
