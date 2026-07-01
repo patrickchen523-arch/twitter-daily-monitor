@@ -16,7 +16,10 @@
         {
           "idx": "AI科技热点 01",
           "source": "陈成 · 原创分析",
-          "tags": ["AI Agent", "记忆架构"],
+          "tags": [
+            "AI Agent",
+            "记忆架构"
+          ],
           "title": "Agent 记忆系统实测：12 个方案无通用赢家，适配场景比堆复杂架构更重要",
           "en_title": "给 LLM Agent 堆越花哨的'记忆'架构，效果不一定越好。一篇新论文实测了 12 个记忆系统，没有通用赢家。",
           "author": "chenchengpro",
@@ -25,14 +28,17 @@
           "views": 13057,
           "link": "https://x.com/chenchengpro/status/2070128168879653017",
           "media": null,
-          "summary": "新论文将 Agent 记忆拆为"表示与存储、抽取、检索与路由、维护"四模块，实测 Mem0、Letta、Zep、Cognee、MemOS、MemTree、A-MEM、LightMem 等 12 个系统。结论：没有单一系统在所有场景胜出，适配具体任务上下文比盲目堆叠复杂架构更有效。",
-          "analysis": "对游戏开发中的 AI Agent 应用（NPC 行为、辅助编程 Agent、QA 自动化等）具有直接指导意义：不应迷信"最强记忆框架"，而应根据 Agent 的具体工作模式选择匹配的记忆方案。当前行业对 Agent 基础设施的投资正从"模型能力"转向"上下文管理工程"。"
+          "summary": "新论文将 Agent 记忆拆为\"表示与存储、抽取、检索与路由、维护\"四模块，实测 Mem0、Letta、Zep、Cognee、MemOS、MemTree、A-MEM、LightMem 等 12 个系统。结论：没有单一系统在所有场景胜出，适配具体任务上下文比盲目堆叠复杂架构更有效。",
+          "analysis": "对游戏开发中的 AI Agent 应用（NPC 行为、辅助编程 Agent、QA 自动化等）具有直接指导意义：不应迷信\"最强记忆框架\"，而应根据 Agent 的具体工作模式选择匹配的记忆方案。当前行业对 Agent 基础设施的投资正从\"模型能力\"转向\"上下文管理工程\"。"
         },
         {
           "idx": "AI科技热点 02",
           "source": "陈成 · 原创分析",
-          "tags": ["AI Agent", "工程实践"],
-          "title": "Agent Memory 的隐性失败模式：工作脉络断裂比"遗忘"更致命",
+          "tags": [
+            "AI Agent",
+            "工程实践"
+          ],
+          "title": "Agent Memory 的隐性失败模式：工作脉络断裂比\"遗忘\"更致命",
           "en_title": "cobi 这篇《Agents Need a Diary》点破了 agent memory 一个被低估的失败模式：问题很少是'agent 忘了一切'那么戏剧化，而是工作脉络断了。",
           "author": "chenchengpro",
           "date": "2026-06-25",
@@ -40,13 +46,16 @@
           "views": 5559,
           "link": "https://x.com/chenchengpro/status/2070140030585356725",
           "media": null,
-          "summary": "引述《Agents Need a Diary》核心洞察：Agent 的典型失败不是"忘了一切"，而是 context window 满了/任务切换后工作线索断裂。解法是让 Agent 在每次任务中断时主动写 handoff 日志。",
-          "analysis": "该问题在游戏开发实践中高度常见：使用 AI 辅助编程时，切换任务后返回，Agent 往往需要重新理解上下文。"主动写 handoff"的思路可直接应用于游戏团队的 AI 辅助工作流设计。"
+          "summary": "引述《Agents Need a Diary》核心洞察：Agent 的典型失败不是\"忘了一切\"，而是 context window 满了/任务切换后工作线索断裂。解法是让 Agent 在每次任务中断时主动写 handoff 日志。",
+          "analysis": "该问题在游戏开发实践中高度常见：使用 AI 辅助编程时，切换任务后返回，Agent 往往需要重新理解上下文。\"主动写 handoff\"的思路可直接应用于游戏团队的 AI 辅助工作流设计。"
         },
         {
           "idx": "AI科技热点 03",
           "source": "Givros · 实验展示",
-          "tags": ["AI 编程", "游戏原型"],
+          "tags": [
+            "AI 编程",
+            "游戏原型"
+          ],
           "title": "一句 Prompt 生成可玩赛车原型：Codex + GPT-5.5 + Three.js 的能力边界测试",
           "en_title": "I moved from fairground attractions to karting today. The idea: can one prompt generate a playable racing prototype with Codex + GPT-5.5 + Three.js?",
           "author": "givros",
@@ -54,14 +63,20 @@
           "likes": 21,
           "views": 1323,
           "link": "https://x.com/givros/status/2070218009420189781",
-          "media": {"type": "video", "url": "https://video.twimg.com/amplify_video/2070217789189582848/vid/avc1/1920x1040/IJJJYHhyO_eUkIDL.mp4?tag=28"},
+          "media": {
+            "type": "video",
+            "url": "https://video.twimg.com/amplify_video/2070217789189582848/vid/avc1/1920x1040/IJJJYHhyO_eUkIDL.mp4?tag=28"
+          },
           "summary": "开发者实验：用单条 prompt 让 Codex + GPT-5.5 生成包含 AI 赛车对手、圈速计时、碰撞系统的完整 Three.js 赛车原型。结果可玩，但距生产质量仍有距离。",
-          "analysis": "展示了 AI 辅助游戏原型开发的当前能力边界：单 prompt 可生成功能完整的可玩 demo，但精细调优仍需人工。对独立开发者意味着"验证玩法想法"的时间成本可从数天压缩至数分钟。"
+          "analysis": "展示了 AI 辅助游戏原型开发的当前能力边界：单 prompt 可生成功能完整的可玩 demo，但精细调优仍需人工。对独立开发者意味着\"验证玩法想法\"的时间成本可从数天压缩至数分钟。"
         },
         {
           "idx": "AI科技热点 04",
           "source": "Eurogamer · News",
-          "tags": ["AI 伦理", "用户数据"],
+          "tags": [
+            "AI 伦理",
+            "用户数据"
+          ],
           "title": "SEGA Sonic ARG 暗中训练 AI：借互动营销偷取用户数据授权，遭社区强烈反弹",
           "en_title": "SEGA faces backlash as Sonic the Hedgehog ARG sneakily asks for consent to train gen-AI on your data",
           "author": "eurogamer",
@@ -76,7 +91,10 @@
         {
           "idx": "AI科技热点 05",
           "source": "Tony出海 · 观察",
-          "tags": ["AI 行业", "国内市场"],
+          "tags": [
+            "AI 行业",
+            "国内市场"
+          ],
           "title": "智谱 AI 估值 9000 亿港元，但国内大模型应用层仍缺现象级产品",
           "en_title": "智谱AI当前市值：约 9000亿–1.1万亿港。也没听说他的那个 GLM 个人应用。DeepSeek 和 Kimi 都是好选手，也不争气",
           "author": "iamtonyzhu",
@@ -86,7 +104,7 @@
           "link": "https://x.com/iamtonyzhu/status/2069739871418368119",
           "media": null,
           "summary": "智谱估值飙升但 GLM 应用层存在感弱。DeepSeek、Kimi 等国内大模型产品技术强劲但消费级应用未形成突破。",
-          "analysis": "国内 AI"估值高、应用弱"的结构性矛盾。对游戏行业启示：国内大模型能力已足够支撑游戏开发辅助场景，但面向消费者的 AI 游戏产品仍处探索期，存在先发机会。"
+          "analysis": "国内 AI\"估值高、应用弱\"的结构性矛盾。对游戏行业启示：国内大模型能力已足够支撑游戏开发辅助场景，但面向消费者的 AI 游戏产品仍处探索期，存在先发机会。"
         }
       ]
     },
@@ -99,8 +117,11 @@
         {
           "idx": "游戏行业 01",
           "source": "PC Gamer · News",
-          "tags": ["裁员", "多家报道"],
-          "title": "Bungie 大裁员：Destiny 团队"大部分"被裁，白宫发争议 meme 引社会反弹",
+          "tags": [
+            "裁员",
+            "多家报道"
+          ],
+          "title": "Bungie 大裁员：Destiny 团队\"大部分\"被裁，白宫发争议 meme 引社会反弹",
           "en_title": "Amid mass layoffs at Bungie, the official White House X account issues sociopathic Destiny 2 meme",
           "author": "pcgamer",
           "date": "2026-06-25",
@@ -108,13 +129,16 @@
           "views": 80721,
           "link": "https://x.com/pcgamer/status/2070290276716061153",
           "media": null,
-          "summary": "Sony/Bungie 确认大规模裁员，Destiny 2 团队"绝大多数"成员被裁。工作室负责人 Justin Truman 辞职。白宫 X 账号同日发布 Destiny 2 meme 引发社会反弹。",
-          "analysis": "Bungie 持续裁员标志"活服大作"模式系统性风险显性化。白宫 meme 事件折射游戏文化已深度嵌入公共话语。多家媒体同步报道。"
+          "summary": "Sony/Bungie 确认大规模裁员，Destiny 2 团队\"绝大多数\"成员被裁。工作室负责人 Justin Truman 辞职。白宫 X 账号同日发布 Destiny 2 meme 引发社会反弹。",
+          "analysis": "Bungie 持续裁员标志\"活服大作\"模式系统性风险显性化。白宫 meme 事件折射游戏文化已深度嵌入公共话语。多家媒体同步报道。"
         },
         {
           "idx": "游戏行业 02",
           "source": "GameSpot · News",
-          "tags": ["硬件涨价", "多家报道"],
+          "tags": [
+            "硬件涨价",
+            "多家报道"
+          ],
           "title": "Xbox 全线涨价 $100-$150（8月1日生效）：内存危机传导至主机终端",
           "en_title": "XBOX console prices are going up starting August 1, 2026. 512GB +$100, 1TB +$150. 2TB sunsetted.",
           "author": "GameSpot",
@@ -124,13 +148,16 @@
           "link": "https://x.com/GameSpot/status/2070199469786780038",
           "media": null,
           "summary": "微软宣布 Xbox 全线涨价：512GB 涨 $100、1TB 涨 $150、2TB 停产。归因于内存/存储成本飙升。同步裁员 Compulsion Games。",
-          "analysis": "AI 数据中心争夺内存产能的上游传导正式落地为消费终端涨价。主机装机量增长放缓将加速"去硬件依赖"的订阅/云游戏路径。"
+          "analysis": "AI 数据中心争夺内存产能的上游传导正式落地为消费终端涨价。主机装机量增长放缓将加速\"去硬件依赖\"的订阅/云游戏路径。"
         },
         {
           "idx": "游戏行业 03",
           "source": "Eurogamer · Analysis",
-          "tags": ["商业模式", "多家报道"],
-          "title": "GTA 6 无实体光盘引爆"数字游戏所有权"行业大讨论",
+          "tags": [
+            "商业模式",
+            "多家报道"
+          ],
+          "title": "GTA 6 无实体光盘引爆\"数字游戏所有权\"行业大讨论",
           "en_title": "Few things get me excited like these big GTA 6 moments, but we need to talk about digital game ownership - and fast.",
           "author": "eurogamer",
           "date": "2026-06-25",
@@ -139,12 +166,15 @@
           "link": "https://x.com/eurogamer/status/2070151907843113348",
           "media": null,
           "summary": "GTA 6 实体版仅含下载码，部分零售商拒绝铺货。引发数字所有权、区域锁定、二手市场消亡的集中讨论。",
-          "analysis": "GTA 6 作为本世代最大单款游戏，其"无实体盘"决策具有强烈的行业风向标意义。当数字分发成为唯一渠道，平台对游戏的控制权将进一步集中。"
+          "analysis": "GTA 6 作为本世代最大单款游戏，其\"无实体盘\"决策具有强烈的行业风向标意义。当数字分发成为唯一渠道，平台对游戏的控制权将进一步集中。"
         },
         {
           "idx": "游戏行业 04",
           "source": "GameSpot · News",
-          "tags": ["商业模式", "零售转型"],
+          "tags": [
+            "商业模式",
+            "零售转型"
+          ],
           "title": "GameStop CEO 计划收购 eBay：实体零售转型数字游戏二手交易",
           "en_title": "GameStop CEO Came Up With Plan To Buy eBay On The Toilet, Wants It To Become Re-Seller Of Digital Gaming Items",
           "author": "GameSpot",
@@ -154,12 +184,14 @@
           "link": "https://x.com/GameSpot/status/2070173319308144974",
           "media": null,
           "summary": "GameStop CEO 计划收购 eBay 改造为数字游戏物品二手交易平台。反映实体零售在数字化时代的生存焦虑。",
-          "analysis": "数字游戏二手交易在技术和法律上仍面临巨大障碍，但该提案的存在说明市场对"数字商品转售权"需求真实存在。"
+          "analysis": "数字游戏二手交易在技术和法律上仍面临巨大障碍，但该提案的存在说明市场对\"数字商品转售权\"需求真实存在。"
         },
         {
           "idx": "游戏行业 05",
           "source": "Eurogamer · News",
-          "tags": ["平台政策"],
+          "tags": [
+            "平台政策"
+          ],
           "title": "Sony 加强 PS Store 审核，打击 shovelware 垃圾游戏上架",
           "en_title": "Sony appears to be implementing 'stricter' rules for releasing games on the PlayStation Store",
           "author": "eurogamer",
@@ -174,7 +206,9 @@
         {
           "idx": "游戏行业 06",
           "source": "PC Gamer · News",
-          "tags": ["供应链"],
+          "tags": [
+            "供应链"
+          ],
           "title": "RAM 价格危机蔓延至 Apple：Mac/iPad 全线涨价数百美元",
           "en_title": "The RAM crisis comes for Apple: Mac and iPad prices jacked up by hundreds",
           "author": "pcgamer",
@@ -197,7 +231,10 @@
         {
           "idx": "热门独游 01",
           "source": "SteamDB · 数据",
-          "tags": ["独游爆款", "数据"],
+          "tags": [
+            "独游爆款",
+            "数据"
+          ],
           "title": "Deltarune Chapter 5 上线：Steam 同时在线 291,816 人，独游天花板再刷新",
           "en_title": "DELTARUNE has reached 291,816 concurrent players on Steam for the first time (96.94% rating)",
           "author": "SteamDB",
@@ -212,7 +249,9 @@
         {
           "idx": "热门独游 02",
           "source": "Steam · 官方",
-          "tags": ["平台动态"],
+          "tags": [
+            "平台动态"
+          ],
           "title": "Steam 夏季特卖开启 + Valve 正式开放 SteamOS：任何厂商可造 Steam Machine",
           "en_title": "The Steam Summer Sale is here! / Valve Releases SteamOS So Anyone Can Make A Steam Machine Now",
           "author": "Steam",
@@ -235,7 +274,10 @@
         {
           "idx": "开发工具 01",
           "source": "Unreal Engine · 官方",
-          "tags": ["引擎工具", "动画"],
+          "tags": [
+            "引擎工具",
+            "动画"
+          ],
           "title": "UE 5.8 Zebra Sample：引擎内生产级角色绑骨与动画完整流程示例",
           "en_title": "Learn how to rig and animate production-quality characters directly in Unreal Engine 5.8 with Zebra Sample",
           "author": "UnrealEngine",
@@ -243,14 +285,20 @@
           "likes": 362,
           "views": 30403,
           "link": "https://x.com/UnrealEngine/status/2069813379393552452",
-          "media": {"type": "video", "url": "https://video.twimg.com/amplify_video/2069812887925948416/vid/avc1/1280x720/9ugMoDnjHi-d12Bf.mp4?tag=14"},
+          "media": {
+            "type": "video",
+            "url": "https://video.twimg.com/amplify_video/2069812887925948416/vid/avc1/1280x720/9ugMoDnjHi-d12Bf.mp4?tag=14"
+          },
           "summary": "Epic 发布免费 Zebra Sample，展示 UE 5.8 内完整角色绑定和动画流程。可在 Fab 平台下载。",
           "analysis": "降低中小团队角色动画学习与启动成本。将绑骨/动画全流程保留在引擎内，对独立开发者 pipeline 效率提升显著。"
         },
         {
           "idx": "开发工具 02",
           "source": "Unity for Games · 官方",
-          "tags": ["引擎工具", "版本发布"],
+          "tags": [
+            "引擎工具",
+            "版本发布"
+          ],
           "title": "Unity 6.5 发布：2D 与性能大幅提升、Shader Graph 更新、CoreCLR 改进",
           "en_title": "ICYMI: Unity 6.5 is here! Massive 2D & performance upgrades, Shader Graph updates, CoreCLR scripting improvements.",
           "author": "unitygames",
@@ -258,14 +306,20 @@
           "likes": 134,
           "views": 14585,
           "link": "https://x.com/unitygames/status/2069828105531777034",
-          "media": {"type": "video", "url": "https://video.twimg.com/ext_tw_video/2069828003790512128/pu/vid/avc1/720x1280/7Ohj6lYa6H-cXbY1.mp4?tag=12"},
+          "media": {
+            "type": "video",
+            "url": "https://video.twimg.com/ext_tw_video/2069828003790512128/pu/vid/avc1/720x1280/7Ohj6lYa6H-cXbY1.mp4?tag=12"
+          },
           "summary": "Unity 6.5：2D 渲染与性能提升、灯光窗口重新设计、Shader Graph 扩展、CoreCLR 脚本改进。",
           "analysis": "CoreCLR 改进为 Unity .NET 现代化铺路。2D 提升对独游开发者尤为重要，Unity 在 2D 赛道重新发力以应对 Godot 快速增长。"
         },
         {
           "idx": "开发工具 03",
           "source": "PixiJS · 官方",
-          "tags": ["Web 引擎", "3D 渲染"],
+          "tags": [
+            "Web 引擎",
+            "3D 渲染"
+          ],
           "title": "PixiJS 3D 实验：将任意 2D 内容实时渲染到 3D 几何体",
           "en_title": "More PixiJS 3D testing. Take any live 2D PixiJS content and render it onto 3D geometry.",
           "author": "PixiJS",
@@ -280,7 +334,10 @@
         {
           "idx": "开发工具 04",
           "source": "Unreal Engine · 官方",
-          "tags": ["3D 扫描", "工具更新"],
+          "tags": [
+            "3D 扫描",
+            "工具更新"
+          ],
           "title": "RealityScan 2.2：新增 AMD GPU 完整支持，可 N+A 双卡混合加速",
           "en_title": "RealityScan 2.2: full AMD GPU support. Mix AMD and NVIDIA in the same machine.",
           "author": "UnrealEngine",
