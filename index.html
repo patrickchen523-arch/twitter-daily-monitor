@@ -7,84 +7,90 @@
 <title>Twitter监控日报</title>
 <style>
 :root{
-  --ink:#16181d;--panel:#1e2127;--panel2:#23272f;--line:#33373f;
-  --text:#e9eaec;--muted:#9aa0aa;--soft:#c7ccd4;
-  --red:#D7263D;--gold:#E8B04B;--ai:#a78bfa;--blue:#60a5fa;
-  --accent:#D7263D;
+  --bg:#FAFAF8;--card:#FFFFFF;--card-hover:#FFFDF5;
+  --border:#E8E4DC;--border-light:#F0ECE4;
+  --ink:#1A1A1A;--ink2:#4A4A4A;--ink3:#8A8A8A;
+  --gold:#C49B2C;--gold-light:#F5EDD4;--gold-border:#E2D5A0;
+  --ai:#6C5CE7;--ai-light:#EEEBFB;--ai-border:#C8BFF5;
+  --red:#C0392B;--red-light:#FDEEEC;--red-border:#F0B8B2;
+  --green:#27AE60;--green-light:#E8F8F0;--green-border:#A3E4C1;
+  --blue:#2980B9;--blue-light:#EBF5FB;--blue-border:#A9D4F0;
+  --shadow:0 1px 3px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.03);
+  --shadow-hover:0 2px 8px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.05);
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--ink);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
-.wrap{max-width:900px;margin:0 auto;padding:0 24px 80px}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:920px;margin:0 auto;padding:0 24px 80px}
 
 /* Header */
-header{position:sticky;top:0;z-index:50;background:rgba(22,24,29,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.masthead{max-width:900px;margin:0 auto;padding:14px 24px 0;display:flex;align-items:center;justify-content:space-between}
-.masthead h1{font-size:20px;font-weight:800;letter-spacing:1px}
-.search{display:flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:20px;padding:5px 14px;background:var(--panel)}
-.search:focus-within{border-color:var(--ai)}
-.search input{border:0;background:transparent;outline:0;font-size:13px;color:var(--text);width:180px}
-.search input::placeholder{color:var(--muted)}
-.navbar{max-width:900px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:28px}
-nav a{color:var(--muted);text-decoration:none;font-size:14px;padding:10px 0;cursor:pointer;position:relative;font-weight:500}
-nav a.on{color:var(--text);font-weight:700}
-nav a.on::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--accent)}
+header{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.header-inner{max-width:920px;margin:0 auto;padding:16px 24px 0}
+.masthead{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.masthead h1{font-size:18px;font-weight:800;color:var(--ink);letter-spacing:.5px}
+.masthead h1 span{color:var(--gold)}
+.search{display:flex;align-items:center;gap:7px;border:1px solid var(--border);border-radius:20px;padding:6px 14px;background:var(--card);transition:border-color .2s}
+.search:focus-within{border-color:var(--gold)}
+.search svg{width:14px;height:14px;stroke:var(--ink3);fill:none;stroke-width:2}
+.search input{border:0;background:transparent;outline:0;font-size:13px;color:var(--ink);width:160px}
+.search input::placeholder{color:var(--ink3)}
+
+/* Category tabs */
+.cat-tabs{display:flex;gap:6px;padding-bottom:12px}
+.cat-tab{font-size:13px;font-weight:600;padding:6px 16px;border-radius:20px;cursor:pointer;border:1.5px solid var(--border);background:var(--card);color:var(--ink2);transition:all .2s;text-decoration:none}
+.cat-tab:hover{border-color:var(--gold-border);background:var(--gold-light)}
+.cat-tab.on{background:var(--gold);border-color:var(--gold);color:#fff;box-shadow:0 2px 8px rgba(196,155,44,.2)}
+.cat-tab .count{font-size:11px;opacity:.7;margin-left:4px}
 
 /* Date strip */
-.datestrip{display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;margin:20px 0 24px;padding-bottom:14px;border-bottom:1px solid var(--line);scrollbar-width:thin}
-.datestrip::-webkit-scrollbar{height:6px}
-.datestrip::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
-.datestrip button{flex:0 0 auto;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 14px;cursor:pointer;color:var(--text);font-size:13px;font-weight:600;transition:.15s}
-.datestrip button:hover{border-color:var(--soft)}
-.datestrip button.on{background:var(--accent);border-color:var(--accent);color:#fff}
-
-/* Stats bar */
-.stats-bar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
-.stat-pill{font-size:12px;font-weight:600;padding:4px 12px;border-radius:999px;cursor:pointer;transition:.15s;border:1px solid transparent}
-.stat-pill:hover{opacity:.85}
-.stat-pill.ai{background:rgba(167,139,250,.15);color:var(--ai);border-color:rgba(167,139,250,.3)}
-.stat-pill.industry{background:rgba(215,38,61,.12);color:var(--red);border-color:rgba(215,38,61,.3)}
-.stat-pill.indie{background:rgba(232,176,75,.12);color:var(--gold);border-color:rgba(232,176,75,.3)}
-.stat-pill.tools{background:rgba(96,165,250,.12);color:var(--blue);border-color:rgba(96,165,250,.3)}
-
-/* Section */
-.sec-heading{font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin:30px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px}
-.sec-dot{width:8px;height:8px;border-radius:50%}
+.datestrip{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;margin:18px 0 20px;padding:4px 0 12px;scrollbar-width:thin}
+.datestrip::-webkit-scrollbar{height:4px}
+.datestrip::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.datestrip button{flex:0 0 auto;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:8px 14px;cursor:pointer;color:var(--ink);font-size:12px;font-weight:600;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:56px;box-shadow:var(--shadow)}
+.datestrip button:hover{border-color:var(--gold-border);transform:translateY(-1px)}
+.datestrip button.on{background:var(--gold);border-color:var(--gold);color:#fff;box-shadow:0 3px 12px rgba(196,155,44,.25)}
+.datestrip button .weekday{font-size:10px;opacity:.6;font-weight:400}
+.datestrip button.nodata{opacity:.4;cursor:default;box-shadow:none}
+.datestrip button.nodata:hover{border-color:var(--border);transform:none}
 
 /* Cards */
-.card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:10px;padding:20px 22px;margin:14px 0;transition:border-color .2s}
-.card:hover{border-color:#4a5568}
-.card-top{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
-.card-idx{font-weight:800;font-size:12px;letter-spacing:1px}
-.badge{font-size:11px;font-weight:700;color:#fff;background:#3a3f48;border:1px solid #474d57;border-radius:5px;padding:2px 7px}
-.card h2{font-size:17px;margin:4px 0;color:#fff;line-height:1.4;font-weight:700}
-.card .en-title{font-size:12px;color:var(--muted);font-style:italic;margin-bottom:8px}
-.card .link{font-size:12px;margin:6px 0 10px;word-break:break-all}
-.card .link a{color:#ff7a86;text-decoration:none}
+.card{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:12px;padding:22px 24px;margin:12px 0;transition:all .25s;box-shadow:var(--shadow)}
+.card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--gold-border)}
+.card-top{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.card-idx{font-weight:800;font-size:11px;letter-spacing:.5px;padding:3px 8px;border-radius:4px}
+.badge{font-size:10.5px;font-weight:600;color:var(--ink2);background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:2px 8px}
+.card h2{font-size:16px;margin:6px 0;color:var(--ink);line-height:1.45;font-weight:700}
+.card .en-title{font-size:11.5px;color:var(--ink3);font-style:italic;margin-bottom:10px;line-height:1.5}
+.card .link{font-size:11.5px;margin:8px 0 12px;word-break:break-all}
+.card .link a{color:var(--gold);text-decoration:none;font-weight:500}
 .card .link a:hover{text-decoration:underline}
-.card .media{margin:12px 0;border-radius:8px;overflow:hidden}
-.card .media img{width:100%;max-height:360px;object-fit:cover;display:block;border-radius:8px}
-.card .media video{width:100%;max-height:360px;border-radius:8px;display:block}
-.media-link{display:flex;align-items:center;gap:10px;margin:12px 0;padding:14px 18px;background:var(--panel2);border:1px solid var(--line);border-radius:8px;text-decoration:none;color:var(--soft);transition:border-color .2s,background .2s}
-.media-link:hover{border-color:var(--ai);background:rgba(167,139,250,.06)}
-.media-icon{font-size:20px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:rgba(167,139,250,.12);border-radius:8px}
-.media-label{font-size:13px;font-weight:500}
-.card .field{margin:8px 0}
-.card .lab{display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;color:var(--red);margin-bottom:2px}
-.card .val{margin:2px 0 0;color:var(--soft);font-size:14px;line-height:1.7}
+.card .media{margin:14px 0;border-radius:10px;overflow:hidden;border:1px solid var(--border-light)}
+.card .media img{width:100%;max-height:360px;object-fit:cover;display:block}
+.card .media video{width:100%;max-height:360px;display:block}
+.card .field{margin:10px 0}
+.card .lab{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;padding:2px 6px;border-radius:3px}
+.card .lab.summary{color:var(--gold);background:var(--gold-light)}
+.card .lab.analysis{color:var(--blue);background:var(--blue-light)}
+.card .val{margin:4px 0 0;color:var(--ink2);font-size:14px;line-height:1.75}
+
+/* Section heading (hidden when tab filtering, shown for "all") */
+.sec-heading{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin:28px 0 10px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;color:var(--ink3)}
+.sec-dot{width:7px;height:7px;border-radius:50%}
 
 /* Empty / loading */
-.loading{text-align:center;color:var(--muted);padding:60px 0;font-size:14px}
-.no-results{text-align:center;color:var(--muted);padding:40px 0;font-size:14px;display:none}
+.loading{text-align:center;color:var(--ink3);padding:60px 0;font-size:14px}
+.no-results{text-align:center;color:var(--ink3);padding:40px 0;font-size:14px;display:none}
 
 /* Footer */
-footer{margin-top:40px;text-align:center;color:#5d636d;font-size:12px;padding:20px 0;border-top:1px solid var(--line)}
+footer{margin-top:40px;text-align:center;color:var(--ink3);font-size:11.5px;padding:20px 0;border-top:1px solid var(--border)}
 
 @media(max-width:600px){
-  .wrap{padding:0 12px 60px}
-  .masthead{padding:10px 12px 0}
-  .navbar{padding:0 12px;gap:18px;overflow-x:auto}
-  .search input{width:120px}
-  .card{padding:16px}
+  .wrap{padding:0 14px 60px}
+  .header-inner{padding:12px 14px 0}
+  .masthead h1{font-size:16px}
+  .cat-tabs{overflow-x:auto;flex-wrap:nowrap;gap:6px;padding-bottom:10px}
+  .cat-tab{flex:0 0 auto;font-size:12px;padding:5px 12px;white-space:nowrap}
+  .search input{width:110px}
+  .card{padding:16px 18px}
   .card h2{font-size:15px}
 }
 </style>
@@ -92,34 +98,21 @@ footer{margin-top:40px;text-align:center;color:#5d636d;font-size:12px;padding:20
 <body>
 
 <header>
-  <div class="masthead">
-    <h1>Twitter监控日报</h1>
-    <div class="search">
-      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-      <input type="text" id="searchInput" placeholder="搜索条目..." oninput="handleSearch()">
+  <div class="header-inner">
+    <div class="masthead">
+      <h1>Twitter<span>监控</span>日报</h1>
+      <div class="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="searchInput" placeholder="搜索条目..." oninput="handleSearch()">
+      </div>
     </div>
-  </div>
-  <div class="navbar">
-    <nav id="navTabs">
-      <a class="on" data-tab="daily">Twitter日报</a>
-      <!-- 后续扩展 -->
-      <!-- <a data-tab="weekly">周报</a> -->
-    </nav>
+    <div class="cat-tabs" id="catTabs"></div>
   </div>
 </header>
 
 <div class="wrap">
-  <!-- Date strip -->
   <div class="datestrip" id="dateStrip"></div>
-
-  <!-- Stats pills (jump anchors) -->
-  <div class="stats-bar" id="statsBar"></div>
-
-  <!-- Content area -->
-  <div id="content">
-    <div class="loading">加载中...</div>
-  </div>
-
+  <div id="content"><div class="loading">加载中...</div></div>
   <div class="no-results" id="noResults">未找到匹配的条目</div>
 </div>
 
@@ -130,7 +123,7 @@ const BASE = 'data/';
 let manifest = null;
 let currentDate = null;
 let currentData = null;
-let allCards = []; // for search
+let currentTab = 'all'; // 'all' | 'ai' | 'industry' | 'indie' | 'tools'
 
 async function init() {
   try {
@@ -138,70 +131,107 @@ async function init() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     manifest = await res.json();
     renderDateStrip();
-    // Load latest date
     const latest = manifest.dates[manifest.dates.length - 1];
     await loadDate(latest);
   } catch(e) {
-    document.getElementById('content').innerHTML = `<div class="loading">无法加载数据<br><small style="color:#666">${e.message}<br>请确认 data/manifest.json 存在且路径正确</small></div>`;
+    document.getElementById('content').innerHTML = `<div class="loading">无法加载数据<br><small style="color:var(--ink3)">${e.message}</small></div>`;
   }
 }
 
 function renderDateStrip() {
   const strip = document.getElementById('dateStrip');
   strip.innerHTML = '';
-  // Show dates in reverse (newest first)
-  const dates = [...manifest.dates].reverse();
+  const available = new Set(manifest.dates);
+  // Generate a range: from earliest available - 3 days to latest + 1 day
+  const latest = manifest.dates[manifest.dates.length - 1];
+  const earliest = manifest.dates[0];
+  const start = new Date(earliest);
+  start.setDate(start.getDate() - 3);
+  const end = new Date(latest);
+  end.setDate(end.getDate() + 1);
+
+  const days = ['周日','周一','周二','周三','周四','周五','周六'];
+  const dates = [];
+  for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+    dates.push(d.toISOString().slice(0, 10));
+  }
+
   dates.forEach(d => {
     const btn = document.createElement('button');
-    const parts = d.split('-');
-    btn.textContent = parts[1] + '-' + parts[2];
+    const dt = new Date(d);
+    const mm = String(dt.getMonth() + 1).padStart(2, '0');
+    const dd = String(dt.getDate()).padStart(2, '0');
+    const wd = days[dt.getDay()];
+    btn.innerHTML = `<span class="weekday">${wd}</span>${mm}-${dd}`;
     btn.title = d;
     btn.dataset.date = d;
-    btn.onclick = () => loadDate(d);
+    const hasData = available.has(d);
+    if (!hasData) {
+      btn.classList.add('nodata');
+    } else {
+      btn.onclick = () => loadDate(d);
+    }
     strip.appendChild(btn);
   });
+
+  // Scroll to latest
+  setTimeout(() => {
+    const active = strip.querySelector(`[data-date="${latest}"]`);
+    if (active) active.scrollIntoView({ inline: 'center', behavior: 'smooth' });
+  }, 100);
 }
 
 async function loadDate(date) {
   currentDate = date;
-  // Update date strip active state
   document.querySelectorAll('.datestrip button').forEach(b => {
     b.classList.toggle('on', b.dataset.date === date);
   });
-
   document.getElementById('content').innerHTML = '<div class="loading">加载中...</div>';
 
   try {
     const res = await fetch(BASE + date + '.json');
-    if (!res.ok) throw new Error(`HTTP ${res.status}: ${BASE}${date}.json`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     currentData = await res.json();
+    renderTabs();
     renderContent();
   } catch(e) {
-    document.getElementById('content').innerHTML = `<div class="loading">该日期暂无数据<br><small style="color:#666">${e.message}</small></div>`;
+    document.getElementById('content').innerHTML = `<div class="loading">该日期暂无数据<br><small style="color:var(--ink3)">${e.message}</small></div>`;
   }
+}
+
+function renderTabs() {
+  const tabs = document.getElementById('catTabs');
+  let html = `<a class="cat-tab ${currentTab==='all'?'on':''}" onclick="switchTab('all')">全部</a>`;
+  currentData.sections.forEach(sec => {
+    const active = currentTab === sec.id ? 'on' : '';
+    html += `<a class="cat-tab ${active}" onclick="switchTab('${sec.id}')">${sec.title}<span class="count">${sec.items.length}</span></a>`;
+  });
+  tabs.innerHTML = html;
+}
+
+function switchTab(tab) {
+  currentTab = tab;
+  renderTabs();
+  renderContent();
 }
 
 function renderContent() {
   const container = document.getElementById('content');
-  allCards = [];
   let html = '';
 
-  // Stats bar
-  let statsHtml = '';
-  currentData.sections.forEach(sec => {
-    const cls = sec.id === 'ai' ? 'ai' : sec.id === 'industry' ? 'industry' : sec.id === 'indie' ? 'indie' : 'tools';
-    statsHtml += `<a href="#sec-${sec.id}" class="stat-pill ${cls}">${sec.title} ${sec.items.length} 篇</a>`;
-  });
-  document.getElementById('statsBar').innerHTML = statsHtml;
+  const sections = currentTab === 'all'
+    ? currentData.sections
+    : currentData.sections.filter(s => s.id === currentTab);
 
-  // Sections
-  currentData.sections.forEach(sec => {
-    html += `<div class="sec-heading" id="sec-${sec.id}"><span class="sec-dot" style="background:${sec.color};box-shadow:0 0 6px ${sec.color}"></span>${sec.title} · ${sec.title_en}（${sec.items.length} 篇）</div>`;
+  sections.forEach(sec => {
+    if (currentTab === 'all') {
+      html += `<div class="sec-heading"><span class="sec-dot" style="background:${sec.color}"></span>${sec.title} · ${sec.title_en}（${sec.items.length}）</div>`;
+    }
 
     sec.items.forEach(item => {
-      allCards.push(item);
       const borderColor = sec.color;
       const idxColor = sec.color;
+      const idxBg = sec.color + '12';
       let mediaHtml = '';
       if (item.media) {
         if (item.media.type === 'video') {
@@ -210,13 +240,12 @@ function renderContent() {
           mediaHtml = `<div class="media"><img src="${item.media.url}" alt="" loading="lazy" referrerpolicy="no-referrer"></div>`;
         }
       }
-
       const tagsHtml = item.tags.map(t => `<span class="badge">${t}</span>`).join('');
 
       html += `
-        <article class="card" style="border-left-color:${borderColor}" data-searchable="${(item.title + ' ' + item.summary + ' ' + item.analysis + ' ' + item.en_title + ' ' + item.tags.join(' ')).toLowerCase()}">
+        <article class="card" style="border-left-color:${borderColor}" data-section="${sec.id}" data-searchable="${(item.title + ' ' + item.summary + ' ' + item.analysis + ' ' + item.en_title + ' ' + item.tags.join(' ')).toLowerCase()}">
           <div class="card-top">
-            <span class="card-idx" style="color:${idxColor}">${item.idx}</span>
+            <span class="card-idx" style="color:${idxColor};background:${idxBg}">${item.idx}</span>
             <span class="badge">${item.source}</span>
             ${tagsHtml}
           </div>
@@ -224,12 +253,13 @@ function renderContent() {
           <div class="en-title">${item.en_title}（@${item.author}，${item.date}，♥${item.likes.toLocaleString()} / 👁${item.views.toLocaleString()}）</div>
           <div class="link"><a href="${item.link}" target="_blank">${item.link.replace('https://','')}</a></div>
           ${mediaHtml}
-          <div class="field"><span class="lab">摘要</span><p class="val">${item.summary}</p></div>
-          <div class="field"><span class="lab">观点解读</span><p class="val">${item.analysis}</p></div>
+          <div class="field"><span class="lab summary">摘要</span><p class="val">${item.summary}</p></div>
+          <div class="field"><span class="lab analysis">观点解读</span><p class="val">${item.analysis}</p></div>
         </article>`;
     });
   });
 
+  if (!html) html = '<div class="loading">该分类下暂无条目</div>';
   container.innerHTML = html;
   document.getElementById('noResults').style.display = 'none';
 }
@@ -247,21 +277,16 @@ function handleSearch() {
   }
 
   cards.forEach(c => {
-    const text = c.dataset.searchable || '';
-    const match = text.includes(query);
+    const match = (c.dataset.searchable || '').includes(query);
     c.style.display = match ? '' : 'none';
     if (match) visibleCount++;
   });
 
-  // Hide section headings if all their cards are hidden
   document.querySelectorAll('.sec-heading').forEach(heading => {
     let next = heading.nextElementSibling;
     let hasVisible = false;
     while (next && !next.classList.contains('sec-heading')) {
-      if (next.classList.contains('card') && next.style.display !== 'none') {
-        hasVisible = true;
-        break;
-      }
+      if (next.classList.contains('card') && next.style.display !== 'none') { hasVisible = true; break; }
       next = next.nextElementSibling;
     }
     heading.style.display = hasVisible ? '' : 'none';
@@ -270,15 +295,6 @@ function handleSearch() {
   document.getElementById('noResults').style.display = visibleCount === 0 ? 'block' : 'none';
 }
 
-// Tab switching (for future use)
-document.querySelectorAll('#navTabs a').forEach(a => {
-  a.onclick = () => {
-    document.querySelectorAll('#navTabs a').forEach(x => x.classList.remove('on'));
-    a.classList.add('on');
-  };
-});
-
-// Init
 init();
 </script>
 </body>
