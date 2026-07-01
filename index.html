@@ -212,7 +212,7 @@ async function loadDate(date) {
   document.getElementById('content').innerHTML = '<div class="loading">加载中...</div>';
 
   try {
-    const res = await fetch(BASE + date + '.json');
+    const res = await fetch(BASE + date + '.json?v=' + Date.now());
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     currentData = await res.json();
     renderTabs();
