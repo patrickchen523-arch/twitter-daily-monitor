@@ -83,6 +83,29 @@ header{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.95);backdro
 /* Footer */
 footer{margin-top:40px;text-align:center;color:var(--ink3);font-size:11.5px;padding:20px 0;border-top:1px solid var(--border)}
 
+/* Enrichment (indie game extra info) */
+.enrichment{margin-top:14px;padding:14px 16px;background:var(--bg);border:1px solid var(--border-light);border-radius:8px}
+.enrich-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.enrich-tag{font-size:11px;font-weight:600;padding:3px 9px;border-radius:12px;background:var(--green-light);color:var(--green);border:1px solid var(--green-border)}
+.enrich-tag.platform{background:var(--blue-light);color:var(--blue);border-color:var(--blue-border)}
+.enrich-tag.price{background:var(--gold-light);color:var(--gold);border-color:var(--gold-border)}
+.enrich-notable{font-size:13px;color:var(--ink2);line-height:1.6;margin-bottom:10px;padding-left:10px;border-left:2px solid var(--green)}
+.enrich-video{margin-top:10px;border-radius:8px;overflow:hidden;aspect-ratio:16/9;max-width:480px}
+.enrich-video iframe{width:100%;height:100%;border:0}
+.enrich-links{display:flex;gap:10px;margin-top:8px}
+.enrich-links a{font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;padding:4px 10px;border:1px solid var(--gold-border);border-radius:6px;transition:.2s}
+.enrich-links a:hover{background:var(--gold-light)}
+
+/* Digest */
+.digest{background:var(--card);border:1px solid var(--gold-border);border-radius:12px;padding:20px 24px;margin-bottom:24px;box-shadow:0 2px 12px rgba(196,155,44,.06)}
+.digest-title{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.digest-title::before{content:"";display:inline-block;width:16px;height:2px;background:var(--gold);border-radius:1px}
+.digest-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.digest-item{padding:10px 14px;border-radius:8px;border-left:3px solid var(--gold);background:var(--gold-light);cursor:pointer;transition:all .2s}
+.digest-item:hover{transform:translateX(2px);box-shadow:0 2px 8px rgba(196,155,44,.1)}
+.digest-item .di-label{font-size:11px;font-weight:700;letter-spacing:.5px;margin-bottom:4px}
+.digest-item .di-text{font-size:13px;color:var(--ink2);line-height:1.6}
+
 @media(max-width:600px){
   .wrap{padding:0 14px 60px}
   .header-inner{padding:12px 14px 0}
@@ -92,6 +115,7 @@ footer{margin-top:40px;text-align:center;color:var(--ink3);font-size:11.5px;padd
   .search input{width:110px}
   .card{padding:16px 18px}
   .card h2{font-size:15px}
+  .digest-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -112,6 +136,7 @@ footer{margin-top:40px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 
 <div class="wrap">
   <div class="datestrip" id="dateStrip"></div>
+  <div class="digest" id="digest"></div>
   <div id="content"><div class="loading">加载中...</div></div>
   <div class="no-results" id="noResults">未找到匹配的条目</div>
 </div>
@@ -123,7 +148,7 @@ const BASE = 'data/';
 let manifest = null;
 let currentDate = null;
 let currentData = null;
-let currentTab = 'all'; // 'all' | 'ai' | 'industry' | 'indie' | 'tools'
+let currentTab = 'digest'; // default to digest view
 
 async function init() {
   try {
@@ -142,17 +167,17 @@ function renderDateStrip() {
   const strip = document.getElementById('dateStrip');
   strip.innerHTML = '';
   const available = new Set(manifest.dates);
-  // Generate a range: from earliest available - 3 days to latest + 1 day
-  const latest = manifest.dates[manifest.dates.length - 1];
-  const earliest = manifest.dates[0];
-  const start = new Date(earliest);
-  start.setDate(start.getDate() - 3);
-  const end = new Date(latest);
-  end.setDate(end.getDate() + 1);
+  // Always show: today back to 14 days ago (or earliest data, whichever is further)
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  const earliest = manifest.dates.length ? new Date(manifest.dates[0]) : today;
+  const daysBack = Math.max(14, Math.ceil((today - earliest) / 86400000) + 3);
+  const start = new Date(today);
+  start.setDate(start.getDate() - daysBack);
 
-  const days = ['周日','周一','周二','周三','周四','周五','周六'];
+  const dayNames = ['周日','周一','周二','周三','周四','周五','周六'];
   const dates = [];
-  for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+  for (let d = new Date(start); d <= today; d.setDate(d.getDate() + 1)) {
     dates.push(d.toISOString().slice(0, 10));
   }
 
@@ -161,7 +186,7 @@ function renderDateStrip() {
     const dt = new Date(d);
     const mm = String(dt.getMonth() + 1).padStart(2, '0');
     const dd = String(dt.getDate()).padStart(2, '0');
-    const wd = days[dt.getDay()];
+    const wd = dayNames[dt.getDay()];
     btn.innerHTML = `<span class="weekday">${wd}</span>${mm}-${dd}`;
     btn.title = d;
     btn.dataset.date = d;
@@ -174,11 +199,10 @@ function renderDateStrip() {
     strip.appendChild(btn);
   });
 
-  // Scroll to latest
+  // Scroll to rightmost (today)
   setTimeout(() => {
-    const active = strip.querySelector(`[data-date="${latest}"]`);
-    if (active) active.scrollIntoView({ inline: 'center', behavior: 'smooth' });
-  }, 100);
+    strip.scrollLeft = strip.scrollWidth;
+  }, 50);
 }
 
 async function loadDate(date) {
@@ -193,7 +217,8 @@ async function loadDate(date) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     currentData = await res.json();
     renderTabs();
-    renderContent();
+    renderDigest();
+    document.getElementById('content').innerHTML = '';
   } catch(e) {
     document.getElementById('content').innerHTML = `<div class="loading">该日期暂无数据<br><small style="color:var(--ink3)">${e.message}</small></div>`;
   }
@@ -201,18 +226,50 @@ async function loadDate(date) {
 
 function renderTabs() {
   const tabs = document.getElementById('catTabs');
-  let html = `<a class="cat-tab ${currentTab==='all'?'on':''}" onclick="switchTab('all')">全部</a>`;
+  const total = currentData.sections.reduce((s, sec) => s + sec.items.length, 0);
+  let html = `<a class="cat-tab ${currentTab==='digest'?'on':''}" onclick="switchTab('digest')">日精选</a>`;
   currentData.sections.forEach(sec => {
     const active = currentTab === sec.id ? 'on' : '';
     html += `<a class="cat-tab ${active}" onclick="switchTab('${sec.id}')">${sec.title}<span class="count">${sec.items.length}</span></a>`;
   });
+  html += `<a class="cat-tab ${currentTab==='all'?'on':''}" onclick="switchTab('all')">全部<span class="count">${total}</span></a>`;
   tabs.innerHTML = html;
+}
+
+function renderDigest() {
+  const el = document.getElementById('digest');
+  if (!currentData.digest || !currentData.digest.length) {
+    el.innerHTML = '<div class="loading">暂无当日速览</div>';
+    el.style.display = '';
+    return;
+  }
+  el.style.display = '';
+  const colorMap = {};
+  currentData.sections.forEach(s => { colorMap[s.id] = {color: s.color, title: s.title, count: s.items.length}; });
+
+  const total = currentData.sections.reduce((s, sec) => s + sec.items.length, 0);
+  let html = `<div class="digest-title">当日速览 · ${currentDate} · 共 ${total} 条</div><div class="digest-grid">`;
+  currentData.digest.forEach(d => {
+    const info = colorMap[d.id] || {color: '#C49B2C', title: d.id, count: 0};
+    html += `<div class="digest-item" style="border-left-color:${info.color};background:${info.color}08" onclick="switchTab('${d.id}')">
+      <div class="di-label" style="color:${info.color}">${info.title} · ${info.count} 篇</div>
+      <div class="di-text">${d.text}</div>
+    </div>`;
+  });
+  html += '</div>';
+  el.innerHTML = html;
 }
 
 function switchTab(tab) {
   currentTab = tab;
   renderTabs();
-  renderContent();
+  if (tab === 'digest') {
+    renderDigest();
+    document.getElementById('content').innerHTML = '';
+  } else {
+    document.getElementById('digest').style.display = 'none';
+    renderContent();
+  }
 }
 
 function renderContent() {
@@ -255,6 +312,7 @@ function renderContent() {
           ${mediaHtml}
           <div class="field"><span class="lab summary">摘要</span><p class="val">${item.summary}</p></div>
           <div class="field"><span class="lab analysis">观点解读</span><p class="val">${item.analysis}</p></div>
+          ${renderEnrichment(item)}
         </article>`;
     });
   });
@@ -262,6 +320,44 @@ function renderContent() {
   if (!html) html = '<div class="loading">该分类下暂无条目</div>';
   container.innerHTML = html;
   document.getElementById('noResults').style.display = 'none';
+}
+
+function renderEnrichment(item) {
+  if (!item.enrichment) return '';
+  const e = item.enrichment;
+  let html = '<div class="enrichment">';
+
+  // Tags row: genre, platforms, price, rating
+  html += '<div class="enrich-tags">';
+  if (e.genre) html += `<span class="enrich-tag">${e.genre}</span>`;
+  if (e.platforms) e.platforms.forEach(p => { html += `<span class="enrich-tag platform">${p}</span>`; });
+  if (e.price) html += `<span class="enrich-tag price">${e.price}</span>`;
+  if (e.steam_rating) html += `<span class="enrich-tag">${e.steam_rating}</span>`;
+  html += '</div>';
+
+  // Why notable
+  if (e.why_notable) {
+    html += `<div class="enrich-notable">${e.why_notable}</div>`;
+  }
+
+  // YouTube embed
+  if (e.youtube_video) {
+    const vidId = e.youtube_video.match(/[?&]v=([^&]+)/);
+    if (vidId) {
+      html += `<div class="enrich-video"><iframe src="https://www.youtube.com/embed/${vidId[1]}" allowfullscreen loading="lazy"></iframe></div>`;
+    } else {
+      html += `<div class="enrich-links"><a href="${e.youtube_video}" target="_blank">▶ YouTube 视频</a></div>`;
+    }
+  }
+
+  // Links row
+  let links = '';
+  if (e.steam_url) links += `<a href="${e.steam_url}" target="_blank">Steam 页面</a>`;
+  if (e.youtube_video && !e.youtube_video.includes('youtube.com/watch')) links += `<a href="${e.youtube_video}" target="_blank">▶ 视频</a>`;
+  if (links) html += `<div class="enrich-links">${links}</div>`;
+
+  html += '</div>';
+  return html;
 }
 
 function handleSearch() {
