@@ -84,11 +84,15 @@ header{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.95);backdro
 footer{margin-top:40px;text-align:center;color:var(--ink3);font-size:11.5px;padding:20px 0;border-top:1px solid var(--border)}
 
 /* Enrichment (indie game extra info) */
-.enrichment{margin-top:14px;padding:14px 16px;background:var(--bg);border:1px solid var(--border-light);border-radius:8px}
+.enrichment{margin-top:14px;padding:16px 18px;background:var(--bg);border:1px solid var(--border-light);border-radius:10px}
+.enrich-header{display:block;margin-bottom:12px;border-radius:8px;overflow:hidden}
+.enrich-header img{width:100%;max-height:200px;object-fit:cover;display:block;border-radius:8px;transition:opacity .2s}
+.enrich-header:hover img{opacity:.9}
 .enrich-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
 .enrich-tag{font-size:11px;font-weight:600;padding:3px 9px;border-radius:12px;background:var(--green-light);color:var(--green);border:1px solid var(--green-border)}
 .enrich-tag.platform{background:var(--blue-light);color:var(--blue);border-color:var(--blue-border)}
 .enrich-tag.price{background:var(--gold-light);color:var(--gold);border-color:var(--gold-border)}
+.enrich-desc{font-size:13px;color:var(--ink2);line-height:1.7;margin-bottom:10px;padding:10px 12px;background:var(--card);border:1px solid var(--border-light);border-radius:6px}
 .enrich-notable{font-size:13px;color:var(--ink2);line-height:1.6;margin-bottom:10px;padding-left:10px;border-left:2px solid var(--green)}
 .enrich-video-link{display:block;position:relative;margin-top:10px;border-radius:8px;overflow:hidden;max-width:480px}
 .enrich-video-link img{width:100%;display:block;border-radius:8px;transition:opacity .2s}
@@ -345,6 +349,11 @@ function renderEnrichment(item) {
   const e = item.enrichment;
   let html = '<div class="enrichment">';
 
+  // Header image (Steam capsule)
+  if (e.header_image) {
+    html += `<a class="enrich-header" href="${e.steam_url || '#'}" target="_blank"><img src="${e.header_image}" alt="${e.game_name}" referrerpolicy="no-referrer"></a>`;
+  }
+
   // Tags row: genre, platforms, price, rating
   html += '<div class="enrich-tags">';
   if (e.genre) html += `<span class="enrich-tag">${e.genre}</span>`;
@@ -353,12 +362,17 @@ function renderEnrichment(item) {
   if (e.steam_rating) html += `<span class="enrich-tag">${e.steam_rating}</span>`;
   html += '</div>';
 
+  // Game description
+  if (e.description) {
+    html += `<div class="enrich-desc">${e.description}</div>`;
+  }
+
   // Why notable
   if (e.why_notable) {
     html += `<div class="enrich-notable">${e.why_notable}</div>`;
   }
 
-  // YouTube embed
+  // YouTube video thumbnail
   if (e.youtube_video) {
     const vidId = e.youtube_video.match(/[?&]v=([^&]+)/);
     if (vidId) {
@@ -366,15 +380,13 @@ function renderEnrichment(item) {
         <img src="https://img.youtube.com/vi/${vidId[1]}/mqdefault.jpg" alt="视频预览" referrerpolicy="no-referrer">
         <span class="enrich-play">▶</span>
       </a>`;
-    } else {
-      html += `<div class="enrich-links"><a href="${e.youtube_video}" target="_blank">▶ YouTube 视频</a></div>`;
     }
   }
 
   // Links row
   let links = '';
   if (e.steam_url) links += `<a href="${e.steam_url}" target="_blank">Steam 页面</a>`;
-  if (e.youtube_video && !e.youtube_video.includes('youtube.com/watch')) links += `<a href="${e.youtube_video}" target="_blank">▶ 视频</a>`;
+  if (e.youtube_video) links += `<a href="${e.youtube_video}" target="_blank">▶ YouTube</a>`;
   if (links) html += `<div class="enrich-links">${links}</div>`;
 
   html += '</div>';
