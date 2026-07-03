@@ -159,12 +159,12 @@
     },
     {
       "id": "indie",
-      "title": "热门独游",
+      "title": "新游推文",
       "title_en": "INDIE GAMES",
       "color": "#E8B04B",
       "items": [
         {
-          "idx": "???? 01",
+          "idx": "新游推文 01",
           "source": "游戏博主 · 新作情报",
           "tags": [
             "合作狩猎",
@@ -203,9 +203,14 @@
           }
         },
         {
-          "idx": "热门独游 02",
+          "idx": "新游推文 02",
           "source": "IndieGamesLibrary · 推荐",
-          "tags": ["复古FPS", "僵尸", "90年代", "氛围"],
+          "tags": [
+            "复古FPS",
+            "僵尸",
+            "90年代",
+            "氛围"
+          ],
           "title": "复古90年代僵尸FPS：致敬经典恐怖电影的密集氛围射击",
           "en_title": "This game is inspired by zombie movies and FPS games from the 90s. So atmospheric and crowded.",
           "full_text": "This game is inspired by zombie movies and FPS games from the 90s.\n\nSo atmospheric and crowded.",
@@ -214,14 +219,19 @@
           "likes": 1286,
           "views": 153695,
           "link": "https://x.com/IndieGamesLib/status/2072365112896458829",
-          "media": {"type": "image", "url": "https://pbs.twimg.com/amplify_video_thumb/2072329751016980480/img/anoIUQbP3LJaOwdj.jpg"},
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072329751016980480/img/anoIUQbP3LJaOwdj.jpg"
+          },
           "summary": "一款受90年代僵尸电影和经典 FPS 启发的复古射击游戏。主打极致氛围感和密集的僵尸群，画面风格致敬 Quake/Doom 时代的低多边形美学，但在光影和粒子效果上做了现代化升级。",
           "analysis": "复古 FPS（Boomer Shooter）品类近年持续升温——DUSK、Ultrakill、Turbo Overkill 证明了这个市场的购买力。加入僵尸电影美学的差异化是聪明的定位：比纯复古FPS多了恐怖氛围，比纯恐怖游戏多了射击爽感。1286 点赞说明独游社区对这类作品有明确需求。",
           "enrichment": {
             "game_name": "未公布（90s Zombie FPS）",
             "genre": "复古FPS / 恐怖 / 射击 / Boomer Shooter",
             "developer": "未公布",
-            "platforms": ["PC"],
+            "platforms": [
+              "PC"
+            ],
             "price": "未公布",
             "steam_rating": "未发售",
             "steam_url": null,
