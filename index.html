@@ -471,7 +471,8 @@ function renderContent() {
 function renderEnrichment(item) {
   if (!item.enrichment) return '';
   const e = item.enrichment;
-  let html = '<div class="enrichment">';
+  let html = '<div class="field"><span class="lab analysis">游戏测评</span></div>';
+  html += '<div class="enrichment">';
 
   // Header image (Steam capsule)
   if (e.header_image) {
@@ -488,7 +489,6 @@ function renderEnrichment(item) {
 
   // Game description
   if (e.description) {
-    html += `<div class="field"><span class="lab analysis">游戏测评</span></div>`;
     html += `<div class="enrich-desc">${e.description}</div>`;
   }
 
