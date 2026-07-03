@@ -471,12 +471,13 @@ function renderContent() {
 function renderEnrichment(item) {
   if (!item.enrichment) return '';
   const e = item.enrichment;
-  let html = '<div class="field"><span class="lab analysis">游戏测评</span></div>';
+  let html = '<div class="field"><span class="lab analysis">游戏简介</span></div>';
   html += '<div class="enrichment">';
 
   // Header image (Steam capsule)
   if (e.header_image) {
-    html += `<a class="enrich-header" href="${e.steam_url || '#'}" target="_blank"><img src="${e.header_image}" alt="${e.game_name}" referrerpolicy="no-referrer"></a>`;
+    const gameName = (e.game_name || '').replace(/"/g, '&quot;');
+    html += `<a class="enrich-header" href="${e.steam_url || '#'}" target="_blank"><img src="${e.header_image}" alt="${gameName}" referrerpolicy="no-referrer"></a>`;
   }
 
   // Tags row: genre, platforms, price, rating
