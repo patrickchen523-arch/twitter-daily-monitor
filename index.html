@@ -437,7 +437,7 @@ function renderContent() {
             ${tagsHtml}
           </div>
           <h2>${item.title}</h2>
-          <div class="en-title">${item.en_title}（@${item.author}，${item.date}，♥${item.likes.toLocaleString()} / 👁${item.views.toLocaleString()}）</div>
+          <div class="en-title">${item.en_title}（@${item.author}，${item.date}，♥${(item.likes||0).toLocaleString()} / 👁${(item.views||0).toLocaleString()}）</div>
           <div class="link"><a href="${item.link}" target="_blank">${item.link.replace('https://','')}</a></div>
           ${mediaHtml}
           <div class="field"><span class="lab summary">摘要</span><p class="val">${item.summary}</p></div>

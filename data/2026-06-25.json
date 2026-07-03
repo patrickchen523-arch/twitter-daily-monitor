@@ -385,5 +385,6 @@
         }
       ]
     }
-  ]
+  ],
+  "daily_summary": "**Agent记忆系统没有银弹：12个方案实测无通用赢家**\n一篇新论文对比了 Mem0、Letta、Zep 等 12 个 Agent 记忆系统，结论是没有单一方案在所有场景胜出。更值得注意的是 Agent Memory 的隐性失败模式——问题往往不是\"忘了一切\"，而是工作脉络在任务切换后断裂。解法是让 Agent 主动写 handoff 日志。\n\n**单条Prompt生成可玩赛车游戏：AI编程的能力边界在哪**\n开发者用 Codex + GPT-5.5 + Three.js 做了个实验：一句话生成包含 AI 赛车对手、圈速计时、碰撞系统的完整原型。结果可玩但距生产质量有距离，展示了\"验证玩法想法\"可以从数天压缩到数分钟。\n\n**SEGA借Sonic ARG偷偷采集AI训练数据，社区炸了**\nSEGA 的 Sonic 互动营销被发现在条款中暗藏 AI 训练数据授权，引发大面积反弹。同时智谱 AI 估值 9000 亿港元，但国内大模型应用层仍缺现象级产品。\n\n**行业震动：Bungie大裁员、Xbox全线涨价、GTA6无光盘**\nBungie 裁员波及 Destiny 大部分团队；Xbox 8月起涨价 $100-150；GTA 6 确认无实体光盘引爆数字所有权讨论；GameStop CEO 计划收购 eBay 转型；RAM 危机从主机蔓延到 Apple 全线产品。\n\n**Deltarune Ch5创独游在线纪录：29万人同时在线**\nToby Fox 的 Deltarune Chapter 5 上线首日 Steam 同时在线 291,816 人，好评率 96.94%。证明了个人开发者 + 强 IP + 分章节免费引流策略的天花板极高。\n\n**引擎双雄更新：UE 5.8 + Unity 6.5 同步发力**\n虚幻引擎 5.8 发布 Zebra Sample（完整角色绑骨/动画示例），Unity 6.5 大幅提升 2D 性能并改进 CoreCLR 脚本。PixiJS 实验将 2D 内容实时渲染到 3D 几何体，RealityScan 2.2 新增 AMD GPU 支持。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
 }
