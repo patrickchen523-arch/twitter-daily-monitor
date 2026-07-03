@@ -140,6 +140,12 @@ footer{margin-top:40px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 .di-line{font-size:13px;color:var(--ink2);line-height:1.6;padding:5px 8px;border-radius:4px;cursor:pointer;transition:background .15s}
 .di-line:hover{background:rgba(0,0,0,.04)}
 
+/* Daily Summary */
+.daily-summary{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px 28px;margin-bottom:20px;box-shadow:var(--shadow)}
+.daily-summary-title{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.daily-summary-title::before{content:"";display:inline-block;width:16px;height:2px;background:var(--ink3);border-radius:1px}
+.daily-summary-body{font-size:14px;color:var(--ink2);line-height:1.85;white-space:pre-line}
+
 @media(max-width:600px){
   .wrap{padding:0 14px 60px}
   .header-inner{padding:12px 14px 0}
@@ -177,6 +183,7 @@ footer{margin-top:40px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 
 <div class="wrap">
   <div class="datestrip" id="dateStrip"></div>
+  <div class="daily-summary" id="dailySummary" style="display:none"></div>
   <div class="digest" id="digest"></div>
   <div id="content"><div class="loading">加载中...</div></div>
   <div class="no-results" id="noResults">未找到匹配的条目</div>
@@ -294,6 +301,7 @@ async function loadDate(date) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     currentData = await res.json();
     renderTabs();
+    renderDailySummary();
     renderDigest();
     document.getElementById('content').innerHTML = '';
   } catch(e) {
@@ -311,6 +319,16 @@ function renderTabs() {
   });
   html += `<a class="cat-tab ${currentTab==='all'?'on':''}" onclick="switchTab('all')">全部<span class="count">${total}</span></a>`;
   tabs.innerHTML = html;
+}
+
+function renderDailySummary() {
+  const el = document.getElementById('dailySummary');
+  if (!currentData.daily_summary) {
+    el.style.display = 'none';
+    return;
+  }
+  el.style.display = '';
+  el.innerHTML = `<div class="daily-summary-title">当日推文总结 · ${currentDate}</div><div class="daily-summary-body">${currentData.daily_summary}</div>`;
 }
 
 function renderDigest() {
@@ -345,9 +363,11 @@ function switchTab(tab, scrollToId) {
   currentTab = tab;
   renderTabs();
   if (tab === 'digest') {
+    renderDailySummary();
     renderDigest();
     document.getElementById('content').innerHTML = '';
   } else {
+    document.getElementById('dailySummary').style.display = 'none';
     document.getElementById('digest').style.display = 'none';
     renderContent();
     if (scrollToId) {

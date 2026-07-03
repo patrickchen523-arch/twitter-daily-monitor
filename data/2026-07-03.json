@@ -34,7 +34,11 @@
         {
           "idx": "AI科技热点 01",
           "source": "Claude · 官方发布",
-          "tags": ["科研AI", "Claude Science", "数据库"],
+          "tags": [
+            "科研AI",
+            "Claude Science",
+            "数据库"
+          ],
           "title": "Anthropic 发布 Claude Science：专为科研全流程设计，可连接60+科学数据库",
           "en_title": "Introducing Claude Science, a new app designed with every stage of research in mind",
           "full_text": "Introducing Claude Science, a new app designed with every stage of research in mind. \n\nArtifacts traced to their code, environments managed on demand, and 60+ optional scientific databases that you can connect.\n\nAvailable now in beta.",
@@ -43,14 +47,21 @@
           "likes": 35697,
           "views": 9349127,
           "link": "https://x.com/claudeai/status/2072002740830842899",
-          "media": {"type": "image", "url": "https://pbs.twimg.com/media/HME8BsAboAAPDRf.jpg"},
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HME8BsAboAAPDRf.jpg"
+          },
           "summary": "Anthropic 发布 Claude Science beta，这是一款专为科研人员设计的独立应用。核心功能：Artifacts 可追溯到源代码、按需管理计算环境、可连接 60+ 科学数据库（PubMed、arXiv、ChemBL 等）。定位为覆盖\"研究全流程\"的 AI 伙伴——从文献检索、假设生成、数据分析到论文撰写。",
           "analysis": "Claude Science 标志着 AI 公司从\"通用助手\"向\"垂直行业应用\"的战略转向。对游戏行业的间接影响：1）AI 辅助游戏研究（玩家行为分析、平衡性建模）将更易实现；2）游戏学术研究（程序化生成、AI NPC 论文）的工作流将被重构；3）此模式可能扩展到\"Claude GameDev\"等垂直产品。9.3M 浏览量说明科研社区对专用 AI 工具的需求是刚性的。"
         },
         {
           "idx": "AI科技热点 02",
           "source": "Cognition · 产品发布",
-          "tags": ["代码安全", "Agent Swarm", "MapReduce"],
+          "tags": [
+            "代码安全",
+            "Agent Swarm",
+            "MapReduce"
+          ],
           "title": "Devin Security Swarm：用 Agentic MapReduce 架构批量扫描代码库安全漏洞",
           "en_title": "Introducing Devin Security Swarm - A more cost effective and accurate way to find security vulnerabilities",
           "full_text": "Introducing Devin Security Swarm\n\nA more cost effective and accurate way to find security vulnerabilities in complex codebases, based on a new architecture: Agentic MapReduce.",
@@ -59,14 +70,21 @@
           "likes": 835,
           "views": 444420,
           "link": "https://x.com/cognition/status/2072368168182432109",
-          "media": {"type": "video", "url": "https://video.twimg.com/amplify_video/2072365104679518208/vid/avc1/1280x720/placeholder.mp4"},
+          "media": {
+            "type": "video",
+            "url": "https://video.twimg.com/amplify_video/2072365104679518208/vid/avc1/1280x720/placeholder.mp4"
+          },
           "summary": "Cognition（Devin 开发公司）发布 Security Swarm，基于全新\"Agentic MapReduce\"架构：将代码库分片（Map）→ 对每个分片派出独立 Agent 扫描漏洞 → 汇总发现（Reduce）→ 验证报告。相比传统静态分析工具，更擅长发现跨文件、跨模块的复杂安全漏洞。",
           "analysis": "Agentic MapReduce 是一个值得关注的新范式——将大规模任务拆分给多个 Agent 并行处理，再汇总结果。这个模式不仅适用于安全扫描，未来可能扩展到：代码审查、自动化测试生成、大型代码库重构等。对游戏工作室而言，百万行级代码库的安全审计（尤其是在线游戏的反作弊、支付安全）将变得更高效。Aaron Levie 评论：\"这就是为什么未来需要 100x 推理算力\"。"
         },
         {
           "idx": "AI科技热点 03",
           "source": "淘沙者 · 实操教程",
-          "tags": ["AI Agent", "工作流", "自动化"],
+          "tags": [
+            "AI Agent",
+            "工作流",
+            "自动化"
+          ],
           "title": "Anthropic 工程师实操：45分钟从零搭建5个AI助手，接管日常重复工作",
           "en_title": "Anthropic 工程师这句话有点狠：一个下午，你就能搭 5 个 AI 助手",
           "full_text": "Anthropic 工程师这句话有点狠：\n\"一个下午，你就能搭 5 个 AI 助手。\n每个助手，专门接管一个你每天还在手动做的破事。\"\n他直接录了 45 分钟，从 0 开始，一步一步演示怎么搭。\n不是那种讲概念、画大饼的 Agent 教程。\n是真的把一个 AI assistant 怎么拆任务、怎么配置、怎么跑起来，全流程过一遍。\n最离谱的是，这些事很多人每天还在自己复制、粘贴、整理、检查、回复。\n明明已经可以丢给 assistant 做了。\n建议先把这 45 分钟看完。\n然后把下面那篇 guide 存起来：\nAI Agents 是什么，以及怎么一步步做一个自己的 Agent。\n说真的，很多人不是不会用 AI。\n是还没意识到，自己每天浪费时间的那些小破活，已经可以被拆出去一大半了。",
@@ -75,7 +93,10 @@
           "likes": 1587,
           "views": 220028,
           "link": "https://x.com/Etudecn/status/2072321319140782304",
-          "media": {"type": "video", "url": "https://video.twimg.com/amplify_video/2072320231838822401/vid/avc1/1280x720/placeholder.mp4"},
+          "media": {
+            "type": "video",
+            "url": "https://video.twimg.com/amplify_video/2072320231838822401/vid/avc1/1280x720/placeholder.mp4"
+          },
           "summary": "Anthropic 工程师录制 45 分钟实操视频，演示如何在一个下午从零搭建 5 个 AI 助手，分别接管日常重复性工作（复制粘贴、整理数据、检查回复等）。不是概念教程，是完整的\"拆任务→配置→跑起来\"全流程演示。",
           "analysis": "这是目前最实操的 AI Agent 落地教程。核心洞察是：大部分人不是不会用 AI，而是\"还没意识到日常工作中哪些环节可以交给 AI\"。对游戏团队的启示：QA 邮件回复、bug 分类、日报整理、素材归档、竞品监控——这些\"小破活\"都可以搭 Agent 自动处理。45 分钟的投入可能节省每天 2-3 小时的重复劳动。"
         }
@@ -90,7 +111,11 @@
         {
           "idx": "游戏行业 01",
           "source": "Blue Lily Games · 官方声明",
-          "tags": ["实体发行", "数字所有权", "独立宣言"],
+          "tags": [
+            "实体发行",
+            "数字所有权",
+            "独立宣言"
+          ],
           "title": "独游工作室 Blue Lily 宣布 Moonlight Pale 坚持实体发行：\"不是下载码，是真正拥有的光盘\"",
           "en_title": "We are proud to be releasing Moonlight Pale as a physical game for Switch and PlayStation 5",
           "full_text": "We are proud to be releasing Moonlight Pale as a physical game for Switch and PlayStation 5.\n\nNot a download code on a box.\nNot a game key card.\n\nA physical disc and cartridge that you 100% own and can play whenever you wish and share with whoever you wish.  As it should be.",
@@ -99,14 +124,22 @@
           "likes": 7592,
           "views": 143760,
           "link": "https://x.com/BlueLilyGames/status/2072491431558619561",
-          "media": {"type": "image", "url": "https://pbs.twimg.com/media/HML34acX0AAr1ok.jpg"},
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HML34acX0AAr1ok.jpg"
+          },
           "summary": "在 Sony 宣布停产光盘的次日，独游工作室 Blue Lily 高调宣布其新作 Moonlight Pale 将坚持在 Switch 和 PS5 推出实体版。声明强调：\"不是盒子里放个下载码，不是游戏密钥卡，是你100%拥有的实体光盘和卡带，随时玩、随意分享。\"",
           "analysis": "这是对 Sony 停产光盘的最佳\"反叙事\"营销——7592 点赞和高互动证明了消费者对实体所有权的情感诉求。对独游工作室而言，\"坚持实体发行\"正在从成本负担变成品牌差异化策略。在全面数字化的大潮下，实体版将成为收藏品和忠诚度工具，而非主要销售渠道。Blue Lily 精准踩中了这个情绪窗口。"
         },
         {
           "idx": "游戏行业 02",
           "source": "Monster Hunter Outlanders · 官方",
-          "tags": ["手游", "封测", "Capcom", "怪物猎人"],
+          "tags": [
+            "手游",
+            "封测",
+            "Capcom",
+            "怪物猎人"
+          ],
           "title": "Monster Hunter Outlanders 第三次封测招募开放，8月7日开测",
           "en_title": "Monster Hunter Outlanders 3rd Closed Beta Test Recruitment Now Open",
           "full_text": "Monster Hunter Outlanders\n3rd Closed Beta Test Recruitment Now Open!\n\nTeam up with your friends and Buddies for a hunt on Aesoland!\n\nTest Overview\n· Closed beta (no in-app purchases, all game data will be wiped after the test concludes)\n· Platforms: Android / iOS\n· Recruitment period: July 2 (Thu) at 12:00 – July 24 (Fri) at 06:59 (UTC+0)\n· Test start time: August 7th (Fri), 02:00 (UTC+0)",
@@ -115,7 +148,10 @@
           "likes": 550,
           "views": 33564,
           "link": "https://x.com/MHO_English/status/2072651499931603080",
-          "media": {"type": "video", "url": "https://video.twimg.com/amplify_video/2072284995344097280/vid/avc1/1280x720/placeholder.mp4"},
+          "media": {
+            "type": "video",
+            "url": "https://video.twimg.com/amplify_video/2072284995344097280/vid/avc1/1280x720/placeholder.mp4"
+          },
           "summary": "Capcom 旗下手游 Monster Hunter Outlanders 开放第三次封测招募。Android/iOS 双平台，8月7日开测，7月24日前可报名。封测无内购，测试结束后数据清除。游戏以 Aesoland 为舞台，支持好友组队狩猎。",
           "analysis": "MH Outlanders 进入第三次封测意味着离正式上线不远。Capcom 在手游赛道的布局值得关注：怪猎IP的移动端变现潜力巨大（参考怪猎Rise的成功），但手游化的操作体验和付费模型如何平衡核心玩家期待是关键挑战。三次封测的节奏说明 Capcom 在质量上没有妥协。"
         }
@@ -130,7 +166,12 @@
         {
           "idx": "热门独游 01",
           "source": "游戏博主 · 新作情报",
-          "tags": ["合作狩猎", "动作", "Horizon", "4人合作"],
+          "tags": [
+            "合作狩猎",
+            "动作",
+            "Horizon",
+            "4人合作"
+          ],
           "title": "Horizon Hunters Gathering：Horizon宇宙4人合作狩猎动作游戏",
           "en_title": "ホライゾンゼロドーン x モンスターハンター - Horizon Hunters Gathering",
           "full_text": "ホライゾンゼロドーン x モンスターハンター\n\n「Horizon」ユニバースを舞台にした、最大4人での協力プレイを想定したハンティングアクション作品\n\n武器やスキル等が異なるハンターの中から一人を選び、仲間と共に機械中を狩れ！\n\n「Horizon Hunters Gathering」／発売日：未定",
@@ -139,14 +180,19 @@
           "likes": 1514,
           "views": 206258,
           "link": "https://x.com/hobbidwa/status/2072357673853473059",
-          "media": {"type": "video", "url": "https://video.twimg.com/amplify_video/2072356965959843840/vid/avc1/1280x720/placeholder.mp4"},
+          "media": {
+            "type": "video",
+            "url": "https://video.twimg.com/amplify_video/2072356965959843840/vid/avc1/1280x720/placeholder.mp4"
+          },
           "summary": "以 Horizon（地平线）宇宙为背景的最多4人合作狩猎动作游戏。玩家从拥有不同武器和技能的猎人中选择一位，与同伴协力狩猎机械兽。发售日未定。",
           "analysis": "Horizon IP + 怪物猎人式合作狩猎的组合有天然吸引力。Sony 旗下 IP 的多元化衍生说明第一方工作室在探索\"IP即服务\"的商业模式。对独游开发者的启示：大厂IP衍生的合作狩猎品类正在升温，小团队可以在美学风格和机制创新上找到差异化空间。",
           "enrichment": {
             "game_name": "Horizon Hunters Gathering",
             "genre": "合作狩猎 / 动作 / 4人联机",
             "developer": "Sony 旗下工作室（具体未公布）",
-            "platforms": ["PS5"],
+            "platforms": [
+              "PS5"
+            ],
             "price": "未公布",
             "steam_rating": "未发售",
             "steam_url": null,
@@ -159,7 +205,12 @@
         {
           "idx": "热门独游 02",
           "source": "IndieGamesLibrary · 推荐",
-          "tags": ["复古FPS", "僵尸", "90年代", "氛围"],
+          "tags": [
+            "复古FPS",
+            "僵尸",
+            "90年代",
+            "氛围"
+          ],
           "title": "复古90年代僵尸FPS：致敬经典恐怖电影的密集氛围射击",
           "en_title": "This game is inspired by zombie movies and FPS games from the 90s. So atmospheric and crowded.",
           "full_text": "🎮This game is inspired by zombie movies and FPS games from the 90s.\n\nSo atmospheric and crowded.",
@@ -168,14 +219,19 @@
           "likes": 1286,
           "views": 153695,
           "link": "https://x.com/IndieGamesLib/status/2072365112896458829",
-          "media": {"type": "video", "url": "https://video.twimg.com/amplify_video/2072329751016980480/vid/avc1/1280x720/placeholder.mp4"},
+          "media": {
+            "type": "video",
+            "url": "https://video.twimg.com/amplify_video/2072329751016980480/vid/avc1/1280x720/placeholder.mp4"
+          },
           "summary": "一款受90年代僵尸电影和经典 FPS 启发的复古射击游戏。主打极致氛围感和密集的僵尸群，画面风格致敬 Quake/Doom 时代的低多边形美学，但在光影和粒子效果上做了现代化升级。",
           "analysis": "复古 FPS（Boomer Shooter）品类近年持续升温——DUSK、Ultrakill、Turbo Overkill 证明了这个市场的购买力。加入僵尸电影美学的差异化是聪明的定位：比纯复古FPS多了恐怖氛围，比纯恐怖游戏多了射击爽感。1286 点赞说明独游社区对这类作品有明确需求。",
           "enrichment": {
             "game_name": "未公布（90s Zombie FPS）",
             "genre": "复古FPS / 恐怖 / 射击 / Boomer Shooter",
             "developer": "未公布",
-            "platforms": ["PC"],
+            "platforms": [
+              "PC"
+            ],
             "price": "未公布",
             "steam_rating": "未发售",
             "steam_url": null,
@@ -196,7 +252,12 @@
         {
           "idx": "开发工具 01",
           "source": "OBS Project · 官方发布",
-          "tags": ["OBS", "直播工具", "录制", "开源"],
+          "tags": [
+            "OBS",
+            "直播工具",
+            "录制",
+            "开源"
+          ],
           "title": "OBS Studio 32.2 Beta 发布：全新 Source 添加窗口，简化直播/录制工作流",
           "en_title": "OBS Studio 32.2 Beta is now available! This update includes a brand new window for adding sources.",
           "full_text": "OBS Studio 32.2 Beta is now available!\n\nWindows/macOS users can switch Update Channel in settings.\n\nGitHub: https://t.co/6RvDlkXqJ6\n\nThis update includes a brand new window for adding sources.\n\nPlease test and give us feedback on our Discord before the full release!",
@@ -205,11 +266,15 @@
           "likes": 1382,
           "views": 79271,
           "link": "https://x.com/OBSProject/status/2072493260614910337",
-          "media": {"type": "video", "url": "https://video.twimg.com/amplify_video/2072492447922290688/vid/avc1/1280x720/placeholder.mp4"},
+          "media": {
+            "type": "video",
+            "url": "https://video.twimg.com/amplify_video/2072492447922290688/vid/avc1/1280x720/placeholder.mp4"
+          },
           "summary": "OBS Studio 发布 32.2 Beta 版，主要更新为全新的 Source 添加窗口——重新设计了场景源的浏览和添加交互，让直播/录制时的场景配置更直观高效。Windows/macOS 用户可在设置中切换更新通道体验。",
           "analysis": "OBS 是游戏直播和内容创作的基础设施级工具，任何 UI/UX 改进都直接影响数百万用户的工作效率。Source 添加窗口的重做解决了长期被吐槽的\"新手不知道怎么加源\"的问题。对游戏内容创作者和独游开发者（录制 devlog/trailer）而言，值得关注并更新测试。"
         }
       ]
     }
-  ]
+  ],
+  "daily_summary": "??????? Anthropic?????? Claude Science??????????????????????60?????????????????Artifacts????????9.3M ????????????AI???????????????AI????????????????????????\n\n????????? Cognition?????? Devin Security Swarm???????Agentic MapReduce????????????????Agent????????????????Agent???????????????????????????????????????????\n\n????????????? Anthropic ???? 45 ???????????5?AI???????????????????????????????????????????????????????AI???????????????????????????\n\n??????????????????????? Blue Lily ?????? Moonlight Pale ????????????????????????100%??????????? Sony ??????????????????????????????? Monster Hunter Outlanders ?????????8?7????\n\n??????Horizon Hunters Gathering ??????????????????4???????????????????????????90????FPS???????????????????????? Boomer Shooter ???"
 }
