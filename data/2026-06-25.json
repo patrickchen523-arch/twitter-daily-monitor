@@ -9,11 +9,11 @@
   "digest": [
     {
       "id": "ai",
-      "text": "Agent 记忆系统 12 方案实测无通用赢家，适配场景比堆架构更重要\nAgent Memory 隐性失败模式：工作脉络断裂比遗忘更致命，解法是主动写 handoff 日志\n单 Prompt 用 Codex+GPT-5.5+Three.js 生成可玩赛车原型，展示 AI 编程能力边界\nSEGA 借 Sonic ARG 偷偷获取用户数据训练 AI，遭社区强烈反弹\n智谱 AI 估值 9000 亿港元，但国内大模型应用层仍缺现象级产品"
+      "text": "单 Prompt 用 Codex+GPT-5.5+Three.js 生成可玩赛车原型，展示 AI 编程能力边界\nSEGA 借 Sonic ARG 偷偷获取用户数据训练 AI，遭社区强烈反弹\nAgent 记忆系统 12 方案实测无通用赢家，适配场景比堆架构更重要"
     },
     {
       "id": "industry",
-      "text": "Bungie 大裁员波及 Destiny 大部分团队，工作室负责人辞职；白宫发 Destiny meme 引社会反弹\nXbox 8 月起全线涨价 $100-150，2TB 停产，内存危机传导至主机终端\nGTA 6 无实体光盘，引爆数字游戏所有权行业大讨论\nGameStop CEO 计划收购 eBay 转型数字游戏二手交易\nSony 加强 PS Store 审核打击 shovelware\nRAM 危机蔓延至 Apple，Mac/iPad 全线涨价"
+      "text": "Bungie 大裁员波及 Destiny 大部分团队，工作室负责人辞职\nGameStop CEO 计划收购 eBay 转型数字游戏二手交易\nSony 加强 PS Store 审核打击 shovelware"
     },
     {
       "id": "indie",
@@ -21,7 +21,7 @@
     },
     {
       "id": "tools",
-      "text": "UE 5.8 发布 Zebra Sample：引擎内完整角色绑骨/动画示例\nUnity 6.5 发布：2D 性能大幅提升 + CoreCLR 脚本改进\nPixiJS 实验 2D 内容实时渲染到 3D 几何体\nRealityScan 2.2 新增 AMD GPU 支持，可 N+A 双卡混合加速"
+      "text": "UE 5.8 发布 Zebra Sample：引擎内完整角色绑骨/动画示例\nUnity 6.5 发布：2D 性能大幅提升 + CoreCLR 脚本改进\nPixiJS 实验 2D 内容实时渲染到 3D 几何体"
     }
   ],
   "sections": [
@@ -33,44 +33,6 @@
       "items": [
         {
           "idx": "AI科技热点 01",
-          "source": "陈成 · 原创分析",
-          "tags": [
-            "AI Agent",
-            "记忆架构"
-          ],
-          "title": "Agent 记忆系统实测：12 个方案无通用赢家，适配场景比堆复杂架构更重要",
-          "en_title": "给 LLM Agent 堆越花哨的'记忆'架构，效果不一定越好。一篇新论文实测了 12 个记忆系统，没有通用赢家。",
-          "author": "chenchengpro",
-          "date": "2026-06-25",
-          "likes": 174,
-          "views": 13057,
-          "link": "https://x.com/chenchengpro/status/2070128168879653017",
-          "media": null,
-          "summary": "新论文将 Agent 记忆拆为\"表示与存储、抽取、检索与路由、维护\"四模块，实测 Mem0、Letta、Zep、Cognee、MemOS、MemTree、A-MEM、LightMem 等 12 个系统。结论：没有单一系统在所有场景胜出，适配具体任务上下文比盲目堆叠复杂架构更有效。",
-          "analysis": "对游戏开发中的 AI Agent 应用（NPC 行为、辅助编程 Agent、QA 自动化等）具有直接指导意义：不应迷信\"最强记忆框架\"，而应根据 Agent 的具体工作模式选择匹配的记忆方案。当前行业对 Agent 基础设施的投资正从\"模型能力\"转向\"上下文管理工程\"。",
-          "full_text": "给 LLM Agent 堆越花哨的\"记忆\"架构，效果不一定越好。一篇新论文实测了 12 个记忆系统，没有通用赢家。 它把 Agent 记忆当成数据库来拆——表示与存储、抽取、检索与路由、维护四个模块，拉来 Mem0、Letta、Zep、Cognee、MemOS、MemTree、A-MEM、LightMem 等 12 个系统，外加 Long Context 和"
-        },
-        {
-          "idx": "AI科技热点 02",
-          "source": "陈成 · 原创分析",
-          "tags": [
-            "AI Agent",
-            "工程实践"
-          ],
-          "title": "Agent Memory 的隐性失败模式：工作脉络断裂比\"遗忘\"更致命",
-          "en_title": "cobi 这篇《Agents Need a Diary》点破了 agent memory 一个被低估的失败模式：问题很少是'agent 忘了一切'那么戏剧化，而是工作脉络断了。",
-          "author": "chenchengpro",
-          "date": "2026-06-25",
-          "likes": 40,
-          "views": 5559,
-          "link": "https://x.com/chenchengpro/status/2070140030585356725",
-          "media": null,
-          "summary": "引述《Agents Need a Diary》核心洞察：Agent 的典型失败不是\"忘了一切\"，而是 context window 满了/任务切换后工作线索断裂。解法是让 Agent 在每次任务中断时主动写 handoff 日志。",
-          "analysis": "该问题在游戏开发实践中高度常见：使用 AI 辅助编程时，切换任务后返回，Agent 往往需要重新理解上下文。\"主动写 handoff\"的思路可直接应用于游戏团队的 AI 辅助工作流设计。",
-          "full_text": "cobi 这篇《Agents Need a Diary》点破了 agent memory 一个被低估的失败模式：问题很少是\"agent 忘了一切\"那么戏剧化，而是工作脉络断了。context window 满了、你切去别的任务、忘了让它写 handoff，几小时后工作还在，但线索没了，像翻开一本被撕掉三页的笔记本。 他的解法是把 agent memory"
-        },
-        {
-          "idx": "AI科技热点 03",
           "source": "Givros · 实验展示",
           "tags": [
             "AI 编程",
@@ -92,7 +54,7 @@
           "full_text": "I moved from fairground attractions to karting today. The idea: can one prompt generate a playable racing prototype with Codex + GPT-5.5 + Three.js? AI karts, laps, checkpoints, collisions, timer, position tracking… and the beginning of an actual race. The next goal is to https://t.co/luFvDwAcbr"
         },
         {
-          "idx": "AI科技热点 04",
+          "idx": "AI科技热点 02",
           "source": "Eurogamer · News",
           "tags": [
             "AI 伦理",
@@ -111,23 +73,23 @@
           "full_text": "SEGA faces backlash as Sonic the Hedgehog ARG sneakily asks for consent to train gen-AI on your data https://t.co/JWFBDUOmvK https://t.co/yloxYSE4EJ"
         },
         {
-          "idx": "AI科技热点 05",
-          "source": "Tony出海 · 观察",
+          "idx": "AI科技热点 03",
+          "source": "陈成 · 原创分析",
           "tags": [
-            "AI 行业",
-            "国内市场"
+            "AI Agent",
+            "记忆架构"
           ],
-          "title": "智谱 AI 估值 9000 亿港元，但国内大模型应用层仍缺现象级产品",
-          "en_title": "智谱AI当前市值：约 9000亿–1.1万亿港。也没听说他的那个 GLM 个人应用。DeepSeek 和 Kimi 都是好选手，也不争气",
-          "author": "iamtonyzhu",
-          "date": "2026-06-24",
-          "likes": 2,
-          "views": 947,
-          "link": "https://x.com/iamtonyzhu/status/2069739871418368119",
+          "title": "Agent 记忆系统实测：12 个方案无通用赢家，适配场景比堆复杂架构更重要",
+          "en_title": "给 LLM Agent 堆越花哨的'记忆'架构，效果不一定越好。一篇新论文实测了 12 个记忆系统，没有通用赢家。",
+          "author": "chenchengpro",
+          "date": "2026-06-25",
+          "likes": 174,
+          "views": 13057,
+          "link": "https://x.com/chenchengpro/status/2070128168879653017",
           "media": null,
-          "summary": "智谱估值飙升但 GLM 应用层存在感弱。DeepSeek、Kimi 等国内大模型产品技术强劲但消费级应用未形成突破。",
-          "analysis": "国内 AI\"估值高、应用弱\"的结构性矛盾。对游戏行业启示：国内大模型能力已足够支撑游戏开发辅助场景，但面向消费者的 AI 游戏产品仍处探索期，存在先发机会。",
-          "full_text": "智谱AI当前市值：约 9000亿–1.1万亿港。 也没听说他的那个 GLM 个人应用。 DeepSeek 和 Kimi 都是好选手，也不争气"
+          "summary": "新论文将 Agent 记忆拆为\"表示与存储、抽取、检索与路由、维护\"四模块，实测 Mem0、Letta、Zep、Cognee、MemOS、MemTree、A-MEM、LightMem 等 12 个系统。结论：没有单一系统在所有场景胜出，适配具体任务上下文比盲目堆叠复杂架构更有效。",
+          "analysis": "对游戏开发中的 AI Agent 应用（NPC 行为、辅助编程 Agent、QA 自动化等）具有直接指导意义：不应迷信\"最强记忆框架\"，而应根据 Agent 的具体工作模式选择匹配的记忆方案。当前行业对 Agent 基础设施的投资正从\"模型能力\"转向\"上下文管理工程\"。",
+          "full_text": "给 LLM Agent 堆越花哨的\"记忆\"架构，效果不一定越好。一篇新论文实测了 12 个记忆系统，没有通用赢家。 它把 Agent 记忆当成数据库来拆——表示与存储、抽取、检索与路由、维护四个模块，拉来 Mem0、Letta、Zep、Cognee、MemOS、MemTree、A-MEM、LightMem 等 12 个系统，外加 Long Context 和"
         }
       ]
     },
@@ -160,44 +122,6 @@
           "idx": "游戏行业 02",
           "source": "GameSpot · News",
           "tags": [
-            "硬件涨价",
-            "多家报道"
-          ],
-          "title": "Xbox 全线涨价 $100-$150（8月1日生效）：内存危机传导至主机终端",
-          "en_title": "XBOX console prices are going up starting August 1, 2026. 512GB +$100, 1TB +$150. 2TB sunsetted.",
-          "author": "GameSpot",
-          "date": "2026-06-25",
-          "likes": 98,
-          "views": 21176,
-          "link": "https://x.com/GameSpot/status/2070199469786780038",
-          "media": null,
-          "summary": "微软宣布 Xbox 全线涨价：512GB 涨 $100、1TB 涨 $150、2TB 停产。归因于内存/存储成本飙升。同步裁员 Compulsion Games。",
-          "analysis": "AI 数据中心争夺内存产能的上游传导正式落地为消费终端涨价。主机装机量增长放缓将加速\"去硬件依赖\"的订阅/云游戏路径。",
-          "full_text": "XBOX console prices are going up starting August 1, 2026. 512GB models are increasing by $100 and $150 for 1TB models. The 2TB model will also be sunsetted. https://t.co/oEIoJbIinA"
-        },
-        {
-          "idx": "游戏行业 03",
-          "source": "Eurogamer · Analysis",
-          "tags": [
-            "商业模式",
-            "多家报道"
-          ],
-          "title": "GTA 6 无实体光盘引爆\"数字游戏所有权\"行业大讨论",
-          "en_title": "Few things get me excited like these big GTA 6 moments, but we need to talk about digital game ownership - and fast.",
-          "author": "eurogamer",
-          "date": "2026-06-25",
-          "likes": 49,
-          "views": 9634,
-          "link": "https://x.com/eurogamer/status/2070151907843113348",
-          "media": null,
-          "summary": "GTA 6 实体版仅含下载码，部分零售商拒绝铺货。引发数字所有权、区域锁定、二手市场消亡的集中讨论。",
-          "analysis": "GTA 6 作为本世代最大单款游戏，其\"无实体盘\"决策具有强烈的行业风向标意义。当数字分发成为唯一渠道，平台对游戏的控制权将进一步集中。",
-          "full_text": "Few things get me excited like these big GTA 6 moments, but we need to talk about digital game ownership - and fast. https://t.co/79ezNOZQic https://t.co/nlSgQNmhwP"
-        },
-        {
-          "idx": "游戏行业 04",
-          "source": "GameSpot · News",
-          "tags": [
             "商业模式",
             "零售转型"
           ],
@@ -214,7 +138,7 @@
           "full_text": "GameStop CEO Came Up With Plan To Buy eBay On The Toilet, Wants It To Become Re-Seller Of Digital Gaming Items https://t.co/6dOzZe4HzK"
         },
         {
-          "idx": "游戏行业 05",
+          "idx": "游戏行业 03",
           "source": "Eurogamer · News",
           "tags": [
             "平台政策"
@@ -230,24 +154,6 @@
           "summary": "Sony 实施更严格上架规则，限制低质量游戏登陆 PS Store。更多开发者反馈已受影响。",
           "analysis": "平台质量管控趋严是 AI 生成内容泛滥后的必然反应。对独立开发者是双面影响：减少噪音但上架门槛提高。",
           "full_text": "Sony appears to be implementing \"stricter\" rules for releasing games on the PlayStation Store in an effort to cut down on the amount of shovelware - low effort games - that are appearing there. https://t.co/icjepeDK8q https://t.co/pJmItSbO3o"
-        },
-        {
-          "idx": "游戏行业 06",
-          "source": "PC Gamer · News",
-          "tags": [
-            "供应链"
-          ],
-          "title": "RAM 价格危机蔓延至 Apple：Mac/iPad 全线涨价数百美元",
-          "en_title": "The RAM crisis comes for Apple: Mac and iPad prices jacked up by hundreds",
-          "author": "pcgamer",
-          "date": "2026-06-25",
-          "likes": 30,
-          "views": 12552,
-          "link": "https://x.com/pcgamer/status/2070140042362888338",
-          "media": null,
-          "summary": "内存/存储价格飙升从游戏主机扩散至消费电子全行业。Apple 全线涨价。",
-          "analysis": "进一步印证内存危机是全行业结构性问题。对游戏开发者的影响路径：玩家硬件升级意愿降低→装机量增长放缓→跨平台与云串流战略价值上升。",
-          "full_text": "The RAM crisis comes for Apple: Mac and iPad prices jacked up by hundreds https://t.co/F5WlvX5Q4C"
         }
       ]
     },
@@ -363,28 +269,9 @@
           "summary": "PixiJS 展示 3D 进展：2D 内容实时渲染到 3D 几何体。目标 WebGPU/WebGL 渲染器中 2D 与 3D 无缝混合。",
           "analysis": "PixiJS 从纯 2D 向 2.5D/3D 演进，对 Web/H5/小游戏开发者有直接价值。是对 Three.js 在 Web 3D 领域的一次边界拓展。",
           "full_text": "More PixiJS 3D testing 👀 Take any live 2D PixiJS content (sprites, text, graphics) and render it onto 3D geometry Our goal is to make working between 2D and 3D as seamless as possible in our WebGPU/WebGL renderer Let us know what features you"
-        },
-        {
-          "idx": "开发工具 04",
-          "source": "Unreal Engine · 官方",
-          "tags": [
-            "3D 扫描",
-            "工具更新"
-          ],
-          "title": "RealityScan 2.2：新增 AMD GPU 完整支持，可 N+A 双卡混合加速",
-          "en_title": "RealityScan 2.2: full AMD GPU support. Mix AMD and NVIDIA in the same machine.",
-          "author": "UnrealEngine",
-          "date": "2026-06-24",
-          "likes": 156,
-          "views": 20521,
-          "link": "https://x.com/UnrealEngine/status/2069791316251467926",
-          "media": null,
-          "summary": "RealityScan 2.2 新增 AMD GPU 支持，可混用 AMD+NVIDIA 双卡加速。降低 photogrammetry 硬件门槛。",
-          "analysis": "在硬件涨价大环境下，支持多品牌混合加速让开发者利用已有硬件完成 3D 扫描，是务实的工具民主化动作。",
-          "full_text": "RealityScan 2.2 and that means full AMD GPU support has landed! Mix AMD and NVIDIA in the same machine and RealityScan will use both at once. More details on that and the latest bug fixes can be found here: https://t.co/hqrNEiIdz1 https://t.co/CM2owLKpaI"
         }
       ]
     }
   ],
-  "daily_summary": "**Agent记忆系统没有银弹：12个方案实测无通用赢家**\n一篇新论文对比了 Mem0、Letta、Zep 等 12 个 Agent 记忆系统，结论是没有单一方案在所有场景胜出。更值得注意的是 Agent Memory 的隐性失败模式——问题往往不是\"忘了一切\"，而是工作脉络在任务切换后断裂。解法是让 Agent 主动写 handoff 日志。\n\n**单条Prompt生成可玩赛车游戏：AI编程的能力边界在哪**\n开发者用 Codex + GPT-5.5 + Three.js 做了个实验：一句话生成包含 AI 赛车对手、圈速计时、碰撞系统的完整原型。结果可玩但距生产质量有距离，展示了\"验证玩法想法\"可以从数天压缩到数分钟。\n\n**SEGA借Sonic ARG偷偷采集AI训练数据，社区炸了**\nSEGA 的 Sonic 互动营销被发现在条款中暗藏 AI 训练数据授权，引发大面积反弹。同时智谱 AI 估值 9000 亿港元，但国内大模型应用层仍缺现象级产品。\n\n**行业震动：Bungie大裁员、Xbox全线涨价、GTA6无光盘**\nBungie 裁员波及 Destiny 大部分团队；Xbox 8月起涨价 $100-150；GTA 6 确认无实体光盘引爆数字所有权讨论；GameStop CEO 计划收购 eBay 转型；RAM 危机从主机蔓延到 Apple 全线产品。\n\n**Deltarune Ch5创独游在线纪录：29万人同时在线**\nToby Fox 的 Deltarune Chapter 5 上线首日 Steam 同时在线 291,816 人，好评率 96.94%。证明了个人开发者 + 强 IP + 分章节免费引流策略的天花板极高。\n\n**引擎双雄更新：UE 5.8 + Unity 6.5 同步发力**\n虚幻引擎 5.8 发布 Zebra Sample（完整角色绑骨/动画示例），Unity 6.5 大幅提升 2D 性能并改进 CoreCLR 脚本。PixiJS 实验将 2D 内容实时渲染到 3D 几何体，RealityScan 2.2 新增 AMD GPU 支持。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+  "daily_summary": "**单条Prompt生成可玩赛车游戏：AI编程的能力边界在哪**\n开发者用 Codex + GPT-5.5 + Three.js 做了个实验：一句话生成包含 AI 赛车对手、圈速计时、碰撞系统的完整原型。结果可玩但距生产质量有距离，展示了\"验证玩法想法\"可以从数天压缩到数分钟。\n\n**SEGA借Sonic ARG偷偷采集AI训练数据，社区炸了**\nSEGA 的 Sonic 互动营销被发现在条款中暗藏 AI 训练数据授权，引发大面积反弹。游戏公司用互动活动获取数据训练 AI 的做法如果缺乏透明度，会严重损害品牌信任。\n\n**Agent记忆系统没有银弹：12个方案实测无通用赢家**\n一篇新论文对比了 Mem0、Letta、Zep 等 12 个 Agent 记忆系统，结论是没有单一方案在所有场景胜出。对游戏 AI Agent 应用的启示：不应迷信最强框架，而应根据具体任务选择匹配方案。\n\n**行业震动：Bungie大裁员，GameStop转型，Sony打击垃圾游戏**\nBungie 裁员波及 Destiny 大部分团队，工作室负责人辞职；GameStop CEO 计划收购 eBay 转型数字游戏二手交易；Sony 加强 PS Store 审核打击 shovelware 垃圾游戏上架。\n\n**Deltarune Ch5创独游在线纪录：29万人同时在线**\nToby Fox 的 Deltarune Chapter 5 上线首日 Steam 同时在线 291,816 人，好评率 96.94%。证明了个人开发者 + 强 IP + 分章节免费引流策略的天花板极高。\n\n**引擎双雄更新：UE 5.8 + Unity 6.5 + PixiJS 3D 实验**\n虚幻引擎 5.8 发布 Zebra Sample（完整角色绑骨/动画示例），Unity 6.5 大幅提升 2D 性能并改进 CoreCLR 脚本。PixiJS 实验将 2D 内容实时渲染到 3D 几何体。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
 }
