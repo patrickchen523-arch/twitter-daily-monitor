@@ -510,6 +510,11 @@ function renderEnrichment(item) {
   if (e.estimated_sales && e.estimated_sales !== '暂无官方数据') html += `<span class="enrich-tag" style="background:var(--red-light);color:var(--red);border-color:var(--red-border)">销量 ${e.estimated_sales}</span>`;
   html += '</div>';
 
+  // GI one-line summary
+  if (e.gi_summary) {
+    html += `<div style="font-size:13px;color:var(--ink);font-weight:600;margin:10px 0 12px;padding:10px 14px;background:linear-gradient(90deg,var(--gold-light),transparent);border-left:3px solid var(--gold);border-radius:4px;line-height:1.6">${e.gi_summary}</div>`;
+  }
+
   // Game description
   if (e.description) {
     html += `<div class="enrich-desc">${e.description}</div>`;
