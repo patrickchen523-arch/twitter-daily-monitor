@@ -429,8 +429,10 @@ function renderContent() {
       }
       const tagsHtml = item.tags.map(t => `<span class="badge">${t}</span>`).join('');
 
+      const searchText = (item.title + ' ' + item.summary + ' ' + item.analysis + ' ' + item.en_title + ' ' + item.tags.join(' ')).toLowerCase().replace(/"/g, '&quot;');
+
       html += `
-        <article class="card" id="card-${sec.id}-${itemIdx}" style="border-left-color:${borderColor}" data-section="${sec.id}" data-searchable="${(item.title + ' ' + item.summary + ' ' + item.analysis + ' ' + item.en_title + ' ' + item.tags.join(' ')).toLowerCase()}">
+        <article class="card" id="card-${sec.id}-${itemIdx}" style="border-left-color:${borderColor}" data-section="${sec.id}" data-searchable="${searchText}">
           <div class="card-top">
             <span class="card-idx" style="color:${idxColor};background:${idxBg}">${item.idx}</span>
             <span class="badge">${item.source}</span>
