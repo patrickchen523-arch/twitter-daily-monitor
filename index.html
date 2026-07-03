@@ -457,7 +457,7 @@ function renderContent() {
               <span class="expand-text">收起完整推文</span>
             </div>
           </div>
-          <div class="field"><span class="lab analysis">观点解读</span><p class="val">${item.analysis}</p></div>
+          ${sec.id !== 'indie' ? `<div class="field"><span class="lab analysis">观点解读</span><p class="val">${item.analysis}</p></div>` : ''}
           ${renderEnrichment(item)}
         </article>`;
     });
@@ -488,6 +488,7 @@ function renderEnrichment(item) {
 
   // Game description
   if (e.description) {
+    html += `<div class="field"><span class="lab analysis">游戏测评</span></div>`;
     html += `<div class="enrich-desc">${e.description}</div>`;
   }
 
