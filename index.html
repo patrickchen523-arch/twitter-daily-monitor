@@ -506,6 +506,8 @@ function renderEnrichment(item) {
   if (e.platforms) e.platforms.forEach(p => { html += `<span class="enrich-tag platform">${p}</span>`; });
   if (e.price) html += `<span class="enrich-tag price">${e.price}</span>`;
   if (e.steam_rating) html += `<span class="enrich-tag">${e.steam_rating}</span>`;
+  if (e.pcu) html += `<span class="enrich-tag" style="background:var(--ai-light);color:var(--ai);border-color:var(--ai-border)">PCU ${e.pcu}</span>`;
+  if (e.estimated_sales && e.estimated_sales !== '暂无官方数据') html += `<span class="enrich-tag" style="background:var(--red-light);color:var(--red);border-color:var(--red-border)">销量 ${e.estimated_sales}</span>`;
   html += '</div>';
 
   // Game description
