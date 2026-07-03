@@ -296,6 +296,7 @@ function renderDateStrip() {
 
 async function loadDate(date) {
   currentDate = date;
+  currentTab = 'digest';
   document.querySelectorAll('.datestrip button').forEach(b => {
     b.classList.toggle('on', b.dataset.date === date);
   });
