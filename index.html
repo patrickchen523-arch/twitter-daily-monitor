@@ -128,7 +128,7 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 .roblox-iframe{width:100%;height:calc(100vh - 180px);border:1px solid var(--border);border-radius:12px;background:var(--card);box-shadow:var(--shadow)}
 
 /* Enrichment - Game Showcase (4-zone layout) */
-.enrichment{margin-top:8px;padding:0;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.enrichment{margin-top:8px;margin-left:-60px;margin-right:-60px;padding:0;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.04)}
 .enrich-grid{display:grid;grid-template-columns:1.3fr 0.7fr;grid-template-rows:1fr auto;gap:0}
 .enrich-media{grid-column:1;grid-row:1/3;border-right:1px solid var(--border-light);position:relative;overflow:hidden;min-height:240px;background:#0a0a0a}
 .enrich-media img,.enrich-media video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
@@ -159,6 +159,7 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 .enrich-links a{font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;padding:6px 14px;border:1px solid var(--gold-border);border-radius:8px;transition:all .2s}
 .enrich-links a:hover{background:var(--gold-light);transform:translateY(-1px);box-shadow:0 2px 8px rgba(196,155,44,.15)}
 @media(max-width:700px){
+  .enrichment{margin-left:0;margin-right:0}
   .enrich-grid{grid-template-columns:1fr;grid-template-rows:auto}
   .enrich-media{grid-column:1;grid-row:1;min-height:180px;border-right:none}
   .enrich-data{grid-column:1;grid-row:2;flex-direction:row;flex-wrap:wrap;gap:16px;padding:16px 20px}
@@ -532,7 +533,7 @@ function renderEnrichment(item) {
   if (e.current_players) {
     html += `<div class="enrich-stat"><span class="enrich-stat-label">当前在线</span><span class="enrich-stat-value">${e.current_players}</span></div>`;
   }
-  if (e.steam_rating) {
+  if (e.steam_rating && !e.steam_rating.includes('未发售')) {
     html += `<div class="enrich-stat"><span class="enrich-stat-label">好评率</span><span class="enrich-stat-value">${e.steam_rating}</span></div>`;
   }
   if (e.estimated_sales && e.estimated_sales !== '暂无官方数据') {
@@ -541,8 +542,9 @@ function renderEnrichment(item) {
   if (e.price) {
     html += `<div class="enrich-stat"><span class="enrich-stat-label">价格</span><span class="enrich-stat-value">${e.price}</span></div>`;
   }
-  if (!e.pcu && !e.steam_rating && !e.estimated_sales) {
-    html += `<div style="display:flex;align-items:center;justify-content:center;height:100%;min-height:80px"><span style="font-size:13px;font-weight:600;color:var(--ink3);padding:12px 20px;border:1.5px dashed var(--border);border-radius:8px">${e.price === '暂未发售' || !e.price ? '暂未发售' : '无相关数据'}</span></div>`;
+  const hasData = e.pcu || (e.steam_rating && !e.steam_rating.includes('未发售')) || (e.estimated_sales && e.estimated_sales !== '暂无官方数据');
+  if (!hasData) {
+    html += `<div style="display:flex;align-items:center;justify-content:center;height:100%;min-height:80px"><span style="font-size:13px;font-weight:600;color:var(--ink3);padding:12px 20px;border:1.5px dashed var(--border);border-radius:8px">${e.price === '暂未发售' || !e.price || e.price === '未公布' ? '暂未发售' : '无相关数据'}</span></div>`;
   }
   html += '</div>';
 
