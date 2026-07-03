@@ -331,7 +331,9 @@ function renderDailySummary() {
     return;
   }
   el.style.display = '';
-  el.innerHTML = `<div class="daily-summary-title">当日推文总结 · ${currentDate}</div><div class="daily-summary-body">${currentData.daily_summary}</div>`;
+  // Support **bold** markdown in daily summary
+  const summaryHtml = currentData.daily_summary.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  el.innerHTML = `<div class="daily-summary-title">当日推文总结 · ${currentDate}</div><div class="daily-summary-body">${summaryHtml}</div>`;
 }
 
 function renderDigest() {
