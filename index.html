@@ -541,15 +541,23 @@ function renderEnrichment(item) {
 
 function handleSearch() {
   const query = document.getElementById('searchInput').value.trim().toLowerCase();
-  const cards = document.querySelectorAll('.card');
-  let visibleCount = 0;
 
   if (!query) {
+    // Clear search: if we switched to 'all' for search, stay there but show all
+    const cards = document.querySelectorAll('.card');
     cards.forEach(c => c.style.display = '');
     document.querySelectorAll('.sec-heading').forEach(s => s.style.display = '');
     document.getElementById('noResults').style.display = 'none';
     return;
   }
+
+  // Switch to 'all' tab to show cards for searching
+  if (currentTab === 'digest') {
+    switchTab('all');
+  }
+
+  const cards = document.querySelectorAll('.card');
+  let visibleCount = 0;
 
   cards.forEach(c => {
     const match = (c.dataset.searchable || '').includes(query);
