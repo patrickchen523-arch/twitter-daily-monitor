@@ -127,25 +127,41 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 .roblox-week-btn.on{background:var(--gold);border-color:var(--gold);color:#fff;box-shadow:0 2px 8px rgba(196,155,44,.2)}
 .roblox-iframe{width:100%;height:calc(100vh - 180px);border:1px solid var(--border);border-radius:12px;background:var(--card);box-shadow:var(--shadow)}
 
-/* Enrichment (indie game extra info) */
-.enrichment{margin-top:8px;padding:18px 20px;background:linear-gradient(135deg, var(--bg) 0%, #F8F6F0 100%);border:1px solid var(--border-light);border-radius:12px}
-.enrich-header{display:block;margin-bottom:14px;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.enrich-header img{width:100%;max-height:220px;object-fit:cover;display:block;border-radius:10px;transition:all .3s}
-.enrich-header:hover img{opacity:.92;transform:scale(1.01)}
-.enrich-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
-.enrich-tag{font-size:11px;font-weight:600;padding:4px 10px;border-radius:12px;background:var(--green-light);color:var(--green);border:1px solid var(--green-border)}
-.enrich-tag.platform{background:var(--blue-light);color:var(--blue);border-color:var(--blue-border)}
-.enrich-tag.price{background:var(--gold-light);color:var(--gold);border-color:var(--gold-border)}
-.enrich-desc{font-size:13px;color:var(--ink2);line-height:1.75;margin-bottom:12px;padding:16px 18px;background:var(--card);border:1px solid var(--border-light);border-radius:8px;white-space:pre-line}
-.enrich-notable{font-size:13px;color:var(--ink2);line-height:1.6;margin-bottom:12px;padding-left:12px;border-left:3px solid var(--green)}
-.enrich-video-link{display:block;position:relative;margin-top:12px;border-radius:10px;overflow:hidden;max-width:480px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.enrich-video-link img{width:100%;display:block;border-radius:10px;transition:all .3s}
-.enrich-video-link:hover img{opacity:.85;transform:scale(1.01)}
-.enrich-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:52px;height:52px;background:rgba(0,0,0,.7);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;padding-left:3px;transition:transform .2s}
-.enrich-video-link:hover .enrich-play{transform:translate(-50%,-50%) scale(1.1)}
+/* Enrichment - Game Showcase (4-zone layout) */
+.enrichment{margin-top:8px;padding:0;background:linear-gradient(135deg, var(--bg) 0%, #F8F6F0 100%);border:1px solid var(--border-light);border-radius:14px;overflow:hidden}
+.enrich-grid{display:grid;grid-template-columns:1.2fr 0.8fr;grid-template-rows:auto auto;gap:0}
+.enrich-media{grid-column:1;grid-row:1;border-right:1px solid var(--border-light);border-bottom:1px solid var(--border-light);position:relative;overflow:hidden;min-height:200px;background:#111}
+.enrich-media img,.enrich-media video{width:100%;height:100%;object-fit:cover;display:block}
+.enrich-media a{display:block;width:100%;height:100%}
+.enrich-media .play-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.2);transition:background .3s}
+.enrich-media .play-overlay:hover{background:rgba(0,0,0,.4)}
+.enrich-media .play-overlay span{width:56px;height:56px;background:rgba(255,255,255,.95);color:#111;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;padding-left:3px;box-shadow:0 4px 16px rgba(0,0,0,.2)}
+.enrich-data{grid-column:2;grid-row:1;padding:20px;display:flex;flex-direction:column;gap:12px;border-bottom:1px solid var(--border-light)}
+.enrich-stat{display:flex;flex-direction:column;gap:2px}
+.enrich-stat-label{font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--ink3)}
+.enrich-stat-value{font-size:20px;font-weight:900;color:var(--ink);font-family:var(--font-serif);line-height:1.2}
+.enrich-stat-value.gold{color:var(--gold)}
+.enrich-stat-sub{font-size:11px;color:var(--ink3);margin-top:1px}
+.enrich-tags-zone{grid-column:2;grid-row:2;padding:16px 20px;display:flex;flex-wrap:wrap;gap:6px;align-content:flex-start}
+.enrich-tags-zone .enrich-tag{font-size:11px;font-weight:600;padding:4px 10px;border-radius:12px;background:var(--green-light);color:var(--green);border:1px solid var(--green-border)}
+.enrich-tags-zone .enrich-tag.platform{background:var(--blue-light);color:var(--blue);border-color:var(--blue-border)}
+.enrich-tags-zone .enrich-tag.price{background:var(--gold-light);color:var(--gold);border-color:var(--gold-border)}
+.enrich-tags-zone .enrich-tag.pcu{background:var(--ai-light);color:var(--ai);border-color:var(--ai-border)}
+.enrich-tags-zone .enrich-tag.sales{background:var(--red-light);color:var(--red);border-color:var(--red-border)}
+.enrich-bottom{grid-column:1/3;padding:20px 24px;border-top:1px solid var(--border-light)}
+.enrich-gi-line{font-size:13px;color:var(--ink);font-weight:600;margin-bottom:12px;padding:10px 14px;background:linear-gradient(90deg,var(--gold-light),transparent);border-left:3px solid var(--gold);border-radius:4px;line-height:1.6}
+.enrich-desc{font-size:13px;color:var(--ink2);line-height:1.75;white-space:pre-line;margin-bottom:12px}
+.enrich-notable{font-size:13px;color:var(--ink2);line-height:1.6;padding-left:12px;border-left:3px solid var(--green);margin-bottom:12px}
 .enrich-links{display:flex;gap:10px;margin-top:10px}
 .enrich-links a{font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;padding:5px 12px;border:1px solid var(--gold-border);border-radius:8px;transition:all .2s}
 .enrich-links a:hover{background:var(--gold-light);transform:translateY(-1px)}
+@media(max-width:700px){
+  .enrich-grid{grid-template-columns:1fr;grid-template-rows:auto}
+  .enrich-media{grid-column:1;grid-row:1;min-height:180px;border-right:none}
+  .enrich-data{grid-column:1;grid-row:2;flex-direction:row;flex-wrap:wrap;border-bottom:1px solid var(--border-light)}
+  .enrich-tags-zone{grid-column:1;grid-row:3}
+  .enrich-bottom{grid-column:1;grid-row:4}
+}
 
 /* Digest */
 .digest{background:var(--card);border:1px solid var(--gold-border);border-radius:14px;padding:24px 28px;margin-bottom:28px;box-shadow:0 2px 12px rgba(196,155,44,.06)}
@@ -492,57 +508,64 @@ function renderEnrichment(item) {
   if (!item.enrichment) return '';
   const e = item.enrichment;
   let html = '<div class="field"><span class="lab analysis">游戏简介</span></div>';
-  html += '<div class="enrichment">';
+  html += '<div class="enrichment"><div class="enrich-grid">';
 
-  // Header image (Steam capsule)
-  if (e.header_image) {
-    const gameName = (e.game_name || '').replace(/"/g, '&quot;');
-    html += `<a class="enrich-header" href="${e.steam_url || '#'}" target="_blank"><img src="${e.header_image}" alt="${gameName}" referrerpolicy="no-referrer"></a>`;
+  // Zone 1: Left - Media (video/image)
+  html += '<div class="enrich-media">';
+  const mediaUrl = e.header_image || (item.media && item.media.url) || '';
+  const videoUrl = item.media && item.media.video_url;
+  if (videoUrl && mediaUrl) {
+    html += `<a href="${videoUrl}" target="_blank"><img src="${mediaUrl}" alt="" referrerpolicy="no-referrer"><div class="play-overlay"><span>&#9654;</span></div></a>`;
+  } else if (mediaUrl) {
+    html += `<a href="${e.steam_url || '#'}" target="_blank"><img src="${mediaUrl}" alt="" referrerpolicy="no-referrer"></a>`;
   }
-
-  // Tags row: genre, platforms, price, rating
-  html += '<div class="enrich-tags">';
-  if (e.genre) html += `<span class="enrich-tag">${e.genre}</span>`;
-  if (e.platforms) e.platforms.forEach(p => { html += `<span class="enrich-tag platform">${p}</span>`; });
-  if (e.price) html += `<span class="enrich-tag price">${e.price}</span>`;
-  if (e.steam_rating) html += `<span class="enrich-tag">${e.steam_rating}</span>`;
-  if (e.pcu) html += `<span class="enrich-tag" style="background:var(--ai-light);color:var(--ai);border-color:var(--ai-border)">PCU ${e.pcu}</span>`;
-  if (e.estimated_sales && e.estimated_sales !== '暂无官方数据') html += `<span class="enrich-tag" style="background:var(--red-light);color:var(--red);border-color:var(--red-border)">销量 ${e.estimated_sales}</span>`;
   html += '</div>';
 
-  // GI one-line summary
-  if (e.gi_summary) {
-    html += `<div style="font-size:13px;color:var(--ink);font-weight:600;margin:10px 0 12px;padding:10px 14px;background:linear-gradient(90deg,var(--gold-light),transparent);border-left:3px solid var(--gold);border-radius:4px;line-height:1.6">${e.gi_summary}</div>`;
+  // Zone 2: Right top - Data stats
+  html += '<div class="enrich-data">';
+  if (e.pcu) {
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">PCU 峰值</span><span class="enrich-stat-value gold">${e.pcu}</span></div>`;
   }
+  if (e.current_players) {
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">当前在线</span><span class="enrich-stat-value">${e.current_players}</span></div>`;
+  }
+  if (e.steam_rating) {
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">好评率</span><span class="enrich-stat-value">${e.steam_rating}</span></div>`;
+  }
+  if (e.estimated_sales && e.estimated_sales !== '暂无官方数据') {
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">销量</span><span class="enrich-stat-value">${e.estimated_sales}</span></div>`;
+  }
+  if (e.price) {
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">价格</span><span class="enrich-stat-value">${e.price}</span></div>`;
+  }
+  if (!e.pcu && !e.steam_rating && !e.estimated_sales) {
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">状态</span><span class="enrich-stat-value" style="font-size:14px;color:var(--ink3)">暂未发售</span></div>`;
+  }
+  html += '</div>';
 
-  // Game description
+  // Zone 3: Right bottom - Tags
+  html += '<div class="enrich-tags-zone">';
+  if (e.genre) e.genre.split('/').forEach(t => { html += `<span class="enrich-tag">${t.trim()}</span>`; });
+  if (e.platforms) e.platforms.forEach(p => { html += `<span class="enrich-tag platform">${p}</span>`; });
+  // Links as tags
+  if (e.steam_url) html += `<a class="enrich-tag price" href="${e.steam_url}" target="_blank" style="text-decoration:none;cursor:pointer">Steam 页面</a>`;
+  if (e.youtube_video) html += `<a class="enrich-tag pcu" href="${e.youtube_video}" target="_blank" style="text-decoration:none;cursor:pointer">▶ YouTube</a>`;
+  html += '</div>';
+
+  // Zone 4: Bottom - Description
+  html += '<div class="enrich-bottom">';
+  if (e.gi_summary) {
+    html += `<div class="enrich-gi-line">${e.gi_summary}</div>`;
+  }
   if (e.description) {
     html += `<div class="enrich-desc">${e.description}</div>`;
   }
-
-  // Why notable
   if (e.why_notable) {
     html += `<div class="enrich-notable">${e.why_notable}</div>`;
   }
-
-  // YouTube video thumbnail
-  if (e.youtube_video) {
-    const vidId = e.youtube_video.match(/[?&]v=([^&]+)/);
-    if (vidId) {
-      html += `<a class="enrich-video-link" href="${e.youtube_video}" target="_blank">
-        <img src="https://img.youtube.com/vi/${vidId[1]}/mqdefault.jpg" alt="视频预览" referrerpolicy="no-referrer">
-        <span class="enrich-play">▶</span>
-      </a>`;
-    }
-  }
-
-  // Links row
-  let links = '';
-  if (e.steam_url) links += `<a href="${e.steam_url}" target="_blank">Steam 页面</a>`;
-  if (e.youtube_video) links += `<a href="${e.youtube_video}" target="_blank">▶ YouTube</a>`;
-  if (links) html += `<div class="enrich-links">${links}</div>`;
-
   html += '</div>';
+
+  html += '</div></div>';
   return html;
 }
 
