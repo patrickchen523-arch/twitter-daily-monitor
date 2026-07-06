@@ -1,0 +1,216 @@
+{
+  "date": "2026-07-04",
+  "meta": {
+    "raw_count": 216,
+    "filtered_count": 183,
+    "selected_count": 8,
+    "crawl_time": "2026-07-04 18:00"
+  },
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Kimi K2.7 Code 进入 GitHub Copilot：首个开源权重模型可选项\nAaron Levie：企业 AI Agent 部署需要对齐底层业务流程，不能直接插入\nFable 5 生成霍格沃茨飞行场景，AI游戏开发能力持续进化"
+    },
+    {
+      "id": "industry",
+      "text": "GitHub 恶搞回应光盘话题：推出公共仓库 CD-ROM 实体服务\nSteam Machine 早期用户遭遇 GPU \"红线之死\"故障"
+    },
+    {
+      "id": "indie",
+      "text": "Cinder City 详细信息更新：500人大战、喷气背包、UE5驱动\nCube World Omega 新截图：全职业技能完成，开发技能树中"
+    },
+    {
+      "id": "tools",
+      "text": "GameBlocks 持续传播：AI编程代理的3D游戏积木库获社区关注"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI\u79d1\u6280\u70ed\u70b9",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI\u79d1\u6280\u70ed\u70b9 01",
+          "source": "GitHub \u00b7 \u5b98\u65b9\u53d1\u5e03",
+          "tags": ["GitHub Copilot", "\u5f00\u6e90\u6a21\u578b", "Kimi"],
+          "title": "Kimi K2.7 Code \u8fdb\u5165 GitHub Copilot\uff1a\u9996\u4e2a\u5f00\u6e90\u6743\u91cd\u6a21\u578b\u53ef\u9009\u9879\uff0c\u4f4e\u6210\u672c\u6bd4\u80a9\u524d\u6cbf",
+          "en_title": "Kimi K2.7 Code is now generally available in GitHub Copilot. This is the first open-weight model offered as a selectable option.",
+          "full_text": "\ud83c\udf8e @Kimi_Moonshot's Kimi K2.7 Code is now generally available in GitHub Copilot.\n\nThis is the first open-weight model offered as a selectable option in the Copilot model picker. \ud83c\udf89 \n\nEarly testing shows Kimi K2.7 is a lower-cost option with strong performance comparable to highly popular frontier models.\n\nTry it out now in @code and look out for it in more GitHub Copilot surfaces. \ud83d\udc47",
+          "author": "github",
+          "date": "2026-07-02",
+          "likes": 1141,
+          "views": 153448,
+          "link": "https://x.com/github/status/2072712821377286168",
+          "media": {"type": "image", "url": "https://pbs.twimg.com/media/HMPBTyHWwAAVcYq.jpg"},
+          "summary": "GitHub \u5b98\u65b9\u5ba3\u5e03 Kimi K2.7 Code \u6b63\u5f0f\u8fdb\u5165 Copilot \u6a21\u578b\u9009\u62e9\u5668\u3002\u8fd9\u662f Copilot \u9996\u6b21\u63d0\u4f9b\u5f00\u6e90\u6743\u91cd\u6a21\u578b\u4f5c\u4e3a\u53ef\u9009\u9879\uff0c\u65e9\u671f\u6d4b\u8bd5\u663e\u793a\u5176\u6027\u80fd\u63a5\u8fd1\u524d\u6cbf\u6a21\u578b\u4f46\u6210\u672c\u66f4\u4f4e\u3002",
+          "analysis": "\u8fd9\u662f\u5f00\u6e90AI\u6a21\u578b\u8fdb\u5165\u4e3b\u6d41\u5f00\u53d1\u5de5\u5177\u7684\u91cc\u7a0b\u7891\u3002\u5bf9\u6e38\u620f\u5de5\u4f5c\u5ba4\u800c\u8a00\uff0c\u610f\u5473\u7740AI\u8f85\u52a9\u7f16\u7a0b\u7684\u6210\u672c\u53ef\u4ee5\u5927\u5e45\u964d\u4f4e\u2014\u2014\u4e0d\u518d\u53ea\u80fd\u7528\u6602\u8d35\u7684\u95ed\u6e90\u524d\u6cbf\u6a21\u578b\u3002Kimi\uff08\u6708\u4e4b\u6697\u9762\uff09\u4f5c\u4e3a\u56fd\u4ea7\u6a21\u578b\u8fdb\u5165GitHub\u751f\u6001\uff0c\u4e5f\u8bf4\u660e\u4e2d\u56fd\u5927\u6a21\u578b\u7684\u4ee3\u7801\u80fd\u529b\u5df2\u83b7\u5f97\u56fd\u9645\u8ba4\u53ef\u3002"
+        },
+        {
+          "idx": "AI\u79d1\u6280\u70ed\u70b9 02",
+          "source": "Aaron Levie \u00b7 \u884c\u4e1a\u89c2\u5bdf",
+          "tags": ["AI Agent", "\u4f01\u4e1a\u90e8\u7f72", "\u5de5\u4f5c\u6d41"],
+          "title": "\u4f01\u4e1a AI Agent \u90e8\u7f72\u7684\u771f\u76f8\uff1a\u5de5\u4f5c\u6d41\u6ca1\u4e3a AI \u8bbe\u8ba1\uff0c\u8fde\u63a5\u7684\u662f\u788e\u7247\u5316\u6570\u636e\u548c\u9057\u7559\u7cfb\u7edf",
+          "en_title": "The deployment of AI in the enterprise beyond just interacting with a chatbot will unequivocally take real work to align AI systems to the underlying business processes.",
+          "full_text": "The deployment of AI in the enterprise beyond just interacting with a chatbot will unequivocally take real work to align AI systems to the underlying business processes they\u2019re involved in and drive the desired outcomes.\n\nMost workflows weren\u2019t designed for AI agents to just drop into. Workflows today in the enterprise deal with fragmented data, legacy software systems that agents can\u2019t connect with, institutional instead of documented knowledge, and more.\n\nTo deploy agents reliably at scale you...",
+          "author": "levie",
+          "date": "2026-07-03",
+          "likes": 330,
+          "views": 71039,
+          "link": "https://x.com/levie/status/2072875685811716182",
+          "media": null,
+          "summary": "Box CEO Aaron Levie \u6307\u51fa\uff1a\u4f01\u4e1a AI Agent \u7684\u90e8\u7f72\u8fdc\u4e0d\u662f\u201c\u63d2\u5165\u4e00\u4e2a\u804a\u5929\u673a\u5668\u4eba\u201d\u90a3\u4e48\u7b80\u5355\u3002\u73b0\u6709\u5de5\u4f5c\u6d41\u5145\u65a5\u788e\u7247\u5316\u6570\u636e\u3001\u65e0\u6cd5\u5bf9\u63a5\u7684\u9057\u7559\u8f6f\u4ef6\u3001\u672a\u6587\u6863\u5316\u7684\u673a\u6784\u77e5\u8bc6\u3002\u53ef\u9760\u90e8\u7f72\u9700\u8981\u5bf9\u9f50\u5e95\u5c42\u4e1a\u52a1\u6d41\u7a0b\u3002",
+          "analysis": "\u5bf9\u6e38\u620f\u5de5\u4f5c\u5ba4\u7684\u542f\u793a\uff1a\u4e0d\u8981\u671f\u5f85AI Agent\u80fd\u76f4\u63a5\u63d2\u5165\u73b0\u6709\u5f00\u53d1\u6d41\u7a0b\u5c31\u80fd\u5de5\u4f5c\u3002\u9700\u8981\u5148\u6574\u7406\u5de5\u4f5c\u6d41\uff08\u6587\u6863\u5316\u3001\u6570\u636e\u7ed3\u6784\u5316\u3001\u63a5\u53e3\u6807\u51c6\u5316\uff09\uff0c\u7136\u540e\u624d\u80fd\u8ba9Agent\u771f\u6b63\u63a5\u7ba1\u4efb\u52a1\u3002\u8fd9\u89e3\u91ca\u4e86\u4e3a\u4ec0\u4e48\u5f88\u591a\u56e2\u961f\u201c\u7528\u4e86AI\u4f46\u6548\u7387\u6ca1\u63d0\u5347\u201d\u7684\u56f0\u5883\u3002"
+        },
+        {
+          "idx": "AI\u79d1\u6280\u70ed\u70b9 03",
+          "source": "Matt Shumer \u00b7 AI\u6f14\u793a",
+          "tags": ["Fable 5", "3D\u6e38\u620f\u751f\u6210", "\u80fd\u529b\u5c55\u793a"],
+          "title": "Fable 5 \u751f\u6210\u970d\u683c\u6c83\u8328\u98de\u884c\u573a\u666f\uff1aAI\u6e38\u620f\u5f00\u53d1\u80fd\u529b\u6301\u7eed\u8fdb\u5316",
+          "en_title": "Fly through Hogwarts, generated by Claude Fable 5.",
+          "full_text": "Fly through Hogwarts, generated by Claude Fable 5.",
+          "author": "mattshumer_",
+          "date": "2026-07-02",
+          "likes": 1353,
+          "views": 304173,
+          "link": "https://x.com/mattshumer_/status/2072511611705692298",
+          "media": {"type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2072511164550881280/img/JoExhYDNfhyzSe4R.jpg", "video_url": "https://x.com/mattshumer_/status/2072511611705692298/video/1"},
+          "summary": "\u5f00\u53d1\u8005\u7528 Claude Fable 5 \u751f\u6210\u4e86\u53ef\u98de\u884c\u7a7f\u8d8a\u7684\u970d\u683c\u6c83\u8328\u573a\u666f\u3002\u5c55\u793a\u4e86\u5f53\u524dAI\u6a21\u578b\u5728\u751f\u6210\u590d\u6742 3D \u6e38\u620f\u73af\u5883\u65b9\u9762\u7684\u8fdb\u5c55\u3002",
+          "analysis": "\u4eceClash of Clans\u514b\u9686\u5230\u970d\u683c\u6c83\u8328\u98de\u884c\uff0cFable 5\u7684\u6e38\u620f\u751f\u6210\u80fd\u529b\u5728\u77ed\u77ed\u51e0\u5929\u5185\u88ab\u793e\u533a\u63a8\u5411\u66f4\u590d\u6742\u7684\u573a\u666f\u3002\u5bf9\u72ec\u6e38\u5f00\u53d1\u8005\u610f\u5473\u7740\uff1a\u201c\u5148\u7528AI\u641e\u4e2a\u6982\u5ff5\u9a8c\u8bc1demo\u201d\u7684\u95e8\u69db\u8d8a\u6765\u8d8a\u4f4e\u3002"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "\u6e38\u620f\u884c\u4e1a\u52a8\u6001",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "\u6e38\u620f\u884c\u4e1a 01",
+          "source": "GitHub \u00b7 \u5b98\u65b9\u6076\u641e",
+          "tags": ["\u5b9e\u4f53\u5a92\u4ecb", "CD-ROM", "\u6570\u5b57\u6240\u6709\u6743"],
+          "title": "GitHub \u6076\u641e\u56de\u5e94\u5149\u76d8\u8bdd\u9898\uff1a\u63a8\u51fa\u516c\u5171\u4ed3\u5e93 CD-ROM \u5b9e\u4f53\u670d\u52a1",
+          "en_title": "In light of recent developments in physical media, GitHub is proud to announce that you can now obtain your public repo on CD-ROM.",
+          "full_text": "We heard you. And we agree.\n\nIn light of recent developments in physical media, GitHub is proud to announce that you can now obtain your public repo on CD-ROM.\n\nKeep it. Lend it to friends. Pass it on to your children.\n\nYour code is physically yours, forever. Until you lose it, let's be real.\n\nOrder yours today.",
+          "author": "github",
+          "date": "2026-07-02",
+          "likes": 31502,
+          "views": 4627218,
+          "link": "https://x.com/github/status/2072801888525840476",
+          "media": {"type": "image", "url": "https://pbs.twimg.com/media/HMQSUMuXEAEfn2j.jpg"},
+          "summary": "GitHub \u4ee5\u6076\u641e\u65b9\u5f0f\u56de\u5e94 Sony \u505c\u4ea7\u5149\u76d8\u4e8b\u4ef6\uff1a\u5ba3\u5e03\u7528\u6237\u53ef\u4ee5\u5c06\u516c\u5171\u4ed3\u5e93\u523b\u5f55\u5230 CD-ROM \u4e0a\u3002\u201c\u4fdd\u7559\u5b83\u3001\u501f\u7ed9\u670b\u53cb\u3001\u4f20\u7ed9\u5b69\u5b50\u3002\u4f60\u7684\u4ee3\u7801\u6c38\u8fdc\u5c5e\u4e8e\u4f60\u2014\u2014\u76f4\u5230\u4f60\u5f04\u4e22\u5b83\u3002\u201d",
+          "analysis": "4.6M \u6d4f\u89c8\u91cf\u8bc1\u660e\u201c\u6570\u5b57\u6240\u6709\u6743\u201d\u8bdd\u9898\u7684\u70ed\u5ea6\u4ecd\u5728\u53d1\u9175\u3002GitHub \u7528\u5e7d\u9ed8\u65b9\u5f0f\u53c2\u4e0e\u8ba8\u8bba\uff0c\u5b9e\u9645\u4e0a\u4e5f\u662f\u5728\u5f3a\u8c03\u4ee3\u7801/\u6570\u5b57\u8d44\u4ea7\u6240\u6709\u6743\u7684\u91cd\u8981\u6027\u3002\u5bf9\u6e38\u620f\u884c\u4e1a\u7684\u542f\u793a\uff1a\u6570\u5b57\u6240\u6709\u6743\u4e0d\u53ea\u662f\u6e38\u620f\u7684\u95ee\u9898\uff0c\u800c\u662f\u6574\u4e2a\u6570\u5b57\u5185\u5bb9\u4ea7\u4e1a\u7684\u5171\u540c\u8bae\u9898\u3002"
+        },
+        {
+          "idx": "\u6e38\u620f\u884c\u4e1a 02",
+          "source": "Digital Foundry \u00b7 \u786c\u4ef6\u62a5\u9053",
+          "tags": ["Steam Machine", "GPU\u6545\u969c", "\u786c\u4ef6"],
+          "title": "Steam Machine \u65e9\u671f\u7528\u6237\u9047 GPU \u201c\u7ea2\u7ebf\u4e4b\u6b7b\u201d\u6545\u969c\uff0c\u786c\u4ef6\u53ef\u9760\u6027\u5f15\u62c5\u5fe7",
+          "en_title": "Early Steam Machine user mourns \"red line of death\" following GPU failure.",
+          "full_text": "Early Steam Machine user mourns \"red line of death\" following GPU failure.",
+          "author": "digitalfoundry",
+          "date": "2026-07-03",
+          "likes": 1136,
+          "views": 117834,
+          "link": "https://x.com/digitalfoundry/status/2072983713147736325",
+          "media": null,
+          "summary": "Steam Machine \u65e9\u671f\u7528\u6237\u62a5\u544a GPU \u6545\u969c\uff0c\u51fa\u73b0\u7c7b\u4f3c Xbox \u201c\u7ea2\u73af\u201d\u7684\u201c\u7ea2\u7ebf\u4e4b\u6b7b\u201d\u73b0\u8c61\u3002\u786c\u4ef6\u53ef\u9760\u6027\u95ee\u9898\u5f15\u53d1\u793e\u533a\u62c5\u5fe7\u3002",
+          "analysis": "Valve \u7684 Steam Machine \u521a\u53d1\u5e03\u5c31\u51fa\u73b0\u786c\u4ef6\u6545\u969c\u62a5\u544a\uff0c\u867d\u7136\u53ef\u80fd\u662f\u4e2a\u4f8b\uff0c\u4f46\u201c\u7ea2\u7ebf\u4e4b\u6b7b\u201d\u8fd9\u4e2a\u6807\u7b7e\u5f88\u5bb9\u6613\u5728\u793e\u533a\u4f20\u64ad\u3002\u5bf9\u6e38\u620f\u786c\u4ef6\u5382\u5546\u7684\u542f\u793a\uff1a\u9996\u6279\u7528\u6237\u7684\u8d1f\u9762\u53cd\u9988\u4f1a\u88ab\u653e\u5927\u4f20\u64ad\uff0c\u54c1\u63a7\u548c\u552e\u540e\u54cd\u5e94\u901f\u5ea6\u81f3\u5173\u91cd\u8981\u3002"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "\u65b0\u6e38\u63a8\u6587",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "\u65b0\u6e38\u63a8\u6587 01",
+          "source": "JaePlayzGamez \u00b7 \u65b0\u4f5c\u8be6\u60c5",
+          "tags": ["\u5c04\u51fb", "\u5f00\u653e\u4e16\u754c", "MMO", "\u97e9\u56fd", "UE5"],
+          "title": "Cinder City\uff1a\u97e9\u56fdNCSOFT\u5f00\u53d1\u672b\u4e16UE5\u5c04\u51fb\uff0c500\u4eba\u5927\u6218+\u55b7\u6c14\u80cc\u5305+\u673a\u7532",
+          "en_title": "Formerly Project LLL is an upcoming open-world MMO tactical 3rd-person shooter powered by Unreal Engine 5",
+          "full_text": "Are you interested in Cinder City??\n\nFormerly Project LLL is an upcoming open-world MMO tactical 3rd-person shooter powered by Unreal Engine 5, and it sounds AMBITIOUS!\n\n\u2705Large-scale shared-world\n\u2705Seamless open world\n\u2705100+ players in areas\n\u2705Up to 500-player events\n\u2705Strong looter shooter elements\n\u2705Team-based/co-op PVE battles\n\u2705Jetpacks, vehicles & mechs \n\u2705High fidelity graphics\n\u2705Narrative driven & playable solo\n\u2705Set in a dystopian, post-apocalyptic near-future Seoul, South Korea",
+          "author": "JaeGamez",
+          "date": "2026-07-02",
+          "likes": 1567,
+          "views": 140999,
+          "link": "https://x.com/JaeGamez/status/2072786782932848976",
+          "media": {"type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2072786699663429632/img/UzeTgj9j92GuZsQg.jpg", "video_url": "https://x.com/JaeGamez/status/2072786782932848976/video/1"},
+          "summary": "Cinder City\uff08\u539f Project LLL\uff09\u66f4\u591a\u7ec6\u8282\u66dd\u5149\uff1aUE5 \u9a71\u52a8\u7684\u5f00\u653e\u4e16\u754c MMO \u6218\u672f\u5c04\u51fb\uff0c\u652f\u6301 500 \u4eba\u5927\u578b\u6d3b\u52a8\u3001\u55b7\u6c14\u80cc\u5305\u3001\u8f7d\u5177\u548c\u673a\u7532\u3001\u53ef\u5355\u4eba\u53d9\u4e8b\u6d41\u7a0b\u3002\u97e9\u56fd\u9996\u5c14\u672b\u4e16\u80cc\u666f\u3002",
+          "analysis": "\u65b0\u6e38\u63a8\u6587\u4e0d\u663e\u793a\u89c2\u70b9\u89e3\u8bfb",
+          "enrichment": {
+            "game_name": "Cinder City",
+            "genre": "\u7b2c\u4e09\u4eba\u79f0\u5c04\u51fb / \u5f00\u653e\u4e16\u754c / MMO / PvE\u5408\u4f5c",
+            "developer": "\u97e9\u56fdNCSOFT",
+            "platforms": ["PC", "PS5", "Xbox Series"],
+            "price": "\u672a\u516c\u5e03",
+            "steam_rating": "\u672a\u53d1\u552e",
+            "steam_url": "https://store.steampowered.com/app/4651830/CINDER_CITY/",
+            "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/4651830/header.jpg",
+            "youtube_video": null,
+            "description": "Cinder City\uff08\u539f\u4ee3\u53f7 Project LLL\uff09\u662f\u97e9\u56fdNCSOFT\u5f00\u53d1\u7684\u5927\u578b\u5f00\u653e\u4e16\u754c MMO \u6218\u672f\u5c04\u51fb\u6e38\u620f\u3002\n\n\u3010\u6838\u5fc3\u73a9\u6cd5\u3011\u591a\u4eba\u5728\u7ebf\u5f00\u653e\u4e16\u754c\u5c04\u51fb\uff0c\u652f\u6301\u5355\u4eba\u53d9\u4e8b\u6d41\u7a0b\u548c\u591a\u4eba\u5408\u4f5c PvE\u3002\u6838\u5fc3\u5faa\u73af\u4e3a\u63a2\u7d22\u2192\u6218\u6597\u2192\u523b\u5b9d\u5c04\u51fb\u5143\u7d20\u3002\u652f\u6301 100+ \u540c\u5c4f\u73a9\u5bb6\u3001\u6700\u9ad8 500 \u4eba\u5927\u578b\u6d3b\u52a8\u3002\u79fb\u52a8\u65b9\u5f0f\u5305\u542b\u55b7\u6c14\u80cc\u5305\u3001\u8f7d\u5177\u548c\u673a\u7532\uff0c\u63d0\u4f9b\u7acb\u4f53\u6218\u573a\u4f53\u9a8c\u3002\n\n\u3010\u7f8e\u672f\u4e0e\u6280\u672f\u3011UE5 \u9a71\u52a8\u7684\u9ad8\u4fdd\u771f\u753b\u9762\uff0c\u672b\u4e16\u97e9\u56fd\u9996\u5c14\u80cc\u666f\uff0c\u878d\u5408\u8d5b\u535a\u670b\u514b\u548c\u751f\u5316\u672b\u65e5\u53cc\u91cd\u7f8e\u5b66\u3002\n\n\u3010\u5bf9\u6807\u5b9a\u4f4d\u3011\u76f4\u63a5\u5bf9\u6807 The Division + Destiny\uff0c\u4f46\u5728\u89c4\u6a21\u548c\u79fb\u52a8\u81ea\u7531\u5ea6\u4e0a\u66f4\u8fdb\u4e00\u6b65\u3002\n\n\u3010\u4f18\u52bf\u3011500\u4eba\u5927\u578b\u6d3b\u52a8\u89c4\u6a21\u7a00\u7f3a\uff1b\u55b7\u6c14\u80cc\u5305+\u673a\u7532\u7684\u7acb\u4f53\u6218\u6597\uff1bUE5\u753b\u9762\uff1b\u53ef\u5355\u4eba\u53d9\u4e8b\u3002\n\u3010\u4e0d\u8db3\u3011NCSOFT \u8fd1\u5e74\u591a\u6b21\u7838\u4e86\uff1b\u53d1\u552e\u65e5\u672a\u5b9a\uff1bMMO\u670d\u52a1\u5668\u6210\u672c\u538b\u529b\u5927\u3002\n\n\u3010\u7efc\u5408\u8bc4\u4ef7\u3011\u5982\u679c NCSOFT \u80fd\u514b\u670d\u8fd1\u5e74\u7684\u53e3\u7891\u95ee\u9898\uff0c\u8fd9\u6b3e\u6e38\u620f\u7684\u89c4\u6a21\u548c\u91ce\u5fc3\u503c\u5f97\u671f\u5f85\u3002",
+            "why_notable": "\u97e9\u56fdNCSOFT\u7684\u5927\u578b\u6295\u5165\uff0c500\u4eba\u5927\u6218+UE5\u5728MMO\u5c04\u51fb\u8d5b\u9053\u4e2d\u89c4\u6a21\u6781\u5c11\u89c1"
+          }
+        },
+        {
+          "idx": "\u65b0\u6e38\u63a8\u6587 02",
+          "source": "Wolfram von Funck \u00b7 \u5f00\u53d1\u8005",
+          "tags": ["\u4f53\u7d20\u98ce", "\u5f00\u653e\u4e16\u754c", "RPG", "\u72ec\u7acb\u5f00\u53d1"],
+          "title": "Cube World Omega\uff1a\u72ec\u7acb\u5f00\u53d1\u8005Wollay\u65b0\u622a\u56fe\uff0c\u5168\u804c\u4e1a\u6280\u80fd\u5b8c\u6210",
+          "en_title": "Fresh Cube World Omega screenshots! All classes are fully functional now, including some new skills! Next working on skill trees.",
+          "full_text": "Fresh Cube World Omega screenshots! All classes are fully functional now, including some new skills! Next working on skill trees. #cubeworld #cubeworldomega",
+          "author": "wol_lay",
+          "date": "2026-07-03",
+          "likes": 2223,
+          "views": 62346,
+          "link": "https://x.com/wol_lay/status/2073003858264002920",
+          "media": {"type": "image", "url": "https://pbs.twimg.com/media/HMTIAeUWsAAgCeK.jpg"},
+          "summary": "Cube World \u4f5c\u8005 Wollay \u53d1\u5e03 Cube World Omega \u65b0\u622a\u56fe\uff0c\u5ba3\u5e03\u6240\u6709\u804c\u4e1a\u5df2\u5b8c\u5168\u53ef\u7528\uff08\u542b\u65b0\u6280\u80fd\uff09\uff0c\u6b63\u5728\u5f00\u53d1\u6280\u80fd\u6811\u3002",
+          "analysis": "\u65b0\u6e38\u63a8\u6587\u4e0d\u663e\u793a\u89c2\u70b9\u89e3\u8bfb",
+          "enrichment": {
+            "game_name": "Cube World Omega",
+            "genre": "\u4f53\u7d20\u98ce / \u5f00\u653e\u4e16\u754c / \u52a8\u4f5c RPG",
+            "developer": "\u72ec\u7acb\u5f00\u53d1\u8005 Wollay",
+            "platforms": ["PC"],
+            "price": "\u672a\u516c\u5e03",
+            "steam_rating": "\u672a\u53d1\u552e",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "Cube World Omega \u662f Cube World \u4f5c\u8005 Wollay \u7684\u65b0\u4f5c\uff0c\u7ee7\u627f\u4e86\u539f\u4f5c\u7684\u4f53\u7d20\u98ce\u5f00\u653e\u4e16\u754c\u52a8\u4f5c RPG \u6846\u67b6\u3002\n\n\u3010\u6838\u5fc3\u73a9\u6cd5\u3011\u591a\u804c\u4e1a\u52a8\u4f5c RPG\uff0c\u6bcf\u4e2a\u804c\u4e1a\u6709\u72ec\u7acb\u6280\u80fd\u4f53\u7cfb\u548c\u6280\u80fd\u6811\u3002\u5f00\u653e\u4e16\u754c\u63a2\u7d22\u3001\u6218\u6597\u3001\u5236\u4f5c\u4e3a\u6838\u5fc3\u5faa\u73af\u3002\n\n\u3010\u7f8e\u672f\u4e0e\u6c1b\u56f4\u3011\u4f53\u7d20\u98ce\u683c\uff0c\u660e\u4eae\u591a\u5f69\uff0c\u4fdd\u6301\u4e86\u539f\u4f5c\u6807\u5fd7\u6027\u7684\u89c6\u89c9\u98ce\u683c\u3002\n\n\u3010\u80cc\u666f\u3011\u539f\u7248 Cube World 2013\u5e74\u4e00\u7247\u6210\u540d\u4f46\u6b64\u540e\u6cbf\u5bc2\u591a\u5e74\uff0c2019\u5e74\u6b63\u5f0f\u7248\u53e3\u7891\u574d\u5854\u3002Omega \u662f Wollay \u7684\u6551\u8d4e\u4e4b\u4f5c\uff0c\u793e\u533a\u5173\u6ce8\u5ea6\u6781\u9ad8\uff082223\u8d5e\uff09\u3002\n\n\u3010\u4f18\u52bf\u3011\u793e\u533a\u60c0\u65e7\u70ed\u5ea6\u9ad8\uff1b\u4f53\u7d20\u98ce\u683c\u8fa8\u8bc6\u5ea6\u5f3a\uff1b\u72ec\u7acb\u5f00\u53d1\u8005\u7cbe\u795e\u3002\n\u3010\u4e0d\u8db3\u3011\u65e0\u53d1\u552e\u65e5\uff1b\u524d\u4f5c\u6b63\u5f0f\u7248\u53e3\u7891\u5dee\u7559\u4e0b\u9634\u5f71\uff1b\u4e0d\u786e\u5b9a\u80fd\u5426\u5b8c\u6210\u3002\n\n\u3010\u7efc\u5408\u8bc4\u4ef7\u3011\u5982\u679c Wollay \u8fd9\u6b21\u80fd\u5b8c\u6210\u5e76\u4ea4\u4ed8\u4f18\u8d28\u4f53\u9a8c\uff0cCube World Omega \u6709\u6f5c\u529b\u6210\u4e3a\u4f53\u7d20\u98ce\u5f00\u653e\u4e16\u754c RPG \u7684\u6807\u6746\u3002",
+            "why_notable": "Cube World\u4f20\u5947\u5f00\u53d1\u8005\u7684\u65b0\u4f5c\uff0c\u793e\u533a\u60c0\u65e7\u5173\u6ce8\u5ea6\u6781\u9ad8\uff0c\u53ef\u80fd\u5b8c\u6210\u5f53\u5e74\u672a\u7adf\u7684\u68a6\u60f3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "\u5f00\u53d1\u5de5\u5177",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "\u5f00\u53d1\u5de5\u5177 01",
+          "source": "wsad + \u65e5\u672c\u793e\u533a \u00b7 \u5f00\u6e90",
+          "tags": ["three.js", "AI Agent", "3D\u6e38\u620f", "\u5f00\u6e90"],
+          "title": "GameBlocks \u6301\u7eed\u4f20\u64ad\uff1aAI\u7f16\u7a0b\u4ee3\u7406\u7684 3D \u6e38\u620f\u79ef\u6728\u5e93\u83b7\u65e5\u672c\u793e\u533a\u5173\u6ce8",
+          "en_title": "Codex\u306f\u300c3D\u30b2\u30fc\u30e0\u958b\u767a\u306e\u90e8\u54c1\u30bb\u30c3\u30c8\u300d\u3092\u6e21\u305b\u308b\u30c4\u30fc\u30eb\u304c\u516c\u958b GameBlocks",
+          "full_text": "Introducing GameBlocks: open-source building blocks that help coding agents prototype any 3D games with @threejs \n\n3D behavior is hard to specify in natural language. GameBlocks turns fragile spatial logic into inspectable implementations with clear semantics, so agents can build from known-good patterns.",
+          "author": "spt4d",
+          "date": "2026-07-01",
+          "likes": 992,
+          "views": 62874,
+          "link": "https://x.com/spt4d/status/2072382087638954079",
+          "media": {"type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2072381743903264768/img/t8K6zhSVRMutyeiH.jpg", "video_url": "https://x.com/spt4d/status/2072382087638954079/video/1"},
+          "summary": "GameBlocks \u5728\u65e5\u672c\u6e38\u620f\u5f00\u53d1\u793e\u533a\u5f15\u53d1\u8ba8\u8bba\u548c\u4f20\u64ad\u3002\u65e5\u672c\u5f00\u53d1\u8005\u5f00\u59cb\u4ecb\u7ecd\u5176\u4e3a\u201cAI\u80fd\u7528\u7684 3D \u6e38\u620f\u5f00\u53d1\u90e8\u4ef6\u96c6\u201d\uff0c\u8ba9 Codex \u53ef\u4ee5\u7ec4\u88c5\u8fd0\u884c\u7684\u6e38\u620f\u3002",
+          "analysis": "\u4e00\u4e2a\u5f00\u6e90\u5de5\u5177\u4ece\u82f1\u6587\u793e\u533a\u4f20\u64ad\u5230\u65e5\u672c\u793e\u533a\uff0c\u8bf4\u660e\u201cAI+\u6e38\u620f\u5f00\u53d1\u201d\u7684\u5de5\u5177\u94fe\u9700\u6c42\u662f\u5168\u7403\u6027\u7684\u3002GameBlocks \u7684\u6838\u5fc3\u4ef7\u503c\u5728\u4e8e\u628a\u201c\u81ea\u7136\u8bed\u8a00\u96be\u4ee5\u63cf\u8ff0\u7684 3D \u903b\u8f91\u201d\u5c01\u88c5\u6210 AI \u53ef\u7ec4\u88c5\u7684\u6a21\u5757\uff0c\u964d\u4f4e\u4e86 AI \u6e38\u620f\u539f\u578b\u5f00\u53d1\u7684\u95e8\u69db\u3002"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Kimi K2.7 \u8fdb\u5165 GitHub Copilot\uff1a\u56fd\u4ea7\u5f00\u6e90\u6a21\u578b\u83b7\u56fd\u9645\u5f00\u53d1\u5de5\u5177\u8ba4\u53ef**\nGitHub \u5b98\u65b9\u5ba3\u5e03 Kimi K2.7 Code \u6210\u4e3a Copilot \u9996\u4e2a\u53ef\u9009\u7684\u5f00\u6e90\u6743\u91cd\u6a21\u578b\u3002\u8fd9\u610f\u5473\u7740 AI \u7f16\u7a0b\u4e0d\u518d\u53ea\u80fd\u9009\u6602\u8d35\u7684\u95ed\u6e90\u524d\u6cbf\u6a21\u578b\u2014\u2014\u5f00\u6e90\u66ff\u4ee3\u65b9\u6848\u7684\u6027\u80fd\u5df2\u7ecf\u8db3\u591f\u63a5\u8fd1\u3002\u5bf9\u4e2d\u5c0f\u6e38\u620f\u56e2\u961f\u800c\u8a00\uff0cAI\u8f85\u52a9\u7f16\u7a0b\u7684\u6210\u672c\u95e8\u69db\u518d\u6b21\u964d\u4f4e\u3002\n\n**\u4f01\u4e1a AI Agent \u90e8\u7f72\u7684\u771f\u76f8\uff1a\u5de5\u4f5c\u6d41\u6ca1\u4e3a AI \u8bbe\u8ba1**\nBox CEO Aaron Levie \u6307\u51fa\u4f01\u4e1a\u90e8\u7f72 AI Agent \u7684\u6838\u5fc3\u96be\u9898\uff1a\u73b0\u6709\u5de5\u4f5c\u6d41\u5145\u65a5\u788e\u7247\u5316\u6570\u636e\u3001\u9057\u7559\u7cfb\u7edf\u3001\u672a\u6587\u6863\u5316\u77e5\u8bc6\u3002\u4e0d\u662f\u63d2\u4e2a chatbot \u5c31\u80fd\u89e3\u51b3\u7684\uff0c\u9700\u8981\u5148\u6574\u7406\u5e95\u5c42\u4e1a\u52a1\u6d41\u7a0b\u3002\n\n**GitHub \u6076\u641e\u56de\u5e94\u5149\u76d8\u8bdd\u9898\uff1a4.6M \u6d4f\u89c8\u91cf\u7684 CD-ROM \u670d\u52a1**\nGitHub \u4ee5\u5e7d\u9ed8\u65b9\u5f0f\u53c2\u4e0e\u201c\u6570\u5b57\u6240\u6709\u6743\u201d\u8ba8\u8bba\u2014\u2014\u5ba3\u5e03\u7528\u6237\u53ef\u628a\u516c\u5171\u4ed3\u5e93\u523b\u5f55\u5230 CD-ROM\u3002\u540c\u65f6 Steam Machine \u65e9\u671f\u7528\u6237\u62a5\u544a GPU \u201c\u7ea2\u7ebf\u4e4b\u6b7b\u201d\u6545\u969c\uff0c\u786c\u4ef6\u53ef\u9760\u6027\u5f15\u62c5\u5fe7\u3002\n\n**Cinder City \u8be6\u7ec6\u4fe1\u606f\u66dd\u5149\uff1a500\u4eba\u5927\u6218+\u55b7\u6c14\u80cc\u5305+\u673a\u7532**\n\u97e9\u56fd NCSOFT \u7684 Cinder City\uff08\u539f Project LLL\uff09\u66dd\u5149\u66f4\u591a\u7ec6\u8282\uff1aUE5\u9a71\u52a8\u3001500\u4eba\u5927\u578b\u6d3b\u52a8\u3001\u55b7\u6c14\u80cc\u5305/\u8f7d\u5177/\u673a\u7532\u7acb\u4f53\u6218\u6597\u3002\u53e6\u5916 Cube World \u4f5c\u8005\u53d1\u5e03 Omega \u65b0\u622a\u56fe\uff0c\u5168\u804c\u4e1a\u6280\u80fd\u5b8c\u6210\u3002\n\n**GameBlocks \u8de8\u8d8a\u8bed\u8a00\u5899\uff1aAI \u6e38\u620f\u5de5\u5177\u94fe\u9700\u6c42\u662f\u5168\u7403\u6027\u7684**\n\u5f00\u6e90 3D \u6e38\u620f\u79ef\u6728\u5e93 GameBlocks \u4ece\u82f1\u6587\u793e\u533a\u4f20\u64ad\u5230\u65e5\u672c\u6e38\u620f\u5f00\u53d1\u8005\u7fa4\u4f53\uff0c\u8bf4\u660e AI+\u6e38\u620f\u5f00\u53d1\u5de5\u5177\u7684\u5168\u7403\u5316\u9700\u6c42\u3002\n\n\u8be6\u60c5\u8bf7\u70b9\u51fb\u4e0b\u65b9\u3010\u5f53\u65e5\u901f\u89c8\u3011\u7684\u6761\u76ee\u8df3\u8f6c\u5230\u5bf9\u5e94\u63a8\u6587\u3002"
+}
