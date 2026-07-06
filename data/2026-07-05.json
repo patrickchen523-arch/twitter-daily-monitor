@@ -27,31 +27,44 @@
   "sections": [
     {
       "id": "ai",
-      "title": "AI\u79d1\u6280\u70ed\u70b9",
+      "title": "AI科技热点",
       "title_en": "AI & TECH",
       "color": "#a78bfa",
       "items": [
         {
-          "idx": "AI\u79d1\u6280\u70ed\u70b9 01",
-          "source": "Chesny \u00b7 \u786c\u4ef6\u62a5\u9053",
-          "tags": ["AMD", "AI\u786c\u4ef6", "\u672c\u5730\u63a8\u7406", "Nvidia"],
-          "title": "AMD Lisa Su \u53d1\u5e03 $1,499 AI \u4fbf\u643a\u76d2\uff1a128GB \u5171\u4eab\u5185\u5b58\u8dd1 235B \u53c2\u6570\u6a21\u578b\uff0c\u5bf9\u6807 Nvidia $4,000",
+          "idx": "AI科技热点 01",
+          "source": "Chesny · 硬件报道",
+          "tags": [
+            "AMD",
+            "AI硬件",
+            "本地推理",
+            "Nvidia"
+          ],
+          "title": "AMD Lisa Su 发布 $1,499 AI 便携盒：128GB 共享内存跑 235B 参数模型，对标 Nvidia $4,000",
           "en_title": "La CEO de AMD, Lisa Su, acaba de acabar con la caja de IA de $4,000 de Nvidia con una lonchera de $1,499.",
-          "full_text": "La CEO de AMD, Lisa Su, acaba de acabar con la caja de IA de $4,000 de Nvidia con una lonchera de $1,499.\n\nSubi\u00f3 al escenario, la sostuvo en una mano y ejecut\u00f3 en vivo un modelo de 235 mil millones de par\u00e1metros. Sin centro de datos. Sin nube. Sin GPU alquilada.\n\nEl chip en su interior es algo que nadie vio venir. El Ryzen AI Max+ 395 de AMD es el primer silicio x86 donde la CPU y la GPU comparten los mismos 128 GB de memoria.",
+          "full_text": "La CEO de AMD, Lisa Su, acaba de acabar con la caja de IA de $4,000 de Nvidia con una lonchera de $1,499.\n\nSubió al escenario, la sostuvo en una mano y ejecutó en vivo un modelo de 235 mil millones de parámetros. Sin centro de datos. Sin nube. Sin GPU alquilada.\n\nEl chip en su interior es algo que nadie vio venir. El Ryzen AI Max+ 395 de AMD es el primer silicio x86 donde la CPU y la GPU comparten los mismos 128 GB de memoria.",
           "author": "chesny",
           "date": "2026-07-03",
           "likes": 2663,
           "views": 393522,
           "link": "https://x.com/chesny/status/2073116308472787191",
-          "media": {"type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2073116227539443712/img/6nWK83etWp9ZZk1b.jpg", "video_url": "https://x.com/chesny/status/2073116308472787191/video/1"},
-          "summary": "AMD CEO Lisa Su \u53d1\u5e03 $1,499 AI \u4fbf\u643a\u76d2\uff0c\u642d\u8f7d Ryzen AI Max+ 395\u2014\u2014\u9996\u6b21\u5b9e\u73b0 CPU \u548c GPU \u5171\u4eab 128GB \u5185\u5b58\u7684 x86 \u82af\u7247\u3002\u73b0\u573a\u6f14\u793a\u76f4\u63a5\u8dd1 235B \u53c2\u6570\u6a21\u578b\uff0c\u65e0\u9700\u6570\u636e\u4e2d\u5fc3\u6216\u4e91\u7aef\u3002\u4ef7\u683c\u4ec5\u4e3a Nvidia \u540c\u7c7b\u65b9\u6848\u7684 1/3\u3002",
-          "analysis": "\u8fd9\u5bf9\u6e38\u620f\u5f00\u53d1\u7684\u610f\u4e49\u91cd\u5927\uff1a\u672c\u5730\u8dd1 70B-235B \u6a21\u578b\u7684\u6210\u672c\u5927\u5e45\u964d\u4f4e\uff0c\u610f\u5473\u7740\u4e2d\u5c0f\u56e2\u961f\u53ef\u4ee5\u8d1f\u62c5\u201c\u79c1\u6709AI\u670d\u52a1\u5668\u201d\u7528\u4e8e\u5185\u5bb9\u751f\u6210\u3001NPC\u5bf9\u8bdd\u3001\u6d4b\u8bd5\u81ea\u52a8\u5316\u7b49\u3002\u4e0d\u518d\u5fc5\u987b\u79df\u4e91\u7aef GPU\u3002"
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073116227539443712/img/6nWK83etWp9ZZk1b.jpg",
+            "video_url": "https://x.com/chesny/status/2073116308472787191/video/1"
+          },
+          "summary": "AMD CEO Lisa Su 发布 $1,499 AI 便携盒，搭载 Ryzen AI Max+ 395——首次实现 CPU 和 GPU 共享 128GB 内存的 x86 芯片。现场演示直接跑 235B 参数模型，无需数据中心或云端。价格仅为 Nvidia 同类方案的 1/3。",
+          "analysis": "这对游戏开发的意义重大：本地跑 70B-235B 模型的成本大幅降低，意味着中小团队可以负担“私有AI服务器”用于内容生成、NPC对话、测试自动化等。不再必须租云端 GPU。"
         },
         {
-          "idx": "AI\u79d1\u6280\u70ed\u70b9 02",
-          "source": "Mark Gadala-Maria \u00b7 \u884c\u4e1a\u89c2\u5bdf",
-          "tags": ["Fable 5", "Web\u8bbe\u8ba1", "\u804c\u4e1a\u5a01\u80c1"],
-          "title": "Fable 5 \u4e00\u6b21\u6027\u751f\u6210\u7684 Web \u8bbe\u8ba1\u5df2\u8fbe\u4e13\u4e1a\u6c34\u51c6\uff0c\u8bbe\u8ba1\u884c\u4e1a\u9762\u4e34\u5371\u673a",
+          "idx": "AI科技热点 02",
+          "source": "Mark Gadala-Maria · 行业观察",
+          "tags": [
+            "Fable 5",
+            "Web设计",
+            "职业威胁"
+          ],
+          "title": "Fable 5 一次性生成的 Web 设计已达专业水准，设计行业面临危机",
           "en_title": "Fable 5 is so good at web design that I genuinely don't see how web design careers make it past the end of this year.",
           "full_text": "Fable 5 is so good at web design that I genuinely don't see how web design careers make it past the end of this year.\n\nAn AI that can one shot designs this good means that the web design industry as a whole is in serious trouble.\n\nIf you're in web design, it's time to pivot.",
           "author": "markgadala",
@@ -59,15 +72,24 @@
           "likes": 3554,
           "views": 451392,
           "link": "https://x.com/markgadala/status/2072845156630360248",
-          "media": {"type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2072844843387117568/img/0Q1HLsp-hXGpRsKH.jpg", "video_url": "https://x.com/markgadala/status/2072845156630360248/video/1"},
-          "summary": "\u5f00\u53d1\u8005\u8ba4\u4e3a Fable 5 \u7684 Web \u8bbe\u8ba1\u80fd\u529b\u5df2\u8fbe\u5230\u201c\u4e00\u6b21\u6027\u751f\u6210\u4e13\u4e1a\u7ea7\u8bbe\u8ba1\u201d\u6c34\u5e73\uff0c\u5efa\u8bae\u8bbe\u8ba1\u5e08\u5c3d\u5feb\u8f6c\u578b\u3002",
-          "analysis": "\u867d\u7136\u201c\u706d\u7edd\u201d\u8a00\u8bba\u6709\u5938\u5927\u6210\u5206\uff0c\u4f46\u6838\u5fc3\u89c2\u5bdf\u6210\u7acb\uff1aAI\u751f\u6210\u7684UI\u8d28\u91cf\u5df2\u8db3\u591f\u6ee1\u8db3\u5927\u591a\u6570\u201c\u591f\u7528\u5c31\u884c\u201d\u7684\u573a\u666f\u3002\u5bf9\u6e38\u620f\u5de5\u4f5c\u5ba4\uff1a\u5b98\u7f51\u3001\u843d\u5730\u9875\u3001\u8425\u9500\u7d20\u6750\u7b49\u201c\u4e0d\u9700\u8981\u6781\u81f4\u521b\u610f\u201d\u7684\u8bbe\u8ba1\u5de5\u4f5c\u53ef\u4ee5\u4ea4\u7ed9AI\uff0c\u4eba\u7c7b\u8bbe\u8ba1\u5e08\u5e94\u8f6c\u5411\u66f4\u6709\u521b\u610f\u6027\u7684\u5de5\u4f5c\u3002"
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072844843387117568/img/0Q1HLsp-hXGpRsKH.jpg",
+            "video_url": "https://x.com/markgadala/status/2072845156630360248/video/1"
+          },
+          "summary": "开发者认为 Fable 5 的 Web 设计能力已达到“一次性生成专业级设计”水平，建议设计师尽快转型。",
+          "analysis": "虽然“灭绝”言论有夸大成分，但核心观察成立：AI生成的UI质量已足够满足大多数“够用就行”的场景。对游戏工作室：官网、落地页、营销素材等“不需要极致创意”的设计工作可以交给AI，人类设计师应转向更有创意性的工作。"
         },
         {
-          "idx": "AI\u79d1\u6280\u70ed\u70b9 03",
-          "source": "Thomas Wolf \u00b7 Hugging Face",
-          "tags": ["\u8bed\u97f3AI", "\u5f00\u6e90", "Cerebras", "\u5b9e\u65f6"],
-          "title": "Hugging Face + Cerebras \u53d1\u5e03\u5168\u5f00\u6e90\u5b9e\u65f6\u8bed\u97f3\u5bf9\u8bdd demo\uff0c\u5ef6\u8fdf\u6781\u4f4e",
+          "idx": "AI科技热点 03",
+          "source": "Thomas Wolf · Hugging Face",
+          "tags": [
+            "语音AI",
+            "开源",
+            "Cerebras",
+            "实时"
+          ],
+          "title": "Hugging Face + Cerebras 发布全开源实时语音对话 demo，延迟极低",
           "en_title": "Most people should probably update their priors on the state of open-source speech-to-speech. It's honestly kind of mind-blowing.",
           "full_text": "Most people should probably update their priors on the state of open-source speech-to-speech.\n\nIt's honestly kind of mind-blowing.\n\nWe teamed up with @cerebras to build a fully open-source realtime voice demo (models + code) to show what's possible today.\n\nvideo is raw, no cut, no speed-up, first take",
           "author": "Thom_Wolf",
@@ -75,39 +97,55 @@
           "likes": 1688,
           "views": 167674,
           "link": "https://x.com/Thom_Wolf/status/2072825424800006350",
-          "media": {"type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2072823469671366656/img/-56QVWzZDlBn2_cG.jpg", "video_url": "https://x.com/Thom_Wolf/status/2072825424800006350/video/1"},
-          "summary": "Hugging Face \u4e0e Cerebras \u5408\u4f5c\u53d1\u5e03\u5168\u5f00\u6e90\u7684\u5b9e\u65f6\u8bed\u97f3\u5bf9\u8bdd\u7cfb\u7edf\uff08\u6a21\u578b+\u4ee3\u7801\u5168\u5f00\u653e\uff09\u3002\u6f14\u793a\u89c6\u9891\u65e0\u526a\u8f91\u65e0\u52a0\u901f\uff0c\u5ef6\u8fdf\u6781\u4f4e\uff0c\u8bed\u97f3\u81ea\u7136\u3002",
-          "analysis": "\u5f00\u6e90\u5b9e\u65f6\u8bed\u97f3AI\u7684\u6210\u719f\u5bf9\u6e38\u620f\u610f\u4e49\u91cd\u5927\uff1aNPC\u5b9e\u65f6\u8bed\u97f3\u5bf9\u8bdd\u3001\u591a\u4eba\u6e38\u620f\u5b9e\u65f6\u7ffb\u8bd1\u3001\u8bed\u97f3\u6307\u4ee4\u64cd\u4f5c\u7b49\u573a\u666f\u73b0\u5728\u53ef\u4ee5\u7528\u5f00\u6e90\u65b9\u6848\u5b9e\u73b0\uff0c\u4e0d\u518d\u4f9d\u8d56\u6602\u8d35\u7684\u95ed\u6e90API\u3002"
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072823469671366656/img/-56QVWzZDlBn2_cG.jpg",
+            "video_url": "https://x.com/Thom_Wolf/status/2072825424800006350/video/1"
+          },
+          "summary": "Hugging Face 与 Cerebras 合作发布全开源的实时语音对话系统（模型+代码全开放）。演示视频无剪辑无加速，延迟极低，语音自然。",
+          "analysis": "开源实时语音AI的成熟对游戏意义重大：NPC实时语音对话、多人游戏实时翻译、语音指令操作等场景现在可以用开源方案实现，不再依赖昂贵的闭源API。"
         }
       ]
     },
     {
       "id": "industry",
-      "title": "\u6e38\u620f\u884c\u4e1a\u52a8\u6001",
+      "title": "游戏行业动态",
       "title_en": "INDUSTRY",
       "color": "#D7263D",
       "items": [
         {
-          "idx": "\u6e38\u620f\u884c\u4e1a 01",
-          "source": "Palworld \u5b98\u65b9",
-          "tags": ["Palworld", "1.0\u53d1\u5e03", "\u5efa\u9020"],
-          "title": "Palworld 1.0 \u6b63\u5f0f\u7248 7/10 \u53d1\u5e03\uff1a\u6c34\u4e0a\u5efa\u7b51+\u636e\u70b9\u7cfb\u7edf\u5927\u5e45\u7ffb\u65b0",
-          "en_title": "7/10(\u91d1)\u306b\u300e\u30d1\u30eb\u30ef\u30fc\u30eb\u30c9\uff1a1.0\u300f\u6b63\u5f0f\u7248\u30ea\u30ea\u30fc\u30b9\u307e\u3067\u3001\u3042\u3068 6\u65e5\uff01",
-          "full_text": "7/10(\u91d1)\u306b\u300e\u30d1\u30eb\u30ef\u30fc\u30eb\u30c9\uff1a1.0\u300f\u6b63\u5f0f\u7248\u30ea\u30ea\u30fc\u30b9\u307e\u3067\u3001\u3042\u3068 6\u65e5\uff01\n\n\u3064\u3044\u306b\u3001\u6c34\u4e0a\u5efa\u7bc9\u30ad\u30c3\u30c8\u304c\u767b\u5834\uff01\n\u3082\u3061\u308d\u3093\u3001\u65b0\u3057\u3044\u62e0\u70b9\u5efa\u7bc9\u7269\u3001\u5bb6\u5177\u3001\u5efa\u7bc9\u30d1\u30fc\u30c4\u3082\u8ffd\u52a0\uff01\n\u6b66\u5668\u30b7\u30b9\u30c6\u30e0\u3082\u5927\u5e45\u30ea\u30cb\u30e5\u30fc\u30a2\u30eb\uff01",
+          "idx": "游戏行业 01",
+          "source": "Palworld 官方",
+          "tags": [
+            "Palworld",
+            "1.0发布",
+            "建造"
+          ],
+          "title": "Palworld 1.0 正式版 7/10 发布：水上建筑+据点系统大幅翻新",
+          "en_title": "7/10(金)に『パルワールド：1.0』正式版リリースまで、あと 6日！",
+          "full_text": "7/10(金)に『パルワールド：1.0』正式版リリースまで、あと 6日！\n\nついに、水上建築キットが登場！\nもちろん、新しい拠点建築物、家具、建築パーツも追加！\n武器システムも大幅リニューアル！",
           "author": "Palworld_JP",
           "date": "2026-07-04",
           "likes": 3381,
           "views": 383827,
           "link": "https://x.com/Palworld_JP/status/2073210260005728294",
-          "media": {"type": "video", "url": "https://pbs.twimg.com/ext_tw_video_thumb/2073210223133675521/pu/img/kuMsOd5pgGRPr-tI.jpg", "video_url": "https://x.com/Palworld_JP/status/2073210260005728294/video/1"},
-          "summary": "Palworld 1.0 \u6b63\u5f0f\u7248\u786e\u8ba4 7\u670810\u65e5\u53d1\u5e03\u3002\u65b0\u589e\u6c34\u4e0a\u5efa\u7b51\u5957\u4ef6\u3001\u65b0\u636e\u70b9\u5efa\u7b51\u7269/\u5bb6\u5177/\u5efa\u7b51\u90e8\u4ef6\uff0c\u6b66\u5668\u7cfb\u7edf\u4e5f\u5927\u5e45\u7ffb\u65b0\u3002",
-          "analysis": "Palworld \u4ece\u62a2\u5148\u4f53\u9a8c\u5230 1.0 \u7684\u8fc7\u6e21\u662f\u751f\u5b58\u5efa\u9020\u54c1\u7c7b\u7684\u6807\u6746\u6848\u4f8b\u3002\u6c34\u4e0a\u5efa\u7b51\u7b49\u65b0\u5185\u5bb9\u8bf4\u660e\u56e2\u961f\u5728\u6301\u7eed\u6269\u5c55\u73a9\u6cd5\u8fb9\u754c\u3002\u5bf9\u72ec\u6e38\u5f00\u53d1\u8005\uff1a\u201c\u62a2\u5148\u4f53\u9a8c\u2192\u5426\u8ba4\u2192\u8bc1\u660e\u81ea\u5df1\u2192\u6b63\u5f0f\u7248\u201d\u7684\u8def\u5f84\u88ab\u9a8c\u8bc1\u53ef\u884c\u3002"
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2073210223133675521/pu/img/kuMsOd5pgGRPr-tI.jpg",
+            "video_url": "https://x.com/Palworld_JP/status/2073210260005728294/video/1"
+          },
+          "summary": "Palworld 1.0 正式版确认 7月10日发布。新增水上建筑套件、新据点建筑物/家具/建筑部件，武器系统也大幅翻新。",
+          "analysis": "Palworld 从抢先体验到 1.0 的过渡是生存建造品类的标杆案例。水上建筑等新内容说明团队在持续扩展玩法边界。对独游开发者：“抢先体验→否认→证明自己→正式版”的路径被验证可行。"
         },
         {
-          "idx": "\u6e38\u620f\u884c\u4e1a 02",
-          "source": "mike wing \u00b7 \u72ec\u7acb\u5f00\u53d1",
-          "tags": ["Steam", "\u591a\u5df4\u80fa", "\u8d2d\u4e70\u5fc3\u7406"],
-          "title": "Steam \u8d2d\u4e70\u591a\u5df4\u80fa\u6a21\u62df\u7f51\u7ad9\u7206\u706b\uff1a\u4e0d\u82b1\u94b1\u5c31\u80fd\u83b7\u5f97\u8d2d\u4e70\u5feb\u611f",
+          "idx": "游戏行业 02",
+          "source": "mike wing · 独立开发",
+          "tags": [
+            "Steam",
+            "多巴胺",
+            "购买心理"
+          ],
+          "title": "Steam 购买多巴胺模拟网站爆火：不花钱就能获得购买快感",
           "en_title": "im addicted to buying digital games on steam, so i made a website that gives me the same dopamine of buying games without spending actual money",
           "full_text": "im addicted to buying digital games on steam\n\nand the summer sale is not helping\n\nso i made a website that gives me the same dopamine of buying games without spending actual money",
           "author": "immike_wing",
@@ -115,23 +153,32 @@
           "likes": 11987,
           "views": 438027,
           "link": "https://x.com/immike_wing/status/2073096720443990256",
-          "media": {"type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2073095536677142528/img/E8KxnipVfb9Sbf_i.jpg", "video_url": "https://x.com/immike_wing/status/2073096720443990256/video/1"},
-          "summary": "\u5f00\u53d1\u8005\u505a\u4e86\u4e00\u4e2a\u201c\u5047\u88c5\u4e70Steam\u6e38\u620f\u201d\u7684\u7f51\u7ad9\uff0c\u53ef\u4ee5\u4f53\u9a8c\u70b9\u51fb\u8d2d\u4e70\u7684\u591a\u5df4\u80fa\u800c\u4e0d\u82b1\u4e00\u5206\u94b1\u3002438K \u6d4f\u89c8\u91cf\u7206\u706b\u3002",
-          "analysis": "\u770b\u4f3c\u6076\u641e\u4f46\u89e6\u53ca\u4e86\u6e38\u620f\u6d88\u8d39\u5fc3\u7406\u5b66\u7684\u6838\u5fc3\uff1a\u201c\u8d2d\u4e70\u884c\u4e3a\u672c\u8eab\u201d\u800c\u975e\u201c\u73a9\u6e38\u620f\u201d\u662f\u8bb8\u591a\u73a9\u5bb6\u7684\u771f\u5b9e\u5feb\u611f\u6765\u6e90\u3002\u8fd9\u5bf9\u6e38\u620f\u5546\u5e97\u8bbe\u8ba1\u548c\u4ed8\u8d39\u673a\u5236\u6709\u542f\u53d1\u610f\u4e49\u3002"
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073095536677142528/img/E8KxnipVfb9Sbf_i.jpg",
+            "video_url": "https://x.com/immike_wing/status/2073096720443990256/video/1"
+          },
+          "summary": "开发者做了一个“假装买Steam游戏”的网站，可以体验点击购买的多巴胺而不花一分钱。438K 浏览量爆火。",
+          "analysis": "看似恶搞但触及了游戏消费心理学的核心：“购买行为本身”而非“玩游戏”是许多玩家的真实快感来源。这对游戏商店设计和付费机制有启发意义。"
         }
       ]
     },
     {
       "id": "indie",
-      "title": "\u65b0\u6e38\u63a8\u6587",
+      "title": "新游推文",
       "title_en": "INDIE GAMES",
       "color": "#E8B04B",
       "items": [
         {
-          "idx": "\u65b0\u6e38\u63a8\u6587 01",
-          "source": "Indie Game Joe \u00b7 \u63a8\u8350",
-          "tags": ["\u751f\u5b58", "\u5408\u4f5c", "\u50f5\u5c38", "\u72ec\u7acb\u5f00\u53d1"],
-          "title": "ROUTE\uff1a\u72ec\u7acb\u5f00\u53d14\u4eba\u5408\u4f5c\u6821\u8f66\u672b\u65e5\u751f\u5b58\uff0c\u6821\u8f66\u662f\u5bb6/\u4ed3\u5e93/\u9003\u751f\u5de5\u5177",
+          "idx": "新游推文 01",
+          "source": "Indie Game Joe · 推荐",
+          "tags": [
+            "生存",
+            "合作",
+            "僵尸",
+            "独立开发"
+          ],
+          "title": "ROUTE：独立开发4人合作校车末日生存，校车是家/仓库/逃生工具",
           "en_title": "This indie team is making a co-op survival game where you drive a school bus through the zombie apocalypse",
           "full_text": "This indie team is making a co-op survival game where you drive a school bus through the zombie apocalypse\n\n- The bus is your home, storage and only way out\n- Explore on foot, just don't forget where you parked\n- Survive with a crew of 4\n\nIt's called ROUTE. Would you play this?",
           "author": "IndieGameJoe",
@@ -139,65 +186,85 @@
           "likes": 1265,
           "views": 108637,
           "link": "https://x.com/IndieGameJoe/status/2073355501690069303",
-          "media": {"type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2073354766093017088/img/jewaEViVWEdVZyq-.jpg", "video_url": "https://x.com/IndieGameJoe/status/2073355501690069303/video/1"},
-          "summary": "\u72ec\u7acb\u56e2\u961f\u5f00\u53d1\u7684 4 \u4eba\u5408\u4f5c\u751f\u5b58\u6e38\u620f ROUTE\uff1a\u9a7e\u9a76\u6821\u8f66\u7a7f\u8d8a\u50f5\u5c38\u672b\u65e5\u3002\u6821\u8f66\u540c\u65f6\u662f\u5bb6\u3001\u4ed3\u5e93\u548c\u552f\u4e00\u7684\u9003\u751f\u5de5\u5177\u3002",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073354766093017088/img/jewaEViVWEdVZyq-.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2073355501690069303/video/1"
+          },
+          "summary": "独立团队开发的 4 人合作生存游戏 ROUTE：驾驶校车穿越僵尸末日。校车同时是家、仓库和唯一的逃生工具。",
           "analysis": "",
           "enrichment": {
             "game_name": "ROUTE",
-            "genre": "\u5408\u4f5c\u751f\u5b58 / \u50f5\u5c38 / \u8f7d\u5177\u9a7e\u9a76",
-            "developer": "\u72ec\u7acb\u56e2\u961f",
-            "platforms": ["PC"],
-            "price": "\u672a\u516c\u5e03",
-            "steam_rating": "\u672a\u53d1\u552e",
+            "genre": "合作生存 / 僵尸 / 载具驾驶",
+            "developer": "独立团队",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "steam_rating": "未发售",
             "steam_url": null,
             "header_image": null,
             "youtube_video": null,
-            "description": "ROUTE \u662f\u4e00\u6b3e 4 \u4eba\u5408\u4f5c\u751f\u5b58\u6e38\u620f\uff0c\u6838\u5fc3\u8bbe\u8ba1\u56f4\u7ed5\u4e00\u8f86\u6821\u8f66\u5c55\u5f00\u3002\n\n\u3010\u6838\u5fc3\u73a9\u6cd5\u3011\u6821\u8f66\u662f\u4f60\u7684\u4e00\u5207\u2014\u2014\u5b83\u662f\u79fb\u52a8\u57fa\u5730\u3001\u7269\u8d44\u4ed3\u5e93\u548c\u9003\u751f\u5de5\u5177\u3002\u73a9\u5bb6\u5f92\u6b65\u63a2\u7d22\u8d44\u6e90\u4f46\u5fc5\u987b\u8bb0\u4f4f\u6821\u8f66\u505c\u5728\u54ea\u91cc\u2014\u2014\u79bb\u5f00\u592a\u8fdc\u5c31\u53ef\u80fd\u56de\u4e0d\u6765\u4e86\u3002\n\n\u3010\u7f8e\u672f\u4e0e\u6c1b\u56f4\u3011\u50f5\u5c38\u672b\u65e5\u80cc\u666f\uff0c\u4ece\u9884\u544a\u770b\u753b\u9762\u504f\u5199\u5b9e\u98ce\u683c\uff0c\u6c1b\u56f4\u7d27\u5f20\u3002\n\n\u3010\u5bf9\u6807\u5b9a\u4f4d\u3011\u201c\u50f5\u5c38\u672b\u65e5\u201d\u9898\u6750\u7684\u5408\u4f5c\u751f\u5b58\uff0c\u4f46\u6821\u8f66\u4f5c\u4e3a\u6838\u5fc3\u673a\u5236\u662f\u5dee\u5f02\u5316\u4eae\u70b9\u3002\u7c7b\u4f3c State of Decay \u7684\u79fb\u52a8\u57fa\u5730\u6982\u5ff5\uff0c\u4f46\u66f4\u5f3a\u8c03\u8f7d\u5177\u9a7e\u9a76\u548c\u7a7a\u95f4\u7ba1\u7406\u3002\n\n\u3010\u4f18\u52bf\u3011\u6821\u8f66\u673a\u5236\u65b0\u9896\u6709\u8da3\uff1b4\u4eba\u5408\u4f5c\u670911\u5c42\u6ce1\uff1b\u201c\u522b\u5fd8\u4e86\u8f66\u505c\u54ea\u201d\u7684\u7d27\u8feb\u611f\u3002\n\u3010\u4e0d\u8db3\u3011\u4fe1\u606f\u6781\u5c11\uff1b\u50f5\u5c38\u751f\u5b58\u8d5b\u9053\u7ade\u4e89\u6fc0\u70c8\uff1b\u672a\u77e5\u5f00\u53d1\u8fdb\u5ea6\u3002\n\n\u3010\u7efc\u5408\u8bc4\u4ef7\u3011\u201c\u6821\u8f66\u5373\u57fa\u5730\u201d\u7684\u6838\u5fc3\u8bbe\u8ba1\u8db3\u591f\u5dee\u5f02\u5316\uff0c\u5982\u679c\u80fd\u505a\u597d\u4e0e\u5c38\u6f6e\u7684\u8ffd\u8d76\u611f\u548c\u8f66\u5185\u7a7a\u95f4\u7ba1\u7406\uff0c\u6709\u6f5c\u529b\u5728\u5408\u4f5c\u751f\u5b58\u54c1\u7c7b\u4e2d\u6740\u51fa\u3002",
-            "why_notable": "\u6821\u8f66\u4f5c\u4e3a\u6838\u5fc3\u673a\u5236\u7684\u5dee\u5f02\u5316\u8bbe\u8ba1\uff0c4\u4eba\u5408\u4f5c+\u50f5\u5c38\u672b\u65e5\u7684\u641e\u7b11\u6027\u548c\u7d27\u5f20\u611f\u5e76\u5b58"
+            "description": "ROUTE 是一款 4 人合作僵尸末日生存游戏。\n\n核心机制：校车既是家、仓库也是唯一的逃生工具。玩家需徒步探索补给，但别忘了校车停在哪。\n\nSteam 状态：即将推出\n开发商：独立团队\n信源：@IndieGameJoe 推文"
           }
         },
         {
-          "idx": "\u65b0\u6e38\u63a8\u6587 02",
-          "source": "Beyond the Western Deep \u00b7 \u5f00\u53d1\u8005",
-          "tags": ["\u624b\u7ed8\u52a8\u753b", "\u5192\u9669", "\u4f4e\u914d\u4f18\u5316", "\u72ec\u7acb\u5f00\u53d1"],
-          "title": "Beyond the Western Deep\uff1a\u72ec\u7acb\u5f00\u53d1\u7ecf\u5178\u624b\u7ed8\u52a8\u753b\u5192\u9669\uff0c\u4e13\u4e3a\u4f4e\u914dPC\u4f18\u5316",
+          "idx": "新游推文 02",
+          "source": "Beyond the Western Deep · 开发者",
+          "tags": [
+            "手绘动画",
+            "冒险",
+            "低配优化",
+            "独立开发"
+          ],
+          "title": "Beyond the Western Deep：独立开发经典手绘动画冒险，专为低配PC优化",
           "en_title": "RAMageddon's driving up costs all over, so we're making a classically animated adventure game that runs on a 3-year-old mini PC with integrated graphics!",
-          "full_text": "RAMageddon\u2019s driving up costs all over, so we\u2019re making a classically animated adventure game that runs on a 3-year-old mini PC with integrated graphics! Check out the demo and Wishlist on #Steam!",
+          "full_text": "RAMageddon’s driving up costs all over, so we’re making a classically animated adventure game that runs on a 3-year-old mini PC with integrated graphics! Check out the demo and Wishlist on #Steam!",
           "author": "TheWesternDeep",
           "date": "2026-07-03",
           "likes": 6980,
           "views": 234160,
           "link": "https://x.com/TheWesternDeep/status/2073106489762611214",
-          "media": {"type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2073106265535082496/img/F5VheHSQe2eR3VgX.jpg", "video_url": "https://x.com/TheWesternDeep/status/2073106489762611214/video/1"},
-          "summary": "\u72ec\u7acb\u56e2\u961f\u56de\u5e94\u201cRAM\u4ef7\u683c\u5371\u673a\u201d\uff1a\u6211\u4eec\u5728\u505a\u4e00\u6b3e\u7ecf\u5178\u624b\u7ed8\u52a8\u753b\u5192\u9669\u6e38\u620f\uff0c3\u5e74\u524d\u7684\u96c6\u663eMini PC\u5c31\u80fd\u8dd1\u30026980\u8d5e\u3001234K\u6d4f\u89c8\u3002",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073106265535082496/img/F5VheHSQe2eR3VgX.jpg",
+            "video_url": "https://x.com/TheWesternDeep/status/2073106489762611214/video/1"
+          },
+          "summary": "独立团队回应“RAM价格危机”：我们在做一款经典手绘动画冒险游戏，3年前的集显Mini PC就能跑。6980赞、234K浏览。",
           "analysis": "",
           "enrichment": {
             "game_name": "Beyond the Western Deep",
-            "genre": "\u624b\u7ed8\u52a8\u753b / \u5192\u9669 / \u53d9\u4e8b",
-            "developer": "\u72ec\u7acb\u56e2\u961f",
-            "platforms": ["PC"],
-            "price": "\u672a\u516c\u5e03",
-            "steam_rating": "\u672a\u53d1\u552e",
+            "genre": "手绘动画 / 冒险 / 叙事",
+            "developer": "独立团队",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "steam_rating": "未发售",
             "steam_url": null,
             "header_image": null,
             "youtube_video": null,
-            "description": "Beyond the Western Deep \u662f\u4e00\u6b3e\u7ecf\u5178\u624b\u7ed8\u52a8\u753b\u98ce\u683c\u7684\u5192\u9669\u6e38\u620f\u3002\n\n\u3010\u6838\u5fc3\u73a9\u6cd5\u3011\u4f20\u7edf\u53d9\u4e8b\u5192\u9669\uff0c\u5f3a\u8c03\u53d9\u4e8b\u548c\u89d2\u8272\u4e92\u52a8\u3002\n\n\u3010\u7f8e\u672f\u4e0e\u6c1b\u56f4\u3011\u6838\u5fc3\u5356\u70b9\u662f\u7cbe\u7f8e\u7684\u7ecf\u5178\u624b\u7ed8\u52a8\u753b\uff0c\u7c7b\u4f3c 90 \u5e74\u4ee3\u8ff7\u4f60\u52a8\u753b\u7247\u7684\u89c6\u89c9\u98ce\u683c\u3002\n\n\u3010\u5dee\u5f02\u5316\u5b9a\u4f4d\u3011\u5728 RAM \u4ef7\u683c\u5371\u673a\u7684\u80cc\u666f\u4e0b\uff0c\u5f00\u53d1\u8005\u4e3b\u52a8\u4ee5\u201c\u6781\u4f4e\u914d\u7f6e\u53ef\u8dd1\u201d\u4f5c\u4e3a\u5356\u70b9\u2014\u20143\u5e74\u524d\u7684\u96c6\u663e Mini PC \u5c31\u80fd\u6d41\u7545\u8fd0\u884c\u3002\u8fd9\u662f\u4e00\u79cd\u53cd\u5176\u9053\u800c\u884c\u7684\u8425\u9500\u7b56\u7565\u3002\n\n\u3010\u4f18\u52bf\u3011\u624b\u7ed8\u52a8\u753b\u7f8e\u5b66\u72ec\u7279\uff1b6980\u8d5e\u8bf4\u660e\u793e\u533a\u8ba4\u53ef\uff1b\u4f4e\u914d\u5b9a\u4f4d\u6269\u5927\u53d7\u4f17\u3002\n\u3010\u4e0d\u8db3\u3011\u73a9\u6cd5\u4fe1\u606f\u4e0d\u8db3\uff1b\u6613\u88ab\u5f53\u4f5c\u201c\u5c0f\u4f53\u91cf\u201d\u4f5c\u54c1\u5ffd\u89c6\u3002\n\n\u3010\u7efc\u5408\u8bc4\u4ef7\u3011\u624b\u7ed8\u52a8\u753b+\u4f4e\u914d\u7684\u7ec4\u5408\u5728\u5f53\u4e0b\u201c\u786c\u4ef6\u5371\u673a\u201d\u80cc\u666f\u4e0b\u662f\u806a\u660e\u7684\u5dee\u5f02\u5316\u3002",
-            "why_notable": "\u624b\u7ed8\u52a8\u753b\u7f8e\u5b66\u72ec\u7279\uff0c\u4ee5\u201c\u6781\u4f4e\u914d\u7f6e\u53ef\u8dd1\u201d\u4f5c\u4e3a\u5356\u70b9\u56de\u5e94RAM\u4ef7\u683c\u5371\u673a\uff0c6980\u8d5e\u8bf4\u660e\u793e\u533a\u5f3a\u70c8\u8ba4\u53ef"
+            "description": "Beyond the Western Deep 是一款经典手绘动画风格的冒险游戏。\n\n专为低配设备优化——可在 3 年前的集成显卡迷你 PC 上运行。Steam 已有 Demo 可试玩。\n\nSteam 状态：开发中（Demo 已上线）\n开发商：独立开发\n信源：开发者推文"
           }
         }
       ]
     },
     {
       "id": "tools",
-      "title": "\u5f00\u53d1\u5de5\u5177",
+      "title": "开发工具",
       "title_en": "DEV TOOLS",
       "color": "#60a5fa",
       "items": [
         {
-          "idx": "\u5f00\u53d1\u5de5\u5177 01",
-          "source": "Anthony Carmona \u00b7 \u63d2\u4ef6\u5f00\u53d1",
-          "tags": ["UE", "\u7ba1\u9053\u5de5\u5177", "Fab", "UX"],
-          "title": "Pipe It 1.0\uff1aUE\u7ba1\u9053\u7ed8\u5236\u63d2\u4ef6\u5373\u5c06\u4e0a\u67b6 Fab\uff0c6\u4e2a\u6708\u6253\u78e8UX",
+          "idx": "开发工具 01",
+          "source": "Anthony Carmona · 插件开发",
+          "tags": [
+            "UE",
+            "管道工具",
+            "Fab",
+            "UX"
+          ],
+          "title": "Pipe It 1.0：UE管道绘制插件即将上架 Fab，6个月打磨UX",
           "en_title": "Pipe It, the UE Pipe Plugin is finally 1.0 ready and coming out to Fab in a few weeks!",
           "full_text": "Pipe It, the UE Pipe Plugin is finally 1.0 ready and coming out to @fab in a few weeks!\nIt's been a fun 6 months journey taking this simple idea and transforming it into a complete tool meant to make pipes easy and fun. UX is such an unseen beast and it renewed my respect to #UX designers across the world.",
           "author": "SentientSoftwr",
@@ -205,12 +272,16 @@
           "likes": 1294,
           "views": 106002,
           "link": "https://x.com/SentientSoftwr/status/2073065622959784327",
-          "media": {"type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2073065471260172288/img/i5nmsUBIHdkn2ZZn.jpg", "video_url": "https://x.com/SentientSoftwr/status/2073065622959784327/video/1"},
-          "summary": "UE \u7ba1\u9053\u7ed8\u5236\u63d2\u4ef6 Pipe It \u7ecf\u8fc7 6 \u4e2a\u6708\u5f00\u53d1\u8fbe\u5230 1.0\uff0c\u5373\u5c06\u4e0a\u67b6 Fab \u5e02\u573a\u3002\u5f00\u53d1\u8005\u611f\u6168 UX \u8bbe\u8ba1\u7684\u96be\u5ea6\u8fdc\u8d85\u9884\u671f\u3002",
-          "analysis": "\u5c0f\u5de5\u5177\u5927\u4ef7\u503c\uff1a\u7ba1\u9053\u662f 3D \u573a\u666f\u4e2d\u5e38\u89c1\u4f46\u5236\u4f5c\u9ebb\u70e6\u7684\u5143\u7d20\uff0c\u4e00\u4e2a\u597d\u7528\u7684\u7ba1\u9053\u63d2\u4ef6\u80fd\u663e\u8457\u63d0\u5347\u5173\u5361\u8bbe\u8ba1/\u573a\u666f\u642d\u5efa\u7684\u6548\u7387\u3002\u5f00\u53d1\u8005\u5bf9 UX \u7684\u611f\u6168\u4e5f\u9a8c\u8bc1\u4e86\uff1a\u5de5\u5177\u7684\u4ef7\u503c\u5f80\u5f80\u4e0d\u5728\u529f\u80fd\u800c\u5728\u6613\u7528\u6027\u3002"
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073065471260172288/img/i5nmsUBIHdkn2ZZn.jpg",
+            "video_url": "https://x.com/SentientSoftwr/status/2073065622959784327/video/1"
+          },
+          "summary": "UE 管道绘制插件 Pipe It 经过 6 个月开发达到 1.0，即将上架 Fab 市场。开发者感慨 UX 设计的难度远超预期。",
+          "analysis": "小工具大价值：管道是 3D 场景中常见但制作麻烦的元素，一个好用的管道插件能显著提升关卡设计/场景搭建的效率。开发者对 UX 的感慨也验证了：工具的价值往往不在功能而在易用性。"
         }
       ]
     }
   ],
-  "daily_summary": "**AMD \u53d1\u5e03 $1,499 AI \u4fbf\u643a\u76d2\uff1a\u672c\u5730\u8dd1 235B \u53c2\u6570\u6a21\u578b\u7684\u6210\u672c\u964d\u81f3 Nvidia \u7684\u4e09\u5206\u4e4b\u4e00**\nAMD CEO Lisa Su \u53d1\u5e03\u4e86\u4e00\u4e2a\u53ef\u4ee5\u5355\u624b\u6301\u7684 AI \u4fbf\u643a\u76d2\uff0c\u642d\u8f7d Ryzen AI Max+ 395 \u82af\u7247\uff0cCPU \u548c GPU \u5171\u4eab 128GB \u5185\u5b58\u3002\u73b0\u573a\u6f14\u793a\u76f4\u63a5\u8dd1 235B \u53c2\u6570\u6a21\u578b\u3002\u5bf9\u6e38\u620f\u56e2\u961f\u610f\u5473\u7740\u672c\u5730AI\u670d\u52a1\u5668\u7684\u6210\u672c\u5927\u5e45\u964d\u4f4e\u3002\n\n**Fable 5 \u6740\u6b7b Web \u8bbe\u8ba1\uff1f\u4e00\u6b21\u6027\u751f\u6210\u7684\u8bbe\u8ba1\u5df2\u8fbe\u4e13\u4e1a\u6c34\u51c6**\n\u5f00\u53d1\u8005\u8ba4\u4e3a Fable 5 \u7684 Web \u8bbe\u8ba1\u80fd\u529b\u5df2\u7ecf\u8db3\u591f\u5a01\u80c1\u6574\u4e2a\u884c\u4e1a\u3002\u540c\u65f6 Hugging Face \u4e0e Cerebras \u53d1\u5e03\u4e86\u5168\u5f00\u6e90\u5b9e\u65f6\u8bed\u97f3\u5bf9\u8bdd\u7cfb\u7edf\uff0c\u5ef6\u8fdf\u6781\u4f4e\u3002\n\n**Palworld 1.0 \u5012\u8ba1\u65f6\uff1a\u6c34\u4e0a\u5efa\u7b51+\u6b66\u5668\u7ffb\u65b0\uff0c7/10\u6b63\u5f0f\u53d1\u5e03**\nPalworld \u786e\u8ba4 7 \u670810\u65e5\u53d1\u5e03 1.0 \u6b63\u5f0f\u7248\uff0c\u65b0\u589e\u6c34\u4e0a\u5efa\u7b51\u3001\u636e\u70b9\u5efa\u7b51\u7269\u548c\u6b66\u5668\u7cfb\u7edf\u7ffb\u65b0\u3002\u53e6\u5916\u6709\u5f00\u53d1\u8005\u505a\u4e86\u4e2a\u201c\u5047\u88c5\u4e70Steam\u6e38\u620f\u201d\u7684\u7f51\u7ad9\u7206\u706b\uff0c\u89e6\u53ca\u6e38\u620f\u6d88\u8d39\u5fc3\u7406\u5b66\u6838\u5fc3\u3002\n\n**\u6821\u8f66\u672b\u65e5\u751f\u5b58 + \u624b\u7ed8\u52a8\u753b\u4f4e\u914d\u5192\u9669\uff1a\u4e24\u6b3e\u72ec\u6e38\u5f15\u5173\u6ce8**\nROUTE \u7528\u201c\u6821\u8f66\u5373\u57fa\u5730\u201d\u505a\u5dee\u5f02\u5316\uff0cBeyond the Western Deep \u4ee5\u201c\u624b\u7ed8\u52a8\u753b+3\u5e74\u524d\u96c6\u663e\u5c31\u80fd\u8dd1\u201d\u56de\u5e94 RAM \u5371\u673a\uff0c6980\u8d5e\u8bf4\u660e\u793e\u533a\u5f3a\u70c8\u8ba4\u53ef\u3002\n\n**UE \u7ba1\u9053\u63d2\u4ef6 Pipe It \u8fbe\u5230 1.0\uff0c\u5373\u5c06\u4e0a\u67b6 Fab**\n\u5f00\u53d1\u8005\u82b1 6 \u4e2a\u6708\u6253\u78e8\u7684 UE \u7ba1\u9053\u7ed8\u5236\u63d2\u4ef6\u5373\u5c06\u53d1\u5e03\uff0c\u611f\u6168 UX \u8bbe\u8ba1\u8fdc\u6bd4\u60f3\u8c61\u96be\u3002\n\n\u8be6\u60c5\u8bf7\u70b9\u51fb\u4e0b\u65b9\u3010\u5f53\u65e5\u901f\u89c8\u3011\u7684\u6761\u76ee\u8df3\u8f6c\u5230\u5bf9\u5e94\u63a8\u6587\u3002"
+  "daily_summary": "**AMD 发布 $1,499 AI 便携盒：本地跑 235B 参数模型的成本降至 Nvidia 的三分之一**\nAMD CEO Lisa Su 发布了一个可以单手持的 AI 便携盒，搭载 Ryzen AI Max+ 395 芯片，CPU 和 GPU 共享 128GB 内存。现场演示直接跑 235B 参数模型。对游戏团队意味着本地AI服务器的成本大幅降低。\n\n**Fable 5 杀死 Web 设计？一次性生成的设计已达专业水准**\n开发者认为 Fable 5 的 Web 设计能力已经足够威胁整个行业。同时 Hugging Face 与 Cerebras 发布了全开源实时语音对话系统，延迟极低。\n\n**Palworld 1.0 倒计时：水上建筑+武器翻新，7/10正式发布**\nPalworld 确认 7 月10日发布 1.0 正式版，新增水上建筑、据点建筑物和武器系统翻新。另外有开发者做了个“假装买Steam游戏”的网站爆火，触及游戏消费心理学核心。\n\n**校车末日生存 + 手绘动画低配冒险：两款独游引关注**\nROUTE 用“校车即基地”做差异化，Beyond the Western Deep 以“手绘动画+3年前集显就能跑”回应 RAM 危机，6980赞说明社区强烈认可。\n\n**UE 管道插件 Pipe It 达到 1.0，即将上架 Fab**\n开发者花 6 个月打磨的 UE 管道绘制插件即将发布，感慨 UX 设计远比想象难。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
 }
