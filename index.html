@@ -127,10 +127,11 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 .roblox-week-btn.on{background:var(--gold);border-color:var(--gold);color:#fff;box-shadow:0 2px 8px rgba(196,155,44,.2)}
 .roblox-iframe{width:100%;height:calc(100vh - 180px);border:1px solid var(--border);border-radius:12px;background:var(--card);box-shadow:var(--shadow)}
 
-/* Enrichment - Game Showcase (4-zone layout) */
-.enrichment{margin-top:8px;margin-left:-60px;margin-right:-60px;padding:0;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+/* Enrichment - Game Showcase (4-zone layout, integrated into card) */
+.card-enriched{max-width:78vw;width:78vw;margin-left:calc(50% - 39vw);padding:24px 32px}
+.enrichment{margin-top:16px;padding:0;border-radius:12px;overflow:hidden;border:1px solid var(--border-light);background:var(--bg)}
 .enrich-grid{display:grid;grid-template-columns:1.3fr 0.7fr;grid-template-rows:1fr auto;gap:0}
-.enrich-media{grid-column:1;grid-row:1/3;border-right:1px solid var(--border-light);position:relative;overflow:hidden;min-height:240px;background:#0a0a0a}
+.enrich-media{grid-column:1;grid-row:1/3;border-right:1px solid var(--border-light);position:relative;overflow:hidden;min-height:260px;background:#0a0a0a}
 .enrich-media img,.enrich-media video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
 .enrich-media:hover img{transform:scale(1.02)}
 .enrich-media a{display:block;width:100%;height:100%}
@@ -138,28 +139,25 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 .enrich-media:hover .play-overlay{background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.5) 100%)}
 .enrich-media .play-overlay span{width:60px;height:60px;background:rgba(255,255,255,.95);color:#111;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;padding-left:4px;box-shadow:0 4px 20px rgba(0,0,0,.3);transition:transform .2s}
 .enrich-media:hover .play-overlay span{transform:scale(1.1)}
-.enrich-data{grid-column:2;grid-row:1;padding:22px 20px;display:flex;flex-direction:column;gap:14px;background:linear-gradient(180deg,var(--card) 0%,var(--bg) 100%)}
+.enrich-data{grid-column:2;grid-row:1;padding:22px 20px;display:flex;flex-direction:column;gap:14px;justify-content:center;background:linear-gradient(180deg,var(--card) 0%,var(--bg) 100%)}
 .enrich-stat{display:flex;flex-direction:column;gap:2px}
 .enrich-stat-label{font-size:9.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink3)}
 .enrich-stat-value{font-size:22px;font-weight:900;color:var(--ink);font-family:var(--font-serif);line-height:1.2}
 .enrich-stat-value.gold{color:var(--gold)}
-.enrich-stat-sub{font-size:11px;color:var(--ink3);margin-top:1px}
+.enrich-nodata{display:flex;align-items:center;justify-content:center;height:100%;min-height:120px}
+.enrich-nodata span{font-size:28px;font-weight:800;color:var(--ink3);opacity:.6;letter-spacing:2px}
 .enrich-tags-zone{grid-column:2;grid-row:2;padding:14px 20px;display:flex;flex-wrap:wrap;gap:6px;align-content:flex-start;border-top:1px solid var(--border-light)}
 .enrich-tags-zone .enrich-tag{font-size:10.5px;font-weight:600;padding:4px 10px;border-radius:12px;background:var(--green-light);color:var(--green);border:1px solid var(--green-border);transition:transform .15s}
 .enrich-tags-zone .enrich-tag:hover{transform:translateY(-1px)}
 .enrich-tags-zone .enrich-tag.platform{background:var(--blue-light);color:var(--blue);border-color:var(--blue-border)}
-.enrich-tags-zone .enrich-tag.price{background:var(--gold-light);color:var(--gold);border-color:var(--gold-border)}
-.enrich-tags-zone .enrich-tag.pcu{background:var(--ai-light);color:var(--ai);border-color:var(--ai-border)}
-.enrich-tags-zone .enrich-tag.sales{background:var(--red-light);color:var(--red);border-color:var(--red-border)}
-.enrich-bottom{grid-column:1/3;padding:22px 26px;border-top:1px solid var(--border-light);background:var(--bg)}
-.enrich-gi-line{font-size:13.5px;color:var(--ink);font-weight:600;margin-bottom:14px;padding:11px 16px;background:linear-gradient(90deg,var(--gold-light) 0%,transparent 80%);border-left:3.5px solid var(--gold);border-radius:4px;line-height:1.6;font-family:var(--font-serif)}
-.enrich-desc{font-size:13px;color:var(--ink2);line-height:1.8;white-space:pre-line;margin-bottom:14px}
-.enrich-notable{font-size:13px;color:var(--ink2);line-height:1.6;padding-left:12px;border-left:3px solid var(--green);margin-bottom:12px}
-.enrich-links{display:flex;gap:10px;margin-top:12px}
-.enrich-links a{font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;padding:6px 14px;border:1px solid var(--gold-border);border-radius:8px;transition:all .2s}
-.enrich-links a:hover{background:var(--gold-light);transform:translateY(-1px);box-shadow:0 2px 8px rgba(196,155,44,.15)}
+.enrich-bottom{grid-column:1/3;padding:22px 26px;border-top:1px solid var(--border-light);background:var(--card)}
+.enrich-desc{font-size:13px;color:var(--ink2);line-height:1.8;white-space:pre-line}
+.enrich-stat-sub{font-size:11px;color:var(--ink3);font-weight:600;margin-top:2px}
+@media(max-width:900px){
+  .card-enriched{max-width:100%;width:100%;margin-left:0}
+}
 @media(max-width:700px){
-  .enrichment{margin-left:0;margin-right:0}
+  .card-enriched{padding:16px}
   .enrich-grid{grid-template-columns:1fr;grid-template-rows:auto}
   .enrich-media{grid-column:1;grid-row:1;min-height:180px;border-right:none}
   .enrich-data{grid-column:1;grid-row:2;flex-direction:row;flex-wrap:wrap;gap:16px;padding:16px 20px}
@@ -471,11 +469,13 @@ function renderContent() {
         }
       }
       const tagsHtml = item.tags.map(t => `<span class="badge">${t}</span>`).join('');
+      const hasEnrichment = !!item.enrichment;
+      const cardClass = hasEnrichment ? 'card card-enriched' : 'card';
 
       const searchText = (item.title + ' ' + item.summary + ' ' + item.analysis + ' ' + item.en_title + ' ' + item.tags.join(' ')).toLowerCase().replace(/"/g, '&quot;');
 
       html += `
-        <article class="card" id="card-${sec.id}-${itemIdx}" style="border-left-color:${borderColor}" data-section="${sec.id}" data-searchable="${searchText}">
+        <article class="${cardClass}" id="card-${sec.id}-${itemIdx}" style="border-left-color:${borderColor}" data-section="${sec.id}" data-searchable="${searchText}">
           <div class="card-top">
             <span class="card-idx" style="color:${idxColor};background:${idxBg}">${item.idx}</span>
             <span class="badge">${item.source}</span>
@@ -484,7 +484,7 @@ function renderContent() {
           <h2>${item.title}</h2>
           <div class="en-title">${item.en_title}（@${item.author}，${item.date}，♥${(item.likes||0).toLocaleString()} / 👁${(item.views||0).toLocaleString()}）</div>
           <div class="link"><a href="${item.link}" target="_blank">${item.link.replace('https://','')}</a></div>
-          ${mediaHtml}
+          ${hasEnrichment ? '' : mediaHtml}
           <div class="field"><span class="lab summary">摘要</span><p class="val">${item.summary}</p></div>
           <div class="expand-wrap">
             <div class="expand-btn" onclick="this.parentElement.classList.toggle('open')">
@@ -511,10 +511,9 @@ function renderContent() {
 function renderEnrichment(item) {
   if (!item.enrichment) return '';
   const e = item.enrichment;
-  let html = '<div class="field"><span class="lab analysis">游戏简介</span></div>';
-  html += '<div class="enrichment"><div class="enrich-grid">';
+  let html = '<div class="enrichment"><div class="enrich-grid">';
 
-  // Zone 1: Left - Media (video/image)
+  // Zone 1: Left - Media (video/image from tweet or Steam header)
   html += '<div class="enrich-media">';
   const mediaUrl = e.header_image || (item.media && item.media.url) || '';
   const videoUrl = item.media && item.media.video_url;
@@ -525,48 +524,35 @@ function renderEnrichment(item) {
   }
   html += '</div>';
 
-  // Zone 2: Right top - Data stats
+  // Zone 2: Right top - Data stats (PCU, Top X, 好评率, 销量/销售额)
   html += '<div class="enrich-data">';
   if (e.pcu) {
-    html += `<div class="enrich-stat"><span class="enrich-stat-label">PCU 峰值</span><span class="enrich-stat-value gold">${e.pcu}</span></div>`;
-  }
-  if (e.current_players) {
-    html += `<div class="enrich-stat"><span class="enrich-stat-label">当前在线</span><span class="enrich-stat-value">${e.current_players}</span></div>`;
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">PCU</span><span class="enrich-stat-value gold">${e.pcu}</span>`;
+    if (e.pcu_rank) html += `<span class="enrich-stat-sub">Top ${e.pcu_rank}</span>`;
+    html += `</div>`;
   }
   if (e.steam_rating && !e.steam_rating.includes('未发售')) {
     html += `<div class="enrich-stat"><span class="enrich-stat-label">好评率</span><span class="enrich-stat-value">${e.steam_rating}</span></div>`;
   }
   if (e.estimated_sales && e.estimated_sales !== '暂无官方数据') {
-    html += `<div class="enrich-stat"><span class="enrich-stat-label">销量</span><span class="enrich-stat-value">${e.estimated_sales}</span></div>`;
-  }
-  if (e.price) {
-    html += `<div class="enrich-stat"><span class="enrich-stat-label">价格</span><span class="enrich-stat-value">${e.price}</span></div>`;
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">销量 / 销售额</span><span class="enrich-stat-value">${e.estimated_sales}</span></div>`;
   }
   const hasData = e.pcu || (e.steam_rating && !e.steam_rating.includes('未发售')) || (e.estimated_sales && e.estimated_sales !== '暂无官方数据');
   if (!hasData) {
-    html += `<div style="display:flex;align-items:center;justify-content:center;height:100%;min-height:80px"><span style="font-size:13px;font-weight:600;color:var(--ink3);padding:12px 20px;border:1.5px dashed var(--border);border-radius:8px">${e.price === '暂未发售' || !e.price || e.price === '未公布' ? '暂未发售' : '无相关数据'}</span></div>`;
+    html += `<div class="enrich-nodata"><span>暂未发售</span></div>`;
   }
   html += '</div>';
 
-  // Zone 3: Right bottom - Tags
+  // Zone 3: Right bottom - Game TAGs only
   html += '<div class="enrich-tags-zone">';
   if (e.genre) e.genre.split('/').forEach(t => { html += `<span class="enrich-tag">${t.trim()}</span>`; });
   if (e.platforms) e.platforms.forEach(p => { html += `<span class="enrich-tag platform">${p}</span>`; });
-  // Links as tags
-  if (e.steam_url) html += `<a class="enrich-tag price" href="${e.steam_url}" target="_blank" style="text-decoration:none;cursor:pointer">Steam 页面</a>`;
-  if (e.youtube_video) html += `<a class="enrich-tag pcu" href="${e.youtube_video}" target="_blank" style="text-decoration:none;cursor:pointer">▶ YouTube</a>`;
   html += '</div>';
 
-  // Zone 4: Bottom - Description
+  // Zone 4: Bottom - 游戏简介 only
   html += '<div class="enrich-bottom">';
-  if (e.gi_summary) {
-    html += `<div class="enrich-gi-line">${e.gi_summary}</div>`;
-  }
   if (e.description) {
     html += `<div class="enrich-desc">${e.description}</div>`;
-  }
-  if (e.why_notable) {
-    html += `<div class="enrich-notable">${e.why_notable}</div>`;
   }
   html += '</div>';
 
