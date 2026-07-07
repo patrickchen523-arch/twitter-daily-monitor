@@ -413,6 +413,7 @@ async function loadDate(date) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     currentData = await res.json();
     renderTabs();
+    document.getElementById('digestV2').style.display = '';
     renderDigestV2();
     document.getElementById('content').innerHTML = '';
   } catch(e) {
