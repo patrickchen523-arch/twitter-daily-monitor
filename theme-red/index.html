@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="referrer" content="no-referrer">
+<title>热门游戏·AI资讯监控</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAFAF8;--card:#FFFFFF;--card-hover:#FFFDF5;
+  --border:#E8E4DC;--border-light:#F0ECE4;
+  --ink:#1A1A1A;--ink2:#4A4A4A;--ink3:#8A8A8A;
+  --gold:#C0392B;--gold-light:#FDEEEC;--gold-border:#F0B8B2;
+  --gold-gradient:linear-gradient(135deg, #C0392B, #E74C3C, #922B21);
+  --ai:#6C5CE7;--ai-light:#EEEBFB;--ai-border:#C8BFF5;
+  --red:#C0392B;--red-light:#FDEEEC;--red-border:#F0B8B2;
+  --green:#27AE60;--green-light:#E8F8F0;--green-border:#A3E4C1;
+  --blue:#2980B9;--blue-light:#EBF5FB;--blue-border:#A9D4F0;
+  --shadow:0 1px 3px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.03);
+  --shadow-hover:0 4px 16px rgba(0,0,0,.08),0 12px 32px rgba(0,0,0,.05);
+  --font-serif:'Noto Serif SC',serif;
+  --font-sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);line-height:1.7;-webkit-font-smoothing:antialiased;position:relative}
+body::before{content:"";position:fixed;inset:0;background:linear-gradient(180deg, rgba(196,155,44,.03) 0%, transparent 300px);pointer-events:none;z-index:-1}
+.wrap{max-width:62vw;margin:0 auto;padding:0 24px 80px}
+
+/* Top nav */
+.top-nav{display:flex;gap:0;border-bottom:2px solid var(--border);max-width:62vw;margin:0 auto;padding:0 24px}
+.top-nav-item{font-size:14px;font-weight:700;padding:14px 22px;cursor:pointer;color:var(--ink3);border-bottom:2.5px solid transparent;margin-bottom:-2px;transition:all .25s;text-decoration:none;letter-spacing:.5px;font-family:var(--font-serif)}
+.top-nav-item:hover{color:var(--ink)}
+.top-nav-item.active{color:var(--gold);border-bottom-color:var(--gold)}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.header-inner{max-width:62vw;margin:0 auto;padding:18px 24px 0}
+.masthead{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.masthead h1{font-size:20px;font-weight:900;color:var(--ink);letter-spacing:.5px;font-family:var(--font-serif)}
+.masthead h1 span{color:var(--gold)}
+.search{display:flex;align-items:center;gap:7px;border:1px solid var(--border);border-radius:20px;padding:7px 16px;background:var(--card);transition:all .25s;box-shadow:0 1px 4px rgba(0,0,0,.02)}
+.search:focus-within{border-color:var(--gold);box-shadow:0 0 0 3px rgba(196,155,44,.08)}
+.search svg{width:14px;height:14px;stroke:var(--ink3);fill:none;stroke-width:2}
+.search input{border:0;background:transparent;outline:0;font-size:13px;color:var(--ink);width:160px}
+.search input::placeholder{color:var(--ink3)}
+
+/* Category tabs */
+.cat-tabs{display:flex;gap:8px;padding-bottom:14px}
+.cat-tab{font-size:13px;font-weight:600;padding:7px 18px;border-radius:20px;cursor:pointer;border:1.5px solid var(--border);background:var(--card);color:var(--ink2);transition:all .25s;text-decoration:none}
+.cat-tab:hover{border-color:var(--gold-border);background:var(--gold-light);transform:translateY(-1px)}
+.cat-tab.on{background:var(--gold);border-color:var(--gold);color:#fff;box-shadow:0 3px 12px rgba(196,155,44,.25)}
+.cat-tab .count{font-size:11px;opacity:.7;margin-left:4px}
+
+/* Date strip */
+.datestrip{display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;margin:20px 0 24px;padding:4px 0 12px;scrollbar-width:thin}
+.datestrip::-webkit-scrollbar{height:4px}
+.datestrip::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.datestrip button{flex:0 0 auto;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 16px;cursor:pointer;color:var(--ink);font-size:12px;font-weight:600;transition:all .25s;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:60px;box-shadow:var(--shadow)}
+.datestrip button:hover{border-color:var(--gold-border);transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.datestrip button.on{background:var(--gold);border-color:var(--gold);color:#fff;box-shadow:0 4px 16px rgba(196,155,44,.3);transform:scale(1.05)}
+.datestrip button .weekday{font-size:10px;opacity:.6;font-weight:400}
+.datestrip button.nodata{opacity:.35;cursor:default;box-shadow:none}
+.datestrip button.nodata:hover{border-color:var(--border);transform:none;box-shadow:none}
+
+/* Cards */
+.card{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:14px;padding:24px 28px;margin:16px 0;transition:all .3s cubic-bezier(.4,0,.2,1);box-shadow:var(--shadow);opacity:0;animation:cardFadeIn .5s ease forwards}
+.card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);border-color:var(--gold-border)}
+.card-top{display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.card-idx{font-weight:800;font-size:11px;letter-spacing:.5px;padding:3px 8px;border-radius:4px}
+.badge{font-size:10.5px;font-weight:600;color:var(--ink2);background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:2px 8px}
+.card h2{font-size:17px;margin:8px 0;color:var(--ink);line-height:1.5;font-weight:700;font-family:var(--font-serif)}
+.card .en-title{font-size:11.5px;color:var(--ink3);font-style:italic;margin-bottom:12px;line-height:1.5}
+.card .link{font-size:11.5px;margin:8px 0 14px;word-break:break-all}
+.card .link a{color:var(--gold);text-decoration:none;font-weight:500;transition:color .2s}
+.card .link a:hover{color:#A07B1A;text-decoration:underline}
+.card .media{margin:16px 0;border-radius:12px;overflow:hidden;border:1px solid var(--border-light)}
+.card .media img{width:100%;max-height:360px;object-fit:cover;display:block}
+.card .media video{width:100%;max-height:360px;display:block}
+.card .field{margin:12px 0}
+.card .lab{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;padding:2px 6px;border-radius:3px}
+.card .lab.summary{color:var(--gold);background:var(--gold-light)}
+.card .lab.analysis{color:var(--blue);background:var(--blue-light)}
+.card .val{margin:4px 0 0;color:var(--ink2);font-size:14px;line-height:1.8;white-space:pre-line}
+
+/* Card entrance animation */
+@keyframes cardFadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.card:nth-child(1){animation-delay:.05s}
+.card:nth-child(2){animation-delay:.1s}
+.card:nth-child(3){animation-delay:.15s}
+.card:nth-child(4){animation-delay:.2s}
+.card:nth-child(5){animation-delay:.25s}
+.card:nth-child(6){animation-delay:.3s}
+
+/* Expand/collapse full tweet */
+.expand-wrap{margin:10px 0;text-align:center}
+.expand-btn,.collapse-btn{display:inline-flex;align-items:center;gap:4px;cursor:pointer;font-size:11px;color:var(--ink3);padding:5px 12px;border-radius:6px;transition:all .2s;border:1px solid transparent}
+.expand-btn:hover,.collapse-btn:hover{color:var(--gold);background:var(--gold-light);border-color:var(--gold-border)}
+.expand-arrow{font-size:9px}
+.expand-content{display:none;margin:10px 0;padding:14px 16px;background:var(--bg);border:1px solid var(--border-light);border-radius:8px;text-align:left;font-size:13px;color:var(--ink2);line-height:1.7;font-style:italic;white-space:pre-line}
+.collapse-btn{display:none}
+.expand-wrap.open .expand-btn{display:none}
+.expand-wrap.open .expand-content{display:block}
+.expand-wrap.open .collapse-btn{display:inline-flex}
+
+/* Section heading (hidden when tab filtering, shown for "all") */
+.sec-heading{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin:32px 0 12px;padding-bottom:10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;color:var(--ink3);font-family:var(--font-serif)}
+.sec-dot{width:8px;height:8px;border-radius:50%}
+
+/* Empty / loading */
+.loading{text-align:center;color:var(--ink3);padding:60px 0;font-size:14px}
+.no-results{text-align:center;color:var(--ink3);padding:40px 0;font-size:14px;display:none}
+
+/* Footer */
+footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padding:24px 0;border-top:1px solid var(--border)}
+
+/* Roblox viewer */
+.roblox-view{display:none;max-width:1200px;margin:0 auto;padding:24px 24px 80px}
+.roblox-view.active{display:block}
+.roblox-weeks{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.roblox-week-btn{font-size:13px;font-weight:600;padding:8px 16px;border-radius:8px;cursor:pointer;border:1.5px solid var(--border);background:var(--card);color:var(--ink2);transition:all .2s;box-shadow:var(--shadow)}
+.roblox-week-btn:hover{border-color:var(--gold-border);background:var(--gold-light)}
+.roblox-week-btn.on{background:var(--gold);border-color:var(--gold);color:#fff;box-shadow:0 2px 8px rgba(196,155,44,.2)}
+.roblox-iframe{width:100%;height:calc(100vh - 180px);border:1px solid var(--border);border-radius:12px;background:var(--card);box-shadow:var(--shadow)}
+
+/* Enrichment - Game Showcase (4-zone layout, integrated into card) */
+.card-enriched{padding:24px 32px}
+.enrichment{margin-top:16px;padding:0;border-radius:12px;overflow:hidden;border:1px solid var(--border-light);background:var(--bg)}
+.enrich-grid{display:grid;grid-template-columns:1.3fr 0.7fr;grid-template-rows:1fr auto;gap:0}
+.enrich-media{grid-column:1;grid-row:1/3;border-right:1px solid var(--border-light);position:relative;overflow:hidden;min-height:260px;background:#0a0a0a}
+.enrich-media img,.enrich-media video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.enrich-media:hover img{transform:scale(1.02)}
+.enrich-media a{display:block;width:100%;height:100%}
+.enrich-media .play-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.4) 100%);transition:background .3s}
+.enrich-media:hover .play-overlay{background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.5) 100%)}
+.enrich-media .play-overlay span{width:60px;height:60px;background:rgba(255,255,255,.95);color:#111;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;padding-left:4px;box-shadow:0 4px 20px rgba(0,0,0,.3);transition:transform .2s}
+.enrich-media:hover .play-overlay span{transform:scale(1.1)}
+.enrich-data{grid-column:2;grid-row:1;padding:22px 20px;display:flex;flex-direction:column;gap:14px;justify-content:center;background:linear-gradient(180deg,var(--card) 0%,var(--bg) 100%)}
+.enrich-stat{display:flex;flex-direction:column;gap:2px}
+.enrich-stat-label{font-size:9.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink3)}
+.enrich-stat-value{font-size:22px;font-weight:900;color:var(--ink);font-family:var(--font-serif);line-height:1.2}
+.enrich-stat-value.gold{color:var(--gold)}
+.enrich-nodata{display:flex;align-items:center;justify-content:center;height:100%;min-height:120px}
+.enrich-nodata span{font-size:28px;font-weight:800;color:var(--ink3);opacity:.6;letter-spacing:2px}
+.enrich-tags-zone{grid-column:2;grid-row:2;padding:14px 20px;display:flex;flex-wrap:wrap;gap:6px;align-content:flex-start;border-top:1px solid var(--border-light)}
+.enrich-tags-zone .enrich-tag{font-size:10.5px;font-weight:600;padding:4px 10px;border-radius:12px;background:var(--green-light);color:var(--green);border:1px solid var(--green-border);transition:transform .15s}
+.enrich-tags-zone .enrich-tag:hover{transform:translateY(-1px)}
+.enrich-tags-zone .enrich-tag.platform{background:var(--blue-light);color:var(--blue);border-color:var(--blue-border)}
+.enrich-bottom{grid-column:1/3;padding:22px 26px;border-top:1px solid var(--border-light);background:var(--card)}
+.enrich-desc{font-size:13px;color:var(--ink2);line-height:1.8;white-space:pre-line}
+.enrich-highlight{font-size:13px;color:var(--ink);font-weight:600;margin-top:14px;padding:10px 14px;background:linear-gradient(90deg,var(--gold-light) 0%,transparent 80%);border-left:3px solid var(--gold);border-radius:4px;line-height:1.6}
+.enrich-tags-zone .enrich-tag.steam-link{background:var(--gold-light);color:var(--gold);border-color:var(--gold-border);text-decoration:none;cursor:pointer}
+.enrich-stat-sub{font-size:11px;color:var(--ink3);font-weight:600;margin-top:2px}
+@media(max-width:900px){
+  .wrap,.top-nav,.header-inner{max-width:100%}
+}
+@media(max-width:700px){
+  .card-enriched{padding:16px}
+  .enrich-grid{grid-template-columns:1fr;grid-template-rows:auto}
+  .enrich-media{grid-column:1;grid-row:1;min-height:180px;border-right:none}
+  .enrich-data{grid-column:1;grid-row:2;flex-direction:row;flex-wrap:wrap;gap:16px;padding:16px 20px}
+  .enrich-tags-zone{grid-column:1;grid-row:3}
+  .enrich-bottom{grid-column:1;grid-row:4}
+}
+
+/* Digest */
+.digest{background:var(--card);border:1px solid var(--gold-border);border-radius:14px;padding:24px 28px;margin-bottom:28px;box-shadow:0 2px 12px rgba(196,155,44,.06)}
+.digest-title{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:8px;font-family:var(--font-serif)}
+.digest-title::before{content:"";display:inline-block;width:20px;height:2.5px;background:var(--gold-gradient);border-radius:2px}
+.digest-grid{display:flex;flex-direction:column;gap:14px}
+.digest-item{padding:16px 20px;border-radius:10px;border-left:3px solid var(--gold);background:var(--gold-light);cursor:pointer;transition:all .25s}
+.digest-item:hover{transform:translateX(3px);box-shadow:0 3px 12px rgba(196,155,44,.12)}
+.digest-item .di-label{font-size:11px;font-weight:700;letter-spacing:.5px;margin-bottom:8px;font-family:var(--font-serif)}
+.digest-item .di-lines{display:flex;flex-direction:column;gap:2px}
+.di-line{font-size:13px;color:var(--ink2);line-height:1.6;padding:6px 10px;border-radius:6px;cursor:pointer;transition:all .2s}
+.di-line:hover{background:rgba(196,155,44,.08)}
+
+/* Daily Summary */
+.daily-summary{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:14px;padding:28px 32px;margin-bottom:24px;box-shadow:var(--shadow)}
+.daily-summary-title{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:flex;align-items:center;gap:10px;font-family:var(--font-serif)}
+.daily-summary-title::before{content:"";display:inline-block;width:24px;height:3px;background:var(--gold-gradient);border-radius:2px}
+.daily-summary-body{font-size:14.5px;color:var(--ink2);line-height:1.9;white-space:pre-line}
+.daily-summary-body strong{color:var(--ink);font-weight:700;font-family:var(--font-serif)}
+
+/* === NEW: Digest V2 - Three Zone Layout === */
+
+/* Zone A: Lede */
+.lede-section{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:14px;padding:28px 32px;margin-bottom:28px;box-shadow:var(--shadow);animation:cardFadeIn .4s ease forwards;opacity:0}
+.lede-header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.lede-date{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-family:var(--font-serif)}
+.lede-date::before{content:"";display:inline-block;width:20px;height:2.5px;background:var(--gold-gradient);border-radius:2px;margin-right:6px}
+.lede-count{font-size:11px;color:var(--ink3);font-weight:600}
+.lede-body{font-size:17px;color:var(--ink);line-height:2;font-family:var(--font-serif);font-weight:600;white-space:pre-line}
+
+/* Zone B: Hero Cards */
+.hero-section{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:32px;animation:cardFadeIn .5s ease forwards;animation-delay:.1s;opacity:0}
+.hero-section.single{grid-template-columns:1fr}
+.hero-section.triple{grid-template-columns:1fr 1fr;grid-template-rows:auto auto}
+.hero-section.triple .hero-card:first-child{grid-column:1/3}
+.hero-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);transition:all .3s cubic-bezier(.4,0,.2,1);cursor:pointer}
+.hero-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px)}
+.hero-cover{position:relative;width:100%;height:220px;overflow:hidden;background:#111}
+.hero-cover img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.hero-card:hover .hero-cover img{transform:scale(1.04)}
+.hero-cover-gradient{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.7) 100%);pointer-events:none}
+.hero-cover-badge{position:absolute;top:14px;left:14px;font-size:10px;font-weight:700;letter-spacing:1px;padding:4px 10px;border-radius:6px;color:#fff;text-transform:uppercase}
+.hero-cover-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;background:rgba(255,255,255,.92);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;color:#111;padding-left:3px;box-shadow:0 4px 20px rgba(0,0,0,.3);transition:transform .2s}
+.hero-card:hover .hero-cover-play{transform:translate(-50%,-50%) scale(1.1)}
+.hero-body{padding:20px 22px 22px}
+.hero-hook{font-size:16px;font-weight:700;line-height:1.55;color:var(--ink);font-family:var(--font-serif);margin-bottom:10px}
+.hero-summary{font-size:13px;color:var(--ink2);line-height:1.7;margin-bottom:14px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hero-meta{display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--ink3)}
+.hero-meta-left{display:flex;align-items:center;gap:8px}
+.hero-meta-left img{width:20px;height:20px;border-radius:50%;object-fit:cover}
+.hero-meta-link{color:var(--gold);font-weight:600;font-size:12px;text-decoration:none;transition:color .2s}
+.hero-meta-link:hover{color:#A07B1A}
+
+/* Zone C: Compact Digest List */
+.digest-list-section{animation:cardFadeIn .5s ease forwards;animation-delay:.2s;opacity:0}
+.digest-list-title{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.digest-list-title::before{content:"";display:inline-block;width:16px;height:2px;background:var(--border);border-radius:2px}
+.digest-group{margin-bottom:16px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow)}
+.digest-group-header{display:flex;align-items:center;gap:8px;margin-bottom:10px;padding:0 2px}
+.digest-group-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.digest-group-label{font-size:11px;font-weight:700;letter-spacing:1px;color:var(--ink3);font-family:var(--font-serif)}
+.digest-row{display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:10px;cursor:pointer;transition:all .2s;border:1px solid transparent}
+.digest-row:hover{background:var(--gold-light);border-color:var(--gold-border);transform:translateX(3px)}
+.digest-thumb{width:44px;height:44px;border-radius:8px;object-fit:cover;flex-shrink:0;background:var(--bg);border:1px solid var(--border-light)}
+.digest-thumb-placeholder{width:44px;height:44px;border-radius:8px;flex-shrink:0;background:linear-gradient(135deg,var(--bg) 0%,var(--border-light) 100%);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--ink3);opacity:.4;border:1px solid var(--border-light)}
+.digest-row-content{flex:1;min-width:0}
+.digest-row-hook{font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.digest-row-sub{font-size:11px;color:var(--ink3);margin-top:2px}
+.digest-row-arrow{font-size:13px;color:var(--gold);flex-shrink:0;transition:transform .2s;opacity:.6}
+.digest-row:hover .digest-row-arrow{transform:translateX(3px);opacity:1}
+.digest-steam-link{color:var(--gold);font-weight:600;text-decoration:none;transition:color .2s}
+.digest-steam-link:hover{color:#A07B1A;text-decoration:underline}
+
+@media(max-width:700px){
+  .hero-section{grid-template-columns:1fr}
+  .hero-section.triple .hero-card:first-child{grid-column:1}
+  .hero-cover{height:180px}
+  .lede-body{font-size:15px}
+  .hero-hook{font-size:14px}
+}
+
+@media(max-width:600px){
+  .wrap{padding:0 16px 60px}
+  .header-inner{padding:14px 16px 0}
+  .masthead h1{font-size:17px}
+  .cat-tabs{overflow-x:auto;flex-wrap:nowrap;gap:6px;padding-bottom:10px}
+  .cat-tab{flex:0 0 auto;font-size:12px;padding:6px 14px;white-space:nowrap}
+  .search input{width:110px}
+  .card{padding:18px 20px;margin:12px 0}
+  .card h2{font-size:15px}
+  .top-nav-item{font-size:13px;padding:10px 14px}
+  .roblox-iframe{height:calc(100vh - 160px)}
+  .lede-section{padding:20px 22px}
+  .lede-body{font-size:14px}
+  .hero-body{padding:16px 18px}
+  .digest-row{padding:10px 12px}
+  .digest-thumb,.digest-thumb-placeholder{width:40px;height:40px}
+}
+</style>
+</head>
+<body>
+
+<div class="top-nav">
+  <a class="top-nav-item active" onclick="switchView('twitter')" id="navTwitter">Twitter 日报</a>
+  <a class="top-nav-item" onclick="switchView('roblox')" id="navRoblox">Roblox 监控周报</a>
+</div>
+
+<div id="twitterView">
+<header>
+  <div class="header-inner">
+    <div class="masthead">
+      <h1>热门游戏<span>·</span>AI资讯监控</h1>
+      <div class="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="searchInput" placeholder="搜索条目..." oninput="handleSearch()">
+      </div>
+    </div>
+    <div class="cat-tabs" id="catTabs"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="datestrip" id="dateStrip"></div>
+  <div id="digestV2"></div>
+  <div class="daily-summary" id="dailySummary" style="display:none"></div>
+  <div class="digest" id="digest" style="display:none"></div>
+  <div id="content"><div class="loading">加载中...</div></div>
+  <div class="no-results" id="noResults">未找到匹配的条目</div>
+</div>
+</div>
+
+<div id="robloxView" class="roblox-view">
+  <div class="roblox-weeks" id="robloxWeeks"></div>
+  <iframe id="robloxFrame" class="roblox-iframe" frameborder="0"></iframe>
+</div>
+
+<footer>热门游戏·AI资讯监控 · Game & AI News Monitor</footer>
+
+<script>
+const BASE = '../data/';
+let manifest = null;
+let currentDate = null;
+let currentData = null;
+let currentTab = 'digest'; // default to digest view
+let currentView = 'twitter';
+
+// Roblox weekly reports (add new ones here)
+const robloxReports = [
+  { label: '6.1 - 6.7', file: '../roblox/roblox-2026-06-01-to-06-07.html' },
+  { label: '6.15 - 6.21', file: '../roblox/roblox-2026-06-15-to-06-21.html' },
+  { label: '6.22 - 6.28', file: '../roblox/roblox-2026-06-22-to-06-28.html' },
+  { label: '6.29 - 7.5', file: '../roblox/roblox-2026-06-29-to-07-05.html' }
+];
+
+function switchView(view) {
+  currentView = view;
+  document.getElementById('navTwitter').classList.toggle('active', view === 'twitter');
+  document.getElementById('navRoblox').classList.toggle('active', view === 'roblox');
+  document.getElementById('twitterView').style.display = view === 'twitter' ? '' : 'none';
+  document.getElementById('robloxView').classList.toggle('active', view === 'roblox');
+  if (view === 'roblox') renderRoblox();
+}
+
+function renderRoblox() {
+  const container = document.getElementById('robloxWeeks');
+  container.innerHTML = robloxReports.map((r, i) =>
+    `<button class="roblox-week-btn ${i === robloxReports.length - 1 ? 'on' : ''}" onclick="loadRoblox(${i})">${r.label}</button>`
+  ).join('');
+  loadRoblox(robloxReports.length - 1);
+}
+
+function loadRoblox(idx) {
+  document.querySelectorAll('.roblox-week-btn').forEach((b, i) => b.classList.toggle('on', i === idx));
+  document.getElementById('robloxFrame').src = robloxReports[idx].file;
+}
+
+async function init() {
+  try {
+    const res = await fetch(BASE + 'manifest.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    manifest = await res.json();
+    renderDateStrip();
+    const latest = manifest.dates[manifest.dates.length - 1];
+    await loadDate(latest);
+  } catch(e) {
+    document.getElementById('content').innerHTML = `<div class="loading">无法加载数据<br><small style="color:var(--ink3)">${e.message}</small></div>`;
+  }
+}
+
+function renderDateStrip() {
+  const strip = document.getElementById('dateStrip');
+  strip.innerHTML = '';
+  const available = new Set(manifest.dates);
+  // Always show: today back to 14 days ago (or earliest data, whichever is further)
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  const earliest = manifest.dates.length ? new Date(manifest.dates[0]) : today;
+  const daysBack = Math.max(14, Math.ceil((today - earliest) / 86400000) + 3);
+  const start = new Date(today);
+  start.setDate(start.getDate() - daysBack);
+
+  const dayNames = ['周日','周一','周二','周三','周四','周五','周六'];
+  const dates = [];
+  for (let d = new Date(start); d <= today; d.setDate(d.getDate() + 1)) {
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    dates.push(`${yyyy}-${mm}-${dd}`);
+  }
+
+  dates.forEach(d => {
+    const btn = document.createElement('button');
+    const dt = new Date(d);
+    const mm = String(dt.getMonth() + 1).padStart(2, '0');
+    const dd = String(dt.getDate()).padStart(2, '0');
+    const wd = dayNames[dt.getDay()];
+    btn.innerHTML = `<span class="weekday">${wd}</span>${mm}-${dd}`;
+    btn.title = d;
+    btn.dataset.date = d;
+    const hasData = available.has(d);
+    if (!hasData) {
+      btn.classList.add('nodata');
+    } else {
+      btn.onclick = () => loadDate(d);
+    }
+    strip.appendChild(btn);
+  });
+
+  // Scroll to rightmost (today)
+  setTimeout(() => {
+    strip.scrollLeft = strip.scrollWidth;
+  }, 50);
+}
+
+async function loadDate(date) {
+  currentDate = date;
+  currentTab = 'digest';
+  document.querySelectorAll('.datestrip button').forEach(b => {
+    b.classList.toggle('on', b.dataset.date === date);
+  });
+  document.getElementById('content').innerHTML = '<div class="loading">加载中...</div>';
+
+  try {
+    const res = await fetch(BASE + date + '.json?v=' + Date.now());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    currentData = await res.json();
+    renderTabs();
+    document.getElementById('digestV2').style.display = '';
+    renderDigestV2();
+    document.getElementById('content').innerHTML = '';
+  } catch(e) {
+    document.getElementById('content').innerHTML = `<div class="loading">该日期暂无数据<br><small style="color:var(--ink3)">${e.message}</small></div>`;
+  }
+}
+
+function renderTabs() {
+  const tabs = document.getElementById('catTabs');
+  const total = currentData.sections.reduce((s, sec) => s + sec.items.length, 0);
+  let html = `<a class="cat-tab ${currentTab==='digest'?'on':''}" onclick="switchTab('digest')">日精选</a>`;
+  currentData.sections.forEach(sec => {
+    const active = currentTab === sec.id ? 'on' : '';
+    html += `<a class="cat-tab ${active}" onclick="switchTab('${sec.id}')">${sec.title}<span class="count">${sec.items.length}</span></a>`;
+  });
+  html += `<a class="cat-tab ${currentTab==='all'?'on':''}" onclick="switchTab('all')">全部<span class="count">${total}</span></a>`;
+  tabs.innerHTML = html;
+}
+
+function renderDailySummary() {
+  // Legacy: hidden in new design, kept for non-digest tabs fallback
+  const el = document.getElementById('dailySummary');
+  el.style.display = 'none';
+}
+
+function renderDigest() {
+  // Legacy digest hidden - replaced by digestV2
+  document.getElementById('digest').style.display = 'none';
+}
+
+// === NEW: Digest V2 (Three Zone Layout) ===
+
+function renderDigestV2() {
+  const container = document.getElementById('digestV2');
+  if (!currentData) { container.innerHTML = ''; return; }
+
+  let html = '';
+  html += renderLede();
+  html += renderHeroPicks();
+  html += renderDigestList();
+  container.innerHTML = html;
+}
+
+function renderLede() {
+  // Zone A: Lede
+  let ledeText = '';
+  if (currentData.lede) {
+    ledeText = currentData.lede;
+  } else if (currentData.daily_summary) {
+    // Fallback: take first paragraph of daily_summary
+    const firstPara = currentData.daily_summary.split('\n\n')[0];
+    ledeText = firstPara.replace(/\*\*(.+?)\*\*/g, '$1');
+  }
+  if (!ledeText) return '';
+
+  const totalCount = currentData.sections.reduce((s, sec) => s + sec.items.length, 0);
+  const rawCount = (currentData.meta && currentData.meta.raw_count) || '';
+  const countText = rawCount ? `· ${rawCount}条推文 · 精选${totalCount}条` : `· 精选${totalCount}条`;
+  return `<div class="lede-section">
+    <div class="lede-header">
+      <span class="lede-date">${currentDate}</span>
+      <span class="lede-count">${countText}</span>
+    </div>
+    <div class="lede-body">${ledeText.replace(/\n/g, '<br>')}</div>
+  </div>`;
+}
+
+function renderHeroPicks() {
+  // Zone B: Hero Cards
+  let picks = [];
+
+  if (currentData.editors_pick && currentData.editors_pick.length) {
+    // Use explicit editors_pick
+    currentData.editors_pick.forEach(pick => {
+      const section = currentData.sections.find(s => s.id === pick.section_id);
+      if (!section || !section.items[pick.item_index]) return;
+      const item = section.items[pick.item_index];
+      picks.push({ item, section, hook: pick.hook || item.recommendation || item.title });
+    });
+  } else {
+    // Fallback: rank all items by engagement, pick top 2 with media (prefer different sections)
+    const candidates = [];
+    currentData.sections.forEach(section => {
+      section.items.forEach(item => {
+        if (!item.media) return;
+        const score = (item.views || 0) + (item.likes || 0) * 100;
+        candidates.push({ item, section, score, hook: item.recommendation || item.title });
+      });
+    });
+    candidates.sort((a, b) => b.score - a.score);
+    const usedSections = new Set();
+    for (const c of candidates) {
+      if (picks.length >= 2) break;
+      // Prefer diversity: skip same section if we have other options
+      if (usedSections.has(c.section.id) && picks.length < 2 && candidates.filter(x => !usedSections.has(x.section.id)).length > 0) continue;
+      picks.push(c);
+      usedSections.add(c.section.id);
+    }
+    // If diversity filter was too strict, just take top 2
+    if (picks.length < 2) {
+      picks = candidates.slice(0, 2);
+    }
+  }
+
+  if (picks.length === 0) return '';
+
+  const gridClass = picks.length === 1 ? 'hero-section single' :
+                    picks.length === 3 ? 'hero-section triple' : 'hero-section';
+
+  let html = `<div class="${gridClass}">`;
+  picks.forEach(({ item, section, hook }) => {
+    const coverUrl = (item.media && item.media.url) || (item.enrichment && item.enrichment.header_image) || '';
+    const isVideo = item.media && item.media.type === 'video';
+    const avatarUrl = item.media && item.media.url && item.media.url.includes('twimg.com') ? '' : '';
+    const summaryTrunc = (item.summary || '').substring(0, 80) + (item.summary && item.summary.length > 80 ? '...' : '');
+    const likesStr = (item.likes || 0) >= 1000 ? ((item.likes / 1000).toFixed(1) + 'K') : (item.likes || 0);
+    const viewsStr = (item.views || 0) >= 1000 ? ((item.views / 1000).toFixed(0) + 'K') : (item.views || 0);
+    const sectionIdx = currentData.sections.indexOf(section);
+    const itemIdx = section.items.indexOf(item);
+
+    html += `<div class="hero-card" onclick="jumpToCard('${section.id}', ${itemIdx})">
+      <div class="hero-cover">
+        ${coverUrl ? `<img src="${coverUrl}" alt="" referrerpolicy="no-referrer">` : ''}
+        <div class="hero-cover-gradient"></div>
+        <span class="hero-cover-badge" style="background:${section.color}">${section.title}</span>
+        ${isVideo ? '<span class="hero-cover-play">&#9654;</span>' : ''}
+      </div>
+      <div class="hero-body">
+        <div class="hero-hook">${hook}</div>
+        <div class="hero-summary">${summaryTrunc}</div>
+        <div class="hero-meta">
+          <span class="hero-meta-left">@${item.author} · ♥${likesStr} · 👁${viewsStr}</span>
+          <a class="hero-meta-link" href="${item.link}" target="_blank" onclick="event.stopPropagation()">查看原文 →</a>
+        </div>
+      </div>
+    </div>`;
+  });
+  html += '</div>';
+  return html;
+}
+
+function renderDigestList() {
+  // Zone C: Compact list grouped by section
+  const totalCount = currentData.sections.reduce((s, sec) => s + sec.items.length, 0);
+  let html = `<div class="digest-list-section">
+    <div class="digest-list-title">全部精选 · ${totalCount} 条</div>`;
+
+  currentData.sections.forEach(section => {
+    html += `<div class="digest-group">
+      <div class="digest-group-header">
+        <span class="digest-group-dot" style="background:${section.color}"></span>
+        <span class="digest-group-label">${section.title} · ${section.items.length}</span>
+      </div>`;
+
+    section.items.forEach((item, idx) => {
+      const hookText = item.recommendation || item.title;
+      const thumbUrl = (item.media && item.media.url) || (item.enrichment && item.enrichment.header_image) || '';
+      const likesStr = (item.likes || 0) >= 1000 ? ((item.likes / 1000).toFixed(1) + 'K') : (item.likes || 0);
+      const initial = section.title.charAt(0);
+      const steamUrl = item.enrichment && item.enrichment.steam_url;
+
+      html += `<div class="digest-row" onclick="jumpToCard('${section.id}', ${idx})">
+        ${thumbUrl
+          ? `<img class="digest-thumb" src="${thumbUrl}" alt="" referrerpolicy="no-referrer">`
+          : `<div class="digest-thumb-placeholder">${initial}</div>`}
+        <div class="digest-row-content">
+          <div class="digest-row-hook">${hookText}</div>
+          <div class="digest-row-sub">@${item.author} · ♥${likesStr}${steamUrl ? ` · <a class="digest-steam-link" href="${steamUrl}" target="_blank" onclick="event.stopPropagation()">Steam ↗</a>` : ''}</div>
+        </div>
+        <span class="digest-row-arrow">&#8250;</span>
+      </div>`;
+    });
+
+    html += '</div>';
+  });
+
+  html += '</div>';
+  return html;
+}
+
+function switchTab(tab, scrollToId) {
+  currentTab = tab;
+  renderTabs();
+  if (tab === 'digest') {
+    document.getElementById('digestV2').style.display = '';
+    document.getElementById('dailySummary').style.display = 'none';
+    document.getElementById('digest').style.display = 'none';
+    document.getElementById('content').innerHTML = '';
+    renderDigestV2();
+  } else {
+    document.getElementById('digestV2').style.display = 'none';
+    document.getElementById('dailySummary').style.display = 'none';
+    document.getElementById('digest').style.display = 'none';
+    renderContent();
+    if (scrollToId) {
+      setTimeout(() => {
+        const el = document.getElementById(scrollToId);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 50);
+    }
+  }
+}
+
+function jumpToCard(sectionId, itemIndex) {
+  const cardId = `card-${sectionId}-${itemIndex}`;
+  switchTab(sectionId, cardId);
+}
+
+function renderContent() {
+  const container = document.getElementById('content');
+  let html = '';
+
+  const sections = currentTab === 'all'
+    ? currentData.sections
+    : currentData.sections.filter(s => s.id === currentTab);
+
+  sections.forEach(sec => {
+    if (currentTab === 'all') {
+      html += `<div class="sec-heading"><span class="sec-dot" style="background:${sec.color}"></span>${sec.title} · ${sec.title_en}（${sec.items.length}）</div>`;
+    }
+
+    sec.items.forEach((item, itemIdx) => {
+      const borderColor = sec.color;
+      const idxColor = sec.color;
+      const idxBg = sec.color + '12';
+      let mediaHtml = '';
+      if (item.media) {
+        if (item.media.type === 'video') {
+          const mediaUrl = item.media.url;
+          const videoLink = item.media.video_url || item.link;
+          if (mediaUrl && (mediaUrl.endsWith('.mp4') || mediaUrl.includes('.mp4?'))) {
+            // Direct .mp4 link - embed as playable video
+            mediaHtml = `<div class="media"><video src="${mediaUrl}" controls muted playsinline preload="metadata" referrerpolicy="no-referrer"></video></div>`;
+          } else if (mediaUrl && mediaUrl.includes('twimg.com')) {
+            // Thumbnail only - show with play overlay, click opens video page
+            mediaHtml = `<div class="media"><a href="${videoLink}" target="_blank" style="display:block;position:relative">
+              <img src="${mediaUrl}" alt="" loading="lazy" referrerpolicy="no-referrer" style="width:100%;display:block">
+              <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;background:rgba(0,0,0,.7);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;padding-left:3px">&#9654;</span>
+            </a></div>`;
+          } else {
+            mediaHtml = `<div class="media"><video src="${mediaUrl}" controls muted playsinline preload="metadata" referrerpolicy="no-referrer"></video></div>`;
+          }
+        } else {
+          mediaHtml = `<div class="media"><img src="${item.media.url}" alt="" loading="lazy" referrerpolicy="no-referrer"></div>`;
+        }
+      }
+      const tagsHtml = item.tags.map(t => `<span class="badge">${t}</span>`).join('');
+      const hasEnrichment = !!item.enrichment;
+      const cardClass = hasEnrichment ? 'card card-enriched' : 'card';
+
+      const searchText = (item.title + ' ' + item.summary + ' ' + item.analysis + ' ' + item.en_title + ' ' + item.tags.join(' ')).toLowerCase().replace(/"/g, '&quot;');
+
+      html += `
+        <article class="${cardClass}" id="card-${sec.id}-${itemIdx}" style="border-left-color:${borderColor}" data-section="${sec.id}" data-searchable="${searchText}">
+          <div class="card-top">
+            <span class="card-idx" style="color:${idxColor};background:${idxBg}">${item.idx}</span>
+            <span class="badge">${item.source}</span>
+            ${tagsHtml}
+          </div>
+          <h2>${item.title}</h2>
+          <div class="en-title">${item.en_title}（@${item.author}，${item.date}，♥${(item.likes||0).toLocaleString()} / 👁${(item.views||0).toLocaleString()}）</div>
+          <div class="link"><a href="${item.link}" target="_blank">${item.link.replace('https://','')}</a></div>
+          ${hasEnrichment ? '' : mediaHtml}
+          <div class="field"><span class="lab summary">摘要</span><p class="val">${item.summary}</p></div>
+          <div class="expand-wrap">
+            <div class="expand-btn" onclick="this.parentElement.classList.toggle('open')">
+              <span class="expand-arrow">▼</span>
+              <span class="expand-text">展开完整推文</span>
+            </div>
+            <div class="expand-content"><p>${item.full_text || item.en_title}</p></div>
+            <div class="collapse-btn" onclick="this.parentElement.classList.toggle('open')">
+              <span class="expand-arrow">▲</span>
+              <span class="expand-text">收起完整推文</span>
+            </div>
+          </div>
+          ${sec.id !== 'indie' ? `<div class="field"><span class="lab analysis">观点解读</span><p class="val">${item.analysis}</p></div>` : ''}
+          ${renderEnrichment(item)}
+        </article>`;
+    });
+  });
+
+  if (!html) html = '<div class="loading">该分类下暂无条目</div>';
+  container.innerHTML = html;
+  document.getElementById('noResults').style.display = 'none';
+}
+
+function renderEnrichment(item) {
+  if (!item.enrichment) return '';
+  const e = item.enrichment;
+  let html = '<div class="enrichment"><div class="enrich-grid">';
+
+  // Zone 1: Left - Media (video/image from tweet or Steam header)
+  html += '<div class="enrich-media">';
+  const mediaUrl = e.header_image || (item.media && item.media.url) || '';
+  const videoUrl = item.media && item.media.video_url;
+  if (videoUrl && mediaUrl) {
+    html += `<a href="${videoUrl}" target="_blank"><img src="${mediaUrl}" alt="" referrerpolicy="no-referrer"><div class="play-overlay"><span>&#9654;</span></div></a>`;
+  } else if (mediaUrl) {
+    html += `<a href="${e.steam_url || '#'}" target="_blank"><img src="${mediaUrl}" alt="" referrerpolicy="no-referrer"></a>`;
+  }
+  html += '</div>';
+
+  // Zone 2: Right top - Data stats OR release info for unreleased games
+  html += '<div class="enrich-data">';
+  if (e.pcu) {
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">PCU</span><span class="enrich-stat-value gold">${e.pcu}</span>`;
+    if (e.pcu_rank) html += `<span class="enrich-stat-sub">Top ${e.pcu_rank}</span>`;
+    html += `</div>`;
+  }
+  if (e.steam_rating && !e.steam_rating.includes('未发售')) {
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">好评率</span><span class="enrich-stat-value">${e.steam_rating}</span></div>`;
+  }
+  if (e.estimated_sales && e.estimated_sales !== '暂无官方数据') {
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">销量 / 销售额</span><span class="enrich-stat-value">${e.estimated_sales}</span></div>`;
+  }
+  const hasLiveData = e.pcu || (e.steam_rating && !e.steam_rating.includes('未发售')) || (e.estimated_sales && e.estimated_sales !== '暂无官方数据');
+  if (!hasLiveData) {
+    // Unreleased game: show release info instead
+    if (e.release_date) {
+      html += `<div class="enrich-stat"><span class="enrich-stat-label">预计发售</span><span class="enrich-stat-value">${e.release_date}</span></div>`;
+    }
+    if (e.price && e.price !== '未公布') {
+      html += `<div class="enrich-stat"><span class="enrich-stat-label">价格</span><span class="enrich-stat-value">${e.price}</span></div>`;
+    }
+    if (e.positioning) {
+      html += `<div class="enrich-stat"><span class="enrich-stat-label">一句话定位</span><span class="enrich-stat-value" style="font-size:14px;font-weight:600;line-height:1.5">${e.positioning}</span></div>`;
+    }
+    if (!e.release_date && !e.positioning) {
+      html += `<div class="enrich-nodata"><span>暂未发售</span></div>`;
+    }
+  }
+  html += '</div>';
+
+  // Zone 3: Right bottom - Tags + Steam link
+  html += '<div class="enrich-tags-zone">';
+  if (e.genre) e.genre.split('/').forEach(t => { html += `<span class="enrich-tag">${t.trim()}</span>`; });
+  if (e.platforms) e.platforms.forEach(p => { html += `<span class="enrich-tag platform">${p}</span>`; });
+  if (e.steam_url) html += `<a class="enrich-tag steam-link" href="${e.steam_url}" target="_blank">Steam 页面</a>`;
+  html += '</div>';
+
+  // Zone 4: Bottom - 游戏简介 + 关注理由
+  html += '<div class="enrich-bottom">';
+  if (e.description) {
+    html += `<div class="enrich-desc">${e.description}</div>`;
+  }
+  if (e.why_notable) {
+    html += `<div class="enrich-highlight">关注理由：${e.why_notable}</div>`;
+  }
+  html += '</div>';
+
+  html += '</div></div>';
+  return html;
+}
+
+function handleSearch() {
+  const query = document.getElementById('searchInput').value.trim().toLowerCase();
+
+  if (!query) {
+    // Clear search: if we switched to 'all' for search, stay there but show all
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(c => c.style.display = '');
+    document.querySelectorAll('.sec-heading').forEach(s => s.style.display = '');
+    document.getElementById('noResults').style.display = 'none';
+    return;
+  }
+
+  // Switch to 'all' tab to show cards for searching
+  if (currentTab === 'digest') {
+    switchTab('all');
+  }
+
+  const cards = document.querySelectorAll('.card');
+  let visibleCount = 0;
+
+  cards.forEach(c => {
+    const match = (c.dataset.searchable || '').includes(query);
+    c.style.display = match ? '' : 'none';
+    if (match) visibleCount++;
+  });
+
+  document.querySelectorAll('.sec-heading').forEach(heading => {
+    let next = heading.nextElementSibling;
+    let hasVisible = false;
+    while (next && !next.classList.contains('sec-heading')) {
+      if (next.classList.contains('card') && next.style.display !== 'none') { hasVisible = true; break; }
+      next = next.nextElementSibling;
+    }
+    heading.style.display = hasVisible ? '' : 'none';
+  });
+
+  document.getElementById('noResults').style.display = visibleCount === 0 ? 'block' : 'none';
+}
+
+init();
+</script>
+</body>
+</html>
