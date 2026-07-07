@@ -1,0 +1,284 @@
+{
+  "date": "2026-07-06",
+  "meta": {
+    "raw_count": 190,
+    "filtered_count": 158,
+    "selected_count": 7,
+    "crawl_time": "2026-07-06 18:00"
+  },
+  "lede": "一个动画看清AI市场真实格局：Anthropic正在碾压所有人\nSagas of Lumin：骑着龙和飞艇空中格斗，跳下龙背切换地面战——2127赞",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "一个动画看清AI市场真实格局：Anthropic正在碾压所有人"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 1,
+      "hook": "Sagas of Lumin：骑着龙和飞艇空中格斗，跳下龙背切换地面战——2127赞"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Vercel AI Gateway token消费竞赛动画：Anthropic主导，开源模型崛起\nTesla Optimus V3 手部接近人类灵活度，“不像机器人而像超级英雄”"
+    },
+    {
+      "id": "industry",
+      "text": "Sonic 动画短片首曝（Geoff Keighley）\nStardew Valley 3D/VR 移植项目曝光，开发者自称“我疯了”"
+    },
+    {
+      "id": "indie",
+      "text": "HUNGER：拿破仑时代瘩疫背景提取RPG，Tech Test已开放\nSagas of Lumin：独立开发骑龙空战+蒸汽朋克动作"
+    },
+    {
+      "id": "tools",
+      "text": "GameBlocks 日本 Codex Studio 发布完整教程，AI 3D游戏开发工具链成熟"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Guillermo Rauch · Vercel",
+          "tags": [
+            "AI市场",
+            "Token消费",
+            "Anthropic",
+            "开源"
+          ],
+          "title": "Vercel AI Gateway Token 消费竞赛动画：Anthropic 主导，开源模型强势崛起",
+          "en_title": "I animated the token spend race, from ~lifetime Vercel AI Gateway usage, which aggregates trillions of tokens from millions of developers a month.",
+          "full_text": "🏁 I animated the token 💵 spend race, from ~lifetime Vercel AI Gateway usage, which aggregates trillions of tokens from millions of developers a month.\n\nFascinating to see the fluctuations among the labs, Anthropic's dominance, and the rise of open weight AI.",
+          "author": "rauchg",
+          "date": "2026-07-05",
+          "likes": 1278,
+          "views": 165103,
+          "link": "https://x.com/rauchg/status/2073563586270781674",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073559785031831552/img/3DYX6FKVOh9CrK_h.jpg",
+            "video_url": "https://x.com/rauchg/status/2073563586270781674/video/1"
+          },
+          "summary": "Vercel CEO 将 AI Gateway 的 Token 消费数据做成动画竞赛：聚合了数百万开发者每月数万亿 Token 的使用情况。Anthropic 占据主导地位，开源模型在快速崛起。",
+          "analysis": "这是开发者AI使用市场的真实数据切片。Anthropic的主导地位说明 Claude 在编程场景的实际采用率最高，而开源模型的崛起则表明成本敏感型场景在快速转向开源。游戏团队选择AI工具时可参考这个趋势。",
+          "recommendation": "一个动画看清AI市场真实格局：Anthropic正在碾压所有人"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Coin Bureau · 硬件",
+          "tags": [
+            "Tesla",
+            "Optimus",
+            "机器人",
+            "物理AI"
+          ],
+          "title": "Tesla Optimus V3 手部接近人类灵活度：“不像机器人，像超级英雄”",
+          "en_title": "TESLA'S OPTIMUS HAND IS GETTING CLOSE TO HUMAN-LIKE MOVEMENT. Engineers say it won't even look like a robot.",
+          "full_text": "🤖 TESLA'S OPTIMUS HAND IS GETTING CLOSE TO HUMAN-LIKE MOVEMENT\n\nLeaked footage shows the next-generation Optimus V3 hand performing precise human-like finger movements.\n\nEngineers say the Gen 3 robot is approaching human form and function, \"It won't even look like a robot. It will look like a human in a superhero suit.\"",
+          "author": "coinbureau",
+          "date": "2026-07-04",
+          "likes": 629,
+          "views": 117316,
+          "link": "https://x.com/coinbureau/status/2073195089808048548",
+          "media": null,
+          "summary": "泄露画面显示 Tesla Optimus V3 手部已能执行精确的类人手指动作。工程师称 Gen 3 “不像机器人，更像穿着超级英雄套装的人类”。",
+          "analysis": "人形机器人手部精细操作能力的突破对游戏行业有远期影响：当机器人能操控手柄、键盘、触屏时，游戏测试自动化、物理外设测试等场景都可能被重塑。",
+          "recommendation": "机器人手指灵活到能穿针引线了——\"不像机器人，像超级英雄\""
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Geoff Keighley",
+          "tags": [
+            "Sonic",
+            "动画",
+            "SEGA"
+          ],
+          "title": "Sonic 动画短片首曝：Geoff Keighley 发布第一手画面",
+          "en_title": "First look at a Sonic the Hedgehog anime short.",
+          "full_text": "First look at a Sonic the Hedgehog anime short.",
+          "author": "geoffkeighley",
+          "date": "2026-07-04",
+          "likes": 3703,
+          "views": 205459,
+          "link": "https://x.com/geoffkeighley/status/2073443802186998093",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMV-5saXgAAEi4m.jpg"
+          },
+          "summary": "Geoff Keighley 发布 Sonic 动画短片的首张画面。SEGA 继续扩展 Sonic IP 的多媒体布局。",
+          "analysis": "Sonic 动画短片是 SEGA IP多元化战略的延续。在电影系列大获成功后，动画短片可能是为新游戏预热或测试角色设计。对独游的启示：IP多媒体联动在建立品牌认知上的价值。",
+          "recommendation": "索尼克动画短片第一手画面泄露，Geoff Keighley亲自放料"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "GingasVR · 开发者",
+          "tags": [
+            "Stardew Valley",
+            "VR",
+            "3D移植"
+          ],
+          "title": "Stardew Valley 3D/VR 移植项目曝光，开发者自称“我疯了”",
+          "en_title": "I've been working on something for Awhile, It's a 3D/VR port of Stardew Valley, yes I am Insane.",
+          "full_text": "I've been working on something for Awhile, It's a 3D/VR port of Stardew Valley, yes I am Insane. #vr #stardewvalley #gaming",
+          "author": "gingasvr",
+          "date": "2026-07-04",
+          "likes": 4414,
+          "views": 209467,
+          "link": "https://x.com/gingasvr/status/2073501755820712361",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073501547716100096/img/BYa4lspyjxmgHd40.jpg",
+            "video_url": "https://x.com/gingasvr/status/2073501755820712361/video/1"
+          },
+          "summary": "开发者曝光了一个非官方的 Stardew Valley 3D/VR 移植项目。209K 浏览、4414 赞，社区反应热烈。",
+          "analysis": "这个项目说明两件事：1）Stardew Valley 的社区热度仍然极高；2）VR 版经典游戏有强烈市场需求。虽然可能涉及IP问题，但作为技术演示证明了2D经典转3D/VR的可行性。",
+          "recommendation": "有人把星露谷做成了3D+VR版本，开发者自己都震惊了"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Ninjago · 推荐",
+          "tags": [
+            "提取RPG",
+            "拿破仑时代",
+            "PvPvE",
+            "独立开发"
+          ],
+          "title": "HUNGER：独立开发拿破仑时代瘟疫背景提取RPG，Tech Test已开放",
+          "en_title": "HUNGER Tech Test is now live. A multiplayer extraction RPG set in plague-ravaged Napoleonic Europe.",
+          "full_text": "HUNGER Tech Test is now live\n\nA multiplayer extraction RPG set in plague-ravaged Napoleonic Europe.\n\nFeatures: \n• Solo, Duo & Trio co-op\n• FPS-melee combat\n• Permanent progression\n• Questing, crafting & player-driven marketplace\n• Dungeons, bosses & endgame PvP/PvE",
+          "author": "Ninjago9101",
+          "date": "2026-07-04",
+          "likes": 1254,
+          "views": 145789,
+          "link": "https://x.com/Ninjago9101/status/2073508676024111271",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073508375644807168/img/yqfNU9wFKNR1RxJR.jpg",
+            "video_url": "https://x.com/Ninjago9101/status/2073508676024111271/video/1"
+          },
+          "summary": "HUNGER Tech Test 已开放：拿破仑时代瘟疫背景的多人提取 RPG。支持单人/双人/三人合作，FPS+近战混合战斗，有永久进度、制作、玩家市场。",
+          "analysis": "",
+          "enrichment": {
+            "game_name": "HUNGER",
+            "genre": "提取RPG / FPS+近战 / PvPvE / 合作",
+            "developer": "独立开发",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "steam_rating": "未发售/测试中",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "HUNGER 是一款以拿破仑时代瘟疫欧洲为背景的多人提取 RPG，Tech Test 已开放。\n\n玩家可选择单人、双人或三人合作，通过 FPS+近战混合战斗在危险区域进行提取任务。游戏特色包括永久角色进度、任务与制作系统、玩家驱动的市场经济、副本与 Boss 战，以及终局 PvP/PvE 内容。\n\nSteam 状态：Coming Soon（Tech Test 进行中）\n信源：开发者 @Ninjago9101 推文",
+            "release_date": "Coming Soon（Tech Test 中）",
+            "positioning": "拿破仑+瘟疫背景的提取 RPG",
+            "why_notable": "极度差异化的历史题材做提取射击，Tech Test 已可玩验证核心循环"
+          },
+          "recommendation": "拿破仑时代+瘟疫欧洲做提取RPG——最离谱的题材组合居然成了"
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Indie Game Joe · 推荐",
+          "tags": [
+            "骑龙",
+            "空战",
+            "蒸汽朋克",
+            "独立开发"
+          ],
+          "title": "Sagas of Lumin：独立开发骑龙空战+蒸汽朋克火器+魔法动作",
+          "en_title": "This indie studio is making a game where you master riding a dragon. Real-time dogfights with dragons and airships.",
+          "full_text": "This indie studio is making a game where you master riding a dragon. This looks INSANE!\n\n- Real-time dogfights with dragons and airships\n- Seamless air to ground combat switching\n- Swords, steampunk firearms and magic\n\nIt's called Sagas of Lumin. Would you play this?",
+          "author": "IndieGameJoe",
+          "date": "2026-07-04",
+          "likes": 2127,
+          "views": 138088,
+          "link": "https://x.com/IndieGameJoe/status/2073476513060569412",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073473514384896000/img/EYC_HbTyqOl26-3U.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2073476513060569412/video/1"
+          },
+          "summary": "独立工作室开发的骑龙空战动作游戏：实时龙与飞船的空中格斗，无缝空地切换，剑术+蒸汽朋克火器+魔法三系战斗。",
+          "analysis": "",
+          "enrichment": {
+            "game_name": "Sagas of Lumin",
+            "genre": "骑龙空战 / 动作 / 蒸汽朋克",
+            "developer": "独立工作室",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "Sagas of Lumin 是一款以骑龙空战为核心的动作游戏，由独立工作室开发。\n\n玩家驾驭龙进行实时空中格斗，对抗其他龙和飞船。支持无缝空地战斗切换——从龙背跳下即可进入地面战斗。战斗方式融合剑术、蒸汽朋克火器和魔法三大体系。\n\nSteam 状态：预计 2026 年 Q3 推出\n信源：@IndieGameJoe 推文介绍",
+            "release_date": "2026 Q3",
+            "positioning": "骑龙实时空战 + 无缝空地切换",
+            "why_notable": "骑龙空战品类极稀缺，空地无缝切换设计新颖，推文 2127 赞反响热烈"
+          },
+          "recommendation": "骑着龙和飞艇空中格斗，跳下龙背切换地面战——2127赞"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Codex Studio · 日本教程",
+          "tags": [
+            "GameBlocks",
+            "Codex",
+            "AI游戏开发",
+            "three.js"
+          ],
+          "title": "GameBlocks 日本 Codex Studio 发布完整教程：AI 3D 游戏开发工具链成熟",
+          "en_title": "Codexは「3Dゲーム開発の部品セット」を渡せるツール GameBlocks 教科書記事",
+          "full_text": "【速報】\nCodexに「3Dゲーム開発の部品セット」を渡せるツールが公開されて話題😳\nGameBlocks！\nThree.jsベースの完全オープンソース。\n3Dゲームの空間ロジックを“規格準拠の部品”として提供。Codexが既知の正しいパターンからゲームを組み立てる。",
+          "author": "Codestudiopjbk",
+          "date": "2026-07-04",
+          "likes": 1111,
+          "views": 125625,
+          "link": "https://x.com/Codestudiopjbk/status/2073217733467275605",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072381743903264768/img/t8K6zhSVRMutyeiH.jpg",
+            "video_url": "https://x.com/spt4d/status/2072382087638954079/video/1"
+          },
+          "summary": "日本 Codex Studio 发布 GameBlocks 完整教程：详解如何用 Codex + GameBlocks 让 AI 自动组装 3D 游戏。包含基础设置、工作流、实战案例。",
+          "analysis": "日本开发者社区开始产出 GameBlocks 的教学内容，说明这个工具已进入“早期采纳→教育普及”阶段。AI+3D游戏开发的工具链正在成熟。",
+          "recommendation": "从零到完整3D游戏只需AI+积木库：日本团队发布全流程教程"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Vercel AI Gateway 数据揭示：Anthropic 主导开发者AI市场，开源模型起势**\nVercel CEO 将数百万开发者的 Token 消费数据做成动画竞赛。Anthropic（Claude）明确占据主导地位，但开源模型的份额在快速增长。同时 Tesla Optimus V3 手部的精细操作能力接近人类，物理AI迎来突破。\n\n**Sonic 动画首曝 + Stardew Valley 3D/VR 移植：经典IP的新可能**\nGeoff Keighley 发布 Sonic 动画短片首张画面，SEGA 继续 IP 多媒体扩展。另一边，有开发者在做 Stardew Valley 的非官方 3D/VR 移植，209K 浏览证明社区对“经典游戏 VR 化”的渴望。\n\n**拿破仑瘟疫提取射击 + 骑龙空战：两款题材极度差异化的独游**\nHUNGER 用“拿破仑时代+瘟疫”做提取射击，Tech Test 已可玩。Sagas of Lumin 则是极度稀缺的骑龙空战品类，支持空地无缝切换。两款都以独特题材在拥挤赛道中找到了差异化。\n\n**GameBlocks 日本教程发布：AI 3D游戏开发工具链进入“教育普及”阶段**\n日本 Codex Studio 发布了 GameBlocks 的完整教程，标志着这个工具从R&D阶段进入了社区教育普及。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
