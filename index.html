@@ -515,6 +515,29 @@ function findPick(sectionId, fallbackIndex) {
   return { section, item, itemIndex: section.items.indexOf(item), hook: (explicit && explicit.hook) || item.recommendation || item.title };
 }
 
+function findExplicitPick(filterFn) {
+  if (!currentData.editors_pick) return null;
+  for (const pick of currentData.editors_pick) {
+    const section = getSectionById(pick.section_id);
+    const item = section && section.items[pick.item_index];
+    if (!item) continue;
+    const result = { section, item, itemIndex: pick.item_index, hook: pick.hook || item.recommendation || item.title };
+    if (!filterFn || filterFn(result)) return result;
+  }
+  return null;
+}
+
+function findEditorialHeroPicks() {
+  const firstSectionId = (currentData.sections[0] || {}).id;
+  const aiPick = findExplicitPick(pick => pick.section.id === 'ai') || findPick('ai', 0) || findPick(firstSectionId, 0);
+  const aiKey = aiPick ? `${aiPick.section.id}:${aiPick.itemIndex}` : '';
+  const secondaryPick = findExplicitPick(pick => `${pick.section.id}:${pick.itemIndex}` !== aiKey)
+    || findPick('indie', 0)
+    || findPick('industry', 0)
+    || findPick(((currentData.sections[1] || currentData.sections[0]) || {}).id, 0);
+  return { aiPick, gamePick: secondaryPick };
+}
+
 function editorialCopy(pick, role) {
   const is0706 = currentData.date === '2026-07-06';
   if (is0706 && role === 'ai') {
@@ -568,8 +591,7 @@ function getEditorialSignals(heroPicks) {
 }
 
 function renderEditorialDigest() {
-  const aiPick = findPick('ai', 0) || findPick((currentData.sections[0] || {}).id, 0);
-  const gamePick = findPick('indie', 0) || findPick((currentData.sections[1] || currentData.sections[0] || {}).id, 0);
+  const { aiPick, gamePick } = findEditorialHeroPicks();
   if (!aiPick || !gamePick) return '';
 
   const aiCopy = editorialCopy(aiPick, 'ai');
