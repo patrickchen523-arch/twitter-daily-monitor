@@ -470,10 +470,12 @@ function renderLede() {
   if (!ledeText) return '';
 
   const totalCount = currentData.sections.reduce((s, sec) => s + sec.items.length, 0);
+  const rawCount = (currentData.meta && currentData.meta.raw_count) || '';
+  const countText = rawCount ? `· ${rawCount}条推文 · 精选${totalCount}条` : `· 精选${totalCount}条`;
   return `<div class="lede-section">
     <div class="lede-header">
       <span class="lede-date">${currentDate}</span>
-      <span class="lede-count">· ${totalCount} 条精选</span>
+      <span class="lede-count">${countText}</span>
     </div>
     <div class="lede-body">${ledeText.replace(/\n/g, '<br>')}</div>
   </div>`;
