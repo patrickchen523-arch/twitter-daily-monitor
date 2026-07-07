@@ -562,15 +562,26 @@ function getDisplayDates() {
   return dates;
 }
 
-function renderEditorialControls() {
+function renderEditorialTopNav() {
   if (!currentData) return '';
   const total = currentData.sections.reduce((s, sec) => s + sec.items.length, 0);
   const searchInput = document.getElementById('searchInput');
   const query = searchInput ? searchInput.value : '';
-  const tabs = [`<button class="ed-control-pill ${currentTab === 'digest' ? 'on' : ''}" onclick="switchTab('digest')">日精选</button>`]
-    .concat(currentData.sections.map(sec => `<button class="ed-control-pill ${currentTab === sec.id ? 'on' : ''}" onclick="switchTab('${sec.id}')">${escapeHtml(sec.title)}<span class="ed-control-count">${sec.items.length}</span></button>`))
-    .concat([`<button class="ed-control-pill ${currentTab === 'all' ? 'on' : ''}" onclick="switchTab('all')">全部<span class="ed-control-count">${total}</span></button>`])
-    .join('');
+  const countById = id => ((currentData.sections.find(sec => sec.id === id) || {}).items || []).length;
+  const titleById = (id, fallback) => (currentData.sections.find(sec => sec.id === id) || {}).title || fallback;
+  const tab = (id, label, count) => `<button type="button" class="ed-nav-tab ${currentTab === id ? 'on' : ''}" onclick="switchTab('${id}')">${escapeHtml(label)}${count === null ? '' : `<span>${count}</span>`}</button>`;
+  return `${tab('digest', '日精选', null)}
+    ${tab('ai', titleById('ai', 'AI科技热点'), countById('ai'))}
+    ${tab('industry', titleById('industry', '游戏行业动态'), countById('industry'))}
+    <div class="ed-brand">DAILY</div>
+    ${tab('indie', titleById('indie', '新游推文'), countById('indie'))}
+    ${tab('tools', titleById('tools', '开发工具'), countById('tools'))}
+    ${tab('all', '全部', total)}
+    <label class="ed-nav-search">⌕<input type="text" value="${escapeHtml(query)}" placeholder="搜索条目..." oninput="handleEditorialSearch(this.value)"></label>`;
+}
+
+function renderEditorialDateStrip() {
+  if (!currentData) return '';
   const available = new Set((manifest && manifest.dates) || []);
   const dayNames = ['周日','周一','周二','周三','周四','周五','周六'];
   const dateButtons = getDisplayDates().map(d => {
@@ -579,15 +590,7 @@ function renderEditorialControls() {
     const hasData = available.has(d);
     return `<button class="ed-date-btn ${currentDate === d ? 'on' : ''} ${hasData ? '' : 'nodata'}" ${hasData ? `onclick="loadDate('${d}')"` : ''} title="${d}"><span>${dayNames[dt.getDay()]}</span>${label}</button>`;
   }).join('');
-
-  return `<section class="ed-controls" aria-label="筛选和日期">
-    <div class="ed-control-head">
-      <h3 class="ed-control-title">热门游戏·AI资讯监控</h3>
-      <label class="ed-control-search">⌕<input type="text" value="${escapeHtml(query)}" placeholder="搜索条目..." oninput="handleEditorialSearch(this.value)"></label>
-    </div>
-    <div class="ed-control-tabs">${tabs}</div>
-    <div class="ed-control-dates">${dateButtons}</div>
-  </section>`;
+  return `<section class="ed-date-strip" aria-label="日期选择"><div class="ed-control-dates">${dateButtons}</div></section>`;
 }
 
 function handleEditorialSearch(value) {
@@ -665,15 +668,7 @@ function renderEditorialDigest() {
     : (currentData.lede || currentData.daily_summary || '').replace(/\*\*/g, '');
 
   return `<div class="ed-shell">
-    <nav class="ed-top-nav" aria-label="页面导航">
-      <a href="#overview">Find Signals</a>
-      <a href="#picks">Curation</a>
-      <a href="#signals">Our Story</a>
-      <div class="ed-brand">DAILY</div>
-      <a href="#ai">AI & Tech</a>
-      <a href="#game">Industry</a>
-      <div class="ed-nav-icon"><span class="ed-nav-dot"></span></div>
-    </nav>
+    <nav class="ed-top-nav" aria-label="筛选导航">${renderEditorialTopNav()}</nav>
 
     <header class="ed-hero" id="overview">
       <div class="ed-hero-left" id="ai">
@@ -710,7 +705,6 @@ function renderEditorialDigest() {
     </header>
 
     <main class="ed-section-wrap" id="picks">
-      ${renderEditorialControls()}
       <section class="ed-intro-grid">
         <div><div class="ed-label">Editor’s Pick · 日精选</div><h2>${escapeHtml(dateLabel.slice(5))} 推文精选</h2></div>
         <div class="ed-summary-box"><strong>今日主线：</strong>${escapeHtml(summary)}</div>
@@ -722,6 +716,8 @@ function renderEditorialDigest() {
         <div class="ed-stat"><div class="ed-num">${escapeHtml(curatedCount)}</div><div class="ed-cap">Curated</div></div>
         <div class="ed-stat"><div class="ed-num">${escapeHtml(crawlTime || '--')}</div><div class="ed-cap">Crawl Time</div></div>
       </section>
+
+      ${renderEditorialDateStrip()}
 
       <section class="ed-signal-panel" id="signals" aria-label="更多精选信号">
         <div class="ed-signal-head"><h3>More Game Signals</h3><span>${String(signals.length).padStart(2, '0')}</span></div>
@@ -739,7 +735,7 @@ function renderEditorialDigest() {
         </div>
       </section>
 
-      <footer class="ed-footer"><span>Twitter 日报 ${escapeHtml(dateLabel)} · 2 Big Picks + ${signals.length} Small Signals</span><span>Color version: 暗砖红 #A33A2F · MALAI-style editorial landing page</span></footer>
+      <footer class="ed-footer"><span>Twitter 日报 ${escapeHtml(dateLabel)}</span></footer>
     </main>
   </div>`;
 }
