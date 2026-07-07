@@ -489,13 +489,27 @@ function renderHeroPicks() {
       picks.push({ item, section, hook: pick.hook || item.recommendation || item.title });
     });
   } else {
-    // Fallback: pick first item with media from each section (max 2)
-    for (const section of currentData.sections) {
+    // Fallback: rank all items by engagement, pick top 2 with media (prefer different sections)
+    const candidates = [];
+    currentData.sections.forEach(section => {
+      section.items.forEach(item => {
+        if (!item.media) return;
+        const score = (item.views || 0) + (item.likes || 0) * 100;
+        candidates.push({ item, section, score, hook: item.recommendation || item.title });
+      });
+    });
+    candidates.sort((a, b) => b.score - a.score);
+    const usedSections = new Set();
+    for (const c of candidates) {
       if (picks.length >= 2) break;
-      const item = section.items.find(it => it.media);
-      if (item) {
-        picks.push({ item, section, hook: item.recommendation || item.title });
-      }
+      // Prefer diversity: skip same section if we have other options
+      if (usedSections.has(c.section.id) && picks.length < 2 && candidates.filter(x => !usedSections.has(x.section.id)).length > 0) continue;
+      picks.push(c);
+      usedSections.add(c.section.id);
+    }
+    // If diversity filter was too strict, just take top 2
+    if (picks.length < 2) {
+      picks = candidates.slice(0, 2);
     }
   }
 

@@ -1,0 +1,308 @@
+{
+  "date": "2026-07-07",
+  "meta": {
+    "source": "X/Twitter crawler API",
+    "raw_count": 217,
+    "prefiltered_count": 182,
+    "selected_count": 8,
+    "crawl_time": "2026-07-07 18:00"
+  },
+  "lede": "Fable 5在游戏开发领域集中爆发——一夜之间多位开发者做出实时地牢生成器、玩具工坊、完整多人游戏\nXbox裁员3200人+关闭4个工作室，游戏行业寒冬信号再次拉响",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Fable 5实时程序化地牢生成器：AI一口气做出可玩的无限地牢系统"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Xbox一口气裁员3200人关闭4个工作室——游戏行业最黑暗的一天之一"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Fable 5 实时程序化地牢生成器（three.js）\nmrdoob（three.js创始人）用 Fable 做玩具工坊\nFable 5 单次session完成多人游戏4张地图+教程+存档"
+    },
+    {
+      "id": "industry",
+      "text": "Xbox 裁员3200人关闭4个工作室（含 Hellblade/State of Decay 开发商）\n以撒Rebirth 15.3万PCU破历史记录，12年老游戏的奇迹"
+    },
+    {
+      "id": "indie",
+      "text": "Dark Craft：我的世界×魂类免费MMO，开放世界探索+Boss讨伐+PvP\nGuns 'n Goblins：画面九成都是怪物的“增量式FPS”，数万怪浮涌而来"
+    },
+    {
+      "id": "tools",
+      "text": "Three.js + LEGO + 程序化地形 = 可飞行的乐高世界"
+    }
+  ],
+  "daily_summary": "**Fable 5 游戏开发集中爆发**：多位开发者同时展示用 Fable 5 做出的游戏原型，包括实时地牢生成器、玩具工坊、完整多人游戏。AI 游戏开发已进入“可用”阶段。\n\n**Xbox 行业地震**：微软宣布裁员3200人并关闭4个工作室，Hellblade和State of Decay开发商被出售。游戏行业寒冬信号再次加强。\n\n**以撒 Rebirth 破纪录**：12年前的独立游戏突破 15.3 万同时在线，好评率96%，证明优秀内容的长尾效应。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#6C5CE7",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Majid Manzarpour",
+          "tags": [
+            "Fable 5",
+            "three.js",
+            "程序化生成",
+            "游戏开发"
+          ],
+          "title": "Fable 5 实时程序化地硢生成器：用AI一口气做出无限关卡系统",
+          "en_title": "real-time procedural dungeon generator in @threejs, built with Fable 5",
+          "full_text": "real-time procedural dungeon generator in @threejs, built with Fable 5",
+          "author": "majidmanzarpour",
+          "date": "2026-07-05",
+          "likes": 2174,
+          "views": 158288,
+          "link": "https://x.com/majidmanzarpour/status/2073742439211225234",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073742381573132289/img/-ECFmnOsrNK_aB3T.jpg",
+            "video_url": "https://x.com/majidmanzarpour/status/2073742439211225234/video/1"
+          },
+          "summary": "开发者用 Fable 5 在 three.js 上构建了实时程序化地硢生成器，可以无限生成不同布局的地硢关卡。",
+          "analysis": "AI 已经能做到“实时程序化地硢生成”这种传统上需要专业开发者数周工作的功能。对独立开发者而言，这意味着“Roguelike关卡设计”不再是技术门槛。",
+          "recommendation": "Fable 5实时程序化地硢生成器：AI一口气做出可玩的无限地硢系统"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "mrdoob · three.js创始人",
+          "tags": [
+            "Fable 5",
+            "box3d.js",
+            "three.js",
+            "创意原型"
+          ],
+          "title": "three.js创始人 mrdoob 用 Fable 做出卡扣玩具工坊：拼装、旋转、活过来",
+          "en_title": "Made a toy maker with Fable this morning. Snap wooden pieces together, make parts spin, watch them come alive.",
+          "full_text": "Made a toy maker with Fable this morning 🧸\n\nSnap wooden pieces together, make parts spin, watch them come alive.\n\nMake your own:\nhttps://t.co/GJCG6CXmrT\n\nRemix mine:\nhttps://t.co/Iif38yoVkC\n\nMade with box3d.js by @erin_catto and @isaac_mason_",
+          "author": "mrdoob",
+          "date": "2026-07-05",
+          "likes": 1937,
+          "views": 111262,
+          "link": "https://x.com/mrdoob/status/2073666517783458071",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073662033195921408/img/1iv-KXOf-QlQXr5x.jpg",
+            "video_url": "https://x.com/mrdoob/status/2073666517783458071/video/1"
+          },
+          "summary": "three.js 创始人 mrdoob 用 Fable + box3d.js 做出了一个卡扣式玩具工坊，可以拼装木头零件、让它们旋转和动起来。",
+          "analysis": "three.js 创始人亲自背书，证明 AI 游戏开发工具已获得顶级开发者认可。box3d.js 是新的物理引擎，和 Fable 结合降低了 3D 交互原型的门槛。",
+          "recommendation": "three.js创始人亲自下场用Fable做玩具——当大佬开始用AI做游戏，信号很明确"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Token Gremlin",
+          "tags": [
+            "Fable 5",
+            "多人游戏",
+            "AI编程",
+            "产能"
+          ],
+          "title": "Fable 5 单次夜间session完成：4张地图+3模式+教程+多人+存档",
+          "en_title": "Fable 5 was able to create 4 maps, 3 game modes, a tutorial, a multiplayer mode, several bots, and account-based saved progress in a single ordinary late-night session.",
+          "full_text": "Fable 5 was able to create 4 maps, 3 game modes, a tutorial, a multiplayer mode, several bots, and account-based saved progress in a single ordinary late-night session.\n\nFor a fast hobby project, the game turned out shockingly good. The audio was produced in ElevenLabs.",
+          "author": "TokenGremlin",
+          "date": "2026-07-05",
+          "likes": 267,
+          "views": 21516,
+          "link": "https://x.com/TokenGremlin/status/2073604711412809809",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073604630563495936/img/EvTDvfrnSp58DGQc.jpg",
+            "video_url": "https://x.com/TokenGremlin/status/2073604711412809809/video/1"
+          },
+          "summary": "一个普通晚间session，Fable 5 完成了4张地图、3个游戏模式、教程、多人模式、多个Bot、账号存档。音频用ElevenLabs生成。",
+          "analysis": "这个案例证明 AI 编程已经能在几小时内产出“可发布级”的多人游戏原型。对个人开发者和小团队而言，“周末做个游戏”不再是梦想。",
+          "recommendation": "一个晋上session做完4张地图+多人模式+存档——AI编程产能已经离谱了"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "GAME INDUSTRY",
+      "color": "#C0392B",
+      "items": [
+        {
+          "idx": "游戏行业动态 01",
+          "source": "PC Gamer",
+          "tags": [
+            "Xbox",
+            "裁员",
+            "工作室关闭",
+            "微软"
+          ],
+          "title": "Xbox 裁员3200人关闭4个工作室：Hellblade、State of Decay开发商被出售",
+          "en_title": "Xbox is laying off 3,200 people and dumping 4 studios",
+          "full_text": "Xbox is laying off 3,200 people and dumping 4 studios",
+          "author": "pcgamer",
+          "date": "2026-07-06",
+          "likes": 61,
+          "views": 14322,
+          "link": "https://x.com/pcgamer/status/2074134840321142919",
+          "media": null,
+          "summary": "微软宣布 Xbox 裁员3200人，关闭4个工作室，其中 Hellblade 和 State of Decay 开发商被出售。",
+          "analysis": "这是 Xbox 近年最大规模裁员，叠加此前 Bethesda 整合裁员，微软游戏业务正在大幅缩减。将 Hellblade 开发商出售意味着“单人叙事3A”在微软体系中不再被重视。",
+          "recommendation": "Xbox一口气裁员3200人关闭4个工作室——游戏行业最黑暗的一天之一"
+        },
+        {
+          "idx": "游戏行业动态 02",
+          "source": "SteamDB",
+          "tags": [
+            "Steam",
+            "PCU",
+            "以撒",
+            "破纪录"
+          ],
+          "title": "以撒 Rebirth 突码15.3万同时在线新纪录：12年老游戏好评率96%的奇迹",
+          "en_title": "The Binding of Isaac: Rebirth has reached 153,268 concurrent players on Steam for the first time (96.12% rating)",
+          "full_text": "The Binding of Isaac: Rebirth has reached 153,268 concurrent players on Steam for the first time (96.12% rating)",
+          "author": "SteamDB",
+          "date": "2026-07-05",
+          "likes": 2013,
+          "views": 93809,
+          "link": "https://x.com/SteamDB/status/2073797316373299429",
+          "media": null,
+          "summary": "《以撒的结合：重生》首次突码15.3万同时在线，好评率96.12%。这款2014年发布的独立游戏仍在创造历史新高。",
+          "analysis": "12年前的独立游戏能突码15万PCU，证明优秀Roguelike的生命周期可以无限延伸。持续更新和社区运营是关键。",
+          "recommendation": "12年前的独立游戏突码5万同时在线——优秀内容的长尾效应可以多离谱？"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "NEW GAMES",
+      "color": "#27AE60",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "ああく·Steam游戏紹介",
+          "tags": [
+            "魂类",
+            "MMO",
+            "开放世界",
+            "免费"
+          ],
+          "title": "Dark Craft：我的世界×魂类免费MMO，废城探索+Boss讨伐+PvP+公会战",
+          "en_title": "Dark Craft: A free-to-play title combining Souls-like and MMORPG. Explore ruins, defeat bosses, PvP and guild battles in a vast open world.",
+          "full_text": "マイクラ✕ソウルライク！？？\n\n【Dark Craft】\n\nソウルライクとMMORPGを融合した基本プレイ無料タイトル\n廃城や忘れられた神殿を探索し、強敵ボス討伐やPvP、ギルド戦に挑戦\nソロでも仲間との協力でも、広大なオープンワールドを攻略しよう。 #Steam",
+          "author": "aduebd",
+          "date": "2026-07-06",
+          "likes": 857,
+          "views": 107039,
+          "link": "https://x.com/aduebd/status/2073965169030656003",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073943437024653312/img/2QthPObPF-TbjzHg.jpg",
+            "video_url": "https://x.com/aduebd/status/2073965169030656003/video/1"
+          },
+          "summary": "Dark Craft 是一款融合我的世界风格与魂类战斗的免费MMO。探索废城神殿、讨伐强敌Boss、参与PvP和公会战。",
+          "analysis": "",
+          "recommendation": "Dark Craft：当我的世界遇上魂类战斗+免费MMO——这组合听起来离谱但有107K views",
+          "enrichment": {
+            "game_name": "Dark Craft",
+            "genre": "魂类 / MMO / 开放世界 / 合作",
+            "developer": "未公布",
+            "platforms": [
+              "PC"
+            ],
+            "price": "免费",
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "release_date": "未定",
+            "positioning": "我的世界×魂类免费MMO，开放世界探索+PvP",
+            "why_notable": "MC风格+魂类战斗的跨品类组合很拉风，免费降低门槛，107K views热度高",
+            "description": "Dark Craft 是一款融合魂类战斗与MMORPG的免费游戏。玩家在广阔开放世界中探索废城和神殿，挑战强敌Boss，参与PvP和公会战。支持单人或多人合作。\n\nSteam 状态：即将推出\n信源：日文Steam游戏紹介推文 @aduebd"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Steamおすすめ",
+          "tags": [
+            "增量式FPS",
+            "塔防",
+            "数万怪物",
+            "独立开发"
+          ],
+          "title": "Guns 'n Goblins：画面九成都是怪物的“增量式FPS”，数万怪浮涌而来",
+          "en_title": "Guns 'n Goblins: An incremental FPS where you defend a fortress against tens of thousands of swarming monsters.",
+          "full_text": "画面の9割がモンスター。絵面がカオス。\n\n数万単位で押し寄せるモンスターから要塞を守り抜くインクリメンタルFPS。自分で鐘を鸣らして大群を呼び込み、稼いだリソースで自身の能力や防衛システムをひたすら強化し続ける。死んでも能力が引き継がれるから、「あと１回だけ鐘鸣らして強化するか…」のループから抜け出せなくなりそう。\nそれにしても「インクリメンタルFPS」って何なんだ？？？\n『Guns 'n Goblins』",
+          "author": "stmatomato",
+          "date": "2026-07-06",
+          "likes": 339,
+          "views": 82527,
+          "link": "https://x.com/stmatomato/status/2073964652422205677",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073940900066271232/img/9JUUExs7CwgiWPAB.jpg",
+            "video_url": "https://x.com/stmatomato/status/2073964652422205677/video/1"
+          },
+          "summary": "一款“增量式FPS”：数万怪物浮涌而来，玩家鸣钟召唤怪物大军，用资源强化自身和防御系统。死亡后能力保留，形成“再来一次”的成瘾循环。",
+          "analysis": "",
+          "recommendation": "“增量式FPS”这个品类我也没听过——画面九成都是怪，越死越强的成瘾循环",
+          "enrichment": {
+            "game_name": "Guns 'n Goblins",
+            "genre": "增量式FPS / 塔防 / Roguelite",
+            "developer": "未公布",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "release_date": "未定",
+            "positioning": "数万怪物浮涌+越死越强的“增量式”FPS",
+            "why_notable": "“增量式FPS”是新品类概念，结合了Vampire Survivors的成瘾循环和FPS射击感",
+            "description": "Guns 'n Goblins 是一款“增量式 FPS”：数万怪物浮涌而来，玩家自己鸣钟召唤怪物大军，用资源强化能力和防御系统。死亡后能力保留，形成“再来一次”的成瘾循环。\n\nSteam 状态：即将推出\n信源：日文Steam推荐推文 @stmatomato"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "hexianWeb",
+          "tags": [
+            "three.js",
+            "LEGO",
+            "程序化地形",
+            "WebGPU"
+          ],
+          "title": "Three.js + LEGO + 程序化地形 = 可飞行的乐高世界",
+          "en_title": "Three.js + LEGO + procedural terrain = A LEGO world you can fly through",
+          "full_text": "Three.js + LEGO + procedural terrain = A LEGO world you can fly through ✈️\n\nI joined the Three.js Journey challenge and honestly had a great time building this project.\n\nlive: https://t.co/lmKhZ7L87Y\ngithub: https://t.co/M2D25Dqa2O\n\n#threejsJourney #webgpu #threejs #createive",
+          "author": "hexian37496562",
+          "date": "2026-07-06",
+          "likes": 315,
+          "views": 13031,
+          "link": "https://x.com/hexian37496562/status/2073966506141270227",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073965293257601025/img/rdTjxtuii5PTWdTQ.jpg",
+            "video_url": "https://x.com/hexian37496562/status/2073966506141270227/video/1"
+          },
+          "summary": "开发者参加 Three.js Journey 挑战，用 three.js + WebGPU 构建了程序化乐高地形世界，可自由飞行探索。代码已开源。",
+          "analysis": "程序化地形+乐高美学是很有想象力的组合。对想学 three.js 和 WebGPU 的开发者而言，这是个优秀的开源参考项目。",
+          "recommendation": "LEGO+程序化地形+自由飞行：有人用three.js做了个可探索的乐高世界，开源了"
+        }
+      ]
+    }
+  ]
+}
