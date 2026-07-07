@@ -236,6 +236,8 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 .digest-row-sub{font-size:11px;color:var(--ink3);margin-top:2px}
 .digest-row-arrow{font-size:13px;color:var(--gold);flex-shrink:0;transition:transform .2s;opacity:.6}
 .digest-row:hover .digest-row-arrow{transform:translateX(3px);opacity:1}
+.digest-steam-link{color:var(--gold);font-weight:600;text-decoration:none;transition:color .2s}
+.digest-steam-link:hover{color:#A07B1A;text-decoration:underline}
 
 @media(max-width:700px){
   .hero-section{grid-template-columns:1fr}
@@ -568,6 +570,7 @@ function renderDigestList() {
       const thumbUrl = (item.media && item.media.url) || (item.enrichment && item.enrichment.header_image) || '';
       const likesStr = (item.likes || 0) >= 1000 ? ((item.likes / 1000).toFixed(1) + 'K') : (item.likes || 0);
       const initial = section.title.charAt(0);
+      const steamUrl = item.enrichment && item.enrichment.steam_url;
 
       html += `<div class="digest-row" onclick="jumpToCard('${section.id}', ${idx})">
         ${thumbUrl
@@ -575,7 +578,7 @@ function renderDigestList() {
           : `<div class="digest-thumb-placeholder">${initial}</div>`}
         <div class="digest-row-content">
           <div class="digest-row-hook">${hookText}</div>
-          <div class="digest-row-sub">@${item.author} · ♥${likesStr}</div>
+          <div class="digest-row-sub">@${item.author} · ♥${likesStr}${steamUrl ? ` · <a class="digest-steam-link" href="${steamUrl}" target="_blank" onclick="event.stopPropagation()">Steam ↗</a>` : ''}</div>
         </div>
         <span class="digest-row-arrow">&#8250;</span>
       </div>`;
