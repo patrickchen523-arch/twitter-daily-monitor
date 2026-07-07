@@ -484,6 +484,7 @@ function renderDigestV2() {
   if (!currentData) { container.innerHTML = ''; return; }
   document.body.classList.toggle('editorial-mode', currentView === 'twitter' && currentTab === 'digest');
   container.innerHTML = renderEditorialDigest();
+  setTimeout(syncEditorialDateScrollbar, 30);
 }
 
 function escapeHtml(value) {
@@ -591,7 +592,54 @@ function renderEditorialDateStrip() {
     const hasData = available.has(d);
     return `<button class="ed-date-btn ${currentDate === d ? 'on' : ''} ${hasData ? '' : 'nodata'}" ${hasData ? `onclick="loadDate('${d}')"` : ''} title="${d}"><span>${dayNames[dt.getDay()]}</span>${label}</button>`;
   }).join('');
-  return `<section class="ed-date-strip" aria-label="日期选择"><div class="ed-control-dates">${dateButtons}</div></section>`;
+  return `<section class="ed-date-strip" aria-label="日期选择"><div class="ed-control-dates" onscroll="syncEditorialDateScrollbar()">${dateButtons}</div><div class="ed-date-scrollbar" onclick="handleEditorialDateTrack(event)" onpointerdown="startEditorialDateDrag(event)"><div class="ed-date-scroll-thumb"></div></div></section>`;
+}
+
+function syncEditorialDateScrollbar() {
+  const scroller = document.querySelector('.ed-date-strip .ed-control-dates');
+  const bar = document.querySelector('.ed-date-scrollbar');
+  const thumb = document.querySelector('.ed-date-scroll-thumb');
+  if (!scroller || !bar || !thumb) return;
+  const maxScroll = scroller.scrollWidth - scroller.clientWidth;
+  if (maxScroll <= 0) { bar.style.display = 'none'; return; }
+  bar.style.display = '';
+  const trackWidth = bar.clientWidth;
+  const thumbWidth = Math.max(80, Math.round(scroller.clientWidth / scroller.scrollWidth * trackWidth));
+  const maxThumb = Math.max(1, trackWidth - thumbWidth);
+  thumb.style.width = thumbWidth + 'px';
+  thumb.style.transform = `translateX(${Math.round(scroller.scrollLeft / maxScroll * maxThumb)}px)`;
+}
+
+function setEditorialDateScrollFromPointer(event) {
+  const scroller = document.querySelector('.ed-date-strip .ed-control-dates');
+  const bar = document.querySelector('.ed-date-scrollbar');
+  const thumb = document.querySelector('.ed-date-scroll-thumb');
+  if (!scroller || !bar || !thumb) return;
+  const rect = bar.getBoundingClientRect();
+  const maxScroll = scroller.scrollWidth - scroller.clientWidth;
+  const thumbWidth = thumb.offsetWidth || 80;
+  const maxThumb = Math.max(1, rect.width - thumbWidth);
+  const x = Math.max(0, Math.min(maxThumb, event.clientX - rect.left - thumbWidth / 2));
+  scroller.scrollLeft = x / maxThumb * maxScroll;
+  syncEditorialDateScrollbar();
+}
+
+function handleEditorialDateTrack(event) {
+  setEditorialDateScrollFromPointer(event);
+}
+
+function startEditorialDateDrag(event) {
+  event.preventDefault();
+  setEditorialDateScrollFromPointer(event);
+  const move = e => setEditorialDateScrollFromPointer(e);
+  const stop = () => {
+    document.removeEventListener('pointermove', move);
+    document.removeEventListener('pointerup', stop);
+    document.removeEventListener('pointercancel', stop);
+  };
+  document.addEventListener('pointermove', move);
+  document.addEventListener('pointerup', stop);
+  document.addEventListener('pointercancel', stop);
 }
 
 function handleEditorialSearch(value) {
