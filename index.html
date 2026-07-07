@@ -264,6 +264,35 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
   .digest-row{padding:10px 12px}
   .digest-thumb,.digest-thumb-placeholder{width:40px;height:40px}
 }
+
+/* Editorial daily picks - brick red MALAI style */
+body.editorial-mode{background:radial-gradient(circle at 16% 12%,rgba(209,179,111,.18),transparent 28%),linear-gradient(90deg,#f6f0e8 0 50%,#A33A2F 50% 100%);color:#3c2b27;font-family:"Nunito Sans","Microsoft YaHei",sans-serif;line-height:1.55}
+body.editorial-mode::before{display:none}
+body.editorial-mode>footer,body.editorial-mode>body>.top-nav{display:none}
+body.editorial-mode> .top-nav,body.editorial-mode #twitterView>header,body.editorial-mode #twitterView .datestrip{display:none}
+body.editorial-mode .wrap{max-width:none;margin:0;padding:0}
+body.editorial-mode #digestV2{margin:0}
+body.editorial-mode #content,body.editorial-mode #dailySummary,body.editorial-mode #digest,body.editorial-mode #noResults{display:none!important}
+.ed-shell{min-height:100vh;overflow:hidden;font-family:"Nunito Sans","Microsoft YaHei",sans-serif;color:#3c2b27}
+.ed-shell a{color:inherit;text-decoration:none}.ed-shell img{display:block;max-width:100%}
+.ed-top-nav{height:66px;background:rgba(255,255,255,.985);display:grid;grid-template-columns:repeat(3,1fr) 170px repeat(3,1fr);align-items:center;padding:0 34px;position:sticky;top:0;z-index:20;box-shadow:0 1px 0 rgba(0,0,0,.04);text-transform:uppercase;letter-spacing:.09em;font-size:11px;font-weight:900;color:rgba(60,43,39,.72);overflow:visible;isolation:isolate}
+.ed-top-nav::after{content:"";position:absolute;left:50%;bottom:-23px;transform:translateX(-50%);width:154px;height:46px;background:rgba(255,255,255,.985);border-radius:0 0 90px 90px;box-shadow:0 1px 0 rgba(0,0,0,.025);z-index:1;pointer-events:none}
+.ed-top-nav a,.ed-top-nav .ed-nav-icon{position:relative;z-index:3;text-align:center}.ed-brand{position:relative;z-index:4;color:#C76355;font-size:22px;letter-spacing:.38em;font-weight:900;text-align:center;transform:translateX(.19em)}
+.ed-nav-icon{display:flex;align-items:center;justify-content:center;gap:8px}.ed-nav-dot{width:8px;height:8px;border-radius:50%;background:#873026;box-shadow:12px 0 0 #d1b36f,24px 0 0 rgba(60,43,39,.35)}
+.ed-hero{min-height:720px;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}.ed-hero-left,.ed-hero-right{position:relative;min-height:720px}.ed-hero-left{background:linear-gradient(90deg,rgba(163,58,47,.72) 0 14%,transparent 14% 100%),repeating-linear-gradient(135deg,rgba(255,255,255,.38) 0 2px,transparent 2px 8px),#f6f0e8;padding:88px 7vw 72px 8.7vw}.ed-hero-right{background:#A33A2F;padding:86px 7vw 72px;display:flex;align-items:center;justify-content:center}
+.ed-gold-plate{position:absolute;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle at 35% 32%,rgba(255,255,255,.24),transparent 18%),#d1b36f;left:35%;top:104px;transform:translateX(-50%);z-index:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+.ed-coral-block{position:absolute;left:0;top:0;width:16vw;min-width:160px;height:230px;background:rgba(163,58,47,.72)}
+.ed-hero-feature{position:relative;z-index:2;width:min(610px,40vw)}.ed-hero-left .ed-hero-feature{margin-top:18px}.ed-hero-right .ed-hero-feature{width:min(520px,37vw)}
+.ed-hero-photo{background:#fffaf4;padding:18px;box-shadow:0 28px 55px rgba(91,52,46,.18)}.ed-hero-photo img{width:100%;aspect-ratio:4/2.9;object-fit:cover;filter:saturate(.96) contrast(1.03)}.ed-hero-right .ed-hero-photo{padding:0;background:transparent;box-shadow:0 30px 50px rgba(100,45,37,.18)}.ed-hero-right .ed-hero-photo img{aspect-ratio:4/3.05}
+.ed-hero-copy-card{position:relative;margin-top:32px;padding-left:30px;border-left:2px solid #873026;max-width:650px}.ed-hero-copy-card .ed-label-line{display:flex;align-items:center;gap:14px;color:#873026;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:900;margin-bottom:16px}.ed-hero-copy-card .ed-label-line::before{content:"";width:42px;height:1px;background:currentColor}.ed-hero-copy-card h1,.ed-hero-copy-card h2{margin:0;font-family:"Noto Serif SC",serif;font-size:clamp(30px,3.1vw,44px);font-weight:700;line-height:.98;letter-spacing:-.055em}.ed-hero-copy-card p{margin:18px 0 0;color:#8b7169;font-size:13px;font-weight:800;max-width:560px}.ed-action-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:26px}.ed-hero-right .ed-hero-copy-card{border-left-color:rgba(255,255,255,.56);color:#fff}.ed-hero-right .ed-hero-copy-card .ed-label-line{color:rgba(255,255,255,.9)}.ed-hero-right .ed-hero-copy-card p{color:rgba(255,255,255,.88)}
+.ed-outline-btn{display:inline-flex;align-items:center;justify-content:center;min-width:160px;height:48px;padding:0 24px;border:2px solid currentColor;color:#873026;text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900}.ed-hero-right .ed-outline-btn{color:#fff}.ed-metric{color:#8b7169;font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.ed-hero-right .ed-metric{color:rgba(255,255,255,.76)}
+.ed-section-wrap{background:#f6f0e8;padding:86px 7vw 100px}.ed-intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:end;max-width:1220px;margin:0 auto 58px}.ed-label{color:#873026;text-transform:uppercase;letter-spacing:.2em;font-family:"Noto Serif SC",serif;font-size:12px;font-weight:900}.ed-intro-grid h2{margin:10px 0 0;font-family:"Noto Serif SC",serif;font-weight:500;font-size:clamp(36px,5.2vw,72px);line-height:.98;letter-spacing:-.045em}.ed-summary-box{border:1px solid rgba(60,43,39,.16);background:rgba(255,255,255,.52);padding:28px 30px;color:#8b7169;font-family:"Noto Serif SC",serif;font-size:19px;font-weight:700;line-height:1.72}.ed-summary-box strong{color:#3c2b27;font-weight:700}
+.ed-stats{max-width:1220px;margin:0 auto 56px;display:grid;grid-template-columns:repeat(4,1fr);background:#fffaf4;border:1px solid rgba(60,43,39,.16)}.ed-stat{padding:24px 28px;border-right:1px solid rgba(60,43,39,.16)}.ed-stat:last-child{border-right:0}.ed-stat .ed-num{font-family:"Noto Serif SC",serif;font-size:48px;line-height:1;color:#873026}.ed-stat .ed-cap{margin-top:8px;color:#8b7169;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:800}
+.ed-signal-panel{max-width:1220px;margin:0 auto;padding:54px 58px 58px;background:radial-gradient(circle at 88% 1%,rgba(255,255,255,.18),transparent 16%),#A33A2F;color:#fff;position:relative;overflow:hidden}.ed-signal-head{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.55);margin-bottom:18px}.ed-signal-head h3{margin:0;color:#fff;text-transform:uppercase;letter-spacing:.28em;font-size:13px;font-weight:900}.ed-signal-head span{font-size:12px;font-weight:900;color:rgba(255,255,255,.82)}.ed-signal-list{display:grid;gap:18px;position:relative;z-index:2}
+.ed-signal-card{display:grid;grid-template-columns:170px 68px minmax(0,1fr);gap:22px;align-items:center;background:#fffaf4;color:#3c2b27;min-height:178px;padding:26px;border:1px solid rgba(255,255,255,.42);box-shadow:0 16px 40px rgba(102,42,35,.10);transition:transform .24s ease,box-shadow .24s ease}.ed-signal-card:hover{transform:translateY(-3px);box-shadow:0 24px 50px rgba(102,42,35,.18)}.ed-signal-media{width:170px;height:126px;background:#f3eadf;overflow:hidden}.ed-signal-media img{width:100%;height:100%;object-fit:cover;filter:saturate(.94) contrast(1.02);transition:transform .35s ease}.ed-signal-card:hover img{transform:scale(1.05)}.ed-signal-num{align-self:start;font-family:"Noto Serif SC",serif;font-size:29px;line-height:1;color:#873026;letter-spacing:-.04em;font-weight:900}.ed-signal-copy .ed-tag{display:inline-flex;align-items:center;gap:10px;color:#873026;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}.ed-signal-copy .ed-tag::before{content:"";width:36px;height:1px;background:currentColor}.ed-signal-copy h4{margin:0;font-family:"Noto Serif SC",serif;font-weight:700;font-size:32px;line-height:1.04;letter-spacing:-.05em}.ed-signal-copy p{margin:12px 0 0;color:#8b7169;font-size:13px;font-weight:800;max-width:820px}.ed-tweet-link{display:inline-flex;align-items:center;gap:10px;margin-top:18px;color:#873026;font-size:12px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.ed-tweet-link::after{content:"→";font-size:16px}
+.ed-footer{max-width:1220px;margin:42px auto 0;display:flex;justify-content:space-between;gap:20px;color:rgba(60,43,39,.52);font-size:12px;border-top:1px solid rgba(60,43,39,.16);padding-top:20px}
+@media(max-width:980px){body.editorial-mode{background:#f6f0e8}.ed-top-nav{grid-template-columns:1fr 1fr 120px 1fr 1fr;padding:0 18px}.ed-top-nav a:nth-child(3),.ed-top-nav a:nth-child(6){display:none}.ed-brand{font-size:18px}.ed-hero{grid-template-columns:1fr}.ed-hero-left,.ed-hero-right{min-height:auto;padding:64px 7vw}.ed-hero-feature,.ed-hero-right .ed-hero-feature{width:min(680px,86vw)}.ed-gold-plate{width:280px;height:280px}.ed-intro-grid{grid-template-columns:1fr}.ed-stats{grid-template-columns:repeat(2,1fr)}.ed-stat:nth-child(2){border-right:0}.ed-stat:nth-child(1),.ed-stat:nth-child(2){border-bottom:1px solid rgba(60,43,39,.16)}.ed-signal-panel{padding:42px 28px}.ed-signal-card{grid-template-columns:146px 52px minmax(0,1fr);gap:18px}.ed-signal-media{width:146px;height:118px}}
+@media(max-width:620px){.ed-top-nav{grid-template-columns:1fr 110px 1fr;font-size:10px}.ed-top-nav a:nth-child(1),.ed-top-nav a:nth-child(2),.ed-top-nav a:nth-child(6),.ed-nav-icon{display:none}.ed-section-wrap{padding:58px 20px 72px}.ed-stats{grid-template-columns:1fr}.ed-stat{border-right:0;border-bottom:1px solid rgba(60,43,39,.16)}.ed-stat:last-child{border-bottom:0}.ed-hero-photo{padding:12px}.ed-hero-copy-card{padding-left:18px}.ed-signal-panel{padding:34px 18px}.ed-signal-head{align-items:flex-start;flex-direction:column}.ed-signal-card{grid-template-columns:1fr;padding:20px}.ed-signal-media{width:100%;height:190px}.ed-signal-num{font-size:32px}.ed-footer{flex-direction:column}}
 </style>
 </head>
 <body>
@@ -322,6 +351,7 @@ const robloxReports = [
 
 function switchView(view) {
   currentView = view;
+  document.body.classList.toggle('editorial-mode', view === 'twitter' && currentTab === 'digest');
   document.getElementById('navTwitter').classList.toggle('active', view === 'twitter');
   document.getElementById('navRoblox').classList.toggle('active', view === 'roblox');
   document.getElementById('twitterView').style.display = view === 'twitter' ? '' : 'none';
@@ -449,12 +479,188 @@ function renderDigest() {
 function renderDigestV2() {
   const container = document.getElementById('digestV2');
   if (!currentData) { container.innerHTML = ''; return; }
+  document.body.classList.toggle('editorial-mode', currentView === 'twitter' && currentTab === 'digest');
+  container.innerHTML = renderEditorialDigest();
+}
 
-  let html = '';
-  html += renderLede();
-  html += renderHeroPicks();
-  html += renderDigestList();
-  container.innerHTML = html;
+function escapeHtml(value) {
+  return String(value || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function getSectionById(id) {
+  return currentData.sections.find(section => section.id === id);
+}
+
+function getCover(item) {
+  return (item && item.media && item.media.url) || (item && item.enrichment && item.enrichment.header_image) || '';
+}
+
+function formatCount(value) {
+  const num = Number(value || 0);
+  if (num >= 1000000) return (num / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+  if (num >= 1000) return (num / 1000).toFixed(num >= 10000 ? 0 : 1).replace(/\.0$/, '') + 'K';
+  return num.toLocaleString();
+}
+
+function findPick(sectionId, fallbackIndex) {
+  const section = getSectionById(sectionId);
+  if (!section || !section.items.length) return null;
+  const explicit = currentData.editors_pick && currentData.editors_pick.find(pick => pick.section_id === sectionId && section.items[pick.item_index]);
+  const item = explicit ? section.items[explicit.item_index] : section.items[fallbackIndex || 0];
+  return { section, item, itemIndex: section.items.indexOf(item), hook: (explicit && explicit.hook) || item.recommendation || item.title };
+}
+
+function editorialCopy(pick, role) {
+  const is0706 = currentData.date === '2026-07-06';
+  if (is0706 && role === 'ai') {
+    return {
+      label: 'AI 科技热点 / Fable 5',
+      title: '一小时做出完整塔防，AI 原型链路开始跑通',
+      text: 'Claude Fable 5 在约 1 小时内完成关卡、英雄怪物、经济、美术、音效与代码，示意 AI 游戏开发从 demo 走向完整原型。'
+    };
+  }
+  if (is0706 && role === 'game') {
+    return {
+      label: '新游推荐 / Sagas of Lumin',
+      title: '骑龙空战、飞艇对射，再跳下龙背切地面战',
+      text: 'Sagas of Lumin 用“骑龙空战 + 蒸汽朋克火器 + 无缝空地切换”做传播记忆点，新游卖相非常直接。'
+    };
+  }
+  return {
+    label: `${pick.section.title} / Editor's Pick`,
+    title: pick.hook || pick.item.title,
+    text: pick.item.summary || pick.item.analysis || pick.item.full_text || ''
+  };
+}
+
+function getEditorialSignals(heroPicks) {
+  const is0706 = currentData.date === '2026-07-06';
+  if (is0706) {
+    const preferred = [
+      ['ai', 1, 'AI 技术', '纯 C++ 无引擎无资源，Fable 5 运行时生成整个吸血鬼幸存者', '所有精灵、音效、图形、音乐都由代码在运行时程序化生成，证明 AI 已能处理更底层的图形与资源生成逻辑。'],
+      ['ai', 2, 'AI NPC', 'NPC 小镇自己提交 PR 推进剧情，AI 叙事不再只是对话树', '开发者用 Fable + Three.js 构建自我进化 NPC 小镇，AI 会自动改代码、补设定，推动故事和世界观继续生长。'],
+      ['ai', 6, '原型工具', 'Three.js 之父用 Fable 做出木头玩具制造器，3D 交互原型门槛继续降低', '拼装木头零件、让部件旋转并“活过来”，Fable + box3d.js 把物理交互玩具工坊变成一个可快速验证的网页原型。'],
+      ['indie', 0, '新游推荐', 'HUNGER：拿破仑瘟疫背景的多人提取 RPG', 'Solo / Duo / Trio 协作、FPS 近战、永久成长、任务制作、玩家市场、地牢 Boss 与终局 PvPvE，差异化卖点集中。'],
+      ['industry', 0, '行业动态', 'Sony 光驱限购“1 人 1 台”：实体碟争议持续发酵', 'Sony 计划减少实体碟生产，但外置光驱仍因需求紧张被限购，反向证明玩家对物理媒介的需求没有消失。'],
+      ['industry', 2, '社区创作', 'Stardew Valley 3D/VR 移植曝光，经典 2D 游戏仍有强转译想象', '非官方 3D/VR 移植项目拿到高浏览，说明经典内容的“空间化重做”仍能持续激发社区二创和传播热情。']
+    ];
+    return preferred.map(([sectionId, itemIndex, tag, title, text]) => {
+      const section = getSectionById(sectionId);
+      const item = section && section.items[itemIndex];
+      return item ? { section, item, tag, title, text } : null;
+    }).filter(Boolean);
+  }
+
+  const heroKeys = new Set(heroPicks.map(pick => `${pick.section.id}:${pick.itemIndex}`));
+  const signals = [];
+  currentData.sections.forEach(section => {
+    section.items.forEach((item, itemIndex) => {
+      if (signals.length >= 6 || heroKeys.has(`${section.id}:${itemIndex}`) || !getCover(item)) return;
+      signals.push({ section, item, tag: section.title, title: item.recommendation || item.title, text: item.summary || item.analysis || '' });
+    });
+  });
+  return signals;
+}
+
+function renderEditorialDigest() {
+  const aiPick = findPick('ai', 0) || findPick((currentData.sections[0] || {}).id, 0);
+  const gamePick = findPick('indie', 0) || findPick((currentData.sections[1] || currentData.sections[0] || {}).id, 0);
+  if (!aiPick || !gamePick) return '';
+
+  const aiCopy = editorialCopy(aiPick, 'ai');
+  const gameCopy = editorialCopy(gamePick, 'game');
+  const signals = getEditorialSignals([aiPick, gamePick]);
+  const rawCount = (currentData.meta && currentData.meta.raw_count) || 0;
+  const filteredCount = (currentData.meta && (currentData.meta.filtered_count || currentData.meta.prefiltered_count)) || 0;
+  const crawlTime = (currentData.meta && currentData.meta.crawl_time && currentData.meta.crawl_time.split(' ').pop()) || '';
+  const curatedCount = 2 + signals.length;
+  const dateLabel = (currentData.date || currentDate || '').replace(/-/g, '.');
+  const summary = currentData.date === '2026-07-06'
+    ? 'Claude Fable 5 引发 AI 游戏开发案例集中爆发，塔防、纯 C++ 克隆、NPC 小镇与物理玩具工坊都在验证“AI 原型生产力”；另一侧，新游传播继续依赖强概念卖相，实体碟与平台分发争议也在提醒行业需求并未完全数字化。'
+    : (currentData.lede || currentData.daily_summary || '').replace(/\*\*/g, '');
+
+  return `<div class="ed-shell">
+    <nav class="ed-top-nav" aria-label="页面导航">
+      <a href="#overview">Find Signals</a>
+      <a href="#picks">Curation</a>
+      <a href="#signals">Our Story</a>
+      <div class="ed-brand">DAILY</div>
+      <a href="#ai">AI & Tech</a>
+      <a href="#game">Industry</a>
+      <div class="ed-nav-icon"><span class="ed-nav-dot"></span></div>
+    </nav>
+
+    <header class="ed-hero" id="overview">
+      <div class="ed-hero-left" id="ai">
+        <div class="ed-coral-block" aria-hidden="true"></div>
+        <div class="ed-gold-plate" aria-hidden="true"></div>
+        <article class="ed-hero-feature">
+          <div class="ed-hero-photo"><img src="${escapeHtml(getCover(aiPick.item))}" alt="${escapeHtml(aiPick.item.title)}"></div>
+          <div class="ed-hero-copy-card">
+            <div class="ed-label-line">${escapeHtml(aiCopy.label)}</div>
+            <h1>${escapeHtml(aiCopy.title)}</h1>
+            <p>${escapeHtml(aiCopy.text)}</p>
+            <div class="ed-action-row">
+              <a class="ed-outline-btn" href="${escapeHtml(aiPick.item.link)}" target="_blank" rel="noopener">Read Tweet</a>
+              <span class="ed-metric">${formatCount(aiPick.item.likes)} Likes · ${formatCount(aiPick.item.views)} Views</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="ed-hero-right" id="game">
+        <article class="ed-hero-feature">
+          <div class="ed-hero-photo"><img src="${escapeHtml(getCover(gamePick.item))}" alt="${escapeHtml(gamePick.item.title)}"></div>
+          <div class="ed-hero-copy-card">
+            <div class="ed-label-line">${escapeHtml(gameCopy.label)}</div>
+            <h2>${escapeHtml(gameCopy.title)}</h2>
+            <p>${escapeHtml(gameCopy.text)}</p>
+            <div class="ed-action-row">
+              <a class="ed-outline-btn" href="${escapeHtml(gamePick.item.link)}" target="_blank" rel="noopener">Read Tweet</a>
+              <span class="ed-metric">${formatCount(gamePick.item.likes)} Likes · ${formatCount(gamePick.item.views)} Views</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </header>
+
+    <main class="ed-section-wrap" id="picks">
+      <section class="ed-intro-grid">
+        <div><div class="ed-label">Editor’s Pick · 日精选</div><h2>${escapeHtml(dateLabel.slice(5))} 推文精选</h2></div>
+        <div class="ed-summary-box"><strong>今日主线：</strong>${escapeHtml(summary)}</div>
+      </section>
+
+      <section class="ed-stats" aria-label="数据状态">
+        <div class="ed-stat"><div class="ed-num">${escapeHtml(rawCount)}</div><div class="ed-cap">Raw Signals</div></div>
+        <div class="ed-stat"><div class="ed-num">${escapeHtml(filteredCount)}</div><div class="ed-cap">Filtered</div></div>
+        <div class="ed-stat"><div class="ed-num">${escapeHtml(curatedCount)}</div><div class="ed-cap">Curated</div></div>
+        <div class="ed-stat"><div class="ed-num">${escapeHtml(crawlTime || '--')}</div><div class="ed-cap">Crawl Time</div></div>
+      </section>
+
+      <section class="ed-signal-panel" id="signals" aria-label="更多精选信号">
+        <div class="ed-signal-head"><h3>More Game Signals</h3><span>${String(signals.length).padStart(2, '0')}</span></div>
+        <div class="ed-signal-list">
+          ${signals.map((signal, index) => `<article class="ed-signal-card">
+            <div class="ed-signal-media"><img src="${escapeHtml(getCover(signal.item))}" alt="${escapeHtml(signal.item.title)}"></div>
+            <div class="ed-signal-num">${String(index + 1).padStart(2, '0')}</div>
+            <div class="ed-signal-copy">
+              <div class="ed-tag">${escapeHtml(signal.tag)}</div>
+              <h4>${escapeHtml(signal.title)}</h4>
+              <p>${escapeHtml(signal.text)}</p>
+              <a class="ed-tweet-link" href="${escapeHtml(signal.item.link)}" target="_blank" rel="noopener">Open Tweet</a>
+            </div>
+          </article>`).join('')}
+        </div>
+      </section>
+
+      <footer class="ed-footer"><span>Twitter 日报 ${escapeHtml(dateLabel)} · 2 Big Picks + ${signals.length} Small Signals</span><span>Color version: 暗砖红 #A33A2F · MALAI-style editorial landing page</span></footer>
+    </main>
+  </div>`;
 }
 
 function renderLede() {
@@ -596,6 +802,7 @@ function renderDigestList() {
 
 function switchTab(tab, scrollToId) {
   currentTab = tab;
+  document.body.classList.toggle('editorial-mode', currentView === 'twitter' && tab === 'digest');
   renderTabs();
   if (tab === 'digest') {
     document.getElementById('digestV2').style.display = '';
