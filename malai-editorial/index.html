@@ -288,7 +288,8 @@ body.editorial-mode #content,body.editorial-mode #dailySummary,body.editorial-mo
 .ed-coral-block{position:absolute;left:0;top:0;width:16vw;min-width:160px;height:230px;background:rgba(163,58,47,.72)}
 .ed-hero-feature{position:relative;z-index:2;width:min(610px,40vw)}.ed-hero-left .ed-hero-feature{margin-top:18px}.ed-hero-right .ed-hero-feature{width:min(590px,41vw)}
 .ed-hero-photo{background:#fffaf4;padding:18px;box-shadow:0 28px 55px rgba(91,52,46,.18)}.ed-hero-photo img{width:100%;aspect-ratio:4/2.9;object-fit:cover;filter:saturate(.96) contrast(1.03)}.ed-hero-right .ed-hero-photo{padding:0;background:transparent;box-shadow:0 30px 50px rgba(100,45,37,.18)}.ed-hero-right .ed-hero-photo img{aspect-ratio:4/3.05}
-.ed-hero-copy-card{position:relative;margin-top:32px;padding-left:30px;border-left:2px solid #873026;max-width:650px}.ed-hero-copy-card .ed-label-line{display:flex;align-items:center;gap:14px;color:#873026;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:900;margin-bottom:16px}.ed-hero-copy-card .ed-label-line::before{content:"";width:42px;height:1px;background:currentColor}.ed-hero-copy-card h1,.ed-hero-copy-card h2{margin:0;font-family:"Noto Serif SC",serif;font-size:44px;font-weight:700;line-height:1.08;letter-spacing:0;text-wrap:wrap;overflow:visible}.ed-hero-copy-card p{margin:18px 0 0;color:#8b7169;font-size:13px;font-weight:800;max-width:600px}.ed-action-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:26px}.ed-hero-right .ed-hero-copy-card{border-left-color:rgba(255,255,255,.56);color:#fff}.ed-hero-right .ed-hero-copy-card .ed-label-line{color:rgba(255,255,255,.9)}.ed-hero-right .ed-hero-copy-card p{color:rgba(255,255,255,.88)}
+.ed-hero-copy-card{position:relative;margin-top:32px;padding-left:30px;border-left:2px solid #873026;max-width:650px}.ed-hero-copy-card .ed-label-line{display:flex;align-items:center;gap:14px;color:#873026;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:900;margin-bottom:16px}.ed-hero-copy-card .ed-label-line::before{content:"";width:42px;height:1px;background:currentColor}.ed-hero-copy-card h1,.ed-hero-copy-card h2{margin:0;font-family:"Noto Serif SC",serif;font-size:44px;font-weight:700;line-height:1.18;letter-spacing:0;text-wrap:wrap;overflow:visible}.ed-hero-copy-card p{margin:18px 0 0;color:#8b7169;font-size:13px;font-weight:800;max-width:600px}.ed-action-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:26px}.ed-hero-right .ed-hero-copy-card{border-left-color:rgba(255,255,255,.56);color:#fff}.ed-hero-right .ed-hero-copy-card .ed-label-line{color:rgba(255,255,255,.9)}.ed-hero-right .ed-hero-copy-card p{color:rgba(255,255,255,.88)}
+.ed-hero-photo.is-missing{aspect-ratio:4/2.9;padding:24px;display:flex;align-items:flex-end;justify-content:flex-start;overflow:hidden;background:repeating-linear-gradient(135deg,rgba(135,48,38,.07) 0 2px,transparent 2px 8px),#fffaf4;color:#873026}.ed-hero-photo.is-missing::before{content:attr(data-fallback-title);font-family:"Noto Serif SC",serif;font-size:26px;font-weight:700;line-height:1.18;max-width:92%}.ed-hero-right .ed-hero-photo.is-missing{aspect-ratio:4/3.05;background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.03)),rgba(135,48,38,.24);border:1px solid rgba(255,255,255,.14);color:#fff}
 .ed-outline-btn{display:inline-flex;align-items:center;justify-content:center;min-width:160px;height:48px;padding:0 24px;border:2px solid currentColor;color:#873026;text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:900}.ed-hero-right .ed-outline-btn{color:#fff}.ed-metric{color:#8b7169;font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.ed-hero-right .ed-metric{color:rgba(255,255,255,.76)}
 .ed-section-wrap{background:#f6f0e8;padding:86px 7vw 100px}.ed-intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:end;max-width:1220px;margin:0 auto 58px}.ed-label{color:#873026;text-transform:uppercase;letter-spacing:.2em;font-family:"Noto Serif SC",serif;font-size:12px;font-weight:900}.ed-intro-grid h2{margin:10px 0 0;font-family:"Noto Serif SC",serif;font-weight:500;font-size:clamp(36px,5.2vw,72px);line-height:.98;letter-spacing:-.045em}.ed-summary-box{border:1px solid rgba(60,43,39,.16);background:rgba(255,255,255,.52);padding:28px 30px;color:#8b7169;font-family:"Noto Serif SC",serif;font-size:19px;font-weight:700;line-height:1.72}.ed-summary-box strong{color:#3c2b27;font-weight:700}
 .ed-stats{max-width:1220px;margin:0 auto 56px;display:grid;grid-template-columns:repeat(4,1fr);background:#fffaf4;border:1px solid rgba(60,43,39,.16)}.ed-stat{padding:24px 28px;border-right:1px solid rgba(60,43,39,.16)}.ed-stat:last-child{border-right:0}.ed-stat .ed-num{font-family:"Noto Serif SC",serif;font-size:48px;line-height:1;color:#873026}.ed-stat .ed-cap{margin-top:8px;color:#8b7169;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:800}
@@ -538,6 +539,16 @@ function getSectionById(id) {
 
 function getCover(item) {
   return (item && item.media && item.media.url) || (item && item.enrichment && item.enrichment.header_image) || '';
+}
+
+function renderEditorialHeroPhoto(item, title) {
+  const cover = getCover(item);
+  const fallbackTitle = formatEditorialHeroTitle(title || (item && (item.recommendation || item.title)) || '');
+  const fallbackAttr = escapeHtml(fallbackTitle);
+  if (!cover) {
+    return `<div class="ed-hero-photo is-missing" data-fallback-title="${fallbackAttr}"></div>`;
+  }
+  return `<div class="ed-hero-photo" data-fallback-title="${fallbackAttr}"><img src="${escapeHtml(cover)}" alt="${escapeHtml((item && item.title) || fallbackTitle)}" onerror="this.parentElement.classList.add('is-missing');this.remove()"></div>`;
 }
 
 function formatCount(value) {
@@ -1014,7 +1025,7 @@ function limitDisplayText(value, maxChars) {
 function formatEditorialHeroTitle(value) {
   const text = normalizeEditorialText(value);
   const chars = Array.from(text);
-  const maxChars = 34;
+  const maxChars = 36;
   if (chars.length <= maxChars) return text;
 
   const cutChars = new Set(['，', ',', '；', ';', '。']);
@@ -1128,7 +1139,7 @@ function renderEditorialDigest() {
         <div class="ed-coral-block" aria-hidden="true"></div>
         <div class="ed-gold-plate" aria-hidden="true"></div>
         <article class="ed-hero-feature">
-          <div class="ed-hero-photo"><img src="${escapeHtml(getCover(aiPick.item))}" alt="${escapeHtml(aiPick.item.title)}"></div>
+          ${renderEditorialHeroPhoto(aiPick.item, aiCopy.title)}
           <div class="ed-hero-copy-card">
             <div class="ed-label-line">${escapeHtml(aiCopy.label)}</div>
             <h1>${escapeHtml(formatEditorialHeroTitle(aiCopy.title))}</h1>
@@ -1143,7 +1154,7 @@ function renderEditorialDigest() {
 
       <div class="ed-hero-right" id="game">
         <article class="ed-hero-feature">
-          <div class="ed-hero-photo"><img src="${escapeHtml(getCover(gamePick.item))}" alt="${escapeHtml(gamePick.item.title)}"></div>
+          ${renderEditorialHeroPhoto(gamePick.item, gameCopy.title)}
           <div class="ed-hero-copy-card">
             <div class="ed-label-line">${escapeHtml(gameCopy.label)}</div>
             <h2>${escapeHtml(formatEditorialHeroTitle(gameCopy.title))}</h2>
