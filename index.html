@@ -578,15 +578,34 @@ function findExplicitPick(filterFn) {
   return null;
 }
 
+function getEditorialHeatScore(item) {
+  return Number((item && item.views) || 0) + Number((item && item.likes) || 0) * 100;
+}
+
+function findHottestPick(sectionIds) {
+  const candidates = [];
+  sectionIds.forEach(sectionId => {
+    const section = getSectionById(sectionId);
+    if (!section || !section.items) return;
+    section.items.forEach((item, itemIndex) => {
+      candidates.push({
+        section,
+        item,
+        itemIndex,
+        hook: item.recommendation || item.title,
+        score: getEditorialHeatScore(item)
+      });
+    });
+  });
+  candidates.sort((a, b) => b.score - a.score);
+  return candidates[0] || null;
+}
+
 function findEditorialHeroPicks() {
   const firstSectionId = (currentData.sections[0] || {}).id;
-  const aiPick = findExplicitPick(pick => pick.section.id === 'ai') || findPick('ai', 0) || findPick(firstSectionId, 0);
-  const aiKey = aiPick ? `${aiPick.section.id}:${aiPick.itemIndex}` : '';
-  const secondaryPick = findExplicitPick(pick => `${pick.section.id}:${pick.itemIndex}` !== aiKey)
-    || findPick('indie', 0)
-    || findPick('industry', 0)
-    || findPick(((currentData.sections[1] || currentData.sections[0]) || {}).id, 0);
-  return { aiPick, gamePick: secondaryPick };
+  const aiPick = findHottestPick(['ai', 'tools']) || findPick(firstSectionId, 0);
+  const gamePick = findHottestPick(['indie']) || findPick('indie', 0) || findPick(((currentData.sections[1] || currentData.sections[0]) || {}).id, 0);
+  return { aiPick, gamePick };
 }
 
 function getDisplayDates() {
