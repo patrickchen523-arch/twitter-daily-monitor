@@ -1,0 +1,306 @@
+{
+  "date": "2026-07-08",
+  "meta": {
+    "source": "X/Twitter crawler API",
+    "raw_count": 209,
+    "prefiltered_count": 169,
+    "selected_count": 8,
+    "crawl_time": "2026-07-08 18:00"
+  },
+  "lede": "Fable 用 gpt-image-2 实时生成 FF7 风格游戏世界，边走边建新场景\nSteam 退款政策争议：独立开发者的 2 小时游戏被反复通关后退款",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Fable 用 gpt-image-2 实时生成 FF7 风格游戏世界，边走边建新场景"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Steam 退款政策争议：独立开发者的 2 小时游戏被反复通关后退款"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Fable 用 gpt-image-2 实时生成 FF7 风格游戏世界，navmesh 自动检测 + 边缘场景实时构建\nMajid 程序化地牢接入 4 人合作 ARPG，已可免费玩"
+    },
+    {
+      "id": "industry",
+      "text": "独立开发者呼吁 Steam 修改退款政策：2 小时内通关即可退款的漏洞\nXbox 裁员后续：id Software 被大幅裁减，Obsidian 裁 25%\n初代 Nintendo Switch 将在欧洲停产"
+    },
+    {
+      "id": "indie",
+      "text": "POLYARIS：北极圈滑雪生存 FPS，愿望单突破 10 万\nINCYANSPACE：美丽像素风末世开放世界 ARPG"
+    },
+    {
+      "id": "tools",
+      "text": "开源程序化建筑生成器：Blender 几何节点逆向工程到 TypeScript + three.js"
+    }
+  ],
+  "daily_summary": "**Fable + gpt-image-2 实时构建游戏世界**：开发者用 Fable 创建 FF7 风格游戏世界，自动检测 navmesh、预加载连接路线，地图边缘实时构建新场景。另一位开发者将昨日的程序化地牢生成器接入 4 人合作 ARPG，已可免费玩。\n\n**Steam 退款政策争议**：独立开发者公开呼吁 Steam 修改退款规则，其游戏被玩家在 2 小时内通关后反复退款，引发对短流程游戏保护的讨论。\n\n**Xbox 裁员持续发酵**：id Software（DOOM 开发商）被大幅裁减，Obsidian 裁员 25%。初代 Switch 确认在欧洲停产。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#6C5CE7",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Michael Gill",
+          "tags": [
+            "Fable 5",
+            "gpt-image-2",
+            "FF7",
+            "实时生成"
+          ],
+          "title": "Fable 用 gpt-image-2 实时生成 FF7 风格游戏世界，边缘场景实时构建",
+          "en_title": "Creating a FF7-style game world with gpt-image-2, detecting a navmesh, pre-fetching connecting routes, building new scenes on the fly.",
+          "full_text": "I gave Fable my project from last year and it just knocked it out of the park. \n\nCreating a FF7-style game world with gpt-image-2, detecting a navmesh, pre-fetching connecting routes on the overall map, and at the edge of the map it's building new scenes on the fly.",
+          "author": "gill_works",
+          "date": "2026-07-05",
+          "likes": 504,
+          "views": 83079,
+          "link": "https://x.com/gill_works/status/2073869404182585683",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073868848110194688/img/PuawOkXEYnUROLLG.jpg",
+            "video_url": "https://x.com/gill_works/status/2073869404182585683/video/1"
+          },
+          "summary": "开发者用 Fable 创建 FF7 风格游戏世界，结合 gpt-image-2 生成场景图、自动检测 navmesh、预加载连接路线，并在地图边缘实时构建新场景。",
+          "analysis": "这是 AI 游戏开发的重要进展：不只是生成单个关卡，而是整个游戏世界可以“边走边建”。对开放世界游戏而言，这意味着无限地图不再需要手工制作。",
+          "recommendation": "Fable 用 gpt-image-2 实时生成 FF7 风格游戏世界，边走边建新场景"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Majid Manzarpour",
+          "tags": [
+            "Fable 5",
+            "three.js",
+            "ARPG",
+            "4人合作"
+          ],
+          "title": "Majid 将程序化地牢接入 4 人合作 ARPG，已可免费玩",
+          "en_title": "I wired up procedural dungeons into my @threejs 4-player co-op ARPG, try Descent mode with your friends!",
+          "full_text": "I wired up procedural dungeons into my @threejs 4-player co-op ARPG, try \"Descent\" mode with your friends!\n\nPlay for free: https://t.co/5N4V9VCGrH",
+          "author": "majidmanzarpour",
+          "date": "2026-07-06",
+          "likes": 349,
+          "views": 28387,
+          "link": "https://x.com/majidmanzarpour/status/2074136828290965831",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074135466673094656/img/kVZX9HfhjPHGoX8x.jpg",
+            "video_url": "https://x.com/majidmanzarpour/status/2074136828290965831/video/1"
+          },
+          "summary": "昨日做出程序化地牢生成器的开发者，已将其接入 three.js 4人合作 ARPG 的“Descent”模式，可免费体验。",
+          "analysis": "从“AI生成Demo”到“接入可玩游戏”只用了1天。这展示了 AI 生成内容集成到真实项目的速度。",
+          "recommendation": "Majid 将昨日的程序化地牢生成器接入 4 人合作 ARPG，已可免费玩"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "GAME INDUSTRY",
+      "color": "#C0392B",
+      "items": [
+        {
+          "idx": "游戏行业动态 01",
+          "source": "Destructoid",
+          "tags": [
+            "Steam",
+            "退款政策",
+            "独立游戏",
+            "争议"
+          ],
+          "title": "独立开发者呼吁 Steam 修改退款政策：游戏被 2 小时内通关后反复退款",
+          "en_title": "'This should not be possible:' Indie developer implores Steam to revisit refund policy as his game keeps getting returned by people who beat it under two hours",
+          "full_text": "'This should not be possible:' Indie developer implores Steam to revisit refund policy as his game keeps getting returned by people who beat it under two hours",
+          "author": "destructoid",
+          "date": "2026-07-05",
+          "likes": 167,
+          "views": 136756,
+          "link": "https://x.com/destructoid/status/2073854878221316508",
+          "media": null,
+          "summary": "独立开发者公开指出 Steam 退款政策存在漏洞：玩家在 2 小时内通关后可以全额退款，导致短流程游戏被反复“免费玩”。开发者认为“这不应该发生”。",
+          "analysis": "Steam 的 2 小时退款窗口对短流程独立游戏不公平。这个问题对所有制作 1-3 小时体验的开发者都有影响，尤其是解谜、叙事、恐怖类游戏。",
+          "recommendation": "独立开发者呼吁 Steam 修改退款政策：玩家 2 小时通关后即可全额退款，短游戏无法自保"
+        },
+        {
+          "idx": "游戏行业动态 02",
+          "source": "Digital Foundry",
+          "tags": [
+            "Xbox",
+            "裁员",
+            "id Software",
+            "Obsidian"
+          ],
+          "title": "Xbox 裁员后续：id Software 被大幅裁减，Obsidian 裁员 25%",
+          "en_title": "Xbox Layoffs: id Software Reportedly Gutted, Obsidian Hit Hard With 25% Of Devs Cut",
+          "full_text": "Xbox Layoffs Announced: 1600 Now, 1600 More into 2028, Four Studios Leave and id Software Reportedly Gutted.",
+          "author": "digitalfoundry",
+          "date": "2026-07-07",
+          "likes": 477,
+          "views": 38577,
+          "link": "https://x.com/digitalfoundry/status/2074444582209589658",
+          "media": null,
+          "summary": "Xbox 裁员的更多细节浮出：id Software（DOOM 开发商）据报被大幅裁减，Obsidian（Avowed 开发商）裁员 25%。这是昨日 3200 人裁员的后续影响。",
+          "analysis": "id Software 被裁减意味着 DOOM 系列的未来不确定。Obsidian 裁 25% 后，Avowed 后续支持和下一个项目都受影响。",
+          "recommendation": "Xbox 裁员后续：id Software（DOOM）被大幅裁减，Obsidian（Avowed）裁 25%"
+        },
+        {
+          "idx": "游戏行业动态 03",
+          "source": "GameSpot",
+          "tags": [
+            "Nintendo",
+            "Switch",
+            "停产",
+            "欧洲"
+          ],
+          "title": "初代 Nintendo Switch 将在欧洲停产",
+          "en_title": "Original Nintendo Switch Will Be Discontinued In Europe",
+          "full_text": "Original Nintendo Switch Will Be Discontinued In Europe",
+          "author": "GameSpot",
+          "date": "2026-07-07",
+          "likes": 54,
+          "views": 23108,
+          "link": "https://x.com/GameSpot/status/2074300181366145530",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMllBaIbsAARZXe.jpg"
+          },
+          "summary": "任天堂确认初代 Nintendo Switch 将在欧洲停产，为 Switch 2 让路。",
+          "analysis": "Switch 上市 9 年后正式退场，标志任天堂全面转向 Switch 2 世代。对开发者而言，旧平台的用户基数仍在但新增将停止。",
+          "recommendation": "初代 Switch 欧洲停产，上市 9 年后正式退场为 Switch 2 让路"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "NEW GAMES",
+      "color": "#27AE60",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Game*Spark",
+          "tags": [
+            "生存",
+            "FPS",
+            "北极圈",
+            "滑雪"
+          ],
+          "title": "POLYARIS：北极圈滑雪生存 FPS，愿望单突破 10 万，对标 The Long Dark",
+          "en_title": "POLYARIS, a first-person survival game exploring the Arctic on skis, has surpassed 100,000 wishlists. In development for fans of The Long Dark.",
+          "full_text": "北極圈をスキーで探索する一人称視点サバイバル『POLYARIS』ウィッシュリスト登録数10万件突破！『The Long Dark』などのファンに向けて開発中",
+          "author": "gamespark",
+          "date": "2026-07-06",
+          "likes": 357,
+          "views": 93831,
+          "link": "https://x.com/gamespark/status/2074252352736080069",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2074252074708279296/pu/img/WxBdf-vuHbtGvwjY.jpg",
+            "video_url": "https://x.com/gamespark/status/2074252352736080069/video/1"
+          },
+          "summary": "北极圈滑雪探索生存游戏 POLYARIS 愿望单突破 10 万。一人称视角，对标 The Long Dark，主打极地氛围和生存压力。",
+          "analysis": "",
+          "recommendation": "POLYARIS：北极圈滑雪生存 FPS，对标 The Long Dark，愿望单已突破 10 万",
+          "enrichment": {
+            "game_name": "POLYARIS",
+            "genre": "生存 / FPS / 开放世界",
+            "developer": "未公布",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "release_date": "未定",
+            "positioning": "北极圈滑雪探索生存，对标 The Long Dark",
+            "why_notable": "愿望单突破 10 万证明市场需求强烈，北极圈+滑雪的设定在生存品类中很稀缺",
+            "description": "POLYARIS 是一款北极圈背景的一人称生存游戏，玩家用滑雪板探索极地环境。对标 The Long Dark，主打极地氛围和生存压力。愿望单已突破 10 万。\n\nSteam 状态：开发中\n信源：Game*Spark 日文游戏资讯"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Indie Freaks",
+          "tags": [
+            "像素风",
+            "ARPG",
+            "开放世界",
+            "末世"
+          ],
+          "title": "INCYANSPACE：美丽像素风末世开放世界 ARPG，多职业+天赋树+农业钓鱼",
+          "en_title": "INCYANSPACE: A beautiful pixel art post-apocalyptic open world action RPG with classes, talent trees, combat, farming and fishing.",
+          "full_text": "《日本語対応》美麗ピクセルアートで描く、終末オープンワールド・アクションRPG『INCYANSPACE』\n\n多彩なクラスとタレンツリーで、プレイスタイルに合わせてビルドを構築。困っている人々を助け、機械と戦い、廃壟を漁って物資調達。あるいは、のんびり農業や釣りを楽しむのも良い。",
+          "author": "Indie_FreaksJP",
+          "date": "2026-07-07",
+          "likes": 700,
+          "views": 70874,
+          "link": "https://x.com/Indie_FreaksJP/status/2074327599510343928",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMl9XmRbEAA0-PB.jpg"
+          },
+          "summary": "INCYANSPACE 是美丽像素风末世开放世界 ARPG。多职业、天赋树、战斗与探索并行，也可以放松种田钓鱼。支持日文。",
+          "analysis": "",
+          "recommendation": "INCYANSPACE：像素美术的末世开放世界 ARPG，多职业建造+战斗+农业钓鱼",
+          "enrichment": {
+            "game_name": "INCYANSPACE",
+            "genre": "像素 ARPG / 开放世界 / 生存",
+            "developer": "未公布",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "release_date": "未定",
+            "positioning": "像素美术末世 ARPG，多职业+天赋树+农业钓鱼",
+            "why_notable": "像素美术精美，末世题材+多玩法融合（战斗/探索/种田），700赞热度高",
+            "description": "INCYANSPACE 是一款美丽像素风末世开放世界 ARPG。玩家可选多种职业、构建天赋树，在废墟中探索战斗、调达物资，或者放松种田钓鱼。支持日文。\n\nSteam 状态：开发中\n信源：Indie Freaks JP 推文"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Chiro Visuals",
+          "tags": [
+            "three.js",
+            "Blender",
+            "程序化建筑",
+            "开源"
+          ],
+          "title": "开源程序化建筑生成器：Blender 几何节点逆向工程到 TypeScript + three.js",
+          "en_title": "Opensource fully procedural building generator using @threejs. Reverse-engineered a Blender geometry nodes graph to TypeScript. GPU instancing, real-time snow, rain & wet surfaces.",
+          "full_text": "This is an opensource fully procedural building generator running using @threejs. Building customization, (GPU instancing). Real-time snow, rain & wet surfaces.\n\nI reverse-engineered a Blender geometry nodes graph to TypeScript.\n\nSource code:\nhttps://t.co/XH3sNizfM5",
+          "author": "chirovisuals",
+          "date": "2026-07-06",
+          "likes": 1298,
+          "views": 62777,
+          "link": "https://x.com/chirovisuals/status/2074135400138830228",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074132981313077248/img/4Ev6OQxGrwEipVjo.jpg",
+            "video_url": "https://x.com/chirovisuals/status/2074135400138830228/video/1"
+          },
+          "summary": "开源程序化建筑生成器，将 Blender 几何节点图逆向工程到 TypeScript。支持 GPU 实例化、实时雪/雨/湿润表面效果。代码已开源。",
+          "analysis": "将 Blender 节点工作流移植到 Web 是有价值的技术方向。对需要在浏览器中生成城市场景的项目有直接参考价值。",
+          "recommendation": "开源程序化建筑生成器：Blender 几何节点逆向到 TypeScript，GPU 实例化+实时天气"
+        }
+      ]
+    }
+  ]
+}
