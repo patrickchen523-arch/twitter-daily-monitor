@@ -120,8 +120,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.92);backdro
 footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padding:24px 0;border-top:1px solid var(--border)}
 
 /* Roblox viewer */
-.roblox-view{display:none;max-width:1200px;margin:0 auto;padding:24px 24px 80px}
+.roblox-view{display:none;max-width:none;margin:0;padding:0 0 80px}
 .roblox-view.active{display:block}
+.roblox-view-inner{max-width:1200px;margin:0 auto;padding:24px}
 .roblox-weeks{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
 .roblox-week-btn{font-size:13px;font-weight:600;padding:8px 16px;border-radius:8px;cursor:pointer;border:1.5px solid var(--border);background:var(--card);color:var(--ink2);transition:all .2s;box-shadow:var(--shadow)}
 .roblox-week-btn:hover{border-color:var(--gold-border);background:var(--gold-light)}
@@ -279,9 +280,9 @@ body.editorial-mode #digestV2{margin:0}
 body.editorial-mode #content,body.editorial-mode #dailySummary,body.editorial-mode #digest,body.editorial-mode #noResults{display:none!important}
 .ed-shell{min-height:100vh;overflow:hidden;font-family:"Nunito Sans","Microsoft YaHei",sans-serif;color:#3c2b27}
 .ed-shell a{color:inherit;text-decoration:none}.ed-shell img{display:block;max-width:100%}
-.ed-top-nav{height:66px;background:rgba(255,255,255,.985);display:grid;grid-template-columns:repeat(3,1fr) 170px repeat(3,1fr);align-items:center;padding:0 34px;position:sticky;top:0;z-index:2147483000;overflow:visible;isolation:isolate;box-shadow:0 1px 0 rgba(0,0,0,.04);text-transform:uppercase;letter-spacing:.09em;font-family:"Nunito Sans","Microsoft YaHei",sans-serif;font-size:11px;font-weight:900;color:rgba(60,43,39,.72)}
+.ed-top-nav{height:66px;background:rgba(255,255,255,.985);display:grid;grid-template-columns:repeat(3,1fr) 170px repeat(3,1fr);align-items:center;padding:0 34px;position:sticky;top:0;z-index:2147483000;overflow:visible;isolation:isolate;box-shadow:0 1px 0 rgba(0,0,0,.04);text-transform:uppercase;letter-spacing:.09em;font-family:"Nunito Sans","Microsoft YaHei",sans-serif;font-size:14px;font-weight:900;color:rgba(60,43,39,.72)}
 .ed-top-nav::after{content:none;display:none}
-.ed-top-nav a,.ed-top-nav button,.ed-top-nav .ed-nav-icon,.ed-search-entry{position:relative;z-index:3;text-align:center}.ed-category-tab{border:0;background:transparent;color:rgba(60,43,39,.72);font:inherit;text-transform:none;letter-spacing:.04em;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:0;height:66px;padding:0 8px;white-space:nowrap;transition:color .2s ease,font-size .2s ease,letter-spacing .2s ease,transform .2s ease}.ed-category-tab span{color:rgba(60,43,39,.48);font-size:10px;font-weight:900}.ed-category-tab:hover,.ed-category-tab.on{color:#A33A2F}.ed-category-tab.on span{color:#A33A2F}.ed-category-tab.is-feature{z-index:10;isolation:isolate;color:#C76355;font-size:18px;font-weight:900;letter-spacing:.12em;transform:translateX(.06em)}.ed-category-tab.is-feature::after{content:"";position:absolute;left:50%;bottom:-23px;transform:translateX(-50%);width:min(172px,calc(100% + 56px));height:46px;background:rgba(255,255,255,.985);border-radius:0 0 90px 90px;box-shadow:0 1px 0 rgba(0,0,0,.025),0 10px 24px rgba(60,43,39,.04);z-index:-1;pointer-events:none}.ed-category-tab.is-feature span{color:#A33A2F;font-size:10px;letter-spacing:0}.ed-brand{font-family:"Nunito Sans","Microsoft YaHei",sans-serif;text-transform:uppercase}.ed-brand:not(.is-feature){font-size:11px;letter-spacing:.16em;transform:none;color:rgba(60,43,39,.72)}.ed-brand.is-feature{font-size:22px;letter-spacing:.38em;transform:translateX(.19em)}.ed-brand::before{content:none!important;display:none!important}.ed-search-entry{height:66px;display:flex;align-items:center;justify-content:center;gap:8px;min-width:0;margin:0;color:rgba(60,43,39,.58)}.ed-search-button{width:24px;height:32px;display:flex;align-items:center;justify-content:center;border:0;background:transparent;color:#A33A2F;font-size:15px;line-height:1;cursor:pointer;padding:0}.ed-search-button:hover{color:#873026}.ed-search-entry input{width:min(150px,100%);height:32px;border:1px solid rgba(135,48,38,.18);border-radius:999px;background:rgba(255,250,244,.78);outline:0;padding:0 12px;color:#3c2b27;font-size:12px;font-weight:800;letter-spacing:0;text-transform:none}.ed-search-entry input:focus{border-color:rgba(163,58,47,.45);box-shadow:0 8px 18px rgba(91,52,46,.08)}.ed-search-entry input::placeholder{color:rgba(139,113,105,.7)}
+.ed-top-nav a,.ed-top-nav button,.ed-top-nav .ed-nav-icon,.ed-search-entry{position:relative;z-index:3;text-align:center}.ed-category-tab{border:0;background:transparent;color:rgba(60,43,39,.72);font:inherit;text-transform:none;letter-spacing:.04em;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:0;height:66px;padding:0 8px;white-space:nowrap;transition:color .2s ease,font-size .2s ease,letter-spacing .2s ease,transform .2s ease}.ed-category-tab span{color:rgba(60,43,39,.48);font-size:10px;font-weight:900}.ed-category-tab:hover,.ed-category-tab.on{color:#A33A2F}.ed-category-tab.on span{color:#A33A2F}.ed-category-tab.is-feature{z-index:10;isolation:isolate;color:#C76355;font-size:18px;font-weight:900;letter-spacing:.12em;transform:translateX(.06em)}.ed-category-tab.is-feature::after{content:"";position:absolute;left:50%;bottom:-23px;transform:translateX(-50%);width:min(172px,calc(100% + 56px));height:46px;background:rgba(255,255,255,.985);border-radius:0 0 90px 90px;box-shadow:0 1px 0 rgba(0,0,0,.025),0 10px 24px rgba(60,43,39,.04);z-index:-1;pointer-events:none}.ed-category-tab.is-feature span{color:#A33A2F;font-size:10px;letter-spacing:0}.ed-brand{font-family:"Nunito Sans","Microsoft YaHei",sans-serif;text-transform:uppercase}.ed-brand:not(.is-feature){font-size:14px;letter-spacing:.16em;transform:none;color:rgba(60,43,39,.72)}.ed-brand.is-feature{font-size:22px;letter-spacing:.38em;transform:translateX(.19em)}.ed-brand::before{content:none!important;display:none!important}.ed-search-entry{height:66px;display:flex;align-items:center;justify-content:center;gap:8px;min-width:0;margin:0;color:rgba(60,43,39,.58)}.ed-search-button{width:24px;height:32px;display:flex;align-items:center;justify-content:center;border:0;background:transparent;color:#A33A2F;font-size:15px;line-height:1;cursor:pointer;padding:0}.ed-search-button:hover{color:#873026}.ed-search-entry input{width:min(150px,100%);height:32px;border:1px solid rgba(135,48,38,.18);border-radius:999px;background:rgba(255,250,244,.78);outline:0;padding:0 12px;color:#3c2b27;font-size:12px;font-weight:800;letter-spacing:0;text-transform:none}.ed-search-entry input:focus{border-color:rgba(163,58,47,.45);box-shadow:0 8px 18px rgba(91,52,46,.08)}.ed-search-entry input::placeholder{color:rgba(139,113,105,.7)}
 .ed-nav-icon{display:flex;align-items:center;justify-content:center;gap:8px}.ed-nav-dot{width:8px;height:8px;border-radius:50%;background:#873026;box-shadow:12px 0 0 #d1b36f,24px 0 0 rgba(60,43,39,.35)}
 .ed-hero{min-height:720px;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}.ed-hero-left,.ed-hero-right{position:relative;min-height:720px}.ed-hero-left{background:linear-gradient(90deg,rgba(163,58,47,.72) 0 14%,transparent 14% 100%),repeating-linear-gradient(135deg,rgba(255,255,255,.38) 0 2px,transparent 2px 8px),#f6f0e8;padding:88px 7vw 72px 8.7vw}.ed-hero-right{background:#A33A2F;padding:86px 7vw 72px;display:flex;align-items:center;justify-content:center}
 .ed-gold-plate{position:absolute;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle at 35% 32%,rgba(255,255,255,.24),transparent 18%),#d1b36f;left:35%;top:104px;transform:translateX(-50%);z-index:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
@@ -298,12 +299,34 @@ body.editorial-mode #content,body.editorial-mode #dailySummary,body.editorial-mo
 .ed-footer{max-width:1220px;margin:42px auto 0;display:flex;justify-content:space-between;gap:20px;color:rgba(60,43,39,.52);font-size:12px;border-top:1px solid rgba(60,43,39,.16);padding-top:20px}
 .ed-controls{max-width:1220px;margin:0 auto 54px;padding:28px 32px 22px;background:rgba(255,250,244,.72);border:1px solid rgba(60,43,39,.14);box-shadow:0 18px 45px rgba(91,52,46,.08);backdrop-filter:blur(12px)}.ed-control-head{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:18px}.ed-control-title{margin:0;font-family:"Noto Serif SC",serif;font-size:22px;font-weight:900;letter-spacing:-.04em;color:#3c2b27}.ed-control-search{display:flex;align-items:center;gap:8px;min-width:230px;height:34px;padding:0 15px;border:1px solid rgba(60,43,39,.16);border-radius:999px;background:rgba(255,255,255,.76);color:#8b7169}.ed-control-search input{width:100%;border:0;outline:0;background:transparent;color:#3c2b27;font-size:13px}.ed-control-search input::placeholder{color:rgba(139,113,105,.72)}.ed-control-tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}.ed-control-pill{display:inline-flex;align-items:center;gap:5px;min-height:38px;padding:0 18px;border:1px solid rgba(60,43,39,.13);border-radius:999px;background:rgba(255,255,255,.7);color:#3c2b27;font-size:13px;font-weight:900;cursor:pointer;transition:all .22s ease}.ed-control-pill:hover{border-color:rgba(135,48,38,.34);transform:translateY(-1px)}.ed-control-pill.on{background:#C63C2F;border-color:#C63C2F;color:#fff;box-shadow:0 12px 24px rgba(198,60,47,.18)}.ed-control-count{font-size:11px;opacity:.68}.ed-control-dates{display:flex;gap:10px;overflow-x:auto;padding:5px 2px 12px;scrollbar-width:thin}.ed-control-dates::-webkit-scrollbar{height:6px}.ed-control-dates::-webkit-scrollbar-thumb{background:rgba(60,43,39,.34);border-radius:6px}.ed-date-btn{flex:0 0 auto;min-width:64px;padding:10px 12px;border:1px solid rgba(60,43,39,.13);border-radius:9px;background:rgba(255,255,255,.7);color:#3c2b27;font-weight:900;font-size:12px;line-height:1.2;cursor:pointer;box-shadow:0 8px 20px rgba(91,52,46,.05)}.ed-date-btn span{display:block;margin-bottom:4px;color:#8b7169;font-size:10px;font-weight:800}.ed-date-btn.on{background:#C63C2F;border-color:#C63C2F;color:#fff}.ed-date-btn.on span{color:rgba(255,255,255,.75)}.ed-date-btn.nodata{opacity:.38;cursor:default;box-shadow:none}
 .ed-search-summary{max-width:1220px;margin:0 auto 24px;padding:26px 30px;background:#fffaf4;border:1px solid rgba(60,43,39,.14);box-shadow:0 16px 40px rgba(91,52,46,.08);color:#3c2b27}.ed-search-kicker{color:#873026;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:900;margin-bottom:8px}.ed-search-title{font-family:"Noto Serif SC",serif;font-size:clamp(28px,3vw,42px);font-weight:700;line-height:1.05;letter-spacing:-.04em;margin:0}.ed-search-sub{margin:12px 0 0;color:#8b7169;font-size:13px;font-weight:800;line-height:1.7}.ed-search-empty{max-width:1220px;margin:0 auto;padding:48px 28px;border:1px dashed rgba(135,48,38,.24);background:rgba(255,250,244,.58);color:#8b7169;text-align:center;font-size:14px;font-weight:800}.ed-search-date-label{display:inline-flex;align-items:center;gap:8px;color:#873026;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.ed-search-date-label::before{content:"";width:30px;height:1px;background:currentColor}
+.ed-gold-plate{display:none}
+.ed-hero-copy-card p,.ed-signal-copy p{font-family:"Noto Serif SC",serif;font-size:19px;line-height:1.72;font-weight:700}
+.ed-weekly-blank{min-height:calc(100vh - 66px);background:#f6f0e8}
+body.editorial-mode.roblox-mode{background:var(--bg);color:var(--ink);font-family:var(--font-sans);line-height:1.7}
 @media(max-width:980px){body.editorial-mode{background:#f6f0e8}.ed-top-nav{grid-template-columns:1fr 1fr 120px 1fr 1fr;padding:0 18px}.ed-top-nav a:nth-child(3),.ed-top-nav a:nth-child(6),.ed-category-tab:nth-child(3),.ed-category-tab:nth-child(6){display:none}.ed-brand{font-size:18px}.ed-hero{grid-template-columns:1fr}.ed-hero-left,.ed-hero-right{min-height:auto;padding:64px 7vw}.ed-hero-feature,.ed-hero-right .ed-hero-feature{width:min(680px,86vw)}.ed-gold-plate{width:280px;height:280px}.ed-intro-grid{grid-template-columns:1fr}.ed-stats{grid-template-columns:repeat(2,1fr)}.ed-stat:nth-child(2){border-right:0}.ed-stat:nth-child(1),.ed-stat:nth-child(2){border-bottom:1px solid rgba(60,43,39,.16)}.ed-signal-panel,.ed-list-panel{padding:42px 28px}.ed-signal-card,.ed-list-card{grid-template-columns:146px 52px minmax(0,1fr);gap:18px}.ed-signal-media,.ed-list-media{width:146px;height:118px}}
 @media(max-width:620px){.ed-top-nav{grid-template-columns:1fr 110px 1fr;font-size:10px}.ed-top-nav a:nth-child(1),.ed-top-nav a:nth-child(2),.ed-top-nav a:nth-child(6),.ed-category-tab:nth-child(1),.ed-category-tab:nth-child(3),.ed-category-tab:nth-child(6),.ed-category-tab:nth-child(7),.ed-search-entry,.ed-nav-icon{display:none}.ed-section-wrap{padding:58px 20px 72px}.ed-stats{grid-template-columns:1fr}.ed-stat{border-right:0;border-bottom:1px solid rgba(60,43,39,.16)}.ed-stat:last-child{border-bottom:0}.ed-hero-photo{padding:12px}.ed-hero-copy-card{padding-left:18px}.ed-signal-panel,.ed-list-panel{padding:34px 18px}.ed-signal-head,.ed-list-section-title{align-items:flex-start;flex-direction:column}.ed-signal-card,.ed-list-card{grid-template-columns:1fr;padding:20px}.ed-signal-media,.ed-list-media{width:100%;height:190px}.ed-signal-num,.ed-list-num{font-size:32px}.ed-list-copy h4{font-size:26px}.ed-hero-copy-card h1,.ed-hero-copy-card h2{font-size:30px}.ed-footer{flex-direction:column}}
 @media(max-width:620px){.ed-control-head{align-items:flex-start;flex-direction:column}.ed-controls{padding:22px 16px 16px}.ed-control-search{width:100%;min-width:0}}
 .ed-date-strip{max-width:1220px;width:100%;margin:0 auto 56px;overflow:hidden;background:rgba(255,250,244,.62);border:1px solid rgba(60,43,39,.12);box-shadow:0 14px 34px rgba(91,52,46,.06);padding:18px 20px 16px;box-sizing:border-box}.ed-date-strip-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px;color:#873026;font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.ed-date-strip-head small{display:block;margin-top:3px;color:#8b7169;font-size:11px;letter-spacing:.08em;text-transform:none}.ed-date-shift{display:flex;gap:8px}.ed-date-shift button{width:34px;height:30px;border:1px solid rgba(135,48,38,.22);border-radius:999px;background:#fffaf4;color:#873026;font-size:17px;font-weight:900;cursor:pointer;box-shadow:0 8px 18px rgba(91,52,46,.06);transition:all .2s ease}.ed-date-shift button:hover{background:#A33A2F;color:#fff;transform:translateY(-1px)}.ed-date-strip .ed-control-dates{width:100%;max-width:100%;box-sizing:border-box;cursor:grab;scrollbar-width:none}.ed-date-strip .ed-control-dates:active{cursor:grabbing}.ed-date-strip .ed-control-dates::-webkit-scrollbar{display:none}.ed-date-strip .ed-date-btn{min-width:92px;padding:12px 16px;border-radius:14px}.ed-date-scrollbar{position:relative;height:18px;margin:12px 2px 0;border-radius:999px;background:linear-gradient(90deg,rgba(60,43,39,.16),rgba(135,48,38,.16));box-shadow:inset 0 0 0 1px rgba(60,43,39,.08);cursor:grab;touch-action:none}.ed-date-scrollbar:active{cursor:grabbing}.ed-date-scroll-thumb{height:18px;border-radius:999px;background:linear-gradient(90deg,#A33A2F,#D1B36F);box-shadow:0 8px 18px rgba(135,48,38,.22);will-change:transform}.ed-top-nav .ed-nav-tab,.ed-top-nav .ed-nav-search{display:none!important}
 @media(max-width:980px){.ed-date-strip{padding:16px 14px}}
 @media(max-width:620px){.ed-date-strip{padding:16px 14px}.ed-date-strip-head{align-items:flex-start;flex-direction:column}.ed-date-strip .ed-date-btn{min-width:84px}}
+@media(max-width:980px){
+  .ed-top-nav{height:88px;display:flex;align-items:flex-start;justify-content:flex-start;gap:0;padding:0 14px 22px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;scroll-snap-type:x proximity}
+  .ed-top-nav::-webkit-scrollbar{display:none}
+  .ed-top-nav>.ed-category-tab{display:inline-flex!important;flex:0 0 auto;min-width:138px;height:66px;scroll-snap-align:center}
+  .ed-top-nav>.ed-brand{min-width:136px}
+  .ed-top-nav>.ed-search-entry{display:flex!important;flex:0 0 194px;height:66px}
+  .ed-category-tab.is-feature::after{bottom:-18px;height:38px}
+  .ed-brand.is-feature{font-size:20px}
+}
+@media(max-width:620px){
+  .ed-top-nav{padding-inline:8px;font-size:13px}
+  .ed-top-nav>.ed-category-tab{min-width:126px;padding-inline:10px}
+  .ed-top-nav>.ed-brand{min-width:120px}
+  .ed-hero-left{padding:48px 22px 56px 34px;background:linear-gradient(90deg,rgba(163,58,47,.78) 0 6px,transparent 6px 100%),repeating-linear-gradient(135deg,rgba(255,255,255,.38) 0 2px,transparent 2px 8px),#f6f0e8}
+  .ed-coral-block{display:none}
+  .ed-hero-feature,.ed-hero-right .ed-hero-feature{width:100%}
+  .ed-hero-copy-card{padding-left:16px}
+}
 </style>
 </head>
 <body class="editorial-mode">
@@ -338,8 +361,11 @@ body.editorial-mode #content,body.editorial-mode #dailySummary,body.editorial-mo
 </div>
 
 <div id="robloxView" class="roblox-view">
-  <div class="roblox-weeks" id="robloxWeeks"></div>
-  <iframe id="robloxFrame" class="roblox-iframe" frameborder="0"></iframe>
+  <div id="robloxEditorialNav"></div>
+  <div class="roblox-view-inner">
+    <div class="roblox-weeks" id="robloxWeeks"></div>
+    <iframe id="robloxFrame" class="roblox-iframe" frameborder="0"></iframe>
+  </div>
 </div>
 
 <footer>热门游戏·AI资讯监控 · Game & AI News Monitor</footer>
@@ -368,20 +394,27 @@ const robloxReports = [
 
 function switchView(view) {
   currentView = view;
-  document.body.classList.toggle('editorial-mode', view === 'twitter' && currentTab === 'digest');
+  document.body.classList.toggle('editorial-mode', view === 'twitter' || view === 'roblox');
+  document.body.classList.toggle('roblox-mode', view === 'roblox');
   document.getElementById('navTwitter').classList.toggle('active', view === 'twitter');
   document.getElementById('navRoblox').classList.toggle('active', view === 'roblox');
   document.getElementById('twitterView').style.display = view === 'twitter' ? '' : 'none';
   document.getElementById('robloxView').classList.toggle('active', view === 'roblox');
-  if (view === 'roblox') renderRoblox();
+  if (view === 'roblox') {
+    resetGlobalSearchMode(true);
+    renderRoblox();
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 30);
+  }
 }
 
 function renderRoblox() {
+  document.getElementById('robloxEditorialNav').innerHTML = `<nav class="ed-top-nav" aria-label="日报与周报导航">${renderEditorialTopNav()}</nav>`;
   const container = document.getElementById('robloxWeeks');
   container.innerHTML = robloxReports.map((r, i) =>
     `<button class="roblox-week-btn ${i === robloxReports.length - 1 ? 'on' : ''}" onclick="loadRoblox(${i})">${r.label}</button>`
   ).join('');
   loadRoblox(robloxReports.length - 1);
+  setTimeout(scrollEditorialActiveNavIntoView, 30);
 }
 
 function loadRoblox(idx) {
@@ -463,7 +496,7 @@ async function loadDate(date, options = {}) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     currentData = await res.json();
     reportCache.set(date, currentData);
-    const validTabs = new Set(['digest', 'all', ...currentData.sections.map(section => section.id)]);
+    const validTabs = new Set(['digest', 'weekly', 'ai', 'industry', 'indie']);
     if (!validTabs.has(currentTab)) currentTab = 'digest';
     renderTabs();
     document.getElementById('digestV2').style.display = '';
@@ -490,13 +523,13 @@ async function loadDate(date, options = {}) {
 
 function renderTabs() {
   const tabs = document.getElementById('catTabs');
-  const total = currentData.sections.reduce((s, sec) => s + sec.items.length, 0);
   let html = `<a class="cat-tab ${currentTab==='digest'?'on':''}" onclick="switchTab('digest')">日精选</a>`;
-  currentData.sections.forEach(sec => {
+  const aiCount = ['ai', 'tools'].reduce((sum, id) => sum + (((currentData.sections.find(sec => sec.id === id) || {}).items || []).length), 0);
+  html += `<a class="cat-tab ${currentTab==='ai'?'on':''}" onclick="switchTab('ai')">AI科技热点<span class="count">${aiCount}</span></a>`;
+  currentData.sections.filter(sec => sec.id !== 'ai' && sec.id !== 'tools').forEach(sec => {
     const active = currentTab === sec.id ? 'on' : '';
     html += `<a class="cat-tab ${active}" onclick="switchTab('${sec.id}')">${sec.title}<span class="count">${sec.items.length}</span></a>`;
   });
-  html += `<a class="cat-tab ${currentTab==='all'?'on':''}" onclick="switchTab('all')">全部<span class="count">${total}</span></a>`;
   tabs.innerHTML = html;
 }
 
@@ -519,6 +552,7 @@ function renderDigestV2() {
   document.body.classList.toggle('editorial-mode', currentView === 'twitter' && currentTab === 'digest');
   container.innerHTML = renderEditorialDigest();
   setTimeout(() => {
+    scrollEditorialActiveNavIntoView();
     scrollEditorialActiveDateIntoView();
     syncEditorialDateScrollbar();
   }, 30);
@@ -632,21 +666,28 @@ function getDisplayDates() {
 
 function renderEditorialTopNav() {
   if (!currentData) return '';
-  const total = currentData.sections.reduce((s, sec) => s + sec.items.length, 0);
   const countById = id => ((currentData.sections.find(sec => sec.id === id) || {}).items || []).length;
-  const titleById = (id, fallback) => (currentData.sections.find(sec => sec.id === id) || {}).title || fallback;
+  const aiCount = countById('ai') + countById('tools');
   const searchInput = document.getElementById('searchInput');
   const query = searchInput ? searchInput.value : '';
-  const activeTab = isGlobalSearchMode ? '' : currentTab;
+  const activeTab = isGlobalSearchMode ? '' : (currentView === 'roblox' ? 'roblox' : currentTab);
   const activeClass = id => activeTab === id ? 'on is-feature' : '';
-  const tab = (id, label, count) => `<button type="button" class="ed-category-tab ${activeClass(id)}" onclick="switchTab('${id}')">${escapeHtml(label)}${count === null ? '' : `<span>${count}</span>`}</button>`;
-  return `${tab('all', '全部', total)}
-    ${tab('ai', titleById('ai', 'AI科技热点'), countById('ai'))}
-    ${tab('industry', titleById('industry', '游戏行业动态'), countById('industry'))}
+  const tab = (id, label, count, action = `switchTab('${id}')`) => `<button type="button" class="ed-category-tab ${activeClass(id)}" onclick="${action}">${escapeHtml(label)}${count === null ? '' : `<span>${count}</span>`}</button>`;
+  return `${tab('ai', 'AI科技热点', aiCount)}
+    ${tab('industry', '游戏行业动态', countById('industry'))}
+    ${tab('indie', '新游推文', countById('indie'))}
     <button type="button" class="ed-category-tab ed-brand ${activeClass('digest')}" onclick="switchTab('digest')" aria-label="返回日精选">DAILY</button>
-    ${tab('indie', titleById('indie', '新游推文'), countById('indie'))}
-    ${tab('tools', titleById('tools', '开发工具'), countById('tools'))}
+    ${tab('weekly', '推特周报', null)}
+    ${tab('roblox', 'ROBLOX周报', null, `switchView('roblox')`)}
     <form class="ed-search-entry" role="search" aria-label="全库搜索" onsubmit="return submitEditorialSearch(event)"><button type="submit" class="ed-search-button" aria-label="搜索">&#x2315;</button><input type="search" value="${escapeHtml(query)}" placeholder="搜索" oninput="handleEditorialSearchInput(this.value)" oncompositionstart="isSearchComposing=true" oncompositionend="isSearchComposing=false; handleEditorialSearchInput(this.value)" onkeydown="handleEditorialSearchKey(event)"></form>`;
+}
+function scrollEditorialActiveNavIntoView() {
+  document.querySelectorAll('.ed-top-nav').forEach(nav => {
+    const active = nav.querySelector('.ed-category-tab.is-feature');
+    if (!active || nav.scrollWidth <= nav.clientWidth) return;
+    const target = active.offsetLeft - Math.max(0, (nav.clientWidth - active.offsetWidth) / 2);
+    nav.scrollLeft = Math.max(0, Math.min(nav.scrollWidth - nav.clientWidth, target));
+  });
 }
 let editorialDateDragState = null;
 
@@ -897,7 +938,7 @@ function renderGlobalSearchCard(result, index) {
     <div class="card-top">
       <span class="card-idx" style="color:${escapeHtml(borderColor)};background:${escapeHtml(idxBg)}">${escapeHtml(item.idx || String(index + 1).padStart(2, '0'))}</span>
       <span class="badge">${escapeHtml(dateLabel)}</span>
-      <span class="badge">${escapeHtml(section.title || section.id)}</span>
+      <span class="badge">${escapeHtml(getEditorialSectionLabel(section) || section.id)}</span>
       ${item.source ? `<span class="badge">${escapeHtml(item.source)}</span>` : ''}
       ${tags.map(t => `<span class="badge">${escapeHtml(t)}</span>`).join('')}
     </div>
@@ -987,6 +1028,7 @@ async function runGlobalSearch(value) {
   }
 
   if (!isGlobalSearchMode) tabBeforeGlobalSearch = currentTab;
+  if (currentView !== 'twitter') switchView('twitter');
   isGlobalSearchMode = true;
   const token = ++globalSearchToken;
   document.body.classList.toggle('editorial-mode', currentView === 'twitter');
@@ -1086,7 +1128,7 @@ function editorialCopy(pick, role) {
     };
   }
   return {
-    label: `${pick.section.title} / Editor's Pick`,
+    label: `${role === 'ai' ? 'AI科技热点' : getEditorialSectionLabel(pick.section)} / Editor's Pick`,
     title: pick.hook || pick.item.title,
     text: pick.item.summary || pick.item.analysis || pick.item.full_text || ''
   };
@@ -1115,7 +1157,7 @@ function getEditorialSignals(heroPicks) {
   currentData.sections.forEach(section => {
     section.items.forEach((item, itemIndex) => {
       if (signals.length >= 6 || heroKeys.has(`${section.id}:${itemIndex}`) || !getCover(item)) return;
-      signals.push({ section, item, tag: section.title, title: item.recommendation || item.title, text: item.summary || item.analysis || '' });
+      signals.push({ section, item, tag: getEditorialSectionLabel(section), title: item.recommendation || item.title, text: item.summary || item.analysis || '' });
     });
   });
   return signals;
@@ -1132,6 +1174,14 @@ function renderEditorialContentShell() {
       <div id="edLegacyContent" class="ed-legacy-content"></div>
       <footer class="ed-footer"><span>Twitter 日报 ${escapeHtml(dateLabel)}</span></footer>
     </main>
+  </div>`;
+}
+function renderEditorialWeeklyShell() {
+  return `<div class="ed-shell">
+    <nav class="ed-top-nav" aria-label="日报与周报导航">
+      ${renderEditorialTopNav()}
+    </nav>
+    <main class="ed-weekly-blank" aria-label="推特周报"></main>
   </div>`;
 }
 function renderEditorialDigest() {
@@ -1156,7 +1206,6 @@ function renderEditorialDigest() {
     <header class="ed-hero" id="overview">
       <div class="ed-hero-left" id="ai">
         <div class="ed-coral-block" aria-hidden="true"></div>
-        <div class="ed-gold-plate" aria-hidden="true"></div>
         <article class="ed-hero-feature">
           ${renderEditorialHeroPhoto(aiPick.item, aiCopy.title)}
           <div class="ed-hero-copy-card">
@@ -1361,6 +1410,7 @@ function renderDigestList() {
 }
 
 function switchTab(tab, scrollToId) {
+  if (currentView !== 'twitter') switchView('twitter');
   resetGlobalSearchMode(true);
   currentTab = tab;
   document.body.classList.toggle('editorial-mode', currentView === 'twitter');
@@ -1372,6 +1422,12 @@ function switchTab(tab, scrollToId) {
   if (tab === 'digest') {
     renderDigestV2();
     if (!scrollToId) setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50);
+  } else if (tab === 'weekly') {
+    document.getElementById('digestV2').innerHTML = renderEditorialWeeklyShell();
+    setTimeout(() => {
+      scrollEditorialActiveNavIntoView();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50);
   } else {
     document.getElementById('digestV2').innerHTML = renderEditorialContentShell();
     renderContent('edLegacyContent');
@@ -1382,6 +1438,7 @@ function switchTab(tab, scrollToId) {
       } else {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
+      scrollEditorialActiveNavIntoView();
       syncEditorialDateScrollbar();
     }, 50);
   }
@@ -1389,22 +1446,22 @@ function switchTab(tab, scrollToId) {
 
 function jumpToCard(sectionId, itemIndex) {
   const cardId = `card-${sectionId}-${itemIndex}`;
-  switchTab(sectionId, cardId);
+  switchTab(sectionId === 'tools' ? 'ai' : sectionId, cardId);
+}
+
+function getEditorialSectionLabel(section) {
+  return section && (section.id === 'ai' || section.id === 'tools') ? 'AI科技热点' : ((section && section.title) || '');
 }
 
 function renderContent(targetId = 'content') {
   const container = document.getElementById(targetId);
   let html = '';
 
-  const sections = currentTab === 'all'
-    ? currentData.sections
+  const sections = currentTab === 'ai'
+    ? currentData.sections.filter(s => s.id === 'ai' || s.id === 'tools')
     : currentData.sections.filter(s => s.id === currentTab);
 
   sections.forEach(sec => {
-    if (currentTab === 'all') {
-      html += `<div class="sec-heading"><span class="sec-dot" style="background:${sec.color}"></span>${sec.title} · ${sec.title_en}（${sec.items.length}）</div>`;
-    }
-
     sec.items.forEach((item, itemIdx) => {
       const borderColor = sec.color;
       const idxColor = sec.color;
