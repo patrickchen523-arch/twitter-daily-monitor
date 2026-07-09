@@ -1,0 +1,310 @@
+{
+  "date": "2026-07-09",
+  "meta": {
+    "source": "X/Twitter crawler API",
+    "raw_count": 233,
+    "prefiltered_count": 186,
+    "selected_count": 8,
+    "crawl_time": "2026-07-09 18:00"
+  },
+  "lede": "OpenAI 宣布 GPT-5.6 Sol/Terra/Luna 本周四公开发布\nAnthropic 新研究：Claude 内部发现类似人类意识的“全局工作空间”结构",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "OpenAI 宣布 GPT-5.6 Sol/Terra/Luna 本周四公开发布"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 1,
+      "hook": "Anthropic 新研究：Claude 内部发现类似人类意识的“全局工作空间”结构"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "OpenAI 宣布 GPT-5.6 Sol/Terra/Luna 本周四公开发布，已开始全球预览访问\nAnthropic 研究发现 Claude 内部存在类似人类意识的“全局工作空间”结构\nAI 1天做出回合制战斗游戏完整场景（Fable 5+GPT image2+Blender+Rodin）"
+    },
+    {
+      "id": "industry",
+      "text": "AC Black Flag Resynced 评测解禁：画面精美但不如原版有趣，“过时的翻新”\n微软考虑让更多第一方游戏回归 Xbox 独占"
+    },
+    {
+      "id": "indie",
+      "text": "ArcheAge Chronicles 法师战斗展示，新 MMO 项目继续曝光\nKingdom Chronicle：回合制幻想战略 SLG，全可玩免费版同步提供"
+    },
+    {
+      "id": "tools",
+      "text": "Claude Code + Fable 3小时做出交互式地形图可视化"
+    }
+  ],
+  "daily_summary": "**GPT-5.6 Sol 本周四发布**：OpenAI 宣布 GPT-5.6 Sol、Terra、Luna 三个模型将于本周四公开发布，已开始全球预览访问。\n\n**Anthropic “全局工作空间”研究**：在 Claude 内部发现了类似人类意识的结构——大脑中只有极少部分是“可意识访问”的，Claude 内部存在类似的分隔。\n\n**AC Black Flag Resynced 评测解禁**：多家媒体评测认为画面精美但玩法体验不如 2013 年原版，PC Gamer 称“通关后重装原版玩得更开心”。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#6C5CE7",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "OpenAI",
+          "tags": [
+            "GPT-5.6",
+            "Sol",
+            "Terra",
+            "Luna"
+          ],
+          "title": "OpenAI 宣布 GPT-5.6 Sol/Terra/Luna 本周四公开发布，已开始全球预览",
+          "en_title": "GPT-5.6 Sol, along with Terra and Luna, will launch publicly this Thursday. We're expanding preview access globally now.",
+          "full_text": "GPT-5.6 Sol, along with Terra and Luna, will launch publicly this Thursday.\n\nWe're expanding preview access globally now.",
+          "author": "OpenAI",
+          "date": "2026-07-08",
+          "likes": 40837,
+          "views": 5498423,
+          "link": "https://x.com/OpenAI/status/2074704958419792299",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMrU7U7bwAEO8yf.jpg"
+          },
+          "summary": "OpenAI 宣布 GPT-5.6 Sol、Terra、Luna 三个模型将于本周四公开发布。预览访问已开始全球扩展。",
+          "analysis": "这是 OpenAI 在 GPT-5 基础上的重要迭代。三个模型同时发布说明 OpenAI 正在推进模型分层策略（类似 Anthropic 的 Haiku/Sonnet/Opus）。对开发者和企业用户影响巨大。",
+          "recommendation": "OpenAI 宣布 GPT-5.6 Sol/Terra/Luna 本周四公开发布，预览已全球开放"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Anthropic",
+          "tags": [
+            "Anthropic",
+            "研究",
+            "意识",
+            "Claude"
+          ],
+          "title": "Anthropic 新研究：Claude 内部发现类似人类意识的“全局工作空间”结构",
+          "en_title": "New Anthropic research: A global workspace in language models. Of everything happening in your brain right now, only a tiny fraction is consciously accessible. We found a strikingly similar divide inside Claude.",
+          "full_text": "New Anthropic research: A global workspace in language models.\n\nOf everything happening in your brain right now, only a tiny fraction is consciously accessible—thoughts you can describe, hold in mind, and reason with.\n\nWe found a strikingly similar divide inside Claude.",
+          "author": "AnthropicAI",
+          "date": "2026-07-06",
+          "likes": 27227,
+          "views": 9400598,
+          "link": "https://x.com/AnthropicAI/status/2074185348142280912",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMj8zKXXoAAohgS.jpg"
+          },
+          "summary": "Anthropic 新研究发现 Claude 内部存在类似人类意识的结构：大脑中只有极小部分信息是“可意识访问”的，Claude 内部存在类似的分隔。",
+          "analysis": "这是 AI 可解释性研究的重要突破。“全局工作空间”是意识科学中的经典理论，在 LLM 中发现类似结构对理解 AI 如何“思考”有深远意义。",
+          "recommendation": "Anthropic 新研究：Claude 内部存在类似人类意识的“全局工作空间”结构——9.4M views"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "gimu",
+          "tags": [
+            "Fable 5",
+            "GPT image2",
+            "Rodin",
+            "游戏开发"
+          ],
+          "title": "AI 1天做出回合制战斗游戏场景：Fable 5 + GPT image2 + Blender + Rodin + Mixamo",
+          "en_title": "Made a turn-based battle game scene with AI in 1 day! System: Fable 5, Effects: Fable 5 x Blender, Characters: GPT image2 x Rodin, BG: GPT image2, Animation: mixamo, Fix: Sonnet 5",
+          "full_text": "AIでターン制バトルゲームのバトルシーンを作ってみた！\n所要時隓1日でここまで作れるとは！\n\n・ゲームシステム: Fable 5\n・エフェクト: Fable 5 × Blender\n・キャラクター: GPT image2 × Rodin\n・背景画像: GPT image2\n・アニメーション: mixamo\n・音楽: フリー素材\n・修正: Sonnet 5",
+          "author": "gimu_ai",
+          "date": "2026-07-07",
+          "likes": 669,
+          "views": 102993,
+          "link": "https://x.com/gimu_ai/status/2074628342108876901",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074627520687984640/img/ZlAGJ-OIDfSFJU5d.jpg",
+            "video_url": "https://x.com/gimu_ai/status/2074628342108876901/video/1"
+          },
+          "summary": "开发者 1 天内用 AI 工具链做出回合制战斗游戏场景。游戏系统用 Fable 5，角色用 GPT image2+Rodin，背景用 GPT image2，动画用 Mixamo，修正用 Sonnet 5。",
+          "analysis": "完整展示了’AI 游戏开发工具链”的当前状态：多个 AI 工具各司其职（系统/角色/背景/动画），组合后 1 天可产出可展示的游戏场景。",
+          "recommendation": "AI 工具链 1 天做出回合制战斗场景：Fable 5 + GPT image2 + Rodin + Mixamo 各司其职"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "GAME INDUSTRY",
+      "color": "#C0392B",
+      "items": [
+        {
+          "idx": "游戏行业动态 01",
+          "source": "PC Gamer / Eurogamer / Polygon",
+          "tags": [
+            "AC",
+            "Black Flag",
+            "评测",
+            "翻新"
+          ],
+          "title": "AC Black Flag Resynced 评测解禁：画面精美但玩起来不如 2013 年原版",
+          "en_title": "AC Black Flag Resynced review: Ridiculously beautiful, improves in several ways, but after credits I reinstalled the original and had so much more fun.",
+          "full_text": "Resynced is good. It's slick, ridiculously beautiful, and improves on the original Black Flag in several ways. For a while, I even believed it would outshine the original Black Flag. But then, after rolling credits, I reinstalled that original game, and had so much more fun in Black Flag 2013 that I just kept playing.",
+          "author": "pcgamer",
+          "date": "2026-07-08",
+          "likes": 114,
+          "views": 41264,
+          "link": "https://x.com/pcgamer/status/2074825892010840371",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMtDJugaQAASOXu.jpg"
+          },
+          "summary": "- AC Black Flag Resynced 多家媒体评测解禁\n- 画面精美、多项改进，但玩法体验不如原版\n- PC Gamer：“通关后重装原版玩得更开心”\n- Eurogamer：“每个正面改变下都藏着负面”\n- Polygon：“过时的翻新”",
+          "analysis": "这个案例说明“画面翻新”并不等于“更好的游戏”。原版 Black Flag 的自由度和反馈感被“现代化”改造削弱了。对翻新项目的警示：保留原作灵魂比画面升级更重要。",
+          "recommendation": "AC Black Flag Resynced 评测解禁：画面精美但不如原版有趣，PC Gamer“通关后重装原版玩得更开心”"
+        },
+        {
+          "idx": "游戏行业动态 02",
+          "source": "Eurogamer",
+          "tags": [
+            "Xbox",
+            "微软",
+            "独占",
+            "策略"
+          ],
+          "title": "微软考虑让更多第一方游戏回归 Xbox 独占",
+          "en_title": "Microsoft is reportedly considering making more of its first-party games exclusive to Xbox",
+          "full_text": "Microsoft is reportedly considering making more of its first-party games exclusive to Xbox",
+          "author": "eurogamer",
+          "date": "2026-07-08",
+          "likes": 408,
+          "views": 25776,
+          "link": "https://x.com/eurogamer/status/2074828115893993894",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMtFKrBaAAADyc1.jpg"
+          },
+          "summary": "据报道，微软正在考虑让更多第一方游戏回归 Xbox 独占。这是裁员后的策略调整，与此前多平台策略相矛盾。",
+          "analysis": "裁员 + 回归独占 = 微软正在否定 Phil Spencer 时代的多平台策略。新 CEO Asha Sharma 明确表示 Game Pass+多平台“增长未达预期”，现在要走回独占拉硬件销量的老路。",
+          "recommendation": "微软考虑让更多第一方游戏回归 Xbox 独占，与此前多平台策略矛盾"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "NEW GAMES",
+      "color": "#27AE60",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "ArcheAge Chronicles",
+          "tags": [
+            "MMO",
+            "法师",
+            "PvP"
+          ],
+          "title": "ArcheAge Chronicles 法师战斗展示：新 MMO 的法术战斗系统",
+          "en_title": "Some reshape the battlefield with magic. Every spell has a purpose. Every cast can turn the tide. Take a look at the Mage in action in ArcheAge Chronicles.",
+          "full_text": "Some reshape the battlefield with magic.✊️\nEvery spell has a purpose. Every cast can turn the tide.\n\nTake a look at the #Mage in action in #ArcheAgeChronicles",
+          "author": "ArcheAgeChron",
+          "date": "2026-07-08",
+          "likes": 1017,
+          "views": 95824,
+          "link": "https://x.com/ArcheAgeChron/status/2074649910394470670",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074649803443867648/img/GiJvSX5pNsFyOe4Q.jpg",
+            "video_url": "https://x.com/ArcheAgeChron/status/2074649910394470670/video/1"
+          },
+          "summary": "ArcheAge Chronicles 展示法师职业战斗场景，强调“每个法术都有目的，每次施法都能改变战局”。",
+          "analysis": "",
+          "recommendation": "ArcheAge Chronicles 法师战斗展示：新 MMO 项目的法术战斗系统曝光",
+          "enrichment": {
+            "game_name": "ArcheAge Chronicles",
+            "genre": "MMO / PvP / 开放世界",
+            "developer": "XL Games",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "release_date": "未定",
+            "positioning": "ArcheAge 系列新作，主打法术战斗和 PvP",
+            "why_notable": "ArcheAge IP 新作，展示了法师职业的战斗设计，1017赞热度高",
+            "description": "ArcheAge Chronicles 是 ArcheAge 系列的新 MMO 项目，由 XL Games 开发。本次展示了法师职业的战斗场景，强调每个法术的战术目的性。\n\nSteam 状态：未上架\n信源：官方推特 @ArcheAgeChron"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "gamebiz",
+          "tags": [
+            "战略SLG",
+            "回合制",
+            "幻想",
+            "免费"
+          ],
+          "title": "Kingdom Chronicle：回合制幻想战略 SLG，7月22日发售，同步提供全可玩免费版",
+          "en_title": "Kingdom Chronicle, a turn-based fantasy strategy SLG, launches on Steam July 22. A fully playable free version will also be available.",
+          "full_text": "くそげ工房、ターン制ファンタジー戦略SLG『Kingdom Chronicle』を7月22日20時よりSteamにて発売…全て遊べる無料版も提供",
+          "author": "gamebiznews",
+          "date": "2026-07-08",
+          "likes": 326,
+          "views": 46179,
+          "link": "https://x.com/gamebiznews/status/2074685334429044970",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMrDO9jbYAAH-we.jpg"
+          },
+          "summary": "Kingdom Chronicle 是回合制幻想战略 SLG，7月22日在 Steam 发售。开发者同时提供全部内容可玩的免费版。",
+          "analysis": "",
+          "recommendation": "Kingdom Chronicle：回合制幻想战略 SLG，7/22 发售，同时提供全可玩免费版",
+          "enrichment": {
+            "game_name": "Kingdom Chronicle",
+            "genre": "回合制战略 / SLG / 幻想",
+            "developer": "くそげ工房",
+            "platforms": [
+              "PC"
+            ],
+            "price": "有付费版+免费版",
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "release_date": "2026-07-22",
+            "positioning": "回合制幻想战略，提供全可玩免费版",
+            "why_notable": "同时提供付费版和全可玩免费版的商业模式值得关注",
+            "description": "Kingdom Chronicle 是回合制幻想战略 SLG，由日本独立工作室“くそげ工房”开发。7月22日 Steam 发售，同时提供全部内容可玩的免费版。\n\nSteam 状态：7月22日发售\n信源：gamebiz 日文游戏业界资讯"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Zsolt Kacso",
+          "tags": [
+            "Claude Code",
+            "Fable 5",
+            "Three.js",
+            "可视化"
+          ],
+          "title": "Claude Code + Fable 3小时做出交互式地形图可视化",
+          "en_title": "Always loved these topographic maps and wanted to create something similar with Three.js. 3 hours in Claude Code with Fable.",
+          "full_text": "Always loved these topographic maps and wanted to create something similar with Three.js. \n\n3 hours in Claude Code with Fable.",
+          "author": "kaolti",
+          "date": "2026-07-07",
+          "likes": 1615,
+          "views": 109700,
+          "link": "https://x.com/kaolti/status/2074283600103571575",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074282574214533120/img/zfPGBZWbE7OpHQuC.jpg",
+            "video_url": "https://x.com/kaolti/status/2074283600103571575/video/1"
+          },
+          "summary": "开发者用 Claude Code + Fable 在 3 小时内做出了交互式地形图可视化（Three.js）。",
+          "analysis": "3 小时从想法到可交互原型，展示了 AI 编程工具对创意可视化项目的加速效果。对游戏地图设计、数据可视化项目都有参考价值。",
+          "recommendation": "Claude Code + Fable 3小时做出 Three.js 交互式地形图可视化——1615赞"
+        }
+      ]
+    }
+  ]
+}
