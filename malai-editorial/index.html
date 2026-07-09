@@ -536,12 +536,12 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
 @media(max-width:620px){
   .ed-top-nav{height:auto;min-height:136px;display:flex;flex-wrap:wrap;align-content:flex-start;align-items:stretch;gap:0 4px;padding:6px 10px 10px;overflow:visible;font-size:12px;scroll-snap-type:none}
   .ed-top-nav>.ed-category-tab{display:inline-flex!important;flex:1 1 calc(33.333% - 4px);min-width:0;height:38px;padding:0 3px;letter-spacing:0;scroll-snap-align:none}
-  .ed-top-nav>.ed-brand{order:1;min-width:0}
-  .ed-top-nav>.ed-category-tab:nth-child(1){order:2}
-  .ed-top-nav>.ed-category-tab:nth-child(2){order:3}
-  .ed-top-nav>.ed-category-tab:nth-child(3){order:4}
-  .ed-top-nav>.ed-category-tab:nth-child(5){order:5}
-  .ed-top-nav>.ed-category-tab:nth-child(6){order:6}
+  .ed-top-nav>[data-nav="ai"]{order:1}
+  .ed-top-nav>[data-nav="industry"]{order:2}
+  .ed-top-nav>[data-nav="indie"]{order:3}
+  .ed-top-nav>[data-nav="weekly"]{order:4}
+  .ed-top-nav>[data-nav="digest"]{order:5;min-width:0;color:#A33A2F!important;font-weight:900}
+  .ed-top-nav>[data-nav="roblox"]{order:6}
   .ed-top-nav>.ed-search-entry{order:7;display:flex!important;flex:0 0 100%;height:40px;margin:5px 0 0;padding:0 10px;border:1px solid rgba(135,48,38,.18);border-radius:999px;background:#fffaf4}
   .ed-top-nav>.ed-search-entry input{flex:1;min-width:0;width:auto;height:38px;padding:0 6px;border:0;background:transparent;box-shadow:none}
   .ed-top-nav>.ed-search-entry .ed-search-button{flex:0 0 28px}
@@ -970,11 +970,11 @@ function renderEditorialTopNav() {
   const query = searchInput ? searchInput.value : '';
   const activeTab = isGlobalSearchMode ? '' : (currentView === 'roblox' ? 'roblox' : currentTab);
   const activeClass = id => activeTab === id ? 'on is-feature' : '';
-  const tab = (id, label, count, action = `switchTab('${id}')`) => `<button type="button" class="ed-category-tab ${activeClass(id)}" onclick="${action}">${escapeHtml(label)}${count === null ? '' : `<span>${count}</span>`}</button>`;
+  const tab = (id, label, count, action = `switchTab('${id}')`) => `<button type="button" class="ed-category-tab ${activeClass(id)}" data-nav="${id}" onclick="${action}">${escapeHtml(label)}${count === null ? '' : `<span>${count}</span>`}</button>`;
   return `${tab('ai', 'AI科技热点', aiCount)}
     ${tab('industry', '游戏行业动态', countById('industry'))}
     ${tab('indie', '新游推文', countById('indie'))}
-    <button type="button" class="ed-category-tab ed-brand ${activeClass('digest')}" onclick="switchTab('digest')" aria-label="返回日精选">DAILY</button>
+    <button type="button" class="ed-category-tab ed-brand ${activeClass('digest')}" data-nav="digest" onclick="switchTab('digest')" aria-label="返回日精选">DAILY</button>
     ${tab('weekly', '推特周报', null)}
     ${tab('roblox', 'ROBLOX周报', null, `switchView('roblox')`)}
     <form class="ed-search-entry" role="search" aria-label="全库搜索" onsubmit="return submitEditorialSearch(event)"><button type="submit" class="ed-search-button" aria-label="搜索">&#x2315;</button><input type="search" value="${escapeHtml(query)}" placeholder="搜索" oninput="handleEditorialSearchInput(this.value)" oncompositionstart="isSearchComposing=true" oncompositionend="isSearchComposing=false; handleEditorialSearchInput(this.value)" onkeydown="handleEditorialSearchKey(event)"></form>`;
