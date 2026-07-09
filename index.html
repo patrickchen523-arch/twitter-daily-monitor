@@ -302,6 +302,10 @@ body.editorial-mode #content,body.editorial-mode #dailySummary,body.editorial-mo
 .ed-gold-plate{display:none}
 .ed-hero-copy-card p,.ed-signal-copy p{font-family:"Noto Serif SC",serif;font-size:19px;line-height:1.72;font-weight:700}
 .ed-weekly-blank{min-height:calc(100vh - 66px);background:#f6f0e8}
+.ed-digest-date-band{position:relative;z-index:2;background:#f6f0e8;padding:0 0 56px}
+.ed-digest-date-band .ed-date-strip{max-width:none;margin-bottom:0;border-left:0;border-right:0;box-shadow:none}
+.ed-digest-date-band .ed-date-scrollbar{display:block!important;visibility:visible!important;opacity:1!important;background:#e7d6d1;border:1px solid rgba(135,48,38,.2);box-shadow:inset 0 0 0 1px rgba(255,255,255,.28)}
+.ed-digest-date-band .ed-date-scroll-thumb{display:block!important;visibility:visible!important;opacity:1!important;min-width:72px;background:linear-gradient(90deg,#A33A2F,#D1B36F);box-shadow:0 7px 16px rgba(135,48,38,.28)}
 body.editorial-mode.roblox-mode{background:var(--bg);color:var(--ink);font-family:var(--font-sans);line-height:1.7}
 @media(max-width:980px){body.editorial-mode{background:#f6f0e8}.ed-top-nav{grid-template-columns:1fr 1fr 120px 1fr 1fr;padding:0 18px}.ed-top-nav a:nth-child(3),.ed-top-nav a:nth-child(6),.ed-category-tab:nth-child(3),.ed-category-tab:nth-child(6){display:none}.ed-brand{font-size:18px}.ed-hero{grid-template-columns:1fr}.ed-hero-left,.ed-hero-right{min-height:auto;padding:64px 7vw}.ed-hero-feature,.ed-hero-right .ed-hero-feature{width:min(680px,86vw)}.ed-gold-plate{width:280px;height:280px}.ed-intro-grid{grid-template-columns:1fr}.ed-stats{grid-template-columns:repeat(2,1fr)}.ed-stat:nth-child(2){border-right:0}.ed-stat:nth-child(1),.ed-stat:nth-child(2){border-bottom:1px solid rgba(60,43,39,.16)}.ed-signal-panel,.ed-list-panel{padding:42px 28px}.ed-signal-card,.ed-list-card{grid-template-columns:146px 52px minmax(0,1fr);gap:18px}.ed-signal-media,.ed-list-media{width:146px;height:118px}}
 @media(max-width:620px){.ed-top-nav{grid-template-columns:1fr 110px 1fr;font-size:10px}.ed-top-nav a:nth-child(1),.ed-top-nav a:nth-child(2),.ed-top-nav a:nth-child(6),.ed-category-tab:nth-child(1),.ed-category-tab:nth-child(3),.ed-category-tab:nth-child(6),.ed-category-tab:nth-child(7),.ed-search-entry,.ed-nav-icon{display:none}.ed-section-wrap{padding:58px 20px 72px}.ed-stats{grid-template-columns:1fr}.ed-stat{border-right:0;border-bottom:1px solid rgba(60,43,39,.16)}.ed-stat:last-child{border-bottom:0}.ed-hero-photo{padding:12px}.ed-hero-copy-card{padding-left:18px}.ed-signal-panel,.ed-list-panel{padding:34px 18px}.ed-signal-head,.ed-list-section-title{align-items:flex-start;flex-direction:column}.ed-signal-card,.ed-list-card{grid-template-columns:1fr;padding:20px}.ed-signal-media,.ed-list-media{width:100%;height:190px}.ed-signal-num,.ed-list-num{font-size:32px}.ed-list-copy h4{font-size:26px}.ed-hero-copy-card h1,.ed-hero-copy-card h2{font-size:30px}.ed-footer{flex-direction:column}}
@@ -326,7 +330,9 @@ body.editorial-mode.roblox-mode{background:var(--bg);color:var(--ink);font-famil
   .ed-coral-block{display:none}
   .ed-hero-feature,.ed-hero-right .ed-hero-feature{width:100%}
   .ed-hero-copy-card{padding-left:16px}
+  .ed-digest-date-band{padding:0 0 56px}
 }
+.ed-section-wrap.ed-legacy-wrap{padding-top:0}
 </style>
 </head>
 <body class="editorial-mode">
@@ -1203,6 +1209,10 @@ function renderEditorialDigest() {
       ${renderEditorialTopNav()}
     </nav>
 
+    <section class="ed-digest-date-band" aria-label="日报日期导航">
+      ${renderEditorialDateStrip()}
+    </section>
+
     <header class="ed-hero" id="overview">
       <div class="ed-hero-left" id="ai">
         <div class="ed-coral-block" aria-hidden="true"></div>
@@ -1248,8 +1258,6 @@ function renderEditorialDigest() {
         <div class="ed-stat"><div class="ed-num">${escapeHtml(curatedCount)}</div><div class="ed-cap">Curated</div></div>
         <div class="ed-stat"><div class="ed-num">${escapeHtml(crawlTime || '--')}</div><div class="ed-cap">Crawl Time</div></div>
       </section>
-
-      ${renderEditorialDateStrip()}
 
       <section class="ed-signal-panel" id="signals" aria-label="更多精选信号">
         <div class="ed-signal-head"><h3>More Game Signals</h3><span>${String(signals.length).padStart(2, '0')}</span></div>
