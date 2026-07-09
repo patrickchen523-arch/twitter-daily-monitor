@@ -1401,7 +1401,7 @@ function formatEditorialHeroTitle(value) {
     return chars.slice(0, colonIndex).join('').trim();
   }
 
-  return chars.slice(0, maxChars).join('').replace(/[，,、；;：:\s]+$/, '').trim();
+  return text;
 }
 
 function getEditorialDigestSummary() {
@@ -1427,7 +1427,7 @@ function editorialCopy(pick, role) {
   }
   return {
     label: `${role === 'ai' ? 'AI科技热点' : getEditorialSectionLabel(pick.section)} / Editor's Pick`,
-    title: pick.hook || pick.item.title,
+    title: pick.item.hero_title || pick.hook || pick.item.title,
     text: pick.item.summary || pick.item.analysis || pick.item.full_text || ''
   };
 }
