@@ -1,0 +1,227 @@
+{
+  "updated": "2026-07-09",
+  "weeks": [
+    {
+      "id": "2026-07-02-to-07-08",
+      "label": "7.2 - 7.8",
+      "code": "W28",
+      "range": "2026.07.02 — 07.08",
+      "title": "AI 游戏开发进入可用期，实体媒介与平台规则同时承压",
+      "stats": [
+        {
+          "value": "72",
+          "label": "精选信号"
+        },
+        {
+          "value": "1.11亿",
+          "label": "累计浏览"
+        },
+        {
+          "value": "22.9万",
+          "label": "累计点赞"
+        },
+        {
+          "value": "7",
+          "label": "连续日报"
+        }
+      ],
+      "executive": [
+        "本周最清晰的技术主线，是 AI 游戏开发从“生成一个好看的演示”跨进“搭出能运行的系统”。Fable 5 连续出现塔防、程序化地牢、多人模式和实时世界生成案例，GameBlocks、three.js 工具链则开始把这些能力沉淀成可复用部件。",
+        "行业侧的压力来自所有权与平台规则。PlayStation 的全数字化信号把实体媒介争论推到台前，Xbox 大规模裁员继续扩散，Steam 两小时退款机制也开始直接伤害短流程独立游戏。",
+        "新游传播反而给出了更积极的答案：与其在成熟品类里拼规模，不如把核心幻想说得足够清楚。骑龙空战、校车末日生存、低配置手绘冒险，都依靠一句话可理解的差异点获得了稳定关注。"
+      ],
+      "rankings": [
+        {
+          "title": "PlayStation 宣布 2028 年起新游戏不再提供实体光盘",
+          "metric": "8399万浏览",
+          "heat": 100,
+          "link": "https://x.com/PlayStation/status/2072289330287222812"
+        },
+        {
+          "title": "Anthropic 发布 Claude Science，连接 60+ 科学数据库",
+          "metric": "934万浏览",
+          "heat": 64,
+          "link": "https://x.com/claudeai/status/2072002740830842899"
+        },
+        {
+          "title": "Claude Code 隐写身份信息引发开发者信任争议",
+          "metric": "511万浏览",
+          "heat": 48,
+          "link": "https://x.com/chenchengpro/status/2072209406184526013"
+        },
+        {
+          "title": "GitHub 推出公共仓库 CD-ROM 实体服务",
+          "metric": "462万浏览",
+          "heat": 45,
+          "link": "https://x.com/github/status/2072801888525840476"
+        },
+        {
+          "title": "Gemini Omni Flash 将视频生成成本压至 Sora 的约 1/5",
+          "metric": "72万浏览",
+          "heat": 22,
+          "link": "https://x.com/GoogleAIStudio/status/2071989946827624801"
+        }
+      ],
+      "signals": [
+        {
+          "title": "AI 原型开始长出系统能力",
+          "body": "程序化地牢、多人模式、运行时素材和连续世界生成密集出现，评价重点正从“像不像游戏”转向“能否持续迭代”。"
+        },
+        {
+          "title": "数字发行的代价浮出水面",
+          "body": "实体光盘退场、账号强制关联和退款规则争议同时升温，平台效率与玩家所有权之间的矛盾正在变得具体。"
+        },
+        {
+          "title": "独游传播回归一句话差异",
+          "body": "骑龙、校车、拿破仑瘟疫、极地滑雪等清晰幻想，比堆叠功能更容易建立第一眼记忆和社区讨论。"
+        }
+      ],
+      "sections": [
+        {
+          "title": "AI 科技热点",
+          "deck": "本周 AI 信号集中在垂直应用、Agent 协作和游戏开发工具链，真正值得关注的是“可复用”开始替代一次性演示。",
+          "stories": [
+            {
+              "date": "07.03",
+              "source": "CLAUDE",
+              "title": "Claude Science 把通用助手推进科研全流程",
+              "summary": "连接 60 多个科学数据库，并提供可追溯代码与按需计算环境。AI 公司正在从通用聊天入口转向高价值垂直工作流。",
+              "metric": "934万浏览 · 3.5万赞",
+              "link": "https://x.com/claudeai/status/2072002740830842899",
+              "image": "https://pbs.twimg.com/media/HME8BsAboAAPDRf.jpg"
+            },
+            {
+              "date": "07.02",
+              "source": "CLAUDE CODE",
+              "title": "隐写身份信息让 AI 编程工具遭遇信任审计",
+              "summary": "开发者逆向发现不可见字符编码时区和代理信息。对于拥有代码库与终端权限的 Agent，透明度已经不再是附加项。",
+              "metric": "511万浏览 · 1.7万赞",
+              "link": "https://x.com/chenchengpro/status/2072209406184526013",
+              "image": "https://pbs.twimg.com/media/HMEbdQGWoAERtu7.png"
+            },
+            {
+              "date": "07.07",
+              "source": "FABLE 5",
+              "title": "实时程序化地牢证明 AI 能搭建可持续关卡系统",
+              "summary": "Fable 5 与 three.js 一次跑通无限布局生成，次日又被接入四人合作 ARPG。原型不再停留在一次性展示。",
+              "metric": "15.8万浏览 · 2174赞",
+              "link": "https://x.com/majidmanzarpour/status/2073742439211225234",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2073742381573132289/img/-ECFmnOsrNK_aB3T.jpg"
+            },
+            {
+              "date": "07.02",
+              "source": "GOOGLE AI",
+              "title": "Gemini Omni Flash 把视频生成推向低成本迭代",
+              "summary": "成本约为 Sora 的五分之一，并支持对话式修改既有视频。对小团队而言，宣传素材开始具备反复打磨的经济性。",
+              "metric": "72万浏览 · 6049赞",
+              "link": "https://x.com/GoogleAIStudio/status/2071989946827624801",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2071989891613773824/img/rd1Q6OHFxjWRMPR2.jpg"
+            }
+          ]
+        },
+        {
+          "title": "游戏行业动态",
+          "deck": "所有权、裁员和平台规则构成本周行业底色。数字化继续提升发行效率，但成本越来越多地落到玩家与中小开发者身上。",
+          "stories": [
+            {
+              "date": "07.02",
+              "source": "PLAYSTATION",
+              "title": "实体光盘退场信号引爆数字所有权争论",
+              "summary": "PlayStation 的全数字化计划获得本周最高热度。游戏保存、下架风险和硬件形态由边缘议题变成主流讨论。",
+              "metric": "8399万浏览 · 5.2万赞",
+              "link": "https://x.com/PlayStation/status/2072289330287222812",
+              "image": "https://pbs.twimg.com/media/HMJAAyiasAAlXlw.jpg"
+            },
+            {
+              "date": "07.07",
+              "source": "XBOX",
+              "title": "3200 人裁员让工作室体系继续收缩",
+              "summary": "四家工作室命运改变，后续又传出 id Software 与 Obsidian 缩减。大型发行集团的成本压力仍未见底。",
+              "metric": "连续两日发酵",
+              "link": "https://x.com/Polygon/status/2074135309650895245",
+              "image": "https://pbs.twimg.com/media/HMjPErRX0AAemy_.jpg"
+            },
+            {
+              "date": "07.08",
+              "source": "STEAM",
+              "title": "两小时退款规则开始反噬短流程独立游戏",
+              "summary": "当完整通关时间小于退款窗口，政策会把“试玩保障”变成事实上的免费游玩。短篇作品需要更精细的保护机制。",
+              "metric": "13.6万浏览",
+              "link": "https://x.com/destructoid/status/2073854878221316508",
+              "image": null
+            },
+            {
+              "date": "07.04",
+              "source": "GITHUB",
+              "title": "把代码刻成光盘的玩笑击中了真实焦虑",
+              "summary": "GitHub 的 CD-ROM 服务以幽默回应数字所有权问题，获得 462 万浏览。好笑的前提，是用户确实担心购买内容无法永久保存。",
+              "metric": "462万浏览 · 3.1万赞",
+              "link": "https://x.com/github/status/2072801888525840476",
+              "image": "https://pbs.twimg.com/media/HMQSUMuXEAEfn2j.jpg"
+            }
+          ]
+        },
+        {
+          "title": "新游推文",
+          "deck": "本周新游没有统一品类，但共同点很明确：核心幻想能在一句话内讲清楚，画面与机制都围绕这个记忆点服务。",
+          "stories": [
+            {
+              "date": "07.05",
+              "source": "BEYOND THE WESTERN DEEP",
+              "title": "低配置手绘冒险用克制换来最高共鸣",
+              "summary": "三年前的集显迷你电脑也能运行，手绘动画风格又足够鲜明。它以 6980 赞成为本周新游互动最高案例。",
+              "metric": "23.4万浏览 · 6980赞",
+              "link": "https://x.com/TheWesternDeep/status/2073106489762611214",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2073106265535082496/img/F5VheHSQe2eR3VgX.jpg"
+            },
+            {
+              "date": "07.06",
+              "source": "SAGAS OF LUMIN",
+              "title": "骑龙空战把稀缺幻想直接变成卖点",
+              "summary": "龙背空战、飞艇对射与无缝空地切换构成清晰体验承诺。它不需要复杂解释，就能让玩家想象自己在玩什么。",
+              "metric": "13.8万浏览 · 2127赞",
+              "link": "https://x.com/IndieGameJoe/status/2073476513060569412",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2073473514384896000/img/EYC_HbTyqOl26-3U.jpg"
+            },
+            {
+              "date": "07.05",
+              "source": "ROUTE",
+              "title": "一辆校车撑起四人末日生存的全部循环",
+              "summary": "校车同时是家、仓库和逃生工具，让合作分工与资源压力自然围绕同一个对象展开，差异化非常集中。",
+              "metric": "10.8万浏览 · 1265赞",
+              "link": "https://x.com/IndieGameJoe/status/2073355501690069303",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2073354766093017088/img/jewaEViVWEdVZyq-.jpg"
+            },
+            {
+              "date": "07.08",
+              "source": "POLYARIS",
+              "title": "极地滑雪生存用移动方式重做荒野探索",
+              "summary": "北极圈、第一人称滑雪和生存压力组成稳定辨识度，愿望单突破十万，证明熟悉品类仍可通过移动体验完成重构。",
+              "metric": "9.3万浏览 · 10万愿望单",
+              "link": "https://x.com/gamespark/status/2074252352736080069",
+              "image": "https://pbs.twimg.com/ext_tw_video_thumb/2074252074708279296/pu/img/WxBdf-vuHbtGvwjY.jpg"
+            }
+          ]
+        }
+      ],
+      "watch": [
+        {
+          "title": "Fable 5 能否从高频演示进入真实生产管线",
+          "body": "观察项目是否继续公开源码、可编辑资产和多人稳定性，而不只是生成速度。"
+        },
+        {
+          "title": "Palworld 1.0 上线后的留存与社区反馈",
+          "body": "水上建筑、据点和武器翻新将在 7 月 10 日接受真实玩家规模检验。"
+        },
+        {
+          "title": "Steam 是否回应短流程游戏退款争议",
+          "body": "重点关注平台规则、开发者申诉机制以及短篇作品是否获得更合适的试玩方案。"
+        },
+        {
+          "title": "Xbox 裁员后的工作室与人才流向",
+          "body": "独立化、出售和团队缩减可能催生新工作室，也可能进一步压缩中型项目空间。"
+        }
+      ]
+    }
+  ]
+}

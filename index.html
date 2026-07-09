@@ -119,15 +119,84 @@ header{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.92);backdro
 /* Footer */
 footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padding:24px 0;border-top:1px solid var(--border)}
 
-/* Roblox viewer */
-.roblox-view{display:none;max-width:none;margin:0;padding:0 0 80px}
+/* Roblox weekly report */
+.roblox-view{display:none;max-width:none;margin:0;background:#f6f0e8;color:#3c2b27;font-family:"Nunito Sans","Microsoft YaHei",sans-serif}
 .roblox-view.active{display:block}
-.roblox-view-inner{max-width:1200px;margin:0 auto;padding:24px}
-.roblox-weeks{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
-.roblox-week-btn{font-size:13px;font-weight:600;padding:8px 16px;border-radius:8px;cursor:pointer;border:1.5px solid var(--border);background:var(--card);color:var(--ink2);transition:all .2s;box-shadow:var(--shadow)}
-.roblox-week-btn:hover{border-color:var(--gold-border);background:var(--gold-light)}
-.roblox-week-btn.on{background:var(--gold);border-color:var(--gold);color:#fff;box-shadow:0 2px 8px rgba(196,155,44,.2)}
-.roblox-iframe{width:100%;height:calc(100vh - 180px);border:1px solid var(--border);border-radius:12px;background:var(--card);box-shadow:var(--shadow)}
+.roblox-view-inner{min-height:calc(100vh - 66px);padding:0 7vw 96px;background:#f6f0e8}
+.roblox-switcher{margin:0 -7vw 34px;padding:0;background:#fffaf4;border:0;border-bottom:1px solid rgba(60,43,39,.14);box-shadow:0 10px 28px rgba(91,52,46,.06)}
+.roblox-switch-inner{max-width:1220px;margin:0 auto;padding:26px 32px;display:flex;align-items:flex-end;justify-content:space-between;gap:28px}
+.roblox-kicker{color:#873026;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:900;margin-bottom:8px}
+.roblox-title{margin:0;font-family:var(--font-serif);font-size:clamp(28px,3.6vw,52px);font-weight:700;line-height:1.08;letter-spacing:0;color:#3c2b27}
+.roblox-subtitle{margin:12px 0 0;color:#8b7169;font-size:13px;font-weight:800;line-height:1.7}
+.roblox-weeks{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;max-width:520px}
+.roblox-week-btn{min-height:40px;padding:0 18px;border:1px solid rgba(60,43,39,.14);border-radius:8px;background:#fff;color:#3c2b27;font-size:13px;font-weight:900;cursor:pointer;transition:all .22s ease;box-shadow:0 5px 14px rgba(91,52,46,.05)}
+.roblox-week-btn:hover{border-color:rgba(135,48,38,.34);transform:translateY(-1px)}
+.roblox-week-btn.on{background:#C63C2F;border-color:#C63C2F;color:#fff;box-shadow:0 12px 24px rgba(198,60,47,.18)}
+.roblox-report-host{max-width:1220px;margin:0 auto;color:#3c2b27;animation:cardFadeIn .38s ease both}
+.roblox-report-host .page{max-width:none;margin:0;padding:0;position:relative;z-index:1}
+.roblox-report-host .header{margin:0 0 52px;padding:52px 56px 0;border-radius:0;background:#A33A2F;color:#fff;box-shadow:0 24px 55px rgba(102,42,35,.13);position:relative;overflow:hidden}
+.roblox-report-host .header::before{content:"";position:absolute;left:0;top:0;width:16vw;min-width:130px;height:190px;background:rgba(255,255,255,.08);pointer-events:none}
+.roblox-report-host .header-badge,.roblox-report-host .exec-label,.roblox-report-host .ar-label,.roblox-report-host .insight-label{display:inline-flex;align-items:center;gap:10px;color:#873026!important;background:#fffaf4!important;border:1px solid rgba(255,255,255,.42)!important;border-radius:0!important;text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:900;padding:6px 12px;margin-bottom:16px}
+.roblox-report-host .header-badge{color:#fff!important;background:transparent!important;border-color:rgba(255,255,255,.52)!important}
+.roblox-report-host .header h1{position:relative;max-width:920px;margin:0;font-family:var(--font-serif);font-size:clamp(34px,5vw,72px);font-weight:700;line-height:1.08;letter-spacing:0;color:#fff}
+.roblox-report-host .header-sub{position:relative;margin:16px 0 34px;color:rgba(255,255,255,.9)!important;font-size:13px!important;line-height:1.65!important;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.roblox-report-host .kpi-row{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:0 -56px;background:#fffaf4;border:0;border-top:1px solid rgba(255,255,255,.4)}
+.roblox-report-host .kpi-card{min-width:0;padding:24px 28px;text-align:left;background:transparent;border:0;border-right:1px solid rgba(60,43,39,.14);border-radius:0;box-shadow:none;backdrop-filter:none}
+.roblox-report-host .kpi-card:last-child{border-right:0}
+.roblox-report-host .kpi-num{font-family:var(--font-serif);font-size:46px!important;line-height:1;color:#873026!important;font-weight:700!important}
+.roblox-report-host .kpi-label{margin-top:8px;color:#8b7169!important;font-size:12px!important;letter-spacing:.08em;text-transform:uppercase;font-weight:900!important}
+.roblox-report-host .content-block{margin:0 0 46px;padding:0;position:relative}
+.roblox-report-host .band{height:0;margin:0 0 46px;border-top:1px solid rgba(60,43,39,.16);background:transparent!important}
+.roblox-report-host .section-title{margin:0 0 10px;padding-left:0;border-left:0!important;font-family:var(--font-serif);font-size:clamp(34px,4.8vw,64px);font-weight:500;line-height:1.08;letter-spacing:0;color:#3c2b27}
+.roblox-report-host .section-title::before{content:"";display:block;width:52px;height:2px;background:#873026;margin:0 0 18px}
+.roblox-report-host .section-subtitle{margin:0 0 28px;padding-left:0;color:#8b7169;font-size:13px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.roblox-report-host .exec-grid,.roblox-report-host .dual-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.roblox-report-host .exec-card,.roblox-report-host .dual-card,.roblox-report-host .game-card,.roblox-report-host .insight,.roblox-report-host .watch-item{background:#fffaf4;border:1px solid rgba(60,43,39,.14);border-radius:0;box-shadow:0 16px 40px rgba(91,52,46,.08);color:#3c2b27}
+.roblox-report-host .exec-card,.roblox-report-host .dual-card,.roblox-report-host .insight,.roblox-report-host .watch-item{min-width:0;padding:26px 30px}
+.roblox-report-host .exec-card.full{grid-column:1/-1}
+.roblox-report-host p,.roblox-report-host li,.roblox-report-host td{color:#5f4a44!important;font-size:14px;line-height:1.82;font-weight:700}
+.roblox-report-host strong,.roblox-report-host th{color:#3c2b27!important}
+.roblox-report-host .dual-card h3,.roblox-report-host .game-title,.roblox-report-host .watch-item h4{font-family:var(--font-serif);color:#3c2b27;font-weight:700;letter-spacing:0}
+.roblox-report-host .dual-card h3{font-size:24px;margin:0 0 18px;padding-bottom:14px;border-bottom:1px solid rgba(60,43,39,.14)}
+.roblox-report-host .rank-item{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid rgba(60,43,39,.1)}
+.roblox-report-host .rank-badge,.roblox-report-host .rank-badge.top3,.roblox-report-host .rank-badge.hl{min-width:32px;height:26px;display:flex;align-items:center;justify-content:center;background:#A33A2F;color:#fff;border-radius:0;font-weight:900;flex-shrink:0}
+.roblox-report-host .rank-info{flex:1;min-width:0}.roblox-report-host .rank-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.roblox-report-host .rank-bar-bg{height:6px;margin-top:4px;overflow:hidden;background:#eadbd2;border-radius:0}.roblox-report-host .rank-bar-fill{height:100%;background:linear-gradient(90deg,#A33A2F,#D1B36F)}
+.roblox-report-host .rank-ccu{flex-shrink:0;text-align:right;min-width:72px}
+.roblox-report-host .decline-item{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid rgba(60,43,39,.1)}
+.roblox-report-host .rank-name,.roblox-report-host .decline-name,.roblox-report-host .rank-ccu{color:#3c2b27!important;font-weight:900}
+.roblox-report-host .game-card{overflow:hidden;margin-bottom:34px}
+.roblox-report-host .game-header{padding:28px 32px 20px;border-bottom:1px solid rgba(60,43,39,.12);background:rgba(255,255,255,.46)}
+.roblox-report-host .game-body{padding:28px 32px 32px}
+.roblox-report-host .game-title{font-size:28px}
+.roblox-report-host .game-header-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.roblox-report-host .game-stats-row{display:flex;gap:12px 18px;flex-wrap:wrap;margin-top:8px}
+.roblox-report-host .game-stat{color:#8b7169!important;font-weight:800}
+.roblox-report-host .sub-heading{margin:28px 0 14px;padding-left:14px;border-left:3px solid #873026;color:#873026;font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+.roblox-report-host .sub-heading:first-child{margin-top:0}
+.roblox-report-host .core-loop{padding:16px 20px;white-space:pre-wrap;word-break:break-word;font-family:"Courier New",monospace;font-size:12px;line-height:1.8}
+.roblox-report-host .core-loop,.roblox-report-host .analyst-read{background:#f3eadf;border:1px solid rgba(60,43,39,.13);border-radius:0;color:#4f3d38;box-shadow:none}
+.roblox-report-host .pill-list{display:flex;flex-wrap:wrap;gap:8px}
+.roblox-report-host .pill,.roblox-report-host .confidence-tag{display:inline-block;border-radius:999px;background:#f3eadf!important;border:1px solid rgba(135,48,38,.18)!important;color:#873026!important;font-weight:900}
+.roblox-report-host .pill{font-size:12px;padding:5px 14px}.roblox-report-host .confidence-tag{font-size:11px;padding:3px 12px;margin-left:6px}
+.roblox-report-host .need-list{list-style:none;padding-left:0}.roblox-report-host .need-list li{position:relative;padding:5px 0 5px 20px}.roblox-report-host .need-list li::before{content:"";position:absolute;left:0;top:15px;width:7px;height:7px;background:#873026}
+.roblox-report-host .analyst-read{padding:20px 24px;margin-top:24px}.roblox-report-host .analyst-read p{margin-bottom:6px}.roblox-report-host .analyst-read p:last-child{margin-bottom:0}
+.roblox-report-host .screenshot-row{display:grid;grid-template-columns:1fr;gap:20px;margin-top:16px}
+.roblox-report-host .screenshot-wrap{border:1px solid rgba(60,43,39,.14);border-radius:0;background:#fffaf4;box-shadow:0 10px 28px rgba(91,52,46,.06)}
+.roblox-report-host .screenshot-wrap img{width:100%;display:block;filter:saturate(.95) contrast(1.02)}
+.roblox-report-host .screenshot-wrap .scap{padding:10px 14px;border-top:1px solid rgba(60,43,39,.1);text-align:center;color:#8b7169;font-size:12px}
+.roblox-report-host table{width:100%;border-collapse:collapse;background:#fffaf4;border:1px solid rgba(60,43,39,.14);box-shadow:0 16px 40px rgba(91,52,46,.06)}
+.roblox-report-host th,.roblox-report-host td{padding:12px 14px!important;border-bottom:1px solid rgba(60,43,39,.1)!important;text-align:left}
+.roblox-report-host th{color:#873026!important;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.roblox-report-host .cat-trend{display:inline-block;font-weight:900;color:#873026!important}
+.roblox-report-host .insight{margin-bottom:16px;border-left:4px solid #873026}
+.roblox-report-host .timeline{position:relative;padding-left:28px}.roblox-report-host .timeline::before{content:"";position:absolute;left:8px;top:4px;bottom:4px;width:2px;background:rgba(135,48,38,.25)}
+.roblox-report-host .tl-entry{position:relative;padding:10px 0 10px 6px;color:#5f4a44;font-size:13px;line-height:1.7;font-weight:700}.roblox-report-host .tl-entry::before{content:"";position:absolute;left:-24px;top:16px;width:10px;height:10px;border:2px solid #873026;background:#fffaf4}.roblox-report-host .tl-date,.roblox-report-host .tl-channel,.roblox-report-host .tl-signal{color:#873026!important;font-weight:900}
+.roblox-report-host .watch-item{margin-bottom:14px;border-left:4px solid #873026}.roblox-report-host .watch-item .wi-num{font-family:var(--font-serif);font-size:20px;font-weight:900;color:#873026}.roblox-report-host .watch-item h4{font-size:20px;margin:6px 0}
+.roblox-report-host .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:3px;vertical-align:middle;background:#873026}
+.roblox-report-host .footer{margin-top:38px;padding:28px 0 0;border-top:1px solid rgba(60,43,39,.16)}
+.roblox-report-host .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.roblox-report-host .footer-col h4{color:#873026;font-size:11px;letter-spacing:.14em;text-transform:uppercase}.roblox-report-host .footer-bottom{border-top:1px solid rgba(60,43,39,.12);color:#8b7169}
+.roblox-loading,.roblox-error{max-width:1220px;margin:0 auto;padding:48px 28px;border:1px dashed rgba(135,48,38,.24);background:rgba(255,250,244,.58);color:#8b7169;text-align:center;font-size:14px;font-weight:900}
 
 /* Enrichment - Game Showcase (4-zone layout, integrated into card) */
 .card-enriched{padding:24px 32px}
@@ -262,12 +331,40 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
   .card{padding:18px 20px;margin:12px 0}
   .card h2{font-size:15px}
   .top-nav-item{font-size:13px;padding:10px 14px}
-  .roblox-iframe{height:calc(100vh - 160px)}
   .lede-section{padding:20px 22px}
   .lede-body{font-size:14px}
   .hero-body{padding:16px 18px}
   .digest-row{padding:10px 12px}
   .digest-thumb,.digest-thumb-placeholder{width:40px;height:40px}
+}
+
+@media(max-width:980px){
+  .roblox-view-inner{padding:0 20px 76px}
+  .roblox-switcher{margin-left:-20px;margin-right:-20px}
+  .roblox-switch-inner{padding:24px 20px;align-items:flex-start;flex-direction:column}
+  .roblox-weeks{justify-content:flex-start;max-width:none}
+  .roblox-report-host .header{padding:42px 28px 0}
+  .roblox-report-host .kpi-row{grid-template-columns:repeat(2,minmax(0,1fr));margin:0 -28px}
+  .roblox-report-host .kpi-card:nth-child(2){border-right:0}
+  .roblox-report-host .kpi-card:nth-child(1),.roblox-report-host .kpi-card:nth-child(2){border-bottom:1px solid rgba(60,43,39,.14)}
+  .roblox-report-host .exec-grid,.roblox-report-host .dual-col{grid-template-columns:minmax(0,1fr)}
+}
+
+@media(max-width:620px){
+  .roblox-view-inner{padding:0 14px 64px}
+  .roblox-switcher{margin-left:-14px;margin-right:-14px;margin-bottom:24px}
+  .roblox-switch-inner{padding:22px 14px}
+  .roblox-week-btn{min-height:36px;padding:0 14px;font-size:12px}
+  .roblox-report-host .header{margin-bottom:34px;padding:34px 20px 0}
+  .roblox-report-host .kpi-row{grid-template-columns:repeat(2,minmax(0,1fr));margin:0 -20px}
+  .roblox-report-host .kpi-card{padding:20px;border-right:1px solid rgba(60,43,39,.14);border-bottom:1px solid rgba(60,43,39,.14)}
+  .roblox-report-host .kpi-card:nth-child(2),.roblox-report-host .kpi-card:nth-child(4){border-right:0}
+  .roblox-report-host .kpi-card:nth-child(3),.roblox-report-host .kpi-card:nth-child(4){border-bottom:0}
+  .roblox-report-host .kpi-num{font-size:34px!important}
+  .roblox-report-host .exec-card,.roblox-report-host .dual-card,.roblox-report-host .insight,.roblox-report-host .watch-item,.roblox-report-host .game-header,.roblox-report-host .game-body{padding:22px 18px}
+  .roblox-report-host .section-title{font-size:34px}
+  .roblox-report-host .game-title{font-size:24px}
+  .roblox-report-host table{display:block;overflow-x:auto}
 }
 
 /* Editorial daily picks - brick red MALAI style */
@@ -296,17 +393,131 @@ body.editorial-mode #content,body.editorial-mode #dailySummary,body.editorial-mo
 .ed-stats{max-width:1220px;margin:0 auto 56px;display:grid;grid-template-columns:repeat(4,1fr);background:#fffaf4;border:1px solid rgba(60,43,39,.16)}.ed-stat{padding:24px 28px;border-right:1px solid rgba(60,43,39,.16)}.ed-stat:last-child{border-right:0}.ed-stat .ed-num{font-family:"Noto Serif SC",serif;font-size:48px;line-height:1;color:#873026}.ed-stat .ed-cap{margin-top:8px;color:#8b7169;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:800}
 .ed-signal-panel{max-width:1220px;margin:0 auto;padding:54px 58px 58px;background:radial-gradient(circle at 88% 1%,rgba(255,255,255,.18),transparent 16%),#A33A2F;color:#fff;position:relative;overflow:hidden}.ed-signal-head{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.55);margin-bottom:18px}.ed-signal-head h3{margin:0;color:#fff;text-transform:uppercase;letter-spacing:.28em;font-size:13px;font-weight:900}.ed-signal-head span{font-size:12px;font-weight:900;color:rgba(255,255,255,.82)}.ed-signal-list{display:grid;gap:18px;position:relative;z-index:2}
 .ed-signal-card{display:grid;grid-template-columns:170px 68px minmax(0,1fr);gap:22px;align-items:center;background:#fffaf4;color:#3c2b27;min-height:178px;padding:26px;border:1px solid rgba(255,255,255,.42);box-shadow:0 16px 40px rgba(102,42,35,.10);transition:transform .24s ease,box-shadow .24s ease}.ed-signal-card:hover{transform:translateY(-3px);box-shadow:0 24px 50px rgba(102,42,35,.18)}.ed-signal-media{width:170px;height:126px;background:#f3eadf;overflow:hidden}.ed-signal-media img{width:100%;height:100%;object-fit:cover;filter:saturate(.94) contrast(1.02);transition:transform .35s ease}.ed-signal-card:hover img{transform:scale(1.05)}.ed-signal-num{align-self:start;font-family:"Noto Serif SC",serif;font-size:29px;line-height:1;color:#873026;letter-spacing:-.04em;font-weight:900}.ed-signal-copy .ed-tag{display:inline-flex;align-items:center;gap:10px;color:#873026;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}.ed-signal-copy .ed-tag::before{content:"";width:36px;height:1px;background:currentColor}.ed-signal-copy h4{margin:0;font-family:"Noto Serif SC",serif;font-weight:700;font-size:32px;line-height:1.16;letter-spacing:-.05em}.ed-signal-copy p{margin:12px 0 0;color:#8b7169;font-size:13px;font-weight:800;max-width:820px}.ed-tweet-link{display:inline-flex;align-items:center;gap:10px;margin-top:18px;color:#873026;font-size:12px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.ed-tweet-link::after{content:"→";font-size:16px}.ed-listing-wrap{min-height:100vh}.ed-list-panel{max-width:1220px;margin:0 auto;padding:54px 58px 58px;background:radial-gradient(circle at 88% 1%,rgba(255,255,255,.18),transparent 16%),#A33A2F;color:#fff;position:relative;overflow:hidden}.ed-list-section+.ed-list-section{margin-top:46px}.ed-list-section-title{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.55);margin-bottom:18px}.ed-list-section-title h3{margin:0;color:#fff;text-transform:uppercase;letter-spacing:.24em;font-size:13px;font-weight:900}.ed-list-section-title span{font-size:12px;font-weight:900;color:rgba(255,255,255,.82)}.ed-list-cards{display:grid;gap:18px}.ed-list-card{display:grid;grid-template-columns:190px 62px minmax(0,1fr);gap:22px;align-items:center;background:#fffaf4;color:#3c2b27;min-height:188px;padding:26px;border:1px solid rgba(255,255,255,.42);box-shadow:0 16px 40px rgba(102,42,35,.10);transition:transform .24s ease,box-shadow .24s ease}.ed-list-card:hover{transform:translateY(-3px);box-shadow:0 24px 50px rgba(102,42,35,.18)}.ed-list-media{width:190px;height:136px;background:#f3eadf;overflow:hidden;display:flex;align-items:center;justify-content:center;color:#873026;font-family:"Noto Serif SC",serif;font-size:38px;font-weight:900}.ed-list-media img{width:100%;height:100%;object-fit:cover;filter:saturate(.94) contrast(1.02);transition:transform .35s ease}.ed-list-card:hover img{transform:scale(1.05)}.ed-list-num{align-self:start;font-family:"Noto Serif SC",serif;font-size:29px;line-height:1;color:#873026;letter-spacing:-.04em;font-weight:900}.ed-list-copy .ed-tag{display:inline-flex;align-items:center;gap:10px;color:#873026;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}.ed-list-copy .ed-tag::before{content:"";width:36px;height:1px;background:currentColor}.ed-list-copy h4{margin:0;font-family:"Noto Serif SC",serif;font-weight:700;font-size:30px;line-height:1.17;letter-spacing:-.045em}.ed-list-copy p{margin:12px 0 0;color:#8b7169;font-size:13px;font-weight:800;max-width:820px}.ed-list-meta{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:14px;color:rgba(60,43,39,.56);font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.ed-list-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.ed-list-tags span{border:1px solid rgba(135,48,38,.18);background:rgba(135,48,38,.05);color:#873026;padding:5px 9px;font-size:11px;font-weight:900}.ed-list-actions{display:flex;gap:16px;align-items:center;margin-top:16px}.ed-list-actions a{color:#873026;font-size:12px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.ed-list-actions a::after{content:"→";margin-left:8px;font-size:16px}.ed-legacy-wrap{min-height:100vh}.ed-legacy-content{max-width:1220px;margin:0 auto}.ed-legacy-content .sec-heading{margin:34px 0 18px;padding-bottom:14px;border-bottom:1px solid rgba(135,48,38,.22);color:#873026;font-family:"Nunito Sans","Microsoft YaHei",sans-serif;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.ed-legacy-content .sec-dot{background:#A33A2F!important}.ed-legacy-content .card{background:#fffaf4;border:1px solid rgba(60,43,39,.14);border-left:5px solid #A33A2F!important;border-radius:0;box-shadow:0 16px 40px rgba(91,52,46,.08);margin-bottom:22px}.ed-legacy-content .card:hover{box-shadow:0 24px 52px rgba(91,52,46,.13)}.ed-legacy-content .card h2{font-family:"Noto Serif SC",serif;color:#3c2b27;letter-spacing:-.035em}.ed-legacy-content .card-idx{color:#873026!important;background:rgba(135,48,38,.08)!important}.ed-legacy-content .badge{background:rgba(135,48,38,.06);border-color:rgba(135,48,38,.18);color:#873026}.ed-legacy-content .en-title,.ed-legacy-content .val{color:#6f5a53}.ed-legacy-content .link a,.ed-legacy-content .expand-btn,.ed-legacy-content .collapse-btn{color:#873026}.ed-legacy-content .lab.summary,.ed-legacy-content .lab.analysis,.ed-legacy-content .lab.game-intro{background:#A33A2F;color:#fff}.ed-legacy-content .media,.ed-legacy-content .enrichment{border-color:rgba(60,43,39,.14);background:#f6f0e8}.ed-legacy-content .enrich-section-label{background:#A33A2F;color:#fff}.ed-legacy-content .enrich-stat-value,.ed-legacy-content .enrich-stat-value.gold{color:#873026}.ed-legacy-content .loading{color:#8b7169}
+.ed-clickable-tweet{cursor:pointer}
+.ed-clickable-tweet:focus-visible{outline:3px solid rgba(163,58,47,.62);outline-offset:4px}
+.ed-clickable-tweet a,.ed-clickable-tweet button,.ed-clickable-tweet video,.ed-clickable-tweet .expand-btn,.ed-clickable-tweet .collapse-btn{cursor:pointer}
+.ed-legacy-content .sec-heading{font-size:15px;line-height:1.5}
+.ed-legacy-content .card{padding:30px 34px}
+.ed-legacy-content .card-top{gap:10px;margin-bottom:16px}
+.ed-legacy-content .card-idx{font-size:12.5px;padding:4px 9px}
+.ed-legacy-content .badge{font-size:12px;padding:3px 9px}
+.ed-legacy-content .card h2{font-size:26px;line-height:1.45;letter-spacing:0}
+.ed-legacy-content .card .en-title{font-size:15px;line-height:1.65;margin-bottom:14px}
+.ed-legacy-content .card .link{font-size:13px;line-height:1.6;margin:10px 0 16px}
+.ed-legacy-content .card .field{margin:18px 0}
+.ed-legacy-content .card .lab{font-size:12px;line-height:1.5;padding:3px 8px;margin-bottom:7px}
+.ed-legacy-content .card .val{font-size:17px;line-height:1.9;font-weight:600}
+.ed-legacy-content .expand-btn,.ed-legacy-content .collapse-btn{font-size:13px;padding:7px 14px}
+.ed-legacy-content .expand-content{font-size:15.5px;line-height:1.85;padding:18px 20px}
+.ed-legacy-content .enrich-section-label{font-size:12px;padding:4px 8px}
+.ed-legacy-content .enrich-desc,.ed-legacy-content .enrich-highlight{font-size:16px;line-height:1.8}
+.ed-legacy-content .enrich-stat-label{font-size:11.5px}
+.ed-legacy-content .enrich-stat-value{font-size:26px}
+.ed-legacy-content .enrich-stat-sub{font-size:12.5px}
+.ed-legacy-content .enrich-tags-zone .enrich-tag{font-size:12px}
+@media(max-width:620px){
+  .ed-legacy-content .sec-heading{font-size:13px}
+  .ed-legacy-content .card{padding:22px 18px;margin-bottom:18px}
+  .ed-legacy-content .card-top{margin-bottom:13px}
+  .ed-legacy-content .card-idx{font-size:12px}
+  .ed-legacy-content .badge{font-size:11.5px}
+  .ed-legacy-content .card h2{font-size:23px;line-height:1.48}
+  .ed-legacy-content .card .en-title{font-size:14px;line-height:1.65}
+  .ed-legacy-content .card .link{font-size:12.5px}
+  .ed-legacy-content .card .lab{font-size:11.5px}
+  .ed-legacy-content .card .val{font-size:16px;line-height:1.86}
+  .ed-legacy-content .expand-btn,.ed-legacy-content .collapse-btn{font-size:12.5px}
+  .ed-legacy-content .expand-content{font-size:15px;line-height:1.82;padding:16px}
+  .ed-legacy-content .enrich-desc,.ed-legacy-content .enrich-highlight{font-size:15.5px}
+  .ed-legacy-content .enrich-stat-value{font-size:24px}
+}
 .ed-footer{max-width:1220px;margin:42px auto 0;display:flex;justify-content:space-between;gap:20px;color:rgba(60,43,39,.52);font-size:12px;border-top:1px solid rgba(60,43,39,.16);padding-top:20px}
 .ed-controls{max-width:1220px;margin:0 auto 54px;padding:28px 32px 22px;background:rgba(255,250,244,.72);border:1px solid rgba(60,43,39,.14);box-shadow:0 18px 45px rgba(91,52,46,.08);backdrop-filter:blur(12px)}.ed-control-head{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:18px}.ed-control-title{margin:0;font-family:"Noto Serif SC",serif;font-size:22px;font-weight:900;letter-spacing:-.04em;color:#3c2b27}.ed-control-search{display:flex;align-items:center;gap:8px;min-width:230px;height:34px;padding:0 15px;border:1px solid rgba(60,43,39,.16);border-radius:999px;background:rgba(255,255,255,.76);color:#8b7169}.ed-control-search input{width:100%;border:0;outline:0;background:transparent;color:#3c2b27;font-size:13px}.ed-control-search input::placeholder{color:rgba(139,113,105,.72)}.ed-control-tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}.ed-control-pill{display:inline-flex;align-items:center;gap:5px;min-height:38px;padding:0 18px;border:1px solid rgba(60,43,39,.13);border-radius:999px;background:rgba(255,255,255,.7);color:#3c2b27;font-size:13px;font-weight:900;cursor:pointer;transition:all .22s ease}.ed-control-pill:hover{border-color:rgba(135,48,38,.34);transform:translateY(-1px)}.ed-control-pill.on{background:#C63C2F;border-color:#C63C2F;color:#fff;box-shadow:0 12px 24px rgba(198,60,47,.18)}.ed-control-count{font-size:11px;opacity:.68}.ed-control-dates{display:flex;gap:10px;overflow-x:auto;padding:5px 2px 12px;scrollbar-width:thin}.ed-control-dates::-webkit-scrollbar{height:6px}.ed-control-dates::-webkit-scrollbar-thumb{background:rgba(60,43,39,.34);border-radius:6px}.ed-date-btn{flex:0 0 auto;min-width:64px;padding:10px 12px;border:1px solid rgba(60,43,39,.13);border-radius:9px;background:rgba(255,255,255,.7);color:#3c2b27;font-weight:900;font-size:12px;line-height:1.2;cursor:pointer;box-shadow:0 8px 20px rgba(91,52,46,.05)}.ed-date-btn span{display:block;margin-bottom:4px;color:#8b7169;font-size:10px;font-weight:800}.ed-date-btn.on{background:#C63C2F;border-color:#C63C2F;color:#fff}.ed-date-btn.on span{color:rgba(255,255,255,.75)}.ed-date-btn.nodata{opacity:.38;cursor:default;box-shadow:none}
 .ed-search-summary{max-width:1220px;margin:0 auto 24px;padding:26px 30px;background:#fffaf4;border:1px solid rgba(60,43,39,.14);box-shadow:0 16px 40px rgba(91,52,46,.08);color:#3c2b27}.ed-search-kicker{color:#873026;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:900;margin-bottom:8px}.ed-search-title{font-family:"Noto Serif SC",serif;font-size:clamp(28px,3vw,42px);font-weight:700;line-height:1.05;letter-spacing:-.04em;margin:0}.ed-search-sub{margin:12px 0 0;color:#8b7169;font-size:13px;font-weight:800;line-height:1.7}.ed-search-empty{max-width:1220px;margin:0 auto;padding:48px 28px;border:1px dashed rgba(135,48,38,.24);background:rgba(255,250,244,.58);color:#8b7169;text-align:center;font-size:14px;font-weight:800}.ed-search-date-label{display:inline-flex;align-items:center;gap:8px;color:#873026;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.ed-search-date-label::before{content:"";width:30px;height:1px;background:currentColor}
 .ed-gold-plate{display:none}
 .ed-hero-copy-card p,.ed-signal-copy p{font-family:"Noto Serif SC",serif;font-size:19px;line-height:1.72;font-weight:700}
-.ed-weekly-blank{min-height:calc(100vh - 66px);background:#f6f0e8}
+.ed-weekly-page{min-height:calc(100vh - 66px);background:#f6f0e8;color:#3c2b27}
+.tw-week-switcher{background:#fffaf4;border-bottom:1px solid rgba(60,43,39,.14);box-shadow:0 10px 28px rgba(91,52,46,.06)}
+.tw-week-switch-inner{max-width:1220px;margin:0 auto;padding:26px 32px;display:flex;align-items:flex-end;justify-content:space-between;gap:28px}
+.tw-week-kicker{margin-bottom:7px;color:#873026;font-size:11px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
+.tw-week-page-title{margin:0;font-family:var(--font-serif);font-size:clamp(28px,3.6vw,50px);font-weight:700;line-height:1.08;letter-spacing:0}
+.tw-week-page-sub{margin:10px 0 0;color:#8b7169;font-size:13px;font-weight:800;line-height:1.7}
+.tw-week-buttons{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.tw-week-btn{min-height:40px;padding:0 18px;border:1px solid rgba(60,43,39,.14);border-radius:8px;background:#fff;color:#3c2b27;font-size:13px;font-weight:900;cursor:pointer;box-shadow:0 5px 14px rgba(91,52,46,.05);transition:all .2s ease}
+.tw-week-btn:hover{border-color:rgba(135,48,38,.42);transform:translateY(-1px)}
+.tw-week-btn.on{border-color:#C63C2F;background:#C63C2F;color:#fff;box-shadow:0 10px 22px rgba(198,60,47,.2)}
+.tw-week-report{padding:34px 7vw 92px}
+.tw-week-report-inner{max-width:1220px;margin:0 auto}
+.tw-week-loading,.tw-week-error{max-width:1220px;margin:0 auto;padding:52px 28px;border:1px dashed rgba(135,48,38,.24);background:#fffaf4;color:#8b7169;text-align:center;font-size:14px;font-weight:900}
+.tw-week-hero{position:relative;overflow:hidden;padding:52px 56px 0;background:#A33A2F;color:#fff;box-shadow:0 22px 52px rgba(102,42,35,.14)}
+.tw-week-hero::before{content:"";position:absolute;inset:0 auto auto 0;width:18%;height:190px;background:rgba(255,255,255,.07);pointer-events:none}
+.tw-week-hero-kicker{position:relative;display:inline-flex;padding:6px 11px;border:1px solid rgba(255,255,255,.48);font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+.tw-week-hero-title{position:relative;max-width:920px;margin:22px 0 16px;font-family:var(--font-serif);font-size:clamp(36px,5vw,68px);font-weight:700;line-height:1.12;letter-spacing:0}
+.tw-week-hero-meta{position:relative;margin:0 0 36px;color:rgba(255,255,255,.88);font-size:12px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.tw-week-stats{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0 -56px;background:#fffaf4;color:#3c2b27;border-top:1px solid rgba(255,255,255,.4)}
+.tw-week-stat{min-width:0;padding:24px 28px;border-right:1px solid rgba(60,43,39,.14)}
+.tw-week-stat:last-child{border-right:0}
+.tw-week-stat-value{font-family:var(--font-serif);font-size:42px;font-weight:700;line-height:1;color:#873026}
+.tw-week-stat-label{margin-top:7px;color:#8b7169;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.tw-week-mainline{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:24px;margin:46px 0}
+.tw-week-block{min-width:0;padding:30px 32px;background:#fffaf4;border:1px solid rgba(60,43,39,.14);box-shadow:0 14px 34px rgba(91,52,46,.07)}
+.tw-week-section-kicker{display:flex;align-items:center;gap:10px;margin-bottom:14px;color:#873026;font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+.tw-week-section-kicker::before{content:"";width:34px;height:2px;background:#873026}
+.tw-week-block h2,.tw-week-category-head h2,.tw-week-watch-head h2{margin:0;font-family:var(--font-serif);font-weight:700;letter-spacing:0;color:#3c2b27}
+.tw-week-block h2{font-size:32px;line-height:1.2}
+.tw-week-lede{margin:22px 0 0;color:#59433d;font-family:var(--font-serif);font-size:17px;line-height:1.95;font-weight:600}
+.tw-week-lede p{margin:0 0 14px}
+.tw-week-lede p:last-child{margin-bottom:0}
+.tw-week-ranking{margin-top:20px}
+.tw-week-rank{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(60,43,39,.11)}
+.tw-week-rank:last-child{border-bottom:0}
+.tw-week-rank-num{display:flex;align-items:center;justify-content:center;width:28px;height:26px;background:#A33A2F;color:#fff;font-size:12px;font-weight:900}
+.tw-week-rank-copy{min-width:0}
+.tw-week-rank-title{display:block;overflow:hidden;color:#3c2b27;font-size:13px;font-weight:900;line-height:1.45;text-decoration:none;text-overflow:ellipsis;white-space:nowrap}
+.tw-week-rank-title:hover{color:#873026}
+.tw-week-rank-bar{height:5px;margin-top:7px;background:#eadbd2;overflow:hidden}
+.tw-week-rank-bar span{display:block;height:100%;background:#A33A2F}
+.tw-week-rank-metric{color:#873026;font-size:12px;font-weight:900;white-space:nowrap}
+.tw-week-signals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-bottom:58px}
+.tw-week-signal{min-width:0;padding:25px 26px;background:#fffaf4;border-top:4px solid #A33A2F;box-shadow:0 12px 30px rgba(91,52,46,.06)}
+.tw-week-signal-num{font-family:var(--font-serif);font-size:36px;line-height:1;color:#c8a783}
+.tw-week-signal h3{margin:16px 0 10px;font-family:var(--font-serif);font-size:22px;line-height:1.35;letter-spacing:0}
+.tw-week-signal p{margin:0;color:#6d554e;font-size:14px;line-height:1.8;font-weight:700}
+.tw-week-category{margin:0 0 60px}
+.tw-week-category-head,.tw-week-watch-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid rgba(60,43,39,.16)}
+.tw-week-category-head h2,.tw-week-watch-head h2{font-size:clamp(30px,3.6vw,48px);line-height:1.08}
+.tw-week-category-head{align-items:flex-start;flex-direction:column;gap:10px}
+.tw-week-category-head p{max-width:760px;margin:0;color:#8b7169;font-size:13px;font-weight:800;line-height:1.7;text-align:left}
+.tw-week-story-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.tw-week-story{display:grid;grid-template-columns:190px minmax(0,1fr);min-width:0;overflow:hidden;background:#fffaf4;border:1px solid rgba(60,43,39,.14);box-shadow:0 12px 30px rgba(91,52,46,.06)}
+.tw-week-story-media{display:block;min-height:210px;background:#e9ddd5;overflow:hidden}
+.tw-week-story-media img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .3s ease}
+.tw-week-story:hover .tw-week-story-media img{transform:scale(1.025)}
+.tw-week-story-copy{min-width:0;padding:22px 24px;display:flex;flex-direction:column}
+.tw-week-story-meta{color:#873026;font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.tw-week-story h3{margin:10px 0 10px;font-family:var(--font-serif);font-size:21px;line-height:1.42;letter-spacing:0}
+.tw-week-story p{margin:0;color:#6d554e;font-size:13.5px;line-height:1.78;font-weight:700}
+.tw-week-story-footer{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:auto;padding-top:18px}
+.tw-week-story-metric{color:#8b7169;font-size:11px;font-weight:900}
+.tw-week-story-link{color:#873026;font-size:11px;font-weight:900;text-decoration:none}
+.tw-week-story-link:hover{text-decoration:underline}
+.tw-week-watch{padding:32px;background:#3c2b27;color:#fff}
+.tw-week-watch .tw-week-section-kicker{color:#f0c8be}
+.tw-week-watch .tw-week-section-kicker::before{background:#f0c8be}
+.tw-week-watch-head{border-bottom-color:rgba(255,255,255,.18)}
+.tw-week-watch-head h2{color:#fff}
+.tw-week-watch-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 34px}
+.tw-week-watch-item{display:grid;grid-template-columns:34px minmax(0,1fr);gap:14px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.tw-week-watch-num{font-family:var(--font-serif);font-size:24px;color:#e8b0a5}
+.tw-week-watch-item h3{margin:1px 0 7px;font-family:var(--font-serif);font-size:18px;line-height:1.4;letter-spacing:0}
+.tw-week-watch-item p{margin:0;color:rgba(255,255,255,.72);font-size:13px;line-height:1.7;font-weight:700}
+@media(max-width:980px){.tw-week-switch-inner{align-items:flex-start;flex-direction:column}.tw-week-buttons{justify-content:flex-start}.tw-week-mainline{grid-template-columns:1fr}.tw-week-signals{grid-template-columns:1fr}.tw-week-story-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.tw-week-switch-inner{padding:22px 14px}.tw-week-report{padding:24px 14px 64px}.tw-week-hero{padding:34px 20px 0}.tw-week-hero-title{font-size:34px}.tw-week-hero-meta{line-height:1.7}.tw-week-stats{grid-template-columns:repeat(2,minmax(0,1fr));margin:0 -20px}.tw-week-stat{padding:20px;border-bottom:1px solid rgba(60,43,39,.14)}.tw-week-stat:nth-child(2){border-right:0}.tw-week-stat:nth-child(3),.tw-week-stat:nth-child(4){border-bottom:0}.tw-week-stat-value{font-size:34px}.tw-week-mainline{margin:28px 0}.tw-week-block{padding:24px 20px}.tw-week-block h2{font-size:27px}.tw-week-lede{font-size:16px}.tw-week-ranking{overflow:hidden}.tw-week-rank{grid-template-columns:28px minmax(0,1fr)}.tw-week-rank-metric{grid-column:2}.tw-week-category-head,.tw-week-watch-head{align-items:flex-start;flex-direction:column}.tw-week-category-head p{text-align:left}.tw-week-story{grid-template-columns:1fr}.tw-week-story-media{min-height:190px;aspect-ratio:16/9}.tw-week-story-copy{padding:20px}.tw-week-watch{padding:26px 20px}.tw-week-watch-grid{grid-template-columns:1fr}}
 .ed-digest-date-band{position:relative;z-index:2;background:#f6f0e8;padding:0 0 56px}
 .ed-digest-date-band .ed-date-strip{max-width:none;margin-bottom:0;border-left:0;border-right:0;box-shadow:none}
 .ed-digest-date-band .ed-date-scrollbar{display:block!important;visibility:visible!important;opacity:1!important;background:#e7d6d1;border:1px solid rgba(135,48,38,.2);box-shadow:inset 0 0 0 1px rgba(255,255,255,.28)}
 .ed-digest-date-band .ed-date-scroll-thumb{display:block!important;visibility:visible!important;opacity:1!important;min-width:72px;background:linear-gradient(90deg,#A33A2F,#D1B36F);box-shadow:0 7px 16px rgba(135,48,38,.28)}
-body.editorial-mode.roblox-mode{background:var(--bg);color:var(--ink);font-family:var(--font-sans);line-height:1.7}
+body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nunito Sans","Microsoft YaHei",sans-serif;line-height:1.55}
 @media(max-width:980px){body.editorial-mode{background:#f6f0e8}.ed-top-nav{grid-template-columns:1fr 1fr 120px 1fr 1fr;padding:0 18px}.ed-top-nav a:nth-child(3),.ed-top-nav a:nth-child(6),.ed-category-tab:nth-child(3),.ed-category-tab:nth-child(6){display:none}.ed-brand{font-size:18px}.ed-hero{grid-template-columns:1fr}.ed-hero-left,.ed-hero-right{min-height:auto;padding:64px 7vw}.ed-hero-feature,.ed-hero-right .ed-hero-feature{width:min(680px,86vw)}.ed-gold-plate{width:280px;height:280px}.ed-intro-grid{grid-template-columns:1fr}.ed-stats{grid-template-columns:repeat(2,1fr)}.ed-stat:nth-child(2){border-right:0}.ed-stat:nth-child(1),.ed-stat:nth-child(2){border-bottom:1px solid rgba(60,43,39,.16)}.ed-signal-panel,.ed-list-panel{padding:42px 28px}.ed-signal-card,.ed-list-card{grid-template-columns:146px 52px minmax(0,1fr);gap:18px}.ed-signal-media,.ed-list-media{width:146px;height:118px}}
 @media(max-width:620px){.ed-top-nav{grid-template-columns:1fr 110px 1fr;font-size:10px}.ed-top-nav a:nth-child(1),.ed-top-nav a:nth-child(2),.ed-top-nav a:nth-child(6),.ed-category-tab:nth-child(1),.ed-category-tab:nth-child(3),.ed-category-tab:nth-child(6),.ed-category-tab:nth-child(7),.ed-search-entry,.ed-nav-icon{display:none}.ed-section-wrap{padding:58px 20px 72px}.ed-stats{grid-template-columns:1fr}.ed-stat{border-right:0;border-bottom:1px solid rgba(60,43,39,.16)}.ed-stat:last-child{border-bottom:0}.ed-hero-photo{padding:12px}.ed-hero-copy-card{padding-left:18px}.ed-signal-panel,.ed-list-panel{padding:34px 18px}.ed-signal-head,.ed-list-section-title{align-items:flex-start;flex-direction:column}.ed-signal-card,.ed-list-card{grid-template-columns:1fr;padding:20px}.ed-signal-media,.ed-list-media{width:100%;height:190px}.ed-signal-num,.ed-list-num{font-size:32px}.ed-list-copy h4{font-size:26px}.ed-hero-copy-card h1,.ed-hero-copy-card h2{font-size:30px}.ed-footer{flex-direction:column}}
 @media(max-width:620px){.ed-control-head{align-items:flex-start;flex-direction:column}.ed-controls{padding:22px 16px 16px}.ed-control-search{width:100%;min-width:0}}
@@ -323,14 +534,48 @@ body.editorial-mode.roblox-mode{background:var(--bg);color:var(--ink);font-famil
   .ed-brand.is-feature{font-size:20px}
 }
 @media(max-width:620px){
-  .ed-top-nav{padding-inline:8px;font-size:13px}
-  .ed-top-nav>.ed-category-tab{min-width:126px;padding-inline:10px}
-  .ed-top-nav>.ed-brand{min-width:120px}
+  .ed-top-nav{height:auto;min-height:136px;display:flex;flex-wrap:wrap;align-content:flex-start;align-items:stretch;gap:0 4px;padding:6px 10px 10px;overflow:visible;font-size:12px;scroll-snap-type:none}
+  .ed-top-nav>.ed-category-tab{display:inline-flex!important;flex:1 1 calc(33.333% - 4px);min-width:0;height:38px;padding:0 3px;letter-spacing:0;scroll-snap-align:none}
+  .ed-top-nav>.ed-brand{order:1;min-width:0}
+  .ed-top-nav>.ed-category-tab:nth-child(1){order:2}
+  .ed-top-nav>.ed-category-tab:nth-child(2){order:3}
+  .ed-top-nav>.ed-category-tab:nth-child(3){order:4}
+  .ed-top-nav>.ed-category-tab:nth-child(5){order:5}
+  .ed-top-nav>.ed-category-tab:nth-child(6){order:6}
+  .ed-top-nav>.ed-search-entry{order:7;display:flex!important;flex:0 0 100%;height:40px;margin:5px 0 0;padding:0 10px;border:1px solid rgba(135,48,38,.18);border-radius:999px;background:#fffaf4}
+  .ed-top-nav>.ed-search-entry input{flex:1;min-width:0;width:auto;height:38px;padding:0 6px;border:0;background:transparent;box-shadow:none}
+  .ed-top-nav>.ed-search-entry .ed-search-button{flex:0 0 28px}
+  .ed-category-tab.is-feature,.ed-brand.is-feature{font-size:12px;letter-spacing:0;transform:none}
+  .ed-category-tab.is-feature::after{left:8px;right:8px;bottom:0;transform:none;width:auto;height:2px;border-radius:0;background:#A33A2F;box-shadow:none}
+  .ed-category-tab span,.ed-category-tab.is-feature span{font-size:9px;letter-spacing:0}
   .ed-hero-left{padding:48px 22px 56px 34px;background:linear-gradient(90deg,rgba(163,58,47,.78) 0 6px,transparent 6px 100%),repeating-linear-gradient(135deg,rgba(255,255,255,.38) 0 2px,transparent 2px 8px),#f6f0e8}
   .ed-coral-block{display:none}
   .ed-hero-feature,.ed-hero-right .ed-hero-feature{width:100%}
   .ed-hero-copy-card{padding-left:16px}
   .ed-digest-date-band{padding:0 0 56px}
+}
+@media(max-width:620px){
+  .ed-date-shift{display:none}
+  .ed-date-strip{padding:14px 14px 10px}
+  .ed-date-strip-head{margin-bottom:8px;gap:0}
+  .ed-date-strip-head small{line-height:1.55}
+  .ed-date-strip .ed-control-dates{padding-top:3px;padding-bottom:8px}
+  .ed-date-scrollbar,.ed-date-scroll-thumb{height:14px}
+  .ed-date-scrollbar{margin-top:6px}
+  .ed-digest-date-band{padding-bottom:8px}
+  .ed-hero-left{padding:18px 14px 44px 20px}
+  .ed-hero-left .ed-hero-feature{margin-top:0}
+  .ed-hero-right{padding:30px 20px 48px}
+  .ed-hero-photo{padding:8px}
+  .ed-hero-copy-card{margin-top:22px;padding-left:14px}
+}
+@media(max-width:620px){
+  .ed-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ed-stat{padding:18px 16px;border-right:1px solid rgba(60,43,39,.16);border-bottom:1px solid rgba(60,43,39,.16)}
+  .ed-stat:nth-child(2),.ed-stat:nth-child(4){border-right:0}
+  .ed-stat:nth-child(3),.ed-stat:nth-child(4){border-bottom:0}
+  .ed-stat .ed-num{font-size:34px}
+  .ed-stat .ed-cap{margin-top:6px;font-size:11px}
 }
 .ed-section-wrap.ed-legacy-wrap{padding-top:0}
 </style>
@@ -369,8 +614,17 @@ body.editorial-mode.roblox-mode{background:var(--bg);color:var(--ink);font-famil
 <div id="robloxView" class="roblox-view">
   <div id="robloxEditorialNav"></div>
   <div class="roblox-view-inner">
-    <div class="roblox-weeks" id="robloxWeeks"></div>
-    <iframe id="robloxFrame" class="roblox-iframe" frameborder="0"></iframe>
+    <section class="roblox-switcher" aria-label="ROBLOX 周报切换">
+      <div class="roblox-switch-inner">
+        <div>
+          <div class="roblox-kicker">ROBLOX Monitor</div>
+          <h1 class="roblox-title">ROBLOX 周报</h1>
+          <p class="roblox-subtitle">热门体验、品类变化与增长信号的周度编辑总结</p>
+        </div>
+        <div class="roblox-weeks" id="robloxWeeks"></div>
+      </div>
+    </section>
+    <div id="robloxReportHost" class="roblox-report-host"></div>
   </div>
 </div>
 
@@ -384,6 +638,10 @@ let currentData = null;
 let currentTab = 'digest'; // default to digest view
 let currentView = 'twitter';
 const reportCache = new Map();
+const robloxReportCache = new Map();
+let activeRobloxReportIndex = -1;
+let twitterWeeklyData = null;
+let activeTwitterWeeklyIndex = -1;
 let globalSearchToken = 0;
 let globalSearchTimer = null;
 let isGlobalSearchMode = false;
@@ -423,9 +681,43 @@ function renderRoblox() {
   setTimeout(scrollEditorialActiveNavIntoView, 30);
 }
 
-function loadRoblox(idx) {
+async function loadRoblox(idx) {
+  const report = robloxReports[idx];
+  const host = document.getElementById('robloxReportHost');
+  activeRobloxReportIndex = idx;
   document.querySelectorAll('.roblox-week-btn').forEach((b, i) => b.classList.toggle('on', i === idx));
-  document.getElementById('robloxFrame').src = robloxReports[idx].file;
+  host.innerHTML = '<div class="roblox-loading">周报加载中...</div>';
+  try {
+    const html = await fetchRobloxReport(report.file);
+    if (activeRobloxReportIndex !== idx) return;
+    host.innerHTML = extractRobloxReportBody(html);
+    document.querySelectorAll('.roblox-report-host script').forEach(node => node.remove());
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 30);
+  } catch(e) {
+    if (activeRobloxReportIndex !== idx) return;
+    host.innerHTML = `<div class="roblox-error">ROBLOX 周报加载失败<br><small>${escapeHtml(e.message)}</small></div>`;
+  }
+}
+
+async function fetchRobloxReport(file) {
+  if (robloxReportCache.has(file)) return robloxReportCache.get(file);
+  const res = await fetch(file + '?v=' + Date.now());
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const html = await res.text();
+  robloxReportCache.set(file, html);
+  return html;
+}
+
+function extractRobloxReportBody(html) {
+  const doc = new DOMParser().parseFromString(html, 'text/html');
+  const page = doc.querySelector('.page');
+  if (!page) throw new Error('缺少周报主体');
+  page.querySelectorAll('[style]').forEach(node => {
+    const barWidth = node.classList.contains('rank-bar-fill') ? node.style.width : '';
+    node.removeAttribute('style');
+    if (barWidth) node.style.width = barWidth;
+  });
+  return page.outerHTML;
 }
 
 async function init() {
@@ -751,7 +1043,7 @@ function renderEditorialDateStrip() {
     const hasData = available.has(d);
     return `<button type="button" class="ed-date-btn ${currentDate === d ? 'on' : ''} ${hasData ? '' : 'nodata'}" ${hasData ? `data-date="${d}"` : ''} title="${d}"><span>${dayNames[dt.getDay()]}</span>${label}</button>`;
   }).join('');
-  return `<section class="ed-date-strip" aria-label="日期选择"><div class="ed-date-strip-head"><div>Daily Timeline<small>拖动日期条或下方红金滑块，最新日期在左侧</small></div><div class="ed-date-shift"><button type="button" onclick="shiftEditorialDates(-1)" aria-label="向左查看较新日期">‹</button><button type="button" onclick="shiftEditorialDates(1)" aria-label="向右查看更早日期">›</button></div></div><div class="ed-control-dates" onclick="handleEditorialDateStripClick(event)" onscroll="syncEditorialDateScrollbar()" onpointerdown="startEditorialDatePan(event)" onpointermove="moveEditorialDatePan(event)" onpointerup="endEditorialDatePan(event)" onpointercancel="endEditorialDatePan(event)" onpointerleave="endEditorialDatePan(event)">${dateButtons}</div><div class="ed-date-scrollbar" onpointerdown="startEditorialDateDrag(event)"><div class="ed-date-scroll-thumb"></div></div></section>`;
+  return `<section class="ed-date-strip" aria-label="日期选择"><div class="ed-date-strip-head"><div>Daily Timeline<small>拖动日期条或下方红金滑块，最新日期在左侧 · 点击链接或视频可查看原推文</small></div><div class="ed-date-shift"><button type="button" onclick="shiftEditorialDates(-1)" aria-label="向左查看较新日期">‹</button><button type="button" onclick="shiftEditorialDates(1)" aria-label="向右查看更早日期">›</button></div></div><div class="ed-control-dates" onclick="handleEditorialDateStripClick(event)" onscroll="syncEditorialDateScrollbar()" onpointerdown="startEditorialDatePan(event)" onpointermove="moveEditorialDatePan(event)" onpointerup="endEditorialDatePan(event)" onpointercancel="endEditorialDatePan(event)" onpointerleave="endEditorialDatePan(event)">${dateButtons}</div><div class="ed-date-scrollbar" onpointerdown="startEditorialDateDrag(event)"><div class="ed-date-scroll-thumb"></div></div></section>`;
 }
 
 function shiftEditorialDates(direction) {
@@ -1182,13 +1474,65 @@ function renderEditorialContentShell() {
     </main>
   </div>`;
 }
+async function renderTwitterWeekly() {
+  const buttons = document.getElementById('twitterWeekButtons');
+  const host = document.getElementById('twitterWeeklyHost');
+  if (!buttons || !host) return;
+  host.innerHTML = '<div class="tw-week-loading">推特周报加载中...</div>';
+  try {
+    if (!twitterWeeklyData) {
+      const res = await fetch(BASE + 'twitter-weekly.json?v=' + Date.now());
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      twitterWeeklyData = await res.json();
+    }
+    if (currentTab !== 'weekly' || !document.getElementById('twitterWeeklyHost')) return;
+    const reports = twitterWeeklyData.weeks || [];
+    if (!reports.length) throw new Error('暂无周报数据');
+    buttons.innerHTML = reports.map((report, idx) =>
+      '<button type="button" class="tw-week-btn ' + (idx === reports.length - 1 ? 'on' : '') + '" onclick="setTwitterWeeklyReport(' + idx + ')">' + escapeHtml(report.label) + '</button>'
+    ).join('');
+    setTwitterWeeklyReport(reports.length - 1);
+  } catch (e) {
+    host.innerHTML = '<div class="tw-week-error">推特周报加载失败<br><small>' + escapeHtml(e.message) + '</small></div>';
+  }
+}
+
+function setTwitterWeeklyReport(index) {
+  if (!twitterWeeklyData) return;
+  const report = (twitterWeeklyData.weeks || [])[index];
+  const host = document.getElementById('twitterWeeklyHost');
+  if (!report || !host) return;
+  activeTwitterWeeklyIndex = index;
+  document.querySelectorAll('.tw-week-btn').forEach((button, idx) => button.classList.toggle('on', idx === index));
+  host.innerHTML = renderTwitterWeeklyReport(report);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderTwitterWeeklyReport(report) {
+  const stats = (report.stats || []).map(stat => '<div class="tw-week-stat"><div class="tw-week-stat-value">' + escapeHtml(stat.value) + '</div><div class="tw-week-stat-label">' + escapeHtml(stat.label) + '</div></div>').join('');
+  const lede = (report.executive || []).map(text => '<p>' + escapeHtml(text) + '</p>').join('');
+  const rankings = (report.rankings || []).map((item, idx) => '<div class="tw-week-rank"><div class="tw-week-rank-num">' + (idx + 1) + '</div><div class="tw-week-rank-copy"><a class="tw-week-rank-title" href="' + escapeHtml(item.link) + '" target="_blank" rel="noopener">' + escapeHtml(item.title) + '</a><div class="tw-week-rank-bar"><span style="width:' + Math.max(5, Math.min(100, item.heat || 0)) + '%"></span></div></div><div class="tw-week-rank-metric">' + escapeHtml(item.metric) + '</div></div>').join('');
+  const signals = (report.signals || []).map((signal, idx) => '<article class="tw-week-signal"><div class="tw-week-signal-num">0' + (idx + 1) + '</div><h3>' + escapeHtml(signal.title) + '</h3><p>' + escapeHtml(signal.body) + '</p></article>').join('');
+  const sections = (report.sections || []).map(section => '<section class="tw-week-category"><div class="tw-week-category-head"><h2>' + escapeHtml(section.title) + '</h2><p>' + escapeHtml(section.deck) + '</p></div><div class="tw-week-story-grid">' + (section.stories || []).map(renderTwitterWeeklyStory).join('') + '</div></section>').join('');
+  const watch = (report.watch || []).map((item, idx) => '<article class="tw-week-watch-item"><div class="tw-week-watch-num">0' + (idx + 1) + '</div><div><h3>' + escapeHtml(item.title) + '</h3><p>' + escapeHtml(item.body) + '</p></div></article>').join('');
+  return '<div class="tw-week-report-inner"><header class="tw-week-hero"><div class="tw-week-hero-kicker">' + escapeHtml(report.code + ' / Twitter Signals Weekly') + '</div><h1 class="tw-week-hero-title">' + escapeHtml(report.title) + '</h1><p class="tw-week-hero-meta">' + escapeHtml(report.range + ' · AI科技 / 游戏行业 / 新游推文') + '</p><div class="tw-week-stats">' + stats + '</div></header><section class="tw-week-mainline"><div class="tw-week-block"><div class="tw-week-section-kicker">Executive Summary</div><h2>本周主线</h2><div class="tw-week-lede">' + lede + '</div></div><aside class="tw-week-block"><div class="tw-week-section-kicker">Heat Ranking</div><h2>本周热度</h2><div class="tw-week-ranking">' + rankings + '</div></aside></section><section class="tw-week-signals" aria-label="本周三条关键信号">' + signals + '</section>' + sections + '<section class="tw-week-watch"><div class="tw-week-section-kicker">Next Week Watchlist</div><div class="tw-week-watch-head"><h2>下周观察</h2></div><div class="tw-week-watch-grid">' + watch + '</div></section></div>';
+}
+
+function renderTwitterWeeklyStory(story) {
+  const media = story.image
+    ? '<a class="tw-week-story-media" href="' + escapeHtml(story.link) + '" target="_blank" rel="noopener"><img src="' + escapeHtml(story.image) + '" alt="' + escapeHtml(story.title) + '" loading="lazy"></a>'
+    : '<a class="tw-week-story-media" href="' + escapeHtml(story.link) + '" target="_blank" rel="noopener" aria-label="' + escapeHtml(story.title) + '"></a>';
+  return '<article class="tw-week-story">' + media + '<div class="tw-week-story-copy"><div class="tw-week-story-meta">' + escapeHtml(story.date + ' · ' + story.source) + '</div><h3>' + escapeHtml(story.title) + '</h3><p>' + escapeHtml(story.summary) + '</p><div class="tw-week-story-footer"><span class="tw-week-story-metric">' + escapeHtml(story.metric) + '</span><a class="tw-week-story-link" href="' + escapeHtml(story.link) + '" target="_blank" rel="noopener">查看原推文 ↗</a></div></div></article>';
+}
+
 function renderEditorialWeeklyShell() {
-  return `<div class="ed-shell">
-    <nav class="ed-top-nav" aria-label="日报与周报导航">
-      ${renderEditorialTopNav()}
-    </nav>
-    <main class="ed-weekly-blank" aria-label="推特周报"></main>
-  </div>`;
+  return '<div class="ed-shell">' +
+    '<nav class="ed-top-nav" aria-label="日报与周报导航">' + renderEditorialTopNav() + '</nav>' +
+    '<main class="ed-weekly-page" aria-label="推特周报">' +
+      '<section class="tw-week-switcher"><div class="tw-week-switch-inner"><div><div class="tw-week-kicker">Twitter Signals</div><h1 class="tw-week-page-title">推特周报</h1><p class="tw-week-page-sub">AI 科技、游戏行业与新游信号的周度编辑总结</p></div><div id="twitterWeekButtons" class="tw-week-buttons" aria-label="推特周报周次"></div></div></section>' +
+      '<div id="twitterWeeklyHost" class="tw-week-report"><div class="tw-week-loading">推特周报加载中...</div></div>' +
+    '</main>' +
+  '</div>';
 }
 function renderEditorialDigest() {
   const { aiPick, gamePick } = findEditorialHeroPicks();
@@ -1216,14 +1560,13 @@ function renderEditorialDigest() {
     <header class="ed-hero" id="overview">
       <div class="ed-hero-left" id="ai">
         <div class="ed-coral-block" aria-hidden="true"></div>
-        <article class="ed-hero-feature">
+        <article class="ed-hero-feature ed-clickable-tweet" data-tweet-url="${escapeHtml(aiPick.item.link)}" tabindex="0" role="link" aria-label="打开推文：${escapeHtml(aiPick.item.title)}" onclick="handleTweetCardClick(event,this)" onkeydown="handleTweetCardKey(event,this)">
           ${renderEditorialHeroPhoto(aiPick.item, aiCopy.title)}
           <div class="ed-hero-copy-card">
             <div class="ed-label-line">${escapeHtml(aiCopy.label)}</div>
             <h1>${escapeHtml(formatEditorialHeroTitle(aiCopy.title))}</h1>
             <p>${escapeHtml(aiCopy.text)}</p>
             <div class="ed-action-row">
-              <a class="ed-outline-btn" href="${escapeHtml(aiPick.item.link)}" target="_blank" rel="noopener">Read Tweet</a>
               <span class="ed-metric">${formatCount(aiPick.item.likes)} Likes · ${formatCount(aiPick.item.views)} Views</span>
             </div>
           </div>
@@ -1231,14 +1574,13 @@ function renderEditorialDigest() {
       </div>
 
       <div class="ed-hero-right" id="game">
-        <article class="ed-hero-feature">
+        <article class="ed-hero-feature ed-clickable-tweet" data-tweet-url="${escapeHtml(gamePick.item.link)}" tabindex="0" role="link" aria-label="打开推文：${escapeHtml(gamePick.item.title)}" onclick="handleTweetCardClick(event,this)" onkeydown="handleTweetCardKey(event,this)">
           ${renderEditorialHeroPhoto(gamePick.item, gameCopy.title)}
           <div class="ed-hero-copy-card">
             <div class="ed-label-line">${escapeHtml(gameCopy.label)}</div>
             <h2>${escapeHtml(formatEditorialHeroTitle(gameCopy.title))}</h2>
             <p>${escapeHtml(gameCopy.text)}</p>
             <div class="ed-action-row">
-              <a class="ed-outline-btn" href="${escapeHtml(gamePick.item.link)}" target="_blank" rel="noopener">Read Tweet</a>
               <span class="ed-metric">${formatCount(gamePick.item.likes)} Likes · ${formatCount(gamePick.item.views)} Views</span>
             </div>
           </div>
@@ -1262,14 +1604,13 @@ function renderEditorialDigest() {
       <section class="ed-signal-panel" id="signals" aria-label="更多精选信号">
         <div class="ed-signal-head"><h3>More Game Signals</h3><span>${String(signals.length).padStart(2, '0')}</span></div>
         <div class="ed-signal-list">
-          ${signals.map((signal, index) => `<article class="ed-signal-card">
+          ${signals.map((signal, index) => `<article class="ed-signal-card ed-clickable-tweet" data-tweet-url="${escapeHtml(signal.item.link)}" tabindex="0" role="link" aria-label="打开推文：${escapeHtml(signal.item.title)}" onclick="handleTweetCardClick(event,this)" onkeydown="handleTweetCardKey(event,this)">
             <div class="ed-signal-media"><img src="${escapeHtml(getCover(signal.item))}" alt="${escapeHtml(signal.item.title)}"></div>
             <div class="ed-signal-num">${String(index + 1).padStart(2, '0')}</div>
             <div class="ed-signal-copy">
               <div class="ed-tag">${escapeHtml(signal.tag)}</div>
               <h4>${escapeHtml(signal.title)}</h4>
               <p>${escapeHtml(signal.text)}</p>
-              <a class="ed-tweet-link" href="${escapeHtml(signal.item.link)}" target="_blank" rel="noopener">Open Tweet</a>
             </div>
           </article>`).join('')}
         </div>
@@ -1432,6 +1773,7 @@ function switchTab(tab, scrollToId) {
     if (!scrollToId) setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50);
   } else if (tab === 'weekly') {
     document.getElementById('digestV2').innerHTML = renderEditorialWeeklyShell();
+    renderTwitterWeekly();
     setTimeout(() => {
       scrollEditorialActiveNavIntoView();
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1455,6 +1797,31 @@ function switchTab(tab, scrollToId) {
 function jumpToCard(sectionId, itemIndex) {
   const cardId = `card-${sectionId}-${itemIndex}`;
   switchTab(sectionId === 'tools' ? 'ai' : sectionId, cardId);
+}
+
+function handleTweetCardClick(event, card) {
+  if (!event || !card || event.defaultPrevented) return;
+  const target = event.target;
+  const interactive = target && target.closest
+    ? target.closest('a,button,input,textarea,select,video,audio,.expand-btn,.collapse-btn')
+    : null;
+  if (interactive && card.contains(interactive)) return;
+  const selection = window.getSelection ? String(window.getSelection()).trim() : '';
+  if (selection) return;
+  openTweetCard(card);
+}
+
+function handleTweetCardKey(event, card) {
+  if (!event || event.key !== 'Enter' || event.target !== card) return;
+  event.preventDefault();
+  openTweetCard(card);
+}
+
+function openTweetCard(card) {
+  const url = card && card.dataset ? card.dataset.tweetUrl : '';
+  if (!url) return;
+  const opened = window.open(url, '_blank', 'noopener');
+  if (opened) opened.opener = null;
 }
 
 function getEditorialSectionLabel(section) {
