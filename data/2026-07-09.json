@@ -4,7 +4,7 @@
     "source": "X/Twitter crawler API",
     "raw_count": 233,
     "prefiltered_count": 186,
-    "selected_count": 8,
+    "selected_count": 20,
     "crawl_time": "2026-07-09 18:00"
   },
   "lede": "OpenAI 宣布 GPT-5.6 Sol/Terra/Luna 本周四公开发布\nAnthropic 新研究：Claude 内部发现类似人类意识的“全局工作空间”结构",
@@ -121,6 +121,129 @@
           "summary": "开发者 1 天内用 AI 工具链做出回合制战斗游戏场景。游戏系统用 Fable 5，角色用 GPT image2+Rodin，背景用 GPT image2，动画用 Mixamo，修正用 Sonnet 5。",
           "analysis": "完整展示了’AI 游戏开发工具链”的当前状态：多个 AI 工具各司其职（系统/角色/背景/动画），组合后 1 天可产出可展示的游戏场景。",
           "recommendation": "AI 工具链 1 天做出回合制战斗场景：Fable 5 + GPT image2 + Rodin + Mixamo 各司其职"
+        },
+        {
+          "idx": "AI科技热点 04",
+          "source": "Watcher.Guru",
+          "tags": [
+            "中国",
+            "人形机器人",
+            "产业"
+          ],
+          "title": "中国预计今年生产超过 10 万台人形机器人",
+          "en_title": "JUST IN: China expected to produce over 100,000 humanoid robots this year.",
+          "full_text": "JUST IN: 🇨🇳 China expected to produce over 100,000 humanoid robots this year.",
+          "author": "WatcherGuru",
+          "date": "2026-07-07",
+          "likes": 4730,
+          "views": 516691,
+          "link": "https://x.com/WatcherGuru/status/2074618926458175559",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMqG6uVW0AARAPS.jpg"
+          },
+          "summary": "中国预计 2026 年生产超过 10 万台人形机器人。",
+          "analysis": "人形机器人产业化加速，中国在这个赛道上走在前列。对游戏行业的潜在影响：机器人交互、真实世界游戏化。",
+          "recommendation": "中国预计今年生产超 10 万台人形机器人，产业化加速"
+        },
+        {
+          "idx": "AI科技热点 05",
+          "source": "Aaron Levie",
+          "tags": [
+            "AI Agent",
+            "企业",
+            "部署"
+          ],
+          "title": "企业 AI Agent 部署的共同主题：组织模式、工具整合、处理非结构化数据",
+          "en_title": "Just coming off meetings with a couple dozen enterprise IT leaders discussing AI agents. Common themes: operating model challenge, cross-silo agents, unstructured data.",
+          "full_text": "Just coming off of meetings with a couple dozen enterprise IT leaders discussing AI agents. Common themes: operating model challenge to get full benefits of AI. Most companies have orgs that operated in siloes; agents are most effective when tied to a process which cuts across siloes.",
+          "author": "levie",
+          "date": "2026-07-08",
+          "likes": 1458,
+          "views": 199221,
+          "link": "https://x.com/levie/status/2074719479377109312",
+          "media": null,
+          "summary": "Aaron Levie 与数十位企业 IT 领导讨论 AI Agent 后总结的共同主题：组织模式挑战、跨部门協作、非结构化数据处理。",
+          "analysis": "企业 AI Agent 落地的核心难题不是技术而是组织结构。Agent 要跨部门工作，但大多数企业是层级式组织。",
+          "recommendation": "企业 AI Agent 部署的共同主题：组织结构而非技术是核心障碍"
+        },
+        {
+          "idx": "AI科技热点 06",
+          "source": "precis0x",
+          "tags": [
+            "Anthropic",
+            "Claude",
+            "Agent",
+            "无员工企业"
+          ],
+          "title": "Anthropic 发布 30 分钟免费教程：如何用 Claude Agent 建立无员工企业",
+          "en_title": "Anthropic just published content on building a company with no employees. CEO: 1 person. Employees: Claude agents. 30 minutes, free.",
+          "full_text": "ANTHROPIC ACABA DE PUBLICAR UN CONTENIDO PARA MONTAR UNA EMPRESA SIN EMPLEADOS\n\n- CEO: 1 persona. \n- empleados: agentes de claude\n\ndura 30 minutos y es gratis",
+          "author": "precisox",
+          "date": "2026-07-07",
+          "likes": 1124,
+          "views": 109217,
+          "link": "https://x.com/precisox/status/2074560426382184734",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074559936567091200/img/dwA0AIKvHfhN90wq.jpg",
+            "video_url": "https://x.com/precisox/status/2074560426382184734/video/1"
+          },
+          "summary": "Anthropic 发布 30 分钟免费教程，教如何用 Claude Agent 建立“1人 CEO + AI员工”的企业。",
+          "analysis": "Anthropic 官方推广“无员工企业”概念，说明他们认为 Agent 已经达到可替代基础岗位的水平。",
+          "recommendation": "Anthropic 官方教程：如何用 Claude Agent 建立 1人 CEO + AI员工的企业"
+        },
+        {
+          "idx": "AI科技热点 07",
+          "source": "Sac",
+          "tags": [
+            "Fable 5",
+            "中国古建筑",
+            "3D",
+            "可视化"
+          ],
+          "title": "Fable 5 制作中国古建筑 3D 鉴赏网站：故宫、布达拉宫、黄鹤楼、天坛、长城、莫高窟",
+          "en_title": "Built a Chinese ancient architecture 3D showcase site with Fable 5. Currently loaded: Forbidden City, Potala Palace, Yellow Crane Tower, Temple of Heaven, Great Wall, Fujian Tulou, Mogao Caves.",
+          "full_text": "中国古建筑 3D 鉴赏 \n\n用 Fable 5设计并制作了一个中国古建筑鉴赏网站，当前加载了故宫、布达拉宫、黄鹤楼、天坛、长城、福建土楼以及莫高窟\n\n如果大家喜欢，后续会持续迭代",
+          "author": "Saccc_c",
+          "date": "2026-07-07",
+          "likes": 482,
+          "views": 43678,
+          "link": "https://x.com/Saccc_c/status/2074414277453377607",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074413596554276864/img/JEDu3IZ_R92sQGwK.jpg",
+            "video_url": "https://x.com/Saccc_c/status/2074414277453377607/video/1"
+          },
+          "summary": "开发者用 Fable 5 制作了中国古建筑 3D 鉴赏网站，包含故宫、布达拉宫、黄鹤楼、天坛、长城、福建土楼、莫高窟。",
+          "analysis": "中文社区开发者用 Fable 做文化项目，证明 AI 游戏开发工具在教育/文化展示领域也有应用。",
+          "recommendation": "Fable 5 制作中国古建筑 3D 鉴赏：故宫、布达拉宫、黄鹤楼、天坛、莫高窟"
+        },
+        {
+          "idx": "AI科技热点 08",
+          "source": "Binh Pham",
+          "tags": [
+            "Fable 5",
+            "C语言",
+            "RL",
+            "Polytopia"
+          ],
+          "title": "Polytopia 用纯 C + Fable 重写，RL Agent 从零训练，浏览器可玩",
+          "en_title": "Polytopia rebuilt in pure C, RL agents trained from scratch, playable in the browser. Completely vibecoded, no line written manually.",
+          "full_text": "polytopia rebuilt in pure C, RL agents trained from scratch, playable in the browser\n\ncompletely vibecoded. i didn't write a line. even the game assets were ai-generated using a pipeline fable created.",
+          "author": "pham_blnh",
+          "date": "2026-07-08",
+          "likes": 167,
+          "views": 21021,
+          "link": "https://x.com/pham_blnh/status/2074730174667771987",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074729457865412609/img/QV5hzN8PCGw0TvUC.jpg",
+            "video_url": "https://x.com/pham_blnh/status/2074730174667771987/video/1"
+          },
+          "summary": "开发者用纯 C + Fable 完全重写了 Polytopia，包含从零训练的 RL Agent，浏览器即可玩。所有代码和美术资源均由 AI 生成。",
+          "analysis": "纯 C 重写 + RL 训练 + 全 AI 生成资产，是目前“vibe coding”的极致案例。",
+          "recommendation": "Polytopia 用纯 C + Fable 重写，含 RL Agent 训练，全 AI 生成，浏览器可玩"
         }
       ]
     },
@@ -179,6 +302,78 @@
           "summary": "据报道，微软正在考虑让更多第一方游戏回归 Xbox 独占。这是裁员后的策略调整，与此前多平台策略相矛盾。",
           "analysis": "裁员 + 回归独占 = 微软正在否定 Phil Spencer 时代的多平台策略。新 CEO Asha Sharma 明确表示 Game Pass+多平台“增长未达预期”，现在要走回独占拉硬件销量的老路。",
           "recommendation": "微软考虑让更多第一方游戏回归 Xbox 独占，与此前多平台策略矛盾"
+        },
+        {
+          "idx": "游戏行业动态 03",
+          "source": "GameSpot",
+          "tags": [
+            "Nintendo",
+            "Mario Kart",
+            "关服"
+          ],
+          "title": "Mario Kart Tour 将于 9 月关服，关服后完全不可玩",
+          "en_title": "Mario Kart Tour Will Be Unplayable After Nintendo Shuts It Down In September",
+          "full_text": "Mario Kart Tour Will Be Unplayable After Nintendo Shuts It Down In September",
+          "author": "GameSpot",
+          "date": "2026-07-08",
+          "likes": 45,
+          "views": 15206,
+          "link": "https://x.com/GameSpot/status/2074863131562758265",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMtlA50bEAAmwxs.jpg"
+          },
+          "summary": "任天堂宣布 Mario Kart Tour 将于 9 月关服，关服后游戏完全不可玩。",
+          "analysis": "又一个永久下线的服务型游戏，游戏保存问题再次被提上日程。",
+          "recommendation": "Mario Kart Tour 9月关服且完全不可玩，游戏保存问题再次凸显"
+        },
+        {
+          "idx": "游戏行业动态 04",
+          "source": "GameSpot",
+          "tags": [
+            "Apex Legends",
+            "Cyberpunk",
+            "联动"
+          ],
+          "title": "Apex Legends x Cyberpunk 2077 联动活动 7月14日开始",
+          "en_title": "Ready to delta to Night City? The Apex Legends x Cyberpunk collab event starts July 14.",
+          "full_text": "Ready to delta to Night City? The Apex Legends x Cyberpunk collab event starts July 14.",
+          "author": "GameSpot",
+          "date": "2026-07-08",
+          "likes": 30,
+          "views": 16550,
+          "link": "https://x.com/GameSpot/status/2074853394477437041",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMtcJkKXEAAYM_b.jpg"
+          },
+          "summary": "Apex Legends 与 Cyberpunk 2077 联动活动将于 7月14日开始。",
+          "analysis": "跨 IP 联动已成为服务型游戏常规运营手段。",
+          "recommendation": "Apex Legends x Cyberpunk 2077 联动 7/14 开始，跨 IP 合作活动"
+        },
+        {
+          "idx": "游戏行业动态 05",
+          "source": "GameSpot",
+          "tags": [
+            "Minecraft",
+            "更新",
+            "新功能"
+          ],
+          "title": "Minecraft 将添加缺失 17 年的高呼声功能",
+          "en_title": "Minecraft Is Adding A Highly Requested Feature It's Been Missing For 17 Years",
+          "full_text": "Minecraft Is Adding A Highly Requested Feature It's Been Missing For 17 Years",
+          "author": "GameSpot",
+          "date": "2026-07-08",
+          "likes": 14,
+          "views": 8819,
+          "link": "https://x.com/GameSpot/status/2074887642492424291",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMt7UH-bYAAyVU8.jpg"
+          },
+          "summary": "Minecraft 将添加一个缺失 17 年的高呼声功能。",
+          "analysis": "Minecraft 作为全球最畅销游戏，每次更新都对生态有影响。",
+          "recommendation": "Minecraft 终于添加缺失 17 年的功能，社区高呼声需求"
         }
       ]
     },
@@ -269,6 +464,98 @@
             "why_notable": "同时提供付费版和全可玩免费版的商业模式值得关注",
             "description": "Kingdom Chronicle 是回合制幻想战略 SLG，由日本独立工作室“くそげ工房”开发。7月22日 Steam 发售，同时提供全部内容可玩的免费版。\n\nSteam 状态：7月22日发售\n信源：gamebiz 日文游戏业界资讯"
           }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Best Indie Games",
+          "tags": [
+            "手绘",
+            "ARPG",
+            "半开放世界",
+            "魔法"
+          ],
+          "title": "Bridgebourn：手绘半开放世界动作RPG，看似3D实为2D，法术连锁反应",
+          "en_title": "Explore a hand-painted semi-open world that looks 3D but is actually 2D. Combine spells with your party for chain reactions. Command 3 party members with unique battle styles.",
+          "full_text": "Explore a hand-painted semi-open world that looks 3D but is actually 2D in this story-rich action RPG\n\n- Combine spells with your party for chain reactions\n- Command 3 party members with unique battle styles\n\nIt's called Bridgebourn. Are you interested?",
+          "author": "clemmygames",
+          "date": "2026-07-08",
+          "likes": 374,
+          "views": 20092,
+          "link": "https://x.com/clemmygames/status/2074659873254502560",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2074659821165346816/pu/img/63WMyZk7muhVwjib.jpg",
+            "video_url": "https://x.com/clemmygames/status/2074659873254502560/video/1"
+          },
+          "summary": "Bridgebourn 是手绘风格的半开放世界动作 RPG，视觉上看似 3D 实为 2D。可组合法术产生连锁反应，指接 3 名队友各有独特战斗风格。",
+          "analysis": "",
+          "recommendation": "Bridgebourn：手绘似3D实2D的半开放世界 ARPG，法术连锁+3人队伍",
+          "enrichment": {
+            "game_name": "Bridgebourn",
+            "genre": "ARPG / 手绘 / 半开放世界",
+            "developer": "未公布",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "release_date": "未定",
+            "positioning": "手绘似3D实2D的叙事动作RPG，法术连锁反应",
+            "why_notable": "视觉欺骗技术（看似3D实为2D）新颖，法术连锁系统有创意",
+            "description": "Bridgebourn 是一款手绘风格半开放世界动作 RPG。视觉上看似 3D 实为 2D。玩家可组合法术产生连锁反应，指接 3 名队友各有独特战斗风格。\n\nSteam 状态：未上架\n信源：@clemmygames 推文"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "IndieGamesLibrary",
+          "tags": [
+            "动作",
+            "战斗",
+            "精美动画"
+          ],
+          "title": "STARDUST: Wish of Witch 格里芬战斗场景：每个角色动作都有个性化细节",
+          "en_title": "Griffin Battle Scene from STARDUST: Wish of Witch! Take a closer look at each character separately - so much individuality.",
+          "full_text": "Griffin Battle Scene from \"STARDUST: Wish of Witch!\"\n\nP.S: Take a closer look at each character separately throughout the whole clip. So much individuality :)",
+          "author": "IndieGamesLib",
+          "date": "2026-07-07",
+          "likes": 423,
+          "views": 31637,
+          "link": "https://x.com/IndieGamesLib/status/2074554042450162025",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074458166104924160/img/W482zSEIG-WJH3gn.jpg",
+            "video_url": "https://x.com/IndieGamesLib/status/2074554042450162025/video/1"
+          },
+          "summary": "STARDUST: Wish of Witch 展示格里芬战斗场景，每个角色在战斗中都有独特的个性化动作细节。",
+          "analysis": "",
+          "recommendation": "STARDUST: Wish of Witch 格里芬战斗场景，角色动作个性化细节精美"
+        },
+        {
+          "idx": "新游推文 05",
+          "source": "jockie - Direland",
+          "tags": [
+            "独立开发",
+            "动作",
+            "巨剑"
+          ],
+          "title": "Direland：巨大剑战斗动作游戏新进展",
+          "en_title": "Big sword is done! #indiedev",
+          "full_text": "でっかい剣もできた\n#indiedev",
+          "author": "KAIJIUUUUU",
+          "date": "2026-07-07",
+          "likes": 1046,
+          "views": 54447,
+          "link": "https://x.com/KAIJIUUUUU/status/2074490409917784124",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074486086655680512/img/-BndjzGaEnVO7RM_.jpg",
+            "video_url": "https://x.com/KAIJIUUUUU/status/2074490409917784124/video/1"
+          },
+          "summary": "Direland 独立开发新进展：巨大剑战斗动作已完成。",
+          "analysis": "",
+          "recommendation": "Direland：巨剑战斗动作新进展，1046赞社区热度高"
         }
       ]
     },
@@ -303,6 +590,31 @@
           "summary": "开发者用 Claude Code + Fable 在 3 小时内做出了交互式地形图可视化（Three.js）。",
           "analysis": "3 小时从想法到可交互原型，展示了 AI 编程工具对创意可视化项目的加速效果。对游戏地图设计、数据可视化项目都有参考价值。",
           "recommendation": "Claude Code + Fable 3小时做出 Three.js 交互式地形图可视化——1615赞"
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "precis0x",
+          "tags": [
+            "GitHub",
+            "爬虫",
+            "开源",
+            "AI"
+          ],
+          "title": "8 个最佳 GitHub 开源网页抓取工具推荐：Firecrawl、Crawl4AI 等",
+          "en_title": "8 of the best GitHub repos for extracting data from any website automatically: Firecrawl, Crawl4AI, etc.",
+          "full_text": "Te comparto 8 de los mejores repos de github para extraer datos de cualquier sitio web automáticamente:\n\n1. Firecrawl - 140K stars\n2. Crawl4AI - no API key needed\n...",
+          "author": "precisox",
+          "date": "2026-07-07",
+          "likes": 1024,
+          "views": 62443,
+          "link": "https://x.com/precisox/status/2074597279651283338",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMpyx9HWQAAtI3a.png"
+          },
+          "summary": "推荐 8 个最佳开源网页抓取工具：Firecrawl（140K stars）、Crawl4AI（无需 API key）等，均支持 AI 友好输出。",
+          "analysis": "对需要抓取数据做 AI 训练或游戏市场分析的开发者有直接参考价值。",
+          "recommendation": "8 个最佳 GitHub 开源网页抓取工具：Firecrawl 140K stars、Crawl4AI 无需 API key"
         }
       ]
     }
