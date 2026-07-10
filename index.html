@@ -490,7 +490,10 @@ body.editorial-mode #content,body.editorial-mode #dailySummary,body.editorial-mo
 .tw-week-category-head{align-items:flex-start;flex-direction:column;gap:10px}
 .tw-week-category-head p{max-width:760px;margin:0;color:#8b7169;font-size:13px;font-weight:800;line-height:1.7;text-align:left}
 .tw-week-story-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.tw-week-story{display:grid;grid-template-columns:190px minmax(0,1fr);min-width:0;overflow:hidden;background:#fffaf4;border:1px solid rgba(60,43,39,.14);box-shadow:0 12px 30px rgba(91,52,46,.06)}
+.tw-week-story{display:grid;grid-template-columns:190px minmax(0,1fr);min-width:0;overflow:hidden;background:#fffaf4;border:1px solid rgba(60,43,39,.14);box-shadow:0 12px 30px rgba(91,52,46,.06);cursor:pointer;transition:transform .22s ease,box-shadow .22s ease,opacity .22s ease}
+.tw-week-story:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(91,52,46,.11)}
+.tw-week-story:focus-visible{outline:3px solid rgba(163,58,47,.62);outline-offset:4px}
+.tw-week-story.is-loading{opacity:.68;pointer-events:none}
 .tw-week-story-media{display:block;min-height:210px;background:#e9ddd5;overflow:hidden}
 .tw-week-story-media img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .3s ease}
 .tw-week-story:hover .tw-week-story-media img{transform:scale(1.025)}
@@ -1525,11 +1528,85 @@ function renderTwitterWeeklyReport(report) {
   return '<div class="tw-week-report-inner"><header class="tw-week-hero"><div class="tw-week-hero-kicker">' + escapeHtml(report.code + ' / Twitter Signals Weekly') + '</div><h1 class="tw-week-hero-title">' + escapeHtml(report.title) + '</h1><p class="tw-week-hero-meta">' + escapeHtml(report.range + ' · AI科技 / 游戏行业 / 新游推文') + '</p><div class="tw-week-stats">' + stats + '</div></header><section class="tw-week-mainline"><div class="tw-week-block"><div class="tw-week-section-kicker">Executive Summary</div><h2>本周主线</h2><div class="tw-week-lede">' + lede + '</div></div><aside class="tw-week-block"><div class="tw-week-section-kicker">Heat Ranking</div><h2>本周热度</h2><div class="tw-week-ranking">' + rankings + '</div></aside></section><section class="tw-week-signals" aria-label="本周三条关键信号">' + signals + '</section>' + sections + '<section class="tw-week-watch"><div class="tw-week-section-kicker">Next Week Watchlist</div><div class="tw-week-watch-head"><h2>下周观察</h2></div><div class="tw-week-watch-grid">' + watch + '</div></section></div>';
 }
 
-function renderTwitterWeeklyStory(story) {
+function renderTwitterWeeklyStoryBase(story) {
   const media = story.image
     ? '<a class="tw-week-story-media" href="' + escapeHtml(story.link) + '" target="_blank" rel="noopener"><img src="' + escapeHtml(story.image) + '" alt="' + escapeHtml(story.title) + '" loading="lazy"></a>'
     : '<a class="tw-week-story-media" href="' + escapeHtml(story.link) + '" target="_blank" rel="noopener" aria-label="' + escapeHtml(story.title) + '"></a>';
   return '<article class="tw-week-story">' + media + '<div class="tw-week-story-copy"><div class="tw-week-story-meta">' + escapeHtml(story.date + ' · ' + story.source) + '</div><h3>' + escapeHtml(story.title) + '</h3><p>' + escapeHtml(story.summary) + '</p><div class="tw-week-story-footer"><span class="tw-week-story-metric">' + escapeHtml(story.metric) + '</span><a class="tw-week-story-link" href="' + escapeHtml(story.link) + '" target="_blank" rel="noopener">查看原推文 ↗</a></div></div></article>';
+}
+
+function renderTwitterWeeklyStory(story) {
+  const analysisLabel = '\u67e5\u770b\u5206\u6790\uff1a' + story.title;
+  const baseHtml = renderTwitterWeeklyStoryBase(story);
+  const articleOpen = '<article class="tw-week-story" data-date="' + escapeHtml(story.date) + '" data-link="' + escapeHtml(story.link) + '" tabindex="0" role="link" aria-label="' + escapeHtml(analysisLabel) + '" onclick="handleTwitterWeeklyStoryClick(event,this)" onkeydown="handleTwitterWeeklyStoryKey(event,this)">';
+  return baseHtml
+    .replace('<article class="tw-week-story">', articleOpen)
+    .replace(/<a class="tw-week-story-media"[^>]*>([\s\S]*?)<\/a>/, '<div class="tw-week-story-media">$1</div>');
+}
+
+function handleTwitterWeeklyStoryClick(event, card) {
+  if (!event || !card || event.target.closest('a,button')) return;
+  const selection = window.getSelection && window.getSelection().toString().trim();
+  if (selection) return;
+  openTwitterWeeklyStoryAnalysis(card);
+}
+
+function handleTwitterWeeklyStoryKey(event, card) {
+  if (!event || event.key !== 'Enter' || event.target !== card) return;
+  event.preventDefault();
+  openTwitterWeeklyStoryAnalysis(card);
+}
+
+function normalizeTweetLink(value) {
+  try {
+    const url = new URL(String(value || ''), window.location.href);
+    const host = url.hostname.toLowerCase().replace(/^www\./, '').replace(/^twitter\.com$/, 'x.com');
+    return host + url.pathname.replace(/\/$/, '');
+  } catch (error) {
+    return String(value || '').trim().replace(/[?#].*$/, '').replace(/\/$/, '');
+  }
+}
+
+async function findTwitterWeeklyStoryTarget(link, shortDate) {
+  const dates = ((manifest && manifest.dates) || []).slice();
+  const dateMatch = String(shortDate || '').match(/^(\d{1,2})\.(\d{1,2})$/);
+  const dateSuffix = dateMatch
+    ? '-' + dateMatch[1].padStart(2, '0') + '-' + dateMatch[2].padStart(2, '0')
+    : '';
+  const likelyDates = dateSuffix ? dates.filter(date => date.endsWith(dateSuffix)) : [];
+  const orderedDates = likelyDates.concat(dates.filter(date => !likelyDates.includes(date)));
+  const normalizedLink = normalizeTweetLink(link);
+
+  for (const date of orderedDates) {
+    try {
+      const report = await getReportByDate(date);
+      for (const section of (report.sections || [])) {
+        const itemIndex = (section.items || []).findIndex(item => normalizeTweetLink(item.link) === normalizedLink);
+        if (itemIndex >= 0) return { date, sectionId: section.id, itemIndex };
+      }
+    } catch (error) {}
+  }
+  return null;
+}
+
+async function openTwitterWeeklyStoryAnalysis(card) {
+  if (!card || !card.dataset || card.classList.contains('is-loading')) return;
+  card.classList.add('is-loading');
+  card.setAttribute('aria-busy', 'true');
+  try {
+    const target = await findTwitterWeeklyStoryTarget(card.dataset.link, card.dataset.date);
+    if (!target) throw new Error('Missing matching daily analysis item');
+    const targetTab = target.sectionId === 'tools' ? 'ai' : target.sectionId;
+    await loadDate(target.date, { tab: targetTab });
+    setTimeout(() => {
+      const analysisCard = document.getElementById(`card-${target.sectionId}-${target.itemIndex}`);
+      if (analysisCard) analysisCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 50);
+  } catch (error) {
+    console.warn('Twitter weekly story navigation failed:', error);
+    card.classList.remove('is-loading');
+    card.removeAttribute('aria-busy');
+  }
 }
 
 function renderEditorialWeeklyShell() {
