@@ -1,0 +1,506 @@
+{
+  "date": "2026-07-10",
+  "meta": {
+    "source": "X/Twitter crawler API",
+    "raw_count": 216,
+    "prefiltered_count": 186,
+    "selected_count": 22,
+    "crawl_time": "2026-07-10 18:00"
+  },
+  "lede": "Elon Musk 宣布 Grok 4.5 明日公开：Opus 级智能但更快更便宜，游戏开发者实测称“像 Opus 4.8 但 2x 速度”\n十四年炽火：中国独立团队做出初代COD质感的FPS，7角色各有故事线——527K views",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Elon Musk 宣布 Grok 4.5 明日公开：Opus 级智能但更快更便宜，游戏开发者实测称“像 Opus 4.8 但 2x 速度”"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "十四年炽火：中国独立团队做出初代COD质感的FPS，7角色各有故事线——527K views"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Grok 4.5 明日公开：Opus 级智能，更快更便宜，游戏开发者实测称“像 Opus 4.8 但 2x 速度”\nThreenity Engine：花$300在Claude上用20B token造了一个Unity+Three.js混合引擎"
+    },
+    {
+      "id": "industry",
+      "text": "Limbus Company 15.7万PCU新纪录，韩国游戏再破Steam同时在线记录\nDragon Age 前首席编剧认为该系列可能已死"
+    },
+    {
+      "id": "indie",
+      "text": "十四年炽火：中国独立团队复刻初代COD质感，7角色各有故事线\nPalworld 1.0 正式上线，新Pal+新大陆+战斗系统大幅进化"
+    },
+    {
+      "id": "tools",
+      "text": "Fable 做程序化城市生成：“构建程序化城市比想象中难，但很有趣”"
+    }
+  ],
+  "daily_summary": "**Grok 4.5 明日公开发布**：Elon Musk 宣布 Grok 4.5 将于明天向公众开放，定位为 Opus 级智能但更快、更省 token、更便宜。游戏开发者实测称“感觉像 Opus 4.8 但 2x 速度”，并展示了用它做游戏 Boss 战的效果。\n\n**十四年炽火**：中国独立团队做出初代 COD 质感的 FPS，7 个角色各有独立故事线，武器载具 1:1 复刻。527K views 说明海外对中国独立游戏的关注度在上升。\n\n**Palworld 1.0 正式上线**：新 Pal、新大陆、战斗系统大幅进化、海上建筑、任务系统翻新。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#6C5CE7",
+      "items": [
+        {
+          "idx": "AI 01",
+          "source": "Elon Musk",
+          "tags": [
+            "Grok 4.5",
+            "xAI",
+            "Opus级"
+          ],
+          "title": "Grok 4.5 明日公开发布：Opus 级智能，更快更省 token 更便宜",
+          "en_title": "Based on strong positive feedback from customers in our beta test program, @SpaceXAI will make Grok 4.5 available to the public tomorrow. It is an Opus-class model, but faster, more token-efficient and lower cost.",
+          "full_text": "Based on strong positive feedback from customers in our beta test program, @SpaceXAI will make Grok 4.5 available to the public tomorrow.\n\nIt is an Opus-class model, but faster, more token-efficient and lower cost.",
+          "author": "elonmusk",
+          "date": "2026-07-08",
+          "likes": 54154,
+          "views": 6324219,
+          "link": "https://x.com/elonmusk/status/2074740539874775163",
+          "media": null,
+          "summary": "Elon Musk 宣布 Grok 4.5 将于明天向公众开放。定位为 Opus 级智能，但更快、更省 token、成本更低。基于 beta 测试用户的强正反馈。",
+          "analysis": "xAI 正式进入“Opus 级”竞争，且定价比 Anthropic Opus 低。对开发者而言，多了一个高性能低成本的选择。",
+          "recommendation": "Grok 4.5 明日公开：Opus 级智能但更快更便宜，基于 beta 测试正反馈"
+        },
+        {
+          "idx": "AI 02",
+          "source": "Danny Limanseta",
+          "tags": [
+            "Grok 4.5",
+            "游戏开发",
+            "Cursor"
+          ],
+          "title": "Grok 4.5 游戏开发实测：感觉像 Opus 4.8 但 2x 速度，Boss 战实现效果优秀",
+          "en_title": "I got to try Grok 4.5 in early access in Cursor. It feels like Opus 4.8 at 2x the speed at a much cheaper price point. I tasked it to implement a boss fight and it did not disappoint.",
+          "full_text": "I got to try Grok 4.5 in early access in Cursor for the past few days and I absolutely enjoyed it.\n\nIt feels like Opus 4.8 at 2x the speed at a much cheaper price point.\n\nI tasked it to brainstorm > plan > implement a big feature for my game (this act 1 boss fight) and it did not disappoint.",
+          "author": "DannyLimanseta",
+          "date": "2026-07-08",
+          "likes": 1067,
+          "views": 1150552,
+          "link": "https://x.com/DannyLimanseta/status/2074921437933211813",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074919661129605120/img/Em-Tmql0K4WOCLQH.jpg",
+            "video_url": "https://x.com/DannyLimanseta/status/2074921437933211813/video/1"
+          },
+          "summary": "游戏开发者在 Cursor 中实测 Grok 4.5：感觉像 Opus 4.8 但 2x 速度、更便宜。用它做 Boss 战实现（谋划+规划+实现）效果优秀。",
+          "analysis": "游戏开发者的直接反馈证实 Grok 4.5 在编程场景表现优秀。“2x 速度”对迭代密集的游戏开发很重要。",
+          "recommendation": "Grok 4.5 游戏开发实测：感觉像 Opus 4.8 但 2x 速度，Boss 战实现效果优秀"
+        },
+        {
+          "idx": "AI 03",
+          "source": "Artem Semenov",
+          "tags": [
+            "Three.js",
+            "Unity",
+            "Claude",
+            "引擎"
+          ],
+          "title": "Threenity Engine：花$300在Claude上用20B token、800小时造了一个Unity+Three.js混合引擎",
+          "en_title": "Unity + @threejs = Threenity Engine. 300$ on Claude, 20B tokens, 800+ hours, 366k lines of code. And finally, I'm making a game!",
+          "full_text": "Unity+ @threejs = Threenity Engine\nI thought: I love Unity's workflow, but I love vibe-coding in threejs even more. There was no Threejs engine that felt like Unity, so I built my own. 300$ on @claudeai, 20B tokens, 800+ hours, 366k lines of code. And finally, I'm making a game!",
+          "author": "semenov_artyom",
+          "date": "2026-07-07",
+          "likes": 555,
+          "views": 43023,
+          "link": "https://x.com/semenov_artyom/status/2074543725616001275",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074543609660243968/img/g7WC5E-cstn-EZvi.jpg",
+            "video_url": "https://x.com/semenov_artyom/status/2074543725616001275/video/1"
+          },
+          "summary": "开发者花费 $300 Claude 费用、用 20B token、800+ 小时，从零构建了一个结合 Unity 工作流和 Three.js 的游戏引擎，366K 行代码。",
+          "analysis": "$300 + AI 就能造一个游戏引擎，虽然花了 800 小时但代码量达 366K 行。说明 AI 编程在大型项目上也能坚持下来。",
+          "recommendation": "Threenity Engine：$300 Claude + 20B token + 800小时 = 366K行代码的Unity+Three.js混合引擎"
+        },
+        {
+          "idx": "AI 04",
+          "source": "GMI Cloud",
+          "tags": [
+            "Grok 4.5",
+            "benchmark",
+            "对比"
+          ],
+          "title": "Grok 4.5 vs Opus 4.8/Sonnet 5/GLM 5.2 实测：成本比 Opus 低 40%，略低于 Sonnet 5",
+          "en_title": "Grok 4.5 vs Opus 4.8, Sonnet 5, GLM 5.2 on SpaceX mission animation. Grok burns more tokens but lands ~40% cheaper than Opus.",
+          "full_text": "Grok 4.5 operates at Opus-level intelligence and Sonnet-level pricing!\n\nWe tested it against Claude Opus 4.8, Sonnet 5, and GLM 5.2 on a SpaceX mission animation.\n\nGrok 4.5 animates more accurately than Sonnet 5 and GLM 5.2. Opus is the fastest. Grok burns more tokens but still lands ~40% cheaper than Opus.",
+          "author": "gmi_cloud",
+          "date": "2026-07-08",
+          "likes": 516,
+          "views": 115402,
+          "link": "https://x.com/gmi_cloud/status/2074989487894282739",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074989421699715072/img/P6kMlIvi93BRW-D5.jpg",
+            "video_url": "https://x.com/gmi_cloud/status/2074989487894282739/video/1"
+          },
+          "summary": "GMI Cloud 实测 Grok 4.5 vs Opus 4.8/Sonnet 5/GLM 5.2：Grok 动画质量优于 Sonnet 和 GLM，成本比 Opus 低 40%，略低于 Sonnet 5。",
+          "analysis": "第三方实测证实 Grok 4.5 在价格/性能比上确实有竞争力。",
+          "recommendation": "Grok 4.5 第三方实测：成本比 Opus 低 40%，动画质量优于 Sonnet 5 和 GLM 5.2"
+        },
+        {
+          "idx": "AI 05",
+          "source": "DogeDesigner",
+          "tags": [
+            "Grok 4.5",
+            "three.js",
+            "太阳系"
+          ],
+          "title": "Grok 4.5 单 prompt 生成完整太阳系模拟：可调时间、真实轨道、现代HUD",
+          "en_title": "Grok 4.5 built this solar system simulation from just one prompt. Sped up with adjustable time, realistic motion, orbits, stars.",
+          "full_text": "Grok 4.5 built this solar system simulation from just one prompt.\n\nMake a beautiful simulation of the universe and solar system. should be sped up with adjustable time, realistic motion, orbits, stars. use threejs.",
+          "author": "cb_doge",
+          "date": "2026-07-08",
+          "likes": 1966,
+          "views": 112923,
+          "link": "https://x.com/cb_doge/status/2074920311896879359",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074920209048383488/img/pyRVwoiBMHPhRHdc.jpg",
+            "video_url": "https://x.com/cb_doge/status/2074920311896879359/video/1"
+          },
+          "summary": "Grok 4.5 用单条 prompt 生成完整太阳系模拟：可调时间、真实轨道、现代 HUD 设计，three.js 实现。",
+          "analysis": "单 prompt 生成复杂 3D 可视化的能力展示。",
+          "recommendation": "Grok 4.5 单 prompt 生成太阳系模拟：可调时间、真实轨道、three.js 实现"
+        },
+        {
+          "idx": "AI 06",
+          "source": "Chong-U",
+          "tags": [
+            "Grok 4.5",
+            "动物森友会",
+            "Grok-only"
+          ],
+          "title": "纯 Grok 工具链做 2.5D 动物森友会：Grok 4.5 写代码 + Grok 生成精灵图 + Grok 视频做动画",
+          "en_title": "I used Grok-ONLY AI tools to build a 2.5D Animal Crossing game. Cursor Grok 4.5 for code, Grok Imagine Images for sprites, Grok Video 1.5 for animations.",
+          "full_text": "I used Grok-ONLY AI tools to build an 2.5D Animal Crossing game\n\nCursor Grok 4.5 for code\nGrok Imagine Images for sprites\nGrok Video 1.5 for animations\n\nGrok 4.5 is FAST - really important for gamedev where the iteration loop is important.",
+          "author": "chongdashu",
+          "date": "2026-07-09",
+          "likes": 283,
+          "views": 21917,
+          "link": "https://x.com/chongdashu/status/2075176307776712851",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075175678433959936/img/zJ-tTeQvAizqm_vH.jpg",
+            "video_url": "https://x.com/chongdashu/status/2075176307776712851/video/1"
+          },
+          "summary": "开发者纯用 Grok 工具链做出 2.5D 动物森友会：Grok 4.5 写代码、Grok Imagine 生成精灵图、Grok Video 做动画。",
+          "analysis": "xAI 已经有完整的“代码+图像+视频”工具链，可以独立完成游戏开发全流程。",
+          "recommendation": "纯 Grok 工具链做 2.5D 动物森友会：代码+精灵图+动画全用 Grok 完成"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "GAME INDUSTRY",
+      "color": "#C0392B",
+      "items": [
+        {
+          "idx": "行业 01",
+          "source": "SteamDB",
+          "tags": [
+            "Limbus Company",
+            "PCU",
+            "破纪录"
+          ],
+          "title": "Limbus Company 15.7万PCU新纪录，韩国游戏再破Steam同时在线记录",
+          "en_title": "Limbus Company has reached 157,444 concurrent players on Steam for the first time (86.85% rating)",
+          "full_text": "Limbus Company has reached 157,444 concurrent players on Steam for the first time (86.85% rating)",
+          "author": "SteamDB",
+          "date": "2026-07-09",
+          "likes": 5069,
+          "views": 120532,
+          "link": "https://x.com/SteamDB/status/2075080774059966733",
+          "media": null,
+          "summary": "Limbus Company 首次突破 15.7 万同时在线，好评率 86.85%。继以撒之后又一款破 15 万 PCU 的游戏。",
+          "analysis": "韩国游戏连续破 Steam PCU 纪录（以撒 + Limbus），说明韩国开发者在 Steam 平台的影响力持续上升。",
+          "recommendation": "Limbus Company 15.7万PCU新纪录，继以撒之后韩国游戏再破Steam记录"
+        },
+        {
+          "idx": "行业 02",
+          "source": "PC Gamer",
+          "tags": [
+            "Dragon Age",
+            "BioWare",
+            "系列死亡"
+          ],
+          "title": "Dragon Age 前首席编剧认为该系列可能已死",
+          "en_title": "Dragon Age's former lead writer thinks the series is probably dead",
+          "full_text": "Dragon Age's former lead writer thinks the series is probably dead",
+          "author": "pcgamer",
+          "date": "2026-07-09",
+          "likes": 67,
+          "views": 18660,
+          "link": "https://x.com/pcgamer/status/2075172241554440608",
+          "media": null,
+          "summary": "Dragon Age 前首席编剧认为该系列可能已经死亡。",
+          "analysis": "BioWare 的衰落和 EA 的战略调整使得 Dragon Age 系列的未来不明朗。",
+          "recommendation": "Dragon Age 前首席编剧认为该系列可能已死，BioWare 衰落的又一信号"
+        },
+        {
+          "idx": "行业 03",
+          "source": "AUTOMATON WEST",
+          "tags": [
+            "Princess Maker",
+            "Steam",
+            "好评如潮"
+          ],
+          "title": "Princess Maker: Children of Revelation 达到 Steam “好评如潮”评级",
+          "en_title": "Princess Maker: Children of Revelation rises to Overwhelmingly Positive rating on Steam as Early Access build shapes up",
+          "full_text": "Princess Maker: Children of Revelation rises to \"Overwhelmingly Positive\" rating on Steam as Early Access build shapes up",
+          "author": "AUTOMATON_ENG",
+          "date": "2026-07-08",
+          "likes": 2485,
+          "views": 138280,
+          "link": "https://x.com/AUTOMATON_ENG/status/2074901328959021098",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMsZBN0a4AEvYFj.jpg"
+          },
+          "summary": "Princess Maker: Children of Revelation 在 Steam EA 阶段达到“好评如潮”评级。",
+          "analysis": "经典 IP 新作在 EA 阶段就获得极高评价，说明开发质量和社区运营都做得好。",
+          "recommendation": "Princess Maker 新作 EA 阶段即达“好评如潮”，经典 IP 复活成功"
+        },
+        {
+          "idx": "行业 04",
+          "source": "AUTOMATON",
+          "tags": [
+            "Against the Storm",
+            "更新",
+            "Roguelite"
+          ],
+          "title": "Against the Storm 大型更新：运送人系统刷新，物流可自定义",
+          "en_title": "Against the Storm major update: revamped transporter system, customizable logistics",
+          "full_text": "人気ローグライト街づくり『アゲインスト・ザ・ストーム』またも大型アプデ到来。今度は「運送人システム」刷新で、物流がカスタマイズ可能に",
+          "author": "AUTOMATONJapan",
+          "date": "2026-07-09",
+          "likes": 301,
+          "views": 78098,
+          "link": "https://x.com/AUTOMATONJapan/status/2075064385996030263",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMwcI03asAA36Kz.jpg"
+          },
+          "summary": "人气 Roguelite 城市建设游戏 Against the Storm 再次大型更新，运送人系统刷新，物流现可自定义。",
+          "analysis": "持续的内容更新是服务型游戏的生命线，AtS 模范运营。",
+          "recommendation": "Against the Storm 大型更新：运送人系统刷新，物流可自定义"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "游戏推文",
+      "title_en": "GAMES",
+      "color": "#27AE60",
+      "items": [
+        {
+          "idx": "游戏 01",
+          "source": "Indie Game Joe",
+          "tags": [
+            "中国独立",
+            "FPS",
+            "COD",
+            "战争"
+          ],
+          "title": "十四年炽火：中国独立团队复刻初代COD质感的FPS，7角色各有故事线",
+          "en_title": "This Chinese indie team is making an FPS that feels like the original Call of Duty. Play as 7 characters, each with their own story. Every mission has unique terrain. Weapons and vehicles 1:1.",
+          "full_text": "This Chinese indie team is making an FPS that feels like the original Call of Duty\n\n- Play as 7 characters, each with their own story\n- Every mission has unique terrain and atmosphere\n- Weapons and vehicles recreated 1:1\n\nIt's called Fourteen Years of Flames. Would you play this?",
+          "author": "IndieGameJoe",
+          "date": "2026-07-08",
+          "likes": 3458,
+          "views": 527486,
+          "link": "https://x.com/IndieGameJoe/status/2074915608517394943",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074911227851997184/img/h7AiG4f-vTOXDX_r.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2074915608517394943/video/1"
+          },
+          "summary": "十四年炽火（Fourteen Years of Flames）是中国独立团队开发的 FPS，复刻初代 COD 质感。7 个角色各有独立故事线，每个任务有独特地形、武器载具 1:1 复刻。",
+          "analysis": "中国独立团队复刻经典 COD 体验，527K views 说明海外对中国独立游戏的关注度在上升。",
+          "recommendation": "十四年炽火：中国独立团队复刻初代COD质感，7角色各有故事线——527K views",
+          "enrichment": {
+            "game_name": "Fourteen Years of Flames (十四年炽火)",
+            "genre": "FPS / 战争 / 叙事",
+            "developer": "中国独立团队",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "release_date": "未定",
+            "positioning": "初代COD质感的中国独立战争FPS",
+            "why_notable": "527K views + 3458赞，中国独立游戏在海外关注度飙升",
+            "description": "十四年炽火 (Fourteen Years of Flames) 是中国独立团队开发的战争 FPS。7 个角色各有独立故事线，每个任务有独特地形和氛围，武器载具 1:1 复刻。复刻初代 COD 的战役体验。\n\nSteam 状态：未上架\n信源：@IndieGameJoe 推文"
+          }
+        },
+        {
+          "idx": "游戏 02",
+          "source": "Palworld",
+          "tags": [
+            "Palworld",
+            "1.0",
+            "正式版"
+          ],
+          "title": "Palworld 1.0 正式上线：新Pal+新大陆+战斗进化+海上建筑+任务翻新",
+          "en_title": "Only a few more hours to go until Palworld 1.0! New Pals, massive new landmass, greatly improved combat, off-shore building, revamped quests and storyline.",
+          "full_text": "Only a few more hours to go until Palworld 1.0! \n\nMany new Pals, and a massive new landmass\nGreatly improved combat\nOff-shore building: unleash your creativity!\nRevamped quests and main storyline\n\n...and much more!\n\nGet your Pals ready for July 10th!",
+          "author": "Palworld_EN",
+          "date": "2026-07-09",
+          "likes": 10615,
+          "views": 478642,
+          "link": "https://x.com/Palworld_EN/status/2075203314694619277",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075196394227601408/img/uc-avanduBM97NVg.jpg",
+            "video_url": "https://x.com/Palworld_EN/status/2075203314694619277/video/1"
+          },
+          "summary": "- 大量新 Pal + 全新大陆\n- 战斗系统大幅进化\n- 海上建筑解锁\n- 任务和主线翻新\n- 包含更多内容",
+          "analysis": "现象级游戏正式版上线，内容量巨大。对游戏市场有短期影响，会吸引大量玩家回流。",
+          "recommendation": "Palworld 1.0 正式上线：新Pal+新大陆+战斗进化+海上建筑+任务翻新"
+        },
+        {
+          "idx": "游戏 03",
+          "source": "Gamer@ゲーム情報",
+          "tags": [
+            "MMO",
+            "休闲",
+            "史莱姆",
+            "免费"
+          ],
+          "title": "史莱姆的世界：与史莱姆同行的免费休闲MMO，12月发布",
+          "en_title": "Slime no Sekai: A free casual MMORPG where you travel with slimes. Trailer & roadmap released, launching December.",
+          "full_text": "スライムと一緒に旅する基本無料のカジュアルMMORPG「スライムの世界 ぷにっと冒険記」が12月にリリース！ トレーラー＆ロードマップが公開",
+          "author": "GamerNeJp",
+          "date": "2026-07-09",
+          "likes": 511,
+          "views": 73398,
+          "link": "https://x.com/GamerNeJp/status/2075067229058801681",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075067072758034432/img/9ML1fWXyBVi-fSKY.jpg",
+            "video_url": "https://x.com/GamerNeJp/status/2075067229058801681/video/1"
+          },
+          "summary": "「史莱姆的世界」是与史莱姆同行的免费休闲 MMORPG，12 月发布。已公开预告片和路线图。",
+          "analysis": "",
+          "recommendation": "史莱姆的世界：与史莱姆同行的免费休闲MMO，预告片+路线图已公开"
+        },
+        {
+          "idx": "游戏 04",
+          "source": "Ninjago",
+          "tags": [
+            "Aniimo",
+            "宝可梦",
+            "开放世界",
+            "CBT"
+          ],
+          "title": "Aniimo 全球 CBT 开始：免费开放世界宝可梦类RPG，支持PC/移动端",
+          "en_title": "Aniimo Global Closed Beta Test is now live. PC, Android & iOS. A free-to-play open-world monster-collecting RPG.",
+          "full_text": "Aniimo Global Closed Beta Test is now live\n\n-PC, Android & iOS\n\nA free-to-play open-world monster-collecting RPG.\n\nFeatures:\nExplore the Aidil Continent\nCollect and battle with Animo\nTransform using the Link system\nStory, exploration, multiplayer & dynamic combat",
+          "author": "Ninjago9101",
+          "date": "2026-07-09",
+          "likes": 198,
+          "views": 26478,
+          "link": "https://x.com/Ninjago9101/status/2075143332335157327",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075141699341529088/img/KvbQwEgdZaAMN4Fo.jpg",
+            "video_url": "https://x.com/Ninjago9101/status/2075143332335157327/video/1"
+          },
+          "summary": "Aniimo 全球封测已开始，支持 PC/Android/iOS。免费开放世界怪物收集 RPG，可探索、收集、战斗、变身。",
+          "analysis": "",
+          "recommendation": "Aniimo 全球CBT开始：免费开放世界宝可梦类RPG，PC+移动端支持"
+        },
+        {
+          "idx": "游戏 05",
+          "source": "Fabien Weibel",
+          "tags": [
+            "Sandcastle",
+            "光照",
+            "Wishlist"
+          ],
+          "title": "Sandcastle 全局光照系统展示：悬崖上的蓝色反弹光效果精美",
+          "en_title": "I've created a simple global illumination system for Sandcastle, resulting in richer lighting. Nice blue light bounces on the cliffs!",
+          "full_text": "I've created a simple global illumination system for Sandcastle, resulting in a richer lighting! I like these nice blue light bounces on the cliffs!\n\nWishlist: https://t.co/ugfHvslGuE",
+          "author": "FabienWeibel",
+          "date": "2026-07-08",
+          "likes": 2288,
+          "views": 188111,
+          "link": "https://x.com/FabienWeibel/status/2074863402158067930",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074862539402285056/img/HYKw-sdcGgMwqbOP.jpg",
+            "video_url": "https://x.com/FabienWeibel/status/2074863402158067930/video/1"
+          },
+          "summary": "Sandcastle 开发者展示新实现的全局光照系统，悬崖上的蓝色反弹光效果精美。",
+          "analysis": "",
+          "recommendation": "Sandcastle 全局光照系统展示：悬崖蓝色反弹光效果精美—2288赞"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "工具 01",
+          "source": "Zsolt Kacso",
+          "tags": [
+            "Fable",
+            "程序化城市",
+            "Three.js"
+          ],
+          "title": "Fable 做程序化城市生成：“构建程序化城市比想象中难，但很有趣”",
+          "en_title": "Turns out building a procedural city is tricky. Great fun though! Fable.",
+          "full_text": "Turns out building a procedural city is tricky.\nGreat fun though! Fable.",
+          "author": "kaolti",
+          "date": "2026-07-08",
+          "likes": 462,
+          "views": 27861,
+          "link": "https://x.com/kaolti/status/2074977429760709098",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074976981007908865/img/4UlthIdpYknPPX3x.jpg",
+            "video_url": "https://x.com/kaolti/status/2074977429760709098/video/1"
+          },
+          "summary": "开发者用 Fable 做程序化城市生成，评价“比想象中难，但很有趣”。",
+          "analysis": "程序化城市是游戏开发中的经典难题，Fable 能辅助但不能完全解决。",
+          "recommendation": "Fable 做程序化城市生成：“比想象中难，但很有趣”"
+        },
+        {
+          "idx": "工具 02",
+          "source": "周尔复",
+          "tags": [
+            "Blazor",
+            "WebAssembly",
+            "AI游戏开发"
+          ],
+          "title": "“忘掉游戏引擎吧，Web 技术栈才是最适合 AI 的游戏开发技术”",
+          "en_title": "I decided to use Blazor WebAssembly for all UI-heavy games. It's so convenient, and you can host free on GitHub Pages.",
+          "full_text": "我决定以后所有重 UI 的游戏，都用 Blazor WebAssembly 做，因为做起来太方便了，还能白嫫 GitHub Pages。做完别人点个链接就能玩，相当方便。\n忘掉游戏引擎吧，Web 技术栈才是最适合 AI 的游戏开发技术。",
+          "author": "cholf5",
+          "date": "2026-07-08",
+          "likes": 243,
+          "views": 22921,
+          "link": "https://x.com/cholf5/status/2074896483405660512",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/tweet_video_thumb/HMuDUEoaAAAjHnj.jpg"
+          },
+          "summary": "开发者认为 Web 技术栈（Blazor WebAssembly）是最适合 AI 游戏开发的技术：做起来方便、免费部署、点链接即玩。",
+          "analysis": "Web 技术栈的优势：零安装、免费部署、AI 生成代码可直接运行。对“vibe coding”场景很友好。",
+          "recommendation": "“忘掉游戏引擎吧，Web技术栈才最适合AI游戏开发”——Blazor+GitHub Pages免费部署"
+        }
+      ]
+    }
+  ]
+}
