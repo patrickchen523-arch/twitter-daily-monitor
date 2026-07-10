@@ -225,11 +225,15 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 
 .enrich-section-label{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;padding:2px 6px;border-radius:3px;color:var(--gold);background:var(--gold-light)}
 .enrich-desc{font-size:13px;color:var(--ink2);line-height:1.8;white-space:pre-line}
-.enrich-intro-card{display:flex;flex-direction:column;gap:10px;height:100%;min-height:0}
+.enrich-intro-card{display:flex;flex-direction:column;height:100%;min-height:0}
 .enrich-intro-card .enrich-section-label{align-self:flex-start;margin-bottom:0;background:#A33A2F;color:#fff}
-.enrich-intro-copy{max-height:310px;overflow:auto;padding-right:4px;color:#5f4a44;font-size:13.5px;line-height:1.82;font-weight:700}
-.enrich-intro-copy p{margin:0 0 10px}.enrich-intro-copy p:last-child{margin-bottom:0}
-.enrich-intro-reason{margin-top:auto;padding:11px 14px;background:linear-gradient(90deg,var(--red-light) 0%,transparent 82%);border-left:3px solid #A33A2F;border-radius:4px;color:#3c2b27;font-size:13px;line-height:1.65;font-weight:700}
+.enrich-info-list{display:flex;flex-direction:column;gap:12px;max-height:310px;overflow:auto;padding-right:4px}
+.enrich-info-item{padding-bottom:11px;border-bottom:1px solid rgba(60,43,39,.1)}
+.enrich-info-item:last-child{padding-bottom:0;border-bottom:0}
+.enrich-info-label{display:block;margin-bottom:4px;color:#8b7169;font-size:10.5px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.enrich-info-value{display:block;color:#3c2b27;font-size:14px;line-height:1.65;font-weight:800;white-space:pre-line}
+.enrich-info-value.is-status{color:#873026;font-family:var(--font-serif);font-size:22px;line-height:1.35;font-weight:900}
+.enrich-info-value.is-positioning{color:#5f4a44;font-size:13.5px;line-height:1.78;font-weight:700}
 .enrich-highlight{font-size:13px;color:var(--ink);font-weight:600;margin-top:14px;padding:10px 14px;background:linear-gradient(90deg,var(--gold-light) 0%,transparent 80%);border-left:3px solid var(--gold);border-radius:4px;line-height:1.6}
 .game-intro-field{margin:14px 0 18px}.game-intro-field .val{white-space:pre-line}
 .game-intro-field .enrich-highlight{background:linear-gradient(90deg,var(--red-light) 0%,transparent 80%);border-left-color:#A33A2F;color:#3c2b27}
@@ -1395,11 +1399,51 @@ function normalizeEditorialText(value) {
     .trim();
 }
 
-function limitDisplayText(value, maxChars) {
-  const chars = Array.from(normalizeEditorialText(value));
-  if (chars.length <= maxChars) return chars.join('');
-  return chars.slice(0, Math.max(1, maxChars - 1)).join('').replace(/[，、；：,.\s]+$/, '') + '…';
+function normalizeDigestSummaryText(value) {
+  return String(value || '')
+    .replace(/\*\*/g, '')
+    .replace(/#+\s*/g, '')
+    .replace(/\[[^\]]+\]\(([^)]+)\)/g, '')
+    .replace(/\r/g, '')
+    .replace(/\n+/g, '；')
+    .replace(/\s+/g, ' ')
+    .replace(/\s*([。；;！？!?])\s*/g, '$1')
+    .replace(/[；;。]\s*$/, '')
+    .trim();
 }
+
+function compactDigestSummaryText(value) {
+  return value
+    .replace(/将于明天向公众开放/g, '明日公开')
+    .replace(/定位为\s*/g, '')
+    .replace(/但更快、更省 token、更便宜/g, '更快更便宜')
+    .replace(/游戏开发者实测称/g, '开发者实测称')
+    .replace(/感觉像/g, '像')
+    .replace(/说明海外对中国独立游戏的关注度在上升/g, '海外关注度上升')
+    .replace(/武器载具 1:1 复刻/g, '武器载具复刻')
+    .replace(/详情请点击下方【当日速览】的条目跳转到对应推文[。.]?/g, '')
+    .replace(/\s*([。；;！？!?])\s*/g, '$1')
+    .replace(/[；;。]\s*$/, '')
+    .trim();
+}
+
+function limitDisplayText(value, maxChars) {
+  let text = normalizeDigestSummaryText(value);
+  if (Array.from(text).length > maxChars) text = compactDigestSummaryText(text);
+  const chars = Array.from(text);
+  if (chars.length <= maxChars) return text;
+  const units = text.match(/[^。；;！？!?]+[。；;！？!?]?/g) || [];
+  let summary = '';
+  for (const unit of units) {
+    const next = (summary + unit).trim();
+    if (Array.from(next).length > maxChars) break;
+    summary = next;
+  }
+  if (summary) return /[。；;！？!?]$/.test(summary) ? summary : summary + '。';
+  return text;
+}
+
+const DIGEST_SUMMARY_MAX_CHARS = 220;
 
 function formatEditorialHeroTitle(value) {
   const text = normalizeEditorialText(value);
@@ -1425,8 +1469,8 @@ function formatEditorialHeroTitle(value) {
 }
 
 function getEditorialDigestSummary() {
-  const raw = currentData.lede || currentData.daily_summary || '';
-  return limitDisplayText(raw, 110);
+  const raw = currentData.daily_summary || currentData.lede || '';
+  return limitDisplayText(raw, DIGEST_SUMMARY_MAX_CHARS);
 }
 
 function editorialCopy(pick, role) {
@@ -2034,11 +2078,80 @@ function renderGameIntro(item) {
   return `<div class="field game-intro-field"><span class="lab game-intro">\u6e38\u620f\u7b80\u4ecb</span>${reason}</div>`;
 }
 
-function renderEnrichmentIntro(e) {
-  if (!e || !e.description) return '';
-  const paragraphs = String(e.description).trim().split(/\n{2,}/).map(part => part.trim()).filter(Boolean);
-  const copy = paragraphs.map(text => `<p>${escapeHtml(text)}</p>`).join('');
-  return `<div class="enrich-intro-card"><span class="enrich-section-label">游戏简介</span><div class="enrich-intro-copy">${copy}</div></div>`;
+function getEnrichmentMetaLine(description, label) {
+  const pattern = new RegExp('(?:^|\\n)' + label + '[：:]\\s*([^\\n]+)');
+  const match = String(description || '').match(pattern);
+  return match ? match[1].trim() : '';
+}
+
+function getEnrichmentPositioning(e) {
+  const description = String((e && e.description) || '').trim();
+  if (!description) return (e && e.positioning) || '';
+  return description
+    .split(/\n+/)
+    .map(line => line.trim())
+    .filter(line => line && !/^(Steam 状态|开发商|信源)[：:]/.test(line))
+    .join('\n');
+}
+
+function renderEnrichmentInfoItem(label, value, className = '') {
+  const text = String(value || '').trim();
+  if (!text) return '';
+  const valueClass = className ? ' enrich-info-value ' + className : ' enrich-info-value';
+  return `<div class="enrich-info-item"><span class="enrich-info-label">${escapeHtml(label)}</span><span class="${valueClass.trim()}">${escapeHtml(text)}</span></div>`;
+}
+
+function hasKnownReleaseTime(value) {
+  return /20\d{2}|Q[1-4]|季度|\d{1,2}\s*月|\d{1,2}\s*[\/.-]\s*\d{1,2}/i.test(String(value || ''));
+}
+
+function getTestingStatus(e) {
+  const values = [e && e.release_date, e && e.steam_status, getEnrichmentMetaLine(e && e.description, 'Steam 状态'), e && e.description]
+    .map(value => String(value || '').trim())
+    .filter(Boolean);
+  const explicit = values.find(value => /封测中|测试中|CBT|Beta|Tech Test|Demo 已上线|试玩/.test(value));
+  if (!explicit) return '';
+  const dateMatch = String((e && e.description) || '').match(/((?:20\d{2}\s*[年.-]\s*)?\d{1,2}\s*(?:[\/.月-])\s*\d{1,2}\s*日?|Q[1-4]\s*20\d{2}|20\d{2}\s*Q[1-4])\s*(?:开始)?\s*(?:测试|封测|CBT|Beta)/i);
+  if (dateMatch) return `${dateMatch[1].replace(/\s+/g, '')} 测试`;
+  if (/Tech Test\s*进行中/i.test(explicit)) return 'Tech Test 进行中';
+  if (/CBT|封测/i.test(explicit)) return '封测中';
+  if (/Beta|测试/i.test(explicit)) return '测试中';
+  if (/Demo 已上线|试玩/.test(explicit)) return 'Demo 已上线，正式发售时间待定';
+  return explicit;
+}
+
+function getReleaseStatus(e) {
+  const rawRelease = String((e && e.release_date) || '').trim();
+  const steamStatus = String((e && e.steam_status) || getEnrichmentMetaLine(e && e.description, 'Steam 状态') || '').trim();
+  const description = String((e && e.description) || '').trim();
+  const releaseSource = rawRelease || steamStatus;
+  if (hasKnownReleaseTime(releaseSource)) return `预计 ${releaseSource} 发售`;
+  const descRelease = description.match(/(?:预计|将于|确认)?\s*((?:20\d{2}\s*年\s*)?(?:Q[1-4]|第[一二三四1-4]季度|\d{1,2}\s*[\/.]\s*\d{1,2}|\d{1,2}\s*月\s*\d{0,2}\s*日?))\s*(?:发售|发布|推出|上线)/);
+  if (descRelease) return `预计 ${descRelease[1].replace(/\s+/g, '')} 发售`;
+  if (/已发售|正式上线|已上线/.test(releaseSource + description)) return '已上线';
+  if (/即将发售|即将推出|Coming Soon|未上架|未发售|开发中|未定|未知|未公布|TBA|待定/i.test(releaseSource + steamStatus)) return '未上线，发售时间待定';
+  return releaseSource || '未上线，发售时间待定';
+}
+
+function formatEnrichmentStatus(e) {
+  if (!e) return '';
+  return getTestingStatus(e) || getReleaseStatus(e);
+}
+
+function renderEnrichmentIntro(e, item) {
+  if (!e) return '';
+  const statusText = formatEnrichmentStatus(e);
+  const positioning = getEnrichmentPositioning(e) || e.positioning || '';
+  const developer = e.developer || getEnrichmentMetaLine(e.description, '开发商') || '';
+  const source = e.source || getEnrichmentMetaLine(e.description, '信源') || (item && item.source) || '';
+  const rows = [
+    renderEnrichmentInfoItem('游戏状态', statusText, 'is-status'),
+    renderEnrichmentInfoItem('一句话定位', positioning, 'is-positioning'),
+    renderEnrichmentInfoItem('开发商信息', developer),
+    renderEnrichmentInfoItem('信源', source)
+  ].join('');
+  if (!rows) return '';
+  return `<div class="enrich-intro-card"><div class="enrich-info-list">${rows}</div></div>`;
 }
 
 function renderEnrichment(item) {
@@ -2058,7 +2171,7 @@ function renderEnrichment(item) {
   html += '</div>';
 
   // Zone 2: Right top - Game intro OR data stats/release info
-  const introHtml = renderEnrichmentIntro(e);
+  const introHtml = renderEnrichmentIntro(e, item);
   html += '<div class="enrich-data' + (introHtml ? ' has-intro' : '') + '">';
   if (introHtml) {
     html += introHtml;
