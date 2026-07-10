@@ -211,6 +211,7 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 .enrich-media .play-overlay span{width:60px;height:60px;background:rgba(255,255,255,.95);color:#111;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;padding-left:4px;box-shadow:0 4px 20px rgba(0,0,0,.3);transition:transform .2s}
 .enrich-media:hover .play-overlay span{transform:scale(1.1)}
 .enrich-data{grid-column:2;grid-row:1;padding:22px 20px;display:flex;flex-direction:column;gap:14px;justify-content:center;background:linear-gradient(180deg,var(--card) 0%,var(--bg) 100%)}
+.enrich-data.has-intro{justify-content:flex-start;align-items:stretch;background:#fff}
 .enrich-stat{display:flex;flex-direction:column;gap:2px}
 .enrich-stat-label{font-size:9.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink3)}
 .enrich-stat-value{font-size:22px;font-weight:900;color:var(--ink);font-family:var(--font-serif);line-height:1.2}
@@ -224,6 +225,11 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 
 .enrich-section-label{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;padding:2px 6px;border-radius:3px;color:var(--gold);background:var(--gold-light)}
 .enrich-desc{font-size:13px;color:var(--ink2);line-height:1.8;white-space:pre-line}
+.enrich-intro-card{display:flex;flex-direction:column;gap:10px;height:100%;min-height:0}
+.enrich-intro-card .enrich-section-label{align-self:flex-start;margin-bottom:0;background:#A33A2F;color:#fff}
+.enrich-intro-copy{max-height:310px;overflow:auto;padding-right:4px;color:#5f4a44;font-size:13.5px;line-height:1.82;font-weight:700}
+.enrich-intro-copy p{margin:0 0 10px}.enrich-intro-copy p:last-child{margin-bottom:0}
+.enrich-intro-reason{margin-top:auto;padding:11px 14px;background:linear-gradient(90deg,var(--red-light) 0%,transparent 82%);border-left:3px solid #A33A2F;border-radius:4px;color:#3c2b27;font-size:13px;line-height:1.65;font-weight:700}
 .enrich-highlight{font-size:13px;color:var(--ink);font-weight:600;margin-top:14px;padding:10px 14px;background:linear-gradient(90deg,var(--gold-light) 0%,transparent 80%);border-left:3px solid var(--gold);border-radius:4px;line-height:1.6}
 .game-intro-field{margin:14px 0 18px}.game-intro-field .val{white-space:pre-line}
 .game-intro-field .enrich-highlight{background:linear-gradient(90deg,var(--red-light) 0%,transparent 80%);border-left-color:#A33A2F;color:#3c2b27}
@@ -237,6 +243,7 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
   .enrich-grid{grid-template-columns:1fr;grid-template-rows:auto}
   .enrich-media{grid-column:1;grid-row:1;min-height:180px;border-right:none}
   .enrich-data{grid-column:1;grid-row:2;flex-direction:row;flex-wrap:wrap;gap:16px;padding:16px 20px}
+  .enrich-data.has-intro{flex-direction:column;flex-wrap:nowrap}
   .enrich-tags-zone{grid-column:1;grid-row:3}
 
 }
@@ -654,6 +661,9 @@ let isSearchComposing = false;
 let editorialDigestReturnScrollY = 0;
 let editorialDigestReturnDate = '';
 let editorialDigestReturnPending = false;
+let twitterWeeklyReturnScrollY = 0;
+let twitterWeeklyReturnIndex = -1;
+let twitterWeeklyReturnPending = false;
 
 // Roblox weekly reports (add new ones here)
 const robloxReports = [
@@ -1498,10 +1508,13 @@ async function renderTwitterWeekly() {
     if (currentTab !== 'weekly' || !document.getElementById('twitterWeeklyHost')) return;
     const reports = twitterWeeklyData.weeks || [];
     if (!reports.length) throw new Error('暂无周报数据');
+    const initialIndex = twitterWeeklyReturnPending
+      ? Math.max(0, Math.min(reports.length - 1, twitterWeeklyReturnIndex))
+      : reports.length - 1;
     buttons.innerHTML = reports.map((report, idx) =>
-      '<button type="button" class="tw-week-btn ' + (idx === reports.length - 1 ? 'on' : '') + '" onclick="setTwitterWeeklyReport(' + idx + ')">' + escapeHtml(report.label) + '</button>'
+      '<button type="button" class="tw-week-btn ' + (idx === initialIndex ? 'on' : '') + '" onclick="setTwitterWeeklyReport(' + idx + ')">' + escapeHtml(report.label) + '</button>'
     ).join('');
-    setTwitterWeeklyReport(reports.length - 1);
+    setTwitterWeeklyReport(initialIndex);
   } catch (e) {
     host.innerHTML = '<div class="tw-week-error">推特周报加载失败<br><small>' + escapeHtml(e.message) + '</small></div>';
   }
@@ -1512,10 +1525,16 @@ function setTwitterWeeklyReport(index) {
   const report = (twitterWeeklyData.weeks || [])[index];
   const host = document.getElementById('twitterWeeklyHost');
   if (!report || !host) return;
+  const shouldRestoreWeekly = twitterWeeklyReturnPending && twitterWeeklyReturnIndex === index;
+  const weeklyReturnScrollY = twitterWeeklyReturnScrollY;
   activeTwitterWeeklyIndex = index;
   document.querySelectorAll('.tw-week-btn').forEach((button, idx) => button.classList.toggle('on', idx === index));
   host.innerHTML = renderTwitterWeeklyReport(report);
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({
+    top: shouldRestoreWeekly ? weeklyReturnScrollY : 0,
+    behavior: shouldRestoreWeekly ? 'auto' : 'smooth'
+  });
+  if (shouldRestoreWeekly) twitterWeeklyReturnPending = false;
 }
 
 function renderTwitterWeeklyReport(report) {
@@ -1591,6 +1610,9 @@ async function findTwitterWeeklyStoryTarget(link, shortDate) {
 
 async function openTwitterWeeklyStoryAnalysis(card) {
   if (!card || !card.dataset || card.classList.contains('is-loading')) return;
+  twitterWeeklyReturnScrollY = window.scrollY;
+  twitterWeeklyReturnIndex = activeTwitterWeeklyIndex;
+  twitterWeeklyReturnPending = true;
   card.classList.add('is-loading');
   card.setAttribute('aria-busy', 'true');
   try {
@@ -1604,6 +1626,7 @@ async function openTwitterWeeklyStoryAnalysis(card) {
     }, 50);
   } catch (error) {
     console.warn('Twitter weekly story navigation failed:', error);
+    twitterWeeklyReturnPending = false;
     card.classList.remove('is-loading');
     card.removeAttribute('aria-busy');
   }
@@ -1873,7 +1896,6 @@ function switchTab(tab, scrollToId) {
     renderTwitterWeekly();
     setTimeout(() => {
       scrollEditorialActiveNavIntoView();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 50);
   } else {
     document.getElementById('digestV2').innerHTML = renderEditorialContentShell();
@@ -2005,14 +2027,18 @@ function renderContent(targetId = 'content') {
 
 function renderGameIntro(item) {
   const e = item && item.enrichment;
-  if (!e || (!e.description && !e.why_notable)) return '';
-  const description = e.description
-    ? `<p class="val">${escapeHtml(String(e.description).trim())}</p>`
-    : '';
+  if (!e || !e.why_notable) return '';
   const reason = e.why_notable
     ? `<div class="enrich-highlight">\u5173\u6ce8\u7406\u7531\uff1a${escapeHtml(String(e.why_notable).trim())}</div>`
     : '';
-  return `<div class="field game-intro-field"><span class="lab game-intro">\u6e38\u620f\u7b80\u4ecb</span>${description}${reason}</div>`;
+  return `<div class="field game-intro-field"><span class="lab game-intro">\u6e38\u620f\u7b80\u4ecb</span>${reason}</div>`;
+}
+
+function renderEnrichmentIntro(e) {
+  if (!e || !e.description) return '';
+  const paragraphs = String(e.description).trim().split(/\n{2,}/).map(part => part.trim()).filter(Boolean);
+  const copy = paragraphs.map(text => `<p>${escapeHtml(text)}</p>`).join('');
+  return `<div class="enrich-intro-card"><span class="enrich-section-label">游戏简介</span><div class="enrich-intro-copy">${copy}</div></div>`;
 }
 
 function renderEnrichment(item) {
@@ -2031,21 +2057,24 @@ function renderEnrichment(item) {
   }
   html += '</div>';
 
-  // Zone 2: Right top - Data stats OR release info for unreleased games
-  html += '<div class="enrich-data">';
-  if (e.pcu) {
+  // Zone 2: Right top - Game intro OR data stats/release info
+  const introHtml = renderEnrichmentIntro(e);
+  html += '<div class="enrich-data' + (introHtml ? ' has-intro' : '') + '">';
+  if (introHtml) {
+    html += introHtml;
+  } else if (e.pcu) {
     html += `<div class="enrich-stat"><span class="enrich-stat-label">PCU</span><span class="enrich-stat-value gold">${e.pcu}</span>`;
     if (e.pcu_rank) html += `<span class="enrich-stat-sub">Top ${e.pcu_rank}</span>`;
     html += `</div>`;
   }
-  if (e.steam_rating && !e.steam_rating.includes('未发售')) {
+  if (!introHtml && e.steam_rating && !e.steam_rating.includes('未发售')) {
     html += `<div class="enrich-stat"><span class="enrich-stat-label">好评率</span><span class="enrich-stat-value">${e.steam_rating}</span></div>`;
   }
-  if (e.estimated_sales && e.estimated_sales !== '暂无官方数据') {
+  if (!introHtml && e.estimated_sales && e.estimated_sales !== '暂无官方数据') {
     html += `<div class="enrich-stat"><span class="enrich-stat-label">销量 / 销售额</span><span class="enrich-stat-value">${e.estimated_sales}</span></div>`;
   }
   const hasLiveData = e.pcu || (e.steam_rating && !e.steam_rating.includes('未发售')) || (e.estimated_sales && e.estimated_sales !== '暂无官方数据');
-  if (!hasLiveData) {
+  if (!introHtml && !hasLiveData) {
     // Unreleased game: show release info instead
     if (e.release_date) {
       html += `<div class="enrich-stat"><span class="enrich-stat-label">预计发售</span><span class="enrich-stat-value">${e.release_date}</span></div>`;
