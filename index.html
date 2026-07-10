@@ -232,7 +232,7 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 .enrich-info-item:last-child{padding-bottom:0;border-bottom:0}
 .enrich-info-label{display:block;margin-bottom:4px;color:#8b7169;font-size:10.5px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
 .enrich-info-value{display:block;color:#3c2b27;font-size:14px;line-height:1.65;font-weight:800;white-space:pre-line}
-.enrich-info-value.is-status{color:#873026;font-family:var(--font-serif);font-size:22px;line-height:1.35;font-weight:900}
+.enrich-info-value.is-status,.enrich-info-value.is-metric{color:#873026;font-family:var(--font-serif);font-size:22px;line-height:1.35;font-weight:900}
 .enrich-info-value.is-positioning{color:#5f4a44;font-size:13.5px;line-height:1.78;font-weight:700}
 .enrich-highlight{font-size:13px;color:var(--ink);font-weight:600;margin-top:14px;padding:10px 14px;background:linear-gradient(90deg,var(--gold-light) 0%,transparent 80%);border-left:3px solid var(--gold);border-radius:4px;line-height:1.6}
 .game-intro-field{margin:14px 0 18px}.game-intro-field .val{white-space:pre-line}
@@ -1282,7 +1282,7 @@ function renderGlobalSearchCard(result, index) {
     </div>
     ${section.id !== 'indie' && item.analysis ? `<div class="field"><span class="lab analysis">观点解读</span><p class="val">${escapeHtml(item.analysis)}</p></div>` : ''}
     ${renderGameIntro(item)}
-    ${renderEnrichment(item)}
+    ${renderEnrichment(item, section.id)}
   </article>`;
 }
 
@@ -2059,7 +2059,7 @@ function renderContent(targetId = 'content') {
           </div>
           ${sec.id !== 'indie' ? `<div class="field"><span class="lab analysis">观点解读</span><p class="val">${item.analysis}</p></div>` : ''}
           ${renderGameIntro(item)}
-          ${renderEnrichment(item)}
+          ${renderEnrichment(item, sec.id)}
         </article>`;
     });
   });
@@ -2101,6 +2101,18 @@ function renderEnrichmentInfoItem(label, value, className = '') {
   return `<div class="enrich-info-item"><span class="enrich-info-label">${escapeHtml(label)}</span><span class="${valueClass.trim()}">${escapeHtml(text)}</span></div>`;
 }
 
+function getEnrichmentStats(e) {
+  const stats = (e && e.stats) || {};
+  return {
+    sales: stats.sales || (e && e.estimated_sales) || '',
+    revenue: stats.revenue || (e && e.estimated_revenue) || '',
+    pcuPeak: stats.pcu_peak || (e && e.pcu) || '',
+    pcuCurrent: stats.pcu_current || (e && e.current_players) || '',
+    review: stats.review || (e && e.steam_review) || '',
+    followers: stats.followers || (e && e.steam_followers) || ''
+  };
+}
+
 function hasKnownReleaseTime(value) {
   return /20\d{2}|Q[1-4]|季度|\d{1,2}\s*月|\d{1,2}\s*[\/.-]\s*\d{1,2}/i.test(String(value || ''));
 }
@@ -2133,19 +2145,40 @@ function getReleaseStatus(e) {
   return releaseSource || '未上线，发售时间待定';
 }
 
+function formatMarketReleaseDate(e) {
+  const values = [e && e.release_date, getEnrichmentMetaLine(e && e.description, '上线时间'), getEnrichmentMetaLine(e && e.description, '发售时间')]
+    .map(value => String(value || '').trim())
+    .filter(Boolean);
+  for (const value of values) {
+    const ymd = value.match(/(20\d{2})\s*[年\/.\-]\s*(\d{1,2})\s*[月\/.\-]\s*(\d{1,2})\s*日?/);
+    if (ymd) return `${ymd[1]}年${ymd[2].padStart(2, '0')}月${ymd[3].padStart(2, '0')}日上线`;
+    const english = value.match(/(\d{1,2})\s+([A-Za-z]{3,9}),?\s*(20\d{2})/);
+    if (english) {
+      const months = { jan: '01', feb: '02', mar: '03', apr: '04', may: '05', jun: '06', jul: '07', aug: '08', sep: '09', sept: '09', oct: '10', nov: '11', dec: '12' };
+      const month = months[english[2].slice(0, 3).toLowerCase()];
+      if (month) return `${english[3]}年${month}月${english[1].padStart(2, '0')}日上线`;
+    }
+  }
+  return '已上线';
+}
+
 function formatEnrichmentStatus(e) {
   if (!e) return '';
   return getTestingStatus(e) || getReleaseStatus(e);
 }
 
-function renderEnrichmentIntro(e, item) {
+function renderEnrichmentIntro(e, item, sectionId) {
   if (!e) return '';
-  const statusText = formatEnrichmentStatus(e);
+  const isMarketGame = sectionId === 'industry';
+  const stats = getEnrichmentStats(e);
+  const statusText = isMarketGame ? formatMarketReleaseDate(e) : formatEnrichmentStatus(e);
   const positioning = getEnrichmentPositioning(e) || e.positioning || '';
   const developer = e.developer || getEnrichmentMetaLine(e.description, '开发商') || '';
   const source = e.source || getEnrichmentMetaLine(e.description, '信源') || (item && item.source) || '';
   const rows = [
     renderEnrichmentInfoItem('游戏状态', statusText, 'is-status'),
+    isMarketGame ? renderEnrichmentInfoItem('预估销量', stats.sales || '待抓取', 'is-metric') : '',
+    isMarketGame ? renderEnrichmentInfoItem('PCU', stats.pcuPeak || '待抓取', 'is-metric') : '',
     renderEnrichmentInfoItem('一句话定位', positioning, 'is-positioning'),
     renderEnrichmentInfoItem('开发商信息', developer),
     renderEnrichmentInfoItem('信源', source)
@@ -2154,7 +2187,7 @@ function renderEnrichmentIntro(e, item) {
   return `<div class="enrich-intro-card"><div class="enrich-info-list">${rows}</div></div>`;
 }
 
-function renderEnrichment(item) {
+function renderEnrichment(item, sectionId = '') {
   if (!item.enrichment) return '';
   const e = item.enrichment;
   let html = '<div class="enrichment"><div class="enrich-grid">';
@@ -2171,22 +2204,23 @@ function renderEnrichment(item) {
   html += '</div>';
 
   // Zone 2: Right top - Game intro OR data stats/release info
-  const introHtml = renderEnrichmentIntro(e, item);
+  const introHtml = renderEnrichmentIntro(e, item, sectionId);
   html += '<div class="enrich-data' + (introHtml ? ' has-intro' : '') + '">';
   if (introHtml) {
     html += introHtml;
-  } else if (e.pcu) {
-    html += `<div class="enrich-stat"><span class="enrich-stat-label">PCU</span><span class="enrich-stat-value gold">${e.pcu}</span>`;
+  } else if (getEnrichmentStats(e).pcuPeak) {
+    const stats = getEnrichmentStats(e);
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">PCU</span><span class="enrich-stat-value gold">${stats.pcuPeak}</span>`;
     if (e.pcu_rank) html += `<span class="enrich-stat-sub">Top ${e.pcu_rank}</span>`;
     html += `</div>`;
   }
   if (!introHtml && e.steam_rating && !e.steam_rating.includes('未发售')) {
     html += `<div class="enrich-stat"><span class="enrich-stat-label">好评率</span><span class="enrich-stat-value">${e.steam_rating}</span></div>`;
   }
-  if (!introHtml && e.estimated_sales && e.estimated_sales !== '暂无官方数据') {
-    html += `<div class="enrich-stat"><span class="enrich-stat-label">销量 / 销售额</span><span class="enrich-stat-value">${e.estimated_sales}</span></div>`;
+  if (!introHtml && getEnrichmentStats(e).sales && getEnrichmentStats(e).sales !== '暂无官方数据') {
+    html += `<div class="enrich-stat"><span class="enrich-stat-label">销量 / 销售额</span><span class="enrich-stat-value">${getEnrichmentStats(e).sales}</span></div>`;
   }
-  const hasLiveData = e.pcu || (e.steam_rating && !e.steam_rating.includes('未发售')) || (e.estimated_sales && e.estimated_sales !== '暂无官方数据');
+  const hasLiveData = getEnrichmentStats(e).pcuPeak || (e.steam_rating && !e.steam_rating.includes('未发售')) || (getEnrichmentStats(e).sales && getEnrichmentStats(e).sales !== '暂无官方数据');
   if (!introHtml && !hasLiveData) {
     // Unreleased game: show release info instead
     if (e.release_date) {
