@@ -2125,10 +2125,10 @@ function getReleaseStatus(e) {
   const steamStatus = String((e && e.steam_status) || getEnrichmentMetaLine(e && e.description, 'Steam 状态') || '').trim();
   const description = String((e && e.description) || '').trim();
   const releaseSource = rawRelease || steamStatus;
+  if (/已发售|正式上线|已上线/.test(releaseSource + description)) return rawRelease || '已上线';
   if (hasKnownReleaseTime(releaseSource)) return `预计 ${releaseSource} 发售`;
   const descRelease = description.match(/(?:预计|将于|确认)?\s*((?:20\d{2}\s*年\s*)?(?:Q[1-4]|第[一二三四1-4]季度|\d{1,2}\s*[\/.]\s*\d{1,2}|\d{1,2}\s*月\s*\d{0,2}\s*日?))\s*(?:发售|发布|推出|上线)/);
   if (descRelease) return `预计 ${descRelease[1].replace(/\s+/g, '')} 发售`;
-  if (/已发售|正式上线|已上线/.test(releaseSource + description)) return '已上线';
   if (/即将发售|即将推出|Coming Soon|未上架|未发售|开发中|未定|未知|未公布|TBA|待定/i.test(releaseSource + steamStatus)) return '未上线，发售时间待定';
   return releaseSource || '未上线，发售时间待定';
 }

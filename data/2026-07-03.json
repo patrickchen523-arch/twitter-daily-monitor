@@ -202,7 +202,12 @@
           "media": null,
           "summary": "Digital Foundry 4.5万人投票结果：86%认为Sony应重新考虑停产光碟。5788赞。",
           "analysis": "86%的压倒性反对比例+5788赞说明硬核玩家群体对全数字化极度抵触。",
-          "recommendation": "DF 4.5万人投票：86%反对Sony停产光碟，5788赞——'PS5将是我最后一台主机'"
+          "recommendation": "DF 4.5万人投票：86%反对Sony停产光碟，5788赞——'PS5将是我最后一台主机'",
+          "enrichment": {
+            "game_name": "DF 4.5万人投票",
+            "release_date": "未定",
+            "description": "The E-flite UMX Eratix is an ultra-micro version of the original, oriented toward indoor and small-field 3D flying.\n\n"
+          }
         },
         {
           "idx": "行业 03",
@@ -252,7 +257,21 @@
           },
           "summary": "Clair Obscur: Expedition 33 在巴黎奥赛博物馆举办艺术展览，因热度高延期至7/19。",
           "analysis": "游戏在世界顶级美术馆办展，说明游戏作为艺术形式的地位提升。对独立游戏的品牌塑造有启示。",
-          "recommendation": "Clair Obscur 在巴黎奥赛博物馆办艺术展，热度高延期至7/19"
+          "recommendation": "Clair Obscur 在巴黎奥赛博物馆办艺术展，热度高延期至7/19",
+          "enrichment": {
+            "game_name": "光与影：33号远征队",
+            "steam_url": "https://store.steampowered.com/app/1903340",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/b3cb63bf5aa3ffd7790310e4361050c368569314/header_schinese.jpg?t=1782830877",
+            "release_date": "已发售 · 2025 年 4 月 24 日",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 218.00",
+            "developer": "Sandfall Interactive",
+            "genre": "动作 / 角色扮演",
+            "steam_rating": "177555 reviews",
+            "description": "率领第33号远征队踏上消灭绘母的征途，竭尽全力夺下她绘就死亡的画刷。置身这款采用即时机制的回合制角色扮演游戏，探索奇妙世界，感受法兰西19世纪末“美好年代”时期的风采，对抗超乎想象的敌人。\n\n"
+          }
         }
       ]
     },
