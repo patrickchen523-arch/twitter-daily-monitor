@@ -3,25 +3,25 @@
   "meta": {
     "raw_count": 195,
     "filtered_count": 163,
-    "selected_count": 8,
+    "selected_count": 20,
     "crawl_time": "2026-07-05 18:00"
   },
   "digest": [
     {
       "id": "ai",
-      "text": "AMD Lisa Su $1,499 AI 便携盒：128GB 共享内存跑 235B 参数模型，对标 Nvidia $4,000 方案\nFable 5 web design 能力引发行业讨论：一个 prompt 生成的页面已接近专业水准\nHugging Face + Cerebras：开源实时语音对话 demo 发布，延迟极低"
+      "text": "AMD Lisa Su 发布 $1,499 AI 便携盒：单手运行 235B 参数模型\nFable 5 Web设计已达专业水准，网页设计行业面临冲击\nFable 5 + Rork 1小时完成塔防全流程\nFable 5 text-to-animation：$1.20完成自由泳动画"
     },
     {
       "id": "industry",
-      "text": "Palworld 1.0 正式版 7/10 发布：水上建筑+据点系统大幅翻新\nSteam 购买多巴胺模拟网站爆火：开发者做了个不花钱就能获得购买快感的工具"
+      "text": "Steam 购买多巴胺模拟网站爆火：不花钱获得购买快感\nCyberpunk Edgerunners 2 正式公开：换类型但效果惊艳\nGhost of Tsushima 动画2027年Crunchyroll独播"
     },
     {
       "id": "indie",
-      "text": "ROUTE：独立开发4人合作校车末日生存，校车即是家/仓库/逃生工具\nBeyond the Western Deep：经典手绘动画冒险游戏，专为低配PC优化"
+      "text": "ROUTE：4人合作校车末日生存\nMaster Healer Kale：治愈师拖着废柴队伍的增量RPG，145K views\nSilent Hill 3 Enhanced Edition：社区PC终极版3099赞\nWANGYUE望月：现代中国城市+月灵捕捉RPG"
     },
     {
       "id": "tools",
-      "text": "Pipe It 1.0：UE管道绘制插件即将上架 Fab，6个月打磨 UX\nGameBlocks 日本社区持续传播，Codex Studio 发布教程"
+      "text": "Pipe It 1.0：UE管道绘制插件即将上架Fab\nUnity AI Beta：自动标记AI生成资产，发布前可审计替换\nGameBlocks：Codex 3D游戏部品库"
     }
   ],
   "sections": [
@@ -107,6 +107,58 @@
           "summary": "Hugging Face 与 Cerebras 合作发布全开源的实时语音对话系统（模型+代码全开放）。演示视频无剪辑无加速，延迟极低，语音自然。",
           "analysis": "开源实时语音AI的成熟对游戏意义重大：NPC实时语音对话、多人游戏实时翻译、语音指令操作等场景现在可以用开源方案实现，不再依赖昂贵的闭源API。",
           "recommendation": "全开源+几乎零延迟的AI语音对话来了，GPT-4o要紧张了"
+        },
+        {
+          "idx": "AI 04",
+          "source": "Alex Nguyen",
+          "tags": [
+            "Fable 5",
+            "Rork",
+            "塔防",
+            "1小时"
+          ],
+          "title": "Fable 5 + Rork 1小时做出塔防游戏：关卡设计→英雄怪物→经济→美术→音效→代码",
+          "en_title": "I just used Fable 5 inside Rork to build a new tower defense game in about 1 hour. From idea to level design to heroes & monsters to economy to art to sound to code.",
+          "full_text": "Claude Fable 5 is insane again.\n\nThe first time, I only used it to build a 3D game clone.\n\nI just used Fable 5 inside Rork to build a new tower defense game in about 1 hour.\n\nFrom the initial idea > level design > heroes & monsters > in-game economy > game art > sound effects > code\n\nEach level will have different difficulty, different map upgrades, different monsters, and different bosses. Each tower weapon has unique skills, counters other weapons in different ways, and the heroes are controllable.",
+          "author": "alexcooldev",
+          "date": "2026-07-04",
+          "likes": 461,
+          "views": 46921,
+          "link": "https://x.com/alexcooldev/status/2073220692968079637",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073220156806086656/img/IrbOXrBEflvN4-PA.jpg",
+            "video_url": "https://x.com/alexcooldev/status/2073220692968079637/video/1"
+          },
+          "summary": "开发者用 Fable 5 + Rork 在约1小时内做出完整塔防游戏：每关不同难度、不同地图升级、不同怪物Boss、塔防武器有克制关系、英雄可操控。",
+          "analysis": "1小时从0到完整游戏原型（含关卡设计、经济系统、美术音效），AI游戏开发的产能已经惊人。",
+          "recommendation": "Fable 5 + Rork 1小时做出完整塔防：关卡设计+经济+美术+音效全流程"
+        },
+        {
+          "idx": "AI 05",
+          "source": "Jack Vinijtrongjit",
+          "tags": [
+            "Fable 5",
+            "动画",
+            "text-to-animation",
+            "迭代"
+          ],
+          "title": "Fable 5 做 text-to-animation：$1.20 + 7次迭代完成自由泳动画",
+          "en_title": "Text-to-animation with Fable 5: iteratively prompt to get the animation you want. Freestyle swimming, $1.20 cost, 7 iterations.",
+          "full_text": "Text-to-animation definitely still has a long way to go, but you can now iteratively prompt with a model like Fable 5 to get the animation you want. The experiment was only for the freestyle swimming part.\n\nSummary:\n- Task: Freestyle swimming with head turning to get some air every 4th stroke\n- 3% of weekly Fable allowance was used\n- Estimated cost: $1.20\n- 7 iterations because Fable's vision is so terrible",
+          "author": "juminoz",
+          "date": "2026-07-03",
+          "likes": 171,
+          "views": 17811,
+          "link": "https://x.com/juminoz/status/2073076130870173847",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073073765219803136/img/FrzwjWvXjArX2Tvh.jpg",
+            "video_url": "https://x.com/juminoz/status/2073076130870173847/video/1"
+          },
+          "summary": "开发者用 Fable 5 做 text-to-animation 实验：自由泳动画花费$1.20、7次迭代完成。指出视觉理解仍有不足，但迭代式提示已可产出可用动画。",
+          "analysis": "text-to-animation 尚未成熟，但$1.20 的成本门槛意味着独立开发者可以负担得起反复试错。",
+          "recommendation": "Fable 5 做 text-to-animation：$1.20 + 7次迭代完成自由泳动画，成本极低"
         }
       ]
     },
@@ -140,6 +192,77 @@
           "summary": "开发者做了一个“假装买Steam游戏”的网站，可以体验点击购买的多巴胺而不花一分钱。438K 浏览量爆火。",
           "analysis": "看似恶搞但触及了游戏消费心理学的核心：“购买行为本身”而非“玩游戏”是许多玩家的真实快感来源。这对游戏商店设计和付费机制有启发意义。",
           "recommendation": "不花一分钱就能获得Steam购物快感——这网站把玩家整明白了"
+        },
+        {
+          "idx": "行业 02",
+          "source": "Polygon",
+          "tags": [
+            "Cyberpunk",
+            "Edgerunners 2",
+            "动画",
+            "转型"
+          ],
+          "title": "Cyberpunk Edgerunners 2 正式公开：换了类型但效果惊艳",
+          "en_title": "Cyberpunk Edgerunners 2 officially switches genre to stunning effect in unveiled premiere",
+          "full_text": "Cyberpunk Edgerunners 2 officially switches genre to stunning effect in unveiled premiere",
+          "author": "Polygon",
+          "date": "2026-07-04",
+          "likes": 109,
+          "views": 22835,
+          "link": "https://x.com/Polygon/status/2073381348530585618",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMYhWWbXgAAPiwx.jpg"
+          },
+          "summary": "Cyberpunk Edgerunners 2 首映公开，正式确认更换了类型方向但效果惊艳。",
+          "analysis": "Edgerunners 第一季成功让 2077 销量暴涨。第二季换类型是大胆决策，如果成功将证明 IP 跨媒体的灵活性。",
+          "recommendation": "Cyberpunk Edgerunners 2 正式公开：换了类型但效果惊艳，IP跨媒体新尝试"
+        },
+        {
+          "idx": "行业 03",
+          "source": "The Game Awards",
+          "tags": [
+            "Ghost of Tsushima",
+            "动画",
+            "Crunchyroll",
+            "2027"
+          ],
+          "title": "Ghost of Tsushima 动画海报首曝：2027 年 Crunchyroll 独播",
+          "en_title": "First poster for the Ghost of Tsushima anime coming to Crunchyroll in 2027.",
+          "full_text": "First poster for the Ghost of Tsushima anime coming to @Crunchyroll in 2027.",
+          "author": "thegameawards",
+          "date": "2026-07-04",
+          "likes": 266,
+          "views": 20956,
+          "link": "https://x.com/thegameawards/status/2073450651149812032",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMZgXpAXYAAAErS.jpg"
+          },
+          "summary": "Ghost of Tsushima 动画首张海报公开，将于 2027 年在 Crunchyroll 独播。",
+          "analysis": "继 Cyberpunk、Arcane 之后，又一个游戏IP进军动画。Sony 正在系统化推进 PlayStation IP 跨媒体。",
+          "recommendation": "Ghost of Tsushima 动画海报首曝：2027年 Crunchyroll 独播——Sony IP跨媒体又一步"
+        },
+        {
+          "idx": "行业 04",
+          "source": "PC Gamer",
+          "tags": [
+            "中国独立",
+            "8年开发",
+            "独特体验"
+          ],
+          "title": "中国独立游戏花了8年长成前所未有的独特体验",
+          "en_title": "Chinese indie hit spent the last 8 years growing into something you've never played before",
+          "full_text": "Chinese indie hit spent the last 8 years growing into something you've never played before",
+          "author": "pcgamer",
+          "date": "2026-07-03",
+          "likes": 16,
+          "views": 13910,
+          "link": "https://x.com/pcgamer/status/2073105853079769414",
+          "media": null,
+          "summary": "PC Gamer 报道一款中国独立游戏经过8年开发，成长为一款前所未有的独特体验。",
+          "analysis": "中国独立游戏获得海外主流媒体长篇报道，说明国产独立游戏的国际影响力在提升。",
+          "recommendation": "PC Gamer 报道：中国独立游戏花8年长成前所未有的独特体验"
         }
       ]
     },
@@ -259,6 +382,154 @@
           "summary": "Palworld 1.0 正式版确认 7月10日发布。新增水上建筑套件、新据点建筑物/家具/建筑部件，武器系统也大幅翻新。",
           "analysis": "Palworld 从抢先体验到 1.0 的过渡是生存建造品类的标杆案例。水上建筑等新内容说明团队在持续扩展玩法边界。对独游开发者：“抢先体验→否认→证明自己→正式版”的路径被验证可行。",
           "recommendation": "幻兽帕鲁正式版来了：水上建筑+全新据点系统翻天覆地"
+        },
+        {
+          "idx": "游戏 04",
+          "source": "AUTOMATON",
+          "tags": [
+            "治愈RPG",
+            "增量",
+            "辅助魔法",
+            "好评"
+          ],
+          "title": "Master Healer Kale：用辅助魔法拖着废柴队伍前进的增量RPG，口碑爆棚",
+          "en_title": "Master Healer Kale with useless party: an incremental RPG where you support a useless party with healing magic. Very positive reviews.",
+          "full_text": "Master Healer Kale with useless party: an incremental RPG where you support a useless party with healing magic. Very positive reviews.",
+          "author": "AUTOMATONJapan",
+          "date": "2026-07-04",
+          "likes": 708,
+          "views": 145595,
+          "link": "https://x.com/AUTOMATONJapan/status/2073229576147485160",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073229451316576256/img/i7HD9RXKMlk-6YCK.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2073229576147485160/video/1"
+          },
+          "summary": "Master Healer Kale 是一款'治愈师专属'增量 RPG：用辅助魔法拖着格外没用的队伍前进。口碑极好。",
+          "analysis": "'只能治疗不能攻击'的设定翻转了传统RPG操作，是品类创新的好例子。",
+          "recommendation": "Master Healer Kale：用辅助魔法拖着废柴队伍的增量RPG，145K views好评如潮"
+        },
+        {
+          "idx": "游戏 05",
+          "source": "Metropolis 1998",
+          "tags": [
+            "像素",
+            "光影",
+            "伪3D",
+            "细节"
+          ],
+          "title": "Metropolis 1998：树影现在会投射到墙壁和物体上，伪3D空间光影效果",
+          "en_title": "Tree shadows will now render in pseudo-3D space so they are casted onto walls and objects. But only when you can't see inside the buildings.",
+          "full_text": "A small touch. Tree shadows will now 'render' in pseudo-3D space so they are casted onto walls and objects. But only when you can't see inside the buildings.",
+          "author": "YesboxStudios",
+          "date": "2026-07-03",
+          "likes": 1904,
+          "views": 73753,
+          "link": "https://x.com/YesboxStudios/status/2073150579203785205",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073150242975776768/img/7reGRbrZo6NaLynR.jpg",
+            "video_url": "https://x.com/YesboxStudios/status/2073150579203785205/video/1"
+          },
+          "summary": "Metropolis 1998 新增伪3D空间树影投射：阴影会落在墙壁和物体上，但只在看不到建筑内部时渲染。精美的细节处理。",
+          "analysis": "1904赞说明开发者对细节的执着获得了社区认可。伪3D光影是像素游戏的高级技巧。",
+          "recommendation": "Metropolis 1998：树影投射到墙壁的伪3D光影效果——1904赞的细节之美"
+        },
+        {
+          "idx": "游戏 06",
+          "source": "MIGHTREYA",
+          "tags": [
+            "动作",
+            "远程",
+            "连招",
+            "独立"
+          ],
+          "title": "MIGHTREYA：Ghost Edge 远程攻击展示，可组合多种技术进行战斗",
+          "en_title": "Ghost Edge is also adept at long-range attacks and can fight by combining a wide variety of techniques.",
+          "full_text": "Ghost Edge is also adept at long-range attacks and can fight by combining a wide variety of techniques.",
+          "author": "WZN__K",
+          "date": "2026-07-04",
+          "likes": 597,
+          "views": 31270,
+          "link": "https://x.com/WZN__K/status/2073326573697356178",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073326165687975936/img/C763PdoKoKy8RSTj.jpg",
+            "video_url": "https://x.com/WZN__K/status/2073326573697356178/video/1"
+          },
+          "summary": "MIGHTREYA 展示 Ghost Edge 角色的远程攻击技能，可组合多种技术进行战斗。动作流畅。",
+          "analysis": "",
+          "recommendation": "MIGHTREYA：Ghost Edge 远程攻击展示，多种技术组合战斗——597赞动作流畅"
+        },
+        {
+          "idx": "游戏 07",
+          "source": "Ninjago",
+          "tags": [
+            "WANGYUE",
+            "中国城市",
+            "宠物",
+            "RPG"
+          ],
+          "title": "WANGYUE 望月：现代中国城市开放世界RPG，人与月灵共存+宠物捕捉训练",
+          "en_title": "WANGYUE: An upcoming urban open-world RPG with pet capture & training. Modern Chinese city setting, humans & Moon Spirits coexist. Testing Q4 2026.",
+          "full_text": "WANGYUE - New City Exploration Gameplay\n\nAn upcoming urban open-world RPG with pet capture & training mechanics.\n\nFeatures:\n- Modern Chinese city setting\n- Humans & Moon Spirits coexist\n- Capture, train & battle with Moon Spirits\n\nTesting begins Q4 2026\nAndroid, iOS & PC.",
+          "author": "Ninjago9101",
+          "date": "2026-07-04",
+          "likes": 218,
+          "views": 16001,
+          "link": "https://x.com/Ninjago9101/status/2073360260908421267",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073358881674379264/img/j4jBSh9rsMekMaZp.jpg",
+            "video_url": "https://x.com/Ninjago9101/status/2073360260908421267/video/1"
+          },
+          "summary": "WANGYUE（望月）是现代中国城市背景的开放世界RPG，人类与月灵共存。可捕捉、训练月灵并用于战斗。Q4 2026测试，支持PC/移动端。",
+          "analysis": "'现代中国城市+宝可梦式宠物'的设定在市场上很稀缺，差异化明显。",
+          "recommendation": "WANGYUE 望月：现代中国城市开放世界RPG，人与月灵共存+宠物捕捉——Q4测试",
+          "enrichment": {
+            "game_name": "WANGYUE (望月)",
+            "genre": "开放世界RPG / 宠物收集 / 城市探索",
+            "developer": "未公布",
+            "platforms": [
+              "PC",
+              "Android",
+              "iOS"
+            ],
+            "price": "未公布",
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "release_date": "Q4 2026测试",
+            "positioning": "现代中国城市+宝可梦式月灵捕捉训练RPG",
+            "why_notable": "现代中国城市+宠物收集的设定在市场稀缺，跨平台支持",
+            "description": "WANGYUE（望月）是现代中国城市背景的开放世界RPG。人类与月灵共存，玩家可捕捉、训练月灵并用于战斗。Q4 2026开始测试。\n\nSteam 状态：未上架\n信源：@Ninjago9101 推文"
+          }
+        },
+        {
+          "idx": "游戏 08",
+          "source": "Stormslayer",
+          "tags": [
+            "Silent Hill 3",
+            "增强版",
+            "PC",
+            "社区"
+          ],
+          "title": "Silent Hill 3 Enhanced Edition：社区打造的PC终极版，原生宽屏+高清音频+Bug修复",
+          "en_title": "Silent Hill 3 (2003) ENHANCED Edition for PC: native widescreen, HD audio, bug fixes for modern Windows.",
+          "full_text": "Silent Hill 3 (2003)\n\nENHANCED Edition for PC!\n\nIts been revitalized for modern PCs and its the best way to play the game!\nNative Wide Screen support with HD resolutions Windowed / borderless mode. FOV adjustments FMV fixes for 4:3 or proper fullscreen). Bug fixes for compatibility with modern Windows/OS. Audio has been enhanced, featuring high quality uncompressed audio, sound effects, music and voices!\nIncludes a mod loader for mods.",
+          "author": "StormslayerDev",
+          "date": "2026-07-03",
+          "likes": 3099,
+          "views": 125404,
+          "link": "https://x.com/StormslayerDev/status/2073115685362790695",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073115581008539649/img/bSrsOus-M1Ro4ctq.jpg",
+            "video_url": "https://x.com/StormslayerDev/status/2073115685362790695/video/1"
+          },
+          "summary": "Silent Hill 3 Enhanced Edition 是社区打造的PC终极版：原生宽屏+HD分辨率+FOV调整+无损音频+现代系统兼容性修复+Mod加载器。3099赞。",
+          "analysis": "经典恐怖游戏的社区增强版获得3099赞+125K views，说明经典IP的社区维护价值巨大。",
+          "recommendation": "Silent Hill 3 Enhanced Edition：社区PC终极版——3099赞，宽屏+高清音频+Bug修复"
         }
       ]
     },
@@ -293,6 +564,58 @@
           "summary": "UE 管道绘制插件 Pipe It 经过 6 个月开发达到 1.0，即将上架 Fab 市场。开发者感慨 UX 设计的难度远超预期。",
           "analysis": "小工具大价值：管道是 3D 场景中常见但制作麻烦的元素，一个好用的管道插件能显著提升关卡设计/场景搭建的效率。开发者对 UX 的感慨也验证了：工具的价值往往不在功能而在易用性。",
           "recommendation": "UE关卡设计师的福音：画一条线就能生成完整管道系统"
+        },
+        {
+          "idx": "工具 02",
+          "source": "Unity for Games",
+          "tags": [
+            "Unity AI",
+            "资产标记",
+            "审计",
+            "Beta"
+          ],
+          "title": "Unity AI Beta：自动标记 AI 生成资产，发布前可轻松审计和替换",
+          "en_title": "Unity AI automatically tags generated assets, making it easy to audit and replace them before you ship.",
+          "full_text": "Unity AI automatically tags generated assets, making it easy to audit and replace them before you ship.\n\nTry the Unity AI Beta for free.",
+          "author": "unitygames",
+          "date": "2026-07-02",
+          "likes": 69,
+          "views": 11853,
+          "link": "https://x.com/unitygames/status/2072727159483879931",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2072727086679166976/pu/img/nU6Nz61nlvikO7jP.jpg",
+            "video_url": "https://x.com/unitygames/status/2072727159483879931/video/1"
+          },
+          "summary": "Unity AI Beta 新功能：自动标记所有 AI 生成的资产，发布前可轻松审计哪些是AI生成的并按需替换。免费试用。",
+          "analysis": "解决了'AI生成内容的可追溯性'问题。对有版权顾虑的团队很实用——可以先用AI加速，发布前批量替换。",
+          "recommendation": "Unity AI Beta：自动标记AI生成资产，发布前可审计替换——解决版权追溯问题"
+        },
+        {
+          "idx": "工具 03",
+          "source": "Codex Studio",
+          "tags": [
+            "Codex",
+            "GameBlocks",
+            "3D游戏",
+            "部品"
+          ],
+          "title": "GameBlocks 公开：用Codex把3D游戏的空间逻辑变成可组合的\"设计模式部品\"",
+          "en_title": "Codex releases GameBlocks: 3D game spatial logic as composable 'design pattern parts'. Three.js based, open source.",
+          "full_text": "Codex releases a tool that provides 3D game spatial logic as design pattern parts. Codex selects parts to assemble working games. Natural language instructions for 3D interactions become stable. Prototypes can be handed off to agents. Free, and what Codex can make is changed again.",
+          "author": "Codestudiopjbk",
+          "date": "2026-07-04",
+          "likes": 860,
+          "views": 96420,
+          "link": "https://x.com/Codestudiopjbk/status/2073217733467275605",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072381743903264768/img/t8K6zhSVRMutyeiH.jpg",
+            "video_url": "https://x.com/Codestudiopjbk/status/2073217733467275605/video/1"
+          },
+          "summary": "GameBlocks 公开：将3D游戏的空间逻辑封装为'设计模式部品'。Codex 选取部品组装游戏，自然语言指令变得稳定，原型可直接交给Agent。Three.js基础，免费开源。",
+          "analysis": "把游戏逻辑模块化为可组合部品，让AI组装游戏变得更稳定。对'AI做3D游戏'的可靠性有重要意义。",
+          "recommendation": "GameBlocks：Codex的3D游戏部品库，自然语言组装游戏逻辑变得稳定——860赞"
         }
       ]
     }

@@ -3,25 +3,25 @@
   "meta": {
     "raw_count": 216,
     "filtered_count": 183,
-    "selected_count": 8,
+    "selected_count": 19,
     "crawl_time": "2026-07-04 18:00"
   },
   "digest": [
     {
       "id": "ai",
-      "text": "Kimi K2.7 Code 进入 GitHub Copilot：首个开源权重模型可选项\nAaron Levie：企业 AI Agent 部署需要对齐底层业务流程，不能直接插入\nFable 5 生成霍格沃茨飞行场景，AI游戏开发能力持续进化"
+      "text": "Kimi K2.7 Code 进入 GitHub Copilot：首个开放权重模型\nFable 5 生成霍格沃茨飞行场景\nFable 5 一句话做出 COC 克隆：2500行+自动抓素材\nFable 5 给 RL 生物加毛发和神经网络声音"
     },
     {
       "id": "industry",
-      "text": "GitHub 恶搞回应光盘话题：推出公共仓库 CD-ROM 实体服务\nSteam Machine 早期用户遭遇 GPU \"红线之死\"故障"
+      "text": "GitHub 恶搞回应光盘话题：公共仓库CD-ROM可邮寄\nSteam Machine GPU故障引发讨论\nPolygon争议：RDR2其实是个烂游戏——603K views\nSony 已改造唯一光碟工厂"
     },
     {
       "id": "indie",
-      "text": "Cinder City 详细信息更新：500人大战、喷气背包、UE5驱动\nCube World Omega 新截图：全职业技能完成，开发技能树中"
+      "text": "Cinder City：韩国NCSOFT末世UE5 MMO射击\nCube World Omega全职业可玩截图\nScrap Mechanic 1.0 7/24发布\nWeepstone开发者8岁做游戏到全职独立——4097赞"
     },
     {
       "id": "tools",
-      "text": "GameBlocks 持续传播：AI编程代理的3D游戏积木库获社区关注"
+      "text": "GameBlocks：AI编程代理的3D游戏部品\nFable+TypeGPU无引擎做horde game\nLab3 Studio自定义AI框架在UE中应用"
     }
   ],
   "sections": [
@@ -100,6 +100,59 @@
           "summary": "开发者用 Claude Fable 5 生成了可飞行穿越的霍格沃茨场景。展示了当前AI模型在生成复杂 3D 游戏环境方面的进展。",
           "analysis": "从Clash of Clans克隆到霍格沃茨飞行，Fable 5的游戏生成能力在短短几天内被社区推向更复杂的场景。对独游开发者意味着：“先用AI搞个概念验证demo”的门槛越来越低。",
           "recommendation": "一句话让AI生成霍格沃茨3D飞行场景，魔法照进现实"
+        },
+        {
+          "idx": "AI 04",
+          "source": "Aaron Lemke",
+          "tags": [
+            "Fable 5",
+            "RL creature",
+            "fur",
+            "three.js",
+            "MuJoCo"
+          ],
+          "title": "Fable 5 给 RL 生物加毛发和神经网络驱动的声音：three.js + MuJoCo",
+          "en_title": "Using Fable 5 to add fur and a new voice to my RL creature. The voice is based on the neural network activation.",
+          "full_text": "Using Fable 5 to add fur and a new voice to my RL creature. The voice is based on the neural network activation (pictured top left). Made with @threejs @webgl_webgpu @runpod trained with JAX and MuJoCo from @GoogleDeepMind",
+          "author": "aaronlemke",
+          "date": "2026-07-02",
+          "likes": 1163,
+          "views": 166604,
+          "link": "https://x.com/aaronlemke/status/2072478892464521597",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072478455636135936/img/I8Qa9IsF4HCcPZPW.jpg",
+            "video_url": "https://x.com/aaronlemke/status/2072478892464521597/video/1"
+          },
+          "summary": "开发者用 Fable 5 给强化学习生物加上毛发和基于神经网络激活值的声音。使用 three.js + MuJoCo + JAX 训练。",
+          "analysis": "AI生物+RL+程序化毛发+神经网络驱动声音，多项前沿技术融合的有趣实验。",
+          "recommendation": "Fable 5 给 RL 生物加毛发和神经网络声音：three.js+MuJoCo+JAX——1163赞"
+        },
+        {
+          "idx": "AI 05",
+          "source": "Chris",
+          "tags": [
+            "Fable 5",
+            "Clash of Clans",
+            "克隆",
+            "2500行"
+          ],
+          "title": "Fable 5 (max) 一句话做出 Clash of Clans 克隆：2500行代码+自动抓取原版素材",
+          "en_title": "Fable 5 (max) 'build a clash of clans clone' - absolutely destroys Sonnet 5. Only 2,500 lines, grabbed Clash of Clans assets with no trouble.",
+          "full_text": "Fable 5 (max) 'build a clash of clans clone'\n\nFable absolutely destroys Sonnet 5, and I'll show that in an upcoming comparison video.\n\nI did give it one follow-up while it was working, basically telling it I only needed a demo and didn't need it to overthink the whole thing, so it ended up being only around 2,500 lines.\n\nThe funny part is it still grabbed the Clash of Clans assets with no trouble, which genuinely surprised me.",
+          "author": "ChrissGPT",
+          "date": "2026-07-01",
+          "likes": 724,
+          "views": 198566,
+          "link": "https://x.com/ChrissGPT/status/2072468022833635785",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072467867073679360/img/lWfwu6RnsAYs8Yz3.jpg",
+            "video_url": "https://x.com/ChrissGPT/status/2072468022833635785/video/1"
+          },
+          "summary": "用 Fable 5 (max) 一句'build a clash of clans clone'做出了COC克隆。仅2500行代码，甚至自动抓取了原版素材。评价'完全碾压 Sonnet 5'。",
+          "analysis": "Fable 5 max 的代码生成能力已到'一句话做游戏'的水平。2500行已足够做出功能完整的策略游戏原型。",
+          "recommendation": "Fable 5 一句话做出 COC 克隆：2500行+自动抓取素材，碾压 Sonnet 5"
         }
       ]
     },
@@ -153,6 +206,76 @@
           "summary": "Steam Machine 早期用户报告 GPU 故障，出现类似 Xbox “红环”的“红线之死”现象。硬件可靠性问题引发社区担忧。",
           "analysis": "Valve 的 Steam Machine 刚发布就出现硬件故障报告，虽然可能是个例，但“红线之死”这个标签很容易在社区传播。对游戏硬件厂商的启示：首批用户的负面反馈会被放大传播，品控和售后响应速度至关重要。",
           "recommendation": "Valve掌机GPU集体暴毙，\"红线之死\"故障引发恐慌"
+        },
+        {
+          "idx": "行业 03",
+          "source": "Polygon",
+          "tags": [
+            "RDR2",
+            "争议",
+            "观点"
+          ],
+          "title": "Polygon 争议观点：8年后承认吧，RDR2 其实是个烂游戏",
+          "en_title": "8 years later, let's all admit Red Dead Redemption 2 is a terrible game",
+          "full_text": "8 years later, let's all admit Red Dead Redemption 2 is a terrible game",
+          "author": "Polygon",
+          "date": "2026-07-03",
+          "likes": 1225,
+          "views": 603886,
+          "link": "https://x.com/Polygon/status/2073018959637499991",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMTXwiHXYAAbtnR.jpg"
+          },
+          "summary": "Polygon 发表争议性观点文章：8年后应该承认 RDR2 是一款'糟糕的游戏'。603K views + 1377评论引发激烈讨论。",
+          "analysis": "典型的'逆向观点引流'策略。1225赞+1377评论说明这类争议内容有极高互动率。",
+          "recommendation": "Polygon 争议观点：8年后承认吧 RDR2 其实是个烂游戏——603K views引发激烈讨论"
+        },
+        {
+          "idx": "行业 04",
+          "source": "Eurogamer",
+          "tags": [
+            "Sony",
+            "光碟工厂",
+            "转型"
+          ],
+          "title": "Sony 已开始改造唯一的 PlayStation 光碟工厂：实体游戏'尸骨未寒'",
+          "en_title": "Sony has already started repurposing its lone PlayStation disc factory, and the body of physical gaming isn't even cold",
+          "full_text": "Sony has already started repurposing its lone PlayStation disc factory, and the body of physical gaming isn't even cold",
+          "author": "eurogamer",
+          "date": "2026-07-03",
+          "likes": 490,
+          "views": 35198,
+          "link": "https://x.com/eurogamer/status/2072973239979065345",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMSuKkbW4AAuR10.png"
+          },
+          "summary": "Sony 已经开始改造唯一的 PlayStation 光碟工厂。Eurogamer 评论：实体游戏'尸骨未寒'。",
+          "analysis": "工厂已改造意味着 Sony 的决定不可逆转。实体游戏时代确已结束。",
+          "recommendation": "Sony 已改造唯一光碟工厂：实体游戏'尸骨未寒'，决定不可逆"
+        },
+        {
+          "idx": "行业 05",
+          "source": "Valve",
+          "tags": [
+            "Steam Machine",
+            "e-ink",
+            "固件",
+            "开源"
+          ],
+          "title": "Valve 发布 Steam Machine e-ink 面板 CAD 文件和固件：硬件开源",
+          "en_title": "Valve releases Steam Machine e-ink faceplate CAD files and firmware.",
+          "full_text": "Valve releases Steam Machine e-ink faceplate CAD files and firmware.",
+          "author": "digitalfoundry",
+          "date": "2026-07-03",
+          "likes": 325,
+          "views": 23277,
+          "link": "https://x.com/digitalfoundry/status/2072978695459946870",
+          "media": null,
+          "summary": "Valve 发布 Steam Machine e-ink 面板的 CAD 文件和固件，开源硬件设计。",
+          "analysis": "Valve 对硬件开源的态度延续了 Steam Deck 的传统。对 DIY 社区友好。",
+          "recommendation": "Valve 发布 Steam Machine e-ink 面板 CAD+固件：硬件开源延续 Steam Deck 传统"
         }
       ]
     },
@@ -249,6 +372,109 @@
             "why_notable": "传奇独立开发者 Wollay 回归更新，全职业技能已完成，社区期待极高"
           },
           "recommendation": "消失多年的传奇独立开发者突然回归，社区瞬间沸腾"
+        },
+        {
+          "idx": "游戏 03",
+          "source": "Scrap Mechanic",
+          "tags": [
+            "Scrap Mechanic",
+            "1.0",
+            "Drilling Thunder",
+            "7/24"
+          ],
+          "title": "Scrap Mechanic 1.0 + Drilling Thunder 新章节：7月24日发布",
+          "en_title": "Scrap Mechanic: 1.0 & Drilling Thunder! Coming July 24th 2026",
+          "full_text": "Hi Mechanics!\nThe new chapter is coming!\nGet ready for Scrap Mechanic: 1.0 & Drilling Thunder!\nComing July 24th 2026",
+          "author": "ScrapMechanic",
+          "date": "2026-07-03",
+          "likes": 1082,
+          "views": 39488,
+          "link": "https://x.com/ScrapMechanic/status/2073056918940025049",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073051333867806720/img/gDSWdz5sFt0RUA6g.jpg",
+            "video_url": "https://x.com/ScrapMechanic/status/2073056918940025049/video/1"
+          },
+          "summary": "Scrap Mechanic 宣布 1.0 正式版 + 新章节 Drilling Thunder 将于 7/24 发布。",
+          "analysis": "",
+          "recommendation": "Scrap Mechanic 1.0 + Drilling Thunder 新章节 7/24 发布——1082赞"
+        },
+        {
+          "idx": "游戏 04",
+          "source": "Weepstone",
+          "tags": [
+            "独立开发",
+            "情怀",
+            "8岁开始",
+            "全职"
+          ],
+          "title": "Weepstone 开发者：8岁开始做游戏，现在全职独立开发是梦想成真",
+          "en_title": "What a privilege to be tired from work you once begged the universe for. I decided to make games at age 8, banging out a BBS door in BASIC on my Commodore 64C.",
+          "full_text": "What a privilege to be tired from work you once begged the universe for. I decided I wanted to make games at age 8, banging out a BBS door in BASIC on my Commodore 64C. To be doing it now full time is a dream come true.",
+          "author": "Talesworth",
+          "date": "2026-07-02",
+          "likes": 4097,
+          "views": 159831,
+          "link": "https://x.com/Talesworth/status/2072723256298418391",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072719793409708032/img/zfZtUVdfWc75tO2Z.jpg",
+            "video_url": "https://x.com/Talesworth/status/2072723256298418391/video/1"
+          },
+          "summary": "Weepstone 开发者分享心路：8岁在 Commodore 64 上写 BBS 游戏，现在全职独立开发是梦想成真。4097赞引发开发者社区共鸣。",
+          "analysis": "4097赞说明开发者社区对'热爱驱动'的故事高度认同。情感共鸣是独立游戏营销的有效手段。",
+          "recommendation": "Weepstone 开发者：8岁做游戏到全职独立——4097赞'被梦想累到是特权'"
+        },
+        {
+          "idx": "游戏 05",
+          "source": "99Day Survival Guide",
+          "tags": [
+            "末日生存",
+            "换装",
+            "独立开发"
+          ],
+          "title": "99Day Survival Guide：末日也要穿搭！角色换装系统展示",
+          "en_title": "Every character now has a wardrobe - because surviving the apocalypse is no excuse for bad fashion.",
+          "full_text": "Every character now has a wardrobe - because surviving the apocalypse is no excuse for bad fashion. Pick your look and stay alive in style.",
+          "author": "DarkStudioIndie",
+          "date": "2026-07-03",
+          "likes": 1569,
+          "views": 99602,
+          "link": "https://x.com/DarkStudioIndie/status/2072850019976384989",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072849770595700736/img/pfjNQs381O2BlYWm.jpg",
+            "video_url": "https://x.com/DarkStudioIndie/status/2072850019976384989/video/1"
+          },
+          "summary": "99Day Survival Guide 新增角色换装系统：'末日不是穿搭不好的借口'。选择你的造型，活得有品位。",
+          "analysis": "",
+          "recommendation": "99Day Survival Guide：末日也要穿搭！角色换装系统——1569赞100K views"
+        },
+        {
+          "idx": "游戏 06",
+          "source": "TigerTeam",
+          "tags": [
+            "机甲",
+            "独立",
+            "多人",
+            "公测"
+          ],
+          "title": "Ironwing Valiant：机甲对战独立游戏，2周后公开测试",
+          "en_title": "TigerTeam's mecha game Ironwing Valiant public playtest going live in 2 weeks!",
+          "full_text": "Hello everyone, we are going to have our public playtest go live in 2 weeks! We hope all the mecha fans come and take a look at our game!",
+          "author": "Tiger_TeamGames",
+          "date": "2026-07-02",
+          "likes": 583,
+          "views": 19886,
+          "link": "https://x.com/Tiger_TeamGames/status/2072822690248098011",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072822283379552256/img/UF6j5Huowlqb3uTJ.jpg",
+            "video_url": "https://x.com/Tiger_TeamGames/status/2072822690248098011/video/1"
+          },
+          "summary": "机甲对战独立游戏 Ironwing Valiant 宣布2周后公开测试。面向机甲爱好者。",
+          "analysis": "",
+          "recommendation": "Ironwing Valiant：机甲对战独立游戏2周后公测——583赞机甲粉丝期待"
         }
       ]
     },
@@ -283,6 +509,58 @@
           "summary": "GameBlocks 在日本游戏开发社区引发讨论和传播。日本开发者开始介绍其为“AI能用的 3D 游戏开发部件集”，让 Codex 可以组装运行的游戏。",
           "analysis": "一个开源工具从英文社区传播到日本社区，说明“AI+游戏开发”的工具链需求是全球性的。GameBlocks 的核心价值在于把“自然语言难以描述的 3D 逻辑”封装成 AI 可组装的模块，降低了 AI 游戏原型开发的门槛。",
           "recommendation": "日本开发者用AI积木库48小时做出完整3D游戏Demo"
+        },
+        {
+          "idx": "工具 02",
+          "source": "Konrad Reczko",
+          "tags": [
+            "Fable 5",
+            "TypeGPU",
+            "horde game",
+            "开源"
+          ],
+          "title": "Fable + TypeGPU skill 从零做出 horde game：无引擎，纯 GPU 计算",
+          "en_title": "Can Fable write good TypeGPU code? Made a pretty nice generic horde game from scratch, no engine involved.",
+          "full_text": "Can Fable write good TypeGPU code? I'd say so, but make sure to use the TypeGPU skill.\n\nIt made a pretty nice generic horde game from scratch, no engine involved.\n\nAssets by the amazing Kay Lousberg.",
+          "author": "reczko_konrad",
+          "date": "2026-07-02",
+          "likes": 210,
+          "views": 19917,
+          "link": "https://x.com/reczko_konrad/status/2072682506239750555",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072681070768623616/img/c97OIQR6j0SVnG3N.jpg",
+            "video_url": "https://x.com/reczko_konrad/status/2072682506239750555/video/1"
+          },
+          "summary": "开发者用 Fable + TypeGPU skill 从零做出 horde game。无引擎参与，纯 GPU 计算驱动。",
+          "analysis": "TypeGPU 直接在 GPU 上跑游戏逻辑，跳过传统引擎。对性能敏感的大规模战斗场景有参考价值。",
+          "recommendation": "Fable + TypeGPU 从零做 horde game：无引擎纯 GPU 计算，性能优异"
+        },
+        {
+          "idx": "工具 03",
+          "source": "Lab3 Studio",
+          "tags": [
+            "UE",
+            "AI框架",
+            "自定义",
+            "NPC"
+          ],
+          "title": "Lab3 Studio 展示自定义 AI 框架在 UE 中的实际应用",
+          "en_title": "Another look at my custom built AI framework in action in Unreal Engine",
+          "full_text": "Another look at my custom built AI framework in action",
+          "author": "lab3studio",
+          "date": "2026-07-03",
+          "likes": 242,
+          "views": 19668,
+          "link": "https://x.com/lab3studio/status/2072963868553269611",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072963415614672896/img/eNMyqSJnn2qzKK9G.jpg",
+            "video_url": "https://x.com/lab3studio/status/2072963868553269611/video/1"
+          },
+          "summary": "Lab3 Studio 展示其自建 AI 框架在 Unreal Engine 中的实际应用效果。",
+          "analysis": "自定义 AI 框架在 UE 中的应用展示，对做 NPC 行为树/决策系统的团队有参考。",
+          "recommendation": "Lab3 Studio：自定义 AI 框架在 UE 中实际应用展示——242赞"
         }
       ]
     }

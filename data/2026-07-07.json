@@ -4,7 +4,7 @@
     "source": "X/Twitter crawler API",
     "raw_count": 217,
     "prefiltered_count": 182,
-    "selected_count": 8,
+    "selected_count": 21,
     "crawl_time": "2026-07-07 18:00"
   },
   "lede": "Fable 5 构建实时程序化地牢生成器，three.js 一次跑通无限关卡系统\nXbox 裁员3200人关4工作室，CEO称业务不健康，Ninja Theory/Double Fine被出售",
@@ -23,19 +23,19 @@
   "digest": [
     {
       "id": "ai",
-      "text": "Fable 5 实时程序化地牢生成器（three.js）\nmrdoob（three.js创始人）用 Fable 做玩具工坊\nFable 5 单次session完成多人游戏4张地图+教程+存档"
+      "text": "Fable 5 实时程序化地牢生成器（three.js）一次跑通无限关卡\nmrdoob（three.js创始人）用 Fable 做玩具工坊\nFable 5 做 3D 键盘电商平台：程序化几何+实时定制\n工程师开始用 AI vibe coding 做游戏移植"
     },
     {
       "id": "industry",
-      "text": "Xbox 裁员3200人关闭4个工作室（含 Hellblade/State of Decay 开发商）\n以撒Rebirth 15.3万PCU破历史记录，12年老游戏的奇迹"
+      "text": "Xbox 裁员3200人关闭4个工作室：Ninja Theory/Double Fine被出售\n以撒Rebirth 15.3万PCU破历史记录\n\"Don't Kill the Disc\" 请愿12万签名反对Sony停产光碟\nCyberpunk 2077 再创销量里程碑"
     },
     {
       "id": "indie",
-      "text": "Dark Craft：我的世界×魂类免费MMO，开放世界探索+Boss讨伐+PvP\nGuns 'n Goblins：画面九成都是怪物的“增量式FPS”，数万怪浮涌而来"
+      "text": "Dark Craft：我的世界×魂类免费MMO\nPalworld 1.0 倒计时4天：史上最大更新\nCube World Omega 回归：DAG技能树设计\nHAEX：种外星种子重塑地形的生存FPS"
     },
     {
       "id": "tools",
-      "text": "Three.js + LEGO + 程序化地形 = 可飞行的乐高世界"
+      "text": "Three.js + LEGO + 程序化地形 = 可飞行的乐高世界\n开源程序化建筑生成器：Blender 几何节点→TypeScript\nDefold 数千NPC群体控制60FPS"
     }
   ],
   "daily_summary": "**Fable 5 游戏开发集中爆发**：多位开发者同时展示用 Fable 5 做出的游戏原型，包括实时地牢生成器、玩具工坊、完整多人游戏。AI 游戏开发已进入“可用”阶段。\n\n**Xbox 行业地震**：微软宣布裁员3200人并关闭4个工作室，Hellblade和State of Decay开发商被出售。游戏行业寒冬信号再次加强。\n\n**以撒 Rebirth 破纪录**：12年前的独立游戏突破 15.3 万同时在线，好评率96%，证明优秀内容的长尾效应。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
@@ -123,6 +123,54 @@
           "summary": "一个普通晚间session，Fable 5 完成了4张地图、3个游戏模式、教程、多人模式、多个Bot、账号存档。音频用ElevenLabs生成。",
           "analysis": "这个案例证明 AI 编程已经能在几小时内产出“可发布级”的多人游戏原型。对个人开发者和小团队而言，“周末做个游戏”不再是梦想。",
           "recommendation": "Fable 5 单次session产出4张地图+多人模式+Bot+存档，音频用ElevenLabs"
+        },
+        {
+          "idx": "AI 04",
+          "source": "The Bugged Dev",
+          "tags": [
+            "Fable 5",
+            "three.js",
+            "电商",
+            "程序化几何"
+          ],
+          "title": "Fable 5 做 3D 键盘电商平台：程序化几何生成每个按键，实时定制颜色/轴体",
+          "en_title": "Vibe coded a 3D keyboard ecom platform in three.js and greensock. Every key, switch, color customizable in real time. Whole keyboard built at runtime using procedural geometry.",
+          "full_text": "Everyone is using Fable 5 to build funny little demos so I decided to build something better.\n\nVibe coded a 3D keyboard ecom platform in @threejs and @greensock. Every key. Every switch. Every color. Customizable in real time in 3D.\n\nIt's really amusing that whole keyboard is built at runtime using Procedural geometry.\n\nTo achieve that kind of realistic lighting on keyboard, it used a studio environment (gradient sky + softbox panels) rendered into a PMREM cubemap for realistic reflections.",
+          "author": "thebuggeddev",
+          "date": "2026-07-05",
+          "likes": 857,
+          "views": 76634,
+          "link": "https://x.com/thebuggeddev/status/2073601034195513830",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073600742062215168/img/x9wk4YsctegS_bPZ.jpg",
+            "video_url": "https://x.com/thebuggeddev/status/2073601034195513830/video/1"
+          },
+          "summary": "开发者用 Fable 5 + three.js + greensock 做出 3D 键盘电商平台。每个按键、轴体、颜色都可实时定制。整个键盘在运行时用程序化几何生成，PMREM 环境贴图实现逼真反射。",
+          "analysis": "从'游戏Demo'跨到'电商产品配置器'，说明 AI + Web3D 的应用场景远超游戏。对做3D产品展示的团队有直接参考。",
+          "recommendation": "Fable 5 做 3D 键盘电商：程序化几何+实时定制+PMREM逼真反射——857赞76K views"
+        },
+        {
+          "idx": "AI 05",
+          "source": "PC Gamer",
+          "tags": [
+            "vibe coding",
+            "游戏移植",
+            "源码",
+            "AI编程"
+          ],
+          "title": "工程师开始用 AI vibe coding 做游戏移植：有源码访问权时效率极高",
+          "en_title": "It seems like engineers are vibe coding game ports with access to the source code",
+          "full_text": "It seems like engineers are vibe coding game ports with access to the source code",
+          "author": "pcgamer",
+          "date": "2026-07-06",
+          "likes": 10,
+          "views": 10225,
+          "link": "https://x.com/pcgamer/status/2074087096323817958",
+          "media": null,
+          "summary": "PC Gamer 报道：工程师正在用 AI vibe coding 方式做游戏移植，当有源代码访问权时效率极高。",
+          "analysis": "AI 编程正在渗透到游戏移植这种传统需要大量人工的领域。对移植公司的商业模式有重要影响。",
+          "recommendation": "工程师开始用 AI vibe coding 做游戏移植：有源码访问权时效率极高"
         }
       ]
     },
@@ -178,6 +226,124 @@
           "summary": "《以撒的结合：重生》首次突破15.3万同时在线，好评率96.12%。这款2014年发布的独立游戏仍在创造历史新高。",
           "analysis": "12年前的独立游戏能突破15万PCU，证明优秀Roguelike的生命周期可以无限延伸。持续更新和社区运营是关键。",
           "recommendation": "以撒 Rebirth 首次突破15.3万同时在线，2014年发售至今好评率96%"
+        },
+        {
+          "idx": "行业 03",
+          "source": "Digital Foundry",
+          "tags": [
+            "Sony",
+            "实体光碟",
+            "请愿",
+            "12万签名"
+          ],
+          "title": "\"Don't Kill the Disc\" 请愿达 12 万签名：反对 Sony 停产实体光碟",
+          "en_title": "Don't Kill the Disc: Petition Against Sony PS5 and PS6 Digital Media Plans Reaches 120,000 Signatures.",
+          "full_text": "\"Don't Kill the Disc\": Petition Against Sony PS5 and PS6 Digital Media Plans Reaches 120,000 Signatures.",
+          "author": "digitalfoundry",
+          "date": "2026-07-06",
+          "likes": 4187,
+          "views": 94832,
+          "link": "https://x.com/digitalfoundry/status/2074093527584141339",
+          "media": null,
+          "summary": "\"Don't Kill the Disc\" 请愿已达 12 万签名。玩家反对 Sony 在 PS5/PS6 时代停止实体光碟生产的计划。",
+          "analysis": "4187赞+94K views 说明实体游戏拥护者声量巨大。但历史表明请愿很少改变平台方战略。",
+          "recommendation": "\"Don't Kill the Disc\" 请愿达12万签名，4187赞反对 Sony 停产实体光碟"
+        },
+        {
+          "idx": "行业 04",
+          "source": "Eurogamer",
+          "tags": [
+            "Sony",
+            "光碟",
+            "PS6",
+            "行业分析"
+          ],
+          "title": "行业专家解读 Sony 放弃光碟：\"这完全是关于控制权\"",
+          "en_title": "\"This is all about control\" - industry experts speak on Sony's move away from discs, and what this means for the PlayStation 6 and the cost of games",
+          "full_text": "\"This is all about control\" - industry experts speak on Sony's move away from discs, and what this means for the PlayStation 6 and the cost of games",
+          "author": "eurogamer",
+          "date": "2026-07-06",
+          "likes": 294,
+          "views": 13218,
+          "link": "https://x.com/eurogamer/status/2074071071502794915",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMiUo-tXwAAEOrP.jpg"
+          },
+          "summary": "行业专家解读 Sony 放弃光碟的深层动机：\"这完全是关于控制权\"。分析了对 PS6 和游戏定价的影响。",
+          "analysis": "去除实体后，平台方对定价、转售、借阅的控制权大幅增加。消费者失去'拥有'游戏的权利。",
+          "recommendation": "行业专家解读 Sony 放弃光碟：\"这完全是关于控制权\"，影响 PS6 和游戏定价"
+        },
+        {
+          "idx": "行业 05",
+          "source": "PC Gamer",
+          "tags": [
+            "Kojima",
+            "游戏行业",
+            "实体媒体",
+            "悲观"
+          ],
+          "title": "小岛秀夫对游戏行业现状感到悲伤：实体媒体消亡令人遗憾",
+          "en_title": "'I find it really sad': Hideo Kojima laments the current state of the videogame industry",
+          "full_text": "'I find it really sad': Hideo Kojima laments the current state of the videogame industry",
+          "author": "pcgamer",
+          "date": "2026-07-06",
+          "likes": 110,
+          "views": 11374,
+          "link": "https://x.com/pcgamer/status/2074090874410254793",
+          "media": null,
+          "summary": "小岛秀夫公开表达对游戏行业现状的悲伤，对实体媒体消亡感到遗憾。",
+          "analysis": "业界标杆级创作者的公开表态为实体媒体讨论增加了分量。",
+          "recommendation": "小岛秀夫对游戏行业现状感到悲伤，对实体媒体消亡表示遗憾"
+        },
+        {
+          "idx": "行业 06",
+          "source": "GameSpot",
+          "tags": [
+            "Cyberpunk 2077",
+            "销量",
+            "里程碑"
+          ],
+          "title": "Cyberpunk 2077 再创销量里程碑：逆转口碑后持续增长",
+          "en_title": "Cyberpunk 2077 Just Hit Another Massive Sales Milestone",
+          "full_text": "Cyberpunk 2077 Just Hit Another Massive Sales Milestone",
+          "author": "GameSpot",
+          "date": "2026-07-06",
+          "likes": 39,
+          "views": 12824,
+          "link": "https://x.com/GameSpot/status/2074147766402719766",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMjaZkcbwAA9KgT.jpg"
+          },
+          "summary": "Cyberpunk 2077 再次达到一个重大销量里程碑。这款曾经口碑翻车的游戏通过持续更新实现了完美逆转。",
+          "analysis": "Cyberpunk 2077 是游戏行业'逆转口碑'的标杆案例。对'发售时差评'的游戏有启示价值。",
+          "recommendation": "Cyberpunk 2077 再创销量里程碑：逆转口碑后持续增长的经典案例"
+        },
+        {
+          "idx": "行业 07",
+          "source": "GameSpot",
+          "tags": [
+            "Halo",
+            "实体光碟",
+            "微软",
+            "反击"
+          ],
+          "title": "Sony 停产光碟后，微软确认 Halo: Campaign Evolved 将提供实体光碟版",
+          "en_title": "After PS5 Disc Controversy, Microsoft Confirms Halo: Campaign Evolved Will Come On A Disc",
+          "full_text": "After PS5 Disc Controversy, Microsoft Confirms Halo: Campaign Evolved Will Come On A Disc",
+          "author": "GameSpot",
+          "date": "2026-07-06",
+          "likes": 63,
+          "views": 16478,
+          "link": "https://x.com/GameSpot/status/2074138637906870458",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMjSF80boAAHPVv.jpg"
+          },
+          "summary": "在 Sony 宣布停产光碟引发争议后，微软确认 Halo: Campaign Evolved 将提供实体光碟版。明显是对 Sony 决策的营销反击。",
+          "analysis": "微软利用 Sony 的争议决策做营销差异化。实体光碟成为了新的竞争卖点。",
+          "recommendation": "微软确认 Halo: Campaign Evolved 提供实体版——借 Sony 停产光碟争议做营销反击"
         }
       ]
     },
@@ -270,6 +436,109 @@
             "why_notable": "“增量式FPS”是新品类概念，结合了Vampire Survivors的成瘾循环和FPS射击感",
             "description": "Guns 'n Goblins 是一款“增量式 FPS”：数万怪物浮涌而来，玩家自己鸣钟召唤怪物大军，用资源强化能力和防御系统。死亡后能力保留，形成“再来一次”的成瘾循环。\n\nSteam 状态：即将推出\n信源：日文Steam推荐推文 @stmatomato"
           }
+        },
+        {
+          "idx": "游戏 03",
+          "source": "Palworld",
+          "tags": [
+            "Palworld",
+            "1.0",
+            "预告",
+            "大更新"
+          ],
+          "title": "Palworld 1.0 倒计时 4 天：史上最大规模更新，新Pal+新大陆+战斗系统进化",
+          "en_title": "4 days to Palworld 1.0! Many new Pals, massive new landmass, greatly improved combat, off-shore building, revamped quests.",
+          "full_text": "4 days to Palworld 1.0!\n\nMany new Pals, and a massive new landmass\nGreatly improved combat\nOff-shore building: unleash your creativity!\nRevamped quests and main storyline\n\n...and much more!\n\nGet your Pals ready for July 10th!",
+          "author": "Palworld_EN",
+          "date": "2026-07-06",
+          "likes": 4152,
+          "views": 102977,
+          "link": "https://x.com/Palworld_EN/status/2074132947959951554",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2074132854544486400/pu/img/BLwVNSdImRlzXCMG.jpg",
+            "video_url": "https://x.com/Palworld_EN/status/2074132947959951554/video/1"
+          },
+          "summary": "Palworld 1.0 将于 7/10 上线，包含大量新 Pal、全新大陆、大幅改进的战斗系统、海上建筑、翻新的任务和主线剧情。",
+          "analysis": "现象级 EA 游戏正式版上线在即，103K views 说明社区期待极高。对市场短期有冲击。",
+          "recommendation": "Palworld 1.0 倒计时4天：史上最大更新，新Pal+新大陆+战斗进化——4152赞"
+        },
+        {
+          "idx": "游戏 04",
+          "source": "Metropolis 1998",
+          "tags": [
+            "紧急救援",
+            "模拟",
+            "复古",
+            "独立"
+          ],
+          "title": "Metropolis 1998：紧急救援模拟游戏首次出警！复古风格急救/消防/警察模拟器",
+          "en_title": "FIRST DISPATCH!!!! Emergency sim here we come!",
+          "full_text": "FIRST DISPATCH!!!!\nEmergency sim here we come!",
+          "author": "YesboxStudios",
+          "date": "2026-07-05",
+          "likes": 905,
+          "views": 71883,
+          "link": "https://x.com/YesboxStudios/status/2073832629342765200",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073832125791412224/img/2hyrnmDeifukEmiH.jpg",
+            "video_url": "https://x.com/YesboxStudios/status/2073832629342765200/video/1"
+          },
+          "summary": "Metropolis 1998 展示首次出警场景。这是一款复古风格紧急救援模拟游戏，涵盖急救、消防、警察等职能。",
+          "analysis": "",
+          "recommendation": "Metropolis 1998：紧急救援模拟首次出警展示，复古风格——905赞72K views"
+        },
+        {
+          "idx": "游戏 05",
+          "source": "Wolfram von Funck",
+          "tags": [
+            "Cube World",
+            "Omega",
+            "技能树",
+            "DAG"
+          ],
+          "title": "Cube World Omega：战士技能树采用DAG结构，部分路径互斥迫使玩家做选择",
+          "en_title": "Working on warrior skill trees, though technically, they're DAGs. Some paths will be mutually exclusive, forcing you to commit to a direction like offense or defense.",
+          "full_text": "Working on warrior skill trees, though technically, they're DAGs. In the new skill system, some paths will be mutually exclusive, forcing you to commit to a direction like offense or defense, while others can be developed in parallel.",
+          "author": "wol_lay",
+          "date": "2026-07-06",
+          "likes": 1862,
+          "views": 46650,
+          "link": "https://x.com/wol_lay/status/2074099116230017441",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMisD6lWMAA35O9.jpg"
+          },
+          "summary": "Cube World Omega 的战士技能树实际是 DAG（有向无环图）结构。部分路径互斥（如攻击/防御），迫使玩家做方向选择；另一些可并行发展。",
+          "analysis": "Cube World 创作者 Wollay 回归开发。DAG技能树设计比传统线性树更有深度，对RPG设计有参考价值。",
+          "recommendation": "Cube World Omega：战士技能树用DAG结构，互斥路径迫使玩家做攻/防方向选择"
+        },
+        {
+          "idx": "游戏 06",
+          "source": "3Dgamedev",
+          "tags": [
+            "HAEX",
+            "生存",
+            "FPS",
+            "外星种子"
+          ],
+          "title": "HAEX：开放世界生存FPS，种下外星种子重塑周围世界——最原创的生存机制之一",
+          "en_title": "An open-world survival FPS where you plant alien seeds to literally reshape the world around you. HAEX has one of the most original survival mechanics.",
+          "full_text": "An open-world survival FPS where you plant alien seeds to literally reshape the world around you\n\nHAEX has one of the most original survival mechanics I've seen in a while.",
+          "author": "unity3dvfx",
+          "date": "2026-07-06",
+          "likes": 151,
+          "views": 16176,
+          "link": "https://x.com/unity3dvfx/status/2074015796355879263",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074015726642335744/img/ANhpIj_xzRToscpS.jpg",
+            "video_url": "https://x.com/unity3dvfx/status/2074015796355879263/video/1"
+          },
+          "summary": "HAEX 是开放世界生存 FPS，玩家通过种下外星种子来改造周围环境。被评为近期'最原创的生存机制之一'。",
+          "analysis": "",
+          "recommendation": "HAEX：开放世界生存FPS，种外星种子重塑地形——被赞为最原创的生存机制"
         }
       ]
     },
@@ -304,6 +573,58 @@
           "summary": "开发者参加 Three.js Journey 挑战，用 three.js + WebGPU 构建了程序化乐高地形世界，可自由飞行探索。代码已开源。",
           "analysis": "程序化地形+乐高美学是很有想象力的组合。对想学 three.js 和 WebGPU 的开发者而言，这是个优秀的开源参考项目。",
           "recommendation": "Three.js+LEGO+程序化地形构建可飞行乐高世界，代码开源"
+        },
+        {
+          "idx": "工具 02",
+          "source": "Chiro Visuals",
+          "tags": [
+            "three.js",
+            "Blender",
+            "程序化建筑",
+            "开源"
+          ],
+          "title": "开源程序化建筑生成器：Blender 几何节点逆向到 TypeScript + three.js",
+          "en_title": "Opensource fully procedural building generator using three.js. Reverse-engineered a Blender geometry nodes graph to TypeScript. GPU instancing, real-time snow, rain & wet surfaces.",
+          "full_text": "This is an opensource fully procedural building generator running using @threejs. Building customization, (GPU instancing). Real-time snow, rain & wet surfaces.\n\nI reverse-engineered a Blender geometry nodes graph to TypeScript.\n\nSource code: https://t.co/XH3sNizfM5",
+          "author": "chirovisuals",
+          "date": "2026-07-06",
+          "likes": 222,
+          "views": 7183,
+          "link": "https://x.com/chirovisuals/status/2074135400138830228",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074132981313077248/img/4Ev6OQxGrwEipVjo.jpg",
+            "video_url": "https://x.com/chirovisuals/status/2074135400138830228/video/1"
+          },
+          "summary": "开源程序化建筑生成器：将 Blender 几何节点图逆向工程到 TypeScript + three.js。支持 GPU 实例化、实时雪/雨/湿润表面。",
+          "analysis": "Blender→Web 的移植方向有价值。对需要在浏览器中做城市场景的项目是优秀参考。",
+          "recommendation": "开源程序化建筑生成器：Blender 几何节点逆向到 TypeScript，GPU实例化+实时天气"
+        },
+        {
+          "idx": "工具 03",
+          "source": "Defold Engine",
+          "tags": [
+            "Defold",
+            "NPC",
+            "群体控制",
+            "性能"
+          ],
+          "title": "Defold 引擎：数千NPC跟随玩家+互相避障，单场景60FPS",
+          "en_title": "This developer can put thousands of NPCs following player and avoiding each other in one scene in Defold at around 60 FPS!",
+          "full_text": "This developer can put thousands of NPCs following player and avoiding each other in one scene in Defold at around 60 FPS!\n\nCheck out the great progress on the crowd control and collision native extension for #Defold by @selimanac",
+          "author": "defold",
+          "date": "2026-07-06",
+          "likes": 157,
+          "views": 9677,
+          "link": "https://x.com/defold/status/2074045785201676402",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074042771610976256/img/PqihdP6b3j39UObt.jpg",
+            "video_url": "https://x.com/defold/status/2074045785201676402/video/1"
+          },
+          "summary": "Defold 引擎展示群体控制扩展：数千 NPC 跟随玩家并互相避障，单场景保持约 60 FPS。原生扩展实现高性能。",
+          "analysis": "对需要大量 NPC 的游戏（城市模拟、RTS、人群场景）有参考价值。Defold 的轻量引擎定位越来越有竞争力。",
+          "recommendation": "Defold 引擎展示：数千NPC跟随+互相避障，单场景60FPS——原生群体控制扩展"
         }
       ]
     }

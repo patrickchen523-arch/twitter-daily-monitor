@@ -3,25 +3,25 @@
   "meta": {
     "raw_count": 355,
     "filtered_count": 288,
-    "selected_count": 9,
+    "selected_count": 17,
     "crawl_time": "2026-07-02 18:00"
   },
   "digest": [
     {
       "id": "ai",
-      "text": "Anthropic Claude Code 被曝隐写代码收集中国用户隐私，开发者信任危机\n陈成：逆向 Claude Code v191 源码，揭示反蒸馏机制技术细节\nGoogle Gemini Omni Flash 发布：视频生成成本仅为 Sora 的 1/5，支持对话式迭代编辑"
+      "text": "Claude Code隐写代码事件：偷偷编码用户信息到系统提示\n逆向Claude Code v191源码：反蒸馏机制精妙\nGemini Omni Flash发布：视频生成+对话编辑\nEtched推理芯片$1B合同夏季出货\nNVIDIA TwoTower：30B模型并行写token\nOllama+MLX：Gemma 4加速90%"
     },
     {
       "id": "industry",
-      "text": "PlayStation 2028年1月起停产实体光盘：数字游戏时代正式到来，GOG/游戏保存社区激烈回应"
+      "text": "PlayStation宣布2028年1月起停产新游光碟\nGOG回应：游戏永远不会从你的库消失——28178赞\n游戏保存权威：盗版是无碟未来唯一保存选项\nLove and Deepspace粉丝抗议角色删除"
     },
     {
       "id": "indie",
-      "text": "Cinder City：韩国末世科幻开放世界射击，多人PvE协作\nNAKWON: LAST PARADISE：生存恐怖PvPvE，物资管理+据点运营"
+      "text": "Cinder City：韩国末世科幻开放世界MMO\nNAKWON: LAST PARADISE：韩国末世生存\nReBlade: The Death Spiral动作Roguelike\nFable 5做AI游戏开发：效果惊人"
     },
     {
       "id": "tools",
-      "text": "GameBlocks：开源 three.js 积木，让 AI Agent 直接构建3D游戏原型\nGitHub spec-kit：发布数天95K stars，AI编程规范化框架"
+      "text": "GameBlocks：开源three.js积木\nGitHub spec-kit：95K stars的AI编程规范\nZCode：GLM-5.2官方IDE，BYOK+跨平台"
     }
   ],
   "sections": [
@@ -97,6 +97,82 @@
           },
           "summary": "Google 发布 Gemini Omni Flash 视频生成模型，主打\"高质量 + 低成本\"定位。关键卖点：支持对话式迭代编辑（用自然语言修改已生成的视频），而非一次性生成。已通过 AI Studio 和 Gemini API 开放。与主流竞品对比：Sora (OpenAI) 单次生成约 $0.15-0.20/秒，Runway Gen-4 约 $0.05/秒；Gemini Omni Flash 定位在 Runway 同级甚至更低价位，约 $0.03-0.05/秒，且支持多轮编辑不额外收费。",
           "analysis": "视频生成赛道正在从\"炫技\"走向\"可用\"。Gemini Omni Flash 的核心创新不在生成质量（质量约 Sora 的 80-90%），而在于工作流整合——对话式编辑意味着创作者不需要反复从零生成，可以像修改文档一样逐步调整视频。对游戏行业，这意味着：1）预告片/宣传视频制作成本大幅降低；2）快速原型验证美术风格；3）NPC 动画参考生成成为可能。成本降至 Sora 的 1/5 后，中小独游团队也能负担。"
+        },
+        {
+          "idx": "AI 04",
+          "source": "Etched",
+          "tags": [
+            "推理芯片",
+            "$1B合同",
+            "A0流片",
+            "性能"
+          ],
+          "title": "Etched 走出隐身模式：推理专用芯片 A0 流片成功，$1B+客户合同，夏季出货",
+          "en_title": "We're coming out of stealth. First racks after successful A0 tapeout, $1B+ in customer contracts, $800m raised. First racks ship this summer.",
+          "full_text": "We're coming out of stealth.\n\nWe've built our first racks after a successful A0 tapeout, $1B+ in customer contracts, and $800m raised.\n\nEarly customer tests show us achieving SOTA throughput, latency, and power efficiency on inference workloads.\n\nOur first racks ship this summer.",
+          "author": "Etched",
+          "date": "2026-06-30",
+          "likes": 9180,
+          "views": 5698111,
+          "link": "https://x.com/Etched/status/2071972062202343590",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMEfnAMbAAAlKme.jpg"
+          },
+          "summary": "Etched走出隐身模式：推理专用芯片A0流片成功，已有$1B+客户合同、融资$800M。早期测试达到SOTA吞吐/延迟/能效。夏季出货。",
+          "analysis": "$1B客户合同+SOTA性能，对NVIDIA推理市场的直接挑战。如果兑现承诺将改变AI推理成本结构。",
+          "recommendation": "Etched走出隐身：推理芯片A0流片成功，$1B+合同$800M融资，夏季出货"
+        },
+        {
+          "idx": "AI 05",
+          "source": "NVIDIA AI",
+          "tags": [
+            "Nemotron",
+            "TwoTower",
+            "扩散语言模型",
+            "并行"
+          ],
+          "title": "NVIDIA Nemotron-Labs-TwoTower：把30B模型拆成两半并行写token",
+          "en_title": "We took a 30B model and split it in two to write tokens in parallel. Introducing Nemotron-Labs-TwoTower from NVIDIA Research.",
+          "full_text": "We took a 30B model and split it in two to write tokens in parallel instead of one at a time.\n\nIntroducing Nemotron-Labs-TwoTower: a diffusion language model from NVIDIA Research adapted from Nemotron-3-Nano-30B-A3B. One half holds the context, the other writes tokens in parallel.",
+          "author": "NVIDIAAI",
+          "date": "2026-07-01",
+          "likes": 3107,
+          "views": 274268,
+          "link": "https://x.com/NVIDIAAI/status/2072394812301480067",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072381487169642496/img/FRr8WMcAP454KM_l.jpg",
+            "video_url": "https://x.com/NVIDIAAI/status/2072394812301480067/video/1"
+          },
+          "summary": "NVIDIA Research 发布 Nemotron-Labs-TwoTower：将30B模型拆成两半（上下文+并行生成），实现token并行输出而非逐个生成。",
+          "analysis": "扩散语言模型是突破自回归瓶颈的新方向。如果能保持质量同时提速，对实时应用有重要意义。",
+          "recommendation": "NVIDIA TwoTower：30B模型拆两半并行写token——扩散语言模型新范式"
+        },
+        {
+          "idx": "AI 06",
+          "source": "Ollama",
+          "tags": [
+            "Gemma 4",
+            "Apple Silicon",
+            "MLX",
+            "90%加速"
+          ],
+          "title": "Ollama + MLX：Gemma 4 在 Apple Silicon 上加速 90%，多token预测默认开启",
+          "en_title": "Gemma 4 is now nearly 90% faster on Apple Silicon with Ollama using MLX! Speedup from improved multi-token prediction.",
+          "full_text": "Gemma 4 is now nearly 90% faster on Apple Silicon with Ollama using MLX!\n\nThe speedup comes from improved multi-token prediction (MTP), now on by default for Gemma 4, with more models to come.\n\nOllama automatically tunes how many tokens to draft as it runs, so it never slows down.",
+          "author": "ollama",
+          "date": "2026-07-01",
+          "likes": 2916,
+          "views": 172367,
+          "link": "https://x.com/ollama/status/2072121580201848926",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMGltbka4AAWwxx.jpg"
+          },
+          "summary": "Ollama用MLX让Gemma 4在Apple Silicon上加速近90%。多token预测(MTP)默认开启，自动调优draft token数量。",
+          "analysis": "90%加速意味着本地推理体验大幅改善。对Mac用户的本地AI开发有直接影响。",
+          "recommendation": "Ollama+MLX：Gemma 4 在Apple Silicon加速90%，多token预测默认开启"
         }
       ]
     },
@@ -128,6 +204,77 @@
           },
           "summary": "Sony 官方宣布自 2028 年 1 月起，所有新 PlayStation 游戏将不再提供实体光盘。同时确认 PS3/PS Vita 数字商店将继续运营。这一决定引发行业巨震：GOG 随即声明\"即使游戏下架，也永远不会从你的库中消失\"，强调 DRM-free 的数字所有权承诺；Digital Foundry 分析这\"强烈暗示 PS6 将是全数字化主机\"；游戏保存组织负责人则表示\"盗版可能是无光盘未来唯一的保存选项\"。",
           "analysis": "这是游戏行业从物理媒介向纯数字的标志性转折点。影响链：1）GameStop 等实体零售商的商业模式面临根本性挑战（虽然 GameStop CEO 声称\"并不受伤\"，但转型压力不可否认）；2）数字所有权问题将上升为监管议题——欧盟已在讨论数字游戏\"转售权\"；3）对独游开发者而言，实体发行成本消失是利好，但也意味着完全依赖平台方的发现机制；4）Steam 的 DRM 策略（30天需联网验证一次）与 GOG 的永久离线形成鲜明对比，消费者将用钱包投票。"
+        },
+        {
+          "idx": "行业 02",
+          "source": "GOG",
+          "tags": [
+            "GOG",
+            "数字所有权",
+            "永久",
+            "DRM-free"
+          ],
+          "title": "GOG 回应 Sony 停产光碟：即使游戏从商店下架，也永远不会从你的库中消失",
+          "en_title": "GOG: Even if a game vanishes from the GOG storefront, it never leaves your library. This is how purchased games should work.",
+          "full_text": "Even if a game vanishes from the GOG storefront, it never leaves your library. This is how purchased games should work.",
+          "author": "Pirat_Nation",
+          "date": "2026-07-01",
+          "likes": 28178,
+          "views": 624032,
+          "link": "https://x.com/Pirat_Nation/status/2072331284387418485",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMJmUZ0WIAIhBb8.jpg"
+          },
+          "summary": "GOG 针对 Sony 停产光碟发表声明：即使游戏从商店下架，也永远不会从你的库中消失。'这才是购买游戏应该有的样子。'",
+          "analysis": "28178赞说明玩家对数字所有权的焦虑极深。GOG 的DRM-free定位在这个时机获得了巨大营销红利。",
+          "recommendation": "GOG回应Sony：游戏永远不会从你的库消失——28178赞'这才是购买应有的样子'"
+        },
+        {
+          "idx": "行业 03",
+          "source": "PC Gamer",
+          "tags": [
+            "游戏保存",
+            "盗版",
+            "数字未来"
+          ],
+          "title": "游戏保存领袖：在无光碟的未来，盗版是唯一的保存选项",
+          "en_title": "Game preservation leader agrees that piracy is the only preservation option of a discless future",
+          "full_text": "Game preservation leader agrees that piracy is the only preservation option of a discless future",
+          "author": "pcgamer",
+          "date": "2026-07-01",
+          "likes": 6166,
+          "views": 110010,
+          "link": "https://x.com/pcgamer/status/2072451268191388059",
+          "media": null,
+          "summary": "游戏保存领域权威人士认同：在无光碟的数字化未来，盗版将成为唯一的游戏保存手段。6166赞。",
+          "analysis": "当官方不再提供永久访问，非官方保存就成了唯一出路。这是游戏行业需要面对的伦理悖论。",
+          "recommendation": "游戏保存权威：无光碟未来盗版是唯一保存选项——6166赞引发伦理讨论"
+        },
+        {
+          "idx": "行业 04",
+          "source": "Love and Deepspace",
+          "tags": [
+            "恋爱游戏",
+            "角色删除",
+            "抗议",
+            "争议"
+          ],
+          "title": "Love and Deepspace 粉丝抗议：被删除的争议角色引发大规模玩家运动",
+          "en_title": "Love and Deepspace fans protest removal of controversial character canceled before launch",
+          "full_text": "Love and Deepspace fans protest removal of controversial character canceled before launch",
+          "author": "Polygon",
+          "date": "2026-07-01",
+          "likes": 5601,
+          "views": 175656,
+          "link": "https://x.com/Polygon/status/2072319467854381454",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMJbkvEX0AAd1HQ.jpg"
+          },
+          "summary": "Love and Deepspace 玩家抗议官方在发布前删除一个争议角色。5601赞+175K views。大规模粉丝运动。",
+          "analysis": "乙女游戏/恋爱游戏社区的动员力惊人。角色删除触发的玩家反弹对运营策略有警示。",
+          "recommendation": "Love and Deepspace 粉丝抗议角色删除：5601赞175K views大规模玩家运动"
         }
       ]
     },
@@ -222,6 +369,57 @@
             "positioning": "韩式僵尸生存，强调潜行和资源管理",
             "why_notable": "Nexon 开发，将近战/潜行/据点运营融入僵尸生存，与纯射击类僵尸游戏差异化"
           }
+        },
+        {
+          "idx": "游戏 03",
+          "source": "ReBlade",
+          "tags": [
+            "动作Roguelike",
+            "独立",
+            "Steam"
+          ],
+          "title": "ReBlade: The Death Spiral：动作Roguelike，1030赞被算法选中",
+          "en_title": "ReBlade: The Death Spiral - You were chosen by the algorithm! Now take a look at my indie game.",
+          "full_text": "You were chosen by the algorithm! Now take a look at my indie game",
+          "author": "ReBladeG",
+          "date": "2026-07-01",
+          "likes": 1030,
+          "views": 101145,
+          "link": "https://x.com/ReBladeG/status/2072334424725918005",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072224633643008000/img/SnoQfaNlh_vjK0u1.jpg",
+            "video_url": "https://x.com/ReBladeG/status/2072334424725918005/video/1"
+          },
+          "summary": "ReBlade: The Death Spiral 是一款动作Roguelike独立游戏，1030赞+101K views获得大量曝光。",
+          "analysis": "",
+          "recommendation": "ReBlade: The Death Spiral：动作Roguelike——1030赞101K views"
+        },
+        {
+          "idx": "游戏 04",
+          "source": "Fable 5 + Conor Dart",
+          "tags": [
+            "Fable 5",
+            "AI游戏",
+            "bug",
+            "惊艳"
+          ],
+          "title": "Fable 5 做 AI 游戏开发：虽有bug但效果惊人",
+          "en_title": "Fable 5 is a beast at AI game dev! Sure a few bugs here and there, but my goodness this is amazing.",
+          "full_text": "Fable 5 is a beast at ai game Dev!\n\nSure a few bugs here and there, but my goodness this is amazing.",
+          "author": "Conor_D_Dart",
+          "date": "2026-07-01",
+          "likes": 397,
+          "views": 48508,
+          "link": "https://x.com/Conor_D_Dart/status/2072414636599587293",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2072414387290210304/img/qwLAYdjcVfn-GBl_.jpg",
+            "video_url": "https://x.com/Conor_D_Dart/status/2072414636599587293/video/1"
+          },
+          "summary": "开发者用 Fable 5 做游戏开发：虽有一些bug，但整体效果惊人。称 Fable 5 为'AI游戏开发的野兽'。",
+          "analysis": "",
+          "recommendation": "Fable 5 做游戏开发：虽有bug但效果惊人——397赞'AI游戏开发的野兽'"
         }
       ]
     },
@@ -280,6 +478,28 @@
           },
           "summary": "GitHub 官方发布 spec-kit，数天内获得 95K stars 和 8.3K forks。核心理念：AI 编程的问题不在于模型能力，而在于\"同一个需求，不同模型理解不同\"。spec-kit 提供标准化的规范描述框架，让 AI 代理能一致地理解和执行编程意图。",
           "analysis": "95K stars 说明开发者社区对\"AI 编程规范化\"的需求是刚性的。当前 vibe coding（凭感觉让 AI 写代码）的最大问题就是结果不可预测。spec-kit 试图建立\"AI 编程的设计文档标准\"——类似于 OpenAPI 之于 REST API。对游戏工作室而言，采用 spec-kit 规范可以让不同 AI 工具（Copilot/Claude/Codex）产出一致的代码结构，降低技术债。"
+        },
+        {
+          "idx": "工具 03",
+          "source": "ZCode",
+          "tags": [
+            "ZCode",
+            "GLM-5.2",
+            "IDE",
+            "跨平台"
+          ],
+          "title": "ZCode 发布：GLM-5.2 官方开发环境，支持 BYOK + macOS/Win/Linux",
+          "en_title": "Introducing ZCode, the official development environment for GLM-5.2. BYOK supported, available on macOS, Windows, and Linux.",
+          "full_text": "Introducing ZCode, the official development environment for GLM-5.2\n\n- GLM Coding Plan subscribers: now 1.5x usage quota in ZCode\n- BYOK supported: works with your existing subscriptions and APIs\n- Available on macOS, Windows, and Linux",
+          "author": "Zai_org",
+          "date": "2026-07-01",
+          "likes": 4574,
+          "views": 935944,
+          "link": "https://x.com/Zai_org/status/2072349453361557898",
+          "media": null,
+          "summary": "ZCode 发布：GLM-5.2 官方开发环境。订阅用户获1.5倍额度，支持BYOK（自带API Key），跨平台Mac/Win/Linux。",
+          "analysis": "继Cursor/Windsurf后又一个AI IDE。BYOK支持让用户可以用自己的订阅，降低了尝试门槛。",
+          "recommendation": "ZCode发布：GLM-5.2官方IDE，BYOK+跨平台——4574赞935K views"
         }
       ]
     }

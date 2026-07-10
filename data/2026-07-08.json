@@ -4,7 +4,7 @@
     "source": "X/Twitter crawler API",
     "raw_count": 209,
     "prefiltered_count": 169,
-    "selected_count": 8,
+    "selected_count": 20,
     "crawl_time": "2026-07-08 18:00"
   },
   "lede": "Fable 用 gpt-image-2 实时生成 FF7 风格游戏世界，边走边建新场景\nSteam 退款政策争议：独立开发者的 2 小时游戏被反复通关后退款",
@@ -23,19 +23,19 @@
   "digest": [
     {
       "id": "ai",
-      "text": "Fable 用 gpt-image-2 实时生成 FF7 风格游戏世界，navmesh 自动检测 + 边缘场景实时构建\nMajid 程序化地牢接入 4 人合作 ARPG，已可免费玩"
+      "text": "Fable 用 gpt-image-2 实时生成 FF7 风格游戏世界，navmesh 自动检测 + 边缘场景实时构建\nFable 5 生成完整程序化地牢系统：等距视角、热力图难度、Boss 路径\nMajid 程序化地牢接入 4 人合作 ARPG，已可免费玩"
     },
     {
       "id": "industry",
-      "text": "独立开发者呼吁 Steam 修改退款政策：2 小时内通关即可退款的漏洞\nXbox 裁员后续：id Software 被大幅裁减，Obsidian 裁 25%\n初代 Nintendo Switch 将在欧洲停产"
+      "text": "WoW 写实化改造视频百万播放：卡通画风的怀旧价值讨论\n独立开发者呼吁 Steam 修改退款政策：2 小时内通关即可退款\nXbox 裁员：id Software 被大幅裁减，Obsidian 裁 25%\nBlood of Dawnwalker 试玩获正面评价，有望成 2026 年度 RPG"
     },
     {
       "id": "indie",
-      "text": "POLYARIS：北极圈滑雪生存 FPS，愿望单突破 10 万\nINCYANSPACE：美丽像素风末世开放世界 ARPG"
+      "text": "POLYARIS：北极圈滑雪生存 FPS，愿望单突破 10 万\nMOUSE: P.I. For Hire 实体版即将发售：noir 风格 FPS\nStatic Hour：新闻室惊悚游戏，决策驱动叙事"
     },
     {
       "id": "tools",
-      "text": "开源程序化建筑生成器：Blender 几何节点逆向工程到 TypeScript + three.js"
+      "text": "开源程序化建筑生成器：Blender 几何节点逆向工程到 TypeScript + three.js\nThree.js + LEGO + 程序化地形：可飞行穿越的乐高世界\nGodot Shaders Bible 收藏版发布"
     }
   ],
   "daily_summary": "**Fable + gpt-image-2 实时构建游戏世界**：开发者用 Fable 创建 FF7 风格游戏世界，自动检测 navmesh、预加载连接路线，地图边缘实时构建新场景。另一位开发者将昨日的程序化地牢生成器接入 4 人合作 ARPG，已可免费玩。\n\n**Steam 退款政策争议**：独立开发者公开呼吁 Steam 修改退款规则，其游戏被玩家在 2 小时内通关后反复退款，引发对短流程游戏保护的讨论。\n\n**Xbox 裁员持续发酵**：id Software（DOOM 开发商）被大幅裁减，Obsidian 裁员 25%。初代 Switch 确认在欧洲停产。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
@@ -97,6 +97,84 @@
           "summary": "昨日做出程序化地牢生成器的开发者，已将其接入 three.js 4人合作 ARPG 的“Descent”模式，可免费体验。",
           "analysis": "从“AI生成Demo”到“接入可玩游戏”只用了1天。这展示了 AI 生成内容集成到真实项目的速度。",
           "recommendation": "Majid 将昨日的程序化地牢生成器接入 4 人合作 ARPG，已可免费玩"
+        },
+        {
+          "idx": "AI 03",
+          "source": "Ian Curtis",
+          "tags": [
+            "Fable 5",
+            "3D Gaussian Splatting",
+            "three.js",
+            "RC car"
+          ],
+          "title": "Fable + three.js + 3D Gaussian Splatting：开源 RC 赛车控制器，支持手柄和移动端",
+          "en_title": "First weekend building with Fable: Open-sourced RC car raycast controller built with three.js + cannon. Includes mobile controls + Gamepad API support + 3D Gaussian Splatting.",
+          "full_text": "First weekend building with Fable (it also helped put together this video)\n\nOpen-sourced RC car raycast controller built with three.js + cannon. It includes mobile controls + Gamepad API support. It's also been a lot of fun implementing it with 3D Gaussian Splatting. Test it out!",
+          "author": "XRarchitect",
+          "date": "2026-07-06",
+          "likes": 396,
+          "views": 23896,
+          "link": "https://x.com/XRarchitect/status/2074171443819209110",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074165686369435648/img/fLxtfY-MY2i2D5t3.jpg",
+            "video_url": "https://x.com/XRarchitect/status/2074171443819209110/video/1"
+          },
+          "summary": "开发者用 Fable 第一个周末就做出了 three.js + cannon 物理的 RC 赛车控制器，支持手柄、移动端触控，还接入了 3D Gaussian Splatting 渲染。代码已开源。",
+          "analysis": "Fable 降低了 Web 3D 项目的开发门槛。3D Gaussian Splatting + 游戏控制器是新兴的结合方向。",
+          "recommendation": "Fable 首周末成果：开源 RC 赛车 + 3D Gaussian Splatting，支持手柄和移动端"
+        },
+        {
+          "idx": "AI 04",
+          "source": "Nix0n",
+          "tags": [
+            "Fable 5",
+            "程序化地牢",
+            "Three.js",
+            "实时生成"
+          ],
+          "title": "Fable 5 生成程序化地牢系统：等距视角、热力图难度、Boss 路径、实时动画",
+          "en_title": "FABLE 5 generated a real-time procedural dungeon generator in Three.js: isometric view, heatmap difficulty, critical paths, bosses, step-by-step animation.",
+          "full_text": "FABLE 5 ACABA DE GENERAR ESTO EN THREE.JS\n\nUn generador procedural de mazmorras en tiempo real, con iluminacion, atmosfera y calidad de juego real.\n\n- Crea mazmorras isometricas completas con un seed\n- Control total de rooms, loopiness, densidad de decoracion\n- Heatmap de dificultad, caminos criticos, bosses\n- Animacion del proceso de generacion paso a paso\n- Todo en Three.js, sin frameworks pesados\n\nEsto ya no es 'un tech demo'. Esto es nivel de herramienta de desarrollo real...",
+          "author": "UnTalNixon_exe",
+          "date": "2026-07-06",
+          "likes": 288,
+          "views": 21753,
+          "link": "https://x.com/UnTalNixon_exe/status/2073969403691962436",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073969138918133760/img/Og3QfmPc0WT95Hkm.jpg",
+            "video_url": "https://x.com/UnTalNixon_exe/status/2073969403691962436/video/1"
+          },
+          "summary": "Fable 5 在 Three.js 中生成了完整的程序化地牢系统：等距视角、seed 控制、房间密度/环路度可调、热力图难度标注、Boss 路径规划、生成过程逐步动画展示。",
+          "analysis": "从 Demo 到'开发级工具'的跨越。程序化地牢的完整工具链（seed、热力图、路径规划）已经接近商业 Roguelite 的需求。",
+          "recommendation": "Fable 5 生成完整程序化地牢系统：等距视角、热力图难度、Boss 路径、实时动画"
+        },
+        {
+          "idx": "AI 05",
+          "source": "Givros",
+          "tags": [
+            "GPT-5.5",
+            "Codex",
+            "塔防",
+            "增量游戏"
+          ],
+          "title": "GPT-5.5 做视觉 + Codex 写代码：增量塔防小游戏，从想法到可玩超快",
+          "en_title": "GPT-5.5 for the visual, Codex for the web game. A stupid little incremental tower defense where guys rush an island and you buy upgrades to stop them. Playable way faster than expected.",
+          "full_text": "New test today!\n\nGPT-5.5 for the visual.\nCodex for the web game.\n\nIt's a stupid little incremental tower defense where guys rush an island and you buy upgrades to stop them.\n\nStill rough, but playable way faster than expected.",
+          "author": "givros",
+          "date": "2026-07-06",
+          "likes": 61,
+          "views": 6801,
+          "link": "https://x.com/givros/status/2074165915822817671",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074165418764169216/img/I2c6e3DYmYK-VatJ.jpg",
+            "video_url": "https://x.com/givros/status/2074165915822817671/video/1"
+          },
+          "summary": "开发者测试 GPT-5.5 做视觉素材 + Codex 写游戏代码的组合，做出增量塔防小游戏。从想法到可玩比预期快很多。",
+          "analysis": "GPT-5.5(视觉) + Codex(代码) 的分工模式正在成为 AI 游戏开发的标准工作流。",
+          "recommendation": "GPT-5.5 做视觉 + Codex 写代码：增量塔防从想法到可玩超快"
         }
       ]
     },
@@ -174,6 +252,107 @@
           "summary": "任天堂确认初代 Nintendo Switch 将在欧洲停产，为 Switch 2 让路。",
           "analysis": "Switch 上市 9 年后正式退场，标志任天堂全面转向 Switch 2 世代。对开发者而言，旧平台的用户基数仍在但新增将停止。",
           "recommendation": "初代 Switch 欧洲停产，上市 9 年后正式退场为 Switch 2 让路"
+        },
+        {
+          "idx": "行业 04",
+          "source": "TheWizard",
+          "tags": [
+            "WoW",
+            "写实风格",
+            "讨论",
+            "怀旧"
+          ],
+          "title": "如果 WoW 去掉卡通画风做成写实会怎样？百万播放引发画风与怀旧价值讨论",
+          "en_title": "What if World of Warcraft was redone and they removed all the cartoonie graphics? Would it still hold its appeal or does the cartoon look contain a special nostalgic value?",
+          "full_text": "What if World of Warcraft was redone and they removed all the cartoonie graphics?\n\nWould it still hold its appeal or does the cartoon look contain a special nostalgic value that would change the game too much?",
+          "author": "TheRealWizar",
+          "date": "2026-07-06",
+          "likes": 3796,
+          "views": 1084015,
+          "link": "https://x.com/TheRealWizar/status/2074252623042007103",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074251644955455488/img/Br8xBTtszJGvphYE.jpg",
+            "video_url": "https://x.com/TheRealWizar/status/2074252623042007103/video/1"
+          },
+          "summary": "一段 WoW 写实化改造的视频引发百万播放讨论：如果去掉标志性卡通画风，WoW 还能保持吸引力吗？卡通风格是否承载了不可替代的怀旧价值？",
+          "analysis": "108万播放证明画风讨论是游戏社区的高敏感话题。对开发者的启示：视觉风格是品牌资产，改变需谨慎。",
+          "recommendation": "WoW 写实化改造引发百万播放讨论：卡通画风是否承载不可替代的怀旧价值"
+        },
+        {
+          "idx": "行业 05",
+          "source": "PC Gamer",
+          "tags": [
+            "Marvel Tokon",
+            "PSN",
+            "锁区",
+            "争议"
+          ],
+          "title": "Marvel Tokon 在 Steam 锁定 132 个无 PSN 服务的国家/地区",
+          "en_title": "Marvel Tokon has been region-restricted on Steam in 132 countries that don't have access to PSN.",
+          "full_text": "Marvel Tokon has been region-restricted on Steam in 132 countries that don't have access to PSN.",
+          "author": "pcgamer",
+          "date": "2026-07-07",
+          "likes": 60,
+          "views": 10264,
+          "link": "https://x.com/pcgamer/status/2074501220723773624",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMob3Vob0AAkVeb.jpg"
+          },
+          "summary": "Marvel Tokon 在 Steam 上锁定了 132 个无法使用 PSN 的国家/地区。这延续了 Sony 要求 PC 玩家绑定 PSN 账号的争议策略。",
+          "analysis": "继 Helldivers 2 之后，PSN 锁区策略再次引发争议。对全球发行的多平台游戏是个警示。",
+          "recommendation": "Marvel Tokon Steam 锁定 132 国：无 PSN 服务地区无法购买，延续 Sony 争议策略"
+        },
+        {
+          "idx": "行业 06",
+          "source": "Eurogamer",
+          "tags": [
+            "Sony",
+            "实体光碟",
+            "请愿",
+            "17万签名"
+          ],
+          "title": "反对 Sony 停产实体光碟的请愿已超 17 万签名",
+          "en_title": "The petition against Sony's decision to kill PlayStation physical discs has over 170,000 signatures",
+          "full_text": "The petition against Sony's decision to kill PlayStation physical discs has over 170,000 signatures",
+          "author": "eurogamer",
+          "date": "2026-07-07",
+          "likes": 374,
+          "views": 8403,
+          "link": "https://x.com/eurogamer/status/2074491093962670247",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMoSg1Jb0AAZ_BD.jpg"
+          },
+          "summary": "Sony 宣布 2028 年 1 月停止生产实体光碟后，反对请愿已超过 17 万签名。玩家对数字化转型的抵触情绪强烈。",
+          "analysis": "17 万签名说明实体游戏仍有大量拥护者。但历史表明请愿很少改变大公司的战略决策。",
+          "recommendation": "反对 Sony 停产实体光碟请愿超 17 万签名，玩家对全数字化转型抵触强烈"
+        },
+        {
+          "idx": "行业 07",
+          "source": "Eurogamer",
+          "tags": [
+            "Blood of Dawnwalker",
+            "RPG",
+            "预览",
+            "2026"
+          ],
+          "title": "Blood of Dawnwalker 4 小时试玩：战斗、恋爱、阴谋俱全，有望成为 2026 年度 RPG",
+          "en_title": "After four hours playing The Blood of Dawnwalker, I've seen combat, romance, intrigue - it's got the makings of being 2026's breakout RPG",
+          "full_text": "After four hours playing The Blood of Dawnwalker, I've seen combat, romance, intrigue - it's got the makings of being 2026's breakout RPG",
+          "author": "eurogamer",
+          "date": "2026-07-07",
+          "likes": 22,
+          "views": 3069,
+          "link": "https://x.com/eurogamer/status/2074525725147685111",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMoyI8aWQAAdPx9.jpg"
+          },
+          "summary": "Eurogamer 编辑试玩 Blood of Dawnwalker 4 小时后认为：战斗、恋爱、宫廷阴谋一应俱全，有望成为 2026 年突破性 RPG。",
+          "analysis": "来自 CD Projekt 前员工创立的工作室，主题为中世纪吸血鬼 RPG。媒体正面预览为其上市造势。",
+          "recommendation": "Blood of Dawnwalker 4 小时试玩：战斗+恋爱+阴谋，有望成为 2026 年度 RPG"
         }
       ]
     },
@@ -265,6 +444,83 @@
             "why_notable": "像素美术精美，末世题材+多玩法融合（战斗/探索/种田），700赞热度高",
             "description": "INCYANSPACE 是一款美丽像素风末世开放世界 ARPG。玩家可选多种职业、构建天赋树，在废墟中探索战斗、调达物资，或者放松种田钓鱼。支持日文。\n\nSteam 状态：开发中\n信源：Indie Freaks JP 推文"
           }
+        },
+        {
+          "idx": "游戏 03",
+          "source": "Chris Pattle",
+          "tags": [
+            "农场模拟",
+            "独立开发",
+            "Clarkson's Farm",
+            "像素风"
+          ],
+          "title": "受 Clarkson's Farm 启发的农场模拟器：早期开发但画面已令人满意",
+          "en_title": "After watching Clarkson's Farm I got inspired to create my own farming simulator game. Still early days, mainly been focusing on the artwork but pretty pleased with how it's looking.",
+          "full_text": "after watching clarksons farm I got inspired to create my own farming simulator game.\n\nstill early days, I've mainly been focusing on the artwork but pretty pleased with how it's looking",
+          "author": "chrispattle",
+          "date": "2026-07-06",
+          "likes": 352,
+          "views": 27340,
+          "link": "https://x.com/chrispattle/status/2074277413366694182",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074277274577166336/img/2YmAwdTNKjvyZaBt.jpg",
+            "video_url": "https://x.com/chrispattle/status/2074277413366694182/video/1"
+          },
+          "summary": "开发者受 Clarkson's Farm 启发开始做自己的农场模拟游戏。目前处于早期阶段，主要在打磨美术，视觉效果已经不错。",
+          "analysis": "",
+          "recommendation": "受 Clarkson's Farm 启发的农场模拟器：早期开发阶段美术已令人满意"
+        },
+        {
+          "idx": "游戏 04",
+          "source": "MOUSE: P.I. For Hire",
+          "tags": [
+            "noir",
+            "FPS",
+            "实体版",
+            "复古"
+          ],
+          "title": "MOUSE: P.I. For Hire 实体版 3 天后发售：复古 noir 风格 FPS",
+          "en_title": "3 days until the physical release of MOUSE: P.I. For Hire",
+          "full_text": "3 days until the physical release of MOUSE: P.I. For Hire",
+          "author": "mousethegame",
+          "date": "2026-07-07",
+          "likes": 744,
+          "views": 8456,
+          "link": "https://x.com/mousethegame/status/2074508745204273661",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HMlukZ5aYAAnovb.jpg"
+          },
+          "summary": "复古 noir 风格 FPS 游戏 MOUSE: P.I. For Hire 实体版即将在 3 天后发售。游戏以 1930 年代侦探为主题，画面风格独特。",
+          "analysis": "",
+          "recommendation": "MOUSE: P.I. For Hire 实体版即将发售：1930 年代 noir 风格 FPS，744 赞热度高"
+        },
+        {
+          "idx": "游戏 05",
+          "source": "Static Hour",
+          "tags": [
+            "叙事",
+            "新闻室",
+            "惊悚",
+            "决策"
+          ],
+          "title": "Static Hour：新闻室惊悚游戏，你的决策将推动小镇走向真相或恐慌",
+          "en_title": "Another look at Static Hour, a newsroom thriller where decisions you make can send the town closer to the truth, or deeper into panic.",
+          "full_text": "Another look at Static Hour, a newsroom thriller where decisions you make can send the town closer to the truth, or deeper into panic.",
+          "author": "Barkbyte17",
+          "date": "2026-07-06",
+          "likes": 213,
+          "views": 12103,
+          "link": "https://x.com/Barkbyte17/status/2074219236948320262",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074216397979222016/img/s6W39JR5_wruVpkj.jpg",
+            "video_url": "https://x.com/Barkbyte17/status/2074219236948320262/video/1"
+          },
+          "summary": "Static Hour 是一款新闻室惊悚游戏，玩家的决策将决定小镇是走向真相还是陷入恐慌。",
+          "analysis": "",
+          "recommendation": "Static Hour：新闻室惊悚游戏，你的决策推动小镇走向真相或恐慌"
         }
       ]
     },
@@ -299,6 +555,58 @@
           "summary": "开源程序化建筑生成器，将 Blender 几何节点图逆向工程到 TypeScript。支持 GPU 实例化、实时雪/雨/湿润表面效果。代码已开源。",
           "analysis": "将 Blender 节点工作流移植到 Web 是有价值的技术方向。对需要在浏览器中生成城市场景的项目有直接参考价值。",
           "recommendation": "开源程序化建筑生成器：Blender 几何节点逆向到 TypeScript，GPU 实例化+实时天气"
+        },
+        {
+          "idx": "工具 02",
+          "source": "hexianWeb",
+          "tags": [
+            "Three.js",
+            "LEGO",
+            "程序化地形",
+            "WebGPU"
+          ],
+          "title": "Three.js + LEGO + 程序化地形：可飞行穿越的乐高世界",
+          "en_title": "Three.js + LEGO + procedural terrain = A LEGO world you can fly through. Three.js Journey challenge project.",
+          "full_text": "Three.js + LEGO + procedural terrain = A LEGO world you can fly through\n\nI joined the Three.js Journey challenge and honestly had a great time building this project.",
+          "author": "hexian37496562",
+          "date": "2026-07-06",
+          "likes": 758,
+          "views": 28874,
+          "link": "https://x.com/hexian37496562/status/2073966506141270227",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2073965293257601025/img/rdTjxtuii5PTWdTQ.jpg",
+            "video_url": "https://x.com/hexian37496562/status/2073966506141270227/video/1"
+          },
+          "summary": "Three.js Journey 挑战项目：将 LEGO 风格与程序化地形结合，创造可飞行穿越的乐高世界。代码已开源。",
+          "analysis": "程序化地形 + 风格化渲染（LEGO）是 Web 3D 的有趣方向。对需要做地形编辑器的项目有参考价值。",
+          "recommendation": "Three.js + LEGO + 程序化地形：可飞行穿越的乐高世界，Three.js Journey 挑战作品"
+        },
+        {
+          "idx": "工具 03",
+          "source": "Shaders Bible",
+          "tags": [
+            "Godot",
+            "Shader",
+            "教程",
+            "收藏版"
+          ],
+          "title": "Godot Shaders Bible 收藏版发布：Godot 引擎 Shader 编程完整参考书",
+          "en_title": "The Godot Shaders Bible Collector's Edition",
+          "full_text": "The Godot Shaders Bible Collector's Edition\n#GodotEngine",
+          "author": "ushadersbible",
+          "date": "2026-07-07",
+          "likes": 395,
+          "views": 13259,
+          "link": "https://x.com/ushadersbible/status/2074324095596900815",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074323874339078144/img/Xpemd8ZSeSarK6Z0.jpg",
+            "video_url": "https://x.com/ushadersbible/status/2074324095596900815/video/1"
+          },
+          "summary": "Godot Shaders Bible 推出收藏版，是 Godot 引擎 Shader 编程的完整参考书。",
+          "analysis": "Godot 生态的教育资源持续丰富，对选择 Godot 的独立开发者有直接价值。",
+          "recommendation": "Godot Shaders Bible 收藏版发布：Godot 引擎 Shader 编程完整参考"
         }
       ]
     }
