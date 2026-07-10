@@ -993,7 +993,7 @@ function renderEditorialTopNav() {
   const activeClass = id => activeTab === id ? 'on is-feature' : '';
   const tab = (id, label, count, action = `switchTab('${id}')`) => `<button type="button" class="ed-category-tab ${activeClass(id)}" data-nav="${id}" onclick="${action}">${escapeHtml(label)}${count === null ? '' : `<span>${count}</span>`}</button>`;
   return `${tab('ai', 'AI科技热点', aiCount)}
-    ${tab('industry', '游戏行业动态', countById('industry'))}
+    ${tab('industry', '游戏市场动态', countById('industry'))}
     ${tab('indie', '新游推文', countById('indie'))}
     <button type="button" class="ed-category-tab ed-brand ${activeClass('digest')}" data-nav="digest" onclick="switchTab('digest')" aria-label="返回日精选">DAILY</button>
     ${tab('weekly', '推特周报', null)}
