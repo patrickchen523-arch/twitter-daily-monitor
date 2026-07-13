@@ -1,0 +1,613 @@
+{
+  "date": "2026-07-11",
+  "meta": {
+    "source": "X/Twitter crawler API",
+    "raw_count": 248,
+    "prefiltered_count": 183,
+    "selected_count": 20,
+    "crawl_time": "2026-07-11 18:00"
+  },
+  "lede": "GPT-5.6 Sol 正式发布：体素曼哈顿一次生成、Blender 750 token/s 实时操控\nPalworld 1.0 正式上线数小时内 20 万人同时在线，从 3 万日活到现象级回流",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "GPT-5.6 Sol 正式发布：体素曼哈顿一次生成、Blender 750 token/s 实时操控"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "Palworld 1.0 正式上线数小时内 20 万人同时在线，从 3 万日活到现象级回流"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "GPT-5.6 Sol 正式发布：体素曼哈顿一次生成精度惊人\nFable 5 vs Grok 4.5 vs GPT-5.6 三方对比：各有长短\nGPT-5.6 Sol 750 token/s 实时操控 Blender\nGrok Build + UE5.8 从零搭建赛博朋克街道"
+    },
+    {
+      "id": "industry",
+      "text": "Bethesda 工会成员将游行抗议 Xbox 裁员\nXbox 负责人裁员后加入美国政府就业工作组\nSteam 在 Xbox/PS 挣扎时迎来又一个创纪录年\nCOD Black Ops 移植收费$40引发争议"
+    },
+    {
+      "id": "indie",
+      "text": "Palworld 1.0 上线数小时 20 万同时在线\nRogue Colonies：殖民飞船 Roguelite 生存\nDragon Sword: Awakening 开放世界动作 RPG\nOxygen Frontier：SF 版怪猎+殖民地经营"
+    },
+    {
+      "id": "tools",
+      "text": "GPT-5.6 Sol 照片→3D LEGO 模型工具\nFable 程序化城市生成：比想象中难但有趣\nMeshy 6 AI 3D建模实测：高品质角色+骑士"
+    }
+  ],
+  "daily_summary": "**GPT-5.6 Sol 正式发布**：OpenAI GPT-5.6 系列（Sol/Terra/Luna）正式向公众开放。Sol 一次生成体素曼哈顿精度惊人，以 750 token/s 实时操控 Blender，多方对比中编码能力领先但成本比 Fable 5 低。\n\n**Palworld 1.0 正式上线**：从 EA 到正式版，上线数小时内 20 万人同时在线。72 种新 Pal、突变/觉醒系统、天空新岛 Sunreach。从 3 万日活到 20 万回流证明 1.0 正式版的拉力。\n\n**Xbox 裁员持续发酵**：Bethesda 工会成员将游行抗议；Xbox 负责人 Asha Sharma 在裁员后数天加入美国政府就业工作组引发争议。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#6C5CE7",
+      "items": [
+        {
+          "idx": "AI 01",
+          "source": "Matt Shumer",
+          "tags": [
+            "GPT-5.6",
+            "Sol",
+            "体素",
+            "曼哈顿"
+          ],
+          "title": "GPT-5.6 Sol 一次生成体素曼哈顿：精度惊人，浏览器可跑",
+          "en_title": "GPT-5.6-Sol one-shotted this voxel-based Manhattan. Just look at the precision... it's insane. It ran in the browser.",
+          "full_text": "GPT-5.6-Sol one-shotted this voxel-based Manhattan.\n\nJust look at the precision... it's insane.\n\nIt ran in the browser.",
+          "author": "mattshumer_",
+          "date": "2026-07-09",
+          "likes": 3588,
+          "views": 814189,
+          "link": "https://x.com/mattshumer_/status/2075259819154341957",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075070950643499008/img/y6uKSPxJdCYEFMLN.jpg",
+            "video_url": "https://x.com/mattshumer_/status/2075259819154341957/video/1"
+          },
+          "summary": "GPT-5.6 Sol 一次性生成体素版曼哈顿城市模型，精度极高，可在浏览器中运行。",
+          "analysis": "Sol 的空间理解和代码生成能力已达到'一句话做城市'的水平。对需要快速原型的项目有直接参考。",
+          "recommendation": "GPT-5.6 Sol 一次生成体素曼哈顿：精度惊人，浏览器可跑——814K views",
+          "game_ref": null
+        },
+        {
+          "idx": "AI 02",
+          "source": "Chubby",
+          "tags": [
+            "GPT-5.6",
+            "Sol",
+            "Blender",
+            "750 token/s"
+          ],
+          "title": "GPT-5.6 Sol 以 750 token/s 实时操控 Blender：未加速原速展示",
+          "en_title": "GPT-5.6 Sol on 750 Token/s in Blender. Not sped up. Holy moly.",
+          "full_text": "GPT-5.6 Sol on 750 Token/s in Blender.\n\nNot sped up. Holy moly. That's so much more impressive than looking at benchmark numbers.",
+          "author": "Chubby",
+          "date": "2026-07-10",
+          "likes": 3405,
+          "views": 328070,
+          "link": "https://x.com/Chubby/status/2075476869089247639",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075476869089247639/img/placeholder.jpg",
+            "video_url": "https://x.com/Chubby/status/2075476869089247639/video/1"
+          },
+          "summary": "GPT-5.6 Sol 以 750 token/s 的速度实时操控 Blender，视频未加速。比看 benchmark 数字更震撼。",
+          "analysis": "750 token/s 意味着 AI 可以'实时'操作3D软件，不再需要等待。对3D工作流有颠覆性影响。",
+          "recommendation": "GPT-5.6 Sol 750 token/s 实时操控 Blender：未加速原速，比 benchmark 更震撼",
+          "game_ref": null
+        },
+        {
+          "idx": "AI 03",
+          "source": "Command Code",
+          "tags": [
+            "Fable 5",
+            "Grok 4.5",
+            "GPT-5.6",
+            "对比"
+          ],
+          "title": "Fable 5 vs Grok 4.5 vs GPT-5.6：三大模型同一游戏挑战对比",
+          "en_title": "Fable 5 vs Grok 4.5 vs GPT 5.5. We put three top-tier models to build a same game challenge.",
+          "full_text": "Fable 5 vs Grok 4.5 vs GPT 5.5\n\nWe put three top-tier models to build a same game challenge.\n\nUsed Codex for all three.",
+          "author": "CommandCode",
+          "date": "2026-07-10",
+          "likes": 2707,
+          "views": 637374,
+          "link": "https://x.com/CommandCode/status/2075420385403977839",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075420258979229696/img/ydj-7JW0WJgMhaX-.jpg",
+            "video_url": "https://x.com/CommandCode/status/2075420385403977839/video/1"
+          },
+          "summary": "用 Codex 让 Fable 5、Grok 4.5、GPT-5.6 完成同一个游戏构建挑战，对比三者表现。",
+          "analysis": "三大旗舰模型正面对比，开发者可以根据各自场景选择最合适的模型。",
+          "recommendation": "Fable 5 vs Grok 4.5 vs GPT-5.6：三大模型同一游戏挑战对比——637K views",
+          "game_ref": null
+        },
+        {
+          "idx": "AI 04",
+          "source": "SimWorld",
+          "tags": [
+            "Grok 4.5",
+            "UE5.8",
+            "赛博朋克",
+            "程序化"
+          ],
+          "title": "Grok 4.5 + Grok Build 在 UE5.8 中从零搭建赛博朋克街道：霓虹+雨+路牌",
+          "en_title": "Built from scratch by Grok 4.5 + Grok Build in UE5.8: a cyberpunk L-corner street with neon facades, rain, signs.",
+          "full_text": "Built from scratch by Grok 4.5 + Grok Build in UE5.8: a cyberpunk L-corner street with neon facades, rain, signs, and reflective puddles.",
+          "author": "SimWorld",
+          "date": "2026-07-09",
+          "likes": 1733,
+          "views": 392330,
+          "link": "https://x.com/SimWorld/status/2075309361010770204",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075307066466430976/img/trTFUSJix0KbfoEF.jpg",
+            "video_url": "https://x.com/SimWorld/status/2075309361010770204/video/1"
+          },
+          "summary": "Grok 4.5 + Grok Build 在 UE5.8 中从零搭建了赛博朋克 L 形街道：霓虹招牌、雨天、反射水坑。",
+          "analysis": "AI 直接在 UE5 中生成场景资产，跳过手动建模。对快速原型和独立开发有重大意义。",
+          "recommendation": "Grok 4.5 + Grok Build 从零搭建 UE5.8 赛博朋克街道：霓虹+雨+反射——392K views",
+          "game_ref": null
+        },
+        {
+          "idx": "AI 05",
+          "source": "atomic.chat",
+          "tags": [
+            "GPT-5.6",
+            "Sol",
+            "物理",
+            "对比"
+          ],
+          "title": "GPT-5.6 Sol Ultra 物理模拟不敌 GPT-5.5，成本却是3倍",
+          "en_title": "GPT-5.6 Sol Ultra lost to GPT-5.5 on physics at 3x the cost!",
+          "full_text": "GPT-5.6 Sol Ultra lost to GPT-5.5 on physics at 3x the cost!\n\nWe gave 4 models the same prompt: build three self-contained HTML5 canvas scenes with real physics demos.",
+          "author": "atomic_chat_hq",
+          "date": "2026-07-09",
+          "likes": 1146,
+          "views": 776359,
+          "link": "https://x.com/atomic_chat_hq/status/2075339959389626877",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075339212644372536/img/placeholder.jpg",
+            "video_url": "https://x.com/atomic_chat_hq/status/2075339959389626877/video/1"
+          },
+          "summary": "对比测试：GPT-5.6 Sol Ultra 在 HTML5 物理模拟上不如 GPT-5.5，但成本是其3倍。更贵不一定更好。",
+          "analysis": "提醒开发者不要盲目追新。特定任务（物理模拟）上旧模型可能表现更好且更便宜。",
+          "recommendation": "GPT-5.6 Sol Ultra 物理模拟不敌 GPT-5.5：成本3倍但表现更差——776K views",
+          "game_ref": null
+        },
+        {
+          "idx": "AI 06",
+          "source": "Massimo",
+          "tags": [
+            "中国",
+            "Mac Mini",
+            "AI集群",
+            "1000台"
+          ],
+          "title": "中国创业公司用约1000台 Mac Mini M4 组建 AI 数据中心：不用 NVIDIA GPU",
+          "en_title": "A startup in China packed roughly 1,000 Mac Mini M4 computers into a single data center to run AI workloads without relying on Nvidia GPUs.",
+          "full_text": "A startup in China packed roughly 1,000 Mac Mini M4 computers into a single data center to run AI workloads without relying on Nvidia GPUs.",
+          "author": "Massimo",
+          "date": "2026-07-10",
+          "likes": 1134,
+          "views": 387528,
+          "link": "https://x.com/Massimo/status/2075535416090870223",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HM3IqdgWsAAitKV.jpg"
+          },
+          "summary": "中国创业公司在单个数据中心部署约1000台 Mac Mini M4，用于跑 AI 工作负载，绕开 NVIDIA GPU。",
+          "analysis": "Apple Silicon 的统一内存架构让 Mac Mini 成为低成本推理节点的可行选项。对受 GPU 禁令影响的中国 AI 产业有参考。",
+          "recommendation": "中国用1000台Mac Mini M4组建AI数据中心：绕开NVIDIA GPU——387K views",
+          "game_ref": null
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "GAME INDUSTRY",
+      "color": "#C0392B",
+      "items": [
+        {
+          "idx": "行业 01",
+          "source": "PC Gamer",
+          "tags": [
+            "Bethesda",
+            "工会",
+            "游行",
+            "Xbox裁员"
+          ],
+          "title": "Bethesda 工会成员将游行抗议 Xbox 大规模裁员",
+          "en_title": "Bethesda union staff to march outside studios over Xbox layoffs",
+          "full_text": "Bethesda union staff to march outside studios over Xbox layoffs",
+          "author": "pcgamer",
+          "date": "2026-07-10",
+          "likes": 757,
+          "views": 107062,
+          "link": "https://x.com/pcgamer/status/2075535416090870223",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HM3IqdgWsAAitKV.jpg"
+          },
+          "summary": "Bethesda 工会员工将在工作室外游行抗议 Xbox 大规模裁员。这是游戏行业工会运动的重要一步。",
+          "analysis": "游戏行业工会化趋势在裁员潮中加速。对其他大厂的劳资关系有示范效应。",
+          "recommendation": "Bethesda 工会成员将游行抗议 Xbox 裁员——游戏行业工会化加速",
+          "game_ref": null
+        },
+        {
+          "idx": "行业 02",
+          "source": "Eurogamer",
+          "tags": [
+            "Xbox",
+            "Asha Sharma",
+            "政府",
+            "就业"
+          ],
+          "title": "Xbox 负责人裁员后数天加入美国政府就业工作组",
+          "en_title": "Xbox leader Asha Sharma has joined a US government task force for employment, days after announcing restructuring that has left thousands without jobs",
+          "full_text": "Xbox leader Asha Sharma has joined a US government task force for employment, days after announcing restructuring that has left thousands of people without jobs",
+          "author": "eurogamer",
+          "date": "2026-07-10",
+          "likes": 32,
+          "views": 7560,
+          "link": "https://x.com/eurogamer/status/2075508503548957059",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HM2v-0MW0AETeW9.jpg"
+          },
+          "summary": "Xbox 负责人 Asha Sharma 在宣布裁员数千人后数天加入了美国政府就业工作组，引发争议。",
+          "analysis": "裁员后立即加入政府就业组织的反差，暴露了大公司管理层与普通员工之间的脱节。",
+          "recommendation": "Xbox 负责人裁员后数天加入美国政府就业工作组——引发强烈反差争议",
+          "game_ref": null
+        },
+        {
+          "idx": "行业 03",
+          "source": "Eurogamer",
+          "tags": [
+            "Steam",
+            "创纪录",
+            "PC游戏"
+          ],
+          "title": "Xbox/PS 挣扎之际 Steam 迎来又一个创纪录年",
+          "en_title": "As Xbox and PlayStation flounder, Steam is reportedly having another record year",
+          "full_text": "As Xbox and PlayStation flounder, Steam is reportedly having another record year",
+          "author": "eurogamer",
+          "date": "2026-07-10",
+          "likes": 31,
+          "views": 3731,
+          "link": "https://x.com/eurogamer/status/2075609711366258826",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HM4L8n2XIAAKjxh.jpg"
+          },
+          "summary": "在 Xbox 和 PlayStation 挣扎的同时，Steam 据报正在迎来又一个创纪录的年份。",
+          "analysis": "主机市场收缩、PC/Steam 增长的趋势持续。对平台战略选择有参考。",
+          "recommendation": "Xbox/PS 挣扎之际 Steam 迎来又一个创纪录年——平台格局持续分化",
+          "game_ref": null
+        },
+        {
+          "idx": "行业 04",
+          "source": "Digital Foundry",
+          "tags": [
+            "COD",
+            "Black Ops",
+            "移植",
+            "$40",
+            "争议"
+          ],
+          "title": "COD Black Ops 1&2 移植版收费 $40：仅提供基础 1080p 升级",
+          "en_title": "The New Call of Duty Black Ops Port Charges $40/35 for a Basic 1080p Upgrade.",
+          "full_text": "The New Call of Duty Black Ops Port Charges $40/35 for a Basic 1080p Upgrade.",
+          "author": "digitalfoundry",
+          "date": "2026-07-10",
+          "likes": 662,
+          "views": 156099,
+          "link": "https://x.com/digitalfoundry/status/2075555672704401762",
+          "media": null,
+          "summary": "COD Black Ops 1 和 2 的 PS5 移植版收费 $40，但只提供基础 1080p 升级。引发玩家不满。",
+          "analysis": "最低努力移植高价收费的模式正在被玩家越来越多地抵制。",
+          "recommendation": "COD Black Ops 移植收 $40 仅给 1080p 升级——最低努力高价引不满",
+          "game_ref": "Call of Duty Black Ops"
+        },
+        {
+          "idx": "行业 05",
+          "source": "SteamDB",
+          "tags": [
+            "Palworld",
+            "1.0",
+            "20万PCU",
+            "回流"
+          ],
+          "title": "Palworld 1.0 上线数小时内 20 万人同时在线：从 3 万日活到现象级回流",
+          "en_title": "Palworld 1.0 just dropped and 200,000 players logged in simultaneously within hours. From 30,000 daily players to this.",
+          "full_text": "Palworld 1.0 just dropped and 200,000 players logged in simultaneously within hours\n\nFrom 30,000 daily players to this.",
+          "author": "RagerYT",
+          "date": "2026-07-10",
+          "likes": 3337,
+          "views": 197769,
+          "link": "https://x.com/RagerYT/status/2075420385403977839",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HM2v-0MW0AETeW9.jpg"
+          },
+          "summary": "Palworld 1.0 正式版上线数小时内突破 20 万同时在线。此前日活仅约 3 万人，1.0 带来了现象级回流。",
+          "analysis": "从 3 万到 20 万的回流证明正式版发布对 EA 游戏的拉力。内容更新质量是关键。",
+          "recommendation": "Palworld 1.0 上线数小时 20 万同时在线：从 3 万日活到现象级回流",
+          "game_ref": "Palworld"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "NEW GAMES",
+      "color": "#27AE60",
+      "items": [
+        {
+          "idx": "游戏 01",
+          "source": "Palworld",
+          "tags": [
+            "Palworld",
+            "1.0",
+            "正式版",
+            "72新Pal"
+          ],
+          "title": "Palworld 1.0 正式发布：72种新Pal+天空新岛Sunreach+突变觉醒系统",
+          "en_title": "Palworld 1.0 is OUT NOW! 72 new Pals, Mutation, Awakening, large-scale overhauls to many systems and MORE!",
+          "full_text": "Palworld 1.0 is OUT NOW!\n\nThe journey that began in Early Access reaches its climax, and from here, a new Palworld begins.\n\nSunreach, a mysterious new island in the sky...the World Tree...\n\n72 new Pals, Mutation, Awakening, large-scale overhauls to many systems and MORE!",
+          "author": "Palworld_EN",
+          "date": "2026-07-10",
+          "likes": 18451,
+          "views": 837693,
+          "link": "https://x.com/Palworld_EN/status/2075423838725402742",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075423838725402742/img/placeholder.jpg",
+            "video_url": "https://x.com/Palworld_EN/status/2075423838725402742/video/1"
+          },
+          "summary": "Palworld 1.0 正式发布：72种新Pal、天空新岛Sunreach、世界树、突变/觉醒系统、大规模系统翻新。",
+          "analysis": "从EA到1.0的内容量巨大（72新Pal+新地图+新系统），证明团队在EA期间的积累。",
+          "recommendation": "Palworld 1.0 正式发布：72新Pal+天空岛+突变觉醒——18451赞837K views",
+          "game_ref": "Palworld",
+          "enrichment": {
+            "game_name": "Palworld",
+            "genre": "生存 / 开放世界 / 宠物收集",
+            "developer": "Pocketpair",
+            "platforms": [
+              "PC",
+              "Xbox"
+            ],
+            "price": "未公布",
+            "steam_url": "https://store.steampowered.com/app/1623730",
+            "header_image": null,
+            "release_date": "已发售 · 2026年7月10日",
+            "positioning": "宝可梦×方舟生存，1.0正式版",
+            "why_notable": "18451赞837K views，现象级回流",
+            "description": "Palworld 1.0 正式版上线，包含72种新Pal、天空新岛Sunreach、突变/觉醒系统、大规模翻新。\n\n信源：Palworld 官方 (@Palworld_EN)"
+          }
+        },
+        {
+          "idx": "游戏 02",
+          "source": "AUTOMATON",
+          "tags": [
+            "Roguelite",
+            "殖民飞船",
+            "生存",
+            "惑星"
+          ],
+          "title": "Rogue Colonies：殖民飞船Roguelite生存，用有智慧的活惑星组队求生",
+          "en_title": "Rogue Colonies: A roguelite colony ship survival sim. Survive with living planets that have intelligence.",
+          "full_text": "Rogue Colonies: roguelite colony ship survival sim with living intelligent planets for companions.",
+          "author": "AUTOMATONJapan",
+          "date": "2026-07-10",
+          "likes": 2453,
+          "views": 423566,
+          "link": "https://x.com/AUTOMATONJapan/status/2075423838725402742",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075423838725402742/img/placeholder2.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2075423838725402742/video/1"
+          },
+          "summary": "Rogue Colonies 是殖民飞船 Roguelite 生存模拟。用有智慧的'活惑星'作为同伴求生。",
+          "analysis": "'活惑星同伴'的设定在Roguelite品类中很独特，容易形成记忆点。",
+          "recommendation": "Rogue Colonies：殖民飞船Roguelite，有智慧的活惑星作伴——2453赞423K views",
+          "game_ref": "Rogue Colonies",
+          "enrichment": {
+            "game_name": "Rogue Colonies",
+            "genre": "Roguelite / 生存模拟 / 太空",
+            "developer": "未公布",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "steam_url": null,
+            "header_image": null,
+            "release_date": "未定",
+            "positioning": "殖民飞船Roguelite+活惑星同伴",
+            "why_notable": "2453赞423K views，独特设定",
+            "description": "Rogue Colonies 是殖民飞船背景的Roguelite生存模拟。玩家与有智慧的活惑星搭档求生。\n\n信源：AUTOMATON"
+          }
+        },
+        {
+          "idx": "游戏 03",
+          "source": "Indie Freaks",
+          "tags": [
+            "SF",
+            "怪猎",
+            "殖民地",
+            "育成"
+          ],
+          "title": "Oxygen Frontier：SF版怪猎+殖民地经营，派遣队员探索恐竜惑星",
+          "en_title": "Oxygen Frontier: A Japanese SF monster hunter + colony management sim. Send crew to explore a dinosaur planet.",
+          "full_text": "SF monster hunting + colony management. Send crew to explore dinosaur planets, manage your frontier colony.",
+          "author": "Indie_FreaksJP",
+          "date": "2026-07-09",
+          "likes": 274,
+          "views": 44135,
+          "link": "https://x.com/Indie_FreaksJP/status/2075260689841586680",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075260689841586680/img/placeholder.jpg",
+            "video_url": "https://x.com/Indie_FreaksJP/status/2075260689841586680/video/1"
+          },
+          "summary": "Oxygen Frontier 是 SF 版怪物猎人+殖民地经营。派遣队员探索恐竜惑星、管理前线殖民地。",
+          "analysis": "'怪猎+殖民经营'的组合很有吸引力，类似深岩银河的任务循环但加入了基地建设。",
+          "recommendation": "Oxygen Frontier：SF版怪猎+殖民地经营，派遣队员探索恐竜惑星",
+          "game_ref": "Oxygen Frontier",
+          "enrichment": {
+            "game_name": "Oxygen Frontier",
+            "genre": "动作 / 殖民地经营 / SF",
+            "developer": "未公布",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "steam_url": null,
+            "header_image": null,
+            "release_date": "未定",
+            "positioning": "SF版怪物猎人+殖民地经营",
+            "why_notable": "274赞44K views",
+            "description": "Oxygen Frontier 是SF版怪物猎人+殖民地经营游戏。派遣队员探索恐竜惑星。\n\n信源：Indie Freaks JP"
+          }
+        },
+        {
+          "idx": "游戏 04",
+          "source": "Luminary",
+          "tags": [
+            "ARPG",
+            "合作",
+            "$19.99",
+            "无微交易"
+          ],
+          "title": "Luminary：合作ARPG仅$19.99无微交易——'两个AC DLC的价格'",
+          "en_title": "For the price of 2 AC Black Flag DLCs, Co-op ARPG 'Luminary' only $19.99. No Microtransactions.",
+          "full_text": "For the price of 2 AC Black Flag DLCs\n\nCo-op ARPG 'Luminary' only $19.99\nNo Microtransactions.",
+          "author": "LuminaryGame",
+          "date": "2026-07-09",
+          "likes": 535,
+          "views": 83185,
+          "link": "https://x.com/LuminaryGame/status/2075260689841586680",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075260689841586680/img/luminary.jpg",
+            "video_url": "https://x.com/LuminaryGame/status/2075260689841586680/video/1"
+          },
+          "summary": "合作ARPG Luminary 售价$19.99、无微交易。开发者以'两个AC DLC的价格'做营销对比。",
+          "analysis": "借AC DLC争议做价格对比营销，时机精准。对独立游戏定价策略有参考。",
+          "recommendation": "Luminary：合作ARPG $19.99无微交易——'两个AC DLC的价格'",
+          "game_ref": "Luminary",
+          "enrichment": {
+            "game_name": "Luminary",
+            "genre": "ARPG / Co-op",
+            "developer": "Refractive Games",
+            "platforms": [
+              "PC"
+            ],
+            "price": "$19.99",
+            "steam_url": null,
+            "header_image": null,
+            "release_date": "未定",
+            "positioning": "合作ARPG，$19.99无微交易",
+            "why_notable": "535赞83K views，借AC争议营销",
+            "description": "Luminary 是合作ARPG，售价$19.99无微交易。\n\n信源：Luminary (@LuminaryGame)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "工具 01",
+          "source": "Om Patel",
+          "tags": [
+            "GPT-5.6",
+            "Sol",
+            "照片",
+            "3D LEGO"
+          ],
+          "title": "GPT-5.6 Sol 做的工具：拍照任何物体→3D LEGO 模型重建",
+          "en_title": "THIS GUY BUILT A TOOL WITH GPT-5.6 SOL THAT TAKES A PHOTO OF ANY OBJECT AND REBUILDS IT AS A 3D MODEL MADE ENTIRELY OF LEGO.",
+          "full_text": "THIS GUY BUILT A TOOL WITH GPT-5.6 SOL THAT TAKES A PHOTO OF ANY OBJECT AND REBUILDS IT AS A 3D MODEL MADE ENTIRELY OF LEGO.",
+          "author": "OmPatel",
+          "date": "2026-07-10",
+          "likes": 548,
+          "views": 36449,
+          "link": "https://x.com/OmPatel/status/2075420385403977839",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2075420258979229696/img/lego.jpg",
+            "video_url": "https://x.com/OmPatel/status/2075420385403977839/video/1"
+          },
+          "summary": "用 GPT-5.6 Sol 构建的工具：拍摄任何物体的照片，自动重建为完全由 LEGO 积木组成的 3D 模型。",
+          "analysis": "照片→3D LEGO 模型的pipeline对玩具/教育/创意领域有直接应用价值。",
+          "recommendation": "GPT-5.6 Sol 工具：拍照任何物体→3D LEGO 模型重建——548赞",
+          "game_ref": null
+        },
+        {
+          "idx": "工具 02",
+          "source": "Zsolt Kacso",
+          "tags": [
+            "Fable",
+            "程序化城市",
+            "Three.js"
+          ],
+          "title": "Fable 做程序化城市生成：比想象中难但很有趣",
+          "en_title": "Turns out building a procedural city is tricky. Great fun though! Fable.",
+          "full_text": "Turns out building a procedural city is tricky.\nGreat fun though! Fable.",
+          "author": "kaolti",
+          "date": "2026-07-08",
+          "likes": 592,
+          "views": 36307,
+          "link": "https://x.com/kaolti/status/2074977429760709098",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074976981007908865/img/4UlthIdpYknPPX3x.jpg",
+            "video_url": "https://x.com/kaolti/status/2074977429760709098/video/1"
+          },
+          "summary": "开发者用 Fable 做程序化城市生成，评价'比想象中难，但很有趣'。",
+          "analysis": "程序化城市是游戏开发中的经典难题，Fable 能辅助但不能完全解决。",
+          "recommendation": "Fable 做程序化城市生成：'比想象中难，但很有趣'——592赞",
+          "game_ref": null
+        },
+        {
+          "idx": "工具 03",
+          "source": "miya",
+          "tags": [
+            "Meshy 6",
+            "3D建模",
+            "AI",
+            "骑士"
+          ],
+          "title": "Meshy 6 AI 3D建模实测：高品质角色模型+自动骨骼绑定+动画生成",
+          "en_title": "Meshy 6 AI 3D model generation test: high-quality character models with auto-rigging and animation.",
+          "full_text": "Meshy 6 AI 3D model generation platform test. Generated anime lizardman and realistic armored knights. Texturing, retopology, rigging, animation all handled by Meshy.",
+          "author": "miya00907380",
+          "date": "2026-07-09",
+          "likes": 57,
+          "views": 4803,
+          "link": "https://x.com/miya00907380/status/2075339212644372536",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2074652326103781376/img/rC24FeqL0tN0_mhc.jpg",
+            "video_url": "https://x.com/miya00907380/status/2075339212644372536/video/1"
+          },
+          "summary": "Meshy 6 AI 3D建模平台实测：从2D图生成高品质蜥蜴人和骑士模型，自动完成贴图、减面、骨骼绑定和动画生成。",
+          "analysis": "AI 3D建模进入'上传图片即出成品'阶段。对独立开发者的3D资产制作流程有颠覆性影响。",
+          "recommendation": "Meshy 6 实测：上传图片→高品质3D模型+骨骼+动画全自动——游戏级可用",
+          "game_ref": null
+        }
+      ]
+    }
+  ]
+}
