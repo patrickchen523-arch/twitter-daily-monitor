@@ -1,0 +1,537 @@
+{
+  "meta": {
+    "date": "2026-07-15",
+    "selected_count": 23,
+    "source_count": 213,
+    "prefilter_count": 155
+  },
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "title": "GPT-5.6 Sol + Blender MCP：零基础完成专业级3D渲染",
+          "author": "Prasenjit",
+          "date": "2026-07-13",
+          "likes": 8587,
+          "views": 1077044,
+          "link": "https://x.com/prasenx/status/2076631428926972177",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2076630578103980032/img/kKJp0RX5kIkYlRXC.jpg"
+          },
+          "summary": "开发者Prasenjit展示了用GPT-5.6 Sol在Cursor中调用Blender MCP，从未打开过Blender的情况下，一句话指令完成了逼真浮空MacBook的3D建模和渲染全流程。",
+          "analysis": "这是AI+3D创作工具链成熟度的标志性案例。通过MCP协议将GPT-5.6与Blender连接，大幅降低了专业3D工具的使用门槛。对游戏美术团队而言，概念验证和快速原型制作的效率将获得质的提升。",
+          "recommendation": "GPT-5.6+Blender MCP让零基础用户一句话完成专业3D渲染，创作门槛再降一个量级"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "title": "Fable 5一天半做完一个AR地理游戏",
+          "author": "Kristian Muniz",
+          "date": "2026-07-13",
+          "likes": 1001,
+          "views": 428931,
+          "link": "https://x.com/KristianMuniz/status/2076486538351783943",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2076475552274284544/img/vdbeXUATIqeOQJK1.jpg"
+          },
+          "summary": "独立开发者Kristian Muñiz用Fable 5在一天半时间内完成了一款名为Blobtrotter的AR地理平台跳跃游戏，玩家在真实地图上收集blob碎片。",
+          "analysis": "Fable 5将AI辅助游戏开发的速度推到新极限——从概念到可玩原型仅36小时。这验证了AI不仅能写代码，还能理解游戏设计逻辑并快速迭代。对独立开发者而言是生产力革命。",
+          "recommendation": "Fable 5让单人36小时从零做出可玩AR游戏，AI辅助开发进入实用期"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "title": "如果Codex是中国人做的产品：中外AI工具差异引热议",
+          "author": "Max For AI",
+          "date": "2026-07-13",
+          "likes": 1962,
+          "views": 311208,
+          "link": "https://x.com/MaxForAI/status/2076585143448584660",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNGCsSlbYAAp4uS.jpg"
+          },
+          "summary": "Max For AI发帖对比假设Codex由中国团队开发的产品化差异，引发大量讨论。涉及UI设计理念、商业化策略、产品包装等中外AI产品思路差异。",
+          "analysis": "这条推文以戏谑视角揭示了中美AI产品化策略的分野：美国侧重基础设施和API，中国侧重应用层包装和用户引导。反映了当前AI行业\"同一技术、不同产品哲学\"的格局。",
+          "recommendation": "一张图引爆中外AI产品差异讨论，揭示同一技术下的产品哲学分野"
+        },
+        {
+          "idx": "AI科技热点 04",
+          "title": "Aaron Levie：AI行业结构性预测——前沿智能持续领跑",
+          "author": "Aaron Levie",
+          "date": "2026-07-14",
+          "likes": 281,
+          "views": 45364,
+          "link": "https://x.com/levie/status/2076882332821373381",
+          "media": {
+            "type": "text"
+          },
+          "summary": "Box CEO Aaron Levie发表长文预测AI行业结构性趋势：前沿智能持续突破、头部实验室集中最好的数据和算力、竞争压力让单任务成本下降、但总需求不断增加使整体支出上升。",
+          "analysis": "Levie的框架精准概括了AI行业\"单价下降+总量上升\"的悖论。对游戏行业的启示：AI工具成本会持续降低，但复杂应用场景的总投入不减——关键在于找到ROI最高的应用点。",
+          "recommendation": "Box CEO系统预测AI行业走向：单价降、总量升，前沿实验室持续碾压"
+        },
+        {
+          "idx": "AI科技热点 05",
+          "title": "前沿模型做管理者、低成本模型做执行者：AI路由降本实验",
+          "author": "Aaron Levie",
+          "date": "2026-07-14",
+          "likes": 209,
+          "views": 48276,
+          "link": "https://x.com/levie/status/2076839463410671637",
+          "media": {
+            "type": "text"
+          },
+          "summary": "Aaron Levie分享模型路由降本实验：用Fable等前沿模型做\"管理者\"指定约束和目标，低成本模型做\"执行者\"完成任务。实验发现高效委派反而降低了总成本。",
+          "analysis": "\"Manager-Worker\"分层架构将成为企业AI部署的标准模式。前沿模型负责理解、规划和质控，廉价模型负责批量执行——这与游戏开发中Lead+Junior的团队结构异曲同工。",
+          "recommendation": "让贵模型当管理者、便宜模型当执行者，分层路由反而总成本更低"
+        },
+        {
+          "idx": "AI科技热点 06",
+          "title": "GPT-5.6 + Mint MCP：浏览器内生成沉浸式3D生存游戏",
+          "author": "mint",
+          "date": "2026-07-13",
+          "likes": 109,
+          "views": 31354,
+          "link": "https://x.com/mintdotgg/status/2076523316765229171",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2076523216374493184/img/ppOV3DiQZyPUC6xd.jpg"
+          },
+          "summary": "Mint展示了用GPT-5.6 + Codex + Mint MCP在浏览器内创建冬季生存游戏的全流程：收集柴火、砍树、生火取暖，所有角色、资产和音效均通过AI生成。",
+          "analysis": "这是\"AI全栈游戏生成\"的又一案例——不仅代码，连美术资产和音效都由AI通过MCP协议生成。浏览器游戏的制作壁垒正在消失，WebGL+AI的组合让快速原型验证成为现实。",
+          "recommendation": "代码、美术、音效全由AI生成，GPT-5.6+MCP让浏览器游戏制作近乎零门槛"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "items": [
+        {
+          "idx": "游戏行业动态 01",
+          "title": "Nintendo考虑为Switch 2推出OLED版本，担忧定价问题",
+          "author": "Digital Foundry",
+          "date": "2026-07-14",
+          "likes": 326,
+          "views": 39262,
+          "link": "https://x.com/digitalfoundry/status/2077002691058798948",
+          "media": {
+            "type": "text"
+          },
+          "summary": "Digital Foundry援引报道称Nintendo正与Samsung Display合作探讨Switch 2 OLED面板方案，但对由此带来的价格上涨表示担忧。",
+          "analysis": "Switch 2标准版刚上市就传OLED计划，说明Nintendo在硬件迭代节奏上延续了Switch一代的策略。对开发者而言需关注两套屏幕规格的适配需求。",
+          "recommendation": "Switch 2 OLED版与Samsung合作探讨中，Nintendo担忧涨价影响销量"
+        },
+        {
+          "idx": "游戏行业动态 02",
+          "title": "id Software制作人：当前环境下不可能再诞生WoW或Morrowind级作品",
+          "author": "PC Gamer",
+          "date": "2026-07-14",
+          "likes": 191,
+          "views": 30882,
+          "link": "https://x.com/pcgamer/status/2076982852986802287",
+          "media": {
+            "type": "text"
+          },
+          "summary": "id Software制作人公开表示，在当前游戏行业的出版商垄断和成本压力下，像WoW或Morrowind这样具有开创性的作品不可能再出现。",
+          "analysis": "这番言论直指行业核心痛点：大厂倾向低风险续作而非创新IP。但反过来看，独立游戏和中型工作室正成为创新主力——行业需要的不是\"下一个WoW\"，而是新的创作范式。",
+          "recommendation": "id制作人直言行业已不可能诞生WoW级创新，大厂垄断扼杀了野心项目"
+        },
+        {
+          "idx": "游戏行业动态 03",
+          "title": "Sony因停产实体光盘在墨西哥面临反垄断投诉",
+          "author": "Eurogamer",
+          "date": "2026-07-14",
+          "likes": 804,
+          "views": 19023,
+          "link": "https://x.com/eurogamer/status/2076996781163085930",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNL5cIsaYAAJ2G1.jpg"
+          },
+          "summary": "Sony宣布2028年停产PS实体游戏光盘后，在墨西哥遭到反垄断投诉。数字化转型引发的消费者权益争议升级。",
+          "analysis": "实体游戏消亡进程中的法律博弈正式开始。墨西哥的案例可能成为全球范围内消费者维权的先例——当平台同时控制数字分发和定价时，反垄断审查不可避免。",
+          "recommendation": "Sony停产光盘后遭墨西哥反垄断投诉，全数字化转型的法律博弈开始"
+        },
+        {
+          "idx": "游戏行业动态 04",
+          "title": "Black Flag Resynced上线后Ubisoft巴塞罗那裁员引发罢工",
+          "author": "PC Gamer",
+          "date": "2026-07-14",
+          "likes": 33,
+          "views": 14552,
+          "link": "https://x.com/pcgamer/status/2076986630402126220",
+          "media": {
+            "type": "text"
+          },
+          "summary": "Assassin's Creed Black Flag Resynced发售后，Ubisoft宣布巴塞罗那工作室裁员。开发者表示\"因为Ubisoft认为我们活该\"，工会随即发起罢工。",
+          "analysis": "\"发售即裁员\"的模式在3A行业已成常态。Ubisoft在2026年频繁的工作室重组表明其正在从传统大团队模式向精益运营转型，但劳工关系的紧张可能影响后续项目。",
+          "recommendation": "Black Flag发售日即裁员日，Ubisoft巴塞罗那开发者罢工抗议"
+        },
+        {
+          "idx": "游戏行业动态 05",
+          "title": "Need For Speed系列可能永远不会再有新作",
+          "author": "GameSpot",
+          "date": "2026-07-14",
+          "likes": 63,
+          "views": 17770,
+          "link": "https://x.com/GameSpot/status/2077037528704823542",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNMeoC1aoAAJnxZ.jpg"
+          },
+          "summary": "GameSpot分析指出Need For Speed系列在EA战略调整后大概率不会再推出新作，这个有着30年历史的竞速IP面临终结。",
+          "analysis": "EA近年持续收缩非核心IP，NFS的\"准终结\"反映了单机竞速品类在live-service时代的困境——开发成本高但难以持续变现。赛车品类正让位给开放世界中的载具玩法。",
+          "recommendation": "30年竞速IP或就此终结，EA战略调整下Need For Speed难有未来"
+        },
+        {
+          "idx": "游戏行业动态 06",
+          "title": "Steam周销量榜：AC Black Flag登顶，Palworld和碧蓝幻想紧随",
+          "author": "SteamDB",
+          "date": "2026-07-14",
+          "likes": 40,
+          "views": 6661,
+          "link": "https://x.com/SteamDB/status/2077022887869825055",
+          "media": {
+            "type": "text"
+          },
+          "summary": "SteamDB公布7月7-14日周销量榜：#1 AC Black Flag Resynced、#2 Palworld、#3 碧蓝幻想Relink、#4 MECCHA CHAMELEON、#5 碧蓝幻想Relink DLC。",
+          "analysis": "榜单反映三个趋势：经典重制仍有强大号召力（Black Flag）、Palworld正式版保持长尾（#2）、日系RPG在PC平台持续增长（碧蓝幻想双上榜）。",
+          "recommendation": "Steam周榜：Black Flag重制登顶，Palworld正式版仍稳居第二"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "title": "Dear Passengers：物理混乱航空Co-op引爆全网",
+          "author": "Next Indie",
+          "date": "2026-07-14",
+          "likes": 82013,
+          "views": 14587279,
+          "link": "https://x.com/nexindie/status/2076850974845509791",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2076849454510923776/img/8Q0OZ4PgXLLVR0Cs.jpg"
+          },
+          "summary": "物理引擎驱动的航空机组Co-op游戏Dear Passengers正式公布，2026年PC发售。玩家扮演机组人员应对各种荒诞紧急状况：修飞机、打劫匪、管乘客。",
+          "analysis": "1450万views+8万likes的数据堪称indie现象级公布。游戏精准命中了Overcooked/Lethal Company开创的\"混乱协作\"品类红利，物理笑料+航空题材的组合极具传播力。",
+          "recommendation": "1450万播放量的现象级公布，混乱物理+航空co-op精准命中社交传播",
+          "enrichment": {
+            "game_name": "Dear Passengers",
+            "genre": "物理模拟 / Co-op / 喜剧动作",
+            "developer": "未公布",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "物理引擎驱动的航空机组合作游戏。一人当飞行员，其余玩家担任乘务员，在飞行中处理各种荒诞紧急情况：机械故障需爬到机翼外维修、空中劫匪用机载武器击退、危险货物要妥善处理。\n\n【核心玩法】多人分工协作+物理交互——每个任务都有多种物理解法，混乱中的团队配合是核心乐趣。\n\n【美术风格】卡通渲染低多边形风格，色彩明快，角色动作夸张滑稽。\n\n【对标定位】Overcooked的分工压力 + Lethal Company的荒诞感 + Human Fall Flat的物理笑料。\n\n【优势】题材新颖（航空+co-op市场空白）、传播力极强、物理引擎保证重玩性。\n【不足】详情尚少，实际玩法深度待验证。\n\n【综合】2026年社交Co-op赛道最具爆发力的新公布。",
+            "why_notable": "单条推文1450万views+8万likes，全球多语种游戏媒体同时报道"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "title": "銃で登るゲーム：日本独立开发者的枪械攀爬创意原型",
+          "author": "リックザリック",
+          "date": "2026-07-13",
+          "likes": 454,
+          "views": 629114,
+          "link": "https://x.com/RickTheR1ck/status/2076718519601987956",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2076718462219751424/img/awOQ9LdHWWyWz-Hb.jpg"
+          },
+          "summary": "日本独立开发者展示「用枪射击产生后坐力来攀爬」的游戏原型。添加背景后游戏感大幅提升，预计下周完成。",
+          "analysis": "经典的\"一句话核心机制\"设计——将射击的后坐力转化为移动工具。629k views证明Twitter对精巧游戏原型的传播力。类似Downwell将射击+下落结合，这类机制杂交往往能诞生佳作。",
+          "recommendation": "用枪的后坐力向上攀爬——62万人围观的绝妙机制杂交创意",
+          "enrichment": {
+            "game_name": "銃で登るゲーム（暂无正式名）",
+            "genre": "平台跳跃 / 射击 / 创意动作",
+            "developer": "リックザリック（个人日本开发者）",
+            "platforms": [
+              "未公布"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "以枪械后坐力作为核心移动机制的创意平台跳跃原型。玩家向下射击产生向上推力来攀爬关卡。\n\n【核心玩法】射击=跳跃——弹药管理即平台规划，射击角度决定运动轨迹。\n\n【开发状态】早期原型，开发者称下周可完成。\n\n【对标定位】Downwell的射击+垂直移动思路，但方向相反（向上而非向下）。\n\n【优势】核心机制直觉且新颖，一看就懂但有深度空间。\n【不足】仅为原型阶段，完整游戏体量未知。",
+            "why_notable": "单个GIF原型62万views，证明好机制设计的传播力不需要完整产品"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "title": "Far Far West：西部牛仔遇上外星人的沙盒冒险",
+          "author": "Far Far West",
+          "date": "2026-07-14",
+          "likes": 1178,
+          "views": 49476,
+          "link": "https://x.com/FarFarWestGame/status/2077027682873753730",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2077027611478286338/pu/img/nEuNK0w64uOouYNc.jpg"
+          },
+          "summary": "Far Far West发布新开发进度视频，展示西部开荒+外星入侵混搭的开放世界冒险。",
+          "analysis": "西部+科幻的题材混搭在游戏中相对少见（类似Oddworld的错位感）。开发进度持续更新且社区互动活跃（1.2k likes），属于有长期潜力的独立项目。",
+          "recommendation": "西部牛仔打外星人——题材错位感极强的沙盒冒险持续更新中",
+          "enrichment": {
+            "game_name": "Far Far West",
+            "genre": "开放世界 / 动作冒险 / 西部+科幻",
+            "developer": "Far Far West Studio",
+            "platforms": [
+              "未公布"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "西部拓荒与外星入侵混搭的开放世界动作冒险。\n\n【核心玩法】西部风格的探索与战斗，融合外星科技元素。\n\n【美术风格】风格化3D，西部荒野+外星生物的视觉碰撞。\n\n【开发状态】开发中，持续发布进度更新。\n\n【优势】题材组合新颖、社区关注度高。\n【不足】具体玩法细节尚未完整披露。",
+            "why_notable": "西部+外星题材杂交的独特定位，开发进度视频持续获得高互动"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "title": "Vampire Crawlers发布QoL大更新：无尽模式+卡牌排序",
+          "author": "Vampire Survivors",
+          "date": "2026-07-14",
+          "likes": 726,
+          "views": 41039,
+          "link": "https://x.com/poncle_vampire/status/2077019673720189331",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077019006305714176/img/FfxzgfOSc9o6UosR.jpg"
+          },
+          "summary": "Vampire Survivors衍生作Vampire Crawlers发布全平台QoL更新：新增无尽模式、卡牌排序、宝石商清晰度改善、退出游戏功能、工具提示选项等。",
+          "analysis": "poncle持续扩展Vampire Survivors宇宙的策略——通过衍生作探索新玩法方向（Crawlers是Roguelike爬塔），同时保持高频更新维持社区活跃度。",
+          "recommendation": "Vampire Survivors衍生作大更新，无尽模式等核心功能全平台上线"
+        },
+        {
+          "idx": "新游推文 05",
+          "title": "Mini Forest：Kenney免费发布的极简伐木小品",
+          "author": "Kenney",
+          "date": "2026-07-13",
+          "likes": 923,
+          "views": 27558,
+          "link": "https://x.com/KenneyNL/status/2076725710979235931",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNIDBmiWsAA1ro7.jpg"
+          },
+          "summary": "知名游戏资产创作者Kenney发布免费小游戏Mini Forest。7月14日上线，完全免费。",
+          "analysis": "Kenney是游戏开发社区最受尊敬的资产创作者之一，其免费发布策略一贯大方。Mini Forest作为小品级作品，更多是展示其资产的应用案例。",
+          "recommendation": "游戏资产界传奇Kenney新作Mini Forest免费上线，小而精的伐木小品",
+          "enrichment": {
+            "game_name": "Mini Forest",
+            "genre": "休闲 / 模拟",
+            "developer": "Kenney",
+            "platforms": [
+              "未公布"
+            ],
+            "price": "免费",
+            "release_date": "已发售 · 2026年7月14日",
+            "steam_rating": "未评分",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "Kenney出品的免费极简伐木/森林小品游戏。\n\n【核心玩法】休闲模拟，具体机制待体验确认。\n\n【美术风格】Kenney标志性的低多边形clean风格。\n\n【优势】免费、Kenney品质保证、适合快速体验。\n【不足】体量小，可能偏向技术演示。",
+            "why_notable": "Kenney在独游社区享有极高声望，其每次发布都会获得大量关注"
+          }
+        },
+        {
+          "idx": "新游推文 06",
+          "title": "Wandersky：自比Zelda/Tunic/Kena的动作冒险独游",
+          "author": "Tiny Potion Tree",
+          "date": "2026-07-13",
+          "likes": 421,
+          "views": 15641,
+          "link": "https://x.com/tinypotiontree/status/2076608759447581124",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2076608311403700224/pu/img/DJUcUvqGEMdfpmXI.jpg"
+          },
+          "summary": "独立开发者发布Wandersky新演示，主动将其定位为\"不是Zelda、不是Tunic、不是Kena——但如果让你想到它们，我们方向对了\"。",
+          "analysis": "精准的对标营销策略——用三个标杆作品锚定玩家预期。从画面看确实具备类Zelda的探索感和Tunic的神秘氛围。421 likes对小团队而言是不错的社区验证。",
+          "recommendation": "不是Zelda不是Tunic不是Kena但让你想到它们——精准锚定的动作冒险独游",
+          "enrichment": {
+            "game_name": "Wandersky",
+            "genre": "动作冒险 / 探索 / 类Zelda",
+            "developer": "Tiny Potion Tree",
+            "platforms": [
+              "未公布"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "手绘风格的动作冒险独立游戏，强调探索与发现。\n\n【核心玩法】类Zelda的开放探索+战斗系统。\n\n【美术风格】梦幻手绘3D，色彩温暖柔和。\n\n【对标定位】Zelda的探索自由度 + Tunic的神秘解谜 + Kena的视觉品质。\n\n【优势】美术品质高、定位清晰。\n【不足】具体战斗和解谜深度待验证。",
+            "why_notable": "精准的三标杆对标营销策略，社区反馈积极"
+          }
+        },
+        {
+          "idx": "新游推文 07",
+          "title": "Paper Shredder：碎纸解压模拟器——ASMR式感官愉悦",
+          "author": "Indie Game Joe",
+          "date": "2026-07-14",
+          "likes": 289,
+          "views": 14843,
+          "link": "https://x.com/IndieGameJoe/status/2077016594274717716",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077014115881558016/img/PhyF4C2Rma2dnbYX.jpg"
+          },
+          "summary": "独立开发团队制作的碎纸模拟器Paper Shredder：销毁公司文件换取100万美元奖励，每一张纸的粉碎都带来强烈感官愉悦，碎完还要打扫。",
+          "analysis": "\"解压模拟器\"品类持续证明其商业价值（PowerWash Simulator、Viscera Cleanup Detail）。Paper Shredder的卖点在于ASMR式的感官反馈+荒诞叙事包装。",
+          "recommendation": "碎纸也能做成游戏——ASMR感官愉悦+荒诞叙事的解压模拟新品"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "title": "AI Slop→Pixel Art转换器：免费开源，效果超越所有降采样方案",
+          "author": "Astropulse",
+          "date": "2026-07-13",
+          "likes": 659,
+          "views": 42873,
+          "link": "https://x.com/RealAstropulse/status/2076731799699415103",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2076731243186556928/img/klIj_Ni2KUn-EXxw.jpg"
+          },
+          "summary": "Astropulse发布免费开源的AI图片→像素画转换工具。无需注册，号称在准确度和细节保留方面超越所有现有降采样方法。",
+          "analysis": "精准解决了AI生图在像素风格游戏中落地的最后一公里问题。AI生成的图片缺乏像素感，而这个工具将其\"降级\"为高质量像素画，完美适配indie像素游戏开发流程。",
+          "recommendation": "免费开源，一键将AI生图转为精准像素画，独游美术管线新利器"
+        },
+        {
+          "idx": "开发工具 02",
+          "title": "AI像素画网格对齐工具：解决AI生图的亚像素偏移问题",
+          "author": "Tom Dorr",
+          "date": "2026-07-13",
+          "likes": 571,
+          "views": 28010,
+          "link": "https://x.com/tom_doerr/status/2076556761197126060",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNFpXtiX0AAC1R5.png"
+          },
+          "summary": "Tom Dorr发布工具可将AI生成的像素画自动对齐到完美网格，解决AI在生成\"像素风\"图片时常见的亚像素偏移和不对齐问题。",
+          "analysis": "与Astropulse的工具互补：一个负责风格转换，一个负责网格对齐。两者组合使用，可以让AI生图完美融入像素游戏的美术规范。对独游开发者的美术管线效率提升显著。",
+          "recommendation": "AI像素画总是微妙不对齐？这个工具一键对齐到完美网格"
+        },
+        {
+          "idx": "开发工具 03",
+          "title": "自研AI美术生成工具：数千资产保持风格一致性",
+          "author": "Danny Limanseta",
+          "date": "2026-07-13",
+          "likes": 420,
+          "views": 22299,
+          "link": "https://x.com/DannyLimanseta/status/2076694012438925558",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNHkri8bUAA8FfV.jpg"
+          },
+          "summary": "开发者Danny Limanseta展示其自研AI美术生成工具的成果：已生成数千张游戏美术资产，且保持了相当好（非完美）的风格一致性。",
+          "analysis": "风格一致性是AI生图在游戏开发中的核心痛点。Danny通过自研工具+fine-tuning解决了这个问题，证明\"工具化\"是AI美术落地的关键路径——不是用通用模型，而是打造专用管线。",
+          "recommendation": "自研AI工具生成数千张资产仍保持风格一致，工具化是AI美术落地的正确路径"
+        },
+        {
+          "idx": "开发工具 04",
+          "title": "MagicPixel Merge工具：拖拽换肤生成游戏UI Kit",
+          "author": "MagicPixel",
+          "date": "2026-07-13",
+          "likes": 142,
+          "views": 8382,
+          "link": "https://x.com/MagcPixel/status/2076799294997430739",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2076799206581211136/img/itSIfTPG7K7Ro_KO.jpg"
+          },
+          "summary": "MagicPixel演示\"merge\"工具：拖拽一个画板到另一个上即可转移风格，用于快速生成游戏UI Kit。推荐每次处理少量元素以保证像素质量。",
+          "analysis": "解决了像素游戏UI制作中最枯燥的工作——在保持功能一致的前提下，为不同主题/场景快速生成风格化UI变体。拖拽式交互降低了使用门槛。",
+          "recommendation": "拖拽即换肤——MagicPixel让像素游戏UI Kit制作变成秒级操作"
+        }
+      ]
+    }
+  ],
+  "editors_pick": [
+    {
+      "section": "indie",
+      "idx": "新游推文 01",
+      "reason": "14.5M views现象级公布，2026年Co-op赛道最大爆款"
+    },
+    {
+      "section": "ai",
+      "idx": "AI科技热点 01",
+      "reason": "GPT-5.6+MCP打通3D工具链，创作门槛突破性降低"
+    },
+    {
+      "section": "industry",
+      "idx": "游戏行业动态 01",
+      "reason": "Switch 2硬件迭代动向直接影响开发规划"
+    },
+    {
+      "section": "ai",
+      "idx": "AI科技热点 02",
+      "reason": "36小时完成可玩游戏，AI辅助开发效率新标杆"
+    },
+    {
+      "section": "industry",
+      "idx": "游戏行业动态 02",
+      "reason": "id制作人对行业创新困境的深刻反思"
+    },
+    {
+      "section": "tools",
+      "idx": "开发工具 01",
+      "reason": "AI生图转像素画最后一公里，独游美术管线实用工具"
+    },
+    {
+      "section": "indie",
+      "idx": "新游推文 02",
+      "reason": "62万views的枪械攀爬原型，极简机制设计的传播力证明"
+    },
+    {
+      "section": "industry",
+      "idx": "游戏行业动态 04",
+      "reason": "Ubisoft裁员罢工，3A劳工问题持续升级"
+    }
+  ],
+  "daily_summary": "**AI让游戏开发进入\"36小时出原型\"时代**\n今天最令人印象深刻的是AI工具在游戏/3D创作中的实战表现：有人用GPT-5.6+Blender MCP在从未打开过Blender的情况下完成专业级3D渲染，有人用Fable 5一天半做出可玩AR游戏，还有人用Mint MCP在浏览器里生成完整3D生存游戏。AI不再只是写代码的助手，而是正在接管从美术到音效的全栈创作流程。\n\n**Dear Passengers：2026年社交Co-op赛道最大爆款**\n一条公告推文1450万播放、8万点赞——Dear Passengers用\"混乱物理+航空+Co-op\"的组合精准引爆了社交传播。从Overcooked到Lethal Company，\"和朋友一起搞砸事情\"的品类红利仍在，而航空题材的新鲜感让它在公布阶段就站上了现象级起点。\n\n**行业震荡：裁员、IP终结与创新困境**\nBlack Flag发售即裁员、Need For Speed系列或将终结、id制作人直言当前环境不可能再诞生WoW级作品——这些消息共同描绘了一个3A行业持续收缩创新空间的图景。与此同时，独游开发者用62万views的枪械攀爬GIF证明：好机制设计不需要大预算。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
+  "digest": [
+    {
+      "section": "ai",
+      "text": "GPT-5.6+Blender MCP零基础完成3D渲染\nFable 5让单人36小时做出可玩AR游戏\n如果Codex是中国人做的产品：中外AI差异热议\nAaron Levie预测AI行业结构性趋势\n前沿模型做管理者降本实验\nGPT-5.6+Mint MCP生成浏览器3D游戏"
+    },
+    {
+      "section": "industry",
+      "text": "Nintendo考虑Switch 2 OLED版本\nid Software：不可能再诞生WoW/Morrowind\nSony停产光盘遭墨西哥反垄断投诉\nBlack Flag发售后Ubisoft裁员引发罢工\nNeed For Speed系列可能永远不会再有新作\nSteam周榜：Black Flag登顶 Palworld第二"
+    },
+    {
+      "section": "indie",
+      "text": "Dear Passengers：1450万views的现象级Co-op公布\n銃で登るゲーム：62万views的枪械攀爬创意原型\nFar Far West：西部牛仔打外星人沙盒冒险\nVampire Crawlers QoL大更新\nKenney新作Mini Forest免费上线\nWandersky：自比Zelda/Tunic/Kena的动作冒险\nPaper Shredder：ASMR碎纸解压模拟器"
+    },
+    {
+      "section": "tools",
+      "text": "AI Slop转Pixel Art免费开源转换器\nAI像素画网格对齐工具\n自研AI美术生成工具保持风格一致性\nMagicPixel Merge拖拽换肤生成UI Kit"
+    }
+  ]
+}
