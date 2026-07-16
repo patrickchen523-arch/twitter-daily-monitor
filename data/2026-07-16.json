@@ -1,0 +1,671 @@
+{
+  "meta": {
+    "date": "2026-07-16",
+    "selected_count": 23,
+    "source_count": 224,
+    "prefilter_count": 194
+  },
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#6C5CE7",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "title": "Circana分析师警告：AI vibe coding将成Steam最大问题",
+          "author": "Pirat_Nation",
+          "date": "2026-07-15",
+          "likes": 1194,
+          "views": 75820,
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNNxVC2WkAApCFU.jpg"
+          },
+          "summary": "游戏市场分析机构Circana分析师Mat Piscatella警告，AI vibe coding正在加速Steam平台的内容泛滥。用简单提示就能快速生成游戏，成功作品会被快速克隆和淹没。",
+          "analysis": "\"好游戏会被克隆和掩埋\"——这是AI对游戏发行生态的根本性威胁。当制作门槛趋近于零，发现机制（而非制作能力）将成为核心竞争力。Steam的推荐算法将面临史无前例的压力。",
+          "recommendation": "分析师警告AI vibe coding将让Steam好游戏被克隆淹没，发现机制成核心挑战",
+          "full_text": "AI “vibe coding” could become one of the biggest problems for game stores like Steam, according to Circana analyst Mat Piscatella.\n\nVibe coding uses AI to build games from simple prompts, speeding up new project creation and Piscatella warns that this could also make it easier to copy successful games and quickly release similar versions.\n\n“Good games will get cloned and buried,” He also warned that “players will default to games and franchises they know and trust. Breaking through will become even more difficult.” \n\nHe added that the growing number of AI-made games could worsen Steam’s discovery problem, saying\n\n“Massive counterpoint to anyone claiming that AI will help the video game market by lowering development time and cost… it’s… bad!” “Seems unstoppable at this point.”",
+          "link": "https://x.com/Pirat_Nation/status/2077302396125106571",
+          "tags": [],
+          "en_title": "",
+          "source": "Pirat_Nation"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "title": "Aaron Levie：代码可测试性是AI agent在编程领域领先的核心原因",
+          "author": "Aaron Levie",
+          "date": "2026-07-15",
+          "likes": 224,
+          "views": 78183,
+          "media": {
+            "type": "text"
+          },
+          "summary": "Box CEO Aaron Levie分析为何AI agent在代码领域进展最快：代码可以快速测试验证，而销售话术、合同谈判等工作只有在实际执行后才能验证效果。",
+          "analysis": "这个洞察揭示了AI agent的扩展路径——从\"可测试\"领域向\"不可测试\"领域延伸。游戏开发同时具有两面：代码可测试但游戏体验不可自动测试，这决定了AI替代的边界。",
+          "recommendation": "代码能快速测试所以AI agent在编程领域最强——其他领域需要新的验证范式",
+          "full_text": "One of the many properties that code has that makes it highly amenable to agents is that you can more or less quickly test it. You can either go see if the application works manually, or you can actually run a test on what you built.\n\nMost other areas of work don’t have this benefit. You only get the testing when the final product hits the real world in some capacity - a stock trade is executed, a contract is negotiated, a sales pitch is delivered, and so on.\n\nThere’s probably going to be a whole new set of opportunities for how we begin to test the rest of work in this way. Ultimately it will mean more agents being layered into workflows. \n\nIt also means we need much better evals on most of our workflows. Most work today in enterprises doesn’t have an associated eval to know if something broke or improved with a model, prompt, or system change.\n\nThe enterprises that are able to eval their knowledge work the best also stand to gain the most from AI. Will become a critical aspect of agent adoption over time.",
+          "link": "https://x.com/levie/status/2077201458546745553",
+          "tags": [],
+          "en_title": "",
+          "source": "Aaron Levie"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "title": "调查：100%日本在线游戏开发商正在使用生成式AI",
+          "author": "Eurogamer",
+          "date": "2026-07-15",
+          "likes": 72,
+          "views": 13309,
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNQhkEJWYAAotgA.png"
+          },
+          "summary": "一项调查显示日本在线游戏开发商已100%采用生成式AI，但主要用于\"用户偏好分析\"而非直接内容创作。与此同时版权侵权担忧持续上升。",
+          "analysis": "100%渗透率的数据意味着AI已从实验阶段进入生产常态。但用途集中在分析而非创作，说明日本开发商对AI生成内容的版权风险态度谨慎——这与欧美indie的激进使用形成鲜明对比。",
+          "recommendation": "日本游戏业AI渗透率达100%，但用于分析而非创作——版权担忧是关键制约",
+          "full_text": "According to a poll, Generative AI is being used at a whopping 100% Japanese online game developers, as copyright infringement concerns climb\n\nhttps://t.co/V0h3xfX7lG https://t.co/ZWCR1k5kJM",
+          "link": "https://x.com/eurogamer/status/2077322256196219014",
+          "tags": [],
+          "en_title": "",
+          "source": "Eurogamer"
+        },
+        {
+          "idx": "AI科技热点 04",
+          "title": "日本开发者用Codex+GPT-5.6制作2D连击动作游戏",
+          "author": "雨季",
+          "date": "2026-07-15",
+          "likes": 219,
+          "views": 13648,
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077196862378147840/img/NNo5sgQw3juYQfdg.jpg"
+          },
+          "summary": "日本游戏企划师雨季展示用Codex+GPT-5.6构建2D combo动作系统的过程。坦言并非一发完美，经过反复调试才达到当前效果。",
+          "analysis": "相比\"36小时做完游戏\"的海外案例，日本开发者的使用方式更务实——将AI作为迭代工具而非替代方案。\"试行错误しながら\"的态度代表了AI辅助开发的成熟使用模式。",
+          "recommendation": "日本开发者用Codex+GPT-5.6做连击系统，AI辅助开发的务实路线",
+          "full_text": "2DコンボアクションをCodex × GPT-5.6で組んでみました。\n\nもちろん一発でいい感じには全然ならず、試行錯誤しながらですが、ひとまずここまではできた感じです。\n\nAIと一緒にどこまでできるか、引き続き試していきます。\n\n#ゲーム制作 #gamedev #Codex https://t.co/eBa59T2woW",
+          "link": "https://x.com/yugiriworks/status/2077198707012018227",
+          "tags": [],
+          "en_title": "",
+          "source": "雨季"
+        },
+        {
+          "idx": "AI科技热点 05",
+          "title": "World Labs+Fable+ThreeJS：AI驱动的沉浸式3D场景生成",
+          "author": "Brittani Natali",
+          "date": "2026-07-13",
+          "likes": 428,
+          "views": 57211,
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2076708212146098176/img/BMaDmtOv7n-ExmVT.jpg"
+          },
+          "summary": "开发者Brittani Natali展示World Labs+Fable+ThreeJS的组合效果：AI生成3D场景并直接在浏览器中实时渲染，视觉沉浸感令人印象深刻。",
+          "analysis": "三个工具的组合代表了\"AI生成→3D渲染→Web部署\"全链路的打通。对游戏原型验证和Web3D应用开发而言，这条管线将大幅降低从概念到可交互演示的时间成本。",
+          "recommendation": "World Labs+Fable+ThreeJS三件套打通AI→3D→Web全链路，场景生成一步到位",
+          "full_text": "World Labs + Fable + Threejs 😮‍💨 https://t.co/FT6QU9Qyw6",
+          "link": "https://x.com/BrittaniNatali/status/2076708268840493560",
+          "tags": [],
+          "en_title": "",
+          "source": "Brittani Natali"
+        },
+        {
+          "idx": "AI科技热点 06",
+          "title": "AutoSprite：AI图像→精灵表动画自动生成，支持HD-2D风格",
+          "author": "えにゃ",
+          "date": "2026-07-15",
+          "likes": 874,
+          "views": 79035,
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077245022869827584/img/fwFchklgyBU_PNKh.jpg"
+          },
+          "summary": "日本独立开发者推荐AutoSprite工具：可将AI生成的图像自动转换为精灵表动画，支持待机、跑步、跳跃等基本动作，也支持自定义提示词生成波动拳等特殊动作。最新更新支持HD-2D风格测试地图。",
+          "analysis": "解决了AI游戏开发的关键痛点——静态图到可用动画的最后一公里。精灵表自动生成+Unity直接导入的流程，让独游开发者的2D动画制作效率提升一个量级。",
+          "recommendation": "AI生图→精灵表动画一键生成，连波动拳都能自定义提示词产出",
+          "full_text": "ゲーム制作においてAIで画像生成はできたけど、それをアニメーションさせるのが大変って思っている方はこちらが便利！！\n\nURL:https://t.co/Apoq3ztn5n\nX:https://t.co/ZRD66xCmbS\nスプライトシートも自動生成してくれるので、ダウンロードしてそのままUnityに取り込んでアニメーション設定すれば簡単にゲームに反映できます。基本的な動作（待機、走る、ジャンプ）などは既存設定から生成できますが、動画のような波動拳もプロンプトから生成できます。\n\n最近のアップデートでテストマップがHD-2Dになりました！アニメーションに困っている方は是非試してみてください！（関係者ではない）\n#Unity #Autosprite",
+          "link": "https://x.com/enya_orc/status/2077246585722028509",
+          "tags": [],
+          "en_title": "",
+          "source": "えにゃ"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "GAME INDUSTRY",
+      "color": "#C0392B",
+      "items": [
+        {
+          "idx": "游戏行业动态 01",
+          "title": "\"没人在Xbox Studios能感到安全\"——裁员恐惧报告揭露内部危机",
+          "author": "Eurogamer",
+          "date": "2026-07-15",
+          "likes": 130,
+          "views": 45713,
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNRCTGSXEAAVFsd.jpg"
+          },
+          "summary": "新报告揭示Xbox Studios内部弥漫着不确定和恐惧氛围。大规模裁员导致\"惊人的\"机构知识流失，剩余员工士气低落。报告引述员工称\"不知道留在Xbox的人怎么能感到安全\"。",
+          "analysis": "这是继Bethesda裁员后Xbox内部问题的系统性曝光。\"机构知识流失\"是最深层的伤害——当资深开发者离开，项目的历史决策和技术积累随之消失，新员工需要重新摸索。",
+          "recommendation": "Xbox裁员报告：恐惧弥漫、知识流失惊人，员工直言无人能感到安全",
+          "full_text": "\"I don't know how anyone remaining at Xbox Studios can feel safe\" - New report reveals environment of uncertainty and fear, and a \"staggering\" loss of institutional knowledge https://t.co/s9U9pViJ8k https://t.co/JgsGoQB46l",
+          "link": "https://x.com/eurogamer/status/2077358335674679306",
+          "tags": [],
+          "en_title": "",
+          "source": "Eurogamer"
+        },
+        {
+          "idx": "游戏行业动态 02",
+          "title": "Far Cry电视剧确认Steve Buscemi主演",
+          "author": "The Game Awards",
+          "date": "2026-07-15",
+          "likes": 1609,
+          "views": 115604,
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNOli53bUAAS3po.jpg"
+          },
+          "summary": "The Game Awards确认Far Cry系列将改编为电视剧，登陆FX/Hulu。Steve Buscemi担任主演。",
+          "analysis": "Far Cry的开放世界框架和反派驱动的叙事结构天然适合剧集化改编。Steve Buscemi的选角暗示剧集将走暗黑现实主义路线而非动作爆米花。继The Last of Us后，游戏IP改编剧的赛道持续升温。",
+          "recommendation": "Far Cry电视剧官宣Steve Buscemi主演，游戏IP影视化赛道再添重磅",
+          "full_text": "Steve Buscemi will star in the FAR CRY series coming to FX/Hulu. https://t.co/G7lpSf2xHi",
+          "link": "https://x.com/thegameawards/status/2077185947968684262",
+          "tags": [],
+          "en_title": "",
+          "source": "The Game Awards"
+        },
+        {
+          "idx": "游戏行业动态 03",
+          "title": "Dead Space创始人Glen Schofield宣布退休",
+          "author": "PC Gamer",
+          "date": "2026-07-15",
+          "likes": 89,
+          "views": 19013,
+          "media": {
+            "type": "text"
+          },
+          "summary": "Dead Space创始人、曾操刀三代Call of Duty的游戏行业老兵Glen Schofield宣布退休，结束数十年的一线游戏开发生涯。",
+          "analysis": "Schofield是3A时代的标志性人物——Dead Space重新定义了太空恐怖品类，CoD系列奠定了FPS工业标准。他的退休是又一位黄金时代开发者离场的信号。",
+          "recommendation": "Dead Space之父、三代CoD操刀者Glen Schofield退休，又一黄金时代落幕",
+          "full_text": "Dead Space creator and Call of Duty veteran Glen Schofield announces retirement https://t.co/Gc4b648ECy",
+          "link": "https://x.com/pcgamer/status/2077208684690845844",
+          "tags": [],
+          "en_title": "",
+          "source": "PC Gamer"
+        },
+        {
+          "idx": "游戏行业动态 04",
+          "title": "AC Black Flag Resynced创Steam系列最佳首发",
+          "author": "Eurogamer",
+          "date": "2026-07-15",
+          "likes": 29,
+          "views": 4444,
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNRTgzxaoAEaTAd.jpg"
+          },
+          "summary": "Eurogamer报道Assassin's Creed Black Flag Resynced在Steam上取得了AC系列历史最佳首发成绩，创造了可观收入。",
+          "analysis": "经典重制的商业价值再次被验证——Black Flag在Steam的成功证明高质量重制+PC平台的组合仍有巨大市场。但对比Ubisoft同时进行的裁员，\"赚钱但裁人\"的矛盾更加刺眼。",
+          "recommendation": "Black Flag Resynced Steam创AC系列最佳首发，经典重制商业价值再验证",
+          "full_text": "Assassin's Creed Black Flag Resynced enjoys the best launch of any AC game on Steam, making avast sum of money there\n\nhttps://t.co/U8DPDzM5pW https://t.co/z8w9230xjR",
+          "link": "https://x.com/eurogamer/status/2077377162471174547",
+          "tags": [],
+          "en_title": "",
+          "source": "Eurogamer"
+        },
+        {
+          "idx": "游戏行业动态 05",
+          "title": "前R星制作人：GTA 6不上PC是因为\"从约束开始更好\"",
+          "author": "PC Gamer",
+          "date": "2026-07-15",
+          "likes": 38,
+          "views": 13728,
+          "media": {
+            "type": "text"
+          },
+          "summary": "前Rockstar GTA 5制作人解释为何GTA 6首发不登陆PC：优先主机是因为\"从约束条件开始开发效果更好\"，而非商业策略。",
+          "analysis": "这个说法有技术合理性——固定硬件约束下更容易优化和保证体验一致性。但PC玩家社区对此并不买账，认为更大的动机是避免首发遭遇PC端破解。",
+          "recommendation": "GTA 5制作人解释GTA 6不首发PC：从硬件约束出发开发效果更好",
+          "full_text": "GTA 6 isn't on PC at launch since it's 'better to start with the constraints', says GTA 5 producer https://t.co/Sx8qPWTWWz",
+          "link": "https://x.com/pcgamer/status/2077355765799760294",
+          "tags": [],
+          "en_title": "",
+          "source": "PC Gamer"
+        },
+        {
+          "idx": "游戏行业动态 06",
+          "title": "FromSoftware Duskbloods网络测试8月21-24日，下周开放申请",
+          "author": "GameSpot",
+          "date": "2026-07-15",
+          "likes": 4,
+          "views": 3391,
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNSK-c0XUAEZZQa.jpg"
+          },
+          "summary": "FromSoftware新作Duskbloods网络测试将于8月21-24日在Switch 2上举行。测试申请从7月22日开始，名额预计竞争激烈。",
+          "analysis": "FromSoftware选择Switch 2作为网络测试平台本身就是一个信号——暗示对新平台性能的信心。Duskbloods作为后Elden Ring时代的新IP，测试阶段的社区反馈将决定其设计方向。",
+          "recommendation": "FromSoftware新IP Duskbloods测试8月底开启，Switch 2独占测试彰显信心",
+          "full_text": "FromSoftware will begin accepting tester applications starting next week, Wednesday July 22.\n\nThe Duskbloods network test will take place between August 21 and August 24. https://t.co/jIz7qG8wty",
+          "link": "https://x.com/GameSpot/status/2077438154240340473",
+          "tags": [],
+          "en_title": "",
+          "source": "GameSpot"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "NEW GAMES",
+      "color": "#27AE60",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "title": "Shady Job：黑手党雇你搬尸体上摩天楼的4人Co-op",
+          "author": "Indie Game Joe",
+          "date": "2026-07-14",
+          "likes": 5503,
+          "views": 494805,
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077088389229088768/img/_DPnztdH_gaIhFwg.jpg"
+          },
+          "summary": "4人Co-op新游Shady Job公布：黑手党雇佣你和朋友把一具尸体搬上摩天楼并埋入混凝土。但尸体没死——它会挣扎、破坏结构、把玩家从高处推下。",
+          "analysis": "继Dear Passengers后又一个\"混乱Co-op\"爆款公布。\"尸体会反抗\"的设计让简单搬运变成紧张刺激的对抗体验。49.5万views证明社交Co-op品类的热度仍在上升。",
+          "recommendation": "搬尸体上楼但尸体会反抗——49万views的又一个混乱Co-op爆款",
+          "enrichment": {
+            "game_name": "Shady Job",
+            "genre": "Co-op / 物理模拟 / 黑色喜剧",
+            "developer": "未公布",
+            "platforms": [
+              "未公布"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "4人协作的黑色幽默Co-op游戏。黑手党雇佣你和朋友将一具尸体搬上摩天楼并埋入混凝土。\n\n【核心玩法】团队搬运+建造通路+对抗挣扎的\"尸体\"——尸体会反击、破坏结构、把玩家推落。\n\n【美术风格】风格化低多边形，暗色调+喜剧动作。\n\n【对标定位】Moving Out的搬运机制 + Lethal Company的紧张感 + Gang Beasts的物理闹剧。\n\n【优势】核心概念极其抓人、物理交互保证重玩性。\n【不足】早期公布，详情待补充。",
+            "why_notable": "49.5万views+5.5k likes，Dear Passengers后社交Co-op品类热度持续爆发"
+          },
+          "full_text": "A new co-op game is in development where the mafia hires you and your friends to carry a body up a skyscraper and bury it in concrete. \n\n- Build your way up\n- The body isn't dead\n- 4 player co-op\n\nIt's called Shady job. Co-op games are the future! https://t.co/1fZs15jLxQ",
+          "link": "https://x.com/IndieGameJoe/status/2077091540187459655",
+          "tags": [],
+          "en_title": "",
+          "source": "Indie Game Joe"
+        },
+        {
+          "idx": "新游推文 02",
+          "title": "Railborn：两人Co-op火车生存建造",
+          "author": "Indie Game Joe",
+          "date": "2026-07-15",
+          "likes": 7070,
+          "views": 427185,
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077211557134823424/img/JK_dIKxJmUzIEs7U.jpg"
+          },
+          "summary": "两名独立开发者打造的Co-op生存游戏Railborn：逐件搭建火车、在车上重建生态圈、管理电力系统、引导资源流向和分配水源。",
+          "analysis": "火车+生态建造的组合令人想起Snowpiercer但更偏休闲建造方向。7k likes+42.7万views的数据极为亮眼，Co-op生存建造赛道的热度印证了玩家对\"合作创造\"体验的强烈需求。",
+          "recommendation": "在行驶的火车上重建生态圈——42.7万播放的Co-op生存建造新概念",
+          "enrichment": {
+            "game_name": "Railborn",
+            "genre": "生存建造 / Co-op / 火车模拟",
+            "developer": "两人独立团队",
+            "platforms": [
+              "未公布"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "两人合作的火车生存建造游戏。\n\n【核心玩法】逐件搭建火车车厢、在车上重建不同生态圈、管理电力和水资源分配系统。\n\n【美术风格】温暖低多边形+生态主题。\n\n【对标定位】Snowpiercer的列车设定 + Raft的生存建造循环。\n\n【优势】概念新颖、建造深度+生态管理双系统。\n【不足】仅两人开发，规模和更新节奏待观察。",
+            "why_notable": "7k likes+42.7万views，火车+生态建造+Co-op组合极具吸引力"
+          },
+          "full_text": "Two indie devs are making a co-op survival game where you build your train piece by piece\n\n- Recreate biomes on your train\n- Manage its power systems\n- Direct resource flow, and distribute water\n\nIt's called Railborn. Would you play this? https://t.co/hhKxnd7cTU",
+          "link": "https://x.com/IndieGameJoe/status/2077211662525092162",
+          "tags": [],
+          "en_title": "",
+          "source": "Indie Game Joe"
+        },
+        {
+          "idx": "新游推文 03",
+          "title": "Clay Clinic：6人Co-op疯狂医院模拟",
+          "author": "GGaming",
+          "date": "2026-07-15",
+          "likes": 757,
+          "views": 145750,
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077315674876026880/img/bYT-pTo0bp6-_0mV.jpg"
+          },
+          "summary": "Clay Clinic公布：支持6人Co-op的疯狂医院模拟。治疗病人、进行危险手术、在同伴犯错之前抢修，努力让夜班不变成灾难。即将登陆Steam。",
+          "analysis": "6人Co-op的容量超越了大多数同类游戏（通常4人上限），直接瞄准大群友聚会场景。医院题材与Overcooked厨房异曲同工——紧迫感+分工+混乱=欢乐。",
+          "recommendation": "6人Co-op疯狂医院——治病人、做手术、抢修同伴的灾难性错误",
+          "enrichment": {
+            "game_name": "Clay Clinic",
+            "genre": "Co-op / 模拟 / 派对",
+            "developer": "未公布",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "6人合作的疯狂医院模拟游戏。\n\n【核心玩法】团队分工治疗病人+紧急手术+应对突发状况，需要及时修正队友的错误。\n\n【美术风格】粘土质感卡通风格，角色圆润可爱。\n\n【对标定位】Overcooked的分工协作+Two Point Hospital的医院主题。\n\n【优势】6人大组Co-op市场空白、医院题材自带紧迫感。\n【不足】发售日期未定。",
+            "why_notable": "14.6万views，6人Co-op大容量填补派对游戏市场空白"
+          },
+          "full_text": "🏥 Clay Clinic تعلن عن نفسها\n\n🔸 لعبة تعاونية مجنونة تدعم حتى 6 لاعبين\n🔸 عالجوا المرضى وسووا عمليات خطيرة وحاولوا تصلحون أخطاء بعض قبل ما تتحول المناوبة لكارثة 😂\n🔸 قادمة قريبًا على Steam دون موعد إصدار محدد حتى الآن https://t.co/UBgIl7IGLw",
+          "link": "https://x.com/GGamingAR/status/2077316123150692421",
+          "tags": [],
+          "en_title": "",
+          "source": "GGaming"
+        },
+        {
+          "idx": "新游推文 04",
+          "title": "SHORE：危险海域4人Co-op木筏生存",
+          "author": "Indie Freaks",
+          "date": "2026-07-14",
+          "likes": 296,
+          "views": 42880,
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNOEqiEa8AAmNpb.jpg"
+          },
+          "summary": "SHORE是一款最多4人Co-op的海上木筏生存游戏：巨浪、暴风、鲨鱼、大漩涡，海上危险应有尽有。木筏极不稳定——站在一侧会翻船，划桨节奏不齐会原地打转。",
+          "analysis": "Raft品类的新竞争者，但加入了更多物理模拟的混乱元素（翻船、划桨协调）。日本游戏媒体Indie Freaks的报道让它获得了东亚市场的早期曝光。",
+          "recommendation": "巨浪+鲨鱼+翻船——比Raft更混乱的4人Co-op海上生存",
+          "enrichment": {
+            "game_name": "SHORE",
+            "genre": "生存 / Co-op / 海洋冒险",
+            "developer": "未公布",
+            "platforms": [
+              "未公布"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "最多4人合作的海上木筏生存游戏。\n\n【核心玩法】在危险海域操控木筏求生——躲避巨浪、暴风、鲨鱼和大漩涡。物理引擎让木筏极不稳定，需要团队协调才能前进。\n\n【美术风格】卡通渲染+丰富的海洋场景。\n\n【对标定位】Raft的海上生存 + 物理混乱Co-op。\n\n【优势】物理模拟增加混乱乐趣、多种海洋威胁。\n【不足】详情较少，需要与Raft形成差异化。",
+            "why_notable": "日本游戏媒体早期报道，物理混乱+海洋生存的组合引发关注"
+          },
+          "full_text": "海の危険メガ盛り！イカダで故郷を目指す最大4人協力サバイバル『SHORE』\n\n襲い来る大波、吹き荒れる暴風、飛び交うサメ、すべて呑み込む大渦…。海は危険がいっぱいで、イカダは不安定。片側に集まると転覆するぞ！パドルこぐタイミングが合わなくて進まない！果たして敵は海だけか？ https://t.co/6wb3mpCVfJ",
+          "link": "https://x.com/Indie_FreaksJP/status/2077151174252528104",
+          "tags": [],
+          "en_title": "",
+          "source": "Indie Freaks"
+        },
+        {
+          "idx": "新游推文 05",
+          "title": "Denshattack!：多家媒体评为2026年最佳游戏之一",
+          "author": "Eurogamer",
+          "date": "2026-07-15",
+          "likes": 31,
+          "views": 3212,
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNR2h66XkAE5-k1.jpg"
+          },
+          "summary": "铁路主题动作游戏Denshattack!获得Eurogamer、Rock Paper Shotgun、PC Gamer等多家媒体一致好评。Eurogamer称其\"反资本主义、朋克乐观主义的精华，叛逆、不可预测、有趣、放不下手\"。",
+          "analysis": "极少有独立游戏能在同一天获得三家以上主流媒体的推荐。Denshattack!以铁路+叛乱+拉面的荒诞组合证明了\"美学承诺+手感打磨\"可以让任何游戏超越题材本身。",
+          "recommendation": "铁路+反资本+朋克拉面——三家媒体同日推荐的2026年度最佳候选",
+          "enrichment": {
+            "game_name": "Denshattack!",
+            "genre": "动作 / 竞速 / 反资本朋克",
+            "developer": "未公布",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "已发售 · 2026年7月15日",
+            "steam_rating": "未确认",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "铁路主题的动作竞速游戏，融合反资本主义叙事和朋克美学。\n\n【核心玩法】铁路竞速+战斗+叛乱叙事。\n\n【美术与氛围】强烈的朋克视觉风格，日本铁路文化+反体制主题。\n\n【媒体评价】Eurogamer Essential、RPS/PC Gamer同日推荐，称为2026年迄今最佳游戏之一。\n\n【优势】美学高度统一、手感打磨精良、叙事独特。\n【不足】题材小众可能限制受众面。",
+            "why_notable": "Eurogamer/RPS/PC Gamer三家媒体同日推荐，罕见的一致好评"
+          },
+          "full_text": "Irreverent, unpredictable, funny, and unputdownable, Denshattack! is anti-capitalist, pop-punk optimism distilled. https://t.co/ZDCdQsVdFR https://t.co/YyOPtCE3bI",
+          "link": "https://x.com/eurogamer/status/2077415674247364812",
+          "tags": [],
+          "en_title": "",
+          "source": "Eurogamer"
+        },
+        {
+          "idx": "新游推文 06",
+          "title": "Roll Together：物理Co-op滚筒游戏今日Steam发售",
+          "author": "Roll Together",
+          "date": "2026-07-15",
+          "likes": 35,
+          "views": 3593,
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077315594647384064/img/iNm-_emOJte51ALy.jpg"
+          },
+          "summary": "物理Co-op游戏Roll Together正式在Steam上线。玩家合作控制一个巨大圆柱体滚过各种机关障碍。",
+          "analysis": "简单直觉的核心机制——多人合力滚动一个大圆柱。物理引擎带来的不可预测性是核心乐趣来源。Demo阶段收到积极反馈后选择正式发售。",
+          "recommendation": "合力滚动巨大圆柱过关——物理Co-op新品今日Steam上线",
+          "enrichment": {
+            "game_name": "Roll Together",
+            "genre": "Co-op / 物理解谜 / 派对",
+            "developer": "Nearly Done Games",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未确认",
+            "release_date": "已发售 · 2026年7月15日",
+            "steam_rating": "新上线",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "物理驱动的Co-op协作游戏。\n\n【核心玩法】多名玩家合作控制一个巨大圆柱体，滚动通过各种机关和障碍。\n\n【美术风格】明快卡通风格。\n\n【优势】核心机制直觉易懂、适合派对场景。\n【不足】体量和深度待验证。",
+            "why_notable": "Demo阶段积极反馈后正式发售，物理Co-op市场持续扩容"
+          },
+          "full_text": "🚨ROLL TOGETHER OUT NOW!🚨 https://t.co/P481enrjQC",
+          "link": "https://x.com/nearlydonegames/status/2077315820074484202",
+          "tags": [],
+          "en_title": "",
+          "source": "Roll Together"
+        },
+        {
+          "idx": "新游推文 07",
+          "title": "A Short Quest：前3A开发者做Gothic/Morrowind风格独立RPG突破1.1万愿望单",
+          "author": "Tali",
+          "date": "2026-07-14",
+          "likes": 134,
+          "views": 4164,
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077137441505349632/img/Dgj-cuuvKp2mrrJh.jpg"
+          },
+          "summary": "两人前3A开发者团队的独立RPG A Short Quest突破11000个Steam愿望单。游戏灵感来自Gothic和Morrowind等经典动作RPG，目标50000愿望单后发售。",
+          "analysis": "在id制作人刚说\"当前环境不可能再诞生Morrowind\"的背景下，这对前3A开发者正试图用独立方式实现那个愿景。11k愿望单证明市场需求真实存在，能否达到50k目标将决定项目命运。",
+          "recommendation": "前3A开发者挑战\"Morrowind不可能论\"，Gothic风RPG突破1.1万愿望单",
+          "enrichment": {
+            "game_name": "A Short Quest",
+            "genre": "动作RPG / 开放世界 / 经典复兴",
+            "developer": "Wildcraft Games（2人前3A团队）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "两人前3A开发者团队打造的经典动作RPG。\n\n【核心玩法】灵感来自Gothic和Morrowind的开放世界探索+动作战斗。\n\n【开发状态】已积累11000+愿望单，目标50000后发售。\n\n【优势】前3A开发经验+明确的经典RPG定位+稳步增长的社区。\n【不足】两人团队规模限制开发速度。",
+            "why_notable": "在\"Morrowind不可能再现\"的行业悲观论调下，前3A团队用独立方式践行这一愿景"
+          },
+          "full_text": "Holy shit we passed 11,000 wishlists!\n\nIf you're new here, we're a 2 man team of ex-AAA developers building an indie RPG inspired by old school action RPGs like Gothic and Morrowind.\n\nThe dream is to reach 50k wishlists before release, what offerings do I need to make to the algorithm gods? \n\nWishlist A Short Quest!",
+          "link": "https://x.com/wildcraft_games/status/2077152733392507323",
+          "tags": [],
+          "en_title": "",
+          "source": "Tali"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "title": "ThreeJS Assets：专为Web 3D优化的商用资产库正式上线",
+          "author": "ThreeJS Assets",
+          "date": "2026-07-13",
+          "likes": 368,
+          "views": 21612,
+          "media": {
+            "type": "text"
+          },
+          "summary": "ThreeJS Assets正式上线：专为ThreeJS打造的3D资产库，所有模型Web优化、即拖即用、商用授权清晰。同时发布首个资产包和免费浏览器Studio（Beta）。",
+          "analysis": "Web 3D的核心痛点之一是缺乏针对性优化的资产。通用3D资产通常面数过高、格式不兼容，导致Web端性能问题。ThreeJS Assets填补了这个空白，对WebXR和浏览器游戏开发者价值显著。",
+          "recommendation": "ThreeJS终于有了专属资产库——Web优化、即拖即用、商用清晰",
+          "full_text": "https://t.co/FrdfHRwII6 is live. 🎉\n\nA 3D asset library built specifically for @threejs: every model web-optimized, drop-in ready, cleanly licensed for commercial work.\n\nShipping 3 things at once today: the library, our first pack, and a free browser Studio (beta). 🧵",
+          "link": "https://x.com/threejsassets/status/2076759566516199849",
+          "tags": [],
+          "en_title": "",
+          "source": "ThreeJS Assets"
+        },
+        {
+          "idx": "开发工具 02",
+          "title": "枪击手感设计方法论：无实枪经验开发者的完整指南",
+          "author": "Crunio",
+          "date": "2026-07-15",
+          "likes": 448,
+          "views": 33915,
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077233033799999488/img/H_OEeOOuaUu_NvVR.jpg"
+          },
+          "summary": "日本CG媒体Crunio报道Unity开发者FcsVorfeed_Dev的枪击手感设计经验：通过研究CoD和The Division，调整反动、枪口闪光、特效和镜头演出，在没有实枪经验的情况下实现舒适的射击反馈。",
+          "analysis": "射击手感是FPS/TPS品类的核心体验要素，但很少有系统性的方法论分享。这篇报道将\"感觉对\"拆解为可调参数（反动曲线、视觉反馈、镜头震动），对独游FPS开发者极有参考价值。",
+          "recommendation": "没摸过真枪也能做出好枪感——反动、闪光、镜头演出的完整调参方法论",
+          "full_text": "実銃経験がない開発者が「気持ちいい銃撃感」をどう再現するか\n\nUnity開発者(FcsVorfeed_Dev氏)は、Call of DutyやThe Divisionを研究し、反動・マズルフラッシュ・エフェクト・カメラ演出を調整\n\nリアルさだけでなく、プレイヤーが心地よいと感じるフィードバック設計がガンプレイの完成度を左右する https://t.co/s2ieCf29f6",
+          "link": "https://x.com/Botan_cr/status/2077233092906082634",
+          "tags": [],
+          "en_title": "",
+          "source": "Crunio"
+        },
+        {
+          "idx": "开发工具 03",
+          "title": "开源精灵表工具推出Hosted版：无需配置即开即用",
+          "author": "Heroza Zhang",
+          "date": "2026-07-15",
+          "likes": 29,
+          "views": 1726,
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077200147721883649/img/DLcNPbH0JA9JJP6G.jpg"
+          },
+          "summary": "此前开源的精灵表生成工具在获得好评后推出全托管版本——无需配置Codex和API密钥，即开即用。支持导出GIF、视频和原始精灵表。上线庆祝期间5折优惠。",
+          "analysis": "从开源到SaaS的转型路径——先用免费版建立口碑，再推付费托管版降低使用门槛。这在开发者工具领域是经过验证的商业模式（类似Supabase、Vercel）。",
+          "recommendation": "开源精灵表工具推出无需配置的托管版，5折上线庆——开源→SaaS的经典路径",
+          "full_text": "Our open-source spritesheet tool got amazing feedback, but configuring Codex & API keys isn't for everyone.\n\nSo we built a fully hosted, out-of-the-box version! 🤗  **No setup required.**\n✅ Generate instantly & affordably\n✅ Export to GIF, Video, or raw Spritesheet\n\nEnjoy** 50% OFF** to celebrate the launch\nWould love to hear your feedback!",
+          "link": "https://x.com/HerozaZhan73432/status/2077200509107319085",
+          "tags": [],
+          "en_title": "",
+          "source": "Heroza Zhang"
+        },
+        {
+          "idx": "开发工具 04",
+          "title": "Unreal Engine × Subnautica 2：Epic Online Services跨平台联机案例",
+          "author": "Unreal Engine",
+          "date": "2026-07-15",
+          "likes": 19,
+          "views": 4578,
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNR-J0wbYAAs0bL.jpg"
+          },
+          "summary": "Unreal Engine分享Subnautica 2如何利用Epic Online Services实现跨平台联机。Unknown Worlds团队详解了EOS在海洋开放世界Co-op中的技术实现。",
+          "analysis": "跨平台联机是当前多人游戏的基本需求，但技术实现仍有门槛。Epic通过Subnautica 2这种标杆案例推广EOS，对中小团队有直接参考价值。",
+          "recommendation": "Subnautica 2跨平台联机技术详解——EOS在开放世界Co-op中的实战案例",
+          "full_text": "‘@Subnautica 2’ plunges players into a new ocean world with fresh creatures and online co-op.\n\nDiscover how @UnknownWorlds leveraged Epic Online Services to power cross-platform play: https://t.co/U9PXVas2LC https://t.co/4RtiqxXzPA",
+          "link": "https://x.com/UnrealEngine/status/2077424040286015603",
+          "tags": [],
+          "en_title": "",
+          "source": "Unreal Engine"
+        }
+      ]
+    }
+  ],
+  "editors_pick": [
+    {
+      "section": "indie",
+      "idx": "新游推文 01",
+      "reason": "49.5万views，混乱Co-op品类热度持续爆发"
+    },
+    {
+      "section": "ai",
+      "idx": "AI科技热点 01",
+      "reason": "AI对游戏发行生态的根本性威胁警告"
+    },
+    {
+      "section": "industry",
+      "idx": "游戏行业动态 01",
+      "reason": "Xbox裁员报告揭示行业系统性危机"
+    },
+    {
+      "section": "indie",
+      "idx": "新游推文 02",
+      "reason": "42.7万views，火车+生态建造创新概念"
+    },
+    {
+      "section": "industry",
+      "idx": "游戏行业动态 02",
+      "reason": "Far Cry IP影视化+Steve Buscemi选角"
+    },
+    {
+      "section": "indie",
+      "idx": "新游推文 05",
+      "reason": "三家媒体同日推荐的年度最佳候选"
+    },
+    {
+      "section": "ai",
+      "idx": "AI科技热点 06",
+      "reason": "解决AI生图到可用动画的最后一公里"
+    },
+    {
+      "section": "tools",
+      "idx": "开发工具 01",
+      "reason": "Web 3D开发者等待已久的专属资产库"
+    }
+  ],
+  "daily_summary": "**Co-op品类井喷：一天三款混乱协作新游公布**\n继Dear Passengers引爆社交传播后，Co-op品类的热度丝毫不减。今天同时公布的Shady Job（搬尸体上楼）、Railborn（火车上建生态圈）、Clay Clinic（6人疯狂医院）三款新游全部获得数十万级播放，\"和朋友一起搞砸事情\"正在成为2026年独立游戏的主流设计范式。\n\n**AI双刃剑：赋能开发者的同时正在淹没Steam**\nCircana分析师发出严厉警告——AI vibe coding将让好游戏\"被克隆和淹没\"。与此同时，100%日本在线游戏开发商已在使用GenAI（虽然主要用于分析而非创作），AutoSprite等工具继续降低2D动画制作门槛。AI同时是开发者的最强工具和最大威胁。\n\n**行业人事震荡持续**\nXbox Studios裁员报告揭示内部弥漫恐惧，Dead Space之父Glen Schofield宣布退休，AC Black Flag Resynced在创Steam系列最佳首发的同时开发商却在裁员罢工。行业正经历一场\"赚钱但裁人\"的结构性矛盾。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
+  "digest": [
+    {
+      "section": "ai",
+      "text": "Circana警告AI vibe coding将淹没Steam好游戏\nAaron Levie：代码可测试性是AI agent核心优势\n日本100%在线游戏开发商使用GenAI\nCodex+GPT-5.6制作2D连击动作游戏\nWorld Labs+Fable+ThreeJS生成3D场景\nAutoSprite: AI图像到精灵表动画自动生成"
+    },
+    {
+      "section": "industry",
+      "text": "Xbox Studios恐惧报告：无人能感到安全\nFar Cry电视剧确认Steve Buscemi主演\nDead Space之父Glen Schofield宣布退休\nAC Black Flag创Steam AC系列最佳首发\nGTA 6 PC不首发：从约束开始更好\nFromSoftware Duskbloods测试8月底开启"
+    },
+    {
+      "section": "indie",
+      "text": "Shady Job：49万views的黑手党搬尸体Co-op\nRailborn：42.7万views的火车生存建造\nClay Clinic：6人Co-op疯狂医院\nSHORE：海上木筏Co-op生存\nDenshattack!：三家媒体评2026年度最佳\nRoll Together：物理Co-op今日发售\nA Short Quest：前3A做Gothic风RPG"
+    },
+    {
+      "section": "tools",
+      "text": "ThreeJS Assets专属3D资产库上线\n枪击手感设计完整方法论\n精灵表工具推出Hosted版\nUE x Subnautica 2跨平台联机案例"
+    }
+  ]
+}
