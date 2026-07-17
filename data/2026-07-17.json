@@ -1,7 +1,7 @@
 {
   "meta": {
     "date": "2026-07-17",
-    "selected_count": 22,
+    "selected_count": 14,
     "source_count": 224,
     "prefilter_count": 183
   },
@@ -14,26 +14,6 @@
       "items": [
         {
           "idx": "AI科技热点 01",
-          "title": "Kimi K3首次在3D/游戏领域追平Fable 5",
-          "author": "Chetaslua",
-          "date": "2026-07-16",
-          "likes": 848,
-          "views": 77025,
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2077700438212972544/img/V0a6PbrfVi23eZ1m.jpg"
-          },
-          "summary": "多位开发者对比测试显示，中国AI模型Kimi K3在3D场景和游戏生成方面首次达到了与Fable 5（GPT-5.6 Sol）相当的水平，且在创造性方面表现更突出。",
-          "analysis": "中国模型首次在游戏/3D领域追平美国顶尖模型是标志性事件。如果Kimi K3定价更低，将直接冲击OpenAI在游戏AI辅助开发市场的主导地位。竞争加剧意味着开发者将获得更多选择。",
-          "recommendation": "中国模型Kimi K3首次追平Fable 5做3D/游戏，AI格局迎来真正竞争者",
-          "full_text": "Kimi K3 vs GPT-5.6 Sol \n\nDifference in taste is so stark , like if i swap kimi k 3 name with fable 5 people will trust it \n\nbut this is not only about visuals , its also about function , you can see both achieve same result but the way to achieve is different kimi is more creative",
-          "link": "https://x.com/chetaslua/status/2077701096924229744",
-          "tags": [],
-          "en_title": "",
-          "source": "Chetaslua"
-        },
-        {
-          "idx": "AI科技热点 02",
           "title": "Grok 4.5 Build全栈AI：自建引擎+ARPG+全部资产由AI生成",
           "author": "tetsuo",
           "date": "2026-07-16",
@@ -53,27 +33,7 @@
           "source": "tetsuo"
         },
         {
-          "idx": "AI科技热点 03",
-          "title": "零代码经验4天用Claude+Opus 4.8做出完整战斗机游戏",
-          "author": "Om Patel",
-          "date": "2026-07-16",
-          "likes": 345,
-          "views": 42721,
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2077553562293268480/img/pyPi42JFNwLYqtQp.jpg"
-          },
-          "summary": "一个完全没有编程经验的人，仅通过向Claude描述需求并反复迭代，4天内在Godot中完成了一款包含航母起飞、空战、导弹锁定的完整战斗机游戏。",
-          "analysis": "从\"36小时做AR游戏\"到\"4天做战斗机游戏\"，AI辅助开发的案例持续证明：非程序员入局游戏开发的门槛已经实质性消失。关键不再是会不会写代码，而是能不能清晰表达设计意图。",
-          "recommendation": "从未写过一行代码的人4天做出战斗机游戏，编程门槛实质性消失",
-          "full_text": "SOMEONE WITH ZERO CODING EXPERIENCE BUILT A FULL REALISTIC FIGHTER JET GAME WITH CLAUDE IN 4 DAYS\n\nthe guy has never written a line of code before.\n\nhe just described what he wanted to claude and kept iterating, and 4 days later he has a real flight combat game\n\n> you fly actual fighter jets, lock onto targets and fire missiles\n> it launches off a carrier, dogfights, the whole thing\n> claude code and opus 4.8 wrote and debugged all the game logic in godot\n> the planes and missiles are free 3d models, claude handled 100% of the code\n> hes even adding missions to it now\n\nimagine showing this 10, 20, 40 years ago. a person talking to a mic, going back and forth, and a fighter jet game comes out the other end.\n\nthe barrier to building was never the idea, it was the years of learning to code.\n\nthat barrier is just gone now",
-          "link": "https://x.com/om_patel5/status/2077553644996534595",
-          "tags": [],
-          "en_title": "",
-          "source": "Om Patel"
-        },
-        {
-          "idx": "AI科技热点 04",
+          "idx": "AI科技热点 02",
           "title": "Mint MCP：将任何coding agent变成完整3D引擎",
           "author": "tamrat",
           "date": "2026-07-14",
@@ -93,43 +53,23 @@
           "source": "tamrat"
         },
         {
-          "idx": "AI科技热点 05",
-          "title": "7天Fable 5做滑雪游戏：42000行原生WebGPU代码",
-          "author": "wyatt mattoe",
-          "date": "2026-07-15",
-          "likes": 526,
-          "views": 38217,
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2077489962665074688/img/2VgkRgoBf-jk1q9E.jpg"
-          },
-          "summary": "开发者wyatt mattoe展示用Fable 5做滑雪游戏的第7天进度：已有配乐（PS1风格Jungle/DnB）、手机端运行、增强雪景/光照/天空、新地形、摇杆控制。7天42000行纯WebGPU代码，不依赖任何引擎。",
-          "analysis": "42000行原生WebGPU在7天内生成——这个代码量相当于一个小型引擎。AI不仅在\"辅助\"，而是在以人类不可能的速度直接构建复杂系统。无引擎依赖意味着完全的性能控制权。",
-          "recommendation": "7天42000行原生WebGPU代码做滑雪游戏，AI产出速度超越人类极限",
-          "full_text": "Day 7 of building a snowboarding game with Fable 5🏂   \n\nIt's got a soundtrack now, PS1-style jungle/DnB, and it plays on mobile.    \n\nEnhanced snow, lighting, and sky quality. New terrain. Vertical stick control.\n\n1 week 42,000 lines of code,   \n\nAll raw Webgpu, no engine. https://t.co/cwijvReYFX",
-          "link": "https://x.com/wyattmattoe/status/2077490172589957207",
-          "tags": [],
-          "en_title": "",
-          "source": "wyatt mattoe"
-        },
-        {
-          "idx": "AI科技热点 06",
-          "title": "Roblox宣布AI文本生成游戏移动应用，声称不会产生AI垃圾",
-          "author": "Rock Paper Shotgun",
+          "idx": "AI科技热点 03",
+          "title": "Roblox推出Build：手机端AI一键生成游戏，7月28日上线",
+          "author": "KreekCraft",
           "date": "2026-07-16",
-          "likes": 1,
-          "views": 920,
+          "likes": 1379,
+          "views": 180003,
           "media": {
             "type": "text"
           },
-          "summary": "Roblox宣布计划让用户通过手机应用输入文字提示即可AI生成基础游戏。同时声称这不会让首页充斥AI垃圾内容。",
+          "summary": "Roblox宣布推出\"Build\"功能：用户可直接在手机应用中通过AI完全生成Roblox游戏。该功能对所有人免费开放，高级功能另收费。7月28日上线。",
           "analysis": "Roblox的AI游戏生成与Circana分析师的\"vibe coding淹没Steam\"警告形成呼应。不同的是Roblox有完整的分发和推荐系统控制权——它能否真正过滤AI垃圾将成为行业观察焦点。",
-          "recommendation": "Roblox让手机用户文字生成游戏，声称能控制AI垃圾——能否兑现是关键",
-          "full_text": "Roblox announce plans to let people AI generate basic games using text prompts stuck into a mobile app, but claim that won't fill their homepage with AI slop\n\nhttps://t.co/25qdSrp7XQ",
-          "link": "https://x.com/rockpapershot/status/2077778821042856400",
+          "recommendation": "Roblox让所有人手机上AI生成游戏——7月28日上线的Build功能免费开放",
+          "full_text": "Roblox is adding the ability to completely AI-Generate Roblox games straight from the mobile app.\n\nIt’s called Build and will be free for everyone with additional paid options for power users.\n\nLaunches on July 28th.",
+          "link": "https://x.com/KreekCraft/status/2077770693542863141",
           "tags": [],
           "en_title": "",
-          "source": "Rock Paper Shotgun"
+          "source": "KreekCraft"
         }
       ]
     },
@@ -284,42 +224,6 @@
         },
         {
           "idx": "新游推文 02",
-          "title": "Wild Wild Eden：Palworld式怪物养成开放世界+繁殖系统",
-          "author": "スチまと",
-          "date": "2026-07-16",
-          "likes": 1156,
-          "views": 164398,
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2077568946992201728/img/sdPP7oZeYFn-kLFi.jpg"
-          },
-          "summary": "Wild Wild Eden被日本游戏推荐账号大力介绍：在原始世界捕获怪物、建造天堂基地、不仅是劳动力还要喂食抚摸培养感情。核心卖点是\"繁殖系统\"——从父母遗传外形和能力。",
-          "analysis": "直接对标Palworld但加入了更深度的宠物养成和繁殖系统。\"数百小时物理溶ける\"的评价说明游戏循环设计有深度。日本社区的早期关注对Steam销量有正向影响。",
-          "recommendation": "Palworld+深度繁殖系统——日本玩家预言\"数百小时物理溶解\"的开放世界",
-          "enrichment": {
-            "game_name": "Wild Wild Eden",
-            "genre": "开放世界 / 生存建造 / 怪物养成",
-            "developer": "未公布",
-            "platforms": [
-              "Steam"
-            ],
-            "price": "未公布",
-            "release_date": null,
-            "steam_rating": "未发售",
-            "steam_url": null,
-            "header_image": null,
-            "youtube_video": null,
-            "description": "原始世界怪物养成开放世界生存建造。\n\n【核心玩法】捕获怪物+建造基地+繁殖系统（外形/能力遗传）。\n\n【对标定位】Palworld的怪物劳动 + ARK的繁殖深度。\n\n【优势】繁殖系统提供极深的游戏循环、怪物互动超越纯工具化。\n【不足】早期阶段，实际品质待验证。",
-            "why_notable": "16.4万views，日本游戏社区早期高度关注"
-          },
-          "full_text": "『パルワールド』もアツイが、こっちもめっちゃ時間溶けそう。\n\n原始の世界でモンスターを捕獲し、楽園基地を築き上げるオープンワールドサバイバルクラフト。単なる労働力じゃなく、一緒に飯を食って撫でて愛情を注ぎ絆を育むスローライフはただの入り口。沼りそうなのは親から子へ見た目や能力を引き継がせるブリーディングシステム。海外ニキも「この仕様なら数百時間は物理的に溶ける。」と、すでに覚悟をキメてる。\n『Wild Wild Eden』",
-          "link": "https://x.com/stmatomato/status/2077588531158143103",
-          "tags": [],
-          "en_title": "",
-          "source": "スチまと"
-        },
-        {
-          "idx": "新游推文 03",
           "title": "Ore Factory Squad：10万愿望单的Co-op矿业工厂今日发售",
           "author": "Geeklik",
           "date": "2026-07-16",
@@ -355,27 +259,7 @@
           "source": "Geeklik"
         },
         {
-          "idx": "新游推文 04",
-          "title": "Direland：念愿の部位破壊実装完成",
-          "author": "jockie",
-          "date": "2026-07-16",
-          "likes": 653,
-          "views": 144118,
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2077681454663036928/img/4L2q-b0p8zwPHgdp.jpg"
-          },
-          "summary": "日本独立开发者jockie展示其动作游戏Direland中期待已久的部位破坏系统实装效果。14.4万views的高关注度证明了社区对这款游戏的期待。",
-          "analysis": "部位破坏是动作游戏的核心满足感来源之一（Monster Hunter、Dead Space）。从前几天的蟹Boss战到今天的部位破坏，Direland的战斗系统在快速迭代中展现出令人期待的深度。",
-          "recommendation": "14万人围观的部位破坏实装——日本独游Direland战斗系统持续进化",
-          "full_text": "念願だった部位破壊の実装ができました\n#indiedev https://t.co/kVFfMT5xse",
-          "link": "https://x.com/KAIJIUUUUU/status/2077684389165797839",
-          "tags": [],
-          "en_title": "",
-          "source": "jockie"
-        },
-        {
-          "idx": "新游推文 05",
+          "idx": "新游推文 03",
           "title": "Guildrun：Roguelite自动战斗+公会经营Demo上线",
           "author": "Guildrun",
           "date": "2026-07-16",
@@ -411,7 +295,7 @@
           "source": "Guildrun"
         },
         {
-          "idx": "新游推文 06",
+          "idx": "新游推文 04",
           "title": "1024字节的3D游戏：无AI无ThreeJS的极限代码艺术",
           "author": "Frank Force",
           "date": "2026-07-14",
@@ -429,26 +313,6 @@
           "tags": [],
           "en_title": "",
           "source": "Frank Force"
-        },
-        {
-          "idx": "新游推文 07",
-          "title": "Catch Me!：4人对战鬼ごっこSteam限时免费",
-          "author": "電ファミニコゲーマー",
-          "date": "2026-07-16",
-          "likes": 3627,
-          "views": 532490,
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2077659974289981440/pu/img/O5prDPWNAuhmd5YJ.jpg"
-          },
-          "summary": "4人对战追逐游戏Catch Me!在Steam限时免费配布（至7月18日）。一人逃跑其余追逐，利用各种动作和机关在关卡中跑酷。类似\"变换鬼\"的积分制。",
-          "analysis": "限时免费是独游扩大用户基础的有效策略。53.2万views（主要来自日本游戏媒体电ファミ）说明日本市场对轻量级多人游戏的需求旺盛。",
-          "recommendation": "53万views的Steam限免追逐游戏——4人鬼ごっこ风格轻量对战",
-          "full_text": "【無料】最大4人対戦のハイテンポ鬼ごっこゲーム『Catch Me!』がSteamにて“無料”配布中。7月18日2時まで\nhttps://t.co/M5AQwP2hjS\n\n1人の逃走者と追跡者に分かれて多彩なアクションやギミックを活用しながらステージを駆け回る。変わり鬼のようなシステムで、ポイントを獲得しながら勝利を目指す https://t.co/ngWM1oo9ns",
-          "link": "https://x.com/denfaminicogame/status/2077660010939920634",
-          "tags": [],
-          "en_title": "",
-          "source": "電ファミニコゲーマー"
         }
       ]
     },
@@ -480,25 +344,6 @@
         },
         {
           "idx": "开发工具 02",
-          "title": "Vercel Sandbox日创350万+沙盒，DAU月增100%",
-          "author": "Guillermo Rauch",
-          "date": "2026-07-16",
-          "likes": 281,
-          "views": 85459,
-          "media": {
-            "type": "text"
-          },
-          "summary": "Vercel CEO分享Sandbox业务数据：DAU月环比增长100%、日创建350万+沙盒。已为Notion、Airtable、Meta、Zapier等提供服务。采用Active CPU计费模型。",
-          "analysis": "350万/天的沙盒创建量反映了AI coding agent对即时执行环境的爆发性需求。当AI写完代码需要立即测试时，无状态沙盒成为必需基础设施。这是AI开发工具链的关键底层。",
-          "recommendation": "日创350万沙盒+月增100%——AI coding agent爆发推动执行环境需求暴涨",
-          "full_text": "Vercel Sandbox:\n◾ Growing DAUs at 100% m/o/m\n◾ 3.5M+ sandboxes created per day\n◾ Best-in-class Active CPU pricing model\n◾ Powering @notion, @airtable, @meta, @zapier, @coderabbitai, @interaction, @conductor_build, @blackboxai… 🐐 farm \n\nMy DMs are open for migration help or if missing anything with: https://t.co/U9bNGNLdMZ",
-          "link": "https://x.com/rauchg/status/2077559189015335019",
-          "tags": [],
-          "en_title": "",
-          "source": "Guillermo Rauch"
-        },
-        {
-          "idx": "开发工具 03",
           "title": "用ThreeJS重建古埃及3D世界：8月11日上线可探索",
           "author": "Aureon_de_Veyra",
           "date": "2026-07-15",
@@ -523,18 +368,18 @@
   "editors_pick": [
     {
       "section": "ai",
+      "idx": "AI科技热点 03",
+      "reason": "Roblox平台级AI游戏生成Build功能7月28日上线，18万views"
+    },
+    {
+      "section": "ai",
       "idx": "AI科技热点 01",
-      "reason": "中国模型首次追平Fable做3D，AI格局迎来真竞争"
+      "reason": "Grok 4.5全栈AI自建引擎做ARPG——AI先造工具再造产品的新范式"
     },
     {
       "section": "industry",
       "idx": "游戏行业动态 01",
       "reason": "50万愿望单+Epstein争议，游戏营销伦理边界"
-    },
-    {
-      "section": "ai",
-      "idx": "AI科技热点 02",
-      "reason": "AI先造引擎再造游戏的全新范式"
     },
     {
       "section": "indie",
@@ -548,16 +393,6 @@
     },
     {
       "section": "indie",
-      "idx": "新游推文 06",
-      "reason": "50万views的1KB手工游戏——AI时代的人类创造力宣言"
-    },
-    {
-      "section": "ai",
-      "idx": "AI科技热点 03",
-      "reason": "零代码经验4天做战斗机游戏，编程门槛消失"
-    },
-    {
-      "section": "indie",
       "idx": "新游推文 03",
       "reason": "10万愿望单首日发售，矿业Co-op赛道验证"
     }
@@ -566,19 +401,19 @@
   "digest": [
     {
       "section": "ai",
-      "text": "Kimi K3首次追平Fable 5做3D/游戏\nGrok 4.5全栈AI自建引擎+ARPG\n零代码4天用Claude做战斗机游戏\nMint MCP：coding agent变3D引擎\n7天Fable 5做滑雪游戏42000行WebGPU\nRoblox宣布AI文本生成游戏移动应用"
+      "text": "Grok 4.5 Build全栈AI：自建引擎+ARPG+全部资产由AI生成\nMint MCP：将任何coding agent变成完整3D引擎\nRoblox推出Build：手机端AI一键生成游戏，7月28日上线"
     },
     {
       "section": "industry",
-      "text": "Dear Passengers争议：Epstein梗+50万愿望单\nid Software被迫转UE与微软声明矛盾\nSpiritVale MMO首日爆满服务器崩溃\nAC Black Flag首日200万份\nEA试探游戏内广告巨大机会"
+      "text": "Dear Passengers争议：Epstein梗引爆舆论，但已获4000万播放+50万愿望单\n报告：id Software确实被迫转Unreal Engine，与微软声明矛盾\nSpiritVale MMORPG Steam上线即爆满：服务器崩溃但游戏本身好评\nAC Black Flag Resynced首日卖出200万份\nEA：游戏内广告有\"巨大机会\"，但必须做得恰当"
     },
     {
       "section": "indie",
-      "text": "UNFROST：南极Co-op恐怖FPS核打击\nWild Wild Eden：Palworld式深度繁殖系统\nOre Factory Squad：10万愿望单今日发售\nDireland：14万views的部位破坏实装\nGuildrun：Roguelite自动战斗Demo\n1024字节3D游戏：无AI极限代码艺术\nCatch Me! Steam限免4人追逐"
+      "text": "UNFROST：南极Co-op恐怖FPS，收集证据后呼叫核打击撤离\nOre Factory Squad：10万愿望单的Co-op矿业工厂今日发售\nGuildrun：Roguelite自动战斗+公会经营Demo上线\n1024字节的3D游戏：无AI无ThreeJS的极限代码艺术"
     },
     {
       "section": "tools",
-      "text": "AutoSprite 8方向Isometric可做Diablo-like\nVercel Sandbox日创350万+月增100%\nThreeJS重建古埃及3D世界8/11上线"
+      "text": "AutoSprite更新：8方向Isometric动画生成，可做Diablo-like\n用ThreeJS重建古埃及3D世界：8月11日上线可探索"
     }
   ]
 }
