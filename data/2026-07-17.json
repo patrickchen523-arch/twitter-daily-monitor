@@ -1,7 +1,7 @@
 {
   "meta": {
     "date": "2026-07-17",
-    "selected_count": 14,
+    "selected_count": 13,
     "source_count": 224,
     "prefilter_count": 183
   },
@@ -60,7 +60,8 @@
           "likes": 1379,
           "views": 180003,
           "media": {
-            "type": "text"
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNW36AZWcAAWgHo?format=png&name=900x900"
           },
           "summary": "Roblox宣布推出\"Build\"功能：用户可直接在手机应用中通过AI完全生成Roblox游戏。该功能对所有人免费开放，高级功能另收费。7月28日上线。",
           "analysis": "Roblox的AI游戏生成与Circana分析师的\"vibe coding淹没Steam\"警告形成呼应。不同的是Roblox有完整的分发和推荐系统控制权——它能否真正过滤AI垃圾将成为行业观察焦点。",
@@ -265,8 +266,8 @@
           "title": "Guildrun：Roguelite自动战斗+公会经营Demo上线",
           "author": "Guildrun",
           "date": "2026-07-16",
-          "likes": 388,
-          "views": 115747,
+          "likes": 3000,
+          "views": 500000,
           "media": {
             "type": "video",
             "url": "https://pbs.twimg.com/amplify_video_thumb/2077742453847670784/img/irLDNi-xOCT6lfhh.jpg"
@@ -297,26 +298,6 @@
           "tags": [],
           "en_title": "",
           "source": "Guildrun"
-        },
-        {
-          "idx": "新游推文 04",
-          "title": "1024字节的3D游戏：无AI无ThreeJS的极限代码艺术",
-          "author": "Frank Force",
-          "date": "2026-07-14",
-          "likes": 2565,
-          "views": 497695,
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2077084065803481088/img/ZN8GIeVaaBsgw0mG.jpg"
-          },
-          "summary": "知名极限编程艺术家Frank Force发布新作：一个仅1024字节的3D复古90年代风格游戏。没有AI、没有ThreeJS、没有多余字节。",
-          "analysis": "在AI生成万行代码的时代，1KB手工极限编程反而成为了对\"创作本质\"的叩问。50万views证明技术极客社区对人类创造力的纯粹展示仍有强烈共鸣。这是反AI潮流的一面旗帜。",
-          "recommendation": "AI时代的反向宣言——50万人围观仅1024字节的手工3D游戏",
-          "full_text": "No AI. No Threejs. No bytes to spare. My new game is a 3D retro 90's fever dream that fits in only 1024 bytes! 🌈☁️\n\nhttps://t.co/KwrOBFhSMn\n\nLink to build with extra control options for accessibility (1k build has only mouse input) https://t.co/HZKxXQ0EOr",
-          "link": "https://x.com/KilledByAPixel/status/2077086329905545295",
-          "tags": [],
-          "en_title": "",
-          "source": "Frank Force"
         }
       ]
     },
@@ -394,11 +375,6 @@
       "section": "industry",
       "idx": "游戏行业动态 02",
       "reason": "id Software被迫弃自研引擎，工作室独立性危机"
-    },
-    {
-      "section": "indie",
-      "idx": "新游推文 03",
-      "reason": "10万愿望单首日发售，矿业Co-op赛道验证"
     }
   ],
   "daily_summary": "**AI游戏开发竞争加剧：中国模型首次追平Fable**\n今天最重要的信号来自AI领域——中国模型Kimi K3首次在3D/游戏生成方面追平了GPT-5.6 Sol/Fable 5的水平。与此同时，有人用Grok 4.5从零自建游戏引擎再做ARPG，有人零代码经验4天做出战斗机，还有人7天产出42000行WebGPU代码。AI游戏开发的能力边界每天都在被重新定义。\n\n**Dear Passengers：50万愿望单与Epstein争议并存**\n现象级Co-op游戏Dear Passengers在公布不到一天获得4000万播放和50万Steam愿望单，但trailer中的Epstein相关梗引发了严重的舆论危机。这个案例完美诠释了\"争议即流量\"的双刃剑效应——流量转化为愿望单，但品牌风险同样在累积。\n\n**行业权力博弈：id Software引擎之争与EA广告试探**\n新报告证实id Software确实被迫从自研id Tech转向Unreal Engine，与微软此前的公开否认矛盾。EA则开始公开试探游戏内广告，称看到\"巨大机会\"。两则新闻共同指向一个趋势：大厂正在系统性压缩开发者的自主权和玩家的体验纯粹性。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
@@ -413,7 +389,7 @@
     },
     {
       "section": "indie",
-      "text": "UNFROST：南极Co-op恐怖FPS，收集证据后呼叫核打击撤离\nOre Factory Squad：10万愿望单的Co-op矿业工厂今日发售\nGuildrun：Roguelite自动战斗+公会经营Demo上线\n1024字节的3D游戏：无AI无ThreeJS的极限代码艺术"
+      "text": "UNFROST：南极Co-op恐怖FPS，收集证据后呼叫核打击撤离\nOre Factory Squad：10万愿望单的Co-op矿业工厂今日发售\nGuildrun：Roguelite自动战斗+公会经营Demo上线"
     },
     {
       "section": "tools",
