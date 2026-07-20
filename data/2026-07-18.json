@@ -1,0 +1,706 @@
+{
+  "date": "2026-07-18",
+  "meta": {
+    "raw_count": 229,
+    "filtered_count": 185,
+    "selected_count": 20,
+    "crawl_time": "2026-07-18 18:00"
+  },
+  "lede": "中国开源实时3D重建模型，单摄像头无LiDAR稳定万帧；Kimi K3连续刷屏AI游戏生成；Bethesda公布Fallout 5、FO3/NV重制、TES6路线图。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "中国开源实时3D场景重建——单摄像头、无LiDAR、万帧稳定"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 1,
+      "hook": "土耳其独立开发者首日26K销量/$233K收入/5522 PCU"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "中国开源实时3D重建模型引爆CV社区\nKimi K3以极低成本生成完整游戏原型\nRoblox AI战略引发开发者担忧"
+    },
+    {
+      "id": "industry",
+      "text": "Bethesda公布Fallout 5+FO3/NV重制+TES6路线图\nMeccha Chameleon两人两月创收$71.3M登顶Steam\nSteam恶意软件诈骗犯被FBI通过Uber Eats追踪逮捕"
+    },
+    {
+      "id": "indie",
+      "text": "日本苦行系方块整理游戏引爆社区\nOre Factory Squad首日26K销量5522 PCU\nFunnel Runners龙卷风合作生存上线"
+    },
+    {
+      "id": "tools",
+      "text": "Godot地图编辑器自动生成风格化3D世界\n开源Three.js树木生成器可导出GLB"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Superman · AI/CV",
+          "tags": [
+            "3D重建",
+            "开源",
+            "计算机视觉"
+          ],
+          "title": "中国开源实时3D场景重建模型：单摄像头无LiDAR，万帧稳定20fps",
+          "en_title": "China open-sourced a model that reconstructs any scene in 3D from a regular video, in real-time.",
+          "full_text": "China open-sourced a model that reconstructs any scene in 3D from a regular video, in real-time.\n\none camera. no LiDAR. 10,000+ frames without falling apart.\n\njust walk around with your camera and watch the entire world get rebuilt in 3D at 20 fps.\n\n→ runs at ~20 FPS on a single GPU\n→ Stable over 10,000+ frames\n→ Beats optimization-based methods on benchmarks\n→ Works on drone footage, driving videos, indoor walkthroughs\n\n100% open source.",
+          "author": "thesupermanmx",
+          "date": "2026-07-16",
+          "likes": 13128,
+          "views": 1046729,
+          "link": "https://x.com/thesupermanmx/status/2077779856050606155",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077779593252274176/img/QcPImhDtgBFJCMEt.jpg",
+            "video_url": "https://x.com/thesupermanmx/status/2077779856050606155/video/1"
+          },
+          "summary": "中国团队开源了一个实时3D场景重建模型，仅需单摄像头、无需LiDAR，可在单GPU上以20fps稳定处理超过1万帧。支持无人机航拍、驾驶视频、室内漫游等多场景。",
+          "analysis": "实时3D重建对游戏行业意义重大：可大幅降低场景建模成本，未来结合游戏引擎可能实现\"拍一段视频即生成可玩关卡\"。开源意味着中小团队也能用上这项技术。",
+          "recommendation": "中国开源实时3D重建——单摄像头万帧稳定，场景建模成本或骤降",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "ChrissGPT · AI游戏生成",
+          "tags": [
+            "Kimi K3",
+            "AI编程",
+            "成本对比"
+          ],
+          "title": "Kimi K3用$3.24生成CS:GO×Portal混搭游戏，同等token在Fable 5需$10.80",
+          "en_title": "Kimi K3 just 3 shotted this CS:GO × Portal clone for me using around 600,000 tokens. $3.24 in API usage.",
+          "full_text": "Kimi K3 just 3 shotted this CS:GO × Portal clone for me using around 600,000 tokens.\n\n$3.24 in API usage. The same token cost would be $10.80 with Fable 5 & $6 with GPT-5.6 Sol.\n\nThe era of free indie game development is closer than you think anon!",
+          "author": "ChrissGPT",
+          "date": "2026-07-16",
+          "likes": 3387,
+          "views": 405319,
+          "link": "https://x.com/ChrissGPT/status/2077852656182129078",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077852609180774400/img/4jbMOaCpK08DG0au.jpg",
+            "video_url": "https://x.com/ChrissGPT/status/2077852656182129078/video/1"
+          },
+          "summary": "Kimi K3仅用60万token（$3.24）即生成了一个CS:GO与Portal混搭的完整游戏原型。同等token量在Fable 5需$10.80，GPT-5.6 Sol需$6。",
+          "analysis": "开源模型的成本优势正在改变AI游戏生成的经济模型。当生成一个游戏原型的API成本降到几美元时，独立开发者可以用极低成本快速验证创意。",
+          "recommendation": "Kimi K3用$3.24生成CS:GO×Portal——开源模型成本仅闭源1/3",
+          "featured": false
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Rubzem · AI游戏",
+          "tags": [
+            "Kimi K3",
+            "FPS",
+            "单prompt生成"
+          ],
+          "title": "Kimi K3单prompt重现Halo CE 10v10多人模式",
+          "en_title": "Kimi K3 is actually crazy. Someone just remade HALO CE 10v10 multiplayer with one prompt.",
+          "full_text": "Kimi K3 is actually crazy. Someone just remade HALO CE 10v10 multiplayer with one prompt. No engine. No dev team. No months of work.\n\nKimi K3 is miles better than Anthropics Fable 5 from what I can see. We will be seing AI game making take over after the summer!",
+          "author": "Rubzem",
+          "date": "2026-07-17",
+          "likes": 2807,
+          "views": 274919,
+          "link": "https://x.com/Rubzem/status/2077918377675215039",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077917387068735488/img/z1Q1CYWcKOp3e-Pe.jpg",
+            "video_url": "https://x.com/Rubzem/status/2077918377675215039/video/1"
+          },
+          "summary": "社区用户展示用Kimi K3单次prompt重现了Halo CE的10v10多人对战模式，无需引擎、无需开发团队。",
+          "analysis": "单prompt生成完整多人FPS的demo，标志着AI游戏生成从\"玩具级\"向\"功能级\"跨越。虽然质量离商业标准尚远，但迭代速度惊人。",
+          "recommendation": "单prompt重现Halo CE多人模式——Kimi K3刷新AI游戏生成认知",
+          "featured": false
+        },
+        {
+          "idx": "AI科技热点 04",
+          "source": "Chong-U · AI+游戏开发",
+          "tags": [
+            "Kimi K3",
+            "Grok Build",
+            "资产生成"
+          ],
+          "title": "Kimi K3+Grok Build生成纸片马里奥风格游戏，自动处理遮挡半透明",
+          "en_title": "I built a Paper Mario-inspired game with Kimi K3 (with Grok Build as harness)",
+          "full_text": "Kimi K3 is looking really impressive.\n\nI built a Paper Mario-inspired game with Kimi K3 (with Grok Build as harness)\n\nIt was able to make use of the agent skills and tool calls to generate both 2D and 3D assets.\n\n2D used Spriterrific / 3D from geometry.\n\nBut what caught my eye was how it knew to make the top of the tree translucent when the player character was behind it.\n\nI didn’t prompt for that - it just handled it by itself.\n\nIt also handled the 'card flip' animation on its own.",
+          "author": "chongdashu",
+          "date": "2026-07-16",
+          "likes": 1275,
+          "views": 54855,
+          "link": "https://x.com/chongdashu/status/2077886028866531655",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077884883179847680/img/Jyvr-dmCPprscyxH.jpg",
+            "video_url": "https://x.com/chongdashu/status/2077886028866531655/video/1"
+          },
+          "summary": "开发者用Kimi K3配合Grok Build生成了纸片马里奥风格游戏。K3自动调用工具生成2D/3D资产，并自主实现了树木遮挡半透明和卡片翻转动画。",
+          "analysis": "AI展现了\"游戏设计直觉\"——自动处理遮挡是需要理解玩家体验的决策。Agent工具链的组合模式可能成为未来AI游戏开发的标准工作流。",
+          "recommendation": "Kimi K3自主实现遮挡半透明——AI展现游戏设计直觉",
+          "featured": false
+        },
+        {
+          "idx": "AI科技热点 05",
+          "source": "SurferRBLX · 行业观察",
+          "tags": [
+            "Roblox",
+            "AI战略",
+            "平台经济"
+          ],
+          "title": "Roblox被指试图用AI替代开发者：平台收入爆炸但开发者失去机会",
+          "en_title": "I’m 100% convinced Roblox wants to build an ecosystem where they no longer have to rely on paying developers their share",
+          "full_text": "I’m 100% convinced Roblox wants to build an ecosystem where they no longer have to rely on paying developers their share, and instead have AI generate a huge portion of the games on the platform. If they pull that off, their revenue would explode, but it would also mean thousands of developers losing opportunities as AI replaces work that people are doing today.\n\nNot to mention, it'll lack that creativity that actual human creators have, and show a DRASTIC decrease in overall quality.",
+          "author": "SurferRBLX",
+          "date": "2026-07-17",
+          "likes": 347,
+          "views": 24363,
+          "link": "https://x.com/SurferRBLX/status/2077970765077520480",
+          "media": null,
+          "summary": "Roblox社区KOL指出Roblox的AI战略本质是用AI生成游戏替代人类开发者，从而不再需要支付开发者分成。平台收入将爆炸但数千开发者将失去机会。",
+          "analysis": "UGC平台的核心矛盾：AI降低创作门槛同时稀释创作者价值。如果Roblox走这条路，可能引发平台生态危机——缺乏人类创意的AI内容能否留住玩家是关键。",
+          "recommendation": "Roblox AI战略争议：用AI替代开发者，收入爆炸但生态堪忧",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Bethesda Game Studios · 官方",
+          "tags": [
+            "Bethesda",
+            "Fallout",
+            "TES6",
+            "路线图"
+          ],
+          "title": "Bethesda公布未来路线图：Fallout 5预制作、FO3/NV重制、TES6继续开发",
+          "en_title": "A NOTE FROM BETHESDA GAME STUDIOS - We want to share what’s next",
+          "full_text": "A NOTE FROM BETHESDA GAME STUDIOS\n\nWe love making these worlds as much as you love playing in them. Today, we want to share what’s next for Bethesda Game Studios and what you can expect from us in the years ahead.\n\nFor forty years, we’ve built games that have entertained almost half a billion players. More than just games, these are worlds. Worlds for you to explore, shape, and make your own. Worlds we return to together.\n\nThat’s what’s driving us forward. We're investing more deeply in the worlds you love.",
+          "author": "BethesdaStudios",
+          "date": "2026-07-17",
+          "likes": 49833,
+          "views": 3154757,
+          "link": "https://x.com/BethesdaStudios/status/2078117386935214101",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNbrtCkWkAAiEof.jpg"
+          },
+          "summary": "Bethesda发布官方声明公布未来路线图：Fallout 5进入预制作阶段（使用新Creation Engine 3）、Fallout 3和New Vegas重制版开发中、TES6继续推进、Obsidian将开发新Fallout作品。",
+          "analysis": "在Xbox大裁员后Bethesda急需稳定军心。一次性公布多个重磅项目说明微软仍在投入Bethesda IP，但Fallout 5仅\"预制作\"意味着至少3-4年后才能见到。",
+          "recommendation": "Bethesda一口气公布Fallout 5+FO3/NV重制+TES6——裁员后战略稳军心",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Dexerto · 数据",
+          "tags": [
+            "Steam",
+            "销量",
+            "独游奇迹"
+          ],
+          "title": "Meccha Chameleon：两人两月开发，$71.3M收入，2026年Steam销量冠军",
+          "en_title": "Meccha Chameleon is now 2026’s best-selling game on Steam by copies sold",
+          "full_text": "Meccha Chameleon is now 2026’s best-selling game on Steam by copies sold\n\nMade in 2 months by two developers, it has made $71.3 million, per Alinea Analytics",
+          "author": "Dexerto",
+          "date": "2026-07-17",
+          "likes": 5939,
+          "views": 243401,
+          "link": "https://x.com/Dexerto/status/2078094895101718731",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNbgSjxWUAATlAa.jpg"
+          },
+          "summary": "据Alinea Analytics数据，Meccha Chameleon已成为2026年Steam按销量计最畅销游戏，累计收入达7130万美元。该游戏仅由两名开发者用两个月时间制作。",
+          "analysis": "又一个\"小团队大爆款\"案例，证明Steam市场仍然对创意玩法极度友好。两人两月$71.3M的ROI可能是独游史上最高之一。",
+          "recommendation": "两人两月$71.3M——Meccha Chameleon登顶2026年Steam销量榜",
+          "featured": true,
+          "game_ref": "Meccha Chameleon",
+          "enrichment": {
+            "game_name": "Meccha Chameleon",
+            "genre": "Action / Platformer",
+            "developer": "2人独立团队",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "¥26",
+            "release_date": "已发售 · 2026年6月9日",
+            "steam_rating": null,
+            "steam_url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+            "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/4704690/header.jpg",
+            "youtube_video": null,
+            "description": "【核心玩法】变色龙主题动作游戏，两人开发两月完成。具体机制待确认。\n\n【市场表现】据Alinea Analytics数据，累计收入$71.3M，2026年Steam按销量计最畅销游戏。\n\n【优势】极低开发成本，极高ROI；证明Steam市场对创意玩法的友好度。\n【不足】具体游戏内容和长线留存待观察。\n\n【综合】独游史上最高ROI案例之一。",
+            "why_notable": "两人两月开发创造$71.3M收入，登顶Steam年度销量榜"
+          }
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Dexerto · 安全",
+          "tags": [
+            "Steam",
+            "恶意软件",
+            "FBI"
+          ],
+          "title": "Steam恶意软件诈骗犯被FBI逮捕：通过Uber Eats送餐记录追踪",
+          "en_title": "A suspected crypto scammer has been arrested for stealing $220,000 by hiding malware inside Steam games",
+          "full_text": "A suspected crypto scammer has been arrested for stealing $220,000 by hiding malware inside Steam games\n\nFBI tracked him through his Uber Eats deliveries",
+          "author": "Dexerto",
+          "date": "2026-07-17",
+          "likes": 27912,
+          "views": 1175923,
+          "link": "https://x.com/Dexerto/status/2078042045835313462",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNawOZpXQAAUPvd.jpg"
+          },
+          "summary": "一名加密诈骗犯被捕，其通过在Steam游戏中隐藏恶意软件窃取了$220,000。FBI通过其Uber Eats送餐记录追踪到本人。",
+          "analysis": "Steam平台安全问题再次曝光。对开发者的启示：Steam可能会加强上架审核机制，小团队上架门槛可能提高。",
+          "recommendation": "Steam恶意软件骗$22万被FBI抓——靠Uber Eats送餐记录锁定",
+          "featured": false
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "GameSpot · 平台",
+          "tags": [
+            "Netflix",
+            "游戏业务",
+            "增长"
+          ],
+          "title": "Netflix游戏业务部分指标增长600%，但仍处早期阶段",
+          "en_title": "Netflix Says Part Of Its Games Business Is Up 600%, But It’s Still Early Days",
+          "full_text": "Netflix Says Part Of Its Games Business Is Up 600%, But It's Still Early Days",
+          "author": "GameSpot",
+          "date": "2026-07-17",
+          "likes": 16,
+          "views": 10968,
+          "link": "https://x.com/GameSpot/status/2078134144270569588",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNcD_Vma4AAA_Wb.jpg"
+          },
+          "summary": "Netflix表示其游戏业务部分指标增长600%，但强调仍处于早期阶段。",
+          "analysis": "600%增长听起来惊人但基数极低。Netflix游戏的核心问题仍是用户发现和留存。但作为\"免费附带\"模式，它正在慢慢积累用户习惯。",
+          "recommendation": "Netflix游戏业务增长600%——基数低但方向明确",
+          "featured": false
+        },
+        {
+          "idx": "游戏行业 05",
+          "source": "PC Gamer · 平台政策",
+          "tags": [
+            "GOG",
+            "Sony",
+            "实体游戏",
+            "数字版权"
+          ],
+          "title": "GOG回怼Sony取消实体光碟：强调数字版权归属问题",
+          "en_title": "GOG sticks it to Sony over physical game discs",
+          "full_text": "GOG sticks it to Sony over physical game discs",
+          "author": "pcgamer",
+          "date": "2026-07-17",
+          "likes": 406,
+          "views": 20776,
+          "link": "https://x.com/pcgamer/status/2077970528183390497",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2077970470033637376/pu/img/T9HzOtsXUHP4dtPC.jpg",
+            "video_url": "https://x.com/pcgamer/status/2077970528183390497/video/1"
+          },
+          "summary": "GOG回应Sony取消实体光碟的决定，强调数字版权归属和无DRM的重要性。",
+          "analysis": "Sony全面转向数字版后，GOG的\"你购买的就是你的\"理念获得更多关注。数字版权议题将成为未来平台竞争的重要差异化点。",
+          "recommendation": "GOG回怼Sony取消光碟——数字版权归属争议升温",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "電ファミニコゲーマー · 日本媒体",
+          "tags": [
+            "益智",
+            "整理",
+            "苦行"
+          ],
+          "title": "色で仕分けるな：超苦行系方块整理游戏Steam页面公开——73.7万浏览",
+          "en_title": "超苦行系ブロックお片付けゲーム『色で仕分けるな』Steamストアページが公開",
+          "full_text": "超苦行系ブロックお片付けゲーム『色で仕分けるな』Steamストアページが公開。つらそう\nhttps://t.co/dAodUYXQXr\n\n床じゅうに散らばったブロックを一個ずつ拾ってお片付け。ブロックにはエグい数の種類があるが「色ではなく形で分けろ」が絶対のルール。この山の下のどこかに、あなたの床がある",
+          "author": "denfaminicogame",
+          "date": "2026-07-17",
+          "likes": 5467,
+          "views": 736868,
+          "link": "https://x.com/denfaminicogame/status/2077987623826842100",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2077987579727921152/pu/img/9r8qWGzGsDObJG-w.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2077987623826842100/video/1"
+          },
+          "summary": "日本游戏媒体报道了\"超苦行系\"方块整理游戏《色で仕分けるな》的Steam页面公开。玩家需要逐个捡起散落满地的方块，按\"形状而非颜色\"分类归位。73.7万浏览。",
+          "analysis": "",
+          "recommendation": "超苦行系方块整理——\"按形不按色\"的极简规则引爆日本社区",
+          "featured": true,
+          "enrichment": {
+            "game_name": "色で仕分けるな (Don’t Sort By Color)",
+            "genre": "Puzzle / 整理 / 苦行系",
+            "developer": "未公开",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": null,
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】满地散落的方块需要逐个捡起归位，规则只有一条：按形状分类，绝不能按颜色分。方块种类数量惊人，\"你的地板就在这座山下面的某个地方\"。\n\n【美术与氛围】极简3D画面，房间被方块淹没的压迫感构成核心体验。属于\"看着就累\"的苦行系设计。\n\n【对标定位】类似Unpacking的整理游戏但走向极端苦行。\n\n【优势】规则极简但执行痛苦，天然具有直播/短视频传播力；73万浏览证明话题性。\n【不足】可能属于\"看比玩有趣\"的类型；长线留存存疑。\n\n【综合】靠极端规则设计制造话题的案例，\"苦行+整活\"在日本市场传播力巨大。",
+            "why_notable": "73.7万浏览量证明\"苦行+整活\"设计的传播力"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Enes Çetin · 独立开发者(土耳其)",
+          "tags": [
+            "工厂",
+            "合作",
+            "首日数据"
+          ],
+          "title": "Ore Factory Squad：土耳其独立开发者首日26K销量/$233K/5522 PCU",
+          "en_title": "Ore Factory Squad first 24h: 26K sales, $233K gross, 5522 all-time peak",
+          "full_text": "Dün Ore Factory Squad'ı yayınladık.\n\nİlk 24 saat:\n26 bin adet satış,\n233 bin $ brüt gelir,\n5.522 all-time peak,\n%2,7 iade,\n2s 25dk medyan oynama süresi,\nSatışa göre ülkeler: DE %23, US %18, FR %5, PL %5\n\nDeneyen ve destekleyen herkese tesekkurler!",
+          "author": "enescetin1903",
+          "date": "2026-07-17",
+          "likes": 153,
+          "views": 6260,
+          "link": "https://x.com/enescetin1903/status/2078129914793111806",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNXnpola8AA4a8z.png"
+          },
+          "summary": "土耳其独立开发者公布Ore Factory Squad首日数据：26,000份销量、$233K毛收入、5,522 PCU峰值、2.7%退款率、中位游玩时长2小时25分。德国占比最高(23%)。",
+          "analysis": "",
+          "recommendation": "土耳其独立开发首日26K销量/$233K——5522PCU工厂合作新游",
+          "featured": true,
+          "game_ref": "Ore Factory Squad",
+          "enrichment": {
+            "game_name": "Ore Factory Squad",
+            "genre": "Co-op / Factory / Mining",
+            "developer": "Enes Çetin（土耳其独立开发者）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "¥49（-25%=¥36.75）",
+            "release_date": "已发售 · 2026年7月16日",
+            "steam_rating": null,
+            "steam_url": "https://store.steampowered.com/app/4210580/Ore_Factory_Squad/",
+            "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/4210580/header.jpg",
+            "youtube_video": null,
+            "description": "【核心玩法】多人合作矿石工厂经营游戏。玩家组队采矿、建设生产线、管理资源。\n\n【市场表现】首日26K销量、$233K毛收入、5,522 PCU。退款率仅2.7%（优秀）。中位游玩时长2.5小时。\n\n【地区分布】德国23%、美国18%、法国5%、波兰5%——欧洲市场主导。\n\n【优势】合作工厂赛道仍有空间；退款率低说明玩家满意度高。\n【不足】目前无英文评价数据；品类竞争激烈。\n\n【综合】土耳其开发者的扎实出道作，首日数据全面优秀。",
+            "why_notable": "首日26K销量/$233K/5522PCU/2.7%退款率——数据全面优秀",
+            "pcu": "5,522",
+            "estimated_sales": "26,000（首24小时）"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "WhatGames · 新游",
+          "tags": [
+            "合作",
+            "龙卷风",
+            "生存"
+          ],
+          "title": "Funnel Runners：最多8人合作逃离龙卷风，已上线Steam",
+          "en_title": "Funnel Runners is a co-op survival game about escaping an unstoppable tornado, OUT NOW!",
+          "full_text": "Funnel Runners is a co-op survival game about escaping an unstoppable tornado, OUT NOW!\n\nHighlights\n- Team up with up to 8 players\n- Search the city for parts to repair your van\n- Escape deadly storms as the city collapses around you\n\n10% launch discount",
+          "author": "whatgamesv1",
+          "date": "2026-07-16",
+          "likes": 1278,
+          "views": 162127,
+          "link": "https://x.com/whatgamesv1/status/2077842189502026189",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077841573811724288/img/urpijGjNQm188-Rs.jpg",
+            "video_url": "https://x.com/whatgamesv1/status/2077842189502026189/video/1"
+          },
+          "summary": "合作生存游戏Funnel Runners已上线Steam，最多8人组队在龙卷风中搜索城市零件修复面包车逃离。首发-10%折扣。",
+          "analysis": "",
+          "recommendation": "8人合作逃龙卷风——城市崩塌中修车逃生的派对生存游戏",
+          "featured": false,
+          "game_ref": "Funnel Runners",
+          "enrichment": {
+            "game_name": "Funnel Runners",
+            "genre": "Co-op / Survival / Party",
+            "developer": "未公开",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "¥55（-10%=¥49.50）",
+            "release_date": "已发售 · 2026年7月16日",
+            "steam_rating": null,
+            "steam_url": "https://store.steampowered.com/app/3712080/Funnel_Runners/",
+            "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/3712080/header.jpg",
+            "youtube_video": null,
+            "description": "【核心玩法】最多8人在线合作，在龙卷风中搜索城市废墟收集零件修复面包车逃离。城市逐渐崩塌增加时间压力。\n\n【对标定位】Lethal Company/Content Warning式合作派对游戏路线，以自然灾害替代超自然元素。\n\n【优势】8人合作适合直播；龙卷风题材视觉冲击力强。\n【不足】派对合作赛道拥挤；长线内容量待观察。\n\n【综合】龙卷风主题合作生存，16万浏览说明市场兴趣存在。",
+            "why_notable": "16万浏览量的龙卷风合作生存"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "Indie Game Joe · 新游公布",
+          "tags": [
+            "潜艇",
+            "合作",
+            "公布"
+          ],
+          "title": "S.O.N.A.R.：合作潜艇探险游戏公布——修漏、寻宝、对抗敌舰",
+          "en_title": "A new game has been announced where you and your friends crew a cutting-edge submarine",
+          "full_text": "A new game has been announced where you and your friends crew a cutting-edge submarine\n\n- Repair leaks\n- Hunt for treasures\n- Locate hostile vessels\n- Cook food and drink coffee\n\nIt’s called S.O.N.A.R. Would you play this?",
+          "author": "IndieGameJoe",
+          "date": "2026-07-16",
+          "likes": 1117,
+          "views": 134415,
+          "link": "https://x.com/IndieGameJoe/status/2077778894434787432",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077776207580479488/img/R87AOqUVz523LCJK.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2077778894434787432/video/1"
+          },
+          "summary": "合作潜艇游戏S.O.N.A.R.公布。玩家与朋友一起驾驶尖端潜艇：修理漏水、搜寻宝藏、定位敌方舰艇、烹饪食物和冲咖啡。",
+          "analysis": "",
+          "recommendation": "合作潜艇新游S.O.N.A.R.——修漏寻宝反潜战还能煮咖啡",
+          "featured": false,
+          "enrichment": {
+            "game_name": "S.O.N.A.R.",
+            "genre": "Co-op / Submarine / Simulation",
+            "developer": "未公开",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": null,
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】多人合作驾驶潜艇，分工协作：修理漏水、搜索宝藏、声呐定位敌舰、日常生活（烹饪/冲咖啡）。\n\n【对标定位】Barotrauma + Lethal Company式分工合作。\n\n【优势】13.4万浏览说明市场兴趣大；合作潜艇品类竞品少。\n【不足】仅公布阶段，成品质量未知。\n\n【综合】合作潜艇赛道新入局者，高关注度说明品类需求未被充分满足。",
+            "why_notable": "13.4万浏览量，合作潜艇品类竞品稀缺"
+          }
+        },
+        {
+          "idx": "新游推文 05",
+          "source": "AUTOMATON · 日本媒体",
+          "tags": [
+            "卡牌构筑",
+            "肉鸽",
+            "和风"
+          ],
+          "title": "Tailspinner：全面和风化的StS式卡牌肉鸽，8月6日发售",
+          "en_title": "「和風」に全振りデッキ構築ローグライク『テイルスピナー』8月6日発売へ",
+          "full_text": "【ニュース】「和風」に全振りデッキ構築ローグライク『テイルスピナー』8月6日発売へ。\"日本神話マニア\"の海外開発者が放つ、妖怪から忍者まで全部盛り『Slay the Spire』ライク",
+          "author": "AUTOMATONJapan",
+          "date": "2026-07-17",
+          "likes": 836,
+          "views": 173950,
+          "link": "https://x.com/AUTOMATONJapan/status/2078033779193794837",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2078033398808137728/img/0PleA0v9ESvXEjMi.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2078033779193794837/video/1"
+          },
+          "summary": "和风全开的卡牌构筑肉鸽《Tailspinner》定档8月6日发售。由\"日本神话狂热者\"的海外开发者制作，融合妖怪、忍者等元素的StS式游戏。17.4万浏览。",
+          "analysis": "",
+          "recommendation": "和风全开StS——妖怪忍者卡牌肉鸽8月6日发售",
+          "featured": false,
+          "enrichment": {
+            "game_name": "Tailspinner",
+            "genre": "Deckbuilding / Roguelike / 和风",
+            "developer": "海外独立开发者（日本神话爱好者）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2026年8月6日",
+            "steam_rating": null,
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】Slay the Spire式卡牌构筑肉鸽，全面采用日本神话/和风主题。从妖怪到忍者，包含大量日本文化元素。\n\n【优势】17.4万浏览说明和风+卡牌组合有市场；StS品类成熟玩家基数大。\n【不足】StS-like赛道极度拥挤。\n\n【综合】差异化主题的StS-like，8月初发售。",
+            "why_notable": "17.4万浏览量的和风卡牌肉鸽"
+          }
+        },
+        {
+          "idx": "新游推文 06",
+          "source": "AUTOMATON · 日本媒体",
+          "tags": [
+            "恐怖",
+            "合作",
+            "直播"
+          ],
+          "title": "Stream Train：6人合作废墟直播恐怖游戏——为了流量连怪异都要煽",
+          "en_title": "最大6人協力・廃墟ライブ配信ホラー『Stream Train』発表",
+          "full_text": "【ニュース】最大6人協力・廃墟ライブ配信ホラー『Stream Train』発表。バズるためなら怪異も煽る、命がけの\"撮れ高\"優先列車旅",
+          "author": "AUTOMATONJapan",
+          "date": "2026-07-17",
+          "likes": 1480,
+          "views": 144997,
+          "link": "https://x.com/AUTOMATONJapan/status/2077927945763741841",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077927876163510272/img/aKHhio-ltrkuI1nT.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2077927945763741841/video/1"
+          },
+          "summary": "6人合作恐怖游戏《Stream Train》公布。在废墟中进行直播，为了博取流量甚至要故意激怒怪异存在。14.5万浏览。",
+          "analysis": "",
+          "recommendation": "6人合作废墟直播恐怖——为流量连怪异都敢煽的亡命列车",
+          "featured": false,
+          "enrichment": {
+            "game_name": "Stream Train",
+            "genre": "Co-op / Horror / Streaming Sim",
+            "developer": "未公开",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": null,
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】最多6人合作，在废墟列车中进行直播。需要让观众保持兴趣赚取打赏，但制造直播效果意味着要接近甚至激怒超自然存在。\n\n【对标定位】Content Warning路线+直播主题。\n\n【优势】直播主题+恐怖合作天然适合Twitch内容。\n【不足】仅公布阶段。\n\n【综合】Content Warning式合作恐怖的新变体。",
+            "why_notable": "14.5万浏览，直播主题贴合时代"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "80 LEVEL · 引擎工具",
+          "tags": [
+            "Godot",
+            "地图编辑器",
+            "程序化生成"
+          ],
+          "title": "Godot地图编辑器：从简单瓦片自动生成风格化3D世界",
+          "en_title": "This Godot map editor auto-generates a stylized 3D world from simple tiles.",
+          "full_text": "This Godot map editor, showcased by developer samsfacee, auto-generates a stylized 3D world from simple tiles.",
+          "author": "80Level",
+          "date": "2026-07-17",
+          "likes": 805,
+          "views": 27321,
+          "link": "https://x.com/80Level/status/2078079791408844940",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2078079767966818304/img/KRxiNnjvrA67IHJf.jpg",
+            "video_url": "https://x.com/80Level/status/2078079791408844940/video/1"
+          },
+          "summary": "开发者samsfacee展示了一款Godot地图编辑器，能从简单瓦片自动生成完整的风格化3D世界。",
+          "analysis": "Godot生态工具链正在快速成熟。这类程序化生成工具能大幅降低独立开发者的场景制作门槛。",
+          "recommendation": "Godot瓦片→3D世界编辑器——独游场景制作门槛再降",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Dan Greenheck · 开源",
+          "tags": [
+            "Three.js",
+            "树木生成",
+            "GLB",
+            "开源"
+          ],
+          "title": "开源Three.js树木生成器：自定义树木并导出GLB模型",
+          "en_title": "I made an open-source Three.js app where you can make your own trees and export them as GLB files.",
+          "full_text": "I made an open-source Three.js app where you can make your own trees and export them as GLB files.\n\nTry it out  https://t.co/33czWIJuPM",
+          "author": "dangreenheck",
+          "date": "2026-07-16",
+          "likes": 672,
+          "views": 21571,
+          "link": "https://x.com/dangreenheck/status/2077627933447901667",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077627514839527424/img/fEaraQ3FgQ3q41TD.jpg",
+            "video_url": "https://x.com/dangreenheck/status/2077627933447901667/video/1"
+          },
+          "summary": "开发者发布了开源Three.js树木生成应用，可自定义参数生成树木并导出为GLB文件。",
+          "analysis": "程序化植被生成是3D场景制作的常见痛点。开源+GLB导出可无缝集成到任何支持glTF的引擎中。",
+          "recommendation": "开源Three.js树木生成器——自定义树木一键导出GLB",
+          "featured": false
+        },
+        {
+          "idx": "开发工具 03",
+          "source": "Endel · 网络同步",
+          "tags": [
+            "Colyseus",
+            "MOBA",
+            "客户端预测"
+          ],
+          "title": "Colyseus 0.18即将发布客户端预测工具——200ms+延迟下MOBA可玩",
+          "en_title": "Fable of Legends is a MOBA playable at 200ms+ ping thanks to client-side prediction tools on Colyseus 0.18",
+          "full_text": "Fable of Legends is a MOBA I’ve been working on for a few weeks... (with Fable )\n\nThe game is playable at 200ms+ ping thanks to the client-side prediction tools I'm about to release on @colyseus 0.18 \n\nGame assets from @KenneyNL and custom characters by @joaobaltieri ",
+          "author": "endel",
+          "date": "2026-07-16",
+          "likes": 268,
+          "views": 23747,
+          "link": "https://x.com/endel/status/2077815861608358073",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077814800684339200/img/MCvpkw6QJQIRFZrS.jpg",
+            "video_url": "https://x.com/endel/status/2077815861608358073/video/1"
+          },
+          "summary": "Colyseus作者展示了用Fable AI制作的MOBA游戏，200ms+延迟下仍可流畅游玩。即将发布的Colyseus 0.18将内置客户端预测工具。",
+          "analysis": "客户端预测是最难实现的网络同步技术之一。Colyseus将其开箱即用，能大幅降低独立开发者做实时多人游戏的门槛。",
+          "recommendation": "Colyseus 0.18内置客户端预测——200ms延迟MOBA仍可玩",
+          "featured": false
+        },
+        {
+          "idx": "开发工具 04",
+          "source": "Techartist · 工作流",
+          "tags": [
+            "Three.js",
+            "AI",
+            "3D场景"
+          ],
+          "title": "AI+Three.js生成3D世界的完整工作流分享",
+          "en_title": "You can just code beautiful 3D worlds with AI and Three.js. Here’s the workflow I use",
+          "full_text": "You can just code beautiful 3D worlds with AI and Three.js.\n\nHere's the workflow I use ↓",
+          "author": "techartist_",
+          "date": "2026-07-15",
+          "likes": 487,
+          "views": 27543,
+          "link": "https://x.com/techartist_/status/2077433800276283523",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2077429991412043776/img/0K_ebmR_aqMAiBRa.jpg",
+            "video_url": "https://x.com/techartist_/status/2077433800276283523/video/1"
+          },
+          "summary": "技术美术师分享了使用AI配合Three.js快速生成精美3D世界的完整工作流程。",
+          "analysis": "AI+Three.js正在成为Web 3D开发的主流工作流，独立开发者无需学习完整3D建模也能产出高质量场景。",
+          "recommendation": "AI+Three.js生成3D世界——技术美术师完整工作流分享",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**中国实时3D重建开源震动CV圈**\n中国团队开源了一个能从普通视频实时重建3D场景的模型——单摄像头、无LiDAR、万帧级稳定、单GPU跑20fps。在无人机航拍、室内漫游等场景均可工作，benchmark表现优于传统优化方法。\n\n**Kimi K3霸屏AI游戏生成**\nMoonshot的开源模型Kimi K3成为本周AI游戏生成领域的焦点。社区展示了用K3一次prompt生成Halo CE多人模式、CS:GO×Portal混搭、纸片马里奥等完整游戏原型，API成本仅$3.24（同等token量在Fable 5需$10.80）。开源模型正在逼近闭源前沿的游戏生成能力。\n\n**Bethesda公布未来路线图**\n在Xbox裁员风波后，Bethesda发布官方声明确认：Fallout 5进入预制作阶段（使用新Creation Engine 3）、Fallout 3和New Vegas重制版开发中、TES6仍在继续、Obsidian将开发新Fallout作品。\n\n**独游市场两极分化**\nMeccha Chameleon两人两月创收$71.3M登顶Steam年度销量榜；Ore Factory Squad土耳其独立开发者首日26K销量$233K。小团队仍有机会创造奇迹。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
