@@ -1,0 +1,239 @@
+{
+  "date": "2026-07-20",
+  "meta": {
+    "raw_count": 100,
+    "filtered_count": 57,
+    "selected_count": 7,
+    "crawl_time": "2026-07-20 18:00"
+  },
+  "lede": "Vercel内部测评：Kimi K3网安能力顶尖，Fable全面拒绝配合；Palworld再次逼近百万同时在线；Xbox高管内部认为Game Pass对行业有害。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Vercel内部测评：Kimi K3网安顶尖，Sol领先但贵，Fable全面拒绝"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Palworld再次逼近百万同时在线——Steam周末霸榜"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Vercel隐蔽测评：Kimi K3网安顶尖，推翻刷榜质疑\nAaron Levie：AI采纳受限于与现实世界的交互速度"
+    },
+    {
+      "id": "industry",
+      "text": "Palworld再逼近1M同时在线霸榜Steam\nXbox高管内部认为Game Pass对行业有害\nCliffyB考虑重返游戏开发"
+    },
+    {
+      "id": "indie",
+      "text": "Steam火车节明日开始"
+    },
+    {
+      "id": "tools",
+      "text": "（本日无重要工具动态）"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Guillermo Rauch · Vercel CEO",
+          "tags": [
+            "Kimi K3",
+            "网络安全",
+            "模型测评"
+          ],
+          "title": "Vercel内部隐蔽测评：Kimi K3网安能力顶尖，Sol领先但贵，Fable全面拒绝",
+          "en_title": "Based on internal evals: Kimi K3 is top-tier at cybersecurity. Sol is a leap ahead. Fable refuses everything.",
+          "full_text": "Based on internal evals:\n\nKimi K3 is top-tier at cybersecurity\nThere is chatter on X that Moonshot benchmark-overfit. These are stealth evals. Model has raw IQ.\n\nSol is a leap ahead in cyber capability\nAt a significantly higher cost, but quite remarkable still.\n\nFable refuses everything\nWe couldn't get it to complete the run at all. What's interesting is that Sol in comparison was much more open to helping with defensive cyber hardening\n\nTL;DR: frontier, open-weight cybersecurity capability is here.",
+          "author": "rauchg",
+          "date": "2026-07-19",
+          "likes": 3292,
+          "views": 585617,
+          "link": "https://x.com/rauchg/status/2078647648307880209",
+          "media": null,
+          "summary": "Vercel CEO Guillermo Rauch公布内部隐蔽测评结果：Kimi K3在网络安全领域表现顶尖（非刷榜），GPT-5.6 Sol在网安能力上更领先但成本高得多，而Fable（Claude）全面拒绝配合测试。",
+          "analysis": "这是对\"Kimi K3刷榜\"质疑的有力反驳——Vercel的隐蔽测评证明K3确实有真实能力。对游戏行业而言，开源模型在安全领域的强势意味着反作弊、漏洞检测等应用成本将大幅下降。",
+          "recommendation": "Vercel隐蔽测评：Kimi K3网安顶尖非刷榜，Fable全面拒绝配合",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Aaron Levie · AI观察",
+          "tags": [
+            "AI落地",
+            "编程",
+            "扩散速度"
+          ],
+          "title": "Aaron Levie：AI在编程领域采纳极快，因为不需要外部世界配合",
+          "en_title": "Progress driven by AI will ultimately be rate limited by its interaction with the real world.",
+          "full_text": "Good post if you're trying to understand AI diffusion. Progress driven by AI will ultimately be rate limited by its interaction with the real world.\n\nThe reason coding, for instance, has been adopted so quickly is you can write a near infinite amount of code, test it, and run it -and it can add value- without anyone in the outside world ever having to do anything differently. A single person, from a computer, can just make something work end-to-end differently.\n\nThis is not true for life science...",
+          "author": "levie",
+          "date": "2026-07-19",
+          "likes": 112,
+          "views": 24543,
+          "link": "https://x.com/levie/status/2078864191683969212",
+          "media": null,
+          "summary": "Aaron Levie指出AI进步最终受限于与现实世界的交互速度。编程领域采纳极快，因为单人可在电脑上端到端完成所有事而无需外部世界配合；生命科学等领域则受限于物理实验周期。",
+          "analysis": "这解释了为什么AI游戏开发工具落地如此之快——游戏开发本质上也是\"写代码+测试+迭代\"的闭环，不需要外部物理世界配合。这是AI工具在游戏行业快速渗透的结构性原因。",
+          "recommendation": "AI采纳快慢取决于是否需要外部世界配合——编程/游戏开发最快",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 市场",
+          "tags": [
+            "Palworld",
+            "Steam",
+            "同时在线"
+          ],
+          "title": "Palworld周末再次霸榜Steam，逼近百万同时在线",
+          "en_title": "Palworld is once again dominating Steam this weekend, clocking up almost 1m concurrent players",
+          "full_text": "Palworld is once again dominating Steam this weekend, clocking up almost 1m concurrent players",
+          "author": "eurogamer",
+          "date": "2026-07-19",
+          "likes": 10,
+          "views": 3002,
+          "link": "https://x.com/eurogamer/status/2078871039681941545",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNmiLIDW0AA_Ogw.jpg"
+          },
+          "summary": "Palworld本周末再次霸榜Steam，同时在线玩家数接近100万。该游戏持续展现强劲的长线留存能力。",
+          "analysis": "Palworld的持续火爆证明\"生存+收集\"品类的长线潜力。对独立开发者而言，这说明玩法创新+持续更新可以打造长线产品。",
+          "recommendation": "Palworld再逼近百万同时在线——长线留存力惊人",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "TheGamer · 内部",
+          "tags": [
+            "Xbox",
+            "Game Pass",
+            "行业影响"
+          ],
+          "title": "Xbox高管内部认为Game Pass对行业是\"损害\"",
+          "en_title": "Xbox Leaders Reportedly Think Game Pass Is \"Detriment\" To The Industry",
+          "full_text": "Xbox Leaders Reportedly Think Game Pass Is \"Detriment\" To The Industry",
+          "author": "thegamerwebsite",
+          "date": "2026-07-19",
+          "likes": 0,
+          "views": 451,
+          "link": "https://x.com/thegamerwebsite/status/2078782014577086946",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNlROgfW4AE5yQS.jpg"
+          },
+          "summary": "据报道，Xbox高管内部认为Game Pass对游戏行业是一种\"损害\"。这与微软一直对外宣传的Game Pass愿景形成反差。",
+          "analysis": "如果属实，这意味着订阅制模式可能已经开始侵蚀游戏的单品销售收入。对开发者的警示：不要过度依赖订阅平台分成作为主要收入来源。",
+          "recommendation": "Xbox高管内部承认Game Pass对行业有害——订阅制反思信号",
+          "featured": false
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "PC Gamer · 人物",
+          "tags": [
+            "CliffyB",
+            "Gears of War",
+            "回归"
+          ],
+          "title": "Gears of War创造者CliffyB考虑重返游戏开发",
+          "en_title": "Gears of War's creator is considering returning to game development",
+          "full_text": "Gears of War's creator is considering returning to game development",
+          "author": "pcgamer",
+          "date": "2026-07-19",
+          "likes": 27,
+          "views": 12350,
+          "link": "https://x.com/pcgamer/status/2078810096323445107",
+          "media": null,
+          "summary": "Gears of War创造者Cliff Bleszinski（CliffyB）表示正在考虑重返游戏开发。此前他因LawBreakers失败后退出行业。",
+          "analysis": "CliffyB的回归可能带来新的射击/动作游戏项目。他的设计理念对行业仍有影响力，但能否适应当前市场环境是关键问题。",
+          "recommendation": "Gears之父CliffyB考虑回归游戏开发——LawBreakers失败后首次松口",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "SteamDB · 活动",
+          "tags": [
+            "Steam",
+            "火车节",
+            "展示活动"
+          ],
+          "title": "Steam火车节明日开始——独游集中展示窗口",
+          "en_title": "Steam Train Fest will begin tomorrow",
+          "full_text": "Steam Train Fest will begin tomorrow",
+          "author": "SteamDB",
+          "date": "2026-07-19",
+          "likes": 28,
+          "views": 2427,
+          "link": "https://x.com/SteamDB/status/2078887609456050443",
+          "media": null,
+          "summary": "SteamDB宣布Steam火车节将于明日开始。这是独立游戏集中展示和获取曝光的重要窗口。",
+          "analysis": "",
+          "recommendation": "Steam火车节明日开始——独游集中展示窗口期",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "IndieGameLover · 教程",
+          "tags": [
+            "Shader",
+            "水体",
+            "教程"
+          ],
+          "title": "步骤详解水体Shader制作教程",
+          "en_title": "step-by-step water shader",
+          "full_text": "RT @FredStroem: step-by-step water shader",
+          "author": "IndieGameLover",
+          "date": "2026-07-19",
+          "likes": 0,
+          "views": 28,
+          "link": "https://x.com/IndieGameLover/status/2078720725532176790",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2078155088632201217/img/j694-OzV_pgKGLxN.jpg",
+            "video_url": "https://x.com/FredStroem/status/2078155088632201217/video/1"
+          },
+          "summary": "开发者FredStroem分享了一个水体Shader的分步制作教程视频。",
+          "analysis": "水体Shader是独立游戏视觉提升的常见需求，分步教程对美术基础薄弱的程序员开发者尤其有价值。",
+          "recommendation": "水体Shader分步教程——独游视觉提升的实用参考",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Vercel隐蔽测评揭示AI模型真实能力**\nVercel CEO公布内部隐蔽测评：Kimi K3在网络安全领域表现顶尖（推翻\"刷榜\"质疑），GPT-5.6 Sol更强但贵得多，而Fable（Claude）全面拒绝配合。开源前沿网安能力已经到来。\n\n**Palworld持续霸榜Steam**\nPalworld本周末再次逼近百万同时在线，展现惊人的长线留存能力。\"生存+收集\"品类的天花板仍在被刷新。\n\n**行业反思与人事变动**\nXbox高管内部认为Game Pass对行业有害；Gears of War创造者CliffyB考虑回归游戏开发。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
