@@ -9,14 +9,14 @@
   "lede": "Vercel内部测评：Kimi K3网安能力顶尖，Fable全面拒绝配合；Palworld再次逼近百万同时在线；Xbox高管内部认为Game Pass对行业有害。",
   "editors_pick": [
     {
-      "section_id": "industry",
+      "section_id": "ai",
       "item_index": 0,
-      "hook": "Palworld再次逼近百万同时在线"
+      "hook": "Vercel隐蔽测评：Kimi K3网安顶尖"
     },
     {
-      "section_id": "industry",
-      "item_index": 1,
-      "hook": "Xbox高管内部认为Game Pass对行业有害"
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "Palworld再次逼近百万同时在线"
     }
   ],
   "digest": [
@@ -60,7 +60,10 @@
           "likes": 3292,
           "views": 585617,
           "link": "https://x.com/rauchg/status/2078647648307880209",
-          "media": null,
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/profile_images/1886498879738646528/c-K8XKGD_400x400.jpg"
+          },
           "summary": "Vercel CEO Guillermo Rauch公布内部隐蔽测评结果：Kimi K3在网络安全领域表现顶尖（非刷榜），GPT-5.6 Sol在网安能力上更领先但成本高得多，而Fable（Claude）全面拒绝配合测试。",
           "analysis": "这是对\"Kimi K3刷榜\"质疑的有力反驳——Vercel的隐蔽测评证明K3确实有真实能力。对游戏行业而言，开源模型在安全领域的强势意味着反作弊、漏洞检测等应用成本将大幅下降。",
           "recommendation": "Vercel隐蔽测评：Kimi K3网安顶尖非刷榜，Fable全面拒绝配合",
@@ -98,31 +101,6 @@
       "items": [
         {
           "idx": "游戏行业 01",
-          "source": "Eurogamer · 市场",
-          "tags": [
-            "Palworld",
-            "Steam",
-            "同时在线"
-          ],
-          "title": "Palworld周末再次霸榜Steam，逼近百万同时在线",
-          "en_title": "Palworld is once again dominating Steam this weekend, clocking up almost 1m concurrent players",
-          "full_text": "Palworld is once again dominating Steam this weekend, clocking up almost 1m concurrent players",
-          "author": "eurogamer",
-          "date": "2026-07-19",
-          "likes": 10,
-          "views": 3002,
-          "link": "https://x.com/eurogamer/status/2078871039681941545",
-          "media": {
-            "type": "image",
-            "url": "https://pbs.twimg.com/media/HNmiLIDW0AA_Ogw.jpg"
-          },
-          "summary": "Palworld本周末再次霸榜Steam，同时在线玩家数接近100万。该游戏持续展现强劲的长线留存能力。",
-          "analysis": "Palworld的持续火爆证明\"生存+收集\"品类的长线潜力。对独立开发者而言，这说明玩法创新+持续更新可以打造长线产品。",
-          "recommendation": "Palworld再逼近百万同时在线——长线留存力惊人",
-          "featured": true
-        },
-        {
-          "idx": "游戏行业 02",
           "source": "TheGamer · 内部",
           "tags": [
             "Xbox",
@@ -147,7 +125,7 @@
           "featured": false
         },
         {
-          "idx": "游戏行业 03",
+          "idx": "游戏行业 02",
           "source": "PC Gamer · 人物",
           "tags": [
             "CliffyB",
@@ -178,6 +156,32 @@
       "items": [
         {
           "idx": "新游推文 01",
+          "source": "Eurogamer · 市场",
+          "tags": [
+            "Palworld",
+            "Steam",
+            "同时在线"
+          ],
+          "title": "Palworld周末再次霸榜Steam，逼近百万同时在线",
+          "en_title": "Palworld is once again dominating Steam this weekend, clocking up almost 1m concurrent players",
+          "full_text": "Palworld is once again dominating Steam this weekend, clocking up almost 1m concurrent players",
+          "author": "eurogamer",
+          "date": "2026-07-19",
+          "likes": 10,
+          "views": 3002,
+          "link": "https://x.com/eurogamer/status/2078871039681941545",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNmiLIDW0AA_Ogw.jpg"
+          },
+          "summary": "Palworld本周末再次霸榜Steam，同时在线玩家数接近100万。该游戏持续展现强劲的长线留存能力。",
+          "analysis": "Palworld的持续火爆证明\"生存+收集\"品类的长线潜力。对独立开发者而言，这说明玩法创新+持续更新可以打造长线产品。",
+          "recommendation": "Palworld再逼近百万同时在线——长线留存力惊人",
+          "featured": true,
+          "game_ref": "Palworld"
+        },
+        {
+          "idx": "新游推文 02",
           "source": "SteamDB · 活动",
           "tags": [
             "Steam",
