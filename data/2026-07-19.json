@@ -1,0 +1,258 @@
+{
+  "date": "2026-07-19",
+  "meta": {
+    "raw_count": 129,
+    "filtered_count": 74,
+    "selected_count": 8,
+    "crawl_time": "2026-07-19 18:00"
+  },
+  "lede": "Valve称内存危机持续恶化；ZA/UM（极乐迪斯科开发商）新作口碑不佳后裁员；AI模型层三年仍未商品化。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Valve称内存危机持续恶化：“老实说，情况还在变糟”"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 1,
+      "hook": "ZA/UM新作口碑不佳后大规模裁员——粉丝：“他们毒害了这个品牌”"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Aaron Levie：AI封锁策略将适得其反，中国已接近前沿\nMatt Turck：模型层三年仍未商品化"
+    },
+    {
+      "id": "industry",
+      "text": "Valve称内存危机持续恶化\nZA/UM新作后裁员，Disco Elysium粉丝反应强烈\nMarathon游戏总监离开Bungie"
+    },
+    {
+      "id": "indie",
+      "text": "Stardew Valley×Mario Party×StS混搭游戏获Polygon推荐"
+    },
+    {
+      "id": "tools",
+      "text": "Blood of Dawnwalker确认发行实体版"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Aaron Levie · AI观察",
+          "tags": [
+            "AI竞争",
+            "中美",
+            "开源"
+          ],
+          "title": "Aaron Levie：封锁AI模型的策略不可行，中国已接近前沿水平",
+          "en_title": "Gate keeping models will not work at scale. China can compete at near frontier levels.",
+          "full_text": "It's fairly obvious that gate keeping models will not work at scale.\n\nCompeting in AI is too economically and strategically important for China at this point, and we've now crossed the rubicon where it's clear that they can compete at near frontier levels. If this were even just 1 month ago and we saw kimi k3 our brains would be broken.\n\nThe solution to this isn't to get more locked down and slow your own ecosystem. If that happens, you can guarantee that America loses the global battle.",
+          "author": "levie",
+          "date": "2026-07-18",
+          "likes": 205,
+          "views": 31783,
+          "link": "https://x.com/levie/status/2078481578779685245",
+          "media": null,
+          "summary": "Box CEO Aaron Levie认为封锁AI模型的策略在规模上不可行。中国已能在接近前沿的水平竞争（如Kimi K3），更封闭只会让美国落后。",
+          "analysis": "这反映了硅谷对中国开源模型崛起的态度转变。对游戏行业而言，开源模型竞争力提升意味着AI游戏开发工具成本将持续下降。",
+          "recommendation": "Box CEO：封锁AI模型不可行，中国已接近前沿",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Matt Turck · VC观察",
+          "tags": [
+            "AI商业化",
+            "模型层"
+          ],
+          "title": "模型层连续三年被称“将商品化”，但实际仍未商品化",
+          "en_title": "2024-2026: \"The model layer is commodotizing.\" The model layer: still not commodotized.",
+          "full_text": "2024: \"The model layer is commodotizing\"\n2025: \"The model layer is commodotizing\"\n2026: \"The model layer is commodotizing\"\n\nThe model layer: still not commodotized.",
+          "author": "mattturck",
+          "date": "2026-07-18",
+          "likes": 8,
+          "views": 711,
+          "link": "https://x.com/mattturck/status/2078520552680046920",
+          "media": null,
+          "summary": "知名VC Matt Turck指出“模型层将商品化”的论调已连续三年未实现。前沿模型仍保持显著竞争优势。",
+          "analysis": "对游戏开发者：不要假设所有模型很快会一样好。选择哪个模型做AI功能仍是重要决策。",
+          "recommendation": "模型层三年“即将商品化”但始终未实现",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "PC Gamer · 硬件",
+          "tags": [
+            "Valve",
+            "内存",
+            "Steam"
+          ],
+          "title": "Valve称内存危机远未结束：“老实说，情况还在变糟”",
+          "en_title": "Valve says there's no end in sight to the memory crisis: 'Honestly, it's still getting worse'",
+          "full_text": "Valve says there's no end in sight to the memory crisis: 'Honestly, it's still getting worse'",
+          "author": "pcgamer",
+          "date": "2026-07-18",
+          "likes": 481,
+          "views": 40009,
+          "link": "https://x.com/pcgamer/status/2078422518462124227",
+          "media": null,
+          "summary": "Valve表示内存危机远未结束，甚至“情况还在变糟”。游戏内存需求持续增长而硬件供给跟不上。",
+          "analysis": "内存瘦身将成为未来游戏开发的硬性约束。对中小团队而言，内存优化能力可能成为竞争优势。",
+          "recommendation": "Valve称内存危机持续恶化——游戏开发者面临更严格约束",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 工作室",
+          "tags": [
+            "ZA/UM",
+            "裁员",
+            "Disco Elysium"
+          ],
+          "title": "ZA/UM新作口碑不佳后大规模裁员，粉丝：“他们毒害了这个品牌”",
+          "en_title": "\"They poisoned the brand\" - Disco Elysium fans react as ZA/UM lays off staff weeks after Zero Parades launch",
+          "full_text": "\"They poisoned the brand\" - Disco Elysium fans react strongly as controversy-laiden developer ZA/UM lays off a large chunk of staff, weeks after releasing Zero Parades: For Dead Spies to critical acclaim.",
+          "author": "eurogamer",
+          "date": "2026-07-18",
+          "likes": 21,
+          "views": 5545,
+          "link": "https://x.com/eurogamer/status/2078459657119486435",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNgr5rKXQAEMjyd.jpg"
+          },
+          "summary": "ZA/UM（《极乐迪斯科》开发商）在新作Zero Parades发布仅数周后大规模裁员。粉丝反应强烈，称“他们毒害了这个品牌”。",
+          "analysis": "ZA/UM警示：即使新作获媒体好评，商业表现不佳仍会导致裁员。口碑与销量的脱节是独立工作室的常见困境。",
+          "recommendation": "ZA/UM新作口碑佳但销量差，发布数周即裁员",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Rock Paper Shotgun · 人事",
+          "tags": [
+            "Bungie",
+            "Marathon",
+            "离职"
+          ],
+          "title": "Marathon游戏总监Joe Ziegler离开Bungie",
+          "en_title": "A month after mass layoffs at Bungie, Marathon game director Joe Ziegler is leaving the studio",
+          "full_text": "Marathon Game Director Is Officially Leaving Bungie Today",
+          "author": "rockpapershot",
+          "date": "2026-07-18",
+          "likes": 0,
+          "views": 522,
+          "link": "https://x.com/rockpapershot/status/2078525551711510950",
+          "media": null,
+          "summary": "在Bungie大规模裁员一个月后，Marathon游戏总监Joe Ziegler宣布离开工作室。",
+          "analysis": "Marathon的开发前景进一步不明朗。游戏总监离开通常意味着项目方向可能发生重大调整。",
+          "recommendation": "Marathon游戏总监离开Bungie——裁员后人才流失加剧",
+          "featured": false
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "MP1st · 硬件",
+          "tags": [
+            "Valve",
+            "Steam Machine",
+            "硬件"
+          ],
+          "title": "Valve称Steam Machine发布一个月即视为成功",
+          "en_title": "Valve reportedly sees the Steam Machine as a success just a month after launch",
+          "full_text": "Report: Just a month after launch, Valve reportedly sees the Steam Machine as a success.",
+          "author": "MPFirst",
+          "date": "2026-07-18",
+          "likes": 1,
+          "views": 476,
+          "link": "https://x.com/MPFirst/status/2078476865250226464",
+          "media": null,
+          "summary": "据报道，Valve在Steam Machine发布仅一个月后即将其视为成功。",
+          "analysis": "Steam Machine的成功可能进一步扩大Steam在客厅场景的布局。",
+          "recommendation": "Steam Machine一个月即被Valve视为成功",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Polygon · 推荐",
+          "tags": [
+            "模拟经营",
+            "派对",
+            "卡片"
+          ],
+          "title": "Polygon推荐2026年最佳cozy游戏：Stardew Valley×Mario Party×StS混搭",
+          "en_title": "Stardew Valley meets Mario Party and Slay the Spire in 2026's best cozy game",
+          "full_text": "Stardew Valley meets Mario Party and Slay the Spire in 2026's best cozy game",
+          "author": "Polygon",
+          "date": "2026-07-18",
+          "likes": 4,
+          "views": 4190,
+          "link": "https://x.com/Polygon/status/2078490021837902264",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNhHqRhWEAArRCY.jpg"
+          },
+          "summary": "Polygon推荐了一款融合Stardew Valley、Mario Party和Slay the Spire元素的游戏，称其为2026年最佳cozy游戏。",
+          "analysis": "",
+          "recommendation": "Stardew×Mario Party×StS——品类杂交的cozy游戏获Polygon推荐",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Eurogamer · 发行",
+          "tags": [
+            "实体版",
+            "Blood of Dawnwalker"
+          ],
+          "title": "Blood of Dawnwalker确认将发行实体版光碟",
+          "en_title": "The full Blood of Dawnwalker game will be released on disc, Bandai Namco and Rebel Wolves confirm",
+          "full_text": "The full Blood of Dawnwalker game will be released on disc, Bandai Namco and Rebel Wolves confirm",
+          "author": "eurogamer",
+          "date": "2026-07-18",
+          "likes": 124,
+          "views": 10082,
+          "link": "https://x.com/eurogamer/status/2078419506666577938",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNcXGi7XMAI3w_n.jpg"
+          },
+          "summary": "Bandai Namco和Rebel Wolves确认Blood of Dawnwalker将发行实体版光碟。在Sony取消实体版的背景下，这是明确的站队。",
+          "analysis": "在Sony全面转数字版后，第三方发行商仍选择支持实体版，说明实体市场仍有商业价值。",
+          "recommendation": "Blood of Dawnwalker确认实体版——Sony取消光碟后的站队",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Valve内存危机持续恶化**\nValve表示游戏内存危机远未结束，甚至“还在变糟”。对开发者的内存优化能力提出了更高要求。\n\n**ZA/UM裁员与Bungie人才流失**\nDisco Elysium开发商ZA/UM在新作Zero Parades发布数周后即大规模裁员，粉丝称“他们毒害了这个品牌”。与此同时，Bungie大裁员一个月后，Marathon游戏总监离开工作室。\n\n**AI模型竞争观察**\nBox CEO Aaron Levie认为封锁AI模型不可行，中国已接近前沿。VC Matt Turck则指出模型层连续三年被称“即将商品化”但始终未实现。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
