@@ -3,7 +3,7 @@
   "meta": {
     "raw_count": 129,
     "filtered_count": 74,
-    "selected_count": 8,
+    "selected_count": 6,
     "crawl_time": "2026-07-19 18:00"
   },
   "lede": "Valve称内存危机持续恶化；ZA/UM（极乐迪斯科开发商）新作口碑不佳后裁员；AI模型层三年仍未商品化。",
@@ -43,51 +43,7 @@
       "title": "AI科技热点",
       "title_en": "AI & TECH",
       "color": "#a78bfa",
-      "items": [
-        {
-          "idx": "AI科技热点 01",
-          "source": "Aaron Levie · AI观察",
-          "tags": [
-            "AI竞争",
-            "中美",
-            "开源"
-          ],
-          "title": "Aaron Levie：封锁AI模型的策略不可行，中国已接近前沿水平",
-          "en_title": "Gate keeping models will not work at scale. China can compete at near frontier levels.",
-          "full_text": "It's fairly obvious that gate keeping models will not work at scale.\n\nCompeting in AI is too economically and strategically important for China at this point, and we've now crossed the rubicon where it's clear that they can compete at near frontier levels. If this were even just 1 month ago and we saw kimi k3 our brains would be broken.\n\nThe solution to this isn't to get more locked down and slow your own ecosystem. If that happens, you can guarantee that America loses the global battle.",
-          "author": "levie",
-          "date": "2026-07-18",
-          "likes": 205,
-          "views": 31783,
-          "link": "https://x.com/levie/status/2078481578779685245",
-          "media": null,
-          "summary": "Box CEO Aaron Levie认为封锁AI模型的策略在规模上不可行。中国已能在接近前沿的水平竞争（如Kimi K3），更封闭只会让美国落后。",
-          "analysis": "这反映了硅谷对中国开源模型崛起的态度转变。对游戏行业而言，开源模型竞争力提升意味着AI游戏开发工具成本将持续下降。",
-          "recommendation": "Box CEO：封锁AI模型不可行，中国已接近前沿",
-          "featured": true
-        },
-        {
-          "idx": "AI科技热点 02",
-          "source": "Matt Turck · VC观察",
-          "tags": [
-            "AI商业化",
-            "模型层"
-          ],
-          "title": "模型层连续三年被称“将商品化”，但实际仍未商品化",
-          "en_title": "2024-2026: \"The model layer is commodotizing.\" The model layer: still not commodotized.",
-          "full_text": "2024: \"The model layer is commodotizing\"\n2025: \"The model layer is commodotizing\"\n2026: \"The model layer is commodotizing\"\n\nThe model layer: still not commodotized.",
-          "author": "mattturck",
-          "date": "2026-07-18",
-          "likes": 8,
-          "views": 711,
-          "link": "https://x.com/mattturck/status/2078520552680046920",
-          "media": null,
-          "summary": "知名VC Matt Turck指出“模型层将商品化”的论调已连续三年未实现。前沿模型仍保持显著竞争优势。",
-          "analysis": "对游戏开发者：不要假设所有模型很快会一样好。选择哪个模型做AI功能仍是重要决策。",
-          "recommendation": "模型层三年“即将商品化”但始终未实现",
-          "featured": false
-        }
-      ]
+      "items": []
     },
     {
       "id": "industry",
