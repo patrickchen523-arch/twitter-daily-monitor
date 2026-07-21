@@ -3,10 +3,10 @@
   "meta": {
     "raw_count": 100,
     "filtered_count": 57,
-    "selected_count": 16,
+    "selected_count": 10,
     "crawl_time": "2026-07-20 18:00"
   },
-  "lede": "Vercel测评证实Kimi K3网安能力非刷榜；Palworld达百万在线+卡片预售350万包；天堂OL创始人用AI独立开发开源MMO。",
+  "lede": "Vercel测评证实Kimi K3网安能力非刷榜；Palworld达百万在线+卡片预售350万包；Ore Factory Squad三天6万销量。",
   "editors_pick": [
     {
       "section_id": "ai",
@@ -26,11 +26,11 @@
     },
     {
       "id": "industry",
-      "text": "Palworld再逼近1M同时在线霸榜Steam\nXbox高管内部认为Game Pass对行业有害\nCliffyB考虑重返游戏开发"
+      "text": "Xbox高管内部认为Game Pass对行业有害\nCliffyB考虑重返游戏开发\nOre Factory Squad 72h: 6万销量/$533K\nPalworld卡片预售350万包"
     },
     {
       "id": "indie",
-      "text": "Steam火车节明日开始"
+      "text": "Palworld再逼近百万同时在线\nSteam火车节明日开始\nInvariant南极恐怖FPS曝光\nMariachi Legends墨西哥银河城"
     },
     {
       "id": "tools",
@@ -89,58 +89,6 @@
           "summary": "Aaron Levie指出AI进步最终受限于与现实世界的交互速度。编程领域采纳极快，因为单人可在电脑上端到端完成所有事而无需外部世界配合；生命科学等领域则受限于物理实验周期。",
           "analysis": "这解释了为什么AI游戏开发工具落地如此之快——游戏开发本质上也是\"写代码+测试+迭代\"的闭环，不需要外部物理世界配合。这是AI工具在游戏行业快速渗透的结构性原因。",
           "recommendation": "AI采纳快慢取决于是否需要外部世界配合——编程/游戏开发最快",
-          "featured": false
-        },
-        {
-          "idx": "AI科技热点 03",
-          "source": "Prasenjit · AI游戏生成",
-          "tags": [
-            "Kimi K3",
-            "Three.js",
-            "浏览器游戏"
-          ],
-          "title": "Kimi K3单文件生成浏览器版CS：3700行代码、无构建步骤、成本<$5",
-          "en_title": "i built counter-strike in the browser using kimi k3. one html file. 3,700 lines+. no build step.",
-          "full_text": "i built counter-strike in the browser using kimi k3\n\none html file. 3,700 lines+. no build step.\n\n→ dust2-inspired map, tunnels, catwalk, long a\n→ ak, awp with scope, mp5, knife + reloads\n→ 10 bots that patrol, hear shots, and push\n→ headshots, kill feed, 2 min round\n→ all audio procedural no sound files\n→ three.js, pbr, runs in the browser\n\nunder $5 on k3\nthe whole game is basically one file",
-          "author": "prasenx",
-          "date": "2026-07-18",
-          "likes": 268,
-          "views": 17222,
-          "link": "https://x.com/prasenx/status/2078453069021659477",
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2078452851207204865/img/zEMwF1vOJEjiRuYO.jpg",
-            "video_url": "https://x.com/prasenx/status/2078453069021659477/video/1"
-          },
-          "summary": "开发者用Kimi K3在浏览器中生成了完整的CS射击游戏：单HTML文件3700+行代码，含地图、多武器、AI Bot巡逻、击杀反馈、程序化音频。成本不到$5。",
-          "analysis": "单文件完整FPS的实现证明AI代码生成已达到“可玩原型”级别。对独立开发者而言，这意味着快速验证玩法创意的成本接近于零。",
-          "recommendation": "Kimi K3单文件生成浏览器CS——3700行代码成本<$5",
-          "featured": false
-        },
-        {
-          "idx": "AI科技热点 04",
-          "source": "Synopsis · AI图形",
-          "tags": [
-            "Kimi K3",
-            "WebGL",
-            "Shader"
-          ],
-          "title": "Kimi K3生成纯程序化WebGL浮动卡片——全部在顶点着色器内完成",
-          "en_title": "Kimi k3 just cooked this - a fully procedural floating trading card view in WebGL without any image assets",
-          "full_text": "Kimi k3 just cooked this\n\na fully procedural floating trading card view in WebGL without any image assets\n\nall this is done completely inside the vertex shader\n\nthis just so happens to be very clean....proper low level flex.",
-          "author": "abhinavflac",
-          "date": "2026-07-19",
-          "likes": 266,
-          "views": 17183,
-          "link": "https://x.com/abhinavflac/status/2078863305809215752",
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2078862993086164992/img/EFob-XzicpdTp1kR.jpg",
-            "video_url": "https://x.com/abhinavflac/status/2078863305809215752/video/1"
-          },
-          "summary": "Kimi K3生成了一个完全程序化的WebGL浮动卡片视图，无任何图片资产，全部在顶点着色器内完成。代码极其干净。",
-          "analysis": "AI生成的Shader代码质量已达到专业水平。这对游戏UI/特效开发的启示：AI可以生成生产级的Shader代码。",
-          "recommendation": "Kimi K3纯顶点着色器实现浮动卡片——零资产的低层练习",
           "featured": false
         }
       ]
@@ -308,29 +256,6 @@
         },
         {
           "idx": "新游推文 03",
-          "source": "宋在京(Jake Song) · 传奇开发者",
-          "tags": [
-            "MMO",
-            "开源",
-            "AI开发",
-            "浏览器"
-          ],
-          "title": "天堂OL创始人宋在京离职后用AI独立开发浏览器开源MMO",
-          "en_title": "송재경: 저는 회사를 그만두고 쉼다가 집에서 이런거 만들고 있습니다 - browser open-source solo+AI MMO",
-          "full_text": "안녕들 하십니까.. 저는 회사를 그만두고 쉼다가 집에서 이런거 만들고 있습니다. 브라우저에서 돌아가는 오픈소스 일인 개발(+AI) mmo입니다.",
-          "author": "appledelhi",
-          "date": "2026-07-20",
-          "likes": 309,
-          "views": 24041,
-          "link": "https://x.com/appledelhi/status/2079022142663094356",
-          "media": null,
-          "summary": "天堂OL/天堂2创始人宋在京（Jake Song）宣布离开公司后，在家用AI独立开发了一款浏览器运行的开源MMO。",
-          "analysis": "韩国MMO教父级人物用AI独立开发MMO，这本身就是对AI游戏开发能力的最强背书。开源+浏览器的组合可能开启新的MMO开发范式。",
-          "recommendation": "天堂OL创始人离职后用AI独立开发开源浏览器MMO",
-          "featured": true
-        },
-        {
-          "idx": "新游推文 04",
           "source": "Indie Game Joe · 新游",
           "tags": [
             "恐怖",
@@ -356,7 +281,7 @@
           "featured": false
         },
         {
-          "idx": "新游推文 05",
+          "idx": "新游推文 04",
           "source": "FutureGamesShow · 新游",
           "tags": [
             "银河城",
@@ -388,86 +313,8 @@
       "title": "开发工具",
       "title_en": "DEV TOOLS",
       "color": "#60a5fa",
-      "items": [
-        {
-          "idx": "开发工具 01",
-          "source": "IndieGameLover · 教程",
-          "tags": [
-            "Shader",
-            "水体",
-            "教程"
-          ],
-          "title": "步骤详解水体Shader制作教程",
-          "en_title": "step-by-step water shader",
-          "full_text": "RT @FredStroem: step-by-step water shader",
-          "author": "IndieGameLover",
-          "date": "2026-07-19",
-          "likes": 0,
-          "views": 28,
-          "link": "https://x.com/IndieGameLover/status/2078720725532176790",
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2078155088632201217/img/j694-OzV_pgKGLxN.jpg",
-            "video_url": "https://x.com/FredStroem/status/2078155088632201217/video/1"
-          },
-          "summary": "开发者FredStroem分享了一个水体Shader的分步制作教程视频。",
-          "analysis": "水体Shader是独立游戏视觉提升的常见需求，分步教程对美术基础薄弱的程序员开发者尤其有价值。",
-          "recommendation": "水体Shader分步教程——独游视觉提升的实用参考",
-          "featured": false
-        },
-        {
-          "idx": "开发工具 02",
-          "source": "Aniket J · 开源",
-          "tags": [
-            "Three.js",
-            "资产库",
-            "开源"
-          ],
-          "title": "开源Three.js游戏资产库建设中——免费用于Web游戏",
-          "en_title": "Building a three.js asset library for web games. Will be open source and free!",
-          "full_text": "Building a three.js asset library for web games. Will be open source and free!\n\n#threejs #gamedev",
-          "author": "aniketjart",
-          "date": "2026-07-18",
-          "likes": 492,
-          "views": 31760,
-          "link": "https://x.com/aniketjart/status/2078458326577479900",
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2078455908901044224/img/2VB13PTjMc5TBAdz.jpg",
-            "video_url": "https://x.com/aniketjart/status/2078458326577479900/video/1"
-          },
-          "summary": "开发者正在建设一个开源免费的Three.js游戏资产库，专为Web游戏设计。",
-          "analysis": "Three.js生态缺乏统一的游戏资产库。开源免费的方案能降低Web游戏开发门槛。",
-          "recommendation": "开源Three.js游戏资产库——填Web游戏生态空白",
-          "featured": false
-        },
-        {
-          "idx": "开发工具 03",
-          "source": "Kenney · 免费资产",
-          "tags": [
-            "Kenney",
-            "免费资产",
-            "3D"
-          ],
-          "title": "Kenney预告多款免费游戏资产包：3D Mega Pack、像素平台、工厂主题",
-          "en_title": "Preview of game assets: Untitled 3D mega pack, Scribble Platformer expansion, Retro Textures Liminal Spaces & Tiny Factory. All free.",
-          "full_text": "Preview of #gameassets I'm working on; Untitled 3D mega pack, Scribble Platformer expansion, Retro Textures Liminal Spaces & Tiny Factory.\n\nAll coming soon, all completely free.",
-          "author": "KenneyNL",
-          "date": "2026-07-18",
-          "likes": 597,
-          "views": 14341,
-          "link": "https://x.com/KenneyNL/status/2078519746484412689",
-          "media": {
-            "type": "image",
-            "url": "https://pbs.twimg.com/media/HNhiiK8WYAA9l2b.png"
-          },
-          "summary": "知名免费游戏资产作者Kenney预告多款新资产包：3D Mega Pack、Scribble Platformer扩展、Retro Textures Liminal Spaces、Tiny Factory。全部免费。",
-          "analysis": "Kenney是独立游戏开发者最常用的免费资产源之一。新的Liminal Spaces主题纹理包对恐怖游戏开发者特别有用。",
-          "recommendation": "Kenney预告多款免费资产包——3D/像素/工厂主题全免费",
-          "featured": false
-        }
-      ]
+      "items": []
     }
   ],
-  "daily_summary": "**Vercel隐蔽测评揭示AI模型真实能力**\nVercel CEO公布内部隐蔽测评：Kimi K3在网络安全领域表现顶尖（推翻“刷榜”质疑），GPT-5.6 Sol更强但贵得多，而Fable全面拒绝配合。同时K3在游戏生成领域继续刷屏：单文件生成浏览器CS、纯程序化WebGL卡片。\n\n**Palworld多线爆发**\nPalworld本周末再次逼近百万同时在线，与此同时其卡片游戏预售已达350万包（7月30日正式发布）。IP多元化变现路径清晰。\n\n**传奇开发者用AI独立做MMO**\n天堂OL创始人宋在京宣布离职后用AI独立开发浏览器开源MMO。韩国MMO教父级人物的背书。\n\n**Ore Factory Squad三天数据亮眼**\n72小时60.5K销量/$533K收入/8066 PCU，增长曲线健康，117K愿望单储备充足。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+  "daily_summary": "**Vercel隐蔽测评揭示AI模型真实能力**\nVercel CEO公布内部隐蔽测评：Kimi K3在网络安全领域表现顶尖（推翻"刷榜"质疑），GPT-5.6 Sol更强但贵得多，而Fable全面拒绝配合。\n\n**Palworld多线爆发**\nPalworld本周末再次逼近百万同时在线，与此同时其卡片游戏预售已达350万包（7月30日正式发布）。IP多元化变现路径清晰。\n\n**Ore Factory Squad三天数据亮眼**\n72小时60.5K销量/$533K收入/8066 PCU，增长曲线健康，117K愿望单储备充足。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
 }
