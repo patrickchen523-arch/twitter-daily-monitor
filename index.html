@@ -957,6 +957,25 @@ function findHottestPick(sectionIds) {
 
 function findEditorialHeroPicks() {
   const firstSectionId = (currentData.sections[0] || {}).id;
+
+  // Priority: use explicit editors_pick if available
+  if (currentData.editors_pick && currentData.editors_pick.length) {
+    let aiPick = null, gamePick = null;
+    for (const pick of currentData.editors_pick) {
+      const section = getSectionById(pick.section_id);
+      const item = section && section.items[pick.item_index];
+      if (!item) continue;
+      const result = { section, item, itemIndex: pick.item_index, hook: pick.hook || item.recommendation || item.title };
+      if (!aiPick && (pick.section_id === 'ai' || pick.section_id === 'tools')) { aiPick = result; }
+      else if (!gamePick) { gamePick = result; }
+    }
+    // If editors_pick only specified one, fill the other with hottest
+    if (!aiPick) aiPick = findHottestPick(['ai', 'tools']) || findPick(firstSectionId, 0);
+    if (!gamePick) gamePick = findHottestPick(['indie']) || findPick('indie', 0) || findPick(((currentData.sections[1] || currentData.sections[0]) || {}).id, 0);
+    return { aiPick, gamePick };
+  }
+
+  // Fallback: hottest by score
   const aiPick = findHottestPick(['ai', 'tools']) || findPick(firstSectionId, 0);
   const gamePick = findHottestPick(['indie']) || findPick('indie', 0) || findPick(((currentData.sections[1] || currentData.sections[0]) || {}).id, 0);
   return { aiPick, gamePick };
