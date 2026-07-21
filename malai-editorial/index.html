@@ -1385,10 +1385,55 @@ function normalizeEditorialText(value) {
     .trim();
 }
 
+function normalizeDigestSummaryText(value) {
+  return String(value || '')
+    .replace(/\*\*([^*]+)\*\*\s*(?:\r?\n)+/g, '$1：')
+    .replace(/\*\*/g, '')
+    .replace(/#+\s*/g, '')
+    .replace(/\[[^\]]+\]\(([^)]+)\)/g, '')
+    .replace(/\r/g, '')
+    .replace(/\n+/g, '；')
+    .replace(/\s+/g, ' ')
+    .replace(/\s*([。；;！？!?])\s*/g, '$1')
+    .replace(/[；;]\s*$/, '')
+    .trim();
+}
+
+function compactDigestSummaryText(value) {
+  return value
+    .replace(/将于明天向公众开放/g, '明日公开')
+    .replace(/定位为\s*/g, '')
+    .replace(/但更快、更省 token、更便宜/g, '更快更便宜')
+    .replace(/游戏开发者实测称/g, '开发者实测称')
+    .replace(/感觉像/g, '像')
+    .replace(/说明海外对中国独立游戏的关注度在上升/g, '海外关注度上升')
+    .replace(/武器载具 1:1 复刻/g, '武器载具复刻')
+    .replace(/详情请点击下方【当日速览】的条目跳转到对应推文[。.]?/g, '')
+    .replace(/\s*([。；;！？!?])\s*/g, '$1')
+    .replace(/[；;]\s*$/, '')
+    .trim();
+}
+
 function limitDisplayText(value, maxChars) {
-  const chars = Array.from(normalizeEditorialText(value));
-  if (chars.length <= maxChars) return chars.join('');
-  return chars.slice(0, Math.max(1, maxChars - 1)).join('').replace(/[，、；：,.\s]+$/, '') + '…';
+  let text = normalizeDigestSummaryText(value);
+  if (Array.from(text).length > maxChars) text = compactDigestSummaryText(text);
+  const chars = Array.from(text);
+  if (chars.length <= maxChars) return text;
+  const units = text.match(/[^。；;！？!?]+[。；;！？!?]?/g) || [];
+  let summary = '';
+  for (const unit of units) {
+    const next = (summary + unit).trim();
+    if (Array.from(next).length > maxChars) break;
+    summary = next;
+  }
+  if (summary) {
+    const completeSummary = summary.replace(/[；;]+$/, '').trim();
+    return /[。！？!?]$/.test(completeSummary) ? completeSummary : completeSummary + '。';
+  }
+  const firstUnit = (units[0] || text).trim();
+  if (!firstUnit) return '';
+  const completeFirstUnit = firstUnit.replace(/[；;]+$/, '').trim();
+  return /[。！？!?]$/.test(completeFirstUnit) ? completeFirstUnit : completeFirstUnit + '。';
 }
 
 function formatEditorialHeroTitle(value) {

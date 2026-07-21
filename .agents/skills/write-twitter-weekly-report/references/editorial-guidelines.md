@@ -47,6 +47,7 @@ Useful length targets:
 | Watch body | 35–80 Chinese characters |
 
 Treat these as editorial targets, not truncation rules.
+Length targets are not hard character cuts. If copy is too long, rewrite it or remove a complete sentence or section. Never publish a partial clause, orphan heading, mid-word cut, or ellipsis created only to fit a character limit.
 
 ## Localize gameplay terminology
 

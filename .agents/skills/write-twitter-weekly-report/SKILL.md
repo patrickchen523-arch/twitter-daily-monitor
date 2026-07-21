@@ -107,6 +107,7 @@ Verify in the browser:
 - Clicking a card's image, title, or summary opens the intended daily analysis card, including cases where a source link appears more than once that day.
 - Clicking only `查看原推文 ↗` opens the X source in a new tab.
 - Desktop and mobile layouts remain readable.
+- Digest summaries and story copy end at complete sentence boundaries, with no orphan headings, partial clauses, or character-level truncation.
 
 ## Finish safely
 

@@ -1421,6 +1421,7 @@ function normalizeEditorialText(value) {
 
 function normalizeDigestSummaryText(value) {
   return String(value || '')
+    .replace(/\*\*([^*]+)\*\*\s*(?:\r?\n)+/g, '$1：')
     .replace(/\*\*/g, '')
     .replace(/#+\s*/g, '')
     .replace(/\[[^\]]+\]\(([^)]+)\)/g, '')
@@ -1428,7 +1429,7 @@ function normalizeDigestSummaryText(value) {
     .replace(/\n+/g, '；')
     .replace(/\s+/g, ' ')
     .replace(/\s*([。；;！？!?])\s*/g, '$1')
-    .replace(/[；;。]\s*$/, '')
+    .replace(/[；;]\s*$/, '')
     .trim();
 }
 
@@ -1443,7 +1444,7 @@ function compactDigestSummaryText(value) {
     .replace(/武器载具 1:1 复刻/g, '武器载具复刻')
     .replace(/详情请点击下方【当日速览】的条目跳转到对应推文[。.]?/g, '')
     .replace(/\s*([。；;！？!?])\s*/g, '$1')
-    .replace(/[；;。]\s*$/, '')
+    .replace(/[；;]\s*$/, '')
     .trim();
 }
 
@@ -1459,8 +1460,14 @@ function limitDisplayText(value, maxChars) {
     if (Array.from(next).length > maxChars) break;
     summary = next;
   }
-  if (summary) return /[。；;！？!?]$/.test(summary) ? summary : summary + '。';
-  return text;
+  if (summary) {
+    const completeSummary = summary.replace(/[；;]+$/, '').trim();
+    return /[。！？!?]$/.test(completeSummary) ? completeSummary : completeSummary + '。';
+  }
+  const firstUnit = (units[0] || text).trim();
+  if (!firstUnit) return '';
+  const completeFirstUnit = firstUnit.replace(/[；;]+$/, '').trim();
+  return /[。！？!?]$/.test(completeFirstUnit) ? completeFirstUnit : completeFirstUnit + '。';
 }
 
 const DIGEST_SUMMARY_MAX_CHARS = 220;
