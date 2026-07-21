@@ -7,11 +7,14 @@ Use `data/twitter-weekly.json` as the only weekly content file. Keep it valid UT
 | Field | Type | Rule |
 | --- | --- | --- |
 | `updated` | string | Actual edit date, `YYYY-MM-DD` |
-| `weeks` | array | Oldest to newest and non-overlapping; keep the newest week last because the UI selects it |
+| `weeks` | array | Oldest to newest; non-overlapping except for an explicitly declared cadence transition; keep the newest week last |
+| `cadence_transitions` | array | Optional exact `from`/`to` week-ID pairs that document a user-requested cadence change |
 
 Treat root `manifest.dates` as the runtime's canonical daily-date index. `manifest.reports.daily.dates` is a compatibility index; the audit warns when the two lists diverge. Do not edit either manifest list merely to create a weekly report.
 
-Append only a genuinely new, non-overlapping week. When revising a published range, replace its existing week object in place instead of appending another object.
+Append only a genuinely new, non-overlapping week. When revising a published range, replace its existing week object in place instead of appending another object. For a user-requested cadence change, declare only the exact overlapping pair:
+
+`{ "from": "2026-07-02-to-07-08", "to": "2026-07-06-to-07-12", "reason": "Switch to Monday-Sunday natural weeks" }`
 
 ## Week object
 
@@ -98,7 +101,7 @@ The weekly card stores the story's short date and source link. On click, the pag
 
 Therefore:
 
-- Require an empty `missing_dates` list before drafting, and refuse to append any range that overlaps an existing week.
+- Require an empty `missing_dates` list before drafting. Refuse overlaps unless `--allow-overlap` was explicitly requested and the exact pair is recorded in `cadence_transitions`.
 - Use the inventory's `duplicate_links` list to inspect repeated sources and confirm the runtime-first match.
 - Never use a roundup article or a different repost link for a story card.
 - Never reuse the same story link twice in one week.

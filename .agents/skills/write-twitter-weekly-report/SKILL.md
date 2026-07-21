@@ -22,7 +22,7 @@ Build each weekly report from the daily JSON source of truth, preserve the edito
 - Treat root `manifest.dates` as the runtime date index; audit the compatibility list but never edit either manifest list solely for a weekly report.
 - Cover exactly 7 consecutive calendar dates and require all 7 daily JSON files before drafting.
 - Append only non-overlapping new weeks to `weeks`; keep the newest week last because the UI opens the last entry.
-- Revise an existing week in place instead of appending an overlapping replacement, unless the user explicitly defines a different reporting cadence.
+- Revise an existing week in place instead of appending an overlapping replacement. If the user explicitly changes cadence, add one matching `cadence_transitions` declaration and use `--allow-overlap` only for that transition week.
 - Keep 3 sections in this order: `AI 科技热点`, `游戏市场动态`, `新游推文`.
 - Select 4 stories per section, for 12 stories total.
 - Keep 4 stats, 3 executive paragraphs, 5 rankings, 3 signals, and 4 watch items.
@@ -48,7 +48,7 @@ For a valid JSON starting object, run:
 node .agents/skills/write-twitter-weekly-report/scripts/weekly_tools.mjs draft YYYY-MM-DD YYYY-MM-DD
 ```
 
-Treat the draft as a scaffold. It derives the ISO week code from the report end date, refuses incomplete ranges, and refuses overlap with an existing week. Pass an explicit `WNN` only when the user has defined a different code.
+Treat the draft as a scaffold. It derives the ISO week code from the report end date, refuses incomplete ranges, and refuses overlap with an existing week. Pass `--allow-overlap` only after the user explicitly requests a cadence change, then declare the exact old-to-new pair in root `cadence_transitions`. Pass an explicit `WNN` only when the user has defined a different code.
 Review its computed stats and rankings, then write all editorial fields before inserting it into `data/twitter-weekly.json`.
 
 ## Select the weekly stories
@@ -76,9 +76,10 @@ Review its computed stats and rankings, then write all editorial fields before i
 
 1. Update the root `updated` field to the actual edit date.
 2. Append a completed non-overlapping week, or replace the matching week object when revising an existing report.
-3. Use exact field names and counts from the schema reference.
-4. Reuse the daily item's media URL, or set `image` to `null` when no suitable image exists.
-5. Keep JSON UTF-8, valid, and free of comments.
+3. For an explicit cadence change, add a `cadence_transitions` entry naming the overlapping `from` and `to` week IDs plus the reason; never use a blanket overlap exception.
+4. Use exact field names and counts from the schema reference.
+5. Reuse the daily item's media URL, or set `image` to `null` when no suitable image exists.
+6. Keep JSON UTF-8, valid, and free of comments.
 
 ## Validate before preview
 

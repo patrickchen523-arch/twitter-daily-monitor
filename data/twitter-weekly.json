@@ -1,5 +1,12 @@
 {
-  "updated": "2026-07-09",
+  "updated": "2026-07-21",
+  "cadence_transitions": [
+    {
+      "from": "2026-07-02-to-07-08",
+      "to": "2026-07-06-to-07-12",
+      "reason": "自 2026-07-06 起切换为周一至周日的自然周"
+    }
+  ],
   "weeks": [
     {
       "id": "2026-07-02-to-07-08",
@@ -220,6 +227,450 @@
         {
           "title": "Xbox 裁员后的工作室与人才流向",
           "body": "独立化、出售和团队缩减可能催生新工作室，也可能进一步压缩中型项目空间。"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-06-to-07-12",
+      "label": "7.6 - 7.12",
+      "code": "W28",
+      "range": "2026.07.06 — 07.12",
+      "title": "前沿模型密集交锋，游戏生产开始按速度与成本重新定价",
+      "stats": [
+        {
+          "value": "143",
+          "label": "精选信号"
+        },
+        {
+          "value": "3838万",
+          "label": "累计浏览"
+        },
+        {
+          "value": "28.6万",
+          "label": "累计点赞"
+        },
+        {
+          "value": "7",
+          "label": "连续日报"
+        }
+      ],
+      "executive": [
+        "本周前沿模型竞争从预告迅速进入实测。Anthropic 用内部结构研究争夺可解释性话语权，OpenAI 与 xAI 则以 GPT-5.6、Grok 4.5 同周发布，把开发者的比较维度推向速度、token 消耗、价格和任务完成度。",
+        "游戏市场一边由 Palworld 1.0 的 57 万同时在线和 Limbus Company 的 15.7 万新纪录证明需求仍能集中爆发，另一边又暴露旧作高价移植、Xbox 裁员与工会抗议等供给侧摩擦。",
+        "新游传播继续奖励一句话可理解的世界与机制：中国团队重做经典战争 FPS、活惑星陪伴殖民飞船、拿破仑瘟疫提取射击和强调施法决策的 MMO，都在用具体幻想替代泛化品类标签。"
+      ],
+      "rankings": [
+        {
+          "title": "Anthropic 发现 Claude 内部的“全局工作空间”结构",
+          "metric": "940万浏览",
+          "heat": 100,
+          "link": "https://x.com/AnthropicAI/status/2074185348142280912"
+        },
+        {
+          "title": "Grok 4.5 以更快、更省 token 的 Opus 级定位发布",
+          "metric": "632万浏览",
+          "heat": 85,
+          "link": "https://x.com/elonmusk/status/2074740539874775163"
+        },
+        {
+          "title": "OpenAI 同时推出 GPT-5.6 Sol、Terra 与 Luna",
+          "metric": "550万浏览",
+          "heat": 80,
+          "link": "https://x.com/OpenAI/status/2074704958419792299"
+        },
+        {
+          "title": "Grok 4.5 游戏开发实测进入 Boss 战实现",
+          "metric": "115万浏览",
+          "heat": 22,
+          "link": "https://x.com/DannyLimanseta/status/2074921437933211813"
+        },
+        {
+          "title": "写实版 WoW 演示重燃画风与怀旧价值讨论",
+          "metric": "108万浏览",
+          "heat": 20,
+          "link": "https://x.com/TheRealWizar/status/2074252623042007103"
+        }
+      ],
+      "signals": [
+        {
+          "title": "模型竞争转向有效产出",
+          "body": "同周发布已不足以建立优势，真实引擎任务里的完成速度、token 成本、返工次数与可编辑性正在成为新的比较坐标。"
+        },
+        {
+          "title": "爆发需求不等于供给稳定",
+          "body": "Palworld 与 Limbus Company 的同时在线证明玩家仍会集中回流，但移植定价、裁员和劳资冲突说明内容供给体系仍在承压。"
+        },
+        {
+          "title": "具体幻想继续胜过品类堆叠",
+          "body": "活惑星、拿破仑瘟疫和经典战争叙事都能在一句话内建立画面，清晰的核心幻想仍是独立游戏最有效的传播资产。"
+        }
+      ],
+      "sections": [
+        {
+          "title": "AI 科技热点",
+          "deck": "可解释性、旗舰模型发布与引擎实测在同一周交汇，AI 竞争开始从参数和榜单转向能否稳定完成真实生产任务。",
+          "stories": [
+            {
+              "date": "07.09",
+              "source": "ANTHROPIC",
+              "title": "Claude 内部结构把可解释性推向意识科学",
+              "summary": "Anthropic 在 Claude 内部发现类似“全局工作空间”的信息分隔结构。研究为理解模型如何组织可访问的信息提供了新的可验证入口。",
+              "metric": "940万浏览 · 2.7万赞",
+              "link": "https://x.com/AnthropicAI/status/2074185348142280912",
+              "image": "https://pbs.twimg.com/media/HMj8zKXXoAAohgS.jpg"
+            },
+            {
+              "date": "07.09",
+              "source": "OPENAI",
+              "title": "GPT-5.6 用三档模型重做能力与成本分层",
+              "summary": "OpenAI 同时公布 Sol、Terra 与 Luna，并启动全球预览。多档位发布说明模型选择将更直接地围绕任务难度、延迟和预算展开。",
+              "metric": "550万浏览 · 4.1万赞",
+              "link": "https://x.com/OpenAI/status/2074704958419792299",
+              "image": "https://pbs.twimg.com/media/HMrU7U7bwAEO8yf.jpg"
+            },
+            {
+              "date": "07.10",
+              "source": "GROK",
+              "title": "Grok 4.5 把 Opus 级能力与低成本绑在一起",
+              "summary": "xAI 将 Grok 4.5 定位为更快、更省 token、价格更低的高智能模型。高端模型的竞争重点由“能不能做”进一步转向“做一次要付出多少”。",
+              "metric": "632万浏览 · 5.4万赞",
+              "link": "https://x.com/elonmusk/status/2074740539874775163",
+              "image": null
+            },
+            {
+              "date": "07.12",
+              "source": "SIMWORLD",
+              "title": "36 分钟与 12 美元做出可迭代 UE5 街景",
+              "summary": "Grok 4.5 在 UE5.8 中自主搭建赛博朋克街景，分步保存并自行修复问题。案例把 AI 环境制作从视觉演示推进到有成本与流程记录的生产实验。",
+              "metric": "51.6万浏览 · 2273赞",
+              "link": "https://x.com/simworld_ai/status/2075329449000886582",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2075329395037020160/img/ODBQ9UQbKoTdJFr7.jpg"
+            }
+          ]
+        },
+        {
+          "title": "游戏市场动态",
+          "deck": "玩家规模仍能在更新与长线运营中快速聚集，但商业回报背后同时存在定价信任、组织稳定性与劳资关系的长期成本。",
+          "stories": [
+            {
+              "date": "07.10",
+              "source": "STEAMDB",
+              "title": "Limbus Company 用 15.7 万同时在线验证长线增长",
+              "summary": "Limbus Company 刷新 15.7 万 Steam 同时在线纪录，好评率维持在 86.85%。持续运营内容仍能让成熟产品突破原有用户上限。",
+              "metric": "12.1万浏览 · 5069赞",
+              "link": "https://x.com/SteamDB/status/2075080774059966733",
+              "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg?t=1783074489"
+            },
+            {
+              "date": "07.12",
+              "source": "PALWORLD",
+              "title": "Palworld 1.0 用 57 万同时在线完成强势回流",
+              "summary": "正式版发布后 Steam 同时在线突破 57 万，超过团队内部高预期。争议没有消除需求，关键问题转向更新后的留存与内容消耗速度。",
+              "metric": "8.2万浏览 · 6341赞",
+              "link": "https://x.com/Bucky_cm/status/2075943934845653436",
+              "image": "https://pbs.twimg.com/media/HM87oUmbMAE_6U9.png"
+            },
+            {
+              "date": "07.11",
+              "source": "DIGITAL FOUNDRY",
+              "title": "40 美元基础移植让经典 IP 的信任继续折损",
+              "summary": "Black Ops 1 与 2 的 PS5 移植版只提供基础 1080p 升级却定价 40 美元。玩家开始要求旧作再发行证明技术投入，而非只依赖情怀溢价。",
+              "metric": "15.6万浏览 · 662赞",
+              "link": "https://x.com/digitalfoundry/status/2075555672704401762",
+              "image": null
+            },
+            {
+              "date": "07.11",
+              "source": "PC GAMER",
+              "title": "Bethesda 工会把 Xbox 裁员争议推到工作室门外",
+              "summary": "工会员工计划游行抗议 Xbox 大规模裁员。组织调整不再只是财报数字，劳资关系和核心人才流失开始直接影响制作体系。",
+              "metric": "10.7万浏览 · 757赞",
+              "link": "https://x.com/pcgamer/status/2075535416090870223",
+              "image": "https://pbs.twimg.com/media/HM3IqdgWsAAitKV.jpg"
+            }
+          ]
+        },
+        {
+          "title": "新游推文",
+          "deck": "本周新游靠明确时代、移动方式和同伴设定建立辨识度，传播优势来自玩家能否立刻想象自己在这个世界里做什么。",
+          "stories": [
+            {
+              "date": "07.10",
+              "source": "FOURTEEN YEARS OF FLAMES",
+              "title": "中国独立团队用七条人物线重访经典战争 FPS",
+              "summary": "《十四年炽火》以初代 COD 质感、七名角色和独立任务线组织战役。52.7 万浏览说明海外玩家对中国团队重做经典战争体验已有明确兴趣。",
+              "metric": "52.7万浏览 · 3458赞",
+              "link": "https://x.com/IndieGameJoe/status/2074915608517394943",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2074911227851997184/img/h7AiG4f-vTOXDX_r.jpg"
+            },
+            {
+              "date": "07.11",
+              "source": "ROGUE COLONIES",
+              "title": "活惑星同伴让殖民飞船生存有了情感锚点",
+              "summary": "Rogue Colonies 将殖民飞船 Roguelite 与有智慧的“活惑星”同伴结合。独特伙伴设定为常见生存循环增加了关系和叙事记忆。",
+              "metric": "42.4万浏览 · 2453赞",
+              "link": "https://x.com/AUTOMATONJapan/status/2075422452260409423",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2075421941578829824/img/sNvGYLF59cwJzW3w.jpg"
+            },
+            {
+              "date": "07.12",
+              "source": "HUNGER",
+              "title": "拿破仑瘟疫把提取射击拉进新历史空间",
+              "summary": "HUNGER 把射击与近战放进瘟疫肆虐的拿破仑时代欧洲。清晰时代冲突为拥挤的提取玩法提供了视觉与叙事差异。",
+              "metric": "9.3万浏览 · 1271赞",
+              "link": "https://x.com/VoyagersRevenge/status/2075673767431266795",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2075673319672606720/img/VhErC5qhGlwR3NE2.jpg"
+            },
+            {
+              "date": "07.09",
+              "source": "ARCHEAGE CHRONICLES",
+              "title": "把每次施法写成决策，MMO 战斗才有可读性",
+              "summary": "ArcheAge Chronicles 展示强调用途与战局变化的法师战斗。宣传不再只展示特效规模，而是尝试让玩家理解技能选择的后果。",
+              "metric": "9.6万浏览 · 1017赞",
+              "link": "https://x.com/ArcheAgeChron/status/2074649910394470670",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2074649803443867648/img/GiJvSX5pNsFyOe4Q.jpg"
+            }
+          ]
+        }
+      ],
+      "watch": [
+        {
+          "title": "新模型能否在真实项目中兑现发布承诺",
+          "body": "继续比较 GPT-5.6 与 Grok 4.5 的任务成功率、token 成本、返工次数和可编辑产物，而不只看单次演示。"
+        },
+        {
+          "title": "Palworld 1.0 的高峰能否转化为留存",
+          "body": "观察首周末之后的同时在线、内容消耗速度和玩家评价，判断 57 万回流是事件峰值还是长线重启。"
+        },
+        {
+          "title": "Xbox 裁员后的工会行动与人才流向",
+          "body": "关注抗议回应、项目调整和资深员工去向，验证组织收缩是否继续损害工作室的机构知识。"
+        },
+        {
+          "title": "历史题材新游能否把关注转成试玩反馈",
+          "body": "跟踪《十四年炽火》与 HUNGER 的愿望单、测试口碑和战斗反馈，确认鲜明设定是否有足够玩法支撑。"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-13-to-07-19",
+      "label": "7.13 - 7.19",
+      "code": "W29",
+      "range": "2026.07.13 — 07.19",
+      "title": "AI 工具进入真实工作流，独游爆款由清晰动作驱动",
+      "stats": [
+        {
+          "value": "103",
+          "label": "精选信号"
+        },
+        {
+          "value": "4913万",
+          "label": "累计浏览"
+        },
+        {
+          "value": "28.6万",
+          "label": "累计点赞"
+        },
+        {
+          "value": "7",
+          "label": "连续日报"
+        }
+      ],
+      "executive": [
+        "本周 AI 的关键变化不是模型又能生成什么，而是工具能否接入已有工作流。Claude Code 内置浏览器、GPT-5.6 连接 Blender MCP、单摄像头实时 3D 重建，分别打通了信息获取、专业软件操作和现实场景数字化。",
+        "市场侧同时展示了平台规模的两面：Steam 既能让两人团队在短周期内获得巨大商业回报，也要处理恶意软件、首发服务器过载和审核信任；Xbox 的持续裁员则让机构知识流失成为长期制作风险。",
+        "新游传播几乎被“可立即理解的动作”主导。机组混乱协作、按形状整理方块、用枪后坐力攀爬和在火车上重建生态，都能在数秒内形成观看理由，其中 Dear Passengers 单条视频突破 3168 万浏览。"
+      ],
+      "rankings": [
+        {
+          "title": "Dear Passengers 用物理混乱航空 Co-op 引爆全网",
+          "metric": "3168万浏览",
+          "heat": 100,
+          "link": "https://x.com/nexindie/status/2076850974845509791"
+        },
+        {
+          "title": "Claude Code 内置浏览器让 Agent 直接读取网页与设计稿",
+          "metric": "306万浏览",
+          "heat": 45,
+          "link": "https://x.com/ClaudeDevs/status/2075635283211772279"
+        },
+        {
+          "title": "Steam 恶意软件诈骗案以 FBI 逮捕告终",
+          "metric": "118万浏览",
+          "heat": 23,
+          "link": "https://x.com/Dexerto/status/2078042045835313462"
+        },
+        {
+          "title": "GPT-5.6 通过 Blender MCP 完成专业级 3D 渲染",
+          "metric": "108万浏览",
+          "heat": 21,
+          "link": "https://x.com/prasenx/status/2076631428926972177"
+        },
+        {
+          "title": "开源模型用单摄像头实现实时 3D 场景重建",
+          "metric": "105万浏览",
+          "heat": 20,
+          "link": "https://x.com/thesupermanmx/status/2077779856050606155"
+        }
+      ],
+      "signals": [
+        {
+          "title": "Agent 价值来自跨工具闭环",
+          "body": "浏览器、MCP 与专业软件控制把 AI 从回答问题推进到读取上下文、执行操作和检查结果，工作流完整度开始比单点生成更重要。"
+        },
+        {
+          "title": "模型选型进入成本工程阶段",
+          "body": "同一游戏任务的成本相差 26 倍，团队需要按任务复杂度组合模型，而不是让最强模型承担所有重复性生产。"
+        },
+        {
+          "title": "一句话动作决定传播上限",
+          "body": "修飞机、分方块、用枪攀爬和经营火车生态都能立刻转化成画面，清晰动词正在成为独游获得首轮流量的核心设计。"
+        }
+      ],
+      "sections": [
+        {
+          "title": "AI 科技热点",
+          "deck": "本周 AI 能力通过浏览器、MCP 和实时重建进入现有工具链，新的竞争问题是产物是否可编辑、成本是否可控、流程是否能闭环。",
+          "stories": [
+            {
+              "date": "07.13",
+              "source": "CLAUDE CODE",
+              "title": "内置浏览器让编码 Agent 开始读取真实工作现场",
+              "summary": "Claude Code 桌面端新增沙盒浏览器，可读取网页、文档与设计稿并执行交互。编码助手因此能把外部需求上下文直接带进实现过程。",
+              "metric": "306万浏览 · 2.1万赞",
+              "link": "https://x.com/ClaudeDevs/status/2075635283211772279",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2075635029393420288/img/oNqpKW0QqQTdXHRQ.jpg"
+            },
+            {
+              "date": "07.15",
+              "source": "GPT-5.6 + BLENDER",
+              "title": "MCP 把零基础用户带进专业 3D 制作流程",
+              "summary": "开发者通过 Cursor、GPT-5.6 与 Blender MCP，一句话完成浮空 MacBook 的建模和渲染。案例证明专业软件门槛正被可调用工具链重新拆解。",
+              "metric": "108万浏览 · 8587赞",
+              "link": "https://x.com/prasenx/status/2076631428926972177",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2076630578103980032/img/kKJp0RX5kIkYlRXC.jpg"
+            },
+            {
+              "date": "07.18",
+              "source": "OPEN-SOURCE 3D",
+              "title": "单摄像头实时重建把现实场景变成可用素材",
+              "summary": "开源模型无需 LiDAR，在单 GPU 上以 20fps 稳定处理超过一万帧。对游戏团队而言，现实采集进入可低成本转化为场景资产的阶段。",
+              "metric": "105万浏览 · 1.3万赞",
+              "link": "https://x.com/thesupermanmx/status/2077779856050606155",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2077779593252274176/img/QcPImhDtgBFJCMEt.jpg"
+            },
+            {
+              "date": "07.14",
+              "source": "MODEL COST TEST",
+              "title": "同一游戏任务相差 26 倍，模型选型成为成本工程",
+              "summary": "同一任务中 Muse、Grok、GPT-5.6 与 Fable 的成本从 0.20 美元到 5.20 美元不等。批量生产需要按难度分配模型，而非默认使用最强档。",
+              "metric": "54万浏览 · 2560赞",
+              "link": "https://x.com/shub0414/status/2076298361674911884",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2076298271723814913/img/EKddrOEFHl5H_nxG.jpg"
+            }
+          ]
+        },
+        {
+          "title": "游戏市场动态",
+          "deck": "Steam 继续放大小团队的商业上限，也同步暴露安全、容量和审核压力；大型工作室则仍在承担裁员带来的知识与士气损失。",
+          "stories": [
+            {
+              "date": "07.18",
+              "source": "STEAM SECURITY",
+              "title": "恶意软件案迫使 Steam 重新面对上架信任成本",
+              "summary": "诈骗者把恶意软件藏进 Steam 游戏并窃取 22 万美元，最终被 FBI 追踪逮捕。平台若加强审核，小团队的合规与发布成本也可能同步提高。",
+              "metric": "118万浏览 · 2.8万赞",
+              "link": "https://x.com/Dexerto/status/2078042045835313462",
+              "image": "https://pbs.twimg.com/media/HNawOZpXQAAUPvd.jpg"
+            },
+            {
+              "date": "07.18",
+              "source": "MECCHA CHAMELEON",
+              "title": "两人两月的爆款再次抬高独游商业想象",
+              "summary": "据 Alinea Analytics，Meccha Chameleon 累计收入达 7130 万美元，并成为 2026 年 Steam 销量冠军。极小团队与全球分发仍可形成惊人杠杆。",
+              "metric": "24.3万浏览 · 5939赞",
+              "link": "https://x.com/Dexerto/status/2078094895101718731",
+              "image": "https://pbs.twimg.com/media/HNbgSjxWUAATlAa.jpg"
+            },
+            {
+              "date": "07.16",
+              "source": "XBOX",
+              "title": "裁员后的机构知识流失成为 Xbox 长期风险",
+              "summary": "报告称 Xbox Studios 内部持续处于不安全感中，资深员工离开造成“惊人的”机构知识流失。组织收缩可能在未来项目中转化为返工和延期。",
+              "metric": "4.6万浏览 · 130赞",
+              "link": "https://x.com/eurogamer/status/2077358335674679306",
+              "image": "https://pbs.twimg.com/media/HNRCTGSXEAAVFsd.jpg"
+            },
+            {
+              "date": "07.17",
+              "source": "SPIRITVALE",
+              "title": "首发服务器崩溃证明需求，也考验扩容速度",
+              "summary": "SpiritVale 上线首日因玩家过多出现服务器故障，评价压力主要来自容量而非游戏内容。真实需求已经出现，能否快速恢复决定口碑走向。",
+              "metric": "28.6万浏览 · 1296赞",
+              "link": "https://x.com/AUTOMATONJapan/status/2077640913736917189",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2077640803732922368/img/mA2ZqcCmEiFLuOAA.jpg"
+            }
+          ]
+        },
+        {
+          "title": "新游推文",
+          "deck": "四个高传播案例都能用一个动作说清：处理航空事故、按形状整理、用枪攀爬、在火车上重建生态，机制本身就是宣传素材。",
+          "stories": [
+            {
+              "date": "07.15",
+              "source": "DEAR PASSENGERS",
+              "title": "航空事故协作把物理混乱变成社交内容机器",
+              "summary": "玩家作为机组人员修飞机、管乘客并处理荒诞危机，公布视频获得 3168 万浏览。清晰分工与失控物理天然适合直播和短视频传播。",
+              "metric": "3168万浏览 · 11万赞",
+              "link": "https://x.com/nexindie/status/2076850974845509791",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2076849454510923776/img/8Q0OZ4PgXLLVR0Cs.jpg"
+            },
+            {
+              "date": "07.18",
+              "source": "色で仕分けるな",
+              "title": "反直觉整理规则把重复劳动变成观看挑战",
+              "summary": "玩家必须逐个捡起方块并按形状而非颜色分类，Steam 页面公布获得 73.7 万浏览。简单规则与高压误导共同制造了可观看的苦行体验。",
+              "metric": "73.7万浏览 · 5467赞",
+              "link": "https://x.com/denfaminicogame/status/2077987623826842100",
+              "image": "https://pbs.twimg.com/ext_tw_video_thumb/2077987579727921152/pu/img/9r8qWGzGsDObJG-w.jpg"
+            },
+            {
+              "date": "07.15",
+              "source": "銃で登るゲーム",
+              "title": "把枪的后坐力改成攀爬工具，一句话机制自然传播",
+              "summary": "日本开发者用射击后坐力推动角色向上攀爬，原型获得 62.9 万浏览。单一动词的重新组合足以建立完整挑战和即时笑点。",
+              "metric": "62.9万浏览 · 454赞",
+              "link": "https://x.com/RickTheR1ck/status/2076718519601987956",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2076718462219751424/img/awOQ9LdHWWyWz-Hb.jpg"
+            },
+            {
+              "date": "07.16",
+              "source": "RAILBORN",
+              "title": "火车上的生态建造让合作生存围绕同一空间运转",
+              "summary": "两名开发者让玩家逐件搭建火车、管理电力水源并重建生态圈。移动基地把合作分工、资源流动和共同成长收束到一条清晰主线。",
+              "metric": "42.7万浏览 · 7070赞",
+              "link": "https://x.com/IndieGameJoe/status/2077211662525092162",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2077211557134823424/img/JK_dIKxJmUzIEs7U.jpg"
+            }
+          ]
+        }
+      ],
+      "watch": [
+        {
+          "title": "Roblox Build 7 月 28 日上线后的内容质量",
+          "body": "观察手机端 AI 生成游戏的完成率、可玩性与创作者留存，判断低门槛是否能转化为持续供给。"
+        },
+        {
+          "title": "Dear Passengers 能否把病毒传播转成愿望单",
+          "body": "继续跟踪商店关注、试玩计划和争议回应，验证 3168 万浏览是否形成可持续玩家社区。"
+        },
+        {
+          "title": "SpiritVale 扩容后能否修复首发评价",
+          "body": "关注服务器稳定性、排队时间和 Steam 评价变化，判断团队能否把超预期需求转化为留存。"
+        },
+        {
+          "title": "AI 3D 工作流能否交付可编辑资产",
+          "body": "后续案例应检查拓扑、材质、版本迭代与引擎导入，而不只比较最终渲染画面的完成速度。"
         }
       ]
     }

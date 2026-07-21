@@ -16,7 +16,7 @@ const categoryIds = {
 function usage() {
   console.log(`Usage:
   node weekly_tools.mjs inventory <start> <end> [--top N] [--root PATH]
-  node weekly_tools.mjs draft <start> <end> [WNN] [--root PATH]
+  node weekly_tools.mjs draft <start> <end> [WNN] [--allow-overlap] [--root PATH]
   node weekly_tools.mjs audit [--root PATH]
 
 Dates use YYYY-MM-DD. The default root is the repository containing this Skill.`);
@@ -31,6 +31,7 @@ function parseArgs(args) {
   const positional = [];
   let root = defaultRoot;
   let top = Infinity;
+  let allowOverlap = false;
   for (let i = 0; i < args.length; i += 1) {
     if (args[i] === '--root') {
       if (!args[i + 1]) fail('--root requires a path');
@@ -39,11 +40,13 @@ function parseArgs(args) {
       const value = Number(args[++i]);
       if (!Number.isInteger(value) || value < 1) fail('--top requires a positive integer');
       top = value;
+    } else if (args[i] === '--allow-overlap') {
+      allowOverlap = true;
     } else {
       positional.push(args[i]);
     }
   }
-  return { positional, root, top };
+  return { positional, root, top, allowOverlap };
 }
 
 function readJson(file) {
@@ -267,7 +270,7 @@ function heatScores(items) {
   });
 }
 
-function draftOutput(inventory, code) {
+function draftOutput(inventory, code, allowOverlap = false) {
   if (inventory.expectedDates.length !== 7) {
     fail(`A weekly report must cover exactly 7 consecutive dates; received ${inventory.expectedDates.length}`);
   }
@@ -275,7 +278,7 @@ function draftOutput(inventory, code) {
     fail(`Cannot draft an incomplete range; missing daily files: ${inventory.missingDates.join(', ')}`);
   }
   const overlaps = findWeekOverlaps(inventory.root, inventory.start, inventory.end);
-  if (overlaps.length) {
+  if (overlaps.length && !allowOverlap) {
     fail(`Requested range overlaps existing week(s): ${overlaps.map(week => week.id).join(', ')}. Revise the existing week in place or choose a non-overlapping range.`);
   }
   const resolvedCode = code || isoWeekCode(inventory.end);
@@ -350,6 +353,19 @@ function audit(root) {
   if (!isIsoDate(weekly.updated)) error('root.updated must use YYYY-MM-DD');
   if (!Array.isArray(weekly.weeks) || !weekly.weeks.length) error('root.weeks must be a non-empty array');
 
+  const cadenceTransitions = weekly.cadence_transitions === undefined ? [] : weekly.cadence_transitions;
+  if (!Array.isArray(cadenceTransitions)) error('root.cadence_transitions must be an array when present');
+  const allowedTransitionPairs = new Map();
+  (Array.isArray(cadenceTransitions) ? cadenceTransitions : []).forEach((transition, index) => {
+    const transitionLabel = `cadence_transitions[${index}]`;
+    requireString(transition?.from, `${transitionLabel}.from`);
+    requireString(transition?.to, `${transitionLabel}.to`);
+    requireString(transition?.reason, `${transitionLabel}.reason`);
+    if (typeof transition?.from === 'string' && typeof transition?.to === 'string') {
+      allowedTransitionPairs.set(`${transition.from}->${transition.to}`, transition.reason);
+    }
+  });
+
   const manifestDates = [...new Set(manifest.dates || [])].sort();
   const compatibilityDates = Array.isArray(manifest.reports?.daily?.dates)
     ? [...new Set(manifest.reports.daily.dates)].sort()
@@ -386,6 +402,7 @@ function audit(root) {
 
   const seenIds = new Set();
   let previousRange = null;
+  let previousWeekId = '';
   for (let weekIndex = 0; weekIndex < (weekly.weeks || []).length; weekIndex += 1) {
     const week = weekly.weeks[weekIndex];
     const label = `weeks[${weekIndex}]`;
@@ -399,8 +416,16 @@ function audit(root) {
       error(`${label}.id must encode a start and end date`);
     } else {
       if (previousRange && parsedRange.start < previousRange.start) error('weeks must be ordered oldest to newest');
-      if (previousRange && parsedRange.start <= previousRange.end) error(`${label}.id overlaps the previous week; weekly ranges must not overlap`);
+      if (previousRange && parsedRange.start <= previousRange.end) {
+        const transitionKey = `${previousWeekId}->${week.id}`;
+        if (allowedTransitionPairs.has(transitionKey)) {
+          warn(`${label}.id overlaps the previous week under declared cadence transition: ${allowedTransitionPairs.get(transitionKey)}`);
+        } else {
+          error(`${label}.id overlaps the previous week without a matching cadence transition declaration`);
+        }
+      }
       previousRange = parsedRange;
+      previousWeekId = week.id;
       const rangeDates = calendarDates(parsedRange.start, parsedRange.end);
       if (rangeDates.length !== 7) error(`${label}.id must cover exactly 7 consecutive dates`);
       const missingRangeDates = rangeDates.filter(date => (
@@ -519,7 +544,7 @@ function audit(root) {
 }
 
 const command = process.argv[2] || 'help';
-const { positional, root, top } = parseArgs(process.argv.slice(3));
+const { positional, root, top, allowOverlap } = parseArgs(process.argv.slice(3));
 
 if (command === 'inventory') {
   if (positional.length !== 2) {
@@ -534,7 +559,7 @@ if (command === 'inventory') {
     process.exit(1);
   }
   const inventory = loadInventory(root, positional[0], positional[1]);
-  console.log(JSON.stringify(draftOutput(inventory, positional[2]), null, 2));
+  console.log(JSON.stringify(draftOutput(inventory, positional[2], allowOverlap), null, 2));
 } else if (command === 'audit') {
   if (positional.length) {
     usage();
