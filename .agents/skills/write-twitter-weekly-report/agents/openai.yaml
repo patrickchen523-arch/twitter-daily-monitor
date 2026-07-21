@@ -1,0 +1,4 @@
+interface:
+  display_name: "推特周报工作流"
+  short_description: "统一推特周报的选题、写作、数据映射、验证和发布流程"
+  default_prompt: "Use $write-twitter-weekly-report to create the next Twitter weekly report from the project daily JSON files and validate every story link."
