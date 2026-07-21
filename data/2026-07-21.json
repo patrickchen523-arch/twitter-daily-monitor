@@ -3,7 +3,7 @@
   "meta": {
     "raw_count": 196,
     "filtered_count": 162,
-    "selected_count": 22,
+    "selected_count": 10,
     "crawl_time": "2026-07-21 18:00"
   },
   "lede": "百度开源3B参数OCR一次性读完100页文档；BCI脑机接口玩黑神话悟空引爆讨论；Palworld第二周末逼近百万在线+卡片预售350万包；AC黑旗重制首周300万销量。",
@@ -22,19 +22,19 @@
   "digest": [
     {
       "id": "ai",
-      "text": "百度开源Unlimited-OCR：3B参数一次性解析100页文档\nBCI脑机接口玩黑神话悟空\nGoogle html-in-canvas：实验性渲染HTML为3D纹理\nAirPod语音控制AI工具"
+      "text": "百度开源Unlimited-OCR：3B参数一次性解析100页文档\nBCI脑机接口玩黑神话悟空"
     },
     {
       "id": "industry",
-      "text": "Palworld第二周末逼近百万在线\nAC黑旗重制首周300万销量\nFF14手游全球上线前被砍\nSteam Deck零件涨价或面临提价\n数字独占PS6对100+国家影响巨大"
+      "text": "Palworld第二周末逼近百万在线\nAC黑旗重制首周300万销量\nFF14手游全球上线前被砍\nPalworld卡片预售350万包"
     },
     {
       "id": "indie",
-      "text": "Walkable Cities单脚行走小游戏430万播放\n无光追水面反射技术100万播放\nPigs and Wolf物理协作守家\nWatch Yo Plane今日发售"
+      "text": "Walkable Cities单脚行走小游戏430万播放\nPigs and Wolf物理协作守家\nWatch Yo Plane今日发售"
     },
     {
       "id": "tools",
-      "text": "Unity 6.6 Beta开放\nUnreal Fest Chicago演讲上线\nKenney免费3D Mega Pack预告"
+      "text": "Steam火车节进行中至7月27日"
     }
   ],
   "sections": [
@@ -82,72 +82,6 @@
           "summary": "一款BCI脑机接口设备演示了用意念操控黑神话悟空的游玩过程。虽然操作精度有限（作者自嘲手脚也不灵活），但展示了非侵入式BCI在游戏领域的可能性。",
           "analysis": "脑机接口在游戏中的实际应用场景目前更偏向辅助功能（如帮助肢体障碍玩家），离替代手柄/键鼠还很远。但作为技术展示，它吸引了大量关注。",
           "recommendation": "BCI脑机接口玩黑神话悟空——意念操控游戏的可能性展示",
-          "featured": false
-        },
-        {
-          "idx": "AI科技热点 03",
-          "source": "How To Prompt · Web技术",
-          "tags": ["Google", "Chrome", "WebGL"],
-          "title": "Google实验新特性html-in-canvas：在Canvas中渲染实时HTML为3D纹理",
-          "en_title": "Google has solved a 20-year-old web problem with html-in-canvas - renders live HTML directly as a 3D texture",
-          "full_text": "Google has solved a 20-year-old web problem..\n\nIt's called html-in-canvas, a new experimental Chrome feature that renders live HTML directly as a 3D texture.\n\n→ draws any DOM element straight into a canvas\n→ full CSS still works, flexbox, grid, shadows, backdrop-filter, animations\n→ text stays selectable, inputs stay typeable, screen readers still see it\n→ auto syncs with your DOM on every paint\n→ pipes into any WebGL shader",
-          "author": "HowToPrompt__",
-          "date": "2026-07-19",
-          "likes": 1485,
-          "views": 202658,
-          "link": "https://x.com/HowToPrompt__/status/2078840407212085248",
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2078839393188786176/img/HIHhAnY7mbPc8KhD.jpg",
-            "video_url": "https://x.com/HowToPrompt__/status/2078840407212085248/video/1"
-          },
-          "summary": "Google推出实验性Chrome特性html-in-canvas，解决了20年来的Web难题：将任意DOM元素实时渲染为Canvas中的3D纹理，保留完整CSS、可选择文本、屏幕阅读器兼容。",
-          "analysis": "对Web游戏开发的意义巨大：游戏内UI可以直接使用HTML/CSS渲染到3D场景中，无需将DOM元素转为纹理再贴图。Three.js/WebGL游戏的UI系统可能因此大幅简化。",
-          "recommendation": "Google html-in-canvas：DOM直接渲染为3D纹理——Web游戏UI革命",
-          "featured": false
-        },
-        {
-          "idx": "AI科技热点 04",
-          "source": "gxjo · AI工具",
-          "tags": ["AI语音", "AirPod", "工具"],
-          "title": "用AirPod语音指挥AI的工具爆火——55万播放",
-          "en_title": "Somebody built a tool to whip your AI through an AirPod",
-          "full_text": "Somebody built a tool to whip your AI through an AirPod.",
-          "author": "gxjo_dev",
-          "date": "2026-07-20",
-          "likes": 2887,
-          "views": 546873,
-          "link": "https://x.com/gxjo_dev/status/2079072338881216668",
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2079072301908459520/img/SQyFrttQUtUzzoZM.jpg",
-            "video_url": "https://x.com/gxjo_dev/status/2079072338881216668/video/1"
-          },
-          "summary": "有人开发了通过AirPod语音指挥AI执行任务的工具，视频演示引爆社交媒体。55万播放、近3000点赞。",
-          "analysis": "语音作为AI交互入口的趋势正在加速。对游戏开发者而言，这提示了语音指令在游戏中的新可能性——不止是NPC对话，还可以是实时编程/调试。",
-          "recommendation": "AirPod语音指挥AI工具爆火——55万播放展示语音交互新范式",
-          "featured": false
-        },
-        {
-          "idx": "AI科技热点 05",
-          "source": "Kahris · AI游戏开发",
-          "tags": ["Codex", "Diablo", "触控"],
-          "title": "用Codex 5.6 Sol将初代暗黑移植为iPad触控版——已开源",
-          "en_title": "I used Codex 5.6 Sol to make the original Diablo actually playable by touch on iPad. Open sourcing it all.",
-          "full_text": "I used Codex 5.6 Sol to make the original Diablo actually playable by touch on iPad.\n\nDiablo was always point-and-click. Now your finger is the mouse. Tap gold on the floor and your character walks over and grabs it.\n\nIt's built on DevilutionX, the open-source Diablo engine a group of contributors has maintained for years. It already ran on iOS, with a virtual gamepad. What didn't exist was a version built around the touchscreen itself.\n\nOpen sourcing it all below.",
-          "author": "chrissotraidis",
-          "date": "2026-07-19",
-          "likes": 1223,
-          "views": 132519,
-          "link": "https://x.com/chrissotraidis/status/2078836652773187782",
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2078834998267035648/img/oavvbrdxIMS-cepj.jpg",
-            "video_url": "https://x.com/chrissotraidis/status/2078836652773187782/video/1"
-          },
-          "summary": "开发者用Codex 5.6 Sol将初代暗黑破坏神通过DevilutionX引擎改造为iPad原生触控版：点击地面角色自动寻路拾取。完整开源。",
-          "analysis": "AI辅助将经典游戏移植到新平台的案例越来越多。Codex在理解游戏输入逻辑并重新映射到触控方面展现了实用价值。开源意味着社区可以为更多经典游戏复刻触控版。",
-          "recommendation": "Codex 5.6将初代暗黑改为iPad触控版并开源——AI辅助经典移植",
           "featured": false
         }
       ]
@@ -217,48 +151,6 @@
         },
         {
           "idx": "游戏行业 04",
-          "source": "Eurogamer · 硬件",
-          "tags": ["Steam Deck", "Valve", "涨价"],
-          "title": "Valve工程师：Steam Machine零件价格仍在涨，可能面临提价",
-          "en_title": "Valve Steam Machine engineer says component prices are still rising, potentially paving the way for a price increase",
-          "full_text": "\"Honestly, it's still getting worse\" - Valve Steam Machine engineer says component prices are still rising, potentially paving the way for a price increase",
-          "author": "eurogamer",
-          "date": "2026-07-20",
-          "likes": 46,
-          "views": 7633,
-          "link": "https://x.com/eurogamer/status/2079185925746438494",
-          "media": {
-            "type": "image",
-            "url": "https://pbs.twimg.com/media/HNrAdyebIAAMS9q.jpg"
-          },
-          "summary": "Valve Steam Machine工程师表示零部件价格\"仍在恶化\"，暗示可能需要提价。这对Steam掌机生态的价格竞争力构成威胁。",
-          "analysis": "如果Steam Deck/Machine涨价，将直接影响独立游戏在掌机平台的覆盖率。低价是Steam掌机吸引用户的核心优势之一。",
-          "recommendation": "Valve工程师警告零件涨价未止——Steam掌机或面临提价",
-          "featured": false
-        },
-        {
-          "idx": "游戏行业 05",
-          "source": "TheGamer · 主机",
-          "tags": ["PS6", "数字版", "市场"],
-          "title": "数字独占PS6对100+国家玩家影响巨大",
-          "en_title": "Digital Only PS6 Has Huge Ramifications For Over 100 Countries",
-          "full_text": "Digital Only PS6 Has Huge Ramifications For Over 100 Countries",
-          "author": "thegamerwebsite",
-          "date": "2026-07-20",
-          "likes": 55,
-          "views": 2753,
-          "link": "https://x.com/thegamerwebsite/status/2079053777768787972",
-          "media": {
-            "type": "image",
-            "url": "https://pbs.twimg.com/media/HNpIZMUW8AA-iLb.jpg"
-          },
-          "summary": "分析指出纯数字版PS6将对100多个国家产生巨大负面影响——这些地区网络基础设施不足、数字支付不普及、或PSN商店不覆盖。",
-          "analysis": "全数字化趋势忽视了全球数字鸿沟。对游戏行业而言，这可能意味着新兴市场玩家被迫转向PC/手机平台，长期改变主机市场的地理格局。",
-          "recommendation": "数字独占PS6将伤害100+国家玩家——全球数字鸿沟警示",
-          "featured": false
-        },
-        {
-          "idx": "游戏行业 06",
           "source": "RagerYT · 市场",
           "tags": ["Palworld", "TCG", "卡片"],
           "title": "Palworld卡片游戏预售350万包——7月30日发布",
@@ -321,28 +213,6 @@
         },
         {
           "idx": "新游推文 02",
-          "source": "GermanStrands · 技术展示",
-          "tags": ["水面反射", "渲染", "无光追"],
-          "title": "无光追实现惊艳水面反射——100万播放技术展示",
-          "en_title": "water reflections without ray tracing - 1M views tech showcase",
-          "full_text": "water reflections without ray tracing",
-          "author": "GermanStrands",
-          "date": "2026-07-19",
-          "likes": 10220,
-          "views": 1017883,
-          "link": "https://x.com/GermanStrands/status/2078889567550116239",
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2078889242030227457/img/XN5xHxsu__OM3Q9n.jpg",
-            "video_url": "https://x.com/GermanStrands/status/2078889567550116239/video/1"
-          },
-          "summary": "独立开发者展示了不使用光线追踪实现的水面反射效果，视觉质量令人惊叹。视频获得100万播放、1万点赞。",
-          "analysis": "在不依赖RT硬件的前提下实现高质量水面反射，对独立开发者和低配平台支持都极有价值。传统SSR(屏幕空间反射)+planar reflection的组合仍然能产出惊人效果。",
-          "recommendation": "无光追水面反射效果惊艳——100万播放证明传统渲染仍有高上限",
-          "featured": false
-        },
-        {
-          "idx": "新游推文 03",
           "source": "電ファミニコゲーマー · 新游",
           "tags": ["合作", "物理", "建造"],
           "title": "Pigs and Wolf：三只小猪物理守家协作游戏",
@@ -374,7 +244,7 @@
           "why_notable": "日本最大游戏媒体之一介绍后获得63万播放，物理+合作+经典IP的组合极具传播力。"
         },
         {
-          "idx": "新游推文 04",
+          "idx": "新游推文 03",
           "source": "4ydam · 发售",
           "tags": ["合作", "飞机", "今日发售"],
           "title": "Watch Yo Plane今日发售——双人合作驾驶飞机",
@@ -404,50 +274,6 @@
           "header_image": "https://pbs.twimg.com/amplify_video_thumb/2078578198477000704/img/_6GTD5cRQvBFw6pH.jpg",
           "description": "一款双人合作飞机驾驶游戏。两位玩家需要协调操控同一架飞机——一人控制方向一人控制油门，考验默契和沟通。游戏节奏快、坠机频繁，是派对/直播向的社交欢乐游戏。开发者仅一人，3000愿望单起步。",
           "why_notable": "今日发售的极简合作游戏，适合直播和社交传播场景。"
-        },
-        {
-          "idx": "新游推文 05",
-          "source": "jockie · 动作",
-          "tags": ["ARPG", "DMC", "独游"],
-          "title": "Direland：从暗黑向鬼泣演化的独游ARPG",
-          "en_title": "Added more skills - going from Diablo to Devil May Cry vibes",
-          "full_text": "さらにスキルを追加しました。ディアブロからデビルメイクライっぽくなってきた",
-          "author": "KAIJIUUUUU",
-          "date": "2026-07-18",
-          "likes": 1325,
-          "views": 95252,
-          "link": "https://x.com/KAIJIUUUUU/status/2078564934028587281",
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2078559713109893120/img/_Rl7P1Q9F3C-5hvO.jpg",
-            "video_url": "https://x.com/KAIJIUUUUU/status/2078564934028587281/video/1"
-          },
-          "summary": "独立开发者展示其游戏Direland的新技能系统，风格从暗黑类逐渐演化为鬼泣式动作游戏。9.5万播放、1300点赞。",
-          "analysis": "暗黑like+鬼泣式动作的融合是一个有吸引力的方向：保留刷刷刷的满足感同时增加操作深度。视觉效果和打击感已经非常出色。",
-          "recommendation": "Direland从暗黑进化为鬼泣风——独游ARPG战斗系统惊艳",
-          "featured": false
-        },
-        {
-          "idx": "新游推文 06",
-          "source": "Simon · Hytale",
-          "tags": ["MMO", "Hytale", "地牢"],
-          "title": "Hytale创始人展示WoW灵感地牢Boss战——20年WoW玩家的致敬",
-          "en_title": "Simon (Hytale): Dungeons and boss fights inspired by WoW - played since day one 2004",
-          "full_text": "If you ever played World of Warcraft, you might see some inspiration here! I've been a player since day one, 2004! FF14, EverQuest, RuneScape, Lineage, Guild Wars, etc. I've seen it all, which also caused me to fail 2 years of high school lmao.\n\nDungeons and boss fights will play a big part in where we're heading. We'll be adding an optional hard mode to a lot of the bosses, so we can get that souls vibe a bit.",
-          "author": "Simon_Hypixel",
-          "date": "2026-07-19",
-          "likes": 6935,
-          "views": 224973,
-          "link": "https://x.com/Simon_Hypixel/status/2078821974063948129",
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2078814042718670848/img/MAjDp_Duxa8T4tXK.jpg",
-            "video_url": "https://x.com/Simon_Hypixel/status/2078821974063948129/video/1"
-          },
-          "summary": "Hytale创始人Simon展示了受WoW启发的地牢和Boss战系统。他从2004年起就是WoW玩家，还将加入可选困难模式以融入魂类氛围。22万播放。",
-          "analysis": "Hytale作为Minecraft最大的潜在竞争者，加入WoW式PvE内容是重要的差异化方向。这条推文的高互动量说明社区对Hytale的PvE方向非常期待。",
-          "recommendation": "Hytale展示WoW式地牢Boss战——22万播放的PvE内容预告",
-          "featured": false
         }
       ]
     },
@@ -459,91 +285,6 @@
       "items": [
         {
           "idx": "开发工具 01",
-          "source": "Unity · 引擎",
-          "tags": ["Unity", "Beta", "6.6"],
-          "title": "Unity 6.6 Beta开放——报Bug赢GPU活动同步开启",
-          "en_title": "Unity 6.6 beta is open - report bugs to win RTX 5070 Ti, RX 9070 XT, or RTX 4070 Super",
-          "full_text": "The Unity 6.6 beta is open!\n\nReport an original bug by August 17, 2026 to enter the sweepstakes for a chance to win one of 3 GPUs: RTX 5070 Ti, RX 9070 XT, or RTX 4070 Super.",
-          "author": "unitygames",
-          "date": "2026-07-20",
-          "likes": 5,
-          "views": 2377,
-          "link": "https://x.com/unitygames/status/2079225954744807875",
-          "media": {
-            "type": "image",
-            "url": "https://pbs.twimg.com/media/HNrk-TbWoAEJCTg.jpg"
-          },
-          "summary": "Unity 6.6 Beta正式开放。配合推出报Bug赢GPU活动（RTX 5070 Ti / RX 9070 XT / RTX 4070 Super），截止8月17日。",
-          "analysis": "Unity通过\"报Bug赢硬件\"活动激励社区参与Beta测试，是一个聪明的QA策略。开发者可以提前体验新功能同时为引擎稳定性做贡献。",
-          "recommendation": "Unity 6.6 Beta开放——报Bug赢RTX 5070 Ti/RX 9070 XT",
-          "featured": false
-        },
-        {
-          "idx": "开发工具 02",
-          "source": "Unreal Engine · 引擎",
-          "tags": ["Unreal", "UE5", "教程"],
-          "title": "Unreal Fest Chicago演讲视频开始上线YouTube",
-          "en_title": "Unreal Fest Chicago YouTube playlist - talks and sessions rolling out now",
-          "full_text": "Don't forget to tap in to our Unreal Fest Chicago YouTube playlist!\n\nWe're starting to roll out the incredible talks and sessions that took place last month, alongside our already available clips from State of Unreal 2026.",
-          "author": "UnrealEngine",
-          "date": "2026-07-20",
-          "likes": 20,
-          "views": 4272,
-          "link": "https://x.com/UnrealEngine/status/2079235182406893921",
-          "media": {
-            "type": "image",
-            "url": "https://pbs.twimg.com/media/HNrtIa7bwAAs_i4.jpg"
-          },
-          "summary": "Unreal Engine官方开始将Unreal Fest Chicago的演讲和会议视频上传YouTube播放列表，包括State of Unreal 2026的内容。",
-          "analysis": "Unreal Fest的技术分享对UE开发者是重要的学习资源。及时上线YouTube让无法到场的开发者也能获取最新引擎技术知识。",
-          "recommendation": "Unreal Fest Chicago演讲上线YouTube——UE开发者学习资源",
-          "featured": false
-        },
-        {
-          "idx": "开发工具 03",
-          "source": "Kenney · 免费资产",
-          "tags": ["Kenney", "免费", "3D资产"],
-          "title": "Kenney预告多款免费资产包：3D Mega Pack、涂鸦平台、复古纹理",
-          "en_title": "Preview of game assets: Untitled 3D mega pack, Scribble Platformer expansion, Retro Textures Liminal Spaces & Tiny Factory. All free.",
-          "full_text": "Preview of #gameassets I'm working on; Untitled 3D mega pack, Scribble Platformer expansion, Retro Textures Liminal Spaces & Tiny Factory.\n\nAll coming soon, all completely free.",
-          "author": "KenneyNL",
-          "date": "2026-07-18",
-          "likes": 619,
-          "views": 14849,
-          "link": "https://x.com/KenneyNL/status/2078519746484412689",
-          "media": {
-            "type": "image",
-            "url": "https://pbs.twimg.com/media/HNhiiK8WYAA9l2b.png"
-          },
-          "summary": "知名免费资产作者Kenney预告多款新资产包：3D Mega Pack、Scribble Platformer扩展、Retro Textures Liminal Spaces、Tiny Factory。全部免费发布。",
-          "analysis": "Kenney是独立开发者社区最受欢迎的免费资产提供者。新的Liminal Spaces复古纹理包对恐怖/氛围向游戏特别有用。",
-          "recommendation": "Kenney新一批免费资产预告——3D/涂鸦/复古/工厂主题全免费",
-          "featured": false
-        },
-        {
-          "idx": "开发工具 04",
-          "source": "ThreeJS Assets · Web资产",
-          "tags": ["Three.js", "资产包", "沙漠"],
-          "title": "Three.js沙漠王国资产包发布——63件资产仅344KB",
-          "en_title": "New Three.js Desert Kingdom Asset Pack - 63 assets, 4 palettes, 344 KB combined GLB",
-          "full_text": "New Three.js Desert Kingdom Asset Pack is out now!\n\n🏜️ 63 assets - pyramids, temples, mudbrick houses, a full souk, a Nile felucca & more\n🎨 4 palettes: Dawn, Day, Dusk, NIGHT\n📦 Combined Draco catalog GLB - 344 KB",
-          "author": "threejsassets",
-          "date": "2026-07-20",
-          "likes": 176,
-          "views": 8111,
-          "link": "https://x.com/threejsassets/status/2079172976944054717",
-          "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2079160787617107968/img/jm7UBO0jqVZKky3J.jpg",
-            "video_url": "https://x.com/threejsassets/status/2079172976944054717/video/1"
-          },
-          "summary": "Three.js沙漠王国资产包发布：63件资产（金字塔、神庙、泥砖房、集市、尼罗河帆船等），4种调色板（黎明/白天/黄昏/夜晚），Draco压缩后仅344KB。",
-          "analysis": "344KB装下63件3D资产是Draco压缩的极致展示。对Web游戏开发者而言，这种级别的资产密度意味着即使在移动网络下也能快速加载完整场景。",
-          "recommendation": "Three.js沙漠资产包63件仅344KB——Web游戏极致压缩标杆",
-          "featured": false
-        },
-        {
-          "idx": "开发工具 05",
           "source": "SteamDB · 活动",
           "tags": ["Steam", "火车节", "展示"],
           "title": "Steam火车节进行中——折扣和Demo展示至7月27日",
@@ -563,5 +304,5 @@
       ]
     }
   ],
-  "daily_summary": "**百度开源OCR一次读完100页文档**\nUnlimited-OCR仅3B参数（推理时5亿激活），32K上下文窗口一次性解析整本文档，93%基准得分。完全本地运行，多语言支持。同日，BCI脑机接口玩黑神话悟空的视频引发热议，Google的html-in-canvas实验特性也为Web 3D游戏开发带来新可能。\n\n**Palworld持续霸榜+IP扩张**\nPalworld第二周末再次逼近百万同时在线，同时卡片游戏预售已达350万包（7月30日发布）。从Steam游戏到实体卡片，IP多元化变现路径清晰。\n\n**行业动态密集**\nAC黑旗重制首周300万销量验证经典翻新策略；FF14手游全球上线前被砍再证MMO移动化之难；Valve工程师警告零件涨价可能导致Steam掌机提价。\n\n**独游创意爆发**\nWalkable Cities单脚行走解谜获430万播放；Pigs and Wolf三只小猪物理守家获63万播放；Hytale展示WoW式地牢内容。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+  "daily_summary": "**百度开源OCR一次读完100页文档**\nUnlimited-OCR仅3B参数（推理时5亿激活），32K上下文窗口一次性解析整本文档，93%基准得分。完全本地运行，多语言支持。BCI脑机接口玩黑神话悟空的视频同日引发热议。\n\n**Palworld持续霸榜+IP扩张**\nPalworld第二周末再次逼近百万同时在线，同时卡片游戏预售已达350万包（7月30日发布）。从Steam游戏到实体卡片，IP多元化变现路径清晰。\n\n**行业动态**\nAC黑旗重制首周300万销量验证经典翻新策略；FF14手游全球上线前被砍再证MMO移动化之难。\n\n**独游创意爆发**\nWalkable Cities单脚行走解谜获430万播放；Pigs and Wolf三只小猪物理守家获63万播放；Watch Yo Plane今日发售。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
 }
