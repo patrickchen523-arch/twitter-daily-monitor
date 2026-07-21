@@ -70,7 +70,8 @@ Review its computed stats and rankings, then write all editorial fields before i
 5. Rewrite each story title into an implication-led editorial headline.
 6. Write each summary in two moves: what happened, then why it matters.
 7. Write 4 next-week watch items that occur after the covered range and state what evidence to monitor.
-8. Keep claims proportional to the daily evidence; separate fact from inference.
+8. Use established Chinese player-community terminology for gameplay and genres. Translate mechanics in context instead of word for word, and consult the editorial guidelines when a Chinese term is uncertain.
+9. Keep claims proportional to the daily evidence; separate fact from inference.
 
 ## Edit the weekly JSON
 

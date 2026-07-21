@@ -48,6 +48,13 @@ Useful length targets:
 
 Treat these as editorial targets, not truncation rules.
 
+## Localize gameplay terminology
+
+- Prefer established wording used by Chinese players, developers, and games media over literal translations.
+- Translate the mechanic in context, not the individual English words. For example, render `extraction shooter` or `extraction RPG` as `搜打撤射击`, `搜打撤 RPG`, or `搜打撤玩法` according to the sentence—never `提取射击` or `提取 RPG`.
+- When a term has no stable Chinese equivalent, keep the original English on first use and explain the mechanic briefly instead of inventing a machine-translated label.
+- Before publishing, search titles, tags, summaries, recommendations, enrichment copy, daily summaries, and weekly editorial fields to keep gameplay terminology consistent.
+
 ## Handle metrics honestly
 
 - Copy raw `views` and `likes` from daily JSON and format them for display.
