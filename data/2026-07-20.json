@@ -3,10 +3,10 @@
   "meta": {
     "raw_count": 100,
     "filtered_count": 57,
-    "selected_count": 7,
+    "selected_count": 16,
     "crawl_time": "2026-07-20 18:00"
   },
-  "lede": "Vercel内部测评：Kimi K3网安能力顶尖，Fable全面拒绝配合；Palworld再次逼近百万同时在线；Xbox高管内部认为Game Pass对行业有害。",
+  "lede": "Vercel测评证实Kimi K3网安能力非刷榜；Palworld达百万在线+卡片预售350万包；天堂OL创始人用AI独立开发开源MMO。",
   "editors_pick": [
     {
       "section_id": "ai",
@@ -90,6 +90,58 @@
           "analysis": "这解释了为什么AI游戏开发工具落地如此之快——游戏开发本质上也是\"写代码+测试+迭代\"的闭环，不需要外部物理世界配合。这是AI工具在游戏行业快速渗透的结构性原因。",
           "recommendation": "AI采纳快慢取决于是否需要外部世界配合——编程/游戏开发最快",
           "featured": false
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Prasenjit · AI游戏生成",
+          "tags": [
+            "Kimi K3",
+            "Three.js",
+            "浏览器游戏"
+          ],
+          "title": "Kimi K3单文件生成浏览器版CS：3700行代码、无构建步骤、成本<$5",
+          "en_title": "i built counter-strike in the browser using kimi k3. one html file. 3,700 lines+. no build step.",
+          "full_text": "i built counter-strike in the browser using kimi k3\n\none html file. 3,700 lines+. no build step.\n\n→ dust2-inspired map, tunnels, catwalk, long a\n→ ak, awp with scope, mp5, knife + reloads\n→ 10 bots that patrol, hear shots, and push\n→ headshots, kill feed, 2 min round\n→ all audio procedural no sound files\n→ three.js, pbr, runs in the browser\n\nunder $5 on k3\nthe whole game is basically one file",
+          "author": "prasenx",
+          "date": "2026-07-18",
+          "likes": 268,
+          "views": 17222,
+          "link": "https://x.com/prasenx/status/2078453069021659477",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2078452851207204865/img/zEMwF1vOJEjiRuYO.jpg",
+            "video_url": "https://x.com/prasenx/status/2078453069021659477/video/1"
+          },
+          "summary": "开发者用Kimi K3在浏览器中生成了完整的CS射击游戏：单HTML文件3700+行代码，含地图、多武器、AI Bot巡逻、击杀反馈、程序化音频。成本不到$5。",
+          "analysis": "单文件完整FPS的实现证明AI代码生成已达到“可玩原型”级别。对独立开发者而言，这意味着快速验证玩法创意的成本接近于零。",
+          "recommendation": "Kimi K3单文件生成浏览器CS——3700行代码成本<$5",
+          "featured": false
+        },
+        {
+          "idx": "AI科技热点 04",
+          "source": "Synopsis · AI图形",
+          "tags": [
+            "Kimi K3",
+            "WebGL",
+            "Shader"
+          ],
+          "title": "Kimi K3生成纯程序化WebGL浮动卡片——全部在顶点着色器内完成",
+          "en_title": "Kimi k3 just cooked this - a fully procedural floating trading card view in WebGL without any image assets",
+          "full_text": "Kimi k3 just cooked this\n\na fully procedural floating trading card view in WebGL without any image assets\n\nall this is done completely inside the vertex shader\n\nthis just so happens to be very clean....proper low level flex.",
+          "author": "abhinavflac",
+          "date": "2026-07-19",
+          "likes": 266,
+          "views": 17183,
+          "link": "https://x.com/abhinavflac/status/2078863305809215752",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2078862993086164992/img/EFob-XzicpdTp1kR.jpg",
+            "video_url": "https://x.com/abhinavflac/status/2078863305809215752/video/1"
+          },
+          "summary": "Kimi K3生成了一个完全程序化的WebGL浮动卡片视图，无任何图片资产，全部在顶点着色器内完成。代码极其干净。",
+          "analysis": "AI生成的Shader代码质量已达到专业水平。这对游戏UI/特效开发的启示：AI可以生成生产级的Shader代码。",
+          "recommendation": "Kimi K3纯顶点着色器实现浮动卡片——零资产的低层练习",
+          "featured": false
         }
       ]
     },
@@ -144,6 +196,58 @@
           "summary": "Gears of War创造者Cliff Bleszinski（CliffyB）表示正在考虑重返游戏开发。此前他因LawBreakers失败后退出行业。",
           "analysis": "CliffyB的回归可能带来新的射击/动作游戏项目。他的设计理念对行业仍有影响力，但能否适应当前市场环境是关键问题。",
           "recommendation": "Gears之父CliffyB考虑回归游戏开发——LawBreakers失败后首次松口",
+          "featured": false
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Okan KARACA · 开发者数据",
+          "tags": [
+            "Ore Factory Squad",
+            "首周数据",
+            "独游"
+          ],
+          "title": "Ore Factory Squad 72小时数据：60.5K销量/$533K收入/8066 PCU",
+          "en_title": "Ore Factory Squad 72h: 60.5K sales, $533K gross, 8066 all-time peak",
+          "full_text": "Ore Factory Squad'da inanılmaz bir ilk 72 saati geride bıraktık!\n\nSatış: 60,5k\nGelir: 533 bin $ brüt / 444 bin $ net\nAll-time peak: 8,066\nİade: %4,4\nMedyan oynama süresi: 3s 07dk\nŞu anki wishlist: 117k\n\nÜlkeler: DE %23, US %17, PL %5,5, FR %4,5\n\nKazmaya devam...",
+          "author": "dpccoin",
+          "date": "2026-07-19",
+          "likes": 149,
+          "views": 16460,
+          "link": "https://x.com/dpccoin/status/2078844661758628020",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNmKGCqXgAAjLnw.png"
+          },
+          "summary": "Ore Factory Squad公布72小时数据：60,500份销量、$533K毛收入/$444K净收入、8,066 PCU峰值、4.4%退款率、中位游玩时長3小时7分、当前愿望单117K。",
+          "analysis": "从首日26K到三天60.5K，增长曲线健康。退款率从2.7%升至4.4%仍在合理范围。117K愿望单意味着后续还有大量潜在购买者。",
+          "recommendation": "Ore Factory Squad 72h: 6万销量/$533K/8K PCU——增长曲线健康",
+          "featured": true,
+          "game_ref": "Ore Factory Squad"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "RagerYT · 市场",
+          "tags": [
+            "Palworld",
+            "TCG",
+            "卡片游戏"
+          ],
+          "title": "Palworld卡片游戏预售350万包——7月30日正式发布",
+          "en_title": "Palworld card game hits 3.5 million packs sold before it even officially launches",
+          "full_text": "Palworld card game hits 3.5 million packs sold before it even officially launches\n\nThe game drops July 30 and pre-sales alone are already historic\n\nThe same studio that survived a Nintendo lawsuit is now going after Pokémon on its own turf\n\nThe physical card market\n\n40 million players, 850,000 concurrent on Steam, number one on SteamDB\n\nAnd now 3.5 million packs sold before launch day\n\nIs the Palworld TCG the Pokémon card competitor the market has been waiting for?",
+          "author": "RagerrrYT",
+          "date": "2026-07-20",
+          "likes": 535,
+          "views": 37277,
+          "link": "https://x.com/RagerrrYT/status/2079129182874050579",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2078761869355941888/img/hw3h5tkz1UxfoY0k.jpg",
+            "video_url": "https://x.com/RagerrrYT/status/2079129182874050579/video/1"
+          },
+          "summary": "Palworld卡片游戏尚未正式发布即预售350万包，7月30日上线。从幸存任天堂诉讼到正面挞战Pokemon卡片市场。",
+          "analysis": "Palworld正在从Steam游戏扩展为多媒体IP。350万包预售证明其品牌力已足以支撑实体卡片业务，这对独立游戏IP多元化变现有参考意义。",
+          "recommendation": "Palworld卡片游戏预售350万包——正面挞战Pokemon卡片市场",
           "featured": false
         }
       ]
@@ -201,6 +305,81 @@
           "analysis": "",
           "recommendation": "Steam火车节明日开始——独游集中展示窗口期",
           "featured": true
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "宋在京(Jake Song) · 传奇开发者",
+          "tags": [
+            "MMO",
+            "开源",
+            "AI开发",
+            "浏览器"
+          ],
+          "title": "天堂OL创始人宋在京离职后用AI独立开发浏览器开源MMO",
+          "en_title": "송재경: 저는 회사를 그만두고 쉼다가 집에서 이런거 만들고 있습니다 - browser open-source solo+AI MMO",
+          "full_text": "안녕들 하십니까.. 저는 회사를 그만두고 쉼다가 집에서 이런거 만들고 있습니다. 브라우저에서 돌아가는 오픈소스 일인 개발(+AI) mmo입니다.",
+          "author": "appledelhi",
+          "date": "2026-07-20",
+          "likes": 309,
+          "views": 24041,
+          "link": "https://x.com/appledelhi/status/2079022142663094356",
+          "media": null,
+          "summary": "天堂OL/天堂2创始人宋在京（Jake Song）宣布离开公司后，在家用AI独立开发了一款浏览器运行的开源MMO。",
+          "analysis": "韩国MMO教父级人物用AI独立开发MMO，这本身就是对AI游戏开发能力的最强背书。开源+浏览器的组合可能开启新的MMO开发范式。",
+          "recommendation": "天堂OL创始人离职后用AI独立开发开源浏览器MMO",
+          "featured": true
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "Indie Game Joe · 新游",
+          "tags": [
+            "恐怖",
+            "FPS",
+            "南极"
+          ],
+          "title": "Invariant：南极地下设施恐怖FPS，灵感来自Half-Life/F.E.A.R./The Thing",
+          "en_title": "This indie dev is making an Antarctic action horror FPS inspired by Half-Life, F.E.A.R. and The Thing",
+          "full_text": "This indie dev is making an Antarctic action horror FPS inspired by Half-Life, F.E.A.R. and The Thing\n\n- Explore a vast underground complex\n- Solve puzzles, search for supplies\n- Fight hostile creatures as systems fail around you\n\nIt's called Invariant. Would you play this?",
+          "author": "IndieGameJoe",
+          "date": "2026-07-19",
+          "likes": 1508,
+          "views": 52693,
+          "link": "https://x.com/IndieGameJoe/status/2078864488611139623",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2078863986603241473/img/PIyqmi6PboOJnnaI.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2078864488611139623/video/1"
+          },
+          "summary": "独立开发者制作的南极地下设施恐怖FPS《Invariant》曝光，灵感来自Half-Life、F.E.A.R.和The Thing。探索地下设施、解谜、在系统崩溃中对抗敌人。",
+          "analysis": "",
+          "recommendation": "南极恐怖FPS Invariant——Half-Life×The Thing的地下设施探索",
+          "featured": false
+        },
+        {
+          "idx": "新游推文 05",
+          "source": "FutureGamesShow · 新游",
+          "tags": [
+            "银河城",
+            "墨西哥",
+            "动作"
+          ],
+          "title": "Mariachi Legends：墨西哥风格银河城，与死神做交易",
+          "en_title": "A Mexican metroidvania where you make a deal with Death",
+          "full_text": "A Mexican metroidvania where you make a deal with Death…\n\n+ Brutal combat with intense parrying and finishers\n+ A day/night cycle that changes areas and enemies\n+ Coming 2026 - follow @HALBERDSTUDIOS for updates.\n\nThis is Mariachi Legends.",
+          "author": "FutureGamesShow",
+          "date": "2026-07-19",
+          "likes": 714,
+          "views": 31857,
+          "link": "https://x.com/FutureGamesShow/status/2078842300000608296",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/1721952357431287808/pu/img/Egu7-ERuWcjgKRQV.jpg",
+            "video_url": "https://x.com/FutureGamesShow/status/2078842300000608296/video/1"
+          },
+          "summary": "墨西哥风格银河城《Mariachi Legends》曝光：与死神做交易、残暴格斗、昼夜循环改变场景和敌人。2026年发布。",
+          "analysis": "",
+          "recommendation": "墨西哥银河城 Mariachi Legends——与死神做交易的残暴格斗",
+          "featured": false
         }
       ]
     },
@@ -235,9 +414,60 @@
           "analysis": "水体Shader是独立游戏视觉提升的常见需求，分步教程对美术基础薄弱的程序员开发者尤其有价值。",
           "recommendation": "水体Shader分步教程——独游视觉提升的实用参考",
           "featured": false
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Aniket J · 开源",
+          "tags": [
+            "Three.js",
+            "资产库",
+            "开源"
+          ],
+          "title": "开源Three.js游戏资产库建设中——免费用于Web游戏",
+          "en_title": "Building a three.js asset library for web games. Will be open source and free!",
+          "full_text": "Building a three.js asset library for web games. Will be open source and free!\n\n#threejs #gamedev",
+          "author": "aniketjart",
+          "date": "2026-07-18",
+          "likes": 492,
+          "views": 31760,
+          "link": "https://x.com/aniketjart/status/2078458326577479900",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2078455908901044224/img/2VB13PTjMc5TBAdz.jpg",
+            "video_url": "https://x.com/aniketjart/status/2078458326577479900/video/1"
+          },
+          "summary": "开发者正在建设一个开源免费的Three.js游戏资产库，专为Web游戏设计。",
+          "analysis": "Three.js生态缺乏统一的游戏资产库。开源免费的方案能降低Web游戏开发门槛。",
+          "recommendation": "开源Three.js游戏资产库——填Web游戏生态空白",
+          "featured": false
+        },
+        {
+          "idx": "开发工具 03",
+          "source": "Kenney · 免费资产",
+          "tags": [
+            "Kenney",
+            "免费资产",
+            "3D"
+          ],
+          "title": "Kenney预告多款免费游戏资产包：3D Mega Pack、像素平台、工厂主题",
+          "en_title": "Preview of game assets: Untitled 3D mega pack, Scribble Platformer expansion, Retro Textures Liminal Spaces & Tiny Factory. All free.",
+          "full_text": "Preview of #gameassets I'm working on; Untitled 3D mega pack, Scribble Platformer expansion, Retro Textures Liminal Spaces & Tiny Factory.\n\nAll coming soon, all completely free.",
+          "author": "KenneyNL",
+          "date": "2026-07-18",
+          "likes": 597,
+          "views": 14341,
+          "link": "https://x.com/KenneyNL/status/2078519746484412689",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HNhiiK8WYAA9l2b.png"
+          },
+          "summary": "知名免费游戏资产作者Kenney预告多款新资产包：3D Mega Pack、Scribble Platformer扩展、Retro Textures Liminal Spaces、Tiny Factory。全部免费。",
+          "analysis": "Kenney是独立游戏开发者最常用的免费资产源之一。新的Liminal Spaces主题纹理包对恐怖游戏开发者特别有用。",
+          "recommendation": "Kenney预告多款免费资产包——3D/像素/工厂主题全免费",
+          "featured": false
         }
       ]
     }
   ],
-  "daily_summary": "**Vercel隐蔽测评揭示AI模型真实能力**\nVercel CEO公布内部隐蔽测评：Kimi K3在网络安全领域表现顶尖（推翻\"刷榜\"质疑），GPT-5.6 Sol更强但贵得多，而Fable（Claude）全面拒绝配合。开源前沿网安能力已经到来。\n\n**Palworld持续霸榜Steam**\nPalworld本周末再次逼近百万同时在线，展现惊人的长线留存能力。\"生存+收集\"品类的天花板仍在被刷新。\n\n**行业反思与人事变动**\nXbox高管内部认为Game Pass对行业有害；Gears of War创造者CliffyB考虑回归游戏开发。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+  "daily_summary": "**Vercel隐蔽测评揭示AI模型真实能力**\nVercel CEO公布内部隐蔽测评：Kimi K3在网络安全领域表现顶尖（推翻“刷榜”质疑），GPT-5.6 Sol更强但贵得多，而Fable全面拒绝配合。同时K3在游戏生成领域继续刷屏：单文件生成浏览器CS、纯程序化WebGL卡片。\n\n**Palworld多线爆发**\nPalworld本周末再次逼近百万同时在线，与此同时其卡片游戏预售已达350万包（7月30日正式发布）。IP多元化变现路径清晰。\n\n**传奇开发者用AI独立做MMO**\n天堂OL创始人宋在京宣布离职后用AI独立开发浏览器开源MMO。韩国MMO教父级人物的背书。\n\n**Ore Factory Squad三天数据亮眼**\n72小时60.5K销量/$533K收入/8066 PCU，增长曲线健康，117K愿望单储备充足。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
 }
