@@ -4,6 +4,7 @@
     "raw_count": 215,
     "filtered_count": 207,
     "selected_count": 12,
+    "note": "tools section removed per editor; Guildrun+Drunken FC added to indie",
     "crawl_time": "2026-07-22 18:00"
   },
   "lede": "Claude Code一夜处理4000条笔记变AI员工；PS5实体游戏仅7款破10万销量——Sony停光碟有据可依；Core Keeper团队新作KYORA首曝沙盒魔法世界。",
@@ -14,8 +15,7 @@
   "digest": [
     { "id": "ai", "text": "Claude Code + 4000条Obsidian笔记生成AI员工\nCursor多模型Agent系统降本15倍\nVercel数据：开源模型消费占比创新高" },
     { "id": "industry", "text": "PS5实体销量数据力证Sony停光碟合理\n前FH5总监：Game Pass订阅不足导致裁员潮\nid Software裁员深度分析\nXbox独占策略混乱" },
-    { "id": "indie", "text": "KYORA：Core Keeper团队新作沙盒魔法世界\nBookshop Simulator正式发售压倒性好评\nHollow Hide：透明vs猎枪的非对称捉迷藏" },
-    { "id": "tools", "text": "Fable 5做滑雪游戏Day 10——纯WebGPU无引擎\nDLSS 5简化为两个主滑块" }
+    { "id": "indie", "text": "KYORA：Core Keeper团队新作沙盒魔法世界\nBookshop Simulator正式发售压倒性好评\nHollow Hide：透明vs猎枪的非对称捉迷藏\nDrunken FC：醉酒物理足球703K播放\nGuildrun：roguelite自走棋demo登顶Steam第一" }
   ],
   "sections": [
     {
@@ -208,7 +208,7 @@
           "likes": 815,
           "views": 156690,
           "link": "https://x.com/AUTOMATONJapan/status/2079441992107626500",
-          "media": { "type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2079441948646268928/img/srGEPg6YoT0ef_iI.jpg", "video_url": "https://x.com/AUTOMATONJapan/status/2079441992107626500/video/1" },
+          "media": { "type": "image", "url": "https://cdn.akamai.steamstatic.com/steam/apps/3467040/header.jpg" },
           "summary": "独立开发者Blep Games的书店经营模拟Bookshop Simulator于7月20日正式发售，同步实装多人合作模式。在日本、法国、英国三地开设书店，Steam压倒性好评（1259条评价）。售价¥62（-15%促销中）。",
           "analysis": "",
           "recommendation": "书店经营模拟正式发售：多人合作实装，日法英三国开店——1259条压倒性好评",
@@ -241,7 +241,7 @@
           "likes": 1308,
           "views": 366418,
           "link": "https://x.com/dotpixel3d/status/2079491572173799619",
-          "media": { "type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2079193970064932864/img/53Yq8x4sFDe-oniw.jpg", "video_url": "https://x.com/dotpixel3d/status/2079491572173799619/video/1" },
+          "media": { "type": "image", "url": "https://cdn.akamai.steamstatic.com/steam/apps/4898860/header.jpg" },
           "summary": "非对称多人捉迷藏游戏Hollow Hide在日本KOL推荐下获得36万播放。逃亡者通过收集场景资源激活隐身能力，猎人持猎枪在限时内追踪所有逃亡者。Renderise开发，预计8月20日Steam发售。",
           "analysis": "",
           "recommendation": "透明逃亡者vs猎枪猎人——资源驱动隐身的捉迷藏新玩法，36万播放",
@@ -260,49 +260,71 @@
             "description": "Renderise开发的非对称多人捉迷藏游戏。\n\n【核心玩法】逃亡者在废弃房屋中收集资源，积攒后可激活「伪装模式」与环境融为一体。猎人持猎枪在限时内追踪所有逃亡者。隐身能力有限且需资源管理。\n\n【团队协作】逃亡者间可互相发信号协调逃跑路线。\n\n【氛围】废弃房屋场景，介于恐怖和搞笑之间。\n\n【优势】资源管理+隐身的创新机制区别于Prop Hunt等同类。\n【不足】内容丰富度待验证；需要稳定多人社区。\n\n【综合】对非对称多人品类的有趣迭代，隐身不再是无限资源而需策略管理。",
             "why_notable": "日本KOL推荐后36万播放，资源驱动隐身机制在捉迷藏品类中属首创"
           }
-        }
-      ]
-    },
-    {
-      "id": "tools",
-      "title": "开发工具",
-      "title_en": "DEV TOOLS",
-      "color": "#60a5fa",
-      "items": [
-        {
-          "idx": "开发工具 01",
-          "source": "wyatt mattoe · Fable 5开发者",
-          "tags": ["Fable 5", "WebGPU", "无引擎"],
-          "title": "Fable 5滑雪游戏Day 10：缆车+研磨火花+UI——纯WebGPU无引擎开发",
-          "en_title": "Day 10 of building a snowboarding game with Fable 5",
-          "full_text": "Day 10 of building a snowboarding game with Fable 5\n\nWe have ski lifts now. And yeah, of course you can grind the cables, throwing sparks the whole way down.\n\nNew tree models, easier grinds, and tons of UI work.\n\nAll raw WebGPU, no engine.",
-          "author": "wyattmattoe",
-          "date": "2026-07-20",
-          "likes": 1099,
-          "views": 145720,
-          "link": "https://x.com/wyattmattoe/status/2079302638168944732",
-          "media": { "type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2079302515187662848/img/YpMxm-lrGE3_2QAp.jpg", "video_url": "https://x.com/wyattmattoe/status/2079302638168944732/video/1" },
-          "summary": "开发者wyatt mattoe连续第10天用Fable 5构建滑雪游戏，已实现缆车系统、研磨缆绳火花特效、新树木模型和大量UI工作。全部基于原生WebGPU，不依赖任何游戏引擎。",
-          "analysis": "这个系列持续展示了AI辅助+WebGPU在游戏原型制作中的效率。10天从零到包含缆车、物理研磨、粒子特效的可玩版本，传统流程可能需要数周。Fable + WebGPU正在成为快速原型验证的可行路线。",
-          "recommendation": "Fable 5做滑雪游戏Day 10：10天从零到缆车+研磨火花——纯WebGPU无引擎",
-          "featured": true
         },
         {
-          "idx": "开发工具 02",
-          "source": "PC Gamer · GPU技术",
-          "tags": ["DLSS 5", "Nvidia", "开发者工具"],
-          "title": "Nvidia DLSS 5：开发者仅需调整两个主滑块即可接入",
-          "en_title": "Nvidia's DLSS 5 gives devs just two main sliders for now",
-          "full_text": "Nvidia's DLSS 5 gives devs just two main sliders for now",
-          "author": "pcgamer",
-          "date": "2026-07-21",
-          "likes": 33,
-          "views": 26919,
-          "link": "https://x.com/pcgamer/status/2079526065299689853",
-          "media": null,
-          "summary": "Nvidia新一代DLSS 5大幅简化开发者接入流程，目前仅需调整两个主要滑块参数即可完成集成。相比此前版本需要大量调参，降低了使用门槛。",
-          "analysis": "DLSS简化意味着更多中小型团队能以极低工程成本获得超分辨率和帧生成能力。对独立开发者尤其重要——两个滑块就能接入的DLSS 5可能改变「独游不需要DLSS」的认知。",
-          "recommendation": "DLSS 5简化为两个滑块——Nvidia大幅降低开发者接入门槛"
+          "idx": "新游推文 04",
+          "source": "Best Indie Games · KOL推荐",
+          "tags": ["物理", "体育", "派对"],
+          "title": "Drunken FC：醉酒物理足球——布娃娃系统踢球的派对游戏，703K播放",
+          "en_title": "Play soccer while drunk in this ragdoll physics-based sports game!",
+          "full_text": "Play soccer while drunk in this ragdoll physics-based sports game!\n\nHave you played Drunken FC?",
+          "author": "clemmygames",
+          "date": "2026-07-20",
+          "likes": 3304,
+          "views": 703324,
+          "link": "https://x.com/clemmygames/status/2079250264008049126",
+          "media": { "type": "video", "url": "https://pbs.twimg.com/ext_tw_video_thumb/2079250153337245697/pu/img/7v-m27Yueu54--W-.jpg", "video_url": "https://x.com/clemmygames/status/2079250264008049126/video/1" },
+          "summary": "布娃娃物理足球派对游戏Drunken FC被Best Indie Games推荐后获得70万播放、3304赞。16个角色在4个场地用完全物理驱动的动作踢球，支持本地多人和Steam远程同玩。Red Herring Labs开发，¥14.50（-50%促销中）。",
+          "analysis": "",
+          "recommendation": "醉酒踢球的布娃娃物理足球——703K播放、3304赞的派对神作",
+          "game_ref": "Drunken FC",
+          "enrichment": {
+            "game_name": "Drunken FC",
+            "genre": "物理体育 / 派对 / 休闲",
+            "developer": "Red Herring Labs（独立团队）",
+            "platforms": ["Steam"],
+            "price": "¥14.50（-50%促销，原价¥29）",
+            "release_date": "已发售 · 2024年11月11日",
+            "steam_rating": "抢先体验",
+            "steam_url": "https://store.steampowered.com/app/1991820/Drunken_FC/",
+            "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1991820/header.jpg",
+            "youtube_video": null,
+            "description": "Red Herring Labs开发的物理足球派对游戏。\n\n【核心玩法】所有角色都是醉酒状态的布娃娃，完全物理驱动无动画。16个角色在4个不同场地踢球，动作不可预测且搞笑。\n\n【多人模式】支持本地多人和Steam Remote Play Together远程同玩。也可单人对AI。\n\n【优势】极低门槛的派对娱乐；物理系统带来无穷变数；价格亲民。\n【不足】抢先体验阶段；内容量有限。\n\n【综合】「醉酒+物理+足球」的荒诞组合天然适合社交传播，70万播放证明了这一点。",
+            "why_notable": "Best Indie Games推荐后703K播放，布娃娃物理足球的荒诞性极具传播力"
+          }
+        },
+        {
+          "idx": "新游推文 05",
+          "source": "Guildrun · 官方",
+          "tags": ["Roguelite", "自走棋", "Demo"],
+          "title": "Guildrun（裂隙远征）：roguelite自走棋demo登顶Steam第一——25英雄500+成长路线",
+          "en_title": "We launched our roguelite autobattler demo and it became the #1 demo on Steam!",
+          "full_text": "Calling CONTENT CREATORS & PRESS!\n\nWe launched our roguelite autobattler demo and it became the #1 demo on Steam! \n\nIf you're a creator or press, fill out the form below for exclusive early news and future launch keys for Guildrun!",
+          "author": "PlayGuildrun",
+          "date": "2026-07-20",
+          "likes": 1415,
+          "views": 88966,
+          "link": "https://x.com/PlayGuildrun/status/2079250701738180933",
+          "media": { "type": "video", "url": "https://pbs.twimg.com/amplify_video_thumb/2079250654095183872/img/73e0ddpMxIP8LSZZ.jpg", "video_url": "https://x.com/PlayGuildrun/status/2079250701738180933/video/1" },
+          "summary": "Leyline工作室的roguelite自走棋Guildrun（中文名裂隙远征）demo上线后登顶Steam最热demo榜第一。Demo包含25位英雄、180种专精路线、300+遗物、100+装备。主打PvE无PvP压力，支持8级难度+无尽模式。自1月Alpha测试以来每周更新。",
+          "analysis": "",
+          "recommendation": "roguelite自走棋demo登顶Steam第一：25英雄×500+成长路线，打破职业限制",
+          "featured": true,
+          "game_ref": "Guildrun",
+          "enrichment": {
+            "game_name": "Guildrun",
+            "genre": "Roguelite / 自走棋 / 策略",
+            "developer": "Leyline（独立工作室）",
+            "platforms": ["Steam", "Mac"],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售（demo可玩）",
+            "steam_url": "https://store.steampowered.com/app/3669200/Guildrun/",
+            "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/3669200/header.jpg",
+            "youtube_video": null,
+            "description": "Leyline工作室开发的PvE Roguelite自走棋。\n\n【核心玩法】招募英雄组建公会，通过装备、遗物和专精路线打造流派。每局随机获得不同英雄和强化选择，没有PvP压力。核心卖点是「打破职业限制」——治疗师可以变坦克，远程可以转近战，恋人并肩作战还有成长加成。\n\n【内容量】仅Demo就有25位英雄、75条成长路线（合计500+组合）、300+遗物、100+装备。8级难度+无尽模式。\n\n【更新节奏】自2026年1月Alpha以来每周更新，社区驱动开发。\n\n【优势】内容量惊人（Demo级别就有300+遗物）；无PvP压力的纯PvE策略；每周更新的开发节奏。\n【不足】发售日期未定；美术风格偏传统。\n\n【综合】Demo登顶Steam第一证明了品类需求。自走棋+Roguelite+职业自由组合的三重叠加，为策略深度提供了极大空间。",
+            "why_notable": "Demo发布即登顶Steam最热demo榜，自走棋+Roguelite品类的强势新作"
+          }
         }
       ]
     }
