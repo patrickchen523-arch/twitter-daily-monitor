@@ -1,0 +1,14 @@
+# GitLab Pages 部署配置（内网站点）
+# GitHub Pages 直接从仓库根目录服务；GitLab Pages 要求产物在 public/ 目录
+# 每次 push 到 main 后，CI 自动把全站文件拷入 public/ 并发布
+pages:
+  stage: deploy
+  script:
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
