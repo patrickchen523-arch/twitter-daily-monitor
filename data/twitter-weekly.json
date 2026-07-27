@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21",
+  "updated": "2026-07-27",
   "cadence_transitions": [
     {
       "from": "2026-07-02-to-07-08",
@@ -671,6 +671,228 @@
         {
           "title": "AI 3D 工作流能否交付可编辑资产",
           "body": "后续案例应检查拓扑、材质、版本迭代与引擎导入，而不只比较最终渲染画面的完成速度。"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-20-to-07-26",
+      "label": "7.20 - 7.26",
+      "code": "W30",
+      "range": "2026.07.20 — 07.26",
+      "title": "AI Agent 接管工作流，游戏业集中清算旧模式",
+      "stats": [
+        {
+          "value": "77",
+          "label": "精选信号"
+        },
+        {
+          "value": "1888万",
+          "label": "累计浏览"
+        },
+        {
+          "value": "16.2万",
+          "label": "累计点赞"
+        },
+        {
+          "value": "7",
+          "label": "连续日报"
+        }
+      ],
+      "executive": [
+        "本周 AI 完成从能力展示到工作流接管的跨越：Claude Code 一夜整理 4000 条笔记证明 agent 能激活存量知识资产，陈成用 9 个 skill 把入职流程工程化，Opus 5 在四模型 3D 物理同题测试中全对且成本仅为 Fable 5 一半——能力分野开始直接改写工具选型。",
+        "平台层集体做减法：EU 批准沙特 550 亿美元收购 EA，Sony 停产光碟把 72 亿美元二手市场推向终局，前 Forza 总监坐实 Game Pass 订阅模式危机，Steam 的 AI 披露政策则意外获得开发者集体背书——旧模式在本周被集中清算。",
+        "独游传播被「和朋友一起玩」主导：单脚走路的 Walkable Cities 收获 430 万播放，最烂装修队 Call It a Day 双语曝光近百万，Dear Passengers 冲上愿望单第 12，鹅夫妻搬蛋用「友情培养」反向定位互坑品类——协作机制仍是最便宜的增长引擎。"
+      ],
+      "rankings": [
+        {
+          "title": "Walkable Cities 单脚走路解谜小游戏爆红全网",
+          "metric": "430万浏览",
+          "heat": 100,
+          "link": "https://x.com/G_Godaka/status/2078797010371842339"
+        },
+        {
+          "title": "Claude Code 一夜整理 4000 条 Obsidian 笔记",
+          "metric": "216万浏览",
+          "heat": 65,
+          "link": "https://x.com/z0rynx/status/2079337397955731567"
+        },
+        {
+          "title": "MECCHA CHAMELEON 自定义地图藏毒引安全警报",
+          "metric": "135万浏览",
+          "heat": 40,
+          "link": "https://x.com/IntCyberDigest/status/2080966921000775993"
+        },
+        {
+          "title": "Opus 5 四模型 3D 物理同题测试全对且半价",
+          "metric": "123万浏览",
+          "heat": 36,
+          "link": "https://x.com/atomic_chat_hq/status/2080760629653102958"
+        },
+        {
+          "title": "百度开源 Unlimited-OCR 本地解析百页文档",
+          "metric": "91万浏览",
+          "heat": 20,
+          "link": "https://x.com/thesupermanmx/status/2078774556249186345"
+        }
+      ],
+      "signals": [
+        {
+          "title": "Agent 开始激活存量资产",
+          "body": "整理 6 年笔记、复用个人 skill、接入本地文档——AI 的价值从生成新内容转向消化既有积累，工作流完整度比单点能力更关键。"
+        },
+        {
+          "title": "平台规则本周集体改写",
+          "body": "EA 易主、光碟被判终局、Game Pass 模式遭内部否定、AI 披露获开发者背书——分发与商业模式的旧假设在同一周被集中清算。"
+        },
+        {
+          "title": "协作机制是独游增长引擎",
+          "body": "本周高传播独游几乎全是合作玩法，且「友情破坏」与「友情培养」两个方向同时成立，协作设计仍在红利期。"
+        }
+      ],
+      "sections": [
+        {
+          "title": "AI 科技热点",
+          "deck": "Agent 从展示能力转向接管既有工作流，模型之间的能力与成本分野开始直接改写选型逻辑。",
+          "stories": [
+            {
+              "date": "07.22",
+              "source": "zoryn · AI Agent实践",
+              "title": "Agent 一夜消化 6 年笔记：AI 开始激活存量知识资产",
+              "summary": "一位用户把 Claude Code 指向自己 6 年积累的 4000 条 Obsidian 笔记（含 212 本书摘），AI 一夜之间完成整理、关联与摘要。意义在于 AI 的价值正从生产新内容转向激活既有数字资产——策划文档、设计笔记同样适用。",
+              "metric": "216万浏览 · 4384赞",
+              "link": "https://x.com/z0rynx/status/2079337397955731567",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2079336900192595969/img/0hGa7qVC8ZaNngpn.jpg"
+            },
+            {
+              "date": "07.26",
+              "source": "atomic.chat · 模型横评",
+              "title": "四模型 3D 物理同题测试：Opus 5 全对且成本仅为 Fable 5 一半",
+              "summary": "atomic.chat 用龙卷风、破碎球拆楼、卡车压桥三个 HTML 物理场景同题测试：Opus 5 全部正确（$1.40），Fable 5（$2.82）与 GPT 5.6、Kimi K3 各有致命缺陷。物理正确性正成为检验模型空间推理的硬指标，但单场景测试方差大，选型仍需基于自有业务批量验证。",
+              "metric": "123万浏览 · 4435赞",
+              "link": "https://x.com/atomic_chat_hq/status/2080760629653102958",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2080760395166257153/img/DkPLPgWYiNh7xxZy.jpg"
+            },
+            {
+              "date": "07.21",
+              "source": "Superman · AI开源",
+              "title": "百度开源 Unlimited-OCR：3B 参数本地解析 100 页文档",
+              "summary": "百度开源 Unlimited-OCR：3B 参数、32K 上下文一次性解析 100 页文档，93% 基准得分，完全本地运行。对游戏团队的意义在于策划表格、本地化文本等敏感文档无需上云即可批量解析——开源小模型继续蚕食云端 API 的使用场景。",
+              "metric": "91万浏览 · 1.4万赞",
+              "link": "https://x.com/thesupermanmx/status/2078774556249186345",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2078774157043695616/img/FCs_BD_rhowmZ3R8.jpg"
+            },
+            {
+              "date": "07.26",
+              "source": "陈成 · 工作流实践",
+              "title": "入职一周写 9 个 skill：把工作流程本身工程化的样本",
+              "summary": "陈成入职 Qoder 首周编写 9 个 agent skill，覆盖环境搭建、提交摘要、双 agent 对抗评审与 bug triage（10 条中 1 条已转化为 PR）。这是「agent 融入工作流」最具体的实操样本——不是让 AI 写代码，而是把 onboarding 拆成可复用的工程化技能。",
+              "metric": "3.1万浏览 · 241赞",
+              "link": "https://x.com/chenchengpro/status/2080883181683605538",
+              "image": null
+            }
+          ]
+        },
+        {
+          "title": "游戏市场动态",
+          "deck": "收购、绝版、模式危机——平台层本周集体改写规则，旧模式加速清算。",
+          "stories": [
+            {
+              "date": "07.24",
+              "source": "Eurogamer · 重大并购",
+              "title": "EU 批准沙特 $55B 收购 EA：游戏史最大杠杆收购扫清障碍",
+              "summary": "欧盟认定沙特 PIF 联合 Silver Lake、Affinity Partners 收购 EA 无竞争问题，史上最大杠杆收购案的主要监管障碍扫清。FIFA、Madden、The Sims 等核心 IP 将脱离公开市场压力，沙特资本对全球游戏格局的长期影响或超越微软收购动视暴雪。",
+              "metric": "4166浏览 · 16赞",
+              "link": "https://x.com/eurogamer/status/2080303278168973749",
+              "image": "https://pbs.twimg.com/media/HN64ywnWoAAeajA.png"
+            },
+            {
+              "date": "07.23",
+              "source": "Eurogamer · 市场分析",
+              "title": "Sony 停产光碟冲击 72 亿美元二手市场：实体零售被判终局",
+              "summary": "Sony 宣布 2028 年前停产 PlayStation 光碟，全球 72 亿美元二手游戏市场面临毁灭性打击；Circana 数据佐证实体已边缘化——2026 年仅 7 款 PS 游戏美国实体销量超 10 万。全数字化时代临近，定价、试玩与退款政策都需为无实体环境重新设计。",
+              "metric": "1.7万浏览 · 305赞",
+              "link": "https://x.com/eurogamer/status/2079904155720917440",
+              "image": "https://pbs.twimg.com/media/HN1NtnxbMAAvK5Q.jpg"
+            },
+            {
+              "date": "07.22",
+              "source": "Eurogamer · Xbox",
+              "title": "前 Forza 总监直指 Game Pass「订阅人数不够」：模式危机获内部证词",
+              "summary": "前 Playground Games 总监 Mike Brown 表示，Xbox 收购工作室与 Game Pass 内容的巨额投入无法被订阅规模与定价覆盖，直接导致 3200 人裁员与工作室出售。这是第一方开发者对 Game Pass 模式最直接的否定——增长不达预期时，前期投入全变成由员工买单的沉没成本。",
+              "metric": "7361浏览 · 36赞",
+              "link": "https://x.com/eurogamer/status/2079569889199829009",
+              "image": "https://pbs.twimg.com/media/HNwdwqYaEAAYn1O.jpg"
+            },
+            {
+              "date": "07.25",
+              "source": "Pirat_Nation · 行业争议",
+              "title": "开发者集体背书 Steam AI 披露政策：AI 标注成为价值观站队",
+              "summary": "GamesRadar 采访显示众多独游开发者支持 Valve 的 AI 生成内容披露要求，Erenshor 作者称「玩家有权知道游戏如何制作、有权选择支持什么」。AI 内容标注正从平台强制演变为开发者主动表态的价值观议题，「无 AI」可能成为部分独游的品质标签。",
+              "metric": "43万浏览 · 9667赞",
+              "link": "https://x.com/Pirat_Nation/status/2080110653843571071",
+              "image": "https://pbs.twimg.com/media/HN2py_bW8AAy-BZ.png"
+            }
+          ]
+        },
+        {
+          "title": "新游推文",
+          "deck": "本周独游爆款几乎都能用「和朋友一起玩」讲完——协作机制是最便宜的增长引擎。",
+          "stories": [
+            {
+              "date": "07.21",
+              "source": "ごだか · 病毒式",
+              "title": "单脚走路也能爆红：极简物理创意收获 430 万播放",
+              "summary": "日本博主介绍的《Walkable Cities》以单脚为轴心行走、遇转角即卡住的极简物理解谜机制，收获 430 万播放与 1.3 万赞。一句话能讲清的动作设计依然是病毒传播的最短路径——核心玩法有趣，体量再小也能出圈。",
+              "metric": "430万浏览 · 1.3万赞",
+              "link": "https://x.com/G_Godaka/status/2078797010371842339",
+              "image": "https://pbs.twimg.com/ext_tw_video_thumb/2078793258478751744/pu/img/Z9NlSiQs2PY-IJP-.jpg"
+            },
+            {
+              "date": "07.23",
+              "source": "Indie Game Joe · KOL推荐 + 电ファミ · 日媒",
+              "title": "世界最烂装修队：双语社区合计近百万曝光的协作新游",
+              "summary": "合作游戏 Call It a Day 公布：玩家扮演拖家具、兑水稀释油漆的「世界最烂装修队」，Indie Game Joe 推荐获 57.9 万浏览，日本电法同日报道再获 33.3 万。物理混乱+合作出糗的配方在欧美与日本市场同时成立，跨语言传播力罕见。",
+              "metric": "58万浏览 · 4567赞",
+              "link": "https://x.com/IndieGameJoe/status/2079598194644726014",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2079597897666936832/img/TQX3SAUkyGAFbe66.jpg"
+            },
+            {
+              "date": "07.23",
+              "source": "PC Gamer · 市场热点",
+              "title": "「最烂航空公司」一周冲上 Steam 愿望单第 12：超 150 万收藏",
+              "summary": "合作游戏 Dear Passengers 公布一周即登 Steam 愿望单第 12 名，36 小时收获 70 万愿望单、目前已超 150 万。一人开飞机、其他人应对客舱混乱的分工设计，证明「职业扮演+协作失控」仍是愿望单转化的最强公式。",
+              "metric": "3.2万浏览 · 41赞",
+              "link": "https://x.com/pcgamer/status/2079642711528026339",
+              "image": "https://cdn.mos.cms.futurecdn.net/DpKXLgRRUF2aWov2fSYv7c.jpg"
+            },
+            {
+              "date": "07.26",
+              "source": "모카 · 玩家推荐",
+              "title": "鹅夫妻搬蛋：「友情培养系」是对互坑品类的漂亮反向操作",
+              "summary": "BBear Studio 双人协作新作 An Eggstremely Hard Game 发售：鹅夫妻合力把蛋搬到终点，机制强调互相拉起对方而非互坑，韩国玩家自发推荐获 56 万浏览。在 Overcooked 式互坑之外，「正向协作」成为同品类跑出来的差异化定位。",
+              "metric": "56万浏览 · 3812赞",
+              "link": "https://x.com/matchoking1/status/2080878462769025349",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2080878379428139008/img/5UzjFpNW7gSOQ-dW.jpg"
+            }
+          ]
+        }
+      ],
+      "watch": [
+        {
+          "title": "Project Zomboid Build 42（7.29）落地口碑",
+          "body": "时隔 4 年的最大更新上线后，观察首日在线峰值与 Steam 评价走向，验证「慢开发」模式能否再次留住核心社区。"
+        },
+        {
+          "title": "Palworld 卡片游戏 7.30 正式发售",
+          "body": "预售 350 万包之后，跟踪首周动销与二级市场价格，判断实体卡牌能否承接游戏 IP 热度。"
+        },
+        {
+          "title": "Gen Con（7.30-8.2）D&D 新品官宣",
+          "body": "威世智称将全力出击，关注设定书与联动产品的正式公布，验证桌游与电子游戏 IP 互相导流的下一步。"
+        },
+        {
+          "title": "Scramble Knights Online 公测（8.14）",
+          "body": "Zelda 风 MMO-lite 开放测试后，观察报名转化、同时在线与社区反馈，检验轻量在线品类的真实需求。"
         }
       ]
     }
