@@ -1,0 +1,458 @@
+{
+ "date": "2026-07-25",
+ "meta": {
+  "raw_count": 204,
+  "filtered_count": 174,
+  "selected_count": 12,
+  "note": "AI 3, Industry 4, Indie 4, Tools 1",
+  "crawl_time": "2026-07-25 10:00"
+ },
+ "lede": "独游开发者集体力挺Steam AI披露政策——「玩家有权选择支持什么」；AC黑旗重制14天卖350万份超全年预期；TV Archive与Grand Theft Timeline两款高概念独游曝光。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "独游开发者集体力挺Steam AI披露政策——「玩家有权选择支持什么」"
+  },
+  {
+   "section_id": "tools",
+   "item_index": 0,
+   "hook": "gamedev障眼法新招：假室内管道——把窗户视差投到圆柱上，8.6K赞"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "TV Archive：和朋友整理3180盘录像带的协作收纳游戏——8月发售"
+  }
+ ],
+ "daily_summary": "**AI披露政策获开发者集体背书**\nGamesRadar采访显示，越来越多独游开发者支持Steam的AI生成内容披露要求，Erenshor作者称「玩家有权知道游戏如何制作、有权选择支持什么」。与此同时AI工具链继续下沉：Claude Code harness被实证能让同一模型输出质变，图生3D工具Modly实现本地免费运行。\n\n**重制IP扛起财报，Xbox转向广告换时长**\nAC黑旗Resynced两周卖350万份超育碧全年预期，但公司Q1净预订仍同比降9%；Xbox在硬件危机下开测广告支持的1小时免费云游戏串流。Warhorse下一款作品「Kingdom Come Salvation」商标注册，文件暗示系列首次加入在线多人要素。\n\n**创意独游双响炮**\n整理3180盘录像带的协作收纳游戏TV Archive与200多个按钮时光机抢劫游戏Grand Theft Timeline相继曝光，题材差异化程度令人眼前一亮。详情请点击下方【当日速览】的条目跳转到对应推文。",
+ "digest": [
+  {
+   "id": "ai",
+   "text": "同一模型换Claude Code harness输出立刻变好\nModly：本地GPU照片转3D模型，开源免费\nAaron Levie：AI是专业判断力的倍增器"
+  },
+  {
+   "id": "industry",
+   "text": "独游开发者集体力挺Steam AI披露政策\nAC黑旗重制14天卖350万份超全年预期\nXbox开测广告换1小时免费云游戏\n天国拯救新作商标注册，或加入多人"
+  },
+  {
+   "id": "indie",
+   "text": "TV Archive：整理3180盘录像带的协作收纳\nGrand Theft Timeline：200+按钮的时光机抢劫\nRED FLAG：末日避难所驱逐「无能者」的人狼\nScramble Knights Online：塞尔达风MMO-lite开测"
+  },
+  {
+   "id": "tools",
+   "text": "假室内管道：圆柱投影版窗户视差错觉"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "OmedTheVibeCoder · 开发者实测",
+     "tags": [
+      "Claude Code",
+      "Codex",
+      "harness"
+     ],
+     "title": "同一GPT-5.6 Sol换到Claude Code harness，输出质量立刻变好——harness比模型更决定结果",
+     "en_title": "Same GPT-5.6 Sol. Same task. Same thinking level. I switched from regular Codex to the Claude Code harness, and the result instantly became way better.",
+     "full_text": "Nah, this can’t be real.\n\nSame GPT-5.6 Sol. Same task. Same thinking level.\n\nI switched from regular Codex to the Claude Code harness, and the result instantly became way better.\n\nClaude Code is somehow making every model cook. GPT-5.6 SOL WAS ALREADY TOP TIER!! 😭 https://t.co/Wtk8DiLEGm",
+     "author": "OmedVibeCodes",
+     "date": "2026-07-23",
+     "likes": 811,
+     "views": 114958,
+     "link": "https://x.com/OmedVibeCodes/status/2080348655039500703",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2080348459496849408/img/DN8XdDNRWbVkCnf5.jpg",
+      "video_url": "https://x.com/OmedVibeCodes/status/2080348655039500703/video/1"
+     },
+     "summary": "开发者Omed实测：同一个GPT-5.6 Sol模型、同一任务、同一思考等级，仅从常规Codex切换到Claude Code harness后，输出结果立刻明显变好。他感叹Claude Code能让每个模型都超常发挥。",
+     "analysis": "模型能力趋同的时代，harness（系统提示词+工具描述+上下文管理）成为体验差异的最大变量。评估AI编程工具时，harness的工程水准可能比底层模型选型更值得投入。",
+     "recommendation": "同一模型换Claude Code harness输出立刻变好——harness设计比模型选型更关键",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Simplifying AI · 工具介绍",
+     "tags": [
+      "Modly",
+      "图生3D",
+      "开源",
+      "本地运行"
+     ],
+     "title": "Modly：本地GPU运行的照片转3D模型桌面应用——开源免费、全程不上云",
+     "en_title": "This desktop app turns any photo into a 3D model, running entirely on your own GPU. It's called Modly. Local, open source AI-powered image-to-3D mesh generation, no cloud processing, no subscription.",
+     "full_text": "This desktop app turns any photo into a 3D model, running entirely on your own GPU.\n\nIt's called Modly.\n\nLocal, open source AI-powered image-to-3D mesh generation, no cloud processing, no subscription.\n\n> Works on Windows, Linux, and Apple Silicon macOS\n> Visual workflow builder: Image → Generate Mesh → Add to Scene\n> Smooth and decimate imported meshes directly in-app\n> Supports external model extensions for different generation styles\n\n100% Free. Open Source.",
+     "author": "simplifyinAI",
+     "date": "2026-07-23",
+     "likes": 745,
+     "views": 30649,
+     "link": "https://x.com/simplifyinAI/status/2080241838578077813",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2080241782710046720/img/2SFYYIqltirTYxFm.jpg",
+      "video_url": "https://x.com/simplifyinAI/status/2080241838578077813/video/1"
+     },
+     "summary": "Modly是一款开源桌面应用，在本地GPU上完成照片到3D网格的AI生成，支持Windows/Linux/Apple Silicon，可视化工作流（图片→生成网格→加入场景），支持网格平滑/减面和外部模型扩展，100%免费无订阅。",
+     "analysis": "图生3D正在从云端API走向本地免费工具。对小型团队来说，资产原型的试错成本进一步归零——这类工具与MCP工作流结合后，会成为概念验证阶段的标配。",
+     "recommendation": "Modly：本地GPU把照片转成3D网格，开源免费支持Win/Linux/macOS"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Aaron Levie · 行业观点",
+     "tags": [
+      "AI",
+      "Agent",
+      "生产力"
+     ],
+     "title": "Aaron Levie：AI是已知领域的力量倍增器——没有判断力的人只会生产垃圾",
+     "en_title": "The best way to think about AI is as a force multiplier for the fields you already know about. The 3rd category -no existing judgment, no interest in developing it- will basically produce slop.",
+     "full_text": "The best way to think about AI is as a force multiplier for the fields you already know about (or for the rate at which you want to learn about a new one). The 3rd category -no existing judgment, no interest in developing it- will basically produce slop and won’t drive that much economically productive activity. \n\nWhat will happen is that the experts will get better and better at their craft and be able to do so much more. Because they can wield these tools in ways that actually drive high quality output, veer agents in the right direction when they go off, and actually incorporate the work into something useful.\n\nThe expert engineer with agents will do far more productive work, precisely because they know how to steer the agent properly. The designer will product far better outcomes using AI than someone without an eye for design. And so on.\n\nAs a result of this dynamic, specialization will continue to be important, if not even more so as the tools get more powerful. Because the expectation of the market gets to be much higher. Getting good at any craft will continue to be necessary in the future.",
+     "author": "levie",
+     "date": "2026-07-24",
+     "likes": 308,
+     "views": 81422,
+     "link": "https://x.com/levie/status/2080471989060559336",
+     "media": null,
+     "summary": "Box CEO Aaron Levie发文：AI最好的理解方式是「已有专业领域的力量倍增器」。没有判断力、也不培养判断力的人只会产出垃圾。专家工程师+Agent的生产力远超普通人，因为专家知道如何驾驭Agent、及时纠偏并整合产出。",
+     "analysis": "这轮AI浪潮里「专业化」的价值不降反升——市场对产出质量的期望被抬高，驾驭工具的前提是本身懂行。对团队招聘和培养的判断：先有独当一面的专家，再谈AI放大。",
+     "recommendation": "Box CEO：AI放大的是你已有的专业判断力，专家+Agent远胜普通人+Agent"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "行业动态 01",
+     "source": "Pirat_Nation · 行业争议",
+     "tags": [
+      "Steam",
+      "AI披露",
+      "生成式AI",
+      "Valve"
+     ],
+     "title": "更多开发者公开支持Steam的AI披露政策：玩家有权知道游戏是怎么做出来的",
+     "en_title": "More game developers are backing Steam's AI disclosure policy, saying players deserve to know when generative AI has been used in a game.",
+     "full_text": "More game developers are backing Steam’s AI disclosure policy, saying players deserve to know when generative AI has been used in a game.\n\nIn interviews with GamesRadar, many indie developers said Valve’s requirement to disclose AI-generated content is the right move because it gives players transparency and helps them make informed decisions. \n\nErenshor creator Brian “Burgee” said, “Gamers have a right to know how their games are made, and a right to choose what they’re supporting.”",
+     "author": "Pirat_Nation",
+     "date": "2026-07-23",
+     "likes": 9667,
+     "views": 426591,
+     "link": "https://x.com/Pirat_Nation/status/2080110653843571071",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HN2py_bW8AAy-BZ.png"
+     },
+     "summary": "GamesRadar采访显示，许多独游开发者认为Valve要求披露AI生成内容是正确举措——给玩家透明度、帮助做出知情决定。Erenshor作者Brian “Burgee”表示：「玩家有权知道他们的游戏是如何制作的，有权选择支持什么。」",
+     "analysis": "AI内容披露正从平台强制要求演变为开发者主动站队的价值观议题。随着玩家对AI内容敏感度上升，「无AI」可能成为部分独游的品质标签——类似当年的「无内购」营销。",
+     "recommendation": "独游开发者集体力挺Steam AI披露政策——「玩家有权选择支持什么」",
+     "featured": true
+    },
+    {
+     "idx": "行业动态 02",
+     "source": "Eurogamer · 销售数据",
+     "tags": [
+      "刺客信条",
+      "育碧",
+      "销量"
+     ],
+     "title": "AC黑旗Resynced发售14天销量破350万——育碧：已超全年预期",
+     "en_title": "Assassin's Creed Black Flag Resynced has already sold over 3.5 million copies, \"exceeding annual expectations within its first 14 days\"",
+     "full_text": "Assassin's Creed Black Flag Resynced has already sold over 3.5 million copies, \"exceeding annual expectations within its first 14 days\"\n\nhttps://t.co/9Hq6RJ2E6j https://t.co/aGiw0l1TJN",
+     "author": "eurogamer",
+     "date": "2026-07-24",
+     "likes": 17,
+     "views": 10609,
+     "link": "https://x.com/eurogamer/status/2080575427806896593",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HN-wUoGXQAATWfo.jpg"
+     },
+     "summary": "育碧最新财报披露：AC黑旗Resynced发售两周销量破350万份，「14天内就超越了全年预期」，成为自原版黑旗以来评分最高的AC作品。但公司Q1净预订额2.56亿欧元同比降9%，巴塞罗那工作室因裁员举行罢工。",
+     "analysis": "老牌IP重制是当前财报季最稳的现金牛——黑旗重制的成功与系列裁员并存，说明发行商正在用最低风险的产品形态养活转型期的组织。",
+     "recommendation": "AC黑旗重制14天卖出350万份超全年预期——但育碧Q1净预订仍同比降9%",
+     "featured": true,
+     "game_ref": "Assassin's Creed Black Flag Resynced"
+    },
+    {
+     "idx": "行业动态 03",
+     "source": "Eurogamer · 平台政策",
+     "tags": [
+      "Xbox",
+      "云游戏",
+      "广告",
+      "Game Pass"
+     ],
+     "title": "Xbox测试广告支持的免费云游戏串流——每次1小时，硬件危机下的新出路",
+     "en_title": "Xbox rolls out ad-supported game streaming test for its insider programs, as hardware supply and affordability crisis rages on",
+     "full_text": "Xbox rolls out ad-supported game streaming test for its insider programs, as hardware supply and affordability crisis rages on\n\nhttps://t.co/AeGvhFTWSl https://t.co/IPCYtWDH04",
+     "author": "eurogamer",
+     "date": "2026-07-24",
+     "likes": 18,
+     "views": 9716,
+     "link": "https://x.com/eurogamer/status/2080580512737853740",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HN-08R0XMAENarU.png"
+     },
+     "summary": "微软向Insider项目推送广告支持的免费云游戏串流测试：玩家看广告即可免费游玩1小时。Digital Foundry确认了这一机制。背景是Xbox硬件供应与价格危机持续。",
+     "analysis": "硬件卖不动时，把游戏触达从「买设备」转为「看广告」是自然的下沉路径。这也是Game Pass增长放缓后，Xbox扩大漏斗顶端的明确信号——云游戏开始借鉴免费手游的变现逻辑。",
+     "recommendation": "Xbox开测广告换免费串流：看广告玩1小时云游戏，硬件卖不动的B计划",
+     "featured": true
+    },
+    {
+     "idx": "行业动态 04",
+     "source": "Eurogamer · 新游泄露",
+     "tags": [
+      "Kingdom Come",
+      "Warhorse",
+      "商标",
+      "多人"
+     ],
+     "title": "Kingdom Come Salvation商标曝光：Warhorse下一款中世纪RPG，或首次加入多人功能",
+     "en_title": "Kingdom Come Salvation may be the next Medieval RPG from Warhorse, and it could have some sort of multi-player functionality, too",
+     "full_text": "Kingdom Come Salvation may be the next Medieval RPG from Warhorse, and it could have some sort of multi-player functionality, too\n\nhttps://t.co/q2VEEpcuZq https://t.co/AfR3GJUHZL",
+     "author": "eurogamer",
+     "date": "2026-07-24",
+     "likes": 38,
+     "views": 6996,
+     "link": "https://x.com/eurogamer/status/2080629550728286477",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HN_hi6kXEAAUSsC.jpg"
+     },
+     "summary": "7月23日提交至EUIPO的商标「Kingdom Come Salvation」被曝光，字体与Warhorse的Kingdom Come IP一致，申请地为工作室所在地捷克。文件中多次提及「在线游戏服务」「全球网络电子游戏服务」，暗示可能加入合作或PvP多人要素。官方此前表示最快2027/28财年（2027年4月起）发售。",
+     "analysis": "KCD2已卖500万份，Warhorse从单人硬核RPG向在线要素延伸是明显的商业化扩张信号。单人RPG大厂的「多人化」正在成为行业标配动作。",
+     "recommendation": "天国拯救新作商标「Kingdom Come Salvation」注册——备案文件暗示在线多人",
+     "featured": true,
+     "game_ref": "Kingdom Come Salvation"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Indie Game Joe · 新游曝光",
+     "tags": [
+      "收纳整理",
+      "协作",
+      "新游公布"
+     ],
+     "title": "TV Archive: Tidy Up Together：和朋友整理3180盘录像带的收纳游戏——8月发售",
+     "en_title": "A new game has been announced where you organize 3,180 videotapes with your friends",
+     "full_text": "A new game has been announced where you organize 3,180 videotapes with your friends\n\n- Sort tapes into 20 categories, horror to game shows\n- Unlock skills like auto-placement, auto-collect\n- Play solo, co-op or PvP\n\nIt's called TV Archive: Tidy Up Together. Would you play this? https://t.co/pbzasIBFDU",
+     "author": "IndieGameJoe",
+     "date": "2026-07-24",
+     "likes": 1349,
+     "views": 235021,
+     "link": "https://x.com/IndieGameJoe/status/2080503303969141076",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2080503245081075712/img/SgzKQtFq1aC01GVu.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2080503303969141076/video/1"
+     },
+     "summary": "新公布的协作收纳游戏：将3180盘散落一地的录像带按恐怖片、游戏节目等20个类别归架上架，可解锁自动摆放、自动收集等技能。支持单人、合作与PvP模式，8月发售。",
+     "analysis": "",
+     "recommendation": "TV Archive：3180盘录像带分类上架的协作收纳游戏，支持单人/合作/PvP",
+     "featured": true,
+     "game_ref": "TV Archive: Tidy Up Together",
+     "enrichment": {
+      "game_name": "TV Archive: Tidy Up Together",
+      "genre": "Casual / Indie / Simulation",
+      "developer": "Games Together",
+      "platforms": [
+       "windows"
+      ],
+      "price": "未公布",
+      "release_date": "2026年8月",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4934370/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4934370/b1ab86279d02d7d386727a189dc939d9240c4e63/header.jpg?t=1784808488",
+      "youtube_video": null,
+      "description": "【核心玩法】把3180盘散落一地的录像带归架：按恐怖片、综艺、游戏节目等20个类别分类上架，纯粹的整理强迫症快感。\n\n【协作与对抗】支持单人慢慢整理，也支持多人合作分工，以及PvP模式比拼整理速度——收纳游戏少见的对抗设计。\n\n【成长要素】可解锁「自动摆放」「自动收集」「卷数排序」等特殊能力，整理效率随进度加速，带有轻度的build构建空间。\n\n【优势】题材极度日常却有记忆点（谁的童年没有一抽屉录像带）；合作+对抗双模式覆盖了不同聚会场景。\n【不足】单一整理玩法的重复度风险；长期目标感待观察。\n\n【综合】「整理3180盘录像带」这个一句话概念就足够传播——收纳品类的差异化新作，8月发售。",
+      "why_notable": "收纳协作品类的高概念差异化题材，235K浏览验证传播力"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Indie Game Joe · 新游制作中",
+     "tags": [
+      "抢劫",
+      "时光机",
+      "协作",
+      "新游制作中"
+     ],
+     "title": "Grand Theft Timeline：操作200多个按钮的自制时光机，和朋友穿越各时代抢劫",
+     "en_title": "This indie dev is making a heist game where you operate a makeshift time machine with your friends",
+     "full_text": "This indie dev is making a heist game where you operate a makeshift time machine with your friends\n\n- Press one of 200+ buttons, arrive at a time era and explore it\n- Find the valuable, and steal it\n- Don't get stranded\n\nIt's called Grand Theft Timeline. Would you play this? https://t.co/Z5WC2PIW6X",
+     "author": "IndieGameJoe",
+     "date": "2026-07-23",
+     "likes": 2795,
+     "views": 204827,
+     "link": "https://x.com/IndieGameJoe/status/2080369818767647149",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2080365743586103296/img/qPQfcGJX2yAPabpZ.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2080369818767647149/video/1"
+     },
+     "summary": "开发中的多人抢劫游戏：一台有200多个按钮的临时拼装时光机，按下其中一个就抵达某个时代展开探索，找到值钱的东西偷走——别被滞留在过去。",
+     "analysis": "",
+     "recommendation": "Grand Theft Timeline：按200+按钮随机穿越时代的多人抢劫游戏——别被困住",
+     "featured": true,
+     "game_ref": "Grand Theft Timeline",
+     "enrichment": {
+      "game_name": "Grand Theft Timeline",
+      "genre": "动作 / 冒险 / 休闲",
+      "developer": "REAL PLAYERS",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年第四季度",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4928450",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4928450/e7811867288edcd8a3246f9d74da454e9b9e95c7/header.jpg?t=1784759617",
+      "youtube_video": null,
+      "description": "Pull a time travel heist with your friends. Operate a makeshift time travel machine to traverse the timeline with 200+ buttons, then arrive at a time era, explore it, find the valuable, and steal it. Just don't get stranded and become part of the timeline yourself. 1-8 players.\n\n【核心玩法】一台临时拼装的时光机，面板上有200多个按钮——按下任意一个，整队人就被扔进某个时代。抵达后探索该时代、找到值钱的目标物、偷走，然后全身而退。\n\n【风险机制】「别被滞留」是核心张力：穿越并非毫无代价，被困在过去意味着任务失败。\n\n【协作设计】多人分工操作时光机+落地搜刮，时光机操作本身（200+按钮）就是一个需要学习的「驾驶舱」。\n\n【优势】高概念一句话成立：时光机+抢劫的组合自带画面感；随机时代带来天然的关卡多样性。\n【不足】尚处开发早期，时代内容的填充量是最大工程量。\n\n【综合】204K浏览、2.8K赞——概念先行的成功案例，抢劫游戏品类的题材创新样本。",
+      "why_notable": "时光机抢劫的高概念协作游戏，204K浏览2.8K赞"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "ゲム之助 · 新游发售",
+     "tags": [
+      "社交推理",
+      "人狼",
+      "末日",
+      "新游发售"
+     ],
+     "title": "RED FLAG：末日避难所里不投狼人投「没用的人」——能力短板随机生成的人狼变体发售",
+     "en_title": "崩壊後の世界に無能は不要。人狼ではなく「使えないヤツ」を追放する世紀末過ぎる人狼『RED FLAG』発売",
+     "full_text": "崩壊後の世界に無能は不要\n人狼ではなく「使えないヤツ」を追放する\n世紀末過ぎる人狼『RED FLAG』発売\n\n能力や短所はランダムに決定\n生き延びる為に「自分がいかに有用か」主張し\n他人の欠点を暴いてシェルターに残れ\n\nただし、有能な人間を追い出せばお前達に未来はない\nhttps://t.co/fozcLnM5L0 https://t.co/ibYZMtCRAi",
+     "author": "dotpixel3d",
+     "date": "2026-07-24",
+     "likes": 1077,
+     "views": 99131,
+     "link": "https://x.com/dotpixel3d/status/2080548536694010021",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2080280599122898945/img/SV6X84W-0fc4955n.jpg",
+      "video_url": "https://x.com/dotpixel3d/status/2080548536694010021/video/1"
+     },
+     "summary": "末世背景的社交推理游戏：每个人的能力和缺点随机生成，幸存者要主张「自己有多有用」、揭发他人短板来留在避难所。但注意——把真正有能力的人赶出去，你们就没有未来。",
+     "analysis": "",
+     "recommendation": "RED FLAG：崩坏世界的人狼变体——驱逐「无能者」，但赶走能人你们也没未来",
+     "game_ref": "RED FLAG",
+     "enrichment": {
+      "game_name": "RED FLAG",
+      "genre": "休闲 / 独立 / 角色扮演",
+      "developer": "Red Flag Team",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥ 28.99",
+      "release_date": "已发售 · 2026 年 7 月 13 日",
+      "steam_rating": "已发售",
+      "steam_url": "https://store.steampowered.com/app/4601770",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4601770/f9fbea0b2e78d00ef193f94b09a81a03a9db7590/header.jpg?t=1784110963",
+      "youtube_video": null,
+      "description": "全球灾难降临。少数幸存者被困在一座与世隔绝的避难所中，而资源不足以让所有人活下去。坐上谈判桌，说服其他人你才值得留下。撒谎、施压、操纵他人，并决定谁会被赶出去！\n\n【核心玩法】人狼游戏的概念倒置：末日避难所资源有限，玩家投票驱逐的不是隐藏的狼人，而是「对集体最没用的人」。\n\n【随机属性】每个角色的能力和缺点随机生成——你可能体力强但情绪化，他可能擅长医疗但自私。没有固定的身份剧本，每局都是新的社会博弈。\n\n【辩论机制】生存靠嘴：主张自己有多有用，揭发别人的短板。但系统埋了陷阱——驱逐真正有能力的人会让整个避难所走向灭亡。\n\n【优势】对传统人狼的身份结构做了有意义的颠覆；随机属性带来高重玩性。\n【不足】依赖玩家人数与语音氛围，路人局体验存疑。\n\n【综合】末日题材+社会派推理的日式人狼变体，社交推理品类的机制微创新。",
+      "why_notable": "把「投狼人」变成「投无能者」的机制倒置，人狼品类的概念创新"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "FUNKTRONIC LABS · 官方",
+     "tags": [
+      "MMO-lite",
+      "塞尔达",
+      "公开测试"
+     ],
+     "title": "Scramble Knights Online：Zelda启发的MMO-lite，8月14日Steam公开测试",
+     "en_title": "The Open Beta for our Zelda-inspired MMO-lite will open on August 14th!",
+     "full_text": "The Open Beta for our Zelda-inspired MMO-lite will open on August 14th!\n\nSign up on Steam for the Scramble Knights Online test, link below 👇 https://t.co/rCy4g6CUuh",
+     "author": "funktroniclabs",
+     "date": "2026-07-23",
+     "likes": 943,
+     "views": 60852,
+     "link": "https://x.com/funktroniclabs/status/2080335144452280750",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2080334627487506432/img/cfLVhI6ZmnQB7uf8.jpg",
+      "video_url": "https://x.com/funktroniclabs/status/2080335144452280750/video/1"
+     },
+     "summary": "Funktronic Labs宣布其Zelda启发MMO-lite《Scramble Knights Online》将于8月14日在Steam开启Open Beta，现已开放报名。",
+     "analysis": "",
+     "recommendation": "Funktronic新作Scramble Knights Online：塞尔达风MMO-lite，8月14日开测",
+     "game_ref": "Scramble Knights Online",
+     "enrichment": {
+      "game_name": "乱斗骑士 Scramble Knights Online",
+      "genre": "动作 / 冒险 / 休闲",
+      "developer": "Funktronic Labs",
+      "platforms": [
+       "PC",
+       "Linux"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年第四季度",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2379350",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379350/1be9dae53e1a8f292570c4cbd7214e2246ff3a13/header.jpg?t=1784819370",
+      "youtube_video": null,
+      "description": "这是一款冒险风格的大逃杀游戏，和 32 名玩家在比赛中混战，成为活到最后的最强骑士吧！\n\n【核心定位】Zelda启发的MMO-lite：不是重社交重养成的传统MMO，而是把塞尔达式的动作冒险手感放进一个可持续在线的共享世界。\n\n【团队背景】Funktronic Labs是加州小型工作室，此前以创意独立游戏闻名，这是其首次尝试在线化产品。\n\n【当前节点】8月14日Steam Open Beta，现已开放报名——对这类轻量在线游戏，公测数据（留存、同时在线）将是成色的第一次检验。\n\n【优势】塞尔达风+轻MMO的组合在Steam几乎没有直接竞品；美术风格清新。\n【不足】MMO-lite品类介于单机与网游之间，内容消耗速度与更新节奏是生死线。\n\n【综合】值得关注的品类卡位尝试，8月14日公测见分晓。",
+      "why_notable": "Zelda-like+MMO-lite的稀缺品类组合，知名创意工作室首次在线化"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "noio · 开发技巧",
+     "tags": [
+      "视觉错觉",
+      "渲染技巧",
+      "gamedev"
+     ],
+     "title": "假室内管道：经典「窗户视差」错觉的圆柱投影版——游戏开发者的障眼法",
+     "en_title": "classic bit of gamedev smoke & mirrors. i present: \"fake interior tube\". similar to the famous 'window interior parallax' trick, but projected on a cylinder",
+     "full_text": "classic bit of gamedev smoke &amp; mirrors\n\ni present: \"fake interior tube\"\n\nsimilar to the famous 'window interior parallax' trick,\n\nbut projected on a cylinder 😊\n\ncute, huh? https://t.co/naQScSaYDP",
+     "author": "noio_games",
+     "date": "2026-07-24",
+     "likes": 8675,
+     "views": 399669,
+     "link": "https://x.com/noio_games/status/2080550601188880595",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2080550552732082176/pu/img/l7supF6TuvzIu26Z.jpg",
+      "video_url": "https://x.com/noio_games/status/2080550601188880595/video/1"
+     },
+     "summary": "noio（Kingdom、Townscaper作者）展示了一个gamedev障眼法：把著名的「窗户室内视差」技巧投影到圆柱体上，做出「假室内管道」效果——管道内部看起来像有纵深的真实空间。",
+     "analysis": "经典的伪3D技巧在适合的载体上仍能焕发新生——这类零成本视觉魔术是独游画面性价比的极致，两天内已获8.6K赞、近40万浏览。",
+     "recommendation": "gamedev障眼法新招：把「假室内视差」投到圆柱上——8.6K赞",
+     "featured": true
+    }
+   ]
+  }
+ ]
+}

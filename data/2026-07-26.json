@@ -1,0 +1,442 @@
+{
+ "date": "2026-07-26",
+ "meta": {
+  "raw_count": 173,
+  "filtered_count": 143,
+  "selected_count": 12,
+  "note": "AI 3, Industry 4, Indie 3, Tools 2",
+  "crawl_time": "2026-07-26 10:00"
+ },
+ "lede": "Opus 5在3D物理测试中完胜Fable 5且便宜一半；Steam自定义地图再曝藏毒；Project Zomboid时隔4年最大更新定档7月29日。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Steam自定义地图再藏毒：MECCHA CHAMELEON地图静默植入PowerShell脚本"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "四模型3D物理同题测试：Opus 5全对、$1.40，Fable 5 $2.82全翻车"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "鹅夫妻搬蛋的2人协作游戏发售——互相拉一把而不是互坑，563K浏览"
+  }
+ ],
+ "daily_summary": "**Opus 5的3D物理理解拉开代差**\n四模型同题3D物理破坏测试中，Opus 5三个场景全对且成本仅为Fable 5的一半；陈成「入职一周写9个skill」的实操贴展示了agent融入工作流的完整范式——包括一个agent找问题、另一个专门驳倒它的对抗评审结构。\n\n**Steam安全与怀旧双主线**\nMECCHA CHAMELEON自定义地图被查出静默植入恶意脚本，UGC平台攻击面扩大；Project Zomboid时隔4年的最大更新Build 42定档7月29日；战神官宣Laufey定档2027年2月+Kratos续作+希腊三部曲重制三连发；ZA/UM在新作发售数周后再度裁员。\n\n**协作游戏走温情路线**\n鹅夫妻搬蛋游戏An Eggstremely Hard Game以「互相拉一把」的正向协作走红，RujiK的程序化怪物生成器获17.5K赞，另有开发者公开自走棋首日2000份销量的完整复盘。详情请点击下方【当日速览】的条目跳转到对应推文。",
+ "digest": [
+  {
+   "id": "ai",
+   "text": "四模型3D物理测试：Opus 5全对且半价\n陈成：入职一周写9个skill帮自己onboard\nHyper3D：完整3D模型自动拆成可编辑零件"
+  },
+  {
+   "id": "industry",
+   "text": "Steam自定义地图再藏毒：MECCHA CHAMELEON\nProject Zomboid Build 42定档7月29日\n战神三连发：Laufey定档+Kratos续作+希腊重制\nZA/UM新作发售数周后再裁员"
+  },
+  {
+   "id": "indie",
+   "text": "An Eggstremely Hard Game：鹅夫妻搬蛋协作\nNight Plane：空乘恐怖游戏\nSome of You May Die：首日2000份/186CCU复盘"
+  },
+  {
+   "id": "tools",
+   "text": "RujiK程序化怪物生成器\nMeng To开源Three.js动作RPG skill包"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "atomic.chat · 模型横评",
+     "tags": [
+      "Opus 5",
+      "Fable 5",
+      "Kimi K3",
+      "GPT 5.6",
+      "3D物理"
+     ],
+     "title": "四模型3D物理破坏同题测试：Opus 5三个全对，价格还比Fable 5便宜一半",
+     "en_title": "Opus 5 crushed Fable 5 at 3D destruction physics for 2x cheaper!",
+     "full_text": "Opus 5 crushed Fable 5 at 3D destruction physics for 2x cheaper!\n\nWe gave four models the same task: build three self-contained HTML scenes with real physics\n\nPrompts:\n- A tornado that sucks in a whole field\n- A wrecking ball taking down an apartment block\n- An overloaded truck collapsing a truss bridge\n\nOutputs:\n- Opus 5: 55.9K tokens, $1.40\n- Fable 5: 55.1K tokens, $2.82\n- Kimi K3: 35.7K tokens, $0.55\n- GPT 5.6: 20.1K tokens, $0.31\n\nOpus got all three right unlike the other models. Houses fly up the funnel and out the top, the wall breaks where the ball hits and the rubble piles up, the bridge drops the truck into the river. Fable had almost nothing on the ground for the tornado to pick up, its building collapsed on its own before the ball even touched it and its bridge blew into sticks all at once. GPT is the cheapest here but its ball never reached the building at all and its bridge fell apart in a way nothing falls apart in real life. Kimi K3, the new Chinese frontier model, ended up in the same place as GPT",
+     "author": "atomic_chat_hq",
+     "date": "2026-07-24",
+     "likes": 4435,
+     "views": 1232157,
+     "link": "https://x.com/atomic_chat_hq/status/2080760629653102958",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2080760395166257153/img/DkPLPgWYiNh7xxZy.jpg",
+      "video_url": "https://x.com/atomic_chat_hq/status/2080760629653102958/video/1"
+     },
+     "summary": "atomic.chat用三个自包含HTML物理场景（龙卷风卷走田野、破碎球拆公寓楼、超载卡车压垮桁架桥）同题测试四个模型。Opus 5三个全对（55.9K tokens/$1.40）：房屋被卷入漏斗、墙体沿撞击点碎裂、桥体把卡车卸进河里；Fable 5（55.1K/$2.82）龙卷风里地面几乎没有可卷的东西、楼在球碰到前自己塌了；GPT 5.6最便宜（20.1K/$0.31）但球根本没碰到楼；Kimi K3（35.7K/$0.55）与GPT表现相当。",
+     "analysis": "物理正确性是检验模型空间推理的硬指标——Opus 5在3D理解上确实拉开了代差。但单场景demo测试方差很大，模型选型仍应基于自己业务的批量验证，而非单条爆款对比视频。",
+     "recommendation": "四模型3D物理同题测试：Opus 5全对、$1.40，Fable 5 $2.82全翻车",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "陈成 · 工作流实践",
+     "tags": [
+      "skill",
+      "onboarding",
+      "agent",
+      "Qoder"
+     ],
+     "title": "入职Qoder一周，陈成写了9个skill帮自己onboard——从装电脑到bug triage全流程",
+     "en_title": "入职 qoder 一周，写了 9 个 skill 帮我 onboard。7 个是给这份工作专门写的，2 个通用。",
+     "full_text": "入职 qoder 一周，写了 9 个 skill 帮我 onboard。7 个是给这份工作专门写的，2 个通用。\n\n1\\ setup-mac：把一台新 mac 变回我的电脑。脚本分 8 段，跑几遍都不会坏。入职前 5 天写的，第一天领到机器就用上了。\n\n2\\ qoder-commits：增量读 qodercli 的提交，按分支合并成中文的摘要。上次读到哪它自己记着，重跑只看新的。\n\n3\\ qoder-feature-review：按功能拆分然后逐个评审实现。一个 agent 找问题，另一个专门去驳倒它，活下来的才留。\n\n4\\ qoder-suggest-from：把 ai 新闻变成能落到代码上的改进清单。每条都得指到具体文件的哪一行，跨次去重后攒了 40 条。\n\n5\\ qoder-expert：qoder 产品线的知识库。官方文档镜像一份，官方文档没写的自己喂进去。说实话现在基本还空着。\n\n6\\ qoder-onboard：融入助理。工作日志、人物图谱、黑话表、周报、待办都在这。感觉这一周大部分时间都在和他聊天。\n\n7\\ qoder-triage：把推特等渠道收来的 bug 和 feature request 去重、跟状态、对着代码库查是哪出的问题。收了 10 条，1 条变成了 pr，还有 1 条查完的结论是「这个不该我们修」。\n\n8\\ qoder-resources：采集社区里别人写的 qoder 内容。文章推文视频播客都收，音视频自动转成文字，能全文搜。\n\n9\\ me：我的简历和个人事实。写第一人称的东西时不用编，履历和时间线都能翻到出处。llm 知道我是谁才能给更好的 suggest 。\n\n找时间挑一些整理下开源，想看哪个可以说一声哈。",
+     "author": "chenchengpro",
+     "date": "2026-07-25",
+     "likes": 241,
+     "views": 31352,
+     "link": "https://x.com/chenchengpro/status/2080883181683605538",
+     "media": null,
+     "summary": "陈成分享入职第一周写的9个skill：setup-mac（新机器环境还原，跑几遍都不会坏）、qoder-commits（增量读提交生成中文摘要）、qoder-feature-review（一个agent找问题、另一个专门驳倒它，活下来的才留）、qoder-suggest-from（AI新闻转代码改进清单，每条指到具体文件哪一行，攒了40条）、qoder-expert（产品知识库）、qoder-onboard（工作日志/人物图谱/黑话表/周报）、qoder-triage（社媒bug去重、对代码库定位问题，10条中1条已变PR）、qoder-resources（社区内容采集、音视频自动转文字）、me（个人事实库）。他计划整理部分开源。",
+     "analysis": "这是「agent融入工作流」最具体的实操样本：不是让AI写代码，而是把onboarding本身拆成9个可复用的agent技能。「找问题agent+驳倒agent」的双Agent对抗评审结构尤其值得借鉴——单一agent的自纠错能力远不如对抗结构。",
+     "recommendation": "陈成入职一周写9个skill：双agent互驳的评审结构，triage直接产出PR",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "小互 · AI工具",
+     "tags": [
+      "Hyper3D",
+      "3D模型",
+      "AI拆解"
+     ],
+     "title": "Hyper3D「BANG to Parts」：把完整3D模型自动拆成可编辑零件——3D模型变乐高",
+     "en_title": "Hyper3D 这个 BANG to Parts功能有点牛P：你丢给它一个完整的 3D 模型，AI 会自动帮你把它拆解成一个个独立的、完整的3D零件",
+     "full_text": "3D 圈的人看到这个应该会沉默几秒\n\n3D 模型再次进化\n\nHyper3D 这个 BANG to Parts功能有点牛P\n\n你丢给它一个完整的 3D 模型，AI 会自动帮你把它拆解成一个个独立的、完整的的3D零件\n\n也就是可以将任何完整的 3D 模型自动拆解成多个3D的零件\n\n拆好的零件可以直接用来做动画、改材质、甚至去 3D 打印\n\n这能帮 3D 设计师省下大把“手动擦屁股（清理模型）”的时间\n\n更狠的是：拆完还能接着拆\n\n整车 → 拆出车轮 → 车轮再拆出轮毂、轮胎、螺丝。\n\n理论上你想拆多细拆多细。\n\n而且每个零件都是独立完整的 3D 模型：单独换材质、单独改形状、甚至单独重新生成一个新的换上去\n\n3D 模型第一次变成了“乐高”，而不只是“手办”\n\n还有一个关键点是：拆出来的每个零件都是完整、独立、可编辑的 3D 模型。换材质、改造型、缩放变形、甚至整个重新生成一个换上去,都行\n\n借助目前Codex和Claude code的强大能力，打造一个 3D 模型/开发工作流，非常牛P",
+     "author": "xiaohu",
+     "date": "2026-07-24",
+     "likes": 278,
+     "views": 18829,
+     "link": "https://x.com/xiaohu/status/2080660118790893712",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2080659193812684800/img/eJx-smIFDgea_g4y.jpg",
+      "video_url": "https://x.com/xiaohu/status/2080660118790893712/video/1"
+     },
+     "summary": "Hyper3D新功能BANG to Parts：输入完整3D模型，AI自动拆解为独立完整的零件，可递归拆解（整车→车轮→轮毂/轮胎/螺丝），理论上想拆多细拆多细。每个零件可单独换材质、改造型、缩放变形，甚至整个重新生成一个换上去，可直接用于动画或3D打印。",
+     "analysis": "3D资产从「手办」变「乐高」是AIGC管线进入正式生产的关键一步——可编辑性决定了AI生成物能否超越概念稿阶段。对3D设计师，省掉的是大量手动清理拓扑的时间。",
+     "recommendation": "Hyper3D新功能：整车自动拆成车轮轮毂螺丝，零件独立可编辑可3D打印"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "行业动态 01",
+     "source": "International Cyber Digest · 安全警报",
+     "tags": [
+      "Steam",
+      "恶意软件",
+      "MECCHA CHAMELEON",
+      "创意工坊"
+     ],
+     "title": "Steam再次被发现托管恶意软件：MECCHA CHAMELEON自定义地图暗藏木马",
+     "en_title": "Steam is hosting malware again, this time in a custom map for the game MECCHA CHAMELEON",
+     "full_text": "‼️ Steam is hosting malware again, this time in a custom map for the game MECCHA CHAMELEON\n\nLoading the map quietly writes a Windows command file into the player's Documents folder, which then opens PowerShell in an invisible window and tries to download a second script from a server.\n\nThe dropped file was recovered. The second stage 404'd, so nobody knows what it does yet. We're working on that.",
+     "author": "IntCyberDigest",
+     "date": "2026-07-25",
+     "likes": 12030,
+     "views": 1352923,
+     "link": "https://x.com/IntCyberDigest/status/2080966921000775993",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOEUYmvXoAEW-MA.jpg"
+     },
+     "summary": "安全机构International Cyber Digest发现，Steam上一款MECCHA CHAMELEON自定义地图携带恶意程序：加载地图会向玩家的文档文件夹静默写入一个Windows命令文件，随后打开隐形PowerShell窗口尝试从服务器下载第二阶段脚本。被释放的文件已被恢复，但第二阶段链接已404，其实际目的目前未知。",
+     "analysis": "UGC内容平台的安全审核压力正在向Steam蔓延——自定义地图/模组成为新的攻击面。对运营UGC生态的团队，内容安全扫描需要前置到上架环节，而不是依赖事后下架。",
+     "recommendation": "Steam自定义地图藏毒：加载地图静默写入PowerShell脚本下载二阶段载荷",
+     "featured": true,
+     "game_ref": "MECCHA CHAMELEON"
+    },
+    {
+     "idx": "行业动态 02",
+     "source": "Survival Game News · 版本更新",
+     "tags": [
+      "Project Zomboid",
+      "Build 42",
+      "更新"
+     ],
+     "title": "Project Zomboid时隔4年的最大更新Build 42定档7月29日——17.9K赞蹲守",
+     "en_title": "After 4 years since its last major update, Project Zomboid is finally set to release Build 42 on July 29.",
+     "full_text": "It's the biggest update yet\n\nAfter 4 years since its last major update, Project Zomboid is finally set to release Build 42 on July 29. https://t.co/LFSOU6bNAJ",
+     "author": "SurvivalGN",
+     "date": "2026-07-24",
+     "likes": 17947,
+     "views": 896704,
+     "link": "https://x.com/SurvivalGN/status/2080688298377232525",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOAWTvGXgAAIqaH.jpg"
+     },
+     "summary": "丧尸生存沙盒Project Zomboid宣布Build 42将于7月29日发布，这是距上个大版本4年之后最大规模的一次更新，社区期待值极高（推文获17.9K赞、近90万浏览）。",
+     "analysis": "Zomboid是超长EA周期的另类样本：用12年EA维持核心社区不死。Build 42包含畜牧业、NPC等系统级更新，是对其「慢开发」模式的又一次压力测试——也成了独游长线运营的对照组。",
+     "recommendation": "Project Zomboid Build 42定档7月29——距上个大版本4年，社区蹲守",
+     "featured": true,
+     "game_ref": "Project Zomboid"
+    },
+    {
+     "idx": "行业动态 03",
+     "source": "Polygon · 新作确认",
+     "tags": [
+      "战神",
+      "God of War",
+      "Sony",
+      "Santa Monica"
+     ],
+     "title": "新《战神》正式确认：Kratos继续主演并承接Laufey剧情——Laufey定档2027年2月16日",
+     "en_title": "New God of War game starring Kratos officially confirmed",
+     "full_text": "New God of War game starring Kratos officially confirmed https://t.co/SmPRm924vF https://t.co/xoky0eF6XX",
+     "author": "Polygon",
+     "date": "2026-07-25",
+     "likes": 70,
+     "views": 29158,
+     "link": "https://x.com/Polygon/status/2080843034346811709",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOCjtoZWoAAvriW.jpg"
+     },
+     "summary": "索尼正式确认战神系列新计划：God of War Laufey定档2027年2月16日发售；一款由Kratos主演的全新续作将在Laufey之后推出、直接承接两者剧情；此外还有希腊三部曲重制版在开发中。",
+     "analysis": "索尼第一方进入「系列多线并行」模式：正传+外传+老三部曲重制同时推进，用同一IP填满产品日历。2027年2月档期正在变得异常拥挤。",
+     "recommendation": "战神三连发：Laufey定档2027年2月，Kratos续作确认+希腊三部曲重制",
+     "featured": true,
+     "game_ref": "God of War Laufey"
+    },
+    {
+     "idx": "行业动态 04",
+     "source": "Eurogamer · 裁员",
+     "tags": [
+      "ZA/UM",
+      "裁员",
+      "极乐迪斯科"
+     ],
+     "title": "ZA/UM在Zero Parades发售数周后裁员——粉丝怒斥「他们毒害了这个品牌」",
+     "en_title": "\"They poisoned the brand\" - Fans as ZA/UM lays off staff weeks after releasing Zero Parades: For Dead Spies",
+     "full_text": "\"They poisoned the brand\" - Fans as ZA/UM lays off staff weeks after releasing Zero Parades: For Dead Spies. https://t.co/zxHv4Avgct https://t.co/BRrAyUOLco",
+     "author": "eurogamer",
+     "date": "2026-07-25",
+     "likes": 4,
+     "views": 2854,
+     "link": "https://x.com/eurogamer/status/2081039545802338313",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOFWbBHXoAAYWec.png"
+     },
+     "summary": "《极乐迪斯科》原班工作室ZA/UM在新作《Zero Parades: For Dead Spies》发售仅数周后再度裁员，粉丝社区反应激烈，「他们毒害了这个品牌」成为代表性评论。",
+     "analysis": "ZA/UM的品牌价值已与「极乐迪斯科精神续作」预期深度绑定，连续的项目动荡让这一IP资产持续贬值——文化口碑的损耗速度远快于建立速度。",
+     "recommendation": "极乐迪斯科工作室ZA/UM新作发售数周后再裁员，粉丝怒斥「毒害品牌」",
+     "game_ref": "Zero Parades: For Dead Spies"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "모카 · 玩家推荐",
+     "tags": [
+      "协作",
+      "双人",
+      "治愈",
+      "新游发售"
+     ],
+     "title": "An Eggstremely Hard Game：鹅夫妻合力搬蛋的2人协作游戏——能互相拉一把的友情培养系",
+     "en_title": "오늘 출시된 2인 협동게임인데 거위 부부 둘이서 알이 깨지지 않게 옮겨야 하는 게임이야 너무 귀여워",
+     "full_text": "오늘 출시된 2인 협동게임인데 거위 부부 둘이서 알이 깨지지 않게 옮겨야 하는 게임이야 너무 귀여워\n다른 게임들처럼 마냥 우정파괴류 게임은 아닌 것 같음 서로가 서로를 끌어올려줄수도 있고 . . . 출시기념 세일중이라서 오천원이라네요 https://t.co/lg8bev2gph",
+     "author": "matchoking1",
+     "date": "2026-07-25",
+     "likes": 3812,
+     "views": 563649,
+     "link": "https://x.com/matchoking1/status/2080878462769025349",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2080878379428139008/img/5UzjFpNW7gSOQ-dW.jpg",
+      "video_url": "https://x.com/matchoking1/status/2080878462769025349/video/1"
+     },
+     "summary": "韩国玩家推荐的当日发售双人协作游戏（563K浏览）：一对鹅夫妻要在蛋不破碎的前提下把它搬到终点。与常见的「友情破坏」类协作游戏不同，本作强调互相拉起对方的正向配合，发售纪念折扣中（约5000韩元/4.49美元）。该作为BBear Studio开发，7月24日登陆Steam。",
+     "analysis": "",
+     "recommendation": "鹅夫妻搬蛋协作游戏发售：不是友情破坏系，是能互相拉一把——563K浏览",
+     "featured": true,
+     "game_ref": "An Eggstremely Hard Game",
+     "enrichment": {
+      "game_name": "An Eggstremely Hard Game",
+      "genre": "休闲",
+      "developer": "BBear Studio",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥ 18.00",
+      "release_date": "已发售 · 2026 年 7 月 24 日",
+      "steam_rating": "已发售",
+      "steam_url": "https://store.steampowered.com/app/4112070",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4112070/af1b508f0fea8862f209b5636d34902b049e6252/header.jpg?t=1784891682",
+      "youtube_video": null,
+      "description": "作为高度专业的鹅父母，一起努力把你们的小蛋安全带回家。每次碰撞都会让控制更困难，每次失误都更加搞笑。这是一款支持2或4名玩家的合作物理游戏，关于团队合作、笨拙与鹅叫声。 HONK!\n\n【核心玩法】一对鹅夫妻合力把蛋搬到终点，蛋碎了就得重来——物理手感是全部乐趣来源。\n\n【协作设计】与「友情破坏」类协作游戏（Overcooked式互坑）不同，本作强调正向配合：一方失误时另一方可以把它「拉起来」，协作的容错与互助被做成了机制。\n\n【传播点】「鹅+蛋」的组合天然呆萌，563K浏览来自一条普通玩家的自发推荐而非媒体投放——可爱即是流量。\n\n【优势】双人协作的低门槛高欢乐品类；正向协作的差异化定位清晰；首发折扣价$4.49极低。\n【不足】体量小，内容深度有限；单人体验待验证。\n\n【综合】聚会协作品类的情绪价值新作，「友情培养系」的反向定位本身就是最好的卖点。",
+      "why_notable": "反「友情破坏」的正向协作设计，563K浏览的玩家自来水"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Indie Game Joe · 新游制作中",
+     "tags": [
+      "恐怖",
+      "空乘",
+      "社交推理",
+      "新游制作中"
+     ],
+     "title": "Night Plane：在注定坠毁的航班上当空乘——服务乘客并找出混在其中的恶魔",
+     "en_title": "These indie devs are making a horror game where you work as a flight attendant on a doomed plane",
+     "full_text": "These indie devs are making a horror game where you work as a flight attendant on a doomed plane\n\n- Check tickets and serve passengers\n- Pick who stays onboard\n- Demons hide among innocent souls\n\nIt's called Night Plane. Would you play this? https://t.co/jvmSB0qPDz",
+     "author": "IndieGameJoe",
+     "date": "2026-07-24",
+     "likes": 378,
+     "views": 23497,
+     "link": "https://x.com/IndieGameJoe/status/2080727762403258524",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2080727614415654912/img/9Awr9rlCc8VxRye1.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2080727762403258524/video/1"
+     },
+     "summary": "开发中的恐怖游戏：你是一架厄运航班的空乘，检票、供餐、服务乘客，同时决定谁能留在飞机上——恶魔就混在无辜的灵魂之中。",
+     "analysis": "",
+     "recommendation": "Night Plane：空乘恐怖游戏——服务乘客的同时决定谁能留在飞机上",
+     "game_ref": "Night Plane",
+     "enrichment": {
+      "game_name": "Night Plane",
+      "genre": "冒险 / 独立 / 模拟",
+      "developer": "Liquid Static Studio / Snapping Turtle",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3310570",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3310570/9cf3df7c0cec640f1feb17d936cd472f062f2b83/header.jpg?t=1784897128",
+      "youtube_video": null,
+      "description": "Night Plane is a job-sim horror game where you work as a flight attendant on a doomed plane. Check tickets, serve passengers, and decide who stays onboard as demons hide among innocent souls. Naturally, management says it’s your problem.\n\n【核心玩法】在一架注定出事的航班上扮演空乘：完成检票、供餐等本职工作，同时观察乘客、判断谁该留在飞机上。\n\n【恐怖机制】恶魔混在无辜的乘客灵魂之中——日常服务流程与「甄别恶魔」的推理压力叠加，密闭机舱提供天然的惊悚容器。\n\n【题材差异化】空乘模拟+超自然推理的组合此前几乎没有先例，民航服务的流程细节（餐车、安全演示、乘客诉求）成为恐怖叙事的载体。\n\n【优势】高概念一句话成立；密闭空间+身份猜疑的经典恐怖结构。\n【不足】尚处开发早期；推理深度与重复可玩性待验证。\n\n【综合】恐怖品类的题材创新——把「日常职业模拟」做成恐怖容器是近两年的有效路径（如各类便利店/加油站恐怖），本作把场景搬到了万米高空。",
+      "why_notable": "空乘模拟+恶魔推理的题材创新，密闭机舱的天然恐怖容器"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Jo · 开发者复盘",
+     "tags": [
+      "自走棋",
+      "发售数据",
+      "独游复盘"
+     ],
+     "title": "Some of You May Die首日数据：2000份销量/186峰值CCU/82%好评——开发者的真实复盘",
+     "en_title": "I released my 2nd indie game yesterday on Steam, iOS and Android and here's how it's going: 2,000 sales in the first 24 hours, 23 reviews (82% positive), 186 peak CCU",
+     "full_text": "I released my 2nd indie game yesterday on Steam, iOS and Android and here's how it's going:\n\n- 2,000 sales in the first 24 hours\n- 23 reviews (82% positive)\n- 186 peak CCU\n\nFeeling very grateful for this whole experience. As always it's nerve-wracking to put my heart into a creation and lay it bare in public but I'm really proud of what we (me, the artist Che and some help from others!) have made.  And that's what's really sticking with me.  There's a small part of me that fears more negative reviews but ultimately I'm happy with the game that it's turned out to be.  And I can always address player concerns in future updates anyway.\n\nThe negative reviews are fair.  3 players find the game too difficult.  One dislikes the lack of meta progression (which is just not a feature that I put in my games due to my own personal taste)\n\nThe two major issues I'm seeing are:\n1. It's unclear if you win when someone abandons a match (you do)\n2. It's too difficult\n\nI'll be planning to address these along with more player feedback in the first update",
+     "author": "jogamedev",
+     "date": "2026-07-25",
+     "likes": 43,
+     "views": 1446,
+     "link": "https://x.com/jogamedev/status/2080989813394514114",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOEpH1EWsAANFEC.png"
+     },
+     "summary": "独立开发者Jo公开其第二款游戏（自走棋，Steam/iOS/Android）首日数据：24小时2000份销量、23条评价82%好评、峰值186 CCU。差评集中在难度过高与缺少meta成长（他明确说这是个人口味不做的功能），他已列出「中途退赛是否算赢」「难度曲线」两项优先修复。",
+     "analysis": "",
+     "recommendation": "独游自走棋首日2000份/186CCU——开发者公开差评原因与修复计划",
+     "game_ref": "Some of You May Die",
+     "enrichment": {
+      "game_name": "Some of You May Die",
+      "genre": "Strategy",
+      "developer": "Octavia Blue",
+      "platforms": [
+       "windows"
+      ],
+      "price": "$12.74",
+      "release_date": "已发售 · 2026年7月24日",
+      "steam_rating": "82%好评（23条）",
+      "steam_url": "https://store.steampowered.com/app/4124920/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4124920/870edc163b6b6734318ca054ce7abe3f83a76bea/header.jpg?t=1784888337",
+      "youtube_video": null,
+      "description": "【核心玩法】自走棋品类新作：玩家搭建阵容后进行自动战斗，名字本身就是品类梗——「你们中有些人会死」。\n\n【首日成绩】24小时2000份销量、峰值186 CCU、82%好评——对无发行商的个人开发者而言是健康但不出圈的开局。\n\n【开发者复盘的价值】Jo把差评原因逐条拆解：3名玩家认为难度过高、1名不满缺少meta成长（他坚持自己的设计取舍，但会改善退赛判定与难度提示）。这种「发售次日公开账本」的透明度本身也是社区运营。\n\n【优势】全平台（PC+iOS+Android）同步发售扩大了首日漏斗；开发者响应速度快。\n【不足】186 CCU的在线基数对自走棋品类的匹配体验是挑战。\n\n【综合】独游发售数据的诚实样本——2000份/186CCU是大多数认真作品的日常，值得从业者校准预期。",
+      "why_notable": "个人开发者全平台发售的透明数据复盘：首日2000份/186CCU/82%好评"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "RujiK · 程序化生成",
+     "tags": [
+      "程序化生成",
+      "怪物",
+      "动画"
+     ],
+     "title": "程序化怪物生成器：每只怪物的造型与动画全部程序化生成——17.5K赞",
+     "en_title": "I made a monster generator. Every monster is procedurally created and animated.",
+     "full_text": "I made a monster generator. Every monster is procedurally created and animated. https://t.co/glJx7wyO1g",
+     "author": "TheRujiK",
+     "date": "2026-07-24",
+     "likes": 17516,
+     "views": 383144,
+     "link": "https://x.com/TheRujiK/status/2080687325487534441",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/tweet_video_thumb/HOAV4ZeX0AQ5oGS.jpg",
+      "video_url": "https://x.com/TheRujiK/status/2080687325487534441/video/1"
+     },
+     "summary": "开发者RujiK展示自制怪物生成器：每只怪物从外观到动画完全由程序化生成，个体之间绝不重复，展示视频获17.5K赞。",
+     "analysis": "程序化生物生成是降低内容成本的经典路径，难点一直在动画的自然度——这个展示说明程序化动画质量正在逼近手工水准，对需要大量「杂兵」的品类（幸存者like、刷宝游戏）有直接意义。",
+     "recommendation": "RujiK做了个怪物生成器：造型动画全程序化，一只都不重样——17.5K赞",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "Meng To · 开源",
+     "tags": [
+      "Three.js",
+      "开源",
+      "action RPG",
+      "skill"
+     ],
+     "title": "Meng To开源Three.js游戏开发skills：等距动作RPG全套——相机/VFX/音频/战斗系统",
+     "en_title": "I'm open-sourcing my Three.js game dev skills. Build an isometric action RPG with camera controls, VFX, audio, monster assets, combat systems, and more. Everything is free.",
+     "full_text": "I'm open-sourcing my Three.js game dev skills.\n\nBuild an isometric action RPG with camera controls, VFX, audio, monster assets, combat systems, and more.\n\nEverything is free:\nhttps://t.co/BoiGY8zvA9\n\nPlay the game:\nhttps://t.co/ylWrybZMns\n\nGame assets:\nhttps://t.co/FlOc22IT5v https://t.co/NeUdGf6gFK",
+     "author": "MengTo",
+     "date": "2026-07-25",
+     "likes": 1801,
+     "views": 75681,
+     "link": "https://x.com/MengTo/status/2080915786206789733",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2080915239433125889/img/2rTFuYneVOTb9q0a.jpg",
+      "video_url": "https://x.com/MengTo/status/2080915786206789733/video/1"
+     },
+     "summary": "设计教学作者Meng To开源其Three.js游戏开发skill包（GitHub）：包含构建等距视角动作RPG所需的相机控制、VFX、音频、怪物素材与战斗系统，代码、可玩demo与游戏素材全部免费。",
+     "analysis": "「skill」正在成为比「教程」更流行的知识分发形态——直接给agent用的工程化技能包，比给人看的文章更接近生产环节。这也与本周陈成的「9个skill onboard」互为印证。",
+     "recommendation": "Meng To开源Three.js动作RPG完整skill包：代码+游戏+素材全免费"
+    }
+   ]
+  }
+ ]
+}

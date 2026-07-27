@@ -1,0 +1,437 @@
+{
+ "date": "2026-07-27",
+ "meta": {
+  "raw_count": 171,
+  "filtered_count": 140,
+  "selected_count": 12,
+  "note": "AI 3, Industry 4, Indie 3, Tools 2",
+  "crawl_time": "2026-07-27 10:00"
+ },
+ "lede": "陈成抓包实证Claude Code系统提示词真相：4.8砍81%、Opus 5回涨72%；日本现象级独游MECCHA CHAMELEON更新引2M浏览；D&D×魔兽世界联动泄露。",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "日本现象级独游MECCHA CHAMELEON更新3.3.0——48K赞200万浏览"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "抓包实证：Claude Code砍掉的6节规则换成1节环境描述，Opus 5又回贴两节补丁"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 1,
+   "hook": "元件危机继续恶化，Steam Machine还没发售就要再涨价"
+  }
+ ],
+ "daily_summary": "**系统提示词的真相被扒了出来**\n陈成抓包验证Anthropic「删80%系统提示词」的说法：删减发生在4.8（手写策略正文-81%，6节行为规则换成1节环境描述），Opus 5反而回涨72%——规则只是变成了按模型贴的补丁。「模型越强越不需要规则」站不住脚。同日Opus 5单HTML油画世界demo继续刷屏。\n\n**硬件成本与IP流转的双重压力**\nValve称元件危机仍在恶化，Steam Machine未发售先涨价；《明末：渊虚之羽》玩家破500万但开发团队已解散、IP被400万欧元转手；D&D×魔兽世界设定书泄露，Gen Con 7月30日官宣在即；寂静岭f编剧被要求年读100-200本书。\n\n**日本现象级独游持续进击**\nMECCHA CHAMELEON推送3.3.0更新获2M浏览，该作本周刚因自定义地图藏毒登上安全新闻；另有SSX启发太空滑雪与点击式回合制格斗两款高概念独游曝光。详情请点击下方【当日速览】的条目跳转到对应推文。",
+ "digest": [
+  {
+   "id": "ai",
+   "text": "陈成实证：Claude Code系统提示词4.8砍81%、Opus 5回涨72%\nOpus 5单HTML油画世界：百万草叶风场模拟\nKarpathy式知识库：五层vault，worker可换vault是资产"
+  },
+  {
+   "id": "industry",
+   "text": "D&D×魔兽世界联动泄露：5版设定书\nSteam Machine未发售先涨价：元件危机恶化\n明末渊虚之羽破500万玩家，团队已解散\n寂静岭f编剧年读100-200本书"
+  },
+  {
+   "id": "indie",
+   "text": "MECCHA CHAMELEON 3.3.0更新：新角色ふくよか\nCarveOut 2160：SSX启发太空滑雪\nReypunk：点击式回合制清版格斗"
+  },
+  {
+   "id": "tools",
+   "text": "Modrinth实例分享+更新推送\nPixelGPT-24x24-20K像素数据集免费发布"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "陈成 · 技术验证",
+     "tags": [
+      "Claude Code",
+      "Opus 5",
+      "系统提示词",
+      "实测"
+     ],
+     "title": "陈成抓包验证「删80%系统提示词」：删是在4.8删的，Opus 5反而回涨72%",
+     "en_title": "Anthropic 说他们为 Opus 5 删掉了 Claude Code 80% 的系统提示词。我想验证下是不是。于是把 CLI 指向本地一个小服务器，抓它真正发出去的东西。",
+     "full_text": "Anthropic 说他们为 Opus 5 删掉了 Claude Code 80% 的系统提示词。\n\n我想验证下是不是。于是把 CLI 指向本地一个小服务器，抓它真正发出去的东西。\n\n第一组数字就不太对。\n\nOpus 4.7：15,225 字符。\nOpus 4.8：4,467。\nOpus 5：7,694。\n\n他们是在 4.8 上删的，不是 5。Opus 5 的系统提示词比上一代大了 72%。\n\n那 80% 确实是真的。每个版本里都同时带着两套 prompt，一个函数决定发哪套。判定条件是硬编码的子串匹配：model id 含 sonnet、haiku、claude-3-，或者等于 opus-4-0/4-1/4-5/4-6/4-7，走旧的。4.8 不在名单上。\n\n只数手写的那几节策略正文，旧路径 12,443 字符，新路径 2,308。-81%。\n\n删掉的是这几节：\n\n# Doing tasks（3,321 字符）\n# Executing actions with care（3,585）\n# Text output（1,701）\n# System（1,627）\n# Using your tools（752）\n# Tone and style（557）\n\n换成一节 # Harness，1,702 字符，五条。这五条讲的全是环境长什么样，没有一条在规定该怎么做。markdown 会在终端里渲染，被拒绝的工具调用意味着用户说了不。\n\n整套写注释的规矩，「默认不写注释」「绝不写多段 docstring」，只剩一句：\n\n\"Write code that reads like the surrounding code: match its comment density, naming, and idiom.\"\n\n这个开关也支持用户手动控制。CLAUDE_CODE_SIMPLE_SYSTEM_PROMPT=1 能把短 prompt 套到任何模型上。我在 Opus 4.5 上试了一次，拿到的东西和 4.8 实际收到的逐字相同，只差写模型名和知识截止日期的那两行。\n\n没料到的是 Opus 5 又开始往回加。\n\n# Delivering work（2,019 字符）和 # Corrections（1,736），两段新内容，2.1.215 和 2.1.216 里完全没有。它们出现在 2.1.220，挂在一个 capability 上，而这个 capability 只有 claude-opus-5 有。4,467 加这两段，基本就是 Opus 5 的全部差值。\n\n更巧的是 # Corrections 这一段。Anthropic 自己打包了一份 Opus 5 迁移指南，让第三方开发者往自己的 agent 里抄一段进去，抄的就是它，逐字相同。指南给的理由是 Opus 5 \"flags and explains its own earlier mistakes at length, which reads as thrash in a user-facing product.\"\n\nFable 5 走的是第三条路，多一节 # Communicating with the user，8,911 字符。\n\n所以「模型越强越不需要规则」这个说法不太站得住。删是上一代就删完的。换了新模型，翻车的方式也换了，规则就跟着变成一小块补丁，按模型贴。\n\n如果你在这上面做东西，还有两件事。\n\nmodel id 没被识别，走的又是 Bedrock、Vertex 或者自定义 base URL，就掉回那套 15K 的旧 prompt。它查的是你的 provider，不只是模型。\n\n同一个开关也在分流工具描述。53,328 字符降到 37,167。你的上下文大头根本不在 system prompt 里。\n\n想自己验？可以写个小 HTTP 服务，把 response 存下来，直接返 400。把 ANTHROPIC_BASE_URL 指过去，然后 claude -p \"hi\" --model 模型id。\n\nAnthropic 删自己的规则我没什么感觉。难受的是我也写过一堆同样的规则，其中不少大概只是在替模型兜底，而它早就不需要人兜了。哪些是，我分不出来，只能一条条删掉看会不会坏。\n\n@trq212 的原帖值得读全文。",
+     "author": "chenchengpro",
+     "date": "2026-07-26",
+     "likes": 192,
+     "views": 57256,
+     "link": "https://x.com/chenchengpro/status/2081339012632215684",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOJmUAnbgAAFWJ8.jpg"
+     },
+     "summary": "陈成把Claude Code CLI指向本地服务器抓包验证：Opus 4.7系统提示词15,225字符、4.8降至4,467（手写策略正文从12,443砍到2,308，-81%）、Opus 5又回涨到7,694（+72%）。4.8删除了6节行为规则，换成一节1,702字符的# Harness——只描述环境长什么样，不规定该怎么做。Opus 5新增的# Delivering work与# Corrections两节中，后者与官方迁移指南让第三方抄进自己agent的段落逐字相同。工具描述也从53,328字符降到37,167。他的结论：「模型越强越不需要规则」站不住脚——规则只是变成了按模型贴的小补丁。",
+     "analysis": "这是对Claude Code prompt工程最硬核的第三方实证：Anthropic从「规定行为」转向「描述环境」，再按模型能力回贴补丁。写agent的人该检查自己的规则有多少是在替模型兜底——如他所说，「只能一条条删掉看会不会坏」。另一个实操提醒：model id没被识别或走Bedrock/Vertex/自定义base URL时会掉回15K的旧prompt。",
+     "recommendation": "抓包实证：Claude Code砍掉的6节规则换成1节环境描述，Opus 5又回贴两节补丁",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Lentils · AI演示",
+     "tags": [
+      "Opus 5",
+      "程序化生成",
+      "HTML"
+     ],
+     "title": "Opus 5单个HTML文件生成油画风世界——数百万草叶的风场模拟全部程序化",
+     "en_title": "Claude Opus 5 made this beautiful painterly world in a single HTML file, everything made procedurally",
+     "full_text": "Claude Opus 5 made this beautiful painterly world in a single HTML file, everything made procedurally\n\nIt implemented a realistic grass and wind field simulation so that the millions of grass blades on-screen react to the wind https://t.co/qdjrhZFx0X",
+     "author": "Lentils80",
+     "date": "2026-07-25",
+     "likes": 3474,
+     "views": 194722,
+     "link": "https://x.com/Lentils80/status/2081136109778538917",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2081133656869920768/img/rqohnp8SuyybjtMd.jpg",
+      "video_url": "https://x.com/Lentils80/status/2081136109778538917/video/1"
+     },
+     "summary": "开发者Lentils展示：Claude Opus 5在单个HTML文件中生成油画风格世界，全部程序化构建，并实现了真实草地风场模拟——屏幕上数百万草叶会随风摆动。",
+     "analysis": "单文件、零资源依赖的程序化世界是模型图形理解力的直观秀场——这类demo的传播力本身就是对「AI能否做美术」争论的持续回答。结合前一天的四模型物理测试，Opus 5的图形/空间能力已成社区共识。",
+     "recommendation": "Opus 5一发入魂：单HTML油画世界，百万草叶随风摆动全程序化",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Machina · AI工作流",
+     "tags": [
+      "知识库",
+      "Karpathy",
+      "agent",
+      "Obsidian"
+     ],
+     "title": "Karpathy式「知识库」实践：把所有业务决策沉淀成模型秒读的vault——worker可换，vault是资产",
+     "en_title": "Andrej Karpathy, co-founder of OpenAI, pretty much invented the modern concept of \"knowledge base\"",
+     "full_text": "i simply can't comprehend why everyone isn't building this yet...\n\nAndrej Karpathy, co-founder of OpenAI, pretty much invented the modern concept of \"knowledge base\"\n\nlet me explain to you what it means...\n\nyour offers, your ad angles, your content pipeline, the way you write, every decision you already made... all of it in one place any model can skim in seconds\n\n> build the vault in Obsidian, five notes deep: the offer, the client, the voice, the playbooks, the rulings\n\n> hand each worker only its slice, the writer gets the voice note, the outreach worker gets the client note, nobody loads the whole thing\n\n> every correction you make becomes one line in the rulings note, and every worker reads it before starting, so you fix a thing once instead of forever\n\nthe workers are interchangeable... the vault is the business\n\nthe full system is in the article below:",
+     "author": "EXM7777",
+     "date": "2026-07-25",
+     "likes": 1184,
+     "views": 160809,
+     "link": "https://x.com/EXM7777/status/2081092390660792604",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2081092371601866752/img/9G2GRmuGy38kJkT8.jpg",
+      "video_url": "https://x.com/EXM7777/status/2081092390660792604/video/1"
+     },
+     "summary": "作者阐述Karpathy提出的现代「知识库」概念：把你的报价、广告角度、内容管线、写作方式、所有做过的决策放进一个模型几秒钟就能读完的地方。具体做法：在Obsidian建五层vault（报价/客户/声音/打法/判例），每个worker只拿自己那片（文案拿声音笔记、外联拿客户笔记，没人加载全量）；每次修正沉淀为判例笔记里的一行，worker开工前必读——一件事只修一次而不是永远修下去。worker可以替换，vault才是业务本身。",
+     "analysis": "当agent成为执行层，公司的核心资产从「人脑里的经验」变成「模型可读的判断库」——与陈成的skill实践互为印证：组织知识工程化是AI落地的同一件事，判例库（rulings）的设计尤其值得学习。",
+     "recommendation": "Karpathy式知识库：五层vault喂给worker，每次修正沉淀为一行判例"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "行业动态 01",
+     "source": "PC Gamer · 泄露",
+     "tags": [
+      "D&D",
+      "魔兽世界",
+      "联动",
+      "Gen Con"
+     ],
+     "title": "D&D×魔兽世界联动泄露：Roll20新闻稿秒删——将推出5版魔兽设定书",
+     "en_title": "A crossover between Dungeons & Dragons and World of Warcraft has leaked",
+     "full_text": "A crossover between Dungeons &amp; Dragons and World of Warcraft has leaked https://t.co/7AVB97O2Hk",
+     "author": "pcgamer",
+     "date": "2026-07-26",
+     "likes": 160,
+     "views": 81017,
+     "link": "https://x.com/pcgamer/status/2081172157112217814",
+     "media": null,
+     "summary": "虚拟桌面平台Roll20一篇已被删除的新闻稿泄露：D&D将与魔兽世界联动，推出至少一本5版规则下的魔兽设定书（规格类似此前万智牌世界的联动书）。Gen Con（7月30日-8月2日）将由BG3中Wyll的演员Theo Solomon主持keynote并带来一系列官宣。这并非双方首次结缘——D&D 3版时代曾有官方WoW RPG。",
+     "analysis": "桌游与电子游戏的IP互相导流正成为常态：BG3让D&D尝到电子游戏反哺的甜头后，WoW设定书是威世智把流量闭环补回桌游侧的必然一步。",
+     "recommendation": "D&D 5版将出魔兽世界设定书——Roll20泄露稿被撤，Gen Con 7月30日官宣",
+     "featured": true,
+     "game_ref": "World of Warcraft"
+    },
+    {
+     "idx": "行业动态 02",
+     "source": "Eurogamer · 硬件",
+     "tags": [
+      "Steam Machine",
+      "Valve",
+      "硬件",
+      "涨价"
+     ],
+     "title": "Steam Machine价格或进一步上涨——Valve：元件危机「仍在恶化」",
+     "en_title": "Steam Machine prices may go up further as the component crisis is \"still getting worse\"",
+     "full_text": "Steam Machine prices may go up further as the component crisis is \"still getting worse\". https://t.co/cUOKSqXPdO https://t.co/Ebw9ng7Kle",
+     "author": "eurogamer",
+     "date": "2026-07-26",
+     "likes": 63,
+     "views": 16260,
+     "link": "https://x.com/eurogamer/status/2081190538712150252",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOHfv9_WIAAdbwT.png"
+     },
+     "summary": "Eurogamer报道：Valve表示元件危机「仍在恶化」，尚未发售的Steam Machine价格可能进一步上涨。",
+     "analysis": "内存/存储涨价周期对游戏硬件的挤压正从边缘走向核心——连Valve都无法锁定成本，2026年硬件定价全线承压，这也会反过来影响玩家的主机升级周期预期与PC配置换代节奏。",
+     "recommendation": "元件危机继续恶化，Steam Machine还没发售就要再涨价",
+     "featured": true
+    },
+    {
+     "idx": "行业动态 03",
+     "source": "Eurogamer · 销售数据",
+     "tags": [
+      "明末",
+      "Wuchang",
+      "505 Games",
+      "销量"
+     ],
+     "title": "《明末：渊虚之羽》玩家破500万——开发团队解散后游戏仍在增长",
+     "en_title": "Wuchang: Fallen Feathers tops 5 million players despite dev team's collapse",
+     "full_text": "Wuchang: Fallen Feathers tops 5 million players despite dev team's collapse\nhttps://t.co/hZiTN35KSB https://t.co/sb56uHsKsQ",
+     "author": "eurogamer",
+     "date": "2026-07-26",
+     "likes": 8,
+     "views": 3337,
+     "link": "https://x.com/eurogamer/status/2081396504141389955",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOKbAorWMAAaOBV.jpg"
+     },
+     "summary": "国产武侠动作游戏《明末：渊虚之羽》玩家数突破500万。今年3月其销量已破100万，此后开发商灵泽科技核心团队因高层离职解散，游戏自2025年11月20日起再无更新，Steam评价为「褒贬不一」。IP已于4月被意大利发行商Digital Bros以约400万欧元收购，制作人夏思源已组建新工作室。",
+     "analysis": "「游戏活着、团队没了」的奇异状态：500万玩家的存量资产与无人维护的内容未来形成反差——IP收购方买到的是用户基础，也是一个需要重建信任的社区。",
+     "recommendation": "明末渊虚之羽破500万玩家：工作室没了游戏还在卖，IP已被400万欧转手",
+     "game_ref": "Wuchang: Fallen Feathers"
+    },
+    {
+     "idx": "行业动态 04",
+     "source": "PC Gamer · 开发文化",
+     "tags": [
+      "Silent Hill",
+      "Konami",
+      "编剧",
+      "恐怖游戏"
+     ],
+     "title": "Silent Hill f制作人要求编剧团队每年读100-200本书",
+     "en_title": "Silent Hill f producer encouraged the game's writers to read '100-200 books a year'",
+     "full_text": "Silent Hill f producer encouraged the game's writers to read '100-200 books a year' https://t.co/o1pADx1TZP",
+     "author": "pcgamer",
+     "date": "2026-07-26",
+     "likes": 89,
+     "views": 35136,
+     "link": "https://x.com/pcgamer/status/2081364809648599291",
+     "media": null,
+     "summary": "PC Gamer报道：Silent Hill f制作人在开发期间鼓励编剧团队每年阅读100-200本书，以保证恐怖叙事的素材密度。",
+     "analysis": "顶级恐怖内容的输入强度被量化了出来——叙事团队的阅读量KPI在游戏业并不常见，这也部分解释了Silent Hill f文本质感的来源。对叙事驱动团队是可参照的队伍建设标准。",
+     "recommendation": "寂静岭f编剧被要求年读100-200本书——恐怖叙事的输入量决定输出"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "LEMORION · 官方更新",
+     "tags": [
+      "MECCHA CHAMELEON",
+      "日本独游",
+      "版本更新"
+     ],
+     "title": "《めっちゃカメレオン》3.3.0更新上线：新角色「ふくよか」登场——48K赞的日本现象级独游",
+     "en_title": "《めっちゃカメレオン》アップデート3.3.0が配信されました。✅新キャラクター｢ふくよか｣を追加",
+     "full_text": "《めっちゃカメレオン》\nアップデート3.3.0が配信されました\n\n✅新キャラクター｢ふくよか｣を追加 https://t.co/jzWZi8hdrc",
+     "author": "lemorion1224",
+     "date": "2026-07-26",
+     "likes": 48416,
+     "views": 2094021,
+     "link": "https://x.com/lemorion1224/status/2081338425542951292",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOJmQ_ybwAAUMNH.jpg"
+     },
+     "summary": "日本独立开发者LEMORION的变色龙游戏《めっちゃカメレオン》（MECCHA CHAMELEON）推送3.3.0更新，新增角色「ふくよか」，更新公告获48K赞、超200万浏览。该作本周刚因自定义地图被植入恶意软件登上安全新闻。",
+     "analysis": "",
+     "recommendation": "日本现象级独游MECCHA CHAMELEON更新3.3.0——2M浏览，刚因地图藏毒上新闻",
+     "featured": true,
+     "game_ref": "MECCHA CHAMELEON",
+     "enrichment": {
+      "game_name": "MECCHA CHAMELEON",
+      "genre": "休闲",
+      "developer": "lemorion_1224",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥ 22.10",
+      "release_date": "已发售 · 2026 年 6 月 9 日",
+      "steam_rating": "66582 reviews",
+      "steam_url": "https://store.steampowered.com/app/4704690",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1785107783",
+      "youtube_video": null,
+      "description": "把自己涂满颜色，融入背景吧！《Meccha Chameleon》是一款全新感觉的捉迷藏游戏，玩家需要在自己纯白的身体上绘图以拟态成关卡中的样子。躲藏地点、姿势，以及最重要的“画功”是生存的关键。用连变色龙都自愧不如的技术欺骗追捕者的眼睛，在时限内逃出生天吧！您还可以轻松享受随机匹配或观众参与型直播。\n\n【核心玩法】以变色龙为主角的日本独立游戏，标志性的「变色」机制与可爱的角色设计是核心卖点，3.3.0版本新增角色「ふくよか」。\n\n【社区热度】更新公告即获48K赞、200万+浏览——在日本独立游戏中属于现象级的社区规模，衍生创作（二创、同人）活跃。\n\n【本周插曲】该作刚因一张自定义地图被植入恶意软件登上安全新闻（加载地图会静默写入PowerShell脚本）——UGC生态繁荣的另一面是安全审核压力。\n\n【优势】角色驱动的强社区粘性；持续版本更新维持热度；自定义地图生态延长了生命周期。\n【不足】主要热度集中在日本社区，全球市场渗透有限。\n\n【综合】个人开发者凭角色力做到200万浏览的样本——「可爱角色+UGC生态」是日本独游的成熟打法。",
+      "why_notable": "单条更新公告2M浏览48K赞，日本个人开发者的角色运营天花板"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Indie Game Joe · 新游制作中",
+     "tags": [
+      "滑雪",
+      "竞速",
+      "多人",
+      "新游制作中"
+     ],
+     "title": "CarveOut 2160：SSX启发的太空单板滑雪——抓钩+火箭推进器，4人分屏8人在线",
+     "en_title": "This indie dev is making a snowboarding game inspired by SSX but in space",
+     "full_text": "This indie dev is making a snowboarding game inspired by SSX but in space\n\n- Boost to take down rivals or smash into shortcuts\n- Use grappling hooks and rocket thrusters\n- Splitscreen for 4, online for 8\n\nIt's called CarveOut 2160. Would you play this? https://t.co/kBXcZAnLz5",
+     "author": "IndieGameJoe",
+     "date": "2026-07-25",
+     "likes": 5355,
+     "views": 312040,
+     "link": "https://x.com/IndieGameJoe/status/2081015488897855883",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2081015206017208320/img/O_LPtzzA3mFxv73a.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2081015488897855883/video/1"
+     },
+     "summary": "开发中的太空单板滑雪游戏：SSX式手感，可加速冲撞对手或撞开捷径，配抓钩与火箭推进器，支持4人分屏与8人在线。",
+     "analysis": "",
+     "recommendation": "CarveOut 2160：太空版SSX滑雪——加速撞飞对手抢捷径，312K浏览",
+     "featured": true,
+     "game_ref": "CarveOut 2160",
+     "enrichment": {
+      "game_name": "CarveOut 2160",
+      "genre": "动作 / 独立 / 竞速",
+      "developer": "byteparrot",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "即将宣布",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4429320",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4429320/03309feaf289d5c2c196a74ffacfba11eddfa029/header.jpg?t=1784796794",
+      "youtube_video": null,
+      "description": "《Carveout 2160》是一款以全宇宙最危险赛事为核心的单板滑雪游戏！因为这场锦标赛不在地球上举行！通过高风险特技赚取加速能量，利用它冲入捷径或撞飞对手，让自己穿梭于行星之间，登上冠军领奖台！\n\n【核心玩法】SSX启发的太空单板滑雪：低重力环境下的大跳台、花哨空中技巧，滑行的速度感是核心体验。\n\n【对抗设计】不只是竞速——可以用加速冲撞对手，或撞开隐藏捷径；抓钩与火箭推进器扩展了路线选择的维度。\n\n【多人配置】4人本地分屏+8人在线，明显冲着聚会与好友同乐场景设计。\n\n【优势】SSX这一经典IP多年无正统续作，情怀空档明显；太空设定让物理夸张化合理化。\n【不足】尚处开发早期；竞速品类的手感打磨是生死线。\n\n【综合】312K浏览证明了「太空版SSX」这一句话概念的吸引力——经典玩法记忆+新皮相的组合拳。",
+      "why_notable": "SSX精神续作的太空版本，312K浏览验证经典玩法的情怀空档"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Indie Game Joe · 新游制作中",
+     "tags": [
+      "清版格斗",
+      "回合制",
+      "手绘",
+      "新游制作中"
+     ],
+     "title": "Reypunk：点击式回合制清版格斗——规划每一拳，再实时回放整场打斗",
+     "en_title": "This indie dev is making a point-and-click beat 'em up with a unique turn-based combat system",
+     "full_text": "This indie dev is making a point-and-click beat 'em up with a unique turn-based combat system. This is so clever!\n\n- Plan every punch by pointing and clicking\n- Watch the fight play back in real time\n- Hand-drawn graphics\n\nIt's called Reypunk. Would you play this? https://t.co/khECyLmHxl",
+     "author": "IndieGameJoe",
+     "date": "2026-07-25",
+     "likes": 1829,
+     "views": 105549,
+     "link": "https://x.com/IndieGameJoe/status/2081092747738452453",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2081001975353614338/img/ENXIm7XKJI_lOg97.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2081092747738452453/video/1"
+     },
+     "summary": "开发中的点击式清版格斗：用指点点击规划每一拳的回合制战斗系统，规划完成后实时回放整场打斗，手绘美术风格。",
+     "analysis": "",
+     "recommendation": "Reypunk：用点击规划每一拳的回合制格斗，手绘美术+实时回放",
+     "game_ref": "Reypunk",
+     "enrichment": {
+      "game_name": "Reypunk",
+      "genre": "清版格斗 / 回合制策略 / 手绘",
+      "developer": "独立开发者",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【核心玩法】点击式回合制清版格斗：不拼反应拼规划——用鼠标指点安排好每一拳的动作，确认后整场打斗以实时方式回放出来。\n\n【机制创新】把清版格斗（ Final Fight、怒之铁拳）的即时操作替换为回合规划，同一套拳脚美学、完全不同的决策节奏——类似「格斗版Into the Breach」的思路。\n\n【美术风格】手绘画面，动作帧的表现力是卖点之一。\n\n【优势】机制组合罕见且有记忆点；回合制让格斗游戏的策略面被放大。\n【不足】规划-回放的节奏可能削弱格斗的爽感反馈，手感与反馈循环需要精细调校。\n\n【综合】清版格斗品类的机制解构实验，105K浏览。",
+      "why_notable": "清版格斗×回合制的机制解构，规划-回放的新决策节奏"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Modrinth · 平台功能",
+     "tags": [
+      "Modrinth",
+      "Minecraft",
+      "模组",
+      "分享"
+     ],
+     "title": "Modrinth App上线实例分享：一键把整合包发给朋友，后续更新可推送",
+     "en_title": "Sharing content has been one of the most requested features for Modrinth App. You can finally share an instance directly with friends and push updates as it changes!",
+     "full_text": "Sharing content has been one of the most requested features for Modrinth App. \n\nYou can finally share an instance directly with friends and push updates as it changes! https://t.co/KOMbVmHswn",
+     "author": "modrinth",
+     "date": "2026-07-26",
+     "likes": 2541,
+     "views": 95346,
+     "link": "https://x.com/modrinth/status/2081237127841636792",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2081237065098993664/img/EHWCO-q3L3-GFrwq.jpg",
+      "video_url": "https://x.com/modrinth/status/2081237127841636792/video/1"
+     },
+     "summary": "Minecraft开源模组平台Modrinth为App上线呼声最高的功能：实例（整合包）直接分享给好友，并可在内容变更时推送更新。",
+     "analysis": "整合包分发的最后一公里被打通——模组平台从「仓库」向「社交分发」演进。对任何做UGC内容分发的团队，这个「分享+持续同步」的模型都有参考价值。",
+     "recommendation": "Modrinth最想要的功能来了：实例分享给好友，更新可推送"
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "unstonio · 数据集发布",
+     "tags": [
+      "数据集",
+      "像素画",
+      "PixelGPT",
+      "开源"
+     ],
+     "title": "PixelGPT-24x24-20K：2万张原生像素精灵数据集免费开放——带标注带训练划分",
+     "en_title": "Releasing a free dataset behind PixelGPT: PixelGPT-24x24-20K. 20000 native 24×24 pixel-art sprites, captions + categories, train/val/test splits",
+     "full_text": "Releasing a free dataset behind PixelGPT:\n\nPixelGPT-24x24-20K    \n\n20000 native 24×24 pixel-art sprites\n• captions + categories\n• train / val / test splits\n• rebalanced from the original 218K dataset\n\nhttps://t.co/xjl8NHr0iU https://t.co/otLz9POymA",
+     "author": "unstonio",
+     "date": "2026-07-25",
+     "likes": 338,
+     "views": 17358,
+     "link": "https://x.com/unstonio/status/2081122838098919751",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOGiHnxXgAAb8e7.jpg"
+     },
+     "summary": "作者免费开放PixelGPT背后的数据集：2万张原生24×24像素精灵图，附带文字标注与分类，训练/验证/测试集已切分，从原218K数据集中重新平衡而来。",
+     "analysis": "小规格像素数据是训练游戏资产模型的稀缺资源——原生24×24而非缩放素材对保真度至关重要，做像素AI生成的团队可直接取用。",
+     "recommendation": "免费像素数据集：2万张24×24带标签精灵图，训练/验证/测试已切分"
+    }
+   ]
+  }
+ ]
+}
