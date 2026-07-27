@@ -5,6 +5,8 @@
 
 线上地址：`https://xmonitor.doc.nie.netease.com/competitor-weekly/`
 
+> **用 AI Agent 更新数据的同事请直接把 `AGENT.md` 发给 Agent 阅读**，它包含完整的数据格式、前端调用对照表与 pull/push 纪律。
+
 ---
 
 ## 一、目录结构
