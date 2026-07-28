@@ -375,6 +375,9 @@
     @media(max-width:680px){
       /* 异动卡小字：移动端取消两行截断，显示全文 */
       .p-concl{display:block;-webkit-line-clamp:unset;-webkit-box-orient:initial;overflow:visible}
+      /* 移动端无页面跳转需求，隐藏冻结顶栏 */
+      .topbar{display:none}
+      .hero{padding-top:24px}
       /* 数据表格：列宽与防乱换行调优 */
       .data-table{min-width:700px}
       .data-table th{height:auto;padding:10px 8px;font-size:11px;letter-spacing:0;vertical-align:bottom;white-space:nowrap}
