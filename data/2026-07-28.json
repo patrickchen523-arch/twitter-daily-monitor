@@ -1,0 +1,483 @@
+{
+  "date": "2026-07-28",
+  "meta": {
+    "raw_count": 245,
+    "filtered_count": 217,
+    "selected_count": 12,
+    "note": "AI 3, Industry 4, Indie 4, Tools 1",
+    "crawl_time": "2026-07-28 11:30"
+  },
+  "lede": "Xbox全服务宕机连光盘游戏都无法启动，数字所有权争论再添实锤；玩家发起#PSBlackout一周断网抗议索尼停售光碟；Kimi K3开放权重上线Vercel，黄仁勋X首帖声援开放模型公开信。",
+  "editors_pick": [
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "可爱画风×诡异实验室的反差恐怖CALL OF CUTIE——1.65万赞149万浏览"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Xbox宕机连本地光盘游戏都启动不了，玩家：欢迎来到数字时代"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "微软发起开放权重公开信：NVIDIA/Google/OpenAI联署，黄仁勋X首帖声援"
+    }
+  ],
+  "daily_summary": "**全数字化的信任危机集中爆发**\nXbox全服务宕机，玩家连已下载游戏和光盘游戏都无法启动，Reddit热评\"欢迎来到数字时代\"；同一周玩家组织发起#PSBlackout，呼吁8月23-30日一周不登录、不游玩、不消费，抗议索尼2028年停售实体光碟。两大平台的服务韧性与DRM政策，正在把\"数字所有权\"从论坛议题推成行业级危机。\n\n**开放权重阵营集结，Kimi K3入场**\n微软发起《开放权重与美国AI领导力》公开信，NVIDIA、AMD、Google、OpenAI、Meta、GitHub等联署，黄仁勋注册X后的首条帖子即为声援；同日Kimi K3以\"世界最强开放权重模型\"身份上线Vercel AI Gateway，配套ZDR零数据保留协议。开放模型从开发者议题升级为产业与合规议题。\n\n**独游：反差美术与字面粉理双双出圈**\nCALL OF CUTIE靠可爱×恐怖的反差美术单条视频149万浏览；Critter Crosser的无限怪物配种被误认为AI生成，实为开发者手写300行脚本；Sandcastle把\"沙盒\"字面化，湿度压力决定沙堡存亡；4人协力弹幕roguelite《Pass the Fear》发售数日同接峰值2.29万。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
+  "digest": [
+    {
+      "id": "ai",
+      "text": "开放权重成产业议题：微软发起公开信，NVIDIA/Google/OpenAI联署，黄仁勋X首帖声援\nKimi K3开放权重上线Vercel AI Gateway，美国本土推理+ZDR零数据保留\nOpus 5花2小时290M token复刻《块魂》，还自行加了卡通渲染"
+    },
+    {
+      "id": "industry",
+      "text": "Xbox全服务宕机：数字与光盘游戏均无法启动，\"数字时代\"信任危机发酵\n玩家发起#PSBlackout：8月23-30日集体断网一周，抗议索尼停售光碟\n高通芯片涨价两位数百分比，Steam Frame发售前夕成本承压\nRE4重制1680万销量登顶本世代，Steam靠区域定价吃下34%收入"
+    },
+    {
+      "id": "indie",
+      "text": "CALL OF CUTIE：可爱×恐怖反差美术，日推1.65万赞149万浏览\nCritter Crosser：怪物无限配合，\"像AI\"其实是300行手写脚本\nSandcastle：最字面的沙盒游戏，湿度压力决定城堡存亡\nPass the Fear：4人协力弹幕roguelite，发售数日同接2.29万"
+    },
+    {
+      "id": "tools",
+      "text": "Unity MCP Server免费并取消并发限制，AI直接操作编辑器"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Vercel CEO · 行业政策",
+          "tags": [
+            "开放权重",
+            "公开信",
+            "NVIDIA",
+            "AI政策"
+          ],
+          "title": "微软发起开放权重公开信：NVIDIA/Google/OpenAI/Meta联署，黄仁勋X首帖声援",
+          "en_title": "Vercel proudly co-signs the Open Weights and American AI Leadership letter. Open weights are the logical next frontier",
+          "full_text": "Vercel proudly co-signs the Open Weights and American AI Leadership letter. \n\nOpen source, data, protocols & research enable the technological wonders we enjoy every day, enriching our lives and our world.\n\nOpen weights are the logical next frontier",
+          "author": "rauchg",
+          "date": "2026-07-27",
+          "likes": 1875,
+          "views": 174194,
+          "link": "https://x.com/rauchg/status/2081546513885622760",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HOMgCkNbIAAMnk9.jpg"
+          },
+          "summary": "Vercel CEO Guillermo Rauch宣布联署由微软发起的《开放权重与美国AI领导力》公开信，主张避免\"过早限制开放模型以扼杀竞争或将创新赶向海外\"。联署方包括NVIDIA、AMD、Cloudflare、Google、GitHub、IBM、Hugging Face、Meta、OpenAI等。黄仁勋注册X后的第一条帖子也是转发该信：\"世界既需要前沿闭源模型，也需要前沿开放模型\"。",
+          "analysis": "开放权重正从开发者社区议题升级为国家级产业政策议题，头部闭源厂商（OpenAI、Google）与芯片厂商（NVIDIA、AMD）站在同一阵营颇为罕见。对游戏从业者，开放模型意味着本地部署、私有数据合规与成本可控的AI工具链获得了政策层面背书。",
+          "recommendation": "微软发起开放权重公开信，黄仁勋X首帖声援——开放模型成产业共识",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Vercel CEO · 模型发布",
+          "tags": [
+            "Kimi K3",
+            "开放权重",
+            "Vercel",
+            "ZDR"
+          ],
+          "title": "Kimi K3开放权重上线Vercel AI Gateway：美国本土推理+ZDR零数据保留",
+          "en_title": "Kimi K3 is the most powerful open-weight model in the world. It's now available on @vercel AI Gateway",
+          "full_text": "Kimi K3 is the most powerful open-weight model in the world. It's now available on @vercel AI Gateway from 🇺🇸 USA-based inference providers at high availability & performance. We've signed ZDR (Zero-Data Retention) agreements, which you can enable for all your token traffic.",
+          "author": "rauchg",
+          "date": "2026-07-27",
+          "likes": 904,
+          "views": 58143,
+          "link": "https://x.com/rauchg/status/2081766163865088220",
+          "media": null,
+          "summary": "Rauch称月之暗面Kimi K3为\"当前世界最强开放权重模型\"，已通过美国本土推理服务商在Vercel AI Gateway上线，主打高可用与高性能；Vercel同时签署ZDR（Zero-Data Retention）协议，企业用户可为全部token流量开启零数据保留。Box CEO Aaron Levie同日确认\"The k3 weights have arrived\"。",
+          "analysis": "前沿开放权重模型进入美国主流云平台并配套企业级数据合规条款，游戏公司在生产工作流中采用开放模型的合规与稳定性门槛大幅降低。开放与闭源frontier之间的\"可用性差距\"正在快速收窄，工具链的多模型策略成为默认选项。",
+          "recommendation": "最强开放权重Kimi K3上线Vercel，美国本土推理+ZDR企业合规",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "开发者实测 · AI游戏生成",
+          "tags": [
+            "Opus 5",
+            "Three.js",
+            "块魂",
+            "AI生成游戏"
+          ],
+          "title": "Opus 5两小时290M token复刻《块魂》：NPC会逃跑，还自行加了卡通渲染",
+          "en_title": "I asked Opus 5 to build a Katamari clone. 2 hrs + 290M tokens later, I got this",
+          "full_text": "I asked Opus 5 to build a Katamari clone. \n\n2 hrs + 290M tokens later, I got this:\n\n- Game feel so good it's ridiculous\n- NPCs that actually run away when you're big\n- Quirky dialogue as a nod to the original\n- Cartoonish shaders (didn't ask for this, it just did it)\n\nAll HTML + Three.js \n\nIt's not perfect, but holy crap...",
+          "author": "kenyondigital",
+          "date": "2026-07-26",
+          "likes": 445,
+          "views": 57524,
+          "link": "https://x.com/kenyondigital/status/2081400084617392347",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2081399887749431296/img/z82kFSKygXGevcWQ.jpg",
+            "video_url": "https://x.com/kenyondigital/status/2081400084617392347/video/1"
+          },
+          "summary": "开发者Matt Kenyon让Opus 5克隆《块魂》（Katamari）：2小时、290M token产出纯HTML+Three.js可玩版本。成品游戏手感\"好得离谱\"，NPC会在玩家滚大后逃跑，保留原作的搞怪对话，甚至主动加入了未被要求的卡通渲染shader。",
+          "analysis": "从\"生成代码\"到\"生成游戏感\"，模型开始自主补全设计细节（镜头、shader、NPC行为反馈），经典玩法的可玩复刻已不需要引擎工程背景。不过290M token的成本量级也说明这类原型仍是高成本实验，离平民化的\"一句话做游戏\"还有距离。",
+          "recommendation": "Opus 5用2小时290M token做出块魂克隆，还自己加了卡通渲染"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 平台故障",
+          "tags": [
+            "Xbox",
+            "宕机",
+            "DRM",
+            "数字所有权"
+          ],
+          "title": "Xbox全服务宕机：数字版与光盘游戏均无法启动，\"数字时代\"信任危机发酵",
+          "en_title": "Xbox service is down, with outages meaning players can't play any digital or physical games, after similar PlayStation Network issues last week",
+          "full_text": "Xbox service is down, with outages meaning players can't play any digital or physical games, after similar PlayStation Network issues last week",
+          "author": "eurogamer",
+          "date": "2026-07-27",
+          "likes": 261,
+          "views": 35412,
+          "link": "https://x.com/eurogamer/status/2081733917598425332",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HOPN3I9XsAAdGiT.jpg"
+          },
+          "summary": "7月27日Xbox账户档案、商店订阅、游戏与App服务集体报\"重大故障\"：玩家无法登录、查看游戏库，已下载游戏、光盘游戏乃至向下兼容游戏均无法启动；而就在上周PSN刚发生类似故障。Reddit热评集中开火：\"为什么服务器宕机我连本地离线游戏都玩不了\"\"没有实体的未来看起来很黑暗\"。GameSpot、Polygon同步报道。",
+          "analysis": "主机\"永远在线\"DRM在宕机时连本地光盘都无法启动，恰好为索尼停售光碟引发的数字所有权争论提供了最直观的反面教材。平台推动全数字化的同时，服务韧性正成为玩家信任的核心变量——这次宕机发生在Xbox大裁员后品牌重建期，时机格外糟糕。",
+          "recommendation": "Xbox宕机连光盘游戏都启动不了，数字所有权争论再添实锤",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 玩家抗议",
+          "tags": [
+            "PlayStation",
+            "PSBlackout",
+            "实体光碟",
+            "玩家运动"
+          ],
+          "title": "玩家发起#PSBlackout：8月23-30日集体断网一周，抗议索尼停售实体光碟",
+          "en_title": "Will you power down your PS5 for a week in protest of Sony's all-digital future? A new petition encourages you to pull the plug on PlayStation",
+          "full_text": "Will you power down your PS5 for a week in protest of Sony's all-digital future? A new petition encourages you to pull the plug on PlayStation",
+          "author": "eurogamer",
+          "date": "2026-07-27",
+          "likes": 387,
+          "views": 32309,
+          "link": "https://x.com/eurogamer/status/2081672658127651012",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HOOWPbcXIAA-8Pe.jpg"
+          },
+          "summary": "索尼宣布2028年1月终止PlayStation实体光碟的生产销售后，社区账号\"Does It Play?\"发起#PSBlackout行动：呼吁玩家在8月23日至30日一周内不登录、不游玩、不在索尼平台消费，用平台最在意的\"活跃参与玩家\"指标施压。声明同时点名Bluepoint工作室关闭、live-service战略失误、PSVR2被放弃等积怨，称停售光碟是\"压垮骆驼的稻草\"。",
+          "analysis": "玩家抗议从请愿签名升级为\"经济指标罢工\"，直接瞄准平台财报最看重的参与度数据。无论最终参与规模如何，这都将成为厂商评估实体媒介民意价值的罕见量化样本；对索尼而言，在停售决定生效前的18个月里，类似抗议只会持续加码。",
+          "recommendation": "玩家组织#PSBlackout一周不登录不消费，用参与度数据反击索尼",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "PC Gamer · 硬件成本",
+          "tags": [
+            "高通",
+            "Steam Frame",
+            "芯片涨价",
+            "Valve"
+          ],
+          "title": "高通芯片将涨价两位数百分比，Valve未发售的Steam Frame首当其冲",
+          "en_title": "Qualcomm is reportedly raising its prices soon",
+          "full_text": "Qualcomm is reportedly raising its prices soon",
+          "author": "pcgamer",
+          "date": "2026-07-27",
+          "likes": 44,
+          "views": 26709,
+          "link": "https://x.com/pcgamer/status/2081706803264696549",
+          "media": null,
+          "summary": "据PC Gamer报道，高通即将上调芯片价格，涨幅为两位数百分比。Valve尚未发售的无线VR头显Steam Frame采用骁龙8 Gen 3，成本将直接承压。Valve此前承诺Steam手柄、Steam Machine、Steam Frame硬件三件套在\"夏季结束前\"发售，按此计算窗口仅剩约一个月。",
+          "analysis": "内存危机未平、SoC又涨价，2026年游戏硬件的成本压力正从存储蔓延到主芯片。Valve面前只有两条路：涨价转嫁（Steam Machine此前已因元件危机调整定价预期），或压缩本已微薄的硬件利润——\"夏季末发售\"承诺与成本控制越来越难兼得。",
+          "recommendation": "高通芯片涨价两位数，Steam Frame发售窗口仅剩一个月成本承压"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 市场数据",
+          "tags": [
+            "生化危机4",
+            "Alinea",
+            "销量",
+            "Steam长尾"
+          ],
+          "title": "Alinea：RE4重制1680万销量登顶本世代重制游戏，Steam长尾吃下34%收入",
+          "en_title": "Resident Evil 4 is by far and away the best-selling remake on this console generation, new analysis reveals",
+          "full_text": "Resident Evil 4 is by far and away the best-selling remake on this console generation, new analysis reveals",
+          "author": "eurogamer",
+          "date": "2026-07-27",
+          "likes": 76,
+          "views": 8817,
+          "link": "https://x.com/eurogamer/status/2081701905676615699",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HOOwl5macAAf1vl.jpg"
+          },
+          "summary": "市场分析机构Alinea估算：《生化危机4重制版》累计销量1680万份，为PS5/XSX世代（2020年11月起）最畅销重制游戏——PS 740万、Steam 680万、Xbox 160万；总收入5.6亿美元（PS占53.1%、Steam 34.1%、Xbox 12.8%）。Steam首发日收入占比28%升至如今的34.1%，区域定价与季节性折扣驱动长尾，中国、巴西、俄罗斯均进销量前五地区。榜单其余：方舟生存飞升700万、TLOU Part 1 630万、湮灭重制450万、死亡空间重制430万。",
+          "analysis": "Steam的区域定价+折扣机制让单款3A重制在PC端获得超越主机的长尾收入曲线，低价区不是\"流失的收入\"而是实打实的前五市场。对发行商而言，重制版策略的ROI模型里，PC长尾的权重需要系统性上调。",
+          "recommendation": "RE4重制1680万销量登顶本世代，Steam靠区域定价吃下34%收入",
+          "game_ref": "Resident Evil 4",
+          "enrichment": {
+            "game_name": "Resident Evil 4 (Remake)",
+            "genre": "生存恐怖 / 第三人称射击",
+            "developer": "CAPCOM",
+            "platforms": [
+              "Steam",
+              "PS5",
+              "Xbox Series X/S",
+              "PS4"
+            ],
+            "price": "$9.99（Steam当前折扣价）",
+            "release_date": "已发售 · 2023年3月23日",
+            "steam_rating": "好评如潮（18万+条评价）",
+            "steam_url": "https://store.steampowered.com/app/2050650/Resident_Evil_4/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1772502922",
+            "youtube_video": null,
+            "description": "【核心玩法】第三人称越肩生存恐怖射击：里昂赴欧洲村庄营救总统女儿，体术+格挡小刀重构了原作战斗节奏，资源管理与背包整理乐趣保留。【重制思路】在忠于2005年原作骨架的基础上重做关卡节奏与恐怖氛围，被普遍视为\"重制教科书\"。【市场表现】Alinea估算累计1680万份、5.6亿美元收入，本世代最畅销重制；Steam占销量680万份，区域定价驱动长尾，中国进入销量前五地区。【优势】战斗系统现代化彻底；关卡密度与节奏无可挑剔；Steam长尾收入模型标杆。【不足】部分原作关卡（如岛屿段落）有精简；佣兵模式内容量少于原作。【综合】重制版商业与口碑双天花板，其PC长尾曲线是发行商制定重制策略的核心参考案例。",
+            "why_notable": "1680万销量中Steam靠区域定价与折扣吃下40%，验证3A重制在PC端的长尾收入模型"
+          }
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "ゲム之助 · 病毒传播",
+          "tags": [
+            "恐怖",
+            "解谜",
+            "反差美术",
+            "个人开发"
+          ],
+          "title": "CALL OF CUTIE：可爱皮恐怖骨，个人开发者实验室逃生恐怖冒险凭反差美术获149万浏览",
+          "en_title": "このアート不気味すぎでめちゃくちゃ好き 『CALL OF CUTIE』",
+          "full_text": "このアート不気味すぎでめちゃくちゃ好き\n\n『CALL OF CUTIE』",
+          "author": "dotpixel3d",
+          "date": "2026-07-26",
+          "likes": 16527,
+          "views": 1490861,
+          "link": "https://x.com/dotpixel3d/status/2081359274782118236",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2081358945697046529/img/oTPBQDxcoPGtDWoh.jpg",
+            "video_url": "https://x.com/dotpixel3d/status/2081359274782118236/video/1"
+          },
+          "summary": "日本独立游戏博主ゲム之助推荐个人开发者Jesse Kasdo的恐怖冒险《CALL OF CUTIE》：\"这美术太诡异了，超级喜欢\"。可爱标题与诡异实验室场景的强烈反差引发病毒传播，单条视频获1.65万赞、149万浏览。",
+          "analysis": "",
+          "recommendation": "CALL OF CUTIE：可爱×恐怖的反差美术，单条视频149万浏览",
+          "featured": true,
+          "game_ref": "CALL OF CUTIE",
+          "enrichment": {
+            "game_name": "CALL OF CUTIE",
+            "genre": "恐怖冒险 / 解谜",
+            "developer": "Jesse Kasdo（个人开发者）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4968940/CALL_OF_CUTIE/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4968940/b635db34e5913a0df534919603ee3386cd52e8d4/header.jpg?t=1785079721",
+            "youtube_video": null,
+            "description": "【核心玩法】单人恐怖冒险：舞台为巨大的恐怖实验室，探索黑暗走廊、解谜、与可怕敌人战斗并解救被困受害者；与搭档Bubbles一起选择自己的逃生路径。【美术与氛围】出圈点正在于反差——CUTIE式的可爱标题/角色与诡异掉SAN的实验室场景、怪物设计形成强烈冲突，日本玩家评价\"このアート不気味すぎ\"。【传播表现】无粉丝基础的个人开发者，凭一段视频获1.65万赞、149万浏览，愿望单转化潜力已被验证。【优势】美术记忆点极强，自带传播性；解谜+战斗+多路径的结构完整。【不足】个人项目体量与完成度待验证；发售时间未定，热度保鲜期有限。【综合】\"可爱×恐怖\"反差公式在《Hello Charlotte》《OMORI》后再添案例，是独立游戏低成本病毒传播的教科书样本。",
+            "why_notable": "个人开发者零投放凭美术反差获149万浏览，恐怖+可爱反差是独游低成本传播的有效公式",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "スチまと · 玩法创新",
+          "tags": [
+            "怪物收集",
+            "程序化生成",
+            "RPG",
+            "个人开发"
+          ],
+          "title": "Critter Crosser：宝可梦×DQM式无限配合，300行手写脚本被误认为\"最新AI\"",
+          "en_title": "『ポケモン』×『ドラクエモンスターズ』の無限配合で、全部ランダム生成って正気か？？？",
+          "full_text": "『ポケモン』×『ドラクエモンスターズ』の無限配合で、全部ランダム生成って正気か？？？\n\n捕まえたモンスターを片っ端から掛け合わせ、誰も見たことないバケモノを生み出してリアルタイムで戦わせるRPG。海外ニキが生成されるクリーチャーを見て「最新のAIか!?」と驚いてるが、実は開発者が自力で書いた300行のスクリプトで制御してる狂気の執念作。\n『Critter Crosser』",
+          "author": "stmatomato",
+          "date": "2026-07-26",
+          "likes": 2555,
+          "views": 354841,
+          "link": "https://x.com/stmatomato/status/2081212409860223237",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2081188530299310080/img/zCaR--TWxPnwtlhy.jpg",
+            "video_url": "https://x.com/stmatomato/status/2081212409860223237/video/1"
+          },
+          "summary": "スチまと推荐个人开发者Dan W的怪物收集RPG《Critter Crosser》：捕获的怪物可任意两两配种，生出谁也没见过的新怪物并实时战斗。海外玩家初见生成生物惊呼\"这是最新的AI吗\"，实际是开发者手写约300行脚本驱动的程序化生成。2555赞、35.5万浏览。",
+          "analysis": "",
+          "recommendation": "Critter Crosser：怪物两两无限配种，\"像AI\"其实是300行脚本",
+          "game_ref": "Critter Crosser",
+          "enrichment": {
+            "game_name": "Critter Crosser",
+            "genre": "RPG / 怪物收集养成",
+            "developer": "Dan W（个人开发者）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/2792320/Critter_Crosser/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2792320/header.jpg?t=1707511094",
+            "youtube_video": null,
+            "description": "【核心玩法】\"CROSSBREED ANYTHING\"——捕获的怪物任意两两配种，组合出从未存在过的新怪物，以爪牙乃至剑盾实时战斗；配种系统是宝可梦×《勇者斗恶龙怪兽篇》配合机制的无限化推演。【技术亮点】生成生物被海外玩家误认为\"最新AI\"，实为开发者手写约300行脚本控制的程序化生成：规则系统的涌现感做到了AI级惊喜，成本与可控性却远优。【对标定位】怪物收集养成赛道（宝可梦、DQM、Temtem）的差异化打法——用组合空间而非图鉴数量制造收集欲。【优势】组合空间近乎无限，\"晒自己的怪物\"是天然UGC传播点；脚本方案迭代成本低。【不足】未发售；生成怪物的美术统一性、战斗平衡性待验证。【综合】在AI生成内容泛滥的当下，\"手写规则做出看似AI的涌现感\"本身就是最好的营销故事。",
+            "why_notable": "300行脚本被误认为AI生成——精心设计的规则系统同样能制造涌现式惊喜，成本远低于AI方案",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Indie Game Joe · KOL推荐",
+          "tags": [
+            "物理模拟",
+            "休闲建造",
+            "禅系",
+            "沙堡"
+          ],
+          "title": "Sandcastle：史上最字面的\"沙盒\"游戏，湿度与压力决定沙堡存亡",
+          "en_title": "This indie dev is making the most literal sandbox game ever",
+          "full_text": "This indie dev is making the most literal sandbox game ever\n\n- Gather wet sand to raise towers, walls and moats\n- Sand crumbles or holds depending on moisture and pressure\n- Waves flow and gently erode your walls, like a real beach\n\nIt's called Sandcastle. Would you play this?",
+          "author": "IndieGameJoe",
+          "date": "2026-07-27",
+          "likes": 2111,
+          "views": 332187,
+          "link": "https://x.com/IndieGameJoe/status/2081635794218090528",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2081635748881801216/img/zdCME_IuaiKEZWDL.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2081635794218090528/video/1"
+          },
+          "summary": "Indie Game Joe推荐Bubblebird Studio的《Sandcastle》：\"史上最字面意义的沙盒游戏\"——收集湿沙起塔砌墙挖护城河，沙子依湿度与压力崩塌或成型，海浪如真实海滩般缓缓侵蚀作品。2111赞、33.2万浏览。",
+          "analysis": "",
+          "recommendation": "Sandcastle：最字面的沙盒游戏，湿度压力模拟沙堡存亡",
+          "featured": true,
+          "game_ref": "Sandcastle",
+          "enrichment": {
+            "game_name": "Sandcastle",
+            "genre": "休闲建造 / 物理模拟",
+            "developer": "Bubblebird Studio（发行：Future Friends Games）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/3216520/Sandcastle/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3216520/32a096d34be1472a135bf1cf2dfd60d1660f8f4a/header.jpg?t=1782917100",
+            "youtube_video": null,
+            "description": "【核心玩法】在热带沙滩上堆沙堡：收集湿沙起塔、砌墙、挖护城河，再用浮木、鹅卵石、贝壳、海藻装饰。沙子的湿度与压力决定结构崩塌还是立住；涨潮的海浪会缓缓冲刷侵蚀作品，如真实海滩。【机制亮点】把\"沙子物理\"做成核心机制——湿度/压力模拟既是建造约束也是玩法本身；海浪侵蚀创造\"无常\"的禅意循环，与《Townscaper》式无目标建造形成对照。【美术与氛围】暖色沙滩、柔和海浪，主打平静放松的禅系体验。【传播】\"字面沙盒\"的概念梗自带传播性，Indie Game Joe单条33.2万浏览；发行商Future Friends Games有《Slime Rancher 2》等多款病毒独游发行记录。【优势】题材差异化极强；物理模拟有技术壁垒；休闲赛道受众广。【不足】未发售，长期目标感与重复可玩性待验证。【综合】把meme级概念做成正经物理模拟，概念即梗、梗即传播的典型案例。",
+            "why_notable": "\"最字面的沙盒游戏\"——概念即传播，物理模拟把玩笑做成了玩法",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "Game*Spark · 市场黑马",
+          "tags": [
+            "弹幕STG",
+            "roguelite",
+            "4人协力",
+            "PCU"
+          ],
+          "title": "Pass the Fear：4人协力roguelite弹幕STG，发售数日同接峰值2.29万",
+          "en_title": "【最大4人協力】武器を改造してぶっ放せ！ローグライト弾幕STG『Pass the Fear』―配信開始数日で最大同接2万人超えで好調",
+          "full_text": "【最大4人協力】武器を改造してぶっ放せ！ローグライト弾幕STG『Pass the Fear』―配信開始数日で最大同接2万人超えで好調\n\n個性豊かなキャラクターたちを操作し道中で拾う特殊パーツやレリックの融合などをもとに武器カスタマイズ。怪物が増え続ける島から脱出を目指します。",
+          "author": "gamespark",
+          "date": "2026-07-27",
+          "likes": 1508,
+          "views": 171785,
+          "link": "https://x.com/gamespark/status/2081618437428973860",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2081616846806261760/pu/img/xoKjPx-L3NOpDjpD.jpg",
+            "video_url": "https://x.com/gamespark/status/2081618437428973860/video/1"
+          },
+          "summary": "Game*Spark报道PlayMud Studio开发、Paras Games发行的roguelite弹幕STG《Pass the Fear》：7月22日Steam发售，数日即录得22,901同接峰值（SteamDB），约千条评价\"非常好评\"。最多4人在线协力，武器通过零件、遗物融合、塔罗牌、属性效果深度定制。",
+          "analysis": "",
+          "recommendation": "Pass the Fear：4人协力弹幕roguelite，发售数日同接破2.29万",
+          "featured": true,
+          "game_ref": "Pass the Fear",
+          "enrichment": {
+            "game_name": "Pass the Fear",
+            "genre": "roguelite弹幕射击 / 动作",
+            "developer": "PlayMud Studio（发行：Paras Games）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "$17.09",
+            "release_date": "已发售 · 2026年7月22日",
+            "steam_rating": "非常好评（约1,186条评价）",
+            "steam_url": "https://store.steampowered.com/app/3561220/Pass_the_Fear/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3561220/75f77fc88eaf0226ebae317a94f05000164c5cc0/header.jpg?t=1784799208",
+            "youtube_video": null,
+            "description": "【核心玩法】roguelite弹幕STG：魔女灾厄在岛上形成\"风暴之壁\"，玩家扮演被困的恶魔猎人，在怪物潮中杀出血路逃出孤岛。最多4人在线协力；武器经特殊零件、遗物融合、塔罗牌、属性效果多方向构筑（弹数、单发火力、性能特化）。【Build深度】高难度下解锁\"混沌战痕\"系统：玩家获得恩惠的同时，敌人也会获得霸体与抗性加成的诅咒，风险收益对赌。【角色】铁桶骑士、爆炸狂少女、独眼老人等个性阵容。【市场表现】发售数日SteamDB同接峰值22,901，约千条评价\"非常好评\"，日区¥1,935（10%off至8月6日）。【优势】协力×弹幕×roguelite构筑的组合在纯街机弹幕外开出新赛道；武器融合构筑深度足。【不足】弹幕品类天花板有限，长线留存依赖内容更新节奏。【综合】7月独游黑马候补，首周2.3万同接证明协力roguelite弹幕有真实市场需求。",
+            "why_notable": "无IP小体量作品靠\"4人协力+弹幕+构筑\"组合首周冲至2.29万同接，协力roguelite品类红利仍在",
+            "pcu": "22,901（SteamDB，2026年7月）",
+            "current_players": "约2万（发售首周）",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "有数GI暂未收录（发售不足一周）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity官方 · 引擎工具",
+          "tags": [
+            "Unity",
+            "MCP",
+            "AI工作流",
+            "Unite Seoul"
+          ],
+          "title": "Unity宣布MCP Server完全免费并取消并发限制",
+          "en_title": "At Unite Seoul last week, we announced that MCP server is now free and there are no longer any limits to concurrency on the MCP server",
+          "full_text": "You asked, we listened 😉\n\nICYMI: At Unite Seoul last week, we announced that MCP server is now free and there are no longer any limits to concurrency on the MCP server.",
+          "author": "unitygames",
+          "date": "2026-07-27",
+          "likes": 88,
+          "views": 7531,
+          "link": "https://x.com/unitygames/status/2081754611384217704",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2081754595601092608/pu/img/nEt8C9wNk4bTzcaX.jpg",
+            "video_url": "https://x.com/unitygames/status/2081754611384217704/video/1"
+          },
+          "summary": "Unity官方在首尔Unite上宣布：MCP Server即日起完全免费，且不再限制并发数。MCP Server让Claude等AI助手可直接读写Unity编辑器（场景、资产、组件操作），是AI辅助Unity开发的关键基建。",
+          "analysis": "AI助手接入引擎编辑器的\"最后一公里\"被官方免费化，AI辅助Unity工作流从尝鲜配置走向默认配置。对小团队而言，引擎侧的AI自动化成本再降一档——配合本周Claude Code类工具的工作流接管趋势，引擎厂商的态度已从观望转为军备竞赛。",
+          "recommendation": "Unity MCP Server免费+取消并发限制，AI操作编辑器零门槛"
+        }
+      ]
+    }
+  ]
+}
