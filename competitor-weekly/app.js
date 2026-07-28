@@ -133,7 +133,8 @@
       $$('[data-detail]').forEach(b=>b.onclick=()=>openDetail(b.dataset.detail));
     }
     function renderOverviewTrend(){
-      const metric=state.overviewMetric,timeline=BASE_PERIOD_IDS.slice().sort(),W=980,H=320,P={l:62,r:20,t:22,b:42};
+      const metric=state.overviewMetric,timeline=BASE_PERIOD_IDS.slice().sort();
+      const cw0=$('#overviewChart')?.clientWidth||980,W=Math.max(280,Math.min(980,cw0)),H=W<600?240:320,P={l:W<600?44:62,r:W<600?16:20,t:22,b:42};
       const allSeries=Object.keys(META).map(id=>({id,points:timeline.map(pid=>({pid,item:PERIODS[pid].items.find(x=>x.id===id)})).filter(x=>x.item?.[metric]!=null)})).filter(x=>x.points.length>=2);
       if(state.overviewSelected===null){const priorityIds=period().items.filter(x=>isPriority(x,state.period)).map(x=>x.id).filter(id=>allSeries.some(s=>s.id===id));state.overviewSelected=priorityIds.length?priorityIds:allSeries.slice(0,3).map(s=>s.id)}
       const selected=new Set(state.overviewSelected),series=allSeries.filter(s=>selected.has(s.id));
@@ -146,7 +147,7 @@
       const ticks=[0,.25,.5,.75,1].map(t=>{const value=max*(1-t),yy=P.t+t*(H-P.t-P.b);return `<line x1="${P.l}" x2="${W-P.r}" y1="${yy}" y2="${yy}" stroke="#e3e8ef"/><text x="${P.l-10}" y="${yy+4}" text-anchor="end" font-size="9" fill="#7b8799">${Math.round(value).toLocaleString()}</text>`}).join('');
       const lines=series.map(s=>`<path d="${s.points.map((p,i)=>(i?'L':'M')+x(p.pid).toFixed(1)+','+y(p.item[metric]).toFixed(1)).join(' ')}" fill="none" stroke="${META[s.id].color}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>`).join('');
       const points=series.flatMap(s=>s.points.map(p=>{const impact=priorityImpact(p.item,p.pid),marked=impact&&impact.label.startsWith(metric==='flow'?'流水':'DAU'),cx=x(p.pid),cy=y(p.item[metric]);return `<g class="overview-point" data-overview-product="${s.id}" data-overview-period="${p.pid}" tabindex="0" role="button" aria-label="${esc(META[s.id].name+' '+reportById(p.pid).label)}">${marked?`<circle cx="${cx}" cy="${cy}" r="8" fill="none" stroke="#f04438" stroke-width="2"/>`:''}<circle cx="${cx}" cy="${cy}" r="4" fill="${META[s.id].color}" stroke="#fff" stroke-width="2"/></g>`})).join('');
-      const labels=timeline.map(pid=>`<text x="${x(pid)}" y="${H-15}" text-anchor="middle" font-size="9" fill="${pid===state.period?'#152033':'#77859b'}" font-weight="${pid===state.period?'700':'400'}">${reportById(pid).label.replace(/^20\d\d\./,'').replace('—','-')}</text>`).join('');
+      const labels=timeline.map(pid=>{const full=reportById(pid).label.replace(/^20\d\d\./,'').replace('—','-');return `<text x="${x(pid)}" y="${H-15}" text-anchor="middle" font-size="9" fill="${pid===state.period?'#152033':'#77859b'}" font-weight="${pid===state.period?'700':'400'}">${W<600?full.split('-')[0]:full}</text>`}).join('');
       $('#overviewChart').innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="多竞品${metric==='flow'?'流水':'DAU'}趋势图">${ticks}${lines}${points}${labels}</svg>`;
       const available=(state.overviewPoint&&series.some(s=>s.id===state.overviewPoint.id&&s.points.some(p=>p.pid===state.overviewPoint.pid)))?state.overviewPoint:null;
       if(!available){const currentMarked=series.flatMap(s=>s.points.map(p=>({id:s.id,...p}))).find(p=>p.pid===state.period&&priorityImpact(p.item,p.pid)?.label.startsWith(metric==='flow'?'流水':'DAU'));const fallback=currentMarked||{id:series[0].id,...series[0].points.at(-1)};state.overviewPoint={id:fallback.id,pid:fallback.pid}}
@@ -161,7 +162,7 @@
     function showTrendEvent(id,pid){
       const metric=state.overviewMetric,item=PERIODS[pid].items.find(x=>x.id===id);if(!item){$('#eventPanel').innerHTML='<div class="trend-empty">该节点暂无数据</div>';return}
       const value=item[metric],delta=item[metric+'Delta'],info=intelFor(item,0,pid),status=itemStatusLabel(item,pid),metricName=metric==='flow'?'流水（万元）':'DAU（万）';
-      $('#eventPanel').innerHTML=`<div class="event-panel-head">${logo(id)}<div><strong>${esc(META[id].name)}</strong><span>${reportById(pid).label} · ${status}</span></div></div><div class="event-kpi"><div><span>${metricName}</span><strong>${formatNum(value)}</strong></div><div><span>周环比</span><strong style="font-size:14px;color:${delta>=0?'#16875e':'#d92d20'}">${delta==null?'暂无数据':(delta>=0?'+':'')+delta+'%'}</strong></div></div><div class="event-status"><span>关联运营事件</span><h3>${esc(info.event)}</h3><p>${esc(info.conclusion)}</p><div class="event-tags">${info.tags.slice(0,3).map(t=>`<i># ${esc(t)}</i>`).join('')}</div></div><button class="link-btn" data-event-detail="${id}">查看该竞品完整档案 →</button>`;
+      $('#eventPanel').innerHTML=`<div class="event-panel-head">${logo(id)}<div><strong>${esc(META[id].name)}</strong><span>${reportById(pid).label} · ${status}</span></div></div><div class="event-kpi"><div><span>${metricName}</span><strong>${formatNum(value)}</strong></div><div><span>周环比</span><strong style="font-size:14px;color:${delta>=0?'#d92d20':'#16875e'}">${delta==null?'暂无数据':(delta>=0?'+':'')+delta+'%'}</strong></div></div><div class="event-status"><span>关联运营事件</span><h3>${esc(info.event)}</h3><p>${esc(info.conclusion)}</p><div class="event-tags">${info.tags.slice(0,3).map(t=>`<i># ${esc(t)}</i>`).join('')}</div></div><button class="link-btn" data-event-detail="${id}">查看该竞品完整档案 →</button>`;
       $('#eventPanel [data-event-detail]').onclick=()=>{state.period=pid;$('#periodSelect').value=pid;openDetail(id)};
     }
     function renderReports(){
@@ -421,11 +422,11 @@
       const custom=(CUSTOM_OBSERVATIONS[id]||[]).map(x=>({pid:x.key,label:x.label,value:x.item?.[metric]??null,date:x.start.replace(/-/g,'')})).filter(x=>x.value!=null);
       const points=[...saved,...custom].sort((a,b)=>a.date.localeCompare(b.date));
       if(points.length<1){$('#trendChart').innerHTML='<div class="empty">当前披露点不足，暂不能形成趋势</div>';return}
-      const W=760,H=250,P={l:58,r:18,t:24,b:46},max=Math.max(...points.map(p=>p.value))*1.14,min=0;
+      const cw0=$('#trendChart')?.clientWidth||760,W=Math.max(280,Math.min(760,cw0)),H=W<600?220:250,P={l:W<600?44:58,r:W<600?16:18,t:24,b:46},max=Math.max(...points.map(p=>p.value))*1.14,min=0;
       const x=i=>points.length===1?P.l+(W-P.l-P.r)/2:P.l+i*((W-P.l-P.r)/(points.length-1)), y=v=>H-P.b-(v-min)/(max-min)*(H-P.t-P.b);
       const path=points.map((p,i)=>(i?'L':'M')+x(i).toFixed(1)+','+y(p.value).toFixed(1)).join(' ');
       const ticks=[0,.25,.5,.75,1].map(t=>{const val=max*(1-t),yy=P.t+t*(H-P.t-P.b);return `<line x1="${P.l}" x2="${W-P.r}" y1="${yy}" y2="${yy}" stroke="#e9edf2"/><text x="${P.l-10}" y="${yy+4}" text-anchor="end" font-size="10" fill="#8b95a5">${Math.round(val).toLocaleString()}</text>`}).join('');
-      $('#trendChart').innerHTML=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${META[id].name}趋势图"><text x="${P.l}" y="15" font-size="10" fill="#98a39a">单位：${metric==='flow'?'万元':'万人'}</text>${ticks}<path d="${path}" fill="none" stroke="#e5484d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>${points.map((p,i)=>`<circle cx="${x(i)}" cy="${y(p.value)}" r="5" fill="#fff" stroke="#e5484d" stroke-width="3"/><text x="${x(i)}" y="${y(p.value)-12}" text-anchor="middle" font-size="10" font-weight="700" fill="#384459">${formatNum(p.value)}</text><text x="${x(i)}" y="${H-18}" text-anchor="middle" font-size="9" fill="#788496">${p.label}</text>`).join('')}</svg>`;
+      $('#trendChart').innerHTML=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${META[id].name}趋势图"><text x="${P.l}" y="15" font-size="10" fill="#98a39a">单位：${metric==='flow'?'万元':'万人'}</text>${ticks}<path d="${path}" fill="none" stroke="#e5484d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>${points.map((p,i)=>`<circle cx="${x(i)}" cy="${y(p.value)}" r="5" fill="#fff" stroke="#e5484d" stroke-width="3"/><text x="${x(i)}" y="${y(p.value)-12}" text-anchor="middle" font-size="10" font-weight="700" fill="#384459">${formatNum(p.value)}</text><text x="${x(i)}" y="${H-18}" text-anchor="middle" font-size="9" fill="#788496">${W<600?p.label.split('—')[0]:p.label}</text>`).join('')}</svg>`;
     }
     function renderChart(id,metric){
       if(metric==='peak'){renderChartLegacy(id,metric);return}
@@ -433,7 +434,7 @@
       const start=$('#rangeStart')?.value,end=$('#rangeEnd')?.value,idx=metric==='dau'?1:2;
       const rows=daily.filter(r=>r[idx]!=null&&(!start||r[0]>=start)&&(!end||r[0]<=end));
       if(!rows.length){$('#trendChart').innerHTML=`<div class="empty">该时间段暂无日级${metric==='dau'?'DAU':'流水'}数据</div>`;return}
-      const W=760,H=250,P={l:58,r:18,t:24,b:46},n=rows.length,maxV=Math.max(...rows.map(r=>r[idx])),max=maxV*1.14,min=0,unit=metric==='dau'?'万人':'万元';
+      const cw0=$('#trendChart')?.clientWidth||760,W=Math.max(280,Math.min(760,cw0)),H=W<600?220:250,P={l:W<600?44:58,r:W<600?16:18,t:24,b:46},n=rows.length,maxV=Math.max(...rows.map(r=>r[idx])),max=maxV*1.14,min=0,unit=metric==='dau'?'万人':'万元';
       const x=i=>n===1?P.l+(W-P.l-P.r)/2:P.l+i*((W-P.l-P.r)/(n-1)), y=v=>H-P.b-(v-min)/(max-min)*(H-P.t-P.b);
       const path=rows.map((r,i)=>(i?'L':'M')+x(i).toFixed(1)+','+y(r[idx]).toFixed(1)).join(' ');
       const ticks=[0,.25,.5,.75,1].map(t=>{const val=max*(1-t),yy=P.t+t*(H-P.t-P.b);return `<line x1="${P.l}" x2="${W-P.r}" y1="${yy}" y2="${yy}" stroke="#e9edf2"/><text x="${P.l-10}" y="${yy+4}" text-anchor="end" font-size="10" fill="#8b95a5">${Math.round(val).toLocaleString()}</text>`}).join('');
