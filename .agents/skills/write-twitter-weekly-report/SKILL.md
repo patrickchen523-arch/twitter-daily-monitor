@@ -117,6 +117,17 @@ Verify in the browser:
 4. Commit and push only when the user requested delivery or the established project workflow clearly includes publishing.
 5. Before publishing, require a worktree with no uncommitted tracked changes; never auto-stash user work.
 6. Rebase on the latest `main`, rerun `audit`, push, and confirm the Pages build uses the final commit.
+7. Dual-site deployment (GitHub Pages + internal GitLab Pages) uses the same flow as daily briefs. GitLab `main` contains colleague-maintained internal projects (`sdc-platform/`, `competitor-weekly/`) that must never reach public GitHub; never `git push gitlab main` directly.
+
+```powershell
+git commit -m "add twitter weekly report YYYY-MM-DD-to-MM-DD (WNN)"
+git push origin main                     # GitHub (public)
+git checkout gitlab-sync
+git pull --ff-only                       # pull colleague's latest GitLab commits BEFORE pushing
+git cherry-pick <commit-sha>
+git push gitlab gitlab-sync:main         # GitLab (internal)
+git checkout main
+```
 
 ## Completion standard
 
