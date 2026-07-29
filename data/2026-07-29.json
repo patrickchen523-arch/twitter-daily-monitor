@@ -1,0 +1,472 @@
+{
+  "date": "2026-07-29",
+  "meta": {
+    "raw_count": 189,
+    "filtered_count": 168,
+    "selected_count": 12,
+    "note": "AI 3, Industry 4, Indie 4, Tools 1",
+    "crawl_time": "2026-07-29 11:30"
+  },
+  "lede": "6人互相使绊的死亡游戏《C.U.B.E》公布引爆110万浏览；Claude Opus 5连续跑24小时独立做出完整游戏；内存危机恶化：4GB显卡被迫回潮、2027年供给或暴跌70%。",
+  "editors_pick": [
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "合作但必须互坑：6人死亡游戏《C.U.B.E》公布——7.6K赞110万浏览"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Opus 5马拉松24小时：每个像素和音效都由Claude生成"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 1,
+      "hook": "十年EA转正即巅峰：Scrap Mechanic 1.0发售同接冲到3.8万"
+    }
+  ],
+  "daily_summary": "**AI游戏开发进入\"马拉松会话\"时代**\n两名开发者分别展示了Opus 5的极限用法：Anshu连续24小时单会话让Claude独立产出完整游戏（每个像素和音效都由AI生成）；另一位用837M缓存读取、$632成本做出《家园》式太空RTS。Box CEO Levie同日给出宏观注脚：企业并未因AI裁员，Jevons悖论正在应验。AI生成游戏的竞争点，正在从\"能不能跑\"转向\"工作流与成本账\"。\n\n**内存危机向显卡与终端传导**\nDigital Foundry爆料：AI闪存危机恶化，4GB显存显卡被迫回潮；Apacer CEO警告2027年内存供给量或仅为2026年的30%，60%DRAM产能已被数据中心吃掉。硬件涨价的接力棒从存储传到显存，再传到整机——Steam Machine与Steam Frame的定价压力仍在加码。\n\n**合作游戏三连发：互坑、打僵尸、躲奶奶**\n6人\"合作但必须互坑\"的死亡游戏《C.U.B.E》公布即获110万浏览；免费5人合作打僵尸《Codename CURE II》发售；4人潜行恐怖《QUIET》的怪物奶奶连你麦克风里的说话声都听得见。Scrap Mechanic十年EA转正1.0，同接冲到3.8万创纪录。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Opus 5连续24小时单会话做出完整游戏：每个像素和音效都由Claude生成\n837M缓存读取+$632成本：Opus 5手搓《家园》式太空RTS\nBox CEO Levie：AI裁员潮没来，Jevons悖论正在应验"
+    },
+    {
+      "id": "industry",
+      "text": "内存危机恶化：4GB显卡被迫回潮，Apacer警告2027供给仅剩30%\nScrap Mechanic十年EA转正1.0，同接3.8万创纪录、10.7万条评价\nXbox开始为已购育碧游戏免费送PC版，跨端拥有权再进一步\nSteam周榜：Palworld登顶、Halo战役重制第2、龙之剑觉醒第3"
+    },
+    {
+      "id": "indie",
+      "text": "C.U.B.E：6人合作但必须互坑的死亡游戏，公布即110万浏览\nCodename CURE II：免费5人合作打僵尸FPS，现已发售\nQUIET：4人潜行恐怖，怪物奶奶连麦克风说话声都听得见\nProject Zomboid B42稳定版今日上线：地图翻倍+1400栋新建筑"
+    },
+    {
+      "id": "tools",
+      "text": "PlayCanvas上线顶点动画纹理示例：1万次角色动画仅需1次实例化绘制"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "开发者实测 · AI游戏生成",
+          "tags": [
+            "Claude Opus 5",
+            "马拉松会话",
+            "AI生成游戏"
+          ],
+          "title": "Opus 5连续跑24小时：每个像素和音效都由Claude独立生成",
+          "en_title": "I ran Claude Opus 5 in one marathon session for 24 hours straight, and ended up with this game. No external assets or code. Every pixel and sound was built by Claude.",
+          "full_text": "I ran Claude Opus 5 in one marathon session for 24 hours straight, and ended up with this game.\n\nNo external assets or code. Every pixel and sound was built by Claude.\n\nPrompts, workflow, code, and link below.\n\n(sound on!)",
+          "author": "anshuc",
+          "date": "2026-07-27",
+          "likes": 2445,
+          "views": 218004,
+          "link": "https://x.com/anshuc/status/2081801966158811506",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2081801821308571648/img/cxBrggGufaZI04Ju.jpg",
+            "video_url": "https://x.com/anshuc/status/2081801966158811506/video/1"
+          },
+          "summary": "开发者Anshu展示了一场Opus 5马拉松实验：单个会话连续运行24小时，不使用任何外部资产和代码，每个像素、每个音效都由Claude生成，最终产出一款完整游戏，并公开了prompt、工作流和源码。2445赞、21.8万浏览。",
+          "analysis": "24小时单会话不断线，说明长时程agentic会话的稳定性已支撑得起\"完整项目\"级别的产出；当资产、代码、音效全部来自同一模型，\"AI原生游戏\"的版权与素材溯源问题会比AI辅助开发更尖锐。",
+          "recommendation": "Opus 5马拉松24小时：零外部资产做出完整游戏，工作流全公开",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "开发者实测 · 成本透明",
+          "tags": [
+            "Opus 5",
+            "太空RTS",
+            "token成本",
+            "工作流"
+          ],
+          "title": "$632一次：开发者用Opus 5手搓《家园》式太空RTS，账本全公开",
+          "en_title": "My holy-shi moment of opus5. Homeworld Style Space RTS with OPUS 5 (workflow) 68.6k input, 4.6m output, 837.2m cache read, 13.6m cache write ($632.65)",
+          "full_text": "My holy-shi moment of opus5. \n\nHomeworld Style Space RTS \n\nwith OPUS 5 (workflow)\n\n68.6k input, 4.6m output, 837.2m cache read, 13.6m cache write ($632.65)\n\n---\n\nModels: generated, \nAsset: none.\n\nBesides minor game play issues, watching model cook this is beyond my imagination.",
+          "author": "mikeluan123",
+          "date": "2026-07-27",
+          "likes": 2172,
+          "views": 164649,
+          "link": "https://x.com/mikeluan123/status/2081716631986983093",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2081715828459028480/img/894y8cdCgPRSvURF.jpg",
+            "video_url": "https://x.com/mikeluan123/status/2081716631986983093/video/1"
+          },
+          "summary": "开发者nooooob用Opus 5做出一款《家园》（Homeworld）风格的太空RTS：3D模型全部由AI生成、零外部资产，并附上工作流。他公开了完整token账单：68.6K输入、460万输出、8.372亿缓存读取、1360万缓存写入，总成本$632.65。2172赞、16.5万浏览。",
+          "analysis": "这是AI生成复杂系统级游戏（RTS寻路、编队、3D空间）的标志性demo，更难得的是成本完全透明：单次实验$632的价格标签提醒从业者，当前\"一句话做3A\"仍是富人玩具，但缓存机制已让成本比纯输出计费低一个量级。",
+          "recommendation": "Opus 5手搓《家园》式太空RTS：8.4亿缓存读取，成本$632",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Box CEO · 行业观点",
+          "tags": [
+            "AI就业",
+            "Jevons悖论",
+            "企业招聘"
+          ],
+          "title": "Box CEO Levie：AI裁员潮没有来，Jevons悖论正在企业端应验",
+          "en_title": "The negative AI jobs outcome just continues to not be happening as some predicted. Jevons paradox is actually playing out.",
+          "full_text": "The negative AI jobs outcome just continues to not be happening as some predicted. A large portion of enterprises I talk with -across industries- are still hiring, just with a tilt in the kind of roles they’re going after.\n\nThey’re finding that AI is letting them do more, and Jevons paradox is actually playing out. They’re hiring engineers to go after problems they couldn’t tackle before. They’re hiring in sales because they can go deeper in client relationships now with the help of AI. They’re hiring in internal FDEs to help them deploy AI. And so on.\n\nAnyone using AI merely to cut costs eventually just gets outcompeted by companies that use AI to better serve their customers and drive more breakthroughs in their business. \n\nCould this trend change at some point? Sure. But for now this appears to be the trajectory we’re on.",
+          "author": "levie",
+          "date": "2026-07-28",
+          "likes": 414,
+          "views": 82595,
+          "link": "https://x.com/levie/status/2081930301752942703",
+          "media": null,
+          "summary": "Box CEO Aaron Levie基于与各行业企业的交流给出判断：预期的AI负面就业冲击并未发生，企业仍在招聘，只是岗位结构在变化——工程师去做以前无法 tackled 的问题、销售借AI深化客户关系、新设FDE（前线部署工程师）负责AI落地。他认为用AI只为降本的公司，终将被用AI更好服务客户的公司淘汰。",
+          "analysis": "来自SaaS一线的一手样本：AI对岗位的影响是\"重构\"而非\"消灭\"。对游戏公司管理层，FDE这类\"AI落地中介岗\"的出现，比\"AI替代策划/程序\"的焦虑叙事更值得纳入组织架构思考。",
+          "recommendation": "Levie：企业仍在招聘只是岗位变了，只为降本用AI终将被淘汰"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Digital Foundry · 硬件危机",
+          "tags": [
+            "内存危机",
+            "4GB显卡",
+            "AI闪存",
+            "GPU"
+          ],
+          "title": "内存危机恶化：爆料指4GB显存显卡被迫回潮，2027年供给或仅剩30%",
+          "en_title": "Leaks Point to Return of 4GB GPUs as AI Flash Memory Crisis Worsens",
+          "full_text": "Leaks Point to Return of 4GB GPUs as AI Flash Memory Crisis Worsens.",
+          "author": "digitalfoundry",
+          "date": "2026-07-28",
+          "likes": 538,
+          "views": 83858,
+          "link": "https://x.com/digitalfoundry/status/2082078640993431766",
+          "media": null,
+          "summary": "Digital Foundry爆料：随着AI闪存危机恶化，显卡厂商正准备让4GB显存的入门级GPU回归。同日PC Gamer报道Apacer CEO C.K. Chang的警告：2027年内存厂商供给量预计仅为2026年的30%——抢供给比扛高价更致命，Apacer已囤3.83亿美元库存；目前约60%的DRAM产能已转向服务器/数据中心，Phison CEO预测今年底前将有一批消费电子厂商\"破产或退出产品线\"。",
+          "analysis": "2026年了4GB显卡回潮，是AI数据中心对消费级硬件\"挤出效应\"的最直白信号。对游戏行业：入门级PC配置倒退将直接压缩游戏的最低配置假设与潜在用户盘子，硬件厂商与云游戏厂商此消彼长的窗口正在打开。",
+          "recommendation": "AI吃光内存产能：4GB显卡被迫回潮，2027年供给或暴跌70%",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "電ファミニコゲーマー · 市场表现",
+          "tags": [
+            "Scrap Mechanic",
+            "1.0转正",
+            "PCU",
+            "沙盒"
+          ],
+          "title": "十年EA转正即巅峰：Scrap Mechanic 1.0发售同接冲到3.8万创纪录",
+          "en_title": "【盛況】マルチ対応のサバイバル建築ゲーム『Scrap Mechanic』最大同接数約3万5000人を記録",
+          "full_text": "【盛況】マルチ対応のサバイバル建築ゲーム『Scrap Mechanic』最大同接数約3万5000人を記録。Steamユーザーレビューも「非常に好評」\n\n400種以上のパーツから車やトラック、掘削機などを組み上げ、“メカニック”として生きる。「時間が溶けていく」との声も",
+          "author": "denfaminicogame",
+          "date": "2026-07-28",
+          "likes": 1277,
+          "views": 199737,
+          "link": "https://x.com/denfaminicogame/status/2081914786313539864",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2081914745947590656/pu/img/GMqQ9nt3gDWKukIR.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2081914786313539864/video/1"
+          },
+          "summary": "電ファミ报道Axolot Games的沙盒建造游戏《Scrap Mechanic》7月24日结束近十年抢先体验发售1.0正式版后，同接峰值创纪录——媒体报道约3.5万人，有数GI 7月27日榜单录得37,801（该作历史峰值）。玩家用400多种零件组装车辆、挖掘机，\"时间不知不觉就溶掉了\"。Steam累计10.7万条评价\"非常好评\"。",
+          "analysis": "又一款\"EA长跑转正\"的样本：十年抢先体验攒下的社区与内容厚度，在1.0节点集中兑现为PCU纪录。对独立团队，EA策略的关键不是时长而是持续交付的节奏感——转正营销窗口只有一次。",
+          "recommendation": "Scrap Mechanic十年EA转正：1.0发售同接3.8万创历史纪录",
+          "featured": true,
+          "game_ref": "Scrap Mechanic",
+          "enrichment": {
+            "game_name": "Scrap Mechanic",
+            "genre": "沙盒建造 / 生存 / 多人合作",
+            "developer": "Axolot Games（瑞典）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "$28.99",
+            "release_date": "已发售 · 2026年7月24日（1.0正式版，2016年起EA）",
+            "steam_rating": "非常好评（10.7万条评价）",
+            "steam_url": "https://store.steampowered.com/app/387990/Scrap_Mechanic/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/387990/5c31bde0a901d9459a8d8c556c5a44262b5f57e4/header.jpg?t=1784914037",
+            "youtube_video": null,
+            "description": "【核心玩法】多人沙盒建造生存：用400多种零件自由组装车辆、卡车、挖掘机乃至自动化装置，与好友冒险并抵御一波波邪恶Farmbot。强大的创作工具允许玩家\"工程化自己的冒险\"。【1.0转正】2016年进入抢先体验，近十年持续更新后于2026年7月24日发售1.0正式版，同接峰值冲到37,801（有数GI 7/27数据），创该作历史纪录。【市场表现】Steam累计10.7万条评价\"非常好评\"，日本玩家圈评价\"时间不知不觉就溶掉了\"。【优势】建造自由度极高；多人合作欢乐；十年内容积累深厚。【不足】画面与技术底子偏老；纯建造玩法对目标导向玩家吸引力有限。【综合】EA长跑转正的标杆案例，证明持续交付的社区复利。",
+            "why_notable": "十年抢先体验转正1.0即创PCU历史纪录（37,801），EA模式社区复利的教科书",
+            "pcu": "37,801（2026年7月27日）",
+            "current_players": "约3.5-3.8万（1.0发售首周）"
+          }
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Digital Foundry · 平台政策",
+          "tags": [
+            "Xbox",
+            "育碧",
+            "跨端拥有",
+            "Play Anywhere"
+          ],
+          "title": "Xbox开始为已购育碧游戏免费发放PC版，跨端拥有权再下一城",
+          "en_title": "Microsoft Starts Offering Free PC Versions of Your Ubisoft Games on Xbox",
+          "full_text": "Microsoft Starts Offering Free PC Versions of Your Ubisoft Games on Xbox.",
+          "author": "digitalfoundry",
+          "date": "2026-07-28",
+          "likes": 172,
+          "views": 21114,
+          "link": "https://x.com/digitalfoundry/status/2082088712448487747",
+          "media": null,
+          "summary": "Digital Foundry报道：微软已开始为玩家在Xbox上已购买的育碧游戏免费发放PC版本——第三方大厂首次大规模接入跨端拥有体系，Xbox Play Anywhere从第一方走向第三方。",
+          "analysis": "在全数字化争论（索尼停售光碟、Xbox宕机连光盘都启动不了）最炙热的一周，微软用\"一次购买、双端拥有\"反向定义数字版的价值主张。跨端拥有若能成为第三方标配，主机战争的竞争维度将从独占内容转向拥有权条款。",
+          "recommendation": "Xbox为已购育碧游戏免费送PC版，Play Anywhere扩到第三方"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "SteamDB · 销量周榜",
+          "tags": [
+            "Steam周榜",
+            "Palworld",
+            "Halo",
+            "龙之剑觉醒"
+          ],
+          "title": "Steam周榜：Palworld登顶，Halo战役重制第2，国产龙之剑觉醒第3",
+          "en_title": "#SteamTopSellers for week of 21 Jul — 28 July 2026 (No F2P): #1 - Palworld #2 - Halo: Campaign Evolved #3 - DragonSword : Awakening #4 - Assassin's Creed Black Flag Resynced #5 - Battlefield™ 6",
+          "full_text": "#SteamTopSellers for week of 21 Jul — 28 July 2026 (No F2P):\n\n#1 - Palworld\n#2 - Halo: Campaign Evolved\n#3 - DragonSword : Awakening\n#4 - Assassin's Creed Black Flag Resynced\n#5 - Battlefield™ 6",
+          "author": "SteamDB",
+          "date": "2026-07-28",
+          "likes": 51,
+          "views": 5951,
+          "link": "https://x.com/SteamDB/status/2082096323713454279",
+          "media": null,
+          "summary": "SteamDB发布7月21-28日Steam付费游戏周榜：Palworld登顶（7月30日卡牌新作发售前夕热度回升）；25年经典重制《Halo: Campaign Evolved》首周第2（UE5重制、同步登陆PS5）；国产开放世界ARPG《龙之剑：觉醒》第3——该作7月22日发售同接破2万，开发组同日公告\"暂不支持MOD，先专注稳定体验\"；AC黑旗Resynced与战地6分列4-5。",
+          "analysis": "一张周榜三个信号：老IP重制（Halo）的票房号召力依旧、国产ARPG在Steam全球榜站稳头部、Palworld借衍生作预热完成热度接力。重制与衍生，正在成为买断制大作的两种确定性现金流。",
+          "recommendation": "Steam周榜：Palworld登顶、Halo重制第2、龙之剑觉醒守稳第3"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Game*Spark · 新作公布",
+          "tags": [
+            "合作恐怖",
+            "死亡游戏",
+            "互坑",
+            "EA"
+          ],
+          "title": "C.U.B.E：6人\"合作但必须互坑\"的死亡游戏，公布即获110万浏览",
+          "en_title": "【最大6人】足を引っ張り合いながらデスゲームに挑む協力ホラー『C.U.B.E』発表！8月22日早期アクセス開始",
+          "full_text": "【最大6人】足を引っ張り合いながらデスゲームに挑む協力ホラー『C.U.B.E』発表！8月22日早期アクセス開始",
+          "author": "gamespark",
+          "date": "2026-07-27",
+          "likes": 7598,
+          "views": 1096385,
+          "link": "https://x.com/gamespark/status/2081670138022203677",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2081669939279388672/pu/img/7qwZVB3Mx-4M2NNT.jpg",
+            "video_url": "https://x.com/gamespark/status/2081670138022203677/video/1"
+          },
+          "summary": "Game*Spark报道LovDEV公布的合作恐怖《C.U.B.E》：最多6人在危险设施中挑战随机试炼、撑过10天——已有25种试炼（解谜/陷阱阵/怪物逃生）。合作是生存必需，但死亡次数决定最终评价，\"适度给队友使绊子\"成为策略的一部分。8月22日Steam开启抢先体验（预计6-12个月）。7598赞、110万浏览。",
+          "analysis": "",
+          "recommendation": "C.U.B.E：合作恐怖×互坑评价机制，公布即110万浏览",
+          "featured": true,
+          "game_ref": "C.U.B.E",
+          "enrichment": {
+            "game_name": "C.U.B.E",
+            "genre": "合作恐怖 / 派对 / 死亡游戏",
+            "developer": "LovDEV",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2026年8月21日（抢先体验，预计6-12个月）",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4523340/CUBE/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4523340/4f4beaf7d9222ecd5448fd2d39d9709b307fa406/header.jpg?t=1785007577",
+            "youtube_video": null,
+            "description": "【核心玩法】1-6人合作恐怖：在布满试炼的危险设施中生存10天，争夺\"True Subject\"称号。试炼随机抽取——解谜、陷阱阵突破、怪物逃生等，已有25种并计划持续追加。【机制亮点】合作与互坑的双层结构：通关需要团队协作，但最终按死亡次数评定个人评价——\"适度妨害队友\"从缺德变成策略纵深，直播效果与友尽潜力拉满。【对标定位】《Lethal Company》式合作恐怖的派对化变体，死亡游戏框架（鱿鱼游戏式试炼）提供强叙事钩子。【传播】公布推文110万浏览、7598赞，试炼互坑的设定精准命中合作游戏玩家的社交传播点。【优势】机制自带戏剧性；试炼制利于EA期间持续更新。【不足】首发仅英文；平衡性（合作收益vs互坑收益）是最大设计风险。【综合】2026年下半年合作恐怖赛道的重点观察对象。",
+            "why_notable": "\"合作必须、互坑有利\"的机制矛盾即传播点，公布24小时即获110万浏览",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "玩家推荐 · 免费新游",
+          "tags": [
+            "免费",
+            "合作FPS",
+            "僵尸",
+            "程序生成"
+          ],
+          "title": "Codename CURE II：免费5人合作打僵尸FPS，程序生成地图现已发售",
+          "en_title": "Codename CURE II is OUT NOW as a free-to-play co-op FPS on PC (Steam)",
+          "full_text": "Codename CURE II is OUT NOW as a free-to-play co-op FPS on PC (Steam)\n\nSet in the aftermath of a zombie apocalypse, team up with friends to survive relentless undead hordes.\n\nFeatures:\n• Free-to-play 5-player co-op FPS\n• 5 unique classes with distinct weapons and abilities\n• Battle zombie hordes, including infected soldiers and zombie dogs\n• Procedurally generated maps and varied mission objectives\n• Optional Combat Specialist Pack DLC with extra weapons and cosmetics",
+          "author": "Ninjago9101",
+          "date": "2026-07-27",
+          "likes": 3495,
+          "views": 293384,
+          "link": "https://x.com/Ninjago9101/status/2081800363477459139",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2081795775009570816/img/e5KFPDMY2F7kNtYV.jpg",
+            "video_url": "https://x.com/Ninjago9101/status/2081800363477459139/video/1"
+          },
+          "summary": "玩家社区热推Raptor Byte开发、indie.io发行的《Codename CURE II》：免费5人合作FPS，7月24日Steam发售。5个特色兵种、程序生成地图与多变任务目标，对抗感染士兵与僵尸犬组成的尸潮；付费DLC仅含武器与皮肤。3495赞、29.3万浏览。",
+          "analysis": "",
+          "recommendation": "Codename CURE II：免费5人合作僵尸FPS，兵种+程序生成地图",
+          "featured": true,
+          "game_ref": "Codename CURE II",
+          "enrichment": {
+            "game_name": "Codename CURE II",
+            "genre": "合作FPS / 僵尸生存 / 免费",
+            "developer": "Raptor Byte（发行：indie.io）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "免费开玩（DLC为武器/外观）",
+            "release_date": "已发售 · 2026年7月24日",
+            "steam_rating": "新发售（评价积累中）",
+            "steam_url": "https://store.steampowered.com/app/2810210/Codename_CURE_II/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2810210/8cf17864930ab82ba20d536c79901bcb4af67830/header.jpg?t=1784917226",
+            "youtube_video": null,
+            "description": "【核心玩法】5人合作FPS：僵尸末日背景下组成精英小队突围，5个兵种各配专属武器与技能；程序生成地图+多样化任务目标保证重复可玩性，敌人包括感染士兵与僵尸犬。【商业模式】完全免费开玩，仅售卖Combat Specialist Pack（额外武器与外观），无付费强度门槛。【对标定位】《Killing Floor》式波次合作射击的免费化尝试，前作Codename CURE即是小口碑免费合作FPS。【优势】零门槛拉新（免费+5人车队）；程序生成延长寿命；兵种分工明确。【不足】免费模式的长期内容更新依赖DLC转化；画面体量偏中小厂。【综合】暑期档免费合作射击的及时雨，适合宿舍/车队开黑场景。",
+            "why_notable": "免费+5人合作+程序生成的组合精准卡位暑期开黑需求，发售三日社区自发传播近30万浏览",
+            "pcu": "有数GI暂未收录（发售不足一周）"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "ゲム之助 · 新作曝光",
+          "tags": [
+            "潜行恐怖",
+            "麦克风侦测",
+            "4人合作",
+            "LINE Games"
+          ],
+          "title": "QUIET：4人潜行恐怖，怪物奶奶连你麦克风里的说话声都听得见",
+          "en_title": "このババア、マイクが拾ったしゃべり声すら聞いている 4人協力ステルスホラー『QUIET』ベータテスト8/3開始",
+          "full_text": "このババア、マイクが拾ったしゃべり声すら聞いている\n\nどう見ても人間じゃない化け物ババアが守る家へ\nアヒル型宇宙人となって侵入\n家に帰るためにパーツを盗み出せ\n\nおまえのようなババアがいるか\n4人協力ステルスホラー『QUIET』\nベータテスト8/3開始\nテスター募集中",
+          "author": "dotpixel3d",
+          "date": "2026-07-28",
+          "likes": 440,
+          "views": 41356,
+          "link": "https://x.com/dotpixel3d/status/2081998088764551320",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2081714814049804289/img/Py_blPfVB6Yf0Oj9.jpg",
+            "video_url": "https://x.com/dotpixel3d/status/2081998088764551320/video/1"
+          },
+          "summary": "ゲム之助曝光LINE Games出品的4人合作潜行恐怖《QUIET》：玩家扮演鸭子外形星人潜入怪物奶奶的房子偷回飞船零件——奶奶AI会实时监听玩家麦克风收录的真实说话声。Beta测试8月3日开启，招募中。440赞、4.1万浏览。",
+          "analysis": "",
+          "recommendation": "QUIET：怪物奶奶监听现实麦克风，4人潜行恐怖8/3开测",
+          "game_ref": "QUIET",
+          "enrichment": {
+            "game_name": "QUIET",
+            "genre": "潜行恐怖 / 4人合作",
+            "developer": "LINE Games Corporation",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2026年（Beta测试8月3日）",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4228630/QUIET/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4228630/6673f0c5252d0b76b2b86ed0844d58d4b7b028ae/header.jpg?t=1785227244",
+            "youtube_video": null,
+            "description": "【核心玩法】4人合作潜行恐怖：飞船坠毁的鸭子外形星人小队，潜入\"怎么看都不是人类\"的怪物奶奶看守的房子，搜寻零件修船回家。任何移动和声响都可能惊动屋主。【机制亮点】麦克风实时侦测——奶奶AI监听玩家现实中的说话声，语音沟通本身成为风险源，把《Phasmophobia》的语音关键词机制推进到\"全天候听声\"。【设定反差】鸭子外星人的滑稽形象×潜行恐怖的压迫感，直播效果突出。【优势】麦克风机制天然制造主播名场面；LINE Games的发行资源加持；潜行+合作品类热度正盛。【不足】2026年内发售窗口未定；麦克风权限与隐私接受度存疑。【综合】合作恐怖赛道机制微创新的样本，Beta测试表现值得跟踪。",
+            "why_notable": "怪物AI监听玩家现实麦克风——语音沟通变成风险源，合作恐怖的机制微创新",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "Survival Game News · 大版本更新",
+          "tags": [
+            "Project Zomboid",
+            "B42",
+            "稳定版",
+            "生存"
+          ],
+          "title": "Project Zomboid B42稳定版今日上线：地图面积翻倍+1400栋新建筑",
+          "en_title": "The developers say B42 will double the map's surface area, add 1,400 new unique buildings, and introduce three new towns as part of a major Knox Country rework.",
+          "full_text": "Do you think Project Zomboid still needs a procedurally generated map?\n\nThe developers say B42 will double the map's surface area, add 1,400 new unique buildings, and introduce three new towns as part of a major Knox Country rework.",
+          "author": "SurvivalGN",
+          "date": "2026-07-27",
+          "likes": 389,
+          "views": 29375,
+          "link": "https://x.com/SurvivalGN/status/2081845040339460324",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HOQy2tGXsAAx5eK.jpg"
+          },
+          "summary": "历时两年开发的《Project Zomboid》Build 42稳定版（42.20）于7月29日正式推送：Knox Country大修使地图面积翻倍，新增1,400栋独特建筑与3座新城镇。该作2013年进入EA至今累计35万+条Steam评价，是生存沙盒品类的活化石级标杆。",
+          "analysis": "",
+          "recommendation": "Zomboid B42稳定版上线：两年开发，地图翻倍+3座新城镇",
+          "featured": true,
+          "game_ref": "Project Zomboid",
+          "enrichment": {
+            "game_name": "Project Zomboid",
+            "genre": "生存沙盒 / 僵尸 / RPG",
+            "developer": "The Indie Stone（英国）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "$19.99",
+            "release_date": "已发售（2013年11月8日EA至今，B42稳定版2026年7月29日）",
+            "steam_rating": "好评如潮（35万+条评价）",
+            "steam_url": "https://store.steampowered.com/app/108600/Project_Zomboid/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg?t=1777298596",
+            "youtube_video": null,
+            "description": "【核心玩法】硬核僵尸生存沙盒：搜刮、建造、制作、耕种、钓鱼，在开放世界中管理饥饿、伤病、心理状态，\"你如何死去\"是核心命题；RPG级技能体系+高度自定义沙盒规则。【B42更新】历时两年开发：Knox Country大修使地图表面积翻倍、新增1,400栋独特建筑与3座新城镇，并引入养殖、地下室、新 crafting 深度等系统（测试分支期间已分批上线）。【长线运营】2013年EA上线至今13年，累计35万+条评价好评如潮，是Steam EA模式最长寿的成功样本之一。【优势】生存深度无可替代；MOD生态庞大；稳定版终于追上社区期待。【不足】开发周期长（B42历时两年）；画面与交互老旧；新手门槛高。【综合】生存品类的常青树，B42稳定版落地将为下半年生存游戏热度再添一把火。",
+            "why_notable": "13年EA活化石的大版本稳定版落地，地图翻倍是对社区两年等待的集中兑现",
+            "pcu": "有数GI榜单前100常客（B42期间显著回升）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "PlayCanvas团队 · 引擎技术",
+          "tags": [
+            "PlayCanvas",
+            "VAT",
+            "顶点动画",
+            "性能优化"
+          ],
+          "title": "PlayCanvas上线顶点动画纹理示例：1万个角色动画只需1次实例化绘制",
+          "en_title": "Vertex Animation Textures, now an example in @playcanvas — 10,000 characters. One instanced draw call.",
+          "full_text": "Vertex Animation Textures, now an example in @playcanvas 🧵\n\nRather than animate a skeleton per character, we bake every vertex position and normal into a texture and let the vertex shader interpolate between frames.\n\n10,000 characters. One instanced draw call.",
+          "author": "ValigurskyM",
+          "date": "2026-07-27",
+          "likes": 778,
+          "views": 40419,
+          "link": "https://x.com/ValigurskyM/status/2081695061738189070",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2081695010001465344/img/TaW00Et2gvo940AV.jpg",
+            "video_url": "https://x.com/ValigurskyM/status/2081695061738189070/video/1"
+          },
+          "summary": "PlayCanvas团队的Martin Valigursky发布Vertex Animation Textures（VAT）官方示例：不再为每个角色播放骨骼动画，而是把每帧所有顶点位置与法线烘焙进纹理，由顶点着色器插值还原动画——1万个带动画角色只需1次实例化绘制调用。778赞、4万浏览。",
+          "analysis": "VAT是人群/军团渲染的标准解法，官方示例把它变成引擎内即取即用的模板。对做幸存者like、RTS或大场面群战的团队，这类\"把CPU动画搬进GPU纹理\"的思路是把同屏单位数提升两个数量级的关键技术路径。",
+          "recommendation": "PlayCanvas官方VAT示例：1万动画角色=1次绘制调用"
+        }
+      ]
+    }
+  ]
+}
