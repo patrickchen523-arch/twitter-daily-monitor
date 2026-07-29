@@ -440,6 +440,8 @@
     .ed-field input,.ed-field textarea,.ed-field select{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;background:#fff;font-family:inherit}
     .ed-field textarea{line-height:1.7;min-height:88px;resize:vertical}
     .ed-field .ed-help{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5}
+    .ed-empty{margin:6px 0 0;color:#98a39a;font-size:13px}
+    .ed-empty-module{margin-top:22px}
     .ed-pending-list{margin:0 0 12px;padding-left:18px;font-size:13px;line-height:1.9;color:#344258}
     @media(max-width:680px){
       .ed-bar{flex-wrap:wrap;gap:8px;font-size:12px}
@@ -461,7 +463,7 @@
         <div class="hero-left">
           <h1 id="heroTitle">本周异动产品</h1>
           <p class="hero-sub" id="heroSub"></p>
-          <label class="cycle-box">监测周期 <select id="periodSelect" aria-label="选择监测周期" disabled></select></label>
+          <label class="cycle-box">监测周期 <select id="periodSelect" aria-label="选择监测周期"></select></label>
           <div id="periodOverview" class="period-overview hidden"></div>
           <div id="heroStats" class="hero-stats"></div>
         </div>

@@ -490,7 +490,7 @@
     const EDITOR={active:false,token:sessionStorage.getItem('cw_editor_token')||'',user:sessionStorage.getItem('cw_editor_user')||'',files:{},pending:[]};
     const ED_API_BASE='https://gitlab.nie.netease.com/api/v4';
     const ED_API=ED_API_BASE+'/projects/'+encodeURIComponent('xmonitor/xmonitor.doc.nie.netease.com');
-    const ED_FILES=['periods','intel','hero-event-summaries','core-items','audience-profiles'];
+    const ED_FILES=['periods','archive-periods','intel','hero-event-summaries','core-items','audience-profiles'];
     const edFilePath=n=>'competitor-weekly/data/'+n+'.json';
     function edDetectIndent(text){const m=text.match(/\n(\s+)"/);return m?m[1].length:0}
     function edSerialize(name){const f=EDITOR.files[name];let t=f.indent?JSON.stringify(f.data,null,f.indent):JSON.stringify(f.data);if(f.trailing)t+='\n';return t}
@@ -519,7 +519,7 @@
       dlg.innerHTML=`<div class="ed-dlg-head"><h2>${esc(title)}</h2><button type="button" class="icon-btn" id="edDlgClose" aria-label="关闭">×</button></div><div class="ed-dlg-body">${bodyHtml}</div><div class="ed-dlg-actions"></div>`;
       const actions=dlg.querySelector('.ed-dlg-actions');
       $('#edDlgClose').onclick=()=>dlg.close();
-      buttons.forEach(b=>{const btn=document.createElement('button');btn.type='button';btn.className=b.cls;btn.textContent=b.label;btn.onclick=()=>{if(b.fn()!==false)dlg.close()};actions.appendChild(btn)});
+      buttons.forEach(b=>{const btn=document.createElement('button');btn.type='button';btn.className=b.cls;btn.textContent=b.label;btn.onclick=()=>{try{if(b.fn()!==false)dlg.close()}catch(e){showToast('保存失败：'+e.message)}};actions.appendChild(btn)});
       dlg.showModal();
     }
     function edFieldHtml(f){
@@ -550,24 +550,32 @@
       if(state.view==='detail'&&state.detailId)openDetail(state.detailId,false);else if(state.view==='home')renderHome();
       showToast('已暂存：'+desc);
     }
+    function edPeriodFile(pid){
+      if(EDITOR.files['periods'].data[pid])return 'periods';
+      if(EDITOR.files['archive-periods'].data[pid])return 'archive-periods';
+      return null;
+    }
     function edItemPair(id){
-      const pid=state.period;
-      return {live:PERIODS[pid].items.find(x=>x.id===id),file:(EDITOR.files['periods'].data[pid].items||[]).find(x=>x.id===id)};
+      const pid=state.period,fname=edPeriodFile(pid);
+      if(!fname)return {live:null,file:null,fname:null};
+      return {live:PERIODS[pid].items.find(x=>x.id===id),file:(EDITOR.files[fname].data[pid].items||[]).find(x=>x.id===id),fname};
     }
     const edStatusOptions=()=>[['','自动判定'],['priority','异动'],['warning','关注'],['normal','平稳']];
     function edOpenOverview(){
-      const pid=state.period,live=PERIODS[pid],file=EDITOR.files['periods'].data[pid];
+      const pid=state.period,fname=edPeriodFile(pid);
+      if(!fname){showToast('该周期无数据文件，无法编辑');return}
+      const live=PERIODS[pid],file=EDITOR.files[fname].data[pid];
       edOpenForm('本期综述（'+pid+'）',[
         {key:'overview',label:'综述 HTML',type:'textarea',rows:8,value:live.overview||'',help:'支持 &lt;p&gt; 分段、&lt;b&gt; 加粗、&lt;span class="dim"&gt; 标灰'},
         {key:'tableCaption',label:'数据表口径小字',type:'textarea',value:live.tableCaption||'',help:'留空则使用默认口径文案'}
       ],v=>{
         const ov=v.overview.trim();if(ov){live.overview=ov;file.overview=ov}else{delete live.overview;delete file.overview}
         const tc=v.tableCaption.trim();if(tc){live.tableCaption=tc;file.tableCaption=tc}else{delete live.tableCaption;delete file.tableCaption}
-        edAfterEdit(['periods'],'本期综述/口径');
+        edAfterEdit([fname],'本期综述/口径');
       });
     }
     function edOpenRow(id){
-      const {live,file}=edItemPair(id);if(!live||!file)return;
+      const {live,file,fname}=edItemPair(id);if(!live||!file)return;
       edOpenForm(META[id].name+' · 数据表文案',[
         {key:'highlight',label:'运营亮点短句（≤30字）',value:live.highlight||'',help:'留空则回退到内置短句/变化说明'},
         {key:'note',label:'变化说明 note',type:'textarea',value:live.note||''},
@@ -578,7 +586,7 @@
         ['highlight','note','summary'].forEach(k=>{const val=v[k].trim();if(val){live[k]=val;file[k]=val}else{delete live[k];delete file[k]}});
         const kw=v.keywords.split(/[,，、]/).map(s=>s.trim()).filter(Boolean);live.keywords=kw;file.keywords=kw;
         if(v.statusOverride){live.statusOverride=v.statusOverride;file.statusOverride=v.statusOverride}else{delete live.statusOverride;delete file.statusOverride}
-        edAfterEdit(['periods'],META[id].name+' 数据表文案');
+        edAfterEdit([fname],META[id].name+' 数据表文案');
       });
     }
     function edOpenHero(id){
@@ -586,14 +594,14 @@
       const liveIntelRoot=INTEL[pid]=INTEL[pid]||{},fileIntelRoot=EDITOR.files['intel'].data[pid]=EDITOR.files['intel'].data[pid]||{};
       const li=liveIntelRoot[id]=liveIntelRoot[id]||{},fi=fileIntelRoot[id]=fileIntelRoot[id]||{};
       const hsLive=(HERO_EVENT_SUMMARIES[pid]||{})[id]||'';
-      const {live:item,file:fitem}=edItemPair(id);
+      const {live:item,file:fitem,fname}=edItemPair(id);
       edOpenForm(META[id].name+' · 英雄卡文案',[
-        {key:'event',label:'活动标题',value:li.event||''},
-        {key:'conclusion',label:'结论/描述 conclusion',type:'textarea',value:li.conclusion||''},
-        {key:'tags',label:'标签（逗号分隔）',value:(li.tags||[]).join('，')},
-        {key:'heroSummary',label:'卡片小字（≤46字）',type:'textarea',value:hsLive,help:'留空则由系统从 summary 自动生成'},
-        {key:'heroRank',label:'英雄卡排序 heroRank（1-4，留空不参与）',type:'number',value:item&&item.heroRank!=null?item.heroRank:''},
-        {key:'statusOverride',label:'异动状态覆写',type:'select',value:item&&item.statusOverride||'',options:edStatusOptions()}
+        {key:'event',label:'活动标题',value:li.event||'',help:'显示位置：英雄卡标题、关联事件面板标题'},
+        {key:'conclusion',label:'结论/描述 conclusion',type:'textarea',value:li.conclusion||'',help:'显示位置：趋势图点击红色异动节点后，右侧「关联事件」面板的描述文字（英雄卡上不显示）'},
+        {key:'tags',label:'标签（逗号分隔）',value:(li.tags||[]).join('，'),help:'显示位置：「关联事件」面板的标签（英雄卡上的标签由关键词/类型自动生成，不读这里）'},
+        {key:'heroSummary',label:'卡片小字（≤46字）',type:'textarea',value:hsLive,help:'显示位置：英雄卡标题下方的两行小字；留空则由系统从 summary 自动生成'},
+        {key:'heroRank',label:'英雄卡排序 heroRank（1-4，留空不参与）',type:'number',value:item&&item.heroRank!=null?item.heroRank:'',help:'决定该产品是否进入首屏 4 张英雄卡及排位'},
+        {key:'statusOverride',label:'异动状态覆写',type:'select',value:item&&item.statusOverride||'',options:edStatusOptions(),help:'一般留「自动判定」；覆写会影响数据表状态排序'}
       ],v=>{
         li.event=v.event.trim();fi.event=li.event;
         li.conclusion=v.conclusion.trim();fi.conclusion=li.conclusion;
@@ -606,22 +614,30 @@
           const r=v.heroRank.trim();if(r){item.heroRank=Number(r);fitem.heroRank=Number(r)}else{delete item.heroRank;delete fitem.heroRank}
           if(v.statusOverride){item.statusOverride=v.statusOverride;fitem.statusOverride=v.statusOverride}else{delete item.statusOverride;delete fitem.statusOverride}
         }
-        edAfterEdit(['intel','hero-event-summaries','periods'],META[id].name+' 英雄卡文案');
+        edAfterEdit(fname?['intel','hero-event-summaries',fname]:['intel','hero-event-summaries'],META[id].name+' 英雄卡文案');
       });
     }
     function edOpenCore(id){
       const pid=state.period;
-      const live=(CORE_REFERENCE_ITEMS[pid]||{})[id],file=((EDITOR.files['core-items'].data[pid])||{})[id];
-      if(!live||!file){showToast('该产品本期暂无核心内容条目');return}
-      const liveItems=Array.isArray(live)?live:(live.items||[]),fileItems=Array.isArray(file)?file:(file.items||[]);
+      if(!EDITOR.files['core-items'].data[pid]){showToast('归档周期的正文暂不支持在线编辑（走归档素材流程）');return}
+      const liveRoot=CORE_REFERENCE_ITEMS[pid]=CORE_REFERENCE_ITEMS[pid]||{};
+      const fileRoot=EDITOR.files['core-items'].data[pid]=EDITOR.files['core-items'].data[pid]||{};
+      if(!liveRoot[id])liveRoot[id]={sourceUrl:'',intro:'',manual:true,items:[]};
+      if(!fileRoot[id])fileRoot[id]={sourceUrl:'',intro:'',manual:true,items:[]};
+      const live=liveRoot[id],file=fileRoot[id];
+      const liveItems=Array.isArray(live)?live:(live.items=live.items||[]),fileItems=Array.isArray(file)?file:(file.items=file.items||[]);
       const fields=[{key:'intro',label:'总结 intro（绿框引导句）',type:'textarea',value:Array.isArray(live)?'':(live.intro||'')}];
       liveItems.forEach((it,i)=>{
         fields.push({key:'type'+i,label:'条目 '+(i+1)+' 类型',type:'select',value:it.type||'玩法',options:Object.keys(CORE_TYPE_META).map(k=>[k,k])});
         fields.push({key:'text'+i,label:'条目 '+(i+1)+' 正文：'+coreIntro(it.text).slice(0,24),type:'textarea',rows:6,value:it.text||''});
       });
+      fields.push({key:'type_new',label:'＋ 新增条目 类型',type:'select',value:'玩法',options:Object.keys(CORE_TYPE_META).map(k=>[k,k])});
+      fields.push({key:'text_new',label:'＋ 新增条目 正文（留空则不新增）',type:'textarea',rows:5,value:'',help:'层级符号：○ 主题 ／ – 要点 ／ · 细节 ／ “ 玩家原话'});
       edOpenForm(META[id].name+' · 核心运营内容',fields,v=>{
         if(!Array.isArray(live)){live.intro=v.intro.trim();file.intro=live.intro}
         liveItems.forEach((it,i)=>{it.type=v['type'+i];it.text=v['text'+i];if(fileItems[i]){fileItems[i].type=it.type;fileItems[i].text=it.text}});
+        const nt=v.text_new.trim();
+        if(nt){liveItems.push({title:'',type:v.type_new,text:nt});fileItems.push({title:'',type:v.type_new,text:nt})}
         edAfterEdit(['core-items'],META[id].name+' 核心内容');
       });
     }
@@ -635,7 +651,13 @@
     function edInject(){
       if(!EDITOR.active)return;
       const ov=$('#periodOverview');
-      if(ov&&!ov.querySelector('.ed-btn'))ov.appendChild(edBtn('编辑综述',edOpenOverview));
+      if(ov){
+        if(ov.classList.contains('hidden')||!ov.innerHTML.trim()){
+          ov.classList.remove('hidden');
+          ov.innerHTML='<span class="ov-label">本期综述</span><p class="ed-empty">（本期暂无综述，点右上角「编辑综述」撰写）</p>';
+        }
+        if(!ov.querySelector('.ed-btn'))ov.appendChild(edBtn('编辑综述',edOpenOverview));
+      }
       $$('#anomalyGrid .p-card').forEach(card=>{
         if(card.querySelector('.ed-btn'))return;
         const link=card.querySelector('[data-detail]');if(!link)return;
@@ -646,7 +668,16 @@
         const link=tr.querySelector('[data-detail]'),td=tr.querySelector('.judge');
         if(link&&td)td.appendChild(edBtn('✎',()=>edOpenRow(link.dataset.detail)));
       });
-      const core=$('.core-content-module');
+      let core=$('.core-content-module');
+      if(!core&&state.view==='detail'&&state.detailId){
+        const dc=$('#detailContent');
+        if(dc){
+          const sec=document.createElement('section');
+          sec.className='core-content-module ed-empty-module';
+          sec.innerHTML='<div class="core-content-head"><div><h2>核心运营内容</h2><span class="core-content-sub">本期暂无条目，点右侧「编辑核心内容」创建</span></div></div>';
+          dc.appendChild(sec);core=sec;
+        }
+      }
       if(core){const head=core.querySelector('.core-content-head');if(head&&!head.querySelector('.ed-btn'))head.appendChild(edBtn('编辑核心内容',()=>edOpenCore(state.detailId)))}
       const src=$('.detail-banner .ba-src');
       if(src&&!src.querySelector('.ed-btn'))src.appendChild(edBtn('✎',()=>edOpenAudience(state.detailId)));
@@ -700,7 +731,8 @@
         showToast('正在加载最新数据…');
         await edLoadFiles();
         EDITOR.active=true;document.body.classList.add('editing');
-        $('#edFab').classList.add('hidden');$('#edBar').classList.remove('hidden');
+        const edFab=$('#edFab');if(edFab)edFab.classList.add('hidden');
+        $('#edBar').classList.remove('hidden');
         edRenderBar();edInject();
         showToast('已进入编辑模式：@'+EDITOR.user);
       }catch(e){EDITOR.token='';EDITOR.user='';sessionStorage.removeItem('cw_editor_token');sessionStorage.removeItem('cw_editor_user');showToast(e.message)}
