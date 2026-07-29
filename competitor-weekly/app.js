@@ -118,7 +118,7 @@
         const badges=i.badges||[{icon:etype.icon,label:etype.label}];
         return `<article class="p-card" aria-label="${esc(META[x.id].name+'重点情报')}"><div class="p-media">${art}${metric}</div><div class="p-body"><div class="p-product">${logo(x.id)}<span>${esc(META[x.id].name)}</span></div><div class="p-event-row"><div class="p-badges">${badges.map(b=>`<span class="p-badge analysis-category"><i>${b.icon}</i>${esc(b.label)}</span>`).join('')}</div><h3 class="p-event">${esc(i.event)}</h3></div><p class="p-concl">${esc(heroEventSummary(x,i,state.period))}</p><button class="p-detail" data-detail="${x.id}">查看竞品详情 →</button></div></article>`;
       }).join('');
-      $('#tableCaption').textContent='数据口径：DAU和流水数据基于SensorTower等第三方数据和公司产品实际数据建模估算，模型会持续优化并不定期对历史数据进行调整';
+      $('#tableCaption').textContent=p.tableCaption||'数据口径：DAU和流水数据基于SensorTower等第三方数据和公司产品实际数据建模估算，模型会持续优化并不定期对历史数据进行调整';
       renderRows();renderOverviewTrend();
     }
     const HIGHLIGHT_SHORT={wz:'大禹翡翠华章秒杀上线，牛年限定等皮肤返场',hp:'SS40新赛季开启，吞噬星空联动挖掘大R付费',df:'干员回响削弱，群星AKM外观优化',jc:'海克斯典籍赛季焕新，璀璨星约棱彩召唤上线',cs:'云南虫谷新地图上线，新Boss傩女登场',rock:'花园秘密礼物开启，典藏精灵睡铃雪影娃娃',ys:'月之八二期祈愿，哥伦比娅雷电将军返场',sr:'Fate联动第二弹，卡池+普赠/累抽福利上线',love:'本周无更新公告，版本空窗期',sz:'7·22停服维护，争洛阳剧本规则调整',sm:'武侯遗志分两批开服，跨州再起规则调整'};
@@ -129,7 +129,7 @@
       if(state.status!=='all')items=items.filter(x=>itemStatusKey(x,state.period)===state.status);
       if(state.sortKey)items.sort((a,b)=>((a[state.sortKey]??-Infinity)-(b[state.sortKey]??-Infinity))*state.sortDir);
       else if(items.some(x=>x.heroRank!=null))items.sort((a,b)=>{const ra=a.heroRank??99,rb=b.heroRank??99;if(ra!==rb)return ra-rb;return (b.flow??-Infinity)-(a.flow??-Infinity)});
-      $('#competitorRows').innerHTML=items.length?items.map(x=>{const statusKey=itemStatusKey(x,state.period);return `<tr><td><button class="product-link" data-detail="${x.id}" aria-label="查看${esc(META[x.id].name)}详情"><span class="product-cell">${logo(x.id)}<span><strong>${META[x.id].name}</strong></span></span></button></td><td class="metric"><strong>${formatNum(x.flow)}</strong>${dh(x.flowDelta)}</td><td class="metric"><strong>${formatNum(x.dau)}</strong>${dh(x.dauDelta)}</td><td class="metric">${formatNum(x.peak)} ${x.peak==null?'<span class="muted">暂无数据</span>':(x.peakDelta!=null?dh(x.peakDelta):'')}</td><td><span class="status-${statusKey==='priority'?'critical':statusKey}"><i class="status-dot"></i>${statusLabel(statusKey)}</span></td><td class="judge">${esc(HIGHLIGHT_SHORT[x.id]||x.note)}</td><td><button class="link-btn" data-detail="${x.id}">查看详情 →</button></td></tr>`}).join(''):'<tr><td colspan="7"><div class="empty">没有符合条件的竞品</div></td></tr>';
+      $('#competitorRows').innerHTML=items.length?items.map(x=>{const statusKey=itemStatusKey(x,state.period);return `<tr><td><button class="product-link" data-detail="${x.id}" aria-label="查看${esc(META[x.id].name)}详情"><span class="product-cell">${logo(x.id)}<span><strong>${META[x.id].name}</strong></span></span></button></td><td class="metric"><strong>${formatNum(x.flow)}</strong>${dh(x.flowDelta)}</td><td class="metric"><strong>${formatNum(x.dau)}</strong>${dh(x.dauDelta)}</td><td class="metric">${formatNum(x.peak)} ${x.peak==null?'<span class="muted">暂无数据</span>':(x.peakDelta!=null?dh(x.peakDelta):'')}</td><td><span class="status-${statusKey==='priority'?'critical':statusKey}"><i class="status-dot"></i>${statusLabel(statusKey)}</span></td><td class="judge">${esc(x.highlight||HIGHLIGHT_SHORT[x.id]||x.note)}</td><td><button class="link-btn" data-detail="${x.id}">查看详情 →</button></td></tr>`}).join(''):'<tr><td colspan="7"><div class="empty">没有符合条件的竞品</div></td></tr>';
       $$('[data-detail]').forEach(b=>b.onclick=()=>openDetail(b.dataset.detail));
     }
     function renderOverviewTrend(){
@@ -385,7 +385,7 @@
       const ageVals=profileAges.map(([k,v])=>({k,v,raw:parseFloat(String(v).replace(/[^\d.]/g,''))})),ageMax=Math.max(...ageVals.map(a=>Number.isFinite(a.raw)?a.raw:0),1);
       const audiencePanel=`<div class="banner-audience"><div class="ba-card"><div class="ba-head"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M9 11a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 9 11zm7 0a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 16 11zM2 20c0-3 3.5-4.5 7-4.5s7 1.5 7 4.5"/><path d="M15.5 15.7c3.4.3 6.5 1.7 6.5 4.3"/></svg>性别分布</div><div class="ba-gender"><div class="g male"><span class="sym">♂</span>男<strong>${esc(profileGender.male)}</strong></div><div class="g female"><span class="sym">♀</span>女<strong>${esc(profileGender.female)}</strong></div></div><div class="ba-bar"><i style="width:${gm!=null?gm:50}%"></i><b style="width:${gf!=null?gf:50}%"></b></div></div><div class="ba-card"><div class="ba-head"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M7 2v3M17 2v3M3 9h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>年龄分布</div><div class="ba-bars">${ageVals.map(a=>`<div class="ba-col"><span>${esc(a.v)}</span><i style="height:${Number.isFinite(a.raw)?Math.max(6,Math.round(a.raw/ageMax*100)):4}%;opacity:${Number.isFinite(a.raw)?(.35+.65*a.raw/ageMax).toFixed(2):.15}"></i><em>${esc(a.k)}</em></div>`).join('')}</div></div></div>`;
       const coreModuleHtml=renderCoreContentModule(id,periodId,archive);
-      $('#detailContent').innerHTML=`<button class="back-btn" id="backHome"><svg class="svg-icon" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>返回报告首页</button><section class="detail-banner"><div class="banner-top">${logo(id)}<div class="detail-title"><h1>${meta.name}${demoBadge}</h1></div></div>${audiencePanel}<p class="ba-src">数据来源：集瓜，数据为抖音官方账号的粉丝画像，仅供参考</p></section><section class="product-module" aria-labelledby="dataModuleTitle"><div class="module-head"><div><h2 id="dataModuleTitle">数据观测</h2></div><div class="module-tools"><select id="detailPeriodSelect" aria-label="筛选数据观测日期" disabled>${options}</select></div></div><div class="data-module-body">${metricCards}<div class="product-chart"><div class="product-chart"><div class="product-chart-head"><strong>历史数据趋势</strong><div class="chart-tabs"><button class="${state.chartMetric==='flow'?'active':''}" data-metric="flow">周流水</button><button class="${state.chartMetric==='dau'?'active':''}" data-metric="dau">日均 DAU</button><button class="${state.chartMetric==='peak'?'active':''}" data-metric="peak">DAU 峰值</button></div></div><div class="chart-range"><label>开始 <input type="date" id="rangeStart"></label><span class="range-sep">至</span><label>结束 <input type="date" id="rangeEnd"></label><button id="rangeApply" class="range-btn">查询</button><button id="rangeReset" class="range-reset">本期</button></div><div id="trendChart"></div><p class="chart-note">注：DAU和流水数据基于SensorTower等第三方数据和公司产品实际数据建模估算，模型会持续优化并不定期对历史数据进行调整；「DAU 峰值」展示周期观测点，空档周期不补数</p></div></div></section>${coreModuleHtml}`;
+      $('#detailContent').innerHTML=`<button class="back-btn" id="backHome"><svg class="svg-icon" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>返回报告首页</button><section class="detail-banner"><div class="banner-top">${logo(id)}<div class="detail-title"><h1>${meta.name}${demoBadge}</h1></div></div>${audiencePanel}<p class="ba-src">${esc(profile&&profile.source?profile.source:'数据来源：集瓜，数据为抖音官方账号的粉丝画像，仅供参考')}</p></section><section class="product-module" aria-labelledby="dataModuleTitle"><div class="module-head"><div><h2 id="dataModuleTitle">数据观测</h2></div><div class="module-tools"><select id="detailPeriodSelect" aria-label="筛选数据观测日期" disabled>${options}</select></div></div><div class="data-module-body">${metricCards}<div class="product-chart"><div class="product-chart"><div class="product-chart-head"><strong>历史数据趋势</strong><div class="chart-tabs"><button class="${state.chartMetric==='flow'?'active':''}" data-metric="flow">周流水</button><button class="${state.chartMetric==='dau'?'active':''}" data-metric="dau">日均 DAU</button><button class="${state.chartMetric==='peak'?'active':''}" data-metric="peak">DAU 峰值</button></div></div><div class="chart-range"><label>开始 <input type="date" id="rangeStart"></label><span class="range-sep">至</span><label>结束 <input type="date" id="rangeEnd"></label><button id="rangeApply" class="range-btn">查询</button><button id="rangeReset" class="range-reset">本期</button></div><div id="trendChart"></div><p class="chart-note">注：DAU和流水数据基于SensorTower等第三方数据和公司产品实际数据建模估算，模型会持续优化并不定期对历史数据进行调整；「DAU 峰值」展示周期观测点，空档周期不补数</p></div></div></section>${coreModuleHtml}`;
       $('#backHome').onclick=()=>{location.hash='';switchView(isDemo?'reports':'home')};
       $('#detailPeriodSelect').onchange=e=>{const selected=e.target.value;if(PERIODS[selected]){state.period=selected;$('#periodSelect').value=selected}openDetail(id,false,selected)};
       $$('[data-metric]').forEach(b=>b.onclick=()=>{state.chartMetric=b.dataset.metric;$$('[data-metric]').forEach(x=>x.classList.toggle('active',x===b));renderChart(id,state.chartMetric)});
@@ -483,4 +483,234 @@
     }
 
     init();
+
+    /* ================= 在线编辑模块（白名单 + GitLab API 直推 main） ================= */
+    /* 流程：编辑者粘贴自己的 GitLab PAT → /user 验证身份 → 比对 data/editors.json 白名单 →
+       字段化表单修改 → 提交前逐文件比对远端防并发覆盖 → /repository/commits 直推 main。 */
+    const EDITOR={active:false,token:sessionStorage.getItem('cw_editor_token')||'',user:sessionStorage.getItem('cw_editor_user')||'',files:{},pending:[]};
+    const ED_API_BASE='https://gitlab.nie.netease.com/api/v4';
+    const ED_API=ED_API_BASE+'/projects/'+encodeURIComponent('xmonitor/xmonitor.doc.nie.netease.com');
+    const ED_FILES=['periods','intel','hero-event-summaries','core-items','audience-profiles'];
+    const edFilePath=n=>'competitor-weekly/data/'+n+'.json';
+    function edDetectIndent(text){const m=text.match(/\n(\s+)"/);return m?m[1].length:0}
+    function edSerialize(name){const f=EDITOR.files[name];let t=f.indent?JSON.stringify(f.data,null,f.indent):JSON.stringify(f.data);if(f.trailing)t+='\n';return t}
+    async function edLoadFiles(){
+      for(const n of ED_FILES){
+        const r=await fetch('data/'+n+'.json?ts='+Date.now(),{cache:'no-store'});
+        if(!r.ok)throw new Error('读取 data/'+n+'.json 失败（HTTP '+r.status+'）');
+        const text=await r.text();
+        EDITOR.files[n]={text,data:JSON.parse(text),dirty:false,indent:edDetectIndent(text),trailing:text.endsWith('\n')};
+      }
+    }
+    async function edVerify(token){
+      const r=await fetch(ED_API_BASE+'/user',{headers:{'PRIVATE-TOKEN':token}});
+      if(!r.ok)throw new Error('Token 验证失败（HTTP '+r.status+'），请确认 Token 有效且勾选了 api 权限');
+      const u=await r.json();
+      let wl=null;
+      try{const wr=await fetch('data/editors.json?ts='+Date.now(),{cache:'no-store'});if(wr.ok)wl=await wr.json()}catch(e){}
+      if(!wl||!Array.isArray(wl.editors))throw new Error('白名单 data/editors.json 读取失败，请先在仓库创建该文件');
+      if(!wl.editors.includes(u.username))throw new Error('账号 @'+u.username+' 不在编辑白名单中，请联系管理员添加');
+      return u.username;
+    }
+    function edBtn(label,fn){const b=document.createElement('button');b.type='button';b.className='ed-btn';b.textContent=label;b.onclick=e=>{e.stopPropagation();fn()};return b}
+    function edShowDialogRaw(title,bodyHtml,buttons){
+      let dlg=$('#edDlg');
+      if(!dlg){dlg=document.createElement('dialog');dlg.id='edDlg';document.body.appendChild(dlg)}
+      dlg.innerHTML=`<div class="ed-dlg-head"><h2>${esc(title)}</h2><button type="button" class="icon-btn" id="edDlgClose" aria-label="关闭">×</button></div><div class="ed-dlg-body">${bodyHtml}</div><div class="ed-dlg-actions"></div>`;
+      const actions=dlg.querySelector('.ed-dlg-actions');
+      $('#edDlgClose').onclick=()=>dlg.close();
+      buttons.forEach(b=>{const btn=document.createElement('button');btn.type='button';btn.className=b.cls;btn.textContent=b.label;btn.onclick=()=>{if(b.fn()!==false)dlg.close()};actions.appendChild(btn)});
+      dlg.showModal();
+    }
+    function edFieldHtml(f){
+      const val=f.value==null?'':String(f.value),help=f.help?`<div class="ed-help">${f.help}</div>`:'';
+      if(f.type==='textarea')return `<div class="ed-field"><label>${esc(f.label)}</label><textarea id="ed_f_${f.key}" rows="${f.rows||4}">${esc(val)}</textarea>${help}</div>`;
+      if(f.type==='select')return `<div class="ed-field"><label>${esc(f.label)}</label><select id="ed_f_${f.key}">${f.options.map(o=>`<option value="${esc(o[0])}"${o[0]===val?' selected':''}>${esc(o[1])}</option>`).join('')}</select>${help}</div>`;
+      return `<div class="ed-field"><label>${esc(f.label)}</label><input id="ed_f_${f.key}" type="${f.type||'text'}" value="${esc(val)}">${help}</div>`;
+    }
+    const edVal=key=>{const el=$('#ed_f_'+key);return el?el.value:''};
+    function edOpenForm(title,fields,apply){
+      edShowDialogRaw(title,fields.map(edFieldHtml).join(''),[
+        {label:'取消',cls:'ghost-btn',fn:()=>{}},
+        {label:'保存到待提交',cls:'primary-btn',fn:()=>{const v={};fields.forEach(f=>v[f.key]=edVal(f.key));apply(v)}}
+      ]);
+    }
+    function edRenderBar(){
+      const bar=$('#edBar');if(!bar)return;
+      bar.innerHTML=`<span>编辑模式 · <strong>@${esc(EDITOR.user)}</strong></span><span>待提交 <strong>${EDITOR.pending.length}</strong> 项</span><span class="ed-spacer"></span><button type="button" class="ed-commit" id="edReviewBtn">提交更改</button><button type="button" id="edExitBtn">退出</button>`;
+      $('#edReviewBtn').onclick=edOpenCommit;
+      $('#edExitBtn').onclick=()=>{
+        if(EDITOR.pending.length&&!confirm('有 '+EDITOR.pending.length+' 项更改未提交，退出将丢失。确定退出？'))return;
+        sessionStorage.removeItem('cw_editor_token');sessionStorage.removeItem('cw_editor_user');location.reload();
+      };
+    }
+    function edAfterEdit(files,desc){
+      files.forEach(n=>{if(EDITOR.files[n])EDITOR.files[n].dirty=true});
+      EDITOR.pending.push(desc);edRenderBar();
+      if(state.view==='detail'&&state.detailId)openDetail(state.detailId,false);else if(state.view==='home')renderHome();
+      showToast('已暂存：'+desc);
+    }
+    function edItemPair(id){
+      const pid=state.period;
+      return {live:PERIODS[pid].items.find(x=>x.id===id),file:(EDITOR.files['periods'].data[pid].items||[]).find(x=>x.id===id)};
+    }
+    const edStatusOptions=()=>[['','自动判定'],['priority','异动'],['warning','关注'],['normal','平稳']];
+    function edOpenOverview(){
+      const pid=state.period,live=PERIODS[pid],file=EDITOR.files['periods'].data[pid];
+      edOpenForm('本期综述（'+pid+'）',[
+        {key:'overview',label:'综述 HTML',type:'textarea',rows:8,value:live.overview||'',help:'支持 &lt;p&gt; 分段、&lt;b&gt; 加粗、&lt;span class="dim"&gt; 标灰'},
+        {key:'tableCaption',label:'数据表口径小字',type:'textarea',value:live.tableCaption||'',help:'留空则使用默认口径文案'}
+      ],v=>{
+        const ov=v.overview.trim();if(ov){live.overview=ov;file.overview=ov}else{delete live.overview;delete file.overview}
+        const tc=v.tableCaption.trim();if(tc){live.tableCaption=tc;file.tableCaption=tc}else{delete live.tableCaption;delete file.tableCaption}
+        edAfterEdit(['periods'],'本期综述/口径');
+      });
+    }
+    function edOpenRow(id){
+      const {live,file}=edItemPair(id);if(!live||!file)return;
+      edOpenForm(META[id].name+' · 数据表文案',[
+        {key:'highlight',label:'运营亮点短句（≤30字）',value:live.highlight||'',help:'留空则回退到内置短句/变化说明'},
+        {key:'note',label:'变化说明 note',type:'textarea',value:live.note||''},
+        {key:'summary',label:'摘要 summary（英雄卡小字兜底来源）',type:'textarea',value:live.summary||''},
+        {key:'keywords',label:'关键词（逗号分隔）',value:(live.keywords||[]).join('，')},
+        {key:'statusOverride',label:'异动状态覆写',type:'select',value:live.statusOverride||'',options:edStatusOptions()}
+      ],v=>{
+        ['highlight','note','summary'].forEach(k=>{const val=v[k].trim();if(val){live[k]=val;file[k]=val}else{delete live[k];delete file[k]}});
+        const kw=v.keywords.split(/[,，、]/).map(s=>s.trim()).filter(Boolean);live.keywords=kw;file.keywords=kw;
+        if(v.statusOverride){live.statusOverride=v.statusOverride;file.statusOverride=v.statusOverride}else{delete live.statusOverride;delete file.statusOverride}
+        edAfterEdit(['periods'],META[id].name+' 数据表文案');
+      });
+    }
+    function edOpenHero(id){
+      const pid=state.period;
+      const liveIntelRoot=INTEL[pid]=INTEL[pid]||{},fileIntelRoot=EDITOR.files['intel'].data[pid]=EDITOR.files['intel'].data[pid]||{};
+      const li=liveIntelRoot[id]=liveIntelRoot[id]||{},fi=fileIntelRoot[id]=fileIntelRoot[id]||{};
+      const hsLive=(HERO_EVENT_SUMMARIES[pid]||{})[id]||'';
+      const {live:item,file:fitem}=edItemPair(id);
+      edOpenForm(META[id].name+' · 英雄卡文案',[
+        {key:'event',label:'活动标题',value:li.event||''},
+        {key:'conclusion',label:'结论/描述 conclusion',type:'textarea',value:li.conclusion||''},
+        {key:'tags',label:'标签（逗号分隔）',value:(li.tags||[]).join('，')},
+        {key:'heroSummary',label:'卡片小字（≤46字）',type:'textarea',value:hsLive,help:'留空则由系统从 summary 自动生成'},
+        {key:'heroRank',label:'英雄卡排序 heroRank（1-4，留空不参与）',type:'number',value:item&&item.heroRank!=null?item.heroRank:''},
+        {key:'statusOverride',label:'异动状态覆写',type:'select',value:item&&item.statusOverride||'',options:edStatusOptions()}
+      ],v=>{
+        li.event=v.event.trim();fi.event=li.event;
+        li.conclusion=v.conclusion.trim();fi.conclusion=li.conclusion;
+        const tags=v.tags.split(/[,，、]/).map(s=>s.trim()).filter(Boolean);li.tags=tags;fi.tags=tags;
+        HERO_EVENT_SUMMARIES[pid]=HERO_EVENT_SUMMARIES[pid]||{};
+        const fhs=EDITOR.files['hero-event-summaries'].data;fhs[pid]=fhs[pid]||{};
+        const hs=v.heroSummary.trim();
+        if(hs){HERO_EVENT_SUMMARIES[pid][id]=hs;fhs[pid][id]=hs}else{delete HERO_EVENT_SUMMARIES[pid][id];delete fhs[pid][id]}
+        if(item&&fitem){
+          const r=v.heroRank.trim();if(r){item.heroRank=Number(r);fitem.heroRank=Number(r)}else{delete item.heroRank;delete fitem.heroRank}
+          if(v.statusOverride){item.statusOverride=v.statusOverride;fitem.statusOverride=v.statusOverride}else{delete item.statusOverride;delete fitem.statusOverride}
+        }
+        edAfterEdit(['intel','hero-event-summaries','periods'],META[id].name+' 英雄卡文案');
+      });
+    }
+    function edOpenCore(id){
+      const pid=state.period;
+      const live=(CORE_REFERENCE_ITEMS[pid]||{})[id],file=((EDITOR.files['core-items'].data[pid])||{})[id];
+      if(!live||!file){showToast('该产品本期暂无核心内容条目');return}
+      const liveItems=Array.isArray(live)?live:(live.items||[]),fileItems=Array.isArray(file)?file:(file.items||[]);
+      const fields=[{key:'intro',label:'总结 intro（绿框引导句）',type:'textarea',value:Array.isArray(live)?'':(live.intro||'')}];
+      liveItems.forEach((it,i)=>{
+        fields.push({key:'type'+i,label:'条目 '+(i+1)+' 类型',type:'select',value:it.type||'玩法',options:Object.keys(CORE_TYPE_META).map(k=>[k,k])});
+        fields.push({key:'text'+i,label:'条目 '+(i+1)+' 正文：'+coreIntro(it.text).slice(0,24),type:'textarea',rows:6,value:it.text||''});
+      });
+      edOpenForm(META[id].name+' · 核心运营内容',fields,v=>{
+        if(!Array.isArray(live)){live.intro=v.intro.trim();file.intro=live.intro}
+        liveItems.forEach((it,i)=>{it.type=v['type'+i];it.text=v['text'+i];if(fileItems[i]){fileItems[i].type=it.type;fileItems[i].text=it.text}});
+        edAfterEdit(['core-items'],META[id].name+' 核心内容');
+      });
+    }
+    function edOpenAudience(id){
+      const live=window.__AUDIENCE_PROFILES&&window.__AUDIENCE_PROFILES[id],file=EDITOR.files['audience-profiles'].data[id];
+      if(!live||!file){showToast('该产品暂无画像数据');return}
+      edOpenForm(META[id].name+' · 画像来源说明',[
+        {key:'source',label:'来源说明',type:'textarea',value:live.source||''}
+      ],v=>{live.source=v.source.trim();file.source=live.source;edAfterEdit(['audience-profiles'],META[id].name+' 画像来源')});
+    }
+    function edInject(){
+      if(!EDITOR.active)return;
+      const ov=$('#periodOverview');
+      if(ov&&!ov.querySelector('.ed-btn'))ov.appendChild(edBtn('编辑综述',edOpenOverview));
+      $$('#anomalyGrid .p-card').forEach(card=>{
+        if(card.querySelector('.ed-btn'))return;
+        const link=card.querySelector('[data-detail]');if(!link)return;
+        card.appendChild(edBtn('编辑卡片',()=>edOpenHero(link.dataset.detail)));
+      });
+      $$('#competitorRows tr').forEach(tr=>{
+        if(tr.querySelector('.ed-btn'))return;
+        const link=tr.querySelector('[data-detail]'),td=tr.querySelector('.judge');
+        if(link&&td)td.appendChild(edBtn('✎',()=>edOpenRow(link.dataset.detail)));
+      });
+      const core=$('.core-content-module');
+      if(core){const head=core.querySelector('.core-content-head');if(head&&!head.querySelector('.ed-btn'))head.appendChild(edBtn('编辑核心内容',()=>edOpenCore(state.detailId)))}
+      const src=$('.detail-banner .ba-src');
+      if(src&&!src.querySelector('.ed-btn'))src.appendChild(edBtn('✎',()=>edOpenAudience(state.detailId)));
+    }
+    function edOpenCommit(){
+      if(!EDITOR.pending.length){showToast('暂无可提交的更改');return}
+      const list=EDITOR.pending.map(d=>`<li>${esc(d)}</li>`).join('');
+      edShowDialogRaw('提交到 GitLab',`<ul class="ed-pending-list">${list}</ul><div class="ed-field"><label>提交说明</label><input id="edCommitMsg" value="在线编辑：${state.period} 期文案修订（@${esc(EDITOR.user)}）"></div><div class="ed-help">提交后 GitLab Pages 约 1-2 分钟自动发布，强刷页面即可看到。</div>`,[
+        {label:'取消',cls:'ghost-btn',fn:()=>{}},
+        {label:'确认提交',cls:'primary-btn',fn:()=>{edDoCommit($('#edCommitMsg').value.trim());return false}}
+      ]);
+    }
+    async function edDoCommit(msg){
+      showToast('正在提交…');
+      try{
+        const dirty=ED_FILES.filter(n=>EDITOR.files[n]&&EDITOR.files[n].dirty);
+        if(!dirty.length){showToast('暂无可提交的更改');return}
+        for(const n of dirty){
+          const r=await fetch(ED_API+'/repository/files/'+encodeURIComponent(edFilePath(n))+'/raw?ref=main',{headers:{'PRIVATE-TOKEN':EDITOR.token}});
+          if(!r.ok)throw new Error('读取远端 '+n+'.json 失败（HTTP '+r.status+'）');
+          const remote=await r.text();
+          if(remote.replace(/\s+$/,'')!==EDITOR.files[n].text.replace(/\s+$/,''))throw new Error(n+'.json 线上已有新改动，请退出编辑模式刷新页面后重新修改');
+        }
+        const res=await fetch(ED_API+'/repository/commits',{method:'POST',headers:{'PRIVATE-TOKEN':EDITOR.token,'Content-Type':'application/json'},body:JSON.stringify({branch:'main',commit_message:msg||'在线编辑',actions:dirty.map(n=>({action:'update',file_path:edFilePath(n),content:edSerialize(n)}))})});
+        if(!res.ok)throw new Error('提交失败（HTTP '+res.status+'）：'+(await res.text()).slice(0,200));
+        dirty.forEach(n=>{EDITOR.files[n].dirty=false;EDITOR.files[n].text=edSerialize(n)});
+        EDITOR.pending=[];edRenderBar();
+        const dlg=$('#edDlg');if(dlg)dlg.close();
+        showToast('已提交到 main，约 1-2 分钟后线上生效');
+      }catch(e){showToast(e.message)}
+    }
+    function edAskToken(){
+      return new Promise(resolve=>{
+        edShowDialogRaw('进入编辑模式',`<div class="ed-field"><label>GitLab Personal Access Token</label><input id="edTokenInput" type="password" placeholder="glpat-..." autocomplete="off"><div class="ed-help">在 GitLab → 个人设置 → Access Tokens 创建，需勾选 <b>api</b> 权限；Token 仅保存在当前浏览器会话，关闭即清除。</div></div>`,[
+          {label:'取消',cls:'ghost-btn',fn:()=>{resolve(null)}},
+          {label:'验证并进入',cls:'primary-btn',fn:()=>{resolve(($('#edTokenInput').value||'').trim())}}
+        ]);
+      });
+    }
+    async function edEnter(){
+      try{
+        if(!EDITOR.user){
+          const token=await edAskToken();
+          if(!token)return;
+          showToast('正在验证身份…');
+          EDITOR.token=token;
+          EDITOR.user=await edVerify(token);
+          sessionStorage.setItem('cw_editor_token',token);
+          sessionStorage.setItem('cw_editor_user',EDITOR.user);
+        }
+        showToast('正在加载最新数据…');
+        await edLoadFiles();
+        EDITOR.active=true;document.body.classList.add('editing');
+        $('#edFab').classList.add('hidden');$('#edBar').classList.remove('hidden');
+        edRenderBar();edInject();
+        showToast('已进入编辑模式：@'+EDITOR.user);
+      }catch(e){EDITOR.token='';EDITOR.user='';sessionStorage.removeItem('cw_editor_token');sessionStorage.removeItem('cw_editor_user');showToast(e.message)}
+    }
+    const edOrigRenderHome=renderHome,edOrigRenderRows=renderRows,edOrigOpenDetail=openDetail;
+    renderHome=function(){edOrigRenderHome.apply(this,arguments);edInject()};
+    renderRows=function(){edOrigRenderRows.apply(this,arguments);edInject()};
+    openDetail=function(){edOrigOpenDetail.apply(this,arguments);edInject()};
+    (function edInit(){
+      const fab=document.createElement('button');fab.id='edFab';fab.className='ed-fab';fab.type='button';fab.textContent='✎ 编辑模式';fab.onclick=edEnter;document.body.appendChild(fab);
+      const bar=document.createElement('div');bar.id='edBar';bar.className='ed-bar hidden';document.body.appendChild(bar);
+    })();
   
