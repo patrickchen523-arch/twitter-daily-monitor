@@ -413,8 +413,8 @@
     }
 
     /* 在线编辑模式（白名单 + GitLab API 直推） */
-    .ed-fab{position:fixed;right:22px;bottom:22px;z-index:120;height:42px;padding:0 16px;border-radius:21px;border:0;background:#2e6bd9;color:#fff;font-weight:800;font-size:13px;box-shadow:0 10px 26px rgba(46,107,217,.4)}
-    .ed-fab:hover{background:#1f56bd}
+    .ed-top-btn{margin-left:auto;width:40px;height:40px;border:0;border-radius:8px;background:transparent;color:#637083;display:grid;place-items:center}
+    .ed-top-btn:hover{background:#f0f3f7;color:var(--ink)}
     body.editing{padding-bottom:58px}
     .ed-bar{position:fixed;left:0;right:0;bottom:0;z-index:119;background:#111a2e;color:#fff;display:flex;align-items:center;gap:14px;padding:10px 18px;font-size:13px;box-shadow:0 -6px 24px rgba(17,26,46,.25)}
     .ed-bar strong{color:#ffd183}
@@ -442,7 +442,6 @@
     .ed-field .ed-help{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5}
     .ed-pending-list{margin:0 0 12px;padding-left:18px;font-size:13px;line-height:1.9;color:#344258}
     @media(max-width:680px){
-      .ed-fab{right:12px;bottom:12px;height:38px;font-size:12px}
       .ed-bar{flex-wrap:wrap;gap:8px;font-size:12px}
       #edDlg .ed-dlg-body{max-height:calc(100vh - 170px)}
     }

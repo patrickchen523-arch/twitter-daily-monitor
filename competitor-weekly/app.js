@@ -710,7 +710,11 @@
     renderRows=function(){edOrigRenderRows.apply(this,arguments);edInject()};
     openDetail=function(){edOrigOpenDetail.apply(this,arguments);edInject()};
     (function edInit(){
-      const fab=document.createElement('button');fab.id='edFab';fab.className='ed-fab';fab.type='button';fab.textContent='✎ 编辑模式';fab.onclick=edEnter;document.body.appendChild(fab);
+      const fab=document.createElement('button');fab.id='edFab';fab.className='ed-top-btn';fab.type='button';fab.title='编辑模式';fab.setAttribute('aria-label','编辑模式');
+      fab.innerHTML='<svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
+      fab.onclick=edEnter;
+      const topbar=document.querySelector('.topbar');
+      if(topbar)topbar.appendChild(fab);else document.body.appendChild(fab);
       const bar=document.createElement('div');bar.id='edBar';bar.className='ed-bar hidden';document.body.appendChild(bar);
     })();
   
