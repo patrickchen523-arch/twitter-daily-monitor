@@ -1,0 +1,476 @@
+{
+  "date": "2026-07-30",
+  "meta": {
+    "raw_count": 224,
+    "filtered_count": 203,
+    "selected_count": 12,
+    "note": "AI 3, Industry 4, Indie 4, Tools 1",
+    "crawl_time": "2026-07-30 11:30"
+  },
+  "lede": "物理木筏合作生存《SHORE》公布即80万浏览，合作游戏三连爆；ChatGPT通过MCP获得3D身体控制权；EA CEO拿$3870万奖金同年裁掉战地开发者。",
+  "editors_pick": [
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "4人物理木筏求生《SHORE》：每道浪和每份体重都会掀翻船——6.8K赞80万浏览"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "ChatGPT通过MCP控制3D虚拟形象：不只是说话，还能做动作"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 3,
+      "hook": "Celeste像素画师手绘恐怖RPG《Neverway》：1.7万赞，序章已上线"
+    }
+  ],
+  "daily_summary": "**合作游戏迎来三连爆**\n物理木筏生存《SHORE》公布即80万浏览——每道浪和每份体重都会掀翻船；无人数上限的整理游戏《Tidy Up Together》让你喊全好友来收拾4000件散落商品；3人roguelite《Guns & Dragons》魔法×枪械混搭。同一周，Celeste像素画师手绘的恐怖RPG《Neverway》靠1.7万赞证明：合作之外的另一条路是作者性。\n\n**AI的两极：身体与眼睛**\nChatGPT通过MCP获得3D虚拟形象的控制权，从\"会说话\"到\"会做动作\"；开源项目PixelRAG给Claude装上眼睛——不解析DOM，直接截图让视觉模型读像素，3000万张维基截图的索引在QA上反超最佳文本RAG 18.1%。陈成的70多个skill开始自发串联：四个字\"写篇文章\"触发三个skill接力。\n\n**奖金与裁员同一年发生**\nEA的10K报告：CEO Andrew Wilson拿走近$3870万奖金（战地6\"达成全部里程碑\"），同年Criterion、DICE等战地团队被裁；Double Fine脱离Xbox独立后裁掉23人（约1/4）以求\"可持续的规模\"。而Krafton的Subnautica 2用22天500万份证明：给开发者兑现奖金的公司，才有下一个franchise。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。",
+  "digest": [
+    {
+      "id": "ai",
+      "text": "ChatGPT通过MCP获得3D虚拟形象控制权：从说话到做动作\nPixelRAG：截图代替DOM解析，视觉索引3000万张反超文本RAG 18.1%\n陈成：70多个skill开始自发串联，四个字触发三skill接力"
+    },
+    {
+      "id": "industry",
+      "text": "EA CEO奖金$3870万同年裁战地开发者，沙特收购后10K报告将成绝响\nSubnautica 2发售22天破500万，Krafton承诺做成franchise IP\nDouble Fine脱离Xbox后裁员23人：为可持续的规模\n明末续作确认：夏思源新工作室Indolphinity联手505 Games"
+    },
+    {
+      "id": "indie",
+      "text": "SHORE：4人物理木筏合作生存，公布即80万浏览\nTidy Up Together：无人数上限整理游戏，4000件商品人海战术\nGuns & Dragons：3人roguelite FPS，魔法×枪械45种武器\nNeverway：Celeste像素画师手绘恐怖RPG，序章已上线"
+    },
+    {
+      "id": "tools",
+      "text": "Meta工程师的Linux补丁：Steam Deck 1% low帧率提升31.8%"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "开发者演示 · MCP应用",
+          "tags": [
+            "ChatGPT",
+            "MCP",
+            "3D虚拟形象",
+            "动画"
+          ],
+          "title": "ChatGPT通过MCP控制3D虚拟形象：从\"会说话\"到\"会做动作\"",
+          "en_title": "ChatGPT can now control its 3D persona. Through MCP, it can perform custom animations, not just speak.",
+          "full_text": "ChatGPT can now control its 3D persona.\n\nThrough MCP, it can perform custom animations, not just speak.\n\nCheck out the demo below.",
+          "author": "xikhar",
+          "date": "2026-07-28",
+          "likes": 5256,
+          "views": 339491,
+          "link": "https://x.com/xikhar/status/2082220460486639929",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2082220265082331136/img/hPrBVj45VEPx8jmq.jpg",
+            "video_url": "https://x.com/xikhar/status/2082220460486639929/video/1"
+          },
+          "summary": "开发者Shikhar演示：通过MCP协议让ChatGPT获得对3D虚拟形象（persona）的控制能力——不只输出语音，还能实时执行自定义动画动作。5256赞、33.9万浏览。",
+          "analysis": "MCP的应用边界从\"读写数据\"扩展到\"驱动身体\"。对游戏和虚拟人赛道，这意味着NPC/虚拟主播的驱动层可以直接挂接通用agent，形象表现与对话决策不再需要两套系统缝合。",
+          "recommendation": "ChatGPT通过MCP控制3D形象做动作，虚拟人驱动层迎来通用接口",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "开源项目 · RAG新范式",
+          "tags": [
+            "PixelRAG",
+            "视觉RAG",
+            "开源",
+            "Claude Code"
+          ],
+          "title": "PixelRAG：不解析DOM直接读像素，视觉索引3000万张反超文本RAG 18.1%",
+          "en_title": "EL WEB SCRAPING HA MUERTO. Han creado PixelRAG. Un sistema open source que pasa de parsear HTML. En vez de convertir una web en texto... hace una captura de pantalla.",
+          "full_text": "🚨EL WEB SCRAPING HA MUERTO🚨\n\nHan creado PixelRAG.\n\nUn sistema open source que pasa de parsear HTML.\n\nEn vez de convertir una web en texto...\n\nhace una captura de pantalla.\n\nY luego un modelo vision-language lee la respuesta directamente desde los píxeles.\n\nPorque el scraping tradicional rompe muchísima información:\n→ tablas\n→ gráficos\n→ layouts\n→ columnas\n→ botones\n→ PDFs\n→ páginas mal estructuradas\n\nPixelRAG hace algo mucho más simple:\nindexa la página tal y como la ve una persona.\n\nEl equipo ha creado un índice visual de Wikipedia entero:\n+30 millones de screenshots.\n\nY aun así supera al mejor RAG basado en texto por un 18,1% en QA.\n\nTiene también un plugin para Claude Code.\nBásicamente le da ojos a Claude.\n\nCómo funciona:\n→ renderiza webs, PDFs e imágenes en tiles\n→ los embebe con Qwen3-VL-Embedding\n→ construye un índice FAISS\n→ busca visualmente sobre píxeles\n\nTodo open source bajo Apache-2.0.",
+          "author": "josesilesdata",
+          "date": "2026-07-28",
+          "likes": 3201,
+          "views": 205725,
+          "link": "https://x.com/josesilesdata/status/2082194990592069660",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2082194957343842304/pu/img/HYMyONcvGlzrDHUR.jpg",
+            "video_url": "https://x.com/josesilesdata/status/2082194990592069660/video/1"
+          },
+          "summary": "José Siles介绍开源项目PixelRAG：放弃解析HTML/DOM，改为直接截图让视觉语言模型从像素中读取答案——传统 scraping 会丢失表格、图表、版式、按钮等信息。团队已建立整个Wikipedia的视觉索引（超3000万张截图），QA表现反超最佳文本RAG 18.1%。技术栈为Qwen3-VL-Embedding+FAISS，Apache-2.0开源，并提供Claude Code插件。3201赞、20.6万浏览。",
+          "analysis": "\"按人看到的方式索引页面\"绕过了HTML解析的信息损耗，对游戏研究（wiki攻略站、数据表密集的patch说明、图文混排的设计文档）是天然更优的检索方案；Claude Code插件意味着这条链路可以直接进开发工作流。",
+          "recommendation": "PixelRAG：给Claude装眼睛，3000万张截图索引反超文本RAG 18.1%",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "陈成 · Agent工作流",
+          "tags": [
+            "Claude Code",
+            "skill",
+            "自组织",
+            "工作流"
+          ],
+          "title": "陈成：70多个skill开始自发串联，\"写篇文章\"四个字触发三skill接力",
+          "en_title": "攒到七十多个之后，开始有我没安排过的 loop 自己冒出来。我说一句「写篇文章」，写作那个 skill 跑去调了去 AI 味的 skill，去 AI 味的时候又翻了我的个人资料 skill 拿真实经历。",
+          "full_text": "现在每干完一件事，都会顺手把它存成一个 skill。\n\n短期是亏的。事都干完了，还要再花二十分钟把过程写成文档，挺烦的。\n\n攒到七十多个之后，开始有我没安排过的 loop 自己冒出来。\n\n我说一句「写篇文章」，写作那个 skill 跑去调了去 AI 味的 skill，去 AI 味的时候又翻了我的个人资料 skill 拿真实经历。我总共只说了四个字。\n\n今天这个 loop 更清楚。有人反馈 qodercli 敲 `--list-models`，列表都打完了，进程还要挂 1~4 秒才退出。收反馈的 skill 把它捞进来，分诊台 skill 收成 0021 号，对着代码库查出来是退出时在同步传遥测，研发 skill 那边接成 0009 号需求。我干的事就是敲了个 `--from-triage 0021`。\n\n这三个 skill 是隔了几天分三次写的，当时没想过要串。",
+          "author": "chenchengpro",
+          "date": "2026-07-29",
+          "likes": 31,
+          "views": 5546,
+          "link": "https://x.com/chenchengpro/status/2082445424343101698",
+          "media": null,
+          "summary": "陈成分享skill积累方法论的最新进展：每做完一件事就花20分钟存成skill，攒到70多个后开始\"自发串联\"——说\"写篇文章\"四个字，写作skill自动调用去AI味skill、再翻个人资料skill取真实经历；用户反馈qodercli退出卡顿，收反馈skill→分诊台skill（0021号）→研发skill（0009号需求）自动流转定位到同步传遥测问题，他只做了一次分诊指令。",
+          "analysis": "这是agent工作流从\"人工编排\"走向\"能力涌现\"的一线实证：当skill库过了临界点，组合价值开始超过单点价值。对游戏团队搭建AI管线，\"先沉淀、后串联\"的路径比一上来设计完美工作流更可行——短期是亏的，长期是复利。",
+          "recommendation": "陈成：skill库过临界点后自发串联，短期亏本长期复利"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 高管薪酬",
+          "tags": [
+            "EA",
+            "Andrew Wilson",
+            "奖金",
+            "裁员"
+          ],
+          "title": "EA CEO拿走近$3870万奖金的同年，战地开发者被裁——10K报告的最后读数",
+          "en_title": "After laying off Battlefield 6 devs, EA boss Andrew Wilson's bonus rose $8m to $38m last year, thanks to the game's success across \"all milestones\"",
+          "full_text": "After laying off Battlefield 6 devs, EA boss Andrew Wilson's bonus rose $8m to $38m last year, thanks to the game's success across \"all milestones\"",
+          "author": "eurogamer",
+          "date": "2026-07-29",
+          "likes": 1031,
+          "views": 98706,
+          "link": "https://x.com/eurogamer/status/2082397004521460206",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HOYmrG6XEAAA0xx.jpg"
+          },
+          "summary": "EA最新10K年报显示：CEO Andrew Wilson 2026财年股票+奖金合计$38,694,984（较上年增加$800万），理由是战地6\"达成全部高质量发售里程碑\"、FC达成留存目标、公司执行了\"大胆\"AI战略（Gen AI投资框架）。CFO等四位高管各拿$830-1370万。同一财年，Criterion、DICE、Ripple Effect、Motive等战地团队经历裁员。Eurogamer特别指出：沙特杠杆收购完成后EA将私有化，10K报告将不再公开。",
+          "analysis": "高管奖金与开发者裁员在同一财年的对照，是行业薪酬结构争议的最新实锤；而\"达成全部里程碑\"的奖金口径，恰好解释了为什么大厂管理层有动力压缩成本冲指标。沙特收购后这类透明度也将消失——读10K报且读且珍惜。",
+          "recommendation": "EA CEO奖金$3870万同年裁战地开发者，私有化后10K将成绝响",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 市场数据",
+          "tags": [
+            "Subnautica 2",
+            "Krafton",
+            "销量",
+            "franchise"
+          ],
+          "title": "Subnautica 2发售22天破500万份，Krafton官宣做成\"franchise IP\"",
+          "en_title": "Krafton pledges to turn Subnautica into \"franchise IP\" after Subnautica 2 surpasses 5m sales in just 22 days",
+          "full_text": "Krafton pledges to turn Subnautica into \"franchise IP\" after Subnautica 2 surpasses 5m sales in just 22 days",
+          "author": "eurogamer",
+          "date": "2026-07-29",
+          "likes": 4,
+          "views": 5200,
+          "link": "https://x.com/eurogamer/status/2082437264047550531",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HOZNk_RWwAAbOxq.jpg"
+          },
+          "summary": "Krafton二季度财报确认：《Subnautica 2》自5月14日EA发售（XSX/PC）起22天销量突破500万份，系列上半年贡献收入2325亿韩元（约£1.21亿）。公司承诺将其打造为\"franchise IP\"。背后是历时一年的宫斗剧：Krafton驱逐Unknown Worlds创始管理层（被控为逃避$2.5亿奖金、CEO甚至咨询ChatGPT如何拒付），美国法院判创始团队胜诉，最终以Krafton向全体员工支付奖金和解。",
+          "analysis": "22天500万的EA（抢先体验）成绩，放在生存品类是顶级速度；而这场宫斗的结局——法院判决+全员奖金——给行业上了一课：试图用财务手段赖掉开发者对赌协议的公司，最终付出的代价远高于奖金本身。",
+          "recommendation": "Subnautica 2二十二天500万份，宫斗剧以全员奖金收场",
+          "featured": true,
+          "game_ref": "Subnautica 2",
+          "enrichment": {
+            "game_name": "Subnautica 2",
+            "genre": "水下生存 / 开放世界 / 合作",
+            "developer": "Unknown Worlds Entertainment",
+            "platforms": [
+              "Steam",
+              "Xbox Series X/S"
+            ],
+            "price": "$29.99",
+            "release_date": "已发售 · 2026年5月14日（抢先体验）",
+            "steam_rating": "特别好评（11.3万条评价）",
+            "steam_url": "https://store.steampowered.com/app/1962700/Subnautica_2/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/header.jpg?t=1780372044",
+            "youtube_video": null,
+            "description": "【核心玩法】外星海洋星球的开放世界生存：建造基地、潜水载具、管理氧气与深度压力，在美丽而危险的水下生态中探索剧情。相比初代强化多人合作体验。【市场表现】EA发售22天销量破500万份；系列上半年收入2325亿韩元；Steam 11.3万条评价特别好评；Krafton官宣将打造为franchise IP。【开发风波】Krafton去年驱逐创始管理层引发诉讼（涉$2.5亿对赌奖金），美国法院判创始团队胜诉，最终和解并向全体员工支付奖金——游戏品质全程未受宫斗影响。【优势】水下世界独一无二；合作模式成熟；生存建造深度足。【不足】EA阶段内容未完整；吃配置。【综合】2026年生存品类头号商业爆款，也是开发者权益保护的标志性案例。",
+            "why_notable": "22天500万份的EA速度+宫斗剧全员奖金结局，商业与行业治理双重样本",
+            "estimated_sales": "500万份（发售22天，Krafton官方）"
+          }
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · 裁员",
+          "tags": [
+            "Double Fine",
+            "裁员",
+            "Xbox",
+            "独立"
+          ],
+          "title": "Double Fine脱离Xbox后裁员23人：\"只为工作室能活下去\"",
+          "en_title": "Double Fine hit with layoffs after exiting Xbox - \"The people we are losing were all important\"",
+          "full_text": "Double Fine hit with layoffs after exiting Xbox - \"The people we are losing were all important\".",
+          "author": "eurogamer",
+          "date": "2026-07-29",
+          "likes": 7,
+          "views": 6705,
+          "link": "https://x.com/eurogamer/status/2082398498238992674",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HOYqYePWYAIvcKT.jpg"
+          },
+          "summary": "Tim Schafer宣布Double Fine裁员23人（裁员前约90人，约1/4）：\"只有工作室的生存才能让我们考虑如此痛苦的行动……转型为独立公司也意味着要变成我们能养得起的规模\"。Xbox发言人称Double Fine已于本周早些时候完全回归独立管理，带走了IP、产品目录和后续项目的runway。Xbox时期作品：Psychonauts 2、Keeper、陶艺多人游戏Kiln。",
+          "analysis": "从Xbox\"被出售\"到独立后立刻裁员1/4，Double Fine的处境说明：大厂庇护消失后，中型工作室的第一课是现金流纪律。带着IP和目录独立是好消息，但\"可持续的规模\"这句话，会是今年很多被剥离工作室的共同台词。",
+          "recommendation": "Double Fine独立后裁1/4：带IP出走，先学现金流纪律"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "PC Gamer · 国产游戏",
+          "tags": [
+            "明末",
+            "续作",
+            "夏思源",
+            "505 Games"
+          ],
+          "title": "明末续作确认：夏思源新工作室Indolphinity联手505 Games共创IP新章",
+          "en_title": "Soulslike game Wuchang is officially getting a sequel developed by its original creator",
+          "full_text": "Soulslike game Wuchang is officially getting a sequel developed by its original creator",
+          "author": "pcgamer",
+          "date": "2026-07-29",
+          "likes": 119,
+          "views": 25018,
+          "link": "https://x.com/pcgamer/status/2082463041346814281",
+          "media": null,
+          "summary": "505 Games官宣与《明末：渊虚之羽》原创作者夏思源及其新工作室Indolphinity（成都递归海豚科技）达成合作，共同开发WUCHANG IP新篇章：Indolphinity主导创意开发，505 Games出资并负责全球发行，开发仍扎根中国。前情：明末全平台玩家破500万后，导演夏思源与部分员工被曝离开灵泽，IP四月以约$460万售予505母公司Digital Bros；Digital Bros联席CEO称\"坚信Wuchang能成为长期全球franchise\"。",
+          "analysis": "三天前我们刚报道\"明末500万玩家、团队已散\"，续作落地方案就已官宣——原创作者新设工作室+原发行商出资出全球渠道，是IP归属动荡后最体面的解法。国产单机的续作开发模式（创作者IP+全球发行）正在跑通。",
+          "recommendation": "明末续作：夏思源新工作室主导创意，505出资全球发行"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Indie Game Joe · KOL推荐",
+          "tags": [
+            "合作生存",
+            "物理模拟",
+            "木筏",
+            "海洋"
+          ],
+          "title": "SHORE：4人物理木筏合作生存，每道浪和每份体重都会掀翻船",
+          "en_title": "A new co-op game has been announced where you and your friends must survive together on a fragile physics-based raft",
+          "full_text": "A new co-op game has been announced where you and your friends must survive together on a fragile physics-based raft\n\n- Every wave and weight tilts the raft\n- Fight storms, sharks, whirlpools, starvation\n- Must find your way back home\n\nIt's called SHORE. Would you play this?",
+          "author": "IndieGameJoe",
+          "date": "2026-07-28",
+          "likes": 6772,
+          "views": 798686,
+          "link": "https://x.com/IndieGameJoe/status/2082206224066470040",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2082201234740539392/img/U-1PCyM0dn9112xK.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2082206224066470040/video/1"
+          },
+          "summary": "Indie Game Joe推荐Underdog工作室的《SHORE》：1-4人合作生存，被困大洋中央的脆弱物理木筏上——每道浪、每个人的体重都会让筏子倾斜，对抗风暴、鲨鱼、漩涡与饥饿，找到回家的路。6772赞、79.9万浏览。",
+          "analysis": "",
+          "recommendation": "SHORE：物理木筏×合作生存，体重也是物理变量",
+          "featured": true,
+          "game_ref": "SHORE",
+          "enrichment": {
+            "game_name": "SHORE",
+            "genre": "合作生存 / 物理模拟 / 冒险",
+            "developer": "Underdog",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2026年Q4",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4280880/SHORE/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4280880/9958d1ebd6224ff3f8f8807f37059d8d7e1a7075/header.jpg?t=1785319599",
+            "youtube_video": null,
+            "description": "【核心玩法】1-4人合作生存冒险：漂流在大洋中央的脆弱物理木筏上，对抗风暴、海啸、鲨鱼与饥饿，寻找回家的路。【机制亮点】全真物理木筏——每道浪、每份体重都会改变筏子姿态，\"站位\"本身就是合作策略；玩家的移动从操作变成物理博弈，天然制造混乱笑点。【对标定位】《Raft》的物理化、派对化演进：从建造驱动转向物理求生驱动。【传播】公布推文80万浏览、6772赞，与同日另一款木筏派对游戏（Sponge Break）撞出\"木筏合作游戏撞车日\"话题。【优势】物理混乱=直播效果；合作生存的强社交粘性。【不足】Q4 2026发售尚早；物理手感的挫败/乐趣平衡是最大风险。【综合】下半年合作生存赛道的重点候选。",
+            "why_notable": "把《Raft》的建造驱动换成物理求生驱动，\"体重掀翻船\"一句话就讲清了传播点",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "AUTOMATON · 新作公布",
+          "tags": [
+            "整理游戏",
+            "无人数上限",
+            "合作",
+            "禅系"
+          ],
+          "title": "Tidy Up Together：无人数上限的幻想整理游戏，4000件商品喊全好友来收拾",
+          "en_title": "「プレイ人数無制限」ファンタジーお片付けゲーム『Tidy Up Together』8月14日配信へ。4000点超えアイテムを本気仕分け、フレンド総出の“人海戦術”も可",
+          "full_text": "【ニュース】「プレイ人数無制限」ファンタジーお片付けゲーム『Tidy Up Together』8月14日配信へ。4000点超えアイテムを本気仕分け、フレンド総出の“人海戦術”も可",
+          "author": "AUTOMATONJapan",
+          "date": "2026-07-29",
+          "likes": 4984,
+          "views": 674169,
+          "link": "https://x.com/AUTOMATONJapan/status/2082280595825328384",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HOXAMQHb0AAMr4l.jpg"
+          },
+          "summary": "AUTOMATON报道英国个人开发者Malum Games的《Tidy Up Together》：邪恶巫师的龙卷风魔法把冒险者商店4000多件商品吹了一地，玩家一人称视角把大剑、魔导书、药水、衣服、玩具乃至菠萝寿司分回12类货架。无时间限制无game over，整理中解锁搬运能力；在线合作不设人数上限，可发动朋友\"人海战术\"。8月14日Steam发售。4984赞、67.4万浏览。",
+          "analysis": "",
+          "recommendation": "Tidy Up Together：无人数上限的整理禅，4000件商品的人海战术",
+          "featured": true,
+          "game_ref": "Tidy Up Together",
+          "enrichment": {
+            "game_name": "Tidy Up Together",
+            "genre": "整理模拟 / 禅系 / 合作",
+            "developer": "Malum Games（英国个人开发者）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2026年8月14日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4950470/Tidy_Up_Together/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4950470/149d93f0f06c5c7b25c4e1edb4515992cc7e6d2c/header.jpg?t=1784150798",
+            "youtube_video": null,
+            "description": "【核心玩法】一人称整理模拟：邪恶巫师的龙卷风把冒险者商店4000+件商品吹散一地，玩家把商品逐一归位到12类货架——大剑、魔导书、药水、衣服、玩具，甚至菠萝和寿司。无时间限制、无game over，纯禅系整理；整理进度解锁携带量与效率能力。【机制亮点】在线合作不设人数上限——朋友想叫多少就叫多少，\"人海战术\"把禅系整理变成派对协作。【开发者】英国个人开发者Malum Games，前作《Escape from Kyoto House》126条评价92%\"非常好评\"。【对标定位】《A Little to the Left》《Unpacking》的整理禅赛道+多人化。【优势】题材普适、观看即懂；无压力设计受众广；多人上限开放是社交裂变设计。【不足】单人重复作业的耐玩度依赖关卡变化；体量偏小。【综合】8月合作休闲的稳妥选择，直播连麦整理有天然综艺感。",
+            "why_notable": "整理禅品类首个\"无人数上限\"合作设计，禅系游戏的社交化改造样本",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "FPS G33KS · 新作公布",
+          "tags": [
+            "roguelite",
+            "合作FPS",
+            "魔法枪械",
+            "基地建设"
+          ],
+          "title": "Guns & Dragons：3人roguelite FPS，魔法×枪械45种武器打龙",
+          "en_title": "【ファンタジーなCo-opローグライトFPSが発表】『Guns & Dragons』最大3人で協力プレイできるローグライトFPS",
+          "full_text": "【ファンタジーなCo-opローグライトFPSが発表】\n\n『Guns & Dragons』\n\n・最大3人で協力プレイできるローグライトFPS\n\n・銃や弓を使ってモンスターやドラゴンと戦う\n\n・45種類以上の銃・弓・クロスボウが登場\n\n・ルーン・遺物・スキルを組み合わせて毎回異なるビルドを構築\n\n・武器は大幅なアップグレードで性能が進化\n\n・素材を集めて拠点を拡張・新装備を開発\n\n・ランごとに異なる展開が楽しめる高リプレイ性\n\n・ソロプレイにも対応\n\n・魔法×銃器を組み合わせたファンタジー世界が舞台 🔫🐉",
+          "author": "FPS_G33KS",
+          "date": "2026-07-29",
+          "likes": 6034,
+          "views": 527833,
+          "link": "https://x.com/FPS_G33KS/status/2082300081496100924",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2082252003896602624/img/AF42DucS4b_1lvsx.jpg",
+            "video_url": "https://x.com/FPS_G33KS/status/2082300081496100924/video/1"
+          },
+          "summary": "FPS G33KS报道ABUTTON发表的《Guns & Dragons》：最多3人合作的roguelite FPS——魔法×枪械的幻想世界，45种以上枪/弓/弩，符文、遗物、技能组合构筑，武器可大幅改造进化；每局结束用素材扩建基地、研发新装备，支持单人。6034赞、52.8万浏览。",
+          "analysis": "",
+          "recommendation": "Guns & Dragons：魔法×枪械3人roguelite，每局扩建基地",
+          "featured": true,
+          "game_ref": "Guns and Dragons",
+          "enrichment": {
+            "game_name": "Guns and Dragons",
+            "genre": "roguelite FPS / 合作",
+            "developer": "ABUTTON Inc.",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4687860/Guns_and_Dragons/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4687860/e683d4a1be5443ea6fa44feb1a16dfcb5c5d9c04/header.jpg?t=1785289093",
+            "youtube_video": null,
+            "description": "【核心玩法】最多3人合作roguelite FPS：魔法×枪械混搭的幻想世界，用45种以上枪、弓、弩迎击怪物与巨龙。局内拾取符文、遗物、技能组合构筑，武器可经大幅改造实现性能进化；局外用素材扩建基地、研发装备，形成\"局内构筑+局外成长\"双层roguelite循环。支持单人。【对标定位】《Gunfire Reborn》式的roguelite FPS合作，叠加基地建设元循环。【传播】公布推文52.8万浏览、6034赞——合作roguelite FPS是《枪火重生》验证过的中日通吃品类。【优势】题材混搭记忆点强；双层成长拉长留存；3人小规模车队友好。【不足】发售日未定；新工作室ABUTTON无历史作品背书。【综合】合作roguelite FPS赛道的新竞争者，关注实机手感与构筑深度。",
+            "why_notable": "\"魔法×枪械\"题材混搭+局外基地元循环，合作roguelite FPS品类红利仍在",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "官方账号 · 作者性作品",
+          "tags": [
+            "恐怖RPG",
+            "Celeste画师",
+            "Disasterpeace",
+            "自研引擎"
+          ],
+          "title": "Neverway：Celeste像素画师手绘恐怖RPG，1.7万赞序章已上线",
+          "en_title": "our indie game: hand drawn by Celeste's pixel artist, music by Disasterpeace, made on our own game engine, a slow-burning horror RPG",
+          "full_text": "our indie game:  \n- hand drawn by Celeste's pixel artist\n- music by Disasterpeace\n- made on our own game engine\n- a slow-burning horror RPG\n- meet (or date) 10+ charming characters  \n- fast-paced combat\n- customize your playstyle with crafted items and combat abilities",
+          "author": "coldbloodinc",
+          "date": "2026-07-28",
+          "likes": 17008,
+          "views": 363198,
+          "link": "https://x.com/coldbloodinc/status/2082247846229897303",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2082246629294555136/img/mTprbzjggcLCsG9O.jpg",
+            "video_url": "https://x.com/coldbloodinc/status/2082247846229897303/video/1"
+          },
+          "summary": "Coldblood Inc.官宣《Neverway》：Celeste像素画师手绘、Disasterpeace配乐、自研引擎的慢热恐怖RPG——10+可攻略（可约会）角色、快节奏战斗、制作物品与战斗技能自定义流派。序章（Prologue）已免费上线，正式版10月发售。1.7万赞、36.3万浏览，为今日独游类最高互动。",
+          "analysis": "",
+          "recommendation": "Neverway：Celeste画师×Disasterpeace，作者性恐怖RPG",
+          "featured": true,
+          "game_ref": "Neverway",
+          "enrichment": {
+            "game_name": "Neverway",
+            "genre": "恐怖RPG / 生活模拟 / 手绘像素",
+            "developer": "Coldblood Inc.（发行：Outersloth）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布（序章免费）",
+            "release_date": "2026年10月（序章已上线）",
+            "steam_rating": "未发售（序章可玩）",
+            "steam_url": "https://store.steampowered.com/app/2318330/Neverway/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2318330/9597af8151ee58cb5d8ca14b3cba33b2a574f35a/header.jpg?t=1776902248",
+            "youtube_video": null,
+            "description": "【核心玩法】慢热恐怖生活模拟RPG：Fiona辞去dead-end工作到农场重新开始，却成为已死神明的不朽使者——白天经营农场、结交（或约会）10+角色，夜晚直面恐怖；快节奏战斗+制作物品自定义流派。【阵容】Celeste像素画师手绘+Disasterpeace（FEZ/Hyper Light Drifter）配乐+自研引擎，独立游戏黄金班底。【叙事基调】\"慢热\"恐怖：生活模拟的温馨表层与神明债务的噩梦底层交织，类似《OMORI》的双层结构。【发行策略】免费序章先行蓄水，10月正式版收割——《Deltarune》式章节策略的独立版。【优势】作者性拉满（美术/音乐/引擎全部自有）；约会+恐怖的类型混搭差异化；免费序章降低尝试门槛。【不足】慢热节奏非大众口味；自研引擎的完成度风险。【综合】2026年Q4作者性独游的头号种子之一。",
+            "why_notable": "Celeste画师+Disasterpeace的作者性阵容，1.7万赞证明\"班底即传播\"仍然有效",
+            "pcu": "暂未发售"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "PC Gamer · 开源补丁",
+          "tags": [
+            "Linux",
+            "Steam Deck",
+            "AMD",
+            "性能优化"
+          ],
+          "title": "Meta工程师的Linux补丁：Steam Deck 1% low帧率提升31.8%",
+          "en_title": "Linux developer introduces feature that can boost Steam Deck's 1% low fps by 31%",
+          "full_text": "Linux developer introduces feature that can boost Steam Deck's 1% low fps by 31%",
+          "author": "pcgamer",
+          "date": "2026-07-29",
+          "likes": 361,
+          "views": 46640,
+          "link": "https://x.com/pcgamer/status/2082425735814520965",
+          "media": null,
+          "summary": "Meta的Linux内核工程师David Vernet发布AMD P-State驱动新特性'epp_boost'：针对游戏负载（单主线程+频繁短睡眠）做每核能效偏好提升。Phoronix用《文明6》实测：1% low帧率提升31.8%、帧时间改善4.1%，设置amd_pstate.epp_boost=1即可启用，新款Ryzen同样受益。361赞、4.7万浏览。",
+          "analysis": "一个内核参数把服役多年的掌机帧率稳定性拉高近1/3——Linux游戏生态的性能红利仍在快速兑现。对开发者，Steam Deck/Steam Machine的优化下限提高，意味着低配置机型的体验基线可以重新标定。",
+          "recommendation": "Linux补丁epp_boost：Steam Deck 1% low帧率+31.8%，一个参数的事"
+        }
+      ]
+    }
+  ]
+}
