@@ -1,0 +1,455 @@
+{
+ "date": "2026-07-31",
+ "meta": {
+  "raw_count": 202,
+  "filtered_count": 183,
+  "selected_count": 12,
+  "crawl_time": "2026-07-31 11:05"
+ },
+ "lede": "Skate Mates：两人各踩一只滑板互相甩锅的合作游戏，免费demo更新单日128万浏览\nKimi K3接管酒店机电建模：3工程师6周4.7万美元的活，1人9天1.05万美元完成\nXbox营收-7%、硬件-29%，CEO承认2亿新玩家没换来增长，承诺FY27回归增长",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "Skate Mates：两人各踩一只滑板互相甩锅，免费demo更新——128万浏览"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Kimi K3接管酒店机电建模：3工程师6周$4.7万→1工程师9天$1.05万"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Xbox营收-7%硬件-29%，CEO：2亿新玩家但业务未随受众增长"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Kimi K3接管酒店机电建模：3工程师6周$4.7万→1工程师9天$1.05万，变更单减60-80%\nClaude Code+Opus 5九小时合成WGSL着色器，做出带持久地形形变的WebGPU雪地demo\nGrok Build应用由Vercel托管：prompt到全球发布一键完成，AI应用分发管线成型"
+  },
+  {
+   "id": "industry",
+   "text": "Xbox营收-7%（-17亿美元）、硬件-29%，CEO承诺FY27结束前回归增长\n三星：内存短缺持续到2028、2027更严重，60-70%产能已被AI长约锁定\nFF7终章实体版未定：导演亲自争取，FF7 Rebirth实体占比48%说明盘仍有基本盘"
+  },
+  {
+   "id": "indie",
+   "text": "Skate Mates：两人各踩一只滑板互相甩锅的合作游戏，免费demo更新——128万浏览\nSir, We Have an Orc Problem：4个月开发增量塔防，首日毛收入36万美元\nMachine Party：Buckshot Roulette作者新作，致命派对游戏合集$6.79发售\nBills Must Be Paid：遭抖音克隆后正版发售，同接3740、97%好评"
+  },
+  {
+   "id": "tools",
+   "text": "Unity CLI发布：agent从终端驱动Editor跑Play模式/测试并返回JSON\n宋夏天3D地图skill：全球下钻到省市级、飞线撒点，Three.js+Vue已开源"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 中文科技博主",
+     "tags": [
+      "Kimi K3",
+      "AI工程落地",
+      "建筑建模"
+     ],
+     "title": "Kimi K3接入建模软件做酒店机电：3名工程师6周的活，1人9天完成",
+     "en_title": "一座3100万美元的酒店，190个房间的管道、电线、风管、消防系统全部提前建模协调完毕",
+     "full_text": "我靠，Kimi K3实在太强了：\n\n一座3100万美元的酒店。\n\n190个房间的所有管道、电线、风管、消防系统，全部提前建模协调完毕。\n\n以前：3个工程师，6周，花费约4.7万美元。\n现在：1个工程师确认AI输出，9天，总共约1.05万美元。\n\n方法很简单：\n\n把Kimi K3接到建模软件上，让它直接读蓝图照片和英文描述，然后自己把模型搭出来，而不是人一个一个组件去摆。\n\n施工阶段的变更单直接少了60%到80%。\n\n这不是演示，是真的在省钱、省时间、少出错。\n\n当AI开始真正碰“真实世界的复杂系统”，变化才刚刚开始。\n#kimi #kimik3 #k3",
+     "author": "huxlab",
+     "date": "2026-07-30",
+     "likes": 4483,
+     "views": 985996,
+     "link": "https://x.com/huxlab/status/2082664714245681348",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2082664531088855040/img/0lQUdOkfLeI3-bur.jpg",
+      "video_url": "https://x.com/huxlab/status/2082664714245681348/video/1"
+     },
+     "summary": "推主Hux展示将Kimi K3接入建模软件的真实案例：一座3100万美元、190个房间的酒店，全部管道、电线、风管、消防系统由AI读取蓝图照片和英文描述后自动完成建模协调。原本需要3名工程师、6周、约4.7万美元的工作，现在1名工程师确认AI输出、9天、约1.05万美元完成，施工阶段变更单减少60%-80%。",
+     "analysis": "AI正在从「生成内容」进入「操作专业软件处理真实复杂系统」的阶段。游戏行业的管线搭建、场景资源配置、技术美术协调同属「复杂系统协调」范畴，这类「AI读规格→直接产出可用工程文件」的能力一旦迁移过来，关卡搭建和TA环节的人力结构会首先被改写。",
+     "recommendation": "Kimi K3接管酒店机电建模：3工程师6周$4.7万→1工程师9天$1.05万，变更单减60-80%",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 科技媒体",
+     "tags": [
+      "Claude Code",
+      "Opus 5",
+      "WebGPU"
+     ],
+     "title": "Claude Code+Opus 5九小时写出SNOWFLOW：WebGPU雪地/御水术demo，地形持久形变",
+     "en_title": "Someone used Claude Code with Opus 5 to build SNOWFLOW, a browser WebGPU snow and waterbending demo with persistent terrain deformation in 9 hours",
+     "full_text": "Someone used Claude Code with Opus 5 to build SNOWFLOW, a browser WebGPU snow and waterbending demo with persistent terrain deformation in 9 hours.\n\n- Full-Stack Graphics Pipeline: Synthesized custom WGSL shaders, WebGPU pipelines, and Babylon.js terrain logic from scratch.\n- Interactive Terrain Deformation: Renders persistent snow trails, berms, and water-spell displacement that heal dynamically over time.\n- Visual Self-Correction: Opus 5 iterated on visual polish and shader bugs directly from browser screenshots.\n- 9-Hour Build Window: Delivered a production-ready WebGPU tech demo in 9 hours using ~4 million tokens.",
+     "author": "RoundtableSpace",
+     "date": "2026-07-29",
+     "likes": 1681,
+     "views": 122877,
+     "link": "https://x.com/RoundtableSpace/status/2082288752227926087",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2082250206418976769/img/D5AeoywAWx3G1G06.jpg",
+      "video_url": "https://x.com/RoundtableSpace/status/2082288752227926087/video/1"
+     },
+     "summary": "有开发者用Claude Code搭配Opus 5，9小时做出浏览器端WebGPU雪地与「御水术」演示SNOWFLOW：AI从零合成自定义WGSL着色器、WebGPU管线与Babylon.js地形逻辑；雪地足迹、雪堆与法术位移会持久留存并随时间动态「愈合」；Opus 5还能直接根据截图迭代视觉细节、修复shader bug。",
+     "analysis": "与昨天Anshu的「24小时全AI生成游戏」相比，这条的技术增量在图形栈层级：手写级WGSL着色器+持久地形形变是此前AI demo很少触及的深水区。AI正在从「拼游戏逻辑」下沉到「写图形管线」，技术美术岗位的能力定义需要重新评估。",
+     "recommendation": "Claude Code+Opus 5九小时合成WGSL着色器，做出带持久地形形变的WebGPU雪地demo",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · Vercel CEO",
+     "tags": [
+      "Grok",
+      "Vercel",
+      "AI应用分发"
+     ],
+     "title": "Grok Build应用接入Vercel托管：xAI与Vercel结成「prompt到发布」分发管线",
+     "en_title": "Grok Build apps (*.grok.me) are backed by @vercel hosting and CDN infrastructure",
+     "full_text": "Grok Build apps (*.𝚐𝚛𝚘𝚔.𝚖𝚎) are backed by @vercel hosting and CDN infrastructure.\n\nAnyone can now build software by just prompting @grok. Hit 🌐 Publish and ship to 1 user or 1 billion. Games, websites, internal apps, personal software… just @grok it.",
+     "author": "rauchg",
+     "date": "2026-07-30",
+     "likes": 556,
+     "views": 48255,
+     "link": "https://x.com/rauchg/status/2082841035093467229",
+     "media": null,
+     "summary": "Vercel CEO Guillermo Rauch宣布，Grok Build生成的应用（*.grok.me域名）全部由Vercel托管和CDN基础设施支撑。用户在Grok里用一句话prompt生成游戏、网站或内部工具后，点击Publish即可直接发布上线，「服务1个用户或10亿用户」。",
+     "analysis": "模型厂商不做托管、托管厂商不做模型，两家各取一段拼出完整的「AI应用商店」管线。对游戏分发的启示：当「做个小游戏并上线」被压缩到一次对话，独立开发者面对的竞争不只是同行，而是全民分发能力——差异化创意和长线运营能力的权重进一步上升。",
+     "recommendation": "Grok Build应用由Vercel托管：prompt到全球发布一键完成，AI应用分发管线成型",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 多家报道",
+     "tags": [
+      "微软财报",
+      "Xbox",
+      "裁员后续"
+     ],
+     "title": "Xbox季度营收-7%（-17亿美元）、硬件-29%，CEO承诺FY27结束前回归增长",
+     "en_title": "Xbox reports 10 percent drop in revenue across content and services following mass job cuts and studio offload, while Microsoft AI business booms",
+     "full_text": "Xbox reports 10 percent drop in revenue across content and services following mass job cuts and studio offload, while Microsoft AI business booms\n\nhttps://t.co/nwWGWIC89x https://t.co/D4jvWHTrsl",
+     "author": "eurogamer",
+     "date": "2026-07-30",
+     "likes": 9,
+     "views": 7805,
+     "link": "https://x.com/eurogamer/status/2082752722843914512",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOdsjqGXIAAWkYn.png"
+     },
+     "summary": "微软FY26 Q4财报：Xbox营收同比减少17亿美元（-7%），其中硬件收入大跌29%，内容与服务收入亦下滑（Eurogamer口径-10%）。CEO Asha Sharma发文承认「FY26有超过2亿新玩家来到Xbox和我们的游戏，但业务没有随受众增长」，承诺FY27结束前回归增长；Nadella称正在做「必要的决定」重置业务。同季微软云收入593亿美元（+27%）、Azure首破千亿美元。多家报道：Eurogamer、RPS、GameSpot、Polygon。",
+     "analysis": "裁员3200人、剥离4家工作室换来的首份财报依旧是硬件近三成跌幅，而公司整体AI业务狂飙——Xbox在微软内部的资源排序只会继续后移。「2亿新玩家但不增收」直指以量换价模式的天花板：用户规模不再等于收入，下一阶段的考核指标已明确换成单用户价值。",
+     "recommendation": "Xbox营收-7%、硬件-29%，CEO承认2亿新玩家没换来增长，承诺FY27回归增长",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "PC Gamer · 财报解读",
+     "tags": [
+      "内存危机",
+      "三星财报",
+      "硬件涨价"
+     ],
+     "title": "三星利润翻3.5倍仍警告：内存短缺持续至2028年，六七成产能已被长约锁死",
+     "en_title": "Samsung Electronics thinks the memory crisis isn't stopping till at least 2028",
+     "full_text": "Samsung Electronics thinks the memory crisis isn't stopping till at least 2028 https://t.co/NP3XIvsVSW",
+     "author": "pcgamer",
+     "date": "2026-07-30",
+     "likes": 15,
+     "views": 34496,
+     "link": "https://x.com/pcgamer/status/2082785937445232845",
+     "media": null,
+     "summary": "三星电子Q2营收171.5万亿韩元（约1190亿美元，同比翻倍以上），运营利润89.5万亿韩元（约620亿美元，同比3.5倍）。但IR负责人Daniel Oh在财报电话会警告：2027年供应紧张将比2026年更严重，短缺至少持续到2028年；客户正排队签多年期长约，三星60-70%产能已被此类协议锁定，2026年未满足的需求将结转2027年。同日Eurogamer报道英伟达GPU再涨最高30%。",
+     "analysis": "三星一边创纪录赚钱一边告诉你短缺会更久——这不是风险提示，是定价权宣言。对游戏业的传导路径很直接：硬件成本三年内没有回落预期，主机定价、Steam Machine/掌机的配置策略、玩家换机周期都要按「贵且缺」做基准假设，硬件买量驱动的用户增长模型同样承压。",
+     "recommendation": "三星：内存短缺持续到2028、2027更严重，60-70%产能已被AI长约锁定",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 采访",
+     "tags": [
+      "实体盘",
+      "数字所有权",
+      "Square Enix"
+     ],
+     "title": "FF7终章Revelation实体版悬而未决：导演浜口直树正争取「某种形式的实体版」",
+     "en_title": "Square Enix can't confirm a Final Fantasy 7 Revelation physical disc, but at least game director Hamaguchi is pushing for one",
+     "full_text": "Square Enix can't confirm a Final Fantasy 7 Revelation physical disc, but at least game director Hamaguchi is pushing for one\n\nhttps://t.co/pZ6lnhRndy https://t.co/7TDnzUOtfE",
+     "author": "eurogamer",
+     "date": "2026-07-30",
+     "likes": 39,
+     "views": 11571,
+     "link": "https://x.com/eurogamer/status/2082743913203564877",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOdkdGqa0AA3k3j.jpg"
+     },
+     "game_ref": "Final Fantasy VII Revelation",
+     "summary": "FF7重制三部曲终章《Final Fantasy 7 Revelation》定档2027年春（PS5/Xbox/Switch 2同步），距索尼停止生产PS实体盘（2028年1月）仅约一年。Square Enix尚未决定是否发行实体版，导演浜口直树在柏林FF14粉丝节表示「内部仍在讨论SKU阵容，但我正努力安排某种形式的实体版」，并提及多碟装与Switch 2卡带容量的现实约束。同日流出的PS游戏实体销量占比数据：FF7 Rebirth 48.0%、Astro Bot 45.8%、黑神话悟空10.8%。",
+     "analysis": "索尼停盘倒计时、GTA6确认无盘、Xbox宕机锁死光盘——本周的数字所有权议题有了新注脚：连FF这种实体占比近半的头部IP都要导演亲自「争取」才能出盘。实体占比数据同时揭示了用户分层：日系RPG与家庭向游戏的实体需求依然坚挺，而国产游戏的受众已基本全数字化。",
+     "recommendation": "FF7终章实体版未定：导演亲自争取，FF7 Rebirth实体占比48%说明盘仍有基本盘"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 日本独游情报",
+     "tags": [
+      "合作游戏",
+      "免费demo",
+      "病毒传播"
+     ],
+     "title": "Skate Mates：两人各控一只滑板的「互相甩锅」合作游戏，免费demo更新——128万浏览",
+     "en_title": "他責しかない「ふたりで片足ずつ操作する」スケートゲーム『Skate Mates』の無料デモ版がアップデート！",
+     "full_text": "他責しかない「ふたりで片足ずつ操作する」スケートゲーム  \n『Skate Mates』の無料デモ版がアップデート！ https://t.co/ChOcpwOg6s https://t.co/T2yphgl4bd",
+     "author": "dotpixel3d",
+     "date": "2026-07-30",
+     "likes": 7140,
+     "views": 1283283,
+     "link": "https://x.com/dotpixel3d/status/2082722863572984055",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2082342399456825344/img/KMTsEkvwGyXqY4ok.jpg",
+      "video_url": "https://x.com/dotpixel3d/status/2082722863572984055/video/1"
+     },
+     "game_ref": "Skate Mates",
+     "summary": "日本独游情报账号分享的《Skate Mates》免费demo更新，一天内获128万浏览、7140赞。这是一款「除了互相甩锅别无他法」的合作滑板游戏：两名玩家各控制一只滑板，只有默契配合和快速沟通才能通过刀片、峡谷、岩浆遍布的障碍赛道，一次失误全员重来。游戏预计2026年Q4发售。",
+     "analysis": "",
+     "recommendation": "Skate Mates：两人各踩一只滑板互相甩锅的合作游戏，免费demo更新——128万浏览",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Skate Mates",
+      "genre": "合作 / 休闲 / 滑板",
+      "developer": "Momas（独立开发者）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布（免费demo开放中）",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4549600/Skate_Mates/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4549600/108deb86d607757f44fb53987d0adf108a67e069/header.jpg?t=1783755272",
+      "youtube_video": null,
+      "description": "【核心玩法】两名玩家各控制一只滑板（一人一条腿），必须同步操作才能前进、跳跃、过弯。赛道布满刀片、峡谷与岩浆，任何一人失误都会把全队送回起点——「他責しかない」（除了互相甩锅别无他法）的Tagline精准概括了它的互坑气质。\n\n【传播机制】免费demo叠加「一人一只滑板」的强画面感设计，天然适配短视频切片：失败瞬间的甩锅场面就是传播素材。此次demo更新单日128万浏览、7140赞、近800转发。\n\n【对标定位】合作互坑赛道（链在一起式连坐）近一年频出爆款，本作把「连坐」压缩到「共用一块滑板」的极简规则，上手门槛更低。\n\n【优势】规则一句话能讲清；双人合作直播效果强；免费demo零门槛拉新。【不足】玩法深度依赖关卡设计续航；单人玩家无入口；正式版2026年Q4才发售，热度保鲜是挑战。\n\n【综合】「强制协作+互相甩锅」是被反复验证的派对爆款公式，本作以极简规则和免费demo卡位，值得跟踪正式版的关卡量与联机稳定性。",
+      "why_notable": "「一人一只滑板」的强制协作设计天然适配直播切片传播，demo更新单日128万浏览",
+      "pcu": "暂未发售",
+      "estimated_sales": "暂无（未发售）"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 开发者自述",
+     "tags": [
+      "增量塔防",
+      "营收公开",
+      "短周期开发"
+     ],
+     "title": "Sir, We Have an Orc Problem：4个月开发的增量塔防，发售24小时毛收入36万美元",
+     "en_title": "We made $361,657 gross revenue in the first 24 hours after releasing our 4 month game. Please fellow indies, make smaller games faster.",
+     "full_text": "We made $361,657 gross revenue in the first 24 hours after releasing our 4 month game.\n\nPlease fellow indies, make smaller games faster.\n\n#gamedev #indiegames #indiedev https://t.co/rbczzPMFUl",
+     "author": "mumpitzgames",
+     "date": "2026-07-30",
+     "likes": 1196,
+     "views": 61206,
+     "link": "https://x.com/mumpitzgames/status/2082727383765750012",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOdBgh7XUAAihtY.jpg"
+     },
+     "game_ref": "Sir, We Have an Orc Problem",
+     "summary": "Mumpitz Games宣布其增量塔防游戏《Sir, We Have an Orc Problem》发售24小时毛收入达361,657美元，并公开喊话同行：「拜托各位独游开发者，做更小的游戏、更快做完。」该作开发周期仅4个月，7月28日发售、售价$8.99，两天内Steam评价已超1100条。",
+     "analysis": "",
+     "recommendation": "四个月开发的兽人塔防首日毛收入36万美元，开发者劝同行「做更小的游戏」",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Sir, We Have an Orc Problem",
+      "genre": "增量塔防 / 策略",
+      "developer": "Mumpitz Games（独立小团队）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "$8.99",
+      "release_date": "已发售 · 2026年7月28日",
+      "steam_rating": "发售2天1100+条评价",
+      "steam_url": "https://store.steampowered.com/app/4594150/Sir_We_Have_an_Orc_Problem/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4594150/d8a7b3d55e3a2b42350732db0155fc2a9346c10b/header.jpg?t=1785243619",
+      "youtube_video": null,
+      "description": "【核心玩法】增量式塔防：面对压倒性数量的兽人大军，用子弹、炸弹、激光加倍奉还。击杀产出资源、升级火力、迎接更大兽潮的正反馈循环，融合放置增量与塔防布阵的双重成瘾结构。\n\n【开发模式】4个月短周期开发、$8.99低价、单一核心循环打磨——不贪大世界、不堆系统，把「兽潮+火力膨胀」的爽感密度拉满，与近期一系列小品爆款同一路数。\n\n【市场表现】发售24小时毛收入361,657美元（开发者公开），按$8.99单价折算约4万份量级；发售2天Steam评价1100+条。开发者借数据公开呼吁同行「做更小的游戏、更快上线」，该推获6.1万浏览、1196赞。\n\n【优势】短周期低风险快速验证；增量+塔防双成瘾循环；价格锚定冲动消费区间。【不足】内容消耗快，长线留存依赖更新节奏；品类跟风者已在涌入。\n\n【综合】又一条「小团队×短周期×强循环」的百万美元路径实证，开发者主动公开营收为行业提供了稀缺的真实样本。",
+      "why_notable": "开发者公开首日36万美元毛收入并呼吁「更小更快」，短周期小品策略再添实证",
+      "pcu": "暂无公开数据",
+      "estimated_sales": "首日毛收入$361,657（开发者自曝，约4万份量级）"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 开发者官宣",
+     "tags": [
+      "派对游戏",
+      "知名作者新作",
+      "多人"
+     ],
+     "title": "Machine Party：《Buckshot Roulette》作者Mike Klubnika新作，致命派对游戏合集发售",
+     "en_title": "Machine Party is out now. Thank you for the continued support :)!",
+     "full_text": "Machine Party is out now. \n\nThank you for the continued support :)! https://t.co/f8eo4WHnUY",
+     "author": "mikeklubnika",
+     "date": "2026-07-30",
+     "likes": 627,
+     "views": 11311,
+     "link": "https://x.com/mikeklubnika/status/2082843660396478721",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2082829937988276224/img/Mb0uuw6ZCAiqQge2.jpg",
+      "video_url": "https://x.com/mikeklubnika/status/2082843660396478721/video/1"
+     },
+     "game_ref": "Machine Party",
+     "summary": "《Buckshot Roulette》作者Mike Klubnika与GDeavid合作的新作《Machine Party》7月30日发售，售价$6.79。这是一系列「失败即死」的高压派对小游戏合集：与朋友一起在高风险情境中证明自己的命比对方的值钱。发行商为Oro Interactive，首日Steam评价350条。",
+     "analysis": "",
+     "recommendation": "Buckshot Roulette作者新作Machine Party：致命派对游戏合集，$6.79现已发售",
+     "enrichment": {
+      "game_name": "Machine Party",
+      "genre": "派对 / 动作 / 多人",
+      "developer": "Mike Klubnika × GDeavid",
+      "publisher": "Oro Interactive",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "$6.79",
+      "release_date": "已发售 · 2026年7月30日",
+      "steam_rating": "首日350条评价",
+      "steam_url": "https://store.steampowered.com/app/4108000/Machine_Party/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4108000/00ae7d0e0fd0ad72635bddb1dd80ee68cc94eed5/header.jpg?t=1785433392",
+      "youtube_video": null,
+      "description": "【核心玩法】致命派对小游戏合集：每个小游戏都是「失败即死」的高压博弈，玩家在轮盘赌式的情境中互相淘汰，证明「我的命比你的值钱」。延续作者标志性的生死压迫感设计，但这次是多人派对形态。\n\n【作者光环】Mike Klubnika的《Buckshot Roulette》以「恶魔轮盘」单点创意成为现象级病毒爆款，新作自带关注底盘；发行商Oro Interactive近年专注病毒式小品发行，打法成熟。\n\n【优势】作者IP号召力+派对品类直播友好；$6.79低价；多人玩法天然延长寿命。【不足】首日350评价相对前作声量偏温和；派对游戏热度依赖主播二次传播，爆发时点存在不确定性。\n\n【综合】从单人恐怖博弈到多人致命派对，作者把已验证的「生死压迫感」公式搬进更大众的品类，值得观察首周评价曲线与主播覆盖率。",
+      "why_notable": "Buckshot Roulette作者携发行商Oro再出发，首日350评价，主播传播决定爆发时点",
+      "pcu": "暂无公开数据",
+      "estimated_sales": "暂无官方数据"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "AUTOMATON · 报道",
+     "tags": [
+      "增量游戏",
+      "克隆维权",
+      "中国市场"
+     ],
+     "title": "Bills Must Be Paid：砸存钱罐还债增量游戏正式发售，曾遭抖音克隆盗用素材",
+     "en_title": "「ニセモノまで作られた」ブタの貯金箱破壊ゲーム『Bills Must Be Paid』人気そのまま絶好調スタート",
+     "full_text": "【ニュース】“ニセモノまで作られた”ブタの貯金箱破壊ゲーム『Bills Must Be Paid』人気そのまま絶好調スタート。貯金箱を砕いて借金返済、手が動く限り稼ぎ続ける\nhttps://t.co/P55uLs67Ct https://t.co/CT0pvvLyXN",
+     "author": "AUTOMATONJapan",
+     "date": "2026-07-30",
+     "likes": 309,
+     "views": 84374,
+     "link": "https://x.com/AUTOMATONJapan/status/2082673712445477375",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2082673551556141056/img/mabPsMdzDjdE4CcE.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2082673712445477375/video/1"
+     },
+     "game_ref": "Bills Must Be Paid",
+     "summary": "Rike Games的增量游戏《Bills Must Be Paid》7月29日正式发售：挥锤砸碎存钱罐、用飞出的硬币支付有期限的账单。4月demo在中国走红后，抖音上曾出现直接盗用其素材的克隆游戏（带广告发布），开发者向字节跳动投诉后克隆被下架。正式版发售即获3740同时在线、97%好评，8月13日前30%折扣。",
+     "analysis": "",
+     "recommendation": "遭抖音克隆的砸存钱罐游戏正版发售：同接3740、97%好评，已向字节投诉下架",
+     "enrichment": {
+      "game_name": "Bills Must Be Paid",
+      "genre": "增量 / 休闲 / 动作",
+      "developer": "Rike Games",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "$4.89（8月13日前30%off）",
+      "release_date": "已发售 · 2026年7月29日",
+      "steam_rating": "97%好评（报道时202条），现累计890条评价",
+      "steam_url": "https://store.steampowered.com/app/4421010/Bills_Must_Be_Paid/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4421010/fc7d507e465320493fbf224b54d769c043601390/header.jpg?t=1785365619",
+      "youtube_video": null,
+      "description": "【核心玩法】单人增量游戏：挥锤砸开不断出现的存钱罐，硬币按1/5/25/100美元面额概率飞出。挥锤消耗体力、体力耗尽本局结束；存钱罐有不同耐久与行为模式（不动的、抵抗攻击的、回体力的），反复破坏可升级并解锁新种类。\n\n【系统深度】挣到的钱用于技能树（体力上限、初始存钱罐数、硬币倍率）、购买新锤子，以及支付带期限的账单（水费、违停罚款）——逾期被扣收益20%-50%；每还清一张账单还能三选一perk强化。破产后保留恒久强化，短局高频成长感强。\n\n【克隆风波】4月demo在中国走红后收到中国发行商合作邀约，同时抖音出现盗用其素材、挂广告盈利的克隆游戏，开发者向字节跳动发起版权投诉后克隆被下架，正式版随后发售。\n\n【优势】破坏反馈爽感直接（音效+金币飞溅）；账单deadline制造「先还钱还是先升级」的决策张力；$4.89超低价。【不足】增量品类内容消耗快；克隆事件显示此类小品极易被快速复制，先发窗口短。\n\n【综合】3740同接+97%好评的开局验证了玩法，而「走红→被克隆→投诉下架→正版发售」的全过程为小团队出海维权提供了完整样本。",
+      "why_notable": "中国走红遭抖音克隆后成功维权下架，正版首日3740同接97%好评的完整样本",
+      "pcu": "3,740（发售日，SteamDB）",
+      "estimated_sales": "暂无官方数据"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unity官方",
+     "tags": [
+      "Unity",
+      "CLI",
+      "agentic工作流"
+     ],
+     "title": "Unity CLI+Pipeline发布：终端或AI agent直接驱动运行中的Editor，无需Hub",
+     "en_title": "Create and manage Unity projects directly from your terminal, no Hub required.",
+     "full_text": "Create and manage Unity projects directly from your terminal, no Hub required.\n\nInstall the Unity CLI, then add the Unity Pipeline package in your project to drive a live Editor from terminal or agent: run Play mode, execute tests, trigger recompiles, and get structured JSON back.\n\n🔗 Install the Unity CLI + Pipeline package: https://t.co/gO1raY4N1c",
+     "author": "unitygames",
+     "date": "2026-07-29",
+     "likes": 278,
+     "views": 20913,
+     "link": "https://x.com/unitygames/status/2082519380219375905",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2082519115713970176/pu/img/P1P8XLuLQCpBsDzk.jpg",
+      "video_url": "https://x.com/unitygames/status/2082519380219375905/video/1"
+     },
+     "summary": "Unity官方发布Unity CLI与Pipeline包：开发者可直接从终端创建和管理Unity项目（无需Unity Hub），并通过Pipeline包驱动一个运行中的Editor——运行Play模式、执行测试、触发重编译，并以结构化JSON返回结果。官方定位明确指向「从终端或agent」操作。",
+     "analysis": "继7月28日Unity MCP免费包之后，Unity一周内第二次补齐agentic工作流拼图：MCP解决「AI能调编辑器功能」，CLI+Pipeline解决「AI能跑完整构建测试循环」。引擎厂商正在把Editor变成agent可编程的运行时——谁先适配agent接口，谁就能留在AI时代开发者的工具链里。",
+     "recommendation": "Unity CLI：agent从终端驱动Editor跑Play模式/测试并返回JSON，一周内第二块拼图",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · 中文开发者",
+     "tags": [
+      "Three.js",
+      "数据可视化",
+      "skill生态"
+     ],
+     "title": "宋夏天3D地图skill重磅更新：全球视角丝滑下钻到中国省市级，已开源",
+     "en_title": "我的3D地图Skill迎来了重磅更新：从全球视角点击中国，丝滑下钻到省市级3D地图",
+     "full_text": "我的3D地图Skill迎来了重磅更新🌏\n\n- 从全球视角点击中国，丝滑下钻到省市级3D地图\n- 支持层级切换、飞线、撒点、主题切换和视角配置\n- 优化了3D地图下钻卡顿问题，现在可以丝滑使用\n\nBuilt with Three.js + Vue.\nGitHub 已更新，链接在评论区👇\n\n#ThreeJS #WebGL #DataViz #Vue https://t.co/9jrPtOoFmI",
+     "author": "songsummer920",
+     "date": "2026-07-30",
+     "likes": 84,
+     "views": 5737,
+     "link": "https://x.com/songsummer920/status/2082755276122599631",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2082754717374164992/img/0Z2UNUD2OkT2tatR.jpg",
+      "video_url": "https://x.com/songsummer920/status/2082755276122599631/video/1"
+     },
+     "summary": "宋夏天Dazzle更新其3D地图skill：从全球视角点击中国可丝滑下钻到省市级3D地图，支持层级切换、飞线、撒点、主题切换与视角配置，并优化了下钻卡顿问题。基于Three.js+Vue构建，GitHub已开源。",
+     "analysis": "中文skill生态的成熟度在快速提升：从单一场景demo到「可配置、可复用、持续迭代」的组件级skill。这类可视化组件是数据分析、地理类agent应用的高频刚需，开源+持续更新的维护模式也让它比一次性demo更值得被串联进工作流。",
+     "recommendation": "宋夏天3D地图skill：全球下钻省市级、飞线撒点主题切换，Three.js+Vue开源"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**小团队的两条路：4个月36万美元 vs 遭克隆后维权**\nMumpitz Games的增量塔防《Sir, We Have an Orc Problem》4个月开发、发售24小时毛收入36.2万美元，开发者公开喊话「做更小的游戏、更快做完」；同日《Bills Must Be Paid》正式版发售——这款在中国走红的砸存钱罐游戏曾遭抖音克隆盗用素材，向字节跳动投诉下架后正版上线，首日3740同接、97%好评。《Buckshot Roulette》作者新作《Machine Party》同日发售；日本合作游戏《Skate Mates》免费demo更新单日128万浏览。\n\n**Xbox财报：2亿新玩家没换来增长**\nXbox季度营收-7%（-17亿美元）、硬件-29%，CEO Sharma承认「业务未随受众增长」并承诺FY27结束前回归增长；同季微软云收入+27%、Azure首破千亿，AI业务狂飙反衬游戏部门窘境。三星警告内存短缺持续至2028、2027更严重，60-70%产能已被长约锁定；英伟达GPU再涨最高30%。FF7终章Revelation实体版悬而未决，导演浜口亲自争取——FF7 Rebirth实体占比48%说明光盘基本盘仍在。\n\n**AI从写代码下沉到写图形管线**\nKimi K3接入建模软件完成3100万美元酒店的机电建模，3工程师6周的活1人9天完成，变更单减60-80%；Claude Code+Opus 5九小时合成WGSL着色器做出带持久地形形变的WebGPU雪地demo；Grok Build应用接入Vercel托管，prompt到全球发布一键完成。工具侧，Unity发布CLI+Pipeline让agent从终端驱动Editor（一周内第二块拼图），宋夏天3D地图skill新增全球到省市级下钻。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
