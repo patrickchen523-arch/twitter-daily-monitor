@@ -364,6 +364,8 @@
     .core-nested-points{display:grid;gap:8px;margin-top:9px}.core-nested-point{display:grid;grid-template-columns:7px minmax(0,1fr);gap:9px;align-items:start}.core-nested-dot{width:6px;height:6px;margin-top:9px;border-radius:50%;background:#7da783}.core-nested-copy strong{color:#3c6743;font-size:15px;line-height:1.8}.core-nested-copy p{display:inline;margin:0;color:#56625a;font-size:15px;line-height:1.8}
     .core-quote-list{display:grid;gap:7px;margin-top:8px}.core-report-quote{position:relative;margin:0;padding:3px 0;color:#4a584f;background:transparent;border:0;border-radius:0;font-size:15px;line-height:1.75;font-style:italic}
     .core-detail-point.feedback-point{margin-top:14px;padding:0 0 0 16px;background:transparent;border:0;border-left:2px solid #dbe7d8;border-radius:0}.core-detail-point.feedback-point:first-child{margin-top:0}.core-detail-point.feedback-point .core-detail-point-text,.core-detail-point.feedback-point .core-nested-copy p{color:#4a584f}
+    .core-detail-point.feedback-point .core-detail-point-symbol{width:7px;height:7px;background:#2f5837;border-radius:50%;color:transparent;font-size:0;margin:7px 2px 0}
+    .core-detail-point.feedback-point .core-detail-point-title{color:#2f5837}
     .core-topic-section.feedback-topic{margin:0;padding:20px 0;background:transparent;border:0;border-radius:0}.core-topic-section.feedback-topic + .core-topic-section{border-top:1px solid #e4ebe2}.core-topic-section.feedback-topic .core-topic-lead,.core-topic-section.feedback-topic .core-detail-point-text,.core-topic-section.feedback-topic .core-nested-copy p{color:#4a584f}
     .core-report-media-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0 2px 15px}.core-report-media-gallery.single{grid-template-columns:minmax(0,1fr)}.core-report-media{margin:0;overflow:hidden;border:1px solid #dfe8dd;border-radius:11px;background:#fff}.core-media-open{display:block;width:100%;padding:0;border:0;background:#f6f8f5;cursor:zoom-in}.core-media-open:focus-visible{outline:3px solid rgba(91,159,100,.42);outline-offset:-3px}.core-report-media img{display:block;width:100%;height:auto;max-height:460px;object-fit:contain;background:#f6f8f5}.core-report-media figcaption{display:flex;justify-content:space-between;gap:12px;padding:9px 11px;color:#5d6a60;border-top:1px solid #e8eee6;font-size:12px;line-height:1.55}.core-report-media-page{flex:none;color:#819084;white-space:nowrap}
     .core-ungrouped-copy{padding:17px 0;color:#435147;background:transparent;border:0;font-size:16px;line-height:1.95;white-space:pre-line}.core-content-empty{padding:38px 22px;text-align:center;color:#7d8999;font-size:14px}
@@ -447,9 +449,32 @@
       .ed-bar{flex-wrap:wrap;gap:8px;font-size:12px}
       #edDlg .ed-dlg-body{max-height:calc(100vh - 170px)}
     }
+    /* 启动加载页：数据就绪前全屏覆盖 */
+    #bootLoader{position:fixed;inset:0;z-index:9999;background:#f4f6f9;display:flex;align-items:center;justify-content:center;transition:opacity .35s}
+    #bootLoader.done{opacity:0;pointer-events:none}
+    .boot-card{width:420px;max-width:86vw;background:#fff;border-radius:16px;border:1px solid #D6E6D2;border-top:3px solid #2E5A37;
+               box-shadow:0 18px 54px rgba(46,90,55,.14);padding:36px 40px 32px;text-align:center}
+    .boot-dots{display:flex;justify-content:center;gap:7px;height:22px;align-items:flex-end;margin-bottom:16px}
+    .boot-dots i{width:9px;height:9px;border-radius:50%;background:#2E5A37;animation:bootDot 1s infinite ease-in-out}
+    .boot-dots i:nth-child(2){animation-delay:.15s}
+    .boot-dots i:nth-child(3){animation-delay:.3s}
+    @keyframes bootDot{0%,60%,100%{transform:translateY(0);opacity:.45}30%{transform:translateY(-9px);opacity:1}}
+    .boot-card strong{display:block;font-size:16px;color:#2F3630;margin-bottom:8px}
+    .boot-card p{margin:0 0 18px;font-size:12.5px;color:#68736a}
+    .boot-bar{height:8px;border-radius:99px;background:#E4F0E6;overflow:hidden}
+    .boot-bar i{display:block;height:100%;width:38%;border-radius:99px;background:linear-gradient(90deg,#3E9B63,#2E5A37);animation:bootBar 1.15s infinite ease-in-out}
+    @keyframes bootBar{0%{transform:translateX(-110%)}100%{transform:translateX(280%)}}
   </style>
 </head>
 <body>
+  <div id="bootLoader" role="status" aria-label="加载中">
+    <div class="boot-card">
+      <div class="boot-dots"><i></i><i></i><i></i></div>
+      <strong>正在整理本期竞品监测周报</strong>
+      <p>数据与页面资源读取中，请稍候</p>
+      <div class="boot-bar"><i></i></div>
+    </div>
+  </div>
   <header class="topbar">
     <div class="brand"><div class="brand-mark" aria-hidden="true"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M4 19V9m6 10V5m6 14v-7m4 7H2"/></svg></div><div><strong>竞品监测周报合集</strong><small>COMPETITOR WEEKLY REPORTS</small></div></div>
     <nav class="nav" aria-label="主导航">
@@ -482,7 +507,14 @@
       <div class="section-head"><div><h2 class="section-title">多竞品趋势与异动事件</h2><div class="section-sub">点击图例筛选需要对比的游戏；红色描边节点代表“异动”，点击节点查看关联事件</div></div></div>
       <div class="trend-shell"><div class="trend-toolbar"><div class="trend-copy"><strong>历史周期趋势对比</strong><span>仅连接已入库观测点，断档周期不补数</span></div><div class="overview-tabs"><button class="active" data-overview-metric="flow">流水（万元）</button><button data-overview-metric="dau">DAU（万）</button></div></div><div id="trendLegend" class="trend-legend"></div><div class="trend-stage"><div id="overviewChart" class="overview-chart"></div><aside id="eventPanel" class="event-panel"></aside></div></div>
     </section>
+    <section class="section" id="ganttSection">
+      <div class="section-head"><div><h2 class="section-title">本周活动甘特图</h2><div class="section-sub">黄色底纹为本周数据周期，红色竖线为今天；点击甘特条查看活动详情</div></div></div>
+      <iframe id="ganttFrame" src="gantt-20260720.html" title="本周活动甘特图" style="width:100%;border:0;display:block;min-height:600px" scrolling="no"></iframe>
+    </section>
   </main>
+  <script>
+  window.addEventListener('message',function(e){if(e.data&&e.data.ganttHeight){var f=document.getElementById('ganttFrame');if(f)f.style.height=e.data.ganttHeight+'px'}});
+  </script>
 
   <main id="reportsView" class="container hidden">
     <div class="view-head report-view-head"><div><h1>竞品监测周报归档</h1><p id="reportArchiveSummary">已录入 67 份真实监测周报，策略复盘暂未纳入。</p></div><div class="report-filters"><label class="search-box"><input id="reportSearch" placeholder="搜索周期或报告名称"></label><select id="reportYearFilter" class="filter-select" aria-label="筛选报告年份"><option value="all">全部周期</option><option value="2026">2026 年</option><option value="2025">2025 年</option><option value="demo">AI 效果演示</option></select></div></div>
@@ -507,7 +539,9 @@
     window.__DAILY_METRICS=daily;
     window.__ARCHIVE_REPORTS=ar;window.__ARCHIVE_PERIODS=ap;window.__ARCHIVE_CONTENT=ac;
     window.__CORE_REFERENCE_ITEMS=coreItems;window.__CORE_REFERENCE_IMAGES=coreImages;
-    const app=document.createElement('script');app.src='app.js';document.body.appendChild(app);
+    const app=document.createElement('script');app.src='app.js';
+    app.onload=()=>setTimeout(()=>{const bl=document.getElementById('bootLoader');if(bl){bl.classList.add('done');setTimeout(()=>bl.remove(),450)}},200);
+    document.body.appendChild(app);
   }catch(e){
     document.body.innerHTML='<div style="max-width:640px;margin:80px auto;padding:32px;border:1px solid #f0c36d;border-radius:14px;background:#fffaf0;color:#7a5b12;font-size:14px;line-height:1.9"><strong>数据加载失败</strong><br>'+e.message+'<br>本页面为动态数据版，需通过 http(s) 访问（GitLab Pages 或本地静态服务）；直接双击 html（file://）无法读取 data/*.json。</div>';
   }
