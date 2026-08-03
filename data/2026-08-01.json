@@ -1,0 +1,457 @@
+{
+ "date": "2026-08-01",
+ "meta": {
+  "raw_count": 221,
+  "filtered_count": 182,
+  "selected_count": 12,
+  "crawl_time": "2026-08-01 11:20"
+ },
+ "lede": "Big Hops 8月9日免费变身8人合作：扔队友、荡队友、偷背包，剧情进度共享\nUSOMAP：不用生成AI的奇幻地图生成器，程序化推演水源、城镇与国境——38万浏览\nEA 550亿美元私有化获全部监管批准，预计8月4日交割，史上最大游戏杠杆收购",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "Big Hops 8月9日免费变身8人合作：扔队友、荡队友、偷背包"
+  },
+  {
+   "section_id": "tools",
+   "item_index": 0,
+   "hook": "USOMAP：不用生成AI的奇幻地图生成器，程序化推演地理——38万浏览"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "EA 550亿美元私有化获全部批准，预计8月4日交割"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "单人开发者造神经运动学模型：零关键帧零动画师，实时生成全身战术动作\n开发者用Claude Code一夜做出空气隔离传输：QR码闪屏在手机间无网传文件\nShift-Up用全AI生成KPop MV宣传Stellar Blade 2，粉丝质疑：你有角色模型为什么不用"
+  },
+  {
+   "id": "industry",
+   "text": "EA 550亿美元收购案获全部监管批准，预计8月4日交割——史上最大游戏杠杆收购\n索尼首次回应停盘抗议：「数字化在推进」，2028年初停售实体盘不变\nCapcom：重制版是成功支柱，为新RE和Pragmata等原创提供资金"
+  },
+  {
+   "id": "indie",
+   "text": "Big Hops 8月9日变身8人合作：扔队友、荡队友、偷背包，进度共享\n海盗城建Corsair Cove发售：50万愿望单+Hooded Horse发行，首日近千评价\n狂气山脉×献祭队友登山roguelite：全员一根绳，累赘者亲手割断\n8人合作2D开放世界生存Delverium定档9月22日EA，愿望单破8万"
+  },
+  {
+   "id": "tools",
+   "text": "USOMAP：不用生成AI的奇幻地图生成器，程序化推演水源城镇国境——38万浏览\nUnity编辑器AI助手：描述行为自动起草C#，checkpoint安全回滚"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 技术演示",
+     "tags": [
+      "神经运动学",
+      "程序化动画",
+      "ML"
+     ],
+     "title": "神经运动学模型：单人开发者用ML实时生成战术动作，叫板动捕预算",
+     "en_title": "A $150,000,000 game budget just got vaporized by a single line of procedural code",
+     "full_text": "A $150,000,000 game budget just got vaporized by a single line of procedural code.\n\nLegacy studios spend millions renting motion-capture stages and funding 200-person animation teams just to hit baseline movement.\n\nLook at 0:14 when he vaults that 1M block, then skip to 0:18:\n• Zero keyframes manually drawn\n• Zero $200k/year animators required\n• Real-time spatial pathfinding running on local hardware\n\nOne solo dev built a neural kinematic model that generates full tactical movement on the fly.\n\nCheck the tag at 0:27. That’s not EA or Ubisoft. That’s an autonomous builder burning through $0 corporate runway while delivering AAA execution.\n\nThe ROI on legacy game design pipelines is officially below zero.\n\nYou’re not looking at a UE5 physics demo. You’re looking at the collapse of bloated software margins.",
+     "author": "Zimovis",
+     "date": "2026-07-30",
+     "likes": 553,
+     "views": 103905,
+     "link": "https://x.com/Zimovis/status/2082827092673044876",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2082826812095094784/img/TTNRp4Vt8JXzpgxr.jpg",
+      "video_url": "https://x.com/Zimovis/status/2082827092673044876/video/1"
+     },
+     "summary": "推主Zimo展示一名单人开发者构建的神经运动学模型：翻越1米高台等全身战术动作全部由模型实时生成——零手工关键帧、零动画师、本地硬件实时运行空间寻路。推主以此对比传统大厂「租动捕棚+200人动画团队」的成本结构，称1.5亿美元的游戏预算被「一行程序化代码」蒸发。",
+     "analysis": "ML驱动的程序化动画是动捕成本结构的正面挑战者：一旦「翻越、攀爬、战术移动」这类基础动作库的质感跨过可用线，中型团队与3A在动作表现上的成本差将被迅速压缩。对游戏管线的启示：动画环节的护城河正在从「人力规模」转向「模型与数据」。",
+     "recommendation": "单人开发者造神经运动学模型：零关键帧零动画师，实时生成全身战术动作",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 科技博主",
+     "tags": [
+      "Claude Code",
+      "空气隔离",
+      "QR传输"
+     ],
+     "title": "空气隔离传输：开发者用Claude Code一夜做出QR闪屏无网文件传输",
+     "en_title": "Un dev creó transferencia de archivos SIN INTERNET… solo con códigos QR y Claude",
+     "full_text": "Un dev creó transferencia de archivos SIN INTERNET… solo con códigos QR y Claude\n\nUn desarrollador quería hacer un reproductor de MP3 web para escapar de los anuncios.\n\nTerminó inventando algo mucho más loco:\n\nUn sistema air-gapped que pasa archivos de un teléfono a otro sin WiFi, sin Bluetooth, sin estar en la misma red.\n\n¿Cómo?\n\nMostrando códigos QR que parpadean a toda velocidad en la pantalla.\n\nUsó Claude Code y en una sola noche tuvo la prueba de concepto 100% funcional.\n\nLa IA está haciendo que un solo developer pueda inventar cosas que antes solo se veían en laboratorios.\n El futuro se está construyendo más rápido de lo que creemos.",
+     "author": "leoxbtt",
+     "date": "2026-07-31",
+     "likes": 1563,
+     "views": 139804,
+     "link": "https://x.com/leoxbtt/status/2083102996947239111",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2083102971169050624/img/gQZN3mbyLDU3SXEM.jpg",
+      "video_url": "https://x.com/leoxbtt/status/2083102996947239111/video/1"
+     },
+     "summary": "一名开发者最初只想做个无广告的网页MP3播放器，结果做出了更疯狂的东西：一套空气隔离（air-gapped）文件传输系统——不用WiFi、不用蓝牙、不在同一网络，只靠屏幕高速闪烁的QR码在两台手机之间传文件。他用Claude Code在一个晚上就完成了100%可用的概念验证。",
+     "analysis": "这条的价值不在「QR传输」本身（技术早有先例），而在「一个人+一晚+一个AI结对伙伴」把异想天开推进到可用原型的速度。AI对独立开发的最大改变正在于此：验证一个怪点子的成本已低到不需要犹豫。",
+     "recommendation": "开发者用Claude Code一夜做出空气隔离传输：QR码闪屏在手机间无网传文件",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Eurogamer · 报道",
+     "tags": [
+      "生成式AI",
+      "游戏营销",
+      "社区反弹"
+     ],
+     "title": "Stellar Blade 2全AI生成KPop MV引争议：CEO曾称AI是抗衡中国大厂的必需",
+     "en_title": "\"Are We Deadass?\" - Shift-Up promotes Stellar Blade 2 with AI-generated KPop music video featuring the game's main character",
+     "full_text": "\"Are We Deadass?\" - Shift-Up promotes Stellar Blade 2 with AI-generated KPop music video featuring the game's main character\n\nhttps://t.co/mIgQu4NsRV https://t.co/mpageUi1ED",
+     "author": "eurogamer",
+     "date": "2026-07-31",
+     "likes": 47,
+     "views": 9088,
+     "link": "https://x.com/eurogamer/status/2083145796799578462",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOjSDNJXoAATiwU.png"
+     },
+     "summary": "Shift-Up在官方YouTube发布《Stellar Blade: Blood Rain》宣传MV：主角Evie演唱原创曲「Wanna be in Love」，画面疑似完全由生成式AI制作，片尾甚至有开发组成员与AI角色击掌。粉丝评论区一片困惑：「你明明有角色模型，为什么不用？」Shift Up CEO此前公开表示AI是「抗衡中国等大厂的必需」。",
+     "analysis": "大厂把生成式AI从制作管线推向营销前台的第一起争议案例：粉丝抵触的不是AI本身，而是「自家角色资产明明可用却用AI糊」的廉价感。韩国厂商的AI激进路线（成本对标中国）与玩家情感接受度之间的冲突，会是接下来每个采用者的必修课。",
+     "recommendation": "Shift-Up用全AI生成KPop MV宣传Stellar Blade 2，粉丝质疑：你有角色模型为什么不用"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 多家报道",
+     "tags": [
+      "EA收购",
+      "沙特PIF",
+      "杠杆收购"
+     ],
+     "title": "EA 550亿美元私有化获全部监管批准，预计8月4日交割：史上最大游戏杠杆收购",
+     "en_title": "The $55 billion private acquisition of Electronic Arts is expected to go ahead, with \"all regulatory approvals\" obtained by the gaming giant",
+     "full_text": "The $55 billion private acquisition of Electronic Arts is expected to go ahead, with \"all regulatory approvals\" obtained by the gaming giant\n\nhttps://t.co/NOitmRvgDZ https://t.co/VpgGkTSssV",
+     "author": "eurogamer",
+     "date": "2026-07-31",
+     "likes": 12,
+     "views": 9168,
+     "link": "https://x.com/eurogamer/status/2083116159667220690",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOi3GbUWwAAB_7Z.png"
+     },
+     "summary": "EA在8K文件中宣布，550亿美元私有化收购已获得「全部监管批准」，预计8月4日交割。买方为沙特主权基金PIF联合Silver Lake与Jared Kushner创办的Affinity Partners，构成史上最大游戏杠杆收购——收购债务将主要用EA自身收入和资产偿还。此前欧盟委员会与美国Fed先后放行，EA股东已于去年12月批准。背景：CEO Andrew Wilson上财年奖金约3800万美元；美国游戏工会曾书面抗议。多家报道：Eurogamer、RPS。",
+     "analysis": "杠杆收购的债务结构决定了EA未来的每一款年货都必须超额完成现金流任务——「降本+AI提效」的组合拳只会加码，7月30日财报中管理层对生成式AI的押注正是预演。沙特资本完成对西方头部发行商的收官一战后，行业并购的下一个问题变成：还有谁买得起、还有谁会被买。",
+     "recommendation": "EA 550亿美元收购案获全部监管批准，预计8月4日交割——史上最大游戏杠杆收购",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 财报QA",
+     "tags": [
+      "索尼",
+      "实体盘",
+      "数字所有权"
+     ],
+     "title": "索尼首次回应停盘抗议：「数字化在所有媒体推进」，坚持2028年初停售实体盘",
+     "en_title": "Sony vows to press on with discless plans, saying \"digitalization is progressing\" across all media despite heavy protest from players",
+     "full_text": "Sony vows to press on with discless plans, saying \"digitalization is progressing\" across all media despite heavy protest from players\n\nhttps://t.co/DUQxqkqo9G https://t.co/RFpEvMFEka",
+     "author": "eurogamer",
+     "date": "2026-07-31",
+     "likes": 47,
+     "views": 10245,
+     "link": "https://x.com/eurogamer/status/2083124424069259645",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOi-nn9XYAArlnJ.jpg"
+     },
+     "summary": "索尼CFO Lin Tao在7月31日财报电话会QA首次回应停售实体盘决定：「最大原因是内容整体的数字化在推进，不只是PlayStation，所有媒体都在数字化……我们经过慎重考虑，将谨慎地推进。」她同时表示理解玩家的强烈情感（「游戏连接着人们的美好回忆」），称会探索在未来数字生态中与玩家的相处方式。实体盘停产定于2028年初；#PSBlackout抗议与请愿未能改变结论，而上周PSN宕机锁死已购游戏成了尴尬注脚。Eurogamer该文评论已超320条。",
+     "analysis": "索尼的回应话术值得逐字读：承认情感、拒绝改变。当「理解但照做」成为平台方的标准答案，数字所有权争议已从舆论战转入法律与监管战线（欧盟DSA正在路上）。对发行商的现实影响：实体盘窗口进入18个月倒计时，典藏版与渠道清库策略需要现在排期。",
+     "recommendation": "索尼首次回应停盘抗议：「数字化在推进」，2028年初停售实体盘不变",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "PC Gamer · 报道",
+     "tags": [
+      "Capcom",
+      "重制版策略",
+      "产品线"
+     ],
+     "title": "Capcom：重制版是成功支柱，为新RE和Pragmata等原创提供「资金资源」",
+     "en_title": "Remakes are the backbone to Capcom's success as they provide 'financial resources' for new games",
+     "full_text": "Remakes are the backbone to Capcom's success as they provide 'financial resources' for new games https://t.co/IKSAjsj2eH",
+     "author": "pcgamer",
+     "date": "2026-07-31",
+     "likes": 82,
+     "views": 29644,
+     "link": "https://x.com/pcgamer/status/2083154286285091113",
+     "media": null,
+     "summary": "Capcom表示，重制版是公司成功的支柱：它们提供「资金资源」，支撑新的《生化危机》作品以及《Pragmata》这样的原创新作。此前财报显示《生化危机4：重制版》销量达1680万份，Steam平台的长尾销售占比达34%。",
+     "analysis": "「重制养原创」是Capcom给全行业上的一课：老IP的现代化重制不是创意枯竭，而是风险对冲的财务工具——用确定性收入哺育不确定性原创。RE4重制1680万销量、34% Steam长尾的数据（见7月28日报）正是这套飞轮的注脚。拥有老IP库存的厂商都应该重新算一遍这笔账。",
+     "recommendation": "Capcom：重制版是成功支柱，为新RE和Pragmata等原创提供资金"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 开发者官宣",
+     "tags": [
+      "合作游戏",
+      "免费更新",
+      "3D平台跳跃"
+     ],
+     "title": "Big Hops Together：3D平台跳跃免费变身8人在线互坑，8月9日上线",
+     "en_title": "On August 9th our Steam version will transform to become BIG HOPS TOGETHER.",
+     "full_text": "News time! 🚨\n\nOn August 9th our Steam version will transform to become BIG HOPS TOGETHER.\n\n- Play the full adventure ONLINE with 8 players\n- Pick up and throw your friends\n- Tongue swing from other frogs\n- Steal items from each other's backpacks\n- Story progress is shared https://t.co/fArks7qsfj",
+     "author": "chriswade__",
+     "date": "2026-07-30",
+     "likes": 3607,
+     "views": 267419,
+     "link": "https://x.com/chriswade__/status/2082877460807397860",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2082876845129605122/img/ABMuHiNphTQ_TXTi.jpg",
+      "video_url": "https://x.com/chriswade__/status/2082877460807397860/video/1"
+     },
+     "game_ref": "Big Hops",
+     "summary": "单人开发者Chris Wade宣布《Big Hops》Steam版将于8月9日免费变身为《BIG HOPS TOGETHER》：完整冒险支持8人在线合作——抓起并扔出队友、用舌头从其他青蛙身上荡过去、互相偷背包里的道具、剧情进度全员共享。本作是1月12日发售的3D平台跳跃游戏（$19.99，419条评价），官宣推获26.7万浏览。",
+     "analysis": "",
+     "recommendation": "Big Hops 8月9日变身8人合作：扔队友、荡队友、偷背包，进度共享",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Big Hops",
+      "genre": "3D平台跳跃 / 动作冒险",
+      "developer": "Luckshot Games（Chris Wade单人开发）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "$19.99",
+      "release_date": "已发售 · 2026年1月12日（8月9日免费更新Together模式）",
+      "steam_rating": "419条评价",
+      "steam_url": "https://store.steampowered.com/app/1221480/Big_Hops/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1221480/35f1cf997f49e04612021b87d4ac787c9f8f69f9/header.jpg?t=1785524074",
+      "youtube_video": null,
+      "description": "【核心玩法】3D平台跳跃新物种：舌头摆荡、自由攀爬，并用自己的方式开路——种植蔬菜弹跳垫、走钢丝、发射钩爪。穿越沙漠、海洋、雪山三大世界寻找回家的路，沿途收集虫子、升级背包、结识动物朋友。\n\n【Together更新】8月9日免费大更新：完整冒险支持8人在线——抓起并扔出队友、用舌头从别的青蛙身上荡过去、互相偷背包道具、剧情进度全员共享，合作互坑要素一次拉满。\n\n【开发背景】Luckshot Games（Chris Wade）单人开发，2026年1月12日发售，$19.99，419条评价。此次Together官宣推获26.7万浏览、3607赞。\n\n【优势】移动机制自由度高、沙盒式开路设计有深度；8人合作把单人precision platformer改造成派对互坑；免费更新回馈存量玩家。【不足】本体发售半年评价量级温和，热度完全押注合作模式的转化效果。\n\n【综合】独游长线运营的范本动作：用合作模式给已发售单品第二次生命，8月9日上线后的同接曲线值得跟踪。",
+      "why_notable": "单人3D平台跳跃免费变身8人合作互坑，26.7万浏览——已发售单品的第二春打法",
+      "pcu": "暂无公开数据",
+      "estimated_sales": "暂无官方数据"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 发行商官宣",
+     "tags": [
+      "城建经营",
+      "海盗题材",
+      "Hooded Horse"
+     ],
+     "title": "Corsair Cove：海盗湾城建发售，50万愿望单+Hooded Horse发行，首日近千评价",
+     "en_title": "今夜発売予定の海賊街づくり『コルセア・コーヴ』ウィッシュリスト登録者数「50万人」突破",
+     "full_text": "今夜発売予定の海賊街づくり『コルセア・コーヴ』\nウィッシュリスト登録者数「50万人」突破🎉\n\n大海賊時代の存続をかけて海賊の楽園を築くゲームなんですが、50万人も海賊がいるなら全然問題なさそうですね✨ https://t.co/bZAUkgLShb",
+     "author": "HoodedHorse_JP",
+     "date": "2026-07-30",
+     "likes": 44,
+     "views": 5665,
+     "link": "https://x.com/HoodedHorse_JP/status/2082964744386789829",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2082964723104944129/img/Y7q211jpUQ7zgGI7.jpg",
+      "video_url": "https://x.com/HoodedHorse_JP/status/2082964744386789829/video/1"
+     },
+     "game_ref": "Corsair Cove",
+     "summary": "发行商Hooded Horse日本官推报喜：海盗城建游戏《Corsair Cove》愿望单突破50万，7月31日以$29.99正式发售。玩家要建设海盗避风港、管理从麦酒到燧发枪的生产链、组建舰队对抗王室以延续大海贼时代。开发商为德国老牌策略工作室Limbic Entertainment，发售首日Steam评价即达966条。",
+     "analysis": "",
+     "recommendation": "海盗城建Corsair Cove发售：50万愿望单+Hooded Horse发行，首日近千评价",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Corsair Cove",
+      "genre": "城建经营 / 策略",
+      "developer": "Limbic Entertainment（德国老牌策略工作室）",
+      "publisher": "Hooded Horse",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "$29.99",
+      "release_date": "已发售 · 2026年7月31日",
+      "steam_rating": "首日966条评价",
+      "steam_url": "https://store.steampowered.com/app/1368140/Corsair_Cove/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1368140/cafda7c6ff9641cc9ede1823317b835a2b3f38ab/header.jpg?t=1785527747",
+      "youtube_video": null,
+      "description": "【核心玩法】海盗湾城建+经营：建设规模庞大的海盗避风港，从麦酒到燧发枪管理复杂生产链，组建舰队探索大海、对抗王室以延续大海贼时代。治理一群乌合之众往往比建设本身更难。\n\n【发行阵容】开发商Limbic Entertainment是德国老牌策略工作室；发行商Hooded Horse手握《Manor Lords》《Against the Storm》的策略品类金字招牌，品类运营能力业内顶级。\n\n【市场表现】发售前愿望单突破50万（发行商日本官推报喜），7月31日以$29.99发售，首日Steam评价即达966条——愿望单转化效率极高。\n\n【优势】海盗城建题材差异化（几乎无直接竞品）；生产链深度与发行商运营能力双保险；首发评价量级已验证基本盘。【不足】$29.99定价高于同类经营小品；城建品类长线表现依赖后续内容节奏。\n\n【综合】50万愿望单→首日近千评价的高转化开局，Hooded Horse的策略发行体系再次验证，值得跟踪首周销量与评价曲线。",
+      "why_notable": "50万愿望单+Hooded Horse发行，首日966评价的高转化开局",
+      "pcu": "暂无公开数据",
+      "estimated_sales": "暂无官方数据"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 日本Steam情报",
+     "tags": [
+      "roguelite",
+      "克苏鲁",
+      "回合制"
+     ],
+     "title": "Ascenders: Beyond the Peak：狂气山脉登山roguelite，亲手献祭累赘队友",
+     "en_title": "『狂気山脈』× 仲間を捨てる登山ローグライト『Ascenders: Beyond the Peak』",
+     "full_text": "『狂気山脈』× 仲間を捨てる登山ローグライト。\n\nクトゥルフ神話のバケモノがうごめく呪われた山を登る、ターン制の登山ローグライト。一番ヤバいのが、味方全員が一本のロープで物理的に繋がっている極悪仕様。一人のミスで部隊が全滅する極限状況の中、迫り来る宇宙的恐怖から逃れるために、足手まといになった仲間を自ら生贄にして山頂を目指す。\nメンタルぶっ壊れそう。\n『Ascenders: Beyond the Peak』",
+     "author": "stmatomato",
+     "date": "2026-07-31",
+     "likes": 607,
+     "views": 60298,
+     "link": "https://x.com/stmatomato/status/2083025356286755310",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2083025238707847168/img/ePJAkyJaTagnikK8.jpg",
+      "video_url": "https://x.com/stmatomato/status/2083025356286755310/video/1"
+     },
+     "game_ref": "Ascenders: Beyond the Peak",
+     "summary": "日本Steam情报账号介绍《Ascenders: Beyond the Peak》：克苏鲁神话怪物盘踞的诅咒之山，回合制登山roguelite。最狠的设计是全员被一根绳索物理连接——一人的失误会拖垮全队；为逃离逼近的宇宙恐怖，你可以亲手把成为累赘的队友献祭，继续向山顶进发。Ludogram开发、Twin Sails Interactive发行，2026年Q3发售。",
+     "analysis": "",
+     "recommendation": "狂气山脉×献祭队友登山roguelite：全员一根绳，累赘者亲手割断",
+     "enrichment": {
+      "game_name": "Ascenders: Beyond the Peak",
+      "genre": "回合制roguelite / 策略RPG",
+      "developer": "Ludogram",
+      "publisher": "Twin Sails Interactive",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": "2026年Q3",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4267860/Ascenders_Beyond_the_Peak/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4267860/4284e01980564a0a814a47b7eb20c881c6f1b3f0/header.jpg?t=1783610031",
+      "youtube_video": null,
+      "description": "【核心玩法】回合制探索roguelite：带领登山队登上被诅咒的山峰回收古代遗物。全员被一根绳索物理连接——一人的失误会拖垮全队；面对洛夫克拉夫特式宇宙恐怖，你可以亲手割断绳索、献祭累赘的队友，保住登顶希望。\n\n【题材差异化】《狂气山脉》式克苏鲁登山题材在市面上极少见，「绳子上的队伍管理」把生存压力具象化为物理连接——资源分配之外还要做「谁值得继续带」的道德抉择。\n\n【开发背景】Ludogram开发、Twin Sails Interactive发行，2026年Q3发售。日本Steam情报账号介绍推获6万浏览、607赞。\n\n【优势】绳索连接+献祭机制在roguelite里前所未见；回合制节奏适配策略玩家；题材记忆点极强，「献祭队友」天然适合切片传播。【不足】回合制+登山的节奏偏慢，爽感反馈不如动作类直接；尚未发售无口碑验证。\n\n【综合】机制与题材高度统一的差异化roguelite，Q3发售值得列入观察清单。",
+      "why_notable": "全员一根绳+亲手献祭队友的极恶设计，克苏鲁登山题材的稀缺性",
+      "pcu": "暂未发售",
+      "estimated_sales": "暂无（未发售）"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "GameSpark · 报道",
+     "tags": [
+      "合作生存",
+      "开放世界",
+      "EA定档"
+     ],
+     "title": "Delverium：8人合作2D开放世界生存定档9月22日EA，愿望单破8万",
+     "en_title": "最大8人協力の2Dオープンワールドサバイバル『Delverium』9月22日に早期アクセス開始！",
+     "full_text": "最大8人協力の2Dオープンワールドサバイバル『Delverium』9月22日に早期アクセス開始！作物を育てたりNPC仲間にしたりダンジョン探索したり自由\nhttps://t.co/5LHWsLyUuX\n\n・探索、農業、クラフト、拠点建設、ダンジョン探索など楽しめる\n・ウィッシュリスト登録数は8万件 https://t.co/oqsqr6mnKO",
+     "author": "gamespark",
+     "date": "2026-07-30",
+     "likes": 535,
+     "views": 55960,
+     "link": "https://x.com/gamespark/status/2082814123025551546",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2082813492864995328/pu/img/IzC_BBOp1dx3YZVx.jpg",
+      "video_url": "https://x.com/gamespark/status/2082814123025551546/video/1"
+     },
+     "game_ref": "Delverium",
+     "summary": "GameSpark报道：2D像素开放世界生存沙盒《Delverium》将于9月22日在Steam开启早期访问，愿望单已突破8万。程序生成的幻想世界中可探索、种田、制造、建据点、下地牢，支持单人、4人分屏与最多8人在线合作。开发商为澳大利亚布里斯班的Sagestone Games（处女作），主开发者Scott Lowther称项目源于「想和热爱合作游戏的家人一起玩」，支持日语。",
+     "analysis": "",
+     "recommendation": "8人合作2D开放世界生存Delverium定档9月22日EA，愿望单破8万",
+     "enrichment": {
+      "game_name": "Delverium",
+      "genre": "生存沙盒 / 开放世界 / 合作",
+      "developer": "Sagestone Games（澳大利亚，处女作）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": "2026年9月22日（EA）",
+      "steam_rating": "未发售（demo可用）",
+      "steam_url": "https://store.steampowered.com/app/2710040/Delverium/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2710040/aeccfece5a14d9b7ebdef2d3b28c87ee000bfca6/header.jpg?t=1785416560",
+      "youtube_video": null,
+      "description": "【核心玩法】2D像素开放世界生存沙盒：程序生成的广阔世界中探索、农业、制造、据点建设、地牢探险，追踪「断层」入侵的秘密、恢复大地稳定。单人、4人分屏、最多8人在线合作三种玩法任选。\n\n【系统深度】采集解锁食物/工具/武器/防具/家具配方；雇佣NPC提供交易选项；耕种、养殖、钓鱼与烹饪形成农场循环；稀有生物群系、隐藏洞窟与危险地牢承载探索与战斗。\n\n【开发背景】澳洲布里斯班Sagestone Games的处女作，主开发者Scott Lowther为「想和喜欢合作游戏的家人一起玩」而起项；愿望单已破8万，2月demo已支持8人合作，日语支持确定。\n\n【优势】合作人数上限高（8人）+4人分屏的容量差异点；EA前有demo充分验证；愿望单8万的基本盘扎实。【不足】2D合作生存品类今年供给拥挤；处女作团队的内容产能待验证。\n\n【综合】愿望单8万的家庭向合作生存沙盒，EA首日表现将检验其内容深度能否撑起8人规模。",
+      "why_notable": "愿望单8万、最多8人在线+4人分屏，合作生存沙盒的容量竞争升级",
+      "pcu": "暂未发售",
+      "estimated_sales": "暂无（未发售）"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 独立开发者发布",
+     "tags": [
+      "程序化生成",
+      "世界构建",
+      "免费工具"
+     ],
+     "title": "USOMAP：不用生成AI的奇幻世界地图生成器，程序化地理推演——38万浏览",
+     "en_title": "ファンタジー世界地図を無料で作れるWebツール「USOMAP」を公開しました。※生成AIは使用せずに、地理のふるまいを計算して生成しています",
+     "full_text": "ファンタジー世界地図を無料で作れるWebツール「USOMAP」を公開しました。水源近くに町ができ、国境や地名まで自動生成。※生成AIは使用せずに、地理のふるまいを計算して生成しています。\nhttps://t.co/JsEUmmWWd1 https://t.co/3K64uwznbh",
+     "author": "asobodesign",
+     "date": "2026-07-30",
+     "likes": 6252,
+     "views": 381185,
+     "link": "https://x.com/asobodesign/status/2082826585447776655",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2082809792964554752/img/R4suaOomMAWunJz8.jpg",
+      "video_url": "https://x.com/asobodesign/status/2082826585447776655/video/1"
+     },
+     "summary": "日本自由职业者トミナガハルキ发布免费Web工具USOMAP：自动生成奇幻世界地图——城镇会合理地出现在水源附近，国境线与地名也一并自动生成。作者特别强调未使用生成式AI，而是通过计算地理行为规则程序化生成。发布推获38万浏览、6252赞、2600+收藏转发。",
+     "analysis": "在生成式AI轰炸的时间线上，一个「特意声明不用AI」的程序化工具反而拿下2600+转发收藏——可解释、可复现、可微调的规则系统在专业创作者中仍有不可替代的信任度。对世界构建管线而言，这类工具提供的是「可控的地基」，AI生成则适合「发散的表皮」，两者是分工而非替代。",
+     "recommendation": "USOMAP：不用生成AI的奇幻地图生成器，程序化推演水源城镇国境——38万浏览",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "Unity官方",
+     "tags": [
+      "Unity",
+      "AI助手",
+      "agentic工作流"
+     ],
+     "title": "Unity编辑器AI助手上线：描述行为自动起草C#脚本，checkpoint可回滚",
+     "en_title": "Review before you commit. Nothing is added to your project until you approve it.",
+     "full_text": "Review before you commit 🛡️ \n\nNothing is added to your project until you approve it. Describe the behavior you want and the in-editor AI assistant will draft tailored C# scripts or refactor your code on request. Roll back safely with checkpoints.\n\n🔗 Use the in-editor AI assistant today: https://t.co/ohGWb6uA4L",
+     "author": "unitygames",
+     "date": "2026-07-31",
+     "likes": 25,
+     "views": 5133,
+     "link": "https://x.com/unitygames/status/2083175923793195144",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOjtdA9W0AArp-x.jpg"
+     },
+     "summary": "Unity官方推广其编辑器内AI助手：描述想要的行为，助手会起草定制C#脚本或按需重构代码；所有改动经你批准前不会写入项目，并可通过checkpoint安全回滚。这是一周内Unity第三个agentic相关发布（7月28日MCP免费包、CLI+Pipeline、编辑器AI助手）。",
+     "analysis": "Unity的agentic三件套在一周内集齐：MCP管「连接」、CLI管「流程」、编辑器AI助手管「生成」，且每一步都强调「批准前不落地」的人审机制。引擎厂商的AI叙事从「能生成」转向「可控地生成」——这正是团队级采用的前置条件。",
+     "recommendation": "Unity编辑器AI助手：描述行为自动起草C#，checkpoint安全回滚"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**EA时代落幕：550亿美元私有化8月4日交割**\nEA宣布550亿美元私有化收购已获「全部监管批准」，预计8月4日交割——沙特PIF联合Silver Lake与Kushner旗下Affinity Partners的史上最大游戏杠杆收购落地，债务将主要用EA自身收入偿还，业绩压力写在交易结构里。同日索尼在财报QA首次回应停盘抗议：「数字化在所有媒体推进」，坚持2028年初停售实体盘，320条评论的愤怒没有改变结论；Capcom则直言重制版是成功支柱，为新RE和Pragmata等原创提供资金。\n\n**合作游戏继续膨胀：从8人互坑到50万愿望单**\nBig Hops宣布8月9日免费变身8人在线合作：扔队友、荡队友、偷背包、进度共享；海盗城建Corsair Cove以50万愿望单+Hooded Horse发行开局，首日966评价；狂气山脉登山roguelite《Ascenders》全员一根绳、亲手献祭累赘队友；8人合作2D生存Delverium定档9月22日EA、愿望单破8万。工具侧，USOMAP以「不用生成AI」的程序化地图生成获38万浏览、2600+收藏；Unity编辑器AI助手上线，一周内第三块agentic拼图。\n\n**AI的油门与刹车**\n单人开发者发布神经运动学模型，零关键帧实时生成战术动作，叫板动捕成本结构；另有开发者用Claude Code一夜做出QR闪屏的空气隔离文件传输。同日Shift-Up用全AI生成KPop MV宣传Stellar Blade 2引发粉丝反弹——CEO此前「AI是抗衡中国大厂的必需」言论被翻出。采用与摩擦在同一天并行。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
