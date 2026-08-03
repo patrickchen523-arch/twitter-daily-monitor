@@ -1,0 +1,437 @@
+{
+ "date": "2026-08-03",
+ "meta": {
+  "raw_count": 196,
+  "filtered_count": 161,
+  "selected_count": 12,
+  "crawl_time": "2026-08-03 11:30"
+ },
+ "lede": "Tiny Hero Courier：移轴微缩僵尸末日里送快递，解谜开路别摔包裹——22万浏览\n121个agent分工24小时写出4.4万行AoE克隆：多agent协作的体量新纪录\nXbox欧美英全线涨价34-49%：Series X最贵差200欧元，内存短缺的真实成本",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 1,
+   "hook": "Tiny Hero Courier：移轴微缩僵尸末日送快递——22万浏览"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "121个agent分工24小时写出4.4万行AoE克隆"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 2,
+   "hook": "RO3试玩：普罗恩特拉南门还在，'究极重制'的MMO回春"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "121个agent分工24小时写出4.4万行AoE克隆：多agent协作的体量新纪录\nGPT出图→Tripo转3D→Codex写码：2小时vibe coding做出3D人体解剖应用\n日本开发者诚实自述：AI生成的地图全是平庸货，问题出在用法"
+  },
+  {
+   "id": "industry",
+   "text": "Xbox欧美英涨价34-49%：Series X最贵差200欧，内存短缺的真实成本\nProject Zomboid同接121,603创历史新高：B42.20稳定版13年最强回春\nRO3试玩：普罗恩特拉南门+鼠标点击移动，'究极重制'的MMO回春\nMeccha Chameleon自制地图被植马、Discord同日被黑：3.1.0已修复，月销1500万的UGC安全课"
+  },
+  {
+   "id": "indie",
+   "text": "Polylithic：10人合作石器时代生存8月25日正式版，EA近三年毕业\nTiny Hero Courier：移轴微缩僵尸末日送快递，22万浏览\nLuminous Nights：单人开发4年的'王国之心风'ARPG，一千零一夜世界观"
+  },
+  {
+   "id": "tools",
+   "text": "Polyfork海盗湾3D套件：每个模型都是程序，agent可经MCP直接取用\nThree.js WebGPU僵尸控制器：RVO2+A*+主动布娃娃全在浏览器跑"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 开发者实操",
+     "tags": [
+      "多agent协作",
+      "Claude Opus 5",
+      "RTS克隆"
+     ],
+     "title": "121个agent分工24小时写出4.4万行AoE克隆：多agent协作的体量新纪录",
+     "en_title": "Son 44.000 líneas de código, le llevó más o menos 24 horas y consumí 13 millones de tokens distribuidos en 121 agentes",
+     "full_text": "Esto es INCREÍBLE\n\nAcabo de crear una nueva versión del Age of Empires con Claude Opus 5 de un solo tiro: solamente le puse un prompt una vez y me lo creó completo, creando desde cero todos los gráficos, mecánica y sonidos, ejecutable directamente desde el navegador.\n\nSon 44.000 líneas de código, le llevó más o menos 24 horas y consumí 13 millones de tokens distribuidos en 121 agentes.\n\nTiene distintas unidades, podés avanzar de edad y en mi único prompt adicional le pedí que escribiendo “klapaucius” me regale 1000 de cada recurso.\n\nLo hice con Claude Code, usando mi plan Max. Me iba agotando el límite de 5 horas, así que tuve que pedirle que continúe un par de veces.\n\nObviamente, el juego todavía tiene algunos bugs pero no deja de ser impresionante lo lejos que llegó sin intervención\n\nY esto…recién empieza.",
+     "author": "AlanDaitch",
+     "date": "2026-08-01",
+     "likes": 864,
+     "views": 109692,
+     "link": "https://x.com/AlanDaitch/status/2083523864277963257",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2083523696572895232/pu/img/yAIJXGBviDnm2GVk.jpg",
+      "video_url": "https://x.com/AlanDaitch/status/2083523864277963257/video/1"
+     },
+     "summary": "开发者Alan Daitch用Claude Opus 5一条prompt做出可浏览器直玩的《帝国时代》克隆：从零生成全部图形、机制与音效，共4.4万行代码、约24小时、1300万token、由121个agent分工完成。包含多种单位、时代演进，以及输入「klapaucius」触发的彩蛋（致敬模拟人生作弊码）。11万浏览。",
+     "analysis": "与Vyom的「一条prompt/$423」形成方法对照：单prompt解决小品，agent蜂群啃下RTS级体量。121个agent分工+24小时+1300万token的成本结构首次让「多agent协作做大型项目」有了公开数据点——体量瓶颈正在从模型能力转向编排能力。",
+     "recommendation": "121个agent分工24小时写出4.4万行AoE克隆：多agent协作的体量新纪录",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 开发者实操",
+     "tags": [
+      "vibecoding",
+      "AI管线",
+      "教育应用"
+     ],
+     "title": "GPT出图→Tripo转3D→Codex写码：2小时vibe coding做出3D人体解剖应用",
+     "en_title": "A 3D human anatomy application built with @threejs using GPT 5.6 Sol.",
+     "full_text": "Only if education could be this interactive ❤️‍🔥\n\nI've had a looong wish to build something genuinely useful through vibe coding, and I finally did it. \n\nA 3D human anatomy application built with @threejs using GPT 5.6 Sol. \n\nIt all started with a single design image that I created using GPT Image 2.0. I then used it to generate every 3D organ image, one by one.\n\nNext, I converted each of those images into 3D models using @tripoai (and no, they didn't sponsor this 😄).\n\nAfter that, I opened Codex, wrote a master prompt based on the design, and gave it the prompt, the design image, and all the 3D models.\n\nCodex built the first version beautifully, but there was one big problem. \n\nEvery single 3D model was nearly 120-150 MB. That obviously wasn't practical for the web and was giving a performance of 16fps.\n\nAfter a few iterations, Codex optimized each model down to roughly 2–5.5 MB while preserving the visual quality, reducing the total asset size from ~900 MB to just 28.6 MB. And each model loads on demand. \n\nAlong the way, Codex also generated those anatomical illustrations showing where each organ sits in the human body, and even created the interactive hotspot markers that explain different parts of every organ. It handled all of that.\n\nThe process wasn't exactly one shot, but it also wasn't difficult. You just have to do it step by step. \n\nIt genuinely felt like building something that could make learning anatomy much more engaging.\n\nThe inspiration came from @DilumSanjaya's 3D animal plant cell project. I remember seeing it and thinking, \"I want to build something like this one day.\" \n\nAnd I did it :D\n\nLive: https://t.co/gIFgkj8UVB\nCode: https://t.co/nijvyWcyxO",
+     "author": "thebuggeddev",
+     "date": "2026-08-02",
+     "likes": 1439,
+     "views": 117119,
+     "link": "https://x.com/thebuggeddev/status/2083884856531177942",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2083879977976733697/img/yodeFffWmW1O2Jol.jpg",
+      "video_url": "https://x.com/thebuggeddev/status/2083884856531177942/video/1"
+     },
+     "summary": "开发者The Bugged Dev用三段AI管线做出可交互的3D人体解剖应用（已上线Vercel）：先用GPT Image 2.0生成一张设计图，再逐一生成各器官图片、用Tripo AI逐个转成3D模型，最后交给Codex+Three.js组装成交互应用。11.7万浏览、1439赞，「要是教育也能这么互动就好了」。",
+     "analysis": "这条的价值是「管线的拼装感」：图片生成→图转3D→代码组装，每一棒都是现成AI服务，个人开发者的角色变成「流程导演」。与8/2「AI游戏自带编辑器」并读，AI应用的护城河正在从单点生成能力转向多服务编排。",
+     "recommendation": "GPT出图→Tripo转3D→Codex写码：2小时vibe coding做出3D解剖应用",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 日本开发者",
+     "tags": [
+      "AI局限",
+      "地图生成",
+      "诚实声音"
+     ],
+     "title": "日本开发者诚实自述：AI生成的地图全是平庸货，问题出在用法",
+     "en_title": "ご覧の通りのヘボいマップしか生成されなくてとてもヘコんでいます",
+     "full_text": "ベータテストの対応作業のかたわらに、目玉機能となる「マップ自動生成」機能を作ろうとしていたんです。\nそれで、どうせなら今流行りのAIで全部作ってみようと色々奮闘していたのですが…\nご覧の通りのヘボいマップしか生成されなくてとてもヘコんでいます😭\n\nしかしこれは絶対わたしのAIの使い方が間違ってるだけだと思うんですよね。\nどなたかAIの得意な方、2.5Dのキレイなマップを生成する良い方法があればアドバイスを下さい～！",
+     "author": "RPG_Cobo",
+     "date": "2026-08-02",
+     "likes": 91,
+     "views": 9230,
+     "link": "https://x.com/RPG_Cobo/status/2083772513134297214",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2083772139375935488/img/CytUByWjTrZoWktY.jpg",
+      "video_url": "https://x.com/RPG_Cobo/status/2083772513134297214/video/1"
+     },
+     "summary": "日本开发者RPG-Cobo在beta测试间隙尝试用流行的AI方式生成游戏主打的「地图自动生成」功能，结果只产出平庸（ヘボい）的地图，深受打击。但他的判断是「这绝对只是我的AI用法不对」，并公开向擅长AI的人求教2.5D漂亮地图的生成方法。",
+     "analysis": "在一周的AI成功学轰炸中，这条「翻车实录」是珍贵的对照组：AI生成的下限仍然平庸，「会不会用」直接决定产出在不在可用线上。工具普及的下一课不是「用不用」，而是「怎么教会团队正确地用」。",
+     "recommendation": "日本开发者自述AI地图翻车：平庸是下限，用法决定上限"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 报道",
+     "tags": [
+      "Xbox",
+      "硬件涨价",
+      "内存危机"
+     ],
+     "title": "Xbox欧美英全线涨价34-49%：Series X最贵差200欧元，内存短缺的真实成本",
+     "en_title": "Xbox UK and Europe console price hikes revealed, and they're between 34 and 49% more expensive than last month.",
+     "full_text": "Xbox UK and Europe console price hikes revealed, and they're between 34 and 49% more expensive than last month. https://t.co/IrIAIAzioZ https://t.co/0Bs5yL2siA",
+     "author": "eurogamer",
+     "date": "2026-08-02",
+     "likes": 24,
+     "views": 6532,
+     "link": "https://x.com/eurogamer/status/2083900899097784582",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOuAztPXoAEoIfq.jpg"
+     },
+     "summary": "Xbox正式公布欧美英新价格：英国Series X光盘版£500→£670（+34%），Series S 512GB £300→£430（+43%），Series S 1TB £350→£520（+48.5%）；欧洲Series X光盘版€599.99→€799.99（贵200欧元）；美国同型号$649.99→$799.99。Eurogamer称之为「内存短缺的真实成本」首次完整显现。此前Xbox刚公布季度营收-7%、硬件-29%。",
+     "analysis": "在营收-7%、硬件-29%的当口把主机涨价34-49%，Xbox的选择题其实是「保利润还是保装机量」——答案已经给出。三星预告的2028短缺不是远期风险，它已经以每台200欧元的形式落在玩家账单上；索尼靠囤货把涨价推迟到2027年初，主机两家的成本传导时差本身就是竞争变量。",
+     "recommendation": "Xbox欧美英涨价34-49%：Series X最贵差200欧，内存短缺的真实成本",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "PC Gamer+有数GI · 数据",
+     "tags": [
+      "Project Zomboid",
+      "PCU纪录",
+      "长线运营"
+     ],
+     "title": "Project Zomboid同接121,603创历史新高：B42.20稳定版带来13年最强回春",
+     "en_title": "Project Zomboid hit a new concurrent player record after a huge map update",
+     "full_text": "Project Zomboid hit a new concurrent player record after a huge map update https://t.co/wuyPsWlGDM",
+     "author": "pcgamer",
+     "date": "2026-08-02",
+     "likes": 172,
+     "views": 36878,
+     "link": "https://x.com/pcgamer/status/2083901593121116220",
+     "media": null,
+     "summary": "PC Gamer报道《Project Zomboid》在大型地图更新后同时在线创历史新高；有数GI监测8月3日峰值达121,603人。此次B42.20稳定版更新包含重制城镇、新增阴森孤儿院区域与400个程序生成地下室。这款2013年进入EA的僵尸生存游戏在运营第13年迎来最强回春。",
+     "analysis": "Zomboid的曲线是对「年货逻辑」的反驳：两年磨一个大版本、地图翻倍、13年持续运营，换来的是历史新高的同接。在GAAS退潮、买断回摆的2026年，「慢而深」的长线模式反而成了稀缺资产。",
+     "recommendation": "Project Zomboid同接121,603创历史新高：13年EA的最强回春"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "AUTOMATON · 试玩报告",
+     "tags": [
+      "RO3",
+      "MMORPG",
+      "ChinaJoy"
+     ],
+     "title": "RO3试玩：普罗恩特拉南门+鼠标点击移动，「究极重制」的MMO回春",
+     "en_title": "MMORPG『ラグナロクオンライン3』試遊レポート。「プロンテラ南門」「マウスクリック移動」に感じた“あの頃の空気”が、今新しく蘇る",
+     "full_text": "MMORPG『ラグナロクオンライン3』試遊レポート。「プロンテラ南門」「マウスクリック移動」に感じた“あの頃の空気”が、今新しく蘇る\nhttps://t.co/w0VLcEK7vD https://t.co/JRhZRXGQtY",
+     "author": "AUTOMATONJapan",
+     "date": "2026-08-02",
+     "likes": 836,
+     "views": 242001,
+     "link": "https://x.com/AUTOMATONJapan/status/2083726672000671854",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOriM-CaAAAIGi7.jpg"
+     },
+     "summary": "AUTOMATON在ChinaJoy 2026试玩《仙境传说Online 3》：普罗恩特拉南门、鼠标点击移动、数字键技能等RO原味操作完整保留，Boss战则进化为5人副本制（FF14/WoW式机制：柱后躲避、地穴避流沙），黄金虫、Mistress、Osiris等经典Boss回归；UI中可见官方内置的自动狩猎功能。游戏由bilibili代理国服、8月27日首测，日本上线也已确认。试玩者评价其为「与其说是新作，不如说是究极的重制」。24.2万浏览。",
+     "analysis": "RO3的产品判断很清醒：情感资产（南门、点击移动、经典Boss）原样奉还，体验痛点（抢怪、挂机灰色地带）用现代设计解决（副本制、官方自动狩猎）。老IP复活的关键从来不是「做多大改动」，而是像Capcom重制那样，分清哪些该动、哪些碰都不能碰。",
+     "recommendation": "RO3试玩：南门还在、Boss进副本，「究极重制」的MMO回春",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 安全",
+     "tags": [
+      "UGC安全",
+      "Steam Workshop",
+      "Meccha Chameleon"
+     ],
+     "title": "Meccha Chameleon自制地图被植马、官方Discord同日被黑：月销1500万的UGC安全课",
+     "en_title": "User-made maps from Steam top-seller Meccha Chameleon have been found to contain malware, just as the game's official Discord server got hacked",
+     "full_text": "PSA: User-made maps from Meccha Chameleon have been found to contain malware. https://t.co/ddFPMbMExT https://t.co/pANaHoR0TP",
+     "author": "eurogamer",
+     "date": "2026-08-02",
+     "likes": 4,
+     "views": 4573,
+     "link": "https://x.com/eurogamer/status/2083923547634724935",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOuVaCGWUAAyKQP.jpg"
+     },
+     "summary": "安全研究者Feint发现《Meccha Chameleon》Steam创意工坊地图「Laser Tag Neon」内置恶意软件投放器（下载时弹出命令行窗口），下架后另一张带毒地图「Chroma Grid Arena」随即出现。同日该游戏官方Discord被黑：一名工程师在排查恶意地图时电脑中马，黑客绕过Discord两步验证、封禁全部官方成员，并散布「最新更新含RAT」的谣言（官方辟谣为100%虚假）。开发者已发布3.1.0补丁封堵地图执行漏洞并恢复Discord。该作一个月内销量达1500万份。",
+     "analysis": "8/2我们刚报道它与8番出口的联动，这起事件是硬币的另一面：UGC生态越繁荣，内容供应链攻击面越大——带毒地图、工程师中马、Discord夺权、谣言扩散，一条完整的攻击链在48小时内走完。对所有开放UGC的游戏：地图/Mod沙箱隔离与员工安全培训不再是可选项。",
+     "recommendation": "Meccha Chameleon地图植马+Discord被黑：月销1500万后的UGC安全课"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "GameSpark · 报道",
+     "tags": [
+      "合作生存",
+      "石器时代",
+      "正式版"
+     ],
+     "title": "Polylithic：10人合作石器时代生存8月25日正式版，EA近三年终毕业",
+     "en_title": "【最大10人協力】ただの原始人が文明を築くまで。オープンワールド石器時代サバイバル『Polylithic』がまもなく正式リリース",
+     "full_text": "【最大10人協力】ただの原始人が文明を築くまで。オープンワールド石器時代サバイバル『Polylithic』がまもなく正式リリース。仲間を集め、村を建設し、部族を率いて新石器時代へ【今週のインディー3選】\nhttps://t.co/ltk9v0Ei5c\n\n正式版では空腹や体型変化、ペット、新ストーリーなどを追加予定。 https://t.co/HwHczsHxGD",
+     "author": "gamespark",
+     "date": "2026-08-02",
+     "likes": 1269,
+     "views": 97161,
+     "link": "https://x.com/gamespark/status/2083772340102725767",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOsL4JCaYAAH6BT.jpg"
+     },
+     "game_ref": "Polylithic",
+     "summary": "GameSpark报道：石器时代开放世界生存游戏《Polylithic》将于8月25日结束近三年的EA正式发售。玩家从普通原始人成长为部落领袖，带领族人从狩猎采集的旧石器时代走向农耕定居的新石器时代，支持最多10人在线合作。正式版新增角色自定义、饥饿与体型系统、敌对部落、犬/鬣狗宠物与新剧情。售价1,600日元（$14.99），支持日语。",
+     "analysis": "",
+     "recommendation": "Polylithic：10人合作石器时代生存8月25日正式版，EA近三年毕业",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Polylithic",
+      "genre": "开放世界生存 / 部落经营 / 合作",
+      "developer": "polyperfect",
+      "publisher": "indie.io",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "$14.99（1,600日元）",
+      "release_date": "已发售（EA）· 2026年8月25日正式版",
+      "steam_rating": "131条评价（EA中）",
+      "steam_url": "https://store.steampowered.com/app/1839060/Polylithic/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1839060/1df7c44279065a14e15874b670f16a8fc9f4a481/header.jpg?t=1784650095",
+      "youtube_video": null,
+      "description": "【核心玩法】石器时代开放世界生存：从一名普通原始人开始，在「人类还不是食物链顶点」的世界探索森林、雪丘与激流，狩猎兔子到猛犸象，解锁科技树研究新技术，建设村庄、发展部落，带领族人从旧石器走向新石器。\n\n【部落经营】作为领袖要管理族人的生活需求与幸福度，族人会在劳作中支撑部落成长；支持最多10人在线合作，共享资源分工狩猎、建筑与探索。\n\n【正式版内容】2023年11月10日EA至今近三年，8月25日转正：新增角色自定义、饥饿与体型变化系统、敌对部落、犬或鬣狗宠物与新剧情线。\n\n【优势】「文明演进」的长线成长曲线在生存品类中少见；10人合作上限高；1,600日元定价亲民。【不足】EA期评价仅131条，基本盘偏薄，正式版需要一波传播引爆。\n\n【综合】EA慢炖近三年的文明演进生存游戏，10人合作+8月25日正式版是明确的观察节点。",
+      "why_notable": "EA近三年毕业+10人合作，「原始人到文明」的长线成长差异化",
+      "pcu": "暂无公开数据",
+      "estimated_sales": "暂无官方数据"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · KOL推荐",
+     "tags": [
+      "移轴微缩",
+      "僵尸",
+      "快递"
+     ],
+     "title": "Tiny Hero Courier：移轴微缩僵尸末日里送快递，解谜开路别摔包裹——22万浏览",
+     "en_title": "This indie studio is making a game where you deliver packages in a miniature tilt-shift zombie apocalypse",
+     "full_text": "This indie studio is making a game where you deliver packages in a miniature tilt-shift zombie apocalypse\n\n- Dodge zombie hordes hauling TNT and fragile boxes\n- Solve puzzles to clear a path\n- Don't drop packages\n\nIt's called Tiny Hero Courier. Would you play this? https://t.co/LcKxn2vXOQ",
+     "author": "IndieGameJoe",
+     "date": "2026-08-01",
+     "likes": 4408,
+     "views": 223932,
+     "link": "https://x.com/IndieGameJoe/status/2083545711187050875",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2083542053556785152/img/tSYryhZ7FB2EPo9l.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2083545711187050875/video/1"
+     },
+     "game_ref": "Tiny Hero Courier",
+     "summary": "Indie Game Joe推荐《Tiny Hero Courier》：移轴摄影风格的微缩僵尸末日快递游戏。扮演普通快递员Rupert送出最后的包裹——一边躲避抱着TNT和易碎箱子的快速僵尸群，一边解谜清出通路，还要满足老板的要求、保住幽默感。推荐推获22万浏览、4408赞。发售日待定。",
+     "analysis": "",
+     "recommendation": "Tiny Hero Courier：移轴微缩僵尸末日送快递，解谜开路别摔包裹",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Tiny Hero Courier",
+      "genre": "快递动作 / 解谜 / 休闲",
+      "developer": "Guillotine",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3408450/Tiny_Hero_Courier/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3408450/header.jpg?t=1734605296",
+      "youtube_video": null,
+      "description": "【核心玩法】微缩末日快递员模拟：扮演普通快递员Rupert在移轴镜头般的微缩僵尸世界中送出最后的包裹。快速僵尸群会抱着TNT和易碎箱子乱入——既要躲开它们，又要解谜清理通路，还不能摔坏手里的包裹。\n\n【美术风格】移轴摄影（tilt-shift）把僵尸末日拍成沙盘模型的微缩景观，「末世+模型感」的反差萌是第一眼卖点。\n\n【开发背景】Guillotine工作室，发售日待定。KOL推荐推获22万浏览、4408赞、425收藏。\n\n【优势】题材组合新鲜（快递×僵尸×移轴）；「护送+解谜」的玩法叠加有策略深度；画面风格天然适配切片传播。【不足】未发售无口碑验证；快递玩法的长线变化存疑。\n\n【综合】美术风格先行的差异化小品，22万浏览验证了卖相，等待试玩与定档。",
+      "why_notable": "移轴微缩×僵尸快递的题材新鲜感，22万浏览验证卖相",
+      "pcu": "暂未发售",
+      "estimated_sales": "暂无（未发售）"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · KOL推荐",
+     "tags": [
+      "单人开发",
+      "王国之心风",
+      "ARPG"
+     ],
+     "title": "Luminous Nights：单人开发4年的「王国之心风」ARPG，一千零一夜世界观",
+     "en_title": "A Solo Dev is making a Kingdom Hearst inspired game called \"Luminous Nights\"!",
+     "full_text": "A Solo Dev is making a Kingdom Hearst inspired game called \"Luminous Nights\"!\n\n- PS2 era Action RPG Adventure\n- Kingdom Hearts inspired game\n- Mystical Arabian Nights World\n- Traverse a city shrouded in darkness\n- Story blending bright and dark emotional themes\n- Also inspired by Final Fantasy, Undertale and Persona\n- Made by a solo developer\n- Currently in development https://t.co/HINgu3X2hV",
+     "author": "Genki_JPN",
+     "date": "2026-08-02",
+     "likes": 852,
+     "views": 55473,
+     "link": "https://x.com/Genki_JPN/status/2083846868526579785",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2082990473191587840/img/IiL5CTRRxNqvWaJh.jpg",
+      "video_url": "https://x.com/Genki_JPN/status/2083846868526579785/video/1"
+     },
+     "game_ref": "Luminous Nights",
+     "summary": "Genki推荐单人开发者Yahya Danboos制作中的《Luminous Nights》：PS2时代风格的动作RPG，王国之心启发×一千零一夜世界观，探索被黑暗笼罩的神秘城市Noor、集结伙伴对抗面具王。开发已超4年，同时受FF、Undertale、Persona影响，预计2027年发售。GameSpark日本站报道后登上站内热度榜首。",
+     "analysis": "",
+     "recommendation": "Luminous Nights：单人4年的王国之心风ARPG，一千零一夜×面具王",
+     "enrichment": {
+      "game_name": "Luminous Nights",
+      "genre": "动作RPG / 3D平台",
+      "developer": "Yahya Danboos（单人开发者）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": "2027年",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/1949610/Luminous_Nights/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1949610/4088d99f0f4f917bfde9ecbb1e79a594329f0297/header.jpg?t=1785465402",
+      "youtube_video": null,
+      "description": "【核心玩法】「HeartsLike」动作RPG：快节奏近战+强力魔法，解锁新能力与武器，在神秘城市Noor中3D平台跳跃探索，集结令人难忘的伙伴们对抗面具王（Masked King）。\n\n【题材风格】王国之心启发×一千零一夜的阿拉伯夜谈世界观，明暗交织的情感主题；同时受FF、Undertale、Persona影响，PS2时代的动作冒险质感。\n\n【开发背景】Yahya Danboos单人开发超4年，预计2027年发售。日本KOL推荐推获5.5万浏览，GameSpark报道后登上站内热度榜首。\n\n【优势】题材组合稀缺（阿拉伯夜谈×KH风在日系受众中无竞品）；单人长期开发的完成度已具卖相；日本市场反响热烈。【不足】2027年发售仍远；单人产能对ARPG体量是最大风险。\n\n【综合】单人4年的情怀型ARPG，日本受众的热烈反响是最强信号，2027年值得长期跟踪。",
+      "why_notable": "单人4年开发的KH风阿拉伯夜谈ARPG，日本热度榜登顶",
+      "pcu": "暂未发售",
+      "estimated_sales": "暂无（未发售）"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 资产发布",
+     "tags": [
+      "AI-native资产",
+      "MCP",
+      "3D套件"
+     ],
+     "title": "Polyfork海盗湾3D套件：每个模型都是程序，agent可经MCP直接取用",
+     "en_title": "New *remixable* 3D kit released: \"Pirate Cove\"⚓ 48 assets, 502 knobs. Every model is a program, not a mesh you're stuck with",
+     "full_text": "New *remixable* 3D kit released: \"Pirate Cove\"⚓\n\n- 48 assets, 502 knobs. Every model is a program, not a mesh you're stuck with, hundreds of variations.\n- AI-native: Your agent can browse and build over MCP. No install, no download🤖\n- Night mode across the docks🌙\n- 45k tris for the whole cove📦\n\n@threejs, Unity, Godot, anything glTF.\n\nGet it now and the rest of the assets -> https://t.co/YxZGLcP0fG",
+     "author": "polyfork_",
+     "date": "2026-08-02",
+     "likes": 55,
+     "views": 3387,
+     "link": "https://x.com/polyfork_/status/2083749114483773939",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2083748359613849600/img/Klcha7mudLzLM_kE.jpg",
+      "video_url": "https://x.com/polyfork_/status/2083749114483773939/video/1"
+     },
+     "summary": "Polyfork发布可重构3D套件「Pirate Cove」：48个资产、502个调节旋钮——每个模型都是一段程序而非固定网格，可产生数百种变体；「AI-native」设计让agent可以经MCP直接浏览和取用，无需安装下载；整个海湾仅4.5万三角面，输出glTF兼容Three.js/Unity/Godot。",
+     "analysis": "资产库的竞争维度变了：从「模型多好看」到「agent能不能直接读懂和改造」。参数化（502个旋钮）+MCP接口意味着AI可以自主完成「找素材→改变体→搭场景」的闭环——资产正在从文件变成API。这与Unity的MCP/CLI是同一场战争的资产侧。",
+     "recommendation": "Polyfork海盗湾3D套件：模型即程序+502旋钮，agent经MCP直接取用",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · 技术演示",
+     "tags": [
+      "Three.js",
+      "WebGPU",
+      "群体模拟"
+     ],
+     "title": "Three.js WebGPU僵尸控制器：RVO2+A*+主动布娃娃全在浏览器跑",
+     "en_title": "Got the RVO2 + A* + Active Ragdoll Zombie controller and some shooting into the game finally. Three.js WebGPU",
+     "full_text": "Got the RVO2 + A* + Active Ragdoll Zombie controller and some shooting into the game finally.\n\nThree.js WebGPU https://t.co/Z3S07RBn8Z",
+     "author": "TRA4669",
+     "date": "2026-08-02",
+     "likes": 493,
+     "views": 44460,
+     "link": "https://x.com/TRA4669/status/2083734885122937027",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2083733915764764672/img/JDCUgOO3RfQYz4IA.jpg",
+      "video_url": "https://x.com/TRA4669/status/2083734885122937027/video/1"
+     },
+     "summary": "开发者TheRearAdmiral展示其Three.js WebGPU僵尸游戏进度：RVO2群体避障+A*寻路+主动布娃娃（Active Ragdoll）的僵尸控制器与射击系统已整合进游戏。4.4万浏览、493赞。",
+     "analysis": "浏览器游戏的仿真密度又上了一个台阶：群体避障（RVO2）+主动布娃娃此前是原生引擎的保留项目，如今在WebGPU里跑通。对做丧尸潮、群体AI的团队，Web路线的技术债正在快速清零。",
+     "recommendation": "Three.js WebGPU僵尸控制器：RVO2+A*+主动布娃娃全在浏览器跑"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**Xbox涨价34-49%：内存危机落到玩家账单上**\nXbox欧美英全线涨价：英国Series X光盘版£500→£670、Series S最高+48.5%，欧洲Series X贵200欧元——「内存短缺的真实成本」首次完整显现，而就在同一周Xbox刚交出营收-7%、硬件-29%的财报。另一边，Project Zomboid以121,603同接创13年历史新高，「慢而深」的长线运营成了稀缺资产；RO3在ChinaJoy试玩获「究极重制」评价，国服8月27日首测；Meccha Chameleon则给所有UGC游戏上了一课：自制地图被植马+Discord同日被黑，月销1500万后的第一份安全账单。\n\n**多agent协作的体量新纪录**\nAlan Daitch用121个agent分工24小时写出4.4万行、可浏览器直玩的AoE克隆（1300万token）——体量瓶颈正从模型能力转向编排能力；另有开发者用「GPT出图→Tripo转3D→Codex写码」的三段管线2小时做出3D人体解剖应用。日本开发者RPG-Cobo的翻车实录同样珍贵：AI生成的地图全是平庸货，「会不会用」决定产出下限。资产侧，Polyfork让3D套件变成agent可经MCP直接取用的API；Three.js WebGPU跑通RVO2+主动布娃娃僵尸潮。\n\n**独游：长线毕业与题材新鲜度**\nPolylithic近三年EA将于8月25日转正，10人合作石器时代生存；Tiny Hero Courier以移轴微缩僵尸快递拿下22万浏览；单人开发4年的「王国之心风×一千零一夜」ARPG《Luminous Nights》登顶日媒热度榜。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
