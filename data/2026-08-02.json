@@ -1,0 +1,458 @@
+{
+ "date": "2026-08-02",
+ "meta": {
+  "raw_count": 152,
+  "filtered_count": 140,
+  "selected_count": 12,
+  "crawl_time": "2026-08-02 11:00"
+ },
+ "lede": "Dear Passengers：「世界最烂航空公司」机组互坑游戏，愿望单一个月冲过200万\nAI做游戏的真实账单：690M token/423美元一条prompt，另一单1200M/863美元\nRoblox股价单日-29%创21个月新低，华尔街警告「生命周期衰退」",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "Dear Passengers：世界最烂航空公司，愿望单破200万"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "AI做游戏的真实账单：690M token=$423，一条prompt"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Roblox股价-29%创21个月新低，「生命周期衰退」警告"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "AI做游戏的真实账单：690M token/$423一条prompt，另一单1200M/$863\nthree.js作者mrdoob演示QR闪屏空气隔离传输：屏幕当信道——148万浏览\n中国团队让Codex给AI游戏顺手做个编辑器：生成器与编辑器开始伴生"
+  },
+  {
+   "id": "industry",
+   "text": "Roblox股价单日-29%创21个月新低，华尔街警告「生命周期衰退」\nKrafton官宣Subnautica系列化：500万销量后的IP资产化下一步\nRE4重制成本世代最畅销重制：1680万份验证Capcom「重制养原创」"
+  },
+  {
+   "id": "indie",
+   "text": "Dear Passengers：世界最烂航空公司机组互坑，愿望单破200万\nMeccha Chameleon×8番出口官方联动：7万评价捉迷藏游戏更新3.5.0\nSephiria：Dungreed团队兔子动作roguelite 1.0，两日峰值24,720\nStonewards：矮人采掘锻造守城roguelite，8月12日EA、愿望单10万"
+  },
+  {
+   "id": "tools",
+   "text": "Unity程序化动画丝滑演示：动画去动捕化从论文走向管线\nThree.js最大资产包Railway：125+模块化铁路资产，vibecoding素材基建"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 开发者实操",
+     "tags": [
+      "AI游戏生成",
+      "token成本",
+      "vibecoding"
+     ],
+     "title": "AI做游戏的真实账单：690M token/423美元一条prompt，另一单1200M/863美元",
+     "en_title": "690 million tokens, $423 and just 1 prompt is all it took",
+     "full_text": "690 million tokens, $423 and just 1 prompt is all it took https://t.co/2DwnuBee14",
+     "author": "HelloVyom",
+     "date": "2026-07-31",
+     "likes": 3031,
+     "views": 2350324,
+     "link": "https://x.com/HelloVyom/status/2083177530287353961",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2083177009954660352/img/WovzOpkr4Oy200UM.jpg",
+      "video_url": "https://x.com/HelloVyom/status/2083177530287353961/video/1"
+     },
+     "summary": "开发者Vyom连续公开两条AI生成游戏的完整成本：一条690M token、423美元、单条prompt产出可玩作品（235万浏览、3031赞）；另一条1200M token、863.35美元，使用mattshumer的「gauntlet prompt」，并感慨「game devs are done for real」。",
+     "analysis": "继Katamari 290M token之后，「token账单」正在成为AI游戏生成的标准度量衡：几百美元=一个可玩原型。值得注意的不是「取代开发者」的感叹，而是成本已低到可以公开报销的级别——原型阶段的预算科目正在从人力月改为token费。",
+     "recommendation": "AI做游戏的真实账单：690M token/$423一条prompt，1200M/$863又一单",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · three.js作者",
+     "tags": [
+      "空气隔离",
+      "QR传输",
+      "mrdoob"
+     ],
+     "title": "three.js作者mrdoob演示QR闪屏空气隔离传输：屏幕当信道——148万浏览",
+     "en_title": "Transferring data with rapidly flashing qr codes",
+     "full_text": "Transferring data with rapidly flashing qr codes 🫰\nhttps://t.co/3qnijxjV1R https://t.co/NCNXa1WFst",
+     "author": "mrdoob",
+     "date": "2026-07-30",
+     "likes": 23733,
+     "views": 1482509,
+     "link": "https://x.com/mrdoob/status/2082913353853534515",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2082913321414791168/img/3JyNPa13vJMYjINg.jpg",
+      "video_url": "https://x.com/mrdoob/status/2082913353853534515/video/1"
+     },
+     "summary": "three.js作者mrdoob演示「用快速闪烁的QR码传输数据」：无需WiFi、蓝牙或同一网络，两块屏幕对视即可完成文件传输，并附上r/vibecoding的原帖链接。这正是8月1日报报道的「Claude Code一夜做出空气隔离传输」项目的技术演示，148万浏览、2.4万赞。",
+     "analysis": "mrdoob的亲自下场让这个小发明完成了从「趣闻」到「可信技术路径」的背书。屏幕当信道的空气隔离传输在保密、安检、展会离线分发等场景有真实需求，而AI结对编程把这类「论文级点子」的实现成本压缩到了一晚。",
+     "recommendation": "three.js作者mrdoob演示QR闪屏空气隔离传输：屏幕当信道——148万浏览",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 中文开发者",
+     "tags": [
+      "Codex",
+      "AI游戏编辑器",
+      "趋势判断"
+     ],
+     "title": "中国团队让Codex给AI小游戏配了专属编辑器：以后AI游戏或自带编辑器",
+     "en_title": "看来以后的 AI 游戏/交互作品，可能都会自带一个自己的编辑器",
+     "full_text": "在 Codex 里做了一个 Blender… （不\n\n最近在用 Codex 做自己的 AI 小游戏，发现 3D 空间的布局靠口喷真的太难调整了。\n\n忽然灵光一闪，让 Codex 同步做了这个游戏的编辑器，允许像 Blender 一样可以选重资产调整位置、缩放、旋转角度。Codex 居然轻松完成了。\n\n看来以后的 AI 游戏/交互作品，可能都会自带一个自己的编辑器。\n\n☁️\n\n这个关卡同样是用 WebGL / Three.js 写的，是我们爱丽丝系列的第二章，Down the Rabbit Hole!\n\n希望能尽早把这本书的所有章节都做成游戏的形式，和大家分享最终的完成品。🥰\n\ncreated by @simonxxoo and me!",
+     "author": "ring_hyacinth",
+     "date": "2026-07-31",
+     "likes": 943,
+     "views": 76589,
+     "link": "https://x.com/ring_hyacinth/status/2083238711949734224",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2083234535509237760/img/tjSMVRAumU_oPOMi.jpg",
+      "video_url": "https://x.com/ring_hyacinth/status/2083238711949734224/video/1"
+     },
+     "summary": "Ring Hyacinth分享：用Codex做自己的AI小游戏（爱丽丝系列第二章Down the Rabbit Hole，WebGL/Three.js）时，发现3D空间布局靠「口喷」太难调整，灵光一闪让Codex同步做了一个游戏编辑器——可以像Blender一样选中资产调整位置、缩放、旋转，Codex轻松完成。她的判断：以后的AI游戏/交互作品，可能都会自带一个自己的编辑器。",
+     "analysis": "「AI游戏自带编辑器」是本周最有价值的趋势判断之一：当生成成本趋零，稀缺的是「微调的手柄」。生成器与编辑器的伴生关系可能重新定义工具链形态——每个作品内嵌自己的Unity。中文开发者的实操观察，值得产品同学细想。",
+     "recommendation": "让Codex给AI游戏顺手做个编辑器：生成器与编辑器开始伴生——7.7万浏览",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "BloxWire · 财报快讯",
+     "tags": [
+      "Roblox",
+      "财报",
+      "UGC平台"
+     ],
+     "title": "Roblox股价单日-29%创21个月新低，华尔街警告「生命周期衰退」",
+     "en_title": "Roblox stock drops 29% after Q2 earnings report, hitting its lowest level in 21 Months",
+     "full_text": "🚨Roblox stock drops 29% after Q2 earnings report, hitting its lowest level in 21 Months $RBLX \n\nWall Street analysts warn Roblox may be entering a \"lifecycle decline.\" https://t.co/Nb14o7Qdlt",
+     "author": "Blox_Wire",
+     "date": "2026-07-31",
+     "likes": 1557,
+     "views": 68289,
+     "link": "https://x.com/Blox_Wire/status/2083255324136681760",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOk1c6NbsAA0YMl.jpg"
+     },
+     "summary": "Roblox Q2财报后股价单日暴跌29%，创21个月以来新低。华尔街分析师警告，Roblox可能正进入「生命周期衰退」（lifecycle decline）阶段。",
+     "analysis": "UGC平台龙头被砸出21个月新低，市场担忧的不是单季数字而是「生命周期」叙事本身——当增长故事从「新一代社交网络」变成「成熟产品的衰退管理」，整个UGC游戏板块的估值锚都要重调。与EA私有化、Xbox重置并列，这是本周第三起「旧增长模式终结」事件。",
+     "recommendation": "Roblox股价-29%创21个月新低：华尔街警告「生命周期衰退」",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "RPS · 多家报道",
+     "tags": [
+      "Krafton",
+      "Subnautica",
+      "IP运营"
+     ],
+     "title": "Krafton官宣Subnautica升级为「系列IP」：SN2二十二天500万份的下一步",
+     "en_title": "Krafton want to \"scale up\" Subnautica as a brand, after the success of the second game.",
+     "full_text": "Krafton want to \"scale up\" Subnautica as a brand, after the success of the second game. https://t.co/awg2SJCPmu https://t.co/d885Q2usSc",
+     "author": "rockpapershot",
+     "date": "2026-08-01",
+     "likes": 20,
+     "views": 32505,
+     "link": "https://x.com/rockpapershot/status/2083383740345016740",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOmqdHXXQAAEKYM.jpg"
+     },
+     "summary": "在Subnautica 2发售22天销量突破500万份后，Krafton表示将把Subnautica「扩大」（scale up）为系列化品牌IP运营。多家报道：Rock Paper Shotgun、Eurogamer。",
+     "analysis": "从「宫斗剧主角」到「公司级系列IP」，500万销量直接把Unknown Worlds的续命问题变成了Krafton的资产配置问题。系列化意味着年货化、衍生化预期——对这款以慢工细活著称的生存系列，开发节奏的变化本身就是最大的风险点。",
+     "recommendation": "Krafton官宣Subnautica系列化：500万销量后的IP资产化下一步"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 报道",
+     "tags": [
+      "Capcom",
+      "RE4重制",
+      "销量纪录"
+     ],
+     "title": "RE4重制版被确认为本世代最畅销重制游戏，「遥遥领先」",
+     "en_title": "Resident Evil 4 is, by a lot, the best-selling remake of this console generation.",
+     "full_text": "Resident Evil 4 is, by a lot, the best-selling remake of this console generation. https://t.co/PTT7ov29EX https://t.co/k4N4Kb0TWt",
+     "author": "eurogamer",
+     "date": "2026-08-01",
+     "likes": 15,
+     "views": 5241,
+     "link": "https://x.com/eurogamer/status/2083561160800948248",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOpL0VUXoAA7_xW.jpg"
+     },
+     "summary": "Eurogamer报道：《生化危机4：重制版》是本世代主机最畅销的重制游戏，且优势「遥遥领先」（by a lot）。结合此前财报数据：RE4重制销量1680万份，Steam平台长尾销售占比达34%。",
+     "analysis": "与8月1日Capcom「重制养原创」的表态互为注脚：RE4重制一个单品就撑起了「重制版财务工具论」的实证基础。重制赛道的头部效应极强——不是所有老IP都值得重制，能打的永远是那几个。",
+     "recommendation": "RE4重制成本世代最畅销重制：1680万份验证Capcom「重制养原创」"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "GameSpark · 报道",
+     "tags": [
+      "合作游戏",
+      "互坑",
+      "愿望单纪录"
+     ],
+     "title": "Dear Passengers：「世界最烂航空公司」机组互坑游戏，愿望单破200万",
+     "en_title": "次にくるハチャメチャ協力ゲーはこれかも！航空クルーシム『Dear Passengers』ウィッシュリスト登録数200万件突破",
+     "full_text": "次にくるハチャメチャ協力ゲーはこれかも！航空クルーシム『Dear Passengers』ウィッシュリスト登録数200万件突破。乗客の安全は二の次三の次、何でもアリの空の旅へ\nhttps://t.co/Y7s8V6BlH2\n\nhttps://t.co/M2QpYReFuD https://t.co/IHxoJpHSy1",
+     "author": "gamespark",
+     "date": "2026-08-01",
+     "likes": 1164,
+     "views": 120701,
+     "link": "https://x.com/gamespark/status/2083442636762005857",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2080073754483306496/img/uWjtgYTr8FU4w9mD.jpg",
+      "video_url": "https://x.com/gamespark/status/2083442636762005857/video/1"
+     },
+     "game_ref": "Dear Passengers",
+     "summary": "FLEXUS宣布合作游戏《Dear Passengers》愿望单突破200万。玩家扮演「世界最烂航空公司」的机组：开飞机、服务乘客之外，还要装载鳄鱼和导弹等违禁货物、在机身散架时边飞边修；鸟击引爆发动机、鳄鱼逃出贷舱是日常，管不了的乘客可以直接扔出窗外。2026年内发售，支持日语。该作公布2天即获100万愿望单，此前因神似某Roblox热门游戏引发争议（被指的原作方表示容认）。",
+     "analysis": "",
+     "recommendation": "Dear Passengers：世界最烂航空公司，愿望单破200万",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Dear Passengers",
+      "genre": "合作 / 互坑模拟 / 喜剧",
+      "developer": "FLEXUS",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4534960/Dear_Passengers/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4534960/7ddef53346afe3e3d4d479dbed740cdb38cfe09a/header.jpg?t=1784401335",
+      "youtube_video": null,
+      "description": "【核心玩法】「世界最烂航空公司」的机组合作模拟：正常业务（驾驶、客舱服务）之外，还要处理违禁货物（鳄鱼、导弹）的装载选择、在机体破损时空中抢修。乱流、鸟击发动机爆炸、鳄鱼逃离货舱等连环事故不断，管不住的乘客可以直接扔出窗外。\n\n【传播轨迹】公布2天愿望单破100万，一个月内翻倍至200万——「互坑合作+航空灾难」的题材组合精准命中直播切片需求。此前因神似某Roblox热门游戏引发抄袭争议，被指的原作方公开表示容认，争议未阻热度。\n\n【对标定位】Overcooked式「职业互坑」谱系的最新成员，把厨房换成万米高空，事故链路更长、更离谱。\n\n【优势】题材一句话有画面；事故系统天然产出直播名场面；200万愿望单是近年独游最强蓄水之一。【不足】仿作争议的历史包袱；正式版需证明事故系统的可持续新鲜感。\n\n【综合】愿望单200万的预定爆款，2026年发售日的转化表现将测试互坑合作品类的新天花板。",
+      "why_notable": "公布2天100万、一个月200万愿望单，互坑合作品类的新天花板候选",
+      "pcu": "暂未发售",
+      "estimated_sales": "暂无（未发售）"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 开发者官宣",
+     "tags": [
+      "官方联动",
+      "捉迷藏",
+      "长线运营"
+     ],
+     "title": "Meccha Chameleon×8番出口官方联动：7万评价捉迷藏游戏更新3.5.0",
+     "en_title": "《めっちゃカメレオン》アップデート3.5.0が配信されました。公式コラボマップ「8番出口」を追加",
+     "full_text": "《めっちゃカメレオン》\nアップデート3.5.0が配信されました\n\n🟨公式コラボマップ「8番出口」を追加\n\n✅フレンドのサーバーを検索できる機能を追加\n✅カラーパレットのUIを改修\n🔧オプション画面から「よくある質問」「フレンドリスト」を削除\n🔧検索結果のサーバー名がはみ出す問題を修正\n🔧モーションブラーの設定が効かない問題を修正\n🔧ハンターがFPS状態でのボディータイプをデフォルトに統一\n🔧コントローラーでズームできない問題を修正\n🔧UIの｢戻る｣ボタンを直接押せるように\n🔧マイクをデフォルトでミュートに変更",
+     "author": "lemorion1224",
+     "date": "2026-08-01",
+     "likes": 6802,
+     "views": 431571,
+     "link": "https://x.com/lemorion1224/status/2083515436533166446",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOoiPxdaoAAYjDs.jpg"
+     },
+     "game_ref": "Meccha Chameleon",
+     "summary": "捉迷藏游戏《Meccha Chameleon》发布3.5.0更新：新增与《8番出口》的官方联动地图、好友服务器搜索功能及多项UI修复。本作6月9日以$5.99发售，Steam评价已超7万条，此次更新推获43万浏览、2037次收藏转发。",
+     "analysis": "",
+     "recommendation": "Meccha Chameleon×8番出口官方联动地图上线，7万评价小品的长线运营",
+     "enrichment": {
+      "game_name": "Meccha Chameleon",
+      "genre": "捉迷藏 / 休闲 / 伪装",
+      "developer": "lemorion_1224（日本个人开发者）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "$5.99",
+      "release_date": "已发售 · 2026年6月9日",
+      "steam_rating": "7万+条评价",
+      "steam_url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1785107783",
+      "youtube_video": null,
+      "description": "【核心玩法】新型捉迷藏：用颜料把自己的白色身体涂成舞台场景的一部分，拟态隐藏。观察力、摆姿与「美术功底」是生存关键——用让变色龙都汗颜的伪装骗过Seeker。支持公开匹配。\n\n【联动内容】3.5.0版本加入《8番出口》官方联动地图（在「找异常」的名场景里玩捉迷藏，题材相性拉满），并新增好友服务器搜索、色彩面板UI改修与多项修复。\n\n【市场表现】6月9日以$5.99发售，Steam评价已突破7万条——日本个人开发者lemorion的现象级小品。此次更新推获43万浏览、6802赞、2037收藏。\n\n【优势】玩法一眼懂、直播效果强；低价+高评的口碑飞轮已成型；联动选择精准（同为「观察力」游戏）。【不足】玩法单一，热度依赖内容与联动续航。\n\n【综合】7万评价的日本个人开发小品与《8番出口》的强强联合，观察联动地图带来的回流曲线。",
+      "why_notable": "7万评价小品×《8番出口》官方联动，日本个人开发者的长线运营样本",
+      "pcu": "暂无公开数据",
+      "estimated_sales": "暂无官方数据（评价7万+）"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 开发者官宣+PCU监控",
+     "tags": [
+      "EA转正",
+      "动作roguelite",
+      "PCU突破"
+     ],
+     "title": "Sephiria：Dungreed团队兔子动作roguelite 1.0发售，两日峰值24,720",
+     "en_title": "17727 Players! (and most played TOP 100!) Thank you so much!",
+     "full_text": "17727 Players! (and most played TOP 100!) \nThank you so much!\n\n#gamedev #indiedev #steam https://t.co/aY98MdZPmh",
+     "author": "TeamHoray",
+     "date": "2026-08-01",
+     "likes": 23,
+     "views": 854,
+     "link": "https://x.com/TeamHoray/status/2083541948858814599",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOo6CDeaYAA0nd4.jpg"
+     },
+     "game_ref": "Sephiria",
+     "summary": "TEAM HORAY（Dungreed开发商）的俯视动作RPG roguelite《Sephiria》7月31日结束EA正式发售：加入最终章与最终Boss、更多武器升级与神器、额外困难模式。发售两日Steam评价6,338条（97%好评），8月2日同时在线峰值达24,720人（有数GI），官方庆祝进入「最受游玩TOP 100」。",
+     "analysis": "",
+     "recommendation": "Sephiria 1.0两日峰值24,720+97%好评：Dungreed团队的EA转正教科书",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Sephiria",
+      "genre": "动作roguelite / ARPG",
+      "developer": "TEAM HORAY（韩国，Dungreed团队）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "$8.99",
+      "release_date": "已发售 · 2026年7月31日",
+      "steam_rating": "97%好评（6,338条）",
+      "steam_url": "https://store.steampowered.com/app/2436940/Sephiria/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/21b1476794fd8a2e0a3076448d28929e8139aad0/header_alt_assets_0.jpg?t=1785481238",
+      "youtube_video": null,
+      "description": "【核心玩法】俯视视角动作RPG roguelite：探索高塔深处、收集并升级神器、对抗恶魔军团保卫兔子村Bunnyville。延续Dungreed的快节奏刷装手感，祝福（技能）组合构筑是核心深度。\n\n【1.0内容】第六章（最终章）+最终Boss、更多武器升级与奇迹、新道具、额外困难模式——EA期间的拼图正式合拢。\n\n【市场表现】7月31日发售，两日Steam评价6,338条、97%好评；8月2日同时在线峰值24,720人（有数GI），进入Steam最受游玩TOP 100。\n\n【优势】Dungreed验证过的动作手感+兔子题材的亲和力；$8.99低价；97%好评率高水分低。【不足】俯视动作roguelite赛道拥挤（Hades阴影仍在）；宣发预算有限，依赖口碑与榜单自然流量。\n\n【综合】EA转正的教科书曲线：内容攒够→1.0定档→峰值2.4万+97%好评，韩国中型独立团队的稳健胜利。",
+      "why_notable": "发售两日峰值24,720+97%好评，EA转正的教科书曲线",
+      "pcu": "24,720（2026年8月2日）",
+      "estimated_sales": "暂无官方数据（评价6,338条）"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "GameSpark · 报道",
+     "tags": [
+      "合作塔防",
+      "矮人",
+      "EA定档"
+     ],
+     "title": "Stonewards：矮人采掘+锻造+守城roguelite，8月12日EA、愿望单破10万",
+     "en_title": "【最大4人協力】採掘で資源を集めて拠点を守るローグライトACT『Stonewards』8月12日早期アクセス開始＆ウィッシュリスト10万件突破！",
+     "full_text": "【最大4人協力】採掘で資源を集めて拠点を守るローグライトACT『Stonewards』8月12日早期アクセス開始＆ウィッシュリスト登録数10万件突破！\nhttps://t.co/7lUu2lE234 https://t.co/3t01VAhU4C",
+     "author": "gamespark",
+     "date": "2026-08-01",
+     "likes": 646,
+     "views": 78033,
+     "link": "https://x.com/gamespark/status/2083478056258453802",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2083477872229097472/pu/img/9YWcpJ5SL5vRVo2O.jpg",
+      "video_url": "https://x.com/gamespark/status/2083478056258453802/video/1"
+     },
+     "game_ref": "Stonewards",
+     "summary": "Banana Tiger Studio宣布第一人称roguelite防御游戏《Stonewards》愿望单突破10万，8月12日（日本时间）Steam EA开售，定价1,350日元，EA期9-12个月。单人或最多4人合作：程序生成的坑道中采掘资源（越深收获越好但备战时间越紧）→回铁匠铺锻造武器、修理防御、解锁随机升级→抵御怪物波次守城。支持日语。",
+     "analysis": "",
+     "recommendation": "Stonewards：矮人采掘-锻造-守城三段循环，8月12日EA、愿望单10万",
+     "enrichment": {
+      "game_name": "Stonewards",
+      "genre": "合作 / 第一人称roguelite塔防",
+      "developer": "Banana Tiger Studio",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "1,350日元（EA）",
+      "release_date": "2026年8月12日（EA）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4502710/Stonewards/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4502710/c57ab526296dfdab54cbc5aa2b93bc1fb46f5acd/header.jpg?t=1785577435",
+      "youtube_video": null,
+      "description": "【核心玩法】第一人称roguelite防御：扮演矮人驰援王国要塞，循环三段——采掘（程序生成坑道，越深宝物越好但防备战准备时间越紧）、锻造（武器生产、防御修理、随机升级三者分配）、守城（依托城墙城门抵御怪物潮）。\n\n【合作设计】单人或最多4人合作，资源分配与时间管理的分工是协作深度所在。\n\n【开发背景】Banana Tiger Studio，愿望单突破10万；8月12日EA、定价1,350日元，EA期预计9-12个月，正式版将小幅涨价。\n\n【优势】「采掘-锻造-守城」循环把塔防从「摆塔」变成「动手干活」；4人合作适配直播；EA低价+明确路线图。【不足】第一人称矮人采掘与Deep Rock Galactic的阴影重叠，差异化压力集中在守城深度上。\n\n【综合】愿望单10万的合作塔防新品，8月12日EA首周的同接与好评率是试金石。",
+      "why_notable": "愿望单10万、采掘-锻造-守城三段循环，8月12日EA的合作塔防新品",
+      "pcu": "暂未发售",
+      "estimated_sales": "暂无（未发售）"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 技术演示",
+     "tags": [
+      "程序化动画",
+      "Unity",
+      "去动捕化"
+     ],
+     "title": "Unity程序化动画又出神演示：Makan Gilani的丝滑角色动作——7.6万浏览",
+     "en_title": "Wow — this is the kind of gamedev magic I love seeing, @Makan_Gilani ✨ The procedural animation here is smooth.",
+     "full_text": "Wow — this is the kind of gamedev magic I love seeing, @Makan_Gilani ✨ The procedural animation here is smooth.\n\n#madewithunity #unity #indiegamedev #gamedev #indiedev https://t.co/en6aC46b2u",
+     "author": "unity3dvfx",
+     "date": "2026-08-01",
+     "likes": 1461,
+     "views": 75973,
+     "link": "https://x.com/unity3dvfx/status/2083460160215761089",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2083459867709222912/img/Ww2L3dbHh8w6Zt-X.jpg",
+      "video_url": "https://x.com/unity3dvfx/status/2083460160215761089/video/1"
+     },
+     "summary": "3Dgamedev转发盛赞Makan Gilani的Unity程序化动画演示：「这才是我爱看的gamedev魔法，太丝滑了」。7.6万浏览、1461赞，与8月1日报的神经运动学模型同属「程序化/ML动画挑战动捕」的技术浪潮。",
+     "analysis": "程序化动画连日出现高质量演示（8/1神经运动学、今天Unity实例），说明「动画环节去动捕化」正在从论文走向管线实践。对TA和动画团队的建议：现在主动评估程序化方案在自家品类的可用度，比一年后被动跟进要从容得多。",
+     "recommendation": "Unity程序化动画丝滑演示：动画去动捕化从论文走向管线——7.6万浏览",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · 资产发布",
+     "tags": [
+      "Three.js",
+      "资产包",
+      "Web游戏"
+     ],
+     "title": "Three.js最大资产包Railway发布：125+模块化铁路资产、4种氛围",
+     "en_title": "Introducing our largest Three.js Asset Pack: Railway 🚂",
+     "full_text": "Introducing our largest Three.js Asset Pack: Railway 🚂\n\n- 125+ assets: trains, tracks, stations, props, and more\n- Full Modular Track System\n- 4 palettes: Day, Golden, Misty, and Night\n\nAvailable as a single pack or in our All-Access Pass 🔥\n\nBrowse the pack &amp; demo world 🧵 https://t.co/yqfHBWMUBh",
+     "author": "threejsassets",
+     "date": "2026-07-31",
+     "likes": 819,
+     "views": 44764,
+     "link": "https://x.com/threejsassets/status/2083159642805260558",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2083159532415414273/img/EWDaU4d1aKBP0jX8.jpg",
+      "video_url": "https://x.com/threejsassets/status/2083159642805260558/video/1"
+     },
+     "summary": "ThreeJS Assets发布迄今最大资产包Railway：125+资产（列车、轨道、车站、道具）、全模块化轨道系统、Day/Golden/Misty/Night四种配色氛围，可单买或All-Access Pass订阅。4.5万浏览。",
+     "analysis": "Web游戏/three.js生态的资产供给在快速专业化——模块化+多氛围的打包方式，明显是冲着「AI生成+人工组装」的混合管线去的，是vibecoding时代的素材基建。",
+     "recommendation": "Three.js最大资产包Railway：125+模块化铁路资产，vibecoding素材基建"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**Roblox -29%：旧增长模式终结的第三张多米诺**\nRoblox Q2财报后股价单日暴跌29%创21个月新低，华尔街警告「生命周期衰退」——继EA私有化、Xbox重置之后，本周第三起旧模式终结事件。Krafton则反向操作：SN2二十二天500万份后官宣Subnautica系列化IP运营；RE4重制被确认为本世代最畅销重制（遥遥领先），为Capcom「重制养原创」补上实证。\n\n**独游蓄水与爆发同时在线**\nDear Passengers愿望单一个月冲过200万（世界最烂航空公司：鳄鱼导弹当货物、乘客扔出窗外）；Sephiria 1.0发售两日峰值24,720+97%好评，EA转正教科书；Meccha Chameleon与8番出口官方联动（7万评价小品的长线运营）；矮人合作塔防Stonewards定档8月12日EA、愿望单10万。\n\n**AI的账单与手柄**\nVyom公开AI做游戏的真实账单：690M token/423美元一条prompt，另一单1200M/863美元；mrdoob亲自演示QR闪屏空气隔离传输（148万浏览）；中国团队让Codex给AI游戏顺手做了个专属编辑器——「生成器与编辑器伴生」或成新工具链形态。工具侧，Unity程序化动画再出丝滑演示，Three.js发布最大资产包Railway。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
