@@ -478,13 +478,14 @@
     }
     function showToast(text){const t=$('#toast');t.textContent=text;t.classList.add('show');clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>t.classList.remove('show'),2800)}
     function bindEvents(){
+      const NAV_SCROLL={competitors:'#competitorSection',trend:'.trend-hub',gantt:'#ganttSection'};
       $$('[data-view]').forEach(b=>b.addEventListener('click',()=>{
         const target=b.dataset.view;location.hash='';
-        if(target==='competitors'){
+        if(NAV_SCROLL[target]){
           switchView('home');
           setTimeout(()=>{
-            $('#competitorSection').scrollIntoView({behavior:'smooth',block:'start'});
-            $$('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.view==='competitors'));
+            const sec=$(NAV_SCROLL[target]);if(sec)sec.scrollIntoView({behavior:'smooth',block:'start'});
+            $$('.nav button').forEach(x=>x.classList.toggle('active',x===b));
           },80);
           return;
         }
