@@ -75,7 +75,14 @@
       $('#periodSelect').value=state.period;
       renderReports();bindEvents();renderHome();
       routeFromHash();
+      fitPageScale();
     }
+    /* 桌面端固定显示比例：窗口<1920px时整体缩放，布局始终与1920设计宽度一致；≤680手机端走原自适应 */
+    function fitPageScale(){
+      const w=window.innerWidth;
+      document.documentElement.style.zoom=(w>680&&w<1920)?(w/1920):'';
+    }
+    window.addEventListener('resize',fitPageScale);
     const HERO_EVENT_SUMMARIES = window.__DB.HERO_EVENT_SUMMARIES || {};
     function completeHeroSentence(text){
       const value=String(text||'').replace(/\s+/g,' ').replace(/^[,，。；;：:]+|[,，。；;：:]+$/g,'').trim();
