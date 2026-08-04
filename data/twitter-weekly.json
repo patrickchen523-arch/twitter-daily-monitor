@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27",
+  "updated": "2026-08-04",
   "cadence_transitions": [
     {
       "from": "2026-07-02-to-07-08",
@@ -893,6 +893,228 @@
         {
           "title": "Scramble Knights Online 公测（8.14）",
           "body": "Zelda 风 MMO-lite 开放测试后，观察报名转化、同时在线与社区反馈，检验轻量在线品类的真实需求。"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-27-to-08-02",
+      "label": "7.27 - 8.2",
+      "code": "W31",
+      "range": "2026.07.27 — 08.02",
+      "title": "账单时代：AI游戏生成可以报销，旧秩序集中结算",
+      "stats": [
+        {
+          "value": "79",
+          "label": "精选信号"
+        },
+        {
+          "value": "1935万",
+          "label": "累计浏览"
+        },
+        {
+          "value": "21.9万",
+          "label": "累计点赞"
+        },
+        {
+          "value": "7",
+          "label": "连续日报"
+        }
+      ],
+      "executive": [
+        "AI游戏生成本周完成从「能力演示」到「成本核算」的转身：Vyom公开690M token/$423的完整账单、Opus 5手搓太空RTS公开$632账本，原型预算科目正从人力月改为token费；企业侧Kimi K3把3人6周的机电建模压到1人9天，可量化人效比成为硬通货。",
+        "旧秩序集中结算：EA $550亿私有化获全部监管批准、定档8月4日交割；索尼首次回应#PSBlackout、坚持2028年初停产实体盘；Roblox单日-29%被华尔街警告「生命周期衰退」；内存危机从爆料升级为三星「持续至2028」的官方指引，硬件涨价看不到头。",
+        "合作机制仍是独游第一增长引擎：Skate Mates、C.U.B.E、SHORE合计数百万浏览，Dear Passengers愿望单破200万；小团队回报率同步实证——Orc Problem四个月开发24小时$36万，Sephiria转正两日峰值2.4万；日本独游继续霸榜传播。"
+      ],
+      "rankings": [
+        {
+          "title": "Vyom公开AI做游戏完整账单：一条prompt $423",
+          "metric": "235万浏览",
+          "heat": 100,
+          "link": "https://x.com/HelloVyom/status/2083177530287353961"
+        },
+        {
+          "title": "Meccha Chameleon 3.3.0更新：新角色登场48K赞",
+          "metric": "209万浏览",
+          "heat": 84,
+          "link": "https://x.com/lemorion1224/status/2081338425542951292"
+        },
+        {
+          "title": "CALL OF CUTIE：反差美术恐怖冒险病毒传播",
+          "metric": "149万浏览",
+          "heat": 41,
+          "link": "https://x.com/dotpixel3d/status/2081359274782118236"
+        },
+        {
+          "title": "mrdoob演示QR闪屏空气隔离传输",
+          "metric": "148万浏览",
+          "heat": 40,
+          "link": "https://x.com/mrdoob/status/2082913353853534515"
+        },
+        {
+          "title": "Skate Mates双人滑板互坑合作demo",
+          "metric": "128万浏览",
+          "heat": 20,
+          "link": "https://x.com/dotpixel3d/status/2082722863572984055"
+        }
+      ],
+      "signals": [
+        {
+          "title": "AI原型进入可报销时代",
+          "body": "token账单连续公开让生成成本变成可核算科目：几百美元一个可玩原型，原型预算从人力月改为token费，ROI第一次可以事前计算。"
+        },
+        {
+          "title": "旧增长公式集中到期",
+          "body": "EA易主、索尼停盘、Roblox暴跌、内存涨价长期化在同一周落地——平台与硬件的旧假设被集中清算，重制与衍生成为仅有的确定性现金流。"
+        },
+        {
+          "title": "合作品类开始机制分化",
+          "body": "互坑之外，物理协作（木筏、滑板）、沟通限制与麦克风监听成为新卖点，愿望单百万级作品证明协作设计仍在红利期，但同质化已经开始。"
+        }
+      ],
+      "sections": [
+        {
+          "title": "AI 科技热点",
+          "deck": "本周AI的主线是「可核算」：账单公开让生成成本变成报销单，企业管线给出可量化人效比，而不依赖生成AI的程序化工具同步证明了差异化的价值。",
+          "stories": [
+            {
+              "date": "08.02",
+              "source": "X · 开发者实操",
+              "title": "AI做游戏可以报销了：一条prompt $423的完整账单",
+              "summary": "Vyom连续公开两条AI生成游戏的完整成本：690M token/$423、1200M token/$863，单条prompt即可产出可玩作品。「game devs are done」的感叹之外，更重要的是原型预算科目正从人力月改为token费。",
+              "metric": "235万浏览 · 3031赞",
+              "link": "https://x.com/HelloVyom/status/2083177530287353961",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2083177009954660352/img/WovzOpkr4Oy200UM.jpg"
+            },
+            {
+              "date": "07.31",
+              "source": "X · 中文科技博主",
+              "title": "企业AI的人效比实证：3人6周的活，1人9天",
+              "summary": "Kimi K3接入建模软件完成酒店机电建模：原本3名工程师6周的工作量被压到1人9天。相比消费端的花哨演示，企业管线里可量化的人效比，才是AI落地最硬的通货。",
+              "metric": "98.6万浏览 · 4483赞",
+              "link": "https://x.com/huxlab/status/2082664714245681348",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2082664531088855040/img/0lQUdOkfLeI3-bur.jpg"
+            },
+            {
+              "date": "08.01",
+              "source": "X · 独立开发者发布",
+              "title": "不用生成AI的地图生成器：程序化路线的差异化反击",
+              "summary": "不依赖任何生成模型，USOMAP用程序化地理推演生成奇幻世界地图，获38万浏览与2600余收藏。当生成AI占据所有注意力，可解释、可复现、可掌控的程序化路线反而成了差异化资产。",
+              "metric": "38.1万浏览 · 6252赞",
+              "link": "https://x.com/asobodesign/status/2082826585447776655",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2082809792964554752/img/R4suaOomMAWunJz8.jpg"
+            },
+            {
+              "date": "08.02",
+              "source": "X · three.js作者",
+              "title": "mrdoob亲自下场：空气隔离传输从趣闻变成可信路径",
+              "summary": "three.js作者亲自演示用快速闪烁的QR码在无网环境传输文件，为「Claude Code一夜做出空气隔离传输」完成技术背书。AI结对编程正把论文级点子的实现成本压缩到一个晚上。",
+              "metric": "148万浏览 · 2.4万赞",
+              "link": "https://x.com/mrdoob/status/2082913353853534515",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2082913321414791168/img/3JyNPa13vJMYjINg.jpg"
+            }
+          ]
+        },
+        {
+          "title": "游戏市场动态",
+          "deck": "并购、停盘、暴跌、涨价在同一周落地，平台与硬件的旧增长公式集中到期；唯有重制与衍生（RE4、Subnautica）仍是确定性现金流。",
+          "stories": [
+            {
+              "date": "08.01",
+              "source": "Eurogamer · 多家报道",
+              "title": "EA私有化获批：史上最大游戏杠杆收购定档8月4日交割",
+              "summary": "EA宣布$550亿私有化获全部监管批准，沙特PIF联合Silver Lake与Affinity Partners，预计8月4日交割。债务将主要用EA自身收入偿还——「降本+AI提效」只会加码，交割后的整合节奏是全行业对照组。",
+              "metric": "9168浏览 · 12赞",
+              "link": "https://x.com/eurogamer/status/2083116159667220690",
+              "image": "https://pbs.twimg.com/media/HOi3GbUWwAAB_7Z.png"
+            },
+            {
+              "date": "07.29",
+              "source": "Digital Foundry · 硬件危机",
+              "title": "内存危机走向消费端：4GB显存回潮，2027供给或仅剩三成",
+              "summary": "爆料指显存短缺正迫使4GB显存显卡回潮，2027年供给或仅剩30%；三星利润翻3.5倍同时警告短缺持续至2028。AI数据中心吃掉的产能，正在以配置倒退的方式向玩家收税。",
+              "metric": "8.4万浏览 · 538赞",
+              "link": "https://x.com/digitalfoundry/status/2082078640993431766",
+              "image": null
+            },
+            {
+              "date": "08.02",
+              "source": "BloxWire · 财报快讯",
+              "title": "Roblox单日-29%：华尔街第一次说出「生命周期衰退」",
+              "summary": "财报后股价单日暴跌29%创21个月新低，华尔街警告「生命周期衰退」。继EA私有化、Xbox重置之后，旧增长模式的第三张多米诺倒下——UGC平台的未成年红利正式进入倒计时。",
+              "metric": "6.8万浏览 · 1557赞",
+              "link": "https://x.com/Blox_Wire/status/2083255324136681760",
+              "image": "https://pbs.twimg.com/media/HOk1c6NbsAA0YMl.jpg"
+            },
+            {
+              "date": "08.01",
+              "source": "Eurogamer · 财报QA",
+              "title": "索尼首次回应停盘抗议：承认情感、拒绝改变",
+              "summary": "CFO Lin Tao首次回应#PSBlackout：「数字化在所有媒体推进」，坚持2028年初停售实体盘，同时表示理解玩家情感。当「理解但照做」成为平台标准答案，所有权争议正从舆论战转入监管战线。",
+              "metric": "1万浏览 · 47赞",
+              "link": "https://x.com/eurogamer/status/2083124424069259645",
+              "image": "https://pbs.twimg.com/media/HOi-nn9XYAArlnJ.jpg"
+            }
+          ]
+        },
+        {
+          "title": "新游推文",
+          "deck": "合作机制成为独游第一增长引擎，「互坑」之外物理协作与监听机制分化出新卖点；小团队短周期高回报的案例本周密集出现。",
+          "stories": [
+            {
+              "date": "07.27",
+              "source": "LEMORION · 官方更新",
+              "title": "日本现象级独游的运营力：一次更新48K赞",
+              "summary": "LEMORION的变色龙捉迷藏游戏推送3.3.0更新即获209万浏览、4.8万赞，本周稍晚还与《8番出口》官宣联动。个人开发者的长线运营，正在跑出大厂级的社区动员能力。",
+              "metric": "209万浏览 · 4.8万赞",
+              "link": "https://x.com/lemorion1224/status/2081338425542951292",
+              "image": "https://pbs.twimg.com/media/HOJmQ_ybwAAUMNH.jpg"
+            },
+            {
+              "date": "07.28",
+              "source": "ゲム之助 · 病毒传播",
+              "title": "可爱皮恐怖骨：反差美术的病毒传播公式",
+              "summary": "个人开发者Jesse Kasdo的实验室逃生恐怖凭可爱标题与诡异场景的强烈反差获149万浏览。零预算独游最有效的传播杠杆，依然是让人第一眼就转发的美术反差。",
+              "metric": "149万浏览 · 1.7万赞",
+              "link": "https://x.com/dotpixel3d/status/2081359274782118236",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2081358945697046529/img/oTPBQDxcoPGtDWoh.jpg"
+            },
+            {
+              "date": "07.31",
+              "source": "X · 日本独游情报",
+              "title": "一人一只滑板：把「互相甩锅」做成核心机制",
+              "summary": "两名玩家各控一只滑板，靠默契与实时沟通闯过刀片、峡谷与岩浆赛道，一次失误全员重来——免费demo更新获128万浏览。互坑合作赛道里，沟通本身正在成为核心机制。",
+              "metric": "128万浏览 · 7140赞",
+              "link": "https://x.com/dotpixel3d/status/2082722863572984055",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2082342399456825344/img/KMTsEkvwGyXqY4ok.jpg"
+            },
+            {
+              "date": "07.31",
+              "source": "X · 开发者自述",
+              "title": "4个月开发、24小时$36万：小团队回报率实证",
+              "summary": "发售24小时毛收入36万美元，开发周期仅4个月——开发者公开喊话同行「做更小的游戏、更快做完」。当3A成本失控，短周期小品类的ROI模型正在被反复验证。",
+              "metric": "6.1万浏览 · 1196赞",
+              "link": "https://x.com/mumpitzgames/status/2082727383765750012",
+              "image": "https://pbs.twimg.com/media/HOdBgh7XUAAihtY.jpg"
+            }
+          ]
+        }
+      ],
+      "watch": [
+        {
+          "title": "EA私有化交割后首周动向",
+          "body": "8月4日交割完成后，观察管理层表态、工作室整合与裁员信号，验证杠杆收购「降本+AI提效」剧本的执行顺序。"
+        },
+        {
+          "title": "Big Hops Together 8.9免费多人化",
+          "body": "单人平台跳跃变身8人在线互坑后，跟踪上线首周同时在线与评价，检验「免费多人化」对存量独游的拉动。"
+        },
+        {
+          "title": "#PSBlackout 8.23-30集体断网",
+          "body": "玩家抗议落地周的参与度与索尼是否让步值得记录；同时留意实体盘零售商与典藏版排期的连锁反应。"
+        },
+        {
+          "title": "内存涨价向消费端传导",
+          "body": "关注4GB显存回潮是否坐实、Steam Machine与Steam Frame的定价更新，以及三星指引下硬件厂商的下一轮调价。"
         }
       ]
     }
