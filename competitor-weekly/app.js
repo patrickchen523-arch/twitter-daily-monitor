@@ -18,7 +18,9 @@
     });
     REPORTS.sort((a,b)=>b.id.localeCompare(a.id));
 
-    const state={period:'20260720',view:'home',search:'',status:'all',sortKey:null,sortDir:-1,detailId:null,detailObservationKey:null,chartMetric:'flow',overviewMetric:'flow',overviewPoint:null,overviewSelected:null,reportYear:'all',reportSearch:''};
+    const state={period:'20260727',view:'home',search:'',status:'all',sortKey:null,sortDir:-1,detailId:null,detailObservationKey:null,chartMetric:'flow',overviewMetric:'flow',overviewPoint:null,overviewSelected:null,reportYear:'all',reportSearch:''};
+    const VISIBLE_PERIODS=Object.keys(PERIODS).filter(k=>/^\d{8}$/.test(k)).sort().reverse().slice(0,2);
+    const GANTT_PAGE={'20260727':'gantt-20260727.html','20260720':'gantt-20260720.html'};
     const CUSTOM_OBSERVATIONS=window.__DB.OBSERVATIONS||{};
     const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
     const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -47,7 +49,7 @@
       return maxChange>=10?'warning':'normal';
     };
     const isPriority=(item,periodId=state.period)=>itemStatusKey(item,periodId)==='priority';
-    const triggerAbs=item=>Math.max(Math.abs(item.flowDelta??-Infinity),Math.abs(item.dauDelta??-Infinity));
+    const triggerAbs=item=>Math.max(Math.abs(item.flowDelta??0),Math.abs(item.dauDelta??0));
     const triggerSignal=item=>{const c=[{v:item.flowDelta,m:'流水'},{v:item.dauDelta,m:'DAU'}].filter(x=>x.v!=null).sort((a,b)=>Math.abs(b.v)-Math.abs(a.v))[0];return c?`${c.m}${c.v>=0?'提升':'下降'}`:null};
     const itemStatusLabel=(item,periodId=state.period)=>statusLabel(itemStatusKey(item,periodId));
     const metricImpact=item=>{
@@ -69,7 +71,7 @@
       openDetail(id,false);
     }
     function init(){
-      $('#periodSelect').innerHTML=REPORTS.filter(r=>PERIODS[r.id]).map(r=>`<option value="${r.id}">${r.label}</option>`).join('');
+      $('#periodSelect').innerHTML=VISIBLE_PERIODS.map(pid=>{const r=reportById(PERIODS[pid].reportId);return `<option value="${pid}">${r.label}</option>`}).join('');
       $('#periodSelect').value=state.period;
       renderReports();bindEvents();renderHome();
       routeFromHash();
@@ -102,7 +104,8 @@
       const p=period(),r=reportById(p.reportId),priority=p.items.filter(x=>isPriority(x,state.period)),hasMetricPriority=priority.length>0;
       const ov=$('#periodOverview');
       if(p.overview){ov.innerHTML='<span class="ov-tag">本期综述</span>'+p.overview;ov.classList.remove('hidden')}else{ov.classList.add('hidden')}
-      const top=hasMetricPriority?[...priority].sort((a,b)=>((a.heroRank??99)-(b.heroRank??99))||triggerAbs(b)-triggerAbs(a)):p.items.filter(item=>item.summary||item.note).slice(0,4);
+      const marked=p.items.filter(x=>x.heroRank!=null).sort((a,b)=>a.heroRank-b.heroRank);
+      const top=marked.length?marked:(hasMetricPriority?[...priority].sort((a,b)=>triggerAbs(b)-triggerAbs(a)):p.items.filter(item=>item.summary||item.note).slice(0,4));
       const cards=top.map((x,i)=>({item:x,intel:intelFor(x,i)}));
       const summaryOrder=['流水提升','流水下降','DAU提升','DAU下降'],summaryCounts=Object.fromEntries(summaryOrder.map(k=>[k,0]));
       if(hasMetricPriority)cards.forEach(({item})=>{const s=triggerSignal(item);if(s)summaryCounts[s]++});
@@ -119,6 +122,7 @@
         return `<article class="p-card" aria-label="${esc(META[x.id].name+'重点情报')}"><div class="p-media">${art}${metric}</div><div class="p-body"><div class="p-product">${logo(x.id)}<span>${esc(META[x.id].name)}</span></div><div class="p-event-row"><div class="p-badges">${badges.map(b=>`<span class="p-badge analysis-category"><i>${b.icon}</i>${esc(b.label)}</span>`).join('')}</div><h3 class="p-event">${esc(i.event)}</h3></div><p class="p-concl">${esc(heroEventSummary(x,i,state.period))}</p><button class="p-detail" data-detail="${x.id}">查看竞品详情 →</button></div></article>`;
       }).join('');
       $('#tableCaption').textContent=p.tableCaption||'数据口径：DAU和流水数据基于SensorTower等第三方数据和公司产品实际数据建模估算，模型会持续优化并不定期对历史数据进行调整';
+      const gf=$('#ganttFrame');if(gf&&GANTT_PAGE[state.period]&&!gf.src.endsWith(GANTT_PAGE[state.period]))gf.src=GANTT_PAGE[state.period];
       renderRows();renderOverviewTrend();
     }
     const HIGHLIGHT_SHORT={wz:'大禹翡翠华章秒杀上线，牛年限定等皮肤返场',hp:'SS40新赛季开启，吞噬星空联动挖掘大R付费',df:'干员回响削弱，群星AKM外观优化',jc:'海克斯典籍赛季焕新，璀璨星约棱彩召唤上线',cs:'云南虫谷新地图上线，新Boss傩女登场',rock:'花园秘密礼物开启，典藏精灵睡铃雪影娃娃',ys:'月之八二期祈愿，哥伦比娅雷电将军返场',sr:'Fate联动第二弹，卡池+普赠/累抽福利上线',love:'本周无更新公告，版本空窗期',sz:'7·22停服维护，争洛阳剧本规则调整',sm:'武侯遗志分两批开服，跨州再起规则调整'};
@@ -129,9 +133,16 @@
       if(state.status!=='all')items=items.filter(x=>itemStatusKey(x,state.period)===state.status);
       if(state.sortKey)items.sort((a,b)=>((a[state.sortKey]??-Infinity)-(b[state.sortKey]??-Infinity))*state.sortDir);
       else if(items.some(x=>x.heroRank!=null))items.sort((a,b)=>{const ra=a.heroRank??99,rb=b.heroRank??99;if(ra!==rb)return ra-rb;return (b.flow??-Infinity)-(a.flow??-Infinity)});
-      $('#competitorRows').innerHTML=items.length?items.map(x=>{const statusKey=itemStatusKey(x,state.period);return `<tr><td><button class="product-link" data-detail="${x.id}" aria-label="查看${esc(META[x.id].name)}详情"><span class="product-cell">${logo(x.id)}<span><strong>${META[x.id].name}</strong></span></span></button></td><td class="metric"><strong>${formatNum(x.flow)}</strong>${dh(x.flowDelta)}</td><td class="metric"><strong>${formatNum(x.dau)}</strong>${dh(x.dauDelta)}</td><td class="metric">${formatNum(x.peak)} ${x.peak==null?'<span class="muted">暂无数据</span>':(x.peakDelta!=null?dh(x.peakDelta):'')}</td><td><span class="status-${statusKey==='priority'?'critical':statusKey}"><i class="status-dot"></i>${statusLabel(statusKey)}</span></td><td class="judge">${esc(x.highlight||HIGHLIGHT_SHORT[x.id]||x.note)}</td><td><button class="link-btn" data-detail="${x.id}">查看详情 →</button></td></tr>`}).join(''):'<tr><td colspan="7"><div class="empty">没有符合条件的竞品</div></td></tr>';
+      $('#competitorRows').innerHTML=items.length?items.map(x=>{const statusKey=itemStatusKey(x,state.period);return `<tr><td><button class="product-link" data-detail="${x.id}" aria-label="查看${esc(META[x.id].name)}详情"><span class="product-cell">${logo(x.id)}<span><strong>${META[x.id].name}</strong></span></span></button></td><td class="metric"><strong>${formatNum(x.flow)}</strong>${dh(x.flowDelta)}</td><td class="metric"><strong>${formatNum(x.dau)}</strong>${dh(x.dauDelta)}</td><td class="metric">${formatNum(x.peak)} ${x.peak==null?'<span class="muted">暂无数据</span>':(x.peakDelta!=null?dh(x.peakDelta):'')}</td><td><span class="status-${statusKey==='priority'?'critical':statusKey}"><i class="status-dot"></i>${statusLabel(statusKey)}</span></td><td class="judge">${esc(x.highlight||(state.period==='20260720'?HIGHLIGHT_SHORT[x.id]:'')||x.note)}</td><td><button class="link-btn" data-detail="${x.id}">查看详情 →</button></td></tr>`}).join(''):'<tr><td colspan="7"><div class="empty">没有符合条件的竞品</div></td></tr>';
       $$('[data-detail]').forEach(b=>b.onclick=()=>openDetail(b.dataset.detail));
     }
+    /* 趋势图异动描边：本期/上期按手动确认(statusOverride)，其余周期按数据标准(±20%) */
+    const MANUAL_PERIODS=['20260727','20260720'];
+    const trendMarked=(item,pid)=>{
+      if(MANUAL_PERIODS.includes(pid))return item.statusOverride==='priority';
+      const impact=priorityImpact(item,pid);
+      return !!(impact&&impact.label.startsWith(state.overviewMetric==='flow'?'流水':'DAU'));
+    };
     function renderOverviewTrend(){
       const metric=state.overviewMetric,timeline=BASE_PERIOD_IDS.slice().sort();
       const cw0=$('#overviewChart')?.clientWidth||980,W=Math.max(280,Math.min(980,cw0)),H=W<600?240:320,P={l:W<600?44:62,r:W<600?16:20,t:22,b:42};
@@ -146,11 +157,11 @@
       const x=pid=>P.l+timeline.indexOf(pid)*((W-P.l-P.r)/(timeline.length-1)),y=v=>H-P.b-(v-min)/(max-min)*(H-P.t-P.b);
       const ticks=[0,.25,.5,.75,1].map(t=>{const value=max*(1-t),yy=P.t+t*(H-P.t-P.b);return `<line x1="${P.l}" x2="${W-P.r}" y1="${yy}" y2="${yy}" stroke="#e3e8ef"/><text x="${P.l-10}" y="${yy+4}" text-anchor="end" font-size="9" fill="#7b8799">${Math.round(value).toLocaleString()}</text>`}).join('');
       const lines=series.map(s=>`<path d="${s.points.map((p,i)=>(i?'L':'M')+x(p.pid).toFixed(1)+','+y(p.item[metric]).toFixed(1)).join(' ')}" fill="none" stroke="${META[s.id].color}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>`).join('');
-      const points=series.flatMap(s=>s.points.map(p=>{const impact=priorityImpact(p.item,p.pid),marked=impact&&impact.label.startsWith(metric==='flow'?'流水':'DAU'),cx=x(p.pid),cy=y(p.item[metric]);return `<g class="overview-point" data-overview-product="${s.id}" data-overview-period="${p.pid}" tabindex="0" role="button" aria-label="${esc(META[s.id].name+' '+reportById(p.pid).label)}">${marked?`<circle cx="${cx}" cy="${cy}" r="8" fill="none" stroke="#f04438" stroke-width="2"/>`:''}<circle cx="${cx}" cy="${cy}" r="4" fill="${META[s.id].color}" stroke="#fff" stroke-width="2"/></g>`})).join('');
+      const points=series.flatMap(s=>s.points.map(p=>{const marked=trendMarked(p.item,p.pid),cx=x(p.pid),cy=y(p.item[metric]);return `<g class="overview-point" data-overview-product="${s.id}" data-overview-period="${p.pid}" tabindex="0" role="button" aria-label="${esc(META[s.id].name+' '+reportById(p.pid).label)}">${marked?`<circle cx="${cx}" cy="${cy}" r="8" fill="none" stroke="#f04438" stroke-width="2"/>`:''}<circle cx="${cx}" cy="${cy}" r="4" fill="${META[s.id].color}" stroke="#fff" stroke-width="2"/></g>`})).join('');
       const labels=timeline.map(pid=>{const full=reportById(pid).label.replace(/^20\d\d\./,'').replace('—','-');return `<text x="${x(pid)}" y="${H-15}" text-anchor="middle" font-size="9" fill="${pid===state.period?'#152033':'#77859b'}" font-weight="${pid===state.period?'700':'400'}">${W<600?full.split('-')[0]:full}</text>`}).join('');
       $('#overviewChart').innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="多竞品${metric==='flow'?'流水':'DAU'}趋势图">${ticks}${lines}${points}${labels}</svg>`;
       const available=(state.overviewPoint&&series.some(s=>s.id===state.overviewPoint.id&&s.points.some(p=>p.pid===state.overviewPoint.pid)))?state.overviewPoint:null;
-      if(!available){const currentMarked=series.flatMap(s=>s.points.map(p=>({id:s.id,...p}))).find(p=>p.pid===state.period&&priorityImpact(p.item,p.pid)?.label.startsWith(metric==='flow'?'流水':'DAU'));const fallback=currentMarked||{id:series[0].id,...series[0].points.at(-1)};state.overviewPoint={id:fallback.id,pid:fallback.pid}}
+      if(!available){const currentMarked=series.flatMap(s=>s.points.map(p=>({id:s.id,...p}))).find(p=>p.pid===state.period&&trendMarked(p.item,p.pid));const fallback=currentMarked||{id:series[0].id,...series[0].points.at(-1)};state.overviewPoint={id:fallback.id,pid:fallback.pid}}
       showTrendEvent(state.overviewPoint.id,state.overviewPoint.pid);
       $$('#overviewChart [data-overview-product]').forEach(node=>{const activate=()=>{state.overviewPoint={id:node.dataset.overviewProduct,pid:node.dataset.overviewPeriod};showTrendEvent(state.overviewPoint.id,state.overviewPoint.pid)};node.onclick=activate;node.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate()}}});
     }
@@ -194,7 +205,7 @@
       window.scrollTo({top:0,behavior:'smooth'});
     }
     function productObservations(id){
-      const saved=Object.keys(PERIODS).sort().reverse().map(pid=>{const item=PERIODS[pid].items.find(x=>x.id===id);return item?{key:pid,periodId:pid,label:reportById(PERIODS[pid].reportId).label,item}:null}).filter(Boolean);
+      const saved=VISIBLE_PERIODS.map(pid=>{const item=PERIODS[pid].items.find(x=>x.id===id);return item?{key:pid,periodId:pid,label:reportById(PERIODS[pid].reportId).label,item}:null}).filter(Boolean);
       const custom=(CUSTOM_OBSERVATIONS[id]||[]).map(x=>({key:x.key,periodId:null,label:x.label,item:x.item,custom:true}));
       const demoItem=window.__ARCHIVE_PERIODS?.demo_20260713?.items?.find(x=>x.id===id),demoArchive=window.__ARCHIVE_CONTENT?.demo_20260713?.[id],demo=demoItem&&demoArchive?[{key:'demo_20260713',periodId:null,label:'2026.07.13—07.19（AI 效果演示）',item:demoItem,demo:true,archive:demoArchive}]:[];
       return [...demo,...custom.reverse(),...saved];
@@ -372,7 +383,7 @@
     function coreTopicHtml(topic,index,media){const feedbackClass=coreIsFeedbackTitle(topic.title)?' feedback-topic':'';return '<section class="core-topic-section'+feedbackClass+'"><header class="core-topic-head"><h4 class="core-topic-title">'+coreEscapeHtml(coreFbTitle(topic.title))+'</h4>'+(topic.lead?'<p class="core-topic-lead">'+coreEscapeHtml(topic.lead)+'</p>':'')+(topic.paragraphs||[]).map(p=>'<p class="core-topic-para">'+coreEscapeHtml(p)+'</p>').join('')+'</header>'+coreMediaGalleryHtml(media)+(topic.points.length||topic.quotes.length?'<div class="core-topic-body">'+topic.points.map(coreDetailPointHtml).join('')+coreQuoteListHtml(topic.quotes)+'</div>':'')+'</section>'}
     function coreHierarchyHtml(item){const text=item.text||'',tree=coreParseReportHierarchy(text);if(tree.topics.length){const media=coreMediaBuckets(item,tree.topics);return '<div class="core-topic-list">'+tree.topics.map((topic,index)=>coreTopicHtml(topic,index,media[index])).join('')+'</div>'}if(tree.loosePoints.length)return '<div class="core-topic-list"><section class="core-topic-section"><header class="core-topic-head"><h4 class="core-topic-title">具体说明</h4></header><div class="core-topic-body">'+tree.loosePoints.map(coreDetailPointHtml).join('')+'</div>'+coreMediaGalleryHtml(item.media||[])+'</section></div>';return '<div class="core-ungrouped-copy">'+coreEscapeHtml(text)+'</div>'+coreMediaGalleryHtml(item.media||[])}
     function coreContentItemHtml(item){const title=coreIntro(item.text)||item.title||'具体内容',open=item.type==='机制'?'':' open';return '<details class="core-content-item"'+open+'><summary class="core-content-summary"><div class="core-content-summary-row">'+coreItemTagsHtml(item)+'<h3 class="core-content-title">'+coreEscapeHtml(title)+'</h3><div class="core-content-summary-actions"><span class="core-content-arrow" aria-hidden="true">⌄</span></div></div></summary><div class="core-content-body">'+coreHierarchyHtml(item)+'</div></details>'}
-    function renderCoreContentModule(id,periodId,archive){const items=coreItemsFor(id,periodId,archive),noteUrls=coreSourceNoteUrls(id,periodId),intro=coreEntryIntro(id,periodId),noteHtml=noteUrls?'<div class="core-source-note">非异动产品核心运营内容由AI爬取公告并结合KOL评价分析</div>':'',aiBadge=noteUrls?'<span class="core-ai-badge">AI整理</span>':'',introHtml=intro?'<p class="core-intro"><strong>总结：</strong>'+coreEscapeHtml(intro)+'</p>':'';return '<section class="product-module core-content-module" aria-labelledby="coreContentTitle"><div class="core-content-head"><div class="core-title-row"><h2 id="coreContentTitle">核心运营内容</h2>'+aiBadge+'</div><div class="core-result-count">正文模块 '+items.length+' 条</div></div>'+noteHtml+introHtml+'<div class="core-content-subhead"><span>调整优化类默认折叠 · 点击展开/收起</span></div><div class="core-content-list">'+(items.length?items.map(coreContentItemHtml).join(''):'<div class="core-content-empty">该观测日期尚未关联运营内容。</div>')+'</div><dialog class="core-media-lightbox" id="coreMediaDialog" aria-labelledby="coreMediaDialogTitle"><div class="core-media-lightbox-shell"><div class="core-media-lightbox-head"><strong id="coreMediaDialogTitle">原报告配图</strong><button type="button" class="core-media-lightbox-close" aria-label="关闭图片预览">×</button></div><div class="core-media-lightbox-stage"><img alt=""></div><div class="core-media-lightbox-caption"><span></span><span></span></div></div></dialog></section>'}
+    function renderCoreContentModule(id,periodId,archive){const items=[...coreItemsFor(id,periodId,archive)].sort((a,b)=>((a.type==='机制')?1:0)-((b.type==='机制')?1:0)),noteUrls=coreSourceNoteUrls(id,periodId),intro=coreEntryIntro(id,periodId),noteHtml=noteUrls?'<div class="core-source-note">非异动产品核心运营内容由AI爬取公告并结合KOL评价分析</div>':'',aiBadge=noteUrls?'<span class="core-ai-badge">AI整理</span>':'',introHtml=intro?'<p class="core-intro"><strong>总结：</strong>'+coreEscapeHtml(intro)+'</p>':'';return '<section class="product-module core-content-module" aria-labelledby="coreContentTitle"><div class="core-content-head"><div class="core-title-row"><h2 id="coreContentTitle">核心运营内容</h2>'+aiBadge+'</div><div class="core-result-count">正文模块 '+items.length+' 条</div></div>'+noteHtml+introHtml+(items.length?'<div class="core-content-subhead"><span>调整优化类默认折叠 · 点击展开/收起</span></div><div class="core-content-list">'+items.map(coreContentItemHtml).join('')+'</div>':(intro?'':'<div class="core-content-list"><div class="core-content-empty">该观测日期尚未关联运营内容。</div></div>'))+'<dialog class="core-media-lightbox" id="coreMediaDialog" aria-labelledby="coreMediaDialogTitle"><div class="core-media-lightbox-shell"><div class="core-media-lightbox-head"><strong id="coreMediaDialogTitle">原报告配图</strong><button type="button" class="core-media-lightbox-close" aria-label="关闭图片预览">×</button></div><div class="core-media-lightbox-stage"><img alt=""></div><div class="core-media-lightbox-caption"><span></span><span></span></div></div></dialog></section>'}
     function bindCoreContentModule(){const root=document.querySelector('.core-content-module');if(!root)return;const dialog=root.querySelector('#coreMediaDialog'),image=dialog&&dialog.querySelector('.core-media-lightbox-stage img'),caption=dialog&&dialog.querySelector('.core-media-lightbox-caption span:first-child'),page=dialog&&dialog.querySelector('.core-media-lightbox-caption span:last-child'),title=dialog&&dialog.querySelector('#coreMediaDialogTitle');root.querySelectorAll('[data-core-media]').forEach(button=>button.addEventListener('click',()=>{const key=button.dataset.coreMedia,description=button.dataset.coreCaption||'原报告配图',pageNumber=button.dataset.corePage||'';if(!dialog||!CORE_REFERENCE_IMAGES[key])return;image.src=CORE_REFERENCE_IMAGES[key];image.alt=description;caption.textContent=description;page.textContent=pageNumber?'报告 P'+pageNumber:'';title.textContent=description;dialog.showModal()}));if(dialog){dialog.querySelector('.core-media-lightbox-close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close()});dialog.addEventListener('close',()=>{image.removeAttribute('src')})}}
     /* CORE_CONTENT_MODULE_END */
     function openDetail(id,push=true,observationKey=null){
@@ -394,7 +405,7 @@
       const ageVals=profileAges.map(([k,v])=>({k,v,raw:parseFloat(String(v).replace(/[^\d.]/g,''))})),ageMax=Math.max(...ageVals.map(a=>Number.isFinite(a.raw)?a.raw:0),1);
       const audiencePanel=`<div class="banner-audience"><div class="ba-card"><div class="ba-head"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M9 11a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 9 11zm7 0a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 16 11zM2 20c0-3 3.5-4.5 7-4.5s7 1.5 7 4.5"/><path d="M15.5 15.7c3.4.3 6.5 1.7 6.5 4.3"/></svg>性别分布</div><div class="ba-gender"><div class="g male"><span class="sym">♂</span>男<strong>${esc(profileGender.male)}</strong></div><div class="g female"><span class="sym">♀</span>女<strong>${esc(profileGender.female)}</strong></div></div><div class="ba-bar"><i style="width:${gm!=null?gm:50}%"></i><b style="width:${gf!=null?gf:50}%"></b></div></div><div class="ba-card"><div class="ba-head"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M7 2v3M17 2v3M3 9h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>年龄分布</div><div class="ba-bars">${ageVals.map(a=>`<div class="ba-col"><span>${esc(a.v)}</span><i style="height:${Number.isFinite(a.raw)?Math.max(6,Math.round(a.raw/ageMax*100)):4}%;opacity:${Number.isFinite(a.raw)?(.35+.65*a.raw/ageMax).toFixed(2):.15}"></i><em>${esc(a.k)}</em></div>`).join('')}</div></div></div>`;
       const coreModuleHtml=renderCoreContentModule(id,periodId,archive);
-      $('#detailContent').innerHTML=`<button class="back-btn" id="backHome"><svg class="svg-icon" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>返回报告首页</button><section class="detail-banner"><div class="banner-top">${logo(id)}<div class="detail-title"><h1>${meta.name}${demoBadge}</h1></div></div>${audiencePanel}<p class="ba-src">${esc(profile&&profile.source?profile.source:'数据来源：集瓜，数据为抖音官方账号的粉丝画像，仅供参考')}</p></section><section class="product-module" aria-labelledby="dataModuleTitle"><div class="module-head"><div><h2 id="dataModuleTitle">数据观测</h2></div><div class="module-tools"><select id="detailPeriodSelect" aria-label="筛选数据观测日期" disabled>${options}</select></div></div><div class="data-module-body">${metricCards}<div class="product-chart"><div class="product-chart"><div class="product-chart-head"><strong>历史数据趋势</strong><div class="chart-tabs"><button class="${state.chartMetric==='flow'?'active':''}" data-metric="flow">周流水</button><button class="${state.chartMetric==='dau'?'active':''}" data-metric="dau">日均 DAU</button><button class="${state.chartMetric==='peak'?'active':''}" data-metric="peak">DAU 峰值</button></div></div><div class="chart-range"><label>开始 <input type="date" id="rangeStart"></label><span class="range-sep">至</span><label>结束 <input type="date" id="rangeEnd"></label><button id="rangeApply" class="range-btn">查询</button><button id="rangeReset" class="range-reset">本期</button></div><div id="trendChart"></div><p class="chart-note">注：DAU和流水数据基于SensorTower等第三方数据和公司产品实际数据建模估算，模型会持续优化并不定期对历史数据进行调整；「DAU 峰值」展示周期观测点，空档周期不补数</p></div></div></section>${coreModuleHtml}`;
+      $('#detailContent').innerHTML=`<button class="back-btn" id="backHome"><svg class="svg-icon" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>返回报告首页</button><section class="detail-banner"><div class="banner-top">${logo(id)}<div class="detail-title"><h1>${meta.name}${demoBadge}</h1></div></div>${audiencePanel}<p class="ba-src">${esc(profile&&profile.source?profile.source:'数据来源：集瓜，数据为抖音官方账号的粉丝画像，仅供参考')}</p></section><section class="product-module" aria-labelledby="dataModuleTitle"><div class="module-head"><div><h2 id="dataModuleTitle">数据观测</h2></div><div class="module-tools"><select id="detailPeriodSelect" aria-label="筛选数据观测日期">${options}</select></div></div><div class="data-module-body">${metricCards}<div class="product-chart"><div class="product-chart"><div class="product-chart-head"><strong>历史数据趋势</strong><div class="chart-tabs"><button class="${state.chartMetric==='flow'?'active':''}" data-metric="flow">周流水</button><button class="${state.chartMetric==='dau'?'active':''}" data-metric="dau">日均 DAU</button><button class="${state.chartMetric==='peak'?'active':''}" data-metric="peak">DAU 峰值</button></div></div><div class="chart-range"><label>开始 <input type="date" id="rangeStart"></label><span class="range-sep">至</span><label>结束 <input type="date" id="rangeEnd"></label><button id="rangeApply" class="range-btn">查询</button><button id="rangeReset" class="range-reset">本期</button></div><div id="trendChart"></div><p class="chart-note">注：DAU和流水数据基于SensorTower等第三方数据和公司产品实际数据建模估算，模型会持续优化并不定期对历史数据进行调整；「DAU 峰值」展示周期观测点，空档周期不补数</p></div></div></section>${coreModuleHtml}`;
       $('#backHome').onclick=()=>{location.hash='';switchView(isDemo?'reports':'home')};
       $('#detailPeriodSelect').onchange=e=>{const selected=e.target.value;if(PERIODS[selected]){state.period=selected;$('#periodSelect').value=selected}openDetail(id,false,selected)};
       $$('[data-metric]').forEach(b=>b.onclick=()=>{state.chartMetric=b.dataset.metric;$$('[data-metric]').forEach(x=>x.classList.toggle('active',x===b));renderChart(id,state.chartMetric)});
@@ -690,6 +701,8 @@
       if(core){const head=core.querySelector('.core-content-head');if(head&&!head.querySelector('.ed-btn'))head.appendChild(edBtn('编辑核心内容',()=>edOpenCore(state.detailId)))}
       const src=$('.detail-banner .ba-src');
       if(src&&!src.querySelector('.ed-btn'))src.appendChild(edBtn('✎',()=>edOpenAudience(state.detailId)));
+      const mt=$('.product-module .module-tools');
+      if(mt&&state.detailId&&!mt.querySelector('.ed-btn'))mt.appendChild(edBtn('✎ 编辑状态/文案',()=>edOpenRow(state.detailId)));
     }
     function edOpenCommit(){
       if(!EDITOR.pending.length){showToast('暂无可提交的更改');return}
@@ -698,25 +711,32 @@
         {label:'取消',cls:'ghost-btn',fn:()=>{}},
         {label:'确认提交',cls:'primary-btn',fn:()=>{edDoCommit($('#edCommitMsg').value.trim());return false}}
       ]);
+      const st=document.createElement('div');st.id='edCommitStatus';st.style.cssText='margin-top:10px;font-size:13px;font-weight:700;min-height:18px';
+      $('#edDlg .ed-dlg-body').appendChild(st);
     }
     async function edDoCommit(msg){
-      showToast('正在提交…');
+      const st=$('#edCommitStatus'),say=(t,ok)=>{if(st){st.textContent=t;st.style.color=ok===false?'#c0392b':'#16875e'}showToast(t)};
+      say('正在提交…');
       try{
         const dirty=ED_FILES.filter(n=>EDITOR.files[n]&&EDITOR.files[n].dirty);
-        if(!dirty.length){showToast('暂无可提交的更改');return}
-        for(const n of dirty){
-          const r=await fetch(ED_API+'/repository/files/'+encodeURIComponent(edFilePath(n))+'/raw?ref=main',{headers:{'PRIVATE-TOKEN':EDITOR.token}});
-          if(!r.ok)throw new Error('读取远端 '+n+'.json 失败（HTTP '+r.status+'）');
-          const remote=await r.text();
-          if(remote.replace(/\s+$/,'')!==EDITOR.files[n].text.replace(/\s+$/,''))throw new Error(n+'.json 线上已有新改动，请退出编辑模式刷新页面后重新修改');
+        if(!dirty.length){say('暂无可提交的更改',false);return}
+        /* 本地开发环境(localhost/file)：本地数据即源，跳过与远端的逐字比对；线上站点才做冲突检查 */
+        const isLocal=!location.hostname||['localhost','127.0.0.1'].includes(location.hostname);
+        if(!isLocal){
+          for(const n of dirty){
+            const r=await fetch(ED_API+'/repository/files/'+encodeURIComponent(edFilePath(n))+'/raw?ref=main',{headers:{'PRIVATE-TOKEN':EDITOR.token}});
+            if(!r.ok)throw new Error('读取远端 '+n+'.json 失败（HTTP '+r.status+'）');
+            const remote=await r.text();
+            if(remote.replace(/\s+$/,'')!==EDITOR.files[n].text.replace(/\s+$/,''))throw new Error(n+'.json 线上已有新改动，请退出编辑模式刷新页面后重新修改');
+          }
         }
         const res=await fetch(ED_API+'/repository/commits',{method:'POST',headers:{'PRIVATE-TOKEN':EDITOR.token,'Content-Type':'application/json'},body:JSON.stringify({branch:'main',commit_message:msg||'在线编辑',actions:dirty.map(n=>({action:'update',file_path:edFilePath(n),content:edSerialize(n)}))})});
-        if(!res.ok)throw new Error('提交失败（HTTP '+res.status+'）：'+(await res.text()).slice(0,200));
+        if(!res.ok)throw new Error('HTTP '+res.status+'：'+(await res.text()).slice(0,200));
         dirty.forEach(n=>{EDITOR.files[n].dirty=false;EDITOR.files[n].text=edSerialize(n)});
         EDITOR.pending=[];edRenderBar();
-        const dlg=$('#edDlg');if(dlg)dlg.close();
-        showToast('已提交到 main，约 1-2 分钟后线上生效');
-      }catch(e){showToast(e.message)}
+        say('✓ 已提交到 main，GitLab Pages 约 1-2 分钟自动发布');
+        setTimeout(()=>{const dlg=$('#edDlg');if(dlg)dlg.close()},1500);
+      }catch(e){say('提交失败：'+e.message,false)}
     }
     function edAskToken(){
       return new Promise(resolve=>{

@@ -153,9 +153,10 @@
     .hero-right{min-width:0}
     .hero-frame{background:#fff;border:3px solid #2E5A37;border-radius:20px;padding:20px 22px 22px;height:100%}
     .hero-frame-head{font-size:15px;font-weight:800;color:#4A5A4E;margin-bottom:14px}
-    .hero .intel-grid{grid-template-columns:1fr 1fr;gap:14px;margin-top:0;position:static}
+    .hero .intel-grid{grid-template-columns:1fr 1fr;gap:14px;margin-top:0;position:static;height:100%}
     .p-card{background:#fff;border:1px solid #E0E7DD;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
     .p-media{position:relative;height:104px;background:#EDF3EA;flex:none;overflow:hidden}
+    .hero .p-media{height:180px}
     .p-media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
     .p-fallback{height:100%;display:grid;place-items:center}
     .p-fallback .mini-logo{width:44px;height:44px;border-radius:11px}
@@ -335,6 +336,8 @@
     .core-content-subhead span{color:var(--core-muted);font-size:12px}
     .core-source-note{margin:8px 22px 0;color:var(--core-muted);font-size:12.5px;line-height:1.7}
     .core-intro{margin:10px 22px 0;padding:10px 14px;background:#f2f7f0;border-left:3px solid var(--core-green-dark);border-radius:0 10px 10px 0;color:#3c4a40;font-size:16px;line-height:1.8}
+    .core-intro:has(+ .core-media-lightbox){margin-bottom:22px}
+    @media(max-width:760px){.core-intro:has(+ .core-media-lightbox){margin-bottom:16px}}
     .core-intro strong{color:var(--core-green-dark)}
     .core-ai-badge{display:inline-flex;align-items:center;margin-left:8px;padding:4px 12px;background:#e9f2e6;color:var(--core-green-dark);border-radius:999px;font-size:16px;font-weight:800;line-height:1.3}
     .core-title-row{display:flex;align-items:center}
@@ -488,7 +491,7 @@
         <div class="hero-left">
           <h1 id="heroTitle">本周异动产品</h1>
           <p class="hero-sub" id="heroSub"></p>
-          <label class="cycle-box">监测周期 <select id="periodSelect" aria-label="选择监测周期" disabled></select></label>
+          <label class="cycle-box">监测周期 <select id="periodSelect" aria-label="选择监测周期"></select></label>
           <div id="periodOverview" class="period-overview hidden"></div>
           <div id="heroStats" class="hero-stats"></div>
         </div>
@@ -509,7 +512,7 @@
     </section>
     <section class="section" id="ganttSection">
       <div class="section-head"><div><h2 class="section-title">本周活动甘特图</h2><div class="section-sub">黄色底纹为本周数据周期，红色竖线为今天；点击甘特条查看活动详情</div></div></div>
-      <iframe id="ganttFrame" src="gantt-20260720.html" title="本周活动甘特图" style="width:100%;border:0;display:block;min-height:600px" scrolling="no"></iframe>
+      <iframe id="ganttFrame" src="gantt-20260727.html" title="本周活动甘特图" style="width:100%;border:0;display:block;min-height:600px" scrolling="no"></iframe>
     </section>
   </main>
   <script>
