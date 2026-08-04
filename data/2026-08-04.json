@@ -1,0 +1,450 @@
+{
+ "date": "2026-08-04",
+ "meta": {
+  "raw_count": 223,
+  "filtered_count": 173,
+  "selected_count": 12,
+  "crawl_time": "2026-08-04 11:30"
+ },
+ "lede": "Big Walk今日发售：鹅作剧团队的「友谊压力测试」，Polygon称年度最佳多人\nEA $550亿私有化今日交割：全部监管放行，史上最大LBO落地\nClaude纯代码生成可行走丛林：零资产浏览器直跑——16.8万浏览",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "Big Walk今日发售：鹅作剧团队的「友谊压力测试」，Polygon称年度最佳多人"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "EA $550亿私有化今日交割：史上最大LBO落地"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 1,
+   "hook": "Claude纯代码生成可行走丛林：零资产浏览器直跑"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Firecrawl开源pdf-inspector：0.002秒/页，AI文档解析进入基建层\nClaude纯代码生成可行走丛林：零资产浏览器直跑——16.8万浏览\nKOL实测Seedance 2.5碾压VEO/Grok：中国视频模型口碑反转信号"
+  },
+  {
+   "id": "industry",
+   "text": "EA $550亿私有化今日交割：全部监管放行，史上最大LBO落地\n索尼坚持2028年初停产实体盘：CFO回应抗议「数字化不可逆转」\nPalworld Online官宣MMO化：Garena发行，2026年内移动端独占\n三星：内存短缺2027更糟、至少持续到2028——涨价周期官方确认"
+  },
+  {
+   "id": "indie",
+   "text": "Big Walk今日发售：鹅作剧团队的友谊压力测试，Polygon称年度最佳多人\ntemkosoft排球游戏开发日志爆红：Godot手搓球感——89万浏览\nIRON NEST愿望单破100万：两人团队手搓5000吨炮塔，8月6日发售\nQUIET开测：鸭子外星人×恐怖奶奶，声响即死的4人合作喜剧恐怖"
+  },
+  {
+   "id": "tools",
+   "text": "Mesh2Motion R12：马匹rig+离线桌面版，免费Mixamo平替动画库破160"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Firecrawl · 官方发布",
+     "tags": [
+      "AI工具",
+      "开源",
+      "文档解析"
+     ],
+     "title": "Firecrawl开源最快PDF解析引擎pdf-inspector：单页0.002秒，AI数据管道基建",
+     "en_title": "we open sourced the fastest pdf parser engine — pdf-inspector powers /parse together with our custom OCR models — 0.002s per page",
+     "full_text": "we open sourced the fastest pdf parser engine\n\npdf-inspector powers /parse together with our custom OCR models\n\n0.002s per page",
+     "author": "Firecrawl",
+     "date": "2026-08-02",
+     "likes": 4900,
+     "views": 479913,
+     "link": "https://x.com/firecrawl/status/2083759818133688517",
+     "media": null,
+     "summary": "Firecrawl宣布开源其PDF解析引擎pdf-inspector，官方称之为最快的PDF parser：配合自研OCR模型驱动/parse端点，单页处理耗时0.002秒。推文获得48万浏览、4900赞。",
+     "recommendation": "Firecrawl开源pdf-inspector：0.002秒/页，AI文档解析进入基建层——48万浏览",
+     "analysis": "RAG与agent工作流的第一步都是把文档变成干净文本，解析速度与质量直接决定上游成本。对游戏团队而言，设计文档、市场调研、社区反馈的批量入库都受益于这类基础设施开源——文档智能正在变成像CDN一样的commodity层。",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Prasenjit · 开发者演示",
+     "tags": [
+      "Claude",
+      "程序化生成",
+      "原型"
+     ],
+     "title": "Claude一个提示词生成可行走3D丛林：纹理音效全部由代码生成，浏览器直接跑",
+     "en_title": "claude built this walkable jungle in the browser / every texture and sound generated in code / nothing was downloaded",
+     "full_text": "claude built this walkable jungle in the browser\nevery texture and sound generated in code\nnothing was downloaded https://t.co/L5qMpE9P79",
+     "author": "Prasenjit",
+     "date": "2026-08-01",
+     "likes": 2542,
+     "views": 167941,
+     "link": "https://x.com/prasenx/status/2083613843201389032",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2083610330379452416/img/5Uq06gBl2ugx5eQu.jpg",
+      "video_url": "https://x.com/prasenx/status/2083613843201389032/video/1"
+     },
+     "summary": "开发者Prasenjit展示Claude生成的浏览器可行走3D丛林：所有纹理与音效均由代码程序化生成，未下载任何外部资产。演示视频获得16.8万浏览、2542赞。",
+     "recommendation": "Claude纯代码生成可行走丛林：零下载资产，纹理音效全程序化——16.8万浏览",
+     "analysis": "这条演示的关键不在画面，而在「零资产」——模型直接输出程序化生成逻辑而非贴图文件，意味着AI生成内容的可压缩性与可修改性都上了一个台阶。对原型验证与GameJam场景，「一句话出可玩环境」正在变成默认能力。",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Tony出海 · KOL观点",
+     "tags": [
+      "视频模型",
+      "Seedance",
+      "KOL观点"
+     ],
+     "title": "Tony出海实测Seedance 2.5：对比VEO与Grok「土味太浓」，中国视频模型口碑反转",
+     "en_title": "Seedance 2.5的效果是真牛逼。对比了 Gemini的 VEO 和 Grok 视频 土味太浓，就像 DeepSeek 和 Kimi。中国的视频模型是遥遥领先。老外看中国的眼神，就像我们看Claude fable 5 和 GPT5.6 的眼神。",
+     "full_text": "Seedance 2.5的效果是真牛逼\n\n对比了 Gemini的 VEO 和 Grok 视频 土味太浓， 就像 DeepSeek 和 Kimi\n\n中国的视频模型是遥遥领先\n\n老外看中国的眼神，就像我们看Claude fable 5 和 GPT5.6 的眼神。 https://t.co/Q7nopIpiny",
+     "author": "Tony出海",
+     "date": "2026-08-03",
+     "likes": 5,
+     "views": 1051,
+     "link": "https://x.com/iamtonyzhu/status/2084207527634592162",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2084206397689069568/img/DywuUb0i2F2jEnlN.jpg",
+      "video_url": "https://x.com/iamtonyzhu/status/2084207527634592162/video/1"
+     },
+     "summary": "出海开发者Tony实测字节Seedance 2.5视频模型，与Gemini VEO、Grok视频对比后给出「中国视频模型遥遥领先」的判断，并形容海外用户看中国视频模型的眼神「就像我们看Claude Fable 5和GPT5.6」。",
+     "recommendation": "KOL实测Seedance 2.5碾压VEO/Grok：中国视频模型的口碑反转信号",
+     "analysis": "视频生成是当前AI内容管线里游戏宣发与买量素材最直接的受益环节，中国模型在视频域的口碑反转若持续，素材生产成本结构会再洗牌。当然单一KOL体感不等于benchmark，建议团队自行小成本验证后再调整供应商。"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 新闻",
+     "tags": [
+      "EA",
+      "并购",
+      "沙特PIF"
+     ],
+     "title": "EA $550亿私有化获全部监管许可、8月4日交割：游戏史上最大杠杆收购落地",
+     "en_title": "The $55bn private acquisition of Electronic Arts is expected to go ahead.",
+     "full_text": "The $55bn private acquisition of Electronic Arts is expected to go ahead. https://t.co/KlXQobt5ps https://t.co/9TjkLpFv6x",
+     "author": "Eurogamer",
+     "date": "2026-08-03",
+     "likes": 23,
+     "views": 15213,
+     "link": "https://x.com/eurogamer/status/2084104741848510703",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOw6M6uWIAAj7Q9.jpg"
+     },
+     "summary": "EA在8K文件中确认已获得「全部监管批准」，沙特PIF联合Affinity Partners与Silver Lake的$550亿杠杆收购预计8月4日完成交割。这是游戏行业史上最大规模杠杆收购，欧盟、美联储与EA股东此前均已放行；CEO Andrew Wilson上财年奖金约$3800万。",
+     "recommendation": "EA $550亿私有化今日交割：全部监管放行，史上最大LBO落地",
+     "analysis": "杠杆收购的债务需要用EA自身的收入与资产偿还，管理层已明确把生成式AI列为降本增效工具之一。交割后的前两个季度是观察窗口：裁员、工作室整合与AI管线推进速度，会成为整个西方大厂阵营的对照样本。",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 新闻",
+     "tags": [
+      "索尼",
+      "实体盘",
+      "数字所有权"
+     ],
+     "title": "索尼确认坚持去光盘化：CFO称「数字化正在推进」，2028年初停产实体盘",
+     "en_title": "Sony vows to press on with discless plans, saying \"digitalization is progressing\" across all media despite heavy protest from players.",
+     "full_text": "Sony vows to press on with discless plans, saying \"digitalization is progressing\" across all media despite heavy protest from players. https://t.co/sS4QottjKN https://t.co/beVlGtrCQA",
+     "author": "Eurogamer",
+     "date": "2026-08-03",
+     "likes": 36,
+     "views": 15093,
+     "link": "https://x.com/eurogamer/status/2084119841120616959",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOxH7z1X0AAgN0I.jpg"
+     },
+     "summary": "索尼CFO Lin Tao在7月31日财报电话会上确认，将按计划在2028年初停止PlayStation实体光盘的生产与销售，理由是「内容整体的数字化正在推进」。面对玩家组织的PS5停盘抗议与请愿，她表示理解社区情绪、但决定不会改变；上周PSN宕机恰好让玩家无法启动已购游戏，给反对者送上现实论据。",
+     "recommendation": "索尼坚持2028年初停产实体盘：CFO回应抗议「数字化不可逆转」",
+     "analysis": "实体消亡从传言变成官方时间表，所有权争议进入新阶段。纯数字分发对发行商意味着渠道利润率与控制权双升，但二手市场、转售价值与保存文化的账还没算清——这场拉锯会贯穿整个下世代主机周期。",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Polygon · 新闻",
+     "tags": [
+      "帕鲁",
+      "MMO",
+      "手游"
+     ],
+     "title": "Palworld Online官宣：Pocketpair×Garena正版MMORPG，2026年内登陆iOS/Android",
+     "en_title": "Palworld is getting an MMO spin-off later this year",
+     "full_text": "Palworld is getting an MMO spin-off later this year https://t.co/Jub9POiwlK https://t.co/kbsHC0Bzwe",
+     "author": "Polygon",
+     "date": "2026-08-03",
+     "likes": 25,
+     "views": 13603,
+     "link": "https://x.com/Polygon/status/2084232884504645724",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOyuw32WYAEHnBR.jpg"
+     },
+     "summary": "Pocketpair官宣《Palworld Online》：由Garena发行的官方MMORPG衍生作，2026年内独占登陆iOS/Android。官方新闻稿称将在无缝开放世界中还原帕鲁的深度、自由与规模，支持野外相遇组队、共建基地、PvE与PvP，并配有原创剧情。",
+     "recommendation": "Palworld Online官宣MMO化：Garena发行，2026年内移动端独占",
+     "analysis": "帕鲁的IP扩张路线与两天前Krafton官宣Subnautica系列化如出一辙：买断制爆款转向免费移动端MMO化，把建造与抓宠的留存循环交给长期运营。Garena在新兴市场的发行能力正是Pocketpair自己不具备的拼图。"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 新闻",
+     "tags": [
+      "内存危机",
+      "三星",
+      "硬件成本"
+     ],
+     "title": "三星预警内存短缺2027年继续恶化、至少持续到2028：HBM吃掉消费级产能",
+     "en_title": "Memory chip maker Samsung says the component shortage will continue to get worse in 2027, while earning a pretty penny from it",
+     "full_text": "Memory chip maker Samsung says the component shortage will continue to get worse in 2027, while earning a pretty penny from it\n\nhttps://t.co/x2Bg4M3A9J https://t.co/6AVQATFYbM",
+     "author": "Eurogamer",
+     "date": "2026-08-03",
+     "likes": 20,
+     "views": 7645,
+     "link": "https://x.com/eurogamer/status/2084240843876266093",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOy11wxbEAAIZiT.jpg"
+     },
+     "summary": "占全球内存供应约三分之一的三星在财报电话会上表示，供应紧张2027年将继续恶化、至少持续到2028年，依据是AI公司分享的中长期需求预测。由于产能优先分配给数据中心HBM，消费级内存涨价已推高PS5、Xbox、Switch 2与Steam Machine售价；三星等三大厂还在加州面临操纵价格集体诉讼。",
+     "recommendation": "三星：内存短缺2027更糟、至少持续到2028——涨价周期获官方确认",
+     "analysis": "从三星首次警告（7/31）到Xbox涨价落地（8/3）再到「2028年前无解」的官方指引，硬件成本曲线已被正式重估：2027年前主机与PC没有降价窗口，「装机量天花板」将成为发行策略的新约束。"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Eurogamer · 评测",
+     "tags": [
+      "合作冒险",
+      "解谜",
+      "全平台"
+     ],
+     "title": "Big Walk今日发售：《Untitled Goose Game》团队House House新作，Polygon称「年度最佳多人游戏」",
+     "en_title": "House House's Big Walk is equally smart as their Untitled Goose Game in the way it wields its silliness, similarly playful and exuberant, and stuffed with innumerable delightful little touches.",
+     "full_text": "House House's Big Walk is equally smart as their Untitled Goose Game in the way it wields its silliness, similarly playful and exuberant, and stuffed with innumerable delightful little touches. Otherwise, it's not much like Untitled Goose Game at all.\n\nOur review: https://t.co/mX2dUFFDNo",
+     "author": "Eurogamer",
+     "date": "2026-08-03",
+     "likes": 825,
+     "views": 49011,
+     "link": "https://x.com/eurogamer/status/2084266487087255770",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOzNTt3XIAA6xtR.jpg"
+     },
+     "summary": "House House（Untitled Goose Game）新作《Big Walk》8月4日登陆PC/Switch 2/PS5：2-12人合作徒步冒险，靠proximity语音、手势与激光笔等道具协作解谜。Eurogamer称其与鹅作剧「同样聪明」，Polygon三人联机评测直接给出「2026年最佳多人游戏」。",
+     "recommendation": "Big Walk今日发售：鹅作剧团队的「友谊压力测试」，Polygon称年度最佳多人",
+     "featured": true,
+     "game_ref": "Big Walk",
+     "enrichment": {
+      "game_name": "Big Walk",
+      "genre": "合作冒险 / 解谜 / 步行模拟",
+      "developer": "House House（澳大利亚独立工作室，Untitled Goose Game原班）",
+      "platforms": [
+       "Steam",
+       "Switch 2",
+       "PS5"
+      ],
+      "price": "未公布",
+      "release_date": "2026年8月4日",
+      "steam_rating": "发售首日，评价累积中",
+      "steam_url": "https://store.steampowered.com/app/1478500/Big_Walk/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1478500/62eeee1507dbac905e128a62f2ce690550238db0/header.jpg?t=1785219462",
+      "youtube_video": null,
+      "description": "【核心玩法】2-12人合作徒步冒险。玩家在开阔的山林岛屿中结伴前行，解谜收集「宝宝」换取钥匙、解锁高塔与地下隧道等快速通道。谜题全部围绕沟通设计：只有一人能看到符号的房间需要口头描述给队友摆卡片；重物需要接力传递；玻璃隔断后得靠激光笔指点答案。\n\n【沟通系统】proximity语音随距离衰减、被墙壁闷住、经对讲机失真——「突然说不出话」是常态，此时只能挥手、指物、捶地或疯狂摆臂。官方直言这不是「顺便能和朋友玩」的游戏，而是「关于和朋友一起玩」的游戏。\n\n【美术与氛围】糖果色塑料质感的游乐设施点缀在自然主义岛屿上，角色像虫子、鸭子与面包棒的混合体；昼夜交替，入夜后需要手电筒与信号棒，氛围在治愈与轻微不安之间摇摆。\n\n【优势】谜题种类多且持续翻新；沟通机制天然制造「我们懂彼此」的时刻；2-12人弹性人数+跨平台联机降低组队门槛；发售即获Eurogamer与Polygon双高分。\n【不足】proximity语音范围小，路人局沟通成本高；谜题答案一次性，通关后重玩价值有限；无法单人体验。\n\n【综合】House House时隔多年对「友谊」的又一次玩法化拆解，把合作派对游戏从互坑（friendslop）拉向互信，是本月合作品类的头号种子。",
+      "why_notable": "鹅作剧团队时隔多年新作，Polygon称「2026年最佳多人游戏」——合作品类从互坑走向互信的标志性作品",
+      "pcu": "发售首日",
+      "current_players": null,
+      "estimated_sales": "暂无数据"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "temkosoft · 开发日志",
+     "tags": [
+      "排球",
+      "Godot",
+      "个人开发"
+     ],
+     "title": "独立开发者temkosoft的排球游戏爆红：「做一款自己一直想玩的游戏」——89万浏览",
+     "en_title": "I'M MAKING A GAME I ALWAYS WANTED TO PLAY🏐",
+     "full_text": "I'M MAKING A GAME I ALWAYS WANTED TO PLAY🏐 https://t.co/tv72UbtoeL",
+     "author": "temkosoft",
+     "date": "2026-08-03",
+     "likes": 5718,
+     "views": 890338,
+     "link": "https://x.com/temkosoft/status/2084084093059301687",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2084083963019096064/img/qOqKJHnfsnc4ygU9.jpg",
+      "video_url": "https://x.com/temkosoft/status/2084084093059301687/video/1"
+     },
+     "summary": "Godot独立开发者temkosoft发布其排球游戏开发演示，一句「我在做一款自己一直想玩的游戏」配上流畅的击球动作衔接，收获89万浏览与5700余赞。该作尚未定名上架，作者长期连载开发进度，近期在用动作队列系统打磨球与角色的交互手感。",
+     "recommendation": "temkosoft排球游戏开发日志爆红：Godot手搓球感——89万浏览",
+     "featured": true,
+     "enrichment": {
+      "game_name": "temkosoft排球新作（未定名）",
+      "genre": "体育 / 排球 / 动作",
+      "developer": "temkosoft（个人开发者，Godot引擎）",
+      "platforms": [
+       "待定"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未上架",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【核心玩法】尚未定名的排球题材动作游戏，演示中可见发球、垫球、扣杀的动作衔接；作者采用动作队列（action queue）系统处理球与角色的交互，手感打磨是当前开发重点。\n\n【开发者】temkosoft，个人开发者，使用Godot引擎，长期在X上连载开发进度（球体交互、角色移动等）。这条「我在做一款自己一直想玩的游戏」的演示视频拿到89万浏览、5700余赞，是其传播最广的一条开发日志。\n\n【优势】排球是被游戏化极少的运动题材，差异化天然存在；动作手感型体育游戏在短视频传播中有优势；连载式开发已积累稳定关注者。\n【不足】项目极早期：未定名、未上架、无发售窗口；单人开发的内容量风险；体育游戏的AI对手与联机都是硬骨头。\n\n【综合】「做自己想玩的游戏」是最古老也最有效的独游叙事——89万浏览证明手感演示本身就是最好的愿望单广告，值得加入观察名单。",
+      "why_notable": "未定名开发日志拿到89万浏览——手感演示即营销的最佳样本，排球题材稀缺性放大传播"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "IRON NEST · 官方",
+     "tags": [
+      "模拟",
+      "柴油朋克",
+      "两人团队"
+     ],
+     "title": "IRON NEST发售前愿望单破100万：两人团队的重炮模拟器，日均新增4万人",
+     "en_title": "ONE MILLION WISHLISTS BEFORE RELEASE. 40,330 new Operators per day. That is all it takes. Three days remain.",
+     "full_text": "ONE MILLION WISHLISTS BEFORE RELEASE.\n\n40,330 new Operators per day. That is all it takes.\n\nThree days remain. The final push begins now. https://t.co/1lK3EPpBYb",
+     "author": "IRON NEST: Heavy Turret Simulator",
+     "date": "2026-08-03",
+     "likes": 347,
+     "views": 14377,
+     "link": "https://x.com/IRONNESTgame/status/2084096892527386793",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOww3q8X0AAiWj7.png"
+     },
+     "summary": "两人团队开发的柴油朋克重炮模拟器《IRON NEST: Heavy Turret Simulator》宣布发售前愿望单突破100万、日均新增40,330人，8月6日正式发售。玩家手动操作5000吨炮塔：接收坐标、地图测量、计算弹道、装填击发；Kotaku、RPS、IGN均给出正面评语。",
+     "recommendation": "IRON NEST愿望单破100万：两人团队手搓5000吨炮塔，8月6日发售",
+     "featured": true,
+     "game_ref": "IRON NEST: Heavy Turret Simulator",
+     "enrichment": {
+      "game_name": "IRON NEST: Heavy Turret Simulator",
+      "genre": "模拟 / 策略 / 柴油朋克",
+      "developer": "Nick Nieuwoudt & Dominik Latos（两人团队）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": "2026年8月6日",
+      "steam_rating": "未发售 · 愿望单100万+",
+      "steam_url": "https://store.steampowered.com/app/2950790/IRON_NEST_Heavy_Turret_Simulator/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2950790/e6c9e990560078611472e5dab98e79a405ed33f4/header.jpg?t=1785631002",
+      "youtube_video": null,
+      "description": "【核心玩法】第一人称重炮模拟。玩家是一台5000吨柴油朋克炮塔的唯一操作员：接收电报坐标、在战术地图上测量换算、转动手轮调整仰角、选择发射药与弹种（穿甲、烟雾、毒气……）、拉动击发杆，看着炮弹重塑前线地貌。程序生成任务目标+手工战役+两种挑战模式与排行榜。\n\n【设定】架空的1920年代末西班牙，君主制与共和起义的内战边缘；指挥部只下命令，「承担后果的是你」——道德重量是叙事的一部分。\n\n【美术与氛围】柴油朋克钢铁舱室、电报机与机械计算机的触感反馈，官方自嘲「军工级听力损伤」的音效设计；咖啡机与军号均可交互。\n\n【优势】题材与操作幻想极度差异化（同赛道仅PVKK等少数作品）；两人团队完成度高，Kotaku、RPS、IGN已有正面评语；发售前愿望单破100万、日均新增4万。\n【不足】玩法循环偏单一（测量-装填-击发），长线留存待验证；仅Windows，无主机版消息。\n\n【综合】「幻想职业模拟器」赛道的最新爆款候补——把一个从未被游戏化过的职业做到极致，愿望单数据证明垂直题材深挖仍有巨大的未满足需求。",
+      "why_notable": "发售前愿望单破100万、日均新增4万——两人团队把从未被游戏化的职业做到极致的回报率实证",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无数据"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "Game*Spark · 新闻",
+     "tags": [
+      "合作恐怖",
+      "喜剧",
+      "playtest"
+     ],
+     "title": "QUIET：LINE Games出品，鸭子外星人潜入民宅偷零件、声响即死的4人合作喜剧恐怖开测",
+     "en_title": "【最大4人】人間をやめている“おばあちゃん”が襲ってくる！アヒルたちが協力する物資収集コメディホラー『QUIET』Steamプレイテストがスタート",
+     "full_text": "【最大4人】人間をやめている“おばあちゃん”が襲ってくる！アヒルたちが協力する物資収集コメディホラー『QUIET』Steamプレイテストがスタート\nhttps://t.co/Unpu6KgCHZ\n\nアヒルの宇宙人となり宇宙船の修理に必要なパーツを盗み出す。しかし薄暗い家には恐ろしい存在が…どっちが人外なのかわからない https://t.co/k47ypXt440",
+     "author": "⚡Game*Spark⚡",
+     "date": "2026-08-03",
+     "likes": 1797,
+     "views": 197778,
+     "link": "https://x.com/gamespark/status/2084191547181199532",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2084191310697914368/pu/img/TXhr23nEQ3f6xERG.jpg",
+      "video_url": "https://x.com/gamespark/status/2084191547181199532/video/1"
+     },
+     "summary": "LINE Games的协作喜剧恐怖《QUIET》8月3日开启Steam playtest：1-4名玩家扮演坠落地球的鸭子外星人，潜入民宅偷取修理飞船的零件；屋内「明显不是人类」的奶奶与婴儿对声响极度敏感、会高速扑来。三档难度，2026年内正式发售，支持日语。推文获19.8万浏览。",
+     "recommendation": "QUIET开测：鸭子外星人×恐怖奶奶，声响即死的4人合作喜剧恐怖——19.8万浏览",
+     "game_ref": "QUIET",
+     "enrichment": {
+      "game_name": "QUIET",
+      "genre": "合作恐怖 / 喜剧 / 潜行",
+      "developer": "LINE Games",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": null,
+     "steam_rating": "playtest进行中",
+     "steam_url": "https://store.steampowered.com/app/4228630/QUIET/",
+     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4228630/6673f0c5252d0b76b2b86ed0844d58d4b7b028ae/header.jpg?t=1785809177",
+      "youtube_video": null,
+      "description": "【核心玩法】1-4人合作的物资收集喜剧恐怖。玩家是坠落地球的鸭子外星人，潜入昏暗民宅偷取修理飞船的零件（PC、电视等）后逃脱。屋内游荡着「明显已经不当人」的奶奶与婴儿——对声响极度敏感，东西掉地上就会高速扑来；且必须开启麦克风，现实中玩家的说话声与惊呼同样会被「房主」听见。\n\n【氛围】预告片中奶奶贴上天花板、从下方玩家头顶爬过的镜头把「被注视」的紧张感拉满；鸭子角色的蠢萌与怪物的惊悚形成喜剧反差。\n\n【优势】「外星人偷东西vs恐怖奶奶」的题材反差新鲜；声响即死规则简单直接，天然适合直播效果；三档难度、支持日语、免费开测。\n【不足】playtest数据不继承正式版；目前仅键鼠操作（手柄适配中）；LINE Games出品，体量与深度待验证。\n\n【综合】R.E.P.O.带火的「合作捡垃圾恐怖」赛道再添一员，凭题材反差与开测节点值得关注——鸭子和奶奶到底谁更不像人，是这条推文在日推拿到近20万浏览的原因。",
+      "why_notable": "合作捡垃圾恐怖赛道的新题材变体（鸭子外星人×恐怖奶奶），开测即获日媒报道，直播友好型规则设计",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无数据"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Scott Petrovic · 官方发布",
+     "tags": [
+      "动画",
+      "绑骨",
+      "开源工具"
+     ],
+     "title": "Mesh2Motion Release 12：免费自动绑骨工具新增马匹骨骼与离线桌面版，动画库破160",
+     "en_title": "Mesh2Motion Release 12 Out 🎉 - New Horse Rig + 13 animations - Offline Desktop Application - 40+ Human Animations added",
+     "full_text": "Mesh2Motion Release 12 Out 🎉 \n\n- New Horse Rig + 13 animations\n- Offline Desktop Application\n- 40+ Human Animations added\n\nCheck out the full release 12 notes with all changes: \nhttps://t.co/OgRfSTJyBb\n\nTry it out and any feedback welcome: https://t.co/5rhFRbpeG4 https://t.co/OUwLjSWoR2",
+     "author": "Scott Petrovic",
+     "date": "2026-08-02",
+     "likes": 510,
+     "views": 22147,
+     "link": "https://x.com/scottpetrovic/status/2083912994686161053",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOuLrHUXwAABLZd.jpg"
+     },
+     "summary": "免费开源的网页自动绑骨与动画工具Mesh2Motion发布R12：全新马匹rig附带13个动画、新增40余个人形动画（总量超160）、首发Win/Mac/Linux离线桌面版，并改进了骨骼可视化与按骨骼类型着色的蒙皮分类。推文获2.2万浏览。",
+     "recommendation": "Mesh2Motion R12：马匹rig+离线桌面版，免费Mixamo平替动画库破160",
+     "analysis": "作为Mixamo的免费平替，Mesh2Motion的动画库与rig覆盖正在快速逼近商业方案，离线版补齐了团队协作与资产保密场景的短板。对独立团队而言，「网页绑骨→导出GLB」的零成本动画管线已经可用。"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**EA今日交割：游戏史上最大杠杆收购落地**\nEA确认全部监管批准到手，$550亿私有化8月4日交割——杠杆债务要靠EA自己的收入还，生成式AI已被管理层列为降本工具，交割后两个季度的裁员与整合节奏值得全行业对照。同日索尼CFO确认2028年初停产实体盘、称「数字化不可逆转」；三星则把内存短缺的官方指引推到「2027年更糟、至少持续到2028」，硬件成本一周之内完成从预警到落地再到长期化的三连跳。\n\n**Big Walk与百万愿望单：合作游戏的两种答案**\nHouse House新作《Big Walk》今日发售，Polygon三人联机后给出「2026年最佳多人游戏」——它把合作派对从互坑拉向互信；两人团队的《IRON NEST》则证明垂直题材深挖的回报率：重炮操作员这个从未被游戏化的职业，发售前愿望单破100万、日均新增4万，8月6日开炮。中间还有89万浏览的排球开发日志和鸭子外星人偷零件的《QUIET》开测。\n\n**AI的基建层与口碑反转**\nFirecrawl开源最快PDF解析引擎（0.002秒/页），文档智能变成commodity；Claude用纯代码生成可行走丛林，零资产演示再进一步；Tony出海实测Seedance 2.5后称「中国视频模型遥遥领先」——单一KOL体感不等于benchmark，但值得小成本验证。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
