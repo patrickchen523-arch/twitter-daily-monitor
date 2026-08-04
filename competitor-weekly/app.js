@@ -18,7 +18,7 @@
     });
     REPORTS.sort((a,b)=>b.id.localeCompare(a.id));
 
-    const state={period:'20260727',view:'home',search:'',status:'all',sortKey:null,sortDir:-1,detailId:null,detailObservationKey:null,chartMetric:'flow',overviewMetric:'flow',overviewPoint:null,overviewSelected:null,reportYear:'all',reportSearch:''};
+    const state={period:'20260727',view:'home',search:'',status:'all',sortKey:null,sortDir:-1,detailId:null,detailObservationKey:null,chartMetric:'flow',chartGranularity:'day',overviewMetric:'flow',overviewPoint:null,overviewSelected:null,reportYear:'all',reportSearch:''};
     const VISIBLE_PERIODS=Object.keys(PERIODS).filter(k=>/^\d{8}$/.test(k)).sort().reverse().slice(0,2);
     const GANTT_PAGE={'20260727':'gantt-20260727.html','20260720':'gantt-20260720.html'};
     const CUSTOM_OBSERVATIONS=window.__DB.OBSERVATIONS||{};
@@ -405,10 +405,11 @@
       const ageVals=profileAges.map(([k,v])=>({k,v,raw:parseFloat(String(v).replace(/[^\d.]/g,''))})),ageMax=Math.max(...ageVals.map(a=>Number.isFinite(a.raw)?a.raw:0),1);
       const audiencePanel=`<div class="banner-audience"><div class="ba-card"><div class="ba-head"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M9 11a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 9 11zm7 0a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 16 11zM2 20c0-3 3.5-4.5 7-4.5s7 1.5 7 4.5"/><path d="M15.5 15.7c3.4.3 6.5 1.7 6.5 4.3"/></svg>性别分布</div><div class="ba-gender"><div class="g male"><span class="sym">♂</span>男<strong>${esc(profileGender.male)}</strong></div><div class="g female"><span class="sym">♀</span>女<strong>${esc(profileGender.female)}</strong></div></div><div class="ba-bar"><i style="width:${gm!=null?gm:50}%"></i><b style="width:${gf!=null?gf:50}%"></b></div></div><div class="ba-card"><div class="ba-head"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M7 2v3M17 2v3M3 9h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>年龄分布</div><div class="ba-bars">${ageVals.map(a=>`<div class="ba-col"><span>${esc(a.v)}</span><i style="height:${Number.isFinite(a.raw)?Math.max(6,Math.round(a.raw/ageMax*100)):4}%;opacity:${Number.isFinite(a.raw)?(.35+.65*a.raw/ageMax).toFixed(2):.15}"></i><em>${esc(a.k)}</em></div>`).join('')}</div></div></div>`;
       const coreModuleHtml=renderCoreContentModule(id,periodId,archive);
-      $('#detailContent').innerHTML=`<button class="back-btn" id="backHome"><svg class="svg-icon" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>返回报告首页</button><section class="detail-banner"><div class="banner-top">${logo(id)}<div class="detail-title"><h1>${meta.name}${demoBadge}</h1></div></div>${audiencePanel}<p class="ba-src">${esc(profile&&profile.source?profile.source:'数据来源：集瓜，数据为抖音官方账号的粉丝画像，仅供参考')}</p></section><section class="product-module" aria-labelledby="dataModuleTitle"><div class="module-head"><div><h2 id="dataModuleTitle">数据观测</h2></div><div class="module-tools"><select id="detailPeriodSelect" aria-label="筛选数据观测日期">${options}</select></div></div><div class="data-module-body">${metricCards}<div class="product-chart"><div class="product-chart"><div class="product-chart-head"><strong>历史数据趋势</strong><div class="chart-tabs"><button class="${state.chartMetric==='flow'?'active':''}" data-metric="flow">周流水</button><button class="${state.chartMetric==='dau'?'active':''}" data-metric="dau">日均 DAU</button><button class="${state.chartMetric==='peak'?'active':''}" data-metric="peak">DAU 峰值</button></div></div><div class="chart-range"><label>开始 <input type="date" id="rangeStart"></label><span class="range-sep">至</span><label>结束 <input type="date" id="rangeEnd"></label><button id="rangeApply" class="range-btn">查询</button><button id="rangeReset" class="range-reset">本期</button></div><div id="trendChart"></div><p class="chart-note">注：DAU和流水数据基于SensorTower等第三方数据和公司产品实际数据建模估算，模型会持续优化并不定期对历史数据进行调整；「DAU 峰值」展示周期观测点，空档周期不补数</p></div></div></section>${coreModuleHtml}`;
+      $('#detailContent').innerHTML=`<button class="back-btn" id="backHome"><svg class="svg-icon" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>返回报告首页</button><section class="detail-banner"><div class="banner-top">${logo(id)}<div class="detail-title"><h1>${meta.name}${demoBadge}</h1></div></div>${audiencePanel}<p class="ba-src">${esc(profile&&profile.source?profile.source:'数据来源：集瓜，数据为抖音官方账号的粉丝画像，仅供参考')}</p></section><section class="product-module" aria-labelledby="dataModuleTitle"><div class="module-head"><div><h2 id="dataModuleTitle">数据观测</h2></div><div class="module-tools"><select id="detailPeriodSelect" aria-label="筛选数据观测日期">${options}</select></div></div><div class="data-module-body">${metricCards}<div class="product-chart"><div class="product-chart"><div class="product-chart-head"><strong>历史数据趋势</strong><div class="chart-tools"><div class="chart-tabs"><button class="${state.chartMetric==='flow'?'active':''}" data-metric="flow">流水</button><button class="${state.chartMetric==='dau'?'active':''}" data-metric="dau">DAU</button></div><div class="chart-tabs chart-gran"><button class="${state.chartGranularity==='day'?'active':''}" data-gran="day">日</button><button class="${state.chartGranularity==='week'?'active':''}" data-gran="week">周</button><button class="${state.chartGranularity==='month'?'active':''}" data-gran="month">月</button></div></div></div><div class="chart-range"><label>开始 <input type="date" id="rangeStart"></label><span class="range-sep">至</span><label>结束 <input type="date" id="rangeEnd"></label><button id="rangeApply" class="range-btn">查询</button><button id="rangeReset" class="range-reset">本期</button></div><div id="trendChart"></div><p class="chart-note">注：DAU和流水数据基于SensorTower等第三方数据和公司产品实际数据建模估算，模型会持续优化并不定期对历史数据进行调整；周/月颗粒度下流水为区间合计、DAU为区间均值，DAU峰值请在「日」颗粒度下查看</p></div></div></section>${coreModuleHtml}`;
       $('#backHome').onclick=()=>{location.hash='';switchView(isDemo?'reports':'home')};
       $('#detailPeriodSelect').onchange=e=>{const selected=e.target.value;if(PERIODS[selected]){state.period=selected;$('#periodSelect').value=selected}openDetail(id,false,selected)};
       $$('[data-metric]').forEach(b=>b.onclick=()=>{state.chartMetric=b.dataset.metric;$$('[data-metric]').forEach(x=>x.classList.toggle('active',x===b));renderChart(id,state.chartMetric)});
+      $$('[data-gran]').forEach(b=>b.onclick=()=>{state.chartGranularity=b.dataset.gran;$$('[data-gran]').forEach(x=>x.classList.toggle('active',x===b));renderChart(id,state.chartMetric)});
       bindCoreContentModule();
       const defs=chartRangeDefaults();$('#rangeStart').value=defs.start;$('#rangeEnd').value=defs.end;
       const setRangeState=queried=>{$('#rangeApply').classList.toggle('on',queried);$('#rangeReset').classList.toggle('on',!queried)};
@@ -449,21 +450,40 @@
       $('#trendChart').innerHTML=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${META[id].name}趋势图"><text x="${P.l}" y="15" font-size="10" fill="#98a39a">单位：${metric==='flow'?'万元':'万人'}</text>${ticks}<path d="${path}" fill="none" stroke="#e5484d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>${points.map((p,i)=>`<circle cx="${x(i)}" cy="${y(p.value)}" r="5" fill="#fff" stroke="#e5484d" stroke-width="3"/><text x="${x(i)}" y="${y(p.value)-12}" text-anchor="middle" font-size="10" font-weight="700" fill="#384459">${formatNum(p.value)}</text><text x="${x(i)}" y="${H-18}" text-anchor="middle" font-size="9" fill="#788496">${W<600?p.label.split('—')[0]:p.label}</text>`).join('')}</svg>`;
     }
     function renderChart(id,metric){
-      if(metric==='peak'){renderChartLegacy(id,metric);return}
+      const gran=state.chartGranularity||'day';
       const daily=(window.__DAILY_METRICS?.[id])||[];
       const start=$('#rangeStart')?.value,end=$('#rangeEnd')?.value,idx=metric==='dau'?1:2;
       const rows=daily.filter(r=>r[idx]!=null&&(!start||r[0]>=start)&&(!end||r[0]<=end));
       if(!rows.length){$('#trendChart').innerHTML=`<div class="empty">该时间段暂无日级${metric==='dau'?'DAU':'流水'}数据</div>`;return}
-      const cw0=$('#trendChart')?.clientWidth||760,W=Math.max(280,Math.min(760,cw0)),H=W<600?220:250,P={l:W<600?44:58,r:W<600?16:18,t:24,b:46},n=rows.length,maxV=Math.max(...rows.map(r=>r[idx])),max=maxV*1.14,min=0,unit=metric==='dau'?'万人':'万元';
+      /* 颗粒度聚合：流水加总，DAU取均值 */
+      const fmtD=v=>String(v).padStart(2,'0'),isoLocal=dt=>dt.getFullYear()+'-'+fmtD(dt.getMonth()+1)+'-'+fmtD(dt.getDate());
+      const buckets=new Map();
+      rows.forEach(r=>{
+        let key=r[0];
+        if(gran==='month')key=r[0].slice(0,7);
+        else if(gran==='week'){const dt=new Date(r[0]+'T00:00:00');key=isoLocal(new Date(dt.getTime()-((dt.getDay()+6)%7)*864e5))}
+        if(!buckets.has(key))buckets.set(key,{key,vals:[],end:r[0]});
+        const b=buckets.get(key);b.vals.push(r[idx]);b.end=r[0];
+      });
+      const pts=[...buckets.values()].map(b=>{
+        const value=metric==='flow'?b.vals.reduce((a,c)=>a+c,0):Math.round(b.vals.reduce((a,c)=>a+c,0)/b.vals.length);
+        let label,tipDate;
+        if(gran==='day'){label=b.key.slice(5).replace('-','/');tipDate=b.key}
+        else if(gran==='week'){label=b.key.slice(5).replace('-','/')+'起';tipDate=b.key.slice(5).replace('-','/')+'—'+b.end.slice(5).replace('-','/')}
+        else{label=b.key.replace('-','/');tipDate=b.key.slice(0,4)+'年'+(+b.key.slice(5,7))+'月'}
+        return {value,label,tipDate};
+      });
+      const cw0=$('#trendChart')?.clientWidth||760,W=Math.max(280,Math.min(760,cw0)),H=W<600?220:250,P={l:W<600?44:58,r:W<600?16:18,t:24,b:46},n=pts.length,maxV=Math.max(...pts.map(p=>p.value)),max=maxV*1.14,min=0,unit=metric==='dau'?'万人':'万元';
       const x=i=>n===1?P.l+(W-P.l-P.r)/2:P.l+i*((W-P.l-P.r)/(n-1)), y=v=>H-P.b-(v-min)/(max-min)*(H-P.t-P.b);
-      const path=rows.map((r,i)=>(i?'L':'M')+x(i).toFixed(1)+','+y(r[idx]).toFixed(1)).join(' ');
+      const path=pts.map((p,i)=>(i?'L':'M')+x(i).toFixed(1)+','+y(p.value).toFixed(1)).join(' ');
       const ticks=[0,.25,.5,.75,1].map(t=>{const val=max*(1-t),yy=P.t+t*(H-P.t-P.b);return `<line x1="${P.l}" x2="${W-P.r}" y1="${yy}" y2="${yy}" stroke="#e9edf2"/><text x="${P.l-10}" y="${yy+4}" text-anchor="end" font-size="10" fill="#8b95a5">${Math.round(val).toLocaleString()}</text>`}).join('');
-      const labelStep=Math.max(1,Math.ceil(n/9)),color='#e5484d',WD=['周日','周一','周二','周三','周四','周五','周六'],metricName=metric==='dau'?'DAU':'流水';
-      const dots=rows.map((r,i)=>{
-        const wd=WD[new Date(r[0]+'T00:00:00').getDay()];
-        return `${n<=62?`<circle cx="${x(i)}" cy="${y(r[idx])}" r="${n>7?3:4}" fill="#fff" stroke="${color}" stroke-width="2.5"/>`:''}${n<=7?`<text x="${x(i)}" y="${y(r[idx])-10}" text-anchor="middle" font-size="9.5" font-weight="700" fill="#384459">${formatNum(r[idx])}</text>`:''}${(i%labelStep===0||i===n-1)?`<text x="${x(i)}" y="${H-18}" text-anchor="middle" font-size="9" fill="#788496">${r[0].slice(5).replace('-','/')}</text>`:''}<circle class="chart-hit" data-date="${r[0]}（${wd}）" data-val="${formatNum(r[idx])}" cx="${x(i)}" cy="${y(r[idx])}" r="10" fill="transparent"/>`;
+      const labelStep=Math.max(1,Math.ceil(n/9)),color='#e5484d',WD=['周日','周一','周二','周三','周四','周五','周六'];
+      const aggTag=gran==='day'?'':(metric==='flow'?'（合计）':'（均值）'),metricName=(metric==='dau'?'DAU':'流水')+aggTag;
+      const dots=pts.map((p,i)=>{
+        const wd=gran==='day'?'（'+WD[new Date(p.tipDate+'T00:00:00').getDay()]+'）':'';
+        return `${n<=62?`<circle cx="${x(i)}" cy="${y(p.value)}" r="${n>7?3:4}" fill="#fff" stroke="${color}" stroke-width="2.5"/>`:''}${n<=7?`<text x="${x(i)}" y="${y(p.value)-10}" text-anchor="middle" font-size="9.5" font-weight="700" fill="#384459">${formatNum(p.value)}</text>`:''}${(i%labelStep===0||i===n-1)?`<text x="${x(i)}" y="${H-18}" text-anchor="middle" font-size="9" fill="#788496">${p.label}</text>`:''}<circle class="chart-hit" data-date="${p.tipDate}${wd}" data-val="${formatNum(p.value)}" cx="${x(i)}" cy="${y(p.value)}" r="10" fill="transparent"/>`;
       }).join('');
-      $('#trendChart').innerHTML=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${META[id].name}日级趋势图"><text x="${P.l}" y="15" font-size="10" fill="#98a39a">单位：${unit}</text>${ticks}<path d="${path}" fill="none" stroke="${color}" stroke-width="${n>62?2:3}" stroke-linecap="round" stroke-linejoin="round"/>${dots}</svg><div class="chart-tip hidden" id="chartTip"></div>`;
+      $('#trendChart').innerHTML=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${META[id].name}趋势图"><text x="${P.l}" y="15" font-size="10" fill="#98a39a">单位：${unit}${aggTag}</text>${ticks}<path d="${path}" fill="none" stroke="${color}" stroke-width="${n>62?2:3}" stroke-linecap="round" stroke-linejoin="round"/>${dots}</svg><div class="chart-tip hidden" id="chartTip"></div>`;
       const tip=$('#chartTip'),svgEl=$('#trendChart svg'),box=$('#trendChart');
       svgEl.addEventListener('mousemove',e=>{
         const c=e.target.closest('.chart-hit');
