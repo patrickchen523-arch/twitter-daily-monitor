@@ -7,23 +7,23 @@
 <style>
   * { box-sizing: border-box; }
   body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; margin: 0; background: #eef1f5; color: #1f2937; }
-  body.embed header { padding: 6px 24px; }
-  body.embed header h1 { display: none; }
-  body.embed header .sub { margin-top: 0; }
-  header { background: #2E5A37; color: #fff; padding: 14px 24px; }
+  /* 嵌入主站时不显示图例行（图例并入主站小节说明文字） */
+  body.embed header { display: none; }
+  header { background: transparent; color: #6b7a6f; padding: 6px 24px; }
   header h1 { margin: 0; font-size: 20px; font-weight: 600; }
   header .sub { margin-top: 4px; font-size: 13px; opacity: .92; }
   header .lg { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -1px; margin-right: 4px; }
   header .lg-wk { background: #fdeeda; border: 1px solid #f59e0b; }
   header .lg-td { background: #ef4444; width: 3px; }
   .toolbar { background: #fff; padding: 10px 24px; border-bottom: 1px solid #d9dee5; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  #gameChips, #mjChips { display: inline-flex; flex-wrap: wrap; gap: 8px; align-items: center; }
   .toolbar .lbl { font-size: 13px; color: #6b7280; font-weight: 600; margin-right: 2px; }
-  .chip { padding: 4px 12px; border-radius: 13px; background: #f3f4f6; font-size: 13px; cursor: pointer; user-select: none; border: 1px solid #e5e7eb; }
+  .chip { padding: 4px 12px; border-radius: 13px; background: #f3f4f6; font-size: 13px; cursor: pointer; user-select: none; border: 1px solid #e5e7eb; white-space: nowrap; }
   .chip:hover { background: #e5e7eb; }
-  .chip.on { background: #2E5A37; color: #fff; border-color: #2E5A37; }
+  .chip.on { background: #F0F7EF; color: #2E5A37; border-color: #D6E6D2; font-weight: 600; }
   .chip.mj-on { color: #fff; }
-  .btn { background: #2E5A37; color: #fff; border: none; padding: 5px 12px; border-radius: 5px; font-size: 13px; cursor: pointer; }
-  .btn.ghost { background: #fff; color: #2E5A37; border: 1px solid #2E5A37; }
+  .btn { background: #1F5A44; color: #fff; border: none; padding: 5px 12px; border-radius: 5px; font-size: 13px; cursor: pointer; }
+  .btn.ghost { background: #fff; color: #1F5A44; border: 1px solid #1F5A44; }
   .spacer { flex: 1; }
 
   .layout { display: flex; align-items: stretch; }
@@ -33,11 +33,11 @@
   /* date header */
   .dhead { position: sticky; top: 0; z-index: 30; background: #fff; }
   .dhead-row { display: flex; }
-  .dhead-row.months .mcell { font-size: 13px; font-weight: 600; color: #374151; border-left: 1px solid #c8cfd8; border-bottom: 1px solid #c8cfd8; text-align: center; padding: 4px 0; background: #e8ecf2; }
-  .dhead-row.days .dcell { font-size: 11px; color: #6b7280; border-left: 1px solid #eceff3; border-bottom: 2px solid #9aa5b1; text-align: center; padding: 3px 0; background: #fff; }
+  .dhead-row.months .mcell { font-size: 13px; font-weight: 600; color: #1F5A44; border-left: 1px solid #d3ded7; border-bottom: 1px solid #d3ded7; text-align: center; padding: 4px 0; background: #E8F0EB; }
+  .dhead-row.days .dcell { font-size: 11px; color: #6b7280; border-left: 1px solid #eceff3; border-bottom: 2px solid #9aa5b1; text-align: center; padding: 3px 0; background: #F4F6F5; }
   .dcell.wk { background: #fdeeda; color: #b45309; font-weight: 700; }
   .dcell.wkend { color: #c2410c; }
-  .corner { position: sticky; left: 0; z-index: 35; background: #2E5A37; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; border-right: 2px solid #1f4226; }
+  .corner { position: sticky; left: 0; z-index: 35; background: #F0F7EF; color: #2E5A37; font-weight: 600; font-size: 13px; display: flex; align-items: center; justify-content: center; border-right: 2px solid #D6E6D2; }
 
   /* group / band rows */
   .group { display: flex; border-bottom: 3px solid #8b96a5; }
@@ -61,14 +61,14 @@
               padding: 0 6px; margin-right: 6px; font-size: 11px; font-weight: 800; line-height: 18px; vertical-align: 1px;
               box-shadow: 0 1px 3px rgba(217,119,6,.55); letter-spacing: .5px; }
 
-  .mj-商业化 .major-label { background: #6f6d68; }
-  .mj-玩法内容 .major-label { background: #96695a; }
-  .mj-运营活动 .major-label { background: #7d7a64; }
+  .mj-商业化 .major-label { background: #A46312; }
+  .mj-玩法内容 .major-label { background: #2D6B91; }
+  .mj-运营活动 .major-label { background: #AE4C4C; }
   .mj-待核对 .major-label { background: #7f7f7f; }
 
-  .bar.mj-商业化 { background: #EFEEEC; border-color: #8d8b86; color: #3a3835; }
-  .bar.mj-玩法内容 { background: #F0DCD4; border-color: #b08d80; color: #6b4237; }
-  .bar.mj-运营活动 { background: #E9E8E0; border-color: #99957f; color: #4c4a3c; }
+  .bar.mj-商业化 { background: #F4E7D2; border-color: #A46312; color: #A46312; }
+  .bar.mj-玩法内容 { background: #DDEBF3; border-color: #2D6B91; color: #2D6B91; }
+  .bar.mj-运营活动 { background: #F2DEDE; border-color: #AE4C4C; color: #AE4C4C; }
   .bar.mj-待核对 { background: #e2e2e2; border-color: #7f7f7f; color: #404040; }
   .bar.uncode { border-style: dashed; border-width: 2px; }
 
@@ -92,12 +92,34 @@
   .modal .sec { font-size: 13px; font-weight: 700; color: #6b7280; margin: 12px 0 4px; border-top: 1px solid #f0f2f5; padding-top: 10px; }
   .modal .ct { white-space: pre-wrap; color: #374151; font-size: 13px; }
   .modal .collab { background: #fff7ed; border: 1px solid #f59e0b; border-radius: 5px; padding: 6px 9px; font-size: 13px; color: #92400e; font-weight: 600; }
+
+  /* 手机端适配：标签列变窄（JS同步）、字号缩小、图板允许横向滑动（分类/大类列sticky保持可见） */
+  @media (max-width: 680px) {
+    header { padding: 8px 12px; }
+    header .sub { font-size: 11px; margin-top: 0; }
+    .toolbar { padding: 10px 12px; gap: 9px 10px; }
+    .toolbar .lbl { font-size: 12px; }
+    .chip { padding: 5px 11px; font-size: 12px; }
+    .btn { padding: 4px 9px; font-size: 12px; }
+    .gantt-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .major-label { letter-spacing: 2px; font-size: 11px; }
+    .cat-label { font-size: 11px; padding: 0 3px; align-items: center; text-align: center; }
+    .cat-label .nm { font-size: 11px; line-height: 1.3; }
+    .bar { height: 22px; line-height: 20px; font-size: 11px; padding: 0 5px; }
+    .bar .clb { font-size: 9px; padding: 0 4px; margin-right: 4px; line-height: 15px; }
+    .dhead-row.days .dcell { font-size: 9px; padding: 2px 0; }
+    .dhead-row.months .mcell { font-size: 11px; padding: 3px 0; }
+    .corner { font-size: 10px; }
+    .weektag { font-size: 9px; padding: 0 3px; }
+    .today span { font-size: 9px; left: -12px; }
+    .modal { padding: 14px 16px; font-size: 13px; }
+  }
 </style>
 </head>
 <body>
 <header>
   <h1>手游本周活动甘特图（v5.1 三大类分类）</h1>
-  <div class="sub"><span class="lg lg-wk"></span>黄色底纹区域 = 本周数据周期 2026-07-27 ~ 08-02　　<span class="lg lg-td"></span>红色竖线 = 今天</div>
+  <div class="sub"><span class="lg lg-wk"></span>黄色底纹区域 = 本周数据周期 2026-07-27 ~ 08-02<br><span class="lg lg-td"></span>红色竖线 = 今天</div>
 </header>
 <div class="toolbar">
   <span class="lbl">游戏</span>
@@ -119,21 +141,31 @@ const GAMES = ["王者荣耀","和平精英","三角洲行动","金铲铲之战"
 const RANGE_START = '2026-07-27', RANGE_END = '2026-08-31';
 const WEEK_S = '2026-07-27', WEEK_E = '2026-08-02';
 let COL_W = 34;
-const MAJOR_W = 46, CAT_W = 132, LABEL_W = MAJOR_W + CAT_W;
+/* 手机端窄标签列，render时按当前宽度重算 */
+let MAJOR_W = 46, CAT_W = 132, LABEL_W = MAJOR_W + CAT_W;
+function measureLabels(){
+  const n = document.documentElement.clientWidth <= 680;
+  MAJOR_W = n ? 30 : 46; CAT_W = n ? 40 : 132; LABEL_W = MAJOR_W + CAT_W;
+}
 const BAR_H = 26, BAR_GAP = 4, BAND_PAD = 5;
 const DAY = 86400000;
 
 const MAJOR_ORDER = ['商业化', '玩法内容', '运营活动'];
-const MAJOR_COLORS = { '商业化': '#6f6d68', '玩法内容': '#96695a', '运营活动': '#7d7a64', '待核对': '#7f7f7f' };
+const MAJOR_COLORS = { '商业化': '#A46312', '玩法内容': '#2D6B91', '运营活动': '#AE4C4C', '待核对': '#7f7f7f' };
 const CAT_ORDER = {};
 ['R1','R2','R3','R4','R5','R6','R7'].forEach((c,i)=>CAT_ORDER[c]=i);
 ['C1','C2','C3','C4','C5','C6'].forEach((c,i)=>CAT_ORDER['X'+c]=i);
 ['A1','A2','A3','A4','A5','A6'].forEach((c,i)=>CAT_ORDER['Y'+c]=i);
 
-const d0 = new Date(RANGE_START + 'T00:00:00');
-const d1 = new Date(RANGE_END + 'T00:00:00');
-const NDAYS = Math.round((d1 - d0) / DAY) + 1;
-let TRACK_W = NDAYS * COL_W;
+let d0, d1, NDAYS, TRACK_W;
+/* 全端均显示完整区间；手机端列宽固定、图板横向滑动查看后续日期 */
+function setRange(){
+  d0 = new Date(RANGE_START + 'T00:00:00');
+  d1 = new Date(RANGE_END + 'T00:00:00');
+  NDAYS = Math.round((d1 - d0) / DAY) + 1;
+  TRACK_W = NDAYS * COL_W;
+}
+setRange();
 
 function parse(s){ return new Date(s + 'T00:00:00'); }
 function dayIdx(s){ return Math.round((parse(s) - d0) / DAY); }
@@ -149,7 +181,7 @@ function buildHead(){
   const mrow = document.createElement('div'); mrow.className = 'dhead-row months';
   const corner1 = document.createElement('div'); corner1.className = 'corner';
   corner1.style.cssText = 'width:' + LABEL_W + 'px;min-width:' + LABEL_W + 'px;grid-row:span 2;';
-  corner1.textContent = '分类 / 日期';
+  corner1.textContent = document.documentElement.clientWidth <= 680 ? '分类/日期' : '分类 / 日期';
   corner1.style.gridRow = 'span 2';
   mrow.appendChild(corner1);
   // months spanning
@@ -170,7 +202,9 @@ function buildHead(){
   const drow = document.createElement('div'); drow.className = 'dhead-row days';
   const corner2 = document.createElement('div'); corner2.className = 'corner';
   corner2.style.cssText = 'width:' + LABEL_W + 'px;min-width:' + LABEL_W + 'px;font-size:11px;';
-  corner2.textContent = RANGE_START + ' ~ ' + RANGE_END;
+  corner2.textContent = document.documentElement.clientWidth <= 680
+    ? (d0.getMonth()+1) + '/' + d0.getDate() + ' ~ ' + (d1.getMonth()+1) + '/' + d1.getDate()
+    : RANGE_START + ' ~ ' + RANGE_END;
   drow.appendChild(corner2);
   for (let i = 0; i < NDAYS; i++) {
     const d = new Date(d0.getTime() + i * DAY);
@@ -179,7 +213,10 @@ function buildHead(){
     c.style.width = COL_W + 'px';
     if (s >= WEEK_S && s <= WEEK_E) c.classList.add('wk');
     if (d.getDay() === 0 || d.getDay() === 6) c.classList.add('wkend');
-    c.textContent = (d.getMonth()+1) + '/' + d.getDate();
+    /* 手机端列宽足够：每天显示日号，月份看上行月标题 */
+    c.textContent = document.documentElement.clientWidth <= 680
+      ? String(d.getDate())
+      : (d.getMonth()+1) + '/' + d.getDate();
     drow.appendChild(c);
   }
   h.appendChild(drow);
@@ -202,20 +239,22 @@ function laneCount(items){
 }
 
 function render(){
-  // fit whole board: no scrollbars
-  COL_W = Math.max(10, Math.floor((document.documentElement.clientWidth - LABEL_W - 4) / NDAYS));
+  measureLabels();
+  const narrow = document.documentElement.clientWidth <= 680;
+  setRange();
+  // 桌面端按宽度铺满；手机端列宽固定44px，图板横向滑动（初始停留在本周）
+  COL_W = narrow ? 44 : Math.max(10, Math.floor((document.documentElement.clientWidth - LABEL_W - 4) / NDAYS));
   TRACK_W = NDAYS * COL_W;
-  const inner = document.getElementById('inner');
-  inner.innerHTML = '';
-  inner.style.width = LABEL_W + TRACK_W + 'px';
-  inner.appendChild(buildHead());
-
   const visible = DATA.filter(r => state.games.has(r.game) && state.majors.has(r.major));
   visible.forEach(r => {
     r._si = Math.max(0, dayIdx(r.start));
     r._ei = r.end === '长期' ? NDAYS - 1 : Math.min(NDAYS - 1, dayIdx(r.end));
     if (r._ei < r._si) r._ei = r._si;
   });
+  const inner = document.getElementById('inner');
+  inner.innerHTML = '';
+  inner.style.width = LABEL_W + TRACK_W + 'px';
+  inner.appendChild(buildHead());
 
   MAJOR_ORDER.forEach(major => {
     if (!state.majors.has(major)) return;
@@ -316,11 +355,17 @@ function selectBar(id){
   mask.classList.add('show');
   // 弹窗定位到所点甘特条下方；空间不足则放到上方
   const modal = document.getElementById('modal');
-  const rect = el.getBoundingClientRect();
+  const rect = el ? el.getBoundingClientRect() : null;
   const docW = document.documentElement.clientWidth;
   const docH = document.documentElement.scrollHeight;
-  const barTop = rect.top + window.scrollY, barBottom = rect.bottom + window.scrollY;
   const mw = modal.offsetWidth, mh = modal.offsetHeight;
+  if (!rect) {
+    // 手机端卡片列表无甘特条元素，弹窗定位于当前视口上部居中
+    modal.style.left = Math.max(8, (docW - mw) / 2) + 'px';
+    modal.style.top = (window.scrollY + 60) + 'px';
+    return;
+  }
+  const barTop = rect.top + window.scrollY, barBottom = rect.bottom + window.scrollY;
   let left = rect.left + window.scrollX;
   left = Math.max(8, Math.min(left, docW - mw - 8));
   let top = barBottom + 6;
