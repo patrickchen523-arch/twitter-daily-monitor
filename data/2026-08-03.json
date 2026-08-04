@@ -3,7 +3,7 @@
  "meta": {
   "raw_count": 196,
   "filtered_count": 161,
-  "selected_count": 12,
+  "selected_count": 10,
   "crawl_time": "2026-08-03 11:30"
  },
  "lede": "Tiny Hero Courier：移轴微缩僵尸末日里送快递，解谜开路别摔包裹——22万浏览\n121个agent分工24小时写出4.4万行AoE克隆：多agent协作的体量新纪录\nXbox欧美英全线涨价34-49%：Series X最贵差200欧元，内存短缺的真实成本",
@@ -35,11 +35,11 @@
   },
   {
    "id": "indie",
-   "text": "Polylithic：10人合作石器时代生存8月25日正式版，EA近三年毕业\nTiny Hero Courier：移轴微缩僵尸末日送快递，22万浏览\nLuminous Nights：单人开发4年的'王国之心风'ARPG，一千零一夜世界观"
+   "text": "Polylithic：10人合作石器时代生存8月25日正式版，EA近三年毕业\nTiny Hero Courier：移轴微缩僵尸末日送快递，22万浏览"
   },
   {
    "id": "tools",
-   "text": "Polyfork海盗湾3D套件：每个模型都是程序，agent可经MCP直接取用\nThree.js WebGPU僵尸控制器：RVO2+A*+主动布娃娃全在浏览器跑"
+   "text": "Polyfork海盗湾3D套件：每个模型都是程序，agent可经MCP直接取用"
   }
  ],
  "sections": [
@@ -326,50 +326,6 @@
       "pcu": "暂未发售",
       "estimated_sales": "暂无（未发售）"
      }
-    },
-    {
-     "idx": "新游推文 03",
-     "source": "X · KOL推荐",
-     "tags": [
-      "单人开发",
-      "王国之心风",
-      "ARPG"
-     ],
-     "title": "Luminous Nights：单人开发4年的「王国之心风」ARPG，一千零一夜世界观",
-     "en_title": "A Solo Dev is making a Kingdom Hearst inspired game called \"Luminous Nights\"!",
-     "full_text": "A Solo Dev is making a Kingdom Hearst inspired game called \"Luminous Nights\"!\n\n- PS2 era Action RPG Adventure\n- Kingdom Hearts inspired game\n- Mystical Arabian Nights World\n- Traverse a city shrouded in darkness\n- Story blending bright and dark emotional themes\n- Also inspired by Final Fantasy, Undertale and Persona\n- Made by a solo developer\n- Currently in development https://t.co/HINgu3X2hV",
-     "author": "Genki_JPN",
-     "date": "2026-08-02",
-     "likes": 852,
-     "views": 55473,
-     "link": "https://x.com/Genki_JPN/status/2083846868526579785",
-     "media": {
-      "type": "video",
-      "url": "https://pbs.twimg.com/amplify_video_thumb/2082990473191587840/img/IiL5CTRRxNqvWaJh.jpg",
-      "video_url": "https://x.com/Genki_JPN/status/2083846868526579785/video/1"
-     },
-     "game_ref": "Luminous Nights",
-     "summary": "Genki推荐单人开发者Yahya Danboos制作中的《Luminous Nights》：PS2时代风格的动作RPG，王国之心启发×一千零一夜世界观，探索被黑暗笼罩的神秘城市Noor、集结伙伴对抗面具王。开发已超4年，同时受FF、Undertale、Persona影响，预计2027年发售。GameSpark日本站报道后登上站内热度榜首。",
-     "analysis": "",
-     "recommendation": "Luminous Nights：单人4年的王国之心风ARPG，一千零一夜×面具王",
-     "enrichment": {
-      "game_name": "Luminous Nights",
-      "genre": "动作RPG / 3D平台",
-      "developer": "Yahya Danboos（单人开发者）",
-      "platforms": [
-       "Steam"
-      ],
-      "price": "未公布",
-      "release_date": "2027年",
-      "steam_rating": "未发售",
-      "steam_url": "https://store.steampowered.com/app/1949610/Luminous_Nights/",
-      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1949610/4088d99f0f4f917bfde9ecbb1e79a594329f0297/header.jpg?t=1785465402",
-      "youtube_video": null,
-      "description": "【核心玩法】「HeartsLike」动作RPG：快节奏近战+强力魔法，解锁新能力与武器，在神秘城市Noor中3D平台跳跃探索，集结令人难忘的伙伴们对抗面具王（Masked King）。\n\n【题材风格】王国之心启发×一千零一夜的阿拉伯夜谈世界观，明暗交织的情感主题；同时受FF、Undertale、Persona影响，PS2时代的动作冒险质感。\n\n【开发背景】Yahya Danboos单人开发超4年，预计2027年发售。日本KOL推荐推获5.5万浏览，GameSpark报道后登上站内热度榜首。\n\n【优势】题材组合稀缺（阿拉伯夜谈×KH风在日系受众中无竞品）；单人长期开发的完成度已具卖相；日本市场反响热烈。【不足】2027年发售仍远；单人产能对ARPG体量是最大风险。\n\n【综合】单人4年的情怀型ARPG，日本受众的热烈反响是最强信号，2027年值得长期跟踪。",
-      "why_notable": "单人4年开发的KH风阿拉伯夜谈ARPG，日本热度榜登顶",
-      "pcu": "暂未发售",
-      "estimated_sales": "暂无（未发售）"
-     }
     }
    ]
   },
@@ -404,34 +360,9 @@
      "analysis": "资产库的竞争维度变了：从「模型多好看」到「agent能不能直接读懂和改造」。参数化（502个旋钮）+MCP接口意味着AI可以自主完成「找素材→改变体→搭场景」的闭环——资产正在从文件变成API。这与Unity的MCP/CLI是同一场战争的资产侧。",
      "recommendation": "Polyfork海盗湾3D套件：模型即程序+502旋钮，agent经MCP直接取用",
      "featured": true
-    },
-    {
-     "idx": "开发工具 02",
-     "source": "X · 技术演示",
-     "tags": [
-      "Three.js",
-      "WebGPU",
-      "群体模拟"
-     ],
-     "title": "Three.js WebGPU僵尸控制器：RVO2+A*+主动布娃娃全在浏览器跑",
-     "en_title": "Got the RVO2 + A* + Active Ragdoll Zombie controller and some shooting into the game finally. Three.js WebGPU",
-     "full_text": "Got the RVO2 + A* + Active Ragdoll Zombie controller and some shooting into the game finally.\n\nThree.js WebGPU https://t.co/Z3S07RBn8Z",
-     "author": "TRA4669",
-     "date": "2026-08-02",
-     "likes": 493,
-     "views": 44460,
-     "link": "https://x.com/TRA4669/status/2083734885122937027",
-     "media": {
-      "type": "video",
-      "url": "https://pbs.twimg.com/amplify_video_thumb/2083733915764764672/img/JDCUgOO3RfQYz4IA.jpg",
-      "video_url": "https://x.com/TRA4669/status/2083734885122937027/video/1"
-     },
-     "summary": "开发者TheRearAdmiral展示其Three.js WebGPU僵尸游戏进度：RVO2群体避障+A*寻路+主动布娃娃（Active Ragdoll）的僵尸控制器与射击系统已整合进游戏。4.4万浏览、493赞。",
-     "analysis": "浏览器游戏的仿真密度又上了一个台阶：群体避障（RVO2）+主动布娃娃此前是原生引擎的保留项目，如今在WebGPU里跑通。对做丧尸潮、群体AI的团队，Web路线的技术债正在快速清零。",
-     "recommendation": "Three.js WebGPU僵尸控制器：RVO2+A*+主动布娃娃全在浏览器跑"
     }
    ]
   }
  ],
- "daily_summary": "**Xbox涨价34-49%：内存危机落到玩家账单上**\nXbox欧美英全线涨价：英国Series X光盘版£500→£670、Series S最高+48.5%，欧洲Series X贵200欧元——「内存短缺的真实成本」首次完整显现，而就在同一周Xbox刚交出营收-7%、硬件-29%的财报。另一边，Project Zomboid以121,603同接创13年历史新高，「慢而深」的长线运营成了稀缺资产；RO3在ChinaJoy试玩获「究极重制」评价，国服8月27日首测；Meccha Chameleon则给所有UGC游戏上了一课：自制地图被植马+Discord同日被黑，月销1500万后的第一份安全账单。\n\n**多agent协作的体量新纪录**\nAlan Daitch用121个agent分工24小时写出4.4万行、可浏览器直玩的AoE克隆（1300万token）——体量瓶颈正从模型能力转向编排能力；另有开发者用「GPT出图→Tripo转3D→Codex写码」的三段管线2小时做出3D人体解剖应用。日本开发者RPG-Cobo的翻车实录同样珍贵：AI生成的地图全是平庸货，「会不会用」决定产出下限。资产侧，Polyfork让3D套件变成agent可经MCP直接取用的API；Three.js WebGPU跑通RVO2+主动布娃娃僵尸潮。\n\n**独游：长线毕业与题材新鲜度**\nPolylithic近三年EA将于8月25日转正，10人合作石器时代生存；Tiny Hero Courier以移轴微缩僵尸快递拿下22万浏览；单人开发4年的「王国之心风×一千零一夜」ARPG《Luminous Nights》登顶日媒热度榜。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+ "daily_summary": "**Xbox涨价34-49%：内存危机落到玩家账单上**\nXbox欧美英全线涨价：英国Series X光盘版£500→£670、Series S最高+48.5%，欧洲Series X贵200欧元——「内存短缺的真实成本」首次完整显现，而就在同一周Xbox刚交出营收-7%、硬件-29%的财报。另一边，Project Zomboid以121,603同接创13年历史新高，「慢而深」的长线运营成了稀缺资产；RO3在ChinaJoy试玩获「究极重制」评价，国服8月27日首测；Meccha Chameleon则给所有UGC游戏上了一课：自制地图被植马+Discord同日被黑，月销1500万后的第一份安全账单。\n\n**多agent协作的体量新纪录**\nAlan Daitch用121个agent分工24小时写出4.4万行、可浏览器直玩的AoE克隆（1300万token）——体量瓶颈正从模型能力转向编排能力；另有开发者用「GPT出图→Tripo转3D→Codex写码」的三段管线2小时做出3D人体解剖应用。日本开发者RPG-Cobo的翻车实录同样珍贵：AI生成的地图全是平庸货，「会不会用」决定产出下限。资产侧，Polyfork让3D套件变成agent可经MCP直接取用的API。\n\n**独游：长线毕业与题材新鲜度**\nPolylithic近三年EA将于8月25日转正，10人合作石器时代生存；Tiny Hero Courier以移轴微缩僵尸快递拿下22万浏览。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
 }
