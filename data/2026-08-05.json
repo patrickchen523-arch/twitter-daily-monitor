@@ -1,0 +1,465 @@
+{
+ "date": "2026-08-05",
+ "meta": {
+  "raw_count": 224,
+  "filtered_count": 183,
+  "selected_count": 12,
+  "crawl_time": "2026-08-05 11:30"
+ },
+ "lede": "hop.earth：浏览器实时生成真实地球，开到哪生成到哪还能多人竞速——158万浏览\n$200玩笑游戏卖出$138万却被退款99.9%：开发者到手仅$2,045\nMollick实测Codex全桌面接管：Blender+Unity直出水獭机甲游戏",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 2,
+   "hook": "hop.earth：浏览器实时生成真实地球，还能多人竞速——158万浏览"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "$200玩笑游戏卖出$138万、退款99.9%：开发者到手仅$2,045"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Mollick实测Codex全桌面接管：Blender+Unity直出水獭机甲"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Mollick实测Codex全桌面接管：Blender+Unity直出水獭机甲游戏\nCodex双技能链：ImageGen出模、img2threejs交互化，成本不到1%周额度\nLevie：开放权重逼近前沿「一天一发」，闭源与高价推理都守不久"
+  },
+  {
+   "id": "industry",
+   "text": "$200玩笑游戏卖出$138万却被退款99.9%：开发者到手仅$2,045\nXbox 360游戏泄露将登PC+Helix：开发者可自定价、自选是否进Game Pass\nFIFA世界杯游戏发售两月，开发商Refractor裁员85%\n技嘉重推AM4主板+推荐5800X3D：DDR5太贵逼出的「平台回潮」"
+  },
+  {
+   "id": "indie",
+   "text": "Moo Who?：学动物叫才能活的8人潜行对战，麦克风即生命线——8/21 EA\nOrc Problem首周$100万/12.8万份：4个月开发周期的回报率实证\nhop.earth：浏览器实时生成真实地球，还能多人竞速——158万浏览\nBig Walk首日：7家媒体10/10+Steam峰值46,409，合作品类新标杆落地"
+  },
+  {
+   "id": "tools",
+   "text": "npm蠕虫Shai-Hulud回归：868包/20亿月装机，CI凭证应立即轮换"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Ethan Mollick · 实测",
+     "tags": [
+      "Codex",
+      "agent",
+      "游戏原型"
+     ],
+     "title": "Mollick让Codex接管整台电脑：调用Blender与Unity做出水獭机甲游戏",
+     "en_title": "Sure, 3js in webpages are neat but, Codex: \"you have access to Blender & Unity. I want you to make a new game, with full assets, in which you play as an otter who can get into mech suits shaped like animals and that are critical to game play\" — Took over my computer & gave me this",
+     "full_text": "Sure, 3js in webpages are neat but, Codex: \"you have access to Blender &amp; Unity. I want you to make a new game, with full assets, in which you play as an otter who can get into mech suits shaped like animals and that are critical to game play\"\n\nTook over my computer &amp; gave me this https://t.co/SjTTmOUPNt",
+     "author": "Ethan Mollick",
+     "date": "2026-08-04",
+     "likes": 659,
+     "views": 45473,
+     "link": "https://x.com/emollick/status/2084459212281962833",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2084458737964638208/img/JoQvee6QIcok_wUp.jpg",
+      "video_url": "https://x.com/emollick/status/2084459212281962833/video/1"
+     },
+     "summary": "沃顿教授Ethan Mollick给Codex下了一条指令：「你可以使用Blender和Unity，做一款扮演水獭、能穿上动物造型机甲、且机甲对玩法至关重要的新游戏，带上完整资产」。Codex随即接管他的电脑并交付了可玩成果。推文获4.5万浏览。",
+     "recommendation": "Mollick实测Codex全桌面接管：Blender+Unity直出水獭机甲游戏",
+     "analysis": "网页里跑three.js与「接管桌面专业管线」是两个时代——Blender建模、Unity工程、资产导出的全链路被agent串起来，意味着AI的生产边界从浏览器demo进入真实工程文件。对还在评估AI管线落地的团队，这是成本最低的观察样本。",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Nicolas Zullo · 工作流",
+     "tags": [
+      "Codex",
+      "skill",
+      "3D管线"
+     ],
+     "title": "Codex技能链工作流：ImageGen出低模、img2threejs秒变可交互3D，不到1%周额度",
+     "en_title": "A small codex workflow that does WONDER, at almost no cost — Ask GPT 5.6 Luna (Max) to use the ImageGen skill for a 3D low-poly object. Then to use the img2threejs skill.",
+     "full_text": "A small codex workflow that does WONDER, at almost no cost\n\nAsk GPT 5.6 Luna (Max) to use the ImageGen skill for a 3D low-poly object.\n\nThen to use the img2threejs skill.\n\nTada. I didn't even spend 1% of my weekly tokens for this. https://t.co/WmNmrTBaXV",
+     "author": "Nicolas Zullo",
+     "date": "2026-08-02",
+     "likes": 2338,
+     "views": 254858,
+     "link": "https://x.com/NicolasZu/status/2084007222770573341",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HOvc3wIXsAA1ATy.jpg"
+     },
+     "summary": "Nicolas Zullo展示一套Codex技能链工作流：先让GPT-5.6 Luna调用ImageGen技能生成3D低多边形物件，再调用img2threejs技能变成可交互网页3D，全程不到他每周token额度的1%；后续还追加了带动画的矿机版本。推文获25.5万浏览。",
+     "recommendation": "Codex双技能链：ImageGen出模、img2threejs交互化，成本不到1%周额度——25.5万浏览",
+     "analysis": "技能化让「图生3D」从手动多步变成一句指令里的两次调用，资产管线的人力入口继续后移。更值得注意的是成本口径——「不到1%周额度」意味着生成成本已可忽略，瓶颈只剩审美与玩法设计。"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Aaron Levie · 评论",
+     "tags": [
+      "开放权重",
+      "行业观点"
+     ],
+     "title": "Box CEO Levie：接近前沿的开放权重「一天一发」，闭源模型守不住太久",
+     "en_title": "Another day another near frontier open weights model release. If you had gone back even 3-6 months and given everyone access to what we're now seeing in open weights even as a closed model, their minds would be completely blown.",
+     "full_text": "Another day another near frontier open weights model release. \n\nIf you had gone back even 3-6 months and given everyone access to what we’re now seeing in open weights even as a closed model, their minds would be completely blown. The fact that this is possible changes the calculations in the industry meaningfully. \n\nIt means that models can’t reasonably remain behind closed doors for too long since there will be open weights models as a counter balance. It means AI inference will have to get closer and closer to the cost of the underlying infrastructure since you can always run open models yourself. \n\nIt means that you get models that can develop in a range of industries for specific domain problems and not be held back by large training runs, which means more breakthrouhs in more spaces. And it means that more economics can spread between the model layer applied AI layer over time.\n\nIncredibly exciting times.",
+     "author": "Aaron Levie",
+     "date": "2026-08-04",
+     "likes": 288,
+     "views": 75111,
+     "link": "https://x.com/levie/status/2084510498519933318",
+     "media": null,
+     "summary": "Box CEO Aaron Levie评论称，接近前沿水平的开放权重模型正在「一天一发」地发布：回到三五个月前，这些能力即便作为闭源模型出现也会震撼业界。他认为这将改变行业的基本计算——模型无法长期保持闭源，AI推理价格将持续下降。推文获7.5万浏览。",
+     "recommendation": "Levie：开放权重逼近前沿「一天一发」，闭源与高价推理都守不久",
+     "analysis": "开放权重的「前沿追尾」对游戏团队是直接利好：私有部署、微调与数据合规的成本曲线都会随之下移。Levie的判断可当作企业侧采购与自建策略的风向标。"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Dexerto · 新闻",
+     "tags": [
+      "Steam",
+      "退款",
+      "定价实验"
+     ],
+     "title": "玩笑游戏标价$200卖出138万美元，开发者只拿到2045美元：99.9%被退款",
+     "en_title": "A teenage game dev only received $2,000 from a joke game he made, despite it generating $1.3 million in Steam sales — More than 6,700 people bought the game before refunding it within Steam's two-hour window",
+     "full_text": "A teenage game dev only received $2,000 from a joke game he made, despite it generating $1.3 million in Steam sales\n\nMore than 6,700 people bought the game before refunding it within Steam's two-hour window https://t.co/3oi59HrEpo",
+     "author": "Dexerto",
+     "date": "2026-08-04",
+     "likes": 35431,
+     "views": 3125748,
+     "link": "https://x.com/Dexerto/status/2084583193957568963",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HO3tXXlXsAA-NOW.jpg"
+     },
+     "summary": "18岁开发者Michael Major的玩笑游戏《This Game Costs $200》（按Steam上限定价$199.99）累计售出6,717份、毛收入138万美元——但6,707份在两小时窗口内被退款（99.9%），他最终到手2,045美元。他向地方媒体透露大部分订单来自中国，并担心被用于洗钱。推文获312万浏览。",
+     "recommendation": "$200玩笑游戏卖出$138万却被退款99.9%：开发者到手仅$2,045——312万浏览",
+     "analysis": "Steam两小时退款机制在这类「行为艺术游戏」上成了全额体验券：话题度拉满、收入归零。对玩定价实验与猎奇营销的团队是现成教训——退款率才是这类产品的真实转化率；异常集中的区域订单也提醒厂商关注支付侧风控。",
+     "featured": true,
+     "game_ref": "This Game Costs 200 Dollars",
+     "enrichment": {
+      "game_name": "This Game Costs 200 Dollars",
+      "genre": "步行模拟 / 行为艺术",
+      "developer": "Stolen Valor Studios（Michael Major个人，18岁）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "$199.99",
+      "release_date": "已发售 · 2026年1月30日",
+      "steam_rating": "仅1条评价",
+      "steam_url": "https://store.steampowered.com/app/4323380/This_Game_Costs_200_Dollars/",
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【核心玩法】一款自嘲为「诈骗的集大成者」的步行模拟：在名为Schizopia的世界里，地图散落着啤酒箱与香烟，开发者称「这是一场心理体验，我试图说服你这游戏真的值200美元」。\n\n【事件】开发者把价格定到Steam上限$199.99（前作为《This Game Costs $10》），本以为无人购买，结果累计售出6,717份、毛收入138万美元——但99.9%的订单在Steam两小时退款窗口内被退回，最终到手2,045美元。他透露大部分订单来自中国，并对媒体表示「听说过高价游戏被用于洗钱，我不知道，我可能已经在什么名单上了」。\n\n【综合】病毒话题与真实收入的极端反差样本：当商品本身是个玩笑，退款机制就会把所有好奇心变成零元体验。",
+      "why_notable": "99.9%退款率的行为艺术：Steam两小时退款机制下，话题性定价实验的真实转化率",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": "售出6,717份、退款6,707份（毛收入$138万→到手$2,045）"
+     }
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 泄露文件",
+     "tags": [
+      "Xbox",
+      "向下兼容",
+      "Project Helix"
+     ],
+     "title": "泄露文件：Xbox 360游戏将登陆PC与Project Helix，2027-2028逐步铺开",
+     "en_title": "Microsoft is working on making Xbox 360 games playable on PC, leaked document reveals",
+     "full_text": "Microsoft is working on making Xbox 360 games playable on PC, leaked document reveals\n\nhttps://t.co/UW4VzARXXo https://t.co/9C5fgBcAop",
+     "author": "Eurogamer",
+     "date": "2026-08-04",
+     "likes": 14,
+     "views": 9037,
+     "link": "https://x.com/eurogamer/status/2084571013682249835",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HO3hbm_bkAAPFC2.jpg"
+     },
+     "summary": "The Verge获取的微软内部文件显示：开发者将能把Xbox 360游戏带到「Xbox PC」（任何运行Xbox应用的PC，含ROG Xbox Ally掌机）与次世代Project Helix，自行设定售价并决定是否加入Game Pass，2027-2028年逐步铺开。初代Xbox游戏上PC瞄准今年10月；光盘数字化功能（Xbox One/Series盘换数字版、光盘可随交易转移授权）原定上月beta本月正式，现已推迟。",
+     "recommendation": "Xbox 360游戏泄露将登PC+Helix：开发者可自定价、自选是否进Game Pass",
+     "analysis": "索尼停产实体盘、微软把三代游戏库搬上PC——主机竞争的胜负手正从硬件转向「游戏库的所有权与兼容性」。对老游戏重制与长尾发行，这是一个可预期的新渠道。"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 裁员",
+     "tags": [
+      "裁员",
+      "Netflix",
+      "外包模式"
+     ],
+     "title": "FIFA世界杯手游发售不到两月，开发商Refractor裁员85%：下一项目资金被撤",
+     "en_title": "The developer behind Fifa World Cup - which launched less than two months ago - has laid off 85% of its staff",
+     "full_text": "The developer behind Fifa World Cup - which launched less than two months ago - has laid off 85% of its staff\n\nhttps://t.co/JhVrWAxFAU https://t.co/ZitXxGQ3G4",
+     "author": "Eurogamer",
+     "date": "2026-08-04",
+     "likes": 3,
+     "views": 4600,
+     "link": "https://x.com/eurogamer/status/2084631737477251286",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HO4ZgjyWAAEtMWY.png"
+     },
+     "summary": "Netflix独占的《Fifa World Cup: Launch Edition》6月11日发售，其开发商Refractor Games本周裁员约85%（约80人）。员工在LinkedIn透露：发行方Delphi Interactive在发售后「拔了插头」，下一项目资金被取消。工作室负责人Nathan Burba已向GamesBeat证实裁员比例。",
+     "recommendation": "FIFA世界杯游戏发售两月，开发商Refractor裁员85%——资金断供的空窗期",
+     "analysis": "「发售即裁员」剧本再添一例：项目制团队在产品交付与下一笔资金之间的空窗期最脆弱。对依赖发行方资金的中小型工作室，合同里的交付后保障条款比任何时候都重要。",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "PC Gamer · 硬件",
+     "tags": [
+      "内存危机",
+      "技嘉",
+      "AMD"
+     ],
+     "title": "技嘉2026年重推AM4主板B550 X系列、推荐四年前CPU：内存危机的真实注脚",
+     "en_title": "Gigabyte is launching B550 AM4 boards in 2026 because things are that bad",
+     "full_text": "Gigabyte is launching B550 AM4 boards in 2026 because things are that bad https://t.co/XV1Eqmn5pM",
+     "author": "PC Gamer",
+     "date": "2026-08-04",
+     "likes": 49,
+     "views": 22019,
+     "link": "https://x.com/pcgamer/status/2084594260612141389",
+     "media": null,
+     "summary": "技嘉发布B550 X系列——号称「AM4平台最强刷新」的新主板，搭配AMD今年复产的2022年老U Ryzen 7 5800X3D。原因无他：AM5平台所需的DDR5太贵，而DDR4也在涨。PC Gamer直言「内存危机真的有这么糟」。",
+     "recommendation": "技嘉重推AM4主板+推荐5800X3D：DDR5太贵逼出的「平台回潮」",
+     "analysis": "从三星「短缺到2028」的官方指引，到Xbox涨价，再到主板厂回潮四年前的平台——消费级硬件正在用「配置倒退」消化AI数据中心的产能挤压。PC玩家配置曲线下移，会反向影响游戏的最低配置与画质基准设计。"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "AUTOMATON · 新作公布",
+     "tags": [
+      "社交潜行",
+      "派对对战",
+      "麦克风"
+     ],
+     "title": "Moo Who?：8人动物叫声伪装对战，不对麦克风「学牛叫」就会暴露——8月21日EA",
+     "en_title": "【ニュース】最大8人“動物鳴き真似”なりすましゲーム『Moo Who?』8月21日に早期アクセス配信へ。鳴かなくてもバレる、マイク必須の命がけ鳴き真似ステルス対戦",
+     "full_text": "【ニュース】最大8人“動物鳴き真似”なりすましゲーム『Moo Who?』8月21日に早期アクセス配信へ。鳴かなくてもバレる、マイク必須の命がけ鳴き真似ステルス対戦\nhttps://t.co/NAQ2NCnsDV https://t.co/ymTXtczDBx",
+     "author": "AUTOMATON（オートマトン）",
+     "date": "2026-08-04",
+     "likes": 1884,
+     "views": 232437,
+     "link": "https://x.com/AUTOMATONJapan/status/2084558898024112139",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2084558869867720704/img/j3nNbHtCm0FAob-p.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2084558898024112139/video/1"
+     },
+     "summary": "SAT Productions宣布社交潜行对战《Moo Who?》8月21日Steam开启EA：最多8人分饰动物与猎人，动物玩家混入农场NPC群中求生；动物需预录叫声供NPC播放，苍蝇缠身时必须真的对着麦克风学动物叫才能驱赶、超时则暴露位置。猎人弹药有限，打错NPC就浪费子弹。支持日语。推文获23.2万浏览。",
+     "recommendation": "Moo Who?：学动物叫才能活的8人潜行对战，麦克风即生命线——8/21 EA",
+     "featured": true,
+     "game_ref": "Moo Who?",
+     "enrichment": {
+      "game_name": "Moo Who?",
+      "genre": "社交潜行 / 派对对战 / 非对称",
+      "developer": "SAT Productions",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": "2026年8月21日（EA）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4948000/Moo_Who/",
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【核心玩法】最多8人的非对称潜行对战：动物玩家（牛、山羊、猪、鸡、鸭）混入农场里的动物NPC中躲藏，猎人要在限时内找出并击毙所有动物。猎人弹药有限，误射NPC就是浪费。\n\n【麦克风机制】动物玩家的叫声需预先录音，由NPC动物在场上播放，猎人循声辨位；而当苍蝇缠上动物玩家时，必须真的对着麦克风学动物叫才能驱赶——不叫或叫得太迟，位置就会暴露给猎人。「不叫会死，叫错也会死」的声控生死局。\n\n【优势】把「麦克风输入」从恐怖游戏（QUIET）移植到非对称对抗，是本周第二个麦克风必玩的联机设计；题材天然适配直播切片；支持日语。\n【不足】EA阶段内容量未知；叫声伪装的判定精度与延迟是体验关键；派对游戏长线留存依赖社交裂变。\n\n【综合】继《QUIET》之后，「真实声音作为玩法输入」正在成为合作/对抗品类的新机制富矿——Moo Who?把它做成了竞技规则，直播效果可期。",
+      "why_notable": "一周内第二款「麦克风必玩」联机游戏：真实声音作为玩法输入正成为新机制富矿",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无数据"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Mumpitz Games · 销量更新",
+     "tags": [
+      "增量塔防",
+      "销量数据",
+      "小团队"
+     ],
+     "title": "Orc Problem发售一周毛收入破100万美元、卖出12.8万份：「小游戏快开发」再验证",
+     "en_title": "An update of our sales and revenue exactly 1 week after releasing our 4 month game. Over $1,000,000 in gross revenue and nearly 128,000 sales. Feedback is still very positive with 87% from over 2,000 reviews.",
+     "full_text": "An update of our sales and revenue exactly 1 week after releasing our 4 month game.\nOver $1,000,000 in gross revenue and nearly 128,000 sales.\nFeedback is still very positive with 87% from over 2,000 reviews. We will continue to improve the game. https://t.co/ZcftVxReMw",
+     "author": "Mumpitz Games | Sir We Have an Orc Problem OUT NOW",
+     "date": "2026-08-04",
+     "likes": 282,
+     "views": 12475,
+     "link": "https://x.com/mumpitzgames/status/2084628779066921438",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HO4UyB1XIAAJHpE.png"
+     },
+     "summary": "Mumpitz Games公布《Sir, We Have an Orc Problem》发售整一周数据：毛收入突破100万美元、销量近12.8万份、2000余条评价87%好评。这款增量塔防开发周期仅4个月、售价$8.99，发售24小时毛收入即达36万美元。",
+     "recommendation": "Orc Problem首周$100万/12.8万份：4个月开发周期的回报率实证",
+     "featured": true,
+     "game_ref": "Sir, We Have an Orc Problem",
+     "enrichment": {
+      "game_name": "Sir, We Have an Orc Problem",
+      "genre": "增量 / 塔防 / 休闲",
+      "developer": "Mumpitz Games（独立小团队）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "$8.99",
+      "release_date": "已发售 · 2026年7月28日",
+      "steam_rating": "87%（2000+条评价）",
+      "steam_url": "https://store.steampowered.com/app/4594150/Sir_We_Have_an_Orc_Problem/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4594150/d8a7b3d55e3a2b42350732db0/header.jpg",
+      "youtube_video": null,
+      "description": "【核心玩法】增量塔防：抵御一波波兽人进攻，用击杀收益不断升级防线与火力，循环上瘾的数值增长设计。\n\n【一周数据】发售24小时毛收入$361,657；整一周毛收入破$100万、销量近12.8万份、87%好评（2000+条）。开发周期4个月，开发者此前公开喊话「拜托各位独游开发者，做更小的游戏、更快做完」。\n\n【优势】短周期+低定价+强循环的ROI模型被连续验证；开发者主动公开完整账本，成为小团队方法论样本。\n【不足】增量游戏内容消耗快，次月留存与折扣策略是下一个观察点。\n\n【综合】「小游戏快开发」路线的当周最强实证——4个月开发换首周百万美元，投入产出比碾压大多数中长周期独游。",
+      "why_notable": "首周$100万/12.8万份——「做更小的游戏、更快做完」从口号变成可核对的账本",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": "首周12.8万份 · 毛收入$100万+"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "DVLP · 官方发布",
+     "tags": [
+      "浏览器游戏",
+      "程序化生成",
+      "真实地图"
+     ],
+     "title": "hop.earth：浏览器里开遍真实世界——OpenStreetMap+卫星高程实时生成，还能多人赛车",
+     "en_title": "In your browser, with hop.earth you can actually drive anywhere in the world. You can also create multiplayer races. The world is generated ahead of you in real-time from OpenStreetMap data combined with satellite elevation data as you drive.",
+     "full_text": "Goodbye clicking on Google Street View to check out the route!\n\nIn your browser, with https://t.co/2Zwyv0DEv9 you can actually drive anywhere in the world🚀\nYou can also create multiplayer races🚗🏎🚓\n\nThe world is generated ahead of you in real-time from OpenStreetMap data combined with satellite elevation data as you drive.\n\nJust added a WIP of night mode and replaced the placeholder terrain/road textures with some nicer physics-based textures. Also now anywhere you go a million street lights will be added too. This is actually slowly starting to look like the promised Need For Speed + Google Maps\n#threejs #gamedev #indiedev\n\nSingle player mode:\nJust find a location, click anywhere on the map and click \"Hop Here\". After parachuting down hold X to call the car to the road.\n\nMultiplayer mode:\nClick on \"Create race\" and select start and finish points. A route will be plotted. Click on Share Race to get the link and start racing!",
+     "author": "DVLP",
+     "date": "2026-08-03",
+     "likes": 13261,
+     "views": 1580555,
+     "link": "https://x.com/DVLPLONDON/status/2084139787447857637",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2084134441455099904/img/IawCQ7KzvPr68xp7.jpg",
+      "video_url": "https://x.com/DVLPLONDON/status/2084139787447857637/video/1"
+     },
+     "summary": "DVLP发布浏览器驾驶玩具hop.earth：基于OpenStreetMap与卫星高程数据（Copernicus DEM、IGN、CNIG LIDAR）在行驶中实时生成世界，全球任意地点点开即玩，支持创建多人竞速；新版加入夜间模式WIP、基于物理的地面与道路纹理、以及百万盏路灯。推文获158万浏览。",
+     "recommendation": "hop.earth：浏览器实时生成真实地球，开到哪生成到哪还能多人竞速——158万浏览",
+     "featured": true,
+     "enrichment": {
+      "game_name": "hop.earth",
+      "genre": "驾驶 / 沙盒 / 浏览器游戏",
+      "developer": "DVLP（创意开发团队）",
+      "platforms": [
+       "浏览器"
+      ],
+      "price": "免费",
+      "release_date": null,
+      "steam_rating": "无Steam页面",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【核心玩法】打开网页即开：选择地球上任意地点出发，道路与地形按OpenStreetMap数据+卫星高程（Copernicus DEM等）在行驶前方实时生成，没有加载边界；可创建房间与好友多人竞速。\n\n【技术亮点】新版加入夜间模式（WIP）与基于物理的地面/道路纹理，「无论你开到哪里，都有百万盏路灯」。数据源含欧盟Copernicus、法国IGN与西班牙CNIG的公开高程数据。\n\n【优势】零下载零门槛，「在自家门口开车」的情感钩子传播力极强；真实世界数据的程序化生成展示了浏览器端的内容管线上限。\n【不足】驾驶手感与玩法深度有限，更接近技术玩具；无商业化路径。\n\n【综合】继各类AI生成demo之后，「真实数据驱动的浏览器世界」给出了另一条路线——不用生成模型，公开地理数据本身就是无限内容库。",
+      "why_notable": "158万浏览的浏览器实时地球：公开地理数据+程序化生成，是不用AI的无限内容管线"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "MauroNL · 评测汇总",
+     "tags": [
+      "合作冒险",
+      "发售首日",
+      "口碑"
+     ],
+     "title": "Big Walk首日答卷：媒体评分横扫6个满分，Steam首日峰值46,409人",
+     "en_title": "Big Walk Reviews — 10/10: Insider Gaming, Eurogamer, Restart, Loot Level Chill, The Wand Report, KonsoliFIN, Pixel Byte / 9.5: Checkpoint Gaming / 9: Gamespot, Gamekult",
+     "full_text": "Big Walk Reviews\n\n10/10 - Insider Gaming\n10/10 - Eurogamer\n10/10 - Restart\n10/10 - Loot Level Chill\n10/10 - The Wand Report\n10/10 - KonsoliFIN\n10/10 - Pixel Byte\n9.5/10 - Checkpoint Gaming\n9/10 - Gamespot\n9/10 - Gamekult\n8.5/10 - Press Start\n8.5/10 - Vandal\n8/10 - CGMagazine https://t.co/tWtp7sF6Px",
+     "author": "MauroNL",
+     "date": "2026-08-03",
+     "likes": 11049,
+     "views": 1754027,
+     "link": "https://x.com/MauroNL3/status/2084330606104564206",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HO0Hor5WEAA8CVJ.jpg"
+     },
+     "summary": "《Big Walk》8月4日发售后口碑与热度双收：MauroNL汇总的媒体评分出现7家10/10（Insider Gaming、Eurogamer等）、GameSpot与Gamekult 9/10；自家PCU监控显示其Steam首日同时在线峰值达46,409人，目前1082条推荐、好评率85%。首发25%折扣至$14.99。推文获175万浏览。",
+     "recommendation": "Big Walk首日：7家媒体10/10+Steam峰值46,409，合作品类新标杆落地",
+     "game_ref": "Big Walk",
+     "enrichment": {
+      "game_name": "Big Walk",
+      "genre": "合作冒险 / 解谜 / 步行模拟",
+      "developer": "House House（澳大利亚独立工作室，Untitled Goose Game原班）",
+      "platforms": [
+       "Steam",
+       "Switch 2",
+       "PS5"
+      ],
+      "price": "$19.99（首发25% off，$14.99）",
+      "release_date": "已发售 · 2026年8月4日",
+      "steam_rating": "85%（1082条推荐）",
+      "steam_url": "https://store.steampowered.com/app/1478500/Big_Walk/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1478500/62eeee1507dbac905e128a62f2ce690550238db0/header.jpg?t=1785219462",
+      "youtube_video": null,
+      "description": "【首日表现】发售当日媒体评分横扫：Insider Gaming、Eurogamer、Restart、Loot Level Chill、The Wand Report、KonsoliFIN、Pixel Byte共7家10/10，GameSpot与Gamekult 9/10；Steam首日同时在线峰值46,409人（有数GI监控），好评率85%（1082条推荐），首发25%折扣$14.99。\n\n【背景】House House（Untitled Goose Game）时隔多年新作，2-12人合作徒步冒险：proximity语音+手势+道具的协作解谜，Polygon称其为「2026年最佳多人游戏」。\n\n【综合】口碑、热度、折扣三板斧同时落地，Big Walk正沿着「合作品类新标杆」的轨迹启动——首周留存与主机端表现是下一个观察点。",
+      "why_notable": "首日7家10/10+46,409峰值：昨日推荐当日验证，自家PCU监控闭环",
+      "pcu": "首日峰值46,409（8月4日，有数GI）",
+      "current_players": null,
+      "estimated_sales": "暂无数据"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "International Cyber Digest · 安全警报",
+     "tags": [
+      "npm",
+      "供应链安全",
+      "蠕虫"
+     ],
+     "title": "npm供应链攻击Shai-Hulud回归：868个包、20亿月装机量被植入凭证窃取蠕虫",
+     "en_title": "BREAKING: An active npm supply chain attack has compromised at least 868 packages carrying over 2 billion monthly installs with a credential-stealing worm. Shai-Hulud is back. It started with the compromise of the GitHub account of the maintainer behind keyv, a library with roughly 127 million weekly npm downloads.",
+     "full_text": "‼️ BREAKING: An active npm supply chain attack has compromised at least 868 packages carrying over 2 billion monthly installs with a credential-stealing worm. Shai-Hulud is back.\n\nIt started with the compromise of the GitHub account of the maintainer behind keyv, a library with roughly 127 million weekly npm downloads.\n\nA preinstall hook fires on npm install and drops a stealer that sweeps npm, GitHub, AWS, Kubernetes and Vault secrets, and then spreads to more maintainers.",
+     "author": "International Cyber Digest",
+     "date": "2026-08-04",
+     "likes": 3228,
+     "views": 318526,
+     "link": "https://x.com/IntCyberDigest/status/2084636007790449126",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HO4dIBpXQAE5al4.jpg"
+     },
+     "summary": "据International Cyber Digest，一场进行中的npm供应链攻击已感染至少868个包（合计月装机量超20亿）：起点是周下载1.27亿次的keyv库维护者GitHub账号被盗——preinstall钩子在npm install时投放窃取器，横扫npm、GitHub、AWS、Kubernetes与Vault密钥，并借盗取的凭证继续感染更多维护者。推文获31.9万浏览。",
+     "recommendation": "npm蠕虫Shai-Hulud回归：868包/20亿月装机，CI凭证应立即轮换",
+     "analysis": "游戏团队的前端站点与工具链大量依赖npm，凭证蠕虫意味着CI机器上的云密钥与签名证书都是目标。今天就可以做的三件事：锁定依赖版本、审计preinstall钩子、轮换CI凭证——供应链安全不是可选项。",
+     "featured": true
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**$138万的玩笑与$2,045的现实**\n18岁开发者把玩笑游戏《This Game Costs $200》定到Steam价格上限，卖出6,717份、毛收入138万美元——但99.9%在两周退款窗口内被退回，到手仅2,045美元，而大部分订单来自中国。同一天的另外两则行业注脚：Netflix独占的FIFA世界杯手游发售不到两月，开发商Refractor裁员85%；泄露文件显示Xbox 360游戏将于2027-2028年登陆PC与Project Helix，开发者可自定价、自选是否进Game Pass。\n\n**Big Walk首日46,409：合作品类的标杆周**\n昨日推荐的《Big Walk》首日即交卷：7家媒体10/10、Steam峰值46,409人、85%好评；小团队回报率同步刷新——4个月开发的《Orc Problem》首周毛收入破100万美元、卖出12.8万份。新机制方面，麦克风正在成为联机游戏的新输入设备：《Moo Who?》要求动物玩家真的学牛叫才能活命（8/21 EA）；而hop.earth用OpenStreetMap+卫星高程把整颗地球装进浏览器，158万浏览。\n\n**agent接管桌面管线**\nMollick让Codex自由调用Blender与Unity，直接交付带水獭机甲的可玩游戏——AI生产边界从浏览器demo进入真实工程文件；Zullo的双技能链把「图生3D再交互化」压到1%周额度以内；Levie提醒开放权重正在「一天一发」地追尾前沿。安全侧，npm蠕虫Shai-Hulud回归感染868个包，CI凭证值得今天就轮换。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
