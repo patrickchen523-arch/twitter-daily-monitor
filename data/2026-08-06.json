@@ -1,0 +1,415 @@
+{
+ "date": "2026-08-06",
+ "meta": {
+  "raw_count": 223,
+  "filtered_count": 175,
+  "selected_count": 12,
+  "crawl_time": "2026-08-06 18:00"
+ },
+ "lede": "EA $550亿卖身交割：退市+背债$180亿，向债主承诺年削$7亿成本\n宝可梦Gen1重编译版上PC：原生高帧率+体素3D化MOD——53.3万浏览\nTiny Hero Courier：僵尸末世送快递的解谜小品，陷阱诱杀+掉落惩罚",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "EA $550亿卖身交割：退市+背债$180亿，向债主承诺年削$7亿成本"
+  },
+  {
+   "section_id": "tools",
+   "item_index": 0,
+   "hook": "宝可梦Gen1重编译版上PC：原生高帧率+体素3D化MOD——53.3万浏览"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "Tiny Hero Courier：僵尸末世送快递的解谜小品，陷阱诱杀+掉落惩罚"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "陈成公开60+ Skills治理方案：中央仓库+rsync+默认禁用自动调用\n研究者演示Copilot自传播蠕虫：Word藏指令即可感染，微软两次缓解未堵死\nCloudflare推出Wallets+x402：给Agent发带限额的可编程钱包"
+  },
+  {
+   "id": "industry",
+   "text": "EA $550亿收购正式交割退市，$180亿债务下承诺年削$7亿成本\n长鑫存储进入HP/华硕/宏碁供应链，DRAM份额7%、产能计划翻倍\nQuantic Dream工会无限期罢工，115人裁员谈判破裂\nAMD游戏营收-31%，数据中心收入8.6倍于游戏"
+  },
+  {
+   "id": "indie",
+   "text": "Tiny Hero Courier：僵尸末世快递解谜，Steam页面公开\nHalf Grip：独臂战斗赛车roguelike，2026年内发售\nFAKE ME：自己3D建模伪装物的在线Prop Hunt"
+  },
+  {
+   "id": "tools",
+   "text": "宝可梦Gen1完整重编译登陆PC，体素MOD实现3D化\nUnity CLI发布：终端直建项目，CI可跳过Hub"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "陈成 · 原创方法",
+     "tags": [
+      "Claude Code",
+      "Agent工作流"
+     ],
+     "title": "陈成的Skills管理方案：一个中央仓库+同步脚本，默认禁用模型自动调用",
+     "en_title": "我是这么管理 Skills 的。Skill 有两个痛点。一个是同步……另一个是上下文爆炸。",
+     "full_text": "我是这么管理 Skills 的。\n\nSkill 有两个痛点。\n\n一个是同步。如何保持一个源，让它在项目、全局、以及远程机器上保持一致。\n\n另一个是上下文爆炸。我见过装了两千多个 skill 的用户，然后回过头来问我们，为啥 code agent 这么慢。\n\n我的解法：一个中央仓库，一个 sync 脚本，绝大多数 skill 加 disable-model-invocation: true。\n\n1\\ 只有一个源头\n\n维护了一个 ~/Projects/cc-skills/，60+ skills，实验性质的不在这。改只在这里改，别处都是副本。\n\n2\\ 分发交给脚本\n\n有个 sync.ts 脚本，底下是 rsync -av --delete，支持 local 和 ssh，推送到全局、多个项目和远程机器（比如在 macmini 上部署了 hermas 或 openclaw，只需要部分 skill）。\n\n3\\ 默认 .claude/skills，其余软链过去\n\n通过软链支持不同的 Qoder 和 Codex 等，比如 ~/.agents/skills -> ~/.claude/skills，~/.qoder/skills -> ~/.claude/skills。\n\n4\\ 90% 以上加 disable-model-invocation: true\n\n我同步到 global 的 15 个里，14 个加了这个 flag。所以用 claude code 的 /doctor 分析，结果很干净。\n\n几十个 skill 就是几十段常驻描述，活还没开始干，窗口先被咬掉一块。几千个是什么光景，可以自己想。。\n\n而且我本来就知道什么时候该用哪个。/deslop、/handoff 我打得出来，不需要模型替我猜。\n\n5\\ 新 skill 用 create-skill 建\n\n上面这些约定我不想每次重记一遍，全塞进这个 scaffold 里了。它建出来的 skill 就按这套走：有副作用的一律加 disable-model-invocation: true，只有规范和知识型的才留给模型自己判断。\n\n注：我的 create-skill 开源了：https://t.co/kD46Fp0VIh",
+     "author": "陈成",
+     "date": "2026-08-05",
+     "likes": 112,
+     "views": 13236,
+     "link": "https://x.com/chenchengpro/status/2084894203092607299",
+     "media": null,
+     "summary": "陈成分享60+ Skills的治理方案：痛点一多端同步——用中央仓库 ~/Projects/cc-skills/ 加基于 rsync 的 sync.ts 脚本分发到全局、多个项目和远程机器；痛点二上下文爆炸——90%以上skill加 disable-model-invocation: true，几十个skill就是几十段常驻描述，活没干窗口先被咬掉一块。软链兼容Qoder、Codex等工具；新skill用自研开源脚手架create-skill生成，默认带这套约定。",
+     "analysis": "Skills生态爆发后开始进入「治理阶段」——装两千个skill的agent会变慢已是社区共识。「中央仓库+默认禁用自动调用、按需手动触发」的思路，对正在搭建内部agent工具链的团队是直接可抄的作业；也让skill从「提示词收藏夹」变成需要版本管理的工程资产。",
+     "recommendation": "陈成：60+ Skills用中央仓库+rsync分发，默认禁用自动调用防上下文爆炸",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "PC Gamer · 安全研究",
+     "tags": [
+      "AI安全",
+      "Copilot",
+      "提示注入"
+     ],
+     "title": "研究者演示Copilot自传播蠕虫：Word文档藏指令即可感染，微软两次缓解未堵死",
+     "en_title": "This self-propagating AI worm gives me all the reason I need to never use Copilot",
+     "full_text": "This self-propagating AI worm gives me all the reason I need to never use Copilot https://t.co/cOwCjcNCwd",
+     "author": "PC Gamer",
+     "date": "2026-08-05",
+     "likes": 19,
+     "views": 28168,
+     "link": "https://x.com/pcgamer/status/2084942767512522916",
+     "media": null,
+     "summary": "AI研究者Håkon Måløy披露：攻击者在Word文档中藏入JSON格式的恶意提示（最低只需白色小字），当文档被Copilot for Word用作素材时，Copilot会把隐藏指令当作请求执行，并将其复制进新文档——新文档成为传播载体，原始文档即使删除蠕虫仍可扩散。Måløy三月已报告微软，两次缓解（含一次模型升级）均未堵住该类漏洞，目前仍可复现；攻击者无需特殊权限，「分享一份带毒文档给受害者」即可。",
+     "analysis": "昨天npm蠕虫Shai-Hulud攻击依赖包，今天Copilot蠕虫攻击AI助手本身——agent时代的供应链攻击面正从代码扩展到「文档」。任何让AI读取外部文档的工作流（会议纪要、设计文档、玩家反馈汇总）都可能成为载体，游戏团队的AI接入审计该把「不可信文档」列为一级风险。",
+     "recommendation": "Copilot自传播蠕虫：Word藏白色指令即可感染，微软两次修复未堵死",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Tony出海 · 产品动态",
+     "tags": [
+      "Agent经济",
+      "Cloudflare",
+      "x402"
+     ],
+     "title": "Cloudflare推出Wallets+x402：给AI Agent发可编程钱包，支持自主微支付",
+     "en_title": "Agentic 互联网的支付基建。Cloudflare 推出 Cloudflare Wallets！AI Agent 终于有了稳定身份和可编程钱包",
+     "full_text": "🔥 Agentic 互联网的支付基建。Cloudflare 推出 Cloudflare Wallets + https://t.co/1Oa2PR4Drq！AI Agent 终于有了稳定身份和可编程钱包！Agentic 互联网的支付基建。\n\n申请后可以：存储稳定币\n让 Agent 自主支付 API、内容、MCP Tools\n用 x402 协议做微支付\n\n两种钱包：\n\nAccount Wallet：人类掌控资金、设置规则\nVirtual Wallet：给 Agent 用，带支出上限、商家白名单、单笔限额\n\ncloudflare.你的好名字",
+     "author": "Tony出海",
+     "date": "2026-08-05",
+     "likes": 2,
+     "views": 718,
+     "link": "https://x.com/iamtonyzhu/status/2084802816485593384",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HO60eDPbkAA7Dyu.jpg"
+     },
+     "summary": "Cloudflare推出Wallets：Account Wallet由人类掌控资金、设置规则；Virtual Wallet专供Agent使用，带支出上限、商家白名单、单笔限额。配合x402协议，Agent可自主支付API、内容与MCP Tools，存储稳定币完成微支付。",
+     "analysis": "Agent经济的支付层开始由CDN级别的基建商接手。对做AI NPC、玩家agent服务的团队，「给agent一个带限额的钱包」比自建支付合规简单得多——x402有机会成为agent微支付的事实标准入口，值得提前评估接入成本。",
+     "recommendation": "Cloudflare Wallets：给Agent发带限额的可编程钱包，x402协议做微支付"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 行业新闻",
+     "tags": [
+      "EA",
+      "收购",
+      "裁员"
+     ],
+     "title": "EA $550亿收购正式交割：纳斯达克退市，$180亿债务下的裁员倒计时",
+     "en_title": "\"Mass layoffs\" expected at EA, as $55 billion buyout by Saudi Arabia's PIF and Donald Trump's son-in-law officially goes through",
+     "full_text": "\"Mass layoffs\" expected at EA, as $55 billion buyout by Saudi Arabia's PIF and Donald Trump's son-in-law officially goes through\n\nhttps://t.co/yxGekEcTTz https://t.co/SWEpgPeEDs",
+     "author": "Eurogamer",
+     "date": "2026-08-05",
+     "likes": 385,
+     "views": 76986,
+     "link": "https://x.com/eurogamer/status/2084929346913870276",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HO8oLTxWYAAPT98.jpg"
+     },
+     "summary": "8/4深夜，沙特PIF、Silver Lake与Jared Kushner的Affinity Partners宣布完成$550亿收购，EA从纳斯达克退市，股东（含员工持股）每股获$210。这是商业史上最大杠杆收购：EA背上$180亿债务、年付息$18亿。据彭博Jason Schreier，EA已向债权投资者承诺年削减$7亿成本，其中$1.7亿来自「组织效率优化」——即大规模裁员。Silver Lake声明中特别提到将投资「AI增强游戏开发与玩家体验」。多家报道：GameSpot、RPS、PC Gamer、Polygon。",
+     "analysis": "私有化后EA不再公开详细财报，成本削减的透明度显著降低。两个直接观察点：体育年货IP（FC/Madden）的货币化必然加码；「AI降本」会成为裁员叙事的核心话术。对全行业，EA级厂商的编制收缩意味着人才市场供给端又将增加一波资深开发者——招聘窗口开启。",
+     "recommendation": "EA $550亿卖身交割：退市+背债$180亿，向债主承诺年削$7亿成本",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "PC Gamer · 硬件",
+     "tags": [
+      "内存危机",
+      "CXMT",
+      "供应链"
+     ],
+     "title": "长鑫存储攻入HP/华硕/宏碁供应链：DRAM份额已达7%，产能计划翻倍",
+     "en_title": "CXMT reportedly striking deals to provide memory to HP, Asus, and Acer",
+     "full_text": "CXMT reportedly striking deals to provide memory to HP, Asus, and Acer https://t.co/YB9ORH28x3",
+     "author": "PC Gamer",
+     "date": "2026-08-05",
+     "likes": 24,
+     "views": 25982,
+     "link": "https://x.com/pcgamer/status/2084936442988687554",
+     "media": null,
+     "summary": "Nikkei Asia报道：HP、华硕、宏碁开始在部分笔记本中采用长鑫存储（CXMT）芯片，限于非美国市场且供货量受控——CXMT优先供给华为等老客户，PC厂商也不想激怒美光/三星/SK海力士。CXMT上周IPO首日暴涨466%，已成全球第四大内存厂、占DRAM营收7%（Counterpoint Q2数据）；正筹建北京第二工厂并在上海、合肥扩产，目标产能翻倍至60万片晶圆/月。三大厂仍占90%以上份额。",
+     "analysis": "内存危机进入「重构供应链」阶段：昨天是技嘉重产AM4老平台，今天是全球PC大厂开始采购中国内存。三星自己预测严重短缺持续到2029年——四年缺口期足够让第四大内存厂完成客户验证周期，游戏PC的BOM成本结构可能因此被改写。",
+     "recommendation": "长鑫存储进HP/华硕/宏碁供应链：DRAM份额7%，产能翻倍计划曝光",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Rock Paper Shotgun · 劳工",
+     "tags": [
+      "Quantic Dream",
+      "罢工",
+      "裁员"
+     ],
+     "title": "Quantic Dream工会发起无限期罢工：115人裁员谈判破裂，要求延长协商",
+     "en_title": "\"If Quantic Dream wants to destroy jobs, it must pay\": French union call strike as they demand extension to layoff negotiations with Star Wars Eclipse studio",
+     "full_text": "\"If Quantic Dream wants to destroy jobs, it must pay\": French union call strike as they demand extension to layoff negotiations with Star Wars Eclipse studio\n\nhttps://t.co/NN9grGeRhl",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-08-05",
+     "likes": 8,
+     "views": 3876,
+     "link": "https://x.com/rockpapershot/status/2084942498435379569",
+     "media": null,
+     "summary": "法国游戏工会STJV宣布8/5起对Quantic Dream发起无限期罢工。起因是MOBA《Spellcasters Chronicles》终止开发后的约115人裁员计划：工会指控公司「设定非法期限」、浪费六周谈判时间、以「会被腐化」为由拒绝提供必要文件，CEO Guillaume de Fondaumière被指「只想压到最低赔偿」。员工此前警告：若裁员通过，《星球大战：Eclipse》「实际上无法完成」——公司六月则向IGN坚称开发资源充足。",
+     "analysis": "法国工会的战斗力再次上线，「无限期罢工+项目无法完成」是谈判筹码最大化。对厂商的启示：裁员方案的沟通成本正在被工会制度化，「快刀斩乱麻」式收缩在法国已不可行——重组计划需要把劳工协商周期计入时间表。",
+     "recommendation": "Quantic Dream员工无限期罢工：115人裁员谈判破裂，Eclipse前途存疑"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "PC Gamer · 财报",
+     "tags": [
+      "AMD",
+      "财报",
+      "硬件"
+     ],
+     "title": "AMD游戏业务营收同比缩水31%：数据中心收入已是游戏的8.6倍",
+     "en_title": "AMD made over 8 times as much revenue on data centers as it did gaming last quarter",
+     "full_text": "AMD's gaming business has shrunk again—in part because AMD's data centre segment is thriving https://t.co/emdT2leMoQ",
+     "author": "PC Gamer",
+     "date": "2026-08-05",
+     "likes": 26,
+     "views": 24354,
+     "link": "https://x.com/pcgamer/status/2084980513023111586",
+     "media": null,
+     "summary": "AMD Q2 2026创纪录营收$115亿：数据中心$67亿（同比翻倍），客户端$31亿（+23%，但靠低端移动锐龙走量、ASP下降3%），游戏业务仅$7.79亿、同比下滑31%。游戏疲软的双重原因：PS5/Xbox定制SoC随主机生命周期与涨价而减少出货；内存危机推高硬件价格、压制高端PC需求。",
+     "analysis": "和CXMT那条连起来看：AI数据中心一边吸走内存产能推高PC成本，一边让芯片厂的游戏业务沦为配角。当「游戏部门」在财报里的权重持续降低，面向玩家的产品定义权也会随之下移——主机定制芯片与高端显卡双线疲软是结构性信号，不是周期噪音。",
+     "recommendation": "AMD游戏营收-31%：数据中心收入8.6倍于游戏，主机SoC与高端PC双疲软"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "電ファミニコゲーマー · 新游报道",
+     "tags": [
+      "解谜",
+      "僵尸",
+      "Steam"
+     ],
+     "title": "Tiny Hero Courier：波兰独立团队开发的僵尸末世快递解谜，包裹落地即大惨事",
+     "en_title": "ゾンビだらけの過酷な世界で「配達人」として働くゲーム『Tiny Hero Courier』が楽しそう。終末世界でも、業務は休めない",
+     "full_text": "ゾンビだらけの過酷な世界で「配達人」として働くゲーム『Tiny Hero Courier』が楽しそう。終末世界でも、業務は休めない\nhttps://t.co/oZMKIx1ZV1\n\n周辺の仕掛けを用いてゾンビを一掃し、安全に荷物をお届けする日々。落としたら大惨事な荷物を運び、やたらと声の高い上司の機嫌をとろう https://t.co/3DF1cFyTMC",
+     "author": "電ファミニコゲーマー",
+     "date": "2026-08-04",
+     "likes": 1542,
+     "views": 288335,
+     "link": "https://x.com/denfaminicogame/status/2084767092663038186",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2084767028074975232/pu/img/fYxT-KF_m-VK2ZVm.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2084767092663038186/video/1"
+     },
+     "summary": "波兰工作室Guillotine新作：普通快递员Rupert在僵尸横行的迷你末世送最后的包裹。玩家操作场景开关与陷阱诱杀僵尸、清除路障；包裹尺寸影响货车速度，爆炸物落地酿大祸，Rupert死亡则长出天使翅膀升天。世界地图可开车探索、升级车辆、给大嗓门的「Boss」打电话汇报。Steam页面公开，发售日未定。",
+     "analysis": "",
+     "recommendation": "Tiny Hero Courier：僵尸末世送快递的解谜小品，陷阱诱杀+掉落惩罚——28.8万浏览",
+     "featured": true,
+     "game_ref": "Tiny Hero Courier",
+     "enrichment": {
+      "game_name": "Tiny Hero Courier",
+      "genre": "解谜 / 冒险 / 休闲",
+      "developer": "Guillotine（波兰独立工作室）",
+      "platforms": [
+       "Steam(Windows)"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3408450/Tiny_Hero_Courier/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3408450/header.jpg?t=1734605296",
+      "youtube_video": null,
+      "description": "【核心玩法】俯视视角「末世快递解谜」：普通快递员Rupert在僵尸横行的迷你世界中投递最后的包裹。玩家不直接硬拼僵尸，而是操作场景中的开关与陷阱——诱使僵尸走入陷阱歼灭、清除挡路障碍，为Rupert铺出安全配送路线。包裹尺寸影响货车移动速度，大件货物需下车手搬；爆炸物等特殊货物一旦掉落将引发大事故。世界地图上可驾驶货车探索新区域、解锁任务，车载终端能查看地图、升级车辆，还可以给脾气古怪的「Boss」打电话。\n\n【美术与氛围】微缩模型质感的Q版末世，僵尸与小镇都走可爱路线；官方称本作「既能拯救世界，也能谈恋爱」，黑色幽默贯穿始终。\n\n【开发者】Guillotine，波兰独立工作室。\n\n【优势】题材组合新鲜：「死亡搁浅式快递」×僵尸×解谜的轻量化演绎；掉落惩罚与Boss情绪管理等细节机制有记忆点；電ファミ报道后获28.8万浏览，日本社区反响热烈。\n\n【不足】发售日未定（To be announced），当前仅有Steam页面与演示视频，完成度待观察；解谜品类的长线内容量存疑。\n\n【综合】把「末世快递」做成Q版解谜的巧思之作，陷阱诱杀僵尸的间接战斗设计颇具创意，适合加入愿望单观望。",
+      "why_notable": "「死亡搁浅」的小品化演绎：末世快递+陷阱解谜组合获電ファミ报道，28.8万浏览"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Indie Game Joe · 新游发现",
+     "tags": [
+      "战斗赛车",
+      "Roguelike",
+      "Steam"
+     ],
+     "title": "Half Grip：独臂开完全程的战斗赛车roguelike，转向/射击/换挡共用一只手",
+     "en_title": "This indie studio is making a combat racer where you steer, shoot and change gears with just one arm",
+     "full_text": "This indie studio is making a combat racer where you steer, shoot and change gears with just one arm\n\n- Every action is a gamble, each split-second counts\n- Unlock rams, shotguns, magnets and mines\n- Roguelike runs\n\nIt's called Half Grip. Would you play this? https://t.co/W5zC3Qnu1z",
+     "author": "Indie Game Joe",
+     "date": "2026-08-04",
+     "likes": 2359,
+     "views": 114939,
+     "link": "https://x.com/IndieGameJoe/status/2084729187785376045",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2084729065882202112/img/ohUBYqgOz8btka6p.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2084729187785376045/video/1"
+     },
+     "summary": "Half Games开发的「独臂」战斗赛车：转向、射击、装填、换挡全由一只手完成，每个动作都是赌博，分秒必争。roguelike跑图中解锁撞角、霰弹枪、磁铁、地雷等武装，在粗粝像素风赛道上对抗武装对手。计划2026年内发售，支持Windows/Linux。",
+     "analysis": "",
+     "recommendation": "Half Grip：独臂操作的战斗赛车roguelike，每个动作都是赌博——11.5万浏览",
+     "featured": true,
+     "game_ref": "Half Grip",
+     "enrichment": {
+      "game_name": "Half Grip",
+      "genre": "战斗赛车 / Roguelike / 动作",
+      "developer": "Half Games（独立工作室，自发发行）",
+      "platforms": [
+       "Steam(Windows/Linux)"
+      ],
+      "price": "未公布",
+      "release_date": "2026年（具体未定）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4163270/Half_Grip/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4163270/685a8d0b597f94086c47ae232ddac87e6d12d2fc/header.jpg?t=1785885031",
+      "youtube_video": null,
+      "description": "【核心玩法】「独臂」战斗赛车roguelike：主角只有一条手臂，转向、射击、装填、换挡全部共用这只手完成——每个动作都意味着放弃另一个动作，分秒之间的取舍即核心乐趣。roguelike跑图结构中可解锁撞角、霰弹枪、磁铁、地雷等武装模块，在氛围感像素赛道上与武装对手竞速互殴。\n\n【美术与氛围】硬朗粗粝的像素渲染（harsh pixelated detail），末世废土赛车气质。\n\n【开发者】Half Games，独立工作室，自发发行。\n\n【优势】「单手多任务」是明确且自洽的机制创新——操作限制直接转化为策略深度；武装模块组合提供build空间；Indie Game Joe演示视频获11.5万浏览、2359赞，社区反响好。\n\n【不足】发售窗口仅「2026年」，尚无demo信息；单手高频操作对手速要求偏硬核，受众天花板待验证。\n\n【综合】把生理限制做成玩法核心的聪明设计，战斗赛车+roguelike的组合稀缺，值得关注后续demo。",
+      "why_notable": "「独臂操作」的机制创新战斗赛车：转向/射击/换挡共用一手，11.5万浏览"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Game*Spark · 新游发表",
+     "tags": [
+      "Prop Hunt",
+      "多人对战",
+      "UGC"
+     ],
+     "title": "FAKE ME：自己3D建模伪装物的Prop Hunt，拉伸身体变成一摞书再上色",
+     "en_title": "3Dモデリングをして物体に擬態、さらにはペイントまでする新たなオンラインかくれんぼ『FAKE ME』発表！",
+     "full_text": "3Dモデリングをして物体に擬態、さらにはペイントまでする新たなオンラインかくれんぼ『FAKE ME』発表！見つける側も隠れる側も高難度な本格派か\nhttps://t.co/WQ8R6C1uyS\n\n・プロップハントとモデリングを組み合わせた新作\n・重なった本になるために体を薄く引き伸ばすなど自由にモデリング https://t.co/TT9qZCtoFA",
+     "author": "⚡Game*Spark⚡",
+     "date": "2026-08-05",
+     "likes": 17,
+     "views": 8953,
+     "link": "https://x.com/gamespark/status/2085022345144701416",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2085022021885542400/pu/img/v2W2Nr0qXs9yhuhe.jpg",
+      "video_url": "https://x.com/gamespark/status/2085022345144701416/video/1"
+     },
+     "summary": "YUMEXE发表的在线捉迷藏：Faker方在鬼到来前用内置建模工具把自己拉伸、组合成场景物件（比如一摞书），还能自由上色融入环境；Seeker方也可自定义外观。建模+涂装双系统让每局拟态都由玩家手工打造，Steam页面已公开，发售日Coming soon。",
+     "analysis": "",
+     "recommendation": "FAKE ME：自己建模+涂装的Prop Hunt，伪装精度由玩家手艺决定",
+     "game_ref": "FAKE ME",
+     "enrichment": {
+      "game_name": "FAKE ME",
+      "genre": "Prop Hunt / 在线对战 / 休闲",
+      "developer": "YUMEXE",
+      "platforms": [
+       "Steam(Windows)"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4990840/FAKE_ME/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4990840/d57267cea0373e4305c1ae46fc669ef1f8b04cf6/header.jpg?t=1785941014",
+      "youtube_video": null,
+      "description": "【核心玩法】团队制在线捉迷藏（Prop Hunt变种）：Faker方在Seeker到来前的准备时间内，用内置简易3D建模工具把角色拉伸、变形、组合成场景物件——比如把身体压扁拉长伪装成书堆里的一摞书——再用涂装系统上色，力求与环境零违和。Seeker方要在时限内找出所有伪装者，其外观也可用玩家自制服装与配件自定义。\n\n【美术与氛围】低多边形卡通3D，走滑稽创意路线而非恐怖。\n\n【开发者】YUMEXE。\n\n【优势】传统Prop Hunt只能从固定物件列表变身，本作把「建模+涂装」交给玩家，伪装上限由手艺决定——该品类少见的机制深化；每局伪装皆为手工作品，天然适合直播与短视频传播（官方截图已有「中间那个壶是玩家」级别的找茬难度）。\n\n【不足】发售日Coming soon未定；在线派对游戏的长期留存依赖匹配人数与内容更新，独立团队运营压力不小。\n\n【综合】把UGC建模做成玩法核心的Prop Hunt，机制差异化清晰；若能保障服务器与反作弊，有派对爆款相。",
+      "why_notable": "Prop Hunt品类机制深化：伪装物由玩家亲手建模涂装，找茬难度上限大幅提升"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Stormslayer · 社区项目",
+     "tags": [
+      "重编译",
+      "宝可梦",
+      "MOD"
+     ],
+     "title": "宝可梦Gen1完整重编译登陆PC：红/蓝/黄原生运行，搭配体素MOD秒变3D",
+     "en_title": "Pokemon Gen 1 has been recompiled for PC! Here is Gen1Recomp complete with the Dramatic Shape voxel mod that transforms the game into 3D!",
+     "full_text": "Pokemon Gen 1 has been recompiled for PC!\n\nHere is Gen1Recomp complete with the Dramatic Shape voxel mod that transforms the game into 3D!\n\nPlay through the original Red, Blue and Yellow, at unlocked frame rates and resolution with enhanced shaders and graphical effects!\nTry it out below!",
+     "author": "Stormslayer 🔜QUAKECON 2026 -HD Remasters/Gamedev",
+     "date": "2026-08-05",
+     "likes": 4725,
+     "views": 533088,
+     "link": "https://x.com/StormslayerDev/status/2084812316055326878",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2084810444359794688/img/myJ5VSNkT22aNVMz.jpg",
+      "video_url": "https://x.com/StormslayerDev/status/2084812316055326878/video/1"
+     },
+     "summary": "Gen1Recomp项目将宝可梦初代（红/蓝/黄）完整重编译为PC原生版本：解锁帧率与分辨率、增强着色器与图形特效；搭配Dramatic Shape体素MOD（GitHub已发布release，支持第三人称相机、战斗相机控制、移动端双指缩放），整个游戏世界体素化3D呈现。视频演示获53.3万浏览。",
+     "analysis": "从N64重编译（Zelda 64: Recompiled）到GB世代，静态重编译的适用范围正在向掌机平台扩展——老游戏「原生PC化」的工程门槛持续降低。对重制/复刻团队，这类社区工程的完成度本身就是「老IP现代化需求」的持续佐证；当然，法务风险一如既往与热度成正比。",
+     "recommendation": "宝可梦Gen1重编译版上PC：原生高帧率+体素3D化MOD——53.3万浏览",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "Unity for Games · 官方工具",
+     "tags": [
+      "Unity",
+      "CLI",
+      "CI/CD"
+     ],
+     "title": "Unity CLI发布：跳过Hub，终端一条命令完成建项目、查版本、选模板",
+     "en_title": "Skip the Hub, create and set up Unity projects directly from your terminal using Unity CLI",
+     "full_text": "Skip the Hub, create and set up Unity projects directly from your terminal using Unity CLI 🤝\n\nCheck your installed Editor versions, browse templates, and set up a new project with a single command. \n\n🔗 Install the Unity CLI + Pipeline package: https://t.co/h9jxiX52Hj https://t.co/uwjnz5f93j",
+     "author": "Unity for Games",
+     "date": "2026-08-05",
+     "likes": 21,
+     "views": 3849,
+     "link": "https://x.com/unitygames/status/2085007986422862319",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2085007864368668672/pu/img/IwQESFXyf7evtQ1S.jpg",
+      "video_url": "https://x.com/unitygames/status/2085007986422862319/video/1"
+     },
+     "summary": "Unity官方推出Unity CLI + Pipeline包：无需打开Hub即可查看已安装Editor版本、浏览模板，单条命令创建并配置新项目，面向脚本化与CI环境。",
+     "analysis": "Unity在「去Hub化」上又走一步。对搭建自动化构建管线（尤其无头CI机器）的团队，CLI建项目省掉了Hub这层GUI依赖，工程化友好度提升——也是Unity向「可被agent驱动」的工具链形态靠拢的信号。",
+     "recommendation": "Unity CLI：终端直建项目、查版本、选模板，CI管线可跳过Hub"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**EA时代落幕**\n$550亿收购正式交割，EA从纳斯达克退市、背上$180亿债务与每年$18亿利息。向债权投资者承诺的年削$7亿成本中，$1.7亿「组织效率优化」即大规模裁员——史上最大杠杆收购的账单，开始由员工支付。\n\n**内存危机重塑供应链**\n长鑫存储进入HP/华硕/宏碁笔记本供应链，DRAM份额达7%并计划产能翻倍；AMD财报另一侧印证：游戏业务营收-31%，数据中心收入已是游戏的8.6倍。AI基建对消费硬件的挤压从「涨价」进入「重构」阶段。\n\n**三款差异化新游**\n僵尸末世送快递的解谜小品Tiny Hero Courier（28.8万浏览）、独臂操作战斗赛车Half Grip（11.5万浏览）、自己建模伪装物的Prop Hunt游戏FAKE ME——机制创新是今日独游的共同关键词。另有宝可梦Gen1重编译版登陆PC，53.3万浏览围观体素3D化。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
