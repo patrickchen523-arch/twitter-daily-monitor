@@ -322,7 +322,7 @@ for (const g of gameList) {
   g.release = rel;
   g.mature = MATURE[g.name] === '是';
   g.freshScore = freshScoreOf(rel);
-  g.fresh = g.freshScore === 30; // 图章"新"= 近30天有产品节点
+  g.fresh = rel ? (rel === '9999-12-31' || dayDiff(rel) <= 7) : false; // 图章"新"= 近7天上线/公布
   const mv = moveScoreOf(g.name, g.rank);
   g.moveScore = mv.s;
   g.moveNote = mv.note;
@@ -340,7 +340,28 @@ gameList.sort((a, b) => {
 HISTORY[TODAY_STR] = Object.fromEntries(gameList.map(g => [g.name, g.rank]));
 fs.writeFileSync(HISTORY_PATH, JSON.stringify(HISTORY, null, 1), 'utf8');
 
-const items = gameList.map(g => ({
+// 未上线游戏(9999 标记)不进榜单,挪未上线观测区
+const unreleased = gameList.filter(g => g.release === '9999-12-31');
+const releasedList = gameList.filter(g => g.release !== '9999-12-31');
+if (unreleased.length) {
+  launched.watch = launched.watch || { featured: [], calendar: [] };
+  launched.watch.featured = launched.watch.featured || [];
+  for (const g of unreleased) {
+    if (MATURE[g.name] === '是') continue; // 成熟/网易游戏不进观测区
+    if (!launched.watch.featured.some(w => w.name === g.name)) {
+      launched.watch.featured.push({
+        name: g.name,
+        date: '已公布/测试阶段',
+        note: `B站游戏区热门榜最高 ${g.rank} 名 · 尚未正式上线`,
+        cover: g.thumb,
+        link: g.link
+      });
+    }
+  }
+  console.log('未上线->观测区:', unreleased.map(g => g.name).join(', '));
+}
+
+const items = releasedList.map(g => ({
   name: g.name,
   metric: `最高${g.rank}名`,
   sub: `${g.sub} · 机会分${g.score}${g.moveNote ? `(${g.moveNote})` : ''}`,
@@ -353,8 +374,8 @@ const items = gameList.map(g => ({
 
 const board = launched.boards.find(b => b.id === 'bilibili');
 if (board) {
-  board.title = 'B站游戏机会榜';
-  board.title_en = 'BILIBILI SIGNALS';
+  board.title = 'B站游戏区热门排行榜';
+  board.title_en = 'BILIBILI HOT 100';
   board.demo = false;
   board.items = items;
   board.more = { label: '查看完整榜单', href: 'https://www.bilibili.com/v/popular/rank/game' };

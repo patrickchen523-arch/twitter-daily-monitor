@@ -24,6 +24,7 @@ for (const [key, e] of Object.entries(extra)) {
     if (!base.desc && e.desc) base.desc = e.desc;
     if (!base.tags || !base.tags.length) base.tags = e.tags || [];
     if (e.mobile_rank) base.mobile_rank = e.mobile_rank;
+    if (e.platform) base.platform = e.platform;
   } else {
     det.byName[k] = {
       name: e.name_en || e.name,
@@ -35,7 +36,8 @@ for (const [key, e] of Object.entries(extra)) {
       desc: e.desc || null,
       pcu: null, sales: null, revenue: null, reviews: null, rating: null,
       cover: null, steam: null, appid: null,
-      mobile_rank: e.mobile_rank || null
+      mobile_rank: e.mobile_rank || null,
+      platform: e.platform || null
     };
     added++;
   }
@@ -50,6 +52,16 @@ for (const [appid, rank] of Object.entries(ts)) {
 for (const d of Object.values(det.byName)) {
   if (d.topsellers == null && d.appid && ts[d.appid]) d.topsellers = ts[d.appid];
 }
+
+// 3. 去重: byName 与 byAppid 指向同一 appid 时统一引用 byAppid 版本(防脏副本)
+let deduped = 0;
+for (const [k, v] of Object.entries(det.byName)) {
+  if (v.appid && det.byAppid[v.appid] && det.byAppid[v.appid] !== v) {
+    det.byName[k] = det.byAppid[v.appid];
+    deduped++;
+  }
+}
+console.log('deduped:', deduped);
 
 fs.writeFileSync(detPath, JSON.stringify(det, null, 1), 'utf8');
 console.log(`merged. extra added=${added}, topsellers ranked=${ranked}, byName=${Object.keys(det.byName).length}`);

@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
+i<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta name="referrer" content="no-referrer">
 <title>热门游戏·AI资讯监控</title>
+<script>
+// 防御: 标签外误入的杂散文本会被浏览器挪进 body 开头,自动清除
+document.addEventListener('DOMContentLoaded', function () {
+  var b = document.body;
+  if (!b) return;
+  while (b.firstChild && b.firstChild.nodeType === 3) {
+    b.removeChild(b.firstChild);
+  }
+});
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
 <style>
 :root{
   --bg:#FAFAF8;--card:#FFFFFF;--card-hover:#FFFDF5;
@@ -129,8 +140,11 @@ footer{margin-top:48px;text-align:center;color:var(--ink3);font-size:11.5px;padd
 .roblox-title{margin:0;font-family:var(--font-serif);font-size:clamp(28px,3.6vw,52px);font-weight:700;line-height:1.08;letter-spacing:0;color:#3c2b27}
 .roblox-subtitle{margin:12px 0 0;color:#8b7169;font-size:13px;font-weight:800;line-height:1.7}
 .roblox-weeks{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;max-width:520px}
-.roblox-week-btn{min-height:40px;padding:0 18px;border:1px solid rgba(60,43,39,.14);border-radius:8px;background:#fff;color:#3c2b27;font-size:13px;font-weight:900;cursor:pointer;transition:all .22s ease;box-shadow:0 5px 14px rgba(91,52,46,.05)}
-.roblox-week-btn:hover{border-color:rgba(135,48,38,.34);transform:translateY(-1px)}
+.roblox-week-btn{min-height:40px;padding:0 18px;border:1px solid rgba(60,43,39,.14);border-radius:8px;background:#fff;color:#3c2b27;font-size:13px;font-weight:900;cursor:pointer;transition:all .22s ease;box-shadow:0 5px 14px rgba(91,52,46,.05);display:inline-flex;align-items:center;justify-content:center;line-height:1;font-family:"Nunito Sans","Microsoft YaHei",sans-serif}
+.roblox-week-btn:hover{background:#A33A2F;border-color:#A33A2F;color:#fffaf4}
+.roblox-week-btn[disabled]{opacity:.38;pointer-events:none}
+.ld-pager{display:flex;align-items:center;gap:8px;margin-right:auto}
+.ld-page-info{color:#8b7169;font-size:11.5px;font-weight:900;white-space:nowrap}
 .roblox-week-btn.on{background:#C63C2F;border-color:#C63C2F;color:#fff;box-shadow:0 12px 24px rgba(198,60,47,.18)}
 .roblox-report-host{max-width:1220px;margin:0 auto;color:#3c2b27;animation:cardFadeIn .38s ease both}
 .roblox-report-host .page{max-width:none;margin:0;padding:0;position:relative;z-index:1}
@@ -389,6 +403,7 @@ body.editorial-mode #content,body.editorial-mode #dailySummary,body.editorial-mo
 .ed-shell{min-height:100vh;overflow:visible;font-family:"Nunito Sans","Microsoft YaHei",sans-serif;color:#3c2b27}
 .ed-shell a{color:inherit;text-decoration:none}.ed-shell img{display:block;max-width:100%}
 .ed-top-nav{height:66px;background:rgba(255,255,255,.985);display:grid;grid-template-columns:repeat(3,1fr) 170px repeat(4,1fr);align-items:center;padding:0 34px;position:sticky;top:0;z-index:2147483000;overflow:visible;isolation:isolate;box-shadow:0 1px 0 rgba(0,0,0,.04);text-transform:uppercase;letter-spacing:.09em;font-family:"Nunito Sans","Microsoft YaHei",sans-serif;font-size:14px;font-weight:900;color:rgba(60,43,39,.72)}
+body.local-mode .ed-top-nav{grid-template-columns:repeat(4,1fr) 170px repeat(4,1fr)}
 .ed-top-nav::after{content:none;display:none}
 .ed-top-nav a,.ed-top-nav button,.ed-top-nav .ed-nav-icon,.ed-search-entry{position:relative;z-index:3;text-align:center}.ed-category-tab{border:0;background:transparent;color:rgba(60,43,39,.72);font:inherit;text-transform:none;letter-spacing:.04em;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:0;height:66px;padding:0 8px;white-space:nowrap;transition:color .2s ease,font-size .2s ease,letter-spacing .2s ease,transform .2s ease}.ed-category-tab span{color:rgba(60,43,39,.48);font-size:10px;font-weight:900}.ed-category-tab:hover,.ed-category-tab.on{color:#A33A2F}.ed-category-tab.on span{color:#A33A2F}.ed-category-tab.is-feature{z-index:10;isolation:isolate;color:#C76355;font-size:18px;font-weight:900;letter-spacing:.12em;transform:translateX(.06em)}.ed-category-tab.is-feature::after{content:"";position:absolute;left:50%;bottom:-23px;transform:translateX(-50%);width:min(172px,calc(100% + 56px));height:46px;background:rgba(255,255,255,.985);border-radius:0 0 90px 90px;box-shadow:0 1px 0 rgba(0,0,0,.025),0 10px 24px rgba(60,43,39,.04);z-index:-1;pointer-events:none}.ed-category-tab.is-feature span{color:#A33A2F;font-size:10px;letter-spacing:0}.ed-brand{font-family:"Nunito Sans","Microsoft YaHei",sans-serif;text-transform:uppercase}.ed-brand:not(.is-feature){font-size:14px;letter-spacing:.16em;transform:none;color:rgba(60,43,39,.72)}.ed-brand.is-feature{font-size:22px;letter-spacing:.38em;transform:translateX(.19em)}.ed-brand::before{content:none!important;display:none!important}.ed-search-entry{height:66px;display:flex;align-items:center;justify-content:center;gap:8px;min-width:0;margin:0;color:rgba(60,43,39,.58)}.ed-search-button{width:24px;height:32px;display:flex;align-items:center;justify-content:center;border:0;background:transparent;color:#A33A2F;font-size:15px;line-height:1;cursor:pointer;padding:0}.ed-search-button:hover{color:#873026}.ed-search-entry input{width:min(150px,100%);height:32px;border:1px solid rgba(135,48,38,.18);border-radius:999px;background:rgba(255,250,244,.78);outline:0;padding:0 12px;color:#3c2b27;font-size:12px;font-weight:800;letter-spacing:0;text-transform:none}.ed-search-entry input:focus{border-color:rgba(163,58,47,.45);box-shadow:0 8px 18px rgba(91,52,46,.08)}.ed-search-entry input::placeholder{color:rgba(139,113,105,.7)}
 .ed-nav-icon{display:flex;align-items:center;justify-content:center;gap:8px}.ed-nav-dot{width:8px;height:8px;border-radius:50%;background:#873026;box-shadow:12px 0 0 #d1b36f,24px 0 0 rgba(60,43,39,.35)}
@@ -556,6 +571,7 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
   .ed-top-nav>[data-nav="indie"]{order:3}
   .ed-top-nav>[data-nav="weekly"]{order:4}
   .ed-top-nav>[data-nav="digest"]{order:6;min-width:0;color:#A33A2F!important;font-weight:900}
+  body.local-mode .ed-top-nav>[data-nav="launched"]{order:5}
   .ed-top-nav>[data-nav="roblox"]{order:7}
   .ed-top-nav>[data-nav="library"]{order:8}
   .ed-top-nav>.ed-search-entry{order:7;display:flex!important;flex:0 0 100%;height:40px;margin:5px 0 0;padding:0 10px;border:1px solid rgba(135,48,38,.18);border-radius:999px;background:#fffaf4}
@@ -648,16 +664,23 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
 .ld-watch-card-date{display:block;color:#D1B36F;font-size:12px;font-weight:900;margin-top:4px}
 .ld-watch-card-note{display:block;color:rgba(246,240,232,.72);font-size:12px;font-weight:700;line-height:1.7;margin-top:8px}
 .ld-cal{margin-top:26px}
-.ld-cal-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
-.ld-cal-month{font-family:var(--font-serif);font-size:18px;font-weight:700}
-.ld-cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
-.ld-cal-dow{color:rgba(246,240,232,.5);font-size:10px;font-weight:900;text-align:center;padding:4px 0}
-.ld-cal-cell{min-height:66px;background:rgba(255,250,244,.05);border:1px solid rgba(255,250,244,.12);padding:5px 6px}
+.ld-cal-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}
+.ld-cal-month{font-family:var(--font-serif);font-size:22px;font-weight:700}
+.ld-cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.ld-cal-dow{color:rgba(246,240,232,.55);font-size:12px;font-weight:900;text-align:center;padding:6px 0}
+.ld-cal-cell{min-height:96px;background:rgba(255,250,244,.05);border:1px solid rgba(255,250,244,.12);padding:7px 9px;cursor:pointer;transition:border-color .18s ease,background .18s ease}
+.ld-cal-cell:hover{border-color:rgba(209,179,111,.6)}
+.ld-cal-cell.has-ev{background:rgba(255,250,244,.09)}
+.ld-cal-cell.sel{border-color:#D1B36F;box-shadow:inset 0 0 0 1px #D1B36F;background:rgba(209,179,111,.12)}
 .ld-cal-cell.dim{opacity:.42}
-.ld-cal-cell.today{border-color:#D1B36F;box-shadow:inset 0 0 0 1px #D1B36F}
-.ld-cal-day{color:#D1B36F;font-weight:900;font-size:11px}
-.ld-cal-chip{display:block;margin-top:3px;color:#f6f0e8;font-size:10px;font-weight:800;line-height:1.35}
-.ld-cal-chip small{color:rgba(246,240,232,.55);display:block;font-size:9px;font-weight:800}
+.ld-cal-cell.today .ld-cal-day{text-decoration:underline}
+.ld-cal-day{color:#D1B36F;font-weight:900;font-size:14px}
+.ld-cal-chip{display:block;margin-top:4px;color:#f6f0e8;font-size:12px;font-weight:800;line-height:1.4}
+.ld-cal-chip small{color:rgba(246,240,232,.55);display:block;font-size:10.5px;font-weight:800}
+.ld-cal-detail{margin-top:14px;padding:14px 16px;border:1px solid rgba(255,250,244,.16);background:rgba(255,250,244,.05);min-height:48px}
+.ld-cal-detail-t{color:#D1B36F;font-size:13px;font-weight:900;margin-bottom:6px}
+.ld-cal-detail-g{color:#f6f0e8;font-size:13px;font-weight:800;line-height:1.9}
+.ld-cal-detail-g small{color:rgba(246,240,232,.6);margin-left:8px;font-size:11px}
 .ld-watch-more{margin-top:18px;display:flex;justify-content:flex-end}
 /* 游戏详情弹窗 */
 .ld-modal-mask{position:fixed;inset:0;background:rgba(38,24,20,.55);z-index:300;display:flex;align-items:center;justify-content:center;padding:20px}
@@ -665,17 +688,22 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
 .ld-modal-close{position:absolute;top:10px;right:10px;z-index:2;width:32px;height:32px;border:0;border-radius:50%;background:rgba(38,24,20,.55);color:#fffaf4;font-size:15px;cursor:pointer;font-family:inherit}
 .ld-modal-close:hover{background:#A33A2F}
 .ld-modal-cover{width:100%;aspect-ratio:460/215;object-fit:cover;display:block;background:#e9ddd5}
+.ld-modal-video{width:100%;aspect-ratio:16/9;background:#1a1210}
+.ld-modal-video video{width:100%;height:100%;display:block}
 .ld-modal-body{padding:20px 26px 24px}
 .ld-modal-name{font-family:var(--font-serif);font-size:23px;font-weight:700;color:#3c2b27;line-height:1.3}
 .ld-modal-cn{font-family:var(--font-serif);font-size:16px;color:#8b7169;margin-top:2px;font-weight:700}
 .ld-modal-cn-inline{font-size:16px;color:#8b7169;font-weight:700}
 .ld-modal-desc{margin-top:12px;color:#6d554e;font-size:13px;line-height:1.8;font-weight:700}
 .ld-modal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 18px;margin-top:16px;border-top:1px solid rgba(60,43,39,.12);padding-top:14px}
+.ld-modal-grid.ld-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ld-modal-grid.ld-grid-nobd{border-top:0;margin-top:0}
 .ld-modal-item .k{display:block;color:#8b7169;font-size:11px;font-weight:900;letter-spacing:.05em}
 .ld-modal-item .v{display:block;color:#873026;font-family:var(--font-serif);font-size:16px;font-weight:700;margin-top:2px;line-height:1.4}
 .ld-modal-tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
 .ld-modal-steam{display:block;margin-top:20px;text-align:center;background:#A33A2F;color:#fffaf4;text-decoration:none;font-weight:900;font-size:14px;padding:12px;transition:background .2s ease}
 .ld-modal-steam:hover{background:#873026}
+.ld-modal-btn{border:0;width:100%;cursor:pointer;font-family:inherit}
 .ld-col-rank-item{cursor:pointer}
 @media(max-width:980px){.ld-watch-feat{grid-template-columns:1fr}.ld-cal-cell{min-height:52px}.ld-cal-chip small{display:none}}
 .ld-board h2{margin-bottom:6px}
@@ -683,13 +711,25 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
 .ld-demo{display:inline-block;margin-left:10px;padding:3px 10px;border:1px dashed rgba(135,48,38,.42);color:#873026;font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;vertical-align:middle}
 .ld-real{display:inline-block;margin-left:10px;padding:3px 10px;background:#A33A2F;color:#fffaf4;font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;vertical-align:middle}
 .ld-rank-sub{margin-top:3px;color:#8b7169;font-size:11px;font-weight:800}
+.ld-board-cap{margin:4px 0 14px;color:#8b7169;font-size:11.5px;font-weight:800}
 .ld-board-more{margin-top:16px;padding-top:14px;border-top:1px solid rgba(60,43,39,.11);display:flex;justify-content:flex-end;gap:10px}
 .ld-col-rank.is-collapsed .ld-col-rank-item:nth-child(n+11){display:none}
-.ld-more-link{text-decoration:none;display:inline-block}
+.ld-more-link{text-decoration:none}
 .ld-watch-wrap{max-width:1220px;margin:26px auto 0}
 .ld-watch-link{color:#f0c8be;font-size:11px;font-weight:900;text-decoration:none;margin-left:8px}
 .ld-watch-link:hover{text-decoration:underline}
 .ld-lede{max-width:1220px;margin:0 auto 26px}
+/* 主推大背景: 从今日推荐区域开始,两侧露出,向下渐变融入底色 */
+.ld-picks-zone{position:relative}
+.ld-hero-bg{position:absolute;top:0;bottom:-40px;left:50%;transform:translateX(-50%);width:100vw;overflow:hidden;pointer-events:none;z-index:0}
+.ld-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 18%}
+.ld-hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(246,240,232,0) 0%,rgba(246,240,232,.06) 38%,rgba(246,240,232,.5) 68%,#f6f0e8 98%)}
+.ld-picks-zone>.ld-lede{position:relative;z-index:1}
+.ld-picks-hint{margin-top:6px;color:#8b7169;font-size:12px;font-weight:800}
+.ld-boards{position:relative;z-index:1}
+#launchedView .ld-lede.tw-week-block{background:transparent;border:0;box-shadow:none;padding:0 0 30px}
+#launchedView .roblox-switcher{margin-bottom:0;border-bottom:0;box-shadow:none}
+#launchedView .ld-picks-zone{padding-top:22px}
 .ld-mosaic{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:200px;grid-auto-flow:dense;gap:12px}
 .ld-mos{position:relative;display:block;overflow:hidden;background:#e9ddd5;border:1px solid rgba(60,43,39,.14);cursor:pointer}
 .ld-mos-feat{grid-column:span 2;grid-row:span 2}
@@ -740,6 +780,7 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
 
 <div class="top-nav">
   <a class="top-nav-item active" onclick="switchView('twitter')" id="navTwitter">Twitter 日报</a>
+  <a class="top-nav-item local-only" onclick="switchView('launched')" id="navLaunched" style="display:none">游戏关注</a>
   <a class="top-nav-item" onclick="switchView('roblox')" id="navRoblox">Roblox 监控周报</a>
   <a class="top-nav-item" onclick="switchView('library')" id="navLibrary">游戏库</a>
 </div>
@@ -1177,6 +1218,7 @@ function renderEditorialTopNav() {
   return `${tab('ai', 'AI科技热点', aiCount)}
     ${tab('industry', '游戏市场动态', countById('industry'))}
     ${tab('indie', '新游推文', countById('indie'))}
+    ${IS_LOCAL ? tab('launched', '游戏关注', null, `switchView('launched')`) : ''}
     <button type="button" class="ed-category-tab ed-brand ${activeClass('digest')}" data-nav="digest" onclick="switchTab('digest')" aria-label="返回日精选">DAILY</button>
     ${tab('weekly', '推特周报', null)}
     ${tab('roblox', 'ROBLOX周报', null, `switchView('roblox')`)}
@@ -2488,7 +2530,7 @@ function renderLibraryContent() {
       <div>
         <div class="roblox-kicker">GAME LIBRARY</div>
         <h1 class="roblox-title">独立游戏库</h1>
-        <p class="roblox-subtitle">监测/推送候选池 · SteamDB 好评率≥90% 或官方奖项认可 · 数据更新 ${escapeHtml(gamesLibrary.updated || '')}</p>
+        <p class="roblox-subtitle">Steam好评率≥85%或官方奖项认可 · 数据更新 ${escapeHtml(gamesLibrary.updated || '')}</p>
       </div>
     </div>
   </section>
@@ -2699,9 +2741,6 @@ function renderLaunchedContent() {
   const host = document.getElementById('launchedContent');
   const boards = d.boards || [];
   const watch = d.watch || {};
-  const watchCount = (watch.featured || []).length;
-  const itemCount = boards.reduce((sum, b) => sum + Math.min((b.items || []).length, 10), 0);
-  const demoCount = boards.filter(b => b.demo).length;
   const dateBtns = (launchedManifest.dates || []).slice().reverse()
     .map(dt => `<button type="button" class="roblox-week-btn ${dt === launchedDate ? 'on' : ''}" onclick="loadLaunchedDate('${dt}')">${dt.slice(5).replace('-', '.')}</button>`)
     .join('');
@@ -2710,23 +2749,21 @@ function renderLaunchedContent() {
     <div class="roblox-switch-inner">
       <div>
         <div class="roblox-kicker">LAUNCHED GAMES DAILY</div>
-        <h1 class="roblox-title">上线游戏日推</h1>
-        <p class="roblox-subtitle">仅收录已上线游戏 · 榜单：SteamDB / B站游戏区 / 推特 / Roblox周榜 · 未上线观测接新游雷达</p>
+        <h1 class="roblox-title">游戏关注</h1>
+        <p class="roblox-subtitle"></p>
       </div>
       <div class="roblox-weeks">${dateBtns}</div>
     </div>
   </section>
-  <div class="lib-stats">
-    <div class="lib-stat"><div class="lib-stat-num">${boards.length}</div><div class="lib-stat-cap">收录榜单</div></div>
-    <div class="lib-stat"><div class="lib-stat-num">${itemCount}</div><div class="lib-stat-cap">上线游戏条目</div></div>
-    <div class="lib-stat"><div class="lib-stat-num">${watchCount}</div><div class="lib-stat-cap">重点观测游戏</div></div>
-    <div class="lib-stat"><div class="lib-stat-num">${demoCount}</div><div class="lib-stat-cap">示例板块待接入</div></div>
-  </div>
-  <div class="ld-lede">
-    <div class="tw-week-block">
-      <div class="tw-week-section-kicker">TODAY'S PICKS · ${escapeHtml(d.date || '')}</div>
-      <h2>今日推荐</h2>
-      <div class="ld-mosaic" style="margin-top:20px">${(d.picks || []).map(renderLaunchedPickTile).join('')}</div>
+  <div class="ld-picks-zone">
+    ${d.hero_bg ? `<div class="ld-hero-bg"><img src="${escapeHtml(d.hero_bg)}" alt="" referrerpolicy="no-referrer"></div>` : ''}
+    <div class="ld-lede">
+      <div class="tw-week-block">
+        <div class="tw-week-section-kicker">TODAY'S PICKS · ${escapeHtml(d.date || '')}</div>
+        <h2>今日推荐</h2>
+        <div class="ld-picks-hint">点击游戏查看详情与演示视频</div>
+        <div class="ld-mosaic" style="margin-top:14px">${(d.picks || []).map(renderLaunchedPickTile).join('')}</div>
+      </div>
     </div>
   </div>
   <div class="ld-boards">${boards.map((b, bi) => renderLaunchedBoard(b, bi)).join('')}</div>
@@ -2734,7 +2771,7 @@ function renderLaunchedContent() {
 }
 
 function renderLaunchedPickTile(item, i) {
-  return `<a class="ld-mos ${i === 0 ? 'ld-mos-feat' : ''}" href="${escapeHtml(item.link || '#')}" target="_blank" rel="noopener">
+  return `<a class="ld-mos ${i === 0 ? 'ld-mos-feat' : ''}" onclick="ldOpenPickModal(${i});return false" href="javascript:void(0)">
     ${item.cover ? `<img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.name || '')}" loading="lazy" referrerpolicy="no-referrer">` : ''}
     <span class="ld-mos-cap">
       <span class="ld-mos-name">${escapeHtml(item.name || '')}</span>
@@ -2743,40 +2780,114 @@ function renderLaunchedPickTile(item, i) {
   </a>`;
 }
 
+async function ldOpenPickModal(i) {
+  const it = launchedData.picks[i];
+  await ensureGameDetails();
+  const d = findGameDetail(it) || { name: it.name };
+  const cell = (k, v) => `<div class="ld-modal-item"><span class="k">${k}</span><span class="v">${v || '—'}</span></div>`;
+  const nameLine = escapeHtml(d.name || it.name) + (d.name_cn && d.name_cn !== d.name ? ` <span class="ld-modal-cn-inline">${escapeHtml(d.name_cn)}</span>` : '');
+  const html = `<div class="ld-modal-mask" onclick="if(event.target===this)ldCloseGameModal()">
+    <div class="ld-modal" role="dialog" aria-label="游戏详情">
+      <button type="button" class="ld-modal-close" onclick="ldCloseGameModal()" aria-label="关闭">✕</button>
+      ${d.video && d.video.hls
+        ? `<div class="ld-modal-video"><video id="ldPickVideo" controls playsinline preload="metadata" poster="${escapeHtml(d.video.poster || d.cover || '')}"></video></div>`
+        : ((d.cover || it.cover) ? `<img class="ld-modal-cover" src="${escapeHtml(d.cover || it.cover)}" alt="" referrerpolicy="no-referrer">` : '')}
+      <div class="ld-modal-body">
+        <div class="ld-modal-name">${nameLine}</div>
+        ${d.desc ? `<div class="ld-modal-desc">${escapeHtml(d.desc)}</div>` : ''}
+        ${(d.tags && d.tags.length) ? `<div class="ld-modal-tags">${d.tags.slice(0, 3).map(t => `<span class="lib-tag">${escapeHtml(t)}</span>`).join('')}</div>` : ''}
+        <div class="ld-modal-grid">
+          ${cell('上线时间', formatCnDate(d.release) || '—')}
+          ${cell('好评率', d.rating != null ? d.rating + '%' : '—')}
+          ${cell('PCU 峰值', d.pcu ? formatCount(d.pcu) : '—')}
+          ${cell('预估销量', d.sales ? formatCount(d.sales) : '—')}
+          ${cell('开发商', escapeHtml((d.dev || []).join(' / ') || '—'))}
+          ${cell('发行商', escapeHtml((d.pub || []).join(' / ') || '—'))}
+        </div>
+        ${d.steam ? `<a class="ld-modal-steam" href="${escapeHtml(d.steam)}" target="_blank" rel="noopener">前往 Steam 商店页 →</a>` : ''}
+      </div>
+    </div>
+  </div>`;
+  ldCloseGameModal();
+  document.body.insertAdjacentHTML('beforeend', html);
+  document.body.style.overflow = 'hidden';
+  if (d.video && d.video.hls) {
+    const v = document.getElementById('ldPickVideo');
+    if (v) {
+      if (window.Hls && Hls.isSupported()) {
+        const hls = new Hls();
+        hls.loadSource(d.video.hls);
+        hls.attachMedia(v);
+        v._hls = hls;
+      } else {
+        v.src = d.video.hls; // Safari 原生 HLS
+      }
+    }
+  }
+}
+
 function renderLaunchedBoard(board, bi) {
   const badge = board.demo
     ? '<span class="ld-demo">示例数据 · 待接入</span>'
-    : '<span class="ld-real">实时数据</span>';
-  const head = `<div class="tw-week-section-kicker">${escapeHtml(board.title_en || '')}${board.week ? ' · ' + escapeHtml(board.week) : ''}</div><h2>${escapeHtml(board.title)}${badge}</h2>`;
+    : `<span class="ld-real">${board.id === 'roblox' ? '每周更新' : '每日更新'}</span>`;
+  const CAPTIONS = {
+    steamdb: '按近期 Steam 关注增长排序 · 数值为新增关注数',
+    bilibili: '机会分排序(新游/异动优先) · 数值为关联视频在日榜的最高名次',
+    twitter: '按关联推文浏览量排序 · 数值为推文浏览量',
+    roblox: '按周同时在线峰值排序 · 数值为 CCU(最高同时在线人数)'
+  };
+  const cap = board.caption || CAPTIONS[board.id] || '';
+  const head = `<div class="tw-week-section-kicker">${escapeHtml(board.title_en || '')}${board.week ? ' · ' + escapeHtml(board.week) : ''}</div><h2>${escapeHtml(board.title)}${badge}</h2>${cap ? `<div class="ld-board-cap">${escapeHtml(cap)}</div>` : ''}`;
   const all = board.items || [];
-  const collapsible = all.length > 10;
-  const body = `<div class="ld-col-rank ${collapsible ? 'is-collapsed' : ''}">${all.map((it, i) => {
-    const name = `<span class="ld-col-rank-name ${it.mature ? 'ld-name-mature' : ''}" title="${escapeHtml(it.sub || '')}">${escapeHtml(it.name)}</span>`;
-    const stamp = it.fresh ? '<span class="ld-stamp">新</span>' : '';
-    const thumb = it.thumb
-      ? `<span class="ld-thumb-wrap">${stamp}<img class="ld-col-rank-thumb" src="${escapeHtml(it.thumb)}" alt="" loading="lazy" referrerpolicy="no-referrer"></span>`
-      : stamp;
-    const metricCls = (it.metric || '').length > 10 ? 'ld-col-rank-metric ld-metric-long' : 'ld-col-rank-metric';
-    const inner = `<span class="ld-col-rank-num">${i + 1}</span>${thumb}${name}<span class="${metricCls}">${escapeHtml(it.metric || '')}</span>`;
-    return `<span class="ld-col-rank-item" onclick="ldOpenGameModal(${bi}, ${i})">${inner}</span>`;
-  }).join('')}</div>`;
-  const expandBtn = collapsible
-    ? `<button type="button" class="roblox-week-btn ld-expand-btn" onclick="ldToggleBoard(this)" data-count="${all.length}">展开全部 ${all.length} 个游戏 ▾</button>`
+  const pages = Math.ceil(all.length / 10);
+  const paged = pages > 1;
+  ldBoardPages[bi] = 0;
+  const body = `<div class="ld-col-rank" id="ld-list-${bi}">${all.slice(0, 10).map((it, i) => ldRankItemHtml(bi, it, i)).join('')}</div>`;
+  const pager = paged
+    ? `<div class="ld-pager"><button type="button" class="roblox-week-btn" id="ld-prev-${bi}" onclick="ldSetPage(${bi},-1)" disabled>‹ 上一页</button><span class="ld-page-info" id="ld-page-${bi}">1 / ${pages}</span><button type="button" class="roblox-week-btn" id="ld-next-${bi}" onclick="ldSetPage(${bi},1)">下一页 ›</button></div>`
     : '';
-  const moreLink = board.more
-    ? (board.more.href
-      ? `<a class="roblox-week-btn ld-more-link" href="${escapeHtml(board.more.href)}" target="_blank" rel="noopener">${escapeHtml(board.more.label)} →</a>`
-      : `<button type="button" class="roblox-week-btn" onclick="switchView('${escapeHtml(board.more.view)}')">${escapeHtml(board.more.label)} →</button>`)
-    : '';
-  const more = (expandBtn || moreLink) ? `<div class="ld-board-more">${expandBtn}${moreLink}</div>` : '';
+  let moreLink = '';
+  if (board.more) {
+    if (board.more.href) moreLink = `<a class="roblox-week-btn ld-more-link" href="${escapeHtml(board.more.href)}" target="_blank" rel="noopener">${escapeHtml(board.more.label)} →</a>`;
+    else if (board.more.tab) moreLink = `<button type="button" class="roblox-week-btn" onclick="ldGotoDailyTab('${escapeHtml(board.more.tab)}')">${escapeHtml(board.more.label)} →</button>`;
+    else moreLink = `<button type="button" class="roblox-week-btn" onclick="switchView('${escapeHtml(board.more.view)}')">${escapeHtml(board.more.label)} →</button>`;
+  }
+  const more = (pager || moreLink) ? `<div class="ld-board-more">${pager}${moreLink}</div>` : '';
   return `<div class="tw-week-block ld-board">${head}${body}${more}</div>`;
 }
 
-function ldToggleBoard(btn) {
-  const list = btn.closest('.ld-board').querySelector('.ld-col-rank');
-  const collapsed = list.classList.toggle('is-collapsed');
-  const count = btn.dataset.count;
-  btn.textContent = collapsed ? `展开全部 ${count} 个游戏 ▾` : '收起 ▴';
+const ldBoardPages = {};
+function ldIsFresh7(rel) {
+  if (!rel || rel === '9999-12-31') return false;
+  const t = Date.parse(rel);
+  if (Number.isNaN(t)) return false;
+  return (Date.now() - t) <= 7 * 86400000;
+}
+
+function ldRankItemHtml(bi, it, i) {
+  const name = `<span class="ld-col-rank-name ${it.mature ? 'ld-name-mature' : ''}" title="${escapeHtml(it.sub || '')}">${escapeHtml(it.name)}</span>`;
+  const stamp = (it.fresh || ldIsFresh7(it.release)) ? '<span class="ld-stamp">新</span>' : '';
+  const thumb = it.thumb
+    ? `<span class="ld-thumb-wrap">${stamp}<img class="ld-col-rank-thumb" src="${escapeHtml(it.thumb)}" alt="" loading="lazy" referrerpolicy="no-referrer"></span>`
+    : stamp;
+  const metricCls = (it.metric || '').length > 10 ? 'ld-col-rank-metric ld-metric-long' : 'ld-col-rank-metric';
+  const inner = `<span class="ld-col-rank-num">${i + 1}</span>${thumb}${name}<span class="${metricCls}">${escapeHtml(it.metric || '')}</span>`;
+  return `<span class="ld-col-rank-item" onclick="ldOpenGameModal(${bi}, ${i})">${inner}</span>`;
+}
+
+function ldSetPage(bi, dir) {
+  const all = launchedData.boards[bi].items || [];
+  const pages = Math.ceil(all.length / 10);
+  const next = Math.max(0, Math.min(pages - 1, (ldBoardPages[bi] || 0) + dir));
+  ldBoardPages[bi] = next;
+  const list = document.getElementById(`ld-list-${bi}`);
+  if (list) list.innerHTML = all.slice(next * 10, next * 10 + 10).map((it, i) => ldRankItemHtml(bi, it, next * 10 + i)).join('');
+  const info = document.getElementById(`ld-page-${bi}`);
+  if (info) info.textContent = `${next + 1} / ${pages}`;
+  const prev = document.getElementById(`ld-prev-${bi}`);
+  const nextBtn = document.getElementById(`ld-next-${bi}`);
+  if (prev) prev.disabled = next === 0;
+  if (nextBtn) nextBtn.disabled = next === pages - 1;
 }
 
 // === 游戏详情弹窗 ===
@@ -2798,35 +2909,63 @@ function findGameDetail(it) {
     || null;
 }
 async function ldOpenGameModal(bi, ii) {
-  const it = launchedData.boards[bi].items[ii];
+  const board = launchedData.boards[bi];
+  const it = board.items[ii];
+  if (board.id === 'roblox') return ldOpenRobloxModal(it);
   await ensureGameDetails();
   const d = findGameDetail(it) || { name: it.name };
   const cell = (k, v) => `<div class="ld-modal-item"><span class="k">${k}</span><span class="v">${v || '—'}</span></div>`;
-  const tags = (d.tags && d.tags.length) ? d.tags : [];
-  const hasSteamStats = d.rating != null || d.pcu || d.reviews || d.sales;
-  const statCells = hasSteamStats
-    ? cell('好评率', d.rating != null ? '👍 ' + d.rating + '%' : '—')
+  const tags = (d.tags && d.tags.length) ? d.tags.slice(0, 3) : [];
+  const platform = d.appid ? 'Steam' : (d.platform || '—');
+  const ratingCell = cell('好评率', d.rating != null ? d.rating + '%' : '—');
+  // 手游判定: 非Steam 且 平台含移动端(原神/终末地等多端手游也走此版式)
+  const isMobileGame = !d.appid && /iOS|Android|移动/.test(d.platform || '');
+  let infoHtml;
+  if (isMobileGame) {
+    // 手游卡片: 平台/上线时间/畅销榜排名 · 开发商/发行商(发行商对齐上线时间列)
+    infoHtml = `<div class="ld-modal-grid ld-grid-3">${
+      cell('平台', escapeHtml(platform))
+      + cell('上线时间', formatCnDate(d.release) || '—')
+      + cell('iOS 畅销榜', d.mobile_rank ? '#' + d.mobile_rank : '—')
+      + cell('开发商', escapeHtml((d.dev || []).join(' / ') || '—'))
+      + cell('发行商', escapeHtml((d.pub || []).join(' / ') || '—'))
+    }</div>`;
+  } else if (board.id === 'steamdb') {
+    // 上线时间/好评率 · PCU/销量 · 开发商/发行商
+    infoHtml = `<div class="ld-modal-grid">${
+      cell('上线时间', formatCnDate(d.release) || '—')
+      + ratingCell
       + cell('PCU 峰值', d.pcu ? formatCount(d.pcu) : '—')
-      + cell('评价数', d.reviews ? formatCount(d.reviews) : '—')
       + cell('预估销量', d.sales ? formatCount(d.sales) : '—')
-      + cell('预估收入', d.revenue ? '≈$' + formatCount(d.revenue) : '—')
-    : cell('iOS 畅销榜', d.mobile_rank ? '#' + d.mobile_rank : '—');
+      + cell('开发商', escapeHtml((d.dev || []).join(' / ') || '—'))
+      + cell('发行商', escapeHtml((d.pub || []).join(' / ') || '—'))
+    }</div>`;
+  } else {
+    // 平台/上线时间/好评率 · PCU/销量 · 开发商/发行商 (销量与发行商纵向对齐上线时间列)
+    infoHtml = `<div class="ld-modal-grid ld-grid-3">${
+      cell('平台', escapeHtml(platform))
+      + cell('上线时间', formatCnDate(d.release) || '—')
+      + ratingCell
+      + cell('PCU 峰值', d.pcu ? formatCount(d.pcu) : '—')
+      + cell('预估销量', d.sales ? formatCount(d.sales) : '—')
+      + '<div></div>'
+      + cell('开发商', escapeHtml((d.dev || []).join(' / ') || '—'))
+      + cell('发行商', escapeHtml((d.pub || []).join(' / ') || '—'))
+    }</div>`;
+  }
   const nameLine = escapeHtml(d.name || it.name) + (d.name_cn && d.name_cn !== d.name ? ` <span class="ld-modal-cn-inline">${escapeHtml(d.name_cn)}</span>` : '');
   const html = `<div class="ld-modal-mask" onclick="if(event.target===this)ldCloseGameModal()">
     <div class="ld-modal" role="dialog" aria-label="游戏详情">
       <button type="button" class="ld-modal-close" onclick="ldCloseGameModal()" aria-label="关闭">✕</button>
-      ${d.cover ? `<img class="ld-modal-cover" src="${escapeHtml(d.cover)}" alt="" referrerpolicy="no-referrer">` : ''}
+      ${(d.cover || it.thumb) ? `<img class="ld-modal-cover" src="${escapeHtml(d.cover || it.thumb)}" alt="" referrerpolicy="no-referrer">` : ''}
       <div class="ld-modal-body">
         <div class="ld-modal-name">${nameLine}</div>
         ${d.desc ? `<div class="ld-modal-desc">${escapeHtml(d.desc)}</div>` : ''}
         ${tags.length ? `<div class="ld-modal-tags">${tags.map(t => `<span class="lib-tag">${escapeHtml(t)}</span>`).join('')}</div>` : ''}
-        <div class="ld-modal-grid">
-          ${cell('上线时间', formatCnDate(d.release) || '—')}
-          ${cell('开发商', escapeHtml((d.dev || []).join(' / ') || '—'))}
-          ${cell('发行商', escapeHtml((d.pub || []).join(' / ') || '—'))}
-          ${statCells}
-        </div>
-        ${d.steam ? `<a class="ld-modal-steam" href="${escapeHtml(d.steam)}" target="_blank" rel="noopener">前往 Steam 商店页 →</a>` : ''}
+        ${infoHtml}
+        ${board.id === 'twitter' && it.day != null
+          ? `<button type="button" class="ld-modal-steam ld-modal-btn" onclick="ldGotoTweet('${it.day}', ${it.idx != null ? it.idx : -1})">查看推文分析 →</button>`
+          : (d.steam ? `<a class="ld-modal-steam" href="${escapeHtml(d.steam)}" target="_blank" rel="noopener">前往 Steam 商店页 →</a>` : '')}
       </div>
     </div>
   </div>`;
@@ -2835,9 +2974,50 @@ async function ldOpenGameModal(bi, ii) {
   document.body.style.overflow = 'hidden';
 }
 function ldCloseGameModal() {
+  const v = document.getElementById('ldPickVideo');
+  if (v && v._hls) v._hls.destroy();
   const m = document.querySelector('.ld-modal-mask');
   if (m) m.remove();
   document.body.style.overflow = '';
+}
+
+// 跳转到日报-新游推文中该游戏的分析卡片
+async function ldGotoTweet(date, idx) {
+  ldCloseGameModal();
+  if (date && date !== currentDate) await loadDate(date);
+  if (idx != null && idx >= 0) jumpToCard('indie', idx);
+  else switchTab('indie');
+}
+
+// 跳转到最新一天的日报页签
+async function ldGotoDailyTab(tab) {
+  const dates = (manifest && manifest.dates) || [];
+  const latest = dates[dates.length - 1];
+  if (latest && latest !== currentDate) await loadDate(latest);
+  switchTab(tab);
+}
+
+function ldOpenRobloxModal(it) {
+  const cell = (k, v) => `<div class="ld-modal-item"><span class="k">${k}</span><span class="v">${v || '—'}</span></div>`;
+  const html = `<div class="ld-modal-mask" onclick="if(event.target===this)ldCloseGameModal()">
+    <div class="ld-modal" role="dialog" aria-label="游戏详情">
+      <button type="button" class="ld-modal-close" onclick="ldCloseGameModal()" aria-label="关闭">✕</button>
+      ${it.thumb ? `<img class="ld-modal-cover" src="${escapeHtml(it.thumb)}" alt="" referrerpolicy="no-referrer">` : ''}
+      <div class="ld-modal-body">
+        <div class="ld-modal-name">${escapeHtml(it.name)}</div>
+        ${it.desc ? `<div class="ld-modal-desc">${escapeHtml(it.desc)}</div>` : ''}
+        <div class="ld-modal-grid ld-grid-3">
+          ${cell('类型', escapeHtml(it.genre || '—'))}
+          ${cell('PCU 峰值', it.metric || '—')}
+          ${cell('上线时间', formatCnDate(it.release) || '—')}
+        </div>
+        ${it.link ? `<a class="ld-modal-steam" href="${escapeHtml(it.link)}" target="_blank" rel="noopener">前往 Roblox 页面 →</a>` : ''}
+      </div>
+    </div>
+  </div>`;
+  ldCloseGameModal();
+  document.body.insertAdjacentHTML('beforeend', html);
+  document.body.style.overflow = 'hidden';
 }
 
 function renderLaunchedWatch(watch) {
@@ -2846,6 +3026,7 @@ function renderLaunchedWatch(watch) {
   return `<div class="ld-watch-wrap"><section class="tw-week-watch">
     <div class="tw-week-section-kicker">UNRELEASED WATCH · 新游雷达</div>
     <div class="tw-week-watch-head"><h2>未上线游戏观测</h2></div>
+    <div class="ld-cal-head"><span class="ld-cal-month">值得关注的游戏</span></div>
     <div class="ld-watch-feat">${feat.map(w => `
       <a class="ld-watch-card" href="${escapeHtml(w.link || '#')}" target="_blank" rel="noopener">
         ${w.cover ? `<img src="${escapeHtml(w.cover)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ''}
@@ -2856,7 +3037,7 @@ function renderLaunchedWatch(watch) {
         </span>
       </a>`).join('')}</div>
     ${renderWatchCalendar(watch.calendar || [])}
-    ${watch.more ? `<div class="ld-watch-more"><a class="roblox-week-btn ld-more-link" href="${escapeHtml(watch.more.href)}" target="_blank" rel="noopener">${escapeHtml(watch.more.label)} →</a></div>` : ''}
+    ${watch.more ? `<div class="ld-board-more" style="border-top-color:rgba(255,250,244,.18)"><a class="roblox-week-btn ld-more-link" href="${escapeHtml(watch.more.href)}" target="_blank" rel="noopener">${escapeHtml(watch.more.label)} →</a></div>` : ''}
   </section></div>`;
 }
 
@@ -2876,19 +3057,38 @@ function renderWatchCalendar(events) {
   });
   const dows = ['一', '二', '三', '四', '五', '六', '日'];
   let cells = '';
-  for (let i = 0; i < firstOffset; i++) cells += '<div class="ld-cal-cell" style="visibility:hidden"></div>';
+  for (let i = 0; i < firstOffset; i++) cells += '<div class="ld-cal-cell" style="visibility:hidden;pointer-events:none"></div>';
   for (let d = 1; d <= daysInMonth; d++) {
     const ds = `${y}-${String(m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
     const evs = byDay[d] || [];
-    cells += `<div class="ld-cal-cell ${ds === todayStr ? 'today' : ''} ${ds < todayStr ? 'dim' : ''}">
+    cells += `<div class="ld-cal-cell ${evs.length ? 'has-ev' : ''} ${ds === todayStr ? 'today' : ''} ${ds < todayStr ? 'dim' : ''}" data-day="${ds}" onclick="ldCalSelect('${ds}')">
       <span class="ld-cal-day">${d}</span>
       ${evs.map(e => `<span class="ld-cal-chip">${escapeHtml(e.name)}<small>${escapeHtml(e.type)} · ${escapeHtml(e.platform)}</small></span>`).join('')}
     </div>`;
   }
   return `<div class="ld-cal">
-    <div class="ld-cal-head"><span class="ld-cal-month">${y}年${m + 1}月 · 上线日历</span></div>
+    <div class="ld-cal-head"><span class="ld-cal-month">${y}年${m + 1}月 · 上线日历</span><span style="color:rgba(246,240,232,.5);font-size:11px;font-weight:800">点击日期查看当日上线</span></div>
     <div class="ld-cal-grid">${dows.map(d => `<div class="ld-cal-dow">${d}</div>`).join('')}${cells}</div>
+    <div class="ld-cal-detail" id="ldCalDetail"><div class="ld-cal-detail-t">点击任意日期查看当日上线游戏</div></div>
   </div>`;
+}
+
+function ldCalSelect(ds) {
+  const events = (launchedData.watch && launchedData.watch.calendar) || [];
+  const dayEvents = events.filter(e => e.date === ds);
+  document.querySelectorAll('.ld-cal-cell').forEach(c => c.classList.toggle('sel', c.dataset.day === ds));
+  const box = document.getElementById('ldCalDetail');
+  if (!box) return;
+  const cn = formatCnDate(ds);
+  box.innerHTML = `<div class="ld-cal-detail-t">${cn} · ${dayEvents.length ? `${dayEvents.length} 款` : '无上线安排'}</div>`
+    + dayEvents.map(e => `<div class="ld-cal-detail-g">${escapeHtml(e.name)}<small>${escapeHtml(e.type)} · ${escapeHtml(e.platform)}</small></div>`).join('');
+}
+
+// 本地环境(localhost/file)显示"上线日推"入口,线上隐藏
+const IS_LOCAL = ['localhost', '127.0.0.1', ''].includes(location.hostname);
+if (IS_LOCAL) {
+  document.body.classList.add('local-mode');
+  document.querySelectorAll('.local-only').forEach(el => { el.style.display = ''; });
 }
 
 init();
