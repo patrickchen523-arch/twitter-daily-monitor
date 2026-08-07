@@ -1,0 +1,447 @@
+{
+ "date": "2026-08-07",
+ "meta": {
+  "raw_count": 229,
+  "filtered_count": 200,
+  "selected_count": 12,
+  "crawl_time": "2026-08-07 18:00"
+ },
+ "lede": "GTA 6首个实机「Extended Look」定档8/27，Netflix全球首映\nEmergency Buddies：世界最不靠谱急救员4人物理合作——142万浏览\nFields of Mistria 1.0发售两日官宣销量破100万份",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "GTA 6首个实机「Extended Look」定档8/27，Netflix全球首映"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "Emergency Buddies：世界最不靠谱急救员4人物理合作——142万浏览"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 1,
+   "hook": "Fields of Mistria 1.0发售两日官宣销量破100万份"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "陈成新skill「karpathy-3d-story」：一段素材产出3D短片，纯函数渲染agent可自行截图迭代\nMatt Shumer发布Gauntlet Loop提示词生成器：输入需求直出Claude Code可用的多智能体长任务prompt\nDeepSeek公告计划近期整体涨价「涨幅较大」，需求过载所致"
+  },
+  {
+   "id": "industry",
+   "text": "GTA 6「Extended Look」8/27 Netflix首映，11/19发售$80起\nHalo Studios发售一周即裁员，6年半老兵制片人在列\n三大内存厂2027年产能已售罄，涨价或延续到2028\nCapcom：90%销量已数字化，实体盘消亡「无重大影响」"
+  },
+  {
+   "id": "indie",
+   "text": "Emergency Buddies：最不靠谱急救员4人物理合作，142万浏览\nFields of Mistria 1.0两日官宣100万份，PCU连涨至27,172\nMy Party Is Grinding：桌面放置RPG接入Steam市场交易，8/27免费上线"
+  },
+  {
+   "id": "tools",
+   "text": "「竞技Blender」戏谑视频爆红：536万浏览/25.5万赞\nKIRI Engine自动绑骨：3D扫描模型直出可动画FBX"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "陈成 · 原创工具",
+     "tags": [
+      "Claude Code",
+      "Skill",
+      "3D生成"
+     ],
+     "title": "陈成发布「karpathy-3d-story」skill：一段素材直出3D短片，agent自己截图改画面",
+     "en_title": "新写了个 skill 叫「/karpathy-3d-story」，给它一段素材，它产出一个 3D 短片",
+     "full_text": "skills +1 🎉\n\n新写了个 skill 叫「/karpathy-3d-story」，给它一段素材，它产出一个 3D 短片。想法来自 karpathy 那条让 opus 5 渲《指环王》的推。\n\n尝试了一些 case 后感觉效果还不错，就提了个 skill 。\n\nskill 会产出一个 scene.html，过程化生成，没有模型文件也不用构建，双击打开就能看。每一帧都是故事时间的纯函数，所以 agent 能自己截图，看着画面改。\n\n下面的视频是一个西游记的 example，五章，三分半。配音是 elevenlabs 直接生成的，没有细处理，中文听着外国味很重。\n\nskill 链接在评论区。",
+     "author": "陈成",
+     "date": "2026-08-06",
+     "likes": 19,
+     "views": 4094,
+     "link": "https://x.com/chenchengpro/status/2085274449121788324",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2085263692799807488/img/jFYundjJv6M_QukW.jpg",
+      "video_url": "https://x.com/chenchengpro/status/2085274449121788324/video/1"
+     },
+     "summary": "陈成新skill：输入一段素材即产出3D短片。生成单个scene.html，过程化生成、无模型文件、双击即看；「每一帧都是故事时间的纯函数」，因此agent能自己截图、看着画面迭代。示例是一条五章三分半的《西游记》短片，配音由ElevenLabs生成。灵感来自Karpathy让Opus 5渲《指环王》的推文。",
+     "analysis": "「输出物是纯函数」让agent获得了视觉自检能力——这是agent内容生产的关键工程范式：不需要人盯着，模型自己看结果改代码。继昨日skills治理方案后，陈成连续第二天给出可抄的agent工程实践。",
+     "recommendation": "陈成karpathy-3d-story：素材直出3D短片，纯函数渲染让agent自检画面",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Matt Shumer · 工具发布",
+     "tags": [
+      "Claude Code",
+      "多智能体",
+      "提示词工程"
+     ],
+     "title": "Matt Shumer发布Gauntlet Loop提示词生成器：输入需求，直出多智能体长任务prompt",
+     "en_title": "Want to build games like this? I made it stupidly simple. Tell this tool what you want to build → it writes the Gauntlet Loop prompt → you run it.",
+     "full_text": "Want to build games like this? I made it stupidly simple.\n\nTell this tool what you want to build → it writes the Gauntlet Loop prompt → you run it.\n\nFree forever: https://t.co/vkXxe2IaZQ",
+     "author": "Matt Shumer",
+     "date": "2026-08-05",
+     "likes": 958,
+     "views": 96189,
+     "link": "https://x.com/mattshumer_/status/2085036662531207540",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2085035618489245702/img/Yjf_2ZS7GrgEciEj.jpg",
+      "video_url": "https://x.com/mattshumer_/status/2085036662531207540/video/1"
+     },
+     "summary": "Matt Shumer（Claude of Duty作者）推出免费生成器：描述想做的东西，它按Claude of Duty同款方法写出Gauntlet Loop提示词——设定agent可自检的「验收标准」、把任务拆成可独立评判的块、每个builder配一个苛刻critic。官网强调使用条件：Claude Code+Opus 5、开ultracode、移除所有skills和MCP、粘贴后不要干预；并警告该流程会烧掉Max计划周额度级别的token。",
+     "analysis": "「多智能体长任务」正在从玄学变成可复用配方：验收标准+任务分块+对抗评审的三件套被产品化成生成器。「摘掉skills和MCP再跑」的注意事项，与陈成的skill治理形成有趣呼应——重型agent工作流开始要求「净室环境」。",
+     "recommendation": "Gauntlet Loop生成器：把多智能体长任务prompt产品化，9.6万浏览"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Tony出海 · 行业动态",
+     "tags": [
+      "DeepSeek",
+      "模型定价",
+      "中国AI"
+     ],
+     "title": "DeepSeek公告计划近期整体涨价：「预计涨幅较大」，需求过载挤占训练",
+     "en_title": "因为需求太大，DeepSeek 的服务器不够，严重影响到正常使用和训练，开始大幅涨价。",
+     "full_text": "因为需求太大，DeepSeek 的服务器不够，严重影响到正常使用和训练，开始大幅涨价。\n\n你们的梁圣要变成梁子了 https://t.co/DwnBleWOYu",
+     "author": "Tony出海",
+     "date": "2026-08-06",
+     "likes": 2,
+     "views": 883,
+     "link": "https://x.com/iamtonyzhu/status/2085191495125250056",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPAWj2xbMAANfvj.jpg"
+     },
+     "summary": "Tony出海贴出DeepSeek开放平台官方提示截图（经核实）：「计划近期整体上调，预计涨幅较大，具体方案以正式通知为准」。Tony解读为需求太大、服务器不足已影响正常使用和训练。其另一推文将原因指向幻方量化（属作者个人猜测，未获证实）。",
+     "analysis": "低价中国模型的「成本地板」开始松动：需求过载→涨价，说明推理毛利压力真实存在。结合8/5 Levie「开放权重一天一发」的判断——开源模型继续免费，而托管服务开始分层定价，对依赖低价API做原型验证的团队是预算信号。",
+     "recommendation": "DeepSeek公告：近期整体涨价「涨幅较大」，低价API时代现松动信号"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "GameSpot · 行业新闻",
+     "tags": [
+      "GTA 6",
+      "Netflix",
+      "预告片"
+     ],
+     "title": "GTA 6「Extended Look」定档8/27：Netflix全球首映，游戏预告首登流媒体",
+     "en_title": "GTA 6 \"Extended Look\" Coming August 27 On Netflix",
+     "full_text": "GTA 6 “Extended Look” Coming August 27 On Netflix https://t.co/p1NdPmkxUi https://t.co/yVyXo2992r",
+     "author": "GameSpot",
+     "date": "2026-08-06",
+     "likes": 189,
+     "views": 46759,
+     "link": "https://x.com/GameSpot/status/2085355268934885753",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPCrkK-bQAAHXng.jpg"
+     },
+     "summary": "Rockstar官宣：GTA 6 Extended Look将于8/27下午3点（美东）在Netflix首映，当晚9点上线自家YouTube。Netflix VP称「GTA揭幕本身已成文化时刻」。同步释出Lucia与Jason新主视觉（Jason的「Leonida」海牛冲浪T恤引发冲浪机制猜想）。游戏11/19发售，预购$80/Ultimate $100。Netflix落地页已上线；部分玩家对「预告片被流媒体平台限时独占」表达不满。",
+     "analysis": "游戏预告片第一次把「首映权」卖给了流媒体平台——营销渠道的platform exclusive逻辑从游戏本体扩展到预告片。对大厂发行节奏的意义：GTA级别的文化事件可以让Netflix当首发窗口，YouTube退居二发。这个先例若成立，头部IP的预告分发将成为新的独家交易标的。",
+     "recommendation": "GTA 6首个实机「Extended Look」定档8/27，Netflix全球首映",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 裁员",
+     "tags": [
+      "Halo Studios",
+      "Xbox",
+      "裁员"
+     ],
+     "title": "Halo Studios发售一周即裁员：6年半老兵制片人在列，销量数据同步曝光",
+     "en_title": "Halo Studios hit by layoffs after release of Halo: Campaign Evolved",
+     "full_text": "Halo Studios hit by layoffs after release of Halo: Campaign Evolved\n\nhttps://t.co/Ja01pqzarQ https://t.co/FUUhfLVxxh",
+     "author": "Eurogamer",
+     "date": "2026-08-06",
+     "likes": 65,
+     "views": 10627,
+     "link": "https://x.com/eurogamer/status/2085292180957007889",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPByKy5WUAA4zWN.png"
+     },
+     "summary": "《Halo: Campaign Evolved》7/28发售仅一周后，Halo Studios多名员工在LinkedIn宣布被裁：包括工作6年半、「躲过多轮裁员」的制片人Nick Treitman与scrum master Paul Morris。规模未明，Xbox未回应。背景是Xbox七月宣布的3,200人裁员计划（1,600立即+1,600本财年）。Alinea数据：本作Steam售出21.2万份、Xbox约90万、PlayStation约35.1万（PS端「开局明显偏慢」），且首发在Game Pass内。",
+     "analysis": "「发售成功即裁员」已成微软系工作室的标准动作——项目制编制的算盘打到了重制王牌IP头上。注意销量结构：Xbox本家平台只占六成不到，PS慢热+Game Pass分流，重制商业模型对「编制永久化」的支撑力正在消失。",
+     "recommendation": "Halo Studios发售一周即裁员：6年老兵在列，重制王牌也保不住编制",
+     "featured": true,
+     "game_ref": "Halo: Campaign Evolved",
+     "enrichment": {
+      "game_name": "Halo: Campaign Evolved",
+      "genre": "FPS / 动作冒险（重制）",
+      "developer": "Halo Studios / Xbox Game Studios",
+      "platforms": [
+       "Steam(Windows)",
+       "Xbox",
+       "PS5"
+      ],
+      "price": "$49.99",
+      "release_date": "已发售 · 2026年7月28日",
+      "steam_rating": "10,500条评价",
+      "steam_url": "https://store.steampowered.com/app/2806050/Halo_Campaign_Evolved/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2806050/30d8542d35d7919b34e5f5dbe955d04c3f99e6da/header.jpg?t=1785367749",
+      "youtube_video": null,
+      "description": "【游戏定位】Halo: Combat Evolved战役的忠实现代化重制，从零重建，7/28发售，首发入Game Pass。\n\n【市场表现】Alinea Analytics估算：Steam 21.2万份、Xbox（主机+PC）约90万份、PlayStation约35.1万份——PS端开局偏慢；自家PCU监控首日峰值25,376后快速回落至1.5万平台期。\n\n【相关动态】发售一周即传出工作室裁员（制片人Nick Treitman等在列），为Xbox 3,200人裁员计划的延续；多人项目Ekur此前已曝取消；彩蛋暗示Halo 2重制或已在路上。",
+      "why_notable": "发售成功即裁员的最新样本：重制王牌IP也撑不起项目制编制"
+     }
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Rock Paper Shotgun · 硬件",
+     "tags": [
+      "内存危机",
+      "DRAM",
+      "供应链"
+     ],
+     "title": "三大内存厂2027年产能已全部售罄：涨价噩梦或延续到2028",
+     "en_title": "The three biggest RAM makers have already sold all their 2027 output, report says, potentially stretching price woes into 2028",
+     "full_text": "In today’s Demoralising But Not Remotely Surprising Hardware News, \"industry insiders\" are claiming that the Big Three memory makers – Samsung, Micron, and SK Hynix – have already sold not just their expected manufacturing output for 2026, but 2027 as well. https://t.co/YNaKQBpV9c",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-08-06",
+     "likes": 3,
+     "views": 2006,
+     "link": "https://x.com/rockpapershot/status/2085376633662218553",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPC--wGXkAAWX4E.jpg"
+     },
+     "summary": "DigiTimes报道（TweakTown转译）：三星、美光、SK海力士的DRAM与HBM产能不仅2026年售罄，2027年也已被预订一空——大规模新内存供应实际已锁死到2028年。NAND稍好但也预计本月内售罄。三厂同时还在美国面临内存价格垄断集体诉讼。报道点名CXMT是唯一可见的替代增量，但渗透缓慢（仅HP/华硕/宏碁部分亚洲机型）。",
+     "analysis": "内存危机的时间轴再次被拉长：8/5技嘉重产AM4、8/6 CXMT入供应链、8/7「2027年也卖完了」。对游戏行业的实际含义：2027年前硬件成本不会缓解，主机/掌机/显卡的定价与配置策略都要按「长期高位」重排——低配优化能力正在变成核心竞争力。",
+     "recommendation": "三大内存厂2027产能售罄：DRAM/HBM锁死到2028，CXMT是唯一增量",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 财报",
+     "tags": [
+      "Capcom",
+      "数字化",
+      "实体盘"
+     ],
+     "title": "Capcom：90%销量已数字化，实体盘消亡「无重大影响」——鬼武者提前发售避GTA",
+     "en_title": "Capcom shrugs off PlayStation's all-digital future, suggests shrinking physical market will not have a \"significant impact\" on its operations",
+     "full_text": "Capcom shrugs off PlayStation's all-digital future, suggests shrinking physical market will not have a \"significant impact\" on its operations\n\nhttps://t.co/VoV9aRsFnn https://t.co/3ZdvuKpdy2",
+     "author": "Eurogamer",
+     "date": "2026-08-06",
+     "likes": 13,
+     "views": 6727,
+     "link": "https://x.com/eurogamer/status/2085327944587653374",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPCSs4uXgAALCAF.jpg"
+     },
+     "summary": "Capcom财报Q&A回应索尼2028停售实体盘：「约90%的销量已是数字版」，预计实体市场萎缩「不会对运营产生重大影响」。同场披露：RE Requiem销量破800万、新IP Pragmata售出250万；世嘉CEO同期表态「数字化转型对行业长久发展至关重要」。被问及鬼武者：剑之道为何提前发售，Capcom答「基于开发进度与市场环境的综合判断」——Eurogamer点破：躲开GTA 6。",
+     "analysis": "发行商阵营已开始为「无盘时代」公开站队：Capcom与世嘉的数字占比话术，给索尼2028停盘提供了供给侧背书。分析师反复证明实体零售更便宜——数字化对消费者的价格保护在减弱，这与动态定价争议叠加，是玩家信任账户的又一笔支出。",
+     "recommendation": "Capcom：90%销量数字化，实体消亡无重大影响；鬼武者提前疑避GTA6"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Indie Game Joe · 新游发现",
+     "tags": [
+      "合作",
+      "物理",
+      "喜剧"
+     ],
+     "title": "Emergency Buddies：世界最不靠谱急救员——一人开车三人在后厢抢救的物理合作",
+     "en_title": "A new game has been announced where you and your friends are the world's least qualified paramedics",
+     "full_text": "A new game has been announced where you and your friends are the world's least qualified paramedics\n\n- One drives, the rest work the patient in the back\n- Keep them alive to the ER\n- Physics-based co-op\n- Drive fast but careful\n\nIt's called Emergency Buddies. Would you play this? https://t.co/qDXMGZDjok",
+     "author": "Indie Game Joe",
+     "date": "2026-08-05",
+     "likes": 15928,
+     "views": 1425265,
+     "link": "https://x.com/IndieGameJoe/status/2085060621934932295",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2085055045196812288/img/ZUxN8jDAC7qU7TNg.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2085060621934932295/video/1"
+     },
+     "summary": "Gestalt Studio开发、Polden Publishing发行的4人合作救护车模拟：一人开车狂飙，其余人在后厢徒手稳住病人，「尽量活着」送达医院。物理驱动制造混乱笑料：开太快病人在车厢里飞，开太慢人救不回来。Indie Game Joe演示视频142万浏览/1.6万赞；GameSpark同步报道「世界一頼りない救急隊」。Steam页面公开，发售日TBA。",
+     "analysis": "",
+     "recommendation": "Emergency Buddies：最不靠谱急救员4人物理合作，一人开车三人抢救——142万浏览",
+     "featured": true,
+     "game_ref": "Emergency Buddies",
+     "enrichment": {
+      "game_name": "Emergency Buddies",
+      "genre": "合作 / 物理喜剧 / 模拟",
+      "developer": "Gestalt Studio（Polden Publishing发行）",
+      "platforms": [
+       "Steam(Windows)"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4767090/Emergency_Buddies/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4767090/d3a5da24a3b49132119024b09abf36b93758dd9a/header.jpg?t=1785950111",
+      "youtube_video": null,
+      "description": "【核心玩法】最多4人合作的救护车模拟：「世界上最不合格的急救组」接单后驾车横穿小镇——一人负责开车，其余人在后车厢里实时抢救病人，目标是「尽量活着」送进急诊室。物理驱动的混乱是核心机制：车速与施救操作互相干扰，快与稳的取舍制造笑点与紧张感。\n\n【美术与氛围】明快卡通3D，走滑稽闹剧路线而非血腥写实。\n\n【开发者】Gestalt Studio开发，Polden Publishing发行。\n\n【优势】「司机vs后厢护理」是合作品类的全新角色分配——Overcooked式分工混乱框架在急救题材上的新鲜演绎；物理混乱天然适配直播与短视频，Indie Game Joe演示获142万浏览、GameSpark同步报道，传播已验证。\n\n【不足】发售日TBA，当前仅有Steam页面；物理合作游戏的操作手感与网络同步质量决定口碑上限。\n\n【综合】合作派对赛道的又一看点新作，分工设计有差异化，值得加入愿望单观望。",
+      "why_notable": "「最不靠谱急救员」的物理合作新角度：一人开车三人车厢抢救，142万浏览"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Fields of Mistria官方 · 里程碑",
+     "tags": [
+      "农场模拟",
+      "销量",
+      "1.0"
+     ],
+     "title": "Fields of Mistria 1.0发售两日官宣：累计销量突破100万份",
+     "en_title": "One million copies sold! ✨ Thank you for playing, sharing, and supporting Fields of Mistria",
+     "full_text": "One million copies sold! ✨ Thank you for playing, sharing, and supporting Fields of Mistria 💛 https://t.co/jwfjD7hWv9",
+     "author": "Fields of Mistria ✨ Out now in 1.0",
+     "date": "2026-08-05",
+     "likes": 11377,
+     "views": 202911,
+     "link": "https://x.com/FieldsofMistria/status/2085134373595070940",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2085134169533792256/img/KD0FbNgmzlFZTnDo.jpg",
+      "video_url": "https://x.com/FieldsofMistria/status/2085134373595070940/video/1"
+     },
+     "summary": "NPC Studio官宣：Fields of Mistria累计销量突破100万份。1.0正式版8/5发售（新增结婚、生子等终局内容+日语支持），自家PCU监控显示发售当日27,074首破20K、8/7再涨至27,172连续三天创新高，好评率91%（2.7万条）。$12.59，Windows/Linux。",
+     "analysis": "",
+     "recommendation": "Fields of Mistria 1.0两日官宣100万份：星露谷谱系最强答卷——PCU三连涨",
+     "featured": true,
+     "game_ref": "Fields of Mistria",
+     "enrichment": {
+      "game_name": "Fields of Mistria",
+      "genre": "农场生活模拟 / RPG",
+      "developer": "NPC Studio（独立工作室，自发发行）",
+      "platforms": [
+       "Steam(Windows/Linux)"
+      ],
+      "price": "$12.59",
+      "release_date": "已发售 · 2026年8月5日（1.0正式版）",
+      "steam_rating": "91% 好评（27,243条评价）",
+      "steam_url": "https://store.steampowered.com/app/2142790/Fields_of_Mistria/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2142790/38313105cdcda9295fed4b124e5f5437872d35b4/header_alt_assets_4.jpg?t=1785944891",
+      "youtube_video": null,
+      "description": "【核心玩法】农场生活模拟RPG：种田、畜牧、钓鱼、采矿、交友恋爱一应俱全，1.0正式版补完结婚、生子等终局内容与日语本地化。复古动漫画风致敬90年代牧场物语谱系，魔法要素融入日常经营。\n\n【开发者】NPC Studio，独立工作室自发发行。\n\n【市场表现】1.0发售当日PCU 27,074首破20K（自家监控），随后连续三天爬升至27,172；发售两日官宣累计销量破100万份（含EA期积累）；好评率91%、评价2.7万条。\n\n【优势】星露谷like赛道当前完成度最高的1.0答卷；EA期口碑（97%）平稳过渡到正式版；价格带友好。\n\n【不足】PCU量级与星露谷峰值仍有距离；主机版表现待观察。\n\n【综合】从EA到1.0的教科书式运营，百万销量+PCU三连涨验证「愿望单→销量→在线」的完整转化链。",
+      "why_notable": "1.0发售两日官宣百万销量，自家PCU监控记录三连涨——愿望单经济的完整兑现样本"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Game*Spark · 新游报道",
+     "tags": [
+      "放置",
+      "Steam市场",
+      "F2P"
+     ],
+     "title": "My Party Is Grinding：桌面放置RPG接入Steam市场交易，「服务器权威」保物价",
+     "en_title": "基本プレイ無料のSteamマーケットで取引できる新たな放置ハクスラRPG『My Party Is Grinding』8月27日リリースへ",
+     "full_text": "基本プレイ無料のSteamマーケットで取引できる新たな放置ハクスラRPG『My Party Is Grinding』8月27日リリースへ―サーバー安定性を重視\nhttps://t.co/MlThReE7rY https://t.co/OT0RpU4Kqr",
+     "author": "⚡Game*Spark⚡",
+     "date": "2026-08-05",
+     "likes": 2058,
+     "views": 381582,
+     "link": "https://x.com/gamespark/status/2084916447567094076",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2084916329824563200/pu/img/fDZy1JvbJkIIzA40.jpg",
+      "video_url": "https://x.com/gamespark/status/2084916447567094076/video/1"
+     },
+     "summary": "韩国独立团队SUPERLINK新作：屏幕角落小窗运行的5人小队放置RPG，离线最多累积8小时收益；4章×10关×5难度、400+装备（8品级×12部位）可合成附魔。高等级装备经「交易船」挂上Steam社区市场交易；主打「服务器权威」设计——物品生成与成长全在服务端验证，防复制防回档以保护市场价格。8/27免费上线（皮肤/便利功能付费，非P2W），8月内有playtest。",
+     "analysis": "",
+     "recommendation": "My Party Is Grinding：桌面放置+Steam市场交易，服务器权威防复制——8/27免费",
+     "game_ref": "My Party Is Grinding",
+     "enrichment": {
+      "game_name": "My Party Is Grinding",
+      "genre": "放置RPG / 桌面挂机 / F2P",
+      "developer": "SUPERLINK（韩国独立团队）",
+      "platforms": [
+       "Steam(Windows/Mac)"
+      ],
+      "price": "免费（含内购，非P2W）",
+      "release_date": "2026年8月27日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4952980/My_Party_Is_Grinding/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4952980/5715d306e00589ea9cba3d28b0b30ad96fe1a8ba/header.jpg?t=1786063410",
+      "youtube_video": null,
+      "description": "【核心玩法】桌面小窗放置RPG：骑士/战士/刺客/弓手/法师5人小队自动战斗，游戏关闭时最多累积8小时资金与经验。4章×10关×5难度；装备8品级×12部位、400种以上，可在铁匠铺合成/出售/制作，在魔法塔刻印/附魔/镶宝石。技能树被动+4主动技能构成build空间。\n\n【经济系统】高等级装备与素材可交给「交易船」在Steam社区市场上架交易——游戏把Steam市场当核心经济层设计：自称「服务器权威」架构，物品生成与角色成长全部由服务端签发验证，从机制上杜绝复制与回档，以此保护市场价格。\n\n【开发者】SUPERLINK，韩国独立团队。\n\n【优势】桌面放置赛道正热（TBH: Task Bar Hero今日PCU 17万）；「可交易放置」有明确差异化；免费+非P2W（皮肤与便利功能）定价友好；8月有playtest可先试。\n\n【不足】8/27才上线，放置经济长期平衡未经验证；Steam市场手续费与打金bot是固有风险。\n\n【综合】「Banana式挂机经济」的正经RPG化尝试，服务器权威设计是对市场交易痛点的正面回答，值得观察上线后的物价走势。",
+      "why_notable": "桌面放置+Steam市场交易的新入局者：服务端验证防复制保物价，8/27免费上线"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Jackson Husdog · 社区热点",
+     "tags": [
+      "Blender",
+      "社区文化"
+     ],
+     "title": "「竞技Blender」戏谑视频爆红：536万浏览/25.5万赞，建模软件的电竞想象",
+     "en_title": "Finally. Competitive Blender.",
+     "full_text": "Finally. Competitive Blender.",
+     "author": "Jackson | Husdog🦊💍",
+     "date": "2026-08-05",
+     "likes": 255290,
+     "views": 5362837,
+     "link": "https://x.com/Jackson_Boof/status/2085082694573002969",
+     "media": null,
+     "summary": "Jackson Husdog发布的戏谑视频《Finally. Competitive Blender.》单日536万浏览、25.5万赞、2.6万转发，成为本周工具类最大传播。视频以电竞赛事的包装想象「竞技化Blender建模」（视频内容未逐帧核实，以推文互动数据为准）。",
+     "analysis": "一条纯玩梗视频能拿到536万浏览，说明Blender的用户基数与社区认同感已经到了「大众文化」量级——免费开源工具的文化渗透，是任何付费DCC都买不到的护城河。对工具团队：社区梗的传播效率远超功能更新公告。",
+     "recommendation": "「竞技Blender」戏谑视频爆红536万浏览：建模软件的大众文化时刻",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "KIRI Engine · 工具更新",
+     "tags": [
+      "3D扫描",
+      "自动绑骨",
+      "资产管线"
+     ],
+     "title": "KIRI Engine自动绑骨：3D扫描模型直出可动画FBX，免手动放骨",
+     "en_title": "A 3D scan shouldn't have to stop at a static model🤔 With our Auto-Rig Generation, scanned models come out animation-ready",
+     "full_text": "A 3D scan shouldn't have to stop at a static model🤔\n\nWith our Auto-Rig Generation, scanned models come out animation-ready, export as FBX and drop straight into Blender, Unity, Unreal.\n\nNo more manual bone placement. Scan it, rig it, animate it🤩 https://t.co/VEyTcXrXT1",
+     "author": "KIRI Engine - 3D Scanner App",
+     "date": "2026-08-05",
+     "likes": 241,
+     "views": 13067,
+     "link": "https://x.com/KIRI_Engine_App/status/2084942795786322042",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2084941911362764800/img/A8_cyMBtDqtiKPkT.jpg",
+      "video_url": "https://x.com/KIRI_Engine_App/status/2084942795786322042/video/1"
+     },
+     "summary": "KIRI Engine（3D扫描App）推出Auto-Rig Generation：扫描得到的模型自动生成骨骼绑定，导出FBX后可直接进Blender/Unity/Unreal做动画，省掉手动摆放骨骼的环节。",
+     "analysis": "扫描资产的「最后一公里」是绑骨——自动化后，实景扫描从「静态摆件」升级为「可动画资产」，对小团队的快速原型与实景复刻管线是实打实的提效。",
+     "recommendation": "KIRI Engine自动绑骨：扫描模型直出可动画FBX，扫描资产最后一公里打通"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**GTA 6把预告片卖给了Netflix**\nExtended Look定档8/27，Netflix全球首映、YouTube二发——游戏预告首次成为流媒体的独家内容标的。11/19发售$80起，新主视觉已释出。\n\n**裁员逻辑继续运转**\nHalo Studios在Campaign Evolved发售一周后即裁员（6年半老兵制片人在列），Alinea销量数据同步曝光：Steam 21.2万/Xbox 90万/PS 35.1万。同日内存消息：三大厂2027年产能售罄，涨价或到2028；Capcom表态90%销量已数字化，实体盘消亡「无重大影响」。\n\n**独立赛道双响炮**\nEmergency Buddies「最不靠谱急救员」物理合作142万浏览；Fields of Mistria 1.0发售两日官宣100万份、PCU三连涨至27,172——自家监控连续验证。另有「竞技Blender」戏谑视频536万浏览成本周最大传播。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
