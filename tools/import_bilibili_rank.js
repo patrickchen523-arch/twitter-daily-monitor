@@ -189,6 +189,10 @@ const games = {};
 (async () => {
 for (const it of src.items) {
   let game = null;
+  if (OVERRIDES[it.bvid] === 'EXCLUDE') {
+    it.skipReason = '剔除-人工复核(非单一游戏内容)';
+    continue;
+  }
   if (OVERRIDES[it.bvid]) {
     game = OVERRIDES[it.bvid];
     it.reportVia = '人工修正';
@@ -340,9 +344,12 @@ gameList.sort((a, b) => {
 HISTORY[TODAY_STR] = Object.fromEntries(gameList.map(g => [g.name, g.rank]));
 fs.writeFileSync(HISTORY_PATH, JSON.stringify(HISTORY, null, 1), 'utf8');
 
-// 未上线游戏(9999 标记)不进榜单,挪未上线观测区
-const unreleased = gameList.filter(g => g.release === '9999-12-31');
-const releasedList = gameList.filter(g => g.release !== '9999-12-31');
+// 未上线游戏(9999 标记或人工名单)不进榜单,挪未上线观测区
+const UNREL_PATH = path.join(__dirname, '..', 'data', 'launched', 'bili-unreleased.json');
+const UNREL = fs.existsSync(UNREL_PATH) ? JSON.parse(fs.readFileSync(UNREL_PATH, 'utf8')) : [];
+const isUnrel = g => g.release === '9999-12-31' || UNREL.includes(g.name);
+const unreleased = gameList.filter(isUnrel);
+const releasedList = gameList.filter(g => !isUnrel(g));
 if (unreleased.length) {
   launched.watch = launched.watch || { featured: [], calendar: [] };
   launched.watch.featured = launched.watch.featured || [];

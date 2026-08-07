@@ -23,7 +23,7 @@ const getJson = url => new Promise((resolve, reject) => {
 });
 
 (async () => {
-  const top = src.items.slice(0, 60); // 前50名(未上线的挪观测区,多取候选补足)
+  const top = src.items.slice(0, 100); // 取满前50名已上线(未上线的挪观测区)
   const items = [];
   const unreleased = [];
   for (const it of top) {
@@ -51,6 +51,18 @@ const getJson = url => new Promise((resolve, reject) => {
         comingSoon = !!d.data.release_date.coming_soon;
         const m = String(d.data.release_date.date || '').match(/(\d{4})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})/);
         if (m) releaseIso = `${m[1]}-${String(m[2]).padStart(2, '0')}-${String(m[3]).padStart(2, '0')}`;
+      } else {
+        // 简中接口区域限制时, 用英文接口兜底判定
+        const je = await getJson(`https://store.steampowered.com/api/appdetails?appids=${it.appid}&cc=us&l=en`);
+        const de = je && je[it.appid];
+        if (de && de.success && de.data) {
+          if (de.data.release_date) {
+            comingSoon = !!de.data.release_date.coming_soon;
+            const t = Date.parse(de.data.release_date.date || '');
+            if (!comingSoon && !Number.isNaN(t)) releaseIso = new Date(t).toISOString().slice(0, 10);
+          }
+          if (!thumb && de.data.header_image) thumb = de.data.header_image;
+        }
       }
     } catch (e) {}
     // 官方中文名: 简中商店名含中文字符才采用,否则拉英文官方名

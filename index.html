@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-i<head>
+i的<游戏，未<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -569,11 +569,11 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
   .ed-top-nav>[data-nav="industry"]{order:2}
   .ed-top-nav>[data-nav="indie"]{order:3}
   .ed-top-nav>[data-nav="weekly"]{order:4}
-  .ed-top-nav>[data-nav="digest"]{order:6;min-width:0;color:#A33A2F!important;font-weight:900}
-  .ed-top-nav>[data-nav="launched"]{order:5}
-  .ed-top-nav>[data-nav="roblox"]{order:7}
-  .ed-top-nav>[data-nav="library"]{order:8}
-  .ed-top-nav>.ed-search-entry{order:7;display:flex!important;flex:0 0 100%;height:40px;margin:5px 0 0;padding:0 10px;border:1px solid rgba(135,48,38,.18);border-radius:999px;background:#fffaf4}
+  .ed-top-nav>[data-nav="roblox"]{order:5}
+  .ed-top-nav>[data-nav="library"]{order:6}
+  .ed-top-nav>[data-nav="digest"]{order:7;min-width:0;color:#A33A2F!important;font-weight:900}
+  .ed-top-nav>[data-nav="launched"]{order:8}
+  .ed-top-nav>.ed-search-entry{order:9;display:flex!important;flex:0 0 100%;height:40px;margin:5px 0 0;padding:0 10px;border:1px solid rgba(135,48,38,.18);border-radius:999px;background:#fffaf4}
   .ed-top-nav>.ed-search-entry input{flex:1;min-width:0;width:auto;height:38px;padding:0 6px;border:0;background:transparent;box-shadow:none}
   .ed-top-nav>.ed-search-entry .ed-search-button{flex:0 0 28px}
   .ed-category-tab.is-feature,.ed-brand.is-feature{font-size:12px;letter-spacing:0;transform:none}
@@ -680,6 +680,8 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
 .ld-cal-detail-t{color:#D1B36F;font-size:13px;font-weight:900;margin-bottom:6px}
 .ld-cal-detail-g{color:#f6f0e8;font-size:13px;font-weight:800;line-height:1.9}
 .ld-cal-detail-g small{color:rgba(246,240,232,.6);margin-left:8px;font-size:11px}
+.ld-cal-badge{display:none;margin-top:5px;background:#A33A2F;color:#fffaf4;font-size:9px;font-weight:900;padding:1px 5px;border-radius:3px}
+@media(max-width:620px){.ld-cal-cell{min-height:52px;padding:5px}.ld-cal-chip{display:none}.ld-cal-badge{display:inline-block}}
 .ld-watch-more{margin-top:18px;display:flex;justify-content:flex-end}
 /* 游戏详情弹窗 */
 .ld-modal-mask{position:fixed;inset:0;background:rgba(38,24,20,.55);z-index:300;display:flex;align-items:center;justify-content:center;padding:20px}
@@ -703,6 +705,8 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
 .ld-modal-steam{display:block;margin-top:20px;text-align:center;background:#A33A2F;color:#fffaf4;text-decoration:none;font-weight:900;font-size:14px;padding:12px;transition:background .2s ease}
 .ld-modal-steam:hover{background:#873026}
 .ld-modal-btn{border:0;width:100%;cursor:pointer;font-family:inherit}
+.ld-modal-btn-video{background:#fff;border:1px solid #A33A2F;color:#A33A2F;margin-top:10px}
+.ld-modal-btn-video:hover{background:#A33A2F;color:#fffaf4}
 .ld-col-rank-item{cursor:pointer}
 @media(max-width:980px){.ld-watch-feat{grid-template-columns:1fr}.ld-cal-cell{min-height:52px}.ld-cal-chip small{display:none}}
 .ld-board h2{margin-bottom:6px}
@@ -753,7 +757,7 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
 @media(max-width:980px){.ld-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:170px}}
 @media(max-width:620px){.ld-mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:130px;gap:8px}.ld-mos-feat{grid-column:span 2}.ld-mos-feat .ld-mos-name{font-size:17px}}
 @media(max-width:980px){.ld-boards{grid-template-columns:repeat(2,minmax(0,1fr))}.lib-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.lib-row{grid-template-columns:150px minmax(0,1fr) 120px;row-gap:8px}.lib-metric-sales,.lib-metric-pcu,.lib-steam{display:none}.lib-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.lib-stat:nth-child(2){border-right:0}.lib-stat:nth-child(1),.lib-stat:nth-child(2){border-bottom:1px solid rgba(60,43,39,.14)}}
-@media(max-width:620px){.page-view-inner{padding:0 14px 64px}.ld-boards{grid-template-columns:1fr}.lib-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.lib-row{grid-template-columns:96px minmax(0,1fr);padding:14px}.lib-metric{display:none}.lib-name{font-size:16px;white-space:normal}.lib-controls{padding:16px}.lib-search{min-width:100%;order:3}.lib-stat{padding:16px}.lib-stat-num{font-size:30px}}
+@media(max-width:620px){.page-view-inner{padding:0 14px 64px}.ld-boards{grid-template-columns:1fr}.lib-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.lib-row{grid-template-columns:96px minmax(0,1fr);padding:14px}.lib-metric{display:none}.lib-name{font-size:16px;white-space:normal}.lib-controls{padding:16px}.lib-pills{order:1}.lib-sort{order:2}.lib-search{min-width:100%;order:3}.lib-view-pills{display:none}.lib-stat{padding:16px}.lib-stat-num{font-size:30px}}
 /* 游戏库卡片模式 (参考 indienova GameDB) */
 .lib-view-pills{margin-left:auto}
 .lib-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
@@ -2518,7 +2522,7 @@ async function renderLibrary() {
 
 function renderLibraryContent() {
   const host = document.getElementById('libraryContent');
-  const games = gamesLibrary.games || [];
+  const games = (gamesLibrary.games || []).filter(g => (g.pcu_peak || 0) >= 1000);
   const indieCount = games.filter(g => g.grade === 'Indie').length;
   const aaCount = games.filter(g => g.grade === 'AA').length;
   const awardCount = games.filter(g => g.award).length;
@@ -2561,7 +2565,7 @@ function renderLibraryContent() {
 
 function getFilteredGames() {
   const q = libState.q.trim().toLowerCase();
-  let list = (gamesLibrary.games || []).slice();
+  let list = (gamesLibrary.games || []).filter(g => (g.pcu_peak || 0) >= 1000);
   if (libState.filter === 'indie') list = list.filter(g => g.grade === 'Indie');
   else if (libState.filter === 'aa') list = list.filter(g => g.grade === 'AA');
   else if (libState.filter === 'award') list = list.filter(g => g.award);
@@ -2607,7 +2611,8 @@ function renderLibList() {
     el.innerHTML = '<div class="roblox-error">没有匹配的游戏</div>';
     return;
   }
-  if (libState.view === 'card') {
+  const isMobile = window.matchMedia && window.matchMedia('(max-width:620px)').matches;
+  if (libState.view === 'card' && !isMobile) {
     el.innerHTML = `<div class="lib-cards">${list.map((g, i) => libCardHtml(g, i)).join('')}</div>`;
   } else {
     el.innerHTML = list.map((g, i) => libRowHtml(g, i)).join('');
@@ -2783,6 +2788,7 @@ async function ldOpenPickModal(i) {
   const it = launchedData.picks[i];
   await ensureGameDetails();
   const d = findGameDetail(it) || { name: it.name };
+  if (!d.release && it.release) d.release = it.release;
   const cell = (k, v) => `<div class="ld-modal-item"><span class="k">${k}</span><span class="v">${v || '—'}</span></div>`;
   const nameLine = escapeHtml(d.name || it.name) + (d.name_cn && d.name_cn !== d.name ? ` <span class="ld-modal-cn-inline">${escapeHtml(d.name_cn)}</span>` : '');
   const html = `<div class="ld-modal-mask" onclick="if(event.target===this)ldCloseGameModal()">
@@ -2913,6 +2919,7 @@ async function ldOpenGameModal(bi, ii) {
   if (board.id === 'roblox') return ldOpenRobloxModal(it);
   await ensureGameDetails();
   const d = findGameDetail(it) || { name: it.name };
+  if (!d.release && it.release) d.release = it.release;
   const cell = (k, v) => `<div class="ld-modal-item"><span class="k">${k}</span><span class="v">${v || '—'}</span></div>`;
   const tags = (d.tags && d.tags.length) ? d.tags.slice(0, 3) : [];
   const platform = d.appid ? 'Steam' : (d.platform || '—');
@@ -2964,7 +2971,9 @@ async function ldOpenGameModal(bi, ii) {
         ${infoHtml}
         ${board.id === 'twitter' && it.day != null
           ? `<button type="button" class="ld-modal-steam ld-modal-btn" onclick="ldGotoTweet('${it.day}', ${it.idx != null ? it.idx : -1})">查看推文分析 →</button>`
-          : (d.steam ? `<a class="ld-modal-steam" href="${escapeHtml(d.steam)}" target="_blank" rel="noopener">前往 Steam 商店页 →</a>` : '')}
+          : board.id === 'bilibili'
+            ? `${d.steam ? `<a class="ld-modal-steam" href="${escapeHtml(d.steam)}" target="_blank" rel="noopener">前往游戏商店页 →</a>` : ''}${it.link ? `<a class="ld-modal-steam ld-modal-btn-video" href="${escapeHtml(it.link)}" target="_blank" rel="noopener">查看原视频 →</a>` : ''}`
+            : (d.steam ? `<a class="ld-modal-steam" href="${escapeHtml(d.steam)}" target="_blank" rel="noopener">前往 Steam 商店页 →</a>` : '')}
       </div>
     </div>
   </div>`;
@@ -3062,6 +3071,7 @@ function renderWatchCalendar(events) {
     const evs = byDay[d] || [];
     cells += `<div class="ld-cal-cell ${evs.length ? 'has-ev' : ''} ${ds === todayStr ? 'today' : ''} ${ds < todayStr ? 'dim' : ''}" data-day="${ds}" onclick="ldCalSelect('${ds}')">
       <span class="ld-cal-day">${d}</span>
+      ${evs.length ? `<span class="ld-cal-badge">${evs.length}款新游</span>` : ''}
       ${evs.map(e => `<span class="ld-cal-chip">${escapeHtml(e.name)}<small>${escapeHtml(e.type)} · ${escapeHtml(e.platform)}</small></span>`).join('')}
     </div>`;
   }

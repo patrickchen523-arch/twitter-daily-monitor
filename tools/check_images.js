@@ -4,7 +4,8 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.join(__dirname, '..');
-const launchedPath = path.join(root, 'data', 'launched', '2026-08-05.json');
+const date = process.argv[2] || '2026-08-05';
+const launchedPath = path.join(root, 'data', 'launched', `${date}.json`);
 const detPath = path.join(root, 'data', 'game-details.json');
 const launched = JSON.parse(fs.readFileSync(launchedPath, 'utf8'));
 const det = JSON.parse(fs.readFileSync(detPath, 'utf8'));

@@ -12,7 +12,8 @@ const manifest = JSON.parse(fs.readFileSync(path.join(root, 'data', 'manifest.js
 const TODAY = new Date();
 function isLaunched(e) {
   const sr = String((e && e.steam_rating) || '');
-  if (!/未发售|playtest|测试/i.test(sr)) return true; // 有评价/已发售/无Steam页面(网页游戏)
+  if (/无Steam页面/.test(sr)) return false; // 日报口径: 无Steam页面且无发售日 = 未上线
+  if (!/未发售|playtest|测试/i.test(sr)) return true; // 有评价/已发售
   const m = String((e && e.release_date) || '').match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
   if (m) return new Date(+m[1], +m[2] - 1, +m[3]) <= TODAY; // 发售日已到
   return false;
