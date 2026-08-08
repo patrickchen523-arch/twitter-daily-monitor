@@ -1,0 +1,436 @@
+{
+ "date": "2026-08-08",
+ "meta": {
+  "raw_count": 204,
+  "filtered_count": 188,
+  "selected_count": 12,
+  "crawl_time": "2026-08-08 18:00"
+ },
+ "lede": "Take-Two：GTA6预购「史无前例」、FY27预订上调至$82亿，实体仅占收入2%\nBall Scratch Simulator：公共场合偷偷挠痒的荒诞潜行——768万浏览\nUnpossess 2：个人开发的4人除灵模拟，仪式抢跑灵就暴怒——92万浏览",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Take-Two：GTA6预购「史无前例」、FY27预订上调至$82亿"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "Ball Scratch Simulator：荒诞潜行挠痒模拟——768万浏览"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 1,
+   "hook": "Unpossess 2：仪式抢跑灵就暴怒的4人除灵模拟——92万浏览"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Agent Plugins开放标准v1.0：skill+MCP打包成「集装箱」，Amazon/Cursor/微软/OpenAI/Vercel共管\nGarry Tan：agents把核心服务「黑」成Moltbook并绕过安全缓解——6.4万浏览\n生成式AI渗入modding：Nexus一年6,654个AI标记mod，标签一分为三"
+  },
+  {
+   "id": "industry",
+   "text": "Take-Two财报：FY27预订上调$82亿，GTA6预购史无前例、11/19未延期、实体仅占2%\nEA CEO Wilson 2026财年实拿或达$7700万，员工中位数$12.7万\nDevolver Digital拟私有化：股价较IPO跌96%，9/8股东投票\n幽灵行动新作官宣：回归第一人称战术射击，Wildlands大更新+限免"
+  },
+  {
+   "id": "indie",
+   "text": "Ball Scratch Simulator：荒诞潜行挠痒模拟，768万浏览\nUnpossess 2：4人除灵模拟8/22 EA，仪式抢跑灵暴怒——92万浏览\nProspice愿望单破7万，恐怖驾驶playtest延长\nApproximately Up：拼船跨15星球，首日98%非常好评"
+  },
+  {
+   "id": "tools",
+   "text": "Unity 6.3案例：Megapop用DOTS/ECS实时模拟25万条鱼群"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Tony出海 · 生态标准",
+     "tags": [
+      "Agent Plugins",
+      "开放标准",
+      "MCP"
+     ],
+     "title": "Agent Plugins开放标准v1.0发布：skill+MCP打包成「集装箱」，五大厂共管",
+     "en_title": "OpenAI 刚刚又重新发明了 Plugins！Agent Plugins=skill+MCP+ui+auth——一个专门给 Agent 能力用的标准 Shipping Container",
+     "full_text": "AI时代的appstore绝对不是skill或者MCP，而是一个综合体，\n\n在ChatGPT早期就发布的Plugins一度被遗弃，OpenAI 刚刚又重新发明了 Plugins！\n\nAgent Plugins=skill+MCP++ui+auth\n\n这是一个专门给 Agent 能力 用的 标准 Shipping Container（集装箱）。\n\n打包一个文件夹就能装下全部：\n\n→ Skill：Agent 的工作方式 & 可复用指令 → MCP config：它能调用哪些工具 → client-specific extensions：客户端专属扩展\n\n这是一个开放标准，让你写一次，就能在兼容的客户端之间无缝复用。\n\n发布即支持：\n•Codex\n•ChatGPT\n•Cursor\n•GitHub Copilot\n•VS Code\n•Kiro\n\n真正炸的点在这里： Instructions 终于可以和它们需要的 Tools 合体了！\n 再也不用为每个 Agent 客户端重新打包、重新接线同一套配置。\n\n目前 v1 只标准化了包格式本身。认证、权限、安装和 UI 仍然由各客户端自己处理。\n\n这意味着 Agent 生态的“插件时代”正式开始了。\n 写一次 skill + MCP，到处跑。真正的一次构建，处处运行。\n官网：https://t.co/KnyQqEQhc0",
+     "author": "Tony出海",
+     "date": "2026-08-07",
+     "likes": 1,
+     "views": 655,
+     "link": "https://x.com/iamtonyzhu/status/2085525487238177031",
+     "media": null,
+     "summary": "agent-plugins.org发布v1.0规范：以plugin.json+skills/+mcp.json+反向域名扩展目录组成可移植包，把Agent Skills与MCP服务器打包成统一格式；技术 steering committee 来自Amazon、Cursor、Microsoft、OpenAI、Vercel。Tony出海点评：「AI时代的App Store不是skill或MCP，而是综合体」，发布即支持Codex/ChatGPT/Cursor/Copilot/VS Code/Kiro；v1只标准化包格式，认证/权限/安装/UI仍由各客户端自理。",
+     "analysis": "本周第三条agent工程化主线（陈成skill治理→Gauntlet Loop→Agent Plugins）：生态从各自为政进入标准收敛期。对内部工具链团队的意义直接：插件开始按这个格式打包，可避免为每个客户端重复适配——「一次打包，处处运行」的集装箱时刻。",
+     "recommendation": "Agent Plugins v1.0：skill+MCP打包成「集装箱」，五大厂共管的开放标准",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Garry Tan · 安全警示",
+     "tags": [
+      "Agent安全",
+      "AI安全"
+     ],
+     "title": "Garry Tan：agents把核心服务「黑」成了Moltbook，还绕过多个安全缓解",
+     "en_title": "So the agents basically hacked a core service to turn it into Moltbook and also hacked around multiple security mitigations",
+     "full_text": "So the agents basically hacked a core service to turn it into Moltbook and also hacked around multiple security mitigations\n\nThis video is a glimpse into the wild cybersecurity future we are all about to step into",
+     "author": "Garry Tan",
+     "date": "2026-08-07",
+     "likes": 328,
+     "views": 63527,
+     "link": "https://x.com/garrytan/status/2085699479114797551",
+     "media": null,
+     "summary": "Garry Tan转发视频并评论：agents基本「黑掉」了一个核心服务、把它变成了「Moltbook」，还绕过了多个安全缓解措施——「这是我们即将踏入的狂野网络安全未来的一瞥」。视频具体内容未随数据流捕获，细节以Garry Tan转述为准，未独立核实。",
+     "analysis": "本周AI安全叙事第三条：npm蠕虫（依赖包）→Copilot蠕虫（文档）→agent主动绕过防护（服务）。攻击面从「被投毒」扩展到「主动越权」。该叙事的证据链目前很薄，但YC掌门人的转发量级说明「agent失控」已进入主流科技视野——对正在接入agent的团队，权限最小化与行为审计是当下就要做的事。",
+     "recommendation": "Garry Tan：agents把核心服务黑成Moltbook、绕过安全缓解——6.4万浏览"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Rock Paper Shotgun · 深度特写",
+     "tags": [
+      "Modding",
+      "AI标识",
+      "Nexus Mods"
+     ],
+     "title": "生成式AI渗入modding：Nexus把AI标签一分为三，一年6,654个mod带AI标记",
+     "en_title": "\"Ideas like this usually just die\": Inside generative AI's effect on modding, and how host sites struggle to maintain transparency",
+     "full_text": "\"Ideas like this usually just die\": Inside generative AI’s effect on modding, and how host sites struggle to maintain transparency\n\nhttps://t.co/UVIsFC0VH7",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-08-07",
+     "likes": 3,
+     "views": 2511,
+     "link": "https://x.com/rockpapershot/status/2085717812853571738",
+     "media": null,
+     "summary": "RPS长篇特写：从AI语音克隆（ElevenLabs/xVASynth）到LLM直接写SKSE插件代码，mod制作的AI渗透持续加深。Nexus Mods 7/29把单一AI标签拆分为「AI-Generated Content / AI Media / AI Assisted」三类；过去一年全站180,181个新mod中6,654个带AI标记（6,052纯AI生成、258 AI辅助、685 AI媒体），且存在未打标案例（某Halo: Campaign Evolved mod用了Codex未标记）。Skyrim mod作者Mern（Bard Hero）：LLM让「一个晚上验证可行性」替代「半年学C++」，但坚持开源代码+明确披露，并主动把标签从「AI辅助」改成更诚实的「AI生成」。",
+     "analysis": "mod生态是游戏UGC的先行指标：AI披露正从道德自觉走向标签化基础设施。对运营UGC平台（Roblox/蛋仔/元梦）的团队，Nexus的三级标签+作者主动改标的案例，是AI内容标识政策的直接参照系。",
+     "recommendation": "Nexus的AI三标签：一年6,654个AI标记mod，披露制度走向基础设施"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "GameSpot · 财报",
+     "tags": [
+      "Take-Two",
+      "GTA 6",
+      "财报"
+     ],
+     "title": "Take-Two财报：FY27预订上调至$82亿，GTA6预购「史无前例」、11/19未延期",
+     "en_title": "GTA 6 Has Not Been Delayed, Still On Track For Its November Launch",
+     "full_text": "GTA 6 Has Not Been Delayed, Still On Track For Its November Launch https://t.co/6Mebi6Bmn2 https://t.co/pY1vaM8uqg",
+     "author": "GameSpot",
+     "date": "2026-08-07",
+     "likes": 104,
+     "views": 44060,
+     "link": "https://x.com/GameSpot/status/2085717705924202779",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPH1M0Aa4AAHDru.jpg"
+     },
+     "summary": "Take-Two Q1财报电话会：FY2027 net bookings指引从$80亿上调至$82亿（GTA6驱动）；Zelnick确认预购「开局史无前例」，但谨慎表态「不提前宣布胜利」；11/19发售未延期；营销将覆盖「地球上几乎每个社媒」。他确认公司「90%以上是数字业务」——分析师Daniel Ahmad补充：实体仅占本季收入2%、上财年3%；GTA6实体版为「盒内兑换码」。Zelnick为$80定价辩护称「phenomenal value」，并预言「三年内我们都将串流游玩游戏」；移动端收入-7%，股价开盘仍跌1.9%。",
+     "analysis": "一条产品线撑起$2亿指引上调，GTA6的财务权重已无悬念。更硬的数据点是「实体只占2%」——索尼停盘风波中最激进的发行商口径（比Capcom的90%销量更极端），叠加$80定价辩护与串流预言，Take-Two正在给行业的数字定价权打预防针。",
+     "recommendation": "Take-Two：GTA6预购史无前例、FY27预订上调$82亿，实体仅占收入2%",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 薪酬",
+     "tags": [
+      "EA",
+      "CEO薪酬",
+      "私有化"
+     ],
+     "title": "EA CEO Wilson 2026财年实拿或达$7700万：私有化前最后一份公开薪酬",
+     "en_title": "EA CEO Andrew Wilson's 2026 pay may have been much larger than previously thought, hitting around $77m in total",
+     "full_text": "EA CEO Andrew Wilson's 2026 pay may have been much larger than previously thought, hitting around $77m in total\n\nhttps://t.co/LSJnoXjaWc https://t.co/2N57y0YyWz",
+     "author": "Eurogamer",
+     "date": "2026-08-07",
+     "likes": 14,
+     "views": 9208,
+     "link": "https://x.com/eurogamer/status/2085655666937442715",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPG8q1eXQAA1wUe.png"
+     },
+     "summary": "Game File按「compensation actually paid」口径（以年末股价$202计，而非财报口径的年初$150）测算：EA CEO Andrew Wilson 2026财年实际薪酬约$7,700万，远高于此前披露的约$3,900万。同场数据：EA员工薪酬中位数$12.7万。该口径存在争议（公司方认为高估、SEC认为更接近实拿）。背景时间线：BF6大卖后开发工作室裁员→收购交割时承诺债主年削$7亿成本→私有化后此类薪酬数据将不再公开。",
+     "analysis": "时间线连起来看很刺眼：交割完成→裁员承诺→CEO薪酬纪录，且这是最后一份能被看到的账本。私有化后的EA，员工与CEO在「组织效率」叙事中的能见度将彻底不对称——这也是私有化争议里最实质的一点。",
+     "recommendation": "EA CEO实拿或达$7700万：员工中位数$12.7万，私有化后不再公开",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 资本市场",
+     "tags": [
+      "Devolver",
+      "私有化",
+      "独立发行"
+     ],
+     "title": "Devolver Digital拟私有化退市：股价较IPO跌96%，9/8股东投票",
+     "en_title": "Indie game publisher Devolver Digital wants to go private, believes current share price \"does not reflect the true market value\" of the company",
+     "full_text": "Indie game publisher Devolver Digital wants to go private, believes current share price \"does not reflect the true market value\" of the company\n\nhttps://t.co/fRnOOv244r https://t.co/cDLBChgnuo",
+     "author": "Eurogamer",
+     "date": "2026-08-07",
+     "likes": 3,
+     "views": 3643,
+     "link": "https://x.com/eurogamer/status/2085736999055446387",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPIGoaOXMAABC9w.png"
+     },
+     "summary": "Devolver Digital宣布寻求私有化：2021年IPO时估值£6.946亿（约$9.5亿），此后股价跌去96.27%，现市值约£3,464万（$4,663万）。9/8年度股东大会投票，若通过9/16正式退市，预计年省约$160万上市成本。公司称股价「未反映真实市场价值」，私有化可让财务/法务/高管团队「聚焦长期健康，而非满足与公司成功无关的公开市场要求」。",
+     "analysis": "独立发行商的公开市场实验继续退潮——EA私有化是资本大鱼离场，Devolver是小鱼对公开市场的投票否决。对独游开发者：签约发行商时「上市公司财报压力」这个变量会少一点，但发行预算也会更保守。",
+     "recommendation": "Devolver拟私有化：股价较IPO跌96%，9/8投票、退市年省$160万"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Polygon · 新作官宣",
+     "tags": [
+      "Ubisoft",
+      "幽灵行动",
+      "新作"
+     ],
+     "title": "幽灵行动新作正式确认：回归第一人称战术射击，封闭测试招募开启",
+     "en_title": "New Ghost Recon Game Officially Revealed by Ubisoft at 25th Anniversary Event",
+     "full_text": "New Ghost Recon Game Officially Revealed by Ubisoft at 25th Anniversary Event https://t.co/CPDFnLiIyj https://t.co/cIUGO0VsMU",
+     "author": "Polygon",
+     "date": "2026-08-06",
+     "likes": 61,
+     "views": 26572,
+     "link": "https://x.com/Polygon/status/2085476038067339518",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPEZZ7ZWQAAdIxk.jpg"
+     },
+     "summary": "Ubisoft在系列25周年直播中正式确认幽灵行动新作：live producer称「过去几年一直在构建下一章」，已准备好进入测试——Ghost Recon Insider Program开放封闭测试报名。无标题、无画面、无概念图。据泄露信息，新作代号Project OVR，将告别近几作的开放世界looter-shooter路线，回归更硬核的战术射击与第一人称视角。同场：Wildlands「The Last Rites」大更新上线（新任务+敌行为/天气/伤害自定义+4K/60帧），8/6-10限免。",
+     "analysis": "7年空窗后的「回归本源」路线。育碧近期双线收缩（Far Cry砍extraction shooter转「野心开放世界FPS」、幽灵行动回归战术射击），产品策略从「公式化开放世界」整体回撤——这是育碧重建口碑最现实的路径。",
+     "recommendation": "幽灵行动新作官宣：回归第一人称战术射击，封闭测试招募开启"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Kaeru · 病毒传播",
+     "tags": [
+      "潜行",
+      "荒诞",
+      "喜剧"
+     ],
+     "title": "Ball Scratch Simulator：公共场合偷偷挠痒的荒诞潜行游戏——768万浏览",
+     "en_title": "Steam accueille bientôt un simulateur de… grattage de testicules",
+     "full_text": "🎮 Steam accueille bientôt un simulateur de… grattage de testicules 😭\n\nBall Scratch Simulator est un jeu d'infiltration complètement absurde dont l'objectif est simple : se gratter discrètement les testicules dans des lieux publics sans se faire repérer.\n\nPlus les témoins sont nombreux, plus le défi est difficile. Il faut attendre que les gens détournent le regard, choisir le bon moment… et éviter que votre niveau de suspicion n'explose. \n\nLe développeur promet six environnements différents, des objets à débloquer, un système de score avec classements mondiaux et même un mode VR, où il faudra reproduire le geste en réalité virtuelle.\n\nLe jeu est annoncé pour ce mois-ci sur Steam.",
+     "author": "Kaeru 🎮",
+     "date": "2026-08-06",
+     "likes": 52412,
+     "views": 7686425,
+     "link": "https://x.com/MemeCryptoFR/status/2085368871431635361",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2085368838103650304/img/D6DE0WxWANQjkc69.jpg",
+      "video_url": "https://x.com/MemeCryptoFR/status/2085368871431635361/video/1"
+     },
+     "summary": "10ft Games开发的潜行模拟：目标是在六个公共场景中「不被发现地挠痒痒」——目击者越多难度越高，要等旁人移开视线、选对时机行动，同时控制怀疑值不爆表，还要与你「不听话的左手」搏斗。法语推文视频演示获768万浏览、5.2万赞、6千转发，为全数据集最大单条。Steam页面公开，发售日Coming soon。",
+     "analysis": "",
+     "recommendation": "Ball Scratch Simulator：潜行机制反向用在「别被发现」上——768万浏览/5.2万赞",
+     "featured": true,
+     "game_ref": "Ball Scratch Simulator",
+     "enrichment": {
+      "game_name": "Ball Scratch Simulator",
+      "genre": "潜行 / 荒诞喜剧 / 模拟",
+      "developer": "10ft Games",
+      "platforms": [
+       "Steam(Windows)"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4951590/Ball_Scratch_Simulator/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4951590/7428aeb87e83bbfc666986fa132131bc1e54dc0b/header.jpg?t=1786158431",
+      "youtube_video": null,
+      "description": "【核心玩法】反向潜行模拟：在六个公共场景中完成「不被发现地挠痒」这一羞耻任务。目击者数量决定难度，需要观察旁人视线、选择时机下手，控制怀疑值不爆炸——官方描述称还要「与你没用的左手搏斗」。\n\n【美术与氛围】写实场景的荒诞喜剧路线，靠题材反差制造笑点。\n\n【开发者】10ft Games。\n\n【优势】潜行机制的反向应用（藏动作而非藏人）是聪明的品类改造；题材自带传播力，法语圈视频768万浏览/5.2万赞验证了meme势能。\n\n【不足】题材即全部卖点的风险明显，内容深度存疑；发售日未定。\n\n【综合】「荒诞模拟器」谱系（山羊模拟器以来）的最新成员，传播数据已爆，能否把meme转化为销量看内容量。",
+      "why_notable": "潜行机制反向应用+题材自带meme势能：768万浏览的本周最大单条"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "AUTOMATON · 新游报道",
+     "tags": [
+      "除灵",
+      "合作恐怖",
+      "EA"
+     ],
+     "title": "Unpossess 2：个人开发的4人除灵模拟，仪式抢跑灵就暴怒——8/22 EA",
+     "en_title": "最大4人協力・悪魔祓いホラー『Unpossess 2』8月22日早期アクセス配信へ。儀式をミスると霊がブチギレ",
+     "full_text": "【ニュース】最大4人協力・悪魔祓いホラー『Unpossess 2』8月22日早期アクセス配信へ。儀式をミスると霊がブチギレ、“SAN値崖っぷち”除霊ミッション\nhttps://t.co/45vMC1BTSU https://t.co/OVzFS0nb0r",
+     "author": "AUTOMATON（オートマトン）",
+     "date": "2026-08-06",
+     "likes": 6669,
+     "views": 919153,
+     "link": "https://x.com/AUTOMATONJapan/status/2085197130868875304",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPAb59jbUAAQkuQ.jpg"
+     },
+     "summary": "个人开发者Chreseeba Games的除灵模拟续作：1990年代末除灵高峰期背景，最大4人在线协力。除灵三阶段——净化现场削弱恶灵、拍照录音收集证据、执行仪式；若在目标完成前抢跑仪式，灵会暴怒、附身加剧。SAN值与体力双管理，祈祷/退避可回SAN；可设陷阱捕灵，用十字架/圣水/圣书防身。UE5开发，受Phasmophobia/Demonologist影响，目标「互联网上最可怕的体验」。demo已上线（含日语），8/21 EA（日本8/22），EA期3-6个月。前作Unpossess获369评价70%好评。",
+     "analysis": "",
+     "recommendation": "Unpossess 2：仪式抢跑灵就暴怒的4人除灵模拟——92万浏览，8/22 EA",
+     "featured": true,
+     "game_ref": "Unpossess 2: Exorcism Simulator",
+     "enrichment": {
+      "game_name": "Unpossess 2: Exorcism Simulator",
+      "genre": "合作恐怖 / 除灵模拟 / EA",
+      "developer": "Chreseeba Games（个人开发者）",
+      "platforms": [
+       "Steam(Windows)"
+      ],
+      "price": "未公布（EA期内可能调整）",
+      "release_date": "2026年8月21日（EA）",
+      "steam_rating": "未发售（demo公开中）",
+      "steam_url": "https://store.steampowered.com/app/4373870/Unpossess_2_Exorcism_Simulator/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4373870/db6872c6c212c50c4329c7a60cd20fc2b4e3a705/header.jpg?t=1783075650",
+      "youtube_video": null,
+      "description": "【核心玩法】1-4人合作除灵模拟：净化（清除现场邪恶能量）→取证（拍摄幽魂、录制恶魔之声）→仪式（解谜、备齐圣具、驱逐恶魔）三阶段推进。「抢跑仪式」惩罚机制：目标未完成就开仪式，灵会暴怒且附身加剧。调查中需管理自身体力与SAN值，祈祷、退避户外、完成目标可恢复；可设陷阱捕灵，十字架/圣水/圣书防身。\n\n【美术与氛围】UE5写实恐怖，1990年代末除灵高峰期的时代设定，受《驱魔人》《招魂》与Phasmophobia/Demonologist影响。\n\n【开发者】Chreseeba Games，个人开发者；前作Unpossess（2025.3）369评价70%好评。\n\n【优势】「仪式时序管理」是对Phasmophobia公式的明确机制增量；demo含日语已上线；AUTOMATON报道92万浏览。\n\n【不足】个人开发的内容量与长线更新能力存疑；EA期3-6个月，正式版完成度待观察。\n\n【综合】合作恐怖赛道的机制微创新样本，抢跑惩罚设计值得期待EA表现。",
+      "why_notable": "Phasmophobia公式的机制增量：仪式时序管理+抢跑惩罚，92万浏览"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "WhyNot官方 · 里程碑",
+     "tags": [
+      "恐怖驾驶",
+      "愿望单",
+      "Playtest"
+     ],
+     "title": "Prospice愿望单破7万：死亡搁浅风恐怖驾驶，playtest延长数日",
+     "en_title": "Prospice just hit 70k wishlists on Steam! We will be extending the playtest for a couple more days",
+     "full_text": "Prospice just hit 70k wishlists on Steam!\n\nThanks A TON to everyone who played the game, gave us feedback and helped to spread the word around. You people are awesome 💖\n\nWe will be extending the playtest for a couple more days, so you can give it a shot if you haven't already https://t.co/cbPyfjharL",
+     "author": "WhyNot | Wishlist PROSPICE",
+     "date": "2026-08-07",
+     "likes": 7,
+     "views": 289,
+     "link": "https://x.com/WhyNotArtDump/status/2085731678173990945",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPIA0SCXsAAOWLy.png"
+     },
+     "summary": "WhyNot官宣：Prospice（Steam全名Prospice: Anomalous Logistics）愿望单突破7万，公开playtest将延长数日。Code Wakers开发、Forklift Interactive发行：在被诅咒的岛屿上驾驶越野卡车穿越险境运货，地形本身即可致命，岛上潜伏着绝不能遭遇的「某种东西」，受《死亡搁浅》影响的恐怖驾驶模拟。7/31 GameSpark报道开放测试时获8万浏览。",
+     "analysis": "",
+     "recommendation": "Prospice愿望单破7万：诅咒之岛恐怖驾驶，playtest延长——发售日TBA",
+     "featured": true,
+     "game_ref": "Prospice: Anomalous Logistics",
+     "enrichment": {
+      "game_name": "Prospice: Anomalous Logistics",
+      "genre": "恐怖驾驶 / 模拟 / 冒险",
+      "developer": "Code Wakers（Forklift Interactive发行）",
+      "platforms": [
+       "Steam(Windows)"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售（公开playtest进行中）",
+      "steam_url": "https://store.steampowered.com/app/4067370/Prospice_Anomalous_Logistics/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4067370/67c7f778d444eb51f8b33ed641d4cdd6161a850b/header.jpg?t=1785774608",
+      "youtube_video": null,
+      "description": "【核心玩法】恐怖驾驶模拟：在被诅咒的岛屿上当运货司机，驾驶越野卡车穿越险峻地形运送货物——「地形本身即可取你性命，每条路都带着过去的伤痕」。岛上潜伏着绝不能遭遇的「某种东西」。官方自述受《死亡搁浅》影响：把「送货」从禅意旅程扭转为恐怖生存。\n\n【美术与氛围】阴郁写实的孤岛末世，恐怖氛围重于动作。\n\n【开发者】Code Wakers开发，Forklift Interactive发行。\n\n【市场表现】愿望单破7万（8/7官方宣布）；公开playtest因反馈热烈延长数日；7/31 GameSpark报道获8万浏览。\n\n【优势】「死亡搁浅×恐怖」的题材组合稀缺；playtest数据与愿望单转化健康。\n\n【不足】发售日仍TBA；恐怖驾驶的玩法深度需看正式版任务结构。\n\n【综合】本周报读者点名的关注对象——愿望单7万+延长测试说明playtest反馈正向，持续跟踪发售定档。",
+      "why_notable": "死亡搁浅风恐怖驾驶：愿望单7万、playtest获好评延长"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "電ファミニコゲーマー · 发售口碑",
+     "tags": [
+      "太空",
+      "建造",
+      "合作"
+     ],
+     "title": "Approximately Up：拼垃圾船闯15星球的4人甩锅合作，首日98%「非常に好評」",
+     "en_title": "【最大4人】自作の宇宙船で惑星間を渡るゲーム『Approximately Up』がリリース初日からSteam「非常に好評」",
+     "full_text": "【最大4人】自作の宇宙船で惑星間を渡るゲーム『Approximately Up』がリリース初日からSteam「非常に好評」スタート。適当設計だとすぐ大破\nhttps://t.co/cr5Lj4ItXm\n\nパーツひとつから組み上げた自分たちの船を操縦して、15の惑星を巡る。墜落したら誰のせいか言い合おう https://t.co/dhYkGfon1i",
+     "author": "電ファミニコゲーマー",
+     "date": "2026-08-07",
+     "likes": 2246,
+     "views": 241244,
+     "link": "https://x.com/denfaminicogame/status/2085662633383133463",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2085662586855620608/pu/img/ox9TdZytlJzyH3S_.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2085662633383133463/video/1"
+     },
+     "summary": "Approximately Games开发：从一个框架开始拼装引擎、太阳能板、耐热部件直至数千零件的自制宇宙船，一人称甲板视角跨15个重力/大气各异的星球；一人接线接反推进器全船散架，坠毁后互相甩锅才是正戏。8/6发售，$19.99（首发-20%至8/16）；首日160+评价98%好评获「非常に好評」（现267条）。危险货物任务（会停电的实验能源、倒计时水晶、超重潜水艇）+部件解锁构成长线。",
+     "analysis": "",
+     "recommendation": "Approximately Up：拼船闯15星球的甩锅合作——首日98%非常好评，$19.99",
+     "game_ref": "Approximately Up",
+     "enrichment": {
+      "game_name": "Approximately Up",
+      "genre": "太空建造 / 合作 / 模拟",
+      "developer": "Approximately Games",
+      "platforms": [
+       "Steam(Windows)"
+      ],
+      "price": "$19.99（首发-20%至8/16）",
+      "release_date": "已发售 · 2026年8月6日",
+      "steam_rating": "98% 好评（首日，现267条评价）",
+      "steam_url": "https://store.steampowered.com/app/3904850/Approximately_Up/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3904850/d91f2e97c92cb98f97b3c773ff1e2d84bf6bc127/header.jpg?t=1786035600",
+      "youtube_video": null,
+      "description": "【核心玩法】模块化造船+星际货运：从一个框架开始拼装引擎、太阳能板、耐热框架等部件，直至数千零件的巨舰；一人称甲板视角飞行，15个星球各有多少/重力/大气/气温差异。最大4人合作——接错的电缆、装反的推进器都是事故源，坠毁后的责任甩锅大会是设计好的玩法环节。任务系统含危险货物（会停电的实验能源、定时充能的神秘水晶、超重潜水艇），赚部件持续升级。\n\n【美术与氛围】低多边形卡通太空，走「能飞就行」的废土工程幽默。\n\n【开发者】Approximately Games。\n\n【市场表现】8/6发售首日即获「非常に好評」（160+评价98%），日本社区電ファミ报道24万浏览。\n\n【优势】「造船自由度+合作甩锅」双卖点；首日口碑已验证；$19.99价格带友好。\n\n【不足】PCU体量尚小；长线内容依赖部件与任务更新。\n\n【综合】「废品工程师太空版」气质的合作小品，首日98%好评是最硬的发售答卷。",
+      "why_notable": "模块化造船+合作甩锅：首日98%好评的即时口碑验证"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unity for Games · 官方案例",
+     "tags": [
+      "Unity",
+      "DOTS/ECS",
+      "性能"
+     ],
+     "title": "Unity 6.3案例：Megapop用DOTS/ECS实时模拟25万条鱼群（Life Below）",
+     "en_title": "From tracking single turtles to simulating 250k fish schools in real-time, @MegapopGames used DOTS/ECS in Unity 6.3 to build a living reef",
+     "full_text": "From tracking single turtles to simulating 250k fish schools in real-time, @MegapopGames used DOTS/ECS in Unity 6.3 to build a living reef 🐠🐢\n\n🔗 Dive into the full case study to learn how they executed this in Life Below: https://t.co/QplYzoyCpO https://t.co/KV1quvw9zn",
+     "author": "Unity for Games",
+     "date": "2026-08-07",
+     "likes": 30,
+     "views": 2672,
+     "link": "https://x.com/unitygames/status/2085770348960596280",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2085770277913317376/pu/img/E2ygEog6JvW3YRLd.jpg",
+      "video_url": "https://x.com/unitygames/status/2085770348960596280/video/1"
+     },
+     "summary": "Unity官方案例研究：Megapop Games在新作Life Below中用DOTS/ECS构建「活珊瑚礁」——从追踪单只海龟，到实时模拟25万条鱼的鱼群行为。完整案例已发布。",
+     "analysis": "ECS在大规模生态模拟上的实战样板：对做「活世界」「生态涌现」的团队，25万实体实时行为是现成的性能路线参考——比引擎白皮书更有说服力的是已上线项目。",
+     "recommendation": "Unity DOTS实战：25万条鱼群实时模拟，「活世界」的ECS路线案例",
+     "featured": true
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**GTA6经济学**\nTake-Two财报：FY27预订指引上调至$82亿，GTA6预购「史无前例」但未提前庆祝；11/19发售确认未延期。实体收入仅占2%——索尼停盘风波中最激进的发行商口径，$80定价被辩护为「phenomenal value」。\n\n**资本与薪酬的对照**\nEA CEO Wilson 2026财年实拿或达$7,700万（员工中位数$12.7万）——私有化前最后一份公开账本；Devolver Digital拟私有化退市，股价较IPO跌96%。一大一小，公开市场的故事都在收尾。\n\n**四款新游四种爆法**\n荒诞潜行Ball Scratch Simulator 768万浏览、个人开发除灵模拟Unpossess 2定档8/22 EA（92万浏览）、Prospice愿望单破7万延长测试、Approximately Up首日98%好评。另有幽灵行动新作官宣回归第一人称战术射击。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
