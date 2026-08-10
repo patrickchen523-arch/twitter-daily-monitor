@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04",
+  "updated": "2026-08-10",
   "cadence_transitions": [
     {
       "from": "2026-07-02-to-07-08",
@@ -1115,6 +1115,228 @@
         {
           "title": "内存涨价向消费端传导",
           "body": "关注4GB显存回潮是否坐实、Steam Machine与Steam Frame的定价更新，以及三星指引下硬件厂商的下一轮调价。"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-03-to-08-09",
+      "label": "8.3 - 8.9",
+      "code": "W32",
+      "range": "2026.08.03 — 08.09",
+      "title": "EA交割、停盘站队与Xbox涨价：行业集体重估「成本与所有权」的一周",
+      "stats": [
+        {
+          "value": "81",
+          "label": "精选信号"
+        },
+        {
+          "value": "2921万",
+          "label": "累计浏览"
+        },
+        {
+          "value": "46.6万",
+          "label": "累计点赞"
+        },
+        {
+          "value": "7",
+          "label": "连续日报"
+        }
+      ],
+      "executive": [
+        "AI本周双线对撞：工程化在收敛——Agent Plugins开放标准v1.0发布（Amazon/Cursor/微软/OpenAI/Vercel共管），把skill+MCP打包成「集装箱」；安全面在扩大——npm蠕虫Shai-Hulud回归感染868个包、研究者演示Copilot自传播蠕虫、Garry Tan转述agents「黑掉核心服务」。agent的攻击面叙事从「被投毒」升级到「主动越权」，与标准落地同周发生，不是巧合而是配套。",
+        "市场侧是「收官与重估」：EA $550亿收购正式交割、纳斯达克退市，同周Wilson 2026财年实拿或达$7,700万被曝光（员工中位数$12.7万）——私有化前最后一份公开账本；Xbox欧美英涨价34-49%，内存短缺的真实成本落在玩家账单上；索尼停盘风波进入发行商站队阶段：Capcom称90%销量已数字化「无重大影响」，Take-Two更激进——实体仅占收入2%，微软则走「兼容+盘转数字」双轨。",
+        "内容侧笑声与里程碑齐飞：Ball Scratch Simulator挠痒潜行768万浏览成全周最大单条；Big Walk首日峰值46,409人、媒体7家满分；Fields of Mistria 1.0两日销量破100万份；Emergency Buddies物理急救合作142万浏览。合作喜剧品类的传播公式本周被反复验证。"
+      ],
+      "rankings": [
+        {
+          "title": "Ball Scratch Simulator：公共场合偷偷挠痒的荒诞潜行游戏——768万浏览",
+          "metric": "769万浏览",
+          "heat": 100,
+          "link": "https://x.com/MemeCryptoFR/status/2085368871431635361"
+        },
+        {
+          "title": "「竞技Blender」戏谑视频爆红：536万浏览/25.5万赞，建模软件的电竞想象",
+          "metric": "536万浏览",
+          "heat": 82,
+          "link": "https://x.com/Jackson_Boof/status/2085082694573002969"
+        },
+        {
+          "title": "玩笑游戏标价$200卖出138万美元，开发者只拿到2045美元：99.9%被退款",
+          "metric": "313万浏览",
+          "heat": 54,
+          "link": "https://x.com/Dexerto/status/2084583193957568963"
+        },
+        {
+          "title": "Big Walk首日答卷：媒体评分横扫6个满分，Steam首日峰值46,409人",
+          "metric": "175万浏览",
+          "heat": 25,
+          "link": "https://x.com/MauroNL3/status/2084330606104564206"
+        },
+        {
+          "title": "hop.earth：浏览器里开遍真实世界——OpenStreetMap+卫星高程实时生成，还能多人赛车",
+          "metric": "158万浏览",
+          "heat": 20,
+          "link": "https://x.com/DVLPLONDON/status/2084139787447857637"
+        }
+      ],
+      "signals": [
+        {
+          "title": "agent工程化进入标准收敛期",
+          "body": "陈成skill中央仓库治理→Gauntlet Loop长任务prompt生成器→Agent Plugins v1.0开放标准，一周内三步走：agent能力分发的格式战争打完第一回合，插件「一次打包处处运行」的集装箱时刻临近。"
+        },
+        {
+          "title": "agent攻击面从「被投毒」升级到「主动越权」",
+          "body": "npm蠕虫（依赖包投毒）→Copilot蠕虫（文档藏指令）→agents主动黑掉核心服务并绕过缓解——三条证据链同周出现，权限最小化与行为审计是接入agent前就要做的事。"
+        },
+        {
+          "title": "实体盘消亡进入发行商公开站队阶段",
+          "body": "索尼2028停盘传闻后，Capcom（90%数字化「无重大影响」）与Take-Two（实体仅占收入2%）公开背书，微软以「360上PC+盘转数字授权随盘流转」回应——供给侧话术已就位，玩家手中的盘正在变成兑换码。"
+        }
+      ],
+      "sections": [
+        {
+          "title": "AI 科技热点",
+          "deck": "标准与安全同周对撞：agent工程化在收敛，攻击面在扩大。",
+          "stories": [
+            {
+              "date": "08.08",
+              "source": "Tony出海 · 生态标准",
+              "title": "Agent的「集装箱」标准来了：Agent Plugins v1.0，五大厂共管",
+              "summary": "agent-plugins.org发布v1.0规范：plugin.json+skills/+mcp.json组成可移植包，技术委员会来自Amazon、Cursor、Microsoft、OpenAI、Vercel，发布即支持Codex/Cursor/Copilot/VS Code。生态从各自为政进入标准收敛期——对内部工具链团队，插件按此格式打包可避免为每个客户端重复适配。",
+              "metric": "655浏览",
+              "link": "https://x.com/iamtonyzhu/status/2085525487238177031",
+              "image": null
+            },
+            {
+              "date": "08.05",
+              "source": "International Cyber Digest · 安全警报",
+              "title": "npm蠕虫Shai-Hulud回归：868个包、20亿月装机量被植入凭证窃取",
+              "summary": "npm供应链攻击Shai-Hulud卷土重来：868个包被植入凭证窃取蠕虫，涉20亿月装机量。同周研究者演示Copilot自传播蠕虫（Word文档藏指令即可感染）、Garry Tan转述agents「黑掉核心服务」——AI时代的依赖链安全，防线要从包管理一直画到文档解析。",
+              "metric": "31.9万浏览 · 3228赞",
+              "link": "https://x.com/IntCyberDigest/status/2084636007790449126",
+              "image": "https://pbs.twimg.com/media/HO4dIBpXQAE5al4.jpg"
+            },
+            {
+              "date": "08.07",
+              "source": "Jackson Husdog · 社区热点",
+              "title": "「竞技Blender」536万浏览：一条戏谑视频背后的开源工具大众文化时刻",
+              "summary": "《Finally. Competitive Blender.》以电竞赛事包装想象「竞技化建模」，单日536万浏览、25.5万赞。纯玩梗视频拿到这个量级，说明Blender的用户基数与社区认同已到大众文化水位——免费开源工具的文化渗透，是任何付费DCC买不到的护城河。",
+              "metric": "536万浏览 · 25.5万赞",
+              "link": "https://x.com/Jackson_Boof/status/2085082694573002969",
+              "image": null
+            },
+            {
+              "date": "08.06",
+              "source": "Stormslayer · 社区项目",
+              "title": "宝可梦初代完整重编译登陆PC：老游戏「原生PC化」的工程门槛又降一档",
+              "summary": "Gen1Recomp把宝可梦红/蓝/黄完整重编译为PC原生版（解锁帧率分辨率+增强着色器），搭配体素MOD直接3D化，53.3万浏览。从N64到GB世代，静态重编译适用范围持续扩大——老IP现代化的社区工程完成度越来越高，法务风险一如既往与热度成正比。",
+              "metric": "53.3万浏览 · 4725赞",
+              "link": "https://x.com/StormslayerDev/status/2084812316055326878",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2084810444359794688/img/myJ5VSNkT22aNVMz.jpg"
+            }
+          ]
+        },
+        {
+          "title": "游戏市场动态",
+          "deck": "资本收官与成本重估：EA交割落幕，涨价与停盘重写了账单。",
+          "stories": [
+            {
+              "date": "08.06",
+              "source": "Eurogamer · 行业新闻",
+              "title": "EA $550亿收购交割落地：纳斯达克退市，$180亿债务下的裁员倒计时",
+              "summary": "游戏史上最大杠杆收购完成：EA正式从纳斯达克退市，$180亿债务与「年削$7亿成本」承诺压顶，管理层对债主表态不裁员——但市场普遍视为倒计时开始。同周尾声，Wilson 2026财年实拿或达$7,700万被曝光，私有化前最后一份公开账本以薪酬纪录收尾。",
+              "metric": "7.7万浏览 · 385赞",
+              "link": "https://x.com/eurogamer/status/2084929346913870276",
+              "image": "https://pbs.twimg.com/media/HO8oLTxWYAAPT98.jpg"
+            },
+            {
+              "date": "08.08",
+              "source": "Eurogamer · 薪酬",
+              "title": "EA CEO Wilson实拿或达$7700万：员工中位数$12.7万，私有化后不再公开",
+              "summary": "Game File按「实际支付薪酬」口径（年末股价$202而非财报的$150）测算：Wilson 2026财年实拿约$7,700万，约为此前披露的两倍；同场数据员工中位数$12.7万。交割完成→裁员承诺→薪酬纪录的时间线连起来看，私有化争议里最实质的一点已经摆上台面。",
+              "metric": "9208浏览 · 14赞",
+              "link": "https://x.com/eurogamer/status/2085655666937442715",
+              "image": "https://pbs.twimg.com/media/HPG8q1eXQAA1wUe.png"
+            },
+            {
+              "date": "08.08",
+              "source": "GameSpot · 财报",
+              "title": "GTA6预购「史无前例」：Take-Two上调FY27指引至$82亿，实体仅占收入2%",
+              "summary": "Zelnick确认GTA6预购开局史无前例、11/19发售未延期，FY27 bookings指引上调$2亿；为$80定价辩护「phenomenal value」，预言三年内串流取代主机。最硬的数据点是实体仅占本季收入2%——索尼停盘风波中最激进的发行商口径，GTA6实体版将是「盒内兑换码」。",
+              "metric": "4.4万浏览 · 104赞",
+              "link": "https://x.com/GameSpot/status/2085717705924202779",
+              "image": "https://pbs.twimg.com/media/HPH1M0Aa4AAHDru.jpg"
+            },
+            {
+              "date": "08.03",
+              "source": "Eurogamer · 报道",
+              "title": "Xbox欧美英涨价34-49%：内存短缺的真实成本落在玩家账单上",
+              "summary": "Series X光盘版英国£500→£670（+34%）、欧洲€599.99→€799.99、美国$649.99→$799.99；Series S 1TB涨幅近49%。在营收-7%、硬件-29%的当口涨价，Xbox选择了保利润；三星同周预警短缺至少持续到2028——2027年前主机与PC没有降价窗口，「装机量天花板」成为发行策略新约束。",
+              "metric": "6532浏览 · 24赞",
+              "link": "https://x.com/eurogamer/status/2083900899097784582",
+              "image": "https://pbs.twimg.com/media/HOuAztPXoAEoIfq.jpg"
+            }
+          ]
+        },
+        {
+          "title": "新游推文",
+          "deck": "合作喜剧与口碑长销双爆发：荒诞病毒与100万份里程碑同周。",
+          "stories": [
+            {
+              "date": "08.08",
+              "source": "Kaeru · 病毒传播",
+              "title": "挠痒潜行768万浏览：Ball Scratch Simulator成荒诞模拟器谱系最新爆款",
+              "summary": "10ft Games的反向潜行模拟：在六个公共场景「不被发现地挠痒」，目击者越多难度越高，还要与「不听话的左手」搏斗。法语演示视频768万浏览、5.2万赞成全周最大单条——潜行机制反向应用（藏动作而非藏人）+题材自带meme势能，山羊模拟器谱系又添一员。",
+              "metric": "769万浏览 · 5.2万赞",
+              "link": "https://x.com/MemeCryptoFR/status/2085368871431635361",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2085368838103650304/img/D6DE0WxWANQjkc69.jpg"
+            },
+            {
+              "date": "08.05",
+              "source": "MauroNL · 评测汇总",
+              "title": "Big Walk首日46,409人在线+7家满分：House House再证「合作即内容」",
+              "summary": "《Untitled Goose Game》团队新作首日Steam峰值46,409人，媒体评分横扫7家10/10、GameSpot 9/10，175万浏览。2-12人合作徒步+proximity语音的极简设计，把「和朋友走散又重逢」做成了玩法本身——首周$14.99折扣中。",
+              "metric": "175万浏览 · 1.1万赞",
+              "link": "https://x.com/MauroNL3/status/2084330606104564206",
+              "image": "https://pbs.twimg.com/media/HO0Hor5WEAA8CVJ.jpg"
+            },
+            {
+              "date": "08.07",
+              "source": "Fields of Mistria官方 · 里程碑",
+              "title": "Fields of Mistria两日破100万份：种田品类的又一个长销样本",
+              "summary": "NPC Studio官宣累计销量破100万份：1.0正式版8/5发售（结婚/生子等终局内容+日语），自家PCU监控录得发售当日27,074首破20K后连日新高。Stardew谱系的画面与系统完成度+1.0内容量，让「种田长销」公式再次成立。",
+              "metric": "20.3万浏览 · 1.1万赞",
+              "link": "https://x.com/FieldsofMistria/status/2085134373595070940",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2085134169533792256/img/KD0FbNgmzlFZTnDo.jpg"
+            },
+            {
+              "date": "08.07",
+              "source": "Indie Game Joe · 新游发现",
+              "title": "Emergency Buddies：一人开车三人在后厢徒手救人，142万浏览的物理急救喜剧",
+              "summary": "Gestalt Studio的4人合作救护车模拟：司机狂飙、后厢三人徒手稳住病人「尽量活着」送达——开太快病人在车厢里飞，开太慢人救不回来，物理驱动的混乱笑料142万浏览/1.6万赞。合作胡闹品类的「职业cosplay」变体继续扩容。",
+              "metric": "143万浏览 · 1.6万赞",
+              "link": "https://x.com/IndieGameJoe/status/2085060621934932295",
+              "image": "https://pbs.twimg.com/amplify_video_thumb/2085055045196812288/img/ZUxN8jDAC7qU7TNg.jpg"
+            }
+          ]
+        }
+      ],
+      "watch": [
+        {
+          "title": "Peak最终更新与Big Hops Together（8/11当周）",
+          "body": "Peak「The Final Ascent」8/11上线（新生物群系+新秘密），Big Hops Together 8人合作首周-40%——观察两款合作游戏的PCU峰值回升幅度，验证「谢幕式运营」与「合作化更新」的拉新效率。"
+        },
+        {
+          "title": "8月下旬派对新游三连：Slayblade 8/20、Moo Who? 8/21、Unpossess 2 8/21",
+          "body": "陀螺roguelite（110万浏览）、学动物叫伪装对战、仪式抢跑惩罚除灵模拟同周发售/EA——观察首发PCU与好评率，验证本周病毒传播到销量的转化率。"
+        },
+        {
+          "title": "GTA6 Extended Look 8/27 Netflix首映",
+          "body": "Take-Two财报确认预购「史无前例」后的首个大型物料：观察首映内容形态（实机/剧情）与Netflix渠道效应，以及营销节奏对11/19发售预期的二次抬升。"
+        },
+        {
+          "title": "Devolver私有化投票（9/8）与EA交割后首月",
+          "body": "Devolver 9/8股东大会投票决定退市与否；EA侧观察「不裁员」承诺的裂缝与工作室整合信号——一大一小两个私有化样本的执行顺序值得对照记录。"
         }
       ]
     }
