@@ -18,9 +18,9 @@
     });
     REPORTS.sort((a,b)=>b.id.localeCompare(a.id));
 
-    const state={period:'20260727',view:'home',search:'',status:'all',sortKey:null,sortDir:-1,detailId:null,detailObservationKey:null,chartMetric:'flow',chartGranularity:'day',overviewMetric:'flow',overviewPoint:null,overviewSelected:null,reportYear:'all',reportSearch:''};
+    const state={period:'20260803',view:'home',search:'',status:'all',sortKey:null,sortDir:-1,detailId:null,detailObservationKey:null,chartMetric:'flow',chartGranularity:'day',overviewMetric:'flow',overviewPoint:null,overviewSelected:null,reportYear:'all',reportSearch:''};
     const VISIBLE_PERIODS=Object.keys(PERIODS).filter(k=>/^\d{8}$/.test(k)).sort().reverse().slice(0,2);
-    const GANTT_PAGE={'20260727':'gantt-20260727.html','20260720':'gantt-20260720.html'};
+    const GANTT_PAGE={'20260803':'gantt-20260803.html','20260727':'gantt-20260727.html','20260720':'gantt-20260720.html'};
     const CUSTOM_OBSERVATIONS=window.__DB.OBSERVATIONS||{};
     const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
     const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -144,7 +144,7 @@
       $$('[data-detail]').forEach(b=>b.onclick=()=>openDetail(b.dataset.detail));
     }
     /* 趋势图异动描边：本期/上期按手动确认(statusOverride)，其余周期按数据标准(±20%) */
-    const MANUAL_PERIODS=['20260727','20260720'];
+    const MANUAL_PERIODS=['20260803','20260727','20260720'];
     const trendMarked=(item,pid)=>{
       if(MANUAL_PERIODS.includes(pid))return item.statusOverride==='priority';
       const impact=priorityImpact(item,pid);
