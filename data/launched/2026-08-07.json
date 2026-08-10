@@ -1,0 +1,1301 @@
+{
+ "date": "2026-08-07",
+ "note": "骨架+演示数据：picks/twitter/roblox/radar 板块为真实数据，steamdb/bilibili 板块为示例占位，待接入数据源",
+ "picks": [
+  {
+   "name": "Big Walk",
+   "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1478500/header.jpg",
+   "hook": "首日7家媒体10/10 + Steam峰值46,409",
+   "source": "推特 · @MauroNL",
+   "link": "https://x.com/MauroNL3/status/2084330606104564206"
+  },
+  {
+   "name": "MECCHA CHAMELEON",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1785908480",
+   "hook": "机甲变色龙横版动作，209万浏览",
+   "source": "推特热游",
+   "link": "https://store.steampowered.com/app/4704690/"
+  },
+  {
+   "name": "An Eggstremely Hard Game",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4112070/af1b508f0fea8862f209b5636d34902b049e6252/header.jpg?t=1785773248",
+   "hook": "变态难平台跳跃，56万浏览",
+   "source": "推特热游",
+   "link": "https://store.steampowered.com/app/4112070/"
+  },
+  {
+   "name": "Big Hops",
+   "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1221480/header.jpg",
+   "hook": "3D平台跳跃新作，26.7万浏览",
+   "source": "推特热游",
+   "link": "https://store.steampowered.com/app/1221480/"
+  },
+  {
+   "name": "Fields of Mistria",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2142790/38313105cdcda9295fed4b124e5f5437872d35b4/header_alt_assets_4.jpg?t=1785944891",
+   "hook": "农场模拟 1.0 正式版，20.3万浏览",
+   "source": "推特热游",
+   "link": "https://store.steampowered.com/app/2142790/Fields_of_Mistria/"
+  }
+ ],
+ "boards": [
+  {
+   "id": "steamdb",
+   "title": "SteamDB Trending Games",
+   "title_en": "STEAMDB",
+   "demo": false,
+   "items": [
+    {
+     "name": "Big Walk",
+     "metric": "+13,528",
+     "sub": "好评 86.08% · 关注 44,663",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1478500/62eeee1507dbac905e128a62f2ce690550238db0/header.jpg?t=1785911674",
+     "release": "2026-08-04",
+     "link": "https://store.steampowered.com/app/1478500/"
+    },
+    {
+     "name": "纵横秘湾 Corsair Cove",
+     "metric": "+12,938",
+     "sub": "好评 83.19% · 关注 45,618",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1368140/6e08c557dfc1d84e5642bcbffcdc527f1614258f/header_schinese.jpg?t=1785860713",
+     "release": "2026-07-31",
+     "link": "https://store.steampowered.com/app/1368140/"
+    },
+    {
+     "name": "雾影猎人",
+     "metric": "+12,145",
+     "sub": "好评 62.79% · 关注 74,336",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3282300/1e28be5b34623f5cf841d10172f3df83774596d9/header_schinese.jpg?t=1785673983",
+     "release": "2026-07-29",
+     "link": "https://store.steampowered.com/app/3282300/"
+    },
+    {
+     "name": "轮回之兽",
+     "metric": "+11,796",
+     "sub": "好评 56.22% · 关注 51,725",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001760/59d5f1ce88f6ab3388c578dff543997e088c805d/header_schinese.jpg?t=1785818525",
+     "release": "2026-08-03",
+     "link": "https://store.steampowered.com/app/2001760/"
+    },
+    {
+     "name": "龙之剑:觉醒",
+     "metric": "+8,223",
+     "sub": "好评 87.56% · 关注 55,819",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4570720/96a897e98f4472e656fbe6681191b3066cab6056/header.jpg?t=1786058861",
+     "release": "2026-07-22",
+     "link": "https://store.steampowered.com/app/4570720/"
+    },
+    {
+     "name": "机械狂欢",
+     "metric": "+7,125",
+     "sub": "好评 84.75% · 关注 14,832",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4108000/bf97e80547a68eac1ad2c481c2f64b6e276d5801/header_schinese.jpg?t=1785909320",
+     "release": "2026-07-30",
+     "link": "https://store.steampowered.com/app/4108000/"
+    },
+    {
+     "name": "Counter-Strike 2",
+     "metric": "+6,846",
+     "sub": "好评 85.72% · 关注 4,885,913",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header_schinese.jpg?t=1784564069",
+     "release": "2012-08-21",
+     "link": "https://store.steampowered.com/app/730/"
+    },
+    {
+     "name": "全境封锁曙光",
+     "metric": "+4,624",
+     "sub": "好评 44.81% · 关注 7,791",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3749720/1d49ae3163dfd9dfcb6ba31ddbdf32fb67046d06/header.jpg?t=1786004353",
+     "release": "2026-08-05",
+     "link": "https://store.steampowered.com/app/3749720/"
+    },
+    {
+     "name": "Palworld / 幻兽帕鲁",
+     "metric": "+4,232",
+     "sub": "好评 93.61% · 关注 656,271",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/1b0709ec8de093a97a0bf43e799933eae4faef35/header_schinese.jpg?t=1784714419",
+     "release": "2026-07-09",
+     "link": "https://store.steampowered.com/app/1623730/"
+    },
+    {
+     "name": "虫潮孤堡：机欲防线",
+     "metric": "+4,091",
+     "sub": "好评 83.07% · 关注 6,983",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4403260/d9abba755fcf3090baa857beab1fbfd54f5bf592/header_schinese.jpg?t=1785775551",
+     "release": "2026-08-03",
+     "link": "https://store.steampowered.com/app/4403260/"
+    },
+    {
+     "name": "午夜轮班",
+     "metric": "+3,650",
+     "sub": "好评 85.63% · 关注 35,553",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3722330/7c230e17ecfde78d8c52b5d2e5e4aabbc10f5014/header_schinese.jpg?t=1785426429",
+     "release": "2026-07-22",
+     "link": "https://store.steampowered.com/app/3722330/"
+    },
+    {
+     "name": "MECCHA CHAMELEON",
+     "metric": "+3,543",
+     "sub": "好评 86.03% · 关注 158,054",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1785908480",
+     "release": "2026-06-09",
+     "link": "https://store.steampowered.com/app/4704690/"
+    },
+    {
+     "name": "Quasimorph",
+     "metric": "+3,507",
+     "sub": "好评 80.17% · 关注 46,652",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2059170/2a9b43b4775fdd7e045d03a3e8a85f41f8c3c9a9/header_alt_assets_1.jpg?t=1785584712",
+     "release": "2026-07-31",
+     "link": "https://store.steampowered.com/app/2059170/"
+    },
+    {
+     "name": "奈斯启示录 Necesse",
+     "metric": "+3,157",
+     "sub": "好评 90.87% · 关注 112,298",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1169040/2c2b507cf33191af41f996d218416542d4fd2256/header_alt_assets_5_schinese.jpg?t=1785482841",
+     "release": "2025-10-16",
+     "link": "https://store.steampowered.com/app/1169040/"
+    },
+    {
+     "name": "Fields of Mistria",
+     "metric": "+2,897",
+     "sub": "好评 95.42% · 关注 138,163",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2142790/38313105cdcda9295fed4b124e5f5437872d35b4/header_alt_assets_4.jpg?t=1785944891",
+     "release": "2026-08-05",
+     "link": "https://store.steampowered.com/app/2142790/"
+    },
+    {
+     "name": "Project Zomboid",
+     "metric": "+2,872",
+     "sub": "好评 93.06% · 关注 605,199",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg?t=1785771763",
+     "release": "2013-11-08",
+     "link": "https://store.steampowered.com/app/108600/"
+    },
+    {
+     "name": "Dota 2",
+     "metric": "+2,833",
+     "sub": "好评 80.25% · 关注 2,531,632",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1769535998",
+     "release": "2013-07-09",
+     "link": "https://store.steampowered.com/app/570/"
+    },
+    {
+     "name": "赛博朋克 2077",
+     "metric": "+2,778",
+     "sub": "好评 85.73% · 关注 1,600,846",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/4e88035f3a75e69e0ef2005fc611a7fafcb227e1/header_schinese.jpg?t=1784714077",
+     "release": "2020-12-09",
+     "link": "https://store.steampowered.com/app/1091500/"
+    },
+    {
+     "name": "赛菲莉娅",
+     "metric": "+2,747",
+     "sub": "好评 90.74% · 关注 17,774",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2436940/21b1476794fd8a2e0a3076448d28929e8139aad0/header_alt_assets_0.jpg?t=1785481238",
+     "release": "2026-07-31",
+     "link": "https://store.steampowered.com/app/2436940/"
+    },
+    {
+     "name": "Witchfire",
+     "metric": "+2,726",
+     "sub": "好评 89.33% · 关注 121,736",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3156770/3e222a764e93b6f5c10d114a8a82d71f221a7cd9/header.jpg?t=1785478776",
+     "release": "2024-09-23",
+     "link": "https://store.steampowered.com/app/3156770/"
+    },
+    {
+     "name": "绿植小筑",
+     "metric": "+2,633",
+     "sub": "好评 92.46% · 关注 8,259",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3558600/e3c1339cf21fd3971cfe36cd1566130bc67fc4b1/header_schinese.jpg?t=1786050710",
+     "release": "2026-07-30",
+     "link": "https://store.steampowered.com/app/3558600/"
+    },
+    {
+     "name": "The Binding of Isaac: Rebirth",
+     "metric": "+2,592",
+     "sub": "好评 96.00% · 关注 445,842",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250900/header.jpg?t=1731977365",
+     "release": "2014-11-04",
+     "link": "https://store.steampowered.com/app/250900/"
+    },
+    {
+     "name": "铁巢重炮",
+     "metric": "+2,546",
+     "sub": "好评 92.64% · 关注 45,351",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2950790/eeb4015c042c98085b34e9a5417fb8b88ca0aa2e/header_schinese.jpg?t=1786028313",
+     "release": "2026-08-06",
+     "link": "https://store.steampowered.com/app/2950790/"
+    },
+    {
+     "name": "星际播种王",
+     "metric": "+2,539",
+     "sub": "好评 86.04% · 关注 6,133",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2694020/85895e48ebb3c1e7d793a59aa84ae44ce0823dac/header_schinese.jpg?t=1785475350",
+     "release": "2026-07-30",
+     "link": "https://store.steampowered.com/app/2694020/"
+    },
+    {
+     "name": "Marvel's Spider-Man 2",
+     "metric": "+2,503",
+     "sub": "好评 81.45% · 关注 107,529",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2651280/header.jpg?t=1763569811",
+     "release": "2025-01-30",
+     "link": "https://store.steampowered.com/app/2651280/"
+    },
+    {
+     "name": "Funnel Runners",
+     "metric": "+2,480",
+     "sub": "好评 80.74% · 关注 24,749",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3712080/5e03554f7fd68edf54813a8d5a576a8791672227/header.jpg?t=1784567934",
+     "release": "2026-07-16",
+     "link": "https://store.steampowered.com/app/3712080/"
+    },
+    {
+     "name": "HackHub - Ultimate Hacker Simulator",
+     "metric": "+2,393",
+     "sub": "好评 83.86% · 关注 11,917",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2980270/header.jpg?t=1785579825",
+     "release": "2026-08-01",
+     "link": "https://store.steampowered.com/app/2980270/"
+    },
+    {
+     "name": "Hotel Tales",
+     "metric": "+2,351",
+     "sub": "好评 73.30% · 关注 10,726",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3413800/4402ae5d305a262d89943ad0843647ce680d2ddf/header.jpg?t=1786044331",
+     "release": "2026-07-31",
+     "link": "https://store.steampowered.com/app/3413800/"
+    },
+    {
+     "name": "Euro Truck Simulator 2",
+     "metric": "+2,310",
+     "sub": "好评 96.56% · 关注 1,369,693",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/9a81dc3126c56637297b654f9dcac057cfd79b77/header.jpg?t=1785394779",
+     "release": "2012-10-12",
+     "link": "https://store.steampowered.com/app/227300/"
+    },
+    {
+     "name": "多少兄弟？",
+     "metric": "+2,295",
+     "sub": "好评 86.50% · 关注 12,125",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3934270/4109803407c1f5e78c3a3d721478a7db0b10422e/header_schinese.jpg?t=1785901232",
+     "release": "2026-07-30",
+     "link": "https://store.steampowered.com/app/3934270/"
+    },
+    {
+     "name": "Wallpaper Engine：壁纸引擎",
+     "metric": "+2,139",
+     "sub": "好评 96.83% · 关注 1,510,722",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/header_schinese.jpg?t=1779452230",
+     "release": "2018-11-16",
+     "link": "https://store.steampowered.com/app/431960/"
+    },
+    {
+     "name": "Tears of Metal",
+     "metric": "+2,056",
+     "sub": "好评 82.36% · 关注 44,465",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1913120/9c62adaca165c8bc1a78990419e2cb35dd940b6b/header.jpg?t=1785940004",
+     "release": "2026-07-22",
+     "link": "https://store.steampowered.com/app/1913120/"
+    },
+    {
+     "name": "Marvel’s Spider-Man Remastered",
+     "metric": "+2,030",
+     "sub": "好评 94.70% · 关注 205,593",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/header.jpg?t=1763569047",
+     "release": "2022-08-12",
+     "link": "https://store.steampowered.com/app/1817070/"
+    },
+    {
+     "name": "Halo: Campaign Evolved",
+     "metric": "+2,009",
+     "sub": "好评 62.54% · 关注 55,768",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2806050/30d8542d35d7919b34e5f5dbe955d04c3f99e6da/header.jpg?t=1785367749",
+     "release": "2026-07-28",
+     "link": "https://store.steampowered.com/app/2806050/"
+    },
+    {
+     "name": "No Socks RPG",
+     "metric": "+1,999",
+     "sub": "好评 83.04% · 关注 7,326",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4929970/30672ba3a9c000e8a864658fda45c6bd53003c77/header.jpg?t=1785651574",
+     "release": "2026-07-27",
+     "link": "https://store.steampowered.com/app/4929970/"
+    },
+    {
+     "name": "Rust",
+     "metric": "+1,999",
+     "sub": "好评 86.28% · 关注 1,319,522",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1781536981",
+     "release": "2018-02-08",
+     "link": "https://store.steampowered.com/app/252490/"
+    },
+    {
+     "name": "Ostranauts",
+     "metric": "+1,920",
+     "sub": "好评 76.88% · 关注 33,300",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1022980/bc761a94d5f461f002677a7de7e5bf249dd18872/header.jpg?t=1785778613",
+     "release": "2026-08-03",
+     "link": "https://store.steampowered.com/app/1022980/"
+    },
+    {
+     "name": "《漫威斗魂》",
+     "metric": "+1,900",
+     "sub": "好评 45.56% · 关注 25,368",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3787240/82b30184ef30af41cf3c6eb93b5b3423f8f1c2c5/header_schinese.jpg?t=1786028588",
+     "release": "2026-08-06",
+     "link": "https://store.steampowered.com/app/3787240/"
+    },
+    {
+     "name": "黎明杀机",
+     "metric": "+1,872",
+     "sub": "好评 77.98% · 关注 1,719,309",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/header.jpg?t=1784216454",
+     "release": "2016-06-14",
+     "link": "https://store.steampowered.com/app/381210/"
+    },
+    {
+     "name": "地狱仆从2  (HellSlave II)",
+     "metric": "+1,829",
+     "sub": "好评 69.13% · 关注 5,023",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3399900/53131b59c4ce37807820c39c929bfec101edd91c/header.jpg?t=1785920813",
+     "release": "2026-08-04",
+     "link": "https://store.steampowered.com/app/3399900/"
+    },
+    {
+     "name": "极限竞速：地平线 6",
+     "metric": "+1,822",
+     "sub": "好评 82.23% · 关注 317,327",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/99ff2e08356158cc0aacb4cf192298fc4c45f215/header_alt_assets_2.jpg?t=1784819352",
+     "release": "2026-05-18",
+     "link": "https://store.steampowered.com/app/2483190/"
+    },
+    {
+     "name": "维修物语",
+     "metric": "+1,798",
+     "sub": "好评 90.65% · 关注 24,950",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3812600/7f08f08a410a8d41e7b6faa322804c7676a87977/header_alt_assets_3_schinese.jpg?t=1786056257",
+     "release": "2026-08-06",
+     "link": "https://store.steampowered.com/app/3812600/"
+    },
+    {
+     "name": "账单必须支付 Bills Must Be Paid",
+     "metric": "+1,771",
+     "sub": "好评 93.50% · 关注 3,459",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4421010/19abfca5c44bcab9a23b62576dcf6a2eb206e19b/header_schinese.jpg?t=1785603928",
+     "release": "2026-07-29",
+     "link": "https://store.steampowered.com/app/4421010/"
+    },
+    {
+     "name": "刺客信条：黑旗 记忆重置",
+     "metric": "+1,758",
+     "sub": "好评 78.22% · 关注 100,978",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751950/777795886ee7d2fc9f1e84aacc75f82baf75defb/header_schinese.jpg?t=1785858422",
+     "release": "2026-07-09",
+     "link": "https://store.steampowered.com/app/3751950/"
+    },
+    {
+     "name": "深岩银河",
+     "metric": "+1,722",
+     "sub": "好评 96.15% · 关注 2,858,878",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/d102c940866e1c89152c82d265acb5b431c2ce24/header_alt_assets_15_schinese.jpg?t=1786014445",
+     "release": "2020-05-13",
+     "link": "https://store.steampowered.com/app/548430/"
+    },
+    {
+     "name": "The Mound: Omen of Cthulhu",
+     "metric": "+1,711",
+     "sub": "好评 67.46% · 关注 58,504",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2569760/0a3d1867d5781f18cb4fd0b1151729605e892c6b/header.jpg?t=1785400715",
+     "release": "2026-07-15",
+     "link": "https://store.steampowered.com/app/2569760/"
+    },
+    {
+     "name": "Stardew Valley",
+     "metric": "+1,707",
+     "sub": "好评 97.73% · 关注 1,091,905",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1754692865",
+     "release": "2016-02-26",
+     "link": "https://store.steampowered.com/app/413150/"
+    },
+    {
+     "name": "原子之心",
+     "metric": "+1,703",
+     "sub": "好评 79.54% · 关注 244,497",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/668580/header.jpg?t=1785772035",
+     "release": "2023-02-20",
+     "link": "https://store.steampowered.com/app/668580/"
+    },
+    {
+     "name": "最后的抵抗～监狱解放者～",
+     "metric": "+1,701",
+     "sub": "好评 74.37% · 关注 2,585",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4423700/22405ac7a59d77ae908b4462159473d11b17d12a/header.jpg?t=1785553205",
+     "release": "2026-07-31",
+     "link": "https://store.steampowered.com/app/4423700/"
+    },
+    {
+     "name": "博德之门3",
+     "metric": "+1,692",
+     "sub": "好评 96.02% · 关注 1,011,730",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/48a2fcbda8565bb45025e98fd8ebde8a7203f6a0/header.jpg?t=1777363040",
+     "release": "2023-08-03",
+     "link": "https://store.steampowered.com/app/1086940/"
+    }
+   ],
+   "more": {
+    "label": "查看完整榜单",
+    "href": "https://steamdb.info/stats/trendingfollowers/"
+   }
+  },
+  {
+   "id": "bilibili",
+   "title": "B站游戏区热门排行榜",
+   "title_en": "BILIBILI HOT 100",
+   "demo": false,
+   "items": [
+    {
+     "name": "机械狂欢",
+     "metric": "最高3名",
+     "sub": "你说偷吃零食被发现会死是吗？ · 机会分80",
+     "thumb": "https://i0.hdslb.com/bfs/archive/c2300e7036d267b61fc0e2864f1109c6f074769d.jpg",
+     "link": "https://www.bilibili.com/video/BV1fGuc6xEmp/",
+     "fresh": false,
+     "release": "2026-07-30"
+    },
+    {
+     "name": "杀死影子",
+     "metric": "最高46名",
+     "sub": "【散人】国产悬疑推理《杀死影子》 十年谜案 探寻真相（已更新至P1） · 机会分72(首次上榜)",
+     "thumb": "https://i0.hdslb.com/bfs/archive/f2fec48db44e8f0fbd4d3498514484b2d472227a.jpg",
+     "link": "https://www.bilibili.com/video/BV17uuJ63Ew1/",
+     "fresh": true,
+     "release": "2026-08-04"
+    },
+    {
+     "name": "三国百将牌",
+     "metric": "最高27名",
+     "sub": "卢本伟的打牌日记3|巴旦木公主请“开”牌 · 机会分70(首次上榜)",
+     "thumb": "https://i1.hdslb.com/bfs/archive/73748f78455ccaa00b28b68668cd3ba3df6bef3b.jpg",
+     "link": "https://www.bilibili.com/video/BV1ZFuP6wEPW/",
+     "fresh": false,
+     "release": "2026-04-21"
+    },
+    {
+     "name": "完蛋！我被男同学包围了",
+     "metric": "最高1名",
+     "sub": "完蛋！我被男同学包围了 · 机会分70",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4673900/cafe8eba43375f6ddcd87b9d098c167fc69cfae0/header.jpg?t=1785585627",
+     "link": "https://store.steampowered.com/app/4673900/",
+     "fresh": true,
+     "release": "2026-08-01"
+    },
+    {
+     "name": "Endacopia",
+     "metric": "最高67名",
+     "sub": "一款画风可爱的早期电脑教育游戏！《Endacopia》全结局实况！【完结】 · 机会分62(首次上榜)",
+     "thumb": "https://i0.hdslb.com/bfs/archive/a9d3b977445667cafd63fe7024ac60cd2b57016f.jpg",
+     "link": "https://www.bilibili.com/video/BV16cMo67EeW/",
+     "fresh": false,
+     "release": "2026-07-27"
+    },
+    {
+     "name": "暗区突围",
+     "metric": "最高16名",
+     "sub": "【暗区突围手游PV】永不言退 | 全新活动玩法「危机蔓延」8月7日上线 · 机会分58(首次上榜)",
+     "thumb": "https://i0.hdslb.com/bfs/archive/bfaf443ffa3e4ad798d90fa6da396bde63677c45.jpg",
+     "link": "https://www.bilibili.com/video/BV13run6MErf/",
+     "fresh": false,
+     "release": null
+    },
+    {
+     "name": "邺山彼处",
+     "metric": "最高11名",
+     "sub": "阴间网页解谜游戏《邺山彼处》全结局完整攻略、剧情解读与彩蛋 表面看似美好的旅游小村庄，背后竟是全体村民隐藏的可怕秘密 · 机会分52(首次上榜)",
+     "thumb": "https://i0.hdslb.com/bfs/archive/75553bb9e0a752d73b245e4130a481f9ed0ca7e7.jpg",
+     "link": "https://www.bilibili.com/video/BV1iUM161EPD/",
+     "fresh": false,
+     "release": null
+    },
+    {
+     "name": "魔兽世界",
+     "metric": "最高20名",
+     "sub": "魔兽世界当初有多火？ · 机会分52(首次上榜)",
+     "thumb": "https://i0.hdslb.com/bfs/archive/126526b7a123a91887bbc18ed118f5560b3529b5.jpg",
+     "link": "https://www.bilibili.com/video/BV1E4M26SE7r/",
+     "fresh": false,
+     "release": null
+    },
+    {
+     "name": "STORROR Parkour PRO",
+     "metric": "最高21名",
+     "sub": "《 空 中 飞 人 》 · 机会分52(首次上榜)",
+     "thumb": "https://i2.hdslb.com/bfs/archive/eade417487583850c0f6e448fa0604d278061e45.jpg",
+     "link": "https://www.bilibili.com/video/BV1M1My6fEKW/",
+     "fresh": false,
+     "release": "2025-03-31"
+    },
+    {
+     "name": "青鬼：临海学校",
+     "metric": "最高40名",
+     "sub": "【青鬼：临海学校】全员生还/全收集/无伤完全攻略 · 机会分48(首次上榜)",
+     "thumb": "https://i2.hdslb.com/bfs/archive/596c65bcb0fffd198224a6ad4ff2498be039a968.jpg",
+     "link": "https://www.bilibili.com/video/BV1CvuJ6pEHn/",
+     "fresh": false,
+     "release": null
+    },
+    {
+     "name": "VRChat",
+     "metric": "最高34名",
+     "sub": "就你这点钱也敢出来旅游？？ · 机会分42(首次上榜)",
+     "thumb": "https://i0.hdslb.com/bfs/archive/e0287fb1c5a5a64f2395a9d831cfa5e3e2e0b503.jpg",
+     "link": "https://www.bilibili.com/video/BV1cQM66uEPj/",
+     "fresh": false,
+     "release": "2017-02-01"
+    },
+    {
+     "name": "铁幕前线",
+     "metric": "最高49名",
+     "sub": "雪松新版本8月6日启动！耀斑-阿廖欣防御活动PV-[铁幕前线] · 机会分42(首次上榜)",
+     "thumb": "https://i2.hdslb.com/bfs/archive/379f92d4f446c37acf9032c71c7f22e615d6b42c.jpg",
+     "link": "https://www.bilibili.com/video/BV1fkGP6VEWA/",
+     "fresh": false,
+     "release": null
+    },
+    {
+     "name": "Mermaid",
+     "metric": "最高54名",
+     "sub": "泯灭人性！少女被强行和鱼结合为“美人鱼”！如何帮助她逃离？《mermaid》DEMO · 机会分42(首次上榜)",
+     "thumb": "https://i0.hdslb.com/bfs/archive/93f6f8b79d2276455f373792d7510045475c2b5f.jpg",
+     "link": "https://www.bilibili.com/video/BV1JzMR6CEHQ/",
+     "fresh": false,
+     "release": null
+    },
+    {
+     "name": "Poly Bridge 3",
+     "metric": "最高56名",
+     "sub": "耗时一个月，我造出了一座《万元内最好的桥》！！ · 机会分42(首次上榜)",
+     "thumb": "https://i2.hdslb.com/bfs/archive/90707abbb97f64b93b237b8f4c5bcff978daf1bc.jpg",
+     "link": "https://www.bilibili.com/video/BV1b6My6AEUY/",
+     "fresh": false,
+     "release": "2023-05-30"
+    },
+    {
+     "name": "七日世界",
+     "metric": "最高73名",
+     "sub": "当方块撞进末世？奈科特大陆惨“遭物理打码”！ · 机会分32(首次上榜)",
+     "thumb": "https://i0.hdslb.com/bfs/archive/4255eb676c21ebc28360d437b0c7ee21aca66476.jpg",
+     "link": "https://www.bilibili.com/video/BV19PMr6FE2D/",
+     "fresh": false,
+     "release": "2024-07-09"
+    },
+    {
+     "name": "原神",
+     "metric": "最高2名",
+     "sub": "《原神》奥黛塔角色PV——「柔雪的幻象」 · 机会分40",
+     "thumb": "https://i2.hdslb.com/bfs/archive/740a9b04ec6880e1ffbc1cf6535b886b26000b43.jpg",
+     "link": "https://www.bilibili.com/video/BV1wZMy6DE31/",
+     "fresh": false,
+     "release": "2020-09-28",
+     "mature": true
+    },
+    {
+     "name": "我的世界",
+     "metric": "最高5名",
+     "sub": "当和你一起玩的那个兄弟延迟过高： · 机会分50",
+     "thumb": "https://i0.hdslb.com/bfs/archive/3eb44656aab5f4116b07f3d3825eec4235b53f52.jpg",
+     "link": "https://www.bilibili.com/video/BV1JQuc6fEsA/",
+     "fresh": false,
+     "release": "2011-11-18",
+     "mature": true
+    },
+    {
+     "name": "三角洲行动",
+     "metric": "最高13名",
+     "sub": "赢出定义，我即定义｜烽火职业联赛夏季赛宣传片 · 机会分42",
+     "thumb": "https://i0.hdslb.com/bfs/archive/a10370ab4687bbcc123fbbd29d2584cae2431ee9.jpg",
+     "link": "https://www.bilibili.com/video/BV1MEMr6DEu3/",
+     "fresh": false,
+     "release": "2024-09-26",
+     "mature": true
+    },
+    {
+     "name": "明日方舟",
+     "metric": "最高18名",
+     "sub": "压力一只鲸鱼？ · 机会分50(上升14名)",
+     "thumb": "https://i0.hdslb.com/bfs/archive/0b4c0071e3c9012948e56dfc238de6cea9b874f3.jpg",
+     "link": "https://www.bilibili.com/video/BV1qpMy6yEyU/",
+     "fresh": false,
+     "release": "2019-05-01",
+     "mature": true
+    },
+    {
+     "name": "绝区零",
+     "metric": "最高23名",
+     "sub": "【绝区零】迷言诡域：贝果计划 活动攻略/搜打撤/绝区零3.1 · 机会分50(上升14名)",
+     "thumb": "https://i1.hdslb.com/bfs/archive/0e4a2a453ce3675b3f339adab0343b2027a0008e.jpg",
+     "link": "https://www.bilibili.com/video/BV1EdM66iEKX/",
+     "fresh": false,
+     "release": "2024-07-04",
+     "mature": true
+    },
+    {
+     "name": "火影忍者手游",
+     "metric": "最高24名",
+     "sub": "诡谲多变的艺术品！侠兜实战思路 · 机会分57(上升21名)",
+     "thumb": "https://i2.hdslb.com/bfs/archive/3e41d7d687912cfeb73e48f586b7032c8bf153df.jpg",
+     "link": "https://www.bilibili.com/video/BV1qPMR6qEei/",
+     "fresh": false,
+     "release": "2016-01-05",
+     "mature": true
+    },
+    {
+     "name": "植物大战僵尸",
+     "metric": "最高30名",
+     "sub": "海绵宝宝大战僵尸Day4，章鱼哥 · 机会分38",
+     "thumb": "https://i0.hdslb.com/bfs/archive/b4d61ed8e47161aed1cc71b7d41422caa8044f24.jpg",
+     "link": "https://www.bilibili.com/video/BV1x8Mo6tEgN/",
+     "fresh": false,
+     "release": "2009-05-05",
+     "mature": true
+    },
+    {
+     "name": "王者荣耀",
+     "metric": "最高33名",
+     "sub": "【亚某爆料时间】【澜-雾影狼魂】皮肤爆料丨【无尽之局】平行世界系列新皮肤 · 机会分32",
+     "thumb": "https://i0.hdslb.com/bfs/archive/b5d5400f5bc588df9afcde7fc2d231fc8b8e2cc2.jpg",
+     "link": "https://www.bilibili.com/video/BV1uguw62EBv/",
+     "fresh": false,
+     "release": "2015-11-26",
+     "mature": true
+    },
+    {
+     "name": "崩坏：星穹铁道",
+     "metric": "最高38名",
+     "sub": "我可是有好好练习跳舞的 · 机会分28",
+     "thumb": "https://i0.hdslb.com/bfs/archive/3dd97ca38e126156f02f0933cc49664032a032cf.jpg",
+     "link": "https://www.bilibili.com/video/BV13JM16iEVx/",
+     "fresh": false,
+     "release": "2023-04-26",
+     "mature": true
+    },
+    {
+     "name": "明日方舟终末地",
+     "metric": "最高78名",
+     "sub": "选一只企鹅领养，你会选哪只？ · 机会分12",
+     "thumb": "https://i2.hdslb.com/bfs/archive/1f900e5c82e25e61000c00584c2410c3e8657f49.png",
+     "link": "https://www.bilibili.com/video/BV1njMy6UE6T/",
+     "fresh": false,
+     "release": "2026-01-22",
+     "mature": true
+    },
+    {
+     "name": "赛尔号巅峰之战",
+     "metric": "最高83名",
+     "sub": "赛尔号超逆天阴间BOSS！变态到主播打得差点失禁！ · 机会分12",
+     "thumb": "https://i1.hdslb.com/bfs/archive/cf3790e7b414320c0e567683a5d8b17843c6b673.jpg",
+     "link": "https://www.bilibili.com/video/BV1SS3Z65Ex4/",
+     "fresh": false,
+     "release": "2025-06-13",
+     "mature": true
+    },
+    {
+     "name": "第五人格",
+     "metric": "最高90名",
+     "sub": "【第四十四赛季·精华3】故事视频公开：——“你觉得，魔法是什么？” · 机会分12",
+     "thumb": "https://i0.hdslb.com/bfs/archive/5e6a6cc147f7af8175bc67d355d9cfade9355a2a.jpg",
+     "link": "https://www.bilibili.com/video/BV1D2uF6VEEn/",
+     "fresh": false,
+     "release": "2018-04-02",
+     "mature": true
+    },
+    {
+     "name": "使命召唤",
+     "metric": "最高94名",
+     "sub": "空投得了MVP · 机会分12",
+     "thumb": "https://i1.hdslb.com/bfs/archive/2753c6962daef81c192c111b3628cc24e796e748.jpg",
+     "link": "https://www.bilibili.com/video/BV1gDMD6SE1W/",
+     "fresh": false,
+     "release": "2020-12-25",
+     "mature": true
+    },
+    {
+     "name": "英雄联盟",
+     "metric": "最高99名",
+     "sub": "跨越13年的对决：老剑圣vs新剑圣！老流浪vs新瑞兹！机制vs数值！谁会赢？！ · 机会分12",
+     "thumb": "https://i0.hdslb.com/bfs/archive/c20336deaea7c1d9b9e3539979fc2df879d3f4ab.jpg",
+     "link": "https://www.bilibili.com/video/BV1tpMC6dEQ2/",
+     "fresh": false,
+     "release": "2011-09-22",
+     "mature": true
+    }
+   ],
+   "more": {
+    "label": "查看完整榜单",
+    "href": "https://www.bilibili.com/v/popular/rank/game"
+   }
+  },
+  {
+   "id": "twitter",
+   "title": "推特热游",
+   "title_en": "TWITTER",
+   "demo": false,
+   "items": [
+    {
+     "name": "Big Walk",
+     "metric": "175.4万",
+     "sub": "08-05 · Big Walk首日：7家媒体10/10+Steam峰值46,409，合作品类新标杆落地",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1478500/62eeee1507dbac905e128a62f2ce690550238db0/header.jpg?t=1785219462",
+     "link": "https://store.steampowered.com/app/1478500/Big_Walk/",
+     "release": "2026-08-04",
+     "day": "2026-08-05",
+     "idx": 3
+    },
+    {
+     "name": "An Eggstremely Hard Game",
+     "metric": "56.4万",
+     "sub": "07-26 · 鹅夫妻搬蛋协作游戏发售：不是友情破坏系，是能互相拉一把——563K浏览",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4112070/af1b508f0fea8862f209b5636d34902b049e6252/header.jpg?t=1784891682",
+     "link": "https://store.steampowered.com/app/4112070",
+     "release": null,
+     "day": "2026-07-26",
+     "idx": 0
+    },
+    {
+     "name": "Meccha Chameleon",
+     "metric": "43.2万",
+     "sub": "08-02 · Meccha Chameleon×8番出口官方联动地图上线，7万评价小品的长线运营",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1785107783",
+     "link": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+     "release": "2026-06-09",
+     "day": "2026-08-02",
+     "idx": 1
+    },
+    {
+     "name": "Big Hops",
+     "metric": "26.7万",
+     "sub": "08-01 · Big Hops 8月9日变身8人合作：扔队友、荡队友、偷背包，进度共享",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1221480/35f1cf997f49e04612021b87d4ac787c9f8f69f9/header.jpg?t=1785524074",
+     "link": "https://store.steampowered.com/app/1221480/Big_Hops/",
+     "release": "2026-01-12",
+     "day": "2026-08-01",
+     "idx": 0
+    },
+    {
+     "name": "Fields of Mistria",
+     "metric": "20.3万",
+     "sub": "08-07 · Fields of Mistria 1.0两日官宣100万份：星露谷谱系最强答卷——PCU三连涨",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2142790/38313105cdcda9295fed4b124e5f5437872d35b4/header_alt_assets_4.jpg?t=1785944891",
+     "link": "https://store.steampowered.com/app/2142790/Fields_of_Mistria/",
+     "release": "2026-08-05",
+     "day": "2026-08-07",
+     "idx": 1
+    },
+    {
+     "name": "Pass the Fear",
+     "metric": "17.2万",
+     "sub": "07-28 · Pass the Fear：4人协力弹幕roguelite，发售数日同接破2.29万",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3561220/75f77fc88eaf0226ebae317a94f05000164c5cc0/header.jpg?t=1784799208",
+     "link": "https://store.steampowered.com/app/3561220/Pass_the_Fear/",
+     "release": "2026-07-22",
+     "day": "2026-07-28",
+     "idx": 3
+    },
+    {
+     "name": "Polylithic",
+     "metric": "9.7万",
+     "sub": "08-03 · Polylithic：10人合作石器时代生存8月25日正式版，EA近三年毕业",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1839060/1df7c44279065a14e15874b670f16a8fc9f4a481/header.jpg?t=1784650095",
+     "link": "https://store.steampowered.com/app/1839060/Polylithic/",
+     "release": "2026-08-25",
+     "day": "2026-08-03",
+     "idx": 0
+    },
+    {
+     "name": "Bills Must Be Paid",
+     "metric": "8.4万",
+     "sub": "07-31 · 遭抖音克隆的砸存钱罐游戏正版发售：同接3740、97%好评，已向字节投诉下架",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4421010/fc7d507e465320493fbf224b54d769c043601390/header.jpg?t=1785365619",
+     "link": "https://store.steampowered.com/app/4421010/Bills_Must_Be_Paid/",
+     "release": "2026-07-29",
+     "day": "2026-07-31",
+     "idx": 3
+    },
+    {
+     "name": "IRON NEST: Heavy Turret Simulator",
+     "metric": "1.4万",
+     "sub": "08-04 · IRON NEST愿望单破100万：两人团队手搓5000吨炮塔，8月6日发售",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2950790/e6c9e990560078611472e5dab98e79a405ed33f4/header.jpg?t=1785631002",
+     "link": "https://store.steampowered.com/app/2950790/IRON_NEST_Heavy_Turret_Simulator/",
+     "release": "2026-08-06",
+     "day": "2026-08-04",
+     "idx": 1
+    },
+    {
+     "name": "Sir, We Have an Orc Problem",
+     "metric": "1.2万",
+     "sub": "08-05 · Orc Problem首周$100万/12.8万份：4个月开发周期的回报率实证",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4594150/d8a7b3d55e3a2b42350732db0/header.jpg",
+     "link": "https://store.steampowered.com/app/4594150/Sir_We_Have_an_Orc_Problem/",
+     "release": "2026-07-28",
+     "day": "2026-08-05",
+     "idx": 1
+    }
+   ],
+   "more": {
+    "label": "查看新游推文",
+    "tab": "indie"
+   }
+  },
+  {
+   "id": "roblox",
+   "title": "Roblox 周榜",
+   "title_en": "ROBLOX WEEKLY",
+   "demo": false,
+   "week": "7.27 - 8.2",
+   "items": [
+    {
+     "name": "[X2] +1 Speed Keyboard Escape",
+     "metric": "128.0万",
+     "thumb": "https://tr.rbxcdn.com/180DAY-9d2f5777b1061a16286e59669f7f1019/512/512/Image/Png/noFilter",
+     "link": "https://www.roblox.com/games/95082159892680/",
+     "universeId": 9584852943,
+     "desc": "键盘跑酷逃生：每一步+1速度，在糖果与巧克力键盘键帽组成的世界里奔跑、跳跃、逃脱，训练速度解锁倍率，与好友竞速冲榜。",
+     "genre": "模拟 / 增量跑酷",
+     "release": "2026-01-18",
+     "playing": 182680,
+     "visits": 4315185350
+    },
+    {
+     "name": "Brookhaven RP",
+     "metric": "71.6万",
+     "thumb": "https://tr.rbxcdn.com/180DAY-2256f921efa303aa6488b35b33d75ce0/512/512/Image/Png/noFilter",
+     "link": "https://www.roblox.com/games/4924922222/",
+     "universeId": 1686885941,
+     "desc": "开放式生活扮演小镇：拥有并装饰你的豪宅、驾驶载具、探索城市，扮演任何你想成为的角色。",
+     "genre": "角色扮演 / 生活模拟",
+     "release": "2020-04-21",
+     "playing": 445087,
+     "visits": 86014163122
+    },
+    {
+     "name": "Murder Mystery 2",
+     "metric": "70.9万",
+     "thumb": "https://tr.rbxcdn.com/180DAY-313f1416cd5e4335a97d054183743fdd/512/512/Image/Png/noFilter",
+     "link": "https://www.roblox.com/games/142823291/",
+     "universeId": 66654135,
+     "desc": "经典社交推理：无辜者躲避并找出凶手，警长持枪保护众人，凶手则要悄无声息淘汰所有人。",
+     "genre": "生存 / 一对多对抗",
+     "release": "2014-01-18",
+     "playing": 578350,
+     "visits": 28510477905
+    },
+    {
+     "name": "Steal a Brainrot",
+     "metric": "63.2万",
+     "thumb": "https://tr.rbxcdn.com/180DAY-34cd6faeb970f29939619fb9b0942621/512/512/Image/Png/noFilter",
+     "link": "https://www.roblox.com/games/109983668079237/",
+     "universeId": 7709344486,
+     "desc": "购买 Brainrot 产生收益，潜入别家基地偷取 Brainrot，转生升级，还能买道具恶搞其他玩家。",
+     "genre": "模拟 / 大亨经营",
+     "release": "2025-05-16",
+     "playing": 122824,
+     "visits": 72257520435
+    },
+    {
+     "name": "Blox Fruits",
+     "metric": "63.0万",
+     "thumb": "https://tr.rbxcdn.com/180DAY-a64f70da20fc1e80ee76fe5d49c1be0a/512/512/Image/Png/noFilter",
+     "link": "https://www.roblox.com/games/2753915549/",
+     "universeId": 994732206,
+     "desc": "海贼王题材动作RPG：修炼剑术或食用恶魔果实，航行大海挑战强敌与Boss，寻找隐藏秘宝。",
+     "genre": "RPG / 动作RPG",
+     "release": "2019-01-16",
+     "playing": 262099,
+     "visits": 63265571922
+    },
+    {
+     "name": "Grow a Garden 2",
+     "metric": "60.5万",
+     "thumb": "https://tr.rbxcdn.com/180DAY-f48b7d8dcdc751e52bf5cf04312aac9f/512/512/Image/Png/noFilter",
+     "link": "https://www.roblox.com/games/97598239454123/",
+     "universeId": 10200395747,
+     "desc": "种田经营：买种子、种下、收获卖钱，组建公会争夺每周奖励——小心夜里有人来偷菜。",
+     "genre": "模拟 / 大亨经营",
+     "release": "2026-05-21",
+     "playing": 501049,
+     "visits": 1568755972
+    },
+    {
+     "name": "99 Nights in the Forest",
+     "metric": "50.8万",
+     "thumb": "https://tr.rbxcdn.com/180DAY-a198d6613f29d09c503e41f1357ab002/512/512/Image/Png/noFilter",
+     "link": "https://www.roblox.com/games/79546208627805/",
+     "universeId": 7326934954,
+     "desc": "与好友在森林中建营求生，熬过99个夜晚——黑暗中有东西在注视着你。",
+     "genre": "生存",
+     "release": "2025-03-04",
+     "playing": 177940,
+     "visits": 28761363672
+    },
+    {
+     "name": "Animal Hospital (Anomaly)",
+     "metric": "42.9万",
+     "thumb": "https://tr.rbxcdn.com/180DAY-3e496d8fe414b9b4d9fef8a28a42aeb9/512/512/Image/Png/noFilter",
+     "link": "https://www.roblox.com/games/78515283254292/",
+     "universeId": 10148749921,
+     "desc": "你受雇在动物医院值夜班，负责医治病人——但有些“病人”举止异常……",
+     "genre": "生存 / 恐怖",
+     "release": "2026-05-10",
+     "playing": 181700,
+     "visits": 1681540285
+    },
+    {
+     "name": "Adopt Me!",
+     "metric": "26.7万",
+     "thumb": "https://tr.rbxcdn.com/180DAY-f5dc501881f5a8128689b14eab0213e5/512/512/Image/Png/noFilter",
+     "link": "https://www.roblox.com/games/920587237/",
+     "universeId": 383310974,
+     "desc": "收养抚养宠物与宝宝，交易收集传奇宠物，建造梦想之家，与好友角色扮演。",
+     "genre": "角色扮演 / 宠物养成",
+     "release": "2017-07-14",
+     "playing": 119054,
+     "visits": 44331218097
+    },
+    {
+     "name": "RIVALS",
+     "metric": "26.2万",
+     "thumb": "https://tr.rbxcdn.com/180DAY-e162b9799dc941a9d132ac0dee2b79e7/512/512/Image/Png/noFilter",
+     "link": "https://www.roblox.com/games/17625359962/",
+     "universeId": 6035872082,
+     "desc": "Roblox 最硬核的第一人称射击：1v1 到 5v5 决斗，先拿5分者胜。",
+     "genre": "射击 / 死斗竞技",
+     "release": "2024-05-26",
+     "playing": 213549,
+     "visits": 17178204350
+    }
+   ],
+   "more": {
+    "label": "查看完整周报",
+    "view": "roblox"
+   }
+  }
+ ],
+ "watch": {
+  "featured": [
+   {
+    "name": "Moo Who?",
+    "date": "2026年8月21日 EA",
+    "note": "8人动物叫声伪装潜行对战：苍蝇缠身时必须真对麦克风学动物叫，否则暴露位置。推文已获 23.2 万浏览。",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4948000/362297ea18447bdf634052b56e7c1bc3d9ed2e72/header.jpg",
+    "link": "https://store.steampowered.com/app/4948000/Moo_Who/"
+   },
+   {
+    "name": "抵抗者",
+    "date": "发售日期待定",
+    "note": "SteamDB 趋势榜在列：关注增长 +9,268 · 总关注 21,608",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3184960/15873551682ec4edc6b1ef3aff15f09974c46817/header_schinese.jpg?t=1786013082",
+    "link": "https://store.steampowered.com/app/3184960/"
+   },
+   {
+    "name": "DISCIPLINE SIMULATOR",
+    "date": "发售日期待定",
+    "note": "SteamDB 趋势榜在列：关注增长 +6,279 · 总关注 9,175",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4739040/15d6fa18870221184e10caf28bbc88dd12aba2af/header.jpg?t=1785899483",
+    "link": "https://store.steampowered.com/app/4739040/"
+   },
+   {
+    "name": "Dear Passengers",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +8,285 · 总关注 61,745",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4534960/7ddef53346afe3e3d4d479dbed740cdb38cfe09a/header.jpg?t=1784401335",
+    "link": "https://store.steampowered.com/app/4534960/"
+   },
+   {
+    "name": "Gears of War: E-Day",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +3,129 · 总关注 38,576",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1785432491",
+    "link": "https://store.steampowered.com/app/3010850/"
+   },
+   {
+    "name": "Guns and Dragons",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +2,529 · 总关注 2,651",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4687860/e683d4a1be5443ea6fa44feb1a16dfcb5c5d9c04/header.jpg?t=1785492621",
+    "link": "https://store.steampowered.com/app/4687860/"
+   },
+   {
+    "name": "暗星铁律",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +2,199 · 总关注 32,765",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1067360/355bc0de7c348ddccf927275cbbbac513d8a17ed/header_alt_assets_0_schinese.jpg?t=1785904490",
+    "link": "https://store.steampowered.com/app/1067360/"
+   },
+   {
+    "name": "SpeedRunners 2: King of Speed",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +2,073 · 总关注 10,844",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3183760/6c227ae4c5d0c9d44c38b4cac5915682be0b1ddb/header.jpg?t=1785510635",
+    "link": "https://store.steampowered.com/app/3183760/"
+   },
+   {
+    "name": "Dead Zone Revive",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +1,939 · 总关注 4,708",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3919900/774c0da58c69bb0fecb842dc708d40bd7db22ca1/header.jpg?t=1783095094",
+    "link": "https://store.steampowered.com/app/3919900/"
+   },
+   {
+    "name": "WARDOGS",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +1,924 · 总关注 71,994",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/59d4daf753bd5d982e6675f7eee363bc817c574e/header.jpg?t=1785318392",
+    "link": "https://store.steampowered.com/app/1867240/"
+   },
+   {
+    "name": "QUIET",
+    "date": "日期待定",
+    "note": "推特热游在榜：推文浏览 19.8万 · QUIET开测：鸭子外星人×恐怖奶奶，声响即死的4人合作喜剧恐怖——19.8万浏览",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4228630/6673f0c5252d0b76b2b86ed0844d58d4b7b028ae/header.jpg?t=1785809177",
+    "link": "https://store.steampowered.com/app/4228630/QUIET/"
+   },
+   {
+    "name": "Tiny Hero Courier",
+    "date": "日期待定",
+    "note": "推特热游在榜：推文浏览 22.4万 · Tiny Hero Courier：移轴微缩僵尸末日送快递，解谜开路别摔包裹",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3408450/header.jpg?t=1734605296",
+    "link": "https://store.steampowered.com/app/3408450/Tiny_Hero_Courier/"
+   },
+   {
+    "name": "Stonewards",
+    "date": "2026年8月12日（EA）",
+    "note": "推特热游在榜：推文浏览 7.8万 · Stonewards：矮人采掘-锻造-守城三段循环，8月12日EA、愿望单10万",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4502710/c57ab526296dfdab54cbc5aa2b93bc1fb46f5acd/header.jpg?t=1785577435",
+    "link": "https://store.steampowered.com/app/4502710/Stonewards/"
+   },
+   {
+    "name": "Ascenders: Beyond the Peak",
+    "date": "2026年Q3",
+    "note": "推特热游在榜：推文浏览 6万 · 狂气山脉×献祭队友登山roguelite：全员一根绳，累赘者亲手割断",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4267860/4284e01980564a0a814a47b7eb20c881c6f1b3f0/header.jpg?t=1783610031",
+    "link": "https://store.steampowered.com/app/4267860/Ascenders_Beyond_the_Peak/"
+   },
+   {
+    "name": "Delverium",
+    "date": "2026年9月22日（EA）",
+    "note": "推特热游在榜：推文浏览 5.6万 · 8人合作2D开放世界生存Delverium定档9月22日EA，愿望单破8万",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2710040/aeccfece5a14d9b7ebdef2d3b28c87ee000bfca6/header.jpg?t=1785416560",
+    "link": "https://store.steampowered.com/app/2710040/Delverium/"
+   },
+   {
+    "name": "Skate Mates",
+    "date": "日期待定",
+    "note": "推特热游在榜：推文浏览 128.3万 · Skate Mates：两人各踩一只滑板互相甩锅的合作游戏，免费demo更新——128万浏览",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4549600/108deb86d607757f44fb53987d0adf108a67e069/header.jpg?t=1783755272",
+    "link": "https://store.steampowered.com/app/4549600/Skate_Mates/"
+   },
+   {
+    "name": "SHORE",
+    "date": "2026年Q4",
+    "note": "推特热游在榜：推文浏览 79.9万 · SHORE：物理木筏×合作生存，体重也是物理变量",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4280880/9958d1ebd6224ff3f8f8807f37059d8d7e1a7075/header.jpg?t=1785319599",
+    "link": "https://store.steampowered.com/app/4280880/SHORE/"
+   },
+   {
+    "name": "Tidy Up Together",
+    "date": "2026年8月14日",
+    "note": "推特热游在榜：推文浏览 67.4万 · Tidy Up Together：无人数上限的整理禅，4000件商品的人海战术",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4950470/149d93f0f06c5c7b25c4e1edb4515992cc7e6d2c/header.jpg?t=1784150798",
+    "link": "https://store.steampowered.com/app/4950470/Tidy_Up_Together/"
+   },
+   {
+    "name": "Neverway",
+    "date": "2026年10月（序章已上线）",
+    "note": "推特热游在榜：推文浏览 36.3万 · Neverway：Celeste画师×Disasterpeace，作者性恐怖RPG",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2318330/9597af8151ee58cb5d8ca14b3cba33b2a574f35a/header.jpg?t=1776902248",
+    "link": "https://store.steampowered.com/app/2318330/Neverway/"
+   },
+   {
+    "name": "C.U.B.E",
+    "date": "2026年8月21日（抢先体验，预计6-12个月）",
+    "note": "推特热游在榜：推文浏览 109.6万 · C.U.B.E：合作恐怖×互坑评价机制，公布即110万浏览",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4523340/4f4beaf7d9222ecd5448fd2d39d9709b307fa406/header.jpg?t=1785007577",
+    "link": "https://store.steampowered.com/app/4523340/CUBE/"
+   },
+   {
+    "name": "CALL OF CUTIE",
+    "date": "日期待定",
+    "note": "推特热游在榜：推文浏览 149.1万 · CALL OF CUTIE：可爱×恐怖的反差美术，单条视频149万浏览",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4968940/b635db34e5913a0df534919603ee3386cd52e8d4/header.jpg?t=1785079721",
+    "link": "https://store.steampowered.com/app/4968940/CALL_OF_CUTIE/"
+   },
+   {
+    "name": "Critter Crosser",
+    "date": "日期待定",
+    "note": "推特热游在榜：推文浏览 35.5万 · Critter Crosser：怪物两两无限配种，\"像AI\"其实是300行脚本",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2792320/header.jpg?t=1707511094",
+    "link": "https://store.steampowered.com/app/2792320/Critter_Crosser/"
+   },
+   {
+    "name": "Sandcastle",
+    "date": "日期待定",
+    "note": "推特热游在榜：推文浏览 33.2万 · Sandcastle：最字面的沙盒游戏，湿度压力模拟沙堡存亡",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3216520/32a096d34be1472a135bf1cf2dfd60d1660f8f4a/header.jpg?t=1782917100",
+    "link": "https://store.steampowered.com/app/3216520/Sandcastle/"
+   },
+   {
+    "name": "CarveOut 2160",
+    "date": "即将宣布",
+    "note": "推特热游在榜：推文浏览 31.2万 · CarveOut 2160：太空版SSX滑雪——加速撞飞对手抢捷径，312K浏览",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4429320/03309feaf289d5c2c196a74ffacfba11eddfa029/header.jpg?t=1784796794",
+    "link": "https://store.steampowered.com/app/4429320"
+   },
+   {
+    "name": "Reypunk",
+    "date": "日期待定",
+    "note": "推特热游在榜：推文浏览 10.6万 · Reypunk：用点击规划每一拳的回合制格斗，手绘美术+实时回放",
+    "cover": "https://pbs.twimg.com/amplify_video_thumb/2081001975353614338/img/ENXIm7XKJI_lOg97.jpg",
+    "link": "https://x.com/IndieGameJoe/status/2081092747738452453"
+   },
+   {
+    "name": "Night Plane",
+    "date": "2026 年",
+    "note": "推特热游在榜：推文浏览 2.3万 · Night Plane：空乘恐怖游戏——服务乘客的同时决定谁能留在飞机上",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3310570/9cf3df7c0cec640f1feb17d936cd472f062f2b83/header.jpg?t=1784897128",
+    "link": "https://store.steampowered.com/app/3310570"
+   },
+   {
+    "name": "Swords & Slippers",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +2,670 · 总关注 2,670",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3563080/703791bd352de434691f4490fe5bc1d2ba91b097/header.jpg?t=1786027296",
+    "link": "https://store.steampowered.com/app/3563080/"
+   },
+   {
+    "name": "灰境行者",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +1,875 · 总关注 50,192",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3978820/78e11f819d574de40c71732ec86411e024e333d8/header_schinese.jpg?t=1785417328",
+    "link": "https://store.steampowered.com/app/3978820/"
+   },
+   {
+    "name": "Deadlock",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +1,860 · 总关注 419,332",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422450/aa249c5e8cc8f90941bd1dbdc311773cd1afe065/header.jpg?t=1769127177",
+    "link": "https://store.steampowered.com/app/1422450/"
+   },
+   {
+    "name": "Emergency Buddies",
+    "date": "日期待定",
+    "note": "推特热游在榜：推文浏览 142.5万 · Emergency Buddies：最不靠谱急救员4人物理合作，一人开车三人抢救——142万浏览",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4767090/d3a5da24a3b49132119024b09abf36b93758dd9a/header.jpg?t=1785950111",
+    "link": "https://store.steampowered.com/app/4767090/Emergency_Buddies/"
+   },
+   {
+    "name": "My Party Is Grinding",
+    "date": "2026年8月27日",
+    "note": "推特热游在榜：推文浏览 38.2万 · My Party Is Grinding：桌面放置+Steam市场交易，服务器权威防复制——8/27免费",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4952980/5715d306e00589ea9cba3d28b0b30ad96fe1a8ba/header.jpg?t=1786063410",
+    "link": "https://store.steampowered.com/app/4952980/My_Party_Is_Grinding/"
+   },
+   {
+    "name": "Half Grip",
+    "date": "2026年（具体未定）",
+    "note": "推特热游在榜：推文浏览 11.5万 · Half Grip：独臂操作的战斗赛车roguelike，每个动作都是赌博——11.5万浏览",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4163270/685a8d0b597f94086c47ae232ddac87e6d12d2fc/header.jpg?t=1785885031",
+    "link": "https://store.steampowered.com/app/4163270/Half_Grip/"
+   },
+   {
+    "name": "hop.earth",
+    "date": "日期待定",
+    "note": "推特热游在榜：推文浏览 158.1万 · hop.earth：浏览器实时生成真实地球，开到哪生成到哪还能多人竞速——158万浏览",
+    "cover": "https://pbs.twimg.com/amplify_video_thumb/2084134441455099904/img/IawCQ7KzvPr68xp7.jpg",
+    "link": "https://x.com/DVLPLONDON/status/2084139787447857637"
+   },
+   {
+    "name": "Expeditions: Samurai",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +1,804 · 总关注 8,623",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2212910/7882263290d29dd972fc0439eb6a10c708f8c004/header.jpg?t=1785250464",
+    "link": "https://store.steampowered.com/app/2212910/"
+   },
+   {
+    "name": "Prospice: Anomalous Logistics",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +1,729 · 总关注 4,372",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4067370/67c7f778d444eb51f8b33ed641d4cdd6161a850b/header.jpg?t=1785774608",
+    "link": "https://store.steampowered.com/app/4067370/"
+   },
+   {
+    "name": "AION 2",
+    "date": "即将发售",
+    "note": "SteamDB 趋势榜在列：关注增长 +1,801 · 总关注 40,043",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3393110/8ba6511e1889fd45561956e603d04fac1a89645e/header.jpg?t=1783623842",
+    "link": "https://store.steampowered.com/app/3393110/"
+   },
+   {
+    "name": "影之刃零",
+    "date": "已公布/测试阶段",
+    "note": "B站游戏区热门榜最高 53 名 · 尚未正式上线",
+    "cover": "https://i2.hdslb.com/bfs/archive/af56d502b2b6930b8119f751ba2fa38b59c473aa.jpg",
+    "link": "https://www.bilibili.com/video/BV1VVM166Evb/"
+   },
+   {
+    "name": "凡应",
+    "date": "已公布/测试阶段",
+    "note": "B站游戏区热门榜最高 69 名 · 尚未正式上线",
+    "cover": "https://i0.hdslb.com/bfs/archive/15ef27a0adcdb99cfb003d3c3d914ce577ebda9e.jpg",
+    "link": "https://www.bilibili.com/video/BV1HEGN6UEF7/"
+   }
+  ],
+  "calendar": [
+   {
+    "date": "2026-08-01",
+    "name": "巨龙之戒",
+    "type": "正式上线",
+    "platform": "国内手游"
+   },
+   {
+    "date": "2026-08-03",
+    "name": "Beast of Reincarnation",
+    "type": "正式上线",
+    "platform": "Steam"
+   },
+   {
+    "date": "2026-08-04",
+    "name": "幻灵召唤",
+    "type": "正式上线",
+    "platform": "国内手游"
+   },
+   {
+    "date": "2026-08-06",
+    "name": "灭寇1939：上川往事",
+    "type": "试玩",
+    "platform": "国内手游"
+   },
+   {
+    "date": "2026-08-06",
+    "name": "IRON NEST: Heavy Turret Simulator",
+    "type": "正式上线",
+    "platform": "Steam"
+   },
+   {
+    "date": "2026-08-21",
+    "name": "Moo Who?",
+    "type": "EA上线",
+    "platform": "Steam",
+    "manual": true
+   }
+  ],
+  "more": {
+   "label": "查看完整雷达",
+   "href": "https://game-radar.zeabur.app/"
+  }
+ },
+ "hero_bg": "https://bigwalk.panicfiles.com/BigWalk_Screenshot_May25_03.png"
+}
