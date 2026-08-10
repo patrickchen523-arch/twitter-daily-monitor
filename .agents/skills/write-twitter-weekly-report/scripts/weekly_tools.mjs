@@ -520,15 +520,17 @@ function audit(root) {
     for (const marker of ['renderTwitterWeekly', 'findTwitterWeeklyStoryTarget', 'openTwitterWeeklyStoryAnalysis']) {
       if (!html.includes(marker)) error(`${file} is missing ${marker}`);
     }
-    const script = html.match(/<script>([\s\S]*)<\/script>/)?.[1];
-    if (!script) {
+    const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map((m) => m[1]);
+    if (!scripts.length) {
       error(`${file} has no inline script`);
     } else {
-      try {
-        new Function(script);
-      } catch (syntaxError) {
-        error(`${file} script syntax: ${syntaxError.message}`);
-      }
+      scripts.forEach((script) => {
+        try {
+          new Function(script);
+        } catch (syntaxError) {
+          error(`${file} script syntax: ${syntaxError.message}`);
+        }
+      });
     }
   }
 
