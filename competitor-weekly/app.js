@@ -19,7 +19,8 @@
     REPORTS.sort((a,b)=>b.id.localeCompare(a.id));
 
     const state={period:'20260803',view:'home',search:'',status:'all',sortKey:null,sortDir:-1,detailId:null,detailObservationKey:null,chartMetric:'flow',chartGranularity:'day',overviewMetric:'flow',overviewPoint:null,overviewSelected:null,reportYear:'all',reportSearch:''};
-    const VISIBLE_PERIODS=Object.keys(PERIODS).filter(k=>/^\d{8}$/.test(k)).sort().reverse().slice(0,2);
+    /* 周期下拉只列 periods.json 正式期且自 20260720 起（更早的正式期/归档摘要在“对比记录”入口查阅） */
+    const VISIBLE_PERIODS=BASE_PERIOD_IDS.filter(k=>/^\d{8}$/.test(k)&&k>='20260720').sort().reverse();
     const GANTT_PAGE={'20260803':'gantt-20260803.html','20260727':'gantt-20260727.html','20260720':'gantt-20260720.html'};
     const CUSTOM_OBSERVATIONS=window.__DB.OBSERVATIONS||{};
     const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
@@ -122,9 +123,13 @@
       const fmtAbs=v=>Math.abs(v)>=10000?(v/10000).toFixed(1)+'亿':v+'万';
       const hmDelta=v=>v==null?'<span class="hm-d na">环比暂无数据</span>':`<span class="hm-d ${v>=0?'up':'down'}"><i>环比</i><b>${v>=0?'+':''}${v}%</b></span>`;
       const hmBlock=(label,val,delta)=>val==null?'':`<div class="hm"><div class="hm-top"><small>${label}</small><b>${fmtAbs(val)}</b></div>${hmDelta(delta)}</div>`;
-      $('#anomalyGrid').innerHTML=cards.slice(0,4).map(({item:x,intel:i})=>{
-        const arch0=typeof REPORT_ARCHIVE!=='undefined'?REPORT_ARCHIVE[state.period]?.[x.id]:null,ai0=arch0?analysisItemsFor(arch0,i):[];let etype=ai0[0]?.category||analysisCategory((i.event||'')+' '+(i.conclusion||''))||{key:'gameplay',label:'玩法/内容',icon:'▣'};if(x.id==='rock')etype={key:'activation',label:'活跃任务',icon:'☑'};const art=i.art?`<img src="${i.art}" alt="${esc(META[x.id].name+' '+i.event+'活动画面')}">`:`<div class="p-fallback" style="background:${META[x.id].color}">${logo(x.id)}</div>`;
-        const metric=hasMetricPriority?`<div class="p-metric hero-m">${hmBlock('周流水',x.flow,x.flowDelta)}${hmBlock('日均DAU',x.dau,x.dauDelta)}</div>`:`<div class="p-metric"><div class="p-m"><small>本期内容类型</small><strong style="font-size:16px">重点运营事件</strong></div></div>`;
+      const heroCards=cards.slice(0,4);
+      /* 仅 3 张卡时挂 n3：首卡通栏，右下不留空 */
+      $('#anomalyGrid').classList.toggle('n3',heroCards.length===3);
+      $('#anomalyGrid').innerHTML=heroCards.map(({item:x,intel:i})=>{
+        const arch0=typeof REPORT_ARCHIVE!=='undefined'?REPORT_ARCHIVE[state.period]?.[x.id]:null,ai0=arch0?analysisItemsFor(arch0,i):[];let etype=ai0[0]?.category||analysisCategory((i.event||'')+' '+(i.conclusion||''))||{key:'gameplay',label:'玩法/内容',icon:'▣'};if(x.id==='rock')etype={key:'activation',label:'活跃任务',icon:'☑'};const artSrc=i.art?(CORE_REFERENCE_IMAGES[i.art]||i.art):null;const art=artSrc?`<img src="${artSrc}" alt="${esc(META[x.id].name+' '+i.event+'活动画面')}">`:`<div class="p-fallback" style="background:${META[x.id].color}">${logo(x.id)}</div>`;
+        const mBlocks=hasMetricPriority?hmBlock('周流水',x.flow,x.flowDelta)+hmBlock('日均DAU',x.dau,x.dauDelta):'';
+        const metric=hasMetricPriority?(mBlocks?`<div class="p-metric hero-m">${mBlocks}</div>`:''):`<div class="p-metric"><div class="p-m"><small>本期内容类型</small><strong style="font-size:16px">重点运营事件</strong></div></div>`;
         const badges=i.badges||[{icon:etype.icon,label:etype.label}];
         return `<article class="p-card" aria-label="${esc(META[x.id].name+'重点情报')}"><div class="p-media">${art}${metric}</div><div class="p-body"><div class="p-product">${logo(x.id)}<span>${esc(META[x.id].name)}</span></div><div class="p-event-row"><div class="p-badges">${badges.map(b=>`<span class="p-badge analysis-category"><i>${b.icon}</i>${esc(b.label)}</span>`).join('')}</div><h3 class="p-event">${esc(i.event)}</h3></div><p class="p-concl">${esc(heroEventSummary(x,i,state.period))}</p><button class="p-detail" data-detail="${x.id}">查看竞品详情 →</button></div></article>`;
       }).join('');

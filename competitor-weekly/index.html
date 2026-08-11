@@ -161,6 +161,9 @@
     .hero-frame{background:#fff;border:3px solid #2E5A37;border-radius:20px;padding:20px 22px 22px;height:100%}
     .hero-frame-head{font-size:15px;font-weight:800;color:#4A5A4E;margin-bottom:14px}
     .hero .intel-grid{grid-template-columns:1fr 1fr;gap:14px;margin-top:0;position:static;height:100%}
+    /* 仅 3 张异动卡：首卡通栏、详情按钮右置，右下不留空 */
+    .hero .intel-grid.n3 .p-card:first-child{grid-column:1/-1}
+    .hero .intel-grid.n3 .p-card:first-child .p-detail{width:auto;align-self:flex-end;padding:0 30px}
     .p-card{background:#fff;border:1px solid #E0E7DD;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
     .p-media{position:relative;height:104px;background:#EDF3EA;flex:none;overflow:hidden}
     .hero .p-media{height:180px}
