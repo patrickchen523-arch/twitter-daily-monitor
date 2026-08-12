@@ -527,8 +527,9 @@ window.__AUDIENCE_PROFILES={};
     var r=encodeURIComponent(document.referrer);
     var w='';
     try{w=new URLSearchParams(location.search).get('who')||'';}catch(e){}
-    var i=new Image();
-    i.src=t+'?page='+p+'&ref='+r+'&who='+encodeURIComponent(w)+'&_='+Date.now();
+    var u=t+'?page='+p+'&ref='+r+'&who='+encodeURIComponent(w)+'&_='+Date.now();
+    if(window.fetch){fetch(u,{mode:'no-cors',keepalive:true,cache:'no-store'}).catch(function(){});}
+    else{var i=new Image();i.src=u;}
   })();
   </script>
 </body>
