@@ -522,11 +522,13 @@ window.__AUDIENCE_PROFILES={};
   <!-- 访问追踪 -->
   <script>
   (function(){
-    var t='http://10.226.234.66:8899/track';
+    var t='https://10.226.234.66:8899/track';
     var p=encodeURIComponent(location.pathname);
     var r=encodeURIComponent(document.referrer);
+    var w='';
+    try{w=new URLSearchParams(location.search).get('who')||'';}catch(e){}
     var i=new Image();
-    i.src=t+'?page='+p+'&ref='+r+'&_='+Date.now();
+    i.src=t+'?page='+p+'&ref='+r+'&who='+encodeURIComponent(w)+'&_='+Date.now();
   })();
   </script>
 </body>
