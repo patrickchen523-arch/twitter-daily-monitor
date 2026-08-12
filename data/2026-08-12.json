@@ -1,0 +1,455 @@
+{
+  "date": "2026-08-12",
+  "meta": {
+    "raw_count": 262,
+    "filtered_count": 259,
+    "selected_count": 12,
+    "crawl_time": "2026-08-12 18:00"
+  },
+  "lede": "xQc出价求购刚关停的Calamity Mod：392万浏览的社区挽歌\nIn the Same Boat：一人开船一人关在海图室的不对称航海——双推合计57.6万浏览\nBig Walk发售一周销量破100万份，登顶Steam周榜",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "xQc求购Calamity Mod：392万浏览的社区挽歌"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "In the Same Boat：不对称航海合作——57.6万浏览"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 1,
+      "hook": "Big Walk一周100万份登顶Steam周榜"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Levie：美国公司的前沿级模型开放权重——「3个月前没人会信」\nOpus 5+Higgsfield一键生成1996丛林平台游戏（2026画质）——6.1万浏览"
+    },
+    {
+      "id": "industry",
+      "text": "xQc出价求购刚关停的Calamity Mod，正与经纪人推进——392万浏览\nGTA 6预购主力是$100 Ultimate版：「本可以定更高价」\nSupermassive再裁75人：Directive 8020发售3个月后、连续第三年\n漫威斗魂PC补丁大幅改善：CPU占用与卡顿骤降"
+    },
+    {
+      "id": "indie",
+      "text": "In the Same Boat：一人开船一人看海图的不对称协力——双推57.6万浏览\nBig Walk一周销量破100万份+Steam周榜#1\nIgnite the Depths：4人松明地牢，「脑bug」质感——14.4万浏览\nハムスターボール大騒ぎ！：双仓鼠一球，输入不同步就爆炸——8/11发售\nProspice展示可破坏树木——21万浏览的民情回应"
+    },
+    {
+      "id": "tools",
+      "text": "Meng To：three.js交互高塔场景，天气与昼夜实时联动——8.9万浏览"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Aaron Levie · 行业判断",
+          "tags": [
+            "开放权重",
+            "模型生态",
+            "harness"
+          ],
+          "title": "Levie：美国公司的前沿级模型开放权重——「3个月前说出去没人信」",
+          "en_title": "If you told someone 3 months ago that a model released by a US company with frontier-class capability would be available as open weights they wouldn't believe it.",
+          "full_text": "If you told someone 3 months ago that a model released by a US company with frontier-class capability would be available as open weights they wouldn’t believe it. \n\nThis is very important because it opens up AI adoption in a range of scenarios that weren’t viable before. Models can be deployed on prem or in the cloud on private infra, which means use-cases in highly regulated domains can be opened up.\n\nYou can also now post-train a frontier class model on specific vertical use-cases that need extra levels of performance for their tasks, like in legal, healthcare, and other spaces. You also ensure sovereignty in case any models ever get pulled from the marketplace, which gives users more confidence in deploying in certain mission critical areas.\n\nAll of this is great news for the applied AI layer, because this is where you can route work to different model families based on the task at hand. Great time to building at the harness layer given the options available now.\n\nAnd closed frontier models will still be heavily used both due to simplicity and because you tend to need a mix of capability level for any hard problem, but having open weights in the mix helps defray costs and provides more flexibility. Great news all around.",
+          "author": "Aaron Levie",
+          "date": "2026-08-11",
+          "likes": 464,
+          "views": 89886,
+          "link": "https://x.com/levie/status/2087009941806797206",
+          "media": null,
+          "summary": "Box CEO Levie长评：美国公司的前沿级能力模型以开放权重放出，解锁此前不成立的采用场景——可部署到本地/私有云，高监管行业（法律、医疗）得以进入；可在垂直场景post-train；主权性确保模型下架也不怕。结论：应用层可按任务路由到不同模型家族，「现在是构建harness层的最好时机」；闭源前沿模型仍会被重度使用，但开放权重摊薄成本、提供弹性。8.99万浏览。",
+          "analysis": "「harness层最好时机」与上周Agent Plugins标准、Gauntlet Loop同一条线：模型供给的多样化（开放权重入局）正在把竞争焦点推向编排与路由层。对企业AI团队：模型主权与可替代性正式成为采购维度。",
+          "recommendation": "Levie：前沿模型开放权重落地，「harness层的最好时机」——9万浏览",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "ZEUS · AI生成演示",
+          "tags": [
+            "AI游戏生成",
+            "Opus 5",
+            "Higgsfield"
+          ],
+          "title": "Opus 5+Higgsfield一键生成1996丛林平台游戏（2026画质）——6.1万浏览",
+          "en_title": "OPUS 5 + HIGGSFIELD ONE-SHOTTED A 1996 JUNGLE PLATFORMER WITH 2026 GRAPHICS",
+          "full_text": "OPUS 5 + HIGGSFIELD ONE-SHOTTED A 1996 JUNGLE PLATFORMER WITH 2026 GRAPHICS\n\nCrested lizard tearing down a winding jungle trail, waterfall leaps and stepping-stone jumps, live lives + crystal HUD.\n\nnot a single asset was hand-modeled. every frame was generated.\n\nthis is where gamedev is heading.\n\n(the exact prompt ↓)",
+          "author": "ZEUS⚡️",
+          "date": "2026-08-10",
+          "likes": 221,
+          "views": 60610,
+          "link": "https://x.com/zeuuss_01/status/2086886612386853058",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2086886501715963905/img/WGeFC30SoINFeAuu.jpg",
+            "video_url": "https://x.com/zeuuss_01/status/2086886612386853058/video/1"
+          },
+          "summary": "ZEUS展示用Opus 5配合Higgsfield一次成型生成的丛林平台游戏：1996年玩法骨架配2026年画质，凤头蜥蜴沿藤蔓疾驰。视频演示6.1万浏览。为AI游戏生成浪潮的最新演示，未附可玩链接，实际可玩性以视频为准。",
+          "analysis": "AI游戏生成演示进入「怀旧题材×现代画质」的混搭阶段——传播力来自反差而不是可玩性。连续多日的高频演示说明该赛道热度不减，但「one-shot出视频」与「可发售产品」之间的距离仍是行业需要持续向公众解释的部分。",
+          "recommendation": "Opus 5×Higgsfield一键丛林平台游戏：1996玩法×2026画质"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "xQc Live · 社区动态",
+          "tags": [
+            "Calamity Mod",
+            "xQc",
+            "Mod"
+          ],
+          "title": "xQc出价求购刚关停的Calamity Mod：392万浏览的社区挽歌",
+          "en_title": "xQc offers to buy the Calamity Mod after it was shut down and is in contact with his agent to purchase it",
+          "full_text": "xQc offers to buy the Calamity Mod after it was shut down and is in contact with his agent to purchase it 👀\n\n\"What if i bought it? And i Hired the Devs to keep it alive.  I asked my agent he is going to contact them. It's open source?\" https://t.co/BajTnqP6hf",
+          "author": "xQc Live",
+          "date": "2026-08-10",
+          "likes": 29996,
+          "views": 3924691,
+          "link": "https://x.com/xqcburgerflip/status/2086944660782543254",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2086944026830254081/img/sRqWYmmajDTZcWi0.jpg",
+            "video_url": "https://x.com/xqcburgerflip/status/2086944660782543254/video/1"
+          },
+          "summary": "顶流主播xQc在直播中出价求购昨日宣布开发终止的Terraria最大Mod「Calamity Mod」，称正与经纪人推进购买事宜——直播切片392万浏览、3万赞。前情：该Mod因管理员被匿名告发引发创作者撤离潮，团队声明法律上不允许fork或再上传，GitHub权限与未付报酬仍系于失联管理员Ozzatron。收购能否解开这团乱麻未知。",
+          "analysis": "昨日「十年Mod猝死」的戏剧性续集：头部主播资本介入社区项目的样本不多见。即便交易达成，素材授权撤销与权限转移的法律坑也不会自动消失——但这至少说明：头部UGC项目的品牌资产已被主流资本看见。",
+          "recommendation": "xQc求购Calamity Mod：392万浏览，收购难解权限与授权死结",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "GameSpot · 定价",
+          "tags": [
+            "GTA 6",
+            "Take-Two",
+            "定价"
+          ],
+          "title": "GTA 6预购主力是$100 Ultimate版：「本可以定更高价」",
+          "en_title": "GTA 6 Could Have Had An Even Higher Price, As $100 Edition Proves Popular",
+          "full_text": "GTA 6 Could Have Had An Even Higher Price, As $100 Edition Proves Popular https://t.co/BNIUzNPDTD https://t.co/9NXM48jOMg",
+          "author": "GameSpot",
+          "date": "2026-08-11",
+          "likes": 55,
+          "views": 52195,
+          "link": "https://x.com/GameSpot/status/2087167261195026836",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HPcbj9hakAA9T_K.jpg"
+          },
+          "summary": "Take-Two财报季后续：预购GTA 6的玩家中，选择$100 Ultimate版的比例超过基础版——GameSpot据此分析「本可以定更高的价」；同场Zelnick回应硬件涨价「不用太担心」，并明确表示Take-Two目前对卖给Netflix或任何买家「不感兴趣」。学生优惠价$64等话题同日出炉。",
+          "analysis": "$80基础版争议声中，市场用钱包投票给了$100——这为行业定价锚点又抬一格：头部产品的「价格天花板」测试结果会迅速传导到所有3A的定价模型。对定价团队：Ultimate版占比是最重要的先行指标。",
+          "recommendation": "GTA 6：$100 Ultimate成预购主力，定价锚点再抬一格",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "PC Gamer · 裁员",
+          "tags": [
+            "Supermassive",
+            "裁员"
+          ],
+          "title": "Supermassive再裁75人：Directive 8020发售3个月后，连续第三年裁员",
+          "en_title": "3 months after the release of Directive 8020, Supermassive Games is laying off even more people",
+          "full_text": "3 months after the release of Directive 8020, Supermassive Games is laying off even more people https://t.co/zysTezehJH",
+          "author": "PC Gamer",
+          "date": "2026-08-11",
+          "likes": 12,
+          "views": 10984,
+          "link": "https://x.com/pcgamer/status/2087198036032463106",
+          "media": null,
+          "summary": "PC Gamer报道：《Until Dawn》《采石场惊魂》开发商Supermassive Games宣布进一步裁员，多达75人受影响——距Directive 8020发售仅3个月，且是连续第三年裁员（2024、2025均有大规模削减）。",
+          "analysis": "「发售即裁员」脚本在中型剧情向工作室身上连续上演：互动电影品类的收入天花板撑不起3A级成本结构。本周裁员账单的密度（Halo外包、id Software 136人、Supermassive 75人）说明8月的行业调整还在进行时。",
+          "recommendation": "Supermassive再裁75人：互动电影品类的成本天花板"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 修复跟进",
+          "tags": [
+            "漫威斗魂",
+            "PC移植",
+            "补丁"
+          ],
+          "title": "漫威斗魂PC补丁大幅改善：CPU占用与卡顿骤降，玩家此前自制「奇葩偏方」自救",
+          "en_title": "Marvel Tōkon's dire PC performance improved massively by new patch, drastically reducing CPU use and stutters",
+          "full_text": "Marvel Tōkon's dire PC performance improved massively by new patch, drastically reducing CPU use and stutters\n\nhttps://t.co/1sMjZC8N1U https://t.co/dJcQL595Be",
+          "author": "Eurogamer",
+          "date": "2026-08-11",
+          "likes": 19,
+          "views": 7314,
+          "link": "https://x.com/eurogamer/status/2087107430450634842",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HPblI-nW0AAtdWd.png"
+          },
+          "summary": "Eurogamer报道：Arc System Works的《Marvel Tōkon: Fighting Souls》新PC补丁大幅改善性能——CPU占用与卡顿骤降；此前PC玩家曾自制各种「奇葩偏方」绕过问题。我们的PCU监控显示其首日峰值24,498后连续回落、跌出20K榜单，本次补丁是口碑修复的第一步。",
+          "analysis": "首日技术翻车→玩家自救→官方补丁的完整弧线走完三分之二。能否拉回流失玩家看两点：补丁后的回流数据（下周围赛报名与PCU）与主机/PC口碑差能否收窄。",
+          "recommendation": "漫威斗魂PC补丁：CPU占用骤降，口碑修复第一步"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Indie Game Joe · 新游发现",
+          "tags": [
+            "合作",
+            "航海",
+            "不对称"
+          ],
+          "title": "In the Same Boat：一人开船、一人被关在海图室的不对称协力航海——双推57.6万浏览",
+          "en_title": "This indie dev is making a co-op game where one player sails the ship and the other is a Cartographer locked in the cabin",
+          "full_text": "This indie dev is making a co-op game where one player sails the ship and the other is a Cartographer locked in the captain's cabin\n\n- Communication is crucial\n- 15 minute procedural voyages\n- Cargo runs, pirates, sea monsters\n\nIt's called In the Same Boat. Would you play this? https://t.co/xdfXJFxycl",
+          "author": "Indie Game Joe",
+          "date": "2026-08-10",
+          "likes": 8291,
+          "views": 394701,
+          "link": "https://x.com/IndieGameJoe/status/2086820290177196045",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2086820137345171456/img/b1CAWXnlMlaX7ixJ.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2086820290177196045/video/1"
+          },
+          "summary": "Plouf开发的2人协力航海游戏：一名玩家操舵驾驶，另一名玩家作为「航海士」被关在船长室里、只能靠海图指路——航路选定全靠手工作业，为货运与寻宝出海。Indie Game Joe演示39.5万浏览/8.3千赞；電ファミ同日报道18.1万浏览。Steam页面公开，发售日TBA。",
+          "analysis": "",
+          "recommendation": "In the Same Boat：开船×看海图的不对称协力——57.6万浏览",
+          "featured": true,
+          "game_ref": "In the Same Boat",
+          "enrichment": {
+            "game_name": "In the Same Boat",
+            "genre": "合作 / 航海 / 冒险",
+            "developer": "Plouf",
+            "platforms": [
+              "Steam(Windows)"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/2548410/In_the_Same_Boat/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2548410/e2466d314478371b833c18a2d2bced49c551f5e0/header.jpg?t=1785842041",
+            "youtube_video": null,
+            "description": "【核心玩法】不对称2人协力航海：一人实际操舵驾船，另一人被「关进」船长室、只能通过海图与航标信息指路——信息不对称制造沟通笑点与失误。货运、寻宝任务驱动出海循环。\n\n【美术与氛围】明快卡通海洋。\n\n【开发者】Plouf。\n\n【优势】「信息不对称协力」是合作喜剧品类的硬通货配方（Keep Talking谱系）；Indie Game Joe+電ファミ双推合计57.6万浏览验证传播。\n\n【不足】发售日未定；双人限定场景的重复可玩性待观察。\n\n【综合】不对称协力的新变体，传播数据出色，入观察名单。",
+            "why_notable": "Keep Talking式信息不对称协力：开船×看海图，57.6万浏览"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "PC Gamer · 销量里程碑",
+          "tags": [
+            "Big Walk",
+            "销量",
+            "周榜"
+          ],
+          "title": "Big Walk发售一周销量破100万份：超越Untitled Goose Game，登顶Steam周榜",
+          "en_title": "Big Walk has sold 1 million copies, making it a bigger hit than Untitled Goose Game",
+          "full_text": "Big Walk has sold 1 million copies, making it a bigger hit than Untitled Goose Game https://t.co/Ifb51vG9Xk",
+          "author": "PC Gamer",
+          "date": "2026-08-11",
+          "likes": 79,
+          "views": 24793,
+          "link": "https://x.com/pcgamer/status/2087030793835294828",
+          "media": null,
+          "summary": "PC Gamer报道：House House的《Big Walk》发售6日销量突破100万份，比《Untitled Goose Game》更快达成该里程碑；SteamDB周榜（8/4-8/11）显示其登顶付费榜第一（#2为Marvel Tōkon）。我们PCU监控：首日峰值46,409，一周后仍守3.6万；昨日已有粉丝自制VR模组发布。",
+          "analysis": "",
+          "recommendation": "Big Walk一周100万份+Steam周榜#1：年度合作爆款确立",
+          "featured": true,
+          "game_ref": "Big Walk",
+          "enrichment": {
+            "game_name": "Big Walk",
+            "genre": "合作探索 / 徒步 / 社交",
+            "developer": "House House（Panic发行）",
+            "platforms": [
+              "Steam(Windows)",
+              "Switch 2",
+              "PS5"
+            ],
+            "price": "$14.99",
+            "release_date": "已发售 · 2026年8月4日",
+            "steam_rating": "89% 好评",
+            "steam_url": "https://store.steampowered.com/app/1478500/Big_Walk/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1478500/62eeee1507dbac905e128a62f2ce690550238db0/header.jpg?t=1785911674",
+            "youtube_video": null,
+            "description": "【核心玩法】2-12人合作徒步：proximity语音+手势+道具协作解谜，「和朋友走散又重逢」即玩法本身。\n\n【市场表现】6日销量破100万份（超越Untitled Goose Game的同期速度）；SteamDB周榜付费第一（8/4-8/11）；PCU首日46,409、一周后3.6万；粉丝VR模组已出。\n\n【优势】口碑（媒体7家满分）×传播×价格带（$14.99）三重共振；社区二创（VR模组）已启动。\n\n【不足】合作社交游戏的内容消耗速度快，长尾依赖更新与社区活动。\n\n【综合】2026年迄今最成功的合作游戏首发，「friendslop」品类的天花板被再次抬高。",
+            "why_notable": "6日100万份+周榜第一+VR模组：年度合作爆款确立"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "スチまと · 新游发现",
+          "tags": [
+            "地牢爬行",
+            "合作",
+            "刷宝"
+          ],
+          "title": "Ignite the Depths：4人松明地牢爬行，「脏却美」的脑bug质感——14.4万浏览",
+          "en_title": "なんだこの映像？？？脳がバグる。PS1時代のポリゴンとも全く違う、汚いのに綺麗という意味不明な質感。こんなイカれた質感の暗闇迷宮を、最大4人で松明片手に這い進む一人称ダンジョンクローラー",
+          "full_text": "なんだこの映像？？？脳がバグる。\n\nPS1時代のポリゴンとも全く違う、汚いのに綺麗という意味不明な質感。こんなイカれた質感の暗闇迷宮を、最大4人で松明片手に這い進む一人称ダンジョンクローラー。視界に入るタルを片っ端から粉砕しながらビルド組んでいく泥臭いハクスラで、睡眠時間削り取られそう。\n『Ignite the Depths』",
+          "author": "スチまと / STEAMおすすめゲーム新作など紹介🎮 Steam",
+          "date": "2026-08-10",
+          "likes": 1539,
+          "views": 144039,
+          "link": "https://x.com/stmatomato/status/2086753924208267321",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2085725115824963584/img/lR9zgiTOFwy_MkUU.jpg",
+            "video_url": "https://x.com/stmatomato/status/2086753924208267321/video/1"
+          },
+          "summary": "SK Studios开发的一人称地牢爬行：最大4人合作，手举松明在黑暗迷宫中匍匐前进；把视野里的木桶全部粉碎来构筑build的「泥臭」刷宝循环。推荐者称其质感「脏却美、令人大脑错乱」——非PS1多边形的独特渲染风格。推文14.4万浏览；Steam页面公开，2026年内发售。",
+          "analysis": "",
+          "recommendation": "Ignite the Depths：4人松明地牢刷宝，「脏却美」的独特质感——14.4万浏览",
+          "featured": true,
+          "game_ref": "Ignite the Depths",
+          "enrichment": {
+            "game_name": "Ignite the Depths",
+            "genre": "地牢爬行 / 刷宝 / 合作",
+            "developer": "SK Studios",
+            "platforms": [
+              "Steam(Windows)"
+            ],
+            "price": "未公布",
+            "release_date": "2026年内",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4910490/Ignite_the_Depths/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4910490/75cd79326152c5a254e1b966b7629568cdf27198/header.jpg?t=1784820884",
+            "youtube_video": null,
+            "description": "【核心玩法】一人称地牢爬行：最大4人合作、松明照明探索手工打造的大迷宫；击碎场景物件推进build构筑的刷宝循环。\n\n【美术与氛围】「脏却美」的独特渲染质感——非复古多边形的异质感黑暗幻想。\n\n【开发者】SK Studios。\n\n【优势】视觉辨识度极高（推荐语「脑がバグる」）；4人合作刷宝的需求组合。\n\n【不足】小团队，内容量与优化待验证；发售窗口仅「2026年内」。\n\n【综合】靠质感差异化突围的地牢爬行，14.4万浏览说明第一眼钩子成立。",
+            "why_notable": "「脏却美」的高辨识度渲染+4人地牢刷宝"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "電ファミニコゲーマー · 发售",
+          "tags": [
+            "合作",
+            "物理",
+            "喜剧"
+          ],
+          "title": "ハムスターボール大騒ぎ！：双仓鼠一颗球，输入不同步就爆炸——8/11发售424円",
+          "en_title": "【2人協力】2匹のハムスターが1つのボールに入って進む協力アクションゲーム『ハムスターボール大騒ぎ！』本日8月11日リリース",
+          "full_text": "【2人協力】2匹のハムスターが1つのボールに入って進む協力アクションゲーム『ハムスターボール大騒ぎ！』本日8月11日リリース\nhttps://t.co/rY5RATv5RF\n\nスピードや向きに応じて適切な方向にボールを押して移動する。相方と操作の入力回数をそろえないと、ボールが爆発するブチギレ必至ゲーム https://t.co/6g9taOsVZI",
+          "author": "電ファミニコゲーマー",
+          "date": "2026-08-11",
+          "likes": 765,
+          "views": 163230,
+          "link": "https://x.com/denfaminicogame/status/2087115821432860782",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2087115790852194304/pu/img/jS5PA_eJwp0sPzEB.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2087115821432860782/video/1"
+          },
+          "summary": "SCH Games与Weird Dog Games的2人协力动作游戏（英文名Hamster Ballers）：两只仓鼠挤进同一颗球翻越障碍赛道——不按住了就不动，每次输入都会把球往对应方向顶；2人模式下双方输入次数必须一致，一方连续单干5次球就爆炸。「友情破坏级」物理喜剧，8/11发售，8/25前-20%仅424円（$3.19）。推文16.3万浏览。",
+          "analysis": "",
+          "recommendation": "ハムスターボール大騒ぎ！：输入同步制合作喜剧——8/11发售，424円",
+          "featured": true,
+          "game_ref": "Hamster Ballers",
+          "enrichment": {
+            "game_name": "Hamster Ballers（ハムスターボール大騒ぎ！）",
+            "genre": "合作 / 物理 / 喜剧",
+            "developer": "SCH Games / Weird Dog Games",
+            "platforms": [
+              "Steam(Windows)"
+            ],
+            "price": "$3.19（8/25前-20%）",
+            "release_date": "已发售 · 2026年8月11日",
+            "steam_rating": "发售初期",
+            "steam_url": "https://store.steampowered.com/app/4195910/Hamster_Ballers/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4195910/80abc799604cae4f25e5b993671698b2ddfce327/header.jpg?t=1786489036",
+            "youtube_video": null,
+            "description": "【核心玩法】双仓鼠共乘一颗球：物理演算驱动，每次输入顶动球体；2人模式要求双方输入次数一致，一方连续单干5次球即爆炸——「同步率」直接写进规则。单人也可玩。\n\n【美术与氛围】可爱仓鼠+障碍赛道的派对风格。\n\n【开发者】SCH Games与Weird Dog Games。\n\n【优势】「输入同步或爆炸」是规则级的友情破坏机制；424円/$3.19的超低价格带决策成本几乎为零；发售首日16.3万浏览。\n\n【不足】超小品体量，内容深度有限。\n\n【综合】合作喜剧品类的「价格带下探」样本：用424円把「买来坑朋友」变成零犹豫决策。",
+            "why_notable": "输入不同步就爆炸：424円的友情破坏器"
+          }
+        },
+        {
+          "idx": "新游推文 05",
+          "source": "WhyNot官方 · 开发日志",
+          "tags": [
+            "Prospice",
+            "恐怖驾驶",
+            "技术展示"
+          ],
+          "title": "Prospice展示可破坏树木：「你们要的都有了」——21万浏览的民情回应",
+          "en_title": "People were asking for destructible trees so I deliver amazing new technologies",
+          "full_text": "People were asking for destructible trees so I deliver amazing new technologies https://t.co/pt4LzsnHrq",
+          "author": "WhyNot | Wishlist PROSPICE",
+          "date": "2026-08-10",
+          "likes": 945,
+          "views": 212125,
+          "link": "https://x.com/WhyNotArtDump/status/2086606282488774752",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2086605954649374720/img/3uMOXPscY2bnMRFC.jpg",
+            "video_url": "https://x.com/WhyNotArtDump/status/2086606282488774752/video/1"
+          },
+          "summary": "WhyNot展示恐怖驾驶游戏Prospice新特性：可破坏树木——「玩家要求可破坏的树，所以我交出了惊人的新技术」。变形/破碎演示21.2万浏览。该作愿望单已破7万、playtest延长中（8/8日报入选）。",
+          "analysis": "",
+          "recommendation": "Prospice可破坏树木：愿望单7万级作品的高频民情回应——21万浏览",
+          "enrichment": {
+            "game_name": "Prospice: Anomalous Logistics",
+            "steam_url": "https://store.steampowered.com/app/4067370",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4067370/67c7f778d444eb51f8b33ed641d4cdd6161a850b/header.jpg?t=1785774608",
+            "release_date": "即将宣布",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "developer": "Code Wakers",
+            "genre": "动作 / 冒险 / 独立",
+            "description": "穿越一座幽魂萦绕的岛屿，运送被诅咒的货物。这里的险恶地形随时可能夺走你的性命，每条道路都残留着往昔的伤痕。\n\n"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Meng To · 开源演示",
+          "tags": [
+            "three.js",
+            "程序化场景",
+            "开源"
+          ],
+          "title": "Meng To新作：three.js交互高塔场景，天气与昼夜实时联动——8.9万浏览",
+          "en_title": "I made an interactive three.js site that constructs towers with weather and time of day effects.",
+          "full_text": "I made an interactive three.js site that constructs towers with weather and time of day effects.\n\nI went from making mostly static sites with huge images to three.js with highly textured, detailed 3D models, and the entire site is under 1-2mb. Because it's 3D, you can ask AI to customize everything: themed towers from different countries, ancient and modern styles, weather like snow and rain, lighting from morning to night.\n\nThe surprising part is that with a solid foundation it creates those changes pretty much one-shot. It's like starting a design system, where the AI figures out how to stay consistent in quality with the rest of the design. The hard part is avoiding 3D slop, which is easier thanks to Opus 5 and open-source projects.\n\nI used Claude Code for the harness, Higgsfield to generate textures and soundfx/music.\n\nLet me know if you'd like the open-source.\n\nInspiration: https://t.co/8baUIvsKek\n\nBtw, I love that we get auto-translated posts from around the world. It really expands our horizon in terms of inspiration.",
+          "author": "Meng To",
+          "date": "2026-08-10",
+          "likes": 1028,
+          "views": 88523,
+          "link": "https://x.com/MengTo/status/2086696743362814028",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2086695200282599425/img/85vGNVhAyYJx_37d.jpg",
+            "video_url": "https://x.com/MengTo/status/2086696743362814028/video/1"
+          },
+          "summary": "Meng To发布交互式three.js站点：程序化构建的高塔场景，天气与时间昼夜效果实时联动演算。延续其Kage落地页的开源路线（此前已开源three.js skills），8.9万浏览。",
+          "analysis": "程序化场景+环境演算的实时联动是「可交互官网/作品集」的技术上限展示——对做产品页、活动页的团队：这种完成度的three.js作品正在变成可复用的skill而非定制工程。",
+          "recommendation": "Meng To three.js高塔：天气×昼夜的程序化场景——8.9万浏览"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**社区挽歌与资本介入**\nCalamity Mod开发终止的第二天，xQc直播出价求购（392万浏览）——头部主播资本看见UGC品牌资产；但素材授权与权限死结不是钱能立刻解开的。\n\n**定价锚点上移**\nGTA 6预购主力是$100 Ultimate版，「本可以定更高价」；Zelnick表态不卖身Netflix、安抚硬件涨价焦虑。裁员账单继续：Supermassive发售3个月后再裁75人（连续第三年）；漫威斗魂PC补丁大幅修复，口碑弧线走完三分之二。\n\n**合作喜剧仍是爆款流水线**\n不对称航海In the Same Boat双推57.6万浏览、双仓鼠同步球Hamster Ballers发售（424円）、Big Walk一周100万份登顶Steam周榜。另有Levie论开放权重的「harness层最好时机」。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
