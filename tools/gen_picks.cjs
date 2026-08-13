@@ -40,11 +40,7 @@ function boardKind(b) {
   if (/steam/.test(t)) return 'steamdb';
   if (/bili|哔哩/.test(t)) return 'bilibili';
   if (/twitter|推特/.test(t)) return 'twitter';
-  const m = String(((b.items || [])[0] || {}).metric || '');
-  if (m.startsWith('+')) return 'steamdb';
-  if (/万$/.test(m)) return 'twitter';
-  if (/名/.test(m)) return 'bilibili';
-  return 'other';
+  return 'other'; // roblox 周榜等不参与推荐
 }
 
 const cand = {};
