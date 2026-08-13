@@ -1,0 +1,403 @@
+{
+  "date": "2026-08-13",
+  "meta": {
+    "raw_count": 300,
+    "filtered_count": 297,
+    "selected_count": 12,
+    "crawl_time": "2026-08-13 18:00"
+  },
+  "lede": "老爸vibecode出「安全版Roblox」：录像假装联机、ChatGPT机器人陪聊——616万浏览\nPhantom Blade Zero：甄子丹2023年起秘密指导动作，10月发售、State of Play下周\nPeak最终更新上线，Aggro Crab发问「新生物群系好玩吗」——107万浏览",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "老爸vibecode「安全版Roblox」：录像+ChatGPT机器人——616万浏览"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Phantom Blade Zero：甄子丹秘密指导三年，10月发售"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 1,
+      "hook": "Peak最终更新上线——官方梗推107万浏览"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "老爸vibecode「安全版Roblox」：录像伪装联机+ChatGPT机器人陪聊——616万浏览\nGrok Bot实测：2小时生成74个美术资产并接回游戏；每个Bot配16GB+128GB云电脑\nLevie论FDE：AI是把非确定性系统塞进从未被自动化的工作流——「没人知道用户旅程长什么样」"
+    },
+    {
+      "id": "industry",
+      "text": "Phantom Blade Zero：甄子丹2023年起秘密指导动作，10月发售、State of Play下周\nCDPR确认Project Sirius裁员：「开发战略更大转变」\nXbox七月 outage原因查明：连实体盘都无法游玩的bug已修复，8/17强制更新\nAmazon放弃Lost Ark与Throne and Liberty：Smilegate接手西方服"
+    },
+    {
+      "id": "indie",
+      "text": "Meccha Chameleon两月销量破2,000万份\nPeak最终更新上线+「为什么不做永久游戏」访谈——官方梗推107万浏览\nApproximately Up 95%好评人气白热——12.9万浏览跟进\n「这是IndieGameJoe效应吗」：单日愿望单+23,000的KOL量化样本"
+    },
+    {
+      "id": "tools",
+      "text": "UE Game Animation Sample Project更新（5.8）：动画示例项目再扩容"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Adam Lyttle · AI育儿",
+          "tags": [
+            "vibe coding",
+            "Roblox",
+            "儿童安全"
+          ],
+          "title": "老爸vibecode出「安全版Roblox」：录像假装联机、ChatGPT机器人陪聊——616万浏览",
+          "en_title": "I vibecoded a safer Roblox for my son. The game is populated with recordings of other play throughs (giving the illusion of playing with others). And there's even a chat from the bots talking to each other.",
+          "full_text": "I vibecoded a safer Roblox for my son\n\nHe’s not allowed to play Roblox because we don’t know who he’s talking to\n\nSo I created a version where he plays obbys\n\nThe game is populated with recordings of other play throughs (giving the illusion of playing with others)\n\nAnd there’s even a chat from the bots talking to each other. He can talk with the bots and they chat back using chatgpt",
+          "author": "Adam Lyttle",
+          "date": "2026-08-11",
+          "likes": 17143,
+          "views": 6155313,
+          "link": "https://x.com/adamlyttleapps/status/2087156410287006023",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2087156306587320320/img/6s0ZteuZNNlYcnYH.jpg",
+            "video_url": "https://x.com/adamlyttleapps/status/2087156410287006023/video/1"
+          },
+          "summary": "开发者Adam Lyttle为儿子打造的「安全版Roblox」：孩子不被允许玩Roblox是因为不知道在跟谁聊天，于是他自己做了一个版本——孩子玩obby跑酷，游戏里用其他玩家通关录像「扮演」联机队友，制造与真人同玩的错觉；还有机器人互相聊天的频道，孩子可以和它们对话（后端接ChatGPT）。推文616万浏览、1.7万赞。",
+          "analysis": "在Roblox股价暴跌70%、儿童安全诉讼缠身的同一周，这条推文击中了家长焦虑的最大公约数：「假联机+AI陪聊」是一个聪明的折中——保留社交错觉、移除陌生人风险。对UGC平台团队：这是家长视角的「安全模式」需求原型；对AI团队：录像+LLM bot的轻量组合，是单机游戏模拟多人氛围的低成本方案。",
+          "recommendation": "老爸vibecode「安全版Roblox」：录像伪装联机+AI陪聊——616万浏览",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Danny Limanseta · 实测",
+          "tags": [
+            "Grok Bot",
+            "AI agent",
+            "游戏开发"
+          ],
+          "title": "Grok Bot实测：2小时生成74个美术资产并接回游戏；每个Bot配16GB+128GB云电脑",
+          "en_title": "I've been using Grok Bot in early access for a little over a week now... In about 2 hours, it generated 74 (cleaned and cropped) art assets for the cards and integrated all of them into my game.",
+          "full_text": "I’ve been using Grok Bot in early access for a little over a week now, and it has been a massive boost to my game dev workflow and my productivity in general.\n\nOne of the first things I asked it to do was to visit my custom art generation tool webpage and generate art assets to replace all the image placeholders in my game.\n\nIt looked through my codebase to understand what each asset was, wrote a custom art generation prompt for every single one, generated the images, cropped and cleaned them up into transparent PNGs, and then wired them back into the game.\n\nIn about 2 hours, it generated 74 (cleaned and cropped) art assets for the cards and integrated all of them into my game. Now, ALL my art assets workflows go through Grok bot.\n\nThis blew my mind because, before this, I was doing everything manually, one asset at a time. It basically solved my entire art asset workflow and allowed me to put it on autopilot, which is amazing.\n\nI’ve also been using Grok Bot for:\n\nPlaytesting my game: The bot was a little slow initially, so I asked it to build a skill specifically designed to playtest my game, with intimate knowledge of its rules and mechanics. It’s much faster now, though I’m still looking for ways to optimise its speed.\n\nSetting up my itchio page for my game: It also automated a workflow that uploads a new build to itch whenever I push one to GitHub. Going to the itch website and uploading builds manually every single time was always a pain.\n\nFlowcharts and UX design: I’m a UX designer by day, so I decided to give it a much bigger task. I fed the agent a PRD and asked it to design the UX flows and wireframes. With the help of the Figma MCP, it actually delivered.\n\nAuditing all my paid subscriptions: I had it go through my emails and hunt down subscriptions that I might have forgotten about.\n\nUnsubscribing me from marketing newsletters: It did this beautifully, though it did miss a few newsletters.\n\nWhat I’ve learned is that it takes time to discover all the possible use cases for Grok bot. I’ve had to reevaluate my day-to-day workflows and figure out which parts I can delegate to it.\n\nSo far, it has been a huge productivity unlock for me and I am discovering more uses for my Grok bots every other day.",
+          "author": "Danny Limanseta",
+          "date": "2026-08-11",
+          "likes": 778,
+          "views": 44505,
+          "link": "https://x.com/DannyLimanseta/status/2087228218797617404",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2087227489273917440/img/9z4XWQkaJonjaOPM.jpg",
+            "video_url": "https://x.com/DannyLimanseta/status/2087228218797617404/video/1"
+          },
+          "summary": "Danny Limanseta的Grok Bot抢先体验：让它访问自研美术生成工具页，它先通读代码库理解每个占位图、为每个资产写生成prompt、生成后裁剪清理成透明PNG、再接回游戏——2小时完成74个美术资产全流程，「现在我所有美术工作流都走Grok Bot」。Tony出海同日拆解配置：每个Grok Bot自带一台16GB内存+128GB存储的Debian云电脑（预装Chrome），「给每个AI队友配了专属Linux云电脑」——Manus路线的回归。",
+          "analysis": "「每个agent一台云电脑」的配置把bot从聊天框里解放出来，变成能浏览网页、操作工具的执行体——Danny的资产流水线案例是目前最具体的游戏开发落地。对美术管线团队：占位图→AI生成→自动接入的闭环已经可以做到小时级。",
+          "recommendation": "Grok Bot实测：2小时74个美术资产入库；每个Bot一台云电脑——4.5万浏览",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Aaron Levie · 行业判断",
+          "tags": [
+            "FDE",
+            "企业AI",
+            "实施模式"
+          ],
+          "title": "Levie论FDE：AI是把非确定性系统塞进从未被自动化的工作流",
+          "en_title": "The key is that FDEs are real and not going away for AI any time soon... 'Nobody knows what the user journey looks like — not you, and importantly, not your customer either.'",
+          "full_text": "Good post on how to think about FDEs. The key is that FDEs are real and not going away for AI any time soon.\n\nThe reason this is happening now at a scale that has never been seen before is because AI is fundamentally about adding a non-deterministic, rapidly changing system to workflows that largely have never been automated before. This looks very little like implementing traditional software.\n\n“If you're building an AI agent for accounting in 2026, there is no established workflow, because literally nobody has ever used one of these. Nobody knows what the user journey looks like — not you, and importantly, not your customer either. They can't tell you what they want, because the thing they'd want doesn't have a shape yet.”\n\nSoftware has largely always been deterministic and once implemented effectively worked the same for customers. This meant the upfront implementation work was *relatively* uniform across similar customers, and the system wasn’t regularly being upgraded in fundamental ways. \n\nAI agents are entirely different on nearly every dimension. The customer’s business process has to change to work with agents, there is heavy -necessary- customization to get agents to work in the customers end-state process, evals need to be run constantly, the AI models are constantly changing and updates need to keep getting incorporated, the underlying harness and broader system are often changing due to customer feedback, and much more. \n\nThis is real work for the customer, systems integrators, and the applied AI vendors. Even as AI capabilities improve dramatically, this work remains (or even gets more complicated) given enterprises will just throw increasingly more complex processes at agents. Great time to be an FDE.",
+          "author": "Aaron Levie",
+          "date": "2026-08-12",
+          "likes": 394,
+          "views": 99910,
+          "link": "https://x.com/levie/status/2087385493684335064",
+          "media": null,
+          "summary": "Box CEO Levie转评FDE（Forward Deployed Engineer，前线部署工程师）模式：AI FDE规模空前的原因在于——AI是把非确定性、快速变化的系统加入「从未被自动化过」的工作流，与传统软件实施完全不同。引用观察：「2026年做会计agent，没有现成工作流可言，因为没人用过这种东西——没人知道用户旅程长什么样，你和你的客户都不知道，因为那个东西还没有形状。」10万浏览。",
+          "analysis": "对AI toB团队：FDE模式的本质是「产品未定型前先派人」——当用户旅程尚不存在，标准售前/交付流程失效，只能把工程师扔进客户现场共同定义流程。这也是评估AI初创交付成本结构的关键科目。",
+          "recommendation": "Levie论FDE：AI实施没有现成工作流——「东西还没有形状」——10万浏览"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "PC Gamer · 新作猛料",
+          "tags": [
+            "影之刃零",
+            "甄子丹",
+            "S-Game"
+          ],
+          "title": "Phantom Blade Zero：甄子丹2023年起秘密指导动作，10月发售、State of Play下周",
+          "en_title": "Hong Kong legend Donnie Yen has been working on Phantom Blade Zero in secret since 2023",
+          "full_text": "Hong Kong legend Donnie Yen has been working on Phantom Blade Zero in secret since 2023 https://t.co/mrqsDD3lLc",
+          "author": "PC Gamer",
+          "date": "2026-08-12",
+          "likes": 210,
+          "views": 31842,
+          "link": "https://x.com/pcgamer/status/2087361915895058620",
+          "media": null,
+          "summary": "S-Game的《Phantom Blade Zero》（影之刃零）连续放料：11分钟预购预告公开、确认10月发售、State of Play专场定档下周；PC Gamer独家点破——香港动作传奇甄子丹自2023年起秘密担任「kungfupunk」动作指导。GameSpot预告推文2.1万浏览、PC Gamer报道3.2万浏览。",
+          "analysis": "本周最值得关注的国产单机信号：动作指导启用甄子丹级别的电影班底，S-Game在「武侠×朋克」的动作质感上押注重金。10月发售+下周SoP专场，国庆档前的单机大作空窗被它卡位。",
+          "recommendation": "影之刃零：甄子丹秘密指导动作三年，10月发售、SoP下周",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 裁员",
+          "tags": [
+            "CDPR",
+            "巫师",
+            "Project Sirius"
+          ],
+          "title": "CDPR确认Project Sirius裁员：「开发战略更大转变」的一部分",
+          "en_title": "Multiplayer Witcher spin-off Project Sirius reportedly hit by layoffs again, in \"broader shift in development strategy\" at CD Projekt Red",
+          "full_text": "Multiplayer Witcher spin-off Project Sirius reportedly hit by layoffs again, in \"broader shift in development strategy\" at CD Projekt Red https://t.co/aI8rEZUxjA https://t.co/9qjn5UMY3H",
+          "author": "Eurogamer",
+          "date": "2026-08-12",
+          "likes": 9,
+          "views": 20578,
+          "link": "https://x.com/eurogamer/status/2087560135681908959",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HPiAv_KXsAApNK6.jpg"
+          },
+          "summary": "Eurogamer报道并经CDPR确认：巫师多人衍生作Project Sirius（The Molasses Flood开发）再次裁员，属于CDPR「开发战略更大转变」的一部分；公司声明裁员「为反映项目现阶段的需求」。该项目2023年已重启过一次，这是又一轮收缩。",
+          "analysis": "巫师多人化的路继续坎坷：重启→再裁员，Sirius的存在感越来越像一个「战略耐心测试」。结合本周Halo外包、id 136人、Supermassive 75人——8月裁员账单的密度已是今年之最。",
+          "recommendation": "CDPR确认Project Sirius裁员：巫师多人化再收缩",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · 平台故障",
+          "tags": [
+            "Xbox",
+            "实体盘",
+            "在线验证"
+          ],
+          "title": "Xbox七月outage原因查明：连实体盘都无法游玩的bug已修复，8/17强制更新",
+          "en_title": "Xbox promises that the causes of the recent outage, which rendered even game discs unplayable, have been fixed",
+          "full_text": "Xbox promises that the causes of the recent outage, which rendered even game discs unplayable, have been fixed\n\nhttps://t.co/osF3KXa2DJ https://t.co/Pa3tmc5xOs",
+          "author": "Eurogamer",
+          "date": "2026-08-12",
+          "likes": 53,
+          "views": 25458,
+          "link": "https://x.com/eurogamer/status/2087492608541282516",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HPhDTrFaQAAMvUi.jpg"
+          },
+          "summary": "Xbox CTO Scott Van Vliet公布七月大故障调查结论：外部依赖服务故障+自身一个独立bug叠加，把许可证检查服务一并拖垮——导致连实体盘游戏都无法启动。bug已修复并推送客户端更新（8/17起强制）；Xbox已接管该许可服务的所有权，继续「加固服务与基础设施」。Eurogamer点题：「当光盘消失、数字成为唯一获取方式，类似故障足以让整个主机生态瘫痪」。",
+          "analysis": "「实体盘也打不开」是本周实体盘叙事最锋利的实锤：物理介质早已不是离线保障——许可证校验在线化的现实，比索尼停盘计划本身更值得放进风险评估。对平台团队：许可服务的降级策略（离线宽限）是关键的韧性设计。",
+          "recommendation": "Xbox outage复盘：实体盘也无法游玩的bug已修复——在线验证的韧性课",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · MMO收缩",
+          "tags": [
+            "Amazon",
+            "Lost Ark",
+            "MMO"
+          ],
+          "title": "Amazon放弃Lost Ark与Throne and Liberty：Smilegate接手西方服，Amazon撤出MMO",
+          "en_title": "Smilegate will rescue Lost Ark's western servers, as Amazon ditches support while retreating from MMO development",
+          "full_text": "Smilegate will rescue Lost Ark's western servers, as Amazon ditches support while retreating from MMO development\n\nhttps://t.co/pw1PriYH6u https://t.co/gA7PykYYip",
+          "author": "Eurogamer",
+          "date": "2026-08-12",
+          "likes": 4,
+          "views": 7881,
+          "link": "https://x.com/eurogamer/status/2087499290411245807",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HPhJhK2WcAA83sh.jpg"
+          },
+          "summary": "Eurogamer报道：Amazon退出MMO运营——Lost Ark西方服将由Smilegate接手「救援」，Throne and Liberty同步被放弃；Amazon Games自此从MMO开发与发行中撤退。此前Amazon Games已历经多轮裁员与项目取消。",
+          "analysis": "西方大厂自研/发行MMO的又一面白旗。对国内MMO团队出海：Amazon退出的西方MMO发行空档是潜在机会，但其失败也再次证明「平台流量≠MMO运营能力」。",
+          "recommendation": "Amazon撤出MMO：Lost Ark西方服由Smilegate接手"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Eurogamer · 销量里程碑",
+          "tags": [
+            "Meccha Chameleon",
+            "销量",
+            "现象级"
+          ],
+          "title": "Meccha Chameleon两月销量破2,000万份：从爆红到长销",
+          "en_title": "Meccha Chameleon has now sold 20 million copies in two months",
+          "full_text": "Meccha Chameleon, the indie hide-and-seek game that launched on Steam two months ago, has surpassed a staggering 20 million copies. https://t.co/cup7MTGqeH https://t.co/jnE89SFhXQ",
+          "author": "Eurogamer",
+          "date": "2026-08-12",
+          "likes": 26,
+          "views": 18416,
+          "link": "https://x.com/eurogamer/status/2087517227738153023",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HPhZ1vaWQAAXTLv.jpg"
+          },
+          "summary": "Eurogamer报道：涂装躲猫猫《Meccha Chameleon》销量突破2,000万份（发售两个月；首月1,500万、次月+500万）。当前日活约2.2万（SteamDB口径），是全美Steam/PS/Xbox最常玩的游戏之一；上月UGC地图带毒+Discord被黑事件已解决，更新照常。",
+          "analysis": "",
+          "recommendation": "Meccha Chameleon两月2,000万份：年度最大独立爆款",
+          "featured": true
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "AGGRO CRAB · 更新上线",
+          "tags": [
+            "Peak",
+            "最终更新",
+            "运营哲学"
+          ],
+          "title": "Peak最终更新上线：Gloom/Citadel生物群系登场，「我们为什么不做永久游戏」——官方梗推107万浏览",
+          "en_title": "how have you all been enjoying the new biome?",
+          "full_text": "how have you all been enjoying the new biome? https://t.co/2Z0sOoRsoJ",
+          "author": "AGGRO CRAB 💥",
+          "date": "2026-08-11",
+          "likes": 31059,
+          "views": 1073968,
+          "link": "https://x.com/AggroCrabGames/status/2087321357021499468",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2087320754513932288/img/h0jxzRyki9ma53CB.jpg",
+            "video_url": "https://x.com/AggroCrabGames/status/2087321357021499468/video/1"
+          },
+          "summary": "Peak最终大型更新「The Final Ascent」8/11上线：新变体生物群系Gloom与Citadel（雾霭沼泽+设陷遗迹）加入轮换，还有一个「等你发现的新秘密」。Aggro Crab官方梗推「大家新生物群系玩得怎么样」获107万浏览、3.1万赞。RPS同刊访谈：Landfall与Aggro Crab解释Peak为何不是「永久游戏」——做完最终更新就转向新作，拒绝无限期运营。",
+          "analysis": "",
+          "recommendation": "Peak最终更新上线+「不做永久游戏」宣言——107万浏览",
+          "featured": true,
+          "enrichment": {
+            "game_name": "PEAK",
+            "steam_url": "https://store.steampowered.com/app/3527290",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3527290/89f65be18915d2dc5566de1de322379d62c1dcac/header_alt_assets_3.jpg?t=1786470571",
+            "release_date": "已发售 · 2025 年 6 月 16 日",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 16.50",
+            "developer": "Team PEAK",
+            "genre": "动作 / 冒险 / 独立",
+            "steam_rating": "281949 reviews",
+            "description": "《PEAK》是一款需要细致合作的登山游戏，作为流落神秘岛屿的童子军探险家，无论单人独闯抑或团队协力，你们唯一获救的希望便是登上岛中那座巍峨的山峰，自然荒野险途漫漫，稍有不慎便会大难临头。顶峰在望，你有魄力能征服它吗？\n\n"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "AUTOMATON · 口碑跟进",
+          "tags": [
+            "太空",
+            "合作",
+            "口碑"
+          ],
+          "title": "Approximately Up人气白热：95%好评、「墜落不可避」的造船合作——12.9万浏览跟进",
+          "en_title": "Steamマルチ対応とことん細かい宇宙船クラフト『Approximately Up』95%好評で人気白熱中",
+          "full_text": "【ニュース】Steamマルチ対応とことん細かい宇宙船クラフト『Approximately Up』95%好評で人気白熱中\nhttps://t.co/j8yZhPPbAK\n\n重心から配線まで自由、しかし容赦なく墜落。発売前から“数百時間プレイヤー”を生んだ底なしゲーム https://t.co/cvRP4x967O",
+          "author": "AUTOMATON（オートマトン）",
+          "date": "2026-08-11",
+          "likes": 908,
+          "views": 129259,
+          "link": "https://x.com/AUTOMATONJapan/status/2087138222023549161",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2087138174032334848/img/A9wbif4F4-bSkuNT.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2087138222023549161/video/1"
+          },
+          "summary": "AUTOMATON跟进报道8/6发售的《Approximately Up》：模块化造船+4人甩锅合作维持95%好评、人气白炽化——从重心到配线全自由，但「墜落容赦なく」。本作8/8日报入选时首日98%好评（160+评价），一周后口碑与热度双稳住。",
+          "analysis": "",
+          "recommendation": "Approximately Up：发售一周95%好评人气白热——12.9万浏览",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Approximately Up",
+            "steam_url": "https://store.steampowered.com/app/3904850",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3904850/d91f2e97c92cb98f97b3c773ff1e2d84bf6bc127/header.jpg?t=1786035600",
+            "release_date": "已发售 · 2026 年 8 月 6 日",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 74.40",
+            "developer": "Approximately Games",
+            "genre": "冒险 / 独立 / 模拟",
+            "steam_rating": "539 reviews",
+            "description": "Build, crash, rebuild! Explore new planets in co-op multiplayer with your fully modular spaceship made from whatever bolts together long enough to fly. Mount giant thrusters, annoying cables, and everything in between. Complete wild missions, face the dangers of space and argue with your crew!\n\n"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "BATTLE LAB · 营销数据",
+          "tags": [
+            "KOL效应",
+            "愿望单",
+            "独立营销"
+          ],
+          "title": "「这是IndieGameJoe效应吗」：单日愿望单+23,000、每小时约700的KOL量化样本",
+          "en_title": "Is this the @IndieGameJoe effect? 23,000 wishlists in a single day. 10,000 so far today. Still getting ~700 per hour.",
+          "full_text": "Is this the @IndieGameJoe effect?\n\n23,000 wishlists in a single day. 10,000 so far today. Still getting ~700 per hour.\n\nMy previous highest bump of 500 is barely visible.\n\nIt’s just been a week since I launched my Steam page.\n\nOn pace for my goal of 10 million wishlists. https://t.co/RxcpxaupZz",
+          "author": "BATTLE LAB",
+          "date": "2026-08-11",
+          "likes": 201,
+          "views": 8710,
+          "link": "https://x.com/battlelabgames/status/2087232865989775837",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HPdXOtcWIAA-1pW.jpg"
+          },
+          "summary": "BATTLE LAB晒数据：被Indie Game Joe推荐后，单日愿望单+23,000、次日仍每小时约+700。Indie Game Joe是我们日报高频出现的独立游戏KOL（Big Walk/Emergency Buddies/Tidy Up Together等均经其放大），这条推文首次给出了其带货能力的量化锚点。",
+          "analysis": "独立游戏营销的「KOL转化率」第一次有了公开的小时级数据：单条推荐=单日2.3万愿望单。对发行与运营团队：这个量级可以作为评估同类KOL合作性价比的基准线；也解释了为什么开发者排队给他投稿。",
+          "recommendation": "IndieGameJoe效应量化：单日愿望单+23,000、每小时700"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unreal Engine · 官方更新",
+          "tags": [
+            "UE 5.8",
+            "动画",
+            "示例项目"
+          ],
+          "title": "UE Game Animation Sample Project更新：5.8版本动画示例再扩容",
+          "en_title": "The Game Animation Sample Project is back with a brand new update for UE 5.8! Grab it today and prepare...",
+          "full_text": "GASP 🫢 The Game Animation Sample Project is back with a brand new update for UE 5.8! \n\nGrab it today and prepare to get physical with new physics, motion matching, interaction, and Control Rig features and more: https://t.co/w3qZjXKGvv https://t.co/4bj4tfBll2",
+          "author": "Unreal Engine",
+          "date": "2026-08-12",
+          "likes": 742,
+          "views": 39205,
+          "link": "https://x.com/UnrealEngine/status/2087541168108384350",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2087541141784936448/img/fetrk_51q77biLCu.jpg",
+            "video_url": "https://x.com/UnrealEngine/status/2087541168108384350/video/1"
+          },
+          "summary": "Unreal Engine官方：Game Animation Sample Project（GASP）发布UE 5.8更新——动画示例项目再扩容，可直接下载拆解官方动画管线实践。3.9万浏览。同日Unity官推发布Unity CLI安装教学（8/7 CLI发布后的官方教程跟进）。",
+          "analysis": "GASP是UE动画系统的「官方答案库」，每次版本更新都是动画管线团队的对标参照——配合本周NVIDIA MotionBricks的生成式动画，传统sample与生成路线的对照阅读价值最高。",
+          "recommendation": "UE GASP 5.8更新：官方动画示例项目扩容"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI育儿的最大公约数**\n老爸为儿子vibecode「安全版Roblox」：通关录像伪装联机队友、ChatGPT机器人陪聊——616万浏览击中Roblox危机周的家长焦虑；同日Grok Bot实测2小时74个美术资产接回游戏，「每个agent一台云电脑」的配置浮出水面。\n\n**国产单机卡位国庆档**\nPhantom Blade Zero确认10月发售：甄子丹自2023年秘密担任动作指导，State of Play专场下周。行业侧：CDPR确认Project Sirius裁员、Amazon撤出MMO（Smilegate接手Lost Ark西方服）、Xbox七月outage复盘——连实体盘都打不开的许可校验bug已修复。\n\n**爆款的长尾与谢幕**\nMeccha Chameleon两月2,000万份；Peak最终更新上线+「不做永久游戏」宣言（官方梗推107万）；Approximately Up一周95%好评稳住。另有IndieGameJoe效应量化：单条推荐=单日2.3万愿望单。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
