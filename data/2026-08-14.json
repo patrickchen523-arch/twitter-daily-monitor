@@ -1,0 +1,475 @@
+{
+ "date": "2026-08-14",
+ "meta": {
+  "raw_count": 221,
+  "filtered_count": 218,
+  "selected_count": 12,
+  "crawl_time": "2026-08-14 10:30"
+ },
+ "lede": "DeepSeek开源Harness v0.1：MIT协议、「一切皆插件」——83万浏览\nSaber CEO对「被ChatGPT取代」的前主编剧称「宁愿当初就用AI取代你」\nStillsun Ark实机首曝：潮汐锁定星球上的像素JRPG——10.4万浏览",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "DeepSeek开源Harness：一切皆插件，首日13.8k星"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Saber CEO：「宁愿用AI取代她」——AI取代编剧骂战升级"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "Stillsun Ark实机首曝：「美即危险」的异星像素JRPG"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "DeepSeek开源Harness v0.1：MIT协议、「一切皆插件」——83万浏览\nmrdoob：代码移植门槛崩塌，Codex自主迭代到完成（对比1月的CLAUDE.md时代）\nTwitch默认用直播训练生成式AI，CPO承认「opt-in就没人会加入」"
+  },
+  {
+   "id": "industry",
+   "text": "Saber CEO骂战升级：对「被ChatGPT取代」的前主编剧称「宁愿当初就用AI取代你」\nStop Killing Games加入荷兰170万用户诉索尼数字店垄断案\n漫威金刚狼9月15日发售：光盘版「完整可玩」，或成索尼最后一批全光盘游戏\nGuild Wars 3：NCSoft借款给ArenaNet完成开发，预计2028年5月前后"
+  },
+  {
+   "id": "indie",
+   "text": "Stillsun Ark首个实机：潮汐锁定星球的像素JRPG——10.4万浏览\nCombolands：天际线×小丑牌肉鸽城建获Polygon盛赞，8月24日发售\n米哈游Nodusfall泄露：UE5写实风「怪猎式」暗黑奇幻MMO（以泄露者转述为准）\nGrim Dawn新资料片20万份：创2019年来最高在线峰值"
+  },
+  {
+   "id": "tools",
+   "text": "Unity新Scene Hierarchy：百万级对象流畅处理+可自定义列"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "DeepSeek · 官方发布",
+     "tags": [
+      "agent",
+      "开源",
+      "harness"
+     ],
+     "title": "DeepSeek开源Harness v0.1：MIT协议、「一切皆插件」的agent harness——83万浏览",
+     "en_title": "DeepSeek Harness v0.1 is now available in Developer Preview! We're opening it up to developers building agent harnesses worldwide and open-sourcing the codebase in MIT license...",
+     "full_text": "🧩 DeepSeek Harness v0.1 is now available in Developer Preview!\n\n🔹 We’re opening it up to developers building agent harnesses worldwide and open-sourcing the codebase in MIT license.\n🔹 Powered by the Cordis meta-framework, DeepSeek Harness is an agent harness built around one core idea: Everything is a plugin. Models, tools, skills, sessions, sandboxes, filesystems, loops, orchestration, and UI are ALL implemented as plugins, and can be mixed, matched, replaced, and extended.\n\nTry it now!\nhttps://t.co/2YWSvJHhKA",
+     "author": "DeepSeek",
+     "date": "2026-08-13",
+     "likes": 9482,
+     "views": 830378,
+     "link": "https://x.com/deepseek_ai/status/2087887408440164663",
+     "media": null,
+     "summary": "DeepSeek发布并开源DeepSeek Harness v0.1开发者预览版（MIT协议）。基于Cordis元框架，核心理念「Everything is a plugin」：模型、工具、技能、会话、沙箱、文件系统、循环、编排与UI全部实现为插件，可自由混合、替换与扩展。83万浏览、9,482赞。Tianyi Cui确认「面向Harness开发者的预览版，还很不完善，恳请提意见」（11.3万浏览）；Tony出海记录GitHub发布不到一天13.8k stars。",
+     "analysis": "harness层正式成为新战场——本周Levie刚预言「harness层会保持开放」，DeepSeek直接把自家harness以MIT开源。Agent竞争从模型层上移到编排层：对游戏工作室而言，「一切可替换」的插件架构比单一框架锁定更值得评估，NPC/任务编排工具链的选型窗口正在打开。",
+     "recommendation": "DeepSeek开源Harness：一切皆插件，首日13.8k星",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "mrdoob · 能力观察",
+     "tags": [
+      "Codex",
+      "代码移植",
+      "three.js"
+     ],
+     "title": "mrdoob：代码移植门槛崩塌——Quake移植Three.js从「CLAUDE.md手把手」到一句话",
+     "en_title": "Porting Quake to Three.js back in January needed a CLAUDE.md full of footguns and a lot of hand-holding. Now we can just ask Codex to port some code and it'll keep iterating until it's done.",
+     "full_text": "It's getting easier and easier to port code.\n\nPorting Quake to Three.js back in January needed a CLAUDE.md full of footguns and a lot of hand-holding.\n\nNow we can just ask Codex to port some code and it'll keep iterating until it's done.\n\nSome day we'll just click on an incompatible app and the OS will port the binary for you.",
+     "author": "mrdoob",
+     "date": "2026-08-12",
+     "likes": 303,
+     "views": 23314,
+     "link": "https://x.com/mrdoob/status/2087372171484205227",
+     "media": null,
+     "summary": "three.js创始人mrdoob：今年1月把Quake移植到Three.js还需要一份写满坑的CLAUDE.md外加全程手把手；现在直接让Codex移植，它会自己迭代直到完成。他的预言：终有一天点击一个不兼容的应用，操作系统会直接帮你移植二进制。2.3万浏览。",
+     "analysis": "同一个人、同一类任务、九个月前后对比，是最可信的能力跳变证据——「迭代直到完成」意味着agent已内化过去要写进文档的隐性知识。对游戏行业的老引擎资产现代化、移植/重制管线是直接利好；「带新人成本」逻辑同样适用于带agent。",
+     "recommendation": "mrdoob实测：Codex自主迭代完成移植，无需CLAUDE.md",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "GameSpot · 平台政策",
+     "tags": [
+      "Twitch",
+      "AI训练",
+      "Amazon"
+     ],
+     "title": "Twitch默认用主播内容训练生成式AI，CPO承认「改成opt-in就没人会加入」",
+     "en_title": "Twitch Is Now Using Channels To Train Generative AI, And The Company Knows It's Unpopular",
+     "full_text": "Twitch Is Now Using Channels To Train Generative AI, And The Company Knows It’s Unpopular https://t.co/3I7zSRuM7v https://t.co/EDqbI7Afqw",
+     "author": "GameSpot",
+     "date": "2026-08-13",
+     "likes": 11,
+     "views": 16466,
+     "link": "https://x.com/GameSpot/status/2087909109597446251",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPm-RR9awAAtfKm.jpg"
+     },
+     "summary": "Twitch宣布将用平台直播内容训练生成式AI模型，默认开启、需手动opt-out。社区反弹后，CPO Mike Minton在直播Q&A中回应：「为什么不是opt-in？诚实的答案是：如果是opt-in，就没人会加入了……我们知道这不是粉丝喜欢的答案，但这就是我们处的位置。」Uservoice上「改为可选」已成最热门请求。Eurogamer指出推动力来自母公司Amazon的生成式AI战略。多家报道：GameSpot（1.6万浏览）、Eurogamer、Rock Paper Shotgun。",
+     "analysis": "「opt-out because nobody would opt in」是2026年最诚实的AI数据政策自白——平台明知用户不想要，但照做。游戏主播的实况素材成为训练燃料，MCN合同与主播协议里的AI授权条款将成为下一个谈判焦点；也与昨日Saber的AI取代编剧骂战共享同一条「创作者权益 vs 平台AI需求」前线。",
+     "recommendation": "Twitch默认用直播训AI：CPO「opt-in就没人会加」",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 争议",
+     "tags": [
+      "Saber",
+      "AI取代",
+      "编剧"
+     ],
+     "title": "Saber CEO骂战升级：对「被ChatGPT取代」的前主编剧称「宁愿当初就用AI取代你」",
+     "en_title": "'I would frankly have been happy to replace her with AI' - extraordinary public spat between Saber CEO and writer \"replaced with ChatGPT\" intensifies",
+     "full_text": "'I would frankly have been happy to replace her with AI' - extraordinary public spat between Saber CEO and writer \"replaced with ChatGPT\" intensifies https://t.co/R3j0D3yEFN https://t.co/t39NdA3PBb",
+     "author": "Eurogamer",
+     "date": "2026-08-13",
+     "likes": 191,
+     "views": 49362,
+     "link": "https://x.com/eurogamer/status/2087852678135075169",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPmKxVXXgAA4Y0G.jpg"
+     },
+     "summary": "Saber Interactive（Space Marine 2）联合创始人/CEO Matthew Karch与前Stuntman Hollywood主编剧Stella Sacco的公开骂战升级。Sacco称自己在Rideshare \"Stimulator\"（UNIGINE开发、Saber发行）开发中途被ChatGPT取代，且Steam页面未披露AI使用；Karch回应「回想起来我宁愿用AI取代她——至少面对的是一个被编程为诚实的东西」，并以「Stella谁？我得问Claude」开场。Sacco回击：「这种声明对Saber声誉的伤害远大于对我的」。Saber否认用AI取代编剧（称编剧团队自2023年扩至三倍），但承认自由驾驶模式「因乘客无限」必须使用AI，Steam页面将在功能确定后更新披露。4.9万浏览。多家报道：Eurogamer、PC Gamer、TheGamer。",
+     "analysis": "AI取代叙事第一次以CEO亲自下场骂战的形式爆发——「高管想把ChatGPT写稿当营销卖点」的指控，叠加Steam AI披露义务，把编剧岗位与平台披露规则两条线同时点燃。同周PC Gamer报道游戏合同中no-AI条款「已成boilerplate标配」——攻防两面同框，游戏文案/编剧外包合同的AI条款谈判将加速。",
+     "recommendation": "Saber CEO：「宁愿用AI取代她」——AI取代编剧骂战升级",
+     "featured": true,
+     "game_ref": "Rideshare \"Stimulator\"",
+     "enrichment": {
+      "game_name": "Rideshare \"Stimulator\"",
+      "genre": "模拟经营 / 驾驶 / 开放世界",
+      "developer": "UNIGINE（发行：Saber Interactive）",
+      "platforms": [
+       "Steam(PC)"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2366590/Rideshare_Stimulator/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2366590/40f269982e4b124824113ddfb4c4b59e41e386c1/header.jpg?t=1786116673",
+      "youtube_video": null,
+      "description": "【核心玩法】经营网约车App生意的驾驶模拟：真实路况中接送乘客、养护车辆，乘客拥有「独特且不可预测」的故事线。【AI争议现场】前主编剧Stella Sacco称剧本在开发中途被ChatGPT接手、乘客语音全为AI生成，且Steam页未披露；Saber回应称完整剧本由真人撰写、仅「乘客无限」的自由驾驶模式按需使用AI，并承诺功能确定后更新Steam AI披露。【为什么重要】本作已成Steam AI披露规则与编剧岗位攻防的活样本——CEO亲自下场使事件从劳务纠纷升级为行业公关案例。【风险】发售日未定，争议带来的负面认知可能盖过游戏本身。",
+      "why_notable": "Saber AI骂战的核心现场——Steam AI披露争议的活样本"
+     }
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 反垄断",
+     "tags": [
+      "Stop Killing Games",
+      "索尼",
+      "数字所有权"
+     ],
+     "title": "Stop Killing Games加入荷兰170万用户诉索尼数字店垄断案",
+     "en_title": "Stop Killing Games backs Dutch consumer rights lawsuit against Sony's PlayStation digital store \"monopoly\"",
+     "full_text": "Stop Killing Games backs Dutch consumer rights lawsuit against Sony's PlayStation digital store \"monopoly\"\n\nhttps://t.co/ruzQcwuZyc https://t.co/rLcgF4vpuJ",
+     "author": "Eurogamer",
+     "date": "2026-08-13",
+     "likes": 177,
+     "views": 10976,
+     "link": "https://x.com/eurogamer/status/2087817001767243794",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPlqcWOaEAAZ5jm.jpg"
+     },
+     "summary": "Stop Killing Games宣布与DoesItPlay?一同支持荷兰消费者组织Stichting Massaschade & Consument代表170万荷兰PlayStation用户发起的集体诉讼，指控索尼对PlayStation数字游戏销售的垄断。该案2025年已立案，索尼宣布2028年1月停产实体光盘后关注度骤升；荷兰本地分析发现实体零售店的游戏几乎总是比PS Store便宜。SKG在动员视频中表示「SM&C需要向法庭证明它真正代表玩家，我们的支持在全球层面为其背书」。此前SKG在欧洲议会的立法努力刚遭欧盟委员会拒绝。1.1万浏览（PC Gamer同题1.2万）。",
+     "analysis": "索尼停盘决定正把「数字所有权」从舆论战推向反垄断诉讼——170万用户集体诉讼+SKG全球动员，是实体盘消亡线的第一个法律战场。核心论点「封闭系统内唯一商店=定价垄断」若被法庭采纳，将波及所有平台方；PC的多商店竞争模式会被当作对照组引用。",
+     "recommendation": "SKG助阵荷兰诉索尼：170万用户挑战数字店垄断",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 大作节点",
+     "tags": [
+      "漫威金刚狼",
+      "Insomniac",
+      "实体光盘"
+     ],
+     "title": "漫威金刚狼9月15日发售：光盘版「完整可玩」，或成索尼最后一批全光盘游戏",
+     "en_title": "Marvel's Wolverine \"fully playable\" on disc when it releases, Insomniac clarifies, perhaps making it one of the last few PlayStation games that will be",
+     "full_text": "Marvel's Wolverine \"fully playable\" on disc when it releases, Insomniac clarifies, perhaps making it one of the last few PlayStation games that will be.\n\nhttps://t.co/QEOmaaEhfF https://t.co/qjGKnRk4Ry",
+     "author": "Eurogamer",
+     "date": "2026-08-13",
+     "likes": 38,
+     "views": 4501,
+     "link": "https://x.com/eurogamer/status/2087918654201503894",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPnG5FFWoAATy6X.jpg"
+     },
+     "summary": "预览禁令解禁：Insomniac确认Marvel's Wolverine将于9月15日发售，光盘版无需下载即可完整游玩（首日补丁仍在打磨，官方建议下载）。在索尼2028年停盘背景下，Eurogamer指出这可能是PlayStation最后一批全光盘游戏之一。试玩反馈：战斗凶残且电影化、流程线性（无城市/据点可探索）、本作世界观中X战警不存在；MP1st确认仅金刚狼可操控，New Game Plus与Nightmare Doors模式首日开放。多家报道：Eurogamer、GameSpot（2万浏览）、MP1st。",
+     "analysis": "「光盘里真的有完整游戏」从默认前提变成需要官方澄清的新闻，本身就是行业变迁的注脚——与索尼停盘、SKG诉讼、Xbox outage实体盘无法启动同属一条所有权叙事线。设计上，Insomniac从蜘蛛侠的开放城市转向线性高强度动作，是一次明确的减法实验，9/15的市场表现将检验「无开放世界」的超英游戏接受度。",
+     "recommendation": "金刚狼9/15发售：光盘完整可玩，索尼最后的光盘游戏之一",
+     "game_ref": "Marvel's Wolverine",
+     "enrichment": {
+      "game_name": "Marvel's Wolverine",
+      "genre": "动作 / 砍杀 / 线性叙事",
+      "developer": "Insomniac Games（索尼第一方）",
+      "platforms": [
+       "PS5独占"
+      ],
+      "price": "未公布",
+      "release_date": "2026年9月15日",
+      "steam_rating": "无（PS独占）",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【定位】Insomniac继蜘蛛侠系列后的新漫威IP：更线性、更暴力——无城市/据点探索，专注高强度关卡制动作，工作室称「因金刚狼这个角色必须如此」。【世界观】本作中X战警不存在，仅金刚狼可操控（无MJ式关卡），Jean Grey戏份吃重但「有所不同」；Spider-Man仅轻度关联。【内容量】主线之外首日即开放New Game Plus与Nightmare Doors模式。【实体版】光盘完整可玩、无需强制下载，索尼2028年停盘背景下或成最后一批全光盘PS游戏。【关注点】9月15日发售，检验「无开放世界超英」的市场接受度与实体盘收官价值。",
+      "why_notable": "9/15发售+光盘完整可玩——索尼实体盘时代的收官大作之一"
+     }
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Jay Oddity · 财报解读",
+     "tags": [
+      "Guild Wars 3",
+      "NCSoft",
+      "MMO"
+     ],
+     "title": "Guild Wars 3：NCSoft借款给ArenaNet完成开发，预计2028年5月前后发售",
+     "en_title": "Release expected around May 2028 - NC Soft is loaning Arenanet some funds to complete the game - Guild Wars 3 in the B2B area at Gamescom according to NC Soft themselves",
+     "full_text": "There's been some big Guild Wars 3 News! \n\n- Release expected around May 2028\n- NC Soft is loaning Arenanet some funds to complete the game\n- Loan finishes around May 2028 and Co CEO says you can figure out the release window from that!\n- Guild Wars 3 in the B2B area at Gamescom according to NC Soft themselves\n\nCheck out my full video - https://t.co/ykRoH9SnAx",
+     "author": "Jay Oddity",
+     "date": "2026-08-12",
+     "likes": 442,
+     "views": 37259,
+     "link": "https://x.com/JayOddity/status/2087679127297933577",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPjs7EGXkAAgaT6.jpg"
+     },
+     "summary": "据NCSoft财报信息（Jay Oddity整理，3.7万浏览）：Guild Wars 3预计2028年5月左右发售——NCSoft正向ArenaNet提供借款以完成开发，借款期限至2028年5月，联合CEO表示可由此推断发售窗口；NCSoft确认GW3将在Gamescom设立B2B展位。",
+     "analysis": "「母公司借款给子公司做完游戏」的融资结构，说明ArenaNet现金流已无法独立支撑GW3——NCSoft一边收缩一边为旗舰MMO续命。2028年窗口恰逢Amazon撤出MMO后的空档期，西方MMO市场届时只剩少数玩家。",
+     "recommendation": "GW3预计2028年5月：NCSoft借款续命ArenaNet"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Stillsun Ark · 官方首曝",
+     "tags": [
+      "JRPG",
+      "像素",
+      "科幻"
+     ],
+     "title": "Stillsun Ark首个实机：被困「美即危险」星球的像素JRPG——10.4万浏览",
+     "en_title": "An in-game first look of Stillsun Ark. You'll be stranded on a planet where beauty endangers your survival.",
+     "full_text": "An in-game first look of Stillsun Ark. You'll be stranded on a planet where beauty endangers your survival.\n\nWe're excited to start sharing what we've been working on, and we'd love to hear your feedback on it.  \n\nWishlist the game on steam below ⬇️ \n\n#JRPG #pixelart #indiedev https://t.co/WvQEIhZYX4",
+     "author": "Stillsun Ark",
+     "date": "2026-08-11",
+     "likes": 2567,
+     "views": 104268,
+     "link": "https://x.com/StillsunArk/status/2087277614087975068",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/tweet_video_thumb/HPd_ShqWUAEalLh.jpg",
+      "video_url": "https://x.com/StillsunArk/status/2087277614087975068/video/1"
+     },
+     "summary": "Shinra Software公布Stillsun Ark首个游戏内实机：像素风回合制科幻JRPG——你被困在一颗潮汐锁定、太阳永不移动的星球，「美丽即是危险」。船难幸存者需与外星寄生体共生、在战斗中切换形态求生，最终找到回家的路。10.4万浏览、2,567赞、274转发。Steam愿望单已开，发售日未定。",
+     "analysis": "",
+     "recommendation": "Stillsun Ark实机首曝：「美即危险」的异星像素JRPG",
+     "featured": true,
+     "game_ref": "Stillsun Ark",
+     "enrichment": {
+      "game_name": "Stillsun Ark",
+      "genre": "回合制JRPG / 像素 / 科幻生存",
+      "developer": "Shinra Software",
+      "platforms": [
+       "Steam(Win/Mac)"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5047700/Stillsun_Ark/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5047700/8ddf9201bfd6affa6186491a4451a402afeedf73/header.jpg?t=1786247123",
+      "youtube_video": null,
+      "description": "【核心玩法】回合制JRPG+形态切换：与外星寄生体建立共生获得能力，战斗中变换形态应对不同威胁——「Bond with alien parasites and shift forms mid-battle」。【世界观】潮汐锁定星球：永昼与永夜的分界线本身就是生存舞台，「美丽即危险」——奇异地貌既提供资源也暗藏杀机，船难船员要找到回家的路。【美术】像素风+异星科幻调色，首曝实机的行星地表光影是主要传播点。【定位】小团队概念差异化JRPG，靠「寄生共生+形态切换」机制在愿望单阶段突围。【风险】发售日未定；回合制+像素的受众天花板取决于战斗系统深度。【综合】概念先行的异星生存JRPG，10万级浏览证明「美即危险」的hook成立。",
+      "why_notable": "「美即危险」异星概念+寄生共生形态切换，首曝即10万浏览"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Polygon · 试玩盛赞",
+     "tags": [
+      "肉鸽",
+      "城建",
+      "Balatro"
+     ],
+     "title": "Combolands：天际线×小丑牌肉鸽城建获Polygon盛赞，8月24日发售",
+     "en_title": "Cities: Skylines meets Balatro in Steam's coolest new roguelike in years",
+     "full_text": "Cities: Skylines meets Balatro in Steam's coolest new roguelike in years https://t.co/OQSJq7K7TF https://t.co/9OxlcyqcY6",
+     "author": "Polygon",
+     "date": "2026-08-13",
+     "likes": 175,
+     "views": 26567,
+     "link": "https://x.com/Polygon/status/2087728416090882186",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPkZ7l_WIAALerZ.jpg"
+     },
+     "summary": "Polygon试玩印象：Crux Games的Combolands: Roguelike Citybuilder把Cities: Skylines的邻接加成与Balatro的连击链融合——程序生成岛屿上八周冲击人口里程碑，每周一手行动+有限重掷；行会系统（正式版7个）决定建筑池，局间商店购买改造件。评价「frighteningly good」「wholly absorbing and uniquely satisfying」。2.7万浏览。Steam demo现已可玩，正式版8月24日发售。",
+     "analysis": "",
+     "recommendation": "Combolands：邻接加成×连击链肉鸽城建，8/24发售",
+     "featured": true,
+     "game_ref": "Combolands: Roguelike Citybuilder",
+     "enrichment": {
+      "game_name": "Combolands: Roguelike Citybuilder",
+      "genre": "肉鸽 / 城建 / 策略",
+      "developer": "Crux Games",
+      "platforms": [
+       "Steam(PC)"
+      ],
+      "price": "未公布",
+      "release_date": "2026年8月24日",
+      "steam_rating": "demo阶段",
+      "steam_url": "https://store.steampowered.com/app/4075620/Combolands_Roguelike_Citybuilder/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4075620/94f8d81bbadbc37f1f0ae0a5df30bda1ff4af186/header.jpg?t=1786022425",
+      "youtube_video": null,
+      "description": "【核心玩法】程序生成岛屿，八周内达到人口里程碑：放置建筑吃邻接资源节点（猎人小屋靠森林、蜂箱靠花田），把邻接加成叠成Balatro式连击链；每周一手行动牌+有限重掷+拆除次数，围墙需完全闭合才激活倍率，空间约束制造决策张力。【Build深度】行会系统（发售版7个，demo 2个）决定每局建筑池倾向；局间商店出售改造件（如「最后一周全建筑免费倍率」），局外成长解锁新建筑，失败惩罚比Balatro宽松。【节奏】单局短平快，门槛低于传统城建。【不足】demo仅2个行会，长线Build多样性待验证。【综合】天际线×小丑牌的嫁接被Polygon评价为近年最出色的肉鸽城建，8/24发售，demo已可验证手感。",
+      "why_notable": "Polygon盛赞「frighteningly good」——城建×小丑牌最优解候选"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Kai · 泄露汇总",
+     "tags": [
+      "米哈游",
+      "怪物猎人",
+      "UE5"
+     ],
+     "title": "米哈游Nodusfall泄露：UE5写实风「怪猎式」暗黑奇幻MMO——11万浏览",
+     "en_title": "Nodusfall - Leak Some Gameplay Footage · New HoYoverse title, previously codenamed The Weavers · Genre: Dark-fantasy open-world MMORPG",
+     "full_text": "Nodusfall -  Leak Some Gameplay Footage \n\n· New HoYoverse title, previously codenamed The Weavers\n· Genre: Dark-fantasy open-world MMORPG\n\n· Core structure: exploration, massive boss fights, co-op hunting\n· Protagonist: a single customizable Node Walker hero\n\n· Engine: Unreal Engine 5\n· Visual style: realistic fantasy world, physical-based rendering, no traditional anime cel-shading\n\n· Combat: tactical action with physical impact, weapon weight, stamina management\n· Boss design: epic large-scale boss battles\n\n· Multiplayer: co-op hunting, PvP, and Team Deathmatch modes\n· World AI: AI-simulated ecosystem\n\n· Enemy AI: all-terrain combat AI\n· NPC interaction: intelligent NPC behavior and interactions\n\n· Setting: a collapsed world order, corrupted divine contracts, legendary demons",
+     "author": "Kai",
+     "date": "2026-08-13",
+     "likes": 1732,
+     "views": 110876,
+     "link": "https://x.com/Kai_zen78/status/2087788684636536990",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2087788458354118656/img/fJEMty5V1iu2yYtI.jpg",
+      "video_url": "https://x.com/Kai_zen78/status/2087788684636536990/video/1"
+     },
+     "summary": "泄露者Seele Leaks（Telegram）放出HoYoverse代号Nodusfall（现似乎改名The Weavers）的NDA测试信息与菜单/启动器截图，被问及玩法时称之为「米哈游的怪物猎人」：UE5、写实物理渲染（告别赛璐璐）、暗黑奇幻开放世界MMO、大型Boss战+合作狩猎、单一可自定义「Node Walker」主角。Kai汇总推11万浏览、1,732赞；TheGamer指出其与2025年HoYoverse招聘官网展示的写实风UE5项目相吻合。注意：均为泄露者转述，未经官方证实。",
+     "analysis": "",
+     "recommendation": "米哈游「怪猎式」MMO泄露：UE5写实风大转向",
+     "featured": true,
+     "game_ref": "Nodusfall",
+     "enrichment": {
+      "game_name": "Nodusfall（代号，现或称The Weavers）",
+      "genre": "暗黑奇幻开放世界MMO / 合作狩猎（泄露信息）",
+      "developer": "HoYoverse（米哈游）",
+      "platforms": [
+       "未知（泄露未提及）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未公布",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【泄露内容】据Seele Leaks转述NDA测试：暗黑奇幻开放世界，核心循环为探索+大型Boss战+合作狩猎；UE5写实物理渲染，不再使用原神/星铁/绝区零的赛璐璐动漫渲染；主角为单一可自定义「Node Walker」。【信源评估】流出的是菜单与启动器截图，与HoYoverse 2025年招聘官网的写实风UE5项目预告吻合；TheGamer已报道，但无任何官方确认——一切「以泄露者转述为准」。【战略含义】若属实，这是HoYoverse首次跳出二次元美术舒适区，直接对标怪物猎人的共斗狩猎赛道。【风险】NDA测试内容随时可能大改；项目名与发售窗口均未官宣。",
+      "why_notable": "米哈游去二次元化的最大胆尝试（若泄露属实），直击怪猎共斗赛道"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "Grim Dawn · 官方数据",
+     "tags": [
+      "ARPG",
+      "资料片",
+      "长线运营"
+     ],
+     "title": "Grim Dawn新资料片20万份：十年老ARPG创2019年来最高在线峰值",
+     "en_title": "Fangs of Asterkarn has hit 200k copies sold and our highest player peaks since 2019!",
+     "full_text": "Fangs of Asterkarn has hit 200k copies sold and our highest player peaks since 2019!\n\nThank you to everyone who stepped into Grim Dawn for the first time or returned to Cairn. We wouldn't be where we are today without your passion and support! \n\nHere's to many more adventures! https://t.co/I7PErUlK8s",
+     "author": "Grim Dawn",
+     "date": "2026-08-12",
+     "likes": 905,
+     "views": 18466,
+     "link": "https://x.com/GrimDawn/status/2087600449289380326",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPilf-PXsAAz1RY.jpg"
+     },
+     "summary": "Crate Entertainment官方：Grim Dawn第三部资料片Fangs of Asterkarn（7月23日发售，$18.99）销量突破20万份，玩家峰值创2019年（Forgotten Gods资料片）以来新高。资料片新增库恩部落与Ch'thonic腐化剧情线、药水自定义、史诗装备觉醒与Ascendant挑战模式。1.8万浏览、905赞。",
+     "analysis": "",
+     "recommendation": "Grim Dawn资料片20万份，创2019年来最高峰值",
+     "game_ref": "Grim Dawn - Fangs of Asterkarn",
+     "enrichment": {
+      "game_name": "Grim Dawn - Fangs of Asterkarn",
+      "genre": "ARPG / 刷宝 / 暗黑类",
+      "developer": "Crate Entertainment",
+      "platforms": [
+       "Steam(PC)"
+      ],
+      "price": "$18.99",
+      "release_date": "已发售 · 2026年7月23日",
+      "steam_rating": "1,161条玩家评测",
+      "steam_url": "https://store.steampowered.com/app/2699230/Grim_Dawn__Fangs_of_Asterkarn/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2699230/af2e8d3a26a3d7ee1289e3d2c4b8c51d593118ab/header.jpg?t=1785339653",
+      "youtube_video": null,
+      "description": "【定位】十年老ARPG的第三部资料片：Crate坚持自研引擎、纯买断不卖数值，20万份销量证明「慢工长青」路线依然成立。【新增内容】库恩部落与Ch'thonic腐化剧情线、药水自定义系统、史诗装备觉醒、Ascendant高难度模式。【数据】发售三周20万份、玩家峰值创2019年Forgotten Gods以来新高。【对照】在POE2与最后纪元的夹击下，Grim Dawn靠资料片节奏守住硬核刷宝基本盘。【综合】中小团队长线运营的参照系：不追GaaS化，靠两年一部资料片维持社区热度。",
+      "why_notable": "十年老游戏资料片三周20万份——硬核ARPG长线运营样本"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unity · 路线图",
+     "tags": [
+      "Unity",
+      "编辑器",
+      "性能"
+     ],
+     "title": "Unity新Scene Hierarchy：百万级对象流畅处理，可自定义列",
+     "en_title": "Say goodbye to slow hierarchies! The new Scene Hierarchy handles millions of objects efficiently while introducing customizable columns, visual GameObject indicators, and horizontal scrolling",
+     "full_text": "Say goodbye to slow hierarchies!\n\nThe new Scene Hierarchy handles millions of objects efficiently while introducing customizable columns, visual GameObject indicators, and horizontal scrolling 🎮\n\n🔗 Watch the full Unity Engine Roadmap session: https://t.co/zo7Lis10vj https://t.co/dflW3pyMGE",
+     "author": "Unity for Games",
+     "date": "2026-08-12",
+     "likes": 246,
+     "views": 17701,
+     "link": "https://x.com/unitygames/status/2087644979590046120",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2087644894009397248/pu/img/RPnJpqdr8pTGLeES.jpg",
+      "video_url": "https://x.com/unitygames/status/2087644979590046120/video/1"
+     },
+     "summary": "Unity引擎路线图Session摘要：新版Scene Hierarchy可高效处理数百万对象，引入可自定义列、GameObject可视化指示器与横向滚动。官方称「告别缓慢层级面板」。1.7万浏览。",
+     "analysis": "层级面板性能是大型Unity项目的日常痛点，百万级对象支持+自定义列把编辑器体验向UE Outliner拉近——在Unity CLI（上周）与运行时更新之外，编辑器基础体验的补课对中大型团队留存更关键。",
+     "recommendation": "Unity新Scene Hierarchy：百万对象级性能+自定义列"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**Agent的harness层开战**\nDeepSeek把自家agent harness以MIT开源：「一切皆插件」，GitHub首日13.8k星；mrdoob实测Codex移植代码已「自主迭代到完成」，对比1月还需CLAUDE.md全程搀扶；Twitch默认用直播内容训练生成式AI，CPO直言「改成opt-in就没人会加入」。\n\n**AI取代编剧的第一场CEO骂战**\nSaber CEO Karch对「被ChatGPT取代」的前主编剧称「宁愿当初就用AI取代你」——Rideshare \"Stimulator\"的AI披露争议全面出圈。同周Stop Killing Games加入荷兰170万用户诉索尼数字店垄断案；漫威金刚狼定档9月15日并确认光盘完整可玩，或成索尼最后一批全光盘游戏；NCSoft借款给ArenaNet完成Guild Wars 3（2028年5月窗口）。\n\n**新游信号**\nStillsun Ark像素异星JRPG实机首曝10.4万浏览；Combolands（天际线×小丑牌）获Polygon盛赞、8月24日发售；米哈游Nodusfall泄露「怪猎式」UE5写实MMO（以泄露者转述为准）；Grim Dawn新资料片三周20万份创2019年来峰值。PCU端：锈湖新作Servant of the Lake首日峰值28,533（95%好评）、Hell Let Loose: Vietnam首日30,614。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
