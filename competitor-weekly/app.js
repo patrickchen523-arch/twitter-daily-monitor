@@ -18,7 +18,7 @@
     });
     REPORTS.sort((a,b)=>b.id.localeCompare(a.id));
 
-    const state={period:'20260803',view:'home',search:'',status:'all',sortKey:null,sortDir:-1,detailId:null,detailObservationKey:null,chartMetric:'flow',chartGranularity:'day',overviewMetric:'flow',overviewPoint:null,overviewSelected:null,reportYear:'all',reportSearch:''};
+    const state={period:'20260810',view:'home',search:'',status:'all',sortKey:null,sortDir:-1,detailId:null,detailObservationKey:null,chartMetric:'flow',chartGranularity:'day',overviewMetric:'flow',overviewPoint:null,overviewSelected:null,reportYear:'all',reportSearch:''};
     /* 周期下拉只列 periods.json 正式期且自 20260720 起（更早的正式期/归档摘要在“对比记录”入口查阅） */
     const VISIBLE_PERIODS=BASE_PERIOD_IDS.filter(k=>/^\d{8}$/.test(k)&&k>='20260720').sort().reverse();
     const GANTT_PAGE={'20260803':'gantt-20260803.html','20260727':'gantt-20260727.html','20260720':'gantt-20260720.html'};
@@ -149,7 +149,7 @@
       $$('[data-detail]').forEach(b=>b.onclick=()=>openDetail(b.dataset.detail));
     }
     /* 趋势图异动描边：本期/上期按手动确认(statusOverride)，其余周期按数据标准(±20%) */
-    const MANUAL_PERIODS=['20260803','20260727','20260720'];
+    const MANUAL_PERIODS=['20260803','20260727','20260720','20260810'];
     const trendMarked=(item,pid)=>{
       if(MANUAL_PERIODS.includes(pid))return item.statusOverride==='priority';
       const impact=priorityImpact(item,pid);
