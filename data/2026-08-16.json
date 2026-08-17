@@ -1,0 +1,457 @@
+{
+ "date": "2026-08-16",
+ "meta": {
+  "raw_count": 203,
+  "filtered_count": 168,
+  "selected_count": 12,
+  "crawl_time": "2026-08-16 10:30"
+ },
+ "lede": "Kingdom Hearts 4 定档 2027 年底：D23 新预告+Coco 新世界+动画剧集——系列首次明确窗口\nEurope Heatwave Simulator：42°C 没有空调的巴黎公寓求生 14 天——124万浏览\nLevie 评 Cursor 退出：「应用层 AI 战略的完美执行」",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Kingdom Hearts 4 定档 2027 年底：野村哲也「绝对2027年出」"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "42°C 巴黎无空调公寓求生14天：Europe Heatwave Simulator——124万浏览"
+  },
+  {
+   "section_id": "tools",
+   "item_index": 0,
+   "hook": "FireRed Faithful 2.5D：three.js 渲染层直接叠在 GBA 原版上跑"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Levie 评 Cursor 退出：「应用层 AI 战略的完美执行」，agentic coding 市场远超想象\nSolspire 公布：作者称定制引擎由 AI 以 C 语言构建，50 人联机 demo 已上线\n「删掉 Unity/Unreal/Godot 只用 Three.js」争论发酵至 22 万浏览"
+  },
+  {
+   "id": "industry",
+   "text": "Kingdom Hearts 4 定档 2027 年底：D23 新预告+Coco 新世界+动画剧集\nOblivion Remastered 登陆 Switch 2：卡带含完整游戏数据，非 Key-Card\nXbox 在澳洲强制 18+ 游戏年龄验证\nid Software 领衔抨 Xbox：「现在不可能做出 Doom 2016」"
+  },
+  {
+   "id": "indie",
+   "text": "Europe Heatwave Simulator：42°C 巴黎公寓求生 14 天——124万浏览\nScramble Knights Online 定名：FUNKTRONIC LABS 的 2D 塞尔达 MMO-lite 公测开启\nExpedition: Into Darkness：PvE 版 Dark and Darker，4人合作+永久死亡\nStonewards：矮人挖矿防守 roguelite，EA 首发 96% 好评"
+  },
+  {
+   "id": "tools",
+   "text": "FireRed Faithful 2.5D：three.js 视觉 harness 跑在 GBA 原版《火红》之上——12万浏览"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Aaron Levie · 深度解读",
+     "tags": [
+      "Cursor",
+      "SpaceX",
+      "agentic coding",
+      "市场"
+     ],
+     "title": "Levie 评 Cursor 退出：「应用层 AI 战略的完美执行」，agentic coding 市场远超所有人想象",
+     "en_title": "Amazing outcome. Cursor executed the applied AI strategy flawlessly. Most people completely underestimated the market size in AI coding. The biggest developer tool exits in history were on the order of low billions of dollars...",
+     "full_text": "Amazing outcome. Cursor executed the applied AI strategy flawlessly. \n\nMost people completely underestimated the market size in AI coding. The biggest developer tool exits in history were on the order of low billions of dollars. And it was already assumed to be a heavily competitive and somewhat saturated space when they really got going.\n\nMultiple mental models shattered near instantly. The market sizes for agentic coding was far larger than most realized. There was actually tons and tons of room to innovate between the user and the underlying model, and even on the model itself.\n\nCursor provided out the applied AI playbook by figuring out the right product shape for agentic coding work, acting as a neutral layer between models and the workflows, post training models for the areas that make most sense to drive down costs or improve performance, building out the right infra stack for the...",
+     "author": "Aaron Levie",
+     "date": "2026-08-15",
+     "likes": 485,
+     "views": 81291,
+     "link": "https://x.com/levie/status/2088476232933577124",
+     "media": null,
+     "summary": "Box CEO Aaron Levie 对 Cursor 并入 SpaceXAI 给出重磅解读：「惊人的结局，Cursor 把应用层 AI 战略执行得完美无缺」。核心判断：①所有人完全低估了 AI 编程的市场规模——此前开发者工具史上最大的退出也就数十亿美元级，且当时被认为已是竞争激烈的饱和市场；②多个心智模型瞬间崩塌——agentic coding 的市场远比想象大；③Cursor 写出了应用层 AI 的教科书打法：找对 agentic coding 的产品形态、做模型与工作流之间的中立层、在最有意义的环节做后训练降本增效、搭对 infra 栈。8.1万浏览。",
+     "analysis": "这是 Cursor 收购案目前最有价值的复盘——Levie 把「为什么一个 IDE 值得 SpaceX 收编」讲清楚了：模型层与应用层之间存在巨大的创新空间，谁卡住这个位置谁就吃到比「开发者工具」大几个数量级的市场。对游戏行业的镜像启示：游戏引擎与 AI 之间的「中立工作流层」同样是被低估的位置——无论是 NPC 编排还是资产生成，做「模型之上的工作流」可能比做模型本身更值钱。",
+     "recommendation": "Levie 复盘 Cursor：模型与工作流之间的中立层最值钱",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "kalin · 项目公布",
+     "tags": [
+      "Solspire",
+      "AI编程",
+      "自研引擎",
+      "开放世界"
+     ],
+     "title": "Solspire 公布：作者称定制引擎由 AI 以 C 语言构建，1000+ 敌人同屏、50 人联机",
+     "en_title": "announcing solspire - a massive open-world D&D-like rpg sandbox... custom game engine built in C by gpt-sol, ultra-high performance custom renderer, dynamic lighting, and massive draw distance, and handles 1000+ enemies fighting no sweat",
+     "full_text": "announcing solspire - a massive open-world D&D-like rpg sandbox. travel the long and arduous journey to reach the solspire\n\ncustom game engine built in C by gpt-sol, ultra-high performance custom renderer, dynamic lighting, and massive draw distance, and handles 1000+ enemies fighting no sweat\n\noh and full steam multiplayer (probably can host about 50 players on a typical PC)\n\nstill some work in progress, but playable demo build live now",
+     "author": "kalin",
+     "date": "2026-08-15",
+     "likes": 21,
+     "views": 579,
+     "link": "https://x.com/kalin_t/status/2088630539934970252",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088304171527368704/img/vrHJpaEm5GG0Fz0A.jpg",
+      "video_url": "https://x.com/kalin_t/status/2088630539934970252/video/1"
+     },
+     "summary": "开发者 kalin 公布 Solspire：大型开放世界 D&D 式 RPG 沙盒，目标是长途跋涉抵达 Solspire。作者称定制引擎由 AI（gpt-sol）以 C 语言构建：自研高性能渲染器、动态光照、超大绘制距离，1000+ 敌人同屏战斗无压力；带完整 Steam 多人联机，普通 PC 约可承载 50 人。项目仍在开发中，可玩 demo 已上线（Steam 页面 5024320 已存在）。",
+     "analysis": "本周 AI 编程线从口号进入实物：mrdoob 的「Codex 自主迭代完成移植」是能力叙事，Solspire 则是「AI 写整个 C 引擎」的可玩实体——开放世界、50 人联机、千人同屏，且 demo 已可下载验证。如果属实，这将是「AI 编写底层引擎」目前最硬核的公开案例；引擎代码质量与可维护性尚待检验，但作为能力证据链的一环，它比任何争论都有说服力。",
+     "recommendation": "Solspire：AI 编写 C 引擎的开放世界 demo 已可玩",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "GameFX.AI · 观点争论",
+     "tags": [
+      "Three.js",
+      "AI游戏开发",
+      "引擎",
+      "争论"
+     ],
+     "title": "「删掉 Unity/Unreal/Godot，AI 时代只用 Three.js」争论持续发酵——22万浏览",
+     "en_title": "Want to make a game with AI? Delete Unity. Delete Unreal. Delete Godot. They were never designed for AI to work with. Use Three.js instead. LLMs suck at heavy engine UIs, but they excel at writing WebGL -> playable browser link in 30 seconds.",
+     "full_text": "Want to make a game with AI? \n\nDelete Unity. \nDelete Unreal. \nDelete Godot. \n\nThey were never designed for AI to work with. Use Three.js instead.  LLMs suck at heavy engine UIs, but they excel at writing WebGL -> playable browser link in 30 seconds.",
+     "author": "GameFX.AI",
+     "date": "2026-08-13",
+     "likes": 1813,
+     "views": 220384,
+     "link": "https://x.com/GamefxAI/status/2088046404623016440",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088046082420879360/img/kUpl4OCDOhN7Bk_K.jpg",
+      "video_url": "https://x.com/GamefxAI/status/2088046404623016440/video/1"
+     },
+     "summary": "「想用 AI 做游戏？删掉 Unity、删掉 Unreal、删掉 Godot——它们从设计上就不是为 AI 协作准备的。用 Three.js：LLM 搞不定重型引擎 UI，但写 WebGL 很行——30 秒就能给你一个可玩的浏览器链接。」该观点两日内在推上持续发酵，浏览从 14 万增至 22 万，170 条评论形成大争论。",
+     "analysis": "这则暴论的价值不在结论而在它逼出的讨论：AI 协作时代的工具链选型标准正在从「人用着顺不顺」变成「模型写不写得了」。Web 技术栈（Three.js/WebGL）凭借纯文本、无 IDE 依赖、即时可验证成为 vibecoding 派事实标准；反方论据也很明确——商业化游戏需要的性能、平台适配与工作流深度远非 demo 级 WebGL 能覆盖。对团队的实用结论：原型验证走 Web，正式项目仍回引擎，两者不矛盾。",
+     "recommendation": "「删引擎用Three.js」争论：AI协作时代的工具选型标准之争",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "The Game Awards+Eurogamer · D23",
+     "tags": [
+      "Kingdom Hearts 4",
+      "D23",
+      "Square Enix",
+      "迪士尼"
+     ],
+     "title": "Kingdom Hearts 4 定档 2027 年底：D23 新预告+Coco 新世界+动画剧集——系列首次明确窗口",
+     "en_title": "Kingdom Hearts 4 ships in late 2027. As announced at D23.",
+     "full_text": "Kingdom Hearts 4 ships in late 2027. As announced at D23.",
+     "author": "The Game Awards / Eurogamer / Polygon",
+     "date": "2026-08-15",
+     "likes": 4754,
+     "views": 96383,
+     "link": "https://x.com/thegameawards/status/2088460761337417750",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088460711727181824/img/ePSNh58BDvRfmsX4.jpg",
+      "video_url": "https://x.com/geoffkeighley/status/2088460711727181824/video/1"
+     },
+     "summary": "迪士尼 D23 2026 展会上，Square Enix 通过新预告确认 Kingdom Hearts 4 将于 2027 年底发售，登陆 Switch 2/PS5/Xbox Series X|S/PC——恰好卡在系列西方 25 周年节点。这是系列首次给出明确时间窗口，此前只有野村哲也反复表示「开发顺利」。AUTOMATON 报道野村直接断言「绝对 2027 年出」。同场还公布：首个新世界之一取材自皮克斯《寻梦环游记（Coco）》；Kingdom Hearts 动画剧集将登陆 Disney+ 与迪士尼频道，野村暗示自己在剧集中扮演的角色「让想象力自由驰骋」。Geoff Keighley 发布的预告片单条转发破 1 万。KH4 开启新故事线「失落大师篇（Lost Master Arc）」，主舞台为东京风真实系城市 Quadratum。",
+     "analysis": "「定档」本身就是新闻：KH 系列以跳票与不确定性著称，这次直接绑定 25 周年给出硬性窗口，说明 Square Enix 对开发进度有了真正的把握。商业上的组合拳也很典型——游戏定档 + 动画剧集 + 新世界预告同步放出，把 D23 的迪士尼流量一次性转化为 IP 热度。另外同场 Square Enix 正式否认 KH 合集宣传素材使用生成式 AI（「均为开发团队制作，问题是人为失误」），AI 声明正在成为大厂标配动作。",
+     "recommendation": "KH4 定档2027年底：系列首次明确窗口+动画剧集同步",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "GameSpot · 平台/实体",
+     "tags": [
+      "Oblivion",
+      "Switch2",
+      "实体版",
+      "Key-Card"
+     ],
+     "title": "Oblivion Remastered 登陆 Switch 2：卡带内含完整游戏数据，不是 Key-Card",
+     "en_title": "Over a year after shadow dropping on most consoles in Spring 2025, The Elder Scrolls IV: Oblivion Remastered has made the jump to Nintendo Switch 2... the Switch 2 release includes the full game data on the cartridge– it is not a Game Key-Card release.",
+     "full_text": "Over a year after shadow dropping on most consoles in Spring 2025, The Elder Scrolls IV: Oblivion Remastered has made the jump to Nintendo Switch 2.  \n\nThe Switch 2 version of Oblivion Remastered will include all the same content as the other platforms, and there will be a $60 physical Deluxe Edition that adds in additional weapons, armor, and other cosmetics.\n\nMore importantly, the Switch 2 release includes the full game data on the cartridge– it is not a Game Key-Card release.",
+     "author": "GameSpot",
+     "date": "2026-08-14",
+     "likes": 382,
+     "views": 74527,
+     "link": "https://x.com/GameSpot/status/2088330017365233743",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPs9EQXXwAAi7u8.jpg"
+     },
+     "summary": "2025 年春在其他平台突然发售的《上古卷轴4：湮灭 重制版》正式登陆 Switch 2，内容与其他平台完全一致，另有 $60 实体豪华版（追加武器、护甲与装饰）。GameSpot 特别强调：Switch 2 版卡带内含完整游戏数据——不是只含下载密钥的 Game Key-Card。7.5万浏览。",
+     "analysis": "在 Switch 2 大量第三方游戏采用 Key-Card（卡带只是下载凭证）的背景下，「完整数据卡带」成了值得媒体报道的卖点——这本身就是本周「数字所有权」主线的延伸。金刚狼光盘完整可玩、Oblivion 完整卡带，实体载体的「离线可用性」正在重新成为发行商的宣传词；反过来，前 Square Enix 高管同日称「砍掉 PS 光盘可让 PS Store 游戏更便宜」——实体与数字的定价博弈本周每天都在更新。",
+     "recommendation": "Oblivion Switch2 卡带含完整数据：非Key-Card成卖点",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 平台政策",
+     "tags": [
+      "Xbox",
+      "年龄验证",
+      "澳大利亚",
+      "合规"
+     ],
+     "title": "Xbox 在澳洲强制 18+ 游戏年龄验证：已购游戏不受影响",
+     "en_title": "Xbox now requires Australians to prove their age to access games rated 18+, though \"games you already own won't be affected\".",
+     "full_text": "Xbox now requires Australians to prove their age to access games rated 18+, though \"games you already own won't be affected\".",
+     "author": "Eurogamer",
+     "date": "2026-08-15",
+     "likes": 21,
+     "views": 11675,
+     "link": "https://x.com/eurogamer/status/2088513793856852467",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPvkNhDXUAAvE_4.jpg"
+     },
+     "summary": "Xbox 开始在澳大利亚要求玩家验证年龄才能访问 18+ 分级游戏，官方安抚称「你已经拥有的游戏不受影响」。1.2万浏览。",
+     "analysis": "澳大利亚是全球「儿童在线安全」立法最激进的市场之一（Roblox 同样在被澳方盯上），平台分级准入正在从「自律」转向「强制验证」。对出海团队：澳洲、英国、美国多州正在形成年龄验证的合规网络，含成人分级内容的产品需要提前设计验证流程，否则面临渠道级下架风险。",
+     "recommendation": "Xbox 澳洲强制18+年龄验证：合规网正在收紧",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 创作者批评",
+     "tags": [
+      "Xbox",
+      "id Software",
+      "Doom",
+      "3A危机"
+     ],
+     "title": "id Software 领衔开发者抨击 Xbox：「他们不懂艺术，现在不可能做出 Doom 2016」",
+     "en_title": "\"They don't understand art\" - id Software lead slams Xbox, says it's \"impossible\" to make games like 2016's Doom now.",
+     "full_text": "\"They don't understand art\" - id Software lead slams Xbox, says it's \"impossible\" to make games like 2016's Doom now.",
+     "author": "Eurogamer",
+     "date": "2026-08-15",
+     "likes": 20,
+     "views": 4933,
+     "link": "https://x.com/eurogamer/status/2088634590726324533",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPxSE0WWkAANyPQ.jpg"
+     },
+     "summary": "Eurogamer 报道：id Software 的领衔开发者公开抨击 Xbox 管理层「不懂艺术」，并直言在当下的 Xbox 体系里「不可能再做出 Doom 2016 这样的游戏」。这是 Xbox 大重组（3200 人裁员、四大工作室出走、士气低落）报道以来，创作者侧最激烈的一次公开发声。",
+     "analysis": "裁员数字之外，这条新闻呈现了重组的「创意成本」：当核心创作者公开说「这个体系做不出我们曾经的代表作」，对 Xbox 第一方管线的长期伤害远大于短期财报。对比同日「Blizzard 是微软表现最佳工作室」的分析——Xbox 体系内服务型游戏（Diablo/OW）盈利与单机创意失血并存，正是 Asha Sharma 重组要解决的结构性矛盾。",
+     "recommendation": "id元老抨Xbox「不懂艺术」：重组的创意成本开始显形",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Indie Game Joe · 病毒传播",
+     "tags": [
+      "Europe Heatwave Simulator",
+      "生存喜剧",
+      "PSX",
+      "爆款"
+     ],
+     "title": "Europe Heatwave Simulator：42°C 没有空调的巴黎公寓求生 14 天——124万浏览",
+     "en_title": "It's 42°C and you have no air conditioning because you live in Europe. Survive 14 days in a Paris flat. Bake by day or get devoured by night. Scalpers sell a €9 fan for €240.",
+     "full_text": "It's 42°C and you have no air conditioning because you live in Europe\n\n- Survive 14 days in a Paris flat\n- Bake by day or get devoured by night\n- Scalpers sell a €9 fan for €240\n\nGame is Europe Heatwave Simulator",
+     "author": "Indie Game Joe",
+     "date": "2026-08-14",
+     "likes": 28920,
+     "views": 1244586,
+     "link": "https://x.com/IndieGameJoe/status/2088356443833373041",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088355203221221376/img/73lV6E7fA90_p3Vt.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2088356443833373041/video/1"
+     },
+     "summary": "Indie Game Joe 推介的《Europe Heatwave Simulator》成为本周最大爆款概念：42°C 的欧洲没有空调，在巴黎单间公寓里挺过 14 天热浪——白天被烤熟、晚上被吞噬、黄牛把 €9 的风扇炒到 €240。124万浏览、28,920赞、1,872转发。",
+     "analysis": "",
+     "recommendation": "42°C巴黎无空调求生14天：本周最疯的独游概念——124万浏览",
+     "featured": true,
+     "game_ref": "Europe Heatwave Simulator",
+     "enrichment": {
+      "game_name": "Europe Heatwave Simulator",
+      "genre": "生存喜剧 / 模拟 / PSX 复古",
+      "developer": "Bluehood Games（独立团队，自发行）",
+      "platforms": ["Steam"],
+      "price": "$3.99",
+      "release_date": "已发售 · 2026年7月21日",
+      "steam_rating": "好评中（评测数较少）",
+      "steam_url": "https://store.steampowered.com/app/4910780/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4910780/8fb53dd813efa270b08dc49d2d008c302c250cf4/header.jpg?t=1784656312",
+      "youtube_video": null,
+      "description": "「热浪结束了，女房东还在。」\n\n【核心玩法】PSX 复古画风的生存喜剧：在巴黎单间公寓里撑过 14 天极端热浪。白天为远程工作「在镜头前融化」，晚上提防某种会吞噬你的东西；抢购最后一台打折空调、在风扇拍卖上输给黄牛、每周日还要交房租。\n\n【美术与氛围】90 年代 PSX 低多边形 + 欧洲夏天无空调的真实生活怨念，把「气候焦虑」做成黑色幽默。\n\n【优势】题材自带社会话题（欧洲热浪+无空调+远程办公），$3.99 超低门槛；社媒切片传播力极强。\n【不足】小品级体量；「梗游戏」生命周期依赖传播热度。\n\n【综合】「把真实生活痛点做成生存游戏」的教科书案例——Indie Game Joe 单条推文 124 万浏览，验证了题材共鸣远比美术规格重要。",
+      "why_notable": "真实生活怨念做成生存喜剧：124万浏览的题材共鸣教科书"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "FUNKTRONIC LABS · 官方公布",
+     "tags": [
+      "Scramble Knights Online",
+      "MMO-lite",
+      "塞尔达",
+      "公测"
+     ],
+     "title": "Scramble Knights Online 定名：FUNKTRONIC LABS 的 2D 塞尔达 MMO-lite 公测开启，EA 年内",
+     "en_title": "The Open Beta for our Zelda-inspired MMO-lite is now live! Early Access coming this year 🐔 Play Scramble Knights Online on Steam now 👇",
+     "full_text": "The Open Beta for our Zelda-inspired MMO-lite is now live! \n\nEarly Access coming this year 🐔\n\nPlay Scramble Knights Online on Steam now 👇",
+     "author": "FUNKTRONIC LABS",
+     "date": "2026-08-14",
+     "likes": 1745,
+     "views": 96627,
+     "link": "https://x.com/funktroniclabs/status/2088329741514281337",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088327335413981184/img/7Va0p-x7tN5AYU0E.jpg",
+      "video_url": "https://x.com/funktroniclabs/status/2088329741514281337/video/1"
+     },
+     "summary": "FUNKTRONIC LABS 昨日预告的「2D 塞尔达启发 MMO-lite」今日正式定名《Scramble Knights Online》并开启公测：玩家以见习骑士身份探索共享在线王国 Terracott，组队征服地牢、讨伐怪物、发现稀有战利品，回家锻造强力装备再出发。Early Access 将于今年内推出。9.7万浏览、1,745赞。",
+     "analysis": "",
+     "recommendation": "Scramble Knights Online 公测开启：2D塞尔达风MMO-lite",
+     "featured": true,
+     "game_ref": "Scramble Knights Online",
+     "enrichment": {
+      "game_name": "Scramble Knights Online",
+      "genre": "动作 RPG / MMO-lite / 冒险",
+      "developer": "Funktronic Labs（自发行）",
+      "platforms": ["Steam"],
+      "price": "未公布",
+      "release_date": "2026 年 Q4（EA）；公测已开启",
+      "steam_rating": "未发售（公测报名中）",
+      "steam_url": "https://store.steampowered.com/app/2379350/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379350/1be9dae53e1a8f292570c4cbd7214e2246ff3a13/header.jpg?t=1786731547",
+      "youtube_video": null,
+      "description": "2D 塞尔达式冒险 × 轻量 MMO 的共享王国。\n\n【核心玩法】以见习骑士身份在共享在线王国 Terracott 冒险：组队刷地牢、打怪、捡稀有掉落，回城锻造装备后再出发——「冒险-锻造-再冒险」的循环。\n\n【美术与氛围】明快 2D 卡通动作风，俯视角塞尔达式探索框架，叠加 MMO 的同屏社交感。\n\n【优势】「2D 塞尔达 × MMO-lite」组合稀缺；公测免费门槛利于快速积累种子用户；Funktronic 一贯的手感打磨。\n【不足】MMO-lite 的长期内容消耗与服务器成本压力；EA 前留存待验证。\n\n【综合】本周最值得亲手试玩的公测新作，「共享世界轻 MMO」方向的近期样本。",
+      "why_notable": "昨日预告今日公测落地，2D塞尔达×MMO-lite 罕见组合"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "スチまと · 日本区热传",
+     "tags": [
+      "Expedition: Into Darkness",
+      "撤离",
+      "合作",
+      "永久死亡"
+     ],
+     "title": "Expedition: Into Darkness：PvE 版「Dark and Darker」，4人合作地牢撤离+永久死亡——43.8万浏览",
+     "en_title": "死んだら「キャラごと消滅」する迷宮、対人戦よりタチ悪いだろ。『Dark and Darker』から対人戦だけ抜いた感じで、中世の遺跡を探索する最大4人協力の脱出ゲー。",
+     "full_text": "死んだら「キャラごと消滅」する迷宮、対人戦よりタチ悪いだろ。\n\n『Dark and Darker』から対人戦だけ抜いた感じで、中世の遺跡を探索する最大4人協力の脱出ゲー。ただし、一度の死で育成したキャラも持ち物もすべて失う理不尽システムが組み込まれてる。PvPを排除してダチとのサバイバルに特化してるのに、ワンミスで全部消し飛ぶヒリヒリ感で確実に精神が削り取られそう。",
+     "author": "スチまと",
+     "date": "2026-08-15",
+     "likes": 2800,
+     "views": 438102,
+     "link": "https://x.com/stmatomato/status/2088460167125913632",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088451099032465408/img/KmBrjmi8XdiNZVmw.jpg",
+      "video_url": "https://x.com/stmatomato/status/2088460167125913632/video/1"
+     },
+     "summary": "日本 Steam 情报账号 スチまと 推介《Expedition: Into Darkness》：「像从 Dark and Darker 里只抽掉 PvP」——最多 4 人合作探索中世纪遗迹的撤离游戏，但内置「一次死亡，培养的角色和持有物全部消失」的理不尽系统。「排除了 PvP、专注和朋友生存，结果一次失误全灭的紧张感肯定更削人」。43.8万浏览、2,800赞。",
+     "analysis": "",
+     "recommendation": "PvE版Dark and Darker：死一次角色物品全消——43.8万浏览",
+     "featured": false,
+     "game_ref": "Expedition: Into Darkness",
+     "enrichment": {
+      "game_name": "Expedition: Into Darkness",
+      "genre": "PvE 合作撤离 / 地牢探索 / 动作 RPG",
+      "developer": "Antediluvian Interactive（独立团队，自发行）",
+      "platforms": ["Steam"],
+      "price": "未公布",
+      "release_date": "2026 年 Q4",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3126410/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3126410/0233c9a45c9fa2476edb19145a9ea2a2f1365502/header_alt_assets_2.jpg?t=1786121239",
+      "youtube_video": null,
+      "description": "把 Dark and Darker 的 PvP 抽掉，把压力全加回 PvE。\n\n【核心玩法】最多 4 人合作的中世纪地牢撤离寻宝：打造武器、定制装备、深入禁地，活着把战利品带出来——或者失去随身携带的一切。角色死亡即连人带装备永久消失。\n\n【美术与氛围】阴郁中世纪遗迹风，主打「一次失误全部消し飛ぶ」的高压撤离体验。\n\n【优势】PvE 撤离填补了「想要撤离紧张感但不想被玩家蹲」的需求空档；永久死亡是天然的直播/传播素材。\n【不足】永久死亡对休闲玩家的劝退风险；撤离品类已有强敌环伺。\n\n【综合】日本区 43.8 万浏览证明「理不尽系统」本身就是卖点——撤离品类的 PvE 化值得持续观察。",
+      "why_notable": "撤离玩法 PvE 化 + 角色永久死亡，日本区病毒式传播"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "AUTOMATON · 发售报道",
+     "tags": [
+      "Stonewards",
+      "roguelite",
+      "合作防守",
+      "矮人"
+     ],
+     "title": "Stonewards：矮人挖矿防守 roguelite EA 首发 96% 好评，demo 曾破 10 万愿望单",
+     "en_title": "最大4人協力・鉱山防衛ローグライトアクション『Stonewards』前評判どおりの好評スタート。防衛の合間にせせと採掘、休む暇なしドワーフの大群魔物しばき",
+     "full_text": "【ニュース】最大4人協力・鉱山防衛ローグライトアクション『Stonewards』前評判どおりの好評スタート。防衛の合間にせせと採掘、休む暇なしドワーフの大群魔物しばき",
+     "author": "AUTOMATON（オートマトン）",
+     "date": "2026-08-15",
+     "likes": 1796,
+     "views": 274279,
+     "link": "https://x.com/AUTOMATONJapan/status/2088483194631057613",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088483146807619584/img/lyz2j4Bp8jzfWHPO.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2088483194631057613/video/1"
+     },
+     "summary": "AUTOMATON 报道 Banana Tiger Studio 的《Stonewards》8 月 12 日开启 Steam 抢先体验后「如前評判一样好评起步」：约 260 篇评测 96% 好评「非常に好評」。第一人称 roguelite 动作，单人或最多 4 人联机；几分钟一波的敌人攻势之间钻进矿山深挖——越深矿石越稀有，回城熔炼随机装备。6 月 Next Fest demo 好评如潮、愿望单破 10 万。EA 计划 9 个月至 1 年，正式版将小幅涨价；现发售纪念 9 折约 ¥1215（8/26 前）。27.4万浏览。",
+     "analysis": "",
+     "recommendation": "Stonewards EA首发96%好评：挖矿与守城两头烧的矮人roguelite",
+     "featured": false,
+     "game_ref": "Stonewards",
+     "enrichment": {
+      "game_name": "Stonewards",
+      "genre": "第一人称 roguelite / 合作防守 / 采矿",
+      "developer": "Banana Tiger Studio（独立团队，自发行）",
+      "platforms": ["Steam（含日语支持）"],
+      "price": "$8.99",
+      "release_date": "已发售（EA） · 2026年8月11日",
+      "steam_rating": "96% 好评（约 344 篇评测）",
+      "steam_url": "https://store.steampowered.com/app/4502710/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4502710/c57ab526296dfdab54cbc5aa2b93bc1fb46f5acd/header.jpg?t=1786868537",
+      "youtube_video": null,
+      "description": "「挖矿」与「守城」两头烧的忙碌循环。\n\n【核心玩法】第一人称 roguelite 防守：数分钟一波的魔物攻城间隙，钻进自动生成的矿山深挖稀有矿石，回城熔炼成随机装备。挖得太深会错过回防时机——时间分配本身就是核心张力。\n\n【合作设计】4 人联机可分工：挖矿特化、跑图搬运、战斗担当，或全员乱成一团什么都干。\n\n【优势】demo 期 10 万愿望单已验证玩法；96% 好评起步；EA 路线图明确（新武器/配方/地图/Boss）。\n【不足】第一人称防守的操作门槛；波次重复度需在 EA 期解决。\n\n【综合】Next Fest demo → 愿望单 → EA 好评的教科书式独游发售路径，Deep Rock Galactic 式矮人挖矿基因的又一成功变体。",
+      "why_notable": "demo 10万愿望单转化 EA 96% 好评，独游发售路径样本"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Boji · 技术模组",
+     "tags": [
+      "Three.js",
+      "宝可梦",
+      "2.5D",
+      "Mod"
+     ],
+     "title": "FireRed Faithful 2.5D：three.js 视觉 harness 直接跑在 GBA 原版《火红》之上——12万浏览",
+     "en_title": "FireRed Faithful 2.5D - A visual harness mod made with @threejs that runs *on top* of your existing FireRed game.",
+     "full_text": "FireRed Faithful 2.5D - A visual harness mod made with @threejs that runs *on top* of your existing FireRed game.",
+     "author": "Boji",
+     "date": "2026-08-14",
+     "likes": 3009,
+     "views": 120583,
+     "link": "https://x.com/itsboji_/status/2088326952738267415",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088326756625260544/img/XqrrqqcoXqcbyJH1.jpg",
+      "video_url": "https://x.com/itsboji_/status/2088326952738267415/video/1"
+     },
+     "summary": "开发者 Boji 发布 FireRed Faithful 2.5D：用 three.js 制作的视觉 harness mod——不重写游戏，而是直接叠加在你现有的 GBA《宝可梦 火红》游戏之上运行，把原版画面实时升级为 2.5D。12万浏览、3,009赞、278转发。",
+     "analysis": "「harness」这个词从 agent 圈溢出到了游戏模组圈：不改游戏本体，而是包一层渲染/逻辑外壳——这正是本周 DeepSeek Harness、「删引擎用 Three.js」争论之外的第三条同构线索。对重制/高清化团队的启示：「叠加层」思路让原版逻辑保持权威（兼容、存档、规则全不变），只升级表现层，是低风险怀旧现代化的技术范式。",
+     "recommendation": "FireRed 2.5D：three.js 渲染层叠在GBA原版上跑——12万浏览",
+     "featured": true
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**Kingdom Hearts 4 定档 2027 年底**\nD23 展会放出 KH4 新预告并首次给出明确窗口：2027 年底登陆 Switch 2/PS5/XSX/PC，正好卡位系列 25 周年；野村哲也断言「绝对 2027 年出」。同场公布 Coco 主题新世界与 Disney+ 动画剧集。同日 Oblivion Remastered 登陆 Switch 2，卡带内含完整游戏数据而非 Key-Card——本周「数字所有权」主线上的实体版胜利；Xbox 在澳洲强制 18+ 年龄验证、id Software 元老抨击 Xbox「不懂艺术」。\n\n**Levie 复盘 Cursor：agentic coding 市场远超想象**\n「开发者工具史上最大退出不过数十亿美元，而 Cursor 彻底打破天花板」——Cursor 的 playbook 是做模型与工作流之间的中立层。同日主推上「删掉 Unity/Unreal/Godot 只用 Three.js」的暴论发酵至 22 万浏览；更实的证据是 Solspire：作者称定制引擎由 AI 以 C 语言编写，千人同屏、50 人联机的开放世界 demo 已上线 Steam。\n\n**本周最大独游概念：42°C 巴黎公寓求生**\nEurope Heatwave Simulator 单条推文 124 万浏览——白天被烤、晚上被吞噬、黄牛把 €9 风扇炒到 €240 的 PSX 生存喜剧，已发售仅 $3.99。FUNKTRONIC LABS 的 2D 塞尔达 MMO-lite 定名 Scramble Knights Online 并开启公测；PvE 版「Dark and Darker」Expedition: Into Darkness 以「死一次全消」的理不尽系统在日本区获 43.8 万浏览；Stonewards EA 首发 96% 好评。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
