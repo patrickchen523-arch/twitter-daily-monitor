@@ -1,0 +1,484 @@
+{
+ "date": "2026-08-17",
+ "meta": {
+  "raw_count": 184,
+  "filtered_count": 154,
+  "selected_count": 12,
+  "crawl_time": "2026-08-17 18:30"
+ },
+ "lede": "AI 模型大战《帝国时代 II》：Claude Fable vs GPT 5.6 Sol vs Gemini 3.1 Pro vs Kimi K3——10万浏览\nXbox CEO 试玩《上古卷轴6》遭工会充气老鼠「阻击」：166 面小旗纪念被裁员工\nTides of Annihilation 新 Boss 实机：圆桌骑士双套召唤切换连击",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "四大模型在《帝国时代 II》里写 bot 对战：Claude vs GPT vs Gemini vs Kimi"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 1,
+   "hook": "Xbox CEO 试玩上古卷轴6，门口立着工会的巨型充气老鼠"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "Tides of Annihilation：亚瑟王×埃及×中日神话的骑士召唤连击"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "AI 模型大战《帝国时代 II》：Claude Fable vs GPT 5.6 Sol vs Gemini 3.1 Pro vs Kimi K3\nClaude 通过 MCP 直连 Blender：一条 prompt 建完整奇幻场景，崩溃后自动从存档点重建\nLevie：AI 支出远未见顶，头部 1% 公司每人每月 AI 花费 $7,500"
+  },
+  {
+   "id": "industry",
+   "text": "CDPR 确认 Project Sirius 裁员：9 人离开、9 人转岗，巫师多人 spin-off 战略收缩\nXbox CEO 试玩《上古卷轴6》遭工会充气老鼠「阻击」：166 面小旗纪念被裁员工\n《羊蹄山之魂》完全版年内登陆 PS5：新剧情+roguelike 生存模式\nFortnite 下赛季游戏主题大联动：索尼克/Joker/俄罗斯方块/洛克人等"
+  },
+  {
+   "id": "indie",
+   "text": "Tides of Annihilation 新 Boss 实机：圆桌骑士双套召唤切换连击——9.3万浏览\nDungeon Picnic：RPG×roguelike×组队构建，4 位像素女主下本——18.8万浏览\nWoo Woo：鬼屋清扫恐怖 roguelike，「午夜前不打扫完就被爸爸吃掉」\nThe Road：5 人合作恐怖驾驶，「神器回收计划」"
+  },
+  {
+   "id": "tools",
+   "text": "Asemulator v1.0.0 定档 8月28日：在 Aseprite 里直接预览/测试角色动画——63.5万浏览\nAndrew Price：为什么你不能在 Blender 里渲染宝可梦卡牌——37.7万浏览"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Max（Emergent Garden） · AI 对战实验",
+     "tags": [
+      "帝国时代2",
+      "多模型对战",
+      "Agent",
+      "benchmark"
+     ],
+     "title": "AI 模型大战《帝国时代 II》：Claude Fable vs GPT 5.6 Sol vs Gemini 3.1 Pro vs Kimi K3",
+     "en_title": "AI Agents play Age of Empires II. Claude fable vs GPT 5.6 Sol vs Gemini 3.1 Pro vs Kimi K3. I had each model in open code script custom bots for the game using the built-in bot scripting language. Then I had them fight :D",
+     "full_text": "AI Agents play Age of Empires II. \n\nClaude fable vs GPT 5.6 Sol vs Gemini 3.1 Pro vs Kimi K3.  \n\nI had each model in open code script custom bots for the game using the built-in bot scripting language. Then I had them fight :D",
+     "author": "Max | Emergent Garden",
+     "date": "2026-08-15",
+     "likes": 751,
+     "views": 100149,
+     "link": "https://x.com/max_romana/status/2088664886171640118",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088663944336384000/img/GyR2cAy4gE_APcsE.jpg",
+      "video_url": "https://x.com/max_romana/status/2088664886171640118/video/1"
+     },
+     "summary": "Emergent Garden 的 Max 让四个模型在《帝国时代 II》里真刀真枪对战：Claude Fable、GPT 5.6 Sol、Gemini 3.1 Pro、Kimi K3 各自用游戏内置的 bot 脚本语言编写定制 AI bot，然后直接开战。10万浏览、44 条评论。",
+     "analysis": "「模型竞技场」从抽象 benchmark 走向真实 RTS 对抗——帝国时代 II 的经济调度、兵种克制与多线操作对长程规划能力的要求远高于文本任务，四家模型的差异会以可视化的方式呈现。对游戏从业者这是双重信号：①游戏正在成为公众理解 AI 能力的首选媒介；②「开放 bot 脚本接口」对老游戏来说是零成本的 AI 时代入场券。",
+     "recommendation": "四大模型在帝国时代2写bot对战：最游戏性的AI能力展示",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Abyssal · AI 3D 工作流",
+     "tags": [
+      "Claude",
+      "Blender",
+      "MCP",
+      "3D"
+     ],
+     "title": "Claude 通过 MCP 直连 Blender：一条 prompt 建完整奇幻场景，崩溃后自动从存档点重建继续",
+     "en_title": "CLAUDE BUILDS A FULL FANTASY ENVIRONMENT IN ONE PROMPT. Claude opens Blender through MCP... Then Blender crashes on heavy volumetrics. Claude rebuilds the entire scene from the last good state and keeps going.",
+     "full_text": "CLAUDE BUILDS A FULL FANTASY ENVIRONMENT IN ONE PROMPT\n\nClaude opens Blender through MCP\n\n> Ruined stone courtyard\n> Broken walls\n> Stairs\n> Pillars\n> Rubble\n> Plants\n> Torches\n> Glowing portal\n\nThen Blender crashes on heavy volumetrics.\n\nClaude rebuilds the entire scene from the last good state and keeps going.\n\nNo concept art. \nNo manual modeling. \nJust Claude controlling the real .blend file",
+     "author": "Abyssal",
+     "date": "2026-08-15",
+     "likes": 129,
+     "views": 13902,
+     "link": "https://x.com/abyssallD/status/2088592841933005259",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088573034923765760/img/npGOa9DGPJg5NYB6.jpg",
+      "video_url": "https://x.com/abyssallD/status/2088592841933005259/video/1"
+     },
+     "summary": "Abyssal 展示 Claude 通过 MCP 直接操作真实 .blend 文件：一条 prompt 建起完整奇幻场景——废墟石庭、断墙、台阶、立柱、碎石、植物、火把、发光传送门。最戏剧性的一幕：Blender 在重型体积雾下崩溃，Claude 从最后一个可用状态自动重建整个场景并继续推进。无概念图、无手工建模。1.4万浏览。",
+     "analysis": "这条视频的真正看点不是「一条 prompt 出场景」，而是崩溃恢复——agent 在宿主软件崩溃后能从最近可用状态自愈继续，这是 MCP 工具链走向生产环境的关键能力。对 3D 美术管线：DCC 软件的 MCP 接口正在从玩具变成可用工具，场景白盒/氛围稿环节的自动化窗口已经打开。",
+     "recommendation": "Claude MCP 直连 Blender：崩溃后自动从存档点重建——容错是亮点",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Aaron Levie · AI 支出数据",
+     "tags": [
+      "AI支出",
+      "企业采用",
+      "Box"
+     ],
+     "title": "Levie：AI 支出远未见顶——头部 1% 公司每人每月 AI 花费 $7,500",
+     "en_title": "AI spend is nowhere close to hitting any walls... the top 1% spending $7,500/mo and top 10% spending $660/mo per employee on AI. And what the top 10% is doing today may easily be what the top 50% is doing in 3 years from now.",
+     "full_text": "AI spend is nowhere close to hitting any walls. Obviously this data is weighted toward engineering-centric companies, with the top 1% spending $7,500/mo and top 10% spending $660/mo per employee on AI. But the general trend of continued exponential growth is occurring throughout all firm types. \n\nAnd what the top 10% is doing today may easily be what the top 50% is doing in 3 years from now, at least in terms of token volume if not in dollars. This is why there’s still so much opportunity right now in the diffusion of AI in the enterprise.\n\nEspecially as token costs come down, we will throw larger portions of work at agents. They’ll be scanning all our code for security issues, testing all of our software, writing coding for much larger projects, processing nearly all data, and much more. So this trend has no end in sight.",
+     "author": "Aaron Levie",
+     "date": "2026-08-16",
+     "likes": 139,
+     "views": 25886,
+     "link": "https://x.com/levie/status/2088995821056659901",
+     "media": null,
+     "summary": "Box CEO Aaron Levie 引用企业 AI 支出数据：头部 1% 公司每人每月 AI 花费 $7,500，头部 10% 为 $660/月。他的判断：①支出远未触顶，指数级增长在所有类型公司中持续；②今天 top 10% 的用量就是三年后 top 50% 的常态；③token 降价后，agent 将接管代码安全扫描、软件测试、更大项目的编写与几乎全部数据处理。2.6万浏览。",
+     "analysis": "「AI 支出见顶论」的最直接反驳：头部公司的人均月支出已经到 $7,500 量级，而扩散才刚刚开始。对游戏工作室的预算启示：AI 工具链的人均成本预算应按「三年内向 top 50% 看齐」来规划，而非按当前平均；token 降价 + agent 接管测试/扫描类工作，对 QA 与工具链部门的影响会比内容生产更早到来。",
+     "recommendation": "Levie：AI支出远未见顶，头部1%公司人均$7,500/月",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 裁员",
+     "tags": [
+      "CDPR",
+      "巫师",
+      "Project Sirius",
+      "裁员"
+     ],
+     "title": "CDPR 确认 Project Sirius 裁员：波士顿 4 人+华沙 5 人离开，巫师多人 spin-off 战略收缩",
+     "en_title": "Multiplayer Witcher spin-off Project Sirius reportedly hit by layoffs again, in \"broader shift in development strategy\" at CD Projekt Red",
+     "full_text": "Multiplayer Witcher spin-off Project Sirius reportedly hit by layoffs again, in \"broader shift in development strategy\" at CD Projekt Red",
+     "author": "Eurogamer",
+     "date": "2026-08-16",
+     "likes": 26,
+     "views": 12672,
+     "link": "https://x.com/eurogamer/status/2088861082848739734",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HP0gEZYWMAAInru.jpg"
+     },
+     "summary": "Eurogamer 报道并经 CDPR 官方确认：多人巫师衍生作 Project Sirius 再度裁员——波士顿 4 人、华沙 5 人离开公司，另有 9 人被邀请走内部转岗流程。官方口径为「反映项目现阶段的需求」，Kotaku 消息源则称背后是「开发战略的更大转变」。该项目 2022 年公布（Molasses Flood 开发）、2023 年重启、2025 年被 CDPR 收归内部；今年 5 月财报显示团队 83 人。CDPR 当前重心为《巫师 4》，Fool's Theory 合作的《巫师 3》资料片《Songs of the Past》将于明年先行。",
+     "analysis": "Sirius 是「公布四年仍未露脸」项目的典型轨迹：重启→收购→再裁员，多人巫师的商业模型显然仍未跑通。对行业的参照点在于 CDPR 的处理方式——用内部转岗消化部分冲击、官方快速确认细节，比 Xbox 式的大规模沉默要好；但「多人化」作为单机大厂的第二曲线，迄今几乎没有成功案例。",
+     "recommendation": "CDPR确认Sirius再裁员：多人巫师四年三劫",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 工会抗议",
+     "tags": [
+      "Xbox",
+      "Bethesda",
+      "工会",
+      "上古卷轴6",
+      "裁员"
+     ],
+     "title": "Xbox CEO 试玩《上古卷轴6》遭工会充气老鼠「阻击」：166 面小旗纪念被裁员工",
+     "en_title": "Xbox CEO Asha Sharma's internal playthrough of The Elder Scrolls 6 disrupted by a giant inflatable rat, as Bethesda union protests cuts",
+     "full_text": "Xbox CEO Asha Sharma's internal playthrough of The Elder Scrolls 6 disrupted by a giant inflatable rat, as Bethesda union protests cuts.",
+     "author": "Eurogamer",
+     "date": "2026-08-16",
+     "likes": 20,
+     "views": 16054,
+     "link": "https://x.com/eurogamer/status/2088785585972367397",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPzbZ6HWsAAGg2m.jpg"
+     },
+     "summary": "Xbox CEO Asha Sharma 到访 Bethesda 马里兰州 Rockville 办公室进行《上古卷轴 6》内部试玩时，CWA 工会在办公楼外竖起巨型充气老鼠，并在地面插满红色小旗——每一面旗代表一名被裁员工（WARN 文件显示 Rockville 办公室上月裁员 166 人）。工会成员 Nathan Hahn 声明：「听说微软领导层这周要来，我们决定让他们看见我们的存在……这样的裁员不能再继续了。」Sharma 未回应老鼠，转而在 X 上盛赞 TES6「规模与宏大难以置信，故事更加出色」——Eurogamer 质疑这条推文是转移视线的「key-jangling」。上月 Xbox 宣布的 3,200 人裁员中尚有 1,600 人将在 2026 年内执行。",
+     "analysis": "本周 Xbox 重组线从财报数字变成具象画面：CEO 试玩公司最受期待的游戏，门口立着工会的老鼠。「一旗一人」的纪念方式把抽象的 3,200 变成可视的 166，传播效率远超声明稿。叠加 id 元老「现在做不出 Doom 2016」的批评，Xbox 面临的已不是裁员本身，而是剩余员工「还敢不敢做创意」的信任问题——这也是所有大裁员后工作室都要回答的问题。",
+     "recommendation": "Xbox CEO试玩TES6遇工会老鼠：一旗一名被裁员工",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 版本公布",
+     "tags": [
+      "羊蹄山之魂",
+      "PS5",
+      "完全版",
+      "roguelike"
+     ],
+     "title": "《羊蹄山之魂》完全版年内登陆 PS5：新剧情+roguelike 生存模式",
+     "en_title": "Ghost of Yōtei: Complete Edition is coming to PS5 later this year, with new story additions, a new roguelike survival mode, and more.",
+     "full_text": "Ghost of Yōtei: Complete Edition is coming to PS5 later this year, with new story additions, a new roguelike survival mode, and more.",
+     "author": "Eurogamer",
+     "date": "2026-08-16",
+     "likes": 153,
+     "views": 13772,
+     "link": "https://x.com/eurogamer/status/2088876181504266386",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HP0tzQtXAAAuVhj.jpg"
+     },
+     "summary": "Eurogamer 报道：《羊蹄山之魂：完全版》将于今年晚些时候登陆 PS5，包含新剧情追加内容、全新的 roguelike 生存模式等。1.4万浏览、153赞。",
+     "analysis": "「完全版 + roguelike 生存模式」是索尼第一方延长单作品生命周期的标准动作——对马岛/羊蹄山系的「传奇」模式基因延续。值得关注的是 roguelike 化已成为 3A 动作游戏内容复用的主流解法：低新资产成本、高重复可玩性，对内容团队的投入产出比友好。",
+     "recommendation": "羊蹄山完全版年内推出：追加roguelike生存模式",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "The Game Awards · 联动",
+     "tags": [
+      "Fortnite",
+      "联动",
+      "赛季",
+      "IP"
+     ],
+     "title": "Fortnite 下赛季「游戏主题」大联动：索尼克/Joker/俄罗斯方块/吃豆人/Crash/Spyro/洛克人",
+     "en_title": "Fortnite's next season will be video game themed and feature collabs with: Sonic, Tails & Dr. Eggman, Joker from Persona, Scorpion and Raiden, Tetris, Pac Man, Crash Bandicoot, Spyro the Dragon, Jazz Jackrabbit, Mega Man + More",
+     "full_text": "Fortnite's next season will be video game themed and feature collabs with:\n\n- Sonic, Tails & Dr. Eggman\n- Joker from Persona\n- Scorpion and Raiden \n- Tetris\n- Pac Man\n- Crash Bandicoot\n- Spyro the Dragon\n- Jazz Jackrabbit\n- Mega Man\n+ More\n\nHere's the first trailer.",
+     "author": "The Game Awards",
+     "date": "2026-08-16",
+     "likes": 803,
+     "views": 49105,
+     "link": "https://x.com/thegameawards/status/2089024485710332222",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2089023606072418304/img/okcZZWqeyanAa2m3.jpg",
+      "video_url": "https://x.com/thegameawards/status/2089024485710332222/video/1"
+     },
+     "summary": "The Game Awards 放出首支预告：Fortnite 下赛季为「电子游戏主题」，联动名单包括索尼克/塔尔斯/蛋头博士、女神异闻录 Joker、真人快打蝎子与雷电、俄罗斯方块、吃豆人、古惑狼、斯派罗、Jazz Jackrabbit、洛克人等。4.9万浏览。",
+     "analysis": "Fortnite 的联动逻辑从「流行文化大杂烩」收敛为「游戏 IP 全明星季」——连 Jazz Jackrabbit 这种 90 年代骨灰级 IP 都被翻出来，说明 Epic 正在系统性扫货游戏史 IP。对 IP 持有方：Fortnite 已成游戏 IP 的「活化交易所」，老 IP 的授权价值评估应把这类整季主题包纳入议价参考。",
+     "recommendation": "Fortnite下赛季游戏IP全明星：连Jazz Jackrabbit都来了",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Ninjago · 实机情报",
+     "tags": [
+      "Tides of Annihilation",
+      "亚瑟王",
+      "动作",
+      "国产出海"
+     ],
+     "title": "Tides of Annihilation 新 Boss 战实机：圆桌骑士双套召唤切换连击，亚瑟王×埃及×中日神话缝合",
+     "en_title": "Tides of Annihilation – New Boss Fight Gameplay. Gwendolyn fights using summoned Knights of the Round Table. Seamlessly swap between two Knight sets to chain combos...",
+     "full_text": "Tides of Annihilation – New Boss Fight Gameplay\n\n-Gwendolyn fights using summoned Knights of the Round Table\n-Seamlessly swap between two Knight sets to chain combos\n-Main Knights: Bedivere, Gareth & Palamedes\n-Support Knights: Gawain & Kay\n-Weapons feature passive buffs + Talisman system for powerful attacks\n-Mixes Arthurian, Egyptian, Chinese & Japanese lore\n-Linear gameplay with combat arenas & small puzzles\n-Anubis appears as a boss\n\nComing to PC, PS5 & Xbox Series X|S TBA.",
+     "author": "Ninjago",
+     "date": "2026-08-15",
+     "likes": 1472,
+     "views": 92657,
+     "link": "https://x.com/Ninjago9101/status/2088751513476935999",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088749700015124480/img/hnkB4I2Zz51LiCPM.jpg",
+      "video_url": "https://x.com/Ninjago9101/status/2088751513476935999/video/1"
+     },
+     "summary": "Ninjago 整理《Tides of Annihilation》新 Boss 战实机情报：女主 Gwendolyn 通过召唤圆桌骑士作战，两套骑士组（主：Bedivere/Gareth/Palamedes，支援：Gawain/Kay）无缝切换打出连击；武器带被动增益+护符系统；世界观缝合亚瑟王、埃及、中国与日本神话，阿努比斯以 Boss 身份登场；线性流程+战斗竞技场+小解谜。登陆 PC/PS5/Xbox Series X|S，日期待定。9.3万浏览。",
+     "analysis": "",
+     "recommendation": "Tides of Annihilation新实机：圆桌骑士召唤无缝切换连击",
+     "featured": true,
+     "game_ref": "Tides of Annihilation",
+     "enrichment": {
+      "game_name": "Tides of Annihilation",
+      "genre": "动作冒险 / 奇幻 ARPG",
+      "developer": "Eclipse Glow Games（中国团队，自发行）",
+      "platforms": ["Steam", "PS5", "Xbox Series X|S"],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3292470/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3292470/header.jpg?t=1786504987",
+      "youtube_video": null,
+      "description": "破碎现代伦敦里的亚瑟王传说。\n\n【核心玩法】扮演 Gwendolyn，与幽灵圆桌骑士并肩作战：主骑士三人组+支援骑士双人组无缝切换衔接连击，武器被动增益与护符系统构筑输出流派；线性关卡由战斗竞技场与小解谜串联。\n\n【美术与世界观】末世入侵下的现代伦敦 × 亚瑟王传说，并缝合埃及（阿努比斯 Boss）、中国与日本神话元素——国产团队对西方题材的再演绎。\n\n【优势】召唤骑士切换连击在动作品类中有辨识度；多神话缝合利于全球市场的本地化话题；主机三平台同步。\n【不足】线性流程的重玩价值依赖战斗深度；发售日未定。\n\n【综合】国产出海 ARPG 中题材最大胆的一档，实机 Boss 战在海外社区获近 10 万浏览，持续观察其定档。",
+      "why_notable": "国产团队做亚瑟王×多神话缝合 ARPG，实机在海外获近10万浏览"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Lapismine · 开发中",
+     "tags": [
+      "Dungeon Picnic",
+      "roguelike",
+      "组队",
+      "像素"
+     ],
+     "title": "Dungeon Picnic：RPG×roguelike×组队构建，选 4 位像素女主下本——18.8万浏览",
+     "en_title": "RPG×ローグライク×パーティ構築「Dungeon Picnic」レベルアップ画面はドット絵で、アニメーションします レベルアップするとランダムなスキルを選択できます！",
+     "full_text": "RPG×ローグライク×パーティ構築「Dungeon Picnic」\nレベルアップ画面はドット絵で、アニメーションします\nレベルアップするとランダムなスキルを選択できます！",
+     "author": "Lapismine",
+     "date": "2026-08-15",
+     "likes": 4699,
+     "views": 188103,
+     "link": "https://x.com/Lapismine_game/status/2088583983164768374",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088289003191910400/img/nW_SFmB6Y_ahNBEH.jpg",
+      "video_url": "https://x.com/Lapismine_game/status/2088583983164768374/video/1"
+     },
+     "summary": "日本开发者 Lapismine 展示《Dungeon Picnic》：RPG×roguelike×组队构建融合——「只取 RPG 最好吃的部分」，选 4 位像素风女主角下迷宫，升级画面为带动画的像素演出，升级时从随机技能中选择构建。18.8万浏览、4,699赞、309转发。",
+     "analysis": "",
+     "recommendation": "Dungeon Picnic：4人像素女主组队roguelike——18.8万浏览",
+     "featured": true,
+     "game_ref": "Dungeon Picnic",
+     "enrichment": {
+      "game_name": "Dungeon Picnic",
+      "genre": "RPG / roguelike / 组队构建",
+      "developer": "Lapismine（日本独立开发者）",
+      "platforms": ["Steam"],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3736800/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3736800/4c80d93240f8ed77a6f72fb727da344bdf342774/header.jpg?t=1786791049",
+      "youtube_video": null,
+      "description": "「只取 RPG 最好吃的部分」。\n\n【核心玩法】RPG×roguelike×组队构建的三合一：挑选 4 位像素风女主角组成队伍潜入迷宫，升级时从随机技能中三选一式构建——把长线养成压缩成单局内的快速 build 成型。\n\n【美术与氛围】高完成度像素动画，升级画面专门做了带动效的像素演出——也正是这个片段在推上获得 18.8 万浏览。\n\n【优势】「RPG 爽点提纯」的设计直觉对味 roguelike 受众；像素女主四人组的视觉传播力强。\n【不足】单人开发的内容体量风险；发售日未定。\n\n【综合】日本独立开发者的「演出驱动传播」样本——一段升级动画带起 18.8 万浏览，美术演出本身就是获客渠道。",
+      "why_notable": "一段像素升级动画拿下18.8万浏览：演出即获客"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Inomi · 抢先上线",
+     "tags": [
+      "Woo Woo",
+      "恐怖",
+      "roguelike",
+      "抢先体验"
+     ],
+     "title": "Woo Woo：鬼屋清扫恐怖 roguelike 上线 Steam——「午夜前不打扫完，就会被爸爸吃掉」",
+     "en_title": "My game is now live on steam👻 This is a very early version - everything is still in development. I'd love to hear your feedback 🤗",
+     "full_text": "My game is now live on steam👻\n\nThis is a very early version - everything is still in development. \nI'd love to hear your feedback 🤗",
+     "author": "Inomi",
+     "date": "2026-08-14",
+     "likes": 1844,
+     "views": 101098,
+     "link": "https://x.com/Inomi133/status/2088343073965097070",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088342613392752641/img/GtK5HK-abVWb-wLE.jpg",
+      "video_url": "https://x.com/Inomi133/status/2088343073965097070/video/1"
+     },
+     "summary": "独立开发者 Inomi 的游戏《Woo Woo》上线 Steam（极早期版本，持续开发中）：探索解谜恐怖 roguelike——在午夜前把鬼屋打扫干净，探索阴森房间与里面的「居民」，否则「爸爸会吃掉你」。10.1万浏览、1,844赞。",
+     "analysis": "",
+     "recommendation": "Woo Woo上线：鬼屋清扫roguelike，不打扫完会被爸爸吃掉",
+     "featured": false,
+     "game_ref": "Woo Woo",
+     "enrichment": {
+      "game_name": "Woo Woo",
+      "genre": "探索解谜 / 恐怖 roguelike",
+      "developer": "inomi（个人开发者，自发行）",
+      "platforms": ["Steam"],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售（极早期版本页面已上线）",
+      "steam_url": "https://store.steampowered.com/app/4373230/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4373230/8c68ca4045a3542878b0356df9a181050741bb7d/header.jpg?t=1786796748",
+      "youtube_video": null,
+      "description": "「做家务」与「被吃掉」只隔一个午夜。\n\n【核心玩法】探索解谜恐怖 roguelike：在鬼屋里逐间探索、与阴森的「居民」打交道，赶在午夜前把房子打扫干净——失败惩罚是「被爸爸吃掉」的黑色幽默设定。\n\n【美术与氛围】可爱与阴森并存的低饱和手绘风，恐怖靠氛围而非 jump scare。\n\n【优势】「清扫 deadline」的目标压力在恐怖品类里少见；极早期就开放页面收反馈，社区共建空间大。\n【不足】完成度极早期，系统深度待验证。\n\n【综合】「家务恐怖」题材小品，反常识设定自带传播梗，适合列入早期观察。",
+      "why_notable": "「打扫不完被爸爸吃掉」的反常识恐怖设定获10万浏览"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "WhatGames · 新作情报",
+     "tags": [
+      "The Road",
+      "合作恐怖",
+      "驾驶",
+      "撤离"
+     ],
+     "title": "The Road：5 人合作恐怖驾驶——「神器回收计划」开车深入废弃之地",
+     "en_title": "The Road — co-op horror driving game where you've been recruited into the Artefact Recovery Program. Play solo or with up to 5 players in online co-op. Drive to abandoned locations and loot valuable artifacts...",
+     "full_text": "The Road — co-op horror driving game where you've been recruited into the Artefact Recovery Program\n\nHighlights:\n- Play solo or with up to 5 players in online co-op\n- Drive to abandoned locations and loot valuable artifacts\n- Upgrade and customize your car for every expedition\n- Escape creatures, anomalies, and deadly road hazards\n\nRelease: TBA",
+     "author": "WhatGames",
+     "date": "2026-08-15",
+     "likes": 160,
+     "views": 17688,
+     "link": "https://x.com/whatgamesv1/status/2088672938765729908",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088672831022276608/img/10SNqr-d7IHE7Dt3.jpg",
+      "video_url": "https://x.com/whatgamesv1/status/2088672938765729908/video/1"
+     },
+     "summary": "WhatGames 公布合作恐怖驾驶游戏《The Road》：玩家被招募进「神器回收计划」，单人或最多 5 人联机，开车前往废弃地点搜刮贵重神器，为每次远征升级改装车辆，途中躲避生物、异常与致命道路危险。发售日待定。1.8万浏览。",
+     "analysis": "",
+     "recommendation": "The Road：5人合作恐怖驾驶+神器回收撤离",
+     "featured": false,
+     "game_ref": "The Road",
+     "enrichment": {
+      "game_name": "The Road",
+      "genre": "合作恐怖 / 驾驶 / 撤离",
+      "developer": "WhatGames 频道推介（开发商信息待公布）",
+      "platforms": ["PC（预计）"],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "开车去闹鬼的地方收神器。\n\n【核心玩法】单人或 5 人联机的恐怖驾驶撤离：驱车前往废弃地点搜刮神器，回车库升级改装，应对生物、异常现象与致命路况。\n\n【优势】「驾驶+恐怖撤离」组合在 Lethal Company 式合作恐怖赛道里做出载具差异化；改装系统提供局外成长。\n【不足】目前仅情报账号曝光，开发商与发售窗口均未公布。\n\n【综合】合作恐怖品类的载具化变体，先看后续正式公布与 Steam 页面落地。",
+      "why_notable": "合作恐怖撤离赛道的「载具化」差异化尝试"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Goomboo · 工具发布",
+     "tags": [
+      "Aseprite",
+      "Asemulator",
+      "像素",
+      "动画"
+     ],
+     "title": "Asemulator v1.0.0 定档 8月28日：在 Aseprite 里直接预览/测试/分享角色动画——63.5万浏览",
+     "en_title": "#Asemulator v1.0.0 releases on August 28th! 🎉 The Top-down and Side-scroller templates will be available on the same date. Get ready to preview, test and share your characters' animated sprites in context, directly in @aseprite!",
+     "full_text": "#Asemulator v1.0.0 releases on August 28th! 🎉\n\nThe Top-down and Side-scroller templates will be available on the same date.\n\nGet ready to preview, test and share your characters' animated sprites in context, directly in @aseprite!\n\nReposts highly appreciated~",
+     "author": "Goomboo",
+     "date": "2026-08-15",
+     "likes": 8686,
+     "views": 635611,
+     "link": "https://x.com/MapleGecko/status/2088742868965798150",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088741517816954882/img/sFDqnkxpsolsWPBi.jpg",
+      "video_url": "https://x.com/MapleGecko/status/2088742868965798150/video/1"
+     },
+     "summary": "Goomboo 宣布 Asemulator v1.0.0 将于 8 月 28 日发布：Aseprite 插件，让开发者直接在 Aseprite 内以真实游戏场景（俯视/横版模板同日放出）预览、测试并分享角色的动画精灵图。63.5万浏览、8,686赞、1,316转发——本周工具类最大声量。",
+     "analysis": "63.5 万浏览证明像素工作流的真实痛点被击中：动画精灵「画出来」和「在游戏里动起来对味」之间一直隔着导出-导入-跑引擎的循环，Asemulator 把验证环节直接塞进绘制工具。对像素游戏团队这是工作流级别的提效；也再次印证「工具寄生在创作者已有的软件里」（Aseprite 插件）比让创作者换工具更容易被接受。",
+     "recommendation": "Asemulator定档8/28：Aseprite内直接验证游戏动画——63.5万浏览",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "Andrew Price · 渲染技术",
+     "tags": [
+      "Blender",
+      "渲染",
+      "教程",
+      "宝可梦卡牌"
+     ],
+     "title": "Andrew Price：为什么你不能在 Blender 里渲染宝可梦卡牌——37.7万浏览",
+     "en_title": "Full vid: Why you can't render Pokemon cards in Blender #b3d",
+     "full_text": "Full vid: Why you can't render Pokemon cards in Blender #b3d",
+     "author": "Andrew Price",
+     "date": "2026-08-14",
+     "likes": 3289,
+     "views": 376614,
+     "link": "https://x.com/andrewpprice/status/2088414767346012646",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088414516740542464/img/wYjPG6ub5aBvR3Jw.jpg",
+      "video_url": "https://x.com/andrewpprice/status/2088414767346012646/video/1"
+     },
+     "summary": "「Blender 甜甜圈」之父 Andrew Price 发布深度视频：为什么宝可梦卡牌（闪卡的全息/烫金质感）在 Blender 里渲染不出来——从物理光学角度拆解路径追踪渲染器面对衍射/干涉材质时的根本性短板。37.7万浏览、3,289赞。",
+     "analysis": "顶级技术教育者选择「宝可梦闪卡」作题材并非偶然——全息材质是实时渲染与离线渲染共同的盲区，而卡牌/收藏品类游戏对「闪」质感的需求正在增长。对 TA 与渲染程序：这是理解衍射着色器为什么需要专门解法的最佳入门课；对内容团队，Andrew Price 再次示范了「把硬核技术讲成大众故事」的模板。",
+     "recommendation": "Blender教父拆解：宝可梦闪卡为何渲染不出来——37.7万浏览",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**四大模型在《帝国时代 II》里开战**\nClaude Fable、GPT 5.6 Sol、Gemini 3.1 Pro、Kimi K3 各自用游戏内置脚本语言编写 bot 直接对战——10万浏览。模型竞技场从 benchmark 走向真实 RTS；同日 Claude 通过 MCP 直连 Blender 一条 prompt 建出完整奇幻场景，崩溃后自动从存档点重建继续；Levie 则给出企业 AI 支出数据：头部 1% 公司人均每月 $7,500，「远未见顶」。\n\n**充气老鼠 vs 上古卷轴 6**\nXbox CEO Asha Sharma 到访 Bethesda Rockville 内部试玩《上古卷轴 6》，CWA 工会在门外竖起巨型充气老鼠、插下 166 面小旗——每面旗代表一名被裁员工。同日 CDPR 确认 Project Sirius 再裁员 9 人（另有 9 人转岗），巫师多人 spin-off 四年三劫；Fortnite 下赛季开启游戏 IP 全明星联动（索尼克/Joker/俄罗斯方块/洛克人）；《羊蹄山之魂》完全版年内推出并追加 roguelike 生存模式。\n\n**独游侧：演出即获客**\nTides of Annihilation 放出圆桌骑士召唤连击的 Boss 战实机（9.3万浏览）；日本开发者 Lapismine 用一段像素升级动画为 Dungeon Picnic 拿下 18.8 万浏览；鬼屋清扫恐怖 roguelike Woo Woo（「不打扫完被爸爸吃掉」）上线 Steam；工具侧 Asemulator 定档 8/28——在 Aseprite 里直接验证动画，63.5 万浏览成本周工具最大声量。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

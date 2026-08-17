@@ -1,0 +1,447 @@
+{
+ "date": "2026-08-15",
+ "meta": {
+  "raw_count": 230,
+  "filtered_count": 183,
+  "selected_count": 12,
+  "crawl_time": "2026-08-15 10:30"
+ },
+ "lede": "Cursor 正式并入 SpaceXAI：收购交割完成，加入 Grok 团队——181万浏览\n美国参议院对 Roblox 启动国会调查：「孩子们在受伤害」，8月31日前须提交文件\n《人类一败涂地》团队新作 Tiny Flock 公布：VR 物理牧羊解谜",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Cursor 正式并入 SpaceXAI：编程工具头号玩家加入 Grok 阵营"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "美参议院调查 Roblox：两党联名「国会不会坐视不管」"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《人类一败涂地》团队新作 Tiny Flock：VR 里放一群迷路的羊"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Cursor 正式并入 SpaceXAI：收购交割完成，加入 Grok 团队——181万浏览\n陈成实测 DeepSeek Harness：「harness 参考实现」而非 Claude Code 杀手\nLevie：「消灭工程师是荒谬假设」，AI 让工程师价值反而上升"
+  },
+  {
+   "id": "industry",
+   "text": "美国参议院对 Roblox 启动国会调查：8月31日前须交文件，CEO 须作证\nNetflix 再关两工作室：Night School（Unhinged）+ Moonloot，游戏线收窄四类\n宝可梦 Pokopia 销量破 500 万：每 4 个 Switch 2 用户就有 1 个购买\nMarvel Tōkon 首周约 48.5 万份：PS5 占 74%，PC 性能问题或致少卖一半"
+  },
+  {
+   "id": "indie",
+   "text": "Tiny Flock：《人类一败涂地》团队新作，VR 物理牧羊解谜——13.5万浏览\nWoodo 定档 9月16日：可触摸的 3D 木质立体模型填色书，Daedalic 发行\nKnode：物理演算解缆绳，9月11日发售，「治愈系苦行」\nFUNKTRONIC LABS 2D 塞尔达风 MMO-lite 公测开启"
+  },
+  {
+   "id": "tools",
+   "text": "LOOPY：开源音效库 936 个音效 12 种主题，免费可商用，含界面演示"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Cursor · 官方公告",
+     "tags": [
+      "Cursor",
+      "SpaceX",
+      "收购",
+      "Grok"
+     ],
+     "title": "Cursor 正式并入 SpaceXAI：收购交割完成，加入 Grok 团队——181万浏览",
+     "en_title": "Cursor is now part of @SpaceX. Today, we have officially closed our acquisition. We will join the @SpaceXAI team to help make Grok the world's most useful AI and improve Grok Build, Grok Bot, Grok API, Cursor, and more.",
+     "full_text": "Cursor is now part of @SpaceX. \n\nToday, we have officially closed our acquisition. We will join the @SpaceXAI team to help make Grok the world's most useful AI and improve Grok Build, Grok Bot, Grok API, Cursor, and more.\n\nSpaceX has built some of the most inspiring and impressive technology in the world, and we’re grateful for the opportunity to become part of such a special company. Onwards.",
+     "author": "Cursor",
+     "date": "2026-08-14",
+     "likes": 25988,
+     "views": 1814971,
+     "link": "https://x.com/cursor_ai/status/2088249881718919393",
+     "media": null,
+     "summary": "Cursor 官方宣布收购正式交割完成，成为 SpaceX 的一部分，将加入 SpaceXAI 团队，目标是把 Grok 打造成「世界上最有用的 AI」，并继续改进 Grok Build、Grok Bot、Grok API 和 Cursor 等产品。181万浏览、25,988赞、2,169转发。同日中文圈关注：Tony出海指出 Cursor 还收购了 Firetiger（上线后智能体监控公司，Cloudflare/Twitch 前员工创立），并认为「Cursor 品牌价值比 Grok 值钱，很高兴 Cursor 品牌会独立发展」。",
+     "analysis": "编程工具成为 AI 巨头军备竞赛的核心资产——继模型层、harness 层之后，拥有真实开发者工作流的 IDE 入口被直接收编。对游戏开发者的实际影响：Cursor 的独立性、定价与数据策略都将由 SpaceXAI 决定，工具链选型时需要把「供应商被并购」纳入风险评估；而 Grok Build 获得 Cursor 团队加持后，xAI 在编程 agent 上的短板被一次性补齐。",
+     "recommendation": "Cursor 正式并入 SpaceXAI：编程工具头号玩家加入 Grok 阵营",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "陈成 · 深度实测",
+     "tags": [
+      "DeepSeek",
+      "Harness",
+      "dsh",
+      "插件架构"
+     ],
+     "title": "陈成实测 DeepSeek Harness：更像「harness 参考实现」，而非 Claude Code 杀手",
+     "en_title": "看了会 DeepSeek Harness，说下个人感受。整体感受，dsh 更像一份「harness 该怎么写」的参考实现，不太像一个要抢 Claude Code 用户的产品...",
+     "full_text": "看了会 DeepSeek Harness，说下个人感受。\n\n整体感受，dsh 更像一份「harness 该怎么写」的参考实现，不太像一个要抢 Claude Code 用户的产品。体验上目前还有点粗糙，架构上比较“激进”。\n\n1\\ 上手只要 npx @deepseek-ai/dsh@latest web，它还会自动从环境变量里找 DEEPSEEK_API_KEY 填上，对我来说一行命令直接用上。但对非前端程序员，npx 仍是门槛。刚在 x 上看到有人基于它封了 electron 客户端，这类缺口大概会由社区补齐，官方看起来没打算自己做。\n\n2\\ 默认上 web 而不是 TUI，这个切入点很聪明。翻源码还看到一个细节，仓库里有过一版 TUI，写完又删了，只留 Web。TUI 对小白用户确实有门槛（这也是大家这么喜欢用 codex 的原因之一），dsh 把这条路线整个砍掉，是主动决策，还是时间上不够呢？\n\n3\\ 内核就一套插件体系（Cordis），所有功能都是插件，agent loop 本身也是。最早做 umi 时做过类似的事，webpack、vite 也是这个思路，但 dsh 插得更彻底。举两个例子。它有一组别家都没有的 cordis_* 工具，模型可以在运行期给自己装卸 harness 插件。e2b 扩展只替换 ctx.fs 和 ctx.subprocess 这两个 hook，整个执行环境就搬进了 E2B 沙箱，bash、terminal、lsp 零改动跟着走，连「在哪里执行」都是插件。代价也在这，插件权限大到能改内核，上午一位老程序员提醒我说，这可能很容易被改坏。\n\n另外，dsh 用 MIT 协议但明确拒收外部 PR，想参与只能去 Discussions 或者自己写插件。核心封闭开发，生态全走外部 npm 包（`dsh plugin add` 就是 pnpm 转发）。",
+     "author": "陈成",
+     "date": "2026-08-14",
+     "likes": 88,
+     "views": 10687,
+     "link": "https://x.com/chenchengpro/status/2088201936072024253",
+     "media": null,
+     "summary": "陈成（umi 作者）上手 DeepSeek Harness v0.1 后的深度评价：整体更像「harness 该怎么写」的参考实现，而不是要抢 Claude Code 用户的产品。三个关键观察：①一行 npx 命令上手、自动读环境变量，但对非前端用户 npx 仍是门槛；②砍掉 TUI 只留 Web 是聪明切入点（仓库里曾有一版 TUI 写完又删了）；③Cordis 插件体系比 webpack/vite 更彻底——模型可在运行期给自己装卸插件（cordis_* 工具），e2b 扩展只换两个 hook 就把执行环境搬进沙箱。风险同样在此：插件权限大到能改内核，「可能很容易被改坏」。另注意：MIT 协议但拒收外部 PR，生态全走外部 npm 包。",
+     "analysis": "一线框架作者的第一手实测比官方发布稿更有信息量：dsh 的真实定位是「架构参考」而非成熟产品，这解释了 MIT 开源 + 拒收 PR 的组合——DeepSeek 要的是生态位而非社区共建。「模型运行期自装卸插件」是 harness 设计的新范式，对游戏 NPC/任务编排工具链的自研有直接参考价值，但「插件可改内核」的权限模型在接入了真实生产环境前需要谨慎评估。",
+     "recommendation": "陈成实测 DeepSeek Harness：运行期自装卸插件是亮点也是风险",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Aaron Levie · AI 劳动力论",
+     "tags": [
+      "工程师",
+      "AI取代",
+      "Box"
+     ],
+     "title": "Levie：「消灭工程师是荒谬假设」——AI 让工程师价值反而上升",
+     "en_title": "The elimination of engineers was one of the wilder hypotheses out there. Just like absurdly wrong. We just gave engineers a power tool that can accelerate the development of whatever we want.",
+     "full_text": "The elimination of engineers was one of the wilder hypotheses out there. Just like absurdly wrong. We just gave engineers a power tool that can accelerate the development of whatever we want. \n\nOf course their value not only remains critical in that world, but actually goes up in many domains because we can apply engineering to far more work than before.\n\nIf you’re trying to automate drug discovery, you need engineers. If you’re trying to automate manufacturing, you need engineers. If you’re taking on larger and larger software projects, you need engineers.\n\nThis will happen in domains beyond engineering too. AI causes companies to take on way more work than before, which leads to needing more experts to oversee the work. \n\nEven as models get better and better, they can be better utilized...",
+     "author": "Aaron Levie",
+     "date": "2026-08-14",
+     "likes": 484,
+     "views": 80279,
+     "link": "https://x.com/levie/status/2088105350201270529",
+     "media": null,
+     "summary": "Box CEO Aaron Levie 系统反驳「AI 消灭工程师」论：这是最荒谬的假设之一。我们只是给了工程师一个能加速一切开发的强力工具——他们的价值不仅仍然关键，在很多领域反而上升，因为工程能力可以应用到比以前多得多的工作上。药物研发、制造自动化、大型软件项目都需要工程师。这个逻辑也适用于工程之外的领域：AI 让公司承接更多工作，从而需要更多专家来监督这些工作。8万浏览。",
+     "analysis": "与本周 Saber CEO「宁愿用 AI 取代她」的骂战形成鲜明的立场对位——两位 CEO 对同一问题给出相反答案。Levie 的「Jevons 悖论式」论证（效率提升→需求扩张→岗位增加）是管理层向团队传递 AI 转型叙事时更可持续的版本；对游戏工作室而言，「AI 让同等团队承接更大项目」比「AI 裁员」更接近当下生产管线的真实状态。",
+     "recommendation": "Levie：AI 让工程师更值钱——需求扩张快过效率替代",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "RTC+GameSpot+Polygon · 监管",
+     "tags": [
+      "Roblox",
+      "参议院",
+      "儿童安全",
+      "国会调查"
+     ],
+     "title": "美国参议院对 Roblox 启动国会调查：「孩子们在受伤害，国会不会坐视不管」",
+     "en_title": "The U.S. Senate is launching an investigation into Roblox. \"Let us be clear: children on your platform are hurting. Congress will not look the other way.\"",
+     "full_text": "The U.S. Senate is launching an investigation into Roblox.",
+     "author": "RTC / GameSpot / Polygon",
+     "date": "2026-08-14",
+     "likes": 21533,
+     "views": 1423900,
+     "link": "https://x.com/Roblox_RTC/status/2087996771557634408",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPoN_2KaMAA-eJh.jpg"
+     },
+     "summary": "参议员 Josh Hawley（共和党）与 Dick Durbin（民主党）联名宣布对 Roblox 启动国会调查，由参议院司法委员会犯罪与反恐小组主导。公开信指控 Roblox「将营收与参与度置于儿童安全之上」：平台被用于交易儿童性虐待材料、诱骗线下见面等；2025 年 Roblox 向美国失踪与受虐儿童中心上报 65,381 起疑似儿童性剥削事件，较 2024 年翻倍以上。Roblox 被要求在 8 月 31 日前保存记录并交出相关文件，CEO David Baszucki 须就平台自我监管方案提供证据。此前澳洲立法者、佛州总检察长、德州总检察长均已对其采取行动，内华达州刚以 1200 万美元和解。多家报道：RTC（142万浏览）、GameSpot、Polygon。",
+     "analysis": "这是 Roblox 监管危机的量级跃迁——从州级诉讼/和解升级为两党联名的联邦国会调查，且附带强制性的文件提交与 CEO 作证要求。「未成年人社交平台」这个商业模式的根本假设（UGC + 低龄用户 + 弱监管）正在被立法者正面挑战。对做 UGC 平台、青少年社区的公司是明确的政策风向信号：美国的「儿童在线安全」立法窗口正在打开，合规成本将系统性上升。建议并入本周 Roblox 监控周报重点追踪。",
+     "recommendation": "美参议院调查 Roblox：两党联名，8月31日前须交文件",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "GameSpot+RPS+Eurogamer · 工作室关闭",
+     "tags": [
+      "Netflix",
+      "Night School",
+      "Moonloot",
+      "工作室关闭"
+     ],
+     "title": "Netflix 再关两工作室：Night School（Oxenfree/Unhinged）与 Moonloot 被关闭",
+     "en_title": "Netflix Closes Two More Studios — Not even a successful horror game could save one of the latest studios cut by Netflix amid the streamer's shrinking gaming portfolio.",
+     "full_text": "Netflix Closes Two More Studios",
+     "author": "GameSpot / Rock Paper Shotgun / Eurogamer / Niche Gamer",
+     "date": "2026-08-14",
+     "likes": 31,
+     "views": 43068,
+     "link": "https://x.com/GameSpot/status/2088070652058329101",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPpRMXzagAAEj3-.jpg"
+     },
+     "summary": "据 Game File 报道并经多家媒体确认，Netflix 关闭了 Night School Studio（2021 年收购，Oxenfree 开发商）与 Moonloot Games 两家工作室。讽刺的是 Night School 今夏刚推出云恐怖游戏 Unhinged，被 Netflix 联席 CEO Greg Peters 在财报电话会上称为「我们最成功的两个云游戏首秀之一」——另一个（FIFA 世界杯游戏）的开发商 Refactor Games 本月早些时候也被裁掉 85% 员工。Netflix 声明称将收窄游戏业务至四类：儿童游戏、派对游戏、叙事驱动游戏与「有主流钩子的游戏」。",
+     "analysis": "「成功也救不了你」——Night School 之死标志 Netflix 游戏战略从「广泛试验」转入「明确收窄」，评价口径从作品质量变为品类卡位。流媒体的「600% 参与度增长」叙事与连续关停裁员的矛盾，说明其游戏业务仍未找到可规模化的经济模型。对正在评估流媒体平台发行合作的团队：平台战略耐心比看上去更短，合同里应锁定项目完成与 IP 归属条款。",
+     "recommendation": "Netflix 再关两工作室：最成功云游戏首秀也保不住工作室",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer+Niche · 销量数据",
+     "tags": [
+      "宝可梦",
+      "Pokopia",
+      "Switch2",
+      "销量"
+     ],
+     "title": "宝可梦 Pokopia 销量破 500 万：每 4 个 Switch 2 用户就有 1 个购买",
+     "en_title": "Nintendo announces Pokémon Pokopia has sold over 5m copies, meaning that roughly one in four Switch 2 users now owns the game",
+     "full_text": "Nintendo announces Pokémon Pokopia has sold over 5m copies, meaning that roughly one in four Switch 2 users now owns the game",
+     "author": "Eurogamer / Niche Gamer",
+     "date": "2026-08-14",
+     "likes": 35,
+     "views": 9099,
+     "link": "https://x.com/eurogamer/status/2088254194339779019",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPr4Hn4WkAAqWHy.jpg"
+     },
+     "summary": "任天堂与宝可梦公司确认 Pokémon Pokopia 全球销量突破 500 万份（实体+数字），此时距发售仅「4 个多月」。按任天堂截至 5 月 Switch 2 销量超 2000 万台估算，约每 4 个 Switch 2 用户就有 1 人购买。在 Switch 2 平台软件销量榜上仅次于 Mario Kart World（1539 万），甚至超过第一方宝可梦正传 Pokémon Legends: Z-A 的 Switch 2 版（399 万）。本周上线的扩展通行证第一部分「Bubbly Basin」（水下小镇）预计进一步拉动销量。本作由光荣特库摩（Omega Force 血统，Dragon Quest Builders 团队）与任天堂联合发行。",
+     "analysis": "一个衍生外传击败第一方正传，验证了「宝可梦 IP × 建造模拟」的品类扩展能力——Pokopia 把 IP 受众从对战/收集玩家扩到休闲建造人群。对光荣特库摩「降低对大作依赖、平衡产品线」的战略是标志性成功；对国内 IP 持有方的启示：头部 IP 的衍生玩法授权（而非正传续作）可能是风险更低、天花板同样高的变现路径。",
+     "recommendation": "Pokopia 破500万：衍生外传销量反超宝可梦正传",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 销量估算",
+     "tags": [
+      "Marvel Tōkon",
+      "Arc System Works",
+      "格斗",
+      "Alinea"
+     ],
+     "title": "Marvel Tōkon 首周销量约 48.5 万份：PS5 占 74%，PC 性能问题或致少卖一半",
+     "en_title": "Marvel Tōkon: Fighting Souls looks to have sold almost half a million copies in a week, in spite of launch-day performance problems",
+     "full_text": "Marvel Tōkon: Fighting Souls looks to have sold almost half a million copies in a week, in spite of launch-day performance problems",
+     "author": "Eurogamer",
+     "date": "2026-08-14",
+     "likes": 10,
+     "views": 6625,
+     "link": "https://x.com/eurogamer/status/2088192062197764144",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HPq_kyzWIAErF4O.png"
+     },
+     "summary": "Alinea Analytics 市场分析主管 Rhys Elliott 发布估算：Arc System Works 的 4v4 漫威组队格斗《Marvel Tōkon: Fighting Souls》发售约一周销量约 48.5 万份（PS5 74% / Steam 26%），节奏对标 2018 年龙珠 FighterZ（后者至 2023 年累销超 1000 万）。玩家重合度：52% PS5 买家玩过 DBFZ，53% 来自 Marvel Rivals。Elliott 指出 PC 版首发性能问题（CPU 占用与卡顿）可能切断口碑传播，「若没有这些问题销量可能接近 100 万」；近期补丁已大幅改善 PC 表现。同帖还提到免费格斗 2XKO 发布至今 lifetime 玩家刚破 100 万。游戏 Steam 国区 ¥298，2026年8月6日发售，好评评测 4067 条。",
+     "analysis": "格斗品类的「主机基本盘」再次验证（74/26 的平台分布），同时给所有多平台首发团队上了一课：PC 版首发性能事故的直接代价是「销量减半」级别的口碑断档。对发行决策的启示：格斗/动作品类若资源有限，宁可延期 PC 版也不要带病根上市——补丁修复后的长尾很难补回首发窗口的损失。",
+     "recommendation": "Marvel Tōkon 首周48.5万份：PC性能问题或致少卖一半",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "No Brakes Games · 官方公布",
+     "tags": [
+      "Tiny Flock",
+      "VR",
+      "解谜",
+      "人类一败涂地"
+     ],
+     "title": "Tiny Flock：《人类一败涂地》团队 No Brakes 新作——VR 物理牧羊解谜，13.5万浏览",
+     "en_title": "Holy sheep! Today we're excited to announce a new game, Tiny Flock! Take on the role of a shepherd and help guide lost sheep through a series of 3D-crafted diorama worlds with fully interactive environments and puzzles.",
+     "full_text": "Holy sheep!\n\nToday we're excited to announce a new game, Tiny Flock! 🐑\n\nTake on the role of a shepherd and help guide lost sheep through a series of 3D-crafted diorama worlds with fully interactive environments and puzzles.\n\nWishlist now! 💫",
+     "author": "No Brakes Games",
+     "date": "2026-08-13",
+     "likes": 819,
+     "views": 135198,
+     "link": "https://x.com/NoBrakesGames/status/2087965037231042901",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2087959320482738176/img/jVkBIo481_HZs-Se.jpg",
+      "video_url": "https://x.com/NoBrakesGames/status/2087965037231042901/video/1"
+     },
+     "summary": "No Brakes Games（《人类一败涂地 Human Fall Flat》开发商）公布新作 Tiny Flock：扮演牧羊人，引导迷路的羊群穿过一系列 3D 手工立体模型世界，环境完全可交互、带物理解谜。13.5万浏览。",
+     "analysis": "",
+     "recommendation": "《人类一败涂地》团队新作 Tiny Flock：VR 里放一群迷路的羊",
+     "featured": true,
+     "game_ref": "Tiny Flock",
+     "enrichment": {
+      "game_name": "Tiny Flock",
+      "genre": "VR 解谜 / 物理 / 休闲模拟",
+      "developer": "No Brakes Games（《人类一败涂地》开发商，自发行）",
+      "platforms": ["Steam（VR Only）"],
+      "price": "未公布",
+      "release_date": "2026 年（具体日期待定）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3133010/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3133010/eb2ead8588a4d383f6ad7a48e7e5f6d1b8c98d0e/header_schinese.jpg?t=1786644949",
+      "youtube_video": null,
+      "description": "《人类一败涂地》团队转战 VR 的新作。\n\n【核心玩法】扮演牧羊人，在手工打造的 3D 立体模型（diorama）世界中引导迷路的羊群抵达安全地带。延续团队的物理交互基因：环境完全可交互，用地形与机关「哄」羊前进，而非直接操控羊。\n\n【美术与氛围】手工模型感十足的微缩世界，色调明亮治愈，「Holy sheep!」式的团队幽默贯穿。\n\n【优势】Human Fall Flat 的物理玩法口碑背书；VR 与「立体模型观察视角」天然契合；全年龄向，Camera Comfort 等舒适性选项齐全。\n【不足】VR Only 限制了受众规模；关卡制解谜的重复可玩性待观察。\n\n【综合】前作全球数千万级销量团队的品类转型之作，VR 解谜赛道少有的「大厂级独游」入场。",
+      "why_notable": "《人类一败涂地》开发商首次做 VR，物理玩法基因与立体模型视角的契合度高"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Julia（开发者） · 发售日公布",
+     "tags": [
+      "Woodo",
+      "治愈",
+      "拼图",
+      "Daedalic"
+     ],
+     "title": "Woodo 定档 9月16日：可触摸的 3D「木质立体模型填色书」——9.5万浏览",
+     "en_title": "📢📢WOODO has an official release date: ✨✨✨September 16th, 2026 ✨✨✨",
+     "full_text": "📢📢WOODO has an official release date:   \n\n✨✨✨September 16th, 2026 ✨✨✨\n\nThanks so much for all your support so far! It’s really helped us keep moving forward. 💛😌💛\n \nIt would mean a lot if you could give this a retweet and wishlist the game on Steam",
+     "author": "Julia ✨WOODO",
+     "date": "2026-08-13",
+     "likes": 2203,
+     "views": 95335,
+     "link": "https://x.com/YulliaProhorova/status/2087993974082392461",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2087991993888628737/img/AYgC1thM2m7y_LIk.jpg",
+      "video_url": "https://x.com/YulliaProhorova/status/2087993974082392461/video/1"
+     },
+     "summary": "开发者 Julia（Tiny Monks Tales）宣布 Woodo 将于 2026 年 9 月 16 日正式发售，Daedalic Entertainment 发行。9.5万浏览、2,203赞、343转发。免费 demo 已在 Steam 上线一年（2025年8月7日）。",
+     "analysis": "",
+     "recommendation": "Woodo 定档9月16日：木质立体模型填色书，Daedalic 发行",
+     "featured": true,
+     "game_ref": "Woodo",
+     "enrichment": {
+      "game_name": "Woodo",
+      "genre": "休闲 / 解谜 / 治愈",
+      "developer": "Tiny Monks Tales（独立团队，Yullia Prohorova）",
+      "platforms": ["Steam"],
+      "price": "未公布",
+      "release_date": "2026年9月16日",
+      "steam_rating": "未发售（demo 已上线）",
+      "steam_url": "https://store.steampowered.com/app/2572040/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2572040/header_schinese.jpg?t=1786661203",
+      "youtube_video": null,
+      "description": "「一本可以触摸的 3D 填色书」。\n\n【核心玩法】在手工木质立体模型（diorama）上进行放松向的拼图解谜：把木块逐一归位、为场景上色，像小时候玩木质玩具一样推进一个个小故事。\n\n【美术与氛围】原木质感 + 低饱和暖色，官方定位「献给那些没有忘记如何做孩子的大人」。\n\n【优势】题材与操作都极低门槛，demo 已运营一年积累口碑；Daedalic 在叙事/治愈品类有成熟发行经验。\n【不足】纯治愈向内容体量与定价敏感；玩法深度有限。\n\n【综合】「木质玩具感」差异化明确的治愈系小品，适合作为休闲品类观察样本。",
+      "why_notable": "一年 demo 运营 + 主流治愈向发行商背书，9月16日正作落地"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "AUTOMATON · 新作报道",
+     "tags": [
+      "Knode",
+      "物理解谜",
+      "治愈系",
+      "日本媒体"
+     ],
+     "title": "Knode: Untangle & Connect 9月11日发售：物理演算「解缆绳」——治愈系苦行",
+     "en_title": "物理演算ケーブルほどきゲーム『Knode: Untangle & Connect』発表、9月12日配信へ。地獄のような“絡まり”をじっくり解きほぐす、癒やし系苦行",
+     "full_text": "【ニュース】物理演算ケーブルほどきゲーム『Knode: Untangle & Connect』発表、9月12日配信へ。地獄のような“絡まり”をじっくり解きほぐす、癒やし系苦行",
+     "author": "AUTOMATON（オートマトン）",
+     "date": "2026-08-14",
+     "likes": 402,
+     "views": 104018,
+     "link": "https://x.com/AUTOMATONJapan/status/2088136941363699732",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2088136801752170496/img/-kTSNuhEIx7zVUyC.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2088136941363699732/video/1"
+     },
+     "summary": "日本媒体 AUTOMATON 报道物理演算解缆绳游戏《Knode: Untangle & Connect》正式公布，9月11日发售（Steam 页面显示 11 日，报道为 12 日配信，以 Steam 为准）。把地狱般缠绕的线缆慢慢解开——「治愈系苦行」。10.4万浏览。",
+     "analysis": "",
+     "recommendation": "Knode 9月11日：解开地狱级缠绕线缆的物理演算解谜",
+     "featured": false,
+     "game_ref": "Knode: Untangle & Connect",
+     "enrichment": {
+      "game_name": "Knode: Untangle & Connect",
+      "genre": "物理解谜 / 模拟 / 治愈",
+      "developer": "BusFactorOne（个人/小团队）",
+      "platforms": ["Steam"],
+      "price": "未公布",
+      "release_date": "2026年9月11日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4959570/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4959570/61e67d1793d292a5e328355d38f80f7caec9f106/header.jpg?t=1786903448",
+      "youtube_video": null,
+      "description": "把「解缠绕的耳机线」做成一整套物理谜题。\n\n【核心玩法】在海上神秘的混凝土平台上解开物理模拟的绳结、连接线缆；绳线有真实的缠绕、拖拽与张力模拟，需要耐心地理清每一处死结。\n\n【叙事氛围】平台并不孤单——运行测试程序的 AI「似乎想和你做朋友」，在苦行式解谜之外埋了一条陪伴叙事线。\n\n【优势】「解压/治愈苦行」题材在短视频时代天然易传播；物理绳结模拟有技术辨识度。\n【不足】玩法单一性风险；AI 叙事线的比重未知。\n\n【综合】日本媒体先行的物理小品，「解绳」这一动作的魔性传播力已在推上验证（10万+浏览）。",
+      "why_notable": "物理绳结模拟 + AI 陪伴叙事的反常识组合，日本区已先热"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "FUNKTRONIC LABS · 公测开启",
+     "tags": [
+      "FUNKTRONIC LABS",
+      "MMO-lite",
+      "塞尔达",
+      "公测"
+     ],
+     "title": "FUNKTRONIC LABS 的 2D 塞尔达风 MMO-lite 公测开启——11.2万浏览",
+     "en_title": "the open beta for our 2d zelda-inspired mmo-lite goes live tomorrow. sign up on Steam now 👇",
+     "full_text": "the open beta for our 2d zelda-inspired mmo-lite goes live tomorrow\n\nsign up on Steam now 👇",
+     "author": "FUNKTRONIC LABS",
+     "date": "2026-08-13",
+     "likes": 1970,
+     "views": 112079,
+     "link": "https://x.com/funktroniclabs/status/2087898132382105923",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2087897027459862528/img/pe0hYpoy4xHVUDXZ.jpg",
+      "video_url": "https://x.com/funktroniclabs/status/2087898132382105923/video/1"
+     },
+     "summary": "FUNKTRONIC LABS 宣布其「2D 塞尔达启发的 MMO-lite」开放公测（推文 8/13 发布、称「明日开启」，即 8/14 起），Steam 页面可报名。11.2万浏览、1,970赞。游戏名称推文未提及，Steam 检索暂未命中，以工作室官方信息为准。",
+     "analysis": "",
+     "recommendation": "FUNKTRONIC LABS 新作公测：2D塞尔达风 MMO-lite",
+     "featured": false,
+     "game_ref": "FUNKTRONIC LABS 新作（名称待公布）",
+     "enrichment": {
+      "game_name": "FUNKTRONIC LABS 新作（名称待公布）",
+      "genre": "2D 动作冒险 / MMO-lite",
+      "developer": "FUNKTRONIC LABS",
+      "platforms": ["Steam"],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售（公测报名中）",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【核心玩法】官方自述为「2D 塞尔达启发的 MMO-lite」：俯视角动作探索的塞尔达式框架，叠加轻量 MMO 的共享世界/同屏协作元素。\n\n【当前状态】开放公测已开启（8月14日起），Steam 页面接受报名；正式名称尚未在推文中披露。\n\n【综合】「塞尔达 × MMO-lite」的组合在独游中少见，公测阶段的完成度与服务器承载是第一批观察点。后续跟踪官方公布正式名称与发售窗口。",
+      "why_notable": "「2D 塞尔达 × MMO-lite」罕见组合，公测开启即获 11 万浏览"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "LOOPY · 开源资源",
+     "tags": [
+      "音效",
+      "开源",
+      "免费商用",
+      "UI"
+     ],
+     "title": "LOOPY：开源音效库——936 个音效按 12 种主题整理，全免费可商用",
+     "en_title": "앱·웹사이트·게임 등을 위한 오픈소스 효과음 라이브러리. 무려 936개의 효과음들이 미니멀, 아케이드, SF 등 12가지 테마로 정리되어 있음... 대박인건 전부 무료에 상업적 이용 가능!",
+     "full_text": "앱·웹사이트·게임 등을 위한 오픈소스 효과음 라이브러리\n\n무려 936개의 효과음들이\n미니멀, 아케이드, SF 등 12가지 테마로 정리되어 있음\n\n인터페이스 데모도 제공해줘서\n실제로 UI에 적용했을 때 어떤 느낌일지 알 수 있음\n\n대박인건 전부 무료에 상업적 이용 가능!",
+     "author": "LOOPY",
+     "date": "2026-08-13",
+     "likes": 1810,
+     "views": 80474,
+     "link": "https://x.com/VibeEverything/status/2087861203372822665",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2087860715214512129/img/IgBJk8knsMRU2ynb.jpg",
+      "video_url": "https://x.com/VibeEverything/status/2087861203372822665/video/1"
+     },
+     "summary": "韩国开发者社区热传的开源音效库：面向 App、网站与游戏的 936 个音效，按极简、街机、科幻等 12 种主题分类整理；提供界面演示页，可以直接试听音效应用到实际 UI 上的效果；全部免费且允许商用。8万浏览、1,810赞。",
+     "analysis": "UI 音效是独立开发者最常「将就」的环节——免费可商用且成体系（主题化分类+即听即用的演示页）的音效库直接降低了原型阶段的品质门槛。对正在做 demo/游戏 jam 的团队是值得收藏的资源型推文。",
+     "recommendation": "LOOPY 音效库：936 个免费可商用音效，按 12 主题整理",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**Cursor 正式并入 SpaceXAI**\nCursor 官宣收购交割完成，加入 SpaceXAI 团队共同打造 Grok——181万浏览。编程工具成为 AI 巨头军备竞赛的核心资产，Cursor 的独立性与定价策略将进入 SpaceX 时代。同日陈成发布 DeepSeek Harness 深度实测：「更像 harness 参考实现而非 Claude Code 杀手」，运行期自装卸插件是亮点也是风险；Box CEO Levie 则系统反驳「AI 消灭工程师」论。\n\n**美参议院对 Roblox 启动国会调查**\nHawley 与 Durbin 两党参议员联名发难：「孩子们在受伤害，国会不会坐视不管」——8月31日前须提交文件，CEO Baszucki 须作证。2025 年 Roblox 上报疑似儿童剥削事件 65,381 起、较 2024 翻倍。Netflix 同日再关 Night School 与 Moonloot 两工作室，游戏线收窄至四类；宝可梦 Pokopia 销量破 500 万，每 4 个 Switch 2 用户就有 1 人购买；Marvel Tōkon 首周约 48.5 万份，PC 性能问题或致少卖一半。\n\n**《人类一败涂地》团队公布 VR 新作**\nNo Brakes Games 新作 Tiny Flock：物理牧羊解谜、VR Only，13.5万浏览。Woodo 定档 9月16日（Daedalic 发行）；物理「解缆绳」Knode 9月11日发售；FUNKTRONIC LABS 的 2D 塞尔达风 MMO-lite 公测开启。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
