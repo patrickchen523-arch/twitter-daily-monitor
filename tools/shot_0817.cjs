@@ -1,0 +1,21 @@
+const { chromium } = require('G:/教理问答/教理问答/node_modules/playwright-core');
+(async () => {
+  const b = await chromium.launch({ channel: 'chrome', headless: true });
+  const errors = [];
+  const p = await b.newPage({ viewport: { width: 1440, height: 900 } });
+  p.on('pageerror', e => errors.push(e.message));
+  await p.goto('http://localhost:8899/', { waitUntil: 'networkidle' });
+  await p.evaluate(() => switchView('launched'));
+  await p.waitForTimeout(600);
+  await p.evaluate(() => loadLaunchedDate('2026-08-17'));
+  await p.waitForTimeout(900);
+  await p.screenshot({ path: __dirname + '/shot_0817_top.png' });
+  await p.evaluate(() => window.scrollTo(0, 1500));
+  await p.waitForTimeout(400);
+  await p.screenshot({ path: __dirname + '/shot_0817_boards.png' });
+  await p.evaluate(() => window.scrollTo(0, 3200));
+  await p.waitForTimeout(400);
+  await p.screenshot({ path: __dirname + '/shot_0817_watch.png' });
+  console.log('errors:', errors.length ? errors.join('\n') : 'none');
+  await b.close();
+})();
