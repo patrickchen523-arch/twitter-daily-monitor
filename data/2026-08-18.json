@@ -1,0 +1,463 @@
+{
+  "date": "2026-08-18",
+  "meta": {
+    "raw_count": 193,
+    "filtered_count": 176,
+    "selected_count": 12,
+    "crawl_time": "2026-08-18 10:22"
+  },
+  "lede": "Chris Hansen 演讲中被 Roblox 当场封号：安全问责连续剧再添一幕——157万浏览\n2人10年磨出的免费 2D MMO《Soul's Remnant》上线即获特别好评，峰值 4367 人在线\nAseprite 动画插件 Asemulator 1.0 定档 8/28：绘制界面里直接试玩——81万浏览",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Chris Hansen 演讲中被 Roblox 当场封号：安全问责连续剧再添一幕——157万浏览"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "2人10年磨出的免费 2D MMO《Soul's Remnant》：Steam 特别好评，峰值 4367 人在线"
+    },
+    {
+      "section_id": "tools",
+      "item_index": 0,
+      "hook": "Aseprite 插件 Asemulator 1.0 定档 8/28：像素动画画完直接在编辑器里试玩"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Stripe 超70亿美元收购 OpenRouter，支付管道接上 AI 模型分发——800万开发者在用\nGrok 4.6 单周末做出 Three.js 千敌同屏射击原型：除建模外全栈包办\nGPT 5.6 Sol 看实拍视频写衍射光栅 shader：光学效果进入对话式生成"
+    },
+    {
+      "id": "industry",
+      "text": "Chris Hansen 演讲中被 Roblox 当场封号——157万浏览，问责连续剧再升级\n索尼 CEO：PS6 内部发售日未定，AI 抢内存直接卡住次世代节奏\n索尼无预警终止乌克兰独游厂商 Ternox 协议：13款游戏 8/23 后下架且申诉无门\nSweeney 刚说 Roblox 会吃掉游戏业，Fortnite 新赛季就装进了 Roblox 的鹿"
+    },
+    {
+      "id": "indie",
+      "text": "2人10年磨出的免费 2D MMO《Soul's Remnant》：Steam 特别好评，峰值 4367 人在线\n扮演昆虫的生存 MMO《The Undergrowth》：从幼虫到顶级掠食者——71万浏览\n集英社发行《UN:Me》：四魂一体的「灵魂分诊」恐怖冒险，gamescom 全球首试玩\n《Ore Factory Squad》首月卖出 15万+：90%好评、峰值 8703 人在线"
+    },
+    {
+      "id": "tools",
+      "text": "Aseprite 插件 Asemulator 1.0 定档 8/28：像素动画画完直接在编辑器里试玩——81万浏览"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Tony出海 · 中文原创",
+          "tags": [
+            "AI基建",
+            "收购",
+            "模型路由"
+          ],
+          "title": "Stripe 超70亿美元收购 OpenRouter：支付巨头拿下 AI 模型分发入口",
+          "en_title": "世界最大中转站 OpenRouter 被 stripe 70 亿美元收购。两个卖水的搬运工都赢麻了。",
+          "full_text": "世界最大中转站 OpenRouter 被 stripe 70 亿美元收购。\n\n两个卖水的搬运工都赢麻了。\n\n上一个是 cursor 卖了 700 亿美元。",
+          "author": "iamtonyzhu",
+          "date": "2026-08-18",
+          "likes": 6,
+          "views": 973,
+          "link": "https://x.com/iamtonyzhu/status/2089142477450277132",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HP4gARNbUAAHsKt.jpg"
+          },
+          "summary": "据 Bloomberg 报道，Stripe 已敲定以超过 70 亿美元收购 AI 模型路由平台 OpenRouter——该平台为约 800 万开发者提供 400 多个模型的统一接入与计费。这一价格是 OpenRouter 今年 3 月 13 亿美元估值的 5 倍以上。Tony出海点评：继 Cursor 高价卖身之后，又一个「卖水的搬运工」赢麻了。",
+          "analysis": "AI 应用层的价值正在向「分发与计费管道」集中：模型越多元，开发者越需要中立路由，谁掌握这个入口，谁就握有 AI 支出的实时流向数据。对游戏团队而言，模型聚合层巨头化意味着调用成本、稳定性与议价空间将更多由平台方定义，多模型策略值得尽早布局。",
+          "recommendation": "Stripe 超70亿美元收购 OpenRouter，支付管道接上 AI 模型分发——800万开发者在用",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Danny Limanseta · 开发者实测",
+          "tags": [
+            "Grok 4.6",
+            "Three.js",
+            "AI编程"
+          ],
+          "title": "Grok 4.6 周末产出 Three.js 千敌同屏射击原型：UI/特效/音效全包",
+          "en_title": "Took Grok 4.6 out for a spin this weekend and built this horde shooter prototype on ThreeJS. It is a big step up from Grok 4.5!",
+          "full_text": "Took Grok 4.6 out for a spin this weekend and built this horde shooter prototype on ThreeJS. It is a big step up from Grok 4.5! \n\nI've always wanted to try building a horde shooter game with thousands of enemies onscreen and used Grok 4.6 for pretty much everything (including UI, vfx, and even the sfx!), except the 3D models for the characters, which were made and rigged with Meshy.\n\nI'm also amazed that ThreeJS with WebGPU can really handle thousands of enemies onscreen at the same time, though I think I pushed the limit here with Depth of Field and some other fancy shaders. Very fun!",
+          "author": "DannyLimanseta",
+          "date": "2026-08-18",
+          "likes": 460,
+          "views": 44169,
+          "link": "https://x.com/DannyLimanseta/status/2089023171672609084",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2089020813244813312/img/t66s5TpjihaN8sg-.jpg",
+            "video_url": "https://x.com/DannyLimanseta/status/2089023171672609084/video/1"
+          },
+          "summary": "开发者 Danny Limanseta 用 Grok 4.6 在周末做出一个 horde shooter 原型：Three.js + WebGPU 实现数千敌人同屏，UI、VFX 甚至音效全部由 Grok 生成，仅角色 3D 模型用 Meshy 制作与绑定。他评价 Grok 4.6 相比 4.5「跨了一大步」。",
+          "analysis": "AI 编程的边界正从「能跑通」推进到「性能敏感场景」：千敌同屏 + WebGPU 渲染已涉及对象池、GPU 实例化等真优化问题。对需要做原型验证的团队，AI 全包 UI/音效意味着单人周末即可完成过去要多职能配合的 demo。",
+          "recommendation": "Grok 4.6 单周末做出 Three.js 千敌同屏射击原型：除建模外全栈包办",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Scott · 开发者实测",
+          "tags": [
+            "GPT 5.6",
+            "Shader",
+            "Three.js"
+          ],
+          "title": "视频直喂 GPT 5.6 Sol：多轮对话产出 three.js 衍射光栅 shader",
+          "en_title": "I gave this video to gpt 5.6 Sol, asked it create a diffraction grating shader in @threejs. It took quite a few rounds but here it is",
+          "full_text": "I gave this video to gpt 5.6 Sol, asked it create a diffraction grating shader in @threejs. It took quite a few rounds but here it is",
+          "author": "scottstts",
+          "date": "2026-08-18",
+          "likes": 2647,
+          "views": 284250,
+          "link": "https://x.com/scottstts/status/2088678763659657426",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2088678192840155136/img/Ofe3V5Yye5Ia4O0j.jpg",
+            "video_url": "https://x.com/scottstts/status/2088678763659657426/video/1"
+          },
+          "summary": "开发者 Scott 把一段实拍视频交给 GPT 5.6 Sol，要求在 three.js 中复现衍射光栅着色器。经过多轮迭代后效果达标，呈现出薄膜干涉般的彩虹色散。推文获 28 万浏览。",
+          "analysis": "「给参考视频 → 生成 shader」意味着图形编程中门槛最高的环节之一正被 AI 接管。技术美术的稀缺技能（光学效果模拟）开始被对话式编程平民化，小团队也能做出过去只有 TA 能调的视觉效果。",
+          "recommendation": "GPT 5.6 Sol 看实拍视频写衍射光栅 shader：光学效果进入对话式生成",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "DramaAlert · 社区媒体",
+          "tags": [
+            "Roblox",
+            "儿童安全",
+            "平台问责"
+          ],
+          "title": "Chris Hansen 在演讲现场被 Roblox 封号：安全问责连续剧再添一幕",
+          "en_title": "Chris Hansen was banned from Roblox during a presentation.",
+          "full_text": "Chris Hansen was banned from Roblox during a presentation.",
+          "author": "DramaAlert",
+          "date": "2026-08-18",
+          "likes": 52727,
+          "views": 1570069,
+          "link": "https://x.com/DramaAlert/status/2088676241234682010",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2088658673866350593/img/H17zBOyHyqUJpqOh.jpg",
+            "video_url": "https://x.com/DramaAlert/status/2088676241234682010/video/1"
+          },
+          "summary": "据 DramaAlert 报道，《To Catch a Predator》主持人 Chris Hansen 在一场演讲进行中被 Roblox 封号，现场视频经安全活动人士 Schlep 的账号流出。Hansen 此前正与 Schlep 合作调查 Roblox 平台上的儿童安全问题。推文获 157 万浏览、5.3 万赞。",
+          "analysis": "Roblox 的封号公关灾难持续升级：继封禁抓恋童癖的志愿者 Schlep、参议院启动调查之后，又在公开演讲现场封禁与其合作的知名电视主持人。用封号手段处理安全倡议者，正在把单个社区事件推向全国性新闻，平台治理成本只会越拖越高。",
+          "recommendation": "Chris Hansen 演讲中被 Roblox 当场封号——157万浏览，问责连续剧再升级",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 游戏媒体",
+          "tags": [
+            "索尼",
+            "PS6",
+            "硬件供应链"
+          ],
+          "title": "索尼 CEO 确认 PS6 连内部发售日都未定：内存危机卡住次世代",
+          "en_title": "Sony still hasn't chosen a PlayStation 6 release date, says CEO, as RAM crisis continues",
+          "full_text": "Sony still hasn't chosen a PlayStation 6 release date, says CEO, as RAM crisis continues",
+          "author": "eurogamer",
+          "date": "2026-08-18",
+          "likes": 16,
+          "views": 4216,
+          "link": "https://x.com/eurogamer/status/2089368750759764110",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HP7tzWUWoAAWDfL.jpg"
+          },
+          "summary": "索尼 CEO 十时裕树接受《华尔街日报》采访时确认，受内存等元器件短缺影响，公司尚未在内部敲定 PS6 的发售日期。此前分析师普遍预期 PS6 于 2027 年面世；十时今年 5 月就曾表示内存高价预计贯穿 2027 财年，「必须慎重考虑怎么做」。",
+          "analysis": "AI 数据中心对内存/存储产能的挤兑，已从 PC DIY 市场传导至主机世代规划。次世代窗口被迫后移意味着本世代生命周期拉长——跨世代开发与长线运营的重要性进一步上升，Phison CEO 同期放话 NAND 供不应求还要持续四年，硬件成本短期无解。",
+          "recommendation": "索尼 CEO：PS6 内部发售日未定，AI 抢内存直接卡住次世代节奏",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "GameSpot · 游戏媒体",
+          "tags": [
+            "索尼",
+            "PS Store",
+            "独游发行"
+          ],
+          "title": "乌克兰独游厂商 Ternox 被索尼无理由终止协议：13 款游戏 8月23日后下架",
+          "en_title": "PS5 Game Dev Says Sony Is Removing Its Catalog And Won't Say Why",
+          "full_text": "PS5 Game Dev Says Sony Is Removing Its Catalog And Won't Say Why",
+          "author": "GameSpot",
+          "date": "2026-08-18",
+          "likes": 5,
+          "views": 3514,
+          "link": "https://x.com/GameSpot/status/2089405083796795628",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HP8O2ZVaQAAvW4C.jpg"
+          },
+          "summary": "《Stonks-9800》开发商、乌克兰独立厂商 Ternox Games 称索尼单方面终止其 PlayStation 开发与发行协议且未给任何理由，13 款游戏（含其代发行作品）将于 8月23日后从 PS Store 下架，《Stonks-9800》的 PS5 版随之取消。官方支持渠道拒绝回应其邮件与申诉。外界推测其被索尼清理劣质游戏（shovelware）的收紧政策误伤。",
+          "analysis": "平台治理「一刀切」的风险具象化：反 shovelware 政策误伤正常独游厂商且申诉无门。对多平台发行的独游团队，单一平台的政策风险需要计入发行策略——鸡蛋不能放在一个店里。",
+          "recommendation": "索尼无预警终止乌克兰独游厂商协议：13款游戏 8/23 后下架且申诉无门",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 游戏媒体",
+          "tags": [
+            "Fortnite",
+            "Roblox",
+            "UGC平台"
+          ],
+          "title": "Fortnite 新赛季联动 Roblox 爆款《99 Nights in the Forest》",
+          "en_title": "It looks like Fortnite is getting a Roblox collaboration, months after Epic boss Tim Sweeney referred to the rival game as a force that could \"grow and eat gaming\"",
+          "full_text": "It looks like Fortnite is getting a Roblox collaboration, months after Epic boss Tim Sweeney referred to the rival game as a force that could \"grow and eat gaming\"",
+          "author": "eurogamer",
+          "date": "2026-08-18",
+          "likes": 8,
+          "views": 9118,
+          "link": "https://x.com/eurogamer/status/2089280613136167212",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HP6dm30XEAAt24U.jpg"
+          },
+          "summary": "Eurogamer 发现，Fortnite 第七章第四赛季「Override」（8月20日开启）的预告与主视觉中出现了 Roblox 病毒式爆款《99 Nights in the Forest》的鹿——合作对象是该作开发商 Grandma's Favourite Games 而非 Roblox 官方。就在几个月前，Epic CEO Tim Sweeney 还称 Roblox 是「会长大并吃掉游戏业」的守门人平台。",
+          "analysis": "嘴上是主义，生意是生意：两大 UGC 平台从「互相吞噬」叙事转向流量互换。Roblox 原生 IP 反向输出进 Fortnite，说明 Roblox 爆款的角色资产已具备跨平台号召力——UGC 造星的下半场开始了。",
+          "recommendation": "Sweeney 刚说 Roblox 会吃掉游戏业，Fortnite 新赛季就装进了 Roblox 的鹿",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "AUTOMATON · 游戏媒体",
+          "tags": [
+            "MMORPG",
+            "免费",
+            "抢先体验"
+          ],
+          "title": "Soul's Remnant：2人10年开发的免费 2D MMORPG，EA 上线即获特别好评",
+          "en_title": "ほぼ個人で10年開発MMORPG『Soul's Remnant』いきなり人気沸騰中",
+          "full_text": "【ニュース】ほぼ個人で10年開発MMORPG『Soul's Remnant』いきなり人気沸騰中。『メイプル』『マビノギ』大好き開発者が執念で作った“自分のMMO”",
+          "author": "AUTOMATONJapan",
+          "date": "2026-08-18",
+          "likes": 4389,
+          "views": 748698,
+          "link": "https://x.com/AUTOMATONJapan/status/2089267727710257313",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2089267675948257280/img/AB1htLqKXghukyO_.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2089267727710257313/video/1"
+          },
+          "summary": "AUTOMATON 报道，由 Chaomoon 主导（Rajah 于 2025 年加入）的 2D 平台 MMORPG《Soul's Remnant》8月13日在 Steam 开启抢先体验，基本免费。上线即获「特别好评」（约 490 评、80% 好评率），SteamDB 峰值同时在线 4367 人，EA 前愿望单约 1.8 万。",
+          "analysis": "",
+          "recommendation": "2人10年磨出的免费 2D MMO《Soul's Remnant》：特别好评，峰值 4367 人在线",
+          "featured": true,
+          "game_ref": "Soul's Remnant",
+          "enrichment": {
+            "game_name": "Soul's Remnant",
+            "genre": "2D 平台 MMORPG / 像素",
+            "developer": "Chaomoon（2人团队，主创本职音乐家）",
+            "platforms": [
+              "PC",
+              "Mac",
+              "Linux"
+            ],
+            "price": "免费",
+            "release_date": "已发售 · 2026 年 8 月 13 日",
+            "steam_rating": "已发售",
+            "steam_url": "https://store.steampowered.com/app/3451980",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3451980/header.jpg?t=1786618773",
+            "youtube_video": null,
+            "description": "Soul's Remnant is a 2D platformer MMORPG focused on social gameplay and exploration! Customize your character, and conquer dungeons and bosses in this mysterious world. Play with friends or make new ones - just watch out when night falls!\n\n【核心玩法】2D 横版平台跳跃 + MMORPG：无职业限制，从近战、远程、魔法、信仰等 72 种以上技能中自由构筑 Build。EA 版本已含 200 多张地图、150 多个任务、1000 多种道具（约 200 种武器）、700 多个制造配方、约 100 种怪物与 19 个 Boss、3 个可探索副本。\n\n【系统与生态】公会、好友、拍卖行、玩家商店齐全，经济系统完全由玩家主导。课金严格限定在外观与便利性（如自动拾取范围、拍卖栏位），开发者承诺不设 Pay-to-Win，付费点由社区反馈共同决定。\n\n【开发故事】Chaomoon 本职是线上卖音乐的音乐人，前 8 年独自一人以「开发几个月、休息几个月」的节奏防止燃尽，2025 年 Rajah 加入。客户端用 Godot 4.7，服务器用 Java，网络架构全部一人完成——他本就因为热爱 MMO 服务器架构才做这个项目。他给小团队做 MMO 的建议只有一条：不要无谓地扩大规模。\n\n【优势】手感顺滑快节奏，怀旧 MMO 氛围浓；自由 Build 深度高；无 P2W 口碑好。\n【不足】2人团队的内容产能天花板明显；像素画面受众有限；长线运营待观察。\n\n【综合】证明「小团队做不了 MMO」并非铁律：愿望单 1.8 万、上线即特别好评、峰值在线 4367 人，控制好规模与付费底线的独游 MMO 一样能活下来。",
+            "why_notable": "2人10年做出的 MMO 上线即获特别好评+4367 在线峰值，为「小团队做 MMO」提供了可复用的方法论样本（控制规模、无 P2W、多年多轮测试）",
+            "pcu": "4,367（SteamDB 峰值，2026年8月）",
+            "estimated_sales": "免费游戏（无销量数据）"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Indie Game Joe · 独游KOL",
+          "tags": [
+            "生存MMO",
+            "昆虫",
+            "开放世界"
+          ],
+          "title": "The Undergrowth：扮演昆虫的生存 MMO，从幼虫爬到食物链顶端",
+          "en_title": "New survival MMO where you live and die as an insect",
+          "full_text": "New survival MMO where you live and die as an insect\n\n- Grow from hatchling to apex predator\n- Droughts force predators and prey together\n- Betrayal is always part of the ecosystem\n\nGame is The Undergrowth",
+          "author": "IndieGameJoe",
+          "date": "2026-08-18",
+          "likes": 9432,
+          "views": 715057,
+          "link": "https://x.com/IndieGameJoe/status/2089106490355306843",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2089104886034042880/img/Z8W4cUC_QjRgmBu4.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2089106490355306843/video/1"
+          },
+          "summary": "Indie Game Joe 介绍生存 MMO《The Undergrowth》：玩家以昆虫身份出生入死——从幼虫一路成长为顶级掠食者；干旱会迫使捕食者与猎物在同一水源狭路相逢；背叛永远是生态系统的一部分。推文获 71 万浏览、近万赞。",
+          "analysis": "",
+          "recommendation": "扮演昆虫的生存 MMO《The Undergrowth》：从幼虫到顶级掠食者——71万浏览",
+          "featured": true,
+          "game_ref": "The Undergrowth",
+          "enrichment": {
+            "game_name": "The Undergrowth",
+            "genre": "生存 MMO / 开放世界 / 昆虫模拟",
+            "developer": "Opendix Studios（独立团队）",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "即将推出",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4762680",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4762680/fc6fb132bc37cd1b70a93d7849ca370cdcb1d390/header.jpg?t=1779999214",
+            "youtube_video": null,
+            "description": "The Undergrowth is an online multiplayer survival experience where you begin life as a tiny, vulnerable creature in a massive ecosystem filled with danger, opportunity, and other players. Hunt, scavenge, grow, evolve, and carve your place in a brutal world where survival is earned, not given.\n\n【核心玩法】以昆虫视角展开的开放世界生存 MMO：从幼虫孵化开始，在草丛与土壤构成的微观世界里觅食、蜕皮、成长，最终目标是站上食物链顶端。死亡是生态循环的一部分，每次轮回都是新的生存路径。\n\n【生态驱动】环境事件直接改写玩家关系：干旱来袭时，捕食者与猎物被迫聚集在同一水源，合作与背叛随时翻转——「背叛永远是生态系统的一部分」。\n\n【对标定位】题材上让人想到《Grounded》的微观生存与《Empires of the Undergrowth》的昆虫世界，但本作主打 MMO 尺度的玩家生态：群体行为、种间关系与资源压力都服务于涌现式叙事。\n\n【优势】昆虫题材差异化极强；生态压力制造天然戏剧冲突；KOL 视频 71 万浏览验证了题材吸引力。\n【不足】MMO 对服务器与内容产能要求高，独游团队长线运营能力待验证；发售日与商业化模式尚未公布。\n\n【综合】「当一只虫」的强代入感 + 生存 MMO 的社交张力，是今年新游曝光中题材辨识度最高的一档，值得加入愿望单观察名单。",
+            "why_notable": "昆虫生存 MMO 题材极度差异化，单条 KOL 视频 71 万浏览、近万赞，验证了微观生态题材的传播力",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "電ファミニコゲーマー · 游戏媒体",
+          "tags": [
+            "恐怖",
+            "冒险",
+            "集英社"
+          ],
+          "title": "UN:Me（非我：择谁）：集英社发行「灵魂分诊」冒险，4个灵魂共用一具身体",
+          "en_title": "恐怖を超えた“不安”を追求した不気味すぎるホラーゲーム『UN:Me』の公式Xが開設",
+          "full_text": "恐怖を超えた“不安”を追求した不気味すぎるホラーゲーム『UN:Me』の公式Xが開設。Steam、PS5、Switch 2向けに2026年発売予定の新作\n\n異なるトラウマをもつ“4つの魂”を宿した少女が精神の迷宮からの脱出を目指す。表に出ている魂によって、見える危険も行動も変化する",
+          "author": "denfaminicogame",
+          "date": "2026-08-18",
+          "likes": 3305,
+          "views": 289804,
+          "link": "https://x.com/denfaminicogame/status/2089353514720100558",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2089353485112561664/pu/img/9cW3IZxpwvwQ8eYx.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2089353514720100558/video/1"
+          },
+          "summary": "電ファミ报道，História 开发、集英社游戏发行的恐怖冒险《UN:Me》开设官方 X 账号。少女体内宿有 4 个各怀创伤的灵魂，会不受玩家控制地轮流「夺舍」——表层灵魂不同，看见的危险与可采取的行动都会变化。2026年内登陆 Steam/PS5/Switch 2，gamescom（8/26-30）提供全球首次试玩。",
+          "analysis": "",
+          "recommendation": "集英社发行《UN:Me》：四魂一体的「灵魂分诊」冒险，gamescom 全球首试玩",
+          "featured": false,
+          "game_ref": "UN:Me",
+          "enrichment": {
+            "game_name": "UN:Me (非我:择谁）",
+            "genre": "恐怖冒险 / 心理 / 多结局",
+            "developer": "historia Inc.（集英社游戏发行）",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "2026 年",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4167200",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4167200/d7a96eae587e2b10d8be3f1885da24cd529defd2/header_schinese.jpg?t=1783582796",
+            "youtube_video": null,
+            "description": "《UN:Me（非我：择谁）》是一款以“少女与体内多个灵魂对话”为核心的叙事型冒险游戏。 你所做的每一次选择，都将影响最终谁得以留下、谁将被抹去。 那些被你“留下”的灵魂，以及选择带来的“后果”——都将由你亲自见证。\n\n【核心玩法】官方定义为「灵魂分诊冒险」（Soul Triage Adventure）：操作体内宿有 4 个灵魂的少女逃出精神迷宫。4 个灵魂各自背负不同创伤，会在游戏中不受玩家意志控制地轮流夺取身体——表层是哪一个灵魂，直接决定你能看见什么危险、能采取什么行动。\n\n【对话与抉择】迷宫中获得的特殊道具可用来与灵魂「对话」，不同道具解锁不同灵魂的真相。核心规则只有一条：「一具身体只能存在一个灵魂」——推进过程中玩家必须决断留下谁、消除谁，选择直接改写结局。\n\n【发行与节点】由《昭和米国物语》等作积累的日本中型厂商生态之外，集英社游戏近年持续押注原创主机/PC 作品；本作 2026年内发售，8月26-30日 gamescom 的集英社展台提供全球首次公开试玩。\n\n【优势】「灵魂分诊」设定把多重人格题材系统化为玩法机制；恐怖不走 Jump Scare 而追求「不安感」，差异化明确；集英社发行资源加持。\n【不足】叙事驱动型作品的上限高度依赖剧本质量；四灵魂机制的重复可玩性待验证。\n\n【综合】把「多重人格」从叙事噱头做成核心规则的罕见案例，gamescom 试玩反馈值得跟踪。",
+            "why_notable": "把多重人格题材系统化为核心玩法规则（灵魂分诊+消除抉择），集英社发行背书，gamescom 全球首试玩在即",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "Enes Çetin · 开发者自述",
+          "tags": [
+            "自动化",
+            "采矿",
+            "销售数据"
+          ],
+          "title": "Ore Factory Squad 首月战报：销量 15万+、90% 好评、峰值在线 8703",
+          "en_title": "Ore Factory Squad çıkış sonrası 1. ay özeti: 8.703 ccu all-time peak, 150k+ adet satış",
+          "full_text": "Ore Factory Squad çıkış sonrası 1. ay özeti:   \n\n8.703 ccu all-time peak \n1.388 toplam review \n1.251 olumlu - 137 olumsuz \n%90.1 ile Very Positive \n150k+ adet satış \nSteam En Popüler Yeni Oyunlar - Temmuz 2026 listesinde ilk 50 ürün arasında Bronz kategori \n\nTeşekkürler 🥳",
+          "author": "enescetin1903",
+          "date": "2026-08-18",
+          "likes": 82,
+          "views": 4960,
+          "link": "https://x.com/enescetin1903/status/2089073645993992258",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HP3f-jFakAAbNfY.jpg"
+          },
+          "summary": "土耳其开发者 Enes Çetin 公布采矿自动化游戏《Ore Factory Squad》发售首月成绩单：历史峰值同时在线 8703 人、累计 1388 条评测（90.1% 特别好评）、销量超 15 万份，并进入 Steam 7 月最热新品榜前 50（铜牌级）。",
+          "analysis": "",
+          "recommendation": "《Ore Factory Squad》首月卖出 15万+：90%好评、峰值 8703 人在线",
+          "featured": false,
+          "game_ref": "Ore Factory Squad",
+          "enrichment": {
+            "game_name": "《采矿工厂小队》- Ore Factory Squad ⛏️",
+            "genre": "自动化 / 采矿 / 基地建设",
+            "developer": "threeW（Enes Çetin，土耳其独立开发者）",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 49.00",
+            "release_date": "已发售 · 2026 年 7 月 16 日",
+            "steam_rating": "1283 reviews",
+            "steam_url": "https://store.steampowered.com/app/4210580",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4210580/b305646840dc9db685bc40596da7bdaea388c694/header.jpg?t=1786782809",
+            "youtube_video": null,
+            "description": "《矿石工厂小队》是一款合作型采矿和工厂建设游戏，核心玩法为程序生成的采矿系统！单人游玩或与朋友一起玩，购买地产，深入挖掘有价值的资源，完成合同，升级并自动化生产线，将你的工厂发展成庞大的工业帝国！\n\n【核心玩法】以采矿与矿石加工为核心的自动化基地建设：规划矿脉开采、铺设产线、升级设备，把小矿洞逐步扩张成自动化矿石工厂，主打「看着产线转起来」的解压循环。\n\n【市场表现】发售首月交出一份独游教科书级成绩单：销量 15 万+、历史峰值同时在线 8703 人、1388 条评测 90.1% 特别好评，进入 Steam 7 月最热新品前 50（铜牌）。以 $12.99 定价粗算，首月毛收入已达百万美元量级。\n\n【优势】自动化品类受众黏性极高；定价与内容体量匹配；开发者亲自公开数据，社区信任度高。\n【不足】品类正面硬刚《幸福工厂》《异星工厂》等巨头，差异化主要靠轻量化与低价；单人团队后续内容更新节奏待观察。\n\n【综合】自动化赛道「大厂做深度、独游做轻快」策略的又一成功样本：不硬拼体量，用 $12.99 的价格锚点吃下休闲自动化玩家。",
+            "why_notable": "独游自动化游戏首月 15万+ 销量、峰值在线 8703，用低价轻量化策略在巨头品类里切出一块市场",
+            "pcu": "8,703（历史峰值）",
+            "estimated_sales": "150,000+（开发者公布首月销量）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Goomboo · 工具开发者",
+          "tags": [
+            "Aseprite",
+            "像素动画",
+            "插件"
+          ],
+          "title": "Asemulator v1.0.0 定档 8月28日：在 Aseprite 里直接试玩你的动画精灵",
+          "en_title": "#Asemulator v1.0.0 releases on August 28th! The Top-down and Side-scroller templates will be available on the same date.",
+          "full_text": "#Asemulator v1.0.0 releases on August 28th! 🎉\n\nThe Top-down and Side-scroller templates will be available on the same date.\n\nGet ready to preview, test and share your characters' animated sprites in context, directly in @aseprite!\n\nReposts highly appreciated~",
+          "author": "MapleGecko",
+          "date": "2026-08-18",
+          "likes": 10802,
+          "views": 813492,
+          "link": "https://x.com/MapleGecko/status/2088742868965798150",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2088741517816954882/img/sFDqnkxpsolsWPBi.jpg",
+            "video_url": "https://x.com/MapleGecko/status/2088742868965798150/video/1"
+          },
+          "summary": "Goomboo 宣布 Aseprite 插件 Asemulator v1.0.0 将于 8月28日发布，俯视与横版卷轴两套模板同日上线。它让像素画师直接在 Aseprite 内以游戏上下文预览、测试并分享角色动画。推文获 81 万浏览、1.08 万赞。",
+          "analysis": "像素动画工作流长期存在「画完导出进引擎才能看效果」的断点，Asemulator 把验证环节前移到绘制工具内部。工具与引擎的边界模糊化，是近两年像素独游工具链的共同方向，81 万浏览说明痛点真实存在。",
+          "recommendation": "Aseprite 插件 Asemulator 1.0 定档 8/28：画完动画直接在编辑器里试玩——81万浏览",
+          "featured": true
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Roblox 问责连续剧再升级**\n《To Catch a Predator》主持人 Chris Hansen 在演讲进行中被 Roblox 当场封号（157万浏览）。从封禁安全志愿者 Schlep、参议院启动调查，到如今对合作调查的知名主持人下手，平台的「封号式公关」正把社区事件推向全国新闻。\n\n**索尼的双重烦恼**\nCEO 十时裕树对《华尔街日报》确认：受内存危机影响，PS6 连内部发售日期都还没有；另一边，乌克兰独游厂商 Ternox Games 被无预警终止协议，13 款游戏 8月23日后从 PS Store 下架且申诉无门——硬件节奏与平台治理同时承压。\n\n**AI 基建大交易 + 编程新样本**\nStripe 敲定超 70 亿美元收购模型路由平台 OpenRouter（800万开发者、400+模型），价格是其 3 月估值的 5 倍；开发者实测 Grok 4.6 一个周末产出 Three.js 千敌同屏射击原型，UI/特效/音效全包。\n\n**独游亮点**\n2人10年磨出的免费 2D MMO《Soul's Remnant》上线即获特别好评（峰值 4367 人在线）；昆虫生存 MMO《The Undergrowth》71 万浏览验证题材差异化；集英社发行《UN:Me》把多重人格做成核心规则；《Ore Factory Squad》首月销量 15万+。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
