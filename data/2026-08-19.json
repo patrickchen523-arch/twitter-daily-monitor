@@ -1,0 +1,456 @@
+{
+  "date": "2026-08-19",
+  "meta": {
+    "raw_count": 224,
+    "filtered_count": 195,
+    "selected_count": 12,
+    "crawl_time": "2026-08-19 10:35"
+  },
+  "lede": "Claude Code 创造者亲授 28 分钟 prompt 实战课：CLAUDE.md、记忆技巧、并行会话——224万浏览\n网易《无限大 ANANTA》新实机：无缝切人、都市漫游，确认登 gamescom ONL——51万浏览\nJonathan Blow 十年磨一剑：《Order of the Sinking Star》定档 10月8日，1000+ 手工谜题",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 2,
+      "hook": "Claude Code 创造者亲授 28 分钟 prompt 实战课：CLAUDE.md、记忆技巧、并行会话——224万浏览"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "网易《无限大 ANANTA》新实机：无缝角色切换+都市漫游，确认登 gamescom ONL"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "Jonathan Blow 十年新作《Order of the Sinking Star》定档 10/8：1000+ 手工谜题织成四个世界"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Cursor 推出代码托管平台 Origin：GitHub 双向同步、PR 全流程内置，发布当天恰逢 GitHub 宕机\nTypeGPU 实测：单目深度模型压到 8ms，AI 推理不出 GPU 直接进光照 pass\nClaude Code 创造者亲授 28 分钟 prompt 实战课，西语区疯转 224 万浏览"
+    },
+    {
+      "id": "industry",
+      "text": "网易《无限大 ANANTA》新实机曝光：无缝角色切换+都市漫游，确认登 gamescom ONL\n沉浸式模拟之父 Warren Spector 宣布退休：44年生涯谢幕，「游戏还远未被解决」\nRockstar 被裁员工喊话：别抵制 GTA 6，买工会 T 恤资助官司\n《影之刃零》定档 10月29日：State of Play 深潜战斗系统，登 Steam 周销榜第一"
+    },
+    {
+      "id": "indie",
+      "text": "Jonathan Blow 十年新作《Order of the Sinking Star》定档 10/8：1000+ 手工谜题、四个世界交织\n猫视角恐怖《Meowmories》8/20 发售：对麦克风「喵」一声可以定住怪物\n《Layoff Revenge!》：被裁员前的 15 分钟，4人合作把黑心公司搞崩\nJeff Kaplan 西部生存新作《The Legend of California》9月17日开测"
+    },
+    {
+      "id": "tools",
+      "text": "中国开发者开源 MoneyPrinterTurbo 破 10.8 万星：一句话主题一键生成带配音字幕的短视频"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Tony出海 · 中文原创",
+          "tags": [
+            "Cursor",
+            "代码托管",
+            "Agent"
+          ],
+          "title": "Cursor 推出代码托管平台 Origin：从编辑器一路吃到仓库层",
+          "en_title": "Cursor 推出代码托管平台 Origin，可以说Cursor 这个品牌会独立发展，不会被马斯克取消。",
+          "full_text": "Cursor 推出代码托管平台 Origin，\n可以说Cursor 这个品牌会独立发展，不会被马斯克取消。\n\n微软抱着金矿 github 不开发，cursor 要来挖，AI 编程又有新的变化。\n\n不只是另一个 Git 托管。\n它快、简单，并与 Cursor 深度融为一体——你的代码、PR、Agent 现在都在同一个地方。\n\n核心能力： • 创建 Origin 仓库 或一键从 GitHub 同步（实时双向同步）\n • 完整 PR 流程（diff、评论、合并），在 Cursor 内直接完成\n • 代码浏览 + 搜索\n • 已支持 Vercel、Buildkite、Depot 等顶级集成\n • 专为 Agent 规模设计，后续更多 Agent-native 功能即将到来\n\n适用于 Pro / Teams / Enterprise 用户（免费计划暂不支持，分阶段开放）。",
+          "author": "iamtonyzhu",
+          "date": "2026-08-19",
+          "likes": 6,
+          "views": 1530,
+          "link": "https://x.com/iamtonyzhu/status/2089506768225489004",
+          "media": null,
+          "summary": "Cursor 于 8月17日发布 AI 原生的代码托管平台 Origin（VentureBeat、SiliconAngle 等多方证实）：仓库、PR、评审、合并、CI 集成全部收进 Cursor 编辑器内，支持与 GitHub 实时双向同步，面向付费用户分阶段开放。发布当天恰逢 GitHub 大规模宕机，时机微妙。Tony出海点评：Cursor 品牌将独立发展，这笔账是冲着微软抱着 GitHub 金矿不开发去的。",
+          "analysis": "AI 编程工具开始向上吃掉代码托管层：当 Agent 能完成从 prompt 到合并 PR 的全流程，托管平台留在浏览器里就成了断点。需要注意的是，TechTimes 指出 Origin 上线时未公布数据保留与训练使用条款——团队代码托管到 SpaceX 系公司前，数据政策值得先看清楚。",
+          "recommendation": "Cursor 推出 AI 原生代码托管 Origin，发布当天恰逢 GitHub 宕机",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Konrad Reczko · 开发者实测",
+          "tags": [
+            "TypeGPU",
+            "实时渲染",
+            "端侧推理"
+          ],
+          "title": "TypeGPU 实测：单目深度模型压到 8ms，AI 推理不出 GPU 直接进光照 pass",
+          "en_title": "Depth-aware light injection in TypeGPU — inference, lighting and draw all go through the same command encoder.",
+          "full_text": "Depth-aware light injection in TypeGPU\n\nI got a 448x448 monocular depth model down to ~8 ms on my M4 Pro across ~250 dispatches, which is fast enough to use in realtime :D\nSince the inference is written directly in TypeGPU, I can just feed the depth buffer straight into the lighting pass. It never has to leave the GPU or go through any extra synchronization/interop step\n\nInference, lighting and draw all go through the same command encoder.",
+          "author": "reczko_konrad",
+          "date": "2026-08-19",
+          "likes": 6722,
+          "views": 279447,
+          "link": "https://x.com/reczko_konrad/status/2089670934009413751",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2089664214595932160/img/yoQwL7vTVdvLaKw0.jpg",
+            "video_url": "https://x.com/reczko_konrad/status/2089670934009413751/video/1"
+          },
+          "summary": "开发者 Konrad Reczko 展示 TypeGPU 的深度感知光照注入：448×448 单目深度模型在 M4 Pro 上跑到约 8ms（约 250 次 dispatch），推理直接写在 TypeGPU 里，深度缓冲不离开 GPU 就送进光照 pass——推理、光照、绘制走同一条 command encoder。推文获 28 万浏览。",
+          "analysis": "端侧 AI 推理进入渲染管线的范式样本：没有 CPU 往返、没有跨框架同步，ML 模型成为渲染图的一个普通节点。对实时渲染而言，这意味着神经渲染特性（深度估计、超分、风格化）可以像写一个 compute shader 一样被组合进现有管线。",
+          "recommendation": "AI 推理不出 GPU 直接进渲染管线：TypeGPU 深度模型 8ms 实时跑通",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Sweex · 西语科技号",
+          "tags": [
+            "Claude Code",
+            "Prompt工程",
+            "教程"
+          ],
+          "title": "Claude Code 创造者亲授 28 分钟 prompt 实战课，西语区疯转 224 万浏览",
+          "en_title": "El ingeniero que creó Claude Code desde cero acaba de soltar un video de 28 minutos que es puro oro: cómo escribir prompts que realmente entregan resultados brutales.",
+          "full_text": "🚨¡BOMBAZO! El ingeniero que creó Claude Code desde cero acaba de soltar un video de 28 minutos que es puro oro:\n\n cómo escribir prompts que realmente entregan resultados brutales.\n\nHe visto cursos de 300 dólares que no llegan ni a la suela de lo que él explica en los primeros 10 minutos.\n\nArchivos CLAUDE.md, atajos de memoria, sesiones paralelas y patrones de prompting que casi nadie usa…\n\nTodo en un solo video. Completamente gratis. Sin relleno.\n\nDa igual si eres desarrollador, estás empezando o ya llevas meses con Claude: esto te cambia el juego desde hoy.\n\nGuárdate. Míralo. Compártelo.",
+          "author": "sweexx9",
+          "date": "2026-08-19",
+          "likes": 22011,
+          "views": 2238456,
+          "link": "https://x.com/sweexx9/status/2089430704325013524",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2089430269338001408/img/IuxshEjEifApDeqH.jpg",
+            "video_url": "https://x.com/sweexx9/status/2089430704325013524/video/1"
+          },
+          "summary": "Claude Code 的创造者发布了一段 28 分钟的免费视频，系统讲解如何写出真正出活的 prompt：CLAUDE.md 文件、记忆技巧、并行会话、以及鲜有人用的提示模式。西语科技号 Sweex 的推荐帖称「300 美元的课程不如前 10 分钟」，推文获 224 万浏览、2.2 万赞。",
+          "analysis": "「工具创造者亲自教用法」成为 AI 工具分发的新范式——官方教学内容经社区账号二次传播后的能量远超官方渠道。对正在把 Claude Code 接进工作流的团队，这 28 分钟是当前信息密度最高的上手材料。",
+          "recommendation": "Claude Code 创造者亲授 28 分钟 prompt 实战课：CLAUDE.md/记忆/并行会话——224万浏览",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Danny · 资讯博主",
+          "tags": [
+            "网易",
+            "ANANTA",
+            "开放世界"
+          ],
+          "title": "网易《无限大 ANANTA》新实机：无缝角色切换+都市漫游，将登 gamescom ONL",
+          "en_title": "🚨 ANANTA Gameplay! Seamless character switching, aerial city views, riding around the city on a small vehicle...",
+          "full_text": "🚨 ANANTA Gameplay!\n\nThe demo shows off the game’s vibrant open-world city, with the player freely exploring busy streets, interacting with the environment and switching between playable characters.\n\nWe also get a look at:\n• Seamless character switching\n• Different character-specific locations/interactions\n• Aerial city views\n• Relaxing on benches with character animations\n• Riding around the city on a small vehicle 🛵\n• NPC interactions and dialogue options\n\nANANTA’s world is looking more alive with every new gameplay clip. 👀🔥",
+          "author": "DannyINTEL",
+          "date": "2026-08-19",
+          "likes": 6877,
+          "views": 511143,
+          "link": "https://x.com/DannyINTEL/status/2089421052594020610",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2089420973409808384/img/EavI7wJ8vch2hQ-Y.jpg",
+            "video_url": "https://x.com/DannyINTEL/status/2089421052594020610/video/1"
+          },
+          "summary": "网易都市开放世界 RPG《无限大 ANANTA》新实机流出：无缝角色切换、不同角色有专属场景与交互、空中俯瞰城市、街边长椅动画、骑小摩托穿城、NPC 对话选项等。推文获 51 万浏览、近 7 千赞；另据法米通，本作已确认登上 gamescom 2026 的 Opening Night Live 官方直播。",
+          "analysis": "从实机完成度看，《无限大》的都市沉浸感正在向「二次元 GTA」的定位收敛——角色切换即玩法切换的设计如果成立，会是开放世界二游的一次结构升级。gamescom ONL 登场意味着全球发行节奏正式启动。",
+          "recommendation": "网易《无限大 ANANTA》新实机：无缝切人+都市漫游，确认登 gamescom ONL",
+          "featured": true,
+          "game_ref": "ANANTA"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 游戏媒体",
+          "tags": [
+            "Warren Spector",
+            "退休",
+            "沉浸式模拟"
+          ],
+          "title": "沉浸式模拟之父 Warren Spector 宣布退休：「游戏还远未被解决」",
+          "en_title": "\"I'm pretty sure I mean it\" - Legendary game developer Warren Spector announces retirement",
+          "full_text": "\"I'm pretty sure I mean it\" - Legendary game developer Warren Spector announces retirement",
+          "author": "eurogamer",
+          "date": "2026-08-19",
+          "likes": 18,
+          "views": 6809,
+          "link": "https://x.com/eurogamer/status/2089639296873480673",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HP_j234XAAESsLx.png"
+          },
+          "summary": "《Deus Ex》《System Shock》《Ultima Underworld》核心开发者 Warren Spector 在 LinkedIn 发布长文宣布退休：下月就是他入行的第 44 年，共做了 17 款正式作品和约 9 个扩展包。他坦言还有三款想做的游戏（「一款很大、一款很小、一款我不知道怎么做」），但「这个行业已经变了，对我不再那么有趣」。",
+          "analysis": "Spector 的谢幕作《Thick as Thieves》商业失利、团队裁员的背景，让这次退休带着明显的时代凉意——沉浸式模拟的祖师爷没能等到品类的下一个春天。他留给年轻开发者的话值得贴在墙上：「你们的工作，是让人们忘记像我这样的人曾经存在过。」",
+          "recommendation": "沉浸式模拟之父 Warren Spector 退休：44年、17款作品，「游戏还远未被解决」",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · 游戏媒体",
+          "tags": [
+            "Rockstar",
+            "GTA6",
+            "工会"
+          ],
+          "title": "Rockstar 被裁员工喊话玩家：别抵制 GTA 6，买工会 T 恤资助官司",
+          "en_title": "Don't boycott Grand Theft Auto 6, say workers fired by Rockstar - buy a T-shirt to help fund the legal battle instead",
+          "full_text": "Don't boycott Grand Theft Auto 6, say workers fired by Rockstar - buy a T-shirt to help fund the legal battle instead",
+          "author": "eurogamer",
+          "date": "2026-08-19",
+          "likes": 14,
+          "views": 6290,
+          "link": "https://x.com/eurogamer/status/2089706535395991807",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQAhAfhWkAAI4Ad.png"
+          },
+          "summary": "去年因「严重不当行为」被裁的 31 名 Rockstar 员工（均为工会成员）通过 IWGB 工会发声：呼吁玩家不要抵制 GTA 6——「我们花了数年心血打造这个世界，希望人们去体验它」，但请购买工会 T 恤资助正在进行的雇佣法庭诉讼。Rockstar 否认所有「破坏工会」指控，Take-Two 老板 Zelnick 公开表示不担心官司影响 GTA 6 销量。",
+          "analysis": "被裁员工主动给「抵制 GTA6」降温，是劳工运动的成熟打法：把玩家情绪从伤害产品（也伤害自己作品）引导到资助法律战。GTA 6 发售越近，这场劳资诉讼的舆论杠杆越大，值得持续跟踪。",
+          "recommendation": "Rockstar 被裁员工：别抵制 GTA 6——买件工会 T 恤资助官司就好",
+          "featured": false
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "PC Gamer · 游戏媒体",
+          "tags": [
+            "影之刃零",
+            "定档",
+            "State of Play"
+          ],
+          "title": "《影之刃零》定档 10月29日：State of Play 深潜战斗系统，登 Steam 周销榜第一",
+          "en_title": "Phantom Blade Zero shows off its interconnected game world and hand-painted in-game maps",
+          "full_text": "Phantom Blade Zero shows off its interconnected game world and hand-painted in-game maps",
+          "author": "pcgamer",
+          "date": "2026-08-19",
+          "likes": 20,
+          "views": 22105,
+          "link": "https://x.com/pcgamer/status/2089546333950767417",
+          "media": null,
+          "summary": "S-Game《影之刃零》在 8月17日专属 State of Play 深潜中展示了互联世界与手绘地图、55 种以上武器、三档难度与重铸系统，甄子丹出演 Mo Yuan，并确认 10月29日登陆 PS5/PC（PlayStation Blog 证实）。预购开启后本作冲上 Steam 周销榜（8.11-8.18）第一位。",
+          "analysis": "国产动作游戏拿到 PlayStation 专属 SoP 资源位 + 全球预购登顶，说明索尼在「后黑神话时代」持续押注中国单机。《影之刃零》10/29 的档期卡在传统 3A 空窗期，首周表现将是国产买断制出海的下一个关键数据点。",
+          "recommendation": "《影之刃零》定档 10/29：甄子丹出演，预购冲上 Steam 周销榜第一",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "電ファミニコゲーマー · 游戏媒体",
+          "tags": [
+            "解谜",
+            "Jonathan Blow",
+            "定档"
+          ],
+          "title": "Order of the Sinking Star：Jonathan Blow 十年新作定档 10月8日，1000+ 手工谜题",
+          "en_title": "『The Witness』開発者による新作『Order of the Sinking Star』が10月8日に発売決定",
+          "full_text": "『The Witness』開発者による新作『Order of the Sinking Star』が10月8日に発売決定。PS5、PC（Steam）、Nintendo Switch 2向けに展開\n\n10年かけて開発されてきた見下ろし視点のパズルゲーム。1000個以上ものパズルが収録された広大な世界を、数百時間にわたって楽しめる",
+          "author": "denfaminicogame",
+          "date": "2026-08-19",
+          "likes": 265,
+          "views": 60421,
+          "link": "https://x.com/denfaminicogame/status/2089728893876130202",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2089728849731039232/pu/img/sn0dnH2L3zi6e8Qk.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2089728893876130202/video/1"
+          },
+          "summary": "Thekla 宣布《Braid》《The Witness》作者 Jonathan Blow 的十年新作《Order of the Sinking Star》10月8日发售，登陆 PS5/Steam/Switch 2。俯视视角解谜冒险，收录 1000+ 手工谜题、四个机制各异且逐渐交织的世界，数百小时体量，Steam 体验版已上架。",
+          "analysis": "",
+          "recommendation": "Jonathan Blow 十年新作定档 10/8：1000+ 手工谜题织成四个互相渗透的世界",
+          "featured": true,
+          "game_ref": "Order of the Sinking Star",
+          "enrichment": {
+            "game_name": "Order of the Sinking Star",
+            "genre": "解谜冒险 / 俯视视角 / 叙事",
+            "developer": "Thekla（Jonathan Blow 工作室；Arc Games / Gamirror Games 联合发行）",
+            "platforms": [
+              "Steam",
+              "PS5",
+              "Switch 2"
+            ],
+            "price": "未公布",
+            "release_date": "2026年10月8日",
+            "steam_rating": "未发售（体验版已上架）",
+            "steam_url": "https://store.steampowered.com/app/499170/Order_of_the_Sinking_Star/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/499170/deda420d9e42288f4734a068c707f4c156203969/header.jpg?t=1787060623",
+            "youtube_video": null,
+            "description": "【核心玩法】俯视视角的解谜冒险：1000 多个由业界解谜设计师手工打造的谜题，散布在广阔且相互连接的世界中。世界内存在四个各自拥有独立机制、角色与故事的区域，随着探索深入，四个世界逐渐交汇，谜题机制也随之复杂纠缠，产生此前不存在的解法。\n\n【结构特色】探索顺序与推进节奏完全交给玩家——在一个世界卡关时可以转去另一个世界继续。女王、盗贼、战士、魔法使甚至「会说话的船」等角色各具能力，组合使用是解谜关键；叙事与玩法紧密耦合，收集手记逐步揭示世界的谜团。\n\n【开发背景】《Braid》《The Witness》作者 Jonathan Blow 领衔 Thekla 耗时十年打造，官方口径为「数百小时」体量。发售纪念将由 Blow 本人在 Twitch 直播并回答提问。\n\n【优势】解谜品类的殿堂级作者背书；手工谜题 × 世界交织的结构设计罕见；体验版已可验证手感。\n【不足】纯解谜品类的市场天花板有限；「数百小时」体量对普通玩家是门槛。\n\n【综合】解谜游戏史上投入最重的项目之一，它能否把「硬核解谜」重新变成大众话题，是十月最值得观察的产品实验。",
+            "why_notable": "《The Witness》作者十年磨一剑，1000+ 手工谜题 + 四世界机制交织的结构设计，是解谜品类天花板级的产品实验",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "電ファミニコゲーマー · 游戏媒体",
+          "tags": [
+            "恐怖",
+            "麦克风",
+            "8月20日发售"
+          ],
+          "title": "Meowmories：猫视角恐怖冒险明日发售，对麦克风「喵」一声可以定住怪物",
+          "en_title": "「ネコ」となり悪夢の世界を巡るホラーゲーム『Meowmories』8月20日に発売決定",
+          "full_text": "「ネコ」となり悪夢の世界を巡るホラーゲーム『Meowmories』8月20日に発売決定。マイクに向かって「にゃあ」と鳴けば、怪物を足止めできる\n\n異形の怪物から逃げながら、離れ離れになってしまった飼い主との再会を目指す。主人公のネコと飼い主には名前を付けることも",
+          "author": "denfaminicogame",
+          "date": "2026-08-19",
+          "likes": 4964,
+          "views": 472493,
+          "link": "https://x.com/denfaminicogame/status/2089609649398198728",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2089609624978857984/pu/img/oK47Tr40wgOHwHnf.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2089609649398198728/video/1"
+          },
+          "summary": "日本 2 人团队 Team Memolink 的猫视角恐怖冒险《Meowmories》将于 8月20日 22 时（JST）在 Steam 发售，首两周 7 折。玩家扮演与主人失散的猫，在噩梦世界中边逃边记路线；特色机制是朝麦克风「喵」一声可以暂时定住怪物（非必需，纯按键也可通关）。推文获 47 万浏览。",
+          "analysis": "",
+          "recommendation": "猫视角恐怖《Meowmories》明日发售：对麦克风「喵」一声定住怪物——47万浏览",
+          "featured": true,
+          "game_ref": "Meowmories",
+          "enrichment": {
+            "game_name": "Meowmories",
+            "genre": "恐怖冒险 / 潜行 / 猫模拟",
+            "developer": "Team Memolink",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "2026年8月20日",
+            "steam_rating": "即将发售（Demo 已上架）",
+            "steam_url": "https://store.steampowered.com/app/4110900",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4110900/76ff57521c6b35c39f91cb09c8306ba61b49773c/header.jpg?t=1786972498",
+            "youtube_video": null,
+            "description": "扮演一只猫，在一次次失败中记住敌人的位置和逃生路线，并快速重试以穿越噩梦。对着麦克风“喵”一声或按下按钮即可暂时阻止怪物，同时追寻猫咪与失散主人之间的回忆。\n\n【核心玩法】扮演与主人走散的猫，在噩梦世界中寻找重逢之路。潜行+试错是主循环：躲避异形怪物、观察它们的行动模式、记住逃跑路线；利用只有猫能通过的缝隙与高处开辟路径。收集散落在世界中的「回忆之物」会改变结局（共 3 种结局）。\n\n【特色机制】猫的「扫描」能感知周围敌人与道具位置，但扫描的同时也会向怪物暴露自己——风险收益并存。最出圈的设计：对着麦克风「喵」一声可以暂时定住逼近的怪物（非强制，纯按键也能通关）。难度分 KITTEN / CAT / MEOWMARE 三档，可随时切换。\n\n【开发背景】日本 2 人独立团队 Team Memolink 作品；商店页明确承诺无血腥、无伤痛惨叫等残酷描写（猫被袭击会化作烟消散）。\n\n【优势】猫主角+恐怖的组合自带传播力；麦克风叫声交互是直播友好的天然梗；三结局+难度分层的完成度超出小品体量。\n【不足】2 人团队的内容量与优化待验证；潜行恐怖品类竞争激烈。\n\n【综合】「麦克风学猫叫定怪」是今年恐怖小品里最聪明的可传播设计之一，明天发售后的主播二创表现值得观察。",
+            "why_notable": "猫×恐怖×麦克风叫声交互的组合自带直播传播力，47 万浏览已验证题材吸引力，发售日就是明天",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "ファミ通.com · 游戏媒体",
+          "tags": [
+            "合作",
+            "恶搞",
+            "职场"
+          ],
+          "title": "Layoff Revenge!：被裁员前的 15 分钟，4人合作把黑心公司搞崩",
+          "en_title": "【最大4人協力】クビになるまでの15分間にオフィスにイタズラを仕掛ける『Layoff Revenge!』発表",
+          "full_text": "【最大4人協力】クビになるまでの15分間にオフィスにイタズラを仕掛ける『Layoff Revenge!』発表。ブラック企業許すまじ\n\nIDカードが機能するあいだにイタズラを仕掛け、上司をブチ切れさせるのが目的。上司のさらに上司までもイラつかせ会社を崩壊させる。",
+          "author": "famitsu",
+          "date": "2026-08-19",
+          "likes": 897,
+          "views": 117069,
+          "link": "https://x.com/famitsu/status/2089639830183682277",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2089639792623710208/pu/img/7_JH98ix71X7Ozoe.jpg",
+            "video_url": "https://x.com/famitsu/status/2089639830183682277/video/1"
+          },
+          "summary": "Gamirare 公布最多 4 人合作的恶搞动作游戏《Layoff Revenge!》：你是突然被裁的员工，工卡失效前只有 15 分钟——在办公室里撒纸、涂鸦、改打印机设置来填满上司的「愤怒值」，一层层向上，直到让「从没为自己行为负过责」的顶楼人物崩溃。Steam 页已开，发售日未定。",
+          "analysis": "",
+          "recommendation": "《Layoff Revenge!》：裁员前最后 15 分钟的办公室复仇，4人合作气炸老板",
+          "featured": true,
+          "game_ref": "Layoff Revenge!",
+          "enrichment": {
+            "game_name": "Layoff Revenge!",
+            "genre": "合作恶搞 / 潜行恶作剧 / 动作",
+            "developer": "Gamirare",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "即将宣布",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5041700",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5041700/635a04a4b8c5e28cbd12d6ac8dc5b2a25787466f/header.jpg?t=1786956544",
+            "youtube_video": null,
+            "description": "被解雇了！但你的门禁卡还能用15分钟。单人挑战或最多4人组队，在时间耗尽前破坏你的经理。用恶作剧填满他的&quot;愤怒&quot;槽，同时把&quot;怀疑&quot;压到最低。一层层往上爬，让整个公司崩塌。\n\n【核心玩法】15 分钟倒计时恶作剧：你是刚被裁的员工，在工卡失效前对黑心公司展开最后的复仇。撒文件、涂鸦墙壁、改打印机设置，每搞一次破坏就推高上司的「RAGE 值」——填满即过关，向上一层楼进发。\n\n【潜行与社交】办公室还有其他同事上班，被目击会累积「怀疑值」——可以用甜甜圈和咖啡收买同事转移视线。楼层越高，上司越大牌、办公区越窄、同事越警觉，难度螺旋上升。顶楼等着的是「人生中从未为自己的行为负过一次责的人」。\n\n【合作模式】最多 4 人组队——都是同时被裁的「战友」，需要互相打掩护完成恶作剧链。\n\n【优势】题材精准踩中全球裁员潮的时代情绪；恶作剧×潜行的复合玩法在《Untitled Goose Game》后已被验证；合作模式放大直播效果。\n【不足】发售日未定，内容量未知；单一办公室场景能否撑起重复游玩待验证。\n\n【综合】用喜剧包装职场愤怒的合作小品，题材共鸣度在当下的行业环境里几乎是满分。",
+            "why_notable": "「被裁员后报复黑心公司」的题材精准踩中行业情绪，恶作剧×潜行×4人合作的组合直播效果可期",
+            "pcu": "暂未发售"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "Survival Game News · 品类媒体",
+          "tags": [
+            "Jeff Kaplan",
+            "生存",
+            "测试招募"
+          ],
+          "title": "The Legend of California：前守望先锋总监 Jeff Kaplan 的西部生存新作 9月17日开测",
+          "en_title": "Former Overwatch director Jeff Kaplan has announced an alpha test for his Western survival game.",
+          "full_text": "Former Overwatch director Jeff Kaplan has announced an alpha test for his Western survival game.\n\n- It will introduce first endgame systems, including new legendary and rare items\n- The Legend of California playtest will run from September 17–21, with signups available on Steam",
+          "author": "SurvivalGN",
+          "date": "2026-08-19",
+          "likes": 1475,
+          "views": 170335,
+          "link": "https://x.com/SurvivalGN/status/2089362941208310069",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HP7n4cVXgAAIzJR.jpg"
+          },
+          "summary": "前《守望先锋》总监 Jeff Kaplan 的西部生存游戏《The Legend of California》宣布 9月17日-21日开启 Alpha 测试，Steam 已开放报名。本次测试将首次引入终局系统，包括新的传说与稀有物品。推文获 17 万浏览。",
+          "analysis": "",
+          "recommendation": "Jeff Kaplan 西部生存新作《The Legend of California》9/17 开测，Steam 开放报名",
+          "featured": false,
+          "game_ref": "The Legend of California",
+          "enrichment": {
+            "game_name": "The Legend of California",
+            "genre": "开放世界生存 / 西部 / 在线",
+            "developer": "Kintsugiyama",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "即将推出",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/2550530",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2550530/f696bb757fa0d384eeb2e828b03e4ca199d65ab4/header.jpg?t=1786931637",
+            "youtube_video": null,
+            "description": "The Legend of California is an open world, action-survival shooter set on the mythical Island of California during the gold rush era. Explore a vast, untamed frontier and forge your legacy alone or with friends.\n\n【核心定位】前《守望先锋》游戏总监 Jeff Kaplan 离开暴雪后的新作：西部题材的开放世界生存游戏。本次 Alpha 测试将首次开放终局内容，包括传说与稀有品质物品——意味着游戏已具备「前期生存 → 后期刷装」的循环骨架。\n\n【测试信息】9月17日-21日限时 Alpha，Steam 页面已开放报名。终局系统首秀说明开发进入中后期验证阶段。\n\n【优势】Kaplan 的个人号召力在射击/在线玩家人群中仍是顶级；西部题材在生存品类中差异化明确（不同于泛滥的丧尸/荒岛）。\n【不足】生存品类竞争极其惨烈；团队规模、发行模式（买断/F2P）均未公布；Alpha 版本完成度待验证。\n\n【综合】「暴雪老兵做生存」是近年最受关注的转型实验之一，9 月测试的口碑将直接决定这款游戏的市场预期。",
+            "why_notable": "Jeff Kaplan 离开暴雪后的首个公开测试节点，西部生存题材 + 终局系统首秀，17 万浏览验证关注度",
+            "pcu": "暂未发售"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "roman · 西语科技号",
+          "tags": [
+            "开源",
+            "AI视频",
+            "GitHub"
+          ],
+          "title": "中国开发者开源 MoneyPrinterTurbo 破 10.8 万星：一句话主题一键生成带配音字幕的短视频",
+          "en_title": "Un desarrollador chino acaba de lanzar una herramienta GRATUITA capaz de crear vídeos automáticamente para TikTok, Reels y YouTube Shorts. Se llama MoneyPrinterTurbo.",
+          "full_text": "🚨ESTO ES UNA LOCURA\n\nUn desarrollador chino acaba de lanzar una herramienta GRATUITA capaz de crear vídeos automáticamente para TikTok, Reels y YouTube Shorts.\n\nSe llama MoneyPrinterTurbo.\n\nY ya ha superado las 100.000 estrellas en GitHub.\n\nAsí funciona:\n\n1. Introduces un tema o una palabra clave\n2. La IA genera el guion, la narración y los subtítulos\n3. Busca el material visual, edita el vídeo y te entrega el resultado final\n\nTodo ocurre en un único flujo de trabajo.",
+          "author": "Nozelcode",
+          "date": "2026-08-19",
+          "likes": 7259,
+          "views": 611570,
+          "link": "https://x.com/Nozelcode/status/2089389291067544039",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2089388979326013440/img/-jREBStpu8Pf0-zB.jpg",
+            "video_url": "https://x.com/Nozelcode/status/2089389291067544039/video/1"
+          },
+          "summary": "西语科技号 roman 推荐中国开发者 harry0703 的开源项目 MoneyPrinterTurbo：输入主题或关键词，AI 自动生成脚本、配音、字幕，再自动检索素材、剪辑出片，一条流水线产出 TikTok/Reels/Shorts 成品。GitHub API 实测当前 108,695 星、16,503 fork，MIT 协议。推文获 61 万浏览。",
+          "analysis": "短视频「一键生成」流水线是中国开源出海跑通的代表品类之一。对游戏团队的价值不在营销号内容本身，而在其素材检索+自动剪辑的工作流可改造为游戏买量素材的批量产出管线——108K 星意味着社区已经把坑踩得差不多了。",
+          "recommendation": "开源 MoneyPrinterTurbo 破 10.8 万星：一句话主题自动生成配音短视频全流程",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI 编程的边界日**\nCursor 发布 AI 原生代码托管平台 Origin，把仓库、PR、CI 全部收进编辑器（发布当天恰逢 GitHub 宕机）；Claude Code 创造者亲授 28 分钟 prompt 实战课被西语区疯转 224 万次；TypeGPU 把单目深度模型压到 8ms、推理不出 GPU 直接进渲染管线。工具层、教学层、渲染层同一天都有新样本。\n\n**行业的人和事**\n网易《无限大 ANANTA》新实机展示无缝角色切换与都市漫游，确认登 gamescom ONL；沉浸式模拟之父 Warren Spector 宣布退休，44 年生涯谢幕；Rockstar 被裁员工喊话「别抵制 GTA 6，买工会 T 恤资助官司」；《影之刃零》定档 10月29日并冲上 Steam 周销榜第一。\n\n**新游四连**\nJonathan Blow 十年新作《Order of the Sinking Star》定档 10/8（1000+ 手工谜题）；猫视角恐怖《Meowmories》明日发售，对麦克风「喵」能定住怪物；《Layoff Revenge!》让你在被裁前 15 分钟搞垮黑心公司；Jeff Kaplan 的西部生存《The Legend of California》9月17日开测。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
