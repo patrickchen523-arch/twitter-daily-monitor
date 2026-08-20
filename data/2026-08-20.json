@@ -1,0 +1,466 @@
+{
+  "date": "2026-08-20",
+  "meta": {
+    "raw_count": 243,
+    "filtered_count": 200,
+    "selected_count": 12,
+    "crawl_time": "2026-08-20 18:30"
+  },
+  "lede": "GTA 6 实机与地图遭黑客泄露，官方深度展示定档 8月27日 Netflix；索尼《地平线》多人游戏砍掉 live-service 回炉重做；玩家在 Deadlock 里造出可联机的完整 Minecraft。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "GTA6 实机泄露挂满 memecoin 广告，黑客自称玩家权利遭 Stop Killing Games 切割"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "6人联机披萨餐厅经营今日发售：从揉面团到炒股、防黑手党——103万浏览"
+    },
+    {
+      "section_id": "tools",
+      "item_index": 0,
+      "hook": "用 Deadlock 模组工具造出可联机 Minecraft——123万浏览的 UGC 极限"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "陈成荐 Theo 实测：AI skills 的 description 字段本质是「触发器」，别照抄别贪多\nBox CEO：模型与终端工作流之间的价值层远大于预期，拆企业级落地五层工程\n国内「破甲模型」中转站被端：有人拿越狱模型实战攻击政府网站"
+    },
+    {
+      "id": "industry",
+      "text": "GTA 6 实机+地图泄露，黑客以「玩家权利」为名挂 memecoin 变现，8月27日 Netflix 官方展示\n索尼《Horizon Hunters Gathering》回炉：去 live-service 转传统合作，12月前须向高层证明自己\nArkane 老将 Harvey Smith 成立 Black Pony Immersive，专做沉浸式模拟\n60秒播片报价30万美元，FPS 开发者自建免费展会，育碧主动要求加入"
+    },
+    {
+      "id": "indie",
+      "text": "Pizza House Simulator 发售：6人联机披萨店经营，含股市投资与随机事件\nTwisted Tower 发售：Thomas Brush 五年之作，1950年代废弃主题乐园恐怖冒险\nHandlebar 公布：第一人称速降自行车 roguelike，传送门穿梭危险山道\nCar Park Capital 定档 10月9日 EA：讽刺停车资本主义的城市建造"
+    },
+    {
+      "id": "tools",
+      "text": "玩家在 Deadlock 内用模组工具造出可联机的完整 Minecraft，123万浏览"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "陈成 · 中文原创",
+          "tags": [
+            "AI工作流",
+            "Claude Code",
+            "Skills"
+          ],
+          "featured": true,
+          "title": "Theo 实测两套热门 AI skills 38分钟：description 字段该叫 trigger",
+          "en_title": "Theo 花一周把 Matt Pocock 和 PStack 两套 AI skills 装上用了一遍，录了 38 分钟，结论是别照抄",
+          "full_text": "Theo 花一周把 Matt Pocock 和 PStack 两套 AI skills 装上用了一遍，录了 38 分钟，结论是别照抄。\n\n1）别自己翻 README 挑。他让 Opus 5 审计自己三台机器上的真实使用历史，再对着两个仓库的 skill 列表出一份匹配度排名，每条附一句理由。挑出来的才是你手上在干的活。\n\n2）试一个 skill 不用装。SKILL.md 正文复制粘进对话就能跑。带脚本的多一步。\n\n3）这条我认为最值钱。description 这个字段名起错了，应该叫 trigger。模型平时只看得到名字和描述，靠它决定要不要把这个 skill 拉进上下文。所以描述的职责不是概括功能，是在该触发的时候触发。\n\n4）unslop 里有条自查标准。一句话如果原封不动放进另一个项目的文档里也成立，那它就没说出这个项目的任何事，删掉。\n\n5）blast radius 要求 agent 别信自己这段对话的历史记录，找出整个结论依赖的那一两个事实，跑代码证明。这条救过他几次。\n\n好笑的是，他在视频里数 Matt 那些 skill 文件的破折号，grilling 一页 9 个，几乎每段一个。他之前发过一条说 grill-me 很好用，但 slop 到把自己的 unslop 覆盖掉了。\n\n别一口气装 500 个。挑两个，读完再装。",
+          "author": "chenchengpro",
+          "date": "2026-08-19",
+          "likes": 37,
+          "views": 10062,
+          "comments": 22,
+          "shares": 8,
+          "link": "https://x.com/chenchengpro/status/2090042073583927318",
+          "media": null,
+          "summary": "陈成推荐 Theo 的 38 分钟实测视频：花一周装用 Matt Pocock 与 PStack 两套 AI skills 后总结的方法论。要点包括：让 Opus 5 审计本机真实使用历史、再对照 skill 列表生成匹配度排名来挑选；SKILL.md 正文直接粘贴进对话即可试用；description 字段本质是「trigger」——模型靠它决定是否把 skill 拉进上下文；unslop 自查标准（一句话放进别的项目文档也成立就删掉）；blast radius 要求 agent 找出结论依赖的关键事实并跑代码验证。",
+          "analysis": "对正在搭建 AI 工具链的团队，这条最值钱的是「description=trigger」的重新定性：skill 的命中率不取决于功能写得多全，而取决于触发条件写得准不准。「别一口气装 500 个，挑两个读完再装」也是 skill 生态膨胀下的清醒建议。",
+          "recommendation": "Theo 实测两套热门 AI skills：description 该叫 trigger，别照抄别贪多"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Box CEO · 观点",
+          "tags": [
+            "企业AI",
+            "Agent",
+            "行业观点"
+          ],
+          "title": "Box CEO：AI 模型与终端工作流之间的价值层比想象大得多",
+          "en_title": "the amount of value that can be created between the AI model and the ultimate end-user workflow is far larger than many people assumed",
+          "full_text": "As we're seeing in case study after case study, it turns out that the amount of value that can be created between the AI model and the ultimate end-user workflow is far larger than many people assumed or realized. \n\nModel capability is obviously doing a lot of heavy lifting in agentic products, but there's still a lot more work to diffuse AI into the enterprise.\n\n1. Getting agents to work well (and alongside people) in mission critical workflows tends to need to be represented differently depending on the business process. Sometimes it's a chat experience. Other times it's a background agent running in a deterministic workflow. And dozens of other variants. This is a mix of needing a harness that's tuned to specific domains of work, but also making it show up in the right product experience.\n\n2. Different workflows connect into entirely different enterprise systems and need access to very different data. Working with that data -whether it's life sciences, financial, legal, etc.- requires contextual approaches, understanding of the data, having the right user experience for data interaction, and more.\n\n3. The need for domain-specific change management remains critical in most verticals. The way you talk and implement technology at a bank is very different from a law firm. Having the right talent with a singular mission ends up being extremely useful for something as complex as process reengineering.\n\n4. The ability to work with a variety of models means you can tune the workflows to different cost and performance levels. And you can eventually post train models for specific tasks to tailor the outcomes and eke out gains that aren't coming otherwise in frontier models.\n\n5. Evals! AI is basically not useful if it can't be evaluated. Domain-specific evals that let you dramatically improve the performance of your harness for specific workflows just has a crazy long tail given how many tasks there are in the economy.",
+          "author": "levie",
+          "date": "2026-08-19",
+          "likes": 446,
+          "views": 80883,
+          "comments": 60,
+          "shares": 44,
+          "link": "https://x.com/levie/status/2089921630650925170",
+          "media": null,
+          "summary": "Aaron Levie 长推：大量案例表明，AI 模型与最终用户工作流之间可创造的价值远超多数人预期。企业落地仍有五层工程：不同业务流程需要不同 agent 形态（对话式/后台确定性流程）；不同工作流接入不同企业系统与数据；垂直领域的变革管理依然关键；多模型混用按成本与性能调优、甚至针对任务后训练；领域专属 eval 是长尾难题。",
+          "analysis": "这是「模型即商品、价值在工程层」论调的又一次背书。对游戏行业的启示：通用模型能力趋同后，竞争力在 harness、数据接入与领域 eval——工作室的 AI 团队配置应朝这个方向倾斜。",
+          "recommendation": "Box CEO 拆企业级 agentic AI 五层工程：价值在模型与 workflow 之间"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Max For AI · 中文资讯",
+          "tags": [
+            "AI安全",
+            "合规",
+            "国内生态"
+          ],
+          "title": "国内「破甲模型」中转站被端：有人拿越狱模型攻击政府网站",
+          "en_title": "有神人用破甲模型中转站拿 AI 攻击中国政府网站，最后把整个中转站都送走了",
+          "full_text": "神了，有神人用破甲模型中转站拿 AI 攻击中国政府网站，最后把整个中转站都送走了。\n\n今天看到好几个破甲模型站的群直接炸了。\n\n这里解释一下什么叫「破甲模型站」。\n\n简单来说，就是有人通过越狱提示词、修改 System Prompt 等方式，绕过或削弱开源、闭源模型原本的安全限制，再通过 API 中转站把这些「破甲」后的模型提供给用户使用。\n\n根据流传的截图，有个群主在群里称，有人用「破甲模型」攻击政府网站，今天开始被慢慢排查，随后管理员直接宣布：「停止运营，后续警局出来就退款。」\n\n没过多久，群就被解散了。\n\n目前群里还流出了一批疑似攻击过程的截图。\n\n截图显示，有人疑似已经拿到了某 .gov.cn 网站的 CMS 超级管理员权限，后台能看到 512 名 CMS 用户、7300 名前台实名用户、1 万多条新闻，以及数据库备份等信息。\n\n不仅如此他还想重置 admin、创建持久账号、继续读取线上数据、寻找系统配置和密钥。\n\n群里有正义老哥看到之后，直接回了一句：\n\n「已提交给网安。」\n\n然后提醒群友以后发言注意，「我每个群都会拉网警进来」。\n\n这剧情属实有点黑色幽默。\n\n一个卖破甲模型的中转站，最后真有人拿模型去「破甲」了，然后把中转站自己也一起干没了。\n\n目前能确认的主要还是这些群聊和终端截图，具体攻击目标、实际造成的影响，都还没有看到权威通报。\n\n但这事至少说明了以前大家争论无安全限制的大模型会不会真的被拿去搞网络攻击，多少还有点纸上谈兵。\n\n现在已经有傻逼开始拿它跑实战了。",
+          "author": "MaxForAI",
+          "date": "2026-08-19",
+          "likes": 240,
+          "views": 63018,
+          "comments": 37,
+          "shares": 17,
+          "link": "https://x.com/MaxForAI/status/2090051870723313900",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQFbGDWbgAAdlWQ.jpg"
+          },
+          "summary": "多个「破甲模型站」（通过越狱提示词/修改 System Prompt 削弱模型安全限制后经 API 中转出售）的群组同日炸群。流传截图显示，有人用破甲模型攻击某 .gov.cn 网站并疑似拿到 CMS 超管权限（涉 512 名 CMS 用户、7300 名实名用户数据），管理员宣布停止运营，有群友称已提交网安。目前仅有群聊截图可考，尚无权威通报。",
+          "analysis": "「无安全限制的模型会不会被拿去搞网络攻击」从纸面争论变成了实战案例。对国内 AI 合规链条上的所有环节（模型方、API 中转、应用方）都是警示：灰产套利的窗口正在快速关闭。",
+          "recommendation": "破甲模型中转站被实战反噬：灰色 API 套利的合规风险落地"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "GameSpot · 媒体报道",
+          "tags": [
+            "GTA6",
+            "泄露",
+            "实体版争议"
+          ],
+          "featured": true,
+          "title": "GTA 6 实机与地图遭泄露：黑客自称「为玩家权利」，视频挂满 memecoin 广告",
+          "en_title": "GTA 6 Leakers Say They Acted For Gamers' Rights, While Pushing A Memecoin",
+          "full_text": "GTA 6 Leakers Say They Acted For Gamers’ Rights, While Pushing A Memecoin https://t.co/gqXCkgKugj https://t.co/ZbcEbm3wXn",
+          "author": "GameSpot",
+          "date": "2026-08-19",
+          "likes": 433,
+          "views": 52374,
+          "comments": 39,
+          "shares": 32,
+          "link": "https://x.com/GameSpot/status/2090066333916680257",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQFoQWmbAAA7iC7.jpg"
+          },
+          "summary": "黑客团体放出数分钟疑似 GTA 6 实机画面与地图，Take-Two 随即发出 DMCA 下架通知（侧面印证真实性）。黑客在已删除的宣言中称，动机是抗议 GTA 6 主机实体版采用「盒内兑换码」形式，并威胁继续针对无实体版的游戏；但泄露视频上挂满 memecoin 广告与打赏请求。消费者组织 Stop Killing Games 公开呼吁不要支持该黑客团体。官方深度展示定于 8月27日在 Netflix 首播，游戏 11月19日发售。（多家报道：Polygon、Eurogamer、RPS、TheGamer）",
+          "analysis": "距官方 Netflix 深度展示仅一周发生泄露，黑客把「玩家权利」话术与 memecoin 变现捆绑，连 Stop Killing Games 都公开切割。两点启示：实体版策略（code-in-a-box）已成玩家情绪的真实燃点；而泄露对 GTA 6 这种量级的商业影响大概率有限——预售据报道已超 4 亿美元。",
+          "recommendation": "GTA6 实机泄露挂满 memecoin 广告，「玩家权利」旗号遭 Stop Killing Games 切割"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "GameSpot 转 Bloomberg · 媒体报道",
+          "tags": [
+            "索尼",
+            "Live-service",
+            "Horizon"
+          ],
+          "featured": true,
+          "title": "索尼《地平线》多人游戏回炉重做：砍掉 live-service，正传新作「还要数年」",
+          "en_title": "Horizon Multiplayer Game Being Rebooted To Remove Live-Service, Next Mainline Horizon Game \"Years Away,\" Report Says",
+          "full_text": "Horizon Multiplayer Game Being Rebooted To Remove Live-Service, Next Mainline Horizon Game “Years Away,” Report Says https://t.co/fiLd17zULg https://t.co/lofqtIBfHd",
+          "author": "GameSpot",
+          "date": "2026-08-19",
+          "likes": 31,
+          "views": 21112,
+          "comments": 7,
+          "shares": 5,
+          "link": "https://x.com/GameSpot/status/2090092821487452387",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQGAWDzbwAAeL2K.jpg"
+          },
+          "summary": "Bloomberg 报道：Guerrilla 的《Horizon Hunters Gathering》因测试反馈负面，6 月起回炉重做，将移除 live-service 要素，转型为「更传统的、带剧情模式、规模更小的合作多人游戏」。Guerrilla 需在 12 月前向高层证明自己，部分开发者已被调往另一项目；一个小团队正在规划下一款单机《地平线》，但完成「还要数年」。（多家报道：Eurogamer、Polygon、MP1st）",
+          "analysis": "索尼 live-service 战略收缩的又一章：12 款砍半之后，TLOU Online 与战神 live-service 已取消，Concord 暴毙关厂，只剩 Helldivers 2（超 2000 万份）独撑。「年底向高层证明」的表述意味着这个项目仍可能被砍——第一方 IP 不再是 live-service 的免死金牌。",
+          "recommendation": "索尼再砍 live-service：Horizon 多人回炉转传统合作，12月前须向高层证明自己"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "GameSpot · 媒体报道",
+          "tags": [
+            "Arkane",
+            "沉浸式模拟",
+            "新工作室"
+          ],
+          "featured": true,
+          "title": "Dishonored 之父 Harvey Smith 成立 Black Pony Immersive，专做沉浸式模拟",
+          "en_title": "Dishonored Director Announces New Studio, And Fans Should Be Very Excited",
+          "full_text": "Dishonored Director Announces New Studio, And Fans Should Be Very Excited https://t.co/mpVU4FBL26 https://t.co/sHSHYwHDML",
+          "author": "GameSpot",
+          "date": "2026-08-19",
+          "likes": 84,
+          "views": 24445,
+          "comments": 3,
+          "shares": 11,
+          "link": "https://x.com/GameSpot/status/2090104626448306190",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQGLFG3acAA0F5a.jpg"
+          },
+          "summary": "Dishonored 联合创作者 Harvey Smith 与 Redfall 制作总监 Ben Horne 宣布成立新工作室 Black Pony Immersive，落地奥斯汀（与被微软关闭的 Arkane Austin 同城），目标是「设计开发富有想象力的第一人称动作 RPG」——即沉浸式模拟品类。此时 Arkane 前途未卜、Dishonored 系列冻结，另一位联合创作者 Colantonio 的 WolfEye 也在开发第一人称动作 RPG。（多家报道：PC Gamer、Polygon）",
+          "analysis": "昨天 Warren Spector 宣布退休，今天 Harvey Smith 在奥斯汀重新出发——沉浸式模拟的衣钵正从 Looking Glass 一代完成交接。值得注意的组织形态：大厂关闭工作室不等于人才消失，而是以老班底小团队的方式重新组织。",
+          "recommendation": "Spector 退休次日，Dishonored 之父 Harvey Smith 在奥斯汀重起沉浸式模拟炉灶"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Polygon · 媒体报道",
+          "tags": [
+            "展会经济",
+            "独立发行",
+            "FPS"
+          ],
+          "title": "大厂展会 60 秒播片报价 30 万美元，FPS 开发者自建免费展会",
+          "en_title": "FPS Devs Were Quoted $300K for a Spot on a Big Showcase, so They Started Their Own Show",
+          "full_text": "FPS Devs Were Quoted $300K for a Spot on a Big Showcase, so They Started Their Own Show https://t.co/cIca44Z7AC https://t.co/LFWElnJ9nn",
+          "author": "Polygon",
+          "date": "2026-08-19",
+          "likes": 19,
+          "views": 9178,
+          "comments": 1,
+          "shares": 3,
+          "link": "https://x.com/Polygon/status/2090071311993184629",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQFsyFqXcAAnVbm.jpg"
+          },
+          "summary": "《Wardogs》开发商 Bulkhead 为 60 秒预告片席位向大型展会询价，被报价 30 万美元（参照：TGA 去年被 Kotaku 曝出 45 万美元）。工作室转而联合 Beautiful Light、逃离塔科夫、Gray Zone Warfare 等自建 FPS 专属展会 The FPS Games Show：参展免费，条件是必须带独家内容；育碧（彩虹六号）主动要求加入。展会 9月3日 Twitch 直播。",
+          "analysis": "Keighley 系展会的播片定价已高到中型工作室无法承受，品类垂直展会成为替代方案。「免费+必须独家内容」的规则设计很聪明——用内容独占性而非门票换取观众，对国内做品类发布会有直接参考价值。",
+          "recommendation": "60秒播片要价30万美元，Wardogs 团队拉上塔科夫和育碧自办免费 FPS 展会"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "電ファミニコゲーマー · 媒体报道",
+          "tags": [
+            "合作经营",
+            "模拟",
+            "今日发售"
+          ],
+          "featured": true,
+          "game_ref": "Pizza House Simulator",
+          "title": "Pizza House Simulator：Broken Lyre×Wendigo 开发的 6 人联机披萨店经营，今日发售",
+          "en_title": "最大6人マルチ対応・ピザレストラン経営ゲーム『Pizza House Simulator』がSteamにて本日8月19日発売",
+          "full_text": "最大6人マルチ対応・ピザレストラン経営ゲーム『Pizza House Simulator』がSteamにて本日8月19日発売。おいしそうなピザ、燃え盛る厨房\nhttps://t.co/OSaoKGytFz\n\n生地を伸ばすところから始まる本格的なピザづくりが楽しめる。火災や泥棒といったトラブルに対処し、地中海に建つお店を繁盛させよう https://t.co/qQxHMaKolG",
+          "author": "denfaminicogame",
+          "date": "2026-08-19",
+          "likes": 6616,
+          "views": 1030501,
+          "comments": 10,
+          "shares": 1417,
+          "link": "https://x.com/denfaminicogame/status/2089914088919118290",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2089914031188639744/pu/img/OIWfZjcoFJAc01I2.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2089914088919118290/video/1"
+          },
+          "summary": "6人联机披萨餐厅经营模拟，8月19日 Steam 发售——103万浏览",
+          "analysis": "",
+          "recommendation": "6人联机披萨餐厅经营今日发售：从揉面团到炒股、防黑手党——103万浏览",
+          "enrichment": {
+            "game_name": "Pizza House Simulator",
+            "genre": "合作模拟 / 餐厅经营 / 策略",
+            "developer": "Broken Lyre Entertainment × Wendigo Games（Devotion Interactive 发行）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "€10.11（约 $12）",
+            "release_date": "已发售 · 2026年8月19日",
+            "steam_rating": "发售首日，评价积累中",
+            "steam_url": "https://store.steampowered.com/app/4132330/Pizza_House_Simulator/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4132330/f7e10419b196f7a814eb941ee88f8a648ae7d459/header.jpg?t=1787166636",
+            "youtube_video": null,
+            "description": "地中海小镇上的家族披萨店经营模拟，支持单人（针对单人调整的系统）与最多 6 人在线合作。\n\n【核心玩法】从揉面团、做酱料、切配料开始的完整披萨制作流程，按顾客订单出餐。经营层不止于做菜：可以向银行贷款、进股市投资，还要应对农户罢工导致原料涨价等随机市场事件。\n\n【麻烦制造者】火灾、小偷、黑手党闹事都会找上门，做菜之外还要处理店里的各种突发状况。\n\n【成长与自定义】厨房设备可升级、餐厅内装可自定义，从温馨家庭小馆一路做到豪华意式餐厅；还能选择经营侧重点。\n\n【优势】6 人合作在「厨房模拟」品类里属于高配置（Overcooked 之外少有做到这个人数的经营向作品）；经营系统深度超出同类（股市、贷款、随机事件）。\n【不足】单人体验需要观察平衡性；模拟经营品类竞争激烈。\n\n【综合】「合作厨房」与「正经经营模拟」的混血，多人联机+经商系统的组合在细分赛道里辨识度很高。",
+            "why_notable": "厨房合作游戏少有做到 6 人规模，且把股市/贷款/随机事件缝进了正经经营模拟，103万浏览说明卖相成功"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Indie Game Joe · KOL推荐",
+          "tags": [
+            "恐怖冒险",
+            "3D平台",
+            "5年开发"
+          ],
+          "featured": true,
+          "game_ref": "Twisted Tower",
+          "title": "Twisted Tower：Thomas Brush 五年磨一剑的 3D 恐怖主题乐园冒险，3D Realms 发行",
+          "en_title": "after 5 years of blood, sweat, and code, he just launched his massive commercial 3D game, Twisted Tower",
+          "full_text": "Over 15 years ago, Thomas Brush was making Flash games in his bedroom. (You might even remember him building a game for PewDiePie in a crazy 14-day challenge!)\n\nToday, after 5 years of blood, sweat, and code, he just launched his massive commercial 3D game, Twisted Tower. https://t.co/9JAV6QbK0b",
+          "author": "IndieGameJoe",
+          "date": "2026-08-18",
+          "likes": 1560,
+          "views": 45418,
+          "comments": 28,
+          "shares": 123,
+          "link": "https://x.com/IndieGameJoe/status/2089792028498354566",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2089790671473258496/img/Hwk1BED-LEAc6m4T.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2089792028498354566/video/1"
+          },
+          "summary": "15年前在卧室做 Flash 游戏、曾为 PewDiePie 14 天极限开发而闻名的 Thomas Brush，历经 5 年开发推出 3D 商业化大作——4.5万浏览",
+          "analysis": "",
+          "recommendation": "从卧室 Flash 到 3D Realms 发行：Thomas Brush 五年之作 Twisted Tower 发售",
+          "enrichment": {
+            "game_name": "Twisted Tower",
+            "genre": "恐怖冒险 / 3D平台 / 解谜",
+            "developer": "Atmos Games（Thomas Brush 个人工作室；3D Realms 发行）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "HK$98.10（约 ¥90）",
+            "release_date": "已发售 · 2026年8月18日",
+            "steam_rating": "发售首日，评价积累中",
+            "steam_url": "https://store.steampowered.com/app/1575990/Twisted_Tower/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1575990/0270dc9ee7ddd3b31d2c9f0d5f1fb76cb4879eb8/header.jpg?t=1787162035",
+            "youtube_video": null,
+            "description": "以 1950 年代废弃主题乐园为舞台的 3D 恐怖平台冒险，是 Thomas Brush（Atmos Games）从 2D 独立小品转向 3D 商业化大作的野心之作，由老牌发行商 3D Realms 发行。\n\n【核心玩法】在爬满童话吉祥物扭曲变体的乐园中战斗、解谜、躲避致命陷阱，一路向乐园顶端攀登，揭开主角过去黑暗秘密的同时赢回此生挚爱。战斗+平台跳跃+环境解谜三者混合。\n\n【题材与氛围】废弃主题乐园+黑化吉祥物的组合承接了近年「吉祥物恐怖」（Mascot Horror）类型的热度，但用 50 年代美式乐园的美术包装做出了差异化。\n\n【开发者背景】Thomas Brush 15 年前在卧室做 Flash 游戏起家（曾为 PewDiePie 做 14 天极限开发挑战），《Pinstripe》《Neversong》积累了 2D 叙事冒险口碑，本作是 5 年磨一剑的 3D 转型，开发者发推庆祝发售登顶榜单。\n\n【优势】吉祥物恐怖题材自带直播传播力；个人开发者 5 年故事线励志；3D Realms 发行背书。\n【不足】2D 转 3D 的手感风险；吉祥物恐怖赛道已较拥挤。\n\n【综合】个人开发者长期主义+类型热点+老牌发行商的组合拳，是观察「卧室开发者到商业 3D」跃迁路径的样本。",
+            "why_notable": "个人开发者 15 年从 Flash 卧室作坊到 3D Realms 发行的 3D 商业作品，发售日开发者宣布登顶榜单"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "AUTOMATON · 媒体报道",
+          "tags": [
+            "Roguelike",
+            "竞速",
+            "首曝"
+          ],
+          "game_ref": "Handlebar",
+          "title": "Handlebar：个人开发者把速降自行车做成 roguelike，传送门穿梭危险山道",
+          "en_title": "自転車“危険度マシマシ”山下りローグライク『Handlebar』発表。真っ暗闇から低重力までポータルでヤバい道を転々、全速前進ダウンヒル",
+          "full_text": "【ニュース】自転車“危険度マシマシ”山下りローグライク『Handlebar』発表。真っ暗闇から低重力までポータルでヤバい道を転々、全速前進ダウンヒル\nhttps://t.co/TRWjz6IcIb https://t.co/EEi6BAxosZ",
+          "author": "AUTOMATONJapan",
+          "date": "2026-08-19",
+          "likes": 231,
+          "views": 56244,
+          "comments": 0,
+          "shares": 51,
+          "link": "https://x.com/AUTOMATONJapan/status/2090026915885375536",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090026860453519360/img/jRQ5g8KuX2DUSdiR.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2090026915885375536/video/1"
+          },
+          "summary": "第一人称速降自行车 roguelike 正式公布，Steam 页面上线、发售日未定——5.6万浏览",
+          "analysis": "",
+          "recommendation": "速降自行车×roguelike：越危险的山道奖励越肥，减速本身就是惩罚",
+          "enrichment": {
+            "game_name": "Handlebar",
+            "genre": "竞速 / Roguelike / 第一人称",
+            "developer": "handlebardev（个人开发者）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5109020/Handlebar/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5109020/8c932e8bd74b59dc2ad28e5c1df126f129d1d2bb/header.jpg?t=1787114368",
+            "youtube_video": null,
+            "description": "把自行车速降（Downhill）做成 roguelike 的第一人称竞速游戏，今年 5 月起在 SNS 上持续公开开发进度，本次正式发表并上线 Steam 页面。\n\n【核心玩法】在程序生成的山道上全速下坡：虽有既定赛道，但也可以冲出道路抄近路；穿过传送门即跳转到另一条山道，如此反复直至终点。不做特技动作系统，专注于真实自行车物理+直觉操作带来的速度感与惊险感——冲出赛道撞上树木就是惩罚。\n\n【Build 构筑】沿途拾取的升级件直接挂载到车把上（导航工具、恢复系统、防御装置等），组合之间有协同效果。速度越快能拿到的升级越好；终盘阶段甚至不允许减速，Build 构筑成为关键。\n\n【风险回报】传送门后有多条路线可选：窄道、恶劣天气、完全黑暗、低重力等高危路线对应更高报酬。\n\n【优势】「速降」这个题材在 roguelike 里几乎没有对手；风险/回报的路线选择机制清晰直接；个人开发者的进度直播积累了社区关注。\n【不足】竞速 roguelike 的重复可玩性待验证；发售日未定。\n\n【综合】题材差异化极其鲜明的竞速 roguelike，「减速即惩罚」的反直觉设计值得关注。",
+            "why_notable": "把速降自行车与 roguelike 缝合的罕见题材组合，「越快奖励越好、终盘禁止减速」的机制设计反直觉"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "开发者亲推 · 官方",
+          "tags": [
+            "城市建造",
+            "讽刺模拟",
+            "EA定档"
+          ],
+          "game_ref": "Car Park Capital",
+          "title": "Car Park Capital：讽刺停车资本主义的城市建造，10月9日开启 EA（MicroProse 发行）",
+          "en_title": "Pave Paradise, and put up Car Parks soon!! Car Park Capital launches into Early Access on October 9!",
+          "full_text": "Pave Paradise, and put up Car Parks soon!! 🚨\n\nCar Park Capital launches into Early Access on October 9!\n\nhttps://t.co/XtS6TW0tUg\nWatch the brand new trailer, share it with friends, and wishlist!\n\nBig thank you for all the support over the years! 🙏 https://t.co/VImEt6KggH",
+          "author": "hilkojj",
+          "date": "2026-08-19",
+          "likes": 987,
+          "views": 19023,
+          "comments": 32,
+          "shares": 132,
+          "link": "https://x.com/hilkojj/status/2090031097073590452",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090029007282614272/img/d1oEnGGF1k4-7V07.jpg",
+            "video_url": "https://x.com/hilkojj/status/2090031097073590452/video/1"
+          },
+          "summary": "讽刺向城市建造游戏公布新预告，10月9日 Steam 开启抢先体验——1.9万浏览",
+          "analysis": "",
+          "recommendation": "把街区全铲了修停车场、用宣传让人心甘情愿付费——MicroProse 看中的讽刺城建 10/9 开 EA",
+          "enrichment": {
+            "game_name": "Car Park Capital",
+            "genre": "城市建造 / 讽刺模拟 / 策略",
+            "developer": "Hilkojj Interactive（MicroProse Software 发行）",
+            "platforms": [
+              "Steam（Win/Linux）"
+            ],
+            "price": "未公布",
+            "release_date": "2026年10月9日（抢先体验）",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/3031880/Car_Park_Capital/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3031880/b11a0124b3f61d3ae297487bffed3974d3629638/header.jpg?t=1787137007",
+            "youtube_video": null,
+            "description": "「把天堂铲平、修成停车场」——一款讽刺汽车资本主义的城市建造模拟，由老牌厂商 MicroProse 发行，10月9日开启抢先体验。\n\n【核心玩法】受汽车产业「委托」，把宁静小镇一步步改造成停车场帝国：制造通勤刚需、铲掉街区改建停车场，用宣传（propaganda）让居民心甘情愿为停车付费，同时对付那些看穿你生意经的反对者。\n\n【题材定位】对美式汽车依赖与城市蔓延（urban sprawl）的黑色幽默解构，属于「讽刺模拟」谱系（与《Tropico》的政治讽刺、《Two Point》系列的英式幽默同宗），但矛头直指真实世界的城市规划议题。\n\n【开发背景】个人开发者 Hilko Janssen 多年开发、凭 demo 与开发日志在独游社区积累口碑，最终获得 MicroProse 青睐签约发行。\n\n【优势】题材辨识度极高、自带传播梗；城建玩法骨架成熟；MicroProse 发行背书。\n【不足】讽刺题材的受众天花板；EA 阶段内容量待观察。\n\n【综合】「有立场的模拟游戏」正在成为独立品类的差异化武器，本作是该方向的代表样本。",
+            "why_notable": "讽刺汽车资本主义的题材辨识度+MicroProse 发行背书，多年社区积累后定档 EA"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "社区模组 · UGC展示",
+          "tags": [
+            "UGC",
+            "Deadlock",
+            "模组"
+          ],
+          "featured": true,
+          "title": "玩家在 Deadlock 里造出可联机的完整 Minecraft——123万浏览",
+          "en_title": "multiplayer Minecraft fully working in #deadlock",
+          "full_text": "multiplayer Minecraft fully working in #deadlock https://t.co/SDmfm94RY5",
+          "author": "jetsetworm",
+          "date": "2026-08-18",
+          "likes": 39271,
+          "views": 1226544,
+          "comments": 143,
+          "shares": 2187,
+          "link": "https://x.com/jetsetworm/status/2089862820921819469",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2089862527727423489/img/uJL0qGoXu-UaMHgM.jpg",
+            "video_url": "https://x.com/jetsetworm/status/2089862820921819469/video/1"
+          },
+          "summary": "模组作者 wormy 展示在 Valve《Deadlock》中完整运行的多人 Minecraft：支持多人联机、含完整可用的物品栏系统，全部通过 Deadlock 的模组工具实现。Gabe Follower 转发扩散，3.9万赞。",
+          "analysis": "UGC 工具链能力的极限展示。Deadlock 尚未正式发售，其 mod 生态已能承载「游戏里的游戏」——Valve 在 Source 2 时代的 UGC 布局值得持续跟踪，这类展示对引擎与编辑器团队是直接的能力对标参照。",
+          "recommendation": "用 Deadlock 模组工具造出可联机 Minecraft——123万浏览的 UGC 极限展示"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**GTA 6 泄露周进入高潮**\n黑客团体放出数分钟疑似 GTA 6 实机与地图，Take-Two 用 DMCA 下架侧面证实真实性；黑客自称抗议实体版「盒内兑换码」，却在视频上挂满 memecoin 广告，连 Stop Killing Games 都公开切割。官方深度展示定档 8月27日 Netflix 首播，预售据报道已超 4 亿美元。\n\n**索尼 live-service 再收缩，沉浸式模拟完成交接**\nBloomberg 报道《Horizon Hunters Gathering》因测试反馈不佳回炉重做、砍掉 live-service 转传统合作，Guerrilla 需在 12 月前向高层证明自己；同日 Dishonored 之父 Harvey Smith 宣布成立 Black Pony Immersive——昨天 Warren Spector 刚退休，沉浸式模拟的接力棒今天就被接走了。\n\n**今日独游：联机厨房、恐怖乐园与速降自行车**\n6人联机披萨店经营《Pizza House Simulator》今日发售（103万浏览）；Thomas Brush 五年之作《Twisted Tower》由 3D Realms 发行上市；速降自行车 roguelike《Handlebar》公布；另有玩家在 Deadlock 里用模组工具造出可联机的完整 Minecraft。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
