@@ -89,6 +89,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.92);backdro
 .card .link{font-size:11.5px;margin:8px 0 14px;word-break:break-all}
 .card .link a{color:var(--gold);text-decoration:none;font-weight:500;transition:color .2s}
 .card .link a:hover{color:#A07B1A;text-decoration:underline}
+.unselected-divider{margin:28px 0 4px;padding:14px 18px;border:1px dashed var(--border);border-radius:10px;background:var(--bg);color:var(--ink3);font-size:13px;text-align:center;letter-spacing:.02em;line-height:1.6}
+.card-unselected{opacity:.85;border-left-style:dashed}
 .card .media{margin:16px 0;border-radius:12px;overflow:hidden;border:1px solid var(--border-light)}
 .card .media img{width:100%;max-height:360px;object-fit:cover;display:block}
 .card .media video{width:100%;max-height:360px;display:block}
@@ -1150,6 +1152,7 @@ function findHottestPick(sectionIds) {
     const section = getSectionById(sectionId);
     if (!section || !section.items) return;
     section.items.forEach((item, itemIndex) => {
+      if (item.unselected) return;
       candidates.push({
         section,
         item,
@@ -1755,7 +1758,7 @@ function getEditorialSignals(heroPicks) {
   const signals = [];
   currentData.sections.forEach(section => {
     section.items.forEach((item, itemIndex) => {
-      if (signals.length >= 6 || heroKeys.has(`${section.id}:${itemIndex}`) || !getCover(item)) return;
+      if (signals.length >= 6 || heroKeys.has(`${section.id}:${itemIndex}`) || !getCover(item) || item.unselected) return;
       signals.push({ section, item, itemIndex, tag: getEditorialSectionLabel(section), title: item.recommendation || item.title, text: item.summary || item.analysis || '' });
     });
   });
@@ -2050,7 +2053,7 @@ function renderHeroPicks() {
     const candidates = [];
     currentData.sections.forEach(section => {
       section.items.forEach(item => {
-        if (!item.media) return;
+        if (!item.media || item.unselected) return;
         const score = (item.views || 0) + (item.likes || 0) * 100;
         candidates.push({ item, section, score, hook: item.recommendation || item.title });
       });
@@ -2108,19 +2111,22 @@ function renderHeroPicks() {
 }
 
 function renderDigestList() {
-  // Zone C: Compact list grouped by section
-  const totalCount = currentData.sections.reduce((s, sec) => s + sec.items.length, 0);
+  // Zone C: Compact list grouped by section（不含 unselected 参考条目）
+  const totalCount = currentData.sections.reduce((s, sec) => s + sec.items.filter(it => !it.unselected).length, 0);
   let html = `<div class="digest-list-section">
     <div class="digest-list-title">全部精选 · ${totalCount} 条</div>`;
 
   currentData.sections.forEach(section => {
+    const curatedItems = section.items.filter(it => !it.unselected);
+    if (!curatedItems.length) return;
     html += `<div class="digest-group">
       <div class="digest-group-header">
         <span class="digest-group-dot" style="background:${section.color}"></span>
-        <span class="digest-group-label">${section.title} · ${section.items.length}</span>
+        <span class="digest-group-label">${section.title} · ${curatedItems.length}</span>
       </div>`;
 
     section.items.forEach((item, idx) => {
+      if (item.unselected) return;
       const hookText = item.recommendation || item.title;
       const thumbUrl = (item.media && item.media.url) || (item.enrichment && item.enrichment.header_image) || '';
       const likesStr = (item.likes || 0) >= 1000 ? ((item.likes / 1000).toFixed(1) + 'K') : (item.likes || 0);
@@ -2241,10 +2247,15 @@ function renderContent(targetId = 'content') {
     : currentData.sections.filter(s => s.id === currentTab);
 
   sections.forEach(sec => {
+    let unselectedDividerShown = false;
     sec.items.forEach((item, itemIdx) => {
       const borderColor = sec.color;
       const idxColor = sec.color;
       const idxBg = sec.color + '12';
+      if (sec.id === 'indie' && item.unselected && !unselectedDividerShown) {
+        unselectedDividerShown = true;
+        html += '<div class="unselected-divider">以下为非精选推文的新游消息，热度和质量相比推荐新游偏低，供参考</div>';
+      }
       let mediaHtml = '';
       if (item.media) {
         if (item.media.type === 'video') {
@@ -2267,7 +2278,7 @@ function renderContent(targetId = 'content') {
       }
       const tagsHtml = item.tags.map(t => `<span class="badge">${t}</span>`).join('');
       const hasEnrichment = !!item.enrichment;
-      const cardClass = hasEnrichment ? 'card card-enriched' : 'card';
+      const cardClass = (hasEnrichment ? 'card card-enriched' : 'card') + (item.unselected ? ' card-unselected' : '');
 
       const searchText = (item.title + ' ' + item.summary + ' ' + item.analysis + ' ' + item.en_title + ' ' + item.tags.join(' ')).toLowerCase().replace(/"/g, '&quot;');
 
