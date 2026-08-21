@@ -2905,10 +2905,10 @@ function renderLaunchedContent() {
   const host = document.getElementById('launchedContent');
   const boards = d.boards || [];
   const watch = d.watch || {};
-  // 大背景取今日推荐最大卡(picks[0])的游戏,用 library_hero 与卡片 header 错开;无 Steam 链接则不留背景
+  // 大背景取今日推荐最大卡(picks[0])的游戏: 优先 picks[].bg 实机截图(与卡片 header 不同图), 兜底 library_hero; 都无则不留背景
   const feat = (d.picks || [])[0] || null;
   const featApp = feat && /store\.steampowered\.com\/app\/(\d+)/.exec(feat.link || '');
-  const heroBg = featApp ? `https://cdn.cloudflare.steamstatic.com/steam/apps/${featApp[1]}/library_hero.jpg` : '';
+  const heroBg = (feat && feat.bg) || (featApp ? `https://cdn.cloudflare.steamstatic.com/steam/apps/${featApp[1]}/library_hero.jpg` : '');
   host.innerHTML = `
   ${renderLaunchedDateStrip()}
   <div class="ld-picks-zone">

@@ -101,6 +101,17 @@ top5.forEach((c, i) => {
 if (DRY) { console.log('--dry, 未写入'); process.exit(0); }
 
 const srcLabel = { steamdb: 'SteamDB趋势', twitter: '推特热游', bilibili: 'B站热门' };
+const https = require('https');
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const getJson = url => new Promise((resolve, reject) => {
+  https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } }, res => {
+    let d = '';
+    res.on('data', c => d += c);
+    res.on('end', () => { try { resolve(JSON.parse(d)); } catch (e) { reject(e); } });
+    res.on('error', reject);
+  }).on('error', reject);
+});
+(async () => {
 day.picks = top5.map(c => {
   const d = c.detail || {};
   const sig = [];
@@ -116,5 +127,17 @@ day.picks = top5.map(c => {
     link: (c.appid ? `https://store.steampowered.com/app/${c.appid}/` : '') || c.link || d.link || ''
   };
 });
+// 大背景用首张实机截图(与卡片 header 图错开)
+for (const p of day.picks) {
+  const a = (String(p.link).match(/app\/(\d+)/) || [])[1];
+  if (!a) continue;
+  try {
+    const j = await getJson(`https://store.steampowered.com/api/appdetails?appids=${a}&filters=screenshots`);
+    const ss = j && j[a] && j[a].data && j[a].data.screenshots;
+    if (ss && ss[0]) p.bg = ss[0].path_full;
+  } catch (e) {}
+  await sleep(300);
+}
 fs.writeFileSync(dayPath, JSON.stringify(day, null, 1), 'utf8');
 console.log(`已写入 ${dayPath}`);
+})();
