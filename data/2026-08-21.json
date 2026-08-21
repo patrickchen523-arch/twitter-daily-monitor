@@ -1,0 +1,605 @@
+{
+  "date": "2026-08-21",
+  "meta": {
+    "raw_count": 242,
+    "filtered_count": 212,
+    "selected_count": 12,
+    "crawl_time": "2026-08-21 19:00"
+  },
+  "lede": "美国 7 月游戏消费创史上最差之一：实体软件 85M 美元史上最低、硬件跌回 2020 年水平；宫崎英高表态 FromSoftware 重心仍在单机；PlaySide《Dumb Ways to Build》9月10日发售。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "美国7月游戏消费-10%：实体软件$85M史上最低，硬件跌回2020年"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 1,
+      "hook": "零基础开发者靠 Unity MCP+Claude Code 一周做出游戏——学习曲线正在崩塌"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "PlaySide 新作 Dumb Ways to Build 9/10 发售：4人物理工地，同事是最大工伤风险"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Apodex 发布 TRACES 基准：从「检索已知」转向衡量「发现型智能」的六维评估\n零基础开发者用 Unity MCP+Claude Code+Meshy+ElevenLabs 一周做出游戏\nNSA/FBI/CISA 联合警告：AI 生成的工控漏洞脚本已在攻击美国关键设施"
+    },
+    {
+      "id": "industry",
+      "text": "Circana：美国7月游戏消费-10%至$45亿，实体软件$85M创1995年来最低，硬件-29%\n宫崎英高：Duskbloods 与 Nightreign 撞车纯属巧合，FromSoftware 重心仍是单机\n彭博 Schreier：TLOU Online 烧了数亿美元、占用了 Naughty Dog 大部分人马\n前 EA 高管唱衰 BioWare 前景：下一款质量效应「眼见为实」"
+    },
+    {
+      "id": "indie",
+      "text": "Dumb Ways to Build 定档 9/10：PlaySide 出品 4人物理合作工地，全平台+跨平台联机\nBrigador Killers 开 EA：一个问题让开发多了 5 年，等距机甲叛乱模拟\nPop! Pachinko 定档 9/17：90年代 citypop 风柏青哥 roguelike\nLandfall 发行 How to Fish：1-4人物理钓鱼，今日发售 $4.95"
+    },
+    {
+      "id": "tools",
+      "text": "UEFN 上线 Unreal MCP：Claude Code/Codex/Cursor 可直连编辑器做 agentic 开发"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Tony出海 · 中文原创",
+          "tags": [
+            "AI基准",
+            "Agent",
+            "评估范式"
+          ],
+          "featured": true,
+          "title": "Apodex 发布 TRACES 基准：专门衡量「发现型智能」的六维评估",
+          "en_title": "Apodex 正式发布 TRACES 🧭——一个专门衡量 Discoverative AI（发现型智能）的基准",
+          "full_text": "大多数 AI benchmark 还在测同一件事：模型能不能把已知答案找出来。\n\n但真科学问题，答案根本不存在。系统能不能靠证据、假设、试错，自己“挣”出一个可验证的结论？\n\n Apodex 正式发布 TRACES 🧭——一个专门衡量 Discoverative AI（发现型智能） 的基准。\n\n六大能力，刚好拼成名字：\n• Tools：正确选择、调用、解读工具\n• Repair：出错后能不能定位并修复\n• Alternatives：是否并行维护多个假设，并随证据更新\n• Coherence：长链条推理中状态与逻辑是否始终一致\n• Evidence：每个结论是否真正扎根于数据、实验或引用\n• Scope：能不能明确结论成立的边界与失效条件\n\n看整条探索轨迹是否扎实、可审计、可复现。rubric 的核心目标，就是把「扎实调查」和「幸运瞎蒙」彻底分开。\n\n从「检索已知」到「发现未知」，这可能是 AI 评估范式真正的深层变化。做 agent 的、做科研工具的、做长期推理系统的，值得认真看一眼。",
+          "author": "iamtonyzhu",
+          "date": "2026-08-20",
+          "likes": 2,
+          "views": 535,
+          "comments": 0,
+          "shares": 1,
+          "link": "https://x.com/iamtonyzhu/status/2090420237707747442",
+          "media": null,
+          "summary": "Apodex 发布基准 TRACES，专门衡量「发现型智能」（Discoverative AI）：Tools（工具选择调用解读）、Repair（出错定位修复）、Alternatives（并行维护多假设并随证据更新）、Coherence（长链推理一致性）、Evidence（结论扎根于数据）、Scope（明确结论边界与失效条件）。目标是评估整条探索轨迹是否扎实、可审计、可复现，把「扎实调查」和「幸运瞎蒙」分开。",
+          "analysis": "现有基准多在测「检索已知答案」，TRACES 把评估对象换成了过程而非结果。对做游戏 AI agent（如自走棋 AI 调试、自动化测试）的团队，这六个维度可以直接拿来当自查清单用。",
+          "recommendation": "AI 评估从「找答案」转向「看过程」：TRACES 基准六维拆解发现型智能"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Hakimi Eiqbal · 案例展示",
+          "tags": [
+            "AI开发",
+            "Unity MCP",
+            "Claude Code"
+          ],
+          "featured": true,
+          "title": "零基础开发者靠 Unity MCP+Claude Code 一周做出游戏：学习曲线正在崩塌",
+          "en_title": "Zero game dev experience to building this in one week",
+          "full_text": "Zero game dev experience to building this in one week\n\nThe creator downloaded Unity for the first time 7 days ago after discovering it supports MCP, then started building with AI\n\nClaude Code handles the development, Meshy generates 3D models, ElevenLabs creates sound effects, and Nano Banana 2 helps with visuals\n\nThis is what happens when the learning curve for game development starts collapsing\n\nFull demo below 👇",
+          "author": "hakimieiqbal",
+          "date": "2026-08-20",
+          "likes": 85,
+          "views": 5840,
+          "comments": 13,
+          "shares": 3,
+          "link": "https://x.com/hakimieiqbal/status/2090411096985280538",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2090411029612175361/pu/img/QZoeH6L-1E6i7mv0.jpg",
+            "video_url": "https://x.com/hakimieiqbal/status/2090411096985280538/video/1"
+          },
+          "summary": "一名零游戏开发经验的创作者，7 天前第一次下载 Unity（因为发现它支持 MCP），用 Claude Code 写代码、Meshy 生成 3D 模型、ElevenLabs 做音效、Nano Banana 2 辅助视觉，一周后做出可玩 demo。",
+          "analysis": "这条的价值不在 demo 本身，而在工具链的完整闭环：引擎（Unity MCP）+ 代码（Claude Code）+ 美术（Meshy/Nano Banana）+ 音频（ElevenLabs）各自接管一个生产环节。当「学引擎」不再是门槛，游戏开发的瓶颈会进一步向「判断力」和「品控」集中。",
+          "recommendation": "零基础+一周：Unity MCP 打通 AI 工具链，游戏开发学习曲线正在崩塌"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "PC Gamer · 媒体报道",
+          "tags": [
+            "AI安全",
+            "关键设施",
+            "工控"
+          ],
+          "title": "NSA/FBI/CISA 联合警告：AI 生成的工控攻击脚本已在实战中使用",
+          "en_title": "'This is not a theoretical risk—it is an active threat': The NSA, FBI, CISA and more warn of AI-assisted hacks against critical US infrastructure and facilities",
+          "full_text": "Multiple US agencies warn of 'an active threat' regarding AI-assisted hacks on critical facilities https://t.co/htDiYFlDdi",
+          "author": "pcgamer",
+          "date": "2026-08-20",
+          "likes": 13,
+          "views": 14718,
+          "comments": 1,
+          "shares": 0,
+          "link": "https://x.com/pcgamer/status/2090390794662555992",
+          "media": null,
+          "summary": "NSA、CISA、FBI、DOE、EPA 联合公告：威胁行为者正使用 AI 生成的漏洞利用脚本（伪装成合法监控工具）攻击美国关键设施的西门子 S7 可编程逻辑控制器，目标涵盖关键制造、能源、水务、化工、食品农业、商业设施。公告称这「不是理论风险，是正在发生的威胁」，AI「大幅降低了开发工控漏洞脚本所需的技术门槛和时间」。",
+          "analysis": "与昨日国内「破甲模型攻击政府网站」遥相呼应：AI 辅助攻击正在从演示走向实战，且攻的是物理世界的关键设施。对所有联网服务（含游戏服务器、反作弊系统）的运营方，攻击面的成本曲线正在被重写。",
+          "recommendation": "五部门联合警告：AI 生成的工控攻击脚本已是「进行中的威胁」"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "GameSpot 转 Circana · 数据",
+          "tags": [
+            "市场数据",
+            "Circana",
+            "硬件"
+          ],
+          "featured": true,
+          "title": "美国 7 月游戏消费创史上最差之一：实体软件史上最低，硬件跌回 2020 年",
+          "en_title": "US Video Game Spending Just Had One Of Its Worst Julys Ever",
+          "full_text": "US Video Game Spending Just Had One Of Its Worst Julys Ever https://t.co/BdNG4ihzlD https://t.co/58adBTwNM0",
+          "author": "GameSpot",
+          "date": "2026-08-20",
+          "likes": 21,
+          "views": 24334,
+          "comments": 6,
+          "shares": 4,
+          "link": "https://x.com/GameSpot/status/2090455140956545485",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQLJ30sa0AAXDtd.jpg"
+          },
+          "summary": "Circana 数据：美国 7 月游戏消费同比 -10% 至 45 亿美元。实体软件销售额 8500 万美元，为 1995 年有统计以来最差的 7 月；硬件 -29% 至 2.82 亿美元，跌回 2020 年水平；主机销量 -39%（PS5 -6%、Xbox -18%、Switch 2 较去年首发月 -51%），而平均售价因元件危机上涨 16% 至 542 美元。7 月全美最畅销游戏是 14 年前的《使命召唤：黑色行动2》移植版。",
+          "analysis": "硬件「量跌价涨」是元件危机的直接传导——涨价正在吃掉销量。实体软件创纪录新低则与 GTA6 的「盒内兑换码」争议同属一条暗线：实体零售渠道正在加速萎缩。对国内出海厂商，美国 Q3 的盘子比预期更冷，年底前 GTA6 发售前的空窗期会更难熬。",
+          "recommendation": "美国7月游戏消费-10%：实体软件$85M史上最低，硬件跌回2020年水平"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer 转 IGN · 访谈",
+          "tags": [
+            "FromSoftware",
+            "宫崎英高",
+            "Duskbloods"
+          ],
+          "featured": true,
+          "title": "宫崎英高：Duskbloods 与 Nightreign 撞车纯属巧合，FromSoftware 重心仍是单机",
+          "en_title": "Miyazaki suggests FromSoftware is keen to return to single-player games after The Duskbloods and Elden Ring: Nightreign",
+          "full_text": "Miyazaki suggests FromSoftware is keen to return to single-player games after The Duskbloods and Elden Ring: Nightreign\n\nhttps://t.co/Yuy74svWQJ https://t.co/yRV7aUmwef",
+          "author": "eurogamer",
+          "date": "2026-08-20",
+          "likes": 6,
+          "views": 1413,
+          "comments": 0,
+          "shares": 1,
+          "link": "https://x.com/eurogamer/status/2090480736293773717",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQLhEUVX0AA7Kgw.jpg"
+          },
+          "summary": "宫崎英高接受 IGN 采访：Nightreign 与 Duskbloods 同为多人游戏「纯属巧合」（前者由石崎淳也执导），「并不代表这就是公司未来的方向，我们对单机内容的重心从未改变」。他还表示「做多人的时间越久，反而越想回去做单机」，Duskbloods 是那些「放不进单机框架」的点子的出口。任天堂在新手引导上提供了重要帮助。游戏网络测试 8月21-24日进行，此前流传的 9月24日发售日被任天堂否认。（多家报道：GameSpot、Polygon、Niche Gamer）",
+          "analysis": "在连续两款多人游戏后，宫崎英高主动给「FromSoftware 转型 live-service」的猜测降温。值得注意的是他对多人项目的定位：容纳「放不进单机框架的点子」的试验田——这个「溢出池」的表述，比任何官方声明都更清楚地描绘了 FromSoftware 的立项逻辑。",
+          "recommendation": "宫崎英高：多人项目只是点子的「溢出池」，FromSoftware 重心仍是单机"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "TheGamer 转 Bloomberg · 数据",
+          "tags": [
+            "索尼",
+            "Live-service",
+            "Naughty Dog"
+          ],
+          "featured": true,
+          "title": "彭博 Schreier：TLOU Online 烧了数亿美元，占用了 Naughty Dog 大部分人马",
+          "en_title": "The Last Of Us Online Reportedly Had Most Of Naughty Dog Working On It, Cost \"Hundreds Of Millions\"",
+          "full_text": "The Last Of Us Online Reportedly Had Most Of Naughty Dog Working On It, Cost \"Hundreds Of Millions\" https://t.co/gSskoiMNWv https://t.co/wVLqScUH7q",
+          "author": "thegamerwebsite",
+          "date": "2026-08-20",
+          "likes": 0,
+          "views": 984,
+          "comments": 0,
+          "shares": 0,
+          "link": "https://x.com/thegamerwebsite/status/2090257654631248213",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQIWQqYXAAAgXKK.jpg"
+          },
+          "summary": "彭博记者 Jason Schreier 在新视频中披露：已取消的《最后生还者 Online》项目「耗资数亿美元」，且占用了 Naughty Dog 工作室的大部分人力——这直接解释了该工作室为何 6 年没有新作（直到 Intergalactic 公布）。项目从小规模起步、逐步膨胀成服务型游戏，2023 年被取消。",
+          "analysis": "与昨日 Horizon 多人游戏回炉连起来看，索尼 live-service 战略的代价清单正在补全：Bluepoint 关厂、Concord 暴毙、TLOU Online 烧掉数亿美元+工作室 6 年产能。这些数字会成为未来行业评估「大厂下场做 live-service」时的标准参照系。",
+          "recommendation": "TLOU Online 的真实代价：数亿美元+Naughty Dog 六年产能"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 媒体报道",
+          "tags": [
+            "EA",
+            "沙特收购",
+            "BioWare"
+          ],
+          "title": "前 EA 高管唱衰 BioWare 前景：下一款质量效应「眼见为实」",
+          "en_title": "\"I don't know if they will keep funding that one\" - Former EA manager doesn't believe the next Mass Effect will survive Saudi takeover",
+          "full_text": "\"I don't know if they will keep funding that one\" - Former EA manager doesn't believe the next Mass Effect will survive Saudi takeover\n\nhttps://t.co/XWcX52oL5F https://t.co/nsNsInkOCv",
+          "author": "eurogamer",
+          "date": "2026-08-20",
+          "likes": 17,
+          "views": 11595,
+          "comments": 6,
+          "shares": 0,
+          "link": "https://x.com/eurogamer/status/2090355941900497233",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQJvkNzbUAAk53l.jpg"
+          },
+          "summary": "前 EA 高级经理 Emmanuel Rosier（9 年任职，现任 Newzoo 市场情报总监）对 PC Gamer 表示：BioWare 这类「近年挣扎」的 IP 能否继续获得投资是最大问号，下一款质量效应「眼见为实」。BioWare 老兵 Mark Darrah 也警告：背负 200 亿美元债务的新 EA 可能出售「做新公司不感兴趣的游戏类型」的工作室。",
+          "analysis": "550 亿美元收购完成后，EA 的叙事从「会不会变」进入「谁先被动刀」。单机剧情 RPG 这种长周期、低即时回报的品类，在债务驱动的新 EA 里的优先级可想而知——这对所有做长周期单机项目的大厂都是一面镜子。",
+          "recommendation": "EA 沙特时代第一刀指向谁？前高管和 BioWare 老兵同时指向质量效应"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "電ファミニコゲーマー · 媒体报道",
+          "tags": [
+            "物理合作",
+            "全平台",
+            "PlaySide"
+          ],
+          "featured": true,
+          "game_ref": "Dumb Ways to Build",
+          "title": "Dumb Ways to Build：PlaySide 出品的 4 人物理合作工地，9月10日全平台发售",
+          "en_title": "【最大4人協力】危険な建設現場に挑むドタバタ協力ゲーム『Dumb Ways to Build』が9月10日発売決定",
+          "full_text": "【最大4人協力】危険な建設現場に挑むドタバタ協力ゲーム『Dumb Ways to Build』が9月10日発売決定\nhttps://t.co/VarHDlSNl8\n\n労働災害もまずい判断も日常茶飯事の世界では、同僚たちが「業務上の最大のリスク」に。即席で足場を置いたり固定したりするが、ヘタを打つと仲間が吹っ飛ぶ https://t.co/oqe9cxahyc",
+          "author": "denfaminicogame",
+          "date": "2026-08-20",
+          "likes": 7030,
+          "views": 867715,
+          "comments": 15,
+          "shares": 1423,
+          "link": "https://x.com/denfaminicogame/status/2090260080138891754",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2090260038812315649/pu/img/HBsSoz0ZncUer0Wi.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2090260080138891754/video/1"
+          },
+          "summary": "物理演算合作建造游戏定档 9月10日，PC/PS5/Xbox 全平台+跨平台联机+日语支持——86.8万浏览",
+          "analysis": "",
+          "recommendation": "PlaySide 新作 Dumb Ways to Build 9/10 发售：同事才是工地上最大的安全隐患",
+          "enrichment": {
+            "game_name": "Dumb Ways to Build",
+            "genre": "物理合作 / 建造 / 动作",
+            "developer": "Dumb Ways to Die（PlaySide Studios 旗下 IP 团队）",
+            "platforms": [
+              "Steam",
+              "PS5",
+              "Xbox Series X|S"
+            ],
+            "price": "未公布",
+            "release_date": "2026年9月10日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4412320/Dumb_Ways_to_Build/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4412320/7182e312b98a494c3e498667b132693e9e4f6a0f/header.jpg?t=1787274116",
+            "youtube_video": null,
+            "description": "「Dumb Ways to Die」IP 衍生的物理演算合作建造游戏，最多 4 人在线协作（支持单人），PC/PS5/Xbox 全平台+跨平台联机，支持日语。\n\n【核心玩法】玩家是 Dumbville 镇「口碑最差的建筑公司」员工，专门接手正规公司不敢碰的危险工程。现场任何东西（没上螺栓的）都能抓起来、旋转、扔出去当建材；用射钉枪临时固定桥梁、坡道等结构搭出前进的路。\n\n【合作即事故】游戏的核心笑点与难度都在队友身上：操作失误会导致同事从屋顶飞出去，「工伤」和「猪队友」是这个世界的日常。危险地图各有隐藏秘密与挑战，报酬是可解锁的外观和额外挑战模式。\n\n【出身】PlaySide Studios（澳洲上市工作室）旗下「Dumb Ways to Die」是曾创下亿级下载的公益广告 IP，这次把「蠢死法」的黑色幽默平移到了合作建造赛道。\n\n【优势】IP 认知度+物理合作的直播效果+全平台跨联机；9月10日发售窗口竞争温和。\n【不足】物理合作品类（Peak、Lethal Company 后继者众多）已较拥挤。\n\n【综合】把 IP 幽默感与成熟的物理合作框架打包，卖相是标准的「直播友好型派对游戏」。",
+            "why_notable": "PlaySide 把亿级下载的公益 IP 改造成 4 人物理合作建造，全平台+跨联机+日语支持，86.8万浏览"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "PC Gamer · 媒体报道",
+          "tags": [
+            "机甲",
+            "EA发售",
+            "Stellar Jockeys"
+          ],
+          "game_ref": "Brigador Killers",
+          "title": "Brigador Killers：一个问题让开发多了 5 年，等距机甲叛乱模拟今日开 EA",
+          "en_title": "How one question added 5 years of development to Brigador Killers 😅 Brigador Killers launches into Early Access today on Steam and GOG!",
+          "full_text": "How one question added 5 years of development to Brigador Killers 😅 Brigador Killers launches into Early Access today on Steam and GOG! https://t.co/2ekZvUoM3D\n#brigadorkillers #brigador #indiegame #gamedev #pcgaming #pcgamer https://t.co/omyEGbXZMZ",
+          "author": "pcgamer",
+          "date": "2026-08-20",
+          "likes": 31,
+          "views": 15985,
+          "comments": 1,
+          "shares": 1,
+          "link": "https://x.com/pcgamer/status/2090348313245790414",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2090348292806950914/pu/img/igZz71fnEVqa49bC.jpg",
+            "video_url": "https://x.com/pcgamer/status/2090348313245790414/video/1"
+          },
+          "summary": "Stellar Jockeys 的 Brigador 续作今日在 Steam/GOG 开启抢先体验，$22.49——1.6万浏览",
+          "analysis": "",
+          "recommendation": "一个问题加了5年开发：Brigador Killers 今日开 EA，$22.49",
+          "enrichment": {
+            "game_name": "Brigador Killers",
+            "genre": "等距动作 / 机甲 / 撤离射击",
+            "developer": "Stellar Jockeys × Gausswerks",
+            "platforms": [
+              "Steam",
+              "GOG"
+            ],
+            "price": "$22.49（抢先体验）",
+            "release_date": "已发售 · 2026年8月20日（抢先体验）",
+            "steam_rating": "EA 首日，评价积累中",
+            "steam_url": "https://store.steampowered.com/app/903930/Brigador_Killers/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/903930/1052feff3eb214f3436f555ed057c632924613a7/header.jpg?t=1787262286",
+            "youtube_video": null,
+            "description": "2016 年口碑机甲射击《Brigador》的续作，Stellar Jockeys 开发多年的等距视角「叛乱模拟器」，今日在 Steam/GOG 开启抢先体验。\n\n【核心玩法】徒步与载具双线作战：既能开机甲碾压，也能下机步战、潜入、偷窃敌人装备。围绕「建立并偷出一座私人军火库」的循环，把战火烧向挑起战争的商人们。\n\n【开发故事】PC Gamer 报道标题即点题：「一个问题让开发多了 5 年」——团队在采访中反思，一个关键设计问题的反复推翻让项目周期远超预期。这种「诚实复盘」本身就是独游圈稀缺的样本。\n\n【出身】前作 Brigador 以「等距机甲+高自由度破坏」在核心玩家圈积累了稳定口碑；续作从纯机甲扩展到徒步+载具混合玩法，野心明显更大。\n\n【优势】前作口碑打底；玩法维度扩展（徒步+载具+偷窃）差异化明显；EA 定价 $22.49 属于信心区间。\n【不足】EA 完成度未知；等距视角在主流市场偏小众。\n\n【综合】核心向机甲独游的长跑续作，「开发周期为什么失控」的复盘比游戏本身更值得从业者一读。",
+            "why_notable": "前作口碑机甲独游的 5 年续作开 EA，「一个问题加 5 年开发」的复盘是独游项目管理的活教材"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "電ファミニコゲーマー · 媒体报道",
+          "tags": [
+            "柏青哥",
+            "Roguelike",
+            "City Pop"
+          ],
+          "game_ref": "Pop! Pachinko",
+          "title": "Pop! Pachinko：90 年代 citypop 风的柏青哥 roguelike，9月17日发售",
+          "en_title": "90年代風のシティポップ感がチルいパチンコ・ローグライク『ポップ！ パチンコ』Steamにて9月17日に発売",
+          "full_text": "90年代風のシティポップ感がチルいパチンコ・ローグライク『ポップ！ パチンコ』Steamにて9月17日に発売。繋がるコンボと演出で“脳汁”が止まらなそう\nhttps://t.co/v5IDgIwSlv\n\nランダムに変化する盤面を攻略し、購入アイテムを活かして高得点を目指す。かわいい“ちび”キャラクターの収集要素も https://t.co/dVpvt67ziU",
+          "author": "denfaminicogame",
+          "date": "2026-08-20",
+          "likes": 535,
+          "views": 94577,
+          "comments": 2,
+          "shares": 116,
+          "link": "https://x.com/denfaminicogame/status/2090249928576811387",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2090249894410022912/pu/img/a19UYHQeDK2qUqa9.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2090249928576811387/video/1"
+          },
+          "summary": "90 年代 citypop 氛围的柏青哥 roguelike 定档 9月17日——9.5万浏览",
+          "analysis": "",
+          "recommendation": "柏青哥 roguelike 还能再细分：Pop! Pachinko 9/17，citypop 风格+角色收集",
+          "enrichment": {
+            "game_name": "Pop! Pachinko",
+            "genre": "柏青哥 / Roguelike / 休闲",
+            "developer": "Pangolin Interactive（Gamersky Games 联合发行）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2026年9月17日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4437370/Pop_Pachinko/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4437370/3238f6f4ad1fbefc9b2794220be8b70f1971719c/header.jpg?t=1786700680",
+            "youtube_video": null,
+            "description": "把柏青哥（日式弹珠机）做成 roguelike 的休闲游戏，美术包装是 90 年代日本 citypop 的松弛感，9月17日发售。\n\n【核心玩法】收集并强化「附魔弹珠」射入随机变化的盘面，靠道具（charm）在弹珠之间叠出协同效果冲高分；随机盘面+道具 build 的循环是标准的 roguelike 框架，包装在弹珠机的物理反馈里。\n\n【收集要素】Q 版「Chibi Pop」角色收集系统，配合 citypop 音乐营造轻松氛围。\n\n【出身】Pangolin Interactive 开发，Gamersky Games 联合发行——值得注意的是 Gamersky（游民星空）正在从媒体/渠道向独游发行业务延伸。\n\n【优势】柏青哥 roguelike 是 Ballionaire/ peglin 之后仍在增长的细分；citypop 美术在同类里有辨识度；发行组合横跨中日。\n【不足】柏青哥的随机性天然更重，build 深度待验证。\n\n【综合】细分赛道+风格化包装的稳健组合，发行侧的中日合作是额外看点。",
+            "why_notable": "柏青哥 roguelike 赛道再细分，citypop 美术包装+游民星空参与发行的中日组合"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "Landfall · 官方",
+          "tags": [
+            "钓鱼",
+            "物理",
+            "Landfall发行"
+          ],
+          "game_ref": "How to Fish",
+          "title": "Landfall 扶持的独游 How to Fish 今日发售：1-4 人物理钓鱼模拟",
+          "en_title": "so we also support other indie games with funding and one of those just came out !",
+          "full_text": "so we also support other indie games with funding and one of those just came out !🎣\n\nHow To Fish by Dazed Games is a 1-4 player physics based fishing simulator. While drinking and boating, you crash into a small island. To work your way back home, you have to learn How to Fish! https://t.co/VwLtR1ftiS",
+          "author": "LandfallGames",
+          "date": "2026-08-20",
+          "likes": 125,
+          "views": 2852,
+          "comments": 3,
+          "shares": 2,
+          "link": "https://x.com/LandfallGames/status/2090461277835432311",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090460850792329216/img/P4KdKW9aGjMx_SB0.jpg",
+            "video_url": "https://x.com/LandfallGames/status/2090461277835432311/video/1"
+          },
+          "summary": "Landfall（Totally Accurate 系列）扶持的 Dazed Games 作品今日发售——物理钓鱼模拟，$4.95",
+          "analysis": "",
+          "recommendation": "Landfall 出钱扶持的物理钓鱼游戏 How to Fish 今日发售，$4.95",
+          "enrichment": {
+            "game_name": "How to Fish",
+            "genre": "钓鱼模拟 / 物理 / 休闲",
+            "developer": "Dazed Games（Landfall 资助）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "$4.95",
+            "release_date": "已发售 · 2026年8月20日",
+            "steam_rating": "发售首日，评价积累中",
+            "steam_url": "https://store.steampowered.com/app/4001890/How_to_Fish/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4001890/45c4ddff4901e32c4b8b643e1b97d0d01898d299/header.jpg?t=1787234618",
+            "youtube_video": null,
+            "description": "Dazed Games 开发、Landfall 出资扶持的 1-4 人物理钓鱼模拟，今日发售，$4.95。\n\n【核心玩法】喝多了划船撞上小岛，为了回家必须学会钓鱼。物理驱动的钓鱼过程+多人同船的混乱感，是标准的「Landfall 式」滑稽物理路线。\n\n【出身】Landfall（《Totally Accurate Battle Simulator》《Content Warning》）近年持续以资金扶持小型独游团队，本作是该扶持计划的产出之一——大工作室给小团队做「天使投资」的模式正在瑞典独游圈扩散。\n\n【优势】$4.95 的极低门槛+4 人合作的直播效果；Landfall 品牌背书。\n【不足】体量小，长尾有限。\n\n【综合】Landfall 扶持模式的一个低成本样本，值得观察这类「工作室天使」模式的产出效率。",
+            "why_notable": "Landfall 出资扶持小团队的样本落地，$4.95 低门槛物理钓鱼"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "スチまと · 媒体推荐",
+          "tags": [
+            "魂like",
+            "狗",
+            "PR"
+          ],
+          "unselected": true,
+          "title": "Stray Dog: nobody cares：叼着锈刀救主人的野犬魂 like",
+          "en_title": "ただの犬に『SEKIRO』やらせるの、ガチで頭おかしい。",
+          "full_text": "ただの犬に『SEKIRO』やらせるの、ガチで頭おかしい。\n\n落ちぶれた騎士に拾われたただの野良犬が、捕まった主人を救うために朽ちた刀を口にくわえて戦い抜く泥臭いソウルライク。犬の分際で敵の猛攻を火花散らして弾き返し、背後からステルスキルで処刑する『SEKIRO』直系のヒリヒリする戦闘、めちゃくちゃアツそう。\n\n『Stray Dog: nobody cares』#PR",
+          "author": "stmatomato",
+          "date": "2026-08-20",
+          "likes": 4506,
+          "views": 517853,
+          "comments": 64,
+          "shares": 958,
+          "link": "https://x.com/stmatomato/status/2090377803048825254",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090377324156145664/img/WkzahkLxYg45s-2F.jpg",
+            "video_url": "https://x.com/stmatomato/status/2090377803048825254/video/1"
+          },
+          "summary": "一只野犬被落魄骑士捡到，主人被抓后叼着锈刀踏上救援之路：弹反火花四溅、背刺处决，只狼直系战斗——51.8万浏览（标注 #PR 推广）。",
+          "analysis": "",
+          "recommendation": "野犬叼刀救主的只狼 like：弹反+处决一样不少——51.8万浏览"
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Niche Gamer · 媒体报道",
+          "tags": [
+            "Roguelike",
+            "烹饪",
+            "第一人称"
+          ],
+          "unselected": true,
+          "title": "Cook The Dungeon：第一人称烹饪 roguelike，打怪要刚好打到零血",
+          "en_title": "Cook The Dungeon is a first-person roguelike where every fight feeds the next~",
+          "full_text": "Cook The Dungeon is a first-person roguelike where every fight feeds the next~\n\nhttps://t.co/vrQhatzSJH \n\nCombat revolves around cards for Cuts, Preps and Seasons. Get a monster down to exactly zero to get all its parts, too much damage ruins the meat! Cook up the bits later and keep moving!",
+          "author": "nichegamer",
+          "date": "2026-08-20",
+          "likes": 73,
+          "views": 4483,
+          "comments": 2,
+          "shares": 10,
+          "link": "https://x.com/nichegamer/status/2090238504093589846",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2090238479259025408/pu/img/9G5LYIcnX9pGBnlD.jpg",
+            "video_url": "https://x.com/nichegamer/status/2090238504093589846/video/1"
+          },
+          "summary": "战斗围绕「切、备、调味」三类卡牌展开；把怪物刚好打到零血才能保住全部食材部位，伤害过量会把肉打坏；打完下锅做饭继续赶路。",
+          "analysis": "",
+          "recommendation": "打怪=备菜：刚好零血才不掉食材的第一人称烹饪 roguelike"
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "IndieGamesLibrary · KOL推荐",
+          "tags": [
+            "Friendslop",
+            "合作",
+            "救护车"
+          ],
+          "unselected": true,
+          "title": "Call the Ambulance：扮演全世界最不合格的急救员",
+          "en_title": "This time it's a game about AMBULANCE. Play as the world's least qualified medics",
+          "full_text": "The incredible rise of the friendslop genre goes on, and don't think to stop!\n\nThis time it's a game about AMBULANCE\n\nPlay as the world's least qualified medics\nAnswer the call, botch the treatment, and survive scenes no textbook prepared you for\n\nIt's called Call the Ambulance https://t.co/Qw750Yv3L6",
+          "author": "IndieGamesLib",
+          "date": "2026-08-19",
+          "likes": 112,
+          "views": 5812,
+          "comments": 4,
+          "shares": 14,
+          "link": "https://x.com/IndieGamesLibrary/status/2090061232040481029",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090011219537092608/img/crIWIgBxOBar7QMJ.jpg",
+            "video_url": "https://x.com/IndieGamesLibrary/status/2090061232040481029/video/1"
+          },
+          "summary": "friendslop 品类的最新变体：接报警电话、把急救搞砸、在教科书没教过的现场活下来。",
+          "analysis": "",
+          "recommendation": "friendslop 轮到救护车了：全世界最不合格的急救员模拟器"
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "开发者亲推 · 官方",
+          "tags": [
+            "EA数据",
+            "好评率"
+          ],
+          "unselected": true,
+          "title": "Stonewards：EA 首周 95% 好评，小团队塔防的稳步开局",
+          "en_title": "1 week since Stonewards launched in Early Access!",
+          "full_text": "1 week since Stonewards launched in Early Access! \n\nWe know there’s still a lot of work ahead, but seeing so many of you play and sitting at 95% Positive Reviews on Steam is unreal. Thank you so much!!! ❤️😍\n\nWe’re working hard every day to keep improving the game and maintain those great scores 💪\n\nhttps://t.co/wTl2v96IS9",
+          "author": "BananaTigerStd",
+          "date": "2026-08-19",
+          "likes": 72,
+          "views": 3868,
+          "comments": 1,
+          "shares": 5,
+          "link": "https://x.com/BananaTigerStd/status/2090106698858197289",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090101257197309953/img/PtlzXyi3lv0U2UZi.jpg",
+            "video_url": "https://x.com/BananaTigerStd/status/2090106698858197289/video/1"
+          },
+          "summary": "Banana Tiger Studio 的 EA 作品上线一周，Steam 95% 好评；团队承诺每日改进。",
+          "analysis": "",
+          "recommendation": "EA 首周 95% 好评：小团队 Stonewards 的稳步开局"
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "开发者亲推 · 官方",
+          "tags": [
+            "治愈",
+            "种植",
+            "9月7日"
+          ],
+          "unselected": true,
+          "title": "Tiny Eden：小公寓屋顶农场，9月7日发售",
+          "en_title": "Tiny Eden launches on September 7th! Grow, cook, sell, and turn your apartment into a rooftop paradise.",
+          "full_text": "🏡 CALLING ALL CONTENT CREATORS! 🏡\n\nHow green can one tiny apartment get? 🌿\n\nTiny Eden launches on September 7th! Grow, cook, sell, and turn your apartment into a rooftop paradise. 🌱\n\nIf you'd like keys, feel free to reach out!\n\n#cozygames #indiegames #wishlistwednesday https://t.co/1DshMl1K3q",
+          "author": "TinyEdenGame",
+          "date": "2026-08-19",
+          "likes": 516,
+          "views": 23053,
+          "comments": 147,
+          "shares": 92,
+          "link": "https://x.com/TinyEdenGame/status/2090140250152534528",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090138299411124224/img/5bhPQjLvDzlqBs-v.jpg",
+            "video_url": "https://x.com/TinyEdenGame/status/2090140250152534528/video/1"
+          },
+          "summary": "在一间小公寓里种植、烹饪、售卖，把屋顶变成乐园；9月7日发售，正在招募内容创作者。",
+          "analysis": "",
+          "recommendation": "小公寓变屋顶乐园：治愈种植 Tiny Eden 9/7 发售"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unreal Engine 官方 · 工具发布",
+          "tags": [
+            "UEFN",
+            "MCP",
+            "Agentic"
+          ],
+          "featured": true,
+          "title": "UEFN 上线 Unreal MCP：Claude Code/Codex/Cursor 可直连编辑器",
+          "en_title": "Introducing Unreal MCP in UEFN. With Unreal MCP, you can connect agentic coding tools like Claude Code, Codex, or Cursor dir…",
+          "full_text": "RT @FNCreate: Introducing Unreal MCP in UEFN.\n\nWith Unreal MCP, you can connect agentic coding tools like Claude Code, Codex, or Cursor dir…",
+          "author": "UnrealEngine",
+          "date": "2026-08-20",
+          "likes": 0,
+          "views": 1513,
+          "comments": 0,
+          "shares": 39,
+          "link": "https://x.com/UnrealEngine/status/2090459966075220437",
+          "media": null,
+          "summary": "Epic 官方宣布在 UEFN（Unreal Editor for Fortnite）中上线 Unreal MCP：可以把 Claude Code、Codex、Cursor 等 agentic 编程工具直接接入编辑器，让 AI 代理直接操作引擎。",
+          "analysis": "游戏引擎的「MCP 化」正在加速：Unity 先有社区 MCP 方案（昨日那条零基础一周做游戏的推文就是靠它），Epic 今天把 UEFN 官方接入。引擎官方支持 agentic 工具链，意味着 AI 操作引擎从「hack」变成「官方路径」——UGC 平台的内容生产效率会继续拉开代差。",
+          "recommendation": "UEFN 官方接入 MCP：AI 编辑器代理从 hack 变成官方路径"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**市场数据给行业泼了盆冷水**\nCircana 7 月报告：美国游戏消费同比 -10% 至 45 亿美元，实体软件 8500 万美元创 1995 年有统计以来最差 7 月，硬件 -29% 跌回 2020 年水平——元件危机推高的售价（均价 +16% 至 542 美元）正在吃掉销量。彭博 Schreier 同日披露：已取消的 TLOU Online 烧了数亿美元、占用了 Naughty Dog 大部分人马，这解释了该工作室 6 年无新作的原因。\n\n**宫崎英高给「FromSoftware 转型」猜测降温**\n宫崎英高接受 IGN 采访：Nightreign 与 Duskbloods 同为多人游戏纯属巧合，多人是「放不进单机框架的点子」的溢出池，公司重心仍是单机。Duskbloods 网络测试 8月21-24日进行。\n\n**今日独游：PlaySide 工地、机甲叛乱与官方 MCP**\nPlaySide《Dumb Ways to Build》定档 9月10日全平台（86.8万浏览）；Brigador Killers 开 EA（一个问题加了 5 年开发）；UEFN 官方上线 Unreal MCP，Claude Code/Codex/Cursor 可直连编辑器——引擎的 agentic 化从 hack 变成官方路径。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
