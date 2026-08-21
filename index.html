@@ -2905,19 +2905,14 @@ function renderLaunchedContent() {
   const host = document.getElementById('launchedContent');
   const boards = d.boards || [];
   const watch = d.watch || {};
+  // 大背景取今日推荐最大卡(picks[0])的游戏,用 library_hero 与卡片 header 错开;无 Steam 链接则不留背景
+  const feat = (d.picks || [])[0] || null;
+  const featApp = feat && /store\.steampowered\.com\/app\/(\d+)/.exec(feat.link || '');
+  const heroBg = featApp ? `https://cdn.cloudflare.steamstatic.com/steam/apps/${featApp[1]}/library_hero.jpg` : '';
   host.innerHTML = `
   ${renderLaunchedDateStrip()}
-  <section class="roblox-switcher" aria-label="上线日推">
-    <div class="roblox-switch-inner">
-      <div>
-        <div class="roblox-kicker">LAUNCHED GAMES DAILY</div>
-        <h1 class="roblox-title">游戏关注</h1>
-        <p class="roblox-subtitle"></p>
-      </div>
-    </div>
-  </section>
   <div class="ld-picks-zone">
-    ${d.hero_bg ? `<div class="ld-hero-bg"><img src="${escapeHtml(d.hero_bg)}" alt="" referrerpolicy="no-referrer"></div>` : ''}
+    ${heroBg ? `<div class="ld-hero-bg"><img src="${heroBg}" alt="" referrerpolicy="no-referrer" onerror="this.parentNode.style.display='none'"></div>` : ''}
     <div class="ld-lede">
       <div class="tw-week-block">
         <div class="tw-week-section-kicker">TODAY'S PICKS · ${escapeHtml(d.date || '')}</div>
