@@ -1287,6 +1287,153 @@ function handleEditorialDateStripClick(event) {
   handleEditorialDateClick(event, button.dataset.date);
 }
 
+// === 游戏关注 Daily Timeline（复用 ed-date-strip 样式，独立作用域 .ld-date-strip，绑定 launched 数据） ===
+let launchedDateDragState = null;
+
+function getLaunchedDateScroller() {
+  return document.querySelector('.ld-date-strip .ed-control-dates');
+}
+
+function renderLaunchedDateStrip() {
+  const dates = (launchedManifest && launchedManifest.dates) || [];
+  if (!dates.length) return '';
+  const dayNames = ['周日','周一','周二','周三','周四','周五','周六'];
+  const dateButtons = dates.slice().reverse().map(d => {
+    const dt = new Date(d);
+    const label = `${String(dt.getMonth() + 1).padStart(2, '0')}-${String(dt.getDate()).padStart(2, '0')}`;
+    return `<button type="button" class="ed-date-btn ${launchedDate === d ? 'on' : ''}" data-ld-date="${d}" title="${d}"><span>${dayNames[dt.getDay()]}</span>${label}</button>`;
+  }).join('');
+  const hint = '拖动日期条或下方红金滑块，最新日期在左侧 · 点击日期查看当期游戏关注';
+  return `<section class="ed-date-strip ld-date-strip" aria-label="日期选择"><div class="ed-date-strip-head"><div>Daily Timeline<small>${hint}</small></div><div class="ed-date-shift"><button type="button" onclick="shiftLaunchedDates(-1)" aria-label="向左查看较新日期">‹</button><button type="button" onclick="shiftLaunchedDates(1)" aria-label="向右查看更早日期">›</button></div></div><div class="ed-control-dates" onclick="handleLaunchedDateStripClick(event)" onscroll="syncLaunchedDateScrollbar()" onpointerdown="startLaunchedDatePan(event)" onpointermove="moveLaunchedDatePan(event)" onpointerup="endLaunchedDatePan(event)" onpointercancel="endLaunchedDatePan(event)" onpointerleave="endLaunchedDatePan(event)">${dateButtons}</div><div class="ed-date-scrollbar" onpointerdown="startLaunchedDateDrag(event)"><div class="ed-date-scroll-thumb"></div></div></section>`;
+}
+
+function shiftLaunchedDates(direction) {
+  const scroller = getLaunchedDateScroller();
+  if (!scroller) return;
+  scroller.scrollBy({ left: direction * Math.max(280, scroller.clientWidth * 0.42), behavior: 'smooth' });
+  setTimeout(syncLaunchedDateScrollbar, 260);
+}
+
+function getLaunchedDateButtons() {
+  return Array.from(document.querySelectorAll('.ld-date-strip .ed-date-btn[data-ld-date]'));
+}
+
+function scrollLaunchedActiveDateIntoView() {
+  const scroller = getLaunchedDateScroller();
+  const active = document.querySelector('.ld-date-strip .ed-date-btn.on');
+  if (!scroller || !active) return;
+  const maxScroll = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
+  const target = active.offsetLeft - Math.max(0, (scroller.clientWidth - active.offsetWidth) / 2);
+  scroller.scrollLeft = Math.max(0, Math.min(maxScroll, target));
+  syncLaunchedDateScrollbar();
+}
+
+function getLaunchedDateNearViewport() {
+  const scroller = getLaunchedDateScroller();
+  if (!scroller) return null;
+  const viewportStart = scroller.scrollLeft;
+  const viewportEnd = viewportStart + scroller.clientWidth;
+  const visible = getLaunchedDateButtons().filter(btn =>
+    btn.offsetLeft + btn.offsetWidth >= viewportStart && btn.offsetLeft <= viewportEnd
+  );
+  if (visible.length) return visible[0].dataset.ldDate;
+  let nearest = null;
+  let nearestDistance = Infinity;
+  getLaunchedDateButtons().forEach(btn => {
+    const center = btn.offsetLeft + btn.offsetWidth / 2;
+    const distance = Math.abs(center - viewportStart);
+    if (distance < nearestDistance) { nearestDistance = distance; nearest = btn.dataset.ldDate; }
+  });
+  return nearest;
+}
+
+function activateLaunchedDateNearViewport() {
+  const date = getLaunchedDateNearViewport();
+  if (date && date !== launchedDate) loadLaunchedDate(date);
+}
+
+function syncLaunchedDateScrollbar() {
+  const scroller = getLaunchedDateScroller();
+  const bar = document.querySelector('.ld-date-strip .ed-date-scrollbar');
+  const thumb = document.querySelector('.ld-date-strip .ed-date-scroll-thumb');
+  if (!scroller || !bar || !thumb) return;
+  const maxScroll = scroller.scrollWidth - scroller.clientWidth;
+  if (maxScroll <= 0) { bar.style.display = 'none'; return; }
+  bar.style.display = '';
+  const trackWidth = bar.clientWidth;
+  const thumbWidth = Math.max(80, Math.round(scroller.clientWidth / scroller.scrollWidth * trackWidth));
+  const maxThumb = Math.max(1, trackWidth - thumbWidth);
+  thumb.style.width = thumbWidth + 'px';
+  thumb.style.transform = `translateX(${Math.round(scroller.scrollLeft / maxScroll * maxThumb)}px)`;
+}
+
+function setLaunchedDateScrollFromPointer(event) {
+  const scroller = getLaunchedDateScroller();
+  const bar = document.querySelector('.ld-date-strip .ed-date-scrollbar');
+  const thumb = document.querySelector('.ld-date-strip .ed-date-scroll-thumb');
+  if (!scroller || !bar || !thumb) return;
+  const rect = bar.getBoundingClientRect();
+  const maxScroll = scroller.scrollWidth - scroller.clientWidth;
+  const thumbWidth = thumb.offsetWidth || 80;
+  const maxThumb = Math.max(1, rect.width - thumbWidth);
+  const x = Math.max(0, Math.min(maxThumb, event.clientX - rect.left - thumbWidth / 2));
+  scroller.scrollLeft = x / maxThumb * maxScroll;
+  syncLaunchedDateScrollbar();
+}
+
+function startLaunchedDateDrag(event) {
+  event.preventDefault();
+  setLaunchedDateScrollFromPointer(event);
+  const move = e => setLaunchedDateScrollFromPointer(e);
+  const stop = () => {
+    document.removeEventListener('pointermove', move);
+    document.removeEventListener('pointerup', stop);
+    document.removeEventListener('pointercancel', stop);
+    activateLaunchedDateNearViewport();
+  };
+  document.addEventListener('pointermove', move);
+  document.addEventListener('pointerup', stop);
+  document.addEventListener('pointercancel', stop);
+}
+
+function startLaunchedDatePan(event) {
+  const scroller = event.currentTarget;
+  if (!scroller) return;
+  const button = event.target.closest ? event.target.closest('.ed-date-btn[data-ld-date]') : null;
+  launchedDateDragState = { x: event.clientX, left: scroller.scrollLeft, moved: false, button };
+  if (scroller.setPointerCapture) scroller.setPointerCapture(event.pointerId);
+}
+
+function moveLaunchedDatePan(event) {
+  if (!launchedDateDragState) return;
+  const scroller = event.currentTarget;
+  const delta = event.clientX - launchedDateDragState.x;
+  if (Math.abs(delta) > 4) launchedDateDragState.moved = true;
+  scroller.scrollLeft = launchedDateDragState.left - delta;
+  syncLaunchedDateScrollbar();
+}
+
+function endLaunchedDatePan(event) {
+  const state = launchedDateDragState;
+  const scroller = event.currentTarget;
+  if (scroller && scroller.releasePointerCapture) {
+    try { scroller.releasePointerCapture(event.pointerId); } catch (err) {}
+  }
+  if (state && !state.moved && state.button) {
+    const date = state.button.dataset.ldDate;
+    if (date && date !== launchedDate) loadLaunchedDate(date);
+  }
+  setTimeout(() => { launchedDateDragState = null; }, 0);
+}
+
+function handleLaunchedDateStripClick(event) {
+  const button = event.target.closest ? event.target.closest('.ed-date-btn[data-ld-date]') : null;
+  if (!button) return;
+  if (launchedDateDragState && launchedDateDragState.moved) { event.preventDefault(); return; }
+  const date = button.dataset.ldDate;
+  if (date && date !== launchedDate) loadLaunchedDate(date);
+}
+
 function renderEditorialDateStrip() {
   if (!currentData) return '';
   const available = new Set((manifest && manifest.dates) || []);
@@ -2758,18 +2905,15 @@ function renderLaunchedContent() {
   const host = document.getElementById('launchedContent');
   const boards = d.boards || [];
   const watch = d.watch || {};
-  const dateBtns = (launchedManifest.dates || []).slice().reverse()
-    .map(dt => `<button type="button" class="roblox-week-btn ${dt === launchedDate ? 'on' : ''}" onclick="loadLaunchedDate('${dt}')">${dt.slice(5).replace('-', '.')}</button>`)
-    .join('');
   host.innerHTML = `
-  <section class="roblox-switcher" aria-label="上线日推日期切换">
+  ${renderLaunchedDateStrip()}
+  <section class="roblox-switcher" aria-label="上线日推">
     <div class="roblox-switch-inner">
       <div>
         <div class="roblox-kicker">LAUNCHED GAMES DAILY</div>
         <h1 class="roblox-title">游戏关注</h1>
         <p class="roblox-subtitle"></p>
       </div>
-      <div class="roblox-weeks">${dateBtns}</div>
     </div>
   </section>
   <div class="ld-picks-zone">
@@ -2785,6 +2929,7 @@ function renderLaunchedContent() {
   </div>
   <div class="ld-boards">${boards.map((b, bi) => renderLaunchedBoard(b, bi)).join('')}</div>
   ${renderLaunchedWatch(watch)}`;
+  setTimeout(() => { syncLaunchedDateScrollbar(); scrollLaunchedActiveDateIntoView(); }, 50);
 }
 
 function renderLaunchedPickTile(item, i) {
