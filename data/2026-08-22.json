@@ -1,0 +1,533 @@
+{
+  "date": "2026-08-22",
+  "meta": {
+    "raw_count": 230,
+    "filtered_count": 185,
+    "selected_count": 10,
+    "crawl_time": "2026-08-22 11:20"
+  },
+  "lede": "Take-Two 起诉 Microsoft+Discord 追 GTA6 泄密者 CyberLeek——第7段视频显示 Jason 在 Vice City 狂飙；IO Interactive 公布 007 First Light 三个月销量破400万；日本新工作室 Wild Dog 公布《Japanese Ramen Simulator》——6人在线开拉面店，前作 Keep Digging 全球销量45万套。",
+  "editors_pick": [
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "Wild Dog 公布《Japanese Ramen Simulator》：最大6人在线开拉面店，前作 Keep Digging 全球销量45万套"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "three.js 假像素场景一键切真实3D视图，全程无外部资源+Opus 5生成"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "DilumSanjaya 用 Opus 5 生成 three.js 场景：表面像2D像素+tilemap，可一键切真实3D视图，全程无外部资源，纯代码+shader\n陈成 把 one-shot skill 由单agent串行升级为4个agent（qodercli/codex/claude/agy）并行 brainstorm→impl→review，速度与多视角到位"
+    },
+    {
+      "id": "industry",
+      "text": "Take-Two 在 SDNY 向 Microsoft+Discord 同时递交传票追 GTA6 泄密者 CyberLeek，9月4日前必须提交账户ID/邮箱/IP/手机号等「足以指认用户」的信息，第7段泄密视频显示 Jason 在 Vice City 狂飙\nEurogamer 独家：Asobo《Resonance: A Plague Tale Legacy》发售前一周被破解上传，新女主 Sophia、时间设定在原作前15年\nRiot Games 宣布 12月结束 2XKO 主动开发——发售不到一年、2月已减员半数，2万日前内购全退款\nIO Interactive 公布 007 First Light 三个月销量破400万"
+    },
+    {
+      "id": "indie",
+      "text": "日本新工作室 Wild Dog（25岁中條博斗、2024年10月设立）公布《Japanese Ramen Simulator》——最大6人在线开拉面店，物理演算自由盛付，前作 Keep Digging 全球销量45万套\n日本 dotpixel3d 公布《Anomaly Sector》——8人协力「8番出口」精神继作，全员拼找异变才被允许出口\n日本 AUTOMATON 报道《Put Your Toys Away Together!》——4人协力整理20,000个散落玩具须还原原位"
+    },
+    {
+      "id": "tools",
+      "text": "Unity 官方测试版 Cloud Collaboration Tools 上线：场景内/GameObject 别针评论、@同事、附件+空間标记，把 Figma 协同流引入 Editor"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Dilum Sanjaya · 独立开发者",
+          "tags": [
+            "AI生成视觉",
+            "three.js",
+            "Opus 5"
+          ],
+          "title": "three.js 假像素场景可一键切真实3D，全程无外部资源纯代码+shader——Opus 5 生成",
+          "en_title": "Here is a game that looks like it was made with 2D sprites on a tilemap but it's actually a three.js scene - Made with Opus 5",
+          "full_text": "Here is a game that looks like it was made with 2D sprites on a tilemap\n\nBut it’s actually a three.js scene\n\nAlso, no external assets. It’s all code and a bit of shader magic\n\nThe player can switch between the pixel view and the 3D scene\nMade with Opus 5 https://t.co/cNw0ji80r3",
+          "author": "DilumSanjaya",
+          "date": "2026-08-19",
+          "likes": 804,
+          "views": 36434,
+          "comments": 38,
+          "shares": 50,
+          "link": "https://x.com/DilumSanjaya/status/2090119483717472290",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090118125312479232/img/3tRTRxzVXi2sTZfg.jpg",
+            "video_url": "https://x.com/DilumSanjaya/status/2090119483717472290/video/1"
+          },
+          "summary": "玩家在看似2D像素tilemap的画面中切换到真实3D three.js场景——整段工程不含外部资源，纯代码和shader实现，作者表示由 Opus 5 编写。",
+          "analysis": "把 fake pixel 视觉与真实3D view 切换做到了无缝共存，说明 AI 在 shader 与场景拓扑上的代码产出已逼近资深前端设计师。与昨日的 Hakimi Unity MCP 一周做游戏案例同属「AI 把程序员门槛打掉一截」，但本案例更技术密度——纯 three.js/shader、无引擎依赖。",
+          "recommendation": "three.js 假像素场景一键切真实3D视图，全程无外部资源+Opus 5生成",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "陈成 · 中文KOL",
+          "tags": [
+            "多Agent并行",
+            "代码审查",
+            "工作流"
+          ],
+          "title": "one-shot skill 升级版：brainstorm→save→4个agent并行improve→impl，串行改并行",
+          "en_title": "陈成 one-shot skill: ask 4 agent (qodercli、codex、claude、agy) for improve the design",
+          "full_text": "这周给我的 one-shot skill 改了一版，周二晚改的，试了几天，效果还不错。\n\n之前：\n\n1\\ brainstorm\n2\\ save design\n3\\ any suggestion to improve this design (x5)\n4\\ impl\n\n问题是太慢，无论串行，虽然是后台开了就不用管，但大一点的需求要跑 1 个多小时还是太慢。同时由于是单个 agent 的单个模型跑的，理论上视角也比较受限。\n\n于是有了新的版本：\n\n1\\ brainstorm\n2\\ save design\n3\\ ask 4 agent (qodercli、codex、claude、agy) for improve the design\n4\\ impl\n5\\ review (optional, ask 4 agents)\n\n串行改并行，速度更快，同时有了更多维度的视角，一次 review / improve 能查出很多问题。",
+          "author": "chenchengpro",
+          "date": "2026-08-21",
+          "likes": 13,
+          "views": 2221,
+          "comments": 3,
+          "shares": 0,
+          "link": "https://x.com/chenchengpro/status/2090725037548638547",
+          "media": null,
+          "summary": "陈成把 one-shot skill 由单agent串行升级为 4 个不同厂商 chatbot agent（qodercli、codex、claude、agy）并行 review 与 improve 同一 design——大需求处理时间从1小时以上大幅压缩，且多模型视角互查能找出单agent漏掉的问题。",
+          "analysis": "中文开发者社群在 AI agent 工作流上的实战笔记，核心是把「竞价改进」机制嵌入到设计环节：让4个不同底层模型的 agent 互审同一份设计，借助多维度视角 pick up 单模型漏看问题。这是上一轮「AI 替代单个工程师」之后，下一轮「多 agent 集体审议」的具体落地方式，对游戏开发中的数值/系统设计同样有效。",
+          "recommendation": "one-shot skill 升级版：4个agent（qodercli/codex/claude/agy）并行 improve 同一设计，串行改并行提速"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "GameSpot · 多家报道",
+          "tags": [
+            "GTA6",
+            "法律诉讼",
+            "CyberLeek"
+          ],
+          "title": "Take-Two 在 SDNY 向 Microsoft+Discord 同时传唤：要求9月4日前提交足以指认 GTA6 泄密者 CyberLeek 的全部账户信息",
+          "en_title": "Microsoft And Discord Subpoenaed In GTA 6 Leak Case",
+          "full_text": "Microsoft And Discord Subpoenaed In GTA 6 Leak Case https://t.co/HwDgGQc3Cg https://t.co/1K5J22D3nf",
+          "author": "GameSpot",
+          "date": "2026-08-21",
+          "likes": 27,
+          "views": 8081,
+          "comments": 2,
+          "shares": 6,
+          "link": "https://x.com/GameSpot/status/2090842711972880422",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQQqXaYbQAABFyh.jpg"
+          },
+          "summary": "Take-Two 在南纽约联邦法院向 Microsoft+Discord 同时递交传票，要求9月4日前提交 OneDrive 数据、Xbox 账户、注册邮箱、IP 地址、电话号码及关联账号等「足以指认用户」的数据。多个 Discord 服务器成员（CyberLeek、CinematicRockstar、Surfer24K、Odyssey、DarkViperAU）的相关账户也在调取之列。",
+          "analysis": "Day3、第7段泄密视频里 Jason 在 Vice City 狂飙而论，CyberLeek 不仅泄露视频还自带 $CYBERLEEK meme coin 投票机制——这是发行商首次把「链上变现动机」列为举证线索。对比昨日所覆盖的「Take-Two 损失 28亿美元市值」与 Polygon 揭露的加密货币圈套叙事，本日新进展是法律工具正式入场，平台方被迫在9月4日 deadline 前抉择是否抗辩用户隐私权。",
+          "recommendation": "Take-Two 起诉 Microsoft+Discord 追 GTA6 泄密者：9月4日前须提交 CyberLeek 的账户、IP、电话等身份信息"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 独家",
+          "tags": [
+            "A Plague Tale",
+            "盗版泄露",
+            "Asobo"
+          ],
+          "title": "Eurogamer 独家：Asobo《Resonance: A Plague Tale Legacy》发售前一周被破解上传",
+          "en_title": "Careful, the new Plague Tale game appears to have leaked a week ahead of launch",
+          "full_text": "Careful, the new Plague Tale game appears to have leaked a week ahead of launch, meaning spoilers may appear https://t.co/F2h1VZowh5 https://t.co/EbDHvzVZJ0",
+          "author": "eurogamer",
+          "date": "2026-08-21",
+          "likes": 17,
+          "views": 7002,
+          "comments": 3,
+          "shares": 0,
+          "link": "https://x.com/eurogamer/status/2090786748544541120",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQP3WiEWkAExpw9.jpg"
+          },
+          "summary": "Asobo 新作《Resonance: A Plague Tale Legacy》（A Plague Tale 前传）8月27日发售前一周被破解上传至 PC 资源站。新作主角换成原 Requiem 中出场的 Sophia、时间设定在原作15年前、剧情线还平行带 Theseus 和 Minotaur 的希腊神话。玩法从 stealth 转向更直面战斗——Sophia 多刀连续打 + 远距离 roping。",
+          "analysis": "上一次由 Eurogamer 报道的 GTA6 泄密带加密货币意图，本次 Plague Tale 是单纯破解泄密，但两类泄露叠加反映发行商的破解/反泄密困境：解密后打入 reddit/YouTube 只需几小时。Asobo 是上一轮明确反 GenAI 的少数中型工作室——把这种小作坊以单一 SIG-priority 把游戏打磨出来后，破解分发链条仍是首发前最大风险点。",
+          "recommendation": "Asobo《A Plague Tale Legacy》发售前一周被破解上传：新女主 Sophia，时间设定原作前15年",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer",
+          "tags": [
+            "Riot",
+            "2XKO",
+            "格斗游戏",
+            "免费游玩"
+          ],
+          "title": "Riot 11个月后停更 2XKO：免费格斗游戏不及预期，所有8月20日前内购全退款",
+          "en_title": "Riot Games to end LoL fighting game 2XK0's development and issue refunds, less than a year since launch",
+          "full_text": "Riot Games to end LoL fighting game 2XK0's development and issue refunds, less than a year since launch\n\nhttps://t.co/E1vPZaY6nX https://t.co/cmWQdlBHaq",
+          "author": "eurogamer",
+          "date": "2026-08-21",
+          "likes": 11,
+          "views": 6804,
+          "comments": 1,
+          "shares": 2,
+          "link": "https://x.com/eurogamer/status/2090726326202208601",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQPAgAUWoAAoUop.png"
+          },
+          "summary": "Riot 官宣 2XKO 项目将于 12月结束主动开发——12月 final patch、所有在8月20日前购买的内购物全数退款，11月退齐；服务器继续保持在线，但仍待发布的 Lux 和 Samira 角色仍按计划追加。Riot 给出原因：营收/玩家留存/参与度都仅为可持续运营的「一小部分」，没有路径走向可持续性。2 月裁员已经砍掉半数开发岗。",
+          "analysis": "继 WB《MultiVersus》之后又一款免费格斗游戏项目 F2P 化失败——验证该品类「策略性休闲定位也无法拉到可持续 player base」。Riot 还采取主动全额退款这一罕见姿态，规避社区反弹的同时也指出 F2P 格斗游戏根本就不应做长线服务化。对腾讯/网易此类想做 Stadia-style F2P 化的格斗品类投项不是好信号。",
+          "recommendation": "Riot 11个月后停更《2XKO》：免费格斗游戏不及预期，所有8月20日前内购全退款",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer",
+          "tags": [
+            "007 First Light",
+            "IO Interactive",
+            "销量破400万"
+          ],
+          "title": "IO Interactive 公布 007 First Light 三月销量破400万：Bond IP+IO 潜行框架拼出商业成绩",
+          "en_title": "The acclaimed James Bond game 007 First Light continues to find success, with developer IO Interactive announcing today it's passed 4 million sales since launch, just under three months ago.",
+          "full_text": "The acclaimed James Bond game 007 First Light continues to find success, with developer IO Interactive announcing today it's passed 4 million sales since launch, just under three months ago. https://t.co/y2xcFkVof6 https://t.co/KHO6JTnEWc",
+          "author": "eurogamer",
+          "date": "2026-08-21",
+          "likes": 19,
+          "views": 5179,
+          "comments": 0,
+          "shares": 2,
+          "link": "https://x.com/eurogamer/status/2090748285224980867",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQPUeCcX0AEaton.jpg"
+          },
+          "summary": "IO Interactive 官方确认 007 First Light 自发售不到3个月已破400万份累计销量——发售定价仍带标准 £60 量级，按市场惯例 ROI 突出。该项目是 IOI 做完 Hitman 系列之后的首部新 IP。",
+          "analysis": "近年追求「成熟潜行/sandbox 工作室+成熟 IP」模板的成功案例——把 Hitman 框架式 sandbox mission 几乎横向迁移到 Bond 的潜入/调查动作品类，证明专精工作室沿「studio-DNA × 强 IP」的策略有效。对中小型工作室做 licensed-IP 项目是个积极样本，与昨日 Mortal Shell II 及今日 Japanese Ramen Simulator 同属「工作室原型 DNA × 题材」的具体落地。",
+          "recommendation": "IO Interactive 007 First Light 三月销量破400万：Bond IP + IO 潜行框架成熟组合拼出商业成绩",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "ワイルドドッグ · denfami + AUTOMATON 多家报道",
+          "tags": [
+            "经营模拟",
+            "多人合作",
+            "日本工作室",
+            "Wild Dog"
+          ],
+          "game_ref": "Japanese Ramen Simulator",
+          "title": "Wild Dog 公布《Japanese Ramen Simulator》：最大6人在线开拉面店，前作 Keep Digging 全球销量45万套",
+          "en_title": "【最大6人マルチ】理想のラーメン店を目指す経営シミュレーションゲーム『Japanese Ramen Simulator』発表",
+          "full_text": "【最大6人マルチ】理想のラーメン店を目指す経営シミュレーションゲーム『Japanese Ramen Simulator』発表。リアルなラーメンが美味しそう\nhttps://t.co/xpP1IBm5fl\n\n食材を仕込んで麺を茹で、トッピングを盛り付けてこだわりの一杯を作ろう。開発元は本作のためにラーメン作りを何度も経験する https://t.co/DLbLBXh8po",
+          "author": "denfaminicogame",
+          "date": "2026-08-21",
+          "likes": 45417,
+          "views": 7425303,
+          "comments": 123,
+          "shares": 9249,
+          "link": "https://x.com/denfaminicogame/status/2090635781010542637",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2090635569303076864/pu/img/doyPmZE2D-p6ha-n.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2090635781010542637/video/1"
+          },
+          "summary": "denfami + AUTOMATON 同日报道：ワイルドドッグ工作室公布《Japanese Ramen Simulator》——最大6人在线协力的拉面店经营 sim，9月发售、Steam APPID 4968640。前作 Keep Digging（最大8人穴掘り游戏）全球销量45万套。",
+          "analysis": "",
+          "recommendation": "Wild Dog 公布《Japanese Ramen Simulator》：最大6人在线开拉面店，前作 Keep Digging 全球销量45万套",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Japanese Ramen Simulator",
+            "genre": "经营模拟 / 多人合作",
+            "developer": "株式会社ワイルドドッグ（中條博斗 25岁设于2024年10月、东京都）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2026年9月",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4968640/Japanese_Ramen_Simulator/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4968640/473d0eef8af341a191a8aba02d443ec570cc6977/header.jpg?t=1787274262",
+            "youtube_video": "https://www.youtube.com/watch?v=jnfAVi-ldnQ",
+            "description": "株式会社ワイルドドッグ（Wild Dog，中條博斗 25岁、2024年10月设于东京）公布新作《Japanese Ramen Simulator》——一款最大6人在线的拉面店经营模拟，是工作室继 Keep Digging 全球45万套销量之后继往开来的项目。\n\n【核心玩法】 食材仕込→麵茹で→スープ配合→トッピング盛付→接客→片付，每个步骤都有还原度高的物理反馈：麺の茹で加減 / スープ温度 / 香り / Umami / 上菜时间均影响最终评价。スープ可由各种食材组合謳制，トッピング 全部由物理演算盛付——「同一碗都不会重样」。\n\n【多人合作】 6人在线分工：仕込 / 调理 / 配膳 / 接客 / 片付。与 Keep Digging（8人）一脉相承：工作室明显有可靠多人合作物理 sim 实操路径。单机可雇アルバイト。\n\n【差异化设计】 饺子烤焦监控、啤酒泡比例、丼もの 具材叠加均是手活；店内自定义レイアウト + 自己画「マイデザイン」装饰；可去好友店签名；営業中还有随机事件——拉面评论家来访 / 泥棒と火事 / 一攫千金赌场——形成多个 PvP-like 副系统。\n\n【研发背景】 Studio 创始人前作 Keep Digging 全球销量45万——证明工作室在「多人物理合作 sim」品类上有可靠的量产能力。开发团队专门多次实店拉面制作体验+音收音+实物扫描，拉面 visual+手触感还原度有研究。\n\n【对标定位】 与昨日 denfami《Dumb Ways to Build》（4人物理工地）同属8月以来的「日本多人合作物理 sim 品类」——本月同型已有 4-6 款日本工作室公開多人合作经营/生存作品谱。\n\n【优势】 物理感+多机制填充+实店扫描研发水准+工作室前作证明；【不足】 题材较熟 + 老竞品 Plate Up!/Overcooked 还生存中不可声称 first mover；6人上限对入门穿透不友好。\n\n【综合】 一家既有可量产 level、又有 studio DNA 痕迹的「可靠运营号」——工作室选择3高/seg 量产同类品类可形成「铁粉」的策略输出。",
+            "why_notable": "Wild Dog 继 Keep Digging 全球45万套之后的新作，多人合作物理 sim 已经被验证可持续——9月发售是否会冲击500K量级值得看。"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "dotpixel3d · 日本",
+          "tags": [
+            "合作解谜",
+            "8番出口精神继作",
+            "日本"
+          ],
+          "game_ref": "Anomaly Sector",
+          "title": "Anomaly Sector：8人协力「8番出口」精神继作——全员拼找异变才获出口",
+          "en_title": "最大8人で挑む「8番出口」フォロワー、協力型まちがい探しゲー『Anomaly Sector』",
+          "full_text": "さすがに8人でやれば異変を見つけるのは楽勝やろ！\n最大8人で挑む「8番出口」フォロワー\n\n……では、なぜやり直しになったのか\n\n協力型まちがい探しゲー『Anomaly Sector』\nhttps://t.co/OrWhk6wlgz https://t.co/6b5tJVtLQE",
+          "author": "dotpixel3d",
+          "date": "2026-08-21",
+          "likes": 270,
+          "views": 20576,
+          "comments": 0,
+          "shares": 36,
+          "link": "https://x.com/dotpixel3d/status/2090695399246110927",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090441710379978752/img/Nw7_3GxrwhsJBKwp.jpg",
+            "video_url": "https://x.com/dotpixel3d/status/2090695399246110927/video/1"
+          },
+          "summary": "dotpixel3d 公布《Anomaly Sector》——把2024年爆款「8番出口」单人版「找异变」玩法扩展到最多8人合作版。核心保留继续-循环 exit 关卡机制，出现任何一人判错全部过关重来。",
+          "analysis": "",
+          "recommendation": "Anomaly Sector：8人协力「8番出口」精神继作——全员拼找异变才获出口",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Anomaly Sector",
+            "steam_url": "https://store.steampowered.com/app/4699560",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4699560/6ed03cc0bfbb58abb3f77c8c2eb94908abc6a247/header.jpg?t=1787163092",
+            "release_date": "即将宣布",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "developer": "Legions Studio",
+            "genre": "动作 / 冒险 / 独立",
+            "description": "你有多相信自己的眼睛——和你的朋友? Anomaly Sector是1-8人在线合作游戏。齐心协力找出异常、做出正确判断,通关每个区域。 仔细观察。一次失误,立即重置。\n\n"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "AUTOMATON · 日本",
+          "tags": [
+            "合作解谜",
+            "物理",
+            "日本"
+          ],
+          "game_ref": "Put Your Toys Away Together!",
+          "title": "Put Your Toys Away Together!：4人协力整理20,000个散落玩具须还原原位",
+          "en_title": "最大4人協力・おもちゃ整頓ゲーム『Put Your Toys Away Together!』発表",
+          "full_text": "【ニュース】最大4人協力・おもちゃ整頓ゲーム『Put Your Toys Away Together!』発表。散らかりまくりな「2万個のおもちゃ」を元通りに、遊んだ覚えはないけど\nhttps://t.co/JGOWSs4cDM https://t.co/MICFzXoe5I",
+          "author": "AUTOMATONJapan",
+          "date": "2026-08-21",
+          "likes": 523,
+          "views": 88579,
+          "comments": 2,
+          "shares": 102,
+          "link": "https://x.com/AUTOMATONJapan/status/2090623439120015819",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090623329946554368/img/wClcki86VyVcy1Se.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2090623439120015819/video/1"
+          },
+          "summary": "AUTOMATON 报道一款最大4人协力玩具整頓游戏《Put Your Toys Away Together!》——20,000個の玩具散落需全部还原到原位。「遊んだ覚えはないけど」（不记得玩过但还是要收）的尴尬命题。",
+          "analysis": "",
+          "recommendation": "Put Your Toys Away Together!：4人协力整理20,000个散落玩具须还原原位",
+          "enrichment": {
+            "game_name": "Put Your Toys Away Together!",
+            "genre": "休闲 / 模拟",
+            "developer": " Toxic Studio",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "2026 年",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5041530",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5041530/7681ca9f47155e9c9f72f9a62245093fb79a2d3d/header.jpg?t=1787328937",
+            "youtube_video": null,
+            "description": "一款温馨的合作整理游戏，把梦想中的玩具店变成井井有条的小世界。整理全部 20,000 件玩具，为每个娃娃、恐龙和小火车找到正确的位置，让货架重新焕发生机——独自游玩，或与最多 4 名好友一起。\n\n【核心玩法】 最大4人合作把散落的 20,000 个玩具整体还原原位——本质是把物理搬送 + 摆放 puzzle 化。物理搬运+合作用户协作机制细节未明。\n\n【题材差异化】 「20,000個の玩具」为噱头而非「5x5 puzzle」拼图，強調超大物体量通感的压力感；题材调性保持日本「非日常」风格（玩家不记得玩过但还是要收）。\n\n【对标定位】 与昨日 denfami《Dumb Ways to Build》（4人物理工地）+《Ramen Simulator》同属8月「日本4人合作物理 sim」集中清泄。品类上 push 到「整理/clean」子赛道未被 Plate Up!/Overcooked 大量覆盖。\n\n【优势】 题材差异化足/物理感小手活体验感佳/日本市场厂商一惯能执行；【不足】 体量太大后误差大易 panic，loop 是否耐玩待看；【综合】 中等密度可量产型品类。",
+            "why_notable": "「把20,000個玩具还原原位」的体量推到 packrat 协作 horizon，是8月日本4人物理 sim 集体的一个分支。"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "unselected": true,
+          "source": "Niche Gamer",
+          "tags": [
+            "roguelite",
+            "pachinko",
+            "日本"
+          ],
+          "title": "HYPERDROP：催眠感柏青哥 roguelite 宣出",
+          "en_title": "Hypnotic, mind-melting pachinko roguelite game HYPERDROP was announced",
+          "full_text": "Hypnotic, mind-melting pachinko roguelite game HYPERDROP was announced: https://t.co/JDJaHD6spF https://t.co/HF8rVdKXmr",
+          "author": "nichegamer",
+          "date": "2026-08-21",
+          "likes": 16,
+          "views": 3366,
+          "comments": 0,
+          "shares": 3,
+          "link": "https://x.com/nichegamer/status/2090621305695437001",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2090621249772830721/pu/img/16vs9-kyZmgZ5kVC.jpg",
+            "video_url": "https://x.com/nichegamer/status/2090621305695437001/video/1"
+          },
+          "summary": "Niche Gamer 报道 Punchbusters 公布《HYPERDROP》——催眠感柏青哥 roguelite。玩法上结合日式柏青哥 pinball 与 roguelite buff。",
+          "analysis": "继 holy polygon 后又一次「柏青哥」题材 roguelite。柏青哥作为日式 niche 玩法与 roguelite 的结合可能拉到细分市场。",
+          "recommendation": "HYPERDROP：催眠感柏青哥 roguelite 宣出"
+        },
+        {
+          "idx": "新游参考 02",
+          "unselected": true,
+          "source": "Indie Game Joe",
+          "tags": [
+            "co-op survival",
+            "proximity voice chat",
+            "bears"
+          ],
+          "title": "Rerouted：4人 co-op survival ，熊会通过 proximity voice chat 听到你",
+          "en_title": "The bears in this upcoming co-op survival game can hear you through proximity voice chat",
+          "full_text": "The bears in this upcoming co-op survival game can hear you through proximity voice chat\n\n- Stranded deep in the north, get home alive\n- Navigate by map, compass and landmarks\n- Hunt, fish, forage and cook over a fire\n- Up to 4 players, alone or together\n\nGame is Rerouted https://t.co/wYICsMHpoP",
+          "author": "IndieGameJoe",
+          "date": "2026-08-20",
+          "likes": 7879,
+          "views": 627975,
+          "comments": 54,
+          "shares": 374,
+          "link": "https://x.com/IndieGameJoe/status/2090465080374685719",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090464155308380160/img/g5WwMBP-vjdHGVvK.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2090465080374685719/video/1"
+          },
+          "summary": "4人 co-op survival，主角被弃北方荒野地需还生还。核心看点：熊会通过 proximity voice chat 语音听见你聊天；繼襲用 map/compass/landmark 导航。",
+          "analysis": "Proximity voice chat 被熊听见的机制是新颖的 AI NPC 提示，但实际可能依赖玩家系统麦克风——需要验证具体实现路径。",
+          "recommendation": "Rerouted：4人 co-op survival，熊通过 proximity voice chat 听玩家说话（赞 7.9K）"
+        },
+        {
+          "idx": "新游参考 03",
+          "unselected": true,
+          "source": "Niche Gamer",
+          "tags": [
+            "Switch",
+            "indie RPG",
+            "cozy"
+          ],
+          "title": "Little Witch in the Woods 下月登陆 Switch",
+          "en_title": "Little Witch in the Woods launches for Switch next month",
+          "full_text": "Little Witch in the Woods launches for Switch next month: https://t.co/UNnptkUQm3 https://t.co/XyWtAYBmZG",
+          "author": "nichegamer",
+          "date": "2026-08-21",
+          "likes": 10,
+          "views": 2537,
+          "comments": 0,
+          "shares": 2,
+          "link": "https://x.com/nichegamer/status/2090783615772655964",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQP0nm0WIAA8La9.jpg"
+          },
+          "summary": "韩国 Indie RPG《Little Witch in the Woods》Switch 平台版下月发行——原 Steam 早期访问。",
+          "analysis": "Cozy 类型 + Indie IP 转 Switch 出例越多——Switch 拓 cozy 留存起步的过渡观感看.",
+          "recommendation": "Little Witch in the Woods：Switch 版下月发行——韩国 cozy indie RPG"
+        },
+        {
+          "idx": "新游参考 04",
+          "unselected": true,
+          "source": "rick · 独立开发者",
+          "tags": [
+            "solo dev",
+            "strategy",
+            "settlement-builder"
+          ],
+          "title": "Settler's Domain：独立开发者近 2 年 solo dev 首作发售",
+          "en_title": "After almost 2 full years, I finally released my first game on Steam!! Solo dev strategy settlement-builder Settler's Domain",
+          "full_text": "After almost 2 full years, I finally released my first game on Steam!! \n\nI've been solo-developing a strategy settlement-builder called Settler's Domain: https://t.co/eFjXIjSpBa\n\nThis has been a blast to work on, and I'm so so pumped to finally share it with everyone!! \n\n#indiegame #release #announcement",
+          "author": "__rick________",
+          "date": "2026-08-21",
+          "likes": 174,
+          "views": 5682,
+          "comments": 10,
+          "shares": 21,
+          "link": "https://x.com/__rick________/status/2090771229984641299",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090770725049184256/img/INEEffJz1W9mwXiz.jpg",
+            "video_url": "https://x.com/__rick________/status/2090771229984641299/video/1"
+          },
+          "summary": "Solo dev rick 公告近 2 年独立开发的首个游戏《Settler's Domain》——战略 settlement-builder，Steam 首发。",
+          "analysis": "个人 2 年开发的项目是普遍但中等难度的品类（strategic settlement-builder），个人 dev 起飛中堅质量是需看 launch 数据。",
+          "recommendation": "Settler's Domain：solo dev 近 2 年首作发售——战略 settlement-builder"
+        },
+        {
+          "idx": "新游参考 05",
+          "unselected": true,
+          "source": "AmikoLegends · 官方",
+          "tags": [
+            "roguelite",
+            "extraction",
+            "risk-reward"
+          ],
+          "title": "Amiko Legends：Risk more. Extract more. Or lose everything.",
+          "en_title": "Risk more. Extract more. Or lose everything.",
+          "full_text": "Risk more. Extract more. Or lose everything. https://t.co/lv8zdHkJWr",
+          "author": "AmikoLegends",
+          "date": "2026-08-20",
+          "likes": 214,
+          "views": 13434,
+          "comments": 8,
+          "shares": 24,
+          "link": "https://x.com/AmikoLegends/status/2090431158458761381",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090396220468473856/img/taMOUEsDJdiIwmwP.jpg",
+            "video_url": "https://x.com/AmikoLegends/status/2090431158458761381/video/1"
+          },
+          "summary": "《Amiko Legends》公布 extract roguelite 概念片——「Risk more Extract more Or lose everything」，与 Risk of Rain 2 类正在 extract + roguelite 结合类赛道。",
+          "analysis": "高风险 + 高回报递增 + prospect extract 的设计是反向 Tarkov 类 roguelite，与潮牌类结合后是否能在多人 PvP 风格拉到 retention 需看。",
+          "recommendation": "Amiko Legends：Risk more/Extract more/Or lose everything——extract roguelite 概念"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity for Games · 官方",
+          "tags": [
+            "Unity",
+            "协同工具",
+            "Editor"
+          ],
+          "title": "Unity 测试版 Cloud Collaboration Tools：场景内别针评论+@同事+空間标记，把 Figma 协同流引入 Editor",
+          "en_title": "Unity Cloud Collaboration Tools (experimental) brings threaded comments into the Editor",
+          "full_text": "You asked for it, we delivered it! \n\nUnity Cloud Collaboration Tools (experimental) brings threaded comments into the Editor: pin notes on scenes and GameObjects, @ mention teammates, attach files or sketches, and drop spatial markers in Scene view. \n\n🔗 Learn more: https://t.co/DCo3WrCY6l",
+          "author": "unitygames",
+          "date": "2026-08-20",
+          "likes": 113,
+          "views": 13507,
+          "comments": 3,
+          "shares": 9,
+          "link": "https://x.com/unitygames/status/2090532048511390160",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2090531938188615680/pu/img/8LZL7pMH_DyQ5iO-.jpg",
+            "video_url": "https://x.com/unitygames/status/2090532048511390160/video/1"
+          },
+          "summary": "Unity 官方测试版上线 Cloud Collaboration Tools：支持场景内/GameObject 别针级评论线程（不离开 Editor）、@同事 teammates、附件上传 sketches/files、Scene 视图空間标记。",
+          "analysis": "Unity 把传统 Figma/Linear 工作流的协同评论模型原生嵌入 Editor 是合作模式的「右上」配置——之前 Unity Editor 协同领域靠第三方插件 ASCII express 不能提供咨询世界 + Live Modify。引擎原生整合 signIn 叙事后上手序列 + 跨职能协同序序降 down — 与 Unreal 等同型 类似 features 同步进行。",
+          "recommendation": "Unity 官方测试版 Cloud Collaboration Tools：场景内别针评论+@同事+空間标记，把Figma协同流引入Editor",
+          "featured": true
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Take-Two 反击 GTA6 泄密者：平台方卷入举证第3天**\nGTA6 泄密进入第3天、CyberLeek 第7段视频里 Jason 在 Vice City 狂飙而论——Take-Two 在南纽约联邦法院同时向 Microsoft+Discord 递交传票：9月4日前必须提交 OneDrive 数据、Xbox 账户、注册邮箱、IP 地址、电话号码，以及 CyberLeek 可能在 Discord 服务器上的成员账户（含 CyberLeek、CinematicRockstar、Surfer24K、Odyssey、DarkViperAU 等账号）。CyberLeek 不仅泄露视频还自带 $CYBERLEEK meme coin 投票机制——这是发行商首次把「链上变现动机」列为举证线索。对比昨日 Polygon 揭露的加密货币圈套叙事、本日新进展是法律工具正式入场——平台方或需在9月4日 deadline 前抉择是否抗辩用户隐私权。\n\n**Riot 11个月后停更《2XKO》：免费格斗游戏不及预期**\nRiot Games 官宣 12月结束 2XKO 主动开发——8月20日前所有内购全数退款、11月退齐。2 月已放手砍掉半数开发岗。Riot 项目组给出的原因：营收/留存/参与度都仅为可持续运营的「一小部分」。继 WB MultiVersus 后又一款免费格斗游戏项目退场——「F2P 服务化」对该品类不是好策略。对腾讯/网易此类想做 F2P 格斗游戏的投项不是好信号。\n\n**Asobo 反 GenAI 工作室发售前一周被破解**\nEurogamer 报道 Asobo 新作《Resonance: A Plague Tale Legacy》8月27日发售前一周被破解上传。新作主角换成原 Requiem 中出场的 Sophia、时间设定在原作15年前、玩法从 stealth 转向更直接的战斗。Asobo 是上一轮明确反 GenAI 的少数中型工作室——把小作坊的单一 SIG-priority 设计思路推到极限后，破解分发链条仍是首发前最大风险点。\n\n**IO Interactive 007 三月破400万**\nIO Interactive 公布 007 First Light 三个月销量破 400 万套——Bond IP + IOI Hitman sandbox mission 框架是成熟 sandbox studio × 成熟 IP 的有效策略组合。\n\n**今日 PCU 监控**\n《使命召唤：现代战争 4》beta 测试，PCU 115,145；《渔力全开》（How to Fish）昨日 21K → 今日 peak 59,851（一日翻近 3倍，95% 好评）；《致命躯壳 II》34K → 37K 稳中有增（连续 2 日观察中）。\n\n**8月「日本多人合作物理 sim」品类集中爆发**\n日本 denfami + AUTOMATON 同日报道：ワイルドドッグ工作室（25岁中條博斗、2024/10 设立）公布《Japanese Ramen Simulator》——最大6人在线开拉面店，前作 Keep Digging 全球销量45万套。dotpixel3d 《Anomaly Sector》8人协力 8番出口 精神继作，AUTOMATON《Put Your Toys Away Together!》4人协力整理20,000个……8月以来此类「日本工作室多人合作物理 sim」已有 4-6 款新作集中宣出。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
