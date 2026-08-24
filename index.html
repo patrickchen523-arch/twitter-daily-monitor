@@ -1040,8 +1040,13 @@ async function loadDate(date, options = {}) {
         setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 60);
       }
     } else {
-      document.getElementById('digestV2').innerHTML = renderEditorialContentShell();
+      const digestHost = document.getElementById('digestV2');
+      const prevScroller = digestHost.querySelector('.ed-control-dates');
+      const prevLeft = prevScroller ? prevScroller.scrollLeft : 0;
+      digestHost.innerHTML = renderEditorialContentShell();
       renderContent('edLegacyContent');
+      const scroller = digestHost.querySelector('.ed-control-dates');
+      if (scroller) scroller.scrollLeft = prevLeft;
       setTimeout(() => {
         syncEditorialDateScrollbar();
       }, 50);
@@ -1080,10 +1085,13 @@ function renderDigestV2() {
   const container = document.getElementById('digestV2');
   if (!currentData) { container.innerHTML = ''; return; }
   document.body.classList.toggle('editorial-mode', currentView === 'twitter' && currentTab === 'digest');
+  const prevScroller = container.querySelector('.ed-control-dates');
+  const prevLeft = prevScroller ? prevScroller.scrollLeft : 0;
   container.innerHTML = renderEditorialDigest();
+  const scroller = container.querySelector('.ed-control-dates');
+  if (scroller) scroller.scrollLeft = prevLeft;
   setTimeout(() => {
     scrollEditorialActiveNavIntoView();
-    scrollEditorialActiveDateIntoView();
     syncEditorialDateScrollbar();
   }, 30);
 }
@@ -1314,44 +1322,6 @@ function shiftLaunchedDates(direction) {
   setTimeout(syncLaunchedDateScrollbar, 260);
 }
 
-function getLaunchedDateButtons() {
-  return Array.from(document.querySelectorAll('.ld-date-strip .ed-date-btn[data-ld-date]'));
-}
-
-function scrollLaunchedActiveDateIntoView() {
-  const scroller = getLaunchedDateScroller();
-  const active = document.querySelector('.ld-date-strip .ed-date-btn.on');
-  if (!scroller || !active) return;
-  const maxScroll = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
-  const target = active.offsetLeft - Math.max(0, (scroller.clientWidth - active.offsetWidth) / 2);
-  scroller.scrollLeft = Math.max(0, Math.min(maxScroll, target));
-  syncLaunchedDateScrollbar();
-}
-
-function getLaunchedDateNearViewport() {
-  const scroller = getLaunchedDateScroller();
-  if (!scroller) return null;
-  const viewportStart = scroller.scrollLeft;
-  const viewportEnd = viewportStart + scroller.clientWidth;
-  const visible = getLaunchedDateButtons().filter(btn =>
-    btn.offsetLeft + btn.offsetWidth >= viewportStart && btn.offsetLeft <= viewportEnd
-  );
-  if (visible.length) return visible[0].dataset.ldDate;
-  let nearest = null;
-  let nearestDistance = Infinity;
-  getLaunchedDateButtons().forEach(btn => {
-    const center = btn.offsetLeft + btn.offsetWidth / 2;
-    const distance = Math.abs(center - viewportStart);
-    if (distance < nearestDistance) { nearestDistance = distance; nearest = btn.dataset.ldDate; }
-  });
-  return nearest;
-}
-
-function activateLaunchedDateNearViewport() {
-  const date = getLaunchedDateNearViewport();
-  if (date && date !== launchedDate) loadLaunchedDate(date);
-}
-
 function syncLaunchedDateScrollbar() {
   const scroller = getLaunchedDateScroller();
   const bar = document.querySelector('.ld-date-strip .ed-date-scrollbar');
@@ -1389,7 +1359,6 @@ function startLaunchedDateDrag(event) {
     document.removeEventListener('pointermove', move);
     document.removeEventListener('pointerup', stop);
     document.removeEventListener('pointercancel', stop);
-    activateLaunchedDateNearViewport();
   };
   document.addEventListener('pointermove', move);
   document.addEventListener('pointerup', stop);
@@ -1457,47 +1426,6 @@ function shiftEditorialDates(direction) {
   setTimeout(syncEditorialDateScrollbar, 260);
 }
 
-function getEditorialSelectableDateButtons() {
-  return Array.from(document.querySelectorAll('.ed-date-strip .ed-date-btn:not(.nodata)'));
-}
-
-function scrollEditorialActiveDateIntoView() {
-  const scroller = document.querySelector('.ed-date-strip .ed-control-dates');
-  const active = document.querySelector('.ed-date-strip .ed-date-btn.on');
-  if (!scroller || !active) return;
-  const maxScroll = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
-  const target = active.offsetLeft - Math.max(0, (scroller.clientWidth - active.offsetWidth) / 2);
-  scroller.scrollLeft = Math.max(0, Math.min(maxScroll, target));
-}
-
-function getEditorialDateNearViewport() {
-  const scroller = document.querySelector('.ed-date-strip .ed-control-dates');
-  if (!scroller) return null;
-  const viewportStart = scroller.scrollLeft;
-  const viewportEnd = viewportStart + scroller.clientWidth;
-  const visible = getEditorialSelectableDateButtons().filter(btn =>
-    btn.offsetLeft + btn.offsetWidth >= viewportStart && btn.offsetLeft <= viewportEnd
-  );
-  if (visible.length) return visible[0].title;
-  const target = viewportStart;
-  let nearest = null;
-  let nearestDistance = Infinity;
-  getEditorialSelectableDateButtons().forEach(btn => {
-    const center = btn.offsetLeft + btn.offsetWidth / 2;
-    const distance = Math.abs(center - target);
-    if (distance < nearestDistance) {
-      nearestDistance = distance;
-      nearest = btn.title;
-    }
-  });
-  return nearest;
-}
-
-function activateEditorialDateNearViewport() {
-  const date = getEditorialDateNearViewport();
-  if (date && date !== currentDate) loadDate(date, { preserveTab: true });
-}
-
 function syncEditorialDateScrollbar() {
   const scroller = document.querySelector('.ed-date-strip .ed-control-dates');
   const bar = document.querySelector('.ed-date-scrollbar');
@@ -1527,11 +1455,6 @@ function setEditorialDateScrollFromPointer(event) {
   syncEditorialDateScrollbar();
 }
 
-function handleEditorialDateTrack(event) {
-  setEditorialDateScrollFromPointer(event);
-  activateEditorialDateNearViewport();
-}
-
 function startEditorialDateDrag(event) {
   event.preventDefault();
   setEditorialDateScrollFromPointer(event);
@@ -1540,7 +1463,6 @@ function startEditorialDateDrag(event) {
     document.removeEventListener('pointermove', move);
     document.removeEventListener('pointerup', stop);
     document.removeEventListener('pointercancel', stop);
-    activateEditorialDateNearViewport();
   };
   document.addEventListener('pointermove', move);
   document.addEventListener('pointerup', stop);
@@ -2332,8 +2254,13 @@ function switchTab(tab, scrollToId) {
       scrollEditorialActiveNavIntoView();
     }, 50);
   } else {
-    document.getElementById('digestV2').innerHTML = renderEditorialContentShell();
+    const digestHost = document.getElementById('digestV2');
+    const prevScroller = digestHost.querySelector('.ed-control-dates');
+    const prevLeft = prevScroller ? prevScroller.scrollLeft : 0;
+    digestHost.innerHTML = renderEditorialContentShell();
     renderContent('edLegacyContent');
+    const scroller = digestHost.querySelector('.ed-control-dates');
+    if (scroller) scroller.scrollLeft = prevLeft;
     setTimeout(() => {
       if (scrollToId) {
         const el = document.getElementById(scrollToId);
@@ -2909,6 +2836,8 @@ function renderLaunchedContent() {
   const feat = (d.picks || [])[0] || null;
   const featApp = feat && /store\.steampowered\.com\/app\/(\d+)/.exec(feat.link || '');
   const heroBg = (feat && feat.bg) || (featApp ? `https://cdn.cloudflare.steamstatic.com/steam/apps/${featApp[1]}/library_hero.jpg` : '');
+  const prevScroller = host.querySelector('.ed-control-dates');
+  const prevLeft = prevScroller ? prevScroller.scrollLeft : 0;
   host.innerHTML = `
   ${renderLaunchedDateStrip()}
   <div class="ld-picks-zone">
@@ -2924,7 +2853,9 @@ function renderLaunchedContent() {
   </div>
   <div class="ld-boards">${boards.map((b, bi) => renderLaunchedBoard(b, bi)).join('')}</div>
   ${renderLaunchedWatch(watch)}`;
-  setTimeout(() => { syncLaunchedDateScrollbar(); scrollLaunchedActiveDateIntoView(); }, 50);
+  const scroller = host.querySelector('.ed-control-dates');
+  if (scroller) scroller.scrollLeft = prevLeft;
+  setTimeout(() => { syncLaunchedDateScrollbar(); }, 50);
 }
 
 function renderLaunchedPickTile(item, i) {
