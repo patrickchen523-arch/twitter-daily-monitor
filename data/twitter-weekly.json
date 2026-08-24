@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-17",
+ "updated": "2026-08-24",
  "cadence_transitions": [
   {
    "from": "2026-07-02-to-07-08",
@@ -1559,6 +1559,228 @@
     {
      "title": "Scramble Knights Online 公测留存",
      "body": "FUNKTRONIC LABS 的 2D 塞尔达 MMO-lite 公测已开启、EA 年内：观察公测人数与口碑，验证「MMO-lite」是不是独游联机的可行中间形态。"
+    }
+   ]
+  },
+  {
+   "id": "2026-08-17-to-08-23",
+   "label": "8.17 - 8.23",
+   "code": "W34",
+   "range": "2026.08.17 — 08.23",
+   "title": "AI 工作流成型+巨头进入问责季，独游一句话钩子拿到本周最大流量",
+   "stats": [
+    {
+     "value": "51",
+     "label": "精选信号"
+    },
+    {
+     "value": "2054万",
+     "label": "累计浏览"
+    },
+    {
+     "value": "24.9万",
+     "label": "累计点赞"
+    },
+    {
+     "value": "7",
+     "label": "连续日报"
+    }
+   ],
+   "executive": [
+    "本周 AI 完成从开发者工具向生产线的彻底转场：Cursor 卖身 SpaceXAI 一周后，Claude Code 创造者亲授 28 分钟 prompt 实战课拿下 224 万浏览；Unity MCP + Claude Code 组合把零基础的开发者从一周送进游戏制作赛道，学习曲线彻底崩塌；Tesana 在 Godot 引擎里跑 prompt-to-playable 的「游戏专做 AI 助手」；three.js 假像素场景一键切真实 3D 视图全程无外部资源由 Opus 5 单 pass 生成。同期 Deadlock 模组里造出可联机 Minecraft 123 万浏览——把 UGC pipeline 推到上限。一周内 AI 不再争议要不要用，只剩下「用哪套栈」的决策。",
+    "平台巨头被多线问责：Roblox 国会 8 月 31 日文件大限前 Chris Hansen 在演讲现场被封号拿下 157 万浏览——安全问责连续剧再添一幕；GTA 6 实机泄露黑客挂 memecoin 打「玩家权利」旗号遭 Stop Killing Games 切割，Take-Two 反向传唤 Microsoft+Discord 追踪源；Circana 数据显示美国 7 月游戏硬件支出 -29% 跌至 2020 疫情缺货水平、实体软件 1995 年追踪以来新低；Microsoft layoffs 工会充气老鼠继续围堵 Xbox CEO、《上古卷轴 6》门口 166 面小旗纪念被裁员工，老将 Harvey Smith 同日宣布成立 Black Pony Immersive 押注沉浸式 sim——监管维权+老将自我赎身双线继续。",
+    "新游推文把「现实题材共鸣 + 朋克概念」双轴跑到了最高点：Wild Dog Japanese Ramen Simulator 单条 7.4M 浏览成周内最大单条流量；Pizza House Simulator 6 人披萨店经营今日发售 1.03M；Dumb Ways to Build 4 人物理合作工地 868K；Tank Fu 坦克打武术 pre-alpha 565K；Dice Hoarder 2800 个骰子整理 sim Steam 页面公开 467K。一周内最高互动的 5 条独游几乎全靠一句话差异火速传播，公式已不会押到美术规格上。"
+   ],
+   "rankings": [
+    {
+     "title": "Wild Dog「Japanese Ramen Simulator」：6 人在线开拉面店的最大概念新游——7.4M浏览",
+     "metric": "7.4M浏览",
+     "heat": 100,
+     "link": "https://x.com/denfaminicogame/status/2090635781010542637"
+    },
+    {
+     "title": "Claude Code 创造者亲授 28 分钟 prompt 实战课：CLAUDE.md/记忆/并行会话——224万浏览",
+     "metric": "224万浏览",
+     "heat": 30,
+     "link": "https://x.com/sweexx9/status/2089430704325013524"
+    },
+    {
+     "title": "Chris Hansen 在 Roblox 演讲现场当场封号：安全问责连续剧——157万浏览",
+     "metric": "157万浏览",
+     "heat": 21,
+     "link": "https://x.com/DramaAlert/status/2088676241234682010"
+    },
+    {
+     "title": "玩家在 Deadlock 里造出可联机的完整 Minecraft——123万浏览 UGC 极限",
+     "metric": "123万浏览",
+     "heat": 17,
+     "link": "https://x.com/jetsetworm/status/2089862820921819469"
+    },
+    {
+     "title": "Pizza House Simulator：6 人联机披萨店经营今日发售，从揉面到炒股——103万浏览",
+     "metric": "103万浏览",
+     "heat": 14,
+     "link": "https://x.com/denfaminicogame/status/2089914088919118290"
+    }
+   ],
+   "signals": [
+    {
+     "title": "AI agent 工作流成型：从单条事件到产品线",
+     "body": "Cursor 卖身、DeepSeek Harness 开源已被 W33 标注为常态；本周 Claude Code prompt 课 + Unity MCP 零基础一周做游戏 + Tesana prompt-to-playable + three.js Opus 5 单 pass + Deadlock UGC 极限同时出现，说明 AI 从开发者工具正式变为大众生产线，「用哪套栈」成为新常态决策。"
+    },
+    {
+     "title": "平台问责季升级：监管维权 + 老将自我赎身双线",
+     "body": "Roblox 国会大限前 Hansen 封号 + GTA6 memecoin 泄露遭 SKG 切割 + Take-Two 法务反向传唤 + Circana 实体历史新低 + Microsoft 工会充气老鼠 166 旗 + Harvey Smith Black Pony Immersive 新工作室——问责对象包括 UGC 平台/3A 巨头/publisher 多线，老将不再流向其他 3A publisher 而是组团独立做 indie 3A。"
+    },
+    {
+     "title": "独游爆款公式：题材共鸣 + 朋克概念双轴击败美术规格",
+     "body": "Wild Dog Ramen 7.4M / Pizza House 1.03M / Dumb Ways 868K / Tank Fu 565K / Dice Hoarder 467K——一周 TOP 5 全靠一句话差异火速传播，题材共鸣（拉面/披萨/工地/骰子）与朋克概念（坦克打武术）双轴同时启动，独游获客重心继续从「页面美术」转向「叙事钩子」。"
+    }
+   ],
+   "sections": [
+    {
+     "title": "AI 科技热点",
+     "deck": "Cursor 卖身一周后 Claude Code 创造者亲授 prompt 课、Unity MCP 让零基础一周做游戏、Tesana 在 Godot 里跑 prompt-to-playable、three.js Opus 5 生成假像素场景切真实 3D——AI 在一周内跨越了从开发者工具到大众生产线的临界点。",
+     "stories": [
+      {
+       "date": "08.19",
+       "source": "sweexx9 · Claude Code 教育",
+       "title": "Claude Code 创造者亲授 28 分钟 prompt 实战课：CLAUDE.md/记忆/并行会话——224万浏览",
+       "summary": "Anthropic 工程师亲授的 28 分钟 prompt 实战课西语区疯转 224 万浏览。覆盖 CLAUDE.md / 记忆技巧 / 并行会话核心工作流——把 Claude Code 的「常识」整理成可复用课程，下游意味着 AI 编程工具的市场教育成本被一次性压平。",
+       "metric": "224万浏览 · 2.2万赞",
+       "link": "https://x.com/sweexx9/status/2089430704325013524",
+       "image": "https://pbs.twimg.com/amplify_video_thumb/2089430269338001408/img/IuxshEjEifApDeqH.jpg"
+      },
+      {
+       "date": "08.21",
+       "source": "hakimieiqbal · 零基础开发者",
+       "title": "Unity MCP + Claude Code 组合让零基础开发者一周做出游戏：学习曲线正在崩塌",
+       "summary": "零基础开发者靠 Unity MCP + Claude Code 一周做出游戏——学习曲线在崩塌。Unity MCP 提供 Unity 引擎 API 的访问层，Claude Code 作 prompt 译/编排主控，开发者参与度被压成「下一句需求」级别的需求方。下游信号：indie 独立开发者的「程序员 vs 美术 vs 设计」三工种壁垒正在松动。",
+       "metric": "5840 浏览 · 85 赞",
+       "link": "https://x.com/hakimieiqbal/status/2090411096985280538",
+       "image": "https://pbs.twimg.com/amplify_video_thumb/2090411029612175361/pu/img/QZoeH6L-1E6i7mv0.jpg"
+      },
+      {
+       "date": "08.22",
+       "source": "DilumSanjaya · Three.js 开发者",
+       "title": "three.js 假像素场景一键切真实 3D 视图：全程无外部资源由 Opus 5 单 pass 生成",
+       "summary": "Dilum Sanjaya 用 Opus 5 一句话生成 three.js 假像素场景，可一键切真实 3D 视图——全程无外部资源纯代码+shader。展示 AI 编程在「合成素材需求消失」场景的天花板：单 pass 产出可工作 3D 场景，下游意味着宣传素材门槛被 AI 踩穿。",
+       "metric": "3.6万浏览 · 805 赞",
+       "link": "https://x.com/DilumSanjaya/status/2090879564738895872",
+       "image": "https://pbs.twimg.com/amplify_video_thumb/2090879457856077824/img/qEqZ5w7jxR-K8wKj.jpg"
+      },
+      {
+       "date": "08.23",
+       "source": "lucianlamp · 实测者",
+       "title": "Tesana：基于 Godot 引擎的游戏制作专用 AI 助手——prompt 一键生成可玩游戏 + 内置 2-4 人实时联机",
+       "summary": "LUCIAN 实测日本产 Tesana AI 助手（专做游戏的 AI agent）：底层是 Godot 引擎 + VSCode 风文件管理 UI，prompt 一句话即可生成标题画面/角色/胜利条件/BGM 等全部要素，并内置 2-4 人实时联机能力、3D/2D 内置动画与环境移动 add-on。继 Unity MCP 和 UEFN MCP 之后本月游戏开发 AI 助手的第三种打法。",
+       "metric": "1.1万浏览 · 64 赞",
+       "link": "https://x.com/lucianlamp/status/2091108653361431028",
+       "image": "https://pbs.twimg.com/amplify_video_thumb/2091108628434726912/img/Ul9mdyqDR_fvAbg6.jpg"
+      }
+     ]
+    },
+    {
+     "title": "游戏市场动态",
+     "deck": "Roblox 国会大限前 Hansen 封号、GTA6 memecoin 泄露遭 SKG 切割、Circana 7 月美国硬件 -29% 创 1995 实体新低、Microsoft 老将 Harvey Smith 同日宣布 Black Pony Immersive 新工作室——平台巨头被多线问责。",
+     "stories": [
+      {
+       "date": "08.18",
+       "source": "DramaAlert · 安全问责",
+       "title": "Chris Hansen 在 Roblox 演讲现场被封号：安全问责连续剧再添一幕——157万浏览",
+       "summary": "Chris Hansen（To Catch a Predator 主持人）在演讲现场被 Roblox 当场封号——157 万浏览、5.3 万赞。时点紧接参议院两党联名国会调查与 8 月 31 日文件大限，platform 安全问责方向被实质性提速。",
+       "metric": "157万浏览 · 5.3万赞",
+       "link": "https://x.com/DramaAlert/status/2088676241234682010",
+       "image": "https://pbs.twimg.com/amplify_video_thumb/2088658673866350593/img/H17zBOyHyqUJpqOh.jpg"
+      },
+      {
+       "date": "08.20",
+       "source": "GameSpot · 泄露事件",
+       "title": "GTA 6 实机与地图遭泄露：黑客挂满 memecoin 打「玩家权利」旗号遭 Stop Killing Games 切割",
+       "summary": "GTA 6 实机+地图泄露黑客自称「为玩家权利」，视频挂满 memecoin 广告推广 $CYBERLEEK。Stop Killing Games 同日 切割「这种非法行为不能代表玩家维权」。一周后 Take-Two 法务反向在 SDNY 向 Microsoft+Discord 同时传唤，要求 9 月 4 日前提交足以指认 CyberLeek 的全部账户信息。",
+       "metric": "5.2万浏览 · 433 赞",
+       "link": "https://x.com/GameSpot/status/2090066333916680257",
+       "image": "https://pbs.twimg.com/media/HQFoQWmbAAA7iC7.jpg"
+      },
+      {
+       "date": "08.21",
+       "source": "GameSpot · 行业数据",
+       "title": "Circana：美国 7 月游戏消费创史上最差之一——实体软件史上最低、硬件跌回 2020",
+       "summary": "Circana 数据：美国 7 月硬件销售 -29%，跌至 2020 疫情缺货期；实体软件销售 1995 年追踪以来单月新低。硬件供应充足但高价压制买家犹豫，订阅服务 +6% 是唯一增长类目。Sony 同期宣布 2028 年起停止生产 PlayStation 实体光盘——行业全面数字化加速。",
+       "metric": "2.4万浏览 · 21 赞",
+       "link": "https://x.com/GameSpot/status/2090455140956545485",
+       "image": "https://pbs.twimg.com/media/HQLJ30sa0AAXDtd.jpg"
+      },
+      {
+       "date": "08.20",
+       "source": "GameSpot · 工作室重组",
+       "title": "Dishonored 之父 Harvey Smith 成立 Black Pony Immersive：专做沉浸式模拟的新工作室",
+       "summary": "Harvey Smith (Dishonored 2 创意总监) 在 Austin TX 成立 Black Pony Immersive 工作室，聚焦 imaginative first-person action RPG + immersive sim 品类，团队成员含 Insomniac / Epic / Avalanche / Volition 老人。继 Warren Spector 退休后第三位 Ion Storm 老将组团押注沉浸式 sim——Microsoft layoffs 余波下的「老将自我赎身」典型样本。",
+       "metric": "2.4万浏览 · 84 赞",
+       "link": "https://x.com/GameSpot/status/2090104626448306190",
+       "image": "https://pbs.twimg.com/media/HQGLFG3acAA0F5a.jpg"
+      }
+     ]
+    },
+    {
+     "title": "新游推文",
+     "deck": "Wild Dog「拉面」7.4M 浏览顶周内最大单条流量 + Pizza House 披萨 1.03M / Dumb Ways 工地 868K / Tank Fu 坦克打武术 565K / Dice Hoarder 骰子 467K——本周 5 条 TOP 全靠一句话差异化钩子。",
+     "stories": [
+      {
+       "date": "08.22",
+       "source": "denfaminicogame · Wild Dog 公布",
+       "title": "Japanese Ramen Simulator：最大 6 人在线开拉面店，前作 Keep Digging 全球销量 45 万套——7.4M浏览",
+       "summary": "Wild Dog 公布《Japanese Ramen Simulator》最大 6 人在线开拉面店——单条 7.4M 浏览、4.5 万赞成本周最大独游传播案例。前作 Keep Digging 全球销量 45 万套作为业绩背书。题材共鸣 + 多人合作 + 现实题材三轴同时启动，验证「题材钩子」公式继续在 indie 圈跑赢美术规格。",
+       "metric": "7.4M浏览 · 4.5万赞",
+       "link": "https://x.com/denfaminicogame/status/2090635781010542637",
+       "image": "https://pbs.twimg.com/ext_tw_video_thumb/2090635569303076864/pu/img/doyPmZE2D-p6ha-n.jpg"
+      },
+      {
+       "date": "08.20",
+       "source": "denfaminicogame · 今日发售",
+       "title": "Pizza House Simulator：6 人联机披萨店经营——从揉面团到炒股、防黑手党——103万浏览",
+       "summary": "Broken Lyre × Wendigo 开发的 6 人联机披萨店经营今日发售（8/20）：从揉面团到炒股、防黑手党——103 万浏览 / 6616 赞。6 人合作 + 现实地点（披萨店）+ 真实经营主线（打黑手党）让玩家在 1 条推文就明白玩法核心 loop，再次验证题材钩子公式。",
+       "metric": "103万浏览 · 6616 赞",
+       "link": "https://x.com/denfaminicogame/status/2089914088919118290",
+       "image": "https://pbs.twimg.com/ext_tw_video_thumb/2089914031188639744/pu/img/OIWfZjcoFJAc01I2.jpg"
+      },
+      {
+       "date": "08.21",
+       "source": "denfaminicogame · 发售定档",
+       "title": "Dumb Ways to Build：PlaySide 4 人物理合作工地，9月10日全平台发售——86.7万浏览",
+       "summary": "PlaySide（《Dumb Ways to Die》IP 持有方）新作 Dumb Ways to Build：4 人物理合作工地 + 同事是工地最大工伤风险——86.7 万浏览 / 7030 赞。把安全动画系列拓展为合作 sim 品类，9 月 10 日全平台发售。验证「IP 移植到 sim 品类」是 indie 老牌 IP 的现金流再生路径。",
+       "metric": "86.7万浏览 · 7030 赞",
+       "link": "https://x.com/denfaminicogame/status/2090260080138891754",
+       "image": "https://pbs.twimg.com/ext_tw_video_thumb/2090260038812315649/pu/img/HBsSoz0ZncUer0Wi.jpg"
+      },
+      {
+       "date": "08.23",
+       "source": "tenukibozu · 朋克概念",
+       "title": "Tank Fu：「Gun-fu」坦克版——主砲打击 + 履带连续攻击，群袭战车走 stylistic 高分路径",
+       "summary": "Tank Fu 「Gun-fu」坦克版 pre-alpha playtest 开放（Steam appid 5106210）：主砲打击 + 履带连续攻击，群袭战车击破走 stylistic 高分路径——56.5 万浏览 / 7913 赞。朋克概念（坦克打武术）让 indie character action pre-alpha 阶段就拿到 character feel 完整 polish，是 indie 朋克概念的代表样本。",
+       "metric": "56.5万浏览 · 7913 赞",
+       "link": "https://x.com/tenukibozu/status/2090949666963673591",
+       "image": "https://pbs.twimg.com/ext_tw_video_thumb/2090949655093764096/pu/img/y4FOKERsgWY8IkJG.jpg"
+      }
+     ]
+    }
+   ],
+   "watch": [
+    {
+     "title": "Gamescom 2026 ONL 直播（8月25日）后的舆情反应",
+     "body": "Geoff Keighley 已公布名单 Witcher 3: Songs of the Past / Final Fantasy VII Revelation / Gears of War: E-Day / Ananta / Tides of Annihilation / Metro 2039 / Game of Thrones: War for Westeros / Warlock: D&D 共 8 款 3A — 直播首播后 24-48h 的 Steam wishlists / 中国区讨论 / TRAILER views 三轴会决定 W34 之后的舆情走向。"
+    },
+    {
+     "title": "Roblox 8月31日参议院文件大限",
+     "body": "8 月 31 日前 Roblox 是否按期向参议院提交文件、CEO Baszucki 作证口径如何—is the next trigger for UGC platform compliance cost step-up。澳大利亚 / 英国是否跟进立法同步观察。"
+    },
+    {
+     "title": "Tank Fu / Pizza House / Japanese Ramen 等合作 sim 发售首周 PCU 与转化",
+     "body": "Pizza House 已在 8/20 发售 / Tank Fu pre-alpha playtest / Japanese Ramen 上线时间未定—三款合作 sim 的首周 PCU 与 wishlist→购买转化率，会验证「多人合作 + 一句话题材钩子」公式是否成立为新的 indie 爆款路径。"
+    },
+    {
+     "title": "Sony PlayStation #PSBlackout 8月23-30 boycott 一周观察",
+     "body": "fan group DoesItPlay 发起的 #PSBlackout 抗议运动（8/23-30 玩家集体取消 PS Plus 订阅 / 避开购买 / log off 抗议 Sony 2028 停产实体光盘）首周末止 PS Plus 订阅/cancel 数据，次年财报上 IFRS 数据是关键先行指标。"
     }
    ]
   }
