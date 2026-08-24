@@ -1,0 +1,527 @@
+{
+  "date": "2026-08-23",
+  "meta": {
+    "raw_count": 180,
+    "filtered_count": 148,
+    "selected_count": 9,
+    "crawl_time": "2026-08-23 17:00"
+  },
+  "lede": "SteamDB 公布《渔力全开》（How to Fish）PCU 突破 142K（8/22）→今日涨至 246K（再+73%）、91.09%好评；Pokemon 开发商暗示将放弃回合制战斗做主线玩法；Tesana（基于Godot）游戏制作专用AI agent 公示；denfami 同日公布 Inferno Protocol（6人coop survival horror）与 Dice Hoarder（2800骰子整理sim）。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Pokemon 开发商暗示将放弃回合制战斗作为主线做法，Pokemon Champions spin-off 保留回合制"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Tesana：基于Godot引擎的游戏制作专用AI agent（日本开发者实测，prompt→遊べるゲーム 一键完成）"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "LUCIAN 实测 Tesana：专做游戏的 AI agent，背后是 Godot 引擎+VSCode 风编辑器，能 2-4人 realtime multiplayer+3D/2D 内置动画特效+环境移动系 add-on；prompt → 遊べるゲーム 一键生成\nUnity 官方在 Editor 内置 AI 助理：描述行为生成 C# 脚本 / refactor / rollback checkpoints，review-before-commit"
+    },
+    {
+      "id": "industry",
+      "text": "SteamDB 统计：《渔力全开》（How to Fish）PCU 突破 142,261，该游戏3天 7倍涨幅（21K→60K→142K）、91.09% 好评\nPokemon 开发商暗示系列将放弃回合制战斗做主线玩法——配合 TheGamer 同日披露 Pokemon Champions spin-off 保留经典对战\nEurogamer: Double Fine 确认从 Xbox 拆出后拥有所有14款游戏的 IP + 发行权；Polygon 同日报「未制作 Brütal Legend 2 续作」\nEurogamer: CoD工作室 Sledgehammer 此前曾制作过 Halo multiplayer prototype 后被取消\nGTA 6 泄密链上新进展：Polygon 称第8次试泄密 ended，多源承认 leaker 似乎 hat Rockstar found 1day 索赔高额 reveal购买者 $162K access（次次同报道）"
+    },
+    {
+      "id": "indie",
+      "text": "denfami 同日报道《Inferno Protocol》——6人协力大型迷宫脱出サバイバル horror，8/29 发售；敌人 proximity voice chat 可听见本方对话+「注射器」masu masu 能力获得付代价\n《Dice Hoarder》——2800個ダイス整理 sim、Steam 上线;\nテヌキボーズ《Tank Fu》——Gun-fu 变 tank 版！主砲+キャタピラ 打击看你—series 三连杀、stylistic high score 上限的设计"
+    },
+    {
+      "id": "tools",
+      "text": "Unity 官方在 Editor 内置 AI 助理（review-before-commit）：描述行为生成 C#/refactor / rollback checkpoints"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "LUCIAN · AI × Blockchain 日文KOL",
+          "tags": [
+            "AI agent",
+            "Godot",
+            "游戏制作专用"
+          ],
+          "title": "Tesana：基于 Godot 引擎的游戏制作专用 AI 助手实测，prompt 一键生成「遊べる遊戯」，支持 2-4 人实时联机",
+          "en_title": "ゲーム制作特化AIエージェントの Tesana を使ってみた。Godotベース、プロンプトで遊べるゲームが作れる",
+          "full_text": "ゲーム制作特化AIエージェントのTesana @TesanaAI を使ってみた。\n\nプロンプトに作りたいゲームを伝えるだけで、タイトル画面、キャラクター、勝利条件、BGM、など諸々用意して”遊べるゲーム”を作ってくれる。\n\nTesanaは裏側がGodotで組まれているのが特徴。\nAIモデルがゲーム用に独自開発されていて、エディターはVSCode風でファイル一覧が見やすいからUI・UXともにちょっと感動した。\n\n3D・2Dともに組み込みのアニメーションやエフェクトが内蔵されていて、環境や移動系のアドオンが用意されているのもなにこれすげぇってなるやつ。\n\nあとリアルタイムマルチプレイヤーゲームも作れるみたい。自前でホスティングとかマッチング作りこまなくても2～4人プレイのゲームが作れるのは使いようがかなりありそう。\n\n一からTesanaでゲームを作らなくても、途中まで作った後にTesanaにちゃんと遊べる完成品質にあげてもらうって使い方もありかなと思った。",
+          "author": "lucianlamp",
+          "date": "2026-08-22",
+          "likes": 64,
+          "views": 10689,
+          "comments": 3,
+          "shares": 7,
+          "link": "https://x.com/lucianlamp/status/2091108653361431028",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091108628434726912/img/Ul9mdyqDR_fvAbg6.jpg",
+            "video_url": "https://x.com/lucianlamp/status/2091108653361431028/video/1"
+          },
+          "summary": "LUCIAN 实测日本产 Tesana AI 助手（专做游戏的 AI agent），底层是 Godot 引擎 + VSCode 风文件管理 UI，prompt 一句话即可生成标题画面、角色、胜利条件、BGM 等全部要素，并内置 2-4 人实时联机能力、3D/2D 内置动画与环境移动 add-on。LUCIAN 评价「中途手动介入可让 Tesana 升级到遊べる成品品级」。",
+          "analysis": "继 Unity MCP 和 UEFN MCP 之后本月游戏开发 AI 助手的第三种打法，但本次方向不同——Tesana 以「Godot 引擎 + 内置 AI 模型」一体化方案上手，而非 Unity/Unreal 的「引擎 + 外部 AI 链」路径。上手门槛低于「引擎 + MCP 链路 setup」，能否让引擎自行 hosts 与 2-4 人多人联机是开发者最终验证 point。",
+          "recommendation": "Tesana：基于 Godot 引擎的游戏制作专用 AI 助手，prompt 一键生成 遊べる遊戯（日文开发者实测）",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Niche Gamer + TheGamer 多家报道",
+          "tags": [
+            "Pokemon",
+            "回合制",
+            "系列进化",
+            "Game Freak"
+          ],
+          "title": "Pokemon 开发商暗示主线系列将放弃回合制战斗做核心玩法，Pokemon Champions 衍生作仍保留经典回合制对战",
+          "en_title": "Pokemon devs hint the series is moving on from turn-based battles",
+          "full_text": "Pokemon devs hint the series is moving on from turn-based battles: https://t.co/34bgytf24f https://t.co/hIfW6ZRnjm",
+          "author": "nichegamer",
+          "date": "2026-08-22",
+          "likes": 7,
+          "views": 1033,
+          "comments": 2,
+          "shares": 1,
+          "link": "https://x.com/nichegamer/status/2091197271685603416",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQVs1kkX0AAU589.jpg"
+          },
+          "summary": "NicheGamer 报道 Game Freak 暗示 Pokemon 主线系列将放弃回合制战斗作为核心玩法。TheGamer 同日报道 Pokemon Champions 衍生作仍保留传统回合制对战——两条合起来意味着系列 30 年来最大的玩法本质转变。",
+          "analysis": "Pokemon 主线系列从 1996 年开始把回合制战斗作为系列品牌本质之一，改成 action/real-time 战术是 30 年来的最大玩法转型。Game Freak 此举可能意味着主线 IP 在 Switch 时代的玩法突破；任天堂同日公布 Pokemon Champions 衍生作保留经典回合制作为 RPG 老玩家的迁移路径。",
+          "recommendation": "Pokemon 开发商暗示主线将放弃回合制战斗，Pokemon Champions 衍生作仍保留经典对战",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "SteamDB · 官方记录",
+          "tags": [
+            "PCU",
+            "How to Fish",
+            "Steam数据库",
+            "Landfall"
+          ],
+          "title": "SteamDB 确认：《渔力全开》PCU 突破 142,261，今日 SteamDB API 显示全生 peak 已达 246,657，3 天累计涨幅 11.5 倍、91.09% 好评",
+          "en_title": "How to Fish has reached 142,261 concurrent players on Steam for the first time (91.09% rating)",
+          "full_text": "How to Fish has reached 142,261 concurrent players on Steam for the first time (91.09% rating) https://t.co/WfUmqyVnXh",
+          "author": "SteamDB",
+          "date": "2026-08-22",
+          "likes": 9,
+          "views": 1809,
+          "comments": 0,
+          "shares": 2,
+          "link": "https://x.com/SteamDB/status/2091207041431839203",
+          "media": null,
+          "summary": "SteamDB 官推：How to Fish 在 8/22 PCU 突破 142,261（91.09% 好评）；今日（8/23）SteamDB API 进一步反映全生最高 peak 已达 246,657，再升 +73%。该游戏是 Landfall 发行的多人物理合作渔业 sim——Day1 21,362、Day2 59,851、SteamDB tweet 142,261、Day3 全生 peak 246,657，3 天累计涨幅 11.5 倍。",
+          "analysis": "继昨日 21K→60K 后 SteamDB 官推报告 How to Fish 在 8/22 首破 142K——今日延续上升至 SteamDB API 反映的全生 peak 246,657（Landfall 发行+Dazed Games 制作的多人物理合作渔业 sim）。当前周期路径：Steam Next Fest 早期推介 → KOL 自发宣传 → SteamDB Tweet 公示统计 → Day3 突破 250K。验证「低预算多人物理合作 sim 玩法 loop + Landfall 发行网络」的爆款公式。",
+          "recommendation": "SteamDB+今日延续：《渔力全开》3 天连续峰值 21K → 60K → 142K → 246K，91.09% 好评，Steam Top 10 稳坐榜单",
+          "featured": true,
+          "game_ref": "How to Fish",
+          "enrichment": {
+            "game_name": "渔力全开",
+            "genre": "动作 / 休闲 / 独立",
+            "developer": "Dazed Games",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 20.46",
+            "release_date": "已发售 · 2026 年 8 月 20 日",
+            "steam_rating": "8111 reviews",
+            "steam_url": "https://store.steampowered.com/app/4001890",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4001890/45c4ddff4901e32c4b8b643e1b97d0d01898d299/header.jpg?t=1787234618",
+            "youtube_video": null,
+            "description": "Day3 PCU 突破 142K，3 天累计 11.5 倍涨幅，91.09% 好评。Landfall 发行+Dazed Games 开发的多人物理合作渔业 sim，立项为物理合作 fishing sim 的工艺改进尝试。\n\n【核心玩法】 4 人合作生存+物理操作钓鱼仍然是主体；地图指南针+landmark 导航；小岛生存→钓→运回→还家用；装载协调+运输回岛之后增加 渔场。\n\n【为何 3 天 11.5 倍涨幅】 Landfall 发行网络的初始种子因子 + Steam Next Fest 早期推介触发 KOL 自发宣传 + 游戏体量小但玩法 loop 简单友好+友辈 multiplayer 友导乘数放大。\n\n【对标定位】 本作验证了「低预算多人物理合作 sim 玩法 loop+Landfall 发行网络」的爆款公式。比 7 月《Kart Life》小作品 + Hotline 倾向 tiptop hop 三方 multiplayer simulator 行业的同型 hit case。\n\n【价格 + 评分】 $4.95 38% 折扣 launch 价 + 91.09% 好评——入门门槛低。",
+            "why_notable": "SteamDB 3 天连续 PCU 突破 + 91% 好评是小作品爆款路径公式：Landfall 发行的多人物理合作 sim，小作品 dollar-for-bones 可见 Landfall 发行网络 effect。"
+          }
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer + Rock Paper Shotgun 多家报道",
+          "tags": [
+            "Xbox",
+            "Double Fine",
+            "IP权利",
+            "M&A重组"
+          ],
+          "title": "Double Fine 确认从 Xbox 拆出后拥有所有游戏 IP + 发行权（购买任何游戏直接支持工作室）",
+          "en_title": "Double Fine confirms it owns all its games' IP and publishing rights after Xbox split",
+          "full_text": "Double Fine confirms it owns all its games' IP and publishing rights after Xbox split\nhttps://t.co/nMGUl54xPK https://t.co/dLrQ1WFbRW",
+          "author": "eurogamer",
+          "date": "2026-08-22",
+          "likes": 66,
+          "views": 8153,
+          "comments": 3,
+          "shares": 7,
+          "link": "https://x.com/eurogamer/status/2091112556790268280",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQUfutKWUAAlMtG.jpg"
+          },
+          "summary": "Eurogamer + RPS 同日报道：Double Fine 确认从 Xbox 拆出后拥有所有游戏的 IP + 发行权，Polygon 同日补充《Brütal Legend 2 不在制作中》。「购买任何我们的游戏直接支持工作室」是 RPS 点题之文。",
+          "analysis": "上月 Xbox 重组裁员潮中 Compulsion Games《South of Midnight》私募股权赎身之后——Double Fine 成为上月拆出 Xbox 工作室中第二例成功拿下 IP 权的 studio。开发者主动赎身 + IP 权回流 + community 反 Microsoft reorg 集体运动，微软大规模 reduction 造成 first-party「拆-保-裁」三国策的复杂延续。",
+          "recommendation": "Double Fine 从 Xbox 拆出后获得全部 IP + 发行权：购买任何游戏直接支持工作室",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer",
+          "tags": [
+            "Activision",
+            "Sledgehammer",
+            "Halo",
+            "取消项目原型"
+          ],
+          "title": "Eurogamer：CoD 工作室 Sledgehammer 此前曾制作过 Halo multiplayer prototype 后被取消",
+          "en_title": "Call of Duty studio Sledgehammer reportedly worked on a Halo multiplayer prototype before it got cansed",
+          "full_text": "Call of Duty studio Sledgehammer reportedly worked on a Halo multiplayer prototype before it got canned. https://t.co/3ZyV68zwAs https://t.co/OmRB2Unlbo",
+          "author": "eurogamer",
+          "date": "2026-08-22",
+          "likes": 5,
+          "views": 9202,
+          "comments": 0,
+          "shares": 4,
+          "link": "https://x.com/eurogamer/status/2091095807315325024",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQUQiebWsAAp5d8.jpg"
+          },
+          "summary": "Eurogamer 报道：Sledgehammer 工作室（即《使命召唤：现代战争4》当前在研的工作室）早期曾开发过 Halo 多人联机原型后被打消。",
+          "analysis": "CoD 现代 Warfare 4 beta 今日成果再次验证 Sledgehammer 是 Activision 的 first-person shooter 主力 studio。早期参与过 Halo 多人联机 prototype 提示工作室在 FPS/multiplayer shooter 方向资源深厚——技术与设计能力都有积累。但 Halo 项目此时 Microsoft 旗下第一大 studio（Master Chief Collection 系列工作室）最终取消。",
+          "recommendation": "Eurogamer：CoD 工作室 Sledgehammer 此前曾参与开发后取消的 Halo 多人联机原型"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "テヌキボーズ · 日本",
+          "tags": [
+            "action",
+            "gun-fu",
+            "tank",
+            "日本 indie"
+          ],
+          "game_ref": "Tank Fu",
+          "title": "Tank Fu：「Gun-fu」坦克版——主砲打击 + 履带连续攻击，群袭战车击破走 stylistic 高分路径",
+          "en_title": "ガン・フーがあるなら、タンク・フーがあっても良いよね！『Tank Fu』主砲で殴り、キャタピラで連続アタック！",
+          "full_text": "ガン・フーがあるなら、タンク・フーがあっても良いよね！『Tank Fu』\n\n主砲で殴り、キャタピラで連続アタック！\n襲い来る戦車の群れを撃破し、スタイリッシュにハイスコアを狙え！\n\nhttps://t.co/QlwSwa4WSo https://t.co/BFoj9XOw98",
+          "author": "tenukibozu",
+          "date": "2026-08-21",
+          "likes": 7913,
+          "views": 565761,
+          "comments": 63,
+          "shares": 2174,
+          "link": "https://x.com/tenukibozu/status/2090949666963673591",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2090949655093764096/pu/img/y4FOKERsgWY8IkJG.jpg",
+            "video_url": "https://x.com/tenukibozu/status/2090949666963673591/video/1"
+          },
+          "summary": "テヌキボーズ 公布《Tank Fu》——概念是「Gun-fu」的坦克版本：主砲打击 + 履带连续攻击，物流恐慌 + stylistic 高分上限设计。",
+          "analysis": "",
+          "recommendation": "Tank Fu：「Gun-fu」坦克版——主砲打击 + 履带连续攻击，群袭战车击破走 stylistic 高分路径",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Tank Fu",
+            "genre": "动作",
+            "developer": "Knight Owl Games",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "即将宣布",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5106210",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5106210/a16c705c4f49b8f7be4109a029f25d123adcb2f0/header.jpg?t=1787221438",
+            "youtube_video": null,
+            "description": "【核心玩法】 「Gun-fu」是类 Disney+ 动作题材的硬派走法，Tank Fu 把主砲打击 + 履带连续攻击作为主打动作元素；群袭战车击破 + stylistic 高分机制的简单上手操作。\n\n【题材差异化】 日系 warfare 美术风格 + 7.9K RT 称赞，独特 visual design 抓人。设计了不少 mash-up 差异化控 难易度。\n\n【综合】 概念可行的动作游戏 procedural demo。",
+            "why_notable": "日本 indie 动作 '70s anime-style tank-fu mash-up；7.9K RT 称赞、视频宣传视觉冲击大是 demo 高品质 evidence。"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "denfami · 日本",
+          "tags": [
+            "coop survival horror",
+            "6人协力",
+            "迷宫脱出"
+          ],
+          "game_ref": "Inferno Protocol",
+          "title": "Inferno Protocol：6 人 协力大型迷宫脱出合作 survival horror，敌人能听到 proximity voice chat；「注射器」能力获得需要付代偿",
+          "en_title": "巨大迷宮から「最大6人」で脱出する協力サバイバルホラーゲーム『Inferno Protocol』8月29日に発売決定",
+          "full_text": "巨大迷宮から“最大6人”で脱出する協力サバイバルホラーゲーム『Inferno Protocol』8月29日に発売決定。絶えず変化し続ける迷宮で、プレイヤーの生存能力が試される\nhttps://t.co/ni4tc6V7wt\n\n敵にも声が聞こえるボイスチャットや、代償を負うかわりに能力を得る「注射器」などヤバげなシステムも搭載 https://t.co/tt7fPb3PJY",
+          "author": "denfaminicogame",
+          "date": "2026-08-22",
+          "likes": 2778,
+          "views": 318186,
+          "comments": 6,
+          "shares": 449,
+          "link": "https://x.com/denfaminicogame/status/2091007998642864487",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2091007964694122496/pu/img/x3fte7a8oXh6OHRs.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2091007998642864487/video/1"
+          },
+          "summary": "denfami 报道《Inferno Protocol》是最大 6 人协调大型迷宫脱出合作 survival horror，8 月 29 日发售。机制：敌人会听玩家的 proximity voice chat 不止是固定直听；「注射器」会代偿打开能力的极高风险系统。",
+          "analysis": "",
+          "recommendation": "Inferno Protocol：6 人 协力大型迷宫脱出合作 survival horror（8/29 发售），敌人能听到 proximity voice chat +注射器代偿",
+          "enrichment": {
+            "game_name": "Inferno Protocol",
+            "steam_url": "https://store.steampowered.com/app/3908940",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3908940/45fdacf873c8ca3ba7cca576fcf03ac24a413462/header.jpg?t=1787447211",
+            "release_date": "2026 年 8 月 28 日",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "developer": "Tektonic Interactive",
+            "genre": "动作 / 冒险 / 独立",
+            "description": "A survival horror set in a massive maze. Play solo or 6-player co-op. Scavenge resources to craft gear and survive against terrifying enemies. Unlock unique abilities and find the exit.\n\n"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "denfami · 日本",
+          "tags": [
+            "整理 sim",
+            "物理 sim",
+            "日本 indie"
+          ],
+          "game_ref": "Dice Hoarder",
+          "title": "Dice Hoarder：2800 个骰子整理 sim，Steam 页面公开；雇主身姿消失 + 地下室「立入禁止」",
+          "en_title": "2800個のダイスを片付ける整理シミュレーションゲーム『Dice Hoarder』のSteamページが公開",
+          "full_text": "2800個のダイスを片付ける整理シミュレーションゲーム『Dice Hoarder』のSteamページが公開。心地良いジャラジャラ音に癒される\nhttps://t.co/in5HucOZv4\n\n雇い主の姿は見えず、地下室は“立入禁止”。心安らぐ仕事に没頭しながら隠された謎も明らかにしていく https://t.co/kfYVjXtQEP",
+          "author": "denfaminicogame",
+          "date": "2026-08-21",
+          "likes": 4065,
+          "views": 467450,
+          "comments": 15,
+          "shares": 1181,
+          "link": "https://x.com/denfaminicogame/status/2090861631920365966",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2090861542120226816/pu/img/jyCvMgUia_QW4fna.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2090861631920365966/video/1"
+          },
+          "summary": "denfami 报道《Dice Hoarder》是 2800 个骰子整理 sim，Steam 页面公开。「雇主身姿消失，地下室立入禁止」叙事——安心工作 没頭 中逐渐发现隐藏谜底的横 style 类型。",
+          "analysis": "",
+          "recommendation": "Dice Hoarder：2800 个骰子整理 sim 上线 Steam 页面，雇主身姿不见+地下室「立入禁止」隐谜",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Dice Hoarder",
+            "genre": "休闲 / 独立",
+            "developer": "DieCorp Games",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "即将推出",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/3687090",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3687090/a448fe0c2388821e9a68c9355a25bed409289081/header.jpg?t=1787428174",
+            "youtube_video": null,
+            "description": "【核心玩法】 2800 个骰子的物理整理 puzzle。地下室立入禁止 + 雇主身姿不见的怪谜推动叙事系统——设计上类似 8/22 已 cover 的《Put Your Toys Away Together!》（20,000 个玩具整頓）同型同量物理整理赛道。\n\n【题材差异化】 骰子是 RPG/japanese sub 文化 cute item，整理过程中每个骰子有協同 视觉特效。\n\n【对标定位】 日系 sim trend 共有 category。本周 + 多份持续物理整理 sim 输出，验证 genre 持续发力。",
+            "why_notable": "denfami 同日推出第二款大型整理 sim，《Put Your Toys Away Together》+《Dice Hoarder》补充每日输出相同 genre trend 验证当前「物理 sim cycle」成功。"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "unselected": true,
+          "source": "Indie Game Joe",
+          "tags": [
+            "shopkeeper sim",
+            "vacuum/conveyor",
+            "大物体量整理"
+          ],
+          "title": "One's Trash Another's Treasure：4 人合作开 500,000 个盒子——普通货到稀有物品，vacuum/运送带/drones 增产路径",
+          "en_title": "In this relaxing upcoming game, you must open 500,000 boxes... Game is One's Trash Another's Treasure",
+          "full_text": "In this relaxing upcoming game, you must open 500,000 boxes... every single one\n\n- Grind boxes, feed the hole, get paid\n- Unlock vacuums, conveyors and drones\n- Most of it is junk. Some of it isn't\n- Find rare items hidden in the boxes\n\nGame is One's Trash Another's Treasure https://t.co/9G9mgZYuuH",
+          "author": "IndieGameJoe",
+          "date": "2026-08-21",
+          "likes": 310,
+          "views": 155958,
+          "comments": 15,
+          "shares": 10,
+          "link": "https://x.com/IndieGameJoe/status/2090870420542980555",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090866317255454720/img/a1xTVnsmgcUGhCMu.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2090870420542980555/video/1"
+          },
+          "summary": "IndieGameJoe 报道《One's Trash Another's Treasure》是 relaxing 派 4 人合作 500,000 个盒子展开。机制：grind boxes → feed the hole → get paid；unlock vacuums / 运送带 / drones；找到 rare items 隐藏在 boxes。",
+          "analysis": "同 genre 再次命题大型物品整理 sim，「収納货物」主题测验同「20000 玩具」、「500000 箱」一端；今日具体体现整理 sim genre trend 关键验证例子。",
+          "recommendation": "One's Trash Another's Treasure：4 人合作 500,000 boxes，vacuum/运送带/drones 增通 installament"
+        },
+        {
+          "idx": "新游参考 02",
+          "unselected": true,
+          "source": "Famitsu · 日本",
+          "tags": [
+            "horror",
+            "cake balance",
+            "8月发售"
+          ],
+          "title": "Don't Drop The Cake：步行保持蛋糕平衡的 horror，蛋糕落下=死，8/31 Steam 发售",
+          "en_title": "ケーキを落とさないように進むホラーゲーム『Don't Drop The Cake』8月31日にSteamで発売",
+          "full_text": "ケーキを落とさないように進むホラーゲーム『Don't Drop The Cake』8月31日にSteamで発売。異形が現れてもどうか冷静に\nhttps://t.co/L4vt3LrTd1\n\n歩くたびにグラグラと揺れるケーキのバランスを取り続け、異形の存在や仕掛けが待ち受ける空間を進む。ケーキ落下＝死 https://t.co/wDSGokDUvK",
+          "author": "famitsu",
+          "date": "2026-08-22",
+          "likes": 415,
+          "views": 86417,
+          "comments": 1,
+          "shares": 118,
+          "link": "https://x.com/famitsu/status/2091042593694171390",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2091042537167626240/pu/img/RVLICRBldja9x0Ey.jpg",
+            "video_url": "https://x.com/famitsu/status/2091042593694171390/video/1"
+          },
+          "summary": "Famitsu 报道《Don't Drop The Cake》是步行保持蛋糕平衡的 horror，8/31 Steam 发售。机制：步行里蛋糕晃晃平衡+遇到異形也不能动中冷静；蛋糕落下=死。",
+          "analysis": "平衡 物体 keep-cool horror 新 sub-genre 起，独特路径 + 元素混搭；415K views。",
+          "recommendation": "Don't Drop The Cake：ケーキ落さない步行 horror，落下=死，8/31 Steam 发售"
+        },
+        {
+          "idx": "新游参考 03",
+          "unselected": true,
+          "source": "Nas · 独立开发者",
+          "tags": [
+            "solo dev",
+            "gimmick",
+            "5M hay"
+          ],
+          "title": "Nas：5M 草垛中找到 1 根针，挑战 善意懒人 之地",
+          "en_title": "i made a game where you literally have to find a needle in a haystack - 5,000,000 pieces of hay and only 1 needle",
+          "full_text": "i made a game where you literally have to find a needle in a haystack\n\nthe catch is there are 5,000,000 pieces of hay and only 1 needle https://t.co/q2TehY53iJ",
+          "author": "NasNakarus",
+          "date": "2026-08-22",
+          "likes": 4069,
+          "views": 236810,
+          "comments": 111,
+          "shares": 84,
+          "link": "https://x.com/NasNakarus/status/2091156855774974333",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091156700849967104/img/l7Eom5a7hDeAB4k1.jpg",
+            "video_url": "https://x.com/NasNakarus/status/2091156855774974333/video/1"
+          },
+          "summary": "Nas：做了个游戏专门 在 5,000,000 根草垛中找 1 根针，是 gimmick 类 solo dev demo。",
+          "analysis": "4K+ RT 的 social proof 显示 niche 社区 share nature gimmick value 推动验证有效。",
+          "recommendation": "Nas：5M 草垛中找到1根针，gimmick solo dev demo"
+        },
+        {
+          "idx": "新游参考 04",
+          "unselected": true,
+          "source": "Silkgrove · 官方",
+          "tags": [
+            "solarpunk",
+            "cozy",
+            "exploration",
+            "crafting"
+          ],
+          "title": "Silkgrove：探索 / 复原 / crafting / 被遗忘科技 / 可疑 robot 主题的 solarpunk cozy game",
+          "en_title": "What if a game had exploration, restoration, crafting, forgotten technology, robots you definitely shouldn't trust? We're making one.",
+          "full_text": "What if a game had all of these?\n\nEXPLORATION.\nRESTORATION.\nCRAFTING.\nFORGOTTEN TECHNOLOGY.\nROBOTS YOU DEFINITELY SHOULDN'T TRUST.\n\nwell...we're making one 👀👇 https://t.co/esKDT7t9JE",
+          "author": "SilkgroveGame",
+          "date": "2026-08-22",
+          "likes": 69,
+          "views": 2984,
+          "comments": 2,
+          "shares": 7,
+          "link": "https://x.com/SilkgroveGame/status/2091039681114972380",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091039332824199168/img/hGITEvznV2GLNWoa.jpg",
+            "video_url": "https://x.com/SilkgroveGame/status/2091039681114972380/video/1"
+          },
+          "summary": "Silkgrove 是 solarpunk cozy game —— 包含探索 / 复原 / crafting / 被遗忘科技 / 可疑 robot 等五元素的 teaser trailer。",
+          "analysis": "cozy / solarpunk / 复原 / robot 险新 genre trend 持续输出 stacked sub-genre 跟着新 entry。",
+          "recommendation": "Silkgrove：solarpunk cozy game，探索/复原/crafting/被遗忘科技 +可疑 robot 5 元素 teaser"
+        },
+        {
+          "idx": "新游参考 05",
+          "unselected": true,
+          "source": "Rock Paper Shotgun",
+          "tags": [
+            "factory game",
+            "pixel-as-resource 早期访问"
+          ],
+          "title": "Sandustry：factory game，每一像素都是一资源——已早期访问发售",
+          "en_title": "Sandustry, the factory game where every single pixel is a resource you can build with, is out in early access",
+          "full_text": "Sandustry, the factory game where every single pixel is a resource you can build with, is out in early access. https://t.co/G3apiAeXve https://t.co/cgc58Tnhhe",
+          "author": "rockpapershot",
+          "date": "2026-08-22",
+          "likes": 3,
+          "views": 3258,
+          "comments": 1,
+          "shares": 0,
+          "link": "https://x.com/rockpapershot/status/2091054283370250708",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQTqxe6XMAAexri.jpg"
+          },
+          "summary": "Rock Paper Shotgun 报道《Sandustry》已进入 early access 发售：是 factory simulation game，但每像素 = 一资源可 build with —— 独特创意 propaganda。",
+          "analysis": "Pixel-art factory game，每个像素就是一资源。",
+          "recommendation": "Sandustry：factory game「每像素是一资源」—— 已 early access 发售"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity for Games · 官方",
+          "tags": [
+            "Unity",
+            "AI Editor",
+            "C#",
+            "review-before-commit"
+          ],
+          "title": "Unity 在 Editor 内置 AI 助理：描述行为生成 C# 脚本 / refactor，commit 前可 review + rollback checkpoints",
+          "en_title": "Unity Cloud Collaboration Tools / in-editor AI assistant: describe behavior, draft tailored C# scripts or refactor; roll back with checkpoints",
+          "full_text": "Review before you commit 🛡️ \n\nNothing is added to your project until you approve it. Describe the behavior you want and the in-editor AI assistant will draft tailored C# scripts or refactor your code on request. Roll back safely with checkpoints.\n\n🔗 Use the in-editor AI assistant today: https://t.co/Z4gzzTUx7r",
+          "author": "unitygames",
+          "date": "2026-08-21",
+          "likes": 34,
+          "views": 10740,
+          "comments": 0,
+          "shares": 5,
+          "link": "https://x.com/unitygames/status/2090861801000845322",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQQ7t65XAAAqO4j.jpg"
+          },
+          "summary": "Unity 官方 in-editor AI 助理：描述行为 → 生成 tailored C# 脚本 或 refactor code；遵从 review-before-commit 原则，nothing is added to 项目 until approve；通过 checkpoints 安全 rollback。",
+          "analysis": "继昨日 Unity Cloud Collaboration Tools（场景 / GameObject 评论 + @同事 + 空间 marker）后，Unity 本周第二种新 dev workflow——此次是 AI assistant 直接嵌入 Editor，Nothing is added until you approve + checkpoint rollback 设计就是回应当前 AI 生成代码 reliable 的社区治理担忧。Unity 这一波上线 follow up 上来。",
+          "recommendation": "Unity Editor 内置 AI 助理：描述行为生成 C# 脚本 / refactor，commit 前可 review + rollback checkpoints",
+          "featured": true
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**蒸汽商人 Landfall 配合好的开发者实现 1日→3日 7倍 涨幅**\nSteamDB 确认：How to Fish 历史سير concurrent players 达 142,261 concurrent players —1日 21K→2日 60K→3日 142K 的近 7倍涨幅、91.09% 好评。5美金的入门价后 + Landfall 发行网络 + 4人物理合作 fishing sim loop 人口 传播主场支撑。\n\n**Pokemon 30 年最大玩法 shift**\nGame Freak 暗示 主线 Pokemon 系列将放弃回合制战斗，更快 action/实时风格；TheGamer 同日确认 Pokemon Champions spin-off 仍保留经典回合制以承接老 fans——一系列 30 年最大 essence shift。\n\n**Xbox 重组 余波**\nEurogamer + RPS 同日：Double Fine 从 Xbox 拆出后获全部 IP 出版发行执照【购买任何我们的游戏直接支持工作室】。继月前 South of Midnight 释出 Compulsion Games 之后 Double Fine 成为上月拆出 Xbox studios 之二 获得成功。\n\n**Tesana + Unity in-editor AI 两类 AI agent for game dev**\nLUCIAN 实测 Tesana—日本产 AI agent for game dev，基于 Godot 引擎，prompt 一句生成 title画面/角色/胜利条件/BGM with realtime 2-4人 multiplayer 支持。Unity 在 Editor 内置 AI 助理 review-before-commit + rollback checkpoints—— follow 上 Unity Cloud Collab Tools 系统继续。\n\n**denfami 一日双 fitted 整理 sim 作品**\n Lotto Dice Hoarder。（2800 骰子） + 6人 coop survival horror.Inferno Protocol。8/29 发售推日几 日日系 indie 'physical collaboration sim' trend 持续 production.\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
