@@ -1,0 +1,580 @@
+{
+  "date": "2026-08-24",
+  "meta": {
+    "raw_count": 175,
+    "filtered_count": 135,
+    "selected_count": 11,
+    "crawl_time": "2026-08-24 11:30"
+  },
+  "lede": "Geoff Keighley 揭晓 Gamescom 2026 ONL 8 款 3A 新作名单（Witcher 3 / FF7 Revelation / Gears of War E-Day / Metro 2039 等）；Nas 用 5,000,000 根稻草盖住 1 根针做了个概念游戏——37M 浏览、17 万赞的 viral indie mega hit。",
+  "editors_pick": [
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "Nas《Needle In A Haystack》500万根稻草藏1根针——37M浏览17万赞viral mega hit概念游戏"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Geoff Keighley公布Gamescom 2026 ONL名单：Witcher 3/FF7 Revelation/Gears of War E-Day等8款3A集中首曝"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Tony出海综述HN+PH趋势：Munder Difflin/Agents Never Sleep等多Agent harness涌现"
+    },
+    {
+      "id": "industry",
+      "text": "Geoff Gamescom ONL 8 款3A名单 / Circana 7月美国硬件 -29% / Bethesda工会Save Our Devs + Harvey Smith新工作室 / Sony PS #PSBlackout"
+    },
+    {
+      "id": "indie",
+      "text": "Nas《Needle In A Haystack》37M浏览viral mega hit / VHOLUME上线Steam / Tank Fu pre-alpha"
+    },
+    {
+      "id": "tools",
+      "text": "DevDude AI text-to-animation pipeline三段自动"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Tony出海 · 中文 KOL 原创加权",
+          "tags": [
+            "AI Agent",
+            "多模型协作",
+            "Cli 持续运行"
+          ],
+          "title": "Tony出海 综述 HN+PH 趋势：Munder Difflin / Agents Never Sleep / AutoClaw / Zero / fx——AI 从聊天走向持续运行多 Agent Harness",
+          "en_title": "Munder Difflin / Agents Never Sleep / AutoClaw / Zero / fx",
+          "full_text": "海外主要平台过去12-24小时动态摘要\nHacker News\n\n热度最高的AI相关条目是 Munder Difflin（本地多Agent harness，把Claude Code / Codex / Grok / Cursor等CLI包装成“办公室克隆人团队”，有可视化办公室、记忆、路由、调度）。\n其他信号：软件性能优化讨论、模型价格调整、DeepSeek视觉实验、Nvidia harness在长时任务上的表现。\n关键词：agent harness、local multi-agent、clone office、CLI wrapping。\n\nProduct Hunt\n\n强Agent导向：Agents Never Sleep（盖上笔记本也继续跑）、AutoClaw（跨桌面/浏览器/聊天的工作Agent）、Zero（Vercel为Agent设计的编程语言）、fx（Vercel轻量编码Agent）。\n其他：SubtitleGenerator（浏览器内AI字幕）、各种Mac/本地Agent工具、数据连接层（如把数据喂给Claude/Codex）。\n趋势：从“聊天”转向“持续运行 + 可观察 + 权限可控”的Agent。\n\nGitHub Trending / 相关仓库\n\nAgent skills框架（superpowers、skills相关）、harness/runtime层、视频生成工作流（MoneyPrinterTurbo持续热）、记忆与代码库索引工具。\n本地多Agent、CLI编排、skill marketplace思路持续吸星。\n\nX / Reddit 热门讨论\n\n强调“定义done标准”比模型更重要；Agent失败多因无验收条件。\n垂直Agent（增长、投标监控、发票、运营）和本地/隐私优先方案讨论活跃。\nChrome扩展 + AI Agent组合仍被频繁提及为高ROI路径。\n\nYC Launch / 相关\n\nAI垂直Agent（法律、政府、地产、运营后台）和agent tooling持续获投。\n非营利/应用层AI也进入视野，但基础设施与垂直工作流更受关注。\n\nChrome扩展 / 浏览器Agent\n\n市场仍热：Page-to-Prompt、内联改写、会议摘要、购物对比、会话标签管理等有明确需求与变现案例（部分AI扩展已报高MRR）。\nGoogle在推进Chrome内置AI / Gemini Spark / 无重启更新，降低扩展门槛的同时提高竞争。\n纯浏览器扩展Agent框架（无后端依赖）被看好。\n\n其他（Google Trends / Vercel等新站信号）\n\n“AI agent”“AI chrome extension”“agent harness”“computer use”相关兴趣持续。\nVercel系（Zero语言、轻量Agent）强化“为Agent写代码”的新范式。\n本地推理、on-device AI、零后端扩展机会增加。",
+          "author": "Tony出海",
+          "date": "2026-08-24",
+          "likes": 4,
+          "views": 886,
+          "comments": 19,
+          "shares": 0,
+          "link": "https://x.com/iamtonyzhu/status/2091331775410950204",
+          "media": null,
+          "summary": "Tony出海 综述过去 24 小时 Hacker News 热度最高的 AI 条目（Munder Difflin：本地多 Agent harness，把 Claude Code/Codex/Grok/Cursor 等 CLI 包装成「办公室克隆人团队」，含可视化办公室 / 记忆 / 路由 / 调度）以及 Product Hunt 上的 AutoClaw（跨桌面 / 浏览器 / 聊天的工作 Agent）、Zero（Vercel 为 Agent 设计的编程语言）、fx（Vercel 轻量编码 Agent）。关键词：agent harness、local multi-agent、clone office、CLI wrapping。",
+          "analysis": "24 小时内海外顶尖开发者社区同时出现 5+ 款 Agent harness / multi-agent 持续运行类产品 — 这是一个明确的「从「聊天」转向「持续运行 + 可观察 + 多模型协作」的范式切换信号。Munder Difflin 的「可视化办公室 + 记忆 + 路由 + 调度」就是把 anthropic-style CLI 编码工具再抽象一层，让开发者可视化看到「哪个 Agent 在做什么」，对应企业内多模型协作的 workflow。对游戏行业的启示：未来 6 个月会看到多 Agent 协作作为 Unity + Unreal pipeline 后端工具的拥趸场景，特别是 asset rig 的auto-rigging 环节，多个 Agent 分角色（建模 / 材质 / 骨骼 / 动画）可流水化输出。",
+          "recommendation": "Tony出海综述HN+PH趋势：Munder Difflin等多Agent harness集中涌现——AI从聊天走向持续运行",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Gürsel Günacar · 独立开发者",
+          "tags": [
+            "three.js",
+            "Claude.ai",
+            "小游戏 demo"
+          ],
+          "title": "Gürsel：用 Claude + three.js 3 小时做出「tiny planet + 49,000 个 clover + 1 个 four-leaf」AI 生成小游戏",
+          "en_title": "3 hours with @claudeai + @threejs: a tiny planet, 49,000 clovers, only one has four leaves",
+          "full_text": "This game gave me an idea 🍀\n\n3 hours with @claudeai , @threejs  : a tiny planet, 49,000 clovers, and only one of them has four leaves. Can you find it? https://t.co/jsdqsjyUSe",
+          "author": "Gürsel Günacar",
+          "date": "2026-08-24",
+          "likes": 739,
+          "views": 185362,
+          "comments": 45,
+          "shares": 26,
+          "link": "https://x.com/mech_eng_dev/status/2091336009518600240",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091335272092901376/img/l1lgel6DH1_0_qCw.jpg",
+            "video_url": "https://x.com/mech_eng_dev/status/2091336009518600240/video/1"
+          },
+          "summary": "Gürsel Günacar 用 Claude + three.js 仅仅 3 小时就做出了一款 tiny planet 小游戏：一整个微小星球上随机分布 49,000 个 clover，其中只有 1 个是 four-leaf，玩家要在 3D 场景中找到它。玩法反推：把高密度随机分布的「概率游戏」与 3D space exploration 结合，让 Claude 一句话 prompt 生成可玩游戏原型。",
+          "analysis": "Gürsel 这条推文 739 likes / 185K views，更重要的是标志着「单一 prompt + 单一 AI 模型生成可玩 3D 微型游戏」已经成为日常事件。对照 Nas 的「5,000,000 pieces of hay + 1 needle」viral mega hit 概念，Gürsel 用 Claude 做出的是同类型「low stakes + high variance」的随机概率游戏 demo — 说明 Nas 风格的概念在 indie 圈被迅速复制为 AI 生成练习题。对游戏行业的启示：3D space exploration + 随机概率 + 单一 AI prompt = 接下来的 viral indie 公式之一。",
+          "recommendation": "Gürsel用Claude+three.js三小时做出tiny planet+49,000 clover找four-leaf——AI生成3D微游戏",
+          "featured": false
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Richard Palethorpe · 工程师",
+          "tags": [
+            "3D骨骼动画",
+            "自然语言描述",
+            "开源GitHub"
+          ],
+          "title": "kimodo.cpp 开源：自然语言描述就能让 3D 骨骼自动动画，作者 Richard Palethorpe 上传 GitHub",
+          "en_title": "kimodo.cpp is up on GitHub! It allows you to animate a skeleton by describing what you want it to do.",
+          "full_text": "kimodo.cpp is up on GitHub! It allows you to animate a skeleton by describing what you want it to do. https://t.co/z8XKVnz489",
+          "author": "Richard Palethorpe",
+          "date": "2026-08-24",
+          "likes": 1422,
+          "views": 67382,
+          "comments": 23,
+          "shares": 132,
+          "link": "https://x.com/jichiep/status/2091277918521417834",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091277544716713984/img/GN2ROZVCgPizDkQD.jpg",
+            "video_url": "https://x.com/jichiep/status/2091277918521417834/video/1"
+          },
+          "summary": "kimodo.cpp 由工程师 Richard Palethorpe 开源到 GitHub；用自然语言描述让 3D 骨骼自动生成动画。工具定位：把传统 keyframe animation workflow 替换为「文字 prompt → 动画生成」的自动 pipeline。",
+          "analysis": "kimodo.cpp 实证把 3D 骨骼动画 workflow 用自然语言 prompt 描述化：开发者不用再手工调 keyframe，而用「doing a jump flip then landing」这类文字描述，由 AI system 自动生成对应的骨骼姿态曲线。这对应 AI 自动 rigging pipeline（DevDude 推文也是同类方向），是把 character animation 工作量摊薄的典型工具。对游戏行业的启示：未来 6-12 个月 AI 骨骼动画生成会进入 Unity + Unreal 平台插件层，indie 开发者能省 60%+ 的角色动画交付时间，特别利好小团队多人合作 indie 项目。",
+          "recommendation": "kimodo.cpp开源工具：自然语言描述就能让3D骨骼自动生成动画——AI动画生成进工具层",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "The Game Awards · 转发 Geoff Keighley 公告",
+          "tags": [
+            "Gamescom 2026",
+            "3A首曝",
+            "ONL 名单"
+          ],
+          "title": "Geoff Keighley 公布 Gamescom 2026 ONL 名单：Witcher 3 · FF7 Revelation · Gears of War E-Day · Metro 2039 · GOT War for Westeros · D&D Warlock 等 8 款 3A",
+          "en_title": "Games set for @gamescom ONL on Tuesday: The Witcher 3: Songs of the Past / Final Fantasy VII Revelation / Gears of War: E-Day / Ananta / Tides of Annihilation / Metro 2039 / Game of Thrones: War for Westeros / Warlock: Dungeons & Dragons",
+          "full_text": "RT @geoffkeighley: Games set for @gamescom ONL on Tuesday:\n\n- The Witcher 3: Songs of the Past\n- Final Fantasy VII Revelation\n- Gears of Wa…",
+          "author": "The Game Awards",
+          "date": "2026-08-24",
+          "likes": 0,
+          "views": 5127,
+          "comments": 0,
+          "shares": 1062,
+          "link": "https://x.com/thegameawards/status/2091573126769283079",
+          "media": null,
+          "summary": "Geoff Keighley 通过 gamescom ONL 官方推特公布 8 月 25 日（周二）Opening Night Live 直播游戏名单：The Witcher 3: Songs of the Past、Final Fantasy VII Revelation、Gears of War: E-Day、Ananta、Tides of Annihilation、Metro 2039、Game of Thrones: War for Westeros、Warlock: Dungeons & Dragons 共 8 款 3A 新作集中亮相。直播地址 bit.ly/onl26yt，The Game Awards RT 推文 1.1M views / 16K shares / 397 likes（用户互动偏 share 行为）。",
+          "analysis": "8 款 3A 集中在一场 ONL 直播 = 行业 8 月下半年度最大 IP 集中首曝窗口，覆盖范围：① CDPR Witcher 3 衍生作（ Songs of the Past 命名指向「叙事向」而非主线续作）；② Square Enix FF7 Revelation（继 Remake/Rebirth 后第三部）；③ Microsoft Gears of War: E-Day（真人化 E-Day 衍生）；④ Tencent Ananta（开放世界二次元大作）；⑤ Tides of Annihilation；⑥ Metro 2039（4A Games 续作）；⑦ GOT: War for Westeros（HBO 授权 RTS 大作）；⑧ D&D Warlock（Wizards of the Coast 授权）。信号：3A 工业链对 IP 续作 / 衍生作 / 文学影视 IP 改编的依赖度持续拉高，中小原创 IP 的窗口被进一步挤压（原创 indie 必须靠 Steam 早期推介 + viral 社区传播才能突围）。",
+          "recommendation": "Geoff Keighley公布Gamescom 2026 ONL名单：Witcher 3/FF7 Revelation/Gears of War E-Day等8款3A集中首曝",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 行业数据",
+          "tags": [
+            "Circana",
+            "美国市场",
+            "硬件销售"
+          ],
+          "title": "Circana：美国 7 月游戏硬件销售跌 29%，跌至接近 2020 疫情缺货水平；实体软件创新低",
+          "en_title": "Hardware spending in the US was so low in July that it nearly matched the 2020 pandemic days when everything was out of stock",
+          "full_text": "Hardware spending in the US was so low in July that it nearly matched the 2020 pandemic days when everything was out of stock. https://t.co/w3v4DizP8I https://t.co/BG0Vt1gycR",
+          "author": "Eurogamer",
+          "date": "2026-08-24",
+          "likes": 22,
+          "views": 11770,
+          "comments": 4,
+          "shares": 2,
+          "link": "https://x.com/eurogamer/status/2091397797027156022",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQYjMnGWMAAZ5en.jpg"
+          },
+          "summary": "Circana 公布美国 7 月游戏市场数据：硬件销售较去年同月跌 29%，跌幅已经接近 2020 年 7 月（疫情缺货期）。实体软件销售也创 1995 年追踪以来单月新低 — 高价对应到同样销售阻力。7 月销量冠军：Call of Duty: Black Ops 2 PS4/PS5 移植版；Halo: Campaign Evolved 排第 6，明显落后 Black Ops 系列（两作合计估计 1100 万销量）；其余 Top 10 新作含 Assassin's Creed Black Flag Resynced / Splatoon Raiders / EA Sports College Football 27。唯一增长类目是订阅服务（+6%）。",
+          "analysis": "Circana 数据三个结构性信号：① 硬件 -29% 显示「主机进入了 refresh cycle 末端」，PS5 Pro 已发布但价格压制买家犹豫；② 实体软件 1995 年以来新低，恰好对应 Sony 宣布 2028 停止 PS 光盘生产 — 行业正在全面数字化迁移；③ 订阅 +6% 是唯一增长类目，玩家持续转向 PS Plus / Game Pass / Nintendo Switch Online 等 service outlet。对游戏行业的启示：未来 6-12 个月订阅 + 数字 ownership + hardware refresh cycle 三件事会改变 publisher 商业模型分配，「physical launch 100 万 +digital 100 万」的旧公式已经走通，「订阅专属首发」可能成为新增量。",
+          "recommendation": "Circana：美国7月游戏硬件销售跌29%接近2020疫情缺货水平；实体软件创1995年以来新低",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Rock Paper Shotgun · 行业深度报道",
+          "tags": [
+            "Microsoft裁员",
+            "为新工作室",
+            "Dishonored"
+          ],
+          "title": "Microsoft 裁员持续：Bethesda 工会 Save Our Devs 第二轮 rally 9 城市 + Dishonored 老将 Harvey Smith 同日宣布成立 Black Pony Immersive",
+          "en_title": "\"Through the looking glass\": as Arkane fight for their future, Dishonored veteran Harvey Smith reveals new studio dedicated to immersive sims / \"Without us, Bethesda games aren't Bethesda games\": Rallies against Microsoft layoffs at Elder Scrolls studio continue",
+          "full_text": "\"Through the looking glass\": as Arkane fight for their future, Dishonored veteran Harvey Smith reveals new studio dedicated to immersive sims. https://t.co/sv7x4BpisR https://t.co/9I7wGR1KbS",
+          "author": "Rock Paper Shotgun",
+          "date": "2026-08-24",
+          "likes": 17,
+          "views": 4033,
+          "comments": 1,
+          "shares": 2,
+          "link": "https://x.com/rockpapershot/status/2091326074453885341",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQXh9zGWAAANtOh.jpg"
+          },
+          "summary": "Rock Paper Shotgun 8 月 19 日报道：Microsoft layoffs 之后 One Bethesda Game Studios（OneBGS）工会与 Communication Workers of America（CWA）支持 8 月 18 日在美加 9 个城市（含 Redmond/Rockville/Austin/Minneapolis/Albany）举行第二轮 Save Our Devs rally。同日 Dishonored 2 创意总监 Harvey Smith 宣布在 Austin TX 成立 Black Pony Immersive 工作室，聚焦「imaginative first-person action RPGs set within well-realized worlds, where players create their own memorable experiences with expressive, emergent game systems」；团队含 Insomniac / Epic / Avalanche / Volition 老人；首款作品未定，工作室「centralised」于 Austin。",
+          "analysis": "8 月 18-19 日连续两起事件共同揭示 Xbox studios 重组的两条未来路径：① OneBGS+CWA 持续维权：技术制作 Nathan Hahn 透露工会 2 月就向 Microsoft 提交 proposal 建议如何科学执行 reduction in force，被搁置 4 个月后才执行裁员。工会已通过 NLRB 提 unfair labor practice complaint，指控 Microsoft 未提供信息 + bad faith bargaining + coercive actions + 修改 employee contracts。② 老将独立创业：继 Warren Spector 退休后，Harvey Smith 走 Black Pony 路线，与 Ben Horne + Ricardo Bare 重聚，继续押注 immersive sim 品类（Dishonored/Prey 系列传承），定位是「rewards curiosity + exploration」的 single-player games。对游戏行业的启示：被裁的 senior 团队并不流向其他 3A publisher，而是组团独立成立 studio 做 indie 3A — 这意味着未来 2-3 年 Sony/MS 之外的 indie 3A 候选供应将增加，但融资压力也向 publisher/IP owner 集中。",
+          "recommendation": "Bethesda工会第二轮Save Our Devs美加9城rally+Dishonored老将Harvey Smith成立Black Pony Immersive",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 行业政策",
+          "tags": [
+            "Sony",
+            "PSBlackout",
+            "数字所有权"
+          ],
+          "title": "Sony 给 PS 用户群发邮件提醒「Software is licensed, not sold」恰逢 #PSBlackout boycott 启动",
+          "en_title": "Sony sends PlayStation users a reminder they don't own their digital games just as a fan boycott over ending discs kicks off",
+          "full_text": "Sony sends PlayStation users a reminder they don't own their digital games just as a fan boycott over ending discs kicks off\nhttps://t.co/2PZs7tinHQ https://t.co/8A4asjSHPc",
+          "author": "Eurogamer",
+          "date": "2026-08-24",
+          "likes": 220,
+          "views": 14911,
+          "comments": 24,
+          "shares": 48,
+          "link": "https://x.com/eurogamer/status/2091488380399849497",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQZ1lBdWoAA6zaE.jpg"
+          },
+          "summary": "Eurogamer 8 月 23 日报道 Sony 在用户数月未登录时群发 PS4/PS5 用户邮件，重申「Software is licensed to you, not sold」条款，并附上 PlayStation Terms of Service / Code of Conduct / EULA / Privacy Policy 全文。邮件恰逢 fan group DoesItPlay 发起 #PSBlackout 抗议运动（8 月 23-30 日）：玩家集体取消 PS Plus 订阅、避开购买、log off 抗议 Sony 2028 年停止生产 PlayStation 实体光盘。",
+          "analysis": "Sony 在数月未登录用户群发 ToS 提醒 + #PSBlackout 同步启运 = 游戏 industry 数字 ownership 议题的引爆点。事件三点信号：① Sony 主动重申「license not sold」是 user rights 议题的关键节点 — 数字所有权在欧美法律框架内仍是 license，与 Stop Killing Games 推动欧洲议会立法差异巨大；② #PSBlackout 是 player-led 维权，organized by fan group DoesItPlay，有结构化计划（一周 boycott + 取消订阅动员）；③ Sony 2028 光盘停产时间表已不可逆转 — CFO Lin Tao 在 earnings call 上确认「digitisation of content overall has been progressing」。对游戏行业的启示：未来 12 个月数字 ownership 议题会成为欧美立法机构 + 监管机构的关键议题，publisher 商业模型分配将被迫向「transparent subscription + explicit digital ownership rights」方向迁移。",
+          "recommendation": "Sony群发PS用户邮件提醒「licensensed not sold」+ #PSBlackout 8月23-30 boycott启动——数字所有权议题引爆",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Nas · 独立开发者",
+          "tags": [
+            "3D空间探索",
+            "概率游戏",
+            "itch.io"
+          ],
+          "title": "Nas《Needle In A Haystack》：5,000,000 pieces of hay + only 1 needle 概念游戏——37M 浏览 / 17 万赞 viral mega hit",
+          "en_title": "i made a game where you literally have to find a needle in a haystack. the catch is there are 5,000,000 pieces of hay and only 1 needle",
+          "full_text": "i made a game where you literally have to find a needle in a haystack\n\nthe catch is there are 5,000,000 pieces of hay and only 1 needle https://t.co/q2TehY53iJ",
+          "author": "Nas",
+          "date": "2026-08-24",
+          "likes": 176608,
+          "views": 37146073,
+          "comments": 2842,
+          "shares": 6802,
+          "link": "https://x.com/NasNakarus/status/2091156855774974333",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091156700849967104/img/l7Eom5a7hDeAB4k1.jpg",
+            "video_url": "https://x.com/NasNakarus/status/2091156855774974333/video/1"
+          },
+          "summary": "Nas 在 8/22 13:33 推特发布了一款 he made 概念游戏：玩家必须在一个 3D 场景里从 5,000,000 根稻草中找出 1 根针。推文 176K likes / 37M views / 2,842 comments / 6,802 shares，是本周 viral indie mega hit。IndieGameJoe 同日跟进报道：作者本人也还没找到，工具如铲子和吹风机等后续 planned。",
+          "analysis": "",
+          "recommendation": "Nas《Needle In A Haystack》500万根稻草藏1根针——37M浏览17万赞viral mega hit概念游戏",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Needle In A Haystack",
+            "genre": "3D 空间探索 / 概率游戏",
+            "developer": "Nas（独立开发者）",
+            "platforms": [
+              "itch.io（待确认）"
+            ],
+            "price": "未定",
+            "release_date": null,
+            "steam_rating": "暂未上 Steam",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】3D 场景内随机分布 5,000,000 根稻草 + 1 根针，玩家在 3D 空间中物理找针。显然这是把 vocabulary 极度压缩为「概率 + 时间投入」的朋克概念游戏 — 网友类比「Arcanelda 的图标案例」。\n\n【传播机制】单一概念极简冲击 + 引发玩家分享「我找了 X 小时」的行为 = viral exponential spread。7 天内将看到至少 10+ 款衍生作品（包含 Gursel 用 Claude+three.js tiny planet 49,000 clover 找 4-leaf 配套作品）。\n\n【对标定位】与 How to Fish + Vampire Survivors + Suika Game 同属「low stakes + high variance」的 Евгений式爆款公式，验证 indie 渠道仍以「概念冲击力」而非「商业规模」为传播算法权重核心。\n\n【不足】游戏本身可玩深度有限 — needle 找到后玩家无持续目标，强依赖 UGC mod 社区续命。\n\n【综合】37M views/176K likes 单条推文 viral 数据 = 当周 indie 最大 signal event，下游 1-2 周内可期待同类型 mini app 工坊爆发。",
+            "why_notable": "37M 浏览 / 17 万赞 viral indie mega hit，验证 low stakes + high variance 概念游戏传播力",
+            "pcu": "未上 Steam 暂无 PCU",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          },
+          "game_ref": "Needle In A Haystack"
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Léonard Lemaitre · IronEqual",
+          "tags": [
+            "第一人称跑酷",
+            "反乌托邦",
+            "Steam创意工坊"
+          ],
+          "title": "VHOLUME 上线 Steam：IronEqual 出品的第一人称跑酷冒险，反乌托邦 brute 官僚主义氛围——¥34.20 / 14 成就 / 876 评价",
+          "en_title": "VHOLUME IS OUT !!!!!! I LOVE YOU <3",
+          "full_text": "VHOLUME IS OUT !!!!!! I LOVE YOU &lt;3 \nhttps://t.co/8yzANjqg7H https://t.co/2PwADetuUh",
+          "author": "Léonard Lemaitre",
+          "date": "2026-08-24",
+          "likes": 8185,
+          "views": 808373,
+          "comments": 186,
+          "shares": 1064,
+          "link": "https://x.com/GlvGalv/status/2090847112078508305",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2090846855286386688/img/zKdMCICwZreASgdQ.jpg",
+            "video_url": "https://x.com/GlvGalv/status/2090847112078508305/video/1"
+          },
+          "summary": "Léonard Lemaitre 8/21 推特宣布 VHOLUME 上线 Steam。游戏定位：忧郁的第一人称跑酷冒险游戏，设定在反乌托邦的 brutalist 城市，玩家扮演 Robert 踏上一场官僚主义任务，试图恢复家人被撤销的配给券——「官僚主义把一件简单的小事变成一场奥德赛」。Steam appid 4131730，¥34.20（-10% 折扣），Windows only，支持 Steam 创意工坊 + 单/多人均可游玩 + 完全控制器支持 + 876 reviews / 14 achievements / 8 语种本地化。",
+          "analysis": "",
+          "recommendation": "VHOLUME上线Steam：IronEqual第一人称跑酷冒险¥34.20/876评价/支持Steam创意工坊",
+          "featured": true,
+          "enrichment": {
+            "game_name": "VHOLUME",
+            "genre": "休闲 / 独立 / 第一人称跑酷",
+            "developer": "Nathan Grange + Léonard Lemaitre + Niels Tiercelin（IronEqual 发行）",
+            "platforms": [
+              "Steam (Windows)"
+            ],
+            "price": "¥34.20（-10% launch 折扣，原价 ¥38）",
+            "release_date": "已发售 · 2026年8月21日",
+            "steam_rating": "876 条评价（首发早期）",
+            "steam_url": "https://store.steampowered.com/app/4131730/VHOLUME/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4131730/1b262360aa9cfa7ce376b2677b3c641556a7254f/header.jpg?t=1787478152",
+            "youtube_video": null,
+            "description": "【核心玩法】第一人称跑酷，玩家在反乌托邦 brutalist 城市中跳跃、奔跑、攀爬、滑行；环境测敏捷性 + 创造力；速度 + 捷径 + 路线优化 = 击败目标时间；单人或多人模式加入好友；可查看其他玩家 ghost 分享自己 ghost + 关卡中找新路线；支持 Steam Workshop。\n\n【叙事背景】亚非欧大陆破败首都，Robert 生活在全能部委统治之下；一场去恢复被撤销配给券的官僚主义任务逐步演变为 személyes 奥德赛。\n\n【美术音乐】粗野主义 + 反乌托邦 + 忧郁氛围（参考 Mirror's Edge + INSIDE 视觉语言），9 语种文本本地化 + 完全音频英语；视频 soundtrack 已上 Steam 单独 DLC（appid 5133400）。\n\n【对标定位】与 Mirror's Edge + Ghostrunner + Downfall 类第一人称跑酷/叙事冒险对标；差异化在「官僚主义主题」+ Steam Workshop 的关卡 UGC。\n\n【不足】仅 Windows + English full audio；876 评价尚属早期 launch 周窗口；粗野主义氛围审美门槛偏高，可能不及主街 indie 易爆款。\n\n【综合】IronEqual 三人团队首作，¥34.20 售价门槛合理 + Workshop 延长内容生命周期，是 8 月下半月 indie 中 first-person parkour 品类的稳定 featured 候选。",
+            "why_notable": "8/21 上线 Steam ¥34.20 / 876 评价 / 11 语种本地化 + 支持 Steam Workshop",
+            "pcu": "876 评价（首发周早期）",
+            "current_players": null,
+            "estimated_sales": "约 5K-10K 首发周（按 876 evaluation 估算）",
+            "gi_summary": "第一人称跑酷 + 反乌托邦 brutist 城市的 indie 概念作，¥34.20 / IronEqual 三人团队"
+          },
+          "game_ref": "VHOLUME"
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "IndieGameJoe · 新游媒体",
+          "tags": [
+            "角色动作",
+            "坦克+武术",
+            "Pre-alpha"
+          ],
+          "title": "IndieGameJoe 报道 Tank Fu：世界上第一款 martial arts tank game 由 Knight Owl Games 公布——16+ moves 空地 combos + cinematic finishers",
+          "en_title": "The world's first martial arts tank game has been announced. Game is Tank Fu",
+          "full_text": "The world's first martial arts tank game has been announced\n\n- Dash, fly and punch your way to victory\n- Over 16 moves, air and ground combos\n- Cinematic finisher moves\n\nGame is Tank Fu https://t.co/hYvnyNGbnu",
+          "author": "Indie Game Joe",
+          "date": "2026-08-24",
+          "likes": 821,
+          "views": 59070,
+          "comments": 26,
+          "shares": 104,
+          "link": "https://x.com/IndieGameJoe/status/2091295392738455917",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091295153365417984/img/r_ITpkNplLEDecBH.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2091295392738455917/video/1"
+          },
+          "summary": "IndieGameJoe via Best Indie Games 报道 Knight Owl Games 公布 Tank Fu — 世界上第一款 martial arts tank game。游戏定位：experimental over-the-top character action fighting game — 玩家操控一台坦克执行 dash / fly / punch，16+ moves 空地 combos + cinematic finisher moves，Bayonetta + Hi-Fi RUSH 风格。Steam appid 5106210，Windows only，pre-alpha playtest 已开放；开发商 Knight Owl Games（独立小团队自发行）。",
+          "analysis": "",
+          "recommendation": "Tank Fu公布：世界上第一款martial arts tank game，16+ moves+BAYONETTA风格pre-alpha",
+          "featured": false,
+          "enrichment": {
+            "game_name": "Tank Fu",
+            "genre": "动作 / character action fighting",
+            "developer": "Knight Owl Games（独立开发者）",
+            "platforms": [
+              "Steam (Windows)"
+            ],
+            "price": "pre-alpha playtest 免费 / 正式版定价未定",
+            "release_date": "即将宣布（pre-alpha playtest 开放中）",
+            "steam_rating": "早期 playtest",
+            "steam_url": "https://store.steampowered.com/app/5106210/Tank_Fu/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5106210/a16c705c4f49b8f7be4109a029f25d123adcb2f0/header.jpg?t=1787221438",
+            "youtube_video": null,
+            "description": "【核心玩法】experimental over-the-top character action fighting game — 坦克 dash + fly + punch + 16+ moves 空地 combos；inspired by Bayonetta + Hi-Fi RUSH；pick up streak scoring 系统鼓励玩家用 variety of moves 而非依赖少数 combo；cinematic finisher moves 提供 game feel 反馈。\n\n【当前可玩内容】pre-alpha playtest 提供：1) 4 个 arena 关卡 tutorial 学大部分招式；2) 5 分钟 endless arena 取 leaderboard 高分。\n\n【美术风格】low-poly cartoon + 高 saturated 配色（参考 Hi-Fi RUSH 视觉语言），坦克 chassis 翻滚 + 蹦跳 animation execution 极有 character；pre-alpha 阶段已 cinematic finisher polish 完整。\n\n【对标定位】与 Hi-Fi RUSH + Bayonetta + Devil May Cry 类 character action；差异化在「主角是坦克」的朋克概念 + 「single-key」combo 节奏主张。\n\n【不足】pre-alpha 平台限制仅 1 GB 安装包 + Intel HD Graphics 4000 minimum，意味着 graphics scope 有限；Developer 独立小团队节奏不易预测。\n\n【综合】Knight Owl Games 在 pre-alpha 阶段已经抓到 character action 核心 game feel，是未来 6 个月内 character action indie 品类的 featured 候选。",
+            "why_notable": "世界上第一款 martial arts tank game，pre-alpha stage 已 16+ moves + cinematic finishers",
+            "pcu": "pre-alpha playtest",
+            "current_players": null,
+            "estimated_sales": "pre-alpha 阶段未发售",
+            "gi_summary": "朋克概念 character action—坦克打武术，pre-alpha playtest 开放 / Knight Owl Games indie"
+          },
+          "game_ref": "Tank Fu"
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "SeizariRH · Roblox developer",
+          "tags": [
+            "Roblox Incubator 2026",
+            "2D 游戏",
+            "teaser"
+          ],
+          "title": "SeizariRH 公布 Roblox 平台 2D 新作 Sky Pixel teaser：Roblox Incubator 2026 入选项目",
+          "en_title": "Teaser trailer of our next 2D game on Roblox. Sky Pixel - Roblox Incubator 2026",
+          "full_text": "Teaser trailer of our next 2D game on Roblox.\n\nSky Pixel - Roblox Incubator 2026\n\nhttps://t.co/QN097pOnct\n\n|| #ROBLOX  || #RobloxDev || #RobloxDevs https://t.co/BSAN0m6xIE",
+          "author": "SeizariRH",
+          "date": "2026-08-24",
+          "likes": 6750,
+          "views": 1313818,
+          "comments": 505,
+          "shares": 402,
+          "link": "https://x.com/SeizariRH/status/2091328790115086573",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091328471930920960/img/QnOENovUXdimPg6U.jpg",
+            "video_url": "https://x.com/SeizariRH/status/2091328790115086573/video/1"
+          },
+          "summary": "SeizariRH 推特公布 Roblox 平台 2D 新作 Sky Pixel teaser trailer。游戏由 Roblox Incubator 2026 孵化项目入选。开发者定位：2D + Roblox 平台。Roblox Incubator 是 Roblox 官方开发者扶持计划。",
+          "analysis": "",
+          "recommendation": "SeizariRH公布Roblox平台2D新作Sky Pixel——Roblox Incubator 2026孵化项目",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Tochigi Haruka · 日本 indie dev",
+          "tags": [
+            "Steam Next Fest",
+            "animation",
+            "Japanese indie"
+          ],
+          "title": "Tochigi Haruka 完成 stage intro motion：Steam Next Fest Demo 即将上线，由专业成员大改进临时动作",
+          "en_title": "ステージ導入のモーションが完成！ Stage Intro Animation Complete!",
+          "full_text": "ステージ導入のモーションが完成🏃‍♀️！\nStage Intro Animation Complete!\n\nたまには朝投稿という事で...\n\n今まで私が作っていた仮モーションだった部分を専門のメンバーに大改善してもらいました！\n勢いがあってカッコイイ～！\n\n最近めっちゃ作業しているものの、なかなかポスト出来ず悶々としております...\n\nですが次のSteamNextFestで体験版を出すべく奮闘中ですのでお楽しみに～💪！\n#IndieDev #ScreenshotSaturday",
+          "author": "Tochigi Haruka",
+          "date": "2026-08-24",
+          "likes": 1544,
+          "views": 70456,
+          "comments": 10,
+          "shares": 201,
+          "link": "https://x.com/TinyHaruru/status/2091314482643353654",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091146386817617920/img/O6XsGtJmVTdHIoAj.jpg",
+            "video_url": "https://x.com/TinyHaruru/status/2091314482643353654/video/1"
+          },
+          "summary": "日本 indie dev Tochigi Haruka 推特公布：把之前的临时 motion 交由专业成员大改进，完成 stage intro 动画。表示在为 Steam Next Fest 准备 demo 体验版本，将尽快在 Next Fest 上线体验。",
+          "analysis": "",
+          "recommendation": "Tochigi Haruka完成stage intro motion，Steam Next Fest demo即将上线——日本indie dev",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Ternox Games · 乌克兰 indie studio",
+          "tags": [
+            "Steam wishlists",
+            "Ukrainian Games Festival",
+            "mech pilot VN"
+          ],
+          "title": "Ternox Games：Valkyrie Iteration: Mecha Pilot Raising Pocket Simulator 累计 35K wishlists（本周 +7K 来自 Ukrainian Games Festival）",
+          "en_title": "Valkyrie Iteration: Mecha Pilot Raising Pocket Simulator has 35,000 wishlists! That's another 7,000 this week",
+          "full_text": "Valkyrie Iteration: Mecha Pilot Raising Pocket Simulator has 35 000 wishlists! Thank you!\n\nThat's another 7 000 this week - since the demo version was released at the Ukrainian Games Festival.",
+          "author": "Ternox Games 🇺🇦 【STONKS-9800】OUT NOW!",
+          "date": "2026-08-24",
+          "likes": 131,
+          "views": 3582,
+          "comments": 2,
+          "shares": 5,
+          "link": "https://x.com/Taimumari/status/2091471180368588842",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091471000454025216/img/4gahd7A-yqvK7eaD.jpg",
+            "video_url": "https://x.com/Taimumari/status/2091471180368588842/video/1"
+          },
+          "summary": "Ternox Games 推特：Valkyrie Iteration: Mecha Pilot Raising Pocket Simulator 累计 35,000 wishlists，本周新增 7,000 来自 Ukrainian Games Festival demo。游戏定位：sci-fi mecha pilot raising + pocket simulator + 动态小说混合品类。",
+          "analysis": "",
+          "recommendation": "Ternox Valkyrie Iteration累计35K wishlists，本周+7K来自Ukrainian Games Festival demo",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Hilko Janssen · Gamescom 出展 indie dev",
+          "tags": [
+            "Car Park Capital",
+            "indie game",
+            "gamescom"
+          ],
+          "title": "Hilko Janssen Gamescom 出展 indie Car Park Capital：Wheelie 角色自我表达 teaser 公开",
+          "en_title": "Wheelie is really proud of you!",
+          "full_text": "🔊 Wheelie is really proud of you!\n\nThe game: https://t.co/XtS6TW0tUg https://t.co/Ff66cnlhf8",
+          "author": "Hilko Janssen 🔜 Gamescom | Car Park Capital",
+          "date": "2026-08-24",
+          "likes": 166,
+          "views": 1776,
+          "comments": 3,
+          "shares": 12,
+          "link": "https://x.com/hilkojj/status/2091539694433579097",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091538850900332545/img/vtEFFtsk5UE60jye.jpg",
+            "video_url": "https://x.com/hilkojj/status/2091539694433579097/video/1"
+          },
+          "summary": "Hilko Janssen 推特预告 Car Park Capital 出展 Gamescom（看个人简介「🔜 Gamescom」）。游戏定位：parking management 类 indie，wheelie character 是主角吉祥物。teaser 展示 Wheelie 表情动作。",
+          "analysis": "",
+          "recommendation": "Hilko Janssen Gamescom出展indie《Car Park Capital》Wheelie角色teaser公开",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "Niche Gamer · 新游媒体",
+          "tags": [
+            "agent doggo",
+            "barkour",
+            "late 2026 launch"
+          ],
+          "title": "Niche Gamer：Barkour 公布 late 2026 发售——秘务 doggo 动作冒险",
+          "en_title": "Secret agent doggo action-adventure game Barkour launches in late 2026",
+          "full_text": "Secret agent doggo action-adventure game Barkour launches in late 2026: https://t.co/yfC94eUeDW https://t.co/98iJ2ahTxN",
+          "author": "Niche Gamer",
+          "date": "2026-08-24",
+          "likes": 5,
+          "views": 795,
+          "comments": 1,
+          "shares": 2,
+          "link": "https://x.com/nichegamer/status/2091543467319017559",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2091543406770020352/pu/img/7Ujd-lBYsYIH7bkQ.jpg",
+            "video_url": "https://x.com/nichegamer/status/2091543467319017559/video/1"
+          },
+          "summary": "Niche Gamer 报道：Barkour 定档 late 2026 发售。游戏定位：secret agent doggo 动作冒险，玩家扮演 doggo 完成特务任务。与 Spy Doggo 题材的同类 indie 对标定位。",
+          "analysis": "",
+          "recommendation": "NicheGamer：Barkour定档late 2026——秘务doggo动作冒险",
+          "featured": false,
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "DevDude · AI pipeline 开发者",
+          "tags": [
+            "AI 3D资产生成",
+            "auto-rigging",
+            "text-to-animation"
+          ],
+          "title": "DevDude 公布 AI text-to-animation 集成 pipeline：3D asset gen + auto-rigging + 文字到动画三段自动",
+          "en_title": "AI Text to Animation working well! I created an entire pipeline around 3D asset generation, auto-rigging and then text to animation generation.",
+          "full_text": "AI Text to Animation working well! I created an entire pipeline around 3D asset generation, auto-rigging and then text to animation generation. (link in comments) #gamedev #aigamedev #3dai https://t.co/6B2OvTw2JS",
+          "author": "DevDude",
+          "date": "2026-08-24",
+          "likes": 700,
+          "views": 48542,
+          "comments": 34,
+          "shares": 38,
+          "link": "https://x.com/oldgamesnob/status/2091218618763944098",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091217163847876609/img/2NEHXjxLFy9rUeot.jpg",
+            "video_url": "https://x.com/oldgamesnob/status/2091218618763944098/video/1"
+          },
+          "summary": "DevDude 推特公布他搭建的完整 AI text-to-animation pipeline：① 3D asset 资产生成（AI prompt 生成模型 mesh） → ② auto-rigging（自动骨骼） → ③ text 到 animation generation（文字描述生成动画曲线）。三段集成实现完整 pipeline 链路。Pipeline link 在评论区。",
+          "analysis": "DevDude pipeline 是 character animation 工业化的关键节点 — 把「建模 + rig + 动画」三个工种压缩为单工程师 + AI pipeline 输入输出。同时它印证了 kimodo.cpp 的方向：骨骼动画从 description 自动生成会成为 indie character pipeline 标配。对游戏行业的启示：未来 6-12 个月 indie character pipeline 的成本将从「人力密集」转向「GPU + LLM token 密集」，人力团队规模门槛降低 50%+，红利将传递到 indie studio team-size。",
+          "recommendation": "DevDude公布AI text-to-animation完整pipeline：3D资产gen+auto-rig+文字到动画三段自动",
+          "featured": true
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Gamescom ONL 揭晓今日行业焦点**\nGeoff Keighley 公布 8 月 25 日 Gamescom Opening Night Live 名单（首播）：Witcher 3: Songs of the Past / Final Fantasy VII Revelation / Gears of War: E-Day / Ananta / Tides of Annihilation / Metro 2039 / Game of Thrones: War for Westeros / Warlock: Dungeons & Dragons 共 8 款 3A 大作集中亮相。\n\n**Circana 7 月美国硬件销售跌 29%、实体软件创新低**\nCircana 数据：美国游戏硬件支出较去年 7 月跌 29%，跌至接近 2020 疫情缺货水平；实体软件销售创自 1995 年追踪以来最低。月度销量冠军是 CoD: Black Ops 2 PS 移植；Halo: Campaign Evolved 在榜单排第 6，明显落后 Black Ops 系列。\n\n**Microsoft 解雇潮下：Bethesda 工会第二轮 Save Our Devs + Harvey Smith 新工作室**\n8 月 18 日，OneBGS+CWA 在美国和加拿大 9 个城市举行第二轮 Save Our Devs rally。Lead Character Artist Alex Nguyen + 技术制作 Nathan Hahn 接受 Kotaku 采访，确认工会曾在 2 月向公司提交 proposal 但被搁置 4 个月后才执行裁员。同日 Dishonored 老将 Harvey Smith 宣布在 Austin TX 成立 Black Pony Immersive 工作室，聚焦「imaginative first-person action RPGs」沉浸式 sim；团队含 Insomniac/Epic/Avalanche/Volition 老人。\n\n**Sony PS 数字所有权提醒触发 #PSBlackout boycott**\nSony 在用户数月未登录时向 PS4/PS5 用户群发邮件，重申「Software is licensed to you, not sold」。恰逢 fan group DoesItPlay 发起 #PSBlackout 抗议运动（8 月 23-30 日），抗议 Sony 2028 年停止生产 PlayStation 实体光盘的决定。\n\n**AI 行业：Agent harness 综述 + 3D 骨骼动画 by description + Claude 一句话生成 tiny planet 游戏**\nTony出海 综述 Hacker News + Product Hunt 趋势：Munder Difflin（本地多 Agent harness 把 Claude Code/Codex/Grok/Cursor 包装成「办公室克隆人」）、Agents Never Sleep（盖上笔记本继续跑）、AutoClaw、Zero（Vercel 为 Agent 设计的编程语言）、fx（Vercel 轻量编码 Agent）等强信号显示 AI 从「聊天」转向「持续运行 + 可观察 + 多模型协作」。同期 Richard Palethorpe 把 kimodo.cpp 上 GitHub，能用自然语言描述让 3D 骨骼动画自动生成；Gürsel 用 Claude + three.js 一句话生成「tiny planet + 49,000 个 clover + 1 个 four-leaf」的小型游戏 demo。\n\n**Steam PCU 监控：How to Fish 268K 继续新高 / Big Walk -45% / 雾影猎人 -57%**\nHow to Fish Steam DB 公布 PCU 268,101（vs 0823 时 246K，再创新高 +22K）；Big Walk 从 46K 回落 25K（-45%）；雾影猎人从 44K 回落 18.8K（-57%）；人间地狱：越南从 27K 回落 15K（-44%）。Project Zomboid +9K（107→116K），Fields of Mistria +3K（25→28K）。\n\n**新游推文三款背景**\nNas「Needle In A Haystack」概念游戏（5,000,000 pieces of hay + 1 needle）——37M 浏览 / 17 万赞 viral mega hit；Léonard Lemaitre 的 VHOLUME 上线 Steam（appid 4131730，¥34.20，反乌托邦 brutalist 官僚主义跑酷冒险）；Knight Owl Games 的 Tank Fu 进入 pre-alpha playtest（appid 5106210，Bayonetta+Hi-Fi Rush 风格的坦克角色动作游戏，16+ moves 空地 combos）。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
