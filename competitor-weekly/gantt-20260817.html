@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>手游本周活动甘特图 · v5.1分类 · 2026.08.17-08.23</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; margin: 0; background: #eef1f5; color: #1f2937; }
+  /* 嵌入主站时不显示图例行（图例并入主站小节说明文字） */
+  body.embed header { display: none; }
+  header { background: transparent; color: #6b7a6f; padding: 6px 24px; }
+  header h1 { margin: 0; font-size: 20px; font-weight: 600; }
+  header .sub { margin-top: 4px; font-size: 13px; opacity: .92; }
+  header .lg { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -1px; margin-right: 4px; }
+  header .lg-wk { background: #fdeeda; border: 1px solid #f59e0b; }
+  header .lg-td { background: #ef4444; width: 3px; }
+  .toolbar { background: #fff; padding: 10px 24px; border-bottom: 1px solid #d9dee5; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  #gameChips, #mjChips { display: inline-flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .toolbar .lbl { font-size: 13px; color: #6b7280; font-weight: 600; margin-right: 2px; }
+  .chip { padding: 4px 12px; border-radius: 13px; background: #f3f4f6; font-size: 13px; cursor: pointer; user-select: none; border: 1px solid #e5e7eb; white-space: nowrap; }
+  .chip:hover { background: #e5e7eb; }
+  .chip.on { background: #F0F7EF; color: #2E5A37; border-color: #D6E6D2; font-weight: 600; }
+  .chip.mj-on { color: #fff; }
+  .btn { background: #1F5A44; color: #fff; border: none; padding: 5px 12px; border-radius: 5px; font-size: 13px; cursor: pointer; }
+  .btn.ghost { background: #fff; color: #1F5A44; border: 1px solid #1F5A44; }
+  .spacer { flex: 1; }
+
+  .layout { display: flex; align-items: stretch; }
+  .gantt-wrap { flex: 1; overflow: visible; background: #fff; position: relative; }
+  .gantt-inner { position: relative; }
+
+  /* date header */
+  .dhead { position: sticky; top: 0; z-index: 30; background: #fff; }
+  .dhead-row { display: flex; }
+  .dhead-row.months .mcell { font-size: 13px; font-weight: 600; color: #1F5A44; border-left: 1px solid #d3ded7; border-bottom: 1px solid #d3ded7; text-align: center; padding: 4px 0; background: #E8F0EB; }
+  .dhead-row.days .dcell { font-size: 11px; color: #6b7280; border-left: 1px solid #eceff3; border-bottom: 2px solid #9aa5b1; text-align: center; padding: 3px 0; background: #F4F6F5; }
+  .dcell.wk { background: #fdeeda; color: #b45309; font-weight: 700; }
+  .dcell.wkend { color: #c2410c; }
+  .corner { position: sticky; left: 0; z-index: 35; background: #F0F7EF; color: #2E5A37; font-weight: 600; font-size: 13px; display: flex; align-items: center; justify-content: center; border-right: 2px solid #D6E6D2; }
+
+  /* group / band rows */
+  .group { display: flex; border-bottom: 3px solid #8b96a5; }
+  .major-label { position: sticky; left: 0; z-index: 20; flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+                 writing-mode: vertical-rl; letter-spacing: 6px; font-size: 14px; font-weight: 700; color: #fff; border-right: 1px solid rgba(0,0,0,.25); }
+  .bands { flex: 1; min-width: 0; }
+  .band { display: flex; border-bottom: 1px solid #d6dce4; }
+  .band:last-child { border-bottom: none; }
+  .cat-label { position: sticky; z-index: 15; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center;
+               padding: 0 8px; font-size: 13px; background: #f4f6f9; border-right: 2px solid #9aa5b1; border-left: 1px solid #d6dce4; }
+  .cat-label .nm { color: #374151; font-size: 13px; font-weight: 600; }
+  .track { position: relative; flex-shrink: 0; background-image:
+      linear-gradient(to right, #eef1f5 1px, transparent 1px); }
+
+  .bar { position: absolute; height: 26px; border-radius: 4px; border: 1px solid; font-size: 13px; line-height: 24px;
+         padding: 0 7px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; z-index: 2; }
+  .bar:hover { filter: brightness(.93); box-shadow: 0 1px 4px rgba(0,0,0,.35); z-index: 5; }
+  .bar.sel { outline: 2px solid #1f2937; z-index: 6; }
+  .bar.open { border-right-style: dashed; }
+  .bar .clb { display: inline-block; background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; border-radius: 3px;
+              padding: 0 6px; margin-right: 6px; font-size: 11px; font-weight: 800; line-height: 18px; vertical-align: 1px;
+              box-shadow: 0 1px 3px rgba(217,119,6,.55); letter-spacing: .5px; }
+
+  .mj-商业化 .major-label { background: #A46312; }
+  .mj-玩法内容 .major-label { background: #2D6B91; }
+  .mj-运营活动 .major-label { background: #AE4C4C; }
+  .mj-待核对 .major-label { background: #7f7f7f; }
+
+  .bar.mj-商业化 { background: #F4E7D2; border-color: #A46312; color: #A46312; }
+  .bar.mj-玩法内容 { background: #DDEBF3; border-color: #2D6B91; color: #2D6B91; }
+  .bar.mj-运营活动 { background: #F2DEDE; border-color: #AE4C4C; color: #AE4C4C; }
+  .bar.mj-待核对 { background: #e2e2e2; border-color: #7f7f7f; color: #404040; }
+  .bar.uncode { border-style: dashed; border-width: 2px; }
+
+  .weekmark { position: absolute; top: 0; bottom: 0; background: rgba(255, 193, 7, .10); border-left: 2px solid #f59e0b; border-right: 2px solid #f59e0b; z-index: 0; pointer-events: none; }
+  .weektag { position: absolute; top: 2px; font-size: 11px; color: #b45309; font-weight: 700; background: #fef3c7; border: 1px solid #f59e0b; border-radius: 3px; padding: 0 5px; z-index: 2; pointer-events: none; }
+  .today { position: absolute; top: 0; bottom: 0; width: 0; border-left: 2px solid #ef4444; z-index: 8; pointer-events: none; }
+  .today span { position: absolute; top: 2px; left: -15px; background: #ef4444; color: #fff; font-size: 11px; padding: 0 5px; border-radius: 3px; }
+
+  body { position: relative; }
+  .modal-mask { position: absolute; inset: 0; background: rgba(15,23,42,.28); z-index: 100; display: none; }
+  .modal-mask.show { display: block; }
+  .modal { position: absolute; }
+  .modal { width: 580px; max-width: 92vw; max-height: 82vh; overflow-y: auto; background: #fff; border-radius: 10px;
+           box-shadow: 0 12px 40px rgba(0,0,0,.3); padding: 20px 22px; position: relative; font-size: 14px; line-height: 1.65; }
+  .modal .x { position: absolute; top: 10px; right: 12px; width: 26px; height: 26px; border: none; border-radius: 50%;
+              background: #f3f4f6; color: #6b7280; font-size: 15px; cursor: pointer; line-height: 1; }
+  .modal .x:hover { background: #e5e7eb; }
+  .modal h2 { font-size: 16px; margin: 0 26px 10px 0; }
+  .modal .meta { font-size: 13px; color: #6b7280; margin-bottom: 4px; }
+  .modal .tag { display: inline-block; padding: 1px 8px; border-radius: 3px; font-size: 12px; font-weight: 600; margin-right: 6px; }
+  .modal .sec { font-size: 13px; font-weight: 700; color: #6b7280; margin: 12px 0 4px; border-top: 1px solid #f0f2f5; padding-top: 10px; }
+  .modal .ct { white-space: pre-wrap; color: #374151; font-size: 13px; }
+  .modal .collab { background: #fff7ed; border: 1px solid #f59e0b; border-radius: 5px; padding: 6px 9px; font-size: 13px; color: #92400e; font-weight: 600; }
+
+  /* 手机端适配：标签列变窄（JS同步）、字号缩小、图板允许横向滑动（分类/大类列sticky保持可见） */
+  @media (max-width: 680px) {
+    header { padding: 8px 12px; }
+    header .sub { font-size: 11px; margin-top: 0; }
+    .toolbar { padding: 10px 12px; gap: 9px 10px; }
+    .toolbar .lbl { font-size: 12px; }
+    .chip { padding: 5px 11px; font-size: 12px; }
+    .btn { padding: 4px 9px; font-size: 12px; }
+    .gantt-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .major-label { letter-spacing: 2px; font-size: 11px; }
+    .cat-label { font-size: 11px; padding: 0 3px; align-items: center; text-align: center; }
+    .cat-label .nm { font-size: 11px; line-height: 1.3; }
+    .bar { height: 22px; line-height: 20px; font-size: 11px; padding: 0 5px; }
+    .bar .clb { font-size: 9px; padding: 0 4px; margin-right: 4px; line-height: 15px; }
+    .dhead-row.days .dcell { font-size: 9px; padding: 2px 0; }
+    .dhead-row.months .mcell { font-size: 11px; padding: 3px 0; }
+    .corner { font-size: 10px; }
+    .weektag { font-size: 9px; padding: 0 3px; }
+    .today span { font-size: 9px; left: -12px; }
+    .modal { padding: 14px 16px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>手游本周活动甘特图（v5.1 三大类分类）</h1>
+  <div class="sub"><span class="lg lg-wk"></span>黄色底纹区域 = 本周数据周期 2026-08-17 ~ 08-23<br><span class="lg lg-td"></span>红色竖线 = 今天</div>
+</header>
+<div class="toolbar">
+  <span class="lbl">游戏</span>
+  <button class="btn ghost" id="allG">全选</button>
+  <button class="btn ghost" id="noG">清空</button>
+  <span id="gameChips"></span>
+  <span class="lbl" style="margin-left:12px">大类</span>
+  <span id="mjChips"></span>
+</div>
+<div class="layout">
+  <div class="gantt-wrap" id="wrap"><div class="gantt-inner" id="inner"></div></div>
+</div>
+<div class="modal-mask" id="mask"><div class="modal" id="modal"></div></div>
+
+<script>
+if (window.parent !== window) document.body.classList.add('embed');
+const DATA = [{"id":1,"game":"王者荣耀","start":"2026-08-20","end":"2026-08-30","name":"【王者荣耀】皮肤碎片补给站","detail":"皮肤碎片补给站活动8月20日逐步开启-8月30日23:59。活动期间完成登录、对局等任务,最多可获取皮肤碎片×15。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"皮肤碎片补给站:完成登录对局任务获免费皮肤碎片→A3活跃任务"},{"id":2,"game":"王者荣耀","start":"2026-08-19","end":"2026-10-19","name":"【王者荣耀】狄仁杰-小李飞刀（古龙联动限定史诗）","detail":"王者荣耀×古龙全新联动皮肤狄仁杰-小李飞刀,古龙小说正版授权、一代奇侠李寻欢主题,品质限定史诗,游戏外商城直售。超值皮肤礼包(含皮肤×1+小李飞刀个性按键×1)8月19日-8月25日23:59,490点券;皮肤8月26日0点-10月19日23:59单独上架888点券(首周710);小李飞刀个性按键8月26日0点-10月19日23:59上架188点券(首周150)。","code":"R1","major":"商业化","cat":"直售外观","collab":"古龙","note":"狄仁杰-小李飞刀点券直售联动皮肤(490/888点券)→R1;古龙外部IP联动"},{"id":3,"game":"王者荣耀","start":"2026-08-19","end":"2026-09-19","name":"【王者荣耀】公孙离-涂山容容（狐妖联动返场·皮肤碎片兑换）","detail":"王者荣耀×狐妖小红娘联动皮肤公孙离-涂山容容限时返场,可皮肤碎片兑换。返场时间8月19日0:00-9月19日23:59,价格888点券/88皮肤碎片。本次返场结束后不再以直售形式返场。专属个性按键-涂山容容同步上架(8月19日0:00-9月19日23:59,188点券)。","code":"R1","major":"商业化","cat":"直售外观","collab":"狐妖小红娘","note":"公孙离-涂山容容888点券/88皮肤碎片直售返场,点券主导→R1;狐妖联动"},{"id":4,"game":"王者荣耀","start":"2026-08-19","end":"2026-09-19","name":"【王者荣耀】少司缘、大司命狐妖联动皮肤及天幕（祈愿返场）","detail":"少司缘、大司命狐妖小红娘联动皮肤及联动天幕限时返场,祈愿时间8月19日-9月16日23:59,兑换时间8月19日-9月19日23:59,通过官方活动页参与。活动页消耗60点券购买红蓝对决播报可获赠6个返场祈愿币,每次祈愿消耗6个祈愿币,有概率获返场皮肤/天幕/积分夺宝券/星币/荣耀积分/祈愿积分;累积祈愿积分可兑换返场皮肤、天幕、主题个性资源;参与页内充值有礼最高得20抽。","code":"R2","major":"商业化","cat":"抽奖外观","collab":"狐妖小红娘","note":"少司缘/大司命祈愿返场,点券购祈愿币概率获→R2抽奖外观;狐妖联动"},{"id":5,"game":"王者荣耀","start":"2026-08-19","end":"2026-09-19","name":"【王者荣耀】干将莫邪-千山共赴（狐妖联动返场）","detail":"干将莫邪-千山共赴狐妖联动皮肤限时返场,活动时间8月19日-9月19日23:59,返场价格1788点券。返场购买可使用优惠券,参与活动页内充值有礼可获皮肤专属358点券优惠券(使用截至9月19日23:59)。","code":"R1","major":"商业化","cat":"直售外观","collab":"狐妖小红娘","note":"干将莫邪-千山共赴1788点券直售返场→R1;狐妖联动"},{"id":6,"game":"王者荣耀","start":"2026-08-19","end":"2026-09-19","name":"【王者荣耀】狐妖联动小兵（荣耀水晶兑换返场）","detail":"狐妖小红娘联动小兵限时返场,8月19日0:00-9月19日23:59,荣耀商店使用荣耀水晶×1限时兑换。小兵特性含小兵看台、小兵共享、加载打气、攻击特效、局内打气、结算展示。","code":"R7","major":"商业化","cat":"其他付费","collab":"狐妖小红娘","note":"联动小兵荣耀水晶×1兑换,荣耀水晶=付费副产物→R7其他付费;狐妖联动"},{"id":7,"game":"王者荣耀","start":"2026-08-19","end":"2026-08-22","name":"【王者荣耀】积分夺宝打折","detail":"积分夺宝打折,活动时间8月19日0:00-8月22日23:59。单抽45荣耀积分(原价60),五连抽200荣耀积分(原价270)。","code":"R2","major":"商业化","cat":"抽奖外观","collab":"/","note":"积分夺宝打折,荣耀积分=付费副产物→R2抽奖外观"},{"id":8,"game":"王者荣耀","start":"2026-08-19","end":"2026-09-19","name":"【王者荣耀】元流之子-锦绣相伴套装（狐妖联动时装·星币）","detail":"狐妖小红娘联动时装元流之子-锦绣相伴套装限时返场,8月19日0:00-9月19日23:59,星币商城兑换。套装400星币;上半身200星币;下半身200星币。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"狐妖小红娘","note":"元流之子-锦绣相伴套装星币商城兑换,星币=免费代币→A3;狐妖联动(元流之子本体第一方但此为联动时装,联动IP归狐妖)"},{"id":9,"game":"王者荣耀","start":"2026-08-20","end":"2026-09-06","name":"【王者荣耀】星币商城上新（震撼美味头像框+心动语音包）","detail":"星币商城8月20日更新后上新,均8月20日更新后-9月6日23:59。头像框-震撼美味150星币;语音包-心动的王者(限时)100星币,含澜/暃/铠/司马懿/敖隐/狄仁杰6个个性语音。两者均可通过心动的王者小红书官号活动获取全额星币抵扣券。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"星币商城头像框/语音包,免费代币星币兑装扮→A3"},{"id":10,"game":"王者荣耀","start":"2026-08-20","end":"长期","name":"【王者荣耀】夺宝奖池更新","detail":"8月20日更新后夺宝奖池轮换。积分夺宝:诸葛亮、哪吒替换为杨戬、钟馗。钻石夺宝:张良、庄周、程咬金、黄金武士(3天)替换为盘古、刘邦、夏侯惇、万圣前夜(3天)。","code":"R7","major":"商业化","cat":"其他付费","collab":"/","note":"积分夺宝奖池常规轮换无新内容,积分=付费副产物→R7其他付费"},{"id":11,"game":"王者荣耀","start":"2026-08-20","end":"长期","name":"【王者荣耀】农场留言板功能上线","detail":"农场更新:留言板功能8月20日更新后上线。农场主可在农场告示牌编辑寄语(最多15字)向所有好友留言,该寄语对所有好友可见;前往好友家可在留言板对好友留言,每天可对同一好友留言3条。","code":"A6","major":"运营活动","cat":"其他活动","collab":"/","note":"农场留言板功能,社交互动功能上线→A6其他活动"},{"id":12,"game":"和平精英","start":"2026-08-19","end":"2026-08-30","name":"【和平精英】七夕「奇遇铁搭子」+「浪漫七夕逐浪海岛」","detail":"和平精英七夕活动,8月19日-8月30日。累计在线可领海星逐浪号飞行器、SCAR-L-海星逐夏枪皮、七夕专属称号-七夕不咕呱、地铁极品物资等好礼。奇遇铁搭子:通过完成每日和挑战任务获得积分,累计积分解锁精英突击凭证、极品枪械物资箱等进度奖励,与幸运好友组队可获极品防具物资箱奖励,触发奇遇彩蛋还能领额外地铁币。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"七夕奇遇铁搭子/逐浪海岛:累计在线领+完成每日挑战任务积分兑换→A3活跃任务"},{"id":13,"game":"和平精英","start":"2026-08-18","end":"长期","name":"【和平精英】时光乐章（八音圆舞/幻夜留声抽奖）","detail":"时光乐章活动2026年8月18日0点上线。使用时光币在八音圆舞、幻夜留声双奖池抽奖(可随时切换),随机获得所选奖池1个奖励;每抽10次必出秘钥,抽满5个秘钥或直接抽中套装即可获得对应奖池套装,秘钥可在不放回的秘钥盲盒中选取1个奖励。奖池综合概率:套装0.0889%、对应秘钥11.111%、飞行器组件1.7778%、荣耀勋章10.6667%、服饰币×10 27.4668%、物资币26.6668%、枪械精密零件17.778%、时光乐章礼物4.444%。秘钥盲盒含八音圆舞飞行器(1%)、动作-BYHM、汤姆逊-八音圆舞、DP-28-八音圆舞、降落伞及气泡框/邀请框/信息框/头像框等(各11%)。同步上架七夕特惠4折礼盒:480点券(原价1200)得时光乐章礼物×6+时光币×60,限购1个。","code":"R2","major":"商业化","cat":"抽奖外观","collab":"/","note":"时光乐章时光币抽双奖池套装外观、随机获取带秘钥保底→R2抽奖外观(4折礼盒折扣附着抽奖并入不单列)"},{"id":14,"game":"三角洲行动","start":"2026-08-21","end":"2026-09-17","name":"【三角洲行动】钢铁巨兽捆绑包（史诗）","detail":"钢铁巨兽捆绑包(史诗),活动时间8月21日0点-9月17日24点。捆绑包含钢铁巨兽-PTR-32突击步枪、M249轻机枪、FS-12霰弹枪及系列喷漆、头像、军牌。获取方式1500三角券/限时三角券/三角币,支持PC/iOS/Android多端。","code":"R1","major":"商业化","cat":"直售外观","collab":"/","note":"钢铁巨兽捆绑包史诗,1500三角券直售武器捆绑包→R1直售外观"},{"id":15,"game":"三角洲行动","start":"2026-08-19","end":"2026-08-27","name":"【三角洲行动】鼠\"你\"心动（烽火地带·七夕）","detail":"鼠你心动(烽火地带),8月19日0点-8月27日24点。七夕加码,零号大坝(除黑夜行动)、长弓溪谷和巴克什地图中火箭鼠鼠将在固定点位出现且只做比心动作。参与鹊桥相会登录即获动作-比心,提前装配进入对局跟随鼠鼠做出对应比心动作,必定获取当前地图藏宝图。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"鼠你心动:七夕活动,进入对局跟随鼠鼠做动作获藏宝图→A3对局任务"},{"id":16,"game":"三角洲行动","start":"2026-08-19","end":"2026-09-03","name":"【三角洲行动】鹊桥相会（烽火地带·七夕）","detail":"鹊桥相会(烽火地带),8月19日0点-9月3日24点。从烽火地带带出收集品搭建鹊桥帮牛郎织女相会,登录即获动作-比心,鹊桥总价值达设定目标即可获精美喷漆、军牌、头像奖励;比心动作装配后可用于烽火地带火箭鼠鼠互动。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"鹊桥相会:带出收集品搭鹊桥达目标获奖励→A3对局任务"},{"id":17,"game":"三角洲行动","start":"2026-08-21","end":"2026-09-03","name":"【三角洲行动】神奇野外物资箱（烽火地带）","detail":"神奇野外物资箱(烽火地带),8月21日0点-9月3日24点。活动期间搜索零号大坝、长弓溪谷、巴克什、航天基地和AZ3地图中的野外物资箱将有概率掉落当前地图藏宝图(零号大坝-永夜不开放藏宝图活动)。奖励藏宝图补给自选包。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"神奇野外物资箱:搜索野外物资箱概率掉藏宝图→A3对局任务"},{"id":18,"game":"三角洲行动","start":"2026-08-21","end":"2026-09-03","name":"【三角洲行动】打洲就要猛猛炫（炫迈联动·烽火地带）","detail":"打洲就要猛猛炫(烽火地带),8月21日0点-9月3日24点。活动期间全地图收纳盒均有概率掉落炫迈联动收藏品-炫迈无糖口香糖,完成活动任务即可领取联动头像、喷漆等奖励。另8月21日起炫迈联动口味全国上线,购买扫包装码有机会获联动军牌。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"炫迈","note":"打洲就要猛猛炫:收纳盒掉炫迈联动收藏品完成任务领奖→A3;炫迈外部品牌联动"},{"id":19,"game":"三角洲行动","start":"2026-08-21","end":"2026-09-03","name":"【三角洲行动】露小娜返场（烽火地带）","detail":"露小娜返场(烽火地带),8月21日0点-9月3日24点。活动期间所有地图工具柜概率掉落收藏品-露小娜(裂变赛季后短期内将不再产出露小娜)。奖励物流凭证。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"露小娜返场:工具柜概率掉收藏品→A3对局任务"},{"id":20,"game":"三角洲行动","start":"2026-08-19","end":"2026-09-03","name":"【三角洲行动】战场相会（全面战场·七夕）","detail":"战场相会(全面战场),8月19日0点-9月3日24点。参与活动获取干员动作-比心、精美喷漆、军牌、头像等奖励。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"战场相会:全面战场参与活动获动作/喷漆等→A3对局任务"},{"id":21,"game":"三角洲行动","start":"2026-08-21","end":"2026-08-27","name":"【三角洲行动】疯狂的盒子：武器（全面战场）","detail":"疯狂的盒子:武器(全面战场),8月21日0点-8月27日24点。开局即未知,随机增益、随机枪械,甚至有神秘阵地支援;游玩获取狂欢代币兑换奖励。","code":"C2","major":"玩法内容","cat":"新玩法/模式","collab":"/","note":"疯狂的盒子:武器,随机增益随机枪械新玩法模式→C2新玩法"},{"id":22,"game":"三角洲行动","start":"2026-08-21","end":"2026-09-03","name":"【三角洲行动】组队火力集结（全面战场）","detail":"组队火力集结(全面战场),8月21日0点-9月3日24点。邀请好友组队参与挑战,同享获胜和击败进度,获取狂欢代币兑换奖励。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"组队火力集结:邀请好友组队同享进度获代币→A3(组队非对外裂变,按对局任务)"},{"id":23,"game":"三角洲行动","start":"2026-08-21","end":"2026-09-03","name":"【三角洲行动】裂变行动：火神未央（全面战场赛季挑战）","detail":"裂变行动:火神未央(全面战场),8月21日0点-9月3日24点。全面战场赛季挑战裂变行动持续上新,干员可依作战风格选不同任务线突破,本周可完成阶段10火神未央;需按阶段完成,完成每期全部核心任务后进入下一阶段。完成阶段10获载具外观酒红-全地形车。","code":"C2","major":"玩法内容","cat":"新玩法/模式","collab":"/","note":"裂变行动火神未央:全面战场赛季挑战按阶段完成任务线→C2新玩法/系统"},{"id":24,"game":"金铲铲之战","start":"2026-08-20","end":"长期","name":"【金铲铲之战】「自然之力」新赛季（18.1版本）上线","detail":"自然之力赛季8月20日0:00-12:00停机更新正式开启(全服,安卓约1.93G/iOS约2.57G),百余种自然仙灵为战场带来变化。开放标准、双人、狂暴模式(自选武器库回归)。怪兽入侵·恭喜发财延期至9月9日23:59、宝典随新赛季下线。赛季机制:自然仙灵在商店最右侧栏位出现、每回合可购1个、每隔一次刷新出一个、大部分效果持续一回合、第5阶段后每隔一个必定是战斗仙灵,分英雄/战斗/杂项/商店/金币经验/风险/装备7类;核心垂直羁绊灵魂莲华:(3)仙灵获升级(5)每次商店都有仙灵(7)购仙灵后获金币(9)每回合可购2个(11)仙灵充盈力量。","code":"C4","major":"玩法内容","cat":"新赛季","collab":"/","note":"自然之力新赛季18.1上线,赛季开启含赛季机制→C4新赛季"},{"id":25,"game":"金铲铲之战","start":"2026-08-20","end":"长期","name":"【金铲铲之战】自然之力·全新排位赛季","detail":"自然之力全新排位赛季。星神赛季达荣耀黄金及以上获小小英雄胜利·团子(自动发放);按星神最终段位获新赛季初始段位;段位重置后5场定级赛,前5场后四名不损失胜点、前四名获额外胜点。段位奖励:达华贵铂金/流光翡翠/璀璨钻石并完成5局分获1-3星执事·思思;达超凡大师/傲世宗师/最强王者分获1-3星攻击特效·清辉夜凝。","code":"C4","major":"玩法内容","cat":"新赛季","collab":"/","note":"自然之力全新排位赛季,段位重置+段位奖励→C4新赛季"},{"id":26,"game":"金铲铲之战","start":"2026-08-20","end":"长期","name":"【金铲铲之战】全新胖胖龙游乐场","detail":"全新胖胖龙游乐场,版本更新后重置,所有弈士等级重置为英勇黄铜胖胖龙IV,从2026怪兽入侵恭喜发财、星神狂暴模式获得的星星数清空,等级奖励领取状态刷新。全新等级含符石精粹、动态/静态头像框、表情、涂鸦等。","code":"C2","major":"玩法内容","cat":"新玩法/模式","collab":"/","note":"全新胖胖龙游乐场,等级重置的养成系统→C2新玩法/系统"},{"id":27,"game":"金铲铲之战","start":"2026-08-20","end":"长期","name":"【金铲铲之战】紫罗兰胖胖龙月卡","detail":"紫罗兰胖胖龙月卡全新上线,68元/30天,立即解锁点券×6800+紫色宝石×3,月卡期间每日登录解锁星灵币×3+紫色召唤石×3。九大特权:专属折扣宝箱、每日奖励暂存箱(最高5天)、阵容收藏位+2、商城小小英雄9折、商城竞技场9折、符石精粹商店每日免费刷新×1、宝库专属商品每周免费刷新×3、特权头像框、特权聊天气泡。","code":"R5","major":"商业化","cat":"战令月卡","collab":"/","note":"紫罗兰胖胖龙月卡¥68/30天,月卡订阅→R5战令月卡"},{"id":28,"game":"金铲铲之战","start":"2026-08-20","end":"2026-09-02","name":"【金铲铲之战】琉晶香颂棱彩召唤","detail":"琉晶香颂棱彩召唤,8月20日更新后开启。有概率解锁至臻·香水宝石·小小妮蔻等,首次浏览赠5枚星灵币、首次召唤仅需100点券,常规首次10连半价+周年庆10连半价共20连半价。8月20日更新后至9月2日23:49五周年限时兑换:至臻小小妮蔻1348棱彩兑换石、小小艾瑞莉娅428棱彩兑换石。每10次召唤赠1次特殊召唤(至臻概率提升10倍等)。8月20日7:30-8月30日参与妮蔻赠好礼。","code":"R2","major":"商业化","cat":"抽奖外观","collab":"/","note":"琉晶香颂棱彩召唤,点券召唤概率获小小英雄外观→R2抽奖外观(小小英雄=外观)"},{"id":29,"game":"金铲铲之战","start":"2026-08-20","end":"2026-09-02","name":"【金铲铲之战】琉香不朽棱彩召唤","detail":"琉香不朽棱彩召唤,8月20日更新后开启。有概率解锁至臻·香水宝石·四叶雾歌·不朽格温等,首次浏览赠5枚星灵币、首次召唤100点券,常规首次20连半价+周年庆10连半价共30连半价;五周年限时兑换至臻不朽格温2288棱彩兑换石。8月20日更新后-8月30日开琉香补给站:免费领星灵币×6、600点券解锁极地聊天气泡框体验卡(1天)×6赠星灵币×6、再免费领×12,可连续解锁2次共畅享7次召唤。","code":"R2","major":"商业化","cat":"抽奖外观","collab":"/","note":"琉香不朽棱彩召唤,点券召唤概率获外观→R2抽奖外观"},{"id":30,"game":"金铲铲之战","start":"2026-08-20","end":"长期","name":"【金铲铲之战】糖果铺子上架小小莉莉娅","detail":"糖果铺子8月20日更新后上架全新多星级小小英雄自然仙灵·小小莉莉娅。首次进入获一周限时折扣,5900点券购买1星,前往藏品消耗星星糖升星。参与免费星星糖上新活动登录并了解即可免费获50颗星星糖。","code":"R1","major":"商业化","cat":"直售外观","collab":"/","note":"糖果铺子小小莉莉娅,5900点券直购1星→R1直售外观"},{"id":31,"game":"金铲铲之战","start":"2026-08-20","end":"长期","name":"【金铲铲之战】自然之力·豪华宝典","detail":"自然之力豪华宝典售价7900点券,售卖至赛季结束,开通即获星灵币×60。解锁即领自然仙灵·小小安妮、星灵币×60、4-5费自选徽章盒;随等级解锁传说竞技场·仙灵摇篮、专属传送门特效森灵奇境之门、小小英雄夜阑花·河灵、攻击特效凋零奇点/荧光球果/蔓延缠根、紫色召唤石×60及大量赛季徽章盒。","code":"R5","major":"商业化","cat":"战令月卡","collab":"/","note":"自然之力豪华宝典7900点券,赛季宝典→R5战令月卡"},{"id":32,"game":"金铲铲之战","start":"2026-08-20","end":"长期","name":"【金铲铲之战】自然之力·赛季主题礼包","detail":"自然之力赛季主题礼包商城直售。购买获英雄级小小英雄自然仙灵·小小莫甘娜、传说级竞技场自然奇境小屋;赠品表情干杯~、小小莫甘娜头像、赛季头像框。首次进入领14天专属折扣券(限时优惠9900点券+周年庆折扣4100点券),5800点券折扣价购买。","code":"R1","major":"商业化","cat":"直售外观","collab":"/","note":"赛季主题礼包5800点券直售,含小小英雄+竞技场外观→R1直售外观"},{"id":33,"game":"金铲铲之战","start":"2026-08-20","end":"长期","name":"【金铲铲之战】自然之力·秘宝","detail":"自然之力秘宝活动,花6元解锁,立得600点券、寻宝召唤积分×1、秘宝头像框×1、秘宝头像×1,并解锁累计登录任务(可领星灵币×3、紫色召唤石×3、金铲铲小小英雄蛋×1)。","code":"R7","major":"商业化","cat":"其他付费","collab":"/","note":"自然之力秘宝¥6解锁得点券+积分+登录任务→R7其他付费(低价付费礼包)"},{"id":34,"game":"金铲铲之战","start":"2026-08-20","end":"长期","name":"【金铲铲之战】自然之力·时空魔典礼包","detail":"自然之力时空魔典礼包,商城上架四种礼包:特惠礼包(每周限购5)、经济礼包(每周限购3)、豪华礼包(每周限购1)、尊享礼包(永久限购2),限时售卖至赛季结束。商城每周轮流上架4/5费英雄徽章:5费徽章990点券、4费徽章4500蓝色宝石。","code":"R7","major":"商业化","cat":"其他付费","collab":"/","note":"时空魔典礼包+英雄徽章,点券/蓝宝石购徽章道具→R7其他付费"},{"id":35,"game":"金铲铲之战","start":"2026-08-20","end":"2026-09-27","name":"【金铲铲之战】魔典系统焕新升级","detail":"魔典系统焕新升级,新增魔典任务(组队房间任务系统进入)。英雄任务获英雄徽章(每英雄3胜场+1专属);周对局任务每周1/2/3/5/8场赛季对局获大量随机徽章(每周一0点重置)。收集度奖励:神话级小小英雄自然仙灵·小小佐伊、庆祝特效落英缤纷、传送门特效花蝶纷飞、传送特效飞花奇旅、五费英雄皮肤等。英雄徽章盒同步上架商城990点券/个。参与免费领魔典徽章活动获海量徽章。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"魔典系统焕新,免费领魔典徽章完成任务获小小佐伊等→A3活跃任务(徽章盒商城售另属R但主体为免费任务系统)"},{"id":36,"game":"金铲铲之战","start":"2026-08-20","end":"2026-09-28","name":"【金铲铲之战】符石精粹商店更新","detail":"符石精粹商店更新,移除魔典徽章盒相关内容、调整部分商品刷新稀有度,上线英雄级小小英雄小小潘森。8月20日更新后至9月28日参与符石精粹礼活动,每周最多得符石精粹×1600与强化符石随机礼盒×3(周五至周日2倍加速)。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"符石精粹商店:符石精粹礼每周任务获免费符石精粹→A3活跃任务"},{"id":37,"game":"金铲铲之战","start":"2026-08-20","end":"2026-09-16","name":"【金铲铲之战】新版本预约礼/婉婉的赠礼/新赛季机制一览","detail":"推荐活动三合一:①领新版本预约礼(8月20日更新后-9月2日,分享版本资讯并完成1场对局领自然之力赛季预约宝箱);②婉婉的赠礼(8月20日更新后至9月16日,完成登录等任务免费兑换三星小小英雄自然之力·婉婉、攻击特效铲铲旋刃1-3星);③新赛季机制一览(登录并体验新赛季对局免费领赛季主题名片、头像、头像框)。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"预约礼/婉婉赠礼/机制一览:分享+登录+对局任务免费领→A3(单向分享按任务归A3)"},{"id":38,"game":"金铲铲之战","start":"2026-08-21","end":"2026-09-15","name":"【金铲铲之战】海底捞联名","detail":"金铲铲之战×海底捞联名,8月25日-9月15日联名上线,8月21日10:00预售,8月25日起到店核销领联名周边和游戏道具。","code":"A6","major":"运营活动","cat":"其他活动","collab":"海底捞","note":"海底捞联名到店核销领周边+道具→A6其他活动;海底捞外部品牌联动"},{"id":39,"game":"超自然行动组","start":"2026-08-20","end":"2026-10-07","name":"【超自然行动组】爱德华-高泰明（叶罗丽联动时装·登录免费领）","detail":"爱德华-高泰明叶罗丽联动时装登录免费领,活动时间2026年8月20日00:00-2026年10月7日23:59:59。活动期间完成专属每日任务与进阶任务获专属积分,累计积分即可解锁奖励,包含限定时装爱德华-高泰明、限定头像框不男神。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"叶罗丽","note":"爱德华-高泰明叶罗丽联动时装,完成每日/进阶任务积分免费解锁→A3;叶罗丽外部IP联动"},{"id":40,"game":"超自然行动组","start":"2026-08-20","end":"2026-11-29","name":"【超自然行动组】叶罗丽联动回收物·心蕊宝杖","detail":"叶罗丽联动回收物,掉落时间2026年8月20日更新后-2026年11月29日23:59。在摸金撤离模式中将有概率掉落回收物心蕊宝杖(罗丽的魔法宝杖,蕴含爱心与花朵之力,可催生百花、绽放心蕊、疗愈伤痕、净化黑暗)。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"叶罗丽","note":"叶罗丽联动回收物心蕊宝杖,摸金撤离模式概率掉落→A3对局任务;叶罗丽联动"},{"id":41,"game":"超自然行动组","start":"2026-08-22","end":"长期","name":"【超自然行动组】绘梦厅「魔法闪耀」叶罗丽联动卡池上新","detail":"绘梦厅「魔法闪耀」卡池8月22日0点上线,以抽奖形式产出多款时装、皮肤与道具。叶罗丽联动内容:耀世时装九儿-冷漠罗丽(九儿占卜主题、含耀世模型优化与局内展示、演绎动画)、典藏时装小满-灵公主(蔷薇主题),以及冷漠罗丽专属头像、背饰、挂饰、头像框、工牌等联动道具;同池常规新内容:弦月琵琶琵琶武器皮肤(音刃/冰晶/花蝶检视特效)、电击枪皮肤精灵法杖、新美妆困困咩、双人动作你是自由的。","code":"R2","major":"商业化","cat":"抽奖外观","collab":"叶罗丽","note":"绘梦厅魔法闪耀卡池抽奖获取时装/皮肤外观、内容随机→R2抽奖外观;叶罗丽外部IP联动(卡池含九儿冷漠罗丽/小满灵公主联动皮肤)"},{"id":42,"game":"超自然行动组","start":"2026-08-20","end":"长期","name":"【超自然行动组】云南虫谷地图更新","detail":"云南虫谷单队行动新增多条路线,并新增回收物百草纲目。","code":"C3","major":"玩法内容","cat":"新地图/关卡","collab":"/","note":"云南虫谷新增路线+新回收物,PvE地图内容→C3新地图/关卡"},{"id":43,"game":"超自然行动组","start":"2026-08-20","end":"2026-08-23","name":"【超自然行动组】新员工九儿登录送（延期）","detail":"新员工九儿登录送活动延期至8月23日23:59。8月20日更新后每日登录游戏即可领取员工九儿邀请函×1,在活动兑换商店中可兑换新员工-九儿。","code":"A2","major":"运营活动","cat":"登录签到","collab":"/","note":"新员工九儿登录送,每日登录领邀请函兑换→A2登录签到(送角色=促活)"},{"id":44,"game":"超自然行动组","start":"2026-08-20","end":"长期","name":"【超自然行动组】爬山模拟器·全新机制与道具","detail":"爬山模拟器更新。全新机制瀑布:地图中随机出现的水流景观,本身不造成伤害但员工接触水流会被短暂击倒需绕行。全新道具竹笋:可丢弃/投掷在地图表面,短暂时间后迅速生长成竹子供员工攀爬或歇息;麻醉吹箭:吹出麻醉箭对目标施加大量疲惫状态并清除除中邪/负重/刺伤外所有状态。优化黄山松树叶片视野穿透;回收物锦鳞鱼灯可检视。","code":"C2","major":"玩法内容","cat":"新玩法/模式","collab":"/","note":"爬山模拟器新机制瀑布+新道具竹笋/麻醉吹箭,新玩法内容→C2新玩法"},{"id":45,"game":"超自然行动组","start":"2026-08-20","end":"长期","name":"【超自然行动组】怪物农场·人参果种植与保护期","detail":"怪物农场内容更新。人参果可在怪物农场种植,成熟后价值更高、有可能变异;农场新增保护期(默认0点到8点、固定8小时,期间被偷取不损失农作物);支持设置留言、赠礼权限;过山车增加放大缩小功能。调整:种子可在商店出售、赠礼附带留言可删除、果实预估出售单价改为总价等。","code":"C2","major":"玩法内容","cat":"新玩法/模式","collab":"/","note":"怪物农场人参果种植+保护期,养成玩法系统更新→C2新玩法/系统"},{"id":46,"game":"洛克王国世界","start":"2026-08-21","end":"2026-09-11","name":"【洛克王国世界】夏日潮汐集市","detail":"夏日潮汐集市,2026年8月21日04:00-9月11日04:00(魔法20级+见习魔法生)。位于商店街周边、彼得大道和向日葵海岸,同时开设3个摊位。活动开始获浪花币×20000启动资金、每日基础补给浪花币×1200,物资包价格分低/中低/中/高波动四档随潮汐波动、每日04:00重置,每日购买上限随集市等级提升。同一物资包在不同商店/世界售价有差异,捕捉精灵有概率额外掉浪花币。奖励:头像船长罐罐、表情冲浪、时装部件海风轻束、家具船长衣柜、名片背景夏日潮汐、称号浪尖上的·理财高手、分光水晶、许愿星等。未出售物资包活动结束时以500浪花币/个回收。","code":"C2","major":"玩法内容","cat":"新玩法/模式","collab":"/","note":"夏日潮汐集市,潮汐价格波动经营新玩法→C2新玩法"},{"id":47,"game":"洛克王国世界","start":"2026-08-21","end":"2026-09-11","name":"【洛克王国世界】领地试炼","detail":"领地试炼,2026年8月21日04:00-9月11日04:00(魔法50级+精灵博学者)。高难挑战迎战恶魔男爵族群,击败守卫、挑战首领,认可度越高奖励越丰厚;特性共享系统加持下己方登场两只精灵彼此共享特性。奖励:分光水晶、许愿星、认可之证、灵魂环印、契约本源、首领信物(恶魔男爵的信物)等养成资源。同步开放往期回顾入口,用80个认可之证可兑换往期首领信物,每种限兑一次。","code":"C2","major":"玩法内容","cat":"新玩法/模式","collab":"/","note":"领地试炼,高难挑战+特性共享新玩法→C2新玩法"},{"id":48,"game":"洛克王国世界","start":"2026-08-21","end":"2026-08-28","name":"【洛克王国世界】精灵抱抱团集合","detail":"精灵抱抱团集合,2026年8月21日04:00-8月28日04:00(魔法20级+见习魔法生)。本期香香书卷气主题精灵画精灵、书魔虫、墨鱿士、迷迷箱怪结伴现身。完成单个精灵收集获能力钥匙,集齐所有成员后获精灵抱抱团奖励。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"精灵抱抱团集合,完成精灵收集获奖励→A3活跃任务"},{"id":49,"game":"洛克王国世界","start":"2026-08-21","end":"2026-09-10","name":"【洛克王国世界】结伴同行，一起快洛","detail":"结伴同行,一起快洛,2026年8月21日-9月10日。结伴同行邀请好友共赴冒险,完成指定邀请活动领取奖励。","code":"A1","major":"运营活动","cat":"社交裂变","collab":"/","note":"结伴同行一起快洛,邀请好友完成邀请活动领奖→A1社交裂变(邀请好友)"},{"id":50,"game":"洛克王国世界","start":"2026-08-21","end":"2026-08-24","name":"【洛克王国世界】小草虫大量出没","detail":"小草虫大量出没,2026年8月21日04:00-8月24日04:00(魔法20级+见习魔法生)。小草虫家族大量聚集,捕捉有概率获得异色小草虫。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"小草虫大量出没,捕捉概率获异色→A3对局任务"},{"id":51,"game":"洛克王国世界","start":"2026-08-21","end":"2026-08-23","name":"【洛克王国世界】远行商人上新","detail":"远行商人上新,2026年8月21日-8月23日(魔法20级+见习魔法生)。限时购光合球和淘沙球(各3000洛克贝/个,每日各限购100);残缺魔镜限购1个48万洛克贝;适格钥匙限购1个32万洛克贝;能力钥匙限购6个16万洛克贝。","code":"C6","major":"玩法内容","cat":"其他内容","collab":"/","note":"远行商人上新,洛克贝(软货币)购光合球/淘沙球/钥匙等玩法道具→C6其他内容"},{"id":52,"game":"洛克王国世界","start":"2026-08-21","end":"2026-08-24","name":"【洛克王国世界】闪耀周末","detail":"闪耀周末,2026年8月21日-8月24日(魔法30级+精灵研究员)。双倍胜场+限免精灵+推荐阵容,磨炼对战技巧。","code":"A5","major":"运营活动","cat":"奖励增幅","collab":"/","note":"闪耀周末,双倍胜场+限免精灵→A5奖励增幅"},{"id":53,"game":"洛克王国世界","start":"2026-08-21","end":"2026-08-24","name":"【洛克王国世界】500%孵蛋加速日","detail":"500%孵蛋加速日,2026年8月21日-8月24日(魔法20级+见习魔法生)。五倍速破壳精灵蛋。","code":"A5","major":"运营活动","cat":"奖励增幅","collab":"/","note":"500%孵蛋加速日,五倍孵蛋加速→A5奖励增幅"},{"id":54,"game":"洛克王国世界","start":"2026-08-17","end":"2026-08-31","name":"【洛克王国世界】极速对决（最初的伙伴）","detail":"极速对决,2026年8月17日04:00-8月31日04:00。本期主题最初的伙伴:至少上阵1只魔力猫、水灵、火神对决。每方2点魔力值可上阵3只精灵。达成参与与胜利次数获奖励,同时获与闪耀大赛一致的星光值、奖牌与洛克贝,获胜可同步增加每周挑战胜场次数。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"极速对决,指定精灵对决达成参与/胜利次数获奖→A3对局任务"},{"id":55,"game":"洛克王国世界","start":"2026-08-17","end":"2026-08-24","name":"【洛克王国世界】星光对决（博得专场）","detail":"星光对决,2026年8月17日04:00-8月24日04:00(魔法20级+见习魔法生,每周一04:00刷新)。本期嘉宾商会老资历博得,携带精灵尖嘴狐仙、花影羚羊、幻影灵菇、小丑公爵、厉毒修萝、窃光蚊,共五档挑战难度。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"星光对决,用当周精灵挑战多档难度→A3对局任务"},{"id":56,"game":"原神","start":"2026-08-19","end":"2026-09-22","name":"【原神】「幽境危战」活动","detail":"幽境危战活动8月19日生效。整体活动时间2026/08/19 10:00-2026/09/22 03:59,紊乱爆发期2026/08/19 10:00-2026/08/29 03:59。参与条件冒险等阶≥20级且完成魔神任务序章·第三幕巨龙与自由之歌。玩法:选择难度进行挑战,连续完成三场限时战斗击败所有敌人即挑战成功;难度由简至难分普通/进阶/困难/险恶/无畏/绝境,从困难起需通关才解锁下一难度。赋光之人:挑战中至多16位角色成为赋光之人获增益(绝境难度不再获增益)。紊乱爆发期内冒险等阶≥45在困难及以上完成战斗可消耗树脂获自选祝圣秘境奖励并积累危战勋望,达标获额外圣遗物奖励和启圣之尘。本次起获取的幻煌至形及真化内新增一套武器外观。","code":"C2","major":"玩法内容","cat":"新玩法/模式","collab":"/","note":"幽境危战,多难度限时战斗挑战玩法→C2新玩法"},{"id":57,"game":"恋与深空","start":"2026-08-17","end":"2026-08-31","name":"【恋与深空】七夕「流景扬辉」情侣服饰组合与写真布景上架","detail":"8月17日更新后至8月31日4:59，七夕国风主题情侣服饰限时特惠上架「活动-流景扬辉」专页：三组礼匣各含男主通用服装、「我」的服装与通用面饰——云兴霞蔚礼匣（霞千染/初晓/花间眸愿）、墨池跃金礼匣（烬玄煌/乍暖/瞳色眸光）、浮岚暖翠礼匣（山青黛/向晚/墨染眸韵）；礼匣原价36元/组，第二组28元、第三组18元半价。写真布景「锦色河山」同步上架，使用晶钻在活动页面购买。活动结束后服饰组合与写真布景暂无获取途径","code":"R1","major":"商业化","cat":"直售外观","collab":"/","note":"参照2026-06-16「版本新服饰上架及限时钜惠礼盒」行归R1"},{"id":58,"game":"恋与深空","start":"2026-08-17","end":"2026-08-31","name":"【恋与深空】祁煜「破阵子」限定五星思念UP许愿","detail":"限定五星日冕套装思念「祁煜·玄面昭昭」「祁煜·玄面无相」许愿概率限时大幅提升，两张合计占五星获取几率的50%，活动结束后暂无获取途径且不进入常驻许愿极空回响；设双重保底且保底次数在所有限定许愿间共享继承，连续两次获得的活动限定五星必不相同。累计许愿奖励「武神之祝」：累计100次前每许愿10次返还「深空许愿券·限时」×1，累计150次可在两张五星中自选一张（即最多150抽必得两张、解锁搭档身份），累计175次与200次分别得满级璀璨「芯核·α&芯核·β」一套。配套「层霄馈礼」「晏安馈礼」系列礼包同期上架，可低至1折购买「深空许愿券·限时」及养成材料。","code":"R3","major":"商业化","cat":"付费角色","collab":"/","note":"卡池影响战斗强度→R3；配套抽卡礼包属同一商业化事件，按不拆分原则并入本行"},{"id":59,"game":"恋与深空","start":"2026-08-17","end":"长期","name":"【恋与深空】全新传说「一念如渡」及搭档身份「祁煜·赤霄武神」上线","detail":"获得「祁煜·玄面昭昭」或「玄面无相」任意一张即可无需培养解锁祁煜全新传说故事「一念如渡」全部章节；集齐两张可解锁全新搭档身份「祁煜·赤霄武神」及配套战斗玩法机制「武神入阵」——玩家施放主动技为赤霄幻面充能，能量充盈后可施放「武神入阵」为祁煜戴上赤霄幻面、引武魂上身并切换全新作战方式与技能。同步解锁战斗装扮套装「祁煜·烈火赫名」，两张思念各提升至2阶可解锁幻色套装「祁煜·熔金淬曙」（含全新背饰「祁煜·赤霄燎原」）。","code":"C5","major":"玩法内容","cat":"新剧情","collab":"/","note":"参照本表「阴阳阙」及搭档身份「冥罗之主」行归C5"},{"id":60,"game":"恋与深空","start":"2026-08-17","end":"2026-08-31","name":"【恋与深空】「赤霄武神」系列“我”的战斗装扮限时特惠","detail":"配套“我”的战斗装扮同期上架商城「甄选」，8月17日更新后至8月31日04:59两套战斗装扮打包购入可享折上折，仅需680晶钻；套装内服装、发型、饰品均可拆分搭配。","code":"R1","major":"商业化","cat":"直售外观","collab":"/","note":"参照本表「冥罗之主」系列战斗装扮行归R1"},{"id":61,"game":"恋与深空","start":"2026-08-17","end":"2026-08-31","name":"【恋与深空】「沉烽逐霄」版本福利活动","detail":"版本配套福利活动「沉烽逐霄」开启，猎人参与活动即可免费获取四星日冕套装思念「祁煜·烽燧金戈」「祁煜·烽燧同天」、深空许愿券·限时×10、钻石×500及「祁煜·揽秋拂面」等奖励。","code":"A3","major":"运营活动","cat":"活跃/对局任务","collab":"/","note":"参照本表「软绒奇境」福利活跃活动行归A3；原公告未细列任务门槛，待核对"},{"id":62,"game":"三国志战略版","start":"2026-08-19","end":"长期","name":"【三国志战略版】三国演弈Y5赛季「结契夺宝」上线","detail":"三国演弈玩法8月18日Y4赛季结算、8月19日开启Y5赛季结契夺宝,精研战法玩法暂时关闭。核心新增:①军功系统——新增资源,按对局名次、演弈分数段、结束时阵容状态(羁绊等级/棋子红度)、阵容外观(真名与真身)、藏品加成综合决定获取,可局内购买战利品、开启部分宝箱,赛季结算按军功给奖励并按积分保留部分军功。②战利品系统——局内刷新商店有概率出战利品,消耗军功购买进入临时背包,对局结束后最多选3个(拥有将军剑为5个)符合条件的带出,未达条件或超量不返还消耗;战利品分宝箱(普通/稀有/珍稀/绝世,可用军功或钥匙开启)、藏品(稀有以下可出售获军功、珍稀以上收藏得军功加成)、道具(武将真名进阶头像框、武将真身替换棋子模型、保护卡无条件带出、钥匙开宝箱)。③天下争锋军功排行战场——首局后按历史演弈分匹配100人对阵100人,一个月内比拼累计军功争夺战场归属,军功最高一方获阵营胜利与奖励。④契约武将玩法——战法选择阶段有概率出武将契约书,满足羁绊需求即可拖动召唤契约武将(不占人口)获效果加成。","code":"C4","major":"玩法内容","cat":"新赛季","collab":"/","note":"三国演弈Y5新赛季结契夺宝玩法更新→C4新赛季(新赛季玩法上线)"},{"id":63,"game":"三国谋定天下","start":"2026-08-19","end":"2026-08-21","name":"【三国谋定天下】七夕限定主题活动「七夕相期」","detail":"七夕限定主题活动七夕相期,8月19日0:00-8月21日24:00,繁荣度>2000的主公均可参与。活动期间登录游戏即可领取同心结,开启有概率获得黄金×188或黄金×888(二选一随机)。同步上架七夕限定折扣外观礼包(购买后免费解锁动态立绘,附赠头像、个人主页背景、动态战报卡面):南境同心礼包2880玉石(含祝融夫人—烈焰擒锋、孟获—巡狩南疆);明月同归礼包2588玉石(含黄月英—机巧玲珑、神韬驭势·诸葛亮—墨弈山河);白露共裳礼包2588玉石(含甄洛—月华流金、曹丕—登临御极)。","code":"R1","major":"商业化","cat":"直售外观","collab":"/","note":"七夕相期:七夕外观礼包2880/2588玉石直售(玉石=付费货币),主体为付费外观直售→R1(登录领同心结黄金为附带,按优先级R>A取R1)"}];
+const GAMES = ["王者荣耀","和平精英","三角洲行动","金铲铲之战","超自然行动组","洛克王国世界","原神","恋与深空","三国志战略版","三国谋定天下"];
+const RANGE_START = '2026-08-17', RANGE_END = '2026-09-14';
+const WEEK_S = '2026-08-17', WEEK_E = '2026-08-23';
+let COL_W = 34;
+/* 手机端窄标签列，render时按当前宽度重算 */
+let MAJOR_W = 46, CAT_W = 132, LABEL_W = MAJOR_W + CAT_W;
+function measureLabels(){
+  const n = document.documentElement.clientWidth <= 680;
+  MAJOR_W = n ? 30 : 46; CAT_W = n ? 40 : 132; LABEL_W = MAJOR_W + CAT_W;
+}
+const BAR_H = 26, BAR_GAP = 4, BAND_PAD = 5;
+const DAY = 86400000;
+
+const MAJOR_ORDER = ['商业化', '玩法内容', '运营活动'];
+const MAJOR_COLORS = { '商业化': '#A46312', '玩法内容': '#2D6B91', '运营活动': '#AE4C4C', '待核对': '#7f7f7f' };
+const CAT_ORDER = {};
+['R1','R2','R3','R4','R5','R6','R7'].forEach((c,i)=>CAT_ORDER[c]=i);
+['C1','C2','C3','C4','C5','C6'].forEach((c,i)=>CAT_ORDER['X'+c]=i);
+['A1','A2','A3','A4','A5','A6'].forEach((c,i)=>CAT_ORDER['Y'+c]=i);
+
+let d0, d1, NDAYS, TRACK_W;
+/* 全端均显示完整区间；手机端列宽固定、图板横向滑动查看后续日期 */
+function setRange(){
+  d0 = new Date(RANGE_START + 'T00:00:00');
+  d1 = new Date(RANGE_END + 'T00:00:00');
+  NDAYS = Math.round((d1 - d0) / DAY) + 1;
+  TRACK_W = NDAYS * COL_W;
+}
+setRange();
+
+function parse(s){ return new Date(s + 'T00:00:00'); }
+function dayIdx(s){ return Math.round((parse(s) - d0) / DAY); }
+function pad(n){ return n < 10 ? '0' + n : '' + n; }
+function fmt(d){ return d.getFullYear() + '-' + pad(d.getMonth()+1) + '-' + pad(d.getDate()); }
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+const state = { games: new Set(GAMES), majors: new Set(MAJOR_ORDER) };
+
+/* ---- date header ---- */
+function buildHead(){
+  const h = document.createElement('div'); h.className = 'dhead';
+  const mrow = document.createElement('div'); mrow.className = 'dhead-row months';
+  const corner1 = document.createElement('div'); corner1.className = 'corner';
+  corner1.style.cssText = 'width:' + LABEL_W + 'px;min-width:' + LABEL_W + 'px;grid-row:span 2;';
+  corner1.textContent = document.documentElement.clientWidth <= 680 ? '分类/日期' : '分类 / 日期';
+  corner1.style.gridRow = 'span 2';
+  mrow.appendChild(corner1);
+  // months spanning
+  let mi = 0;
+  while (mi < NDAYS) {
+    const d = new Date(d0.getTime() + mi * DAY);
+    const y = d.getFullYear(), m = d.getMonth();
+    let span = 0;
+    while (mi + span < NDAYS) {
+      const dd = new Date(d0.getTime() + (mi + span) * DAY);
+      if (dd.getFullYear() === y && dd.getMonth() === m) span++; else break;
+    }
+    const c = document.createElement('div'); c.className = 'mcell';
+    c.style.width = span * COL_W + 'px'; c.textContent = y + '年' + (m+1) + '月';
+    mrow.appendChild(c); mi += span;
+  }
+  h.appendChild(mrow);
+  const drow = document.createElement('div'); drow.className = 'dhead-row days';
+  const corner2 = document.createElement('div'); corner2.className = 'corner';
+  corner2.style.cssText = 'width:' + LABEL_W + 'px;min-width:' + LABEL_W + 'px;font-size:11px;';
+  corner2.textContent = document.documentElement.clientWidth <= 680
+    ? (d0.getMonth()+1) + '/' + d0.getDate() + ' ~ ' + (d1.getMonth()+1) + '/' + d1.getDate()
+    : RANGE_START + ' ~ ' + RANGE_END;
+  drow.appendChild(corner2);
+  for (let i = 0; i < NDAYS; i++) {
+    const d = new Date(d0.getTime() + i * DAY);
+    const s = fmt(d);
+    const c = document.createElement('div'); c.className = 'dcell';
+    c.style.width = COL_W + 'px';
+    if (s >= WEEK_S && s <= WEEK_E) c.classList.add('wk');
+    if (d.getDay() === 0 || d.getDay() === 6) c.classList.add('wkend');
+    /* 手机端列宽足够：每天显示日号，月份看上行月标题 */
+    c.textContent = document.documentElement.clientWidth <= 680
+      ? String(d.getDate())
+      : (d.getMonth()+1) + '/' + d.getDate();
+    drow.appendChild(c);
+  }
+  h.appendChild(drow);
+  return h;
+}
+
+/* ---- gantt body ---- */
+function laneCount(items){
+  // greedy lane assignment, returns total lanes
+  const lanes = [];
+  const sorted = [...items].sort((a,b) => a._si - b._si || a._ei - b._ei);
+  sorted.forEach(it => {
+    let placed = false;
+    for (let l = 0; l < lanes.length; l++) {
+      if (lanes[l] <= it._si) { it._lane = l; lanes[l] = it._ei + 1; placed = true; break; }
+    }
+    if (!placed) { it._lane = lanes.length; lanes.push(it._ei + 1); }
+  });
+  return Math.max(lanes.length, 1);
+}
+
+function render(){
+  measureLabels();
+  const narrow = document.documentElement.clientWidth <= 680;
+  setRange();
+  // 桌面端按宽度铺满；手机端列宽固定44px，图板横向滑动（初始停留在本周）
+  COL_W = narrow ? 44 : Math.max(10, Math.floor((document.documentElement.clientWidth - LABEL_W - 4) / NDAYS));
+  TRACK_W = NDAYS * COL_W;
+  const visible = DATA.filter(r => state.games.has(r.game) && state.majors.has(r.major));
+  visible.forEach(r => {
+    r._si = Math.max(0, dayIdx(r.start));
+    r._ei = r.end === '长期' ? NDAYS - 1 : Math.min(NDAYS - 1, dayIdx(r.end));
+    if (r._ei < r._si) r._ei = r._si;
+  });
+  const inner = document.getElementById('inner');
+  inner.innerHTML = '';
+  inner.style.width = LABEL_W + TRACK_W + 'px';
+  inner.appendChild(buildHead());
+
+  MAJOR_ORDER.forEach(major => {
+    if (!state.majors.has(major)) return;
+    const inMajor = visible.filter(r => r.major === major);
+    if (!inMajor.length) return;
+    // group by category
+    const cats = {};
+    inMajor.forEach(r => {
+      // code empty → merge into band with same cat-name if exists, else 待核对 band
+      let key = r.code ? r.code + ' ' + r.cat : '待核对';
+      if (!r.code) {
+        const hit = inMajor.find(o => o.major === r.major && o.cat === r.cat && o.code);
+        if (hit) key = hit.code + ' ' + hit.cat;
+      }
+      (cats[key] = cats[key] || []).push(r);
+    });
+    const catKeys = Object.keys(cats).sort((a,b) => {
+      const ca = a.slice(0,2), cb = b.slice(0,2);
+      return (CAT_ORDER[ca] !== undefined ? CAT_ORDER[ca] : 99) - (CAT_ORDER[cb] !== undefined ? CAT_ORDER[cb] : 99);
+    });
+
+    const g = document.createElement('div'); g.className = 'group mj-' + major;
+    const ml = document.createElement('div'); ml.className = 'major-label';
+    ml.style.width = MAJOR_W + 'px'; ml.style.minWidth = MAJOR_W + 'px';
+    ml.textContent = major;
+    g.appendChild(ml);
+    const bands = document.createElement('div'); bands.className = 'bands';
+
+    catKeys.forEach(ck => {
+      const items = cats[ck];
+      const nLanes = laneCount(items);
+      const bandH = nLanes * (BAR_H + BAR_GAP) + BAND_PAD * 2;
+      const band = document.createElement('div'); band.className = 'band'; band.style.height = bandH + 'px';
+      const cl = document.createElement('div'); cl.className = 'cat-label';
+      cl.style.left = MAJOR_W + 'px'; cl.style.width = CAT_W + 'px'; cl.style.minWidth = CAT_W + 'px';
+      const nm = items[0].cat;
+      cl.innerHTML = '<span class="nm">' + esc(nm) + '</span>';
+      band.appendChild(cl);
+      const track = document.createElement('div'); track.className = 'track';
+      track.style.width = TRACK_W + 'px'; track.style.backgroundSize = COL_W + 'px 100%';
+      // week highlight
+      const wm = document.createElement('div'); wm.className = 'weekmark';
+      wm.style.left = dayIdx(WEEK_S) * COL_W + 'px';
+      wm.style.width = (dayIdx(WEEK_E) - dayIdx(WEEK_S) + 1) * COL_W + 'px';
+      track.appendChild(wm);
+      // bars
+      items.forEach(r => {
+        const b = document.createElement('div');
+        b.className = 'bar mj-' + r.major + (r.end === '长期' ? ' open' : '') + (r.code ? '' : ' uncode');
+        b.style.left = r._si * COL_W + 2 + 'px';
+        b.style.width = (r._ei - r._si + 1) * COL_W - 5 + 'px';
+        b.style.top = BAND_PAD + r._lane * (BAR_H + BAR_GAP) + 'px';
+        b.title = r.name + '　' + r.start + ' ~ ' + r.end;
+        b.innerHTML = (r.collab && r.collab !== '/' ? '<span class="clb">联动·' + esc(r.collab) + '</span>' : '')
+                    + esc(r.name);
+        b.onclick = (ev) => { ev.stopPropagation(); selectBar(r.id); };
+        b.dataset.id = r.id;
+        track.appendChild(b);
+      });
+      band.appendChild(track);
+      bands.appendChild(band);
+    });
+    g.appendChild(bands);
+    inner.appendChild(g);
+  });
+
+  // today line (overlay in first track area of whole inner)
+  const today = new Date(); today.setHours(0,0,0,0);
+  if (today >= d0 && today <= d1) {
+    const tl = document.createElement('div'); tl.className = 'today';
+    tl.style.left = LABEL_W + Math.round((today - d0) / DAY) * COL_W + 'px';
+    tl.innerHTML = '<span>今天</span>';
+    tl.style.height = inner.scrollHeight + 'px';
+    inner.appendChild(tl);
+  }
+  // week tag on head
+  const wt = document.createElement('div'); wt.className = 'weektag';
+  wt.style.left = LABEL_W + dayIdx(WEEK_S) * COL_W + 4 + 'px';
+  wt.textContent = '本周 ' + WEEK_S.slice(5) + ' ~ ' + WEEK_E.slice(5);
+  document.getElementById('inner').appendChild(wt);
+}
+
+function selectBar(id){
+  document.querySelectorAll('.bar.sel').forEach(b => b.classList.remove('sel'));
+  const el = document.querySelector('.bar[data-id="' + id + '"]');
+  if (el) el.classList.add('sel');
+  const r = DATA.find(x => x.id === id);
+  const mc = MAJOR_COLORS[r.major];
+  document.getElementById('modal').innerHTML =
+    '<button class="x" onclick="closeModal()">×</button>' +
+    '<h2>' + esc(r.name) + '</h2>' +
+    '<div class="meta"><span class="tag" style="background:' + mc + ';color:#fff">' + esc(r.major) + '</span>' +
+    '<span class="tag" style="background:#eef2f7;color:#374151">' + esc(r.code || '—') + ' ' + esc(r.cat) + '</span></div>' +
+    '<div class="meta">🎮 ' + esc(r.game) + '　⏱ ' + esc(r.start) + ' ~ ' + esc(r.end === '长期' ? '长期/结束时间未知' : r.end) + '</div>' +
+    (r.collab && r.collab !== '/' ? '<div class="sec">🔗 IP联动</div><div class="collab">' + esc(r.collab) + '</div>' : '') +
+    '<div class="sec">📄 详细内容</div><div class="ct">' + esc(r.detail) + '</div>';
+  const mask = document.getElementById('mask');
+  mask.classList.add('show');
+  // 弹窗定位到所点甘特条下方；空间不足则放到上方
+  const modal = document.getElementById('modal');
+  const rect = el ? el.getBoundingClientRect() : null;
+  const docW = document.documentElement.clientWidth;
+  const docH = document.documentElement.scrollHeight;
+  const mw = modal.offsetWidth, mh = modal.offsetHeight;
+  if (!rect) {
+    // 手机端卡片列表无甘特条元素，弹窗定位于当前视口上部居中
+    modal.style.left = Math.max(8, (docW - mw) / 2) + 'px';
+    modal.style.top = (window.scrollY + 60) + 'px';
+    return;
+  }
+  const barTop = rect.top + window.scrollY, barBottom = rect.bottom + window.scrollY;
+  let left = rect.left + window.scrollX;
+  left = Math.max(8, Math.min(left, docW - mw - 8));
+  let top = barBottom + 6;
+  if (top + mh > docH - 8) top = Math.max(8, barTop - mh - 6);
+  modal.style.left = left + 'px';
+  modal.style.top = top + 'px';
+}
+function closeModal(){
+  document.getElementById('mask').classList.remove('show');
+  document.querySelectorAll('.bar.sel').forEach(b => b.classList.remove('sel'));
+}
+document.getElementById('mask').addEventListener('click', function(e){ if (e.target === this) closeModal(); });
+document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(); });
+
+/* ---- toolbar ---- */
+const gc = document.getElementById('gameChips');
+GAMES.forEach(g => {
+  const c = document.createElement('span'); c.className = 'chip on'; c.textContent = g;
+  c.onclick = () => { if (state.games.has(g)) { state.games.delete(g); c.classList.remove('on'); } else { state.games.add(g); c.classList.add('on'); } render(); };
+  gc.appendChild(c);
+});
+document.getElementById('allG').onclick = () => { GAMES.forEach(g => state.games.add(g)); gc.querySelectorAll('.chip').forEach(c => c.classList.add('on')); render(); };
+document.getElementById('noG').onclick = () => { state.games.clear(); gc.querySelectorAll('.chip').forEach(c => c.classList.remove('on')); render(); };
+
+const mc = document.getElementById('mjChips');
+MAJOR_ORDER.forEach(m => {
+  const c = document.createElement('span'); c.className = 'chip mj-on'; c.textContent = m;
+  c.style.background = MAJOR_COLORS[m]; c.style.borderColor = MAJOR_COLORS[m];
+  c.onclick = () => {
+    if (state.majors.has(m)) { state.majors.delete(m); c.style.background = '#f3f4f6'; c.style.color = '#374151'; c.classList.remove('mj-on'); }
+    else { state.majors.add(m); c.style.background = MAJOR_COLORS[m]; c.style.color = '#fff'; c.classList.add('mj-on'); }
+    render();
+  };
+  mc.appendChild(c);
+});
+
+window.addEventListener('resize', () => render());
+
+function reportHeight(){
+  if (window.parent !== window) {
+    window.parent.postMessage({ ganttHeight: document.documentElement.scrollHeight }, '*');
+  }
+}
+new MutationObserver(() => setTimeout(reportHeight, 50)).observe(document.body, { childList: true, subtree: true });
+window.addEventListener('load', reportHeight);
+
+render();
+reportHeight();
+</script>
+</body>
+</html>
