@@ -1,0 +1,584 @@
+{
+  "date": "2026-08-25",
+  "meta": {
+    "raw_count": 211,
+    "filtered_count": 178,
+    "selected_count": 11,
+    "crawl_time": "2026-08-25 10:30"
+  },
+  "lede": "CDPR 官宣 The Witcher IV 锁定 2028 年（Ciri 主角、Gamescom 前奏）；How to Fish 发售 2 天破 100 万份、Steam PCU 冲上 341,691 反超 MW4 beta；「苦行游戏」三连爆——Needle In A Haystack 视频播放破 4900 万且 Roblox 山寨涌现，Paint Drying Simulator 老游戏被推文翻红（34.5% 玩家真看完了 6 小时油漆变干）。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "CDPR 官宣 The Witcher IV 锁定 2028 年发售——Ciri 主角 + Gamescom Witcher 3 DLC 同场展示"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "Paint Drying Simulator「看油漆变干」翻红：34.5% 玩家看完 6 小时全程、11.4% 玩了 9 遍、被玩家打上 Souls-like 标签"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Claude Code 创始工程师 28 分钟 prompt 视频全球扩散（葡语区单推 287 万浏览）/ Kimi K3 生成深海科研机器人设计"
+    },
+    {
+      "id": "industry",
+      "text": "Witcher IV 官宣 2028 / How to Fish 2 天 100 万份 + PCU 341,691 超 MW4 beta / Blood of Dawnwalker 60fps day-one patch / Twitch 因 Amazon AI 训练遭集体诉讼 / GTA6 泄露「nothing burger」论"
+    },
+    {
+      "id": "indie",
+      "text": "苦行游戏三连爆：Needle In A Haystack 4900 万播放 + Roblox 山寨 / Paint Drying Simulator 翻红 / A Game About Being A Parrot 体验版"
+    },
+    {
+      "id": "tools",
+      "text": "UE5 Impact Frames Blueprint 资产：把动漫战斗的关键帧手感带进游戏攻击动画"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI 科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "01",
+          "source": "Gabriel Santos IA · 科技博主",
+          "tags": [
+            "Claude Code",
+            "prompt 工程",
+            "全球扩散"
+          ],
+          "title": "Claude Code 创始工程师 28 分钟 prompt 视频全球刷屏：葡语区单条推荐推文拿下 287 万浏览",
+          "en_title": "ÚLTIMAS NOTÍCIAS! O engenheiro que criou o Claude Code do zero acabou de publicar um vídeo de 28 minutos",
+          "full_text": "🚨 ÚLTIMAS NOTÍCIAS! O engenheiro que criou o Claude Code do zero acabou de publicar um vídeo de 28 minutos que é ouro puro: como escrever prompts que realmente entregam resultados absurdamente bons. Já vi cursos de US$ 300 que nem chegam perto do que ele explica nos primeiros 10 minutos. Arquivos CLAUDE.md, atalhos de memória, sessões paralelas e padrões de prompting que quase ninguém usa… Tudo em um único vídeo. Totalmente gratuito. Sem enrolação.",
+          "author": "DehumanoaDeus",
+          "date": "2026-08-23",
+          "likes": 29360,
+          "views": 2872122,
+          "comments": 180,
+          "shares": 4426,
+          "link": "https://x.com/DehumanoaDeus/status/2091558229683626051",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091557967875264512/img/g3FwauAlDnARvsKp.jpg",
+            "video_url": "https://x.com/DehumanoaDeus/status/2091558229683626051/video/1"
+          },
+          "summary": "葡语科技博主 Gabriel Santos 强烈推荐 Claude Code 创始工程师发布的 28 分钟免费 prompt 教学视频：CLAUDE.md 文件、记忆快捷方式、并行会话与几乎没人用的 prompt 模式。他评价「300 美元的付费课程都比不上这个视频前 10 分钟」。单条推文 287 万浏览、2.9 万赞。",
+          "analysis": "这条推文标志着该 prompt 视频已完成从英语核心圈向全球语言圈的扩散——昨日英语圈原推爆发（224 万浏览），今天葡语区自发接力推荐，且「免费内容吊打付费课程」的对比叙事是跨语言传播的最佳燃料。对游戏开发者的启示：CLAUDE.md + 并行会话这套方法论正在成为 AI 辅助开发的基础素养，语言壁垒已经消失。",
+          "recommendation": "Claude Code prompt 课 48 小时内完成全球扩散——葡语区单推 287 万浏览接力传播",
+          "featured": true
+        },
+        {
+          "idx": "02",
+          "source": "Dilum Sanjaya · AI 创作者",
+          "tags": [
+            "Kimi K3",
+            "AI 设计",
+            "机器人工程"
+          ],
+          "title": "Dilum Sanjaya 用 Kimi K3 设计深海科研机器人：水母仿生 + 六边形纳米结构触手，抗压设计有理有据",
+          "en_title": "I asked Kimi K3 to design a robot for deep sea research",
+          "full_text": "I asked Kimi K3 to design a robot for deep sea research. Here's what it came up with. A jellyfish inspired robot with tentacles built from a hexagonal nanostructured lattice, designed to withstand extreme pressure.",
+          "author": "DilumSanjaya",
+          "date": "2026-08-23",
+          "likes": 4496,
+          "views": 268387,
+          "comments": 170,
+          "shares": 466,
+          "link": "https://x.com/DilumSanjaya/status/2091568845463101550",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091567513461309440/img/optPoMFEHnspicOK.jpg",
+            "video_url": "https://x.com/DilumSanjaya/status/2091568845463101550/video/1"
+          },
+          "summary": "Dilum Sanjaya（three.js Opus 5 单 pass 渲染那位）让 Kimi K3 设计一台深海科研机器人，得到的方案是水母仿生造型：触手由六边形纳米结构晶格构成，专门为极端深海压力设计。设计说明与造型一体化输出。",
+          "analysis": "Kimi K3 在工程设计场景的表现开始被海外创作者主动展示——不是画概念图，而是给出「结构选型 + 材料逻辑 + 环境约束」的完整推理链。Dilum 连续两天用不同模型（Opus 5 / Kimi K3）产出高质量内容，说明「模型横评式创作」已成为 AI 内容博主的固定流量公式。",
+          "recommendation": "Kimi K3 深海机器人设计获 26.8 万浏览——国产模型在海外工程设计圈的能见度上升",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "01",
+          "source": "The Game Awards · 官方",
+          "tags": [
+            "CDPR",
+            "Witcher 4",
+            "2028",
+            "Gamescom"
+          ],
+          "title": "CDPR 官宣 The Witcher IV 锁定 2028 年发售：Ciri 主角，Gamescom 将展示 Witcher 3 新 DLC",
+          "en_title": "THE WITCHER IV is set to arrive in 2028.",
+          "full_text": "THE WITCHER IV is set to arrive in 2028.",
+          "author": "thegameawards",
+          "date": "2026-08-24",
+          "likes": 3336,
+          "views": 51806,
+          "comments": 43,
+          "shares": 319,
+          "link": "https://x.com/thegameawards/status/2091909580502515960",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQf0qYyWkAAJUw5.jpg"
+          },
+          "summary": "CDPR 通过 The Game Awards 官方渠道确认 The Witcher IV 目标 2028 年发售，主角为 Ciri。GameSpot 补充：CDPR 同时预告 Gamescom 期间有「一两个惊喜」，Witcher 3 新 DLC「Songs of the Past」将在 Gamescom Songs of the Past showcase 亮相并讲述「dark story」。Eurogamer/RPS/Polygon/DF 全线跟进报道。",
+          "analysis": "这是 Gamescom 2026 开幕前 24 小时最重磅的官宣：Witcher 4 从「开发中」进入「目标年份」阶段，且 CDPR 选择用 Witcher 3 DLC 的情怀展示为 Gamescom 预热——老 IP 维系 + 新作定档的组合拳。TheGamer 另指出 Witcher 4 将不推实体版（数字发行），与 Sony 停产光盘的行业趋势同频。对国内厂商的信号：3A 长线开发周期（官宣到发售 2 年+）已成常态。",
+          "recommendation": "Witcher IV 官宣 2028——Gamescom 前最大定档新闻，Ciri 承接主角 + Witcher 3 DLC 同场情怀杀",
+          "featured": true
+        },
+        {
+          "idx": "02",
+          "source": "Game*Spark · 日媒",
+          "tags": [
+            "How to Fish",
+            "100 万份",
+            "PCU 341,691",
+            "Steam"
+          ],
+          "title": "How to Fish 发售 2 天破 100 万份：PCU 冲上 341,691，Steam 同时在线反超 MW4 beta",
+          "en_title": "カオスな『How to Fish』2日で100万本突破！最大同接も約27万人",
+          "full_text": "最大8人の釣りゲーかと思ったらボスと戦うFPSでもあるカオスな『How to Fish』2日で100万本突破！最大同接も約27万人。今後はコンテンツをさらに増やしていき、バグも修正していくそうです。8月22日のパッチで最大4人から8人に増加。",
+          "author": "gamespark",
+          "date": "2026-08-24",
+          "likes": 1498,
+          "views": 246286,
+          "comments": 1,
+          "shares": 348,
+          "link": "https://x.com/gamespark/status/2091709947964985546",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2091709849495392256/pu/img/wktq2RqivGdMbost.jpg",
+            "video_url": "https://x.com/gamespark/status/2091709947964985546/video/1"
+          },
+          "summary": "Dazed Games 官宣「WE HIT 1 MILLION FISHERMEN!」：8 月 20 日发售的物理钓鱼模拟 How to Fish 两天销量破 100 万份。SteamDB 显示 PCU 达 341,691（好评率 91.83%），GameSpot 报道其 Steam 同时在线已反超 MW4 beta 首周末。8/22 patch 1.0.4 把联机从 4 人扩到 8 人；评价从「压倒性好评」微降至「特别好评」。日区售价 880 日元（38% off 545 日元至 8/28）。",
+          "analysis": "How to Fish 是本周「friendslop 联机梗游戏」公式的最强兑现：单价低（国区 ¥20.46）+ 物理搞笑 + 联机扩容（4→8 人）三连击，两天百万份的变现效率已超过多数 3A 首周。PCU 341,691 vs 0824 的 268K 再增 27%，且反超 MW4 beta——独立游戏在同时在线维度正面击败年货 FPS 是罕见的信号。风险点：评价从压倒性好评滑到特别好评，物理 bug 与内容量是留存关键。",
+          "recommendation": "How to Fish 两天 100 万份 + PCU 341,691 反超 MW4 beta——本周 friendslop 最大赢家",
+          "featured": true,
+          "game_ref": "How to Fish",
+          "enrichment": {
+            "game_name": "How to Fish（渔力全开）",
+            "genre": "动作 / 休闲 / 独立 / 模拟（物理钓鱼）",
+            "developer": "Dazed Games",
+            "platforms": [
+              "Steam (Windows)"
+            ],
+            "price": "¥20.46（-38% 折扣中，原价 ¥33）",
+            "release_date": "已发售 · 2026年8月20日",
+            "steam_rating": "特别好评（91.83%，PCU 341,691）",
+            "steam_url": "https://store.steampowered.com/app/4001890/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4001890/45c4ddff4901e32c4b8b643e1b97d0d01898d299/header.jpg?t=1787234618",
+            "youtube_video": null,
+            "description": "《How to Fish》（渔力全开）是一款物力交互的钓鱼模拟游戏。喝着酒驾着船撞上小岛，为了回家必须学会钓鱼——钓上来的鱼可以用拳头或枪「处决」。8/22 补丁把联机从 4 人扩到 8 人，两天销量破 100 万份，Steam PCU 达 341,691 反超 MW4 beta。"
+          }
+        },
+        {
+          "idx": "03",
+          "source": "GameSpot · 媒体",
+          "tags": [
+            "Blood of Dawnwalker",
+            "60fps",
+            "性能模式"
+          ],
+          "title": "Blood of Dawnwalker 听劝：Rebel Wolves 官宣主机版 day-one 补丁带 60fps 性能模式",
+          "en_title": "The Blood Of Dawnwalker Devs Heard Your 60fps Requests And Have Good News For Console Players",
+          "full_text": "The Blood Of Dawnwalker Devs Heard Your 60fps Requests And Have Good News For Console Players",
+          "author": "GameSpot",
+          "date": "2026-08-24",
+          "likes": 120,
+          "views": 40132,
+          "comments": 9,
+          "shares": 9,
+          "link": "https://x.com/GameSpot/status/2091878320824865223",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQfYP1sakAAjs9T.jpg"
+          },
+          "summary": "在性能表现引发担忧后，Rebel Wolves 确认 Blood of Dawnwalker 将在 PS5/PS5 Pro/Xbox Series X 上通过 day-one 补丁提供瞄准 60fps 的性能模式。Eurogamer/MP1st 同步报道，Polygon 确认补丁为发售日当天推送。",
+          "analysis": "「发售前性能恐慌 → 官方快速承诺 60fps patch」已成为 3A 发售前的标准公关剧本（与 Witcher 3 次世代、FF7 Rebirth 同款流程）。Dawnwalker 作为前 Witcher 3 核心团队新作，主机性能表现直接决定其与 CDPR 正面对位的口碑底盘，day-one patch 承诺是止损最小成本方案。",
+          "recommendation": "Blood of Dawnwalker 官宣 60fps day-one patch——发售前性能恐慌的标准解法",
+          "featured": false
+        },
+        {
+          "idx": "04",
+          "source": "PC Gamer · 媒体",
+          "tags": [
+            "Twitch",
+            "Amazon",
+            "AI 训练",
+            "集体诉讼"
+          ],
+          "title": "Twitch 因 Amazon AI 训练遭集体诉讼：「没发邮件、没弹窗、没公告」就默认开启数据采集",
+          "en_title": "Twitch hit with class-action lawsuit over Amazon AI training",
+          "full_text": "Twitch hit with class-action lawsuit over Amazon AI training https://t.co/h0mrEDUMcm",
+          "author": "pcgamer",
+          "date": "2026-08-24",
+          "likes": 47,
+          "views": 34579,
+          "comments": 1,
+          "shares": 9,
+          "link": "https://x.com/pcgamer/status/2091845702850945370",
+          "media": null,
+          "summary": "加州集体诉讼起诉 Twitch/Amazon：原告 Warren Pandiscia（约 1000 粉丝主播）指控 Amazon 未获许可使用 Twitch 直播内容训练生成式 AI——「没发邮件、没弹窗、没公告」就为所有账号默认开启该设置（由记者 Zach Bussey 首先发现）。诉状指出即使主播自己 opt-out，在他人直播间聊天的声音仍可能被采集（取决于房主设置）。Twitch 首席产品官此前承认采用 opt-out 设计是因为「没人会主动 opt-in」。",
+          "analysis": "这是「平台数据默认喂 AI」模式迎来的第一波正式司法挑战，与昨日 Bethesda 工会 rally、Sony #PSBlackout 同属平台问责季——创作者对「内容被拿去训练」的愤怒正在从舆论转向法律路径。对国内平台的镜鉴：默认开启 + 隐藏式告知的 AI 数据条款在欧美司法环境下已构成集体诉讼标的，合规设计需要前置。",
+          "recommendation": "Twitch 因 Amazon AI 训练数据采集遭集体诉讼——平台问责季从舆论战升级到法庭战",
+          "featured": true
+        },
+        {
+          "idx": "05",
+          "source": "GameSpot · 媒体",
+          "tags": [
+            "GTA6",
+            "泄露",
+            "Rockstar"
+          ],
+          "title": "前 Rockstar 导演谈 GTA6 泄露：「nothing burger」——不会造成什么伤害",
+          "en_title": "GTA 6 Leaks Don't Matter, So Please Calm Down, Ex-Rockstar Director Says",
+          "full_text": "GTA 6 Leaks Don't Matter, So Please Calm Down, Ex-Rockstar Director Says",
+          "author": "GameSpot",
+          "date": "2026-08-24",
+          "likes": 135,
+          "views": 25935,
+          "comments": 18,
+          "shares": 18,
+          "link": "https://x.com/GameSpot/status/2091916544070865371",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQf7AqnbQAAGA3l.jpg"
+          },
+          "summary": "前 Rockstar 导演对持续发酵的 GTA6 泄露风波降温：「nothing burger（小题大做）」，认为不会对游戏造成实质伤害。背景：泄露黑客 Cyberleek 此前烧掉 100 万美元加密货币自证、网站被封后仍在活动，最新泄露涉及地图与玩法片段；另有独立游戏蹭 GTA6 泄露热度营销。",
+          "analysis": "泄露方（烧钱自证的黑客）与降温方（前开发者）都在把事件推向各自叙事极端，但核心事实是 GTA6 泄露已连续 5 天占据游戏媒体头条——「泄露即流量」的媒体生态让降温尝试基本无效。对 Rockstar 而言，前员工出面降温本身就是官方不回应策略的延伸。",
+          "recommendation": "前 Rockstar 导演称 GTA6 泄露是「nothing burger」——泄露连续 5 天霸榜后的降温尝试",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "01",
+          "source": "Blendi · 独立开发者",
+          "tags": [
+            "Paint Drying Simulator",
+            "苦行游戏",
+            "翻红"
+          ],
+          "title": "「看油漆变干」游戏翻红：你一移开视线油漆就停止变干——因为它知道",
+          "en_title": "i made a game where you have to watch paint dry. if you look away from the paint it stops drying because it knows",
+          "full_text": "i made a game where you have to watch paint dry\n\nif you look away from the paint it stops drying because it knows",
+          "author": "BlendiByl",
+          "date": "2026-08-23",
+          "likes": 5900,
+          "views": 2112958,
+          "comments": 119,
+          "shares": 191,
+          "link": "https://x.com/BlendiByl/status/2091520688381116475",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091520536236969984/img/pObi9JDhgRsuYgCW.jpg",
+            "video_url": "https://x.com/BlendiByl/status/2091520688381116475/video/1"
+          },
+          "summary": "Blendi 的「看油漆变干」游戏推文两天 211 万浏览：规则只有一条——你必须盯着油漆看它变干，一旦移开视线油漆就会停止变干，「因为它知道」。IndieGameJoe 补充数据：这款游戏（Paint Drying Simulator，2021 年发售，¥6）34.5% 的买家真的看完了整整 6 小时全程，11.4% 的人回去又玩了 9 遍，还被玩家打上了 Souls-like 标签。",
+          "analysis": "Needle In A Haystack 走红 48 小时后，「苦行游戏」公式开始批量复制：把一句英文习语或荒诞前提做成唯一规则 + 加一个反直觉机制（油漆「知道」你在看）。老游戏 Paint Drying Simulator 被一条新推文翻红说明该品类的流量入口是「梗推文」而非游戏本身——2021 年的库存资产也能吃到 2026 年的梗红利。Souls-like 玩家标签是社区自嘲式二创，进一步放大传播。",
+          "recommendation": "Paint Drying Simulator 翻红：34.5% 玩家看完 6 小时油漆变干，2021 年老游戏吃到 2026 年苦行游戏梗红利",
+          "featured": true,
+          "game_ref": "Paint Drying Simulator",
+          "enrichment": {
+            "game_name": "Paint Drying Simulator",
+            "genre": "模拟（苦行/梗游戏）",
+            "developer": "GLADY'S Comcis",
+            "platforms": [
+              "Steam (Windows)"
+            ],
+            "price": "¥6.00",
+            "release_date": "已发售 · 2021年7月13日",
+            "steam_rating": "暂无最新统计（推文翻红中）",
+            "steam_url": "https://store.steampowered.com/app/1630590/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1630590/header.jpg?t=1738396806",
+            "youtube_video": null,
+            "description": "这就是一个看油漆变干 6 小时的游戏。规则：盯着油漆看它才会变干，移开视线就会停止——「因为它知道」。34.5% 的买家看完了 6 小时全程，11.4% 玩了 9 遍，被玩家打上 Souls-like 标签。"
+          }
+        },
+        {
+          "idx": "02",
+          "source": "DramaAlert · 资讯号",
+          "tags": [
+            "Needle In A Haystack",
+            "Roblox 山寨",
+            "4900 万播放"
+          ],
+          "title": "Needle In A Haystack 现象升级：视频播放破 4900 万、Roblox 山寨已排队上线",
+          "en_title": "DUMB: There is a new game where you try and find a needle in a haystack.",
+          "full_text": "DUMB: There is a new game where you try and find a needle in a haystack.",
+          "author": "DramaAlert",
+          "date": "2026-08-23",
+          "likes": 2174,
+          "views": 251043,
+          "comments": 56,
+          "shares": 89,
+          "link": "https://x.com/DramaAlert/status/2091565832736325778",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091156700849967104/img/l7Eom5a7hDeAB4k1.jpg",
+            "video_url": "https://x.com/DramaAlert/status/2091565832736325778/video/1"
+          },
+          "summary": "DramaAlert（游戏资讯梗号）报道「在 500 万根干草堆里找 1 根针」的游戏，配文只有一个词「DUMB」。Game*Spark 跟进：该视频播放已破约 4900 万次，而 Roblox 上山寨克隆作品已开始排队出现。另有 doomer 的梗推「游戏免费，金属探测器 DLC 卖 $999」拿下 1358 万浏览、32.7 万赞，成为全日最高流量推文。开发者 Nas（Vigilancer 2099 作者）确认 Steam 页面即将上线。",
+          "analysis": "Needle In A Haystack 完成了 viral 现象的完整三段式：核心圈自传播（37M）→ 媒体放大（Game*Spark/DramaAlert）→ 梗化与山寨（doomer $999 DLC 梗推 13.58M + Roblox 克隆涌现）。Roblox 山寨速度（48 小时内）再次验证其「热点即模板」的生态位——对原创者的警示：概念无法防御，变现窗口只有 Steam 页面上线后的第一波。",
+          "recommendation": "Needle In A Haystack 播放破 4900 万 + Roblox 山寨涌现 + doomer 梗推 1358 万浏览——苦行游戏全面梗化",
+          "featured": true,
+          "game_ref": "Needle In A Haystack",
+          "enrichment": {
+            "game_name": "Needle In A Haystack",
+            "genre": "3D 空间探索 / 苦行概念游戏",
+            "developer": "Nas（独立开发者，Vigilancer 2099 作者）",
+            "platforms": [
+              "Steam 页面即将上线"
+            ],
+            "price": "未定",
+            "release_date": "Steam 页面近日公开",
+            "steam_rating": "暂未上 Steam",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "500 万根干草里找 1 根针。视频播放破 4900 万次，Roblox 山寨克隆 48 小时内涌现，doomer「金属探测器 DLC $999」梗推 1358 万浏览。开发者 Nas 曾于 2022 年公布赛博朋克动作游戏 Vigilancer 2099。"
+          }
+        },
+        {
+          "idx": "03",
+          "source": "電ファミニコゲーマー · 日媒",
+          "tags": [
+            "A Game About Being A Parrot",
+            "体验版",
+            "捣乱沙盒"
+          ],
+          "title": "A Game About Being A Parrot 体验版上线：当一只「最恶鹦鹉」，毁掉所有人的每一天",
+          "en_title": "“最悪なオウム”となって好き放題イタズラできるゲーム『A Game About Being A Parrot』体験版がSteamにて公開中",
+          "full_text": "“最悪なオウム”となって好き放題イタズラできるゲーム『A Game About Being A Parrot』体験版がSteamにて公開中。みんなの一日を台無しにできる。壺を落としまくったり、人を蹴ったりして、とにかく周囲に迷惑をかけていく。稼いだお金でコスチュームや乗り物も購入可能",
+          "author": "denfaminicogame",
+          "date": "2026-08-24",
+          "likes": 3156,
+          "views": 247871,
+          "comments": 10,
+          "shares": 1137,
+          "link": "https://x.com/denfaminicogame/status/2091825413408555465",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2091825383117307904/pu/img/unuqFAK5UGgn9hsS.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2091825413408555465/video/1"
+          },
+          "summary": "AmirReza Moghaddam 开发、Grunge Studio 发行的捣乱沙盒 A Game About Being A Parrot 体验版登陆 Steam：玩家扮演一只鹦鹉，砸壶、踢人、弄乱整洁的房间，目标是把周围所有人的心情毁掉。捣乱赚的钱可以买鹦鹉服装和载具，还能入手「名画」然后毁掉它。体验版藏有隐藏要素——开发者表示「有些东西不希望玩家太早发现」。",
+          "analysis": "与苦行游戏同属「动物/荒诞前提 + 单一动词」公式，但方向相反：不是折磨玩家而是让玩家折磨 NPC。踢人 + 砸东西 + 毁名画的「破坏欲清单」设计精准踩中解压需求，電ファミ 1137 转发说明日本市场对「最恶宠物」题材接受度高。体验版先行 + 隐藏要素留悬念是低成本获客的标准独立游戏打法。",
+          "recommendation": "A Game About Being A Parrot 体验版：当最恶鹦鹉毁掉所有人的一天——破坏欲解压沙盒",
+          "featured": true,
+          "game_ref": "A Game About Being A Parrot",
+          "enrichment": {
+            "game_name": "A Game About Being A Parrot",
+            "genre": "冒险 / 休闲 / 独立（捣乱沙盒）",
+            "developer": "AmirReza Moghaddam（Grunge Studio 发行）",
+            "platforms": [
+              "Steam (Windows)"
+            ],
+            "price": "未定价（体验版免费）",
+            "release_date": "即将推出（体验版已公开）",
+            "steam_rating": "体验版阶段",
+            "steam_url": "https://store.steampowered.com/app/4383410/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4383410/e4ec4b1e49b7d19e56c0eda168649759256bda54/header_schinese.jpg?t=1787287966",
+            "youtube_video": null,
+            "description": "惹恼别人，偷他们的东西，破坏周围的一切，毁掉所有人的好心情，活脱脱就是只鹦鹉。捣乱赚钱买服装和载具，把「名画」到手然后毁掉它。体验版含隐藏要素。"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "SaturaDev · 独立开发者",
+          "tags": [
+            "苦行游戏",
+            "wheat from chaff"
+          ],
+          "title": "SaturaDev：从 1000 万根麦子里分离麦壳——Needle 同款苦行公式再添一员",
+          "en_title": "i made a game where you literally have to separate the wheat from the chaff",
+          "full_text": "i made a game where you literally have to separate the wheat from 10,000,000 pieces and you have to sort every single one",
+          "author": "saturadev",
+          "date": "2026-08-24",
+          "likes": 1343,
+          "views": 379053,
+          "comments": 89,
+          "shares": 40,
+          "link": "https://x.com/saturadev/status/2091733268706254932",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091733131950977024/img/K581FET5z6Y-RhnB.jpg",
+            "video_url": "https://x.com/saturadev/status/2091733268706254932/video/1"
+          },
+          "summary": "SaturaDev 把另一句英文习语「separate the wheat from the chaff（把小麦和麦壳分开）」做成游戏：1000 万根麦子，每一根都要你亲手分拣。37.9 万浏览。",
+          "analysis": "",
+          "recommendation": "SaturaDev 从 1000 万根麦子里分麦壳——苦行游戏公式第二发",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "4Gamer · 日媒",
+          "tags": [
+            "Dude, Trust Me",
+            "协作解谜"
+          ],
+          "title": "Dude, Trust Me 定档 2026 年 11 月：盲人 + 聋人 + 哑巴三人协作解谜，10 月出体验版",
+          "en_title": "協力型パズルゲーム「Dude, Trust Me」2026年11月に発売",
+          "full_text": "見えぬ，聞こえぬ，話せぬ3人で意思疎通しながら，ステージのクリアを目指そう。協力型パズルゲーム「Dude, Trust Me」，2026年11月に発売。体験版は10月7日に配信予定。「説明しきれないけど，信じて進んでくれ」",
+          "author": "4GamerNews",
+          "date": "2026-08-24",
+          "likes": 1494,
+          "views": 156941,
+          "comments": 0,
+          "shares": 234,
+          "link": "https://x.com/4GamerNews/status/2091801131056025989",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2091801113242767360/pu/img/fn4BIEO5Ye0KSmTw.jpg",
+            "video_url": "https://x.com/4GamerNews/status/2091801131056025989/video/1"
+          },
+          "summary": "Sefik Studios 协作解谜 Dude, Trust Me 定档 2026 年 11 月发售：三名玩家分别是失明、失聪、失声，必须互相沟通才能通关——「说不清楚，但请相信我往前走」。体验版 10 月 7 日上线。",
+          "analysis": "",
+          "recommendation": "Dude, Trust Me 定档 11 月：盲聋哑三人协作解谜，10 月 7 日体验版",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "電ファミニコゲーマー · 日媒",
+          "tags": [
+            "VHOLUME",
+            "跑酷",
+            "压倒性好评"
+          ],
+          "title": "VHOLUME 发售 2 天获「压倒性好评」：废墟都市跑酷好势头延续",
+          "en_title": "廃墟の都市を駆け抜けるパルクールアクションゲーム『VHOLUME』が発売2日で「圧倒的に好評」",
+          "full_text": "【高評価】廃墟の都市を駆け抜けるパルクールアクションゲーム『VHOLUME』が発売2日で「圧倒的に好評」を得る好調スタート。ジャンプ・スライディング・壁走りなどを駆使してコンクリートで埋め尽くされた都市を走る。マルチプレイにも対応し各レベルを一緒に攻略できる",
+          "author": "denfaminicogame",
+          "date": "2026-08-24",
+          "likes": 1224,
+          "views": 176333,
+          "comments": 2,
+          "shares": 195,
+          "link": "https://x.com/denfaminicogame/status/2091719617639248263",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2091719554191986688/pu/img/04Pr25qEIDfnoqZ3.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2091719617639248263/video/1"
+          },
+          "summary": "VHOLUME（昨日报道上线 Steam）发售 2 天即获 Steam「压倒性好评」：跳跃、滑铲、壁跑穿越混凝土废墟都市，支持多人联机共同攻略关卡。",
+          "analysis": "",
+          "recommendation": "VHOLUME 发售 2 天「压倒性好评」——废墟都市跑酷好势头延续",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Niche Gamer · 媒体",
+          "tags": [
+            "明日方舟：终末地",
+            "鹰角",
+            "9 月更新"
+          ],
+          "title": "明日方舟：终末地下 9 月上线「风雪之梦」更新：鹰角新作内容节奏提速",
+          "en_title": "Arknights: Endfield update “Dreamscape of Wind and Snow” launches in September",
+          "full_text": "Arknights: Endfield update “Dreamscape of Wind and Snow” launches in September",
+          "author": "nichegamer",
+          "date": "2026-08-24",
+          "likes": 17,
+          "views": 4200,
+          "comments": 0,
+          "shares": 3,
+          "link": "https://x.com/nichegamer/status/2091732847203684605",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQdT8IXXMAAHYr5.jpg"
+          },
+          "summary": "鹰角明日方舟：终末地下（Arknights: Endfield）公布 9 月更新「Dreamscape of Wind and Snow（风雪之梦）」，更多情报近期公开。",
+          "analysis": "",
+          "recommendation": "明日方舟：终末地下 9 月「风雪之梦」更新——鹰角内容节奏提速",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "Weird Kid Games · 开发者",
+          "tags": [
+            "FEED THE AI",
+            "愿望单",
+            "Steam Personal Calendar"
+          ],
+          "title": "FEED THE AI 愿望单 12 小时涨破 14,000：开发者盛赞 Steam 新功能 Personal Calendar",
+          "en_title": "12 hours ago I was celebrating FEED THE AI hitting 13,000 wishlists. Now we're already at 14,000",
+          "full_text": "12 hours ago I was celebrating FEED THE AI hitting 13,000 wishlists. Now we're already at 14,000 🚀. Steam's Personal Calendar might be the greatest invention of all time lol",
+          "author": "MaciejMikosDev",
+          "date": "2026-08-23",
+          "likes": 134,
+          "views": 6430,
+          "comments": 23,
+          "shares": 1,
+          "link": "https://x.com/MaciejMikosDev/status/2091451507186999733",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQZTds-WMAEMoLm.png"
+          },
+          "summary": "Weird Kid Games 的 FEED THE AI 愿望单 12 小时内从 13,000 涨到 14,000，开发者把爆发归功于 Steam 新功能 Personal Calendar（个人日历/提醒功能）带来的自然曝光。",
+          "analysis": "",
+          "recommendation": "FEED THE AI 愿望单 12 小时破 14,000——开发者盛赞 Steam Personal Calendar 新流量入口",
+          "featured": false,
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "01",
+          "source": "3DxDEV · 技术博主",
+          "tags": [
+            "UE5",
+            "Impact Frames",
+            "动画"
+          ],
+          "title": "UE5 Impact Frames Blueprint 资产：把动漫战斗场面的「关键帧冲击」直接装进你的攻击动画",
+          "en_title": "Impact frames — are why anime fight scenes land so hard. There's a Blueprint asset for Unreal Engine 5",
+          "full_text": "Impact frames — are why anime fight scenes land so hard. There's a Blueprint asset for Unreal Engine 5 that adds them to your game's attacks. Combat feel is 90% timing and 10% particles, and most projects get that ratio backwards. What's the best-feeling attack in any game you've played, and why? #UE5 #gamedev",
+          "author": "3DxDEV7",
+          "date": "2026-08-23",
+          "likes": 2191,
+          "views": 81499,
+          "comments": 21,
+          "shares": 207,
+          "link": "https://x.com/3DxDEV7/status/2091410726409679147",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091410705836552192/img/wKt9LbMqubqKCOAS.jpg",
+            "video_url": "https://x.com/3DxDEV7/status/2091410726409679147/video/1"
+          },
+          "summary": "3DxDEV 解释动漫战斗场面「打感」的核心秘密——Impact Frames（冲击帧，黑白闪帧），并推荐一款现成的 UE5 Blueprint 资产，可直接给游戏攻击动画加入冲击帧。他的观点：战斗手感 90% 靠时机、10% 靠粒子特效，而多数项目把这个比例做反了。",
+          "analysis": "「战斗手感 = 时机 > 特效」的论断在动作游戏开发圈持续获得共识，冲击帧是最低成本提升打感的手段（一帧黑白闪 vs 一套粒子系统）。现成 Blueprint 资产把动漫工业技法产品化， indie 团队可用极低成本获得 Guilty Gear 级别的视觉冲击。",
+          "recommendation": "UE5 Impact Frames Blueprint：动漫冲击帧一键进游戏——打感 90% 靠时机的实操方案",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Witcher IV 官宣 2028 年——Gamescom 前最大定档新闻**\nCDPR 通过 The Game Awards 官宣 The Witcher IV 目标 2028 年发售，Ciri 担任主角；Gamescom 期间将展示 Witcher 3 新 DLC「Songs of the Past」（dark story 定调）。TheGamer 另报道 Witcher 4 将不推实体版。GameSpot/Eurogamer/RPS/Polygon/DF 全线跟进。\n\n**How to Fish 两天 100 万份 + PCU 341,691 反超 MW4 beta**\nDazed Games 官宣「WE HIT 1 MILLION FISHERMEN!」：8/20 发售的物理钓鱼模拟 How to Fish 两天销量破 100 万。SteamDB PCU 达 341,691（好评率 91.83%），GameSpot 报道其同时在线反超 MW4 beta 首周末。8/22 补丁联机 4→8 人；评价从「压倒性好评」微降至「特别好评」。\n\n**Blood of Dawnwalker 60fps day-one patch**\n性能恐慌后 Rebel Wolves 快速官宣：PS5/PS5 Pro/Xbox Series X 发售日当天补丁提供瞄准 60fps 的性能模式。\n\n**Twitch 因 Amazon AI 训练遭集体诉讼**\n加州集体诉讼指控 Twitch/Amazon 未获许可用直播内容训练生成式 AI——「没邮件、没弹窗、没公告」默认开启（记者 Zach Bussey 发现）；即使主播 opt-out，在他人直播间聊天的声音仍可能被采集。平台问责季从舆论战升级到法庭战。\n\n**GTA6 泄露「nothing burger」论**\n前 Rockstar 导演称 GTA6 泄露「不会造成什么伤害」试图降温；但 Cyberleek 烧 $100 万加密货币自证、网站被封后仍在活动，泄露已连续 5 天霸榜游戏媒体头条。\n\n**AI：Claude Code prompt 课全球扩散 + Kimi K3 工程设计**\nClaude Code 创始工程师 28 分钟 prompt 视频完成全球扩散——葡语区单条推荐推 287 万浏览、2.9 万赞（「$300 付费课程比不上前 10 分钟」）。Dilum Sanjaya 用 Kimi K3 设计深海科研机器人（水母仿生 + 六边形纳米晶格触手）获 26.8 万浏览。\n\n**苦行游戏三连爆：needle 4900 万播放 + paint dry 翻红 + wheat chaff 跟进**\nNeedle In A Haystack 视频播放破 4900 万、Roblox 山寨 48 小时内涌现、doomer「金属探测器 DLC $999」梗推 1358 万浏览成全日最高；Blendi「看油漆变干」推文 211 万浏览，带火 2021 年老游戏 Paint Drying Simulator（34.5% 玩家看完 6 小时、11.4% 玩 9 遍、Souls-like 标签）；SaturaDev「1000 万根麦子分麦壳」37.9 万浏览跟进。A Game About Being A Parrot 体验版（最恶鹦鹉捣乱沙盒）電ファミ报道 24.8 万浏览。\n\n**新游参考区 5 款**\nDude, Trust Me（盲聋哑三人协作解谜，11 月发售）/ VHOLUME 发售 2 天压倒性好评 / 明日方舟：终末地下 9 月「风雪之梦」更新 / FEED THE AI 愿望单 12 小时破 14,000（Steam Personal Calendar 助推）/ SaturaDev wheat from chaff。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
