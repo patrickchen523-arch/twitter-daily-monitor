@@ -156,7 +156,12 @@
       return !!(impact&&impact.label.startsWith(state.overviewMetric==='flow'?'流水':'DAU'));
     };
     function renderOverviewTrend(){
-      const metric=state.overviewMetric,timeline=BASE_PERIOD_IDS.slice().sort();
+      const metric=state.overviewMetric;
+      // 趋势只显示近3个月周期；20260720之前的期需有周报内容来源的关联事件才显示
+      const cutoffD=new Date(+state.period.slice(0,4),+state.period.slice(4,6)-1,+state.period.slice(6,8));cutoffD.setMonth(cutoffD.getMonth()-3);
+      const cutId=`${cutoffD.getFullYear()}${String(cutoffD.getMonth()+1).padStart(2,'0')}${String(cutoffD.getDate()).padStart(2,'0')}`;
+      const hasEventSrc=pid=>Object.keys(INTEL[pid]||{}).length>0||(PERIODS[pid]?.items||[]).some(i=>(i.keywords||[]).length||(i.summary||'').length);
+      const timeline=BASE_PERIOD_IDS.filter(pid=>pid>=cutId&&(pid>='20260720'||hasEventSrc(pid))).sort();
       const cw0=$('#overviewChart')?.clientWidth||980,W=Math.max(280,Math.min(980,cw0)),H=W<600?240:320,P={l:W<600?44:62,r:W<600?16:20,t:22,b:42};
       const allSeries=Object.keys(META).map(id=>({id,points:timeline.map(pid=>({pid,item:PERIODS[pid].items.find(x=>x.id===id)})).filter(x=>x.item?.[metric]!=null)})).filter(x=>x.points.length>=2);
       if(state.overviewSelected===null){const priorityIds=period().items.filter(x=>isPriority(x,state.period)).map(x=>x.id).filter(id=>allSeries.some(s=>s.id===id));state.overviewSelected=priorityIds.length?priorityIds:allSeries.slice(0,3).map(s=>s.id)}
