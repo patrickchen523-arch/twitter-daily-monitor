@@ -66,6 +66,27 @@ for (const b of day.boards || []) {
 }
 
 const list = Object.values(cand);
+// 同名合并: B站条目无appid时与SteamDB条目按规范化名归并,避免重复推荐
+{
+  const byNorm = {};
+  for (const c of list) {
+    const n = norm(c.name);
+    if (byNorm[n]) { const t = byNorm[n]; t.dup = t.dup || []; t.dup.push(c); }
+    else byNorm[n] = c;
+  }
+  for (const n of Object.keys(byNorm)) {
+    const t = byNorm[n];
+    if (!t.dup) continue;
+    for (const c of t.dup) {
+      Object.assign(t.boards, c.boards);
+      if (!t.appid) t.appid = c.appid;
+      if (!t.thumb) t.thumb = c.thumb;
+      if (!t.link) t.link = c.link;
+      list.splice(list.indexOf(c), 1);
+    }
+    delete t.dup;
+  }
+}
 const maxViews = Math.max(0, ...list.map(c => (c.boards.twitter || {}).views || 0));
 const maxGain = Math.max(0, ...list.map(c => (c.boards.steamdb || {}).gain || 0));
 
