@@ -1,0 +1,563 @@
+{
+  "date": "2026-08-26",
+  "meta": {
+    "raw_count": 216,
+    "filtered_count": 172,
+    "selected_count": 11,
+    "crawl_time": "2026-08-26 10:30"
+  },
+  "lede": "腾讯领投 W4 Games $1800 万 B 轮——Godot 开源引擎生态拿下里程碑级注资；Steam 周畅销榜 How to Fish 登顶反超 CoD MW4（MW4 beta CCU 同时腰斩）；苦行游戏第二发 Wheat from the Chaff 正式化：开发者暂停其他项目全力投入，视频播放 166 万。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "腾讯领投 W4 Games $1800 万 B 轮 + 多年战略伙伴关系——Godot 企业级生态与亚洲扩张的里程碑"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "Wheat from the Chaff「1000 万颗麦子一颗颗分拣」正式化：开发者暂停其他项目专注开发，日媒报道玩家求多人模式分担痛苦"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Claude Code 243 版 ESM 按需加载实测（内存 -85%）/ 一人 $300 用 Claude Code+Godot 4 周做出 3D 钓鱼游戏"
+    },
+    {
+      "id": "industry",
+      "text": "腾讯领投 W4 Games $18M / Steam 周榜 How to Fish #1 超 MW4（beta CCU 腰斩）/ Take-Two GTA6 传票要 Discord 数千用户 IP+手机号引隐私争议 / Roblox 禁 16 岁以下无限滚动奖励游戏 / Gamescom ONL 今晚开播"
+    },
+    {
+      "id": "indie",
+      "text": "苦行游戏第二发 Wheat from the Chaff 正式化 / ROLLA 肉块吞城 10 月 1 日发售 / 2017 老游戏 Echo 菜单 231 万浏览翻红"
+    },
+    {
+      "id": "tools",
+      "text": "three.js 开源 VFX playground：Minimax-M3 生成的 10 个实时技能特效"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI 科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "01",
+          "source": "陈成 · 独立开发者",
+          "tags": [
+            "Claude Code",
+            "ESM",
+            "性能优化"
+          ],
+          "title": "Claude Code 243 版重构实测：70 万行 cli.js 拆成 1300 个 ESM 按需加载，启动内存 -85%",
+          "en_title": "claude code 243: code is now loaded on demand",
+          "full_text": "今天例行翻 claude code 源码，发现最新的版本 243 里，产物结构从一个 70 万行的 cli.js 改成 1300 多个 esm 模型按需加载的方式。看了眼 changelog，「code is now loaded on demand」一笔带过。但感觉是个比较有意义的变更，就详细对比了下 241 版。1\\ claude --version：峰值内存 267MB → 40MB，-85%，CPU 90ms → 10ms 2\\ 交互会话空载：460MB → 416MB 3\\ 跑完一轮对话：461MB → 384MB，新版会主动回落，旧版不会回落 3\\ 流式渲染 300 行长回复：峰值 528MB → 467MB，单轮 CPU 省 17% 官方 changelog 称每个会话省 40-70MB，实测 44-77MB，差不多。代价是二进制包从 325MB 涨到 361MB。",
+          "author": "chenchengpro",
+          "date": "2026-08-25",
+          "likes": 23,
+          "views": 7818,
+          "comments": 17,
+          "shares": 2,
+          "link": "https://x.com/chenchengpro/status/2092171158603091969",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQjicwgbIAASjm7.jpg"
+          },
+          "summary": "陈成对比 Claude Code 241/243 两版源码发现：243 版把 70 万行单文件 cli.js 重构为 1300+ 个 ESM 模块按需加载。实测 claude --version 峰值内存 267MB→40MB（-85%）、CPU 90ms→10ms；跑完一轮对话 461MB→384MB 且新版会主动回落；流式渲染 300 行长回复单轮 CPU 省 17%。官方 changelog 只用一句「code is now loaded on demand」带过，实测每会话省 44-77MB 与官方口径吻合。代价是二进制包 325MB→361MB。",
+          "analysis": "这是 AI 编码工具进入「工程打磨期」的标志性细节：CLI 工具的启动内存和 CPU 开销直接决定 agent 并行会话数量的上限——按需加载让单机跑多 agent 的资源成本大幅下降。对游戏开发者的启示：把 AI 工具当基础设施看待时，版本间的性能差异值得像依赖升级一样追踪；陈成这类「翻源码验证 changelog」的深度内容在中文 AI 圈持续获得高互动。",
+          "recommendation": "Claude Code 243 版 ESM 按需加载实测：启动内存 -85%——AI 工具进入工程打磨期",
+          "featured": true
+        },
+        {
+          "idx": "02",
+          "source": "Hakimi Eiqbal · 独立开发者",
+          "tags": [
+            "AI 游戏开发",
+            "Claude Code",
+            "Godot"
+          ],
+          "title": "一人 + $300 预算：用 Claude Code + Godot 四周做出 3D 钓鱼游戏，Blender MCP 建模 + Tripo 3D 生成",
+          "en_title": "4 weeks ago, this AI-built fishing game barely existed",
+          "full_text": "4 weeks ago, this AI-built fishing game barely existed. Now it has a fully 3D harbor, dynamic water, day/night cycles, custom UI and an increasingly polished world. Built mostly with Claude Code + Godot. 3D models made through Blender MCP and Tripo 3D. Images generated with ChatGPT. Total cost so far: ~$300. One person + AI is slowly turning this into an actual game",
+          "author": "hakimieiqbal",
+          "date": "2026-08-25",
+          "likes": 145,
+          "views": 6390,
+          "comments": 12,
+          "shares": 7,
+          "link": "https://x.com/hakimieiqbal/status/2092194086073614342",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2092194037012815872/pu/img/xYxq_reHMqAFFmpk.jpg",
+            "video_url": "https://x.com/hakimieiqbal/status/2092194086073614342/video/1"
+          },
+          "summary": "Hakimi Eiqbal 展示四周前几乎不存在的 AI 辅助钓鱼游戏：现在已有完整 3D 港口、动态水面、昼夜循环、自定义 UI。技术栈：Claude Code + Godot 为主力，3D 模型用 Blender MCP 和 Tripo 3D 生成，图片用 ChatGPT 生成，总成本约 $300。",
+          "analysis": "「一人 + AI + 极低预算」的完整技术栈组合已经成型：编码（Claude Code）+ 引擎（Godot）+ 建模（Blender MCP / Tripo 3D）+ 平面（ChatGPT）各司其职。与昨日 Tesana（Godot 专用 AI 助手）对照，个人开发者的 AI 游戏管线正在从「演示级」走向「可发售级」——$300 成本线对独立开发者意味着试错几乎无门槛，也预示着 Steam 新品供给将继续放量。",
+          "recommendation": "一人 $300 四周做出 3D 钓鱼游戏——Claude Code+Godot+Blender MCP 全 AI 管线成型",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "01",
+          "source": "W4 Games · 官方",
+          "tags": [
+            "腾讯",
+            "Godot",
+            "融资",
+            "开源引擎"
+          ],
+          "title": "腾讯领投 W4 Games $1800 万 B 轮并签多年战略伙伴关系：Godot 企业级生态与亚洲扩张的里程碑",
+          "en_title": "W4 Games raised a $18m Series B led by Tencent",
+          "full_text": "We are delighted to announce that @W4Games raised a $18m Series B led by @TencentGlobal, alongside a strategic partnership to grow our business and the worldwide adoption of #GodotEngine.",
+          "author": "W4Games",
+          "date": "2026-08-25",
+          "likes": 153,
+          "views": 13703,
+          "comments": 15,
+          "shares": 13,
+          "link": "https://x.com/W4Games/status/2092170887877263633",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQjfZP8WwAAseNa.jpg"
+          },
+          "summary": "W4 Games（都柏林，由 Godot 核心开发者创立、为企业提供 Godot 商业支持）官宣 $1800 万 B 轮：腾讯领投，OSS Capital、LUX、Naval Ravikant、Tobias Lutke 家族办公室跟投，总融资达 $3300 万。同时与腾讯签订多年战略伙伴关系，重点扩张亚洲 Godot 生态（go-to-market、本地化、生态支持），团队将扩编 50%。官方披露数据：Steam 上 Godot 游戏数 2024/2025 连续两年同比增长超 50%；年收入超 $100 万的 Godot 游戏三年内从 2 款涨到 50+ 款；Global Game Jam / GMTK Game Jam 提交中 Godot 份额从 2022 年的 10% 涨到 50%。",
+          "analysis": "这是开源游戏引擎生态迄今最大的一笔平台级注资：腾讯把 Godot 纳入战略投资组合，等于给「后 Unity 定价危机时代」的开发者迁移潮上了保险。数据侧三个信号值得记录——Game Jam 份额 10%→50% 说明新世代开发者默认引擎已经换位；百万美元年收入游戏 2→50+ 说明商业可行性闭环成立；W4「企业需求反哺上游」的模式让开源引擎有了可持续的商业引擎。对国内团队：Godot 亚洲生态（本地化+支持）即将补齐，选型风险进一步下降。",
+          "recommendation": "腾讯领投 W4 Games $18M B 轮 + 多年战略伙伴——Godot 生态里程碑，Game Jam 份额已达 50%",
+          "featured": true
+        },
+        {
+          "idx": "02",
+          "source": "SteamDB · 数据平台",
+          "tags": [
+            "Steam 周榜",
+            "How to Fish",
+            "MW4"
+          ],
+          "title": "Steam 周畅销榜：How to Fish 登顶反超 CoD MW4；MW4 beta 第二个周末 CCU 腰斩",
+          "en_title": "#SteamTopSellers for week of 18 Aug — 25 August 2026 (No F2P)",
+          "full_text": "#SteamTopSellers for week of 18 Aug — 25 August 2026 (No F2P): #1 - How to Fish #2 - Call of Duty®: Modern Warfare® 4 #3 - Mortal Shell II #4 - WARDOGS #5 - S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+          "author": "SteamDB",
+          "date": "2026-08-25",
+          "likes": 52,
+          "views": 5893,
+          "comments": 0,
+          "shares": 1,
+          "link": "https://x.com/SteamDB/status/2092243179093323796",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQk90mZXsAAfg3m.jpg"
+          },
+          "summary": "SteamDB 周畅销榜（8/18-25，不含免费游戏）：#1 How to Fish、#2 CoD: Modern Warfare 4、#3 Mortal Shell II、#4 WARDOGS、#5 S.T.A.L.K.E.R. 2。另一面：TheGamer 报道 MW4 beta Steam CCU 相比首周末已跌去近一半；Eurogamer 玩家反馈 beta 移动速度过快、滑铲滥用引发不满。",
+          "analysis": "How to Fish 完成从「PCU 现象」到「周销量登顶」的完整兑现——$20 级 friendslop 在收入维度正面击败年货 FPS 首发周，且同期 MW4 beta CCU 腰斩、口碑争议（滑铲节奏）叠加，形成独立游戏 vs 3A 年货的本周最强对照叙事。Mortal Shell II（#3）与 WARDOGS（#4，约 50 万人参与 CB 测试、Steam PCU 10 万）说明中体量买断制新品的窗口期依然健康。",
+          "recommendation": "Steam 周榜 How to Fish #1 反超 MW4——friendslop 完成销量维度兑现，MW4 beta CCU 腰斩",
+          "featured": true
+        },
+        {
+          "idx": "03",
+          "source": "PC Gamer · 媒体",
+          "tags": [
+            "GTA6",
+            "Take-Two",
+            "Discord",
+            "隐私"
+          ],
+          "title": "Take-Two GTA6 追查传票升级：索要 Discord 服务器数千成员的 IP、手机号与设备标识，Discord 回应「尚未送达」",
+          "en_title": "As Take-Two seeks IP addresses and phone numbers of thousands in GTA 6 subpoena, Discord says it's not been served the order just yet",
+          "full_text": "As Take-Two seeks IP addresses and phone numbers of thousands in GTA 6 subpoena, Discord says it's not been served the order just yet",
+          "author": "pcgamer",
+          "date": "2026-08-25",
+          "likes": 16,
+          "views": 16694,
+          "comments": 2,
+          "shares": 0,
+          "link": "https://x.com/pcgamer/status/2092213237081313331",
+          "media": null,
+          "summary": "The Verge 获得的文件显示：Take-Two 向 Discord 申请的传票要求交出 2026 年 6 月 1 日至今相关服务器全部成员的账号 ID、注册邮箱、注册/最后登录 IP、手机号、关联账号（Google/Xbox 等）、设备标识符及 OneDrive 中 GTA/Rockstar/Cyberleek 相关内容——涉及 ! Odyssey（约 5,600 成员）与 DarkViperAU（10 万+ 成员）等服务器，数千无辜用户隐私可能被牵连。传票 8/21 已获批准但尚未送达；Discord 营销总监 Ryan K. Rigney 回应「尚未收到 Take-Two 传票，收到后会先评估有效性与范围再回应」。Eurogamer/RPS 同步报道。",
+          "analysis": "GTA6 泄露事件从「黑客秀肌肉」进入「平台级司法取证」阶段：为追查 Cyberleek 一人，传票范围覆盖数万 Discord 用户的身份数据，隐私边界争议迅速盖过泄露本身——与 Twitch AI 训练集体诉讼同周发生，「平台用户数据被谁、以多大范围调用」成为本周行业问责的第二条战线。对国内厂商的镜鉴：跨境取证请求的合规边界与用户告知义务需要前置设计。",
+          "recommendation": "Take-Two 传票索要 Discord 数千用户 IP+手机号追查 Cyberleek——隐私争议盖过泄露本身",
+          "featured": true
+        },
+        {
+          "idx": "04",
+          "source": "Rock Paper Shotgun · 媒体",
+          "tags": [
+            "Roblox",
+            "平台治理",
+            "未成年人"
+          ],
+          "title": "Roblox 出手治理「无限滚动奖励」游戏：16 岁以下用户不再获得 TikTok 式刷屏奖励",
+          "en_title": "Roblox put a stop to games that include rewards for endless, TikTok-style scrolling, if you're under the age of 16 anyway",
+          "full_text": "Roblox put a stop to games that include rewards for endless, TikTok-style scrolling, if you're under the age of 16 anyway",
+          "author": "rockpapershot",
+          "date": "2026-08-25",
+          "likes": 0,
+          "views": 822,
+          "comments": 0,
+          "shares": 0,
+          "link": "https://x.com/rockpapershot/status/2092284863013368063",
+          "media": null,
+          "summary": "Roblox 平台新规：包含「TikTok 式无限滚动 + 奖励」机制的游戏，对 16 岁以下用户不再展示/发放奖励。RPS 报道指出这是 Roblox 对成瘾性设计与未成年人保护压力的又一次让步。",
+          "analysis": "与 needle 山寨潮（48 小时 14 个克隆）同周出现的治理动作：Roblox 的「热点即模板」生态既是活力也是风险源，无限滚动奖励类玩法直指未成年人成瘾争议——平台选择按年龄分层限制而非全面封禁，是「保创作者生态 + 回应监管压力」的折中方案。对 UGC 平台设计的启示：成瘾性机制的年龄分层管控可能成为行业标配。",
+          "recommendation": "Roblox 禁 16 岁以下「无限滚动奖励」游戏——成瘾性设计按年龄分层治理",
+          "featured": false
+        },
+        {
+          "idx": "05",
+          "source": "GameSpot · 媒体",
+          "tags": [
+            "Gamescom",
+            "ONL 2026",
+            "前瞻"
+          ],
+          "title": "Gamescom Opening Night Live 2026 今晚开播：Witcher 3 新 DLC「Songs of the Past」全球首秀打头阵",
+          "en_title": "Gamescom Opening Night Live 2026: Start Time, How To Watch, And What To Expect",
+          "full_text": "Gamescom Opening Night Live 2026: Start Time, How To Watch, And What To Expect",
+          "author": "GameSpot",
+          "date": "2026-08-25",
+          "likes": 29,
+          "views": 22915,
+          "comments": 1,
+          "shares": 8,
+          "link": "https://x.com/GameSpot/status/2092240689522430025",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HQkh0gQbIAASwva.jpg"
+          },
+          "summary": "Gamescom 2026 Opening Night Live 于北京时间 8/26 凌晨开播（Geoff Keighley 主持）。GameSpot/PC Gamer 发布观看指南；Eurogamer 实况报道确认 Witcher 3 新 DLC「Songs of the Past」将全球首秀（此前 CDPR 预告「dark story」+ Gamescom Songs of the Past showcase），Gears of War: E-Day 等更多世界首曝在列。昨日官宣的 Witcher IV 2028 定档为 ONL 预热最高潮。",
+          "analysis": "昨日 Witcher IV 定档 2028 + Witcher 3 DLC 首秀的组合让 CDPR 系成为本届 ONL 的绝对主角。对日报而言：ONL 实际公布内容将进入明日（0827）数据窗口，今晚可重点关注 Witcher 3 DLC 展示、Gears of War: E-Day、以及 Geoff 预告的 surprise。Gamescom 周通常是下半年 3A 营销节奏的启动点，值得连续追踪一周。",
+          "recommendation": "Gamescom ONL 2026 今晚开播——Witcher 3 新 DLC 全球首秀打头阵，实际内容进明日日报",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "01",
+          "source": "電ファミニコゲーマー · 日媒",
+          "tags": [
+            "Wheat from the Chaff",
+            "苦行游戏",
+            "SaturaDev"
+          ],
+          "title": "苦行游戏第二发正式化：Wheat from the Chaff「1000 万颗麦子逐颗分拣」，开发者暂停其他项目全力投入",
+          "en_title": "【狂気】“1000万個”の「麦と殻」をひと粒ずつ選別するゲームが開発中",
+          "full_text": "【狂気】“1000万個”の「麦と殻」をひと粒ずつ選別するゲームが開発中。「気が狂う一番簡単な方法」と話題に。『Wheat from the Chaff』の映像は約166万表示、2700いいねを記録。開発者は他プロジェクトを保留にして本作の開発に集中すると発表",
+          "author": "denfaminicogame",
+          "date": "2026-08-25",
+          "likes": 1064,
+          "views": 221612,
+          "comments": 8,
+          "shares": 321,
+          "link": "https://x.com/denfaminicogame/status/2092026459959513142",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2092026422454112256/pu/img/wQRZoQ6JaOvB91M9.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2092026459951882555/video/1"
+          },
+          "summary": "電ファミ报道 SaturaDev 的 Wheat from the Chaff：木铲舀起麦堆摊在桌上，逐颗抓起扔进左侧桶或右侧篮——1000 万颗麦子和麦壳，每颗都要亲手分拣。5 连续成功触发音效，失败显示 ×。视频结尾玩家盯着虚空发呆 5 秒。视频约 166 万播放；开发者宣布暂停其他项目专注本作，Steam 页面近日公开。玩家热评：「发疯最简单的方法」「求多人模式，想和朋友分担痛苦」「找到最后一颗掉哪之前都是好游戏」。",
+          "analysis": "Needle In A Haystack 走红 72 小时后，第二句英文习语「separate the wheat from the chaff」完成游戏化并正式化——「暂停其他项目全力投入」的表态说明开发者判断这不是玩梗而是一个真实的市场机会（needle 原作视频已 4900 万播放）。玩法层比 needle 多了「正确/错误分拣」的判定反馈（连击音效+失败标记），把纯苦行变成了可优化的技能挑战。日媒连续第二天头版报道苦行游戏品类，说明该梗已完成跨语言渗透。",
+          "recommendation": "Wheat from the Chaff 正式化：1000 万颗麦子逐颗分拣，开发者暂停其他项目全力投入",
+          "featured": true,
+          "game_ref": "Wheat from the Chaff",
+          "enrichment": {
+            "game_name": "Wheat from the Chaff",
+            "genre": "模拟 / 苦行概念游戏",
+            "developer": "SaturaDev（独立开发者）",
+            "platforms": [
+              "Steam 页面即将上线"
+            ],
+            "price": "未定",
+            "release_date": "Steam 页面近日公开",
+            "steam_rating": "暂未上 Steam",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "把英文习语「把小麦和麦壳分开」做成游戏：1000 万颗麦子逐颗分拣，木铲舀起、摊开、抓起、扔进正确的容器。5 连击触发音效，失败显示 ×。视频 166 万播放，开发者已暂停其他项目专注开发。"
+          }
+        },
+        {
+          "idx": "02",
+          "source": "AUTOMATON · 日媒",
+          "tags": [
+            "ROLLA",
+            "B级恐怖",
+            "Pixel Arcadia"
+          ],
+          "title": "ROLLA 定档 10 月 1 日：扮演不断变大的外星肉块吞噬整座城市，B 级恐怖片式新闻直播画面",
+          "en_title": "肉塊となって街を呑み込むゲーム『ROLLA』10月1日配信へ",
+          "full_text": "【ニュース】肉塊となって街を呑み込むゲーム『ROLLA』10月1日配信へ。人も車も全てを喰らう、阿鼻叫喚“B級ホラー風”アクション",
+          "author": "AUTOMATONJapan",
+          "date": "2026-08-25",
+          "likes": 815,
+          "views": 162060,
+          "comments": 15,
+          "shares": 286,
+          "link": "https://x.com/AUTOMATONJapan/status/2092128182736757154",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2092128127518691329/img/C_sOTolupN2TsgNL.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2092128182736757154/video/1"
+          },
+          "summary": "Pantaloon 在 Pixel Arcadia 发布会官宣 Tyrmä Games 的 ROLLA 10 月 1 日登陆 Steam：玩家扮演起源不明的搏动肉块 ROLLA，俯视角滚动冲撞破坏建筑、吞食行人与车辆不断变大；警察和军队用枪械与火焰喷射器反击，受创会缩小。画面模仿新闻速报直播（底部字幕滚动），收录全球多城市地图、独立任务与收集要素、冷却冲刺、在线排行榜。开发者表示「没有胜利条件、最终必然被击倒」是对 B 级恐怖片「怪物几乎从不获胜」的还原，但存在隐藏通关条件。2025 年 9 月开 Steam 页、10 月出 demo 并持续更新至今。",
+          "analysis": "「Katamari 卷球 + Carrion 吞噬 + B 级片新闻直播包装」的三合一公式，新闻速报式 UI 是最强的记忆点与传播素材（天然适配短视频剪辑）。「必然失败 + 隐藏通关」的设计哲学把街机高分追逐和叙事彩蛋结合，demo 迭代近一年说明团队在用长线打磨换首发口碑。10 月档期避开了 9 月大作扎堆，B 级恐怖题材在万圣节前有天然的季节红利。",
+          "recommendation": "ROLLA 定档 10/1：外星肉块吞城 + 新闻直播画面——Katamari×Carrion×B级片三合一",
+          "featured": true,
+          "game_ref": "ROLLA",
+          "enrichment": {
+            "game_name": "ROLLA",
+            "genre": "动作 / 独立（街机式破坏）",
+            "developer": "Tyrmä Games（Pantaloon 发行）",
+            "platforms": [
+              "Steam (Windows)"
+            ],
+            "price": "未定价",
+            "release_date": "2026年10月1日（Steam 页面显示 9/30，以发布会口径 10/1 为准）",
+            "steam_rating": "demo 已迭代近一年",
+            "steam_url": "https://store.steampowered.com/app/3975830/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3975830/4ae9f10a35cd0d99f4ec04bea79b34c3431721fc/header.jpg?t=1787598309",
+            "youtube_video": null,
+            "description": "BREAKING NEWS! 市中心正被一团滚动的搏动肉块肆虐！扮演外星肉块 ROLLA 破坏建筑、吞食人类不断变大，在警察与军队的反击中求生。新闻速报式直播画面 + 全球多城市地图 + 在线排行榜，10 月 1 日发售。"
+          }
+        },
+        {
+          "idx": "03",
+          "source": "Nate Dogg · 博主",
+          "tags": [
+            "Echo",
+            "菜单设计",
+            "翻红"
+          ],
+          "title": "2017 年老游戏 Echo 的菜单被翻红：「见过最酷的游戏菜单」——231 万浏览",
+          "en_title": "this is the coolest fucking menu ive ever seen in a game",
+          "full_text": "this is the coolest fucking menu ive ever seen in a game",
+          "author": "WarmPlatypus",
+          "date": "2026-08-25",
+          "likes": 93720,
+          "views": 2311589,
+          "comments": 161,
+          "shares": 4619,
+          "link": "https://x.com/WarmPlatypus/status/2092060143408050341",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2092060005830725632/img/I-cUSOf3Br4Y82tW.jpg",
+            "video_url": "https://x.com/WarmPlatypus/status/2092060143408050341/video/1"
+          },
+          "summary": "Nate Dogg 发布 10 秒视频展示一款游戏的主菜单并配文「这是我在游戏里见过最他妈酷的菜单」，231 万浏览、9.4 万赞成为今日游戏区最高互动推文。作者在回复中确认游戏是 Echo（2017 年，ULTRA ULTRA 开发的科幻潜行游戏，appid 551770）——菜单以游戏内的传奇宫殿为场景，选项直接融入场景交互。评论区出现「Steam 上叫 Echo 的游戏有 10 个」的找游戏小插曲。",
+          "analysis": "与 Paint Drying Simulator 翻红同款机制：老游戏资产 + 一条高感染力推文 = 零成本流量回灌。Echo 的宫殿菜单是 2017 年公认的菜单设计标杆（场景化 UI 先驱之一），但当年叫好不叫座（工作室做完这一款就解散）；9 年后被短视频重新挖出，说明「设计前瞻性」在算法时代有超长尾的变现窗口。对开发者的启示：菜单/开场 30 秒是短视频时代最重要的自传播素材，值得按预告片规格打磨。",
+          "recommendation": "2017 老游戏 Echo 宫殿菜单翻红：231 万浏览 9.4 万赞——场景化 UI 的超长尾红利",
+          "featured": true,
+          "game_ref": "Echo",
+          "enrichment": {
+            "game_name": "Echo",
+            "genre": "动作 / 科幻潜行",
+            "developer": "ULTRA ULTRA（已解散）",
+            "platforms": [
+              "Steam (Windows)"
+            ],
+            "price": "已发售多年（历史低价约 ¥20 级）",
+            "release_date": "已发售 · 2017年9月19日",
+            "steam_rating": "特别好评（历史口碑稳定）",
+            "steam_url": "https://store.steampowered.com/app/551770/",
+            "header_image": null,
+            "youtube_video": null,
+            "description": "少女 En 在百年休眠后抵达传说中的宫殿，用被遗忘的技术复活挚爱。宫殿会学习并复制玩家的行为模式——你反复潜行，敌人就学会潜行。其场景化主菜单（选项融入宫殿场景）在 2026 年被推文翻红，231 万浏览。"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "adam pype · 独立开发者",
+          "tags": [
+            "苦行游戏",
+            "needle 变体"
+          ],
+          "title": "needle 变体再+1：500 万只眼睛的人堆里找「针」——把 haystack 换成人",
+          "en_title": "im making a game thats literally about finding a needle in a haystack but the haystack is people and the needle is eyes",
+          "full_text": "im making a game thats literally about finding a needle in a haystack but the haystack is people and the needle is eyes and also there are 5.000.000 eyes",
+          "author": "adampi",
+          "date": "2026-08-24",
+          "likes": 7402,
+          "views": 163284,
+          "comments": 44,
+          "shares": 518,
+          "link": "https://x.com/adampi/status/2092035563951882555",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/tweet_video_thumb/HQhm-C9XcAAzEKI.jpg",
+            "video_url": "https://x.com/adampi/status/2092035563951882555/video/1"
+          },
+          "summary": "adam pype 的 needle 变体：干草堆换成人堆、针换成眼睛——500 万只眼睛里找目标。16.3 万浏览、7402 赞。",
+          "analysis": "",
+          "recommendation": "adam pype「500 万只眼睛」——needle 苦行公式最惊悚变体，16 万浏览",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "ゲムのすけ · 日媒博主",
+          "tags": [
+            "Tandem Together",
+            "双人协力"
+          ],
+          "title": "Tandem Together 发表：双人自行车协力运货——「两人踩、两人拐，节奏不合立马出事故」",
+          "en_title": "タンデム自転車協力ゲー『Tandem Together』発表",
+          "full_text": "ふたりで漕ぐ。ふたりで曲がる。息が合わないと速攻で事故る。必ずふたりで商品を届けろ。怪しいものなんて運んでないのに、なぜか警察にまで追われている。タンデム自転車協力ゲー『Tandem Together』発表",
+          "author": "dotpixel3d",
+          "date": "2026-08-25",
+          "likes": 1552,
+          "views": 227671,
+          "comments": 1,
+          "shares": 202,
+          "link": "https://x.com/dotpixel3d/status/2092069456109322364",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091919316526743552/img/VKJy32Dm_RyYFMFh.jpg",
+            "video_url": "https://x.com/dotpixel3d/status/2092069456109322364/video/1"
+          },
+          "summary": "Godcomplex Games 与 Triflgard 的双人协力游戏 Tandem Together：两人共骑一辆双人自行车运送「来路不明的货物」，踩踏与转向都需配合，节奏不合立刻翻车，还被警察追捕。Steam 页面已开（appid 5036280），发售日待定。",
+          "analysis": "",
+          "recommendation": "Tandem Together：双人自行车协力运货——节奏不合就翻车，被警察追",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Indie Game Joe · 博主",
+          "tags": [
+            "Grampage",
+            "合作抢劫"
+          ],
+          "title": "Grampage: Life at 67：67 岁退休金不够花，约上三个老伙计组团入室抢劫——只有一人能退休",
+          "en_title": "You're 67 and can't afford to retire, so you and three friends start robbing houses to fund it",
+          "full_text": "You're 67 and can't afford to retire, so you and three friends start robbing houses to fund it. - Pick locks, kick doors, climb in windows - Big safes take two of you to carry - Rob your friends at the getaway van - Only one of you gets to retire. Game is Grampage: Life at 67",
+          "author": "IndieGameJoe",
+          "date": "2026-08-24",
+          "likes": 778,
+          "views": 48484,
+          "comments": 29,
+          "shares": 54,
+          "link": "https://x.com/IndieGameJoe/status/2091961894990979280",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091961740523188224/img/XgdQ06RP5KvEWMYx.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2091961894990979280/video/1"
+          },
+          "summary": "StickyStoneStudio 的 Grampage: Life at 67：67 岁退休金不够，与三个老伙计组团偷家——撬锁、踹门、翻窗，大保险箱要两人抬，逃跑面包车旁还能黑吃黑抢队友，最终只有一人能退休。2027 年发售。",
+          "analysis": "",
+          "recommendation": "Grampage: Life at 67：退休金不够组团偷家——只有一人能退休的合作黑吃黑",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Next Indie · 资讯号",
+          "tags": [
+            "Museologist",
+            "整理模拟"
+          ],
+          "title": "Museologist 定档 9 月 24 日：用 3105 块碎片修复 428 件博物馆藏品的整理系解谜",
+          "en_title": "Puzzle-based organizing game 'Museologist' launches September 24",
+          "full_text": "Puzzle-based organizing game 'Museologist' launches September 24.",
+          "author": "nexindie",
+          "date": "2026-08-25",
+          "likes": 269,
+          "views": 40638,
+          "comments": 3,
+          "shares": 31,
+          "link": "https://x.com/nexindie/status/2092075897335464251",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2092075039055044608/img/XhEWZefPM5VSVvhl.jpg",
+            "video_url": "https://x.com/nexindie/status/2092075897335464251/video/1"
+          },
+          "summary": "Tobo Games 的 Museologist: Tidy Up the Museum! 定档 9 月 24 日：藏品支离破碎，找到每个碎片的归属、像拼图一样拼回，3105 块碎片修复 428 件物品。单人整理系解谜模拟。",
+          "analysis": "",
+          "recommendation": "Museologist 定档 9/24：3105 块碎片修复 428 件藏品——博物馆整理系解谜",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "lofibloom · 独立开发者",
+          "tags": [
+            "Broken Bulb",
+            "needle 变体",
+            "three.js"
+          ],
+          "title": "Broken Bulb：5 万颗灯泡的灯串里找那颗坏的——needle 概念的 three.js 可玩版",
+          "en_title": "Broken Bulb made with threejs where you need to find the broken bulb in a 50K lights garland!",
+          "full_text": "Inspired by the needle in the haystack game, I wanted to play with the concept: Broken Bulb made with @threejs where you need to find the broken bulb in a 50K lights garland! Playable link in comment",
+          "author": "lofihashbloom",
+          "date": "2026-08-24",
+          "likes": 51,
+          "views": 5376,
+          "comments": 6,
+          "shares": 4,
+          "link": "https://x.com/lofihashbloom/status/2091924777170563269",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091924021088559104/img/uDbxdcyWvK6iBpw-.jpg",
+            "video_url": "https://x.com/lofihashbloom/status/2091924777170563269/video/1"
+          },
+          "summary": "lofibloom 受 needle 游戏启发，用 three.js 做了 Broken Bulb：在 5 万颗灯泡组成的灯串里找那颗坏的，评论区附可直接游玩的链接。",
+          "analysis": "",
+          "recommendation": "Broken Bulb：5 万灯泡找坏的那颗——needle 概念 three.js 可玩版",
+          "featured": false,
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "01",
+          "source": "Chiro Visuals · 技术博主",
+          "tags": [
+            "three.js",
+            "VFX",
+            "Minimax-M3",
+            "开源"
+          ],
+          "title": "three.js 开源 VFX playground：Minimax-M3 生成的 10 个实时技能特效，全程序化无贴图",
+          "en_title": "I've extended my open source VFX playground built with threejs",
+          "full_text": "I've extended my open source VFX playground built with @threejs. New 10 fully real-time customizable abilities. 3 Radial abilities, 3 boosts, 3 portals & 1 Linear casted ability. For this project I used Minimax-M3, one of the cheapest models around & impressive for what it costs. Everything you see is generated: no textures, no sprite sheets, no baked meshes. hand-written GLSL, GPU-simulated instanced particles, world position resolved in the vertex shaders... Source code",
+          "author": "chirovisuals",
+          "date": "2026-08-24",
+          "likes": 685,
+          "views": 26514,
+          "comments": 43,
+          "shares": 48,
+          "link": "https://x.com/chirovisuals/status/2091854746550226995",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2091854307096186880/img/xr6EYMtswMk6z5qM.jpg",
+            "video_url": "https://x.com/chirovisuals/status/2091854746550226995/video/1"
+          },
+          "summary": "Chiro Visuals 扩展其 three.js 开源 VFX playground：新增 10 个完全实时可定制的技能特效（3 环形 + 3 增益 + 3 传送门 + 1 线性施法）。全部由 Minimax-M3 生成——手写 GLSL、GPU 模拟实例化粒子、顶点着色器解析世界坐标，无贴图、无精灵图、无烘焙网格。源码已在 GitHub 开源。",
+          "analysis": "「最便宜模型 + 开源工作流」的组合拳：Minimax-M3 以极低成本生成手写 GLSL 级别的着色器代码，验证了国产小模型在图形编程垂直场景的性价比。对独立开发者：这套 playground 可直接当技能特效原型库用（10 种范式覆盖 ARPG 常见需求），配合昨天 UE5 Impact Frames 资产，「打感/特效」的工业化门槛正在被开源+AI 双重拉低。",
+          "recommendation": "three.js VFX playground：Minimax-M3 生成 10 个无贴图实时技能特效，源码开源",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**腾讯领投 W4 Games $1800 万 B 轮——Godot 生态里程碑**\n都柏林 W4 Games（Godot 核心开发者创立的企业服务公司）官宣 $18M B 轮：腾讯领投 + 多年战略伙伴关系，重点扩张亚洲 Godot 生态，总融资 $33M。官方数据：Steam 上 Godot 游戏数连续两年同比增长 50%+；年收入超 $100 万的 Godot 游戏 3 年内 2→50+ 款；Game Jam 提交份额 2022 年 10%→50%。\n\n**Steam 周榜：How to Fish 登顶反超 MW4**\nSteamDB 周畅销榜（8/18-25，No F2P）：#1 How to Fish、#2 CoD MW4、#3 Mortal Shell II、#4 WARDOGS、#5 S.T.A.L.K.E.R. 2。同期 TheGamer 报道 MW4 beta Steam CCU 相比首周末腰斩，beta 移速/滑铲争议发酵。\n\n**Take-Two GTA6 传票升级：Discord 数千用户隐私被牵连**\nThe Verge 获得的文件显示 Take-Two 向 Discord 申请传票：交出 6/1 至今相关服务器全部成员的 IP、手机号、设备标识等（! Odyssey 5,600 人 + DarkViperAU 10 万+ 人服务器）。传票 8/21 已批准未送达；Discord 营销总监回应「尚未收到，收到后会评估有效性与范围」。\n\n**Roblox 治理「无限滚动奖励」**\nRoblox 新规：含 TikTok 式无限滚动奖励的游戏对 16 岁以下用户不再发放奖励——成瘾性设计按年龄分层治理，与 needle 山寨潮同周的生态治理信号。\n\n**Gamescom ONL 2026 今晚开播**\n北京时间 8/26 凌晨 ONL 开播（Geoff Keighley 主持）：Witcher 3 新 DLC「Songs of the Past」全球首秀、Gears of War: E-Day 等世界首曝。实际公布内容将进入明日日报数据窗口。\n\n**AI：Claude Code ESM 重构 + 一人 $300 做游戏**\n陈成实测 Claude Code 243 版：70 万行 cli.js 拆 1300+ ESM 按需加载，启动内存 267MB→40MB（-85%）。Hakimi Eiqbal 展示 $300 预算四周成果：Claude Code+Godot+Blender MCP+Tripo 3D 全 AI 管线的 3D 钓鱼游戏（3D 港口/动态水面/昼夜循环）。\n\n**苦行游戏第二发正式化 + Echo 菜单翻红**\nWheat from the Chaff（1000 万颗麦子逐颗分拣）开发者宣布暂停其他项目全力投入，视频 166 万播放，日媒连续第二天头版报道苦行品类；needle 变体继续涌现（500 万只眼睛/5 万灯泡 Broken Bulb）。2017 年老游戏 Echo 的宫殿场景化菜单被推文翻红：231 万浏览、9.4 万赞成今日游戏区最高互动。ROLLA（外星肉块吞城 + 新闻直播画面）定档 10/1。\n\n**新游参考区 5 款**\nadam pype 500 万只眼睛 / Tandem Together 双人自行车协力运货 / Grampage: Life at 67 退休组团偷家 / Museologist 博物馆整理 9/24 / Broken Bulb 5 万灯泡。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

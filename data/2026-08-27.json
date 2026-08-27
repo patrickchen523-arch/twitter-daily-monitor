@@ -1,0 +1,645 @@
+{
+ "date": "2026-08-27",
+ "meta": {
+  "raw_count": 222,
+  "filtered_count": 184,
+  "selected_count": 12,
+  "crawl_time": "2026-08-27 10:00"
+ },
+ "lede": "巫师 3 发售 11 年后免费大重制：战斗与技能树重做、老用户 0 元升级、双 DLC 即刻白送——完全版 PCU 27,569 首次冲进 Steam 榜\n乐高终于做了城市建造游戏：Paradox 发行、Cities: Skylines 2 接盘工作室 Iceflake 开发，日区官宣推文 167 万浏览",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "巫师 3 发售 11 年后免费大重制：战斗与技能树重做、老用户 0 元升级、双 DLC 即刻白送——完全版 PCU 27,569 首次冲进 Steam 榜"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "乐高终于做了城市建造游戏：Paradox 发行、Cities: Skylines 2 接盘工作室开发——日区官宣推文 167 万浏览"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "陈成发布《我怎么用 AI 编程 2026.08》：多 agent 协作工作流长文\n$5 Kenney 素材包喂给 Claude Opus 5 Ultracode，1 小时产出完整回合制战术 roguelike\nHumankind 2 实拍预告被大规模误认 AI 生成，Amplitude 发声明自证「真演员实拍」"
+  },
+  {
+   "id": "industry",
+   "text": "巫师 3 Remastered 9/29 免费升级 + 双老 DLC 即刻白送 + Songs of the Past 首曝\nRockstar 官方回应 GTA6 泄露：heartbreaking + 罕见道歉，8/27 Netflix 官方 extended look\nUbisoft HOMM3 双响：$10 完全版忘传游戏文件（23.49KB 空壳）+ Remake 2027 公布\n网易 Ananta 定档 2027/1/15 全球多端，预约 1700 万"
+  },
+  {
+   "id": "indie",
+   "text": "LEGO Skylines 公布：乐高城市建造，无限空间无说明书\nPogo With Friends：4 人绑一根绳波戈登山，一人掉全掉\nWordless Forest：一人拍完电影+做完游戏的全实拍选择型惊悚\nDokimon Quest 限时免费：250 万领取，PCU 167→1800 十倍增长"
+  },
+  {
+   "id": "tools",
+   "text": "RealityScan Mobile 1.9 发布：3D 扫描全流程增强"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 中文KOL原创",
+     "tags": [
+      "AI编程",
+      "Agent工作流"
+     ],
+     "title": "陈成发布《我怎么用 AI 编程 2026.08》：让一堆 agent 替我干活，文章本身纯手写",
+     "en_title": "写了篇《我怎么用 AI 编程 2026.08》。讲怎么让一堆 agent 替我干活，文章本身纯手写，一个字一个字敲的。",
+     "full_text": "写了篇《我怎么用 AI 编程 2026.08》。讲怎么让一堆 agent 替我干活，文章本身纯手写，一个字一个字敲的。",
+     "author": "chenchengpro",
+     "date": "2026-08-26",
+     "likes": 22,
+     "views": 4844,
+     "link": "https://x.com/chenchengpro/status/2092614930029814098",
+     "media": null,
+     "summary": "国内 AI 编程领域头部博主陈成发布长文《我怎么用 AI 编程 2026.08》，系统讲述 2026 年 8 月这个时点他如何组织多个 agent 协作完成开发工作。文章本身为纯手写，作者特意强调「一个字一个字敲的」。",
+     "analysis": "陈成此前实测 Claude Code 243 版重构（70 万行 cli.js 拆成 1300 个 ESM 模块）的深度内容曾入选本报，这篇月度总结代表国内一线开发者的 agent 工作流最新实践。对从业者而言，「多 agent 分工 + 人类把关」正在从尝鲜变成常规生产力配置，值得对照自身工作流查漏补缺。",
+     "recommendation": "陈成《我怎么用 AI 编程 2026.08》：多 agent 协作工作流月度总结，文章纯手写",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 开发者实测",
+     "tags": [
+      "Claude",
+      "AI做游戏"
+     ],
+     "title": "$5 Kenney 素材包 + 500GB 内容喂给 Claude Opus 5 Ultracode：1 小时产出完整回合制战术 roguelike",
+     "en_title": "So, i bought @KenneyNL asset pack for 5$, give them all to Claude, +500GB of content... Turn-based tactical roguelike. and its kind of fun?",
+     "full_text": "So, i bought @KenneyNL asset pack for 5$, give them all to Claude, +500GB of content, and this prompt:\n\n\"Im giving you access to +500gb of game access, I want you to make the game you want. no questions to me, you decide genre, tech...everything. It has to be a complete 1 player quelity game. go!\"\n\nOpus 5 Ultracode, 1 hour later:\n\nhttps://t.co/t4WAtlxbAo\n\nTurn-based tactical roguelike. and its kind of fun?\n\n12 floors across 3 acts · 18 enemy types over 9 AI archetypes · 3 scripted bosses with multi-beat rotations · 25 techniques · 26 relics · elites, chests, shrines, seeded runs, a codex that fills in as you play, and 5 stacking Oaths unlocked by winning.\n\nTypeScript + Canvas 2D, no engine. 8.6k lines, 52KB gzipped, 3.8MB with all audio. \n\nAll art/audio is @KenneyNL \n\nWe live in a crazy simulation",
+     "author": "albertobeicas",
+     "date": "2026-08-26",
+     "likes": 61,
+     "views": 11146,
+     "link": "https://x.com/albertobeicas/status/2092564806309920950",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2092564319330242560/img/rAaZSCUIHQ2aVKPv.jpg",
+      "video_url": "https://x.com/albertobeicas/status/2092564806309920950/video/1"
+     },
+     "summary": "开发者 Alberto BZ 做了一个极端实验：花 5 美元买下 Kenney 全套素材（500GB），全部交给 Claude Opus 5 Ultracode，prompt 只有一句「游戏你自己定，做一个完整的单人游戏」。1 小时后得到一款回合制战术 roguelike：12 层 3 幕、18 种敌人分属 9 个 AI 原型、3 个多阶段 Boss、25 技能 26 遗物，TypeScript + Canvas 2D 无引擎实现，8600 行代码 gzip 后仅 52KB。",
+     "analysis": "这个实验的关键不在「AI 能做游戏」，而在约束设计：给足高质量素材库 + 完全放开创意决策，模型反而产出了结构完整的成品。对中小团队而言，「素材资产 + AI 组装」的管线正在逼近可用人门槛，但作者自己也承认成品只是「kind of fun」——设计品味仍是人类不可替代的环节。",
+     "recommendation": "$5 素材包 + 一句 prompt：Claude 1 小时产出 12 层完整战术 roguelike，8600 行无引擎",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Eurogamer · 行业信任",
+     "tags": [
+      "AI争议",
+      "游戏营销"
+     ],
+     "title": "Humankind 2 实拍预告被大规模误认 AI 生成，Amplitude 发声明自证「真演员实拍」",
+     "en_title": "No, the Humankind 2 announcement trailer wasn't made with gen-AI, despite it sharing a similar kind of look",
+     "full_text": "No, the Humankind 2 announcement trailer wasn't made with gen-AI, despite it sharing a similar kind of look\n\nhttps://t.co/VsBTSXsJxH https://t.co/ceYIQp9AeD",
+     "author": "eurogamer",
+     "date": "2026-08-26",
+     "likes": 16,
+     "views": 11137,
+     "link": "https://x.com/eurogamer/status/2092535531934728673",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQotwQQacAA-94V.jpg"
+     },
+     "summary": "Humankind 2 的 Gamescom 公布预告采用新生儿视角实拍，穿越人类各时代。因鱼眼镜头 + 平滑光照的视觉风格酷似 AI 生成视频，大量玩家在官方推文下质疑使用 gen-AI。开发商 Amplitude 发声明否认：预告在保加利亚索非亚 Nu Boyana 影棚拍摄，使用真演员、实景和定制道具，近期将公布幕后花絮自证。",
+     "analysis": "这是「AI 怀疑症」蔓延的标志性案例：当 AI 生成内容泛滥，特定视觉风格（鱼眼、平滑光、失焦背景）会自动触发用户的不信任，即便内容是纯人工实拍。Eurogamer 评论指出，厂商未来要么主动避开「AI 感」风格，要么像 Amplitude 一样准备好幕后证据链。对营销团队而言，「如何证明不是 AI」正在成为新的必修课。",
+     "recommendation": "Humankind 2 实拍预告被误认 AI 生成：鱼眼镜头触发集体怀疑，工作室晒影棚自证",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · Gamescom",
+     "tags": [
+      "CDPR",
+      "重制"
+     ],
+     "title": "巫师 3 Remastered 9/29 免费升级：战斗与技能树重做，双老 DLC 即刻白送，Songs of the Past 首曝",
+     "en_title": "The Witcher 3 Remaster announced, free for existing owners, while expansion Songs of the Past details finally shown",
+     "full_text": "The Witcher 3 Remaster announced, free for existing owners, while expansion Songs of the Past details finally shown https://t.co/mQ9bEgiunv https://t.co/RIk1AP4sXg",
+     "author": "eurogamer",
+     "date": "2026-08-26",
+     "likes": 28,
+     "views": 7687,
+     "link": "https://x.com/eurogamer/status/2092575558756429854",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQpSXWMWcAAdf1K.jpg"
+     },
+     "game_ref": "The Witcher 3: Wild Hunt",
+     "summary": "CDPR 在 Gamescom ONL 放出三连击：①巫师 3 Remastered 9 月 29 日上线，老用户免费升级，首次登陆 Switch 2 和 Battle.net，与 Yigsoft 联合开发——战斗重做（新终结技、新动画、自适应镜头）、技能树重构、新增幻化系统与跨平台 mod 支持；②Blood and Wine 与 Hearts of Stone 两个老 DLC 即刻免费送给所有本体用户；③2027 年新资料片 Songs of the Past 首曝：新大陆 Letten 是丹德里恩的家乡，杰洛特的新武器链子与巫师 4 中希里的链子形成呼应。Steam 侧巫师 3 完全版 PCU 27,569 首次冲进监控榜，直接验证了免费策略的拉动效果。",
+     "analysis": "本体发售 11 年后免费大重制 + DLC 白送，是教科书级的 IP 长线运营：用零成本升级激活存量玩家，为 2027 资料片和 2028 巫师 4 持续保温。对从业者的启示是，3A 大厂的「服务型重制」正在成为标准动作——巫师 3 完全版当天冲进 Steam 热玩榜证明，免费升级的短期流量损失远小于 IP 热度收益。",
+     "recommendation": "巫师 3 发售 11 年后免费大重制：战斗/技能树重做，双 DLC 白送——完全版 PCU 27,569 首入榜",
+     "featured": true,
+     "enrichment": {
+      "game_name": "The Witcher 3: Wild Hunt",
+      "genre": "开放世界 RPG",
+      "developer": "CD Projekt Red × Yigsoft（Remastered 联合开发）",
+      "platforms": [
+       "PC",
+       "PS5",
+       "Xbox Series X/S",
+       "Switch 2",
+       "Battle.net"
+      ],
+      "price": "本体常有折扣；Remastered 免费升级",
+      "release_date": "已发售 · 2015年5月19日（Remastered 2026年9月29日）",
+      "steam_rating": "好评如潮",
+      "steam_url": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/6c618713956506400ce0d0062392b0e0b64e031b/header_alt_assets_4_schinese.jpg?t=1787688132",
+      "youtube_video": "https://www.youtube.com/watch?v=IGk17XQ7IrQ",
+      "description": "【事件】巫师 3 Remastered 9/29 上线，现有用户免费升级，首发登陆 Switch 2 与 Battle.net。【重制内容】与 Yigsoft 联合开发：战斗系统重做（新终结技/新动画/自适应镜头）、技能树重构提供更灵活构筑、新增幻化系统、沉浸冥想、扩展照片模式、跨平台 mod 支持、坐骑与怪物行为改进。【免费策略】Blood and Wine 与 Hearts of Stone 两个老 DLC 即刻免费送给所有本体持有者。【新资料片】Songs of the Past（2027，Fool's Theory 联合开发）：新大陆 Letten 为丹德里恩家乡，杰洛特获得链子新武器，与巫师 4 中希里的链子呼应；剧情多年前已写好。【市场验证】巫师 3 完全版 Steam PCU 27,569 首次进入监控榜。",
+      "why_notable": "11 年老游戏免费大重制的教科书案例：零成本激活存量 + 为 2027 资料片/2028 巫师 4 保温，当天 PCU 直接冲榜",
+      "pcu": "27,569（完全版，2026-08-27 首次入榜）",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「开放世界RPG」标杆，CDPR 出品，Remastered 免费升级策略"
+     }
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Polygon · 官方声明",
+     "tags": [
+      "Rockstar",
+      "泄露"
+     ],
+     "title": "Rockstar 官方回应 GTA6 泄露：heartbreaking + 罕见道歉，8/27 Netflix 官方 extended look",
+     "en_title": "Rockstar Games Releases Official Response to 'Heartbreaking' GTA 6 Leaks",
+     "full_text": "Rockstar Games Releases Official Response to 'Heartbreaking' GTA 6 Leaks https://t.co/b5LxUYqyvd https://t.co/F5SmVaIqzC",
+     "author": "Polygon",
+     "date": "2026-08-26",
+     "likes": 1,
+     "views": 7074,
+     "link": "https://x.com/Polygon/status/2092587916438442011",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQpdnv_WsAAaACW.jpg"
+     },
+     "game_ref": "Grand Theft Auto VI",
+     "summary": "在黑客 Cyberleek 持续泄露一周后，Rockstar 发布罕见公开声明：泄露「令团队心碎」，「这显然不是我们希望你看到游戏的方式」；同时为多年保密向玩家道歉（「一切花了这么久，我们非常抱歉」），确认游戏「接近完成」，11 月 19 日发售不变，8 月 27 日将在 Netflix 首播官方 extended look。Take-Two 正通过美国联邦法院追查泄露者身份。",
+     "analysis": "声明的公关策略值得细读：不威胁法律（尽管母公司在追查）、不指责社区，而是把团队塑造成受害者 + 罕见地为慢节奏道歉，把情绪引导向 24 小时后的官方展示。泄露事件反而成了官方内容的首映预热——「先看盗版再看正版」的倒计时营销。对从业者的启示：大规模泄露的应对核心是快速接管叙事节奏，而非纠缠泄露本身。",
+     "recommendation": "Rockstar 回应 GTA6 泄露：团队心碎 + 为保密道歉，8/27 Netflix 官方首映接住流量",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "X · 多家报道",
+     "tags": [
+      "Ubisoft",
+      "事故"
+     ],
+     "title": "Ubisoft HOMM3 双响：$10 完全版忘传游戏文件成 23.49KB 空壳，同场公布 Remake 2027",
+     "en_title": "Ubisoft has somehow managed to release Heroes of Might & Magic III on Steam without actually including the game.",
+     "full_text": "Ubisoft has somehow managed to release Heroes of Might & Magic III on Steam without actually including the game.\n\nThe $9.99 release is supposed to include the original game, along with The Shadow of Death and Armageddon's Blade expansions.\n\nInstead, players found that the download is only 23.49 KB and contains a dummy executable that doesn't actually launch the game.",
+     "author": "Pirat_Nation",
+     "date": "2026-08-26",
+     "likes": 5811,
+     "views": 147656,
+     "link": "https://x.com/Pirat_Nation/status/2092575918518620176",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQorWTlXoAAx6-z.jpg"
+     },
+     "game_ref": "Heroes of Might and Magic III",
+     "summary": "Ubisoft 在 Gamescom ONL 宣布英雄无敌 3 完全版登陆 Steam（$9.99，含本体+双资料片），但玩家购买后发现下载包只有 23.49 KB——一个无法启动的占位可执行文件，本体应为 770MB。约 10-11 小时后官方补传修复。同场公布的还有 2027 年 Remake：Snowdrop 引擎 3D 重制、保留回合制玩法、九阵营+双资料片+8 人对战+Hot Seat+社区地图兼容，但首曝美术被老玩家批评「太干净、像手游、疑似 AI 生成」。独立开发者 Sosowski 的吐槽推「如果你搞砸了独立游戏发行，记住你永远不会比 Ubisoft 更糟——他们忘了上传游戏本体」获 111 万浏览。",
+     "analysis": "一天之内「社死事故 + 重制公布」同框，构成教科书级反面案例：完全版上线连最基本的「包里有游戏」都没验证，暴露发行管线的质检缺失；而 Remake 美术争议（AI 怀疑症再次发作）说明经典 IP 重制的视觉语言稍有不慎就会两头不讨好。25 年老 IP 的情怀价值真实存在，但兑现它需要的是流程严谨而非情怀本身。",
+     "recommendation": "Ubisoft 忘传游戏本体：$10 HOMM3 完全版只有 23.49KB 空壳——吐槽推 111 万浏览",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Heroes Of Might And Magic III",
+      "genre": "策略",
+      "developer": "Ubisoft / New World Computing",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥ 40.00",
+      "release_date": "已发售 · 1999年（Steam 完全版 2026年8月25日；Remake 2027年）",
+      "steam_rating": "已发售",
+      "steam_url": "https://store.steampowered.com/app/4921760",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4921760/54b7d427668c3d073853251d990ec3d6c195171d/header.jpg?t=1787761479",
+      "youtube_video": null,
+      "description": "【事件】Gamescom ONL 上 Ubisoft 宣布 HOMM3 完全版登陆 Steam（$9.99，含本体 + The Shadow of Death + Armageddon's Blade 双资料片），但首发包仅 23.49 KB 占位文件，10-11 小时后补传 770MB 本体修复。【Remake】2027 年发售，Snowdrop 引擎 3D 重制：保留回合制策略/英雄成长/战术战斗核心，新增自由镜头、4K、动态光照、天气与季节变化；包含九阵营、原版战役、双资料片，支持 8 人对战与 Hot Seat，兼容社区自制地图。【争议】首曝美术被批「太干净、像手游、疑似 AI 生成」，Reddit 老玩家对比原版独特奇幻插画风格表达失望。",
+      "why_notable": "发行质检缺失的年度反面教材：空壳事故 + 美术争议同日爆发，25 年 IP 情怀兑现需要流程严谨",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「回合制策略」经典，1999 年 New World Computing 出品"
+     }
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · Gamescom",
+     "tags": [
+      "网易",
+      "定档"
+     ],
+     "title": "网易 Ananta 定档 2027/1/15 全球多端：预约 1700 万，「动漫 GTA」核心循环是当网红涨粉",
+     "en_title": "Ananta finally gets a January release date, as the free-to-play anime RPG likened to GTA hits a whopping 17 million pre-registration sign-ups",
+     "full_text": "Ananta finally gets a January release date, as the free-to-play anime RPG likened to GTA hits a whopping 17 million pre-registration sign-ups\n\nhttps://t.co/u3IRHrqgab https://t.co/YO9UmddAEp",
+     "author": "eurogamer",
+     "date": "2026-08-26",
+     "likes": 4,
+     "views": 5923,
+     "link": "https://x.com/eurogamer/status/2092593634906419392",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQpiytYXcAAax_U.jpg"
+     },
+     "game_ref": "Ananta",
+     "summary": "网易 Naked Rain 工作室的开放世界「动漫 GTA」Ananta（前 Project Mugen）在 Gamescom ONL 宣布 2027 年 1 月 15 日全球上线 PC/PS5/手机。新预告展示驾驶、骑行、滑板、飞行、潜行、近战等玩法，以及巨型 UFO。核心循环围绕「成为网红获取关注」设计：游戏内置社交平台，玩家通过直播涨粉。预约已达 1700 万；此前报道确认角色解锁 gacha 已移除。",
+     "analysis": "1700 万预约 + 躲开 GTA6 弹幕半径（1 月 vs 11 月）的档期选择，显示网易对该项目的全球野心。「当网红涨粉」的核心循环把 GTA 式开放世界与自媒体时代的行为动机缝合，是题材层面的差异化赌注；gacha 移除则是对全球市场付费设计的主动适配。对国内同行的参考价值：大厂出海产品的「去 gacha 化 + 题材创新」组合正在成为新范式。",
+     "recommendation": "网易 Ananta 定档 2027/1/15：预约 1700 万，核心循环是「在开放世界里当网红」",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Ananta",
+      "genre": "开放世界动作 RPG",
+      "developer": "Naked Rain（网易）",
+      "platforms": [
+       "PC",
+       "PS5",
+       "iOS",
+       "Android"
+      ],
+      "price": "免费游玩",
+      "release_date": "2027年1月15日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4814120/ANANTA/",
+      "header_image": null,
+      "youtube_video": "https://www.youtube.com/watch?v=ef2IgRmOYHU",
+      "description": "【概况】网易 Naked Rain 开发的免费开放世界「动漫 GTA」，前 Project Mugen，2027/1/15 全球上线 PC/PS5/手机。【玩法】都市沙盒 + 动漫演出：驾驶/骑行/滑板/飞行/潜行/近战全覆盖；核心循环围绕「成为网红」——游戏内置社交平台，通过直播与内容创作涨粉解锁机会；多可玩角色各自开启开放世界新玩法。【商业化】免费游玩，角色解锁 gacha 据报道已移除，具体付费结构待公布。【热度】全球预约 1700 万，Gamescom ONL 新预告含巨型 UFO 等奇观演出。",
+      "why_notable": "网易全球大作的关键节点：1700 万预约 + 躲开 GTA6 档期 + gacha 移除的全球适配策略",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "预约 17,000,000",
+      "gi_summary": "「开放世界」×「动漫 GTA」，网易 Naked Rain 出品，F2P 多端"
+     }
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "電ファミニコゲーマー · Gamescom",
+     "tags": [
+      "城市建造",
+      "乐高"
+     ],
+     "title": "LEGO Skylines 公布：乐高终于做了城市建造游戏，Paradox 发行、Cities: Skylines 2 接盘工作室开发",
+     "en_title": "「レゴ」の都市建設ゲーム『LEGO Skylines』が発表！レゴで自分らしい街が作れる",
+     "full_text": "「レゴ」の都市建設ゲーム『LEGO Skylines』が発表！レゴで自分らしい街が作れる\nhttps://t.co/lPoqQOnuHX\n\n電気、食料、水といった生活基盤をしっかり整えて、市民に愛される街を作る。ごみ収集に下水処理といった街をスムーズに機能させる仕組みも\n#gamescom https://t.co/TA2raK7Hcc",
+     "author": "denfaminicogame",
+     "date": "2026-08-25",
+     "likes": 5672,
+     "views": 1677416,
+     "link": "https://x.com/denfaminicogame/status/2092338009345835076",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2092337935567994880/img/DetszEuPsVjxPaN1.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2092338009345835076/video/1"
+     },
+     "game_ref": "LEGO Skylines",
+     "summary": "Paradox 在 Gamescom 公布乐高城市建造游戏 LEGO Skylines：玩家用乐高积木搭建城市，管理电力、食物、水源等生活基盘，以及垃圾收集、下水处理等城市运转系统。官方口号「无说明书、无限空间」。Steam 页面已上线，发售日未定。",
+     "analysis": "",
+     "recommendation": "乐高终于做了城市建造游戏：无限空间无说明书——日区官宣推文 167 万浏览",
+     "featured": true,
+     "enrichment": {
+      "game_name": "LEGO® Skylines",
+      "genre": "模拟",
+      "developer": "Iceflake Studios",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/1573550",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1573550/782eac4f6d5430d14031ef783a2e938fe553d513/header.jpg?t=1787742760",
+      "youtube_video": "https://www.youtube.com/watch?v=mfBg8TQQrCQ",
+      "description": "【概况】Paradox 在 Gamescom 2026 公布的乐高主题城市建造游戏，由 Iceflake Studios 开发——该工作室 2025 年底接手了陷入困境的 Cities: Skylines 2 后续开发。【玩法】用乐高积木从零搭建城市：管理电力、食物、水源等生活基盘，配置垃圾收集与下水处理等市政系统；官方定位「cozy、可定制」，口号是「无说明书、无限空间」，可宏观规划也可抠细节。【定位】乐高 IP × 专业城建模拟的组合首次落地：既有乐高的亲和力，又保留 Paradox 系城建的功能深度。PC Gamer 评价「乐高花了 29 年终于走到了这一步」。【状态】Steam 页面已上线，发售日未定。",
+      "why_notable": "乐高 IP 首次正统城市建造：接盘 CS2 的工作室操刀，「无限空间」的乐高城建是品类梦幻组合",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「城市建造」×乐高 IP，Paradox 发行，Iceflake 开发"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "ゲムのすけ · 日区爆款",
+     "tags": [
+      "多人合作",
+      "物理"
+     ],
+     "title": "Pogo With Friends：4 人绑一根绳波戈登山，「一人掉全掉」的友尽设计",
+     "en_title": "4人が「ロープに繋がれたまま」ポゴで山登りは流石に無理ゲーが過ぎる ひとり落ちたら全員道連れ",
+     "full_text": "4人が「ロープに繋がれたまま」ポゴで山登りは流石に無理ゲーが過ぎる\nひとり落ちたら全員道連れ\n\n友だちと登って、他人と落ちていく\n最大4人協力ゲーム『Pogo With Friends』\nセールで半額265円\nhttps://t.co/HFngbYkNKJ https://t.co/9WIgXdqhxy",
+     "author": "dotpixel3d",
+     "date": "2026-08-26",
+     "likes": 2847,
+     "views": 940533,
+     "link": "https://x.com/dotpixel3d/status/2092431837650206833",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2092301287786450944/img/10Iw8B4Do_qB801i.jpg",
+      "video_url": "https://x.com/dotpixel3d/status/2092431837650206833/video/1"
+     },
+     "game_ref": "Pogo With Friends",
+     "summary": "最多 4 人合作登山游戏 Pogo With Friends：所有玩家被一根绳子拴在一起踩波戈棒登山，任何一人失误坠落都会把队友全部拖下去。日区博主总结为「和朋友一起爬，和陌生人一起摔」。Steam 半价促销中（265 日元）。",
+     "analysis": "",
+     "recommendation": "4 人绑一根绳波戈登山：一人掉全掉的友尽设计——94 万浏览，半价 265 円",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Pogo With Friends",
+      "genre": "冒险 / 休闲 / 独立",
+      "developer": "Beaked Games",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥ 9.00",
+      "release_date": "已发售 · 2026 年 5 月 1 日",
+      "steam_rating": "已发售",
+      "steam_url": "https://store.steampowered.com/app/3434550",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3434550/7cdb0a65ce85e6c073ebb4766e60b2a2b5ada237/header.jpg?t=1782406919",
+      "youtube_video": null,
+      "description": "【核心玩法】最多 4 人被同一根绳子拴在一起，各自踩波戈棒向山顶弹跳前进。绳索物理是全部乐趣来源：一人节奏错乱就会连锁拖垮全队，「和朋友一起爬，和陌生人一起摔」精准概括了社交体验。【传播点】日区博主实况推文 94 万浏览：多人物理游戏的「友尽」名场面天然适合短视频传播，与 Getting Over It / Chained Together 一脉相承。【状态】2026 年 5 月发售，Steam 半价促销中（国区 ¥9），适合 2-4 人开黑。",
+      "why_notable": "「一人掉全掉」的绳索物理设计自带传播名场面，94 万浏览验证多人友尽品类持续有效",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「多人合作」×物理登山，4 人一根绳，已发售"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "NeonNoroshi · 题材差异化",
+     "tags": [
+      "真人实拍",
+      "互动电影"
+     ],
+     "title": "Wordless Forest：一人拍完电影+做完游戏的全实拍选择型生存惊悚",
+     "en_title": "全編実写の選択型サバイバルスリラー『言葉なき森 Wordless Forest』。記憶を失った男を、生死を分ける選択だけで導く。台詞なし、結末は4つ。",
+     "full_text": "実写ゲーム自体が珍しいのに、一人で映画撮ってゲームまで作ったうえ、本人が森でサバイバルしてるやべーゲームだった。\n\n全編実写の選択型サバイバルスリラー『言葉なき森 Wordless Forest』。\n記憶を失った男を、生死を分ける選択だけで導く。台詞なし、結末は4つ。\nhttps://t.co/8NJ4Y8MjaW https://t.co/q629ohQ90g",
+     "author": "NNoroshi",
+     "date": "2026-08-25",
+     "likes": 2211,
+     "views": 140187,
+     "link": "https://x.com/NNoroshi/status/2092371187888521338",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2090259450015911936/img/qihORwVeaz8ma_YM.jpg",
+      "video_url": "https://x.com/NNoroshi/status/2092371187888521338/video/1"
+     },
+     "game_ref": "Wordless Forest",
+     "summary": "全实拍选择型生存惊悚游戏 Wordless Forest（言葉なき森）：开发者一人完成了拍电影 + 做游戏的全流程，本人还在森林里真实生存演出。玩家引导一名失忆男子，仅通过生死抉择推进剧情，全程无台词，共 4 个结局。",
+     "analysis": "",
+     "recommendation": "一人拍电影+做游戏+森林真实生存：全实拍无台词选择型惊悚，4 结局",
+     "featured": false,
+     "enrichment": {
+      "game_name": "无言之林 Wordless Forest",
+      "genre": "冒险 / 独立",
+      "developer": "Dogus Cagrici",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥37.80",
+      "release_date": "已发售 · 2026 年 8 月 24 日",
+      "steam_rating": "已发售",
+      "steam_url": "https://store.steampowered.com/app/3978240",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3978240/08eb60ff49ea804e40f693b5a3183cf3df39cb2a/header.jpg?t=1787776193",
+      "youtube_video": null,
+      "description": "【形式】全实拍（真人影像）选择型生存惊悚：开发者一人包办电影拍摄与游戏开发，并亲自在森林中生存出演。【叙事】主角是一名失去记忆的男子，玩家仅通过生死攸关的抉择引导他走出森林；全程无台词，靠影像与音效叙事，共 4 个结局。【对标】与 Her Story / Not For Broadcast 同属真人影像互动品类，但「一人全流程 + 本人真实生存」的制作背景赋予其额外的作者性话题。【状态】2026 年 8 月 24 日刚发售，国区定价 ¥37.80。",
+      "why_notable": "真人实拍互动游戏的极限作者性案例：一人拍片做游戏还亲自森林生存，无台词 4 结局",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「互动电影」×全实拍生存惊悚，一人开发"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "八野 · 开发者复盘",
+     "tags": [
+      "限时免费",
+      "数据复盘"
+     ],
+     "title": "Dokimon Quest 限时免费收官：250 万人领取，PCU 167→1800 十倍增长",
+     "en_title": "Less than 6 hours remain before Dokimon Quest goes back to being paid... well over 2,500,000 Steam users claiming the game",
+     "full_text": "Less than 6 hours remain before Dokimon Quest goes back to being paid^^\n\nThe feedback since going free-to-claim has been phenomenal: with well over 2,500,000 Steam users claiming the game\n\nA new peak of nearly 1.8k users, over 10 times our previous peak player count of 167 users during launch week has also been achieved\n\nI'd like to first and foremost thank everyone that's taken their valuable time to claim and play my game, and an especially big thanks to those that left feedback on the game, reported issues, and gave their opinion\n\nBeing in that there is currently more players in-game than ever before (consistently +1k for over 36 hours), some new issues were discovered and are currently being worked on\n\nI will work tirelessly to fix as much things as possible, and ensure these fixes also make it into the sequel's launch day build, along with all of the other generous feedback we've gotten since starting this free to claim event\n\nI am absolutely completely overwhelmed with how many people picked up the game and are currently playing and enjoying this little world I built.\n\nDokimon Quest never fails to surprise me: It was originally meant to be a short, 3-5 hour game with just 50-70 monsters.\n\nAs I worked on it, we got more and more awareness, interested players, and support, which ultimately inspired me to bring Dokimon Quest to what it is today:\n\nA 15 hour adventure, with over 140 monsters, two expansive regions to explore, countless characters, and even a DLC that released earlier this year\n\nI never expected the free-to-claim event to go as viral as it did. I was expecting *maybe* 100,000 claims total, across all 48 hours, with \"a quarter million\" being an absolutely insane threshold to meet\n\nWith still some several hours remaining on the event, we have already 10x'd that \"insane\" threshold I never thought we could ever achieve\n\nSo again, thank you to everyone that's supported us, shared our game on social media and in friend groups, bought, or claimed, and downloaded and played our game, and provided feedback.\n\nI have no doubt the feedback will go a long way, and help us make Dokimon Quest II into an extraordinary title\n\nWhether you enjoyed the game or not, from the bottom of my heart: \"Thank you\"",
+     "author": "yano_gamedev",
+     "date": "2026-08-26",
+     "likes": 287,
+     "views": 13865,
+     "link": "https://x.com/yano_gamedev/status/2092600676052615311",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/tweet_video_thumb/HQpl2EYb0AAhdoi.jpg",
+      "video_url": "https://x.com/yano_gamedev/status/2092600676052615311/video/1"
+     },
+     "game_ref": "Dokimon Quest",
+     "summary": "宝可梦like 独游 Dokimon Quest 的 48 小时限时免费领取活动收官：超过 250 万 Steam 用户领取（开发者原预期 10 万），峰值同时在线近 1800 人，是首发周峰值 167 人的 10 倍以上，且连续 36 小时在线破千。开发者宣布所有修复将同步进续作 Dokimon Quest II 的首发版本。游戏已从免费领取恢复为付费。",
+     "analysis": "",
+     "recommendation": "Dokimon Quest 限时免费收官：250 万领取、PCU 10 倍增长——完整数据复盘",
+     "featured": false,
+     "enrichment": {
+      "game_name": "Dokimon Quest",
+      "genre": "冒险 / 休闲 / 角色扮演",
+      "developer": "Yanako RPGs",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥ 24.50",
+      "release_date": "已发售 · 2024 年 11 月 22 日",
+      "steam_rating": "384 reviews",
+      "steam_url": "https://store.steampowered.com/app/2019300",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2019300/header.jpg?t=1787586999",
+      "youtube_video": null,
+      "description": "【事件】48 小时限时免费领取收官：250 万+用户领取（开发者原预期 10 万，最终超出 25 倍），峰值在线近 1800 人（首发周 167 人的 10 倍+），连续 36 小时在线破千。【游戏】15 小时冒险、140+ 怪物、两大区域，今年还发售了 DLC；最初只是计划中的 3-5 小时小品。【策略价值】限时免费领取对中小独游的拉新杠杆得到完整数据验证：领取量转化为真实在线与反馈，开发者宣布所有修复将进入续作 Dokimon Quest II 首发版本。2024 年 11 月发售，国区 ¥24.50。",
+      "why_notable": "限时免费策略的完整数据样本：250 万领取 + PCU 10 倍，为续作蓄水的教科书执行",
+      "pcu": "~1,800（免费领取期间，首发周为 167）",
+      "current_players": null,
+      "estimated_sales": "免费领取 2,500,000+",
+      "gi_summary": "「怪物收集」RPG，个人开发，限时免费引爆"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "電ファミニコゲーマー · Gamescom",
+     "tags": [
+      "双人合作",
+      "解谜"
+     ],
+     "title": "Age Twisters：孙女与爷爷年龄互换解谜的双人合作游戏公开最新映像",
+     "en_title": "【2人協力】孫娘とおじいちゃんが年齢を変えながらパズルを解く2人協力プレイゲーム『Age Twisters』最新映像が公開",
+     "full_text": "【2人協力】孫娘とおじいちゃんが年齢を変えながらパズルを解く2人協力プレイゲーム『Age Twisters』最新映像が公開\nhttps://t.co/kauilsigzT\n\n青年期や老年期など、年齢ごとに異なる固有のスキルを組み合わせて数年前に失踪したお母さんを探す旅に出よう\n#gamescom https://t.co/ZjaxzPNEzR",
+     "author": "denfaminicogame",
+     "date": "2026-08-25",
+     "likes": 1971,
+     "views": 217338,
+     "link": "https://x.com/denfaminicogame/status/2092316058736906548",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2092316011425116160/img/vARLZnR6hMK2VCQQ.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2092316058736906548/video/1"
+     },
+     "summary": "双人合作解谜游戏 Age Twisters 在 Gamescom 公开最新映像：孙女与爷爷可在青年期/老年期等不同年龄间切换，各年龄拥有固有技能，组合起来寻找数年前失踪的母亲。",
+     "analysis": "",
+     "recommendation": "爷孙年龄切换双人解谜：各年龄固有技能组合寻母——21 万浏览",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Best Indie Games · 恐怖",
+     "tags": [
+      "PS1风格",
+      "日式恐怖"
+     ],
+     "title": "散歩 WALK：PS1 风格日式潜行恐怖，女学生放学被怪物尾随",
+     "en_title": "This indie developer is making a PS1-style Japanese stealth horror where a schoolgirl races home while a monster stalks her.",
+     "full_text": "This indie developer is making a PS1-style Japanese stealth horror where a schoolgirl races home while a monster stalks her.\n\n- Fixed security-camera viewpoints for max dread\n- Eerie atmosphere between dream and reality\n\nThis is 散歩 WALK. Any interest? https://t.co/63bPttRLwo",
+     "author": "clemmygames",
+     "date": "2026-08-26",
+     "likes": 5055,
+     "views": 114011,
+     "link": "https://x.com/clemmygames/status/2092416864701886819",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2092416771839979521/pu/img/v-WQTK9x6f8AstAq.jpg",
+      "video_url": "https://x.com/clemmygames/status/2092416864701886819/video/1"
+     },
+     "summary": "PS1 风格日式潜行恐怖游戏散歩 WALK：女学生放学回家途中被怪物尾随，固定监控视角制造压迫感，梦与现实之间的诡异氛围。",
+     "analysis": "",
+     "recommendation": "PS1 风日式放学恐怖：固定监控视角 + 怪物尾随——11.4 万浏览",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "AUTOMATON · 生活模拟",
+     "tags": [
+      "钓鱼",
+      "开放世界"
+     ],
+     "title": "Little Lake：五大湖灵感开放世界船钓，白天钓鱼晚上市场小酌",
+     "en_title": "オープンワールド船釣りゲーム『Little Lake』発表。昼間は船で釣り三昧、夜は市場で一杯ひっかける、チルいフィッシング生活",
+     "full_text": "オープンワールド船釣りゲーム『Little Lake』発表。昼間は船で釣り三昧、夜は市場で一杯ひっかける、チルいフィッシング生活\nhttps://t.co/PqbORXpsqg https://t.co/Z3gTEq2M6U",
+     "author": "AUTOMATONJapan",
+     "date": "2026-08-26",
+     "likes": 1869,
+     "views": 187880,
+     "link": "https://x.com/AUTOMATONJapan/status/2092516449982271678",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2092516386346323968/img/j9x1Q2BTG9z2bEAI.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2092516449982271678/video/1"
+     },
+     "summary": "开放世界船钓游戏 Little Lake 公布：以北美五大湖为灵感的群岛探索，白天开船钓鱼、采集、寻宝，晚上在市场小酌的 chill 钓鱼生活。可升级船只与钓具。",
+     "analysis": "",
+     "recommendation": "五大湖开放世界船钓：白天钓鱼晚上市场小酌——18.7 万浏览",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "AUTOMATON · 生活模拟",
+     "tags": [
+      "犯罪",
+      "生活模拟"
+     ],
+     "title": "ナニワアンダーグラウンド：治安崩坏的大阪自由生活模拟，打工或作恶二选一",
+     "en_title": "“治安終わってる大阪”自由ライフシム『ナニワアンダーグラウンド』Steamにてお披露目",
+     "full_text": "“治安終わってる大阪”自由ライフシム『ナニワアンダーグラウンド』Steamにてお披露目\nhttps://t.co/190IhThDs7\n\n・犯罪都市と化した大阪、働くか、悪に染まるか\n・万引き、強盗、闇バイト、ヤケクソ大暴れ\n・「コテコテ関西弁モード」も完備 https://t.co/5W1fPoBm07",
+     "author": "AUTOMATONJapan",
+     "date": "2026-08-26",
+     "likes": 394,
+     "views": 67467,
+     "link": "https://x.com/AUTOMATONJapan/status/2092582368943165900",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2092582315499343872/img/tGkP9lxt2XD-0st4.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2092582368943165900/video/1"
+     },
+     "summary": "以「治安崩坏的大阪」为舞台的自由生活模拟游戏ナニワアンダーグラウンド（Naniwa Underground）公开 Steam 页面：在犯罪都市打工生存或彻底黑化，可偷窃、抢劫、干黑工，还配备「地道关西话模式」。",
+     "analysis": "",
+     "recommendation": "治安崩坏的大阪自由生活模拟：打工或作恶+关西话模式——6.7 万浏览",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "zenith · meme游戏",
+     "tags": [
+      "荒诞",
+      "社交传播"
+     ],
+     "title": "shower with your dad：3 个爸爸里选对的那个，荒诞 meme 游戏再+1",
+     "en_title": "I made a game where you have to shower with your dad. The catch? There are 3 dads and you need to pick the right one",
+     "full_text": "I made a game where you have to shower with your dad\nThe catch? There are 3 dads and you need to pick the right one https://t.co/9yeAULR74F",
+     "author": "zenithvx",
+     "date": "2026-08-25",
+     "likes": 14907,
+     "views": 1054811,
+     "link": "https://x.com/zenithvx/status/2092345625631248759",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2092344975346331648/img/mo4hpbqTfcya2rPO.jpg",
+      "video_url": "https://x.com/zenithvx/status/2092345625631248759/video/1"
+     },
+     "summary": "开发者 zenith 发布荒诞新游：和爸爸一起洗澡，但场上有 3 个爸爸，你需要选出对的那个。1.49 万赞、105 万浏览，是本周「一句荒诞设定」meme 游戏波的最新高传播样本。",
+     "analysis": "",
+     "recommendation": "「和爸爸洗澡但 3 选 1」：荒诞 meme 游戏再+1——1.49 万赞 105 万浏览",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unreal Engine · 官方更新",
+     "tags": [
+      "3D扫描",
+      "移动端"
+     ],
+     "title": "RealityScan Mobile 1.9 发布：照片转 3D 模型全流程增强",
+     "en_title": "RealityScan Mobile 1.9 is here! This app update brings enhancements across capturing, reviewing, and processing workflows",
+     "full_text": "RealityScan Mobile 1.9 is here!\n\nThis app update brings enhancements across capturing, reviewing, and processing workflows for greater productivity and reliability.\n\nAvailable today for iOS and Android: https://t.co/JxKbReT22B https://t.co/eAlKeK2g92",
+     "author": "UnrealEngine",
+     "date": "2026-08-26",
+     "likes": 87,
+     "views": 8439,
+     "link": "https://x.com/UnrealEngine/status/2092590561236836543",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQpgBj6aMAAYa2n.jpg"
+     },
+     "summary": "Epic 发布 RealityScan Mobile 1.9：照片转 3D 模型工具的捕捉、审查、处理三大工作流全面增强，提升生产力与可靠性。iOS / Android 同步更新。",
+     "analysis": "RealityScan 让手机拍照即可生成可入引擎的 3D 资产，是独立开发者低成本获取写实素材的重要通道。1.9 的重点在流程可靠性——扫描失败重做是这类工具最大的时间黑洞，官方持续在此处迭代说明用户痛点真实存在。",
+     "recommendation": "RealityScan Mobile 1.9：照片转 3D 模型，捕捉/审查/处理全流程增强",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**巫师 3 免费大重制 + GTA6 官方回应泄露**\nCDPR 在 Gamescom ONL 放出三连击：巫师 3 Remastered 9/29 上线、老用户免费升级，Blood and Wine 与 Hearts of Stone 双 DLC 即刻白送，2027 新资料片 Songs of the Past 首曝——完全版 PCU 27,569 当天首次冲进 Steam 监控榜。Rockstar 则罕见发声明回应 GTA6 泄露：团队心碎 + 为保密道歉，8/27 Netflix 官方 extended look 接住流量。\n\n**Ubisoft 年度社死 + 网易 Ananta 定档**\nHOMM3 完全版 $10 上线却忘传游戏本体（23.49KB 空壳 vs 770MB），10 小时后修复，吐槽推 111 万浏览；同场公布的 Remake 2027 美术被批「像手游」。网易 Ananta 定档 2027/1/15 全球多端，预约 1700 万。\n\n**AI 板块**\n陈成发布《我怎么用 AI 编程 2026.08》；$5 Kenney 素材 + Claude 1 小时产出完整战术 roguelike；Humankind 2 实拍预告被误认 AI 生成，工作室晒影棚自证。\n\n**新游看点**\nLEGO Skylines 公布（167 万浏览）；Pogo With Friends 4 人一根绳波戈登山（94 万）；Wordless Forest 一人全实拍惊悚；Dokimon Quest 限时免费 250 万领取复盘。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
