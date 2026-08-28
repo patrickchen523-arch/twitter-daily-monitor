@@ -532,7 +532,7 @@ body.vlock{overflow:hidden}
     <div class="tabs">
       <button class="tab-btn on" data-tab="weekly">本周推送</button>
       <button class="tab-btn" data-tab="picks">精选库</button>
-      <button class="tab-btn" data-tab="library">游戏库</button>
+      <button class="tab-btn" data-tab="library" style="display:none">游戏库</button>
     </div>
   </div>
 </nav>
@@ -569,8 +569,8 @@ body.vlock{overflow:hidden}
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="tier-tag tier-rec">创意部推荐</span>
-        <h2>本周人工优选</h2>
-        <span class="sec-note">从本周跑出的全部玩法中人工择优，最值得游戏化改编</span>
+        <h2>本周优选</h2>
+        <span class="sec-note">从本周跑出的全部玩法中择优，最值得游戏化改编</span>
         <div class="sec-line"></div>
       </div>
       <div class="rec-grid" id="recGrid"></div>
@@ -645,7 +645,7 @@ body.vlock{overflow:hidden}
           <p class="cta-desc">精选库沉淀每期创意部优选、适合游戏化改编的玩法原型；游戏库收录全周期完整打捞记录，支持平台、评级与标签交叉检索。一个看质量，一个看全量。</p>
           <div class="cta-btns">
             <button class="cta-btn pri" data-goto="picks">打开精选库 <span>→</span></button>
-            <button class="cta-btn" data-goto="library">打开完整游戏库 <span>→</span></button>
+            <button class="cta-btn" data-goto="library" style="display:none">打开完整游戏库 <span>→</span></button>
           </div>
         </div>
         <div class="cta-stage" aria-hidden="true">
@@ -1065,34 +1065,35 @@ function renderRec() {
 
 /* ===== 精选库（PICKS_LIB 驱动，卡片同游戏库，支持筛选） ===== */
 let picksInited = false;
+const PICKS_VIS = PICKS_LIB.filter(r => r['视频链接']); // 无视频链接的先隐藏
 const pickState = { q: '', plat: '全部', tag: '全部' };
 function renderPicksList() {
   const q = pickState.q.toLowerCase();
-  const vis = PICKS_LIB.filter(r => {
+  const vis = PICKS_VIS.filter(r => {
     const hay = [r['玩法'], r['分类标签'], r['规则'], r['节目效果点']].join(' ').toLowerCase();
     return (!q || hay.includes(q))
       && (pickState.plat === '全部' || r['平台'] === pickState.plat)
       && (pickState.tag === '全部' || (r['分类标签'] || '').includes(pickState.tag));
   });
-  $('#pkCount').textContent = `共 ${PICKS_LIB.length} 条优选 · 已显示 ${vis.length} 条`;
+  $('#pkCount').textContent = `共 ${PICKS_VIS.length} 条优选 · 已显示 ${vis.length} 条`;
   $('#pkGrid').innerHTML = vis.map(libCard).join('');
   $('#pkEmpty').classList.toggle('hidden', vis.length > 0);
   bindReveal($('#page-picks'));
 }
 function initPicks() {
   const cn = PICKS_LIB.filter(r => r['平台'] === '抖音' || r['平台'] === 'B站').length;
-  const ov = PICKS_LIB.length - cn;
-  const tagN = new Set(PICKS_LIB.flatMap(r => (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean))).size;
+  const ov = PICKS_VIS.length - cn;
+  const tagN = new Set(PICKS_VIS.flatMap(r => (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean))).size;
   $('#pickStats').innerHTML = [
-    [`${PICKS_LIB.length}<b> 条</b>`, '人工优选玩法原型'],
+    [`${PICKS_VIS.length}<b> 条</b>`, '人工优选玩法原型'],
     [`${cn}<b> 国内</b>`, '抖音 · B站'],
     [`${ov}<b> 海外</b>`, 'TikTok'],
     [`${tagN}<b> 类</b>`, '覆盖玩法机制']
   ].map(([n, lb]) => `<div class="ls-item"><div class="ls-num">${n}</div><div class="ls-lb">${lb}</div></div>`).join('');
 
-  fillSelect($('#pkPlat'), ['全部平台', ...new Set(PICKS_LIB.map(r => r['平台']))], '全部平台');
+  fillSelect($('#pkPlat'), ['全部平台', ...new Set(PICKS_VIS.map(r => r['平台']))], '全部平台');
   const tagSet = new Set();
-  PICKS_LIB.forEach(r => (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean).forEach(t => tagSet.add(t)));
+  PICKS_VIS.forEach(r => (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean).forEach(t => tagSet.add(t)));
   fillSelect($('#pkTag'), ['全部标签', ...[...tagSet]], '全部标签');
 
   $('#pkSearch').addEventListener('input', e => { pickState.q = e.target.value.trim(); renderPicksList(); });
