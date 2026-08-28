@@ -1,0 +1,591 @@
+{
+ "date": "2026-08-28",
+ "meta": {
+  "raw_count": 214,
+  "filtered_count": 178,
+  "selected_count": 12,
+  "crawl_time": "2026-08-28 10:30"
+ },
+ "lede": "GTA6 Netflix 首播实况：地图两倍于 GTA5、全程 PS5 实机、动画量十倍于前作——Netflix 被挤崩、Twitch 随后宕机\n浣熊入室盗窃多人游戏 Dumpster Gang 公布：连根盗取、洗劫房屋、扑咬驱虫工——日区推文 142 万浏览",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "GTA6 Netflix 首播实况：地图两倍于 GTA5、全程 PS5 实机、动画量十倍于前作——Netflix 被挤崩、Twitch 随后宕机"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "浣熊入室盗窃多人游戏：连根盗取、洗劫房屋、扑咬驱虫工——日区推文 142 万浏览"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Qwen WAN 3.0 生成「meme 城市」视频一天破 1844 万浏览\n陈成：AI agent 将生产大部分生产环境软件，人类转向给方向+建验证体系\nLinus Torvalds 强硬要求 AI debug「不可能解决」的代码"
+  },
+  {
+   "id": "industry",
+   "text": "GTA6 Netflix extended look 播出：地图两倍 GTA5、全程 PS5 实机、Netflix 与 Twitch 先后被挤崩\n星球大战 零号连队发售首日 PCU 69,046，GameSpot 评「史上最佳星战游戏之一」\nUbisoft 为 HOMM3 空壳事件正式道歉\nPanic Playdate 退还美国关税：「这不是我们的钱」"
+  },
+  {
+   "id": "indie",
+   "text": "Dumpster Gang：浣熊入室盗窃多人游戏（142 万浏览）\nSEMICOLON INSPECTOR：187,421 行代码找缺失分号\nBOMBANANA!：三猿拆弹，体验版 600 万人玩过\nWe Are So Cooked 定档 10/15：4 人运尸体销毁证据"
+  },
+  {
+   "id": "tools",
+   "text": "Unity production pipeline 发布：API+Web Dashboard+CLI，团队无需 Editor"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · AI视频",
+     "tags": [
+      "AI视频",
+      "meme文化"
+     ],
+     "title": "AI 生成「meme 城市」：Distracted Boyfriend 变建筑，Qwen WAN 3.0 一天破 1844 万浏览",
+     "en_title": "Best use of AI I've seen this year",
+     "full_text": "Best use of AI I've seen this year https://t.co/2yY9qyCa92",
+     "author": "DataChaz",
+     "date": "2026-08-27",
+     "likes": 166591,
+     "views": 18442000,
+     "link": "https://x.com/DataChaz/status/2092689771294609416",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2092689748074897408/img/jnMI8loybwpHsx08.jpg",
+      "video_url": "https://x.com/DataChaz/status/2092689771294609416/video/1"
+     },
+     "summary": "数据分析师 Chaz Wargnier 转发的 AI 生成视频「meme 城市」爆火：经典 meme（如 Distracted Boyfriend 男友回头）被生成成城市建筑与街景，一天内从 854 万涨至 1844 万浏览、16.7 万赞。经社区溯源，创作者为 @TechieBySA，使用阿里巴巴 Qwen 的 WAN 3.0 模型（经 Pika Labs），Part 2 已发布。",
+     "analysis": "这条视频的意义在于展示了 AI 视频生成的「文化梗压缩」能力：把全民熟悉的 meme 场景转化为可漫游的 3D 空间，认知门槛为零、惊喜密度极高——这正是病毒传播的完美配方。对游戏行业的启示：meme IP 的空间化改编可能是 AI 生成内容在娱乐领域的第一个规模化应用场景，且 Qwen 模型在生成质量上已具备国际传播力。",
+     "recommendation": "AI 生成「meme 城市」：Distracted Boyfriend 变建筑——Qwen WAN 3.0 一天 1844 万浏览",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 中文KOL观点",
+     "tags": [
+      "AI编程",
+      "行业判断"
+     ],
+     "title": "陈成荐读：AI agent 很快会生产大部分生产环境软件，人类角色转向「给方向、建验证体系」",
+     "en_title": "AI agent 很快会生产大部分生产环境软件，人类的角色从写代码、审代码，变成给方向、建验证体系、看最终结果。",
+     "full_text": "recommended reading。\n\nAI agent 很快会生产大部分生产环境软件，人类的角色从写代码、审代码，变成给方向、建验证体系、看最终结果。\n\nhttps://t.co/uAdhIOA0TD",
+     "author": "chenchengpro",
+     "date": "2026-08-27",
+     "likes": 19,
+     "views": 1738,
+     "link": "https://x.com/chenchengpro/status/2092995257013276908",
+     "media": null,
+     "summary": "国内 AI 编程头部博主陈成推荐长文，核心判断：AI agent 很快会生产大部分生产环境软件，人类工程师的角色从「写代码、审代码」转变为「给方向、建验证体系、看最终结果」。这是其昨日《我怎么用 AI 编程 2026.08》观点的延伸阅读。",
+     "analysis": "与昨日 Alberto BZ 的 Claude 实验（1 小时产出完整 roguelike）互为印证：当产出端被 AI 接管，人类的稀缺能力迁移到「定义问题」和「验证结果」两端。对游戏行业从业者的现实意义：中小团队的工程人力结构可能需要提前重构——验证体系（自动化测试、验收标准）的建设投入将直接决定 AI 产能的兑现率。",
+     "recommendation": "陈成荐读：AI agent 将生产大部分生产环境软件，人类转向给方向+建验证体系",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "PC Gamer · 技术文化",
+     "tags": [
+      "Linus Torvalds",
+      "AI调试"
+     ],
+     "title": "Linus Torvalds 强硬要求 AI debug「不可能解决」的代码——然后解决了",
+     "en_title": "Linus Torvalds got stern with an AI to make it debug code it said was 'impossible and unsolvable'",
+     "full_text": "Linus Torvalds got stern with an AI to make it debug code it said was 'impossible and unsolvable' https://t.co/k7eiuo6yBv",
+     "author": "pcgamer",
+     "date": "2026-08-27",
+     "likes": 17,
+     "views": 19210,
+     "link": "https://x.com/pcgamer/status/2092960884255752323",
+     "media": null,
+     "summary": "PC Gamer 报道：Linus Torvalds 遇到 AI 声称某段代码「不可能且无法解决」时，选择强硬施压（got stern with），最终 AI 成功完成 debug。报道以此讨论人类坚持追问对突破 AI「自我设限」的作用。",
+     "analysis": "Torvalds 与 AI 的互动一直是观察「人机协作权力关系」的有趣样本：AI 模型存在系统性的自我设限（过早放弃、声称不可能），而人类的领域权威+强硬态度能突破这层限制。对日常使用 AI 编程的开发者而言，这提示了一个实用技巧：当 AI 说「做不到」时，坚持追问和重新框定问题往往能拿到结果——AI 的「不可能」常常只是「没找到」。",
+     "recommendation": "Torvalds 强硬要求 AI debug「不可能解决」的代码——AI 的不可能常常只是没找到",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 官方首播",
+     "tags": [
+      "Rockstar",
+      "GTA6"
+     ],
+     "title": "GTA6 Netflix extended look 播出：地图两倍于 GTA5、全程 PS5 实机，Netflix 与 Twitch 先后被挤崩",
+     "en_title": "GTA 6 Netflix extended look live report - all the gameplay and revelations from Rockstar's Grand Theft Auto 6 premiere",
+     "full_text": "GTA 6 Netflix extended look live report - all the gameplay and revelations from Rockstar's Grand Theft Auto 6 premiere https://t.co/Ts58lg8r06 https://t.co/iiWgOM6qgz",
+     "author": "eurogamer",
+     "date": "2026-08-27",
+     "likes": 16,
+     "views": 5876,
+     "link": "https://x.com/eurogamer/status/2092976827014742039",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQu_IkTXMAAqEFd.jpg"
+     },
+     "game_ref": "Grand Theft Auto VI",
+     "summary": "GTA6 官方 extended look 于 Netflix 独家首播（6 小时后上架 YouTube）。核心信息：①地图为 GTA5 的两倍大；②全部画面为 PS5 实机捕获；③动画量超 GTA5 十倍、为 RDR2 两倍（Rockstar 确认）；④Jason 与 Lucia 任务中无缝切换、互为掩护；⑤大量 NPC、抢劫、举重/皮划艇/ Daytona 式赛车/脱衣舞俱乐部等细节；⑥驾驶与偷车「更有挑战性」、通缉系统重做+罪犯档案。首播热度直接把 Netflix 挤到部分用户崩溃，随后 Twitch 也发生大规模宕机。另：泄露者 Cyberleek 已通过加密货币方案套现近 £20 万，大规模泄露或就此收场。",
+     "analysis": "从泄露危机到 Netflix 首播，Rockstar 用 24 小时完成了叙事接管：泄露预热流量被官方内容全额承接，甚至外溢成平台级基础设施事故（Netflix/Twitch 双崩）。「游戏预告片挤崩流媒体平台」是游戏文化破圈的标志性事件——GTA6 已不是产品发布，而是全球性媒介事件。对行业而言，Netflix 独家首播的 6 小时窗口也开创了 3A 营销与流媒体平台绑定的新范式。",
+     "recommendation": "GTA6 Netflix 首播：地图两倍 GTA5、动画量十倍于前作——Netflix 和 Twitch 先后被挤崩",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Grand Theft Auto: Vice City – The Definitive Edition",
+      "genre": "动作 / 冒险",
+      "developer": "Rockstar Games",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026年11月19日",
+      "steam_rating": "未上架 PC",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": "https://www.youtube.com/watch?v=Otak6Rd63i4",
+      "description": "【首播要点】Netflix extended look 核心信息：地图为 GTA5 两倍；全程 PS5 实机；动画量超 GTA5 十倍、为 RDR2 两倍；双主角 Jason/Lucia 任务中无缝切换互为掩护；大量 NPC 密度与抢劫细节；举重/皮划艇/赛车/脱衣舞俱乐部等休闲活动；驾驶与偷车更有挑战性；通缉系统重做并引入罪犯档案。【平台事件】Netflix 首播期间部分用户遭遇崩溃，随后 Twitch 也发生大规模宕机。【泄露收场】黑客 Cyberleek 通过加密货币方案套现近 £20 万，泄露潮或就此结束。【档期】2026 年 11 月 19 日发售，PS5/Xbox Series。",
+      "why_notable": "游戏预告挤崩两大流媒体平台：GTA6 已从产品发布升级为全球性媒介事件",
+      "pcu": "未上架 PC",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "Rockstar 开放世界旗舰，2026/11/19 发售"
+     }
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "GameSpot · 评测+PCU",
+     "tags": [
+      "EA",
+      "发售"
+     ],
+     "title": "星球大战 零号连队发售：首日 PCU 69,046，GameSpot 评「不只是 XCOM 换皮，是品类下一步」",
+     "en_title": "Star Wars Zero Company is more than just an XCOM reskin. It reaches beyond its license to become the next giant leap in tactical turn-based-combat games.",
+     "full_text": "Star Wars Zero Company is more than just an XCOM reskin. It reaches beyond its license to become the next giant leap in tactical turn-based-combat games.\n\nOur review: https://t.co/mroR4mRic1 https://t.co/SEYUGFnE3m",
+     "author": "GameSpot",
+     "date": "2026-08-27",
+     "likes": 64,
+     "views": 14655,
+     "link": "https://x.com/GameSpot/status/2093012771378012524",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQvgAehXwAAxO9Q.jpg"
+     },
+     "game_ref": "STAR WARS Zero Company",
+     "summary": "EA 的星战战术回合制游戏星球大战：零号连队（STAR WARS Zero Company）8/27 发售，Steam 首日 PCU 达 69,046（国区定价 ¥198）。GameSpot 评测给出高评价：「不只是 XCOM 换皮，它超越了授权改编的范畴，成为战术回合制战斗品类的下一次跨越」。Polygon 也刊文称其为「有史以来评价最高的星战游戏之一」。",
+     "analysis": "授权 IP × 成熟品类的组合通常被默认为「安全但平庸」，零号连队用首日 69K PCU + 媒体一致高分打破了这一定式。对国内从业者的参考：星战 IP 在 PC 单机市场的号召力依然强劲，而「XCOM-like + 强叙事」的配方在 2026 年仍是最被验证的战术游戏路径——BitRepublic 之前的多款同类产品均未达到此热度。",
+     "recommendation": "星球大战 零号连队发售：首日 PCU 69,046——GameSpot 评「战术回合制品类的下一步」",
+     "featured": true,
+     "enrichment": {
+      "game_name": "STAR WARS Zero Company",
+      "genre": "战术回合制策略",
+      "developer": "Bit Reactor（EA 发行）",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥198",
+      "release_date": "已发售 · 2026年8月27日",
+      "steam_rating": "多半好评（发售初期）",
+      "steam_url": "https://store.steampowered.com/app/2075800/STAR_WARS_Zero_Company/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2075800/2c7d5dad080c4888faaa03c4a955136c50f5bfae/header.jpg?t=1787848803",
+      "youtube_video": null,
+      "description": "【发售表现】8/27 发售首日 Steam PCU 69,046，国区定价 ¥198。【评测口碑】GameSpot：「不只是 XCOM 换皮，是战术回合制战斗品类的下一次跨越」；Polygon：「有史以来评价最高的星战游戏之一」。【玩法】星战背景的 XCOM-like 小队战术：回合制战斗+掩体射击+小队养成，授权叙事与星战宇宙观深度绑定。",
+      "why_notable": "授权 IP 战术游戏的高口碑样本：首日 69K PCU + 媒体一致高分，打破「IP 换皮必平庸」定式",
+      "pcu": "69,046（2026-08-28，发售首日）",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「战术回合制」×星战 IP，EA 发行，8/27 发售"
+     }
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Dexerto · 事件后续",
+     "tags": [
+      "Ubisoft",
+      "道歉"
+     ],
+     "title": "Ubisoft 为 HOMM3 空壳事件正式道歉：$10 买到的只有 23.49KB 占位文件",
+     "en_title": "Ubisoft has apologized after forgetting to include the actual game in its Heroes of Might and Magic III Steam release",
+     "full_text": "Ubisoft has apologized after forgetting to include the actual game in its Heroes of Might and Magic III Steam release\n\nPlayers received a 23.49 KB file containing only a dummy executable that opened a CMD window https://t.co/wqLDmlhCm9",
+     "author": "Dexerto",
+     "date": "2026-08-27",
+     "likes": 43441,
+     "views": 1848519,
+     "link": "https://x.com/Dexerto/status/2092684763286946283",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQq1s0gX0AALlon.jpg"
+     },
+     "game_ref": "Heroes of Might and Magic III",
+     "summary": "HOMM3 完全版空壳事件持续发酵：Ubisoft 正式道歉。玩家花 $9.99 买到的下载包仅 23.49 KB，包含一个只会打开 CMD 窗口的占位可执行文件。Dexerto 报道推文获 4.3 万赞、185 万浏览，成为事件中传播最广的单条推文。游戏文件已在事发约 10 小时后补传修复。",
+     "analysis": "事件已从「事故」演变为「年度梗」：Sosowski 的吐槽推（182 万浏览）+ Dexerto 报道（185 万浏览）让「Ubisoft 忘传游戏」成为比 Remake 公布本身更大的新闻。传播学上这是典型的「负面事件记忆点覆盖产品记忆点」案例——25 年 IP 情怀的正面叙事被 23.49KB 完全对冲。对发行团队的教训：发布日 QA 清单里「验证交付物完整性」这一条的成本，远低于品牌损耗。",
+     "recommendation": "Ubisoft 为 HOMM3 空壳道歉：$10 只有 23.49KB 占位文件——报道推 185 万浏览",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "PC Gamer · 行业清流",
+     "tags": [
+      "Panic",
+      "关税"
+     ],
+     "title": "Panic Playdate 退还美国关税：「这不是我们的钱」——对比 Logitech 被集体诉讼才退款",
+     "en_title": "'It's just not our money to keep': Handheld console maker Panic is refunding US tariff fees",
+     "full_text": "'It's just not our money to keep': Handheld console maker Panic is refunding US tariff fees https://t.co/u8FOlDfGU5",
+     "author": "pcgamer",
+     "date": "2026-08-27",
+     "likes": 25,
+     "views": 13232,
+     "link": "https://x.com/pcgamer/status/2092970956931358741",
+     "media": null,
+     "summary": "Playdate 掌机厂商 Panic 在获得美国政府关税退款后，决定将这笔钱全额退还给当年被加收关税的用户。联合创始人 Cabel Sasser：「这不是我们的钱，还回去感觉很好」；同时坦言小公司申请退税、搭建退款系统的过程比大厂更费力。同期对照：Logitech 拿到 $6100 万关税退款后被集体诉讼要求退给用户，Arctic 则主动宣布价格回滚。",
+     "analysis": "同一场关税退款，三家公司三种姿态：Panic 主动全额退还、Arctic 价格回滚、Logitech 被诉讼逼到谈判桌。在「关税成本该谁承担」的行业争论中，Panic 用「不是我们的钱」给出了最简洁的答案，也为小硬件厂商赢得了远超退款金额的品牌好感。对硬件创业团队的参考：透明化的成本处理（此前关税作为独立行项列在账单上）是后续能顺利退款的前提。",
+     "recommendation": "Panic 退还 Playdate 关税「这不是我们的钱」——对比 Logitech 被集体诉讼才退款",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "AUTOMATON · 题材差异化",
+     "tags": [
+      "多人合作",
+      "浣熊"
+     ],
+     "title": "Dumpster Gang：浣熊入室盗窃多人游戏，「把人看扁的浣熊体验」",
+     "en_title": "協力マルチ対応「空き巣」ゲーム『Dumpster Gang』発表。根こそぎ盗み、家を荒らし、駆除業者にも飛びかかる、人間なめすぎアライグマ体験",
+     "full_text": "協力マルチ対応「空き巣」ゲーム『Dumpster Gang』発表。根こそぎ盗み、家を荒らし、駆除業者にも飛びかかる、人間なめすぎアライグマ体験\nhttps://t.co/9sLfIM4dVz https://t.co/QGQJEVdbO3",
+     "author": "AUTOMATONJapan",
+     "date": "2026-08-27",
+     "likes": 20620,
+     "views": 1419458,
+     "link": "https://x.com/AUTOMATONJapan/status/2092836117246775386",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQtB8n7acAAlkNP.jpg"
+     },
+     "game_ref": "Dumpster Gang",
+     "summary": "多人合作「入室盗窃」游戏 Dumpster Gang 公布：玩家扮演浣熊，连根盗取物品、洗劫房屋，甚至扑咬上门的驱虫工人——「把人类看扁的浣熊体验」。日区 AUTOMATON 报道推文 142 万浏览、2 万赞。",
+     "analysis": "",
+     "recommendation": "浣熊入室盗窃多人游戏：连根盗取、洗劫房屋、扑咬驱虫工——142 万浏览",
+     "featured": true,
+     "enrichment": {
+      "game_name": "浣熊模拟器",
+      "genre": "动作 / 休闲 / 独立",
+      "developer": "Coyote House Games",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年 12 月",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2870790",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2870790/28cbe474eba1030e8b59c9801a98f81518ecd050/header_schinese.jpg?t=1787769443",
+      "youtube_video": null,
+      "description": "【核心玩法】多人合作的「浣熊入室盗窃」模拟：扮演浣熊潜入民居，连根盗取物品、彻底洗劫房屋；遇到上门的驱虫工人不是逃跑而是直接扑咬——「把人类看扁的浣熊体验」。【传播点】日区 AUTOMATON 报道 142 万浏览：动物视角+反差萌+破坏欲的组合天然适合短视频传播，与 Trash Panda 文化梗（北美浣熊翻垃圾的刻板印象）高度契合。【状态】Steam 页面已上线（中文页名「浣熊模拟器」），预计 2026 年 12 月发售。",
+      "why_notable": "浣熊视角盗窃模拟：动物梗+破坏欲+多人合作的病毒式组合，142 万浏览验证题材吸引力",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「多人合作」×浣熊盗窃模拟，未发售"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "ゲムのすけ · 苦行梗",
+     "tags": [
+      "苦行",
+      "程序员"
+     ],
+     "title": "SEMICOLON INSPECTOR：187,421 行纸上代码里找缺失的那一个分号",
+     "en_title": "紙に書かれた「187,421行」のコードからセミコロンが抜けている1行を見つけるゲーム『SEMICOLON INSPECTOR』リリース",
+     "full_text": "紙に書かれた「187,421行」のコードからセミコロンが抜けている1行を見つけるゲーム\n『SEMICOLON INSPECTOR』リリース\n\nプログラムが分からなくても一つ一つチェックしていけばいつかは見つかる。いつかは。\nhttps://t.co/coJeophB85\n\n藁のなかの針を探したりみんな苦行好きすぎじゃない？ https://t.co/NHoukJyg1r",
+     "author": "dotpixel3d",
+     "date": "2026-08-27",
+     "likes": 1530,
+     "views": 295062,
+     "link": "https://x.com/dotpixel3d/status/2092794227747115142",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2092754255744729088/img/kuCZL7hA4RMWSITY.jpg",
+      "video_url": "https://x.com/dotpixel3d/status/2092794227747115142/video/1"
+     },
+     "game_ref": "SEMICOLON INSPECTOR",
+     "summary": "苦行梗新变体 SEMICOLON INSPECTOR 发布：在纸写的 187,421 行代码中找到缺失分号的那一行。日区博主吐槽「从干草堆找针开始，大家是不是太喜欢苦行了」。29.5 万浏览。无 Steam 页面（疑似 itch.io 发行）。",
+     "analysis": "",
+     "recommendation": "187,421 行纸上代码找缺失分号：苦行梗回光返照——日媒吐槽「大家太爱苦行了」",
+     "featured": true
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "電ファミニコゲーマー · 合作爆款",
+     "tags": [
+      "多人合作",
+      "拆弹"
+     ],
+     "title": "BOMBANANA!：「不见·不闻·不言」三猿拆弹，体验版 600 万人玩过，正式版可扇队友耳光",
+     "en_title": "【3人協力】「見ざる」「聞かざる」「言わざる」が爆弾解除するゲーム『BOMBANANA!』製品版では“仲間をビンタし放題”に",
+     "full_text": "【3人協力】「見ざる」「聞かざる」「言わざる」が爆弾解除するゲーム『BOMBANANA!』製品版では“仲間をビンタし放題”に\nhttps://t.co/xHzyd8VNWk\n\n目の見えない猿が爆弾に触れ、喋れない猿がマニュアルを見て指示を出し、何も聞こえない猿が互いの情報を共有する。体験版は600万人がプレイした注目作 https://t.co/bDj3yP2Q4a",
+     "author": "denfaminicogame",
+     "date": "2026-08-26",
+     "likes": 6056,
+     "views": 815521,
+     "link": "https://x.com/denfaminicogame/status/2092658370281140576",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2092658342028349442/pu/img/AYZr9T4OCqOBrdTK.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2092658370281140576/video/1"
+     },
+     "game_ref": "BOMBANANA!",
+     "summary": "3 人合作拆弹游戏 BOMBANANA!：盲猴触摸炸弹、哑猴看手册念指令、聋猴负责传递信息——「不见·不闻·不言」三猿各缺一感，必须靠残缺沟通完成拆弹。体验版已有 600 万人游玩，正式版新增「随便扇队友耳光」机制。日区报道 81.6 万浏览。",
+     "analysis": "",
+     "recommendation": "三猿拆弹：盲猴摸弹、哑猴念手册、聋猴传话——体验版 600 万人玩过",
+     "featured": true,
+     "enrichment": {
+      "game_name": "BOMBANANA!",
+      "genre": "休闲 / 独立",
+      "developer": "Lefto Studio",
+      "platforms": [
+       "PC",
+       "Mac"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年 9 月 2 日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4656000",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4656000/99c086faba625a8d3bc459bab444087d257ccbe1/header.jpg?t=1787520792",
+      "youtube_video": null,
+      "description": "【核心玩法】3 人合作拆弹，角色设定取自「三猿」寓言：盲猴（不见）只能触摸炸弹、哑猴（不言）只能看手册打字指挥、聋猴（不闻）只能口头传递信息——三人各缺一种感官，必须用残缺的沟通链完成拆弹。【数据】体验版 600 万人游玩。【正式版新增】「随便扇队友耳光」机制——沟通失败时的物理发泄口，也是传播名场面制造机。【状态】2026 年 9 月 2 日发售。",
+      "why_notable": "三猿感官残缺设计+600 万体验版玩家：沟通混乱品类的最新爆款候选",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "体验版 6,000,000 玩家",
+      "gi_summary": "「多人合作」×三猿拆弹，体验版 600 万玩家"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "AUTOMATON · 定档",
+     "tags": [
+      "多人合作",
+      "物理"
+     ],
+     "title": "We Are So Cooked 定档 10/15：4 人合作运尸体销毁证据，「软趴趴太难搬」",
+     "en_title": "協力マルチ物理演算「死体運び」ゲーム『We Are So Cooked』10月15日発売へ。運びづらすぎる“グニャグニャ死体”、バレずに運んで証拠隠滅",
+     "full_text": "協力マルチ物理演算「死体運び」ゲーム『We Are So Cooked』10月15日発売へ。運びづらすぎる“グニャグニャ死体”、バレずに運んで証拠隠滅\nhttps://t.co/IXrk7A0xCi https://t.co/GYNjRMyAmq",
+     "author": "AUTOMATONJapan",
+     "date": "2026-08-26",
+     "likes": 2584,
+     "views": 397227,
+     "link": "https://x.com/AUTOMATONJapan/status/2092735808428183834",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQrkPTIaYAAvWcW.jpg"
+     },
+     "game_ref": "We Are So Cooked",
+     "summary": "合作物理「运尸体」游戏 We Are So Cooked 定档 10 月 15 日：最多 4 人把软趴趴的尸体在不被发现的情况下运走销毁证据。物理引擎让尸体极难搬运，是「1-4 人物理潜行」的病毒式传播作（此前已在 FGS gamescom 预告中亮相）。日区报道 39.7 万浏览。",
+     "analysis": "",
+     "recommendation": "4 人合作运尸体销毁证据：软趴趴太难搬——We Are So Cooked 定档 10/15",
+     "featured": false,
+     "enrichment": {
+      "game_name": "We Are So Cooked",
+      "genre": "休闲 / 独立",
+      "developer": "Dwarven Brothers",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4258290",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4258290/87d5a0927985c5163d4625e40137060b5de45c11/header.jpg?t=1787643655",
+      "youtube_video": null,
+      "description": "【核心玩法】1-4 人合作的物理「运尸」潜行：把软趴趴（物理布娃娃）的尸体在不被目击者发现的前提下运离现场、销毁证据。尸体物理是核心难度与笑点来源——太难搬了。【传播轨迹】此前以「viral sensation」身份亮相 Future Games Show gamescom 场次并公布新预告，日区 AUTOMATON 报道 39.7 万浏览。【档期】2026 年 10 月 15 日发售。",
+      "why_notable": "物理运尸+友尽合作的定档：friendslop 品类的下一批种子选手",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「多人合作」×物理运尸，10/15 发售"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "電ファミニコゲーマー · 恶搞",
+     "tags": [
+      "陷阱",
+      "解谜"
+     ],
+     "title": "Trees Hate You：被树讨厌的男人，11/17 发售",
+     "en_title": "なぜか木に嫌われている男が主人公のゲーム『Tree Hate You』11月17日に発売決定。木から“初見殺し”されまくる",
+     "full_text": "なぜか木に嫌われている男が主人公のゲーム『Tree Hate You』11月17日に発売決定。木から“初見殺し”されまくる\nhttps://t.co/vOZrVYPfWo\n\nトラップとドッキリにフォーカスしたイライラ系ゲーム。ズルくて意地が悪い木に殴られ、撃たれ、殺されながら森からの脱出を目指す https://t.co/TWLzH85xtV",
+     "author": "denfaminicogame",
+     "date": "2026-08-26",
+     "likes": 2396,
+     "views": 546944,
+     "link": "https://x.com/denfaminicogame/status/2092681443193622954",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2092681390504710144/pu/img/yBLU3XB-fa__CR_s.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2092681443193622954/video/1"
+     },
+     "summary": "Trees Hate You 定档 11 月 17 日：主角是个不知为何被树讨厌的男人，森林里的树会设下各种「初见杀」陷阱——被树殴打、射击、杀死，目标是逃出这片恶意森林。专注陷阱与整蛊的烦躁系游戏。",
+     "analysis": "",
+     "recommendation": "被树讨厌的男人：整片森林都在「初见杀」你——11/17 发售，54.7 万浏览",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "NeonNoroshi · 派对",
+     "tags": [
+      "多人",
+      "友尽"
+     ],
+     "title": "Twisted Party：2-8 人生存竞技，「把朋友推进陷阱也是攻略法」",
+     "en_title": "2～8人で生き残りを競う『Twisted Party』。罠を避け、時には友達をそこへ押し込むのも攻略法。",
+     "full_text": "友達とワイワイ遊ぶパーティーゲームです。全員無事とは言っていない。\n\n2～8人で生き残りを競う『Twisted Party』。\n罠を避け、時には友達をそこへ押り込むのも攻略法。\n最近、治安の悪いパーティーゲーム流行中？\nhttps://t.co/SMAbnMjyl2 https://t.co/aMkkyRC0pE",
+     "author": "NNoroshi",
+     "date": "2026-08-26",
+     "likes": 878,
+     "views": 104454,
+     "link": "https://x.com/NNoroshi/status/2092733575623745873",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2092247896204914688/img/D0DIlAY6D5L9nr1G.jpg",
+      "video_url": "https://x.com/NNoroshi/status/2092733575623745873/video/1"
+     },
+     "summary": "2-8 人派对生存竞技 Twisted Party：避开陷阱活到最后，必要时把朋友推进陷阱也是合法策略。博主吐槽「最近治安差的派对游戏是不是有点流行过头了」。",
+     "analysis": "",
+     "recommendation": "2-8 人友尽派对：把朋友推进陷阱也是攻略——「治安差派对游戏」流行中",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Brainwash Gang · 新作",
+     "tags": [
+      "合作",
+      "高尔夫"
+     ],
+     "title": "Bye Bye Bonnie：把骷髅当高尔夫球打，用它脑袋里的按钮控制方向",
+     "en_title": "Today we are presenting Bye Bye Bonnie. An co-op journey up to 4 players where you control a skull like a golf ball using the buttons inside of it.",
+     "full_text": "Hey little kids.\n\nToday we are presenting Bye Bye Bonnie. \n\nAn co-op journey up to 4 players where you control a skull like a golf ball using the buttons inside of it.\n\nPlease share and wishlist to make these kids* happy!\n\n*us https://t.co/BOE2ijq4tr",
+     "author": "Brainwash_Gang",
+     "date": "2026-08-26",
+     "likes": 1428,
+     "views": 65205,
+     "link": "https://x.com/Brainwash_Gang/status/2092668446039523370",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2092668400019320833/img/lfHU0szAfYAornLH.jpg",
+      "video_url": "https://x.com/Brainwash_Gang/status/2092668446039523370/video/1"
+     },
+     "summary": "Brainwash Gang（The Longest Road on Earth 团队）公布新作 Bye Bye Bonnie：最多 4 人合作，把一颗骷髅当高尔夫球击打，用骷髅脑袋里的按钮在飞行中控制方向。",
+     "analysis": "",
+     "recommendation": "把骷髅当高尔夫球打：用脑袋里的按钮控制飞行——Brainwash Gang 新作",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Best Indie Games · 生活模拟",
+     "tags": [
+      "种田",
+      "餐厅"
+     ],
+     "title": "Farm & Feast：种田×餐厅经营，自己种菜自己做菜自己端盘子",
+     "en_title": "This farming x restaurant sim looks absolutely awesome! The game is Farm & Feast.",
+     "full_text": "This farming x restaurant sim looks absolutely awesome!\n\n- Grow ingredients, cook, and serve customers\n- Play Mini-games!\n- Visit the market\n- Super chill\n\nThe game is Farm & Feast. Any interest? https://t.co/wTxlXYr18o",
+     "author": "clemmygames",
+     "date": "2026-08-27",
+     "likes": 139,
+     "views": 8686,
+     "link": "https://x.com/clemmygames/status/2092782970151080297",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2092782912655499264/pu/img/vIfw7JoMCnJPuIyq.jpg",
+      "video_url": "https://x.com/clemmygames/status/2092782970151080297/video/1"
+     },
+     "summary": "种田×餐厅经营模拟 Farm & Feast：种植食材、烹饪、招待顾客的全流程闭环，含小游戏与市场采购，整体氛围 super chill。",
+     "analysis": "",
+     "recommendation": "种田×餐厅经营：种菜做饭端盘子全流程闭环——super chill",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "Landfall · 品类自嘲",
+     "tags": [
+      "friendslop",
+      "行业梗"
+     ],
+     "title": "Landfall 自嘲「我们做了有史以来所有的 FRIENDSLOP 游戏」：品类命名权的官方玩梗",
+     "en_title": "Apparently, we made ALL of the FRIENDSLOP games ever!!",
+     "full_text": "Apparently, we made ALL of the FRIENDSLOP games ever!! https://t.co/Aga6Z87s6E",
+     "author": "LandfallGames",
+     "date": "2026-08-26",
+     "likes": 21343,
+     "views": 604564,
+     "link": "https://x.com/LandfallGames/status/2092631645094375797",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2092631316760072192/img/b7WTfRVUO2kHZECz.jpg",
+      "video_url": "https://x.com/LandfallGames/status/2092631645094375797/video/1"
+     },
+     "summary": "Landfall（Content Warning 开发商）发推自嘲「我们做了有史以来所有的 FRIENDSLOP 游戏」，并附上混剪视频；补充说明「我们对 friendslop 这个词是带着爱用的」。Among Us 官方账号在评论区玩梗互动。60 万浏览、2.1 万赞。",
+     "analysis": "",
+     "recommendation": "Landfall 自嘲「所有 friendslop 都是我们做的」：品类命名权的官方玩梗——60 万浏览",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unity · Unite Seoul",
+     "tags": [
+      "生产管线",
+      "团队协作"
+     ],
+     "title": "Unity production pipeline 发布：单一 API + Web Dashboard + CLI，团队无需 Editor 即可参与生产",
+     "en_title": "Open your production line to your entire team - no Editor required",
+     "full_text": "Open your production line to your entire team - no Editor required 🛠️\n\nIn case you missed it, we announced our Unity production pipeline at Unite Seoul which introduces a single API, Web Dashboard, CLI, and app ecosystem to access, review, and automate your projects anywhere.\n\n🔗 Watch the full Roadmap session: https://t.co/ez5YeiTw0s",
+     "author": "unitygames",
+     "date": "2026-08-26",
+     "likes": 62,
+     "views": 13127,
+     "link": "https://x.com/unitygames/status/2092713733525000431",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2092713504109125632/pu/img/GInRKgnL44f3LOqO.jpg",
+      "video_url": "https://x.com/unitygames/status/2092713733525000431/video/1"
+     },
+     "summary": "Unity 在 Unite Seoul 宣布 production pipeline：以单一 API 为核心，配套 Web Dashboard、CLI 和应用生态，让团队成员无需安装 Editor 即可访问、审查和自动化项目——把生产管线开放给策划、QA、制作人等非工程角色。",
+     "analysis": "这是 Unity 对「引擎工具链去中心化」趋势的跟进：当项目规模扩大，Editor 成为只有工程角色才能使用的瓶颈，而 Web Dashboard + CLI 让管线操作平民化。对中小团队的直接价值：自动化构建、审查流程可以脱离 Editor 许可证限制，远程协作与 CI/CD 集成的门槛显著降低。",
+     "recommendation": "Unity production pipeline：API+Web Dashboard+CLI，团队无需 Editor 参与生产",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**GTA6 Netflix 首播 + 星战零号连队发售**\nGTA6 extended look 独家首播：地图两倍于 GTA5、全程 PS5 实机、动画量十倍于前作——Netflix 被挤崩、Twitch 随后宕机，泄露者 Cyberleek 套现 £20 万收场。星球大战 零号连队发售首日 PCU 69,046，GameSpot 评「不只是 XCOM 换皮，是品类下一步」。\n\n**AI 板块**\nQwen WAN 3.0 生成「meme 城市」一天破 1844 万浏览；陈成荐读：AI agent 将生产大部分生产环境软件；Torvalds 强硬让 AI debug「不可能」的代码。\n\n**行业动态**\nUbisoft 为 HOMM3 空壳事件正式道歉（报道推 185 万浏览）；Panic 退还 Playdate 关税「这不是我们的钱」。\n\n**新游看点**\n浣熊入室盗窃 Dumpster Gang（142 万浏览）；三猿拆弹 BOMBANANA!（体验版 600 万玩家）；运尸体 We Are So Cooked 定档 10/15；SEMICOLON INSPECTOR 苦行梗回光返照。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
