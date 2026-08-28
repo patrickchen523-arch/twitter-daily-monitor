@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>真人玩法趋势雷达 · 每周推送</title>
+<style>
+/* Gilroy — relief.app 同款字体（CDN） */
+@font-face{font-family:'Gilroy';src:url('https://cdn.prod.website-files.com/606d9f92ed2b2060324aa476/606d9f92ed2b2071fd4aa490_Gilroy-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'Gilroy';src:url('https://cdn.prod.website-files.com/606d9f92ed2b2060324aa476/606d9f92ed2b2055554aa491_Gilroy-Medium.ttf') format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:'Gilroy';src:url('https://cdn.prod.website-files.com/606d9f92ed2b2060324aa476/606d9f92ed2b2002a34aa48d_Gilroy-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
+@font-face{font-family:'Gilroy';src:url('https://cdn.prod.website-files.com/606d9f92ed2b2060324aa476/606d9f92ed2b20da7e4aa48f_Gilroy-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:'Gilroy';src:url('https://cdn.prod.website-files.com/606d9f92ed2b2060324aa476/606d9f92ed2b201b234aa48e_Gilroy-ExtraBold.ttf') format('truetype');font-weight:800;font-display:swap}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700;900&display=swap');
+
+:root{
+  --cream:#fbf9f4; --snow:#ffffff; --ink:#333333; --charcoal:#212121;
+  --fog:#e4ebf3; --slate:#616c8a; --navy:#13426f; --deep:#0d2f52; --sky:#2e96ff;
+  --wave:#0254a5; --tint:#ddf0ff; --wash:#cde7fb; --mist:#73b9ff;
+  --r-lg:28px; --r-md:22px; --r-sm:14px;
+  --pop:rgba(19,66,111,.22);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:#ffffff; color:var(--ink);
+  font-family:'Gilroy','Noto Sans SC',ui-sans-serif,system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
+  font-size:16px; line-height:1.6; letter-spacing:-0.01em;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+b,strong{font-weight:700}
+a{color:var(--wave); text-decoration:none}
+button{font:inherit; cursor:pointer}
+.wrap{max-width:1440px; margin:0 auto; padding:0 36px}
+.mod .wrap{padding:0}
+
+/* ===== 滚动显现（丝滑版） ===== */
+.reveal{opacity:0; transform:translateY(46px) scale(.98); filter:blur(2px);
+  transition:opacity 1s cubic-bezier(.16,1,.3,1), transform 1s cubic-bezier(.16,1,.3,1), filter 1s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1; transform:none; filter:blur(0)}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1; transform:none; filter:none; transition:none}
+}
+
+/* ===== 顶部导航 ===== */
+.nav{position:sticky; top:0; z-index:50; background:rgba(249,247,240,.88); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--fog); transition:box-shadow .3s}
+.nav.scrolled{box-shadow:0 6px 24px rgba(19,66,111,.08)}
+.nav-in{display:flex; align-items:center; gap:12px; height:68px}
+.logo{display:flex; align-items:center; gap:11px; font-weight:800; font-size:18px; color:var(--navy); letter-spacing:.01em}
+.logo-mark{width:34px; height:34px; border-radius:50%; background:var(--navy); display:flex; align-items:center; justify-content:center; box-shadow:0 4px 0 var(--pop)}
+.logo-mark svg{display:block}
+.logo-mark .sweep{transform-origin:center; animation:sweep 3.2s linear infinite}
+@keyframes sweep{to{transform:rotate(360deg)}}
+.tabs{margin-left:auto; display:flex; gap:6px; background:var(--snow); border:1px solid var(--fog); border-radius:100px; padding:5px}
+.tab-btn{border:0; background:transparent; padding:9px 24px; border-radius:100px; font-weight:700; font-size:14px; color:var(--slate); transition:all .2s var(--ease)}
+.tab-btn:hover{color:var(--navy)}
+.tab-btn.on{background:var(--sky); color:#fff; box-shadow:0 4px 0 var(--pop)}
+
+/* ===== 模块化大圆角块（relief 式） ===== */
+.mod{width:calc(100% - 48px); max-width:1440px; margin:24px auto; border-radius:40px; padding:76px 64px; position:relative; overflow:hidden}
+.mod-hero{width:100%; max-width:none; margin:0; border-radius:0; background:var(--cream); text-align:center; padding:84px 64px 128px}
+.mod-navy{background:linear-gradient(155deg,#16487a 0%, var(--navy) 45%, var(--deep) 100%)}
+.mod-navy .sec-head h2{color:#fff}
+.mod-navy .sec-note{color:rgba(255,255,255,.55)}
+.mod-navy .sec-line{background:rgba(255,255,255,.14)}
+.mod-navy .empty{background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.16); color:rgba(255,255,255,.6)}
+.mod-navy .empty .big{color:#fff}
+.mod-tint{background:#6fb3ff}
+.mod-tint .sec-head h2{color:var(--navy)}
+.mod-tint .sec-note{color:rgba(19,66,111,.7)}
+.mod-tint .sec-line{background:rgba(19,66,111,.18)}
+.mod-tint .tier-a{background:#fff; color:var(--wave)}
+.mod-tint .empty{background:rgba(255,255,255,.35); border-color:rgba(255,255,255,.5); color:rgba(19,66,111,.7)}
+.mod-tint .empty .big{color:var(--navy)}
+.mod-sky{background:#bee0ff}
+.mod-calm{background:#e3f1fd}
+.mod-cream{background:var(--cream)}
+.hero-deco{position:absolute; inset:0; pointer-events:none}
+.cloud{position:absolute; fill:#fff; filter:drop-shadow(0 10px 18px rgba(19,66,111,.10)); animation:cloudFloat 7s ease-in-out infinite}
+.cloud.c1{left:5%; top:18%; width:210px}
+.cloud.c2{right:7%; top:10%; width:160px; animation-duration:8.5s; animation-delay:-2s}
+.cloud.c3{right:15%; top:48%; width:76px; animation-duration:6s; animation-delay:-4s}
+.cloud.c4{left:12%; top:57%; width:120px; animation-duration:9.5s; animation-delay:-1.2s}
+.cloud.c5{left:28%; top:6%; width:96px; animation-duration:7.6s; animation-delay:-3s}
+.cloud.c6{right:28%; top:66%; width:58px; animation-duration:10.5s; animation-delay:-5s}
+.cloud.c7{left:36%; top:72%; width:88px; animation-duration:8.8s; animation-delay:-6s}
+.spark.s4{right:12%; top:30%; animation-delay:-2s}
+.spark.s5{left:33%; top:30%; animation-delay:-.5s}
+.spark.s6{right:36%; top:14%; animation-delay:-2.2s}
+@keyframes cloudFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+.spark{position:absolute; animation:twinkle 2.8s ease-in-out infinite}
+.spark.s1{left:24%; top:16%}
+.spark.s2{right:26%; top:58%; animation-delay:-1.4s}
+.spark.s3{left:10%; top:40%; animation-delay:-.8s}
+@keyframes twinkle{0%,100%{opacity:.25; transform:scale(.8) rotate(0deg)}50%{opacity:.9; transform:scale(1.15) rotate(20deg)}}
+.radar{position:absolute; left:50%; top:-430px; width:900px; height:900px; transform:translateX(-50%); opacity:.5}
+.radar::before{content:''; position:absolute; inset:0; border-radius:50%;
+  background:repeating-radial-gradient(circle at center, transparent 0 88px, rgba(46,150,255,.14) 88px 90px)}
+.radar-sweep{position:absolute; inset:0; border-radius:50%; will-change:transform;
+  background:conic-gradient(from 0deg, rgba(46,150,255,.22), transparent 70deg, transparent 360deg);
+  -webkit-mask:radial-gradient(circle, #000 0 55%, transparent 72%); mask:radial-gradient(circle, #000 0 55%, transparent 72%)}
+.pill{display:inline-flex; align-items:center; gap:9px; background:var(--snow); border:1px solid var(--fog); color:var(--wave); border-radius:100px; padding:8px 18px; font-size:13px; font-weight:700; letter-spacing:.04em}
+.dot{width:8px; height:8px; border-radius:50%; background:var(--sky); position:relative}
+.dot::after{content:''; position:absolute; inset:-4px; border-radius:50%; border:2px solid var(--sky); opacity:.5; animation:ping 1.8s ease-out infinite}
+@keyframes ping{0%{transform:scale(.5); opacity:.7}100%{transform:scale(1.4); opacity:0}}
+.mod-hero h1{
+  font-size:clamp(44px, 6.6vw, 76px); font-weight:900; color:var(--navy);
+  letter-spacing:-0.035em; line-height:1.08; margin:26px 0 18px;
+}
+.mod-hero h1 .hl{position:relative; white-space:nowrap; color:var(--sky)}
+.mod-hero h1 .hl svg{position:absolute; left:0; right:0; bottom:-.08em; width:100%; height:.28em}
+.sub{color:var(--slate); font-size:18px; max-width:620px; margin:0 auto}
+
+/* ===== 导航左组：周期下拉 + 分级锚点 ===== */
+.nav-links{display:flex; align-items:center; gap:3px; margin-left:18px; background:var(--snow); border:1px solid var(--fog); border-radius:100px; padding:5px; box-shadow:0 4px 0 var(--pop)}
+.nl-btn{display:inline-flex; align-items:center; gap:7px; border:0; background:transparent; padding:8px 16px; border-radius:100px; font-weight:700; font-size:14px; color:var(--navy); white-space:nowrap; transition:background .18s var(--ease), color .18s}
+.nl-btn:hover{background:var(--tint); color:var(--wave)}
+.nl-btn:active{transform:translateY(1px)}
+#wddBtn{background:var(--tint); color:var(--wave); font-weight:800}
+#wddBtn:hover{background:var(--wash)}
+.nl-sep{width:1px; height:18px; background:var(--fog); margin:0 5px; flex:none}
+body.lib .nav-links{display:none}
+.wdd-chev{color:var(--wave); font-size:12px; transition:transform .25s var(--ease)}
+.week-dd{position:relative; display:inline-block}
+.week-dd.open .wdd-chev{transform:rotate(180deg)}
+.wdd-menu{position:absolute; top:calc(100% + 8px); left:0; transform:translateY(10px); min-width:270px; background:var(--snow); border:1px solid var(--fog); border-radius:18px; box-shadow:0 26px 54px -18px rgba(19,66,111,.28); padding:8px; opacity:0; pointer-events:none; transition:opacity .22s var(--ease), transform .22s var(--ease); z-index:60}
+.week-dd.open .wdd-menu{opacity:1; pointer-events:auto; transform:translateY(0)}
+.wdd-item{display:flex; justify-content:space-between; align-items:center; gap:16px; width:100%; border:0; background:none; padding:11px 15px; border-radius:12px; font-weight:700; font-size:14.5px; color:var(--charcoal); text-align:left; transition:background .15s}
+.wdd-item:hover{background:var(--tint)}
+.wdd-item.on{background:var(--tint); color:var(--wave)}
+.wdd-item .wk-d{display:block; font-size:12px; color:var(--slate); font-weight:600; margin-top:1px}
+.wdd-item .cnt{font-size:12px; color:var(--slate); font-weight:700; white-space:nowrap}
+.mod{scroll-margin-top:96px}
+
+/* ===== 跑马灯 ===== */
+.marq{margin:24px auto; width:calc(100% - 48px); max-width:1440px; background:var(--snow); border:1px solid var(--fog); border-radius:100px; overflow:hidden; padding:15px 0; position:relative}
+.marq-track{display:flex; align-items:center; gap:34px; width:max-content; animation:marq 46s linear infinite}
+.marq:hover .marq-track{animation-play-state:paused}
+@keyframes marq{to{transform:translateX(-50%)}}
+.mq-item{display:flex; align-items:center; gap:10px; white-space:nowrap; font-weight:700; font-size:14px; color:var(--navy)}
+.mq-item .mq-heat{font-family:'Gilroy',sans-serif; font-weight:800; font-size:13px; color:var(--wave); background:var(--tint); border-radius:100px; padding:3px 11px}
+.mq-sep{color:var(--mist); font-size:15px}
+/* ===== 分区标题 ===== */
+.sec{padding:0}
+.sec-head{display:flex; align-items:center; gap:16px; margin-bottom:34px; flex-wrap:wrap}
+.tier-tag{font-weight:800; font-size:13px; letter-spacing:.12em; border-radius:100px; padding:8px 18px; white-space:nowrap}
+.tier-s{background:#fff; color:var(--navy); box-shadow:0 5px 0 var(--pop)}
+.tier-a{background:#fff; color:var(--wave)}
+.tier-b{background:#fff; color:var(--slate)}
+.tier-c{background:#fff; color:var(--slate)}
+.sec-head h2{font-size:clamp(28px, 3.6vw, 38px); font-weight:900; color:var(--navy); letter-spacing:-0.03em; line-height:1.15}
+.sec-note{margin-left:auto; color:var(--slate); font-size:14px; font-weight:600}
+.sec-line{width:100%; height:1px; background:var(--fog)}
+
+/* ===== S 级整行大卡：左封面右信息 ===== */
+.s-grid{display:flex; flex-direction:column; gap:30px}
+.s-card{background:#185281; border:1px solid rgba(255,255,255,.09); border-radius:var(--r-lg); overflow:hidden; color:#fff;
+  display:grid; grid-template-columns:minmax(0, 5fr) minmax(0, 6fr); min-height:360px;
+  box-shadow:0 24px 50px -24px rgba(0,18,38,.55); transition:transform .35s var(--ease), box-shadow .35s var(--ease)}
+.s-card:hover{transform:translateY(-8px); box-shadow:0 36px 64px -24px rgba(0,18,38,.6)}
+.s-thumb{position:relative; min-height:340px; overflow:hidden; display:flex; align-items:center; justify-content:center; cursor:pointer;
+  background:radial-gradient(130% 130% at 18% 0%, #2a6aa8 0%, #185281 52%, #0f3a61 100%)}
+.s-play{position:relative; z-index:2; width:76px; height:76px; border-radius:50%; background:rgba(255,255,255,.14); border:1.5px solid rgba(255,255,255,.4); backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center; transition:transform .25s var(--ease), background .25s}
+.cov{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0}
+.has-cov::before, .has-cov::after{display:none}
+.has-cov .s-thumb-note{display:none}
+.has-cov .s-play{background:rgba(19,66,111,.35)}
+.s-thumb:hover .s-play{transform:scale(1.14); background:var(--sky); border-color:var(--sky)}
+.s-thumb-note{position:absolute; bottom:16px; left:0; right:0; text-align:center; z-index:2; font-size:11.5px; font-weight:700; letter-spacing:.14em; color:rgba(255,255,255,.45)}
+.s-thumb::before{content:''; position:absolute; inset:-40%;
+  background:repeating-radial-gradient(circle at center, transparent 0 44px, rgba(115,185,255,.16) 44px 46px)}
+.s-thumb::after{content:''; position:absolute; inset:-40%; border-radius:50%;
+  background:conic-gradient(from 0deg, rgba(115,185,255,.28), transparent 80deg, transparent 360deg);
+  animation:sweep 7s linear infinite}
+.s-topline{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.s-plat2{font-size:12px; font-weight:800; letter-spacing:.06em; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22); color:#fff; padding:5px 14px; border-radius:100px}
+.s-heat-num{margin-left:auto; font-family:'Gilroy',sans-serif; font-weight:800; font-size:34px; letter-spacing:-0.02em; line-height:1}
+.s-heat-num small{font-size:13px; font-weight:700; color:var(--mist); margin-left:4px; letter-spacing:0}
+.s-conf{font-size:12px; font-weight:800; padding:5px 14px; border-radius:100px; backdrop-filter:blur(4px)}
+.conf-high{background:rgba(46,150,255,.28); color:#cfe9ff; border:1px solid rgba(115,185,255,.5)}
+.conf-mid{background:rgba(255,255,255,.14); color:#ffe9a8; border:1px solid rgba(255,233,168,.4)}
+.conf-low{background:rgba(255,255,255,.08); color:rgba(255,255,255,.55); border:1px solid rgba(255,255,255,.18)}
+.s-body{padding:34px 40px 28px; display:flex; flex-direction:column; gap:13px}
+.s-name{font-size:29px; font-weight:900; letter-spacing:-0.02em; line-height:1.25}
+.s-tags{display:flex; gap:8px; flex-wrap:wrap}
+.tag{font-size:12px; font-weight:700; padding:4px 12px; border-radius:100px}
+.s-body .tag{background:rgba(255,255,255,.1); color:var(--wash); border:1px solid rgba(255,255,255,.14)}
+.s-line{display:flex; gap:10px; font-size:16px; line-height:1.75; color:rgba(255,255,255,.88)}
+.s-line .k{flex:none; width:4em; font-weight:800; color:var(--mist)}
+.s-meta{display:flex; align-items:center; gap:10px; font-size:13px; color:rgba(255,255,255,.5); margin-top:auto; padding-top:14px; border-top:1px solid rgba(255,255,255,.12)}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:6px; background:var(--sky); color:#fff; font-weight:800; font-size:14px;
+  padding:10px 22px; border-radius:100px; border:0; margin-left:auto; box-shadow:0 5px 0 rgba(0,20,40,.35);
+  transition:transform .15s var(--ease), box-shadow .15s var(--ease), background .2s}
+.btn:hover{transform:translateY(-2px); box-shadow:0 7px 0 rgba(0,20,40,.35); background:#4aa4ff}
+.btn:active{transform:translateY(3px); box-shadow:0 2px 0 rgba(0,20,40,.35)}
+
+/* ===== A 级卡：左封面右信息，一行两个 ===== */
+.a-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px}
+.a-card{background:var(--snow); border:1px solid var(--fog); border-radius:var(--r-md); overflow:hidden;
+  display:grid; grid-template-columns:minmax(0, 38%) minmax(0, 1fr);
+  transition:transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s}
+.a-card:hover{transform:translateY(-6px); border-color:var(--mist); box-shadow:0 22px 40px -18px rgba(19,66,111,.22)}
+.a-thumb{display:flex; align-items:center; justify-content:center; position:relative; min-height:220px; height:100%; overflow:hidden;
+  background:radial-gradient(130% 130% at 18% 0%, #2a6aa8 0%, #185281 52%, #0f3a61 100%)}
+.a-thumb::before{content:''; position:absolute; inset:-40%;
+  background:repeating-radial-gradient(circle at center, transparent 0 36px, rgba(115,185,255,.16) 36px 38px)}
+.a-thumb::after{content:''; position:absolute; inset:-40%; border-radius:50%;
+  background:conic-gradient(from 0deg, rgba(115,185,255,.26), transparent 80deg, transparent 360deg);
+  animation:sweep 8s linear infinite}
+.a-thumb .s-play{width:54px; height:54px}
+.a-thumb:hover .s-play{transform:scale(1.14); background:var(--sky); border-color:var(--sky)}
+.a-thumb .s-play svg{width:18px; height:18px}
+.a-body{display:flex; flex-direction:column; gap:11px; padding:20px 22px 18px; flex:1}
+.a-top{display:flex; justify-content:space-between; align-items:center}
+.a-topline{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+.a-plat{font-size:12px; font-weight:800; letter-spacing:.06em; background:var(--navy); color:#fff; padding:5px 14px; border-radius:100px}
+.a-line{display:flex; gap:10px; font-size:15px; line-height:1.7; color:var(--ink)}
+.a-line .k{flex:none; width:4em; font-weight:800; color:var(--navy)}
+.a-line .v{min-width:0}
+.clamp4{display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden}
+.a-heat{font-family:'Gilroy',sans-serif; font-weight:800; font-size:26px; color:var(--navy); letter-spacing:-0.02em}
+.a-name{font-weight:800; font-size:19px; color:var(--charcoal); line-height:1.4}
+.a-desc{font-size:15.5px; color:var(--slate); line-height:1.75}
+.a-desc.clamp{display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
+.a-bot{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; font-size:14px; color:var(--slate); border-top:1px dashed var(--fog); padding-top:13px; margin-top:auto}
+.a-bot .fetch-note{flex-basis:100%; margin-bottom:2px}
+.a-link{font-weight:800; color:var(--wave); white-space:nowrap; transition:color .2s}
+.a-link:hover{color:var(--sky)}
+.a-tags{display:flex; gap:6px; flex-wrap:wrap}
+.a-topline .tag, .b-tags .tag{background:var(--tint); color:var(--wave)}
+.a-conf{font-size:12px; font-weight:800; padding:5px 13px; border-radius:100px; background:#f0ede3; color:var(--slate)}
+.a-conf.conf-high{background:var(--tint); color:var(--wave)}
+.a-grade{font-size:12px; font-weight:800; padding:5px 13px; border-radius:100px; background:var(--sky); color:#fff}
+
+/* ===== C 级列表（横排折叠展开） ===== */
+.b-list{display:flex; flex-direction:column; gap:14px}
+.b-row{background:var(--snow); border:1px solid var(--fog); border-radius:var(--r-md); cursor:pointer; transition:border-color .2s, box-shadow .25s var(--ease); overflow:hidden}
+.b-row:hover{border-color:var(--mist); box-shadow:0 14px 30px -16px rgba(19,66,111,.2)}
+.b-row.open{border-color:var(--sky)}
+.b-main{display:grid; grid-template-columns:216px minmax(0,1fr) auto; gap:20px; align-items:center; padding:14px 18px 14px 14px}
+.b-cover{display:flex; align-items:center; justify-content:center; position:relative; width:216px; height:104px; border-radius:12px; overflow:hidden; flex:none;
+  background:radial-gradient(130% 130% at 18% 0%, #2a6aa8 0%, #185281 52%, #0f3a61 100%)}
+.b-cover .s-play{position:relative; width:44px; height:44px; z-index:2}
+.b-cover .s-play svg{width:16px; height:16px}
+.b-cover:hover .s-play{background:var(--sky); border-color:var(--sky); transform:scale(1.1)}
+.b-info{min-width:0}
+.b-name{font-weight:800; font-size:17.5px; color:var(--charcoal)}
+.b-desc{font-size:15px; color:var(--slate); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-top:3px}
+.b-side{display:flex; align-items:center; gap:14px}
+.b-heat{font-family:'Gilroy',sans-serif; font-weight:800; font-size:18px; color:var(--navy); text-align:right; white-space:nowrap}
+.b-chev{color:var(--mist); font-size:13px; text-align:center; transition:transform .3s var(--ease)}
+.b-row.open .b-chev{transform:rotate(180deg); color:var(--sky)}
+.b-detail{display:grid; grid-template-rows:0fr; transition:grid-template-rows .38s var(--ease)}
+.b-row.open .b-detail{grid-template-rows:1fr}
+.b-detail-in{overflow:hidden}
+.b-detail-pad{padding:2px 18px 22px 250px; display:flex; flex-direction:column; gap:12px}
+.b-full{font-size:15.5px; line-height:1.85; color:var(--ink); max-width:760px}
+.b-sub{font-size:14.5px; color:var(--slate)}
+.b-sub b{color:var(--charcoal)}
+.b-tags{display:flex; gap:6px; flex-wrap:wrap; margin-top:7px}
+
+/* ===== 数据概览 ===== */
+.ana{padding:72px 92px 88px}
+.ana-grid{display:grid; grid-template-columns:repeat(6, 1fr); gap:22px}
+.ana-grid .panel{grid-column:span 2}
+.ana-grid .panel.half{grid-column:span 4}
+.statband{grid-column:1 / -1; text-align:center; padding:6px 0 30px}
+.sb-label{font-size:13px; font-weight:800; letter-spacing:.22em; color:var(--slate)}
+.sb-big{font-size:clamp(36px, 5vw, 58px); font-weight:900; color:var(--navy); letter-spacing:-0.035em; line-height:1.15; margin:14px 0 4px}
+.sb-big .hlnum{font-family:'Gilroy',sans-serif; font-weight:800; color:var(--sky)}
+.sb-plats{color:var(--slate); font-weight:700; letter-spacing:.26em; font-size:12.5px; margin-top:10px}
+.panel{background:var(--snow); border:1px solid var(--fog); border-radius:var(--r-lg); padding:30px 32px}
+.panel h3{font-size:12.5px; font-weight:800; color:var(--slate); letter-spacing:.14em; margin-bottom:22px}
+.hbar{display:flex; align-items:center; gap:12px; padding:9px 0; font-size:15.5px}
+.hbar .lb{width:96px; flex:none; color:var(--charcoal); font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.hbar .tr{flex:1; height:12px; background:#f0ede3; border-radius:100px; overflow:hidden}
+.hbar .fl{height:100%; width:0; background:linear-gradient(90deg, var(--mist), var(--sky)); border-radius:100px; transition:width 1s var(--ease) .15s}
+.in .hbar .fl{width:var(--w)}
+.hbar .vl{width:34px; text-align:right; font-weight:800; color:var(--navy); font-family:'Gilroy',sans-serif}
+.conf-row{display:flex; flex-direction:column; gap:11px}
+.conf-chip{display:flex; align-items:center; gap:11px; padding:15px 18px; border-radius:var(--r-sm); font-size:15.5px; border:1px solid var(--fog); background:#fbfcfe}
+.conf-chip .dot2{width:10px; height:10px; border-radius:50%; flex:none}
+.dh{background:#13426f} .dm{background:#6fb3ff} .dl{background:#bee0ff} .dc{background:#e3f1fd}
+.conf-chip .n{font-family:'Gilroy',sans-serif; font-weight:800; color:var(--navy); margin-left:auto; font-size:17px}
+.insight{grid-column:1 / -1; text-align:center; font-size:17.5px; line-height:1.9; color:var(--slate); padding:2px 40px 30px}
+.insight b{color:var(--navy)}
+
+/* ===== 创意部推荐（人工优选） ===== */
+.mod-rec{background:linear-gradient(155deg,#16487a 0%, var(--navy) 45%, var(--deep) 100%)}
+.mod-rec .sec-head h2{color:#fff}
+.mod-rec .sec-note{color:rgba(255,255,255,.55)}
+.mod-rec .sec-line{background:rgba(255,255,255,.14)}
+.tier-rec{background:var(--sky); color:#fff; box-shadow:0 5px 0 var(--pop)}
+.rec-grid{display:flex; flex-direction:column; gap:36px}
+.rec-card{display:grid; grid-template-columns:440px minmax(0,1fr); background:rgba(255,255,255,.05); border:1.5px solid rgba(255,255,255,.14);
+  border-radius:var(--r-lg); overflow:hidden; box-shadow:0 34px 64px -30px rgba(6,24,44,.55)}
+.rec-side{position:relative; overflow:hidden; padding:40px 38px 36px; display:flex; flex-direction:column; gap:15px;
+  background:linear-gradient(155deg,rgba(255,255,255,.09) 0%, rgba(255,255,255,.04) 100%)}
+.rec-ghost{position:absolute; right:10px; bottom:-26px; font-family:'Gilroy',sans-serif; font-weight:800; font-size:160px; line-height:1;
+  color:rgba(255,255,255,.10); pointer-events:none; user-select:none}
+.rec-rank{font-size:12.5px; font-weight:800; letter-spacing:.14em; color:var(--mist); text-transform:uppercase}
+.rec-proto{padding:30px; display:flex; flex-direction:column; gap:15px; min-width:0}
+.rec-proto .proto-card{flex:1; grid-template-columns:290px minmax(0,1fr)}
+/* 玩法原型卡：S 卡信息结构 · 浅色版 */
+.proto-card{display:grid; grid-template-columns:250px minmax(0,1fr); border:1px solid rgba(255,255,255,.14); border-radius:var(--r-md); overflow:hidden; background:rgba(255,255,255,.05)}
+.proto-thumb{position:relative; display:block; min-height:185px; background:linear-gradient(135deg,var(--deep),var(--navy))}
+.proto-thumb .cov{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block}
+.p-play{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:46px; height:46px; border-radius:50%;
+  background:rgba(13,47,82,.55); backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center; transition:background .25s}
+.proto-thumb:hover .p-play{background:var(--sky)}
+.proto-body{padding:18px 22px; display:flex; flex-direction:column; gap:9px; min-width:0}
+.proto-top{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+.proto-top .tag{background:rgba(115,185,255,.18); color:#cde7fb}
+.proto-heat{margin-left:auto; font-family:'Gilroy',sans-serif; font-weight:800; font-size:20px; color:#fff; letter-spacing:-0.02em}
+.proto-heat small{font-size:12px; color:rgba(255,255,255,.5); font-weight:600}
+
+/* 热度等级徽章（替代原热度数字） */
+.heat-lv{font-family:'Noto Sans SC',sans-serif !important; letter-spacing:.02em !important}
+.s-heat-num.heat-lv{font-size:20px}
+.a-heat.heat-lv{font-size:16px}
+.proto-heat.heat-lv{font-size:14px}
+/* 抓取时间说明小字 */
+.fetch-note{font-size:12px; opacity:.6; font-weight:600}
+.proto-name{font-size:19.5px; font-weight:900; color:#fff; letter-spacing:-0.02em; line-height:1.35}
+.proto-line{display:flex; gap:12px; font-size:14.5px; line-height:1.7; color:rgba(255,255,255,.78)}
+.proto-line .k{flex:none; width:4.5em; font-weight:800; color:var(--mist)}
+.proto-meta{margin-top:auto; padding-top:11px; border-top:1px solid rgba(255,255,255,.12); display:flex; align-items:center; gap:10px; font-size:13.5px; color:rgba(255,255,255,.55)}
+.proto-meta a{margin-left:auto; color:var(--mist); font-weight:700; text-decoration:none; white-space:nowrap}
+.proto-meta a:hover{text-decoration:underline}
+.rec-sub{display:inline-flex; align-items:center; gap:9px; font-size:13px; font-weight:800; color:var(--sky); letter-spacing:.1em}
+.rec-sub::before{content:""; width:15px; height:3px; border-radius:2px; background:var(--sky)}
+.rec-top{display:flex; align-items:center; gap:15px; flex-wrap:wrap}
+.rec-num{width:52px; height:52px; flex:none; border-radius:50%; background:var(--sky); color:#fff; font-family:'Gilroy',sans-serif; font-weight:800; font-size:23px;
+  display:flex; align-items:center; justify-content:center; box-shadow:0 5px 0 var(--pop)}
+.rec-name{font-size:31px; font-weight:900; color:#fff; letter-spacing:-0.02em; line-height:1.25}
+.rec-desc{font-size:16px; line-height:1.9; color:rgba(255,255,255,.78); position:relative; z-index:1}
+.rec-tags{display:flex; gap:8px; flex-wrap:wrap; position:relative; z-index:1}
+.rec-tags .tag{background:rgba(255,255,255,.12); color:#cde7fb; border:1px solid rgba(255,255,255,.16)}
+
+/* ===== 底栏上方 CTA 跳转模块（精选库 / 游戏库） ===== */
+.mod-cta{background:linear-gradient(150deg,#e9f4ff 0%, #d7e9ff 100%); overflow:hidden}
+.cta-grid{display:grid; grid-template-columns:minmax(0,1fr) 560px; gap:40px; align-items:center}
+.cta-kicker{font-size:13px; font-weight:800; letter-spacing:.12em; color:var(--wave)}
+.cta-kicker::before{content:"● "; color:var(--sky)}
+.cta-title{font-size:42px; font-weight:900; color:var(--navy); line-height:1.32; letter-spacing:-0.02em; margin:14px 0 18px}
+.cta-desc{font-size:15.5px; line-height:1.9; color:#45526e; max-width:58ch}
+.cta-btns{display:flex; gap:14px; margin-top:30px; flex-wrap:wrap}
+.cta-btn{display:inline-flex; align-items:center; gap:8px; background:var(--snow); color:var(--navy); font-weight:800; font-size:15px;
+  padding:14px 26px; border-radius:100px; border:1px solid var(--wash); box-shadow:0 6px 0 var(--pop); cursor:pointer;
+  font-family:inherit; transition:transform .18s var(--ease), box-shadow .18s var(--ease)}
+.cta-btn:hover{transform:translateY(-3px); box-shadow:0 9px 0 var(--pop)}
+.cta-btn.pri{background:var(--sky); color:#fff; border-color:transparent}
+.cta-stage{position:relative; height:400px}
+.mini-card{position:absolute; border-radius:24px; padding:26px; background:var(--snow);
+  border:1px solid var(--fog); box-shadow:0 30px 50px -24px rgba(19,66,111,.32)}
+.mc1{left:0; top:48px; width:268px; transform:rotate(-8deg); z-index:1;
+  background:linear-gradient(155deg,#1c5b9c,var(--navy)); border-color:transparent}
+.mc2{left:168px; top:126px; width:302px; transform:rotate(2deg); z-index:3}
+.mc3{left:318px; top:0; width:262px; transform:rotate(8deg); z-index:2}
+.mc-badge{display:inline-grid; place-items:center; width:42px; height:42px; border-radius:13px; font-family:'Gilroy',sans-serif; font-weight:800; font-size:17px; color:#fff; margin-bottom:14px}
+.b-sky{background:var(--sky)} .b-mist{background:var(--mist)} .b-white{background:rgba(255,255,255,.16)}
+.mc-cat{display:block; font-size:10.5px; font-weight:800; letter-spacing:.18em; color:var(--slate); text-transform:uppercase}
+.mc1 .mc-cat{color:rgba(255,255,255,.6)}
+.mc-name{font-size:21px; font-weight:900; color:var(--navy); margin:5px 0 16px}
+.mc1 .mc-name{color:#fff}
+.mc-line{height:10px; border-radius:5px; background:var(--fog); margin-top:9px}
+.mc-line.w60{width:60%}
+.mc1 .mc-line{background:rgba(255,255,255,.16)}
+.mc-bar{display:flex; align-items:center; justify-content:center; gap:12px; margin-top:18px; height:52px;
+  border-radius:14px; background:rgba(255,255,255,.12); color:rgba(255,255,255,.85); font-size:19px}
+.mc-foot{display:flex; align-items:center; margin-top:16px; padding-top:13px; border-top:1px solid var(--fog)}
+.mc-foot span{font-size:12px; font-weight:700; color:var(--slate)}
+.mc-badge{display:inline-grid; place-items:center; width:34px; height:34px; border-radius:10px; font-family:'Gilroy',sans-serif; font-weight:800; font-size:15px; color:#fff; margin-bottom:12px}
+.b-sky{background:var(--sky)} .b-mist{background:var(--mist)} .b-white{background:rgba(255,255,255,.16)}
+.mc-cat{display:block; font-size:10.5px; font-weight:800; letter-spacing:.18em; color:var(--slate); text-transform:uppercase}
+.mc1 .mc-cat{color:rgba(255,255,255,.6)}
+.mc-name{font-size:20px; font-weight:900; color:var(--navy); margin:5px 0 14px}
+.mc1 .mc-name{color:#fff}
+.mc-line{height:10px; border-radius:5px; background:var(--fog); margin-top:9px}
+.mc-line.w60{width:60%}
+.mc1 .mc-line{background:rgba(255,255,255,.16)}
+.mc-chips{display:flex; gap:7px; margin:2px 0 14px}
+.mc-chips i{font-style:normal; width:34px; height:34px; display:grid; place-items:center; border-radius:10px; background:var(--tint); color:var(--wave); font-weight:800; font-size:14px}
+.mc-chips i.on{background:var(--sky); color:#fff}
+.mc-foot{font-size:12px; font-weight:700; color:var(--slate); border-top:1px solid var(--fog); padding-top:11px}
+
+/* ===== 本周内容总结 ===== */
+.sum-grid{display:grid; grid-template-columns:1fr 1fr; gap:13px 36px}
+.sum-item{display:flex; gap:12px; font-size:17px; line-height:1.8; color:var(--ink)}
+.sum-item .k{flex:none; width:5.5em; font-weight:800; color:var(--navy)}
+.sum-item b{color:var(--wave)}
+
+/* ===== 空态 / 页脚 ===== */
+.empty{padding:90px 20px; text-align:center; color:var(--slate); background:var(--snow); border:1px dashed var(--fog); border-radius:var(--r-lg)}
+.empty .big{font-family:'Gilroy',sans-serif; font-size:24px; font-weight:800; color:var(--navy); margin-bottom:10px}
+/* ===== 底栏模块（海洋场景） ===== */
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2.5deg)}50%{transform:translateY(-11px) rotate(2.5deg)}}
+.ftmod{width:calc(100% - 48px); max-width:1440px; margin:2px auto 44px; position:relative; overflow:hidden; border-radius:40px;
+  background:linear-gradient(160deg,#dcebfb 0%, #d0e5f9 55%, #c4dff8 100%); color:var(--slate)}
+.ft-top{display:flex; justify-content:space-between; align-items:center; gap:24px; padding:46px 56px 0; flex-wrap:wrap}
+.ft-logo{display:flex; align-items:center; gap:15px}
+.ft-name{font-weight:800; font-size:19px; letter-spacing:.02em; color:var(--navy); line-height:1.1}
+.ft-links{display:flex; gap:36px}
+.ft-links a{color:#fff; font-weight:700; font-size:15px; opacity:.92; cursor:pointer; transition:opacity .2s}
+.ft-links a:hover{opacity:1; text-decoration:underline; text-underline-offset:6px}
+.ft-cols{display:grid; grid-template-columns:1fr 1fr; gap:64px; padding:46px 56px 150px; position:relative; z-index:2}
+.ft-col{border-top:1px solid rgba(19,66,111,.22); padding-top:20px; max-width:580px}
+.ft-ct{font-weight:800; color:var(--navy); font-size:15px; margin-bottom:10px}
+.ft-col p{font-size:13.5px; line-height:1.9; color:rgba(19,66,111,.62)}
+.ft-col p + p{margin-top:7px}
+.ft-sea{position:absolute; left:0; right:0; bottom:0; margin:0; overflow:hidden; z-index:0}
+.ft-sea-img{display:block; width:100%; height:auto}
+.ft-top, .ft-cols{position:relative; z-index:2}
+.ft-sea-shine{position:absolute; left:-12%; right:-12%; bottom:0; height:58%; z-index:2; pointer-events:none;
+  background:linear-gradient(100deg, transparent 18%, rgba(255,255,255,.17) 38%, transparent 54%, rgba(255,255,255,.13) 70%, transparent 90%);
+  animation:shineMove 8s ease-in-out infinite alternate}
+@keyframes shineMove{from{transform:translateX(-10%)}to{transform:translateX(10%)}}
+.ft-bar{position:relative; z-index:2; display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; padding:18px 56px; background:rgba(19,66,111,.08); font-size:12.5px; color:rgba(19,66,111,.6)}
+
+/* ===== 游戏库页 ===== */
+.page-head{background:var(--cream); padding:76px 0 56px; text-align:center}
+.page-head h1{font-size:clamp(40px, 5.6vw, 64px); font-weight:900; color:var(--navy); letter-spacing:-0.035em; line-height:1.1; margin:0 0 16px}
+.lib-stats{background:var(--snow); border:1px solid var(--fog); border-radius:var(--r-lg); padding:30px 40px; margin-top:34px;
+  display:grid; grid-template-columns:repeat(4, 1fr)}
+.ls-item{padding:0 30px; border-left:1px solid rgba(19,66,111,.12)}
+.ls-item:first-child{border-left:0; padding-left:0}
+.ls-num{font-family:'Gilroy',sans-serif; font-weight:800; font-size:34px; color:var(--sky); letter-spacing:-0.02em; line-height:1.1}
+.ls-num b{font-weight:900; font-size:22px; color:var(--navy); margin-left:2px}
+.ls-lb{font-size:13px; color:var(--slate); font-weight:600; margin-top:5px}
+.tools{position:sticky; top:68px; z-index:40; background:rgba(251,249,244,.9); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); padding:18px 0 16px; border-bottom:1px solid var(--fog)}
+.tools-grid{display:grid; grid-template-columns:1.7fr 1fr 1fr 1fr 1fr; gap:14px; align-items:end}
+.f-field{display:flex; flex-direction:column; gap:7px; min-width:0}
+.f-field label{font-size:12.5px; font-weight:800; color:var(--navy); letter-spacing:.02em}
+.f-control{width:100%; background:var(--snow); border:1px solid var(--fog); border-radius:14px; padding:11px 16px; font:inherit; font-size:14px; font-weight:600; color:var(--ink); outline:none; transition:border-color .2s, box-shadow .2s}
+.f-control:focus{border-color:var(--sky); box-shadow:0 0 0 4px var(--tint)}
+select.f-control{appearance:none; -webkit-appearance:none; cursor:pointer; padding-right:36px;
+  background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M2.5 4.5 L6 8 L9.5 4.5" fill="none" stroke="%23616c8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat:no-repeat; background-position:right 14px center}
+.lib-bar{display:flex; justify-content:space-between; align-items:center; gap:14px; padding:20px 2px 0}
+#libCount{color:var(--navy); font-size:14px; font-weight:700}
+.lib-reset{border:0; background:var(--tint); color:var(--wave); font-weight:800; font-size:13.5px; border-radius:100px; padding:8px 18px; transition:background .2s}
+.lib-reset:hover{background:var(--wash)}
+.lib-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:22px; padding:26px 0 10px}
+.lib-card{grid-template-columns:1fr}
+.lib-card .a-body{padding:22px 24px 20px}
+#libEmpty{margin-bottom:30px}
+/* ===== 视频悬浮播放弹窗 ===== */
+.vmodal{position:fixed; inset:0; z-index:100; display:flex; align-items:center; justify-content:center; padding:24px}
+.vmask{position:absolute; inset:0; background:rgba(13,32,54,.6); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px)}
+.vbox{position:relative; background:var(--deep); border-radius:22px; padding:14px; box-shadow:0 40px 90px -30px rgba(0,20,40,.6); animation:vpop .35s var(--ease)}
+@keyframes vpop{from{opacity:0; transform:translateY(24px) scale(.96)}to{opacity:1; transform:none}}
+.vbox video{display:block; max-height:78vh; max-width:min(480px, 90vw); border-radius:14px; background:#000}
+.vclose{position:absolute; top:-13px; right:-13px; width:36px; height:36px; border-radius:50%; border:0; background:#fff; color:var(--navy); font-weight:800; font-size:14px; box-shadow:0 5px 0 var(--pop); cursor:pointer; transition:transform .15s}
+.vclose:hover{transform:scale(1.08)}
+.vlink{display:block; text-align:center; margin-top:11px; color:var(--wash); font-size:13px; font-weight:600}
+.vlink:hover{color:#fff}
+body.vlock{overflow:hidden}
+.hidden{display:none!important}
+
+@media (max-width:900px){
+  .mod{width:calc(100% - 20px); margin:14px auto; border-radius:28px; padding:52px 22px}
+  .mod-hero{width:100%; margin:0; border-radius:0; padding:60px 20px 56px}
+  .nav-links{display:none}
+  .b-main{grid-template-columns:1fr auto; gap:12px; padding:14px}
+  .b-cover{display:none}
+  .b-desc{display:none}
+  .b-main .btn{display:none}
+  .b-detail-pad{padding:2px 16px 18px 16px}
+  .a-grid{grid-template-columns:1fr}
+  .sum-grid{grid-template-columns:1fr}
+  .ana-grid{grid-template-columns:1fr}
+  .ana-grid .panel, .ana-grid .panel.half{grid-column:auto}
+  .ft-top, .ft-cols, .ft-bar{padding-left:26px; padding-right:26px}
+  .ft-cols{grid-template-columns:1fr; gap:26px}
+  .ft-links{gap:22px}
+  .a-card{grid-template-columns:1fr}
+  .a-thumb{min-height:190px}
+  .rec-card{grid-template-columns:1fr}
+  .rec-side{padding:30px 24px}
+  .rec-ghost{font-size:110px; bottom:-18px}
+  .rec-proto{padding:22px 20px}
+  .rec-proto .proto-card{grid-template-columns:1fr}
+  .proto-thumb{min-height:150px}
+  .cta-grid{grid-template-columns:1fr}
+  .cta-stage{display:none}
+  .cta-title{font-size:30px}
+  .s-card{grid-template-columns:1fr; min-height:0}
+  .s-thumb{min-height:220px}
+  .s-body{padding:26px 24px 22px}
+  .s-name{font-size:24px}
+  .wdd-menu{min-width:260px}
+  .tools-grid{grid-template-columns:1fr 1fr}
+  .tools{position:static}
+  .lib-grid{grid-template-columns:1fr}
+  .lib-stats{grid-template-columns:1fr 1fr; gap:22px 0; padding:24px 26px}
+  .ls-item:nth-child(3){border-left:0; padding-left:0}
+}
+@media (max-width:640px){
+  .tab-btn{padding:8px 16px; font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap nav-in">
+    <div class="logo">
+      <span class="logo-mark">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <circle cx="9" cy="9" r="7.5" stroke="#fff" stroke-width="1.4" opacity=".55"/>
+          <circle cx="9" cy="9" r="4" stroke="#fff" stroke-width="1.4" opacity=".8"/>
+          <circle cx="9" cy="9" r="1.4" fill="#fff"/>
+          <g class="sweep"><line x1="9" y1="9" x2="9" y2="1.5" stroke="#7fd0ff" stroke-width="1.6" stroke-linecap="round"/></g>
+        </svg>
+      </span>
+      真人挑战玩法原型雷达
+    </div>
+    <div class="nav-links">
+      <div class="week-dd" id="weekDd">
+        <button class="nl-btn" id="wddBtn"><span id="weekLabel"></span><span class="wdd-chev">▾</span></button>
+        <div class="wdd-menu" id="wddMenu"></div>
+      </div>
+      <span class="nl-sep"></span>
+      <button class="nl-btn" data-anchor="secRec">创意部推荐</button>
+      <button class="nl-btn" data-anchor="secAna">本周总览</button>
+      <button class="nl-btn" data-anchor="secS">S 级</button>
+      <button class="nl-btn" data-anchor="secA">A 级</button>
+      <button class="nl-btn" data-anchor="secB">B 级</button>
+      <button class="nl-btn" data-anchor="secC">C 级</button>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn on" data-tab="weekly">本周推送</button>
+      <button class="tab-btn" data-tab="picks">精选库</button>
+      <button class="tab-btn" data-tab="library">游戏库</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ 页 1：本周推送 ============ -->
+<main id="page-weekly">
+  <header class="mod mod-hero reveal">
+    <div class="hero-deco">
+      <div class="radar"><div class="radar-sweep"></div></div>
+      <svg class="cloud c1" viewBox="0 0 120 52" aria-hidden="true"><g><ellipse cx="32" cy="38" rx="24" ry="13"/><ellipse cx="60" cy="28" rx="26" ry="18"/><ellipse cx="88" cy="38" rx="22" ry="12"/></g></svg>
+      <svg class="cloud c2" viewBox="0 0 120 52" aria-hidden="true"><g><ellipse cx="32" cy="38" rx="24" ry="13"/><ellipse cx="60" cy="28" rx="26" ry="18"/><ellipse cx="88" cy="38" rx="22" ry="12"/></g></svg>
+      <svg class="cloud c3" viewBox="0 0 120 52" aria-hidden="true"><g><ellipse cx="32" cy="38" rx="24" ry="13"/><ellipse cx="60" cy="28" rx="26" ry="18"/><ellipse cx="88" cy="38" rx="22" ry="12"/></g></svg>
+      <svg class="cloud c4" viewBox="0 0 120 52" aria-hidden="true"><g><ellipse cx="32" cy="38" rx="24" ry="13"/><ellipse cx="60" cy="28" rx="26" ry="18"/><ellipse cx="88" cy="38" rx="22" ry="12"/></g></svg>
+      <svg class="spark s1" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0 L11 7 L18 9 L11 11 L9 18 L7 11 L0 9 L7 7 Z" fill="#73b9ff"/></svg>
+      <svg class="spark s2" width="14" height="14" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0 L11 7 L18 9 L11 11 L9 18 L7 11 L0 9 L7 7 Z" fill="#2e96ff"/></svg>
+      <svg class="spark s3" width="12" height="12" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0 L11 7 L18 9 L11 11 L9 18 L7 11 L0 9 L7 7 Z" fill="#9cc8ff"/></svg>
+      <svg class="cloud c5" viewBox="0 0 120 52" aria-hidden="true"><g><ellipse cx="32" cy="38" rx="24" ry="13"/><ellipse cx="60" cy="28" rx="26" ry="18"/><ellipse cx="88" cy="38" rx="22" ry="12"/></g></svg>
+      <svg class="cloud c6" viewBox="0 0 120 52" aria-hidden="true"><g><ellipse cx="32" cy="38" rx="24" ry="13"/><ellipse cx="60" cy="28" rx="26" ry="18"/><ellipse cx="88" cy="38" rx="22" ry="12"/></g></svg>
+      <svg class="cloud c7" viewBox="0 0 120 52" aria-hidden="true"><g><ellipse cx="32" cy="38" rx="24" ry="13"/><ellipse cx="60" cy="28" rx="26" ry="18"/><ellipse cx="88" cy="38" rx="22" ry="12"/></g></svg>
+      <svg class="spark s4" width="16" height="16" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0 L11 7 L18 9 L11 11 L9 18 L7 11 L0 9 L7 7 Z" fill="#73b9ff"/></svg>
+      <svg class="spark s5" width="12" height="12" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0 L11 7 L18 9 L11 11 L9 18 L7 11 L0 9 L7 7 Z" fill="#2e96ff"/></svg>
+      <svg class="spark s6" width="14" height="14" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0 L11 7 L18 9 L11 11 L9 18 L7 11 L0 9 L7 7 Z" fill="#9cc8ff"/></svg>
+    </div>
+    <div class="wrap" style="position:relative">
+      <div class="pill reveal"><span class="dot"></span>每周二更新</div>
+      <h1 class="reveal">全网真人挑战<br><span class="hl">玩法原型雷达<svg viewBox="0 0 200 12" preserveAspectRatio="none"><path d="M2 9C60 2 140 2 198 8" stroke="#73b9ff" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span></h1>
+      <p class="sub reveal">精选来自国内外40+头部真人挑战类UP主的本周期热门视频，覆盖B站、抖音、TikTok平台。 UP主库持续扩充中……</p>
+    </div>
+  </header>
+
+  <div class="marq reveal"><div class="marq-track" id="marqTrack"></div></div>
+
+  <section class="mod mod-rec reveal" id="secRec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="tier-tag tier-rec">创意部推荐</span>
+        <h2>本周人工优选</h2>
+        <span class="sec-note">从本周跑出的全部玩法中人工择优，最值得游戏化改编</span>
+        <div class="sec-line"></div>
+      </div>
+      <div class="rec-grid" id="recGrid"></div>
+    </div>
+  </section>
+
+  <section class="mod mod-cream ana reveal" id="secAna">
+    <div class="wrap">
+      <div class="ana-grid">
+        <div class="statband reveal" id="statBand"></div>
+        <div class="panel reveal" id="anaConf"></div>
+        <div class="panel half reveal" id="anaDist"></div>
+        <div class="panel reveal" id="anaSummary" style="grid-column:1/-1"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mod mod-navy reveal" id="secS">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="tier-tag tier-s">S 级</span>
+        <h2>本周爆款</h2>
+        <span class="sec-note" id="sCount"></span>
+        <div class="sec-line"></div>
+      </div>
+      <div class="s-grid" id="sGrid"></div>
+    </div>
+  </section>
+
+  <section class="mod mod-tint reveal" id="secA">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="tier-tag tier-a">A 级</span>
+        <h2>值得关注</h2>
+        <span class="sec-note" id="aCount"></span>
+        <div class="sec-line"></div>
+      </div>
+      <div class="a-grid" id="aGrid"></div>
+    </div>
+  </section>
+
+  <section class="mod mod-sky reveal" id="secB">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="tier-tag tier-b">B 级</span>
+        <h2>储备观察</h2>
+        <span class="sec-note" id="bCount"></span>
+        <div class="sec-line"></div>
+      </div>
+      <div class="a-grid" id="bGrid"></div>
+    </div>
+  </section>
+
+  <section class="mod mod-calm reveal" id="secC">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="tier-tag tier-c">C 级</span>
+        <h2>观望跟踪</h2>
+        <span class="sec-note" id="cCount"></span>
+        <div class="sec-line"></div>
+      </div>
+      <div class="b-list" id="cGrid"></div>
+    </div>
+  </section>
+
+  <section class="mod mod-cta reveal" id="secCta">
+    <div class="wrap">
+      <div class="cta-grid">
+        <div>
+          <span class="cta-kicker">两个库 · 随时回看</span>
+          <h2 class="cta-title">精选库里看质量<br>游戏库里看全量</h2>
+          <p class="cta-desc">精选库沉淀每期创意部优选、适合游戏化改编的玩法原型；游戏库收录全周期完整打捞记录，支持平台、评级与标签交叉检索。一个看质量，一个看全量。</p>
+          <div class="cta-btns">
+            <button class="cta-btn pri" data-goto="picks">打开精选库 <span>→</span></button>
+            <button class="cta-btn" data-goto="library">打开完整游戏库 <span>→</span></button>
+          </div>
+        </div>
+        <div class="cta-stage" aria-hidden="true">
+          <div class="mini-card mc1"><span class="mc-badge b-white">S</span><span class="mc-cat">Weekly</span><div class="mc-name">本周爆款</div><div class="mc-bar">☺ ✦</div></div>
+          <div class="mini-card mc2"><span class="mc-badge b-sky">★</span><span class="mc-cat">Picks</span><div class="mc-name">创意部精选</div><div class="mc-line"></div><div class="mc-line w60"></div><div class="mc-foot"><span>每期人工优选</span></div></div>
+          <div class="mini-card mc3"><span class="mc-badge b-mist">库</span><span class="mc-cat">Library</span><div class="mc-name">全量记录检索</div><div class="mc-line"></div><div class="mc-line w60"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftmod reveal">
+    <div class="ft-top">
+      <div class="ft-logo">
+        <span class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <circle cx="9" cy="9" r="7.5" stroke="#fff" stroke-width="1.4" opacity=".55"/>
+            <circle cx="9" cy="9" r="4" stroke="#fff" stroke-width="1.4" opacity=".8"/>
+            <circle cx="9" cy="9" r="1.4" fill="#fff"/>
+            <g class="sweep"><line x1="9" y1="9" x2="9" y2="1.5" stroke="#7fd0ff" stroke-width="1.6" stroke-linecap="round"/></g>
+          </svg>
+        </span>
+        <div class="ft-name">真人挑战玩法原型雷达</div>
+      </div>
+    </div>
+    <div class="ft-cols">
+      <div class="ft-col">
+        <div class="ft-ct">关于雷达</div>
+        <p>每周筛选全网真人挑战内容，提炼值得游戏化的玩法原型。</p>
+        <p>按 S / A / B / C 分级推荐，并附规则拆解、节目效果点与原视频链接，供玩法选题与创意参考。</p>
+      </div>
+      <div class="ft-col">
+        <div class="ft-ct">收录与更新</div>
+        <p>每周二更新，按原内容发布时间归档。</p>
+        <p>游戏库持续收录历期玩法，支持按平台、标签与评级检索；热度及互动数据以采集时点为准。</p>
+      </div>
+    </div>
+    <div class="ft-sea">
+      <img class="ft-sea-img" src="footer_visual.webp" alt="" loading="lazy">
+      <div class="ft-sea-shine"></div>
+    </div>
+    <div class="ft-bar" style="justify-content:center">
+      <span>© 2026 真人挑战玩法原型雷达　｜　数据来源：公开社媒内容　｜　仅供内部玩法研究与创意参考</span>
+    </div>
+  </footer>
+</main>
+
+<!-- ============ 页 2：精选库（历期人工优选累积） ============ -->
+<main id="page-picks" class="hidden">
+  <header class="page-head">
+    <div class="wrap">
+      <h1 class="reveal">精选库</h1>
+      <p class="sub reveal">每期人工优选的玩法原型，按周持续沉淀</p>
+      <div class="lib-stats reveal" id="pickStats"></div>
+    </div>
+  </header>
+
+  <div class="tools">
+    <div class="wrap">
+      <div class="tools-grid" style="grid-template-columns:1.7fr 1fr 1fr">
+        <div class="f-field">
+          <label>搜索玩法</label>
+          <input class="f-control" id="pkSearch" placeholder="输入玩法、标签或规则关键词">
+        </div>
+        <div class="f-field">
+          <label>平台</label>
+          <select class="f-control" id="pkPlat"></select>
+        </div>
+        <div class="f-field">
+          <label>分类标签</label>
+          <select class="f-control" id="pkTag"></select>
+        </div>
+      </div>
+      <div class="lib-bar">
+        <span id="pkCount"></span>
+        <button class="lib-reset" id="pkReset">⟳ 重置筛选</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="lib-grid" id="pkGrid"></div>
+    <div class="empty hidden" id="pkEmpty">
+      <div class="big">没有匹配结果</div>
+      <div>换个关键词，或清除筛选条件</div>
+    </div>
+  </div>
+
+  <footer class="ftmod reveal">
+    <div class="ft-top">
+      <div class="ft-logo">
+        <span class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <circle cx="9" cy="9" r="7.5" stroke="#fff" stroke-width="1.4" opacity=".55"/>
+            <circle cx="9" cy="9" r="4" stroke="#fff" stroke-width="1.4" opacity=".8"/>
+            <circle cx="9" cy="9" r="1.4" fill="#fff"/>
+            <g class="sweep"><line x1="9" y1="9" x2="9" y2="1.5" stroke="#7fd0ff" stroke-width="1.6" stroke-linecap="round"/></g>
+          </svg>
+        </span>
+        <div class="ft-name">真人挑战玩法原型雷达</div>
+      </div>
+    </div>
+    <div class="ft-cols">
+      <div class="ft-col">
+        <div class="ft-ct">关于雷达</div>
+        <p>每周筛选全网真人挑战内容，提炼值得游戏化的玩法原型。</p>
+        <p>按 S / A / B / C 分级推荐，并附规则拆解、节目效果点与原视频链接，供玩法选题与创意参考。</p>
+      </div>
+      <div class="ft-col">
+        <div class="ft-ct">收录与更新</div>
+        <p>每周二更新，按原内容发布时间归档。</p>
+        <p>游戏库持续收录历期玩法，支持按平台、标签与评级检索；热度及互动数据以采集时点为准。</p>
+      </div>
+    </div>
+    <div class="ft-sea">
+      <img class="ft-sea-img" src="footer_visual.webp" alt="" loading="lazy">
+      <div class="ft-sea-shine"></div>
+    </div>
+    <div class="ft-bar" style="justify-content:center">
+      <span>© 2026 真人挑战玩法原型雷达　｜　数据来源：公开社媒内容　｜　仅供内部玩法研究与创意参考</span>
+    </div>
+  </footer>
+</main>
+
+<!-- ============ 页 3：游戏库 ============ -->
+<main id="page-library" class="hidden">
+  <header class="page-head">
+    <div class="wrap">
+      <h1 class="reveal">游戏库</h1>
+      <p class="sub reveal">跨周完整收录，支持搜索与筛选</p>
+      <div class="lib-stats reveal" id="libStats"></div>
+    </div>
+  </header>
+
+  <div class="tools">
+    <div class="wrap">
+      <div class="tools-grid">
+        <div class="f-field">
+          <label>搜索玩法</label>
+          <input class="f-control" id="searchInput" placeholder="输入玩法、作者或标签关键词">
+        </div>
+        <div class="f-field">
+          <label>平台</label>
+          <select class="f-control" id="fPlat"></select>
+        </div>
+        <div class="f-field">
+          <label>评级标记</label>
+          <select class="f-control" id="fGrade"></select>
+        </div>
+        <div class="f-field">
+          <label>来源周</label>
+          <select class="f-control" id="fWeek"></select>
+        </div>
+        <div class="f-field">
+          <label>分类标签</label>
+          <select class="f-control" id="fTag"></select>
+        </div>
+      </div>
+      <div class="lib-bar">
+        <span id="libCount"></span>
+        <button class="lib-reset" id="libReset">⟳ 重置筛选</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="lib-grid" id="libGrid"></div>
+    <div id="libCount"></div>
+    <div class="empty hidden" id="libEmpty">
+      <div class="big">没有匹配结果</div>
+      <div>换个关键词，或清除筛选条件</div>
+    </div>
+  </div>
+
+  <footer class="ftmod reveal">
+    <div class="ft-top">
+      <div class="ft-logo">
+        <span class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <circle cx="9" cy="9" r="7.5" stroke="#fff" stroke-width="1.4" opacity=".55"/>
+            <circle cx="9" cy="9" r="4" stroke="#fff" stroke-width="1.4" opacity=".8"/>
+            <circle cx="9" cy="9" r="1.4" fill="#fff"/>
+            <g class="sweep"><line x1="9" y1="9" x2="9" y2="1.5" stroke="#7fd0ff" stroke-width="1.6" stroke-linecap="round"/></g>
+          </svg>
+        </span>
+        <div class="ft-name">真人挑战玩法原型雷达</div>
+      </div>
+    </div>
+    <div class="ft-cols">
+      <div class="ft-col">
+        <div class="ft-ct">关于雷达</div>
+        <p>每周筛选全网真人挑战内容，提炼值得游戏化的玩法原型。</p>
+        <p>按 S / A / B / C 分级推荐，并附规则拆解、节目效果点与原视频链接，供玩法选题与创意参考。</p>
+      </div>
+      <div class="ft-col">
+        <div class="ft-ct">收录与更新</div>
+        <p>每周二更新，按原内容发布时间归档。</p>
+        <p>游戏库持续收录历期玩法，支持按平台、标签与评级检索；热度及互动数据以采集时点为准。</p>
+      </div>
+    </div>
+    <div class="ft-sea">
+      <img class="ft-sea-img" src="footer_visual.webp" alt="" loading="lazy">
+      <div class="ft-sea-shine"></div>
+    </div>
+    <div class="ft-bar" style="justify-content:center">
+      <span>© 2026 真人挑战玩法原型雷达　｜　数据来源：公开社媒内容　｜　仅供内部玩法研究与创意参考</span>
+    </div>
+  </footer>
+</main>
+
+<div class="vmodal hidden" id="vmodal">
+  <div class="vmask" id="vmask"></div>
+  <div class="vbox">
+    <button class="vclose" id="vclose" aria-label="关闭">✕</button>
+    <video id="vplayer" controls playsinline preload="metadata"></video>
+    <a class="vlink" id="vlink" target="_blank" rel="noopener">跳转至原平台播放 ↗</a>
+  </div>
+</div>
+
+<script>
+/* ===== 数据（build.js 注入） ===== */
+const DATA = [{"序号":1,"玩法":"计时接力·一人猜一人执行","平台":"抖音","作者":"成妹小蛙","内容评级":"A","热度指数":5,"分享指数":5,"质量指数":5,"规则指数":4,"点赞数":3550138,"播放量":71002760,"分享数":1603156,"评论数":27942,"收藏数":137345,"入选原因":"UP主来源 · 把握度中","来源":"UP主","发布时间":"2026-08-21","视频链接":"https://www.douyin.com/video/7676191465613167881","标题":"本来能中500w的... #计时接力 #计时挑战","最低参与人数":2,"规则":"计时接力：计时器从0走动，目标时刻按停；一人戴耳机沉浸音乐，另一人盯表执行按键；读数停在目标区间即成功","节目效果点":"0.01秒级的时机博弈+两人分工默契，'本来能中500w'的遗憾梗","分类标签":"默契、猜测推理","热度数值":71002760,"热度类型":"plays","综合分":88.4,"热度得分":6.81,"热度等级":"高热度","封面":"covers/7676191465613167881.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-001.mp4"},{"序号":2,"玩法":"自制综艺·不要跳进水坑1v1","平台":"抖音","作者":"阿哲什么都会","内容评级":"B","热度指数":5,"分享指数":5,"质量指数":5,"规则指数":3,"点赞数":1560697,"播放量":31213940,"分享数":674856,"评论数":38362,"收藏数":104766,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-19","视频链接":"https://www.douyin.com/video/7675618168458546474","标题":"王。#阿哲和倩怡 #自制综艺 #未来导演扶持计划 #00后在客厅拍出综艺群像天花板","最低参与人数":10,"规则":"阿哲和倩怡自制综艺：户外多环节竞技——集合整队讲解、骑充气毛毛虫接力竞速、核心环节“不要跳进水坑”1v1终极大战","节目效果点":"00后客厅/村口拍出综艺群像，落水瞬间","分类标签":"体力对抗","热度数值":31213940,"热度类型":"plays","综合分":75.5,"热度得分":6.48,"热度等级":"高热度","封面":"covers/7675618168458546474.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-002.mp4"},{"序号":3,"玩法":"拼出你的理想型·贴纸拼脸","平台":"抖音","作者":"铁汁妹妹s","内容评级":"S","热度指数":3,"分享指数":5,"质量指数":3,"规则指数":5,"点赞数":360875,"播放量":7217500,"分享数":270586,"评论数":7900,"收藏数":41788,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-19","视频链接":"https://www.douyin.com/video/7675634885905698048","标题":"《拼出你的理想型》几号嘉宾是你的最爱？哈哈哈哈哈哈哈 #搞笑 #闺蜜 #游戏 #理想型 #帅哥","最低参与人数":2,"规则":"《拼出你的理想型》：用贴纸书的五官部件拼出“理想型”人脸，拼出来巨丑，互相吐槽“这真不是我理想型说实话”","节目效果点":"拼出来的丑脸vs预期的反差","分类标签":"桌游道具（扩）","热度数值":7217500,"热度类型":"plays","综合分":90.7,"热度得分":5.92,"热度等级":"高热度","封面":"covers/7675634885905698048.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-003.mp4"},{"序号":5,"玩法":"谁赢谁吃·文言文干饭","平台":"抖音","作者":"咸鸭蛋","内容评级":"B","热度指数":2,"分享指数":5,"质量指数":2,"规则指数":4,"点赞数":226998,"播放量":4539960,"分享数":265210,"评论数":7440,"收藏数":7883,"入选原因":"UP主来源 · 把握度中","来源":"UP主","发布时间":"2026-08-20","视频链接":"https://www.douyin.com/video/7676022310088414833","标题":"谁赢谁吃(文言文版)#吃货日常#锋味派高品质更放心","最低参与人数":2,"规则":"谁赢谁吃：满桌美食前两人先碰拳/猜拳定输赢，输家背文言文过关，赢的人动筷","节目效果点":"干饭配文言文的反差","分类标签":"美食进食","热度数值":4539960,"热度类型":"plays","综合分":78.6,"热度得分":5.67,"热度等级":"高热度","封面":"covers/7676022310088414833.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-005.mp4"},{"序号":6,"玩法":"读秒挑战","平台":"抖音","作者":"年轻人小邹","内容评级":"A","热度指数":2,"分享指数":1,"质量指数":4,"规则指数":5,"点赞数":134312,"播放量":2686240,"分享数":5219,"评论数":1731,"收藏数":57264,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-19","视频链接":"https://www.douyin.com/video/7675562327277669659","标题":"读秒这块还有谁不服 #年轻人小邹 #计时挑战","最低参与人数":2,"规则":"玩家需要在心里默念或打节奏估算时间，并在目标时间点按下计时器停止键，使计时器显示的时间尽可能接近目标秒数。","节目效果点":"读秒时的紧张感、按停瞬间的误差对比、以及挑战成功后的成就感缺失。","分类标签":"能力限制","热度数值":2686240,"热度类型":"plays","综合分":86.1,"热度得分":5.38,"热度等级":"中热度","封面":"covers/7675562327277669659.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-006.mp4"},{"序号":7,"玩法":"今天玩个捉迷藏（家庭版）","平台":"抖音","作者":"酱油白米饭","内容评级":"S","热度指数":3,"分享指数":2,"质量指数":5,"规则指数":5,"点赞数":429252,"播放量":8585040,"分享数":27157,"评论数":12485,"收藏数":125716,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-20","视频链接":"https://www.douyin.com/video/7675699701554892095","标题":"2026年8月20日星期四 阴 《今天玩个捉迷藏》 #酱油白米饭 #搞笑日常 #亚朵星球深睡稳压枕 #亚朵星球","最低参与人数":3,"规则":"酱油白米饭系列：家里玩捉迷藏，一人藏一人找，藏点包括门后/浴室/柜后，寻找者持相机第一视角找，找到即揭晓","节目效果点":"藏身处与寻找过程的反差","分类标签":"体力对抗","热度数值":8585040,"热度类型":"plays","综合分":90.5,"热度得分":5.89,"热度等级":"高热度","封面":"covers/7675699701554892095.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-007.mp4"},{"序号":9,"玩法":"拍铃铛反应力小游戏","平台":"抖音","作者":"瓜哥超爱玩～","内容评级":"B","热度指数":2,"分享指数":4,"质量指数":2,"规则指数":4,"点赞数":194463,"播放量":3889260,"分享数":199422,"评论数":4959,"收藏数":11274,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-18","视频链接":"https://www.douyin.com/video/7674992962480262434","标题":"拍铃铛反应力小游戏~ #搞笑 #增进友谊小游戏  #瓜子二手车","最低参与人数":2,"规则":"两人面对面坐在桌旁，桌上放置一个铃铛。游戏开始后，双方需根据指令或特定时机快速伸手拍响铃铛，先拍到者得分。","节目效果点":"戴头套影响视线增加难度，双方抢拍铃铛时的肢体冲突和反应速度对比，旁观者的嘲笑反应","分类标签":"能力限制","热度数值":3889260,"热度类型":"plays","综合分":78.3,"热度得分":5.63,"热度等级":"高热度","封面":"covers/7674992962480262434.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-009.mp4"},{"序号":10,"玩法":"计时挑战（时间感知）","平台":"抖音","作者":"小然子","内容评级":"B","热度指数":2,"分享指数":1,"质量指数":1,"规则指数":5,"点赞数":116840,"播放量":2336800,"分享数":6264,"评论数":290,"收藏数":4077,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-23","视频链接":"https://www.douyin.com/video/7677154956989856127","标题":"计时挑战（这时间观念简直！） #游戏 #计时挑战#时间感知 #小然子 #王梓陌","最低参与人数":2,"规则":"参与者闭眼，在内心默数时间，当感觉到达目标时间时按下按钮。计时器显示实际用时，与目标时间越接近越成功。","节目效果点":"参与者对时间感知的偏差（如1秒按成2秒）产生喜剧效果，以及闭眼时的表情和动作","分类标签":"能力限制","热度数值":2336800,"热度类型":"plays","综合分":84.4,"热度得分":5.18,"热度等级":"中热度","封面":"covers/7677154956989856127.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-010.mp4"},{"序号":11,"玩法":"寂静之地挑战","平台":"抖音","作者":"四朵金花","内容评级":"B","热度指数":2,"分享指数":3,"质量指数":1,"规则指数":4,"点赞数":126202,"播放量":2524040,"分享数":61370,"评论数":2169,"收藏数":4991,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-23","视频链接":"https://www.douyin.com/video/7677198063840152842","标题":"大家逐渐开发出了一些新招数#四朵金花 #搞笑 #游戏日常 #寂静之地","最低参与人数":4,"规则":"游戏过程中必须保持绝对安静，不能发出任何声音。玩家需在静音状态下完成各种互动动作来干扰对方或完成任务，一旦发出声音即算失败。","节目效果点":"玩家在极度安静的环境下憋笑、做夸张动作，以及突然发出的声音带来的反差笑点。","分类标签":"能力限制","热度数值":2524040,"热度类型":"plays","综合分":75.9,"热度得分":5.36,"热度等级":"中热度","封面":"covers/7677198063840152842.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-011.mp4"},{"序号":12,"玩法":"绝对手感挑战·抓瓜子称重","平台":"抖音","作者":"成妹小蛙","内容评级":"A","热度指数":3,"分享指数":2,"质量指数":1,"规则指数":5,"点赞数":272792,"播放量":5455840,"分享数":19117,"评论数":811,"收藏数":8416,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-19","视频链接":"https://www.douyin.com/video/7675414430515023167","标题":"这就是绝对手感吗？ #绝对手感挑战","最低参与人数":2,"规则":"绝对手感挑战：徒手抓一把瓜子控制克重，上秤称重比对目标值，“克重误差小的赢”","节目效果点":"0.1g级的神准（'30.0好假啊'）","分类标签":"能力限制","热度数值":5455840,"热度类型":"plays","综合分":87.7,"热度得分":5.56,"热度等级":"中热度","封面":"covers/7675414430515023167.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-012.mp4"},{"序号":13,"玩法":"猜猜我是谁（干员版）","平台":"抖音","作者":"呼噜馆儿","内容评级":"B","热度指数":1,"分享指数":1,"质量指数":2,"规则指数":5,"点赞数":45630,"播放量":912600,"分享数":2588,"评论数":705,"收藏数":13475,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-19","视频链接":"https://www.douyin.com/video/7675682603332722853","标题":"没有技术，全是破绽‼️ #呼噜馆儿 #猜猜我是谁 #三角洲行动 #搞笑 #桌游","最低参与人数":1,"规则":"1. 一名玩家从卡牌中秘密选择一名角色，插入棋盘；2. 其他玩家通过轮流提问来缩小范围；3. 棋盘上有编号，玩家根据回答排除角色；4. 最终猜中角色或通过排除法锁定答案。","节目效果点":"提问者的问题往往出人意料（如“皮肤黑不黑”），导致回答者无语或爆笑；玩家间的表情互动和“没有技术全是破绽”的搞笑氛围","分类标签":"猜测推理","热度数值":912600,"热度类型":"plays","综合分":82.1,"热度得分":4.91,"热度等级":"低热度","封面":"covers/7675682603332722853.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-013.mp4"},{"序号":14,"玩法":"完美对切挑战","平台":"抖音","作者":"方妖金","内容评级":"B","热度指数":1,"分享指数":1,"质量指数":2,"规则指数":5,"点赞数":30683,"播放量":613660,"分享数":968,"评论数":1095,"收藏数":9215,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-21","视频链接":"https://www.douyin.com/video/7676405251461707940","标题":"切完就去当厨子 #闺蜜日常 #完美对切挑战 #方金真厉害","最低参与人数":2,"规则":"两人轮流将水果切成两半，用电子秤称量两半的重量，计算差值，差值越小越接近完美对切","节目效果点":"切水果时的紧张感、称重时的悬念、差值对比带来的胜负欲","分类标签":"能力限制","热度数值":613660,"热度类型":"plays","综合分":80.3,"热度得分":4.7,"热度等级":"低热度","封面":"covers/7676405251461707940.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-014.mp4"},{"序号":15,"玩法":"商场互买丑衣服","平台":"抖音","作者":"杨洋羊（抽象王子）","内容评级":"B","热度指数":1,"分享指数":2,"质量指数":1,"规则指数":5,"点赞数":64277,"播放量":1285540,"分享数":19786,"评论数":883,"收藏数":3841,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-21","视频链接":"https://www.douyin.com/video/7676329422526893018","标题":"和朋友在商场互买丑衣服#绷不住了 #蛋仔先锋机甲变身 #跟着蛋仔浪一夏 #蛋仔派对 #蛋仔激战先锋","最低参与人数":2,"规则":"朋友间在商场内互相为对方挑选并购买丑衣服，然后穿上在商场内巡游。","节目效果点":"朋友穿上对方挑选的丑衣服后产生的反差感和尴尬感，以及穿着丑衣服在商场巡游的社死场面。","分类标签":"大冒险惩罚","热度数值":1285540,"热度类型":"plays","综合分":83.5,"热度得分":5.07,"热度等级":"低热度","封面":"covers/7676329422526893018.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-015.mp4"},{"序号":16,"玩法":"猜球挑战","平台":"抖音","作者":"管不饿","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":5,"点赞数":8152,"播放量":163040,"分享数":1636,"评论数":178,"收藏数":425,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-19","视频链接":"https://www.douyin.com/video/7675660819208611065","标题":"猜球挑战#哈哈哈哈哈哈我要笑死了 #搞笑日常 #超能挑战赛 #管不饿 #男大学生","最低参与人数":2,"规则":"操作者将球藏在其中一个纸杯下，通过快速移动或交换纸杯位置打乱顺序，猜者需判断球最终在哪个杯子下。","节目效果点":"操作者通过夸张的动作和表情误导猜者，猜者猜错时的反应","分类标签":"猜测推理","热度数值":163040,"热度类型":"plays","综合分":75.4,"热度得分":4.13,"热度等级":"低热度","封面":"covers/7675660819208611065.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-016.mp4"},{"序号":17,"玩法":"时间感知计时挑战","平台":"抖音","作者":"小然子","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":5,"点赞数":11105,"播放量":222100,"分享数":275,"评论数":54,"收藏数":471,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-21","视频链接":"https://www.douyin.com/video/7676372045575856491","标题":"计时挑战（体测版） #游戏  #计时挑战 #时间感知 #小然子","最低参与人数":2,"规则":"玩家需在不看计时器的情况下，凭感觉在目标时间按下按钮停止计时，误差最小者获胜","节目效果点":"玩家对时间的感知误差带来的戏剧性反差，以及围观者的反应","分类标签":"能力限制","热度数值":222100,"热度类型":"plays","综合分":75.3,"热度得分":4.12,"热度等级":"低热度","封面":"covers/7676372045575856491.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-017.mp4"},{"序号":18,"玩法":"猜猜谁打的","平台":"抖音","作者":"瓜哥超爱玩～","内容评级":"B","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":5,"点赞数":48982,"播放量":979640,"分享数":8549,"评论数":322,"收藏数":3685,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-22","视频链接":"https://www.douyin.com/video/7676704931717467430","标题":"猜猜谁打的~ #搞笑 #增进友谊小游戏","最低参与人数":3,"规则":"一人蒙眼坐在椅子上，其他人轮流上前打他/她，被打者需猜出是谁打的","节目效果点":"被打者的夸张反应、猜错时的搞笑场面","分类标签":"猜测推理","热度数值":979640,"热度类型":"plays","综合分":82.3,"热度得分":4.93,"热度等级":"低热度","封面":"covers/7676704931717467430.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-018.mp4"},{"序号":19,"玩法":"读秒挑战","平台":"抖音","作者":"瓜哥超爱玩～","内容评级":"B","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":5,"点赞数":72879,"播放量":1457580,"分享数":9102,"评论数":797,"收藏数":5262,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-19","视频链接":"https://www.douyin.com/video/7675585948691795240","标题":"读秒挑战，胜者掌握指挥权~ #搞笑 #增进友谊小游戏","最低参与人数":2,"规则":"参与者需要凭感觉按下计时器，目标是让计时器显示的时间尽可能接近预设的目标秒数。按停后，计时器上显示的时间与目标时间的差值即为误差。","节目效果点":"参与者对时间的感知误差带来的滑稽表现，以及惩罚环节的肢体互动（如挠痒痒、抱人）带来的搞笑效果。","分类标签":"能力限制","热度数值":1457580,"热度类型":"plays","综合分":83.5,"热度得分":5.08,"热度等级":"低热度","封面":"covers/7675585948691795240.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-019.mp4"},{"序号":20,"玩法":"首尾造句","平台":"抖音","作者":"方妖金","内容评级":"B","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":5,"点赞数":18722,"播放量":374440,"分享数":1312,"评论数":1085,"收藏数":4365,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-22","视频链接":"https://www.douyin.com/video/7676776641637652598","标题":"文化人来了 #闺蜜日常 #首尾造句 #语言的魅力 #方金真厉害","最低参与人数":2,"规则":"一人说一个首字，另一人需用该字作为句子的开头，并确保句子的最后一个字与对方说的尾字相同，完成造句。","节目效果点":"接龙过程中的急智反应、造出意想不到的句子、以及双方互相调侃的互动","分类标签":"接力（扩）","热度数值":374440,"热度类型":"plays","综合分":78.7,"热度得分":4.52,"热度等级":"低热度","封面":"covers/7676776641637652598.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-020.mp4"},{"序号":21,"玩法":"谁滚进的球","平台":"抖音","作者":"摸鱼公司","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":3,"规则指数":4,"点赞数":28761,"播放量":575220,"分享数":892,"评论数":29333,"收藏数":13248,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-22","视频链接":"https://www.douyin.com/video/7676802818543467387","标题":"谁滚进的球 #办公室搞笑 #真会玩系列","最低参与人数":5,"规则":"参与者站在桌子一侧，每人选择一种颜色的球。一人将球滚向桌子另一侧的塑料瓶，球滚入瓶中则成功。其他人根据球滚入瓶中的结果猜测是谁的球。","节目效果点":"球滚入瓶中的随机性、参与者的夸张表情和争论、猜测过程中的互动","分类标签":"猜测推理","热度数值":575220,"热度类型":"plays","综合分":70.3,"热度得分":4.7,"热度等级":"低热度","封面":"covers/7676802818543467387.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-021.mp4"},{"序号":22,"玩法":"猜歌挑战（惩罚涂脸）","平台":"抖音","作者":"咸鸭蛋","内容评级":"C","热度指数":1,"分享指数":3,"质量指数":1,"规则指数":4,"点赞数":55487,"播放量":1109740,"分享数":77640,"评论数":3758,"收藏数":2038,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-23","视频链接":"https://www.douyin.com/video/7677193299093974201","标题":"猜歌挑战#吃货日常 #挑战 @抖音小助手","最低参与人数":2,"规则":"一人戴耳机听歌，另一人通过口型或动作提示猜歌名；猜错或猜不出则被惩罚涂脸。","节目效果点":"猜歌过程中的夸张表情、涂脸后的滑稽形象、以及两人互动的喜剧效果。","分类标签":"猜测推理","热度数值":1109740,"热度类型":"plays","综合分":73.5,"热度得分":5.07,"热度等级":"低热度","封面":"covers/7677193299093974201.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-022.mp4"},{"序号":23,"玩法":"叠杯竞速赛","平台":"TikTok","作者":"little_bros_games","内容评级":"C","热度指数":2,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":53200,"播放量":3900000,"分享数":508,"评论数":66,"收藏数":1563,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-23","视频链接":"https://www.tiktok.com/@little_bros_games/video/7676889536428838158","标题":"Cup Stacking Competition! 😆#partygames #familytime #partytime","最低参与人数":2,"规则":"轮流/同时叠杯塔，最快完成规定造型者赢","节目效果点":"手速+稳定性的直观对抗","分类标签":"体力对抗","热度数值":3900000,"热度类型":"plays","综合分":72.3,"热度得分":4.94,"热度等级":"高热度","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-023.mp4","封面":"covers/7676889536428838158.jpeg"},{"序号":24,"玩法":"谣言传递与接力任务","平台":"抖音","作者":"牛小豪","内容评级":"C","热度指数":2,"分享指数":1,"质量指数":3,"规则指数":3,"点赞数":124908,"播放量":2498160,"分享数":9334,"评论数":6456,"收藏数":24560,"入选原因":"UP主来源 · 把握度中低","来源":"UP主","发布时间":"2026-08-22","视频链接":"https://www.douyin.com/video/7676763537229991206","标题":"豪嘟U逗3 第（五）期 #未来导演扶持计划#抖音精选#自制综艺 #豪嘟U逗3","最低参与人数":2,"规则":"队伍分为蓝橙两队，通过接力形式完成特定任务，过程中可能包含谣言散播环节，需在限定时间内完成。","节目效果点":"谣言散播带来的信息差、接力过程中的紧张感、全员震惊反应。","分类标签":"接力（扩）","热度数值":2498160,"热度类型":"plays","综合分":65.8,"热度得分":5.34,"热度等级":"中热度","封面":"covers/7676763537229991206.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-024.mp4"},{"序号":25,"玩法":"互相画丑妆憋笑挑战","平台":"抖音","作者":"感冒龟龟","内容评级":"C","热度指数":1,"分享指数":2,"质量指数":1,"规则指数":4,"点赞数":62461,"播放量":1249220,"分享数":37461,"评论数":974,"收藏数":1273,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-23","视频链接":"https://www.douyin.com/video/7676498199401467151","标题":"学会了给你仇人画#我从未告诉过你 #闺蜜 #妆教 #搞笑 #抽象","最低参与人数":2,"规则":"两人互相在对方脸上画夸张的丑妆，画的过程中和完成后都要努力憋笑，先笑场或笑出声的人输。","节目效果点":"画丑妆的过程本身就充满笑点，加上双方努力憋笑的表情和最终成品对比，喜剧效果拉满。","分类标签":"能力限制","热度数值":1249220,"热度类型":"plays","综合分":73.1,"热度得分":5.03,"热度等级":"低热度","封面":"covers/7676498199401467151.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-025.mp4"},{"序号":26,"玩法":"黄豆摸金挑战","平台":"抖音","作者":"爆笑办公室","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":2,"规则指数":4,"点赞数":45461,"播放量":909220,"分享数":997,"评论数":1462,"收藏数":15933,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-20","视频链接":"https://www.douyin.com/video/7676051728441450865","标题":"黄豆摸金挑战哈哈哈 #搞笑 #办公室游戏","最低参与人数":2,"规则":"参与者需在一大盆黄豆中蒙眼用手摸出隐藏的小物件，根据触感猜测其形状或位置。","节目效果点":"蒙眼摸豆时的紧张感、摸到奇怪形状的惊讶、脸上扑粉的搞笑瞬间","分类标签":"猜测推理","热度数值":909220,"热度类型":"plays","综合分":71.7,"热度得分":4.86,"热度等级":"低热度","封面":"covers/7676051728441450865.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-026.mp4"},{"序号":27,"玩法":"文言文接龙挑战","平台":"抖音","作者":"咸鸭蛋","内容评级":"C","热度指数":1,"分享指数":2,"质量指数":1,"规则指数":4,"点赞数":55940,"播放量":1118800,"分享数":46906,"评论数":1970,"收藏数":1819,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-19","视频链接":"https://www.douyin.com/video/7675602518642669745","标题":"谁赢谁吃(文言文版)#吃货日常 @抖音小助手","最低参与人数":2,"规则":"参与者需根据提示说出文言文原文或释义，接不上或说错则接受惩罚。","节目效果点":"文言文与日常吃播结合，产生反差；接龙失败时的夸张反应和吃辣表情。","分类标签":"能力限制","热度数值":1118800,"热度类型":"plays","综合分":73.1,"热度得分":5.03,"热度等级":"低热度","封面":"covers/7675602518642669745.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-027.mp4"},{"序号":28,"玩法":"帮闺蜜清空购物车","平台":"抖音","作者":"方妖金","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":2,"规则指数":4,"点赞数":56621,"播放量":1132420,"分享数":3013,"评论数":1355,"收藏数":18077,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-19","视频链接":"https://www.douyin.com/video/7675666382599968490","标题":"七夕宠闺蜜了 #闺蜜日常 #宠闺蜜 #整活 #抽象","最低参与人数":2,"规则":"在超市内，一人根据另一人的购物清单或喜好拿取商品放入购物车，直到购物车装满或清单清空，期间被清空购物车的人不能看购物车内容，最后结算。","节目效果点":"闺蜜对购物车内容毫不知情，最后看到满满一车零食时的惊喜反应；拿取商品时的认真态度与最后成功的欣慰笑容形成反差。","分类标签":"接力（扩）","热度数值":1132420,"热度类型":"plays","综合分":72.9,"热度得分":5.01,"热度等级":"低热度","封面":"covers/7675666382599968490.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-028.mp4"},{"序号":29,"玩法":"计时接力·盲按秒表","平台":"抖音","作者":"成妹小蛙","内容评级":"B","热度指数":3,"分享指数":2,"质量指数":2,"规则指数":4,"点赞数":291547,"播放量":5830940,"分享数":26679,"评论数":1672,"收藏数":9611,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-22","视频链接":"https://www.douyin.com/video/7676566314739174656","标题":"差一步美满... #计时挑战 #计时接力","最低参与人数":2,"规则":"计时接力系列：报数者给出目标秒数，执行者戴耳机听音乐盲按，读数标注“目标→实际”，比对偏差，偏差小者赢","节目效果点":"0.1秒级的偏差对决+'差一步美满'的扼腕感","分类标签":"默契","热度数值":5830940,"热度类型":"plays","综合分":78.1,"热度得分":5.61,"热度等级":"中热度","封面":"covers/7676566314739174656.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-029.mp4"},{"序号":30,"玩法":"数字炸弹（词语版）","平台":"抖音","作者":"你快拉倒吧","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":23057,"播放量":461140,"分享数":1995,"评论数":206,"收藏数":882,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-22","视频链接":"https://www.douyin.com/video/7676778689333979067","标题":"数字炸弹 中国人能飞#数字炸弹 #万万想不到 #抽象 #一定要看到结尾","最低参与人数":3,"规则":"主持人设定一个词语作为“炸弹”，玩家轮流说出符合特定条件的词语。若说出的词语与“炸弹”相同，则气球在头顶爆炸。","节目效果点":"词语的抽象程度（如“中国人”、“平等”）与玩家猜测时的紧张感形成反差，气球爆炸的瞬间极具视觉冲击。","分类标签":"猜测推理","热度数值":461140,"热度类型":"plays","综合分":68.7,"热度得分":4.51,"热度等级":"低热度","封面":"covers/7676778689333979067.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-030.mp4"},{"序号":31,"玩法":"暗箱猜拳挑战","平台":"抖音","作者":"管不饿","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":11045,"播放量":220900,"分享数":2357,"评论数":264,"收藏数":489,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-21","视频链接":"https://www.douyin.com/video/7676432595303173989","标题":"暗箱猜拳挑战#哈哈哈哈哈哈我要笑死了 #搞笑日常 #超能挑战赛 #管不饿 #男大学生","最低参与人数":2,"规则":"两人站在桌子两侧，中间放置一个透明箱子。一人将手伸入箱内进行猜拳，另一人嘴咬伸缩棒，根据猜拳结果决定是否伸缩棒攻击对方。","节目效果点":"猜拳结果与伸缩棒攻击的同步性，以及被攻击时的夸张反应","分类标签":"能力限制","热度数值":220900,"热度类型":"plays","综合分":66.5,"热度得分":4.26,"热度等级":"低热度","封面":"covers/7676432595303173989.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-031.mp4"},{"序号":32,"玩法":"次数递增抛接球","平台":"抖音","作者":"瓜哥超爱玩～","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":25934,"播放量":518680,"分享数":3725,"评论数":698,"收藏数":3047,"入选原因":"UP主来源 · 把握度中","来源":"UP主","发布时间":"2026-08-21","视频链接":"https://www.douyin.com/video/7676443266702789915","标题":"次数递增小游戏~ #搞笑 #增进友谊小游戏","最低参与人数":2,"规则":"两人隔桌站立，使用球拍将球击向对方，每次成功接住并击回后，下一次击球前需增加一次拍球次数，次数逐轮递增。","节目效果点":"随着次数增加，动作变得滑稽且难以完成，产生喜剧效果","分类标签":"能力限制","热度数值":518680,"热度类型":"plays","综合分":70,"热度得分":4.67,"热度等级":"低热度","封面":"covers/7676443266702789915.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-032.mp4"},{"序号":33,"玩法":"转盘美食挑战","平台":"抖音","作者":"方妖金","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":23691,"播放量":473820,"分享数":995,"评论数":1060,"收藏数":7028,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-20","视频链接":"https://www.douyin.com/video/7676035664647907050","标题":"这得吃到啥时候啊！ #闺蜜日常#美食炸弹#宁波美食#美食挑战","最低参与人数":2,"规则":"两人在宁波探店，通过手机转盘APP随机选择要尝试的美食。转盘上有多种美食选项，转到什么就吃什么，并观察对方的反应。","节目效果点":"转盘随机性带来的不确定性，以及吃到奇怪或难吃食物时的夸张反应。","分类标签":"美食进食","热度数值":473820,"热度类型":"plays","综合分":69.5,"热度得分":4.61,"热度等级":"低热度","封面":"covers/7676035664647907050.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-033.mp4"},{"序号":34,"玩法":"饮料配对计时赛","平台":"TikTok","作者":"thesmilyfam","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":101800,"播放量":1800000,"分享数":603,"评论数":153,"收藏数":2036,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-22","视频链接":"https://www.tiktok.com/@thesmilyfam/video/7676741393779264799","标题":"First to Match the Drinks Wins! Timer Edition #time #game #challenge","最低参与人数":2,"规则":"把相同饮料两两配对，计时竞速，最快完成者赢","节目效果点":"计时压力下的手忙脚乱","分类标签":"能力限制","热度数值":1800000,"热度类型":"plays","综合分":72.2,"热度得分":4.92,"热度等级":"高热度","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-034.mp4","封面":"covers/7676741393779264799.jpeg"},{"序号":35,"玩法":"课堂问答·答错关禁闭","平台":"TikTok","作者":"petebenson7","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":58800,"播放量":1600000,"分享数":950,"评论数":584,"收藏数":5307,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-19","视频链接":"https://www.tiktok.com/@petebenson7/video/7675755562671394062","标题":"Somebody gets Detention 😳✏️#challenge #partygames #family #reveal #schoollife","最低参与人数":2,"规则":"轮流回答问题，答错者被关“禁闭”惩罚","节目效果点":"学渣答题的窘迫+惩罚","分类标签":"猜测推理","热度数值":1600000,"热度类型":"plays","综合分":72.2,"热度得分":4.92,"热度等级":"高热度","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-035.mp4","封面":"covers/7675755562671394062.jpeg"},{"序号":36,"玩法":"静音猜词赢奖金","平台":"TikTok","作者":"klemfamily","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":79400,"播放量":1400000,"分享数":264,"评论数":524,"收藏数":1563,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-23","视频链接":"https://www.tiktok.com/@klemfamily/video/7676845043533106446","标题":"Muted fast money challenge!! (They can’t hear anything!)😂 #familygamenight #familyfun #gameswithfriends #muted","最低参与人数":2,"规则":"表演者被静音只能对口型/动作，搭档猜词卡内容，猜中赢钱","节目效果点":"静音对口型的鸡同鸭讲","分类标签":"默契","热度数值":1400000,"热度类型":"plays","综合分":70.9,"热度得分":4.77,"热度等级":"中热度","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-036.mp4","封面":"covers/7676845043533106446.jpeg"},{"序号":37,"玩法":"静音猜词赢奖金（7轮）","平台":"TikTok","作者":"klemfamily","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":77900,"播放量":1200000,"分享数":247,"评论数":318,"收藏数":1272,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-21","视频链接":"https://www.tiktok.com/@klemfamily/video/7676111797694319886","标题":"Who’s best in this muted fast money challenge? #familygamenight #familyfun #gameswithfriends #muted IB: @phillipsfambam","最低参与人数":2,"规则":"静音对口型猜词，7轮计分赢奖金","节目效果点":"对口型猜词的鸡同鸭讲","分类标签":"默契","热度数值":1200000,"热度类型":"plays","综合分":70.5,"热度得分":4.72,"热度等级":"中热度","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-037.mp4","封面":"covers/7676111797694319886.jpeg"},{"序号":38,"玩法":"计时井字棋（男女对抗）","平台":"TikTok","作者":"thesmilyfam","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":37800,"播放量":1100000,"分享数":326,"评论数":95,"收藏数":904,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-22","视频链接":"https://www.tiktok.com/@thesmilyfam/video/7676775486663445790","标题":"Timer Tic Tac Toe! Boys vs Girls #time #game #challenge","最低参与人数":2,"规则":"限时落子下井字棋，超时判负，男女队对抗","节目效果点":"计时压力下的昏招","分类标签":"桌游道具（扩）","热度数值":1100000,"热度类型":"plays","综合分":69.5,"热度得分":4.61,"热度等级":"中热度","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-038.mp4","封面":"covers/7676775486663445790.jpeg"},{"序号":39,"玩法":"盲猜时间赢现金","平台":"TikTok","作者":"klemfamily","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":61500,"播放量":1100000,"分享数":240,"评论数":524,"收藏数":1420,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-20","视频链接":"https://www.tiktok.com/@klemfamily/video/7675745011731893518","标题":"Guess the time and win the cash! #familyfun #gameswithfriends #familygamenight #matchgame","最低参与人数":2,"规则":"凭感觉估算目标时间按停计时器，最接近者赢现金","节目效果点":"时间感差异","分类标签":"能力限制","热度数值":1100000,"热度类型":"plays","综合分":70.1,"热度得分":4.68,"热度等级":"中热度","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-039.mp4","封面":"covers/7675745011731893518.jpeg"},{"序号":40,"玩法":"扫地机气球轮盘","平台":"TikTok","作者":"gettishow","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":22000,"播放量":945100,"分享数":215,"评论数":3316,"收藏数":1863,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-20","视频链接":"https://www.tiktok.com/@gettishow/video/7676013784594533662","标题":"Roomba Roulette: Balloon Edition #originalgames #family #vegaslife","最低参与人数":2,"规则":"气球绑在随机移动的扫地机上，轮流/竞逐扎破，最后剩下的气球主人输/赢","节目效果点":"扫地机随机移动的不可控","分类标签":"体力对抗","热度数值":945100,"热度类型":"plays","综合分":68.8,"热度得分":4.53,"热度等级":"中热度","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-040.mp4","封面":"covers/7676013784594533662.jpeg"},{"序号":41,"玩法":"物理抽钞票挑战","平台":"TikTok","作者":"gettishow","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":10800,"播放量":635100,"分享数":93,"评论数":277,"收藏数":915,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-23","视频链接":"https://www.tiktok.com/@gettishow/video/7677097374774283551","标题":"Using Physics to Remove the Bill 💵 #waterpressure #sciencefun #twocups #water #challenge","最低参与人数":2,"规则":"把压在水瓶下的钞票快速抽走而瓶子不倒","节目效果点":"一气呵成的爽感与翻车","分类标签":"能力限制","热度数值":635100,"热度类型":"plays","综合分":66.6,"热度得分":4.27,"热度等级":"低热度","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-041.mp4","封面":"covers/7677097374774283551.jpeg"},{"序号":48,"玩法":"摸箱猜物·蓝舌石龙子","平台":"抖音","作者":"牛小豪","内容评级":"A","热度指数":2,"分享指数":3,"质量指数":2,"规则指数":5,"点赞数":159414,"播放量":3188280,"分享数":57975,"评论数":5383,"收藏数":10441,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-18","视频链接":"https://www.douyin.com/video/7675221449129481674","标题":"哈哈哈哈哈 #摸箱猜物 #牛小豪 #综艺搞笑 #办公室游戏","最低参与人数":4,"规则":"摸箱猜物：箱内放活物，玩家不看伸手进箱摸，猜是什么；“我跟你说什么感觉啊”","节目效果点":"摸到活物的惊吓反应","分类标签":"猜测推理","热度数值":3188280,"热度类型":"plays","综合分":87,"热度得分":5.48,"热度等级":"中热度","封面":"covers/7675221449129481674.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-042.mp4"},{"序号":49,"玩法":"匿名真心话·团播成员版","平台":"抖音","作者":"屈大将","内容评级":"A","热度指数":2,"分享指数":2,"质量指数":1,"规则指数":5,"点赞数":175341,"播放量":3506820,"分享数":32200,"评论数":1301,"收藏数":6911,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-22","视频链接":"https://www.douyin.com/video/7676491253386644771","标题":"匿名真心话（23） #大将和3哥#网易严选猫粮 #网易严选鲜蒸猫粮 #自制综艺  #未来导演扶持计划","最低参与人数":10,"规则":"匿名真心话：成员轮流坐中间，匿名提问关于某成员的问题，众人给候选答案，最后揭晓“最终答案”","节目效果点":"匿名爆料的互揭感","分类标签":"观点表态（扩）","热度数值":3506820,"热度类型":"plays","综合分":86.6,"热度得分":5.44,"热度等级":"中热度","封面":"covers/7676491253386644771.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-043.mp4"},{"序号":68,"玩法":"猜时间挑战·看谁接近3.00s","平台":"抖音","作者":"爆笑办公室","内容评级":"A","热度指数":2,"分享指数":1,"质量指数":4,"规则指数":5,"点赞数":114241,"播放量":2284820,"分享数":5904,"评论数":4890,"收藏数":56578,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-21","视频链接":"https://www.douyin.com/video/7676429858645598330","标题":"计时的神2！ #搞笑 #手速比赛 #计时的神","最低参与人数":2,"规则":"猜时间挑战：凭感觉按停计时器，“看谁接近3.00s”，差值小者赢","节目效果点":"0.0x秒级的精准对决","分类标签":"能力限制","热度数值":2284820,"热度类型":"plays","综合分":85.8,"热度得分":5.34,"热度等级":"中热度","封面":"covers/7676429858645598330.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-044.mp4"},{"序号":86,"玩法":"骗朋友玻璃隔音好（K歌房）","平台":"抖音","作者":"祭奠我死去的脚皮","内容评级":"B","热度指数":2,"分享指数":2,"质量指数":1,"规则指数":5,"点赞数":117291,"播放量":2345820,"分享数":11706,"评论数":740,"收藏数":2098,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-20","视频链接":"https://www.douyin.com/video/7676105597150994795","标题":"碟中谍，真的服了 #整蛊 #恶搞 #精神状态belike #劲爆尾杀#智斗@被蹬🕊️","最低参与人数":2,"规则":"整蛊：骗朋友K歌房玻璃隔音好，让他在里头大喊大叫其实外面听得一清二楚公开处刑；结果朋友“其实这段子我刷过”","节目效果点":"大喊被听见的社死+反套路","分类标签":"说谎","热度数值":2345820,"热度类型":"plays","综合分":84.4,"热度得分":5.18,"热度等级":"中热度","封面":"covers/7676105597150994795.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-045.mp4"},{"序号":87,"玩法":"看拼音首字母猜词","平台":"抖音","作者":"张大牛","内容评级":"B","热度指数":1,"分享指数":1,"质量指数":3,"规则指数":5,"点赞数":66852,"播放量":1337040,"分享数":7026,"评论数":2294,"收藏数":35913,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-22","视频链接":"https://www.douyin.com/video/7676679513568824942","标题":"想象力很丰富+3 #猜词挑战 #搞笑","最低参与人数":3,"规则":"猜词挑战：给出拼音首字母，猜词人补全词语，答案离谱引爆笑","节目效果点":"离谱答案+怼脸表情","分类标签":"猜测推理","热度数值":1337040,"热度类型":"plays","综合分":84.2,"热度得分":5.16,"热度等级":"低热度","封面":"covers/7676679513568824942.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-046.mp4"},{"序号":88,"玩法":"剪金蛋挑战（办公室）","平台":"抖音","作者":"爆笑办公室","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":4,"规则指数":4,"点赞数":90521,"播放量":1810420,"分享数":2984,"评论数":15398,"收藏数":41897,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-23","视频链接":"https://www.douyin.com/video/7677166818952629093","标题":"剪金蛋挑战哈哈哈 #搞笑 #办公室游戏","最低参与人数":10,"规则":"剪金蛋挑战：头顶悬一排彩色气球，轮流拿剪刀剪破一个，接住掉出的纸条并执行，另有“颜色”“自由”等纸条","节目效果点":"剪球瞬间的紧张+惩罚揭晓","分类标签":"大冒险惩罚","热度数值":1810420,"热度类型":"plays","综合分":74.6,"热度得分":5.2,"热度等级":"中热度","封面":"covers/7677166818952629093.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-047.mp4"},{"序号":89,"玩法":"泼水偷袭·伞防守","平台":"抖音","作者":"摸鱼公司","内容评级":"B","热度指数":1,"分享指数":1,"质量指数":3,"规则指数":5,"点赞数":87936,"播放量":1758720,"分享数":2671,"评论数":1831,"收藏数":40507,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-21","视频链接":"https://www.douyin.com/video/7676430075898235259","标题":"蛋卷好厉害 #办公室搞笑 #真会玩系列","最低参与人数":2,"规则":"办公室攻防游戏：一人坐椅子上，另一人站凳子高处拿水盆偷袭泼水，坐着的人撑伞挡，“没淋到”则防守成功","节目效果点":"泼水瞬间开伞的极限防守","分类标签":"体力对抗","热度数值":1758720,"热度类型":"plays","综合分":84.5,"热度得分":5.19,"热度等级":"中热度","封面":"covers/7676430075898235259.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-048.mp4"},{"序号":93,"玩法":"倒放挑战·听倒放猜原句","平台":"抖音","作者":"呼噜馆儿","内容评级":"C","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":4,"点赞数":57804,"播放量":1156080,"分享数":1531,"评论数":470,"收藏数":5182,"入选原因":"UP主来源 · 把握度中高","来源":"UP主","发布时间":"2026-08-21","视频链接":"https://www.douyin.com/video/7676404307466355301","标题":"研究过许多倒放‼️海枯石烂 #呼噜馆儿 #搞笑 #倒放挑战 #自制综艺 #未来导演扶持计划","最低参与人数":2,"规则":"倒放挑战：一人念一句话录下倒放，另一人听倒放音频猜原句，配鳄鱼咬手玩具惩罚；对比“粥盒刷到的版本”","节目效果点":"倒放音频的空耳爆笑","分类标签":"猜测推理","热度数值":1156080,"热度类型":"plays","综合分":71.9,"热度得分":4.89,"热度等级":"低热度","封面":"covers/7676404307466355301.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-049.mp4"},{"序号":104,"玩法":"猜职业（描述工作内容）","平台":"抖音","作者":"感冒龟龟","内容评级":"B","热度指数":1,"分享指数":2,"质量指数":1,"规则指数":5,"点赞数":62708,"播放量":1254160,"分享数":10180,"评论数":471,"收藏数":1429,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-18","视频链接":"https://www.douyin.com/video/7674558722236108058","标题":"越努力越心酸#猜职业 #挑战 #致歉一切 #游戏","最低参与人数":2,"规则":"猜职业：一人抽职业卡，描述工作内容，另一人猜是什么职业","节目效果点":"抽象描述vs正经职业","分类标签":"猜测推理","热度数值":1254160,"热度类型":"plays","综合分":82.4,"热度得分":4.95,"热度等级":"低热度","封面":"covers/7674558722236108058.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-050.mp4"},{"序号":107,"玩法":"挑战持续笑一分钟","平台":"抖音","作者":"三个猪鼓励","内容评级":"B","热度指数":1,"分享指数":1,"质量指数":1,"规则指数":5,"点赞数":41543,"播放量":830860,"分享数":5873,"评论数":633,"收藏数":3076,"入选原因":"UP主来源 · 把握度高","来源":"UP主","发布时间":"2026-08-23","视频链接":"https://www.douyin.com/video/7677149495615835318","标题":"挑战持续笑一分钟 #搞笑 #三个猪鼓励 #万万想不到 #抽象 #挑战笑一分钟 @刘心瑶 @阿良 @腾哥儿","最低参与人数":2,"规则":"挑战持续笑一分钟：一人掐秒表，另一人持续保持大笑不停","节目效果点":"笑到面部狰狞","分类标签":"情绪控制","热度数值":830860,"热度类型":"plays","综合分":81.5,"热度得分":4.84,"热度等级":"低热度","封面":"covers/7677149495615835318.jpeg"},{"序号":108,"玩法":"指字游戏·高咪染咪","平台":"抖音","作者":"还没想好什么名字","内容评级":"C","热度指数":1,"分享指数":2,"质量指数":1,"规则指数":4,"点赞数":38559,"播放量":771180,"分享数":17162,"评论数":631,"收藏数":921,"入选原因":"UP主来源 · 把握度中","来源":"UP主","发布时间":"2026-08-22","视频链接":"https://www.douyin.com/video/7676536873498804389","标题":"我这个记性真的没关系吗… #公主裙旅游鞋 #宿舍游戏 #抽象","最低参与人数":2,"规则":"宿舍游戏：两人额头贴字卡，用手势指自己或对方并念出对应字，记错/指错输，“差点没把糖水笑出来”","节目效果点":"记性翻车的互相嘲笑","分类标签":"默契、能力限制","热度数值":771180,"热度类型":"plays","综合分":71.2,"热度得分":4.81,"热度等级":"低热度","封面":"covers/7676536873498804389.jpeg","视频文件":"https://media-challenges-bot.s3v2.nie.netease.com/玩法库/2026-W34-051.mp4"}];
+const PICKS_LIB = [{"序号":1,"玩法":"谁是卧底","平台":"抖音","内容评级":"","分类标签":"谁是卧底","规则":"每人拿到1个词，通过诱导性描述，确认自己的身份，发现卧底，每轮结束投票，平票无人出局。票出卧底，平民获胜，票出平民卧底获胜。","节目效果点":"语言搞笑，上帝视角看囧境","最低参与人数":4,"发布时间":"长青","作者":"","播放量":0,"点赞数":3110000,"评论数":240000,"收藏数":200000,"分享数":0,"视频链接":"https://www.douyin.com/search/%E8%B0%81%E6%98%AF%E5%8D%A7%E5%BA%95?modal_id=7628456738806629211&type=general&ug_source=jingmei_sem_baidu_dyweb_01_pinpai","游戏化形式":"有情节模拟变种，表演更夸张。有小游戏文字版本，趣味性比发言下降；会有很多变种，比如演绎、吃东西等","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":2,"玩法":"反向听令","平台":"抖音","内容评级":"","分类标签":"","规则":"把左和右的定义反转，主持人念左右的时候，各种往相反的方向跳/举手，做错动作会受到惩罚","节目效果点":"破坏常识，身体不协调","最低参与人数":1,"发布时间":"长青","作者":"","播放量":0,"点赞数":185000,"评论数":9000,"收藏数":26000,"分享数":0,"视频链接":"https://v.douyin.com/JfPPWIetkQA/","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":3,"玩法":"我画我猜","平台":"抖音","内容评级":"","分类标签":"我画我猜","规则":"你画我猜变种，通过高频题词作画完成30张画，提问画对应的词","节目效果点":"看图猜画，爆笑","最低参与人数":1,"发布时间":"长青","作者":"","播放量":0,"点赞数":290000,"评论数":32000,"收藏数":7000,"分享数":0,"视频链接":"","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":4,"玩法":"撒谎挑战","平台":"抖音","内容评级":"","分类标签":"撒谎挑战","规则":"在双方不知情的情况下，描述手上的物品，欺骗对方。会被另一方提问物品的属性，以及使用物品","节目效果点":"无厘头的谎言，憋笑","最低参与人数":2,"发布时间":"长青","作者":"","播放量":0,"点赞数":2700000,"评论数":112000,"收藏数":99000,"分享数":0,"视频链接":"","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":5,"玩法":"耳语挑战","平台":"抖音","内容评级":"","分类标签":"耳语挑战","规则":"第一个玩家读句子，第二名玩家看第一名玩家口型，重复读，第三名玩家看第二名玩家口型","节目效果点":"语言失误引发的无厘头搞笑","最低参与人数":3,"发布时间":"长青","作者":"","播放量":0,"点赞数":100000,"评论数":13000,"收藏数":1000,"分享数":0,"视频链接":"","游戏化形式":"需要看口型，搞笑点依赖玩家语言发挥","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":6,"玩法":"撕名牌","平台":"抖音","内容评级":"","分类标签":"撕名牌","规则":"runningman经典挑战，玩家背后贴有名牌，分两队把对方名牌撕掉就能淘汰","节目效果点":"夸张的肢体碰撞，各种奇特的撕名牌手段","最低参与人数":2,"发布时间":"长青","作者":"","播放量":0,"点赞数":1210000,"评论数":4000,"收藏数":31000,"分享数":0,"视频链接":"https://www.douyin.com/jingxuan/search/%E6%92%95%E5%90%8D%E7%89%8C?aid=2581c095-e856-44f6-b70d-cb7a7007b776&modal_id=7634356956492270883&type=general","游戏化形式":"","协作类型":"队内无规则合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":7,"玩法":"木头人","平台":"B站","内容评级":"","分类标签":"","规则":"安排一个任务或追逃，但设有禁止时间，在禁止时间内动，会立刻淘汰","节目效果点":"考验玩家反应和定力","最低参与人数":1,"发布时间":"长青","作者":"","播放量":1602,"点赞数":484000,"评论数":2000,"收藏数":150000,"分享数":0,"视频链接":"","游戏化形式":"鱿鱼游戏最经典场面","协作类型":"无合作","热度数值":1602,"热度类型":"plays","_pick":true},{"序号":8,"玩法":"端水走直线挑战","平台":"抖音","内容评级":"","分类标签":"","规则":"在布满肥皂液的软垫上走直线的基础上，增加了额外一重难度需要端着水一直到终点","节目效果点":"因走不稳摔倒/水全倒，画面滑稽","最低参与人数":2,"发布时间":"46235","作者":"","播放量":0,"点赞数":87000,"评论数":2000,"收藏数":36000,"分享数":0,"视频链接":"https://www.douyin.com/video/7671600977136754917?modeFrom=userPost&secUid=MS4wLjABAAAARglgZSh09oRWurRs2re9pNY3qXmE_UzqLS50-bl0ZSQ","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":9,"玩法":"计时接力挑战","平台":"抖音","内容评级":"","分类标签":"","规则":"第一人预估暂停秒数告知第二人，第二人凭感觉实操复刻该秒数，偏差小即为成功。","节目效果点":"不靠工具纯靠体感估时，极易出现预判和实操巨大落差，充满意外搞笑效果。","最低参与人数":2,"发布时间":"46235","作者":"","播放量":0,"点赞数":3590000,"评论数":28000,"收藏数":140000,"分享数":0,"视频链接":"https://v.douyin.com/L_kGQZqzG0E","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":10,"玩法":"一刀切挑战","平台":"抖音","内容评级":"","分类标签":"","规则":"参与者只能一刀将物品切开，切割结果达不到预设标准即为挑战失败。","节目效果点":"追求一次到位不能补救，成败全看这一下，带来紧张又刺激的博弈体验。","最低参与人数":2,"发布时间":"46235","作者":"","播放量":0,"点赞数":896000,"评论数":7000,"收藏数":27000,"分享数":0,"视频链接":"https://v.douyin.com/fdcN8Jk63uI/","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":11,"玩法":"猜词游戏","平台":"抖音","内容评级":"","分类标签":"","规则":"挑战者通过不断向出题人提问，对方仅回答是或不是，逐步缩小范围猜出目标事物。","节目效果点":"靠逻辑推理层层摸排，脑洞提问容易跑偏，充满解谜的悬念与意外趣味。","最低参与人数":2,"发布时间":"46235","作者":"","播放量":0,"点赞数":298000,"评论数":3000,"收藏数":7000,"分享数":0,"视频链接":"https://www.douyin.com/video/7671037703220255923","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":12,"玩法":"憋王游戏","平台":"抖音","内容评级":"","分类标签":"","规则":"开局每人一张牌，水杯中的酒在不断增加，期间如果觉得自己的牌小可以随时叫停，选择自己喝或者和别人比大小","节目效果点":"在酒液不断加码的压力下博弈心理，赌运气拼胆量，随时面临冒险还是认怂的两难抉择。","最低参与人数":3,"发布时间":"46235","作者":"","播放量":0,"点赞数":144000,"评论数":2000,"收藏数":37000,"分享数":0,"视频链接":"https://www.douyin.com/video/7670717467509509026","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":13,"玩法":"甩锅大赛","平台":"抖音","内容评级":"","分类标签":"","规则":"玩家划分各自阵营区域，投放大量玩偶 / 道具；把自己区域内的道具扔去对手区域，边攻边防。结算时“锅”最少的队伍获胜","节目效果点":"解压甩锅、混乱对抗、合作乐趣","最低参与人数":8,"发布时间":"46204","作者":"","播放量":0,"点赞数":301000,"评论数":13000,"收藏数":16000,"分享数":0,"视频链接":"https://v.douyin.com/3r7lvVwzoWE/","游戏化形式":"","协作类型":"有合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":14,"玩法":"偷吃大赛","平台":"抖音","内容评级":"","分类标签":"","规则":"模拟校园课堂，利用课本掩护在老师巡逻的视野盲区偷吃食物，被抓到需罚站，最快吃完者获胜。","节目效果点":"校园情怀、刺激潜行、偷吃的滑稽行为","最低参与人数":4,"发布时间":"46174","作者":"","播放量":0,"点赞数":2756000,"评论数":37000,"收藏数":75000,"分享数":0,"视频链接":"https://v.douyin.com/-npBLQ9rziY/","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":15,"玩法":"惩罚拍卖会","平台":"抖音","内容评级":"","分类标签":"","规则":"竞拍盲盒，但玩家的出价不是钱，而是接受惩罚的数量，例如打手掌心等","节目效果点":"相比常规拍卖，以惩罚作为出价，多了一个滑稽的惩罚环节，且因为是盲盒，开奖瞬间可能造成反转","最低参与人数":3,"发布时间":"46174","作者":"","播放量":0,"点赞数":129000,"评论数":4000,"收藏数":56000,"分享数":0,"视频链接":"https://www.douyin.com/video/7649339754374356965?modeFrom=searchResult","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":16,"玩法":"足球保龄球","平台":"抖音","内容评级":"","分类标签":"","规则":"保龄球玩法，但使用什么球需要抽签，根据击倒的保龄球数量决定对应的奖惩","节目效果点":"双重随机设计，用奇怪的道具打保龄球比较滑稽，且不是打得越多越好，而是要想办法命中奖励的数量","最低参与人数":2,"发布时间":"46143","作者":"","播放量":0,"点赞数":186000,"评论数":18000,"收藏数":53000,"分享数":0,"视频链接":"https://www.douyin.com/video/7641930583576252145?modeFrom=userPost&secUid=MS4wLjABAAAARglgZSh09oRWurRs2re9pNY3qXmE_UzqLS50-bl0ZSQ","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":17,"玩法":"扎气球挑战","平台":"B站","内容评级":"","分类标签":"","规则":"气球置于挡板之下，两人向挡板刺竹签，目标是避开气球","节目效果点":"类扫雷体验，每次刺向挡板都有可能刺破气球，观感刺激","最低参与人数":2,"发布时间":"46143","作者":"","播放量":234,"点赞数":65000,"评论数":400,"收藏数":65000,"分享数":0,"视频链接":"https://www.bilibili.com/video/BV1bQ5y6jErf/","游戏化形式":"","协作类型":"无合作","热度数值":234,"热度类型":"plays","_pick":true},{"序号":18,"玩法":"眼疾手快挑战","平台":"B站","内容评级":"","分类标签":"","规则":"听到信号迅速抢夺目标物品，抢到后必须当场使用或吃掉","节目效果点":"既要拼极速反应，还要立刻完成处置，突发状况百出，现场热闹又充满喜剧效果。","最低参与人数":2,"发布时间":"46113","作者":"","播放量":1976,"点赞数":106000,"评论数":200,"收藏数":74000,"分享数":0,"视频链接":"https://www.bilibili.com/video/BV16uoLBDEwR/?spm_id_from=333.337.search-card.all.click&vd_source=d27b4a67537a9a25f95d39d6a18549fd","游戏化形式":"","协作类型":"无合作","热度数值":1976,"热度类型":"plays","_pick":true},{"序号":19,"玩法":"谁是卧底情景版","平台":"B站","内容评级":"","分类标签":"","规则":"玩家拿到同一场景下略有差异的身份剧本，通过现场演绎情景行为，投票找出行为不一样的卧底。","节目效果点":"不靠文字描述，靠肢体表演暴露破绽，情景代入感强，容易出现离谱搞笑的演出现场。","最低参与人数":3,"发布时间":"46113","作者":"","播放量":697,"点赞数":57800,"评论数":100,"收藏数":39000,"分享数":0,"视频链接":"https://www.bilibili.com/video/BV1e1ozB5Eix/?spm_id_from=333.337.search-card.all.click&vd_source=d27b4a67537a9a25f95d39d6a18549fd","游戏化形式":"","协作类型":"无合作","热度数值":697,"热度类型":"plays","_pick":true},{"序号":20,"玩法":"数字盲盒挑战","平台":"B站","内容评级":"","分类标签":"","规则":"在不知道是奖励或惩罚的情况下，给出一个数字范围，玩家选择其中一个数。进行*X倍的奖励或惩罚","节目效果点":"极大的奖赏和惩罚落差","最低参与人数":1,"发布时间":"46082","作者":"","播放量":1033,"点赞数":63000,"评论数":100,"收藏数":43000,"分享数":0,"视频链接":"","游戏化形式":"强化游戏爽感或挫败感，只适合休闲向体验","协作类型":"无合作","热度数值":1033,"热度类型":"plays","_pick":true},{"序号":21,"玩法":"烧骰子挑战","平台":"B站","内容评级":"","分类标签":"","规则":"变种抽积木，玩家轮流用打火机烧杯口纸膜的边缘/局部纸越烧越薄/破洞。烧之前先掷骰子，骰子数目是多少就烧几次，谁烧的时候骰子掉进杯里谁输","节目效果点":"相比常规抽积木多加了一层随机，根据骰子的点数决定燃烧次数。更容易接近烧破时机，一次比一次刺激","最低参与人数":2,"发布时间":"46082","作者":"","播放量":785,"点赞数":184000,"评论数":2000,"收藏数":11000,"分享数":0,"视频链接":"https://www.bilibili.com/video/BV1mJAczuEA3/","游戏化形式":"","协作类型":"无合作","热度数值":785,"热度类型":"plays","_pick":true},{"序号":22,"玩法":"答非所问挑战","平台":"B站","内容评级":"","分类标签":"","规则":"一人向对手随意提问，对手不能回答问题本身，必须答完全无关的内容，答沾边即失败受罚。","节目效果点":"强行割裂问答逻辑，大脑本能容易顺题回答，频频翻车产生爆笑效果。","最低参与人数":3,"发布时间":"46082","作者":"","播放量":202,"点赞数":31000,"评论数":300,"收藏数":15000,"分享数":0,"视频链接":"","游戏化形式":"","协作类型":"","热度数值":202,"热度类型":"plays","_pick":true},{"序号":23,"玩法":"数10挑战","平台":"抖音","内容评级":"","分类标签":"","规则":"两人轮流报数字1-10，每报完一轮一方可用某个行为代替其中一个数字，直到一方说/做错","节目效果点":"简单数数逐步叠加记忆负担，极易大脑短路出错，制造欢乐搞笑的聚会效果","最低参与人数":2,"发布时间":"46054","作者":"","播放量":0,"点赞数":132000,"评论数":5000,"收藏数":42000,"分享数":0,"视频链接":"","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":24,"玩法":"七上八下挑战","平台":"B站","内容评级":"","分类标签":"","规则":"每翻开一张扑克牌，就要预测下一牌是更大还是更小，当决定收手/猜错，根据已翻开多少张牌决定被橡皮筋弹几次。若决定收手，惩罚对手，若猜错，则惩罚自己","节目效果点":"风险和收益博弈，提前收手/继续贪","最低参与人数":2,"发布时间":"46054","作者":"","播放量":216,"点赞数":39000,"评论数":300,"收藏数":100,"分享数":0,"视频链接":"https://www.bilibili.com/video/BV153fGB6EG5","游戏化形式":"","协作类型":"无合作","热度数值":216,"热度类型":"plays","_pick":true},{"序号":25,"玩法":"赛马扑克","平台":"抖音","内容评级":"","分类标签":"","规则":"玩家选定代表赛马的花色，逐张翻牌驱动对应花色马匹前进，触发赛道牌会马匹后退，最先冲过终点的花色获胜。","节目效果点":"完全依靠运气博弈，局势随时反转，大家为自己押的马呐喊助威，氛围感热烈刺激","最低参与人数":2,"发布时间":"46023","作者":"","播放量":0,"点赞数":1800000,"评论数":25000,"收藏数":503000,"分享数":0,"视频链接":"https://v.douyin.com/aACuCfT2HlY/","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":26,"玩法":"作业拍卖会","平台":"抖音","内容评级":"","分类标签":"","规则":"惩罚拍卖会的一种，老师没收了学生的物品后，让学生通过拍卖自己做多少卷子来获得这些被没收的东西","节目效果点":"相比常规拍卖是以惩罚作为出价","最低参与人数":3,"发布时间":"46023","作者":"","播放量":0,"点赞数":458000,"评论数":5300,"收藏数":85000,"分享数":0,"视频链接":"https://v.douyin.com/b1-bik8MQWg/","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":27,"玩法":"请你这样做","平台":"抖音","内容评级":"","分类标签":"","规则":"听到指令后做出相应的动作，符合惩罚条件的人做惩罚。如：指令1为伸出一只手指，全员做动作，指令2为伸出的是食指，则伸出食指的人受罚","节目效果点":"从思维惯性出发引导玩家踩雷","最低参与人数":2,"发布时间":"46023","作者":"","播放量":0,"点赞数":247000,"评论数":4000,"收藏数":60000,"分享数":0,"视频链接":"https://www.douyin.com/video/7600054606563205307","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":28,"玩法":"节奏大挑战","平台":"B站","内容评级":"","分类标签":"","规则":"按特定的音频节奏念图片中的“动物”“食物”“数字”","节目效果点":"失误引发搞笑","最低参与人数":1,"发布时间":"46023","作者":"","播放量":923,"点赞数":953000,"评论数":100,"收藏数":100000,"分享数":0,"视频链接":"","游戏化形式":"","协作类型":"无合作","热度数值":923,"热度类型":"plays","_pick":true},{"序号":29,"玩法":"听声辩位","平台":"B站","内容评级":"","分类标签":"","规则":"1个玩家屏蔽视野，攻击其他发出声音的玩家","节目效果点":"非对称状态下，躲逃及追击","最低参与人数":2,"发布时间":"46023","作者":"","播放量":749,"点赞数":237000,"评论数":3000,"收藏数":26000,"分享数":0,"视频链接":"","游戏化形式":"适合射击游戏和第五人格","协作类型":"无合作","热度数值":749,"热度类型":"plays","_pick":true},{"序号":30,"玩法":"夹子拔河挑战","平台":"B站","内容评级":"","分类标签":"","规则":"2人身上夹着多个夹子，夹子连着橡皮筋，两人进行拔河。玩家用力就会被夹得很痛，同时嘴里咬着尖叫鸡，稍微咬紧牙就会发出声音，发出声音的一方要挨打","节目效果点":"玩家忍痛拔河+发出声响挨打画面搞笑","最低参与人数":2,"发布时间":"46023","作者":"","播放量":417,"点赞数":184000,"评论数":2000,"收藏数":17000,"分享数":0,"视频链接":"https://www.bilibili.com/video/BV1wuzMBoEsb","游戏化形式":"","协作类型":"无合作","热度数值":417,"热度类型":"plays","_pick":true},{"序号":31,"玩法":"猜左右挑战","平台":"B站","内容评级":"","分类标签":"","规则":"一人蒙眼坐着，大腿上绑着橡皮筋，并拉起来，另一人把双臂各穿进橡皮筋内。倒计时结束后，抽走一只手。坐着的人需要猜伸走的是哪只，并放开对应的橡皮筋。若猜中，弹到的是对方没伸走的手臂，没猜中则弹到自己大腿","节目效果点":"博弈智斗，每轮都由一位玩家会受伤","最低参与人数":2,"发布时间":"45931","作者":"","播放量":394,"点赞数":103000,"评论数":2000,"收藏数":2000,"分享数":0,"视频链接":"https://www.bilibili.com/video/BV1sssUzoEYL/","游戏化形式":"","协作类型":"无合作","热度数值":394,"热度类型":"plays","_pick":true},{"序号":32,"玩法":"猜瓶子","平台":"抖音","内容评级":"","分类标签":"猜瓶子","规则":"密封的箱子里放了几瓶饮料，只有主持和观众知道颜色和顺序，玩家把不同颜色的饮料放在箱子上方，主持会告诉玩家有多少个瓶子的颜色、位置是正确的。玩家多轮尝试猜出最终的颜色、顺序排列。一般伴有惩罚","节目效果点":"故意失误触发惩罚，或引起玩家厌蠢心理","最低参与人数":1,"发布时间":"45901","作者":"","播放量":0,"点赞数":270000,"评论数":13000,"收藏数":10000,"分享数":0,"视频链接":"https://www.douyin.com/jingxuan/search/%E7%8C%9C%E6%96%B9%E5%9D%97?aid=14a97ec1-4dd3-476e-bc80-86c9cc3940f9&modal_id=7540225752277568777&type=general","游戏化形式":"有游戏化案例，也能多人PK","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":33,"玩法":"抓倒霉蛋挑战","平台":"B站","内容评级":"","分类标签":"","规则":"3人蒙眼处于隔板后，凭感觉站起试图抓住其他站起的人，被抓到的人要被惩罚","节目效果点":"类打地鼠体验，盲眼后凭感觉抓人比较搞笑，且惩罚过程也滑稽","最低参与人数":2,"发布时间":"45870","作者":"","播放量":1116,"点赞数":532000,"评论数":5000,"收藏数":57000,"分享数":0,"视频链接":"https://www.bilibili.com/video/BV1iseEzmEFL/","游戏化形式":"","协作类型":"无合作","热度数值":1116,"热度类型":"plays","_pick":true},{"序号":34,"玩法":"要不要挑战","平台":"抖音","内容评级":"","分类标签":"要不要挑战","规则":"两人带着眼罩，在无信息的情况下多次选择要不要“饮料”“食物”，最后要把自己盲盒选择的东西混合在一起，吃下","节目效果点":"盲盒随机，惩罚","最低参与人数":1,"发布时间":"45778","作者":"","播放量":0,"点赞数":1620000,"评论数":39000,"收藏数":22000,"分享数":0,"视频链接":"https://www.douyin.com/search/%E8%A6%81%E4%B8%8D%E8%A6%81%E6%8C%91%E6%88%98?aid=d4f08093-f668-4e95-96ff-c458d1733f12&modal_id=7544596493739642153&type=general&ug_source=jingmei_sem_baidu_dyweb_01_pinpai","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":35,"玩法":"默契挑战","平台":"抖音","内容评级":"","分类标签":"","规则":"主持问一个关于玩家的问题，规定回答字数，每个玩家轮流出一个字，合并成一个词","节目效果点":"损对方，反转","最低参与人数":2,"发布时间":"45748","作者":"","播放量":0,"点赞数":1070000,"评论数":42000,"收藏数":65000,"分享数":0,"视频链接":"https://www.douyin.com/jingxuan/search/%E9%BB%98%E5%A5%91%E6%8C%91%E6%88%98?modal_id=7261553578785983759&type=general","游戏化形式":"","协作类型":"无规则合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":36,"玩法":"呲溜滑大挑战","平台":"B站","内容评级":"","分类标签":"","规则":"仿Shuffleboard的玩法，但由玩家扮演棋子，通过助跑跳到滑床上，进行一段滑行，看谁能最终停到预先画好的中心圈里","节目效果点":"无法控制实体，带来的搞笑画面","最低参与人数":2,"发布时间":"45748","作者":"","播放量":2852,"点赞数":250000,"评论数":800,"收藏数":368000,"分享数":0,"视频链接":"https://www.bilibili.com/video/BV1uPowYME9U/?spm_id_from=333.337.search-card.all.click&vd_source=611c9538f912e6d1c5ae5abf58c9d38e","游戏化形式":"玩家扮演一种运动的道具","协作类型":"无合作","热度数值":2852,"热度类型":"plays","_pick":true},{"序号":37,"玩法":"反应力挑战","平台":"抖音","内容评级":"","分类标签":"","规则":"接着掉落的棍子；或用拖鞋、气锤打人，打人者喊打的时候发动攻击，被打者听到声音后要迅速做防御动作","节目效果点":"反应力快会很酷，反应力慢引发搞笑囧境","最低参与人数":1,"发布时间":"45566","作者":"","播放量":0,"点赞数":1670000,"评论数":173000,"收藏数":81000,"分享数":0,"视频链接":"https://www.douyin.com/jingxuan/search/%E5%8F%8D%E5%BA%94%E5%8A%9B%E6%8C%91%E6%88%98?aid=a2e8dab3-ad17-4a5e-8699-94b83fa1cc94&modal_id=7321973498451070244&type=general","游戏化形式":"比较容易实现游戏化，但是无肢体语言会对乐趣有一定削弱","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":38,"玩法":"害你在心口难开","平台":"抖音","内容评级":"","分类标签":"害你在心口难开","规则":"每人头上有一个词，基于某一个主题群聊，不小心说出头上的词，就会被淘汰","节目效果点":"语言诱导","最低参与人数":2,"发布时间":"45474","作者":"","播放量":0,"点赞数":40000,"评论数":1000,"收藏数":1000,"分享数":0,"视频链接":"","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":39,"玩法":"填词造句","平台":"抖音","内容评级":"","分类标签":"","规则":"根据几个不同的情境，先让玩家造词，第一个玩家开头用自己的词造句，第二个玩家同样造句但要承接第一个玩家的上文，以此类推","节目效果点":"语言窘境","最低参与人数":2,"发布时间":"44835","作者":"","播放量":0,"点赞数":1790000,"评论数":130000,"收藏数":120000,"分享数":0,"视频链接":"https://www.douyin.com/jingxuan/search/%E9%80%A0%E8%AF%8D%E6%B8%B8%E6%88%8F?modal_id=7152446959708622094&type=general","游戏化形式":"","协作类型":"无合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":40,"玩法":"躲避球大战","平台":"抖音","内容评级":"","分类标签":"躲避球大战","规则":"两队互扔水球，被击中的人淘汰","节目效果点":"躲避时做出搞笑的动作","最低参与人数":2,"发布时间":"44774","作者":"","播放量":0,"点赞数":240000,"评论数":3000,"收藏数":34000,"分享数":0,"视频链接":"https://www.douyin.com/search/%E8%BA%B2%E9%81%BF%E7%90%83%E5%A4%A7%E6%88%98?aid=6e1beca1-aa6c-4f11-bb4b-9e8f597ba5f2&modal_id=7316076811073457445&type=general&ug_source=jingmei_sem_baidu_dyweb_01_pinpai","游戏化形式":"","协作类型":"队内无规则合作","热度数值":0,"热度类型":"plays","_pick":true},{"序号":41,"玩法":"操作默契挑战","平台":"B站","内容评级":"","分类标签":"","规则":"1名玩家躲在另1名玩家背后，闭眼把手替换城成后者的，然后给其化妆或者听令做特定行为","节目效果点":"不协调带来的滑稽","最低参与人数":2,"发布时间":"43983","作者":"","播放量":1248,"点赞数":844000,"评论数":12000,"收藏数":155000,"分享数":0,"视频链接":"https://www.bilibili.com/video/BV1pD4y1D7r7/?spm_id_from=333.337.search-card.all.click&vd_source=611c9538f912e6d1c5ae5abf58c9d38e","游戏化形式":"王者双人模式，一人控制移动，一人控制技能施放","协作类型":"","热度数值":1248,"热度类型":"plays","_pick":true},{"序号":42,"玩法":"tic tac toe scoccer","平台":"TikTok","内容评级":"","分类标签":"","规则":"在沙滩上以踢足球的方式进行落子完成井字棋","节目效果点":"在井字棋策略的基础上加入了操作的元素，物理会影响落子走向带来意想不到的结果，与预期背道而驰","最低参与人数":2,"发布时间":"2026-08-01","作者":"","播放量":130000000,"点赞数":3660000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@thesmilyfam/video/7669304558513917214?q=tic%20tac%20toe%20scoccer&t=1787300067627","游戏化形式":"","协作类型":"","热度数值":130000000,"热度类型":"plays","_pick":true},{"序号":43,"玩法":"Finish the Lyric challenge","平台":"TikTok","内容评级":"","分类标签":"","规则":"听到歌名后要在限定时间内完成后续几句歌词，不然就会被放手掉落水中","节目效果点":"考验玩家的默契程度以及恶搞放手引发其他人掉落","最低参与人数":2,"发布时间":"2026-08-01","作者":"","播放量":16700000,"点赞数":2200000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@wearemvx/video/7672390771349277984","游戏化形式":"","协作类型":"","热度数值":16700000,"热度类型":"plays","_pick":true},{"序号":44,"玩法":"who can do this challenge","平台":"TikTok","内容评级":"","分类标签":"","规则":"根据展示动作多人一起合作模仿同样造型","节目效果点":"在合作模仿过程中产生的操作失误","最低参与人数":2,"发布时间":"2026-07-01","作者":"","播放量":2700000,"点赞数":500000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@felixmovie79/video/7663805531340983565","游戏化形式":"","协作类型":"","热度数值":2700000,"热度类型":"plays","_pick":true},{"序号":45,"玩法":"try to guess what the group want you to do","平台":"TikTok","内容评级":"","分类标签":"","规则":"国内海豚训练挑战","节目效果点":"在不断试错的过程中产生很多搞笑的行为，与大家的预期完全相悖","最低参与人数":3,"发布时间":"2026-07-01","作者":"","播放量":3000000,"点赞数":380000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@rodnsam/video/7600865478780701982?q=try%20to%20guess%20what%20the%20group%20want%20you%20to%20do&t=1787300000714","游戏化形式":"","协作类型":"","热度数值":3000000,"热度类型":"plays","_pick":true},{"序号":46,"玩法":"Bubbling Color game","平台":"TikTok","内容评级":"","分类标签":"","规则":"先集体套圈，一人一次，套中了之后会解密自己套中了什么颜色的液体，液体颜色再对应什么样的奖励","节目效果点":"在费力获取奖励后反而是惩罚，结果可能会比较反差","最低参与人数":2,"发布时间":"2026-07-01","作者":"","播放量":5600000,"点赞数":120000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@petebenson7/video/7662381324535106829","游戏化形式":"","协作类型":"","热度数值":5600000,"热度类型":"plays","_pick":true},{"序号":47,"玩法":"Speed Match Challenge","平台":"TikTok","内容评级":"","分类标签":"","规则":"只知道大致摆放外观的情况下快速调整不同瓶子的位置，从3个到5个越来越难","节目效果点":"由于物体本身的不稳定性会带来操作时的搞笑，以及重复试错","最低参与人数":2,"发布时间":"2026-06-01","作者":"","播放量":26390000,"点赞数":2040000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@klemfamily/video/7641657121511099662","游戏化形式":"","协作类型":"","热度数值":26390000,"热度类型":"plays","_pick":true},{"序号":48,"玩法":"you draw you guess challenge","平台":"TikTok","内容评级":"","分类标签":"","规则":"国内我画我猜挑战","节目效果点":"由于所画物品太相似画的物品太相似，画者自己也记不住","最低参与人数":2,"发布时间":"2026-06-01","作者":"","播放量":2430000,"点赞数":170000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@majdamedved/video/7670690700803050783?q=you%20draw%20you%20guess%20challenge&t=1787299703175","游戏化形式":"","协作类型":"","热度数值":2430000,"热度类型":"plays","_pick":true},{"序号":49,"玩法":"imposter game at target","平台":"TikTok","内容评级":"","分类标签":"","规则":"谁是卧底的超市版本，需要根据手上拿到的提示词通过在超市中的有限物品条件下，拿到相关的物品来展示","节目效果点":"在谁是卧底的基础上要利用身边的资源来做解释，增加了一重选择维度可能会导致额外的误解","最低参与人数":3,"发布时间":"2026-05-01","作者":"","播放量":3600000,"点赞数":410000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@bayleibae/video/7656984049419947294?q=imposter%20game%20at%20target&t=1787299935061","游戏化形式":"","协作类型":"","热度数值":3600000,"热度类型":"plays","_pick":true},{"序号":50,"玩法":"unexpectede prize Challenge","平台":"TikTok","内容评级":"","分类标签":"","规则":"在推动卷轴获取奖品的基础上给奖品增加一重不确定性，只展示部分内容，需要通过额外方式才能知道具体是什么奖励","节目效果点":"在费力获取奖励后反而是惩罚，结果可能会比较反差","最低参与人数":2,"发布时间":"2026-04-01","作者":"","播放量":83970000,"点赞数":2730000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@little_bros_games/video/7665771487122558222","游戏化形式":"","协作类型":"","热度数值":83970000,"热度类型":"plays","_pick":true},{"序号":51,"玩法":"throwing challenge","平台":"TikTok","内容评级":"","分类标签":"","规则":"在完成挑战途中设多个节点，掷骰子增加难度","节目效果点":"期间会因为一些猝不及防的障碍导致出现出人意料地搞笑行为","最低参与人数":2,"发布时间":"2026-04-01","作者":"","播放量":74600000,"点赞数":3400000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@leisa.leaf/video/7625777097406991646?q=throwing%20challenge&t=1787300052218","游戏化形式":"","协作类型":"","热度数值":74600000,"热度类型":"plays","_pick":true},{"序号":52,"玩法":"猪鼻子挑战","平台":"TikTok","内容评级":"","分类标签":"","规则":"给玩家套上一个猪鼻子，只要大动作呼吸或者发声就会有猪叫声，在玩任何派对游戏中使用","节目效果点":"大家都在忍住的时候猝不及防的猪叫声会让派对中的所有人爆笑","最低参与人数":2,"发布时间":"2026-04-01","作者":"","播放量":8700000,"点赞数":230000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@tonyam28/video/7633049153907608846","游戏化形式":"","协作类型":"","热度数值":8700000,"热度类型":"plays","_pick":true},{"序号":53,"玩法":"stack the cup relay race ","平台":"TikTok","内容评级":"","分类标签":"","规则":"在把气球抛上去等待下落的过程中快速把杯子摞起来，杯子数量越来越多","节目效果点":"在时间紧张下容易手忙脚乱出错导致杯子散落一地","最低参与人数":2,"发布时间":"2026-03-01","作者":"","播放量":50820000,"点赞数":2580000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@thesmilyfam/video/7617016731189447967?q=stack%20the%20cup%20relay%20race%20&t=1787300086739","游戏化形式":"","协作类型":"","热度数值":50820000,"热度类型":"plays","_pick":true},{"序号":54,"玩法":"接枕头挑战","平台":"TikTok","内容评级":"","分类标签":"","规则":"一组人围成一圈互相传递枕头，接到枕头的那个人附近的左右两人必须要蹲下","节目效果点":"由于传递的速度较快，所以会发生周围人甚至传递的人都来不及反应的情况","最低参与人数":3,"发布时间":"2026-03-01","作者":"","播放量":19520000,"点赞数":1160000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@ip03.enu/video/7615022986487188743","游戏化形式":"","协作类型":"","热度数值":19520000,"热度类型":"plays","_pick":true},{"序号":55,"玩法":"dont sit at same time","平台":"TikTok","内容评级":"","分类标签":"","规则":"淘汰游戏，一群人中最后一个坐下的被淘汰，但是坐的过程中如果多出现不止一个人同时坐下则两个人都淘汰","节目效果点":"会偶然性强，莫名其妙两人同时坐下被淘汰很搞笑","最低参与人数":4,"发布时间":"2026-03-01","作者":"","播放量":2400000,"点赞数":160000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@groupdynamix/video/7621286404689120526?q=dont%20sit%20at%20same%20time&t=1787300026519","游戏化形式":"","协作类型":"","热度数值":2400000,"热度类型":"plays","_pick":true},{"序号":56,"玩法":"Make a word challenge","平台":"TikTok","内容评级":"","分类标签":"","规则":"两人同时随机给出前后2个字母，补齐中间的字母形成一个单词","节目效果点":"拼词过程中产生的不协调以及时间压力下造出的无厘头词汇","最低参与人数":2,"发布时间":"2026-01-01","作者":"","播放量":43700000,"点赞数":4700000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@ttheobrr/video/7591524646780980502","游戏化形式":"","协作类型":"","热度数值":43700000,"热度类型":"plays","_pick":true},{"序号":57,"玩法":"whisper challenge","平台":"TikTok","内容评级":"","分类标签":"","规则":"只看另一个人的嘴型来发声拼写单词","节目效果点":"发出的声音和口型差别极大带来的反差体验","最低参与人数":2,"发布时间":"2026-01-01","作者":"","播放量":8400000,"点赞数":636000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@fallontonight/video/7664376627320687886","游戏化形式":"","协作类型":"","热度数值":8400000,"热度类型":"plays","_pick":true},{"序号":58,"玩法":"no Arms Challenge","平台":"TikTok","内容评级":"","分类标签":"no Arms Challenge","规则":"所有人不能用手，抢先吃掉地上的食物","节目效果点":"玩家靠近食物后只能脸贴地进行抢夺，场面滑稽","最低参与人数":2,"发布时间":"2025","作者":"","播放量":55850000,"点赞数":7035000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@andablack_santanapkin/video/7575621796699852046?q=no%20Arms%20Challenge&t=1787307478703","游戏化形式":"","协作类型":"","热度数值":55850000,"热度类型":"plays","_pick":true},{"序号":59,"玩法":"Egg Roulette","平台":"TikTok","内容评级":"","分类标签":"Egg Roulette","规则":"一排蛋有生有熟，双人轮流往头上砸","节目效果点":"类似俄罗斯轮盘的赌博刺激+鸡蛋撒头上的狼狈","最低参与人数":2,"发布时间":"2025","作者":"","播放量":34600000,"点赞数":3100000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@annaaullmann/video/7510978180715400470?q=Egg%20Roulette&t=1787307532158","游戏化形式":"","协作类型":"","热度数值":34600000,"热度类型":"plays","_pick":true},{"序号":60,"玩法":"Blind Deaf Mute","平台":"TikTok","内容评级":"","分类标签":"BlindDeafMutechallenge","规则":"三人分别蒙眼/闭口/遮耳，瞎子操作、哑巴指挥、聋子传递信息，合作完成烹饪","节目效果点":"通过信息/能力不对等，强迫三人紧密合作。同时因为个人能力缺陷，引发配合乌龙和混乱","最低参与人数":3,"发布时间":"2024","作者":"","播放量":17640000,"点赞数":2500000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@fivestarorder/video/7668186496955845919?q=Blind%20Deaf%20Mute&t=1787307294826","游戏化形式":"","协作类型":"","热度数值":17640000,"热度类型":"plays","_pick":true},{"序号":61,"玩法":"Floor Is Lava","平台":"TikTok","内容评级":"","分类标签":"FloorIsLava","规则":"假设地板即是岩浆，玩家必须在不触及地板的情况下抵达目的地","节目效果点":"玩家需在不触及的地板的前提下规划路线，两个安全区距离较远时，强行跨越产生失误","最低参与人数":1,"发布时间":"2024","作者":"","播放量":110000000,"点赞数":6616000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@jhongph/video/7418093730525236488?q=Floor%20Is%20Lava&t=1787307256965","游戏化形式":"","协作类型":"","热度数值":110000000,"热度类型":"plays","_pick":true},{"序号":62,"玩法":"Don't Say the same thing","平台":"TikTok","内容评级":"","分类标签":"Don't Say the same thing","规则":"某个高频词被禁，聊天时提到就被惩罚","节目效果点":"越日常的高频词，越难完全绕开。观众看的就是那种\"憋着快内伤\"的表情，爆发的瞬间极度解压。","最低参与人数":2,"发布时间":"2024","作者":"","播放量":22849000,"点赞数":1542000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@larobenz/video/7668092142916603167?q=Don%27t%20Say%20the%20same%20thing&t=1787307758444","游戏化形式":"","协作类型":"","热度数值":22849000,"热度类型":"plays","_pick":true},{"序号":63,"玩法":"Blindfolded Challenge","平台":"TikTok","内容评级":"","分类标签":"Blindfolded Challenge","规则":"蒙眼画画、蒙眼化妆、蒙眼做饭等","节目效果点":"丧失视力导致非常容易犯错，做饭场面混乱","最低参与人数":1,"发布时间":"2023","作者":"","播放量":28060000,"点赞数":3879000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@quincyschaefer/video/7635141574552227103?q=Blindfolded%20Challenge&t=1787307730389","游戏化形式":"","协作类型":"","热度数值":28060000,"热度类型":"plays","_pick":true},{"序号":64,"玩法":"Human Knot Challenge","平台":"TikTok","内容评级":"","分类标签":"Human Knot","规则":"所有人手拉手，或者拿着绳子形成死结，尝试在不松手把自己解开","节目效果点":"因为无法直接松手，想解开必须扭曲身体。若玩家间有人急躁不听安排，场面将极度混乱","最低参与人数":2,"发布时间":"2022","作者":"","播放量":1700000,"点赞数":501000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@monsta_x_514/video/7050263316920306945?q=Human%20Knot%20Challenge&t=1787308514465","游戏化形式":"","协作类型":"","热度数值":1700000,"热度类型":"plays","_pick":true},{"序号":65,"玩法":"Do the Opposite Challenge","平台":"TikTok","内容评级":"","分类标签":"Opposite word","规则":"所有指令反着执行","节目效果点":"大脑习惯了正常逻辑，强制切换\"反向模式\"极其费力","最低参与人数":1,"发布时间":"2021","作者":"","播放量":12116000,"点赞数":1459000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@kogyaru_official/video/7654141857047530772?q=do%20the%20opposite%20challenge&t=1787307578597","游戏化形式":"","协作类型":"","热度数值":12116000,"热度类型":"plays","_pick":true},{"序号":66,"玩法":"Tiny Hands Challenge","平台":"TikTok","内容评级":"","分类标签":"BabyHandsChallenge","规则":"玩家带着婴儿假手，使用假手完成不同目标","节目效果点":"婴儿假手体积小且难以活动，所有日常行为都变得高难度，容易失误引发混乱","最低参与人数":1,"发布时间":"2020","作者":"","播放量":8252000,"点赞数":1314000,"评论数":0,"收藏数":0,"分享数":0,"视频链接":"https://www.tiktok.com/@gianni_bomb/video/7653623974860967199?q=tiny%20hands%20challenge&t=1787307414766","游戏化形式":"","协作类型":"","热度数值":8252000,"热度类型":"plays","_pick":true}];
+
+/* ===== 工具 ===== */
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const fmtHeat = n => n >= 1e8 ? (n / 1e8).toFixed(1).replace(/\.0$/, '') + '亿'
+             : n >= 1e4 ? (n / 1e4).toFixed(1).replace(/\.0$/, '') + '万' : String(n);
+const heatUnit = r => r.热度类型 === 'likes' ? '点赞' : '播放';
+
+/* ===== 分级映射：综合评级 S/A/B/C 一一对应（D 已在 convert 阶段剔除） ===== */
+const grade = r => ({ 'S': 'S', 'A': 'A', 'B': 'B', 'C': 'C' })[r['内容评级']] || null;
+const isRealPlay = r => !/非真人|电子游戏/.test(r['玩法'] + r['分类标签']);
+const graded = DATA.filter(isRealPlay).map(r => ({ ...r, 分类标签: String(r['分类标签'] || '').replace(/（扩）/g, ''), _g: grade(r) }));
+
+/* 按 8 月的周（周一~周日）分组，发布时间在 8 月之外的归入最近周 */
+const WEEK_LABELS = ['8.4–8.10', '8.11–8.17', '8.18–8.23', '8.25–8.31'];
+function weekOfAugust(dateStr) {
+  // 首期（20260828）：本批录入全部归第三周（8.18–8.23），下周起恢复按日期切分
+  return 3;
+}
+const byWeek = [1, 2, 3, 4].map(w => graded.filter(r => r._g && weekOfAugust(r['发布时间']) === w)
+  .sort((a, b) => b.热度数值 - a.热度数值));
+const activeWeeks = [1, 2, 3, 4].filter(w => byWeek[w - 1].length > 0);
+let curWeek = activeWeeks.length ? activeWeeks[activeWeeks.length - 1] : 1;
+
+/* ===== 渲染：S 卡 ===== */
+function sCard(r) {
+  const tags = (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean)
+    .map(t => `<span class="tag">${esc(t)}</span>`).join('');
+  const stats = [['播放', r['播放量']], ['点赞', r['点赞数']], ['分享', r['分享数']], ['评论', r['评论数']], ['收藏', r['收藏数']]]
+    .map(x => x[0] + ' ' + fmtHeat(x[1])).join(' · ');
+  const srcRow = `<span>@${esc(r['作者'])} · ${esc(r['发布时间'])}</span>`;
+  return `<article class="s-card reveal">
+    <a class="s-thumb${r['封面'] ? ' has-cov' : ''}" href="${esc(r['视频链接'])}" data-v="${esc(r['视频文件'] || '')}" data-link="${esc(r['视频链接'])}" target="_blank" rel="noopener" aria-label="播放视频">
+      ${r['封面'] ? `<img class="cov" src="${esc(r['封面'])}" alt="" loading="lazy">` : ''}
+      <span class="s-play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 5 L19 12 L8 19 Z" fill="#fff"/></svg></span>
+      <span class="s-thumb-note">封面待抓取 · 点击看原视频</span>
+    </a>
+    <div class="s-body">
+      <div class="s-topline">
+        <span class="s-plat2">${esc(r['平台'])}</span>
+        ${tags}
+        <span class="s-conf conf-high">${r['最低参与人数'] || 2} 人起玩</span>
+        <span class="s-heat-num heat-lv">${esc(r['热度等级'] || '—')}</span>
+      </div>
+      <h3 class="s-name">${esc(r['玩法'])}</h3>
+      <div class="s-line"><span class="k">玩法规则</span><span>${esc(r['规则'])}</span></div>
+      ${r['节目效果点'] ?
+        `<div class="s-line"><span class="k">节目效果</span><span>${esc(r['节目效果点'])}</span></div>` : ''}
+      ${r['入选原因'] && r['入选原因'] !== '演示占位' ?
+        `<div class="s-line"><span class="k">入选原因</span><span>${esc(r['入选原因'])}${r['来源'] ? ' · 来源 ' + esc(r['来源']) : ''}</span></div>` : ''}
+      ${stats ?
+        `<div class="s-line"><span class="k">数据表现</span><span>${stats}</span></div>` : ''}
+      <div class="s-line"><span class="k">发布来源</span>${srcRow}</div>
+      <div class="s-meta">
+        <span class="fetch-note">数据抓取时间截止 2026年08月27日，非实时更新</span>
+        <a class="btn" href="${esc(r['视频链接'])}" target="_blank" rel="noopener">跳转至原平台播放 ↗</a>
+      </div>
+    </div>
+  </article>`;
+}
+
+/* ===== 渲染：A 卡 / B 行 ===== */
+function aCard(r) {
+  const tags = (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean)
+    .map(t => `<span class="tag">${esc(t)}</span>`).join('');
+  const stats = [['播放', r['播放量']], ['点赞', r['点赞数']], ['分享', r['分享数']], ['评论', r['评论数']], ['收藏', r['收藏数']]]
+    .map(x => x[0] + ' ' + fmtHeat(x[1])).join(' · ');
+  const srcRow = `<span>@${esc(r['作者'])} · ${esc(r['发布时间'])}</span>`;
+  return `<article class="a-card reveal">
+    <a class="a-thumb${r['封面'] ? ' has-cov' : ''}" href="${esc(r['视频链接'])}" data-v="${esc(r['视频文件'] || '')}" data-link="${esc(r['视频链接'])}" target="_blank" rel="noopener" aria-label="播放视频">
+      ${r['封面'] ? `<img class="cov" src="${esc(r['封面'])}" alt="" loading="lazy">` : ''}
+      <span class="s-play"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M8 5 L19 12 L8 19 Z" fill="#fff"/></svg></span>
+    </a>
+    <div class="a-body">
+      <div class="a-topline">
+        <span class="a-plat">${esc(r['平台'])}</span>
+        ${tags}
+        <span class="a-conf conf-high">${r['最低参与人数'] || 2} 人起玩</span>
+        <span class="a-heat heat-lv" style="margin-left:auto">${esc(r['热度等级'] || '—')}</span>
+      </div>
+      <h3 class="a-name">${esc(r['玩法'])}</h3>
+      <div class="a-line"><span class="k">玩法规则</span><span class="v clamp4">${esc(r['规则'])}</span></div>
+      ${r['节目效果点'] ?
+        `<div class="a-line"><span class="k">节目效果</span><span class="v">${esc(r['节目效果点'])}</span></div>` : ''}
+      ${r['入选原因'] && r['入选原因'] !== '演示占位' ?
+        `<div class="a-line"><span class="k">入选原因</span><span class="v">${esc(r['入选原因'])}${r['来源'] ? ' · 来源 ' + esc(r['来源']) : ''}</span></div>` : ''}
+      ${stats ?
+        `<div class="a-line"><span class="k">数据表现</span><span class="v">${stats}</span></div>` : ''}
+      <div class="a-line"><span class="k">发布来源</span><span class="v">@${esc(r['作者'])} · ${esc(r['发布时间'])}</span></div>
+      <div class="a-bot">
+        <span class="fetch-note">数据抓取时间截止 2026年08月27日，非实时更新</span>
+        <a class="a-link" href="${esc(r['视频链接'])}" target="_blank" rel="noopener">跳转至原平台播放 ↗</a>
+      </div>
+    </div>
+  </article>`;
+}
+
+/* ===== 渲染：C 级折叠行 ===== */
+function cRow(r) {
+  const tags = (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean)
+    .map(t => `<span class="tag">${esc(t)}</span>`).join('');
+  const stats = [['播放', r['播放量']], ['点赞', r['点赞数']], ['分享', r['分享数']], ['评论', r['评论数']], ['收藏', r['收藏数']]]
+    .map(x => x[0] + ' ' + fmtHeat(x[1])).join(' · ');
+  const srcRow = `<span>@${esc(r['作者'])} · ${esc(r['发布时间'])}</span>`;
+  const rule = String(r['规则'] || '');
+  const brief = rule.length > 42 ? rule.slice(0, 42) + '…' : rule;
+  return `<div class="b-row">
+    <div class="b-main">
+      <a class="b-cover${r['封面'] ? ' has-cov' : ''}" href="${esc(r['视频链接'])}" data-v="${esc(r['视频文件'] || '')}" data-link="${esc(r['视频链接'])}" target="_blank" rel="noopener" aria-label="播放视频">
+        ${r['封面'] ? `<img class="cov" src="${esc(r['封面'])}" alt="" loading="lazy">` : ''}
+        <span class="s-play"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M8 5 L19 12 L8 19 Z" fill="#fff"/></svg></span>
+      </a>
+      <div class="b-info">
+        <div class="b-name">${esc(r['玩法'])}</div>
+        <div class="b-desc">${esc(brief)}</div>
+        <div class="b-tags"><span class="tag">${esc(r['平台'])}</span><span class="tag">${r['最低参与人数'] || 2} 人起玩</span>${tags}</div>
+      </div>
+      <div class="b-side">
+        <span class="b-heat">${esc(r['热度等级'] || '—')}</span>
+        <a class="btn" style="padding:7px 16px;font-size:12.5px;white-space:nowrap" href="${esc(r['视频链接'])}" target="_blank" rel="noopener">跳转至原平台播放 ↗</a>
+        <span class="b-chev">▼</span>
+      </div>
+    </div>
+    <div class="b-detail"><div class="b-detail-in"><div class="b-detail-pad">
+      <div class="b-full"><b>玩法规则</b>　${esc(r['规则'])}</div>
+      ${r['节目效果点'] ? `<div class="b-sub"><b>节目效果</b> · ${esc(r['节目效果点'])}</div>` : ''}
+      ${r['入选原因'] && r['入选原因'] !== '演示占位' ? `<div class="b-sub"><b>入选原因</b> · ${esc(r['入选原因'])}${r['来源'] ? ' · 来源 ' + esc(r['来源']) : ''}</div>` : ''}
+      ${stats ? `<div class="b-sub"><b>数据表现</b> · ${stats}</div>` : ''}
+      <div class="b-sub"><b>发布来源</b> · @${esc(r['作者'])} · ${esc(r['发布时间'])}</div>
+      <div class="b-sub fetch-note">数据抓取时间截止 2026年08月27日，非实时更新</div>
+    </div></div></div>
+  </div>`;
+}
+
+/* ===== 创意部推荐（人工择优，按周配置） ===== */
+const PICKS = {
+  3: [
+    { name: '拼出你的理想型', key: '拼出你的理想型·贴纸拼脸', desc: '靠随机五官部件拼出【越拼越离谱】的脸，具备创作自由度和审美落差的笑点，适合利用已有捏脸/装扮系统做改编，比如玩家互相用有限部件拼出预期与现实的强反差，恶搞外观比赛，自带截图传播的潜力', tags: ['捏脸/装扮改编', '恶搞外观比赛', '截图传播'] },
+    { name: '计时接力挑战', key: '猜时间挑战·看谁接近3.00s', desc: '靠默契和手感把读数卡进目标区间，精准配合的爽点适合做成休闲派对玩法，规则简单人人能上手，还能延伸出多人轮流挑战和好友比手感的轻竞技社交玩法', tags: ['休闲派对', '多人轮流接力', '好友轻竞技'] }
+  ]
+};
+function protoCard(r) {
+  const tags = (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean)
+    .map(t => `<span class="tag">${esc(t)}</span>`).join('');
+  const stats = [['播放', r['播放量']], ['点赞', r['点赞数']], ['分享', r['分享数']], ['评论', r['评论数']], ['收藏', r['收藏数']]]
+    .map(x => x[0] + ' ' + fmtHeat(x[1])).join(' · ');
+  const srcRow = `<span>@${esc(r['作者'])} · ${esc(r['发布时间'])}</span>`;
+  return `<div class="proto-card">
+    ${r['视频文件']
+      ? `<a class="proto-thumb" href="${esc(r['视频链接'])}" data-v="${esc(r['视频文件'])}" data-link="${esc(r['视频链接'])}" aria-label="播放视频">`
+      : `<div class="proto-thumb">`}
+      ${r['封面'] ? `<img class="cov" src="${esc(r['封面'])}" alt="" loading="lazy">` : ''}
+      ${r['视频文件'] ? `<span class="p-play"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M8 5 L19 12 L8 19 Z" fill="#fff"/></svg></span>` : ''}
+    ${r['视频文件'] ? `</a>` : `</div>`}
+    <div class="proto-body">
+      <div class="proto-top">
+        <span class="tag">${esc(r['平台'])}</span>${tags}<span class="tag">${r['最低参与人数'] || 2} 人起玩</span>
+        <span class="proto-heat heat-lv">${esc(r['热度等级'] || '—')}</span>
+      </div>
+      <h4 class="proto-name">${esc(r['玩法'])}</h4>
+      <div class="proto-line"><span class="k">玩法规则</span><span>${esc(r['规则'])}</span></div>
+      ${r['节目效果点'] ? `<div class="proto-line"><span class="k">节目效果</span><span>${esc(r['节目效果点'])}</span></div>` : ''}
+      ${stats ? `<div class="proto-line"><span class="k">数据表现</span><span>${stats}</span></div>` : ''}
+      <div class="proto-line"><span class="k">发布来源</span>${srcRow}</div>
+      <div class="proto-meta">
+        <span class="fetch-note">数据抓取时间截止 2026年08月27日，非实时更新</span>
+        ${r['视频文件'] ? `<a href="${esc(r['视频链接'])}" data-v="${esc(r['视频文件'])}" data-link="${esc(r['视频链接'])}">播放视频 ↗</a>` : ''}
+      </div>
+    </div>
+  </div>`;
+}
+function recRow(p, i) {
+  const proto = graded.find(r => r['玩法'] === p.key);
+  return `<article class="rec-card reveal">
+    <div class="rec-side">
+      <span class="rec-ghost">${String(i + 1).padStart(2, '0')}</span>
+      <div class="rec-top"><span class="rec-num">${i + 1}</span><span class="rec-rank">创意部优选 · TOP ${i + 1}</span></div>
+      <h3 class="rec-name">${esc(p.name)}</h3>
+      <span class="rec-sub">推荐理由</span>
+      <p class="rec-desc">${esc(p.desc)}</p>
+      <div class="rec-tags">${p.tags.map(t => `<span class="tag">${esc(t)}</span>`).join('')}</div>
+    </div>
+    <div class="rec-proto">
+      <span class="rec-sub">玩法原型</span>
+      ${proto ? protoCard(proto) : ''}
+    </div>
+  </article>`;
+}
+function renderRec() {
+  const picks = PICKS[curWeek] || [];
+  $('#secRec').style.display = picks.length ? '' : 'none';
+  $('#recGrid').innerHTML = picks.map(recRow).join('');
+}
+
+/* ===== 精选库（PICKS_LIB 驱动，卡片同游戏库，支持筛选） ===== */
+let picksInited = false;
+const pickState = { q: '', plat: '全部', tag: '全部' };
+function renderPicksList() {
+  const q = pickState.q.toLowerCase();
+  const vis = PICKS_LIB.filter(r => {
+    const hay = [r['玩法'], r['分类标签'], r['规则'], r['节目效果点']].join(' ').toLowerCase();
+    return (!q || hay.includes(q))
+      && (pickState.plat === '全部' || r['平台'] === pickState.plat)
+      && (pickState.tag === '全部' || (r['分类标签'] || '').includes(pickState.tag));
+  });
+  $('#pkCount').textContent = `共 ${PICKS_LIB.length} 条优选 · 已显示 ${vis.length} 条`;
+  $('#pkGrid').innerHTML = vis.map(libCard).join('');
+  $('#pkEmpty').classList.toggle('hidden', vis.length > 0);
+  bindReveal($('#page-picks'));
+}
+function initPicks() {
+  const cn = PICKS_LIB.filter(r => r['平台'] === '抖音' || r['平台'] === 'B站').length;
+  const ov = PICKS_LIB.length - cn;
+  const tagN = new Set(PICKS_LIB.flatMap(r => (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean))).size;
+  $('#pickStats').innerHTML = [
+    [`${PICKS_LIB.length}<b> 条</b>`, '人工优选玩法原型'],
+    [`${cn}<b> 国内</b>`, '抖音 · B站'],
+    [`${ov}<b> 海外</b>`, 'TikTok'],
+    [`${tagN}<b> 类</b>`, '覆盖玩法机制']
+  ].map(([n, lb]) => `<div class="ls-item"><div class="ls-num">${n}</div><div class="ls-lb">${lb}</div></div>`).join('');
+
+  fillSelect($('#pkPlat'), ['全部平台', ...new Set(PICKS_LIB.map(r => r['平台']))], '全部平台');
+  const tagSet = new Set();
+  PICKS_LIB.forEach(r => (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean).forEach(t => tagSet.add(t)));
+  fillSelect($('#pkTag'), ['全部标签', ...[...tagSet]], '全部标签');
+
+  $('#pkSearch').addEventListener('input', e => { pickState.q = e.target.value.trim(); renderPicksList(); });
+  $('#pkPlat').addEventListener('change', e => { pickState.plat = e.target.value === '全部平台' ? '全部' : e.target.value; renderPicksList(); });
+  $('#pkTag').addEventListener('change', e => { pickState.tag = e.target.value === '全部标签' ? '全部' : e.target.value; renderPicksList(); });
+  $('#pkReset').addEventListener('click', () => {
+    pickState.q = ''; pickState.plat = pickState.tag = '全部';
+    $('#pkSearch').value = '';
+    $('#pkPlat').value = '全部平台'; $('#pkTag').value = '全部标签';
+    renderPicksList();
+  });
+  renderPicksList();
+  picksInited = true;
+}
+
+/* ===== 本周推送渲染 ===== */
+function renderWeekly() {
+  const rows = byWeek[curWeek - 1];
+  const S = rows.filter(r => r._g === 'S'), A = rows.filter(r => r._g === 'A'),
+        B = rows.filter(r => r._g === 'B'), C = rows.filter(r => r._g === 'C');
+
+  $('#weekLabel').textContent = `8月 · 第${['一', '二', '三', '四'][curWeek - 1]}周`;
+
+  $('#sCount').textContent = S.length ? `${S.length} 条` : '';
+  $('#aCount').textContent = A.length ? `${A.length} 条` : '';
+  $('#bCount').textContent = B.length ? `${B.length} 条` : '';
+  $('#cCount').textContent = C.length ? `${C.length} 条` : '';
+
+  const emptyTpl = t => `<div class="empty" style="grid-column:1/-1"><div class="big">本周无 ${t} 级</div><div>看看其他分级</div></div>`;
+  $('#sGrid').innerHTML = S.length ? S.map(sCard).join('') : emptyTpl('S');
+  $('#aGrid').innerHTML = A.length ? A.map(aCard).join('') : emptyTpl('A');
+  $('#bGrid').innerHTML = B.length ? B.map(aCard).join('') : emptyTpl('B');
+  $('#cGrid').innerHTML = C.length ? C.map(cRow).join('') : emptyTpl('C');
+
+  renderAnalysis(rows);
+  renderRec();
+  buildMarquee();
+  bindReveal($('#page-weekly'));
+}
+
+/* ===== 数据概览 ===== */
+function countUp(el, to, dur = 1000) {
+  const t0 = performance.now();
+  const tick = t => {
+    const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(to * e);
+    if (p < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+function renderAnalysis(rows) {
+  const n = rows.length;
+  const ns = rows.filter(r => r._g === 'S').length, na = rows.filter(r => r._g === 'A').length,
+        nb = rows.filter(r => r._g === 'B').length, nc = rows.filter(r => r._g === 'C').length;
+  $('#statBand').innerHTML = `
+    <div class="sb-label">WEEKLY CATCH · ${WEEK_LABELS[curWeek - 1]}</div>
+    <div class="sb-big">本周打捞 <span class="hlnum" id="statNum">0</span> 条新玩法</div>
+    <div class="sb-plats">抖音 · B站 · TIKTOK</div>`;
+  countUp($('#statNum'), n);
+
+  const dist = {};
+  rows.forEach(r => (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean)
+    .forEach(t => dist[t] = (dist[t] || 0) + 1));
+  const distArr = Object.entries(dist).sort((a, b) => b[1] - a[1]).slice(0, 5);
+  const max = distArr.length ? distArr[0][1] : 1;
+  $('#anaDist').innerHTML = `<h3>机制分布</h3>` + (distArr.length ? distArr.map(([k, v]) =>
+    `<div class="hbar"><span class="lb">${esc(k)}</span><div class="tr"><div class="fl" style="--w:${Math.round(v / max * 100)}%"></div></div><span class="vl">${v}</span></div>`
+  ).join('') : `<div style="color:var(--slate)">暂无数据</div>`);
+
+  $('#anaConf').innerHTML = `<h3>分级概览</h3><div class="conf-row">
+    <div class="conf-chip"><span class="dot2 dh"></span>S 级 · 本周爆款<span class="n">${ns}</span></div>
+    <div class="conf-chip"><span class="dot2 dm"></span>A 级 · 值得关注<span class="n">${na}</span></div>
+    <div class="conf-chip"><span class="dot2 dl"></span>B 级 · 储备观察<span class="n">${nb}</span></div>
+    <div class="conf-chip"><span class="dot2 dc"></span>C 级 · 观望跟踪<span class="n">${nc}</span></div>
+  </div>`;
+
+  const sumEl = $('#anaSummary');
+  if (!rows.length) { sumEl.innerHTML = `<h3>本周内容总结</h3><div style="color:var(--slate)">暂无数据</div>`; return; }
+  const topShare = rows.reduce((a, b) => (b['分享数'] || 0) > (a['分享数'] || 0) ? b : a, rows[0]);
+  const topRule = rows.reduce((a, b) => (b['规则指数'] || 0) > (a['规则指数'] || 0) ? b : a, rows[0]);
+  const totPlay = rows.reduce((s, r) => s + (+r['播放量'] || 0), 0);
+  const totShare = rows.reduce((s, r) => s + (+r['分享数'] || 0), 0);
+  // 首期固定文案（数据口径：剔D后 50 条；综合评级_剔非玩法：S2 A6 B17 C25）
+  sumEl.innerHTML = `<h3>本周内容总结</h3>
+  <div class="sum-item" style="grid-column:1/-1"><span class="v">本周期共抓取真人挑战 <b>50</b> 条，其中拥有玩法规则的有 <b>50</b> 条，加权评级后 S 级 <b>2</b> 条、A 级 <b>6</b> 条、B 级 <b>17</b> 条、C 级 <b>25</b> 条。本期最值得关注的玩法如下：</span></div>` +
+    [
+      ['拼出你的理想型', `靠随机五官拼出反差离谱的脸，自带笑点与截图传播，天然适合做成捏脸玩法`],
+      ['计时接力', `把掐秒表做成零门槛的默契玩法，规则简单却极易上瘾`]
+    ].map(([k, v]) => `<div class="sum-item"><span class="v"><b>「${k}」</b>：${v}</span></div>`).join('') +
+  `<div class="sum-item" style="grid-column:1/-1"><span class="v">其他高传播挑战包括<b>「自制综艺·不要跳进水坑1v1」</b>，播放量 <b>3121.4 万</b>；<b>「今天玩个捉迷藏（家庭版）」</b>，播放量 <b>858.5 万</b>。</span></div>`;
+}
+
+/* ===== 周下拉 ===== */
+(function initWeeks() {
+  const dd = $('#weekDd'), menu = $('#wddMenu');
+  menu.innerHTML = activeWeeks.map(w =>
+    `<button class="wdd-item" data-w="${w}"><span>第${['一', '二', '三', '四'][w - 1]}周<span class="wk-d">${WEEK_LABELS[w - 1]}</span></span><span class="cnt">${byWeek[w - 1].length} 条</span></button>`
+  ).join('');
+  const sync = () => {
+    menu.querySelectorAll('.wdd-item').forEach(c => c.classList.toggle('on', +c.dataset.w === curWeek));
+    renderWeekly();
+  };
+  $('#wddBtn').addEventListener('click', e => { e.stopPropagation(); dd.classList.toggle('open'); });
+  menu.addEventListener('click', e => {
+    const b = e.target.closest('.wdd-item');
+    if (b) { curWeek = +b.dataset.w; dd.classList.remove('open'); sync(); }
+  });
+  document.addEventListener('click', e => { if (!e.target.closest('#weekDd')) dd.classList.remove('open'); });
+  menu.querySelectorAll('.wdd-item').forEach(c => c.classList.toggle('on', +c.dataset.w === curWeek));
+})();
+
+/* ===== 跑马灯：本期玩法滚动字幕 ===== */
+function buildMarquee() {
+  const track = $('#marqTrack');
+  const rows = byWeek[curWeek - 1].length ? byWeek[curWeek - 1] : graded;
+  const one = rows.map(r =>
+    `<span class="mq-item">${esc(r['玩法'])}<span class="mq-heat">${fmtHeat(r.热度数值)} ${heatUnit(r)}</span></span><span class="mq-sep">✦</span>`
+  ).join('');
+  if (!one) { track.innerHTML = ''; return; }
+  track.style.animation = 'none';
+  track.innerHTML = one + one;
+  while (track.scrollWidth / 2 < innerWidth * 1.2 && track.innerHTML.length < 60000) {
+    track.innerHTML += track.innerHTML;
+  }
+  void track.offsetWidth;
+  track.style.animation = 'marq ' + (track.scrollWidth / 2 / 55) + 's linear infinite';
+}
+
+/* ===== 游戏库 ===== */
+const libState = { q: '', plat: '全部', grade: '全部', week: '全部', tag: '全部' };
+
+function fillSelect(el, options, val) {
+  el.innerHTML = options.map(o => `<option value="${esc(o)}" ${o === val ? 'selected' : ''}>${esc(o)}</option>`).join('');
+}
+function libStatsOnce() {
+  const cn = graded.filter(r => r['平台'] === '抖音' || r['平台'] === 'B站').length;
+  const ov = graded.filter(r => r['平台'] === 'TikTok').length;
+  const wks = new Set(graded.map(r => weekOfAugust(r['发布时间']))).size;
+  $('#libStats').innerHTML = [
+    [`${graded.length}<b> 条</b>`, '完整来源记录'],
+    [`${cn}<b> 国内</b>`, '抖音 · B站'],
+    [`${ov}<b> 海外</b>`, 'TikTok'],
+    [`${wks}<b> 周</b>`, '按发布时间归档']
+  ].map(([n, lb]) => `<div class="ls-item"><div class="ls-num">${n}</div><div class="ls-lb">${lb}</div></div>`).join('');
+}
+function libCard(r) {
+  const tags = (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean)
+    .map(t => `<span class="tag">${esc(t)}</span>`).join('');
+  const statsArr = [['播放', r['播放量']], ['点赞', r['点赞数']], ['分享', r['分享数']], ['评论', r['评论数']], ['收藏', r['收藏数']]];
+  const stats = (r._pick ? statsArr.filter(x => x[1] > 0) : statsArr)
+    .map(x => x[0] + ' ' + fmtHeat(x[1])).join(' · ');
+  const grade = r._g || r['内容评级'];
+  const srcTxt = r['作者'] ? `@${esc(r['作者'])} · ${esc(r['发布时间'])}` : `${esc(r['平台'])}${r['发布时间'] ? ' · ' + esc(r['发布时间']) : ''}`;
+  return `<article class="a-card lib-card reveal">
+    <div class="a-body">
+      <div class="a-topline">
+        ${grade ? `<span class="a-grade">${esc(grade)} 级</span>` : ''}
+        <span class="a-plat">${esc(r['平台'])}</span>
+        ${tags}
+        <span class="a-conf conf-high">${r['最低参与人数'] || 2} 人起玩</span>
+      </div>
+      <h3 class="a-name">${esc(r['玩法'])}</h3>
+      <div class="a-line"><span class="k">玩法规则</span><span class="v clamp4">${esc(r['规则'])}</span></div>
+      ${r['节目效果点'] ? `<div class="a-line"><span class="k">节目效果</span><span class="v">${esc(r['节目效果点'])}</span></div>` : ''}
+      ${r['入选原因'] && r['入选原因'] !== '演示占位' ? `<div class="a-line"><span class="k">入选原因</span><span class="v">${esc(r['入选原因'])}${r['来源'] ? ' · 来源 ' + esc(r['来源']) : ''}</span></div>` : ''}
+      ${stats ? `<div class="a-line"><span class="k">数据表现</span><span class="v">${stats}</span></div>` : ''}
+      <div class="a-line"><span class="k">发布来源</span><span class="v">${srcTxt}</span></div>
+      <div class="a-bot">
+        <span class="fetch-note">数据抓取时间截止 2026年08月27日，非实时更新</span>
+        ${r['视频文件'] ? `<a class="a-link" style="margin-left:auto" data-v="${esc(r['视频文件'])}" data-link="${esc(r['视频链接'])}" href="${esc(r['视频链接'])}">播放视频 ↗</a>` : ''}
+      </div>
+    </div>
+  </article>`;
+}
+function renderLibrary() {
+  const plats = ['全部平台', ...new Set(graded.map(r => r['平台']))];
+  const grades = ['全部评级', 'S', 'A', 'B', 'C'];
+  const weekOpts = ['全部来源周', ...[1, 2, 3, 4].filter(w => graded.some(r => weekOfAugust(r['发布时间']) === w)).map(w => `第${['一', '二', '三', '四'][w - 1]}周（${WEEK_LABELS[w - 1]}）`)];
+  const tagSet = new Set();
+  graded.forEach(r => (r['分类标签'] || '').split(/[、，,]/).map(t => t.trim()).filter(Boolean).forEach(t => tagSet.add(t)));
+  const tags = ['全部标签', ...[...tagSet]];
+
+  fillSelect($('#fPlat'), plats, libState.plat === '全部' ? '全部平台' : libState.plat);
+  fillSelect($('#fGrade'), grades, libState.grade === '全部' ? '全部评级' : libState.grade);
+  fillSelect($('#fWeek'), weekOpts, libState.week === '全部' ? '全部来源周' : libState.week);
+  fillSelect($('#fTag'), tags, libState.tag === '全部' ? '全部标签' : libState.tag);
+
+  const q = libState.q.toLowerCase();
+  const rows = graded.filter(r => {
+    if (libState.plat !== '全部' && r['平台'] !== libState.plat) return false;
+    if (libState.grade !== '全部' && r._g !== libState.grade) return false;
+    if (libState.tag !== '全部' && !(r['分类标签'] || '').includes(libState.tag)) return false;
+    if (libState.week !== '全部') {
+      const w = '第' + ['一', '二', '三', '四'][weekOfAugust(r['发布时间']) - 1] + '周';
+      if (!libState.week.startsWith(w)) return false;
+    }
+    if (q) {
+      const hay = [r['玩法'], r['作者'], r['规则'], r['标题'], r['入选原因'], r['来源'], r['分类标签']].join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  }).sort((a, b) => b.热度数值 - a.热度数值);
+
+  $('#libGrid').innerHTML = rows.map(libCard).join('');
+  $('#libCount').textContent = `共 ${graded.length} 条玩法 · 已显示 ${rows.length} 条`;
+  $('#libEmpty').classList.toggle('hidden', rows.length > 0);
+  bindReveal($('#page-library'));
+}
+libStatsOnce();
+$('#searchInput').addEventListener('input', e => { libState.q = e.target.value.trim(); renderLibrary(); });
+$('#fPlat').addEventListener('change', e => { libState.plat = e.target.value === '全部平台' ? '全部' : e.target.value; renderLibrary(); });
+$('#fGrade').addEventListener('change', e => { libState.grade = e.target.value === '全部评级' ? '全部' : e.target.value; renderLibrary(); });
+$('#fWeek').addEventListener('change', e => { libState.week = e.target.value === '全部来源周' ? '全部' : e.target.value; renderLibrary(); });
+$('#fTag').addEventListener('change', e => { libState.tag = e.target.value === '全部标签' ? '全部' : e.target.value; renderLibrary(); });
+$('#libReset').addEventListener('click', () => {
+  libState.q = '';
+  libState.plat = libState.grade = libState.week = libState.tag = '全部';
+  $('#searchInput').value = '';
+  renderLibrary();
+});
+
+/* ===== 滚动显现 ===== */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: .06, rootMargin: '0px 0px -8% 0px' });
+function bindReveal(scope) {
+  scope.querySelectorAll('.reveal:not(.in)').forEach((el, i) => {
+    el.style.transitionDelay = (i % 8) * 70 + 'ms';
+    io.observe(el);
+  });
+}
+
+/* ===== C 级展开 ===== */
+$('#cGrid').addEventListener('click', e => {
+  if (e.target.closest('a')) return;
+  const row = e.target.closest('.b-row');
+  if (row) row.classList.toggle('open');
+});
+
+/* ===== 导航滚动阴影 ===== */
+addEventListener('scroll', () => $('#nav').classList.toggle('scrolled', scrollY > 8), { passive: true });
+
+/* ===== 分级锚点跳转 ===== */
+document.querySelectorAll('.nl-btn[data-anchor]').forEach(b => b.addEventListener('click', () => {
+  if ($('#page-weekly').classList.contains('hidden')) {
+    document.querySelector('.tab-btn[data-tab="weekly"]').click();
+  }
+  const el = document.getElementById(b.dataset.anchor);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}));
+
+/* ===== 页签切换 ===== */
+document.querySelectorAll('.tab-btn').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.tab-btn').forEach(x => x.classList.toggle('on', x === b));
+  const t = b.dataset.tab;
+  document.body.classList.toggle('lib', t !== 'weekly');
+  $('#page-weekly').classList.toggle('hidden', t !== 'weekly');
+  $('#page-picks').classList.toggle('hidden', t !== 'picks');
+  $('#page-library').classList.toggle('hidden', t !== 'library');
+  if (t === 'library') { renderLibrary(); window.scrollTo({ top: 0 }); }
+  if (t === 'picks') { if (!picksInited) initPicks(); window.scrollTo({ top: 0 }); }
+}));
+
+/* ===== CTA 跳转按钮（底栏上方模块） ===== */
+document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => {
+  const t = document.querySelector(`.tab-btn[data-tab="${b.dataset.goto}"]`);
+  if (t) t.click();
+}));
+
+/* ===== 雷达扫描：速度随可见度连续变化（底部慢、顶部快，无突变） ===== */
+(function radarMotion() {
+  const el = document.querySelector('.radar-sweep');
+  if (!el) return;
+  let ang = 0, last = performance.now();
+  function tick(now) {
+    const dt = Math.min(0.05, (now - last) / 1000); last = now;
+    const t = Math.cos((ang - 180) * Math.PI / 180);      // 180°(正下方)=1 完全可见，0°(正上方)=-1 出画
+    const vis = Math.min(1, Math.max(0, (t + 0.15) / 0.75));
+    ang = (ang + 40 * (1 + 2.4 * (1 - vis)) * dt) % 360;  // 可见 40°/s → 出画约 136°/s
+    el.style.transform = `rotate(${ang}deg)`;
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+})();
+
+/* ===== 视频悬浮播放 ===== */
+function openVideo(file, link) {
+  const p = $('#vplayer');
+  p.src = file;
+  $('#vlink').href = link || '#';
+  $('#vmodal').classList.remove('hidden');
+  document.body.classList.add('vlock');
+  p.play().catch(() => {});
+}
+function closeVideo() {
+  const p = $('#vplayer');
+  p.pause(); p.removeAttribute('src'); p.load();
+  $('#vmodal').classList.add('hidden');
+  document.body.classList.remove('vlock');
+}
+$('#vmask').addEventListener('click', closeVideo);
+$('#vclose').addEventListener('click', closeVideo);
+addEventListener('keydown', e => { if (e.key === 'Escape') closeVideo(); });
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-v]');
+  if (!t) return;
+  const v = t.dataset.v;
+  if (v) { e.preventDefault(); e.stopPropagation(); openVideo(v, t.dataset.link || t.href); }
+}, true);
+
+/* ===== 启动 ===== */
+renderWeekly();
+</script>
+</body>
+</html>
