@@ -292,12 +292,13 @@ async function resolveReleaseDate(name) {
 const TODAY = new Date();
 const TODAY_STR = `${TODAY.getFullYear()}-${String(TODAY.getMonth() + 1).padStart(2, '0')}-${String(TODAY.getDate()).padStart(2, '0')}`;
 const dayDiff = iso => Math.floor((new Date(TODAY_STR) - new Date(iso)) / 86400000);
+const REF_DATE = date; // 历史快照/异动以数据所属日期为基准,支持补跑历史日期
 
 const MATURE_PATH = path.join(__dirname, '..', 'data', 'launched', 'bili-mature.json');
 const MATURE = fs.existsSync(MATURE_PATH) ? JSON.parse(fs.readFileSync(MATURE_PATH, 'utf8')) : {};
 const HISTORY_PATH = path.join(__dirname, '..', 'data', 'launched', 'bili-history.json');
 const HISTORY = fs.existsSync(HISTORY_PATH) ? JSON.parse(fs.readFileSync(HISTORY_PATH, 'utf8')) : {};
-const prevDates = Object.keys(HISTORY).filter(d => d < TODAY_STR).sort();
+const prevDates = Object.keys(HISTORY).filter(d => d < REF_DATE).sort();
 
 const rankScore = r => r <= 10 ? 40 : r <= 30 ? 32 : r <= 60 ? 22 : 12;
 const countScore = c => c >= 3 ? 10 : c === 2 ? 6 : 0;
@@ -341,7 +342,7 @@ gameList.sort((a, b) => {
 });
 
 // 写历史快照(供次日计算热度异动)
-HISTORY[TODAY_STR] = Object.fromEntries(gameList.map(g => [g.name, g.rank]));
+HISTORY[REF_DATE] = Object.fromEntries(gameList.map(g => [g.name, g.rank]));
 fs.writeFileSync(HISTORY_PATH, JSON.stringify(HISTORY, null, 1), 'utf8');
 
 // 未上线游戏(9999 标记或人工名单)不进榜单,挪未上线观测区
