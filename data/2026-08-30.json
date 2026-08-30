@@ -1,0 +1,622 @@
+{
+ "date": "2026-08-30",
+ "meta": {
+  "raw_count": 170,
+  "filtered_count": 138,
+  "selected_count": 12,
+  "crawl_time": "2026-08-30 10:30"
+ },
+ "lede": "GTA6 首播数据出炉：峰值 397 万观众刷新年度纪录，Netflix 流量 +16%、Rockstar 官网 +172%\n仙境传说3 CBT 玩家实测：满街露店回归+现代 UI，170 万浏览",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "GTA6 首播数据出炉：峰值 397 万观众刷新年度纪录，Netflix 流量 +16%、Rockstar 官网 +172%"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Minimax H3 Max 生成速度超过观看速度：直接挂上 Twitch 播「无限次元电视」"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Minimax H3 Max 生成快过观看：Twitch 无限生成直播 169 万浏览\nDLSS 5 AI 美颜滤镜外泄改名「Claude Strife」，帧率损失约 40%\nGPS 僵尸追逐 app：僵尸在真实地图上追你，活命只能真跑"
+  },
+  {
+   "id": "industry",
+   "text": "GTA6 首播峰值 397 万观众：2026 年最大游戏直播，Netflix/Twitch/Rockstar 官网流量三重暴涨\n仙境传说3 CBT：露店街回归+WASD 现代 UI（170 万浏览）\nCDPR 确认巫师4 目标 2028\nSquadron 42 跳票 2027：Chris Roberts「12 年心血不撞 GTA6 绞肉机」"
+  },
+  {
+   "id": "indie",
+   "text": "Dirty Derby：拿秘密委托书操纵动物赛马，挡路的直接棒击\nHaunted Paws 双犬救主恐怖：愿望单 90 万+Switch 版公布\nSenile Showdown：觉醒老人大战护理人员的老人院格斗\nNeon Abyss 2 秋季脱离 EA 正式发售"
+  },
+  {
+   "id": "tools",
+   "text": "ThreeJS Assets City v2：66 项城市资产改良，四套昼夜配色"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 生成视频",
+     "tags": [
+      "Minimax",
+      "无限直播"
+     ],
+     "title": "Minimax H3 Max 生成视频的速度超过观看速度——开发者直接挂上 Twitch 播「无限次元电视」",
+     "en_title": "Minimax H3 Max has generates video faster than you can watch it so I hooked it to a twitch livestream!",
+     "full_text": "Minimax H3 Max has generates video faster than you can watch it so I hooked it to a twitch livestream! Now you can watch infinite interdimensional cable - link to the stream below https://t.co/LHqHQ9dKMr",
+     "author": "rehan_shei",
+     "date": "2026-08-29",
+     "likes": 7229,
+     "views": 1697264,
+     "link": "https://x.com/rehan_shei/status/2093528415576211819",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093528331107143680/img/mGq87EK6Q6zuZq9_.jpg",
+      "video_url": "https://x.com/rehan_shei/status/2093528415576211819/video/1"
+     },
+     "summary": "开发者 Rehan Sheikh 发现 Minimax 的 H3 Max 模型生成视频的速度已经超过人类观看的速度——于是把它接到 Twitch 开了一个 24 小时生成式直播频道「infinite interdimensional cable」（无限次元电视，致敬《瑞克和莫蒂》的可当内容）：观众点梗，AI 实时生成下一段「节目」，永不重播。推文 169 万浏览。",
+     "analysis": "当生成速度反超消费速度，视频生成从「工具」变成了「介质」：这个 Twitch 频道本质上是把大模型挂成了电视台。对内容行业的启示有二：其一，「无限流」互动直播是 AI 视频的第一个原生形态（观众点题→即时生成→弹幕反馈循环）；其二，国产模型（Minimax）在海外开发者社区的「玩法化传播」已成为固定出圈路径——从 Runway 竞速到无限电视，工程极客的玩梗正在替代官方营销成为模型口碑的主战场。",
+     "recommendation": "Minimax H3 Max 生成快过观看：Twitch 无限生成直播「永不重播的电视台」169 万浏览",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "PC Gamer / GameSpot · 硬件圈梗",
+     "tags": [
+      "NVIDIA",
+      "DLSS 5"
+     ],
+     "title": "DLSS 5 的 AI「美颜滤镜」提前外泄：角色全变「Claude Strife」，帧率损失约 40%",
+     "en_title": "'Claude Strife': DLSS 5 has escaped into the wild, and things are immediately weird",
+     "full_text": "'Claude Strife': DLSS 5 has escaped into the wild, and things are immediately weird https://t.co/AMDfbXXudS",
+     "author": "pcgamer",
+     "date": "2026-08-29",
+     "likes": 71,
+     "views": 53049,
+     "link": "https://x.com/pcgamer/status/2093500001146306901",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQ07Kl5WAAAdh0l.jpg"
+     },
+     "summary": "NVIDIA 尚未发布的 DLSS 5「AI 风格化滤镜」文件被人从《NBA 2K27》中挖出并流放全网后，mod 社区迅速玩脱：滤镜会把游戏角色统一「AI 美化」成一种诡异的网红脸，被玩家命名为「Claude Strife」（克劳德·斯特莱夫，最终幻想 7 主角名字的 AI 化谐梗）。实测代价：开启后帧率损失约 40%。GameSpot 报道（9.9 万浏览）:「它不仅在改变你最爱的角色，还在砍你的帧数」。",
+     "analysis": "「Claude Strife」的命名式嘲讽是社区对 AI 审美趋同的精准反杀：当 AI 把所有角色都套上同一种「完美脸」，玩家看到的是恐怖谷而非美感。加上 40% 的性能税，DLSS 5 滤镜在发布前已经收获一轮口碑反噬。对 NVIDIA 的教训：生成式滤镜的默认值审美必须有「关闭的理由」而不只是「开启的自由」；对行业的注脚：AI 美化与玩家身份认同（我的角色长这样！）的冲突才刚开始。",
+     "recommendation": "DLSS 5 AI 滤镜外泄被玩坏：全网「Claude Strife」网红脸+帧率损失 40%",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · vibe coding",
+     "tags": [
+      "LBS",
+      "体感"
+     ],
+     "title": "GPS 僵尸追逐 app：僵尸在你的真实街区地图上追你，想活命只能真的跑",
+     "en_title": "SOMEONE VIBE CODED A MOBILE APP WHERE ZOMBIES CHASE YOU IN REAL LIFE",
+     "full_text": "SOMEONE VIBE CODED A MOBILE APP WHERE ZOMBIES CHASE YOU IN REAL LIFE\n\nit uses your actual gps position, so the only way to survive is to physically run\n\n> you get a 60 second head start, then the horde spawns on your neighborhood map\n> tap the red skulls to shoot them, but you only start with 3 bullets\n> go to ammo crates on your running path to reload, hourglasses to slow them down\n> your charge meter fills as you run, and you can spend it to shove the whole horde back when you're cornered\n\nthe...",
+     "author": "om_patel5",
+     "date": "2026-08-29",
+     "likes": 5034,
+     "views": 702509,
+     "link": "https://x.com/om_patel5/status/2093534746043109550",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093534714439110656/img/iTmO5gX6aBdAGHfg.jpg",
+      "video_url": "https://x.com/om_patel5/status/2093534746043109550/video/1"
+     },
+     "summary": "有人 vibe code 出了一个真实 GPS 僵尸追逐 app：僵尸小队在玩家的真实街区地图上生成并持续逼近，唯一存活方式是物理奔跑。机制包括 60 秒先行、初始 3 发子弹点射红骷髅、跑步路线上的弹药箱与减速沙漏、跑步充能的「一键推开尸群」。70 万浏览。",
+     "analysis": "把 Pokémon GO 的采集模型反转成「被追逐」的生存模型，动力结构完全不同：散步社交变冲刺求生。这款 app 最值得玩味的不是玩法而是出身——vibe coded（AI 一把梭写的）意味着 LBS 体感游戏的技术门槛已经跌到「一个人+一个想法」。对照国内扫码跑酷类营销活动，这种「真实地图+机制化追逃」的框架往轻量化运营活动嫁接的空间很大。",
+     "recommendation": "GPS 僵尸真实追逐 app：vibe code 出来的「街区长跑求生」（70 万浏览）",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · Streams Charts",
+     "tags": [
+      "Rockstar",
+      "直播数据"
+     ],
+     "title": "GTA6 首播数据：峰值 397 万观众刷新年度纪录，Cloudflare 见证全网流量三重暴涨",
+     "en_title": "GTA 6's gameplay reveal pulled in 3.97 million peak viewers, overwhelming Twitch and Netflix in the process",
+     "full_text": "GTA 6's gameplay reveal pulled in 3.97 million peak viewers, overwhelming Twitch and Netflix in the process https://t.co/8GNQVs8g45 https://t.co/dsUXfnoois",
+     "author": "eurogamer",
+     "date": "2026-08-29",
+     "likes": 48,
+     "views": 4254,
+     "link": "https://x.com/eurogamer/status/2093709898756345951",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQ5aBgRXwAAewWE.jpg"
+     },
+     "game_ref": "Grand Theft Auto VI",
+     "summary": "Streams Charts 官方数据出炉：GTA6 extended look 首播峰值 397 万观众，为 2026 年最大游戏直播活动（超越 Summer Game Fest 的 381 万）；9,038 位主播同步直播、累计 522 万小时观看。平台份额：Twitch 44%、YouTube 34.8%、Kick 20.2%；个人最高为西班牙主播 IlloJuan（23.3 万峰值）。Cloudflare 数据佐证全网震荡：Netflix 全球流量 +16%（英国 +45%）、Twitch 平均 +12%（峰值 +35%）、Rockstar 官网流量 +172%（英国暴涨 1210%）。情感分析：正面评论 11-15%，负面 17-20% 且大多指向平台宕机而非游戏本身。",
+     "analysis": "397 万同时在线观众意味着什么：相当于把整个丹麦搬进直播间。「游戏预告片成为基础设施压力事件」在本周完成了从段子到行业事实的转变——Netflix/Twitch 的宕机不再被当作花边，而是被 Cloudflare 级的流量数据正式记录为「互联网事件」。对营销人真正值得抄的作业是 6 小时独占窗口的设计：先用平台稀缺性制造集中洪峰，再放开 YouTube 承接长尾，单条内容吃到两轮峰值。",
+     "recommendation": "GTA6 首播峰值 397 万观众：年度最大直播，Rockstar 官网英国流量暴涨 1210%",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Grand Theft Auto: Vice City – The Definitive Edition",
+      "genre": "动作 / 冒险",
+      "developer": "Rockstar Games",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026年11月19日",
+      "steam_rating": "未上架 PC",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": "https://www.youtube.com/watch?v=kcN1oGfJzIM",
+      "description": "【直播纪录】峰值 397 万观众（2026 年最大游戏直播）、9,038 主播、522 万小时观看；超越 Summer Game Fest 2026 的 381 万。【平台份额】Twitch 44% / YouTube 34.8% / Kick 20.2%；个人峰值 IlloJuan 23.3 万。【流量侧】Cloudflare：Netflix 全球 +16%（UK +45%）、Twitch 均值 +12% 峰值 +35%、Rockstar 官网 +172%（UK +1210%）。【舆情】三小时窗口追踪 10 万+条弹幕：正面 11-15%，负面 17-20% 主要指向平台宕机。【档期】2026/11/19。",
+      "why_notable": "397 万同看：游戏预告片正式成为「互联网基础设施压力事件」",
+      "pcu": "未上架 PC",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "Rockstar 开放世界旗舰，2026/11/19 发售"
+     }
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "ことだま · 玩家实测",
+     "tags": [
+      "Gravity",
+      "RO3"
+     ],
+     "title": "仙境传说3 CBT 实测：满街露店回归+现代 UI——「媒体说的点击游戏，其实是现代 MMO」",
+     "en_title": "ラグナロクオンライン3 のCBTに参加してるんですが、街中に露店がずらりで笑った。",
+     "full_text": "ラグナロクオンライン3 のCBTに参加してるんですが、街中に露店がずらりで笑った。メディアでは「クリックゲー」と紹介されていたけど、WASD＋マウスのモダンUIも実装されてます。右クリックでカメラもぐりぐり動くのでMMORPG好きもご安心を！\n#仙境传说3 #ラグナロク3 #ラグナロクオンライン3 https://t.co/qcw1LHErYg",
+     "author": "cotodaman",
+     "date": "2026-08-28",
+     "likes": 7685,
+     "views": 1722154,
+     "link": "https://x.com/cotodaman/status/2093376175498473736",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093371726570852352/img/Pwx_e8ayU3d5Tq5L.jpg",
+      "video_url": "https://x.com/cotodaman/status/2093376175498473736/video/1"
+     },
+     "summary": "日本推主ことだま的仙境传说3（Ragnarok Online 3）CBT 首日感想引爆 X（172 万浏览、7,685 赞）：「满大街摆摊的露店街让我笑出声」；此前部分媒体质疑的「点击式老古董」并不属实——WASD+鼠标的现代 UI、右键自由摄像机都已实现，「MMORPG 爱好者可以放心」。",
+     "analysis": "一条玩家实测推澄清了 RO3 最大的舆论风险：情怀老玩家要的「露店街社交」（RO1 的灵魂）与新生代要的「现代操作」居然都在。172 万浏览说明 RO 系 IP 在日区的号召力依旧顶级；这也给国内怀旧向 MMO 重制项目一个参照——CBT 首日的「自来水实测推」比官方通稿更能定调舆论，「先让情怀玩家拍街景」是值得设计的传播动作。",
+     "recommendation": "仙境传说3 CBT 实测：露店街回归+现代 UI 都在，「MMO 爱好者放心」（172 万浏览）",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 档期确认",
+     "tags": [
+      "CDPR",
+      "巫师4"
+     ],
+     "title": "CDPR：巫师4 目标 2028 年发售",
+     "en_title": "CD Projekt Red is \"targeting\" a 2028 release date for The Witcher 4.",
+     "full_text": "CD Projekt Red is \"targeting\" a 2028 release date for The Witcher 4. https://t.co/yf3I6MxY1L https://t.co/t8HTDC8LYU",
+     "author": "eurogamer",
+     "date": "2026-08-29",
+     "likes": 32,
+     "views": 11909,
+     "link": "https://x.com/eurogamer/status/2093572125218980306",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQ3cvJ3WMAAWYH7.jpg"
+     },
+     "game_ref": "The Witcher 4",
+     "summary": "CD Projekt Red 确认《巫师4》（Polaris 项目）瞄准 2028 年发售。这是继上周巫师 3 Remastered 免费升级与「新恋爱选项」话题后，CDPR 对新一代主线作品给出的首个明确档期框架。",
+     "analysis": "2028 的定位颇有深意：既避开 GTA6（2026/11）的大型发售窗口，也把与陶德系《上古卷轴6》的正面碰撞留给了命运。对 CDPR 自己，巫师3 完全版在本周持续回流（PCU 2.8 万）验证了「旧作养新作」的飞轮：Remaster 的热度运营本质上是为 Polaris 持续加热老玩家池。3A 档期学继续生效：活得久比抢得快重要。",
+     "recommendation": "巫师4 目标 2028：避开 GTA6、给旧作飞轮留足加热时间",
+     "featured": false,
+     "enrichment": {
+      "game_name": "GWENT: The Witcher Card Game - 4k graphic assets pack",
+      "genre": "角色扮演 / 策略",
+      "developer": "CD PROJEKT RED",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2028 年（目标）",
+      "steam_rating": "未上架",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "This package contains a set of 4k visual assets for GWENT: The Witcher Card Game. Please note that it is designed specifically with 4k displays in mind, and will not enhance graphical quality in lower resolutions.\n\n【档期】CDPR 官方确认「目标 2028 年」发售（Polaris 项目）。【背景】主角 Ciri 承接杰洛特；上周巫师 3 Remastered 免费升级+老玩家回流（PCU 2.8 万）持续为系列加热。【参考】主编剧此前透露最初曾想做杰洛特主角，最终定 Ciri。",
+      "why_notable": "3A 档期学样本：避 GTA6、用旧作 Remaster 为新作养玩家池",
+      "pcu": "未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "CDPR 下一代巫师主线，目标 2028"
+     }
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 跳票官宣",
+     "tags": [
+      "Cloud Imperium",
+      "跳票"
+     ],
+     "title": "Squadron 42 跳票 2027：Chris Roberts「12 年心血不撞 GTA6 的注意力绞肉机」",
+     "en_title": "Squadron 42 delayed to 2027, with Star Citizen dev blaming GTA 6",
+     "full_text": "Squadron 42 delayed to 2027, with Star Citizen dev blaming GTA 6\nhttps://t.co/4tmY8Y97lA https://t.co/GFAw6HXre9",
+     "author": "eurogamer",
+     "date": "2026-08-29",
+     "likes": 11,
+     "views": 7041,
+     "link": "https://x.com/eurogamer/status/2093682341440885062",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQ4A6ghXYAAsINI.jpg"
+     },
+     "summary": "Cloud Imperium 宣布星际公民单机战役 Squadron 42 从 2026 年推迟至 2027 年 Q2。创始人 Chris Roberts 在公开信里直言：原计划今秋发售，但「整个行业都不想撞 GTA6」——即使 GTA6 不上 PC，所有媒体和内容创作者的注意力也会被吸干，他不愿让这款投入「12 年血汗」的 Wing Commander 精神续作「发射进 GTA6 的注意力绞肉机」。作为缓冲，10 月将先向小范围内容创作者与早期支持者开放预览。",
+     "analysis": "GTA6 效应已进入「显性表态」阶段：Fable 此前以「混乱档期」为由跳到 2027，现在连不发售同平台的 Squadron 42 都要绕行——注意力市场的挤兑不再局限于同品类同平台。对发行排期的启示：2026 年 Q4 到 2027 年初的「GTA 阴影带」里，中大型产品的最优解似乎已成共识——要么抢在 11 月前，要么干脆推到 2027 中。Roberts 的坦诚（直接点名 vs 含糊其辞）反而为项目赢得了理解。",
+     "recommendation": "Squadron 42 跳票 2027：「12 年心血不撞 GTA6 注意力绞肉机」——连不上同平台的都绕行",
+     "featured": false,
+     "enrichment": {
+      "game_name": "Squadron 42",
+      "genre": "太空战役单机",
+      "developer": "Cloud Imperium Games",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2027 年 Q2（自 2026 推迟）",
+      "steam_rating": "未上架",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": "https://www.youtube.com/watch?v=W9ck8p2hTJ4",
+      "description": "【跳票官宣】从 2026 Q4 推迟至 2027 Q2。Chris Roberts 公开信：不愿「把这款投入 12 年心血的 Wing Commander 精神续作发射进 GTA6 的注意力绞肉机」；即使不上同平台，媒体与创作者的报道容量也会被 GTA6 吸干。【缓冲动作】10 月先向小范围创作者与早期支持者开放预览。【阵容】Gary Oldman、Mark Hamill、Henry Cavill 等全明星。【母体】星际公民众筹已破 10 亿美元。",
+      "why_notable": "连不上同平台都要绕行：GTA6 注意力挤兑进入显性表态阶段",
+      "pcu": "未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "星际公民单机战役，跳票 2027 Q2 怪 GTA6"
+     }
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "AUTOMATON / 電ファミ · 赛马操控",
+     "tags": [
+      "派对",
+      "动物"
+     ],
+     "title": "Dirty Derby：人人手握秘密委托书操纵动物赛马——挡路的对手直接棒击",
+     "en_title": "どうぶつレースを\"めちゃくちゃに操作する\"対戦レースゲーム『Dirty Derby』正式発表。",
+     "full_text": "【最大4人】動物のレース大会に介入して“着順を操作”する対戦ゲーム『Dirty Derby』Steamストアページが公開。邪魔な相手はバットで殴り倒そう\nhttps://t.co/sRBauIoxqP\n\n各自に「依頼書」が届き、動物を加速させるアイテムや固有スキルで依頼どおりの順位を目指す。負ければ次戦で自ら出走することも https://t.co/mdjLiWHFT0",
+     "author": "denfaminicogame",
+     "date": "2026-08-29",
+     "likes": 570,
+     "views": 135316,
+     "link": "https://x.com/denfaminicogame/status/2093633001716629664",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2093632968686460928/pu/img/ROgIAGU13uUM838Y.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2093633001716629664/video/1"
+     },
+     "game_ref": "Dirty Derby",
+     "summary": "韩国 Jebi Studio 公布 2-4 人派对对战 Dirty Derby（AUTOMATON+電ファミ 双报道，合计 21 万浏览）：动物赛马大会上，每位玩家每轮收到一份「秘密委托书」（指定动物的名次），用注射器、对讲机、加减速道具把比赛结果操纵成委托要求——而其他玩家的委托和你冲突，挡路的直接用球棒撂倒。30 种自带技能的动物每场随机 9 匹出场；输了下一轮会被罚「亲自上场跑」。",
+     "analysis": "「信息不对称+相互使坏」的赛马版终于来了：每人的秘密委托制造了天然的目标冲突（我要第 3 名到第 5 名，你要第 1 名摔出去），比纯竞速派对多了「谈判与背叛」层。「输了亲自上场跑」的惩罚机制是神来之笔——把玩家丢进自己刚刚操纵过的混乱里，因果闭环自带喜剧。动物技能池（会飞的鹿、甩脖子的长颈鹿、无视道具的企鹅）保证了每局的荒诞感不重样。",
+     "recommendation": "人人有秘密委托书：操纵动物赛马+棒击对手——输了罚你自己上场跑",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Dirty Derby",
+      "genre": "动作 / 休闲 / 独立",
+      "developer": "Jebi Studio",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年 12 月",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5116420",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5116420/127fc8febfb14f6cd7f7ae0e32e4b644d60d3daa/header.jpg?t=1787964245",
+      "youtube_video": "https://www.youtube.com/watch?v=8u3GCnXpE0w",
+      "description": "【核心机制】2-4 人派对对战：每轮人人收到「秘密委托书」，用注射器/对讲机/加减速道具把动物赛马结果操纵成指定名次——委托互斥引发混战，挡路者直接球棒撂倒。【动物】30 种自带固有技能（会飞的鹿、甩脖子长颈鹿、无视道具的企鹅），每场随机 9 匹。【惩罚】败者下轮「亲自下场跑」。【档期】2026 年 12 月，10 月 Steam Next Fest 出免费 demo；日中韩英等 6 语。",
+      "why_notable": "秘密委托书×赛马操纵：派对游戏的信息不对称新解法",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「派对对战」×动物赛马操纵，12 月发售"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Game*Spark · 双犬合作恐怖",
+     "tags": [
+      "合作恐怖",
+      "狗狗"
+     ],
+     "title": "Haunted Paws：两只小狗闯鬼屋救主人，愿望单突破 90 万+Switch 版公布",
+     "en_title": "子犬2匹が飼い主を助けにお化け屋敷へ！協力ホラー『Haunted Paws』新トレイラー公開。",
+     "full_text": "子犬2匹が飼い主を助けにお化け屋敷へ！協力ホラー『Haunted Paws』新トレイラー公開。スイッチ版&ウィッシュリスト登録数90万件突破も発表\nhttps://t.co/FP7HERWSTh https://t.co/4ARQ6PtMAp",
+     "author": "gamespark",
+     "date": "2026-08-29",
+     "likes": 751,
+     "views": 65344,
+     "link": "https://x.com/gamespark/status/2093639979675320384",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2093639835349352448/pu/img/24JnTaXclQo03Lx1.jpg",
+      "video_url": "https://x.com/gamespark/status/2093639979675320384/video/1"
+     },
+     "game_ref": "Haunted Paws",
+     "summary": "双人合作恐怖冒险 Haunted Paws 新预告+里程碑：Steam 愿望单突破 90 万，同时官宣 Switch/Switch 2 版。设定为两只小狗（挖土、嗅闻、吠叫等「狗感十足」的动作）闯入幽灵鬼屋，救出被邪物掳走的人类主人；新预告首次展示 Boss 战、小狗开车、以及打街机的场面。支持分屏本地合作与 Remote Play Together。",
+     "analysis": "「狗狗+恐怖」是天生的话题剪辑器：玩家的保护欲小狗 vs 恐怖场景的压迫感形成情感剪刀差，每一个「小狗被吓到」的瞬间都是传播素材。90 万愿望单说明「可爱皮×恐怖核」的组合在 coop 品类已经有稳定受众（参考 Phasmophobia 直播经济的反面——恐惧的可分享化）。Switch 双版本公布进一步锁定家庭/情侣同屏场景。",
+     "recommendation": "两只小狗闯鬼屋救主人：Haunted Paws 愿望单 90 万+Switch 版公布",
+     "featured": true,
+     "enrichment": {
+      "game_name": " 闹鬼爪子 Haunted Paws",
+      "genre": "冒险 / 独立",
+      "developer": "LazyFlock",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "即将宣布",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2861080",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2861080/header_schinese.jpg?t=1773306842",
+      "youtube_video": null,
+      "description": "【设定】两只小狗闯入闹鬼宅邸，救出被邪物掳走的人类主人。【动作】挖土、嗅气味、吠叫——「狗感」十足的操作组；角色创造支持多犬种毛色+配饰。【新预告】首次实装 Boss 战、小狗开车、街机小游戏场面。【合作】分屏本地+在线+Remote Play Together。【里程碑】Steam 愿望单 90 万；Switch/Switch 2 版正式公布。",
+      "why_notable": "狗狗×恐怖的情感剪刀差：愿望单 90 万验证 coop 恐怖的可爱化解法",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "愿望单 900,000",
+      "gi_summary": "「合作恐怖」×双犬救主，愿望单 90 万"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "ごだか · 反差萌格斗",
+     "tags": [
+      "格斗",
+      "老人院"
+     ],
+     "title": "Senile Showdown: Arthfightus：觉醒老人大战护理人员——关节痛全变成了格斗技",
+     "en_title": "覚醒した高齢者になり、職員たちをブッ飛ばすバトル型老人ホーム。『Senile Showdown: Arthfightus』",
+     "full_text": "覚醒した高齢者になり\n職員たちをブッ飛ばすバトル型老人ホーム。\n\n『Senile Showdown: Arthfightus』 https://t.co/khiXH51tgo",
+     "author": "G_Godaka",
+     "date": "2026-08-29",
+     "likes": 347,
+     "views": 23338,
+     "link": "https://x.com/G_Godaka/status/2093556759243976962",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2093552995367796736/pu/img/0tUMADZ7_HbTHSTr.jpg",
+      "video_url": "https://x.com/G_Godaka/status/2093556759243976962/video/1"
+     },
+     "game_ref": "Senile Showdown: Arthfightus",
+     "summary": "奇妙游戏发掘账号ごだか介绍：格斗游戏 Senile Showdown: Arthfightus——玩家扮演「觉醒的高龄者」，在老人院里把护理人员全部打飞。老年常见的身体要素（关节、假牙、助行器）在视频里全数格斗技化，标题本身就是关节炎的谐音梗（Arthfightus=Arthritis+Fight）。",
+     "analysis": "「不受待见的身体特征变成超能力」是这个企划的喜剧内核：关节弹响=终结技、假牙=飞行道具——把老年的弱势叙事改写成力量叙事，比单纯猎奇多一层社会幽默。这类「一键反转弱势」的企划思路（胖、矮、社恐都适用）在独立圈屡试不爽，本质是给玩家一个「冒犯与共情之间」的安全出气口。",
+     "recommendation": "觉醒老人大战护理员：关节痛全部格斗技化的老人院格斗（Arthfightus）",
+     "featured": true
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "Niche Gamer · 正式发售",
+     "tags": [
+      "Roguelike",
+      "横版"
+     ],
+     "title": "Neon Abyss 2：赛博朋克横版动作 Roguelike 续作今秋脱离 EA 正式发售",
+     "en_title": "Cyberpunk sidescrolling action game sequel Neon Abyss 2 hits full release this fall",
+     "full_text": "Cyberpunk sidescrolling action game sequel Neon Abyss 2 hits full release this fall: https://t.co/OziMtx2Q1k https://t.co/hWOzpdrvKx",
+     "author": "nichegamer",
+     "date": "2026-08-28",
+     "likes": 34,
+     "views": 5437,
+     "link": "https://x.com/nichegamer/status/2093172432844587284",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2093192380159844352/pu/img/E0wKO-ym2K919rPy.jpg",
+      "video_url": "https://x.com/nichegamer/status/2093172432844587284/video/1"
+     },
+     "game_ref": "Neon Abyss 2",
+     "summary": "Neon Abyss 续作（发行商 Team17）确认今秋脱离早期访问正式发售：赛博朋克风格的横版动作 roguelike，前作以「弹幕射击+房间构筑+宠物孵化」的轻量组合在国内有稳定受众。",
+     "analysis": "",
+     "recommendation": "赛博朋克横版 Roguelike 续作：Neon Abyss 2 今秋脱离 EA 正式发售",
+     "featured": false,
+     "enrichment": {
+      "game_name": "霓虹深渊2",
+      "genre": "动作 / 冒险 / 独立",
+      "developer": "Veewo Games",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥ 58.00",
+      "release_date": "已发售 · 2025 年 7 月 17 日",
+      "steam_rating": "1937 reviews",
+      "steam_url": "https://store.steampowered.com/app/2235200",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2235200/c66dbc6a031ea09c96a92a25d956d06505c93025/header_schinese.jpg?t=1786440755",
+      "youtube_video": null,
+      "description": "【状态】确认今秋脱离早期访问正式发售（ Steam 霓虹深渊2 现 ¥58 转正式版框架）。【品类】赛博朋克横版动作 roguelike，前作以弹幕+构筑+宠物孵化组合见长，Team17 发行。",
+      "why_notable": "轻量 roguelike 爆款续作的正式化节点",
+      "pcu": "早期访问运营中",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "横版 Roguelike 续作，今秋脱离 EA"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Kaeru · 跨媒介恐怖",
+     "tags": [
+      "webcam恐怖",
+      "独立开发"
+     ],
+     "title": "Eyes Never Wake：怪物用你的摄像头和麦克风找你——躲藏必须在现实中躲",
+     "en_title": "Un développeur independant a passé 7 mois à créer un jeu d'horreur où le monstre peut vous voir… via votre webcam.",
+     "full_text": "😱 Un développeur independant a passé 7 mois à créer un jeu d'horreur où le monstre peut vous voir… via votre webcam.\n\nDans Eyes Never Wake, la créature peut utiliser votre caméra et votre micro pour détecter ce que vous faites dans la vraie vie.\n\nPour lui échapper, il ne suffit plus de cacher votre personnage dans le jeu… vous devez vous cacher IRL et rester silencieux devant votre écran 💀\n\nLe concept est terrifiant 😳",
+     "author": "MemeCryptoFR",
+     "date": "2026-08-27",
+     "likes": 380,
+     "views": 50547,
+     "link": "https://x.com/MemeCryptoFR/status/2093045338999271441",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093045283357614080/img/0OGRpd2SRKzD18_x.jpg",
+      "video_url": "https://x.com/MemeCryptoFR/status/2093045338999271441/video/1"
+     },
+     "summary": "独立开发者耗时 7 个月的恐怖游戏 Eyes Never Wake：游戏中的怪物能通过玩家的网络摄像头和麦克风检测真实世界——屏幕里的角色藏好了没用，你必须在现实中躲开摄像头、并且保持绝对安静。",
+     "analysis": "",
+     "recommendation": "怪物用你的 webcam 找你：躲藏要在现实中躲的 Eyes Never Wake（5 万浏览）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "LimitedFourtune · 大学生组队",
+     "tags": [
+      "Roguelike",
+      "赌博"
+     ],
+     "title": "ODD ODDS：贩卖机+ATM+打字机的房间里，恶魔每回合上门收债",
+     "en_title": "目の前にあるのはクレーンゲームの筐体と、ATMと、一台のタイプライター 毎ターン悪魔が取り立てにやってくる",
+     "full_text": "Steamのストアページを公開しました！ https://t.co/1HUtWLcAH5\n \n大学生4人で情熱を込めて作成しました！ \nウィッシュリストに追加していただけると励みになります！\n\n目の前にあるのはクレーンゲームの筐体と、ATMと、一台のタイプライター \n毎ターン悪魔が取り立てにやってくる 払えなければ、そこで終わり 『ODD ODDS』は薄暗い一部屋で借金と向き合い続けるローグライク×ギャンブル\n\n10月のSteam Next Festにも参加します！よろしくお願いします！！",
+     "author": "Limited4tune",
+     "date": "2026-08-28",
+     "likes": 213,
+     "views": 17633,
+     "link": "https://x.com/Limited4tune/status/2093292521464197294",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093066218626531328/img/2_ePhYiFKAwvdAtX.jpg",
+      "video_url": "https://x.com/Limited4tune/status/2093292521464197294/video/1"
+     },
+     "summary": "大学生四人组的 roguelike×赌博游戏 ODD ODDS 开设 Steam 页：昏暗的一间房里只有娃娃机、ATM 和一台打字机，恶魔每回合上门收债——还不上，游戏结束。10 月将参加 Steam Next Fest。",
+     "analysis": "",
+     "recommendation": "恶魔每回合上门收债：一间房+娃娃机+ATM 的赌博 roguelike（大学生 4 人组）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "TeamK6 · 蚂蚁模拟",
+     "tags": [
+      "模拟",
+      "囤粮"
+     ],
+     "title": "蚂蚁囤粮过冬模拟：升级蚁技、招募蚁群、赶在冬天前备足粮",
+     "en_title": "We are making ant game where you are collecting all food for the winter",
+     "full_text": "We are making ant game where you are collecting all food for the winter\n\n- You can upgrade your ant skills\n- Start your colony to hire more workers\n- Get ready for the winter https://t.co/pHpkc2r5FZ",
+     "author": "teamk6games",
+     "date": "2026-08-28",
+     "likes": 161,
+     "views": 25119,
+     "link": "https://x.com/teamk6games/status/2093420065848774819",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093419833568161792/img/Lvu4CRVuC2iTl19E.jpg",
+      "video_url": "https://x.com/teamk6games/status/2093420065848774819/video/1"
+     },
+     "summary": "蚂蚁囤粮模拟：冬天来临前收集所有食物——可升级蚂蚁技能、建立蚁群雇佣更多工蚁。",
+     "analysis": "",
+     "recommendation": "蚂蚁囤粮过冬模拟：升级蚁技+建群雇工，deadline 是整个冬天",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "IndieGamesLibrary · 猫猫解谜",
+     "tags": [
+      "解谜",
+      "猫"
+     ],
+     "title": "Catomino：摆放软乎乎大性格猫猫的 3D 多米诺解谜",
+     "en_title": "Catomino is a cozy 3D puzzle game about arranging squishy felines with very big personalities",
+     "full_text": "Catomino is a cozy 3D puzzle game about arranging squishy felines with very big personalities\n\nClear obstacles, expand the board, and satisfy quirky requests to make everyone purr. https://t.co/6f2NZH8Sra",
+     "author": "IndieGamesLib",
+     "date": "2026-08-28",
+     "likes": 292,
+     "views": 19010,
+     "link": "https://x.com/IndieGamesLib/status/2093394430329827616",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093345192199749633/img/aBl9KfEX3_o5WGxM.jpg",
+      "video_url": "https://x.com/IndieGamesLib/status/2093394430329827616/video/1"
+     },
+     "summary": "cozy 3D 解谜 Catomino：摆放「软乎乎但性格很大」的猫咪——清除障碍、扩大棋盘、满足各种任性要求，让所有猫都发出呼噜声。",
+     "analysis": "",
+     "recommendation": "摆软猫猫的多米诺解谜：满足任性要求让全员呼噜——Catomino",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "Tenma Tenma · 手机小游戏",
+     "tags": [
+      "恐龙",
+      "手机"
+     ],
+     "title": "在森林里迷路的恐龙：手机可玩的小体量新作",
+     "en_title": "森で迷った恐竜のゲームを公開しました！",
+     "full_text": "森で迷った恐竜のゲームを公開しました！\nスマホでもできるので是非やってみてください https://t.co/dhbGfn89N2",
+     "author": "tenmaatenma",
+     "date": "2026-08-29",
+     "likes": 128,
+     "views": 14266,
+     "link": "https://x.com/tenmaatenma/status/2093675242929758378",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093674903736397824/img/UaQkYW_h0RrQUz5w.jpg",
+      "video_url": "https://x.com/tenmaatenma/status/2093675242929758378/video/1"
+     },
+     "summary": "个人开发者公开「在森林里迷路的恐龙」小游戏：支持手机游玩的小体量作品。",
+     "analysis": "",
+     "recommendation": "森林迷路恐龙小游戏：手机直接可玩",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "ThreeJS Assets · 资产包",
+     "tags": [
+      "Three.js",
+      "城市资产"
+     ],
+     "title": "ThreeJS Assets City v2：66 项城市资产改良，四套昼夜配色一键切换",
+     "en_title": "City v2 is out now!",
+     "full_text": "City v2 is out now!\n\n🏙️ 66 assets improved — roads, towers, storefronts, vehicles, street furniture, signage\n🚕 All on a 4 m grid, bottom-center pivoted, sitting on y=0\n🎨 4 palettes: Day, Warm, Cool, NIGHT\n\nAvailable as a single pack or included with our lifetime deal today🔥 https://t.co/zP9VjnujU4",
+     "author": "threejsassets",
+     "date": "2026-08-28",
+     "likes": 379,
+     "views": 20577,
+     "link": "https://x.com/threejsassets/status/2093306652774498532",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093306601071353856/img/9p6A29MuEnwi2eYK.jpg",
+      "video_url": "https://x.com/threejsassets/status/2093306652774498532/video/1"
+     },
+     "summary": "ThreeJS Assets 的城市资产包 v2 发布：66 项资产全面改良（道路、塔楼、店面、载具、街道家具、招牌），统一 4 米网格与底中心轴点贴地规范，附 Day/Warm/Cool/NIGHT 四套配色。单包或终身授权两档购买。",
+     "analysis": "资产规范化的细节值得从业者注意：4 米网格+底中心 pivot+贴地 y=0 的三统一，意味着拼城市场景时可以完全免对齐——把「摆放成本」从资产包层面消掉。WebGL/模拟经营类小团队的技术美术选型可直接复用这套规范。",
+     "recommendation": "ThreeJS 城市资产 v2：66 项改良+四套昼夜配色，4 米网格全规范",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**GTA6 纪录日 + RO3 实测日**\nGTA6 首播数据正式出炉：峰值 397 万观众刷新年度纪录、9,038 主播同播；Cloudflare 数据显示 Netflix 流量 +16%、Rockstar 官网 +172%（英国暴涨 1210%）。仙境传说3 CBT 玩家实测「露店街回归+现代 UI」获 170 万浏览。\n\n**跳票连带**\nSquadron 42 推迟至 2027 Q2，Chris Roberts 直言「12 年心血不撞 GTA6 注意力绞肉机」；巫师4 目标 2028。\n\n**AI 板块**\nMinimax H3 Max 生成速度反超观看速度，被挂上 Twitch 播「无限次元电视」；DLSS 5 AI 滤镜外泄全网「Claude Strife」+帧率损失 40%；GPS 僵尸真实追逐 app 70 万浏览。\n\n**新游看点**\nDirty Derby 秘密委托书操纵赛马；Haunted Paws 双犬救主愿望单 90 万；觉醒老人大战护理员。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
