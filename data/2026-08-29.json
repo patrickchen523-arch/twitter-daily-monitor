@@ -1,0 +1,635 @@
+{
+ "date": "2026-08-29",
+ "meta": {
+  "raw_count": 280,
+  "filtered_count": 217,
+  "selected_count": 12,
+  "crawl_time": "2026-08-29 10:30"
+ },
+ "lede": "GTA6 预览深挖：地图三倍于 RDR2、60 万段动画、DF 盛赞「实时渲染史上最震撼展示」\n巨猫骑行游戏 Ylem's Cat 爆红：开发组全员真猫奴，130 万浏览一天冲上榜首",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "GTA6 预览深挖：地图三倍于 RDR2、60 万段动画、DF 盛赞「实时渲染史上最震撼展示」"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "巨猫骑行游戏 Ylem's Cat 爆红：开发组全员真猫奴，130 万浏览一天冲上榜首"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "「AI bros 到底懂不懂电子游戏」引 2.7 万赞争论\n3D Gaussian Splatting：房子照片一秒变可漫游 3D 空间（GitHub 23K stars）\nOpus 5 六小时生成整座 cozy 岛屿，全部资产用代码写"
+  },
+  {
+   "id": "industry",
+   "text": "GTA6 地图为 RDR2 三倍、60 万段动画（GTA5 的 11 倍）\n星战零号连队口碑立住：Eurogamer 评「该像玩具而非电影」，PCU 持稳\nRockstar 承诺 GTA6 无微交易无生成 AI\nCDPR 主动为 gamescom 被盗独立开发者补硬件"
+  },
+  {
+   "id": "indie",
+   "text": "Ylem's Cat 巨猫骑行（136 万浏览）\nCounter-Strike 之父新作 Alpha Response：光枪式合作射击\nDeep Dish Dungeon：地牢觅食野炊 RPG 定档 10/13\nWhat Goes Up：垃圾塔物理建筑，塌了就开「犯人调查会」"
+  },
+  {
+   "id": "tools",
+   "text": "Asemulator 1.0 发布：Aseprite 动画精灵情境化预览"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 社区观点",
+     "tags": [
+      "AI游戏",
+      "行业争论"
+     ],
+     "title": "「AI bros 到底懂不懂电子游戏？」——GTA6 无生成 AI 承诺下的行业大辩论",
+     "en_title": "Do AI bros understand what a video game even is",
+     "full_text": "Do AI bros understand what a video game even is",
+     "author": "pcul491",
+     "date": "2026-08-27",
+     "likes": 27152,
+     "views": 651881,
+     "link": "https://x.com/Paulcull491/status/2092936177837826261",
+     "media": null,
+     "summary": "一条针对「AI 游戏热潮」的质问推文收获 2.7 万赞：当 Rideshare Simulator 等生成式 AI 游戏反复翻车、而 Rockstar 同时高调承诺 GTA6 不用生成 AI 不做微交易时，社区对「AI 做游戏」的情绪从好奇转为反感。评论区的高赞回复多指向：AI 能生成资产，但生成不了「为什么好玩」的判断。",
+     "analysis": "这是本周 AI 游戏舆论的分水岭信号：三家厂商在同一周给出了三种答案——Rockstar 用「绝不使用」做卖点、Saber CCO 坚信「Half-Life 2 of AI 终将到来」、而开发社区用嘲讽把两者都消解掉。对国内团队的启示：在 3A 语境下「无 AI」已成为可营销的信任状；而 AI 原生小团队需要回答的问题也从「能不能生成」变成了「懂不懂游戏」。",
+     "recommendation": "「AI bros 到底懂不懂电子游戏」：GTA6 无 AI 承诺下的 2.7 万赞行业大辩论",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 技术传播",
+     "tags": [
+      "3D重建",
+      "Gaussian Splatting"
+     ],
+     "title": "3D Gaussian Splatting：给房子拍几张照片，就能得到可漫游的照片级 3D 空间",
+     "en_title": "HAN CREADO UNA HERRAMIENTA GRATIS QUE CONVIERTE FOTOS DE UNA CASA EN UN RECORRIDO 3D",
+     "full_text": "HAN CREADO UNA HERRAMIENTA GRATIS QUE CONVIERTE FOTOS DE UNA CASA EN UN RECORRIDO 3D 🤯\n\nY ya tiene más de 23.000 estrellas en GitHub.\n\nSin app.\nSin VR.\nSin cámaras especiales.\nSin pedir cita.\n\nSe llama 3D Gaussian Splatting y permite crear espacios 3D fotorrealistas a partir de simples fotografías.\n\nLa idea es bastante bestia:\n\nHaces fotos de una casa → las procesas → obtienes un espacio 3D que puedes explorar.\n\nY esto ya tiene aplicaciones reales en inmobiliarias, Airbnb, tiendas, museos y arquitectura.",
+     "author": "Ryoru 𒌐",
+     "date": "2026-08-27",
+     "likes": 1205,
+     "views": 158543,
+     "link": "https://x.com/Ryorugg/status/2093010004756328827",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093009579311333377/img/vYwE8PKhzNHYVFYC.jpg",
+      "video_url": "https://x.com/Ryorugg/status/2093010004756328827/video/1"
+     },
+     "summary": "西语科技博主介绍免费开源的 3D Gaussian Splatting 工具链：无需专用 App、VR 设备或特殊相机，普通照片处理后即可生成照片级可漫游 3D 空间，GitHub 已获 2.3 万星。推文列举了房产、Airbnb、商店、博物馆、建筑等落地场景。",
+     "analysis": "Gaussian Splatting 意味着「场景重建」的成本结构正在坍塌：过去需要建模团队数周的场景，现在一部手机加开源工具即可完成。对游戏行业的直接冲击在虚拟制片与场景原型：美术可以用真实空间打底再风格化加工；对模拟经营/探索类产品，「真实地点 3D 化」的低成本方案将催生新的 LBS 体验。",
+     "recommendation": "3D Gaussian Splatting：普通照片变可漫游照片级 3D 空间——GitHub 2.3 万星",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · AI编程实证",
+     "tags": [
+      "AI编程",
+      "Opus 5"
+     ],
+     "title": "用 Opus 5 六小时做出 cozy 岛屿建造游戏：所有资产全部用代码生成",
+     "en_title": "Tried out a cozy island building game idea with Opus 5",
+     "full_text": "Tried out a cozy island building game idea with Opus 5 \n\nHere's the result after 6 hours \n\nAll the assets are made with code https://t.co/efso3IPH94",
+     "author": "Dilum Sanjaya",
+     "date": "2026-08-27",
+     "likes": 498,
+     "views": 32417,
+     "link": "https://x.com/DilumSanjaya/status/2093019293101486523",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093017336102203592/img/ePiCT1IUWs-WhRio.jpg",
+      "video_url": "https://x.com/DilumSanjaya/status/2093019293101486523/video/1"
+     },
+     "summary": "开发者 Dilum Sanjaya 分享用 Opus 5 在 6 小时内完成的 cozy 岛屿建造原型：不依赖任何美术资产库，全部视觉资产（地形、植被、建筑）用代码程序化生成。视频展示了可玩的原型循环。",
+     "analysis": "与昨日 Alberto BZ 的「1 小时 roguelike」构成连续证据链，但这条的价值在「代码即资产」：跳过美术外包与资产商店采购，让一人团队在极短时间内完成从玩法到视觉的完整验证。对独立开发者的启发是原型成本的下限又被拉低——cozy 品类的小团队竞争将从「能不能做出来」转向「能不能被看见」。",
+     "recommendation": "Opus 5 六小时做出 cozy 岛屿游戏：所有资产用代码生成，原型成本再坍塌",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "PC Gamer / Eurogamer / DF · 预览聚合",
+     "tags": [
+      "Rockstar",
+      "GTA6"
+     ],
+     "title": "GTA6 预览深挖：地图三倍于 RDR2、60 万段动画，DF 称「或许是最震撼的实时渲染展示」",
+     "en_title": "GTA 6 map is apparently 3 times larger than Red Dead Redemption 2's, twice as large as GTA 5's",
+     "full_text": "GTA 6 map is apparently 3 times larger than Red Dead Redemption 2's, twice as large as GTA 5's https://t.co/BgAbNwnRiu",
+     "author": "pcgamer",
+     "date": "2026-08-27",
+     "likes": 50,
+     "views": 58923,
+     "link": "https://x.com/pcgamer/status/2093086771181695100",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQxo4m8bUAApj1G.jpg"
+     },
+     "game_ref": "Grand Theft Auto VI",
+     "summary": "Netflix 首播后的 24 小时内，GTA6 的预览信息继续放量：①YouTuber TGG 独家到 Rockstar North 家看了 3 小时游戏：地图为 GTA5 两倍、RDR2 三倍，Vice City 本身就是 Los Santos 的两倍大（含郊区 11 倍）；②New York Times 预览披露：GTA6 动画量达 60 万段——GTA5 为 5.5 万、RDR2 为 30 万；③Digital Foundry 技术分析定调「或许是我们见过的实时渲染领域最震撼的展示」；④美术总监 Garbut：「游戏里每个房间都有人认真想过——谁坐在哪、喝什么、桌上留下什么痕迹、墙上照片里就是住在这的人」。",
+     "analysis": "首播日的狂欢结束后，深挖期的数据把 GTA6 从「事件」拉回「工程」：60 万段动画意味着 Rockstar 把「真实感」当作可量化的生产指标在管理——每个房间有叙事、每张照片有人物设定。对比国内开放世界产品线，这个量级差距不在引擎而在内容管线与「密度意志」：地图大二倍容易，密度大三倍难。TGG 式「创作者上门看货」也值得注意——Rockstar 在用最古老的方式（面对面）控制叙事节奏。",
+     "recommendation": "GTA6 深挖：地图 3× RDR2、60 万段动画（11× GTA5）、DF 盛赞实时渲染之巅",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Grand Theft Auto: Vice City – The Definitive Edition",
+      "genre": "动作 / 冒险",
+      "developer": "Rockstar Games",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026年11月19日",
+      "steam_rating": "未上架 PC",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": "https://www.youtube.com/watch?v=kcN1oGfJzIM",
+      "description": "【预览数据】TGG（Rockstar North 3小时独家试玩）：地图为 GTA5 两倍、RDR2 三倍；Vice City 本身即 Los Santos 两倍大，含周边郊区为 11 倍。【NYT 披露】动画量 60 万段：GTA5 为 5.5 万（约 11 倍）、RDR2 为 30 万（2 倍）。【技术定调】Digital Foundry：「或许是我们见过最震撼的实时渲染展示」。【密度哲学】美术总监 Garbut：每个房间的座位、饮品、桌面痕迹、墙上家庭照片均为手工布置。【档期】2026/11/19，PS5/Xbox Series。",
+      "why_notable": "60 万段动画与「每个房间都有人在想」：GTA6 把真实感变成可量化生产指标",
+      "pcu": "未上架 PC",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "Rockstar 开放世界旗舰，2026/11/19 发售"
+     }
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer / PC Gamer · 评测聚合",
+     "tags": [
+      "EA",
+      "口碑发酵"
+     ],
+     "title": "星战零号连队口碑立住：「星战游戏应该更像玩具，而不是电影」，PCU 发售第 3 天仅回落 1.7%",
+     "en_title": "Star Wars Zero Company understands that Star Wars games should feel less like the movies and more like the toys",
+     "full_text": "Star Wars Zero Company understands that Star Wars games should feel less like the movies and more like the toys.\n\nOur impressions so far: \n\nhttps://t.co/TKEOfZMFDk https://t.co/iJhaV6fdk7",
+     "author": "eurogamer",
+     "date": "2026-08-28",
+     "likes": 75,
+     "views": 8701,
+     "link": "https://x.com/eurogamer/status/2093264515114598555",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQzE501WkAAJmq8.png"
+     },
+     "game_ref": "STAR WARS Zero Company",
+     "summary": "Eurogamer 深度体验文章提出核心论点：星战游戏应该「更像玩具、而非电影」——回合制战术的节奏天然契合「摆弄手办」的童年体验：掩体=让角色不倒下的支撑、行动点数=轮流玩玩具的民主感、小规模遭遇战=一下午的桌面混战；对比 Battlefront「谁有这么多手办」，零号连队才是「玩玩具」的电子化还原。PC Gamer 评测同步给出：「Bit Reactor 出道即 mic drop，50 美元的『反时代』定价毫不过分」。Steam PCU 数据方面：发售第 3 天 67,892，较首发日 69,046 仅回落 1.7%，长线走势健康。",
+     "analysis": "「玩具论」可能是今年授权游戏评测里最有传播力的一句方法论：它解释了为什么同一 IP 在不同品类里手感天差地别——电影感追求视听奇观（Battlefront），玩具感追求「可摆弄性」（回合制战术）。对 IP 改编团队的启示：先问这个 IP 的「正确玩具形态」是什么，再选玩法。PCU 三日仅 -1.7% 的衰减曲线配合媒体一致好评，42 万峰值在望的讨论已开始。",
+     "recommendation": "星战零号连队「玩具论」走红：回合制=摆手办的电子还原，PCU 三日仅回落 1.7%",
+     "featured": true,
+     "enrichment": {
+      "game_name": "STAR WARS Zero Company",
+      "genre": "战术回合制策略",
+      "developer": "Bit Reactor（EA 发行）",
+      "platforms": [
+       "PC",
+       "PS5",
+       "Xbox Series X/S"
+      ],
+      "price": "¥198",
+      "release_date": "已发售 · 2026年8月27日",
+      "steam_rating": "多半好评（77%）",
+      "steam_url": "https://store.steampowered.com/app/2075800/STAR_WARS_Zero_Company/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2075800/2c7d5dad080c4888faaa03c4a955136c50f5bfae/header.jpg?t=1787848803",
+      "youtube_video": "https://www.youtube.com/watch?v=kK6oHxDYgl8",
+      "description": "【口碑跟踪】Eurogamer「玩具论」：星战游戏应更像玩具而非电影——回合制节奏天然契合手办体验，掩体=让角色站稳、行动点=玩家轮流、小遭遇=桌面混战。PC Gamer：「出道即 mic drop，$50 定价反时代良心」。【数据】Steam PCU：首发日 69,046 → 第 3 天 67,892（-1.7%，长线健康）。【平台】PC/PS5/Xbox Series，国区 ¥198。",
+      "why_notable": "PCU 三日衰减仅 1.7%+「玩具论」：授权战术游戏的口碑与长线双稳样本",
+      "pcu": "67,892（2026-08-29，发售第 3 天）",
+      "current_players": 63572,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「战术回合制」×星战 IP，EA 发行，8/27 发售"
+     }
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "GameSpot · 官方承诺",
+     "tags": [
+      "Rockstar",
+      "GTA6"
+     ],
+     "title": "Rockstar 承诺：GTA6 无微交易、无生成式 AI",
+     "en_title": "Grand Theft Auto 6 Will Have No Microtransactions Or Generative AI",
+     "full_text": "Grand Theft Auto 6 Will Have No Microtransactions Or Generative AI https://t.co/sijojWnadg https://t.co/UNKpVlk9Jr",
+     "author": "GameSpot",
+     "date": "2026-08-28",
+     "likes": 24,
+     "views": 8364,
+     "link": "https://x.com/GameSpot/status/2093379438956449988",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQ0tgRma0AA_3Ke.jpg"
+     },
+     "game_ref": "Grand Theft Auto VI",
+     "summary": "GameSpot 报道：Rockstar 确认 GTA6 单人战役不会有微交易，游戏中也不会包含生成式 AI 内容。这一承诺在 Rideshare Simulator 等 AI 游戏争议发酵的当周，被社区普遍解读为「最强 3A 对 AI 烂作潮的态度」。",
+     "analysis": "把「无微交易+无 gen-AI」并列作为卖点，是 2026 年行业情绪的精准注脚：玩家对两者的反感已经等价。对营销端的参考价值在于——当行业巨头开始把「不做什么」写进传播点时，说明受众的对立面共识已经足够强大。GTA6 的全价买断+完整体验姿态，也为 11 月的销量天花板扫清了舆论障碍。",
+     "recommendation": "Rockstar 承诺 GTA6 无微交易无生成 AI——「不做什么」成了最强卖点",
+     "featured": false,
+     "enrichment": {
+      "game_name": "Santa Rockstar",
+      "steam_url": null,
+      "header_image": null,
+      "release_date": "2026年11月19日",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "developer": "Bekho Team",
+      "genre": "休闲 / 独立",
+      "steam_rating": "未上架 PC",
+      "description": "SAVE CHRISTMAS WITH THE POWER OF ROCK! Santa needs your help! Take your guitar and rock all around the world, delivering presents in the Merry Christmas Stage Sled with the help of the Reindeer Band. Test your skills in this amazing music game, with incredible rock versions of the best known Christmas Carols.\n\n"
+     }
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "GameSpot · 行业互助",
+     "tags": [
+      "CDPR",
+      "gamescom"
+     ],
+     "title": "gamescom 被盗独立开发者获援手：CDPR 主动提出补齐被盗硬件",
+     "en_title": "CD Projekt Red Offers To Help Gamescom Theft Victim As Industry Shows Its Support",
+     "full_text": "Ryan Laley, creator of the indie game Mimic, says all his equipment was stolen out of the business area of Gamescom 2026. CD Projekt Red has since reached out offering to replace the hardware 🤝 https://t.co/XRl9osSrCh",
+     "author": "GameSpot",
+     "date": "2026-08-28",
+     "likes": 42,
+     "views": 8063,
+     "link": "https://x.com/GameSpot/status/2093380060061257871",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQ0uDfsXEAAWwRE.jpg"
+     },
+     "summary": "gamescom 2026 设备盗窃事件的暖色后续：独立游戏 Mimic 的开发者 Ryan Laley 在商务区丢失全部设备（首报推文 24 万浏览：「昨晚被洗劫了，不只我，其他展商也被偷了笔记本电脑」），CD Projekt Red 主动联系并提出补齐被盗硬件，行业多位开发者与厂商接力声援。事件暴露了 gamescom 闭馆后的安保漏洞，主办方压力下需给出回应。",
+     "analysis": "一边是全球最大的行业展会发生连环盗窃、一边是头部厂商自掏腰包兜底——这条新闻的好坏两面都值得办会方与参展方记住： indie 团队参展的设备风险（笔记本+开发机=全部资产）需要保险与备份预案；而 CDPR 的响应速度再次证明，对独立社区的善意是性价比最高的品牌资产。",
+     "recommendation": "gamescom 被偷设备的 indie 开发者获 CDPR 兜底：行业互助对抗展会安保漏洞",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "スチまと · 巨物治愈",
+     "tags": [
+      "巨猫",
+      "骑行探索"
+     ],
+     "title": "Ylem's Cat：能骑在巨型猫咪背上的游戏——「毛色到肢体语言都是真猫奴级别的考究」",
+     "en_title": "でっかいネコチャンの背中に乗れる。もう小難しい設定とかどうでもいいわ。",
+     "full_text": "でっかいネコチャンの背中に乗れる。\nもう小難しい設定とかどうでもいいわ。\n\n開発陣がガチの猫飼いらしく、毛並みからボディランゲージまでこだわり抜いたフェティシズムの塊。レーザーポインターで誘導したり一緒に戦ったりできるのもアツい。海外の限界猫好きニキが「猫に何かあったら、責任者を見つけてやる」と待機してるの笑う。\nとりあえず、猫が無敵仕様であることを祈る。\n『Ylem's Cat』",
+     "author": "stmatomato",
+     "date": "2026-08-28",
+     "likes": 26983,
+     "views": 1366358,
+     "link": "https://x.com/stmatomato/status/2093170957833630199",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093128516007321600/img/U9LghDkxkZFzGvUM.jpg",
+      "video_url": "https://x.com/stmatomato/status/2093170957833630199/video/1"
+     },
+     "game_ref": "Ylem's Cat",
+     "summary": "日本 Steam 推特大号「スチまと」的推荐让巨猫骑行游戏 Ylem's Cat 一天冲上百万浏览：玩家可以骑在巨大猫咪背上旅行，用激光笔引导它、与它并肩作战。博主的推荐语成为传播点：「开发组是真·猫奴，从毛色到身体语言都是考究到变态的凝固体」「海外极限猫奴已经放话：猫要是出了什么事，我们会找到责任人」。",
+     "analysis": "继 Stray 之后「猫=销量密码」再次验证，但这轮的配方是「巨物+可骑乘」：大猫引发的保护欲（蹭蹭、趴下、驮着你走）天然是短视频素材。AUTOMATON 此前采访确认开发团队几乎全员养猫、目标是 The Outer Wilds 式的探索感——从猫的身体语言到对激光笔的反应都被当作核心系统而非装饰。猫无敌与否尚不可知，但这波「等猫党」的转发热情已经无敌。",
+     "recommendation": "巨猫骑行游戏：激光笔引导、并肩作战——「猫奴凝固体」136 万浏览",
+     "featured": true,
+     "enrichment": {
+      "game_name": "伊始之猫",
+      "genre": "动作 / 冒险",
+      "developer": "钻石猫",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "即将推出",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5123770",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5123770/1534416cb10878083574d22c04590afbf428eefb/header_schinese.jpg?t=1787625074",
+      "youtube_video": null,
+      "description": "【核心体验】骑在巨型猫咪背上旅行：用激光笔引导它移动、与它并肩战斗。开发组几乎全员养猫（AUTOMATON 采访证实），从毛色纹理到猫咪身体语言的还原被当作核心系统。【目标】The Outer Wilds 式的探索感。【传播】スチまと推荐推 136 万浏览（次日涨至 194 万）：「猫奴凝固体」「猫要出了事我们会找负责人」。【状态】Steam 页「伊始之猫」已上线，即将推出。",
+      "why_notable": "巨物×骑乘×真猫奴考据：Stray 之后猫题材的下一种爆款形态",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "巨猫骑行探索游戏，未发售"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Indie Game Joe · 大佬新作",
+     "tags": [
+      "光枪射击",
+      "合作"
+     ],
+     "title": "Alpha Response：Counter-Strike 之父新作，Time Crisis 式 4 人合作光枪射击",
+     "en_title": "The creator of Counter-Strike is making a co-op shooter inspired by Time Crisis",
+     "full_text": "The creator of Counter-Strike is making a co-op shooter inspired by Time Crisis\n\n- 4-player co-op or solo\n- Rescue hostages and defuse bombs\n- Huge dynamic open levels\n- Varied non-linear missions\n\nGame is Alpha Response https://t.co/GUACmIChOl",
+     "author": "IndieGameJoe",
+     "date": "2026-08-27",
+     "likes": 4378,
+     "views": 236150,
+     "link": "https://x.com/IndieGameJoe/status/2093047470079004831",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093047274632790016/img/74qViQrm3t_RCBUp.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2093047470079004831/video/1"
+     },
+     "game_ref": "Alpha Response",
+     "summary": "Counter-Strike 初代缔造者（Ultimo Ratio Games）公布新作 Alpha Response：受 Time Crisis 启发的合作射击——4 人合作或单人游玩、解救人质与拆除炸弹、巨大的动态开放关卡、非线性任务结构。推文 23.6 万浏览。",
+     "analysis": "「CS 之父」+「光枪街机复兴」的组合精准踩中两代玩家的怀旧神经：千禧年街机厅的 Time Crisis 体验被移植到开放关卡结构里。开发商 Ultimo Ratio Games 由 Minh Le（Gooseman，CS 共同创作者）主导，此前已低调运营本作的早期访问版本——这次面向大众市场的重新曝光，显示团队尝试从「小众怀旧」走向「合作射击」的更大盘子。街机光枪复兴（与此前 House of the Dead 重制潮同频）值得品类观察者留意。",
+     "recommendation": "CS 之父新作 Alpha Response：4 人合作光枪射击，巨大开放关卡+非线性任务",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Alpha Response",
+      "genre": "动作 / 抢先体验",
+      "developer": "Ultimo Ratio Games",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥ 59.99",
+      "release_date": "已发售 · 2024 年 10 月 7 日",
+      "steam_rating": "805 reviews",
+      "steam_url": "https://store.steampowered.com/app/2089250",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2089250/8b91697042403d7c2836edb75cc8fe39ff51a7fb/header.jpg?t=1767849896",
+      "youtube_video": null,
+      "description": "【出品方】Ultimo Ratio Games——Counter-Strike 初代缔造者（Minh Le「Gooseman」）团队。【玩法】Time Crisis 式光枪射击×现代合作框架：4 人合作或单人、解救人质、拆弹、巨大动态开放关卡、非线性任务。【状态】Steam 早期访问中（¥59.99），本轮为面向大众市场的重新曝光；推文曝光 23.6 万浏览。",
+      "why_notable": "CS 之父×光枪街机复兴：怀旧双 IP 叠加的合作射击",
+      "pcu": "早期访问运营中",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "CS 初代开发者光枪合作射击，早期访问中"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "電ファミニコゲーマー · 觅食烹饪",
+     "tags": [
+      "合作",
+      "料理"
+     ],
+     "title": "Deep Dish Dungeon：在迷宫里觅食、围着锅做饭的生存 RPG，10/13 发售进 Game Pass",
+     "en_title": "【最大3人】ダンジョンで食材を集め、“料理”しながら進むサバイバルRPG『Deep Dish Dungeon』10月13日に発売へ",
+     "full_text": "【最大3人】ダンジョンで食材を集め、“料理”しながら進むサバイバルRPG『Deep Dish Dungeon』10月13日に発売へ。Xbox、Steam向けに配信予定\nhttps://t.co/k2vD8Kjl8b\n\nキャンプ地で鍋を囲み、栄養満点な料理を作りながらパズルやモンスターが立ちはだかる迷宮に挑む。「TGS2026」では試遊出展も https://t.co/2WSECTFaRo",
+     "author": "denfaminicogame",
+     "date": "2026-08-27",
+     "likes": 6364,
+     "views": 532098,
+     "link": "https://x.com/denfaminicogame/status/2092988068576022994",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2092988035927584768/pu/img/sMKThc3tF2qGP_52.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2092988068576022994/video/1"
+     },
+     "game_ref": "Deep Dish Dungeon",
+     "summary": "Raw Fury×Behold Studios 公布发售日：最大 3 人的 3D 迷宫探索 RPG「Deep Dish Dungeon」10 月 13 日推出（Xbox Game Pass 同步、Steam、Xbox 全平台、云游戏）。核心循环是「迷宫觅食→营地野炊」：手工设计（非程序生成）的迷宫里收集食材与资源，营地围着锅做营养料理提升状态再出发。TGS2026 提供试玩展位。",
+     "analysis": "「迷宫+料理」的组合在国内行业语境有个现成参照——《迷宫饭》。把「吃什么」做成资源管理主循环、把围锅做饭做成合作仪式感，是对抗 co-op 品类同质化（搬运/装修/修船）的一个差异化切口。Behold Studios 的过往作品（Knights of Pen & Paper、Chroma Squad）都证明其擅长「把桌游感电子化」，本作的营地用餐环节大概率是直播传播的名场面制造机。",
+     "recommendation": "迷宫觅食+围锅野炊 RPG：Deep Dish Dungeon 10/13 发售进 Game Pass",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Deep Dish Dungeon",
+      "genre": "合作迷宫探索 / 生存RPG",
+      "developer": "Behold Studios（Raw Fury 发行）",
+      "platforms": [
+       "PC",
+       "Xbox Series X/S",
+       "Xbox Cloud"
+      ],
+      "price": "未公布（Game Pass 首日）",
+      "release_date": "2026年10月13日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2871520/Deep_Dish_Dungeon/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2871520/a1fd75518d435add463b7740b923a8fddcc63d1f/header_alt_assets_0.jpg?t=1787852668",
+      "youtube_video": "https://youtu.be/F32DqJa9TYo",
+      "description": "【核心循环】最大 3 人在手工设计（非程序生成）的迷宫中收集食材与资源→营地围锅烹饪营养料理强化状态→再探深层。【特色】解谜+怪物+宝藏房间；合作模式下「围锅开饭」是仪式感时刻。【发行】Raw Fury×Behold Studios（Knights of Pen & Paper 团队），Xbox Game Pass 首日入库、Play Anywhere、掌机优化。【线下】TGS2026 试游（9/17-21 幕张）。",
+      "why_notable": "迷宫饭式「觅食+野炊」循环：co-op 品类对抗同质化的差异切口",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「合作探索」×料理生存，10/13 发售，Game Pass 首日"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "AUTOMATON · 物理友尽",
+     "tags": [
+      "合作",
+      "物理建筑"
+     ],
+     "title": "What Goes Up：宇宙垃圾塔物理建筑，塌了就开「犯人调查会」",
+     "en_title": "最大4人協力・物理演算「ゴミタワー」建築『What Goes Up』発表。",
+     "full_text": "最大4人協力・物理演算「ゴミタワー」建築『What Goes Up』発表。物理演算大好きスタジオが贈る、崩落すれば“犯人探し”のドタバタお仕事\nhttps://t.co/6MSkJjsmyj https://t.co/45k1N7tbZl",
+     "author": "AUTOMATONJapan",
+     "date": "2026-08-28",
+     "likes": 268,
+     "views": 58335,
+     "link": "https://x.com/AUTOMATONJapan/status/2093150414011273402",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093150204602331136/img/1rYreKSxJfLHJmJV.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2093150414011273402/video/1"
+     },
+     "game_ref": "What Goes Up",
+     "summary": "Team17×Bossa Games（Surgeon Simulator、I Am Bread 的「物理作死专家」）公布新作 What Goes Up：1-4 人受雇于「银河废品运输公司」，在遍地太空垃圾的星球上用热狗摊、太阳能板、锈浴缸等离谱材料限时搭建指定高塔。重力枪、喷气背包、弹跳垫齐上阵；倒塌的一切后果——包括「无能同事」——都会触发物理事故，死后由公司 3D 打印新身体无限复活。塔塌了？全队开「犯人调查会」。",
+     "analysis": "Bossa Games 的履历决定了本作的「物理喜剧」血统：手术模拟器与吐司面包之后，这次把失控物理嫁接到建筑玩法上，动机非常明确——合作建造品类的最大痛点是「搭错」的挫败感，而物理事故把失误直接转化为笑点与名场面。Team17 发行+Game Pass 的组合也是这个品类的标准爆款路径（对照：Content Warning、Peak）。",
+     "recommendation": "用热狗摊和浴缸搭太空垃圾塔：塌了就开「犯人调查会」——物理作死专家新作",
+     "featured": false,
+     "enrichment": {
+      "game_name": "破烂捡上天",
+      "genre": "休闲",
+      "developer": "Bossa Games",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "即将宣布",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2987600",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2987600/cc1b3960330c1cb7e9a22a44e8f22ce4e53424f2/header.jpg?t=1787847396",
+      "youtube_video": null,
+      "description": "【玩法】1-4 人受雇「银河废品运输公司」，在危险星球用太空垃圾（热狗摊/太阳能板/锈浴缸）限时搭建指定结构（高塔/横跨峡谷的桥等）。「重力枪」远程搬运+「喷气背包」登高+「弹跳垫」把自己和队友弹上天。【物理】结构有真实物理：倒塌即全场事故；危险源含熔岩河、高压电、陨石雨与「无能同事」；死亡后公司 3D 打印无限复活。【团队】Bossa Games（Surgeon Simulator / I Am Bread），Team17 发行，年内发售+Game Pass。",
+      "why_notable": "把建造失误转化为物理喜剧：friendslop 品类的 Team17 式解法",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「合作物理」×太空垃圾建塔，年内发售+Game Pass"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "root · 开放世界",
+     "tags": [
+      "3D平台",
+      "探索"
+     ],
+     "title": "Soft Ruin：探索巨型危险迷宫的开放世界 3D 平台",
+     "en_title": "Hi, I made a steam page for my game, Soft Ruin.",
+     "full_text": "Hi, I made a steam page for my game, Soft Ruin. If it seems interesting, please consider giving it a wishlist. Thanks!\nhttps://t.co/pWyTYRvXyN https://t.co/3yZyP6WcrM",
+     "author": "rootpilot",
+     "date": "2026-08-27",
+     "likes": 7752,
+     "views": 285277,
+     "link": "https://x.com/rootpilot/status/2093040738988925064",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093039258219196416/img/0PBUeKPOYut3fpP-.jpg",
+      "video_url": "https://x.com/rootpilot/status/2093040738988925064/video/1"
+     },
+     "summary": "开发者 root 公布 Soft Ruin 并开设 Steam 页面：开放世界 3D 平台游戏，玩家探索一座巨大而危险的迷宫——关卡设计紧凑但没有人为路障，世界真正「开放可探索」。Best Indie Games 频道转述其概念（4.5 万浏览）。",
+     "analysis": "",
+     "recommendation": "开放世界3D平台+巨型危险迷宫：Soft Ruin 开设 Steam 页面（28 万浏览）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "あどみ · 限时免费",
+     "tags": [
+      "多人派对",
+      "人生双六"
+     ],
+     "title": "Crazy Life：6 人在线人生双六，8/28-9/4 限时免费开放测试",
+     "en_title": "『クレイジーライフ』期間限定オープンテスト開催！",
+     "full_text": "🎮『クレイジーライフ』期間限定オープンテスト開催！\n\n🗓8/28〜9/4の1週間限定で無料公開！\n\n最大6人で遊べるオンライン人生すごろく。\n就職、転職、結婚、物件購入……\nさらに、友達の人生を狂わせるカードも！\n\n👇下記リンクから今すぐ遊べます\nhttps://t.co/dgcozIulck\n\n #Steam #ゲーム制作",
+     "author": "ADMILAL__",
+     "date": "2026-08-28",
+     "likes": 1723,
+     "views": 206711,
+     "link": "https://x.com/ADMILAL__/status/2093281184218275984",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQxdycYbsAA0A9m.jpg"
+     },
+     "summary": "最多 6 人的在线「人生双六」游戏 Crazy Life 开放限时免费测试（8/28-9/4）：就职、转职、结婚、买房的双六格子之外，还有「搞乱朋友人生」的卡片——派对撕逼与人生模拟的结合。20 万浏览。",
+     "analysis": "",
+     "recommendation": "6 人在线人生双六+「搞乱朋友人生卡」：限时免费测试中（20 万浏览）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "電ファミニコゲーマー · 另类恐怖",
+     "tags": [
+      "恐怖",
+      "meta"
+     ],
+     "title": "たろうくんはいってきました：播放「不许播放的视频」的恐怖游戏，今发售（¥900）",
+     "en_title": "“再生してはいけない”動画を再生するホラーゲーム『たろうくんはいってきました』本日発売。",
+     "full_text": "“再生してはいけない”動画を再生するホラーゲーム『たろうくんはいってきました』本日発売。見た者には×××が訪れる\nhttps://t.co/eQ8MFHf5sY\n\nある廃村でライブ配信を行った後、姿を消した配信者の動画を再生するため、ネット上を検索して再生の鍵を探す。「900円」で買えるセールも開催中 https://t.co/BKCeuKUtgm",
+     "author": "denfaminicogame",
+     "date": "2026-08-28",
+     "likes": 1474,
+     "views": 135084,
+     "link": "https://x.com/denfaminicogame/status/2093301588735701342",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093301456401301504/img/0sBCXITishnH-ww_.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2093301588735701342/video/1"
+     },
+     "summary": "恐怖游戏「たろうくんはいってきました」（太郎君进来了）发售：一名直播主在废村直播后失踪，玩家要在网络上搜索并播放那段「不许播放的视频」、寻找播放的钥匙——看的人会遭遇×××。售价 900 日元。",
+     "analysis": "",
+     "recommendation": "播放「不许播放的视频」：失踪直播主的废村恐怖游戏今发售（¥900）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Repotted · 暴力足球",
+     "tags": [
+      "恶搞",
+      "多人"
+     ],
+     "title": "Illegal Soccer：可以开枪射对方的足球游戏，「这里没有裁判」",
+     "en_title": "I made a soccer game where you can shoot the other team. It's called Illegal Soccer. There are no referees.",
+     "full_text": "I made a soccer game where you can shoot the other team.\n\nIt's called Illegal Soccer. There are no referees. https://t.co/mlxmU3hkg1",
+     "author": "Repotted_",
+     "date": "2026-08-28",
+     "likes": 1423,
+     "views": 82303,
+     "link": "https://x.com/Repotted_/status/2093143448618783193",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093141436724387840/img/Wwd-IdDVDwXwwudM.jpg",
+      "video_url": "https://x.com/Repotted_/status/2093143448618783193/video/1"
+     },
+     "summary": "自制足球游戏 Illegal Soccer：规则只有一条——没有裁判。用枪解决场上一切分歧，包括对手。",
+     "analysis": "",
+     "recommendation": "可以开枪射对方的足球游戏：「Illegal Soccer，这里没有裁判」（8 万浏览）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "えむ · 合作保船",
+     "tags": [
+      "合作",
+      "物理"
+     ],
+     "title": "Mayday Vacay：全员合作保住倾斜的船——船长视野被挡，还得防海鸥和鲨鱼",
+     "en_title": "船が沈まないようにみんなで協力するゲーム『Mayday Vacay』",
+     "full_text": "船が沈まないようにみんなで協力するゲーム『Mayday Vacay』\nのんびりと船旅を楽しむはずが、船長の視界が遮られて前が見えなくなったから大変。船が傾いて荷物が滑ってきたり、誰かが海に落ちたり、カモメにさらわれたり、サメに狙われたり。見張りや燃料補給など協力して生き延びる。配信向き https://t.co/DDx7IvVo6O",
+     "author": "emu_game2020",
+     "date": "2026-08-28",
+     "likes": 540,
+     "views": 40261,
+     "link": "https://x.com/emu_game2020/status/2093171717837598952",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQxirO7bwAApgk6.jpg"
+     },
+     "summary": "合作保船游戏 Mayday Vacay：悠闲邮轮之旅因船长视野被遮而陷入混乱——船体倾斜行李滑落、有人落水、海鸥叼走行李、鲨鱼环伺，全员分工瞭望与补给求生。「直播向」的设计标签明显。",
+     "analysis": "",
+     "recommendation": "合作保船：船长看不见路、行李会滑、海鸥叼人——直播向混乱物理",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Goomboo · 像素工作流",
+     "tags": [
+      "Aseprite",
+      "动画工具"
+     ],
+     "title": "Asemulator 1.0 发布：Aseprite 动画精灵直接在游戏情境中预览、测试与分享",
+     "en_title": "Asemulator v1.0.0 is OUT NOW! 🎉",
+     "full_text": "Asemulator v1.0.0 is OUT NOW! 🎉\n\nPreview, test and share your animated sprites in context, directly in @aseprite, starting today!\n\n(Link in replies) https://t.co/Yq7IV6MbKo",
+     "author": "MapleGecko",
+     "date": "2026-08-28",
+     "likes": 2063,
+     "views": 58065,
+     "link": "https://x.com/MapleGecko/status/2093329047480611088",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093317061124431872/img/GpunBO0Q3Rj4KoLJ.jpg",
+      "video_url": "https://x.com/MapleGecko/status/2093329047480611088/video/1"
+     },
+     "summary": "像素美术工作流工具 Asemulator 发布 1.0 正式版：直接在 Aseprite 内把动画精灵放进「情境」（游戏场景 mock）中预览与调参，省去反复导出进引擎验证的往返。发布当天 5.8 万浏览（次日涨至 21.8 万），社群口碑极佳。",
+     "analysis": "像素品类的隐形痛点被精准解决：美术在 Aseprite 里调好的动画、放进游戏场景后动效节奏常常「不对」，往返验证（导出→引擎→改→再导出）吞噬大量时间。Asemulator 把「情境预览」内置进创作工具本身，属于典型的「工作流缝隙产品」——小切口、刚需、口碑自传播。对工具开发者的参考：找到「两个主流工具之间的往返空隙」仍是独立工具的富矿。",
+     "recommendation": "Asemulator 1.0：Aseprite 动画精灵情境化预览，省掉引擎往返验证",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**GTA6 深挖日 + 巨猫日**\nGTA6 预览数据继续放量：地图三倍于 RDR2、60 万段动画（GTA5 的 11 倍），Digital Foundry 定调「或许是最震撼的实时渲染展示」；Rockstar 承诺无微交易、无生成 AI。巨猫骑行游戏 Ylem's Cat 爆红 136 万浏览：「猫奴凝固体」。\n\n**行业动态**\n星战零号连队口碑立住：「该像玩具而非电影」+PCU 三日仅回落 1.7%；gamescom 被盗独立开发者获 CDPR 补硬件兜底。\n\n**AI 板块**\n「AI bros 懂不懂游戏」2.7 万赞大辩论；3D Gaussian Splatting 照片变 3D 空间；Opus 5 六小时生成 cozy 岛屿。\n\n**新游看点**\nCS 之父新作 Alpha Response 光枪合作射击；Deep Dish Dungeon 迷宫觅食野炊 RPG 定档 10/13 进 Game Pass；What Goes Up 太空垃圾塔物理建筑。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

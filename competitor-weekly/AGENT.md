@@ -15,6 +15,7 @@
    `node -e "JSON.parse(require('fs').readFileSync('文件路径','utf8'));console.log('ok')"`
 5. **不动这两个文件**（除非任务明确要求改前端）：`index.html`、`app.js`。
 6. base64 图片字段体积大属正常，不要「顺手优化」或截断它们。
+7. **源表追溯修正历史数据时，三处必须同步**：`daily-metrics.json` 逐日 → `periods.json` 本期**及全部受影响历史期**的汇总项（flow/dau/peak/*Delta）→ 单文件 HTML 重导出。只改日级数据不改历史期汇总，趋势图会新旧口径断档（20260825 cs 期 722→980 事故）。历史期重算脚本：`运营周报/2026.08.17-08.23/patch_cs_hist_periods.cjs`（改 PID/游戏 id 可复用，幂等）。
 
 ---
 
@@ -111,7 +112,9 @@ index.html  ──fetch──▶  data/*.json  ──注入全局变量──▶
 }
 ```
 - key = 周一日期 `yyyymmdd`；`flow` 单位万元、`dau/peak` 单位万、`*Delta` 单位 %
+- 聚合口径：`flow`=周期日流水求和；`dau`=周期日 DAU 算术平均四舍五入；`peak`=周期日 DAU 最大；`*Delta`=对**前一自然周**（窗口前 7 天）同口径环比 %
 - 未知指标 = `null`；`status`: `normal` / `priority`（异动）
+- **`keywords`/`summary` 每期每游戏必填**：首页趋势图点选卡片的「关联运营事件」在 `intel.json` 无该游戏条目时以此兜底（标题=`keywords[0]`、正文=`summary`、标签=`keywords[1..2]`）；全空会显示只有"运营动态"标题的空白卡片（20260817 期 cs 事故）。文案可从 `core-items.json` 当期该游戏 `intro` 提炼
 - **新增周期时**：同时更新 `reports.json`（数组最前插入新一期）与 `state.period` 默认值——默认值在 `app.js` 顶部 `const state={period:'20260622',...}`，需改为新周期 key（这是允许改 app.js 的唯一常规场景，改动只有这一处字符串）
 
 ### 4.2 `reports.json`
@@ -137,6 +140,13 @@ index.html  ──fetch──▶  data/*.json  ──注入全局变量──▶
 ### 4.7 归档三件套（对比记录页）
 `archive-reports.json`（数组：报告元信息）、`archive-periods.json`（按周期 key 的产品条目）、`archive-content.json`（按周期 key 的正文 blocks，`level`: major/detail）。新增历史周报时三者同步添加同 key 记录。
 
+### 4.8 首页「历史周期趋势对比」显示规则（20260825 定版，`app.js renderOverviewTrend()`）
+- **timeline = periods.json 中同时满足两条件的期**：① 距 `state.period` 不超过 3 个月；② 期号 ≥ 20260720，**或**该期有事件来源（`intel.json` 有条目或任一 item 带 keywords/summary）
+- X 轴为等距分类轴（每期一个点、间距相等，不按真实日期留白），某游戏该期无数据则跳过该点——「仅连接已入库观测点，断档周期不补数」
+- 点的数值读 `periods.json` 预聚合期汇总，**非** `daily-metrics.json` 现算——两者必须保持一致（见铁律 7）
+- 右侧事件卡片 = 点选期的 `intelFor()`：`intel.json` 优先，否则 keywords/summary 兜底
+- 归档期（archive-periods）不进趋势轴；单文件导出版隐藏趋势入口，此模块只看线上站
+
 ---
 
 ## 5. 验收清单（push 前逐项过）
@@ -146,6 +156,8 @@ index.html  ──fetch──▶  data/*.json  ──注入全局变量──▶
 - [ ] 未知数据为 `null`，无编造值；文本不含未转义换行（JSON 字符串内用 `\n`）
 - [ ] `git status` 中只有任务相关文件被改动
 - [ ] 若新增了周期：`reports.json` 已插入新期、`app.js` 的 `state.period` 已更新（唯一允许的 app.js 改动）
+- [ ] 当期 items 每个游戏的 `keywords`/`summary` 均已填写（趋势图卡片兜底，见 4.1）
+- [ ] 若修正了历史数据：受影响历史期汇总项已同步重算（见铁律 7）
 - [ ] commit message 写明周期+产品/模块+提交人
 - [ ] push 前再次 `git pull --rebase`，无冲突后才 `git push origin main`
 
