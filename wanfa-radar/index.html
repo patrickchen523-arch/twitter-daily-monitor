@@ -430,7 +430,7 @@ body.lib .nav-links{display:none}
   display:grid; grid-template-columns:repeat(4, 1fr)}
 .ls-item{padding:0 30px; border-left:1px solid rgba(19,66,111,.12)}
 .ls-item:first-child{border-left:0; padding-left:0}
-.ls-num{font-family:'Gilroy',sans-serif; font-weight:800; font-size:34px; color:var(--sky); letter-spacing:-0.02em; line-height:1.1}
+.ls-num{font-family:'Gilroy',sans-serif; font-weight:800; font-size:34px; color:var(--sky); letter-spacing:-0.02em; line-height:1.1; white-space:nowrap}
 .ls-num b{font-weight:900; font-size:22px; color:var(--navy); margin-left:2px}
 .ls-lb{font-size:13px; color:var(--slate); font-weight:600; margin-top:5px}
 .tools{position:sticky; top:68px; z-index:40; background:rgba(251,249,244,.9); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); padding:18px 0 16px; border-bottom:1px solid var(--fog)}
@@ -470,10 +470,12 @@ body.vlock{overflow:hidden}
   .tabs{padding:4px; gap:4px; flex:none}
   .tab-btn{padding:7px 10px; font-size:12.5px; white-space:nowrap}
   .mod{width:calc(100% - 20px); margin:14px auto; border-radius:28px; padding:52px 22px}
+  .ftmod{width:calc(100% - 20px); margin:14px auto 20px; border-radius:28px}
   .mod-hero{width:100%; margin:0; border-radius:0; padding:60px 20px 56px}
   .nav-links{display:none}
-  .b-main{grid-template-columns:1fr auto; gap:12px; padding:14px}
-  .b-cover{display:none}
+  .b-main{grid-template-columns:auto minmax(0,1fr) auto; gap:12px; padding:12px 14px 12px 12px}
+  .b-cover{width:88px; height:52px}
+  .b-cover .s-play{width:34px; height:34px}
   .b-desc{display:none}
   .b-main .btn{display:none}
   .b-detail-pad{padding:2px 16px 18px 16px}
@@ -757,7 +759,7 @@ body.vlock{overflow:hidden}
 
   <div class="tools">
     <div class="wrap">
-      <div class="tools-grid" style="grid-template-columns:1.7fr 1fr 1fr 1fr 1fr">
+      <div class="tools-grid">
         <div class="f-field">
           <label>搜索玩法</label>
           <input class="f-control" id="pkSearch" placeholder="输入玩法、标签或规则关键词">
