@@ -507,7 +507,14 @@ body.vlock{overflow:hidden}
   .ls-item:nth-child(3){border-left:0; padding-left:0}
 }
 @media (max-width:640px){
-  .tab-btn{padding:8px 16px; font-size:13px}
+  .nav-in{gap:8px}
+  .logo{font-size:0; gap:0} /* 只留雷达图标，避免撑出横向滚动 */
+  .logo-mark{width:30px; height:30px}
+  .tabs{padding:4px; gap:4px}
+  .tab-btn{padding:7px 12px; font-size:12.5px}
+  .wrap{padding:0 16px}
+  .ls-item{padding:0 18px}
+  .ls-num{white-space:nowrap}
 }
 .sec-hint{font-size:13px; color:#fff; opacity:.72; margin:-10px 0 18px; letter-spacing:.02em}
 .mod-tint .sec-hint, .mod-sky .sec-hint, .mod-calm .sec-hint, .mod-cream .sec-hint{color:var(--navy); opacity:.55}
