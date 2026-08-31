@@ -1,0 +1,581 @@
+{
+ "date": "2026-08-31",
+ "meta": {
+  "raw_count": 135,
+  "filtered_count": 113,
+  "selected_count": 12,
+  "crawl_time": "2026-08-31 10:30"
+ },
+ "lede": "Valve 12TB 历史档案泄露：Portal 2 beta、被砍 F-Stop、HL2:EP3 的 Weaponizer 线索全在里面\n苦行梗始祖 Needle In A Haystack Simulator 开 Steam 页：500 万根干草 8 人合作找 1 根针",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Valve 12TB 历史档案泄露：Portal 2 beta、被砍 F-Stop、HL2:EP3 的 Weaponizer 线索全在里面"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "苦行梗始祖 Needle In A Haystack Simulator 开 Steam 页：500 万根干草 8 人合作找 1 根针"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "花束变二维码的创意小站 180 万浏览\nCodex 生成像素画后「自主质检+修复+连检品工具都自己写」\n手工音效师傅 8 千赞宣言：低价手工 SFC 包对抗 AI 音频 slop"
+  },
+  {
+   "id": "industry",
+   "text": "Valve 12TB 泄露：Portal 2 beta+HL2:EP3 线索，社区大规模考古中\nActivision 上门给外挂商送律师信并全程摄像发布\n gamescom 盗窃事件全景发酵：多家受害、主办方「个案论」被斥不可接受\nPS 数字所有权诉讼：Sony 需自证买家知道「买的不是所有权」"
+  },
+  {
+   "id": "indie",
+   "text": "Needle In A Haystack Simulator 开 Steam 页（Q4 发售）\nFalse Oath：中世纪复古像素生存恐怖\nCarry The Count：4 个 Igor 抬吸血鬼棺材赶路\nDon't Look Away From The Colors：视线离开黑色数秒即输"
+  },
+  {
+   "id": "tools",
+   "text": "Three.js Grassworks：200+ 小时打磨的 WebGPU 草地交互演示"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 创意编程",
+     "tags": [
+      "three.js",
+      "创意代码"
+     ],
+     "title": "把一束花变成二维码：three.js 创意小站 180 万浏览，「已经在想下一朵加什么花了」",
+     "en_title": "created a lil site that turns a bouquet into a qr code",
+     "full_text": "created a lil site that turns a bouquet into a qr code\n\nhad so much fun messing around with three.js, thinking about which flower to add next 👀 https://t.co/gpWuOXnlKL",
+     "author": "ann_nnng",
+     "date": "2026-08-29",
+     "likes": 4442,
+     "views": 1799995,
+     "link": "https://x.com/ann_nnng/status/2093637541572612188",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093636820399779840/img/h0jcIDMwS6i4wCek.jpg",
+      "video_url": "https://x.com/ann_nnng/status/2093637541572612188/video/1"
+     },
+     "summary": "开发者 Ann Nguyen 用 three.js 做了一个「花束二维码生成器」：不同种类的花排列组合成可扫描的 QR 码，扫出来是一束花的浪漫循环。推文 180 万浏览、4.4 千赞，作者表示正在纠结「下一朵加什么花」。",
+     "analysis": "创意代码（creative coding）依旧是 X 上最稳定的病毒配方之一：技术不难（three.js+QR 编码），赢在「日常生活中美的再发现」——把最功利的二维码（扫码付费/加好友）反转成最无用之美的花束。对国内团队的启示：品牌用过小工具做传播时，「把商业符号浪漫化」这个反向操作几乎百试百灵；花束 QR 本身就是现成的活动创意。",
+     "recommendation": "花束变二维码：three.js 创意小站 180 万浏览的浪漫病毒",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · AI编程观察",
+     "tags": [
+      "Codex",
+      "自主质检"
+     ],
+     "title": "Codex 生成像素画后开始「自主质检」：发现问题自己修，连检品工具都是自己写的",
+     "en_title": "Codexにドット絵を作らせていたら、生成したあとに自分で検品して、問題があれば修正するところまでやってました。",
+     "full_text": "Codexにドット絵を作らせていたら、\n生成したあとに自分で検品して、問題があれば修正するところまでやってました。\nしかも、その検品用のツールまで見せてくれた。\n\n「作る」だけじゃなくて、\nチェックして直すところまでAI側で回り始めてるの、かなり面白いですね。\n\n#Codex #gamedev #ゲーム制作 https://t.co/sDmUB8QeMR",
+     "author": "yugiriworks",
+     "date": "2026-08-30",
+     "likes": 456,
+     "views": 30481,
+     "link": "https://x.com/yugiriworks/status/2093888399002538055",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093888151286919168/img/zcbRpBEUdgBSQEVX.jpg",
+      "video_url": "https://x.com/yugiriworks/status/2093888399002538055/video/1"
+     },
+     "summary": "日本独立开发者「雨季」用 Codex 生成像素画时的意外发现：AI 在生成后不仅自行检查产出质量、发现问题自主修复，还展示了它为质检专门写的检查工具——「从『生成』到『检查+修正』，整个闭环开始在 AI 侧运转」。",
+     "analysis": "这正好呼应了本月陈成「LLM 帮我想清楚→写成脚本存进 harness」的路线：把一次性智力输出沉淀为可重复执行的验证资产。当 AI 从「生产者」进化到「生产+质检验收」一体，人类角色进一步向「定义质量标准」上移——你告诉它什么是好的，剩下的循环它自己跑。对美术外包管线的启示：像素类资产的 QC 环节（透明度/边缘/调色板合规）已具备全自动化的技术前提。",
+     "recommendation": "Codex 自主质检：生成→自检→自修复，连检品工具都是 AI 自己写的",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 手艺人宣言",
+     "tags": [
+      "游戏音频",
+      "反AI"
+     ],
+     "title": "音效师 8 千赞宣言：用超低价手工音效包对抗 AI 音频 slop——「Fuck AI」",
+     "en_title": "In an attempt to push back against AI audio being used and ruining games, I'm making handcrafted audio packs created lovingly from the ground up!",
+     "full_text": "Hey devs! 👋\n\nIn an attempt to push back against AI audio being used and ruining games, I'm making handcrafted audio packs created lovingly from the ground up! 💜\n\nI get we're all starving devs so I'm keeping them mega affordable too. Let's stop shitty audio slop.\n\nFuck AI. https://t.co/30SZYo8vqJ",
+     "author": "Case_Portman",
+     "date": "2026-08-29",
+     "likes": 8330,
+     "views": 119785,
+     "link": "https://x.com/Case_Portman/status/2093750843761734057",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093746241205080064/img/x7fujVOdT7kSeTyx.jpg",
+      "video_url": "https://x.com/Case_Portman/status/2093750843761734057/video/1"
+     },
+     "summary": "音效设计师 Case Portman 发推宣布对 AI 音频的反击方式：用「从零手工打造、注入热爱」的音效包对抗充斥市场的 AI 生成音频，并刻意把价格压到独立开发者都负担得起（此前一天他刚发布 250+ 音效的奇幻武器包，五折促销）。「我们都知道开发者都在挨饿，所以定价超级亲民。让我们一起阻止烂音频 slop」。",
+     "analysis": "这是本周「AI 反噬」叙事的第三块拼图：GTA6 把「无 gen-AI」做成卖点（0829）、社区用「AI bros 懂不懂游戏」火力输出（0829）、而手艺人用「低价手工+Fuck AI」把反 AI 做成了生意。三条线共同指向同一个市场信号：在 2026 年，「Human-made」正在成为可以卖钱的标签——就像 craft beer 之于工业啤酒。给内容工具/资产平台的启示：手工认证+akedown 定价的组合拳有明确的付费意愿支撑。",
+     "recommendation": "音效师 8 千赞反 AI 宣言：超低价手工音效包对抗 AI slop——Human-made 成标签",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 历史泄露",
+     "tags": [
+      "Valve",
+      "泄露档案"
+     ],
+     "title": "Valve 12TB 历史档案泄露：Portal 2 beta、被砍的 F-Stop、HL2:EP3 的 Weaponizer 线索，社区大规模考古中",
+     "en_title": "12TB Valve archive leak includes early Portal 2 builds and hints of Half-Life 2: Episode Three",
+     "full_text": "12TB Valve archive leak includes early Portal 2 builds and hints of Half-Life 2: Episode Three\nhttps://t.co/2TLtECeb1A https://t.co/eHWa0defhF",
+     "author": "eurogamer",
+     "date": "2026-08-30",
+     "likes": 9,
+     "views": 6819,
+     "link": "https://x.com/eurogamer/status/2094055363792249013",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQ-UPPwWgAA014E.jpg"
+     },
+     "game_ref": "Half-Life 3",
+     "summary": "约 12TB 的 Valve 内部开发档案（2003-2013）被放到网上，由数据矿工 Gabe Follower 首先标记。已确认内容包括：2009 版 Portal 2 beta（涂色枪机制，已有 mod 作者做出功能还原）、被取消的 Portal 前传 F-Stop 资产、2008 年 6 月的 Left 4 Dead 完整可玩 beta（含 Zoey 原配音 Alésia Glidewell 的被替换台词）、以及曾与 HL2:EP3 关联的 Weaponizer 武器模型（后作为 Portal 2 占位资产）。档案来源为 Valve 早期已被 SteamPipe 取代的旧 Steam2 分发基础设施。",
+     "analysis": "与 GTA6 泄露的「商业伤害」不同，这是一次纯考古向的「历史档案」泄露——Valve 未表态，社区却在狂欢：涂色枪功能还原（Max 的推文 7 万浏览）展示了 mod 社区把冻结时光复活的能力。对业界的两个注脚：其一，旧基础设施（Steam2 时代的 CDN 缓存）成为安全盲区，公司下线老系统时残留数据的清理常被忽略；其二，「EP3 永远的可能性」作为互联网传说再次自证生命力——12TB 里每翻出一个 Valve 自己都忘了的资产，都会被解读成 Half-Life 线索。此前可靠信源已指 HLX（ comunidad 称 Half-Life 3）项目「可从头玩到尾」。",
+     "recommendation": "Valve 12TB 档案泄露：Portal 2 beta+F-Stop+HL2:EP3 线索，社区考古狂欢",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Half-Life: A Place in the West - Chapter 3",
+      "genre": "独立",
+      "developer": "Michael Pelletier / Ross Joseph Gardner",
+      "platforms": [
+       "PC",
+       "Mac",
+       "Linux"
+      ],
+      "price": "未公布",
+      "release_date": "未公布（HLX 项目传闻开发中）",
+      "steam_rating": "未上架",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【泄露内容】12TB Valve 内部档案（2003-2013）外流：2009 版 Portal 2 beta（涂色枪已被 mod 作者功能还原）、被砍 Portal 前传 F-Stop 资产、2008/6 L4D 可玩 beta（含 Zoey 原配音 Alésia Glidewell）、HL2:EP3 关联的 Weaponizer 模型（后作 Portal 2 占位资产）。【来源】旧 Steam2 分发基础设施残留，Valve 未表态。【背景】可靠信源指 HLX（Half-Life 3）「已可从头玩到尾」；2013/14 被砍的 HL3 为程序生成+L4D 玩法融合，因基于未完成的 Source 2 取消。",
+      "why_notable": "考古级泄露：旧基础设施成为安全盲区，社区把冻结的 Valve 历史复活",
+      "pcu": "未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "Valve 旗舰传闻项目 HLX，泄露档案再添 EP3 传说"
+     }
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 反外挂执法",
+     "tags": [
+      "Activision",
+      "外挂执法"
+     ],
+     "title": "Activision 上门给外挂商送律师信，还全程摄像发到官号：「做外挂卖外挂，我们会找到你」",
+     "en_title": "Activision sends a legal rep to a Call of Duty cheat seller's front door, films the whole thing, posts it online",
+     "full_text": "Activision sends a legal rep to a Call of Duty cheat seller's front door, films the whole thing, posts it online \nhttps://t.co/LhlS5gVT62 https://t.co/yxJypfhJ0R",
+     "author": "eurogamer",
+     "date": "2026-08-30",
+     "likes": 7,
+     "views": 3369,
+     "link": "https://x.com/eurogamer/status/2094105910712971651",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQ_CL-dXsAA4O4I.jpg"
+     },
+     "summary": "Activision 在 COD 官方账号发布了一段一分钟视频：法律代表开车到俄亥俄州知名外挂商 Elocarry 家门口，当面递送停终函（「我给你带了些文件——Activision 的律师函」），全程 Track 记录并公开。Elocarry 曾销售号称「RICOCHET 检测安全」的 Black Ops 7/Warzone 外挂套餐（三月订阅最高 £79.99），事后其 Discord 确认 COD 相关销售「暂时暂停」。Activision 同步披露战绩：已发出 80+ 份停终函、打击 375+ 分销渠道、彻底关停 30+ 外挂商店——「这不是孤立事件」。",
+     "analysis": "反外挂的传播战打法升级：过去是封号公告，现在是把执法过程 itself 做成内容。上门视频全程「无戏剧冲突」（递文件、留电话、走人）反而更有力量——传递的信息是「我们知道你住哪，且不介意让你知道我们知道」。对国内厂商涉外挂/工作室灰产的启示： 法律动作的内容化包装（市场化部门的传播配合）能把这个纯成本项转化为玩家社区的好感度资产——前提是动作本身要扎实（80+ C&D 的执行密度）。",
+     "recommendation": "Activision 上门送律师信还拍视频：80+ 停终函+关停 30 外挂店，「做外挂我们会找到你」",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 展会安全",
+     "tags": [
+      "gamescom",
+      "盗窃"
+     ],
+     "title": "gamescom 盗窃事件全景发酵：多家展商受害，主办方「个案论」回应被出版商斥「绝对不可接受」",
+     "en_title": "Multiple developers report equipment stolen from their Gamescom booths",
+     "full_text": "Multiple developers report equipment stolen from their Gamescom booths\nhttps://t.co/oPqPvM1kwf https://t.co/pogYWYJGZt",
+     "author": "eurogamer",
+     "date": "2026-08-30",
+     "likes": 25,
+     "views": 8582,
+     "link": "https://x.com/eurogamer/status/2094028718209429632",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQ97_eYWAAAurhX.jpg"
+     },
+     "summary": "gamescom 盗窃事件完整图景浮出：Mimic 开发者 Ryan Laley（本已因失窃提前结束参展，CDPR 之后提出补硬件）、iam8bit（商务区两台笔记本被偷，内含未完成版本的 Petal Runner/Escape Academy 2 demo，有泄露风险）、Tessera Studios（展区柜子被撬，笔记本两台+Steam Deck 被盗，含公司机密）、以及两年前就被偷过且「被主办方阻止报警说不让科隆市和展会难堪」的 Ukiyo（「我们每年全球 15+ 场展会，唯一需要自带锁柜储物间的就是 gamescom」）。gamescom 官方回应称这些是「个案」，给出「着制服保安+建议自行投保」的通用答复，被 TheGamer 斥为「绝对不可接受」。",
+     "analysis": "事件从「一条惨况推文」演变成「行业级信任危机」的关键节点是 Ukiyo 的「锁柜证词」——一个连年参展的工作室说 gamescom 是唯一需要专门上锁储物的大型展会，这个具体细节比所有控诉加起来都有杀伤力。对参展方（尤其小团队）的实操启示：设备全量加密+未完成 build 不放现场机+每日清点带走三条底线；对办展方：个案论回应几乎必然反噬，安全承诺必须给出可验证的措施升级。另外 iam8bit 的「未完成版本可能泄露」提出了新的风险维度——被偷走的不只是硬件，还有你还没准备好让世界看的游戏。",
+     "recommendation": "gamescom 盗窃全景：「锁柜证词」杀伤力拉满，主办方案论被斥绝对不可接受",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Polygon · 数字所有权",
+     "tags": [
+      "Sony",
+      "诉讼"
+     ],
+     "title": "PS 数字所有权诉讼：Sony 要向法庭证明「理性消费者都知道买的不是所有权」",
+     "en_title": "PlayStation Wants To Prove In Court That You Don't Own Your Digital Games",
+     "full_text": "PlayStation Wants To Prove In Court That You Don't Own Your Digital Games https://t.co/QUO7yf7ECv https://t.co/GRLURSw9BU",
+     "author": "polygon",
+     "date": "2026-08-30",
+     "likes": 12,
+     "views": 8159,
+     "link": "https://x.com/Polygon/status/2094072671138963755",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQ-j_2PXMAACvts.jpg"
+     },
+     "summary": "6 月对 Sony 提起的集体诉讼进入关键阶段：四名原告主张「Buy Now/Confirm Purchase」按钮误导消费者以为获得了所有权，实际只是可随时撤销的许可。Sony 的抗辩逻辑是「理性消费者知道自己没有买到所有权」且 EULA 里写明「软件是授权给你，不是卖给你」。但加州 AB2426 法案禁止用「buy/purchase」等暗示无限制所有权的词销售数字商品，除非卖家做出「清晰醒目」的许可声明——而 Sony 的许可条款藏在数千行小字里。Sony 8 月底突击群发许可协议邮件被批时机糟糕（其 2028 年停产实体盘计划正处舆论风口）。",
+     "analysis": "这场诉讼定义了下一个十年的数字商品问题的判例基础：如果 Sony 输了，购买按钮旁将被迫出现「你正在购买访问许可」的明示——所有数字商店的 UI、营销话术乃至定价心理都要重写。更深的讽刺在于时机：Sony 一边推进 2028 全数字化，一边需要论证「大家早就不抱拥有幻想」，而它同时在 8 月底群发协议邮件的行为又暗示它自己知道披露并不充分。对国内全数字化产品的前瞻提醒： 版号渐进制+数字权益告知的规制化（消保层面的）与国际判例只会殊途同归，提前把「许可」明示做进购买流的公司不会吃亏。",
+     "recommendation": "PS 数字所有权诉讼：Sony 需自证「理性消费者都知道买的不是所有权」——AB2426 小字条款 है拉锯",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "電ファミ / Nas · 苦行梗闭环",
+     "tags": [
+      "苦行",
+      "合作"
+     ],
+     "title": "Needle In A Haystack Simulator 开 Steam 页：500 万根干草 8 人合作找 1 根针，Q4 发售",
+     "en_title": "“500万本の干し草”から「1本の針」を見つける苦行ゲーム『Needle In A Haystack Simulator』のSteamストアページが公開。",
+     "full_text": "“500万本の干し草”から「1本の針」を見つける苦行ゲーム『Needle In A Haystack Simulator』のSteamストアページが公開。「8人」で協力プレイが可能\nhttps://t.co/Ywg7nmQirP\n\n干し草の中の「お宝」を売却し、探知機やベルトコンベア、鋤などのお助けアイテムを購入できる。プレイテストの申請も受付中 https://t.co/40aHOxi8E6",
+     "author": "denfaminicogame",
+     "date": "2026-08-29",
+     "likes": 4291,
+     "views": 705386,
+     "link": "https://x.com/denfaminicogame/status/2093834539093446904",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2093834504687513600/pu/img/53XUCw4JJ0TsDL5L.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2093834539093446904/video/1"
+     },
+     "game_ref": "Needle In A Haystack Simulator",
+     "summary": "8 月下旬引爆 X 的「干草堆找针」苦行梗迎来 正名 落地：作者 Nas Nakarus（Studio BitDot，桌面宠物《ナナといっしょ》开发商 CEO）公布 Steam 页面——500 万根干草中找 1 根针，支持呼声极高的 8 人在线合作；干草中还会翻出「宝物」换钱，购买金属探测器、传送带、犁等升级道具批量处理干草。2026 Q4 发售，测试申请已开放。Nas 同步复盘传播教训：爆红时还没开 Steam 页，几天内山寨就出现了——「永远先把 Steam 页准备好」。",
+     "analysis": "这是苦行梗从「讽刺梗」到「商品」的完整闭环：8/22 掀起 mockery 浪潮、8/25 作者下场接梗、8/29 Steam 页上线+合作模式回应「想和朋友一起受苦」的热评。营销学上教科书级的三步：把社区情绪（嘲讽行业捷径）人格化（作者自嘲）、再快速制度化（Steam 页+具体系统：探测器/传送带/犁把「受苦」做成可见的成长曲线）。对创意团队的忠告已被作者用亲身惨剧写明：梗随时会爆，Steam 页必须先在——这次的山寨抢跑就是几百万愿望单的真实损失。",
+     "recommendation": "苦行梗始祖落地：500 万根干草 8 人找 1 针开 Steam 页——「永远先把 Steam 页准备好」",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Needle In A Haystack Simulator",
+      "genre": "休闲 / 模拟",
+      "developer": "Studio Bitdot",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年第四季度",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5159870",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5159870/8980900568ead38e73d1538557fe9ff9d987bedd/header.jpg?t=1788124585",
+      "youtube_video": null,
+      "description": "【核心玩法】从 500 万根干草中逐根翻找唯一的针；干草中夹杂「宝物」可出售换资金，购入金属探测器/传送带/犁等道具批量化提升处理效率。【合作】8 人在线合作（响应社区呼声）。【来历】8/22 苦行梗浪潮原点，作者 Nas Nakarus 为桌面宠物《ナナといっしょ》开发商 Studio BitDot 的 CEO。【教训】爆红时未开 Steam 页，几天内出现山寨——「永远先把 Steam 页准备好」。【档期】2026 Q4，测试申请中。",
+      "why_notable": "苦行梗从讽刺到商品的教科书闭环：把嘲讽情绪制度化成成长曲线",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「苦行合作」×干草堆找针，2026 Q4 发售"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Daniel Almenara · 复古恐怖",
+     "tags": [
+      "生存恐怖",
+      "像素"
+     ],
+     "title": "False Oath：中世纪复古像素生存恐怖公布，「假誓」的代价",
+     "en_title": "I'm excited to finally announce 𝐅𝐚𝐥𝐬𝐞 𝐎𝐚𝐭𝐡, a retro-style survival horror game set in a medieval era.",
+     "full_text": "I'm excited to finally announce 𝐅𝐚𝐥𝐬𝐞 𝐎𝐚𝐭𝐡, a retro-style survival horror game set in a medieval era. ⚔️\n\nIt's a project I've been working on for a while, and you can wishlist it now on Steam! (Link in the comments)\n\nA demo is coming soon! https://t.co/qUIK0k03rY",
+     "author": "Pinky_GameDev",
+     "date": "2026-08-28",
+     "likes": 5894,
+     "views": 225088,
+     "link": "https://x.com/Pinky_GameDev/status/2093438619872547201",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093436994193924096/img/lulx_WSqUegGp8uZ.jpg",
+      "video_url": "https://x.com/Pinky_GameDev/status/2093438619872547201/video/1"
+     },
+     "game_ref": "False Oath",
+     "summary": "开发者 Daniel Almenara 首度公开复古风生存恐怖新作 False Oath：中世纪为舞台、复古像素渲染，标题已暗示「违背誓言」的主题代价。Steam 页开放愿望单，试玩版即将推出。22.5 万浏览。",
+     "analysis": "中世纪题材+复古生存恐怖（而非动作）的组合罕见地贴合了两个潮流的交集：近两年中世纪热潮（天国拯救 2/Kingdom Come 系受众）与「复古 PS1 恐怖」的独立浪潮（如 Lorn's Lure、Fatal Frame 系复古爱好者）。曝光物料里建筑光影的绘制水准是传播主因——复古像素的「窗户透光」做得像油画，说明美术功底才是复古恐怖真正的门槛。",
+     "recommendation": "中世纪复古像素生存恐怖 False Oath 公布：违背誓言的代价（22 万浏览）",
+     "featured": true,
+     "enrichment": {
+      "game_name": "False Oath",
+      "genre": "动作 / 冒险",
+      "developer": "Daniel Almenara / Nytelynn",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "即将推出",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4601100",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4601100/f5f1bb9772b4f5e2265282ddbe6e591ee10c6e82/header.jpg?t=1787946711",
+      "youtube_video": null,
+      "description": "【题材】中世纪舞台的复古像素生存恐怖；标题「假誓」暗示叙事核心——违背誓言的代价。【团队】Daniel Almenara×Nytelynn。【状态】Steam 页已开愿望单，demo 即将推出；公布推 22.5 万浏览，物料中建筑光影被赞「像素油画」。",
+      "why_notable": "中世纪热潮×复古恐怖独立潮的品类交集样本",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「生存恐怖」×中世纪复古像素，即将推出"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Best Indie Games · 哥特搬运",
+     "tags": [
+      "friendslop",
+      "哥特"
+     ],
+     "title": "Carry The Count：4 个 Igor 抬着吸血鬼的棺材穿越中世纪去见爱人",
+     "en_title": "This indie developer is making a friendslop title where up to 4 Igors carry a vampire's coffin across a medieval land to his lover.",
+     "full_text": "This indie developer is making a friendslop title where up to 4 Igors carry a vampire's coffin across a medieval land to his lover.\n\nIt's called Carry the Count. Would you play this? https://t.co/mrTS9YqAJC",
+     "author": "clemmygames",
+     "date": "2026-08-29",
+     "likes": 159,
+     "views": 10683,
+     "link": "https://x.com/clemmygames/status/2093806011014320145",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2093805936120897536/pu/img/sIkzh6dCrc_vFc2O.jpg",
+      "video_url": "https://x.com/clemmygames/status/2093806011014320145/video/1"
+     },
+     "game_ref": "Carry The Count",
+     "summary": "搬运类 friendslop 新变体 Carry The Count：最多 4 名玩家扮演 Igor（科学怪人式仆人），抬着吸血鬼主人的棺材横穿中世纪大陆，目标是把他送到爱人身边——棺材物理+团队合作+哥特猎奇喜剧。",
+     "analysis": "搬运品类（算盘珠子终于拨到了吸血鬼身上）的题材创新点在叙事包装：运送的不是尸体或家具，而是一位有尊严、有爱人、还会在棺材里抱怨的老爷——「运送对象有个性」直接把搬运过程的故障转变成角色互动笑料。本周 We Are So Cooked 运尸、What Goes Up 垃圾塔到 Carry The Count 棺材，friendslop 的内卷已进入「搬运物的性格化」阶段。",
+     "recommendation": "4 个 Igor 抬棺材送吸血鬼见爱人：friendslop 进入「搬运物有性格」阶段",
+     "featured": false,
+     "enrichment": {
+      "game_name": "Carry The Count",
+      "genre": "冒险 / 独立",
+      "developer": "Little Bird Studios",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "即将推出",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4311440",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4311440/209094994aa9a7055f5c89f01b788601227b2d00/header.jpg?t=1787227906",
+      "youtube_video": null,
+      "description": "【玩法】最多 4 名玩家扮演 Igor 抬吸血鬼棺材穿越中世纪大陆，送他见到爱人；棺材物理+合作障碍+哥特猎奇喜剧。【辨识点】「运送对象有个性」——棺材里的老爷会抱怨；本周 We Are So Cooked 运尸、What Goes Up 垃圾塔之后，friendslop 进入「搬运物性格化」阶段。",
+      "why_notable": "friendslop 品类进入「搬运物性格化」阶段的样本",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「合作搬运」×抬棺送吸血鬼，即将推出"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "ごだか · 紧张感小游戏",
+     "tags": [
+      "专注力",
+      "小游戏"
+     ],
+     "title": "Don't Look Away From The Colors：视线离开「黑色」数秒即输，イライラ棒式专注力游戏",
+     "en_title": "\"黒\"だけを見つめるゲーム、おもしろい。",
+     "full_text": "\"黒\"だけを見つめるゲーム、おもしろい。\n視線が数秒反れるとアウト。イライラ棒のようなゲーム性で緊張感があってハマる。\n\n『Don't Look Away From The Colors』 https://t.co/PtcqFtLHEL",
+     "author": "G_Godaka",
+     "date": "2026-08-30",
+     "likes": 1082,
+     "views": 66818,
+     "link": "https://x.com/G_Godaka/status/2093866347130483136",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2093862547070021632/pu/img/doF6IHWLI5Q9zwNA.jpg",
+      "video_url": "https://x.com/G_Godaka/status/2093866347130483136/video/1"
+     },
+     "game_ref": "Don't Look Away From The Colors",
+     "summary": "奇妙游戏发掘账号ごだか推荐的专注力游戏 Don't Look Away From The Colors：玩家必须持续注视画面中的「黑色」，视线移开数秒即告失败——评论称其游戏性类似「 irritation 棒（电流铁丝迷宫）」，紧张感造就魔性上瘾。",
+     "analysis": "「凝视不可移开」把 UI 最基础的注意力机制做成了核心约束：当玩家连眨眼都要计算（眨眼等于视线暂时离开？），游戏就把「看」这个动作本身变成了技巧。这类反直觉专注力玩具天然适配直播（主播憋红的脸即是节目效果）与短平快病毒循环，小程序/小游戏品类可低成本移植。",
+     "recommendation": "视线离开黑色数秒即输：让人不敢眨眼的专注力游戏（イライラ棒的凝视版）",
+     "featured": false
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Dandelion Void · 生存×cozy",
+     "tags": [
+      "太空",
+      "cozy"
+     ],
+     "title": "Dandelion Void：在时时想杀死你的太空船上打扫房间，把它布置成家",
+     "en_title": "Just because you're in the middle of space on a ship that wants to kill you at every turn doesn't mean you can't clean your room and turn it into a home.",
+     "full_text": "Just because you're in the middle of space on a ship that wants to kill you at every turn doesn't mean you can't clean your room and turn it into a home.  \n\nReclaim the overgrown rooms of The Pergola and turn them into a base. https://t.co/2q04AAtx6O",
+     "author": "DandelionVoid",
+     "date": "2026-08-29",
+     "likes": 5099,
+     "views": 231073,
+     "link": "https://x.com/DandelionVoid/status/2093732517379551651",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQ5unKXWoAIlH29.jpg"
+     },
+     "summary": "太空生存×家居装饰的反差组合 Dandelion Void：玩家身处一艘「每个转角都想杀死你」的失控飞船 The Pergola 上，收复被过度生长占据的房间、清理打扫并布置成家。",
+     "analysis": "",
+     "recommendation": "致命太空船上的打扫装修：生存×cozy 的反差组合（23 万浏览）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "えむ · 合作经营",
+     "tags": [
+      "酒店",
+      "合作"
+     ],
+     "title": "Hotel Manager: Together：多人合作经营酒店，从廉价小旅馆做到泳池健身房全套",
+     "en_title": "みんなでホテルを運営するゲーム『Hotel Manager: Together』",
+     "full_text": "みんなでホテルを運営するゲーム『Hotel Manager: Together』\n何もない安ホテルからスタートしてお金を稼いで新しい部屋を作ったりプールやジムなど豪華な設備を増やして立派なホテルを目指す。あの部屋掃除して！受付やって！など、友だち同士でワイワイ遊べる。配信向き https://t.co/4YIMLsNh5U",
+     "author": "emu_game2020",
+     "date": "2026-08-30",
+     "likes": 1379,
+     "views": 140381,
+     "link": "https://x.com/emu_game2020/status/2093896493199401067",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HQ55zY2akAA7Wa0.jpg"
+     },
+     "summary": "多人合作酒店经营游戏 Hotel Manager: Together：从一无所有的廉价旅馆起步，赚钱盖新房、添泳池健身房升级豪华酒店；「你去打扫那个房间！」「前台交给你了！」的分工吵闹.calc 直播向。",
+     "analysis": "",
+     "recommendation": "合作开酒店：从廉价旅馆到泳池健身房——「那间你去扫」的分工吵闹（14 万浏览）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "float · 第一人称寻物",
+     "tags": [
+      "找茬",
+      "实验游戏"
+     ],
+     "title": "第一人称找 Waldo：在走动着的巨量人群里找威利",
+     "en_title": "i made a game where you literally have to find Waldo in a giant crowd",
+     "full_text": "i made a game where you literally have to find Waldo in a giant crowd\n\nthe catch is you're actually walking around inside the crowd in first person, and everyone is moving\n\nplay it here:\nhttps://t.co/QUzLGuqEFe https://t.co/mInRw8sDh9",
+     "author": "notesbyfloat",
+     "date": "2026-08-30",
+     "likes": 522,
+     "views": 48174,
+     "link": "https://x.com/notesbyfloat/status/2093903701605831040",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093902960082227200/img/e0DE10izHeuVj6al.jpg",
+      "video_url": "https://x.com/notesbyfloat/status/2093903701605831040/video/1"
+     },
+     "summary": "开发者 float 的实验小游戏：经典「找 Waldo（威利）」谜题的第一人称化——你不是在俯视一幅插画，而是亲自走进那片巨大的人群里寻找，而且所有人都在走动。",
+     "analysis": "",
+     "recommendation": "第一人称找 Waldo：亲自走进会走动的人群里找威利",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Niche Gamer · 纸艺恐怖",
+     "tags": [
+      "纸艺",
+      "恐怖"
+     ],
+     "title": "Cutout：剪纸风格恐怖动作游戏公布，2027 年发售",
+     "en_title": "Papercraft horror action game Cutout was announced",
+     "full_text": "Papercraft horror action game Cutout was announced: https://t.co/onUCp6kXq6 https://t.co/ANOAXHl6jJ",
+     "author": "nichegamer",
+     "date": "2026-08-29",
+     "likes": 36,
+     "views": 7975,
+     "link": "https://x.com/nichegamer/status/2093757073490137189",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2093757050954092544/pu/img/4WG5xkUeyiOdyzMx.jpg",
+      "video_url": "https://x.com/nichegamer/status/2093757073490137189/video/1"
+     },
+     "summary": "纸艺（papercraft）风格的恐怖动作游戏 Cutout 公布，2027 年发售。",
+     "analysis": "",
+     "recommendation": "剪纸风恐怖动作 Cutout 公布：纸张撕扯的恐怖质感（2027）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "N3B · 暗黑ARPG",
+     "tags": [
+      "暗黑ARPG",
+      "赛季制"
+     ],
+     "title": "TARAE: The Unbound：东方暗黑 ARPG 公布，6 职业+4 人合作终局+赛季内容",
+     "en_title": "TARAE: The Unbound looks like one to watch. 🔥",
+     "full_text": "TARAE: The Unbound looks like one to watch. 🔥\n\nAn Eastern dark-fantasy ARPG featuring six classes, deep build customization, loot-heavy hack-and-slash combat and huge bosses.\n\nIt has a solo campaign, 4-player co-op endgame and seasonal content planned. Targeting 2027! https://t.co/cidkhmupag",
+     "author": "N3BST4R",
+     "date": "2026-08-30",
+     "likes": 213,
+     "views": 17381,
+     "link": "https://x.com/N3BST4R/status/2093880689720545439",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093880514650210304/img/T0yzPv9J7_e2oZ-Z.jpg",
+      "video_url": "https://x.com/N3BST4R/status/2093880689720545439/video/1"
+     },
+     "summary": "东方暗黑奇幻 ARPG TARAE: The Unbound：6 大职业、深度 build 定制、刷宝向砍杀与巨型 Boss；单人战役+4 人合作终局+赛季制内容，目标 2027。",
+     "analysis": "",
+     "recommendation": "东方暗黑 ARPG TARAE 公布：6 职业+4 人合作终局+赛季制（目标 2027）",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Bilal Khan · WebGPU",
+     "tags": [
+      "three.js",
+      "植被渲染"
+     ],
+     "title": "Three.js Grassworks：200+ 小时打磨的草地交互演示，候补前 50 名送完整代码+资产",
+     "en_title": "After 200+ hours of work, Three.js Grassworks is finally ready to try.",
+     "full_text": "After 200+ hours of work, Three.js Grassworks is finally ready to try.\n\nThe interactive demo is live:\nhttps://t.co/MImqQODiPx\n\nIt is launching soon. Join the waitlist.\n\nThe first 50 to join the waitlist and buy Grassworks get the full demo code+assets for free.\n\n#threejs #webgpu https://t.co/tLrc6G4Bsr",
+     "author": "Bk23544",
+     "date": "2026-08-28",
+     "likes": 174,
+     "views": 8932,
+     "link": "https://x.com/Bk23544/status/2093382978105966827",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093381359851257857/img/OMeEkW2xyokvZFAA.jpg",
+      "video_url": "https://x.com/Bk23544/status/2093382978110276427/video/1"
+     },
+     "summary": "开发者 Bilal Khan 耗时 200+ 小时打造的 three.js/WebGPU 草地交互演示 Grassworks 上线可玩：风吹草浪与角色穿行的物理反馈，即将商业化发布；候补名单前 50 名购买者可免费获得完整 demo 代码+资产。",
+     "analysis": "植被交互一直是实时渲染性价比最高的「高级感」来源：草的倒伏与回弹给任何场景注入生命感。Grassworks 把这套效果带进 WebGPU/浏览器端，意味着营销落地页、Web 小游戏乃至轻量元宇宙场景都能承载接近主机级的植被反馈——对品牌互动类项目的直接可用资产。",
+     "recommendation": "Three.js Grassworks：200+ 小时的 WebGPU 草地交互，前 50 名送完整代码",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**Valve 泄露日 + 苦行梗闭环日**\n12TB Valve 历史档案外流：2009 版 Portal 2 beta（涂色枪已被 mod 作者还原）、被砍 F-Stop、HL2:EP3 关联的 Weaponizer——社区考古狂欢中。苦行梗始祖 Needle In A Haystack Simulator 开 Steam 页：500 万根干草 8 人合作找 1 根针，Q4 发售。\n\n**行业动态**\nActivision 上门给外挂商送律师信并全程摄像发布（80+ 停终函/关停 30 商店）；gamescom 盗窃全景发酵（「唯一需要锁柜的展会」）；PS 数字所有权诉讼——Sony 需自证买家知道「买的不是所有权」。\n\n**AI 板块**\n花束变 QR 码 180 万浏览；Codex 生成像素画后自主质检+自己写检品工具；音效师 8 千赞宣言「低价手工包对抗 AI slop」。\n\n**新游看点**\n中世纪复古像素恐怖 False Oath；4 个 Igor 抬棺材送吸血鬼见爱人；不敢眨眼的「盯黑」专注游戏。\n\nPCU 速览：星战零号连队 77,889 连涨三日再创新高（69,046→74,834→77,889）。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
