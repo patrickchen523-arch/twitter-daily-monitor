@@ -13,7 +13,7 @@ if (!srcPath) { console.error('usage: node import_bilibili_rank.js <json> [date]
 const https = require('https');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const getJson = url => new Promise((resolve, reject) => {
-  https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } }, res => {
+  https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0', Referer: 'https://www.bilibili.com/' } }, res => {
     let d = '';
     res.on('data', c => d += c);
     res.on('end', () => { try { resolve(JSON.parse(d)); } catch (e) { reject(e); } });
@@ -119,6 +119,12 @@ function prefixGame(t) {
   return p.length >= 2 && isCleanTag(p) ? p : null;
 }
 
+// 导出封面校验: 仅接受协议相对地址(//i0.hdslb.com/...); 懒加载占位图(data:)等一律视为无效,后续按BV号补拉
+const validCover = c => {
+  const s = String(c || '');
+  return s.startsWith('//') ? 'https:' + s.replace(/@.*$/, '') : null;
+};
+
 function parseViews(state) {
   const m = String(state || '').match(/([\d.]+)\s*万/);
   if (m) return m[1] + '万';
@@ -209,13 +215,13 @@ for (const it of src.items) {
   }
   it.reportGame = game;
   if (!games[game]) {
-    games[game] = { name: game, rank: it.rank, count: 0, sub: it.title, thumb: it.cover ? 'https:' + it.cover.replace(/@.*$/, '') : null, link: `https://www.bilibili.com/video/${it.bvid}/` };
+    games[game] = { name: game, rank: it.rank, count: 0, sub: it.title, thumb: validCover(it.cover), link: `https://www.bilibili.com/video/${it.bvid}/` };
   }
   games[game].count++;
   if (it.rank < games[game].rank) {
     games[game].rank = it.rank;
     games[game].sub = it.title;
-    games[game].thumb = it.cover ? 'https:' + it.cover.replace(/@.*$/, '') : null;
+    games[game].thumb = validCover(it.cover);
     games[game].link = `https://www.bilibili.com/video/${it.bvid}/`;
   }
 }
@@ -237,7 +243,7 @@ for (const it of noCand) {
       rank: it.rank,
       count: 1,
       sub: it.title,
-      thumb: (dd && dd.success && dd.data && dd.data.header_image) || (it.cover ? 'https:' + it.cover.replace(/@.*$/, '') : null),
+      thumb: (dd && dd.success && dd.data && dd.data.header_image) || validCover(it.cover),
       link: `https://store.steampowered.com/app/${hit.id}/`
     };
     it.reportGame = hit.name;
@@ -322,6 +328,22 @@ function moveScoreOf(name, rank) {
 }
 
 const gameList = Object.values(games);
+// 缺封面补拉: 按链接BV号取真实封面; Steam链接条目用CDN header兜底
+for (const g of gameList) {
+  if (g.thumb) continue;
+  const bv = (String(g.link || '').match(/video\/(BV\w+)/) || [])[1];
+  if (bv) {
+    try {
+      const j = await getJson(`https://api.bilibili.com/x/web-interface/view?bvid=${bv}`);
+      if (j.code === 0 && j.data && j.data.pic) g.thumb = j.data.pic;
+    } catch (e) {}
+    await sleep(300);
+  } else {
+    const appid = (String(g.link || '').match(/store\.steampowered\.com\/app\/(\d+)/) || [])[1];
+    if (appid) g.thumb = `https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`;
+  }
+  if (!g.thumb) console.log('  仍无封面:', g.name, g.link);
+}
 for (const g of gameList) {
   const rel = await resolveReleaseDate(g.name);
   g.release = rel;
