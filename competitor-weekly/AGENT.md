@@ -147,6 +147,12 @@ index.html  ──fetch──▶  data/*.json  ──注入全局变量──▶
 - 右侧事件卡片 = 点选期的 `intelFor()`：`intel.json` 优先，否则 keywords/summary 兜底
 - 归档期（archive-periods）不进趋势轴；单文件导出版隐藏趋势入口，此模块只看线上站
 
+
+### 4.9 首页异动卡片文案口径（20260901 定版）
+- 异动游戏卡片**标题 = `intel.json[pid][gid].event`，正文 = `hero-event-summaries.json[pid][gid]`**（`renderHome()` → `heroEventSummary()` 精确匹配优先）
+- **人工稿「首页」区两行为唯一口径**：每个异动游戏在人工周报 docx 的「首页」小节有一行标题 + 一行副标题，原样入库，**禁止自拟**（20260824 期初版自拟被退回修正，commit `18c0ef0`）
+- `intel.conclusion` 供趋势图点选事件面板使用，可保留带数据指标的长版，与卡片正文允许不同
+
 ---
 
 ## 5. 验收清单（push 前逐项过）
