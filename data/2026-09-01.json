@@ -1,0 +1,594 @@
+{
+ "date": "2026-09-01",
+ "meta": {
+  "raw_count": 220,
+  "filtered_count": 186,
+  "selected_count": 12,
+  "crawl_time": "2026-09-01 10:30"
+ },
+ "lede": "teraleak 全景升级：不止 Valve——Mafia 2、GTA3、Spec Ops 等 Steam 第三方游戏原型全部卷入\n宝可梦×哈利波特 MMO Roco Kingdom 爆红：免费+「对战无属性差」，181 万浏览\n1666: Amsterdam 宣布「不再用任何 AI」——被玩家抓包、道歉、移除的完整闭环",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "teraleak 全景升级：不止 Valve——Mafia 2、GTA3、Spec Ops 等 Steam 第三方游戏原型全部卷入"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "宝可梦×哈利波特 MMO Roco Kingdom 爆红：免费+「对战无属性差」，181 万浏览"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Minimax H3 Max 做可交互叙事游戏：你控制所有决定，延迟近零\nfal 开源无限 AI 直播技术栈：Twitch 聊天集成+RTMP+无服务器\n陈成预警：推荐仓库先 check——恶意 host 远程执行已被 Claude Code 拦截"
+  },
+  {
+   "id": "industry",
+   "text": "teraleak 升级：Mafia 2/GTA3/Spec Ops/Civ V 第三方原型被 Hidden Palace 确认\n刺客信条之父 Désilets：1666: Amsterdam 已「完全移除」AI 且不再使用\ngamescom 2026：36.8 万访客、ONL 7,800 万浏览、1/4 演示公开使用 AI\n巫师4 已在全平台可运行：Cyberpunk 教训后的里程碑制度改革"
+  },
+  {
+   "id": "indie",
+   "text": "Roco Kingdom：魔法学院+400 怪物开放世界 MMO（无 Steam 页）\nPawned Souls：itch 免费的魂系国际象棋，卒子翻滚弹反杀王\nKnode：海上平台解电缆结，AI 陪伴 140 句吐槽\n迷宮神社：1-4 人和风随机迷宫逃脱"
+  },
+  {
+   "id": "tools",
+   "text": "Unreal Engine 5.8 发布：HMI 模板加速车机界面原型开发"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 交互式叙事",
+     "tags": [
+      "Minimax",
+      "AI游戏"
+     ],
+     "title": "Minimax H3 Max 做出了「你控制所有决定」的 AI 游戏：速度快到没有延迟",
+     "en_title": "i've been using minimax h3 max to make interactive games you control!",
+     "full_text": "i've been using minimax h3 max to make interactive games you control!\n\nall the decisions are up to you, and since the model is so fast there's basically no delays https://t.co/8eRayQ051A",
+     "author": "BlendiByl",
+     "date": "2026-08-31",
+     "likes": 1862,
+     "views": 154527,
+     "link": "https://x.com/BlendiByl/status/2094337649859523015",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094335547204603904/img/44Xuyx2-ASH6lvsE.jpg",
+      "video_url": "https://x.com/BlendiByl/status/2094337649859523015/video/1"
+     },
+     "summary": "开发者 Blendi（本周「油漆变干」游戏作者）展示了 Minimax H3 Max 的新玩法：用模型做可交互的叙事游戏——每次分支由玩家选择，模型即时生成后续。15 万浏览。这标志着 AI 生成游戏从「看客电影」进化到「可玩分支剧场」：每局不同、你控制所有节点。",
+     "analysis": "继昨天「生成速度超过观看」之后，H3 Max 又解锁了「生成速度超过决策」这个门槛：交互式叙事游戏的核心瓶颈从来不是写不写得好，而是反馈的速度——模型响应太慢就变成翻页书。现在延迟基本消除后，AI 剧场第一次接近文字冒险游戏的体感。对叙事游戏的冲击路径：不是替代叙事设计，而是把「分支成本」压到零——每局都是新的，玩家的选择变成真正的核心机制。",
+     "recommendation": "Minimax H3 Max 做交互叙事游戏：玩家控制所有决定，延迟近零",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Tony出海 · 技术传播",
+     "tags": [
+      "fal",
+      "开源直播"
+     ],
+     "title": "fal 开源了「无限 AI 直播」的完整技术栈：Twitch 聊天集成+RTMP+无服务器部署",
+     "en_title": "fal 直接开源了无限 AI 直播的技术！",
+     "full_text": "fal 直接开源了无限 AI 直播的技术！\n\n  https://t.co/FVDDw3p7Vz\n\n支持多种模型：可选择 LTX v1（本地 HuggingFace）或 LTX v2 Preview（fal. ai API）\n\n实时AI视频生成：采用LTX视频模型进行高质量视频合成\n\nTwitch聊天集成：监听聊天消息并生成相关视频内容\n\n实时 RTMP 流媒体：将生成的视频流直接传输到 Twitch 或其他 RTMP 端点\n\n实时仪表盘：监控生成指标、队列状态和性能\n\n文字叠加：在生成的视频上添加动态文字叠加层\n\n无服务器部署：在 FAL 的 GPU 基础设施上运行，支持自动扩展\n\n连续生成：无缝视频循环播放，并保留上下文",
+     "author": "iamtonyzhu",
+     "date": "2026-08-31",
+     "likes": 315,
+     "views": 51576,
+     "link": "https://x.com/iamtonyzhu/status/2094230700417544642",
+     "media": null,
+     "summary": "Tony出海 转发信息：fal 把整条「无限 AI 直播」的技术栈开源——支持 LTX v1（本地）或 LTX v2（fal API）、Twitch 聊天消息触发内容生成、RTMP 实时推流、无服务器自动扩展。昨天「Minimax H3 Max 上 Twitch 播无限电视」引爆全网，今天基建就被开源了——个人版本可以完整复现。",
+     "analysis": "「昨天的爆款今天就被工具化」是 AI 视频生态的标准节奏：上一代的 Closure/开源工具让任何人在一晚上撘出自己的生成电视频道——fal step 进广告位（自己的 API 计费）+贡献生态（模型选择任意）。对国内的团队启示：本次事件的最快入局者是「个人直播工作室」而不是平台方，「生成式 RTMP」可能会成为新一代内容管道的标准组件。",
+     "recommendation": "fal 开源无限 AI 直播技术栈：Twitch 聊天驱动+RTMP+无服务器",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "陈成 · 生态安全",
+     "tags": [
+      "AI安全",
+      "供应链"
+     ],
+     "title": "陈成预警「推荐仓库先 check」：恶意 host 远程脚本执行被 Claude Code 拦截",
+     "en_title": "这类仓库有毒，推荐之前还是 check 下吧。。还好不是自己执行的，cc 给拦下了。",
+     "full_text": "这类仓库有毒，推荐之前还是 check 下吧。。还好不是自己执行的，cc 给拦下了。发到群里，有同学反馈还有其他仓库用的是相同的 host 做远程脚本执行。\nhttps://t.co/fKTUrnJEXk\nhttps://t.co/PURks20loJ https://t.co/SlwJCpGUkn",
+     "author": "chenchengpro",
+     "date": "2026-08-31",
+     "likes": 6,
+     "views": 7320,
+     "link": "https://x.com/chenchengpro/status/2094440095319486921",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRDxsM6bsAAMvgU.jpg"
+     },
+     "summary": "陈成发推预警：有「有毒」的代码仓库使用相同 host 做远程脚本执行，他本人被 Claude Code 主动拦截（\"还好不是自己执行的，cc 给拦下了\"）；群友反馈已有多个仓库使用同一手法。这是「AI 编程助手作为安全防线」的具体案例——不是替代人工审查，而是在人工之前多了一层兜底。",
+     "analysis": "此前关于 AI 编程工具的供应链安全讨论（npm 蠕虫、文档藏毒）都是「AI 是受害者/攻击面」视角，本条展示了另一面：AI 助手主动拦截了恶意仓库的远程脚本执行。这标志着围绕 AI 编程工具的安全博弈进入「兼职白名单+实时拦截」阶段——对开发者的现实建议：托付 agent 执行仓前，先确认仓库有签名、有 stars 历史与官方源；agent 工具默认应当开启（Claude Code 的）确认模式。",
+     "recommendation": "「arians仓库有毒」实锤：恶意 host 远程执行，Claude Code 主动拦截",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "PC Gamer / Ars Technica · 泄露全景",
+     "tags": [
+      "Valve",
+      "teraleak"
+     ],
+     "title": "teraleak 全景升级：不止 Valve——Mafia 2、GTA3、Spec Ops 等第三方原型被确认「史上最大泄露」",
+     "en_title": "The Steam 'teraleak' extends far beyond Valve games, including prototypes of third-party titles like Mafia 2 and Grand Theft Auto 3",
+     "full_text": "The Steam 'teraleak' extends beyond Valve games, including  prototypes of titles like GTA 3 https://t.co/YAH4i4wERL",
+     "author": "pcgamer",
+     "date": "2026-08-31",
+     "likes": 19,
+     "views": 31148,
+     "link": "https://x.com/pcgamer/status/2094391882998841752",
+     "media": {
+      "type": "image",
+      "url": "https://cdn.mos.cms.futurecdn.net/maHWe2gWzyVaLgPUmdm7vd.jpg"
+     },
+     "game_ref": "Half-Life 3",
+     "summary": "12TB Steam 泄露事件规模被重新认识：Reddit 用户 RefreshingCapybara 整理的完整列表显示，泄露的 Steam「depot」（文件组内含游戏 build、预告、Soundtrack、Demo、Trial 等）覆盖 2003-2013 十年间的数百款游戏——不止 Valve 自家，还包括 Mafia 2、GTA 3、Spec Ops: The Line、文明 V 等第三方大作。游戏保存组织 Hidden Palace 已确认多个 depot 的 build 可下载。整理者评价：「不夸张地说，这可能是游戏史上最大的泄露」——比此前的任天堂 Gigaleak 规模更大、范围更广。",
+     "analysis": "事件的量级在两天内从「Valve 考古彩蛋」升级为「全行业历史档案库」——旧 Steam2 基础设施同时缓存了 Valve 与第三方游戏的所有 Depot 内容，等于十年 PC 游戏开发的「暗物质」被一次性公开。三个层面的影响值得持续跟踪：其一，游戏保存研究（Hidden Palace 已入场）将获得大量曾以为永远丢失的 build；其二，法务层面——泄露的是平台缓存还是厂商资产，责任边界谁担将成为先例；其三，与任天堂 Gigaleak 对照：Valve 的官方「不置评」策略反而给社区消化留出了空间。旧基础设施的缓存清理，从今天起从运维事项升级为安全事项。",
+     "recommendation": "teraleak 史上最大：12TB 覆盖十年第三方游戏 depot，Hidden Palace 已入场",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Half-Life: A Place in the West - Chapter 3",
+      "genre": "独立",
+      "developer": "Michael Pelletier / Ross Joseph Gardner",
+      "platforms": [
+       "PC",
+       "Mac",
+       "Linux"
+      ],
+      "price": "未公布",
+      "release_date": "未公布（HLX 项目传闻开发中）",
+      "steam_rating": "未上架",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【泄露规模】12TB Steam2 缓存（2003-2013）：数百款游戏 depot——Valve 自家 Portal 2 beta/F-Stop/L4D 之外，Mafia 2、GTA3、Spec Ops: The Line、文明 V 等第三方大作原型全在内。【已确认】Hidden Palace（游戏保存组织）已下载多个可用 build，「可能是游戏史上最大泄露」（整理者语）。【范围】泄露物含 build、预告、Soundtrack、Demo、Trial 等全部 depot 内容。",
+      "why_notable": "Gigaleak 之后新王：十年行业历史一次性公开，保存研究+法务边界双线展开",
+      "pcu": "未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "12TB Steam depot 泄露：史上最大游戏历史档案公开事件"
+     }
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "PC Gamer / GamesRadar · AI 撤退闭环",
+     "tags": [
+      "1666 Amsterdam",
+      "AI 撤退"
+     ],
+     "title": "刺客信条之父宣布 1666: Amsterdam「不再用任何 AI」——玩家抓包、道歉、移除的完整闭环",
+     "en_title": "1666: Amsterdam's developer says it 'won't be using AI anymore'",
+     "full_text": "1666: Amsterdam's developer says it 'won't be using AI anymore' https://t.co/CaYS3JmvDK",
+     "author": "pcgamer",
+     "date": "2026-08-31",
+     "likes": 56,
+     "views": 35424,
+     "link": "https://x.com/pcgamer/status/2094366951959392427",
+     "media": null,
+     "summary": "Patrice Désilets（刺客信条联合创始人、Panache Digital 创始人）接受 GamesRadar 采访，宣布 1666: Amsterdam「完全移除了 AI」——此前，这款公布时附带的免费序章被玩家抓包后 AI 生成资产（有 AI 风格的明显痕迹），团队道歉并承诺在早期访问前移除；随着上周 EA 上线，Désilets 正式表态：「我们确实用过一些 AI——主要在概念与预制作阶段——已经完全移除，未来不再使用。」",
+     "analysis": "这是「AI 资产争论」从社区舆论转化为商业决策的完整闭环样本：抓包→道歉→承诺移除→正式宣布不再用。值得注意的细节是 Désilets 的辩护逻辑——「用在概念与预制作阶段（整个流程中最具创造性的阶段）」的说法暗含「概念阶段 AI 不算「成品 AI」」的辩护，但这恰好是最有争议的板块：概念设计阶段的 AI 使用是否会被社区普遍接受，目前尚无共识。本周 صناعة 侧的两个对照：GTA6 用「无 genAI」做卖点、gamescom 1/4 演示公开使用 AI——三份样本说明 AI 在游戏业的舆论光谱已彻底分化：「完全不用」与「公开使用」都能活，中间的\"偷偷用\"风险最大。",
+     "recommendation": "1666: Amsterdam「不再用任何 AI」：抓包→道歉→移除→官宣的完整闭环样本",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Niche Gamer · 展会数据",
+     "tags": [
+      "gamescom",
+      "AI 影响力"
+     ],
+     "title": "gamescom 2026 数据：36.8 万访客、ONL 7,800 万浏览、同时——1/4 的 gamescom 演示公开使用 AI",
+     "en_title": "Gamescom 2026 draws 368,000 visitors, ONL passes 78 million views",
+     "full_text": "Gamescom 2026 draws 368,000 visitors, ONL passes 78 million views: https://t.co/z2RV7gmi3K https://t.co/r5OwNrWumt",
+     "author": "nichegamer",
+     "date": "2026-08-31",
+     "likes": 5,
+     "views": 1417,
+     "link": "https://x.com/nichegamer/status/2094426968288551065",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRDmOqkXQAA8ITG.jpg"
+     },
+     "summary": "gamescom 2026 官方统计：370,000 总访客（与去年基本持平）、ONL 直播累计 7,800 万浏览刷新纪录；与此同时 TheGamer 的统计指出，本次 gamescom 公布的游戏里，约四分之一公开声明使用了 AI（含「1666: Amsterdam」等争议案例，也含全部披露类型）。",
+     "analysis": "两个数字组合在一起是本周 AI 叙事的最好注脚：AI 内容不是「会不会出现在大作」的问题，而是已经存在于四分之一的公开作品中。配合 1666 的「完全移除」、GTA6 的「无 genAI」营销，以及玩家社区的持续监督，可以判断：未来半年内「notify 披露」将不再够用，「制作阶段边界」（概念/原型/成品三段论）会成为下轮争论的焦点——毕竟 Désilets 已经把「概念阶段用了」说出口了，这个会被放大检视。",
+     "recommendation": "gamescom 数据：36.8 万访客、ONL 7,800 万浏览、同时 1/4 演示在用 AI",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer / Game Developer · 技术管理",
+     "title": "巫师4 已「在全目标平台运行」：Cyberpunk 2077 灾难后的里程碑改革",
+     "en_title": "The Witcher 4 already runs on all target platforms - CD Projekt Red not taking any chances after Cyberpunk 2077",
+     "full_text": "The Witcher 4 already runs on all target platforms - CD Projekt Red not taking any chances after Cyberpunk 2077\n\nhttps://t.co/CoCnwT6PkS https://t.co/9qIp0AFhTC",
+     "author": "eurogamer",
+     "date": "2026-08-31",
+     "likes": 1940,
+     "views": 331465,
+     "link": "https://x.com/eurogamer/status/2094367184780927440",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRCvyTyaMAA3b5M.jpg"
+     },
+     "game_ref": "The Witcher 4",
+     "summary": "CDPR 联合 CEO Michal Nowakowski 透露：巫师4 目前已经在「全部目标平台」可运行——PC/PS5/Xbox Series X 启动即跑（2028 发售窗口前两年就做到）；这是 Cyberpunk 2077 灾难性主机首发后公司的流程改革成果：优化不再留到开发末期，里程碑检查点从「漏一两个后续再补」改成「漏一两个就要立刻补」。此前巫师 3 免费重制持续为系列引流，巫师4 主角 Ciri 的发型变革已完成。",
+     "analysis": "这条推文数据意外地高（33 万浏览），说明「我说到做到」的技术管理承诺本身就有传播力——在 Cyberpunk 2077 阴影五年后，把「主机端能跑」当成营销点而不是默认项，成了 CDPR 偿还债务的公开方式。对行业的参考价值在流程改变：优化前置+检查点硬检查，本质是把「末期优化隐喻」的敏捷开发教训制度化了。国内团队在 3A 立项时不妨参考：主机性能预算从美术 Demo 阶段就锁定，比移植阶段再降配便宜一个数量级。",
+     "recommendation": "巫师4 全平台已可运行：Cyberpunk 教训后的「优化前置」制度化，33 万浏览",
+     "featured": false,
+     "enrichment": {
+      "game_name": "The Witcher 4",
+      "genre": "开放世界 RPG",
+      "developer": "CD Projekt Red",
+      "platforms": [
+       "PC",
+       "PS5",
+       "Xbox Series X/S"
+      ],
+      "price": "未公布",
+      "release_date": "2028 年（目标）",
+      "steam_rating": "未上架",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【技术管理】巫师4 目前已在全部目标平台可运行（PC/PS5/Xbox Series）——Cyberpunk 2077 灾难首发后的流程改革：优化不再留到开发末期，里程碑检查点严格化（「漏一两个后续再补」改成「漏一两个立即补」）。co-CEO Nowakowski：「走进工作室现在就能启动运行」。【档期】目标 2028 年。",
+      "why_notable": "「主优化前置」制度化：巫师4 把主机可运行当成公开承诺",
+      "pcu": "未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "CDPR 下一代巫师主线，目标 2028"
+     }
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "スチまと · 现象级期望",
+     "tags": [
+      "MMO",
+      "怪物收集"
+     ],
+     "title": "Roco Kingdom：宝可梦×哈利波特 MMO——魔法学院+400 怪物+「对战无属性差」",
+     "en_title": "『ポケモン』×『ハリー・ポッター』のMMO？？？",
+     "full_text": "『ポケモン』×『ハリー・ポッター』のMMO？？？\n俺たちが本当にやりたかったオープンワールド、またしても海外が本気で作ってきやがった。\n\n魔法学院の生徒になって、400種類以上のモンスターをオープンワールドで捕まえまくる。基本無料なのに「対戦はレベル一律でステータス差なし」と公式が明言してて、課金で強くなる要素をぶっ壊しにきてる。友達と一緒にモンスターに相乗りして世界中を走り回れるの絶対楽しい。\n\n『Roco Kingdom』",
+     "author": "stmatomato",
+     "date": "2026-08-31",
+     "likes": 5189,
+     "genres": null,
+     "views": 1811466,
+     "link": "https://x.com/stmatomato/status/2094258372979929329",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094223623116685312/img/j3Xm1bcWOe2cJJkc.jpg",
+      "video_url": "https://x.com/stmatomato/status/2094258372979929329/video/1"
+     },
+     "game_ref": "Roco Kingdom",
+     "summary": "日本 Steam 大号スチまと推荐的《Roco Kingdom》被视为「宝可梦×哈利波特」的 MMO：魔法学院入学+400+ 怪物开放世界捕捉+多人同乘怪物旅行；官方明确「对战等级一律、无属性差」——免费游戏却把「氪金变强」的路径直接砸了。推文获得 181 万浏览、5,189 赞。（目前无 Steam 页，官方渠道未明，开发方疑似为 AUTOMATON 曾报道的中国厂商 KIWI 交互娱乐——前作 Roco Kingdom 手游已上线。）",
+     "analysis": " fantasies两个 configure wish fulfilment 叠加——宝可梦的收集幻想 + 魔法学校的成长幻想——再乘以 MMO 的多人共享，这是「梦想游戏」的最大公倍数；更重要的是「对战无属性差」的商业设计：在数值付费被玩家深恶痛绝的时段，公然砸掉「氪金变强」的路径，反而获得了玩家的巨额信任超前投资（181 万浏览不算愿望单本身，但是 Steam 页未来上线的最强蓄水池）。对国内出海产品的启示：在宝可梦+魔法 MMO 这个品类拥挤区内，一句「对战公平」可能比全部预告片更有效。",
+     "recommendation": "宝可梦×哈利波特 MMO：Roco Kingdom 400 怪物+「对战无属性差」181 万浏览",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Roco Kingdom",
+      "genre": "怪物收集 MMO / 开放世界",
+      "developer": "待确认（疑似中国厂商手游团队）",
+      "platforms": [
+       "PC/移动（渠道未定）"
+      ],
+      "price": "免费游玩（道具付费）",
+      "release_date": "待公布",
+      "steam_rating": "页面未上",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【核心卖点】魔法学院入学+400+ 怪物开放世界捕捉+多人同乘怪物周游世界：「宝可梦×哈利波特 MMO」。【划时代设计】官方声明「对战一律同等级、无属性差」——免费游戏但公开砸掉「氪金变强」路径。【传播】日本 Steam 大号推 181 万浏览，愿望单蓄水池形成。【状态】目前无公开 Steam 页；前作有手游版本，本次为更大型化产品（疑似 AUTOMATON 曾报道的中国团队）。",
+      "why_notable": "「对战无属性差」的免费宣言：品类拥挤区里信任资产的逆向投资",
+      "pcu": "页面未上",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「怪物收集」×魔法学院 MMO，免费+公平对战宣言"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "電ファミ / AlphaBetaGamer · 免费魂系",
+     "tags": [
+      "免费",
+      "国际象棋魂"
+     ],
+     "title": "Pawned Souls：itch 免费的「魂系国际象棋」—— 卒子翻滚弹反，一路杀到王",
+     "en_title": "【無料】ポーンとなって王を討つ“ソウルライクチェス”『Pawned Souls』",
+     "full_text": "【無料】ポーンとなって王を討つ“ソウルライクチェス”『Pawned Souls』が「itch io」にて無料公開中。チェス盤上を単騎駆け\nhttps://t.co/cWpCVPpbcZ\n\nビショップもクイーンもキングも、その手の獲物を突き立てる。ローリングもパリィも盾受けも利用して王となれ https://t.co/IUqFeV5Xs7",
+     "author": "denfaminicogame",
+     "date": "2026-08-31",
+     "likes": 3462,
+     "views": 404718,
+     "link": "https://x.com/denfaminicogame/status/2094287023708504270",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2094286995342385152/pu/img/DHV0-vEyJxCOTyTk.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2094287023708504270/video/1"
+     },
+     "game_ref": "Pawned Souls",
+     "summary": "itch 免费公开（随意付费）的「魂系国际象棋」Pawned Souls：作为最弱棋子「卒」，在高難度主視角棋盘上前进——翻滚、弹反、盾牌实装全都用上；目标是刺杀各种高阶棋子，最终提升到「王」。電ファミ推荐 40 万浏览+AlphaBeta Gamer（13 万浏览）同日覆盖，成为「游戏设计反差」型传播样本。",
+     "analysis": "「卒」+「魂系」两个身份的化学反应非常完整：一是机制层——以最弱棋子对抗所有高阶棋子的挑战类型天然适配魂系「越级杀敌」；二是叙事层——卒过河才能变王/不再回头，与魂系「不计代价的前进」形成完美隐喻。免费+ask 的分发选择（itch 而非 Steam）说明作者目前更想要传播而非商业，这个阶段的 Steam 页应该是在铺垫中。对开发者启示：把「小游戏规则」嫁接到「大机制label」上，反差本身就是完整的credentials。",
+     "recommendation": "魂系国际象棋：作为卒翻滚弹反杀向王座，itch 免费开放（53 万浏览）",
+     "featured": true
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "電ファミ · 物理解谜",
+     "tags": [
+      "解谜",
+      "AI 陪伴"
+     ],
+     "title": "Knode: Untangle & Connect：海上平台解电缆结的物理谜题——AI 伴随你 140 句吐槽",
+     "en_title": "こんがらがったケーブルの結び目をほどくパズルゲーム『Knode』9月26日にリリース。",
+     "full_text": "こんがらがったケーブルの結び目をほどくパズルゲーム『Knode』9月26日にリリース。イライラしてきたら、海へ放り投げることもできる\nhttps://t.co/VyPqLjp2V9\n\nケーブルを引っ張ったり結んだり、ゲーム中はプレイヤーの行動に反応し、AIコンパニオンが140種類以上のユニークなセリフを返してくれる https://t.co/G8NsWzqse7",
+     "author": "denfaminicogame",
+     "date": "2026-08-31",
+     "likes": 685,
+     "views": 148346,
+     "link": "https://x.com/denfaminicogame/status/2094257147928535073",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2094257123454783488/pu/img/Rb-fX29499lTPOMb.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2094257147928535073/video/1"
+     },
+     "game_ref": "Knode: Untangle & Connect",
+     "summary": "BusFactorOne 开发的物理谜题游戏《Knode: Untangle & Connect》定档 9/26：海上平台上解开打结的电缆并接回正确机架；玩家可以拉、扔、绑、互相缠绕电缆；烦躁了可以把整根电缆扔进海里——此外，AI 伴随角色会对玩家行动给出 140 种以上的吐槽，是首个「解谜+AI 唠叨」组合。中文界面/字幕支持。",
+     "analysis": "「把 infuriating cable 结」做成解谜游戏是本条传播的核弹：每个用过数据线/耳机线的人都能一秒共情——把生活痛点做成游戏机制，比任何美术风格都更有传播力。而「AI 陪伴 140 句吐槽」是一个聪明的功能点：不是用 AI 生成内容，而是用 AI 生成「陪骂」——把解谜失败的情绪转化为笑料。对产品设计的启示：AI 在 gameplay 中的位置未必是「生成」，也可以是「陪伴吐槽」这种情绪型角色。",
+     "recommendation": "海上平台解电缆结物理谜题：AI 伴随 140 句吐槽，Knode 9/26 发售",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Knode: Untangle & Connect",
+      "genre": "休闲 / 独立 / 模拟",
+      "developer": "BusFactorOne",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年 9 月 25 日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4959570",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4959570/ca9e7cdcdb3e0602588a9825c6c0381fb1e1814a/header.jpg?t=1787774131",
+      "youtube_video": null,
+      "description": "【核心玩法】海上平台上解开打结的电缆并接回正确机架：完整物理模拟，电缆可拉、可扔、可再绑定、可互缠。【特色】AI 伴随角色 140 种以上吐槽台词（回应玩家行动）；烦躁时可以直接把电缆扔进海里。【内容量】单人战役 4-5 小时+升级商店道具；发售后更新内置关卡编辑器+Steam Workshop 联动。【档期】2026/9/26 Steam 发售，日中字幕支持。",
+      "why_notable": "生活共性痛点×AI 唠叨陪伴：解谜品类传播的新配方",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「物理解谜」×电缆结+AI 吐槽，9/26 发售"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "ミドリヤマ · 和风恐怖",
+     "tags": [
+      "和风恐怖",
+      "合作"
+     ],
+     "title": "Don't Drop The Cake：蛋糕搬运恐怖游戏「掉落即死」，今日发售（¥25.81）",
+     "en_title": "「ケーキを落とせばあなたは死ぬ」ケーキ運び系ホラーゲーム『Don't Drop The Cake』本日配信開始！",
+     "full_text": "「ケーキを落とせばあなたは死ぬ」\n\n🎂ケーキ運び系ホラーゲーム\n『Don't Drop The Cake』本日配信開始！\n\n手元を狂わせるホラー演出！\n立ちふさがる異形の怪物！\nバランス力が試されるアトラクション！\nなんだかいい感じのストーリー！\nあります。\nよろしくお願いします。",
+     "author": "Midoriyama104",
+     "date": "2026-08-30",
+     "likes": 1076,
+     "views": 94682,
+     "link": "https://x.com/Midoriyama104/status/2094193668307767356",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094193643007741952/img/FYwrX31BPbNphj1H.jpg",
+      "video_url": "https://x.com/Midoriyama104/status/2094193668307767356/video/1"
+     },
+     "game_ref": "Don't Drop The Cake",
+     "summary": "「你掉蛋糕就会死」的蛋糕搬运系恐怖游戏《Don't Drop The Cake》Steam 发售（¥25.81）：操控混乱的恐怖演出干扰手部平衡、异形怪物拦路、考验平衡力的「运输挑战」；开发者自称有「还算是不错的故事」。 mỗi一位玩家都将面临——是否能比蛋糕活得更久。",
+     "analysis": "「搬运+恐怖」的组合本周再一次被验证：继 0828 的 We Are So Cooked（4 人运尸）后，「一个人运蛋糕」成了单人恐怖的变体——机制重叠（软体物理+平衡）但情绪完全不同：搬尸是荒诞喜剧，搬蛋糕是「小心翼翼的焦虑」。作为当天发售的微型作品，卖点摘得很清楚：「掉落即死」的一句话规则+恐怖演出的外部干扰，属于「一个机制讲完」的品类。",
+     "recommendation": "蛋糕掉落即死的搬运恐怖：Don't Drop The Cake 今日发售 ¥25.81",
+     "featured": false,
+     "enrichment": {
+      "game_name": "别让蛋糕掉下来：Don't Drop The Cake",
+      "genre": "动作 / 冒险 / 独立",
+      "developer": "Midoriyama",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥ 25.81",
+      "release_date": "已发售 · 2026 年 8 月 30 日",
+      "steam_rating": "已发售",
+      "steam_url": "https://store.steampowered.com/app/3160640",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3160640/80ce7593f681f2160de60edfb3bdac1275d9d7ef/header.jpg?t=1788127773",
+      "youtube_video": null,
+      "description": "【核心机制】蛋糕掉落 = 死亡：以「小心翼翼的搬运」为核心恐怖压力源；手部被恐怖演出干扰+异形拦路。【结构】单人微型作品，考验平衡力+路线规划；叙事自承「还算是不错的故事」。【价格】¥25.81 微型定价。",
+      "why_notable": "「掉落即死」的一句话规则：单人搬运恐怖的最小可行版本",
+      "pcu": "小型新游",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「搬运恐怖」×单人不落蛋糕，8/30 发售"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "float · 第一人称寻物",
+     "tags": [
+      "找茬",
+      "实验游戏"
+     ],
+     "title": "第一人称找 Waldo：在走动人群里找威利——不要俯视，要走进去",
+     "en_title": "i made a game where you literally have to find Waldo in a giant crowd",
+     "full_text": "i made a game where you literally have to find Waldo in a giant crowd\n\nthe catch is you're actually walking around inside the crowd in first person, and everyone is moving\n\nplay it here:\nhttps://t.co/QUzLGuqEFe https://t.co/mInRw8sDh9",
+     "author": "notesbyfloat",
+     "date": "2026-08-30",
+     "likes": 2182,
+     "views": 228116,
+     "link": "https://x.com/notesbyfloat/status/2093903701605831040",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093902960082227200/img/e0DE10izHeuVj6al.jpg",
+      "video_url": "https://x.com/notesbyfloat/status/2093903701605831040/video/1"
+     },
+     "summary": "float 的实验小游戏：经典的「找 Waldo」谜题第一人称化——你就在人群中走动，所有人都在移动，目标隐藏在几万行人之间。22 万浏览。",
+     "analysis": "",
+     "recommendation": "第一人称找 Waldo：人群都是会移动的，你也在走（22 万浏览）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Indie Freaks · 库存管理",
+     "tags": [
+      "整理",
+      "Sim"
+     ],
+     "title": "Game Shelver 99：整理我的 Steam 库存+用霰弹枪击退海盗——11/17 发售",
+     "en_title": "Steamライブラリが火を噴くぜ！",
+     "full_text": "Steamライブラリが火を噋くぜ！たぶん皆が求めていた魔導図書館ライク『Game Shelver 99: I must organize my Steam Library and defend it against pirates with a shotgun』\n\n散乱した所持Steamゲームの山を分類し、正しい棚へ片付けよう。整理に専念できる平和モードあり。協力プレイ対応。 https://t.co/PlWb9LeprP",
+     "author": "Indie_FreaksJP",
+     "date": "2026-08-31",
+     "likes": 382,
+     "views": 71088,
+     "link": "https://x.com/Indie_FreaksJP/status/2094258901588058189",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094256508221726720/img/5CPTrtly0zeb7RyL.jpg",
+      "video_url": "https://x.com/Indie_FreaksJP/status/2094258901588058189/video/1"
+     },
+     "summary": "整理 Steam 库存+霰弹枪抵御盗版者的模拟游戏：把成堆的 Steam 游戏分类上架到正确书架——名为 Game Shelver 99，11/17 发售；支持「和平模式」纯整理与合作模式。",
+     "analysis": "",
+     "recommendation": "整理 Steam 库存+霰弹枪击退海盗：Game Shelver 99（11/17 发售）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Crunio · 技术演示",
+     "tags": [
+      "Unity",
+      "Compute Shader"
+     ],
+     "title": "Unity 5 天做出的「200 万颗宝石分拣」游戏破 50 万播放：看完规则只需一眼",
+     "en_title": "開発者(Prudent-Ice1415氏)がUnityで5日間で制作した、200万個の宝石を仕分けるゲームが50万回再生を突破",
+     "full_text": "開発者(Prudent-Ice1415氏)がUnityで5日間で制作した、200万個の宝石を仕分けるゲームが50万回再生を突破💎\n\nCompute Shaderで大量の宝石を処理し、低ポリゴン化で描画負荷を軽減。技術力に加え「一目でルールが伝わる」設計が拡散につながりました。 https://t.co/Vx1AjvYuID",
+     "author": "Botan_cr",
+     "date": "2026-08-30",
+     "likes": 192,
+     "views": 43911,
+     "link": "https://x.com/Botan_cr/status/2094152963220750481",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094152939380342784/img/V6zc2J5wIVldkpY7.jpg",
+      "video_url": "https://x.com/Botan_cr/status/2094152963220750481/video/1"
+     },
+     "summary": "Unity 开发者 5 天做出的「200 万颗宝石分拣游戏」播放量破 50 万：Compute Shader 处理大批量宝石+低多边形减少渲染负担；日媒 Crunio 分析其爆红归因——「规则一眼能懂」的设计比技术更有传播力。",
+     "analysis": "",
+     "recommendation": "200 万颗宝石分拣 5 天完成：Compute Shader 技术力+一眼懂规则（50 万播放）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "えば · 现实题材",
+     "tags": [
+      "棒球",
+      "现实"
+     ],
+     "title": "球ひろい Simulator 今日发售：高中棒球部的「捡球」体验——曾在愿望单 1 件时登上日媒头条",
+     "en_title": "🎉🎉🎉本日発売🎉🎉🎉 部活特有の上下関係や抑圧的な環境の中、球ひろいをさせられる高校野球シミュレーションゲーム",
+     "full_text": "🎉🎉🎉本日発売🎉🎉🎉\n\n部活特有の上下関係や抑圧的な環境の中、球ひろいをさせられる高校野球シミュレーションゲーム\n\n『球ひろいSimulator』\n本日8/31に発売しました！！！！\n\n⚾頑張って作りました！！！！\n⚾「おめでとう」をください！！！！ https://t.co/pH7h29BAXX",
+     "author": "ebachan_manga",
+     "date": "2026-08-30",
+     "likes": 579,
+     "views": 112903,
+     "link": "https://x.com/ebachan_manga/status/2094077690445983832",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094071890734374912/img/AouwXG9ywn6VM3hv.jpg",
+      "video_url": "https://x.com/ebachan_manga/status/2094077690445983832/video/1"
+     },
+     "summary": "高中棒球部「捡球」模拟器《球ひろい Simulator》8/31 正式发售——在部活的上下级压制中、被命令捡球的真实体验；开发者此前因「愿望单只有 1 件」上过日媒新闻（后来追加了捷克语支持再次登上头条），今天终于卖出第一步。",
+     "analysis": "",
+     "recommendation": "高中棒球部「捡球」模拟器：现实压迫×捡球的日式苦行（今日发售）",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "ごだか · 恐怖打扫",
+     "tags": [
+      "恐怖",
+      "打扫"
+     ],
+     "title": "Woo Woo：天亮前把馆内打扫干净，不然就是死——父亲回来之前",
+     "en_title": "命をかけたお家掃除ゲーム『Woo Woo』",
+     "full_text": "命をかけたお家掃除ゲーム\n『Woo Woo』\n\n深夜までに掃除ができなければ死。\nクモのようなゴミや家族の生霊、地下に潜む巨大ムカデなどクリーチャーだらけの館。父親が帰ってくるまでに、命令に通り家をピカピカにするホラーアクションゲーム。 https://t.co/hBBF64bY5G",
+     "author": "G_Godaka",
+     "date": "2026-08-31",
+     "likes": 192,
+     "views": 19041,
+     "link": "https://x.com/G_Godaka/status/2094379692052959490",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2094375949014122496/pu/img/EODCXdvr__8DppXn.jpg",
+      "video_url": "https://x.com/G_Godaka/status/2094379692052959490/video/1"
+     },
+     "summary": "「以命相搏的打扫游戏」Woo Woo：深夜前完不成打扫就是死——蜘蛛般的垃圾、家族的生霊、地下潜伏的巨型蜈蚣，在父亲回来之前把家擦得干干净净的恐怖动作。开发者 inomi，即将宣布发售日。",
+     "analysis": "",
+     "recommendation": "天亮前打扫干净不然就死：Woo Woo 恐怖打扫游戏（父亲回来前）",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unreal Engine · 官方发布",
+     "tags": [
+      "UE5.8",
+      "HMI"
+     ],
+     "title": "Unreal Engine 5.8 发布：内置 HMI 模板，车机/座舱界面原型开发被大幅加速",
+     "en_title": "Unreal Engine 5.8 released with an HMI Template",
+     "full_text": "Unreal Engine 5.8 released with an HMI Template that provides a ready-to-use foundation for exploring, prototyping, and accelerating HMI development🚗\n\nJoin us for our webinar on September 16 at 12PM ET to walk through what's inside the template, how the workflow fits real production and take part in our live Q&A with guest experts from @Qualcomm Technologies, Inc: https://t.co/6ibKGd1FvZ",
+     "author": "UnrealEngine",
+     "date": "2026-08-31",
+     "likes": 24,
+     "views": 4463,
+     "link": "https://x.com/UnrealEngine/status/2094455509911032296",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRD_6WzboAAvbZw.jpg"
+     },
+     "summary": "Unreal Engine 5.8 正式发布，带来 HMI（人机交互界面）模板：面向车机/座舱/HMI 原型开发的「开箱即用」基础——模板内含车辆 HUD/仪表盘构建工作流，配套高通技术专家的 9/16 网络研讨会。",
+     "analysis": "UE 深入 HMS（车内人机界面）这个细分赛道信号很有意思：传统车机 UI 开发使用 Qt/Android，而 UE 用实时渲染+物理光照的「3D 座舱」差异化——现代电动车营销里的「沉浸式座舱」视觉正在成为卖点，车厂（尤其新势力）对游戏引擎人才的需求会继续增长。对国内团队：UE HMI 模板+高通合作意味着「游戏技术转汽车」的通道被官方铺好，车机 3D 化的外包需求值得关注。",
+     "recommendation": "UE5.8 发布内置 HMI 模板：车机 3D 座舱原型被官方铺路",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**teraleak 完全体日 + 宝可梦×哈利波特日**\n12TB Steam 泄露规模重新认识：不止 Valve——Mafia 2、GTA3、Spec Ops、文明 V 等十年第三方游戏 depot 全在内，Hidden Palace 确认多个 build 可下载，「可能是史上最大泄露」。Roco Kingdom「宝可梦×哈利波特 MMO」181 万浏览。\n\n**AI 用与不用双样本**\n刺客信条之父 Désilets 宣布 1666: Amsterdam「完全移除 AI、今后不再用」——抓包→道歉→移除的完整闭环；gamescom 数据：36.8 万访客、ONL 7,800 万浏览，同时 1/4 演示公开用了 AI。\n\n**巫师4 信心日**\nCDPR：巫师4 已在「全目标平台运行」——Cyberpunk 灾难后把「主机优化」前置制度化的成果，33 万浏览。\n\n**新游看点**\n魂系国际象棋 Pawned Souls（itch 免费/53 万浏览）；Knode 电缆解谜+AI 吐槽 9/26 发售；蛋糕掉落即死。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
