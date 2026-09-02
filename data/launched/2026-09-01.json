@@ -3,6 +3,21 @@
  "note": "2026-09-01 期",
  "picks": [
   {
+   "name": "Echo",
+   "cover": "https://pbs.twimg.com/amplify_video_thumb/2092060005830725632/img/I-cUSOf3Br4Y82tW.jpg",
+   "hook": "推特浏览 231.2万",
+   "source": "推特热游",
+   "link": "https://store.steampowered.com/app/551770/",
+   "bg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/551770/ss_de3d7446a0aad4b265adb56d612e04044fc4621c.1920x1080.jpg?t=1747988640"
+  },
+  {
+   "name": "Roco Kingdom",
+   "cover": "https://pbs.twimg.com/amplify_video_thumb/2094223623116685312/img/j3Xm1bcWOe2cJJkc.jpg",
+   "hook": "推特浏览 181.1万",
+   "source": "推特热游",
+   "link": "https://x.com/stmatomato/status/2094258372979929329"
+  },
+  {
    "name": "星球大战 零号连队™",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2075800/2c7d5dad080c4888faaa03c4a955136c50f5bfae/header.jpg?t=1788256323",
    "hook": "SteamDB 关注日增 +18,306",
@@ -24,22 +39,6 @@
    "hook": "B站最高10名",
    "source": "B站热门",
    "link": "https://www.bilibili.com/video/BV1dm4S6qEmh/"
-  },
-  {
-   "name": "Bodycam",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2406770/d6396b02a8c5ca6ba5cf37358996da0cba1f72f4/header_schinese.jpg?t=1787522517",
-   "hook": "SteamDB 关注日增 +14,608",
-   "source": "SteamDB趋势",
-   "link": "https://store.steampowered.com/app/2406770/",
-   "bg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2406770/f7be47fedf22ab9f445a4211001e6b61a4486543/ss_f7be47fedf22ab9f445a4211001e6b61a4486543.1920x1080.jpg?t=1787522517"
-  },
-  {
-   "name": "《巫师 3：狂猎 - 完全版》",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/6c618713956506400ce0d0062392b0e0b64e031b/header_alt_assets_4_schinese.jpg?t=1787688132",
-   "hook": "SteamDB 关注日增 +12,973 + 好评率 95.41%",
-   "source": "SteamDB趋势",
-   "link": "https://store.steampowered.com/app/292030/",
-   "bg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_5710298af2318afd9aa72449ef29ac4a2ef64d8e.1920x1080.jpg?t=1787688132"
   }
  ],
  "boards": [
@@ -705,7 +704,108 @@
    "title": "推特热游",
    "title_en": "TWITTER",
    "demo": false,
-   "items": [],
+   "items": [
+    {
+     "name": "Echo",
+     "metric": "231.2万",
+     "sub": "08-26 · 2017 老游戏 Echo 宫殿菜单翻红：231 万浏览 9.4 万赞——场景化 UI 的超长尾红利",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2092060005830725632/img/I-cUSOf3Br4Y82tW.jpg",
+     "link": "https://store.steampowered.com/app/551770/",
+     "release": "2017-09-19",
+     "day": "2026-08-26",
+     "idx": 2
+    },
+    {
+     "name": "Roco Kingdom",
+     "metric": "181.1万",
+     "sub": "09-01 · 宝可梦×哈利波特 MMO：Roco Kingdom 400 怪物+「对战无属性差」181 万浏览",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2094223623116685312/img/j3Xm1bcWOe2cJJkc.jpg",
+     "link": "https://x.com/stmatomato/status/2094258372979929329",
+     "release": null,
+     "day": "2026-09-01",
+     "idx": 0
+    },
+    {
+     "name": "Pogo With Friends",
+     "metric": "94.1万",
+     "sub": "08-27 · 4 人绑一根绳波戈登山：一人掉全掉的友尽设计——94 万浏览，半价 265 円",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3434550/7cdb0a65ce85e6c073ebb4766e60b2a2b5ada237/header.jpg?t=1782406919",
+     "link": "https://store.steampowered.com/app/3434550",
+     "release": null,
+     "day": "2026-08-27",
+     "idx": 1
+    },
+    {
+     "name": "Pawned Souls",
+     "metric": "40.5万",
+     "sub": "09-01 · 魂系国际象棋：作为卒翻滚弹反杀向王座，itch 免费开放（53 万浏览）",
+     "thumb": "https://pbs.twimg.com/ext_tw_video_thumb/2094286995342385152/pu/img/DHV0-vEyJxCOTyTk.jpg",
+     "link": "https://x.com/denfaminicogame/status/2094287023708504270",
+     "release": null,
+     "day": "2026-09-01",
+     "idx": 1
+    },
+    {
+     "name": "SEMICOLON INSPECTOR",
+     "metric": "29.5万",
+     "sub": "08-28 · 187,421 行纸上代码找缺失分号：苦行梗回光返照——日媒吐槽「大家太爱苦行了」",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2092754255744729088/img/kuCZL7hA4RMWSITY.jpg",
+     "link": "https://x.com/dotpixel3d/status/2092794227747115142",
+     "release": null,
+     "day": "2026-08-28",
+     "idx": 1
+    },
+    {
+     "name": "Alpha Response",
+     "metric": "23.6万",
+     "sub": "08-29 · CS 之父新作 Alpha Response：4 人合作光枪射击，巨大开放关卡+非线性任务",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2089250/8b91697042403d7c2836edb75cc8fe39ff51a7fb/header.jpg?t=1767849896",
+     "link": "https://store.steampowered.com/app/2089250",
+     "release": null,
+     "day": "2026-08-29",
+     "idx": 1
+    },
+    {
+     "name": "Wheat from the Chaff",
+     "metric": "22.2万",
+     "sub": "08-26 · Wheat from the Chaff 正式化：1000 万颗麦子逐颗分拣，开发者暂停其他项目全力投入",
+     "thumb": "https://pbs.twimg.com/ext_tw_video_thumb/2092026422454112256/pu/img/wQRZoQ6JaOvB91M9.jpg",
+     "link": "https://x.com/denfaminicogame/status/2092026459959513142",
+     "release": null,
+     "day": "2026-08-26",
+     "idx": 0
+    },
+    {
+     "name": "ROLLA",
+     "metric": "16.2万",
+     "sub": "08-26 · ROLLA 定档 10/1：外星肉块吞城 + 新闻直播画面——Katamari×Carrion×B级片三合一",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3975830/4ae9f10a35cd0d99f4ec04bea79b34c3431721fc/header.jpg?t=1787598309",
+     "link": "https://store.steampowered.com/app/3975830/",
+     "release": "2026-10-01",
+     "day": "2026-08-26",
+     "idx": 1
+    },
+    {
+     "name": "Wordless Forest",
+     "metric": "14万",
+     "sub": "08-27 · 一人拍电影+做游戏+森林真实生存：全实拍无台词选择型惊悚，4 结局",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3978240/08eb60ff49ea804e40f693b5a3183cf3df39cb2a/header.jpg?t=1787776193",
+     "link": "https://store.steampowered.com/app/3978240",
+     "release": null,
+     "day": "2026-08-27",
+     "idx": 2
+    },
+    {
+     "name": "Don't Drop The Cake",
+     "metric": "9.5万",
+     "sub": "09-01 · 蛋糕掉落即死的搬运恐怖：Don't Drop The Cake 今日发售 ¥25.81",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3160640/80ce7593f681f2160de60edfb3bdac1275d9d7ef/header.jpg?t=1788127773",
+     "link": "https://store.steampowered.com/app/3160640",
+     "release": null,
+     "day": "2026-09-01",
+     "idx": 3
+    }
+   ],
    "more": {
     "label": "查看新游推文",
     "tab": "indie"
