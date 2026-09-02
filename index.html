@@ -2361,11 +2361,11 @@ function renderContent(targetId = 'content') {
           mediaHtml = `<div class="media"><a class="media-source-link" href="${item.link}" target="_blank" rel="noopener" aria-label="查看原推文"><img src="${item.media.url}" alt="" loading="lazy" referrerpolicy="no-referrer"></a></div>`;
         }
       }
-      const tagsHtml = item.tags.map(t => `<span class="badge">${t}</span>`).join('');
+      const tagsHtml = (item.tags || []).map(t => `<span class="badge">${t}</span>`).join('');
       const hasEnrichment = !!item.enrichment;
       const cardClass = (hasEnrichment ? 'card card-enriched' : 'card') + (item.unselected ? ' card-unselected' : '');
 
-      const searchText = (item.title + ' ' + item.summary + ' ' + item.analysis + ' ' + item.en_title + ' ' + item.tags.join(' ')).toLowerCase().replace(/"/g, '&quot;');
+      const searchText = (item.title + ' ' + item.summary + ' ' + item.analysis + ' ' + item.en_title + ' ' + (item.tags || []).join(' ')).toLowerCase().replace(/"/g, '&quot;');
 
       html += `
         <article class="${cardClass}" id="card-${sec.id}-${itemIdx}" style="border-left-color:${borderColor}" data-section="${sec.id}" data-searchable="${searchText}">
