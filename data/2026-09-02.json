@@ -1,0 +1,578 @@
+{
+ "date": "2026-09-02",
+ "meta": {
+  "raw_count": 235,
+  "filtered_count": 181,
+  "selected_count": 12,
+  "crawl_time": "2026-09-02 10:30"
+ },
+ "lede": "星战零号连队「爆款背后」：开发商 Bit Reactor 被曝发售前无薪休假最多 80% 员工\n粉笔画 FPS Chalk Warfare 公布：画消音=无声、画手斧=破门，愿望单 2.5 万起步",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "星战零号连队「爆款背后」：开发商 Bit Reactor 被曝发售前无薪休假最多 80% 员工"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "粉笔画 FPS Chalk Warfare 公布：画消音=无声、画手斧=破门，愿望单 2.5 万起步"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "「血量必须比对手低才能赢」：反向数值设计 220 万浏览\nClaude 拒绝后 GLM 上场：Black Ops 2 地图被 AI 搬进浏览器\n5 周做出完整 3D 钓鱼游戏：AI 工作流从「反复挪灯」进化到「持锁重排」"
+  },
+  {
+   "id": "industry",
+   "text": "Bit Reactor 发售前休假 80% 员工：前员工怒斥「高管发 10/10 感谢帖时隐瞒团队无薪」\n巫师4 实体版：盘由 Sony 定，但 CDPR 承诺「feelies」实体周边\nNVIDIA 官方口径：DLSS 5 AI 滤镜性能损失 50-60%\nOrbitals 获 Polygon「It Takes Two 后最强合作、Astro Bot 后最强平台跳跃」"
+  },
+  {
+   "id": "indie",
+   "text": "Chalk Warfare 粉笔画 FPS：画什么用什么（愿望单 2.5 万起）\nCave Expedition 真实洞穴探险队开发：4 人匍匐过缝+实地录音\nWorld Sweeper：把整个地球做成 1 亿格扫雷场\nけん玉100人 10 人联机：一人失手全员 game over"
+  },
+  {
+   "id": "tools",
+   "text": "Unity 6.6 发布：Fast Enter Play Mode 默认开启，为 Unity 7 铺路"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 机制创新",
+     "tags": [
+      "回合制",
+      "反向数值"
+     ],
+     "title": "「你必须血量更低才能赢」：反向数值设计的回合制原型 220 万浏览",
+     "en_title": "Round based game where you have to contantly maintain lower hp than your opponent to win rounds, heavy wip",
+     "full_text": "Round based game where you have to contantly maintain lower hp than your opponent to win rounds, heavy wip\n#indiegame #gamedev https://t.co/LnTcnjWj3c",
+     "author": "atomicwastlandd",
+     "date": "2026-08-31",
+     "likes": 10098,
+     "views": 2197434,
+     "link": "https://x.com/atomicwastlandd/status/2094509370990104591",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094503951735386112/img/bqrOm-yPwPnzQABJ.jpg",
+      "video_url": "https://x.com/atomicwastlandd/status/2094509370990104591/video/1"
+     },
+     "summary": "开发者 ediN 的回合制原型：「每轮你必须持续保持比对手更低的 HP 才能获胜」——治愈与伤害的价值被完全反转，所有常规数值直觉被倒置。一条 wip 视频拿下 220 万浏览、1 万赞。",
+     "analysis": "反向数值设计是「机制一句话讲清」品类的天花板样本：所有玩家都懂 HP 越低越危险的常识，把胜负条件翻转后，每一回合都变成一场心理博弈——「我这轮要不要回血？回了会不会反而输？」。与苦行家族（油漆变干、分拣宝石）同属「反直觉规则」传播谱系，但本条的深度在于规则会衍生出完整的策略空间，而不只是猎奇。wip 阶段就有 220 万浏览，正式化后的愿望单转化值得跟踪。",
+     "recommendation": "血量比对手低才能赢：反向数值回合制原型 220 万浏览——机制反转的传播天花板",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Luckey Faraday · AI 实测",
+     "tags": [
+      "AI移植",
+      "Claude"
+     ],
+     "title": "Claude of Duty：Claude 拒绝后 GLM 接手，Black Ops 2 地图被 AI 搬进浏览器",
+     "en_title": "Black Ops 2 is now playable in the browser thanks to AI. Claude of Duty: Vibe Slops II is live.",
+     "full_text": "Black Ops 2 is now playable in the browser thanks to AI.\n\nClaude of Duty: Vibe Slops II is live.\n\nThis started as an experiment to see if AI could port the actual Black Ops 2 Hijacked map to the browser.\n\nClaude initially refused to work on it, so I started with GLM-5.3, GLM-5.3 Flash and, I believe, Qwen3.8-Max.\n\nI had the original game installed on my PC, so the agents spent the first ~12 hours trying to reverse engineer the game files while also scouring the internet for map positions, assets...",
+     "author": "luckeyfaraday",
+     "date": "2026-08-31",
+     "likes": 102,
+     "views": 18290,
+     "link": "https://x.com/luckeyfaraday/status/2094247426131374133",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094247163089788928/img/HCGepCLPzAZFZpMS.jpg",
+      "video_url": "https://x.com/luckeyfaraday/status/2094247426131374133/video/1"
+     },
+     "summary": "开发者 Luckey Faraday 的实验「Claude of Duty: Vibe Slops II」：让 AI 把 Black Ops 2 的 Hijacked 地图移植到浏览器。Claude 拒绝参与（版权判断），开发者改用 GLM-5.3/GLM-5.3 Flash/Qwen3.8-Max 完成——agent 们花了约 12 小时逆向游戏文件并全网搜罗地图资产位置。",
+     "analysis": "这条实测的价值在「模型合规差异」的首次公开对照：Claude 因版权判断拒绝、GLM/Qwen 接手完成——同一个任务在不同模型上的「合规性格」差异清晰可见。技术上 12 小时逆向一张多人地图的工作量本身也说明 agent 长任务能力的进展。对行业更深的注脚：当「AI 复刻老游戏」的工具链完全平民化后，IP 持有方的执法对象将从「Mod 社区」扩散到「vibe coding 实验」——灰区行为的技术门槛降到了一个周末。",
+     "recommendation": "Claude 拒绝后 GLM 接手：Black Ops 2 地图 12 小时被 AI 搬进浏览器",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Hakimi Eiqbal · 工作流进化",
+     "tags": [
+      "AI编程",
+      "Blender MCP"
+     ],
+     "title": "5 周做出完整 3D 钓鱼游戏：AI 工作流从「反复挪灯」进化到「持锁重排」",
+     "en_title": "5 weeks ago, this fishing game didn't exist. Now it has a full 3D world, dynamic water, day/night cycles...",
+     "full_text": "5 weeks ago, this fishing game didn’t exist.\n\nNow it has a full 3D world, dynamic water, day/night cycles, fishing mechanics, rarity systems, custom UI and even its own in-game editors.\n\nAlmost everything is being built with AI. Claude handles most of the game, Claude + Blender MCP handles 3D work, and ChatGPT helps with image generation.\n\nThe interesting part is that the workflow is changing too.\n\nInstead of asking AI 20 times to move a lighthouse or UI element into the right position, he had C...",
+     "author": "hakimieiqbal",
+     "date": "2026-09-01",
+     "likes": 68,
+     "views": 3887,
+     "link": "https://x.com/hakimieiqbal/status/2094761187082641463",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094658518934556672/img/Q5zNCfjoK2jQGsWr.jpg",
+      "video_url": "https://x.com/hakimieiqbal/status/2094761187082641463/video/1"
+     },
+     "summary": "此前报道过的零基础开发者 Hakimi 交付 5 周里程碑：完整 3D 世界、动态水体、昼夜循环、钓鱼机制、稀有度系统、自定义 UI 与内置编辑器——Claude 主体+Blender MCP 建模+ChatGPT 图像。更关键的是工作流进化：不再「反复让 AI 挪一个灯塔」，而是让 AI 持锁整体重排场景。",
+     "analysis": "5 周前「Unity MCP+Claude 一周做出游戏」的同一开发者，现在的工作流已经质变：从「指令式反复修正」到「把重排权交给 AI」——这是人机分工的第二次跃迁（第一次是把写码交出去，第二次是把「空间判断」也交出去）。对独立开发者的实操参考：MCP 工具链的组合（引擎 API+Blender+图像）已能覆盖 2D/3D 独立游戏的完整管线，「一个人+订阅费」的产能上限每月都在刷新。",
+     "recommendation": "5 周 AI 钓鱼游戏交付：工作流从「反复挪灯」进化到「AI 持锁重排」",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "PC Gamer / Game File · 劳资调查",
+     "title": "星战零号连队「爆款背后」：Bit Reactor 发售前无薪休假最多 80% 员工",
+     "en_title": "The studio behind Star Wars Zero Company, which is currently a Steam bestseller, has reportedly furloughed the majority of its staff",
+     "full_text": "The studio behind Star Wars Zero Company has reportedly furloughed the majority of its staff https://t.co/KsAIPkjclb",
+     "author": "pcgamer",
+     "date": "2026-09-01",
+     "likes": 196,
+     "views": 83246,
+     "link": "https://x.com/pcgamer/status/2094643805303853078",
+     "media": {
+      "type": "image",
+      "url": "https://cdn.mos.cms.futurecdn.net/wktiJav7qEhfcxgNMejoFR.jpg"
+     },
+     "game_ref": "STAR WARS Zero Company",
+     "summary": "Game File 调查揭出零号连队爆款的阴影面：开发商 Bit Reactor 在发售前对最多 80% 员工实施 furlough（技术性在职、休假期间零薪资），官方代表确认并称原因是「对发售表现的不确定性」，强调是 Bit Reactor 自身决定、与 EA/迪士尼无关，并表示「希望带全薪召回」。前员工 Zachariah Scott 在 LinkedIn 控诉：「看着 EA、迪士尼高管和 Bit Reactor 高层连发 10/10 感谢帖盛赞游戏成功，却隐瞒团队数周前就被休假——把游戏送上 Steam 热销榜的同时让团队失业且无法参与任何分成，这恶心但太常见了；如果早些坦白，故事会完全不同。」Polygon/RPS/NicheGamer 多家跟进。",
+     "analysis": "本周最刺眼的行业样本：媒体 7 家满分、PCU 连涨、Steam 热销的「成功故事」与「80% 员工无薪休假」同时为真。两件事值得拆开看：其一，「furlough 期待召回」是发行商转移项目风险的合法工具——把「游戏可能卖不动」的财务不确定性转嫁给最没有议价权的执行层；其二，前员工揭发的不是休假本身而是「隐瞒+庆祝」的错位——品牌公关（高分好评）与人力现实（无薪等待）的时间差，正是 Game File 这类调查报道的价值所在。对国内团队的对照意义：爆款叙事与团队待遇的错位是全球化问题，「发售前 furlough」这个动作值得加入项目风险清单。",
+     "recommendation": "星战零号连队爆款背后：Bit Reactor 被曝发售前无薪休假 80% 员工",
+     "featured": true,
+     "enrichment": {
+      "game_name": "STAR WARS Zero Company",
+      "genre": "战术回合制策略",
+      "developer": "Bit Reactor（EA 发行）",
+      "platforms": [
+       "PC",
+       "PS5",
+       "Xbox Series X/S"
+      ],
+      "price": "¥198",
+      "release_date": "已发售 · 2026年8月27日",
+      "steam_rating": "多半好评（77%）",
+      "steam_url": "https://store.steampowered.com/app/2075800/STAR_WARS_Zero_Company/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2075800/2c7d5dad080c4888faaa03c4a955136c50f5bfae/header.jpg?t=1788256323",
+      "youtube_video": null,
+      "description": "【劳资争议】Game File 调查：开发商 Bit Reactor 发售前对最多 80% 员工实施 furlough（在职无薪休假），官方归因「发售表现不确定性」，自称与 EA/迪士尼无关、期望带全薪召回。前员工 Zachariah Scott 公开控诉「高管发 10/10 庆祝帖时隐瞒团队无薪」。【商业面】游戏当前 Steam 热销，媒体高分（GameSpot/Polygon/Eurogamer 多家好评）、PCU 发售周连涨（69,046→77,889）。【数据对照】爆款销量与团队待遇的错位成为行业焦点案例。",
+      "why_notable": "「爆款+无薪休假」同框：furlough 作为发行商风险转嫁工具的标本案例",
+      "pcu": "47,869（2026-09-02）",
+      "current_players": 41353,
+      "estimated_sales": "Steam 热销榜在榜",
+      "gi_summary": "「战术回合制」×星战 IP，发售周爆款+劳资争议并行"
+     }
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer / GameSpot · 实体第三路",
+     "tags": [
+      "CDPR",
+      "实体发行"
+     ],
+     "title": "巫师4 实体版：光盘由 Sony 说了算，但 CDPR 承诺「feelies」实体周边一定有",
+     "en_title": "CD Projekt Red powerless regarding PS5 disc edition of The Witcher 4, but promises a game box with \"feelies\" whatever happens",
+     "full_text": "CD Projekt Red powerless regarding PS5 disc edition of The Witcher 4, but promises a game box with \"feelies\" whatever happens https://t.co/nIpyMOaQVC https://t.co/yprSFtZhUy",
+     "author": "eurogamer",
+     "date": "2026-09-01",
+     "likes": 19,
+     "views": 8732,
+     "link": "https://x.com/eurogamer/status/2094740002018107853",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRIC6tjXsAAqyoz.jpg"
+     },
+     "game_ref": "The Witcher 4",
+     "summary": "巫师4 的 PS5 实体版形态（光盘 or 兑换码）CDPR 自己「无权决定」——取决于 Sony 2028 全数字化政策的落地方式；但 CDPR 承诺：无论何种形态，都会提供带「feelies」（复古实体赠品：地图/信件/小物件）的游戏盒。「玩家会拿到一些摸得着的东西」。此前 GameSpot 报道标题「可能没光盘，但有 feelies」——实体发行的第三条路径。",
+     "analysis": "在 Sony 2028 停盘与 PS 数字所有权诉讼的背景下，CDPR 给出了发行商层面的第三种答案：盒子和周边可以脱离光盘独立存在。「feelies」是 80 年代 Infocom 文字冒险的复古传统（游戏盒里塞真实道具），把「拥有感」从介质转移到周边——这可能是数字时代实体溢价的新形态：盒装 = 收藏品而非安装介质。对国内实体发行（WeGame 盒装、Switch 亚洲版）的参考：当「盘内是码」成为行业默认，「盒子里有什么」的差异化价值会上升。",
+     "recommendation": "巫师4 实体版第三条路：光盘 Sony 说了算，但「feelies」周边盒一定有",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "PC Gamer / RPS · 硬件代价",
+     "tags": [
+      "NVIDIA",
+      "DLSS 5"
+     ],
+     "title": "NVIDIA 官方承认：DLSS 5 AI 滤镜性能损失 50-60%——「我们在这里做什么」",
+     "en_title": "Nvidia says DLSS 5 comes with a 50-60% performance hit, which makes me wonder what we're doing here",
+     "full_text": "Nvidia says DLSS 5 comes with a 50-60% performance hit, which makes me wonder what we're doing here https://t.co/VslKQuVLZl",
+     "author": "pcgamer",
+     "date": "2026-09-01",
+     "likes": 294,
+     "views": 41663,
+     "link": "https://x.com/pcgamer/status/2094773480344756250",
+     "media": null,
+     "summary": "NVIDIA 官方确认 DLSS 5 的 AI 风格化滤镜（外泄后被称为「Claude Strife」的美颜滤镜）附带 50-60% 的性能损失——DLSS 技术本以「免费帧数」为卖点，其 AI 美化功能却要吃掉一半以上的帧率。PC Gamer 毒舌点评：「这让我想知道我们在这里做什么」。RPS 同日报道 DLSS 5 本周随 NBA 2K27 正式发布，AI 美颜滤镜开始在篮球运动员身上工作。",
+     "analysis": "50-60% 的代价数据让 DLSS 5 的定位彻底尴尬：DLSS 的存在意义是「用 AI 换帧数」，而 DLSS 5 的核心新功能是「用帧数换 AI 美颜」——同一个品牌下两个目标相反的功能。社区此前对外泄版的 40% 损失测算还偏保守。这条新闻与 1666 Amsterdam「弃用 AI」、gamescom 1/4 用 AI 构成完整的行业光谱：技术公司把 AI 美化做成卖点，而游戏业从厂商到玩家正在为「要不要这个 AI」公开站队。",
+     "recommendation": "DLSS 5 官方口径：AI 滤镜性能损失 50-60%——「用帧数换美颜」的品牌悖论",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Polygon / Eurogamer · 媒体口碑",
+     "tags": [
+      "Orbitals",
+      "合作游戏"
+     ],
+     "title": "Orbitals 获 Polygon 双冠评价：「It Takes Two 后最强合作、Astro Bot 后最强平台跳跃」",
+     "en_title": "Orbitals is the Best Co-op Game Since It Takes Two and the Best Platformer Since Astro Bot",
+     "full_text": "Orbitals is the Best Co-op Game Since It Takes Two and the Best Platformer Since Astro Bot https://t.co/yCOmTjSkVm https://t.co/xAByBaMrd6",
+     "author": "polygon",
+     "date": "2026-09-01",
+     "likes": 2007,
+     "views": 195598,
+     "link": "https://x.com/Polygon/status/2094719475614413209",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRHwQzjXwAAhm1I.jpg"
+     },
+     "game_ref": "Orbitals",
+     "summary": "Polygon 给出年度级评价：Orbitals 是「It Takes Two 以来最佳合作游戏、Astro Bot 以来最佳平台跳跃游戏」（19.6 万浏览）。Eurogamer 评测则相对克制：「动漫风格之外，Orbitals 对 It Takes Two 之后的合作文艺复兴贡献有限，但切到日语配音就是完美的相处时光」——两个口径的差异本身就是有趣的样本。",
+     "analysis": "「后 It Takes Two 时代」的合作游戏标杆之争正式开打：Hazelight 的双人合作模式（强制双人+机制切换）成为品类高压线，Orbitals 用「动漫皮+平台跳跃+日语声优」的组合拿到了半个身位。Eurogamer 的保留意见（玩法贡献有限、日语加分）反而更接近合作品类的真相：这类游戏的口碑一半来自机制、一半来自「和朋友在一起的时光」。值得跟踪其发售后的双人组队数据。",
+     "recommendation": "Orbitals 双冠评价：It Takes Two 后最强合作+Astro Bot 后最强平台跳跃",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "ゲムのすけ / 電ファミ · 粉笔画 FPS",
+     "tags": [
+      "FPS",
+      "手绘"
+     ],
+     "title": "Chalk Warfare：用粉笔画出来的枪战斗——画消音器就能消音，画手斧就能破门",
+     "en_title": "チョークで描いた「僕が考えた最強の銃」で戦うラクガキFPS『Chalk Warfare』発表！",
+     "full_text": "チョークで描いた「僕が考えた最強の銃」で戦うラクガキFPS\n『Chalk Warfare』発表！\n\nステルス重視？サイレンサーを描き足せ！\nロングレンジ？スコープを追加だ！\n\nすでにウィッシュリスト2.5万獲得\nこれが銃社会の『ラクガキ王国』だ\nhttps://t.co/rx77Bm5XpV https://t.co/wYIXVi0lzr",
+     "author": "dotpixel3d",
+     "date": "2026-09-01",
+     "likes": 12433,
+     "views": 816683,
+     "link": "https://x.com/dotpixel3d/status/2094606171151782273",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094443959745703936/img/cCvhJQVcXFp76EvR.jpg",
+      "video_url": "https://x.com/dotpixel3d/status/2094606171151782273/video/1"
+     },
+     "game_ref": "Chalk Warfare",
+     "summary": "SOKRISPYMEDIA（14 年前 YouTube 爆红「Chalk Warfare」系列原作者）正式游戏化：用粉笔在墙上画枪就能用——画消音器=射击无声、画瞄准镜=远程性能提升、画手斧=破门、画手雷=爆破。日区双媒体报道（ゲムのすけ 81.7 万+電ファミ 39.8 万），愿望单已 2.5 万起。「小学生黑板上画的『最强之枪』」概念完整落地。",
+     "analysis": "「画什么有什么」的粉笔概念在 2012 年的 YouTube 短片里已经验证过传播力，正式游戏化的关键设计是「画=改装」：涂鸦不再是装饰而是 loadout——每个玩家动手画的那一刻就是 content creation。愿望单 2.5 万只是双日媒报道的起点，这个概念在直播场景（主播现场画枪）的二次传播潜力更大。SOKRISPYMEDIA 从 YouTube 特效团队转型游戏开发的路径，也是「内容 IP→互动化」的正面样本。",
+     "recommendation": "粉笔画 FPS Chalk Warfare：画消音=无声、画手斧=破门——愿望单 2.5 万起",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Chalk Warfare",
+      "genre": "动作 / 独立",
+      "developer": "SOKRISPYMEDIA, LLC",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "即将推出",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2935800",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2935800/5a18173b37e91ba5f3c5aab02c3107ba889dfe94/header.jpg?t=1785501651",
+      "youtube_video": null,
+      "description": "【核心机制】粉笔画枪战斗：画消音器=无声射击、画瞄准镜=远程强化、画手斧=破门、画手雷=爆破——「画什么有什么」的涂鸦 loadout。【出处】SOKRISPYMEDIA 的 2012 年 YouTube 同名爆红短片（特效真人短剧）正式游戏化。【数据】日区双媒体报道（合计 120 万+浏览），愿望单 2.5 万起步。【状态】Steam 页已开，发售日未定。",
+      "why_notable": "涂鸦即改装：YouTube 特效 IP 游戏化+直播二次传播双潜力",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "愿望单 25,000+",
+      "gi_summary": "「FPS」×粉笔涂鸦 loadout，愿望单 2.5 万起"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "電ファミ / IndieFreaks · 真实探险",
+     "tags": [
+      "合作",
+      "洞穴"
+     ],
+     "title": "Cave Expedition：真实洞窟探险家开发的 4 人合作探洞——环境音全部实地采集",
+     "en_title": "最大4人で超リアルな「洞窟探検」をするゲーム『Cave Expedition』が面白そう。",
+     "full_text": "最大4人で超リアルな「洞窟探検」をするゲーム『Cave Expedition』が面白そう。人ひとり分の狭いスキマを、勇気をもって這い進む\nhttps://t.co/EzQt6E4ZWE\n\n浸水した通路や先の見えない巨大な穴など、未知へのワクワクと極限の緊張で感情がおかしくなる。環境音はすべて実際の洞窟で収録する徹底っぷり https://t.co/RFGRx1xAPT",
+     "author": "denfaminicogame",
+     "date": "2026-09-01",
+     "likes": 6485,
+     "views": 549829,
+     "link": "https://x.com/denfaminicogame/status/2094627462907105749",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2094627435606421504/pu/img/1QMlyXTi1wJA0QSl.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2094627462907105749/video/1"
+     },
+     "game_ref": "Cave Expedition",
+     "summary": "Moonmilk Games（真实洞窟探险队成员组成）开发的探洞模拟 Cave Expedition：1-4 人合作，绳降、涉过积水通道、匍匐爬过一人宽的缝隙；未知带来的兴奋与极限紧张「让情绪失常」；环境音全部在实际洞窟录制。電ファミ 55 万+IndieFreaks 10.4 万双报道。",
+     "analysis": "「开发组=真实探险家」是这个项目最硬的差异化：洞穴探险（caving/caving crawling）是极限运动里传播最少但「密室恐惧」最强的品类——一人宽的岩缝、黑暗、积水，天然是恐怖游戏素材但用「真实」而非超自然来实现。地图上「环境音实地采集」的细节是品质信号。合作机制下「谁先爬」的社交压力（朋友把朋友推进窄缝）大概率成为直播名场面。",
+     "recommendation": "真实探险队开发 4 人探洞：匍匐过一人宽岩缝+实地录音（65 万浏览）",
+     "featured": true,
+     "enrichment": {
+      "game_name": "洞穴探险",
+      "genre": "冒险 / 独立 / 模拟",
+      "developer": "Moonmilk Games",
+      "platforms": [
+       "PC",
+       "Mac",
+       "Linux"
+      ],
+      "price": "未公布",
+      "release_date": "即将宣布",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4372950",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4372950/2902e527b8f177e4c0d00eca490e1e1991eea86f/header.jpg?t=1788185300",
+      "youtube_video": null,
+      "description": "【核心体验】1-4 人合作真实探洞：绳降、涉水通道、匍匐通过一人宽岩缝——「未知带来的兴奋与极限紧张」。【真实性】开发组为真实洞窟探险家团队；环境音全部在实际洞窟录制。【传播】電ファミ 55 万+IndieFreaks 10.4 万双报道。【状态】Steam 页（中文「洞穴探险」）已上线。",
+      "why_notable": "探险家开发的探洞模拟：密室恐惧的「真实系」路线",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「合作探险」×真实洞穴，探险家团队开发"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "AUTOMATON · 规模极限",
+     "tags": [
+      "扫雷",
+      "苦行"
+     ],
+     "title": "World Sweeper：把整个地球做成 1 亿格扫雷场——免费开放，但「太大了」",
+     "en_title": "「1億タイル」マインスイーパー『World Sweeper』無料公開。",
+     "full_text": "「1億タイル」マインスイーパー『World Sweeper』無料公開。地球丸ごと地雷原、便利スキルもあるけど……デカすぎる\nhttps://t.co/IgAZwPaEUX https://t.co/AWM9ZG9Sbw",
+     "author": "AUTOMATONJapan",
+     "date": "2026-09-01",
+     "likes": 1703,
+     "views": 168148,
+     "link": "https://x.com/AUTOMATONJapan/status/2094717551859445960",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRHucEEbsAA8Aqe.jpg"
+     },
+     "game_ref": "World Sweeper",
+     "summary": "把整个地球变成扫雷盘的 World Sweeper 免费公开：约 1 亿格 tile 覆盖全球地图，虽有便利技能辅助，但 AUTOMATON 的吐槽是「太大了」——按传统扫雷的速度，通关需要按格点按数亿次。日区 16.8 万浏览。",
+     "analysis": "苦行梗家族的「规模极限」之作：从 500 万干草找针、200 万宝石分拣到 1 亿格扫雷，这条品类的内卷方向已经从「机制荒诞」升级到「数量级荒诞」——谁的数字更绝望谁赢。值得注意的微妙变化：World Sweeper 选择免费+网页端（无 Steam 页），说明这一波作者已经吸取了「先备页」的教训，把传播前置、商业后置。当「数字不够大」成为新内卷维度时，这个品类的饱和点可能比预期更近。",
+     "recommendation": "1 亿格扫雷扫遍地球：World Sweeper 免费开放——苦行梗进入数量级内卷",
+     "featured": false
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "4Gamer / AUTOMATON · 连带责任",
+     "tags": [
+      "苦行",
+      "多人"
+     ],
+     "title": "けん玉100人 Simulator 追加 10 人联机：百人连剑玉，一人失手全员 game over",
+     "en_title": "「けん玉100人シミュレーター」，最大10人のオンラインマルチプレイを実装。",
+     "full_text": "「けん玉100人シミュレーター」，最大10人のオンラインマルチプレイを実装。1人でも失敗すれば全員ゲームオーバー\nhttps://t.co/jklBWefNtt\n\n2人から最大10人で「100人連続成功」に挑戦。誰か1人の失敗が即ゲームオーバーにつながる https://t.co/cLbgQn93CW",
+     "author": "4GamerNews",
+     "date": "2026-09-01",
+     "likes": 570,
+     "views": 146982,
+     "link": "https://x.com/4GamerNews/status/2094646736983912798",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2094646639168495616/pu/img/7C7vPwYz7Zw54CjM.jpg",
+      "video_url": "https://x.com/4GamerNews/status/2094646736983912798/video/1"
+     },
+     "game_ref": "The Kendama Challenge: 100 Players",
+     "summary": "剑玉百人连续挑战《けん玉100人シミュレーター》追加最大 10 人在线联机：2-10 人组队挑战「100 人连续成功」——任何一人失手即全员 game over。AUTOMATON 总结为「连带责任 100 连剑玉」：物理极限挑战×团队连坐的苦行合作。",
+     "analysis": "苦行品类加入多人维度后的化学反应：「一人失误全员重开」把个人苦行升级成社交压力容器——你不再是自己手抖，而是「害朋友白玩两小时」。这个设计在 Pico Park/Chained Together 等连带责任合作游戏里被反复验证是直播名场面机器。剑玉（けん玉）作为日本传统玩具的「现实手感还原」也是本地化题材的选择：苦行梗正在从「荒诞数字」向「真实技艺」迁移。",
+     "recommendation": "百人连剑玉 10 人联机：一人失手全员 game over——苦行×连带责任",
+     "featured": false,
+     "enrichment": {
+      "game_name": "The Kendama Challenge: 100 Players",
+      "genre": "休闲 / 独立 / 模拟",
+      "developer": "WINGLAY",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥ 22.00",
+      "release_date": "已发售 · 2026 年 5 月 13 日",
+      "steam_rating": "已发售",
+      "steam_url": "https://store.steampowered.com/app/4293130",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4293130/692dc6de7b633d213668926390f736c27fccb989/header.jpg?t=1788242121",
+      "youtube_video": null,
+      "description": "【核心玩法】剑玉百人连续挑战：物理拟真剑玉，连续 100 人成功为目标。【新内容】9 月追加 2-10 人在线联机——一人失手全员 game over 的「连带责任」模式。【题材】日本传统玩具剑玉的现实手感还原，苦行×社交压力的直播友好设计。",
+      "why_notable": "苦行梗 multiplayer 化：连带责任把个人手抖变成社交事故",
+      "pcu": "小型长销",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「苦行合作」×剑玉百连，10 人联机追加"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "tweakEra · 井底恐怖",
+     "tags": [
+      "恐怖",
+      "密室"
+     ],
+     "title": "THE WELL IS NOT EMPTY：困在井底，唯一的朋友是一把锈勺子——9/7 发售",
+     "en_title": "You're stuck at the bottom of a well and your only friend is a rusty spoon.",
+     "full_text": "WOAH!! This horror game will be out in 7 days!\n\nYou're stuck at the bottom of a well and your only friend is a rusty spoon.\n\nWishlist THE WELL IS NOT EMPTY! https://t.co/tmezg682tR",
+     "author": "tweak_era",
+     "date": "2026-08-31",
+     "likes": 631,
+     "views": 37198,
+     "link": "https://x.com/tweak_era/status/2094518625361383529",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094518441097166848/img/KmZG4S4eKONL0Xeq.jpg",
+      "video_url": "https://x.com/tweak_era/status/2094518625361383529/video/1"
+     },
+     "summary": "「你困在井底，唯一的朋友是一把生锈的勺子」——THE WELL IS NOT EMPTY 9/7 发售。",
+     "analysis": "",
+     "recommendation": "井底+锈勺子的恐怖：THE WELL IS NOT EMPTY 9/7 发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Games Showcase · 恐怖策略",
+     "tags": [
+      "猜拳",
+      "多恐怖"
+     ],
+     "title": "Rock, Paper, Severed：每输一局猜拳就断一根手指的多恐怖策略",
+     "en_title": "\"Rock, Paper, Severed\" is a multiplayer horror strategy game where every round of Rock Paper Scissors you lose costs you a finger.",
+     "full_text": "\"Rock, Paper, Severed\" is a multiplayer horror strategy game where every round of Rock Paper Scissors you lose costs you a finger. https://t.co/OMWPsDBQNH",
+     "author": "gwrldgames",
+     "date": "2026-08-31",
+     "likes": 62,
+     "views": 9174,
+     "link": "https://x.com/gwrldgames/status/2094515235097076218",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094514917877694464/img/v2hmMvQwVebwumHY.jpg",
+      "video_url": "https://x.com/gwrldgames/status/2094515235097076218/video/1"
+     },
+     "summary": "多人恐怖策略 Rock, Paper, Severed：每输一局石头剪刀布就失去一根手指——童年游戏的代价版本。",
+     "analysis": "",
+     "recommendation": "猜拳输了断手指：Rock, Paper, Severed 多恐怖策略",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Indie Game Joe · cozy 体育",
+     "tags": [
+      "cozy",
+      "打水漂"
+     ],
+     "title": "RippleLoop：cozy 打水漂——解锁升级与能力，在平静世界里越漂越远",
+     "en_title": "A cozy game about literally skipping stones as far as possible",
+     "full_text": "A cozy game about literally skipping stones as far as possible\n\n- Unlock upgrades and powers to go further\n- Discover a calm world as you advance\n- Powerful abilities at full strength\n\nGame is RippleLoop https://t.co/ZyqH0IxgCu",
+     "author": "IndieGameJoe",
+     "date": "2026-08-30",
+     "likes": 558,
+     "views": 25437,
+     "link": "https://x.com/IndieGameJoe/status/2094501644813676811",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2094500505250598912/img/l8AU18RJ4MOYy5AP.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2094501644813676811/video/1"
+     },
+     "summary": "打水漂 cozy 游戏 RippleLoop：解锁升级与能力把石头扔得更远，随进度探索平静世界。",
+     "analysis": "",
+     "recommendation": "cozy 打水漂：解锁能力让石头漂更远——RippleLoop",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "テヌキボーズ · 赌徒锻造",
+     "tags": [
+      "锻造",
+      "赌博"
+     ],
+     "title": "Unlucky Swordsmith：失败即全损的赌徒铁匠 sim——「还能再锤一把」是危险信号",
+     "en_title": "鍛冶はギャンブルだ！失敗すれば全ロストの鍛冶屋シム『Unlucky Swordsmith』",
+     "full_text": "鍛冶はギャンブルだ！失敗すれば全ロストの鍛冶屋シム『Unlucky Swordsmith』\n\n剣を叩いてガンガン強化！\n下がっていく成功率。\nほどほどで売って金にするか、限界まで価値を高めるか。まだいける！は、もう危ない。\n剣が砕けても、破片を鍛冶場の強化に使えるから安心だ。",
+     "author": "tenukibozu",
+     "date": "2026-09-01",
+     "likes": 265,
+     "views": 24045,
+     "link": "https://x.com/tenukibozu/status/2094674719266013634",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2094674680749727744/pu/img/H3X1Dv1bTPV9e87o.jpg",
+      "video_url": "https://x.com/tenukibozu/status/2094674719266013634/video/1"
+     },
+     "summary": "「锻造就是赌博」：Unlucky Swordsmith 锤剑强化成功率递减，卖了变现还是赌到极限全靠自己判断；碎了也能把碎片用于铁匠铺升级。「还觉得能行」的时候已经很危险。",
+     "analysis": "",
+     "recommendation": "锻造即赌博：成功率递减的 Unlucky Swordsmith——「还能行」是危险信号",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "ファミ通 · 太空清洁",
+     "tags": [
+      "合作",
+      "重力"
+     ],
+     "title": "OMG: Oh My Gravity：重力弹清理太空垃圾的 4 人合作——连队友都会被吸走，11 月发售",
+     "en_title": "【最大4人】重力弾を使って宇宙のゴミを片付ける協力型パズル『OMG: Oh My Gravity』",
+     "full_text": "【最大4人】重力弾を使って宇宙のゴミを片付ける協力型パズル『OMG: Oh My Gravity』Steamで11月発売\nhttps://t.co/pacCmkErS7\n\n重力弾を撃ってゴミを引き寄せたり、押し出したりしてゴミ箱へ運ぶ。仲間まで巻き込む要素もあり、すでにカオスの予感 https://t.co/qGRW4z536r",
+     "author": "famitsu",
+     "date": "2026-09-01",
+     "likes": 208,
+     "views": 55434,
+     "link": "https://x.com/famitsu/status/2094748774522621983",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2094748708827217921/pu/img/XtT0cEM8_1brekhJ.jpg",
+      "video_url": "https://x.com/famitsu/status/2094748774522621983/video/1"
+     },
+     "summary": "重力弹 4 人合作清垃圾 OMG: Oh My Gravity：发射重力弹吸引/排斥太空垃圾运往垃圾箱，但队友也会被一起卷走——「混乱预定」，11 月 Steam 发售。",
+     "analysis": "",
+     "recommendation": "重力弹清太空垃圾：队友一起被吸走——OMG: Oh My Gravity 11 月发售",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unity for Games · 官方发布",
+     "tags": [
+      "Unity 6.6",
+      "工作流"
+     ],
+     "title": "Unity 6.6 发布：Fast Enter Play Mode 默认开启，为 Unity 7 铺路",
+     "en_title": "Unity 6.6 is here⚡️",
+     "full_text": "Unity 6.6 is here⚡️\n\nFrom accelerated scene testing with Fast Enter Play Mode by default to smarter asset management with content directories, 6.6 is packed with upgrades built to speed up your workflow and lay the groundwork for Unity 7.\n\n🔗 Learn what else is new: https://t.co/lKWYDXD3ec",
+     "author": "unitygames",
+     "date": "2026-09-01",
+     "likes": 57,
+     "views": 3911,
+     "link": "https://x.com/unitygames/status/2094820877376328151",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRJMee9WIAAmtK6.jpg"
+     },
+     "summary": "Unity 6.6 正式发布：Fast Enter Play Mode（加速场景测试）默认开启、content directories 智能资产管理——一系列以加速工作流为目标的升级，同时为 Unity 7 打基础。",
+     "analysis": "「Play Mode 进场速度」是 Unity 用户吐槽多年的老痛点，默认开启 Fast Enter 意味着官方终于把「迭代速度」当作一等公民——这与「AI 辅助开发时代迭代次数翻倍」的需求直接相关：AI 生成代码越快，引擎进场验证的频率越高，引擎的响应速度就成了新瓶颈。Unity 7 的 groundwork 表述也确认了 6.x 系列进入收尾期。",
+     "recommendation": "Unity 6.6：Fast Enter Play Mode 默认开启——AI 时代迭代速度成新瓶颈",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**爆款阴影日 + 粉笔枪日**\n星战零号连队的成功叙事被 Game File 调查撕开：开发商 Bit Reactor 发售前对最多 80% 员工实施无薪休假，前员工怒斥「高管发 10/10 感谢帖时隐瞒团队无薪」。粉笔画 FPS Chalk Warfare 公布：画消音=无声、画手斧=破门，愿望单 2.5 万起步。\n\n**行业动态**\n巫师4 实体版走第三条路：光盘 Sony 定，但 CDPR 承诺「feelies」周边盒一定有；NVIDIA 官方承认 DLSS 5 AI 滤镜性能损失 50-60%；Orbitals 获「It Takes Two 后最强合作」双冠评价。\n\n**AI 板块**\n「血量更低才能赢」的反向数值 220 万浏览；Claude 拒绝后 GLM 把 BO2 地图搬进浏览器；5 周 AI 钓鱼游戏的工作流进化。\n\n**新游看点**\n真实探险家开发的 4 人探洞 Cave Expedition（65 万浏览）；1 亿格扫雷 World Sweeper；剑玉百人 10 人联机连带责任。\n\nPCU 速览：零号连队 47,869、渔力全开 159,864，热度正常回落。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
