@@ -1299,6 +1299,14 @@ function handleEditorialDateStripClick(event) {
 // === 游戏关注 Daily Timeline（复用 ed-date-strip 样式，独立作用域 .ld-date-strip，绑定 launched 数据） ===
 let launchedDateDragState = null;
 
+// 游戏关注展示日期 = 数据日期 +1 天(凌晨抓取前一天数据,与日报口径对齐); data-ld-date 仍用数据日期
+function ldDisplayDate(d) {
+  const dt = new Date(d);
+  if (Number.isNaN(dt.getTime())) return d;
+  dt.setDate(dt.getDate() + 1);
+  return `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, '0')}-${String(dt.getDate()).padStart(2, '0')}`;
+}
+
 function getLaunchedDateScroller() {
   return document.querySelector('.ld-date-strip .ed-control-dates');
 }
@@ -1308,9 +1316,10 @@ function renderLaunchedDateStrip() {
   if (!dates.length) return '';
   const dayNames = ['周日','周一','周二','周三','周四','周五','周六'];
   const dateButtons = dates.slice().reverse().map(d => {
-    const dt = new Date(d);
+    const disp = ldDisplayDate(d);
+    const dt = new Date(disp);
     const label = `${String(dt.getMonth() + 1).padStart(2, '0')}-${String(dt.getDate()).padStart(2, '0')}`;
-    return `<button type="button" class="ed-date-btn ${launchedDate === d ? 'on' : ''}" data-ld-date="${d}" title="${d}"><span>${dayNames[dt.getDay()]}</span>${label}</button>`;
+    return `<button type="button" class="ed-date-btn ${launchedDate === d ? 'on' : ''}" data-ld-date="${d}" title="${disp}"><span>${dayNames[dt.getDay()]}</span>${label}</button>`;
   }).join('');
   const hint = '拖动日期条或下方红金滑块，最新日期在左侧 · 点击日期查看当期游戏关注';
   return `<section class="ed-date-strip ld-date-strip" aria-label="日期选择"><div class="ed-date-strip-head"><div>Daily Timeline<small>${hint}</small></div><div class="ed-date-shift"><button type="button" onclick="shiftLaunchedDates(-1)" aria-label="向左查看较新日期">‹</button><button type="button" onclick="shiftLaunchedDates(1)" aria-label="向右查看更早日期">›</button></div></div><div class="ed-control-dates" onclick="handleLaunchedDateStripClick(event)" onscroll="syncLaunchedDateScrollbar()" onpointerdown="startLaunchedDatePan(event)" onpointermove="moveLaunchedDatePan(event)" onpointerup="endLaunchedDatePan(event)" onpointercancel="endLaunchedDatePan(event)" onpointerleave="endLaunchedDatePan(event)">${dateButtons}</div><div class="ed-date-scrollbar" onpointerdown="startLaunchedDateDrag(event)"><div class="ed-date-scroll-thumb"></div></div></section>`;
@@ -2845,7 +2854,7 @@ function renderLaunchedContent() {
     ${heroBg ? `<div class="ld-hero-bg"><img src="${heroBg}" alt="" referrerpolicy="no-referrer" onerror="this.parentNode.style.display='none'"></div>` : ''}
     <div class="ld-lede">
       <div class="tw-week-block">
-        <div class="tw-week-section-kicker">TODAY'S PICKS · ${escapeHtml(d.date || '')}</div>
+        <div class="tw-week-section-kicker">TODAY'S PICKS · ${escapeHtml(ldDisplayDate(d.date || ''))}</div>
         <h2>今日推荐</h2>
         <div class="ld-picks-hint">点击游戏查看详情与演示视频</div>
         <div class="ld-mosaic" style="margin-top:14px">${(d.picks || []).map(renderLaunchedPickTile).join('')}</div>
