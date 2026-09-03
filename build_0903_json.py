@@ -1,0 +1,455 @@
+# -*- coding: utf-8 -*-
+"""构建 2026-09-03 日报 JSON"""
+import json
+
+VID = lambda author, tid: {"type": "video", "url": None, "video_url": f"https://x.com/{author}/status/{tid}/video/1"}
+IMG = lambda url: {"type": "image", "url": url}
+
+def vid(author, tid, thumb):
+    return {"type": "video", "url": thumb, "video_url": f"https://x.com/{author}/status/{tid}/video/1"}
+
+data = {
+  "date": "2026-09-03",
+  "meta": {"raw_count": 257, "filtered_count": 177, "selected_count": 12, "crawl_time": "2026-09-03 10:30"},
+  "lede": "SteamDB 易主 Nexus Mods 母公司：创始人 xPaw 燃尽退场，「我们爱的那个互联网已经不在了」\n法国开发者把 Minecraft 的方块全换成三角柱：PrismCraft 免费公开，168 万浏览",
+  "editors_pick": [
+    {"section_id": "industry", "item_index": 0, "hook": "SteamDB 易主 Nexus Mods 母公司：创始人 xPaw 燃尽退场，「我们爱的那个互联网已经不在了」"},
+    {"section_id": "indie", "item_index": 0, "hook": "把 Minecraft 的方块全换成三角柱：PrismCraft 免费公开，168 万浏览"}
+  ],
+  "digest": [
+    {"id": "ai", "text": "Fable 5.1 全链路演示：一张地块照片 → 设计住宅 → 渲染 → 漫游视频\n开发者控诉：十年前的旧作被人用 AI 整个抄走挂上 Steam 售卖\nOPC 独立开发者 10 个月实录：51 个项目目录、24 个烂尾、总收入 $1,599"},
+    {"id": "industry", "text": "SteamDB 被 Nexus Mods 母公司 Chosen 收购：xPaw 燃尽，13 年一人运营落幕\nSony 双线作战：785 万美元和解价格垄断诉讼，律师坚称「消费者明知数字游戏不归自己」\n韩媒：Nexon 接近拿下 StarCraft 续作开发权，9/12 BlizzCon 或有官宣\n零号连队遭「推荐但差评」抗议：玩家声援发售前被无薪休假的 80% 员工"},
+    {"id": "indie", "text": "PrismCraft：三角柱版 Minecraft 免费公开，168 万浏览\nBOMBANANA! 正式发售 ¥17.98：试玩版 600 万人玩过，首日同接 1.2 万\nStream Train：把「直播涨粉」做成生存资源的 6 人合作恐怖，10/15 发售\n拔剑成王：每有人拔出剑就更长——Alva Majo 自家 2022 年免费老游戏翻红"},
+    {"id": "tools", "text": "Unity CLI 上架 Unity Hub：命令行控制引擎，官方明牌支持 AI 编码 Agent 联动"}
+  ],
+  "sections": [
+    {
+      "id": "ai", "title": "AI科技热点", "title_en": "AI & TECH", "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · AI 能力演示",
+          "tags": ["Fable 5.1", "AI视频生成"],
+          "title": "Fable 5.1 全链路演示：一张地块照片 → 设计住宅 → 渲染 → 漫游视频",
+          "en_title": "Fable 5.1 is a beast at many things but one thing in particular I have been having a ton of fun with is generating videos through code",
+          "full_text": "Fable 5.1 is a beast at many things but one thing in particular I have been having a ton of fun with is generating videos through code. For this one I gave it a picture of a property lot. It designed a house for the lot, rendered it, and produced a cinematic walkthrough.",
+          "author": "alexalbert__",
+          "date": "2026-09-01",
+          "likes": 7446,
+          "views": 982186,
+          "link": "https://x.com/alexalbert__/status/2094860187743986169",
+          "media": vid("alexalbert__", "2094860187743986169", "https://pbs.twimg.com/amplify_video_thumb/2094859798013476864/img/s6N7RGZlKaTDJ26W.jpg"),
+          "summary": "Anthropic 的 Alex Albert 展示 Fable 5.1 的代码生成视频能力：输入一张空地皮照片，模型自行设计适配地块的住宅、完成渲染，并输出一段电影级漫游视频。Tony出海同日补充数据点：Fable 5.1 跑分翻倍、价格便宜了一半。原推 98 万浏览。",
+          "analysis": "「看图 → 建模 → 出片」串成一条 prompt 的演示，标志 AI 视频生成从「素材片段」进入「完整交付物」阶段：地产营销、建筑可视化、游戏过场预演这类「空间叙事」场景最先被替代。Tony出海提到的「分数翻倍+价格减半」若属实，说明 Anthropic 正用性价比把视频生成推向日常工具位。下一步的观察点是镜头调度的可控性——能不能指定运镜而不只是接受模型的导演。",
+          "recommendation": "Fable 5.1 一张地块照片生成整栋住宅和漫游视频——AI 出片进入交付物阶段",
+          "featured": False
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "X · AI 争议",
+          "tags": ["AI克隆", "Steam审核"],
+          "title": "开发者控诉：十年前的旧作被人用 AI 整个抄走，挂上 Steam 售卖",
+          "en_title": "OMFG someone ripped off my (decade old) game using AI and is now selling it on Steam",
+          "full_text": "OMFG someone ripped off my (decade old) game using AI and is now selling it on Steam. They ripped the same mechanics, level design, UI, even some sprites. The store description is AI slop. The main character is a bomberman sprite??? WTF IS GOING ON @valvesoftware",
+          "author": "jere_codes",
+          "date": "2026-09-01",
+          "likes": 117,
+          "views": 12203,
+          "link": "https://x.com/jere_codes/status/2094896827665375278",
+          "media": IMG("https://pbs.twimg.com/media/HRKRUWTXkAAEymt.jpg"),
+          "summary": "Jeremiah 发现自己的老游戏被 AI 克隆并上架 Steam：相同的机制、关卡设计、UI，甚至部分素材精灵图，商店描述一眼 AI slop，主角素材还是个炸弹人 sprite，他直接 @valvesoftware 讨说法。同日 SkygeDev 感叹 AI 游戏开发的现状——一个趋势出现的瞬间就被快速原型化/克隆（3.4 万浏览）。",
+          "analysis": "这是「AI 克隆」第一次以完整商品形态撞进主流视野：不是风格模仿，而是机制+关卡+UI+素材的全套复制，且直接进入了 Steam 货架。V 社的上架审核对「AI 克隆已发售游戏」目前没有有效防线，原创者的救济路径只剩事后举报。对独游开发者的现实含义：老作品留下的公开痕迹（视频、截图、时间戳）是最好的维权证据；对平台而言，这是比「AI 生成素材标注」更尖锐的新合规问题。",
+          "recommendation": "十年旧作被 AI 全套克隆挂上 Steam——平台审核迎来新合规考题",
+          "featured": False
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "X · 独立开发实录",
+          "tags": ["独立开发", "OPC"],
+          "title": "OPC 独立开发者 10 个月实录：17 期视频、51 个项目目录、24 个烂尾、总收入 $1,599",
+          "en_title": "Aries' 10 months as a solo dev: 17 videos, 51 project folders, 24 abandoned, $1,599 total revenue",
+          "full_text": "这是一个 OPC 独立开发者的真实写照，Aries 的10 个月经历，做了17 期视频、总 51 个项目目录，24 个烂尾和产品总收入 $1,599。为了那句话，「AI 时代来了，我要去做 AI 产品。」很多人轰轰烈烈地要干 OPC，但是很残酷的，需要不断的折腾，永不停止",
+          "author": "iamtonyzhu",
+          "date": "2026-09-02",
+          "likes": 5,
+          "views": 10983,
+          "link": "https://x.com/iamtonyzhu/status/2094948045687521520",
+          "media": None,
+          "summary": "Tony出海引述 OPC 独立开发者 Aries 的 10 个月账本：做了 17 期视频、建了 51 个项目目录、24 个烂尾，产品总收入 $1,599——「AI 时代来了，我要去做 AI 产品」这句话的真实成本。Tony出海评论：很多人轰轰烈烈干 OPC，但残酷之处在于需要不断折腾、永不停止。",
+          "analysis": "这是「AI 降低创作门槛」叙事的对照样本：工具门槛确实降了（51 个项目都能开工），但「做完」和「卖出去」的门槛没有变。24/51 的烂尾率与 $1,599 的总收入提醒我们，AI 时代独立开发的瓶颈已从「会不会做」转移到「选品、坚持与分发」。对跃跃欲试的潜在 OPC，这组数字比任何成功学案例都值得先读一遍。",
+          "recommendation": "10 个月 51 个项目 24 个烂尾收入 $1,599——AI 时代 OPC 的真实账本",
+          "featured": False
+        }
+      ]
+    },
+    {
+      "id": "industry", "title": "游戏行业动态", "title_en": "INDUSTRY", "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Rock Paper Shotgun · 行业并购",
+          "tags": ["SteamDB", "收购"],
+          "title": "SteamDB 易主：创始人 xPaw 燃尽退场，Nexus Mods 母公司 Chosen 接手",
+          "en_title": "\"The internet we once loved is gone\": SteamDB founders announce the community-run database has been acquired by Nexus Mods' owners",
+          "full_text": "\"The internet we once loved is gone\": SteamDB founders announce the community-run database has been acquired by Nexus Mods' owners",
+          "author": "rockpapershot",
+          "date": "2026-09-02",
+          "likes": 10,
+          "views": 3676,
+          "link": "https://x.com/rockpapershot/status/2095132250039877713",
+          "media": None,
+          "game_ref": None,
+          "summary": "SteamDB 联合创始人 xPaw 宣布：运营 13 年的社区数据库被 Nexus Mods 母公司 Chosen 收购。告别信直白：「COVID 之后、AI 兴起之后，我们曾经热爱的那个互联网已经不在了」——长期一人全栈运营导致燃尽。Chosen CEO Victor Folmann 承诺保留名称、品牌与社区，组建正规团队与基础设施，并明确表示将探索「不伤体验」的变现方式（合作、联盟链接），不打算直接上广告；xPaw 留任数月协助过渡。多家报道：Rock Paper Shotgun、Polygon、AUTOMATON。",
+          "analysis": "Steam 生态最重要的第三方基础设施完成交接。看点有三：①Chosen 去年 6 月刚接手 Nexus Mods，再收 SteamDB 后，「Mod 发现+版本数据」的整合想象空间很大（Folmann 提到用 SteamDB 版本数据改善 Mod 安装维护）；②变现是社区最大忧虑点，「不放广告、走联盟链接」是安抚也是承诺，执行待观察；③xPaw 的告别信是「个人基础设施时代」落幕的标志性文本——AI 爬虫时代公共资源的维护成本，正在系统性地压垮个人维护者。",
+          "recommendation": "SteamDB 被 Nexus Mods 母公司收购：「我们爱的互联网不在了」，一个人扛 13 年的时代落幕",
+          "featured": True
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer / GameSpot · 平台政策",
+          "tags": ["Sony", "数字所有权"],
+          "title": "Sony 双线作战：785 万美元和解价格垄断诉讼，同时主张「消费者明知数字游戏不归自己」",
+          "en_title": "PlayStation argues \"reasonable consumers\" already know they don't actually own their digital games",
+          "full_text": "As PlayStation's plan to scrap the production of game discs inches closer, Sony's lawyers are arguing that \"reasonable consumers\" already know that they don't own digital games.",
+          "author": "eurogamer",
+          "date": "2026-09-02",
+          "likes": 20,
+          "views": 4970,
+          "link": "https://x.com/eurogamer/status/2095157342530683088",
+          "media": IMG("https://pbs.twimg.com/media/HRN-e8vXQAEvTfB.jpg"),
+          "summary": "两条 Sony 法律新闻同日发酵：①GameSpot 报道 Sony 将就 2024 年数字版价格垄断集体诉讼支付近 785 万美元和解金（2019/4-2023/12 间购买指定数字版的用户可申请赔付，Sony 不承认违法但避免庭审，案件以不可再诉方式撤诉）；②Eurogamer 报道在另一起数字所有权诉讼（加州 2025 年 AB2426 披露法）中，Sony 律师 8/21 提交文件主张「理性消费者不会误以为购买了数字游戏的所有权」，并用 RE Requiem 的两次购买记录做归谬。背景：Sony 此前宣布 2028 年 1 月起停止生产新 PS 游戏光盘，同日 GameSpot 还报道 Sony 警告玩家勿因光盘争议骚扰客服。",
+          "analysis": "「不承认违法但掏 785 万和解」与「你明知自己不拥有」放在一起，构成 Sony 全数字化转型的法律地基：一边花钱了结旧账，一边为新诉讼立下「license not ownership 是常识」的主张。结合 2028 年停产光盘的计划，数字所有权的法律定义将直接决定后光盘时代玩家的权利边界——这两条新闻本质是同一个故事的攻防两面。",
+          "recommendation": "785 万美元和解+「你明知不拥有」：Sony 为后光盘时代打法律地基",
+          "featured": True
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · IP 授权",
+          "tags": ["StarCraft", "Nexon", "Blizzard"],
+          "title": "韩媒：Nexon 接近与 Blizzard 达成协议，拿下 StarCraft 续作开发权",
+          "en_title": "The next StarCraft may not be made by Blizzard, according to a new report",
+          "full_text": "The next StarCraft may not be made by Blizzard, according to a new report",
+          "author": "eurogamer",
+          "date": "2026-09-02",
+          "likes": 32,
+          "views": 8786,
+          "link": "https://x.com/eurogamer/status/2095104186048487869",
+          "media": IMG("https://pbs.twimg.com/media/HRNNaicboAE1v9Z.jpg"),
+          "summary": "Eurogamer 援引韩国朝鲜日报报道：Nexon 与 Blizzard 关于 StarCraft 系列续作开发权的合同「接近最终敲定」，信源为「资深游戏行业官员」。尚不确定是 RTS 正统续作还是衍生作——今年早些时候另有报道称双方在合作 StarCraft 射击游戏，且传闻 Blizzard 内部也在做一款由前 Far Cry 负责人 Dan Hay 领衔的 StarCraft 射击游戏。9/12-13 BlizzCon 预计有 StarCraft 相关官宣；今年 6 月 SC2 在停止开发六年后突然收到改变 meta 的平衡性更新。多家报道：Eurogamer、Polygon。",
+          "analysis": "若成真，这将是 Blizzard 核心 IP 首次交由外部厂商主导续作——RTS 的发源地韩国接手 StarCraft 在文化上说得通（PC bang 文化+电竞根基），商业上也符合 Nexon 近年狂揽西方 IP 的路线。更大的信号是 Blizzard 的 IP 策略松动：微软收购后，「IP 授权+外部开发」正在成为动视暴雪系盘活存量 IP 的新常态。9/12 BlizzCon 是第一个验证节点。",
+          "recommendation": "Nexon 接近拿下 StarCraft 续作开发权——暴雪核心 IP 首次外放？",
+          "featured": True
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "TheGamer · 社区反应",
+          "tags": ["星战零号连队", "劳资争议"],
+          "title": "零号连队遭「推荐但差评」抗议：玩家声援发售前被无薪休假的 80% 员工",
+          "en_title": "Star Wars Zero Company Players Are Leaving Negative Reviews To Protest The Devs Being Furloughed",
+          "full_text": "Star Wars Zero Company Players Are Leaving Negative Reviews To Protest The Devs Being Furloughed",
+          "author": "thegamerwebsite",
+          "date": "2026-09-02",
+          "likes": 0,
+          "views": 331,
+          "link": "https://x.com/thegamerwebsite/status/2095180280814338523",
+          "media": IMG("https://pbs.twimg.com/media/HROTXMvWEAIYuNk.jpg"),
+          "game_ref": "STAR WARS Zero Company",
+          "summary": "TheGamer 报道：Bit Reactor 发售前 furlough 80% 员工的消息发酵后，Steam 评论区出现抗议性差评潮。热门评测写道「我本想给 10/10，这是多年来最好的星战游戏……但发售前三周 80% 员工被裁减，只剩骨架团队维持游戏」；另一条「我仍然推荐这个游戏，但差评留着，因为 Bit Reactor 和 EA 像帝国一样对待开发者」。原报道强调 furlough 决定由 Bit Reactor 做出、与 EA/迪士尼无关；Bit Reactor 至今未公开回应，团队账号仍在转发好评。社区分裂为两派：一派主张多买让工作室有钱召回员工，一派拒绝奖励管理层。",
+          "analysis": "「玩着 10/10 的游戏、打着差评」是玩家用脚投票的新形态：评价系统被临时征用为劳资争议的施压工具。这对 Bit Reactor 是实打实的商业威胁——Steam 好评率直接影响长尾销量与算法推荐，而 GDAS 数据显示游戏日峰值已从 8/27 的 77,889 回落到 9/3 的 39,760，差评固化将加速衰减。Bit Reactor 拖得越久不回应，「游戏好但别买」的叙事就越难逆转。",
+          "recommendation": "零号连队玩家「推荐但差评」抗议 furlough——评价系统被征用为劳资施压工具",
+          "featured": False
+        }
+      ]
+    },
+    {
+      "id": "indie", "title": "新游推文", "title_en": "INDIE GAMES", "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "X / AUTOMATON · 病毒式独立项目",
+          "tags": ["PrismCraft", "体素"],
+          "title": "把 Minecraft 的方块全换成三角柱：PrismCraft 免费公开，168 万浏览",
+          "en_title": "J'en avait marre des cubes du coup j'ai refait Minecraft avec des triangles",
+          "full_text": "J'en avait marre des cubes du coup j'ai refait Minecraft avec des triangles (enfin des prismes on se comprend)",
+          "author": "lairhisson",
+          "date": "2026-09-01",
+          "likes": 33102,
+          "views": 1682664,
+          "link": "https://x.com/lairhisson/status/2094819116989263904",
+          "media": vid("lairhisson", "2094819116989263904", "https://pbs.twimg.com/amplify_video_thumb/2094818272898097152/img/PSnW1Ka0OWk_8Iqt.jpg"),
+          "game_ref": "PrismCraft",
+          "summary": "法国 YouTuber/开发者 LAirHisson 免费发布 PrismCraft（itch.io，浏览器可玩）：一个所有方块都是三角棱柱的「三角版 Minecraft」。砍树、合成、生存/创造模式俱全，连角色和 UI 都是三角形。AUTOMATON 详解其技术难题：三角网格存在「朝向」问题（上向/下向必须交替密铺，初版推翻重写），角色碰撞体改用六边形，地形按 600×600 区块切分；未使用任何 Minecraft 官方素材，开发中部分借助 Claude。目前 v0.3。原推 168 万浏览+3.3 万赞，AUTOMATON 日文报道另获 11.9 万浏览。",
+          "analysis": "「换一个基础几何体」听起来是一句话点子，做起来是从网格系统、朝向管理到碰撞体的全链路重建——这正是它比普通 MC mod 更有技术含量的原因，也是媒体愿意深报的原因。对开发者的启发：「熟悉系统的最小变异」依然是传播效率最高的独立项目公式；LAirHisson 用 JavaScript 从零写 voxel 引擎的路线，也给「Web 技术栈做游戏」提供了一个可玩的样本。",
+          "recommendation": "PrismCraft：三角柱版 Minecraft 免费公开——一句话点子的全链路重建",
+          "featured": True,
+          "enrichment": {
+            "game_name": "PrismCraft",
+            "genre": "体素沙盒",
+            "developer": "LAirHisson（法国，个人开发者/YouTuber）",
+            "platforms": ["PC（itch.io / 浏览器）"],
+            "price": "免费",
+            "release_date": "已发布 · v0.3（2026年9月）",
+            "steam_rating": "未上架 Steam",
+            "steam_url": None,
+            "header_image": None,
+            "youtube_video": None,
+            "description": "【玩法】三角棱柱版 Minecraft：砍树、合成、生存/创造模式，连角色与 UI 都是三角形。【技术看点】三角网格朝向需上下交替密铺（初版推翻重写）、角色碰撞体改用六边形、600×600 区块切分；未用 Minecraft 官方素材，开发部分借助 Claude。【传播】原推 168 万浏览，AUTOMATON 长文解析。【获取】itch.io 免费，浏览器可玩：lairhisson.itch.io/prismcraft。",
+            "why_notable": "「熟悉系统的最小变异」公式的新样本：一句话能说清的点子 + 全链路自研重建的技术含量，体素品类的病毒式传播案例。",
+            "positioning": "三角柱版 Minecraft——一句话点子的全链路重建"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "電ファミニコゲーマー · 发售",
+          "tags": ["BOMBANANA", "合作游戏"],
+          "title": "BOMBANANA! 正式发售 ¥17.98：「不见/不言/不听」三人拆弹，试玩版 600 万人玩过",
+          "en_title": "BOMBANANA! - 3-player co-op bomb defusal with see/hear/speak-no-evil monkeys",
+          "full_text": "【3人協力】「見ざる」「言わざる」「聞かざる」になって爆弾解除するゲーム『BOMBANANA!』が本日22時頃にSteamで発売。体験版は600万人がプレイした話題作",
+          "author": "denfaminicogame",
+          "date": "2026-09-02",
+          "likes": 9770,
+          "views": 1216029,
+          "link": "https://x.com/denfaminicogame/status/2095045061541298275",
+          "media": vid("denfaminicogame", "2095045061541298275", "https://pbs.twimg.com/ext_tw_video_thumb/2095045022425165824/pu/img/AjkKpPxTfd903x_y.jpg"),
+          "game_ref": "BOMBANANA!",
+          "summary": "Lefto Studio 开发、TARK 发行的 3 人协作拆弹游戏 9/2 在 Steam 发售（¥17.98，支持日语）。三人分别扮演「看不见炸弹」「不能说话（只能看手册、打手势）」「听不见」的猴子，靠残缺信息协作拆弹。试玩版是 Steam Next Fest 2026 年 6 月玩得最多的作品：600 万人玩过、愿望单破 100 万；AUTOMATON 报道发售首日同接约 1.2 万。含 30 关战役+无尽+自定义模式，还有扇耳光和竖中指动作。原推 122 万浏览。",
+          "analysis": "「三猴分工」把 KTANE（Keep Talking and Nobody Explodes）的信息不对称设计推到机制极致：不只是分工，而是感官剥夺。Next Fest 600 万试玩 → 100 万愿望单 → 首日 1.2 万同接的转化链路，是「试玩节-愿望单-首发」管线的教科书案例；¥17.98 的定价也卡在派对游戏的冲动消费区间。继多人合作恐怖之后，「合作+信息残缺」仍是小团队最高性价比的爆款公式。",
+          "recommendation": "BOMBANANA! 发售：试玩 600 万 → 愿望单 100 万 → 首日同接 1.2 万的教科书转化",
+          "featured": True,
+          "enrichment": {
+            "game_name": "BOMBANANA!",
+            "genre": "3人协作拆弹（派对/沟通）",
+            "developer": "Lefto Studio（TARK 发行）",
+            "platforms": ["PC（Steam）"],
+            "price": "¥17.98",
+            "release_date": "已发售 · 2026年9月2日",
+            "steam_rating": "发售初期",
+            "steam_url": "https://store.steampowered.com/app/4656000/BOMBANANA/",
+            "header_image": None,
+            "youtube_video": None,
+            "description": "【玩法】「不见/不言/不听」三猴分工拆弹：一人摸炸弹但看不见符号、一人看手册但不能说话（打手势）、一人听得见但看不见，靠残缺信息协作。停电/障碍/噪音干扰机制。【内容】30 关战役+无尽+自定义模式，含扇耳光/竖中指动作，公开大厅匹配。【数据】Next Fest 2026.6 试玩 600 万人（该届最多）、愿望单破 100 万、发售首日同接约 1.2 万（AUTOMATON）。",
+            "why_notable": "KTANE 式信息不对称设计的感官剥夺版；试玩节→愿望单→首发同接的完整转化教科书。",
+            "positioning": "「三猴」感官剥夺拆弹——合作+信息残缺的派对爆款公式"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "電ファミニコゲーマー · 新游公布",
+          "tags": ["Stream Train", "合作恐怖"],
+          "title": "Stream Train：把「直播涨粉」做成生存资源的 6 人合作恐怖，10/15 发售",
+          "en_title": "Stream Train - up to 6 players livestream ghosts and cryptids from a steam train to go viral",
+          "full_text": "【最大6人】幽霊や怪異を“生配信”してバズらせるホラーゲーム『Stream Train』がSteamで10月15日に発売。視聴者の無茶振りに応えれば“投げ銭”をもらえるかも",
+          "author": "denfaminicogame",
+          "date": "2026-09-02",
+          "likes": 2429,
+          "views": 221127,
+          "link": "https://x.com/denfaminicogame/status/2094990427787272468",
+          "media": vid("denfaminicogame", "2094990427787272468", "https://pbs.twimg.com/ext_tw_video_thumb/2094990379615723520/pu/img/KmZG4S4eKONL0Xeq.jpg"),
+          "game_ref": "Stream Train",
+          "summary": "丹麦工作室 Half Past Yellow（《Time on Frog Island》）公布合作「涨粉恐怖」游戏 Stream Train：最多 6 人乘蒸汽火车探索 Uncanny Valley，拍摄幽灵与未确认生物并「直播」给观众——弹幕实时提出无理要求，打赏成为生存资源。黄金法则：别惹怒怪异；惹怒了，至少拍下来。10/15 Steam 发售，价格未定，封闭测试招募中（可通过 Steam 家庭共享带 4 个朋友）。原推 22 万浏览。",
+          "analysis": "「观众互动即玩法」是直播时代顺理成章的类型融合：Content Warning 证明了「拍摄换收入」的循环有效，Stream Train 进一步把「弹幕互动」系统化成生存资源——玩家的表演欲被直接编译成游戏内激励机制。封闭测试允许一带四，明显冲着主播车队传播设计；对直播主友好的天然节目效果，使它具备下一个「直播爆款」的潜质。",
+          "recommendation": "Stream Train：弹幕打赏变成生存资源——直播机制系统化的合作恐怖",
+          "featured": False,
+          "enrichment": {
+            "game_name": "Stream Train",
+            "genre": "合作恐怖（直播模拟）",
+            "developer": "Half Past Yellow（丹麦哥本哈根，2017 年成立，代表作 Time on Frog Island）",
+            "platforms": ["PC（Steam）"],
+            "price": "未公布",
+            "release_date": "2026年10月15日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4071650/Stream_Train/",
+            "header_image": None,
+            "youtube_video": "https://www.youtube.com/watch?v=zBIWfvt-KEA",
+            "description": "【玩法】最多 6 人乘蒸汽火车探索 Uncanny Valley，拍摄幽灵/未确认生物并直播；弹幕实时提出无理要求，打赏成为生存资源。黄金法则：别惹怒怪异，惹怒了至少拍下来。【节点】10/15 发售，封闭测试招募中（Steam 家庭共享可带 4 名好友）。【语言】英语。",
+            "why_notable": "把弹幕互动系统化为生存资源：直播机制从「传播渠道」变成「核心玩法」。",
+            "positioning": "直播涨粉即生存——弹幕互动系统化的合作恐怖"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "X · 开发者自述",
+          "tags": ["免费游戏", "异步多人"],
+          "title": "拔剑成王：每有人拔出剑，剑就更长更重——Alva Majo 自家 2022 年免费老游戏翻红",
+          "en_title": "The one who pulls out the sword will be crowned king - free on Steam, sword gets longer each time someone pulls it out",
+          "full_text": "This indie dev made a game where you have to pull a sword from a stone to be crowned king. - The sword gets longer each time someone pulls it out - It's free on Steam. Would you play this? It's called \"The one who pulls out the sword will be crowned king\"",
+          "author": "5ro4",
+          "date": "2026-09-01",
+          "likes": 2562,
+          "views": 338078,
+          "link": "https://x.com/5ro4/status/2094860758379082223",
+          "media": vid("5ro4", "2094860758379082223", "https://pbs.twimg.com/amplify_video_thumb/2094860611293245440/img/IEsPm9IBdEygJiGt.jpg"),
+          "game_ref": "The one who pulls out the sword will be crowned king",
+          "summary": "Alva Majo（Majorariatto）发推介绍「一个独立开发者做的游戏」：拔出石中剑就能称王，但每有玩家成功拔出，剑就会变得更长更重——游戏免费上 Steam。33.8 万浏览。有趣的细节：这其实是他自家工作室 2022 年 3 月就发布的免费游戏「The one who pulls out the sword will be crowned king」，用第三人称自我玩梗完成了一次零成本翻红。",
+          "analysis": "「全球玩家共享进度」的异步多人设计（集体行为艺术式）+ 开发者第三人称自我推荐的传播技巧，让一个 2022 年的免费小品在 2026 年重新进入流量池。对独立开发者的启发：老游戏不需要新内容也能翻红，需要的是一个新的「讲法」——伪装成第三方安利自己作品，是把「王婆卖瓜」的尴尬转成话题性的聪明玩法。",
+          "recommendation": "每有人拔出来剑就更长：全球共享进度的免费小品靠「自我玩梗」翻红",
+          "featured": False,
+          "enrichment": {
+            "game_name": "The one who pulls out the sword will be crowned king",
+            "genre": "休闲/异步多人行为艺术",
+            "developer": "Majorariatto（Alva Majo，西班牙）",
+            "platforms": ["PC（Steam）"],
+            "price": "免费",
+            "release_date": "已发售 · 2022年3月28日",
+            "steam_rating": "好评",
+            "steam_url": "https://store.steampowered.com/app/1865370/",
+            "header_image": None,
+            "youtube_video": None,
+            "description": "【玩法】拔出石中剑称王；每有玩家成功拔出，剑对后来者更长更重——全球玩家共享同一把剑的进度。【背景】开发者 Alva Majo 2026 年用第三人称口吻「安利」自己 2022 年的旧作，33.8 万浏览完成翻红。【价格】免费。",
+            "why_notable": "全球共享进度的异步多人设计 + 开发者自我玩梗的传播案例：老游戏翻红不需要新内容，需要新讲法。",
+            "positioning": "全球共享一把越来越长的剑——免费行为艺术小品"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "電ファミニコゲーマー · Steam页公开",
+          "tags": ["增量游戏", "钓鱼"],
+          "title": "海の魚、ぜんぶ釣る（Fish Them All!）Steam 页公开：钓光 1 亿条鱼的 4-5 小时短编增量游戏",
+          "en_title": "Fish Them All! - incremental fishing game where you catch all 100 million fish in the sea",
+          "full_text": "“1億匹の魚”すべてを釣り上げるゲーム『海の魚、ぜんぶ釣る』Steamストアページが公開。釣りまくってスキルを強化しさらに釣る",
+          "author": "denfaminicogame",
+          "date": "2026-09-02",
+          "likes": 1352,
+          "views": 219050,
+          "link": "https://x.com/denfaminicogame/status/2095003877414461777",
+          "media": vid("denfaminicogame", "2095003877414461777", "https://pbs.twimg.com/ext_tw_video_thumb/2095003829184180224/pu/img/hAwgz70KKRUwJMGK.jpg"),
+          "summary": "ピース 的短编增量钓鱼游戏 Steam 页公开（appid 5004930，发售日/价格未定，Win/Mac）。目标是把海里 1 亿条鱼全部钓光：30-60 秒一局的循环里赚钱→点技能树→钓得更多，后期有潜水员/无人机/UFO/炸药等自动化采集，共 17 种鱼。想定时长 4-5 小时，手机版（iOS/Android）已在运营，开发者 funyamora 自推另获 3.1 万浏览。",
+          "analysis": "「钓鱼+增量」的融合顺应了渔力全开带火的钓鱼热潮，但走的是短编闭环路线（4-5 小时钓完 1 亿条）而非长线运营——用小体量对冲增量游戏「无底洞」的疲劳感，定位聪明。",
+          "recommendation": "钓光 1 亿条鱼的短编增量游戏——用小体量对冲无底洞疲劳",
+          "unselected": True
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "電ファミニコゲーマー · 发售",
+          "tags": ["合作", "混乱物理"],
+          "title": "Staged：舞台幕后的 4 人混乱摆道具合作，9/2 发售 ¥28.05",
+          "en_title": "Staged - chaotic co-op game about completing stage sets behind the scenes before the curtain rises",
+          "full_text": "【最大4人協力】トラブル続きの舞台裏でセットを完成させるカオスなゲーム『Staged』本日リリース。幕が上がる前に正確に小道具を配置",
+          "author": "denfaminicogame",
+          "date": "2026-09-02",
+          "likes": 1386,
+          "views": 239291,
+          "link": "https://x.com/denfaminicogame/status/2095020823082106935",
+          "media": vid("denfaminicogame", "2095020823082106935", "https://pbs.twimg.com/ext_tw_video_thumb/2095020791939428352/pu/img/egqiWCDAS-VC115O.jpg"),
+          "summary": "Project Sunset 的 4 人合作混乱游戏 9/2 发售（¥28.05，appid 3534100）：幕布升起前在后台准确摆放道具，单人搬不动的大家伙、停电等干扰事件频发，语音沟通是关键。23.9 万浏览。",
+          "analysis": "「 backstage 职场混乱」是合作混乱品类的新场景变体（Overcooked 的厨房→舞台后台），核心看点仍是搬运物理+时间压力+语音扯皮。",
+          "recommendation": "舞台后台版 Overcooked：开幕前摆对道具的 4 人混乱合作",
+          "unselected": True
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "X · 发售",
+          "tags": ["恐怖", "找异常"],
+          "title": "隔離病院：在医院里边找「异常」边前进的第一人称恐怖，判断错就从头再来，¥15 已发售",
+          "en_title": "Isolation Hospital - first-person horror where you progress by spotting anomalies in a hospital",
+          "full_text": "病院内の「異変」を見つけながら進む一人称ホラーゲーム『隔離病院』をSteamでリリースしました！判断を間違えると、最初からやり直し。",
+          "author": "Aaa95b4",
+          "date": "2026-09-02",
+          "likes": 828,
+          "views": 71647,
+          "link": "https://x.com/Aaa95b4/status/2095101599886770554",
+          "media": vid("Aaa95b4", "2095101599886770554", "https://pbs.twimg.com/amplify_video_thumb/2095101559432675328/img/BjOYwno94yfsz05m.jpg"),
+          "summary": "ASINOURA 的第一人称「找异常」恐怖游戏 8/31 在 Steam 发售（¥15，appid 5069370）：在医院前进途中发现异常就回头、判断错误就从头再来。8 番出口 like 的医院场景变体，7.2 万浏览。",
+          "analysis": "找异常品类（8 番出口谱系）的医院变体，¥15 的低价试错装。品类红利仍在但同质化加剧。",
+          "recommendation": "医院版 8 番出口：找异常恐怖 ¥15 低价发售",
+          "unselected": True
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "AUTOMATON · 官方整活",
+          "tags": ["Wikipedia", "卡牌"],
+          "title": "Wikipedia 官方「数字卡牌游戏」免费公开：从泰山到印度总统，百科条目皆可卡牌化",
+          "en_title": "Wikipedia's official digital card game announced, free to play - any article becomes a card",
+          "full_text": "なんとWikipedia公式の「デジタルカードゲーム」発表、無料公開。ターザンからインド大統領まで、Wikipediaの記事をなんでもカード化",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-02",
+          "likes": 890,
+          "views": 107203,
+          "link": "https://x.com/AUTOMATONJapan/status/2095112816332329028",
+          "media": vid("AUTOMATONJapan", "2095112816332329028", "https://pbs.twimg.com/amplify_video_thumb/2095112782631026688/img/OkV0Ui0d6SfmrROz.jpg"),
+          "summary": "Wikipedia 官方数字卡牌游戏免费公开：百科条目（从泰山到印度总统）都能变成卡牌。10.7 万浏览。官方机构下场做游戏的整活案例。",
+          "analysis": "百科 IP 的游戏化整活，「任何条目皆可卡牌」的生成式内容思路是最大的设计看点。",
+          "recommendation": "Wikipedia 官方卡牌游戏：百科条目皆可卡牌化",
+          "unselected": True
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "X · 营销案例",
+          "tags": ["网页游戏", "404"],
+          "title": "开发者把自家网站 404 页做成小游戏：8 万人访问了「不存在的页面」，还加了排行榜",
+          "en_title": "made a little game for myself and the gameplay is too good to keep, so now it's the new 404 for my site",
+          "full_text": "made a little game for myself and the gameplay is too good to keep, so now it's the new 404 for @iskra_graphics. you guys are crazy.. 80,000 people visited a page that doesn't exist. it has a leaderboard, updated mobile controls and two game modes now.",
+          "author": "world_is_web",
+          "date": "2026-08-31",
+          "likes": 1859,
+          "views": 528761,
+          "link": "https://x.com/world_is_web/status/2094552676725858695",
+          "media": vid("world_is_web", "2094552676725858695", "https://pbs.twimg.com/amplify_video_thumb/2094552581313830912/img/0yFTyorukkMXpzxo.jpg"),
+          "summary": "开发者 the_world 把给自己网站做的小游戏直接挂成了 404 页面，结果 8 万人访问了「不存在的页面」——他顺势加了排行榜、移动端操控和两种模式，每周最快纪录还能把贴纸贴到实物罐子上。两条推文合计 56.6 万浏览。",
+          "analysis": "「404 页即游戏」是零成本获客的极致样本：错误页本是流量黑洞，变成可玩内容后反而成了网站的传播入口。",
+          "recommendation": "把 404 页做成小游戏：8 万人主动访问不存在的页面",
+          "unselected": True
+        }
+      ]
+    },
+    {
+      "id": "tools", "title": "开发工具", "title_en": "DEV TOOLS", "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity Japan · 工具发布",
+          "tags": ["Unity", "AI工具链"],
+          "title": "Unity CLI 上架 Unity Hub：命令行控制引擎，官方明牌支持 AI 编码 Agent 联动",
+          "en_title": "Unity CLI is a tool to control Unity from the command line, now installable from Unity Hub - strongly supports integration with coding agents",
+          "full_text": "Unity CLI はコマンドラインから Unity を制御するツールです。コーディングエージェントとの連携を強力にサポートします。Unity Hub から簡単にインストールできるようになりました！",
+          "author": "unity_japan",
+          "date": "2026-09-02",
+          "likes": 844,
+          "views": 55831,
+          "link": "https://x.com/unity_japan/status/2095051601828536607",
+          "media": vid("unity_japan", "2095051601828536607", "https://pbs.twimg.com/amplify_video_thumb/2095045361303982080/img/t_yoZvr6hI1BoN19.jpg"),
+          "summary": "Unity 日本官方宣布 Unity CLI 现可通过 Unity Hub 一键安装：一个从命令行控制 Unity 的工具，官方明确定位为「强力支持与编码 Agent 的联动」。5.6 万浏览。",
+          "analysis": "引擎官方开始为「AI 写代码、AI 操作引擎」的工作流修管道了：Unity CLI 让 Copilot/Codex 类编码 Agent 能直接创建工程、跑测试、打包构建，而不必模拟 GUI 操作。这是继 Unity 6.6 默认开启 Fast Enter Play Mode 之后，Unity 向「Agent-first 开发流程」的又一块拼图——引擎工具链的可编程性，正在成为 AI 时代引擎竞争力的新维度。",
+          "recommendation": "Unity CLI 进 Unity Hub：引擎官方为 AI Agent 操作引擎修管道",
+          "featured": False
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**交接棒日 + 三角日**\nSteamDB 创始人 xPaw 宣布把 13 年一人运营的网站交给 Nexus Mods 母公司 Chosen——「COVID 之后、AI 兴起之后，我们曾经热爱的那个互联网已经不在了」。法国开发者 LAirHisson 把 Minecraft 的方块全部换成三角柱做出 PrismCraft，免费公开拿下 168 万浏览。\n\n**行业动态**\nSony 一边掏 785 万美元和解数字版价格垄断集体诉讼，一边在另一场诉讼里主张「理性消费者明知自己不拥有数字游戏」，为 2028 年停产光盘铺路；韩媒报道 Nexon 接近拿下 StarCraft 续作开发权，9/12 BlizzCon 或见分晓；零号连队玩家用「推荐但差评」抗议 Bit Reactor 发售前无薪休假 80% 员工。\n\n**新游看点**\nBOMBANANA! 正式发售（¥17.98，试玩 600 万 → 愿望单 100 万 → 首日同接 1.2 万）；Stream Train 把弹幕打赏做成生存资源（10/15）；PrismCraft 从网格朝向到六边形碰撞体重造了一个三角世界。\n\n**AI 板块**\nFable 5.1 演示「一张地块照片 → 住宅设计 → 漫游视频」全链路；Jeremiah 的十年旧作被人用 AI 整体克隆挂上 Steam；OPC 开发者 10 个月 51 个项目 24 个烂尾收入 $1,599 的真实账本。\n\nPCU 速览：零号连队 39,760（发售第 8 天，自 77,889 峰值减半）、渔力全开 134,759。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
+
+# 修正 PrismCraft/BOMBANANA/Stream Train/sword 的 header_image（Steam 已查）
+hdr = {
+  "BOMBANANA!": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4656000/99c086faba625a8d3bc459bab444087d257ccbe1/header.jpg?t=1788351950",
+  "Stream Train": None,
+  "The one who pulls out the sword will be crowned king": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1865370/header.jpg?t=1772810240",
+}
+
+import io, sys
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
+# Stream Train header 用之前查到的真实 URL
+for s in data["sections"]:
+    for i in s["items"]:
+        e = i.get("enrichment")
+        if not e:
+            continue
+        gn = e["game_name"]
+        if gn == "Stream Train":
+            e["header_image"] = "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4071650/87e00de4862f3ba5392506c8f34c752f0b7ce8df/header.jpg?t=1788270922"
+        elif gn in hdr and hdr[gn]:
+            e["header_image"] = hdr[gn]
+
+out = r"D:\CMproject\X爬虫\site\data\2026-09-03.json"
+json.dump(data, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+# 更新 manifest
+mpath = r"D:\CMproject\X爬虫\site\data\manifest.json"
+m = json.load(open(mpath, encoding="utf-8"))
+if "2026-09-03" not in m["dates"]:
+    m["dates"].append("2026-09-03")
+if "2026-09-03" not in m["reports"]["daily"]["dates"]:
+    m["reports"]["daily"]["dates"].append("2026-09-03")
+json.dump(m, open(mpath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+print("written:", out, "| dates:", len(m["dates"]))
