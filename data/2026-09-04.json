@@ -1,0 +1,546 @@
+{
+ "date": "2026-09-04",
+ "meta": {
+  "raw_count": 277,
+  "filtered_count": 219,
+  "selected_count": 12,
+  "crawl_time": "2026-09-04 10:30"
+ },
+ "lede": "Sony State of Play 九月场一揽子定档：FF7 Remake 终章 2027/4/8、Until Dawn 2 明年 1 月，Maneater 2 同场公布\nDLSS 5 官方还没解锁，二创已经出圈：Zelda CD-i 恶搞 273 万浏览、摄像头实时滤镜 demo 66 万",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Sony State of Play 九月场一揽子定档：FF7 Remake 终章 2027/4/8、Until Dawn 2 明年 1 月，Maneater 2 同场公布"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "DLSS 5 官方还没解锁，二创已经出圈：Zelda CD-i 恶搞 273 万浏览、摄像头实时滤镜 demo 66 万"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "DLSS 5 解锁前夜二创出圈：Zelda CD-i 恶搞 273 万浏览、摄像头实时滤镜 66 万\nClaude Code 周末两天做出的 GPS 僵尸追逐应用 140 万播放——「玩着玩着就运动了」\nCDPR 明确「不计划依赖 AI 做完整游戏」，同周 Fable 5.1 已能 one-shot 出完成度可观的小游戏"
+  },
+  {
+   "id": "industry",
+   "text": "State of Play 九月场全记录：FF7 Remake 终章 2027/4/8、Until Dawn 2、Metro 2039 等关键档期落地\nManeater 2 公布 2027：这次你扮演吃人鲨鱼本身\nGuild Wars 3 主打「给有真实生活排期的玩家」：MMO 已停滞论下的反周期设计\n微软和 Sony 拒绝向消费者转退关税差价，双双申请驳回诉讼"
+  },
+  {
+   "id": "indie",
+   "text": "Frictional（Amnesia/Soma）公布 Ontos：月球疯人院酒店+老鼠服务器 AI，2027\n「连类型都无法形容」的 Hypernet Explorer 公开 EA 预告：800 技能、35 万种组合\n传奇烂尾作 Cube World 的 Omega 实机曝光：新增图形语言系统\nHe Who Watches：Draknek 发行的解谜新品 9/2 发售"
+  },
+  {
+   "id": "tools",
+   "text": "Roblox 测试游戏分支系统：像 git 一样给 UGC 游戏开分支再合并"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 二创狂潮",
+     "tags": [
+      "DLSS 5",
+      "二创"
+     ],
+     "title": "DLSS 5 解锁前夜二创出圈：Zelda CD-i 恶搞 273 万浏览、摄像头实时滤镜 66 万",
+     "en_title": "The classic Zelda CD-i game Link: The Faces of Evil can now be played with NVIDIA DLSS 5!",
+     "full_text": "The classic Zelda CD-i game Link: The Faces of Evil can now be played with NVIDIA DLSS 5!",
+     "author": "Vox_Oculi",
+     "date": "2026-09-02",
+     "likes": 32595,
+     "views": 2734188,
+     "link": "https://x.com/Vox_Oculi/status/2095198263498416408",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095198225984831488/img/_Kbowv8h1kzoVSFk.jpg",
+      "video_url": "https://x.com/Vox_Oculi/status/2095198263498416408/video/1"
+     },
+     "summary": "DLSS 5 正式随 NBA 2K7 解锁前夜，社区先把它玩成了梗与玩具：Vox_Oculi 的「经典 CD-i 版 Zelda 现已支持 DLSS 5」恶搞视频拿下 273 万浏览、3.3 万赞；日本开发者 いーぐる 真做了把 DLSS 5 应用到摄像头实况画面的 demo（66 万浏览）——AI 滤镜从游戏内滤镜变成实时视频处理；此前 PS3 模拟器团队则以「We do not ship that slop」明确拒绝集成。",
+     "analysis": "一个图形技术在正式解锁前就被二创出圈，说明 DLSS 5 的争议性本身就是传播燃料：恶搞（CD-i Zelda 的粗劣画风「优化」后依然粗劣）、实验（摄像头实时 AI 美化，直指「真实世界也能被 neural rendering」的恐怖谷）、抵抗（模拟器社区站队拒绝）三股叙事同时进行。对开发者而言，DLSS 5 的「生成式改画面」属性已越过性能工具的边界，正在成为文化议题——集成与否将是品牌表态，而不只是技术选型。",
+     "recommendation": "DLSS 5 未解锁先出圈：恶搞/实验/抵制三线并行，图形技术首次成为文化议题",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · AI 应用",
+     "tags": [
+      "Claude Code",
+      "GPS游戏"
+     ],
+     "title": "Claude Code 周末两天做出 GPS 僵尸追逐应用 140 万播放——「玩着玩着就运动了」",
+     "en_title": "An app made in a weekend with Claude Code: real zombies chase you via GPS, and users end up running for their lives",
+     "full_text": "週末の2日でClaude Codeだけ使って作られたアプリの動画が、140万再生されてます。中身は「実際にゾンビに追いかけられるアプリ」。スマホのGPSで現在地を拾うので、生き延ぶ方法は本当に走ることしかない。",
+     "author": "syahu_poyo_ai",
+     "date": "2026-09-02",
+     "likes": 2719,
+     "views": 1155010,
+     "link": "https://x.com/syahu_poyo_ai/status/2095371191179792790",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2093534714439110656/img/iTmO5gX6aBdAGHfg.jpg",
+      "video_url": "https://x.com/syahu_poyo_ai/status/2095371191179792790/video/1"
+     },
+     "summary": "日本 AI 创作者社不ぽよ分析了一个爆点应用：某开发者只用 Claude Code、周末两天做出的「真实僵尸追逐」——GPS 读取真实位置，开局 60 秒逃跑宽限，随后自宅周边地图上涌出僵尸群，红骷髅可点击射击但只有 3 发子弹，沿途拾取弹药与沙漏，跑动积攒的冲锋值可以反推僵尸群。视频 140 万播放。核心洞察：「管理运动的 app 不会有人坚持，人不喜欢被管理；能活下来的是『玩着玩着就运动了』的东西。想做大众应用的，加功能之前先把一切游戏化。」",
+     "analysis": "这是「Pokémon GO 式位置游戏」在 AI 开发时代的一个干净样本：玩法极薄（跑+射+拾取），但把「运动」藏在生存压力后面，动机结构比任何健身环都硬。两天开发周期证明此类 LBS 玩法原型已经完全进入「一个 prompt 周末」的成本区间——位置游戏的护城河从来不在技术而在内容运营与安全设计。对健身科技从业者的启示更直接：把「坚持」外包给恐惧与多巴胺，比外包给积分体系有效得多。",
+     "recommendation": "GPS 僵尸追逐两天做成、140 万播放：把「坚持」外包给生存压力",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "PC Gamer / X · AI 立场",
+     "tags": [
+      "CDPR",
+      "Fable 5.1"
+     ],
+     "title": "CDPR 明确「不计划依赖 AI 做完整游戏」，同周 Fable 5.1 已能 one-shot 出可玩小游戏",
+     "en_title": "CD Projekt Red isn't 'planning to rely on AI making complete games'",
+     "full_text": "CD Projekt Red isn't 'planning to rely on AI making complete games'",
+     "author": "pcgamer",
+     "date": "2026-09-03",
+     "likes": 47,
+     "views": 19663,
+     "link": "https://x.com/pcgamer/status/2095462982612631556",
+     "media": null,
+     "summary": "PC Gamer 报道 CDPR 高层明确表态：不计划依赖 AI 做出完整游戏——AI 只作为流程辅助。同一时间线上的对照实验：陈成用 Fable 5.1 one-shot 出 Flappy Bird、Mario 1-1、Mario Kart、Subway Runner 等一批小游戏并给出可玩链接与 prompt 仓库，「试玩了下，完成度很高」（5,710 浏览）；此前还有人花 $20 让 Claude 做出完整 Minecraft 模组（逐帧看视频理解麒麟雷击+铁轨炮效果、经 MCP 调 Blender 造闪电龙、产出 Fabric 1.21.1 mod）。",
+     "analysis": "「大厂说不靠 AI」与「个人 AI 一键出游戏」同时成立并不矛盾：CDPR 押注的是工业化品控与法律责任边界，个人开发者享受的是无品控压力下的自由试错。真正的分野在「谁来对 100 万份拷贝负责」——AI 生成内容的上限正快速逼近可发售线，行业表态与个人实践的剪刀差会越来越刺眼，最终问题将是平台（Steam/主机认证）而非厂商来画线。",
+     "recommendation": "CDPR 拒绝 AI 完整游戏 vs 个人 one-shot 出可玩 demo：剪刀差越来越刺眼",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "GameSpot / The Game Awards · 发布会",
+     "tags": [
+      "StateOfPlay",
+      "FF7",
+      "定档"
+     ],
+     "title": "State of Play 九月场全记录：FF7 Remake 终章 2027/4/8、Until Dawn 2 明年 1 月",
+     "en_title": "PlayStation State Of Play September 2026: All The Biggest Announcements, Games, And Trailers",
+     "full_text": "PlayStation State Of Play September 2026: All The Biggest Announcements, Games, And Trailers",
+     "author": "GameSpot",
+     "date": "2026-09-03",
+     "likes": 26,
+     "views": 12578,
+     "link": "https://x.com/GameSpot/status/2095528588670115999",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRTQJavbsAABmTr.jpg"
+     },
+     "summary": "Sony State of Play 九月场一口气敲定多个关键档期：FINAL FANTASY VII Revelation（Remake 三部曲终章）2027 年 4 月 8 日全平台发售，并公开飞空艇世界地图实机与 10 分钟 demo；Until Dawn 2 定档 2027 年 1 月 27 日（TGA 口径；GameSpot 写 1 月 28 日）；Metro 2039 定档 2027 年 2 月 4 日；怪物猎人荒野大型资料片 Ascendance 公布 2027 年推出（14 种武器全面调整）；Marvel's Wolverine 9 月 15 日发售在即；FF Resonance（HD-2D）免费 demo 当日上线。同场还有 GTA6 限定版 DualSense 手柄（The Game Awards 报道 9.8 万浏览）与 Crimson Desert 资料片 Charting the Unknown（10/15/2026，PC Gamer 毒舌「决定改成模拟人生了」）。",
+     "analysis": "2027 年上半年档期瞬间拥挤：FF7 终章（4/8）+ Until Dawn 2（1 月末）+ Metro 2039（2/4）+ 荒野资料片——Sony 在 GTA6（11/19）之后的空窗期里快速填仓，目标显然是承接 GTA6 热度退潮后的主机购买力。对中小团队的现实含义：2027Q1-Q2 的曝光竞争将进一步恶化，独立游戏的发售窗口规划要开始避开这些锚点。",
+     "recommendation": "SoP 九月场定档潮：2027 上半年主机档期快速填仓，独立游戏避让窗口收窄",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "AUTOMATON / GameSpot · 新作公布",
+     "tags": [
+      "Maneater 2",
+      "公布"
+     ],
+     "title": "Maneater 2 公布 2027：这次你扮演吃人鲨鱼本身",
+     "en_title": "Maneater 2 - play as the shark, eat people and grow in an open world action RPG",
+     "full_text": "【速報】人食いサメオープンワールドアクションRPG『Maneater 2（マンイーター2）』発表。プレイヤーは「サメ」側、人を食い荒らし成長する",
+     "author": "AUTOMATONJapan",
+     "date": "2026-09-03",
+     "likes": 2946,
+     "views": 375823,
+     "link": "https://x.com/AUTOMATONJapan/status/2095502952358457803",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095502876877676544/img/kanG6QPDz3If9F6J.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2095502952358457803/video/1"
+     },
+     "game_ref": "Maneater 2",
+     "summary": "Tripwire Interactive（联合 Demiurge Studios）公布食人鲨开放世界动作 RPG 续作 Maneater 2，2027 年推出（Steam 页已上线，appid 3603000）。前作 Maneater（2020）以「扮演鲨鱼吃人成长」的反差设定+讽刺旁白成为中型爆款；续作延续「鲨鱼视角」并升级开放世界。AUTOMATON 速报 37.6 万浏览，为今日 SoP 相关内容中互动最高的独立条目之一。",
+     "analysis": "Maneater 初代的成功公式是「一句话反差+低成本开放世界+B 级片旁白」，续作继续押注同一公式。在 2027 拥挤档期里，这类 30-60 美元的中型作品反而是「GTA6 疲劳综合征」最直接的受益者——玩家不想要第二个 100 小时开放世界，但愿意为 15 小时的荒诞爽片付全价。",
+     "recommendation": "Maneater 2 公布：B 级片反差公式续作，中型作品接棒 GTA6 疲劳期",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "PC Gamer / Polygon · MMO",
+     "tags": [
+      "GuildWars3",
+      "MMO"
+     ],
+     "title": "Guild Wars 3 主打「给有真实生活排期的玩家」：MMO 停滞论下的反周期设计",
+     "en_title": "Guild Wars 3 is the First MMO for Fans with 'Real-Life Schedules'",
+     "full_text": "Guild Wars 3 is the First MMO for Fans with 'Real-Life Schedules'",
+     "author": "Polygon",
+     "date": "2026-09-03",
+     "likes": 37,
+     "views": 10182,
+     "link": "https://x.com/Polygon/status/2095502114051023325",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRS4EXHW4AIRdvt.jpg"
+     },
+     "summary": "Guild Wars 3 在 SoP 场外集中曝光：PC Gamer 称其「战斗与移动设计是我在 MMO 里从未见过的」（4.1 万浏览），Polygon 定调「第一款为有真实生活排期的粉丝做的 MMO」（1 万浏览），工作室负责人直言「MMO 已经停滞」（GameSpot，9,375 浏览），并确认本作规模刻意小于 GW2 以服务新的战斗系统。8 族 6 职业自建角色、据点经营、最多 7 人合作探索。",
+     "analysis": "「反肝度」作为 MMO 的核心卖点首次被摆上台面：ArenaNet 把 GW1 时代「买断制+无月卡+随进随出」的基因升级为设计哲学，直接对打 WoW/FF14 的日常打卡模型。MMO 停滞的根源是时间税劝退了 30+ 主力消费群，GW3 若能用「短会话高密度」验证成功，将重定义 MMO 的设计基线——这是 2027 年最值得盯的品类变量。",
+     "recommendation": "Guild Wars 3 反周期设计：「不肝」首次成为 MMO 核心卖点",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "PC Gamer · 消费者权益",
+     "tags": [
+      "关税",
+      "Sony",
+      "微软"
+     ],
+     "title": "微软和 Sony 拒绝向消费者转退关税差价，双双申请驳回诉讼",
+     "en_title": "Microsoft and Sony argue no obligation to pass on tariff refunds, file to dismiss consumer lawsuits",
+     "full_text": "Microsoft and Sony argue no obligation to pass on tariff refunds, file to dismiss consumer lawsuits",
+     "author": "pcgamer",
+     "date": "2026-09-03",
+     "likes": 15,
+     "views": 8891,
+     "link": "https://x.com/pcgamer/status/2095531177482526788",
+     "media": null,
+     "summary": "PC Gamer 报道：因美国关税回落，Sony 与微软已实际获得进口关税退税，但双方均向法院主张「没有义务把退款转给消费者」，并申请驳回相关集体诉讼。此前两家在 2025 年因关税上调主机价格，退税落地后价差部分未作调整。",
+     "analysis": "这是主机定价透明度的又一次压力测试：涨价时「关税所致」是显性理由，退税时沉默是默认策略。与本周 Sony 的 785 万美元价格垄断和解、「消费者明知不拥有数字游戏」主张连看，平台巨头的法务策略高度一致——能用用户协议和市场惯性解决的不上法庭，上了法庭就争取程序性驳回。对玩家的实际启示：主机价格的下调动力永远不会来自厂商自觉。",
+     "recommendation": "关税退税进厂不进用户：Sony/微软申请驳回差价诉讼",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Rock Paper Shotgun · 新作公布",
+     "tags": [
+      "Frictional",
+      "恐怖"
+     ],
+     "title": "Frictional（Amnesia/Soma）公布 Ontos：月球疯人院酒店+老鼠服务器 AI，2027",
+     "en_title": "When Amnesia and Soma developers Frictional announced Ontos, the internet's jimmies were rustled by the presence of an AI server made out of rats",
+     "full_text": "When Amnesia: The Dark Descent and Soma developers Frictional announced Ontos, their philosophical horror game set in a mad science hotel on the moon, the internet's jimmies were rustled by the presence of an AI server made out of rats.",
+     "author": "rockpapershot",
+     "date": "2026-09-03",
+     "likes": 6,
+     "views": 1968,
+     "link": "https://x.com/rockpapershot/status/2095478187853492480",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRSiSm1WAAA-PH1.jpg"
+     },
+     "game_ref": "ONTOS",
+     "summary": "Amnesia 与 Soma 的开发者 Frictional Games 公布哲学恐怖新作 Ontos：舞台是月球上一座疯科学酒店，发布后社区最快出圈的梗是游戏里「用老鼠组成的 AI 服务器」（RPS 连发两篇报道追问「老鼠墙能不能跑 Doom」，合计约 4,000 浏览）。Steam 页已上线（appid 2924520），Frictional 与 Kepler Interactive 联合发行，2027 年推出。",
+     "analysis": "Soma 的「意识上传」哲学恐怖十年来仍是讨论样本，Ontos 的「生物计算+疯人院酒店」设定继续走「概念先于玩法」的 Frictional 路线：老鼠 AI 服务器这个意象同时满足科幻逻辑（低功耗生物计算）与传播逻辑（天生的梗图）。Amnesia: The Bunker 后 Frictional 时隔数年的新作，2027 恐怖品类的头部期待。",
+     "recommendation": "Ontos：Soma 母校新作，月球疯人院+老鼠 AI 服务器的哲学恐怖",
+     "featured": true,
+     "enrichment": {
+      "game_name": "ONTOS",
+      "genre": "第一人称哲学恐怖",
+      "developer": "Frictional Games（Amnesia/Soma 母校），Kepler Interactive 联合发行",
+      "platforms": [
+       "PC（Steam）"
+      ],
+      "price": "未公布",
+      "release_date": "2027 年",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2924520/ONTOS/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2924520/25a1673ad2ea3c169f67a354fbfa14f37/header.jpg",
+      "youtube_video": null,
+      "description": "【设定】月球上的疯科学酒店；玩家将面对以活体老鼠构成的 AI 服务器等概念性恐怖装置。【看点】Soma 式哲学命题+Amnesia 式资源恐怖；RPS 以「老鼠墙能否跑 Doom」玩梗出圈。【节点】2027 年发售。",
+      "why_notable": "Frictional 时隔多年新作：概念驱动的恐怖设计样本。",
+      "positioning": "月球疯人院酒店里的老鼠 AI——概念先于玩法的哲学恐怖"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "電ファミニコゲーマー · EA 预告",
+     "tags": [
+      "Hypernet Explorer",
+      "混沌"
+     ],
+     "title": "「连类型都无法形容」的 Hypernet Explorer 公开 EA 预告：800 技能、35 万种组合",
+     "en_title": "Hypernet Explorer - a chaotic game beyond genre description with 800 skills and 350k combinations, Elona vibes",
+     "full_text": "【？】ジャンルすら形容できないカオスなゲーム『Hypernet Explorer』早期アクセストレーラーを公開。3分間をください、とにかく観てほしい。800のスキルと約35万弱の組み合わせがあることも些細な情報としか思えない。観ただけの自由さは名作『Elona』を彷彿とさせる",
+     "author": "denfaminicogame",
+     "date": "2026-09-03",
+     "likes": 1051,
+     "views": 150717,
+     "link": "https://x.com/denfaminicogame/status/2095337535178432666",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2095337508079046657/pu/img/H_7OWn5xPptrAZlk.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2095337535178432666/video/1"
+     },
+     "game_ref": "Hypernet Explorer",
+     "summary": "電ファミ以罕见的「3 分钟，请务必看一下」力度推荐 Hypernet Explorer 的 EA 预告：一款「连类型都无法形容」的混沌游戏，800 个技能、约 35 万种组合，自由度让媒体想起名作 Elona（伊洛纳）。Steam 页已上线（appid 4193010，Nocoldiz 开发 / Esoteric Heavy Industries 发行），即将推出。15 万浏览。",
+     "analysis": "Elona 系谱的「系统堆叠即玩法」在 2026 年仍有一批死忠受众：Caves of Qud、 dwarf fortress 式的模拟深度与不解释美学正在从小众走向半主流。800 技能×35 万组合的宣传口径本身是产品定位——卖的不是平衡性，是「下一个转角一定有没见过的东西」。EA 期的 bug 密度将是它能否破圈的关键变量。",
+     "recommendation": "Hypernet Explorer：800 技能 35 万组合的 Elona 系混沌，EA 预告值得 3 分钟",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Hypernet Explorer",
+      "genre": "混沌系统堆叠（类型难以定义）",
+      "developer": "Nocoldiz / Esoteric Heavy Industries",
+      "platforms": [
+       "PC（Steam）"
+      ],
+      "price": "未公布",
+      "release_date": "即将推出（Early Access 预告已公开）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4193010/Hypernet_Explorer/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4193010/cd22a7c716c27803f3b2e08d63b2e12938adbe00/header.jpg",
+      "youtube_video": null,
+      "description": "【规模】800 技能、约 35 万种组合；電ファミ称自由度令人想起名作 Elona。【定位】系统堆叠型沙盒，类型不可归一。【节点】EA 预告公开，即将推出。",
+      "why_notable": "Elona 系谱的模拟深度+不解释美学，2026 年小众深水区的代表新作。",
+      "positioning": "连类型都无法形容的 35 万组合混沌沙盒"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 实机曝光",
+     "tags": [
+      "Cube World",
+      "复活"
+     ],
+     "title": "传奇烂尾作 Cube World 的 Omega 实机曝光：新增图形语言系统",
+     "en_title": "Some Cube World Omega gameplay, featuring a new glyph language",
+     "full_text": "Some Cube World Omega gameplay, featuring a new glyph language. ❤️🧊🌎 #cubeworld #cubeworldomega",
+     "author": "wol_lay",
+     "date": "2026-09-02",
+     "likes": 4759,
+     "views": 191674,
+     "link": "https://x.com/wol_lay/status/2095252253384876221",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095251636218187780/img/_4xQVfhh0So_LgFz.jpg",
+      "video_url": "https://x.com/wol_lay/status/2095252253384876221/video/1"
+     },
+     "game_ref": "Cube World Omega",
+     "summary": "Cube World 原作者 Wollay 曝光 Omega 版新实机：除画面全面翻新外，新增一套「图形文字（glyph）语言」系统——场景中的符号可被玩家解读与交互。19.2 万浏览、4,759 赞。Cube World 是 2013 年 EA 发售后长期停更、与玩家社区决裂的传奇烂尾案例，Omega 是原作者近年秘密重做的版本。",
+     "analysis": "Cube World 的烂尾是独立游戏史上最著名的信任破产案例之一（EA 收钱后数年无更新+社区论坛封禁），Omega 的持续曝光更像一场漫长的信任修复工程：不解释发售计划、只放 aesthetically 完成度极高的实机，用「作品说话」重建预期。图形文字系统的加入显示这不再是简单重制而是重构——传奇 IP 的第二次机会窗口，市场永远愿意再开一次。",
+     "recommendation": "Cube World Omega 实机：传奇烂尾作的信任修复工程进行中",
+     "featured": false
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "X · 发售",
+     "tags": [
+      "解谜",
+      "Draknek"
+     ],
+     "title": "He Who Watches：Draknek 发行的解谜新品发售，「自己认证的佳作」",
+     "en_title": "HE WHO WATCHES IS OUT NOW - a puzzle game I really put my heart into",
+     "full_text": "HE WHO WATCHES IS OUT NOW! Please go check it out if you are at all interested in puzzle games. It is a banger (self certified) and something that I really put my heart into.",
+     "author": "bvanderaarde",
+     "date": "2026-09-02",
+     "likes": 471,
+     "views": 93558,
+     "link": "https://x.com/bvanderaarde/status/2095192263827583282",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095192097255243776/img/hOY56zBYXhrbWJKp.jpg",
+      "video_url": "https://x.com/bvanderaarde/status/2095192263827583282/video/1"
+     },
+     "game_ref": "He Who Watches",
+     "summary": "Bobby Vanden Aarde 开发、Draknek and Friends（A Monster's Expedition 发行商）发行的解谜游戏 He Who Watches 9/2 在 Steam 发售（¥65.45，appid 1070500）。开发者自述「把心放进去做的谜题」，首日评价良好。9.4 万浏览。",
+     "analysis": "Draknek 的发行选品在解谜圈是品质背书（A Monster's Expedition、Bonfire Peaks 同门），「机制干净+美术极简+谜题编排严谨」是旗下共同基因。解谜品类的长尾依赖口碑发酵，首周评价曲线比销量数字更值得跟踪。",
+     "recommendation": "He Who Watches：Draknek 品质背书的解谜新品已发售",
+     "featured": false,
+     "enrichment": {
+      "game_name": "He Who Watches",
+      "genre": "极简解谜",
+      "developer": "Bobby Vanden Aarde / Draknek and Friends 发行",
+      "platforms": [
+       "PC（Steam）"
+      ],
+      "price": "¥65.45",
+      "release_date": "已发售 · 2026年9月2日",
+      "steam_rating": "发售初期",
+      "steam_url": "https://store.steampowered.com/app/1070500/He_Who_Watches/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1070500/1969376cc464e5c53591b3934756811e9/header.jpg",
+      "youtube_video": null,
+      "description": "【玩法】Draknek 系谱的干净机制解谜：开发者称「把心放进去的作品」。【价格】¥65.45。【节点】9/2 发售，首日评价良好。",
+      "why_notable": "解谜精品发行商 Draknek 的选品背书。",
+      "positioning": "Draknek 出品的极简解谜新品"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X · 愿望单征集",
+     "tags": [
+      "cozy",
+      "整理"
+     ],
+     "title": "Pack a Plush!：进货毛绒玩具、给顾客打包的 cozy 整理游戏，2026 Q4",
+     "en_title": "Pack a Plush! - a cozy organizing game about buying plushie batches and packing customer orders",
+     "full_text": "I turned my love for plushies into a cozy organizing game! Buy adorable batches of plushies, pack orders for customers, and hunt for legendary plush!",
+     "author": "PackAPlush",
+     "date": "2026-09-02",
+     "likes": 2244,
+     "views": 295370,
+     "link": "https://x.com/PackAPlush/status/2095210106786914559",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095205466741645312/img/glxAuH7MKgd9YCjK.jpg",
+      "video_url": "https://x.com/PackAPlush/status/2095210106786914559/video/1"
+     },
+     "summary": "Slappy Inc. 的毛绒玩具打包整理游戏 Pack a Plush! 已开愿望单（appid 5123900，2026 Q4）：进货→陈列→按顾客订单打包→追猎传说级毛绒。29.5 万浏览。",
+     "analysis": "Unpacking/Supermarket Simulator 谱系的「整理治愈」品类持续出细分题材，毛绒+盲盒机制是讨巧的组合。",
+     "recommendation": "Pack a Plush!：毛绒版超市模拟，2026 Q4",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Niche Gamer · 新游",
+     "tags": [
+      "幸存者",
+      "跑酷"
+     ],
+     "title": "Go Next!：给吸血鬼幸存者公式加跑酷的特立独行之作，2026/11",
+     "en_title": "Go Next! adds parkour to the Vampire Survivors formula",
+     "full_text": "Go Next! adds parkour to the Vampire Survivors formula",
+     "author": "nichegamer",
+     "date": "2026-09-02",
+     "likes": 160,
+     "views": 15545,
+     "link": "https://x.com/nichegamer/status/2095203242380525734",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2095203173967228934/pu/img/qvVNLgJtXNLk-czx.jpg",
+      "video_url": "https://x.com/nichegamer/status/2095203242380525734/video/1"
+     },
+     "summary": "Mixidev 的 Go Next!（appid 5064170）把幸存者like 的站桩割草改成跑酷位移：2026 年 11 月发售。1.6 万浏览。",
+     "analysis": "幸存者like 的差异化竞争已进入「改移动范式」阶段：从站立到跑酷，位移本身成为 Build 的一部分。",
+     "recommendation": "Go Next!：跑酷版幸存者like，11 月发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X · 发售",
+     "tags": [
+      "弹幕",
+      "音游"
+     ],
+     "title": "Asterika: Phantom Rose Refrain：弹幕×音游节奏躲避，¥47.20 已发售",
+     "en_title": "Asterika - a bullet hell rhythm game that tests your rhythm and movement",
+     "full_text": "Asterika has released on Steam! Asterika is a bullet hell rhythm game that tests your rhythm and movement. Dodge, weave, and claim the top spot in the world!",
+     "author": "PhantomRoseGame",
+     "date": "2026-09-03",
+     "likes": 466,
+     "views": 23906,
+     "link": "https://x.com/PhantomRoseGame/status/2095312898495332368",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095312618106089472/img/-pw49kRVKEUMmhil.jpg",
+      "video_url": "https://x.com/PhantomRoseGame/status/2095312898495332368/video/1"
+     },
+     "summary": "Phantom Rose 作者 makaroll 的衍生新作 Asterika: Phantom Rose Refrain 9/2 发售（¥47.20，appid 3690850）：弹幕幕布按节奏编排的音游式躲避，全球排名竞速。2.4 万浏览。",
+     "analysis": "卡牌 roguelike 作者转向音游弹幕是罕见的品类跳跃；卡牌设计积累的「读场」能力在弹幕预判上可复用。",
+     "recommendation": "Asterika：Phantom Rose 作者的弹幕音游新品",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Niche Gamer · 公布",
+     "tags": [
+      "卡夫卡",
+      "冒险"
+     ],
+     "title": "MILITSIONER（警目如炬）：卡夫卡式警察冒险 2027 年发售，CRITICAL REFLEX 发行",
+     "en_title": "Kafkaesque adventure game MILITSIONER reveals a 2027 release",
+     "full_text": "Kafkaesque adventure game MILITSIONER reveals a 2027 release",
+     "author": "nichegamer",
+     "date": "2026-09-03",
+     "likes": 11,
+     "views": 4512,
+     "link": "https://x.com/nichegamer/status/2095329052835926423",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2095329014575497218/pu/img/HkE6ce-lSYxAvMOo.jpg",
+      "video_url": "https://x.com/nichegamer/status/2095329052835926423/video/1"
+     },
+     "summary": "TALLBOYS 开发、CRITICAL REFLEX（Mouthwashing 发行商）发行的卡夫卡式冒险游戏 MILITSIONER（中文名「警目如炬」，已有官中）定档 2027（appid 1373530）。4,512 浏览。",
+     "analysis": "CRITICAL REFLEX 的选品偏好（荒诞+不安+叙事驱动）延续 Mouthwashing 的成功路径；官中先行显示其对中文市场的重视。",
+     "recommendation": "MILITSIONER：Mouthwashing 发行商的卡夫卡警察冒险，2027",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "X · Playtest",
+     "tags": [
+      "恐怖",
+      "打扫"
+     ],
+     "title": "Woo Woo 开放 Playtest：父母和巨型蜈蚣想吃你，像素恐怖打扫游戏",
+     "en_title": "Woo Woo - pixel art house-cleaning horror where your parents and a giant centipede want to eat you",
+     "full_text": "Your parents and a giant centipede want to eat you in intense pixel art house-cleaning game, Woo Woo! Join in the Open Playtest on Steam.",
+     "author": "gameralphabeta",
+     "date": "2026-09-03",
+     "likes": 1079,
+     "views": 54696,
+     "link": "https://x.com/gameralphabeta/status/2095309353926439184",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095308270873497600/img/Z2wydi7CxrljLk44.jpg",
+      "video_url": "https://x.com/gameralphabeta/status/2095309353926439184/video/1"
+     },
+     "summary": "inomi 的像素恐怖打扫游戏 Woo Woo（appid 4373230）开放 Steam 公开 Playtest：打扫房子躲「想吃你的父母与巨型蜈蚣」。5.5 万浏览。",
+     "analysis": "0901 参考区曾收录本作，现进入公开测试节点：家庭恐怖+家务模拟的混搭在小体量恐怖里是有效的记忆点。",
+     "recommendation": "Woo Woo 公开 Playtest：打扫房子躲吃人家人",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 平台功能",
+     "tags": [
+      "Roblox",
+      "版本管理"
+     ],
+     "title": "Roblox 测试游戏分支系统：像 git 一样给 UGC 游戏开分支再合并",
+     "en_title": "Roblox is working on a system that allows you to create branches of your game, and then merge them",
+     "full_text": "Roblox is working on a system that allows you to create branches of your game, and then merge them",
+     "author": "TenebrisNoctua",
+     "date": "2026-09-03",
+     "likes": 428,
+     "views": 25987,
+     "link": "https://x.com/TenebrisNoctua/status/2095343500841652699",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRQnq5GXoAAJSGR.png"
+     },
+     "summary": "Roblox 正在内部测试「游戏分支」系统：开发者可以为同一体验创建多个分支、并行实验后合并回主线——把软件工程的 branch/merge 工作流带进 UGC 游戏平台。2.6 万浏览。",
+     "analysis": "Roblox 的 UGC 生产管线正在全面工程化：分支系统解决的是「大团队协作改崩主版本」的经典痛点，也是 Roblox 从玩具平台向职业化 studio 生态演进的关键基建。对传统引擎的启示：Unity/Unreal 的版本管理仍依赖外部 git+LFS 拼装，平台级原生分支+可视化合并是 UGC 平台相对传统引擎的隐性优势。",
+     "recommendation": "Roblox 原生分支/合并系统测试中：UGC 开发的工程化拐点",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**SoP 定档日 + DLSS5 玩梗日**\nSony State of Play 九月场一口气敲定 FF7 Remake 终章（2027/4/8）、Until Dawn 2（2027/1/27）、Metro 2039（2027/2/4）等关键档期，并公布 Maneater 2；DLSS 5 正式解锁前夜，社区先把它玩出圈——Zelda CD-i 恶搞 273 万浏览、摄像头实时滤镜 demo 66 万。\n\n**行业动态**\nGuild Wars 3 主打「给有真实生活排期的玩家」、工作室直言 MMO 已停滞；微软和 Sony 拒绝把关税退税转给消费者并申请驳回诉讼。\n\n**AI 板块**\nClaude Code 周末两天做出的 GPS 僵尸追逐应用 140 万播放——「玩着玩着就运动了」；CDPR 明确「不计划依赖 AI 做完整游戏」，与个人 one-shot 出可玩 demo 形成剪刀差。\n\n**新游看点**\nFrictional（Amnesia/Soma）公布 Ontos：月球疯人院酒店+老鼠 AI 服务器；「连类型都无法形容」的 Hypernet Explorer EA 预告（800 技能 35 万组合）；传奇烂尾作 Cube World 的 Omega 实机曝光。\n\nPCU 速览：零号连队 33,856、渔力全开 104,048（周末微回升）、红色沙漠 29,294 持续爬坡。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
