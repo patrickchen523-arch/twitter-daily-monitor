@@ -432,7 +432,7 @@
       const setRangeState=queried=>{$('#rangeApply').classList.toggle('on',queried);$('#rangeReset').classList.toggle('on',!queried)};
       setRangeState(false);
       $('#rangeApply').onclick=()=>{const s=$('#rangeStart').value,e=$('#rangeEnd').value;if(!s||!e){showToast('请选择开始与结束日期');return}if(e<s){showToast('结束日期不能早于开始日期');return}setRangeState(true);renderChart(id,state.chartMetric)};
-      $('#rangeReset').onclick=()=>{const d=chartRangeDefaults();$('#rangeStart').value=d.start;$('#rangeEnd').value=d.end;setRangeState(false);renderChart(id,state.chartMetric)};
+      $('#rangeReset').onclick=()=>{const d=chartCurrentWeekRange();$('#rangeStart').value=d.start;$('#rangeEnd').value=d.end;setRangeState(false);renderChart(id,state.chartMetric)};
       renderChart(id,state.chartMetric);switchView('detail');if(push)location.hash=`competitor/${id}`;
     }
     function openObservationDialog(id){
@@ -447,7 +447,14 @@
       fetch('/api/observations',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({product:id,obs_key:record.key,start:record.start,end:record.end,label:record.label,flow:record.item.flow,dau:record.item.dau,peak:record.item.peak,note:record.item.note})}).then(r=>r.json()).then(d=>{if(d.ok){showToast('观测日期已保存到数据库')}else{showToast('保存失败：'+(d.error||'未知错误'))}}).catch(()=>{showToast('数据库连接失败，已仅保存到本地')});try{localStorage.setItem('competitorCustomObservations',JSON.stringify(CUSTOM_OBSERVATIONS))}catch(e){}
       $('#observationDialog').close();showToast('观测日期已保存');openDetail(id,false,key);
     }
+    /* 折线图默认窗口：本期周+前3周共4周，便于观察周期波动；「本期」按钮回到当周（chartCurrentWeekRange） */
     function chartRangeDefaults(){
+      const key=state.detailObservationKey||state.period;
+      if(key.startsWith('custom:')){const p=key.split(':');return{start:p[1],end:p[2]}}
+      const w=chartCurrentWeekRange(),f=v=>String(v).padStart(2,'0'),d=new Date(w.start+'T00:00:00');d.setDate(d.getDate()-21);
+      return{start:`${d.getFullYear()}-${f(d.getMonth()+1)}-${f(d.getDate())}`,end:w.end};
+    }
+    function chartCurrentWeekRange(){
       const key=state.detailObservationKey||state.period;
       if(key.startsWith('custom:')){const p=key.split(':');return{start:p[1],end:p[2]}}
       const s=`${key.slice(0,4)}-${key.slice(4,6)}-${key.slice(6,8)}`,d=new Date(s+'T00:00:00');d.setDate(d.getDate()+6);
