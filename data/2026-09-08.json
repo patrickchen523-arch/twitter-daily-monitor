@@ -1,0 +1,526 @@
+{
+ "date": "2026-09-08",
+ "meta": {
+  "raw_count": 223,
+  "filtered_count": 183,
+  "selected_count": 12,
+  "crawl_time": "2026-09-08 11:00"
+ },
+ "lede": "黄仁勋确认 GPT-6 Astra 用 10 万+ NVIDIA GPU 训练、已规划 40 万张；社区用 Astra 复刻《四驱兄弟》做出可玩 3D 竞速游戏；鬼武者首日销量破 100 万，Capcom 宣布再激活更多旧 IP；像素恐怖《Tenebris Somnia》过场突变为真人实拍。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 1,
+   "hook": "用 Astra 复刻《四驱兄弟》做出 Storm Race：Astra Pro 首个浏览器 build 就超出预期，Three.js 可玩竞速"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "像素恐怖《Tenebris Somnia》：最吓人的时刻是画面不再是像素——过场突变为真人实拍"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "黄仁勋：Astra 用 10 万+ NVIDIA GPU 训练，已规划 40 万张\nAstra 复刻《四驱兄弟》Storm Race：Astra Pro 首个浏览器 build 即超预期\nAstra 通关「I'm Not a Robot」全部 48 关\nCodex+Blender 自动重绑 MMD 骨骼：单人开发者省掉专职 Rigger"
+  },
+  {
+   "id": "industry",
+   "text": "鬼武者首日销量破 100 万：Capcom 宣布再激活更多旧 IP\n报告：中国游戏市场达 500 亿美元，与西方疲软形成结构性反差\nXbox 云游戏设 15 小时月上限：盈亏平衡线被曝光\nSteam 2026 已为 Valve 创收 110 亿英镑，最大新客是地平线 6"
+  },
+  {
+   "id": "indie",
+   "text": "Tenebris Somnia：像素恐怖过场变真人实拍（3.7 万赞）\n寿司将棋 Steam 页+试玩版：吃子要自付钱、喝茶也要付费\n零营销实验 Steam 销量破 100 万"
+  },
+  {
+   "id": "tools",
+   "text": "holo-card-studio 开源：一句话生成 3D 全息闪卡，Blender 工程+网页全自动（853 星）"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "PC Gamer · 算力结构",
+     "tags": [
+      "GPT-6 Astra",
+      "算力"
+     ],
+     "title": "黄仁勋确认：GPT-6 Astra 用 10 万+ NVIDIA GPU 训练，已规划 40 万张",
+     "en_title": "Jensen Huang says 100,000 Nvidia GPUs were used to train OpenAI's latest model, GPT-6 Astra, and there's already plans to bring quadruple that amount of hardware online",
+     "full_text": "OpenAI's latest AI model, GPT-6 Astra, was trained on over 100,000 Nvidia GPUs",
+     "author": "pcgamer",
+     "date": "2026-09-07",
+     "likes": 12,
+     "views": 14419,
+     "link": "https://x.com/pcgamer/status/2096982941113160058",
+     "media": null,
+     "summary": "PC Gamer 报道：黄仁勋在 X 上证实 GPT-6 Astra 的训练使用了约 10 万块以上的 NVIDIA Grace Blackwell NVL72 服务器机架，且已有计划再上线 40 万块 GPU 迎接下一代模型。OpenAI 总裁 Greg Brockman 在 Stratechery 采访中确认这是「首次超过 10 万 GPU 的训练」，并称相当一部分算力投入了安全与对齐；他同时表示「也许上一代、也许是 Astra、也许是下一代，总有一处会跨过大多数人心里的 AGI 门槛」。",
+     "analysis": "这是本周 Astra 发布潮里最重要的底层事实：算力投入与上一代拉开一个数量级，直接解释了 Astra 在 agentic 任务（computer use、长程自主）上的跃升来源。对游戏行业有两层现实含义——一是「AGI 已到来」的宣示意味着内容生成管线的成本曲线会继续陡降；二是 40 万 GPU 的扩建计划意味着算力与显存紧张（今年内存价格暴涨的主因）在中期不会缓解，游戏开发的硬件预算要按「AI 优先占用」来规划。",
+     "recommendation": "黄仁勋确认：GPT-6 Astra 用 10 万+ NVIDIA GPU 训练，已规划再上 40 万张",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · Astra 创作潮",
+     "tags": [
+      "Astra",
+      "Three.js"
+     ],
+     "title": "用 Astra 复刻《四驱兄弟》做出 Storm Race：Astra Pro 首 build 超预期，Three.js 可玩竞速",
+     "en_title": "Built a Bakusou Kyoudai Let's & Go!! game with GPT-6 Astra—one of my childhood favorites anime",
+     "full_text": "Built a Bakusou Kyoudai Let's & Go!! game with GPT-6 Astra—one of my childhood favorites animate.\nAstra Pro's first browser build blew past my expectations, so I pulled it locally and kept polishing with Astra High.\nstack: Three.js\nplayable: https://t.co/EIlZn0GCze\npost: https://t.co/XXAxzYYFIC",
+     "author": "BubuStd",
+     "date": "2026-09-06",
+     "likes": 3549,
+     "views": 386143,
+     "link": "https://x.com/BubuStd/status/2096587056755638553",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096586972567646209/img/xK4KpEljcPLZORCx.jpg",
+      "video_url": "https://x.com/BubuStd/status/2096587056755638553/video/1"
+     },
+     "summary": "开发者 BubuAi 用 GPT-6 Astra 复刻童年动画《爆走兄弟 Let's & Go!!》，做出可玩的迷你四驱车竞速游戏 Storm Race：可选 Magnum Saber / Sonic Saber / Tridagger X / Spin Axe 四台车，在从干燥转向暴风雨的工坊赛道跑三圈，车库提供 8 组部件检视与爆炸图。工作流是 Astra Pro 出浏览器首 build（质量超预期）→ 本地化后用 Astra High 持续打磨，技术栈 Three.js，成品可直接在线试玩。38.6 万浏览、3,549 赞。",
+     "analysis": "这条的价值在「工作流」而非单个 demo：Astra Pro 负责 0→1 的首 build、Astra High 负责 1→1.1 的精修，两级模型分工已经是社区沉淀出的标准管线。童年 IP 复刻 + 免费可玩链接的传播组合（38.6 万浏览）也再次验证「情怀×即点即玩」是 AI 创作内容的最优传播结构。需要注意它是非官方粉丝作品（作者已声明与 Tamiya 无关），IP 复刻类 AI 游戏的商业化边界仍悬置。",
+     "recommendation": "用 Astra 复刻《四驱兄弟》：Astra Pro 首个浏览器 build 就超出预期，Three.js 可玩竞速",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · Agent 自治",
+     "tags": [
+      "Astra",
+      "Agent"
+     ],
+     "title": "Astra 通关「I'm Not a Robot」全部 48 关",
+     "en_title": "Astra has successfully beat all 48 levels of the \"I'm Not a Robot\" game",
+     "full_text": "Astra has successfully beat all 48 levels of the \"I'm Not a Robot\" game:",
+     "author": "sharifshameem",
+     "date": "2026-09-07",
+     "likes": 7767,
+     "views": 662581,
+     "link": "https://x.com/sharifshameem/status/2096847916837314853",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096847594026917888/img/YmtNxA8APFxvGKVP.jpg",
+      "video_url": "https://x.com/sharifshameem/status/2096847916837314853/video/1"
+     },
+     "summary": "开发者 Sharif Shameem 演示 GPT-6 Astra 通关「I'm Not a Robot」全部 48 关——这是一款把各种 CAPTCHA 人机验证做成关卡的解谜游戏，被 AI 用行动完成了「我不是机器人」的自证。66.2 万浏览、7,767 赞。",
+     "analysis": "梗的完成度极高：一款考验「人类证明」的游戏被 AI 全通，构成了 agent 能力最直观的叙事。技术上看，48 关意味着视觉理解+界面操作+跨关卡策略的连续稳定输出，比单点 demo 更能说明 computer use 的可靠性提升。对游戏开发者，这类「AI 打人类向游戏」内容已成固定的传播品类——为游戏设计 AI 可玩性（甚至可被 agent 游玩）可能变成一种发布策略。",
+     "recommendation": "Astra 打通「I'm Not a Robot」全部 48 关——为人机验证设计的游戏被 AI 全通关",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 04",
+     "source": "X · AI×3D 管线",
+     "tags": [
+      "Astra",
+      "Blender"
+     ],
+     "title": "Codex+Blender 自动重绑 MMD 骨骼：AI 接管 3D 管线的绑定环节",
+     "en_title": "GPT6 Astra를 이런 식으로 사용했더니 애니메이션 작업시간 단축에 큰 도움이 되었다",
+     "full_text": "GPT6 Astra를 이런 식으로 사용했더니 애니메이션 작업시간 단축에 큰 도움이 되었다\n\n1. 코덱스와 블렌더를 연결하고 MMD용 모델링 파일을 불러온다\n2. 기존에 리깅되어 있는 MMD용 본을 Autorig Pro용 Rig로 교체해달라고 코덱스에 요청한다\n3. 포즈모드에서 얼굴 쉐이프키를 제어할 수 있도록 쉐이프키를 제어할 수 있는 본 컨트롤러를 만들어달라고 한다\n\n첨부한 사진은 GPT의 작업 Before / After\nRigger를 따로 모실 여력이 안되는 1인제작자한테는 정말 혁신일 정도로 편하고 빠르게 작업해줌",
+     "author": "M0MORUMOMO",
+     "date": "2026-09-07",
+     "likes": 171,
+     "views": 6895,
+     "link": "https://x.com/M0MORUMOMO/status/2096937734845972730",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRnP5rFaQAAXOk1.jpg"
+     },
+     "summary": "韩国开发者 MOMORU 分享用 GPT-6 Astra（Codex 连接 Blender）加速动画工作流的三步法：导入 MMD 建模文件→让 Codex 把原有 MMD 骨骼替换为 Autorig Pro 骨架→生成可控制面部 shape key 的骨骼控制器。附 Before/After 对比图，称「对雇不起专职 Rigger 的单人开发者是革新级省时」。6,895 浏览。",
+     "analysis": "绑定（rigging）是 3D 管线中最专业、最难外包自动化的环节之一，这条案例证明 AI 已经能接手「骨骼体系迁移+控制器生成」这类结构化技术活，而不只是生成贴图。对小型团队的启示是把 Rigger 需求拆解成「可被 agent 执行的明确指令」——管线知识写得越清楚，AI 替代率越高。3D 通才（会绑定+会写 prompt 的美术）的稀缺性会进一步上升。",
+     "recommendation": "Codex+Blender 自动重绑 MMD 骨骼：单人开发者省掉专职 Rigger",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Polygon · 销量里程碑",
+     "tags": [
+      "鬼武者",
+      "旧IP复活"
+     ],
+     "title": "鬼武者首日销量破 100 万：Capcom 宣布再激活更多旧 IP",
+     "en_title": "Onimusha Sells 1 million in a Day as Capcom Vows to 'Re-activate' More Old Series",
+     "full_text": "Onimusha Sells 1 million in a Day as Capcom Vows to 'Re-activate' More Old Series",
+     "author": "Polygon",
+     "date": "2026-09-07",
+     "likes": 29,
+     "views": 9694,
+     "link": "https://x.com/Polygon/status/2096911384160125042",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRm5ysVXoAEBn1M.jpg"
+     },
+     "game_ref": "Onimusha: Way of the Sword",
+     "summary": "Polygon 报道：《鬼武者 Way of the Sword》（20 年来首部正统新作）发售首日销量突破 100 万份，Capcom 随即表态将「再激活（re-activate）」更多休眠旧系列。多家媒体跟进报道（Eurogamer、Niche Gamer、TheGamer 等）；该作 Metacritic 85 分，发售当夜登顶 Steam 畅销榜，并为系列累计 1,000 万套销量做出主要贡献。",
+     "analysis": "「旧 IP 现代化重启动」在 2026 年已经从冒险变成可复制打法：鬼武者用现代动作系统+虚幻 5 视觉重做了 20 年前的品牌资产，首日百万验证了休眠 IP 的存量认知依然值钱。Capcom 的「再激活」宣言意味着老 IP 持有方的版权盘点会成为接下来的行业常态——对中型团队，这是接外部 IP 代工/合作的窗口信号。",
+     "recommendation": "鬼武者：首日销量破 100 万——20 年 IP 复活，Capcom 宣布再激活更多旧系列",
+     "featured": true,
+     "enrichment": {
+      "game_name": "鬼武者 Way of the Sword（Onimusha: Way of the Sword）",
+      "steam_url": "https://store.steampowered.com/app/2638890/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/ce31174fea86d0bafa21b26e853dcd0b7326e36f/header.jpg?t=1788758919",
+      "price": "¥ 298.00",
+      "release_date": "已发售 · 2026 年 9 月 3 日",
+      "developer": "CAPCOM Co., Ltd.",
+      "genre": "动作 / 冒险 / 角色扮演",
+      "platforms": [
+       "windows"
+      ],
+      "steam_rating": "5798 条评价",
+      "description": "本作是刀光血影、以牙还牙的极致动作游戏。在面目全非的“京都”，一位佩戴“鬼之笼手”的武士正四处奔波，斩杀猖獗肆虐的幻魔。在激烈的刀光剑影之中沐浴鲜血，不断寻求战斗的意义。前行的道路，终将通往何处？"
+     }
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 市场报告",
+     "tags": [
+      "中国市场",
+      "行业对比"
+     ],
+     "title": "报告：中国游戏市场达 500 亿美元，西方萎缩 vs 中国繁荣",
+     "en_title": "As the western games industry struggles, China's games industry is booming, a new report shows",
+     "full_text": "As the western games industry struggles, China's games industry is booming, a new report shows\n\nhttps://t.co/A09dv1hNd3 https://t.co/MRAOqif0bS",
+     "author": "eurogamer",
+     "date": "2026-09-07",
+     "likes": 9,
+     "views": 5406,
+     "link": "https://x.com/eurogamer/status/2096925587927351311",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRnGssdbEAAuEN_.png"
+     },
+     "summary": "Eurogamer 援引新报告：在西方游戏行业持续收缩（裁员、工作室关闭）的同时，中国游戏行业保持繁荣，市场规模已达约 500 亿美元量级。",
+     "analysis": "「西方收缩、中国扩张」正在从叙事变成统计事实：500 亿美元的市场规模意味着国内厂商的现金流与人才蓄水池在全球范围内已是第一梯队。对国内从业者的直接含义是人才议价权与项目机会的结构性上移；对海外发行商，中国自研产品反向出海的竞争力（米哈游、点点互动模式）会继续挤压传统 3A 的全球份额。这张对比图本身就是未来几年行业格局定调的素材。",
+     "recommendation": "报告：中国游戏市场规模达 500 亿美元，与西方行业疲软形成结构性反差",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 平台政策",
+     "tags": [
+      "Xbox",
+      "云游戏"
+     ],
+     "title": "Xbox 云游戏设 15 小时月上限：官方侧面证实盈亏平衡线",
+     "en_title": "Xbox places monthly time limits to its paid cloud gaming service, insists only a fraction of players will be impacted",
+     "full_text": "Xbox places monthly time limits to its paid cloud gaming service, insists only a fraction of players will be impacted.",
+     "author": "eurogamer",
+     "date": "2026-09-07",
+     "likes": 9,
+     "views": 10071,
+     "link": "https://x.com/eurogamer/status/2096773217033638290",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRk8HOwX0AYiNmF.jpg"
+     },
+     "summary": "Eurogamer 报道：Xbox 对付费云游戏服务（Game Pass Ultimate）设置每月时长上限；后续报道指出上限为 15 小时，原因是超过 15 小时后服务不再盈利，官方强调只有极少数玩家会受影响。",
+     "analysis": "「15 小时=盈亏线」是订阅制云游戏罕见披露的成本真相：GPU 时长+带宽的边际成本让重度用户在纯云场景下是负资产。这条信息对行业的价值在于给「云游戏能否替代本地硬件」的争论标了价格——在算力成本曲线显著下降之前，云游戏只能是补充渠道。对做订阅制/时长计费产品的团队，这是一份现成的单位经济模型参照。",
+     "recommendation": "Xbox 云游戏设 15 小时月上限——官方侧面证实 15 小时即盈亏平衡线",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 平台经济",
+     "tags": [
+      "Steam",
+      "Valve"
+     ],
+     "title": "Steam 2026 年已为 Valve 创收 110 亿英镑，最大新客是地平线 6",
+     "en_title": "Valve has reportedly made £11bn from Steam already in 2026, and biggest earning new arrival is Forza Horizon 6",
+     "full_text": "Valve has reportedly made £11bn from Steam already in 2026, and biggest earning new arrival is Forza Horizon 6",
+     "author": "eurogamer",
+     "date": "2026-09-07",
+     "likes": 36,
+     "views": 6673,
+     "link": "https://x.com/eurogamer/status/2096951425721119120",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRnc79cbEAAwpjE.jpg"
+     },
+     "summary": "Eurogamer 援引行业估算：Steam 平台 2026 年至今已为 Valve 带来约 110 亿英镑收入，其中今年新上线游戏中收入最高的是《极限竞速：地平线 6》。",
+     "analysis": "年化 110 亿英镑意味着 Steam 的平台抽成体量已超过多数 3A 发行商的全年营收——平台经济的马太效应仍在加速。值得注意的是「最大新客是地平线 6」：Xbox 第一方大作全面拥抱 Steam（而非独占 Microsoft Store），坐实了「平台中立发行」已是微软的既定战略。对开发者的启示保持不变：Steam 的流量与支付基础设施在可见未来仍不可替代，但头部新游的虹吸效应会加剧腰部的曝光竞争。",
+     "recommendation": "Steam 2026 年已为 Valve 创收 110 亿英镑，最大新客是《极限竞速：地平线 6》",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 病毒传播",
+     "tags": [
+      "恐怖",
+      "像素"
+     ],
+     "title": "Tenebris Somnia：最吓人的是像素突然变成真人——实拍过场恐怖游戏",
+     "en_title": "The scariest thing in this pixel horror game is when it stops being pixels",
+     "full_text": "The scariest thing in this pixel horror game is when it stops being pixels\n\n- Cutscenes are live action with real actors\n- In the vein of classic Silent Hill\n- Secrets lie within the cinematics\n\nGame is Tenebris Somnia",
+     "author": "IndieGameJoe",
+     "date": "2026-09-06",
+     "likes": 36810,
+     "views": 1295350,
+     "link": "https://x.com/IndieGameJoe/status/2096724205853192677",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096722369910079489/img/kTdpEwi1hE89d8Cg.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2096724205853192677/video/1"
+     },
+     "game_ref": "Tenebris Somnia",
+     "summary": "独游安利账号 IndieGameJoe 安利像素恐怖游戏 Tenebris Somnia：核心恐怖机制是媒介切换——游戏以像素画面进行，关键节点切入真人演员出演的实拍过场，且过场里藏有关卡秘密。推文将其对标经典《寂静岭》谱系。129.5 万浏览、36,810 赞。",
+     "analysis": "「像素→真人」的落差是天然的切片传播素材，36.8 万赞证明这个概念一个视频就能打穿全平台。设计上看它继承了初代《寂静岭》用低配硬件制造心理恐怖的思路——用「解析度骤变」替代「画面糊化」制造不安。风险在于双媒介制作的产能压力与恐怖手法的可持续性：媒介切换的新鲜感只能用一次，正式版需要靠解谜深度（过场藏秘密）把猎奇客转成长线玩家。",
+     "recommendation": "像素恐怖《Tenebris Somnia》：最吓人的时刻是画面不再是像素——过场突变为真人实拍",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Tenebris Somnia",
+      "genre": "冒险 / 独立",
+      "developer": "Andrés Borghi / Saibot Studios",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年 10 月 16 日",
+      "steam_rating": "未发售（以 Steam 页面为准）",
+      "steam_url": "https://store.steampowered.com/app/2121510",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2121510/header.jpg?t=1782359332",
+      "youtube_video": null,
+      "description": "通过解谜和对抗可怕的生物，揭开这个令人不安的故事背后的真相。……如果它们不仅仅是噩梦呢？\n\n【核心玩法】一款像素恐怖游戏，核心机制是媒介切换：游戏以复古像素画面推进，在关键节点切入由真人演员出演的实拍过场——推文将其概括为「最吓人的时刻是它不再是像素」。实拍过场不只是演出素材，其中藏有关卡秘密，玩家需要回到电影片段里寻找解谜线索，过场本身成为可反复检视的场景。【美术与氛围】像素部分走经典生存恐怖路线，推文将其对标初代《寂静岭》的心理恐怖谱系；像素与实拍的分辨率落差本身构成主要恐惧来源——熟悉的低分辨率世界突然露出真实的脸，不协调感即恐怖感。【优势】媒介切换的创意差异化极强，天然适配短视频传播（本条推文 36.8 万赞、129.5 万浏览即为证明）；「过场藏秘密」的设计让 cinematic 有 Gameplay 价值而不只是演出。【不足】像素+实拍双线制作的产能压力大，内容量与更新节奏存疑；真人惊吓手法对恐怖游戏老玩家的新鲜感有半衰期，长线留存要看解谜密度。【综合】2026 年恐怖独游中概念辨识度最高的作品之一，实拍-像素混合是否成立，值得以试玩版验证。",
+      "why_notable": "把「媒介切换」本身做成恐怖机制，一条视频 36.8 万赞的传播力证明"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "電ファミ · Steam 页公开",
+     "tags": [
+      "棋类",
+      "规则创新"
+     ],
+     "title": "寿司将棋 Steam 页公开+试玩版：吃子要自付钱、喝茶也要付费",
+     "en_title": "【🍣】寿司をベチンと叩きつけて将棋をするゲーム『寿司将棋』Steamストアページが公開。体験版も配信開始",
+     "full_text": "【🍣】寿司をベチンと叩きつけて将棋をするゲーム『寿司将棋』Steamストアページが公開。体験版も配信開始\n\n「相手の寿司を取るには、その代金を払わなければならない」という特殊ルール。限られた所持金でやりくりし、お金を支払って相手の寿司を食べよう",
+     "author": "denfaminicogame",
+     "date": "2026-09-07",
+     "likes": 1166,
+     "views": 250293,
+     "link": "https://x.com/denfaminicogame/status/2096884042239205683",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2096884018604396544/pu/img/H52w0Ri3-RTejKEH.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2096884042239205683/video/1"
+     },
+     "game_ref": "SUSHI CHESS",
+     "summary": "電ファミ报道（4Gamer 同步跟进）：变则棋类游戏《寿司将棋》公开 Steam 页面并开放试玩版——吃掉对手的寿司在盘面上获利，但必须自付这块寿司的价款；不想动棋可以喝茶暂停，但茶同样收费。预计 2027 年 3 月发售，支持含日语在内 20 种语言。25 万浏览。",
+     "analysis": "「取子自费+暂停收费」把棋类博弈里隐性的机会成本做成了字面机制：每手棋都同时是盘面计算和损益计算，「什么都不做」也要标价，规则创新的密度在棋类独游里非常罕见。传播上「寿司×将棋」的强反差包装（25 万浏览）又一次证明日式小品游戏靠一个机制钩子就能完成全球冷启动——此前 8 月的浏览器版已先行验证过手感。",
+     "recommendation": "寿司将棋：吃对手的寿司要自付钱、喝茶也要付费——将棋变成钱包博弈",
+     "featured": true,
+     "enrichment": {
+      "game_name": "SUSHI CHESS",
+      "genre": "休闲 / 独立",
+      "developer": "Today's Special!",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2027 年 3 月",
+      "steam_rating": "未发售（试玩版已开放）",
+      "steam_url": "https://store.steampowered.com/app/5045620",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5045620/f9bdb7ffd9d512268bda1a1f86a7d1b79d6702af/header.jpg?t=1788723734",
+      "youtube_video": null,
+      "description": "吃掉对手的寿司，账单却要由你来付。管理有限的资金，权衡该吃掉哪枚棋子、又该让对手吃掉哪枚棋子。这款反常规的回合制棋盘游戏还包含丰富的解谜模式、三档CPU难度，以及本地和在线好友对战。\n\n【核心玩法】一款把棋子全部换成寿司的变则棋类游戏（英文名 SUSHI CHESS，规则更接近国际象棋而非将棋）：每颗寿司都标有价格，吃掉对手的寿司在盘面上获利，但必须自掏腰包支付这块寿司的价款——盘面优势与钱包压力互为代价。【胜负条件】分「现代」「古典」两种模式：现代模式可经由吃掉对手的大トロ（顶级金枪鱼腹）、阻止对手大トロ升变（抵达棋盘最深处）、将对手所持金清零、或对手连续 3 次暂停（所持金多者胜）等路径获胜；古典模式为吃掉对手大トロ。【关键机制】不想动棋可以喝茶暂停——但茶同样收费，「什么都不做」也被明码标价。资金见底会寸步难行，因此既要算盘面也要算钱包：是攒钱吃高价寿司，还是诱使对手高价接盘，每手都是双重博弈。【内容】单人包含限定手数内寻找胜利手顺的解谜模式与 Easy/Normal/Hard 三档 CPU 战；对战支持同机本地对战与 Steam 好友 1v1 在线对战；支持含日语在内 20 种语言。【节点】Steam 页已公开、试玩版可玩，预计 2027 年 3 月发售；此前 2026 年 8 月已有浏览器版先行试水。【综合】「取子自费+暂停收费」把经济系统缝进棋类规则，是今年规则创新密度最高的棋类小品之一。",
+      "why_notable": "把棋类的机会成本做成字面付费机制，「什么都不做」也要标价"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 营销实验",
+     "tags": [
+      "营销实验",
+      "百万销量"
+     ],
+     "title": "零营销实验 Steam 销量破 100 万",
+     "en_title": "Zero Marketing Experiment has now sold over ONE MILLION copies on Steam.",
+     "full_text": "Zero Marketing Experiment has now sold over ONE MILLION copies on Steam.",
+     "author": "somniumlg",
+     "date": "2026-09-07",
+     "likes": 82,
+     "views": 16437,
+     "link": "https://x.com/somniumlg/status/2096837624203714602",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRl2qHsbUAENt5r.png"
+     },
+     "game_ref": "Zero Marketing Experiment",
+     "summary": "开发者 Patrick Seibert（@somniumlg）宣布其「零营销实验（Zero Marketing Experiment）」在 Steam 销量突破 100 万份。推文附销量截图，未披露游戏细节与定价。",
+     "analysis": "把「营销预算」从发售公式里整个摘掉的对照实验跑出百万量级，对独立开发者是强心剂：Steam 发现页、标签算法与口碑自传播在理想情况下仍能独立驱动销量。但方法论上需要警惕——「零营销」实验本身自带话题性，等于用「不做营销」完成了营销，它在传播上并不纯粹。把它当作传播案例研究，而不是可复制的发售公式。",
+     "recommendation": "零营销实验销量破 100 万：一场不投放任何推广的 Steam 发售跑通了",
+     "featured": false,
+     "enrichment": {
+      "game_name": "Zero Marketing Experiment",
+      "genre": "营销实验 / 独立游戏",
+      "developer": "Patrick Seibert（@somniumlg）",
+      "platforms": [
+       "PC（Steam）"
+      ],
+      "price": "未披露",
+      "release_date": "已发售（具体日期未披露）",
+      "steam_rating": "未披露",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【事件】开发者 Patrick Seibert 宣布其「零营销实验（Zero Marketing Experiment）」在 Steam 销量突破 100 万份。【实验设定】发售过程不投放任何常规推广，实验的公开叙事完全围绕「零营销条件下的销量曲线」展开；具体游戏内容、类型与定价本条推文均未披露。【为什么值得关注】对独立开发者，这是一个把营销变量从发售公式中剥离的对照实验：100 万份的量级说明 Steam 的发现页机制、标签算法与口碑自传播在理想情况下仍可独立撑起销量。但要警惕样本的特殊性——「零营销实验」本身自带话题性，等于用「宣布不做营销」完成了营销，方法论并不纯粹，应作为传播案例而非可复制公式来读。【综合】无论结论如何，百万量级让这场实验进入值得持续追踪的行列。",
+      "why_notable": "零推广发售跑出 100 万份，Steam 自然流量上限的一次实测"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "電ファミ · 新作发表",
+     "tags": [
+      "人生模拟",
+      "监考"
+     ],
+     "title": "EXAM WATCH!：当大学职员监考抓作弊的人生模拟",
+     "en_title": "試験監督になってカンニングを監視するゲーム『EXAM WATCH!』発表",
+     "full_text": "試験監督になってカンニングを監視するゲーム『EXAM WATCH!』発表。時には不正行為を見逃してあげる選択も",
+     "author": "denfaminicogame",
+     "date": "2026-09-07",
+     "likes": 641,
+     "views": 129610,
+     "link": "https://x.com/denfaminicogame/status/2096808436176736437",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2096808391020859395/pu/img/StclCVve4RZ2KtYP.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2096808436176736437/video/1"
+     },
+     "summary": "PRC Games 公布 EXAM WATCH!（Steam 页已开）：从面试入职大学开始，监考、批卷、带学生，从研究助理一路升到学科主任；第一人称在考场巡视，识别手机、藏匿小抄与偷瞄视线——但告发不一定是正确选项，处理方式会影响与学生关系和多年后的职业生涯。12.9 万浏览。",
+     "recommendation": "EXAM WATCH!：监考抓作弊的人生模拟，放学生一马也是选项",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "X · 独立游戏",
+     "tags": [
+      "导弹",
+      "独立游戏"
+     ],
+     "title": "发射导弹然后自己飞进去：一枚导弹讲完全部玩法",
+     "en_title": "You launch a missile. Then you fly it yourself. That's the whole game.",
+     "full_text": "You launch a missile. \nThen you fly it yourself. \nThat's the whole game... and I think it's going to blow up.\n\n#indiegames",
+     "author": "IndieGamesWTF",
+     "date": "2026-09-06",
+     "likes": 1248,
+     "views": 134114,
+     "link": "https://x.com/IndieGamesWTF/status/2096712890166190586",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096712663405334528/img/FRHLa4DmlwHIGwLW.jpg",
+      "video_url": "https://x.com/IndieGamesWTF/status/2096712890166190586/video/1"
+     },
+     "summary": "IndieGamesWTF 安利一款独立游戏：你发射一枚导弹，然后亲自驾驶它——「这就是全部玩法，而且我觉得它会爆火」。13.4 万浏览。游戏名未在推文中给出。",
+     "recommendation": "发射导弹然后自己飞进去：一枚导弹讲完全部玩法",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X · 恐怖发售",
+     "tags": [
+      "恐怖",
+      "发售"
+     ],
+     "title": "THE WELL IS NOT EMPTY：地下噩梦里唯一的朋友是一把生锈勺子",
+     "en_title": "i made this game where you're trapped in an underground nightmare and all your only friend is a rusty spoon",
+     "full_text": "i made this game where you're trapped in an underground nightmare\n\nand all your only friend is a rusty spoon.\n\nit comes out tomorrow\n\nname is: THE WELL IS NOT EMPTY",
+     "author": "tweak_era",
+     "date": "2026-09-06",
+     "likes": 234,
+     "views": 6552,
+     "link": "https://x.com/tweak_era/status/2096689817686048894",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096689394455613440/img/jlmULWDQeQzLJA_9.jpg",
+      "video_url": "https://x.com/tweak_era/status/2096689817686048894/video/1"
+     },
+     "summary": "开发者 tweakEra 的恐怖新作 THE WELL IS NOT EMPTY 发售（9 月 7 日）：玩家被困地下噩梦，唯一的朋友是一把生锈勺子。Rock Paper Shotgun 补充：怕光怪物、计时灯开关与疯狂挖掘是核心机制。6,552 浏览。",
+     "recommendation": "THE WELL IS NOT EMPTY：唯一的朋友是生锈勺子的地下恐怖",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "X · 开发者故事",
+     "tags": [
+      "像素",
+      "首作"
+     ],
+     "title": "Melan：失业者从零学两年做出并发售的首款游戏",
+     "en_title": "This is Melan, my first ever game",
+     "full_text": "This is Melan, my first ever game\n\nI started making it in August 2023, when I was unemployed and just wanted to make something so I wouldn't feel so bad about myself\n\nI didn't know how to code, make games, or even draw pixel art. I learned everything from scratch\n\nTwo years later, I somehow managed to release it on Steam.",
+     "author": "NeraNera89103",
+     "date": "2026-09-06",
+     "likes": 848,
+     "views": 23587,
+     "link": "https://x.com/NeraNera89103/status/2096630167561212282",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRi5g3ja4AAZl6V.jpg"
+     },
+     "summary": "开发者 Nera Nera 分享首款游戏 Melan 上架 Steam：2023 年 8 月失业后从零学编程、做游戏、画像素画，两年后发售。2.4 万浏览、848 赞，评论区一片鼓励。",
+     "recommendation": "Melan：从失业到 Steam 发售的两年自学之路",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 开源发布",
+     "tags": [
+      "开源",
+      "Blender"
+     ],
+     "title": "开源 Codex Skill「3D 镭射卡片生成」holo-card-studio",
+     "en_title": "开源一个新Skill：3D镭射卡片生成",
+     "full_text": "开源一个新Skill：3D镭射卡片生成\n\n最近刷到一堆 GPT 6 Astra 玩 Blender 的视频，本来只想围观，但是想到它自己会生图，又能直接操作 Blender，两件事凑到一起，镭射 3D 卡牌就变成一句话的事。\n\n真人照片能做，动漫立绘也能做，卡牌转起来闪出全息光很像小时候攒的干脆面卡。\n\n干脆直接把整套流程封成了一个 skill，一键跑完，拆图、视差、镭射、闪星都全自动。\n\ngithub：https://t.co/iBEHHkghSy",
+     "author": "everettfish0408",
+     "date": "2026-09-07",
+     "likes": 2410,
+     "views": 222872,
+     "link": "https://x.com/everettfish0408/status/2096765359282061544",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096765283948187648/img/iCVFvP_KllH3WckA.jpg",
+      "video_url": "https://x.com/everettfish0408/status/2096765359282061544/video/1"
+     },
+     "summary": "开发者 EverettFish 开源 Codex Skill「holo-card-studio」：对 Codex 说一句话，自动生成一张可拖拽、可翻面、随视角流转光的全息 3D 卡牌——四层图（背景/主体/线稿/文字）自动绘制，Blender 场景自动搭建（视差/镭射/星光一键完成），并组装成 Three.js 网页交付，还附可继续编辑的 card.blend 工程与自动安装的 Blender 便携版。GitHub 已获 853 星、135 fork，22.3 万浏览。",
+     "analysis": "这是「Astra 玩 Blender」创作潮的第一波工程化沉淀：把一句玩梗的演示封装成可复用的流水线 skill，正是 AI 工具链从「演示」走向「生产资料」的标准路径。对游戏团队，它最实际的用途是低成本批量生成角色卡牌物料（发售前的抽卡预告、角色介绍页）——每张卡自带可改配置文件，改完重跑即可。视差+镭射的材质节点全部独立可调，也可以当全息效果的免费教材。",
+     "recommendation": "holo-card-studio 开源：一句话生成会流转光的全息 3D 卡牌，Blender 工程+网页全自动",
+     "featured": true
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**Astra 算力与创作双线刷屏**\n黄仁勋确认 GPT-6 Astra 由 10 万+ NVIDIA GPU 训练、已规划 40 万张，Brockman 称「总有一代会跨过 AGI 门槛」；社区侧 Astra 复刻《四驱兄弟》做出可玩 3D 竞速 Storm Race，还有人让它打通「I'm Not a Robot」全部 48 关，Codex+Blender 自动重绑 MMD 骨骼省掉专职 Rigger。\n\n**行业数据密集**\n鬼武者首日销量破 100 万，Capcom 宣布再激活更多旧 IP；报告称中国游戏市场规模达 500 亿美元，与西方疲软形成结构性反差；Xbox 云游戏 15 小时上限暴露盈亏线；Steam 2026 年已为 Valve 创收 110 亿英镑。\n\n**新游看点**\n像素恐怖《Tenebris Somnia》过场突变为真人实拍（3.7 万赞）；《寿司将棋》公开 Steam 页+试玩版——吃子要自付钱、喝茶也要付费；零营销实验 Steam 销量破 100 万。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
