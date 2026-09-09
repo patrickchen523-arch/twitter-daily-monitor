@@ -1,0 +1,545 @@
+{
+ "date": "2026-09-05",
+ "meta": {
+  "raw_count": 229,
+  "filtered_count": 161,
+  "selected_count": 12,
+  "crawl_time": "2026-09-05 10:30"
+ },
+ "lede": "日本开发者台风天做出「逃离台风」：396 万浏览 8.7 万赞，把眼前的灾害做成了玩法\nGPT-6 Astra 演示一个 prompt 重造《漫漫长夜》：「prompt-to-playable 的时代比预想来得更早」",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "日本开发者台风天做出「逃离台风」：396 万浏览 8.7 万赞，把眼前的灾害做成了玩法"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "GPT-6 Astra 演示一个 prompt 重造《漫漫长夜》：「prompt-to-playable 的时代比预想来得更早」"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "GPT-6 Astra 一个 prompt 重造 Long Dark、两个 prompt 出「好玩」的 Fall Guys 克隆\nDLSS 5 解锁首日：RTX 5080 掉帧 73%、游戏内悄悄改名「Neural Rendering」、独立工作室反营销\nFable 5.1 × Opus 5 组合工作流演示爆红"
+  },
+  {
+   "id": "industry",
+   "text": "Nintendo 官宣下周双 Direct：周二 Zelda 40 周年专场 + 周三常规场\nFF7 Remake 终章实体版需联网下载完整游戏：「实体盘当钥匙」\nStarCraft 官网异动：BlizzCon 前哨，玩家「只要不是手游都行」\nMiami 市长想把县里部分区域改成 GTA6 场景，警察集体反对"
+  },
+  {
+   "id": "indie",
+   "text": "逃离台风：日本开发者把眼前的台风做成游戏，396 万浏览\nThe Missing Tail：双猫分屏合作探索中世纪城堡（80 Level 288 万浏览）\nPinetrail Steam 页公开：Death Stranding 式三轮货车送货，还能飞（2027 Q2）\nBeetleball 发售：甲虫用粪球踢的 6v6 足球"
+  },
+  {
+   "id": "tools",
+   "text": "Teardown 作者 Voxagon 新体素物理引擎演示「非常科学的」结构完整性测试"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · AI 能力演示",
+     "tags": [
+      "GPT-6",
+      "Astra"
+     ],
+     "title": "GPT-6 Astra 一个 prompt 重造《漫漫长夜》：prompt-to-playable 时代提前到来",
+     "en_title": "GPT-6 Astra looks set to change the gaming industry - I recreated The Long Dark with a single prompt",
+     "full_text": "GPT-6 Astra oyun sektörünü değiştirecek gibi duruyor. Long Dark'ı tek bir prompt ile yeniden oluşturdum.",
+     "author": "YalnizAvareEndi",
+     "date": "2026-09-04",
+     "likes": 4872,
+     "views": 520256,
+     "link": "https://x.com/YalnizAvareEndi/status/2095678732686053867",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095678567401299968/img/bDa7bfNZr9p2WzZS.jpg",
+      "video_url": "https://x.com/YalnizAvareEndi/status/2095678732686053867/video/1"
+     },
+     "summary": "GPT-6 Astra 的游戏生成能力集中爆发：土耳其开发者用一个 prompt（「做一个喜欢 Nutella 的土耳其人会爱的 Long Dark 克隆」）重造出可玩的生存游戏（52 万浏览）；AI 评测人 Matthew Berman 用两个 prompt 做出「真的好玩」的 Fall Guys 克隆（17.3 万浏览）并断言「prompt-to-playable 的世界已经来了，比我想的更快」；同日他另发 Astra 的 3D 资产理解与空间感知演示，称「领先其他一切」（27.8 万浏览）。",
+     "analysis": "从「一句话出 demo」到「两个 prompt 出好玩的游戏」，Astra 的关键跃进是 3D 空间一致性——这正是去年 prompt 生成游戏最缺的东西（关卡不连贯、物理穿模）。生存/竞速/派对三类「系统驱动」品类最先被攻破不意外：它们的乐趣来自规则而非内容量，恰好绕开了 AI 最弱的内容资产管线。真正的问题变成：当复刻品类只需一个 prompt，「玩法创新」的可防御性还剩多少？",
+     "recommendation": "Astra 一个 prompt 重造 Long Dark：系统驱动品类最先失守",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "PC Gamer · 实测",
+     "tags": [
+      "DLSS 5",
+      "实测"
+     ],
+     "title": "DLSS 5 解锁首日：RTX 5080 掉帧 73%、游戏内悄悄改名「Neural Rendering」、独立工作室反营销",
+     "en_title": "DLSS 5 can look good, but slashing fps by up to 73% on an RTX 5080 rig is simply no bueno in 2026",
+     "full_text": "DLSS 5 can look good, but slashing fps by up to 73% on an RTX 5080 rig is simply no bueno in 2026",
+     "author": "pcgamer",
+     "date": "2026-09-04",
+     "likes": 54,
+     "views": 41272,
+     "link": "https://x.com/pcgamer/status/2095725837647810896",
+     "media": null,
+     "summary": "DLSS 5 随 NBA 2K27 正式解锁，首日舆情三连：①PC Gamer 实测在 RTX 5080 上帧率最多掉 73%（4.1 万浏览），另发对比视频（3.3 万）；②有玩家发现游戏内菜单不叫 DLSS 5，而是「DLSS Neural Rendering」——PC Gamer 猜测 NVIDIA 在悄悄去争议化改名（3.2 万）；③独立工作室 Into The Unwell 借势营销「No DLSS 5. Just good art direction.」（1.7 千赞 / 5.3 万浏览），获得开发者社区大量转发。",
+     "analysis": "改名是本条最有信息量的细节：官方自己也意识到 DLSS 5 的「生成式改画面」标签已经污染，试图用「Neural Rendering」重置心智——但 PCG 的 73% 掉帧实测证明技术代价同样是真实的。更有信号意义的是 Into The Unwell 的反营销：AI 滤镜争议第一次变成了独游的差异化卖点，「无 AI 美术」正在从隐性立场变成显性营销资产。",
+     "recommendation": "DLSS 5 解锁首日：73% 掉帧+悄悄改名+「No DLSS 5」反营销诞生",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · AI 工作流",
+     "tags": [
+      "Fable 5.1",
+      "Opus 5"
+     ],
+     "title": "Fable 5.1 × Opus 5 组合工作流演示爆红：视频模型与编码模型开始「组队」",
+     "en_title": "Fable 5.1 + Opus 5",
+     "full_text": "Fable 5.1 + Opus 5",
+     "author": "EvanMilenko",
+     "date": "2026-09-04",
+     "likes": 4422,
+     "views": 535498,
+     "link": "https://x.com/EvanMilenko/status/2095684248220881049",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095681552239800324/img/uzybX31y6ry2NDPf.jpg",
+      "video_url": "https://x.com/EvanMilenko/status/2095684248220881049/video/1"
+     },
+     "summary": "一条只有「Fable 5.1 + Opus 5」六个字的演示视频拿下 53.5 万浏览、4,422 赞：视频/3D 生成模型 Fable 5.1 与 Anthropic 编码模型 Opus 5 的组合工作流产出。同期社区里此类「多模型接力」实践密集出现：有人用 Fable 5.1 one-shot 出乐高工厂建造小游戏并附 prompt（1.4 万浏览）、$20 让 Claude 逐帧看视频做出完整 Minecraft 模组。",
+     "analysis": "单模型 one-shot 的叙事正在升级为「模型编排」：视觉模型负责资产与演出、编码模型负责逻辑与粘合，中间靠 prompt 管线缝合。这与游戏行业的「前后端分工」结构同构——意味着 AI 游戏开发的下一阶段竞争力在编排层（谁的设计 pipeline 更顺），而不是单点模型能力。对小型团队：多模型工作流的成本与质量拐点已到，值得做一次认真评估。",
+     "recommendation": "Fable 5.1 + Opus 5：AI 游戏开发进入「模型编排」阶段",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "The Game Awards / Eurogamer · 任天堂",
+     "tags": [
+      "Nintendo",
+      "Direct"
+     ],
+     "title": "Nintendo 官宣下周双 Direct：周二 Zelda 40 周年专场 + 周三常规场",
+     "en_title": "Nintendo will host two Nintendo Directs next week - Tuesday: The Legend of Zelda, Wednesday: Nintendo Direct",
+     "full_text": "Nintendo will host two Nintendo Directs next week. Tuesday: The Legend of Zelda. Wednesday: Nintendo Direct",
+     "author": "thegameawards",
+     "date": "2026-09-04",
+     "likes": 2470,
+     "views": 51029,
+     "link": "https://x.com/thegameawards/status/2095882590733660587",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRYSFf6awAAARuT.jpg"
+     },
+     "summary": "Nintendo 宣布下周连办两场 Direct：周二场专门献给 The Legend of Zelda 40 周年，周三为常规游戏 Direct——这是任天堂首次背靠背连办两场（Eurogamer 确认）。TGA 推文 5.1 万浏览，GameSpot、Eurogamer、Niche Gamer 多家跟进。",
+     "analysis": "「Zelda 40 周年专场」的规格暗示不只是纪念视频：40 周年节点+专场 Direct 的组合，大概率有新作或大型复刻宣布（参照 35 周年期的 Skyward Sword HD）。对开发者更有意义的信号是任天堂在 9 月中旬密集造势——Switch 2 上市后的首个假日季，第一方内容供给节奏明显加快。",
+     "recommendation": "Zelda 40 周年专场 Direct 周二见：40 周年节点大概率有硬货",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 实体所有权",
+     "tags": [
+      "FF7",
+      "实体版"
+     ],
+     "title": "FF7 Remake 终章实体版需联网下载完整游戏：「实体盘当钥匙」",
+     "en_title": "Final Fantasy 7 Revelation is getting a physical version, but it will require an internet connection to download",
+     "full_text": "Final Fantasy 7 Revelation is getting a physical version, but it will require an internet connection to download",
+     "author": "eurogamer",
+     "date": "2026-09-04",
+     "likes": 85,
+     "views": 12131,
+     "link": "https://x.com/eurogamer/status/2095798942290108691",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRXGBjjW4AIs87f.jpg"
+     },
+     "summary": "Eurogamer 确认 FINAL FANTASY VII Revelation（Remake 三部曲终章）将推出实体版，但光盘不包含完整游戏，需联网下载——TheGamer 补充报道直指「实体版不含完整游戏」（873 浏览）。这发生在 Sony 宣布 2028 年停产 PS 新游戏光盘、数字所有权诉讼胶着的同一周。",
+     "analysis": "「实体盘当钥匙」是大作对实物载体的最后羞辱：盘存在的意义只剩防二手转卖与货架曝光。把它放进本周 Sony 叙事链（785 万和解→「你明知不拥有」→停产光盘预告→FF7R 实体联网）看，第三方大厂正在配合平台完成「实体=收藏周边」的定性。对收藏型玩家与实体零售渠道，这是又一记明确的下行信号。",
+     "recommendation": "FF7R 终章实体版需联网：「实体盘当钥匙」定性完成",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "GameSpot / Eurogamer · BlizzCon 前哨",
+     "tags": [
+      "StarCraft",
+      "BlizzCon"
+     ],
+     "title": "StarCraft 官网异动：BlizzCon 前哨，玩家「只要不是手游都行」",
+     "en_title": "Something strange is happening to the Starcraft website as BlizzCon approaches, igniting speculation",
+     "full_text": "\"Anything but a mobile game and we'll all be stoked\" - Something strange is happening to the Starcraft website as BlizzCon approaches, igniting speculation",
+     "author": "eurogamer",
+     "date": "2026-09-04",
+     "likes": 55,
+     "views": 8417,
+     "link": "https://x.com/eurogamer/status/2095833536443904455",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRXlfG2WsAM81-F.png"
+     },
+     "summary": "Eurogamer 捕捉到 StarCraft 官网出现异常变动，BlizzCon（9/12-13）临近引发新一轮猜测；GameSpot 同步发布「Something Is Brewing With StarCraft」（5.1 万浏览）。玩家社区的主流情绪凝结成一句话：「只要不是手游，我们都会很高兴。」此前韩媒已报道 Nexon 接近拿下续作开发权。",
+     "analysis": "官网技术性异动+媒体集中报道+BlizzCon 倒计时，官宣节点的全部要素已就位。社区「只要不是手游」的集体祈祷背后是暴雪手游化前科（ Warcraft Rumble、暗黑不朽）——这次 StarCraft 的悬念已经不在「有没有新作」，而在「给谁做、给哪个平台做」：Nexon 的韩国 PC 基因 vs 暴雪的手游 KPI。",
+     "recommendation": "StarCraft 官网异动：BlizzCon 官宣只差临门一脚",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Rock Paper Shotgun · 公共关系",
+     "tags": [
+      "GTA 6",
+      "Miami"
+     ],
+     "title": "Miami 市长想把县里部分区域改成 GTA6 场景，警察集体反对",
+     "en_title": "Miami-Dade police outraged by proposals to turn parts of Miami into GTA 6, saying that Rockstar's game embodies what they work every single day to prevent",
+     "full_text": "Miami-Dade police outraged by proposals to turn parts of Miami into GTA 6, saying that Rockstar's game embodies what they \"work every single day to prevent\"",
+     "author": "rockpapershot",
+     "date": "2026-09-04",
+     "likes": 2,
+     "views": 3386,
+     "link": "https://x.com/rockpapershot/status/2095798918290268310",
+     "media": null,
+     "summary": "RPS 报道：Miami-Dade 市长一直在向 Rockstar 游说，希望把县内部分区域改造成 GTA6 中的场景（旅游/品牌联动），遭到警方与司法系统强烈反对——警察称这款游戏「正是我们每天努力防止的东西」；TheGamer 补充官员敦促 Rockstar 放弃相关营销计划、担心其「鼓励犯罪活动」。RPS 两篇+TheGamer 一篇，三方报道。",
+     "analysis": "GTA6 的文化辐射力已经大到「现实城市主动讨要被虚拟化」：市长看到的是 IP 带货的旅游经济，警局看到的是犯罪叙事的自我实现。这场拉锯的本质是 GTA6 的城市拟真度第一次高到让现实行政系统产生利益与立场的分化——营销层面 Rockstar 什么都不用做，现实已经在替它制造话题。",
+     "recommendation": "Miami 市长求被 GTA6 化、警察反对：游戏城市拟真度的文化临界点",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 病毒式独立项目",
+     "tags": [
+      "台风",
+      "日本独立"
+     ],
+     "title": "逃离台风：日本开发者台风天做出「逃离台风」，396 万浏览 8.7 万赞",
+     "en_title": "タイフーンから逃げるゲームを作りました (I made a game about escaping a typhoon)",
+     "full_text": "タイフーンから逃げるゲームを作りました #ゲーム制作 #gamedev",
+     "author": "x282665",
+     "date": "2026-09-04",
+     "likes": 87097,
+     "views": 3959504,
+     "link": "https://x.com/x282665/status/2095808093724811642",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095807991513841664/img/XBd8xcbsm3hp0uP5.jpg",
+      "video_url": "https://x.com/x282665/status/2095808093724811642/video/1"
+     },
+     "summary": "日本开发者トドネロ在真实台风逼近时发布自制小游戏「逃离台风」：一段演示视频拿下 396 万浏览、8.7 万赞、1.6 万转发——本周全网互动最高的游戏内容。台风当前的社会情绪+即时的荒诞表达，让这条推文成了灾难现场的集体宣泄口。",
+     "analysis": "「把眼前发生的事做成游戏」是独立开发传播效率最高的公式之一（参照苦行家族与三角 MC）：时效性提供情绪入口，简易玩法提供参与感。这类「新闻性小游戏」的窗口期极短（台风一过热度归零），但它证明个人开发者的响应速度可以快过任何媒体——把开发当成一种发帖方式。对个人开发者：热点响应型小品的最大资产不是销量，是把你的名字种进一次集体记忆。",
+     "recommendation": "逃离台风：把眼前的台风做成游戏，396 万浏览的集体宣泄",
+     "featured": true
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "80 LEVEL · 新游曝光",
+     "tags": [
+      "双猫合作",
+      "Estoty"
+     ],
+     "title": "The Missing Tail：双猫分屏合作探索中世纪城堡（80 Level 288 万浏览）",
+     "en_title": "This Co-Op Adventure Game Will Have You Playing as Two Medieval Cats",
+     "full_text": "This co-op adventure game will have you playing as two cats exploring and acting mischievously in a medieval castle.",
+     "author": "80Level",
+     "date": "2026-09-03",
+     "likes": 14713,
+     "views": 2884035,
+     "link": "https://x.com/80Level/status/2095588211330273630",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095588163255250946/img/7zqwTqSg3hul66jw.jpg",
+      "video_url": "https://x.com/80Level/status/2095588211330273630/video/1"
+     },
+     "game_ref": "The Missing Tail",
+     "summary": "Estoty 开发的分屏第三人称合作冒险 The Missing Tail 曝光（80 Level 报道 288 万浏览）：玩家分别扮演皇宫猫与机敏流浪猫，一次混乱事件后命运交织、结伴回家——探索中世纪城堡与小镇、做猫式恶作剧（推倒东西/屋顶跳跃）、帮助其他动物。Steam/PS/Xbox 平台，跨平台单份拷贝即可双人游玩，未定档，愿望单已开（appid 4096780）。",
+     "analysis": "It Takes Two 验证了「强分歧双主角合作」的商业模式，The Missing Tail 把配方套进「猫视角+中世纪城堡」：两只猫的性格差异天然构成能力分工（贵族技能 vs 野路子），猫式物理恶作剧则是现成的传播素材。跨平台单拷贝联机是对分屏合作品类最有效的降低门槛手段。",
+     "recommendation": "The Missing Tail：双猫分歧合作+跨平台单拷贝联机，愿望单已开",
+     "featured": true,
+     "enrichment": {
+      "game_name": "The Missing Tail",
+      "genre": "分屏双人合作冒险",
+      "developer": "Estoty LLC",
+      "platforms": [
+       "PC（Steam）",
+       "PS",
+       "Xbox"
+      ],
+      "price": "未公布",
+      "release_date": "即将宣布",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4096780/The_Missing_Tail/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4096780/54734143a7d48b8ba6d825d402ecefb7d2fdde4d/header.jpg?t=1788510916",
+      "youtube_video": null,
+      "description": "【玩法】分屏第三人称合作：皇宫猫×流浪猫双主角，性格与能力分歧；探索中世纪城堡与小镇、猫式恶作剧、帮助动物居民。【联机】跨平台单份拷贝即可双人。【节点】未定档，愿望单开放。",
+      "why_notable": "It Takes Two 配方 × 猫视角：性格分歧即能力分工的现成传播素材。",
+      "positioning": "双猫分歧合作的中世纪冒险"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "電ファミニコゲーマー / 80 LEVEL · Steam页公开",
+     "tags": [
+      "送货",
+      "物理驾驶"
+     ],
+     "title": "Pinetrail Steam 页公开：Death Stranding 式三轮货车送货，还能飞（2027 Q2）",
+     "en_title": "Pinetrail - deliver packages across an island with a gliding rickshaw truck",
+     "full_text": "This game is like Death Stranding but instead you're a little rickshaw truck - Deliver packages across an island - Wild boars will try to steal your cargo - Your truck can glide and float on rivers",
+     "author": "IndieGameJoe",
+     "date": "2026-09-03",
+     "likes": 2746,
+     "views": 164865,
+     "link": "https://x.com/IndieGameJoe/status/2095601827995603233",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095586939768590336/img/-ANwEKzoFt2GR3zL.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2095601827995603233/video/1"
+     },
+     "game_ref": "Pinetrail",
+     "summary": "「Death Stranding 但你是一辆小三轮货车」——Indie Game Joe 安利的 Pinetrail 公开 Steam 页（appid 4920240，Dimitris Kartakis 开发，2027 Q2）：海岛送货，野猪偷货、货车能滑翔能浮渡、全地形通行。電ファミ跟进报道（8.5 万浏览），80 LEVEL 曝光（16.5 万浏览）。",
+     "analysis": "「送货模拟」在 DS 之后已自成品类（Death Stranding→ depreciation 路线），Pinetrail 的差异化是把载具从「拟真卡车」换成「越挫越勇的小三轮」：更轻的物理+更萌的载体，瞄准的是被 DS 劝退的休闲层。",
+     "recommendation": "Pinetrail：小三轮版 Death Stranding，2027 Q2，愿望单已开",
+     "featured": false,
+     "enrichment": {
+      "game_name": "Pinetrail",
+      "genre": "物理驾驶 / 送货模拟",
+      "developer": "Dimitris Kartakis",
+      "platforms": [
+       "PC（Steam）"
+      ],
+      "price": "未公布",
+      "release_date": "2027 年第二季度",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4920240/Pinetrail/",
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【玩法】海岛送货：三轮货车可滑翔、浮渡、全地形通行；野猪会偷货。【定位】Death Stranding 式送达循环的休闲化变体。【节点】2027 Q2。",
+      "why_notable": "送货品类的萌系轻量化样本。",
+      "positioning": "小三轮版 Death Stranding"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "電ファミニコゲーマー · 发售",
+     "tags": [
+      "昆虫",
+      "体育"
+     ],
+     "title": "Beetleball 发售：甲虫用粪球踢的 6v6 足球，¥24.54",
+     "en_title": "Beetleball - 6v6 soccer where beetles kick dung balls, combine them into golden dung",
+     "full_text": "虫さんが“フン”でサッカーする6vs6対戦ゲーム『Beetleball』発売開始。複数のフンを合体させ「黄金の糞玉」にしてゴールにシュート",
+     "author": "denfaminicogame",
+     "date": "2026-09-04",
+     "likes": 323,
+     "views": 102305,
+     "link": "https://x.com/denfaminicogame/status/2095745123036664132",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2095745076467314689/pu/img/1nTSVzTQPoPKAIr_.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2095745123036664132/video/1"
+     },
+     "game_ref": "Beetleball",
+     "summary": "Bugfight Studio 的 6v6 对战游戏 Beetleball 9/3 在 Steam 发售（¥24.54，appid 2776270）：甲虫推粪球射门，多颗粪球可合成「黄金粪玉」，14 种以上带固有能力甲虫乱斗（会传送的虎甲虫、可射击的赛博甲虫等）。10.2 万浏览。",
+     "analysis": "「昆虫体育」是把 sports game 做成 party game 的取巧路径：粪球道具化（可合成升级）给了竞技层一个荒诞的成长钩子，¥24.54 的定价适合好友凑单。",
+     "recommendation": "Beetleball：粪球合成「黄金粪玉」的 6v6 昆虫足球已发售",
+     "featured": false,
+     "enrichment": {
+      "game_name": "Beetleball",
+      "genre": "6v6 对战体育（派对）",
+      "developer": "Bugfight Studio",
+      "platforms": [
+       "PC（Steam）"
+      ],
+      "price": "¥24.54",
+      "release_date": "已发售 · 2026年9月3日",
+      "steam_rating": "发售初期",
+      "steam_url": "https://store.steampowered.com/app/2776270/Beetleball/",
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【玩法】甲虫推粪球射门；多颗粪球合成「黄金粪玉」；14+ 种特化甲虫（传送虎甲、赛博甲虫等）。【价格】¥24.54。【节点】9/3 发售。",
+      "why_notable": "昆虫体育+粪球道具化的派对对战。",
+      "positioning": "黄金粪玉足球——荒诞系派对对战"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Devolver Digital · 发售倒计时",
+     "tags": [
+      "卡牌",
+      "肉鸽"
+     ],
+     "title": "菇域幽城（Shroom and Gloom）：Devolver 的蘑菇卡牌肉鸽，9/10 发售",
+     "en_title": "Shroom and Gloom hits September 10 - combat and exploration decks, slay and cook foes",
+     "full_text": "Just one week until you're Shroomin' and Gloomin' on Steam! combat and exploration decks, slay and cook foes on the spot, multiple paths and playable characters",
+     "author": "devolverdigital",
+     "date": "2026-09-03",
+     "likes": 2256,
+     "views": 146240,
+     "link": "https://x.com/devolverdigital/status/2095594539750735931",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2095594513297227776/pu/img/EQj5QVz-dGdUJwbi.jpg",
+      "video_url": "https://x.com/devolverdigital/status/2095594539750735931/video/1"
+     },
+     "summary": "Devolver Digital 发行、Team Lazerbeam 开发的菇域幽城（Shroom and Gloom，appid 3271280）9/10 发售：战斗牌组+探索牌组双卡组系统、当场烹饪敌人、多路径多角色。14.6 万浏览。",
+     "analysis": "双卡组（战斗/探索分离）是 Slay the Spire 谱系里少见的结构创新，Devolver 的发行选品一向偏机制怪才。",
+     "recommendation": "菇域幽城：双卡组蘑菇肉鸽 9/10 发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "ファミ通 · 本地化",
+     "tags": [
+      "苦行",
+      "本地化"
+     ],
+     "title": "Needle In A Haystack Simulator 决定支持日语：8 人分摊痛苦，Q4 发售",
+     "en_title": "Needle In A Haystack Simulator - find the one needle in 5 million pieces of hay, now with Japanese support",
+     "full_text": "500万本の干し草からたった1本の針を探す苦行ゲー『Needle In A Haystack Simulator』日本語対応が決定。最大8人で苦しみを分かち合えるオンライン協力プレイにも対応",
+     "author": "famitsu",
+     "date": "2026-09-04",
+     "likes": 1269,
+     "views": 246374,
+     "link": "https://x.com/famitsu/status/2095746316194492498",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2095746278991044608/pu/img/WFBgIDHDJ1xQ86G1.jpg",
+      "video_url": "https://x.com/famitsu/status/2095746316194492498/video/1"
+     },
+     "summary": "苦行名作 Needle In A Haystack Simulator（500 万根干草找 1 根针）宣布支持日语，8 人在线合作「分摊痛苦」，2026 Q4 发售。ファミ通 24.6 万浏览+電ファミ 6.7 万浏览跟进；電ファミ补刀：开发者本人至今也没找到那根针。",
+     "analysis": "0903 曾收录 Steam 页公开，本次增量为日语化与发售窗口——苦行品类的跨市场辐射力再次得到验证（日本媒体把它当正经新闻报）。",
+     "recommendation": "Needle 日语版 Q4 发售：开发者本人也还没找到针",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "AUTOMATON · 新游公布",
+     "tags": [
+      "僵尸",
+      "经营"
+     ],
+     "title": "Zombie Wrap Simulator 公布：白天抽僵尸做烤串、晚上守店防尸潮",
+     "en_title": "Zombie Wrap Simulator - run a zombie-meat kebab shop, beat zombies for ingredients, defend at night",
+     "full_text": "終末世界「ゾンビ肉ケバブ屋」経営シム『Zombie Wrap Simulator』発表。ゾンビをシバいて“材料調達”、夜は押し寄せるゾンビから店を防衛",
+     "author": "AUTOMATONJapan",
+     "date": "2026-09-04",
+     "likes": 703,
+     "views": 97126,
+     "link": "https://x.com/AUTOMATONJapan/status/2095713877258559908",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095713823131156480/img/ECX_MuhPxv5MuVhz.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2095713877258559908/video/1"
+     },
+     "summary": "末日僵尸肉烤肉串经营模拟 Zombie Wrap Simulator 公布：白天「驯服」僵尸获取食材、经营烤串店，夜晚抵御尸潮守店。9.7 万浏览。",
+     "analysis": "经营+塔防的双循环结构（菜鸡interfering 模式），黑色幽默设定是传播记忆点。",
+     "recommendation": "Zombie Wrap Simulator：白天烤串晚上打尸潮",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "ごだか · 新游",
+     "tags": [
+      "童年",
+      "散步"
+     ],
+     "title": "ホワイトノウェイ：把「只走白线」的童年游戏做成游戏——门限 5 点前回家，捡宝进空想世界",
+     "en_title": "White Line Way - walk only on white lines, get home by 5pm, find treasure to enter fantasy",
+     "full_text": "放課後のあの遊びをゲーム化『ホワイトノウェイ』。白線だけを歩く遊び。おかあさんと約束した門限の夕方5時までに帰るゲーム。オタカラを拾うと空想世界へ。",
+     "author": "G_Godaka",
+     "date": "2026-09-04",
+     "likes": 335,
+     "views": 23274,
+     "link": "https://x.com/G_Godaka/status/2095829242990960798",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2095825488367525888/pu/img/NHBd5f_VGB7aFYpw.jpg",
+      "video_url": "https://x.com/G_Godaka/status/2095829242990960798/video/1"
+     },
+     "summary": "ごだか（奇妙游戏介绍人）介绍ホワイトノウェイ：把小学生「只踩白线走路」的放学游戏做成作品——沿着白线回家、门限下午 5 点、捡到宝物会掉进空想世界。2.3 万浏览。",
+     "analysis": "「童年无意义仪式」的游戏化（参照拔剑成王/白线走路谱系）：规则越小越无聊，翻成游戏越有共鸣。",
+     "recommendation": "ホワイトノウェイ：只走白线、5 点前回家的童年规则游戏化",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "Niche Gamer · 正式版",
+     "tags": [
+      "EA毕业",
+      "沙盒"
+     ],
+     "title": "Craftopia 宣布 2027 年正式版：EA 六年之久的创世理想乡终于毕业",
+     "en_title": "Craftopia is finally hitting full release in 2027",
+     "full_text": "Craftopia is finally hitting full release in 2027",
+     "author": "nichegamer",
+     "date": "2026-09-04",
+     "likes": 8,
+     "views": 1233,
+     "link": "https://x.com/nichegamer/status/2095878338799685902",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRYOPe_WcAI31xs.jpg"
+     },
+     "game_ref": "Craftopia",
+     "summary": "Palworld 开发商 Pocketpair 的早期作品 Craftopia（创世理想乡，appid 1307550）宣布 2027 年推出正式版——EA 状态自 2020 年持续至今。1,233 浏览。",
+     "analysis": "EA 六年毕业是「长跑型 EA」的样本：Palworld 的成功反哺老项目收尾，玩家社区对「毕业通知」的宽容度取决于后续内容是否诚实兑现。",
+     "recommendation": "Craftopia 2027 正式版：EA 六年终毕业",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 物理引擎",
+     "tags": [
+      "Voxagon",
+      "体素物理"
+     ],
+     "title": "Teardown 作者 Voxagon 新体素物理引擎：「非常科学的」结构完整性测试",
+     "en_title": "I have developed this very scientific method for testing the structural integrity system",
+     "full_text": "I have developed this very scientific method for testing the structural integrity system.",
+     "author": "voxagonlabs",
+     "date": "2026-09-04",
+     "likes": 1173,
+     "views": 20025,
+     "link": "https://x.com/voxagonlabs/status/2095882330170687651",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095882207479083008/img/7FCbaSOyltQ-La4H.jpg",
+      "video_url": "https://x.com/voxagonlabs/status/2095882330170687651/video/1"
+     },
+     "summary": "Teardown 作者 Dennis Gustafsson（voxagonlabs）演示新体素物理引擎的结构完整性系统：用「非常科学的方法」（推塔玩坍塌）测试承重传播与断裂行为。2 万浏览。",
+     "analysis": "Teardown 的体素破坏是过去十年物理模拟的标杆，Dennis 单干后的新引擎若把「结构承重传播」做成实时稳定系统，将为物理沙盒品类提供新的地基——值得持续关注其后续演示。",
+     "recommendation": "Teardown 作者新引擎：实时结构完整性系统演示",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**台风日 + Astra 日**\n日本开发者トドネロ在真实台风逼近时发布自制游戏「逃离台风」，396 万浏览 8.7 万赞成为本周互动最高的游戏内容；GPT-6 Astra 演示一个 prompt 重造 Long Dark、两个 prompt 出「好玩」的 Fall Guys 克隆——prompt-to-playable 比预想来得更早。\n\n**行业动态**\nNintendo 官宣下周双 Direct（周二 Zelda 40 周年专场）；FF7R 终章实体版需联网下载完整游戏，「实体盘当钥匙」定性完成；StarCraft 官网异动，BlizzCon 官宣只差临门一脚；Miami 市长想把县改成 GTA6 场景遭警方反对。\n\n**AI 板块**\nDLSS 5 解锁首日：RTX 5080 掉帧 73%、游戏内悄悄改名「Neural Rendering」、Into The Unwell 用「No DLSS 5. Just good art direction」反向营销；Fable 5.1 × Opus 5 组合工作流演示爆红。\n\n**新游看点**\nThe Missing Tail 双猫分屏合作（80 Level 288 万浏览）；Pinetrail 小三轮版 Death Stranding（2027 Q2）；Beetleball 黄金粪玉足球已发售；菇域幽城 9/10。\n\nPCU 速览：零号连队 33,806、渔力全开 112,816（周末回升）、红色沙漠 39,569。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

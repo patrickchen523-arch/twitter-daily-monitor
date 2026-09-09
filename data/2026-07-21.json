@@ -47,7 +47,11 @@
         {
           "idx": "AI科技热点 01",
           "source": "Superman · AI开源",
-          "tags": ["OCR", "开源", "百度"],
+          "tags": [
+            "OCR",
+            "开源",
+            "百度"
+          ],
           "title": "百度开源Unlimited-OCR：3B参数一次性解析100页文档，本地运行",
           "en_title": "China open-sourced a peanut-sized OCR that parses entire 100-page PDFs in one shot. Only 3B params. Runs locally.",
           "full_text": "China open-sourced a peanut-sized OCR that parses entire 100-page PDFs in one shot..\n\nIt's called Unlimited-OCR. Only 3B params. Runs locally.\n\nEvery other OCR tool chops your doc into pages and loses the thread. this one reads the whole thing in a single pass.\n\n→ One-shot \"long-horizon\" parsing (32K context window)\n→ Multilingual, out of the box\n→ 93% on the standard parsing benchmark (+6 over baseline)\n→ <0.11 error rate past 40 pages\n→ Runs 100% locally on your own hardware\n→ Works with Transformers, vLLM, SGLang",
@@ -69,7 +73,11 @@
         {
           "idx": "AI科技热点 02",
           "source": "PC Gamer · 硬件",
-          "tags": ["BCI", "脑机接口", "黑神话悟空"],
+          "tags": [
+            "BCI",
+            "脑机接口",
+            "黑神话悟空"
+          ],
           "title": "脑机接口BCI演示：用意念玩黑神话悟空",
           "en_title": "Flashy brain-computer interface allows gamers to play Black Myth: Wukong with their mind",
           "full_text": "Flashy brain-computer interface allows gamers to play Black Myth: Wukong with their mind",
@@ -95,7 +103,11 @@
         {
           "idx": "游戏行业 01",
           "source": "PC Gamer · 市场",
-          "tags": ["Palworld", "Steam", "在线人数"],
+          "tags": [
+            "Palworld",
+            "Steam",
+            "在线人数"
+          ],
           "title": "Palworld第二周末逼近百万同时在线，持续增长",
           "en_title": "Palworld is only growing more powerful, hitting nearly a million concurrents in its second weekend",
           "full_text": "Palworld is only growing more powerful, hitting nearly a million concurrents in its second weekend",
@@ -113,7 +125,11 @@
         {
           "idx": "游戏行业 02",
           "source": "Eurogamer · 销量",
-          "tags": ["AC黑旗", "育碧", "重制"],
+          "tags": [
+            "AC黑旗",
+            "育碧",
+            "重制"
+          ],
           "title": "刺客信条黑旗Resynced首周销量突破300万",
           "en_title": "Assassin's Creed Black Flag Resynced sold 3 million in its first week",
           "full_text": "Assassin's Creed Black Flag Resynced sold 3 million in its first week",
@@ -134,7 +150,11 @@
         {
           "idx": "游戏行业 03",
           "source": "PC Gamer · MMO",
-          "tags": ["FF14", "手游", "取消"],
+          "tags": [
+            "FF14",
+            "手游",
+            "取消"
+          ],
           "title": "FF14手游全球上线前被砍——还没走出日本就结束了",
           "en_title": "Final Fantasy 14's attempt to take the MMO mobile is over before it could go worldwide",
           "full_text": "Final Fantasy 14's attempt to take the MMO mobile is over before it could go worldwide",
@@ -152,7 +172,11 @@
         {
           "idx": "游戏行业 04",
           "source": "RagerYT · 市场",
-          "tags": ["Palworld", "TCG", "卡片"],
+          "tags": [
+            "Palworld",
+            "TCG",
+            "卡片"
+          ],
           "title": "Palworld卡片游戏预售350万包——7月30日发布",
           "en_title": "Palworld card game hits 3.5 million packs sold before it even officially launches",
           "full_text": "Palworld card game hits 3.5 million packs sold before it even officially launches\n\nThe game drops July 30 and pre-sales alone are already historic\n\nThe same studio that survived a Nintendo lawsuit is now going after Pokémon on its own turf\n\nThe physical card market\n\n40 million players, 850,000 concurrent on Steam, number one on SteamDB\n\nAnd now 3.5 million packs sold before launch day",
@@ -182,7 +206,11 @@
         {
           "idx": "新游推文 01",
           "source": "ごだか · 病毒式",
-          "tags": ["解谜", "物理", "病毒"],
+          "tags": [
+            "解谜",
+            "物理",
+            "病毒"
+          ],
           "title": "Walkable Cities：单脚行走解谜小游戏爆红430万播放",
           "en_title": "片足を軸に進むミニゲーム - Walkable Cities goes viral with 4.3M views",
           "full_text": "片足を軸に進むミニゲーム。角に差し掛かると詰む。\n\n『Walkable Cities』",
@@ -214,7 +242,11 @@
         {
           "idx": "新游推文 02",
           "source": "電ファミニコゲーマー · 新游",
-          "tags": ["合作", "物理", "建造"],
+          "tags": [
+            "合作",
+            "物理",
+            "建造"
+          ],
           "title": "Pigs and Wolf：三只小猪物理守家协作游戏",
           "en_title": "Pigs and Wolf - co-op game where piglets defend their house with physics-based chaos",
           "full_text": "【最も人気】子ブタになってオオカミから家を守る協力ゲーム『Pigs and Wolf』が面白そう。物理演算で奇想天外な動きをする家がカオスすぎる\n\n昼はワラや木材といった資源を集めて家を改築・強化し、夜になったら襲来するオオカミの群れに備える",
@@ -235,7 +267,9 @@
           "game_name": "Pigs and Wolf",
           "genre": "合作生存建造",
           "developer": null,
-          "platforms": ["PC"],
+          "platforms": [
+            "PC"
+          ],
           "price": null,
           "release_date": null,
           "steam_url": "https://store.steampowered.com/app/Pigs_and_Wolf",
@@ -246,7 +280,11 @@
         {
           "idx": "新游推文 03",
           "source": "4ydam · 发售",
-          "tags": ["合作", "飞机", "今日发售"],
+          "tags": [
+            "合作",
+            "飞机",
+            "今日发售"
+          ],
           "title": "Watch Yo Plane今日发售——双人合作驾驶飞机",
           "en_title": "Watch Yo Plane releases today - co-pilot a plane with a friend, crash a LOT",
           "full_text": "My game Watch Yo Plane is sitting at 3,000 Wishlists 🤩🎉\n\n🚨 It's releasing next week on Tuesday 21st of July 🚨\n\n- Co-pilot a plane with a friend\n- Test your coordination and teamwork\n- Crash a LOT and scream at each other",
@@ -267,7 +305,9 @@
           "game_name": "Watch Yo Plane",
           "genre": "合作模拟",
           "developer": "4ydam",
-          "platforms": ["PC"],
+          "platforms": [
+            "PC"
+          ],
           "price": null,
           "release_date": "已发售 · 2026年7月21日",
           "steam_url": "https://store.steampowered.com/app/Watch_Yo_Plane",
@@ -286,7 +326,11 @@
         {
           "idx": "开发工具 01",
           "source": "SteamDB · 活动",
-          "tags": ["Steam", "火车节", "展示"],
+          "tags": [
+            "Steam",
+            "火车节",
+            "展示"
+          ],
           "title": "Steam火车节进行中——折扣和Demo展示至7月27日",
           "en_title": "Steam Train Fest is here: Discounts, demos, and more through July 27th",
           "full_text": "Steam Train Fest is here: Discounts, demos, and more from now through July 27th!",

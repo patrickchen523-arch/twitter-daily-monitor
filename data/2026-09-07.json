@@ -1,0 +1,552 @@
+{
+ "date": "2026-09-07",
+ "meta": {
+  "raw_count": 180,
+  "filtered_count": 132,
+  "selected_count": 12,
+  "crawl_time": "2026-09-07 10:30"
+ },
+ "lede": "The Blood of Dawnwalker 发售 3 天销量破 100 万：前 CDPR 阵容的处女作封神\nAstra 周末狂欢：自己挖到 Minecraft 钻石、独力通关 RimWorld，还有人把它 one-shot 的游戏上架了 App Store",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "The Blood of Dawnwalker 发售 3 天销量破 100 万：前 CDPR 阵容的处女作封神"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Astra 周末狂欢：自己挖到 Minecraft 钻石、独力通关 RimWorld，还有人把它 one-shot 的游戏上架了 App Store"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Astra 周末狂欢：computer use 挖到钻石、一条指令通关 RimWorld、one-shot 作品上架 App Store\nBad Apple!! 被放进苍蝇大脑播放：活体神经元计算 365 万浏览\nAnshu 的 Astra 3D 游戏教程 236 万浏览：图像生成是画质诀窍"
+  },
+  {
+   "id": "industry",
+   "text": "The Blood of Dawnwalker 3 天破百万：前 CDPR 阵容处女作\n新 Halloween 游戏包含性内容引 1090 万围观：Steam 成人内容打击的爆点时刻\nPolygon：GOTY 2026 是多年来最弱候选年\nAmazon《古墓丽影》剧集制作违反英国安全法"
+  },
+  {
+   "id": "indie",
+   "text": "Last Stop：Roblox 开发者一年心血正式上线\nDungeon Picnic 体验版开放：RPG×肉鸽×野餐式队伍构建\nFEEDSTOCK：队友的胃袋就是背包，吃太多会胖到卡住路\n迪姆雷斯（Dimraeth）9/15 发售：PoE 式哈克+8 人据点慢生活"
+  },
+  {
+   "id": "tools",
+   "text": "PixZels：让 3D 建模像画像素画一样直观的体素工具"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · Astra 狂欢",
+     "tags": [
+      "Astra",
+      "Agent"
+     ],
+     "title": "Astra 周末狂欢：挖到 Minecraft 钻石、独力通关 RimWorld、one-shot 作品上架 App Store",
+     "en_title": "I asked GPT-6 Astra to mine a diamond in Minecraft using computer use, then went to sleep. Woke up to a diamond in its inventory",
+     "full_text": "I asked GPT-6 Astra to mine a diamond in Minecraft using computer use, then went to sleep. Woke up to a diamond in its inventory.",
+     "author": "wuyang_zhou",
+     "date": "2026-09-06",
+     "likes": 2088,
+     "views": 279033,
+     "link": "https://x.com/wuyang_zhou/status/2096548032128942370",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096547508155809792/img/r0L_1bBTVfnpTUYU.jpg",
+      "video_url": "https://x.com/wuyang_zhou/status/2096548032128942370/video/1"
+     },
+     "summary": "Astra 的「自主性演示」集中爆发：Wuyang Zhou 让 Astra 用 computer use 在 Minecraft 里挖钻石，睡觉醒来库存里真的有钻石（27.9 万浏览）；日本玩家只给一条指令「全部自己判断并通关游戏」，Astra 驱使搜索+外部记忆连续打赢袭击、带着全员（含首只宠物龙猫）逃出 RimWorld 星球（7.2 万浏览）；土耳其开发者 Fatih Beceren 用单个 prompt 做出开放世界 RPG Morta's Blade 并上架 App Store（3 万浏览）；此外还有 Astra 用 MCP 在 Minecraft 重建纽约（12.3 万浏览）、HD-2D 风格实验（3.4 万）。",
+     "analysis": "与上周「prompt-to-playable」的生成叙事不同，本波的看点是「agent 的持久自主性」：跨小时任务（挖矿/通关/上架）意味着模型不再只做一次性输出，而是维持目标-行动-反馈的闭环。游戏正在成为 agent 能力的标准测试场——规则明确、反馈即时、可重置，比任何 benchmark 都适合展示「自己想办法」。对游戏从业者最现实的一条是 Morta's Blade：AI 生成的游戏已经完成从 demo 到商店上架的全流程，平台审核对「AI 生产力游戏」的定义问题不再遥远。",
+     "recommendation": "Astra 周末狂欢：从挖钻石到 App Store 上架，agent 闭环跑通",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 活体计算",
+     "tags": [
+      "生物计算",
+      "Bad Apple"
+     ],
+     "title": "Bad Apple!! 被放进苍蝇大脑播放：活体神经元计算 365 万浏览",
+     "en_title": "Bad Apple but it's playing on a fly's brain",
+     "full_text": "Bad Apple but it's playing on a fly's brain",
+     "author": "linguinelabs",
+     "date": "2026-09-06",
+     "likes": 39106,
+     "views": 3653685,
+     "link": "https://x.com/linguinelabs/status/2096487329091441090",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096486138248941568/img/grpoJeDvHY_MAgxw.jpg",
+      "video_url": "https://x.com/linguinelabs/status/2096487329091441090/video/1"
+     },
+     "summary": "linguinelabs 把东方 Project 名曲 Bad Apple!! 的影像「播放」在活体苍蝇的大脑上——神经元响应被逐帧渲染出来，365 万浏览、3.9 万赞。社区开发者 Blendi 随即放出配套可视化：实时显示哪些神经元在放电、苍蝇「决定」了什么（9.3 万浏览）。",
+     "analysis": "这是「活体计算机」叙事的一次完美病毒化：Bad Apple!! 本身就是技术圈的极限移植梗图腾（从计算器到 PowerPoint 到红白机），苍蝇大脑是它的最新宿主——用梗的谱系给硬核神经科学做了大众化包装。对游戏行业的远期信号：如果生物基底可以承载渲染与决策，未来「硬件」的定义会从硅基扩展到培养皿。眼下更实际的启发是 Blendi 的可视化——把不可见的计算过程做成可看的东西，是任何技术内容传播的最短路径。",
+     "recommendation": "Bad Apple 播进苍蝇大脑：极限移植梗图腾的生物学续章",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · Astra 教程",
+     "tags": [
+      "Astra",
+      "工作流"
+     ],
+     "title": "Anshu 的 Astra 3D 游戏教程 236 万浏览：45 分钟 one-shot，「图像生成是画质诀窍」",
+     "en_title": "GPT-6 Astra is some kind of turbo-AGI machine god for 3D games. It one-shot this in 45 minutes",
+     "full_text": "dude GPT-6 Astra is some kind of turbo-AGI machine god for 3D games. It one-shot this in 45 minutes for hardly a couple % of my quota. I figured out how to get great graphics out of it. The trick is image gen.",
+     "author": "anshuc",
+     "date": "2026-09-04",
+     "likes": 18021,
+     "views": 2363131,
+     "link": "https://x.com/anshuc/status/2096008083826725132",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096004824751890434/img/fW0IV1fAgJ3b7i-D.jpg",
+      "video_url": "https://x.com/anshuc/status/2096008083826725132/video/1"
+     },
+     "summary": "开发者 Anshu 的 Astra 3D 游戏演示拿下 236 万浏览、1.8 万赞：45 分钟 one-shot 一款完整 3D 游戏，只花配额的几个百分点。他的画质诀窍是「先用图像生成做目标概念图，再让 Astra 迭代到游戏画面逼近概念图」。同周 Udi Wertheimer 的长文反思（3.8 万浏览）与之呼应：几十年来游戏美术时间都花在「把愿景逆向工程成引擎能处理的东西」——AI 正在把这条管线正向化。",
+     "analysis": "「概念图驱动迭代」把传统管线的方向反了过来：过去是 artist→引擎适配→渲染输出，现在是目标图→AI 逼近→实时可玩。Udi 的观点值得每个美术从业者认真读一遍——被压缩的不是「美术」而是「逆向翻译层」（为引擎约束做妥协的那部分工作）。真正的护城河移向两端：定义愿景的品味，与验收质量的判断力。",
+     "recommendation": "Astra 45 分钟 one-shot 236 万浏览：游戏管线正在被正向化",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 销量里程碑",
+     "tags": [
+      "Dawnwalker",
+      "百万销量"
+     ],
+     "title": "The Blood of Dawnwalker 发售 3 天销量破 100 万：前 CDPR 阵容的处女作封神",
+     "en_title": "The Blood of Dawnwalker has sold 1 million copies in 3 days",
+     "full_text": "The Blood of Dawnwalker has sold 1 million copies in 3 days",
+     "author": "eurogamer",
+     "date": "2026-09-06",
+     "likes": 210,
+     "views": 11586,
+     "link": "https://x.com/eurogamer/status/2096555482689212826",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRh2FVHXAAIT64n.jpg"
+     },
+     "game_ref": "The Blood of Dawnwalker",
+     "summary": "Rebel Wolves（前 CDPR 资深成员组建）的处女作 The Blood of Dawnwalker 官宣：发售 3 天销量突破 100 万份。Eurogamer 同期给出「hell of a debut」的评价（好评趋势），首日补丁修复教程 bug 与 shader 崩溃问题继续滚动。本周它同时贡献了另一个话题：玩家社区 24 小时内把 Geralt 换进了游戏。",
+     "analysis": "百万三日对中型发行（Bandai Namco 支持的新厂处女作）是顶级成绩，也再次验证「资深团队单飞+暗黑奇幻+时间压力机制」的配方溢价。更值得注意的是它的传播组合拳：销量数据、mod 生态（一日出现 Geralt）、玩法争议（时间压力被 mod 移除）三条话题线并行——现代发售已经不只是一次上线，而是一场内容运营。",
+     "recommendation": "Dawnwalker 3 天破百万：CDPR 系新厂的首发范本",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "DiscussingFilm · 内容争议",
+     "tags": [
+      "Halloween",
+      "成人内容"
+     ],
+     "title": "新 Halloween 游戏包含性内容引 1090 万围观：Steam 成人内容打击的爆点时刻",
+     "en_title": "Sex has been included in the new 'HALLOWEEN' game",
+     "full_text": "Sex has been included in the new 'HALLOWEEN' game.",
+     "author": "DiscussingFilm",
+     "date": "2026-09-05",
+     "likes": 112421,
+     "views": 10908955,
+     "link": "https://x.com/DiscussingFilm/status/2096296921224638918",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095966129256538113/img/ujmoloCtS8gYhzaL.jpg",
+      "video_url": "https://x.com/DiscussingFilm/status/2096296921224638918/video/1"
+     },
+     "summary": "娱乐账号 DiscussingFilm 一条「新《月光光心慌慌》游戏包含性内容」的推文狂揽 1,090 万浏览、11.2 万赞——本周最大游戏传播事件。它恰好撞上 Steam 成人内容政策收紧的背景：Hellraiser 游戏开发者此前刚表态「成人打击对我们的艺术形式是荒谬的」，但认为自己能靠 Clive Barker 关联活下来。",
+     "analysis": "1,090 万浏览证明「游戏里的性」仍是跨圈层流量密码，而这正是平台政策收紧的矛盾核心：Steam 一边清退成人内容、一边被此类事件的病毒传播反复架在火上。对开发者的现实含义是双重的：成人向内容的市场存在确凿（这条推文就是市场调研），但分发风险已高到需要把「平台依赖」计入风险评估——itch 等替代渠道的备份策略从可选项变成必选项。",
+     "recommendation": "Halloween 性内容 1090 万围观：成人内容政策与市场需求的正面相撞",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Polygon · 年度讨论",
+     "tags": [
+      "GOTY",
+      "行业争论"
+     ],
+     "title": "Polygon：GOTY 2026 是多年来最弱候选年",
+     "en_title": "GOTY 2026 is the Weakest Field in Years",
+     "full_text": "GOTY 2026 is the Weakest Field in Years",
+     "author": "Polygon",
+     "date": "2026-09-06",
+     "likes": 92,
+     "views": 51780,
+     "link": "https://x.com/Polygon/status/2096574161380336077",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRiHFv3WIAAu-tE.jpg"
+     },
+     "summary": "Polygon 撰文断言：2026 年的 GOTY 竞争是多年来最弱的一届。5.2 万浏览引发争论。同期 Epic CEO Tim Sweeney 谈行业「Crash 2.0」——他的解法是「建更多工厂」（提高产能而非收缩），一周内 Dawnwalker 百万、WARDOGS 狂欢等数据则提供了反例素材。",
+     "analysis": "「最弱 GOTY 年」的判断与 2026 年的实际数据存在张力：Dawnwalker 三日百万、双人成行级合作新作涌现、独立爆款不断。更准确的描述可能是「头部缺位、腰部繁荣」——3A 大作集体让位给 GTA6（11 月），年度奖项叙事真空被中型作品填补。这对中型团队反而是窗口期：没有巨石压顶的年份，榜单位置的可及性最高。",
+     "recommendation": "「GOTY 最弱年」争议：头部缺位、腰部繁荣的窗口期",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 影游联动",
+     "tags": [
+      "古墓丽影",
+      "剧集"
+     ],
+     "title": "Amazon《古墓丽影》剧集制作违反英国安全法",
+     "en_title": "Amazon's Sophie Turner-led Tomb Raider series broke UK safety laws during production",
+     "full_text": "Amazon's Sophie Turner-led Tomb Raider series broke UK safety laws during production.",
+     "author": "eurogamer",
+     "date": "2026-09-06",
+     "likes": 16,
+     "views": 13717,
+     "link": "https://x.com/eurogamer/status/2096471227598561634",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HRgpdHxWIAE5m4H.jpg"
+     },
+     "summary": "Eurogamer 报道：Amazon 的 Sophie Turner 版《古墓丽影》真人剧在制作期间违反了英国安全生产法规（1.4 万浏览）。IP 改编浪潮下的制作管理问题再次浮出水面。",
+     "analysis": "影游联动的产能竞赛正在以安全换进度：当 IP 扩张的速度超过合格制片团队的供给，法规违规就成为系统性风险而非个案。对游戏 IP 持有方，这条新闻是授权谈判里加注「制作合规条款」的现成论据。",
+     "recommendation": "古墓丽影剧组违反安全法：IP 扩张产能竞赛的代价",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · Roblox 发布",
+     "tags": [
+      "Roblox",
+      "Last Stop"
+     ],
+     "title": "Last Stop：Roblox 开发者一年心血正式上线，36.6 万围观",
+     "en_title": "Last Stop is officially live - a passion project a year in the making on Roblox",
+     "full_text": "I'm excited to show everyone a game I've been working on for around a year. It really turned into a passion project that I'm very proud of!! Last Stop is officially live!!",
+     "author": "HawkieDevRBX",
+     "date": "2026-09-05",
+     "likes": 13327,
+     "views": 365760,
+     "link": "https://x.com/HawkieDevRBX/status/2096292377006596402",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096290366848675847/img/ToPpJS5kTeRNWQBV.jpg",
+      "video_url": "https://x.com/HawkieDevRBX/status/2096292377006596402/video/1"
+     },
+     "summary": "Roblox 开发者 HawkieDev 的一年心血之作 Last Stop 正式上线：36.6 万浏览、1.3 万赞的发布推文在 Roblox 社区获得热烈反响。",
+     "analysis": "「一年开发周期」在 Roblox 生态属于重投入（多数爆款迭代周期以周计），发布推文的互动规模证明平台对「认真作品」的叙事有强共鸣——Roblox 玩家社区正在学习用 Steam 独游的方式捧开发者。",
+     "recommendation": "Last Stop：Roblox 的一年心血作上线，36 万人围观",
+     "featured": true
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 体验版",
+     "tags": [
+      "Dungeon Picnic",
+      "肉鸽"
+     ],
+     "title": "Dungeon Picnic 体验版开放：RPG×肉鸽×野餐式队伍构建",
+     "en_title": "Dungeon Picnic - RPG x roguelike x party building demo out now",
+     "full_text": "RPG×ローグライク×パーティ構築「Dungeon Picnic」体験版配信開始！",
+     "author": "Lapismine_game",
+     "date": "2026-09-05",
+     "likes": 5828,
+     "views": 275252,
+     "link": "https://x.com/Lapismine_game/status/2096372460409258098",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096367950924337152/img/h0iH0BEq0sgEIjPs.jpg",
+      "video_url": "https://x.com/Lapismine_game/status/2096372460409258098/video/1"
+     },
+     "game_ref": "Dungeon Picnic",
+     "summary": "Lapismine 的 Dungeon Picnic 开放 Steam 体验版（appid 3736800，正式版待公布）：RPG×肉鸽×队伍构建的三重融合，27.5 万浏览、5,828 赞。",
+     "analysis": "「野餐」的轻快包装+肉鸽的硬核内核是反差营销的有效组合；demo 先行的转化漏斗在 Next Fest 之外同样有效。",
+     "recommendation": "Dungeon Picnic：野餐包装的队伍构建肉鸽，体验版已开",
+     "featured": false,
+     "enrichment": {
+      "game_name": "Dungeon Picnic",
+      "genre": "RPG×肉鸽×队伍构建",
+      "developer": "Lapismine",
+      "platforms": [
+       "PC（Steam）"
+      ],
+      "price": "未公布",
+      "release_date": "正式版待公布（体验版已上线）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3736800/Dungeon_Picnic/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3736800/4c80d93240f8ed7c4be991a0e2f574b8/header.jpg",
+      "youtube_video": null,
+      "description": "【玩法】RPG×肉鸽×队伍构建三重融合。【节点】体验版已开放，正式版待公布。",
+      "why_notable": "轻快包装+硬核内核的反差组合。",
+      "positioning": "野餐式队伍构建肉鸽"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "4Gamer · Steam 页公开",
+     "tags": [
+      "合作恐怖",
+      "FEEDSTOCK"
+     ],
+     "title": "FEEDSTOCK：队友的胃袋就是背包，吃太多会胖到卡住路（10 月发售）",
+     "en_title": "FEEDSTOCK - your partner's stomach is the inventory, eat too much and get stuck",
+     "full_text": "4人協力ホラー「FEEDSTOCK」Steamストアページ公開。相棒の胃袋がインベントリ。戦利品を食った相棒はどんどん太る！太ると道が通れなくなることも。",
+     "author": "4GamerNews",
+     "date": "2026-09-06",
+     "likes": 1063,
+     "views": 125975,
+     "link": "https://x.com/4GamerNews/status/2096491297653891325",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2096491227093090304/pu/img/mt0U5Lf9fa9_dcVg.jpg",
+      "video_url": "https://x.com/4GamerNews/status/2096491297653891325/video/1"
+     },
+     "game_ref": "FEEDSTOCK",
+     "summary": "Ahaha studio 的 4 人合作恐怖 FEEDSTOCK 公开 Steam 页（appid 5154830，2026 年 10 月发售）：队友的胃袋就是物品栏——吃下战利品的伙伴会越来越胖，胖到挤不过通道；近接语音+敌人循声而来。12.6 万浏览。",
+     "analysis": "「胃袋=背包」把 Lethal Company 谱系的核心（负重权衡）做成了字面意义的身体机制：贪吃=变胖=卡路=连累全队，黑色幽默与策略深度同源。近接语音+声学敌人是品类标配，但体重系统的喜剧张力是差异化记忆点。",
+     "recommendation": "FEEDSTOCK：胃袋即背包、贪吃卡路的 4 人合作恐怖",
+     "featured": false,
+     "enrichment": {
+      "game_name": "FEEDSTOCK",
+      "genre": "4人合作恐怖",
+      "developer": "Ahaha studio",
+      "platforms": [
+       "PC（Steam）"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年 10 月",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5154830/FEEDSTOCK/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5154830/d249eb3b5171ee8a53a673a4d3be15a7/header.jpg",
+      "youtube_video": null,
+      "description": "【玩法】队友胃袋=物品栏：吃战利品会变胖、胖到卡路；近接语音+敌人循声。【节点】2026 年 10 月发售。",
+      "why_notable": "把负重权衡做成身体机制的黑色幽默合作恐怖。",
+      "positioning": "胃袋即背包——贪吃会卡路的合作恐怖"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "スチまと · 发售倒计时",
+     "tags": [
+      "迪姆雷斯",
+      "ARPG"
+     ],
+     "title": "迪姆雷斯（Dimraeth）9/15 发售：PoE 式哈克+300 魔法+8 人据点慢生活",
+     "en_title": "Dimraeth - PoE-style ARPG with 300+ spells and an 8-player stronghold slowlife, launches Sep 15",
+     "full_text": "『PoE』みたいなガチハクスラで、家建てて8人スローライフできるの狂気だろ。8種族6クラスでビルド組んで300種以上の魔法をぶっ放すドット絵ARPGなんだが、なぜか荒野に自分たちだけの拠点を作れる。",
+     "author": "stmatomato",
+     "date": "2026-09-06",
+     "likes": 1421,
+     "views": 131694,
+     "link": "https://x.com/stmatomato/status/2096538396667584570",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096421091376054272/img/CC-obBBhalRKFLib.jpg",
+      "video_url": "https://x.com/stmatomato/status/2096538396667584570/video/1"
+     },
+     "game_ref": "Dimraeth",
+     "summary": "スチまと安利 Mudtek 的迪姆雷斯（Dimraeth，appid 2402680，9/15 发售）：「像 PoE 一样的硬核哈克，还能建房过 8 人慢生活是吧」——8 族 6 职业配 build、300+ 魔法的像素 ARPG，荒野据点经营+同伴恋爱系统。13.2 万浏览。此前 0904 Niche Gamer preview 曝光后，日媒二次背书。",
+     "analysis": "「死斗之后回家躺着谈恋爱」的属性过杂配方精准踩中 ARPG 用户的隐性需求：刷装循环的尽头是归属感。9/15 的发售档期刻意避开大作窗口，日媒安利链（Niche Gamer→スチまと）证明了跨市场传播的可行路径。",
+     "recommendation": "迪姆雷斯 9/15 发售：PoE 式哈克+据点慢生活的欲张り套装",
+     "featured": true,
+     "enrichment": {
+      "game_name": "迪姆雷斯（Dimraeth）",
+      "genre": "像素 ARPG（哈克+据点经营）",
+      "developer": "Mudtek",
+      "platforms": [
+       "PC（Steam）"
+      ],
+      "price": "未公布",
+      "release_date": "2026年9月15日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2402680/Dimraeth/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2402680/8fe3923c10dfda2a38853242bce31a4b/header.jpg",
+      "youtube_video": null,
+      "description": "【玩法】8 族 6 职业 build、300+ 魔法的硬核 ARPG；荒野据点经营、最多 8 人合作、同伴恋爱。【节点】9/15 发售。【传播】Niche Gamer preview → スチまと日文安利链。",
+      "why_notable": "死斗+慢生活的属性过杂配方，跨市场传播样本。",
+      "positioning": "PoE 式哈克+8 人据点慢生活"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X · 极限开发",
+     "tags": [
+      "桃太郎",
+      "肉鸽"
+     ],
+     "title": "トモぞヴP 自制 roguelike 桃太郎：2.9 万浏览",
+     "en_title": "ローグライク桃太郎つくりました - a roguelike Momotaro",
+     "full_text": "ローグライク桃太郎つくりました",
+     "author": "TomozoP",
+     "date": "2026-09-06",
+     "likes": 478,
+     "views": 29297,
+     "link": "https://x.com/TomozoP/status/2096566495388311927",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096566391877083136/img/BBcXV8oaQfR5AnfY.jpg",
+      "video_url": "https://x.com/TomozoP/status/2096566495388311927/video/1"
+     },
+     "summary": "日本开发者把民间传说桃太郎做成 roguelike：随从狗猴雉的 classic 结构进入随机地牢。2.9 万浏览。",
+     "analysis": "国民传说×肉鸽的本地化题材思路，随从系统天然适配 roguelike 的临时 buff 结构。",
+     "recommendation": "roguelike 桃太郎：国民传说的肉鸽化",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "X · 沙盒",
+     "tags": [
+      "文明沙盒",
+      "New Dawn Protocol"
+     ],
+     "title": "New Dawn Protocol：行星尺度的文明沙盒亮相",
+     "en_title": "New Dawn Protocol is a planet-scale civilization sandbox",
+     "full_text": "new dawn protocol is a planet-scale civilization sandbox~",
+     "author": "TGUPJ",
+     "date": "2026-09-06",
+     "likes": 514,
+     "views": 27225,
+     "link": "https://x.com/TGUPJ/status/2096388689811157152",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096388000787632132/img/SxnnmDwoE8akb6pp.jpg",
+      "video_url": "https://x.com/TGUPJ/status/2096388689811157152/video/1"
+     },
+     "summary": "New Dawn Protocol 展示行星尺度的文明沙盒：全球地图上的文明演化模拟。2.7 万浏览。",
+     "analysis": "4X 的可视化野心版，「行星尺度」的尺度宣言是传播核心。",
+     "recommendation": "New Dawn Protocol：行星尺度文明沙盒",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Niche Gamer · Demo",
+     "tags": [
+      "僵尸",
+      "demo"
+     ],
+     "title": "Stupid Never Dies 新预告+试玩 demo 开放",
+     "en_title": "Stupid Never Dies got a new trailer and a playable demo",
+     "full_text": "Stupid Never Dies got a new trailer and a playable demo",
+     "author": "nichegamer",
+     "date": "2026-09-06",
+     "likes": 39,
+     "views": 4512,
+     "link": "https://x.com/nichegamer/status/2096437131816185882",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2096437087423680514/pu/img/eC_w9u2aDG9PgPOI.jpg",
+      "video_url": "https://x.com/nichegamer/status/2096437131816185882/video/1"
+     },
+     "summary": "Niche Gamer 报道 Stupid Never Dies 新预告与可玩 demo 开放。4,512 浏览。",
+     "analysis": "常规 demo 节点更新。",
+     "recommendation": "Stupid Never Dies：新预告+demo 开放",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "X · 展会",
+     "tags": [
+      "音游RPG",
+      "PAX"
+     ],
+     "title": "Away From Home 出征 PAX West：节奏 RPG 现场试玩",
+     "en_title": "Away From Home at PAX West booth #1410 - rhythm RPG with pixel art",
+     "full_text": "We're at #PAXWest! Come play our rhythm RPG Away From Home at booth #1410! Or if you're more into puzzle fighting games, @PipPuzzle is sharing our booth!",
+     "author": "Squished_Y",
+     "date": "2026-09-04",
+     "likes": 180,
+     "views": 7925,
+     "link": "https://x.com/Squished_Y/status/2095914131236753868",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2095912637850894336/img/XPFY8ZkTrWbRzZa1.jpg",
+      "video_url": "https://x.com/Squished_Y/status/2095914131236753868/video/1"
+     },
+     "summary": "像素音游 RPG Away From Home 出征 PAX West（1410 展位），与解谜格斗 Pip Puzzle 拼展。7,925 浏览。",
+     "analysis": "小团队拼展位是展会成本优化的标准操作。",
+     "recommendation": "Away From Home：PAX West 现场试玩",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "X · 网页玩具",
+     "tags": [
+      "网页艺术",
+      "梗图"
+     ],
+     "title": "RTK 发现「最疯的网站」：梗图、游戏与动漫彩蛋堆成的大型动画场景",
+     "en_title": "holy fuck i just found the craziest site ever - a massive animated scene full of memes, games, and anime references",
+     "full_text": "holy fuck i just found the craziest site ever. it's a massive animated scene full of memes, games, and anime references. ive been going through it for the last hour and its absolutely stunning the level of detail the artist has gone into.",
+     "author": "RiverKhan",
+     "date": "2026-09-05",
+     "likes": 8175,
+     "views": 401689,
+     "link": "https://x.com/RiverKhan/status/2096376152830923049",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096375333968867328/img/Vur5UrJzzjgoUcap.jpg",
+      "video_url": "https://x.com/RiverKhan/status/2096376152830923049/video/1"
+     },
+     "summary": "RTK 安利一个「疯狂网站」：满屏梗图、小游戏与动漫彩蛋构成的大型互动动画场景，细节密度让用户逛了一小时。40.2 万浏览、8,175 赞。",
+     "analysis": "「可探索的彩蛋场景」是 404 游戏谱系（0903 参考区）的放大版：把网站本身做成游戏世界，彩蛋密度即传播密度。",
+     "recommendation": "梗图彩蛋堆成的大型动画场景：可探索的网页玩具",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 工具发布",
+     "tags": [
+      "PixZels",
+      "3D建模"
+     ],
+     "title": "PixZels：让 3D 建模像画像素画一样直观的体素工具",
+     "en_title": "PixZels - 3D modelling that feels just like drawing pixel art, free on itch",
+     "full_text": "I built PixZels because I wanted 3D modelling to feel just like drawing: intuitive, natural and fun. Improving it every day to make 3D creation as joyful as drawing pixel art.",
+     "author": "Pixel_Salvaje",
+     "date": "2026-09-05",
+     "likes": 1514,
+     "views": 48497,
+     "link": "https://x.com/Pixel_Salvaje/status/2096031918294774146",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2096031274964291584/img/a64-_IoPMYjMgNSs.jpg",
+      "video_url": "https://x.com/Pixel_Salvaje/status/2096031918294774146/video/1"
+     },
+     "summary": "开发者 pixel_salvaje 发布 PixZels（itch 免费）：让 3D 建模的手感对齐画像素画——直觉、自然、好玩，持续日更迭代。4.8 万浏览。",
+     "analysis": "「把 3D 的心智模型降维到 2D 绘画」是降低 3D 内容门槛的正路：比 Blender 的学习曲线低两个数量级，正好接住 Astra 时代「人人想做游戏资产」的新增需求——手绘系 3D 工具与 AI 生成工具将分别服务「享受过程」与「只要结果」两类用户。",
+     "recommendation": "PixZels：像画像素画一样做 3D 建模，itch 免费",
+     "featured": true
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**百万新厂日 + Astra 自主日**\nThe Blood of Dawnwalker 发售 3 天销量破 100 万——前 CDPR 阵容的处女作交出顶级答卷；Astra 周末狂欢升级：用 computer use 在 Minecraft 挖到钻石、一条指令独力通关 RimWorld（还救出宠物龙猫）、单 prompt 作品上架 App Store。\n\n**行业动态**\n新 Halloween 游戏的性内容推文狂揽 1,090 万浏览，撞上 Steam 成人内容收紧的枪口；Polygon 断言 GOTY 2026 是多年来最弱候选年（头部缺位、腰部繁荣的窗口期）；Amazon 古墓丽影剧集制作违反英国安全法。\n\n**AI 板块**\nBad Apple!! 被放进苍蝇大脑播放（365 万浏览）：极限移植梗图腾的生物学续章；Anshu 的 Astra 3D 教程 236 万浏览——「图像生成是画质诀窍」，游戏管线正在被正向化。\n\n**新游看点**\nRoblox 一年心血作 Last Stop 上线（36 万围观）；Dungeon Picnic 体验版开放；FEEDSTOCK「胃袋即背包」10 月发售；迪姆雷斯 9/15 发售。\n\nPCU 速览：零号连队 36,291、渔力全开 104,878、红色沙漠 44,164（周末高位）。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
