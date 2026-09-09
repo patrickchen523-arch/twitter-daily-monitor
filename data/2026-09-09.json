@@ -1,0 +1,538 @@
+{
+  "date": "2026-09-09",
+  "meta": {
+    "raw_count": 269,
+    "filtered_count": 226,
+    "selected_count": 12,
+    "crawl_time": "2026-09-09 12:00"
+  },
+  "lede": "任天堂官宣《时之笛》重制版 11 月 5 日发售、真人电影定档 2027 年 4 月 30 日；Don't Nod 财报承认资金撑不过 2027 年 1 月，最多裁员 90 人；Rockstar vs 被解雇员工最终听证开庭；SEGA 确认超大型'Super Game'项目因造价与风险被放弃。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "GPT-6 Astra 掀游戏逆向热潮：SNES 游戏实时改写、LoL 被完整复刻——机器码不再是壁垒"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Don't Nod 董事会批准重组：最多裁 90 人，财报承认资金存在'实质性不确定性'"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "《时之笛》重制版定档 11 月 5 日：首部全语音塞尔达，真人电影 2027 年 4 月 30 日上映"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "GPT-6 Astra 引爆游戏逆向：SuperAstra 可实时改写 SNES 游戏，LoL 被完整复刻\n果蝇全脑连接组玩《马里奥64》，续写 Bad Apple!! 实验神话\nEA 在 NHL 27 用生成式 AI 克隆解说声线且未提前披露"
+    },
+    {
+      "id": "industry",
+      "text": "Don't Nod 批准重组：最多裁员 90 人，资金撑不过 2027 年 1 月\nRockstar vs 31 名被解雇员工最终听证开庭，持续至 10 月 16 日\nSEGA 承认'Super Game'项目因造价过高、风险太大被放弃\nDouble Fine 公布离开 Xbox 后的首款游戏《Thank You Bus Driver》"
+    },
+    {
+      "id": "indie",
+      "text": "《时之笛》重制版 11 月 5 日发售，限定 Switch 2 同步公布\n《月光光心慌慌》改编游戏首日 PCU 33,639，今日唯一新突破爆款\n《Invokyr》：鬼屋诅咒桌游合作恐怖，体验版已上线"
+    },
+    {
+      "id": "tools",
+      "text": "陈成发布 Qoder CLI 性能优化：Bun 1.4.2 + bytecode 冷启动提速 3.69 倍\nUnity Build Profiles 实战：一套工程自动化多平台构建"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "开发者实机演示 · GPT-6 Astra",
+          "tags": [
+            "GPT-6",
+            "游戏逆向",
+            "模拟器"
+          ],
+          "title": "GPT-6 Astra 掀起游戏逆向热潮：SuperAstra 发布实现 SNES 游戏实时编辑，LoL 被完整复刻",
+          "en_title": "Introducing SuperAstra: Edit Super Nintendo games live with GPT-6",
+          "full_text": "Introducing SuperAstra: Edit Super Nintendo games live with GPT-6\n\nOne of my favorite ways to test new models has been reverse engineering classic games. This is hard because it's raw machine code. Astra is way better than anything I've seen.\n\nDownload and examples below 👇 https://t.co/O39Vx0DqDT",
+          "author": "scottastevenson",
+          "date": "2026-09-07",
+          "likes": 5481,
+          "views": 991954,
+          "link": "https://x.com/scottastevenson/status/2096972908828426747",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2096971580173631488/img/XIgeJTdUsjCxwk9V.jpg",
+            "video_url": "https://x.com/scottastevenson/status/2096972908828426747/video/1"
+          },
+          "summary": "开发者 Scott Stevenson 发布 SuperAstra 工具，可对 SNES 游戏的原始机器码做逆向与实时编辑，称 Astra 在该任务上'远超以往所有模型'，工具可直接下载。同日社区密集跟进：Konsti Wohlwend 让 Astra 复刻出英雄联盟（含真实英雄与技能）、Hank 用两小时把《风之杖》跑在手机上、Doug Silkstone 复刻浏览器版 Balatro。",
+          "analysis": "继前两日的复刻 demo 与算力披露后，Astra 生态出现了第一个可下载的正经工具——逆向主机机器码从专业模拟器团队的数月工作变成 prompt 级任务。复古游戏修复、民间移植、Mod 工具链的成本结构被改写，同时经典 IP 的'代码可及性'风险与二创授权需求同步上升。",
+          "recommendation": "GPT-6 Astra 掀游戏逆向热潮：SNES 游戏实时改写、LoL 被完整复刻——机器码不再是壁垒",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "神经科学实验 · 视频",
+          "tags": [
+            "脑机接口",
+            "connectome",
+            "实验"
+          ],
+          "title": "果蝇全脑连接组玩《马里奥64》：9790 赞的'最小大脑'续作",
+          "en_title": "playing mario 64 using a fly's brain",
+          "full_text": "playing mario 64 using a fly's brain https://t.co/G4BmfMSWb8",
+          "author": "barrelshifter",
+          "date": "2026-09-07",
+          "likes": 9790,
+          "views": 650533,
+          "link": "https://x.com/barrelshifter/status/2097004115826200898",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2097003650820485124/img/85z_Zbx7QDpKHi_i.jpg",
+            "video_url": "https://x.com/barrelshifter/status/2097004115826200898/video/1"
+          },
+          "summary": "工程师 Jessica Paquette 演示用果蝇的全脑连接组（约 14 万神经元）驱动《马里奥64》操作，从 9 月 7 日 Bad Apple!! 播放实验进阶到完整游戏操控，当日获 AI 区最高互动 9790 赞。实验展示了以生物神经回路作为实时控制器的能力边界。",
+          "analysis": "与动辄数十亿参数的大模型路线相反，这类'极小脑'实验探索的是控制信号的最小充分集，对轻量 NPC 行为、输入建模有启发价值；也让'游戏作为 AI 标准测试环境'的定位再次被强化。",
+          "recommendation": "果蝇全脑连接组玩《马里奥64》——14 万神经元的极小脑控制实验，650K 浏览",
+          "featured": false
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "GameSpot · 行业报道",
+          "tags": [
+            "EA",
+            "AI配音",
+            "生成式AI"
+          ],
+          "title": "EA 在 NHL 27 用生成式 AI 克隆解说员声音，未提前披露",
+          "en_title": "EA Used AI To Clone John Buccigross' Voice In NHL 27",
+          "full_text": "EA Used AI To Clone John Buccigross' Voice In NHL 27 https://t.co/JWbcxigbzh https://t.co/AscwHDQZTq",
+          "author": "GameSpot",
+          "date": "2026-09-08",
+          "likes": 303,
+          "views": 5529,
+          "link": "https://x.com/GameSpot/status/2097365647827280108",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRtW8FPakAA9s7H.jpg"
+          },
+          "summary": "ESPN 解说员 John Buccigross 在播客中透露，EA Sports 在《NHL 27》中用生成式 AI 模拟他的声音补充解说台词，开发方未提前告知。他回忆 AI 曾把'the crowd gets out of the seats'说成'chairs'需要人工修正，本人态度开放：'活更少钱一样，我接受'。EA CEO 此前称内部研究显示 60% 开发流程可被生成式 AI 显著提效，体育场建模已从 6 个月压缩到 6 周并将迈向 6 天，集团目标是开发效率提升 30%。",
+          "analysis": "这是首个被当事人公开证实、但流程上未向本人提前披露的 AAA 解说 AI 克隆案例，暴露了授权与知情权流程的空白。对音频管线团队，EA 的 6 个月→6 周→6 天叙事给出了资产级生成式 AI 的实测产能参照系。",
+          "recommendation": "EA 在 NHL 27 用生成式 AI 克隆解说声线且未提前披露——CEO 称 60% 开发流程可被 AI 提效",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 财报报道",
+          "tags": [
+            "裁员",
+            "财报",
+            "Don't Nod"
+          ],
+          "title": "Don't Nod 董事会批准重组：最多裁员 90 人，资金存在'实质性不确定性'",
+          "en_title": "Don't Nod approves restructuring that \"may result in the reduction of up to 90 positions\"",
+          "full_text": "Life is Strange creator Don't Nod approves restructuring that \"may result in the reduction of up to 90 positions\", while refocusing on \"priority projects\" https://t.co/HrrUENUfQS https://t.co/vMGWFlGQzP",
+          "author": "eurogamer",
+          "date": "2026-09-08",
+          "likes": 10,
+          "views": 4177,
+          "link": "https://x.com/eurogamer/status/2097319574584627464",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRss39TWAAAtjxE.jpg"
+          },
+          "summary": "《奇异人生》开发商 Don't Nod 董事会正式批准转型方案，法国团队或将裁减最多 90 个职位。半年报显示销售额降至 350 万欧元，财报承认存在'公司持续经营能力的实质性不确定性'，即资金撑不过 2027 年 1 月；蒙特利尔工作室靠一款 Netflix 大 IP 叙事游戏收入部分对冲。公司将把法国业务收缩为单一生产线，聚焦'优先项目'，工会谈判已启动。",
+          "analysis": "《奇异人生》《Vampyr》《Jusant》的老牌叙事工作室走到持续经营存疑，说明中型单机开发商在 4A 化成本与融资收紧之间的生存空间正被快速挤压。其'收缩为单一生产线'的重组路径，会成为欧洲同行下一轮 restructuring 的模板。",
+          "recommendation": "Don't Nod 董事会批准重组：最多裁 90 人，财报承认资金撑不过 2027 年 1 月",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 法律报道",
+          "tags": [
+            "Rockstar",
+            "工会",
+            "劳资纠纷"
+          ],
+          "title": "Rockstar vs 31 名被解雇员工最终听证开庭，持续至 10 月 16 日",
+          "en_title": "\"Rockstar has tried to get away with Grand Theft Employment Rights\" - Final hearing in Rockstar vs. GTA 6 fired employees begins this week",
+          "full_text": "\"Rockstar has tried to get away with Grand Theft Employment Rights\" - Final hearing in Rockstar vs. GTA 6 fired employees begins this week https://t.co/5zXeJG4Cq4 https://t.co/OmSfSyFP8C",
+          "author": "eurogamer",
+          "date": "2026-09-08",
+          "likes": 29,
+          "views": 7464,
+          "link": "https://x.com/eurogamer/status/2097271404798296409",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRsBIH9WoAAHyqD.jpg"
+          },
+          "summary": "Rockstar North 去年 10 月以'严重不当行为'为由立即解雇的 31 名员工（工会 IWGB 成员）劳资案最终听证于 9 月 10 日开庭，将持续至 10 月 16 日——距 GTA6 发售不到一个月。工会寻求复职或赔偿，并要求裁定解雇不公；Rockstar 曾申请驳回相关'黑名单'指控但被法庭驳回。案件已上呈英国议会并获时任首相回应。",
+          "analysis": "听证期与 GTA6 全球营销窗口几乎完全重叠，无论结果如何都会持续占据头条。对大厂而言，该案将树立'私聊群组言论能否作为解雇依据'的判例边界；工会化趋势下的雇员关系管理正成为 3A 项目交付风险的一部分。",
+          "recommendation": "Rockstar vs 31 名被解雇员工最终听证开庭——持续至 10 月 16 日，距 GTA6 发售不足一月",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Niche Gamer · 战略报道",
+          "tags": [
+            "SEGA",
+            "战略收缩"
+          ],
+          "title": "SEGA 承认神秘'Super Game'项目因造价过高、风险太大被放弃",
+          "en_title": "SEGA says its mysterious \"Super Game\" became too expensive and risky to justify",
+          "full_text": "SEGA says its mysterious “Super Game” became too expensive and risky to justify: https://t.co/Z5MpM1WnOX https://t.co/hEe3892OM1",
+          "author": "nichegamer",
+          "date": "2026-09-08",
+          "likes": 9,
+          "views": 1818,
+          "link": "https://x.com/nichegamer/status/2097321478307889611",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRsuxSJXMAAmQx_.jpg"
+          },
+          "summary": "SEGA 官方确认，其此前公布的神秘跨平台巨型项目'Super Game'因开发成本变得过高、风险无法论证而被放弃。该项目曾计划打通主机/PC/云端的超大 scale 游戏生态，是 SEGA '打造全球化常青 IP'战略的核心载体。",
+          "analysis": "继索尼收缩 live service、各厂砍跨平台巨型项目后，SEGA 的 Super Game 是'超大规模单点押注'模式失效的又一实锤。中型化、多线小赌注正在取代 one big bet，对发行商的立项方法论是直接影响。",
+          "recommendation": "SEGA 确认'Super Game'巨型项目被放弃：造价过高、风险无法论证",
+          "featured": false
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 新作报道",
+          "tags": [
+            "Double Fine",
+            "独立化",
+            "新作"
+          ],
+          "title": "Double Fine 公布离开 Xbox 后首款游戏：喜剧巴士模拟《Thank You Bus Driver》",
+          "en_title": "Double Fine's first game since leaving Xbox is a comedy bus-driving sim called Thank You Bus Driver",
+          "full_text": "Double Fine's first game since leaving Xbox is a comedy bus-driving sim called Thank You Bus Driver. https://t.co/Gr0ANhza6G https://t.co/eHoVH4Ej62",
+          "author": "eurogamer",
+          "date": "2026-09-08",
+          "likes": 23,
+          "views": 10839,
+          "link": "https://x.com/eurogamer/status/2097196003052986508",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRq8onuWwAAUnx-.jpg"
+          },
+          "summary": "Double Fine 公布独立后首款作品《Thank You Bus Driver》：喜剧巴士驾驶模拟，玩家扮演'鲁莽的守规矩司机'，开快车、扇乘客耳光、把违规者扔下车，Steam/GOG 已开放预购（coming soon）。背景：7 月 Xbox 重组波及约 3200 人，Double Fine 被剥离独立并保留 IP 与旧作目录，过渡期裁员约四分之一（90 人团队裁约 22 人）。",
+          "analysis": "被 3A 体系'甩出'后的第一部作品选择小体量喜剧模拟，是中型工作室独立化后的典型生存策略：低预算、短周期、先活下来。Compulsion 等同期独立的工作室大概率会走类似路径，值得持续观察独立化工作室的产能恢复速度。",
+          "recommendation": "Double Fine 独立后首作公布：喜剧巴士模拟《Thank You Bus Driver》，Steam/GOG 开放预购",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "The Game Awards · 官方公告",
+          "tags": [
+            "Nintendo",
+            "重制版",
+            "Switch 2"
+          ],
+          "title": "任天堂：《时之笛》重制版 11 月 5 日发售，40 周年 Direct 全家桶公布",
+          "en_title": "THE LEGEND OF ZELDA: OCARINA OF TIME — Coming November 5, 2026 to Switch 2",
+          "full_text": "Here's the first trailer for THE LEGEND OF ZELDA: OCARINA OF TIME.\n\nComing November 5, 2026 to Switch 2. https://t.co/yLiruR7rAQ",
+          "author": "thegameawards",
+          "date": "2026-09-08",
+          "likes": 4982,
+          "views": 241110,
+          "link": "https://x.com/thegameawards/status/2097334853339664781",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2097334733273448448/pu/img/-ASacfKd4EJc4zNk.jpg",
+            "video_url": "https://x.com/thegameawards/status/2097334853339664781/video/1"
+          },
+          "game_ref": "The Legend of Zelda: Ocarina of Time",
+          "summary": "任天堂在《塞尔达传说》40 周年 Direct 上完整公开《时之笛》重制版实机：系列首部全语音作品，新增手动跳跃、对 Switch 2 麦克风哼唱即可吹奏奥卡利那（也支持真实陶笛），支持 Zelda Notes；11 月 5 日发售，下载版 7980 日元/实体 8980 日元。同场公布 40 周年限定 Switch 2（10 月 29 日）与三角力量纹理 Pro 手柄、Young Link/塞尔达 amiibo、世界巡回音乐会（2027 年 1 月东京起），真人电影《The Legend of Zelda》确认 2027 年 4 月 30 日上映、无副标题。多家报道：The Game Awards, GameSpot, Eurogamer, Polygon, 電ファミニコゲーマー。",
+          "analysis": "",
+          "recommendation": "《时之笛》重制版定档 11 月 5 日：首部全语音塞尔达+麦克风吹奏，真人电影 2027 年 4 月 30 日上映",
+          "featured": true,
+          "enrichment": {
+            "game_name": "The Legend of Zelda: Ocarina of Time",
+            "genre": "动作冒险 / 全语音重制版",
+            "developer": "Nintendo",
+            "platforms": [
+              "Switch 2"
+            ],
+            "price": "7980 日元（下载版）/ 8980 日元（实体版）",
+            "release_date": "2026年11月5日",
+            "steam_rating": null,
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": "https://www.youtube.com/watch?v=wuFfiTEr2yc",
+            "description": "【核心玩法】基于 1998 年 N64 原版的全面重制：保留时之笛时间流转、锁定战斗与地下城解谜骨架，新增原版没有的手动跳跃；标志性改动是对 Switch 2 麦克风哼唱旋律即可施放奥卡利那之歌，也兼容真实陶笛输入——乐器演奏从按键节奏变成了'真的吹'。\n\n【美术与演出】放弃年初首曝时争议较大的写实化方向，实机呈现雾气弥漫的童话质感，与任何一作塞尔达的视觉语言都不同；本作是系列第一次全语音演出，林克、塞尔达等主要角色均有配音。\n\n【对标定位】与《王国之泪》的开放世界路线相反，这是任天堂对'关卡制箱庭塞尔达'鼻祖的现代化翻新，瞄准情怀与新玩家双市场。\n\n【优势】40 周年企划规格拉满：限定 Switch 2、amiibo、音乐会、电影四线并行；哼唱输入是教科书级的'用硬件特性改造老玩法'。\n【不足】社区对画风反应两极（Eurogamer 称'看起来很有趣'，网友称'Dawg it's Unreal Engine Zelda'）；全语音是否稀释原作的想象空间存疑。\n\n【综合】任天堂用一场 Direct 完成了系列 40 周年的商业总动员，11 月 5 日将与 GTA6（11 月 19 日）在假日档期正面对撞。",
+            "why_notable": "任天堂为系列 40 周年给出最高规格动作：首次全语音、真人电影定档、限定主机三线齐发，直接改变 2026 假日档竞争格局"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Steam PCU 监控 + TheGamer · 报道",
+          "tags": [
+            "非对称对抗",
+            "恐怖",
+            "首日爆款"
+          ],
+          "title": "《月光光心慌慌》改编非对称恐怖首日 PCU 33,639，开发者回应删减争议",
+          "en_title": "Halloween: The Game Dev Says Removed Closet Minigame Was A \"Major Oversight\"",
+          "full_text": "Halloween: The Game Dev Says Removed Closet Minigame Was A \"Major Oversight\" https://t.co/LaYw1khPeI https://t.co/VNMDk7itxt",
+          "author": "thegamerwebsite",
+          "date": "2026-09-08",
+          "likes": 895,
+          "views": 1926,
+          "link": "https://x.com/thegamerwebsite/status/2097158038419329081",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRqaH2LXkAAuXsX.jpg"
+          },
+          "game_ref": "Halloween: The Game",
+          "summary": "基于 1978 年经典恐怖片《月光光心慌慌》（Halloween）改编的非对称对抗游戏 9 月 8 日正式发售：IllFonic 开发、Gun Interactive（《13号星期五：游戏版》发行商）联合发行，首日 Steam 同时在线峰值 33,639，为当日全榜唯一首次突破 2 万 PCU 的新游，好评率 71%。此前该作曾因商店页包含性内容截图引发 1090 万围观出圈；发售日开发者再就删除'衣柜躲藏小游戏'回应称是'重大失误'（major oversight），承诺修复。",
+          "analysis": "",
+          "recommendation": "《月光光心慌慌》改编非对称恐怖首日 PCU 33,639——今日 Steam 热玩榜唯一新突破爆款",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Halloween: The Game",
+            "genre": "动作",
+            "developer": "IllFonic",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 137.00",
+            "release_date": "已发售 · 2026 年 9 月 8 日",
+            "steam_rating": "71% 好评（6,806 条评价）",
+            "steam_url": "https://store.steampowered.com/app/3219630",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219630/153ed105c4b409fe689783e4f9b6aad72c152646/header.jpg?t=1788897758",
+            "youtube_video": null,
+            "description": "1978 年的万圣节之夜，没人能从迈克尔·迈尔斯的手中逃脱。在 Halloween 中，化身“面具杀手”，或者直面邪恶奋起反抗。\n\n【核心玩法】非对称对抗恐怖：一名玩家扮演麦克尔·迈尔斯追猎，多名玩家扮演哈顿菲尔德小镇居民协作求生，复刻 1978 年原片'看似平静的郊区夜晚'氛围。躲藏、救援、触发剧情事件构成回合张力，衣柜等经典场景点位成为核心博弈空间。\n\n【团队背景】IllFonic 是非对称恐怖赛道的专业户（《13号星期五》《掠夺者》），发行方 Gun Interactive 正是《13号星期五：游戏版》的原发行商，此次联手 John Carpenter 授权 IP 的项目终于落地。\n\n【市场表现】9 月 8 日发售首日 Steam 同接峰值 33,639，为当日全榜唯一首次突破 2 万的新游；好评率 71%（6,689 条评价），处于非对称对抗游戏首发常见区间。发售前该作已因商店页性内容争议获得过一轮破圈曝光。\n\n【优势】IP 还原度高，迈尔斯的压迫感演出与音效复刻到位；首日体量证明'经典恐怖 IP × 非对称对抗'的组合公式依然有效。\n【不足】首发删除'衣柜躲藏小游戏'引发玩家不满，开发者承认是'major oversight'；非对称品类的平衡性与长期留存仍是老难题。\n\n【综合】万圣节档期精准卡位的 IP 改作，首日数据给非对称恐怖品类续上了一针强心剂。",
+            "why_notable": "今日 Steam PCU 监控捕捉到的唯一新突破爆款（首日 33,639），验证'经典恐怖 IP × 非对称对抗'公式仍然能打",
+            "pcu": "33,639（发售首日峰值）",
+            "current_players": "—",
+            "estimated_sales": "暂无官方数据"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "電ファミニコゲーマー · 媒体推荐",
+          "tags": [
+            "合作恐怖",
+            "桌游规则",
+            "体验版"
+          ],
+          "title": "《Invokyr》：在鬼屋里玩'被诅咒的桌游'，最多 6 人掷骰求生",
+          "en_title": "「最大6人」で\"呪われたボードゲーム\"を遊ぶホラーゲーム『Invokyr』が面白そう",
+          "full_text": "「最大6人」で\"呪われたボードゲーム\"を遊ぶホラーゲーム『Invokyr』が面白そう。ダイスを振るたび命がけのチャレンジが襲い来る\nhttps://t.co/rteT4wr9b0\n\n溶岩が迫る部屋でパズルを解いたり、クリーチャーに追い回されたり、予測不能な出来事が次々と引き起こされる。Steamにて体験版が配信中 https://t.co/a8h9gweGLn",
+          "author": "denfaminicogame",
+          "date": "2026-09-08",
+          "likes": 16826,
+          "views": 3066196,
+          "link": "https://x.com/denfaminicogame/status/2097151230489645210",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2097151200684912640/pu/img/sEQRHfDrhce7pL0S.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2097151230489645210/video/1"
+          },
+          "game_ref": "Invokyr",
+          "summary": "Ludogram 开发的合作生存恐怖《Invokyr》确认 10 月 8 日登陆 Steam，最多支持 6 人（体验版最多 4 人）。玩家被困在阴森鬼屋中被迫参与'命悬一线的桌游'：每次掷骰都会触发不可预测的挑战——在岩浆上涨的房间解谜、躲避怪物追捕；屋内隐藏的一次性骰子拥有治疗、隐身、妨害等能力，何时使用是关键。通关后可解锁更高难度，支持重复游玩。多家报道：電ファミニコゲーマー。",
+          "analysis": "",
+          "recommendation": "《Invokyr》：鬼屋里的'被诅咒桌游'，最多 6 人合作掷骰求生——体验版已上线",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Invokyr",
+            "genre": "动作 / 冒险 / 独立",
+            "developer": "Ludogram",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "2026 年 10 月 8 日",
+            "steam_rating": "体验版已上线（最多 4 人）",
+            "steam_url": "https://store.steampowered.com/app/3883570",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3883570/a1d37fb2bf0de54d1746d1aa4b83fb7ca81700d8/header.jpg?t=1788861659",
+            "youtube_video": null,
+            "description": "一款尘封的桌游，一栋闹鬼的老宅。支持最多6人联机。掷出骰子，在接踵而至的恐怖中拼死求生，击败游戏主宰，赢回你的自由。\n\n【核心玩法】把'桌游夜'搬进鬼屋：玩家们被鬼宅中的游戏大师（Game Master）引导进行一场致命桌游，掷骰触发熔岩房间解谜、怪物追逐等随机挑战；地图含丛林、冰川、巨型玩具箱等多种生态区，迷宫结构与陷阱诅咒层层加压。\n\n【差异化】把桌游的'骰子随机性'和恐怖游戏的'资源管理'拧在一起：屋内散落的一次性功能骰子（治疗/隐身/妨害怪物）构成'什么时候押注'的决策层，通关后解锁更高难度挑战，重复可玩性靠解锁循环支撑。\n\n【社交属性】最多 6 人合作（体验版 4 人），主打朋友局语音配合——一个失误全队买单的高张力设计天然适合直播传播。\n\n【优势】玩法概念在合作恐怖品类里有辨识度；電ファミ以'面白そう'级别的主动推荐背书，推文 307 万浏览为当日新游区最高。\n【不足】开发商 Ludogram 公开信息较少，长线内容量待验证。\n\n【综合】10 月 8 日发售，卡在万圣节档期前的合作恐怖新选择，值得先下体验版验证队友'翻脸率'。",
+            "why_notable": "'桌游规则×鬼屋生存'的概念组合在合作恐怖红海中做出了差异化，日媒主动安利 + 307 万浏览验证了传播潜力"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "日本独立游戏资讯",
+          "tags": [
+            "魂like",
+            "合作",
+            "已发售"
+          ],
+          "title": "《Soul Chained》发售：4 人铁链相连的'他责向'魂like，首发 7 折 633 日元",
+          "en_title": "ひとりのミスで全員巻き添え　最大4人が鎖で繋がれたソウルライク『Soul Chained』ついに発売！",
+          "full_text": "「今の誰が引っ張った！？」\n\nひとりのミスで全員巻き添え\n最大4人が鎖で繋がれたソウルライク\n\n邪魔な鎖は敵を転ばせる武器にもなる\n他責アクション『Soul Chained』ついに発売！\n30%オフの633円\nhttps://t.co/1kfNFwjxoa\n\nなお1人プレイはデカイ鉄球と鎖で繋がれる模様\nぼっちはさらなる苦行へ https://t.co/zwHPJC0WdF",
+          "author": "dotpixel3d",
+          "date": "2026-09-08",
+          "likes": 4333,
+          "views": 1255669,
+          "link": "https://x.com/dotpixel3d/status/2097142884617138454",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2097121524205699072/img/acmEgCJQd4k0Uaq6.jpg",
+            "video_url": "https://x.com/dotpixel3d/status/2097142884617138454/video/1"
+          },
+          "summary": "最多 4 人被铁链锁在一起的魂like 动作游戏《Soul Chained》今日发售，首发 30% 折扣价 633 日元。队友的失误会连带全队，但铁链也能用来绊倒敌人；单人游玩时会与巨大铁球相连——'孤狼玩家进入更深的苦行'。",
+          "recommendation": "《Soul Chained》：4 人铁链相连的魂like 今日发售——单人模式绑大铁球，首发 633 日元",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "4Gamer · 发售报道",
+          "tags": [
+            "治愈",
+            "模拟经营",
+            "已发售"
+          ],
+          "title": "《Tiny Eden》今日发售：未来都市高层的猫×室内园艺模拟，愿望单破 15 万",
+          "en_title": "猫と暮らす室内園芸シム「Tiny Eden」が本日発売",
+          "full_text": "猫と暮らす室内園芸シム「Tiny Eden」が本日発売\nhttps://t.co/N984d9zC4l\n\n・舞台は未来都市の高層アパート\n・土作りからじっくりと楽しめる\n・発売直前にウィッシュリスト15万件を突破\n・かわいいネコも一緒に住んでくれる！ https://t.co/x2VrMyGkKU",
+          "author": "4GamerNews",
+          "date": "2026-09-07",
+          "likes": 935,
+          "views": 108845,
+          "link": "https://x.com/4GamerNews/status/2097007092171518291",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2097007021795188736/pu/img/ljWdA9lJRhwxKAcv.jpg",
+            "video_url": "https://x.com/4GamerNews/status/2097007092171518291/video/1"
+          },
+          "summary": "与猫同住的室内园艺模拟《Tiny Eden》发售，舞台设定在未来都市的高层公寓，从配土开始一步步经营绿植，发售前愿望单突破 15 万。",
+          "recommendation": "《Tiny Eden》今日发售：猫×室内园艺治愈模拟——发售前愿望单已破 15 万",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Niche Gamer · 试玩预览",
+          "tags": [
+            "魂like",
+            "第一人称",
+            "拿破仑"
+          ],
+          "title": "《Valor Mortis》预览：拿破仑僵尸题材第一人称魂like，慢节奏高张力",
+          "en_title": "Valor Mortis is a promising first-person soulslike with Napoleonic zombies~",
+          "full_text": "[PREVIEW] Valor Mortis is a promising first-person soulslike with Napoleonic zombies~\n\nhttps://t.co/jT8wrcikU9 \n\nValor Mortis doesn't feel like just another soulslike - it has slower combat with precise, satisfying violence and an excellent parry system, all set to zombies and body horror~",
+          "author": "nichegamer",
+          "date": "2026-09-07",
+          "likes": 70,
+          "views": 4952,
+          "link": "https://x.com/nichegamer/status/2097061386253701550",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2097061351780704257/pu/img/Vqzqx9EMXk_QbDxG.jpg",
+            "video_url": "https://x.com/nichegamer/status/2097061386253701550/video/1"
+          },
+          "summary": "Niche Gamer 试玩《Valor Mortis》：拿破仑时代僵尸+身体恐怖题材的第一人称魂like，战斗节奏偏慢但打击判定精准、弹反系统出色，'不像又一个换皮魂like'。",
+          "recommendation": "《Valor Mortis》：拿破仑僵尸第一人称魂like 试玩出炉——慢节奏+精准弹反获好评",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Niche Gamer · 移植报道",
+          "tags": [
+            "怀旧",
+            "物理沙盒",
+            "Steam"
+          ],
+          "title": "16 年经典页游《Happy Wheels》确认登陆 Steam",
+          "en_title": "Iconic browser game Happy Wheels is coming to Steam",
+          "full_text": "Iconic browser game Happy Wheels is coming to Steam: https://t.co/wNlDPIQCZ3 https://t.co/sxve5W5aY6",
+          "author": "nichegamer",
+          "date": "2026-09-08",
+          "likes": 25,
+          "views": 1355,
+          "link": "https://x.com/nichegamer/status/2097347517511815394",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2097347463174664192/pu/img/HBsgVTIp6F5Wp2Tf.jpg",
+            "video_url": "https://x.com/nichegamer/status/2097347517511815394/video/1"
+          },
+          "summary": "2000 年代末最著名的物理沙盒页游《Happy Wheels》在上线 16 年后终于宣布登陆 Steam。",
+          "recommendation": "16 年经典页游《Happy Wheels》确认上 Steam——物理沙盒元老级作品的正式移植",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "中文 KOL · 原创技术分享",
+          "tags": [
+            "CLI",
+            "Bun",
+            "性能优化"
+          ],
+          "title": "陈成发布 Qoder CLI 性能优化：Bun 1.4.2 + bytecode 冷启动提速 3.69 倍",
+          "en_title": "qodercli@1.1.47：冷启动时间从 443ms -> 120ms 提升约 3.69 倍",
+          "full_text": "今天给 Qoder CLI 做了一些性能优化，随 qodercli@1.1.47 发布了。\n\n数据如下。\n\n- 冷启动时间从 443ms -> 120ms 提升约 3.69 倍\n- 启动峰值 RSS 减 18.9%\n- 空闲 CPU（TUI） -32.3%\n- 产物体积 103.5 MiB -> 170.9MB 增加 67.4MB\n\n典型的用空间换时间。\n\n做的两件事是。\n1\\ 升级 Bun 从 1.3.4 到 1.4.2\n2\\ 开启 bytecode\n\nBun 升级还颇了些事，因为 qodercli 支持 socks5 代理，而 Bun 1.4.0 不支持，提了 issue，robobun 很快提了 pr，等好多天才被 review & merge。果然不管啥团队，现阶段的卡点都在 review。\n\nBun 打包开 bytecode 直接让冷启动提升 3.27 倍。值得一提的是这是可以设置 depth 的，我在这里还犹豫了下，qodercli depth 设为 1 提速 2.83 倍增加 25.4MB，depth 全量提速 3.27 倍增加 49.9MB。最后还是觉得性能更重要。\n\n...",
+          "author": "chenchengpro",
+          "date": "2026-09-08",
+          "likes": 12,
+          "views": 1951,
+          "link": "https://x.com/chenchengpro/status/2097326398264488098",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRszPIbbAAAEEDe.jpg"
+          },
+          "summary": "陈成随 qodercli@1.1.47 发布性能优化：升级 Bun 1.3.4→1.4.2 并开启 bytecode 编译，冷启动 443ms→120ms（3.69 倍），启动峰值 RSS 降 18.9%，TUI 空闲 CPU 降 32.3%，代价是产物体积增加 67.4MB。bytecode 支持 depth 设置：depth=1 提速 2.83 倍/增重 25.4MB，全量 3.27 倍/增重 49.9MB。期间因 Bun 1.4.0 不支持 socks5 代理提 issue，robobun 机器人快速提 PR 但 review 耗时多日。",
+          "analysis": "对 CLI 工具链开发者是一份可直接照抄的优化配方：Bun bytecode 的空间换时间收益真实存在，且 depth 参数给了体积/性能的自由度。'卡点都在 review'的观察对所有维护开源工具的团队都成立。",
+          "recommendation": "陈成发布 Qoder CLI 优化实录：Bun 1.4.2 + bytecode 冷启动 443ms→120ms，提速 3.69 倍",
+          "featured": false
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Unity 官方 · 教程",
+          "tags": [
+            "Unity",
+            "构建管线",
+            "多平台"
+          ],
+          "title": "Unity Build Profiles 实战：一套工程自动产出网页轻量 Demo 与完整 PC 版",
+          "en_title": "Build Profiles let you automate scene lists and feature flags per target",
+          "full_text": "Stop manually swapping scenes for different platform builds 🚫\n\nBuild Profiles let you automate scene lists and feature flags per target, so you can ship a light web demo and a full PC build effortlessly from one project. https://t.co/T3ikIwJFhG",
+          "author": "unitygames",
+          "date": "2026-09-08",
+          "likes": 30,
+          "views": 4190,
+          "link": "https://x.com/unitygames/status/2097320298882175254",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2097320038629879808/pu/img/FcU4yLLlKgeSEZNN.jpg",
+            "video_url": "https://x.com/unitygames/status/2097320298882175254/video/1"
+          },
+          "summary": "Unity 官方演示 Build Profiles 用法：为不同目标平台维护各自的场景列表与功能开关（feature flags），从同一工程一键产出轻量网页 Demo 与完整 PC 版本，不再手动换场景打包。",
+          "analysis": "对参加 Steam 新品节、需要'网页试玩版+完整版'双线交付的独游团队，这是官方推荐的低摩擦方案；把场景裁剪从体力活变成配置项。",
+          "recommendation": "Unity Build Profiles 实战：一套工程自动产出网页轻量 Demo 与完整 PC 版构建",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**任天堂 40 周年 Direct：时之笛重制版 11 月 5 日发售**\n《时之笛》重制版确认 11 月 5 日登陆 Switch 2，系列首部全语音作品，支持麦克风吹奏奥卡利那；40 周年限定 Switch 2 主机 10 月 29 日发售，真人电影《The Legend of Zelda》定档 2027 年 4 月 30 日。\n\n**Don't Nod 资金危机，最多裁员 90 人**\n《奇异人生》开发商半年销售额降至 350 万欧元，董事会批准重组，财报承认存在'实质性持续经营不确定性'；Rockstar 与 31 名被解雇员工的最终听证 9 月 10 日开庭；SEGA 确认'Super Game'巨型项目被放弃。\n\n**GPT-6 Astra 掀起游戏逆向热潮**\nSuperAstra 实现 SNES 游戏实时编辑，LoL、《风之杖》、Balatro 相继被 Astra 复刻或移植；EA 同时被证实在 NHL 27 中用生成式 AI 克隆解说声线。\n\n**《月光光心慌慌》改编游戏首日 PCU 33,639**\nIllFonic 开发的非对称恐怖 9 月 8 日发售，为当日 Steam 热玩榜唯一新突破爆款；合作恐怖新作《Invokyr》体验版已上线，10 月 8 日正式发售。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
