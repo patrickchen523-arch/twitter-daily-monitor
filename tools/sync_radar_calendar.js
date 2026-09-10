@@ -20,6 +20,7 @@ const get = url => new Promise(resolve => {
 (async () => {
   const app = await get('https://game-radar.zeabur.app/app.js');
   const start = app.indexOf('const events = [');
+  if (start < 0) throw new Error('雷达日历源不可用，保留现有日历');
   let i = app.indexOf('[', start), depth = 0, end = -1;
   for (let j = i; j < app.length; j++) {
     if (app[j] === '[') depth++;
@@ -31,8 +32,9 @@ const get = url => new Promise(resolve => {
     .filter(e => e.date && e.date.startsWith(month))
     .map(e => ({ date: e.date, name: e.name, type: e.type, platform: e.platform }))
     .sort((a, b) => a.date.localeCompare(b.date));
+  if (!cal.length) throw new Error(`${month} 雷达日历为空，保留现有日历`);
   // 保留人工补充(非雷达来源)
-  const manual = (launched.watch && launched.watch.calendar || []).filter(e => e.manual);
+  const manual = (launched.watch && launched.watch.calendar || []).filter(e => e.manual && e.date && e.date.startsWith(month));
   launched.watch.calendar = [...cal, ...manual];
   fs.writeFileSync(launchedPath, JSON.stringify(launched, null, 1), 'utf8');
   console.log(`calendar updated: ${cal.length} 雷达 + ${manual.length} 人工`);

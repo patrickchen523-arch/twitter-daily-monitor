@@ -46,8 +46,12 @@ function parsePeak(html) {
   return nums.length ? Number(nums[nums.length - 1]) : null;
 }
 
+const date = process.argv[2];
+const appids = date ? new Set(JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'launched', `${date}.json`), 'utf8')).boards
+  .flatMap(b => b.items || []).map(it => (String(it.steam || it.link || '').match(/app\/(\d+)/) || [])[1]).filter(Boolean)) : null;
+
 (async () => {
-  const targets = Object.values(det.byAppid).filter(d => d.appid && d.rating == null);
+  const targets = Object.values(det.byAppid).filter(d => d.appid && d.rating == null && (!appids || appids.has(String(d.appid))));
   console.log('待补全:', targets.length);
   for (const d of targets) {
     const store = await get(`https://store.steampowered.com/app/${d.appid}/?l=en`);
@@ -55,7 +59,7 @@ function parsePeak(html) {
     if (st) {
       d.rating = st.rating;
       d.reviews = st.reviews;
-      d.sales = Math.round(st.reviews * 45 / 1000) * 1000; // 经验估算
+      d.sales = d.free ? null : Math.round(st.reviews * 45 / 1000) * 1000; // 经验估算
     }
     await sleep(300);
     const sc = await get(`https://steamcharts.com/app/${d.appid}`);

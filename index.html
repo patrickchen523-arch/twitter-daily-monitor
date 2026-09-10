@@ -2933,7 +2933,7 @@ function renderLaunchedBoard(board, bi) {
   const CAPTIONS = {
     steamdb: '按近期 Steam 关注增长排序 · 数值为新增关注数',
     bilibili: '机会分排序(新游/异动优先) · 数值为关联视频在日榜的最高名次',
-    twitter: '按关联推文浏览量排序 · 数值为推文浏览量',
+    twitter: '按推文浏览量衰减排序(半衰期1.5天) · 数值为推文浏览量',
     roblox: '按周同时在线峰值排序 · 数值为 CCU(最高同时在线人数)'
   };
   const cap = board.caption || CAPTIONS[board.id] || '';
@@ -2942,7 +2942,9 @@ function renderLaunchedBoard(board, bi) {
   const pages = Math.ceil(all.length / 10);
   const paged = pages > 1;
   ldBoardPages[bi] = 0;
-  const body = `<div class="ld-col-rank" id="ld-list-${bi}">${all.slice(0, 10).map((it, i) => ldRankItemHtml(bi, it, i)).join('')}</div>`;
+  const body = all.length
+    ? `<div class="ld-col-rank" id="ld-list-${bi}">${all.slice(0, 10).map((it, i) => ldRankItemHtml(bi, it, i)).join('')}</div>`
+    : '<div class="ld-board-cap">当期榜单数据尚未生成，请勿据此判断当天热度。</div>';
   const pager = paged
     ? `<div class="ld-pager"><button type="button" class="roblox-week-btn" id="ld-prev-${bi}" onclick="ldSetPage(${bi},-1)" disabled>‹ 上一页</button><span class="ld-page-info" id="ld-page-${bi}">1 / ${pages}</span><button type="button" class="roblox-week-btn" id="ld-next-${bi}" onclick="ldSetPage(${bi},1)">下一页 ›</button></div>`
     : '';
@@ -3145,7 +3147,9 @@ function renderLaunchedWatch(watch) {
 }
 
 function renderWatchCalendar(events) {
-  if (!events.length) return '';
+  const month = launchedData && launchedData.date ? launchedData.date.slice(0, 7) : new Date().toISOString().slice(0, 7);
+  events = events.filter(e => String(e.date || '').startsWith(month));
+  if (!events.length) return '<div class="ld-cal-head"><span class="ld-cal-month">当月上线日历待更新</span></div>';
   const ref = launchedData && launchedData.date ? new Date(launchedData.date) : new Date();
   const y = ref.getFullYear();
   const m = ref.getMonth();

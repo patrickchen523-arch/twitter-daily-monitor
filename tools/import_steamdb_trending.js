@@ -11,16 +11,33 @@ if (!srcPath) { console.error('usage: node import_steamdb_trending.js <json> [da
 const launchedPath = path.join(__dirname, '..', 'data', 'launched', `${date}.json`);
 const src = JSON.parse(fs.readFileSync(srcPath, 'utf8'));
 const launched = JSON.parse(fs.readFileSync(launchedPath, 'utf8'));
+const manifest = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'launched', 'manifest.json'), 'utf8'));
+const prevDate = manifest.dates.filter(d => d < date).sort().at(-1);
+const previous = prevDate ? JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'launched', `${prevDate}.json`), 'utf8')) : null;
+const cached = new Map((previous && previous.boards.find(b => b.id === 'steamdb')?.items || [])
+  .filter(it => it.release && it.release <= prevDate && it.thumb)
+  .map(it => [(String(it.link).match(/app\/(\d+)/) || [])[1], it]));
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const getJson = url => new Promise((resolve, reject) => {
+const getJsonOnce = url => new Promise((resolve, reject) => {
   https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } }, res => {
     let d = '';
     res.on('data', c => d += c);
-    res.on('end', () => { try { resolve(JSON.parse(d)); } catch (e) { reject(e); } });
+    res.on('end', () => {
+      if (res.statusCode === 429) return reject(new Error('429'));
+      try { resolve(JSON.parse(d)); } catch (e) { reject(e); }
+    });
     res.on('error', reject);
   }).on('error', reject);
 });
+const getJson = async url => { // Steam 接口抖动/限流: 递增退避重试
+  let lastErr;
+  for (let i = 0; i < 4; i++) {
+    try { return await getJsonOnce(url); }
+    catch (e) { lastErr = e; await sleep(String(e.message) === '429' ? 15000 * (i + 1) : 1000); }
+  }
+  throw lastErr;
+};
 
 (async () => {
   const top = src.items.slice(0, 100); // 取满前50名已上线(未上线的挪观测区)
@@ -42,40 +59,55 @@ const getJson = url => new Promise((resolve, reject) => {
     let officialName = null;
     let comingSoon = false;
     let releaseIso = null;
-    try {
-      const j = await getJson(`https://store.steampowered.com/api/appdetails?appids=${it.appid}&l=schinese`);
-      const d = j[it.appid];
-      thumb = d && d.success && d.data && d.data.header_image;
-      if (d && d.success && d.data && d.data.name) officialName = d.data.name;
-      if (d && d.success && d.data && d.data.release_date) {
-        comingSoon = !!d.data.release_date.coming_soon;
-        const m = String(d.data.release_date.date || '').match(/(\d{4})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})/);
-        if (m) releaseIso = `${m[1]}-${String(m[2]).padStart(2, '0')}-${String(m[3]).padStart(2, '0')}`;
-      } else {
-        // 简中接口区域限制时, 用英文接口兜底判定
-        const je = await getJson(`https://store.steampowered.com/api/appdetails?appids=${it.appid}&cc=us&l=en`);
-        const de = je && je[it.appid];
-        if (de && de.success && de.data) {
-          if (de.data.release_date) {
-            comingSoon = !!de.data.release_date.coming_soon;
-            const t = Date.parse(de.data.release_date.date || '');
-            if (!comingSoon && !Number.isNaN(t)) releaseIso = new Date(t).toISOString().slice(0, 10);
-          }
-          if (!thumb && de.data.header_image) thumb = de.data.header_image;
-        }
-      }
-    } catch (e) {}
-    // 官方中文名: 简中商店名含中文字符才采用,否则拉英文官方名
-    if (officialName && /[\u4e00-\u9fa5]/.test(officialName)) {
-      name = officialName;
+    let verified = false;
+    const prior = cached.get(String(it.appid));
+    if (prior) {
+      name = prior.name;
+      thumb = prior.thumb;
+      releaseIso = prior.release;
+      verified = true;
     } else {
       try {
-        const je = await getJson(`https://store.steampowered.com/api/appdetails?appids=${it.appid}&l=en`);
-        const de = je[it.appid];
-        if (de && de.success && de.data && de.data.name) name = de.data.name;
+        const j = await getJson(`https://store.steampowered.com/api/appdetails?appids=${it.appid}&l=schinese`);
+        const d = j && j[it.appid];
+        thumb = d && d.success && d.data && d.data.header_image;
+        if (d && d.success && d.data && d.data.name) officialName = d.data.name;
+        if (d && d.success && d.data && d.data.release_date) {
+          verified = true;
+          comingSoon = !!d.data.release_date.coming_soon;
+          const m = String(d.data.release_date.date || '').match(/(\d{4})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})/);
+          if (m) releaseIso = `${m[1]}-${String(m[2]).padStart(2, '0')}-${String(m[3]).padStart(2, '0')}`;
+        }
       } catch (e) {}
-      await sleep(200);
+      if (!verified) {
+        // 简中接口失败/区域限制时, 用英文接口兜底判定
+        try {
+          const je = await getJson(`https://store.steampowered.com/api/appdetails?appids=${it.appid}&cc=us&l=en`);
+          const de = je && je[it.appid];
+          if (de && de.success && de.data) {
+            if (de.data.release_date) {
+              verified = true;
+              comingSoon = !!de.data.release_date.coming_soon;
+              const t = Date.parse(de.data.release_date.date || '');
+              if (!comingSoon && !Number.isNaN(t)) releaseIso = new Date(t).toISOString().slice(0, 10);
+            }
+            if (!thumb && de.data.header_image) thumb = de.data.header_image;
+          }
+        } catch (e) {}
+      }
+      // 官方中文名: 简中商店名含中文字符才采用,否则拉英文官方名
+      if (officialName && /[\u4e00-\u9fa5]/.test(officialName)) {
+        name = officialName;
+      } else {
+        try {
+          const je = await getJson(`https://store.steampowered.com/api/appdetails?appids=${it.appid}&l=en`);
+          const de = je[it.appid];
+          if (de && de.success && de.data && de.data.name) name = de.data.name;
+        } catch (e) {}
+        await sleep(200);
+      }
     }
+    if (!verified) throw new Error(`无法确认 ${it.appid} ${name} 的发售状态，保留原榜单`);
     const entry = {
       name,
       metric: gain,
@@ -84,7 +116,7 @@ const getJson = url => new Promise((resolve, reject) => {
       release: releaseIso,
       link: `https://store.steampowered.com/app/${it.appid}/`
     };
-    if (comingSoon || release.includes('快') || release.includes('Soon')) {
+    if (comingSoon || (releaseIso && releaseIso > date) || release.includes('快') || release.includes('Soon')) {
       unreleased.push({
         name,
         date: comingSoon ? '即将发售' : '发售日期待定',

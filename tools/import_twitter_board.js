@@ -9,14 +9,28 @@ const launchedPath = path.join(root, 'data', 'launched', `${date}.json`);
 const launched = JSON.parse(fs.readFileSync(launchedPath, 'utf8'));
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'data', 'manifest.json'), 'utf8'));
 
-const TODAY = new Date();
-function isLaunched(e) {
-  const sr = String((e && e.steam_rating) || '');
-  if (/无Steam页面/.test(sr)) return false; // 日报口径: 无Steam页面且无发售日 = 未上线
-  if (!/未发售|playtest|测试/i.test(sr)) return true; // 有评价/已发售
-  const m = String((e && e.release_date) || '').match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
-  if (m) return new Date(+m[1], +m[2] - 1, +m[3]) <= TODAY; // 发售日已到
-  return false;
+const releaseOf = e => {
+  const m = String(e.release_date || '').match(/(\d{4})\s*(?:年|[-/])\s*(\d{1,2})\s*(?:月|[-/])\s*(\d{1,2})/);
+  return m ? `${m[1]}-${m[2].padStart(2, '0')}-${m[3].padStart(2, '0')}` : null;
+};
+function isLaunched(it) {
+  const e = it.enrichment || {};
+  const sr = String(e.steam_rating || '');
+  const rel = String(e.release_date || '');
+  const iso = releaseOf(e);
+  if (iso && iso > date) return false;
+  const appid = (String(e.steam_url || '').match(/app\/(\d+)/) || [])[1];
+  const known = launched.boards.filter(b => b.id === 'steamdb' || b.id === 'bilibili')
+    .flatMap(b => b.items || []).find(g => appid
+      ? String(g.link || g.steam || '').includes(`/app/${appid}/`)
+      : normKey(g.name) === normKey(it.game_ref || e.game_name));
+  if (known && known.release && known.release <= date) return true;
+  if (/未(?:正式)?发售|playtest|demo|体验版|试玩|测试|即将/i.test(sr)) return false;
+  if (iso) return true;
+  if (/已发售|已上线|已发布|运营中|发售初期|好评|\d.*(?:评价|reviews)/i.test(sr + ' ' + rel)) return true;
+  if (/待公布|待定|即将|未发售/.test(rel)) return false;
+  return /已发售|正式发售|现已上线|免费(?:公开|开放)|免费游玩|已公开|out now|released|無料公開中|配信開始/i.test(
+    [it.title, it.full_text, it.summary].filter(Boolean).join(' '));
 }
 const fmtViews = v => v >= 10000 ? (Math.round(v / 1000) / 10) + '万' : String(v || '');
 
@@ -24,17 +38,17 @@ const games = new Map(); // 规范化名 -> item (保留先出现/最新的)
 const watchAdds = []; // 未上线(进观测区)
 const normKey = s => String(s || '').toLowerCase().replace(/[^\w\u4e00-\u9fa5]/g, '');
 const dates = (manifest.dates || []).filter(d => d <= date).sort().reverse();
-for (const d of dates) {
-  const fp = path.join(root, 'data', `${d}.json`);
-  if (!fs.existsSync(fp)) continue;
-  const daily = JSON.parse(fs.readFileSync(fp, 'utf8'));
-  const sec = (daily.sections || []).find(s => s.id === 'indie');
-  if (!sec) continue;
-  (sec.items || []).forEach((it, idx) => {
+const sources = dates.map(d => ({ date: d, path: path.join(root, 'data', `${d}.json`) }))
+  .filter(s => fs.existsSync(s.path)).map(s => ({
+    date: s.date,
+    items: (JSON.parse(fs.readFileSync(s.path, 'utf8')).sections || []).find(sec => sec.id === 'indie')?.items || []
+  }));
+for (const { date: d, items: dailyItems } of sources) {
+  dailyItems.forEach((it, idx) => {
     const e = it.enrichment || {};
     const name = it.game_ref || e.game_name;
     if (!name) return;
-    if (!isLaunched(e)) {
+    if (!isLaunched(it)) {
       if (!watchAdds.some(w => normKey(w.name) === normKey(name)) && (it.views || 0) >= 10000) {
         watchAdds.push({
           name,
@@ -47,24 +61,29 @@ for (const d of dates) {
       return;
     }
     if (games.has(normKey(name))) return;
-    const relM = String(e.release_date || '').match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
     games.set(normKey(name), {
       name,
       metric: fmtViews(it.views),
       sub: `${d.slice(5)} · ${it.recommendation || it.title}`,
       thumb: e.header_image || (it.media && it.media.url) || null,
       link: e.steam_url || it.link,
-      release: relM ? `${relM[1]}-${String(relM[2]).padStart(2, '0')}-${String(relM[3]).padStart(2, '0')}` : null,
+      release: releaseOf(e),
       views: it.views || 0,
       day: d,
       idx
     });
   });
-  if (games.size >= 14) break; // 多收集一些候选
+  if (games.size >= 24) break; // 多收集候选, 供14天窗口过滤后仍凑满10款
 }
 
+// 半衰期衰减: 推文流量集中在前1-2天, heat=views×0.5^(age/1.5) 作为排序与推荐分值;
+// 老爆款自动沉底, 展示仍用原始 metric; 超过14天的条目彻底出榜
+const HALF_LIFE_DAYS = 1.5;
+const ageDays = it => Math.max(0, Math.floor((new Date(date) - new Date(it.day)) / 86400000));
 const items = [...games.values()]
-  .sort((a, b) => b.views - a.views)
+  .map(it => ({ ...it, heat: Math.round(it.views * Math.pow(0.5, ageDays(it) / HALF_LIFE_DAYS)) }))
+  .filter(it => ageDays(it) <= 14)
+  .sort((a, b) => b.heat - a.heat)
   .slice(0, 10)
   .map(({ views, ...rest }) => rest);
 
@@ -74,6 +93,7 @@ if (board) {
   board.title_en = 'TWITTER';
   board.demo = false;
   board.items = items;
+  board.generated_from = require('crypto').createHash('sha256').update(JSON.stringify(sources)).digest('hex');
   board.more = { label: '查看新游推文', tab: 'indie' };
 }
 

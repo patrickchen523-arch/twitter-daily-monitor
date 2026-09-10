@@ -23,6 +23,7 @@ const getJson = url => new Promise((resolve, reject) => {
 
 const launchedPath = path.join(__dirname, '..', 'data', 'launched', `${date}.json`);
 const src = JSON.parse(fs.readFileSync(srcPath, 'utf8'));
+src.items = src.items.filter(it => it.rank >= 1 && it.rank <= 100);
 const launched = JSON.parse(fs.readFileSync(launchedPath, 'utf8'));
 
 const BLACKLIST = new Set([
@@ -296,10 +297,8 @@ async function resolveReleaseDate(name) {
   return null;
 }
 // 5. 机会分: 当前热度(最高50) + 新鲜度(最高30) + 热度异动(最高20); 成熟游戏沉底
-const TODAY = new Date();
-const TODAY_STR = `${TODAY.getFullYear()}-${String(TODAY.getMonth() + 1).padStart(2, '0')}-${String(TODAY.getDate()).padStart(2, '0')}`;
-const dayDiff = iso => Math.floor((new Date(TODAY_STR) - new Date(iso)) / 86400000);
 const REF_DATE = date; // 历史快照/异动以数据所属日期为基准,支持补跑历史日期
+const dayDiff = iso => Math.floor((new Date(REF_DATE) - new Date(iso)) / 86400000);
 
 const MATURE_PATH = path.join(__dirname, '..', 'data', 'launched', 'bili-mature.json');
 const MATURE = fs.existsSync(MATURE_PATH) ? JSON.parse(fs.readFileSync(MATURE_PATH, 'utf8')) : {};
@@ -371,7 +370,7 @@ fs.writeFileSync(HISTORY_PATH, JSON.stringify(HISTORY, null, 1), 'utf8');
 // 未上线游戏(9999 标记或人工名单)不进榜单,挪未上线观测区
 const UNREL_PATH = path.join(__dirname, '..', 'data', 'launched', 'bili-unreleased.json');
 const UNREL = fs.existsSync(UNREL_PATH) ? JSON.parse(fs.readFileSync(UNREL_PATH, 'utf8')) : [];
-const isUnrel = g => g.release === '9999-12-31' || UNREL.includes(g.name);
+const isUnrel = g => (g.release && g.release > REF_DATE) || UNREL.includes(g.name);
 const unreleased = gameList.filter(isUnrel);
 const releasedList = gameList.filter(g => !isUnrel(g));
 if (unreleased.length) {
