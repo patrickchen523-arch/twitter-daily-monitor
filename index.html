@@ -1301,11 +1301,10 @@ function handleEditorialDateStripClick(event) {
 // === 游戏关注 Daily Timeline（复用 ed-date-strip 样式，独立作用域 .ld-date-strip，绑定 launched 数据） ===
 let launchedDateDragState = null;
 
-// 游戏关注展示日期 = 数据日期 +1 天(凌晨抓取前一天数据,与日报口径对齐); data-ld-date 仍用数据日期
+// 游戏关注展示日期 = 数据日期(榜单导出日即榜单日期,不再+1天); data-ld-date 仍用数据日期
 function ldDisplayDate(d) {
   const dt = new Date(d);
   if (Number.isNaN(dt.getTime())) return d;
-  dt.setDate(dt.getDate() + 1);
   return `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, '0')}-${String(dt.getDate()).padStart(2, '0')}`;
 }
 
