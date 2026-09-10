@@ -1,0 +1,524 @@
+{
+  "date": "2026-09-10",
+  "meta": {
+    "raw_count": 282,
+    "filtered_count": 245,
+    "selected_count": 12,
+    "crawl_time": "2026-09-10 10:12"
+  },
+  "lede": "OpenAI/Anthropic 前预训练研究员公开辞职：'两家正拿我们的命赌博'——8670万浏览；任天堂 Direct 重磅官宣《Metroid Ravenous》2027年1月28日 Switch 2 独占；Valve 端 API 失误致 Steam 成就大泄露，数十款未公布游戏曝光。",
+  "editors_pick": [
+    { "section_id": "ai", "item_index": 0, "hook": "OpenAI/Anthropic 双料前预训练研究员公开辞职：竞逐自我改进超级智能是'拿我们的命赌博'——8670万浏览" },
+    { "section_id": "indie", "item_index": 0, "hook": "《Metroid Ravenous》官宣：Mercury Steam 2.5D 接棒 Dread，2027年1月28日 Switch 2 独占——'It's eat or be eaten'" }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "OpenAI/Anthropic 前预训练研究员 Jacob Coxon 公开辞职，指责两家'不负责任地竞逐自我改进超级智能'，8670万浏览\n首个由真实果蝇大脑（16.6万神经元）驱动 NPC 的游戏《Fly Escape Room》三天做成，同源'果蝇打 Beat Saber'视频 988 万浏览\nGPT-6 Astra 把 9 张随手拍的工作室照片拼成可交互 3D 模型；同日有人一次生成 three.js 版《卡坦岛》"
+    },
+    {
+      "id": "industry",
+      "text": "Valve 端 API 失误致 Steam 成就大泄露：Persona 6、KH4、Fable、Judas 等数十款未公布游戏曝光，KH4 迪士尼世界被扒出\nDouble Fine 主动脱离微软独立：Schafer 称 Xbox 使命已变，'除非年年出 Minecraft 级爆款，否则救不了'\n《Valheim》1.0 发售：五年 EA 毕业，PCU 冲 16 万创 2021 年以来新高\n《黎明行者之血》58% 玩家来自巫师3受众：3天100万销量、Steam占40%，续作已开招首席编剧"
+    },
+    {
+      "id": "indie",
+      "text": "《Metroid Ravenous》官宣：Mercury Steam 2.5D 接棒 Dread，2027年1月28日 Switch 2 独占\n《Meccha Chameleon》两个月卖出 2000 万份，涂装捉迷藏社交爆款今日登陆 Switch 2\n《Kirby and the World Beyond》官宣：卡比 35 周年 3D 新作，2027 春 Switch 2"
+    },
+    {
+      "id": "tools",
+      "text": "Unity 官方发布 Claude Code 插件：一条命令解锁 29 个原生 Unity 技能与编辑器直控，零配置官方维护"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · 研究员公开信",
+          "tags": ["AI安全", "Anthropic", "OpenAI", "超级智能"],
+          "title": "OpenAI/Anthropic 前预训练研究员公开辞职：两家公司正'拿我们的命赌博'，直冲自我改进超级智能",
+          "en_title": "I resigned from Anthropic today... They are racing straight to self-improving superintelligence and gambling with our lives.",
+          "full_text": "I resigned from Anthropic today. I spent the last three years doing pretraining research at both OpenAI and Anthropic. Neither company is acting responsibly. They are racing straight to self-improving superintelligence and gambling with our lives. More thoughts below.",
+          "author": "hilbertspaess",
+          "date": "2026-09-09",
+          "likes": 527960,
+          "views": 86700901,
+          "link": "https://x.com/hilbertspaess/status/2097476196791709843",
+          "media": null,
+          "summary": "在 OpenAI 与 Anthropic 共做了三年预训练研究的 Jacob Coxon 宣布辞职，公开指责两家头部实验室'不负责任地竞逐自我改进型超级智能'。推文附长文阐述理由，24 小时内获超 8600 万浏览、52.8 万点赞，PC Gamer、GameSpot 等媒体跟进报道。这是极少数从模型能力一线发出的公开 dissent。",
+          "analysis": "预训练研究员比外界更清楚'自我改进'路线的真实进度，其公开出走本身就是安全与竞赛天平倾斜的信号。对游戏行业而言，若头部实验室持续向竞赛侧倾斜，通用模型能力的迭代节奏、可用性与价格波动都会直接传导到 AI 内容生产工具链上——今天的 Astra/I mage 浪潮与这条新闻是同一枚硬币的两面。",
+          "recommendation": "OpenAI/Anthropic 双料前预训练研究员公开辞职：'他们在拿我们的命赌博'——8670万浏览",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "X · 独立开发",
+          "tags": ["AI", "仿生NPC", "果蝇连接体", "GPT-6 Astra"],
+          "title": "首个由真实果蝇大脑驱动 NPC 的游戏《Fly Escape Room》：16.6 万神经元全部来自真实扫描数据",
+          "en_title": "Introducing Fly Escape Room - the world's first game with NPCs powered by a real fruit fly brain, all 166k neurons.",
+          "full_text": "Introducing Fly Escape Room - the world's first game with NPCs powered by a real fruit fly brain, all 166k neurons.\n\nLeave food and other objects for the flies, run the simulation, watch what happens. Goal is to get all flies to escape.\n\nBuilt w/ GPT-6 Astra over a 3 day loop",
+          "author": "dzhng",
+          "date": "2026-09-08",
+          "likes": 2579,
+          "views": 396377,
+          "link": "https://x.com/dzhng/status/2097372164999847964",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2097367038809554945/img/FXw-3aHaTcGLh96a.jpg",
+            "video_url": "https://x.com/dzhng/status/2097372164999847964/video/1"
+          },
+          "summary": "开发者 David 用 GPT-6 Astra 在三天循环内做出《Fly Escape Room》：NPC 行为由真实果蝇大脑的 16.6 万个神经元驱动，玩家放置食物与障碍，目标是让所有果蝇逃出房间。同日 lyra bubbles 的'果蝇大脑打 Beat Saber'视频浏览量达 988 万，同源于 Google 果蝇连接体研究。",
+          "analysis": "生物神经网络当 NPC 意味着行为完全不可脚本化、每次运行都不同——这是'AI NPC 不可预测性'的极端样本。更值得注意成本结构：扫描数据（科研公开资产）+ Astra（快速工程）+ 三天开发，生物启发玩法原型的制作门槛正在骤降，'模拟真实器官'可能成为下一个玩法规格赛道。",
+          "recommendation": "真实果蝇大脑（16.6万神经元）当NPC：三天做成的《Fly Escape Room》——同源视频988万浏览",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "X · 能力演示",
+          "tags": ["GPT-6 Astra", "3D重建", "空间理解", "游戏生成"],
+          "title": "9 张随手拍的工作室照片，被 GPT-6 Astra 拼成可交互 3D 模型",
+          "en_title": "I fed GPT-6 Astra 9 crappy photos of my studio and it was able to understand the spatial arrangement, stitch them together and create a fully interactive 3D model of the space.",
+          "full_text": "I fed GPT-6 Astra 9 crappy photos of my studio and it was able to understand the spatial arrangement, stitch them together and create a fully interactive 3D model of the space.\n\nAbsurd. I'll link it below so you can check it out for yourself: https://t.co/GtrqLKiLMW",
+          "author": "rpnickson",
+          "date": "2026-09-09",
+          "likes": 8006,
+          "views": 1009699,
+          "link": "https://x.com/rpnickson/status/2097488440489116111",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRvGiZHb0AAic3m.jpg"
+          },
+          "summary": "Roberto Nickson 把 9 张画质一般的 Studio 照片喂给 GPT-6 Astra，模型理解空间布局后直接生成可交互的 3D 空间模型。同日 MengTo 演示用 Astra 一次生成 three.js 版《卡坦岛》，自带 AI 玩家、交易系统与教程卡，并能复用其过往项目的 UI、模型与音效资产进行 remix。",
+          "analysis": "照片转可用 3D 场景一直是游戏资产管线中最昂贵的环节之一，Astra 的空间理解若保持稳定，白模、关卡草稿、虚拟影棚的搭建成本会显著下降。MengTo 的'资产可复用、可 remix'观察同样关键：AI 生成开始基于个人资产库迭代，而非每次从零开始——个人风格资产的护城河价值在上升。",
+          "recommendation": "GPT-6 Astra 把9张随手拍照变成可交互3D模型；同日有人用它一次生成 three.js 版卡坦岛",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "X · 行业突发",
+          "tags": ["Steam", "泄露", "Valve", "成就系统"],
+          "title": "Steam 成就系统大规模泄露：Persona 6、KH4、Fable、Judas 等数十款未公布游戏被扒出",
+          "en_title": "HERE'S THE MASSIVE LIST OF GAMES CAUGHT IN TODAY'S STEAM LEAK",
+          "full_text": "🚨 HERE'S THE MASSIVE LIST OF GAMES CAUGHT IN TODAY'S STEAM LEAK \n\n▫️ Persona 6\n▫️ Kingdom Hearts IV\n▫️ Persona 4 Revival\n▫️ Fable\n▫️ Brazilian Drug Dealer\n▫️ Penis Bird\n▫️ Gears of War: E-Day\n▫️ Silent Hill: Townfall\n▫️ Dragon Ball Xenoverse 3\n▫️ Ace Combat 8: Wings of Thieves\n▫️ Tomb Raider: Legacy of Atlantis\n▫️ Control: Resonant\n▫️ Stranger Than Heaven\n▫️ Dune Game\n▫️ Shrek 2 Remaster/Rerelease\n▫️ Professor Layton and the New World of Steam\n▫️ Attack on Titan 3\n▫️ Deus Ex Remastered\n▫️ The Avengers Game by THQ\n▫️ Lords of the Fallen II\n▫️ Turok: Origins\n▫️ Minecraft Dungeons 2\n▫️ Thief: The Dark Project Remastered\n▫️ Judas\n▫️ Squadron 42\n▫️ Planet Zoo 2\n▫️ Sea of Thieves\n▫️ Tropico 7\n▫️ EA Sports FC 27\n▫️ PGA Tour 2K27\n▫️ Warhammer 40,000: Boltgun 2\n▫️ Warhammer 40,000: Chaos Gate – Deathwatch\n▫️ Silent Hill: Townfall\n▫️ Bloodstained: Ritual of the Night 2\n▫️ Danganronpa 2×2\n▫️ Mega Man: Dual Override\n▫️ Crazy Taxi: World Tour\n▫️ Rayman Origins Enhanced Edition\n▫️ Godzilla: Destroy All Monsters Melee Remastered\n▫️ Castlevania: Belmont's Curse\n▫️ Star Wars: Galactic Racers\n▫️ Star Wars Shooter Game\n▫️ Star Trek: Outposts\n▫️ Dragon Quest Monsters: The Withered World\n▫️ Fate/Extra",
+          "author": "TheGameVerse",
+          "date": "2026-09-09",
+          "likes": 10937,
+          "views": 1308912,
+          "link": "https://x.com/TheGameVerse/status/2097594214431572377",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRwiVOLbEAAstQU.jpg"
+          },
+          "summary": "Valve 端 API 疑似失误，本应私密的成就列表被 Exophase、SteamDB 等第三方站点抓取，曝光 Persona 6、王国之心4、Fable、Judas、Deus Ex 重制版、Thief 重制版、星球大战等多款未公布/未发售游戏。KH4 成就暗示星战、Zootopia、Wall-E、Oswald 等迪士尼世界。Exophase 站长 x3sphere 称'像是 Valve 搞砸了'。多家报道：PC Gamer、Polygon、Eurogamer、GameSpot、MP1st、Niche Gamer。",
+          "analysis": "名单需打折扣看待：疑似'Balatro 续作'已被 localthunk 亲自辟谣（只是模仿者），Toem 2 其实早已公布。但'应私有数据可被公开 API 拉取'是实打实的运营事故——未公布游戏的成就要在 PC 端全程保密，从此多了一个系统性风险点，发行商的 Steam 后台信息管理粒度需要重审。",
+          "recommendation": "Valve 端 API 失误致 Steam 成就大泄露：Persona 6、KH4、Fable 等数十款未公布游戏曝光——KH4 迪士尼世界被扒出",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "X · 行业访谈",
+          "tags": ["微软", "Xbox", "Double Fine", "独立化"],
+          "title": "Double Fine 脱离微软独立：Schafer 谈主动逃离 Xbox 裁员潮'除了我没人能关掉 Double Fine'",
+          "en_title": "'No-one puts Double Fine out of business except me', says Tim Schafer on taking Double Fine independent",
+          "full_text": "Tim Schafer on taking Double Fine independent says: 'Asha's not going to shoot my dog' https://t.co/UJp7WAJxps",
+          "author": "pcgamer",
+          "date": "2026-09-09",
+          "likes": 75,
+          "views": 36083,
+          "link": "https://x.com/pcgamer/status/2097642325216538837",
+          "media": null,
+          "summary": "在 Xbox 新 CEO Asha Sharma 任内宣布裁员 3200 人后，Double Fine 主动选择独立。Schafer 向 Bloomberg 回忆：Sharma 以'倾听模式'到访后 Xbox 的使命从'为 Game Pass 供好游戏'发生转向，'除非我们每年出个 Minecraft 级爆款，否则怎么省钱都救不了我们'。他将这次独立称作团队的'创造性觉醒'。",
+          "analysis": "第一方工作室'主动出走'在微软收缩周期里极为罕见，说明中型创意团队的价值逻辑在变化：与其在被统一平台战略中边缘化，不如回独立市场赌长线。《Psychonauts 2》后的 Keeper、Kiln 表现平平也说明独立化不解决产品问题，但把'被裁'换成了'自己决定怎么活'。",
+          "recommendation": "Double Fine 主动脱离微软独立：'Xbox 的使命变了，除非年年出 Minecraft 级爆款，否则救不了'",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "X · 版本节点",
+          "tags": ["Valheim", "正式版", "生存建造", "PCU"],
+          "title": "《Valheim》1.0 正式发售：五年 EA 毕业，PCU 冲上 16 万创 2021 年以来新高",
+          "en_title": "Valheim 1.0 HAS ARRIVED!",
+          "full_text": "Valheim 1.0 HAS ARRIVED!\n\nHighlights:\n- Deep North — new biome with new locations & enemies\n- 40+ new weapons, 4 armour sets & new gear\n- 10+ new creatures, including tameable & rideable moose\n- 80+ new building pieces & new crafting stations\n- New mechanics: grappling hook, snow shovel & upgradeable pockets\n- Jotun invasion & new world events\n- Alternate biome variants & mysterious idols for further upgrades\n- New music, cinematics & achievements\n- Graphics, UI, descriptions & various systems overhauled\n\nPlatforms: PC, Xbox Series X|S, PS5 & Nintendo Switch 2",
+          "author": "whatgamesv1",
+          "date": "2026-09-09",
+          "likes": 3207,
+          "views": 230884,
+          "link": "https://x.com/whatgamesv1/status/2097671614011756679",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2097671096723992576/img/bspi3Yy0L7u4db1N.jpg",
+            "video_url": "https://x.com/whatgamesv1/status/2097671614011756679/video/1"
+          },
+          "game_ref": "Valheim",
+          "summary": "Iron Gate 的维京生存游戏在抢先体验五年后推出 1.0：新生物群系'深北'、40+ 新武器、可驯服骑乘的驼鹿、80+ 建筑件、抓钩/雪铲等新机制，并同步登陆 PS5 与 Switch 2。据 Eurogamer 援引 SteamDB，Steam 同时在线冲至约 16 万，创 2021 年 4 月以来新高（EA 峰值 50.2 万）。",
+          "analysis": "16 万 PCU 是五年长线运营换来的'第二春'而非回到疫情级 50 万峰值，且现在 Steam 数字只代表一部分玩家（多平台分流）。对独游团队的参照：EA 五年不是失败信号，只要每次大版本有足够内容密度，1.0 仍可规划成一次'二次发售'窗口。",
+          "recommendation": "《Valheim》1.0 发售：五年 EA 毕业，PCU 冲 16 万创 2021 年以来新高——深北生物群系+骑驼鹿",
+          "featured": false
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "X · 市场数据",
+          "tags": ["市场数据", "RPG", "Rebel Wolves", "受众分析"],
+          "title": "《The Blood of Dawnwalker》玩家 58% 玩过《巫师3》：3 天百万销量背后的前 CDPR 基因",
+          "en_title": "It turns out 58% of The Blood of Dawnwalker players have also played The Witcher 3, and roughly 40% of the entire playerbase is on Steam",
+          "full_text": "It turns out 58% of The Blood of Dawnwalker players have also played The Witcher 3, and roughly 40% of the entire playerbase is on Steam\n\nhttps://t.co/w8NbUFDr71 https://t.co/smxliZhSwV",
+          "author": "eurogamer",
+          "date": "2026-09-09",
+          "likes": 79,
+          "views": 9451,
+          "link": "https://x.com/eurogamer/status/2097617482882429142",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRwsURPbwAAwnnh.jpg"
+          },
+          "game_ref": "The Blood of Dawnwalker",
+          "summary": "Alinea Analytics 数据：Dawnwalker 玩家中 58% 玩过《巫师3》，约 40% 玩家在 Steam（3 天百万销量中约 41 万来自 Steam），美国占 34%、波兰 11% 居第二；13% 玩过《Mortal Shell 2》、9% 玩过《鬼武者：剑之道》。同时 Rebel Wolves 叙事总监已挂出首席编剧招聘，为'黎明行者传奇'下一章扩军。",
+          "analysis": "'前 CDPR 团队 + 暗黑奇幻 RPG'的受众重合度被数据坐实——团队履历本身就是发行资产，首发窗口应直接对标巫师系受众做买量与主播投放。续作在首发六天内就启动主笔招聘，说明多部曲规划在立项时已锁定，'选择跨作继承'的 Mass Effect 式设计也在官方口径中确认。",
+          "recommendation": "《黎明行者之血》58% 玩家来自巫师3受众：3天100万销量、Steam占40%——续作已开招首席编剧",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "X · 大厂新作",
+          "tags": ["Nintendo", "Metroid", "2.5D", "Switch 2"],
+          "title": "《Metroid Ravenous》官宣：Mercury Steam 开发 2.5D 新作，2027年1月28日 Switch 2 独占",
+          "en_title": "Metroid: Ravenous announced, launches January 2027 exclusively for Nintendo Switch 2",
+          "full_text": "Metroid: Ravenous announced, launches January 2027 exclusively for Nintendo Switch 2\n\nhttps://t.co/5fDh0Yj6Jp https://t.co/eY137XanBL",
+          "author": "eurogamer",
+          "date": "2026-09-09",
+          "likes": 3,
+          "views": 2928,
+          "link": "https://x.com/eurogamer/status/2097696961683943587",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRyEQ7nWAAAjuaD.jpg"
+          },
+          "game_ref": "Metroid Ravenous",
+          "summary": "任天堂 Direct 公布 2.5D 系列新作《Metroid Ravenous》：Mercury Steam 开发，普遍被视为《Metroid Dread》直系续作，Samus 台词'It's eat or be eaten'暗示更黑暗的叙事方向。2027 年 1 月 28 日随特别版与两款 amiibo 同步发售，Switch 2 独占。前作 Dread 发售六个月卖出 290 万份，为系列最畅销。多家报道：The Game Awards、GameSpot、Destructoid、Niche Gamer、Polygon。",
+          "analysis": "任天堂把银河战士交给 Mercury Steam 后连续两款交出稳定质量，系列进入约五年一作的稳定产出节奏。Ravenous 是 Switch 2 第二年'第一方独占矩阵'的关键拼图，Dread 的 amiibo + 特别版发行套路也在继续复用。",
+          "recommendation": "《Metroid Ravenous》官宣：Mercury Steam 2.5D 接棒 Dread，2027年1月28日 Switch 2 独占——'吃或被吃'",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Metroid Ravenous",
+            "genre": "2.5D 动作 / Metroidvania",
+            "developer": "Mercury Steam（西班牙，代表作《Metroid Dread》）× Nintendo",
+            "platforms": ["Nintendo Switch 2"],
+            "price": "未公布",
+            "release_date": "2027年1月28日",
+            "steam_rating": "未上 PC 平台",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": "https://www.youtube.com/watch?v=ku-vSTDNsT8",
+            "description": "【核心玩法】Mercury Steam 接棒开发的 2.5D 银河战士正传，普遍被视为《Metroid Dread》的直系续作。预告展示 Samus 被能直接吸取能量的新型生物围攻，并出现眼神发亮的黑暗化演出——'It's eat or be eaten'（吃或被吃）的台词暗示本作将围绕捕食与被捕食的关系构建新的能力成长与战斗节奏。按系列惯例，能力门锁探索、逃走段与 Dread 建立的近战处决骨架大概率延续。\n【叙事与氛围】系列首次由 Samus 本人口出'黑化'台词，Ravenous（贪食/饕餮）的副标题直指'饥饿'主题，氛围比 Dread 更压迫。\n【发售信息】2027 年 1 月 28 日 Switch 2 独占，同步推出特别版与两款全新 amiibo；此前曾在巴西分级机构提前泄露，本次为正式首曝。\n【优势】Mercury Steam 已用《Metroid Dread》证明其对 2D 银河战士的掌控（发售六个月 290 万份、系列最畅销）；Switch 2 的性能冗余可支撑更高密度的粒子与生物质感演出。\n【观察点】能否保持 Dread 的手感水准，以及'饥饿的 Samus'叙事会走多远。\n【综合】Switch 2 早期第一方独占矩阵的关键拼图，2027 年初最确定的百万级种子选手。",
+            "why_notable": "系列最畅销的 Dread 之后首个全新 2.5D 正传，任天堂 Switch 2 第二年第一方独占核心"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "X · 独游爆款",
+          "tags": ["Roguelike", "建造", "Steam新品", "移动要塞"],
+          "title": "《Wanderburg》：会走路还要吃掉同类的城堡——移动要塞 Roguelike 上线首日 Steam 爆火",
+          "en_title": "「城が城を喰う」移動要塞ローグライク『ワンダーバーグ』Steamで瞬く間に大人気に。強くてデカい城が生き残る、魔改造巨大化サバイバル",
+          "full_text": "「城が城を喰う」移動要塞ローグライク『ワンダーバーグ』Steamで瞬く間に大人気に。強くてデカい城が生き残る、魔改造巨大化サバイバル\nhttps://t.co/CghsHZuEIL https://t.co/dqv6u2RKNR",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-09",
+          "likes": 653,
+          "views": 84187,
+          "link": "https://x.com/AUTOMATONJapan/status/2097558008826110372",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2097557797437362176/img/ystAYZ2UbsxIj8ox.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2097558008826110372/video/1"
+          },
+          "game_ref": "Wanderburg",
+          "summary": "德国团队 Randwerk 开发、Sidekick Publishing 发行的《Wanderburg》9 月 8 日登陆 Steam 抢先体验：玩家驾驶自己的城堡在地图上移动，吞噬村庄与其他城堡来巨型化，组装模块化攻城器械，'更大更强'的城活到最后。日媒 AUTOMATON 报道其'上线即爆'，首日即获 765+ 条评价，国区定价 ¥33.8。",
+          "analysis": "'城堡即角色'把载具建造、Roguelike 成长与吞食进化式滚雪球揉进一个一眼可读的概念，是典型的'一句话即卖点'独游。移动要塞品类此前缺少标杆，Wanderburg 用魔改巨大化做出记忆点，日区以'城吃城'的直译梗扩散——EA 期的内容更新节奏决定它是一阵风还是新品类。",
+          "recommendation": "《Wanderburg》：会走路还要吃掉别的城堡的移动要塞 Roguelike——9月8日上线首日 Steam 爆火",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Wanderburg",
+            "genre": "移动要塞 Roguelike / 建造 / 动作 / 生存",
+            "developer": "Randwerk（德国）／发行：Sidekick Publishing",
+            "platforms": ["Steam（Windows/macOS/Linux）"],
+            "price": "¥33.80（抢先体验）",
+            "release_date": "已发售 · 2026年9月8日",
+            "steam_rating": "首日 765+ 条评价",
+            "steam_url": "https://store.steampowered.com/app/3624140/Wanderburg/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3624140/1af8e0906799b8c9063d0e5031571aef48b55605/header_alt_assets_2.jpg?t=1788973804",
+            "youtube_video": null,
+            "description": "【核心玩法】《Wanderburg》把玩家的'基地'做成一座带轮子的城堡：整座城在地图上推进，吞吃村庄、森林乃至其他玩家的城堡，让自身越滚越大。吞噬获得的资源用于魔改式组装攻城器械与模块化炮塔，形成'更大更强'的滚雪球生存循环。单局制 Roguelike，'活到最后的大城堡'即胜利。\n【题材记忆点】'会走路的城吃掉会走路的城'一句话可讲清，中世纪木质要塞长出机械腿互相追猎的画面在短视频平台传播力拉满，日区社区以'城が城を喰う'（城吃城）的直译梗扩散。\n【发售与表现】9 月 8 日登陆 Steam 抢先体验，首日即获 700+ 条评价，国区定价 ¥33.8，支持 Windows/macOS/Linux。\n【优势】概念差异度高、单局节奏快、巨大化反馈爽快。\n【不足】抢先体验阶段的内容深度与长线目标尚待验证，吞食之外的策略层（器械搭配、build 分支）能否撑起反复游玩是关键。\n【综合】2026 年秋季最'一眼懂'的题材黑马之一，EA 期的更新节奏决定它是一阵风还是一个新品类。",
+            "why_notable": "'城吃城'的题材差异度在 Steam 独游中极少见，上线首日即进入热门讨论"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "X · 独游移植",
+          "tags": ["社交游戏", "Switch 2", "销量里程碑", "派对"],
+          "title": "《Meccha Chameleon》Steam 卖破 2000 万份：涂装捉迷藏爆款今日登陆 Switch 2",
+          "en_title": "After selling over 20 million copies on Steam, Meccha Chameleon comes to Nintendo Switch 2 later today",
+          "full_text": "After selling over 20 million copies on Steam, Meccha Chameleon comes to Nintendo Switch 2 later today\n\nhttps://t.co/W2znaMrPFx https://t.co/qdX5m0LF99",
+          "author": "eurogamer",
+          "date": "2026-09-09",
+          "likes": 3,
+          "views": 2960,
+          "link": "https://x.com/eurogamer/status/2097690164822708274",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRx-Fg6XcAAj0Hjv.jpg"
+          },
+          "game_ref": "Meccha Chameleon",
+          "summary": "6 月 9 日发售的涂装捉迷藏游戏《Meccha Chameleon》两个月卖出 2000 万份（16 天破千万、30 天内破 1500 万），今日直接登陆 Switch 2。Steam 现有约 7.8 万条评价，国区 ¥26。开发商 lemorion 沿《Among Us》《Lethal Company》路线靠主播传播起量；此前其创意工坊地图曾被发现夹带恶意软件、官方 Discord 亦遭入侵，均已处理。",
+          "analysis": "'低价格 + 主播友好 + 一轮一局'的社交爆款模型再次跑通，且这次从 PC 到主机的移植窗口缩到两个月——社交游戏的生命周期正靠不断开新平台来维持。风险同样清晰：UGC 平台的恶意内容治理已成为这类游戏的新运营成本项。",
+          "recommendation": "《Meccha Chameleon》两个月卖出 2000 万份：涂装捉迷藏社交爆款今日登陆 Switch 2——¥26、7.8 万评价",
+          "featured": false,
+          "enrichment": {
+            "game_name": "Meccha Chameleon",
+            "genre": "非对称社交 / 派对捉迷藏 / 涂装创作",
+            "developer": "lemorion（个人开发者）",
+            "platforms": ["Steam（Windows/macOS/Linux）", "Nintendo Switch 2"],
+            "price": "¥26.00（Steam 国区）",
+            "release_date": "已发售 · 2026年6月9日（Switch 2 版 2026年9月9日）",
+            "steam_rating": "约 7.8 万条评价",
+            "steam_url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1785908480",
+            "youtube_video": null,
+            "description": "【核心玩法】新一轮'非对称社交捉迷藏'：白色小人把自己涂成场景的颜色与花纹，摆姿势伪装成墙壁、家具、摆件；寻找方则要在限时内揪出所有伪装者。只要有一名隐藏者存活到计时结束，隐藏方即获胜。核心技巧是'画得像'与'站得刁'，涂装系统给了传统捉迷藏一个创作型变量。\n【成绩轨迹】6 月 9 日 Steam 发售，16 天破 1000 万份，30 天内破 1500 万，两个月破 2000 万——节奏与 2025 年的社交爆款《R.E.P.O.》同级。Steam 现有约 7.8 万条评价，国区 ¥26 的低定价进一步降低组队门槛。\n【传播机制】一轮几分钟、直播效果极强（观众看得清'藏哪了'而玩家找不到），天然适配主播切片传播；开发方 lemorion 为个人规模团队。\n【风险】创意工坊自制地图曾被发现夹带恶意软件，官方 Discord 亦遭短暂入侵——UGC 治理成为社交爆款的必修课。\n【综合】《Among Us》《Lethal Company》谱系的最新爆款，Switch 2 移植进一步打开家庭聚会场景。",
+            "why_notable": "2026 年销量最快的独立社交游戏，两个月 2000 万份并迅速完成主机化"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "X · 大厂新作",
+          "tags": ["Nintendo", "Kirby", "3D箱庭", "Switch 2"],
+          "title": "《Kirby and the World Beyond》官宣：星之卡比 35 周年 3D 新作，2027 春登陆 Switch 2",
+          "en_title": "Kirby and the World Beyond is releasing Spring 2027 on Switch 2. #NintendoDirect",
+          "full_text": "Is Kirby living in the Truman Show? 🤔\n\nKirby and the World Beyond is releasing Spring 2027 on Switch 2. #NintendoDirect https://t.co/sCp4qsFoj0",
+          "author": "GameSpot",
+          "date": "2026-09-09",
+          "likes": 59,
+          "views": 19556,
+          "link": "https://x.com/GameSpot/status/2097700706648039874",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRyHqMsXQAAMWn1.jpg"
+          },
+          "game_ref": "Kirby and the World Beyond",
+          "summary": "任天堂 Direct 公布星之卡比系列全新 3D 作品《Kirby and the World Beyond》：玩家可自由探索并使用卡比的复制能力，2027 年春季登陆 Switch 2，恰逢系列 35 周年。预告中'卡比活在楚门的世界'般的超现实场景在社交网络引发大量二创讨论。",
+          "analysis": "从《探索发现》到 World Beyond，HAL 的 3D 卡比进入隔代稳定迭代。'开放箱庭 + 能力复制'结构在全年龄段的通吃能力是任天堂最稳的百万级产品线之一，35 周年节点大概率配套周年活动与 amiibo 矩阵。",
+          "recommendation": "《Kirby and the World Beyond》官宣：卡比 35 周年 3D 新作，2027 春 Switch 2——'卡比活在楚门的世界'",
+          "featured": false,
+          "enrichment": {
+            "game_name": "Kirby and the World Beyond",
+            "genre": "3D 箱庭探索 / 动作 / 全年龄",
+            "developer": "HAL Laboratory × Nintendo",
+            "platforms": ["Nintendo Switch 2"],
+            "price": "未公布",
+            "release_date": "2027年春",
+            "steam_rating": "未上 PC 平台",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": "https://www.youtube.com/watch?v=tUp_l5taUeY",
+            "description": "【核心玩法】星之卡比系列全新 3D 作品，延续《星之卡比 探索发现》确立的'开放箱庭 + 复制能力'结构：玩家在可自由探索的关卡中使用吸入、复制与变形能力解谜战斗。官方仅透露将让玩家'自由探索'并运用卡比的能力。\n【系列坐标】2022 年《探索发现》是系列首次全面 3D 化并取得商业成功，本作是其直接后继者，落地 Switch 2 平台，性能冗余有望带来更大箱庭与更多同屏物件。\n【氛围话题】预告大量'日常物体会动'的超现实场景被 GameSpot 以'卡比活在楚门的世界'形容，'粉色可爱下的违和感'成为社交网络二创热点——这种怪诞性或许正是本作的叙事伏笔。\n【发售信息】2027 年春登陆 Switch 2，恰逢系列 35 周年，按任天堂惯例大概率配套周年活动、限定硬件与 amiibo。\n【优势】全年龄 3D 箱庭是任天堂最稳的产品线之一，35 周年节点自带营销势能。\n【综合】Switch 2 2027 上半年的家庭向旗舰，销量下限极高。",
+            "why_notable": "卡比系列 35 周年节点新作，HAL 3D 化路线的第二座里程碑"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "X · 同人游戏",
+          "tags": ["宝可梦同人", "养成", "免费"],
+          "title": "宝可梦同人《Pokémon Homestead》发售：无战斗的培育师模拟，靠互动养成宝可梦",
+          "en_title": "Pokémon Homestead is out NOW! Features: Play as a Pokémon Breeder - Matchmake trainers with Pokémon that fit them - No battles, your Pokémon grow through various interactions - Unique custom artstyle",
+          "full_text": "Pokémon Homestead is out NOW! 🏡\nFeatures:\n- Play as a Pokémon Breeder\n- Matchmake trainers with Pokémon that fit them\n- No battles, your Pokémon grow through various interactions\n- Unique custom artstyle\n- More\n\n⏬ Check it out ⏬\nhttps://t.co/CeXxkxnLTd https://t.co/fygKw1YH7y",
+          "author": "PokeFangameNews",
+          "date": "2026-09-08",
+          "likes": 28273,
+          "views": 801362,
+          "link": "https://x.com/PokeFangameNews/status/2097407148393157088",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRt7XI4aQAARQCP.png"
+          },
+          "summary": "宝可梦同人游戏《Pokémon Homestead》正式发售：玩家扮演宝可梦培育师，为训练家匹配适合他们的宝可梦，全程无战斗，宝可梦通过各类互动成长，配独特自定义美术风格。",
+          "recommendation": "宝可梦同人《Pokémon Homestead》发售：无战斗纯养成的培育师模拟——80 万浏览",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "X · 新游曝光",
+          "tags": ["协作动作", "2027", "日本"],
+          "title": "《Doughn't Panic》：变成披萨的两人组在人间求生，2027 年发售的协作动作游戏",
+          "en_title": "一枚のピザになっちゃったふたりが人間世界を生き抜く協力アクションゲーム『Doughn't Panic』が面白そう。2027年に発売予定",
+          "full_text": "【🍕】一枚のピザになっちゃったふたりが人間世界を生き抜く協力アクションゲーム『Doughn't Panic』が面白そう。2027年に発売予定\nhttps://t.co/xqOsp47mgM\n\n広々としたキッチンや道路の上、ネズミが潜むゴミ溜まりなどを進め。ふたりの息を合わせることでジャンプや回避などのアクションもできる https://t.co/Qy40zUvNKa",
+          "author": "denfaminicogame",
+          "date": "2026-09-09",
+          "likes": 237,
+          "views": 84309,
+          "link": "https://x.com/denfaminicogame/status/2097499688488587719",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2097499652568563712/pu/img/5NPHn3gNRIVnYtj3.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2097499688488587719/video/1"
+          },
+          "summary": "双人协作动作游戏《Doughn't Panic》：两个变成披萨的角色要在人类世界求生，穿越厨房、马路与藏老鼠的垃圾堆，双人配合可实现跳跃与闪避等联动动作，2027 年发售。",
+          "recommendation": "《Doughn't Panic》：变成披萨在人间求生的双人协作动作——2027 年发售",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "X · 新游上线",
+          "tags": ["多人合作", "Steam", "日本"],
+          "title": "《Sunset Summit》Steam 上线：最大 8 人的爷爷奶奶登山协作，'重趣味轻折磨'",
+          "en_title": "最大8人、爺さん婆さんたちの山登り協力ゲーム『Sunset Summit』Steam配信開始！“イライラ”よりも“面白さ”を重視した作り",
+          "full_text": "最大8人、爺さん婆さんたちの山登り協力ゲーム『Sunset Summit』Steam配信開始！“イライラ”よりも“面白さ”を重視した作り\nhttps://t.co/UNr0BTDYew https://t.co/4qj3oDTszj",
+          "author": "gamespark",
+          "date": "2026-09-09",
+          "likes": 647,
+          "views": 69384,
+          "link": "https://x.com/gamespark/status/2097656634214613332",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2097656306819796993/pu/img/dYwHsh_b9APeXHNz.jpg",
+            "video_url": "https://x.com/gamespark/status/2097656634214613332/video/1"
+          },
+          "summary": "最多 8 人合作的登山游戏《Sunset Summit》登陆 Steam：玩家操纵爷爷奶奶组队向山顶进发，设计上刻意'重趣味轻折磨'，与《Getting Over It》式的挫败系登山游戏反向而行。",
+          "recommendation": "《Sunset Summit》Steam 上线：8 人爷爷奶奶登山协作，主打'有趣大于折磨'",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "X · 新游曝光",
+          "tags": ["RPG", "魔法学校", "Metroidvania"],
+          "title": "《Hemlotrion: Broken Mirror》：魔法学校二年级生，解开城墙里隐藏的黑暗秘密",
+          "en_title": "You're a second-year wizard at a magic school with a dark secret hidden in its walls - Fight goblins and golems in training - Duel other students in mini-games - New spells unlock more of the castle",
+          "full_text": "You're a second-year wizard at a magic school with a dark secret hidden in its walls\n\n- Fight goblins and golems in training\n- Duel other students in mini-games\n- New spells unlock more of the castle\n\nGame is Hemlotrion: Broken Mirror https://t.co/cCq767ee5h",
+          "author": "IndieGameJoe",
+          "date": "2026-09-08",
+          "likes": 1359,
+          "views": 351101,
+          "link": "https://x.com/IndieGameJoe/status/2097451523861016976",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2097451057093980160/img/gP-3iOQQ3UPCkzfK.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2097451523861016976/video/1"
+          },
+          "summary": "魔法学校题材动作 RPG《Hemlotrion: Broken Mirror》：玩家是魔法学校二年级学生，学校墙体内藏着黑暗秘密；训练战打哥布林与魔像、小游戏形式与同学决斗，新咒语解锁更多城堡区域——'法术即钥匙'的 metroidvania 结构。",
+          "recommendation": "《Hemlotrion: Broken Mirror》：新咒语解锁更多城堡区域的魔法学校 metroidvania",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "X · 开发者求助",
+          "tags": ["盗版", "独立开发者"],
+          "title": "独立开发者求助：我的游戏被 1:1 抄袭上架了，求大家举报",
+          "en_title": "Some guy is stealing my game, exactly 1:1, can anyone please report it?",
+          "full_text": "Some guy is stealing my game, exactly 1:1, can anyone please report it? https://t.co/lWfZJXpHey",
+          "author": "PixelLeonard",
+          "date": "2026-09-09",
+          "likes": 331,
+          "views": 45306,
+          "link": "https://x.com/PixelLeonard/status/2097489000072085770",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HRvEPHsXkAEMUl7.png"
+          },
+          "summary": "开发者 Ushurileo（PixelLeonard）发帖称自己的游戏被他人 1:1 原样盗版上架，公开求助社区举报。1:1 复制级盗版在独立游戏圈并不罕见，但如此完整的搬运仍引发大量转发声援。",
+          "recommendation": "独立开发者公开求助：游戏被 1:1 盗版上架——独立游戏侵权治理的日常样本",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 06",
+          "source": "X · 概念演示",
+          "tags": ["种田模拟", "多人", "概念原型"],
+          "title": "'开拖拉机的星露谷'概念演示：共享多人世界 + 实时经济",
+          "en_title": "Stardew Valley in a tractor - One shared multiplayer world. Real time economy.",
+          "full_text": "Stardew Valley in a tractor\n\nOne shared multiplayer world.\nReal time economy. https://t.co/aspG2Y8keQ",
+          "author": "pk_duc",
+          "date": "2026-09-07",
+          "likes": 267,
+          "views": 15262,
+          "link": "https://x.com/pk_duc/status/2097112189991829692",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2097111813028712448/img/ZTH634ukVGdpLi6l.jpg",
+            "video_url": "https://x.com/pk_duc/status/2097112189991829692/video/1"
+          },
+          "summary": "开发者 Reece 展示'开拖拉机的星露谷'概念原型：共享多人世界 + 实时经济系统。把农场模拟做成'多人共服 + 时间连续的经济'是种田品类少有人碰的方向。",
+          "recommendation": "'开拖拉机的星露谷'概念：共享多人世界 + 实时经济的种田玩法实验",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 07",
+          "source": "X · 概念原型",
+          "tags": ["AI开发", "塔防", "原型"],
+          "title": "'Thronefall but zombies'：AI 辅助开发的极简塔防僵尸变体原型",
+          "en_title": "Been playing around with a new concept … 'Thronefall but zombies'",
+          "full_text": "Been playing around with a new concept …\n\n'Thronefall but zombies' https://t.co/P0aVN5lSIJ",
+          "author": "vibedeploy",
+          "date": "2026-09-08",
+          "likes": 694,
+          "views": 23793,
+          "link": "https://x.com/vibedeploy/status/2097288709443850372",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2097288628947042305/img/026yvLx7KFAFLNFx.jpg",
+            "video_url": "https://x.com/vibedeploy/status/2097288709443850372/video/1"
+          },
+          "summary": "VibeDeploy 展示'Thronefall but zombies'概念原型：把极简策略塔防《Thronefall》的循环嫁接到僵尸生存题材上。'知名玩法 × 热门题材'的快速原型法在 AI 辅助开发时代越来越常见。",
+          "recommendation": "'Thronefall but zombies'：知名玩法 × 僵尸题材的 AI 快速原型实验",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "X · 官方发布",
+          "tags": ["Unity", "Claude Code", "AI工具链", "插件"],
+          "title": "Unity 官方发布 Claude Code 插件：一条命令解锁 29 个原生 Unity 技能与编辑器直控",
+          "en_title": "Introducing the official Unity plugin for Claude Code - a first-party integration available directly in @claudeai's plugin directory.",
+          "full_text": "We're bringing Unity directly into the AI workflows you use every day 🎮\n\nIntroducing the official Unity plugin for Claude Code - a first-party integration available directly in @claudeai's plugin directory.\n\nWith just one command, unlock the 29 native Unity skills available at launch, supported CLI workflows, and direct Editor control!\n\nOne install, no configuration, supported by Unity.",
+          "author": "unitygames",
+          "date": "2026-09-09",
+          "likes": 592,
+          "views": 36671,
+          "link": "https://x.com/unitygames/status/2097722273696227338",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2097722240540225537/pu/img/Kr5fGoquDojwqBVX.jpg",
+            "video_url": "https://x.com/unitygames/status/2097722273696227338/video/1"
+          },
+          "summary": "Unity 发布官方 Claude Code 插件，作为 Anthropic 插件目录中的一方集成：一条命令安装，即解锁 29 个原生 Unity 技能、受支持的 CLI 工作流与直接编辑器控制，零配置、由 Unity 官方维护支持。",
+          "analysis": "引擎厂商第一方接入 AI 编码代理是标志性事件：AI 辅助从'社区 MCP 凑合用'进入'官方支持的工作流'。对 Unity 这是留住中小团队的防御性动作；对开发者，编辑器操作将逐渐被 agent 标准化——资深工程师的价值进一步向架构设计与审校迁移。",
+          "recommendation": "Unity 官方 Claude Code 插件发布：一条命令解锁 29 个原生技能 + 编辑器直控——引擎×AI 编码代理正式牵手",
+          "featured": true
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**任天堂 9 月 Direct 狂轰滥炸**\n45 分钟发布会官宣《Metroid Ravenous》（2027年1月28日 Switch 2 独占）、《Kirby and the World Beyond》（2027 春）、《时之笛》重制版实机（11月5日）、《Persona 4 Revival》2027年5月20日 + P6 确认登陆 Switch 2、《怪物猎人：荒野》12月4日等数十条公告。\n\n**Steam 成就大泄露**\nValve 端 API 失误导致 Persona 6、王国之心4、Fable、Judas 等数十款未公布游戏成就被第三方站点抓取，KH4 迪士尼世界被扒，疑似 Balatro 续作已被官方辟谣。\n\n**AI：果蝇大脑与研究员之辞**\n真实果蝇大脑（16.6万神经元）驱动 NPC 的《Fly Escape Room》与'果蝇打 Beat Saber'同日引爆；OpenAI/Anthropic 前预训练研究员公开辞职获 8670 万浏览；Unity 官方 Claude Code 插件上线。\n\n**独游市场：量价齐飞**\n《Meccha Chameleon》两个月 2000 万份并当日移植 Switch 2；《Valheim》1.0 五年毕业冲 16 万 PCU；《Wanderburg》移动要塞 Roguelike 首日爆火。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
