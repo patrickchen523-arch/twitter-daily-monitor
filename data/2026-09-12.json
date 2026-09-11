@@ -1,0 +1,717 @@
+{
+  "date": "2026-09-12",
+  "meta": {
+    "raw_count": 201,
+    "filtered_count": 148,
+    "selected_count": 12,
+    "crawl_time": "2026-09-12 06:07"
+  },
+  "lede": "索尼砍单后小岛秀夫 Physint 转投 Xbox；PIF 拟将 EA 与 Savvy 合并为游戏巨兽；WARDOGS 抢先体验两天冲上 35.9 万同时在线；DeepMind 开源整只果蝇。",
+  "editors_pick": [
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "发售价 149 元的『战地式佣兵沙盒』两天冲上 35.9 万同时在线——Beta 期 50 万玩家验证过的下一个多人 FPS 爆款"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "索尼 6 月砍掉小岛秀夫新作 Physint，三个月谈判后 Xbox 接盘发行——主机独占叙事再遭瓦解"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Google DeepMind 开源整只果蝇：Nature 论文+MuJoCo 全关节模拟，这周它已经学会玩 DOOM"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "DeepMind 联合 HHMI 在 Nature 发表并开源果蝇全身模型 flybody，本周已被社区接上 DOOM 和 Beat Saber\nUnity 官方发布 Claude Code 插件：29 个原生技能、一行命令直控游戏编辑器\n设计师 MengTo 用 Fable 5.1 三天交付 15 本五语言有声儿童书 StoryComet"
+    },
+    {
+      "id": "industry",
+      "text": "索尼被曝 6 月砍单小岛秀夫 Physint：超预算+延期+DS1/2 未达营收预期，Xbox 三个月后接盘\nBloomberg：PIF 考虑把 EA 与旗下 Savvy Games Group 合并成全球游戏巨兽\nValheim 1.0 发售，Steam 同时在线冲回五年新高 16 万\nRockstar vs 被裁员工庭审开庭：'内鬼'卧底工会 Discord 2.5 年，法律文件首曝 GTA6 32 人在线模式\n暴雪 1900 名工会员工通过首份合同：gen-AI 使用须协商、裁员享 14 个月召回权"
+    },
+    {
+      "id": "indie",
+      "text": "WARDOGS 抢先体验 48 小时冲上 35.9 万同时在线（全榜第 3），2 天 2.9 万好评\n《火箭联盟》元开发者首作 Trash Day 定档 10 月 13 日，6 人浣熊物理搬垃圾\nスーパー画伯公开：8 人 3D 立体你画我猜+绘画人狼，10-11 月发售\n个人开发物理导弹特技 Dumbfire 开放 Steam playtest"
+    },
+    {
+      "id": "tools",
+      "text": "Unity 6.6 上周发布：Enter Play Mode 提速、Dictionary 序列化、Hierarchy 升级、WebGPU 支持"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · 技术社区",
+          "tags": [
+            "具身智能",
+            "开源",
+            "DeepMind"
+          ],
+          "title": "Google DeepMind 开源整只果蝇：Nature 论文+MuJoCo 全关节模拟，本周已被接上 DOOM",
+          "en_title": "Someone open sourced an entire animal. A fruit fly, rebuilt joint by joint from microscopy, that walks, grips, flies and lands inside a physics engine.",
+          "full_text": "🚨 Someone open sourced an entire animal.\n\nNot a model of an animal. The animal.\n\nA fruit fly, rebuilt joint by joint from microscopy, that walks, grips, flies and lands inside a physics engine running on your laptop.\n\nIt's called flybody. Built by Google DeepMind and HHMI Janelia, published in Nature, and sitting on GitHub under Apache 2.0 right now.\n\nWhat's actually inside:\n\nA full body in MuJoCo. Legs, wings, head, abdomen, every joint articulated and physically simulated.\n\nA 59-dimensional action space covering walking, flight and grooming behaviors",
+          "author": "Zyvex_0x",
+          "date": "2026-09-11",
+          "likes": 1967,
+          "views": 123623,
+          "link": "https://x.com/Zyvex_0x/status/2098350851764945230",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098344438938435598/img/CqZKMxrtPkVokA0d.jpg",
+            "video_url": "https://x.com/Zyvex_0x/status/2098350851764945230"
+          },
+          "summary": "Google DeepMind 与 HHMI Janelia 在 Nature 发表 flybody 项目并开源：基于显微镜重建的完整果蝇身体，在 MuJoCo 物理引擎中逐关节模拟行走、抓握、飞行与降落，动作空间达 59 维，Apache 2.0 协议上架 GitHub。本周社区已将其接入 DOOM、Beat Saber 等游戏——Eurogamer 引用研究者的话：'果蝇越兴奋，射击就越拼'。",
+          "analysis": "对游戏行业而言，这是具身智能与游戏物理引擎深度绑定的信号：MuJoCo 这类'机器人仿真器'正在成为 AI 行为研究的标准底座，而游戏引擎技能（物理调参、实时仿真）与之高度可迁移。同时'完整动物开源'意味着 AI NPC 研究可以用真实生物神经数据驱动行为模型，游戏内生物仿真会从脚本走向生理级。",
+          "recommendation": "Google DeepMind 开源整只果蝇：Nature 论文+MuJoCo 全关节模拟，本周已被接上 DOOM",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Unity 官方",
+          "tags": [
+            "AI编程",
+            "Claude Code",
+            "Unity"
+          ],
+          "title": "Unity 官方发布 Claude Code 插件：29 个原生技能一行接入，AI 直接操控游戏编辑器",
+          "en_title": "Introducing the official Unity plugin for Claude Code - a first-party integration available directly in Claude's plugin directory.",
+          "full_text": "We're bringing Unity directly into the AI workflows you use every day 🎮\n\nIntroducing the official Unity plugin for Claude Code - a first-party integration available directly in @claudeai's plugin directory.\n\nWith just one command, unlock the 29 native Unity skills available at launch, supported CLI workflows, and direct Editor control!\n\nOne install, no configuration, supported by Unity.",
+          "author": "unitygames",
+          "date": "2026-09-09",
+          "likes": 3987,
+          "views": 518919,
+          "link": "https://x.com/unitygames/status/2097722273696227338",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2097722240540225537/pu/img/Kr5fGoquDojwqBVX.jpg",
+            "video_url": "https://x.com/unitygames/status/2097722273696227338"
+          },
+          "summary": "Unity 官方宣布推出 Claude Code 第一方插件，已进入 Claude 插件目录：一条命令即可解锁 29 个原生 Unity 技能，包括受支持的 CLI 工作流与直接编辑器控制，零配置、官方维护。这是主流游戏引擎首次以第一方身份接入通用 AI 编程代理。",
+          "analysis": "引擎厂商从'容忍 AI 工具'转向'官方集成'，意味着 AI 编程代理成为引擎标准工作流的一部分：场景搭建、资产批处理、编辑器自动化这类原本要写 Editor 脚本的活，正在变成自然语言指令。中小团队的开发杠杆被进一步拉大，引擎技能栈的招聘标准也可能随之改变。",
+          "recommendation": "Unity 官方发布 Claude Code 插件：29 个原生技能一行接入，AI 直接操控游戏编辑器",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "X · 开发者",
+          "tags": [
+            "Fable",
+            "AI开发",
+            "独立开发"
+          ],
+          "title": "设计师 MengTo 用 Fable 5.1 三天做出 StoryComet：15 本五语言动画儿童书含配音与进度系统",
+          "en_title": "I built StoryComet with Fable 5.1 in three days. 15 animated children's books in five languages, with translated voiceovers, covers and UI.",
+          "full_text": "I built StoryComet with Fable 5.1 in three days. 15 animated children's books in five languages, with translated voiceovers, covers and UI.\n\nParents can track progress. Kids can take quizzes, collect pins and 3D souvenirs, and switch languages on the fly. Six books teach English, Spanish, French, Japanese or Chinese.\n\nMy three-day workflow:\n- Day 1: prototype (and post on X)\n- Day 2: 9 more books, languages, progress, quizzes, pins and souvenirs\n- Day 3: polish, domain n...",
+          "author": "MengTo",
+          "date": "2026-09-10",
+          "likes": 3711,
+          "views": 323880,
+          "link": "https://x.com/MengTo/status/2098027027760840864",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098023191080013824/img/5gJPkyK_nHqU0NUA.jpg",
+            "video_url": "https://x.com/MengTo/status/2098027027760840864"
+          },
+          "summary": "知名设计师 MengTo 公开用 AI 编程工具 Fable 5.1 三天构建 StoryComet 的全过程：15 本动画儿童书、5 种语言配音与界面、家长进度追踪、测验/徽章/3D 纪念品收集，还有 6 本多语言教学书。Day 1 出原型发推、Day 2 扩内容、Day 3 打磨上线，工作流全程公开。",
+          "analysis": "这条的价值不在成品而在'三天交付结构'：原型当天发布收集反馈、次日横向扩内容、第三天收尾，是把 AI 生成能力组织成产品节奏的范本。对游戏开发者，同构流程完全适用于 demo 冲刺、jam 作品甚至早期 EA 内容铺设。",
+          "recommendation": "设计师 MengTo 用 Fable 5.1 三天交付 15 本五语言有声儿童书，工作流全程公开",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 多家报道",
+          "tags": [
+            "小岛秀夫",
+            "Xbox",
+            "索尼"
+          ],
+          "title": "索尼砍单小岛秀夫新作 Physint，Xbox 接盘发行：超预算、延期、Death Stranding 未达营收预期",
+          "en_title": "Hideo Kojima's Physint now being published by Xbox, as PlayStation severs ties with Kojima Productions and Microsoft steps in to take over.",
+          "full_text": "Hideo Kojima's Physint now being published by Xbox, as PlayStation severs ties with Kojima Productions and Microsoft steps in to take over. https://t.co/FwW5J3lpuR https://t.co/3NTE3y6SEU",
+          "author": "eurogamer",
+          "date": "2026-09-11",
+          "likes": 55,
+          "views": 8540,
+          "link": "https://x.com/eurogamer/status/2098237867994570919",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HR5wNKZWIAEJt-F.jpg"
+          },
+          "summary": "索尼确认今年 6 月中旬通知取消 Physint 项目，小岛秀夫随后花三个月寻找新发行伙伴，最终与 Xbox 签约。Bloomberg 引述知情人士：项目多次错过截止日期、距发售尚有数年却已严重超预算，且 Death Stranding 1&2 均未达到 PlayStation 的营收预期；索尼也不愿再为非永久独占游戏投入数亿美元。小岛声明'开发继续推进'，Xbox 平台负责人 Asha Sharma 称'创作者有权选择在哪实现想法'。多家报道：PC Gamer、Polygon、Rock Paper Shotgun、Bloomberg。",
+          "analysis": "三个信号值得注意：其一，'非永久独占不投数亿美元'意味着巨额独占投资模式正在退潮；其二，DS1&2 营收不达预期仍然换来 Xbox 接盘，说明头部创作者的 IP 价值高于单一平台账面；其三，Xbox 在'重置'裁员潮中反向加码明星制作人，第一方收缩与外部签约并行将成为新常态。",
+          "recommendation": "索尼 6 月砍单小岛新作 Physint，三个月谈判后 Xbox 接盘发行",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · Bloomberg",
+          "tags": [
+            "EA",
+            "PIF",
+            "并购"
+          ],
+          "title": "PIF 考虑将 550 亿美元收购的 EA 与 Savvy Games Group 合并为'全球游戏巨兽'，宝可梦 GO 与 EA FC 或同屋檐",
+          "en_title": "Pokémon Go and EA FC could be 'under one roof', as EA and Saudi-owned Savvy Games Group reportedly considering merger.",
+          "full_text": "Pokémon Go and EA FC could be \"under one roof\", as EA and Saudi-owned Savvy Games Group reportedly considering merger\n\nhttps://t.co/XWr9imCdyi https://t.co/JrMCjb092S",
+          "author": "eurogamer",
+          "date": "2026-09-11",
+          "likes": 10,
+          "views": 4339,
+          "link": "https://x.com/eurogamer/status/2098416073905184805",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HR8SSy4X0A8-k6d.png"
+          },
+          "summary": "Bloomberg 引述知情人士：沙特主权基金 PIF 正考虑把今年早些时候以 550 亿美元杠杆收购的 EA，与旗下 Savvy Games Group 合并到同一旗帜下，以'更好地协调旗下资产'。Savvy 旗下已有 Scopely（宝可梦 GO）、ESL 电竞业务，并持有 Capcom、Nintendo、Koei Tecmo 等公司股份；其 60 亿美元收购沐瞳（Moonton）的交易将推迟到合并之后。Savvy CEO Brian Ward 上周刚刚离职。专家此前警告：EA 背上的杠杆收购债务可能迫使其砍掉单机产品线并裁员。",
+          "analysis": "550 亿杠杆收购仅两个月后就推动资产合并，验证了'债务压力驱动结构重组'的判断：EA 的单机产品线（BioWare、Respawn 等）在偿债模型下最危险。对行业而言，全球最大游戏资产池正在形成——EA 体育+宝可梦 GO+ESL 的组合意味着手游买量、电竞运营和年货 IP 将在同一决策链下统筹。",
+          "recommendation": "PIF 考虑将 550 亿美元收购的 EA 与 Savvy 合并，宝可梦 GO 或与 EA FC 同屋檐",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · SteamDB",
+          "tags": [
+            "Valheim",
+            "市场数据",
+            "独立游戏"
+          ],
+          "title": "Valheim 1.0 发售：Steam 同时在线冲回五年新高 16 万，距 EA 峰值 50.2 万仍有距离",
+          "en_title": "Valheim 1.0's Steam player count soars to a huge 5-year high, but it's not enough to beat the viral survival game's early access peak.",
+          "full_text": "Valheim 1.0's Steam player count soars to a huge 5-year high, but it's not enough to beat the viral survival game's early access peak. https://t.co/lHw7KpAr01 https://t.co/0ZQJoGtPkj",
+          "author": "eurogamer",
+          "date": "2026-09-11",
+          "likes": 12,
+          "views": 8206,
+          "link": "https://x.com/eurogamer/status/2098222769309712746",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HR5ieQuXgAgXM01.jpg"
+          },
+          "summary": "Valheim 于 9 月 9 日结束五年抢先体验正式发售 1.0，Steam 同时在线一度回到约 16 万，创 2021 年 4 月以来新高（GI 榜单 9 月 12 日峰值 217,966 交叉印证），但尚未超过 EA 期 502,387 的历史峰值。1.0 新增 Deep North 生物群系、40 余件武器，补丁说明近 1800 词；游戏同步登陆 PS5、Switch 2、Xbox Series X|S，Steam 数据已不再代表全部玩家。",
+          "analysis": "五年 EA 换 1.0 仍是教科书级发行：用超长 Early Access 维持社区与现金流，1.0 时点叠加多平台首发制造第二波峰值。16 万（GI 口径 21.8 万）对一款发售五年的独游是极健康的回流，但'EA 峰值 50 万永远回不去'也提醒：病毒式首发热度是独占窗口，1.0 只能兑现存量期待而非复制爆点。",
+          "recommendation": "Valheim 1.0 发售，Steam 同时在线冲回五年新高 16 万——距 EA 峰值 50 万仍有距离",
+          "featured": true,
+          "game_ref": "Valheim",
+          "enrichment": {
+            "game_name": "Valheim: 英灵神殿",
+            "genre": "动作 / 冒险 / 独立",
+            "developer": "Iron Gate AB",
+            "platforms": [
+              "PC",
+              "Mac",
+              "Linux"
+            ],
+            "release_date": "已发售 · 2026 年 9 月 9 日",
+            "pcu": "217,966（2026年9月12日 GI 榜单）",
+            "steam_rating": "461994 reviews",
+            "why_notable": "五年 EA 后 1.0 仍能冲回五年新高 PCU，是长线运营型独游的发行范本",
+            "steam_url": "https://store.steampowered.com/app/892970",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/1888731b59362fca6c026cdbafa3dfffd45c3146/header_alt_assets_6.jpg?t=1789121975",
+            "price": "¥ 89.00",
+            "description": "一款支持1–10名玩家的同时在线合作的探索生存游戏，背景设定在一个受维京文化启发、程序生成的神话世界中。战斗、建造并征服你的旅程，谱写一段足以获得奥丁眷顾的传奇史诗吧！\n\n"
+          }
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · RPS",
+          "tags": [
+            "Rockstar",
+            "工会",
+            "GTA6"
+          ],
+          "title": "Rockstar vs 被裁员工庭审开庭：'内鬼'卧底工会 Discord 两年半，法律文件首曝 GTA6 32 人在线模式",
+          "en_title": "'It would have been insanity to take no action' - Fiery opening statements reveal Rockstar's culture of secrecy as tribunal over sacked GTA 6 employees begins.",
+          "full_text": "'It would have been insanity to take no action' - Fiery opening statements reveal Rockstar's culture of secrecy as tribunal over sacked GTA 6 employees begins https://t.co/N0HsGOwZT3 https://t.co/5iLiC9qmV1",
+          "author": "eurogamer",
+          "date": "2026-09-11",
+          "likes": 8,
+          "views": 4554,
+          "link": "https://x.com/eurogamer/status/2098420040710173063",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HR8VxN5XAAU2MDU.jpg"
+          },
+          "summary": "Rockstar 北部工作室 31 名被裁员工的劳动法庭最终庭审在格拉斯哥开庭，预计持续五周。工会 IWGB 开场陈述指控：Rockstar 通过'内鬼'从 2024 年 2 月起卧底工会 Discord 长达两年半，安全人员与内鬼 21 个月内会面数十次，而裁员恰恰发生在工会成员数达到法定承认门槛 10% 的 48 小时内。Rockstar 则称解雇源于 Discord 中的不当行为——包括讨论当时高度机密的 GTA6 '32 人在线模式'，并以'华尔街银行级'保密姿态自辩：无人机偷拍、2022 年钓鱼攻击泄露、近期黑客勒索致母公司市值两天蒸发 20 亿美元。RPS 同日报道：这份法律文件构成 Rockstar 对 GTA Online 继任者 32 人格式的首次公开确认。",
+          "analysis": "无论裁决如何，此案都会改写英国游戏业劳资规则：若工会胜诉，'裁员时点与工会门槛挂钩'将成为经典判例；若 Rockstar 胜诉，公司卧底员工社群将获得事实许可。附带产物同样重要——GTA6 多人模式规格第一次以官方文书形式露出，32 人会话规模对在线服务设计的启示比任何爆料都硬。",
+          "recommendation": "Rockstar 法庭文件首次确认 GTA6 在研 32 人在线模式，庭审预计持续五周",
+          "featured": false
+        },
+        {
+          "idx": "游戏行业 05",
+          "source": "Eurogamer · Kotaku",
+          "tags": [
+            "Blizzard",
+            "工会",
+            "生成式AI"
+          ],
+          "title": "暴雪 1900 名工会员工通过首份合同：AI 使用须协商、裁员享 14 个月召回权",
+          "en_title": "Almost 1,900 Blizzard workers vote through a 'historic' union contract securing protections against layoffs and gen-AI.",
+          "full_text": "Almost 1,900 Blizzard workers vote through a \"historic\" union contract securing protections against layoffs and gen-AI. https://t.co/Q1iqxmh8gW https://t.co/8vQHetpjUw",
+          "author": "eurogamer",
+          "date": "2026-09-11",
+          "likes": 12,
+          "views": 8196,
+          "link": "https://x.com/eurogamer/status/2098207669353914878",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HR5UvVTXEAU7jX1.jpg"
+          },
+          "summary": "覆盖 WoW、炉石、守望、暗黑等团队及 QA、平台技术、叙事开发部门约 1900 名员工的合同获投票批准：公司必须就生成式 AI 的使用'讨论、评估并协商'，为行业首例；被裁员工 14 个月内可被召回至任何 Blizzard 谈判单位的空缺岗位，遣散费增加 4 周。Blizzard 总裁 Johanna Faries 称其'重要里程碑'。时机微妙：本周末即是 BlizzCon 2026。",
+          "analysis": "行业第一份把 gen-AI 写进协商义务的集体合同，等于给'AI 替代岗位'设了程序闸门——以后暴雪上任何 AI 管线都要先过工会桌。14 个月召回权同样是可复制条款：对正处裁员周期的其他大厂工会，这份合同就是谈判模板。关注本周末 BlizzCon 的项目发布节奏是否受影响。",
+          "recommendation": "暴雪 1900 名工会员工通过首份合同：AI 使用须协商、裁员享 14 个月召回权",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "PC Gamer · Steam GI 榜单",
+          "tags": [
+            "FPS",
+            "大型多人",
+            "抢先体验"
+          ],
+          "title": "WARDOGS：独立团队 BULKHEAD 开发的战地式佣兵沙盒，抢先体验 48 小时冲上 35.9 万同时在线",
+          "en_title": "Bribing medics to revive me first in Wardogs is one of my favorite shooter mechanics in ages",
+          "full_text": "Bribing medics to revive me first in Wardogs is one of my favorite shooter mechanics in ages https://t.co/dH42IlO80R",
+          "author": "pcgamer",
+          "date": "2026-09-11",
+          "likes": 254,
+          "views": 28924,
+          "link": "https://x.com/pcgamer/status/2098374949903937800",
+          "media": {
+            "type": "image",
+            "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/be00107d586c0bf0412e9e4acedb64629a99aa5b/header_schinese.jpg?t=1789059636"
+          },
+          "summary": "WARDOGS（BULKHEAD 开发、Team17 发行）9 月 10 日以 ¥149 开启抢先体验：100 人大规模军事沙盒融合战术枪战、诸兵种联合作战与建造破坏，'盈利能力'是唯一成功语言——可贿赂医疗兵优先复活自己（F1 加价至 500 美元）、打车去战区、修工事赚外快。PC Gamer 称'相信这股热度，可能是下一个伟大的多人 FPS'；Beta 期曾涌入近 50 万玩家。GI 榜单显示其 24 小时 PCU 峰值 358,971，仅次于 CS2 与 Dota 2，Steam 上线两天即获 29,396 条评价。",
+          "analysis": null,
+          "recommendation": "WARDOGS 抢先体验 48 小时冲上 35.9 万同时在线，贿赂医疗兵机制引爆战地式沙盒",
+          "featured": true,
+          "game_ref": "WARDOGS",
+          "enrichment": {
+            "game_name": "WARDOGS",
+            "genre": "FPS / 大型多人沙盒 / 建造破坏",
+            "developer": "BULKHEAD（英国，Team17 发行）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "¥149.00",
+            "release_date": "已发售 · 2026年9月10日（抢先体验）",
+            "steam_rating": "抢先体验 2 天即获 29,396 条评价",
+            "steam_url": "https://store.steampowered.com/app/1867240/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/be00107d586c0bf0412e9e4acedb64629a99aa5b/header_schinese.jpg?t=1789059636",
+            "youtube_video": null,
+            "description": "《WARDOGS》是一款全面战争式第一人称射击游戏，在最高支持 100 名玩家的大规模军事沙盒中，融合战术枪战、诸兵种联合作战以及建造与破坏机制。\n\n【核心玩法】胜负之外唯一真正的'货币'是利润：做任何事都为赚钱——修建前线工事拿报酬、把倒地队友拖出火线收服务费、甚至打车奔赴战区。倒地后可按 F1 悬赏加价（最高 500 美元）贿赂医疗兵优先复活自己，队友之间甚至会竞价抢单，医疗兵复活动画是搓手数钱。每条命都是一笔投资，回报多少取决于这局怎么打。\n\n【玩法差异化】把 Battlefield 式大战场与'佣兵经济学'咬合：装具、载具、复活全部市场化，付费与收益循环形成独特的道德灰度幽默，PC Gamer 将其比作《赛博朋克 2077》的创伤小组——战场上举金卡插队治疗。\n\n【美术与氛围】写实现代军事风，沙盒内可破坏结构物支持工事构筑与爆破推进，BETA 期间近 50 万玩家参与验证了服务器与手感底子。\n\n【优势】机制差异化极强；Beta 50 万玩家验证；Team17 发行护航；上线 48 小时 PCU 35.9 万、2 天 2.9 万条评价，起步即爆款。\n【不足】抢先体验阶段内容纵深待验证；无好评率统计样本尚短；经济系统长期平衡存疑。\n\n【综合】2026 年秋季多人 FPS 最强新变量，'万物皆可交易'的设计把大战场从玩法概念做成了经济系统，值得所有做多人射击的团队拆解。",
+            "why_notable": "抢先体验 48 小时 PCU 达 35.9 万（全榜第 3），Beta 期 50 万玩家验证，机制差异化清晰的战地式新品",
+            "pcu": "358,971（2026年9月12日，全榜第 3）",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据（2 天 29,396 条评价；Beta 期近 50 万玩家）",
+            "gi_summary": "「战地式FPS」套「佣兵经济学」新瓶，BULKHEAD 独立开发、Team17 发行，Steam 抢先体验 ¥149"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "電ファミニコゲーマー",
+          "tags": [
+            "合作",
+            "物理模拟",
+            "发售日确定"
+          ],
+          "title": "Trash Day：《火箭联盟》元开发者首作定档 10 月 13 日，6 人浣熊物理协作捡垃圾",
+          "en_title": "【最大6人プレイ】アライグマになって大暴れする協力型ゴミ収集ゲーム『Trash Day』10月13日に発売決定",
+          "full_text": "【最大6人プレイ】アライグマになって大暴れする協力型ゴミ収集ゲーム『Trash Day』10月13日に発売決定\nhttps://t.co/vnvxGEtu7J\n\nいろんなゴミをカートに詰め込んで、押したり引いたりしながら持ち帰ろう。伸縮自在のロープや板などの道具を使うことで障害物を回避できる https://t.co/FYO7gPZLm3",
+          "author": "denfaminicogame",
+          "date": "2026-09-11",
+          "likes": 8756,
+          "views": 963270,
+          "link": "https://x.com/denfaminicogame/status/2098245902666469576",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2098245773968408576/pu/img/TEst6FGZoZYZgTKR.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2098245902666469576"
+          },
+          "summary": "《火箭联盟》元开发者组成的独立工作室 Off By One Games 公布首作发售日：物理协作冒险游戏 Trash Day 于 10 月 13 日登陆 Steam（日本时间 10 月 14 日），支持最多 6 人在线合作，含 12 种语言（全量日文支持）。玩家扮演浣熊组队翻垃圾、把战利品装满推车运回，用伸缩绳与木板让推车翻越或撞穿障碍，还要提防惦记你货物的动物与人类。免费试玩版已在 Steam 上架。",
+          "analysis": null,
+          "recommendation": "火箭联盟元老新工作室首作 Trash Day 定档 10 月 13 日，6 人浣熊物理搬垃圾",
+          "featured": false,
+          "game_ref": "Trash Day",
+          "enrichment": {
+            "game_name": "Trash Day",
+            "genre": "动作 / 冒险",
+            "developer": "Off by One Games",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "2026 年 10 月 13 日",
+            "steam_rating": "未发售（免费试玩版已上架）",
+            "steam_url": "https://store.steampowered.com/app/3314580",
+            "youtube_video": "https://www.youtube.com/watch?v=XgIUobqbE18",
+            "description": "在这款基于物理的合作冒险游戏中，与你的浣熊小队通力合作。翻找垃圾、装满购物车，齐心协力回到家。体验最棒的浣熊生活。\n\n《Trash Day》是《火箭联盟》资深成员组建的 Off By One Games 首款作品，一款物理演算驱动的最多 6 人合作冒险游戏。\n\n【核心玩法】全员化身浣熊小队，翻遍垃圾桶与回收站，把值钱'垃圾'塞进共享推车运回巢穴：推、拉、转向全靠多人配合，物理引擎让每一次转弯都可能前功尽弃。伸缩绳、木板等道具可搭桥、撬动或直接撞穿障碍，路线规划本身就是玩法。\n\n【对抗设计】世界里游荡着同样惦记你货物的动物和人类，需要队友分神引开；'朋友开始做实验时你能保住货物吗'官方这句宣传语精准概括了混乱欢乐的翻车美学。\n\n【美术与氛围】明快低多边形卡通风，浣熊动作夸张灵巧，整体气质接近《胡闹厨房》式的合作欢乐向。\n\n【优势】火箭联盟元老班底的物理功底；6 人合作+免费试玩版先行；12 语言全量本地化含中日文。\n【不足】玩法类型在合作物理游戏红海中需靠发行执行突围。\n\n【综合】2026 年 10 月独游档期最值得关注的合作派对新作之一。",
+            "why_notable": "《火箭联盟》元开发者首作+发售日落定+demo 已上线，96 万 views 的日区热度背书",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "未发售",
+            "gi_summary": "「物理合作搬运用」套「浣熊翻垃圾」新瓶，火箭联盟元老新工作室 Off By One Games 首作",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3314580/f1c70e4435316f35818c3d01422685b43ce1edf7/header_alt_assets_1.jpg?t=1789069776"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "AUTOMATON",
+          "tags": [
+            "派对",
+            "你画我猜",
+            "日本独立"
+          ],
+          "title": "スーパー画伯公开：最大 8 人 3D 立体你画我猜+绘画人狼模式，北海道二人组新作 10-11 月发售",
+          "en_title": "最大8人マルチ「3Dお絵かき」ゲーム『スーパー画伯』発表。つぶつぶ盛ってお題を伝える、\"どうしてこうなった\"連発必至の高難度立体お絵かき",
+          "full_text": "最大8人マルチ「3Dお絵かき」ゲーム『スーパー画伯』発表。つぶつぶ盛ってお題を伝える、\"どうしてこうなった\"連発必至の高難度立体お絵かき\nhttps://t.co/Wvvy203WTe https://t.co/WSB1cBvrwG",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-11",
+          "likes": 1135,
+          "views": 348288,
+          "link": "https://x.com/AUTOMATONJapan/status/2098253695112933541",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098253645175513088/img/b0kwRCSn71ZVz1H_.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2098253695112933541"
+          },
+          "summary": "北海道二人独立团队 North Fox Games（4 月恐怖作《色鬼 -IROONI-》开发者）公开派对新作 SUPER GAHAKU（スーパー画伯）：3D 空间堆叠体素作画、其他人猜题目，最大 8 人。收录三种模式——限时作画猜题'作って当てよう'、混入不知题'假画伯'的'绘画人狼'、无限制自由建造'フリービルド'。官方定位'比起画得好，更重视一起乐'，欢迎实况与二创变现。Steam 页面已上线，预计 10-11 月发售。",
+          "analysis": null,
+          "recommendation": "スーパー画伯公开：8 人 3D 立体你画我猜+绘画人狼，IROONI 开发者二人组新作",
+          "featured": false,
+          "game_ref": "SUPER GAHAKU",
+          "enrichment": {
+            "game_name": "SUPER GAHAKU",
+            "genre": "休闲 / 独立",
+            "developer": "North Fox Games",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "2026 年",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4966560",
+            "youtube_video": null,
+            "description": "直接在 3D 空间里画画！根据主题创作搞怪又令人捧腹的立体作品，然后和大家一起欢笑，猜猜每个人原本想做什么。越不会画，越好玩！\n\n《SUPER GAHAKU（スーパー画伯）》是北海道二人独立团队 North Fox Games 的派对新作，把经典'你画我猜'搬进 3D 体素空间。\n\n【核心玩法】用小体素（3D 像素）在立体空间里堆叠出题目——从'猫'堆成谜之生物、从'汽车'堆成大箱子，是本作的笑点引擎。相比 2D 绘画，纵深、体积与整体平衡的把控让'画得像'难度倍增，官方明确表示'比起画得好，更重视一起乐'。\n\n【三种模式】限时作画互猜的'作って当てよう'（2 人起）；一人不知题目、边偷瞄边装懂的'绘画人狼'（3 人起，含发言讨论与投票放逐的完整社交推理流程）；无时间限制的自由建造'フリービルド'。另有角色外观自定义。\n\n【美术与氛围】低多边形明亮卡通风，作品完成后全员围观打分并评选'最佳点赞奖'，珍作与神作同台领奖。\n\n【优势】绘画人狼把作画与身份推理咬合，直播效果拉满；官方鼓励实况与二创变现。\n【不足】体素操作对新人有上手门槛；发售窗口（10-11 月）与多款派对新作撞期。\n\n【综合】《色鬼》团队从恐怖转派对的大跨度转型之作，8 人 3D 猜题的差异化足够清晰。",
+            "why_notable": "'绘画人狼'模式把社交推理嵌进 3D 作画，直播传播属性强，开发者前作《色鬼》已验证出品能力",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "未发售",
+            "gi_summary": "「你画我猜」套「3D体素+人狼」新瓶，北海道二人组 North Fox Games 开发，Steam 预计 10-11 月发售",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4966560/d9261d66a003c916f7ba31f36fc7badff72a03de/header.jpg?t=1789091722"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "AUTOMATON",
+          "tags": [
+            "高难度",
+            "物理",
+            "Playtest"
+          ],
+          "title": "Dumbfire：个人开发者物理导弹特技飞行，碰就炸的激难操作，Steam playtest 开放中",
+          "en_title": "物理演算ミサイル\"自力誘導\"ゲーム『Dumbfire』大注目集めブームの兆し。ぶつかれば爆発、癖になる激ムズ曲芸飛行、プレイテスト開催中",
+          "full_text": "物理演算ミサイル\"自力誘導\"ゲーム『Dumbfire』大注目集めブームの兆し。ぶつかれば爆発、癖になる激ムズ曲芸飛行、プレイテスト開催中\nhttps://t.co/ABbhXk7Tbr https://t.co/T4VmfieQaw",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-11",
+          "likes": 2938,
+          "views": 251259,
+          "link": "https://x.com/AUTOMATONJapan/status/2098328974460154044",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098326104788684800/img/F7dKQChBcignm3x0.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2098328974460154044"
+          },
+          "summary": "个人开发者 TitanGameDev（Titan132，前作高难 2D 跳台 POGOMAN）的 3D 转型作 Dumbfire 开放 Steam playtest：玩家扮演一枚'自力诱导'的物理导弹，喷射与惯性全按真实物理模拟，钻缝隙绕障碍精确命中坦克直升机，碰墙即爆、偏航超时也爆。8 月 itch.io 测试在 Reddit 获约 4200 赞、Instagram 约 16 万赞；本次 Steam 测试新增教程、8 关卡与 4 技能（子弹时间、抓钩等），正式版将附带关卡编辑器。",
+          "analysis": null,
+          "recommendation": "个人开发物理导弹特技 Dumbfire 开放 playtest，Reddit 单帖 4200 赞",
+          "featured": false,
+          "game_ref": "Dumbfire",
+          "enrichment": {
+            "game_name": "Dumbfire",
+            "genre": "竞速",
+            "developer": "TitanGameDev",
+            "platforms": [
+              "PC",
+              "Mac"
+            ],
+            "price": "未公布",
+            "release_date": "即将推出",
+            "steam_rating": "未发售（Steam playtest 开放中）",
+            "steam_url": "https://store.steampowered.com/app/4944600",
+            "youtube_video": null,
+            "description": "Launch a missile and thread it through tight obstacles as fast as you can to take out the target. A physics time-attack flight game — chase faster runs for more points— with a built-in level editor and Steam Workshop courses. For fans of Superflight and Clustertruck.\n\n《Dumbfire》是个人开发者 Titan132 从 2D 高难跳台转型 3D 的物理特技游戏：你就是导弹本身。\n\n【核心玩法】喷射、惯性、重力全部真实模拟——按住空格持续推进，松手后靠惯性滑翔并下坠，WASD 控制弹头姿态喷射转向。目标是钻过窄缝、绕开障碍、精确命中直升机与坦克等目标；撞上任何东西即刻爆炸，偏离航线超时同样自爆。'自力诱导'这个自嘲名字精准概括了手感：失控才是常态。\n\n【进度与技巧】关卡按用时会与特技动作结算点数，可购买子弹时间、抓钩等 4 种技能；正式版计划内置关卡编辑器并支持发布分享，竞速排行榜已就位。\n\n【传播数据】8 月 itch.io 测试 Reddit 单帖约 4200 赞、Instagram 约 16 万赞；9 月 Steam playtest 告知帖再获约 3000 赞，AUTOMATON 称'出现流行征兆'。\n\n【优势】物理手感上瘾性强；免费测试即插即玩；编辑器潜力大。\n【不足】UI 尚显粗糙；高难度天然劝退休闲玩家。\n\n【综合】2026 年'主播效应'型高难独立游戏的最新候选。",
+            "why_notable": "个人开发者的物理特技品类，两轮测试累计社交传播数据扎实，'碰就爆'的传播梗直观",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "未发售",
+            "gi_summary": "「导弹特技飞行」套「物理自力诱导」新瓶，个人开发者 Titan132 的 3D 转型作",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4944600/9260cdbc443465e25ba1ba03b1a7c8f7e3676c4e/header.jpg?t=1788946984"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "PC Gamer / NicheGamer / Destructoid",
+          "tags": [
+            "Roguelike",
+            "卡牌",
+            "抢先体验"
+          ],
+          "title": "Shroom and Gloom：菌菇暗黑系 roguelike 卡牌爬塔开启抢先体验，多家媒体一致好评",
+          "en_title": "Shroom and Gloom is my new roguelike deckbuilder obsession",
+          "full_text": "Shroom and Gloom is my new roguelike deckbuilder obsession https://t.co/nt3B7yOXHk",
+          "author": "pcgamer",
+          "date": "2026-09-11",
+          "likes": 11,
+          "views": 6912,
+          "link": "https://x.com/pcgamer/status/2098449832637874594",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2098084758714531853/pu/img/DU873mC0oVvX8KRx.jpg",
+            "video_url": "https://x.com/nichegamer/status/2098084808358256692"
+          },
+          "summary": "第一人称视角的菌菇暗黑风 roguelike 卡牌爬塔，双牌组（攻击+酿造）机制被 Destructoid 称为'下一款伟大的 roguelike 卡牌'，NicheGamer 预览称'风格浓郁、点子密集'。EA 已开。",
+          "recommendation": "Shroom and Gloom 开启 EA：双牌组机制的菌菇暗黑卡牌爬塔，三家媒体一致好评",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "PLAYISM",
+          "tags": [
+            "动作RPG",
+            "发行商大厂",
+            "2027"
+          ],
+          "title": "Sea Sniffers（シー スニッファーズ）：PLAYISM 新作，海豹用拳头捕鱼的动作 RPG，2027 年发售",
+          "en_title": "アザラシが🦭魚を殴る！💥 パンチで魚を捕まれ！アザラシ漁獲アクションRPG『シー スニッファーズ』",
+          "full_text": "◤🐟新タイトル、解禁🎣◢\n\n＿人人人人人人人人＿\n＞　アザラシが🦭　＜\n＞　魚を殴る！💥　＜\n￣Y^Y^Y^Y^Y^Y^Y￣\n\nパンチで魚を捕まえろ！\n\nアザラシ漁獲アクションRPG\n『シー スニッファーズ』\n\nSteamで2027年発売予定！\nぜひウィッシュリスト登録を！",
+          "author": "playismJP",
+          "date": "2026-09-10",
+          "likes": 1208,
+          "views": 92493,
+          "link": "https://x.com/playismJP/status/2097998890083705073",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2097998382396751872/img/LhpCECYE8ZmSmkMF.jpg",
+            "video_url": "https://x.com/playismJP/status/2097998890083705073"
+          },
+          "summary": "发行商 PLAYISM（Playism Game Show 发布会公布）新作：海豹用拳头捕鱼的动作 RPG《シー スニッファーズ》（Sea Sniffers），Steam 定档 2027 年，愿望单已开。",
+          "recommendation": "PLAYISM 新作 Sea Sniffers：海豹拳击捕鱼的动作 RPG，2027 年 Steam 发售",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Game*Spark",
+          "tags": [
+            "合作",
+            "机甲",
+            "新作公布"
+          ],
+          "title": "Mech Mayhem 公布：4 人协力驾驶巨型机甲打怪兽，部位级操作+离舱灭火修理",
+          "en_title": "仲間と協力して巨大メカを操縦する怪獣撃退アクションゲーム『Mech Mayhem』発表！",
+          "full_text": "仲間と協力して巨大メカを操縦する怪獣撃退アクションゲーム『Mech Mayhem』発表！\n\n物理演算に基づいた巨大メカを部位ごとに細かく操作し、強力な兵器を駆使し、時にはコックピットを離れて火災の消火や損傷箇所の修理も行わなければなりません。",
+          "author": "gamespark",
+          "date": "2026-09-11",
+          "likes": 540,
+          "views": 56858,
+          "link": "https://x.com/gamespark/status/2098298238273253875",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2098298027257815040/pu/img/lP_IUy_Enwic0AOz.jpg",
+            "video_url": "https://x.com/gamespark/status/2098298238273253875"
+          },
+          "summary": "4 人协力怪兽退治动作游戏 Mech Mayhem 公布：基于物理演算的巨型机甲需按部位精细操作，驾驶重型武器作战之余，还得离开驾驶舱灭火和修理损伤。",
+          "recommendation": "Mech Mayhem 公布：4 人协力巨型机甲打怪兽，离舱修船灭火的部位级物理操作",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "4Gamer",
+          "tags": [
+            "合作",
+            "建造",
+            "已发售"
+          ],
+          "title": "Dumb Ways to Build 已发售：4 人'拼命工作'式混乱建筑游戏",
+          "en_title": "最大4人で協力できるハチャメチャ建築ゲーム「Dumb Ways to Build」が配信開始",
+          "full_text": "最大4人で協力できるハチャメチャ建築ゲーム「Dumb Ways to Build」が配信開始\nhttps://t.co/c4P0QpEmPp\n\nチームで助け合ったり足を引っ張り合ったりしながら，命がけのジョブに挑戦しよう",
+          "author": "4GamerNews",
+          "date": "2026-09-11",
+          "likes": 458,
+          "views": 54256,
+          "link": "https://x.com/4GamerNews/status/2098364913442038236",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2098364823340032001/pu/img/cilNTwWcSXKGsV8T.jpg",
+            "video_url": "https://x.com/4GamerNews/status/2098364913442038236"
+          },
+          "summary": "最多 4 人协力的混乱建筑游戏 Dumb Ways to Build 发售：队友间互相帮忙（也互相拆台），挑战玩命工种。",
+          "recommendation": "Dumb Ways to Build 发售：4 人互相拆台的玩命建筑工种模拟",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "Niche Gamer",
+          "tags": [
+            "银河城",
+            "发售日确定"
+          ],
+          "title": "Aeterna Lucis 确认年内发售：Aeterna Noctis 开发者的续作",
+          "en_title": "Aeterna Lucis is finally releasing later this year!",
+          "full_text": "Aeterna Lucis is finally releasing later this year! https://t.co/mZoz4xueII https://t.co/3aprHHwKKY",
+          "author": "nichegamer",
+          "date": "2026-09-11",
+          "likes": 14,
+          "views": 1096,
+          "link": "https://x.com/nichegamer/status/2098431382573772809",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HR8gOO6WoAgIM0L.jpg"
+          },
+          "summary": "手绘银河城大作 Aeterna Noctis 的续作/前传 Aeterna Lucis 确认年内发售。",
+          "recommendation": "Aeterna Lucis 确认年内发售，手绘银河城标杆的续篇",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 06",
+          "source": "IndieDB",
+          "tags": [
+            "生存",
+            "1.0",
+            "Mod支持"
+          ],
+          "title": "Folklands 1.0：离开抢先体验，新增大型定居点、袭击者挑战与 Mod 支持",
+          "en_title": "Folklands version 1.0 marks the games exit from early access.",
+          "full_text": "Folklands version 1.0 marks the games exit from early access. Some new additions include bigger settlements, new raider challenges, mod support, and much more.",
+          "author": "IndieDB",
+          "date": "2026-09-11",
+          "likes": 6,
+          "views": 897,
+          "link": "https://x.com/IndieDB/status/2098305536752267623",
+          "media": null,
+          "summary": "维京生存建造 Folklands 推出 1.0 正式版：更大定居点、新袭击者挑战、Mod 支持等内容更新。",
+          "recommendation": "Folklands 1.0 毕业：维京生存建造转正并加入 Mod 支持",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 07",
+          "source": "Aplove Studio",
+          "tags": [
+            "愿望单",
+            "Steam页面上线"
+          ],
+          "title": "AGGRO: Thaumiel Mercenaries Steam 页面上线，独立团队求愿望单",
+          "en_title": "The Steam page for AGGRO: Thaumiel Mercenaries is now available! We need your help destroying the wishlist button!!",
+          "full_text": "The Steam page for AGGRO: Thaumiel Mercenaries is now available! We need your help destroying the wishlist button!! https://t.co/lSNEYxVIxa",
+          "author": "AploveStudio",
+          "date": "2026-09-10",
+          "likes": 2135,
+          "views": 75526,
+          "link": "https://x.com/AploveStudio/status/2098081896072708348",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098075903490191367/img/mS3u_jWbuD4Ayvv-.jpg",
+            "video_url": "https://x.com/AploveStudio/status/2098081896072708348"
+          },
+          "summary": "雇佣兵题材新作 AGGRO: Thaumiel Mercenaries 的 Steam 商店页上线，开发者发起愿望单冲刺。",
+          "recommendation": "AGGRO: Thaumiel Mercenaries 上架 Steam，雇佣兵题材愿望单冲刺中",
+          "featured": false,
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 08",
+          "source": "Dreadmoor Game",
+          "tags": [
+            "恐怖",
+            "Playtest",
+            "限时"
+          ],
+          "title": "DREADMOOR 开放公开 playtest 至 9 月 14 日：深海打捞恐怖冒险",
+          "en_title": "The Open Playtest is live! The old world still lingers: rusting on the shore, drifting with the current, and waiting beneath murky waters. Dive in before September 14.",
+          "full_text": "🚨 The Open Playtest is live! 🚨\n\nThe old world still lingers: rusting on the shore, drifting with the current, and waiting beneath murky waters. Dive in before September 14.\n\n🫶 Please help us spread the word. It would mean a lot to us!",
+          "author": "DreadmoorGame",
+          "date": "2026-09-10",
+          "likes": 1308,
+          "views": 40469,
+          "link": "https://x.com/DreadmoorGame/status/2098116321267306942",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098113730055925761/img/NLg0H8K9JJWyxpI3.jpg",
+            "video_url": "https://x.com/DreadmoorGame/status/2098116321267306942"
+          },
+          "summary": "深海恐怖冒险 DREADMOOR 公开 playtest 开放至 9 月 14 日：锈蚀海岸、浑浊水下的旧世界残响，限时可玩。",
+          "recommendation": "DREADMOOR 限时公开测试至 9 月 14 日，深海打捞题材恐怖冒险",
+          "featured": false,
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity 官方",
+          "tags": [
+            "Unity",
+            "版本更新",
+            "WebGPU"
+          ],
+          "title": "Unity 6.6 发布：Enter Play Mode 提速、Dictionary 序列化、Hierarchy 升级、WebGPU 支持",
+          "en_title": "In case you missed it, Unity 6.6 launched last week! From faster Enter Play Mode and Dictionary serialization to an upgraded Hierarchy window & WebGPU support.",
+          "full_text": "In case you missed it, Unity 6.6 launched last week! 💥\n\nFrom faster Enter Play Mode and Dictionary serialization to an upgraded Hierarchy window &amp; WebGPU support, here's a full rundown of what's new: https://t.co/ktWilJBTQL",
+          "author": "unitygames",
+          "date": "2026-09-10",
+          "likes": 297,
+          "views": 20961,
+          "link": "https://x.com/unitygames/status/2098097610842046823",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2098097481875693573/pu/img/nsxxQtc16ZsRcuSE.jpg",
+            "video_url": "https://x.com/unitygames/status/2098097610842046823"
+          },
+          "summary": "Unity 官方汇总 6.6 版本更新：Enter Play Mode 速度优化（迭代调试的关键痛点）、Dictionary 序列化（不再需要 ISerializationCallbackReceiver 变通）、Hierarchy 窗口升级、WebGPU 支持落地。",
+          "analysis": "Enter Play Mode 提速与 Dictionary 原生序列化都是高频日常痛点，实际收益比版本号大；WebGPU 支持则继续押注网页端游戏分发。叠加官方 Claude Code 插件，Unity 在'引擎效率+AI 工作流'两线同时加码。",
+          "recommendation": "Unity 6.6 发布：Enter Play Mode 提速、Dictionary 序列化、WebGPU 支持",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**行业巨头结构日**\n索尼被曝 6 月砍单小岛秀夫新作 Physint（超预算、延期、DS1&2 未达营收预期），小岛三个月寻得 Xbox 接盘；Bloomberg 同步曝出 PIF 考虑把 550 亿美元收购的 EA 与 Savvy Games Group 合并成'全球游戏巨兽'；Rockstar 劳资庭审开庭，法律文件首次确认 GTA6 在研 32 人在线模式；暴雪 1900 名工会员工通过行业首份含 gen-AI 协商义务的合同。\n\n**独游爆款与里程碑**\nWARDOGS 抢先体验 48 小时冲上 35.9 万同时在线（全榜第 3，仅次于 CS2/Dota2）；Valheim 1.0 五年 EA 毕业后 Steam 同时在线冲回五年新高；Trash Day（火箭联盟元老首作）、スーパー画伯、Dumbfire 三款高潜力新作集中曝光。\n\n**AI 与工具**\nDeepMind 开源完整果蝇身体模型 flybody（Nature 论文+MuJoCo 全关节模拟）；Unity 官方发布 Claude Code 插件（29 个原生技能直控编辑器）；Unity 6.6 落地 Enter Play Mode 提速与 WebGPU 支持。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
