@@ -7,17 +7,21 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(date || '')) { console.error('usage: node tools\
 const root = path.join(__dirname, '..');
 const manPath = path.join(root, 'data', 'launched', 'manifest.json');
 const man = JSON.parse(fs.readFileSync(manPath, 'utf8'));
-const prevDate = man.dates[man.dates.length - 1];
+const prevDate = man.dates.filter(d => d < date).sort().at(-1);
 const target = path.join(root, 'data', 'launched', date + '.json');
 if (man.dates.includes(date) || fs.existsSync(target)) { console.error(date + ' 已存在，跳过'); process.exit(1); }
+if (!prevDate) { console.error(date + ' 之前没有可用期次'); process.exit(1); }
 const prev = JSON.parse(fs.readFileSync(path.join(root, 'data', 'launched', prevDate + '.json'), 'utf8'));
 const next = JSON.parse(JSON.stringify(prev));
 next.date = date;
 next.note = date + ' 期';
+next.picks = [];
+delete next.picks_generated_from;
 for (const b of next.boards) {
   if (b.id === 'steamdb' || b.id === 'bilibili' || b.id === 'twitter') b.items = [];
 }
 fs.writeFileSync(target, JSON.stringify(next, null, 1));
 man.dates.push(date);
+man.dates.sort();
 fs.writeFileSync(manPath, JSON.stringify(man, null, 1));
 console.log('scaffold ok | prev=' + prevDate + ' | dates:', man.dates.join(','));

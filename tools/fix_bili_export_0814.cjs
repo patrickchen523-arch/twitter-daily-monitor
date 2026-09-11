@@ -18,9 +18,9 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
       });
       const j = await r.json();
       if (j.code === 0 && j.data) {
-        if (!it.title) it.title = j.data.title || '';
-        if (!it.state) it.state = String(j.data.stat && j.data.stat.view || '');
-        if (j.data.pic && (!it.cover || /^data:/.test(it.cover))) it.cover = j.data.pic.replace(/^https?:/, '');
+        it.title = j.data.title || it.title || '';
+        it.state = String(j.data.stat && j.data.stat.view || it.state || '');
+        if (j.data.pic) it.cover = j.data.pic.replace(/^https?:/, '');
         filled++;
       } else {
         console.log(it.bvid, 'code=' + j.code, j.message);

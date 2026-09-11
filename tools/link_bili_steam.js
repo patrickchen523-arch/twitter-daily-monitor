@@ -1,4 +1,4 @@
-// B站榜单游戏按名称关联 Steam appid 并补全详情 -> game-details.json
+// 每日榜单游戏按名称或 Steam 链接关联 appid 并补全详情 -> game-details.json
 // 用法: node tools/link_bili_steam.js [日期]
 const https = require('https');
 const fs = require('fs');
@@ -20,16 +20,23 @@ const getJson = url => new Promise(resolve => {
   }).on('error', () => resolve(null));
 });
 const norm = s => String(s || '').toLowerCase().replace(/[^\w\u4e00-\u9fa5]/g, '');
+const aliases = { '鬼武者：剑之道': '2638890' };
 
 (async () => {
-  const board = launched.boards.find(b => b.id === 'bilibili');
-  const names = board.items.map(it => it.name);
-  for (const name of names) {
+  const entries = launched.boards.filter(b => b.id === 'bilibili' || b.id === 'steamdb' || b.id === 'twitter')
+    .flatMap(b => b.items || []);
+  for (const item of entries) {
+    const name = item.name;
+    const directAppid = (String(item.steam || item.link || '').match(/store\.steampowered\.com\/app\/(\d+)/) || [])[1] || aliases[name];
+    if (directAppid && det.byAppid[directAppid]) {
+      det.byName[norm(name)] = det.byAppid[directAppid];
+      continue;
+    }
     if (det.byName[norm(name)]) continue;
     // 别名拆分 "Hachishakusama | 八尺様がいた夏休み"
     const tries = name.split('|').map(s => s.trim()).filter(Boolean);
-    let hit = null;
-    for (const t of tries) {
+    let hit = directAppid ? { id: directAppid, name } : null;
+    for (const t of hit ? [] : tries) {
       const res = await getJson(`https://store.steampowered.com/api/storesearch/?term=${encodeURIComponent(t)}&cc=cn&l=schinese`);
       hit = (res && res.items || []).find(x => norm(x.name) === norm(t));
       if (hit) break;
@@ -37,8 +44,13 @@ const norm = s => String(s || '').toLowerCase().replace(/[^\w\u4e00-\u9fa5]/g, '
     }
     if (!hit) { console.log('Steam 未找到(视为非Steam游戏):', name); continue; }
     const appid = String(hit.id);
+    if (det.byAppid[appid]) {
+      det.byName[norm(name)] = det.byAppid[appid];
+      continue;
+    }
     const j = await getJson(`https://store.steampowered.com/api/appdetails?appids=${appid}&l=schinese`);
     const v = j && j[appid] && j[appid].success ? j[appid].data : null;
+    if (!v) { console.log('Steam 详情获取失败，未写入:', name, appid); continue; }
     const entry = {
       name: v ? v.name : hit.name,
       name_cn: v && /[\u4e00-\u9fa5]/.test(v.name) ? v.name : (hit.name !== name ? name : null),
@@ -48,7 +60,8 @@ const norm = s => String(s || '').toLowerCase().replace(/[^\w\u4e00-\u9fa5]/g, '
       tags: [],
       desc: v && v.short_description ? String(v.short_description).replace(/<[^>]*>/g, '').trim() : null,
       pcu: null, sales: null, revenue: null, reviews: null, rating: null,
-      cover: `https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`,
+      cover: v.header_image || item.thumb || null,
+      bg: v.screenshots && v.screenshots[0] ? v.screenshots[0].path_full : null,
       steam: `https://store.steampowered.com/app/${appid}/`,
       appid
     };

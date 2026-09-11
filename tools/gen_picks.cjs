@@ -16,6 +16,13 @@ const matureMap = JSON.parse(fs.readFileSync(path.join(root, 'data', 'launched',
 const det = JSON.parse(fs.readFileSync(path.join(root, 'data', 'game-details.json'), 'utf8'));
 const byNameLow = {};
 for (const k of Object.keys(det.byName || {})) byNameLow[k.toLowerCase()] = det.byName[k];
+for (const id of ['steamdb', 'bilibili', 'twitter']) {
+  const board = (day.boards || []).find(b => b.id === id);
+  if (!board || !board.items || !board.items.length || (id === 'twitter' && board.items.length < 10)) {
+    console.error(`${date}: ${id} 榜单未完成，禁止生成推荐`);
+    process.exit(1);
+  }
+}
 
 const norm = s => String(s || '').toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]/g, '');
 const num = s => {
@@ -27,13 +34,21 @@ const num = s => {
   if (/万/.test(str)) v *= 10000;
   return v || 0;
 };
-const appidOf = it => (String(it.link || it.steam || '').match(/app\/(\d+)/) || [])[1] || '';
+const appidOf = it => {
+  const direct = (String(it.link || it.steam || '').match(/app\/(\d+)/) || [])[1];
+  const d = (det.byName || {})[norm(it.name)] || byNameLow[String(it.name || '').toLowerCase()];
+  return direct || (d && d.appid ? String(d.appid) : '');
+};
 const keyOf = it => { const a = appidOf(it); return a ? 'app:' + a : 'nm:' + norm(it.name); };
 const detailOf = (it, appid) => {
   if (appid && det.byAppid && det.byAppid[appid]) return det.byAppid[appid];
-  return (det.byName || {})[it.name] || byNameLow[String(it.name || '').toLowerCase()] || null;
+  return (det.byName || {})[norm(it.name)] || (det.byName || {})[it.name] || byNameLow[String(it.name || '').toLowerCase()] || null;
 };
-const isMature = it => it.mature === true || matureMap[it.name] === '是';
+const matureNames = new Set(Object.keys(matureMap).filter(k => matureMap[k] === '是').map(norm));
+const isMature = it => {
+  const d = detailOf(it, appidOf(it));
+  return it.mature === true || [it.name, d && d.name, d && d.name_cn].some(n => n && matureNames.has(norm(n)));
+};
 
 function boardKind(b) {
   const t = ((b.id || '') + (b.title || '')).toLowerCase();
@@ -48,7 +63,7 @@ for (const b of day.boards || []) {
   const kind = boardKind(b);
   if (kind === 'other') continue;
   for (const it of b.items || []) {
-    if (!it.name || isMature(it)) continue;
+    if (!it.name || isMature(it) || (it.release && it.release > date)) continue;
     const k = keyOf(it);
     const c = cand[k] || (cand[k] = { name: it.name, appid: appidOf(it), boards: {}, thumb: '', link: it.link || '' });
     if (!c.appid) c.appid = appidOf(it);
@@ -57,7 +72,7 @@ for (const b of day.boards || []) {
     if (kind === 'steamdb') {
       c.boards.steamdb = { gain: num(it.metric), raw: it.metric, sub: it.sub || '' };
     } else if (kind === 'twitter') {
-      c.boards.twitter = { views: num(it.metric), raw: it.metric };
+      c.boards.twitter = { views: num(it.heat != null ? it.heat : it.metric), raw: it.metric, day: it.day || date };
     } else if (kind === 'bilibili') {
       const opp = (String(it.sub || '').match(/机会分\s*(\d+)/) || [])[1];
       c.boards.bilibili = { opp: opp ? +opp : 0, raw: it.metric };
@@ -98,7 +113,8 @@ for (const c of list) {
   if (tw && maxViews) s += tw.views / maxViews * 40;
   if (sd && maxGain) s += sd.gain / maxGain * 30;
   if (bl) s += bl.opp * 0.3;
-  const rating = d && d.rating != null ? +d.rating : (sd ? +((sd.sub.match(/好评\s*([\d.]+)%/) || [])[1] || 0) : 0);
+  const boardRating = sd && (sd.sub.match(/好评\s*([\d.]+)%/) || [])[1];
+  const rating = boardRating != null ? +boardRating : (d && d.rating != null ? +d.rating : 0);
   const reviews = d && d.reviews != null ? +d.reviews : 0;
   if (rating >= 85 && reviews >= 100) s *= 1.1;
   if (Object.keys(c.boards).length >= 2) s *= 1.25;
@@ -133,10 +149,11 @@ const getJson = url => new Promise((resolve, reject) => {
   }).on('error', reject);
 });
 (async () => {
+const previousPicks = day.picks || [];
 day.picks = top5.map(c => {
   const d = c.detail || {};
   const sig = [];
-  if (c.boards.twitter) sig.push(`推特浏览 ${c.boards.twitter.raw}`);
+  if (c.boards.twitter) sig.push(`推特浏览 ${c.boards.twitter.raw}${c.boards.twitter.day !== date ? `（${c.boards.twitter.day}收录）` : ''}`);
   if (c.boards.steamdb) sig.push(`SteamDB 关注日增 ${c.boards.steamdb.raw}`);
   if (c.boards.bilibili) sig.push(`B站${c.boards.bilibili.raw}`);
   if (c.rating >= 85) sig.push(`好评率 ${c.rating}%`);
@@ -152,6 +169,9 @@ day.picks = top5.map(c => {
 for (const p of day.picks) {
   const a = (String(p.link).match(/app\/(\d+)/) || [])[1];
   if (!a) continue;
+  const saved = previousPicks.find(old => old.link === p.link && old.bg);
+  const cachedBg = (det.byAppid[a] || {}).bg || (saved && saved.bg);
+  if (cachedBg) { p.bg = cachedBg; continue; }
   try {
     const j = await getJson(`https://store.steampowered.com/api/appdetails?appids=${a}&filters=screenshots`);
     const ss = j && j[a] && j[a].data && j[a].data.screenshots;
@@ -159,6 +179,7 @@ for (const p of day.picks) {
   } catch (e) {}
   await sleep(300);
 }
+day.picks_generated_from = require('crypto').createHash('sha256').update(JSON.stringify(day.boards)).digest('hex');
 fs.writeFileSync(dayPath, JSON.stringify(day, null, 1), 'utf8');
 console.log(`已写入 ${dayPath}`);
 })();
