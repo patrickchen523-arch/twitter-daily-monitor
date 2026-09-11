@@ -1,0 +1,551 @@
+{
+ "date": "2026-09-11",
+ "meta": {
+  "raw_count": 264,
+  "filtered_count": 213,
+  "selected_count": 12,
+  "crawl_time": "2026-09-11T10:07:16"
+ },
+ "lede": "小岛《Physint》遭索尼砍单三个月后转投 Xbox；任天堂连发两场 Direct 公布《时之笛》重制版与《银河战士 Ravenous》；果蝇真实大脑学会玩 Beat Saber；WARDOGS 抢先体验首日 34 万同时在线。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "小岛《Physint》遭索尼 6 月砍单、三个月后转投 Xbox——小岛两个新作全部归入微软阵营"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《时之笛》重制版实机首曝：Switch 2 复活 N64 神作，美术争议先炸了锅"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Google 完整绘制果蝇大脑后，工程师用强化学习让它玩 DOOM 和 Beat Saber——2000万浏览"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Google 完整绘制果蝇大脑后，工程师用强化学习训练它玩 DOOM 与 Beat Saber\nOpenAI 员工用 GPT-6 复刻《RuneScape》，社区暴怒后被 Jagex 下架\nSteins;Gate 开发商 Mages 新 FPS 自曝源代码 100% AI 生成"
+  },
+  {
+   "id": "industry",
+   "text": "小岛《Physint》遭索尼砍单，三个月谈判后转投 Xbox 发行\nBlizzard 首份工会合同获批：公司引入 AI 前必须先与工会谈判\nRockstar 与 31 名被裁 GTA 6 开发者的最终庭审开庭，撞上发售窗口"
+  },
+  {
+   "id": "indie",
+   "text": "任天堂 40 周年 Direct：《时之笛》重制版实机首曝，美术引发两极争议\n《WARDOGS》抢先体验首日 34 万同时在线，Steam 全站第 4\n《黑街厨神》公布：四人合作料理 FPS，公布片 139 万浏览"
+  },
+  {
+   "id": "tools",
+   "text": "Qoder CLI 重做 /model 交互：模型配置一屏搞定，少记两个命令"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "featured": true,
+     "source": "推文 · AI神经科学实验",
+     "tags": [
+      "AI",
+      "神经科学",
+      "连接组",
+      "强化学习"
+     ],
+     "title": "Google 完整绘制果蝇大脑后，工程师用强化学习让它学会了玩《Beat Saber》《DOOM》和《马里奥64》",
+     "en_title": "the fly brain can play beat saber",
+     "full_text": "the fly brain can play beat saber https://t.co/AqKMqD6gzP",
+     "author": "lyra bubbles",
+     "likes": 82011,
+     "views": 20257602,
+     "date": "2026-09-09",
+     "link": "https://x.com/_lyraaaa_/status/2097527368919470162",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2097526768739737600/img/ciBu9rPeJEMJZdA2.jpg",
+      "video_url": "https://x.com/_lyraaaa_/status/2097527368919470162"
+     },
+     "summary": "Google 上周宣布完成成年雄性果蝇大脑与中枢神经系统的完整 3D 连接组绘制（约 16.6 万个神经元）。三天内，Coinbase 工程师 Alex Wormuth 用强化学习训练这个数字大脑玩初代《DOOM》；随后社区又让它玩起了《Beat Saber》《超级马里奥64》和《我的世界》：每一帧画面刺激感觉神经元，神经活动映射为游戏操作，受伤时对多巴胺细胞施加刺激作为强化信号。",
+     "analysis": "这是连接组学第一次大规模进入游戏圈，任何人都能下载同一个数字大脑做实验。对游戏行业而言，它展示了一条与 LLM 完全不同的智能路线：极小规模的神经回路加奖励机制也能产生游戏行为，未来可能催生全新的 NPC 行为引擎与自动化测试工具。",
+     "recommendation": "Google 完整绘制果蝇大脑后，工程师用强化学习让它玩 DOOM 和 Beat Saber——2000万浏览"
+    },
+    {
+     "idx": "AI科技热点 02",
+     "featured": true,
+     "source": "Eurogamer · 新闻",
+     "tags": [
+      "AI",
+      "社区争议",
+      "版权",
+      "OpenAI"
+     ],
+     "title": "OpenAI 员工用 GPT-6 复刻《RuneScape》，社区暴怒、Jagex 发函下架",
+     "en_title": "\"What in the vibe-coded s*** is this\" - RuneScape players revolt as gen-AI copycat game appears",
+     "full_text": "\"What in the vibe-coded s*** is this\" - RuneScape players revolt as gen-AI copycat game appears and eventually attracts the eye of Jagex\n\nhttps://t.co/EWHJ6DsUAg https://t.co/W7BEc9S0Me",
+     "author": "Eurogamer",
+     "likes": 1,
+     "views": 3862,
+     "date": "2026-09-10",
+     "link": "https://x.com/eurogamer/status/2098061814583984639",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HR3QGBVasAAHnPE.png"
+     },
+     "summary": "OpenAI 员工 Rohan Varma 用 GPT-6 Astra 在浏览器里复刻了《Old School RuneScape》，取名 Elderwood，几天内从 Lumbridge 出生点扩展到 Varrock、Falador 两个区域。Reddit 玩家怒斥其直接搬运美术资产，热度暴涨后 Jagex 发出下架通知，网站已停止运营并留下告别公告。",
+     "analysis": "AI 复刻一个 MMO 的能力已经不是演示，而是正在发生的事实；但玩家社区对'vibe-coded 抄袭'的排斥同样强烈，AI 驱动的 bot 还会恶化 MMO 治理的老问题。厂商的下架速度说明：AI 复刻经典 IP 的法律边界很快会被第一个判例划清。",
+     "recommendation": "OpenAI 员工用 GPT-6 复刻《RuneScape》爆火后遭 Jagex 下架——AI 复刻第一次撞上版权墙"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "featured": false,
+     "source": "PC Gamer · 新闻",
+     "tags": [
+      "AI",
+      "生成式开发",
+      "Steam"
+     ],
+     "title": "《命运石之门》开发商 Mages 新作是一款源代码 100% AI 生成的 FPS",
+     "en_title": "The next game by the creators of Steins;Gate is an entirely vibe-coded FPS slopfest",
+     "full_text": "The next game by the creators of Steins;Gate is an entirely vibe-coded FPS slopfest https://t.co/T6le1PhR70",
+     "author": "PC Gamer",
+     "likes": 47,
+     "views": 26120,
+     "date": "2026-09-10",
+     "link": "https://x.com/pcgamer/status/2097883326644457493",
+     "media": null,
+     "summary": "Mages（Steins;Gate 开发商）公布免费复古 FPS《Juggernaut》，Steam AI 披露显示：源代码 100% 由生成式 AI 编写，美术 60%、音效 50%、特效 100% 同样是 AI 生成；配套的付费关卡与素材编辑器也是全 AI 代码。Steam 社区已出现明显抵制声音。",
+     "analysis": "第一次有 20 多年历史的知名工作室公开把'100% vibe-coded'当作卖点。它把'AI 生成内容该不该卖钱'的争论推向极端案例：免费游戏加付费工具的组合，可能正是 AI slop 内容在商业上站住脚的形态。",
+     "recommendation": "Steins;Gate 开发商 Mages 新 FPS 自曝源代码 100% AI 生成——首个全 vibe-coded 知名工作室案例"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "featured": true,
+     "source": "Eurogamer · 报道（另见 The Game Awards、GameSpot 等）",
+     "tags": [
+      "Kojima Productions",
+      "Xbox",
+      "PlayStation",
+      "发行变动"
+     ],
+     "title": "小岛秀夫《Physint》遭索尼中途砍单，三个月谈判后转投 Xbox 发行",
+     "en_title": "Hideo Kojima's Physint now being published by Xbox, as PlayStation severs ties with Kojima Productions",
+     "full_text": "Hideo Kojima's Physint now being published by Xbox, as PlayStation severs ties with Kojima Productions and Microsoft steps in to take over\n\nhttps://t.co/12TpuzpeBq https://t.co/SrqTK08s4Z",
+     "author": "Eurogamer",
+     "likes": 61,
+     "views": 9112,
+     "date": "2026-09-10",
+     "link": "https://x.com/eurogamer/status/2097942379781095887",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HR1jeT4XQAIeR0E.jpg"
+     },
+     "summary": "小岛秀夫确认：索尼 PlayStation Studios 今年 6 月中旬突然通知取消《Physint》项目，Kojima Productions 花了三个月寻找新合作方，最终与 Xbox 达成发行合作——小岛的下一个项目《OD》加上本作，全部归入微软阵营。索尼声明称'经过慎重考虑决定退出合作'，未解释原因；Xbox 负责人 Asha Sharma 表示将以小岛为平台重点。多家媒体（The Game Awards、PC Gamer、GameSpot、Polygon 等）同步报道。",
+     "analysis": "索尼在利润率承压时砍掉一个'五六年后才发售'的电影化间谍大作，Xbox 则借机补强第一方阵容。3A 大作的开发周期与平台独占逻辑正在被成本现实改写；对从业者而言，头部创作者的发行归属比以往任何时候都更流动。",
+     "recommendation": "小岛《Physint》遭索尼 6 月砍单、三个月后转投 Xbox——小岛两个新作全部归入微软阵营"
+    },
+    {
+     "idx": "游戏行业 02",
+     "featured": true,
+     "source": "PC Gamer · 新闻（另见 Eurogamer）",
+     "tags": [
+      "工会",
+      "AI政策",
+      "Blizzard",
+      "劳动权益"
+     ],
+     "title": "Blizzard 1900 名员工批准首份工会合同：公司引入 AI 前必须先与工会谈判",
+     "en_title": "Blizzard must now 'discuss, evaluate, and bargain' its AI usage with its developers",
+     "full_text": "Blizzard must now 'discuss, evaluate, and bargain' its AI usage with its developers https://t.co/JtIs4afX7R",
+     "author": "PC Gamer",
+     "likes": 16,
+     "views": 13875,
+     "date": "2026-09-10",
+     "link": "https://x.com/pcgamer/status/2098008760866504854",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HR29elTWsAACGV7.jpg"
+     },
+     "summary": "Blizzard 工会（隶属 CWA）与公司签订历史性合同，覆盖《魔兽世界》《炉石传说》《守望先锋》《暗黑破坏神》及 QA 约 1900 名员工，谈判历时两年。合同要求 Blizzard 在工作场所引入生成式 AI 前必须先'discuss, evaluate, and bargain'——游戏行业首次把 AI 使用写进集体谈判条款；同时包含加薪、just cause 解雇保护、14 个月召回权和额外 4 周遣散费。",
+     "analysis": "在微软全公司层面强制推广 AI 工具的背景下，工会把 AI 议题纳入强制谈判范围，等于给资方单方面推进 AI 设了一道程序门槛。这个模板大概率会被其他工作室工会复制，AI 落地速度与员工议价权的博弈将成为行业常态。",
+     "recommendation": "Blizzard 1900 人批准行业首份工会合同：公司用 AI 前必须先与工会谈判"
+    },
+    {
+     "idx": "游戏行业 03",
+     "featured": false,
+     "source": "Eurogamer · 新闻",
+     "tags": [
+      "Rockstar",
+      "劳动权益",
+      "工会",
+      "GTA 6"
+     ],
+     "title": "Rockstar 与 31 名被裁 GTA 6 开发者的庭审进入最终听证：'现代职场靠恐惧运转'",
+     "en_title": "\"Today, we are fighting fear\" - Final hearing in Rockstar Games vs. fired GTA 6 developers tribunal begins",
+     "full_text": "\"Today, we are fighting fear\" - Final hearing in Rockstar Games vs. fired GTA 6 developers tribunal begins https://t.co/axqCifiBY3 https://t.co/lSz6WrFrue",
+     "author": "Eurogamer",
+     "likes": 13,
+     "views": 5730,
+     "date": "2026-09-10",
+     "link": "https://x.com/eurogamer/status/2098025500299989377",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HR2u60faIAAPMGv.jpg"
+     },
+     "summary": "Rockstar Games 与 31 名被解雇 GTA 6 开发者的劳动仲裁在苏格兰格拉斯哥开始最终听证，预计持续五周、恰好覆盖 GTA 6 的 11 月 19 日发售窗口。被裁员工 Rachel Crawford 在场外集会上发言：'现代职场靠恐惧运转。'IWGB 工会寻求复职或赔偿，并认定解雇不公；此前英国议会与前首相斯塔默都曾公开关注此案。",
+     "analysis": "若仲裁认定 Rockstar 非法解雇，将成为英国游戏业工会运动的标志性判例——与 Blizzard 合同签订几乎同时发生，劳动权益议题正在从边缘走向行业主舞台。",
+     "recommendation": "Rockstar 与 31 名被裁 GTA 6 开发者的最终庭审开庭，五周听证期撞上发售窗口"
+    },
+    {
+     "idx": "游戏行业 04",
+     "featured": false,
+     "source": "Eurogamer · 新闻",
+     "tags": [
+      "Nintendo",
+      "关税",
+      "商业模式"
+     ],
+     "title": "任天堂用关税退款办'感恩促销'，感谢玩家忍受涨价——引发群嘲",
+     "en_title": "Nintendo of America thanks fans for dealing with tariff-related price hikes by encouraging them to spend more money",
+     "full_text": "Nintendo of America thanks fans for dealing with tariff-related price hikes by encouraging them to spend more money in a new sale\n\nhttps://t.co/V9CDW9K3Jf https://t.co/kFA4JsyGba",
+     "author": "Eurogamer",
+     "likes": 9,
+     "views": 4508,
+     "date": "2026-09-10",
+     "link": "https://x.com/eurogamer/status/2098068992476754087",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HR3Wn5HXQAMK-1N.png"
+     },
+     "summary": "任天堂美国宣布'Customer Appreciation Sale'（9 月 13 日至 26 日），公告称'任天堂承担了大部分关税成本，但关税退款让这样的促销成为可能'——而消费者并未拿到任何退款。任天堂目前正因拒绝退还关税溢价面临集体诉讼，微软和索尼也在类似诉讼中站在同一边。",
+     "analysis": "'用玩家帮你承担的涨价成本办促销再赚一次'的公关操作堪称反面教材；更值得行业关注的是三巨头在关税退款诉讼上的攻守同盟——硬件成本向消费者转嫁正在成为平台方的统一立场。",
+     "recommendation": "任天堂拿关税退款办促销还感谢玩家忍受涨价，玩家并不买账"
+    },
+    {
+     "idx": "游戏行业 05",
+     "featured": false,
+     "source": "Eurogamer · 新闻",
+     "tags": [
+      "Ubisoft",
+      "Steam",
+      "平台策略"
+     ],
+     "title": "Ubisoft Steam 游戏不再强制启动 Ubisoft Connect，从《波斯王子：失落王冠》开始",
+     "en_title": "Ubisoft Steam games to no longer require the Connect launcher",
+     "full_text": "Ubisoft Steam games to no longer require the Connect launcher, in \"initial step toward a smoother and more streamlined launch experience\"\n\nhttps://t.co/LlcXQLE5M3 https://t.co/YxeGyqBOkI",
+     "author": "Eurogamer",
+     "likes": 16,
+     "views": 3670,
+     "date": "2026-09-10",
+     "link": "https://x.com/eurogamer/status/2098061322474991815",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HR3J65nasAAtIIv.jpg"
+     },
+     "summary": "Ubisoft 开始测试'Ubisoft Connect Services Steam Tool'：从《波斯王子：失落王冠》起，Steam 版启动不再需要安装或运行 Connect 启动器，同时保留跨平台进度、跨平台联机和奖励功能，后续将逐步推广到更多游戏。",
+     "analysis": "双启动器是当年 PC 平台战争的老遗产，Ubisoft 是第一家在 Steam 上主动放弃强制的传统大厂。当第三方启动器的存在感只剩负体验，放弃它换取 Steam 生态好感是一笔划算的生意——EA 等厂商大概率跟进。",
+     "recommendation": "Ubisoft Steam 游戏告别强制启动器，跨平台存档功能保留——大厂平台策略松动的信号"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "featured": true,
+     "source": "Eurogamer · 报道",
+     "tags": [
+      "Nintendo",
+      "Switch 2",
+      "塞尔达传说",
+      "重制版"
+     ],
+     "title": "《塞尔达传说：时之笛》重制版实机首曝：Switch 2 复活 N64 神作，美术引发两极争议",
+     "en_title": "Untangling our response to how The Legend of Zelda: Ocarina of Time remake looks",
+     "full_text": "\"My first reaction was pure emotional response. A familiar character turned around in the trailer and I literally recoiled, a move that I didn't even know I had in my arsenal...\"\n\nUntangling our response to how The Legend of Zelda: Ocarina of Time remake looks:\n\nhttps://t.co/Wz8ylGJ8wZ",
+     "author": "Eurogamer",
+     "likes": 14,
+     "views": 7540,
+     "date": "2026-09-10",
+     "link": "https://x.com/eurogamer/status/2097990169508839472",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HR2O29zXoA0co62.jpg"
+     },
+     "game_ref": "The Legend of Zelda: Ocarina of Time",
+     "summary": "在塞尔达 40 周年 Direct 上，任天堂公开《时之笛》重制版实机演示：N64 时代的海拉鲁以现代画面重现，草地、雨滴、面部细节全面升级，制作人青沼英二亲自演示。新美术在社区引发两极反应——'这就是虚幻引擎版塞尔达'的吐槽与'看第二遍就真香'并存，发售日期尚未公布（amiibo 情报暗示可能是 11 月，与 GTA 6 档期对撞的传闻未获证实）。",
+     "recommendation": "《时之笛》重制版实机首曝：Switch 2 复活 N64 神作，美术争议先炸了锅",
+     "enrichment": {
+      "game_name": "The Legend of Zelda: Ocarina of Time",
+      "genre": "动作冒险 / 3D 解谜",
+      "developer": "Nintendo（任天堂第一方）",
+      "platforms": [
+       "Switch 2"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "不适用（任天堂平台独占）",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": "https://www.youtube.com/watch?v=PQvD3p2yGwc",
+      "description": "【核心玩法】1998 年原版的完整重制：以时空穿越（童年/成年林克）串联海拉鲁平原探索、地下城解谜与锁定制战斗，奥卡利那笛演奏改变时间与天气仍是叙事与玩法的枢纽。实机演示保留了原版关卡结构与 NPC 布局，战斗与移动针对现代手柄重做。【美术与氛围】最大争议点：原版的低多边形被替换为现代光照、植被模拟与面部特写，社区反应两极——'恐怖谷'与'真香'并存，演示中雨滴、草丛与村庄质感已接近《旷野之息》时代。【对标定位】任天堂 40 周年纪念作，与《旷野之息》《王国之泪》共享部分视觉语言，但走忠实重制路线。【优势】N64 时代评价最高的作品叠加 Switch 2 新硬件首秀，商业上几乎没有失败风险。【不足】美术方向尚未说服部分核心粉丝；若 amiibo 情报属实，11 月发售将与《GTA6》正面撞车。【综合】Switch 2 的第一款全民级重磅重制，画面争议本身就是最有效的预热营销。",
+      "why_notable": "任天堂把自家历史评价最高的 3D 游戏带上 Switch 2，首曝即引发全网美术大讨论",
+      "pcu": "不适用（主机独占）"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "featured": true,
+     "source": "MP1st · 报道 + Steam PCU 监控",
+     "tags": [
+      "抢先体验",
+      "军事射击",
+      "多人",
+      "Team17"
+     ],
+     "title": "《WARDOGS》抢先体验首日冲上 34 万同时在线，跻身 Steam 全站第 4",
+     "en_title": "War Dogs console version fires out in 2028! Season 1 patch notes are live in time for its early access launch today",
+     "full_text": "War Dogs console version fires out in 2028! Season 1 patch notes are live in time for its early access launch today.\n\nhttps://t.co/pUpGn1RBMO\n\n#WarDogs https://t.co/8qSMliS0SL",
+     "author": "MP1st",
+     "likes": 6,
+     "views": 750,
+     "date": "2026-09-10",
+     "link": "https://x.com/MPFirst/status/2098048615281516955",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HR3EDyHaIAA2mzx.jpg"
+     },
+     "game_ref": "WARDOGS",
+     "summary": "BULKHEAD 开发、Team17 发行的《WARDOGS》9 月 10 日开启抢先体验：监控数据显示首日同时在线峰值达 340,171，位列 Steam 全站第 4，已有约 2 万条评价。官方同步上线 Season 1 补丁说明，并确认主机版 2028 年发售。",
+     "recommendation": "《WARDOGS》EA 首日 34 万同时在线杀进 Steam 前四——Team17 押中的全面战争式 FPS",
+     "enrichment": {
+      "game_name": "WARDOGS",
+      "genre": "大型多人在线射击 / 军事沙盒",
+      "developer": "BULKHEAD（英国，Team17 发行）",
+      "platforms": [
+       "Steam（抢先体验）"
+      ],
+      "price": "¥149（Supporter Edition ¥186）",
+      "release_date": "已发售 · 2026年9月10日（抢先体验）",
+      "steam_rating": "首发日约 2 万条评价",
+      "steam_url": "https://store.steampowered.com/app/1867240/WARDOGS/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/be00107d586c0bf0412e9e4acedb64629a99aa5b/header_schinese.jpg?t=1789059636",
+      "youtube_video": null,
+      "description": "【核心玩法】最高 100 人的大规模军事 FPS：三支队伍在 256 平方公里的地图上争夺随机生成的 2x2 公里'控制区'，控制区内人数最多的队伍获得积分，先到 100 分获胜；控制区位置随机刷新，逼迫全图重新部署。【经济系统】每名玩家开局 1 万美元，每条生命都要用现金购买武器、装备与载具；复活队友、运送友军、占领目标都会获得现金奖励，赚到的钱跨局保留——怎么玩、怎么赚钱完全由玩家自选。【建造与破坏】火箭筒可以摧毁公寓楼，坦克可以碾压城镇，同时可以修筑前沿基地与防线，战术自由度极高。【优势】差异化定位清晰，官方明确'不是大逃杀也不是撤离射击'；首发日 34 万 PCU 证明市场空位真实存在。【不足】抢先体验阶段的内容深度与外挂治理待观察，100 人同图对优化压力不小。【综合】2026 年最猛的多人新品开局之一，能否留住玩家取决于赛季内容与匹配生态。",
+      "why_notable": "全面战争式 FPS 的市场空位被验证：EA 首日 34 万 PCU，Steam 全站第 4",
+      "pcu": "340,171（2026年9月11日，Steam 全站第 4）"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "featured": false,
+     "source": "AUTOMATON · 报道",
+     "tags": [
+      "合作",
+      "烹饪",
+      "FPS",
+      "新公布"
+     ],
+     "title": "《黑街厨神》公布：四人合作把料理模拟和 FPS 揉在一起，2027 年抢先体验",
+     "en_title": "協力マルチ対応料理FPS『Mayhem À La Carte』発表。なぜか敵が襲撃してくるキッチンで、武器を片手にクッキング",
+     "full_text": "協力マルチ対応料理FPS『Mayhem À La Carte – メイヘム・アラカルト ～カオスキッチン～』発表。なぜか敵が襲撃してくるキッチンで、武器を片手にクッキング\nhttps://t.co/uVbkw3mHhI https://t.co/jWoBKRU5cn",
+     "author": "AUTOMATON（オートマトン）",
+     "likes": 5832,
+     "views": 1392807,
+     "date": "2026-09-10",
+     "link": "https://x.com/AUTOMATONJapan/status/2097901513083674991",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2097901477805400065/img/5d9tYErBt-W9OtyC.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2097901513083674991"
+     },
+     "game_ref": "Mayhem À La Carte",
+     "summary": "INGAME STUDIOS（Crime Boss: Rockay City 开发商）公布《Mayhem À La Carte》（中文名《黑街厨神》）：四人合作第一人称'烹饪射击'，一手菜刀一手霰弹枪，在敌人破窗袭击的厨房里完成出餐，烧焦的料理和冰冻甜品都能当武器。505 Games 发行，2027 年内开启抢先体验。公布片浏览量 139 万。",
+     "recommendation": "《黑街厨神》：一手颠勺一手霰弹枪的四人合作料理 FPS——公布片 139 万浏览",
+     "enrichment": {
+      "game_name": "Mayhem À La Carte",
+      "genre": "合作动作 / 烹饪模拟 / FPS",
+      "developer": "INGAME STUDIOS（捷克，505 Games 发行）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": "2027年（抢先体验）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4631740/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4631740/3da9da0b0a4eec301837d97fd529e71721dee2ff/header.jpg?t=1789060426",
+      "youtube_video": null,
+      "description": "【核心玩法】四人合作第一人称烹饪射击：正常流程是切、煎、烤、摆盘出餐；敌人破窗而入时切换战斗，菜刀、煎锅与霰弹枪并存。烧焦的菜是炸弹、冰镇甜品冻住敌人、失败料理变身战术道具——每一种食材都有武器化可能。【合作设计】近距离语音喊指令是核心体验，分工协作与互相甩锅同框出现，是天生的名场面制造机。【美术与氛围】卡通化暴力叠加厨房灾难现场：巨型龙虾越狱、墙壁被打成筛子的随机事件层，混乱即乐趣。【对标定位】《胡闹厨房》的协作压力装进 FPS 的壳里，官方尚未公布定价。【优势】题材杂交新鲜感强，公布片 139 万浏览验证传播力；505 Games 发行资源有保障。【不足】玩法深度取决于出餐与战斗两套系统的融合度，抢先体验阶段的内容量存疑。【综合】2027 年最值得观察的直播间游戏候选。",
+      "why_notable": "题材杂交加传播机器：把 Overcooked 式友尽体验装进 FPS 壳里，公布即 139 万浏览",
+      "pcu": "暂未发售"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "unselected": true,
+     "source": "Eurogamer · 新闻",
+     "title": "《无人深空》10 周年 Cosmos 更新上线：太空彻底重做，PCU 冲到近期 2.4 倍",
+     "en_title": "No Man's Sky's 10th anniversary Cosmos update is here and it brings a complete overhaul of space",
+     "full_text": "After much teasing and speculation, No Man's Sky's 10th anniversary Cosmos update is here and, yup, it's a big 'un, bringing a \"complete overhaul of space\". https://t.co/JLr6i71znM https://t.co/nWhKCuVZoG",
+     "author": "Eurogamer",
+     "likes": 104,
+     "views": 9902,
+     "date": "2026-09-10",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HR2vvfhW8AcP1QY.jpg"
+     },
+     "summary": "Hello Games 推出 10 周年更新 Cosmos，'彻底重做太空'：玩家现在可以在小行星上行走与建造。监控数据显示更新带动同时在线冲到 32,906，约为过去 30 天均值（约 1.4 万）的 2.4 倍。",
+     "recommendation": "《无人深空》10周年更新把在线人数拉回 2.4 倍：可以在小行星上行走与建造"
+    },
+    {
+     "idx": "新游参考 02",
+     "unselected": true,
+     "source": "Easy Allies · 试玩",
+     "title": "《FF7 Revelation》gamescom 试玩报告：40 分钟实机，结构比 Rebirth 更庞大",
+     "en_title": "Final Fantasy VII Revelation - First Hands-On Preview",
+     "full_text": "Final Fantasy VII Revelation - First Hands-On Preview\nhttps://t.co/Q9hzX9kvFr\n\nHuber got to play 40 min and speak with the director at gamescom. Get his thoughts on Vincent, Cid, how the game expands structurally, and so much more.\n\n@finalfantasyvii #FinalFantasyVIIRevelation https://t.co/89PpF358Jb",
+     "author": "Easy Allies",
+     "likes": 51,
+     "views": 2268,
+     "date": "2026-09-10",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HR16o0RbgAMuWXN.jpg"
+     },
+     "summary": "Easy Allies 在 gamescom 试玩 40 分钟并与制作人交流：Vincent、Cid 登场，游戏结构进一步扩张；任天堂 Direct 已确认 2027 年 4 月 8 日登陆 Switch 2。Polygon 评测称其体量约为 Rebirth 的'50 万倍'——夸张但方向没错。",
+     "recommendation": "FF7 系列终章 gamescom 试玩：2027年4月8日发售，结构继续膨胀"
+    },
+    {
+     "idx": "新游参考 03",
+     "unselected": true,
+     "source": "PLAYISM · 官方",
+     "title": "PLAYISM 公布《Sea Sniffers》：海豹用拳头捕鱼的动作 RPG，2027 年 Steam 发售",
+     "en_title": "アザラシ漁獲アクションRPG『シー スニッファーズ』",
+     "full_text": "◤🐟新タイトル、解禁🎣◢\n\n＿人人人人人人人人＿\n＞　アザラシが🦭　＜\n＞　魚を殴る！💥　＜\n￣Y^Y^Y^Y^Y^Y^Y￣\n\nパンチで魚を捕まえろ！\n\nアザラシ漁獲アクションRPG\n『シー スニッファーズ』\n\nSteamで2027年発売予定！\nぜひウィッシュリスト登録を！\nhttps://t.co/ov3tu2yWfb\n\n#playismgameshow https://t.co/K5x8tEHjq4",
+     "author": "PLAYISM",
+     "likes": 177,
+     "views": 12332,
+     "date": "2026-09-10",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2097998382396751872/img/LhpCECYE8ZmSmkMF.jpg",
+      "video_url": "https://x.com/playismJP/status/2097998890083705073"
+     },
+     "summary": "PLAYISM 公布新作《シー スニッファーズ》（Sea Sniffers）：一只海豹用拳头捕鱼的动作 RPG，2027 年登陆 Steam，风格无厘头。",
+     "recommendation": "海豹用拳头捕鱼的动作 RPG——PLAYISM 又一次无厘头选品"
+    },
+    {
+     "idx": "新游参考 04",
+     "unselected": true,
+     "source": "Niche Gamer · 试玩",
+     "title": "《Shroom and Gloom》EA 试玩：双牌组轮换的暗黑风肉鸽卡牌爬塔",
+     "en_title": "[PREVIEW] Shroom and Gloom is a promising, moody, deckbuilding dungeon crawler",
+     "full_text": "[PREVIEW] Shroom and Gloom is a promising, moody, deckbuilding dungeon crawler!\n\nhttps://t.co/kHyWzqmPf3 \n\nShroom and Gloom drips with style and has lots of interesting ideas. While it may eventually feel repetitive, its early access build already has lots of promise and is fun throughout~",
+     "author": "Niche Gamer",
+     "likes": 12,
+     "views": 976,
+     "date": "2026-09-10",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2098084758714531853/pu/img/DU873mC0oVvX8KRx.jpg",
+      "video_url": "https://x.com/nichegamer/status/2098084808358256692"
+     },
+     "summary": "Niche Gamer 试玩后给出积极评价：风格化极强的蘑菇主题肉鸽卡牌爬塔，双牌组设计带来差异化，EA 版本内容已经相当扎实。Destructoid 称其可能是'下一个伟大的肉鸽卡牌'。",
+     "recommendation": "双牌组加蘑菇美学的暗黑肉鸽卡牌，EA 试玩口碑积极"
+    },
+    {
+     "idx": "新游参考 05",
+     "unselected": true,
+     "source": "電ファミニコゲーマー · 报道",
+     "title": "《死亡游戏模拟器》9 月 30 日 EA：扮演'主办方'观赏这场残酷演出",
+     "en_title": "デスゲームを\"運営する側\"として遊べるパーティーゲーム『デスゲームシミュレーター』",
+     "full_text": "デスゲームを“運営する側”として遊べるパーティーゲーム『デスゲームシミュレーター』が9月30日に早期アクセス開始。理不尽な演目を高みから見物しよう\nhttps://t.co/93NqCme6iB\n\n声が変わる仮面をかぶり、足場渡りや○×クイズなどに介入。参加者も巨大化や無敵になるカードで反撃し、GMを倒すことも https://t.co/J4IFghhJkg",
+     "author": "電ファミニコゲーマー",
+     "likes": 1871,
+     "views": 183206,
+     "date": "2026-09-10",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2097964991576203264/pu/img/f_-cTTrz801McJWn.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2097965018465927313"
+     },
+     "summary": "派对游戏《死亡游戏模拟器》9 月 30 日开启 EA：玩家扮演死亡游戏的运营方，戴上面具、操纵机关与问答环节；参赛者也能用巨型化、无敌卡反杀 GM——视角反转是最大卖点，183K 浏览。",
+     "recommendation": "扮演死亡游戏的'主办方'：视角反转派对游戏 9 月 30 日 EA"
+    },
+    {
+     "idx": "新游参考 06",
+     "unselected": true,
+     "source": "電ファミニコゲーマー · 报道",
+     "title": "《If 赤 Then 停止》体验版上线：用编程逻辑解决绝望的交通基建",
+     "en_title": "絶望的すぎる\"交通インフラ\"を「プログラミング」で解決するゲーム『If 赤 Then 停止』",
+     "full_text": "絶望的すぎる“交通インフラ”を「プログラミング」で解決するゲーム『If 赤 Then 停止』体験版が配信開始。渋滞・事故ゼロの街を目指す\nhttps://t.co/i4GqdK4grI\n\n「信号が赤なら→車を止める」「電車がきたら→踏切を閉じる」など交通の仕組みをゼロから構築。体験版では6つのステージに挑戦できる https://t.co/6vRzAY9a6j",
+     "author": "電ファミニコゲーマー",
+     "likes": 1706,
+     "views": 147761,
+     "date": "2026-09-10",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2097880416862801920/pu/img/Neuz-j83ebXdsoZX.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2097880441978319331"
+     },
+     "summary": "编程解谜游戏《If 赤 Then 停止》体验版配信：用'红灯→停车''电车来了→关道口'这类条件语句从零搭建交通系统，目标零拥堵零事故，体验版含 6 个关卡。",
+     "recommendation": "用 if 语句治理堵车：编程解谜《If 赤 Then 停止》体验版上线"
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "featured": false,
+     "source": "陈成 · 推文（Qoder 团队）",
+     "tags": [
+      "AI CLI",
+      "开发者工具",
+      "中文原创"
+     ],
+     "title": "Qoder CLI 重做 /model 交互：模型相关配置一屏搞定",
+     "en_title": "优化了 Qoder CLI 的 /model 交互，模型相关配置一屏搞定",
+     "full_text": "优化了 Qoder CLI 的 /model 交互，模型相关配置一屏搞定，不再需要单独用 /effect 和 /context-window。\n\n#我在Qoder团队做CLI https://t.co/dNtgpd2SaZ",
+     "author": "陈成",
+     "likes": 8,
+     "views": 1700,
+     "date": "2026-09-10",
+     "link": "https://x.com/chenchengpro/status/2097960296061321727",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2097960230919589888/img/y2_48_qWTVKh4DaE.jpg",
+      "video_url": "https://x.com/chenchengpro/status/2097960296061321727"
+     },
+     "summary": "Qoder 团队的陈成介绍 CLI 更新：/model 交互重做后，模型相关配置一屏完成，不再需要单独调用 /effect 和 /context-window 两个命令。",
+     "analysis": "AI CLI 工具的竞争已经卷到交互细节：把模型切换、上下文窗口、效果参数收敛进一个入口，降低的是认知负担而不是功能数量。中文开发者参与 AI 工具链核心交互设计的动作值得持续关注。",
+     "recommendation": "Qoder CLI 重做 /model 交互：模型配置一屏搞定，少记两个命令"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**索尼砍单、Xbox 接盘：小岛《Physint》更换发行方**\nKojima Productions 确认索尼 PlayStation Studios 于 6 月中旬通知取消《Physint》，团队用三个月找到新合作方 Xbox，小岛的两个在研项目《OD》与《Physint》现均属微软阵营。索尼未解释退出原因，只称'经过慎重考虑'。\n\n**果蝇大脑成为游戏圈顶流**\nGoogle 完成成年果蝇全脑连接组绘制后三天，工程师用强化学习让这个数字大脑玩起了 DOOM、Beat Saber 与马里奥64，相关视频浏览量突破 2000 万。\n\n**任天堂 40 周年 Direct：《时之笛》重制版首曝**\nN64 时代的海拉鲁以现代画面重现，青沼英二亲自演示实机；新美术在社区引发两极争议，发售日期未公布。\n\n**WARDOGS 首日 34 万在线**\nBULKHEAD 的 100 人军事 FPS《WARDOGS》抢先体验首日冲上 Steam 全站第 4；Blizzard 1900 名员工批准的行业首份工会合同，把'引入 AI 须先谈判'写进条款。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
