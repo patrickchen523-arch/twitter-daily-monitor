@@ -3,14 +3,6 @@
  "note": "2026-09-11 期",
  "picks": [
   {
-   "name": "WARDOGS",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/59d4daf753bd5d982e6675f7eee363bc817c574e/header.jpg?t=1785318392",
-   "hook": "推特浏览 114.7万（2026-09-06收录） + SteamDB 关注日增 +25,304",
-   "source": "SteamDB趋势 · 推特热游",
-   "link": "https://store.steampowered.com/app/1867240/",
-   "bg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/13fbc7cb084ec25c20ad031c7e888a9459cd8e77/ss_13fbc7cb084ec25c20ad031c7e888a9459cd8e77.1920x1080.jpg?t=1789055882"
-  },
-  {
    "name": "BOMBANANA!",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4656000/99c086faba625a8d3bc459bab444087d257ccbe1/header.jpg?t=1788351950",
    "hook": "推特浏览 121.6万（2026-09-03收录） + SteamDB 关注日增 +3,687 + B站最高60名 + 好评率 92.04%",
@@ -27,19 +19,27 @@
    "bg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3624140/75b8b8f3dbb852c8764b7eb6ebf37146b09a8d3d/ss_75b8b8f3dbb852c8764b7eb6ebf37146b09a8d3d.1920x1080.jpg?t=1788973804"
   },
   {
+   "name": "PrismCraft",
+   "cover": "https://pbs.twimg.com/amplify_video_thumb/2094818272898097152/img/PSnW1Ka0OWk_8Iqt.jpg",
+   "hook": "推特浏览 168.3万（2026-09-03收录）",
+   "source": "推特热游",
+   "link": "https://x.com/lairhisson/status/2094819116989263904"
+  },
+  {
+   "name": "WARDOGS",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/59d4daf753bd5d982e6675f7eee363bc817c574e/header.jpg?t=1785318392",
+   "hook": "SteamDB 关注日增 +25,304",
+   "source": "SteamDB趋势",
+   "link": "https://store.steampowered.com/app/1867240/",
+   "bg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/13fbc7cb084ec25c20ad031c7e888a9459cd8e77/ss_13fbc7cb084ec25c20ad031c7e888a9459cd8e77.1920x1080.jpg?t=1789055882"
+  },
+  {
    "name": "The Blood of Dawnwalker 黎明行者之血",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751260/7b0c1860c7c2fca069ae53c049b737176dbfb8d4/header_schinese.jpg?t=1788784813",
    "hook": "SteamDB 关注日增 +20,511",
    "source": "SteamDB趋势",
    "link": "https://store.steampowered.com/app/3751260/",
    "bg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751260/1af5d14d9b6a36c14eae3bebf56c0e0f63235633/ss_1af5d14d9b6a36c14eae3bebf56c0e0f63235633.1920x1080.jpg?t=1788784813"
-  },
-  {
-   "name": "王者万象棋",
-   "cover": "http://i0.hdslb.com/bfs/archive/703344066cd3c03fdc15bf460894391f53ef121c.jpg",
-   "hook": "B站最高49名",
-   "source": "B站热门",
-   "link": "https://www.bilibili.com/video/BV1x7bG6nE8Y/"
   }
  ],
  "boards": [
@@ -782,17 +782,6 @@
    "demo": false,
    "items": [
     {
-     "name": "WARDOGS",
-     "metric": "114.7万",
-     "sub": "09-06 · WARDOGS playtest 21 万同接：免费 fest 爆发曲线的年度样本",
-     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/59d4daf753bd5d982e6675f7eee363bc817c574e/header.jpg?t=1788683537",
-     "link": "https://store.steampowered.com/app/1867240/WARDOGS/",
-     "release": "2026-09-10",
-     "day": "2026-09-06",
-     "idx": 0,
-     "heat": 113748
-    },
-    {
      "name": "Wanderburg",
      "metric": "8.4万",
      "sub": "09-10 · 《Wanderburg》：会走路还要吃掉别的城堡的移动要塞 Roguelike——9月8日上线首日 Steam 爆火",
@@ -890,13 +879,24 @@
      "day": "2026-09-02",
      "idx": 2,
      "heat": 2627
+    },
+    {
+     "name": "The Kendama Challenge: 100 Players",
+     "metric": "14.7万",
+     "sub": "09-02 · 百人连剑玉 10 人联机：一人失手全员 game over——苦行×连带责任",
+     "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4293130/692dc6de7b633d213668926390f736c27fccb989/header.jpg?t=1788242121",
+     "link": "https://store.steampowered.com/app/4293130",
+     "release": "2026-05-13",
+     "day": "2026-09-02",
+     "idx": 3,
+     "heat": 2297
     }
    ],
    "more": {
     "label": "查看新游推文",
     "tab": "indie"
    },
-   "generated_from": "760d4a57aa873d18859cedc3ab12964a9efb593bd44ababc9b85fd9e319bd750"
+   "generated_from": "db1eb3914dbceaf36e95ed7c874b10bae6d6cb502b788b02f0e9fa27a54270b4"
   },
   {
    "id": "roblox",
@@ -3084,6 +3084,13 @@
     "note": "SteamDB 趋势榜在列：关注增长 +1,525 · 总关注 41,029",
     "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3218230/header.jpg?t=1788435219",
     "link": "https://store.steampowered.com/app/3218230/"
+   },
+   {
+    "name": "Mayhem À La Carte",
+    "date": "2027年（抢先体验）",
+    "note": "推特热游在榜：推文浏览 139.3万 · 《黑街厨神》：一手颠勺一手霰弹枪的四人合作料理 FPS——公布片 139 万浏览",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4631740/3da9da0b0a4eec301837d97fd529e71721dee2ff/header.jpg?t=1789060426",
+    "link": "https://store.steampowered.com/app/4631740/"
    }
   ],
   "calendar": [
@@ -3131,5 +3138,5 @@
   }
  },
  "hero_bg": "https://bigwalk.panicfiles.com/BigWalk_Screenshot_May25_03.png",
- "picks_generated_from": "b4ec6c080358a6fddef8133c44773ce0157d466aae4f0a11ee8bad439bf39646"
+ "picks_generated_from": "b91e4c593f6a295d1a54407bb529abbab0fefad79e1e716afc580a8835fabc35"
 }
