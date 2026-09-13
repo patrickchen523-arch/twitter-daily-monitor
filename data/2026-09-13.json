@@ -1,0 +1,588 @@
+{
+  "date": "2026-09-13",
+  "meta": {
+    "raw_count": 220,
+    "filtered_count": 173,
+    "selected_count": 12,
+    "crawl_time": "2026-09-13 12:18"
+  },
+  "lede": "果蝇大脑玩遍魔方、Deadlock与大乱斗刷屏；BlizzCon公布星际开放世界射击与暗黑5；WARDOGS首日百万销量、35万在线；给龙洗澡的Drag'n Wash发售即爆496万浏览。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "果蝇大脑166,700个神经元学会打Deadlock、魔方与象棋——connectome玩游戏一周刷屏全网"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "给龙洗澡模拟器发售即爆：日推496万浏览、3万赞——猎奇梗文化传播力天花板"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 1,
+      "hook": "WARDOGS抢先体验首日破100万份、35万同时在线——100人三方混战的英国小厂奇迹"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "果蝇大脑166,700个神经元学会打Deadlock、解魔方、下象棋——connectome玩游戏刷屏一周\nGPT-6 Astra数天做出45角色浏览器大乱斗，含联机与手柄\n开源ElevenLabs替代品19.4K星：单样本克隆音色、646种语言本地配音"
+    },
+    {
+      "id": "industry",
+      "text": "BlizzCon 2026：星际开放世界射击（2030）、暗黑5公布、暗黑4下周登Switch 2\nWARDOGS抢先体验首日破百万份、35万同时在线\nAlinea测算Steam年内为Valve入账150亿美元，Forza Horizon 6成最大新游\nSony数字所有权诉讼：维权wiki整理30+条官方「你拥有」话术"
+    },
+    {
+      "id": "indie",
+      "text": "给龙洗澡的Drag'n Wash发售即爆：496万浏览、好评1881条\n浣熊推车物理合作Trash Day定档10月13日\nLunar/Grandia/宝可梦前员工公布暗黑JRPG《Under Mythos》\n集英社《时之书：无尽终章》：2D×3D银河城，Polygon称年度动作游戏候选"
+    },
+    {
+      "id": "tools",
+      "text": "Unity 6.6要点：Enter Play Mode提速、Dictionary序列化、WebGPU支持"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "wormy · AI×神经科学实验",
+          "tags": [
+            "果蝇connectome",
+            "强化学习",
+            "病毒传播"
+          ],
+          "title": "果蝇大脑学会打游戏：166,700个神经元的connectome一周刷屏全网",
+          "en_title": "the fly can play deadlock",
+          "full_text": "the fly can play deadlock\n\nI've successfully trained the MaleCNS v1.0 fruit fly connectdome's 166,700 neurons using YOLOv5 and video pretraining data to play deadlock in a keyboard environment with attention-based aiming.\n\nThe fly has found the most success on Graves. \n#deadlock https://t.co/2JIdX4xsiT",
+          "author": "jetsetworm",
+          "date": "2026-09-11",
+          "likes": 21593,
+          "views": 1820899,
+          "link": "https://x.com/jetsetworm/status/2098497203664806115",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098496142015098897/img/46P2VI2uv2BFg8D2.jpg",
+            "video_url": "https://x.com/jetsetworm/status/2098497203664806115/video/1"
+          },
+          "summary": "wormy 用 YOLOv5 与视频预训练数据训练果蝇 connectome（MaleCNS v1.0，166,700 个神经元），在键盘环境中以 attention-based aiming 打 Valve 的 Deadlock。这是本周「果蝇玩游戏」病毒式传播链条的一环：Nick Walton 的果蝇解魔方（3.2万赞）、Ernesto 的果蝇下象棋（700 Elo）、skirano 的果蝇玩马里奥、adonis 的果蝇学 Trackmania、以及打任天堂大乱斗赢 bot（2/3 胜率）接连出现。",
+          "analysis": "connectome 仿真体量小、训练成本低，正在变成 AI 圈的「海豹表演」：既有科学传播价值，也在快速消耗大众新鲜感。对游戏行业而言，值得留意的是轻量级生物神经网络+视频预训练这条技术路线的演示效率，以及「AI 玩游戏」内容在短时间内的聚合传播势能——同类跟进者在一周内就完成了从 Deadlock 到格斗游戏的题材收割。",
+          "recommendation": "果蝇大脑166,700个神经元学会打Deadlock：一周内全网复刻魔方、象棋、马里奥与大乱斗",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "0xRishi · AI游戏开发演示",
+          "tags": [
+            "GPT-6 Astra",
+            "three.js",
+            "AI全栈开发"
+          ],
+          "title": "GPT-6 Astra数天做出45角色浏览器大乱斗：Super Smash Royale",
+          "en_title": "Introducing Super Smash Royale, my best creation yet",
+          "full_text": "Introducing Super Smash Royale, my best creation yet\n\nPlay Battle Royale in the browser with 45 characters from Melee + Brawl\n\nBuilt in a few days with GPT-6 Astra, @ElevenLabs, @MeshyAI, @Blender and @threejs\n\nSolo, multiplayer, and controller support\n\nsmashroyale dot io https://t.co/5AkC8T9oPu",
+          "author": "0xRishi",
+          "date": "2026-09-11",
+          "likes": 2849,
+          "views": 1045833,
+          "link": "https://x.com/0xRishi/status/2098439358537990194",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098438144836399104/img/EjSze8ETOfmpwmlS.jpg",
+            "video_url": "https://x.com/0xRishi/status/2098439358537990194/video/1"
+          },
+          "summary": "开发者 Rishi 用 GPT-6 Astra 搭配 ElevenLabs（语音）、MeshyAI（3D 模型）、Blender 与 three.js，几天内做出浏览器版大乱斗 Battle Royale：45 个来自 Melee+Brawl 的角色，支持单机、联机与手柄，可直接在线试玩（smashroyale.io）。",
+          "analysis": "「一次 prompt 生成可玩 demo」已经卷到「几天做出带联机的完整作品」。AI 生成 3D 资产（Meshy）+语音（ElevenLabs）+代码（Astra）的全栈管线成型后，个人开发者的原型速度被重新定义；同时这类作品直接使用任天堂角色素材，IP 风险与下架先例（同周 Jagex 对 ChatGPT 复刻 RuneScape 发 C&D）都值得从业者对照观察。",
+          "recommendation": "GPT-6 Astra数天做出45角色浏览器大乱斗，联机+手柄齐全——AI全栈游戏开发管线成型",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "MIKE · 开源工具推介",
+          "tags": [
+            "TTS",
+            "语音克隆",
+            "开源"
+          ],
+          "title": "开源免费版ElevenLabs爆火：单样本克隆音色、646种语言本地配音",
+          "en_title": "a solo dev just open sourced a 100% FREE ElevenLabs replacement",
+          "full_text": "this is f**king insane.\n\na solo dev just open sourced a 100% FREE ElevenLabs replacement that runs entirely on your own machine.\nthe GitHub repo is at 19.4K stars.\n\nit lets you:\n\n→ clone a voice from one clean reference clip\n→ dub any video into 646 languages\n→ generate audiobooks, dictation, transcription\n→ pick from 14 TTS engines instead of one\n\nElevenLabs supports 32 languages. this does 646.\n\nno per-character billing. no usage caps. no audio ever leaves your computer.\n\nsave this for later.",
+          "author": "mikenevermiss",
+          "date": "2026-09-12",
+          "likes": 4166,
+          "views": 345010,
+          "link": "https://x.com/mikenevermiss/status/2098689336858309094",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098689291102863360/img/sp_IQvbRrFxz1S67.jpg",
+            "video_url": "https://x.com/mikenevermiss/status/2098689336858309094/video/1"
+          },
+          "summary": "一位独立开发者开源了完全本地运行的 ElevenLabs 替代方案，GitHub 已 19.4K 星：单条干净音频即可克隆音色、646 种语言视频配音、有声书/听写/转写生成，聚合 14 个 TTS 引擎；对比 ElevenLabs 的 32 种语言与按字符计费，主打零成本、无上限、数据不出本机。",
+          "analysis": "游戏侧最直接的用途是本地化配音与 AI NPC 语音原型的成本归零：小团队可以先本地跑通多语言配音再决定是否买商用方案。语音克隆的授权与肖像权合规仍是红线，商用前需确认各底层引擎的许可条款。",
+          "recommendation": "开源ElevenLabs替代品19.4K星：单样本克隆音色、646种语言本地配音，零计费",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 展会报道",
+          "tags": [
+            "暴雪",
+            "BlizzCon",
+            "星际争霸",
+            "暗黑"
+          ],
+          "title": "BlizzCon 2026开幕：星际开放世界射击（目标2030）、暗黑5公布、暗黑4登陆Switch 2",
+          "en_title": "A new StarCraft? Diablo 4 Switch 2? All the BlizzCon 2026 announcements",
+          "full_text": "A new StarCraft? Diablo 4 Switch 2? All the BlizzCon 2026 announcements from the opening ceremony as they happen https://t.co/YCZvn42ZKV https://t.co/aXNUh1vpiZ",
+          "author": "eurogamer",
+          "date": "2026-09-12",
+          "likes": 35,
+          "views": 11457,
+          "link": "https://x.com/eurogamer/status/2098743442083893754",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSARuyoboAEoGyr.jpg"
+          },
+          "summary": "BlizzCon 时隔两年回归（9月12日开幕礼）。开场公布：星际争霸 IP 开放世界射击新作（传闻由前 Far Cry 负责人 Dan Hay 主导，目标 2030）、暗黑破坏神 5、暗黑 4 的 Switch 2 版下周发售、亚马逊职业上线、守望先锋新英雄 Doctrine、魔兽世界「Midnight Eclipse」资料片/补丁、魔兽 3 新战役当日上线、网飞暗黑动画剧集；现场约 1,900 名暴雪员工正进行工会投票。",
+          "analysis": "暴雪把未来 5 年的牌一次性亮出：射击化星际+暗黑 5 说明 IP 池全面服务型化，Switch 2 端口则继续多平台化路线。工会投票同框进行，北美大厂劳资结构变化值得持续跟踪。",
+          "recommendation": "BlizzCon 2026开幕：星际开放世界射击（2030）、暗黑5公布、暗黑4下周登Switch 2",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 市场表现",
+          "tags": [
+            "WARDOGS",
+            "Bulkhead",
+            "PCU"
+          ],
+          "title": "WARDOGS抢先体验首日破100万份、35万同时在线",
+          "en_title": "Bulkhead's Wardogs sells over a million copies and tops 350,000 concurrent players on launch day",
+          "full_text": "UK studio Bulkhead's Wardogs sells over a million copies and tops 350,000 concurrent players on launch day\nhttps://t.co/6zhhM1nWqV https://t.co/NkaETmrExo",
+          "author": "eurogamer",
+          "date": "2026-09-12",
+          "likes": 8,
+          "views": 3152,
+          "link": "https://x.com/eurogamer/status/2098800603489075536",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSBwAO0WwAA7CcG.jpg"
+          },
+          "summary": "英国 Derby 工作室 Bulkhead 的战术射击 WARDOGS（Team17 发行）9月10日登陆 Steam 抢先体验，数小时内卖出超 100 万份、同时在线突破 35 万，服务器一度排队拥堵；CEO Joe Brammer 直呼「mental」。游戏为 100 人三方混战，含载具、基建与可破坏地形，定价 £36.99，主机版计划 2028 年。",
+          "analysis": "发行前 Bulkhead 曾发布「10 个不要买的理由」式自嘲营销，配合硬核多人玩法精准命中社群。Steam 榜单数据显示其当日 PCU 峰值 400,196——是本月最大的首发现象级新品，也再次验证「多人射击+高性价比+社群梗营销」在 EA 阶段的爆发模型。",
+          "recommendation": "WARDOGS抢先体验首日破100万份、35万同时在线——英国小厂的多人射击爆款样本",
+          "featured": true,
+          "game_ref": "WARDOGS",
+          "enrichment": {
+            "game_name": "WARDOGS",
+            "genre": "动作 / 独立 / 大型多人在线",
+            "developer": "BULKHEAD",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 149.00",
+            "release_date": "已发售 · 2026 年 9 月 10 日",
+            "steam_rating": "39496 reviews",
+            "steam_url": "https://store.steampowered.com/app/1867240",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/be00107d586c0bf0412e9e4acedb64629a99aa5b/header_schinese.jpg?t=1789059636",
+            "youtube_video": null,
+            "why_notable": "首日100万份+PCU峰值400,196，本月最大首发新游",
+            "pcu": "400,196（2026年9月13日榜单）",
+            "estimated_sales": "100万+（首发日）",
+            "description": "《WARDOGS》是一款全面战争式第一人称射击游戏，在一个最高可支持 100 名玩家的大规模军事沙盒中，融合了战术枪战、诸兵种联合作战以及建造与破坏机制等元素。\n\n"
+          }
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · 市场数据",
+          "tags": [
+            "Valve",
+            "Steam",
+            "Alinea",
+            "营收"
+          ],
+          "title": "Alinea测算：Steam 2026年内已为Valve入账150亿美元，Forza Horizon 6成最大新游",
+          "en_title": "Valve has reportedly made £11bn from Steam already in 2026",
+          "full_text": "Valve has reportedly made £11bn from Steam already in 2026, and biggest earning new arrival is Forza Horizon 6. https://t.co/4bWixvOtLr https://t.co/Vu780yotYI",
+          "author": "eurogamer",
+          "date": "2026-09-12",
+          "likes": 9,
+          "views": 7659,
+          "link": "https://x.com/eurogamer/status/2098721051093905482",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSAnqF4XIAQKuSS.jpg"
+          },
+          "summary": "Alinea Analytics 测算：2026 年内 Steam 已为 Valve 产生 150 亿美元流水（约 £110 亿）；年度最大新游为 Forza Horizon 6（2.105 亿美元），其后是 Crimson Desert（2.033 亿）与生化危机 Requiem（2.009 亿）。头部集中度极低：Top6 新游仅占总流水 6.6%，Top100 占 15.9%，其中两款是新 IP。",
+          "analysis": "「头部新游只占大盘 6.6%」是这份数据最反直觉的点：Steam 的长尾结构意味着爆款依赖度在下降，对中小团队是利好信号；而年度 T0 新游门槛已抬到 2 亿美元级，3A 之间也在互相挤压。",
+          "recommendation": "Steam年内入账150亿美元：Forza Horizon 6以2.1亿成最大新游——Top6仅占大盘6.6%",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 平台政策",
+          "tags": [
+            "Sony",
+            "数字所有权",
+            "诉讼"
+          ],
+          "title": "Sony法庭称「理性消费者」知道数字游戏非拥有，维权wiki整理30+条官方「你拥有」话术",
+          "en_title": "Sony argued that \"reasonable consumers\" already know they don't really own the digital goods",
+          "full_text": "Sony argued that \"reasonable consumers\" already know they don't really own the digital goods they paid for. The Consumer Rights wiki has now made a list collecting more than 30 examples where Sony told customers they do, in fact, own the digital games they paid for. https://t.co/EOiOyx7wr5",
+          "author": "eurogamer",
+          "date": "2026-09-12",
+          "likes": 3312,
+          "views": 64407,
+          "link": "https://x.com/eurogamer/status/2098607564162248845",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HR_AcRiWMAEmoiB.jpg"
+          },
+          "summary": "PlayStation 商店数字游戏「购买即拥有」集体诉讼中，Sony 辩称「理性消费者」明知付了钱也不拥有数字商品；Consumer Rights wiki 随即汇总 30+ 处 Sony 官网/客服话术（含 Marvel's Wolverine FAQ 的「Standard Edition owners」表述），指控其用 buy/purchase 字眼误导消费者、违反加州相关法律。",
+          "analysis": "数字所有权是平台经济的结构性雷区：从 Ubisoft 下架 The Crew 到 Sony 本案，「买断制数字商品=长期许可」的用户认知与法律界定正在被逐案校准。对做数字商店、订阅制或赛季内容的团队，宣传文案里 buy/own 的措辞风险需要前置审视。",
+          "recommendation": "Sony称「理性消费者」知道数字游戏非拥有——维权wiki列出30+条官方「你拥有」话术反证",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "ゲムのすけ · 独游推介",
+          "tags": [
+            "模拟",
+            "猎奇",
+            "兽人"
+          ],
+          "title": "Drag'n Wash：给龙洗澡的模拟器，发售即爆——独立开发 Gator Dragon Games",
+          "en_title": "ドラゴンを洗うゲーム『Drag'n Wash』が発売されました。",
+          "full_text": "ドラゴンを洗うゲーム『Drag'n Wash』が発売されました。\nローンチセールで1,710円。\n\n私から言えるのはこれだけです。楽しんで。\nhttps://t.co/HpEH77mCNh https://t.co/3LoQkp83D0",
+          "author": "dotpixel3d",
+          "date": "2026-09-11",
+          "likes": 30085,
+          "views": 4964424,
+          "link": "https://x.com/dotpixel3d/status/2098230046217458039",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HR5Yf1Pb0AA3MUo.jpg"
+          },
+          "summary": "日本推主一条「给龙洗澡的游戏发售了，发售特卖 1,710 日元」带来 496 万浏览、3 万赞、5,500+ 转。Steam 页面显示：Gator Dragon Games 开发，9月10日发售，3D 洗龙叙事模拟器，含 3 条公龙、三种结局，单周目约 90 分钟，含成人内容标注；发售 3 天已有 1,881 条评价。",
+          "analysis": "典型的「梗驱动发售」：题材天然适配兽圈社区与截图传播，一句话卖点+低定价+短时长，把猎奇流量直接转化为首周销量。对独游团队的启示是——可被一句话讲清的猎奇概念本身就是买量素材。",
+          "recommendation": "给龙洗澡的Drag'n Wash发售即爆：496万浏览、3万赞、好评1881条——猎奇梗传播教科书",
+          "featured": true,
+          "game_ref": "Drag'n Wash",
+          "enrichment": {
+            "game_name": "Drag'n Wash",
+            "genre": "休闲 / 独立 / 模拟",
+            "developer": "Gator Dragon Games（独立开发）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "HK$ 78.30（发售特卖，约合1,710日元）",
+            "release_date": "已发售 · 2026年9月10日",
+            "steam_rating": "1,881条评价（发售3天）",
+            "steam_url": "https://store.steampowered.com/app/4739660/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4739660/e837f81aebb36b458512fa562a322c218dde1f7c/header.jpg?t=1789186451",
+            "youtube_video": null,
+            "description": "【核心玩法】3D洗龙模拟器：扮演洗龙店经营者，为三条公龙冲水、打泡、刷洗并对话互动，叙事分支导向三种结局，单周目约90分钟。玩法围绕「清洗+互动」展开，节奏轻松，本质是短篇叙事向模拟器。\n\n【美术与氛围】Q版3D卡通渲染，龙只系围裙出镜，配色明快；审美取向明显面向兽人（furry）社区。\n\n【对标定位】「洗巨型生物」类模拟器此前在兽圈圈层已有受众，本作把题材推到极致并发售恰逢其时。\n\n【优势】题材猎奇且极度契合梗传播；单价低、时长短；发售即社交平台爆红。\n【不足】内容体量小（三结局×90分钟）；含成人内容标注，不适合全年龄；玩法深度有限。\n\n【综合】2026年「梗驱动发售」的教科书案例：发售3天Steam好评1,881条、日推496万浏览，证明小体量猎奇独游借助圈层社区与梗文化也能撬动病毒级曝光。",
+            "why_notable": "一条日推496万浏览带飞首周销量，圈层梗文化的病毒式传播样本",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "AUTOMATON · 新游报道",
+          "tags": [
+            "合作",
+            "物理",
+            "浣熊"
+          ],
+          "title": "Trash Day：6人浣熊推车物理合作，10月13日发售——Off by One Games（前Rocket League成员）",
+          "en_title": "最大6人マルチ対応・アライグマの物理演算ゴミ運び『Trash Day』10月14日配信へ",
+          "full_text": "最大6人マルチ対応・アライグマの物理演算ゴミ運び『Trash Day』10月14日配信へ。ゴミ満載のカートで進む帰り道、たまに荷物をぶちまける\nhttps://t.co/chmWD3z2Gc https://t.co/XZ08evGPip",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-12",
+          "likes": 773,
+          "views": 146105,
+          "link": "https://x.com/AUTOMATONJapan/status/2098675840959885757",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098675768935235584/img/GU03Eb1QeUb2OFDp.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2098675840959885757/video/1"
+          },
+          "summary": "AUTOMATON 报道：物理合作游戏《Trash Day》10月13日登陆 Steam（日区报道为10月14日）。玩家扮演浣熊小队，推着装满垃圾的购物车回家，途中翻找垃圾、突袭住宅、躲避陷阱；手推车没有刹车、会散架、会把货物洒一路，车轮有耐久度需要修理。最多 6 人在线合作（支持单人），免费试玩版已上线。开发商 Off by One Games 由前 Rocket League 成员在美国组建。",
+          "analysis": "「Overcooked 式合作混乱 × Human Fall Flat 式物理」叠加浣熊翻垃圾的天然萌点，是很适合主播传播的组合；前 Rocket League 团底的物理手感是最大看点。",
+          "recommendation": "浣熊推垃圾物理合作Trash Day：6人联机、手推车没有刹车——10月13日Steam发售",
+          "featured": true,
+          "game_ref": "Trash Day",
+          "enrichment": {
+            "game_name": "Trash Day",
+            "genre": "合作 / 物理冒险",
+            "developer": "Off by One Games（美国，前Rocket League成员）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布（免费试玩版已上线）",
+            "release_date": "2026年10月13日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/3314580/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3314580/f1c70e4435316f35818c3d01422685b43ce1edf7/header_alt_assets_1.jpg?t=1789069776",
+            "youtube_video": null,
+            "description": "【核心玩法】基于物理的6人在线合作冒险：浣熊小队推着装满垃圾的购物车回家，翻找垃圾、突袭住宅、躲避陷阱；手推车没有刹车、会打滑、会散架，车轮有耐久度需修理，货物会洒一路。合作搬运+物理笑点为核心循环，支持单人游玩，含免费试玩版。\n\n【美术与氛围】美式卡通风格，垃圾场与郊区街道场景，浣熊动作夸张，整体欢乐向。\n\n【对标定位】Overcooked式合作混乱+Human Fall Flat式物理的浣熊题材组合；开发商Off by One Games由前Rocket League成员组成。\n\n【优势】浣熊题材亲和；6人合作适合直播传播；物理互动笑点密度高；有大厂前成员背书。\n【不足】玩法框架并不新，成败取决于关卡与物理手感打磨；发售时点临近年末大作季。\n\n【综合】10月13日Steam发售，试玩版已可试。合作聚会类玩家与主播渠道值得重点关注。",
+            "why_notable": "前Rocket League成员打造、6人浣熊推车合作——聚会合作品类的年末黑马候选",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Niche Gamer · 新游公布",
+          "tags": [
+            "JRPG",
+            "暗黑奇幻",
+            "模拟经营"
+          ],
+          "title": "Under Mythos：Lunar/Grandia/宝可梦前员工公布暗黑奇幻JRPG，2028年发售",
+          "en_title": "Former Lunar, Grandia, and Pokemon devs announce dark fantasy JRPG Under Mythos!",
+          "full_text": "Former Lunar, Grandia, and Pokemon devs announce dark fantasy JRPG Under Mythos! https://t.co/hObpYBjOQk https://t.co/jamad4gBTz",
+          "author": "nichegamer",
+          "date": "2026-09-11",
+          "likes": 57,
+          "views": 4863,
+          "link": "https://x.com/nichegamer/status/2098517465932124608",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2098517404246528001/pu/img/q9Pn9gVQ8Yy1A8oy.jpg",
+            "video_url": "https://x.com/nichegamer/status/2098517465932124608/video/1"
+          },
+          "summary": "由 Lunar、Grandia、宝可梦系列前员工组建的 KADATH 公布暗黑奇幻 JRPG《Under Mythos》：白天在异世界温泉旅馆招待客人、经营日常，夜晚进入地城搜集食材与资源、进行动作制战斗。Steam 页面已开放（愿望单中），标注 2028 年发售。",
+          "analysis": "资深 JRPG 血脉+「温泉旅馆经营×地城探险」双循环，结构上接近「暗黑版 Rune Factory」；2028 年发售意味着长线开发，团队成色与首个实机演示是后续观察点。",
+          "recommendation": "Lunar/Grandia/宝可梦前员工组建KADATH：白天温泉旅馆、夜晚地城探险的暗黑JRPG《Under Mythos》",
+          "featured": false,
+          "game_ref": "Under Mythos",
+          "enrichment": {
+            "game_name": "Under Mythos",
+            "genre": "动作 / 角色扮演 / 模拟",
+            "developer": "KADATH Co., Ltd.（Lunar/Grandia/宝可梦前员工）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2028年",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5155220/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5155220/b1b8761ce930679ad01a36f378add265f1d86736/header.jpg?t=1788922907",
+            "youtube_video": null,
+            "description": "【核心玩法】暗黑奇幻JRPG：白天在异世界温泉旅馆招待客人、经营日常；夜晚进入地城搜集食材与资源，进行动作制战斗。「平和日常×疯狂异界」双循环是核心卖点。\n\n【美术与氛围】暗黑奇幻风，日常与地城氛围反差强烈。\n\n【对标定位】开发团队KADATH由Lunar、Grandia、宝可梦系列前员工组建，JRPG正统背景+经营模拟混搭，结构接近「暗黑版Rune Factory」。\n\n【优势】资深JRPG团队+差异化双循环；Steam愿望单页已开。\n【不足】发售日遥远（2028年），实机与系统细节尚未充分公开。\n\n【综合】经典JRPG血脉注入「经营+地城」新结构，值得长线关注并提前加愿望单。",
+            "why_notable": "Lunar/Grandia/宝可梦前员工的新工作室首作，JRPG正统团队试水经营混搭",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "Polygon · 试玩前瞻",
+          "tags": [
+            "银河城",
+            "2D×3D",
+            "集英社"
+          ],
+          "title": "时之书：无尽终章（Chronoscript: The Endless End）：被困手稿中的2D×3D银河城——DeskWorks/集英社Games",
+          "en_title": "Silksong's New Replacement Is About to Become the Best Action Game of the Year",
+          "full_text": "Silksong's New Replacement Is About to Become the Best Action Game of the Year https://t.co/c2NohxlRw9 https://t.co/eRLGfmnZXj",
+          "author": "Polygon",
+          "date": "2026-09-11",
+          "likes": 44,
+          "views": 20091,
+          "link": "https://x.com/Polygon/status/2098522000394162687",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HR9yo3gWgAMwdFx.jpg"
+          },
+          "summary": "Polygon 发布《时之书：无尽终章》（Chronoscript: The Endless End）前瞻：DeskWorks 开发、集英社 Games 发行，玩家扮演被困在未完成手稿中的编辑，在 2D 原稿纸世界与 3D 别墅空间之间穿梭，为「千年无尽的终章」画上句号。移动、战斗与存档点设计强烈对标 Hollow Knight/Silksong，Polygon 直言其是 Silksong 的接棒者、年度最佳动作游戏候选。Steam 页面标注 2027 年发售，试玩版已上线。",
+          "analysis": "手绘 2D 角色×3D 空间的「手稿内世界」设定辨识度极高，集英社发行资源加持；注意 Steam 已把窗口改到 2027 年，与此前「2026 秋」口径存在出入。",
+          "recommendation": "集英社《时之书：无尽终章》：被困手稿中的2D×3D银河城，Polygon称年度动作游戏候选",
+          "featured": false,
+          "game_ref": "Chronoscript: The Endless End",
+          "enrichment": {
+            "game_name": "Chronoscript: The Endless End",
+            "genre": "动作冒险 / 银河城",
+            "developer": "DeskWorks Inc.（发行：SHUEISHA GAMES）",
+            "platforms": [
+              "Steam",
+              "PS5"
+            ],
+            "price": "未公布",
+            "release_date": "2027年",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4018380/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4018380/6797b7f9b0ad39c0a2d3cf0c511c78b445c310bc/header_schinese.jpg?t=1788951344",
+            "youtube_video": null,
+            "description": "【核心玩法】手绘2D×3D探索动作冒险：玩家是被困在未完成手稿中的编辑，在2D原稿纸世界与3D别墅空间之间穿梭，为「千年无尽的终章」画上句号。含墨水潜行（ink dive）等位移能力与Boss战（强迫症书虫、被诅咒的主编等）。\n\n【美术与氛围】手绘2D角色置于3D空间，纸张质感强烈；移动、战斗与存档点设计对标Hollow Knight/Silksong。\n\n【对标定位】DeskWorks开发、集英社Games发行；Polygon试玩直呼「Silksong后的接棒者、年度最佳动作游戏候选」。\n\n【优势】媒体口碑强劲；集英社发行资源；2D×3D混合玩法辨识度高。\n【不足】Steam标注2027年发售（较此前「2026秋」口径推迟），等待周期长。\n\n【综合】Silksong后最值得期待的2D银河城之一，试玩版已上线，建议提前加愿望单。",
+            "why_notable": "Polygon称其为Silksong接棒者——集英社资源加持的高完成度2D×3D银河城",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "あらき · 个人开发",
+          "tags": [
+            "对战",
+            " party game"
+          ],
+          "title": "超エキサイトボール：1-4人对战投球游戏开发中，Steam页下周公开",
+          "en_title": "ボールを相手のゴールに打ちまくる！",
+          "full_text": "ボールを相手のゴールに打ちまくる！\n1～4人で遊べる対戦ゲーム『超エキサイトボール』を開発中です\n\nSteamストアページは来週公開予定！\n\n#スーパーゲ制デー #インディーゲーム https://t.co/JaERcoUcmL",
+          "author": "Araki_Game_Dev",
+          "date": "2026-09-12",
+          "likes": 4336,
+          "views": 507879,
+          "link": "https://x.com/Araki_Game_Dev/status/2098642784869814665",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098638704193748992/img/BV9xiV0aatHjnsDo.jpg",
+            "video_url": "https://x.com/Araki_Game_Dev/status/2098642784869814665/video/1"
+          },
+          "summary": "日本个人开发者あらき的 1-4 人对战投球游戏，往对方球门疯狂砸球；Steam 商店页下周公开。",
+          "recommendation": "个人开发的1-4人对战投球《超エキサイトボール》：动能量极高，Steam页下周公开",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "ごだか · 奇妙游戏介绍",
+          "tags": [
+            "模拟",
+            "无障碍"
+          ],
+          "title": "盲目の手探り：用白杖与听觉触觉探索城市的失明模拟器",
+          "en_title": "失明するゲーム。",
+          "full_text": "失明するゲーム。\n\n白杖を使って感覚的に周囲の情報を把握し、自宅から地下鉄などの街中まで、触覚と聴覚を頼りに歩き回る。難易度は高いが周囲の探索を楽しめるシミュレーションゲーム。\n\n『盲目の手探り』 https://t.co/xDYsBUOaXT",
+          "author": "G_Godaka",
+          "date": "2026-09-12",
+          "likes": 747,
+          "views": 100858,
+          "link": "https://x.com/G_Godaka/status/2098683044022624382",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2098679273733373952/pu/img/yMNqEIZJXHV2PzU5.jpg",
+            "video_url": "https://x.com/G_Godaka/status/2098683044022624382/video/1"
+          },
+          "summary": "以视障者视角行走的模拟游戏：用白杖感知环境，从家中一路探索到地铁站，全靠触觉与听觉导航，难度高但探索感强；Steam 现有折扣。",
+          "recommendation": "失明模拟器《盲目の手探り》：白杖+听觉触觉导航，无障碍题材的独特探索体验",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Polygon · 试玩前瞻",
+          "tags": [
+            "魂like",
+            "FPS",
+            "西部"
+          ],
+          "title": "Guns of Eschaton：自称「首款魂系FPS」的末日西部射击，2026年内发售",
+          "en_title": "The 'World's First Soulslike FPS' Is a Brutally Fun Take On the Apocalypse",
+          "full_text": "The 'World's First Soulslike FPS' Is a Brutally Fun Take On the Apocalypse https://t.co/dbDFeGYdya https://t.co/aCYqKJIm31",
+          "author": "Polygon",
+          "date": "2026-09-12",
+          "likes": 12,
+          "views": 5522,
+          "link": "https://x.com/Polygon/status/2098793782141431921",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSBp0qYX0AEid-5.jpg"
+          },
+          "summary": "Eschatology Entertainment 开发、4Divinity 发行的末日西部魂系 FPS：手装弹枪械、按部位排列的弱点系统、篝火休整升级，半线性关卡+捷径设计；由已故 Half-Life 2/Dishonored 美术总监 Viktor Antonov 参与设计，2026 年内发售（PS5/PC/XSX）。",
+          "recommendation": "魂系FPS《Guns of Eschaton》：Viktor Antonov遗作设计，手装弹+部位弱点的末日西部",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "NeonNoroshi_JP · 独游推介",
+          "tags": [
+            "合作登山",
+            "物理"
+          ],
+          "title": "Sunset Summit：最多8人协力悬崖登山，「令和的老人会」",
+          "en_title": "日没までの登頂を目指す最大8人協力登山『Sunset Summit』",
+          "full_text": "老人8人、命懸けの崖登り。パラソルにホッピング、もう登山道具がおかしい。\n\n日没までの登頂を目指す最大8人協力登山『Sunset Summit』。\n仲間が落ちても止まってる暇はない。どうせ即復帰する。\nこれが令和の老人会なんですか！？\nhttps://t.co/RNqb8sa0qf https://t.co/ZhR7dLUcL2",
+          "author": "NNoroshi",
+          "date": "2026-09-11",
+          "likes": 94,
+          "views": 10958,
+          "link": "https://x.com/NNoroshi/status/2098531781553406146",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098022486684409857/img/Ywxo6F4cJ5k0TRiC.jpg",
+            "video_url": "https://x.com/NNoroshi/status/2098531781553406146/video/1"
+          },
+          "summary": "8 位老人组队悬崖登山的物理协力游戏：阳伞当跳跳杆等离谱装备，同伴坠落也无需停下——反正马上就复活。",
+          "recommendation": "8人协力登山《Sunset Summit》：老人天团+离谱登山装备的物理喜剧",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity for Games · 官方",
+          "tags": [
+            "Unity",
+            "引擎更新",
+            "WebGPU"
+          ],
+          "title": "Unity 6.6正式版要点：Enter Play Mode提速、Dictionary序列化、WebGPU支持",
+          "en_title": "Unity 6.6 launched last week!",
+          "full_text": "In case you missed it, Unity 6.6 launched last week! 💥\n\nFrom faster Enter Play Mode and Dictionary serialization to an upgraded Hierarchy window & WebGPU support, here's a full rundown of what's new: https://t.co/ktWilJBTQL",
+          "author": "unitygames",
+          "date": "2026-09-10",
+          "likes": 333,
+          "views": 24734,
+          "link": "https://x.com/unitygames/status/2098097610842046823",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2098097481875693573/pu/img/nsxxQtc16ZsRcuSE.jpg",
+            "video_url": "https://x.com/unitygames/status/2098097610842046823/video/1"
+          },
+          "summary": "Unity 官方回顾上周发布的 6.6 版本：Enter Play Mode 更快、原生支持 Dictionary 序列化、Hierarchy 窗口升级、WebGPU 支持；官方视频有完整 rundown。",
+          "analysis": "Dictionary 序列化与 Enter Play Mode 提速都是高频刚需改进，直接改善迭代效率；WebGPU 支持则指向网页端发行的回暖（配合本周期浏览器 AI 游戏的爆量）。",
+          "recommendation": "Unity 6.6：Enter Play Mode提速+Dictionary序列化+WebGPU，日常迭代效率三连升",
+          "featured": true
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**果蝇大脑接管游戏圈**\nNick Walton、wormy、Ernesto 等开发者一周内用果蝇 connectome（166,700 个神经元）训练出会解魔方、打 Deadlock、下象棋（700 Elo）、玩任天堂大乱斗的「果蝇 AI」，AI×神经科学交叉实验以前所未有的速度刷屏。\n\n**行业大新闻扎堆**\nBlizzCon 时隔两年回归：星际开放世界射击（目标 2030）、暗黑 5 公布、暗黑 4 下周登 Switch 2；Bulkhead 的 WARDOGS 抢先体验首日破百万份、35 万同时在线；Alinea 测算 Steam 年内已为 Valve 入账 150 亿美元；Sony 数字所有权诉讼中「理性消费者」辩护遭维权 wiki 30+ 条官方话术反证。\n\n**独游端猎奇与品质齐飞**\n给龙洗澡的 Drag'n Wash 发售即爆（496 万浏览、好评 1,881 条）；浣熊推车合作 Trash Day 定档 10 月 13 日；Under Mythos 与《时之书：无尽终章》等新曝光值得加愿望单。\n\n**工具链**\nUnity 6.6 正式版带来 Enter Play Mode 提速、Dictionary 序列化与 WebGPU 支持。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
