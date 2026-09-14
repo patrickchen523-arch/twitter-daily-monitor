@@ -1,5 +1,7 @@
 # 项目规则
 
+游戏关注页更新全流程见 skill：`.codemaker/skills/game-watch-update/SKILL.md`（拉取→导入→清洗→验收→推送→验证）
+
 ## 推送规则
 
 用户说"推送"时，一律同时推送到两个远程，缺一不可：
