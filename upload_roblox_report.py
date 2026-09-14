@@ -11,9 +11,10 @@ Roblox 周报一键录入脚本（无需 AI 参与）
   1. 从文件名(或 HTML title)解析周报日期范围
   2. 复制到 site/roblox/roblox-YYYY-MM-DD-to-MM-DD.html
   3. 向 index.html 的 robloxReports 数组末尾插入条目
-  4. git commit -> rebase -> push GitHub
-  5. cherry-pick 到 gitlab-sync -> push GitLab
-  6. 轮询验证双端线上 URL 返回 200
+  4. 同步游戏关注页 roblox 榜（update_roblox_board 链 + gen_picks + verify 闸门）
+  5. git commit -> rebase -> push GitHub
+  6. cherry-pick 到 gitlab-sync -> push GitLab
+  7. 轮询验证双端线上 URL 返回 200
 """
 import argparse
 import io
@@ -100,8 +101,35 @@ def run_git(args, check=True):
     return r
 
 
+def run_node(script_args):
+    r = subprocess.run(["node"] + script_args, cwd=SITE, capture_output=True, text=True,
+                       encoding="utf-8", errors="replace")
+    if r.returncode != 0:
+        raise RuntimeError(f"node {' '.join(script_args)} 失败:\n{r.stdout}\n{r.stderr}")
+    tail = (r.stdout or "").strip().splitlines()
+    if tail:
+        print(f"[node] {script_args[0].split('/')[-1]}: {tail[-1][:100]}")
+    return r
+
+
+def refresh_board():
+    """周报录入后同步游戏关注页 roblox 榜 + 重建推荐 + 过部署校验闸门。
+    缺了这步：verify 闸门的 roblox 档期校验会让下一次 Pages 部署失败。"""
+    lm = json.loads((SITE / "data" / "launched" / "manifest.json").read_text(encoding="utf-8"))
+    latest = lm["dates"][-1]
+    print(f"[board] 同步 roblox 榜到游戏关注页（最新期 {latest}）...")
+    run_node(["tools/update_roblox_board.cjs"])
+    run_node(["tools/fetch_roblox_details.js", latest])
+    run_node(["tools/fetch_roblox_thumbs.js", latest])
+    run_node(["tools/update_roblox_board.cjs", "--propagate"])
+    run_node(["tools/gen_picks.cjs", latest])
+    run_node(["tools/verify_launched_imgs.cjs", "--data-only"])
+    print("[board] roblox 榜已同步，校验闸门通过")
+    return latest
+
+
 def push_both(commit_msg: str):
-    run_git(["add", str(ROBLOX_DIR), "index.html"])
+    run_git(["add", str(ROBLOX_DIR), "index.html", "data/launched"])
     run_git(["commit", "-m", commit_msg])
 
     # GitHub: rebase 最新后推送，失败重试一次
@@ -204,6 +232,7 @@ def main():
     print(f"[copy] -> site/roblox/{fname}")
     insert_entry(fname, label)
     print("[edit] index.html robloxReports 已插入")
+    refresh_board()
 
     commit_msg = f"add Roblox weekly {label} ({start.isoformat()} ~ {end.isoformat()})"
     sha = push_both(commit_msg)

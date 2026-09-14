@@ -1,9 +1,13 @@
 // 推特热游榜: 从日报 data/*.json 逐日回溯,收集已上线游戏(按推文浏览量排序,取前10)
-// 用法: node tools/import_twitter_board.js [日期]
+// 用法: node tools/import_twitter_board.js <日期>（日期必填，防止误写历史快照）
 const fs = require('fs');
 const path = require('path');
 
-const date = process.argv[2] || '2026-08-05';
+const date = process.argv[2];
+if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+  console.error('usage: node tools/import_twitter_board.js <YYYY-MM-DD>（日期必填，缺省会静默写错日期）');
+  process.exit(1);
+}
 const root = path.join(__dirname, '..');
 const launchedPath = path.join(root, 'data', 'launched', `${date}.json`);
 const launched = JSON.parse(fs.readFileSync(launchedPath, 'utf8'));
