@@ -1,0 +1,517 @@
+{
+ "date": "2026-09-14",
+ "meta": {
+  "raw_count": 220,
+  "filtered_count": 169,
+  "selected_count": 11,
+  "crawl_time": "2026-09-14 10:00"
+ },
+ "lede": "BlizzCon 2026 重磅连发：《星际争霸》以开放世界射击回归（2030 春）、《暗黑破坏神 5》定档 2029 并将拍 Netflix 剧集；沙特 PIF 拟合并 EA 与 Savvy；Astra 全流程游戏开发方法论与两款题材罕见的新游同样抢眼。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "《星际争霸》十年后回归：前Far Cry主创打造开放世界射击，2030春Xbox独占——同场公布暗黑5与Netflix剧集"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "给死刑囚做最后一餐的模拟游戏：读档案、选食材、行刑前对话——65万人围观"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "沐阳拆解 Astra 四天15.6亿token做出完整3D游戏：机制与美术双工作流分离，先能玩再好看"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "沐阳详解 Astra 四天 15.6 亿 token 做出完整 3D 游戏 PaperRoute 的双工作流方法\n果蝇全脑连接组被训练成认国旗、敬礼、发电码，同一连接组本周还在玩 Doom"
+  },
+  {
+   "id": "industry",
+   "text": "《星际争霸》回归：开放世界射击，2030 年春 Xbox 独占\n《暗黑破坏神 5》定档 2029 春，Netflix 剧集同步开发\n沙特 PIF 拟合并 EA 与 Savvy Games\n《Nighthawks》被 Steam 评为仅限成人并多国下架"
+  },
+  {
+   "id": "indie",
+   "text": "《最後の食事を》：为死刑囚做最后一餐的模拟游戏（65 万浏览）\n《英灵神殿》1.0 转正：发售日 PCU 冲回 30.8 万\n《Knight's Party》Steam 页面公开：混沌骑士派对\n《Walls Were Built to Fall》：同屏百万敌人的 FPS 守城"
+  },
+  {
+   "id": "tools",
+   "text": "Game UI Database 2.0 将免费开放 200 页 UI/UX 教程：无广告无付费墙"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "沐阳 · 原创解读",
+     "tags": [
+      "AI游戏开发",
+      "Astra",
+      "工作流"
+     ],
+     "featured": true,
+     "title": "沐阳拆解 Astra 四天做出完整 3D 游戏 PaperRoute：先能玩，再好看",
+     "en_title": "I spent 1.6 billion tokens building a full game with GPT-6 ASTRA — Not a demo. A FINISHED, playable game.",
+     "full_text": "国外一个老哥，写了一个详细的用AI做游戏的教程！！\n他用 Astra，四天花了15.6亿token做出了一款完整可玩的 3D 游戏 PaperRoute，直接火了。\n\n和之前爆火全网疯传的那个ThreeJS游戏差不多！\n游戏有完整街区、主角骑车送报得分、遭遇汽车和恶犬、天气系统、玻璃破碎、排行榜，甚至还有一个可以骑车训练的公园。\n\n他这套工作流里，一个非常重要的原则是：\n先把游戏做得能玩，再考虑把它做得好看。\n最开始只给 Astra 一份非常简单的需求和一张参考图，先把骑车、转向、扔报纸、得分和关卡结束这些核心机制跑通。\n等核心玩法稳定以后，他才开始处理美术方向。\n\n最值得学习的是，他把整个项目拆成了两条独立工作流：\n一条负责游戏机制，一条负责美术和 3D 资产。\n转向手感、碰撞恢复、恶犬追逐、手机操作，一个问题对应一个 Prompt、一次浏览器测试和一次代码提交。\n房屋、树木、围栏和邮箱，则让 Astra 编写 Python 脚本，交给 Blender 在后台生成模型并导出 GLB。\n哪部分除了问题，就可以更准确方便的调整。\n\n对于角色，老哥建议不要和 AI 死磕。\nAstra 做房屋和简单道具很强，但做出来的主角像个木偶。\n他后来直接改变思路：\n先用 ChatGPT 生成角色概念图，再转成 3D 模型，最后让 Astra 负责减面、绑定骨骼、适配自行车和修复服装。\n\n这样一套连招，出来的效果一下就能用了。\n这也说明现在做 AI 项目，最重要的能力已经不是迷信某一个万能模型，而是知道：什么任务应该交给什么工具。\n所以不要再迷信那些“一句话做出完整游戏”。\n\nAI时代，模型越来越强，真正值得学习和强化的，是如何拆分任务、建立测试、隔离实验、反复看结果，再把一个能跑的 Demo，一点点磨成真正的作品。\n\n这篇教程把每一步、每次迭代、每张渲染图和真实成本都公开了。\n别的不说，这套方法真的非常值得收藏！！",
+     "author": "yyyole",
+     "date": "2026-09-12",
+     "likes": 1045,
+     "views": 122404,
+     "link": "https://x.com/yyyole/status/2098829072373797028",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2098826301645963264/img/Y-Yil4LZjFzSGqks.jpg",
+      "video_url": "https://x.com/yyyole/status/2098829072373797028/video/1"
+     },
+     "summary": "开发者 builtbysketch 用 GPT-6 Astra 四天消耗 15.6 亿 token 做出完整可玩的 3D 游戏 PaperRoute：完整街区、骑车送报、天气系统、排行榜一应俱全。核心方法论是机制与美术双工作流分离——一个问题对应一个 Prompt、一次浏览器测试、一次提交；3D 资产由 Astra 写 Python 脚本交给 Blender 后台生成 GLB；角色则用 ChatGPT 出概念图再转 3D，避免与 AI 死磕。",
+     "analysis": "这是 AI 游戏开发从『一句话 demo』走向『完整产品』的工程化范本：任务拆分、隔离测试、失败可回滚，正是传统软件工程在 AI 时代的复刻。对团队的启示：AI 时代的核心竞争力不再是『会用某个模型』，而是知道什么任务交给什么工具——机制、资产、角色各有最优管线。原推（@builtbysketch）获 190 万浏览，同波 Astra 作品还包括多人卡坦 Like 游戏（Meng To）和越野摩托模拟 Mini Motto。",
+     "recommendation": "沐阳拆解 Astra 四天15.6亿token做出完整3D游戏：机制美术双工作流分离，先能玩再好看"
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Kevin Brace · 技术演示",
+     "tags": [
+      "AI",
+      "神经形态",
+      "FlyWire"
+     ],
+     "title": "果蝇大脑连接组被训练成认国旗、敬礼、发电码：固定大脑+可训练读出成新范式",
+     "en_title": "I trained the fly to recognize the US flag, salute, and buzz the Pledge of Allegiance in Morse code.",
+     "full_text": "I trained the fly to recognize the US flag, salute, and buzz the Pledge of Allegiance in Morse code.\n\nIt works by injecting image pixels into a rate-based model built from FlyWire’s 139,255-neuron connectome (~15 million directed connections). A trained readout classifies the resulting network activity, triggering a learned Morse sequence and an optimized foreleg salute in a MuJoCo fly body.\n\nI trained three separate components around a fixed FlyWire connectome.\n\nRecognizing the flag: I projected flag-image pixels into 4,096 artificially selected input neurons, propagated activity through the full network for 12 rate updates, and extracted 128 downstream activity features. A small 128→64→32→1 classifier learned “American flag → respond; other flags → silence,” using AdamW and weighted binary cross-entropy for 1,200 epochs. Training included 256 flag designs, image perturbations, and blank controls. It correctly classified 550/550 held-out examples, consisting of new mild transformations and controls.\n\nLearning the pledge sequence: I encoded the pledge into Morse symbols and trained a 192-unit GRU to predict each next symbol. During training, it received the correct preceding symbol; during evaluation, it had to generate the sequence from its own previous outputs. At epoch 120, it reproduced all 492 tokens exactly, including the stop token. Engineered timing converts those symbols into short and long bursts of a 200 Hz buzz. This learns one prescribed sequence; it does not learn language.\n\nFinding the salute: I optimized seven foreleg joint targets inside MuJoCo. A cross-entropy search evaluated 1,152 candidate postures, retaining better candidates and sampling around them, followed by numerical refinement. The objective minimized distance between the forefoot and a target near the forehead. Across eight perturbed starting states, mean error fell from approximately 1.58 mm to 0.019 mm.",
+     "author": "latentfidelity",
+     "date": "2026-09-12",
+     "likes": 2134,
+     "views": 166001,
+     "link": "https://x.com/latentfidelity/status/2098816409405173856",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2098815643776962561/img/D-xL-OvyTWlEKD9W.jpg",
+      "video_url": "https://x.com/latentfidelity/status/2098816409405173856/video/1"
+     },
+     "summary": "开发者基于 FlyWire 果蝇全脑连接组（139,255 个神经元、约 1500 万定向连接）构建率模型，把图像像素注入人工选定的 4096 个输入神经元，训练小型分类器实现『美国国旗→响应、其他国旗→沉默』（550/550 全对），再用 GRU 生成摩尔斯电码的效忠誓言序列，并在 MuJoCo 果蝇身体里优化出前腿敬礼动作（误差 1.58mm 收敛到 0.019mm）。",
+     "analysis": "继此前『果蝇大脑玩 Doom / Beat Saber』引爆传播（本日报 9 月 11 日已报道，2000 万浏览）之后，同一份 FlyWire 连接组本周再现新玩法：认国旗、发电码、敬礼——『固定大脑 + 可训练读出』的开源范式正在持续产出增量实验。对游戏行业的启示：超轻量生物启发模型 + 物理引擎的组合，为 AI NPC 和程序化动画提供了低成本实验场。",
+     "recommendation": "139,255个神经元的果蝇大脑学会认国旗、敬礼、发电码——同一连接组本周还在玩Doom"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · BlizzCon 2026",
+     "tags": [
+      "Blizzard",
+      "BlizzCon 2026",
+      "Xbox"
+     ],
+     "featured": true,
+     "title": "《星际争霸》时隔十年回归：开放世界射击玩法，2030 年春发售",
+     "en_title": "StarCraft is back, but it's not the RTS you remember - it's an open-world shooter coming spring 2030.",
+     "full_text": "StarCraft is back, but it's not the RTS you remember - it's an open-world shooter coming spring 2030\nhttps://t.co/rat29OfBCb https://t.co/cL7WekvQeR",
+     "author": "eurogamer",
+     "date": "2026-09-13",
+     "likes": 15,
+     "views": 6845,
+     "link": "https://x.com/eurogamer/status/2099106947081404527",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSGGmBlaIAAqRIJ.jpg"
+     },
+     "summary": "BlizzCon 2026 开幕式公布：暴雪下一个《星际争霸》正作是原创开放世界射击游戏，2030 年春季发售，为十年来首款全新独立星争霸作品。项目由前育碧 Far Cry 系列主创 Dan Hay 领衔，口号是『每一步都要靠自己挣得——不从上帝视角，而是趴在泥里火线上』。首曝仅有 CG 预告（新兵 Holt 着陆即阵亡），『returns 2030』画面只出现 Xbox logo。同场发布会还公布《暗黑破坏神 5》（2029 年春，Netflix 剧集同步开发）、《魔兽世界：Forever》经典+服等。",
+     "analysis": "RTS 母题转译成开放世界射击，是典型的『IP 天花板突破』打法，Dan Hay 的开放世界经验被直接复用。官宣提前到 2030 年，说明这是为下一代硬件储备的十年期项目——『提前数年官宣传递信心』正是暴雪自己向 PC Gamer 承认的策略。对从业者：微软治下的暴雪 IP 矩阵全面重启，『重启经典 IP + 平台绑定』将成为微软系第一方的标准动作。",
+     "recommendation": "《星际争霸》十年后回归：前Far Cry主创打造开放世界射击，2030春Xbox独占——同场公布暗黑5与Netflix剧集",
+     "game_ref": "StarCraft"
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "TheGamer · BlizzCon 2026",
+     "tags": [
+      "Blizzard",
+      "BlizzCon 2026",
+      "Netflix"
+     ],
+     "featured": true,
+     "title": "《暗黑破坏神 5》官宣 2029 年春发售：Netflix 剧集同步开发，暗黑 4 不再出新资料片",
+     "en_title": "Blizzard Confirms Diablo 5 Is Coming In 2029",
+     "full_text": "Blizzard Confirms Diablo 5 Is Coming In 2029 https://t.co/XAHi6fb4hP https://t.co/PWow4fwgyi",
+     "author": "thegamerwebsite",
+     "date": "2026-09-13",
+     "likes": 4,
+     "views": 1256,
+     "link": "https://x.com/thegamerwebsite/status/2098909579589390790",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSDTI-UWIAc2VbD.jpg"
+     },
+     "summary": "BlizzCon 2026 官宣《暗黑破坏神 5》将于 2029 年春季发售，Netflix 版暗黑剧集同步开发中。据 MP1st 补充报道：新作职业与首批细节已公开，同时暴雪确认暗黑 4 将不再推出任何新 DLC/资料片，资源全面转向 5 代。PC Gamer 也就暴雪『提前数年官宣传递信心』的策略做了专题。",
+     "analysis": "提前两年半官宣 + 影视化并行，是微软系『IP 长线运营』的标准打法——用确定性对冲服务型游戏的用户流失。暗黑 4 停止扩展意味着 live 团队资源向 5 代倾斜，老玩家的『告别期』情绪与回流节奏值得持续观察。对从业者：官宣前置化正在成为大厂管理预期的通用手段，跟进报道的窗口期被显著拉长。",
+     "recommendation": "《暗黑破坏神5》官宣2029年春发售+Netflix剧集开发中，暗黑4确认不再出新资料片"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Rock Paper Shotgun · 据 Bloomberg",
+     "tags": [
+      "EA",
+      "沙特PIF",
+      "并购"
+     ],
+     "title": "沙特 PIF 考虑把 EA 与 Savvy Games 合并成“超级游戏集团”",
+     "en_title": "EA's Saudi Arabian owners are reportedly considering forming an ubermegacorp by merging them with Savvy Games.",
+     "full_text": "EA's Saudi Arabian owners are reportedly considering forming an ubermegacorp by merging them with Savvy Games. https://t.co/AP3d6NEDyt https://t.co/zvk5aF8EFA",
+     "author": "rockpapershot",
+     "date": "2026-09-13",
+     "likes": 0,
+     "views": 3413,
+     "link": "https://x.com/rockpapershot/status/2098996869078647030",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSEig0IWUAsODrK.jpg"
+     },
+     "summary": "Bloomberg 消息：在 550 亿美元杠杆收购完成后仅两个月，沙特公共投资基金（PIF）正考虑把 EA 与旗下 Savvy Games Group 合并到同一旗下，以『更好地协调资产』。Savvy 已拥有 Scopely（宝可梦 GO）、ESL 等电竞资产，并持有卡普空、任天堂、光荣特库摩股份；其 60 亿美元收购沐瞳科技的交易将押后至合并之后。上周 Savvy CEO Brian Ward 刚宣布离职。",
+     "analysis": "杠杆收购的年偿债压力（已有分析师预警 EA 可能收缩单机业务）与主权基金的资产整合同步推进：宝可梦 GO + EA Sports FC『同一屋檐下』的休闲移动+体育年货组合，指向一个全球发行巨头的雏形。对从业者：中东资本正从『财务投资』转向『运营整合』，未来两年游戏业并购案的主导方不再是传统大厂。",
+     "recommendation": "EA完成550亿美元收购仅两月，沙特PIF拟将其与Savvy合并——宝可梦GO与EA FC将同属一个集团"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "PC Gamer · 平台政策",
+     "tags": [
+      "Steam",
+      "成人内容评级",
+      "Wadjet Eye"
+     ],
+     "title": "吸血鬼 RPG《Nighthawks》被 Steam 评为“仅限成人”：移出搜索、多国下架",
+     "en_title": "Nighthawks gets removed from Steam search and delisted in some countries after adult rating.",
+     "full_text": "Nighthawks gets removed from Steam search and delisted in some countries after adult rating https://t.co/AhyqQac2UH",
+     "author": "pcgamer",
+     "date": "2026-09-13",
+     "likes": 17,
+     "views": 15943,
+     "link": "https://x.com/pcgamer/status/2099141359357882377",
+     "media": null,
+     "summary": "原定本月发售、开发多年的吸血鬼 RPG《Nighthawks》（Sunless Sea 编剧 Richard Cobbett × Blackwell 开发商 Wadjet Eye）被 Valve 标记为 Adults Only：从 Steam 搜索中移除，并在德国等重要市场直接下架。开发商强调游戏的性爱与裸露描写『非常轻度』，直指 Valve『基本把这游戏当色情游戏对待』，已提交申诉希望尽快摘掉『猩红字母』。",
+     "analysis": "这是 Steam 收紧成人内容政策（Visa/Mastercard 支付渠道压力）后的又一误伤案例：AO 标签在德国等同禁售，搜索不可见对依赖自然流量的独立游戏是致命打击。对从业者：含成人向要素的项目要在上架前预留分级申诉周期，并把 Steam 之外的发售渠道（GOG、itch.io）纳入兜底方案。",
+     "recommendation": "《Nighthawks》被Steam标为仅限成人：搜索消失+德国下架，开发商喊冤“Valve把这游戏当色情游戏”"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "ごだか｜奇妙なゲーム紹介 · 游戏推介",
+     "tags": [
+      "模拟",
+      "叙事",
+      "独立开发"
+     ],
+     "featured": true,
+     "title": "《最後の食事を》：为死刑囚做最后一餐的模拟游戏——独立开发者 Mr.Spoon 新作",
+     "en_title": "死刑囚の最後の食事を作るゲーム。",
+     "full_text": "死刑囚の最後の食事を作るゲーム。\n\nプレイヤーは死刑囚担当のシェフ。囚人のプロフィールを読み、食材を選び、料理を作る。死刑執行のその時まで、彼らと対話をするシミュレーションゲーム。\n\n『最後の食事を』 https://t.co/0tewW1Bhik",
+     "author": "G_Godaka",
+     "date": "2026-09-13",
+     "likes": 14007,
+     "views": 652505,
+     "link": "https://x.com/G_Godaka/status/2098939730830451181",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2098935968497876992/pu/img/1ShYtFkKMOf3rXFA.jpg",
+      "video_url": "https://x.com/G_Godaka/status/2098939730830451181/video/1"
+     },
+     "summary": "玩家扮演监狱主厨：阅读死刑囚的档案、挑选食材、烹饪料理，并在行刑前与他们对话的模拟游戏。Steam 商店页已上线（即将推出）。",
+     "analysis": "",
+     "recommendation": "《最後の食事を》：给死刑囚做最后一餐的模拟游戏——读档案、选食材、行刑前对话——65万人围观",
+     "enrichment": {
+      "game_name": "最後の食事を",
+      "genre": "模拟 / 叙事",
+      "developer": "Mr.Spoon（独立开发）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4924160/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4924160/a8f636e68c519ded291186521eafe68dd5ef822a/header_japanese.jpg?t=1788700764",
+      "youtube_video": null,
+      "description": "【核心玩法】玩家是监狱里的主厨，服务对象是等待行刑的死刑囚。每个囚犯都有一份完整档案：出身、经历、罪名与最后的愿望。玩家需要阅读档案理解这个人，挑选食材、烹饪一顿他想要的最后晚餐，并在餐桌前与他对话，直到行刑时刻来临。烹饪与对话双线推进，没有传统意义上的输赢，只有『这顿饭做得值不值』。\n\n【题材定位】以『行刑前最后一餐』这一真实存在的制度仪式为切口，把模拟经营做成了一面照人的镜子——食物的选材与做法本身就是叙事语言。题材在同类烹饪模拟中几乎找不到对标（对比：Cook Serve 系列的压力烹饪、Venba 的移民家庭叙事）。\n\n【美术与氛围】从预告片看采用低饱和的压抑色调与写实系像素/手绘混合风格，厨房与行刑室的场景对比构成核心视觉张力。\n\n【优势】题材极度差异化，天然具备话题传播力；档案+对话的叙事结构适合碎片化体验；开发者 Mr.Spoon 此前的作品以题材刁钻著称。\n【不足】题材敏感，上线后可能面临部分地区分级审查；玩法深度依赖剧本质量，对文本量的要求极高。\n\n【综合评价】2026 年最值得关注的叙事向独立游戏之一：用一顿饭讲一个人的全部人生。愿望单潜力大，适合叙事游戏爱好者和『奇怪游戏』收藏家。",
+      "why_notable": "『行刑前最后一餐』题材全球罕见，65 万浏览验证共情型猎奇题材的传播力",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无数据",
+      "gi_summary": null
+     },
+     "game_ref": "最後の食事を"
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "TheGamer · 评测",
+     "tags": [
+      "生存",
+      "1.0转正",
+      "Steam"
+     ],
+     "featured": true,
+     "title": "《英灵神殿》Valheim 1.0 正式版发售：五年抢先体验后转正，PCU 冲回 30.8 万",
+     "en_title": "Valheim 1.0 Review: A Beautiful, Enduring Survival Classic",
+     "full_text": "Valheim 1.0 Review: A Beautiful, Enduring Survival Classic https://t.co/zF8OKDHWoO https://t.co/CCM01ZwYz8",
+     "author": "thegamerwebsite",
+     "date": "2026-09-13",
+     "likes": 1,
+     "views": 773,
+     "link": "https://x.com/thegamerwebsite/status/2098985070862139541",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSEXzHoXAAUHJvr.jpg"
+     },
+     "summary": "Iron Gate 的维京生存游戏《Valheim》于 9 月 9 日结束五年多抢先体验，正式发布 1.0 版本。SteamDB 数据显示 1.0 发售日当天峰值在线冲回 308,477 人（历史峰值 502,387 为 2021 年 EA 期创下），当前 84% 好评率、评价总数超 46.3 万。",
+     "analysis": "",
+     "recommendation": "《英灵神殿》五年EA后1.0转正：发售日PCU冲回30.8万，46万评价84%好评——独游长线运营标杆",
+     "enrichment": {
+      "game_name": "Valheim",
+      "genre": "生存 / 合作 / 开放世界",
+      "developer": "Iron Gate AB（瑞典，5 人核心团队起步）",
+      "platforms": [
+       "Steam（Windows / Mac / Linux）"
+      ],
+      "price": "$29.99（国区 ¥89）",
+      "release_date": "已发售 · 2026年9月9日（1.0）",
+      "steam_rating": "84% 好评（46.3 万条评价）",
+      "steam_url": "https://store.steampowered.com/app/892970/Valheim/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/1888731b59362fca6c026cdbafa3dfffd45c3146/header_alt_assets_6.jpg?t=1789121975",
+      "youtube_video": null,
+      "description": "【核心玩法】1-10 人合作的维京神话生存游戏：在程序生成的『死后世界』中采集、建造、探险，击败各神话领域的 Boss 以取悦奥丁。核心循环是『森林→沼泽→雪山→平原』的装备阶梯，以 Boss 战为节点逐层解锁科技，建造系统自由度极高，长船航海与地形改造是标志性体验。\n\n【美术与氛围】低多边形角色 + 高精度光影与天气系统的组合，以极低的性能成本营造出顶级氛围感，成为后来大量生存游戏模仿的对象。\n\n【对标定位】介于《我的世界》的自由建造与《雾锁王国》的战斗手感之间，合作生存品类的长青标杆。\n\n【优势】5 人团队做出千万级销量的内容密度；1.0 版本补完全部神话领域，完成度获得媒体一致好评（TheGamer 评价其为『美丽而持久的生存经典』）。\n【不足】战斗系统偏朴素；84% 好评中差评集中于优化与联机稳定性。\n\n【综合评价】独立游戏史上最成功的长线运营案例之一：五年 EA、八个大版本、零氪金，1.0 转正仍能冲回 30 万同时在线。",
+      "why_notable": "五年 EA 转 1.0 仍冲回 30.8 万 PCU，验证『慢工出细活』的长线独游模型",
+      "pcu": "308,477（1.0 发售日 2026-09-09）；历史峰值 502,387（2021 年 EA 期）",
+      "current_players": "~181,593",
+      "estimated_sales": "EA 期全球销量已超 1000 万份（2022 年公开数据）",
+      "gi_summary": "维京神话合作生存长青款，Iron Gate 独立开发、Coffee Stain 发行，Steam 国区 ¥89"
+     },
+     "game_ref": "Valheim"
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "電ファミニコゲーマー · 媒体报道",
+     "tags": [
+      "派对游戏",
+      "物理",
+      "愿望单开放"
+     ],
+     "title": "《Knight's Party》Steam 页面公开：骑士玩命冲关的混沌派对游戏",
+     "en_title": "騎士に扮して危険な競技に挑むカオスなパーティーゲーム『Knight's Party』Steamストアページ公開",
+     "full_text": "騎士に扮して危険な競技に挑むカオスなパーティーゲーム『Knight's Party』Steamストアページ公開。“命”がテンポよく吹き飛びまくる\nhttps://t.co/wtbXrsdPP8\n\n大砲、投石機、酒場での給仕（※爆発する）、ギロチンレースなどの種目が登場。ここに騎士道精神はない。敵の身を鎧ではなく棺に収めよう https://t.co/7BLWjsJEFO",
+     "author": "denfaminicogame",
+     "date": "2026-09-13",
+     "likes": 446,
+     "views": 141956,
+     "link": "https://x.com/denfaminicogame/status/2099005364184498335",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099005289806831616/pu/img/gGn6yeOMDRdhtygv.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2099005364184498335/video/1"
+     },
+     "summary": "Compact Core Games 开发的致命锦标赛派对游戏，Steam 商店页正式公开：大炮、投石机、酒馆端菜（会爆炸）、断头台竞速等『科目』轮番登场，骑士的『命』被节奏性吹飞——这里没有骑士道精神，敌人的遗骸请用棺材收纳。发售日期待定。",
+     "analysis": "",
+     "recommendation": "《Knight's Party》：大炮、投石机、爆炸端菜、断头台竞速——没有骑士精神的混沌派对游戏开放愿望单",
+     "enrichment": {
+      "game_name": "Knight's Party",
+      "genre": "派对 / 动作 / 物理",
+      "developer": "Compact Core Games",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5205270/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5205270/d46054f4f47f65425488f96eff802671b6a22abb/header.jpg?t=1789325636",
+      "youtube_video": null,
+      "description": "【核心玩法】一群想成为骑士的家伙参加致命锦标赛的多人派对游戏：大炮发射、投石机投掷、酒馆端菜盘（会爆炸的那种）、断头台竞速等恶趣味科目轮番上阵。死亡不是惩罚而是笑点——『命』被节奏性吹飞是游戏的核心演出，官方宣传语直言『这里没有骑士道精神，把敌人的遗体收进棺材就好』。\n\n【品类定位】Gang Beasts / Human Fall Flat 一脉的物理欢乐派对抗，但把中世纪骑士主题与『必死环节』结合得更彻底，节奏更快。\n\n【美术与氛围】中世纪欧洲市井风格 + 卡通暴力，与『派对游戏』的轻松调性形成反差萌。\n\n【优势】科目设计极具节目效果，天然适合直播与剪辑传播；Steam 页面已上线愿望单通道。\n【不足】派对游戏赛道极度拥挤，长线留存依赖持续更新科目。\n\n【综合评价】值得加入愿望单观察的派对黑马，发售日待定，若支持 8 人以上本地/在线混战将很有竞争力。",
+      "why_notable": "『必死科目+骑士IP恶搞』的差异化派对设计，14 万浏览显示直播传播潜力",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无数据",
+      "gi_summary": null
+     },
+     "game_ref": "Knight's Party"
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "Indie Game Joe · 游戏推介",
+     "tags": [
+      "FPS",
+      "塔防",
+      "Roguelite"
+     ],
+     "title": "《Walls Were Built to Fall》：同屏百万敌人的 FPS 守墙 Roguelite",
+     "en_title": "This FPS has you fighting up to 1 million enemies on screen at once",
+     "full_text": "This FPS has you fighting up to 1 million enemies on screen at once\n\n- Hordes climb over and break your walls\n- Enemies get stronger the longer you last\n- Upgrade walls, place traps and spells\n- Recruit archers and mages\n\nGame is Walls Were Built to Fall https://t.co/pFVN6i9Plb",
+     "author": "IndieGameJoe",
+     "date": "2026-09-12",
+     "likes": 1114,
+     "views": 57783,
+     "link": "https://x.com/IndieGameJoe/status/2098847379122208842",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2098846353925509120/img/ywSfDy35HE12N3RB.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2098847379122208842/video/1"
+     },
+     "summary": "Zoomy Cat Games 开发的大规模 FPS 塔防 Roguelite：尸潮会攀爬并击破你的城墙，撑得越久敌人越强；玩家可升级城墙、布置陷阱与法术、招募弓箭手和法师协防。Steam 页面已上线，预计 2027 年 Q2 发售。",
+     "analysis": "",
+     "recommendation": "《Walls Were Built to Fall》：同屏百万敌人爬墙破防的FPS守城Roguelite——预计2027年Q2发售",
+     "enrichment": {
+      "game_name": "Walls Were Built to Fall",
+      "genre": "FPS / 塔防 / Roguelite",
+      "developer": "Zoomy Cat Games",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": "2027年Q2（预计）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5182350/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5182350/b1a961533d8946c480c527542f13906c66499bfb/header.jpg?t=1788964818",
+      "youtube_video": null,
+      "description": "【核心玩法】第一人称视角的大规模守城 Roguelite：百万级尸潮会像蚂蚁一样攀爬并从内部击破城墙，防守方需要在城墙上机动作战，同时经营防御工事——升级墙体、布置陷阱与法术、招募弓箭手与法师 NPC 协防。『撑得越久敌人越强』的压力曲线 + Roguelite 局外构筑，形成 『守一波、强一圈』的循环。\n\n【卖点】同屏百万敌人的性能展示是最大记忆点（官方宣传主打 1 million enemies on screen），把『动态战场城墙破坏』与 FPS 射击手感结合，在 They Are Billions（俯视角）与 Hydroneer 系之间找到了第一人称空位。\n\n【风险】规模渲染与 AI 寻路的性能优化是大坎；发售窗口 2027 Q2 仍远。\n\n【综合评价】愿望单阶段值得关注的规模系 FPS 守城新秀，直播效果好，等 Demo 验证手感。",
+      "why_notable": "『百万敌人同屏+第一人称守城』的规模差异化，57K 浏览的垂类爆款潜质",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无数据",
+      "gi_summary": null
+     },
+     "game_ref": "Walls Were Built to Fall"
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "LimitedFourtune · 开发者自推",
+     "title": "《ODD ODDS》：单房间赌鬼 Roguelike，免费 Demo 已上线 Steam",
+     "en_title": "ギャンブル×ローグライク『ODD ODDS』Steamで無料体験版を公開中",
+     "full_text": "#スーパーゲ制デー\nギャンブル×ローグライク『ODD ODDS』🎰\nSteamで無料体験版を公開中！！\nプレイ映像を見て気になった方はぜひ遊んでください！！\n▼ 無料デモ＆ウィッシュリストはこちら ▼\nhttps://t.co/FqMFngSiW0 https://t.co/6R8ySIGLFX",
+     "author": "Limited4tune",
+     "date": "2026-09-12",
+     "likes": 1634,
+     "views": 140053,
+     "link": "https://x.com/Limited4tune/status/2098773020861231489",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2098772093756473345/img/Hm8QzElr58zumA5C.jpg",
+      "video_url": "https://x.com/Limited4tune/status/2098773020861231489/video/1"
+     },
+     "summary": "赌博 × Roguelike：为偿还巨债在一间房间里玩夹娃娃机赢硬币、在 ATM 取现、在赌桌升级装备。免费体验版已上线，正式版预计 2026 年 10 月发售。",
+     "recommendation": "《ODD ODDS》：为还债在单房间里夹娃娃+赌博的 Roguelike——免费Demo已上线，10月发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "ごだか｜奇妙なゲーム紹介 · 游戏推介",
+     "title": "《Double Dodgers》：边走路边玩手机游戏的『低头族模拟器』免费游戏",
+     "en_title": "歩きスマホする危険なゲーム",
+     "full_text": "歩きスマホする危険なゲーム\n\n家に帰りながらスマホゲームをする。\n夢中になりすぎると下水道に落ちる。\nマルチタスク能力と危険行為を体感できるフリーゲーム 。\n\n『Double Dodgers』 https://t.co/CsGo6jfxMo",
+     "author": "G_Godaka",
+     "date": "2026-09-13",
+     "likes": 262,
+     "views": 55199,
+     "link": "https://x.com/G_Godaka/status/2099015227413328072",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099011463138746368/pu/img/OUzTbdmSGyBwPozh.jpg",
+      "video_url": "https://x.com/G_Godaka/status/2099015227413328072/video/1"
+     },
+     "summary": "边走路边玩手机游戏的双线操作免费游戏：太专注手机就会掉进下水道——把『低头族』的日常生活危险做成了多任务挑战。",
+     "recommendation": "《Double Dodgers》：边回家边玩手机、太专注就掉下水道的免费双线操作游戏",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "かぼちゃ味噌汁 · 开发者自推",
+     "title": "《Night Portable》：致敬《夕闇通り探検隊》的 1991 年乡野恐怖游戏",
+     "en_title": "ホラーゲーム『Night Portable』の回想パート——舞台は1991年の田舎",
+     "full_text": "『夕闇通り探検隊』にも影響を受けて制作している、ホラーゲーム『Night Portable』の回想パートです。\n舞台は1991年の田舎。\n夜勤前に立ち寄るコンビニ、送迎バス、何気ない会話。\n懐かしい日常から、少しずつ怪異へ近づいていきます。\n#ナイポタ #ホラーゲーム https://t.co/DwChQVbG6f",
+     "author": "P_MisoStudio",
+     "date": "2026-09-13",
+     "likes": 1226,
+     "views": 38133,
+     "link": "https://x.com/P_MisoStudio/status/2099015596730163624",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2099015272829222912/img/wEJfIVLgCVI0exee.jpg",
+      "video_url": "https://x.com/P_MisoStudio/status/2099015596730163624/video/1"
+     },
+     "summary": "受《夕闇通り探検隊》启发的恐怖游戏：1991 年的乡下，夜班前的便利店、接送巴士与闲聊，从怀旧的日常一点点滑向怪异。将参展 10/31 ゲムダン14。",
+     "recommendation": "《Night Portable》：1991年乡野日常里慢慢渗出的怪异——致敬夕闇探検隊的日式恐怖新作",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Dimraeth · 开发者自推",
+     "title": "Mudtek Studios 新作发售倒计时 2 天：愿望单突破 40 万",
+     "en_title": "With only two days left we have hit 400k wishlists!",
+     "full_text": "With only two days left we have hit 400k wishlists! https://t.co/sD2cv9fF18",
+     "author": "MudtekStudios",
+     "date": "2026-09-13",
+     "likes": 138,
+     "views": 5329,
+     "link": "https://x.com/MudtekStudios/status/2099131577506623963",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2099131475182465032/img/jrAunNSW-aBBa3hw.jpg",
+      "video_url": "https://x.com/MudtekStudios/status/2099131577506623963/video/1"
+     },
+     "summary": "开发商 Mudtek Studios（作品名 Dimraeth）宣布距发售还有 2 天时愿望单突破 40 万——这一数字已进入 Steam 史上愿望单最多游戏之列，首周表现值得跟踪。",
+     "recommendation": "Mudtek Studios 新作发售倒计时2天愿望单破40万——进入Steam历史愿望单第一梯队",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Edd Coates · 开发者资源",
+     "tags": [
+      "UI/UX",
+      "免费资源",
+      "Game UI Database"
+     ],
+     "featured": true,
+     "title": "Game UI Database 2.0 将免费开放 200 页 UI/UX 教程：无广告无付费墙",
+     "en_title": "around 200 pages' worth of UI/UX tutorial resources are coming to the Game UI Database for FREE",
+     "full_text": "I'm pleased to announce that around 200 pages' worth of UI/UX tutorial resources are coming to the Game UI Database for FREE via a brand new blog. No ads. No paywalls. No email signups.\nHere's a preview of the first piece dropping next week, all about crafting cross-platform control schemes and layouts!\n\nOh, and I think it goes without saying, but this is an AI-free zone.",
+     "author": "EddCoates",
+     "date": "2026-09-13",
+     "likes": 798,
+     "views": 13435,
+     "link": "https://x.com/EddCoates/status/2099135885023302113",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSGgvwnXkAovYT7.jpg"
+     },
+     "summary": "Game UI Database 作者宣布约 200 页 UI/UX 教程将通过全新博客免费发布：无广告、无付费墙、无需邮箱注册。首篇聚焦跨平台操作方案与手柄/键鼠布局设计，下周上线。作者同时声明这是『AI-free zone』——全部内容人工撰写整理。",
+     "analysis": "Game UI Database 收录数万张游戏 UI 截图，是界面设计师的行业标准参考资料，2.0 免费教程等于把一门商业课程开源。『AI-free』声明本身是个值得注意的信号：在 AI 生成内容泛滥期，人工策展与实拍验证的资料库正在把『人的整理』变成差异化卖点。",
+     "recommendation": "Game UI Database 2.0：200页UI/UX教程全免费无付费墙，首篇讲跨平台手柄键位布局"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**BlizzCon 2026 重启暴雪 IP 矩阵**\n暴雪在 BlizzCon 2026 开幕式公布《星际争霸》系列时隔十年的新正作——开放世界射击玩法、2030 年春发售、Xbox 主机独占；《暗黑破坏神 5》确认 2029 年春发售，Netflix 剧集同步开发；《魔兽世界：Forever》经典+服官宣。Diablo 4 将于 9 月 15 日登陆 Switch 2（$70，含两个资料片）。\n\n**平台与资本结构性变动密集**\n在 550 亿美元收购完成两个月后，沙特 PIF 考虑将 EA 与旗下 Savvy Games（宝可梦 GO 母公司 Scopely 的母集团）合并成超级发行集团；Steam 成人内容评级持续收紧，《Nighthawks》因『仅限成人』标签在多国下架、移出搜索。\n\n**AI 游戏开发进入“完整产品”阶段**\n从 Astra 四天做出完整 3D 游戏 PaperRoute 的双工作流拆解，到果蝇全脑连接组玩 Doom，AI 内容生产的工程化方法论正在快速沉淀。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
