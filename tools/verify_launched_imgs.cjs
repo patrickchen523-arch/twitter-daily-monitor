@@ -16,8 +16,38 @@ for (const id of ['steamdb', 'bilibili', 'twitter', 'roblox']) {
   const board = day.boards.find(b => b.id === id);
   assert(board && board.items && board.items.length, `${id} 榜单为空`);
   if (id === 'twitter') assert(board.items.length >= 10, '推特热游不足10款');
+  if (id === 'steamdb') assert(board.items.length === 50, `steamdb 榜单应满50款，当前 ${board.items.length}`);
+  if (id === 'bilibili') assert(board.items.length >= 20, `bilibili 榜单不足20款，当前 ${board.items.length}`);
+  if (id === 'roblox') assert(board.items.length === 10, `roblox 榜单应满10款，当前 ${board.items.length}`);
   assert(board.items.every(it => !it.release || it.release <= date), `${id} 混入未来发售游戏`);
   assert(board.items.every(it => /^https?:\/\//.test(it.thumb || '')), `${id} 存在无效封面`);
+}
+// 档期连续性：历史断档仅告警，最新一期必须与上一期相邻（缺档=漏跑游戏关注页更新）
+{
+  const ds = manifest.dates;
+  const gaps = [];
+  for (let i = 1; i < ds.length; i++) {
+    const diffDays = (new Date(ds[i]) - new Date(ds[i - 1])) / 86400000;
+    if (diffDays !== 1) gaps.push(`${ds[i - 1]}→${ds[i]}(${diffDays}天)`);
+  }
+  if (gaps.length) console.log('warn: 历史日期断档:', gaps.join(', '));
+  const tailGap = (new Date(ds.at(-1)) - new Date(ds.at(-2))) / 86400000;
+  assert(tailGap === 1, `最新一期 ${ds.at(-1)} 与上一期 ${ds.at(-2)} 存在断档，请补建缺失日期`);
+}
+// roblox 榜档期必须与 roblox/ 目录最新周报一致（周报上传后必须跑 update_roblox_board 链）
+{
+  const rbxFiles = fs.readdirSync(path.join(root, 'roblox')).filter(f => /^roblox-\d{4}-\d{2}-\d{2}-to-\d{2}-\d{2}\.html$/.test(f)).sort();
+  if (rbxFiles.length) {
+    const dm = rbxFiles.at(-1).match(/^roblox-(\d{4})-(\d{2})-(\d{2})-to-(\d{2})-(\d{2})\.html$/);
+    const expectWeek = `${+dm[2]}.${+dm[3]} - ${+dm[4]}.${+dm[5]}`;
+    const robloxBoard = day.boards.find(b => b.id === 'roblox');
+    assert(robloxBoard.week === expectWeek, `roblox 榜档期(${robloxBoard.week})与最新周报(${expectWeek})不一致，请运行 node tools/update_roblox_board.cjs 及配套链`);
+  }
+}
+// 推特热游榜首必须新鲜（距本期 ≤3 天，防止榜单陈旧）
+{
+  const topDay = day.boards.find(b => b.id === 'twitter').items[0]?.day;
+  assert(topDay && (new Date(date) - new Date(topDay)) / 86400000 <= 3, `推特热游榜首日期 ${topDay} 距本期 ${date} 超3天，请重跑 node tools/import_twitter_board.js ${date}`);
 }
 assert(day.picks.length === 5, '今日推荐未生成5款');
 assert(new Set(day.picks.map(p => p.link)).size === 5, '今日推荐重复');

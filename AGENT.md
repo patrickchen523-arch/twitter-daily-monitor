@@ -7,14 +7,40 @@
 用户说"推送"时，一律同时推送到两个远程，缺一不可：
 
 ```bash
-git push gitlab main
-git push origin main
+git push origin main            # GitHub（公网备份）→ patrickchen523-arch.github.io/twitter-daily-monitor
+# GitLab（内网）→ xmonitor.doc.nie.netease.com，走 gitlab-sync 分支 cherry-pick：
+git checkout gitlab-sync
+git pull --ff-only              # 同事可能有新提交，先同步
+git cherry-pick <commit-sha>
+git push gitlab gitlab-sync:main
+git checkout main
 ```
 
-- `gitlab` → https://gitlab.nie.netease.com/xmonitor/xmonitor.doc.nie.netease.com.git —— 网站 xmonitor.doc.nie.netease.com 由 GitLab Pages 部署，不推 gitlab 网站不更新
-- `origin` → https://github.com/patrickchen523-arch/twitter-daily-monitor.git —— GitHub 备份
+- **禁止直接 `git push gitlab main`**：GitLab main 含同事维护的内部项目（`sdc-platform/` 等），公网仓库不含；直接推 main 会把内网内容冲掉或把内部目录同步到公网。
+- 推送前先 `git fetch gitlab && git fetch origin`，如远端有新提交先合并/rebase 再推，避免分叉。
 
-推送前先 `git fetch gitlab && git fetch origin`，如远端有新提交先合并再推，避免分叉。
+## 部署校验铁律（改了日报源就必须重建派生榜）
+
+GitLab Pages CI 第一步是 `node tools/verify_launched_imgs.cjs --data-only`：**任何对 `data/*.json` 的修改**（日报增改、B站榜清洗、overrides、tags 修复）都会使热游榜/今日推荐的哈希失配，pipeline 直接失败（9/14 已发生两次）。
+
+以下工作流在 commit/push **之前**必须追加重建：
+
+| 工作流 | 受影响日期 |
+| --- | --- |
+| x-daily-brief 每日日报 | 当日（若 launched 期已建）+ launched 最新一期 |
+| B站榜清洗 / overrides / 黑名单 | 所有被改动日期 + 最新一期 |
+| 热游榜重建本身 | boards 变了 picks 必须跟着重建 |
+| Roblox 周报录入 | upload_roblox_report.py 已自动串接 update_roblox_board 链 |
+
+每个受影响日期执行（顺序不能反）：
+
+```bash
+node tools/import_twitter_board.js <日期>   # 日期必填
+node tools/gen_picks.cjs <日期>
+node tools/verify_launched_imgs.cjs --data-only   # exit≠0 禁止 push
+```
+
+注意：CI 只校验最新一期（launched manifest.dates 末尾），历史日期失配不会挂 pipeline，但会让站点自相矛盾——所以历史日期也要重建。verify 的检查项见 §游戏关注页提交前验收（其中连续性/四榜数量/roblox档期/twitter新鲜度 已自动化进 verify）。
 
 ## B站榜清洗（长期规则，无需请示直接执行）
 

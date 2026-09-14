@@ -1,5 +1,5 @@
 // B站游戏区日榜导出 -> 上线日推 bilibili 板块(按关联游戏聚合)
-// 用法: node tools/import_bilibili_rank.js <bili-rank.json路径> [日期]
+// 用法: node tools/import_bilibili_rank.js <bili-rank.json路径> <日期>
 // 规则要点:
 //  - 每条视频须明确关联"一个具体游戏"才收录;新闻合集/多游戏盘点/非游戏内容(围棋/短剧/影视)剔除
 //  - 游戏名从视频标签提取: 词典命中 > 激励计划前缀 > 频次;公司名/UP主名/玩法词黑名单
@@ -7,8 +7,8 @@ const fs = require('fs');
 const path = require('path');
 
 const srcPath = process.argv[2];
-const date = process.argv[3] || '2026-08-05';
-if (!srcPath) { console.error('usage: node import_bilibili_rank.js <json> [date]'); process.exit(1); }
+const date = process.argv[3];
+if (!srcPath || !date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) { console.error('usage: node import_bilibili_rank.js <json> <YYYY-MM-DD>（日期必填，缺省会静默写错日期）'); process.exit(1); }
 
 const https = require('https');
 const sleep = ms => new Promise(r => setTimeout(r, ms));

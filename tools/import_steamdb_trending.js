@@ -1,12 +1,12 @@
 // SteamDB trendingfollowers 导出 -> 上线日推 steamdb 板块
-// 用法: node tools/import_steamdb_trending.js <导出json路径> [日期]
+// 用法: node tools/import_steamdb_trending.js <导出json路径> <日期>
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
 const srcPath = process.argv[2];
-const date = process.argv[3] || '2026-08-05';
-if (!srcPath) { console.error('usage: node import_steamdb_trending.js <json> [date]'); process.exit(1); }
+const date = process.argv[3];
+if (!srcPath || !date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) { console.error('usage: node import_steamdb_trending.js <json> <YYYY-MM-DD>（日期必填，缺省会静默写错日期）'); process.exit(1); }
 
 const launchedPath = path.join(__dirname, '..', 'data', 'launched', `${date}.json`);
 const src = JSON.parse(fs.readFileSync(srcPath, 'utf8'));
