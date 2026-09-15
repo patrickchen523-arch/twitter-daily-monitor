@@ -1,0 +1,579 @@
+{
+  "date": "2026-09-15",
+  "meta": {
+    "raw_count": 185,
+    "filtered_count": 173,
+    "selected_count": 12,
+    "crawl_time": "2026-09-15 10:00"
+  },
+  "lede": "暴雪 BlizzCon 三连发铺开射击/RPG/RTS 三条线；Steam Frame $1,059 起抽签预订；Roblox 官宣游戏可上架 Steam/Epic/GOG；Tony出海 实测 GPT-Live-1 实时生成游戏世界；99,999 辆车找一辆的 Where Did I Park? 播放 33 万。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 2,
+      "hook": "GPT-Live-1 实测：与游戏对话实时改环境、造物品——生成式世界已可 API 调用"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "Where Did I Park?：99,999 辆一模一样的车里找自己的车——排除法玩法，33万播放"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "852話 公开 GPT Image 2.5 当前最推荐出图指令\nMeng To 用 Astra 4 天做出多人卡坦岛游戏\nTony出海 实测 GPT-Live-1 对话式实时生成世界"
+    },
+    {
+      "id": "industry",
+      "text": "BlizzCon 三连发：StarCraft 射击/Diablo 5/WoW Forever\nSteam Frame $1,059 起抽签预订\nRoblox 游戏可打包上架 Steam/Epic/GOG\n索尼叫停 TLOU2 多人 mod"
+    },
+    {
+      "id": "indie",
+      "text": "Where Did I Park? 99,999 辆车找一辆\nEat not, Want not 免费恐怖游戏爆红\nEverlast: Undying Tale 10/28 EA\nDave the Diver 销量破 1000 万"
+    },
+    {
+      "id": "tools",
+      "text": "Rauch：verifiers + skills 是 AI Agent 时代的新框架"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · AI创作实测",
+          "tags": [
+            "GPT Image 2.5",
+            "AI绘图",
+            "提示词工程"
+          ],
+          "title": "GPT Image 2.5 实操热帖：日本创作者公开当前最推荐的出图指令",
+          "en_title": "GPT Image 2.5 最近の超オススメ指示はコレです",
+          "full_text": "GPT Image 2.5\n最近の超オススメ指示はコレです https://t.co/HKsaWQooIG",
+          "author": "8co28",
+          "date": "2026-09-15",
+          "likes": 25309,
+          "views": 3552810,
+          "link": "https://x.com/8co28/status/2099164852560539975",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSG6vhTaEAApO53.jpg"
+          },
+          "summary": "日本创作者 852話 分享 GPT Image 2.5 当前最推荐的一组出图指令，配图展示实际效果，当日获 2.5 万赞、355 万播放，成为 AI 创作圈传播最广的实操帖。",
+          "analysis": "图像生成进入「指令工程」精修期：模型能力趋同后，社区知识差体现在具体指令模板上。对游戏团队而言，这类公开模板可低成本引入概念图与宣传素材的前期流程。",
+          "recommendation": "GPT Image 2.5 实操帖：日本创作者公开当前最推荐出图指令——25K赞355万播放",
+          "featured": false
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "X · AI应用展示",
+          "tags": [
+            "Astra",
+            "AI做游戏",
+            "多人在线"
+          ],
+          "title": "独立开发者用 Astra 4 天做出多人卡坦岛游戏：免费试玩、含语音大厅",
+          "en_title": "I built a multiplayer Catan-inspired game entirely with Astra. It's free to play",
+          "full_text": "I built a multiplayer Catan-inspired game entirely with Astra. It's free to play:\n\nhttps://t.co/rYAUkxN7UD\n\nIt's mobile-friendly and has narration, guides, customizations, multiple expansions and a game lobby where anyone can join, chat, and use voice chat. It took 4 days to build and hundreds of dollars in tokens.\n\nBecoming a game dev in 2026 wasn't on my bingo card, but here we are. AI has advanced so much that you can finally make the game you've always dreamed of, even without a team.",
+          "author": "MengTo",
+          "date": "2026-09-15",
+          "likes": 1845,
+          "views": 153573,
+          "link": "https://x.com/MengTo/status/2099125215708234119",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099122355142537216/img/jLHascE9pPz_3BrC.jpg",
+            "video_url": "https://x.com/MengTo/status/2099125215708234119/video/1"
+          },
+          "summary": "设计师 Meng To 完全用 AI 工具 Astra 构建了一款卡坦岛灵感的多人在线游戏：支持移动端、旁白引导、自定义、多个扩展与可加入语音聊天的游戏大厅，耗时 4 天、花费数百美元 token，已免费开放。",
+          "analysis": "「个人+AI=多人在线游戏」的门槛正在塌缩：联网对战、大厅、聊天系统不再是团队专属。对轻量桌游/2D 品类，AI 全栈开发已可用作正式生产管线而非原型玩具。",
+          "recommendation": "Astra 4天做出可联机卡坦岛：移动端+语音大厅全都有，个人开发者单干成真",
+          "featured": false
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "X · 中文KOL实测",
+          "tags": [
+            "GPT-Live-1",
+            "生成式世界",
+            "AI NPC"
+          ],
+          "title": "Tony出海实测 GPT-Live-1：与游戏对话即可实时生成世界",
+          "en_title": "使用 GPT-Live-1 API 创建了一个游戏，与游戏对话，以实时生成世界",
+          "full_text": "这个好玩，而且开启一种全新的方式，\n非常适合搞自媒体直播。\n\n使用 GPT-Live-1 API 创建了一个游戏，与游戏对话，以实时生成世界。  改变环境，创建新物品、武器等。 \n\n这一切都是实时生成的。\n\nhttps://t.co/bDJcY93fIh",
+          "author": "iamtonyzhu",
+          "date": "2026-09-15",
+          "likes": 6,
+          "views": 1084,
+          "link": "https://x.com/iamtonyzhu/status/2099313640184873042",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098522211187601408/img/qY7poanbpfzbpm7W.jpg",
+            "video_url": "https://x.com/iamtonyzhu/status/2099313640184873042/video/1"
+          },
+          "summary": "Tony出海 演示基于 GPT-Live-1 API 的对话式世界生成游戏：与游戏对话即可实时改变环境、创建新物品与武器，一切内容实时生成，并指出该形态非常适合直播场景。",
+          "analysis": "生成式世界从演示走向可调用 API，AI NPC 与动态关卡的成本模型将被重写。对关注 UGC、AI 玩法融合与直播互动内容的团队，值得直接上手测一轮 API 边界。",
+          "recommendation": "GPT-Live-1 实测：与游戏对话实时改环境、造物品——生成式世界已可 API 调用",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Rock Paper Shotgun · BlizzCon 2026",
+          "tags": [
+            "暴雪",
+            "StarCraft",
+            "Diablo",
+            "魔兽世界",
+            "BlizzCon"
+          ],
+          "title": "BlizzCon 三连发：StarCraft 开放世界射击、Diablo 5、WoW Forever 同日公布",
+          "en_title": "A StarCraft open-world shooter that's \"Deadwood in space\", Diablo 5, and a new classic-ish World of Warcraft branch out this year",
+          "full_text": "A StarCraft open-world shooter that's \"Deadwood in space\", Diablo 5, and a new classic-ish World of Warcraft branch out this year make up Blizzard of reveals https://t.co/Mu3A1D2CLj",
+          "author": "rockpapershot",
+          "date": "2026-09-15",
+          "likes": 1,
+          "views": 3538,
+          "link": "https://x.com/rockpapershot/status/2099450537791938914",
+          "media": null,
+          "summary": "暴雪在 BlizzCon 2026 集中公布三线新作：StarCraft 开放世界第三人称射击（被形容为「太空版死木镇」，预计 2030 年，聚焦单人战役）、Diablo 5（宣布全面支持多人，但未透露与前作相似度）、以及 WoW Forever——带来二十年来首个全新 RTS 战役、11 月起新内容、冬季 hardcore 模式与手柄支持，部分内容当日可玩。多家报道：GameSpot、PC Gamer、Polygon。",
+          "analysis": "暴雪首次把旗舰 IP 同时铺向射击/RPG/RTS 三条线，且 StarCraft 射击明确「聚焦单人」——是对 GaaS 疲劳的公开回调。IP 运营从「一部接一部」转向组合拳，品线上直接对标全品类头部厂商，也把「经典 IP 单人复兴」的竞争重新点燃。",
+          "recommendation": "暴雪 BlizzCon 三连发：StarCraft 太空射击、Diablo 5、WoW Forever——RTS 战役二十年首更",
+          "featured": true,
+          "game_ref": null
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Digital Foundry · 硬件",
+          "tags": [
+            "Valve",
+            "Steam Frame",
+            "VR",
+            "硬件"
+          ],
+          "title": "Steam Frame 正式公布：$1,059 起、抽签预订开放，美英欧价格齐确认",
+          "en_title": "Steam Frame Costs More Than $1000: Price, Release Date, Reservation Queue Confirmed for US, UK and EU",
+          "full_text": "Steam Frame Costs More Than $1000: Price, Release Date, Reservation Queue Confirmed for US, UK and EU https://t.co/Hyei9a44aq",
+          "author": "digitalfoundry",
+          "date": "2026-09-15",
+          "likes": 11,
+          "views": 3173,
+          "link": "https://x.com/digitalfoundry/status/2099544975201427785",
+          "media": null,
+          "summary": "Valve VR 头显 Steam Frame 公布定价：美国 $1,059 起，英国与欧洲价格同步确认，预订采用抽签队列制。PC Gamer 三周上手称模块化设计（Arcturus 全彩 RGB 透视模块、Valve 热插拔电池背带）正是命名「Frame」的原因。多家报道：PC Gamer、SteamDB。",
+          "analysis": "Valve 放弃 Quest 式低价补贴路线，直接切入 $1,000+ 高端价位并押注模块化生态。对 VR 内容团队：装机量短期有限，但用户付费能力与 SteamVR 生态权重回升，高端 VR 品类重回牌桌。",
+          "recommendation": "Steam Frame 定价 $1,059 起：抽签预订开启，模块化设计可换电池与透视模组",
+          "featured": true,
+          "game_ref": null
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Rock Paper Shotgun · 平台政策",
+          "tags": [
+            "Roblox",
+            "平台政策",
+            "发行"
+          ],
+          "title": "Roblox 允许开发者将游戏打包为独立应用发行，或可登陆 Steam/Epic/GOG",
+          "en_title": "Roblox plan to grow their absurd gaming empire even further by letting devs release games as \"standalone apps\", potentially via Steam, Epic, and GOG",
+          "full_text": "Roblox plan to grow their absurd gaming empire even further by letting devs release games as \"standalone apps\", potentially via Steam, Epic, and GOG https://t.co/xMY16soNSH",
+          "author": "rockpapershot",
+          "date": "2026-09-15",
+          "likes": 1,
+          "views": 3325,
+          "link": "https://x.com/rockpapershot/status/2099464431289667726",
+          "media": null,
+          "summary": "Roblox 计划允许开发者把平台内游戏发布为「独立应用」，并可能通过 Steam、Epic、GOG 等第三方商店分发，进一步扩张其内容版图。",
+          "analysis": "UGC 平台的墙首次被官方打开：Roblox 内容反哺第三方商店，UGC 与传统发行的边界开始融合。对开发者是多一条收入路径；对 Valve/Epic 则迎来一个自带海量年轻用户的「内容供应商」，抽成与分成规则将是后续焦点。",
+          "recommendation": "Roblox 官宣游戏可打包独立应用上架 Steam/Epic/GOG：UGC 平台墙被官方拆掉",
+          "featured": true,
+          "game_ref": null
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "PC Gamer · IP维权",
+          "tags": [
+            "索尼",
+            "TLOU2",
+            "Mod",
+            "平台政策"
+          ],
+          "title": "索尼出手叫停《最后生还者2》多人 mod，项目正式终止",
+          "en_title": "That Last of Us 2 multiplayer mod everyone was looking forward to has been killed by Sony",
+          "full_text": "That Last of Us 2 multiplayer mod everyone was looking forward to has been killed by Sony https://t.co/7Ep3bnveBw",
+          "author": "pcgamer",
+          "date": "2026-09-15",
+          "likes": 13,
+          "views": 12072,
+          "link": "https://x.com/pcgamer/status/2099521904612868607",
+          "media": null,
+          "summary": "备受期待的 TLOU2 多人 mod 被索尼正式叫停，开发者称收到索尼信函后终止项目。Polygon、Rock Paper Shotgun、Niche Gamer、TheGamer 五家媒体同日报道。",
+          "analysis": "与微软对 mod 生态的宽容相反，索尼继续对第一方 IP 衍生内容零容忍。对 PC 移植与社区运营团队的启示：索尼系 IP 的 mod/长线社区内容空间将持续受限，相关预期应下调。",
+          "recommendation": "索尼正式叫停 TLOU2 多人 mod：五家媒体同日报道，第一方 IP 维权零容忍",
+          "featured": false,
+          "game_ref": "The Last of Us Part II Remastered",
+          "enrichment": {
+            "game_name": "The Last of Us Part II Remastered",
+            "genre": "动作冒险 / 生存恐怖",
+            "developer": "Naughty Dog（移植：Nixxes / Iron Galaxy）",
+            "platforms": [
+              "Steam",
+              "PS5"
+            ],
+            "price": "$49.99",
+            "release_date": "已发售 · 2025年4月3日",
+            "steam_rating": "Steam 好评约 3.4 万条",
+            "steam_url": "https://store.steampowered.com/app/2531310/The_Last_of_Us_Part_II_Remastered/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2531310/header.jpg?t=1750959180"
+          }
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Indie Game Joe · 推荐",
+          "tags": [
+            "探索",
+            "解谜",
+            "休闲"
+          ],
+          "title": "Where Did I Park?：独立开发，在 99,999 辆一模一样的车里找到你的那辆",
+          "en_title": "This indie dev is making a game where you must find your car in a car park of 99,999 identical cars",
+          "full_text": "This indie dev is making a game where you must find your car in a car park of 99,999 identical cars\n\n- Press your key to rule the wrong ones out\n- Sell what people left behind for upgrades\n- Buy drones to cover more of the car park\n\nGame is Where Did I Park? https://t.co/KDGxBSz5yb",
+          "author": "IndieGameJoe",
+          "date": "2026-09-15",
+          "likes": 1873,
+          "views": 330924,
+          "link": "https://x.com/IndieGameJoe/status/2098895441915945311",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2098895024520052736/img/jr-_loxRRc3dgrXz.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2098895441915945311/video/1"
+          },
+          "summary": "One More Zero Games 开发的找车游戏：停车场里停着 99,999 辆一模一样的车，按键快速排除错误车辆、变卖他人遗留物换升级资金、购买无人机扩大搜索范围。Steam 页已上线，即将推出。",
+          "recommendation": "Where Did I Park?：99,999 辆一模一样的车里找自己的车——排除法玩法，33万播放",
+          "featured": true,
+          "game_ref": "Where Did I Park?",
+          "enrichment": {
+            "game_name": "Where Did I Park?",
+            "genre": "休闲 / 探索 / 排除式解谜",
+            "developer": "One More Zero Games（独立开发）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "暂未发售（愿望单阶段）",
+            "steam_url": "https://store.steampowered.com/app/5195880/Where_Did_I_Park/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5195880/8fac1a190cf17fe46dee41e0d6940cbca0f12645/header.jpg?t=1789056575",
+            "youtube_video": null,
+            "description": "【核心玩法】在拥有 99,999 辆外观完全相同汽车的巨型停车场中找到你自己的那辆车。按键快速排除错误车辆，变卖他人遗留物品换取升级资金，购买无人机覆盖更大搜索范围——把「大海捞针」做成可成长的资源管理循环。\n【美术与氛围】3D 停车场场景，重复元素本身构成视觉奇观，短视频平台天然适配。\n【对标定位】「单一荒诞点子做到极致」路线，与找不同、扫地机器人等解压向玩法同谱系。\n【优势】一句话即可讲清的概念；排除+升级循环提供持续目标感；开发体量小、概念可验证。\n【不足】玩法纵深有限，长线留存存疑；荒诞概念易被快速仿制（参考「干し草の中の針」仿冒潮）。\n【综合】2026 年「荒诞极简概念游戏」的典型样本：一句话卖点+短视频传播+轻量开发，推文 33 万播放已验证传播模型，值得观察 Steam 愿望单转化。",
+            "why_notable": "一句话概念+短视频传播的教科书案例：推文 33 万播放验证「荒诞极简」路径可行"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "ごだか｜奇妙なゲーム紹介 · 推荐",
+          "tags": [
+            "恐怖",
+            "免费游戏",
+            "机制怪谈"
+          ],
+          "title": "Eat not, Want not：日本免费游戏，吃错即死、不吃饿死的厨师监视求生",
+          "en_title": "『Eat not, Want not』アレルゲンを食べると即死。食べ続けないと餓死してしまう",
+          "full_text": "アレルギーを食べると即死。\n\n食べ続けないと餓死してしまうプレイヤー。\n目の前のシェフは料理を作り続けてくれるが、隙を見てアレルギー食品を混入させてくる。シェフを監視しながら食べ続けるフリーゲーム。\n\n『Eat not, Want not』 https://t.co/dn4llCC9nn",
+          "author": "G_Godaka",
+          "date": "2026-09-15",
+          "likes": 4510,
+          "views": 323628,
+          "link": "https://x.com/G_Godaka/status/2099453126864728457",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099449402528260096/pu/img/yxlHIrAy5C3emqVF.jpg",
+            "video_url": "https://x.com/G_Godaka/status/2099453126864728457/video/1"
+          },
+          "summary": "免费恐怖游戏：玩家必须持续进食否则饿死，但吃下含过敏原的食物立即死亡；眼前的厨师不断供餐，也会趁隙掺入过敏原——边监视厨师边进食的极限博弈。推文获 4,510 赞、32 万播放。",
+          "recommendation": "Eat not, Want not：不吃饿死、吃错即死——盯紧厨师别让他下毒，免费可玩",
+          "featured": true,
+          "game_ref": "Eat not, Want not",
+          "enrichment": {
+            "game_name": "Eat not, Want not",
+            "genre": "恐怖 / 生存 / 免费游戏",
+            "developer": "日本独立开发者",
+            "platforms": [
+              "PC（免费发布，未上 Steam）"
+            ],
+            "price": "免费",
+            "release_date": null,
+            "steam_rating": "未上 Steam",
+            "steam_url": null,
+            "header_image": "https://pbs.twimg.com/ext_tw_video_thumb/2099449402528260096/pu/img/yxlHIrAy5C3emqVF.jpg",
+            "youtube_video": null,
+            "description": "【核心玩法】双向死亡时钟的生存恐怖：不吃东西会饿死，吃下含过敏原的食物立即死亡。眼前的厨师持续供餐，但会趁玩家不注意掺入过敏原——玩家必须一边进食一边监视厨师的动作与食材，形成「进食+监控」双任务博弈。\n【美术与氛围】日式免费游戏的极简风格，靠规则诡异感与演出制造压迫感，而非 Jump Scare。\n【对标定位】「规则怪谈」系免费游戏谱系，以机制本身制造恐惧。\n【优势】一句话规则即产生强张力；免费入口传播零门槛；直播效果极佳——主播被掺料的瞬间就是节目效果。\n【不足】内容体量小、通关时长短；未上 Steam，曝光完全依赖社媒转发。\n【综合】推文 32 万播放、4,510 赞已证明其传播力，是「机制即梗」免费游戏的最新范本，对做短篇幅恐怖体验的团队有直接参考价值。",
+            "why_notable": "免费游戏靠「双向死亡时钟」一个机制即成 32 万播放爆款，机制设计即营销"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "AUTOMATON · 报道",
+          "tags": [
+            "MMO",
+            "动作RPG",
+            "EA节点"
+          ],
+          "title": "Everlast: Undying Tale：100 人同服 MMO-Lite 动作 RPG，10 月 28 日开启 EA",
+          "en_title": "「100人でも遊べる」MMO風自由アクションRPG『Everlast: Undying Tale』10月28日早期アクセス配信へ",
+          "full_text": "「100人でも遊べる」MMO風自由アクションRPG『Everlast: Undying Tale』10月28日早期アクセス配信へ。戦闘も釣りもスキル育て放題、荒廃世界をみんなで再建\nhttps://t.co/9NRyk1Npms\n\nソロプレイで遊んだキャラクターで、フレンドのサーバーへ遊びに行くことも可能 https://t.co/fkP493fNNq",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-15",
+          "likes": 1482,
+          "views": 127952,
+          "link": "https://x.com/AUTOMATONJapan/status/2099366897615851958",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099366773950922752/img/CmO1q8P04xoyP-VU.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2099366897615851958/video/1"
+          },
+          "summary": "InSpades 开发的 MMO 风自由动作 RPG：支持百人同服，战斗、钓鱼等所有技能无上限养成，玩家协作重建荒废世界；单机游玩的角色可携带前往好友的服务器。10 月 28 日开启 Steam 早期访问。",
+          "recommendation": "Everlast: Undying Tale：100人同服自由动作RPG——技能无上限养成，10月28日EA",
+          "featured": false,
+          "game_ref": "Everlast: Undying Tale",
+          "enrichment": {
+            "game_name": "Everlast: Undying Tale",
+            "genre": "动作 RPG / MMO-Lite / 开放世界",
+            "developer": "InSpades",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2026年10月28日（EA）",
+            "steam_rating": "暂未发售",
+            "steam_url": "https://store.steampowered.com/app/3818450/Everlast_Undying_Tale/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3818450/2f283a0917a86e331fbce0a891bc3a0788e3c939/header.jpg?t=1789325778",
+            "youtube_video": null,
+            "description": "【核心玩法】支持百人同服的 MMO-Lite 自由动作 RPG：战斗、钓鱼、采集等所有技能无上限成长，玩家在荒废世界协同重建；单机游玩的角色可携带前往好友服务器，独狼与社交玩法兼顾。\n【美术与氛围】废土奇幻混合风格，3D 动作化呈现，世界重建是长线叙事主线。\n【对标定位】RuneScape/阿尔比恩式的「轻 MMO+自由养成」，面向无压力养成的 MMO 用户与生存建造玩家。\n【优势】技能无上限设计提供长线目标；单机/联机双模式降低入坑门槛；10 月 28 日 EA 节点明确，Steam 页已上线。\n【不足】EA 阶段内容量与服务器稳定性待验证；MMO-Lite 品类长期留存历史表现分化明显。\n【综合】轻量化 MMO 赛道的新样本，EA 首月的同服人数与留存数据值得跟踪，可先入愿望单观察。",
+            "why_notable": "百人同服 MMO-Lite 明确 10/28 EA 节点，轻 MMO 赛道稀缺的新样本"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "Niche Gamer · 市场数据",
+          "tags": [
+            "销量里程碑",
+            "模拟经营",
+            "MINTROCKET"
+          ],
+          "title": "Dave the Diver 销量突破 1000 万份：独游长线销售标杆再下一城",
+          "en_title": "Dave the Diver sells over 10 million copies",
+          "full_text": "Dave the Diver sells over 10 million copies: https://t.co/wXsy0erj9W https://t.co/d8ZKWoNjFF",
+          "author": "nichegamer",
+          "date": "2026-09-15",
+          "likes": 27,
+          "views": 3935,
+          "link": "https://x.com/nichegamer/status/2099212893111669005",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSHnAFsWcAE-JQ1.jpg"
+          },
+          "summary": "MINTROCKET 开发的潜水+寿司店经营游戏 Dave the Diver 官宣销量突破 1000 万份。Steam 好评约 14.3 万条，2023 年 6 月发售以来持续长线销售。",
+          "recommendation": "Dave the Diver 销量破 1000 万：白天下海晚上开店，Steam 14.3万条好评",
+          "featured": true,
+          "game_ref": "Dave the Diver",
+          "enrichment": {
+            "game_name": "Dave the Diver",
+            "genre": "冒险 / 模拟经营 / RPG",
+            "developer": "MINTROCKET",
+            "platforms": [
+              "Steam",
+              "Switch",
+              "PS",
+              "Xbox",
+              "手机"
+            ],
+            "price": "$19.99",
+            "release_date": "已发售 · 2023年6月28日",
+            "steam_rating": "Steam 好评约 14.3 万条",
+            "steam_url": "https://store.steampowered.com/app/1868140/DAVE_THE_DIVER/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/81bdb3bce15d27ca1b4554a642d91096e89be229/header.jpg?t=1786442860",
+            "youtube_video": null,
+            "description": "【核心玩法】白天潜入蓝洞捕鱼探险、晚上经营寿司店的双循环模拟 RPG：探险深度决定食材品质，经营规模反哺装备升级，两条曲线互相喂养。\n【美术与氛围】高密度像素风，角色演出喜剧感强。\n【对标定位】「玩法缝合」长线销售的代表：探险+经营+收集+手游化节奏控制。\n【优势】内容厚度与节奏打磨极成熟，多平台持续铺量，发售三年仍保持长尾销量。\n【不足】玩法拼接的后期重复感；付费内容更新节奏一般。\n【综合】2023 年现象级独游，本次官宣销量破 1000 万、Steam 好评 14.3 万条，是「玩法缝合+像素风」长线销售的标杆案例，其多平台长尾策略值得独游团队研究。",
+            "why_notable": "2023 年独游长尾销售标杆：3 年后销量破千万，验证玩法缝合品类的高天花板"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "電ファミニコゲーマー · 报道",
+          "tags": [
+            "派对游戏",
+            "社交推理",
+            "Playtest"
+          ],
+          "title": "Your Liar：装失败捣乱的「骗子」混入 4 人派对，9 月 18 日开测",
+          "en_title": "失敗を装って妨害する「嘘つき」が紛れ込んだ4人プレイの人狼系パーティーゲーム『Your Liar』",
+          "full_text": "失敗を装って妨害する「嘘つき」が紛れ込んだ4人プレイの人狼系パーティーゲーム『Your Liar』が面白そう。プレイテストが9月18日より開催\nhttps://t.co/YCydisWJDB\n\n他のプレイヤーたちは爆弾解除、エアホッケーなどのミニゲームをプレイして、わざと失敗している「嘘つき」が誰なのかを推理せよ https://t.co/UC40rGGPss",
+          "author": "denfaminicogame",
+          "date": "2026-09-15",
+          "likes": 2151,
+          "views": 272699,
+          "link": "https://x.com/denfaminicogame/status/2099395406614745227",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099395363895750656/pu/img/uUv-KzhGu_BO0qcu.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2099395406614745227/video/1"
+          },
+          "summary": "4 人社交推理派对游戏：玩家合作玩拆弹、空气曲棍球等小游戏，但队伍中混入一个「装失败的骗子」，找出谁是故意搞砸的人。9 月 18 日开 playtest，Steam 页显示 2026 年 9 月发售。",
+          "recommendation": "Your Liar：拆弹曲棍球里找「装失败的骗子」——4人社交推理，9/18开测",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Kingmakers 官方 · 开发动态",
+          "tags": [
+            "RTS/TPS",
+            "Playtest",
+            "中世纪"
+          ],
+          "title": "Kingmakers 发布玩法深度解析：RTS/TPS 切换、载具与指挥系统，playtest 开放申请",
+          "en_title": "KINGMAKERS GAMEPLAY DEEP DIVE IS HERE",
+          "full_text": "⚔️ KINGMAKERS GAMEPLAY DEEP DIVE IS HERE ⚔️\nMission, lore, weapons, resources, RTS/TPS switch, building, commanding, enemies, vehicles, upgrades &amp; our road ahead. \n\n🎮 Join the Playtest\n\"Request Access\" on Kingmakers Steam page, we're rolling out invites for a playtest soon! https://t.co/lzhBEe6R1w",
+          "author": "Kingmakers_Game",
+          "date": "2026-09-15",
+          "likes": 146,
+          "views": 2643,
+          "link": "https://x.com/Kingmakers_Game/status/2099520165486719457",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099490807980212224/img/tyh3QbG3B4pJfZod.jpg",
+            "video_url": "https://x.com/Kingmakers_Game/status/2099520165486719457/video/1"
+          },
+          "summary": "中世纪「带枪穿越」RTS/TPS 混合游戏 Kingmakers 公布玩法深度解析视频，覆盖任务、武器、资源、RTS/TPS 切换、建造与指挥系统；Steam 页面开放 playtest 申请，邀请即将滚动发放。",
+          "recommendation": "Kingmakers 玩法深度解析发布：RTS/TPS 切换+指挥系统，playtest 开放申请",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Niche Gamer · 测评",
+          "tags": [
+            "FPS",
+            "赛博朋克",
+            "已发售"
+          ],
+          "title": "SPRAWL Zero 获 Niche Gamer 高分测评：「00 年代经典射击的情书」",
+          "en_title": "[REVIEW] SPRAWL Zero is one of the greatest shooters ever, a love-letter to 00s classics!",
+          "full_text": "[REVIEW] SPRAWL Zero is one of the greatest shooters ever, a love-letter to 00s classics!\n\nhttps://t.co/zEd0Cbwb2C \n\nIn this meticulously produced cyberpunk shooter, everything oozes with love and quality. SPRAWL Zero is a throwback, diamondback, nickleback loveletter to the 00s~ https://t.co/69bboVWuN9",
+          "author": "nichegamer",
+          "date": "2026-09-15",
+          "likes": 228,
+          "views": 7820,
+          "link": "https://x.com/nichegamer/status/2099246980035662217",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099246943973068808/pu/img/YEAMx6FOU5o2gn3E.jpg",
+            "video_url": "https://x.com/nichegamer/status/2099246980035662217/video/1"
+          },
+          "summary": "赛博朋克 FPS SPRAWL zero（MAETH 开发，9 月 8 日发售，$19.99）获 Niche Gamer 高度评价：致敬 00 年代经典射击，重力手套+义体强化+40 余种武器，品质感与情怀兼备。",
+          "recommendation": "SPRAWL Zero：致敬00年代经典射击的赛博朋克FPS——Niche Gamer盛赞已发售",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "AUTOMATON · 市场现象",
+          "tags": [
+            "找物游戏",
+            "仿冒潮",
+            "独立开发"
+          ],
+          "title": "「干し草の中の針」发售前遭仿冒品大量跟进，本家挂出 ORIGINAL 标记对抗",
+          "en_title": "話題になった\"無謀\"探しものゲーム『干し草の中の針』、発売前から類似ゲームが大量発生中。本家は「ORIGINAL」表記で対抗",
+          "full_text": "話題になった\"無謀\"探しものゲーム『干し草の中の針』、発売前から類似ゲームが大量発生中。本家は「ORIGINAL」表記で対抗\nhttps://t.co/xCifOSK1wk https://t.co/PEoRZ73PQK",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-15",
+          "likes": 120,
+          "views": 59065,
+          "link": "https://x.com/AUTOMATONJapan/status/2099314601062183189",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSJDc_VakAA7vTi.jpg"
+          },
+          "summary": "话题作「干し草の中の針」（ haystack 中找针的「无谋」找物游戏）尚未发售，Steam 上已出现大量仿冒品；本家在商店页挂出「ORIGINAL」标记以示区分，与 Where Did I Park? 同属「极简找物」赛道。",
+          "recommendation": "干し草の中の針：未发售先遭仿冒潮，本家挂 ORIGINAL 标记自证",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "Indie Game Joe · 推荐",
+          "tags": [
+            "合作",
+            "派对",
+            "模拟"
+          ],
+          "title": "It's the Insides That Count：4 名外星人合作解剖一个人类，各守一个岗位",
+          "en_title": "You and up to 3 friends are aliens who have to operate on a human none of you has ever seen before",
+          "full_text": "You and up to 3 friends are aliens who have to operate on a human none of you has ever seen before\n\n- Each of you has one job\n- Scan, brew compounds, steady the body, hold the laser\n- Do not let the human be reborn\n\nGame is It's the Insides That Count https://t.co/7vR6qG9Xn7",
+          "author": "IndieGameJoe",
+          "date": "2026-09-15",
+          "likes": 715,
+          "views": 107225,
+          "link": "https://x.com/IndieGameJoe/status/2099259636830343375",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099256082514538497/img/iKiaOPQmbysSGRXW.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2099259636830343375/video/1"
+          },
+          "summary": "1-4 人合作游戏：玩家扮演从未见过人类的外星人团队，为一名人类做手术——扫描、调配化合物、固定身体、扶住激光各司其职，且「别让人类重生」。",
+          "recommendation": "It's the Insides That Count：外星人协作解剖人类——各守岗位别让人复活",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "X · 开发方法论",
+          "tags": [
+            "AI Agent",
+            "工具链",
+            "工程文化"
+          ],
+          "title": "Vercel CEO：验证器+技能是 AI Agent 时代的「新框架」",
+          "en_title": "Agents are only as good as the proof-checkers, compilers, type systems, and linters you give them.",
+          "full_text": "Agents are only as good as the proof-checkers, compilers, type systems, and linters you give them.\n\n𝚜𝚑𝚊𝚍𝚌𝚗/𝚕𝚒𝚗𝚝 helps agents stay on track with the rules of your design system.\n\nMeta: verifiers + skills are the new 'frameworks'!",
+          "author": "rauchg",
+          "date": "2026-09-15",
+          "likes": 115,
+          "views": 6973,
+          "link": "https://x.com/rauchg/status/2099540886409695346",
+          "media": null,
+          "summary": "Vercel CEO Guillermo Rauch 提出：AI Agent 的产出上限取决于你给它的验证器——编译器、类型系统与 linter；shadcn/lint 让 agent 遵守设计系统规则，并断言「verifiers + skills 是新框架」。",
+          "analysis": "对工程团队的直接含义：linter、类型约束、CI 的边际回报在 AI 时代被放大——工具链质量直接决定 AI 产出质量，「先修路再跑车」的投入优先级应上调。同日 Rauch 还宣布 Google Cloud Run 创造者 Steren 加入 Vercel 主导 Agent 计算产品线。",
+          "recommendation": "Rauch：Agent 产出上限=验证器上限——verifiers+skills 是新框架",
+          "featured": true
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**BlizzCon 2026 三连发：暴雪铺开射击/RPG/RTS 三条线**\nStarCraft 开放世界射击（2030、聚焦单人）、Diablo 5（全面支持多人）与 WoW Forever（二十年来首个全新 RTS 战役，部分内容今日可玩）同日公布，暴雪 IP 运营从串行转向组合拳。\n\n**Valve 硬件与 Roblox 平台墙同日松动**\nSteam Frame 定价 $1,059 起并开启抽签预订；Roblox 官宣游戏可打包独立应用上架 Steam/Epic/GOG，UGC 内容首次反哺传统发行渠道。\n\n**AI 产能叙事与独游市场两条快线**\nAstra 4 天做出多人卡坦岛、GPT-Live-1 实时生成游戏世界；Dave the Diver 销量破 1000 万，Where Did I Park? 用「99,999 辆车找一辆」收获 33 万播放。\n\n**平台政策一松一紧**\n索尼正式叫停 TLOU2 多人 mod（五家媒体同日报道）；Vercel CEO 提出「验证器+技能是 AI 时代新框架」。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
