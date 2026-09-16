@@ -1,0 +1,712 @@
+{
+  "date": "2026-09-16",
+  "meta": {
+    "raw_count": 246,
+    "filtered_count": 166,
+    "selected_count": 23,
+    "crawl_time": "2026-09-16 10:00"
+  },
+  "lede": "暴雪正面承认 Diablo 4 开放世界失误，Diablo 5 回归程序化大世界；Injustice 3 试玩名单泄露；WARDOGS 登顶 Steam 周销榜；潜艇'上班'模拟与烹饪 FPS 两款合作新游同日刷屏；可升降水体开发演示拿下 76 万浏览。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "暴雪承认 Diablo 4 开放世界失误——Diablo 5 回归程序化大地图，2029 年发售"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 3,
+      "hook": "可升降水体系统：河流湖泊随地形实时涨落，像编辑高度图一样拖拽——76 万浏览"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "GPT-6 Astra+Godot+Blender 全流程做游戏：触顶两次额度，成品超出预期"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "GPT-6 Astra+Godot+Blender 全流程产出完整游戏\nGPT 2.5 精灵图序列帧获开发者盛赞\nBox CEO 判断 agent 集群将放大自动化任务量"
+    },
+    {
+      "id": "industry",
+      "text": "Diablo 5 回归程序化大世界，暴雪承认 D4 失误\nInjustice 3 试玩招募帖泄露\nSteam 周销榜：WARDOGS 登顶\nSteam Frame 开卖，Valve 谈内存危机与定价"
+    },
+    {
+      "id": "indie",
+      "text": "Mayhem À La Carte：4 人合作烹饪 FPS\nS.O.N.A.R.：潜艇'上班'合作模拟 10.29 发售\nKingmakers 跳票一年后回归\nCanvas of Kings 作者展示可升降水体"
+    },
+    {
+      "id": "tools",
+      "text": "Epic 拆解 MetaHuman+Motion Matching 在星战新作的角色管线"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "个人开发者实测 · AI游戏开发",
+          "tags": [
+            "AI生成",
+            "Godot",
+            "Blender"
+          ],
+          "title": "GPT-6 Astra 一条龙做游戏：Godot + Blender 全流程 AI 产出，触顶两次额度后成品超出预期",
+          "en_title": "GPT-6 Astra + Godot + Blender — I hit the limit twice, but overall it turned out beautifully.",
+          "full_text": "GPT-6 Astra + Godot + Blender\n\nI hit the limit twice, but overall it turned out beautifully. https://t.co/sXBjSadPPQ",
+          "author": "eta",
+          "date": "2026-09-14",
+          "likes": 1155,
+          "views": 123765,
+          "link": "https://x.com/seftsaint/status/2099524314546700370",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099524117326417920/img/uy1qDIDbNhsOlZVo.jpg",
+            "video_url": "https://x.com/seftsaint/status/2099524314546700370/video/1"
+          },
+          "summary": "开发者用 GPT-6 Astra 结合 Godot 引擎与 Blender 建模完成一个完整游戏项目，期间两次触达订阅用量上限，最终成品质量超出自己预期，是当前 $200 档订阅制 AI 编程助手真实产能的直观样本。",
+          "analysis": "单人 + 顶级订阅额度做完整游戏正在成为常态参照系：AI 承担资产管线与代码脚手架，人的角色收敛为验收与方向把控。两次触顶也提示复杂项目的 token 消耗量级，值得中小团队纳入成本模型。",
+          "recommendation": "GPT-6 Astra+Godot+Blender 全流程做出完整游戏——触顶两次额度，成品超出预期",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "独立开发者实测 · AI资产生成",
+          "tags": [
+            "AI生成",
+            "像素美术",
+            "精灵图"
+          ],
+          "title": "GPT 2.5 图像模型生成精灵图序列帧获开发者盛赞：静态帧已过关，走路动画仍是短板",
+          "en_title": "Honestly, GPT 2.5 makes the best spritesheets I've ever seen from an image model.",
+          "full_text": "Honestly, GPT 2.5 makes the best spritesheets i've ever seen from an image model. I'm impressed with it. It still makes some silly mistakes tho - walk animations especially are difficult for it. Here it is next to the animation model i trained. https://t.co/lmc55GdoiY",
+          "author": "Todd Grilliot",
+          "date": "2026-09-14",
+          "likes": 1171,
+          "views": 114757,
+          "link": "https://x.com/GrilliotTodd/status/2099607156559642935",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/tweet_video_thumb/HSNNj47a4AAD-Fm.jpg",
+            "video_url": "https://x.com/GrilliotTodd/status/2099607156559642935/video/1"
+          },
+          "summary": "独立开发者实测 GPT 2.5 图像模型批量生成游戏精灵图（spritesheet），评价为所见图像模型中最佳，但走路循环动画仍常出错；作者同时展示自己训练的动画模型作对照。",
+          "analysis": "精灵图序列帧是 2D 游戏资产生产的高频痛点：图像模型攻下静态帧后，时序一致性成为下一道坎。通用大模型出图 + 自训小模型补动画的组合用法，值得资产管线团队关注。",
+          "recommendation": "GPT 2.5 生成精灵图序列帧获开发者盛赞——静态帧已过关，走路动画仍翻车"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "行业观点 · AI Agent",
+          "tags": [
+            "Agent",
+            "computer use",
+            "企业级"
+          ],
+          "title": "Box CEO：agent 集群 + computer use + 新形态硬件叠加，自动化任务量将远超当前预期",
+          "en_title": "We probably need to all update our sense of what's coming in terms of agentic workloads...",
+          "full_text": "We probably need to all update our sense of what’s coming in terms of agentic workloads with the combination of agent swarms, better computer use, the next wave of APIs and MCPs coming online, and new form factors like Muse or Instinct, vertical enterprise agents, background workflow agents, and other products that are emerging right now. \n\nWe’re going to throw agents at vastly more tasks in our professional and personal lives than we had initially imagined. The kind of information that agents will go out and find for us and do work for us in the background is going to be 100X more volume than what we can imagine previously prompting in a single session. \n\nYou’re going to have agents go out and surgically recruit talent for you 24/7, look for every signal in your customer’s business for when to pitch them, process every single transcript and conversation for product insights, review every line of code written for security issues and bugs, brute force test your systems for issues, and 100s of other tasks.\n\nWe’re probably 1% of the way into the shape of what all these agents look like, where they get deployed from, how they get managed, how we budget for them, and so on. But it’s inevitably going to happen at a scale that wouldn’t have been fathomable before.",
+          "author": "Aaron Levie",
+          "date": "2026-09-15",
+          "likes": 634,
+          "views": 72951,
+          "link": "https://x.com/levie/status/2099739019517235618",
+          "media": null,
+          "summary": "Box CEO Aaron Levie 认为 agent 集群（swarms）、更强的 computer use、新一代 API/MCP，加上 Muse/Instinct 类新形态产品与企业级/后台工作流 agent 的出现，将使自动化任务规模远超此前想象。",
+          "analysis": "对游戏行业，云成本、QA 规模化测试、内容审核等任务量驱动的环节最先把 agent 集群用起来；算力与预算需要按 agent 并发量而非人头规划。",
+          "recommendation": "Box CEO 判断：agent 集群+computer use 叠加，自动化任务量将远超预期"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Polygon · BlizzCon 2026 专访",
+          "tags": [
+            "暴雪",
+            "ARPG",
+            "程序化生成"
+          ],
+          "title": "暴雪详解 Diablo 5：正面承认 Diablo 4 静态开放世界是失误，回归程序化生成大世界",
+          "en_title": "Blizzard Explains How Diablo 5 Avoids Diablo 4's Open-World Problem",
+          "full_text": "Blizzard Explains How Diablo 5 Avoids Diablo 4's Open-World Problem https://t.co/s2QQItZH1c https://t.co/NXV4IthTBS",
+          "author": "Polygon",
+          "date": "2026-09-15",
+          "likes": 300,
+          "views": 52891,
+          "link": "https://x.com/Polygon/status/2099649457553834302",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSN0DV5WkAAno8D.jpg"
+          },
+          "summary": "BlizzCon 2026 场间采访中，执行制作人 Matt Zitterman 承认 Diablo 4 静态开放世界的探索是'一次性'体验；Diablo 5 将回归 D2/D3 式程序化大地图与地城，以商队为移动基地，Overlay 地图首日就位，游戏定档 2029 年。",
+          "analysis": "ARPG 标杆公开纠错、回到程序化生成，等于给'开放世界=静态大地图'的行业惯性踩了刹车，暗黑like 的重复可探索性重新成为核心指标。数据侧佐证回流效应：Diablo 4 昨日 PCU 冲上 2.67 万，为近 30 天首次站上 2 万线。多家报道：GameSpot、Eurogamer 同期发布 D5 设计细节。",
+          "recommendation": "暴雪承认 Diablo 4 开放世界失误，Diablo 5 回归程序化大地图——2029 年发售",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 独家线索梳理",
+          "tags": [
+            "NetherRealm",
+            "格斗游戏",
+            "泄露"
+          ],
+          "title": "Injustice 3 曝光：加州 NDA 试玩招募帖泄露，3A 2D 格斗直指 NetherRealm 新作",
+          "en_title": "Injustice 3 is seemingly the mysterious, unannounced fighting game that's been hosting playtests in California",
+          "full_text": "Injustice 3 is seemingly the mysterious, unannounced fighting game that's been hosting playtests in California\n\nhttps://t.co/XT7ZsdL0WM https://t.co/bJndGPTuwA",
+          "author": "Eurogamer",
+          "date": "2026-09-15",
+          "likes": 5040,
+          "views": 302563,
+          "link": "https://x.com/eurogamer/status/2099779236815053268",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSPpqzRbkAADRGZ.jpg"
+          },
+          "summary": "NDA 测试平台 Good Gamer Group 一条已删除的招募帖被 EventHubs/Kotaku 扒出：在加州 Culver City 招募'3A 格斗游戏/主流 2D 格斗游戏'线下试玩，地点与 Warner Bros. Games、NetherRealm 总部重合；结合 Ed Boon 五月表态与配音演员口风，多方证据指向 Injustice 3，TGA 公布、2027 年发售最合理。",
+          "analysis": "格斗游戏进入老 IP 复活周期：MK1 之后 NetherRealm 按 4 年周期滚动，若 Injustice 3 于 12 月 TGA 公布，将与卡普空、Arc System Works 新作撞期，2027 年格斗品类竞争格局值得提前关注。多家报道：EventHubs、Kotaku。",
+          "recommendation": "Injustice 3 试玩招募帖泄露：3A 2D 格斗+Culver City 选址直指 NetherRealm——30 万浏览",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "SteamDB · 周销榜",
+          "tags": [
+            "Steam",
+            "周销榜",
+            "市场数据"
+          ],
+          "title": "Steam 周销榜：WARDOGS 登顶，Halloween: The Game、Bodycam、Dawnwalker 进前五",
+          "en_title": "#SteamTopSellers for week of 8 Sep — 15 September 2026 (No F2P): #1 - WARDOGS / #2 - Halloween: The Game / #3 - Bodycam / #4 - The Blood of Dawnwalker / #5 - How to Fish",
+          "full_text": "#SteamTopSellers for week of 8 Sep — 15 September 2026 (No F2P):\n\n#1 - WARDOGS\n#2 - Halloween: The Game\n#3 - Bodycam\n#4 - The Blood of Dawnwalker\n#5 - How to Fish\n\nhttps://t.co/Jt7yXxavAY",
+          "author": "SteamDB",
+          "date": "2026-09-15",
+          "likes": 30,
+          "views": 4290,
+          "link": "https://x.com/SteamDB/status/2099853342558036329",
+          "media": null,
+          "summary": "SteamDB 周销榜（9 月 8–15 日，不含 F2P）：WARDOGS 第一，Halloween: The Game 第二，Bodycam 第三，The Blood of Dawnwalker 第四，How to Fish 第五。WARDOGS（Team17，9 月 10 日发售）为本周最猛新品。",
+          "analysis": "结合有数 GI 数据：WARDOGS 周中 PCU 峰值 42.8 万、当前仍稳居热玩榜第 3（34 万在线）；老游戏侧 Valheim 借更新回到 23 万 PCU，Diablo 4 回流至 2.67 万。新品集中爆发叠加老游戏更新回流，是本周 Steam 大盘的两条主线。",
+          "recommendation": "Steam 周销榜：WARDOGS 登顶——发售一周 PCU 峰值 42.8 万，周销+在线双榜统治",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "PC Gamer · Valve 专访",
+          "tags": [
+            "Valve",
+            "VR",
+            "内存危机"
+          ],
+          "title": "Valve：Steam Frame 开卖首日复盘——本想定更低售价，内存危机把价格顶了上来",
+          "en_title": "Valve on the Steam Frame: 'I wish we could have shipped it at the price that we were at last year'",
+          "full_text": "Valve on the Steam Frame: 'I wish we could have shipped it at the price that we were at last year' https://t.co/d49lqNiPUj",
+          "author": "PC Gamer",
+          "date": "2026-09-14",
+          "likes": 71,
+          "views": 27665,
+          "link": "https://x.com/pcgamer/status/2099551774210470389",
+          "media": null,
+          "summary": "Steam Frame 昨日正式开卖：$1,059/£889（256GB）、$1,299/£1,089（1TB）。Valve 硬件工程师 Joy Lyons 坦言原定目标价更低，是 AI 驱动的内存涨价潮抬高了成本；Steam Machine 已被称为'内存危机最大受害者'。Steam Deck 2 计划暂不受影响。",
+          "analysis": "AI 挤占内存产能→消费级硬件涨价的传导链已在 Valve 身上实锤。首批评测（Eurogamer、Digital Foundry、RPS）结论一致：作为 PC-VR 串流设备优秀，一体机模式尚不成熟——硬件叙事从'发布'转入'能卖多少'阶段。多家报道：Eurogamer、Digital Foundry、RPS。",
+          "recommendation": "Steam Frame 开卖：Valve 承认本想更便宜，内存危机把 $1,059 的价格顶了上来"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "電ファミニコゲーマー · 日本游戏媒体",
+          "tags": [
+            "合作FPS",
+            "烹饪",
+            "4人合作"
+          ],
+          "title": "《黑街厨神》Mayhem À La Carte：一手食材一手枪的 4 人合作烹饪 FPS（INGAME STUDIOS 开发、505 Games 发行），2027 年发售",
+          "en_title": "メイヘム・アラカルト / Mayhem À La Carte",
+          "full_text": "【最大4人協力】料理の片手間に銃で敵を撃退するゲーム『メイヘム・アラカルト』がめっちゃ忙しそう。左手に食材、右手に銃を持ち戦場と化したレストランで戦う\nhttps://t.co/r5PT8lgHcd\n\nカオスなキッチンを守るため、食材や包丁を投げつけることも。チームで協力してあらゆるものを武器にする https://t.co/STq44tnOvA",
+          "author": "電ファミニコゲーマー",
+          "date": "2026-09-15",
+          "likes": 1265,
+          "views": 173616,
+          "link": "https://x.com/denfaminicogame/status/2099776252228100475",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099776209110601729/pu/img/W2ggJsr2gkAjX8Qo.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2099776252228100475/video/1"
+          },
+          "summary": "電ファミ报道：4 人合作第一人称烹饪射击，左手持食材、右手持枪，在被围攻成战场的餐厅里出菜御敌，食材刀具皆可投掷；Steam 页面确认 INGAME STUDIOS 开发、505 Games 发行，计划 2027 年发售。",
+          "analysis": "",
+          "recommendation": "Mayhem À La Carte：左手食材右手开火，4 人合作守厨房——17 万浏览",
+          "featured": true,
+          "game_ref": "Mayhem À La Carte",
+          "enrichment": {
+            "game_name": "Mayhem À La Carte",
+            "genre": "合作 FPS / 烹饪 / 动作",
+            "developer": "INGAME STUDIOS",
+            "platforms": [
+              "Windows",
+              "Mac",
+              "Linux"
+            ],
+            "price": "未公布",
+            "release_date": "2027年",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4631740/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4631740/3da9da0b0a4eec301837d97fd529e71721dee2ff/header.jpg?t=1789060426",
+            "youtube_video": null,
+            "description": "【核心玩法】4 人合作第一人称'烹饪+射击'混合玩法：左手持食材、右手持枪，在订单驱动的后厨里边做菜边击退围攻餐厅的敌人；食材、刀具皆可投掷，全队协作把战场化的厨房守住、赶在崩盘前出菜。\n【对标定位】Overcooked 的合作压力曲线 × FPS 操作层，Steam 中文定名《黑街厨神》，题材包装为黑街厨房，'一眼看懂'的反差感是传播核心。\n【优势】双动作线并行的天然喜剧张力；分工明确（备菜/出菜/火力压制）适合主播组队传播；505 Games 发行，Steam 页面自带简体中文。\n【不足】INGAME STUDIOS 此前作品声量有限；2027 年才发售、无精确日期；'烹饪 FPS'新鲜感能否撑长线仍待验证。\n【综合】本轮热度来自日本媒体（電ファミ 17 万浏览）与 KOL clemmygames 双渠道，属于题材创新型选手，上线前关注 Wishlist 转化与试玩反馈。",
+            "why_notable": "Overcooked×FPS 的题材杂交一眼可懂，日媒+KOL 双渠道合力推上 17 万浏览",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "AUTOMATON · 日本游戏媒体",
+          "tags": [
+            "合作模拟",
+            "潜艇",
+            "喜剧"
+          ],
+          "title": "S.O.N.A.R. 潜艇菜鸟团：1-4 人合作'激务'潜艇模拟（Abylight Barcelona 开发），10 月 29 日发售",
+          "en_title": "S.O.N.A.R. - Submarine Operators Not Actually Ready",
+          "full_text": "協力マルチ潜水艦「激務」シム『S.O.N.A.R. - 潜水艦クルー、準備不足！』は“海軍協力”リアル艦内で、船酔い・浸水・仲間割れの大騒ぎ。10月30日配信へ\nhttps://t.co/oSYMqA5Dyq https://t.co/ST2gP2596E",
+          "author": "AUTOMATON（オートマトン）",
+          "date": "2026-09-15",
+          "likes": 2876,
+          "views": 247322,
+          "link": "https://x.com/AUTOMATONJapan/status/2099687809925931313",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSOXAdOawAAqRrB.jpg"
+          },
+          "summary": "AUTOMATON 报道：西班牙 Abylight Barcelona 开发的 1-4 人在线合作潜艇模拟，声呐、驾驶、战斗、维修全靠分工，晕船、进水、内讧齐飞，10 月 29 日登陆 Steam。",
+          "analysis": "",
+          "recommendation": "S.O.N.A.R.：4 人潜艇'上班式'合作模拟——晕船进水内讧，10 月 29 日发售",
+          "featured": true,
+          "game_ref": "S.O.N.A.R.",
+          "enrichment": {
+            "game_name": "S.O.N.A.R. - Submarine Operators Not Actually Ready",
+            "genre": "合作模拟 / 潜艇 / 冒险",
+            "developer": "Abylight Barcelona",
+            "platforms": [
+              "Windows",
+              "Mac",
+              "Linux"
+            ],
+            "price": "未公布",
+            "release_date": "2026年10月29日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4096830/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4096830/3577b1af8f5e0b9d3a3a51a90784443f6bbdd784/header_schinese.jpg?t=1789461643",
+            "youtube_video": null,
+            "description": "【核心玩法】1-4 人在线合作潜艇模拟：声呐探测、驾驶、武器、维修分岗协作，'慌乱不可避免，沉没往往只差一次按错按钮'——官方 Slogan 即玩法。\n【对标定位】把 Barotrauma 式硬核分工做减法，再包上'海军上班模拟'的喜剧外壳：晕船、进水、内讧齐飞。\n【优势】岗位互补设计天然适合组队直播传播；Abylight Barcelona 有成熟的多平台开发与自发行经验（Abylight Studios）；10 月 29 日发售节点清晰。\n【不足】喜剧话术之下拟真深度有限，硬核潜艇模拟爱好者可能嫌浅；发售窗口撞上秋季新品潮，需要口碑先行。\n【综合】AUTOMATON 一篇报道带来 24.7 万浏览，日区传播强劲；若发售前 Demo 表现稳定，有望复制 Barotrauma 式的长尾合作生态。",
+            "why_notable": "分工喜剧型合作模拟的又一爆款候选，AUTOMATON 一篇报道即 24.7 万浏览",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "PC Gamer · 独家回归报道",
+          "tags": [
+            "动作策略",
+            "愿望单常青树",
+            "跳票回归"
+          ],
+          "title": "Kingmakers 跳票一年首度回归：长实机演示 + 新测试报名开启（Redemption Road 开发、tinyBuild 发行），仍无发售日",
+          "en_title": "After nearly a year of silence, Kingmakers resurfaces with extended gameplay video and new playtest",
+          "full_text": "After nearly a year of silence, Kingmakers resurfaces with extended gameplay video and new playtest https://t.co/1yU0uu5QWD",
+          "author": "PC Gamer",
+          "date": "2026-09-14",
+          "likes": 172,
+          "views": 39422,
+          "link": "https://x.com/pcgamer/status/2099602459853504971",
+          "media": null,
+          "summary": "距原定上线前 5 天临门跳票已近一年，Redemption Road 首次打破沉默：发布深度实机演示（现代军火 + 千人军队模拟 + 据点建设三线并行），同时开放新测试报名，仍未公布新发售日。",
+          "analysis": "",
+          "recommendation": "Kingmakers 跳票一年首度回归：实机演示+测试报名，仍无发售日",
+          "game_ref": "Kingmakers",
+          "enrichment": {
+            "game_name": "Kingmakers",
+            "genre": "动作 / 策略 / 沙盒",
+            "developer": "Redemption Road",
+            "platforms": [
+              "Windows",
+              "Mac",
+              "Linux"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/2109770/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2109770/header.jpg?t=1789419349",
+            "youtube_video": null,
+            "description": "【核心玩法】携带现代军火穿越到 1400 年的威尔士，助 Owain Glyndŵr 起义：第一/三人称射击 + 千人级实时军队模拟 + 据点建设与资源管理三线并行，支持单人与合作模式。\n【对标定位】'中世纪全面战争 × 现代武器无双'，独游愿望单常青树，'枪打骑士'的核心画面反差自带传播力。\n【优势】本次深度实机演示展示的系统完成度明显提升（军队指挥、基建、资源层齐备）；tinyBuild 发行提供宣发保障；新测试已开放报名。\n【不足】2024 年以来多次跳票，距原定上线仅 5 天临门跳票重创玩家信任；新发售日至今空白；建设层深度尚未经玩家验证。\n【综合】一年沉默后回归是关键的信任修复节点，playtest 反馈与 Wishlist 回升是接下来最值得跟踪的两个指标。",
+            "why_notable": "独游愿望单常青树结束一年沉默，信任修复进度条重新开始",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "个人开发者 · 功能演示",
+          "tags": [
+            "地图工具",
+            "跑团",
+            "物理模拟"
+          ],
+          "title": "独立开发者展示可升降水体系统（Canvas of Kings 作者新作功能）：河流湖泊随地形实时涨落——76 万浏览",
+          "en_title": "I have been working on a way to raise (and lower) water.",
+          "full_text": "I have been working on a way to raise (and lower) water. https://t.co/Id1Bce7R9Q",
+          "author": "Canvas of Kings | Might of Merchants",
+          "date": "2026-09-14",
+          "likes": 4116,
+          "views": 764064,
+          "link": "https://x.com/MightofMe/status/2099483049734070516",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099241234875494400/img/FKymRWUAxFvrac8q.jpg",
+            "video_url": "https://x.com/MightofMe/status/2099483049734070516/video/1"
+          },
+          "summary": "独立开发者 Hannes Breuer（Canvas of Kings / Might of Merchants 作者）展示可升降水体系统：水位随地形实时涨落，河流湖泊像高度图一样可拖拽编辑；其本体 Canvas of Kings 是已抢先体验两年多的极简地图绘制工具（¥72，818 评测）。",
+          "analysis": "",
+          "recommendation": "可升降水体系统实机演示——Canvas of Kings 作者新功能，76 万浏览刷屏",
+          "featured": true,
+          "game_ref": "Canvas of Kings",
+          "enrichment": {
+            "game_name": "Canvas of Kings",
+            "genre": "地图绘制工具 / 跑团辅助 / 极简风",
+            "developer": "Hannes Breuer（个人开发者）",
+            "platforms": [
+              "Windows",
+              "Mac",
+              "Linux"
+            ],
+            "price": "¥72.00",
+            "release_date": "已发售 · 2023年8月3日（抢先体验）",
+            "steam_rating": "818 条评测",
+            "steam_url": "https://store.steampowered.com/app/2498570/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2498570/header.jpg?t=1774602500",
+            "youtube_video": null,
+            "description": "【本体定位】Canvas of Kings 是一款极简主义地图绘制工具（2023 年 8 月起抢先体验，¥72，818 条评测）：聚焦随机生成与自动铺陈要素，在用户自定义的交互式路径、地块与房间上快速产出跑团风格地图，支持 Windows/Mac/Linux。\n【本次热点的功能】作者展示'可升降水体'：水位随地形实时涨落，河流、湖泊、淹没区可以像编辑高度图一样直接拖拽——对跑团主持人与地图作者是刚需级体验改进。\n【优势】'一键生成+可手动调整'的哲学降低了跑团地图门槛；个人开发者 Hannes Breuer 长期稳定更新；一条功能演示视频拿下 76 万浏览、4100+ 赞。\n【不足】定位是工具而非游戏，受众天花板明确；极简美术爱憎分明，未必讨好所有跑团用户。\n【综合】一条 satisfying loop 演示视频把小众工具顶到大众视野，是开发者内容营销的教科书案例；同账号的另一项目 Might of Merchants（商队贸易游戏）值得同步关注。",
+            "why_notable": "一条水体演示视频 76 万浏览——小众工具靠 satisfying loop 出圈的教科书",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "818 条 Steam 评测（抢先体验两年）",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "電ファミニコゲーマー",
+          "tags": [
+            "新游参考"
+          ],
+          "title": "In Us：4 人合作'恶魔祓い'恐怖游戏 TGS2026 试玩出展，会后开启 Steam 封测",
+          "en_title": "『In Us』TGS2026で試遊出展へ",
+          "full_text": "最大4人プレイの“悪魔祓い”協力型ホラーゲーム『In Us』TGS2026で試遊出展へ\nhttps://t.co/OQuqOvGZXU \n\nペストマスクの「エクソシスト」となり、悪魔に取り憑かれた村で異変の元凶を追い詰めろ。イベント終了後Steamにてクローズドベータテストが実施予定 https://t.co/ppzdsIUHVv",
+          "author": "電ファミニコゲーマー",
+          "date": "2026-09-15",
+          "likes": 2007,
+          "views": 177306,
+          "link": "https://x.com/denfaminicogame/status/2099786812285943823",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099786753930661888/pu/img/fRY5OH4d4SD5breJ.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2099786812285943823/video/1"
+          },
+          "summary": "扮演瘟疫面具'驱魔师'，在恶魔附身的村庄里追查异变元凶；TGS2026 提供试玩，活动结束后于 Steam 开启封闭测试。",
+          "recommendation": "In Us：4 人合作驱魔恐怖——TGS 试玩+会后 Steam 封测",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "IndieGamesLibrary",
+          "tags": [
+            "新游参考"
+          ],
+          "title": "Soft Ruin：动量驱动的开放世界 3D 平台跳跃，探索巨大危险迷宫（支持联机）",
+          "en_title": "Soft Ruin is an open world 3D platformer...",
+          "full_text": "Soft Ruin is a open world 3D platformer where you explore a vast, strange, and dangerous labyrinth.\n\nA fluid momentum-based movement system\nPlay solo or with friends\nAn interconnected hand-crafted world to discover https://t.co/5BV15K4LII",
+          "author": "IndieGamesLibrary",
+          "date": "2026-09-14",
+          "likes": 2359,
+          "views": 46751,
+          "link": "https://x.com/IndieGamesLib/status/2099530846906491390",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099530629759021057/img/JoPd4-9iVvoe51MP.jpg",
+            "video_url": "https://x.com/IndieGamesLib/status/2099530846906491390/video/1"
+          },
+          "summary": "流动感十足的动量移动系统，可单人或与朋友一起探索互相连通的手工打造迷宫世界。",
+          "recommendation": "Soft Ruin：动量移动+开放世界迷宫的 3D 平台跳跃",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Indie Game Joe",
+          "tags": [
+            "新游参考"
+          ],
+          "title": "Hotel Is Hungry：末日酒店前台模拟——酒店本身是活的怪物，不喂它就吃客人",
+          "en_title": "The world ended, you got a job on reception, and the hotel itself is a living monster that needs feeding",
+          "full_text": "The world ended, you got a job on reception, and the hotel itself is a living monster that needs feeding\n\n- Check guests in and sort them into rooms\n- Leave a room dark and the hotel eats them\n- If a guest attacks, run for the lit bar\n\nGame is Hotel Is Hungry https://t.co/CGPxWfV2DD",
+          "author": "Indie Game Joe",
+          "date": "2026-09-14",
+          "likes": 855,
+          "views": 61492,
+          "link": "https://x.com/IndieGameJoe/status/2099551543313748393",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099550037566988288/img/Aa9PZjzupXOFBx_L.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2099551543313748393/video/1"
+          },
+          "summary": "给客人办理入住并分配房间；不点灯的房间酒店会把客人吃掉；客人暴走时躲向亮灯的栏杆区。",
+          "recommendation": "Hotel Is Hungry：酒店是活的怪物——末日前台生存模拟",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Indie Game Joe",
+          "tags": [
+            "新游参考"
+          ],
+          "title": "Dumbfire：不可减速的导弹飞行游戏——贴墙越近分越高，钩锁过弯",
+          "en_title": "You're a missile that can't slow down and the gaps keep getting smaller",
+          "full_text": "You're a missile that can't slow down and the gaps keep getting smaller\n\n- Steer it to the target as fast as you can\n- Fly closer to the walls for more points\n- Grapple hook to swing round corners\n\nGame is Dumbfire https://t.co/uRdb0kr1za",
+          "author": "Indie Game Joe",
+          "date": "2026-09-15",
+          "likes": 854,
+          "views": 79626,
+          "link": "https://x.com/IndieGameJoe/status/2099805886571057337",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099804596315041793/img/M12aQl4FL8GWVrbA.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2099805886571057337/video/1"
+          },
+          "summary": "操控一枚无法减速的导弹冲向目标，贴墙飞行博取高分，用钩锁甩过弯道，缝隙越来越窄。",
+          "recommendation": "Dumbfire：不可减速导弹+贴墙计分的极限飞行",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "Game*Spark",
+          "tags": [
+            "新游参考"
+          ],
+          "title": "Probably Stolen：赛博朋克贫民区当铺经营 sim，10 月 29 日发售",
+          "en_title": "『Probably Stolen』10月29日リリース！",
+          "full_text": "サイバーパンクな貧困地区で成り上がる質屋経営シム『Probably Stolen』10月29日リリース！粗悪タバコや違法武器などを査定し、当局の目を掻い潜ってお金を稼ぐ\nhttps://t.co/CWkrJzrx35 https://t.co/MGaVhvt7bt",
+          "author": "⚡Game*Spark⚡",
+          "date": "2026-09-14",
+          "likes": 541,
+          "views": 41409,
+          "link": "https://x.com/gamespark/status/2099626929657970809",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099626784262385664/pu/img/u55Pz37cYdWOT9Zd.jpg",
+            "video_url": "https://x.com/gamespark/status/2099626929657970809/video/1"
+          },
+          "summary": "在赛博朋克贫民区经营当铺：鉴定劣质香烟、非法武器等赃物，避开当局视线赚钱翻身。",
+          "recommendation": "Probably Stolen：贫民区当铺经营 sim——10 月 29 日发售",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 06",
+          "source": "4Gamer",
+          "tags": [
+            "新游参考"
+          ],
+          "title": "Cleaner Company：4 人合作太空清洁游戏 Steam Demo 上线，新增地图与怪物",
+          "en_title": "「Cleaner Company」デモ版をSteamで配信開始",
+          "full_text": "宇宙を飛び回り，危険な現場に挑む4人協力お掃除ゲーム「Cleaner Company」，デモ版をSteamで配信開始\nhttps://t.co/H7FfZyIfwU\n\nプレイテストから新たなマップや機能，モンスターを追加 https://t.co/HZrLIlNauq",
+          "author": "4Gamer",
+          "date": "2026-09-15",
+          "likes": 183,
+          "views": 34640,
+          "link": "https://x.com/4GamerNews/status/2099809046970962221",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099808948237037569/pu/img/NA_Xvlr2Ryxym02O.jpg",
+            "video_url": "https://x.com/4GamerNews/status/2099809046970962221/video/1"
+          },
+          "summary": "在宇宙中飞向危险现场做清洁的 4 人合作游戏，试玩版基础上新增地图、功能与怪物。",
+          "recommendation": "Cleaner Company：4 人合作太空清洁——Demo 已上 Steam",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 07",
+          "source": "Game*Spark",
+          "tags": [
+            "新游参考"
+          ],
+          "title": "テラテイカー：行星改造开放世界生存建造，TGS2026 首次提供日语版升级 Demo 试玩",
+          "en_title": "『テラテイカー』TGS2026試遊出展！",
+          "full_text": "惑星をテラフォーミングするオープンワールドサバクラ『テラテイカー』TGS2026試遊出展！大幅アップグレードした日本語対応デモ版を初めて試遊できる\nhttps://t.co/WihrR3BQYS https://t.co/XGHrKfz3PF",
+          "author": "⚡Game*Spark⚡",
+          "date": "2026-09-15",
+          "likes": 161,
+          "views": 32332,
+          "link": "https://x.com/gamespark/status/2099741220939747718",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099740032773079040/pu/img/AqvPVk9zv9ro2GaC.jpg",
+            "video_url": "https://x.com/gamespark/status/2099741220939747718/video/1"
+          },
+          "summary": "在行星上进行地球化改造的开放世界生存建造游戏，TGS2026 提供大幅升级的日语 Demo 首次试玩。",
+          "recommendation": "テラテイカー：行星改造开放世界——TGS 试玩日语 Demo",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 08",
+          "source": "Niche Gamer",
+          "tags": [
+            "新游参考"
+          ],
+          "title": "Metro 2039 前瞻：更狡猾、更漂亮、更具动作性的续作",
+          "en_title": "[PREVIEW] Metro 2039 is a craftier, prettier, and more action-packed sequel!",
+          "full_text": "[PREVIEW] Metro 2039 is a craftier, prettier, and more action-packed sequel!\n\nhttps://t.co/743NNyM5RW \n\nMetro 2039 feels like a bigger and bolder follow-up that retains the series' horror elements, set in grander environments and with rivaling factions~ https://t.co/KDaSAclZkj",
+          "author": "Niche Gamer 🔜 TGS",
+          "date": "2026-09-14",
+          "likes": 48,
+          "views": 5050,
+          "link": "https://x.com/nichegamer/status/2099539572610707484",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099539531502321664/pu/img/JW3tJTZcHhiLibm_.jpg",
+            "video_url": "https://x.com/nichegamer/status/2099539572610707484/video/1"
+          },
+          "summary": "更大更豪华的续作，保留系列恐怖要素，环境更宏大且加入敌对派系。",
+          "recommendation": "Metro 2039：前瞻确认系列向动作化与规模化演进",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 09",
+          "source": "Niche Gamer",
+          "tags": [
+            "新游参考"
+          ],
+          "title": "B.L.U.E. NOVA：GungHo 全新免费 4 人合作第三人称射击公布",
+          "en_title": "B.L.U.E. NOVA is a new free-to-play co-op third-person shooter from GungHo",
+          "full_text": "B.L.U.E. NOVA is a new free-to-play co-op third-person shooter from GungHo: https://t.co/LASpVZhHdr https://t.co/evsGhHiihq",
+          "author": "Niche Gamer 🔜 TGS",
+          "date": "2026-09-15",
+          "likes": 106,
+          "views": 5616,
+          "link": "https://x.com/nichegamer/status/2099656621320278427",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSN6keOWIAA55jq.jpg"
+          },
+          "summary": "Gungho 公布的免费合作 TPS 新作，具体发售窗口待公布。",
+          "recommendation": "B.L.U.E. NOVA：GungHo 免费 4 人合作 TPS 新公布",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 10",
+          "source": "Niche Gamer",
+          "tags": [
+            "新游参考"
+          ],
+          "title": "Psychic Force 2012 复刻决定：Dreamcast 经典格斗游戏再发售",
+          "en_title": "Cult-classic Dreamcast game Psychic Force 2012 is getting a re-release!",
+          "full_text": "Cult-classic Dreamcast game Psychic Force 2012 is getting a re-release! https://t.co/CFuAAHuCiS https://t.co/PuJHZz68Jw",
+          "author": "Niche Gamer 🔜 TGS",
+          "date": "2026-09-15",
+          "likes": 240,
+          "views": 4643,
+          "link": "https://x.com/nichegamer/status/2099879309531852918",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2099879267332972544/pu/img/uN6XjwH3O8XINbJj.jpg",
+            "video_url": "https://x.com/nichegamer/status/2099879309531852918/video/1"
+          },
+          "summary": "Taito 的超能力空战格斗经典（1995/2000 年街机-DC 血统）宣布复刻再发售。",
+          "recommendation": "Psychic Force 2012：Dreamcast 经典超能力格斗复刻",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 11",
+          "source": "Walaber / Toyful Games",
+          "tags": [
+            "新游参考"
+          ],
+          "title": "Reason and Rhyme：Toyful Games 新公布在线合作解谜冒险",
+          "en_title": "The new game we're making at @toyful_games is an online co-op puzzle adventure called 'Reason and Rhyme'",
+          "full_text": "The new game we’re making at @toyful_games is an online co-op puzzle adventure called “Reason and Rhyme” https://t.co/YjycPzpNfF",
+          "author": "Walaber",
+          "date": "2026-09-14",
+          "likes": 1384,
+          "views": 30557,
+          "link": "https://x.com/walaber/status/2099502456027939273",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099502334409920512/img/Qq1b8lCLCU48mLwj.jpg",
+            "video_url": "https://x.com/walaber/status/2099502456027939273/video/1"
+          },
+          "summary": "Toyful Games（Neon White 美术风出品方）公布在线合作解谜冒险新作，首支预告以双人协作谜题为核心。",
+          "recommendation": "Reason and Rhyme：Toyful Games 新公布在线合作解谜冒险",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unreal Engine 官方 · 技术拆解",
+          "tags": [
+            "UE5",
+            "MetaHuman",
+            "Motion Matching"
+          ],
+          "title": "Epic 官方拆解 Star Wars Zero Company：MetaHuman + Motion Matching 如何塑造角色个性与自定义主角管线",
+          "en_title": "For Star Wars Zero Company, MetaHuman and Motion Matching was important in giving the diverse cast of humanoid characters their personality...",
+          "full_text": "For Star Wars Zero Company, MetaHuman and Motion Matching was important in giving the diverse cast of humanoid characters their personality, as well as for navigating the challenges of implementing a custom main character👽\n\nGet into all the details on our feature with @bitreactor from a few weeks ago: https://t.co/kUskDfYNi9",
+          "author": "Unreal Engine",
+          "date": "2026-09-15",
+          "likes": 15,
+          "views": 3001,
+          "link": "https://x.com/UnrealEngine/status/2099903908499890292",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099891034373419008/img/PtR2JSbI3cUR9HMF.jpg",
+            "video_url": "https://x.com/UnrealEngine/status/2099903908499890292/video/1"
+          },
+          "summary": "Epic 官方回访 Bit Reactor：MetaHuman 与 Motion Matching 为星战新作多元人形角色赋予个性，并解决自定义主角带来的动画适配难题，官方文章详解实现路径。",
+          "analysis": "MetaHuman 已从'高保真捏人'进化为标准角色管线，Motion Matching 负责把自定义体型接入动画库——组合正在成为 UE5 叙事/战术类项目的默认答案。",
+          "recommendation": "Epic 官方拆解：MetaHuman+Motion Matching 支撑 Star Wars Zero Company 角色管线"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Diablo 5 承认前作失误，格斗新王蓄势**\nBlizzCon 2026 场间采访中暴雪正面承认 Diablo 4 静态开放世界的探索是'一次性'体验，Diablo 5 回归 D2/D3 式程序化大地图并以商队为移动基地，2029 年发售；Diablo 4 当日 PCU 回流至 2.67 万，为近 30 天首次站上 2 万线。另一边，Injustice 3 的 NDA 试玩招募帖泄露，TGA 公布、2027 发售的路径逐渐清晰。\n\n**Steam 大盘：新品爆发 + 老游回流**\nWARDOGS 登顶周销榜且 PCU 峰值 42.8 万；Valheim 借更新回到 23 万在线，RuneScape: Dragonwilds 发售次日冲上 2.26 万在线新高。硬件侧 Steam Frame 正式开卖，Valve 坦言内存危机抬高了定价，Steam Deck 2 计划暂不受影响。\n\n**AI 侧：订阅额度成为产能单位**\nGPT-6 Astra + Godot + Blender 全流程产出完整游戏、GPT 2.5 精灵图序列帧获盛赞——单人开发者的 token 预算正在变成新的'工期'概念。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
