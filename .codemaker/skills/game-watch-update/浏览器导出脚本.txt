@@ -1,0 +1,88 @@
+==============================================================
+脚本 1：SteamDB Trending（关注增长榜）
+打开 https://steamdb.info/stats/trendingfollowers/ → F12 → Console → 粘贴回车
+下载得到 steamdb-trending.json
+==============================================================
+(() => {
+  const rows = [...document.querySelectorAll('table tbody tr')];
+  const items = rows.map(tr => {
+    const a = tr.querySelector('a[href*="/app/"]');
+    if (!a) return null;
+    const m = a.href.match(/\/app\/(\d+)/);
+    if (!m) return null;
+    const cells = [...tr.querySelectorAll('td')].map(td => td.textContent.trim());
+    const name = (a.textContent || '').trim() || cells[2] || '';
+    return { appid: +m[1], name, cells };
+  }).filter(x => x && x.name);
+  const blob = new Blob([JSON.stringify({ items }, null, 1)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'steamdb-trending.json';
+  a.click();
+  console.log('exported', items.length, 'items, sample cells:', JSON.stringify(items[0] && items[0].cells));
+})();
+
+==============================================================
+脚本 2：B站游戏区热门榜（v3：DOM 抓取 + 标签接口）
+打开 https://www.bilibili.com/v/popular/rank/game → F12 → Console → 粘贴回车
+（脚本先自动滚到底加载全部，再抓 100 条并逐条拉标签，约 2 分钟，别关页面）
+下载得到 bili-rank.json；结束后把控制台全部输出发我
+==============================================================
+(async () => {
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  // 1. 自动滚动到底，确保 100 条全部渲染
+  let last = 0;
+  for (let i = 0; i < 20; i++) {
+    window.scrollTo(0, document.body.scrollHeight);
+    await sleep(600);
+    const n = document.querySelectorAll('a[href*="/video/BV"]').length;
+    if (n === last) break;
+    last = n;
+  }
+  window.scrollTo(0, 0);
+  // 2. DOM 抓榜单
+  const seen = new Set();
+  const rows = [];
+  for (const a of document.querySelectorAll('a[href*="/video/BV"]')) {
+    const m = a.href.match(/\/video\/(BV\w+)/);
+    if (!m || seen.has(m[1])) continue;
+    seen.add(m[1]);
+    let card = a;
+    for (let i = 0; i < 6 && card.parentElement; i++) { card = card.parentElement; if (card.querySelector('img') && /\d/.test(card.textContent)) break; }
+    const img = card.querySelector('img');
+    const cover = img ? (img.currentSrc || img.src || img.dataset.src || '').replace(/^https?:/, '') : '';
+    let title = (a.title || '').trim();
+    if (!title) {
+      const t = card.querySelector('[class*="title"], .title');
+      title = (t ? t.textContent : a.textContent).trim();
+    }
+    const vm = card.textContent.replace(/\s+/g, '').match(/([\d.]+万|\d{4,})(?=播放|观看)/);
+    rows.push({ rank: rows.length + 1, title, bvid: m[1], cover, state: vm ? vm[1] : '', tags: [] });
+  }
+  console.log('DOM 抓到条数:', rows.length);
+  if (!rows.length) { console.error('DOM 也没抓到，把这一行发我'); return; }
+  // 3. 先试一条标签接口，验证可用性
+  try {
+    const tr = await fetch('https://api.bilibili.com/x/tag/archive/tags?bvid=' + rows[0].bvid, { credentials: 'include' });
+    const tj = await tr.json();
+    console.log('标签接口测试:', JSON.stringify(tj).slice(0, 200));
+    rows[0].tags = (tj.data || []).map(t => t.tag_name);
+  } catch (e) { console.log('标签接口异常:', e.message); }
+  // 4. 逐条补标签
+  for (let i = 1; i < rows.length; i++) {
+    try {
+      const r = await fetch('https://api.bilibili.com/x/tag/archive/tags?bvid=' + rows[i].bvid, { credentials: 'include' });
+      const j = await r.json();
+      rows[i].tags = (j.data || []).map(t => t.tag_name);
+    } catch (e) {}
+    if ((i + 1) % 10 === 0) console.log('进度', i + 1, '/', rows.length);
+    await sleep(800);
+  }
+  const withTags = rows.filter(r => r.tags.length).length;
+  console.log('完成:', rows.length, '条，', withTags, '条有标签');
+  const blob = new Blob([JSON.stringify({ items: rows }, null, 1)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'bili-rank.json';
+  a.click();
+})();
