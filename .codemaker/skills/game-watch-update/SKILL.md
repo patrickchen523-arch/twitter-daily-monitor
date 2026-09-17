@@ -36,16 +36,16 @@ steamdb-trending (N).json -> data\launched\raw\steamdb-trending-YYYY-MM-DD.json
 node tools\make_day.cjs <日期>                                          # 仅新期需要；已存在会报错跳过
 node tools\import_steamdb_trending.js data\launched\raw\steamdb-trending-<日期>.json <日期>
 node tools\import_bilibili_rank.js data\launched\raw\bili-rank-<日期>.json <日期>
-node tools\import_twitter_board.js <日期>
+node tools\import_twitter_board.js <日期>                               # 可带第二参数[数据截止日]，见下
 node tools\gen_picks.cjs <日期>
 ```
 
 说明：
 - `make_day` 复制上期结构，清空 steamdb/bilibili/twitter 三榜，保留 roblox 榜与观测区，manifest.dates 追加新期。
-- `import_twitter_board` 从日报 `data/*.json` 回溯生成（半衰期 1.5 天衰减，14 天出榜），无需额外导出文件。
+- `import_twitter_board` 从日报 `data/*.json` 回溯生成（半衰期 1.5 天衰减，14 天出榜），无需额外导出文件。支持第二参数：`import_twitter_board.js <档期> <数据截止日>`——档期未新建的日子里，每日日报流程用它对**最新档期**做当日数据刷新（写入 `board.data_through`，verify 闸门按它重算哈希与新鲜度），所以关注页推特榜不再依赖建新期才更新。
 - `import_steamdb_trending` 复用上期缓存减少 Steam API 调用（带 429 退避），所以必须先导早日期再导晚日期。
 - `gen_picks` 要求当期 steamdb/bilibili 非空且 twitter≥10，否则报错禁止生成。
-- **日报工作流侧**：x-daily-brief 每日新增/改写 `data/<日期>.json` 后，也必须对受影响日期重跑 `import_twitter_board` + `gen_picks`（日报源变了热游榜哈希就失效，CI 闸门会拦部署）。即「游戏关注页更新已并入每日流程」，不是两个独立流程。
+- **日报工作流侧**：x-daily-brief 每日新增/改写 `data/<日期>.json` 后，也必须对受影响日期重跑 `import_twitter_board` + `gen_picks`（日报源变了热游榜哈希就失效，CI 闸门会拦部署）；当日档期不存在且当日 bili raw 已导出时，日报流程会直接按本节链条建当日新期。即「游戏关注页更新已并入每日流程」，不是两个独立流程。
 
 ## 4. B站榜清洗（长期规则：发现即清，无需请示）
 
