@@ -44,23 +44,25 @@ for (const id of ['steamdb', 'bilibili', 'twitter', 'roblox']) {
     assert(robloxBoard.week === expectWeek, `roblox 榜档期(${robloxBoard.week})与最新周报(${expectWeek})不一致，请运行 node tools/update_roblox_board.cjs 及配套链`);
   }
 }
-// 推特热游榜首必须新鲜（距本期 ≤3 天，防止榜单陈旧）
+// 推特热游榜首必须新鲜（距数据截止日 ≤3 天，防止榜单陈旧；数据截止日=board.data_through，缺省=档期日期）
+const twitterBoard = day.boards.find(b => b.id === 'twitter');
+const through = twitterBoard.data_through || date;
 {
-  const topDay = day.boards.find(b => b.id === 'twitter').items[0]?.day;
-  assert(topDay && (new Date(date) - new Date(topDay)) / 86400000 <= 3, `推特热游榜首日期 ${topDay} 距本期 ${date} 超3天，请重跑 node tools/import_twitter_board.js ${date}`);
+  const topDay = twitterBoard.items[0]?.day;
+  assert(topDay && (new Date(through) - new Date(topDay)) / 86400000 <= 3, `推特热游榜首日期 ${topDay} 距数据截止 ${through} 超3天，请重跑 node tools/import_twitter_board.js ${date} <当日>`);
 }
 assert(day.picks.length === 5, '今日推荐未生成5款');
 assert(new Set(day.picks.map(p => p.link)).size === 5, '今日推荐重复');
 assert(day.picks.every(p => /^https?:\/\//.test(p.cover || '')), '推荐存在无效封面');
 assert(day.picks_generated_from === hash(day.boards), '榜单已变更，必须重新生成今日推荐');
 const dailyManifest = JSON.parse(fs.readFileSync(path.join(dataDir, 'manifest.json'), 'utf8'));
-const sources = dailyManifest.dates.filter(d => d <= date).sort().reverse()
+const sources = dailyManifest.dates.filter(d => d <= through).sort().reverse()
   .map(d => ({ date: d, path: path.join(dataDir, `${d}.json`) })).filter(s => fs.existsSync(s.path))
   .map(s => ({
     date: s.date,
     items: (JSON.parse(fs.readFileSync(s.path, 'utf8')).sections || []).find(sec => sec.id === 'indie')?.items || []
   }));
-assert(day.boards.find(b => b.id === 'twitter').generated_from === hash(sources), '日报源已变更，必须重新生成推特热游');
+assert(twitterBoard.generated_from === hash(sources), '日报源已变更，必须重新生成推特热游');
 console.log('data verified:', date, day.boards.map(b => `${b.id}:${b.items.length}`).join(' '));
 if (process.argv.includes('--data-only')) process.exit(0);
 const { chromium } = require('G:/教理问答/教理问答/node_modules/playwright-core');

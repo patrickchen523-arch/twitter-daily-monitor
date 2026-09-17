@@ -1,11 +1,18 @@
 // 推特热游榜: 从日报 data/*.json 逐日回溯,收集已上线游戏(按推文浏览量排序,取前10)
-// 用法: node tools/import_twitter_board.js <日期>（日期必填，防止误写历史快照）
+// 用法: node tools/import_twitter_board.js <档期日期> [数据截止日]
+//   档期日期必填（防止误写历史快照）；数据截止日缺省=档期日期。
+//   日常刷新场景：档期未新建时，对最新档期满数据刷新——import_twitter_board.js <最新档期> <当日>
 const fs = require('fs');
 const path = require('path');
 
 const date = process.argv[2];
 if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
-  console.error('usage: node tools/import_twitter_board.js <YYYY-MM-DD>（日期必填，缺省会静默写错日期）');
+  console.error('usage: node tools/import_twitter_board.js <档期YYYY-MM-DD> [数据截止YYYY-MM-DD]（档期必填，缺省会静默写错日期）');
+  process.exit(1);
+}
+const cutoff = process.argv[3] || date;
+if (!/^\d{4}-\d{2}-\d{2}$/.test(cutoff)) {
+  console.error('数据截止日格式错误，应为 YYYY-MM-DD');
   process.exit(1);
 }
 const root = path.join(__dirname, '..');
@@ -22,13 +29,13 @@ function isLaunched(it) {
   const sr = String(e.steam_rating || '');
   const rel = String(e.release_date || '');
   const iso = releaseOf(e);
-  if (iso && iso > date) return false;
+  if (iso && iso > cutoff) return false;
   const appid = (String(e.steam_url || '').match(/app\/(\d+)/) || [])[1];
   const known = launched.boards.filter(b => b.id === 'steamdb' || b.id === 'bilibili')
     .flatMap(b => b.items || []).find(g => appid
       ? String(g.link || g.steam || '').includes(`/app/${appid}/`)
       : normKey(g.name) === normKey(it.game_ref || e.game_name));
-  if (known && known.release && known.release <= date) return true;
+  if (known && known.release && known.release <= cutoff) return true;
   if (/未(?:正式)?发售|playtest|demo|体验版|试玩|测试|即将/i.test(sr)) return false;
   if (iso) return true;
   if (/已发售|已上线|已发布|运营中|发售初期|好评|\d.*(?:评价|reviews)/i.test(sr + ' ' + rel)) return true;
@@ -41,7 +48,7 @@ const fmtViews = v => v >= 10000 ? (Math.round(v / 1000) / 10) + '万' : String(
 const games = new Map(); // 规范化名 -> item (保留先出现/最新的)
 const watchAdds = []; // 未上线(进观测区)
 const normKey = s => String(s || '').toLowerCase().replace(/[^\w\u4e00-\u9fa5]/g, '');
-const dates = (manifest.dates || []).filter(d => d <= date).sort().reverse();
+const dates = (manifest.dates || []).filter(d => d <= cutoff).sort().reverse();
 const sources = dates.map(d => ({ date: d, path: path.join(root, 'data', `${d}.json`) }))
   .filter(s => fs.existsSync(s.path)).map(s => ({
     date: s.date,
@@ -83,7 +90,7 @@ for (const { date: d, items: dailyItems } of sources) {
 // 半衰期衰减: 推文流量集中在前1-2天, heat=views×0.5^(age/1.5) 作为排序与推荐分值;
 // 老爆款自动沉底, 展示仍用原始 metric; 超过14天的条目彻底出榜
 const HALF_LIFE_DAYS = 1.5;
-const ageDays = it => Math.max(0, Math.floor((new Date(date) - new Date(it.day)) / 86400000));
+const ageDays = it => Math.max(0, Math.floor((new Date(cutoff) - new Date(it.day)) / 86400000));
 const items = [...games.values()]
   .map(it => ({ ...it, heat: Math.round(it.views * Math.pow(0.5, ageDays(it) / HALF_LIFE_DAYS)) }))
   .filter(it => ageDays(it) <= 14)
@@ -98,6 +105,7 @@ if (board) {
   board.demo = false;
   board.items = items;
   board.generated_from = require('crypto').createHash('sha256').update(JSON.stringify(sources)).digest('hex');
+  board.data_through = cutoff;  // 数据截止日：verify 闸门以此重算哈希与新鲜度
   board.more = { label: '查看新游推文', tab: 'indie' };
 }
 
