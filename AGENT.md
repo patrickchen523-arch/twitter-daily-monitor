@@ -35,7 +35,7 @@ GitLab Pages CI 第一步是 `node tools/verify_launched_imgs.cjs --data-only`�
 每个受影响日期执行（顺序不能反）：
 
 ```bash
-node tools/import_twitter_board.js <日期>   # 日期必填
+node tools/import_twitter_board.js <日期>   # 日期必填；可带第二参数[数据截止日]：档期未建时用当日数据刷新最新档期（写入 board.data_through）
 node tools/gen_picks.cjs <日期>
 node tools/verify_launched_imgs.cjs --data-only   # exit≠0 禁止 push
 ```
