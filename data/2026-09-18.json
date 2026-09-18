@@ -1,0 +1,696 @@
+{
+  "date": "2026-09-18",
+  "meta": {
+    "raw_count": 237,
+    "filtered_count": 172,
+    "selected_count": 15,
+    "crawl_time": "2026-09-18 10:18"
+  },
+  "lede": "WARDOGS 发售一周卖出 220 万份、营收 7000 万美元反超 Marathon；Level-5 就 AI 使用风波正式致歉；GPT-6 Astra 连玩《我的世界》141 小时后\"心理受创\"种土豆；Dead Cells 团队操刀的恶魔城正统新作 10 月 15 日发售。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "WARDOGS 发售一周卖 220 万份收 7000 万美元，启动快于 Arc Raiders 与 Helldivers 2——40 美元定价带的又一次胜利"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "恶魔城正统新作 TGS 试玩：Dead Cells 工作室操刀，鞭索摆荡重构经典——10 月 15 日发售"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "GPT-6 Astra 连玩《我的世界》141 小时：被苦力怕炸光财产后\"心理受创\"改行种土豆"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "GPT-6 Astra 连玩《我的世界》141 小时，被苦力怕炸光财产后摆烂种土豆\nOpenAI 前核心研究员发布判断型 AI Jev：比 LLM 快 20~200 倍，4000 万美元种子轮\n开发者用 GPT Astra 把《使命召唤：黑色行动2》原生移植进《我的世界》"
+    },
+    {
+      "id": "industry",
+      "text": "WARDOGS 发售一周销量破 220 万份、营收 7000 万美元，CEO 就 crunch 言论致歉\nHeart Machine 裁撤\"几乎所有人\"：发行商撤走未公布新游\nLevel-5 就 AI 使用风波正式致歉，雷顿新作承诺内容不直接用 AI\n索尼两款第一方大作 Steam 英国区神秘下架\n小岛确认 Physint 主演为 Bill Skarsgård"
+    },
+    {
+      "id": "indie",
+      "text": "恶魔城正统新作《贝尔蒙特诅咒》TGS 试玩惊艳，10 月 15 日发售\nTooth for Tooth：牙齿就是血条的对战游戏，9 月 30 日登陆 Steam\nEmberward 正式发售：砌迷宫迎敌的 Roguelike 塔防，压倒性好评\nWoodo 登陆 Steam：被 Polygon 称为\"2026 最佳治愈解谜\"\n《电锯甜心 2: Back2Back》时隔 13 年正式公布"
+    },
+    {
+      "id": "tools",
+      "text": "Unity 6.6 进入 Play Mode 大幅提速：为 Unity 7 移除 Domain Reload 铺路\nGodot 后期特效实时调试模块走红，作者征集是否开源"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "GIGAZINE · 技术媒体",
+          "tags": [
+            "AI Agent",
+            "GPT-6",
+            "行为模拟"
+          ],
+          "title": "GPT-6 Astra 连玩《我的世界》141 小时：被苦力怕炸光财产后\"心理受创\"转型种土豆",
+          "en_title": "GPT-6 Astraが141時間にわたって「マインクラフト」をプレイ、クリーパーに全財産を吹き飛ばされて「緑色の物体」がトラウマになりジャガイモ農家に",
+          "full_text": "GPT-6 Astraが141時間にわたって「マインクラフト」をプレイ、クリーパーに全財産を吹き飛ばされて「緑色の物体」がトラウマになりジャガイモ農家に https://t.co/F1BjdivSNI",
+          "author": "gigazine",
+          "date": "2026-09-17",
+          "likes": 28982,
+          "views": 1646353,
+          "link": "https://x.com/gigazine/status/2100449752567484712",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSZL6z1WIAAwE8T.jpg"
+          },
+          "featured": true,
+          "summary": "日本科技媒体 GIGAZINE 记录了 GPT-6 Astra 在《我的世界》中连续游玩 141 小时的过程：AI 一度打破多项纪录，但在被苦力怕炸毁全部财产后出现\"创伤\"行为——对绿色物体产生阴影，停止推进主线，转而长时间经营土豆农场、看雨。",
+          "analysis": "AI Agent 在长周期开放世界任务中的\"动机崩溃\"正在被系统记录：奖励清零后策略退化为低风险重复行为，这对强化学习训练设计与游戏内 NPC 行为建模都是高价值参考。同时，\"AI 玩游戏玩出人味\"仍是当前传播力最强的 AI 内容范式——164 万浏览、2.9 万赞再次验证。",
+          "recommendation": "GPT-6 Astra 连玩《我的世界》141 小时：被苦力怕炸光财产后\"心理受创\"改行种土豆"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Tony出海 · 原创观点",
+          "tags": [
+            "AI",
+            "融资",
+            "推理成本"
+          ],
+          "title": "OpenAI 前核心研究员发布 Jev：不做生成、只做判断的\"System One Model\"，比 LLM 快 20~200 倍",
+          "en_title": "TypeSafe AI launches Jev — the first public System One Model",
+          "full_text": "硅谷的创新太牛逼了\n\nOpenAI 核心研究员 Diogo 离开后的新 AI 产品Jev发布。\n\n比 LLM 快 20～200 倍，\n\n输出令牌永久免费（太便宜了，无法计费）\n\n结构上不会发生幻觉\n为了预先定义输出的候选和结构，Jev 无法引发类型错误（数学上不可能）\n\nJev无法生成文章\n\n能做的只有分类、路由、评分、提取、分支\n也就是说，代码中的\"智能if语句\"\n\n选项上限为255（超过时采用两阶段处理）\n\n这是放弃通用性、全力投入自动\n\nLLM＝面向人类生成文章的AI\nJev＝面向软件返回判断的AI\n\n输入：非结构数据＋程序的状态\n输出：类型安全的数值＋校准后的概率\n\n为什么快 20~200 倍\n\nLLM 是逐个令牌依次生成（依赖前一个输出）  \nJev 是在一个查询中并行生成所有输出  \n\n将顺序计算替换为并行计算——与 Transformer 超越 RNN 的相同模式  \n\n响应时间为 70~500 毫秒  \n前沿 LLM 为 3~329 秒\n\n新公司名字\n\nTypeSafe AI（旧金山）\n•  融资：DCVC 领投 4000 万美元种子轮，报道估值约 2 亿美元\n•  产品：首款公开的 System One Model —— Jev（early access）\n\n示例① \n约5,000请求 $2\n\n@ MichaelLee04 在分类、模型路由、意图判定方面进行实测",
+          "author": "tonychuhai",
+          "date": "2026-09-17",
+          "likes": 4,
+          "views": 742,
+          "link": "https://x.com/tonychuhai/status/2100410182560084191",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSYn6-XaMAElql9.jpg"
+          },
+          "featured": true,
+          "summary": "OpenAI 前核心研究员 Diogo 创立的 TypeSafe AI（旧金山，DCVC 领投 4000 万美元种子轮，报道估值约 2 亿美元）发布首款\"System One Model\"——Jev：只能做分类、路由、评分、提取、分支，不能生成文本；所有输出并行生成、结构上类型安全不会幻觉，响应 70~500 毫秒，比 LLM 快 20~200 倍，成本约 5000 次请求 2 美元。中文 KOL 陈成实测：让 Jev 玩贪吃蛇，200 个请求仅花 0.02 美元。",
+          "analysis": "把 LLM 的\"生成\"原语替换成\"判断\"原语，本质是把 AI 塞进传统软件工程的高频决策位。对游戏行业意味着：NPC 行为路由、实时内容审核、匹配与评分系统这类\"每帧都要做判断\"的场景，第一次有了廉价且数学上不会幻觉的工程方案。用并行替代顺序计算的思路，与 Transformer 超越 RNN 同构，值得架构层关注。",
+          "recommendation": "OpenAI 前研究员发布 Jev：放弃生成只做判断的 AI，比 LLM 快 20~200 倍——DCVC 领投 4000 万美元"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Luckey Faraday · 技术演示",
+          "tags": [
+            "AI编程",
+            "Minecraft",
+            "移植"
+          ],
+          "title": "用 GPT Astra 把《黑色行动2》原生移植进《我的世界》：Fabric mod 直接跑在 MC 自带 OpenGL 上",
+          "en_title": "I got Black Ops 2 running natively in Minecraft",
+          "full_text": "I got Black Ops 2 running natively in Minecraft.\n\nNot through a browser, not on a screen inside the game. I ported Hijacked to Java and it runs directly on Minecraft's own OpenGL context.\n\nThe map, collision, bots, navmesh, weapons and rendering are all running inside Minecraft as a Fabric mod.\n\nThis started with me putting my browser port on a PC screen inside Minecraft. That worked, but I wanted to see if I could go much further and actually port the game itself.\n\nSo I had GPT Astra rebuild the whole thing in Java.\n\nStill a lot left to do, but this is now an actual game running inside Minecr",
+          "author": "luckeyfaraday",
+          "date": "2026-09-17",
+          "likes": 4381,
+          "views": 186661,
+          "link": "https://x.com/luckeyfaraday/status/2100417441671110715",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2100417230043312128/img/4EHDF8wrJ_ufQPti.jpg",
+            "video_url": "https://x.com/luckeyfaraday/status/2100417441671110715/video/1"
+          },
+          "featured": false,
+          "summary": "开发者 Luckey Faraday 将《使命召唤：黑色行动2》的 Hijacked 地图移植为 Java 并作为 Fabric mod 跑在《我的世界》原生 OpenGL 上下文上：地图、碰撞、Bot、导航网格、武器与渲染全部在 MC 内运行。核心移植由 GPT Astra 用 Java 重建完成，此前它已完成过\"把浏览器搬进 MC\"的套娃方案。",
+          "analysis": "从\"MC 里套屏幕\"到\"AI 直接重建游戏本体\"，跨引擎移植这种原本按月计的工作被 AI 编程代理压缩到几天量级。游戏代码与资产在 AI 移植场景下的版权灰区，会是接下来不可避免的讨论点。",
+          "recommendation": "《黑色行动2》原生跑进《我的世界》：GPT Astra 用 Java 重建地图、碰撞与 Bot——跨引擎移植被 AI 压缩到几天"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 市场数据",
+          "tags": [
+            "销量",
+            "Steam",
+            "定价策略"
+          ],
+          "title": "WARDOGS 发售一周销量破 220 万份、营收 7000 万美元：启动快于 Arc Raiders 与 Helldivers 2",
+          "en_title": "Wardogs has already made more money than Marathon, and its Steam launch momentum is ahead of Arc Raiders and Helldivers 2",
+          "full_text": "Wardogs has already made more money than Marathon, and its Steam launch momentum is ahead of Arc Raiders and Helldivers 2\n\nhttps://t.co/itSPAAb0An https://t.co/rmUzQ4bOgV",
+          "author": "eurogamer",
+          "date": "2026-09-17",
+          "likes": 44,
+          "views": 144167,
+          "link": "https://x.com/eurogamer/status/2100536653995720898",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSaaqb2aMAAEtPl.jpg"
+          },
+          "featured": true,
+          "game_ref": "WARDOGS",
+          "summary": "据 Alinea Analytics 分析师 Rhys Elliott：Bulkhead 开发、Team17 发行的 WARDOGS（9 月 10 日 EA，售价 40 美元）已卖出超 220 万份、营收约 7000 万美元，位列 Steam 2026 年新游收入榜第 7；同期对比 Arc Raiders 首发窗口 170 万份、Helldivers 2 为 100 万份。愿望单转化率 11%，其中 57% 的愿望单来自发售前最后一个月（\"晚热型\"预热曲线）。多平台为 Marathon 全平台收入之和所不及，PS/Xbox 版计划 2028 年推出。另：CEO Joe Brammer 因\"不会雇佣 constantly tweet anti-crunch messaging 的人\"言论引发争议，随后向 Eurogamer 致歉，承认\"我们向员工承认这曾是 crunch\"。",
+          "analysis": "40 美元定价卡进 70 美元 3A 与免费游戏之间的空档再度验证——\"低于摩擦点的中量级定价+高预热末期爆发\"正成为新爆款模板。而爆款工作室随即被翻出 crunch 争议，增长与人效的矛盾、高管言论的舆情风险，是本案例的另一半教训。",
+          "recommendation": "WARDOGS 发售一周卖 220 万份收 7000 万美元，启动快于 Arc Raiders——40 美元定价带的又一次胜利"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Niche Gamer · 裁员报道",
+          "tags": [
+            "裁员",
+            "独游",
+            "发行商"
+          ],
+          "title": "《光明旅者》开发商 Heart Machine 裁撤\"几乎所有人\"：发行商撤走未公布新游",
+          "en_title": "Heart Machine lays off \"nearly everyone\" after a publisher drops their upcoming game",
+          "full_text": "Heart Machine lays off \"nearly everyone\" after a publisher drops their upcoming game: https://t.co/9rm2RiPewV https://t.co/rFfgGYF4J9",
+          "author": "nichegamer",
+          "date": "2026-09-17",
+          "likes": 22,
+          "views": 3763,
+          "link": "https://x.com/nichegamer/status/2100438408040439925",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSZBmhCWYAAaF2j.jpg"
+          },
+          "featured": true,
+          "summary": "Hyper Light Drifter、Solar Ash 的开发商 Heart Machine 在发行商撤出一款未公布游戏后，裁掉\"工作室几乎所有人\"（多家报道：Niche Gamer、TheGamer、Rock Paper Shotgun）。未公布项目被砍是直接导火索，工作室生存前景不明。",
+          "analysis": "又一个\"单项目依赖+发行商撤资\"直接引发灭工作室级裁员的案例。对独游团队：与单一发行商深度绑定的现金流风险，需要在合同条款（里程碑付款、 IP 归属回转）和储备金层面做对冲；对发行商：砍项目的同时也在烧掉行业信誉。",
+          "recommendation": "Heart Machine 裁掉\"几乎所有人\"：发行商撤走未公布游戏，《光明旅者》工作室濒临解散"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Polygon · 官方声明",
+          "tags": [
+            "AI争议",
+            "Level-5",
+            "危机公关"
+          ],
+          "title": "Level-5 就 AI 使用风波正式致歉：预告片瑕疵称系画师手绘失误，雷顿新作承诺内容不直接用 AI",
+          "en_title": "Level-5 finally issues official apology for rampant AI use",
+          "full_text": "Level-5 Finally Issues Official Apology for Rampant AI Use https://t.co/QXiQ4pQAwO https://t.co/wTr0lzARKL",
+          "author": "polygon",
+          "date": "2026-09-17",
+          "likes": 4,
+          "views": 2402,
+          "link": "https://x.com/polygon/status/2100620817440620761",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSbngHqWAAATSYw.jpg"
+          },
+          "featured": true,
+          "summary": "Level-5 与 CEO 日野晃博发布官方声明回应《妖怪手表2》预告片被质疑 AI 生成：称自动贩卖机、电线、水槽等瑕疵是画师手绘的人为错误而非 AI；Nintendo Direct 用的是赶工的旧版预告片，TGS 前将替换为无 AI 版本；并称《雷顿教授与蒸汽新世界》\"游戏内容绝无直接使用 AI\"，AI 仅用于提升开发效率，各游戏的魅力与个性仍由人类创作。",
+          "analysis": "此前高调宣传 AI 提效、如今被迫公开道歉，Level-5 成为\"AI 提效叙事反噬品牌\"的典型案例：即便瑕疵真是手绘失误，玩家也已默认用 AI 标准去审查画面细节。厂商的 AI 对外口径正在从能力展示全面转向风险管控，这个转向本身值得所有正在上 AI 工作流的团队参考。",
+          "recommendation": "Level-5 为 AI 风波正式致歉：预告片瑕疵称系手绘失误，雷顿新作承诺内容绝不直接用 AI"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 平台事件",
+          "tags": [
+            "Steam",
+            "平台政策",
+            "索尼"
+          ],
+          "title": "《绝地潜兵2》《地平线：西之绝境》Steam 英国区神秘下架，索尼称正与 Valve 解决",
+          "en_title": "Helldivers 2 and Horizon Forbidden West mysteriously delisted from Steam in the UK, Sony promises to \"address the issue\" with Valve",
+          "full_text": "Helldivers 2 and Horizon Forbidden West mysteriously delisted from Steam in the UK, Sony promises to \"address the issue\" with Valve\n\nhttps://t.co/m8cIQ0gXjJ https://t.co/KOV2fRDdWS",
+          "author": "eurogamer",
+          "date": "2026-09-17",
+          "likes": 5,
+          "views": 6368,
+          "link": "https://x.com/eurogamer/status/2100523591909487022",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSaPEeSWAAAKHHA.jpg"
+          },
+          "featured": false,
+          "summary": "索尼两款第一方 PC 大作在 Steam 英国区被莫名下架，Rock Paper Shotgun 等多家跟进，索尼回应正与 Valve 合作\"解决该问题\"。该区域此前因 PSN 账号强制绑定争议高度敏感，下架原因尚未公布。",
+          "analysis": "索尼 PC 发行策略与区域合规的冲突再次上演——若与英国消费者保护监管相关，数字商品下架与已购玩家权益的边界将被进一步检验。对从业者：单一平台分发的区域政策风险是全球化发行的固定成本项。",
+          "recommendation": "索尼两款第一方大作 Steam 英国区神秘下架，官方称正与 Valve 协商解决"
+        },
+        {
+          "idx": "游戏行业 05",
+          "source": "Eurogamer · 重大项目",
+          "tags": [
+            "小岛秀夫",
+            "Xbox",
+            "TGS 2026"
+          ],
+          "title": "小岛秀夫确认《Physint》主演为 Bill Skarsgård，恐怖新作 OD 制作进展同步",
+          "en_title": "Hideo Kojima confirms Bill Skarsgård is Physint's lead actor, gives production update on mysterious horror game OD",
+          "full_text": "Hideo Kojima confirms Bill Skarsgård is Physint's lead actor, gives production update on mysterious horror game OD\n\nhttps://t.co/hK0s0TkXow https://t.co/of9rjHD6MZ",
+          "author": "eurogamer",
+          "date": "2026-09-17",
+          "likes": 34,
+          "views": 7928,
+          "link": "https://x.com/eurogamer/status/2100539197551525985",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSadQaHWsAAeAm5.jpg"
+          },
+          "featured": false,
+          "summary": "小岛秀夫在 TGS 2026 期间确认：与 Xbox 合作的间谍动作新作《Physint》男主角由《小丑回魂》《诺斯费拉图》主演 Bill Skarsgård 出任（此前外网盛传是 Robert Pattinson），神秘恐怖游戏 OD 的制作进展同步更新。The Game Awards 曝光了 Physint 首张先导海报（多家报道：The Game Awards、GameSpot、Polygon、MP1st）。",
+          "analysis": "选角官宣意味着 Physint 进入实质制作阶段；小岛工作室\"好莱坞电影级卡司+主机独占\"的组合继续抬升互动影视化品类的制作基准。对 Xbox 而言，这是其日方合作阵容里最具话题度的长线牌。",
+          "recommendation": "小岛确认 Physint 主演 Bill Skarsgård，恐怖新作 OD 同步更新制作进展"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Polygon · TGS 试玩",
+          "tags": [
+            "类银河恶魔城",
+            "2D动作",
+            "Konami"
+          ],
+          "title": "恶魔城：贝尔蒙特诅咒（Konami×Dead Cells 工作室 Evil Empire）：十余年来首款正统新作，10 月 15 日发售",
+          "en_title": "Konami's Castlevania Revival Plays Like a Dream",
+          "full_text": "Konami's Castlevania Revival Plays Like.a Dream https://t.co/lV9KcEwSdA https://t.co/bHhb06ytsp",
+          "author": "polygon",
+          "date": "2026-09-17",
+          "likes": 99,
+          "views": 17658,
+          "link": "https://x.com/polygon/status/2100530212291133781",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSaVGNuWgAAapCO.jpg"
+          },
+          "featured": true,
+          "game_ref": "Castlevania: Belmont's Curse",
+          "summary": "Polygon 在 TGS 2026 试玩了 Evil Empire（Dead Cells 开发商）打造的 Castlevania: Belmont's Curse——十多年来首款恶魔城正统续作。背景设定在 15 世纪燃烧的巴黎，主角 Rose Belmont 是 Trevor Belmont 与 Sypha Belnades 之女；塔罗牌解锁特殊能力，经典鞭子被重构为可钩索上平台、钟摆摆荡、拉拽敌人近身斩击的机动核心，评价\"玩起来如梦般顺滑\"。",
+          "analysis": "Konami 把旗舰 IP 交给 Dead Cells 团队，走的是\"经典 IP × 现役横版动作专家\"的复刻路径——与 Silent Hill 系列的复活策略一脉相承。10 月 15 日登陆 Switch/PS5/PC/Xbox，是 2026 横版动作赛道最重磅的发售节点。",
+          "recommendation": "恶魔城正统新作 TGS 试玩：Dead Cells 工作室操刀，鞭索摆荡重构经典——10 月 15 日发售",
+          "enrichment": {
+            "game_name": "Castlevania: Belmont's Curse",
+            "genre": "动作 / 角色扮演",
+            "developer": "KONAMI /  Evil Empire",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 128.00",
+            "release_date": "2026年10月15日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4231820",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4231820/6b65aec2c398006aea8b76e1463cc34d0e4ba68b/header.jpg?t=1788478863",
+            "youtube_video": null,
+            "description": "鲜红的诅咒，会是绝望还是希望？ 在悪魔城伝説 (Castlevania Dracula's Curse) 的23年之后，随着年轻的贝尔蒙特在巴黎冒险并成长。 KONAMI × Evil Empire × Motion Twin联手推出最新的探索型2D动作游戏。\n\n【核心玩法】类恶魔城探索结构：2D 平台+鞭索机动——鞭子可钩住环境物上平台、钟摆式跨沟、把敌人拉到面前近身斩击，拿到鞭子后战斗与跑图全面解锁；塔罗牌系统解锁特殊能力并承载叙事碎片。Rose 还可蹬墙跳与滑铲，机动性按现代横版标准打磨。\n\n【美术与叙事】15 世纪燃烧的巴黎，热浪扭曲的红色火光背景在系列中独树一帜；主角 Rose Belmont 是 Trevor 与 Sypha 之女，兼具父系的战斗天赋与母系的秘术，击败首个 Boss\"坠落者\"后可吸收其意识进行心灵对话。\n\n【对标定位】Dead Cells 团队把\"快节奏横版动作手感\"嫁接到 SOTN 式探索结构，并可见对 Simon's Quest 与 Order of Ecclesia 的致敬，不靠情怀吃老本。\n\n【优势】机动设计现代化；手绘演出惊艳；正统续作十余年后的情怀高度。\n【不足】试玩流程偏短，后期成长系统与地图规模待验证。\n\n【综合】10 月 15 日登陆 Switch/PS5/PC/Xbox，2026 横版动作赛道最重磅的新作之一，TGS 试玩口碑极佳。",
+            "why_notable": "十余年来首款恶魔城正统新作，Dead Cells 团队将现代横版手感注入经典 IP，TGS 试玩口碑爆棚"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Alex Kunchevsky · 开发者发布",
+          "tags": [
+            "对战",
+            "独立开发",
+            "创意机制"
+          ],
+          "title": "Tooth for Tooth（独立开发者 Alex Kunchevsky）：牙齿就是血条的对战游戏，9 月 30 日登陆 Steam",
+          "en_title": "I made a game where your teeth are your health bar. It's called Tooth for Tooth.",
+          "full_text": "I made a game where your teeth are your health bar.\n\nIt's called Tooth for Tooth.\nComing to Steam September 30.\n\nWishlist:\nhttps://t.co/S7Nu8Rdl4W https://t.co/fSOEQGAvNd",
+          "author": "kunchevsky",
+          "date": "2026-09-16",
+          "likes": 2413,
+          "views": 1151073,
+          "link": "https://x.com/kunchevsky/status/2100027566862061944",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2100025281960357888/img/nveSN081ubo_hBLY.jpg",
+            "video_url": "https://x.com/kunchevsky/status/2100027566862061944/video/1"
+          },
+          "featured": true,
+          "game_ref": "Tooth for Tooth",
+          "summary": "独立开发者 Alex Kunchevsky 公布新作 Tooth for Tooth：牙齿即血条——角色被打掉的每一颗牙都是实际生命值损失，把血条 UI 变成身体的一部分。9 月 30 日 Steam 发售，推文获 115 万浏览、2400+ 赞。",
+          "analysis": "\"把血条长在角色身上\"是一句话就能讲清的机制可视化范本：机制即卖点、封面即教学，天然适配信息流传播。这类单一强机制的小品能否撑起长线留存，取决于模式数量与打击深度，发售后值得跟踪。",
+          "recommendation": "Tooth for Tooth：牙齿就是血条的对战游戏——115 万浏览，9 月 30 日登陆 Steam",
+          "enrichment": {
+            "game_name": "Tooth for Tooth",
+            "genre": "动作 / 独立",
+            "developer": "Outlane",
+            "platforms": [
+              "PC",
+              "Linux"
+            ],
+            "price": "未公布",
+            "release_date": "2026 年 9 月 30 日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5012840",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5012840/e5d711f5b699b5bea6df91a03b96f71ca84eb397/header.jpg?t=1789688801",
+            "youtube_video": null,
+            "description": "A turn-based brawler where teeth are your health and your money. Build a crooked smile, buy an unfair advantage, and reclaim your stolen gold teeth. Or choose a fighter and knock another player’s out in PvP.\n\n【核心玩法】1v1 对战动作：牙齿就是血条——被打掉的每颗牙都是实际生命值损失，\"血条 UI\"变成角色身体的一部分，战况一眼可读，机制可视即教学。\n\n【美术与风格】开发者 Alex Kunchevsky 出自动画创作背景（YouTube 动画作者），角色造型与打击反馈走夸张搞笑路线，掉牙瞬间的演出是记忆点。\n\n【对标定位】Nidhogg、Rounds 一类的紧凑对战小品：规则一分钟上手，靠单一强机制制造传播记忆点，适合朋友间快速开黑。\n\n【优势】机制一句话讲清，信息流传播性极强；Steam 页面已开放愿望单。\n【不足】内容深度取决于模式与武器数量，EA/正式版内容量待验证。\n\n【综合】9 月 30 日登陆 Steam，\"机制可视化营销\"的教科书案例，发售后首周口碑值得跟踪。",
+            "why_notable": "\"牙齿=血条\"把核心机制做成了角色的身体，一句话讲清的创意在 24 小时内拿下 115 万浏览"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "電ファミニコゲーマー · 发售报道",
+          "tags": [
+            "Roguelike",
+            "塔防",
+            "正式发售"
+          ],
+          "title": "Emberward 正式发售：砌迷宫迎敌的 Roguelike 塔防，Steam\"压倒性好评\"",
+          "en_title": "迷路を組んで敵を迎え撃つローグライト防衛ゲーム『Emberward』が本日Steamで正式リリース",
+          "full_text": "迷路を組んで敵を迎え撃つローグライト防衛ゲーム『Emberward』が本日Steamで正式リリース。「圧倒的に好評」なタイトル\nhttps://t.co/m4CSAAgK68\n\nブロックで通路を設計し、個性豊かなタワーで防衛。クリアしたら設備を強化して次の防衛へ。製品版では\"虚無のエネルギー\"に浸食された新マップも https://t.co/Lc3A8iQ67m",
+          "author": "denfaminicogame",
+          "date": "2026-09-17",
+          "likes": 228,
+          "views": 80124,
+          "link": "https://x.com/denfaminicogame/status/2100546826986529010",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2100546792249335808/pu/img/qQ8APVsKzZFPDRNW.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2100546826986529010/video/1"
+          },
+          "featured": false,
+          "game_ref": "Emberward",
+          "summary": "日本媒体电 fami 报道：用方块设计通路、个性塔楼迎敌的 Roguelike 塔防 Emberward 9 月 17 日在 Steam 正式发售，评价\"压倒性好评\"。通关后强化设施进入下一轮防卫，正式版新增被\"虚无能量\"侵蚀的新地图。",
+          "analysis": "\"迷宫建造×塔防\"把路径规划从辅助系统升级为核心表达，在 Roguelike 塔防里是少见的差异化结构。正式发售后好评率能否长线守住、外圈地图的重复度控制，是判断其天花板的关键。",
+          "recommendation": "Emberward 正式发售：砌迷宫挡敌人的 Roguelike 塔防——Steam 压倒性好评",
+          "enrichment": {
+            "game_name": "余烬守卫 Emberward",
+            "genre": "独立 / 策略 / 免费开玩",
+            "developer": "Refic Games",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 57.80",
+            "release_date": "已发售 · 2026 年 9 月 17 日",
+            "steam_rating": "3801 reviews",
+            "steam_url": "https://store.steampowered.com/app/2459550",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2459550/44e4e61c24c26440fa8deaab2299aab603e47958/header.jpg?t=1789657527",
+            "youtube_video": null,
+            "description": "《Emberward》是一款着重于迷宫建造与独特砲塔组合的 Roguelite 塔防游戏。利用各种形状的方块规划怪物路线，搭配不同砲塔与神器守护脆弱的火源！\n\n【核心玩法】Roguelike 塔防+迷宫建造：用方块铺设通路引导敌人走进火力网，个性塔楼迎击；通关后强化设施进入下一轮防卫，正式版新增被\"虚无能量\"侵蚀的新地图，循环目标更长线。\n\n【美术】像素底色+童话感配色，塔楼造型区分度高，战场信息密度控制得当。\n\n【对标定位】\"规划>操作\"的策略小品：上手门槛低于传统塔防，路径设计自由度带来的 build 差异是重开一局的核心理由。\n\n【优势】正式发售即\"压倒性好评\"；设施强化提供局外成长曲线。\n【不足】同类玩法的后期重复度与数值膨胀待长线验证。\n\n【综合】9 月 17 日 Steam 正式发售，独游塔防差异化的近期样本，适合策略玩家关注。",
+            "why_notable": "把迷宫建造做成塔防核心表达的差异化结构，正式发售当日即获压倒性好评"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "Polygon · 评测",
+          "tags": [
+            "治愈",
+            "解谜",
+            "正式发售"
+          ],
+          "title": "Woodo 正式登陆 Steam（Tiny Monks Tales / Daedalic 发行）：被 Polygon 称为\"2026 最佳治愈解谜\"",
+          "en_title": "The Best Chill Puzzle Game of 2026 Just Officially Hit Steam",
+          "full_text": "The Best Chill Puzzle Game of 2026 Just Officially Hit Steam https://t.co/XlOuO8qDvW https://t.co/J5UDttlFnT",
+          "author": "polygon",
+          "date": "2026-09-16",
+          "likes": 20,
+          "views": 9789,
+          "link": "https://x.com/polygon/status/2100268573125980654",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSWnItcXgAAx5AQ.jpg"
+          },
+          "featured": false,
+          "game_ref": "Woodo",
+          "summary": "Polygon 评测：木雕质感的拼图+涂色解谜游戏 Woodo 正式上线 Steam。把彩色木件放进素模立体场景补全画面，伴随小狐狸 Foxy 的乡间睡前故事，约 5 小时流程，已登陆 Switch/Switch 2/PS5/PC/Xbox Series X，开发为 Tiny Monks Tales、发行 Daedalic Entertainment。",
+          "analysis": "\"木质玩具手账\"式的美术定位精准打击治愈系人群，木件碰撞音效把触觉感做进听觉；Daedalic 发行+全平台同步是小型解谜放大商业天花板的参考路径。说教感的叙事是评测里少数扣分项。",
+          "recommendation": "Woodo 登陆 Steam：木雕质感拼图解谜，Polygon 称\"2026 最佳治愈解谜\"——5 小时睡前故事",
+          "enrichment": {
+            "game_name": "木木屋 - Woodo",
+            "genre": "休闲 / 独立",
+            "developer": "Tiny Monks Tales",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 39.90",
+            "release_date": "已发售 · 2026 年 9 月 16 日",
+            "steam_rating": "184 reviews",
+            "steam_url": "https://store.steampowered.com/app/2572040",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2572040/855b9217d1120b78326801255bd87c22ca05ea16/header_alt_assets_0.jpg?t=1789654734",
+            "youtube_video": null,
+            "description": "《木木屋》就像一本可以触摸的3D填色书，通过精心打造的木制立体模型，讲述放松舒缓的故事。这里没有压力，只有一方惬意小天地，让人回忆起做回小孩的感觉。\n\n【核心玩法】木质拼图×涂色书：把彩色木件摆进素模立体场景补全画面，360 度大型场景与叙事小关交替进行；宽松的提示系统保证零卡关，难度定位是放松而非挑战。\n\n【美术与音效】全手作木雕质感，木件的纹理与碰撞声被刻意放大，Polygon 评价\"仿佛能摸到抛光手感\"，声音设计是核心加分项。\n\n【叙事】旁白讲述小狐狸 Foxy 被送去乡间过夏天、与青蛙朋友结识的睡前故事；评测提到\"放下手机亲近自然\"的主题有轻微说教感。\n\n【优势】治愈定位精准；全平台同步（Switch/Switch 2/PS5/PC/Xbox）；约 5 小时体量节奏舒适。\n【不足】难度偏低；叙事腔调见仁见智。\n\n【综合】Daedalic 发行的治愈解谜精品，2026 治愈系赛道的样板作之一。",
+            "why_notable": "把童年木质玩具的触感搬进解谜，多平台同步发行的治愈系差异化样本"
+          }
+        },
+        {
+          "idx": "新游推文 05",
+          "source": "Niche Gamer · 新作公布",
+          "tags": [
+            "动作",
+            "IP复活",
+            "新作公布"
+          ],
+          "title": "《电锯甜心 2: Back2Back》正式公布：百合子的电锯时隔 13 年回归",
+          "en_title": "Lollipop Chainsaw 2: Back2Back was announced!",
+          "full_text": "Lollipop Chainsaw 2: Back2Back was announced! https://t.co/cge9geiMpO https://t.co/uksnNnGJrg",
+          "author": "nichegamer",
+          "date": "2026-09-17",
+          "likes": 193,
+          "views": 5003,
+          "link": "https://x.com/nichegamer/status/2100418366062113156",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSYvX4EWAAAU92S.jpg"
+          },
+          "featured": false,
+          "game_ref": "Lollipop Chainsaw 2: Back2Back",
+          "summary": "Niche Gamer 报道：《电锯甜心》续作 Lollipop Chainsaw 2: Back2Back 正式公布。原作 2012 年由 Grasshopper Manufacture（须田刚一）打造，IP 现归 Dragami Games；续作的平台、发售窗口与细节尚未公开。",
+          "analysis": "12 年 IP 的隔代重启，砍丧尸+B 级片美学的组合在当下怀旧周期里有明确受众。关注点是投入规格：Dragami 此前的重制版口碑平平，续作是真人比例的正统投入还是轻量级试水，将决定这次 IP 复活的成色。",
+          "recommendation": "电锯甜心 2: Back2Back 公布：百合子的电锯时隔 13 年回归，细节待公开",
+          "enrichment": {
+            "game_name": "Lollipop Chainsaw 2: Back2Back",
+            "genre": "砍杀动作 / B级片美学",
+            "developer": "Dragami Games",
+            "platforms": [
+              "待公布"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】砍丧尸动作：啦啦队队长百合子手持电锯横扫丧尸潮，B 级片美学+流行乐演出延续原作风格；续作机制细节尚未公开。\n\n【背景】原作 2012 年由 Grasshopper Manufacture（须田刚一）与 Kadokawa 合作推出，登陆 PS3/Xbox 360；IP 权益现归 Dragami Games（原制作人安田文彦团队），此前已推出复刻版。\n\n【综合】时隔 13 年的正式续作公布，平台、发售窗口与开发规格待后续公开，IP 复活成色有待验证。",
+            "why_notable": "12 年 IP 隔代重启，B 级片美学在怀旧周期中的市场验证样本"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "Alpha Beta Gamer · 发售报道",
+          "tags": [
+            "跑酷",
+            "休闲",
+            "正式发售"
+          ],
+          "title": "Populus Run 今日登陆 Steam（独立开发 @wefiftytwo）：没有生命值、只有\"人\"的跑酷游戏",
+          "en_title": "In this game you don't have lives, you have PEOPLE!",
+          "full_text": "In this game you don't have lives, you have PEOPLE!\nAlso, the soundtrack's incredibly infectious. Like candy for your ears.\n\nPopulus Run releases today on Steam: https://t.co/VH5idQJgsF\n\n6 Level Gameplay Video: https://t.co/mSDwIctj6E\n\nby indie dev @wefiftytwo https://t.co/HGravIdijS",
+          "author": "gameralphabeta",
+          "date": "2026-09-16",
+          "likes": 641,
+          "views": 47995,
+          "link": "https://x.com/gameralphabeta/status/2100320117728936084",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2100285102869581824/img/duLCdVNxNWid2nOe.jpg",
+            "video_url": "https://x.com/gameralphabeta/status/2100320117728936084/video/1"
+          },
+          "unselected": true,
+          "summary": "独立开发者 @wefiftytwo 的 Populus Run 登陆 Steam：生命值是一群小人，掉一个少一个；配乐被盛赞\"像耳朵的糖果\"。",
+          "recommendation": "Populus Run 登陆 Steam：生命值是一群小人的可爱跑酷，配乐被赞\"耳朵的糖果\""
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "AUTOMATON · 新作公布",
+          "tags": [
+            "解谜",
+            "逃生",
+            "新作公布"
+          ],
+          "title": "《绝对遵守》公布：\"违反禁令就会死\"的逃生游戏——不许看、不许碰、不许停下",
+          "en_title": "「禁止事項を破ると死ぬ」脱出ゲーム『絶対遵守』発表",
+          "full_text": "「禁止事項を破ると死ぬ」脱出ゲーム『絶対遵守』発表。見るな、触れるな、立ち止まるな。\"何があっても\"規則を守ってビルから出る\nhttps://t.co/vrWZp7QGv1 https://t.co/Yq36HORX5A",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-17",
+          "likes": 550,
+          "views": 88566,
+          "link": "https://x.com/AUTOMATONJapan/status/2100496869583647172",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSZ24-5aQAAhBhN.jpg"
+          },
+          "unselected": true,
+          "summary": "日本媒体 AUTOMATON 报道：逃生游戏《绝对遵守》公布——不许看、不许碰、不许停下，\"无论发生什么\"都要遵守规则逃出大楼，违反禁令即死。",
+          "recommendation": "《绝对遵守》公布：违反禁令就会死的规则系逃生游戏，\"无论发生什么\"都要遵守规则"
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "AUTOMATON · 新作公布",
+          "tags": [
+            "村庄经营",
+            "ARPG",
+            "早期访问"
+          ],
+          "title": "《笑死，我家隔壁是魔王城》11 月 13 日早期访问：隔壁住着偶像魔王的村庄经营 ARPG",
+          "en_title": "「隣にアイドル魔王が住む」村づくりARPG『ワロタ、俺の家のとなり魔王城www』11月13日早期アクセス配信へ",
+          "full_text": "「隣にアイドル魔王が住む」村づくりARPG『ワロタ、俺の家のとなり魔王城www』11月13日早期アクセス配信へ。\"帽子\"を被って代わる代わる職変更、「熱狂魔族」を退ける\nhttps://t.co/A99AReDBlN https://t.co/33vrQpOfUq",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-17",
+          "likes": 387,
+          "views": 67653,
+          "link": "https://x.com/AUTOMATONJapan/status/2100438288096174310",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2100438225261322240/img/whLPDvaKHppnhGkt.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2100438288096174310/video/1"
+          },
+          "unselected": true,
+          "summary": "AUTOMATON 报道：村庄经营 ARPG《笑死，我家隔壁是魔王城》11 月 13 日早期访问——隔壁住着偶像魔王，靠换\"帽子\"切换职业，抵御\"狂热魔族\"的侵袭。",
+          "recommendation": "《笑死，我家隔壁是魔王城》11 月 13 日 EA：隔壁住着偶像魔王的村庄经营 ARPG"
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Game*Spark · 新作公布",
+          "tags": [
+            "合作",
+            "驾驶",
+            "新作公布"
+          ],
+          "title": "《Split Ride》公布：最多 4 人分工驾驶一辆车的合作冒险——方向盘、档位、仪表盘、地图各有其人",
+          "en_title": "最大4人で手分けして1台の車を運転する協力アドベンチャー『Split Ride』発表！",
+          "full_text": "最大4人で手分けして1台の車を運転する協力アドベンチャー『Split Ride』発表！ 絶景スポットで写真も撮れる\n\n1人目はハンドル、2人目はギア、3人目はダッシュボード、そして4人目は地図を担当します。\n\nhttps://t.co/cKuzUrZ3pv https://t.co/4RknUTGPc7",
+          "author": "gamespark",
+          "date": "2026-09-16",
+          "likes": 712,
+          "views": 66351,
+          "link": "https://x.com/gamespark/status/2100329050220974369",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2100328907115511808/pu/img/0_j0e7J8-MymmhPq.jpg",
+            "video_url": "https://x.com/gamespark/status/2100329050220974369/video/1"
+          },
+          "unselected": true,
+          "summary": "Game*Spark 报道：合作冒险《Split Ride》公布——最多 4 人分工驾驶一辆车：1 人方向盘、1 人档位、1 人仪表盘、1 人地图，还可沿途绝景点打卡拍照。",
+          "recommendation": "《Split Ride》公布：4 人分工开一辆车的合作冒险——方向盘/档位/仪表/地图各司其职"
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "Indie Game Joe · 独游推荐",
+          "tags": [
+            "动作",
+            "复古LCD",
+            "独游推荐"
+          ],
+          "title": "Future Knight：把老式 LCD 掌机画风做成现代动作游戏——扮演机器人和它体内的肿瘤",
+          "en_title": "These indie devs turned the look of old LCD handheld games into a modern action game",
+          "full_text": "These indie devs turned the look of old LCD handheld games into a modern action game\n\n- Play as a robot and the tumour inside him\n- Swap between them mid-fight to stay alive\n- Eight levels and eight hours to save the world\n\nGame is Future Knight https://t.co/McdsyStjt0",
+          "author": "IndieGameJoe",
+          "date": "2026-09-17",
+          "likes": 126,
+          "views": 2975,
+          "link": "https://x.com/IndieGameJoe/status/2100607228923293851",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2100605391738437633/img/hUCRA6PvpfD6ZgDM.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2100607228923293851/video/1"
+          },
+          "unselected": true,
+          "summary": "Indie Game Joe 推荐 Future Knight：把老式 LCD 掌机的画风做成现代动作游戏，扮演机器人与它体内的肿瘤，战斗中随时切换续命，8 关 8 小时流程。",
+          "recommendation": "Future Knight：老式 LCD 掌机画风+\"机器人与体内肿瘤\"双角色切换的动作游戏"
+        },
+        {
+          "idx": "新游参考 06",
+          "source": "Best Indie Games · 独游推荐",
+          "tags": [
+            "社交推理",
+            "合作",
+            "独游推荐"
+          ],
+          "title": "Dynamite Day：导弹防御掩体里的社交推理——6 人中可能有人在骗你，按不按下按钮？",
+          "en_title": "You're in a missile-defense bunker with minutes to decide if you are under a real attack or there's a spy lying to you",
+          "full_text": "You're in a missile-defense bunker with minutes to decide if you are under a real attack or there's a spy lying to you\n\n- Up to 6 players, one of you might be lying\n- Decide whether to push the button or not\n\nIt's called Dynamite Day. Would you play this? https://t.co/VLmx2ln2G2",
+          "author": "clemmygames",
+          "date": "2026-09-16",
+          "likes": 20,
+          "views": 2873,
+          "link": "https://x.com/clemmygames/status/2100359297741767090",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2100359236865667072/pu/img/sNXPSoI7lDu_DU8Y.jpg",
+            "video_url": "https://x.com/clemmygames/status/2100359297741767090/video/1"
+          },
+          "unselected": true,
+          "summary": "Best Indie Games 推荐 Dynamite Day：最多 6 人的导弹防御社交推理——警报响了，是真实袭击还是内鬼在撒谎？几分钟内决定按不按下按钮。",
+          "recommendation": "Dynamite Day：导弹掩体里的 6 人社交推理——按下按钮前，先搞清谁在撒谎"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity for Games · 官方更新",
+          "tags": [
+            "Unity",
+            "引擎",
+            "工作流"
+          ],
+          "title": "Unity 6.6 进入 Play Mode 大幅提速：新项目默认仅重载场景，为 Unity 7 移除 Domain Reload 铺路",
+          "en_title": "In Unity 6.6, the default setting for entering Play Mode is now reload scene only for all new projects",
+          "full_text": "Entering Play Mode just got significantly faster ⚡\n\nIn Unity 6.6, the default setting for entering Play Mode is now reload scene only for all new projects. This means code will not be reloaded getting you into Play Mode faster, and state, such as static variables, is not reset when entering Play Mode. \n\nWhy the shift? It's all part of the upcoming move to CoreCLR in Unity 7, where domain reloads will be removed completely.\n\n🔗 Learn how to upgrade your project code: https://t.co/AinvDNcEIL",
+          "author": "unitygames",
+          "date": "2026-09-16",
+          "likes": 205,
+          "views": 14712,
+          "link": "https://x.com/unitygames/status/2100312069463556575",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2100312004841926656/pu/img/Yely7tECXh2TPFQK.jpg",
+            "video_url": "https://x.com/unitygames/status/2100312069463556575/video/1"
+          },
+          "featured": false,
+          "summary": "Unity 官方宣布 Unity 6.6 中新项目进入 Play Mode 默认改为 reload scene only：代码不再重载、静态变量等状态保留，进入 Play Mode 显著加快。这是为 Unity 7 迁移 CoreCLR、彻底移除 domain reload 做的过渡，官方同步提供了存量代码迁移指南。",
+          "analysis": "迭代速度是引擎生产力的第一指标。CoreCLR+移除 domain reload 的路线确认后，依赖 reload 回调做初始化/清理的存量代码是主要迁移成本——现在开始用\"仅重载场景\"模式开发，就是提前还技术债。",
+          "recommendation": "Unity 6.6 默认跳过代码重载进 Play Mode：为 Unity 7 CoreCLR 移除 Domain Reload 铺路"
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Vitaly Gambala · 社区工具",
+          "tags": [
+            "Godot",
+            "后处理",
+            "社区工具"
+          ],
+          "title": "Godot 后期特效实时调试模块走红（13 万浏览）：关卡内实时叠层调效果，作者征集是否开源",
+          "en_title": "Never thought that layering post-effects in game would be SO SIMPLE and fun!",
+          "full_text": "Never thought that layering post-effects in game would be SO SIMPLE and fun!\n\nI literally launch any level of my game, tweak effects, and see results in real time. One custom-made module does the magic\n\nWhat do you think? Should I release it as an addon?\n#gamedev #indiedev #Godot https://t.co/PktlckRm9v",
+          "author": "gambala_pro",
+          "date": "2026-09-16",
+          "likes": 157,
+          "views": 134329,
+          "link": "https://x.com/gambala_pro/status/2100345548851056874",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2100345451786412032/img/hi6aY0CTSZHe7D7R.jpg",
+            "video_url": "https://x.com/gambala_pro/status/2100345548851056874/video/1"
+          },
+          "featured": false,
+          "summary": "开发者 Vitaly Gambala 展示自制 Godot 模块：启动任意关卡即可实时增删、调整后处理特效层并即时看到结果，一个自制模块搞定全部链路。视频获 13.4 万浏览，作者正在征集是否作为 addon 开源发布。",
+          "analysis": "后处理调参这类\"高频小循环\"工作流的工具缺口在 Godot 里长期存在，社区方案一展示就拿到 13 万浏览，说明需求真实且编辑器原生功能尚未覆盖；若开源，大概率成为 Godot 视觉管线的标配插件。",
+          "recommendation": "Godot 后期特效实时调试模块：关卡内实时叠层调效果，13 万浏览，作者征集是否开源"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**WARDOGS 一周 220 万份：40 美元定价带的最新爆款**\n据 Alinea Analytics，Bulkhead 的 WARDOGS 发售一周卖出 220 万份、营收约 7000 万美元，Steam 首发节奏快于 Arc Raiders 与 Helldivers 2 同期，收入已反超全平台的 Marathon。愿望单 57% 来自发售前最后一个月，\"晚热型\"预热曲线成为新模板。CEO 同日就 crunch 言论向 Eurogamer 致歉。\n\n**AI 双线：Agent 玩游戏玩出人味，判断型模型走向商用**\nGPT-6 Astra 连玩《我的世界》141 小时，被苦力怕炸光财产后\"心理受创\"摆烂种土豆；另一边，OpenAI 前核心研究员的 TypeSafe AI 发布判断型模型 Jev——不做生成只做分类路由，比 LLM 快 20~200 倍，DCVC 领投 4000 万美元。\n\n**新游侧：恶魔城归来 + 创意独游密集发售**\nDead Cells 团队操刀的《恶魔城：贝尔蒙特诅咒》TGS 试玩口碑爆棚，10 月 15 日发售；牙齿当血条的 Tooth for Tooth 9 月 30 日上线；Emberward 正式发售即压倒性好评；《电锯甜心 2》时隔 13 年公布。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
