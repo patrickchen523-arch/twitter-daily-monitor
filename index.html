@@ -717,6 +717,7 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
 .ld-real{display:inline-block;margin-left:10px;padding:3px 10px;background:#A33A2F;color:#fffaf4;font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;vertical-align:middle}
 .ld-rank-sub{margin-top:3px;color:#8b7169;font-size:11px;font-weight:800}
 .ld-board-cap{margin:4px 0 14px;color:#8b7169;font-size:11.5px;font-weight:800}
+.ld-partial-banner{max-width:1220px;margin:10px auto 0;padding:10px 16px;border:1px dashed rgba(135,48,38,.45);border-radius:8px;color:#873026;font-size:12.5px;font-weight:700;background:rgba(135,48,38,.05)}
 .ld-board-more{margin-top:16px;padding-top:14px;border-top:1px solid rgba(60,43,39,.11);display:flex;justify-content:flex-end;gap:10px}
 .ld-col-rank.is-collapsed .ld-col-rank-item:nth-child(n+11){display:none}
 .ld-more-link{text-decoration:none}
@@ -2852,6 +2853,7 @@ function renderLaunchedContent() {
   const prevLeft = prevScroller ? prevScroller.scrollLeft : 0;
   host.innerHTML = `
   ${renderLaunchedDateStrip()}
+  ${d.partial_note ? `<div class="ld-partial-banner">⚠️ ${escapeHtml(d.partial_note)}</div>` : ''}
   <div class="ld-picks-zone">
     ${heroBg ? `<div class="ld-hero-bg"><img src="${heroBg}" alt="" referrerpolicy="no-referrer" onerror="this.parentNode.style.display='none'"></div>` : ''}
     <div class="ld-lede">
