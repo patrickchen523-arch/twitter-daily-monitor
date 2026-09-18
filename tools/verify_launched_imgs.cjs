@@ -24,7 +24,8 @@ for (const id of ['steamdb', 'bilibili', 'twitter', 'roblox']) {
   assert(board.items.every(it => !it.release || it.release <= releaseLimit), `${id} 混入未来发售游戏`);
   assert(board.items.every(it => /^https?:\/\//.test(it.thumb || '')), `${id} 存在无效封面`);
 }
-// 档期连续性：历史断档仅告警，最新一期必须与上一期相邻（缺档=漏跑游戏关注页更新）
+// 档期连续性：历史断档仅告警（过渡期欠账允许存在，如 2026-09-14→09-18）；
+// 最新档期距今天 ≤2 天（断更=漏跑游戏关注页更新——比"两期相邻"更能容忍历史欠账，同时保留断更告警）
 {
   const ds = manifest.dates;
   const gaps = [];
@@ -33,8 +34,10 @@ for (const id of ['steamdb', 'bilibili', 'twitter', 'roblox']) {
     if (diffDays !== 1) gaps.push(`${ds[i - 1]}→${ds[i]}(${diffDays}天)`);
   }
   if (gaps.length) console.log('warn: 历史日期断档:', gaps.join(', '));
-  const tailGap = (new Date(ds.at(-1)) - new Date(ds.at(-2))) / 86400000;
-  assert(tailGap === 1, `最新一期 ${ds.at(-1)} 与上一期 ${ds.at(-2)} 存在断档，请补建缺失日期`);
+  const now = new Date();
+  const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  const stall = Math.round((new Date(todayStr) - new Date(ds.at(-1))) / 86400000);
+  assert(stall <= 2, `最新档期 ${ds.at(-1)} 距今 ${stall} 天（>2），游戏关注页断更，请建当日档期`);
 }
 // roblox 榜档期必须与 roblox/ 目录最新周报一致（周报上传后必须跑 update_roblox_board 链）
 {
