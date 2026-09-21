@@ -1,36 +1,30 @@
 // Roblox 周榜游戏详情: 简介/类型/创建时间/实时在线 -> 写入 launched JSON 条目
 // 用法: node tools/fetch_roblox_details.js [日期]
-const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const { getJson } = require('./_roblox_http.cjs');  // 直连失败自动走代理（公司网络直连 roblox API 会挂起）
 
 const date = process.argv[2] || '2026-08-05';
 const launchedPath = path.join(__dirname, '..', 'data', 'launched', `${date}.json`);
 const launched = JSON.parse(fs.readFileSync(launchedPath, 'utf8'));
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const getJson = url => new Promise(resolve => {
-  const req = https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 12000 }, res => {
-    let d = '';
-    res.on('data', c => d += c);
-    res.on('end', () => { try { resolve(JSON.parse(d)); } catch (e) { resolve(null); } });
-    res.on('error', () => resolve(null));
-  });
-  req.on('timeout', () => { req.destroy(); resolve(null); });
-  req.on('error', () => resolve(null));
-});
 
 (async () => {
   const board = launched.boards.find(b => b.id === 'roblox');
   if (!board) { console.log('no roblox board'); return; }
 
-  // 1. 每个游戏搜 universeId
+  // 1. 每个游戏搜 universeId（omni-search 偶发风控返回空组：未命中换新 sessionId 重试一次）
   for (const it of board.items) {
     if (it.universeId) continue;
-    const q = encodeURIComponent(it.name);
-    const s = await getJson(`https://apis.roblox.com/search-api/omni-search?searchQuery=${q}&pageType=all&sessionId=s${Date.now()}`);
-    const games = s && s.searchResults && s.searchResults.find(r => r.contentGroupType === 'Game');
-    const first = games && games.contents && games.contents[0];
+    let first = null;
+    for (let attempt = 0; attempt < 2 && !first; attempt++) {
+      if (attempt) await sleep(1200);
+      const q = encodeURIComponent(it.name);
+      const s = await getJson(`https://apis.roblox.com/search-api/omni-search?searchQuery=${q}&pageType=all&sessionId=s${Date.now()}${attempt}`);
+      const groups = (s && s.searchResults || []).filter(r => r.contentGroupType === 'Game');
+      first = groups.flatMap(g => g.contents || [])[0] || null;
+    }
     if (first && first.universeId) it.universeId = first.universeId;
     await sleep(150);
   }
