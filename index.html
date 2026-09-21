@@ -2373,7 +2373,7 @@ function renderContent(targetId = 'content') {
         <article class="${cardClass}" id="card-${sec.id}-${itemIdx}" style="border-left-color:${borderColor}" data-section="${sec.id}" data-searchable="${searchText}">
           <div class="card-top">
             <span class="card-idx" style="color:${idxColor};background:${idxBg}">${item.idx}</span>
-            <span class="badge">${item.source}</span>
+            ${item.source ? `<span class="badge">${item.source}</span>` : ''}
             ${tagsHtml}
           </div>
           <h2>${item.title}</h2>
