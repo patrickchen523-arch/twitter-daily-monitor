@@ -17,8 +17,14 @@ next.date = date;
 next.note = date + ' 期';
 next.picks = [];
 delete next.picks_generated_from;
+delete next.partial_note;  // 历史回补标注只属原期，新建期不继承
 for (const b of next.boards) {
-  if (b.id === 'steamdb' || b.id === 'bilibili' || b.id === 'twitter') b.items = [];
+  if (b.id === 'steamdb' || b.id === 'bilibili' || b.id === 'twitter') {
+    b.items = [];
+    delete b.missing;          // 缺失标注同上，不继承
+    delete b.generated_from;   // 榜单待重建，旧哈希作废
+  }
+  if (b.id === 'twitter') delete b.data_through;  // 数据截止日同样不继承
 }
 fs.writeFileSync(target, JSON.stringify(next, null, 1));
 man.dates.push(date);
