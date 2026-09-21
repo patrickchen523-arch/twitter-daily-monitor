@@ -1,0 +1,612 @@
+{
+ "date": "2026-09-21",
+ "meta": {
+  "raw_count": 217,
+  "filtered_count": 155,
+  "selected_count": 20,
+  "crawl_time": "2026-09-21 18:00"
+ },
+ "lede": "索尼一通 Zoom 电话退出 Physint，小岛工作室回应『健康且盈利』；宝可梦like 新游 Aniimo 上线一周冲上 16 万同时在线；Jev+Astra 不到 1 美元成本速通末影龙，AI Agent 游戏自动化进入实用期。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Jev+Astra 双模型协作 8 分 43 秒速通末影龙——总成本 0.97 美元，代码开源"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "Potato Please：真实物理削土豆皮模拟——一把刀一个桶一座土豆山"
+  },
+  {
+   "section_id": "tools",
+   "item_index": 0,
+   "hook": "Godot 粘性流体模拟：混溶+附着全支持，Noita 式『万物皆可模拟』正在平民化"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Jev+Astra 双模型协作 8 分 43 秒速通 Minecraft 末影龙，总成本 0.97 美元且代码开源\n开发者用 Jev 搭建全自动链上交易机器人，一晚亏损 31,680 美元\n独立开发者用 GPT-6 Astra 构建整理末日地堡模拟游戏，AI 生成走向完整玩法闭环"
+  },
+  {
+   "id": "industry",
+   "text": "索尼 Zoom 通话退出 Physint，小岛称『震惊』，工作室回应『健康且盈利』\n宝可梦like 新游 Aniimo 上线一周 Steam 同时在线破 16 万\nXbox 新专利：自动检测加载/过场『自然时机』插入游戏内广告\nMarvel's Wolverine 发售 3 天销量超《死亡搁浅 2》"
+  },
+  {
+   "id": "indie",
+   "text": "Potato Please：真实物理削土豆皮模拟，Steam 页面已上线\nBack To School：1 名教师对战 10 名学生的学级崩坏非对称对抗公布\nThe Legend of California：淘金热开放世界生存 FPS，Playtest 报名开启"
+  },
+  {
+   "id": "tools",
+   "text": "Godot 粘性流体模拟演示：混溶与附着全支持，46 万播放\n3D 像素防抖实战技巧：放弃正方形像素换更强透视稳定性"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "AI Agent · 游戏自动化",
+     "tags": [
+      "AI Agent",
+      "Minecraft",
+      "开源"
+     ],
+     "title": "Jev+Astra 8分43秒速通末影龙：双模型协作成本不到 1 美元，代码已开源",
+     "en_title": "Jev + Astra beats the Ender Dragon in Minecraft in 8 minutes 43 seconds! Cost less than $1 ($0.01 Jev, $0.96 Astra)",
+     "full_text": "Jev + Astra beats the Ender Dragon in Minecraft in 8 minutes 43 seconds! ⏱️\n\nCost less than $1 ($0.01 Jev, $0.96 Astra)\n\nI open sourced the code and explain the harness setup below. This type of movement is only possible with Jev's near instant decisionmaking, and some continually learning skills from Astra.",
+     "author": "Ronak Malde",
+     "date": "2026-09-20",
+     "likes": 4811,
+     "views": 765592,
+     "link": "https://x.com/rronak_/status/2101544156757950697",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2101542497042481152/img/edco8P9wl-DUp5z8.jpg",
+      "video_url": "https://x.com/_a/status/2101544156757950697/video/1"
+     },
+     "summary": "开发者 Ronak Malde 用决策模型 Jev 与持续学习技能的 GPT-6 Astra 协作，让 AI Agent 在 Minecraft 中 8 分 43 秒击败末影龙，总成本 0.97 美元（Jev 0.01 美元 + Astra 0.96 美元）。作者已开源全部代码并公开 harness 搭配方法，指出这种机动性依赖 Jev 的近即时决策与 Astra 的持续学习技能。",
+     "analysis": "Jev 昨日刚因『大模型传动轴』式降本架构刷屏，今天已出现游戏内实用化标杆：毫秒级决策与持续学习技能的分工范式，可直接迁移到游戏 NPC、自动化测试与玩法仿真。Agent 玩游戏的单次成本已跌破 1 美元，QA 自动化与 AI 玩家陪玩的经济学正在改写。",
+     "recommendation": "Jev+Astra 协作 8 分 43 秒速通末影龙——总成本 0.97 美元，代码开源",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "AI Agent · 实战复盘",
+     "tags": [
+      "AI Agent",
+      "量化交易",
+      "翻车实录"
+     ],
+     "title": "开发者用 Jev 搭全自动链上交易机器人：一晚亏损 31,680 美元",
+     "en_title": "Jev is INSANE. A real-time trading bot ingesting onchain+offchain data... Fully autonomous. So far it has lost me $31,680.",
+     "full_text": "Jev is INSANE.\n\nI built this in an evening and morning. A real-time trading bot ingesting onchain+offchain data to make rapid decisions about trades. Fully autonomous.\n\nSo far it has lost me $31,680. https://t.co/0LQUbx6PmW",
+     "author": "Moon",
+     "date": "2026-09-19",
+     "likes": 14837,
+     "views": 822267,
+     "link": "https://x.com/MoonGotchi/status/2101320141065609294",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2101320107947401216/img/4Uj1jx6q_1O7MusA.jpg",
+      "video_url": "https://x.com/_a/status/2101320141065609294/video/1"
+     },
+     "summary": "开发者 Moon 用一个晚上加一个早晨，搭出接入链上+链下数据的 Jev 实时交易机器人，完全自主决策，目前累计亏损 31,680 美元。推文附决策过程视频，1.4 万赞、82 万播放。",
+     "analysis": "这是 Jev 刷屏后首个高关注『实战翻车』案例：搭建成本趋近于零意味着人人可部署，但自主决策的经济后果同样被无限放大。对游戏行业的启示在于——Agent 的能力上限不再是瓶颈，风险控制与止损机制才是。",
+     "recommendation": "Jev 全自动交易机器人一个通宵搭成，一晚亏掉 31,680 美元",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "AI 应用 · 独立开发",
+     "tags": [
+      "AI 生成",
+      "GPT-6 Astra",
+      "独立开发"
+     ],
+     "title": "开发者用 GPT-6 Astra 造出『整理末日地堡』模拟游戏：数千物资逐一归位",
+     "en_title": "I made a game where you organize an entire survival bunker. Thousands of supplies dumped on the floor... Game built with AI using GPT-6 Astra on @TesanaAI",
+     "full_text": "I made a game where you organize an entire survival bunker. Thousands of supplies dumped on the floor, and you shelve them one at a time. \n\nIt's done when it's clean.\n\nGame built with AI using GPT-6 Astra on @TesanaAI https://t.co/yXNgmdmvWx",
+     "author": "S",
+     "date": "2026-09-19",
+     "likes": 543,
+     "views": 93564,
+     "link": "https://x.com/Rubzem/status/2101401091267281060",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2101400815328174080/img/ytUAn2PxcH3MdxSu.jpg",
+      "video_url": "https://x.com/_a/status/2101401091267281060/video/1"
+     },
+     "summary": "独立开发者 Rubzem 展示用 GPT-6 Astra（TesanaAI 平台）构建的整理模拟游戏：玩家把散落一地的数千件生存物资逐件上架归位，『收拾干净即通关』。9.4 万播放。",
+     "analysis": "AI 生成游戏正从『一次性 demo』走向完整玩法闭环：整理类玩法规则简单、资产密集，恰好是 AI 生成管线最能扬长避短的品类。『低逻辑+高内容量』的品类会率先被 AI 工作流重构。",
+     "recommendation": "GPT-6 Astra 全程构建整理模拟游戏：数千物资逐件归位，收拾干净即通关"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "PC Gamer · 大厂动态",
+     "tags": [
+      "索尼",
+      "小岛秀夫",
+      "3A成本"
+     ],
+     "title": "索尼 Zoom 通话终止 Physint 合作，小岛称『震惊』；工作室回应『健康且盈利』",
+     "en_title": "Hideo Kojima says he was 'shocked' after Sony cut ties with Physint over a Zoom call: 'Nothing could've prepared me for their decision to step away from the project'",
+     "full_text": "Hideo Kojima says he was 'shocked' after Sony cut ties with Physint over a Zoom call https://t.co/DmGVRVjHJp",
+     "author": "PC Gamer",
+     "date": "2026-09-20",
+     "likes": 88,
+     "views": 24453,
+     "link": "https://x.com/pcgamer/status/2101663721051566366",
+     "media": null,
+     "summary": "小岛秀夫透露索尼在一次 Zoom 通话中决定退出 Physint 项目，『没有什么能让我为他们的退出做好准备』；多家媒体此前报道该项目超支与延期，小岛工作室随后发声明回应，称『工作室处于健康且盈利的状态』，并表示仍『热爱索尼』。Kojima Productions 已就彭博报道正式表态。",
+     "analysis": "一款 SIE 旗舰级原创 IP 以一通视频电话的方式终止，再次说明大厂对 3A 原创新作的成本容忍度已到临界点。对从业者而言，『工作室是否盈利』已成为比创意本身更硬的存续指标。",
+     "recommendation": "索尼一通 Zoom 电话退出 Physint，小岛称『震惊』——工作室回应仍健康盈利",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "PC Gamer · 市场表现",
+     "tags": [
+      "PCU",
+      "宝可梦like",
+      "F2P"
+     ],
+     "title": "宝可梦like 新游 Aniimo 上线一周冲上 16 万同时在线",
+     "en_title": "Yet another Pokémon-inspired game is popping off on Steam, with over 160,000 concurrent players for Aniimo",
+     "full_text": "Yet another Pokémon-inspired game is popping off on Steam, with over 160,000 concurrent players https://t.co/JCblEb3Svm",
+     "author": "PC Gamer",
+     "date": "2026-09-20",
+     "likes": 3,
+     "views": 3721,
+     "link": "https://x.com/pcgamer/status/2101708817671262349",
+     "media": null,
+     "summary": "免费开放世界捕捉 RPG Aniimo（Pawprint Studio 开发，9 月 15 日发售）Steam 同时在线突破 16 万，成为又一匹『宝可梦like』黑马。游戏主打开放大陆 Idyll 探索与 Aniimo 结伴能力系统。",
+     "analysis": "从 Palworld 到 Aniimo，『捕捉+开放世界+F2P』公式持续被验证：任天堂垄断的品类空隙足以养出 16 万 PCU 的产品。对国产团队而言，该品类的窗口期仍在，但留存与长线运营才是真正的分水岭。",
+     "recommendation": "宝可梦like 新游 Aniimo 上线一周 16 万同时在线——F2P 开放世界捕捉 RPG",
+     "featured": true,
+     "game_ref": "Aniimo",
+     "enrichment": {
+      "game_name": "Aniimo",
+      "genre": "开放世界 / 生物捕捉 / F2P RPG",
+      "developer": "Pawprint Studio",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "免费（F2P）",
+      "release_date": "已发售 · 2026年9月15日",
+      "steam_rating": "暂无足够评价样本",
+      "steam_url": "https://store.steampowered.com/app/4126040/Aniimo/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/bf9b76d25ac135baf8f313d9a095e754fd2e950b/header.jpg?t=1789813151",
+      "youtube_video": null,
+      "description": "【核心玩法】Aniimo 是一款免费（F2P）的次世代生物捕捉开放世界 RPG，玩家在广阔大陆 Idyll 上探索，与各具特色的 Aniimo 结伴（Twine），解锁新能力，并可前往漂浮于空中的都市与其他玩家相遇。\n\n【市场表现】9 月 15 日上线，一周内 Steam 同时在线突破 16 万（据 PC Gamer 报道），成为继 Palworld 之后又一匹『宝可梦like』黑马。有数GI 接口登录态失效，未能拉取更细的峰值/留存数据。\n\n【对标定位】套『宝可梦like』公式（捕捉+收集+开放世界）叠 F2P 商业化，与 Palworld 的『买断+生存建造』路径错位竞争。\n\n【优势】免费门槛极低；捕捉玩法直觉；开放世界+空中都市的视觉记忆点强。\n\n【不足】F2P 长线商业化与内容更新节奏尚未验证；IP 缺乏自带粉丝基本盘。\n\n【综合】证明『宝可梦like』品类窗口期仍在，但真正的分水岭在上线后的留存与运营。",
+      "why_notable": "上线一周 16 万同时在线，验证宝可梦like 品类在买断与 F2P 两条路线上的持续空间",
+      "pcu": "160,000+（Steam 同时在线，据 PC Gamer 2026-09-20 报道）",
+      "current_players": null,
+      "estimated_sales": "F2P，无销量口径",
+      "gi_summary": "『宝可梦like』套『F2P 开放世界』新瓶，Pawprint Studio 开发，9月15日免费上线"
+     }
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Destructoid · 平台政策",
+     "tags": [
+      "Xbox",
+      "游戏内广告",
+      "专利"
+     ],
+     "title": "Xbox 专利曝光：自动检测『自然时机』在游戏内插入广告",
+     "en_title": "XBOX has patented new technology capable of 'detecting natural moments' to display in-game ads with minimal disruption, likely to be used for its cloud-based gaming service.",
+     "full_text": "XBOX has patented new technology capable of \"detecting natural moments\" to display in-game ads with minimal disruption, likely to be used for its cloud-based gaming service. \n\nRead more here: https://t.co/itZw2BrTVh https://t.co/iOeDrVZkwG",
+     "author": "Destructoid",
+     "date": "2026-09-19",
+     "likes": 6,
+     "views": 5325,
+     "link": "https://x.com/destructoid/status/2101374449203249466",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSmU0_hWgAAypJh.jpg"
+     },
+     "summary": "据 XBOX 泄密者 eXtas1s，微软专利展示了一套能在游戏会话中检测『自然时机』（如加载画面、过场动画结束）插入广告的系统，以最小化对玩法的打断，预计优先用于云游戏服务。",
+     "analysis": "云游戏商业模式难产多年，平台正在游戏内广告上寻找变现出口。『不打断玩法』的技术包装改变不了货币化深化的方向，开发者分成与玩家体验的博弈值得持续跟踪。",
+     "recommendation": "Xbox 新专利：自动检测加载/过场等『自然时机』插入游戏内广告"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "TheGamer · 市场表现",
+     "tags": [
+      "销量",
+      "PS5",
+      "IP改编"
+     ],
+     "title": "Marvel's Wolverine 发售 3 天销量已超《死亡搁浅 2》",
+     "en_title": "After 3 Days, Marvel's Wolverine Has Already Outsold Death Stranding 2",
+     "full_text": "After 3 Days, Marvel's Wolverine Has Already Outsold Death Stranding 2 https://t.co/bMuiVOlRpS https://t.co/avx0Xk3IAk",
+     "author": "TheGamer",
+     "date": "2026-09-20",
+     "likes": 0,
+     "views": 849,
+     "link": "https://x.com/thegamerwebsite/status/2101521782268207220",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSoa7MZW8AADGvF.jpg"
+     },
+     "summary": "据 TheGamer，Insomniac 的 Marvel's Wolverine 发售仅 3 天，销量已超过《死亡搁浅 2》同期表现。超级英雄 IP 动作游戏再次展现 PS5 第一方阵营的吸金能力。",
+     "analysis": "超英 IP + 成熟动作系统的组合仍是销量保险箱，但也意味着 PS 第一方对 IP 改编的依赖在加深。另据 Eurogamer，Insomniac 已否认玩家发现的『生成式 AI』痕迹（游戏内厕所标识异常）。",
+     "recommendation": "Marvel's Wolverine 发售 3 天销量超《死亡搁浅 2》——超英 IP 的 PS5 吸金力",
+     "game_ref": "Marvel's Wolverine",
+     "enrichment": {
+      "game_name": "Marvel's Wolverine",
+      "genre": "动作冒险 / 超级英雄",
+      "developer": "Insomniac Games",
+      "platforms": [
+       "PS5"
+      ],
+      "price": null,
+      "release_date": "已发售 · 2026年9月中旬",
+      "steam_rating": null,
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【基本盘】Insomniac Games（《漫威蜘蛛侠》系列）开发的漫威金刚狼主题动作冒险游戏，PS5 平台独占。据 TheGamer 报道，发售后 3 天销量即超过《死亡搁浅 2》同期。\n\n【市场解读】超级英雄 IP + 成熟动作系统的组合延续 PS 第一方的吸金惯性；另据 Eurogamer 报道，Insomniac 已否认玩家发现的『生成式 AI』痕迹（游戏内厕所标识异常）。",
+      "why_notable": "PS5 第一方 IP 改编的又一销量保险箱样本，3 天超《死亡搁浅 2》同期",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": "发售 3 天超《死亡搁浅 2》同期（TheGamer）",
+      "gi_summary": "漫威金刚狼 IP 动作冒险，Insomniac 开发，PS5 独占"
+     }
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Indie Freaks · 新游曝光",
+     "tags": [
+      "模拟",
+      "物理演算",
+      "Steam"
+     ],
+     "title": "Potato Please：Golden Horn Studios 的第一人称真实物理削土豆皮模拟",
+     "en_title": "《日本語対応》物理演算ジャガイモ皮むきゲーム『Potato Please』ナイフでジャガイモの皮をむこう。だが、ジャガイモは山ほどある。",
+     "full_text": "《日本語対応》物理演算ジャガイモ皮むきゲーム『Potato Please』\n\nナイフでジャガイモの皮をむこう。\nだが、ジャガイモは山ほどある。\n効率よく仕事を終える方法を探せ。 https://t.co/hzePFQA7KG",
+     "author": "Indie Freaks👜インディーゲームグッズ販売中！",
+     "date": "2026-09-20",
+     "likes": 4192,
+     "views": 495177,
+     "link": "https://x.com/Indie_FreaksJP/status/2101491592620384759",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2101490987722067968/img/mTfWAMi9rv23It4P.jpg",
+      "video_url": "https://x.com/_a/status/2101491592620384759/video/1"
+     },
+     "summary": "Golden Horn Studios 的第一人称削土豆游戏：一把刀、一个桶、一座土豆山，基于真实物理削皮——削薄点、别浪费，买更好的工具，把堆清完为止。Steam 页面已上线（即将推出）。",
+     "analysis": "『低门槛物理交互+无限重复的劳动模拟』是近年 Steam 黑马的标配公式（PowerWash 系）。TGS 期间由日本独游账号集中曝光，49 万播放说明整活向劳动模拟的跨市场传播力。",
+     "recommendation": "Potato Please：真实物理削土豆皮模拟——一刀一桶一座土豆山",
+     "featured": true,
+     "game_ref": "Potato Please",
+     "enrichment": {
+      "game_name": "Potato Please",
+      "genre": "模拟 / 第一人称 / 物理交互",
+      "developer": "Golden Horn Studios",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5266240/Potato_Please/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5266240/e289442aa6b3756109bc65b427556ea538efb849/header.jpg?t=1789851788",
+      "youtube_video": null,
+      "description": "【核心玩法】第一人称削土豆皮模拟：你有一把刀、一个桶和一座土豆山。基于真实物理削皮——削薄一点、别浪费，逐步购入更好的工具，把整座山清完为止。效率与手感的平衡构成核心循环。\n\n【对标定位】延续 PowerWash Simulator 一脉的『禅意劳动模拟』公式：低门槛物理交互+重复劳动的解压感，配合整活题材降低传播门槛。\n\n【美术与氛围】写实风格的厨房/仓库场景，土豆的材质与削皮碎屑的物理反馈是卖相核心。\n\n【优势】题材新奇自带梗传播力；物理手感是独游黑马的历史验证赛道；TGS 期间被日本独游社区集中转发（49 万播放）。\n\n【不足】玩法单一循环的长线留存存疑；内容深度取决于工具成长线的厚度。\n\n【综合】物理劳动模拟的又一个『小而怪』样本，值得跟踪 Demo/EA 的口碑走向。",
+      "why_notable": "真实物理削土豆皮的整活题材+劳动模拟公式的组合，TGS 期间跨市场传播力已被验证",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无",
+      "gi_summary": "『物理演算』套『劳动模拟』新瓶，Golden Horn Studios 开发，Steam 即将推出"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "ゲムのすけ · TGS 2026",
+     "tags": [
+      "非对称对抗",
+      "多人在线",
+      "TGS 2026"
+     ],
+     "title": "Back To School：1 名教师对战 10 名学生的『学级崩坏』非对称对抗，3-11 人在线",
+     "en_title": "先生1人vs問題児10人！生徒は学級崩壊を目指し、教師は全力で阻止せよ。教師と問題児が本気でツブし合う学級崩壊系対戦ゲーム『Back To School』発表",
+     "full_text": "先生1人vs問題児10人！\n生徒は学級崩壊を目指し、教師は全力で阻止せよ\n\nバレないようにカンニングし、\n掃除時間は思いっきり遊べ\nただし先生に見つかったら終わり\n\n教師と問題児が本気でツブし合う\n学級崩壊系対戦ゲーム『Back To School』発表\nhttps://t.co/DEQxzYAhm6 https://t.co/cRA2oJcUN1",
+     "author": "ゲムのすけはインディーゲーム大好き",
+     "date": "2026-09-20",
+     "likes": 631,
+     "views": 62456,
+     "link": "https://x.com/dotpixel3d/status/2101491535384907813",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2101276115059015680/img/sBTop1Mk8KhdWmlB.jpg",
+      "video_url": "https://x.com/_a/status/2101491535384907813/video/1"
+     },
+     "summary": "Zozy Game Studio 公布的线上学级崩坏对抗游戏：学生阵营目标是让班级崩坏（考试作弊、打扫时间疯玩），教师阵营全力阻止；3-11 人在线，核心是『别被老师抓到』。TGS 2026 期间公布。",
+     "analysis": "把校园日常冲突抽象成『1 vs 10 非对称目标对抗』，规则直觉、传播友好，是 Among Us 之后社区游戏的典型设计思路。日系整活题材+多人社交裂变的组合值得观察其测试表现。",
+     "recommendation": "Back To School：1 老师拦 10 学生的学级崩坏对抗——作弊、疯玩、别被抓",
+     "game_ref": "Back To School",
+     "enrichment": {
+      "game_name": "Back To School",
+      "genre": "非对称对抗 / 多人在线 / 派对",
+      "developer": "Zozy Game Studio",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5047150/Back_To_School/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5047150/ce5bcaff80e0c135d61c40869f4c560ce3dff9e7/header.jpg?t=1789724764",
+      "youtube_video": null,
+      "description": "【核心玩法】1 名教师对战 10 名学生的『学级崩坏』非对称在线对抗，支持 3-11 人：学生阵营的目标是让班级崩坏——考试作弊、打扫时间尽情疯玩、课间拆教室；教师阵营则要全力阻止一切，抓住违规者。『别被老师抓到』构成紧张感的来源。\n\n【对标定位】Among Us / Propnight 一脉的社交欺骗+非对称目标对抗，但把舞台放在校园日常，冲突更直觉、更易做梗传播。\n\n【优势】规则一句话讲清；校园整活题材在日韩市场自带亲和度；TGS 2026 公布时已获日本独游社区转发。\n\n【不足】1 vs 10 的平衡性调校难度高；派对游戏的留存依赖持续的内容与梗更新。\n\n【综合】题材与结构都足够『社交裂变友好』，值得观察其测试期表现。",
+      "why_notable": "1 名教师拦截 10 名学生的学级崩坏设定，规则直觉+传播友好，TGS 2026 新品",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无",
+      "gi_summary": "『学级崩坏』套『非对称对抗』新瓶，Zozy Game Studio 开发，TGS 2026 公布"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "WhatGames · 新游曝光",
+     "tags": [
+      "开放世界",
+      "生存FPS",
+      "Playtest"
+     ],
+     "title": "The Legend of California：淘金热时代的开放世界生存 FPS，3 人合作 Playtest 报名开启",
+     "en_title": "The Legend of California — open-world survival FPS set on the mythical Island of California. Play solo or with up to 3 friends... Playtest sign-ups ↓",
+     "full_text": "The Legend of California — open-world survival FPS set on the mythical Island of California\n\n- Play solo or with up to 3 friends\n- Explore an ever-changing open world\n- Hunt wildlife and fight hostile camps\n- Build and expand your own ranch\n- Add mines, stables & crafting stations\n- Take on other players in optional PvP\n\nPlaytest sign-ups ↓",
+     "author": "WhatGames",
+     "date": "2026-09-20",
+     "likes": 708,
+     "views": 66194,
+     "link": "https://x.com/whatgamesv1/status/2101461785391837678",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2101461584769949697/img/3fGUdOhDQrEKQE51.jpg",
+      "video_url": "https://x.com/_a/status/2101461785391837678/video/1"
+     },
+     "summary": "Kintsugiyama 开发的开放世界动作生存射击游戏，舞台是神话中的加利福尼亚岛（淘金热时代）：单人或最多 3 人合作，狩猎、清剿敌对营地、经营牧场，可建矿井/马厩/工坊，含可选 PvP。Playtest 报名已开启。",
+     "analysis": "『生存建造+射击+轻 PvP』的加州淘金题材差异化明显——美国神话地理+时代背景给了少见的叙事容器。该品类竞争极度红海，题材新鲜度能否转化为留存是关键。",
+     "recommendation": "The Legend of California：淘金热生存FPS——Playtest报名开启",
+     "game_ref": "The Legend of California",
+     "enrichment": {
+      "game_name": "The Legend of California",
+      "genre": "开放世界 / 动作生存 / 射击",
+      "developer": "Kintsugiyama",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售（Playtest 阶段）",
+      "steam_url": "https://store.steampowered.com/app/2550530/The_Legend_of_California/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2550530/f696bb757fa0d384eeb2e828b03e4ca199d65ab4/header.jpg?t=1788227261",
+      "youtube_video": null,
+      "description": "【核心玩法】设定在神话中『加利福尼亚岛』淘金热时代的开放世界动作生存射击：单人或最多 3 人合作；探索多变的开阔地带，狩猎野生动物、清剿敌对营地；建造并扩张自己的牧场，添置矿井、马厩与制作工坊；另含可选 PvP。\n\n【对标定位】Valheim/Ranch Simulator 一脉的『生存建造+』配方，叠加 FPS 战斗与淘金热时代背景做差异化。\n\n【优势】『神话加州岛+淘金热』的题材容器少见，叙事辨识度高；合作+建造+射击的组合覆盖面广。\n\n【不足】生存 FPS 是极度红海品类，题材新鲜度能否转化为留存是最大问号。\n\n【综合】Playtest 报名已开启，题材差异化值得一份愿望单。",
+      "why_notable": "淘金热时代+神话加州岛的开放世界生存 FPS，题材差异化明显，Playtest 报名开启",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无",
+      "gi_summary": "『生存FPS』套『淘金热开放世界』新瓶，Kintsugiyama 开发，Playtest 招募中"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "title": "Mythologous：独立开发者 6 年打造凯尔特神话在线文字 RPG，手绘地图超 50 万格",
+     "en_title": "A solo dev has spent 6+ years building an online text RPG rooted in Celtic myth. The handcrafted overworld runs to over 500,000 tiles. It's called Mythologous.",
+     "full_text": "A solo dev has spent 6+ years building an online text RPG rooted in Celtic myth.\n\n- The handcrafted overworld runs to over 500,000 tiles\n- NPCs work, steal, drink and sleep whether you log in or not\n\nIt's called Mythologous. Any interest? https://t.co/7A0cET6c38",
+     "author": "Best Indie Games",
+     "date": "2026-09-19",
+     "likes": 99,
+     "views": 5802,
+     "link": "https://x.com/clemmygames/status/2101401100322512918",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2101401056483696640/pu/img/bkYhAznmmh0TvIcP.jpg",
+      "video_url": "https://x.com/_a/status/2101401100322512918/video/1"
+     },
+     "summary": "独立开发者 clem 的 Mythologous：凯尔特神话题材在线文字 RPG，手绘世界超 50 万格，NPC 在你不在线时也会工作、偷窃、喝酒、睡觉。",
+     "recommendation": "Mythologous：6 年单人开发的凯尔特神话文字 RPG——NPC 有自己的作息",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "title": "GACHIAKUTA: BREAKOUT 定档 2027 并首曝实机",
+     "en_title": "GACHIAKUTA: BREAKOUT got a 2027 release and a first look at gameplay",
+     "full_text": "GACHIAKUTA: BREAKOUT got a 2027 release and a first look at gameplay: https://t.co/2UXMaFrWeS https://t.co/DdVUqfK6TN",
+     "author": "Niche Gamer 🔜 TGS",
+     "date": "2026-09-18",
+     "likes": 75,
+     "views": 7062,
+     "link": "https://x.com/nichegamer/status/2100993908008198363",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2100993860264402944/pu/img/BO4etG27S15h_qeE.jpg",
+      "video_url": "https://x.com/_a/status/2100993908008198363/video/1"
+     },
+     "summary": "漫改游戏 GACHIAKUTA: BREAKOUT 公布 2027 年发售窗口与首段实机画面。",
+     "recommendation": "GACHIAKUTA: BREAKOUT 首曝实机，2027 年发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "title": "Psycho-Sleuth：悬疑冒险新游 11 月发售",
+     "en_title": "Mystery-adventure game Psycho-Sleuth launches in November",
+     "full_text": "Mystery-adventure game Psycho-Sleuth launches in November: https://t.co/J7ByX89CyL https://t.co/EPMvAaLoS3",
+     "author": "Niche Gamer 🔜 TGS",
+     "date": "2026-09-19",
+     "likes": 23,
+     "views": 5115,
+     "link": "https://x.com/nichegamer/status/2101348477514997991",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSl9TflXoAABVmB.jpg"
+     },
+     "summary": "悬疑冒险游戏 Psycho-Sleuth 宣布 11 月发售。",
+     "recommendation": "Psycho-Sleuth：悬疑冒险新游 11 月发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "title": "Neon Abyss 2：新最终 Boss、发售日与『值很多分的大鱼』",
+     "en_title": "Neon Abyss 2 has a new final boss, a release date, and at least 1 massive fish worth many, many points",
+     "full_text": "Neon Abyss 2 has a new final boss, a release date, and at least 1 massive fish worth many points https://t.co/l8VgrEoN3g",
+     "author": "PC Gamer",
+     "date": "2026-09-20",
+     "likes": 2,
+     "views": 2529,
+     "link": "https://x.com/pcgamer/status/2101715180325597392",
+     "media": null,
+     "summary": "国产团队开发的 Neon Abyss 2 公布新最终 Boss、发售日与一条『值很多分的大鱼』。",
+     "recommendation": "Neon Abyss 2 公布新最终 Boss 与发售日——国产肉鸽续作动态",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "title": "Fool King：异步自动战斗游戏年内发售",
+     "en_title": "Lead your legions to glory in asynchronous autobattler Fool King, launching later this year",
+     "full_text": "Lead your legions to glory in asynchronous autobattler Fool King, launching later this year https://t.co/lodwCb2p5j",
+     "author": "PC Gamer",
+     "date": "2026-09-20",
+     "likes": 1,
+     "views": 4686,
+     "link": "https://x.com/pcgamer/status/2101708062348513350",
+     "media": null,
+     "summary": "异步自动战斗游戏 Fool King 宣布年内发售，带领军团在异步对战中争胜。",
+     "recommendation": "Fool King：异步自动战斗游戏年内发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 06",
+     "title": "Let's Build a Dungeon：游戏开发模拟 2 月 11 日进入 EA",
+     "en_title": "Videogame development sim Let's Build a Dungeon launches into early access February 11",
+     "full_text": "Videogame development sim Let's Build a Dungeon launches into early access February 11 https://t.co/VMcLD2lzba",
+     "author": "PC Gamer",
+     "date": "2026-09-20",
+     "likes": 4,
+     "views": 4046,
+     "link": "https://x.com/pcgamer/status/2101707054138405014",
+     "media": null,
+     "summary": "游戏开发题材模拟游戏 Let's Build a Dungeon 宣布 2027 年 2 月 11 日进入 Steam 抢先体验。",
+     "recommendation": "Let's Build a Dungeon：游戏开发模拟 2 月 11 日 EA",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 07",
+     "title": "Ball x Pit 公布付费扩展 Risen Ballbylon，11 月 12 日上线",
+     "en_title": "Ball x Pit just revealed a whole new expansion: Risen Ballbylon",
+     "full_text": "Ball x Pit just revealed a whole new expansion: Risen Ballbylon https://t.co/yIlcpRs9Cs",
+     "author": "PC Gamer",
+     "date": "2026-09-20",
+     "likes": 7,
+     "views": 3362,
+     "link": "https://x.com/pcgamer/status/2101711378306445440",
+     "media": null,
+     "summary": "Ball x Pit 公布全新付费扩展 Risen Ballbylon，11 月 12 日登陆全平台。",
+     "recommendation": "Ball x Pit 付费扩展 Risen Ballbylon 11 月 12 日上线",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 08",
+     "title": "Endless Legend 2 评测：Amplitude 仍是派系设计大师",
+     "en_title": "Endless Legend 2 shows that Amplitude is still the master of faction design",
+     "full_text": "Endless Legend 2 shows that Amplitude is still the master of faction design https://t.co/kpIEp1PJ5Y",
+     "author": "PC Gamer",
+     "date": "2026-09-20",
+     "likes": 9,
+     "views": 7708,
+     "link": "https://x.com/pcgamer/status/2101699020750266570",
+     "media": null,
+     "summary": "PC Gamer 评测认为 Endless Legend 2 证明 Amplitude 依旧是 4X 品类派系设计的大师。",
+     "recommendation": "Endless Legend 2 评测：派系设计依然是 Amplitude 的看家本领",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Godot · 技术演示",
+     "tags": [
+      "Godot",
+      "流体模拟",
+      "技术演示"
+     ],
+     "title": "Godot 粘性流体模拟：混溶与附着全都有，46 万播放的『邪恶科技』",
+     "en_title": "developing evil technology: dynamic viscous fluid simulation running in godot, complete with miscibility and adhesion",
+     "full_text": "developing evil technology\n\ndynamic viscous fluid simulation running in godot, complete with miscibility and adhesion https://t.co/o0dpDoRjI5",
+     "author": "Ike, hot version",
+     "date": "2026-09-19",
+     "likes": 14385,
+     "views": 461949,
+     "link": "https://x.com/yummy_cummies/status/2101428235581960290",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2101428073014972416/img/LzmO2TFIbL-_5LUm.jpg",
+      "video_url": "https://x.com/_a/status/2101428235581960290/video/1"
+     },
+     "summary": "开发者 Ike 展示在 Godot 中运行的动态粘性流体模拟，支持混溶（miscibility）与附着（adhesion），46 万播放、1.4 万赞。",
+     "analysis": "流体/软体效果正在成为独立游戏『卖相军备竞赛』的下一个高地，Noita 式『万物皆可模拟』的标签自带传播力。Godot 生态的工具成熟度正肉眼可见地追平商业引擎。",
+     "recommendation": "Godot 动态粘性流体模拟：混溶+附着全支持——46 万播放的『邪恶科技』",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "独立开发 · 渲染技巧",
+     "tags": [
+      "像素艺术",
+      "3D",
+      "渲染技巧"
+     ],
+     "title": "3D 像素防抖实战技巧：像素别排成正方形，透视畸变反而更稳",
+     "en_title": "Another trick to make 3D pixels look even more stable is to not keep them perfectly square... it makes the result much better.",
+     "full_text": "Another trick to make 3D pixels look even more stable is to not keep them perfectly square (distortion is barely noticeable during movement), but it makes the result much better. Here’s a new test with an even stronger perspective distortion. #gamedev #indiedev #pixelart https://t.co/onEiV6FC3M",
+     "author": "feixiong",
+     "date": "2026-09-19",
+     "likes": 1011,
+     "views": 36793,
+     "link": "https://x.com/ShaderError/status/2101206983689076827",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2101206934036856832/img/vvaRw79QmHRVJlqt.jpg",
+      "video_url": "https://x.com/_a/status/2101206983689076827/video/1"
+     },
+     "summary": "独立开发者 feixiong 分享 3D 像素稳定化新技巧：放弃完美正方形像素（移动中的畸变几乎不可察觉），换取更强的透视畸变表现，整体效果显著提升，并附新测试视频。",
+     "analysis": "像素+3D 混合渲染的『抖动』问题长期困扰独游团队，这类实战微调经验比理论方案更具可操作性，也再次证明视觉问题的最优解常在反直觉处。",
+     "recommendation": "3D 像素防抖技巧：像素别排成正方形，透视畸变更稳——实战经验分享"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI Agent 从演示走向实用：速通、交易与翻车同场上演**\nJev 与 GPT-6 Astra 协作让 AI Agent 在 Minecraft 中 8 分 43 秒击败末影龙，总成本 0.97 美元且代码开源；同日，开发者用 Jev 搭出的全自动交易机器人一夜亏损 3.1 万美元。Agent 的能力上限与风险下限同时被探明。\n\n**索尼终止 Physint 合作，大厂 3A 容忍度再度收紧**\n小岛秀夫披露索尼在 Zoom 通话中决定退出 Physint，工作室声明『健康且盈利』。免费捕捉 RPG Aniimo 上线一周冲上 16 万同时在线，宝可梦like 品类窗口仍在；Marvel's Wolverine 发售 3 天销量超《死亡搁浅 2》。\n\n**整活独游与引擎黑科技齐发**\n真实物理削土豆的 Potato Please、1 名教师对战 10 名学生的 Back To School 先后曝光；Godot 粘性流体模拟与 3D 像素防抖技巧展示独立开发生态的技术密度。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
