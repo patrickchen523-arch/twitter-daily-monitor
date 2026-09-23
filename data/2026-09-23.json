@@ -1,0 +1,639 @@
+{
+  "date": "2026-09-23",
+  "meta": {
+    "raw_count": 210,
+    "filtered_count": 195,
+    "selected_count": 12,
+    "crawl_time": "2026-09-23 10:45"
+  },
+  "lede": "Xbox 再裁 268 人并把 Halo 新作交给动视开发；AI 克隆独立游戏争议升级、被指控方正式否认；洋裁模拟《Dressmaker》带 40 万愿望单发售，三猴拆弹派对游戏《BOMBANANA!》10 天卖出 100 万份。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Xbox 再裁 268 人：Halo 交给动视新建团队，Obsidian 并入 Bethesda，Ninja Theory 走向关闭"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "AI 克隆独立游戏争议升级：Potato Please 创作者否认抄袭，称从未听说过对方游戏"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "40 万愿望单的洋裁模拟《Dressmaker》发售：选布、打版、裁剪、缝纫全流程还原真实制衣"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "AI 克隆争议反转：Potato Please 创作者否认抄袭，称从未听说过对方游戏\nAstra+Jev 指挥星际争霸部队：每秒两次决策的 RTS Agent 测试床\nBox 实测 Opus 5.5：token 少 63%、快 30%、更便宜——企业级 Agent 账本更新\nInsomniac 否认《Wolverine》用生成式 AI：一张洗手间标识引发的社区审判"
+    },
+    {
+      "id": "industry",
+      "text": "Xbox 再裁 268 人：Halo 交给动视新建团队，Ninja Theory 走向关闭\nSteam 周销榜：WARDOGS 登顶，FC 27、暗黑 4 紧随，BG3 仍在前五\nSony 低调试点 PlayStation Rewards：买游戏返商店积分"
+    },
+    {
+      "id": "indie",
+      "text": "洋裁模拟《Dressmaker》发售：选布到缝纫全流程，愿望单超 40 万\n派对游戏《BOMBANANA!》发售 10 天卖出 100 万份，手机版 10 月上线\n《霓虹深渊 2》定档 10 月推出 1.0 正式版，赛博朋克横版 Roguelike"
+    },
+    {
+      "id": "tools",
+      "text": "Steam 客户端 Beta 加入 Pyrowave：高带宽低延迟游戏串流\nSketch2Pose for Blender：草图直转 3D 姿态，无生成式 AI 参与"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "featured": true,
+          "source": "Dexerto · 行业",
+          "tags": [
+            "AI伦理",
+            "游戏克隆",
+            "独立开发"
+          ],
+          "title": "AI 克隆争议升级：Potato Please 创作者否认抄袭对方 GMTK 原型",
+          "en_title": "Indie dev who made potato-peeling game '1,000,000 Potatoes' has accused another developer of copying his idea with AI",
+          "full_text": "Indie dev who made potato-peeling game '1,000,000 Potatoes' has accused another developer of copying his idea with AI\n\nThe creators of 'Potato Please' deny it and say they had never heard of his game before https://t.co/YGi9zOgTlx",
+          "author": "Dexerto",
+          "date": "2026-09-22",
+          "likes": 2130,
+          "views": 98229,
+          "link": "https://x.com/Dexerto/status/2102374871896375508",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HS0izTpXMAAWIMB.jpg"
+          },
+          "summary": "昨日报道的 GMTK Jam 原型克隆事件出现反转性进展：Dexerto 报道，被指控方《Potato Please》创作者正式否认抄袭，表示此前从未听说过《1,000,000 Potatoes》。原指控者 Rado Klasa 的帖子昨日获 63 万浏览并持续发酵至 150 万浏览、1.6 万赞，两家说法目前各执一词。",
+          "analysis": "事件从单方控诉进入对峙阶段，恰好暴露了此类纠纷的取证困境：玩法机制不受版权保护，相似度判断高度主观，AI 是否参与克隆几乎无法举证。无论真相如何，社区已经完成对被指控方的流量审判，先发布者占优的激励结构没有改变——这会进一步强化独立开发者\"先上架、后打磨\"的军备竞赛心态。",
+          "recommendation": "AI 克隆争议反转：Potato Please 创作者否认抄袭，称从未听说过对方游戏",
+          "game_ref": "Potato Please",
+          "enrichment": {
+            "game_name": "Potato Please",
+            "genre": "模拟 / 休闲 / 物理",
+            "developer": "Golden Horn Studios",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未发售",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5266240/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5266240/e289442aa6b3756109bc65b427556ea538efb849/header.jpg?t=1789851788",
+            "youtube_video": null,
+            "description": null,
+            "why_notable": "本次 AI 克隆争议的中心作品之一，其 Steam 页面曝光度因争议大幅上升"
+          }
+        },
+        {
+          "idx": "AI科技热点 02",
+          "featured": true,
+          "source": "X · AI开发者",
+          "tags": [
+            "AI Agent",
+            "RTS",
+            "Astra"
+          ],
+          "title": "G_Z 用 Astra+Jev 指挥星际争霸部队，RTS 成 Agent 测试床",
+          "en_title": "my attempt at Astra + Jev on StarCraft II.",
+          "full_text": "my attempt at Astra + Jev on StarCraft II.\n\nAstra writes the plan once before the fight. Every squad and key unit gets its own Jev, deciding about twice a second. \nRTS turns out to be a pretty great testbed for this.",
+          "author": "G_Z",
+          "date": "2026-09-21",
+          "likes": 344,
+          "views": 37790,
+          "link": "https://x.com/GZhan57/status/2102126922688012410",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2102121853624184832/img/GMYdvXYpr-xFZziV.jpg",
+            "video_url": "https://x.com/GZhan57/status/2102126922688012410/video/1"
+          },
+          "summary": "开发者 G_Z 展示 Astra + Jev 双层 Agent 架构在《星际争霸 II》中的应用：Astra 在开战前一次性生成作战计划，每支小队和关键单位各自挂载一个 Jev，以每秒约两次的频率做局部决策。作者认为 RTS 是这类分层多 Agent 架构的绝佳试验场。",
+          "analysis": "继双 Agent 速通 Minecraft 之后，RTS 成为多 Agent 协同的新试验场：\"规划者 + 大量低成本实时执行者\"的分层结构，与游戏 AI、NPC 调度乃至自动化测试的技术需求同构。对游戏行业而言，这套架构预示着未来大规模 NPC 自主行为与动态演出的实现路径——算力成本决定它的落地速度。",
+          "recommendation": "Astra+Jev 指挥星际争霸部队：每秒两次决策的 RTS Agent 测试床"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "X · AI行业",
+          "tags": [
+            "Opus 5.5",
+            "企业AI",
+            "成本"
+          ],
+          "title": "Box 实测 Opus 5.5：63% 更少 token、30% 提速，企业 Agent 成本大降",
+          "en_title": "At Box, we've been testing Opus 5.5 on a variety of complex enterprise knowledge work tasks dealing with unstructured data with the Box Agent.",
+          "full_text": "At Box, we've been testing Opus 5.5 on a variety of complex enterprise knowledge work tasks dealing with unstructured data with the Box Agent.  \n\nOverall, we saw frontier capability levels, with major performance improvements over Opus 5. 63% fewer tokens used, 42% less verbosity, and 30% faster vs. Opus 5. And the model itself is cheaper, so this is a major win for any agentic computer use, coding, analytics, or data work that enterprises will be doing.\n\nHere are some examples of the task wins ...",
+          "author": "Aaron Levie",
+          "date": "2026-09-22",
+          "likes": 34,
+          "views": 7204,
+          "link": "https://x.com/levie/status/2102448415775051790",
+          "media": null,
+          "summary": "Box CEO Aaron Levie 公布在企业知识工作场景实测 Opus 5.5 的数据：相比 Opus 5，token 消耗减少 63%、冗余输出减少 42%、速度快 30%，且模型单价更低，能力保持前沿水平。他判断这对企业级 Agent 的计算机使用、编码、分析类任务是重大利好。",
+          "analysis": "企业客户晒出的第一手账本比模型发布会更有参考价值：token 效率与单价的同步改善，意味着 Agent 产品的单位任务成本进入快速下降通道。对游戏行业，AI NPC、自动化 QA、内容生成管线的边际成本都在被这条曲线拉低，预算约束正在从\"用不用 AI\"变成\"用多深\"。",
+          "recommendation": "Box 实测 Opus 5.5：token 少 63%、快 30%、更便宜——企业级 Agent 账本更新"
+        },
+        {
+          "idx": "AI科技热点 04",
+          "source": "Eurogamer · 行业",
+          "tags": [
+            "生成式AI",
+            "AAA",
+            "舆论"
+          ],
+          "title": "Insomniac 否认《Wolverine》使用生成式 AI，起因是一张洗手间标识",
+          "en_title": "Wolverine developer Insomniac has denied using generative AI after fans jumped on social media to share screenshots of a bizarre restroom sign.",
+          "full_text": "Wolverine developer Insomniac has denied using generative AI after fans jumped on social media to share screenshots of a bizarre restroom sign. https://t.co/8AlgreyQZa https://t.co/fU9NUBNtS1",
+          "author": "Eurogamer",
+          "date": "2026-09-21",
+          "likes": 47,
+          "views": 16345,
+          "link": "https://x.com/eurogamer/status/2102012515290923204",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSvZOiUXUAA_YNu.jpg"
+          },
+          "summary": "玩家在社交媒体传播《Marvel's Wolverine》中一张造型怪异的洗手间标识截图，怀疑为生成式 AI 产物并引发大规模讨论；Insomniac 随后公开否认游戏使用了生成式 AI。",
+          "analysis": "\"长得像 AI 就指控 AI\"正在成为 AAA 宣发期的固定戏码：图像真实性无法自证，厂商否认也未必被采信。对行业而言，真正的启示是素材溯源与制作流程透明度会变成公关资产——未来项目主动公开\"哪些环节没用 AI\"，可能比声明\"用了哪些 AI\"更重要。",
+          "recommendation": "Insomniac 否认《Wolverine》用生成式 AI：一张洗手间标识引发的社区审判"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "featured": true,
+          "source": "PC Gamer · 行业",
+          "tags": [
+            "Xbox",
+            "微软",
+            "裁员",
+            "Halo"
+          ],
+          "title": "Xbox 二轮重组：再裁 268 人，Halo 新作交给动视开发",
+          "en_title": "Xbox cuts 268 more employees, merges Obsidian into Bethesda, and puts Activision in charge of Halo",
+          "full_text": "Xbox cuts 268 more employees, merges Obsidian into Bethesda, and puts Activision in charge of Halo https://t.co/VMitGWM4oq",
+          "author": "pcgamer",
+          "date": "2026-09-22",
+          "likes": 158,
+          "views": 18266,
+          "link": "https://x.com/pcgamer/status/2102414784734126373",
+          "media": null,
+          "summary": "Xbox 内容负责人 Matt Booty 宣布新一轮裁员与工作室重组：再裁 268 人，3,200 人裁员计划完成约四分之三（6 月已裁 1,600 人）。Halo 新作由动视组建的新专属团队开发，动视同时接管 Rare 与 World's Edge（《帝国时代》）；Obsidian 并入 Bethesda；Playground 与 Turn 10 正式合并；Compulsion、Double Fine、Undead Labs 转入独立或新发行商；Ninja Theory 两次出售谈判失败后走向关闭。GameSpot、Polygon、Digital Foundry、RPS、TheGamer、MP1st、Destructoid 等多家报道。",
+          "analysis": "Halo——微软定义性 IP——交由动视这一新收购物种开发，标志着 Xbox 体系进入\"发行商内部市场化\"阶段：工作室归属随商业逻辑而非品牌情感流动。Ninja Theory 关闭意味着高成本叙事型单线的生存空间进一步收窄；对从业者，重组后的 Xbox 更像一家控股发行商，IP 的开发权、平台策略（StarCraft 已表态不独占）都会更开放也更不确定。",
+          "recommendation": "Xbox 再裁 268 人：Halo 交给动视新建团队，Ninja Theory 走向关闭"
+        },
+        {
+          "idx": "游戏行业 02",
+          "featured": true,
+          "source": "SteamDB · 官推",
+          "tags": [
+            "Steam",
+            "周销榜",
+            "市场数据"
+          ],
+          "title": "Steam 周销榜：WARDOGS 登顶，Trails 2nd 冲到第 4",
+          "en_title": "#SteamTopSellers for week of 15 Sep — 22 September 2026 (No F2P)",
+          "full_text": "#SteamTopSellers for week of 15 Sep — 22 September 2026 (No F2P):\n\n#1 - WARDOGS\n#2 - EA SPORTS FC™ 27\n#3 - Diablo® IV\n#4 - Trails in the Sky 2nd Chapter\n#5 - Baldur's Gate 3\n\nhttps://t.co/Si3qu3OIZ7",
+          "author": "SteamDB",
+          "date": "2026-09-22",
+          "likes": 25,
+          "views": 4489,
+          "link": "https://x.com/SteamDB/status/2102390067377398217",
+          "media": null,
+          "summary": "SteamDB 公布 9 月 15 日至 22 日 Steam 周销榜（不含 F2P）：WARDOGS 登顶，EA SPORTS FC 27、暗黑破坏神 4 分列二三位，老牌 JRPG《空之轨迹 the 1st》续章 Trails in the Sky 2nd Chapter 空降第 4，《博德之门 3》发售多年仍稳居第 5。同期 PC Gamer 也在讨论 WARDOGS 的装机配置热度。",
+          "analysis": "三个信号值得追查：WARDOGS 的登顶对应一款新作的首发强势，建议核对它的 PCU 与评价走势确认成色；《空之轨迹》续章作为经典 IP 重启作品冲进前四，验证日式老 IP 在 Steam 的付费号召力；BG3 长尾三年仍在 Top 5，是内容体量决定生命周期的极致样本。",
+          "recommendation": "Steam 周销榜：WARDOGS 登顶，FC 27、暗黑 4 紧随，BG3 仍在前五",
+          "game_ref": "WARDOGS",
+          "enrichment": {
+            "game_name": "WARDOGS",
+            "steam_url": "https://store.steampowered.com/app/1867240",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/be00107d586c0bf0412e9e4acedb64629a99aa5b/header_schinese.jpg?t=1789503126",
+            "why_notable": "本周 Steam 周销榜冠军，新作首发强势，PCU 与评价走势值得持续跟踪",
+            "release_date": "已发售 · 2026 年 9 月 10 日",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 149.00",
+            "developer": "BULKHEAD",
+            "genre": "动作 / 独立 / 大型多人在线",
+            "steam_rating": "71851 reviews",
+            "description": "《WARDOGS》是一款全面战争式第一人称射击游戏，在一个最高可支持 100 名玩家的大规模军事沙盒中，融合了战术枪战、诸兵种联合作战以及建造与破坏机制等元素。\n\n"
+          }
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "MP1st · 平台",
+          "tags": [
+            "PlayStation",
+            "商业模式",
+            "会员"
+          ],
+          "title": "Sony 低调上线 PlayStation Rewards 试点：买游戏返商店积分",
+          "en_title": "Sony seems to have a new PlayStation Rewards program that gives players store credit for buying games.",
+          "full_text": "Sony seems to have a new PlayStation Rewards program that gives players store credit for buying games.\n\nhttps://t.co/WmmShgfzBp https://t.co/cHHUUrGY9v",
+          "author": "MP1st",
+          "date": "2026-09-22",
+          "likes": 82,
+          "views": 3484,
+          "link": "https://x.com/MPFirst/status/2102209188055363848",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSyMHNua4AAMVrO.jpg"
+          },
+          "summary": "Sony 被发现低调推出 PlayStation Rewards 计划：玩家购买游戏可获得商店积分返还，用于抵扣后续消费。TheGamer 同步报道了这一\"买游戏拿钱返\"的忠诚度体系。",
+          "analysis": "数字商店的价格锚点松动是个值得跟踪的信号：返还积分本质是变相折扣，说明平台在第三方低价商店与订阅制的夹击下开始用忠诚度体系锁定消费。对发行商，这意味着 PS 商店的实际到手价出现谈判空间；对玩家，是平台竞争加剧带来的直接让利。",
+          "recommendation": "Sony 低调试点 PlayStation Rewards：买游戏返商店积分"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "featured": true,
+          "source": "Game*Spark · 媒体",
+          "tags": [
+            "模拟",
+            "治愈",
+            "工艺"
+          ],
+          "title": "Dressmaker：Free Lives 发行洋裁模拟发售，愿望单超 40 万",
+          "en_title": "生地選びから裁断・裁縫までできちゃう本格派ドレスクラフトシム『Dressmaker』Steamにてリリース！ウィッシュリスト40万件超の注目作",
+          "full_text": "生地選びから裁断・裁縫までできちゃう本格派ドレスクラフトシム『Dressmaker』Steamにてリリース！ウィッシュリスト40万件超の注目作\nhttps://t.co/1b7bK1Uf2V\n\n依頼品を納品するのみならず自由にデザインしたドレスを店頭に並べて販売することもできます。 https://t.co/xpFZSaQYnX",
+          "author": "gamespark",
+          "date": "2026-09-21",
+          "likes": 70294,
+          "views": 11019250,
+          "link": "https://x.com/gamespark/status/2102023592154386681",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2102023302516715520/pu/img/Q1NiayoOeabECYLt.jpg",
+            "video_url": "https://x.com/gamespark/status/2102023592154386681/video/1"
+          },
+          "summary": "Game*Spark 报道，Free Lives 旗下 Cozy Lives 开发的洋裁模拟《Dressmaker》9 月 21 日登陆 Steam：从选布、速写设计、打版裁剪到缝纫机缝合、纽扣贴布装饰完整还原真实制衣流程，还可将自制礼服摆在店头售卖。主线约 35 小时，含 150 种裙装部件、450 种以上面料、350 种以上饰品，愿望单超 40 万，定价 1,923 日元（9 月 29 日前 9 折）。",
+          "analysis": "",
+          "recommendation": "洋裁模拟《Dressmaker》发售：选布到缝纫全流程，愿望单超 40 万",
+          "game_ref": "Dressmaker",
+          "enrichment": {
+            "game_name": "Dressmaker",
+            "genre": "休闲 / 模拟",
+            "developer": "Cozy Lives",
+            "platforms": [
+              "PC",
+              "Mac"
+            ],
+            "price": "¥ 53.10",
+            "release_date": "已发售 · 2026 年 9 月 21 日",
+            "steam_rating": "993 reviews",
+            "steam_url": "https://store.steampowered.com/app/4019220",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4019220/5e595cd60fb58b5d312be21ba4aa03d4a0131547/header_schinese.jpg?t=1790009899",
+            "youtube_video": null,
+            "description": "在《针影裁梦》的世界，成为一名裁缝吧！选择布料、裁剪制版、缝制各类服装，来满足（或恶搞！）小镇居民。这款温馨的裁缝模拟游戏，灵感源自真实的服装制作工艺。\n\n【核心玩法】以真实洋裁流程为蓝本的制衣模拟：从棉、麻、羊毛等面料挑选开始，用速写本完成款式设计与配色，把纸样铺在布料上裁剪，再用缝纫机缝合部件，最后按喜好加纽扣、缎带与贴布完成定制。除完成顾客订单外，还能把自己的设计摆上店头作为成衣出售，经营感与手作感并行。\n\n【内容体量】主线约 35 小时，收录 150 种裙装部件、450 种以上面料、350 种以上饰品；后续规划免费更新：在线挑战模式（比拼礼服设计并投票）、透感面料、Steam Deck 手柄适配，以及手机版与 Switch 移植。\n\n【开发背景】发行商是《Broforce》背后的 Free Lives，开发组自述\"比起股价更在意玩家满意度\"，因此定价压到 1,923 日元，首发两周 9 折。\n\n【优势】工艺颗粒度罕见地细；治愈节奏与经营目标平衡得当；高愿望单验证细分需求真实存在。\n【不足】题材门槛偏高，男性向玩家覆盖有限；刚发售评价样本尚少。\n\n【综合】把小众手工艺做成完整商业模拟的罕见样本，\"真实工艺 + 治愈节奏\"的组合值得工艺模拟品类关注。",
+            "why_notable": "Free Lives 旗下团队把真实洋裁工艺完整游戏化，40 万愿望单验证治愈系工艺模拟的细分市场",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "愿望单 40 万+（发售前）",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "featured": true,
+          "source": "Game*Spark · 媒体",
+          "tags": [
+            "派对游戏",
+            "合作",
+            "爆款"
+          ],
+          "title": "BOMBANANA!：三猴拆弹合作派对游戏 10 天破百万份",
+          "en_title": "「見ざる」「聞かざる」「言わざる」の3人で爆弾解除に挑む協力パーティーゲーム『BOMBANANA!』発売10日で100万本突破！",
+          "full_text": "「見ざる」「聞かざる」「言わざる」の3人で爆弾解除に挑む協力パーティーゲーム『BOMBANANA!』発売10日で100万本突破！スマホ版は10月配信、コンソール版も開発中\nhttps://t.co/NKRJey60HO https://t.co/Kh5yBY4W1Q",
+          "author": "gamespark",
+          "date": "2026-09-22",
+          "likes": 53,
+          "views": 17662,
+          "link": "https://x.com/gamespark/status/2102367453649285204",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2102367342802182144/pu/img/iFdw8myRR7efPu79.jpg",
+            "video_url": "https://x.com/gamespark/status/2102367453649285204/video/1"
+          },
+          "summary": "Game*Spark 报道，土耳其 Lefto Studio 与 TARK 开发的 3 人合作拆弹游戏《BOMBANANA!》9 月 2 日登陆 Steam，10 天销量突破 100 万份。玩家分别操作\"勿视、勿听、勿言\"三只猴子：摸得到炸弹的看不见全貌，读得懂说明书的不能说话，看得见全局的听不到队友，10 月上线手机版，主机版本开发中，Steam 定价 1,050 日元。",
+          "analysis": "",
+          "recommendation": "派对游戏《BOMBANANA!》发售 10 天卖出 100 万份，手机版 10 月上线",
+          "game_ref": "BOMBANANA!",
+          "enrichment": {
+            "game_name": "BOMBANANA!",
+            "genre": "休闲 / 独立",
+            "developer": "Lefto Studio",
+            "platforms": [
+              "PC",
+              "Mac"
+            ],
+            "price": "¥ 29.00",
+            "release_date": "已发售 · 2026 年 9 月 2 日",
+            "steam_rating": "2709 reviews",
+            "steam_url": "https://store.steampowered.com/app/4656000",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4656000/99c086faba625a8d3bc459bab444087d257ccbe1/header.jpg?t=1789738286",
+            "youtube_video": null,
+            "description": "大家一起来拆弹，猴友欢乐闹翻天！在这款3人合作游戏中，分别扮演不见、不听、不言的三不猴，依靠不完整的信息相互沟通，破解限时谜题。你们能在轰然爆炸前，凭默契拯救一切吗？\n\n【核心玩法】3 人强制组队的拆弹合作游戏，以\"非礼勿视、勿听、勿言\"三猴为分工：能直接操作配线的\"勿视猴\"看不见炸弹全貌；读得懂解除手册的\"勿言猴\"不能说话，只能手舞足蹈地传递答案；能观察炸弹与周围环境的\"勿听猴\"完全听不到队友在说什么——沟通断层本身就是玩法核心，爆笑与抓狂同时发生。\n\n【市场表现】9 月 2 日 Steam 发售，10 天销量突破 100 万份；10 月上线 iOS/Android 版本，Switch、PlayStation、Xbox 主机版均在开发中。\n\n【开发背景】土耳其团队 Lefto Studio 与 TARK 合作开发，Steam 定价 1,050 日元，支持日语等语言。\n\n【优势】把信息不对称合作做成了极易理解的观光点，天然适合直播与短视频传播；手机版跟进速度极快。\n【不足】3 人门槛限制了单人玩家；玩法深度依赖关卡更新。\n\n【综合】小型团队靠一个极致清晰的合作创意撬动百万销量的近期最佳样本，派对游戏品类的传播机制教科书。",
+            "why_notable": "10 天 100 万份——信息不对称合作设计叠加主播传播，今年派对游戏最快破百万案例之一",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "100 万份（发售 10 天，官方公布）",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Niche Gamer · 媒体",
+          "tags": [
+            "Roguelike",
+            "续作",
+            "定档"
+          ],
+          "title": "Neon Abyss 2：赛博朋克横版 Roguelike 续作 10 月推 1.0",
+          "en_title": "Slick cyberpunk metroidvania sequel Neon Abyss 2 hits full release next month",
+          "full_text": "Slick cyberpunk metroidvania sequel Neon Abyss 2 hits full release next month: https://t.co/GluS2sfdlL https://t.co/ljf3lIyzeo",
+          "author": "nichegamer",
+          "date": "2026-09-21",
+          "likes": 11,
+          "views": 4590,
+          "link": "https://x.com/nichegamer/status/2102170902569885983",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2102170859292995584/pu/img/IeHGUmyCqSEla8X5.jpg",
+            "video_url": "https://x.com/nichegamer/status/2102170902569885983/video/1"
+          },
+          "summary": "Niche Gamer 报道，赛博朋克风横版动作 Roguelike《Neon Abyss 2》（霓虹深渊 2）将于 10 月推出 1.0 正式版。前作《霓虹深渊》由中国团队 Veewo Games 开发，以随机地牢、道具叠加与高弹性构筑成为国产 Roguelike 出海代表作。",
+          "analysis": "",
+          "recommendation": "《霓虹深渊 2》定档 10 月推出 1.0 正式版，赛博朋克横版 Roguelike",
+          "game_ref": "Neon Abyss 2",
+          "enrichment": {
+            "game_name": "Neon Abyss 2",
+            "genre": "动作 / 冒险 / 独立",
+            "developer": "Veewo Games",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 58.00",
+            "release_date": "已发售 · 2025年7月17日（抢先体验中，1.0 定档 2026年10月）",
+            "steam_rating": "1981 reviews",
+            "steam_url": "https://store.steampowered.com/app/2235200",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2235200/c66dbc6a031ea09c96a92a25d956d06505c93025/header_schinese.jpg?t=1789976262",
+            "youtube_video": null,
+            "description": "四人联机 [ 赛博神话 ] 肉鸽！创新武器系统 + 无限道具叠加，用千奇百怪的组合杀穿众神！刀光与子弹炸裂满屏——爽！燥！永远出乎意料！\n\n【基础信息】前作《霓虹深渊》开发商 Veewo Games（中国团队）打造的赛博朋克横版动作 Roguelike 续作，目前处于抢先体验阶段，1.0 正式版定档 2026 年 10 月。\n\n【玩法框架】延续\"随机地牢 + 横版跳跃射击\"的核心循环，以高密度弹幕、宠物养成与道具叠加构筑见长，美术延续霓虹赛博朋克像素风。\n\n【看点】前作凭借快节奏循环与低门槛构筑在 Steam 积累口碑，并扩展至全平台；续作在抢先体验期持续迭代内容，正式版是检验其能否进入独游长销梯队的关键节点。\n\n【综合】对关注国产独游出海与 Roguelike 品类的读者，10 月的 1.0 版本表现值得一查。",
+            "why_notable": "国产 Roguelike 出海标杆续作定档 1.0，10 月成绩将检验品类长线运营能力",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "unselected": true,
+          "source": "電ファミニコゲーマー · 媒体",
+          "tags": [
+            "解谜",
+            "休闲",
+            "猎奇"
+          ],
+          "title": "パニック！アット・ザ・ジグソー：拼 2708 块碎片复原名画，无时限无失败",
+          "en_title": "散乱した“2708個”のパズルピースをはめて名画を復元するゲーム『パニック！アット・ザ・ジグソー』のトレーラーが公開。",
+          "full_text": "散乱した“2708個”のパズルピースをはめて名画を復元するゲーム『パニック！アット・ザ・ジグソー』のトレーラーが公開。果てしなさそう\nhttps://t.co/gzi2lWdIVY\n\n制限時間もゲームオーバーもなく、「モナ・リザ」やムンクの「叫び」などを自分のペースで完成させる。Steam体験版が10月に配信予定 https://t.co/GcCubP2ZnZ",
+          "author": "denfaminicogame",
+          "date": "2026-09-22",
+          "likes": 779,
+          "views": 144553,
+          "link": "https://x.com/denfaminicogame/status/2102302140664602674",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2102302103981248512/pu/img/1No8qdncXB6siIso.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2102302140664602674/video/1"
+          },
+          "summary": "電ファミ报道拼图游戏《パニック！アット・ザ・ジグソー》：把散乱的 2708 块拼图碎片拼回《蒙娜丽莎》《呐喊》等名画，没有时间限制与游戏结束，按自己的节奏完成，Steam 试玩版 10 月上线。14.4 万浏览。",
+          "recommendation": "2708 块碎片复原名画的无尽拼图——果てしなさそう的禅意猎奇"
+        },
+        {
+          "idx": "新游参考 02",
+          "unselected": true,
+          "source": "X · 独立开发者",
+          "tags": [
+            "休闲",
+            "地牢",
+            "Steam页上线"
+          ],
+          "title": "Coin Goblin：被困金币地牢的地精捡币游戏，Steam 页面上线",
+          "en_title": "You're a Goblin trapped inside a dungeon filled with thousands of coins.",
+          "full_text": "You're a Goblin trapped inside a dungeon filled with thousands of coins.\n\nYour mission? Pick. Them. ALL. 🪙\n\nHere's a teaser for my next game! I just launched the Steam page 🎮\n\nWhat tools should I add to help this little Goblin collect his fortune? 👀 https://t.co/PaE8HrYDz4",
+          "author": "StorypaintingFN",
+          "date": "2026-09-21",
+          "likes": 1959,
+          "views": 365308,
+          "link": "https://x.com/StorypaintingFN/status/2102055502200893748",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2102054343675416576/img/vA_HVgzEuxlhtPk_.jpg",
+            "video_url": "https://x.com/StorypaintingFN/status/2102055502200893748/video/1"
+          },
+          "summary": "独立开发者 Eddie H.H 公布新作《Coin Goblin》预告并上线 Steam 页面：扮演被困在堆满金币的地牢里的地精，任务是把所有金币捡走，向社区征集捡币工具创意。36.5 万浏览。",
+          "recommendation": "把地牢里所有金币捡走的地精模拟——36 万浏览的解压新作预告"
+        },
+        {
+          "idx": "新游参考 03",
+          "unselected": true,
+          "source": "PC Gamer · 媒体",
+          "tags": [
+            "宝可梦like",
+            "前瞻",
+            "多平台"
+          ],
+          "title": "Aniimo 是什么：PC Gamer 前瞻解读宝可梦-like 新作",
+          "en_title": "What's the deal with Aniimo?",
+          "full_text": "What's the deal with Aniimo? #pcgaming #aniimo #pcgaming #pokmeon https://t.co/8ybxSvQsEw",
+          "author": "pcgamer",
+          "date": "2026-09-21",
+          "likes": 15,
+          "views": 23666,
+          "link": "https://x.com/pcgamer/status/2102110822873116754",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2102110741188972544/pu/img/LLh--vnFrAHyDFX5.jpg",
+            "video_url": "https://x.com/pcgamer/status/2102110822873116754/video/1"
+          },
+          "summary": "PC Gamer 发布《Aniimo》前瞻解读视频：一款宝可梦-like 新游，讲解其玩法定位与差异点。2.4 万浏览。",
+          "recommendation": "宝可梦-like《Aniimo》前瞻：PC Gamer 拆解它到底是什么"
+        },
+        {
+          "idx": "新游参考 04",
+          "unselected": true,
+          "source": "X · 独游媒体",
+          "tags": [
+            "恐怖",
+            "叙事",
+            "独游"
+          ],
+          "title": "Not My Dad：观察诡异父亲的日式恐怖游戏",
+          "en_title": "父親の様子がおかしい。それに気づいているのは子どもだけ。",
+          "full_text": "父親の様子がおかしい。\n\nそれに気づいているのは子どもだけ。\nそして夜な夜な、子どものクローゼットに入って\"何か\"をしている。不気味な父親を観察するホラーゲーム。\n\n『Not My Dad』 https://t.co/N82K7n7q8g",
+          "author": "G_Godaka",
+          "date": "2026-09-22",
+          "likes": 89,
+          "views": 7686,
+          "link": "https://x.com/G_Godaka/status/2102352216208392410",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2102348477535830016/pu/img/YSCkrnvwVkYmX0jz.jpg",
+            "video_url": "https://x.com/G_Godaka/status/2102352216208392410/video/1"
+          },
+          "summary": "日本独游博主ごだか介绍恐怖游戏《Not My Dad》：父亲举止异常，只有孩子察觉——而父亲每晚会钻进孩子的衣柜里做\"某件事\"，一款观察诡异父亲的恐怖游戏。",
+          "recommendation": "每晚钻进孩子衣柜的诡异父亲——日式恐怖新游《Not My Dad》"
+        },
+        {
+          "idx": "新游参考 05",
+          "unselected": true,
+          "source": "TheGamer · 媒体",
+          "tags": [
+            "恐怖",
+            "飞行模拟",
+            "混搭"
+          ],
+          "title": "皇牌空战 × Iron Lung 式恐怖飞行模拟新游曝光",
+          "en_title": "This Horror Flight Sim Mixes Ace Combat With Iron Lung",
+          "full_text": "This Horror Flight Sim Mixes Ace Combat With Iron Lung https://t.co/Pr2zmNlv1n https://t.co/lmpCPzp1kq",
+          "author": "thegamerwebsite",
+          "date": "2026-09-21",
+          "likes": 1,
+          "views": 934,
+          "link": "https://x.com/thegamerwebsite/status/2102140864227119260",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSxN-dfWMAEwUdr.jpg"
+          },
+          "summary": "TheGamer 报道一款把《皇牌空战》式飞行战斗与《Iron Lung》式幽闭恐怖混搭的恐怖飞行模拟新游，题材组合罕见。",
+          "recommendation": "皇牌空战混搭 Iron Lung：恐怖飞行模拟的罕见题材组合"
+        },
+        {
+          "idx": "新游参考 06",
+          "unselected": true,
+          "source": "X · 独立开发者",
+          "tags": [
+            "恐怖",
+            "SF",
+            "免费"
+          ],
+          "title": "SUBJECT 4471：韩国开发者的免费第一人称 SF 恐怖游戏",
+          "en_title": "AI가 통제하는 연구소에서 살아남는 1인칭 SF 공포 게임, SUBJECT 4471입니다.",
+          "full_text": "첫 작품을 스팀에 올렸습니다… 긴장되네요 ㅠㅠ\n\nAI가 통제하는 연구소에서 살아남는\n1인칭 SF 공포 게임, SUBJECT 4471입니다.\n제일 중요한 건 무료라는 점! 😆\n취미로 시작해서 스토리와 공포 분위기에 집중해 만들었어요.\n\n현재 스팀 심사 중이며, 출시일이 확정되면 다시 알려드리겠습니다.\n그동안 자잘한 버그와 부족한 부분도 계속 다듬으려고요.\n난이도가 어떨지… 여러분의 생존 후기가 궁금합니다 ㅎㅎ\n\n#인디게임 #게임개발 #공포게임\n#스팀게임",
+          "author": "kalisGo",
+          "date": "2026-09-21",
+          "likes": 453,
+          "views": 22840,
+          "link": "https://x.com/kalisGo/status/2102069375922811021",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSwMLeWbIAAJtAK.jpg"
+          },
+          "summary": "韩国开发者 KalisGo 公布首款作品《SUBJECT 4471》：在 AI 管制的实验室中求生的第一人称 SF 恐怖游戏，完全免费，正在 Steam 审核中。2.3 万浏览。",
+          "recommendation": "AI 管制实验室求生：韩国开发者免费 SF 恐怖游戏 Steam 审核中"
+        },
+        {
+          "idx": "新游参考 07",
+          "unselected": true,
+          "source": "Niche Gamer · 媒体",
+          "tags": [
+            "RPG",
+            "SF",
+            "公布"
+          ],
+          "title": "Kaelis: Seraph Protocol：科幻 RPG 公布",
+          "en_title": "Sci-fi RPG Kaelis: Seraph Protocol was announced",
+          "full_text": "Sci-fi RPG Kaelis: Seraph Protocol was announced: https://t.co/NTWxxSifRF https://t.co/MzIQw8dbQq",
+          "author": "nichegamer",
+          "date": "2026-09-22",
+          "likes": 15,
+          "views": 1633,
+          "link": "https://x.com/nichegamer/status/2102392812670984399",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HS0zHydXIAAu836.jpg"
+          },
+          "summary": "Niche Gamer 报道科幻 RPG《Kaelis: Seraph Protocol》正式公布，细节有限。",
+          "recommendation": "科幻 RPG《Kaelis: Seraph Protocol》正式公布"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "featured": true,
+          "source": "Digital Foundry · 技术媒体",
+          "tags": [
+            "Steam",
+            "串流",
+            "基础设施"
+          ],
+          "title": "Steam 客户端 Beta 引入 Pyrowave 低延迟串流技术",
+          "en_title": "Steam Client Beta Adds Pyrowave for High Bandwidth, Low Latency Game Streaming",
+          "full_text": "Steam Client Beta Adds Pyrowave for High Bandwidth, Low Latency Game Streaming https://t.co/ArksuLQkF7",
+          "author": "digitalfoundry",
+          "date": "2026-09-22",
+          "likes": 351,
+          "views": 34181,
+          "link": "https://x.com/digitalfoundry/status/2102296863839850990",
+          "media": null,
+          "summary": "Digital Foundry 报道，Steam 客户端 Beta 新增 Pyrowave 串流技术，主打高带宽与低延迟的游戏画面传输。Digital Foundry 同日发推跟进，技术分析价值高。",
+          "analysis": "Valve 在传输层持续下注：更低的串流延迟直接改善 Remote Play 与串流掌机场景的体验上限。结合 Steam Machine 硬件线，Valve 正在补齐\"本地算力 + 低延迟传输 + 大屏投放\"的家庭娱乐闭环——云游戏叙事退潮后，局域网串流反而成了更务实的路线。",
+          "recommendation": "Steam 客户端 Beta 加入 Pyrowave：高带宽低延迟游戏串流"
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "80 LEVEL · 工具媒体",
+          "tags": [
+            "Blender",
+            "3D管线",
+            "非生成式"
+          ],
+          "title": "Sketch2Pose for Blender：草图直转 3D 姿态，无生成式 AI 参与",
+          "en_title": "Sketch2Pose for Blender makes it easy to turn rough sketches into 3D poses from different camera angles, with no generative AI involved.",
+          "full_text": "Sketch2Pose for Blender makes it easy to turn rough sketches into 3D poses from different camera angles, with no generative AI involved.\n\nNow available at 25% off: https://t.co/qKD5jjdnQi https://t.co/cKam28bVWN",
+          "author": "80Level",
+          "date": "2026-09-22",
+          "likes": 268,
+          "views": 15378,
+          "link": "https://x.com/80Level/status/2102342409531134245",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2102342398286217216/img/3Hec8KHy31S2ZOn1.jpg",
+            "video_url": "https://x.com/80Level/status/2102342409531134245/video/1"
+          },
+          "summary": "80 LEVEL 介绍 Blender 插件 Sketch2Pose：把 rough 草图直接转成多机位 3D 姿态，且不依赖生成式 AI，现 75 折发售。",
+          "analysis": "在生成式 AI 席卷工具链的当下，\"非生成式\"本身成了卖点：确定性输出、无版权争议、可控性强，对需要精确姿态控制的动画与游戏资产管线是刚需。Sketch2Pose 代表的辅助式工具路线（AI 在幕后做几何求解而非内容生成）值得工具开发者参考。",
+          "recommendation": "Sketch2Pose for Blender：草图直转 3D 姿态，无生成式 AI 参与"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Xbox 二轮重组落地：Halo 归动视**\n微软再裁 268 人（3,200 人计划完成约四分之三），Halo 新作交由动视新建团队开发，动视同时接管 Rare 与 World's Edge；Obsidian 并入 Bethesda，Playground 与 Turn 10 合并，Ninja Theory 两次出售未果走向关闭。\n\n**AI 克隆争议进入对峙阶段**\n《Potato Please》创作者否认用 AI 抄袭对方 GMTK 原型，称从未听说过对方的游戏；同日 Box 公布 Opus 5.5 企业实测账本（token -63%、快 30%），Astra+Jev 在星际争霸上演示分层 Agent 指挥，Insomniac 则被迫否认《Wolverine》使用生成式 AI。\n\n**独游数据亮点**\nFree Lives 发行的洋裁模拟《Dressmaker》带 40 万愿望单发售；三猴拆弹派对游戏《BOMBANANA!》发售 10 天销量破 100 万份；《霓虹深渊 2》定档 10 月推出 1.0 正式版。\n\n**平台与工具动向**\nSony 低调试点 PlayStation Rewards 买游戏返积分；Steam 客户端 Beta 引入 Pyrowave 低延迟串流；Blender 插件 Sketch2Pose 以非生成式路线把草图转成 3D 姿态。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
