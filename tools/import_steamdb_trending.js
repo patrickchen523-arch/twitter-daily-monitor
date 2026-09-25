@@ -83,7 +83,7 @@ const getJson = async url => { // Steam 接口抖动/限流: 递增退避重试
         // 简中接口失败/区域限制时, 用英文接口兜底判定
         try {
           const je = await getJson(`https://store.steampowered.com/api/appdetails?appids=${it.appid}&cc=us&l=en`);
-          const de = je && je[it.appid];
+          const de = je && (je[it.appid] || je[Object.keys(je)[0]]); // appid 重定向时(如 AION2 3393110→4972320)按首个返回键兜底
           if (de && de.success && de.data) {
             if (de.data.release_date) {
               verified = true;
@@ -101,7 +101,7 @@ const getJson = async url => { // Steam 接口抖动/限流: 递增退避重试
       } else {
         try {
           const je = await getJson(`https://store.steampowered.com/api/appdetails?appids=${it.appid}&l=en`);
-          const de = je[it.appid];
+          const de = je[it.appid] || je[Object.keys(je)[0]];
           if (de && de.success && de.data && de.data.name) name = de.data.name;
         } catch (e) {}
         await sleep(200);
