@@ -1,0 +1,553 @@
+{
+ "date": "2026-10-01",
+ "meta": {
+  "raw_count": 293,
+  "filtered_count": 181,
+  "selected_count": 16,
+  "crawl_time": "2026-10-01 17:50"
+ },
+ "lede": "Claude Code 万能 Mod 工具链 universal-modder 开源，AI 改游戏从复刻走向工程化；Grasshopper Manufacture 脱离网易恢复独立；抓外挂主题派对 FPS《Who's the Cheater?》12 月上线。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "让 Claude Code 自动逆向、改素材、真机测试——万能 Mod 工具链开源，104 万播放"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Grasshopper Manufacture 脱离网易恢复独立，须田刚一的怪诞工作室再出发"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "在 8 人 FPS 里揪出真开挂的队友——作弊者人狼《Who's the Cheater?》12 月发售"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Rehan 把 Claude Code 的游戏 Mod 经验打包成 universal-modder 开源：逆向、素材生成、真机实测一条龙；陈成开源 Tiller 浏览器，让 agent 坐进浏览器操作网页；ChatGPT dots 云端跑 Godot 引擎，直接产出可运行 exe。"
+  },
+  {
+   "id": "industry",
+   "text": "Grasshopper Manufacture 脱离网易恢复独立；Steam 宣布 2027 年初将折扣与活动区改为个性化推荐；Rockstar 工会案开庭；国服 FF14 Mobile 上线一年即停服。"
+  },
+  {
+   "id": "indie",
+   "text": "《Who's the Cheater?》把抓外挂做成 8 人派对 FPS；火柴人电话刺杀 FPS《10hit》曝光；海底黑店合作模拟《Shark Mart》免费 Demo 上线。"
+  },
+  {
+   "id": "tools",
+   "text": "SIGGRAPH Asia 2026 论文 UniMate 开源：一个模型驱动任意骨架的文本生成动画；Atlas 3D 推出 Blender 节点，AI 生成资产直接进入建模工作流。"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · AI开发者",
+     "tags": [
+      "AI",
+      "Mod工具链",
+      "开源",
+      "Claude Code"
+     ],
+     "title": "universal-modder 开源：把 Claude Code 的游戏 Mod 能力打包成万能工具链，逆向、素材、实测一条龙",
+     "en_title": "Every game is moddable now!",
+     "full_text": "Every game is moddable now!\n\nI packaged everything Claude learned modding Terraria and Age of Empires into universal-modder: skills + tools that let Claude Code mod almost any game you own. Engine recon, decompiling, @fal sprites/3D/audio, testing in the real game, even the showcase video.\n\nhttps://t.co/mNYIMNkWFA",
+     "author": "rehan_shei",
+     "date": "2026-09-30",
+     "likes": 7619,
+     "views": 1053750,
+     "link": "https://x.com/rehan_shei/status/2105161487509852622",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2105160555308965888/img/CIK84d0tC8ElyDdM.jpg",
+      "video_url": "https://x.com/rehan_shei/status/2105161487509852622/video/1"
+     },
+     "summary": "开发者把教 Claude Code 改造《Terraria》与《帝国时代》的全部经验打包成开源项目 universal-modder：引擎侦察、反编译、fal 生成贴图/3D/音效、真机内测试乃至宣传视频制作一条龙，GitHub 上线即获 1100+ star。",
+     "analysis": "从「一夜复刻 Terraria」到把方法论开源，AI Mod 正从个人炫技变成可复用的工程链路。对游戏公司而言，社区 Mod 生态的成本结构与 IP 合规边界都需要重新评估；对工具链厂商，这是 AI Native 游戏工具的样板间。",
+     "recommendation": "universal-modder 开源：让 Claude Code 自动逆向、生成素材、真机测试任意游戏 Mod",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 中文KOL",
+     "tags": [
+      "AI Agent",
+      "浏览器",
+      "开源",
+      "中文开发者"
+     ],
+     "title": "陈成开源 Tiller：让 agent 坐进浏览器里操作的 Chromium 浏览器，约 1.3 万行 Rust+Swift",
+     "en_title": "旅行间隙给自己写了个浏览器，今天开源，叫 Tiller。",
+     "full_text": "旅行间隙给自己写了个浏览器，今天开源，叫 Tiller。\n\nChromium 内核，Swift 原生壳，侧边栏里跑一个 coding agent 来操作网页。\n\n常见做法是让 agent 从外面遥控浏览器。我想反过来，让 agent 坐在浏览器里，用浏览器自带的工具。开 tab、读页面、点按钮、输入文字，就这几个。同一套工具也通过 MCP 和 tiller 命令行给外部脚本用。\n\n9 月 28 号第一个 commit，今天开源，32 个 commit，Rust 加 Swift 大约 1.3 万行，期间开了 37 个 Claude Code session。\n\nagent 默认只拿到浏览器工具，读写文件和跑命令都关着。网页内容会试图指挥 agent，这个问题我还没有好答案，所以先关掉。\n\nChrome 的 cookie、密码、历史和扩展能导进来。扩展能跑，但 Chrome 的 tab 和 window API 看不到 Tiller 的 tab，这块还差不少。\n\n自用为主，你的情况可能不一样。\n\nhttps://t.co/cM22QApf8s",
+     "author": "chenchengpro",
+     "date": "2026-09-30",
+     "likes": 62,
+     "views": 10780,
+     "link": "https://x.com/chenchengpro/status/2105140866243600533",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2105139995816468480/img/pTdtSMqiWfGPNErv.jpg",
+      "video_url": "https://x.com/chenchengpro/status/2105140866243600533/video/1"
+     },
+     "summary": "陈成（sorrycc）旅行期间写下 macOS 浏览器 Tiller 并开源：Chromium 内核 + Swift 原生壳，侧边栏内嵌 coding agent，用浏览器原生工具开标签、读页面、点按钮、输入文字；同一套工具经 MCP 与命令行开放给外部脚本。9 月 28 日首个 commit 到开源共 32 次、约 1.3 万行、37 个 Claude Code session。",
+     "analysis": "agent 操作浏览器存在「外部遥控」与「坐进浏览器」两种范式，直接影响网页自动化、RPA 乃至游戏内 UI 自动化的实现路径。作者对「网页内容反向指挥 agent」的风险处理——默认关闭文件读写与命令执行——是 Agent 安全设计的一个务实参考。",
+     "recommendation": "陈成开源 Tiller：agent 不再遥控浏览器，而是坐进浏览器里开标签、点按钮",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 玩家实测",
+     "tags": [
+      "AI",
+      "Godot",
+      "dots"
+     ],
+     "title": "ChatGPT dots 云端直接跑 Godot 引擎：真产出了可在 Windows 运行的 exe",
+     "en_title": "ChatGPTのdotsでは、内部でGodotゲームエンジンが動かせると聞いたので、試しに作らせてみたら本当にWindowsで動くexeを出してきた。",
+     "full_text": "ChatGPTのdotsでは、内部でGodotゲームエンジンが動かせると聞いたので、試しに作らせてみたら本当にWindowsで動くexeを出してきた。やったー\n\nなにがいいって、クラウドで動くので、実際に細部の作りこみをスマホからでも指示できること。ポン出ししてで終わりじゃない、発展的なゲーム作りできそう https://t.co/yM5aHtq2zw",
+     "author": "matsu_vr",
+     "date": "2026-09-30",
+     "likes": 199,
+     "views": 23055,
+     "link": "https://x.com/matsu_vr/status/2105186633926811827",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2105186051077869568/img/M91uFSVdsP5RkTzQ.jpg",
+      "video_url": "https://x.com/matsu_vr/status/2105186633926811827/video/1"
+     },
+     "summary": "日本开发者让 ChatGPT 的 dots 智能体在云端运行 Godot 引擎做游戏，真的产出了可在 Windows 运行的 exe。由于全程云端执行，还能用手机远程继续指示细节修改，从「一次性出活」变成可持续迭代的开发流程。",
+     "analysis": "dots 的云端容器里能跑完整游戏引擎，意味着「AI 做游戏」从生成代码片段升级到交付可分发产物。云侧试玩 + 手机远程调参是真实的工作流变化，独立开发者值得直接上手验证。",
+     "recommendation": "ChatGPT dots 云端跑 Godot 引擎真出了 Windows exe，手机还能远程调参"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "工作室独立",
+      "Grasshopper",
+      "网易"
+     ],
+     "title": "Grasshopper Manufacture 脱离网易恢复独立：须田刚一工作室重返独立身份",
+     "en_title": "Grasshopper Manufacture splits from NetEase and goes independent again",
+     "full_text": "Grasshopper Manufacture splits from NetEase and goes independent again: https://t.co/xgkq5ZaZKw https://t.co/MtUmxZ7Ie4",
+     "author": "nichegamer",
+     "date": "2026-09-30",
+     "likes": 25,
+     "views": 1459,
+     "link": "https://x.com/nichegamer/status/2105294159552679969",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HTeB4bDXIAAzfmT.jpg",
+      "video_url": null
+     },
+     "summary": "Niche Gamer 报道，Grasshopper Manufacture（须田刚一工作室，代表作《英雄不再》《恶灵附身》）与网易分道扬镳，再次成为独立工作室；Rock Paper Shotgun 以「NO GAME NO LIFE」为题跟进报道。",
+     "analysis": "多家报道：Niche Gamer、Rock Paper Shotgun。该工作室 2021 年被网易收购、2026 年恢复独立，是中厂「收购—整合—分手」周期的又一案例。对出海投资的启示：创意型工作室的整合难度远高于产能型团队，IP 与主创的去留条款比收购价更关键。",
+     "recommendation": "Grasshopper Manufacture 脱离网易恢复独立，须田刚一工作室再出发",
+     "featured": true,
+     "game_ref": null
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "Steam",
+      "平台政策",
+      "算法分发"
+     ],
+     "title": "Steam 2027 年初把「折扣与活动」区改为个性化推荐：单日曝光游戏量提升 10 倍",
+     "en_title": "Steam will personalize its Discounts and Events section in early 2027",
+     "full_text": "Steam will personalize its Discounts and Events section in early 2027: https://t.co/IHT2xxq9qA https://t.co/wnHHean1rJ",
+     "author": "nichegamer",
+     "date": "2026-09-30",
+     "likes": 48,
+     "views": 3201,
+     "link": "https://x.com/nichegamer/status/2105279197908181220",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HTd0RhwXcAATJXH.jpg",
+      "video_url": null
+     },
+     "summary": "Steam 宣布将在 2027 年初对商店「折扣与活动」区做个性化改造。Steam 官方数据：个性化后该区单日展示游戏数量提升 10 倍，商店页访问、愿望单与加购均有明显增长。开发者社区普遍认为这对独立游戏是利好。",
+     "analysis": "算法分发进一步取代编辑位，是 Steam 商店页演进的明确方向。对中小发行商与独游意味着长尾曝光机会变大；对依赖首页买断推荐位的头部厂商则是结构利空。投放策略需要从「抢位置」转向「优化转化数据喂算法」。",
+     "recommendation": "Steam 2027 年初改个性化推荐：折扣活动区单日曝光游戏量提升 10 倍",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "Rockstar",
+      "工会",
+      "法律纠纷"
+     ],
+     "title": "Rockstar 工会打压案开庭：34 名被裁员工指认因组建工会遭解雇",
+     "en_title": "Inside Rockstar's Union Busting Trial",
+     "full_text": "Inside Rockstar's Union Busting Trial https://t.co/24FJeKvv08 https://t.co/7mBTVGFS0v",
+     "author": "thegamerwebsite",
+     "date": "2026-09-30",
+     "likes": 0,
+     "views": 498,
+     "link": "https://x.com/thegamerwebsite/status/2105304195473522897",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HTeLAmDXMAAFfZE.jpg",
+      "video_url": null
+     },
+     "summary": "TheGamer 专访前 Rockstar 员工详解工会案：去年 34 名员工（英国 31 人、加拿大 3 人）被突然解雇，员工方称因组织工会遭打压，Rockstar 则主张其在外部 Discord 泄露机密信息；案件正在审理中，正值 GTA6 发售前夕。",
+     "analysis": "此案结果将直接影响英国游戏行业工会化进程与发行商的劳动关系策略。对项目管理者的提醒：跨区域用工合规与「社群沟通边界」制度需要在 GTA6 这个全球最大作发售节点前完成压力测试。",
+     "recommendation": "Rockstar 工会打压案开庭：34 名被裁员工与 Rockstar 对簿公堂"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "停服",
+      "Square Enix",
+      "腾讯",
+      "IP授权"
+     ],
+     "title": "国服 FF14 Mobile 今日停服：上线仅一年，Square Enix 终止与腾讯授权、全球版取消",
+     "en_title": "Today Marks The End Of Final Fantasy 14 Mobile",
+     "full_text": "Today Marks The End Of Final Fantasy 14 Mobile https://t.co/kqNqLoAEE8 https://t.co/4jVzPNfzTS",
+     "author": "thegamerwebsite",
+     "date": "2026-09-30",
+     "likes": 0,
+     "views": 572,
+     "link": "https://x.com/thegamerwebsite/status/2105266483337085075",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HTdotcxWcAA5C6V.jpg",
+      "video_url": null
+     },
+     "summary": "国服《最终幻想14 Mobile》于 9 月 30 日正式停服：这款中国独占 MMORPG 上线仅一年。Square Enix 七月已宣布终止与腾讯的授权协议，官方致歉「未能满足玩家期待」，原计划的全球发行版本直接取消。",
+     "analysis": "大厂 IP 手游授权模式的退出成本之高在此案中暴露无遗：一年生命周期意味着研发与买量投入基本无法回收。对 IP 授权合作方的启示是，合同期的业绩对赌与续约触发条件需要前置设计。",
+     "recommendation": "国服 FF14 Mobile 停服：上线仅一年，SE 终止腾讯授权、全球版取消",
+     "game_ref": "Final Fantasy XIV Mobile"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 日区KOL",
+     "tags": [
+      "派对FPS",
+      "社交推理",
+      "多人"
+     ],
+     "title": "Who's the Cheater?：把「抓队内开挂者」做成 8 人派对 FPS，12 月上线 Steam",
+     "en_title": "チーター人狼対戦FPS『Who's the Cheater?』12月発売",
+     "full_text": "ヴァロで、エペで、オバウォで鍛えた\n「チーター見抜き力」がついに役立つ！\n\nAimbot、ウォールハック、ワープ\n隠れてチートを使うヤツを見つけてキックせよ\n\nチーター役が妙にうまいヤツは他のゲームでも怪しい\nチーター人狼対戦FPS『Who's the Cheater?』12月発売\nhttps://t.co/9Fd35V4neE https://t.co/L3IBxeoRwl",
+     "author": "dotpixel3d",
+     "date": "2026-09-30",
+     "likes": 4413,
+     "views": 412124,
+     "link": "https://x.com/dotpixel3d/status/2105115419652784540",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2104899589098885120/img/9Lzmz3b3CodTM40-.jpg",
+      "video_url": "https://x.com/dotpixel3d/status/2105115419652784540/video/1"
+     },
+     "summary": "日本推主安利的 8 人在线派对 FPS《Who's the Cheater?》：局内混入了「真开挂」的玩家——自瞄、透视、加速、瞬移全开，其余人要观察击杀轨迹与走位、指认并投票踢出作弊者；作弊者则要演戏蒙混过关。12 月登陆 Steam，商店页已上线。",
+     "analysis": "把所有 FPS 玩家的共同敌人「外挂」翻转成玩法核心，梗传播力极强——「这队友枪法也太准了」。社交推理+FPS 的混合品类自 Among Us 之后少见成功者，此作的反响值得跟踪。",
+     "recommendation": "Who's the Cheater?：在 8 人 FPS 里揪出真开挂的队友——作弊者人狼 12 月上线",
+     "featured": true,
+     "game_ref": "Whos the Cheater",
+     "enrichment": {
+      "game_name": "Whos the Cheater",
+      "genre": "FPS / 社交推理 / 派对",
+      "developer": "CH757（日本开发者）",
+      "platforms": [
+       "Steam (PC)"
+      ],
+      "price": "未公布",
+      "release_date": "2026年12月",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4809290/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4809290/4fe98abaa659d5f9f58ea53fe9e97a56a6e42c2a/header_schinese.jpg?t=1788729333",
+      "youtube_video": null,
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": null,
+      "description": "【核心玩法】8 人在线合作 FPS 中混入「开挂者」：自瞄、透视、加速、瞬移全开。普通玩家要观察队友的击杀轨迹、走位与视角，找出作弊者并投票踢出；作弊者则要在不露馅的前提下「演」得像正常玩家，甚至故意示弱。FPS 命中只是表层，读人才是核心。【美术与风格】低多边形竞技场画风，节奏明快、对局短平快，适合开黑。【对标定位】把「反作弊」这一 FPS 玩家的共同痛点翻转成玩法本身，社交推理（人狼 / Among Us 式）与 FPS 的结合自然贴脸。【优势】概念一听就懂、梗传播力强，日区推文 41 万播放说明共鸣够大。【不足】核心循环较薄，长期留存依赖身份与技能设计的多样性；「扮演作弊者」与真开挂的边界需要靠举报与结算机制厘清。【综合】题材巧思 + 社交传播属性兼备的派对 FPS，12 月发售，开黑党值得关注。",
+      "why_notable": "把「抓外挂」做成玩法核心，社交推理与 FPS 的交叉创新，日区 41 万播放验证共鸣"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 独游安利",
+     "tags": [
+      "FPS",
+      "火柴人",
+      "潜入"
+     ],
+     "title": "10hit：接电话劫持来电者当刺客的火柴人 FPS，三枪即死",
+     "en_title": "This indie dev is making a stickman first person shooter inspired by old flash games",
+     "full_text": "This indie dev is making a stickman first person shooter inspired by old flash games\n\n- Hijack anyone who answers your phone call\n- Turn enemies into remote controlled assassins\n- Plan every hit through the phone network\n- Get shot three times and it's over\n\nGame is 10hit https://t.co/JL4jUq66cJ",
+     "author": "IndieGameJoe",
+     "date": "2026-09-29",
+     "likes": 3346,
+     "views": 369237,
+     "link": "https://x.com/IndieGameJoe/status/2105004270018040094",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2105003734677749760/img/us_ySTJjU73lfmN8.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2105004270018040094/video/1"
+     },
+     "summary": "Indie Game Joe 安利的火柴人 FPS《10hit》：灵感来自老 Flash 游戏。杀手不直接开枪，而是「劫持」每一个接你电话的人，把敌人变成远程操控的刺客；通过电话网络规划每一次行动，主角中三枪即死。",
+     "analysis": "「电话遥控刺杀 + 三枪即死」让失败本身成为传播名场面。Flash 画风的怀旧牌在独游市场屡试不爽，规则一句话讲清，适合短视频传播。",
+     "recommendation": "10hit：接电话劫持来电者当刺客，火柴人 FPS 三枪即死",
+     "featured": true,
+     "game_ref": "10hit",
+     "enrichment": {
+      "game_name": "10hit",
+      "genre": "动作 / 独立",
+      "developer": "dollo",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2027 年",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3520410",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3520410/77e04ae55d80e4b8d4bd3c6c5449ebad3545e2aa/header.jpg?t=1790211668",
+      "youtube_video": null,
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": null,
+      "description": "With the ability to hijack the minds of anyone who answers a phone call, &quot;0&quot; builds an army of remote controlled assassins to overthrow his twin brother, &quot;1&quot; as standing president.\n\n【核心玩法】火柴人第一人称潜入射击：杀手通过电话「劫持」每一个接听者，把敌人变成远程操控的刺客；先规划通话链路再执行行动，主角中三枪即死，逼玩家用计划而非弹幕过关。【美术与风格】致敬 Flash 时代的极简火柴人画风，动作反馈利落，怀旧与爽感兼备。【对标定位】「一页纸规则」式创意 FPS，一听就懂、一玩就上头。【优势】「电话遥控刺杀」点子在 FPS 里足够新鲜，三枪即死的硬核设计制造强传播名场面，安利推文 36 万播放。【不足】寿命上限取决于关卡设计密度；极简画风受众两极。【综合】本周独游圈最值得关注的创意 FPS 之一，上线节奏待官方公布。",
+      "why_notable": "电话劫持刺杀 + 三枪即死，规则一句话讲清的 Flash 风 FPS"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "合作模拟",
+      "黑店",
+      "Demo"
+     ],
+     "title": "Shark Mart：披海豚皮的鲨鱼开黑店，最多 4 人合作模拟免费 Demo 上线",
+     "en_title": "【最大4人】客を地下に連れ込んで料理するシミュレーション『シャーク・マート』Steamで無料デモ版配信開始",
+     "full_text": "【最大4人】客を地下に連れ込んで料理するシミュレーション『シャーク・マート』Steamで無料デモ版配信開始\nhttps://t.co/6bLsARnz5K\n\n店は獲物をおびき寄せるためのカモフラージュ。イルカの仮面をかぶったサメになって店舗運営。品出しやレジ打ちをこなしつつ、隙を見て客を美味しくいただきましょう https://t.co/Qss3cxBhV8",
+     "author": "famitsu",
+     "date": "2026-09-30",
+     "likes": 564,
+     "views": 74647,
+     "link": "https://x.com/famitsu/status/2105176136204611883",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105175933561053184/pu/img/feJr7c2whbwLaNh2.jpg",
+      "video_url": "https://x.com/famitsu/status/2105176136204611883/video/1"
+     },
+     "summary": "Fami通报道，合作黑店模拟《Shark Mart》免费 Demo 登陆 Steam：最多 4 人扮演戴海豚面具的鲨鱼经营海底店铺，正经补货、收银、给鲸鱼做清洗服务，没人盯着时把客人拖进地下做成菜，鱼警察上门质询时还要编瞎话圆场。支持简体中文。",
+     "analysis": "黑店经营 + 警察质询的「圆谎」环节是合作游戏里少见的叙事型混乱来源。免费 Demo + 全语种本地化 + Polden Publishing 发行，冷启动姿势标准，适合直接开黑试玩。",
+     "recommendation": "Shark Mart 免费 Demo 上线：4 人合作开海底黑店，把客人拖去地下做菜",
+     "game_ref": "Shark Mart",
+     "enrichment": {
+      "game_name": "鲨鱼超市",
+      "genre": "休闲 / 独立 / 模拟",
+      "developer": "stre1itzia / Andryash",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "即将推出",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4704000",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704000/1c0d3de8c5b5f8ce076aa3078509dc04cfd1a432/header_schinese.jpg?t=1790694396",
+      "youtube_video": null,
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": null,
+      "description": "Shark Mart 是一款疯狂的合作模拟游戏，你是伪装成友好海豚的鲨鱼。经营商店、给鲸鱼刷澡，偷偷绑架毫无防备的鱼类并做成美食！但小心——鱼类警察要揭穿你们满嘴獠牙的秘密...\n\n【核心玩法】最多 4 人合作的海底「黑店」模拟：玩家是戴着海豚面具的鲨鱼，白天正经开店——补货、收银、为鲸鱼客人提供清洗服务；趁没人注意把顾客拖进地下做成午餐。鱼警察上门质询时，需要分工清理现场、编造说辞蒙混过关。【美术与风格】可爱手绘水下画风，「微笑营业 + 磨刀霍霍」的反差感是核心笑点。【对标定位】《胡闹厨房》式合作混乱叠加黑深残题材，日系无厘头黑店玩法罕见。【优势】免费 Demo 即可开黑试玩，支持日/英/韩/简中/德/西/葡/俄八种语言，发行方 Polden Publishing、Fami通报道背书。【不足】发售日与价格未定，长线内容深度待验证。【综合】合作派对赛道里题材差异明显的一款，Demo 零门槛，开黑首选之一。",
+      "why_notable": "海豚面具鲨鱼开黑店，合作+圆谎环节的双重新鲜感"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "银河城",
+      "时间旅行"
+     ],
+     "unselected": true,
+     "title": "Tempus Vitae：时间旅行题材 3D 银河城，2027 年登陆 PC 与主机",
+     "en_title": "Tempus Vitae is an intriguing, time-traveling, 3D metroidvania",
+     "full_text": "Tempus Vitae is an intriguing, time-traveling, 3D metroidvania: https://t.co/zYn60dVF1n https://t.co/n6WdyXIm62",
+     "author": "nichegamer",
+     "date": "2026-09-29",
+     "likes": 97,
+     "views": 5318,
+     "link": "https://x.com/nichegamer/status/2105008525608931514",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105008476808257537/pu/img/WCfaLg74bJPl6QlU.jpg",
+      "video_url": "https://x.com/nichegamer/status/2105008525608931514/video/1"
+     },
+     "summary": "Niche Gamer 介绍 2027 年发售的 3D 银河城《Tempus Vitae》：时间旅行题材，探索与 FPS 式战斗结合。",
+     "recommendation": "Tempus Vitae：时间旅行题材 3D 银河城，2027 年发售"
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "合作",
+      "friendslop"
+     ],
+     "unselected": true,
+     "title": "Shared Custody：和好友共同照看恶魔宝宝的 friendslop 合作游戏",
+     "en_title": "Shared Custody is a friendslop game where you try to protect a demon baby",
+     "full_text": "Shared Custody is a friendslop game where you try to protect a demon baby: https://t.co/JHWtDHa58z https://t.co/T79IQADW66",
+     "author": "nichegamer",
+     "date": "2026-09-29",
+     "likes": 36,
+     "views": 4956,
+     "link": "https://x.com/nichegamer/status/2105009515733139464",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105009464638099456/pu/img/I24c_m_vXNeQz1WE.jpg",
+      "video_url": "https://x.com/nichegamer/status/2105009515733139464/video/1"
+     },
+     "summary": "Niche Gamer 介绍的 friendslop 合作游戏《Shared Custody》：和好友共同照看一个恶魔宝宝，在保住小命的前提下把它拉扯大。",
+     "recommendation": "Shared Custody：和好友共养恶魔宝宝的 friendslop 合作游戏"
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "银河城",
+      "暗黑幻想",
+      "评测"
+     ],
+     "unselected": true,
+     "title": "Well Dweller：风格化暗黑幻想银河城，Niche Gamer 给出好评",
+     "en_title": "[REVIEW] Well Dweller is an excellent dark fantasy metroidvania game!",
+     "full_text": "[REVIEW] Well Dweller is an excellent dark fantasy metroidvania game!\n\nhttps://t.co/lf1GJgRgLs \n\nWith its stylish visuals and dark fantasy world, Well Dweller has clear progression, great bosses, and a distinctive atmosphere for both newcomers and genre vets~ https://t.co/Dfrs4Iq1oK",
+     "author": "nichegamer",
+     "date": "2026-09-30",
+     "likes": 9,
+     "views": 787,
+     "link": "https://x.com/nichegamer/status/2105329586565214663",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105329542541828096/pu/img/7bU1xYoQzzIU12-0.jpg",
+      "video_url": "https://x.com/nichegamer/status/2105329586565214663/video/1"
+     },
+     "summary": "Niche Gamer 评测：暗黑幻想银河城《Well Dweller》画面风格出众、成长曲线清晰、Boss 设计出色，对新人老手都友好。",
+     "recommendation": "Well Dweller：风格化暗黑幻想银河城，媒体好评"
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "RPG",
+      "复古",
+      "主机版"
+     ],
+     "unselected": true,
+     "title": "Queen's Domain：飞剑 + 无限飞刀的复古第一人称 RPG，公布主机版与发售日",
+     "en_title": "Retro RPG Queen's Domain revealed console ports and a release date!",
+     "full_text": "Retro RPG Queen's Domain revealed console ports and a release date! https://t.co/yU7wqko1co https://t.co/JtD5CHd7C3",
+     "author": "nichegamer",
+     "date": "2026-09-30",
+     "likes": 12,
+     "views": 946,
+     "link": "https://x.com/nichegamer/status/2105328100300996876",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105328058668322816/pu/img/OxizsMwJKAa1C-i0.jpg",
+      "video_url": "https://x.com/nichegamer/status/2105328100300996876/video/1"
+     },
+     "summary": "复古风第一人称 RPG《Queen's Domain》公布主机版与发售日：仅凭一把飞剑和无限飞刀闯荡怪人遍地的孤岛。",
+     "recommendation": "Queen's Domain：飞剑+无限飞刀复古 RPG，公布主机版"
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · AI工具",
+     "tags": [
+      "AI动画",
+      "开源",
+      "SIGGRAPH"
+     ],
+     "title": "UniMate 开源：单一模型驱动任意骨架的文本生成动画（SIGGRAPH Asia 2026）",
+     "en_title": "New Open-Source AI Animator: Text-to-Animation for Humans, Animals, Creatures, Robots & More",
+     "full_text": "New Open-Source AI Animator: Text-to-Animation for Humans, Animals, Creatures, Robots & More\n\nUniMate generates motion from text prompts for rigged 3D characters. Describe an action and turn it into animation.\n\nHighlights:\n• One model, different skeletons—no separate retraining for each rig.\n• Generate transitions between existing keyframes.\n• Edit motion with text while keeping selected joints unchanged.\n• Extend animations with a sequence of prompts.\n• Export animated meshes as FBX and GLB.\n• ...",
+     "author": "Stefan_3D_AI",
+     "date": "2026-09-29",
+     "likes": 2224,
+     "views": 164154,
+     "link": "https://x.com/Stefan_3D_AI/status/2104981826888675532",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2104981708718448640/img/tlWXiRi02qLo5IDo.jpg",
+      "video_url": "https://x.com/Stefan_3D_AI/status/2104981826888675532/video/1"
+     },
+     "summary": "SIGGRAPH Asia 2026 论文 UniMate 开源（Princeton / UC Berkeley / MIT / NTU）：单一统一模型为不同骨架的 3D 角色做文本生成动画，无需逐骨骼重训；支持关键帧过渡生成、锁定局部关节的文本编辑、连续 prompt 延展动画，并可导出 FBX / GLB；预训练权重已上线 HuggingFace。",
+     "analysis": "SIGGRAPH 系工作进入「开箱可用」阶段：一个模型通吃人形/生物/机器人骨架，省掉逐 rig 重训成本，对独立动画与 indiedev 是实打实的产能工具。FBX/GLB 直出意味着能直接进 Unity / Unreal / Blender 管线。",
+     "recommendation": "UniMate 开源：一个模型驱动任意骨架的文本生成动画，FBX/GLB 直接导出",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · AI创作者",
+     "tags": [
+      "AI 3D",
+      "Blender",
+      "工作流"
+     ],
+     "title": "Atlas 3D 推出 Blender 节点：AI 生成 3D 资产直接在建模工作流内组装",
+     "en_title": "Created an animated convertible car with AI!",
+     "full_text": "Created an animated convertible car with AI!\n\nThe part that got me excited from the house experiment was watching Blender assemble everything. Initially I tried the same workflow for the car, but as you can see, assembling a bunch of separately generated parts doesn't really give a great result here. So I went with a simpler setup.\n\nNow @Atlas3DAI has a new Blender Node, which basically runs Blender MCP inside the workflow. This meant I didn't have to leave the canvas.\n\nIt created the reference ...",
+     "author": "insaneUEFN",
+     "date": "2026-09-29",
+     "likes": 157,
+     "views": 7293,
+     "link": "https://x.com/insaneUEFN/status/2104959609244987895",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2104958596505010176/img/J6AK94fk99lXS50s.jpg",
+      "video_url": "https://x.com/insaneUEFN/status/2104959609244987895/video/1"
+     },
+     "summary": "AI 创作者用 Atlas 3D 新推出的 Blender 节点在工作流内直接生成并组装敞篷车动画资产。此前「分开生成再手工拼装」效果不佳，新节点把 Blender MCP 跑进了生成画布，全程无需离开工作流。",
+     "analysis": "AI 生成 3D 的痛点从来不是「能不能生成」，而是「能不能进管线」。把生成环节留在画布内（Blender Node / MCP 化）比单纯提升生成质量更值得关注。",
+     "recommendation": "Atlas 3D 推出 Blender 节点：AI 生成 3D 资产直接在建模工作流内组装"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI 改造游戏开发的两条路径同时提速**\n从「复刻游戏」到「改造游戏」，Rehan 把 Mod 流程工具化并开源；陈成的 Tiller 重新定义 agent 与浏览器的关系；dots 云端跑引擎交付可运行产物。AI 应用层正在从炫技转向生产力。\n\n**平台与公司层面的结构性变化**\nSteam 个性化推荐改革将重塑独立游戏的曝光分配；Grasshopper 离开网易恢复独立；Rockstar 工会案与 FF14 Mobile 停服则提醒行业：劳动关系与 IP 授权模式的脆弱面同样值得管理。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
