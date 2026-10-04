@@ -1,0 +1,581 @@
+{
+  "date": "2026-10-04",
+  "meta": {
+    "raw_count": 225,
+    "filtered_count": 139,
+    "selected_count": 12,
+    "crawl_time": "2026-10-04 09:54"
+  },
+  "lede": "卡普空宣布把 RE 引擎进化为「AI 生成式游戏引擎」；《巫师3》重制版带动 Steam 历史峰值冲上 12.3 万；Claude 连跑 18 小时复刻出可玩的 Windows XP；「电车问题不是问题」定档 10 月 19 日抢先体验。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Claude 连跑 18 小时复刻出可玩版 Windows XP，从界面到应用全生成——62 万播放"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "电车问题 roguelite：碾过的一切都变成你的车厢——10 月 19 日 EA"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Claude 连跑 18 小时复刻出可玩的 Windows XP\nAgentCraft 把多智能体开发搬进 Minecraft\nOpus 5.5 一周用量 100% 投入游戏：模型动画全由 blender mcp 生成"
+    },
+    {
+      "id": "industry",
+      "text": "卡普空宣布把 RE 引擎进化为 AI 生成式引擎（REX 项目）\n《巫师3》重制版+秋促带动 Steam 历史峰值 123,359\n《皇牌空战8》首发峰值 52,662，达前作纪录近四倍\n美光 CEO：内存短缺将持续到 2028 年"
+    },
+    {
+      "id": "indie",
+      "text": "《电车问题不是问题》定档 10 月 19 日 EA：碾过的一切变成车厢\n《Tower Tanks》公布：4 人合作组装巨坦、全员操炮的 roguelike\n《Direland》半年进度预告片发布\n《Japanese Ramen Simulator》延期，新日期待 Steam 审核后公布"
+    },
+    {
+      "id": "tools",
+      "text": "Minecraft 模组 Spatial GUI 把背包改成过肩 3D 透视——37 万播放"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "@anabology · 开发者",
+          "tags": [
+            "AI Agent",
+            "Claude",
+            "操作系统复刻"
+          ],
+          "featured": true,
+          "title": "anabology 用 Claude 连跑 18 小时造出「Macrohard: Windows XP」：从界面到应用全生成",
+          "en_title": "I gave Claude another 18 hours.. and I think this one is the best one yet — Macrohard: Windows XP",
+          "full_text": "I gave Claude another 18 hours.. and I think this one is the best one yet\n\nMacrohard: Windows XP\n\nI'm blown away",
+          "author": "anabology",
+          "date": "2026-10-02",
+          "likes": 8375,
+          "views": 619588,
+          "link": "https://x.com/anabology/status/2106157622986748377",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2106157510101008384/img/9fRqGBbBMfUUgzqn.jpg",
+            "video_url": "https://x.com/anabology/status/2106157622986748377/video/1"
+          },
+          "summary": "开发者 anabology 让 Claude 连续工作 18 小时，从零生成出一个可运行的「Macrohard: Windows XP」——界面、应用与交互全部由 AI 生成，作者自称迄今最满意的一版。该系列此前已多次用 Claude 复刻操作系统级软件，是检验 Agent 长时程任务能力的标志性 demo。",
+          "analysis": "「复刻操作系统」要求 Agent 在无人干预下维持架构一致并分阶段交付，是长程规划的极限测试。对游戏行业而言，这类能力正逼近中小团队的生产管线：从资产生成走向整套软件与玩法的自动化搭建。",
+          "recommendation": "Claude 连跑 18 小时复刻出可玩版 Windows XP，作者称迄今最强——62 万播放"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "@BlendiByl · 开发者",
+          "tags": [
+            "AI Agent",
+            "Minecraft",
+            "多智能体"
+          ],
+          "featured": true,
+          "title": "AgentCraft：把多智能体开发搬进 Minecraft——Claude 团队分工建项目，需要时就走到你面前",
+          "en_title": "Introducing AgentCraft: a multi-agent harness that runs inside Minecraft",
+          "full_text": "Introducing AgentCraft: a multi-agent harness that runs inside Minecraft ⛏️\n\nA team of Claude agents plans, builds in real worktrees, and walks over when they need you.",
+          "author": "Blendi",
+          "date": "2026-10-03",
+          "likes": 5951,
+          "views": 318755,
+          "link": "https://x.com/BlendiByl/status/2106226258984264042",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2106224118391828480/img/Q0L5HAQ2jDQPcXe5.jpg",
+            "video_url": "https://x.com/BlendiByl/status/2106226258984264042/video/1"
+          },
+          "summary": "开发者 Blendi 发布 AgentCraft：一个跑在 Minecraft 内的多智能体协作框架——一组 Claude Agent 负责规划、在真实 worktree 中并行写码，遇到需要人工决策时以游戏角色形式「走到你面前」。发布后获 5900+ 赞、32 万播放。",
+          "analysis": "用游戏空间做 Agent 编排的可视化层是个聪明切口：任务状态、冲突与进度变成了肉眼可见的世界事件。它同时暗示了「AI 同事/NPC」在游戏内的新交互范式——游戏引擎本身可以成为多智能体系统的前端。",
+          "recommendation": "多智能体搬进 Minecraft：Claude 分工写码，需要人就走到你面前——32 万播放"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "@ForkedPush · 开发者",
+          "tags": [
+            "AI 辅助开发",
+            "blender mcp",
+            "独立开发"
+          ],
+          "title": "Fork Dev 公开 Opus 5.5 周用量 100% 投入游戏：全部模型与动画由 blender mcp 生成",
+          "en_title": "This is what 100% of Opus 5.5 weekly usage looks like — All models and animations made with blender mcp",
+          "full_text": "This is what 100% of Opus 5.5 weekly usage looks like\n\nAll models and animations made with blender mcp\n\nPlayable Demo Soon at:\nhttps://t.co/WXDnnqTayG",
+          "author": "Fork Dev",
+          "date": "2026-10-03",
+          "likes": 785,
+          "views": 43745,
+          "link": "https://x.com/ForkedPush/status/2106313584829431901",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2106311947993927680/img/U6Kup8gtBgZcI6_u.jpg",
+            "video_url": "https://x.com/ForkedPush/status/2106313584829431901/video/1"
+          },
+          "summary": "开发者 Fork Dev 公开其一周的 Opus 5.5 用量：全部投入一款游戏，模型与动画 100% 通过 blender mcp（AI 直驱 Blender）生成，可玩 Demo 即将放出。",
+          "analysis": "「AI 直驱 DCC 工具」正从概念验证变成日常管线：mcp 把 Claude 接进 Blender 后，建模与动画的迭代成本大幅下降。对独立团队，美术产能瓶颈可能被单个开发者绕过。",
+          "recommendation": "一周 Opus 用量 100% 做游戏：模型动画全由 blender mcp 生成，Demo 将至"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "PC Gamer · 媒体",
+          "tags": [
+            "AI 生成",
+            "RE Engine",
+            "卡普空"
+          ],
+          "featured": true,
+          "title": "卡普空宣布 RE 引擎进化计划 REX：目标「AI 生成式游戏引擎」",
+          "en_title": "Capcom announces plans to transform its RE Engine into an 'AI-generation game engine'",
+          "full_text": "Capcom announces plans to transform its RE Engine into an 'AI-generation game engine'",
+          "author": "pcgamer",
+          "date": "2026-10-03",
+          "likes": 184,
+          "views": 69586,
+          "link": "https://x.com/pcgamer/status/2106334674289340420",
+          "media": null,
+          "summary": "在 10 月 2 日的 Capcom Open Conference RE:2026 上，程序员石田聪公布 REX 项目：把 2014 年立项、已支撑约 30 款作品与 2000+ 开发者的 RE 引擎，演进为「AI 生成式游戏引擎」——新增 RE:Dox、RE:UI、RE:Flows 可视化脚本、RE:Runtime 等模块，让 AI 生成代码、自动试玩测试并与开发者共创。PC Gamer、Eurogamer、TheGamer、Polygon 多家报道。",
+          "analysis": "巨头把「AI 生成」写进核心引擎路线图是标志性信号：AI 不再只是外挂工具，而是引擎的一等公民。若 RE:Flows 这类可视化脚本与 AI 生成打通，中小团队复用大厂引擎能力的门槛会进一步降低。",
+          "recommendation": "卡普空 REX 项目：RE 引擎将进化为 AI 生成式引擎，30 款作品、2000 开发者受益"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "PC Gamer · 媒体",
+          "tags": [
+            "Steam 数据",
+            "重制版",
+            "CDPR"
+          ],
+          "featured": true,
+          "game_ref": "The Witcher 3",
+          "title": "《巫师3》重制版带动 Steam 历史峰值 123,359：免费更新+秋促半价共振",
+          "en_title": "The Witcher 3's remaster just brought it to a new all-time concurrent player count peak",
+          "full_text": "The Witcher 3's remaster just brought it to a new all-time concurrent player count peak",
+          "author": "pcgamer",
+          "date": "2026-10-03",
+          "likes": 24,
+          "views": 4742,
+          "link": "https://x.com/pcgamer/status/2106424899476820055",
+          "media": null,
+          "summary": "据 SteamDB，《巫师3》10 月 3 日创下 123,359 的历史同时在线峰值，远超 8 月约 3 万的水平。触发因素：9 月 29 日免费推送的《巫师3 Remastered》全家桶升级 + Steam 秋季特卖半价。CDPR 还在处理重制版争议较大的光照改动，并在 10 月 2 日推送了首个补丁。",
+          "analysis": "十年前的单机作品靠一次免费重制冲上历史峰值，验证「重制即二次发售」的复利模型——老游戏的长尾价值取决于内容焕新节奏，而非首发热度。免费升级策略同时为《巫师4》持续拉新。",
+          "recommendation": "《巫师3》重制版+秋促创 Steam 历史峰值 123,359——十年老游戏的二次发售模型"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "TheGamer · 媒体",
+          "tags": [
+            "Steam 数据",
+            "万代南梦宫",
+            "首发表现"
+          ],
+          "game_ref": "Ace Combat 8: Wings of Theve",
+          "title": "《皇牌空战8：Wings of Theve》首发 Steam 峰值 52,662，达前作纪录近四倍",
+          "en_title": "Ace Combat 8 Sets Massive Steam Record With Over 50,000 Players",
+          "full_text": "Ace Combat 8 Sets Massive Steam Record With Over 50,000 Players",
+          "author": "thegamerwebsite",
+          "date": "2026-10-03",
+          "likes": 1,
+          "views": 112,
+          "link": "https://x.com/thegamerwebsite/status/2106429151582285983",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTuKJqRWQAAyvkB.jpg"
+          },
+          "summary": "万代南梦宫 Project Aces 的《皇牌空战8：Wings of Theve》10 月 2 日发售，Steam 历史峰值 52,662 人，是《皇牌空战7》保持的原系列纪录 13,758 的近四倍。",
+          "analysis": "飞行模拟这一「小众但忠诚」的品类在时隔多年后的续作上爆发，说明老 IP+次世代呈现的组合在 Steam 仍有大量未被满足的需求。对日厂而言，重启沉睡的中坚 IP 可能比追逐新热点性价比更高。",
+          "recommendation": "《皇牌空战8》首发 Steam 峰值 52,662——12 年后再启的 IP 冲上系列纪录四倍"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 媒体",
+          "tags": [
+            "硬件供应链",
+            "内存涨价",
+            "AI 需求"
+          ],
+          "title": "美光 CEO：内存短缺将持续到 2028 年，明年产能已基本售罄",
+          "en_title": "Memory shortages set to persist into 2028, warns Micron CEO",
+          "full_text": "Memory shortages set to persist into 2028, warns Micron CEO\nhttps://t.co/r6kewmomdJ",
+          "author": "eurogamer",
+          "date": "2026-10-03",
+          "likes": 25,
+          "views": 7720,
+          "link": "https://x.com/eurogamer/status/2106333668654657899",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTszRCLWQAALcU3.jpg"
+          },
+          "summary": "美光 CEO Sanjay Mehrotra 在财报电话会上表示，AI 数据中心对 HBM 的需求挤占产能，内存短缺将持续整个 2027 年并延续至 2028 年，明年大部分产能已被预订，价格将明显高于 2026 年水平；其云端内存业务毛利率已达 83%。",
+          "analysis": "内存涨价直接抬升 PC、掌机与主机的整机成本，游戏硬件定价将承压——对依赖入门级设备的新兴市场玩家影响尤甚。开发者需关注玩家硬件升级周期放缓对画面规格预期的影响。",
+          "recommendation": "美光 CEO：内存短缺持续到 2028 年、明年产能已售罄——游戏硬件成本警报拉响"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "@soyukke · 独立开发",
+          "tags": [
+            "Roguelite",
+            "Steam",
+            "日系独游"
+          ],
+          "featured": true,
+          "game_ref": "Trolley Problem Is Not Problem",
+          "title": "独立开发 soyukke：《电车问题不是问题》公开 Steam 页面，10 月 19 日 EA——碾过的一切都会变成车厢",
+          "en_title": "トロッコ問題は、問題じゃない。轢いたものが全部、車両になるから。",
+          "full_text": "トロッコ問題は、問題じゃない。\n轢いたものが全部、車両になるから。\n\n『Trolley Problem Is Not Problem』のSteamページを公開しました\n10月19日 早期アクセス開始予定です。\n\nウィッシュリストに入れてもらえると嬉しいです！",
+          "author": "soyukke_game",
+          "date": "2026-10-03",
+          "likes": 434,
+          "views": 32122,
+          "link": "https://x.com/soyukke_game/status/2106172379441647779",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2106108586615287809/img/dLN-gDxEy6RUytNe.jpg",
+            "video_url": "https://x.com/soyukke_game/status/2106172379441647779/video/1"
+          },
+          "summary": "日本独立开发者 soyukke 公布 roguelite《Trolley Problem Is Not Problem》Steam 页面，定档 10 月 19 日抢先体验：核心规则是「拉下拉杆，碾过的一切都会挂到你的列车上变成新车厢」——列车越撞越长，五线并进，最终用整列车撞爆 Boss。",
+          "analysis": "",
+          "recommendation": "电车问题 roguelite：碾过的一切都变成你的车厢——10 月 19 日 EA",
+          "enrichment": {
+            "game_name": "Trolley Problem Is Not Problem",
+            "genre": "动作 / 策略 / Roguelite",
+            "developer": "soyukke（日本独立开发者）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2026年10月19日",
+            "steam_rating": "暂未发售",
+            "steam_url": "https://store.steampowered.com/app/5321580/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5321580/f69c2817a22ce9d436facb2b8ed114ff938bbdae/header.jpg?t=1790976914",
+            "youtube_video": null,
+            "description": "【核心玩法】一款把「电车难题」解构成成长循环的 roguelite：拉下拉杆，碾过的一切——乘客、货箱、建筑——都会挂上你的列车变成新车厢。列车随破坏不断变长，五条轨道同时推进，你需要一边规划撞击路线一边管理越来越臃肿的车身，最终用整列火车冲撞巨型 Boss。【美术与氛围】日式卡通手绘风格，色彩明快，与「电车难题」的黑色幽默内核形成反差萌；车厢堆叠的物理效果滑稽而解压。【对标定位】《吸血鬼幸存者》式的数值滚雪球爽感，但把成长载体从弹幕换成了物理堆叠的列车，属于日系独游「一句话脑洞」传统的延续。【优势】规则一句话讲清，传播性极强；堆叠成长的正反馈直接；抢先体验门槛低。【不足】玩法深度有赖 EA 期间的车辆种类与轨道事件扩充；纯堆叠长线可能产生重复感。【综合】日系独游「梗即玩法」的又一代表，10 月 19 日 EA 值得尝鲜，适合喜欢解压堆叠玩法与黑色幽默的玩家。",
+            "why_notable": "把思想实验做成「越撞越强」的物理堆叠循环，一句话讲清玩法的日系独游样本",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无（愿望单阶段）",
+            "gi_summary": "「电车难题」套「物理堆叠」新瓶：soyukke 独立开发，Steam 10 月 19 日抢先体验"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Game*Spark · 媒体",
+          "tags": [
+            "合作",
+            "Roguelike",
+            "新游公布"
+          ],
+          "featured": true,
+          "game_ref": "Tower Tanks",
+          "title": "War Mouth Games 公布《Tower Tanks》：4 人合作组装巨坦、全员登车各自操炮的 roguelike——2027 年 Q2 EA",
+          "en_title": "仲間とともに巨大戦車を作り上げる4人Co-opローグライク『Tower Tanks』発表！",
+          "full_text": "仲間とともに巨大戦車を作り上げる4人Co-opローグライク『Tower Tanks』発表！\n\n仲間とともにパーツを組み合わせて巨大戦車を作り上げ、クルーとして乗り込み、あらゆる操作をこなしながら、敵戦車との戦闘を生き抜いていきます。",
+          "author": "gamespark",
+          "date": "2026-10-02",
+          "likes": 1344,
+          "views": 130229,
+          "link": "https://x.com/gamespark/status/2106134918644506881",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2106134662573903873/pu/img/724XWXtsOkVNahuV.jpg",
+            "video_url": "https://x.com/gamespark/status/2106134918644506881/video/1"
+          },
+          "summary": "War Mouth Games 公布 4 人合作载具战斗 roguelike《Tower Tanks》：与队友用部件拼装巨型战车，再以船员身份登车，分工驾驶、装填、操炮、灭火，在混乱战局中求生。Steam 页面已上线，预计 2027 年 Q2 抢先体验。",
+          "analysis": "",
+          "recommendation": "《Tower Tanks》公布：4 人拼装巨坦再全员登车操炮——2027 年 Q2 抢先体验",
+          "enrichment": {
+            "game_name": "Tower Tanks",
+            "genre": "动作 / 模拟 / 策略 / Roguelike",
+            "developer": "War Mouth Games",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2027年Q2",
+            "steam_rating": "暂未发售",
+            "steam_url": "https://store.steampowered.com/app/4597950/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4597950/acc6b3a47a8f0ba542179b985e84aaea13d851d3/header.jpg?t=1790924759",
+            "youtube_video": null,
+            "description": "【核心玩法】4 人合作载具战斗 roguelike：每局与队友用部件拼装巨型战车——引擎、炮塔、装甲自由组合；随后全员以船员身份登车，分掌驾驶、动力、装填与灭火，在满地敌军的战场上边开火边抢修，击毁一切挡路者。【美术与氛围】卡通低多边形风格，色彩饱和度高，战斗场面混乱而热闹，天然适合语音开黑时的喜剧场面。【对标定位】《深岩银河》式的分工合作 + 《Barotrauma》式的多人载具驾驶——每个人都是巨坦上的一个岗位，缺谁车都开不动。【优势】「共同建造+全员操炮」把合作分工做成了字面意义的驾驶舱体验；建造自由度与即时战斗的结合点新颖；公布期早，社区共塑空间大。【不足】2027 年 Q2 才进入抢先体验，等待周期长；4 人门槛对散人玩家不友好，匹配体验待验证。【综合】本周最值得关注的合作向公布，适合固定开黑小队现在就加入愿望单。",
+            "why_notable": "把「共同建造」与「全员操炮」合进一辆巨坦，合作分工感拉满的新公布",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无（愿望单阶段）",
+            "gi_summary": "「组队造车」套「roguelike」：War Mouth Games 开发，Steam 2027 年 Q2 EA"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "@KAIJIUUUUU · 独立开发",
+          "tags": [
+            "沙盒",
+            "动作",
+            "开发进度"
+          ],
+          "game_ref": "Direland",
+          "title": "日本独游《Direland》发布半年进度预告片：自由沙盒×高动作性战斗×自由角色构建",
+          "en_title": "ここ半年間の進捗を全部詰め込みました！Direlandの新しいゲームトレーラーです！",
+          "full_text": "ここ半年間の進捗を全部詰め込みました！\nDirelandの新しいゲームトレーラーです！\n自由なサンドボックス世界 × アクション性の高い戦闘 × 自由なキャラクタービルド\n#indiedev",
+          "author": "KAIJIUUUUU",
+          "date": "2026-10-03",
+          "likes": 1552,
+          "views": 53654,
+          "link": "https://x.com/KAIJIUUUUU/status/2106320878669820350",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2106314978223632384/img/o0dF1_QhcNdzzzGJ.jpg",
+            "video_url": "https://x.com/KAIJIUUUUU/status/2106320878669820350/video/1"
+          },
+          "summary": "独立开发者 jockie 发布《Direland》新预告片，浓缩半年开发进度：自由沙盒世界、高动作性战斗与自由角色构建三线并进，获 1552 赞、5.4 万播放，Steam 页面已上线（发售日待定）。",
+          "analysis": "",
+          "recommendation": "《Direland》半年进度预告：单人开发的沙盒×动作×自由构建——5.4 万播放",
+          "enrichment": {
+            "game_name": "Direland",
+            "genre": "动作 / 冒险 / RPG / 沙盒生存",
+            "developer": "KAIJIUUUUU（日本独立开发者）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "暂未发售",
+            "steam_url": "https://store.steampowered.com/app/4414860/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4414860/928803db242d52a4d23778337b75c582666d5164/header.jpg?t=1791019590",
+            "youtube_video": null,
+            "description": "【核心玩法】开放沙盒生存动作游戏：在广阔世界中探索荒野、讨伐魔物、采集素材、攻略巨型 Boss；战斗强调动作性，角色构建自由度高，官方以「自由沙盒×高动作性战斗×自由构建」三轴定位。【美术与氛围】日式奇幻风格，本支预告片浓缩半年开发进度，世界氛围与战斗打击感较早期版本进步明显。【对标定位】单人开发者操刀的「小号艾尔登法环」式野望——沙盒探索与 Boss 战为骨架，自由构建为差异点。【优势】单人半年产出的内容密度令人印象深刻；高频进度曝光建立的社区信任感；愿望单运营节奏健康。【不足】发售日未定，完成度与优化仍是未知数；沙盒生存赛道竞争激烈。【综合】值得长期关注的日本单人开发项目，适合喜欢围观开发过程并愿意等待成品的玩家。",
+            "why_notable": "单人开发者半年产出的高密度预告，展示独游「小步快跑」的营销样本",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无（愿望单阶段）",
+            "gi_summary": "「开放沙盒」套「单人有野望」：KAIJIUUUUU 独立开发，Steam 发售日待定"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "ファミ通.com · 媒体",
+          "tags": [
+            "合作模拟",
+            "延期",
+            "Beta 测试"
+          ],
+          "game_ref": "Japanese Ramen Simulator",
+          "title": "《Japanese Ramen Simulator》发售延期：新日期待 Steam 审核通过后公布，同步开启闭测抽选",
+          "en_title": "発売延期となったラーメン店経営シミュ『Japanese Ramen Simulator』",
+          "full_text": "発売延期となったラーメン店経営シミュ『Japanese Ramen Simulator』。新しい発売日はSteamの審査が終わったら発表予定\nhttps://t.co/LMcyr9QKnj\n\n販売開始が遅れている件について続報が公開。お詫びと動作確認などを兼ねたクローズドβテスト（抽選参加）を開催。募集は本日20時まで。",
+          "author": "famitsu",
+          "date": "2026-10-03",
+          "likes": 2347,
+          "views": 366966,
+          "link": "https://x.com/famitsu/status/2106204375056277879",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2106204199218483200/pu/img/vcLfs1dCV6YJsqBG.jpg",
+            "video_url": "https://x.com/famitsu/status/2106204375056277879/video/1"
+          },
+          "summary": "ファミ通报道，最多 6 人合作的拉面店经营模拟《Japanese Ramen Simulator》发售延期，官方致歉并宣布：新日期待 Steam 审核通过后公布，同时开启以动作确认为目的的封闭 Beta（抽选制）。该推文获 2347 赞、36.7 万播放。",
+          "analysis": "",
+          "recommendation": "《拉面模拟器》延期：新日期等 Steam 审核，36 万人围观这场致歉闭测",
+          "enrichment": {
+            "game_name": "Japanese Ramen Simulator",
+            "genre": "模拟 / 合作 / 经营",
+            "developer": "Wild Dog",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2026年10月（原定，延期中）",
+            "steam_rating": "暂未发售",
+            "steam_url": "https://store.steampowered.com/app/4968640/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4968640/f271f45d7475a5270df309f6b7634d0a56a8055d/header.jpg?t=1790867392",
+            "youtube_video": null,
+            "description": "【核心玩法】最多 6 人合作的拉面店经营模拟：备料、煮面、摆盘出餐，追求「完美的一碗」；支持自创菜品、设计厨房与用餐区，从一间小店经营成拉面名铺，也可单人开店。【美术与氛围】日式可爱卡通风格，厨房的蒸汽与忙碌节奏营造轻松热闹的氛围，合作时手忙脚乱的喜剧效果拉满。【对标定位】《Overcooked》式的合作厨房混乱 + 经营模拟的养成深度，6 人上限高于同类。【优势】合作与经营双驱动；自创菜品提供表达空间；延期期间的闭测抽选维持了社区热度。【不足】发售延期，新日期待 Steam 审核通过后公布；拉面题材模拟器竞品渐多。【综合】适合朋友开黑的家庭向合作模拟，建议先抽选封闭 Beta 试水，并关注其 Steam 审核进展。",
+            "why_notable": "6 人合作厨房+经营养成；延期操作为独游团队敲响平台审核周期的警钟",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无（愿望单阶段）",
+            "gi_summary": "「合作厨房」套「拉面经营」：Wild Dog 开发，Steam 发售延期中"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "Next Indie · 媒体",
+          "tags": [
+            "合作",
+            "新游公布"
+          ],
+          "unselected": true,
+          "title": "2-4 人合作汽船管理与送货游戏《Solid Boat Adventure》公布，2026 年登陆 PC",
+          "en_title": "2-4 player co-op steamboat management and cargo delivery game 'Solid Boat Adventure' announced.",
+          "full_text": "2-4 player co-op steamboat management and cargo delivery game 'Solid Boat Adventure' announced.\n\nComing to PC in 2026\n\nSteam page: https://t.co/Wfc8EWGikM",
+          "author": "nexindie",
+          "date": "2026-10-02",
+          "likes": 376,
+          "views": 21014,
+          "link": "https://x.com/nexindie/status/2106080962551460255",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2106080750445498369/img/uflQf-H1KAuG4GVn.jpg",
+            "video_url": "https://x.com/nexindie/status/2106080962551460255/video/1"
+          },
+          "summary": "Solid Block of Power 开发的合作汽船冒险游戏公布 Steam 页面：与好友驾驶古怪汽船在险恶水域运送奇货，2026 年登陆 PC。",
+          "recommendation": "《Solid Boat Adventure》公布：2-4 人开一艘怪汽船送危险货物，2026 年发售"
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "@flarup · 开发者",
+          "tags": [
+            "iOS",
+            "扫雷",
+            "RTS"
+          ],
+          "unselected": true,
+          "title": "「扫雷但即时战略」《Keepsweeper》登陆 iOS：读线索、占土地、建王国",
+          "en_title": "Minesweeper, but it's a real-time strategy game. Read the clues. Claim the land. Build your kingdom.",
+          "full_text": "Minesweeper, but it's a real-time strategy game.\n\nRead the clues. Claim the land. Build your kingdom.\n\nKeepsweeper is out now on iOS. Free to try.",
+          "author": "flarup",
+          "date": "2026-10-02",
+          "likes": 1004,
+          "views": 64928,
+          "link": "https://x.com/flarup/status/2106025698603196438",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2106022381059731456/img/g8uscpsm-PDFWLII.jpg",
+            "video_url": "https://x.com/flarup/status/2106025698603196438/video/1"
+          },
+          "summary": "设计师 Michael Flarup 的新作：把扫雷变成即时战略——按数字线索抢占领地、实时扩张王国，现已登陆 iOS（免费试用），上线即获 1000+ 赞。",
+          "recommendation": "扫雷×RTS《Keepsweeper》上 iOS：按线索抢地盘建王国——1000 赞"
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "@G_Godaka · 开发者",
+          "tags": [
+            "猎奇",
+            "日系独游"
+          ],
+          "unselected": true,
+          "title": "「口臭男的通勤游戏」《にんにくマン》：限时出勤，周围人闻到口臭即死",
+          "en_title": "口が臭すぎる男のゲーム。時間内に出勤しないとゲームオーバー。",
+          "full_text": "口が臭すぎる男のゲーム。\n\n時間内に出勤しないとゲームオーバー。\n周囲は男の口臭を嗅ぐと即死。口を抑え過ぎてもケツから漏れ出してしまう口が臭すぎる男。\n\n『にんにくマン』",
+          "author": "G_Godaka",
+          "date": "2026-10-03",
+          "likes": 811,
+          "views": 41434,
+          "link": "https://x.com/G_Godaka/status/2106293184397705662",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2106289457636999168/pu/img/ACYFMabFsiSEXzzy.jpg",
+            "video_url": "https://x.com/G_Godaka/status/2106293184397705662/video/1"
+          },
+          "summary": "日本开发者ごだか的猎奇小品：扮演口臭男在限时内出勤，周围人闻到口臭即死；捂太紧又会从别处漏气——荒诞规则自带传播力，4.1 万播放。",
+          "recommendation": "《にんにくマン》：口臭男限时通勤，路人闻到即死——荒诞规则流量密码"
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "@G_Godaka · 开发者",
+          "tags": [
+            "益智",
+            "物理",
+            "日系独游"
+          ],
+          "unselected": true,
+          "title": "「意面俄罗斯方块」《Spaghetti Celesti》：用叉子卷起意面一次总取り",
+          "en_title": "スパゲッティのテトリス。パスタに絡めてフォークで総取りできる面白いシステム。",
+          "full_text": "スパゲッティのテトリス。\nパスタに絡めてフォークで総取りできる面白いシステム。\n\n『Spaghetti Celesti』",
+          "author": "G_Godaka",
+          "date": "2026-10-03",
+          "likes": 686,
+          "views": 40291,
+          "link": "https://x.com/G_Godaka/status/2106247886141051207",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2106244120465588224/pu/img/STIl2dWO6QYZQqjk.jpg",
+            "video_url": "https://x.com/G_Godaka/status/2106247886141051207/video/1"
+          },
+          "summary": "同开发者另一脑洞：把俄罗斯方块换成意面——用叉子把面条卷在一起一次「总取り」，物理缠绕系统让人眼馋，4 万播放。",
+          "recommendation": "《Spaghetti Celesti》：意面版俄罗斯方块，叉子卷面一次全收"
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "@akarolls · 独立开发",
+          "tags": [
+            "恐怖",
+            "互动叙事",
+            "Steam Demo"
+          ],
+          "unselected": true,
+          "title": "「你不是玩家，你是直播间弹幕」Backrooms 互动剧 demo 免费上线 Steam",
+          "en_title": "You're not the player. You're the chat. Backseat a scared rookie streamer through the Backrooms.",
+          "full_text": "You're not the player. You're the chat. 💬\n\nBackseat a scared rookie streamer through the Backrooms — she only moves when you tell her to.\n\n🎮 Free demo on Steam — link below 👇",
+          "author": "akarolls",
+          "date": "2026-10-03",
+          "likes": 33,
+          "views": 2107,
+          "link": "https://x.com/akarolls/status/2106369711009370352",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2106369558642905088/img/wIcfhLgLQYhX0E13.jpg",
+            "video_url": "https://x.com/akarolls/status/2106369711009370352/video/1"
+          },
+          "summary": "概念新颖的恐怖互动剧：玩家扮演新手主播直播间的「弹幕」，女主播只按你的指令行动——把「弹幕指挥」做成了核心机制，免费 demo 已上 Steam。",
+          "recommendation": "你不是玩家，你是弹幕：指挥菜鸟主播逃离 Backrooms 的免费 demo 已上线"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Dave Kratzy · KOL",
+          "tags": [
+            "Minecraft 模组",
+            "UI/UX",
+            "3D 交互"
+          ],
+          "featured": true,
+          "title": "Minecraft 模组 Spatial GUI 重做背包交互：过肩 3D 透视让每个箱子都立体可翻",
+          "en_title": "This new Minecraft mod completely overhauls how inventories function — the mod is called 'Spatial GUI'",
+          "full_text": "This new Minecraft mod completely overhauls how inventories function, and I love it!\n\nIt gives this cool over-the-shoulder 3d perspective to every inventory, with a bunch of configurable options\n\nthe mod is called \"Spatial GUI\"",
+          "author": "Krtzyy",
+          "date": "2026-10-02",
+          "likes": 17464,
+          "views": 373580,
+          "link": "https://x.com/Krtzyy/status/2106158495913406770",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2106155949501054976/img/zo8EuW42bRt0QIZ6.jpg",
+            "video_url": "https://x.com/Krtzyy/status/2106158495913406770/video/1"
+          },
+          "summary": "主播 Dave Kratzy 展示 Minecraft 模组 Spatial GUI：把所有背包/箱子界面改成过肩 3D 透视，物品从「平面格子」变成「立体容器」，并提供大量可配置选项。单条视频 1.7 万赞、37 万播放。",
+          "analysis": "一个 UI 模组收获如此量级的传播，说明「空间化交互」戳中了玩家对十年未变的格子背包的审美疲劳。3D 空间化 UI 对沉浸式游戏（尤其第一人称/VR）是值得借鉴的方向。",
+          "recommendation": "Minecraft 模组把背包改成过肩 3D 透视：格子背包的审美疲劳被戳中——37 万播放"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**卡普空把 AI 写进引擎路线图**\n在 10 月 2 日的 Capcom Open Conference RE:2026 上，卡普空公布 REX 项目，计划把已支撑约 30 款作品的 RE 引擎进化为「AI 生成式游戏引擎」：AI 将承担代码生成、自动试玩与协作开发。同日，开发者社区展示了 AI 长时程任务的新高度——Claude 连续工作 18 小时复刻出可玩的 Windows XP，多智能体框架 AgentCraft 干脆把 Claude 团队搬进了 Minecraft。\n\n**老游戏的长尾与中坚 IP 的爆发**\n《巫师3》凭免费重制版+秋季特卖创下 123,359 的 Steam 历史峰值；时隔 12 年回归的《皇牌空战8》首发峰值 52,662，达前作纪录的近四倍。老内容焕新与沉睡 IP 重启，正在成为 Steam 生态最确定的增量。\n\n**硬件成本警报**\n美光 CEO 警告内存短缺将持续到 2028 年、明年产能已基本售罄——PC、掌机与主机成本都将承压，关注玩家硬件升级周期放缓对画质预期的影响。\n\n**玩法创意速览**\n「碾过的一切都变成车厢」的电车问题 roguelite 定档 10 月 19 日 EA；4 人合作组装巨坦的《Tower Tanks》公布；《Direland》单人开发者用一支预告片浓缩半年进度；Minecraft 模组 Spatial GUI 把格子背包改成过肩 3D 透视，37 万播放。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
