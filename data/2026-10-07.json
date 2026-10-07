@@ -1,0 +1,696 @@
+{
+ "date": "2026-10-07",
+ "meta": {
+  "raw_count": 271,
+  "filtered_count": 191,
+  "selected_count": 12,
+  "crawl_time": "2026-10-07 10:12"
+ },
+ "lede": "GTA 5 被 AI 移植进浏览器跑 WebAssembly——119 万播放，Vercel CEO：AI 要先做出 GTA 7 了\nPokémon Arena 2D：2D 实时版《Pokkén》预告两天 262 万播放，Python 从零搭建",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "GTA 5 被 AI 移植进浏览器跑 WebAssembly——119万播放，Rauchg：AI要抢在GTA 6前做出GTA 7"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "Pokémon Arena 2D：2D实时版《Pokkén》预告狂揽262万播放，Python从零搭建"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "GTA 5 被 AI 移植进浏览器，119 万播放刷屏；Opus 5.5 八天 34.6 万行 C# 重建 3D 版 Terraria；Capcom 官宣把 RE Engine 改造成「AI 生成式游戏引擎」"
+  },
+  {
+   "id": "industry",
+   "text": "Ninja Theory 裁员落地、Xbox 拟关停 Hellblade 工作室；《AION 2》开服 2 小时活跃玩家破 40 万；《皇牌空战8》登顶 Steam 周销榜；Warner Bros. Games 易主 Skydance"
+  },
+  {
+   "id": "indie",
+   "text": "Pokémon Arena 2D 实时对战预告 262 万播放；「读额头数字」的 20 人 FPS Figure Me Out 开启免费 Playtest；试胆直播恐怖游戏《肝試しオンライン》公开 Steam 页；元 SNK 团队无说明书解谜《How to Use》公布"
+  },
+  {
+   "id": "tools",
+   "text": "Unity 6.6 原生序列化 Dictionary 登场，Inspector 直接编辑键值对"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Alex St. Louis · AI Demo",
+     "tags": [
+      "AI移植",
+      "WebAssembly",
+      "浏览器游戏"
+     ],
+     "title": "GTA 5 被 AI 移植进浏览器：WebAssembly 版实测可玩，AI 移植潮爆发",
+     "en_title": "GTA 5 has been ported to WebAssembly using AI. We live in the wildest timeline.",
+     "full_text": "GTA 5 has been ported ported to WebAssembly using AI. We live in the wildest timeline. \n\nhttps://t.co/7dPeLX3CSC https://t.co/gOuqVPPAHq",
+     "author": "AlexStLouis10",
+     "date": "2026-10-06",
+     "likes": 11936,
+     "views": 1193898,
+     "link": "https://x.com/AlexStLouis10/status/2107340032805892276",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2107339639422177280/img/2GfMStmp08jHpepH.jpg",
+      "video_url": "https://x.com/AlexStLouis10/status/2107340032805892276/video/1"
+     },
+     "summary": "开发者用 AI 将 GTA 5 完整移植到 WebAssembly，在浏览器中直接运行。推文 24 小时内获得 119 万播放、1.19 万点赞；随后 Alan 公开浏览器试玩入口（53.5 万播放），Vercel CEO Guillermo Rauchg 调侃「AI 会让我们先玩上 GTA 7」。同期 The Sims 1（three.js 移植）等案例集中出现，多家跟进报道。",
+     "analysis": "「AI 一句话整包移植 3A/经典 IP」本周集中爆发，说明 AI 代码能力已跨过整包级移植门槛。对行业：IP 方侵权下架压力会同步升级（Riot 已对 AI 复刻作品出手）；另一方面「浏览器即分发」可能成为 AI 时代低成本体验大型内容的新通道，云游戏之外的第三条路径值得跟踪。",
+     "recommendation": "GTA 5 被 AI 移植进浏览器跑 WebAssembly——119万播放，Rauchg：AI要抢在GTA 6前做出GTA 7",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Edgex · AI Demo",
+     "tags": [
+      "AI开发",
+      "Claude",
+      "AI复刻"
+     ],
+     "title": "Opus 5.5 八天用 34.6 万行 C# 重建 3D 版 Terraria：作者称一行代码没写",
+     "en_title": "Claude Opus 5.5 basically rebuilt Terraria in 3D. 8 days. 346K lines of C#.",
+     "full_text": "Claude Opus 5.5 basically rebuilt Terraria in 3D.\n\n8 days.\n346K lines of C#.\n3,369 items.\n313 enemies &amp; bosses.\nCustom engine. No Unity. No Godot.\n\nAnd the wildest part?\n\nThe creator says they wrote none of the code.\n\nAI game development is getting absurd. https://t.co/5RLFGxLqq5",
+     "author": "SahilExec",
+     "date": "2026-10-06",
+     "likes": 477,
+     "views": 20268,
+     "link": "https://x.com/SahilExec/status/2107444680732668320",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2107444633567666176/img/R0-VvcMpLKZhNaQv.jpg",
+      "video_url": "https://x.com/SahilExec/status/2107444680732668320/video/1"
+     },
+     "summary": "开发者用 Claude Opus 5.5 在 8 天内以 34.6 万行 C# 重建了 3D 版 Terraria：3369 个物品、313 个敌人与 Boss、自研引擎（非 Unity/Godot），并称自己「没有写任何一行代码」。",
+     "analysis": "单项目 34.6 万行、8 天、零手写——这个数据点比任何 demo 都更能说明 AI 编码在长周期大型工程上的能力变化。需要注意：复刻成熟 IP 的产物无法商业化，真正的信号是同样的产能流向原创玩法时的成本结构变化——8 人月级的工作量被压缩进一周。",
+     "recommendation": "Opus 5.5 八天产出34.6万行C#重建3D版Terraria：3369物品+313敌人，作者零手写",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Eurogamer · 业界报道",
+     "tags": [
+      "Capcom",
+      "RE Engine",
+      "生成式AI"
+     ],
+     "title": "Capcom 要把 RE Engine 改造成「AI 生成式游戏引擎」",
+     "en_title": "Capcom wants to transform its in-house RE Engine into what it's calling an \"AI-generation game engine\".",
+     "full_text": "Capcom wants to transform its in-house RE Engine into what it's calling an \"AI-generation game engine\". https://t.co/CMsqMH9wcN https://t.co/SpBlU3UDk3",
+     "author": "eurogamer",
+     "date": "2026-10-06",
+     "likes": 20,
+     "views": 6849,
+     "link": "https://x.com/eurogamer/status/2107387900702634388",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HT7yILuXEAAm3sW.jpg"
+     },
+     "summary": "Eurogamer 报道：Capcom 计划将自研 RE Engine 转型为其所称的「AI 生成式游戏引擎」，把生成式 AI 能力内置进引擎管线。",
+     "analysis": "继公开 REX 引擎基盘技术后，「引擎层 AI 化」首次由一线日厂正式提出。若资源生成、测试与迭代环节被 AI 管线接管，大厂内容产能曲线将被重写。同期对照：Jagex 因生成式 AI 预告片公开道歉、Mod 社区抵制 vibe-coded mod——厂商侧全面拥抱与玩家侧信任缺失的张力正在拉大。",
+     "recommendation": "Capcom 官宣：把 RE Engine 升级为「AI生成式游戏引擎」——大厂引擎层AI化第一枪"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 业界报道",
+     "tags": [
+      "裁员",
+      "Xbox",
+      "Ninja Theory"
+     ],
+     "title": "Ninja Theory 二轮裁员落地，Xbox 被曝考虑关停 Hellblade 工作室",
+     "en_title": "Ninja Theory staff report layoffs as Xbox considers closing the Hellblade studio",
+     "full_text": "More bad news for Ninja Theory today, as the studio's consultation process with Xbox - following a second wave of cuts last week - seems to have resulted in layoffs. https://t.co/ivDSJ7d0Ez https://t.co/jVEptrMPKY",
+     "author": "eurogamer",
+     "date": "2026-10-06",
+     "likes": 9,
+     "views": 3745,
+     "link": "https://x.com/eurogamer/status/2107478523807994272",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HT9EjIbWwAAv71w.jpg"
+     },
+     "summary": "继上周第二波裁员咨询后，Ninja Theory 员工确认裁员已启动，Niche Gamer、TheGamer 等多家媒体报道 Xbox 正考虑关停这家 Hellblade 工作室。同周 Supermassive Games 约 70+ 人离职（8 月预告的最多 75 人裁员落实），《Eternal Strands》开发商 Yellow Brick Games 也被曝裁员。",
+     "analysis": "一周内三家有代表作的欧美中型工作室收缩，且 Ninja Theory 是被微软收购后仍被关停评估的案例——被收购不再是安全垫。对从业者：叙事驱动型单机的成本模型继续承压，核心人才外溢对独立团队反而是组队窗口。",
+     "recommendation": "Ninja Theory裁员落地、Xbox拟关停Hellblade工作室；Supermassive同周走70+人",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Tony出海 · KOL观察",
+     "tags": [
+      "AION 2",
+      "NCSoft",
+      "MMO"
+     ],
+     "title": "NCSoft《AION 2》正式开服：2 小时活跃玩家破 40 万",
+     "en_title": "AI-Heavy MMO Hits Almost 400,000 Concurrent Players",
+     "full_text": "对胸部的喜爱之情，一款日本 MMO游戏《AION 2》终于正式服务开启 https://t.co/YzIYIxaDFy",
+     "author": "tonychuhai",
+     "date": "2026-10-06",
+     "likes": 61,
+     "views": 16452,
+     "link": "https://x.com/tonychuhai/status/2107350467819036718",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107289775153750016/pu/img/5Qjcdsma0skrRj3C.jpg",
+      "video_url": "https://x.com/tonychuhai/status/2107350467819036718/video/1"
+     },
+     "summary": "NCSoft 免费制 MMO《AION 2》正式开服。Game*Spark 报道开服 2 小时活跃玩家突破 40 万；TheGamer 以「重度使用 AI 的 MMO」报道其近 40 万的在线表现。捏脸系统（含极细身材参数）成为中文社区传播点。",
+     "analysis": "韩系旗舰 MMO 用「高自由捏脸 + AI 深度参与内容生产」重新验证了免费端游市场的爆发力。对国内厂商：MMO 大盘在收缩，但「AI 降本 + 强视觉差异化」的开服爆发力依然成立；40 万开服峰值也意味着服务器与运营预案必须按爆款标准配置，首周留存数据值得持续跟踪。",
+     "recommendation": "NCSoft《AION 2》开服2小时活跃玩家破40万——韩系MMO用AI降本再验证天花板",
+     "featured": true,
+     "game_ref": "AION 2",
+     "enrichment": {
+      "game_name": "AION 2",
+      "genre": "MMORPG（基本免费）",
+      "developer": "NCSoft",
+      "platforms": [
+       "PC（NCSoft Purple 客户端）"
+      ],
+      "price": "基本免费（道具收费）",
+      "release_date": "已发售 · 2026年10月6日正式开服",
+      "steam_rating": null,
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【产品定位】NCSoft 旗舰 MMORPG《AION 2》，永恒之塔正统续作，基本免费+道具收费。主打高自由度捏脸（胸部滑块等细节自定义成为传播热点）与飞行战斗世界观的延续。\n【开服表现】2026 年 10 月 6 日正式开服，Game*Spark 报道开服 2 小时活跃玩家突破 40 万；TheGamer 以「重度使用 AI 的 MMO」报道其近 40 万在线表现。\n【AI 要点】NCSoft 此前多次公开强调本作在生产管线中深度引入生成式 AI（场景与资源生产效率），是「AI 降本」路线在韩系旗舰 MMO 上的首次大规模落地。\n【关注点】开服峰值后的留存曲线、付费模型与外挂治理，将决定「AI 降本 MMO」路线能否成立。",
+      "why_notable": "开服 2 小时 40 万活跃玩家：AI 深度参与生产的韩系旗舰 MMO 重新验证免费端游爆发力",
+      "pcu": "开服2小时活跃玩家40万+（Game*Spark）",
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer / SteamDB · 榜单数据",
+     "tags": [
+      "皇牌空战8",
+      "Steam周销",
+      "市场表现"
+     ],
+     "title": "《皇牌空战8》登顶 Steam 周销榜：9-10 月新品商业表现集中爆发",
+     "en_title": "#SteamTopSellers for week of 29 Sep — 6 October 2026: #1 ACE COMBAT 8: WINGS OF THEVE",
+     "full_text": "Ace Combat 8: Wings of Theve has joined the ranks of September-October releases that have done very well commercially. https://t.co/UwgVXDsEob https://t.co/xV7qk1X00h",
+     "author": "eurogamer",
+     "date": "2026-10-06",
+     "likes": 22,
+     "views": 5116,
+     "link": "https://x.com/eurogamer/status/2107433205468967293",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HT8bVOuWwAAVVCS.jpg"
+     },
+     "summary": "SteamDB 周销榜（9.29-10.6，不含 F2P）：#1 皇牌空战8 Wings of Theve、#2 EA SPORTS FC 27、#3 WARDOGS、#4 战争机器：E-Day、#5 Transport Fever 3。Eurogamer 指出《皇牌空战8》已加入 9-10 月商业表现优异的新品行列。",
+     "analysis": "周销前五全是传统付费买断作品，硬核飞行射击与运输模拟这类「非流量品类」持续贡献大盘。9-10 月档期拥挤但需求旺盛，说明避开 3A 空窗期硬碰硬的档期策略依然有效；SteamDB 榜单里 WARDOGS、Transport Fever 3 两个非热门品类进前五，值得顺藤排查其异动原因。",
+     "recommendation": "《皇牌空战8》登顶Steam周销榜：前五还有FC 27、WARDOGS、战争机器E-Day、Transport Fever 3",
+     "game_ref": "ACE COMBAT 8: WINGS OF THEVE",
+     "enrichment": {
+      "game_name": "空战奇兵8 希孚之翼 (ACE COMBAT 8: WINGS OF THEVE)",
+      "genre": "动作",
+      "developer": "Bandai Namco Aces Inc.",
+      "steam_url": "https://store.steampowered.com/app/2288340",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2288340/13dea8084135fd130605b78189c82e39bf944c35/header.jpg?t=1791286652",
+      "release_date": "已发售 · 2026 年 10 月 1 日",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥ 298.00",
+      "steam_rating": "11214 reviews",
+      "description": "享受在空中自由自在翱翔的爽快感，依据自身判断将敌人接二连三击坠破的快感，打破艰难局面化成为英雄成就感的戏剧性飞行射击游戏。最高峰的天空‧大自然‧都市画面以及强大带入感的剧场表现，让玩家体验真正的王牌驾驶员故事。\n\n"
+     }
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "GameSpot · 业界报道",
+     "tags": [
+      "Warner Bros.",
+      "Skydance",
+      "并购"
+     ],
+     "title": "Warner Bros. Games 正式划入 Skydance 旗下，官宣公告只字未提",
+     "en_title": "Warner Bros. Games Now Belongs To Skydance",
+     "full_text": "Warner Bros. Games Now Belongs To Skydance, But Company Makes No Mention Of That In Big Announcement dlvr.​it/TVpFn1 https://t.co/t1WBiVi4R4",
+     "author": "GameSpot",
+     "date": "2026-10-06",
+     "likes": 20,
+     "views": 11260,
+     "link": "https://x.com/GameSpot/status/2107499258886901963",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HT9XaHzaIAAtmYx.jpg"
+     },
+     "summary": "Skydance 对 Warner Bros. 的收购完成后，Warner Bros. Games 已归属 Skydance，但公司在大型官宣公告中对这一变化只字未提。",
+     "analysis": "手握 Rocksteady、NetherRealm、Monolith 等工作室的 WB Games 易主，是今年游戏业最大规模的所有权变更之一。母公司交接期的「沉默」通常意味着重组评估尚未完成，未来半年 WB 旗下工作室去留与 IP 授权策略都存在变数——结合同周 Ninja Theory 关停传闻，中型工作室的命运正被资本结构直接决定。",
+     "recommendation": "Warner Bros. Games 正式易主 Skydance——官宣公告对此只字未提，重组评估疑未完成"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Retro Dodo · 媒体报道",
+     "tags": [
+      "宝可梦同人",
+      "实时对战",
+      "像素格斗"
+     ],
+     "title": "Pokémon Arena 2D：独立团队做 2D 实时版《Pokkén》，Python 从零搭建",
+     "en_title": "Pokémon Arena 2D looks set to shake up the fangame scene!",
+     "full_text": "Pokémon Arena 2D looks set to shake up the fangame scene!\n\nFind out more: https://t.co/cLMxclOo6L https://t.co/V11ZEpAaeB",
+     "author": "retro_dodo",
+     "date": "2026-10-05",
+     "likes": 16699,
+     "views": 2624538,
+     "link": "https://x.com/retro_dodo/status/2107095574302376068",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2107094913112285185/img/7pMAuhxoBlCC4BVX.jpg",
+      "video_url": "https://x.com/retro_dodo/status/2107095574302376068/video/1"
+     },
+     "summary": "独立发行商 Big Kid Nation 开发的宝可梦同人对战游戏《Pokémon Arena 2D》预告片两天收获 262 万播放、1.67 万点赞。游戏定位「2D 版《Pokkén》」：原始像素精灵实时走位闪避对战，战场可被挖出弹坑，最多 5 只精灵同场混战，公开 Beta 临近。",
+     "analysis": "17 年构思、2 年开发，全游戏用 Python 从零构建。团队声明游戏画面非 AI 生成，但社媒营销图使用 AI 素材，社区正在争论。同人 IP 玩法的商业化与下架风险并存，但「把回合制国民 IP 实时化重做」这个设计思路本身，已被 262 万播放验证存在巨大流量。",
+     "recommendation": "Pokémon Arena 2D：2D实时版《Pokkén》预告狂揽262万播放，Python从零搭建",
+     "featured": true,
+     "game_ref": "Pokémon Arena 2D",
+     "enrichment": {
+      "game_name": "Pokémon Arena 2D",
+      "genre": "同人对战 / 实时格斗（2D 版《Pokkén》）",
+      "developer": "Big Kid Nation（独立发行商，2 年开发）",
+      "platforms": [
+       "未公布（预期 PC）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": null,
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【核心玩法】2D 实时版《Pokkén》：原始像素风格的宝可梦在竞技场内实时走位、闪避、出招，彻底抛弃回合制指令循环。战场本身可被改变——挖洞与身体冲撞会留下弹坑和缺口；单场最多 5 只精灵同场混战，官方确认多人对战模式将在未来几个月加入。\n【开发背景】发行商 Big Kid Nation 自称这个点子想了 17 年、正式开发 2 年，即将开启公开 Beta 测试。全游戏以 Python 从零构建（非 ROM hack 改造），团队声明预告片画面全部为真实玩法、无 AI 生成，但其社媒头像与宣传图使用了 AI 生成素材，社区正在就此争论。\n【优势】把国民级回合制 IP「实时化」的差异化思路清晰可感；战场破坏与多精灵混战演出在 2D 像素语境下罕见。\n【不足】同人 IP 的商业化与下架风险悬顶；AI 素材争议可能影响社区信任；上线时间与平台均未公布。\n【综合】玩法吸引力已被 262 万播放验证，剩下的问题只有法律与工期。",
+      "why_notable": "预告片两天 262 万播放：「实时化重做回合制国民 IP」被验证有巨大流量，同人商业化边界与 AI 素材争议同时值得观察",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Game*Spark · 媒体报道",
+     "tags": [
+      "20人对战",
+      "心理博弈",
+      "Playtest"
+     ],
+     "title": "Figure Me Out：读出对手额头数字才能击杀的 20 人 FPS，免费 Playtest 开启",
+     "en_title": "額の番号を入力して敵を倒す最大20人対戦ACT『Figure Me Out』",
+     "full_text": "額の番号を入力して敵を倒す最大20人対戦ACTが注目度上昇中！『Figure Me Out』無料のSteamプレイテスト参加受付スタート\nhttps://t.co/rdnHwBtURz\n\n互いの番号を読み合う駆け引きが展開。双眼鏡で遠くから番号を視認、相手と鉢合わせたら閃光手榴弾で目くらましなど、アイテムも駆使して勝利を掴め。 https://t.co/zqdYCPdI7v",
+     "author": "gamespark",
+     "date": "2026-10-06",
+     "likes": 1393,
+     "views": 160413,
+     "link": "https://x.com/gamespark/status/2107331578028560777",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107331290001481728/pu/img/A-P6eP41Hmyxfd-G.jpg",
+      "video_url": "https://x.com/gamespark/status/2107331578028560777/video/1"
+     },
+     "summary": "Solo Groove Games 的 20 人第一人称对战游戏《Figure Me Out》：每个玩家额头都有 4 位数字，读出并输入对手的数字才能将其击杀。望远镜远距侦查、闪光弹致盲防读、拍照留证，「对视即危险」。10 月 1 日公布后经 Indie Game Joe 推荐热度飙升，免费 Playtest 报名已开启，正式版预计 10 月上线。",
+     "analysis": "把「猜数字」的心理博弈做成 FPS 核心机制，机制差异化极强且天然适合直播传播——对视、躲闪、反杀的戏剧性自带切片价值。发布 10 天即热度起飞，再次验证「一眼看懂的怪机制」是短视频时代最强的获客引擎。",
+     "recommendation": "Figure Me Out：读出对手额头4位数字才能击杀的20人FPS，公布10天热度起飞",
+     "featured": true,
+     "game_ref": "Figure Me Out",
+     "enrichment": {
+      "game_name": "Figure Me Out",
+      "genre": "动作 / 休闲 / 独立",
+      "developer": "Solo Groove Games",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年 10 月",
+      "steam_rating": null,
+      "steam_url": "https://store.steampowered.com/app/5313470",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5313470/2501fdac2bb79ccecc260783360aff70ae781e69/header.jpg?t=1791291255",
+      "youtube_video": null,
+      "description": "A multiplayer FPS where you eliminate opponents by typing the numbers on their foreheads. Read theirs before they read yours, use tactical gadgets to disrupt the fight, and battle friends or strangers in matches with up to 20 players.\n\n【核心玩法】20 人第一人称生存动作对战：每个玩家额头上都标着一个 4 位数字，只有读出对手的数字并输入才能将其击杀。围绕「看与被看」展开层层博弈——望远镜远距侦查、闪光弹致盲逃离、相机抓拍存证；面壁而立可躲避读取，但会触发惩罚机制。\n【对战模式】支持个人死斗、团队死斗与夺旗（CTF），所有模式都围绕数字读取的攻防展开。\n【热度节奏】10 月 1 日公开商店页，被独游推荐人 Indie Game Joe 介绍后热度迅速上升，Reddit 社区对概念评价积极；免费 Playtest 报名已开启（3 周内择期周末、分批邀请），正式版预计 2026 年 10 月上线 Steam（暂不支持日语）。\n【优势】机制一句话讲清、传播性极强；信息博弈层次（视距、道具、走位）超出预期。\n【不足】长线留存深度待验证；中文支持未确认。\n【综合】2026 年「机制差异化获客」的教科书案例。",
+      "why_notable": "「对视即危险」机制一眼看懂且天然适配直播传播——机制差异化获客的最新样本",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "電ファミニコゲーマー · 媒体报道",
+     "tags": [
+      "4-8人合作",
+      "恐怖",
+      "直播互动"
+     ],
+     "title": "肝試しオンライン：4-8 人深夜学校试胆直播，越害怕涨粉越多的内鬼恐怖游戏",
+     "en_title": "【最大8人】夜の学校で肝試し配信をするマルチプレイホラーゲーム",
+     "full_text": "【最大8人】夜の学校で肝試し配信をするマルチプレイホラーゲーム『肝試しオンライン』Steamストアページ公開。配信を盛り上げて登録者を増やしていく\nhttps://t.co/xOpNJKzzds\n\n怖い目に遭うほど視聴者数が増える。仲間の中には幽霊に憑依された裏切り者が紛れ込んでおり、罠や仕掛けで配信をかき乱す https://t.co/ig0eWga60d",
+     "author": "denfaminicogame",
+     "date": "2026-10-06",
+     "likes": 4230,
+     "views": 425949,
+     "link": "https://x.com/denfaminicogame/status/2107411462394454346",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107411431968907264/pu/img/_giQNB_YrbwvmovC.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2107411462394454346/video/1"
+     },
+     "summary": "开发者パン田、设计师兎澄ツミキ的 4-8 人恐怖游戏《肝試しオンライン》公开 Steam 页（10 月下旬发售）：玩家扮演深夜学校里做试胆直播的主播，遭遇越恐怖观众涨得越快；队友中混有被幽灵附身的内鬼，可穿墙布置陷阱搅乱直播，被过半票数指认才会现形。",
+     "analysis": "把「直播」本身写进玩法循环——恐怖度即涨粉速度、粉丝数即结算成绩，还官方配套直播素材与切片规范。距离语音（隔墙模糊、跨楼层不可闻）强化孤立感。这是《Lethal Company》《Content Warning》之后「主播生态驱动设计」的又一代进化样本，日本独立圈的社播协同设计密度正在快速上升。",
+     "recommendation": "肝試しオンライン：越害怕涨粉越多的4-8人试胆直播恐怖游戏，10月下旬发售",
+     "featured": true,
+     "game_ref": "肝試しオンライン",
+     "enrichment": {
+      "game_name": "Kimodameshi Online",
+      "genre": "4-8 人合作 / 恐怖 / 内鬼推理 / 直播互动",
+      "developer": "パン田（开发） / 兎澄ツミキ（设计）",
+      "platforms": [
+       "Steam (PC)"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年 10 月",
+      "steam_rating": null,
+      "steam_url": "https://store.steampowered.com/app/5321510/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5321510/f57e734eca0a9080f79f0725c91e2b09726210a7/header.jpg?t=1791339002",
+      "youtube_video": null,
+      "description": "【核心玩法】4-8 名玩家扮演深夜潜入学校做试胆直播的主播：探索昭和风格校舍、拍摄怪异，遭遇越恐怖直播间观众涨得越快；本作没有胜负判定，最终结算的是直播涨粉数——把主播生态直接写进了核心循环。\n【内鬼机制】队友中混有被幽灵附身的「裏切り者」：可灵体出窍穿墙、提前布置画作与机关、在直播中捣乱。主播可随时投票，内鬼若被过半票数指认将现形且本局不能再袭击；潜伏到底的内鬼结算时粉丝数大幅增长。内鬼之间还能在准备阶段协作布置。\n【系统细节】近距离语音：距离拉远声量变小、隔墙模糊、跨楼层几乎不可闻，单独行动风险极高；倒地后 1 分钟内被队友扶起可无限复活。校舍布局每轮随机变化，房主可选 2-4 层楼。\n【直播友好】官方直接提供素材包、投稿规范与简介文案，鼓励切片传播。\n【综合】《Lethal Company》《Content Warning》之后「直播驱动设计」的又一代进化，10 月下旬 Steam 发售。",
+      "why_notable": "「越害怕越涨粉」把主播生态写进核心循环：距离语音+内鬼机制继续推高恐怖协作品类的设计密度",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": null,
+      "_steam_genres": "动作 / 休闲 / 独立 / 策略",
+      "_steam_platforms": [
+       "windows"
+      ]
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "AUTOMATON · 媒体报道",
+     "tags": [
+      "解谜",
+      "元SNK团队",
+      "实验装置"
+     ],
+     "title": "How to Use：元 SNK 团队新工作室首作——1.5 万种操作组合的「无说明书」装置解谜",
+     "en_title": "『How to Use』発表。説明書なし、試せる操作は1万5000通り以上",
+     "full_text": "“使い方が謎な装置”を気合で操作ゲーム『How to Use』発表。説明書なし、試せる操作は1万5000通り以上、ひらめくまでひたすら試行錯誤\nhttps://t.co/6c0MVEpmGU https://t.co/TTWIcrZIEQ",
+     "author": "AUTOMATONJapan",
+     "date": "2026-10-06",
+     "likes": 1271,
+     "views": 122219,
+     "link": "https://x.com/AUTOMATONJapan/status/2107389051112395123",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2107389015020490752/img/lUcZAPjHrTPLji-b.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2107389051112395123/video/1"
+     },
+     "summary": "RENGAME（由 Monkey Craft、Zest Crew、ZOC 三社合并、元 SNK 成员为核心的大阪工作室）与 NANICA 共同开发的第一人称解谜《How to Use》公布，2027 年 3 月 Steam 发售：玩家被困洋馆，面前是没有说明书的神秘箱子，1.5 万种以上操作组合全靠试错与记录破解。",
+     "analysis": "前身团队参与过《Once Upon a Katamari》《风之克罗诺亚 Encore》等大厂项目，首个原创 IP 却选了「反效率设计」——在追求最优解的时代故意做绕远的乐趣，并与 NANICA 的线下谜题经验结合。叙事层面埋了「剧透严禁」伏笔。大厂经验团队向洞察型小品的转向本身是个有趣的行业信号。",
+     "recommendation": "元SNK团队新工作室首作《How to Use》：无说明书装置解谜，1.5万种操作组合",
+     "game_ref": "How to Use",
+     "enrichment": {
+      "game_name": "How to Use",
+      "genre": "冒险 / 独立",
+      "developer": "RENGAME / NANICA",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2027 年 3 月",
+      "steam_rating": null,
+      "steam_url": "https://store.steampowered.com/app/4821490",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4821490/9a03806d0a081a952a2ad830d8275676178755f4/header.jpg?t=1791256133",
+      "youtube_video": null,
+      "description": "No instructions. No hints. Just you, mysterious controls, and over 15,000 possible combinations. Experiment your way through this unique puzzle experience.\n\n【核心玩法】第一人称「洞察型实验解谜」：主角被绑在陌生洋馆的椅子上，面前是一台完全没有说明书的神秘装置——不知道它是什么、也不知道能做什么，只能上手按按钮、扳拉杆，观察反应、记录组合，逐步拼出装置的规则。装置六个面各藏机关，可拿起旋转查看；无效操作与其他操作组合后可能产生新结果，可尝试的操作组合超过 1.5 万种。\n【推进结构】解开一台装置后会出现新装置，活动范围逐步扩大；过程中洋馆与被困缘由的谜团逐渐展开，还会读到某人遗留的记录，官方提示存在「严禁剧透」的关键展开。\n【开发背景】RENGAME 由 Monkey Craft、Zest Crew、ZOC 三社合并而成，核心成员来自 SNK，前身团队参与过《Once Upon a Katamari》《风之克罗诺亚 1&2 Encore》《小魔女学园》等；本作与 takarush 旗下谜题品牌 NANICA 共同开发，理念是「在追求效率正解的时代，故意做绕远的乐趣」。\n【综合】2027 年 3 月 Steam 发售。",
+      "why_notable": "大厂项目经验团队转做「故意绕远」的反效率设计——洞察型解谜的差异化定位",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Jonas Sandstedt · 开发者",
+     "tags": [
+      "VR",
+      "自动化",
+      "已发售"
+     ],
+     "title": "Loop One Done：个人开发者 5 年打造的 VR 自动化游戏正式发售",
+     "en_title": "My VR automation game is now out on Steam! 5 years in the making, made by me.",
+     "full_text": "My VR automation game is now out on Steam! 5 years in the making, made by me, for you. I hope you like it as much as I do! \n\nhttps://t.co/efAUUsk3jV https://t.co/0MsdKUxYcI",
+     "author": "jonassandstedt",
+     "date": "2026-10-05",
+     "likes": 483,
+     "views": 21917,
+     "link": "https://x.com/jonassandstedt/status/2107154542064288045",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2107141402094104576/img/f5sCSgvFGg9mv1La.jpg",
+      "video_url": "https://x.com/jonassandstedt/status/2107154542064288045/video/1"
+     },
+     "summary": "Jonas Sandstedt 个人开发 5 年的 VR 自动化游戏《Loop One Done》登陆 Steam，一人完成全部开发。",
+     "recommendation": "Loop One Done：个人开发 5 年的 VR 自动化游戏正式发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Next Indie · 曝光渠道",
+     "tags": [
+      "32人对战",
+      "竞速",
+      "新公布"
+     ],
+     "title": "Surf N Destroy：32 人第一人称动作竞速公布，Steam 页已上线",
+     "en_title": "32-player first-person action racing game 'Surf N Destroy' announced.",
+     "full_text": "32-player first-person action racing game 'Surf N Destroy' announced.\n\nSteam page: https://t.co/ARuBYoSfog https://t.co/Yw5nUAbo7c",
+     "author": "nexindie",
+     "date": "2026-10-05",
+     "likes": 1492,
+     "views": 169499,
+     "link": "https://x.com/nexindie/status/2107172707569901710",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2107172383849164800/img/kOo51OJJ9raJb8pG.jpg",
+      "video_url": "https://x.com/nexindie/status/2107172707569901710/video/1"
+     },
+     "summary": "32 人第一人称动作竞速游戏《Surf N Destroy》正式公布，Steam 商店页已上线（APPID 5334590）。",
+     "recommendation": "Surf N Destroy：32 人第一人称动作竞速公布，Steam 页已上线",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "CELESTAY · 开发者",
+     "tags": [
+      "钓鱼",
+      "放置建造",
+      "即将发售"
+     ],
+     "title": "CELESTAY：末世钓鱼放置建造游戏 10 月 9 日发售，愿望单破 2.5 万",
+     "en_title": "『CELESTAY』は、終末世界で釣りを楽しむ、スローライフ放置建築ゲームです。",
+     "full_text": "🎉 25000+記念！ 10/9リリースまであと3日！🎉\n\n『CELESTAY』は、終末世界で釣りを楽しむ、スローライフ放置建築ゲームです。\n\n🎁 発売記念キャンペーン！🎁\nいいね＆リポストしてくれた方から、抽選で5名様に製品版Steamキーをプレゼントさせてください🎣\n\n#CELESTAY #indiesgame https://t.co/z10CmnZKVq",
+     "author": "CELESTAY_dev",
+     "date": "2026-10-06",
+     "likes": 580,
+     "views": 26656,
+     "link": "https://x.com/CELESTAY_dev/status/2107417756484440230",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HT8NOpybMAAoqlv.jpg"
+     },
+     "summary": "末世钓鱼放置建造游戏《CELESTAY》10 月 9 日发售，愿望单突破 2.5 万，开发者以抽 Steam Key 做发售造势。",
+     "recommendation": "CELESTAY：末世钓鱼放置建造，10 月 9 日发售，愿望单 2.5 万+",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Niche Gamer · 媒体报道",
+     "tags": [
+      "心理恐怖",
+      "叙事"
+     ],
+     "title": "Tulpa：与想象中的动漫少女一起坠入疯狂的心理恐怖游戏",
+     "en_title": "Tulpa is a horror game where you descend into madness with an imaginary anime girl",
+     "full_text": "Tulpa is a horror game where you descend into madness with an imaginary anime girl: https://t.co/ilGpvrZUKR https://t.co/NJhAWAoH36",
+     "author": "nichegamer",
+     "date": "2026-10-05",
+     "likes": 1528,
+     "views": 42293,
+     "link": "https://x.com/nichegamer/status/2107181946413424892",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107181874825003008/pu/img/hALJB6ohxi1RCvHX.jpg",
+      "video_url": "https://x.com/nichegamer/status/2107181946413424892/video/1"
+     },
+     "summary": "心理恐怖游戏《Tulpa》：玩家与想象出来的动漫少女「tulpa」一起下坠陷入疯狂，题材差异化明显。",
+     "recommendation": "Tulpa：与想象中的动漫少女一起坠入疯狂的心理恐怖",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "Niche Gamer · 媒体报道",
+     "tags": [
+      "1.0转正",
+      "PVP",
+      "免费化"
+     ],
+     "title": "Neighbors: Suburban Warfare hits 1.0：混乱郊区 PVP 转正并免费化",
+     "en_title": "Chaotic team-based PVP game Neighbors: Suburban Warfare hits 1.0",
+     "full_text": "Chaotic team-based PVP game Neighbors: Suburban Warfare hits 1.0: https://t.co/NWb3N7VfBd https://t.co/EFVldPmJ59",
+     "author": "nichegamer",
+     "date": "2026-10-06",
+     "likes": 4,
+     "views": 1122,
+     "link": "https://x.com/nichegamer/status/2107478573640540459",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107478526475534336/pu/img/ZU9drUxTgNzDLyH7.jpg",
+      "video_url": "https://x.com/nichegamer/status/2107478573640540459/video/1"
+     },
+     "summary": "团队 PVP 游戏《Neighbors: Suburban Warfare》迎来 1.0 正式版，同步转为基础免费（据 Game*Spark 榜单信息），并推进主机版。",
+     "recommendation": "Neighbors: Suburban Warfare 转 1.0 并基础免费化",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 06",
+     "source": "Niche Gamer · 媒体报道",
+     "tags": [
+      "视觉小说",
+      "J-Horror",
+      "已发售"
+     ],
+     "title": "Shinjuku Anomaly：短篇 J-Horror 视觉小说已发售",
+     "en_title": "Short J-horror visual novel Shinjuku Anomaly is now available",
+     "full_text": "Short J-horror visual novel Shinjuku Anomaly is now available: https://t.co/k4DjNVzvVA https://t.co/6XDatqfdoN",
+     "author": "nichegamer",
+     "date": "2026-10-06",
+     "likes": 8,
+     "views": 1332,
+     "link": "https://x.com/nichegamer/status/2107471805552173400",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HT8-cFxWAAAMe67.jpg"
+     },
+     "summary": "短篇日式恐怖视觉小说《Shinjuku Anomaly》现已在 Steam 发售。",
+     "recommendation": "Shinjuku Anomaly：短篇 J-Horror 视觉小说已发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 07",
+     "source": "Niche Gamer · 媒体报道",
+     "tags": [
+      "银河恶魔城",
+      "续作",
+      "即将发售"
+     ],
+     "title": "Nocturnal 2：波斯风横版银河恶魔城续作即将发售",
+     "en_title": "Persian-inspired sidescrolling metroidvania sequel Nocturnal 2 launches soon",
+     "full_text": "Persian-inspired sidescrolling metroidvania sequel Nocturnal 2 launches soon: https://t.co/i4O9Q444cY https://t.co/pUlF5ZOFLL",
+     "author": "nichegamer",
+     "date": "2026-10-06",
+     "likes": 5,
+     "views": 937,
+     "link": "https://x.com/nichegamer/status/2107486104614011341",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107486070602412032/pu/img/9uo4aqaWVt1S9RFo.jpg",
+      "video_url": "https://x.com/nichegamer/status/2107486104614011341/video/1"
+     },
+     "summary": "波斯风格横版银河恶魔城续作《Nocturnal 2》宣布近期发售。",
+     "recommendation": "Nocturnal 2：波斯风银河恶魔城续作即将发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 08",
+     "source": "IndieDB · 曝光渠道",
+     "tags": [
+      "开放世界",
+      "ARPG",
+      "多人"
+     ],
+     "title": "Everlast: Undying Tale：RuneScape 式技能养成 + ARPG，支持 100 人公共世界",
+     "en_title": "Everlast: Undying Tale blends RuneScape-like skilling with action RPG combat",
+     "full_text": "Everlast: Undying Tale blends RuneScape-like skilling with action RPG combat for solo play, with friends, or up to 100-player public worlds.\n\nhttps://t.co/ZoyF5XfNWN",
+     "author": "IndieDB",
+     "date": "2026-10-06",
+     "likes": 2,
+     "views": 509,
+     "link": "https://x.com/IndieDB/status/2107410531489615900",
+     "media": null,
+     "summary": "《Everlast: Undying Tale》把 RuneScape 式技能养成与动作 RPG 战斗结合，支持单人、组队与最多 100 人的公共世界。",
+     "recommendation": "Everlast: Undying Tale：RuneScape 式技能 + ARPG 的 100 人公共世界",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unity for Games · 官方",
+     "tags": [
+      "Unity",
+      "引擎更新",
+      "序列化"
+     ],
+     "title": "Unity 6.6 原生支持序列化 Dictionary：Inspector 直接编辑键值对",
+     "en_title": "Native serialized dictionaries are finally here in Unity 6.6",
+     "full_text": "Native serialized dictionaries are finally here in Unity 6.6 🎉\n\nNo more custom wrappers or third-party extensions. You can now edit key-value pairs directly in the Inspector with a built-in two-column view. https://t.co/1TS7C6Artx",
+     "author": "unitygames",
+     "date": "2026-10-06",
+     "likes": 38,
+     "views": 2933,
+     "link": "https://x.com/unitygames/status/2107495642452930686",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107495524085420032/pu/img/t6scQ0vmeRUF14tY.jpg",
+      "video_url": "https://x.com/unitygames/status/2107495642452930686/video/1"
+     },
+     "summary": "Unity 6.6 原生支持序列化字典（serialized dictionaries），无需自定义封装或第三方插件，Inspector 内置双列视图直接编辑键值对。",
+     "analysis": "看似小更新，实为高频痛点修复：此前几乎所有 Unity 项目都要引第三方 SerializableDictionary，存档表、配置表、掉落表处处受益。也再次说明引擎厂商正从「大功能竞赛」转向补齐日常开发摩擦点——这类更新对工作流的影响比大版本更直接。",
+     "recommendation": "Unity 6.6 原生序列化 Dictionary：Inspector 双列直接编辑键值对，告别第三方封装",
+     "featured": true
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI 移植与重建周：GTA 5 进浏览器，Terraria 重建 3D**\nGTA 5 被 AI 完整移植进浏览器跑 WebAssembly（119 万播放），The Sims 1、Pokémon Redstone 等案例同周跟进；Opus 5.5 用 8 天、34.6 万行 C# 重建 3D 版 Terraria 且作者零手写。Capcom 官宣把 RE Engine 升级为「AI 生成式游戏引擎」，大厂引擎层 AI 化正式开闸。\n\n**行业洗牌：裁员潮与所有权变更**\nNinja Theory 裁员落地、Xbox 被曝考虑关停 Hellblade 工作室，Supermassive 同周走 70+ 人；Warner Bros. Games 正式易主 Skydance 但官宣只字未提。另一面，《AION 2》开服 2 小时活跃玩家破 40 万，《皇牌空战8》登顶 Steam 周销榜，9-10 月新品大盘集中爆发。\n\n**独游侧：机制差异化的胜利**\n《Pokémon Arena 2D》用 2D 实时化重做宝可梦对战，预告 262 万播放；「读额头数字」的 20 人 FPS《Figure Me Out》公布 10 天即开免费 Playtest；《肝試しオンライン》把「越害怕越涨粉」的直播生态写进恐怖玩法核心循环。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
