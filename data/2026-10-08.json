@@ -3,14 +3,26 @@
   "meta": {
     "raw_count": 267,
     "filtered_count": 156,
-    "selected_count": 11,
+    "selected_count": 12,
     "crawl_time": "2026-10-08 10:09"
   },
-  "lede": "Google 与 Unity 同日押注零代码 AI 游戏创作；AI 复刻 Minecraft 以链接形式跑进 X 实现 740 万浏览的多人联机；Xbox 承认低谷后宣称恢复增长；Aion 2 以近 40 万在线开服却仅获 66% 好评。",
+  "lede": "Google 与 Unity 同日押注零代码 AI 游戏创作；AI 复刻 Minecraft 以链接形式跑进 X 实现 740 万浏览的多人联机；Xbox 宣称恢复增长、《战争机器：事变日》正式发售；Outlast Trials 首破 11.9 万同时在线。",
   "editors_pick": [
-    { "section_id": "ai", "item_index": 0, "hook": "Google Playground 发布：零代码用 AI 做游戏——与 Unity Spark 同日官宣合作" },
-    { "section_id": "industry", "item_index": 2, "hook": "Aion 2 开服即 39.8 万 Steam 在线（2026年第四），66% 好评率、AI 资产争议并行" },
-    { "section_id": "indie", "item_index": 0, "hook": "Keepsweeper：扫雷盘面长出奇幻 RTS——玩家吐槽它是偷走 3 小时的'时间小偷'" }
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Google Playground 发布：零代码用 AI 做游戏——与 Unity Spark 同日官宣合作"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 1,
+      "hook": "《战争机器：事变日》正式发售：系列前传登陆 Xbox 与 PC——Xbox 假日档发行旗舰"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "Keepsweeper：扫雷盘面长出奇幻 RTS——玩家吐槽它是偷走 3 小时的'时间小偷'"
+    }
   ],
   "digest": [
     {
@@ -19,7 +31,7 @@
     },
     {
       "id": "industry",
-      "text": "Xbox CEO 内部会称裁员 1800 人后'恢复增长'；Undead Labs 披露独立内幕：腾讯系收购告吹走管理层收购；Aion 2 开服即 39.8 万 Steam 在线但好评率仅 66%。"
+      "text": "Undead Labs 披露独立内幕：腾讯系收购告吹走管理层收购；《战争机器：事变日》正式发售；Xbox CEO 称裁员 1800 人后'恢复增长'；SteamDB 通报 Outlast Trials 首破 11.9 万同时在线。"
     },
     {
       "id": "indie",
@@ -27,7 +39,7 @@
     },
     {
       "id": "tools",
-      "text": "Unity Spark 官宣：提示词做游戏并直通 Google Playground；Capcom REX 项目把 RE Engine 面向 AI 世代重构。"
+      "text": "Unity Spark 官宣：提示词做游戏并直通 Google Playground；three.js 作者把 Unity Megacity 移植进浏览器（M1 Air 45fps/75MB）。"
     }
   ],
   "sections": [
@@ -41,7 +53,11 @@
           "idx": "AI科技热点 01",
           "featured": true,
           "source": "Google Labs · 官方发布",
-          "tags": ["AI游戏平台", "无代码", "Google"],
+          "tags": [
+            "AI游戏平台",
+            "无代码",
+            "Google"
+          ],
           "title": "Google Labs 推出 Playground：零代码 AI 游戏创作平台",
           "en_title": "Playground is an experimental gaming platform that lets you create your own games with zero coding experience.",
           "full_text": "🚨NEW EXPERIMENT 🚨\n\nPlayground is an experimental gaming platform that lets you create your own games with zero coding experience. If you can think it, you can play it.\n\nGo to https://t.co/fRUukpuoqM to learn more! Available to users 18+ in the US.",
@@ -63,7 +79,11 @@
           "idx": "AI科技热点 02",
           "featured": true,
           "source": "IGN · 报道",
-          "tags": ["AI克隆", "Minecraft", "多人联机"],
+          "tags": [
+            "AI克隆",
+            "Minecraft",
+            "多人联机"
+          ],
           "title": "Tweetcraft：AI 复刻 Minecraft 跑进 X 平台，带多人联机还卖加密货币广告位",
           "en_title": "Someone Used AI to Make Minecraft Playable Inside Twitter With Working Multiplayer",
           "full_text": "The AI video game clones continue, with Minecraft becoming playable inside X / Twitter with working multiplayer.",
@@ -83,7 +103,11 @@
         {
           "idx": "AI科技热点 03",
           "source": "0xAidanAi · AI 能力展示",
-          "tags": ["AI视频", "世界生成", "OPUS"],
+          "tags": [
+            "AI视频",
+            "世界生成",
+            "OPUS"
+          ],
           "title": "OPUS 5.5 把 Google 街景变成可炸的 Minecraft 世界",
           "en_title": "OPUS 5.5 TURNED REAL LIFE INTO MINECRAFT. SORRY NETHERLANDS",
           "full_text": "OPUS 5.5 TURNED REAL LIFE INTO MINECRAFT. SORRY NETHERLANDS\n\ngoogle street view + minecraft tnt\n\nfound a quiet street in amsterdam, placed some tnt, now there's a crater on prinsengracht 💀\n\ndrop your city in the replies, most liked one gets the tnt next 👇",
@@ -112,29 +136,12 @@
         {
           "idx": "游戏行业 01",
           "featured": true,
-          "source": "Eurogamer · 报道",
-          "tags": ["Xbox", "裁员", "GamePass"],
-          "title": "Xbox CEO 裁员 1800 人后称'已恢复增长'：Game Pass 曾陷'自由落体'",
-          "en_title": "\"After an all-time low, we've started to return to growth\" - Asha Sharma touts Xbox turnaround",
-          "full_text": "\"After an all-time low, we've started to return to growth\" - Asha Sharma touts Xbox turnaround after drastic restructuring and many hundreds of layoffs",
-          "author": "eurogamer",
-          "date": "2026-10-07",
-          "likes": 55,
-          "views": 10772,
-          "link": "https://x.com/eurogamer/status/2107779114732228880",
-          "media": {
-            "type": "image",
-            "url": "https://pbs.twimg.com/media/HUBVVUobgAABQLx.jpg"
-          },
-          "summary": "Windows Central 曝光 Xbox 内部 town hall 实录：CEO Asha Sharma 称经历重组与超 1800 人裁员后，业务'从历史低点恢复增长'，点名《战争机器：事变日》《我的世界：地下城 2》《魔兽世界：永恒》开局强劲；她承认年初游玩时长、玩家数与收入曾下滑，并称旧 Game Pass 策略曾让订阅服务盈利性'自由落体'。",
-          "analysis": "这是 Xbox 重组后的首次系统性定调：增长叙事绑定三款新游，Game Pass 被暗示'纠错'（取消 COD 首发换降价）。对从业者，读懂 Xbox 考核口径的变化比听增长故事更重要——它决定未来 12 个月微软系工作室的立项与续约逻辑。",
-          "recommendation": "Xbox 内部会实录：裁员 1800 人后 CEO 称'恢复增长'，Game Pass 曾盈利性自由落体"
-        },
-        {
-          "idx": "游戏行业 02",
-          "featured": true,
           "source": "Eurogamer · 深度报道",
-          "tags": ["UndeadLabs", "独立化", "StateOfDecay3"],
+          "tags": [
+            "UndeadLabs",
+            "独立化",
+            "StateOfDecay3"
+          ],
           "title": "Undead Labs 曝独立内幕：腾讯系 Splash Damage 收购告吹，SoD3 因裁员被迫调整",
           "en_title": "Undead Labs speaks about its split from Xbox, revealing it has to \"make some changes\" to State of Decay 3",
           "full_text": "Undead Labs speaks about its split from Xbox, revealing it has to \"make some changes\" to State of Decay 3 following layoffs",
@@ -152,26 +159,106 @@
           "recommendation": "Undead Labs 独立内幕：腾讯系收购告吹走 MBO，SoD3 因裁员调整但保住 Game Pass 首发"
         },
         {
-          "idx": "游戏行业 03",
+          "idx": "游戏行业 02",
           "featured": true,
-          "source": "Tony出海 · KOL观点",
-          "tags": ["Aion2", "NCSoft", "AI资产", "MMO"],
-          "title": "Aion 2 正式开服：Steam 峰值近 40 万在线，66% 好评率与 AI 资产争议并存",
-          "en_title": "AI-Heavy MMO Hits Almost 400,000 Concurrent Players On Steam",
-          "full_text": "对胸部的喜爱之情，一款日本 MMO游戏《AION 2》终于正式服务开启",
-          "author": "tonychuhai",
+          "source": "The Game Awards · 官方账号",
+          "tags": [
+            "GearsOfWar",
+            "发售",
+            "Xbox"
+          ],
+          "game_ref": "Gears of War: E-Day",
+          "title": "《战争机器：事变日》正式发售：系列前传登陆 Xbox 与 PC，Xbox 假日档发行旗舰",
+          "en_title": "Gears of War: E-Day is now available on Xbox and PC.",
+          "full_text": "Gears of War: E-Day is now available on Xbox and PC. https://t.co/JHcqFjP3ET",
+          "author": "thegameawards",
           "date": "2026-10-06",
-          "likes": 93,
-          "views": 23684,
-          "link": "https://x.com/tonychuhai/status/2107350467819036718",
+          "likes": 4577,
+          "views": 85323,
+          "link": "https://x.com/thegameawards/status/2107522629263372622",
           "media": {
-            "type": "video",
-            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107289775153750016/pu/img/5Qjcdsma0skrRj3C.jpg",
-            "video_url": "https://x.com/tonychuhai/status/2107350467819036718/video/1"
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HT9spqlW0AESP3x.jpg"
           },
-          "summary": "NCSoft 的《Aion 2》正式服务开启（Steam 免费版上线），上线数小时内峰值在线达 397,905，成为 2026 年 Steam 第四高在线新游；但好评率仅 66%（褒贬不一），差评主要指向移动化数值与变现设计，游戏因采用 VARCO 生成式 AI 制作部分卡牌与图标资产而持续陷争议。多家报道：TheGamer。",
-          "analysis": "Aion 2 是迄今规模最大的'重度 AI 资产+传统 MMO 变现'组合样本：40 万在线证明 IP 加免费模式的吸量能力，66% 好评证明口碑与在线人数可以完全脱钩。对国内厂商，它的 VARCO 管线（AI 出资产、出码、跑 QA）值得对标，但它的变现口碑同样是前车之鉴。",
-          "recommendation": "Aion 2 开服即 39.8 万 Steam 在线（2026 年第四），66% 好评率、AI 资产争议并行"
+          "summary": "The Coalition 开发的系列前传《战争机器：事变日》（Gears of War: E-Day）正式登陆 Xbox 与 PC（10 月 6 日发售，定价 $69.99），Steam 近三日 3,716 条评价、72% 好评（多半好评）。Xbox CEO 在重组后的内部会中将其列为'开局强劲'的三款新游之一，本作被视作 Xbox 假日档的发行旗舰。",
+          "analysis": "《战争机器：事变日》是 Xbox 重组后发行线的第一次大考，也是 CEO 增长叙事的三款支柱新游之一；'多半好评'的开局口碑与 CEO 的增长宣言互为印证，但 72% 的好评率离'口碑爆款'仍有距离，后续在线与销量曲线值得跟踪。作为系列招牌 IP 的前传，它也是观察微软'老 IP 复活'路线的样本。",
+          "recommendation": "《战争机器：事变日》正式发售：系列前传登陆 Xbox 与 PC——Xbox 假日档发行旗舰",
+          "enrichment": {
+            "game_name": "Gears of War: E-Day",
+            "genre": "Action / Adventure",
+            "developer": "The Coalition",
+            "platforms": [
+              "windows"
+            ],
+            "price": "$69.99",
+            "release_date": "Oct 6, 2026",
+            "steam_rating": "多半好评（近3日 72%，累计 4,977 条评价）",
+            "steam_url": "https://store.steampowered.com/app/3010850/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1791405196",
+            "youtube_video": null,
+            "description": "Experience Emergence Day – the brutal origin story of one of gaming’s most acclaimed third-person shooter franchises."
+          }
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · 报道",
+          "tags": [
+            "Xbox",
+            "裁员",
+            "GamePass"
+          ],
+          "title": "Xbox CEO 裁员 1800 人后称'已恢复增长'：Game Pass 曾陷'自由落体'",
+          "en_title": "\"After an all-time low, we've started to return to growth\" - Asha Sharma touts Xbox turnaround",
+          "full_text": "\"After an all-time low, we've started to return to growth\" - Asha Sharma touts Xbox turnaround after drastic restructuring and many hundreds of layoffs",
+          "author": "eurogamer",
+          "date": "2026-10-07",
+          "likes": 55,
+          "views": 10772,
+          "link": "https://x.com/eurogamer/status/2107779114732228880",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUBVVUobgAABQLx.jpg"
+          },
+          "summary": "Windows Central 曝光 Xbox 内部 town hall 实录：CEO Asha Sharma 称经历重组与超 1800 人裁员后，业务'从历史低点恢复增长'，点名《战争机器：事变日》《我的世界：地下城 2》《魔兽世界：永恒》开局强劲；她承认年初游玩时长、玩家数与收入曾下滑，并称旧 Game Pass 策略曾让订阅服务盈利性'自由落体'。",
+          "analysis": "这是 Xbox 重组后的首次系统性定调：增长叙事绑定三款新游，Game Pass 被暗示'纠错'（取消 COD 首发换降价）。对从业者，读懂 Xbox 考核口径的变化比听增长故事更重要——它决定未来 12 个月微软系工作室的立项与续约逻辑。",
+          "recommendation": "Xbox 内部会实录：裁员 1800 人后 CEO 称'恢复增长'，Game Pass 曾盈利性自由落体"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "SteamDB · 数据异动",
+          "tags": [
+            "SteamDB",
+            "CCU里程碑",
+            "恐怖游戏"
+          ],
+          "game_ref": "The Outlast Trials",
+          "title": "Outlast Trials 首次突破 11.9 万同时在线：90.97% 好评的老游异动",
+          "en_title": "The Outlast Trials has reached 119,526 concurrent players on Steam for the first time (90.97% rating)",
+          "full_text": "The Outlast Trials has reached 119,526 concurrent players on Steam for the first time (90.97% rating) https://t.co/m8vrrMqRth",
+          "author": "SteamDB",
+          "date": "2026-10-07",
+          "likes": 79,
+          "views": 7086,
+          "link": "https://x.com/SteamDB/status/2107846682364764595",
+          "media": null,
+          "summary": "SteamDB 官推通报：多人恐怖游戏《Outlast Trials》Steam 同时在线首次达到 119,526，好评率 90.97%。该作 2024 年结束抢先体验正式发售，本次为其历史首次 CCU 纪录；本日商店价仅 $3.99（深度折扣中），近 3 天新增 4.3 万条评价、94% 好评（特别好评）——促销驱动证据链完整。",
+          "analysis": "促销 + 高好评老游的'CCU 冲刺'打法被完整验证：$3.99 深度折扣、3 天 4.3 万条新增评价、11.9 万峰值 CCU 互为因果。对运营侧，90%+ 好评的内容型老游借节点深折促销是低成本重启流量池的可复制样本；买量团队可关注恐怖品类折扣期的自然传播势能。",
+          "recommendation": "SteamDB：Outlast Trials 首破 11.9 万同时在线——90% 好评老游的异动样本",
+          "enrichment": {
+            "game_name": "The Outlast Trials",
+            "genre": "Action / Adventure / Indie",
+            "developer": "Red Barrels",
+            "platforms": [
+              "windows"
+            ],
+            "price": "$3.99",
+            "release_date": "Mar 5, 2024",
+            "steam_rating": "特别好评（近3日 94%，累计 94,623 条评价）",
+            "steam_url": "https://store.steampowered.com/app/1304930/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1304930/65fbdba4ad0f1a7ed7a362a086c87042fa40fadc/header_alt_assets_3.jpg?t=1784123708",
+            "youtube_video": null,
+            "description": "Red Barrels invites you to experience mind-numbing terror, this time with friends. Whether you go through the trials alone or in teams, if you survive long enough and complete the therapy, Murkoff will happily let you leave… but will you be the same?"
+          }
         }
       ]
     },
@@ -185,7 +272,11 @@
           "idx": "新游推文 01",
           "featured": true,
           "source": "電ファミニコゲーマー · 媒体报道",
-          "tags": ["扫雷", "RTS", "移动端"],
+          "tags": [
+            "扫雷",
+            "RTS",
+            "移动端"
+          ],
           "game_ref": "Keepsweeper",
           "title": "Keepsweeper：独立开发的扫雷×奇幻 RTS 移动新游，被玩家称'时间小偷'",
           "en_title": "マインスイーパー風のファンタジーRTSゲーム『Keepsweeper』が\"時間泥棒だ\"と話題",
@@ -206,7 +297,12 @@
             "game_name": "Keepsweeper",
             "genre": "扫雷×RTS / 解谜模拟",
             "developer": "flarup（独立开发）",
-            "platforms": ["iOS", "itch.io", "Steam（即将）", "Android（即将）"],
+            "platforms": [
+              "iOS",
+              "itch.io",
+              "Steam（即将）",
+              "Android（即将）"
+            ],
             "price": "各模式前 2 关免费（iOS 买断制）",
             "release_date": "已发售 · 2026年10月（iOS/itch.io）",
             "steam_rating": "暂未上 Steam",
@@ -224,7 +320,11 @@
         {
           "idx": "新游推文 02",
           "source": "電ファミニコゲーマー · 媒体报道",
-          "tags": ["平台跳跃", "怀旧", "Steam"],
+          "tags": [
+            "平台跳跃",
+            "怀旧",
+            "Steam"
+          ],
           "game_ref": "Kick",
           "title": "Kick：独立开发、踢着足球穿越日式街景的上学路跑酷，11 月登陆 Steam",
           "en_title": "日本風な街並みを\"サッカーボール\"を蹴りながら駆け抜けるゲーム『Kick』",
@@ -245,7 +345,9 @@
             "game_name": "Kick",
             "genre": "横版跑酷 / 体育 / 独立",
             "developer": "nospacelost（独立开发）",
-            "platforms": ["Steam"],
+            "platforms": [
+              "Steam"
+            ],
             "price": "未公布（发行：Shoreline Games）",
             "release_date": "2026年11月",
             "steam_rating": "未发售（试玩版已开放）",
@@ -263,7 +365,11 @@
         {
           "idx": "新游推文 03",
           "source": "NeonNoroshi_JP · 游戏推介",
-          "tags": ["生存", "合作", "RPG"],
+          "tags": [
+            "生存",
+            "合作",
+            "RPG"
+          ],
           "game_ref": "Castaway Slime",
           "title": "Castaway Slime：韩国独立开发、4 人合作史莱姆生存 RPG，30 天救援倒计时",
           "en_title": "最大4人協力スライムサバイバルRPG『Castaway Slime』",
@@ -284,7 +390,9 @@
             "game_name": "Castaway Slime",
             "genre": "生存 / RPG / 合作",
             "developer": "AZS（韩国独立开发）",
-            "platforms": ["Steam"],
+            "platforms": [
+              "Steam"
+            ],
             "price": "未公布",
             "release_date": null,
             "steam_rating": "未发售",
@@ -303,7 +411,10 @@
           "idx": "新游参考 01",
           "unselected": true,
           "source": "トドネロ · 个人开发",
-          "tags": ["创意玩法", "个人开发"],
+          "tags": [
+            "创意玩法",
+            "个人开发"
+          ],
           "title": "トドネロ：用你画出来的图作战的个人开发新游戏",
           "en_title": "描いた絵で戦うゲームを作りました",
           "full_text": "描いた絵で戦うゲームを作りました\n\n#ゲーム制作 #gamedev",
@@ -324,7 +435,11 @@
           "idx": "新游参考 02",
           "unselected": true,
           "source": "ALATURKA · 独立开发",
-          "tags": ["开放世界", "仿GTA", "愿望单"],
+          "tags": [
+            "开放世界",
+            "仿GTA",
+            "愿望单"
+          ],
           "title": "ALATURKA：solo 开发者直播搭建的 70 年代伊斯坦布尔版 GTA III",
           "en_title": "what if GTA III had döner deliveries and unforgivingly janky, heavy driving physics?",
           "full_text": "what if GTA III had döner deliveries and unforgivingly janky, heavy driving physics?\nwhat if it was set in 70s Istanbul with psychedelic Anatolian rock?\n\ni built the answer solo, live on stream, with a $0 budget.\nHere is 255s of raw gameplay.\n\nwishlist ALATURKA on Steam now!",
@@ -345,7 +460,11 @@
           "idx": "新游参考 03",
           "unselected": true,
           "source": "Rock Paper Shotgun · 媒体报道",
-          "tags": ["开放世界", "生存", "EA"],
+          "tags": [
+            "开放世界",
+            "生存",
+            "EA"
+          ],
           "title": "ATMOSFAR：飞艇空岛开放世界生存，10 月 30 日开启抢先体验",
           "en_title": "Airborne open world Atmosfar gets an early access release date and a trailer full of flying islands, cloud cruisers and sky taxis",
           "full_text": "Airborne open world Atmosfar gets an early access release date and a trailer full of flying islands, cloud cruisers and sky taxis",
@@ -362,7 +481,11 @@
           "idx": "新游参考 04",
           "unselected": true,
           "source": "Akarolls · 独立开发",
-          "tags": ["恐怖", "Demo", "Steam"],
+          "tags": [
+            "恐怖",
+            "Demo",
+            "Steam"
+          ],
           "title": "Akarolls：backrooms 题材恐怖游戏，Steam 免费 Demo 已开",
           "en_title": "My chat kept pranking her. Then it wasn't a prank. 💀",
           "full_text": "My chat kept pranking her.\nThen it wasn't a prank. 💀\n\nFree demo on Steam, link below 👇\n\n#indiegame #gamedev #backrooms",
@@ -391,7 +514,11 @@
           "idx": "开发工具 01",
           "featured": true,
           "source": "Unity for Games · 官方发布",
-          "tags": ["Unity", "无代码", "AI生成"],
+          "tags": [
+            "Unity",
+            "无代码",
+            "AI生成"
+          ],
           "title": "Unity Spark 发布：提示词做游戏、无代码迭代发布，将直通 Google Playground",
           "en_title": "Introducing Unity Spark — Prompt it. Perfect it. Publish it.",
           "full_text": "Introducing Unity Spark — a new way to create a game, iterate on it with others, publish it, and play it - all without writing a line of code.\n\nYou'll build with artist-created assets from the Unity Asset Store, and then you can take your game to the next level by refining it in a new web-based editor.\n\nPrompt it. Perfect it. Publish it. Inspired games, with artist-created assets, built on Unity.\n\nClosed beta coming soon.\n\n🔗 Join the waitlist: https://t.co/sksBQaq7mE\n\nWe're also proud to announce a strategic partnership with @Google to bring Unity Spark into Google Playground 🤝\n\nBy combining Unity's engine technology with the strength of Google's expansive consumer ecosystem, Unity Spark creators will be able to publish straight into Google Playground and reach players from there.",
@@ -411,26 +538,31 @@
         },
         {
           "idx": "开发工具 02",
-          "source": "Eurogamer · 报道",
-          "tags": ["Capcom", "RE Engine", "AI管线"],
-          "title": "Capcom 启动 REX 项目：把 RE Engine 改造成面向'AI 世代'的引擎",
-          "en_title": "Capcom to evolve in-house RE Engine for \"the AI generation\"",
-          "full_text": "Capcom to evolve in-house RE Engine for \"the AI generation\", to help with development, testing, and checking for bugs",
-          "author": "eurogamer",
-          "date": "2026-10-07",
-          "likes": 8,
-          "views": 3289,
-          "link": "https://x.com/eurogamer/status/2107854496064033023",
+          "source": "mrdoob · 开发者动态",
+          "tags": [
+            "Three.js",
+            "WebGL",
+            "移植"
+          ],
+          "title": "three.js 作者把 Unity Megacity 搬进浏览器：M1 MacBook Air 跑 45fps、全量压到 75MB",
+          "en_title": "Ported Unity's Megacity (GDC 2019) to Three.js",
+          "full_text": "Ported Unity's Megacity (GDC 2019) to Three.js\n\n✅ ~45 fps on a MacBook Air M1\n✅ Full demo compressed down to 75 MB\n❌ No live link because of Unity's asset license 😕 https://t.co/tVCFIAh3nB",
+          "author": "mrdoob",
+          "date": "2026-10-05",
+          "likes": 2284,
+          "views": 309570,
+          "link": "https://x.com/mrdoob/status/2107140346576818474",
           "media": {
-            "type": "image",
-            "url": "https://pbs.twimg.com/media/HUCaSfWXAAAhAbV.jpg"
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2107134777715490816/img/iv3qTxSLzZrieIR_.jpg",
+            "video_url": "https://x.com/mrdoob/status/2107140346576818474/video/1"
           },
-          "summary": "Capcom 程序员石田智在 Capcom Open Conference RE:2026 上介绍 REX 项目：RE:Dox 统一数据格式、RE:UI 分离外观与状态加速工具、RE:Log 用 ID 替代文本日志、RE:Flows 可视化脚本自动转标准代码、RE:Runtime 批处理大量角色、RE:C++ 优化执行层；目标是让 AI 能读懂引擎、生成代码、自动试玩捉 Bug，实现'与 AI 共同做游戏'，部分底层技术已开源用于 AI 训练。",
-          "analysis": "主流厂商引擎 AI 化的罕见完整蓝图：不是'AI 生成内容'，而是'让 AI 成为引擎的一等公民用户'（读代码、跑测试）。2000+ 开发者共用 RE Engine 的体量意味着这套改造一旦验证，将成为自研引擎厂商的参照系。注意 Eurogamer 已更正译法：是'面向 AI 世代的引擎'，而非'AI 生成的引擎'。",
-          "recommendation": "Capcom REX 项目曝光：RE Engine 面向 AI 重构——AI 读代码、跑试玩、捉 Bug"
+          "summary": "three.js 作者 mrdoob（Ricardo Cabello）将 Unity 的 GDC 2019 Megacity 演示移植到 Three.js：在 M1 MacBook Air 上跑到约 45fps，整个演示压缩至 75MB；因 Unity 资产许可限制，无法放出在线试玩链接。",
+          "analysis": "Web 渲染能力的一次标志性验证：GDC 级城市规模场景在浏览器中已可达可玩帧率。对 H5 小游戏、营销页与云游戏降级方案团队，WebGL 管线产能上限又抬高了一截；'资产许可限制演示分发'的细节，也提示工具选型时留意引擎资产授权边界。",
+          "recommendation": "three.js 作者把 Unity Megacity 搬进浏览器：M1 Air 跑 45fps、全量压到 75MB"
         }
       ]
     }
   ],
-  "daily_summary": "**Google × Unity 同日官宣：AI 零代码做游戏成为平台级战略**\nGoogle Labs 发布实验性平台 Playground，零代码创建并游玩 AI 游戏；Unity 同步推出 Spark 并宣布作品可直通 Playground，两家的'引擎×分发'组合正式成型。\n\n**AI 复刻大作进入'天级打地鼠'周期**\nTweetcraft 把多人 Minecraft 塞进 X 帖子，740 万浏览还卖起了加密广告位；此前 GTA5、Fallout 浏览器复刻接连被下架，IP 防线面临新考题。\n\n**Xbox：裁员 1800 人后的增长叙事**\nCEO Asha Sharma 内部会称'从历史低点恢复增长'，点名《战争机器：事变日》等三款新游；Undead Labs 则披露独立内幕：腾讯系收购告吹、管理层收购成行、《腐烂国度 3》因裁员调整。\n\n**Aion 2 开服：40 万在线与 66% 好评并存**\nNCSoft 重度使用生成式 AI 资产的 MMO 正式服务开启，Steam 峰值 397,905，成 2026 年第四高在线新游，但变现口碑翻车。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+  "daily_summary": "**Google × Unity 同日官宣：AI 零代码做游戏成为平台级战略**\nGoogle Labs 发布实验性平台 Playground，零代码创建并游玩 AI 游戏；Unity 同步推出 Spark 并宣布作品可直通 Playground，两家的'引擎×分发'组合正式成型。\n\n**AI 复刻大作进入'天级打地鼠'周期**\nTweetcraft 把多人 Minecraft 塞进 X 帖子，740 万浏览还卖起了加密广告位；此前 GTA5、Fallout 浏览器复刻接连被下架，IP 防线面临新考题。\n\n**Xbox：裁员 1800 人后的增长叙事，《战争机器：事变日》发售**\nCEO Asha Sharma 内部会称'从历史低点恢复增长'，点名《战争机器：事变日》等三款新游，本作本周正式登陆 Xbox 与 PC；Undead Labs 披露独立内幕：腾讯系收购告吹、MBO 成行、《腐烂国度 3》因裁员调整。\n\n**数据异动与 Web 渲染里程碑**\nSteamDB 通报《Outlast Trials》首次突破 11.9 万同时在线（90.97% 好评）；three.js 作者 mrdoob 把 Unity Megacity 搬进浏览器，M1 Air 跑出 45fps。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
 }
