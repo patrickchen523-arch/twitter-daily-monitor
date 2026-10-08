@@ -1,0 +1,436 @@
+{
+  "date": "2026-10-08",
+  "meta": {
+    "raw_count": 267,
+    "filtered_count": 156,
+    "selected_count": 11,
+    "crawl_time": "2026-10-08 10:09"
+  },
+  "lede": "Google 与 Unity 同日押注零代码 AI 游戏创作；AI 复刻 Minecraft 以链接形式跑进 X 实现 740 万浏览的多人联机；Xbox 承认低谷后宣称恢复增长；Aion 2 以近 40 万在线开服却仅获 66% 好评。",
+  "editors_pick": [
+    { "section_id": "ai", "item_index": 0, "hook": "Google Playground 发布：零代码用 AI 做游戏——与 Unity Spark 同日官宣合作" },
+    { "section_id": "industry", "item_index": 2, "hook": "Aion 2 开服即 39.8 万 Steam 在线（2026年第四），66% 好评率、AI 资产争议并行" },
+    { "section_id": "indie", "item_index": 0, "hook": "Keepsweeper：扫雷盘面长出奇幻 RTS——玩家吐槽它是偷走 3 小时的'时间小偷'" }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Google Labs 发布零代码 AI 游戏平台 Playground；AI 复刻 Minecraft 以链接形式跑进 X 实现多人联机；OPUS 5.5 把 Google 街景实时变成可交互的 Minecraft 世界。"
+    },
+    {
+      "id": "industry",
+      "text": "Xbox CEO 内部会称裁员 1800 人后'恢复增长'；Undead Labs 披露独立内幕：腾讯系收购告吹走管理层收购；Aion 2 开服即 39.8 万 Steam 在线但好评率仅 66%。"
+    },
+    {
+      "id": "indie",
+      "text": "Keepsweeper 用扫雷盘面玩 RTS 成'时间小偷'；日式上学跑酷 Kick 11 月上 Steam；4 人合作史莱姆生存 Castaway Slime 曝光。"
+    },
+    {
+      "id": "tools",
+      "text": "Unity Spark 官宣：提示词做游戏并直通 Google Playground；Capcom REX 项目把 RE Engine 面向 AI 世代重构。"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "featured": true,
+          "source": "Google Labs · 官方发布",
+          "tags": ["AI游戏平台", "无代码", "Google"],
+          "title": "Google Labs 推出 Playground：零代码 AI 游戏创作平台",
+          "en_title": "Playground is an experimental gaming platform that lets you create your own games with zero coding experience.",
+          "full_text": "🚨NEW EXPERIMENT 🚨\n\nPlayground is an experimental gaming platform that lets you create your own games with zero coding experience. If you can think it, you can play it.\n\nGo to https://t.co/fRUukpuoqM to learn more! Available to users 18+ in the US.",
+          "author": "GoogleLabs",
+          "date": "2026-10-07",
+          "likes": 5353,
+          "views": 483690,
+          "link": "https://x.com/GoogleLabs/status/2107800195748737042",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2107799852545724416/img/WNhYntRqdeywAJeF.jpg",
+            "video_url": "https://x.com/GoogleLabs/status/2107800195748737042/video/1"
+          },
+          "summary": "Google Labs 发布实验性游戏平台 Playground，用户无需编程经验即可用 AI 创建自己的游戏并直接游玩，目前仅面向美国 18 岁以上用户开放。同日 GameSpot 发文提出'也许不是人人都该做 AI 游戏'的质疑。",
+          "analysis": "与 Unity Spark 同日公布的 Playground 表明'零门槛游戏创作'已成平台级战略：Google 出入口（分发与消费生态），Unity 出引擎能力。对从业者而言，UGC 供给爆炸会进一步稀释注意力，但'创作工具链 AI 化'的基建竞赛值得跟踪——它决定未来独立开发者的最低成本线。",
+          "recommendation": "Google Labs 推出 Playground：零代码用 AI 做游戏并直接开玩，美国 18+ 可用"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "featured": true,
+          "source": "IGN · 报道",
+          "tags": ["AI克隆", "Minecraft", "多人联机"],
+          "title": "Tweetcraft：AI 复刻 Minecraft 跑进 X 平台，带多人联机还卖加密货币广告位",
+          "en_title": "Someone Used AI to Make Minecraft Playable Inside Twitter With Working Multiplayer",
+          "full_text": "The AI video game clones continue, with Minecraft becoming playable inside X / Twitter with working multiplayer.",
+          "author": "IGN",
+          "date": "2026-10-07",
+          "likes": 243,
+          "views": 86986,
+          "link": "https://x.com/IGN/status/2107807155231338948",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUBvcBfWQAA97qz.png"
+          },
+          "summary": "开发者 jaivin 用 AI 制作了浏览器版 Minecraft 复刻'Tweetcraft'：把世界链接发进 X 帖子，点开即进入同一实时多人会话，还开放了游戏内加密货币赞助位；其发布帖已获 740 万浏览。此前 GTA5 浏览器复刻与 Fallout: New York 已接连被下架或收到律师函。",
+          "analysis": "AI 复刻大作的'打地鼠'周期已压缩到天级：链接即房间（平台当服务器）加加密变现的组合让侵权成本几乎为零。IGN 的追问是关键——当复刻时间缩短到小时级，IP 方在 DMCA 之外是否需要平台侧技术防线？对游戏公司这是新增的合规与风控议题。",
+          "recommendation": "AI 复刻 Minecraft 跑进 X：链接即多人房间，740万浏览，还卖起了加密广告位"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "0xAidanAi · AI 能力展示",
+          "tags": ["AI视频", "世界生成", "OPUS"],
+          "title": "OPUS 5.5 把 Google 街景变成可炸的 Minecraft 世界",
+          "en_title": "OPUS 5.5 TURNED REAL LIFE INTO MINECRAFT. SORRY NETHERLANDS",
+          "full_text": "OPUS 5.5 TURNED REAL LIFE INTO MINECRAFT. SORRY NETHERLANDS\n\ngoogle street view + minecraft tnt\n\nfound a quiet street in amsterdam, placed some tnt, now there's a crater on prinsengracht 💀\n\ndrop your city in the replies, most liked one gets the tnt next 👇",
+          "author": "0xAidanAi",
+          "date": "2026-10-06",
+          "likes": 4075,
+          "views": 158422,
+          "link": "https://x.com/0xAidanAi/status/2107578460239519858",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2107578369613131776/img/5thVP97VtCxDu5gm.jpg",
+            "video_url": "https://x.com/0xAidanAi/status/2107578460239519858/video/1"
+          },
+          "summary": "创作者用 OPUS 5.5 模型把 Google 街景实时转成 Minecraft 风格世界并叠加交互：在阿姆斯特丹运河街放置 TNT 后产生了持久弹坑，并邀请网友投票'下一座炸哪座城市'。",
+          "analysis": "'真实影像→可交互游戏世界'的转换成本正在快速归零。这类 demo 的意义不在玩法而在管线：地理数据+生成模型+物理交互已经能串成一条自动流水线，地图厂商与开放世界团队都该关注这条技术路径。",
+          "recommendation": "OPUS 5.5 把 Google 街景变成 Minecraft：放个 TNT，阿姆斯特丹运河真的炸出坑"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "featured": true,
+          "source": "Eurogamer · 报道",
+          "tags": ["Xbox", "裁员", "GamePass"],
+          "title": "Xbox CEO 裁员 1800 人后称'已恢复增长'：Game Pass 曾陷'自由落体'",
+          "en_title": "\"After an all-time low, we've started to return to growth\" - Asha Sharma touts Xbox turnaround",
+          "full_text": "\"After an all-time low, we've started to return to growth\" - Asha Sharma touts Xbox turnaround after drastic restructuring and many hundreds of layoffs",
+          "author": "eurogamer",
+          "date": "2026-10-07",
+          "likes": 55,
+          "views": 10772,
+          "link": "https://x.com/eurogamer/status/2107779114732228880",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUBVVUobgAABQLx.jpg"
+          },
+          "summary": "Windows Central 曝光 Xbox 内部 town hall 实录：CEO Asha Sharma 称经历重组与超 1800 人裁员后，业务'从历史低点恢复增长'，点名《战争机器：事变日》《我的世界：地下城 2》《魔兽世界：永恒》开局强劲；她承认年初游玩时长、玩家数与收入曾下滑，并称旧 Game Pass 策略曾让订阅服务盈利性'自由落体'。",
+          "analysis": "这是 Xbox 重组后的首次系统性定调：增长叙事绑定三款新游，Game Pass 被暗示'纠错'（取消 COD 首发换降价）。对从业者，读懂 Xbox 考核口径的变化比听增长故事更重要——它决定未来 12 个月微软系工作室的立项与续约逻辑。",
+          "recommendation": "Xbox 内部会实录：裁员 1800 人后 CEO 称'恢复增长'，Game Pass 曾盈利性自由落体"
+        },
+        {
+          "idx": "游戏行业 02",
+          "featured": true,
+          "source": "Eurogamer · 深度报道",
+          "tags": ["UndeadLabs", "独立化", "StateOfDecay3"],
+          "title": "Undead Labs 曝独立内幕：腾讯系 Splash Damage 收购告吹，SoD3 因裁员被迫调整",
+          "en_title": "Undead Labs speaks about its split from Xbox, revealing it has to \"make some changes\" to State of Decay 3",
+          "full_text": "Undead Labs speaks about its split from Xbox, revealing it has to \"make some changes\" to State of Decay 3 following layoffs",
+          "author": "eurogamer",
+          "date": "2026-10-07",
+          "likes": 7,
+          "views": 2916,
+          "link": "https://x.com/eurogamer/status/2107832675096498429",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUCGilYXMAAFJ30.jpg"
+          },
+          "summary": "Undead Labs 负责人 Phillip Holt 详谈从 Xbox 独立的过程：潜在买家为腾讯旗下 Splash Damage 但交易未成，最终以管理层收购（MBO）成行，裁员'令人心碎'但拒绝透露人数；《腐烂国度 3》维持 2027 年目标并保留 Game Pass 首发承诺，系列终身玩家达 2500 万。RPS 补充：投资人因西雅图人力成本而观望，Holt 感叹劳动力经济正在'竞底'。多家报道：Eurogamer, Rock Paper Shotgun, GameSpot。",
+          "analysis": "一篇访谈串起三个行业真相：大厂拆售工作室的买家并不好找；MBO 是被拆工作室的现实出路；'发达地区高成本团队 vs 低成本地区新势力'的成本焦虑已摆上台面。《腐烂国度 3》的 2027 窗口是观察 MBO 模式能否跑通的最佳样本。",
+          "recommendation": "Undead Labs 独立内幕：腾讯系收购告吹走 MBO，SoD3 因裁员调整但保住 Game Pass 首发"
+        },
+        {
+          "idx": "游戏行业 03",
+          "featured": true,
+          "source": "Tony出海 · KOL观点",
+          "tags": ["Aion2", "NCSoft", "AI资产", "MMO"],
+          "title": "Aion 2 正式开服：Steam 峰值近 40 万在线，66% 好评率与 AI 资产争议并存",
+          "en_title": "AI-Heavy MMO Hits Almost 400,000 Concurrent Players On Steam",
+          "full_text": "对胸部的喜爱之情，一款日本 MMO游戏《AION 2》终于正式服务开启",
+          "author": "tonychuhai",
+          "date": "2026-10-06",
+          "likes": 93,
+          "views": 23684,
+          "link": "https://x.com/tonychuhai/status/2107350467819036718",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107289775153750016/pu/img/5Qjcdsma0skrRj3C.jpg",
+            "video_url": "https://x.com/tonychuhai/status/2107350467819036718/video/1"
+          },
+          "summary": "NCSoft 的《Aion 2》正式服务开启（Steam 免费版上线），上线数小时内峰值在线达 397,905，成为 2026 年 Steam 第四高在线新游；但好评率仅 66%（褒贬不一），差评主要指向移动化数值与变现设计，游戏因采用 VARCO 生成式 AI 制作部分卡牌与图标资产而持续陷争议。多家报道：TheGamer。",
+          "analysis": "Aion 2 是迄今规模最大的'重度 AI 资产+传统 MMO 变现'组合样本：40 万在线证明 IP 加免费模式的吸量能力，66% 好评证明口碑与在线人数可以完全脱钩。对国内厂商，它的 VARCO 管线（AI 出资产、出码、跑 QA）值得对标，但它的变现口碑同样是前车之鉴。",
+          "recommendation": "Aion 2 开服即 39.8 万 Steam 在线（2026 年第四），66% 好评率、AI 资产争议并行"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "featured": true,
+          "source": "電ファミニコゲーマー · 媒体报道",
+          "tags": ["扫雷", "RTS", "移动端"],
+          "game_ref": "Keepsweeper",
+          "title": "Keepsweeper：独立开发的扫雷×奇幻 RTS 移动新游，被玩家称'时间小偷'",
+          "en_title": "マインスイーパー風のファンタジーRTSゲーム『Keepsweeper』が\"時間泥棒だ\"と話題",
+          "full_text": "マインスイーパー風のファンタジーRTSゲーム『Keepsweeper』が\"時間泥棒だ\"と話題。4つのモードがゲームを飽きさせない\n\nマスで仕切られた土地を農民に開墾させ、そこにモンスターがいたら兵士に倒させる。App Storeで配信中、Steam版も近日公開",
+          "author": "denfaminicogame",
+          "date": "2026-10-07",
+          "likes": 6924,
+          "views": 656465,
+          "link": "https://x.com/denfaminicogame/status/2107693691800564064",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107693663770021888/pu/img/-Xq3bWuL2-hJi50i.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2107693691800564064/video/1"
+          },
+          "summary": "开发者 flarup 的 Keepsweeper 把扫雷盘面变成奇幻 RTS：点开格子即由农民自动开垦并获得点数，数字提示周边宝藏、敌巢或巨龙位置（以颜色区分利弊），共 4 种模式且全部带计时赛。iOS 与 itch.io 已上线（各模式前 2 关免费），Steam 与安卓版即将推出，英语圈玩家热议'一玩就是 3 小时'。",
+          "recommendation": "Keepsweeper：扫雷盘面长出奇幻 RTS——玩家吐槽它是偷走 3 小时的'时间小偷'",
+          "enrichment": {
+            "game_name": "Keepsweeper",
+            "genre": "扫雷×RTS / 解谜模拟",
+            "developer": "flarup（独立开发）",
+            "platforms": ["iOS", "itch.io", "Steam（即将）", "Android（即将）"],
+            "price": "各模式前 2 关免费（iOS 买断制）",
+            "release_date": "已发售 · 2026年10月（iOS/itch.io）",
+            "steam_rating": "暂未上 Steam",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】Keepsweeper 是一款把经典扫雷与奇幻 RTS 嫁接的移动游戏。玩家点开被方格分割的未开垦土地，农民会自动开垦并产出升级点数；格面上的数字沿用扫雷逻辑，但标记的不是地雷而是宝藏、农民增援、敌巢或巨龙——数字颜色还能提示该格大致是福是祸。玩家只负责点格子、放农民小屋和兵营、做升级决策，解放格与战斗全部自动进行。\n\n【模式与节奏】提供从'讨伐盘面巨龙'到'攒满规定点数'等 4 种模式，全部内置计时器，通关后可挑战时间竞速。这种'单局短、可刷榜'的结构是其被称为'时间小偷'的直接原因。\n\n【优势】零操作门槛、决策感强、碎片时间适配度高；扫雷信息机制天然承担了 RTS 的侦察职能，学习成本几乎为零。\n\n【不足】内容体量偏小，自动化程度高可能削弱长期动力；尚未登陆 Steam 与安卓。\n\n【综合】'旧机制×新品类'嫁接的低成本差异化又一成功样本，适合喜欢轻度模拟与解谜的玩家。",
+            "why_notable": "英语圈自发传播'一玩 3 小时'，验证了扫雷信息机制嫁接 RTS 的低成本差异化路线",
+            "pcu": "暂未上 Steam",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "電ファミニコゲーマー · 媒体报道",
+          "tags": ["平台跳跃", "怀旧", "Steam"],
+          "game_ref": "Kick",
+          "title": "Kick：独立开发、踢着足球穿越日式街景的上学路跑酷，11 月登陆 Steam",
+          "en_title": "日本風な街並みを\"サッカーボール\"を蹴りながら駆け抜けるゲーム『Kick』",
+          "full_text": "日本風な街並みを\"サッカーボール\"を蹴りながら駆け抜けるゲーム『Kick』がアオハルすぎる。住宅街や商店街の景色がどこか懐かしい\n\n遅刻しないよう、ボールとともに通学路を全力疾走。通行人や障害物はスライディングとジャンプを活かしてスタイリッシュに避けまくる",
+          "author": "denfaminicogame",
+          "date": "2026-10-07",
+          "likes": 1184,
+          "views": 166060,
+          "link": "https://x.com/denfaminicogame/status/2107692008940954006",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107691987403186176/pu/img/lcxzIhgVELSZJeKt.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2107692008940954006/video/1"
+          },
+          "summary": "nospacelost 开发、Shoreline Games 发行的 Kick 让玩家一路踢着足球奔向学校：住宅街、商店街、海边沙滩与高架下等日式场景中，用滑铲和跳跃躲开行人、猫犬与障碍，收集金币解锁足球皮肤与旗帜装饰自己的房间。Steam 页面已开、试玩版可玩，预计 11 月发售。",
+          "recommendation": "Kick：踢着足球狂奔上学、滑铲躲过大爷大妈——11 月上 Steam，试玩已开",
+          "enrichment": {
+            "game_name": "Kick",
+            "genre": "横版跑酷 / 体育 / 独立",
+            "developer": "nospacelost（独立开发）",
+            "platforms": ["Steam"],
+            "price": "未公布（发行：Shoreline Games）",
+            "release_date": "2026年11月",
+            "steam_rating": "未发售（试玩版已开放）",
+            "steam_url": "https://store.steampowered.com/app/3760370/Kick/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3760370/d5e0d563d85638e59c3f1c58b135782a1b43be20/header.jpg?t=1789484606",
+            "youtube_video": null,
+            "description": "【核心玩法】Kick 是一封写给'简单时光'的情书：玩家扮演'小子'，在上学路上带球狂奔。每关目标是抵达终点并沿途收金币，路上有看板、置物、猫犬与行人拦路，需要用滑铲与跳跃 stylish 地化解。支持可调难度，无需应对快速反应事件，对手柄与 DualSense 做了专门适配。\n\n【美术与氛围】核心卖点是对日本街景的高密度还原：狭路、住宅区、头顶电线、招牌与商店街，'昭和/平成味'细节成为社媒传播的记忆点。\n\n【收集与个性化】通关解锁足球皮肤与旗帜，可在自己的房间中陈列，提供轻量收集循环。\n\n【优势】题材差异化清晰、情绪价值足、上手零门槛。\n\n【不足】玩法纵深有限，关卡重复度待验证。\n\n【综合】乡愁系横版小品的规范打法，试玩已可验证手感，适合喜欢《任天堂明星大乱斗》式轻松竞速之外的休闲玩家。",
+            "why_notable": "单条日媒推文 16.6 万浏览，证明'乡愁系'仍是独立游戏低成本流量密码",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "NeonNoroshi_JP · 游戏推介",
+          "tags": ["生存", "合作", "RPG"],
+          "game_ref": "Castaway Slime",
+          "title": "Castaway Slime：韩国独立开发、4 人合作史莱姆生存 RPG，30 天救援倒计时",
+          "en_title": "最大4人協力スライムサバイバルRPG『Castaway Slime』",
+          "full_text": "救助まで30日。なお、1日は約4〜5分。\n遭難したスライムが地下を掘って戦い生き延びる、そんなゲームがあるらしい。\n\n最大4人協力スライムサバイバルRPG『Castaway Slime』。\n狩り、農業、料理、採掘に、装備やスキルの育成も。\n救助を待つだけにしては、だいぶ忙しい。",
+          "author": "NNoroshi",
+          "date": "2026-10-06",
+          "likes": 1290,
+          "views": 81541,
+          "link": "https://x.com/NNoroshi/status/2107591226559980006",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2105250316472262656/img/RnjEf2gSCjDOJupp.jpg",
+            "video_url": "https://x.com/NNoroshi/status/2107591226559980006/video/1"
+          },
+          "summary": "韩国开发者 AZS 的 Castaway Slime 让失事史莱姆在救援船抵达前生存 30 天：一天仅 4-5 分钟，狩猎、种田、做饭、挖矿之外还有装备、数值与技能成长，支持最多 4 人在线合作（公开房或邀请码）。Steam 页面已上线，发售日期待定。",
+          "recommendation": "Castaway Slime：史莱姆版饥荒+四人合作，一天只有 5 分钟的 30 天生存挑战",
+          "enrichment": {
+            "game_name": "Castaway Slime",
+            "genre": "生存 / RPG / 合作",
+            "developer": "AZS（韩国独立开发）",
+            "platforms": ["Steam"],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5168140/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5168140/5695f43b51fa21bcb01b886c96fde04a3a92fecc/header.jpg?t=1791264509",
+            "youtube_video": null,
+            "description": "【核心玩法】Castaway Slime 是一款以史莱姆为主角的 30 天生存 RPG：失事搁浅的史莱姆要在救援船到达前活下来，每一天只有现实中的 4-5 分钟。玩家需要把一天分配给狩猎、耕种、烹饪与洞穴挖矿，用战利品在祭坛换取金币升级装备，用稀有钻石学习或强化技能。\n\n【合作设计】支持最多 4 人在线联机，可加入公开房或用邀请码建私密房；难度吃紧时组队是明确解法。\n\n【节奏结构】'一天 5 分钟'把生存游戏的长期目标切成通勤级碎片会话，30 天倒计时提供天然的阶段性目标与紧迫感。\n\n【优势】节奏设计与当代玩家时间预算高度契合；可爱皮相+硬生存系统的反差有传播力。\n\n【不足】内容深度取决于 30 天后的可重复性；发售日未定。\n\n【综合】'轻生存+合作+可爱皮'的潜力组合，值得加入愿望单观察。",
+            "why_notable": "把生存游戏切成一天 5 分钟的碎片会话再叠 4 人合作，结构上精准卡位当代玩家时间预算",
+            "pcu": "未发售",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "unselected": true,
+          "source": "トドネロ · 个人开发",
+          "tags": ["创意玩法", "个人开发"],
+          "title": "トドネロ：用你画出来的图作战的个人开发新游戏",
+          "en_title": "描いた絵で戦うゲームを作りました",
+          "full_text": "描いた絵で戦うゲームを作りました\n\n#ゲーム制作 #gamedev",
+          "author": "x282665",
+          "date": "2026-10-07",
+          "likes": 7138,
+          "views": 471286,
+          "link": "https://x.com/x282665/status/2107751232748273735",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2107751052389023744/img/o4QQK3F163lZ4qTq.jpg",
+            "video_url": "https://x.com/x282665/status/2107751232748273735/video/1"
+          },
+          "summary": "日本个人开发者トドネロ公开'用画的画作战'的新游戏演示：玩家手绘的内容直接成为战斗单位/攻击形态参与对战，视频获 47 万浏览、7 千赞。",
+          "recommendation": "日本个人开发者的'画什么打什么'：手绘即战力的战斗游戏演示——47 万浏览"
+        },
+        {
+          "idx": "新游参考 02",
+          "unselected": true,
+          "source": "ALATURKA · 独立开发",
+          "tags": ["开放世界", "仿GTA", "愿望单"],
+          "title": "ALATURKA：solo 开发者直播搭建的 70 年代伊斯坦布尔版 GTA III",
+          "en_title": "what if GTA III had döner deliveries and unforgivingly janky, heavy driving physics?",
+          "full_text": "what if GTA III had döner deliveries and unforgivingly janky, heavy driving physics?\nwhat if it was set in 70s Istanbul with psychedelic Anatolian rock?\n\ni built the answer solo, live on stream, with a $0 budget.\nHere is 255s of raw gameplay.\n\nwishlist ALATURKA on Steam now!",
+          "author": "bufuakgames",
+          "date": "2026-10-07",
+          "likes": 387,
+          "views": 13208,
+          "link": "https://x.com/bufuakgames/status/2107763311995429183",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2107757430230634496/img/DrlZXnYPsLhgAz88.jpg",
+            "video_url": "https://x.com/bufuakgames/status/2107763311995429183/video/1"
+          },
+          "summary": "solo 开发者以 0 预算直播开发 ALATURKA：设定在 70 年代伊斯坦布尔的'GTA III 式'开放世界，烤肉外卖任务、笨重驾驶手感与安纳托利亚迷幻摇滚配乐，放出 255 秒实机并开放 Steam 愿望单。",
+          "recommendation": "ALATURKA：solo 直播 0 预算做出 70 年代伊斯坦布尔版 GTA III——烤肉外卖+迷幻摇滚"
+        },
+        {
+          "idx": "新游参考 03",
+          "unselected": true,
+          "source": "Rock Paper Shotgun · 媒体报道",
+          "tags": ["开放世界", "生存", "EA"],
+          "title": "ATMOSFAR：飞艇空岛开放世界生存，10 月 30 日开启抢先体验",
+          "en_title": "Airborne open world Atmosfar gets an early access release date and a trailer full of flying islands, cloud cruisers and sky taxis",
+          "full_text": "Airborne open world Atmosfar gets an early access release date and a trailer full of flying islands, cloud cruisers and sky taxis",
+          "author": "rockpapershot",
+          "date": "2026-10-07",
+          "likes": 1,
+          "views": 382,
+          "link": "https://x.com/rockpapershot/status/2107879025016176732",
+          "media": null,
+          "summary": "空中开放世界生存游戏 ATMOSFAR 公布抢先体验档期：10 月 30 日上线，玩家驾驶可自定义的飞艇在无数空岛间旅行，预告片展示飞岛、云上巡洋舰与空中出租车（日媒报道确认支持最多 4 人联机）。",
+          "recommendation": "ATMOSFAR：开着自制飞艇逛空岛的开放世界生存——10 月 30 日抢鲜体验"
+        },
+        {
+          "idx": "新游参考 04",
+          "unselected": true,
+          "source": "Akarolls · 独立开发",
+          "tags": ["恐怖", "Demo", "Steam"],
+          "title": "Akarolls：backrooms 题材恐怖游戏，Steam 免费 Demo 已开",
+          "en_title": "My chat kept pranking her. Then it wasn't a prank. 💀",
+          "full_text": "My chat kept pranking her.\nThen it wasn't a prank. 💀\n\nFree demo on Steam, link below 👇\n\n#indiegame #gamedev #backrooms",
+          "author": "akarolls",
+          "date": "2026-10-07",
+          "likes": 81,
+          "views": 4883,
+          "link": "https://x.com/akarolls/status/2107645062482211266",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2107644883351822336/img/Zzo_w-J2f5eMedJS.jpg",
+            "video_url": "https://x.com/akarolls/status/2107645062482211266/video/1"
+          },
+          "summary": "backrooms 题材恐怖游戏新 Demo 上线 Steam 免费试玩，宣传片段以'直播间整蛊变成真的'为钩子。",
+          "recommendation": "backrooms 恐怖新 Demo 免费试玩：直播整蛊她的弹幕，后来不再是整蛊"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "featured": true,
+          "source": "Unity for Games · 官方发布",
+          "tags": ["Unity", "无代码", "AI生成"],
+          "title": "Unity Spark 发布：提示词做游戏、无代码迭代发布，将直通 Google Playground",
+          "en_title": "Introducing Unity Spark — Prompt it. Perfect it. Publish it.",
+          "full_text": "Introducing Unity Spark — a new way to create a game, iterate on it with others, publish it, and play it - all without writing a line of code.\n\nYou'll build with artist-created assets from the Unity Asset Store, and then you can take your game to the next level by refining it in a new web-based editor.\n\nPrompt it. Perfect it. Publish it. Inspired games, with artist-created assets, built on Unity.\n\nClosed beta coming soon.\n\n🔗 Join the waitlist: https://t.co/sksBQaq7mE\n\nWe're also proud to announce a strategic partnership with @Google to bring Unity Spark into Google Playground 🤝\n\nBy combining Unity's engine technology with the strength of Google's expansive consumer ecosystem, Unity Spark creators will be able to publish straight into Google Playground and reach players from there.",
+          "author": "unitygames",
+          "date": "2026-10-07",
+          "likes": 1026,
+          "views": 80519,
+          "link": "https://x.com/unitygames/status/2107805373918835075",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107804903863189505/pu/img/XfBZUNEe4euso6uO.jpg",
+            "video_url": "https://x.com/unitygames/status/2107805373918835075/video/1"
+          },
+          "summary": "Unity 发布 Unity Spark：基于 Asset Store 美术资产与网页编辑器，让用户零代码完成'提示词生成—协作迭代—发布—游玩'闭环，Closed Beta 即将开启；同时官宣与 Google 战略合作，Spark 作品可直接发布进 Google Playground 触达其消费生态。",
+          "analysis": "Unity 把身位从'引擎供应商'调整为'AI 时代 UGC 管线'：美术资产库是它相对 Roblox 与 Google 的差异化壁垒。与 Playground 绑定意味着 Unity 下注分发侧——对中小团队多一条零成本触达 C 端的官方渠道，对外包美术资产方则意味着需求结构可能生变。",
+          "recommendation": "Unity Spark 发布：提示词做游戏+网页端迭代发布，将直通 Google Playground"
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Eurogamer · 报道",
+          "tags": ["Capcom", "RE Engine", "AI管线"],
+          "title": "Capcom 启动 REX 项目：把 RE Engine 改造成面向'AI 世代'的引擎",
+          "en_title": "Capcom to evolve in-house RE Engine for \"the AI generation\"",
+          "full_text": "Capcom to evolve in-house RE Engine for \"the AI generation\", to help with development, testing, and checking for bugs",
+          "author": "eurogamer",
+          "date": "2026-10-07",
+          "likes": 8,
+          "views": 3289,
+          "link": "https://x.com/eurogamer/status/2107854496064033023",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUCaSfWXAAAhAbV.jpg"
+          },
+          "summary": "Capcom 程序员石田智在 Capcom Open Conference RE:2026 上介绍 REX 项目：RE:Dox 统一数据格式、RE:UI 分离外观与状态加速工具、RE:Log 用 ID 替代文本日志、RE:Flows 可视化脚本自动转标准代码、RE:Runtime 批处理大量角色、RE:C++ 优化执行层；目标是让 AI 能读懂引擎、生成代码、自动试玩捉 Bug，实现'与 AI 共同做游戏'，部分底层技术已开源用于 AI 训练。",
+          "analysis": "主流厂商引擎 AI 化的罕见完整蓝图：不是'AI 生成内容'，而是'让 AI 成为引擎的一等公民用户'（读代码、跑测试）。2000+ 开发者共用 RE Engine 的体量意味着这套改造一旦验证，将成为自研引擎厂商的参照系。注意 Eurogamer 已更正译法：是'面向 AI 世代的引擎'，而非'AI 生成的引擎'。",
+          "recommendation": "Capcom REX 项目曝光：RE Engine 面向 AI 重构——AI 读代码、跑试玩、捉 Bug"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Google × Unity 同日官宣：AI 零代码做游戏成为平台级战略**\nGoogle Labs 发布实验性平台 Playground，零代码创建并游玩 AI 游戏；Unity 同步推出 Spark 并宣布作品可直通 Playground，两家的'引擎×分发'组合正式成型。\n\n**AI 复刻大作进入'天级打地鼠'周期**\nTweetcraft 把多人 Minecraft 塞进 X 帖子，740 万浏览还卖起了加密广告位；此前 GTA5、Fallout 浏览器复刻接连被下架，IP 防线面临新考题。\n\n**Xbox：裁员 1800 人后的增长叙事**\nCEO Asha Sharma 内部会称'从历史低点恢复增长'，点名《战争机器：事变日》等三款新游；Undead Labs 则披露独立内幕：腾讯系收购告吹、管理层收购成行、《腐烂国度 3》因裁员调整。\n\n**Aion 2 开服：40 万在线与 66% 好评并存**\nNCSoft 重度使用生成式 AI 资产的 MMO 正式服务开启，Steam 峰值 397,905，成 2026 年第四高在线新游，但变现口碑翻车。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
