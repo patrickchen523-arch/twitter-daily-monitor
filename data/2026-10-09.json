@@ -1,0 +1,555 @@
+{
+ "date": "2026-10-09",
+ "meta": {
+  "raw_count": 320,
+  "filtered_count": 198,
+  "selected_count": 12,
+  "crawl_time": "2026-10-09 09:55:54"
+ },
+ "lede": "Unity与Google同日发布AI造游戏平台；Xbox成立XP部门进军影视主题公园、Sony甩卖VR专利；胧村正17年来首次上PC；一副平板地图撑起数万点赞的双人拉力爆款。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Unity Spark无代码AI造游戏平台发布，Google Playground同日跟进并官宣互通"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "Left! Left! LEFT!：副驾举平板报路况的双人拉力——平板会沾泥会摔，考验感情——29866赞"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Unity Spark无代码AI造游戏平台发布，Google Playground同日跟进\n15M参数小模型1美分击败Craftax最终BOSS，GPT-6 Astra花83美元仅1%胜率\nAnthropic新模型把实物拆成部件+关节+受力的可实验3D结构"
+  },
+  {
+   "id": "industry",
+   "text": "Xbox成立XP部门进军影视、商品与主题公园\nSony向Meta出售数十项VR专利，PS VR2业务或已终结\nFH6 PS5版爆料延期至2027年1月26日\n美国8月游戏硬件销量创13年同期新低"
+  },
+  {
+   "id": "indie",
+   "text": "Left! Left! LEFT!双人拉力：副驾举平板报路——29866赞\n胧村正17年来首次上PC，2027年发售\n潜水员戴夫最终DLC免费联动Subnautica 2\nKeepsweeper：扫雷×幻想RTS"
+  },
+  {
+   "id": "tools",
+   "text": "Epic官方Unreal MCP上线，Agent工具直连UE编辑器"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Unity官方 · 产品发布",
+     "tags": [
+      "Unity Spark",
+      "Google Playground",
+      "AIGC"
+     ],
+     "title": "Unity Spark发布：官方AI游戏创作平台，Google Playground同日跟进",
+     "en_title": "Introducing Unity Spark — Prompt it. Perfect it. Publish it.",
+     "full_text": "Introducing Unity Spark — a new way to create a game, iterate on it with others, publish it, and play it - all without writing a line of code. \n\nYou'll build with artist-created assets from the Unity Asset Store, and then you can take your game to the next level by refining it in a new web-based editor.\n\nPrompt it. Perfect it. Publish it. Inspired games, with artist-created assets, built on Unity.\n\nClosed beta coming soon.",
+     "author": "Unity for Games",
+     "date": "2026-10-07",
+     "likes": 3381,
+     "views": 637692,
+     "link": "https://x.com/unitygames/status/2107805373918835075",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107804903863189505/pu/img/XfBZUNEe4euso6uO.jpg",
+      "video_url": "https://x.com/unitygames/status/2107805373918835075/video/1"
+     },
+     "summary": "Unity发布无代码AI游戏创作平台Unity Spark：基于Asset Store艺术家资产搭建，网页编辑器迭代，支持多人实时协作创作，封闭测试即将开启。同日Google公测入口级产品Playground（目前美国区可测），并官宣两者打通——Playground生成概念后可导入Spark做专业级机制与高保真3D。",
+     "analysis": "Eurogamer报道指出两者定位分层：Playground是\"vibe coding\"式点子工具，Spark仍挂靠传统引擎工作流。Unity CEO Matt Bromberg划界表态\"让AI复刻既有游戏成不了小岛秀夫，正如往文字处理器里敲《战争与和平》第一段成不了托尔斯泰\"，并承认未考虑过碳足迹问题。开发者社区普遍冷嘲（Size Five Games的Dan Marshall称其演示\"是反对把游戏开发交给AI派的最强论据\"）。平台方集体下场做prompt造游戏，意味着业余创作入口的争夺正式开始，专业开发者的护城河被重新定义。",
+     "recommendation": "Unity Spark无代码AI造游戏平台发布，Google Playground同日跟进并官宣互通",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "独立研究者 · 技术突破",
+     "tags": [
+      "强化学习",
+      "Agent",
+      "小模型"
+     ],
+     "title": "15M参数小模型击败Craftax最终BOSS：成本1美分，GPT-6 Astra只赢1%",
+     "en_title": "The 15M-param agent beats the final boss 44% of the time, costing a cent, and 10 seconds. GPT-6 Astra won 1%, taking 24 hours and $83.",
+     "full_text": "Experts doubted a small neural net could beat Craftax without an LLM's knowledge.\n​\nOur agent meta-harness built one in 3 weeks. The 15M-param agent beats the final boss 44% of the time, costing a cent, and 10 seconds.\n​\nGPT-6 Astra won 1%, taking 24 hours and $83. 🧵 https://t.co/Op7it5kanz",
+     "author": "Dan Kondratyuk",
+     "date": "2026-10-07",
+     "likes": 660,
+     "views": 188518,
+     "link": "https://x.com/hyperparticle/status/2107876974538461605",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2107876421091610624/img/pazJkDAdSNq0i_Ga.jpg",
+      "video_url": "https://x.com/hyperparticle/status/2107876974538461605/video/1"
+     },
+     "summary": "研究者Dan Kondratyuk用三周构建\"meta-harness\"智能体框架，让一个1500万参数的小型神经网络在ML基准游戏Craftax上以44%胜率击败最终BOSS，单次成本约1美分、耗时10秒；对照组GPT-6 Astra胜率仅1%，耗时24小时、花费83美元。专家此前普遍怀疑没有LLM知识的小模型无法通关。",
+     "analysis": "这是\"领域专用小模型+工程脚手架 > 通用大模型\"的又一实证：封闭域任务不需要LLM的世界知识，需要的是针对任务的训练循环和结构化试错。对游戏行业而言，LLM并非一切AI功能的正确答案——战斗AI、测试代理、数值验证这类封闭任务，小模型+定制harness的性价比可以高出四个数量级。选型时先问\"这个任务真的需要世界知识吗\"。",
+     "recommendation": "15M参数专用小模型44%胜率击败Craftax最终BOSS——成本1美分，GPT-6 Astra仅1%、花83美元",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "行业观察 · 模型能力",
+     "tags": [
+      "Anthropic",
+      "3D理解",
+      "物理仿真"
+     ],
+     "title": "Anthropic新模型可将实物转为可实验的3D结构：部件、关节、受力全标注",
+     "en_title": "SHAPE / JOINT / LOAD / BREAK - the object rebuilt as parts with real dimensions",
+     "full_text": "Anthropic built a model that turns any object into a 3D schematic and then runs experiments on it before anyone touches the real thing.\n\nThe geometry was never the hard part. The hard part is a model that knows which parts of the object are allowed to move.\n\n> SHAPE - the object rebuilt as parts with real dimensions, nothing smoothed over\n> JOINT - every connection marked with what it permits and what it forbids\n> LOAD - forces applied the way the object actually meets them in use\n> BREAK - the weakest path traced until something gives, over and over\n> SWAP - a single part changed and the whole run repeated from scratch\n> RANK - failure modes sorted by how little force it takes to trigger them\n\nA render shows what something looks like. A schematic with constraints shows what it cannot survive.\n\nSimulation tools already do this, and they need weeks of setup by someone who knows the software cold.\n\nHere the setup is the description. The constraints come from what the object is, not from a form someone fills in.\n\nThe swap step is where it earns its place. You change one part and get the new failure order in minutes, not days.\n\nMost prototypes exist to find the first thing that breaks. This finds it, then the next four behind it.\n\nEvery failure path and the force that caused it sits in the breakdown below.",
+     "author": "wast3",
+     "date": "2026-10-07",
+     "likes": 785,
+     "views": 82527,
+     "link": "https://x.com/0xWast3/status/2107898724286361928",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2107897427214598144/img/u4Cd1hmiMkHbdXir.jpg",
+      "video_url": "https://x.com/0xWast3/status/2107898724286361928/video/1"
+     },
+     "summary": "据从业者转发，Anthropic构建了把任意实物转成可运行实验的3D结构的模型：SHAPE按真实尺寸重建部件、JOINT标注每个连接允许与禁止的运动、LOAD按实际使用方式施加载荷、BREAK预测断裂——在任何人碰真机之前先在模型里做实验。难点不在几何，而在模型知道物体的哪些部分允许动。",
+     "analysis": "物理世界的可操作理解（部件-关节-受力-失效）正是机器人仿真、数字孪生和游戏物理自动化的底层能力。对游戏团队的中期含义：资产导入时自动生成碰撞体、关节约束和可破坏体的管线可能被这类模型直接吃掉，Houdini式手工物理绑定的工作量会显著下降。",
+     "recommendation": "Anthropic新模型把实物拆成部件+关节+受力+断裂的可实验3D结构——几何从来不是难点"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "GameSpot · 公司动向",
+     "tags": [
+      "Xbox",
+      "IP衍生",
+      "组织架构"
+     ],
+     "title": "Xbox成立XP新部门：影视、商品、主题公园，前Mojang总裁执掌",
+     "en_title": "Xbox has officially unveiled a new division called XP, dedicated to TV/film, products, theme parks, and more.",
+     "full_text": "Xbox has officially unveiled a new division called XP, which will be dedicated to TV/film, products, theme parks, and more.\n\nThe new branch of Xbox will be headed by Lucasfilm veteran Kayleen Walters, who previously served as president of Minecraft studio Mojang. https://t.co/Pkrz1bIGov",
+     "author": "GameSpot",
+     "date": "2026-10-08",
+     "likes": 18,
+     "views": 10884,
+     "link": "https://x.com/GameSpot/status/2108205629454082522",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUHZ2POXMAAccxh.jpg"
+     },
+     "summary": "Xbox官宣成立XP部门，专职影视、商品、主题公园等非游戏业务，由卢卡斯影业出身、曾任Minecraft工作室Mojang总裁的Kayleen Walters领导。此前Nintendo、Sony已相继设立影视部门，Xbox跟进三巨头\"游戏IP全链路变现\"布局；Eurogamer报道确认该部门将独家对接非游戏合作伙伴。",
+     "analysis": "在Xbox大裁员、关停工作室的同一周宣布进军影视和主题公园，信号很直白：游戏IP的价值兑现渠道正从\"卖拷贝\"转向\"卖世界\"。对从业者来说，大厂内容团队的价值评估会越来越多看\"IP可衍生性\"而不只是DAU和销量——做世界观与角色的团队在新结构里反而可能更值钱。",
+     "recommendation": "Xbox成立XP部门进军影视、商品与主题公园，由前Mojang总裁Kayleen Walters执掌",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Digital Foundry · 公司动向",
+     "tags": [
+      "Sony",
+      "Meta",
+      "VR"
+     ],
+     "title": "Sony向Meta出售数十项专利，PS VR2业务或已事实终结",
+     "en_title": "Sony Sells Dozens of Patents to Meta, Seemingly Signifies End of VR Efforts",
+     "full_text": "Sony Sells Dozens of Patents to Meta, Seemingly Signifies End of VR Efforts https://t.co/BwQrFUJFEz",
+     "author": "Digital Foundry",
+     "date": "2026-10-08",
+     "likes": 181,
+     "views": 19377,
+     "link": "https://x.com/digitalfoundry/status/2108165530590777699",
+     "media": null,
+     "summary": "Digital Foundry发现Sony已将数十项VR相关专利出售给Meta，规模之大让外界判断PlayStation的VR业务已实质性收尾。PS VR2自2023年发售以来市场表现不及预期，此次专利出售被DF视为Sony VR投入走向终结的信号。",
+     "analysis": "家用VR的\"平台梦\"正在被三家巨头同时清算：Sony卖专利、Meta全押AI眼镜、Valve把Steam Frame定位回PC串流。对开发者的直接含义：别再按\"VR平台生态\"做长线投入规划，VR内容的机会窗口收窄到垂直场景（街机、健身、企业培训）和硬核PCVR小众市场。",
+     "recommendation": "Sony将数十项VR专利出售给Meta，PS VR2时代或已事实落幕",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 市场表现",
+     "tags": [
+      "Forza Horizon 6",
+      "PS5",
+      "跨平台"
+     ],
+     "title": "Forza Horizon 6 PS5版延至2027年1月26日：官方三周前刚否认延期",
+     "en_title": "Forza Horizon 6 has been delayed on PS5, a new report suggests, not long after developer Playground insisted it hadn't",
+     "full_text": "Forza Horizon 6's highly-anticipated release on PlayStation 5 has apparently been delayed to 2027, according to new information. https://t.co/BEs07gm7Yz https://t.co/vQFvRgKpuD",
+     "author": "Eurogamer",
+     "date": "2026-10-08",
+     "likes": 19,
+     "views": 4696,
+     "link": "https://x.com/eurogamer/status/2108112679546020007",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUGFT4CW4AAPor_.jpg"
+     },
+     "summary": "爆料人billbil-kun给出FH6 PS5版精确发售日期2027年1月26日（英区£59.99/欧区€69.99，含实体版），与8月底The Verge、IGN的延期报道一致；而Playground Games三周前刚公开否认延期并开放PS商店愿望单。FH6是2026年Steam迄今流水最高的新游。",
+     "analysis": "微软第一方的\"同步多平台\"承诺正在松动：先有Gears E-Day发售前临时砍掉PS5版，现在FH6的PS5版在官方否认后仍被爆料延期三个月以上。结合XP部门成立，微软分发策略明显向\"Xbox生态优先、PS版本后置\"回调——跨平台玩家的\"官宣在售\"与\"实际能玩\"之间的时间差需要计入决策。",
+     "recommendation": "FH6 PS5版爆料延期至2027年1月26日——三周前Playground刚否认过",
+     "featured": true,
+     "game_ref": "Forza Horizon 6"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "GameSpot · 市场数据",
+     "tags": [
+      "北美市场",
+      "硬件"
+     ],
+     "title": "美国游戏硬件销量创13年来最差8月",
+     "en_title": "US Video Game Hardware Sales Just Had Their Worst August In 13 Years",
+     "full_text": "US Video Game Hardware Sales Just Had Their Worst August In 13 Years dlvr.​it/TVqrvP https://t.co/a14JZBQn9F",
+     "author": "GameSpot",
+     "date": "2026-10-08",
+     "likes": 18,
+     "views": 11016,
+     "link": "https://x.com/GameSpot/status/2108212272216883540",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUHf4xHakAAbrCu.jpg"
+     },
+     "summary": "据GameSpot报道，美国8月游戏硬件销量录得13年来同期最低。世代末期硬件疲软叠加Switch 2首发潮后的回落，主机市场进入明显的换机空窗期。",
+     "analysis": "硬件大盘走弱但软件收入结构在分化：订阅、跨平台live service和PC端（Steam年内流水屡创新高）在承接主机人群。对发行商的含义：北美主机装机量不再是增长叙事，跨平台同步发行和PC优先策略的权重应上调；外设配件类业务则要预备一个更长的下行周期。",
+     "recommendation": "美国8月游戏硬件销量创13年同期新低——主机市场进入换机空窗期"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Indie Game Joe · 独立游戏",
+     "tags": [
+      "双人合作",
+      "物理互动",
+      "赛车"
+     ],
+     "title": "Left! Left! LEFT!：副驾举着实体平板地图报路况的双人拉力游戏",
+     "en_title": "A co-op rally game where you drive the car and your friend calls the turns - The map is a physical tablet your friend holds",
+     "full_text": "A co-op rally game where you drive the car and your friend calls the turns\n\n- The map is a physical tablet your friend holds\n- Don't drop the tablet\n- Wipe mud from the windscreen\n- Be loud and clear when making calls\n\nGame is Left! Left! LEFT! https://t.co/tZ2hPwwhOX",
+     "author": "Indie Game Joe",
+     "date": "2026-10-07",
+     "likes": 29866,
+     "views": 1235210,
+     "link": "https://x.com/IndieGameJoe/status/2107862929051984015",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2107855772918947841/img/oP1ZTuekMqoWrpcP.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2107862929051984015/video/1"
+     },
+     "summary": "双人合作拉力游戏：一人开车，另一人手持\"游戏内实体平板\"看地图报弯——平板会沾泥需要擦、手抖会掉，两块屏幕信息不对称强制玩家大声沟通。日本媒体電ファミニコゲーマー的同事件报道获7.9万赞、1280万浏览，\"考验搭档感情\"成为传播爆点。",
+     "analysis": "设计上用\"信息不对称+物理道具\"把语音沟通做成了核心玩法，与Keep Talking and Nobody Explodes同一套路但execution更极端。双人合作独立游戏近两年持续出爆款（Chained Together、Content Warning），社交传播是最大获客渠道——能造出\"朋友之间会吵架\"的瞬间，就有病毒式短视频素材。",
+     "recommendation": "Left! Left! LEFT!：副驾举平板报路况的双人拉力——平板会沾泥会摔，考验感情——29866赞",
+     "featured": true,
+     "game_ref": "Left! Left! LEFT!",
+     "enrichment": {
+      "game_name": "Left! Left! LEFT!",
+      "steam_url": "https://store.steampowered.com/app/5362020",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5362020/fdafac6a97129e0bc04895c981b135022f167f90/header.jpg?t=1791458779",
+      "release_date": null,
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "developer": "Stellux Interactive",
+      "genre": "动作 / 竞速",
+      "description": "【核心玩法】双人分工拉力竞速：玩家A负责驾驶，玩家B在副驾手持游戏内实体平板地图导航。地图不会自动定位，需要B实时对照赛道报出左转/右转/急弯；行驶会溅起泥点糊住挡风玻璃，B还要腾手擦拭；急弯与颠簸随时可能把平板甩飞。两块屏幕信息不对称，语音沟通本身就是玩法——报得不清楚，车就开沟里。\n\n【设计亮点】用\"信息不对称+物理道具\"把沟通成本变成乐趣，失败瞬间天然适合短视频传播，这是它在日英两地同步病毒式传播（電ファミ报道7.9万赞、1280万浏览）的根本原因。\n\n【优势】社交传播属性拉满；双人分工设计有新鲜感；失败即笑点的低挫败循环。\n【不足】必须有固定搭子才能体验完整乐趣，单人价值有限。\n\n【综合】2026年双人合作品类的最新爆款候选，Steam页面已上线、发售日未公布，愿望单可以先加起来。",
+      "why_notable": "把\"朋友之间会吵架\"做成了核心机制，社交传播属性拉满的独立双人合作新爆款",
+      "youtube_video": null,
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Polygon · 重制版",
+     "tags": [
+      "Vanillaware",
+      "重制",
+      "2D动作"
+     ],
+     "title": "Vanillaware《胧村正》以Revenant Blades之名回归：108把刀，2027年发售",
+     "en_title": "Beloved Action-RPG Muramasa: The Demon Blade Returns in 2027 With Stunning Remake",
+     "full_text": "Beloved Action-RPG Muramasa: The Demon Blade Returns in 2027 With Stunning Remake https://t.co/qJFkiMxbSv https://t.co/Qkiigw4Eex",
+     "author": "Polygon",
+     "date": "2026-10-08",
+     "likes": 15,
+     "views": 11558,
+     "link": "https://x.com/Polygon/status/2108052318880989600",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUFOablWgAAHYn1.jpg"
+     },
+     "summary": "Vanillaware经典2D动作RPG《胧村正》（2009年Wii）以Muramasa: Revenant Blades之名回归，2027年发售。PC Gamer试玩报道确认：本作是Vanillaware 17年来首款PC版本，收录108把刀，每把附带独特技能、需\"饮血\"后才能转移给其他刀佩戴，官方为本作做了平衡性重制。",
+     "analysis": "Vanillaware的手绘美术是行业孤本级资产，此番上PC意味着其作品目录开始全平台化——13机兵、圣兽之王之后，胧村正补上了最关键的一块。对横板动作和二次元品类团队来说，\"美术溢价能卖17年\"仍是最好的对标样本。",
+     "recommendation": "胧村正17年来首次上PC：Revenant Blades收录108把刀，2027年发售",
+     "featured": true,
+     "game_ref": "Muramasa: Revenant Blades",
+     "enrichment": {
+      "game_name": "Muramasa: Revenant Blades",
+      "steam_url": "https://store.steampowered.com/app/4253770",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4253770/5707e55c90a88cfa12e2931fd9a5b0ec7af8529d/header.jpg?t=1790991737",
+      "release_date": "2027年2月3日",
+      "platforms": [
+       "PC"
+      ],
+      "price": null,
+      "developer": "Vanillaware",
+      "genre": "2D动作 / 动作",
+      "steam_rating": null,
+      "description": "【核心玩法】横版2D动作RPG：在架空的日本战国末~江户初期，以刀匠村正所铸妖刀为核心展开双主角叙事。战斗以拔刀术为核心，108把刀各有独特技能，且需\"饮血\"（杀敌）后才能将其技能转移给其他刀佩戴——收集与构筑深度由此而来。\n\n【美术与音乐】Vanillaware标志性的手绘分层卷轴美术，2009年原作即被誉为2D美术天花板；本次重制针对高分辨率重做呈现，并对108把刀做平衡性重制。\n\n【对标定位】Vanillaware 17年来首款PC作品（《胧村正》继Wii/PS Vita之后的完整重制），2027年2月3日发售。\n\n【优势】美术资产跨时代能打；刀收集+技能组合构筑深度高。\n【不足】横板玩法相对当代标准偏传统；无中文确认信息待官宣。\n\n【综合】经典补票+新玩家入坑Vanillaware的最佳起点，2027年最值得期待的2D动作重制之一。",
+      "why_notable": "Vanillaware 17年来首次登陆PC，经典妖刀题材2D动作的完整重制（2027年2月3日发售）",
+      "youtube_video": null
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Eurogamer · 联动",
+     "tags": [
+      "Mintrocket",
+      "联动DLC",
+      "海洋题材"
+     ],
+     "title": "潜水员戴夫最终DLC联动Subnautica 2：免费、2027年初、外星海洋Proteus",
+     "en_title": "Dave the Diver and Subnautica 2 team up for a crossover made in heaven",
+     "full_text": "\"It's clear that we both adore one another's games a lot\" - Dave the Diver and Subnautica 2 team up for a crossover made in heaven\n\nhttps://t.co/EvbJIzbTTL https://t.co/NOJJGkZxmK",
+     "author": "Eurogamer",
+     "date": "2026-10-08",
+     "likes": 3,
+     "views": 1365,
+     "link": "https://x.com/eurogamer/status/2108241511796359416",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUHTLQpagAAjPou.jpg"
+     },
+     "summary": "Triple-i Showcase上Mintrocket官宣：潜水员戴夫的最终DLC（2027年初）与Subnautica 2免费联动，与Unknown Worlds合作开发，Dave和Bancho将潜入外星海洋卫星Proteus，遭遇标志性Leviathan。Subnautica 2本体现身不到一个月即售出500万份。",
+     "analysis": "戴夫的联动策略已形成方法论：哥斯拉、如龙、Balatro……每次借对方世界观做内容更新，把单机游戏做出live service的节奏感。最终章联动头部海洋生存IP，既是本体的告别演出，也帮身陷创始人诉讼风波的Krafton作品维持声量——中厂之间\"互相导流\"正在替代买量。",
+     "recommendation": "潜水员戴夫最终DLC免费联动Subnautica 2：潜入外星海洋遭遇Leviathan",
+     "game_ref": "Dave The Diver",
+     "enrichment": {
+      "game_name": "潜水员戴夫 DAVE THE DIVER",
+      "steam_url": "https://store.steampowered.com/app/1868140",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/81bdb3bce15d27ca1b4554a642d91096e89be229/header.jpg?t=1791478061",
+      "release_date": "已发售 · 2023 年 6 月 28 日",
+      "platforms": [
+       "PC",
+       "Mac"
+      ],
+      "price": "¥ 40.00",
+      "developer": "MINTROCKET",
+      "genre": "冒险 / 休闲 / 角色扮演",
+      "steam_rating": "143494 reviews",
+      "description": "【核心玩法】白天潜入神秘蓝洞捕鱼、晚上经营寿司店的海洋冒险游戏，本条目对应其与Subnautica 2的联动最终章DLC（免费，2027年初，Steam愿望单已开放：store.steampowered.com/app/5246570）。\n\n【联动内容】Dave与Bancho发现本维度海物种与寿司配方已收集完毕后，穿越至Subnautica 2的外星海洋卫星Proteus：遭遇系列标志性Leviathan巨兽，也有全新友善生物，与Unknown Worlds合作开发。\n\n【联动定位】戴夫此前已联动Balatro、如龙、哥斯拉、罪恶装备等，\"借对方世界观做内容更新\"已成方法论；本次与深海恐怖IP的气质反差（治愈经营 vs 深海恐惧）恰好互补。\n\n【综合】最终章+免费+头部IP，是2027年回坑的充分理由；也再次验证中厂\"互相导流\"正在替代买量。",
+      "why_notable": "治愈经营与深海恐怖两大海洋IP互导流量，最终章免费DLC诚意拉满",
+      "youtube_video": null,
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": "本体2026年内暂无新公开数据",
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "電ファミニコゲーマー · 独立游戏",
+     "tags": [
+      "扫雷",
+      "RTS",
+      "融合玩法"
+     ],
+     "title": "Keepsweeper：扫雷×幻想RTS，日本玩家称其\"时间泥棒\"",
+     "en_title": "マインスイーパー風のファンタジーRTSゲーム『Keepsweeper』が\"時間泥棒だ\"と話題",
+     "full_text": "マインスイーパー風のファンタジーRTSゲーム『Keepsweeper』が“時間泥棒だ”と話題。4つのモードがゲームを飽きさせない\nhttps://t.co/4D7pdAdgMw\n\nマスで仕切られた土地を農民に開墾させ、そこにモンスターがいたら兵士に倒させる。App Storeで配信中、Steam版も近日公開 https://t.co/N26w1P4jiY",
+     "author": "電ファミニコゲーマー",
+     "date": "2026-10-07",
+     "likes": 9467,
+     "views": 920167,
+     "link": "https://x.com/denfaminicogame/status/2107693691800564064",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107693663770021888/pu/img/-Xq3bWuL2-hJi50i.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2107693691800564064/video/1"
+     },
+     "summary": "扫雷规则嫁接幻想RTS：农民在网格地块上开垦（翻格子），开出怪物就派士兵清除（排除），资源规划与风险评估贯穿全程，四个模式防止玩法单调。App Store已上线，Steam版近日公开。日媒报道获9467赞，\"时间泥棒\"（一玩停不下来）成为玩家评价关键词。",
+     "analysis": "\"扫雷+X\"是低成本验证玩法化学反应的典型路径——逻辑推理+资源调度两个已有心智模型拼在一起，教学成本几乎为零。小团队做融合玩法时，先找两个玩家已知的系统、再找它们的冲突点，比原创一套规则便宜得多。",
+     "recommendation": "Keepsweeper：扫雷当侦察、RTS当战斗的幻想经营——日媒称\"时间泥棒\"",
+     "game_ref": "Keepsweeper",
+     "enrichment": {
+      "game_name": "Keepsweeper",
+      "steam_url": null,
+      "header_image": null,
+      "release_date": null,
+      "platforms": [
+       "iOS（已上线）",
+       "Steam（近日公开）"
+      ],
+      "price": null,
+      "developer": null,
+      "genre": "扫雷 / RTS / 经营",
+      "steam_rating": null,
+      "description": "【核心玩法】把扫雷的数字推理嫁接到网格化王国经营：派农民开垦地块（相当于扫雷翻格子），开出怪物就调兵清除（排除危险），资源规划与风险评估贯穿全程；四种模式防止玩法疲劳。\n\n【设计亮点】\"已知系统A+已知系统B\"的融合玩法教科书案例——逻辑推理与RTS调度两个玩家已有的心智模型拼在一起，教学成本几乎为零；日媒玩家用\"时间泥棒\"（一玩停不下来）形容其上头性。\n\n【现状】iOS（App Store）已上线，Steam版近日公开、页面尚未建立。\n\n【综合】小成本融合玩法的观察样本：适合研究\"如何用两个旧系统拼出新游戏\"的团队拆解。",
+      "why_notable": "扫雷×RTS的低成本高化学反应融合玩法，\"一玩停不下来\"的口碑自发传播",
+      "youtube_video": null,
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Niche Gamer · 独立游戏",
+     "tags": [
+      "生存建造",
+      "合作"
+     ],
+     "title": "ATMOSFAR：高空合作生存建造游戏本月开启EA",
+     "en_title": "Sky-high co-op survival / crafting game ATMOSFAR launches this month",
+     "full_text": "Sky-high co-op survival / crafting game ATMOSFAR launches this month: https://t.co/sVedZaMQGj https://t.co/Hi2u6HYfjd",
+     "author": "Niche Gamer",
+     "date": "2026-10-07",
+     "likes": 17,
+     "views": 4353,
+     "link": "https://x.com/nichegamer/status/2107943596510900464",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107943571558952960/pu/img/K2zhfe358bmormxz.jpg",
+      "video_url": "https://x.com/nichegamer/status/2107943596510900464/video/1"
+     },
+     "summary": "高空合作生存建造游戏ATMOSFAR宣布本月登陆Steam抢先体验，玩家在浮空群岛间搭建飞行家园、管理氧气与资源。",
+     "analysis": "",
+     "recommendation": "ATMOSFAR：浮空群岛合作生存建造，本月开启Steam抢先体验",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Niche Gamer · 独立游戏",
+     "tags": [
+      "恐怖",
+      "科幻"
+     ],
+     "title": "Laica：与\"黑化\"少女共困一室的科幻日式恐怖新游",
+     "en_title": "Laica is a new sci-fi J-horror game where you're trapped with a corrupted anime girl",
+     "full_text": "Laica is a new sci-fi J-horror game where you're trapped with a corrupted anime girl: https://t.co/oKuE9xVXBn https://t.co/qDw9pMZ2Mp",
+     "author": "Niche Gamer",
+     "date": "2026-10-08",
+     "likes": 73,
+     "views": 2564,
+     "link": "https://x.com/nichegamer/status/2108203072639951135",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2108203037139361792/pu/img/kPcPI1F62Vv7X19Q.jpg",
+      "video_url": "https://x.com/nichegamer/status/2108203072639951135/video/1"
+     },
+     "summary": "科幻日式恐怖游戏Laica曝光：玩家与一个\"黑化\"的少女角色被困在一起，以压迫感氛围驱动心理恐怖体验。",
+     "analysis": "",
+     "recommendation": "Laica：与黑化少女同困密室的科幻日恐，题材差异化明显",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Game*Spark · 新游公布",
+     "tags": [
+      "潜行",
+      "非对称对抗"
+     ],
+     "title": "Mimic Hunt公布：伪装NPC的潜伏者vs追踪者的非对称潜行",
+     "en_title": "NPCのふりして標的を暗殺！ソロでもマルチでも化かしあえるステルスゲーム『Mimic Hunt』発表",
+     "full_text": "NPCのふりして標的を暗殺！ ソロでもマルチでも化かしあえるステルスゲーム『Mimic Hunt』発表\nhttps://t.co/OvQpJwM3SR\n\nNPCに紛れる“潜伏者”、それを捕まえる“追跡者”に別れて戦う―非対称型のステルスゲーム https://t.co/D35Ndiu8Ry",
+     "author": "⚡Game*Spark⚡",
+     "date": "2026-10-08",
+     "likes": 451,
+     "views": 29488,
+     "link": "https://x.com/gamespark/status/2108203560232227243",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2108203291264143361/pu/img/2a5F0QzETz8M7J-a.jpg",
+      "video_url": "https://x.com/gamespark/status/2108203560232227243/video/1"
+     },
+     "summary": "非对称潜行游戏Mimic Hunt公布：潜伏者伪装成NPC混入人群伺机暗杀，追踪者需要找出目标，单人与多人均可游玩。",
+     "analysis": "",
+     "recommendation": "Mimic Hunt：伪装成NPC的潜伏者与追踪者斗智的非对称潜行游戏",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Indie Freaks · 独立游戏",
+     "tags": [
+      "捉迷藏",
+      "变身"
+     ],
+     "title": "Tanuki Tag：变身万物躲避天狗的狸猫捉迷藏",
+     "en_title": "タヌキの「化け力」を見せつけろ！めっちゃカメレオンライク『Tanuki Tag』",
+     "full_text": "タヌキの「化け力」を見せつけろ！めっちゃカメレオンライク『Tanuki Tag』\n\nいたずら好きのタヌキたちと、追いかける天狗たちにわかれてかくれんぼ！\nタヌキは物体に化けたり、潰して伸ばして形を変えたり、色を塗って周囲に溶け込める。\nタヌキらしく天狗を化かせ！ https://t.co/sdD5bxiVhK",
+     "author": "Indie Freaks👜インディーゲームグッズ販売中！",
+     "date": "2026-10-08",
+     "likes": 941,
+     "views": 148877,
+     "link": "https://x.com/Indie_FreaksJP/status/2108076948186599511",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2108076820231061504/img/N96MvpFQm1LbarwS.jpg",
+      "video_url": "https://x.com/Indie_FreaksJP/status/2108076948186599511/video/1"
+     },
+     "summary": "日媒Indie Freaks介绍：扮演狸猫发挥\"化け力\"变身物体、压扁拉长变形、涂色融入环境，躲避天狗追捕的捉迷藏动作游戏。",
+     "analysis": "",
+     "recommendation": "Tanuki Tag：狸猫变身万物躲天狗，变色龙式捉迷藏玩法",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Epic官方 · 工具发布",
+     "tags": [
+      "Unreal Engine",
+      "MCP",
+      "Agent"
+     ],
+     "title": "Epic官方推出Unreal MCP：Agentic LLM工具直连引擎编辑器",
+     "en_title": "Unreal Model Context Protocol (MCP) provides an official, Epic-supported way to connect your favorite agentic LLM tools directly to Unreal Engine",
+     "full_text": "Unreal Model Context Protocol (MCP) provides an official, Epic-supported way to connect your favorite agentic LLM tools directly to Unreal Engine🤝\n\nBuilt on the open MCP standard, it enables agents to take action in your projects using the capabilities exposed by each editor—so you can use compatible agentic coding tools or build your own integrations, skills, and workflows around how you create: https://t.co/jYm6YnEl2E",
+     "author": "Unreal Engine",
+     "date": "2026-10-08",
+     "likes": 145,
+     "views": 7206,
+     "link": "https://x.com/UnrealEngine/status/2108226509521785277",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2108225919525740544/img/9jntAordcbhJu1xH.jpg",
+      "video_url": "https://x.com/UnrealEngine/status/2108226509521785277/video/1"
+     },
+     "summary": "Epic发布官方支持的Unreal Model Context Protocol，把Claude Code等agentic编码工具直接接入UE编辑器——agent可调用各编辑器暴露的能力在项目中执行操作，也可自建集成、技能与工作流；官方同步放出MCP接入UEFN、City Sample的PCG+MCP工作流文档。",
+     "analysis": "继Unity的平台化Gen-AI产品之后，Epic走了另一条路：不造\"prompt造游戏\"产品，而是把引擎编辑器开放给通用agent生态。这对专业团队更实际——AI进管线最快见效的从来不是生成内容，而是自动化编辑器操作（批量资产处理、关卡搭建、QA走查）。两条路线的分野值得每个技术负责人盯住。",
+     "recommendation": "Epic官方Unreal MCP上线：Claude等Agent工具直连UE编辑器执行操作",
+     "featured": true
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**Unity Spark与Google Playground同日发布，AI造游戏平台正面开战**\nUnity官宣无代码创作平台Spark（封闭测试即将开启），Google同步公测入口级产品Playground并宣布两者互通。Unity CEO划界表态\"复刻既有游戏成不了小岛秀夫\"，开发者社区则以\"把游戏开发交给AI派的最强反例\"回应其演示。\n\n**巨头结构性调整密集落地**\nXbox成立XP部门进军影视、商品、主题公园；Sony将数十项VR专利出售给Meta，PS VR2时代或将落幕；美国8月游戏硬件销量创13年同期新低，主机市场进入换机空窗期。\n\n**独立游戏这边热闹**\n双人拉力Left! Left! LEFT!靠\"副驾举平板报路况\"的设计拿下数万转发；Vanillaware胧村正宣布17年来首次登陆PC；潜水员戴夫与Subnautica 2免费联动。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
