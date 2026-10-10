@@ -1,0 +1,511 @@
+{
+ "date": "2026-10-10",
+ "meta": {
+  "raw_count": 254,
+  "filtered_count": 168,
+  "selected_count": 12,
+  "crawl_time": "2026-10-10 10:24:27"
+ },
+ "lede": "OpenAI一句「Today, we are announcing ChatGPT」引发近500万围观；欧盟盯上游戏业最具操纵性付费设计；Konami考虑Silent Hill第二、第三波；Airsoft Online免费公测、Car Park Capital抢先体验上线。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 2,
+   "hook": "Konami考虑Silent Hill第二、第三波游戏——从一次性复活转向年更产品线"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 2,
+   "hook": "花光最后$1400、周末用Opus 5.5做成的永久死亡ARPG——1100名玩家已累计游玩超5000小时"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "BB弹会飘、中弹要喊Hit的野枪对战FPS——Airsoft Online免费公测开到10月26日"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "OpenAI Codex&ChatGPT负责人一句「Today, we are announcing ChatGPT」——近500万人围观，细节未明\nOpus 5.5把Minecraft塞进荒野大镖客2——亚瑟·摩根在悬崖盖小屋看日落，13.9万人围观\n花光最后$1400、周末用Opus 5.5做成的永久死亡ARPG——1100名玩家已累计游玩超5000小时"
+  },
+  {
+   "id": "industry",
+   "text": "欧盟盯上游戏业最具操纵性的付费设计——抽卡与限时压力面临监管升级\nQ3全球PC出货量暴跌20.1%：AI内存危机透支需求，IDC警告价格难回落\nKonami考虑Silent Hill第二、第三波游戏——从一次性复活转向年更产品线"
+  },
+  {
+   "id": "indie",
+   "text": "Airsoft Online：BB弹会飘、中弹要喊Hit的野枪对战FPS——免费公测开到10月26日\nCar Park Capital：把天堂铺成停车场的反差题材经营模拟——Steam抢先体验已上线\nAmanita官宣机械迷城2——2009年最美机器人冒险的正统续作，日期未定\nThe Escapists 3首曝：像素脱狱IP进化Q版3D，滑翔伞从屋顶越狱\n影之刃零试玩口碑爆发：Polygon玩4小时称「最期待动作游戏」，敌人不刷新设计获赞"
+  },
+  {
+   "id": "tools",
+   "text": "8个独立开发资源站合集：素材、音效、UI图标、像素调色板、Godot插件一帖打包"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "OpenAI · 产品官宣",
+     "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Agent"
+     ],
+     "title": "OpenAI一句「Today, we are announcing ChatGPT」：Codex与ChatGPT负责人亲自官宣，细节未明",
+     "en_title": "Today, we are announcing ChatGPT.",
+     "full_text": "Today, we are announcing ChatGPT.\n\nIt is here: https://t.co/Pgk3THSyOJ",
+     "author": "Tibo",
+     "date": "2026-10-09",
+     "likes": 28705,
+     "views": 4998052,
+     "link": "https://x.com/thsottiaux/status/2108349826727588000",
+     "media": null,
+     "summary": "OpenAI Codex 与 ChatGPT 产品负责人 Thibault Sottiaux 发布推文「Today, we are announcing ChatGPT」并附 chatgpt.com 链接，未附任何产品细节。24小时内获2.9万赞、近500万浏览，评论区大量猜测。Sottiaux 自2026年3月起统管 OpenAI 的 ChatGPT 与 Codex 产品线。",
+     "analysis": "这条极简官宣是当天全网互动量第二高的科技推文，说明市场对 ChatGPT 下一代形态高度敏感。结合业内此前对 ChatGPT 向多智能体协作平台演进的预期，该公告大概率是平台级改版，具体内容以 OpenAI 官方博客为准。",
+     "recommendation": "OpenAI Codex&ChatGPT负责人一句「Today, we are announcing ChatGPT」——近500万人围观，细节未明"
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "AI创作者 · 能力展示",
+     "tags": [
+      "Opus 5.5",
+      "AI Demo",
+      "游戏Mod"
+     ],
+     "title": "Opus 5.5把Minecraft塞进《荒野大镖客2》：亚瑟·摩根学会了盖小屋看日落",
+     "en_title": "ARTHUR MORGAN LEARNED TO BUILD",
+     "full_text": "ARTHUR MORGAN LEARNED TO BUILD\n\nasked opus 5.5 to put minecraft into rdr2\n\nnow arthur builds tiny houses on cliffs and watches sunsets\n\nhonestly he deserves it https://t.co/btteufD6DR",
+     "author": "Aidan",
+     "date": "2026-10-08",
+     "likes": 4276,
+     "views": 138762,
+     "link": "https://x.com/0xAidanAi/status/2108303873538683065",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2108303545007271936/img/KqDUkKrQ9pRcaSgT.jpg",
+      "video_url": "https://x.com/0xAidanAi/status/2108303873538683065/video/1"
+     },
+     "summary": "开发者用 Opus 5.5 把 Minecraft 的建造玩法接入《荒野大镖客2》，亚瑟·摩根可以在悬崖上盖小屋、看日落。视频获4276赞、13.9万浏览，是本周「AI改造3A大作」系列传播最广的一条。",
+     "analysis": "AI 把「游戏改装」的门槛从 Mod 工程降到了一段 prompt，3A 大作正在变成 AI 二创的素材库。对厂商而言，与其封锁这类内容，不如思考如何官方化这种 UGC 生态。",
+     "recommendation": "Opus 5.5把Minecraft塞进荒野大镖客2——亚瑟·摩根在悬崖盖小屋看日落，13.9万人围观"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "独立开发者 · AI开发实录",
+     "tags": [
+      "AI开发",
+      "ARPG",
+      "Opus 5.5"
+     ],
+     "title": "花光最后$1400用Opus 5.5做出永久死亡ARPG：1100名玩家已累计游玩超5000小时",
+     "en_title": "I spent my last $1400 building my Permadeath ARPG with AI in a weekend and it already has over 5000 hours of playtime wi",
+     "full_text": "I spent my last $1400 building my Permadeath ARPG with AI in a weekend and it already has over 5000 hours of playtime with over 1100 players made with Opus 5.5 on @TesanaAI \n\nI built the first version of Aestra: The Last Wish in a weekend for around $100. A real-time pixel action RPG with permadeath, 4 classes & online multiplayer.\n\nI then posted it on Reddit and it attracted 800+ players, averaging almost 6h each. Some have already spent 30–50h. Over 5,000h played in total. The feedback has been so good, especially on mobile.\n\nOnce real players were actually jamming, I got addicted to improving it. Another 3–4 days later, I’ve spent almost $1,400 expanding it to 9 classes, levels 1–100, 3 extremely tight & fun raids and a floating turtle city full of mystery.\n\nAlmost a full week of vibecoding with Claude Opus 5.5 on Tesana. I even can't stop playing it myself.\n\nPick your class, build your talents, quest, gear up & clear dungeons and raids. Whatever you do, don’t die. Your hero is gone and you start over.\n\nIt’s free to play, but I’ve added a $1 Death Metal Bard class to see if it can make back some of its cost.\n\nLet me know how far you get & when you died the first time :)",
+     "author": "Mike Houser",
+     "date": "2026-10-09",
+     "likes": 72,
+     "views": 5811,
+     "link": "https://x.com/M__Houser/status/2108432503128354890",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2108428841001918464/img/1XUFoRTLoalTphGF.jpg",
+      "video_url": "https://x.com/M__Houser/status/2108432503128354890/video/1"
+     },
+     "summary": "独立开发者 Mike Houser 用 Opus 5.5 在一个周末做出《Aestra: The Last Wish》——实时像素 ARPG，含永久死亡、4职业与在线多人，首版成本约$100。发到 Reddit 后吸引800+玩家，人均游玩近6小时，部分玩家投入30-50小时，总时长超5000小时。",
+     "analysis": "这是「AI 周末做游戏」叙事里少有的带真实留存数据的一条：1100名玩家、5000+小时游玩、有玩家单次投入30-50小时，说明 AI 做出的游戏已经能撑起基本可玩性与留存。个人开发者的产能拐点正在到来。",
+     "recommendation": "花光最后$1400、周末用Opus 5.5做成的永久死亡ARPG——1100名玩家已累计游玩超5000小时",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "GameSpot · 行业政策",
+     "tags": [
+      "EU监管",
+      "内购",
+      "付费设计"
+     ],
+     "title": "欧盟盯上游戏业最具操纵性的变现设计",
+     "en_title": "The EU Is Coming For Gaming’s Most Manipulative Monetization Tactics dlvr.​it/TVrhR6 https://t.co/aWiH58EbCx",
+     "full_text": "The EU Is Coming For Gaming’s Most Manipulative Monetization Tactics dlvr.​it/TVrhR6 https://t.co/aWiH58EbCx",
+     "author": "GameSpot",
+     "date": "2026-10-09",
+     "likes": 5,
+     "views": 7571,
+     "link": "https://x.com/GameSpot/status/2108586496026706420",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUM0Pp9bsAAMTF7.jpg"
+     },
+     "summary": "GameSpot 报道，欧盟正在针对游戏行业中最具操纵性的变现手段采取行动，聚焦那些利用心理弱点诱导付费的设计。",
+     "analysis": "从比利时禁止 loot box 到多国立法讨论，欧洲对「操纵性付费」的监管正从个别国家上升到欧盟层面。对以抽卡、限时压力为核心收入的手游与 F2P 厂商，欧洲市场的合规成本将继续上升。",
+     "recommendation": "欧盟盯上游戏业最具操纵性的付费设计——抽卡与限时压力面临监管升级",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "PC Gamer · 硬件市场",
+     "tags": [
+      "IDC",
+      "PC出货量",
+      "内存危机"
+     ],
+     "title": "IDC：Q3全球PC出货量同比暴跌20.1%，AI内存危机是主因",
+     "en_title": "PC shipments have fallen by 20% worldwide according to report, although 'promotions are possible' https://t.co/g1UAjMLBt",
+     "full_text": "PC shipments have fallen by 20% worldwide according to report, although 'promotions are possible' https://t.co/g1UAjMLBtL",
+     "author": "PC Gamer",
+     "date": "2026-10-09",
+     "likes": 8,
+     "views": 5352,
+     "link": "https://x.com/pcgamer/status/2108581736557023669",
+     "media": null,
+     "summary": "IDC 数据显示 2026 年 Q3 全球 PC 出货量从去年同期的7850万台降至6270万台，同比下滑20.1%。主因是 AI 服务器需求引发的内存与供应链危机：厂商上半年抢先备货，「透支」了下半年需求。IDC 警告价格将远高于去年同期，宏观走弱或让 2026 下半年到 2027 年前景更糟。联想、惠普、戴尔跌幅超过大盘，合计丢失4.2个百分点份额。",
+     "analysis": "游戏 PC 与 DIY 市场直接受压：内存高位+需求疲软意味着促销空间有限，玩家换机周期拉长，将反过来削弱新 3A 的硬件升级动力。产业链层面的「AI 挤占消费电子产能」正在成为游戏行业的长期成本项。",
+     "recommendation": "Q3全球PC出货量暴跌20.1%：AI内存危机透支需求，IDC警告价格难回落",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Niche Gamer · 系列企划",
+     "tags": [
+      "Konami",
+      "Silent Hill",
+      "IP长线运营"
+     ],
+     "title": "Silent Hill制作人：正在考虑第二波、第三波游戏",
+     "en_title": "Silent Hill producer considering second and third waves of games: https://t.co/eJr4Y9URog https://t.co/BAI8m2OQ7R",
+     "full_text": "Silent Hill producer considering second and third waves of games: https://t.co/eJr4Y9URog https://t.co/BAI8m2OQ7R",
+     "author": "Niche Gamer",
+     "date": "2026-10-09",
+     "likes": 36,
+     "views": 4797,
+     "link": "https://x.com/nichegamer/status/2108552494766870793",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUMVUhAWcAA61-m.jpg"
+     },
+     "summary": "制作人冈本稻基在 Fami通 采访中透露，继2022年10月公布的三部曲（《Silent Hill 2》重制版、《Silent Hill f》、《Townfall》）全部发售后，Konami 正在考虑第二波和第三波 Silent Hill 游戏，具体项目保密。他此前在科隆展表示希望系列年更，并有多个未公布项目在推进。",
+     "analysis": "从「一次性复活」到「年更产品线」，Konami 正把 Silent Hill 当长线 IP 经营，Bloober Team 也已确认在开发新作。经典恐怖 IP 的多团队并行开发模式，正在成为大厂盘活存量 IP 的标准打法。",
+     "recommendation": "Konami考虑Silent Hill第二、第三波游戏——从一次性复活转向年更产品线",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "AUTOMATON · 免费公测",
+     "tags": [
+      "FPS",
+      "物理模拟",
+      "免费公测"
+     ],
+     "title": "Airsoft Online免费公测开启：BB弹受空气阻力会飘，被击中要举手喊「Hit!」",
+     "en_title": "Steam物理演算サバゲー『Airsoft Online』無料ベータテスト開始。撃たれたらちゃんと「ヒット！」と申告、BB弾だから真っ直ぐ飛ばない",
+     "full_text": "Steam物理演算サバゲー『Airsoft Online』無料ベータテスト開始。撃たれたらちゃんと「ヒット！」と申告、BB弾だから真っ直ぐ飛ばない\nhttps://t.co/iarcWsORjp https://t.co/iSnBPgHRs4",
+     "author": "AUTOMATON（オートマトン）",
+     "date": "2026-10-09",
+     "likes": 4518,
+     "views": 341015,
+     "link": "https://x.com/AUTOMATONJapan/status/2108514530754285772",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2108514440119463936/img/7nHQXwY2B2VMhHsH.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2108514530754285772/video/1"
+     },
+     "summary": "Pixomnia Studio 10月8日开放《Airsoft Online》免费公测（至10月26日）。这是一款还原真人野枪对战的在线FPS：6v6、多种经典模式，BB弹弹道基于流体力学、受空气阻力与风的影响，被击中的玩家要举手自我申告「Hit!」。游戏2026年内登陆Steam，支持日语并有日本服务器。",
+     "analysis": "",
+     "recommendation": "Airsoft Online：BB弹会飘、中弹要喊Hit的野枪对战FPS——免费公测开到10月26日",
+     "featured": true,
+     "game_ref": "Airsoft Online",
+     "enrichment": {
+      "game_name": "Airsoft Online",
+      "genre": "动作 / 模拟 / 体育",
+      "developer": "Pixomnia Studio",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "2026 年第四季度",
+      "steam_rating": null,
+      "steam_url": "https://store.steampowered.com/app/2932450",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2932450/cfa520c0c1863b85f7d649725b84366357b640ff/header.jpg?t=1791579523",
+      "youtube_video": null,
+      "description": "《Airsoft Online》为资深玩家与新手提供真实的虚拟气枪对战体验。参与团队多人对战，并使用可自定义武器与真实物理系统进行战斗。\n\n【核心玩法】以真人「生存游戏」（野枪对战）为题材的在线对战FPS，最大6v6，收录团队死斗、夺旗、占领、据点（Stronghold）等经典模式与室内外多张地图，还可在各模式中关闭体力条与受击标记、切换拟真设定。【特色系统】武器全部为气枪（Airsoft gun），按突击步枪、霰弹枪、狙击枪等类别提供多种枪型，并还原弹簧式、瓦斯Blowback等作动方式；弹药是塑料BB弹，开发团队自研了基于真实流体力学的物理系统，BB弹弹道受空气阻力与风的影响，会下坠会飘，与传统FPS的激光弹道完全不同。【硬核礼仪】还原野枪文化最有趣的一点：被击中的玩家必须举手自我申告「Hit!」；配装编辑器初期版本已上线，可定制主副武器、BB弹与各类配件，也可携带手雷与烟雾弹，角色外观可自定义，配装可在离线室内靶场试打。【平台与服务】PC（Steam）平台，2026年内正式发售；10月8日起开放免费公测，持续至10月26日，体验版下载即可参与，已有日本服务器并支持日语显示。【综合】把小众的野枪亚文化用流体力学弹道+社区礼仪搬进游戏，题材差异化极强，喜欢拟真对战的玩家值得趁公测免费一试。",
+      "why_notable": "小众野枪题材+流体力学BB弹道的硬核差异化，公测首日相关推文即获34万浏览、4500+赞"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "独立开发者 · EA上线",
+     "tags": [
+      "经营模拟",
+      "停车场",
+      "抢先体验"
+     ],
+     "title": "Car Park Capital上线Steam抢先体验：把天堂铺平，建起你梦想中的停车场",
+     "en_title": "📢 Wheelie is excited to tell you the game is OUT NOW in Early Access!",
+     "full_text": "📢 Wheelie is excited to tell you the game is OUT NOW in Early Access!\n\nPave Paradise and put up the Car Parks of your dreams TODAY.\n\nhttps://t.co/XtS6TW11JO\n\n🙏 Thanks everyone for the support! https://t.co/3Uy0IPKYYd",
+     "author": "Hilko Janssen | Car Park Capital",
+     "date": "2026-10-09",
+     "likes": 1346,
+     "views": 35867,
+     "link": "https://x.com/hilkojj/status/2108497698630639985",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2108470655700135938/img/ImH3FQLasVrutI93.jpg",
+      "video_url": "https://x.com/hilkojj/status/2108497698630639985/video/1"
+     },
+     "summary": "开发者 Hilko Janssen 宣布经营模拟《Car Park Capital》正式登陆 Steam 抢先体验，由 Wheelie 发行。游戏玩法正如其宣传语「Pave Paradise」：在城市里规划、铺设并经营停车场，用最小地块榨取最多车位。",
+     "analysis": "",
+     "recommendation": "Car Park Capital：把天堂铺成停车场的反差题材经营模拟——Steam抢先体验已上线",
+     "featured": true,
+     "game_ref": "Car Park Capital",
+     "enrichment": {
+      "game_name": "Car Park Capital",
+      "genre": "独立 / 模拟 / 策略",
+      "developer": "Hilkojj Interactive",
+      "platforms": [
+       "PC",
+       "Linux"
+      ],
+      "price": "¥ 54.90",
+      "release_date": "已发售 · 2026 年 10 月 9 日",
+      "steam_rating": "273 reviews",
+      "steam_url": "https://store.steampowered.com/app/3031880",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3031880/960c0affe982b417e12a77e78b24bdb6b615c5c5/header.jpg?t=1791566111",
+      "youtube_video": null,
+      "description": "汽车行业需要你设计并建造简单城镇生活中前所未有的最大停车场。激发人们对汽车通勤的需求，把街区变成停车场！用广告宣传，让人们因此为你付费，与那些看穿你把戏的人斗争。\n\n【核心玩法】一款把「修停车场」做到极致的经营建设模拟：玩家在城市中规划、铺设并经营自己的停车场，用最小地块榨取最多车位与收益——正如开发商的宣传语「Pave Paradise and put up the Car Parks of your dreams」（把天堂铺平，建起你梦想中的停车场）。【设计趣味】车位布局、出入口动线与收费策略环环相扣，如何在有限地块里塞下更多车位、同时让车流不堵死，是游戏的核心 Puzzle；题材本身的反差幽默感（在「汽车城市批判」流行的当下反其道而行）是最大记忆点。【发行与平台】由发行商 Wheelie 代理，PC（Steam）平台，2026年10月以抢先体验（Early Access）形式上线，正式版的内容扩充与定价待后续公布。【综合】小众题材+强反差幽默的独立经营模拟，EA首日即在社交平台获得1346赞，适合喜欢 quirky 模拟经营与建造优化的玩家。",
+      "why_notable": "「把天堂铺成停车场」的反差题材，EA上线首日开发者推文即获1346赞、3.6万浏览"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Rock Paper Shotgun · 续作官宣",
+     "tags": [
+      "解谜冒险",
+      "续作",
+      "手绘美术"
+     ],
+     "title": "Amanita公布《机械迷城2》：2009年最美的机器人冒险迎来正统续作",
+     "en_title": "“We're not getting any younger, and the world seems to be ending\": Amanita reveal Machinarium 2, sequel to 2009's pretti",
+     "full_text": "“We're not getting any younger, and the world seems to be ending\": Amanita reveal Machinarium 2, sequel to 2009's prettiest robot adventure https://t.co/pBexoeMuMn",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-10-09",
+     "likes": 0,
+     "views": 917,
+     "link": "https://x.com/rockpapershot/status/2108574848943362183",
+     "media": null,
+     "summary": "Amanita Design 正式公布《机械迷城2》（Machinarium 2），为2009年手绘解谜经典《机械迷城》的时隔多年正统续作。RPS 以「2009年最美的机器人冒险」形容初代，开发者坦言「我们不再年轻，世界也仿佛快完蛋了」。平台与发售日期未公布。",
+     "analysis": "",
+     "recommendation": "Amanita官宣机械迷城2——2009年最美机器人冒险的正统续作，日期未定",
+     "featured": true,
+     "game_ref": "Machinarium 2",
+     "enrichment": {
+      "game_name": "机械迷城2 (Machinarium 2)",
+      "genre": "冒险 / 休闲 / 独立",
+      "developer": "Amanita Design",
+      "platforms": [
+       "PC",
+       "Mac"
+      ],
+      "price": "未公布",
+      "release_date": "即将宣布",
+      "steam_rating": null,
+      "steam_url": "https://store.steampowered.com/app/1619280",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1619280/18dc88dc16572e54aec9b105768bdf44138ea592/header.jpg?t=1791475524",
+      "youtube_video": null,
+      "description": "约瑟夫与伯塔终于迎来了重聚，踏上了寻找新家园的旅程。他们发现了一处隐秘的山谷，居住于此的是两个古怪的机器人部落，而它们赖以生存的能源正日渐枯竭。是时候来体验Amanita Design旗下经典冒险游戏的续作了。\n\n【系列背景】2009年，捷克工作室 Amanita Design 推出手绘点击式解谜冒险《机械迷城》（Machinarium）：锈迹斑斑的机器人城市里，小机器人 Josef 靠捡拾、拼装道具一路解谜闯关；全程手绘画面、几乎无对白叙事，让初代成为独立游戏史上美术辨识度最高的作品之一。【续作官宣】2026年10月，Amanita 正式公布《机械迷城2》，为2009年原作的正统续作；Rock Paper Shotgun 称初代是「2009年最美的机器人冒险」，工作室成员则坦言「我们不再年轻，世界也仿佛快完蛋了」，但依然选择把机器人世界继续画下去。【值得关注的理由】Amanita 的作品以手绘美术、无对白叙事与怪诞幽默著称（《机械迷城》《植物精灵》Botanicula 与 Samorost 系列），续作意味着这套独特审美将在现代平台延续。【发售信息】平台与发售日期均未公布，建议提前加入愿望单蹲守首轮预告。",
+      "why_notable": "Amanita Design 时隔多年的正统续作官宣——2009年最美解谜游戏的机器人世界回归"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "Game*Spark · 新作首曝",
+     "tags": [
+      "脱狱模拟",
+      "IP复活",
+      "Triple-i"
+     ],
+     "title": "The Escapists 3公布：像素脱狱IP进化3D，钻通风管、挖地道、滑翔伞越狱",
+     "en_title": "ドット絵の脱獄シムがコミカルな3Dに進化！『The Escapists 3』発表―ダクト侵入に穴掘り、パラグライダーで屋上から脱獄も【Triple-i Initiative Showcase】",
+     "full_text": "ドット絵の脱獄シムがコミカルな3Dに進化！『The Escapists 3』発表―ダクト侵入に穴掘り、パラグライダーで屋上から脱獄も【Triple-i Initiative Showcase】\nhttps://t.co/i2uQPyRkhN https://t.co/B4vvgDbFmM",
+     "author": "⚡Game*Spark⚡",
+     "date": "2026-10-08",
+     "likes": 198,
+     "views": 25988,
+     "link": "https://x.com/gamespark/status/2108237580584255775",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2108237524128972805/img/2PKvjX1CVKI5alg2.jpg",
+      "video_url": "https://x.com/gamespark/status/2108237580584255775/video/1"
+     },
+     "summary": "经典监狱逃脱模拟系列新作《The Escapists 3》在 Triple-i Initiative Showcase 上首曝：画面从2D像素进化为Q版3D，钻通风管、挖地道、乘滑翔伞从屋顶逃离等越狱手段亮相。平台与发售日期未公布。",
+     "analysis": "",
+     "recommendation": "The Escapists 3首曝：像素脱狱IP进化Q版3D，滑翔伞从屋顶越狱",
+     "game_ref": "The Escapists 3",
+     "enrichment": {
+      "game_name": "The Escapists 3",
+      "genre": "独立 / 模拟 / 策略",
+      "developer": "Team17",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": "即将宣布",
+      "steam_rating": null,
+      "steam_url": "https://store.steampowered.com/app/3602260",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3602260/e8b5f5936ed8cded90ba32aa292222fa9e982f06/header.jpg?t=1791477910",
+      "youtube_video": null,
+      "description": "在《The Escapists 3》中策划荒唐越狱，智胜狱警，按自己的方式逃出去。在全新的 3D 监狱沙盒里，独自或与朋友一起，靠制作、潜行、战斗和随机应变闯出自己的路。不过别忘了准时去点名。\n\n【系列背景】《The Escapists》是 Team17 发行的像素风监狱逃脱模拟系列：玩家扮演囚犯，在守卫巡逻、点名查房的日程缝隙里秘密筹备越狱——挖地道、伪造钥匙、藏违禁品，前作以「把越狱玩成日程管理」的脑洞闻名，系列上一代距今已有多年。【三代首曝】2026年10月，系列第三作《The Escapists 3》在 Triple-i Initiative Showcase 上正式公布：画面从系列标志性的2D像素进化为Q版3D，越狱手段同步升级——钻入通风管、挖掘地道、乘滑翔伞从屋顶逃离等场景在首曝影像中亮相。【玩法预期】系列核心的「日常伪装（吃饭、点名、劳动不露馅）+秘密筹备（收集工具、规划路线）」循环预计保留，3D化后守卫视线与监狱立体结构之间的博弈空间更大。【发售信息】登陆平台与发售日期暂未公布。【综合】回忆杀IP以3D形态复活，适合喜欢策略模拟与沙盒整活的玩家提前蹲守。",
+      "why_notable": "经典脱狱IP时隔多年复活：2D像素进化Q版3D，滑翔伞越狱等新手段首曝"
+     }
+    },
+    {
+     "idx": "新游推文 05",
+     "source": "Polygon · 媒体试玩",
+     "tags": [
+      "S-GAME",
+      "动作游戏",
+      "国产3A"
+     ],
+     "title": "Polygon试玩《影之刃零》4小时：「它刚成为我最期待的动作游戏」",
+     "en_title": "After 4 Hours, Phantom Blade Zero Just Became My Most-Anticipated Action Game https://t.co/oDPeQQ88xB https://t.co/Bi5Ak",
+     "full_text": "After 4 Hours, Phantom Blade Zero Just Became My Most-Anticipated Action Game https://t.co/oDPeQQ88xB https://t.co/Bi5AknutJG",
+     "author": "Polygon",
+     "date": "2026-10-09",
+     "likes": 163,
+     "views": 11840,
+     "link": "https://x.com/Polygon/status/2108351787866448034",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUJex0hX0AAzXnj.jpg"
+     },
+     "summary": "Polygon 编辑试玩《影之刃零》（Phantom Blade Zero）4小时后给出极高评价。同批报道披露新细节：敌人被击败后不会刷新重生；武器等级可随时重置并转移给另一把武器。游戏面向PS5与PC，Steam页面显示2026年10月28日发售。",
+     "analysis": "",
+     "recommendation": "影之刃零试玩口碑爆发：Polygon玩4小时称「最期待动作游戏」，敌人不刷新设计获赞",
+     "game_ref": "Phantom Blade Zero",
+     "enrichment": {
+      "game_name": "Phantom Blade Zero",
+      "genre": "动作 / 黑暗武侠",
+      "developer": "S-GAME Studio（灵游坊）",
+      "platforms": [
+       "PS5",
+       "PC（Steam）"
+      ],
+      "price": "未公布",
+      "release_date": "2026年10月28日",
+      "steam_rating": null,
+      "steam_url": "https://store.steampowered.com/app/4115450/Phantom_Blade_Zero/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/7f882f889630270d3d3fb93825ac6f55b55e7a6c/header.jpg?t=1787142639",
+      "youtube_video": null,
+      "description": "【定位】S-GAME（灵游坊）开发的黑暗武侠动作游戏，是国产3A动作赛道上承压最高期待的作品之一，面向PS5与PC平台，Steam页面显示2026年10月28日发售。【本次新信息】Polygon 编辑试玩4小时后表示「它刚成为我最期待的动作游戏」；同批媒体披露两个新设计：敌人被击败后不会刷新重生——开发者的理由是不想让玩家反复刷怪破坏世界逻辑；武器等级可随时重置，并把积累转移到另一把武器上，鼓励玩家自由换武器而非惩罚换武器。【核心体验】系列标志性的「影之刃」式武侠甲胄与高速连段战斗延续到全3D场景，试玩报道的总体基调非常正面：招式演出密度高、攻防节奏紧凑、东方志怪氛围浓厚。【为什么值得关注】在《黑神话：悟空》验证国产单机3A市场容量之后，《影之刃零》是下一款承载全球玩家高期待的东方动作大作；从本轮媒体试玩口碑看，其动作系统完成度正在逼近国际一线水准。【综合】未发售但已具备「必玩候补」声量，动作游戏玩家应持续关注后续情报。",
+      "why_notable": "中国3A动作大作媒体试玩口碑爆发：Polygon称「最期待动作游戏」，Steam定档2026年10月28日"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Niche Gamer · 发售日",
+     "tags": [
+      "城堡防御",
+      "Roguelite",
+      "发售日"
+     ],
+     "title": "ReVamp确定2027年3月登陆Steam：「反向恶魔城」城堡防御Roguelite",
+     "en_title": "Reverse-Castlevania game ReVamp finally has a release date! https://t.co/g4mIKMSPQF https://t.co/NWiFUEmAjn",
+     "full_text": "Reverse-Castlevania game ReVamp finally has a release date! https://t.co/g4mIKMSPQF https://t.co/NWiFUEmAjn",
+     "author": "Niche Gamer",
+     "date": "2026-10-09",
+     "likes": 13,
+     "views": 1574,
+     "link": "https://x.com/nichegamer/status/2108548341940269374",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2108548272969195520/pu/img/w14xpfhrf8q276W5.jpg",
+      "video_url": "https://x.com/nichegamer/status/2108548341940269374/video/1"
+     },
+     "summary": "被称作「反向恶魔城」的城堡防御 Roguelite《ReVamp》公布发售窗口：2027年3月登陆Steam。",
+     "analysis": "",
+     "recommendation": "ReVamp：反向恶魔城式城堡防御Roguelite，2027年3月上Steam",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "電ファミニコゲーマー · 新游介绍",
+     "tags": [
+      "驾驶模拟",
+      "90年代中国",
+      "题材差异化"
+     ],
+     "title": "SHIFU: Traffic Masters：出租车猛开会吓跑乘客的90年代中国风情驾驶游戏",
+     "en_title": "タクシーやパトカーなどの“はたらく車”で仕事をこなすドライビングゲーム『SHIFU: Traffic Masters』が面白そう。タクシーは運転が荒いと乗客に逃げられる",
+     "full_text": "タクシーやパトカーなどの“はたらく車”で仕事をこなすドライビングゲーム『SHIFU: Traffic Masters』が面白そう。タクシーは運転が荒いと乗客に逃げられる\nhttps://t.co/6OP82T5Lr0\n\nトラックで揺れたりこぼれたりする積み荷を運び、路線バスは時刻表どおりに運行。チルい90年代中国の街並みも楽しめる https://t.co/yxwZxW0KoM",
+     "author": "電ファミニコゲーマー",
+     "date": "2026-10-09",
+     "likes": 386,
+     "views": 117636,
+     "link": "https://x.com/denfaminicogame/status/2108363171996295308",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2108363145312092160/pu/img/qfyERh73swl-BWJ5.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2108363171996295308/video/1"
+     },
+     "summary": "电Fami介绍《SHIFU: Traffic Masters》：用出租车、卡车、警车、巴士等「働く車」完成工作的驾驶游戏——出租车开太猛乘客会逃跑，卡车要运不洒的货物，巴士按时刻表运行，还能欣赏90年代中国街景。",
+     "analysis": "",
+     "recommendation": "SHIFU: Traffic Masters：出租车猛开会吓跑乘客的90年代中国风情驾驶模拟",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "独立开发者 · 资源合集",
+     "tags": [
+      "游戏素材",
+      "独立开发",
+      "资源导航"
+     ],
+     "title": "独立游戏开发素材书签合集：8个免费资产、音效、像素与插件站点",
+     "en_title": "If you're building your own game, bookmark this.",
+     "full_text": "If you're building your own game, bookmark this.\n\n- https://t.co/Mwagc3de7i Indie game assets\n- https://t.co/ig4BYLHvfF Community game art\n- https://t.co/TRL9lYnUvy Game asset packs\n- https://t.co/d6Y13aHEW9 Game interface icons\n- https://t.co/hv6ZhkfftA Character rigging and animation\n- https://t.co/fRxWIoCo3g Game sound effects\n- https://t.co/G889TBUa82 Pixel art palettes and tools\n- https://t.co/CWxDt7F5fY Library Godot plugins and assets\n\nWhat did I miss?",
+     "author": "Brendan Jowett",
+     "date": "2026-10-09",
+     "likes": 1685,
+     "views": 60321,
+     "link": "https://x.com/jowettbrendan/status/2108484711253483787",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HULXqn2bUAAS26p.jpg"
+     },
+     "summary": "开发者 Brendan Jowett 整理了8个游戏开发资源站点：独立游戏素材、社区游戏美术、资产包、UI图标、角色绑定动画、音效、像素画调色板与 Godot 插件库，并称「自己做游戏的话值得收藏」。推文获1685赞、6万浏览。",
+     "analysis": "对独立团队和小团队，素材与工具链的成本大头往往不是钱而是筛选时间。这类经过社区验证的导航合集值得直接存档。",
+     "recommendation": "8个独立开发资源站合集：素材、音效、UI图标、像素调色板、Godot插件一帖打包"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**OpenAI极简官宣引爆500万围观，AI改造3A大作持续刷屏**\nOpenAI Codex与ChatGPT负责人 Thibault Sottiaux 一句「Today, we are announcing ChatGPT」获得近500万浏览，官方未附细节，市场普遍解读为平台级改版前兆。社区侧，Opus 5.5 把 Minecraft 塞进《荒野大镖客2》获13.9万浏览；独立开发者 Mike Houser 花光最后$1400、周末做成的永久死亡ARPG已被1100名玩家玩了超5000小时——「AI周末做游戏」首次交出真实留存数据。\n\n**欧盟监管瞄准操纵性付费，PC出货量暴跌20.1%**\nGameSpot报道欧盟正针对游戏业最具操纵性的变现设计采取行动，抽卡与限时压力类设计在欧洲的合规压力继续升级。硬件侧，IDC数据显示Q3全球PC出货量同比暴跌20.1%至6270万台，AI内存危机透支下半年需求，价格短期难回落。Konami则确认正在考虑Silent Hill第二、第三波游戏，系列转向年更化长线运营。\n\n**新游：野枪FPS免费公测、停车场经营EA上线、两大经典IP官宣续作**\nAirsoft Online 免费公测开到10月26日，BB弹弹道与「举手喊Hit」礼仪高度还原野枪文化；Car Park Capital 以「把天堂铺成停车场」的反差题材登陆Steam抢先体验。Amanita官宣《机械迷城2》、The Escapists 3首曝，《影之刃零》媒体试玩口碑爆发。详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
