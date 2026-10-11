@@ -1,0 +1,618 @@
+{
+  "date": "2026-10-11",
+  "meta": {
+    "raw_count": 251,
+    "filtered_count": 163,
+    "selected_count": 17,
+    "crawl_time": "2026-10-11 11:53"
+  },
+  "lede": "Claude Opus 5.5 一天引爆 AI 改造游戏浪潮：Minecraft 被“接线”进 GTA 5、赛博朋克 2077 跑进 Windows XP；Deadlock 新英雄把战场变成棋盘，CCU 峰值超越 TF2；《巫师 3》重制版上线即 10.8 万 PCU；GTA 6 进入 40 天倒计时。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Opus 5.5 把 Minecraft 内容加载层接进 GTA 5——装 mod 直接出现在街头，一天引爆 AI 改造游戏浪潮"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Deadlock 新英雄 Solomon 把战场变成棋盘——CCU 历史峰值 26.2 万，超越 TF2"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "Missile Stream：单键发射导弹+与自己的历史回放组队开路——浏览器即玩，一天 160 万浏览"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Opus 5.5 把 Minecraft 接线进 GTA 5，一天引爆 AI 改造游戏浪潮\n单人开发者的 ImageFlow 在浏览器超越 Adobe 重打光\nVercel：58% 流量来自机器人，60% 部署由 Agent 发起"
+    },
+    {
+      "id": "industry",
+      "text": "Deadlock 新英雄把战场变成棋盘，CCU 历史峰值超越 TF2\n《巫师 3》重制版上线即 10.8 万 PCU\nGTA 6 进入 40 天倒计时，GTA V Legacy PCU 30 天首破 2 万\nSupermassive 裁员 70+，Ninja Theory 启动裁员"
+    },
+    {
+      "id": "indie",
+      "text": "Missile Stream：与过去的自己组队的单键游戏，一天 160 万浏览\nPokéSurvivor：966 只宝可梦免费浏览器割草今日上线\nBELTFED：扮演失控 AI 建流水线军工厂迎战虫群"
+    },
+    {
+      "id": "tools",
+      "text": "街霸 4 等 12 年的回滚 netcode，一周出了两个 Claude 参与开发的社区 Mod"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "source": "X · 技术解析",
+          "tags": [
+            "Claude Opus 5.5",
+            "游戏桥接",
+            "AI开发",
+            "Minecraft"
+          ],
+          "title": "Opus 5.5 把 Minecraft「接线」进 GTA 5：装个 mod 直接出现在街头，一天引爆 AI 改造游戏浪潮",
+          "en_title": "opus 5.5 put Minecraft inside GTA 5, and then it got worse",
+          "full_text": "THIS IS F*CKING UNFAIR\n\nopus 5.5 put Minecraft inside GTA 5, and then it got worse\n\nthey did not copy Minecraft into the game. they wired in the part of Minecraft that loads content\n\nWHAT THAT MEANS\n→ you install a mod in Minecraft the normal way, in its own folder\n→ it shows up in GTA 5, standing in the street, lit by the city's own lights\n→ nobody touches GTA for any of it\n\nWHY IT WORKS\n→ the bridge sits under the content instead of beside it. GTA is never told what a block is, it is told how to load whatever Minecraft is loading\n→ so new content is not a new port, it is a file in a folder\n→ the ceiling stopped being what one person built and became whatever the modding scene makes next\n\nWHAT IT QUIETLY UNLOCKS\n→ fifteen years of mods are now GTA content that nobody had to make\n→ the people who wrote them have never heard of this and do not need to\n→ one engine inherited another engine's entire catalogue in an afternoon\n\nthe first version put Minecraft in GTA\nthis one put everything Minecraft can load in GTA, and the city still thinks it is a normal tuesday",
+          "author": "Roxx",
+          "date": "2026-10-09",
+          "likes": 5859,
+          "views": 245097,
+          "link": "https://x.com/Roxx_0x/status/2108618648763896141",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108604597237420032/img/O1-VLVEJHWeW3eL_.jpg",
+            "video_url": "https://x.com/Roxx_0x/status/2108618648763896141/video/1"
+          },
+          "summary": "开发者 Roxx 解析了用 Claude Opus 5.5 把 Minecraft 桥接进 GTA 5 的原理：不复刻方块逻辑，而是接入 Minecraft 的内容加载层——MC 侧正常安装的 mod 会直接出现在 GTA 5 街头，并被城市自己的光源照亮。同日多人跟进：有人花约 1 小时、不到 25 美元做出《进击的巨人》Minecraft 多人版，有人把整个《赛博朋克 2077》重编译到 Windows XP 原生运行（25-30 FPS）。继昨日《荒野大镖客2》版本后，GTA 5 版成为今日最高热度变体。",
+          "analysis": "这轮浪潮的真正启发不是“AI 能写游戏”，而是桥接架构：新内容不再是移植，而是“文件夹里的一个文件”，一个引擎一个下午继承了另一个引擎十五年的 mod 生态。对从业者：AI 时代的技术护城河正在从实现能力转向架构设计与开放的内容接口。",
+          "recommendation": "Opus 5.5 把 Minecraft 内容加载层接进 GTA 5——装 mod 直接出现在街头，一天引爆 AI 改造游戏浪潮",
+          "featured": true,
+          "idx": "AI科技热点 01"
+        },
+        {
+          "source": "X · AI工具",
+          "tags": [
+            "AI图像",
+            "独立开发",
+            "Adobe",
+            "浏览器工具"
+          ],
+          "title": "单人开发者发布浏览器版 ImageFlow：宣称重打光功能超越尚未发布的 Adobe",
+          "en_title": "I beat Adobe and shipped a better relight feature than them",
+          "full_text": "I MADE IT!\n\nI beat Adobe and shipped a better relight feature than them. (theirs is not even released yet).\n\nA multibillion-dollar company with thousands of engineers just got beat by one person.\n\nCrazy thing is that https://t.co/s8rpanKqsP runs in your browser locally for Free 🤯\n\nLet's kill Adobe one feature at a time.\n\nStay tuned, I'm working on a desktop version of ImageFlow and a new LightRoom alternative that i'm so excited about!",
+          "author": "Yassine Bouanane",
+          "date": "2026-10-09",
+          "likes": 10758,
+          "views": 447311,
+          "link": "https://x.com/ybouane/status/2108615189587259645",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108613996802715650/img/hW1jeV1Kbhn8tYmX.jpg",
+            "video_url": "https://x.com/ybouane/status/2108615189587259645/video/1"
+          },
+          "summary": "独立开发者 Yassine Bouanane 发布 ImageFlow——完全在浏览器本地运行的 Photoshop 级图像编辑器：图层、蒙版、混合模式、调整图层、智能对象、文字与滤镜齐备，支持 PSD 导入导出，并内置端侧 AI 选择与重打光（relight）。他宣称该功能超越了尚未发布的 Adobe 同类特性，且完全免费、文件不上传；下一步是桌面版与 Lightroom 替代品。",
+          "analysis": "“一个人打平数千工程师团队”的产品叙事正在常态化：浏览器本地运行+端侧 AI 把算力与分发成本压到接近零。对创意工具厂商，单一功能的快速超越已足以动摇订阅制护城河；对独立开发者，垂直单点突破大厂尚未上线的功能是可行路线。",
+          "recommendation": "单人开发者 ImageFlow 在浏览器本地跑通 Photoshop 级编辑，重打光抢先 Adobe——44.7 万浏览",
+          "featured": true,
+          "idx": "AI科技热点 02"
+        },
+        {
+          "source": "X · 数据观察",
+          "tags": [
+            "AI Agent",
+            "流量结构",
+            "Vercel"
+          ],
+          "title": "Vercel 实测数据：58% 流量来自机器人，60% 以上部署由 Agent 发起",
+          "en_title": "58.18% traffic is bot-originated... 60%+ of deployments are now agentic",
+          "full_text": "Some interesting machine & agent Vercel traffic stats.\n\n• Across the entire Vercel network, 58.18% traffic is bot-originated (last 30d). This was 32% in Jan 2024.\n\n• 60%+ of deployments on Vercel are now agentic, up from ~3% in Jan 2026.\n\n• Up to 83% of pageviews are now coming from agents to Vercel's own documentation sites. The % reliably increases the more we optimize content for them.\n\nI expect 'direct' human internet traffic to basically become a rounding error in coming years. The web will thrive, but it will be built for and by agents.",
+          "author": "Guillermo Rauch",
+          "date": "2026-10-10",
+          "likes": 473,
+          "views": 41798,
+          "link": "https://x.com/rauchg/status/2108733051283050964",
+          "media": null,
+          "summary": "Vercel 创始人 Guillermo Rauch 公布平台级数据：近 30 天 58.18% 的流量来自机器人（2024 年 1 月为 32%）；60% 以上的部署由 Agent 发起（2026 年 1 月约 3%）；其文档站最高 83% 的页面浏览来自 Agent。他预判人类“直接流量”将在几年内变成舍入误差，未来 Web 将为 Agent 而建。",
+          "analysis": "这是 Agent 渗透速度最直观的量化样本：10 个月内 agentic 部署占比从 3% 涨到 60%。对游戏行业意味着官网、商店页、开发者文档的“读者”将越来越多是 Agent——为 AI 优化内容结构正在从加分项变成必修项。",
+          "recommendation": "Vercel 实测：58% 流量是机器人，60% 部署由 Agent 发起——10 个月涨了 20 倍",
+          "idx": "AI科技热点 03"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "source": "X · 市场表现",
+          "tags": [
+            "Valve",
+            "Deadlock",
+            "PCU",
+            "新英雄"
+          ],
+          "title": "Deadlock 新英雄把战场变成棋盘，CCU 历史峰值超越 TF2",
+          "en_title": "SOLOMON ACTUALLY PLAYS THE CHESS #DEADLOCK",
+          "full_text": "SOLOMON ACTUALLY PLAYS THE CHESS #DEADLOCK https://t.co/h8g2BcwVHn",
+          "author": "‎Gabe Follower",
+          "date": "2026-10-09",
+          "likes": 29289,
+          "views": 3122239,
+          "link": "https://x.com/gabefollower/status/2108665356617445666",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108665227730415616/img/aNYvpZ2sKbrn_mac.jpg",
+            "video_url": "https://x.com/gabefollower/status/2108665356617445666/video/1"
+          },
+          "summary": "Valve 的 Deadlock 推出新英雄 Solomon：主武器直接射击棋盘上的棋子，弹药越多棋子越多，整张地图变成可以“下棋”的战场。社区演示视频单条最高 312 万浏览、2.9 万赞。据 PC Gamer，新英雄带动 Deadlock 同时在线峰值超越 TF2 的历史峰值；GI Steam 榜显示其历史峰值已达 26.2 万，10 月 11 日 24 小时峰值 21 万。多家报道：PC Gamer。",
+          "analysis": "尚未正式发售（商店页仍是“即将推出”）就刷新了 Valve 老牌游戏的历史在线纪录，封闭测试+主播生态的持续内容供给再次验证 Valve 的长发酵运营节奏。把 MOBA 对线重构为棋盘博弈也是品类少见的结构性创新，值得玩法设计者细看。",
+          "recommendation": "Deadlock 新英雄 Solomon 把战场变成棋盘——CCU 历史峰值 26.2 万，超越 TF2",
+          "featured": true,
+          "game_ref": "Deadlock",
+          "enrichment": {
+            "game_name": "Deadlock",
+            "genre": "动作",
+            "developer": "Valve",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "即将宣布",
+            "steam_rating": null,
+            "steam_url": "https://store.steampowered.com/app/1422450",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422450/aa249c5e8cc8f90941bd1dbdc311773cd1afe065/header.jpg?t=1790716179",
+            "youtube_video": null,
+            "description": "《异锁》是一款处于开发早期阶段的多人游戏。\n\n",
+            "why_notable": "未发售即超越 TF2 十年历史峰值，Valve 封闭测试生态的又一次胜利",
+            "pcu": "262,145（历史峰值）；209,869（10月11日 24h 峰值，GI 数据）",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          },
+          "idx": "游戏行业 01"
+        },
+        {
+          "source": "Digital Foundry · 技术评测",
+          "tags": [
+            "CD PROJEKT RED",
+            "重制版",
+            "技术分析",
+            "Steam"
+          ],
+          "title": "《巫师 3》重制版 PC 上线：Digital Foundry 称世代级提升，GI 显示 PCU 达 10.8 万",
+          "en_title": "The Witcher 3: Wild Hunt Remastered - PC Represents a Generational Shift",
+          "full_text": "The Witcher 3: Wild Hunt Remastered - PC Represents a Generational Shift, but You'll Need Optimised Settings https://t.co/OrtqJvlSXO",
+          "author": "Digital Foundry",
+          "date": "2026-10-10",
+          "likes": 126,
+          "views": 8957,
+          "link": "https://x.com/digitalfoundry/status/2108946926326386818",
+          "media": null,
+          "summary": "Digital Foundry 发布《巫师 3：狂猎》重制版 PC 版技术评测：画面代表一次世代级提升，但需要针对性优化设置才能达到理想表现，部分问题待补丁修复。GI Steam 榜数据显示重制版当日 PCU 约 10.8 万，作为独立条目与 2015 年原版并列上榜。",
+          "analysis": "十年老游戏靠一次重制冲回 Steam 在线头部梯队，验证“大 IP 重制”仍是高性价比现金流产品线。DF 提到的“需调优设置”也提示：重制项目的技术债与优化口碑是影响转化率的关键变量。",
+          "recommendation": "《巫师 3》重制版上线即 10.8 万 PCU——Digital Foundry 称世代级提升但需调优设置",
+          "featured": true,
+          "game_ref": "The Witcher 3: Wild Hunt Remastered",
+          "idx": "游戏行业 02",
+          "enrichment": {
+            "game_name": "The Witcher 3: Wild Hunt Remastered",
+            "genre": "开放世界 / 角色扮演",
+            "developer": "CD PROJEKT RED",
+            "platforms": [
+              "PC",
+              "PS5",
+              "Xbox Series X|S",
+              "Switch"
+            ],
+            "price": "¥ 199.00",
+            "release_date": "已发售 · 2015年5月18日（重制版为同商店页升级）",
+            "steam_rating": "84.7 万条评价（原版累计）",
+            "steam_url": "https://store.steampowered.com/app/292030/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/4f75dfb90f593deac48d83b6393828c1b5a3a777/header_alt_assets_1_schinese.jpg?t=1790845156",
+            "youtube_video": null,
+            "description": "",
+            "why_notable": "十年老游戏靠重制版冲回 Steam 在线头部，10.8 万 PCU",
+            "pcu": "108,226（10月11日 24h 峰值，GI 数据，重制版独立条目）",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "source": "The Game Awards · 官方账号",
+          "tags": [
+            "GTA 6",
+            "Rockstar",
+            "倒计时",
+            "Steam"
+          ],
+          "title": "GTA 6 进入 40 天倒计时，GTA V Legacy 版 PCU 近 30 天首次突破 2 万",
+          "en_title": "40 days until GRAND THEFT AUTO VI.",
+          "full_text": "40 days until GRAND THEFT AUTO VI. https://t.co/OxqSAPB07r",
+          "author": "The Game Awards",
+          "date": "2026-10-10",
+          "likes": 25372,
+          "views": 268098,
+          "link": "https://x.com/thegameawards/status/2108791172827377806",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUPuY1EWYAAzgB-.jpg"
+          },
+          "summary": "The Game Awards 发帖倒计时 GTA VI 距发售还有 40 天（倒推发售日为 2026 年 11 月 19 日），单帖 2.5 万赞、26.8 万浏览。同期 Steam 出现联动迹象：GI 榜显示 GTA V Legacy 版当日 PCU 7.9 万，为近 30 天首次突破 2 万。另据 Rock Paper Shotgun 采访，GTA 6 编剧称系列不会对现实政治做“过于具体”的映射。",
+          "analysis": "40 天倒计时意味着营销节点密集期开启——预告、联动、平台异动将持续到发售日。老作 PCU 回流是可量化的前置热度指标（Legacy 版 30 天内从 2 万以下直冲 7.9 万），做竞品排期或平台运营值得盯到 11 月中旬。",
+          "recommendation": "GTA 6 进入 40 天倒计时（11 月 19 日），GTA V Legacy 版 PCU 30 天来首次冲上 7.9 万",
+          "featured": true,
+          "game_ref": "Grand Theft Auto VI",
+          "idx": "游戏行业 03"
+        },
+        {
+          "source": "Rock Paper Shotgun · 新闻",
+          "tags": [
+            "裁员",
+            "Supermassive",
+            "Ninja Theory",
+            "微软"
+          ],
+          "title": "Supermassive 裁员超 70 人，微软旗下 Ninja Theory 同周启动裁员流程",
+          "en_title": "Supermassive lay off \"more than 70\" staff; Ninja Theory appear to have kicked off the redundancy process",
+          "full_text": "Following through on their warning, Until Dawn and Directive 8020 devs Supermassive lay off \"more than 70\" staff. https://t.co/M2SznshM1e https://t.co/bhczdb1n0y",
+          "author": "Rock Paper Shotgun",
+          "date": "2026-10-10",
+          "likes": 0,
+          "views": 2121,
+          "link": "https://x.com/rockpapershot/status/2108932318190543302",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HURuxHWXEAAzvPc.jpg"
+          },
+          "summary": "《Until Dawn》《Directive 8020》开发商 Supermassive Games 在此前预警后正式裁员“超过 70 人”；同周《Hellblade》开发商、微软旗下 Ninja Theory 被曝启动裁员流程，内部引述“即使知道结局如何，我还会再做一次”。多家报道：Rock Paper Shotgun（两条独立报道）。",
+          "analysis": "两周内两家英国头部叙事向工作室相继收缩，重演前提预告→正式落地的节奏，说明叙事驱动中型单机的成本压力仍在传导。与欧洲团队有外包或联运合作的厂商，需要重新评估其产能稳定性。",
+          "recommendation": "Supermassive 裁员 70+ 人，微软旗下 Ninja Theory 同周启动裁员——英国单机阵营再收缩",
+          "idx": "游戏行业 04"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "source": "X · 独立开发",
+          "tags": [
+            "单键游戏",
+            "浏览器游戏",
+            "日本独游"
+          ],
+          "title": "Missile Stream：日本个人开发者发布「与过去的自己组队」的单键游戏，一天 160 万浏览",
+          "en_title": "過去の自分と協力するワンボタンゲーム「Missile Stream」",
+          "full_text": "#itchio #Gemini\n過去の自分と協力するワンボタンゲーム「Missile Stream」を公開しました。リプレイを積み重ねて物量でこじ開けていく、難度を調節しやすい高速アクションです。\n\n↓ブラウザ上でそのまま遊べます\nhttps://t.co/htQbrRM67P https://t.co/h5gIHbmC68",
+          "author": "形：ゲーム開発",
+          "date": "2026-10-09",
+          "likes": 5639,
+          "views": 1620557,
+          "link": "https://x.com/ktch9541/status/2108439021873775017",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108438340349595648/img/K3Y_Emsa2c94TRxE.jpg",
+            "video_url": "https://x.com/ktch9541/status/2108439021873775017/video/1"
+          },
+          "summary": "日本开发者 形（ktch9541）在 itch.io 发布免费单键游戏 Missile Stream：不断发射并引爆导弹为前进弹幕清出通路，每一局的历史回放会在后续关卡成为“队友”，靠重放叠加的物量逐步碾开高速关卡。难度可调、浏览器即玩（itch.io 评分 4.5/5），发布一天获 160 万浏览、5600+ 赞。",
+          "analysis": "",
+          "recommendation": "Missile Stream：单键发射导弹+与自己的历史回放组队开路——浏览器即玩，一天 160 万浏览",
+          "featured": true,
+          "game_ref": "Missile Stream",
+          "enrichment": {
+            "game_name": "Missile Stream",
+            "genre": "单键动作 / 弹幕开路 / 高分挑战",
+            "developer": "形（ktch9541，日本个人开发者）",
+            "platforms": [
+              "浏览器（itch.io）"
+            ],
+            "price": "免费",
+            "release_date": "已发售 · 2026年10月9日",
+            "steam_rating": null,
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】单键高速动作游戏：按住发射导弹并引爆，为前进的弹幕流清出通路。最大亮点是“与过去的自己协作”——每一局的轨迹都会被录制，下一局以回放形式与你并肩作战；反复游玩后，屏幕上同时叠放多份“过去的你”，用不断增长的物量碾开原本不可能通过的高速弹幕关。难度调节宽松，休闲与硬核玩家都能找到节奏。\n\n【关卡与节奏】关卡设计强调“用重放数量堆出解法”：单次挑战近乎不可能的通路，在三次、五次重放叠加后变得可行。失败成本极低，正反馈密集，单局极短，适合碎片时间反复挑战。\n\n【表现与平台】像素风高速弹幕，itch.io 页面 HTML5 版本直接可玩，无需下载注册，评分 4.5/5；发布首日即收获 160 万浏览，是本周 itch.io 最热新作。\n\n【开发背景】开发者 形（ktch9541）为日本个人开发者，推文带 #Gemini 标签，或表明开发过程使用了 Google Gemini 辅助（未经官方说明，仅供参考）。\n\n【优势】把“回放重试”这一硬核传统（如 Super Time Force）简化成零门槛单键体验；传播链路极短——看到推文即可开玩。\n【不足】单键操作上限有限，长线深度依赖关卡更新。\n【综合】机制差异化+即点即玩的传播设计，是“小游戏大传播”的又一标杆案例。",
+            "why_notable": "“与过去的自己组队”把回放机制变成合作玩法，单键+浏览器即玩把传播门槛压到最低",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          },
+          "idx": "新游推文 01"
+        },
+        {
+          "source": "X · 粉丝游戏",
+          "tags": [
+            "宝可梦",
+            "幸存者like",
+            "粉丝游戏",
+            "浏览器游戏"
+          ],
+          "title": "PokéSurvivor：全 966 只宝可梦的免费浏览器割草游戏今日上线，预热已 20 万浏览",
+          "en_title": "Tráiler oficial de PokéSurvivor, un videojuego gratuito estilo Vampire Survivors con todos los Pokémon de las 9 regiones",
+          "full_text": "Tráiler oficial de PokéSurvivor, un videojuego gratuito estilo Vampire Survivors con todos los Pokémon de las 9 regiones. \n\nJuega gratis en tu navegador: sin descargas, sin anuncios.  \n\nJUGAR: https://t.co/nYrgAsxw19 Disponible el 11/10/2026 https://t.co/dlN6gPPFD1",
+          "author": "JPTER78",
+          "date": "2026-10-10",
+          "likes": 5765,
+          "views": 207462,
+          "link": "https://x.com/JPTER78/status/2108849627248148894",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108848527795232768/img/N8x-0RUasu1RWRUi.jpg",
+            "video_url": "https://x.com/JPTER78/status/2108849627248148894/video/1"
+          },
+          "summary": "西语社区开发者 JPTER78 公布粉丝游戏 PokéSurvivor 官方预告：Vampire Survivors 式割草玩法，收录全部 9 个地区共 966 只宝可梦（含闪光与传说宝可梦），最多 4 人合作；浏览器与手机免费即玩、无下载无广告，2026 年 10 月 11 日上线，预热帖已获 20.7 万浏览、5700+ 赞。",
+          "analysis": "",
+          "recommendation": "PokéSurvivor：966 只宝可梦全图鉴+四人合作的免费浏览器割草——上线首日预热 20.7 万浏览，IP 风险极高",
+          "featured": true,
+          "game_ref": "PokéSurvivor",
+          "enrichment": {
+            "game_name": "PokéSurvivor",
+            "genre": "幸存者like / 弹幕割草",
+            "developer": "社区开发者（JPTER78 发布）",
+            "platforms": [
+              "浏览器",
+              "移动端浏览器"
+            ],
+            "price": "免费",
+            "release_date": "已发售 · 2026年10月11日",
+            "steam_rating": null,
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】Vampire Survivors 式幸存者like：选择宝可梦搭档，在怪潮中自动战斗、捡经验升级、构筑技能组合；官方站点标注收录全部 9 个地区共 966 只宝可梦、含闪光个体与传说宝可梦，最多支持 4 人联机合作。\n\n【分发方式】纯浏览器/移动端网页运行，免下载、免注册、无广告、完全免费——分发成本几乎为零，传播链路是“看到推文→点链接→直接玩”。\n\n【IP 属性】本项目为未经授权的粉丝作品，与任天堂/宝可梦公司无关联。任天堂对粉丝项目长期执行高强度的下架与诉讼策略，项目存活周期存在重大不确定性。\n\n【热度】预热预告获 20.7 万浏览、5700+ 赞，上线日恰逢周末流量高峰。\n\n【优势】全图鉴收集+免费+零门槛三重杠杆；幸存者like 与宝可梦的适配度天然极高。\n【不足】无授权意味着随时可能被整体下架；非官方平衡性与长线运营无保障。\n【综合】粉丝游戏的流量天花板样本：值得研究其分发设计，不宜当作可长线关注的产品。",
+            "why_notable": "用零门槛浏览器分发吃透 IP 流量，但也注定活在任天堂法务的倒计时里",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          },
+          "idx": "新游推文 02"
+        },
+        {
+          "source": "X · 独立开发",
+          "tags": [
+            "自动化",
+            "塔防",
+            "独立游戏"
+          ],
+          "title": "BELTFED：扮演失控 AI 建流水线军工厂，用自动化生产线迎战数十万虫群",
+          "en_title": "Play as a rogue AI whose only job is to build a factory that destroys millions of bugs",
+          "full_text": "Play as a rogue AI whose only job is to build a factory that destroys millions of bugs\n\n- Lay belts and smelters to turn ore into ammo\n- Feed guns, mortars and lasers from the lines\n- Swarms come in the hundreds of thousands\n\nGame is BELTFED https://t.co/qDMaWRXKo2",
+          "author": "Indie Game Joe",
+          "date": "2026-10-09",
+          "likes": 759,
+          "views": 33865,
+          "link": "https://x.com/IndieGameJoe/status/2108683795247550918",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108683302110416896/img/oz3wvVGrLAQoetLA.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2108683795247550918/video/1"
+          },
+          "summary": "自动化塔防新游 BELTFED 曝光：玩家扮演一个唯一使命是“消灭百万虫群”的失控 AI——铺设传送带与冶炼厂把矿石变成弹药，用流水线持续喂养枪炮、迫击炮与激光，抵御动辄数十万规模的虫潮。Factorio 式产线规划与 They Are Billions 式虫潮防御的结合。",
+          "analysis": "",
+          "recommendation": "BELTFED：扮演失控 AI 建流水线军工厂——Factorio×虫潮防御，产线就是你的武器",
+          "game_ref": "BELTFED",
+          "enrichment": {
+            "game_name": "弹链工厂 BELTFED",
+            "genre": "模拟 / 策略",
+            "developer": "Hello World Studios",
+            "platforms": [
+              "PC",
+              "Mac",
+              "Linux"
+            ],
+            "price": "未公布",
+            "release_date": "2027 年",
+            "steam_rating": null,
+            "steam_url": "https://store.steampowered.com/app/4879420",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4879420/4f6c6cabb5908ffea678e45051a3cfa81108944f/header_schinese.jpg?t=1791555271",
+            "youtube_video": null,
+            "description": "在《弹链工厂》中，你将化身叛逃 AI，唯一指令就是自动杀戮。操控集工厂和武器为一身的战争武器，征服无数世界；粉碎、燃烧瘋狂来袭的饥饿虫群，让他们从世界蒸發。你的弹链工厂就是你的终极武器。\n\n【核心玩法】玩家扮演一个被设定为“消灭百万虫群”的失控 AI：铺设传送带与冶炼厂，把矿石加工成弹药，再由产线持续供给枪塔、迫击炮与激光武器，迎战动辄数十万规模的虫潮。\n\n【品类定位】Factorio 式产线规划 × They Are Billions 式虫潮防御：防守火力取决于产线效率，把“后勤即战力”做成了核心循环。\n\n【卖点】虫群规模与自动化深度的乘积效应——产线设计越好，防线越夸张；视频展示的弹幕密度视觉冲击极强。\n\n【优势】两个验证过的高粘性品类的自然交叉；演示传播性强。\n【不足】Steam 已标注 2027 年发售，商业模式待公布。\n【综合】值得加入愿望单观察的自动化塔防新面孔。",
+            "why_notable": "把“后勤产线”直接变成塔防火力——两个高粘性品类的自然交叉点",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          },
+          "idx": "新游推文 03"
+        },
+        {
+          "source": "X · 学生开发",
+          "tags": [
+            "循环探索",
+            "日本独游",
+            "开发中"
+          ],
+          "title": "34EVERLAST：「世界 10 分钟后毁灭」的循环探索观测游戏公开测试影像",
+          "en_title": "10分後に滅びる世界で、探索と観測を繰り返すゲーム「34EVERLAST」",
+          "full_text": "10分後に滅びる世界で、探索と観測を繰り返すゲーム「34EVERLAST」を作っています。\nこれは最新のテストプレイ映像です。\n\n#スーパーゲ制デー https://t.co/jW3lBAYKH1",
+          "author": "Oooogami",
+          "date": "2026-10-10",
+          "likes": 618,
+          "views": 18913,
+          "link": "https://x.com/kanata_no_hito/status/2108866424928452791",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108860004979867650/img/cCjHH0LjgqFn7wEF.jpg",
+            "video_url": "https://x.com/kanata_no_hito/status/2108866424928452791/video/1"
+          },
+          "summary": "日本开发者 Oooogami 公布在研新作 34EVERLAST 的最新测试影像：世界将在 10 分钟后毁灭，玩家在反复的探索与观测中寻找出路，循环式结构令人联想到《星际拓荒》。",
+          "analysis": "",
+          "recommendation": "34EVERLAST：世界 10 分钟后毁灭，在循环的探索与观测中寻找出路——日本开发者新作",
+          "unselected": true,
+          "idx": "新游参考 01"
+        },
+        {
+          "source": "PC Gamer · 新游报道",
+          "tags": [
+            "ARPG",
+            "第一人称",
+            "独立游戏"
+          ],
+          "title": "Heathen：砍下怪物头颅一脚踢飞、再用它砸死另一只的第一人称 ARPG",
+          "en_title": "This indie first-person ARPG will let you defeat monsters by kicking severed enemy heads at them",
+          "full_text": "This indie first-person ARPG will let you defeat monsters by kicking severed enemy heads at them https://t.co/nA5AUxez67",
+          "author": "PC Gamer",
+          "date": "2026-10-10",
+          "likes": 30,
+          "views": 12907,
+          "link": "https://x.com/pcgamer/status/2108879694544437712",
+          "media": null,
+          "summary": "PC Gamer 报道独立第一人称 ARPG Heathen：可以把怪物的头砍下来、一脚踢飞、再用飞头砸死另一只怪；“换一个视角重做 Diablo”的物理互动卖点。",
+          "analysis": "",
+          "recommendation": "Heathen：砍头+踢头+用头杀怪的第一人称 ARPG——“用新视角重做 Diablo”",
+          "unselected": true,
+          "idx": "新游参考 02"
+        },
+        {
+          "source": "X · 独立开发",
+          "tags": [
+            "恐怖",
+            "钓鱼",
+            "低多边形"
+          ],
+          "title": "Mourning Tide：钓起人面鱼与触手鱼的疯狂之海低模恐怖钓鱼",
+          "en_title": "奇魚、人面魚、触手魚が次々と釣れる狂った海で生活するローポリホラー",
+          "full_text": "リリースが待ち遠しい釣りゲー。\n奇魚、人面魚、触手魚が次々と釣れる狂った海で生活するローポリホラー。\n\n『Mourning Tide』 https://t.co/z9Ou19Byas",
+          "author": "ごだか",
+          "date": "2026-10-10",
+          "likes": 288,
+          "views": 10697,
+          "link": "https://x.com/G_Godaka/status/2108784595441172699",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUOfwsPWoAATnZ1.jpg"
+          },
+          "summary": "日本开发者 ごだか 公布期待作 Mourning Tide：低多边形恐怖钓鱼游戏，在能钓起奇鱼、人面鱼、触手鱼的“疯狂之海”边生活。发售时间待定。",
+          "analysis": "",
+          "recommendation": "Mourning Tide：在钓起人面鱼和触手鱼的疯狂海边求生——低多边形恐怖钓鱼",
+          "unselected": true,
+          "idx": "新游参考 03"
+        },
+        {
+          "source": "PC Gamer · 新游报道",
+          "tags": [
+            "生活模拟",
+            "赛博朋克",
+            "新游"
+          ],
+          "title": "Nivalis Nights：赛博城市里的生活模拟，官方警告“它没你想的那么治愈”",
+          "en_title": "Nivalis Nights: 'If you want a cozy existence in this city, you're going to have to earn it'",
+          "full_text": "Nivalis Nights : 'If you want a cozy existence in this city, you're going to have to earn it' https://t.co/ZwIcEaSCw0",
+          "author": "PC Gamer",
+          "date": "2026-10-10",
+          "likes": 3,
+          "views": 10102,
+          "link": "https://x.com/pcgamer/status/2108921503404474641",
+          "media": null,
+          "summary": "PC Gamer 介绍 Nivalis Nights：以赛博朋克城市 Nivalis 为舞台的生活模拟，官方口径是“想在这座城市过安稳日子，就得自己挣”——披着 cozy 外皮的生存故事。",
+          "analysis": "",
+          "recommendation": "Nivalis Nights：赛博城市版的“cozy 生活模拟”，但官方警告它没你想的那么治愈",
+          "unselected": true,
+          "idx": "新游参考 04"
+        },
+        {
+          "source": "Niche Gamer · 新游曝光",
+          "tags": [
+            "roguelike",
+            "俯视角",
+            "动作"
+          ],
+          "title": "Volatiles：快节奏俯视角 roguelike 动作游戏公布",
+          "en_title": "Fast top-down roguelike action game Volatiles was announced!",
+          "full_text": "Fast top-down roguelike action game Volatiles was announced! https://t.co/zmmyu7GYI7 https://t.co/TCvBRh8ENm",
+          "author": "Niche Gamer",
+          "date": "2026-10-09",
+          "likes": 8,
+          "views": 3921,
+          "link": "https://x.com/nichegamer/status/2108702506037436710",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2108702448017678336/pu/img/GO2ChBA52tTXMgT9.jpg",
+            "video_url": "https://x.com/nichegamer/status/2108702506037436710/video/1"
+          },
+          "summary": "快节奏俯视角 roguelike 动作游戏 Volatiles 正式公布，强调高速战斗循环。",
+          "analysis": "",
+          "recommendation": "Volatiles：快节奏俯视角 roguelike 动作新作公布",
+          "unselected": true,
+          "idx": "新游参考 05"
+        },
+        {
+          "source": "Niche Gamer · 新游曝光",
+          "tags": [
+            "类魂",
+            "低多边形",
+            "怀旧"
+          ],
+          "title": "PRISON OF HUSKS：怀旧低模画风类魂游戏公布发售日期",
+          "en_title": "Nostalgic low-poly soulslike game PRISON OF HUSKS finally has a release date",
+          "full_text": "Nostalgic low-poly soulslike game PRISON OF HUSKS finally has a release date: https://t.co/cxZSC87X0t https://t.co/UYE6cWulRp",
+          "author": "Niche Gamer",
+          "date": "2026-10-10",
+          "likes": 30,
+          "views": 2131,
+          "link": "https://x.com/nichegamer/status/2108913029282660719",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2108912964539457537/pu/img/wYmKSmv1VDaiXl2f.jpg",
+            "video_url": "https://x.com/nichegamer/status/2108913029282660719/video/1"
+          },
+          "summary": "怀旧低多边形画风的类魂游戏 PRISON OF HUSKS 公布发售日期，主打 PS2 时代质感与现代魂系战斗的结合。",
+          "analysis": "",
+          "recommendation": "PRISON OF HUSKS：怀旧低模画风类魂，发售日公布",
+          "unselected": true,
+          "idx": "新游参考 06"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "source": "Rock Paper Shotgun · AI实践",
+          "tags": [
+            "Claude",
+            "Netcode",
+            "社区Mod",
+            "格斗游戏"
+          ],
+          "title": "12 年老游戏《终极街霸 4》收获两个回滚网络代码 Mod——均由 Claude 完成",
+          "en_title": "After 12 years, Ultra Street Fighter IV gets not one, but two rollback netcode mods... both made using Claude",
+          "full_text": "After 12 years, Ultra Street Fighter IV gets not one, but two connection-stabilising rollback netcode mods aaaand they're both made using Claude. https://t.co/iFL3kHytyQ https://t.co/5u4qEqJZ3H",
+          "author": "Rock Paper Shotgun",
+          "date": "2026-10-10",
+          "likes": 2,
+          "views": 1895,
+          "link": "https://x.com/rockpapershot/status/2108917218633212214",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HURhCMXXoAAmvOV.jpg"
+          },
+          "summary": "发售 12 年的 Ultra Street Fighter IV 在一周内收获两个相互竞争的连接稳定性回滚（rollback）网络代码 Mod，且两个都由 AI（Claude）参与开发完成。Rock Paper Shotgun 报道了这一社区事件。",
+          "analysis": "格斗游戏玩家等了十几年的官方回滚支持没等来，等来了 AI 参与开发的社区方案。老游戏“网络代码现代化”是最适合 AI 辅助的改造场景之一：目标明确、测试可量化、原始代码资料齐备。",
+          "recommendation": "街霸4等了12年的回滚netcode，一周出了两个社区Mod——都是用 Claude 做的",
+          "idx": "开发工具 01"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI 开发浪潮**：Claude Opus 5.5 带动的“AI 改造游戏”一天爆发——把 Minecraft 内容加载层桥接进 GTA 5（装 mod 直接出现在街头）、约 1 小时 25 美元做出《进击的巨人》MC 多人版、整个赛博朋克 2077 重编译进 Windows XP；单人开发者的 ImageFlow 宣称重打光功能超越尚未发布的 Adobe。\n\n**行业焦点**：Valve 的 Deadlock 靠棋盘新英雄 Solomon 把 CCU 历史峰值推到 26.2 万、超越 TF2；《巫师 3》重制版 PC 上线即 10.8 万 PCU；GTA 6 进入 40 天倒计时（11 月 19 日），GTA V Legacy 版 PCU 30 天来首次破 2 万；Supermassive 裁员 70+ 人、Ninja Theory 启动裁员。\n\n**新游与工具**：日本个人开发者的单键游戏《Missile Stream》用“与过去的自己组队”机制一天拿下 160 万浏览；全 966 只宝可梦的免费浏览器割草 PokéSurvivor 今日上线；街霸 4 等 12 年的回滚 netcode 出了两个 Claude 参与开发的社区 Mod。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
