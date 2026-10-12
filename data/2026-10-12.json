@@ -1,0 +1,495 @@
+{
+  "date": "2026-10-12",
+  "meta": {
+    "raw_count": 146,
+    "filtered_count": 62,
+    "selected_count": 18,
+    "crawl_time": "2026-10-12 10:12"
+  },
+  "lede": "一款 Steam demo 因每天 1000 美元 AI 账单逼得开发者贷款；数十款 AI 逆向 3A 免费进浏览器引发版权争议；CS2 Scout 买枪遭 VAC 误封引爆社区；30 人联机百万房间迷宫《MillionCube》Steam 页公开。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Steam demo《教妹妹开车》被玩家挤爆：开发者贷款支付每天 1000 美元 AI 账单——AI 游戏的算力成本第一次真实砸到独立开发者头上"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "CS2 玩家 Dust2 每回合买 Scout 遭 VAC 误封——1.2 万赞 50 万浏览，反作弊误伤争议再起"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "MillionCube：30 人联机在 100 万个房间里找唯一正确出口——Steam 页公开，10 月末发售"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Steam demo《教妹妹开车》被挤爆：开发者贷款支付每天 1000 美元 AI 账单\nOpus 5.5 三句话 + Three.js 直出高质感雨夜便利店 3D 游戏\n纯 vibe coding 复刻《帝国时代》观感\nHivecoding：25 个 Opus 5.5 Agent 听直播间指挥，一夜合并 90 处改动"
+    },
+    {
+      "id": "industry",
+      "text": "CS2 Dust2 每回合买 Scout 遭 VAC 误封，Valve 被指封禁无辜玩家\n数十款 AI 逆向 3A（GTA5/MW2/Halo CE）免费进浏览器\nXbox 设授权部门挖 IP 余值，Minecraft 交由前 Meta 变现负责人"
+    },
+    {
+      "id": "indie",
+      "text": "MillionCube：30 人联机在 100 万个房间里找唯一正确出口\n34EVERLAST：10 分钟后世界毁灭的超浓缩循环动作游戏\n碰一下地垫，全地图的狗一起暴走——48.7 万浏览的开发日志"
+    },
+    {
+      "id": "tools",
+      "text": "Unity Spark 封测：提示词生成游戏、浏览器内完善并直接发布\n新宿歌舞伎町大门 3D 模型限时免费配布"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · 行业媒体",
+          "tags": ["AI成本", "Steam", "独立游戏", "商业模式"],
+          "title": "Steam demo《教妹妹开车》被挤爆：开发者贷款支付每天 1000 美元 AI 账单",
+          "en_title": "A Steam demo has become so popular that its developers took out a bank loan to cover its $1,000 daily AI bill",
+          "full_text": "A Steam demo has become so popular that its developers took out a bank loan to cover its $1,000 daily AI bill\n\nTeach My Little Sister How To Drive uses AI to let players teach their in-game sister how to drive through spoken instructions https://t.co/RKBoLOW75a",
+          "author": "Dexerto",
+          "date": "2026-10-11",
+          "likes": 1975,
+          "views": 82094,
+          "link": "https://x.com/Dexerto/status/2109264039872282682",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUWcd3AXUAAXnYh.jpg"
+          },
+          "summary": "Dexerto 报道，Steam demo《Teach My Little Sister How To Drive》用 AI 让玩家通过语音指令教游戏内妹妹开车，玩家人次上涨使推理成本达到每天 1000 美元，开发者已申请银行贷款维持运营。PC Gamer 同日以月度口径跟进报道同一事件。",
+          "analysis": "AI 游戏的运营成本第一次以“贷款”形式进入公共视野：算力开销与玩家人次线性挂钩，爆红即失血。对从业者，AI-native 游戏需要在立项期就设计好计费与推理架构（按时长/会员制/混合推理），否则流量越大现金流失血越快。",
+          "recommendation": "Steam demo《教妹妹开车》被挤爆：开发者贷款支付每天 1000 美元 AI 账单——AI 游戏算力成本首次砸穿独立开发者",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "X · 中文KOL",
+          "tags": ["Opus 5.5", "Three.js", "AI游戏开发", "生成式3D"],
+          "title": "Opus 5.5 三句话提示词直出高质感雨夜便利店 3D 游戏",
+          "en_title": "用Opus 5.5 三句话 + Three.js 直出高质感雨夜便利店游戏",
+          "full_text": "🔥绝了！用Opus 5.5 三句话 + Three.js 直出高质感雨夜便利店游戏！\n\n氛围感拉满，正式版动作和细节已经很接近真人了。\n\n关键细节：\n🔸雨夜日本便利店内外场景，积水倒影、雨丝、暖光与冷蓝对比强烈\n🔸长发少女持透明伞奔跑，步伐和身体动作流畅自然\n🔸日文招牌、货架、ATM、自行车等细节完整，完成度高\n🔸Three.js 实时3D渲染，正式版大幅修复并增加细节\n🔸仅三句话提示词起步，充分展现 Opus 5.5 代码生成能力\n\n#Opus55 #Threejs #AI游戏开发 #Claude #Anthropic #Dario\n\nhttps://t.co/ifYxMSM4S8",
+          "author": "SuSu_酥酥👅",
+          "date": "2026-10-10",
+          "likes": 2202,
+          "views": 103342,
+          "link": "https://x.com/NFT_Chen/status/2109034305968336929",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2109033230540398592/img/9OkIdBB1hjZ95NrA.jpg",
+            "video_url": "https://x.com/NFT_Chen/status/2109034305968336929/video/1"
+          },
+          "summary": "中文博主 SuSu_酥酥 演示仅用三句话提示词，让 Opus 5.5 配合 Three.js 生成雨夜日本便利店场景的 3D 游戏：积水倒影、雨丝、暖光与冷蓝光比、日文招牌与货架等细节完整，角色奔跑动作自然。作者称正式版在动作与细节上已接近真人实拍。",
+          "analysis": "提示词到可玩 3D 场景的链路已从“能跑”进入“有氛围”阶段，环境叙事类小品游戏的制作门槛被进一步拉平。对中小团队，把 AI 生成用于氛围型 Demo 与美术前置验证的性价比已高于外包初稿。",
+          "recommendation": "Opus 5.5 三句话 + Three.js 直出雨夜便利店 3D 游戏——积水倒影与招牌细节已接近实拍质感",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "X · AI能力展示",
+          "tags": ["Opus 5.5", "Vibe Coding", "RTS", "Age of Empires"],
+          "title": "纯 vibe coding 复刻《帝国时代》观感：全程只用 Opus 5.5",
+          "en_title": "Tested how close I could get to the Age of Empires look and feel just by vibe coding",
+          "full_text": "Tested how close I could get to the Age of Empires look and feel just by vibe coding\n\nMade with Opus 5.5 https://t.co/H6LxOG6Vhy",
+          "author": "Dilum Sanjaya",
+          "date": "2026-10-10",
+          "likes": 1679,
+          "views": 88135,
+          "link": "https://x.com/DilumSanjaya/status/2108966501705556162",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108962290028728320/img/q3lnszV68cRzSqhX.jpg",
+            "video_url": "https://x.com/DilumSanjaya/status/2108966501705556162/video/1"
+          },
+          "summary": "开发者 Dilum Sanjaya 用 Opus 5.5 以纯 vibe coding 方式复刻《帝国时代》的视觉与手感，不手写底层代码，只靠提示词迭代，测试 AI 能把 RTS 的观感做到多近。",
+          "analysis": "RTS 的镜头、寻路、群体单位等“手感指标”曾是引擎级难题，如今被提示词迭代逐步逼近。AI 编程的能力边界正从回合制、点击类推进到实时群体系，团队在自研与 AI 生成的分界线上值得重新做一次评估。",
+          "recommendation": "纯 vibe coding 复刻《帝国时代》观感——Opus 5.5 把 RTS 手感做进提示词迭代"
+        },
+        {
+          "idx": "AI科技热点 04",
+          "source": "X · AI工作流",
+          "tags": ["AI Agent", "多智能体", "直播开发", "Hivecoding"],
+          "title": "Hivecoding：25 个 Opus 5.5 Agent 听直播间指令，一夜给 50 人大逃杀上了 90 处改动",
+          "en_title": "Hivecoding is the most powerful use of Ai that i have ever used",
+          "full_text": "Hivecoding is the most powerful use of Ai that i have ever used... \n\n25 opus 5.5 agents + top chat messages = hivecoding\n\nEveryday i live stream and 100s of agentic engineers type fixes and improvements in my chat. \n\nmost people in my chat are real devs and much smarter than me. \n\ni have agents run overnight, filtering out the best improvements and suggestions from chat and from my stream transcript. Last night my agents shipped 90 new changes to Kong Royale. \n\n( 50 person battle royale im building ) \n\ni wake up to MASSIVE improvements everywhere. \n\nthe agents make changes to the stream, my production setup, our discord, etc... \n\nThe human is now the bottle neck, but not when you have 100 to 200 humans prompting your agents everyday.",
+          "author": "Max Blade",
+          "date": "2026-10-10",
+          "likes": 1130,
+          "views": 47371,
+          "link": "https://x.com/_MaxBlade/status/2108964638255690238",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108962362887716864/img/aIi4G5Ckrn87HFsv.jpg",
+            "video_url": "https://x.com/_MaxBlade/status/2108964638255690238/video/1"
+          },
+          "summary": "主播 Max Blade 介绍其“Hivecoding”工作流：25 个 Opus 5.5 agent 监听直播间聊天与直播转录稿，夜间自动筛出最优改进建议并直接修改代码，一晚为 50 人大逃杀《Kong Royale》合并 90 处改动，范围覆盖游戏本体、直播推流与 Discord。他称瓶颈已从“人写代码”变成“每天有多少人在提示你的 agent”。",
+          "analysis": "把社区注意力变成持续交付管线的玩法雏形已现：观众即 QA、聊天记录即 backlog、agent 即工程团队。它可能重新定义直播内容与游戏迭代的耦合方式，但同时也放大了方向漂移与代码评审缺位的风险。",
+          "recommendation": "25 个 Opus 5.5 Agent 听直播间指挥：一夜给 50 人大逃杀合并 90 处改动"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "X · 社区热点",
+          "tags": ["Valve", "VAC", "反作弊", "CS2"],
+          "title": "CS2 玩家 Dust2 每回合买 Scout 遭 VAC 误封，Valve 被指封禁无辜玩家",
+          "en_title": "This Reddit user found out that if you queue Dust 2 and buy Scout every round you will get VAC banned even if you are NOT cheating",
+          "full_text": "🚨 BREAKING\n\nThis Reddit user found out that if you queue Dust 2 and buy Scout every round you will get VAC banned even if you are NOT cheating\n\nValve is literally banning innocent players 💀 https://t.co/qUw5iU58jP",
+          "author": "Moon Skin",
+          "date": "2026-10-11",
+          "likes": 12093,
+          "views": 501797,
+          "link": "https://x.com/MoonSkinCs/status/2109219289014436008",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2109219024550625280/img/R_-mdqfSJSXx3IZ2.jpg",
+            "video_url": "https://x.com/MoonSkinCs/status/2109219289014436008/video/1"
+          },
+          "summary": "Reddit 用户发现 CS2 中在 Dust 2 每回合购买 Scout 狙击枪会触发 VAC 误封，即使没有任何作弊行为；Moon Skin 的转述获得 1.2 万赞、50 万浏览。事件源自玩家社区实测，Valve 尚未公开回应，具体成因有待官方确认。当日 CS2 仍以 140 万 PCU 居 Steam 在线榜第一。",
+          "analysis": "反作弊系统的误伤率正在成为社区信任的核心变量：当正常玩法被行为特征误判，玩家对“无辜封禁”的叙事传播速度远快于官方澄清。对厂商，误封申诉通道与灰度封禁机制的响应速度需要跟上社区传播速度。",
+          "recommendation": "CS2 Dust2 每回合买 Scout 遭 VAC 误封——50 万浏览引爆“Valve 封无辜玩家”争议",
+          "featured": true,
+          "game_ref": "Counter-Strike 2"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "X · 行业媒体",
+          "tags": ["AI", "版权", "逆向工程", "3A"],
+          "title": "数十款 AI 逆向 / vibe coded 3A 游戏免费进浏览器：GTA5、MW2、Halo CE 在列",
+          "en_title": "Dozens of AI reverse-engineered and vibe coded AAA games can now be played in browsers for free, including GTA 5, Modern Warfare 2, and Halo CE.",
+          "full_text": "Dozens of AI reverse-engineered and vibe coded AAA games can now be played in browsers for free, including GTA 5, Modern Warfare 2, and Halo CE. This new trend poses a tremendous risk to big publishers who trained the same tools that are now being used against them.\n\nRead more here: https://t.co/A5UnOD1lOv",
+          "author": "Destructoid",
+          "date": "2026-10-10",
+          "likes": 18,
+          "views": 3330,
+          "link": "https://x.com/destructoid/status/2108968961853259979",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUSP7Z1W8AEOz4a.jpg"
+          },
+          "summary": "Destructoid 报道，数十款由 AI 逆向工程与 vibe coding 复刻的 3A 游戏现已可免费在浏览器中游玩，包括《GTA 5》《使命召唤：现代战争 2》《Halo CE》等；社区同期流传大规模反编译游戏存档。报道认为该趋势对大厂构成结构性风险——训练这些 AI 的正是大厂自己的工具链。",
+          "analysis": "浏览器加 AI 逆向把盗版门槛从破解组降到了提示词层，侵权规模可能从作品级蔓延到能力级。对发行商，追责对象从单个盗版站变成分布式生成行为，DRM 与法律策略都需要重新设计；对独立开发者，这是官方容器与云串流体验差距缩小的警示。",
+          "recommendation": "数十款 AI 逆向 3A（GTA5/MW2/Halo CE）免费进浏览器——盗版门槛降到提示词层",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "X · 行业媒体",
+          "tags": ["Xbox", "微软", "IP授权", "Minecraft"],
+          "title": "Xbox 设立新授权部门，Minecraft 交给前 Meta 变现负责人",
+          "en_title": "Xbox aim to wring more cash out of the games they've not cast into oblivion by launching new licensing arm and handing Minecraft to ex-Meta monetisation lead.",
+          "full_text": "Xbox aim to wring more cash out of the games they've not cast into oblivion by launching new licensing arm and handing Minecraft to ex-Meta monetisation lead. https://t.co/PhQS2fOJuQ https://t.co/mqH6yGwbbi",
+          "author": "Rock Paper Shotgun",
+          "date": "2026-10-11",
+          "likes": 0,
+          "views": 2332,
+          "link": "https://x.com/rockpapershot/status/2109189009574371682",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUVYOhiXsAAD0xv.jpg"
+          },
+          "summary": "Rock Paper Shotgun 报道，Xbox 设立新的授权（licensing）部门，从既有 IP 中挖掘更多收入，《Minecraft》被交给一位前 Meta 变现负责人管理。Niche Gamer 同日报道该部门为“XP division”，负责把 IP 拓展到影视、电视等媒介。多家报道：Rock Paper Shotgun, Niche Gamer。",
+          "analysis": "微软对第一方 IP 的策略正从游戏内变现转向全媒介授权，《Minecraft》是最理想的试验田。关注点在于游戏团队在 IP 决策中的话语权是否被稀释——由前变现负责人执掌核心 IP 是明确的商业化信号。",
+          "recommendation": "Xbox 设授权部门挖 IP 余值，Minecraft 交由前 Meta 变现负责人掌管",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "X · 游戏媒体",
+          "tags": ["迷宫", "多人合作", "Steam页公开", "日本独立"],
+          "title": "MillionCube：独立团队 PushForward 打造 30 人联机迷宫，在 100 万个房间里找唯一正确出口",
+          "en_title": "【30人マルチ対応】最大“100万の部屋”で構成される迷路からゴールを見つけだすゲーム『ミリオンキューブ』Steamストアページが公開",
+          "full_text": "【30人マルチ対応】最大“100万の部屋”で構成される迷路からゴールを見つけだすゲーム『ミリオンキューブ』Steamストアページが公開\nhttps://t.co/YqPYmEPjqO\n\n迷路の規模や世界観の異なる4つのステージが登場、ドアに記された番号や文字がゴールのヒントとなる。10月末ごろのリリースを予定 https://t.co/dKWMmDbp1K",
+          "author": "電ファミニコゲーマー",
+          "date": "2026-10-11",
+          "likes": 1172,
+          "views": 215792,
+          "link": "https://x.com/denfaminicogame/status/2109197638080086428",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2109197603758112768/pu/img/tzBKMLowEf5o_8po.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2109197638080086428/video/1"
+          },
+          "summary": "電ファミニコゲーマー报道，日本独立游戏《MillionCube（ミリオンキューブ）》Steam 商店页公开：支持最多 30 人联机，玩家在最多由 100 万个房间构成的迷宫中，依据门上数字、文字与景色线索寻找唯一正确的房间，含 4 个规模与世界观测异的舞台，预计 10 月末发售。",
+          "recommendation": "MillionCube：30 人联机在 100 万个房间里找唯一正确出口——Steam 页公开，10 月末发售",
+          "featured": true,
+          "game_ref": "MillionCube",
+          "enrichment": {
+            "game_name": "MillionCube",
+            "genre": "迷宫探索 / 多人合作 / 解谜",
+            "developer": "PushForward（独立开发兼发行）",
+            "platforms": ["Steam"],
+            "price": "未公布",
+            "release_date": "2026年10月",
+            "steam_rating": "暂无评价（未发售）",
+            "steam_url": "https://store.steampowered.com/app/4553880/MillionCube/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4553880/c91c27c5cc482b04c7a48e41d74b58ca8e555fe6/header.jpg?t=1791625385",
+            "youtube_video": null,
+            "description": "【核心玩法】《MillionCube》是一款最多 30 人联机的迷宫探索游戏：迷宫最多由 100 万个房间构成，其中只有一个是正确终点。玩家需要循着门上记录的数字与文字、以及周围景色中隐藏的线索，一步步向终点房间推进。\n\n【多人协作结构】100 万个房间人工无法遍历，游戏把“人海”本身变成解谜算力——队伍分工探索、共享线索、交叉验证路径，沟通效率直接决定通关速度。相对传统单人迷宫游戏，它把谜题从内容问题转换成了社交协作问题。\n\n【内容规模】首批公开 4 个舞台，各自拥有不同的迷宫规模与世界观测异，从门上文字提示到景色线索的解谜颗粒度存在分层，兼顾轻度玩家与硬核探索者。\n\n【优势】高概念低实现成本的差异化路线清晰；30 人联机的天然传播属性（拉好友一起迷路）；线索驱动的探索比纯暴力遍历更有智力参与感。\n【不足】谜题深度与重复可玩性尚待验证；对独狼玩家不友好；发售前评价体系空白。\n\n【综合】日本独立团队典型的“一个规则讲到底”设计，Steam 页已公开、预计 10 月末发售，值得加入愿望单观察首周口碑。",
+            "why_notable": "把 30 人人海变成解谜算力的社交型迷宫设计，是低成本高概念多人游戏的最新样本",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「100 万房间迷宫」套「30 人协作」新瓶，PushForward 独立开发，Steam 页已公开、预计 10 月末发售"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "X · 独立开发",
+          "tags": ["时间循环", "动作", "PLAYISM", "日本独立"],
+          "title": "34EVERLAST：Kanata Lab 开发、PLAYISM 发行，10 分钟后世界毁灭的超浓缩循环动作游戏",
+          "en_title": "10分後に滅びる世界で、探索と観測を繰り返すゲーム「34EVERLAST」を作っています。",
+          "full_text": "10分後に滅びる世界で、探索と観測を繰り返すゲーム「34EVERLAST」を作っています。\nこれは最新のテストプレイ映像です。\n\n#スーパーゲ制デー https://t.co/jW3lBAYKH1",
+          "author": "Oooogami",
+          "date": "2026-10-10",
+          "likes": 2229,
+          "views": 95224,
+          "link": "https://x.com/kanata_no_hito/status/2108866424928452791",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108860004979867650/img/cCjHH0LjgqFn7wEF.jpg",
+            "video_url": "https://x.com/kanata_no_hito/status/2108866424928452791/video/1"
+          },
+          "summary": "开发者 Oooogami 公布《34EVERLAST》最新测试影像：在一个 10 分钟后毁灭的世界里重复“探索与观测”，通过玩家的发现与行动逐步解明世界的真相。Steam 页显示本作由 Kanata Lab 开发、PLAYISM 发行，官方定位为单轮最快 10 分钟通关、无失败设计的超浓缩动作游戏，发售日待定。",
+          "recommendation": "34EVERLAST：10 分钟后世界毁灭——探索与观测循环的超浓缩动作游戏，PLAYISM 发行",
+          "featured": true,
+          "game_ref": "34EVERLAST",
+          "enrichment": {
+            "game_name": "34EVERLAST",
+            "genre": "动作 / 冒险 / 时间循环",
+            "developer": "Kanata Lab（发行：PLAYISM）",
+            "platforms": ["Steam"],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "暂无评价（未发售）",
+            "steam_url": "https://store.steampowered.com/app/2134470/34EVERLAST/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2134470/header.jpg?t=1782269318",
+            "youtube_video": null,
+            "description": "【核心玩法】《34EVERLAST》把舞台放在一个 10 分钟后毁灭的世界：玩家在倒计时内反复“探索与观测”，用每一次循环中的发现与行动抽丝剥茧地解明世界真相。单轮最快 10 分钟通关，且不存在失败判定。\n\n【结构创新】“极短单轮 + 无失败 + 循环观测”是对动作游戏挫败感的结构性改造：它把 roguelike 的重开动力替换成了叙事驱动的再访欲望——你不是在“再来一次”，而是在“看清更多”。\n\n【节奏设计】疾风骤雨般的动作密度与 10 分钟的强制截断形成张力：每一轮都是完整的动作体验，同时为下一轮留下观测悬念，专为忙碌玩家设计的“超浓缩”定位非常明确。\n\n【发行背书】PLAYISM（《伊甸之路》《G nosia》等独立名作的发行商）确认发行，说明该结构已被发行商视为可复制的方法论。\n【不足】循环结构的叙事铺垫量大；无失败设计可能稀释动作成长感。\n\n【综合】题材与结构双创新的日本独立新作，发售日待定，适合关注其下一轮测试情报。",
+            "why_notable": "10 分钟一轮、无失败、循环观测——把动作游戏的时间结构重新设计了一遍，且有 PLAYISM 发行背书",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「10 分钟毁灭倒计时」套「无失败循环动作」新瓶，Kanata Lab 开发、PLAYISM 发行，发售日待定"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "X · 独立开发",
+          "tags": ["游戏开发日志", "スーパーゲ制デー", "日本独立", "AI行为"],
+          "title": "独立开发者实装狗 AI：碰一下领地地垫，全地图的狗一起暴走",
+          "en_title": "犬を実装‼️ 縄張り(正方形の板)に触れるとエリア上の全犬がブチギレるシステムも作りました",
+          "full_text": "犬を実装‼️\n縄張り(正方形の板)に触れるとエリア上の全犬がブチギレるシステムも作りました\n#スーパーゲ制デー #ゲーム制作 https://t.co/RA4N0hff19",
+          "author": "カニガヤ",
+          "date": "2026-10-10",
+          "likes": 9586,
+          "views": 487037,
+          "link": "https://x.com/kanigaya_game/status/2108812830480998663",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108809311627722752/img/6aekK8LpBNAMvNj_.jpg",
+            "video_url": "https://x.com/kanigaya_game/status/2108812830480998663/video/1"
+          },
+          "summary": "日本独立开发者 カニガヤ 公布自制游戏新进展：实装了狗的 AI——只要玩家触碰狗的“领地（正方形地垫）”，区域内所有狗都会同时进入暴走状态。视频获得 48.7 万浏览、9586 赞，是当日 スーパーゲ制デー（超级游戏制作日）标签下热度最高的进度帖。",
+          "recommendation": "独立开发者的狗 AI：碰一下地垫，全地图的狗一起暴走——48.7 万浏览的开发日志",
+          "featured": true
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "X · 游戏媒体",
+          "tags": ["塔防", "合作", "Steam发售"],
+          "title": "ハック＆スタック：最多 4 人合作塔防派对游戏 Steam 版发售",
+          "en_title": "仲間も武器として利用できる最大4人の協力タワーディフェンス・パーティーゲーム「ハック＆スタック」Steam版が発売！",
+          "full_text": "仲間も武器として利用できる最大4人の協力タワーディフェンス・パーティーゲーム「ハック＆スタック」Steam版が発売！\nhttps://t.co/HacB9up1VR https://t.co/J0spcelj5C",
+          "author": "Gamer＠ゲーム情報",
+          "date": "2026-10-11",
+          "likes": 824,
+          "views": 75244,
+          "link": "https://x.com/GamerNeJp/status/2109146982250172603",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108858195326484480/img/7kU97l2YzhWVq2ss.jpg",
+            "video_url": "https://x.com/GamerNeJp/status/2109146982250172603/video/1"
+          },
+          "summary": "最多 4 人合作塔防派对游戏《ハック＆スタック》（Hack & Stack）Steam 版发售：队友本身也可以作为武器使用，主打派对向合作体验。",
+          "recommendation": "Hack & Stack：队友即武器的 4 人合作塔防 Steam 发售",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "X · 游戏媒体",
+          "tags": ["发售日", "独立游戏", "猎奇"],
+          "title": "Drunken Goddess Reflux：疯狂系美少女饮酒游戏公开发售日",
+          "en_title": "Deranged anime girl drinking game Drunken Goddess Reflux has a release date",
+          "full_text": "Deranged anime girl drinking game Drunken Goddess Reflux has a release date: https://t.co/37r6cOV4Ea https://t.co/JVDGZEpmXY",
+          "author": "Niche Gamer",
+          "date": "2026-10-10",
+          "likes": 1103,
+          "views": 70275,
+          "link": "https://x.com/nichegamer/status/2108928106727710830",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2108928069532577793/pu/img/p5GdsRCvPP7fjOvP.jpg",
+            "video_url": "https://x.com/nichegamer/status/2108928106727710830/video/1"
+          },
+          "summary": "题材猎奇的饮酒游戏《Drunken Goddess Reflux》正式公开发售日期，媒体评价其“疯狂系美少女饮酒”定位在独立游戏中辨识度极高。",
+          "recommendation": "Drunken Goddess Reflux：疯狂系美少女饮酒游戏公开发售日",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "X · 游戏媒体",
+          "tags": ["开放世界", "抢鲜体验", "发售日"],
+          "title": "Atmosfar：空中开放世界公布 EA 发售日期，预告片满是浮岛与云上出租车",
+          "en_title": "Airborne open world Atmosfar gets an early access release date and a trailer full of flying islands, cloud cruisers and sky taxis.",
+          "full_text": "Airborne open world Atmosfar gets an early access release date and a trailer full of flying islands, cloud cruisers and sky taxis. https://t.co/PrurEMnLSf https://t.co/jKFaWRaPFT",
+          "author": "Rock Paper Shotgun",
+          "date": "2026-10-11",
+          "likes": 1,
+          "views": 2089,
+          "link": "https://x.com/rockpapershot/status/2109128612309872734",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUUhS5jXYAA9G4K.jpg"
+          },
+          "summary": "空中开放世界游戏《Atmosfar》公布抢鲜体验发售日期，预告片展示浮空岛屿、云上巡洋舰与空中出租车等元素，主打天空版开放世界生存体验。",
+          "recommendation": "Atmosfar：浮岛与云上出租车的空中开放世界公布 EA 日期",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "X · 游戏媒体",
+          "tags": ["新作公布", "动作冒险", "Control风"],
+          "title": "Control 风格新作：设定在“行星级外星心智”中的动作游戏实机惊艳",
+          "en_title": "This Control-inspired action game set in a 'planet-scale alien mind' looks absolutely stunning",
+          "full_text": "This Control-inspired action game set in a 'planet-scale alien mind' looks absolutely stunning https://t.co/WUGtBqHZnA",
+          "author": "PC Gamer",
+          "date": "2026-10-11",
+          "likes": 8,
+          "views": 13259,
+          "link": "https://x.com/pcgamer/status/2109285914698735796",
+          "media": null,
+          "summary": "PC Gamer 报道一款受《Control》启发、设定在“行星级外星心智”内部的动作游戏，实机画面表现惊艳，世界观的尺度概念值得关注。",
+          "recommendation": "Control 风“行星级外星心智”动作新作实机惊艳",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "X · 游戏媒体",
+          "tags": ["新作公布", "越狱", "模拟"],
+          "title": "The Escapists 3：3D 越狱模拟续作正式宣布",
+          "en_title": "3D prison escape follow-up The Escapists 3 was announced",
+          "full_text": "3D prison escape follow-up The Escapists 3 was announced: https://t.co/WEo0QlR9zc https://t.co/bdXwfAn2OP",
+          "author": "Niche Gamer",
+          "date": "2026-10-11",
+          "likes": 2,
+          "views": 1306,
+          "link": "https://x.com/nichegamer/status/2109285144020303953",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2109285114949586945/pu/img/QoCmLulzayxs7xPz.jpg",
+            "video_url": "https://x.com/nichegamer/status/2109285144020303953/video/1"
+          },
+          "summary": "经典越狱模拟系列《The Escapists》宣布 3D 化续作《The Escapists 3》，系列首次转向 3D 视角。",
+          "recommendation": "The Escapists 3：经典越狱系列宣布 3D 化续作",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 06",
+          "source": "X · 独立开发",
+          "tags": ["独立开发", "开发日志", "作品展示"],
+          "title": "Guillem Tenza：小预算 solodev 展示在制作品",
+          "en_title": "I'm just a solodev with a big dream and a tiny budget",
+          "full_text": "I'm just a solodev with a big dream and a tiny budget \n\nHope you like what I'm making!😺 https://t.co/2TmkbNHM7o",
+          "author": "Guillem Tenza",
+          "date": "2026-10-10",
+          "likes": 968,
+          "views": 118795,
+          "link": "https://x.com/GtzaStudio/status/2109005545852010574",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2108999835437137920/img/8hfWnkMu_44oDMXC.jpg",
+            "video_url": "https://x.com/GtzaStudio/status/2109005545852010574/video/1"
+          },
+          "summary": "独立开发者 Guillem Tenza 以“大梦想、小预算”自我介绍并展示在制作品，11.9 万浏览显示出 solo 开发叙事的稳定传播力。",
+          "recommendation": "小预算 solodev 的在制作品展示——11.9 万浏览",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "X · 官方发布",
+          "tags": ["Unity", "浏览器引擎", "AI生成", "封闭测试"],
+          "title": "Unity Spark 封测开启：提示词生成、浏览器内完善并直接发布游戏",
+          "en_title": "With artist-created assets from the Unity Asset Store, Unity Spark lets you prompt, perfect, and publish games from any genre - all from a browser.",
+          "full_text": "Stop just imagining your game and start creating it 💻💭\n\nWith artist-created assets from the Unity Asset Store, Unity Spark lets you prompt, perfect, and publish games from any genre - all from a browser. \n\n🔗 Join the closed beta waitlist: https://t.co/J0Mk1YL8tS https://t.co/7tpfoNVtBt",
+          "author": "Unity for Games",
+          "date": "2026-10-09",
+          "likes": 226,
+          "views": 16945,
+          "link": "https://x.com/unitygames/status/2108603537168978377",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2108603473411342337/pu/img/wKeGSTtnLxU5iShZ.jpg",
+            "video_url": "https://x.com/unitygames/status/2108603537168978377/video/1"
+          },
+          "summary": "Unity 官方宣布 Unity Spark 封闭测试：基于 Unity Asset Store 的艺术家资产，用户用提示词生成游戏、在浏览器中完善并直接发布，覆盖任意类型，官方已开放 waitlist。",
+          "analysis": "Unity 把“游戏引擎”重新包装成“游戏生成器”，并与官方资产商店绑定成闭环：AI 生成的内容越多，资产商店的分发价值越高。对中小团队，官方工具链降低的是完成度门槛，差异化玩法设计的价值反而更突出。",
+          "recommendation": "Unity Spark 封测：提示词生成游戏、浏览器内完善并直接发布——官方资产商店闭环",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "X · 免费资源",
+          "tags": ["3D资产", "免费配布", "城市建模", "游戏开发"],
+          "title": "新宿歌舞伎町大门 3D 模型限时免费配布，周二上午 10 点截止",
+          "en_title": "新宿歌舞伎町ゲートの3Dデータを無料配布いたします。",
+          "full_text": "新宿歌舞伎町ゲートの3Dデータを無料配布いたします。\n期限は火曜日10時までです！\n\n今後も配布を増やしていきます。\nhttps://t.co/EUKNVXWs90 https://t.co/ym2UDfpkqk",
+          "author": "Kou Nakamura",
+          "date": "2026-10-11",
+          "likes": 920,
+          "views": 56346,
+          "link": "https://x.com/Kou45388803/status/2109155425342144802",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2109155380182085632/img/rldFQ7tdWIBEt1ko.jpg",
+            "video_url": "https://x.com/Kou45388803/status/2109155425342144802/video/1"
+          },
+          "summary": "3D 作者 Kou Nakamura 限时免费开放新宿歌舞伎町大门的 3D 数据（截至周二上午 10 点），并承诺后续持续增加配布资产。",
+          "analysis": "高辨识度真实街景资产对氛围类独立游戏是即插即用的素材，限时配布也是典型的涨粉运营。注意城市地标资产的商用版权边界需自行评估。",
+          "recommendation": "新宿歌舞伎町大门 3D 模型限时免费配布——周二 10 点截止"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI 账单首次逼出“贷款做 demo”**\nSteam demo《教妹妹开车》因每天 1000 美元推理成本把开发者逼到贷款，同日数十款 AI 逆向 3A 免费进浏览器——AI 游戏的成本与合规两侧同时亮灯。\n\n**Valve 反作弊误伤引爆社区**\nCS2 Dust2 每回合买 Scout 遭 VAC 误封的帖子拿到 50 万浏览；Xbox 设授权部门，Minecraft 交由前 Meta 变现负责人掌管。\n\n**日系独游高概念连续输出**\n30 人联机百万房间迷宫《MillionCube》公开 Steam 页（10 月末发售）；《34EVERLAST》10 分钟毁灭循环动作获 PLAYISM 发行；狗 AI 开发日志 48.7 万浏览。\n\n**工具侧：Unity 官方下场**\nUnity Spark 封测开启，提示词、完善、发布全流程浏览器内完成；新宿歌舞伎町大门 3D 限时免费配布。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
