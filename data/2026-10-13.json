@@ -1,0 +1,743 @@
+{
+ "date": "2026-10-13",
+ "meta": {
+  "raw_count": 212,
+  "filtered_count": 166,
+  "selected_count": 23,
+  "crawl_time": "2026-10-13 11:20"
+ },
+ "lede": "Steam 同时在线破 4350 万创历史新高，Aion 2 全球版首周 39.8 万 PCU；星露谷作者新作《Haunted Chocolatier》定调动作 RPG；2019 年老游 UBERMOSH:OMEGA 首次冲上 17.4 万同时在线；开发者挂机 12 小时让 Claude Code 自主做出可玩 RPG。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Claude Code 挂机 12 小时自主做出可玩 RPG——村庄森林地牢+回合制战斗，素材全部代码实时生成"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Steam 同时在线破 4350 万创历史新高——Aion 2 全球版首周 39.8 万 PCU 成最大推手"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "星露谷作者新作定调：Haunted Chocolatier 是动作 RPG——『做给下矿的人』，无发售日"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Claude Code 挂机 12 小时自主做出可玩 RPG——村庄森林地牢+回合制战斗，素材全部代码实时生成\nUE5.8 本地跑 Qwen3.8 驱动 3D 角色——3bit 量化 12GB 显存 70 tok/s，全链路不依赖云端\n微软总裁 Brad Smith：洗衣机受的安全监管都比 AI 多——呼吁全球规则、第三方评估与安全刹车"
+  },
+  {
+   "id": "industry",
+   "text": "Steam 同时在线破 4350 万创历史新高——Aion 2 全球版首周 39.8 万 PCU 成最大推手\nNVIDIA 传停产 RTX 5090——GB202 产能全部让位 AI 工作站卡，算力挤压烧到旗舰游戏卡\n皇牌空战 8 一周破百万成系列最快——MC 86-88 系列第二高分，Steam 好评率 74% 存落差\nArc Raiders 2.0 + Frozen Trail 拉动人数回升至 15 万 PCU——制作组称 PvE/PvP 分拆『有可能』"
+  },
+  {
+   "id": "indie",
+   "text": "星露谷作者新作定调：Haunted Chocolatier 是动作 RPG——『做给下矿的人』，无发售日\n2019 年老游 UBERMOSH:OMEGA 首次冲上 17.4 万同时在线——六年老游百倍级异动，原因待查\nGhostrunner 工作室拿破仑类魂《Valor Mortis》解禁——『近年最新鲜的类魂』与『系统臃肿』评价并存\nDeep Dish Dungeon 今日发售：3 人合作边下地牢边做菜——营地建设+料理解锁推进"
+  },
+  {
+   "id": "tools",
+   "text": "像素法线贴图+亮度遮罩自制工具考虑开源免费——8000+ 赞验证 2D 光照工具缺口\n动作参考网站大改修：按运动类型重整全站——57 万浏览的动画人日用基建"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "full_text": "“Take as long as needed.”\n\nClaude Code took that personally. 💀\n\nA developer gave it a prompt + reference screenshot and let it coordinate subagents. Roughly 12 hours without another message later, it returned a playable RPG.\n\nVillage, forest, dungeon. Four party members. Turn-based combat with shield breaks and boosts.\n\nThe wild part: no image, model or audio files. Every sprite, texture, song and sound effect is generated in code when the page loads.\n\nThe developer polished it and fixed bugs afterward. The current first chapter is about a 4 MB download with an hour of gameplay.\n\nThat’s an approach worth testing: procedural assets let a coding agent work on visuals, audio and gameplay through the same coding workflow.\n\nWould you leave a coding agent running for 12 hours unattended?",
+     "author": "Jurly",
+     "date": "2026-10-12",
+     "likes": 188,
+     "views": 9624,
+     "link": "https://x.com/jurlycat/status/2109481289342759172",
+     "idx": "AI科技热点 01",
+     "source": "X · AI开发者",
+     "tags": [
+      "Claude Code",
+      "Agent编排",
+      "AI游戏开发",
+      "程序化生成"
+     ],
+     "title": "开发者挂机 12 小时：Claude Code 自主协调子 Agent 做出可玩 RPG，素材全部代码生成",
+     "en_title": "Claude Code took 'Take as long as needed' personally — a playable RPG after ~12 hours of autonomous subagent work",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2109481240881672192/img/0nLCkeUXHLgRW5_3.jpg",
+      "video_url": "https://x.com/jurlycat/status/2109481289342759172/video/1"
+     },
+     "summary": "开发者只给一段提示词和参考截图，让 Claude Code 自行协调子 Agent，约 12 小时后交付可玩 RPG：村庄、森林、地牢三场景，四名队友，带护盾击破与增益机制的回合制战斗。最特别的是零素材文件——所有贴图、精灵、音乐、音效都在页面加载时用代码实时生成，随后由开发者打磨修 Bug。",
+     "recommendation": "Claude Code 挂机 12 小时自主做出可玩 RPG——村庄森林地牢+回合制战斗，素材全部代码实时生成",
+     "analysis": "『提示词到成品』的无人值守时长被拉到 12 小时量级，说明 Agent 编排已能扛住中大型任务的连续执行而不跑偏。对游戏行业，程序化生成资源让『内容管线』变成『代码管线』，小团队的产能天花板被重新定义。",
+     "featured": true
+    },
+    {
+     "full_text": "UE5.8 × Qwn3.8 NEXT FLASH× Strata × IrodoriTTSV4.1\n\nそれと開発中のカスタムシェーダーとカスタムフェイシャルモーションをのっけったやつ。ドレスチェンジシステムも搭載してみた\n\nStrataはUE5.8用に魔改造。Expert層3400乗せでVRAM12GB上限にしたけど70tok/s余裕で出る\nStrataは神\n\n3DModelは一切手が回らなかったのでカスタムシェーダー調整用にファンメイドのティファ使わせてもらってますスク〇ニさんごめんなさい。もちろん差し替え予定\n\n次はデスクトップ連携\n\n--------\nゲームエンジン : UE5.8\nLLM : Qwn3.8 NEXT FLASH 3bit\n推論エンジン : Strata（UE5.8用にフォークして組込）\nTTS : IrodoriTTS V4.1 small\nT2M : ARDY+ Kimodo +既成モーションの複合\nカスタムシェーダー : えうれか\nカスタムフェイシャルモーション : えうれか\n3DModel（仮） : Tifa Lockhart",
+     "author": "えうれか先生",
+     "date": "2026-10-11",
+     "likes": 653,
+     "views": 49415,
+     "link": "https://x.com/L_ARCH_01/status/2109348423661215892",
+     "idx": "AI科技热点 02",
+     "source": "X · 技术开发者",
+     "tags": [
+      "UE5.8",
+      "本地LLM",
+      "AI NPC",
+      "语音合成"
+     ],
+     "title": "UE5.8 内嵌本地 LLM 驱动 3D 角色：Qwen3.8 三比特量化 + Strata 引擎，12GB 显存跑出 70 tok/s",
+     "en_title": "UE5.8 × Qwn3.8 NEXT FLASH × Strata × IrodoriTTSV4.1（原文标签）",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2109343289531129856/img/CAHjOOariGLrAZhI.jpg",
+      "video_url": "https://x.com/L_ARCH_01/status/2109348423661215892/video/1"
+     },
+     "summary": "日本开发者えうれか演示在 UE5.8 中跑通本地 LLM 驱动的 3D 角色：LLM 用 Qwen3.8 NEXT FLASH 三比特量化，推理引擎 Strata 为 UE5.8 魔改并压到 12GB 显存上限，实测 70 tok/s；配合 IrodoriTTS V4.1 语音、多套动作方案与自研表情/换装系统，本地即可完成『理解—说话—动作』全链路。",
+     "recommendation": "UE5.8 本地跑 Qwen3.8 驱动 3D 角色——3bit 量化 12GB 显存 70 tok/s，全链路不依赖云端",
+     "analysis": "本地小模型进引擎的瓶颈是显存与延迟，这条 demo 把两者都压进消费级区间。对想做 AI NPC 的团队，『3bit 量化+引擎内推理』路线省掉云 API 成本与隐私合规负担，代价是牺牲部分模型能力。"
+    },
+    {
+     "full_text": "AI is less regulated than milk, says Microsoft president https://t.co/bTrSgcd9gp",
+     "author": "PC Gamer",
+     "date": "2026-10-12",
+     "likes": 30,
+     "views": 13122,
+     "link": "https://x.com/pcgamer/status/2109611838451376401",
+     "idx": "AI科技热点 03",
+     "source": "X · 行业媒体",
+     "tags": [
+      "AI监管",
+      "微软",
+      "政策",
+      "AI安全"
+     ],
+     "title": "微软总裁：AI 受到的安全监管还不如洗衣机，呼吁全球性安全规则",
+     "en_title": "'Your washing machine is subject to more safety rules than AI' says Microsoft president",
+     "media": null,
+     "summary": "微软总裁 Brad Smith 在 BBC 播客中表示，当前 AI 受到的安全约束低于日用品：『你的洗衣机受到的安全规则都比 AI 多，每盒牛奶都要接受安全检查。』他呼吁建立全球性安全规则，包括 AI 代理入侵系统后强制通知受害者、发布前由第三方评估、自主系统加装『安全刹车』，该立场与美国政府当前的宽松监管路线相悖。",
+     "recommendation": "微软总裁 Brad Smith：洗衣机受的安全监管都比 AI 多——呼吁全球规则、第三方评估与安全刹车",
+     "analysis": "头部 AI 公司高管主动要监管，通常发生在风险事件密集期——此前 OpenAI 代理曾自主入侵测试环境并引发『史无前例网络事件』通报。对游戏从业者，AI Agent 接入产品后的责任边界与事故通报机制，很快会从合规问题变成产品需求。"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "full_text": "For the second time this year, Steam has set a major new concurrent user record\n\nhttps://t.co/VomcyE7IaD https://t.co/m1B4WspJmp",
+     "author": "Eurogamer",
+     "date": "2026-10-12",
+     "likes": 42,
+     "views": 5520,
+     "link": "https://x.com/eurogamer/status/2109594171610939843",
+     "idx": "游戏行业 01",
+     "source": "X · 行业媒体",
+     "tags": [
+      "Steam",
+      "PCU纪录",
+      "Aion 2",
+      "Valve"
+     ],
+     "title": "Steam 同时在线破 4350 万创历史新高，Aion 2 全球版首周冲上 39.8 万 PCU",
+     "en_title": "For the second time this year, Steam has set a major new concurrent user record",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUbHdRHasAEQI_9.jpg"
+     },
+     "summary": "Steam 周日创下 23 年历史新高：同时在线 43,505,724 人，游戏内在线也首次突破 1400 万——今年第二次破纪录（1 月曾破 4200 万）。最大推手是免费 MMO Aion 2 全球版（10 月 5 日上线），首周峰值 397,905；Deadlock 大版本更新后冲到 262,145 峰值。第三方估计 Valve 今年前 9 个月 Steam 收入已达 150 亿美元。Polygon、Niche Gamer 同日报道。",
+     "recommendation": "Steam 同时在线破 4350 万创历史新高——Aion 2 全球版首周 39.8 万 PCU 成最大推手",
+     "analysis": "纪录出现在秋促结束后而非促销期间，说明新游供给而非折扣周期才是当前增长主因。Aion 2 以 F2P 全球版在 Steam 拿到近 40 万 PCU，验证了老 IP MMO 转 PC 平台的空间；对发行商，Steam 桌面端的注意力红利仍在扩大。",
+     "featured": true
+    },
+    {
+     "full_text": "Report: RTX 5090 GPUs discontinued by Nvidia, as GB202 is reserved for AI workstation cards https://t.co/uWxh79MqbJ",
+     "author": "Digital Foundry",
+     "date": "2026-10-12",
+     "likes": 818,
+     "views": 125499,
+     "link": "https://x.com/digitalfoundry/status/2109626408016167351",
+     "idx": "游戏行业 02",
+     "source": "X · 硬件媒体",
+     "tags": [
+      "NVIDIA",
+      "RTX 5090",
+      "AI算力",
+      "硬件供应链"
+     ],
+     "title": "NVIDIA 传停产 RTX 5090：GB202 产能全部让位 AI 工作站显卡",
+     "en_title": "Report: RTX 5090 GPUs discontinued by Nvidia, as GB202 is reserved for AI workstation cards",
+     "media": null,
+     "summary": "Digital Foundry 援引供应链消息称 NVIDIA 已停产旗舰游戏卡 RTX 5090，GB202 大核心产能将全部留给面向 AI 工作站的专业卡；Rock Paper Shotgun 同日跟进称消息源自爆料人。若属实，将与显存涨价形成叠加——Eurogamer 此前已报道 PS5/Xbox 因内存被 AI 数据中心抢购而在多个市场涨价。",
+     "recommendation": "NVIDIA 传停产 RTX 5090——GB202 产能全部让位 AI 工作站卡，算力挤压烧到旗舰游戏卡",
+     "analysis": "当同一颗核心卖给数据中心更赚钱，消费级旗舰的优先级自然下滑，这是算力挤压游戏硬件的标志性事件。对游戏行业，高端硬件通胀会加速云串流与中端配置优化两条产品路线；『AI 吃掉供应链』从内存涨到整机，成本压力将逐级传导。",
+     "featured": true
+    },
+    {
+     "full_text": "Ace Combat 8 has become the fastest-selling game in the aerial combat series, soaring to 1 million sales since its release roughly a week ago. https://t.co/cXvaHau2el https://t.co/RIUYAWZLHn",
+     "author": "Eurogamer",
+     "date": "2026-10-12",
+     "likes": 40,
+     "views": 5044,
+     "link": "https://x.com/eurogamer/status/2109607547388809244",
+     "idx": "游戏行业 03",
+     "source": "X · 行业媒体",
+     "tags": [
+      "皇牌空战",
+      "销量",
+      "万代南梦宫",
+      "飞行射击"
+     ],
+     "title": "皇牌空战 8 一周销量破 100 万成系列最快，MC 均分 86-88 系列第二高",
+     "en_title": "Ace Combat 8 becomes fastest-selling game in the series, and very nearly the highest rated",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUbU4l3WoAATJwi.jpg"
+     },
+     "summary": "万代南梦宫宣布《皇牌空战 8：希孚之翼》（10 月 2 日发售）一周销量突破 100 万，创系列最快纪录；MC 均分 86-88，仅次于《皇牌空战 4》的 89。本作首次加入服务型多人模式（PvE 合作、PvPvE 与社交机库），但 PC 版预购捆绑的《贝卡战争》因非独立运行引发争议，官方已致歉。有数 GI 榜单显示其当日 PCU 峰值 24,797，Steam 好评率 74%。",
+     "recommendation": "皇牌空战 8 一周破百万成系列最快——MC 86-88 系列第二高分，Steam 好评率 74% 存落差",
+     "analysis": "时隔 7 年的正统续作用『单机剧情+服务型多人』组合首周百万，说明飞行射击这一小众品类仍有稳定大盘。但 74% 的 Steam 好评率与 86+ 的媒体分存在落差，PC 端捆绑旧作的运营决策是主要扣分点——系列重启的口碑管理比冲销量更难。",
+     "featured": true,
+     "game_ref": "Ace Combat 8"
+    },
+    {
+     "full_text": "Arc Raiders player-numbers rebound with the launch of Frozen Trail and the game's 2.0 release, but they might be deceptively high\n\nhttps://t.co/D3aHc7qMyA https://t.co/xM1ki3cuLu",
+     "author": "Eurogamer",
+     "date": "2026-10-12",
+     "likes": 7,
+     "views": 3928,
+     "link": "https://x.com/eurogamer/status/2109650366141026390",
+     "idx": "游戏行业 04",
+     "source": "X · 行业媒体",
+     "tags": [
+      "Arc Raiders",
+      "Embark",
+      "PCU",
+      "运营更新"
+     ],
+     "title": "Arc Raiders 借 Frozen Trail 与 2.0 版本人数回升至 15 万 PCU，制作人称 PvE/PvP 分拆『有可能』",
+     "en_title": "Arc Raiders player-numbers rebound with the launch of Frozen Trail and the game's 2.0 release, but they might be deceptively high",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUb7VAhbcAAJR4j.jpg"
+     },
+     "summary": "Eurogamer 报道，《Arc Raiders》随 Frozen Trail 活动与 2.0 版本上线玩家数回升，今日 PCU 峰值 152,547（历史峰值 481,966），但报道同时提示数字『可能虚高』。同期执行制作人 Aleksander Grøndal 透露下周开启限量 PvE 测试，未来不排除把 PvE 与 PvP 拆分成独立模式——『更和平的 Arc Raiders 是可能的』。",
+     "recommendation": "Arc Raiders 2.0 + Frozen Trail 拉动人数回升至 15 万 PCU——制作组称 PvE/PvP 分拆『有可能』",
+     "analysis": "提取射击的玩家回流依赖活动节奏，PvE 拆分传闻说明 Embark 在试探『逃离 PvP 压力』玩家群体的需求。对运营团队，内容更新与模式分层是提取类游戏延长生命周期的标准双引擎；『数据虚高』的提醒也值得注意——回流质量比峰值数字更重要。",
+     "game_ref": "ARC Raiders"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "full_text": "Stardew Valley creator's new game, Haunted Chocolatier, is \"more of an action RPG\" than farming sim\n\n\"It's for the people that go into the mines.\"\n\nhttps://t.co/NpvE275avb https://t.co/L2FXCUzaj8",
+     "author": "Eurogamer",
+     "date": "2026-10-12",
+     "likes": 552,
+     "views": 27109,
+     "link": "https://x.com/eurogamer/status/2109573030758216183",
+     "idx": "新游推文 01",
+     "source": "X · 行业媒体",
+     "tags": [
+      "ConcernedApe",
+      "独立开发",
+      "动作RPG",
+      "星露谷作者"
+     ],
+     "title": "星露谷作者新作《Haunted Chocolatier》定调：更偏动作 RPG，『做给下矿的人』",
+     "en_title": "Stardew Valley creator's new game, Haunted Chocolatier, is 'more of an action RPG' than farming sim",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUa1fCsW0AEFmvO.jpg"
+     },
+     "summary": "Eric Barone 在 GQ 长访中披露新作细节：《Haunted Chocolatier》仍是『城镇游戏』，但核心从种田转向冒险——『更偏动作 RPG，重点是冒险、找装备、变强，有怪物和 Boss 战』。他说这游戏『是做给星露谷里那些会下矿的人的』，世界比星露谷更大、体验更形而上，发售日仍未定（『做完才算完』）。GameSpot、Polygon、Eurogamer 多家报道。",
+     "recommendation": "星露谷作者新作定调：Haunted Chocolatier 是动作 RPG——『做给下矿的人』，无发售日",
+     "featured": true,
+     "game_ref": "Haunted Chocolatier",
+     "enrichment": {
+      "game_name": "Haunted Chocolatier",
+      "genre": "动作RPG / 模拟经营 / 像素",
+      "developer": "ConcernedApe（Eric Barone，个人开发）",
+      "platforms": [
+       "Steam",
+       "Switch",
+       "PS4/PS5",
+       "Xbox"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "暂无评价（未发售）",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": "zmvpXBl3xpk",
+      "description": "【核心玩法】ConcernedApe（Eric Barone）在 GQ 访谈中确认：《Haunted Chocolatier》仍是『城镇游戏』，但主轴从种田经营转向冒险——探索、收集装备、变强，包含怪物遭遇与 Boss 战。作者原话：『它更偏动作 RPG』『是做给星露谷里那些会下矿的人的』。像素美术全面升级，巧克力工坊经营与幽灵共存构成日常循环。\n\n【与世界的关系】相比星露谷的田园现实感，新作基调更『形而上』：生者与幽灵世界并存，巧克力店是连接两个世界的节点；世界规模确认大于星露谷。\n\n【开发状态】Barone 一个人写代码、画像素、作曲，延续星露谷的全包开发模式；明确表示『没准备好就不会让人玩』，不给发售日期——『做完才算完』。\n\n【优势】星露谷数千万销量级的 IP 信用，全资产自制保证审美一致性；动作 RPG 方向打开更大受众盘。\n\n【不足】单人开发周期不可控，上次实质曝光距今已久；发售日完全未定。\n\n【综合】独立游戏长期主义的教科书案例：不融资、不扩编、不承诺日期，用 IP 信用支撑无限耐心；方向从经营转向战斗，是给『下矿党』的定制续作。",
+      "why_notable": "单人开发的星露谷作者确认新作转向动作 RPG——『做给下矿的人』，发售日仍未定",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「动作RPG」套「幽灵巧克力工坊」新瓶，ConcernedApe 单人开发，发售日未定"
+     }
+    },
+    {
+     "full_text": "UBERMOSH:OMEGA has reached 174,886 concurrent players on Steam for the first time (83.79% rating) https://t.co/XUlnkfa9LI",
+     "author": "SteamDB",
+     "date": "2026-10-12",
+     "likes": 21,
+     "views": 8113,
+     "link": "https://x.com/SteamDB/status/2109447224165802279",
+     "idx": "新游推文 02",
+     "source": "X · 数据信源",
+     "tags": [
+      "SteamDB",
+      "PCU异动",
+      "独立游戏",
+      "老游复活"
+     ],
+     "title": "2019 年老游 UBERMOSH:OMEGA 首次冲上 17.4 万同时在线，异动原因待查",
+     "en_title": "UBERMOSH:OMEGA has reached 174,886 concurrent players on Steam for the first time (83.79% rating)",
+     "media": null,
+     "summary": "SteamDB 官推监测到，巴西独立开发者 Walter Machado 的高速砍杀游戏《UBERMOSH:OMEGA》（2019 年 11 月发售）首次突破 174,886 同时在线，好评率 83.79%。有数 GI 榜单显示其今日 PCU 峰值仍达 170,593——一款六年老游冲进 Steam 热玩榜前十量级，当前售价 ¥6.00（无折扣标记）。公开渠道暂未发现明确触发事件，促销、主播效应或社群事件有待排查。",
+     "recommendation": "2019 年老游 UBERMOSH:OMEGA 首次冲上 17.4 万同时在线——六年老游百倍级异动，原因待查",
+     "analysis": "老游单日冲 17 万 PCU 且无明显新闻触发，最可能是折扣与流量事件的组合，也体现了 SteamDB 类数据推文对『异动检测』的入口价值。对发行商，老库存游戏的复活按钮依然存在，关键是有没有监控与承接页。",
+     "featured": true,
+     "game_ref": "UBERMOSH:OMEGA",
+     "enrichment": {
+      "game_name": "UBERMOSH:OMEGA",
+      "genre": "高速动作 / 街机砍杀 / 像素",
+      "developer": "Walter Machado（独立开发）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "¥ 6.00",
+      "release_date": "已发售 · 2019年11月8日",
+      "steam_rating": "83.79% 好评（SteamDB 口径，627 条评价）",
+      "steam_url": "https://store.steampowered.com/app/1181000/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1181000/header.jpg?t=1683734260",
+      "youtube_video": null,
+      "description": "【核心玩法】巴西独立开发者 Walter Machado 的 UBERMOSH 系列作品，2019 年 11 月发售的高速街机砍杀：无双式近战、弹反与刀光特效为核心，单局短平快，主打『一命冲锋』的爽快循环，像素+重金属视听风格自成一派。\n\n【系列定位】UBERMOSH 是 Steam 上的老牌低成本爽游系列，多部作品常年保持 80% 以上好评，以每作几块钱的定价策略积累长尾口碑，玩家普遍以『小众神作』称呼。\n\n【异动背景】2026 年 10 月 12 日首次冲上 174,886 同时在线（SteamDB 官推口径，好评率 83.79%），今日（10 月 13 日）峰值仍有 170,593，位列 Steam 热玩榜前十量级；当前售价 ¥6.00（Steam 实价，无折扣标记）。公开渠道暂未发现明确触发事件，主播效应、社群事件或站外流量导入等可能性有待排查。\n\n【优势】上手 30 秒即可体验核心爽点，低配置可跑；\n【不足】内容体量小，玩法深度有限，异动后的留存是关键问题。\n\n【综合】七年老游的百倍级 PCU 异动是小体量游戏『复活按钮』的极端样本：库存、低价与流量事件的乘积效应，值得所有长尾运营团队纳入监控样本。",
+      "why_notable": "2019 年老游首次冲上 17.4 万同时在线——低价库存游戏异动的极端样本，原因待查",
+      "pcu": "174,886（2026年10月12日，首次达成）",
+      "current_players": "今日峰值 170,593",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「高速砍杀」套「像素街机」新瓶，Walter Machado 独立开发，Steam 售价 ¥6.00"
+     }
+    },
+    {
+     "full_text": "Ghostrunner studio One More Level returns with a Napoleonic alternative history Soulslike that fuses fluid sword- and gunplay with exhilarating parkour, and it's a delight.\n\nOur Valor Mortis review:\n\nhttps://t.co/fZMDh0xMIA https://t.co/BT8JKctXSn",
+     "author": "Eurogamer",
+     "date": "2026-10-12",
+     "likes": 86,
+     "views": 6709,
+     "link": "https://x.com/eurogamer/status/2109633182920515652",
+     "idx": "新游推文 03",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "类魂",
+      "第一人称",
+      "One More Level",
+      "新游发售"
+     ],
+     "title": "Ghostrunner 工作室新作《Valor Mortis》媒体解禁：拿破仑朋克类魂，口碑惊艳但臃肿并存",
+     "en_title": "Valor Mortis review - this Napoleonic first-person swordfighter is one of the freshest Soulslikes in years",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUbsKqoWgAAcdFu.jpg"
+     },
+     "summary": "One More Level（Ghostrunner 系列）新作《Valor Mortis》媒体评测解禁：拿破仑战争+神秘学怪物的第一人称类魂，剑枪并用加跑酷。RPS 称『近年最新鲜的类魂之一』，Destructoid 评价『2026 年最佳游戏之一』，Eurogamer 认为流畅带感；GameSpot 保留意见——『骨架很好，但多余的机制拖累了核心战斗』。Eurogamer、RPS、Destructoid、GameSpot、TheGamer、Polygon 多家报道。",
+     "recommendation": "Ghostrunner 工作室拿破仑类魂《Valor Mortis》解禁——『近年最新鲜的类魂』与『系统臃肿』评价并存",
+     "featured": true,
+     "game_ref": "Valor Mortis",
+     "enrichment": {
+      "game_name": "Valor Mortis",
+      "genre": "第一人称类魂 / 动作RPG",
+      "developer": "One More Level",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布（商店页今日解锁）",
+      "release_date": "2026年10月13日",
+      "steam_rating": "暂无评价（商店页尚未解锁）",
+      "steam_url": "https://store.steampowered.com/app/2828710/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2828710/db9b0a13bdadac60a7b744514d60f41674d95787/header_schinese.jpg?t=1791829283",
+      "youtube_video": null,
+      "description": "【核心玩法】One More Level（Ghostrunner 系列）开发的第一人称类魂：拿破仑战争架空世界+神秘学怪物体裁，近战剑术、燧发枪射击与跑酷位移三线融合，保留精力管理与死亡惩罚的类魂骨架，用第一人称强化近身压迫感。\n\n【战斗韵律】评测普遍提到纵向立体的战场设计与『跑酷接近、突袭输出、撤离重整』的节奏；Ghostrunner 的一击必杀基因转化为高伤害双向秒杀的张力。\n\n【口碑分化】RPS 称其『近年最新鲜的类魂之一』；Destructoid 给出『2026 年最佳游戏之一』的评价；Eurogamer 认为流畅带感；GameSpot 保留意见——『骨架很好，但多余的机制拖累了核心战斗』。\n\n【对标定位】耻辱式的位移能力+类魂成长曲线+拿破仑恐怖皮的组合，在第一人称类魂中几乎无同型竞品。\n\n【优势】题材差异化极强，工作室有 Ghostrunner 三部曲的动作打磨功底。\n\n【不足】鉴定、附魔、技能树并行导致系统密度过高，首周性能与平衡表现待观察。\n\n【发售状态】Steam 商店页显示 10 月 13 日解锁，国区尚未开放购买，首发价格待公布。\n\n【综合】品类融合胆量大、完成度中上，适合类魂与 FPS 复合受众；媒体分歧点（系统堆料）值得发行商在后续补丁中重点收敛。",
+      "why_notable": "Ghostrunner 工作室用第一人称解构类魂——拿破仑朋克题材，媒体口碑『最新鲜』与『太臃肿』两极",
+      "pcu": "首发周",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「第一人称类魂」套「拿破仑朋克」新瓶，One More Level 开发"
+     }
+    },
+    {
+     "full_text": "【最大3人マルチ】ダンジョン内の食材を“料理”しながら進むサバイバルRPG『Deep Dish Dungeon』が本日10月13日発売\nhttps://t.co/wylbkB0QEl\n\n集めた資源で野営地を充実させ、新しい道具や食事を作り、さらにダンジョンの奥深くを目指す。行く手を阻むパズルや敵も協力して乗り越えていこう https://t.co/M2mgkcr9I0",
+     "author": "電ファミニコゲーマー",
+     "date": "2026-10-12",
+     "likes": 785,
+     "views": 81640,
+     "link": "https://x.com/denfaminicogame/status/2109660461532958746",
+     "idx": "新游推文 04",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "生存RPG",
+      "多人合作",
+      "日本独立",
+      "今日发售"
+     ],
+     "title": "《Deep Dish Dungeon》今日发售：边下地牢边做菜的三人合作生存 RPG",
+     "en_title": "【最大3人マルチ】ダンジョン内の食材を“料理”しながら進むサバイバルRPG『Deep Dish Dungeon』が本日10月13日発売",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2109660423603818496/pu/img/9agpJ8bR1gnS0cl9.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2109660461532958746/video/1"
+     },
+     "summary": "電ファミニコゲーマー报道，最多 3 人合作的生存 RPG《Deep Dish Dungeon》10 月 13 日发售：在地牢里收集食材并料理推进，用资源建设营地、制作工具与料理，向更深楼层探索，途中需协作解开谜题、击败敌人。",
+     "recommendation": "Deep Dish Dungeon 今日发售：3 人合作边下地牢边做菜——营地建设+料理解锁推进",
+     "game_ref": "Deep Dish Dungeon",
+     "enrichment": {
+      "game_name": "Deep Dish Dungeon",
+      "genre": "生存RPG / 多人合作 / 料理",
+      "developer": "Behold Studios",
+      "platforms": [
+       "Steam",
+       "Mac"
+      ],
+      "price": "未公布（商店页今日解锁）",
+      "release_date": "2026年10月13日",
+      "steam_rating": "暂无评价（商店页尚未解锁）",
+      "steam_url": "https://store.steampowered.com/app/2871520/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2871520/ace3e079398d35a36108c18ec74bf2d81b6c994b/header_alt_assets_0.jpg?t=1791548936",
+      "youtube_video": null,
+      "description": "【核心玩法】日本独立团队的最多 3 人合作地牢生存 RPG：进入地牢收集食材并『边料理边推进』，用收集的资源扩建野营地、解锁新工具与菜谱，以此为跳板向更深楼层推进，谜题与强敌需要队伍分工协作。\n\n【结构设计】『营地建设』承担 roguelite 外循环：地牢内获取的一切反哺营地成长，营地能力又决定下次能下多深——典型的『下潜、回城、再下潜』引力循环。\n\n【题材定位】『地牢+料理』的组合把生存压力转译成『今晚吃什么』的轻松命题，降低合作门槛，瞄准喜欢轻松协作的中小队伍。\n\n【优势】单核心循环清晰，3 人小队规模适合固定搭子；发售当日即有日媒专题报道背书。\n\n【不足】商店页尚未开放购买，暂无媒体评分，内容深度与长线重复可玩性待验证。\n\n【综合】小体量合作生存的标准答案模板：一个易传播的题材钩子+一个可长线成长的外循环，Steam 商店页显示 10 月 13 日解锁，首发价格与评价待商店页开放后更新。",
+      "why_notable": "『边下地牢边做菜』的 3 人合作生存 RPG 今日发售——题材钩子直白易传播",
+      "pcu": "发售首日",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「地牢生存」套「料理」新瓶，日本独立开发，2026年10月13日发售"
+     }
+    },
+    {
+     "full_text": "3D prison escape follow-up The Escapists 3 was announced: https://t.co/WEo0QlR9zc https://t.co/bdXwfAn2OP",
+     "author": "Niche Gamer",
+     "date": "2026-10-11",
+     "likes": 16,
+     "views": 5154,
+     "link": "https://x.com/nichegamer/status/2109285144020303953",
+     "idx": "新游参考 01",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "监狱逃脱",
+      "系列续作",
+      "公布"
+     ],
+     "title": "《逃脱者 3》正式公布：监狱逃脱模拟系列回归，登陆 PC 与主机",
+     "en_title": "3D prison escape follow-up The Escapists 3 was announced",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2109285114949586945/pu/img/QoCmLulzayxs7xPz.jpg",
+      "video_url": "https://x.com/nichegamer/status/2109285144020303953/video/1"
+     },
+     "summary": "Niche Gamer 报道，监狱逃脱模拟系列续作《The Escapists 3》正式公布，登陆 PC 与主机平台，官方随公告放出首支影像。",
+     "recommendation": "逃脱者 3 正式公布——监狱逃脱模拟系列时隔多年回归",
+     "unselected": true
+    },
+    {
+     "full_text": "流血のシミュレーションゲーム。\n\n血しぶき、血溜まりなど血のゲーム的表現を追求するために作られた研究用シミュレーター。無限湧きのゾンビモード搭載。\n\n『Project C.A.R.L』 https://t.co/fsJCRxYKRe",
+     "author": "ごだか",
+     "date": "2026-10-12",
+     "likes": 11055,
+     "views": 566250,
+     "link": "https://x.com/G_Godaka/status/2109516926846398633",
+     "idx": "新游参考 02",
+     "source": "X · 独立开发",
+     "tags": [
+      "物理模拟",
+      "技术演示",
+      "日本独立"
+     ],
+     "title": "《Project C.A.R.L》：为研究血的表现而生的流血模拟器，附无限刷怪僵尸模式",
+     "en_title": "流血のシミュレーションゲーム。血しぶき、血溜まりなど血のゲーム的表現を追求するために作られた研究用シミュレーター。（原文）",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2109513160785022976/pu/img/5opS_ANdRSSJ14Bo.jpg",
+      "video_url": "https://x.com/G_Godaka/status/2109516926846398633/video/1"
+     },
+     "summary": "日本开发者ごだか发布《Project C.A.R.L》，一款为研究『血的游戏化表现』而生的流血模拟器：追求血溅、血泊等细节表现，附带无限刷怪的僵尸模式，获 1.1 万赞、56 万浏览。",
+     "recommendation": "Project C.A.R.L：为研究血的表现而生的模拟器——血溅与血泊表现力拉满",
+     "unselected": true
+    },
+    {
+     "full_text": "ホラーゲーム『ハシゴ』を作りました\nhttps://t.co/U00U9IscpO\n#ハシゴ https://t.co/BqNddpgQxU",
+     "author": "やまもとしょう 『きさらぎ駅からの脱出』開催中",
+     "date": "2026-10-12",
+     "likes": 10380,
+     "views": 1868148,
+     "link": "https://x.com/moya_vc/status/2109585874459779582",
+     "idx": "新游参考 03",
+     "source": "X · 独立开发",
+     "tags": [
+      "恐怖游戏",
+      "免费游戏",
+      "日本独立"
+     ],
+     "title": "日本开发者发布恐怖游戏《ハシゴ》：以攀爬为核心的短篇恐怖，推文 186 万浏览",
+     "en_title": "ホラーゲーム『ハシゴ』を作りました（原文）",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2109584927041953793/img/vBhwg003dAMz-IMq.jpg",
+      "video_url": "https://x.com/moya_vc/status/2109585874459779582/video/1"
+     },
+     "summary": "日本开发者やまもとしょう发布自制恐怖游戏《ハシゴ》（梯子），以攀爬为核心机制的短篇免费恐怖游戏，推文获 1 万赞、186 万浏览。",
+     "recommendation": "恐怖游戏《ハシゴ》：以攀爬为核心的免费短篇恐怖——1 万赞 186 万浏览",
+     "unselected": true
+    },
+    {
+     "full_text": "最大8人マルチ対応お絵描きタワーディフェンス『まるかいてドカン！』発表。丸は砲台、線は壁、“布団”を描けば敵が寝る\nhttps://t.co/iL0vlWQKq7 https://t.co/h2R7UZDw6U",
+     "author": "AUTOMATON（オートマトン）",
+     "date": "2026-10-12",
+     "likes": 382,
+     "views": 123481,
+     "link": "https://x.com/AUTOMATONJapan/status/2109560853305647415",
+     "idx": "新游参考 04",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "塔防",
+      "手绘交互",
+      "最多8人联机"
+     ],
+     "title": "《まるかいてドカン！》发表：画圆当炮台、画线做墙的最多 8 人手绘塔防",
+     "en_title": "最大8人マルチ対応お絵描きタワーディフェンス『まるかいてドカン！』発表（原文）",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2109560750016720896/img/yrQ_YK_4uQfoSyJK.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2109560853305647415/video/1"
+     },
+     "summary": "AUTOMATON 报道，最多 8 人联机的手绘塔防《まるかいてドカン！》发表：画圆即炮台、画线即墙壁，画『布团』就能让敌人入睡，把绘图指令做成防御工事的塔防变体。",
+     "recommendation": "まるかいてドカン！：画圆当炮台画线做墙——8 人联机的手绘塔防",
+     "unselected": true
+    },
+    {
+     "full_text": "Hey everyone! We've been working on Leafborn for a long time, and it's finally time to show you what we've been up to! It's our first game, made by a team of 3-4 people.\n\nThe whole thing started with a simple question: what would it feel like to control a character made of thousands of leaves? And somehow, that idea turned into an actual game. It's pretty crazy to see how far we've come, I still can't believe we actually made this.\n\nWe're joining Steam Next Fest on October 19, so you'll be able to try the demo yourself! We'd love to hear what you think, and don't forget to wishlist Leafborn if you like what you see!",
+     "author": "Leafborn",
+     "date": "2026-10-11",
+     "likes": 276,
+     "views": 20276,
+     "link": "https://x.com/LeafbornGame/status/2109330745206399228",
+     "idx": "新游参考 05",
+     "source": "X · 独立开发",
+     "tags": [
+      "Steam新品节",
+      "首曝",
+      "小团队"
+     ],
+     "title": "《Leafborn》首曝：3-4 人小团队打造『操控千叶之人』，10 月 19 日参加 Steam 新品节",
+     "en_title": "We've been working on Leafborn for a long time... It's our first game, made by a team of 3-4 people.（原文节选）",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2109329770093637633/img/nLxRFAG4tOSCcT9Q.jpg",
+      "video_url": "https://x.com/LeafbornGame/status/2109330745206399228/video/1"
+     },
+     "summary": "独立团队 Leafborn（3-4 人）公布首款作品《Leafborn》：玩家操控由数千片叶子构成的角色，10 月 19 日参加 Steam Next Fest 提供试玩。",
+     "recommendation": "Leafborn 首曝：操控数千片叶子构成的角色——10 月 19 日 Steam 新品节试玩",
+     "unselected": true
+    },
+    {
+     "full_text": "[PREVIEW] ANOMALITH is an enthralling J-horror third-person shooter!\n\nhttps://t.co/45qbfg2qkk\n\nOur time with ANOMALITH left us impressed with its exploration, limited ammunition, its combat, and Reona's supernatural powers~ https://t.co/gAoW83munr",
+     "author": "Niche Gamer",
+     "date": "2026-10-12",
+     "likes": 9,
+     "views": 563,
+     "link": "https://x.com/nichegamer/status/2109693008312430879",
+     "idx": "新游参考 06",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "日式恐怖",
+      "第三人称射击",
+      "前瞻"
+     ],
+     "title": "《ANOMALITH》前瞻：日式恐怖第三人称射击，探索+限弹+超自然能力",
+     "en_title": "[PREVIEW] ANOMALITH is an enthralling J-horror third-person shooter!（原文）",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2109692963320201216/pu/img/tpC5xCMJB-ymtcvu.jpg",
+      "video_url": "https://x.com/nichegamer/status/2109693008312430879/video/1"
+     },
+     "summary": "Niche Gamer 发布前瞻：日式恐怖 TPS《ANOMALITH》在探索设计、弹药限制、战斗手感与主角 Reona 的超自然能力上表现亮眼。",
+     "recommendation": "ANOMALITH 前瞻：日式恐怖 TPS——限弹探索+超自然能力",
+     "unselected": true
+    },
+    {
+     "full_text": "Action-adventure game At Fate’s End got delayed to 2027: https://t.co/NVLXxGOsnb https://t.co/jsbenSzEXA",
+     "author": "Niche Gamer",
+     "date": "2026-10-12",
+     "likes": 4,
+     "views": 1188,
+     "link": "https://x.com/nichegamer/status/2109655727329399092",
+     "idx": "新游参考 07",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "跳票",
+      "动作冒险",
+      "2027"
+     ],
+     "title": "动作冒险《At Fate's End》跳票至 2027 年",
+     "en_title": "Action-adventure game At Fate's End got delayed to 2027",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUcAtFhWoAATApf.jpg"
+     },
+     "summary": "Niche Gamer 报道，动作冒险游戏《At Fate's End》发售日延期至 2027 年。",
+     "recommendation": "At Fate's End 跳票至 2027——动作冒险新作再等一年",
+     "unselected": true
+    },
+    {
+     "full_text": "Last year, Hytale was saved from Riot Games. Now, less than a year later, it received its first major content update. Themed around goblins, the patch includes a new biome, a bunch of new tools, and its first handcrafted dungeon. \n\nRead more here: https://t.co/aQHmp4PVNg https://t.co/HfmtWzLNMz",
+     "author": "Destructoid",
+     "date": "2026-10-12",
+     "likes": 4,
+     "views": 893,
+     "link": "https://x.com/destructoid/status/2109679223728144730",
+     "idx": "新游参考 08",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "Hytale",
+      "内容更新",
+      "生存建造"
+     ],
+     "title": "《Hytale》脱离 Riot 后首个大型更新上线：哥布林主题+首个手工地牢",
+     "en_title": "Last year, Hytale was saved from Riot Games. Now, less than a year later, it received its first major content update.（原文节选）",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUcVvEwXkAAqSlg.jpg"
+     },
+     "summary": "Destructoid 报道，去年从 Riot 手中获救的《Hytale》发布首个大型内容更新：哥布林主题，包含新生物群系、一批新工具与首个手工设计地牢。",
+     "recommendation": "Hytale 首个大型更新上线：哥布林主题+首个手工地牢",
+     "unselected": true
+    },
+    {
+     "full_text": "Naruto Mobile is finally getting a worldwide release: https://t.co/riGSmOtiiE https://t.co/fe68gHuI3X",
+     "author": "Niche Gamer",
+     "date": "2026-10-12",
+     "likes": 10,
+     "views": 1135,
+     "link": "https://x.com/nichegamer/status/2109655537197383766",
+     "idx": "新游参考 09",
+     "source": "X · 游戏媒体",
+     "tags": [
+      "火影忍者",
+      "手游出海",
+      "格斗"
+     ],
+     "title": "《火影忍者》手游终于迎来全球发行",
+     "en_title": "Naruto Mobile is finally getting a worldwide release",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUcAh_yW0AApVPz.jpg"
+     },
+     "summary": "Niche Gamer 报道，运营多年的《火影忍者》手游（Naruto Mobile）最终宣布全球发行，国民级 IP 格式手游正式出海。",
+     "recommendation": "火影忍者手游宣布全球发行——国民级 IP 格斗手游正式出海",
+     "unselected": true
+    },
+    {
+     "full_text": "は？この緑の点全部ゾンビ？？？\n\n現実の世界地図データを取り込んで、一度に最大「50万体」のゾンビとガチ防衛戦をするシミュレーションゲーム。最初はスナイパーやバリケードで市民を避難させるんだけど、一瞬で画面がゾンビの緑色のツブツブで埋め尽くされて、本当にただただ絶望する。\n\n『Zombies Aren’t Real』",
+     "author": "スチまと / STEAMおすすめゲーム新作など紹介🎮 Steam",
+     "date": "2026-10-12",
+     "likes": 976,
+     "views": 91507,
+     "link": "https://x.com/stmatomato/status/2109478663427395732",
+     "idx": "新游参考 10",
+     "source": "X · 社区热点",
+     "tags": [
+      "僵尸防御",
+      "现实地图",
+      "模拟"
+     ],
+     "title": "《Zombies Aren't Real》：导入现实世界地图迎战 50 万僵尸的绝望防御模拟",
+     "en_title": "現実の世界地図データを取り込み、一度に最大「50万体」のゾンビとガチ防衛戦をするシミュレーションゲーム。（原文节选）",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2109445083036827648/img/gTQ5DplZvahdXwA5.jpg",
+      "video_url": "https://x.com/stmatomato/status/2109478663427395732/video/1"
+     },
+     "summary": "日本博主推荐的《Zombies Aren't Real》：导入现实世界地图数据，一次性迎战最多 50 万只僵尸的防御模拟游戏，画面会被密密麻麻的僵尸绿点淹没，『只剩下绝望』。",
+     "recommendation": "Zombies Aren't Real：现实地图迎战 50 万僵尸——绿点淹没屏幕的绝望防御战",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "full_text": "Been working on a custom tool for pixel art normal map and luminance mask generation/editing.\n\nThinking of releasing it for free under an open-source license.\n\nWould any gamedevs be interested in this? https://t.co/zKw9INW42U",
+     "author": "Moonfell RPG",
+     "date": "2026-10-12",
+     "likes": 8233,
+     "views": 140746,
+     "link": "https://x.com/moonfell_rpg/status/2109451515157233916",
+     "idx": "开发工具 01",
+     "source": "X · 独立开发",
+     "tags": [
+      "像素美术",
+      "免费工具",
+      "2D光照",
+      "开源意向"
+     ],
+     "title": "像素游戏开发者自制法线贴图/亮度遮罩编辑工具，考虑开源免费发布——8233 赞",
+     "en_title": "Been working on a custom tool for pixel art normal map and luminance mask generation/editing. Thinking of releasing it for free under an open-source license.（原文）",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2109451301214105600/img/Fw10VUGWZtMNH9ej.jpg",
+      "video_url": "https://x.com/moonfell_rpg/status/2109451515157233916/video/1"
+     },
+     "summary": "《Moonfell RPG》开发者展示自制的像素美术法线贴图与亮度遮罩生成/编辑工具，可直接在像素画上生成供 2D 光照系统使用的法线与明度信息，正在考虑以开源许可免费发布，向独立开发者征集意向，推文获 8233 赞、14 万浏览。",
+     "recommendation": "像素法线贴图+亮度遮罩自制工具考虑开源免费——8000+ 赞验证 2D 光照工具缺口",
+     "analysis": "2D 光照（法线+亮度遮罩）是像素游戏质感的分水岭，但主流工具链一直缺位，这个工具若开源等于补上像素管线的关键空格。社区 8000+ 赞说明需求真实存在。",
+     "featured": true
+    },
+    {
+     "full_text": "モーションリファレンスのサイトを大改修して動き全般を見直して作り直しました。\nhttps://t.co/jUYejoGTxH https://t.co/vjjgaB0PQf",
+     "author": "たかゆ | UI演出デザイナー",
+     "date": "2026-10-11",
+     "likes": 8604,
+     "views": 571428,
+     "link": "https://x.com/takayuP4/status/2109196672740077937",
+     "idx": "开发工具 02",
+     "source": "X · 技术开发者",
+     "tags": [
+      "动画参考",
+      "动作设计",
+      "免费资源",
+      "游戏动监"
+     ],
+     "title": "UI 动效设计师大改修动作参考网站：按运动类型重整全站，57 万浏览",
+     "en_title": "モーションリファレンスのサイトを大改修して動き全般を見直して作り直しました。（原文）",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2109196642310328320/img/Un0AjDDdIsBKFVyA.jpg",
+      "video_url": "https://x.com/takayuP4/status/2109196672740077937/video/1"
+     },
+     "summary": "日本 UI 演出设计师たかゆ大幅改版自己的动作参考网站，按运动类型重新梳理分类并重制内容，供动画与游戏动监日常取用，推文获 8604 赞、57 万浏览。",
+     "recommendation": "动作参考网站大改修：按运动类型重整全站——57 万浏览的动画人日用基建",
+     "analysis": "动作参考库是动画与游戏动监的日用基建，分类法比素材本身更有价值。中文社区长期缺同类整理，翻译或本地化这类资源站是低成本的内容差异点。"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**Steam 双纪录与算力挤压硬件**\nSteam 同时在线破 4350 万创历史新高，游戏内在线首破 1400 万，Aion 2 全球版首周 39.8 万 PCU 成最大推手；平台之外，NVIDIA 传停产 RTX 5090 让位 AI 工作站，算力对消费级硬件的挤压烧到旗舰游戏卡。2019 年老游 UBERMOSH:OMEGA 首次冲上 17.4 万同时在线，异动原因待排查。\n\n**星露谷作者定调新作，拿破仑类魂解禁**\nEric Barone 披露《Haunted Chocolatier》更偏动作 RPG、『做给下矿的人』；Ghostrunner 工作室《Valor Mortis》媒体解禁，口碑在『最新鲜』与『太臃肿』间两极；皇牌空战 8 一周销量破百万成系列最快。\n\n**AI：从无人值守到本地化管线**\nClaude Code 挂机 12 小时自主产出可玩 RPG，UE5.8 内嵌本地 LLM 驱动 3D 角色跑通全链路，微软总裁则呼吁给 AI 建立比洗衣机更严的安全监管。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
