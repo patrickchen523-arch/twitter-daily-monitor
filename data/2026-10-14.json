@@ -1,0 +1,594 @@
+{
+  "date": "2026-10-14",
+  "meta": {
+    "raw_count": 222,
+    "filtered_count": 180,
+    "selected_count": 18,
+    "crawl_time": "2026-10-14 10:45"
+  },
+  "lede": "GTA 6 PC 版被曝 2027 Q1 发售，距主机版仅数月；Epic 要求漫威×星战射击游戏全面转向 AI first；恶魔城新作媒体解禁 M86+；一个免费网页工具把全球任意街区变成漫画背景——两天 260 万浏览。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "GTA 6 PC 版被曝 2027 Q1 发售——距 11 月 19 日主机版仅数月，或随 GTA Online 2 同步"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "16天单人用 Opus 5.5 做出《小王子》3D剧情游戏——每颗星球可探索，承诺开源"
+    },
+    {
+      "section_id": "tools",
+      "item_index": 0,
+      "hook": "免费网页工具把全球任意街区一键生成漫画背景线稿+网点，可导出3D模型、可商用——2.6M浏览"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "开发者 Sac 用 Opus 5.5+Tripo+Blender 花费16天做出《小王子》3D剧情游戏并承诺开源；日本创作者公开 minimax h3 pre-viz→Depth map→Seedance 的 MV 级 AI 合成管线；DQ 之父堀井雄二用 Claude 半小时做出浏览器推理游戏并公开盛赞 AI 效率。"
+    },
+    {
+      "id": "industry",
+      "text": "GamesBeat 曝 GTA 6 PC 版 2027 Q1 发售，距主机版仅数月；Xbox CEO 内部表态“没有新 IP 我们活不下去”，而刚被砍掉的正是做新 IP 的工作室；Epic 备忘录要求漫威×星战游戏“不再手写代码”、美术全 AI 生成。"
+    },
+    {
+      "id": "indie",
+      "text": "恶魔城新作《Castlevania: Belmont's Curse》媒体解禁 M86/85/88；星露谷作者确认《Haunted Chocolatier》更偏动作 RPG；5 美元多人 FPS《Hood Warfare 2》社媒爆火，同接约 1 万。"
+    },
+    {
+      "id": "tools",
+      "text": "免费网页工具「どこでもロケハン」把全球任意街区变成漫画背景线稿+网点，可导出 3D 模型、可商用；RimWorld 1.7 弃 Unity 换自研 Waylith 引擎，性能提升 2-4 倍且存档与 Mod 双向兼容。"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · 独立开发者",
+          "tags": [
+            "Claude",
+            "AI游戏开发",
+            "Tripo",
+            "开源"
+          ],
+          "featured": true,
+          "title": "开发者用 Opus 5.5 花费16天将《小王子》做成3D剧情游戏，承诺开源",
+          "en_title": "花费16天，我用 Opus 5.5 将小王子的故事制作成了3D剧情游戏",
+          "full_text": "花费16天，我用 Opus 5.5 将小王子的故事制作成了3D剧情游戏\n\n结合Tripo+Blender，Opus 5.5 将小王子故事中的每一个星球变成了可探索的3D场景\n\n希望大家能支持一手，后续会开源整个游戏，以及详细制作流程\n\nWelcome to The Little Prince: Across the Stars✨：https://t.co/qr4wR0jLu3",
+          "author": "Sac",
+          "date": "2026-10-13",
+          "likes": 3916,
+          "views": 217998,
+          "link": "https://x.com/Saccc_c/status/2109962425512734739",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2109941568253927424/img/mZUBc3N5H9TqmjEJ.jpg",
+            "video_url": "https://x.com/Saccc_c/status/2109962425512734739"
+          },
+          "summary": "开发者 Sac 结合 Tripo（图生3D）与 Blender，用 Claude Opus 5.5 在16天内把《小王子》中的每一颗星球做成可探索的3D剧情游戏《The Little Prince: Across the Stars》，作品主页已上线（littleprince.dev），并承诺后续开源整个游戏与详细制作流程。",
+          "analysis": "中文开发者的 AI 游戏创作样本：单人不写传统代码、以模型为核心工作流，16天产出具备完整叙事与统一美术的3D游戏。相比“一小时 demo”式炫技，这部作品有明确的叙事结构，说明 AI 游戏开发正在从“能玩”走向“能讲完整故事”；开源制作流程的承诺也值得跟进。",
+          "recommendation": "16天单人用 Opus 5.5 做出《小王子》3D剧情游戏——每颗星球可探索，承诺开源"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "X · 创作者",
+          "tags": [
+            "AI视频",
+            "工作流",
+            "minimax",
+            "Seedance"
+          ],
+          "featured": true,
+          "title": "实写 pre-viz 转 AI 动画：minimax h3 生成预演转 Depth map 再喂给 Seedance 的 MV 级管线",
+          "en_title": "【実写プレビズで作る、実写アニメ合成】",
+          "full_text": "【実写プレビズで作る、実写アニメ合成】\n今回のMVではminimax h3で生成したプレビズ動画を使用しました。\n\n🎬ワークフロー\n①minimax h3-max-turboで動画生成（text to video）\n②生成したプレビズをDepth mapに変換\n③プレビズを元にseedanceで動画化\n\n💡この方法のいいところ\n・minimax h3-max-turboが安くてめちゃ生成が早い\n・めちゃ早いからプレビズでどんどんVコンを組める\n・プレビズが実写だから、自然な動きとカメラワークになる\n・Depth mapを使うことで実写背景も綺麗に再構成できる",
+          "author": "tapehead_Lab",
+          "date": "2026-10-12",
+          "likes": 4317,
+          "views": 393054,
+          "link": "https://x.com/tapehead_Lab/status/2109576509690462555",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2109576097746898944/img/uV4SQsgi0jz9WS08.jpg",
+            "video_url": "https://x.com/tapehead_Lab/status/2109576509690462555"
+          },
+          "summary": "日本创作者在 MV 制作中公开一套“实写预演→AI 动画”两段式工作流：先用 minimax h3-max-turbo 低成本快速生成实拍感 pre-viz，再转成 Depth map，用 Seedance 依深度重建为动画合成。作者称该方案生成快、成本低、镜头运动自然，还顺带解决了 Seedance 生成时长预算不够的问题。",
+          "analysis": "这是把 AI 视频生成嵌入真实内容生产管线的实用案例：用便宜的 T2V 做 pre-viz 快速迭代，再用深度控制做最终合成。对游戏宣发 PV、cutscene 制作同样适用——AI 视频工具正在从“炫技片段”变成可复制的 pipeline 环节。",
+          "recommendation": "minimax h3 出实拍 pre-viz 转 Depth map 喂 Seedance——日本创作者公开 MV 级 AI 合成管线"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Polygon · 媒体报道",
+          "tags": [
+            "AI生成",
+            "Square Enix",
+            "Claude",
+            "行业争议"
+          ],
+          "title": "《勇者斗恶龙》之父堀井雄二用 Claude 半小时做出一款 AI 生成的浏览器推理游戏",
+          "en_title": "Dragon Quest Creator Has a New Game, but It's AI-Generated",
+          "full_text": "Dragon Quest Creator Has a New Game, but It's AI-Generated https://t.co/yYFiePxYjs",
+          "author": "Polygon",
+          "date": "2026-10-13",
+          "likes": 4,
+          "views": 5891,
+          "link": "https://x.com/Polygon/status/2109957371044700339",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUgTDEQWIAEmGtg.jpg"
+          },
+          "summary": "据 Polygon，DQ 系列创造者堀井雄二用 Anthropic 的 Claude 通过一句 prompt 在约30分钟内开发并发布了一款浏览器文字推理游戏（审讯室题材，通过提问与出示证据在限时内揪出嫌疑人谎言）。他把这一过程与40年前开发《港口镇连续杀人事件》需要数月甚至数年做对比，公开盛赞 AI 的开发效率；此前 Square Enix 也多次表态加大 AI 应用。",
+          "analysis": "传奇制作人的“现身说法”是 AI 叙事的风向标：堀井用 DQ 之父的背书把“一句话出游戏”从梗变成案例。但玩家社区反应以负面居多——AI 生成内容与创作者手工打磨的张力再次被摆上台面，与 Epic 的“AI first”转向、Dwarf Fortress 作者拒用 genAI 形成行业光谱的两端。",
+          "recommendation": "DQ 之父堀井雄二用 Claude 半小时产出浏览器推理游戏，并公开盛赞 AI 效率"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "IGN · 媒体报道",
+          "tags": [
+            "GTA6",
+            "Rockstar",
+            "发售窗口"
+          ],
+          "featured": true,
+          "title": "GTA 6 PC 版被曝 2027 年 Q1 发售，距主机版仅数月",
+          "en_title": "Rockstar reportedly plans to release GTA 6 on PC during the first quarter of 2027",
+          "full_text": "Rockstar reportedly plans to release GTA 6 on PC during the first quarter of 2027. https://t.co/btHesRdrOi",
+          "author": "IGN",
+          "date": "2026-10-13",
+          "likes": 7230,
+          "views": 406549,
+          "link": "https://x.com/IGN/status/2110009476946215182",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUhCcBBXUAAXvMc.jpg"
+          },
+          "summary": "据 GamesBeat 引述四位匿名信源，Rockstar 计划在主机版（PS5/Xbox Series X|S，2026年11月19日）发售后的几个月内、即 2027 年 Q1 推出 GTA 6 PC 版，可能随玩家口中的“GTA Online 2”多人模式同步上线。对比 GTA 5 主机到 PC 间隔近两年，此次间隔大幅缩短。Rockstar 与 Take-Two 尚未回应。（多家报道：Eurogamer、GameSpot、Polygon、RPS、MP1st）",
+          "analysis": "若属实，PC 玩家等 GTA 的时间从两年级缩短到一个季度，R 星明显在“服务核心玩家”之外兼顾 PC 大盘——GTA Online 与 RP 服务器生态都在 PC。对从业者：2027 Q1 的 PC 市场将出现超级吸量黑洞，中小游戏的宣发档期应尽量避开。",
+          "recommendation": "GTA 6 PC 版被曝 2027 Q1 发售——距 11 月 19 日主机版仅数月，或随 GTA Online 2 同步"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "PC Gamer · 媒体报道",
+          "tags": [
+            "Xbox",
+            "裁员",
+            "新IP",
+            "Microsoft"
+          ],
+          "title": "Xbox CEO 内部 town hall：“不靠新 IP 我们无法生存”，而新 IP 工作室刚被砍",
+          "en_title": "Xbox CEO Asha Sharma reportedly says 'we will not survive' without new IPs",
+          "full_text": "Xbox CEO Asha Sharma reportedly says 'we will not survive' without new IPs https://t.co/8KVMnabVOa",
+          "author": "pcgamer",
+          "date": "2026-10-13",
+          "likes": 64,
+          "views": 9305,
+          "link": "https://x.com/pcgamer/status/2110023271324504162",
+          "media": null,
+          "summary": "据 Windows Central 获得的内部 town hall 记录，Xbox CEO Asha Sharma 表示“要打造十亿美元级全球 franchise，同时要创造持久的新 IP；只靠吃老本我们无法生存”。而在她发言前后，Xbox 刚经历数千人裁员：Obsidian 多个项目被砍并被要求转做 Fallout，Double Fine 与 Compulsion 转为独立，Arkane Lyon 前途未卜，Ninja Theory 出售未果进入磋商。（多家报道：Eurogamer、GameSpot、Polygon、Niche Gamer）",
+          "analysis": "“嘴上要新 IP，手上砍新 IP 工作室”——Xbox 的战略矛盾成为行业样本：平台方在降本压力下优先保成熟 franchise，而新 IP 的孵化能力最先被牺牲。对开发者：大厂渠道的“原创孵化预算”正在系统性收缩，独游发行与自建社区的重要性进一步上升。",
+          "recommendation": "Xbox CEO 内部表态“没有新 IP 我们活不下去”——而刚被砍掉的正是做新 IP 的那批工作室"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "GameSpot · 媒体报道",
+          "tags": [
+            "Epic Games",
+            "AI first",
+            "Bloomberg",
+            "Unreal"
+          ],
+          "featured": true,
+          "title": "Epic 未公布的漫威×星战射击游戏延期，开发者被要求全面转向 AI first 生产",
+          "en_title": "Epic Games delayed an unannounced Marvel/Star Wars shooter as developers were directed to incorporate an \"AI first\" production model",
+          "full_text": "Epic Games delayed an unannounced Marvel/Star Wars shooter game as developers were directed to incorporate an “AI first” production model.\n\nAn internal memo obtained by Bloomberg included the instruction: “No more hand-written code,” adding that artwork would be “generated with full AI workflows.”",
+          "author": "GameSpot",
+          "date": "2026-10-13",
+          "likes": 4,
+          "views": 3070,
+          "link": "https://x.com/GameSpot/status/2110055915642663051",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUhsrEjXYAAp-Ez.jpg"
+          },
+          "summary": "据 Bloomberg（Jason Schreier），Epic 与迪士尼合作的未公布漫威×星战射击游戏内部延期（原计划 2027 年 3 月），管理层指示团队采用“AI first”生产管线完成开发：内部备忘录写明“不再手写代码”，美术“全部由 AI 工作流生成”，工具包括 Anthropic 的 Claude。Tim Sweeney 回应称这是“最大化 AI 加速”的重构，目标不是用更少的人做同样的事，而是“让每个人做出更多更好的东西”。（多家报道：Eurogamer、RPS、Niche Gamer）",
+          "analysis": "AAA 级别的“AI first”强制令首次被详细曝光：从“鼓励使用”升级为“禁止手写代码”，且发生在项目延期、迪士尼 15 亿美元入股 Epic 的背景下。无论对引擎生态（Unreal 团队全面 AI 化）还是美术/程序岗位，这都是劳动力结构的实质性信号，值得每一家内容公司对照自查。",
+          "recommendation": "Epic 内部备忘录要求“不再手写代码、美术全 AI 生成”——漫威×星战射击游戏延期并全面转 AI first"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "X · 行业观察",
+          "tags": [
+            "Steam",
+            "数据",
+            "集换卡牌",
+            "行业观察"
+          ],
+          "title": "上线7年的独游开启 Steam 集换卡后，“玩家数”从 37 涨到 17.5 万——全是刷卡机器人",
+          "en_title": "a 7-year-old indie shooter that had 37 players last month hit 174,886 players on steam this weekend",
+          "full_text": "A lesson for anyone making a game:\n\na 7-year-old indie shooter that had 37 players last month hit 174,886 players on steam this weekend. \n\nWhat did it do differently? it just turned on trading cards and the bots showed up to farm them.",
+          "author": "ggsarzi",
+          "date": "2026-10-13",
+          "likes": 6083,
+          "views": 315444,
+          "link": "https://x.com/ggsarzi/status/2109927895376474362",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUf4PLTXMAABpi4.jpg"
+          },
+          "summary": "一款上线七年的独立射击游戏上月同时在线仅 37 人，本周末却冲到 174,886 人——原因只是开启了 Steam 集换式卡牌：刷卡脚本机器人蜂拥挂机刷卡。作者提醒所有做游戏的人把这当作一课：Steam 的“玩家数”可能被卡牌经济污染。",
+          "analysis": "对所有看 Steam 数据的人是一次校准：CCU 并不总等于真实玩家，挂机刷卡牌的经济激励可以凭空造出十几万“在线”。做市场判断（品类热度、买量参考、竞品分析）时，需要交叉验证好评趋势与游玩时长分布，别被单点 CCU 误导。",
+          "recommendation": "7年老独游开了 Steam 集换卡，“玩家数”一夜从 37 涨到 17.5 万——全是刷卡机器人"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Eurogamer · 媒体报道",
+          "tags": [
+            "ConcernedApe",
+            "独立开发",
+            "动作RPG"
+          ],
+          "title": "《Haunted Chocolatier》：星露谷作者单人开发的新作确认“更偏动作RPG”——为爱下矿的人而生",
+          "en_title": "Stardew Valley creator's new game, Haunted Chocolatier, is \"more of an action RPG\" than farming sim",
+          "full_text": "Stardew Valley creator's new game, Haunted Chocolatier, is \"more of an action RPG\" than farming sim\n\n\"It's for the people that go into the mines.\"\n\nhttps://t.co/NpvE275avb",
+          "author": "eurogamer",
+          "date": "2026-10-12",
+          "likes": 1617,
+          "views": 81588,
+          "link": "https://x.com/eurogamer/status/2109573030758216183",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUa1fCsW0AEFmvO.jpg"
+          },
+          "summary": "《星露谷物语》作者 Eric Barone（ConcernedApe）接受 GQ 采访时透露新作《Haunted Chocolatier》仍是“小镇游戏”，但重心更偏动作 RPG：冒险、收集装备、变强，有怪物和 Boss 战，“是为星露谷里会下矿的那群人做的”；整体氛围比星露谷更“形而上”。仍无发售日期，“在我准备好之前没人能玩到”。",
+          "analysis": "单人开发神话的续章：Barone 明确新作战斗占比大幅提高，等于在“农场模拟”受众之外开辟动作冒险市场。发售日仍悬而未决，但任何新信息都会带来极高关注度——这类超级独游“不外包、不赶工、不画饼”的节奏，值得独立开发者参照。",
+          "recommendation": "星露谷作者新作《Haunted Chocolatier》确认更偏动作 RPG——有怪物和 Boss 战，为爱下矿的人而生",
+          "game_ref": "Haunted Chocolatier",
+          "enrichment": {
+            "game_name": "Haunted Chocolatier",
+            "genre": "小镇生活 / 动作RPG",
+            "developer": "Eric Barone（ConcernedApe，个人开发者）",
+            "platforms": [
+              "PC",
+              "Switch",
+              "PS4/5",
+              "Xbox"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": "https://www.youtube.com/watch?v=zmvpXBl3xpk",
+            "description": "【核心玩法】小镇生活+动作RPG双主轴：经营巧克力工坊与小镇关系，同时以战斗为核心循环——冒险、收集装备、变强，存在怪物与 Boss 战。作者原话：“它是为星露谷里会下矿的那群人做的。”\n\n【美术与氛围】延续 ConcernedApe 标志性的高密度像素画，色调比星露谷更暗、更“形而上”，幽灵/灵体元素贯穿世界观。\n\n【对标定位】星露谷的动作化续章：保留生活模拟的日常感，把战斗从支线提到主循环，用同一批核心用户向动作冒险品类扩圈。\n\n【优势】个人开发者的口碑与信任度顶级；像素美术与配乐由作者一人包办的水准已被星露谷十二年的销量验证；动作 RPG 定位直接扩大受众盘。\n\n【不足】发售日未定，开发节奏完全以作者状态为先；动作玩法的实际完成度尚无任何可玩版本佐证。\n\n【综合】2026 年最受期待的独游之一：无需营销就有确定性热度的“白月光”产品，其单人开发模式本身就是行业研究对象。",
+            "why_notable": "星露谷作者单人开发的续作确认转向动作RPG——个人开发者品牌价值的极限样本",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "GameSpot · 媒体评测",
+          "tags": [
+            "恶魔城",
+            "银河城",
+            "Konami",
+            "媒体评分"
+          ],
+          "featured": true,
+          "title": "《Castlevania: Belmont's Curse》：Konami 恶魔城系列新作媒体解禁 M86/85/88——GameSpot 称“系列巅峰”",
+          "en_title": "Castlevania is back, and it is fantastic. Belmont's Curse achieves a brilliant synthesis",
+          "full_text": "Castlevania is back, and it is fantastic. Belmont's Curse achieves a brilliant synthesis, with every component operating at peak performance to deliver a new high for the series. \n\nOur review: https://t.co/cI8xzJHGj0",
+          "author": "GameSpot",
+          "date": "2026-10-13",
+          "likes": 1507,
+          "views": 51511,
+          "link": "https://x.com/GameSpot/status/2109997742885880210",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUg3w_SWUAAsIEM.jpg"
+          },
+          "summary": "恶魔城系列新作《Castlevania: Belmont's Curse》Steam 标注 10 月 14 日发售，媒体评分解禁：Metacritic PS5 86 / PC 85 / XSX 88（70 家媒体）。本作由 Konami 与 Dead Cells 开发商 Evil Empire 合作开发。GameSpot 评“每个部件都在巅峰状态，系列新高”；Polygon 称“近乎完美的银河城”；RPS 认为“动作游戏极佳、银河城结构稍逊”；Niche Gamer 认为虽非五十岚风格但“独特而有趣”。（多家报道：Polygon、RPS、Niche Gamer、Metacritic）",
+          "analysis": "Konami 携手 Dead Cells 开发商 Evil Empire 让恶魔城 IP 重回 2D 银河城赛道的这步棋收获媒体一致好评——86 分级别在 2026 年属于头部。“IP 复活+高分”组合大概率带动销量，也再次验证：老 IP 用“忠实核心+现代化手感”重启的市场需求仍在。经典 IP 库存的价值重估，对发行商是持续信号。",
+          "recommendation": "恶魔城新作《Belmont's Curse》媒体解禁：M86/85/88——GameSpot 称“系列巅峰”，10月15日发售",
+          "game_ref": "Castlevania: Belmont's Curse",
+          "enrichment": {
+            "game_name": "Castlevania: Belmont's Curse",
+            "genre": "动作 / 角色扮演",
+            "developer": "KONAMI / Evil Empire",
+            "platforms": [
+              "PC",
+              "PS5",
+              "Xbox Series X|S"
+            ],
+            "price": "¥ 128.00",
+            "release_date": "2026年10月14日",
+            "steam_rating": "Metacritic 86 (PS5) / 85 (PC) / 88 (XSX)，70 家媒体",
+            "steam_url": "https://store.steampowered.com/app/4231820",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4231820/6b65aec2c398006aea8b76e1463cc34d0e4ba68b/header.jpg?t=1788478863",
+            "youtube_video": null,
+            "description": "鲜红的诅咒，会是绝望还是希望？ 在悪魔城伝説 (Castlevania Dracula's Curse) 的23年之后，随着年轻的贝尔蒙特在巴黎冒险并成长。 KONAMI × Evil Empire × Motion Twin联手推出最新的探索型2D动作游戏。\n\n【核心玩法】2D 银河城：探索互锁地图、获取新能力解锁新区域，战斗以鞭类武器连击与副武器为核心，Boss 战密度高。媒体普遍称赞战斗手感“处于系列巅峰状态”。\n\n【美术与氛围】哥特城堡+怪物图鉴的恶魔城经典视觉，Polygon 评价演出与氛围“华丽”（gorgeous adventure）。\n\n【对标定位】IGA 式银河城的正统血脉续作：Niche Gamer 认为“虽不是 Igavania，但团队用独特而有趣的方式处理了这个 IP”；RPS 则认为动作部分极佳、银河城探索结构稍逊。\n\n【优势】Metacritic 三平台 86/85/88 的高分开局；Konami 经典 IP 的情怀基本盘；GameSpot 给出“系列新高”的定性。\n\n【不足】银河城探索设计的评价存在分歧，RPS 认为“奇幻动作满分、银河城结构未达顶级”。\n\n【综合】Konami 与 Dead Cells 团队 Evil Empire 合力让恶魔城 IP 时隔多年重返 2D 银河城的高分之作，10 月 14 日发售，是 2026 年 IP 复活浪潮里口碑最稳的一单。",
+            "why_notable": "Konami 让恶魔城重回2D银河城并拿到 M86+——经典IP复活与高分的稀缺组合",
+            "pcu": "未发售（10月15日上线）",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Daily Loud · 社媒热议",
+          "tags": [
+            "FPS",
+            "多人游戏",
+            "低价策略",
+            "病毒传播"
+          ],
+          "title": "《Hood Warfare 2》：5美元“CoD风”多人 FPS 社媒爆火——同接约1万，被评“比全价FPS更好玩”",
+          "en_title": "A $5 Call of Duty-style multiplayer video game, \"Hood Warfare 2,\" is going viral",
+          "full_text": "A $5 Call of Duty-style multiplayer video game, “Hood Warfare 2,” is going viral, letting players take over their opps’ territory in Chicago, snatch chains, snitch, hit licks, and more",
+          "author": "DailyLoud",
+          "date": "2026-10-12",
+          "likes": 28631,
+          "views": 2627424,
+          "link": "https://x.com/DailyLoud/status/2109694307502322111",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2109139424504053761/img/D172BGL0pN7CKPIN.jpg",
+            "video_url": "https://x.com/DailyLoud/status/2109694307502322111"
+          },
+          "summary": "售价仅 5 美元（日区 790 日元）的多人对抗 FPS《Hood Warfare 2》在社媒病毒式传播：玩家在芝加哥风格街区抢地盘、抢项链、做“线人”任务。Game*Spark 报道其 Steam 同时在线约 1 万人、有海外媒体评价“比全价 FPS 更好玩”，呈爆量趋势。",
+          "analysis": "低价格+强社媒梗传播的又一次胜利：790 日元的定价把购买决策压到最低，“抢地盘/当线人”的高梗度玩法天然适配短视频切片。对多人独游团队：定价策略与传播设计（可切片的名场面）比画面品质更能决定这类游戏的生死。",
+          "recommendation": "5美元 CoD 风多人 FPS《Hood Warfare 2》社媒爆火——同接约1万，海外媒体称“比全价FPS更好玩”",
+          "game_ref": "Hood Warfare 2",
+          "enrichment": {
+            "game_name": "Hood Warfare 2",
+            "genre": "动作",
+            "developer": "Trapstar Games",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 23.40",
+            "release_date": "已发售 · 2026 年 10 月 8 日",
+            "steam_rating": "Steam 1267 条评测",
+            "steam_url": "https://store.steampowered.com/app/5155360",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5155360/73c77dc5efdbffef90c2d32324d518e68a18fc4b/header.jpg?t=1791686243",
+            "youtube_video": null,
+            "description": "Rival gangs fight for control of Chicago. Pick a side, customize your weapons, and fight other players across a variety of action-packed game modes. Spin the block and take over the streets in this chaotic multiplayer FPS.\n\n【核心玩法】低价多人对抗 FPS：以芝加哥风格街区为舞台，围绕抢夺地盘的攻防展开，目标包括抢项链（战利品）、“当线人”（snitch）、偷袭（hit licks）等街头化任务，节奏短平快，主打“一把就爽”的碎片化对局。\n\n【美术与氛围】写实街头的低多边形风格，突出帮派街区的氛围而非画质堆料。\n\n【对标定位】“CoD 的平替”：用 5 美元定价对位全价多人 FPS，把购买决策成本压到极限。\n\n【优势】价格门槛极低；街头题材在社媒有天然梗传播力；同接约 1 万说明匹配池健康；Game*Spark 引述海外媒体“比全价 FPS 更好玩”。\n\n【不足】内容深度与反作弊是低价多人游戏的常规风险；题材敏感度可能限制部分平台与地区的推广。\n\n【综合】低价+高梗度的又一个 viral 案例：购买决策压到极限，把传播押在短视频切片与话题任务设计上。",
+            "why_notable": "5美元定价+街头题材社媒爆火，从无人知晓到同接1万——低价多人 FPS 的传播教科书",
+            "pcu": "~10,000（Game*Spark 报道）",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "電ファミニコゲーマー · 媒体报道",
+          "tags": [
+            "合作",
+            "派对",
+            "Steam"
+          ],
+          "unselected": true,
+          "title": "《取扱注意！》发售：最多4人合作的混乱小镇快递游戏，送定时炸弹和棺材",
+          "en_title": "【最大4人】カオスな町で時限爆弾や棺桶を配達する協力ゲーム『取扱注意』本日10月13日リリース",
+          "full_text": "【最大4人】カオスな町で時限爆弾や棺桶を配達する協力ゲーム『取扱注意』本日10月13日リリース。生き延びるためにはチームワークが重要\nhttps://t.co/OZMIMnsJLi\n\n野良犬の群れやハチの大群、暴走する車から逃げながら、6日間生き延びよう。ただし、カオスのレベルはだんだん上がっていく",
+          "author": "電ファミニコゲーマー",
+          "date": "2026-10-13",
+          "likes": 4108,
+          "views": 328245,
+          "link": "https://x.com/denfaminicogame/status/2109897884175147275",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2109897826637635584/pu/img/AO-VwhGUdmLEzwzf.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2109897884175147275"
+          },
+          "summary": "PlayFusion 开发的最多4人合作快递游戏 10月13日登陆 Steam：在混乱小镇躲避野狗群、蜂群与失控车辆，配送定时炸弹、棺材、电锯等危险货物，目标活过6天。可驾驶卡车/三轮车，混乱度逐日上升，周日存活的奖励是假期与冰啤酒。",
+          "recommendation": "最多4人合作在混乱小镇快递定时炸弹和棺材——《取扱注意！》10月13日发售"
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Game*Spark · 媒体报道",
+          "tags": [
+            "机器人",
+            "ADV",
+            "复古"
+          ],
+          "unselected": true,
+          "title": "《横滨机动暴走族 ROCK 'N' ROLL SUICIDE》正式公布：90年代风巨大机器人×暴走族肉搏ADV，2027年3月",
+          "en_title": "巨大ロボ×暴走族！これぞ「タイマンフォール」な90年代風ロボット抗争ADV『横浜機動暴走族』正式発表",
+          "full_text": "巨大ロボ×暴走族！これぞ「タイマンフォール」な90年代風ロボット抗争ADV『横浜機動暴走族』正式発表―銃もミサイルもないメカの拳でタイマン\nhttps://t.co/esZUXhSuHv\n\n実写背景の横浜＋固定カメラ。トレイラーにはどっかで聞いた効果音も。色々な懐かしさが混ざってわけがわからない新作が正式発表",
+          "author": "gamespark",
+          "date": "2026-10-13",
+          "likes": 612,
+          "views": 53363,
+          "link": "https://x.com/gamespark/status/2109839373793632401",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2109838798414905344/pu/img/msGvojhIy9Jrbq_C.jpg",
+            "video_url": "https://x.com/gamespark/status/2109839373793632401"
+          },
+          "summary": "FUJII.Production（《病なGENERATION》作者）新作正式公布：以实拍横滨街景为背景、90年代低多边形风格的机器人×暴走族抗争 ADV，巨大机器人 1对1 纯肉搏战斗（无枪械导弹），玩家扮演红暴徒队员美卷入政变剧情。2027年3月 Steam 发售，10月31日出展东京游戏地城14；商店页标注部分贴图/纹理使用生成AI辅助。",
+          "recommendation": "90年代风巨大机器人×暴走族肉搏ADV《横滨机动暴走族》公布——实拍横滨街景，2027年3月发售"
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Digital Foundry · 媒体评测",
+          "tags": [
+            "皇牌空战",
+            "飞行射击",
+            "媒体评分"
+          ],
+          "unselected": true,
+          "title": "《皇牌空战8 Wings of Theve》媒体解禁：DF 评“杰作+系列技术最高点”",
+          "en_title": "Review: Ace Combat 8: Wings of Theve Is a Masterpiece - and a Technical High-Point for the Series",
+          "full_text": "Review: Ace Combat 8: Wings of Theve Is a Masterpiece - and a Technical High-Point for the Series https://t.co/mGClUBg8NQ",
+          "author": "digitalfoundry",
+          "date": "2026-10-13",
+          "likes": 100,
+          "views": 8090,
+          "link": "https://x.com/digitalfoundry/status/2110022772608909802",
+          "media": null,
+          "summary": "《皇牌空战8: Wings of Theve》媒体评测解禁：Digital Foundry 给出“杰作、系列技术最高点”的评价；Eurogamer 称其为“2026 年最令人窒息的爽快动作游戏”，仅个别任务与剧情节奏存在瑕疵。",
+          "recommendation": "《皇牌空战8》媒体解禁：DF 评“杰作+系列技术最高点”，2026年最爽快动作游戏"
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "PC Gamer · 媒体评测",
+          "tags": [
+            "模拟经营",
+            "媒体评分"
+          ],
+          "unselected": true,
+          "title": "《动物园之星2》媒体解禁：PC Gamer 60分——动物顶级、微观管理劝退",
+          "en_title": "Planet Zoo 2 review: Superstar animals and frustrating micromanagement",
+          "full_text": "Planet Zoo 2 review: Superstar animals and frustrating micromanagement https://t.co/Rb4SgS7RLb",
+          "author": "pcgamer",
+          "date": "2026-10-13",
+          "likes": 37,
+          "views": 13553,
+          "link": "https://x.com/pcgamer/status/2109989023993524544",
+          "media": null,
+          "summary": "Frontier《动物园之星2》评测解禁，PC Gamer 给出 60 分：动物建模与自然保护区的保育题材获赞，但菜单迷宫式的微观管理与职业模式任务设计令人疲惫；新增鱼类、鸟类与自然保护区三大系统，售价 $50，Steam Deck 认证。",
+          "recommendation": "《动物园之星2》评测解禁：PC Gamer 60分——动物依旧惊艳，微观管理太磨人"
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "電ファミニコゲーマー · 媒体报道",
+          "tags": [
+            "心理战",
+            "多人",
+            "EA"
+          ],
+          "unselected": true,
+          "title": "《Double Dealers》开启EA：最多6人的拍卖心理战，靠虚张声势赚差价",
+          "en_title": "最大6人でオークションをする心理戦ゲーム『Double Dealers』本日10月13日早期アクセス開始",
+          "full_text": "最大6人でオークションをする心理戦ゲーム『Double Dealers』本日10月13日早期アクセス開始。ブラフの掛けあいなどの駆け引きを制し、リスクの高い取引を利益に変える\nhttps://t.co/U4WRpDJgok\n\n売り手のみが知る「条項」や「カード」を使って立ち回る。時にはボクシングや腕相撲で勝負することも？",
+          "author": "電ファミニコゲーマー",
+          "date": "2026-10-13",
+          "likes": 1102,
+          "views": 117522,
+          "link": "https://x.com/denfaminicogame/status/2109948365698134271",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2109948334471622656/pu/img/K8HDYU_42hHAdnNg.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2109948365698134271"
+          },
+          "summary": "Miklagard Studios 的 3-6 人拍卖心理战游戏 10月13日 Steam EA：每轮一人当卖家，只有卖家看得到商品真实价值与两条隐藏条款，买家凭有限信息竞价斗智；设有市场阶段、时代组合加成与道具卡，甚至安排拳击/掰手腕对决。Demo 期间已获 Steam“特别好评”。",
+          "recommendation": "最多6人的拍卖心理战《Double Dealers》开启EA——Demo期已获特别好评"
+        },
+        {
+          "idx": "新游参考 06",
+          "source": "X · KOL推荐",
+          "tags": [
+            "射击",
+            "独立开发"
+          ],
+          "unselected": true,
+          "title": "《VINCIT》：把子弹当实体道具的漫画风射击——可充能火焰/雷电并空中出拳引爆",
+          "en_title": "Ultrakill's combat meets Magicka's spellcasting in a manga style shooter",
+          "full_text": "Ultrakill's combat meets Magicka's spellcasting in a manga style shooter\n\n- Load bullets with fire or electricity\n- Punch them mid-air to mix the effects\n- Every bullet is a real physical object\n\nGame is VINCIT.",
+          "author": "IndieGameJoe",
+          "date": "2026-10-12",
+          "likes": 429,
+          "views": 13286,
+          "link": "https://x.com/IndieGameJoe/status/2109783082861490598",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2109782219199774720/img/Rbswzb7AK4yFGgby.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2109783082861490598"
+          },
+          "summary": "Indie Game Joe 推荐的漫画风格射击游戏《VINCIT》：子弹是真实物理实体，可填装火焰或雷电，并在空中出拳混合效果触发反应，玩法被形容为 Ultrakill 的战斗×Magicka 的法术组合。",
+          "recommendation": "《VINCIT》：子弹可充能火焰雷电、空中出拳引爆的漫画风射击——Ultrakill×Magicka"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "X · 开源工具",
+          "tags": [
+            "免费工具",
+            "漫画背景",
+            "OpenStreetMap",
+            "独立开发"
+          ],
+          "featured": true,
+          "title": "免费网页工具「どこでもロケハン」：把全球任意街区变成漫画背景线稿，2.6M 浏览爆火",
+          "en_title": "地図情報から漫画背景を作成できるツールを作成しました",
+          "full_text": "地図情報から漫画背景を作成できるツールを作成しました。地名や座標を入力すれば地球のどこでも再現可能です。無料で使えるので、ぜひ使ってみてください！\nhttps://t.co/03Evv1Eb6m",
+          "author": "sharp_maker",
+          "date": "2026-10-13",
+          "likes": 57685,
+          "views": 2625307,
+          "link": "https://x.com/sharp_maker/status/2109834006703292423",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2109815111548575744/img/UpqMct-o275hul0N.jpg",
+            "video_url": "https://x.com/sharp_maker/status/2109834006703292423"
+          },
+          "summary": "日本开发者 MIYADAIKU（oyasumi-gamedev 团队）发布免费网页工具「どこでもロケハン」（随时随地勘景）：基于 OpenStreetMap 地图数据+地形高程，把世界任意地点实时生成为漫画风格的线稿+网点背景，可调光线方位、季节、树木密度、镜头高度等参数，支持导出 PNG/SVG 及 GLB/FBX/OBJ 3D 模型，允许商用（需标注 OSM 出处）。",
+          "analysis": "这不是 AI 生成，而是程序化几何+渲染——确定性输出、可商用、可导出 3D 模型，对做漫画、视觉小说、独立游戏的“城市背景”生产是实打实的效率工具。两天 260 万浏览说明“垂直场景+免费+可商用”的工具传播模型依然成立。",
+          "recommendation": "免费网页工具把全球任意街区一键生成漫画背景线稿+网点，可导出3D模型、可商用——2.6M浏览"
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Ludeon Studios · 官方发布",
+          "tags": [
+            "RimWorld",
+            "Unity",
+            "自研引擎",
+            "性能优化"
+          ],
+          "featured": true,
+          "title": "《RimWorld》1.7 弃用 Unity 换自研 Waylith 引擎：性能提升 2-4 倍，存档与多数 Mod 兼容",
+          "en_title": "Announcing RimWorld update 1.7! It moves the game from Unity to the Waylith Engine, our own in-house engine",
+          "full_text": "Announcing RimWorld update 1.7! It moves the game from Unity to the Waylith Engine, our own in-house engine.\n\nIn our tests, RimWorld runs 2-4x faster. You can try it now on the unstable beta.\n\nOh, and RimWorld isn’t the only game on Waylith...\n\nRead on Steam: https://t.co/WT4qrvMYzq",
+          "author": "LudeonStudios",
+          "date": "2026-10-12",
+          "likes": 18954,
+          "views": 1524520,
+          "link": "https://x.com/LudeonStudios/status/2109695358829748688",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUcezJiWIAAKl5e.jpg"
+          },
+          "summary": "Ludeon 宣布 RimWorld 1.7 从 Unity 迁移到自研 Waylith 引擎，官方测试性能提升 2-4 倍：后期殖民地压测 2.2 倍，1500 个 Mod 的整合包加载从 14 分钟降到 6 分钟；1.6 存档可直接在 1.7 读取且双向兼容，多数 Mod 无需修改，已在 unstable beta 可试。玩家实测 120fps/900tps，但内存占用偏高（启动即 12-13GB）。官方还预告 Waylith 上还有第二款游戏。（多家报道：PC Gamer、RPS）",
+          "analysis": "“商业引擎→自研”的罕见成功迁移样本：存档与 Mod 双向兼容是迁移不死人的关键，说明 Ludeon 把引擎抽象层维护了多年。对中小团队，这是“引擎税”讨论的重要案例——当游戏规模与 Unity 的调度模型不匹配时，自研小引擎反而更便宜。Unity 需要认真回应这类标杆案例的流失。",
+          "recommendation": "RimWorld 1.7 弃 Unity 换自研 Waylith：性能 2-4 倍、1500 Mod 加载 14 分钟→6 分钟，存档双向兼容"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**GTA 6 PC 窗口与 Epic 的 AI 转向成为今日主线**\nGamesBeat 援引四位信源称 GTA 6 PC 版将在主机版（2026年11月19日）发售数月后的 2027 Q1 推出；同期 Bloomberg 曝出 Epic 要求漫威×星战射击游戏团队“不再手写代码”、美术全 AI 生成，Tim Sweeney 称这是“最大化 AI 加速”。两大信号同时指向：3A 档期与生产方式都在重排。\n\n**独游与工具侧同样热闹**\n恶魔城新作《Belmont's Curse》以 M86/85/88 解禁，星露谷作者确认新作更偏动作 RPG，5 美元 FPS《Hood Warfare 2》社媒爆火；工具侧，日本开发者发布的免费漫画背景生成器两天拿下 260 万浏览，RimWorld 则演示了“弃 Unity 换自研引擎”的完整迁移样本。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

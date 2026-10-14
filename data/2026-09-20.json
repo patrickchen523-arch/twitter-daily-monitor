@@ -1,0 +1,630 @@
+{
+ "date": "2026-09-20",
+ "meta": {
+  "raw_count": 194,
+  "filtered_count": 126,
+  "selected_count": 19,
+  "crawl_time": "2026-09-20 12:00"
+ },
+ "lede": "BlizzCon 2026 连发 Diablo 5（2029 春）与星际开放世界射击（2030）并官宣《魔兽世界：Forever》；宝可梦实体卡在 AR 眼镜中变成可玩游戏；个人开发者协力砸蛋新作《CRACK》曝光。",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "CRACK：个人开发 1-4 人协力砸超巨蛋，镐头炸药轮番上阵——10月26日上线 Steam"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 1,
+   "hook": "Snap SPECS 眼镜+AI 视觉：实体宝可梦卡牌秒变 AR 对战，151 只全可玩——播放 116 万"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 2,
+   "hook": "200GB GTA5 泄露含被砍自由城 DLC，GTA6 早期资产流出——距发售仅剩两个月"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Typesafe 新模型 Jev 实时生成游戏关卡，结构化输出更快更便宜\n开发者用 Snap SPECS 眼镜把实体宝可梦卡变成 AR 对战原型\nLevel-5 CEO 承认发布会使用生成式 AI 并致歉"
+  },
+  {
+   "id": "industry",
+   "text": "BlizzCon 2026：Diablo 5 定档 2029 年春，Netflix 剧集开发中\n星际争霸开放世界射击新作公布，2030 年发售\nGTA5 遭 200GB 泄露：含被砍自由城 DLC 与 GTA6 早期资产\nRoblox 拟让开发者把游戏做成独立应用上架 Steam/Epic/GOG\n《魔兽世界：Forever》正式公布，Classic+ 传闻落定"
+  },
+  {
+   "id": "indie",
+   "text": "CRACK：个人开发 4 人协力砸巨蛋增量冒险，10月26日上线\nMimic Busters：自己建模自己藏的多人捉迷藏，10月15日发售\nPAO PAO：海边食堂×海岛生活的 4 人协力模拟，10月26日 EA\nGet Us Out：PlayWay 系 1-4 人协力越狱公布"
+  },
+  {
+   "id": "tools",
+   "text": "CDPR 重申《巫师 4》转虚幻 5 与 2077 技术问题无关\n《神偷》民间引擎补丁新增官方重制版都没有的功能"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "独立开发者 Hugo Duprez · AI 实测",
+     "tags": [
+      "AI生成",
+      "结构化输出",
+      "游戏关卡"
+     ],
+     "title": "Typesafe 新模型 Jev 实时生成游戏关卡：结构化输出更快更便宜",
+     "en_title": "Jev can generate game levels in real time. Faster and cheaper structured output could be a big deal for game dev!",
+     "full_text": "Jev can generate game levels in real time.\n\nFaster and cheaper structured output could be a big deal for game dev! https://t.co/CiMoElDeAs",
+     "author": "HugoDuprez",
+     "date": "2026-09-18",
+     "likes": 2535,
+     "views": 429266,
+     "link": "https://x.com/HugoDuprez/status/2100953089003921543",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2100952449661992960/img/GEVdw9BvAW7Dv2Gx.jpg",
+      "video_url": "https://x.com/HugoDuprez/status/2100953089003921543/video/1"
+     },
+     "summary": "开发者 Hugo Duprez 演示用 @typesafeai 的新模型 Jev 实时生成游戏关卡，核心卖点是更快、更便宜的结构化输出。他判断这对游戏开发可能是件大事。",
+     "analysis": "关卡生成是最吃结构化输出的场景之一：每一次调用都要稳定吐出可用的 JSON 布局。推理成本与延迟下降意味着程序化生成从离线批处理走向运行时实时调用，roguelike、沙盒与无尽关卡品类受益最直接。",
+     "recommendation": "Typesafe 新模型 Jev 实时生成游戏关卡——结构化输出更快更便宜，直击游戏开发刚需",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "开发者 MatthewHallberg · AR 实机演示",
+     "tags": [
+      "AR",
+      "AI视觉",
+      "实体卡牌"
+     ],
+     "title": "开发者用 Snap SPECS 眼镜把实体宝可梦卡牌变成 AR 对战原型：151 只全可玩",
+     "en_title": "Basically a fully playable proto with all 151 mons from SV 151.",
+     "full_text": "Always wanted to play with my physical Pokémon cards in AR, so I unleashed Astra + CLAD on it… they did not disappoint! \n⚡️🥽\n\nBasically a fully playable proto with all 151 mons from SV 151.\n@specs @specsfordevs https://t.co/to2h9QmgwL",
+     "author": "MatthewHallberg",
+     "date": "2026-09-18",
+     "likes": 11357,
+     "views": 1157800,
+     "link": "https://x.com/MatthewHallberg/status/2100965417380655253",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2100965327140278273/img/3eE-lE4spKYdFO51.jpg",
+      "video_url": "https://x.com/MatthewHallberg/status/2100965417380655253/video/1"
+     },
+     "summary": "MatthewHallberg 在 Snap 的 SPECS AR 眼镜上用 Astra + CLAD 视觉模型识别实体宝可梦卡牌，做出覆盖 SV 151 全部 151 只宝可梦的可玩原型；Snap 官方生态账号随后转发了同类演示。",
+     "analysis": "实体卡牌+AI 视觉识别+轻量 AR 眼镜的组合，把「卡牌数字化对战」的门槛拉到消费级。宝可梦 TCG 的实体收藏价值与数字对战的便利性第一次可以被同时吃到——前提是任天堂不挥版权大棒。卡牌厂商值得把 AR 联动列入新品规划。",
+     "recommendation": "Snap SPECS 眼镜+AI 视觉：实体宝可梦卡牌秒变 AR 对战，151 只全可玩——播放 116 万",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Eurogamer · 报道",
+     "tags": [
+      "生成式AI",
+      "行业争议",
+      "Level-5"
+     ],
+     "title": "Level-5 CEO 承认线上发布会使用生成式 AI，粉丝质疑后致歉",
+     "en_title": "Level-5's CEO admits using AI to make its digital showcase \"more spectacular\".",
+     "full_text": "Professor Layton studio Level-5's CEO admits using AI to make its digital showcase \"more spectacular\". https://t.co/MeQ3ylw2lB https://t.co/gu9WVQmwSh",
+     "author": "eurogamer",
+     "date": "2026-09-19",
+     "likes": 6,
+     "views": 6835,
+     "link": "https://x.com/eurogamer/status/2101257766421532733",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSkqyW3XQAAa5vf.jpg"
+     },
+     "summary": "Level-5 社长日野晃博确认工作室近期的数字展示会使用了生成式 AI 让内容「更壮观」。此前粉丝扒出疑似未声明的 AI 内容并提出批评；据 VGC 报道，他在回应中表达了歉意。",
+     "analysis": "发布会内容的「AI 含量」正在成为新的舆情雷区：即便视觉效果成功，未声明的 AI 使用一旦被扒出，道歉几乎成为标配流程。把 AI 披露写进宣发的标准动作，比事后公关便宜得多。",
+     "recommendation": "Level-5 CEO 承认发布会用生成式 AI「更壮观」，遭粉丝扒出后致歉"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · BlizzCon 2026",
+     "tags": [
+      "暴雪",
+      "BlizzCon",
+      "影视化"
+     ],
+     "title": "BlizzCon 2026：Diablo 5 公布并定档 2029 年春，Netflix 剧集同步开发",
+     "en_title": "Diablo 5 is coming spring 2029, and a Netflix show is in development.",
+     "full_text": "A Diablo Netflix show is in development. https://t.co/Fkrvm5rxPf https://t.co/Sl0jHZ9bnB",
+     "author": "eurogamer",
+     "date": "2026-09-19",
+     "likes": 9,
+     "views": 7822,
+     "link": "https://x.com/eurogamer/status/2101227567390863782",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSkPUjuXcAA1sVm.jpg"
+     },
+     "summary": "暴雪在 BlizzCon 2026 开幕式正式公布 Diablo 5，预计 2029 年春季发售；同时确认 Netflix 版《暗黑破坏神》剧集已进入开发。系列此前从未在发售前近三年就敲定正作档期。",
+     "analysis": "提前近三年定档是暴雪重建信心的信号：用确定的时间表安抚玩家与投资人，再配合影视化扩圈。《暗黑》IP 游戏加剧集的双线运营，可能成为大厂 IP 长线经营的新模板。",
+     "recommendation": "BlizzCon 2026：Diablo 5 定档 2029 年春，Netflix 剧集同步开发——暴雪史上最早的正作定档",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · BlizzCon 2026",
+     "tags": [
+      "暴雪",
+      "星际争霸",
+      "新作公布"
+     ],
+     "title": "暴雪公布星际争霸 IP 开放世界射击新作，2030 年发售",
+     "en_title": "We want to convey confidence in some of our biggest bets.",
+     "full_text": "Blizzard explains why it's revealing StarCraft and Diablo 5 release dates so far away: \"We want to convey confidence in some of our biggest bets\". https://t.co/bx21WsSi4V https://t.co/FblHOPwAbf",
+     "author": "eurogamer",
+     "date": "2026-09-19",
+     "likes": 10,
+     "views": 7478,
+     "link": "https://x.com/eurogamer/status/2101272865932771783",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSk4hQ7WwAE0dId.jpg"
+     },
+     "summary": "暴雪在 BlizzCon 2026 公布星际争霸 IP 的开放世界射击游戏，定档 2030 年；官方解释远期定档是「想传达我们对最大赌注的信心」。同场公布的还有 Diablo 5（2029 年春）。",
+     "analysis": "《星际》IP 转型开放世界射击是暴雪近十年最大的一次品类冒险，直接进入科幻射击的第一梯队竞争区。提前四年定档本质是预期管理：用确定性强绑投资人信心，代价是任何延期都会被市场放大解读。",
+     "recommendation": "星际争霸开放世界射击新作公布：2030 年发售，暴雪称远期定档是「传达信心」",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "TheGamer · 报道",
+     "tags": [
+      "泄露",
+      "R星",
+      "GTA6"
+     ],
+     "title": "GTA5 遭 200GB 级泄露：含被砍的自由城 DLC 与 GTA6 早期资产",
+     "en_title": "Major 200GB GTA 5 Leak Shared Online, Includes Scrapped Liberty City DLC",
+     "full_text": "Major 200GB GTA 5 Leak Shared Online, Includes Scrapped Liberty City DLC https://t.co/MVo5qE0BpB https://t.co/SxVWO4LSl4",
+     "author": "thegamerwebsite",
+     "date": "2026-09-19",
+     "likes": 1,
+     "views": 1031,
+     "link": "https://x.com/thegamerwebsite/status/2101280180056576075",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSk_MBNXkAABCvZ.jpg"
+     },
+     "summary": "一个约 200GB 的 GTA5 相关文件包在网上流传，包含被取消的自由城 DLC 内容；另有报道称泄露内容涉及 GTA6 早期资产，有玩家已把 GTA6 地图搬进 GTA5 里可玩。R 星方面尚未回应。",
+     "analysis": "大规模泄露对 Take-Two 的法务与宣发节奏都是压力测试：GTA6 距发售仅剩两个月，任何未完成内容流出都可能提前固化玩家印象。对全行业的启示是：源码与资产隔离必须按「必然被泄」的标准设防。",
+     "recommendation": "200GB GTA5 泄露含被砍自由城 DLC，GTA6 早期资产流出——距发售仅剩两个月",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Rock Paper Shotgun · 报道",
+     "tags": [
+      "Roblox",
+      "平台战略",
+      "UGC"
+     ],
+     "title": "Roblox 计划允许开发者把游戏作为独立应用上架 Steam、Epic、GOG",
+     "en_title": "Roblox plan to let devs release games as \"standalone apps\".",
+     "full_text": "Roblox plan to grow their absurd gaming empire even further by letting devs release games as \"standalone apps\", potentially via Steam, Epic, and GOG. https://t.co/xMY16soNSH https://t.co/8wz6uRBReI",
+     "author": "rockpapershot",
+     "date": "2026-09-19",
+     "likes": 0,
+     "views": 2941,
+     "link": "https://x.com/rockpapershot/status/2101216494944235944",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSkFQCqWIAAgm_0.jpg"
+     },
+     "summary": "据 Rock Paper Shotgun，Roblox 计划让开发者把平台内游戏打包为「独立应用」，覆盖移动、PC 与主机，并可能经由 Steam、Epic、GOG 分发，Roblox 负责底层运行时。",
+     "analysis": "日活相当于日本总人口的 UGC 平台开始向传统商店渗透，等于把「Roblox 引擎」本身变成发行渠道。传统 PC 商店将出现一类新的「运行时壳游戏」，内容评级、分成结构与审核规则都会遇到新的界定问题。",
+     "recommendation": "Roblox 将允许开发者把游戏做成独立应用上架 Steam/Epic/GOG——UGC 平台反向渗透传统商店"
+    },
+    {
+     "idx": "游戏行业 05",
+     "source": "Eurogamer · BlizzCon 2026",
+     "tags": [
+      "暴雪",
+      "MMO",
+      "魔兽世界"
+     ],
+     "title": "《魔兽世界：Forever》正式公布：传闻多年的 Classic+ 落地",
+     "en_title": "The World of Warcraft \"Classic+\" rumours were true and it's called World of Warcraft: Forever.",
+     "full_text": "ICYMI: The World of Warcraft \"Classic+\" rumours were true and it's called World of Warcraft: Forever. https://t.co/qtRhCTQV3c https://t.co/YpF1CLnBKw",
+     "author": "eurogamer",
+     "date": "2026-09-19",
+     "likes": 5,
+     "views": 8846,
+     "link": "https://x.com/eurogamer/status/2101242667262750960",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSkdDeRXwAAM2rB.jpg"
+     },
+     "summary": "暴雪在 BlizzCon 2026 确认《魔兽世界：Forever》，即传闻已久的 Classic+ 版本；此前数据挖掘者已从暴雪官网挖到标注「wow 2」的配色代码，坐实了预告节奏。",
+     "analysis": "Classic+ 落地说明暴雪承认「新资料片追赶成本过高」正在持续流失怀旧玩家。对 MMO 品类而言，「冻结版本+持续微更新」可能成为与赛季制并行的第二种长线运营形态。",
+     "recommendation": "魔兽世界 Classic+ 实锤定名《WoW：Forever》——给怀旧玩家一个冻结版本"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "電ファミニコゲーマー · 新游报道",
+     "tags": [
+      "合作",
+      "增量冒险",
+      "Steam"
+     ],
+     "title": "CRACK：个人开发者 Rafoli 的 1-4 人协力砸巨蛋增量冒险，10月26日上线 Steam",
+     "en_title": "「超巨大な卵」の殻を割る協力ゲーム『CRACK』発表。10月27日に配信へ",
+     "full_text": "【最大4人プレイ】“超巨大な卵”の殻を割る協力ゲーム『CRACK』発表。10月27日に配信へ\nhttps://t.co/c6csXwwbub\n\nツルハシやダイナマイトなどの道具を使い、仲間と協力して卵の中身を突き止めろ。誰が造ったか分からない研究所の奥に隠された部屋を探索することにも https://t.co/V4goAKfVUR",
+     "author": "denfaminicogame",
+     "date": "2026-09-19",
+     "likes": 3387,
+     "views": 456057,
+     "link": "https://x.com/denfaminicogame/status/2101205221187920246",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2101205185502851072/pu/img/hy9Bl2l8Rwi8Oppx.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2101205221187920246/video/1"
+     },
+     "summary": "个人开发者 Rafoli 公布《CRACK》：1-4 人协力、用镐与炸药敲开研究所里的超巨大蛋、逐步解锁隐藏房间的增量冒险游戏。Steam 页面显示 10 月 26 日发售，发售时暂不支持日语。",
+     "analysis": "",
+     "recommendation": "CRACK：个人开发 1-4 人协力砸超巨蛋，镐头炸药轮番上阵——10月26日上线 Steam",
+     "game_ref": "CRACK",
+     "enrichment": {
+      "game_name": "CRACK",
+      "genre": "合作增量冒险 / 探索解谜",
+      "developer": "Rafoli（个人开发者）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": "2026年10月26日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4312190/CRACK/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4312190/9dfa7d4efdcc88aa5663a31f02633391eb5ef843/header.jpg?t=1789670559",
+      "youtube_video": null,
+      "description": "【核心玩法】1-4人合作的增量冒险游戏：玩家扮演谜之研究所的研究员，任务只有一个——砸开那颗来历不明的超巨大蛋。用镐、炸药等工具分工敲壳，蛋会对你的动作做出反应；随着外壳层层剥落，解锁研究所深处被封锁的隐藏房间，逐步逼近「蛋里到底装着什么」的真相。\n\n【合作设计】多人工种分工明确：有人架镐持续输出、有人布置炸药定点爆破、有人跑图收集补给与解锁机关；配合与现场救火构成主要乐趣，单人也支持完整流程。\n\n【美术与氛围】卡通渲染搭配研究所悬疑氛围，「谁造了这颗蛋」的叙事钩子贯穿始终，PV 末尾的揭示镜头留足了悬念。\n\n【优势】一句话玩法极其清晰（砸蛋）；增量推进+隐藏房间的上瘾结构；个人开发者的高概念低成本执行。\n\n【不足】长线深度取决于中后期工具与房间变化量；发售时暂不支持日语，本地化覆盖待观察；题材单一，长草期留存存疑。\n\n【综合】个人开发者 Rafoli 的高概念协力作，10月26日登陆 Steam，适合拉上两三个朋友组一个「下班后砸蛋小组」。",
+      "why_notable": "一句话玩法+个人开发者执行，协力增量冒险的传播模板；電ファミ报道当日播放超45万",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": null
+     },
+     "featured": true
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "電ファミニコゲーマー · 新游报道",
+     "tags": [
+      "多人对战",
+      "捉迷藏",
+      "Steam"
+     ],
+     "title": "Mimic Busters：DevAdam 与 Tape Corps 开发的 3D 建模变装捉迷藏，10月15日发售",
+     "en_title": "3Dモデリングツールで変装するかくれんぼゲーム『Mimic Busters』10月16日にリリース",
+     "full_text": "3Dモデリングツールで変装するかくれんぼゲーム『Mimic Busters』10月16日にリリース。作って、塗って、プレイヤーの芸術力が試される\nhttps://t.co/xo3Eme9Xjx\n\nミミックはそこら中にあるモノになりきり、ハンターは時間切れ前にミミックを暴き出す。Steamにて体験版が配信中 https://t.co/DgvTZmvYGg",
+     "author": "denfaminicogame",
+     "date": "2026-09-19",
+     "likes": 2071,
+     "views": 372812,
+     "link": "https://x.com/denfaminicogame/status/2101144912712609967",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2101144868139708416/pu/img/0LMgUso1dIh16y8w.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2101144912712609967/video/1"
+     },
+     "summary": "DevAdam 与 Tape Corps 开发、GameDev.ist 发行的在线多人捉迷藏：Mimic 一方用内置 3D 建模工具把自己伪装成场景物件，Hunter 一方限时揪出所有伪装者。Steam 体验版已上线，支持日语，10 月中旬正式发售。",
+     "analysis": "",
+     "recommendation": "Mimic Busters：自己建模自己涂装再藏进场景的多人捉迷藏——体验版已上线 Steam",
+     "game_ref": "Mimic Busters",
+     "enrichment": {
+      "game_name": "Mimic Busters",
+      "genre": "多人对战 / 捉迷藏 / UGC",
+      "developer": "DevAdam × Tape Corps",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": "2026年10月15日",
+      "steam_rating": "未发售（体验版已上线）",
+      "steam_url": "https://store.steampowered.com/app/5167420/Mimic_Busters/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5167420/3fc6fa264b2a09fe70e5539a53858978fc754422/header.jpg?t=1789780630",
+      "youtube_video": null,
+      "description": "【核心玩法】在线多人捉迷藏对抗：Mimic（伪装者）用内置的简易 3D 建模+涂装工具，把自己伪装成关卡里任何「看起来合理」的物件——箱子、椅子甚至消防栓；Hunter（猎人）限时进场，在倒计时结束前揪出全部 Mimic。\n\n【差异化】不同于同类「选道具变身」的方案，本作要求玩家亲手建模、亲手涂装——伪装质量直接取决于玩家的美术力与脑洞，「考验玩家的艺术力」是官方主打的核心卖点。\n\n【美术与氛围】明快卡通风，长着意志的立方体 Mimic 自带喜剧效果，翻车与反杀都极具节目性。\n\n【优势】UGC 伪装让每局对抗都充满变数；上手门槛低、直播切片传播性强；Steam 体验版已可免费试玩。\n\n【不足】在线多人独游的长期匹配池是生死线；简易建模工具仍存在学习曲线，可能劝退轻度玩家。\n\n【综合】DevAdam 与 Tape Corps 开发、GameDev.ist 发行，10月15日正式发售，支持日语界面与字幕，体验版已上线。",
+      "why_notable": "把玩家美术力直接做成对抗资源的捉迷藏，UGC 伪装带来无限变数",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": null
+     },
+     "featured": true
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "AUTOMATON · 新游报道",
+     "tags": [
+      "生活模拟",
+      "合作",
+      "EA"
+     ],
+     "title": "PAO PAO（动物小镇食堂物语）：ArtDock 开发的 4 人协力海边食堂生活模拟，10月26日 EA",
+     "en_title": "最大4人協力「海辺レストラン」生活シム『どうぶつの町の食堂物語』10月26日早期アクセス配信へ",
+     "full_text": "最大4人協力“海辺レストラン“生活シム『どうぶつの町の食堂物語』10月26日早期アクセス配信へ。ボートレースにゲームセンター、寄り道だらけの”予定ぎっしり“島ライフ\nhttps://t.co/dg1D9O9UFa https://t.co/QDLOvQmqaM",
+     "author": "AUTOMATONJapan",
+     "date": "2026-09-19",
+     "likes": 2460,
+     "views": 247988,
+     "link": "https://x.com/AUTOMATONJapan/status/2101153853685329987",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2101153730947346432/img/yxqzoeM2eRlib9hZ.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2101153853685329987/video/1"
+     },
+     "summary": "ArtDock 开发、Dreland Enterprises 发行的海边小镇生活模拟（Steam 英文名 PAO PAO）：经营海边食堂，兼营种田、钓鱼、划船比赛与游戏中心，10 月 26 日以早期测试形式登陆 Steam，支持单人或最多 4 人在线协力，Demo 已上线。",
+     "analysis": "",
+     "recommendation": "PAO PAO：海边食堂经营+划船+游戏中心的 4 人协力岛生活——10月26日 EA 上线",
+     "game_ref": "PAO PAO",
+     "enrichment": {
+      "game_name": "PAO PAO",
+      "genre": "生活模拟 / 经营 / 合作",
+      "developer": "ArtDock（发行：Dreland Enterprises）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": "2026年10月26日（早期测试）",
+      "steam_rating": "未发售（Demo 已上线）",
+      "steam_url": "https://store.steampowered.com/app/3024130/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3024130/621e9f6973dbab54bbeb533485e03a99009acdca/header.jpg?t=1789805968",
+      "youtube_video": null,
+      "description": "【核心玩法】海边小镇生活模拟：经营一家面向动物镇民的食堂，做菜与接客是主线；之外的岛屿时间完全自由——种田、钓鱼、开船竞速、泡游戏中心、到处串门闲逛，官方自称「行程排得满满当当的岛屿生活」。支持单人或最多 4 人在线协力。\n\n【差异化】「食堂经营 × 生活模拟」双循环：餐厅是稳定的节奏锚点（备菜—营业—升级），岛屿探索是长线动力（解锁食材、结识居民、开辟新区域）。\n\n【美术与氛围】治愈系卡通海岛风，动物居民+海边小镇的组合瞄准《动物之森》与治愈系经营游戏之间的空档。\n\n【优势】4 人协力让经营模拟有了聚会属性；副玩法密度高（船赛、游戏中心等）；Demo 已可试玩。\n\n【不足】EA 阶段的内容量与长线目标存疑；「行程排满」式玩法对休闲玩家可能偏肝；治愈系赛道竞争激烈。\n\n【综合】ArtDock 开发、Dreland Enterprises 发行，10 月 26 日早期测试登陆 Steam，游戏内将支持日语显示与字幕。",
+      "why_notable": "动森式海岛×食堂经营的双循环设计，4 人协应对生活模拟是稀缺配置",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "Game*Spark · 新游报道",
+     "tags": [
+      "合作",
+      "越狱",
+      "新公布"
+     ],
+     "title": "Get Us Out：AM Playhouse 开发、PlayWay 发行的 1-4 人协力越狱游戏公布",
+     "en_title": "最大4人協力脱獄ゲーム『Get Us Out』発表！綿密な計画は開始1分で崩壊",
+     "full_text": "最大4人協力脱獄ゲーム『Get Us Out』発表！綿密な計画は開始1分で崩壊。捕まった仲間を救い出しながら全員での脱走を目指す\nhttps://t.co/rIrupgp0vx https://t.co/8OA0mZhRNd",
+     "author": "gamespark",
+     "date": "2026-09-19",
+     "likes": 836,
+     "views": 83830,
+     "link": "https://x.com/gamespark/status/2101250150438207926",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2101249981290270720/pu/img/gqDbxsdczJEAoqWG.jpg",
+      "video_url": "https://x.com/gamespark/status/2101250150438207926/video/1"
+     },
+     "summary": "PlayWay 公布 AM Playhouse 开发的 1-4 人协力越狱游戏：探索看守巡逻区、收集道具、开门、解除安保，被抓的队友要抢钥匙营救；Steam 页面已上线，发售日期待定，支持 Windows/Mac/Linux。",
+     "analysis": "",
+     "recommendation": "Get Us Out：1-4 人协力越狱，缜密计划 1 分钟崩盘后全靠即兴——页面已上线",
+     "game_ref": "Get Us Out",
+     "enrichment": {
+      "game_name": "Get Us Out",
+      "genre": "合作动作冒险 / 脱逃",
+      "developer": "AM Playhouse（发行：PlayWay S.A.）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5088820/Get_Us_Out/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5088820/6a66198d4d6f8d9531001e2e2fb3950b6115e8c1/header.jpg?t=1789814843",
+      "youtube_video": null,
+      "description": "【核心玩法】1-4 人协力脱狱：在看守巡逻的监狱区域搜集道具、开门、解除安保、解开谜题，最终全员抵达出口。队友被抓时需要设法抢夺钥匙实施营救——「缜密计划」与「彻底混乱」并存的派对型合作玩法。\n\n【设计看点】官方主打「周密计划开始 1 分钟就会崩塌」：巡逻随机性与突发警报强迫玩家即兴改方案；营救机制让失败本身也变成节目效果，而非单纯重开。\n\n【平台与发行】AM Playhouse 开发、PlayWay S.A.（知名职业模拟题材发行商）发行，Steam 页面已上线，发售日期待定，支持 Windows/Mac/Linux 三平台。\n\n【优势】低门槛高互动的合作框架，直播与派对场景适配度高；三平台支持扩大受众。\n\n【不足】协力脱逃玩法赛道拥挤，最终成色取决于关卡设计密度；PlayWay 系产品历史素质波动较大。\n\n【综合】值得先加入愿望单观察，等首个实机关卡演示再判断完成度。",
+      "why_notable": "「计划 1 分钟崩盘」的派对叙事自带传播点，PlayWay 发行管线成熟",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "@2_left_thumbs · 开发者动态",
+     "tags": [
+      "愿望单",
+      "发售"
+     ],
+     "title": "Crown Siege：愿望单破 4 万后于 9 月 18 日发售",
+     "en_title": "We just hit 40,000 wishlists! CROWN SIEGE launches TOMORROW!!",
+     "full_text": "We just hit ⭐️ 40,000 ⭐️ wishlists!\nCROWN SIEGE launches TOMORROW!! https://t.co/yLJbmfENFu",
+     "author": "2_left_thumbs",
+     "date": "2026-09-17",
+     "likes": 366,
+     "views": 29156,
+     "link": "https://x.com/2_left_thumbs/status/2100643049604784547",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2100642689993576448/img/Xy1XDTNv-7X4XijD.jpg",
+      "video_url": "https://x.com/2_left_thumbs/status/2100643049604784547/video/1"
+     },
+     "summary": "2 Left Thumbs 宣布《Crown Siege》愿望单突破 4 万，并于 9 月 18 日正式发售。Steam 页面已上线。",
+     "analysis": "",
+     "recommendation": "Crown Siege：愿望单 4 万起飞，9 月 18 日正式发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "@rakkozamurai · 游戏实况",
+     "tags": [
+      "独立游戏",
+      "整活"
+     ],
+     "title": "《蒲公英要挺住》：变成蒲公英用格挡硬抗各种攻击的整活小游戏爆火",
+     "en_title": "「タンポポ」になって色んな攻撃をパリィで耐えるゲーム【タンポポは耐える】",
+     "full_text": "”タンポポ”になって色んな攻撃をパリィで耐えるゲーム【タンポポは耐える】\n俺も一生懸命に咲き誇るタンポポみたいに頑張ろうと思います...(感動)\n#タンポポは耐える https://t.co/aKziCq0RN6",
+     "author": "rakkozamurai",
+     "date": "2026-09-19",
+     "likes": 4808,
+     "views": 349146,
+     "link": "https://x.com/rakkozamurai/status/2101140532181557460",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2101139252759400448/img/TA8v5BqmPb2TExG6.jpg",
+      "video_url": "https://x.com/rakkozamurai/status/2101140532181557460/video/1"
+     },
+     "summary": "日本开发者社区走红的小游戏：玩家化身一朵蒲公英，用格挡硬抗各种攻击，评论区直呼被治愈。单条视频播放近 35 万。",
+     "analysis": "",
+     "recommendation": "蒲公英用格挡硬抗全屏攻击，35 万播放的日式整活小游戏——评论区被治愈",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "@TheLastStash_ · 开发者公告",
+     "tags": [
+      "Demo",
+      "模拟经营"
+     ],
+     "title": "The Last Stash：末日开店模拟 Demo 上线，卖出的物资也是自己的口粮",
+     "en_title": "Run a shop after the apocalypse. Just remember: the food, water and fuel you sell are also your own supplies.",
+     "full_text": "The Last Stash demo is out.\n\nRun a shop after the apocalypse. Just remember: the food, water and fuel you sell are also your own supplies. https://t.co/a71dlQ1UU0",
+     "author": "TheLastStash_",
+     "date": "2026-09-18",
+     "likes": 33,
+     "views": 3167,
+     "link": "https://x.com/TheLastStash_/status/2101096994609705121",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2101096584507473920/img/A4bOkPwBwX-fVxNe.jpg",
+      "video_url": "https://x.com/TheLastStash_/status/2101096994609705121/video/1"
+     },
+     "summary": "末日背景下经营杂货店的模拟游戏《The Last Stash》Demo 上线 Steam：货架上的食物、水与燃料同时也是你自己的生存物资，卖出还是自用构成核心抉择。",
+     "analysis": "",
+     "recommendation": "末日开店 Demo 上线：货架上的水和燃料也是你自己的生存物资",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Niche Gamer · 报道",
+     "tags": [
+      "叙事",
+      "多结局"
+     ],
+     "title": "Faraday Blues：跨越 64 个结局改写一个家庭命运的新游曝光",
+     "en_title": "Faraday Blues lets you rewrite one family's fate across 64 endings",
+     "full_text": "Faraday Blues lets you rewrite one family’s fate across 64 endings: https://t.co/e0svEvot5x https://t.co/5thTfyu703",
+     "author": "nichegamer",
+     "date": "2026-09-18",
+     "likes": 24,
+     "views": 3893,
+     "link": "https://x.com/nichegamer/status/2100993561256722504",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HSg6gn_WwAAhuUj.jpg"
+     },
+     "summary": "Niche Gamer 报道《Faraday Blues》：玩家可以改写一个家庭的命运，游戏提供 64 个结局。Steam 页面已上线。",
+     "analysis": "",
+     "recommendation": "Faraday Blues：一个家庭 × 64 个结局的命运改写器",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "Niche Gamer · 报道",
+     "tags": [
+      "JRPG",
+      "沙盒"
+     ],
+     "title": "The End of History：中世纪沙盒 JRPG 宣布 2027 年推出正式版",
+     "en_title": "Ambitious medieval sandbox JRPG The End of History hits full release in 2027",
+     "full_text": "Ambitious medieval sandbox JRPG The End of History his full release in 2027: https://t.co/y13mc3Rx0J https://t.co/5Fr8cpqr00",
+     "author": "nichegamer",
+     "date": "2026-09-18",
+     "likes": 30,
+     "views": 3717,
+     "link": "https://x.com/nichegamer/status/2101040589798007250",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HShlSEeXIAEgoys.jpg"
+     },
+     "summary": "Niche Gamer 报道：野心十足的中世纪沙盒 JRPG《The End of History》将于 2027 年迎来正式版（1.0）。",
+     "analysis": "",
+     "recommendation": "The End of History：中世纪沙盒 JRPG，2027 年正式版",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "PC Gamer · 报道",
+     "tags": [
+      "引擎",
+      "CDPR",
+      "虚幻引擎"
+     ],
+     "title": "CDPR 重申《巫师 4》弃用自研引擎与《赛博朋克 2077》技术问题无关",
+     "en_title": "The dream of the company was actually never to make technology.",
+     "full_text": "CD Projekt says abandoning its in-house engine for The Witcher 4 was unrelated to Cyberpunk 2077 https://t.co/MueyJfbAPs",
+     "author": "pcgamer",
+     "date": "2026-09-19",
+     "likes": 71,
+     "views": 23466,
+     "link": "https://x.com/pcgamer/status/2101271726651040003",
+     "media": null,
+     "summary": "CDPR 重申《巫师 4》弃用 RED 引擎改用虚幻 5 的决定与《赛博朋克 2077》的技术翻车无关，称「公司的梦想从来不是做技术」，自研引擎只是实现愿景的手段。",
+     "analysis": "自研引擎世代落幕再添一例：中间件成熟后，3A 大厂维持引擎团队的经济性持续恶化。但《巫师 4》的实际品质，最终仍取决于虚幻 5 在开放世界与大规模 NPC 场景下的调优能力。",
+     "recommendation": "CDPR：《巫师 4》转虚幻 5 与 2077 技术问题无关——「公司的梦想从来不是造引擎」"
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "PC Gamer · 报道",
+     "tags": [
+      "民间补丁",
+      "老游戏",
+      "社区"
+     ],
+     "title": "《神偷：暗黑计划》民间引擎补丁新增官方重制版都没有的大功能",
+     "en_title": "This unofficial engine patch for Thief: The Dark Project adds a huge new feature",
+     "full_text": "This unofficial engine patch for Thief: The Dark Project adds a huge new feature https://t.co/3YNWxkO6tc",
+     "author": "pcgamer",
+     "date": "2026-09-19",
+     "likes": 25,
+     "views": 12687,
+     "link": "https://x.com/pcgamer/status/2101303205263262157",
+     "media": null,
+     "summary": "PC Gamer 报道：《神偷：暗黑计划》的非官方引擎补丁为这款近 30 年前的潜行游戏加入了新特性，且该功能不会出现在 Nightdive 即将推出的官方重制版中。",
+     "analysis": "老游戏的社区维护正在与官方重制版形成「功能竞赛」：民间补丁的迭代速度与自由度均高于官方。经典 IP 复活时如何与社区补丁共存，已成为 Nightdive 们的必修课。",
+     "recommendation": "近 30 年的《神偷》民间引擎补丁，加入官方重制版都没有的新功能"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**BlizzCon 2026 是今天绝对主线**\n暴雪一口气公布 Diablo 5（2029 年春）与星际争霸 IP 开放世界射击（2030 年），《魔兽世界：Forever》同步官宣，官方称远期定档是「想传达对最大赌注的信心」。同日 GTA5 遭 200GB 级泄露，而 GTA6 距发售仅剩两个月。\n\n**协力玩法新游 24 小时内扎堆曝光**\n个人开发者的《CRACK》（1-4 人砸巨蛋）、Mimic Busters（建模变装捉迷藏）、PAO PAO（海边食堂生活模拟）、Get Us Out（协力越狱）四款新作密集公布，全部主打多人合作。\n\n**AI 继续渗透开发与宣发链路**\nJev 演示实时关卡生成、AR 眼镜把实体宝可梦卡变成可玩游戏、Level-5 因发布会未声明使用生成式 AI 而致歉。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

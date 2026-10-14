@@ -1,0 +1,527 @@
+{
+  "date": "2026-09-29",
+  "meta": {
+    "raw_count": 177,
+    "filtered_count": 168,
+    "selected_count": 13,
+    "crawl_time": "2026-09-29 17:30"
+  },
+  "lede": "ALATURKA：零预算直播开发两年，70年代伊斯坦布尔送烤肉版GTA——预告片180万浏览\n孩子口述需求、Opus 5.5 逐条实现：画笔武器四色攻击的开放世界 demo 一晚成型",
+  "editors_pick": [
+    { "section_id": "indie", "item_index": 0, "hook": "ALATURKA：零预算直播开发两年，70年代伊斯坦布尔送烤肉版GTA——预告片180万浏览" },
+    { "section_id": "ai", "item_index": 0, "hook": "孩子口述需求、Opus 5.5 逐条实现：画笔武器四色攻击的开放世界 demo 一晚成型——100万浏览" }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "孩子口述需求、Opus 5.5 实现塞尔达风开放世界 demo\n独立开发者亲历：开发进度发上网几天就被 AI 克隆\nWillowmere 零资产文件：贴图、模型、音乐全由代码生成"
+    },
+    {
+      "id": "industry",
+      "text": "Xbox 裁员重创 World's Edge：帝国时代团队近半被裁、新作取消\nWardogs 销量破 300 万，CEO 强制团队休假\nParadox 禁用 1800 年后历史人物 Discord 头像\nPhysint 4 亿美元预算传闻被多方回撤"
+    },
+    {
+      "id": "indie",
+      "text": "ALATURKA：零预算直播开发两年的伊斯坦布尔 GTA-like\nProject Zomboid 3D 第一人称实机首曝\nHappy Wheels 上 Steam：75 万愿望单超预期 150 倍\nThe Y-Files：4 人协力造火箭逃离行星解体"
+    },
+    {
+      "id": "tools",
+      "text": "Mini 浏览器移植 Rust+Swift，内嵌 MCP 驱动 AI Agent\n3D 像素渲染器攻克球体稳定性"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Danny Limanseta · 开发者实测",
+          "tags": ["Vibe Coding", "Claude Opus 5.5", "AI编程"],
+          "featured": true,
+          "title": "爸爸和孩子们用 Opus 5.5 vibe code 出塞尔达风开放世界游戏",
+          "en_title": "Yesterday, my boys and I vibe coded a game together.",
+          "full_text": "Yesterday, my boys and I vibe coded a game together. They tell me what they want in their game and I prompt it into Opus 5.5 to build it.\n\nAnd of course they picked \"Zelda Breath of the Wild\" inspired game, where they can explore an open world, do dungeon puzzles, fight mini bosses and a final boss. The twist is that the hero holds a giant paintbrush as a weapon, each color had a different attack and effect (red = fire, blue = ice, yellow = bounce, green = vines). And oh they also wanted to fly ...",
+          "author": "DannyLimanseta",
+          "date": "2026-09-27",
+          "likes": 4003,
+          "views": 1008231,
+          "link": "https://x.com/DannyLimanseta/status/2104215873120764032",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104215734662713344/img/aDVqvRdKjo8rrt8A.jpg",
+            "video_url": "https://x.com/DannyLimanseta/status/2104215873120764032/video/1"
+          },
+          "summary": "开发者 Danny Limanseta 让孩子们口述需求，再用 Claude Opus 5.5 逐条 prompt 实现：开放世界探索、地牢解谜、小 Boss 与最终 Boss。孩子们还要求主角手持巨型画笔作武器，红蓝黄绿四色对应火、冰、弹跳、藤蔓四种攻击效果，外加飞行能力。",
+          "analysis": "非技术用户用自然语言就能在极短时间内拼出可玩的开放世界原型，说明 AI 编程门槛已低到\"儿童口述即可\"。对行业的启示是：玩法原型验证与概念演示的产能被极大解放，\"点子到可玩 demo\"的周期从月压缩到天，策划侧的验证工具链值得重估。",
+          "recommendation": "孩子口述需求、Opus 5.5 逐条实现：画笔武器四色攻击的开放世界 demo 一晚成型"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "BartekDev · 独立开发者",
+          "tags": ["AI克隆", "独立开发", "行业讨论"],
+          "featured": true,
+          "title": "独立开发者亲历：开发进度发上网，几天内就被 AI 克隆",
+          "en_title": "Someone just cloned my game with AI.",
+          "full_text": "Someone just cloned my game with AI. No beef, from his profile it looks like he is just messing around and having fun with what the model can spit out and probably will not finish anything. I too sometimes use some form of ai to brainstorm and maybe test some idea before i put my time to it.\n\nStarted thinking though. Posting dev progress used to feel safer because nobody was realistically catching up in a couple of days. Now any decent idea gets cloned almost immediately and the feed is so stuff...",
+          "author": "BartekK349090",
+          "date": "2026-09-27",
+          "likes": 4775,
+          "views": 349936,
+          "link": "https://x.com/BartekK349090/status/2104181652746366988",
+          "media": null,
+          "summary": "独立开发者 Bartek 发现自己的游戏被他人用 AI 迅速克隆。对方大概率只是玩票、不会做完，但他真正担心的是：过去展示开发进度相对安全，现在任何像样的点子都会被立刻复刻，社交平台上的开发日志正在变成\"剧透\"。",
+          "analysis": "AI 把\"复刻一个玩法\"的成本压到几天以内，独立开发者的宣传节奏被倒逼改变：先上 Steam 页面积累愿望单、再逐步曝光成为更稳妥的路径。同日开发者 Jo 的后续讨论（简单游戏先建页再宣传）正是对这一焦虑的回应，值得做独立发行策略时参考。",
+          "recommendation": "独立开发者亲历：开发进度发上网，几天内就被 AI 克隆——创意保鲜期正在归零"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Jurly · 技术观察",
+          "tags": ["生成式开发", "Three.js", "程序化生成"],
+          "title": "Willowmere 全程用 Opus 5.5 构建：零资产文件，贴图模型音乐全代码生成",
+          "en_title": "The asset pipeline is becoming code.",
+          "full_text": "The asset pipeline is becoming code.\n\nWillowmere was built with Claude Opus 5.5:\n\n• No PNGs\n• No 3D model files\n• No audio samples\n\nEvery object is generated procedurally with Three.js, while the music and sound effects are synthesized in-browser through the Web Audio API.\n\nGame design still needs taste.\n\nBut the production bottlenecks are disappearing fast.",
+          "author": "jurlycat",
+          "date": "2026-09-27",
+          "likes": 783,
+          "views": 31531,
+          "link": "https://x.com/jurlycat/status/2104002281641542008",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104002235269320704/img/y9G4_zWsyjAWT9TM.jpg",
+            "video_url": "https://x.com/jurlycat/status/2104002281641542008/video/1"
+          },
+          "summary": "开发者 Jurly 用 Claude Opus 5.5 构建 Willowmere：项目中没有任何 PNG 贴图、3D 模型文件或音频采样，所有物件由 Three.js 程序化生成，音乐与音效通过 Web Audio API 在浏览器内合成。作者判断：游戏设计仍需要品味，但生产瓶颈正在快速消失。",
+          "analysis": "\"资产即代码\"把 AI 从\"替你画一张图\"推进到\"替你定义资产生成规则\"：产出体积小、可参数化、可无限变体。对中小团队而言，美术与音频的产能天花板被绕开，但同质化风险同步累积——品味与方向感正在成为新的稀缺资源。",
+          "recommendation": "Willowmere 零资产文件：贴图、模型、音乐全由 Opus 5.5 代码化生成——生产瓶颈正在消失"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "PC Gamer · 行业新闻",
+          "tags": ["Xbox裁员", "World's Edge", "RTS"],
+          "featured": true,
+          "title": "Xbox 裁员重创 World's Edge：帝国时代团队近半被裁、新作取消",
+          "en_title": "Latest Xbox layoffs reportedly devastated Age of Empires developer and canceled its next game",
+          "full_text": "Latest Xbox layoffs reportedly devastated Age of Empires developer and canceled its next game https://t.co/mnOomEnhpK",
+          "author": "pcgamer",
+          "date": "2026-09-27",
+          "likes": 107,
+          "views": 47167,
+          "link": "https://x.com/pcgamer/status/2104244179270611132",
+          "media": null,
+          "summary": "据 PC Gamer 报道（已核实原文），Xbox 9 月 22 日 \"reset\" 裁员波及 World's Edge（现 Age of Empires 系列开发方）：前创意总监 Adam Isgreen 证实近半数员工被裁、本人离任；前高级工程师 Andrew Martz 称裁员同时取消了下一个项目。工作室现划归 Activision 管辖。本轮 Xbox 共裁员 268 人，Obsidian 并入 Bethesda，Halo 交由 Activision 负责。",
+          "analysis": "RTS 品类核心团队再遭结构性收缩，Age of Empires 的后续内容与新作节奏存疑。微软的 \"reset\" 从砍项目升级到砍品类守护者，经典 IP 长线运营的风险信号明确——对同为长线运营品类的团队而言，母公司战略优先级变化是必须持续跟踪的变量。",
+          "recommendation": "Xbox 裁员波及 World's Edge：帝国时代团队近半走人、新作取消，工作室划归 Activision"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "MP1st · 市场表现",
+          "tags": ["销量里程碑", "团队管理"],
+          "featured": true,
+          "title": "Wardogs 销量破 300 万，CEO \"强制\"员工休假，预告下一部更\"劲爆\"",
+          "en_title": "Wardogs is a bona fide hit with 3 million units sold already.",
+          "full_text": "Wardogs is a bona fide hit with 3 million units sold already, as studio CEO @Brammflakes \"forces\" staff to take time off to reset.\n\nNext part will be \"spicy...\"\n\nMore: https://t.co/30vmEFTIkT https://t.co/ZYfstrllno",
+          "author": "MPFirst",
+          "date": "2026-09-28",
+          "likes": 6,
+          "views": 850,
+          "link": "https://x.com/MPFirst/status/2104361458805223932",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTQxk20bMAAhSD2.jpg"
+          },
+          "summary": "MP1st 报道，Wardogs 已售出 300 万份。工作室 CEO @Brammflakes \"强制\"员工休假调整状态，并预告下一部作品内容将会 \"spicy\"。",
+          "analysis": "300 万销量是当下市场对差异化玩法的直接投票，而 CEO 强制休假的表态则是对 crunch 文化的反向姿态。对团队管理侧的启示：销量爆发期保住团队产能与后续内容更新节奏，比趁热度加码更影响长线口碑。",
+          "recommendation": "Wardogs 销量破 300 万，CEO 强制全员休假——爆款之后的产能保卫战"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Rock Paper Shotgun · 平台政策",
+          "tags": ["Paradox", "社区管理", "历史题材"],
+          "title": "Paradox 禁用 1800 年后出生历史人物的 Discord 头像，平息 HoI4 阿塔图尔克风波",
+          "en_title": "\"We clearly handled that responsibility poorly\"",
+          "full_text": "\"We clearly handled that responsibility poorly\": Paradox ban Discord profile pics of historical figures born after 1800, after bust-up with Hearts of Iron 4 players over Atatürk banning https://t.co/htByCQ9XPr",
+          "author": "rockpapershot",
+          "date": "2026-09-28",
+          "likes": 31,
+          "views": 30010,
+          "link": "https://x.com/rockpapershot/status/2104505212475932998",
+          "media": null,
+          "summary": "因《Hearts of Iron 4》移除阿塔图尔克引发的玩家冲突持续升级，Paradox 禁止其 Discord 服务器使用 1800 年后出生历史人物的头像，并承认\"我们显然没有处理好这份责任\"。",
+          "analysis": "历史敏感内容的审查边界正从游戏内扩展到官方社区平台，发行商在\"历史敏感度\"与\"玩家自由\"之间的回旋空间越来越小。运营侧的启示是：敏感内容的处理预案需要覆盖游戏外的官方社区，否则游戏内争议会反向灼伤品牌。",
+          "recommendation": "Paradox 禁用 1800 年后历史人物 Discord 头像，HoI4 阿塔图尔克风波外溢至社区平台"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "PC Gamer · 报道核实",
+          "tags": ["Kojima", "Physint", "预算传闻"],
+          "title": "Physint \"4 亿美元预算\"传闻被多方回撤：Xbox 实际出价远低于此",
+          "en_title": "Kojima reportedly getting less money from Xbox than original 9 figure PlayStation budget for Physint",
+          "full_text": "Kojima reportedly getting less money from Xbox than original 9 figure PlayStation budget for Physint https://t.co/dURHzuYmY2",
+          "author": "pcgamer",
+          "date": "2026-09-28",
+          "likes": 291,
+          "views": 88237,
+          "link": "https://x.com/pcgamer/status/2104381647898697870",
+          "media": null,
+          "summary": "周末流传的\"小岛秀夫 Physint 预算 4 亿美元\"说法已被多家媒体回撤：多方信源称 Xbox 为这款潜行新作支付的对价远低于该数字，也低于当年 PlayStation 的九位数预算。多家报道：Eurogamer, TheGamer",
+          "analysis": "传闻与辟谣在 48 小时内完成一轮流转，反映的是行业对\"天价预算\"叙事的敏感度：3A 单作成本叙事正在收紧，平台方为明星制作人支付溢价的时代接近尾声。跟踪大作预算盘口时，未核实数字的传播速度仍快于辟谣。",
+          "recommendation": "Physint 4 亿美元预算传闻被多方回撤：Xbox 实际出价远低于九位数，天价预算叙事退潮"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "bufuak · 开发者公布",
+          "tags": ["开放世界", "GTA-like", "Steam"],
+          "featured": true,
+          "title": "ALATURKA：独立开发两年全程直播、零预算打造的 70 年代伊斯坦布尔 GTA-like",
+          "en_title": "i spent all my free time over the last two years building ALATURKA from scratch, entirely on livestreams with a $0 budget.",
+          "full_text": "i spent all my free time over the last two years building ALATURKA from scratch, entirely on livestreams with a $0 budget.\n\nit is basically a PS2-era 70s Istanbul GTA with heavy driving physics and döner kebab deliveries.\n\nhere is the new official trailer. RTs appreciated. https://t.co/UmjVDAYMAD",
+          "author": "bufuakgames",
+          "date": "2026-09-27",
+          "likes": 20798,
+          "views": 1805828,
+          "link": "https://x.com/bufuakgames/status/2104295576950993361",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104292194152558593/img/Bmk0mv5MOYGonUCp.jpg",
+            "video_url": "https://x.com/bufuakgames/status/2104295576950993361/video/1"
+          },
+          "summary": "独立开发者 bufuak 用两年空闲时间、全程直播、零预算从零打造 ALATURKA：PS2 时代画风的 1970 年代伊斯坦布尔开放世界，驾驶物理厚重，核心循环是烤肉学徒切肉、送烤肉卷，同时接受当地人介绍的来钱更快的\"灰色工作\"。新预告片获 2 万+赞、180 万浏览，Steam 页面已开放愿望单。",
+          "recommendation": "ALATURKA：零预算直播开发两年，70年代伊斯坦布尔送烤肉版GTA——预告片180万浏览",
+          "game_ref": "ALATURKA",
+          "enrichment": {
+            "game_name": "ALATURKA",
+            "genre": "开放世界动作 / 驾驶模拟 / GTA-like",
+            "developer": "bufuak（独立开发者，全程直播开发）",
+            "platforms": ["Steam"],
+            "price": "未公布（商店页含 Free To Play 标签）",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4226560/ALATURKA/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4226560/33021a61124d90a298b4ee83ef7d96825f016b13/header.jpg?t=1790533488",
+            "youtube_video": null,
+            "description": "【核心玩法】PS2 时代画风的开放世界动作游戏，舞台为 1970 年代的伊斯坦布尔（博斯普鲁斯）。玩家扮演投奔叔叔的烤肉学徒：切烤肉、送烤肉卷做正经生意，同时接待当地人介绍的\"灰色工作\"——报酬更好但风险自负。驾驶物理刻意做重，还原老式车辆的手感，城市为无缝开放世界。\n\n【美术与氛围】刻意复刻 PS2 时代的多边形密度与贴图质感，配合 70 年代伊斯坦布尔的地域景观：山坡街道、渡轮、集市与老式车流，地域文化浓度是最大记忆点。\n\n【对标定位】\"地区版 GTA\"路线：用真实城市文化底座替换传统犯罪都市叙事，与近年多款地域题材独立开放世界同属一个流派。\n\n【优势】零预算加全程直播开发的叙事本身就是传播资产；地域题材在全球市场稀缺；驾驶与物理手感差异化。\n【不足】开发周期与内容体量未知；商业模式尚未明确；复古画风对部分玩家有门槛。\n\n【综合】预告片 180 万浏览证明\"强地域文化+复古画风+开发故事\"组合的传播力，愿望单转化与后续开发节奏值得跟踪。",
+            "why_notable": "零预算、纯直播开发的地区题材 GTA-like 拿到 180 万浏览，地域文化差异化打法再次被验证",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Agoat · 社区实况",
+          "tags": ["丧尸生存", "第一人称", "Project Zomboid"],
+          "featured": true,
+          "title": "Project Zomboid 3D 第一人称实机曝光：老牌丧尸生存的 3D 化引爆社区",
+          "en_title": "First person Project Zomboid is WILD.",
+          "full_text": "First person Project Zomboid is WILD.\n\nI'm really excited to see where PZ3D ends up. I'm a huge fan of Zomboid and seeing the world from this perspective is incredible. https://t.co/nzs2DDrKyz",
+          "author": "Ag0at",
+          "date": "2026-09-27",
+          "likes": 16652,
+          "views": 1260559,
+          "link": "https://x.com/Ag0at/status/2104309777459286039",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104305565836922880/img/ep86TLO8k6qBvwOb.jpg",
+            "video_url": "https://x.com/Ag0at/status/2104309777459286039/video/1"
+          },
+          "summary": "Project Zomboid 的第一人称 3D 版本（社区称 PZ3D）实机画面曝光：熟悉的等距视角生存世界切换为第一人称呈现。发布者表示\"非常震撼\"，期待 PZ3D 的最终形态。推文获 1.6 万+赞、126 万浏览。",
+          "recommendation": "Project Zomboid 第一人称 3D 实机首曝：老牌丧尸生存的 3D 化引爆 126 万浏览",
+          "game_ref": "Project Zomboid 3D",
+          "enrichment": {
+            "game_name": "Project Zomboid 3D",
+            "genre": "丧尸生存 / 硬核模拟 RPG",
+            "developer": "The Indie Stone（英国独立团队）",
+            "platforms": ["Steam (Windows/Mac/Linux)"],
+            "price": "本体现售 $24.99（3D 版形态与定价待定）",
+            "release_date": null,
+            "steam_rating": null,
+            "steam_url": "https://store.steampowered.com/app/108600/Project_Zomboid/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg?t=1787740093",
+            "youtube_video": null,
+            "description": "【核心玩法】Project Zomboid 的 3D 化版本实机：原有等距视角的硬核丧尸生存世界切换为第一人称呈现，拾取、建造、战斗、生存管理等核心循环不变，沉浸感与压迫感显著增强。\n\n【背景】The Indie Stone 的 Project Zomboid 自 2013 年 Early Access 起运营至今，是丧尸生存模拟品类的标杆之一，本体现售 $24.99。3D 版（社区称 PZ3D）是团队路线图中最受期待的升级方向，本次流传的实机片段为第一视角演示。\n\n【优势】十余年硬核口碑打底，视角升级即可重启话题；生存模拟深度在品类内几乎无可替代。\n【不足】3D 版的上线时间与产品形态（本体更新或独立作品）官方尚未明确。\n\n【综合】一条实机片段 126 万浏览，长线 IP 的\"世代升级\"叙事仍是硬核生存品类最强的流量开关。",
+            "why_notable": "13 年老牌硬核生存的 3D 化实机一条曝光 126 万浏览，长线 IP 视角升级的引爆力可见一斑",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Polygon · 市场表现",
+          "tags": ["Steam", "销量", "经典重启"],
+          "featured": true,
+          "title": "Happy Wheels 时隔 16 年上 Steam：75 万愿望单，超作者预期 150 倍",
+          "en_title": "16 Years Later, A 'Let's Play' Classic Blows Up on Steam with 750K Wishlists",
+          "full_text": "16 Years Later, A 'Let's Play' Classic Blows Up on Steam with 750K Wishlists https://t.co/gClMD9OnwC https://t.co/JIzMUwXi5N",
+          "author": "Polygon",
+          "date": "2026-09-28",
+          "likes": 1,
+          "views": 2040,
+          "link": "https://x.com/Polygon/status/2104607099170721904",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTURARKXYAEfHIT.jpg"
+          },
+          "summary": "风靡 YouTube Let's Play 时代的物理闯关游戏 Happy Wheels 时隔 16 年登陆 Steam（2026 年 9 月 21 日发售，$4.99），累计愿望单达 75 万，是作者 Jim Bonacci 预期的 150 倍。多家报道：Polygon, TheGamer",
+          "recommendation": "Happy Wheels 时隔16年上Steam：$4.99定价、75万愿望单、超作者预期150倍",
+          "game_ref": "Happy Wheels",
+          "enrichment": {
+            "game_name": "Happy Wheels",
+            "genre": "物理闯关 / 搞笑竞速 / 布娃娃",
+            "developer": "Jim Bonacci（Fancy Force）",
+            "platforms": ["Steam (Windows)"],
+            "price": "$4.99",
+            "release_date": "已发售 · 2026年9月21日",
+            "steam_rating": null,
+            "steam_url": "https://store.steampowered.com/app/4705510/Happy_Wheels/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4705510/acd7fedba57cc1d506f18886ae6c937f754da6c1/header.jpg?t=1790335934",
+            "youtube_video": null,
+            "description": "【核心玩法】物理驱动的布娃娃闯关：选择准备不足的骑手（商人、轮椅老者、自行车父子等），驾驶各自载具穿越布满锯齿、炸弹与断桥的关卡，以最惨烈或最滑稽的方式冲线。肢体损毁与物理翻车是内容核心。\n\n【历史】2008 年 Flash 时代起家，是 YouTube Let's Play 时代的标志性素材来源，\"Happy Wheels 挑战\"曾是主播圈的通用内容模板。本次为 IP 时隔 16 年的 Steam 正式版（2026 年 9 月 21 日发售，$4.99）。\n\n【优势】情怀认知度极高；低定价降低尝试门槛；原版 UGC 关卡生态曾证明长线潜力。\n【不足】画面表现停留在复古风；玩法对新生代玩家的新鲜感有限。\n\n【综合】75 万愿望单、超作者预期 150 倍——老 IP 情怀存量经 Steam 化变现的标杆案例。",
+            "why_notable": "Let's Play 时代的情怀王炸，75 万愿望单超预期 150 倍，老 IP Steam 化的标杆案例",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "愿望单 75 万（Polygon 报道）",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "ゲムのすけ · 游戏媒体",
+          "tags": ["合作游戏", "太空", "物理建造"],
+          "title": "The Y-Files：4 人协力边造火箭边逃离行星解体的\"背锅\"合作游戏",
+          "en_title": "協力ゲームで一番信用できないのは、仲間が作った乗り物",
+          "full_text": "「誰だよここにブースター付けた奴！」\n協力ゲームで一番信用できないのは、仲間が作った乗り物\n\n惑星崩壊までにノルマを達成し\n拾った部品で宇宙船を作って脱出せよ\nただしブースターの角度をミスっただけで全員終了\n\n墜落するたび犯人捜し開始\n4人協力『The Y-Files』発表\nhttps://t.co/XUgDJV2sj1 https://t.co/GzjIKjNRWz",
+          "author": "dotpixel3d",
+          "date": "2026-09-28",
+          "likes": 3809,
+          "views": 248550,
+          "link": "https://x.com/dotpixel3d/status/2104390639123075184",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104222647089614848/img/fh-ddso3VEHFliez.jpg",
+            "video_url": "https://x.com/dotpixel3d/status/2104390639123075184/video/1"
+          },
+          "summary": "1-4 人合作游戏《The Y-Files》公布：在行星解体前完成公司配额，用拾取零件现场拼装火箭逃往传送门；助推器角度装错一点就是全队团灭，每次坠机后全员开启\"排查罪魁祸首\"环节。Steam 页面已上线，发售日待定。",
+          "recommendation": "The Y-Files：行星解体前边捡零件边造火箭，装错助推器全队团灭再互相甩锅",
+          "game_ref": "The Y-Files",
+          "enrichment": {
+            "game_name": "The Y-Files",
+            "genre": "1-4人合作 / 物理建造 / 太空生存",
+            "developer": "Lawn Cleaning Co.",
+            "platforms": ["Steam (Windows/Mac)"],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5258470/The_YFiles/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5258470/f4830381f03b3fd7b8d3608f2847f3841a35180f/header.jpg?t=1789662492",
+            "youtube_video": null,
+            "description": "【核心玩法】1-4 人合作太空生存：在行星解体倒计时内完成公司配额，用地图上拾取的零件现场拼装火箭，逃往传送门。载具完全由玩家手工组装——助推器角度装偏一点就可能全队坠毁，每次失败坠机后全员开启\"排查谁是罪魁祸首\"环节。\n\n【美术风格】像素科幻风配合混乱物理模拟，翻车场面自带喜剧效果。\n\n【对标定位】延续 Lethal Company 式\"合作翻车生成内容\"的传播逻辑，把\"队友造的载具最不可信\"做成核心卖点，叠加物理建造的自由度。\n\n【优势】社交摩擦即内容，适合主播传播；建造自由度高。\n【不足】发售日与定价未公布；物理建造的挫败感可能劝退轻度玩家。\n\n【综合】Steam 页已上线（Coming Soon），合作品类的新社交爆点候选。",
+            "why_notable": "把\"队友造的载具\"变成最大不可控因素，合作翻车内容的新社交爆点",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "スチまと · Steam 推荐",
+          "tags": ["生活模拟", "动物拟人"],
+          "unselected": true,
+          "title": "WonderPaws：动森式生活模拟，喝下魔法药水就能变成毛茸茸的动物",
+          "en_title": "『WonderPaws』",
+          "full_text": "どうぶつの森で「自分も動物になりたい」って思ったことないか？\n\n動物たちが暮らす大都会に人間として引っ越してくるライフシム。部屋を飾ったり、友達の家に遊びに行ったり、アイドルグループのライブを見たりするスローライフなんだけど、一番ヤバいのが「魔法の薬で自分もモフモフのケモノになれる」こと。海外ニキも「子どもの頃からどうぶつの森でずっと欲しかったのはこれ」って狂喜乱舞してる。\n『WonderPaws』",
+          "author": "stmatomato",
+          "date": "2026-09-28",
+          "likes": 3995,
+          "views": 297917,
+          "link": "https://x.com/stmatomato/status/2104405233405227426",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104379798667902976/img/Um5-JBfbyEbVppjh.jpg",
+            "video_url": "https://x.com/stmatomato/status/2104405233405227426/video/1"
+          },
+          "summary": "动森式生活模拟：人类搬进动物居住的大都市，装饰房间、串门、看偶像演出，最大的爆点是\"喝魔法药水把自己变成毛茸茸的动物\"，海外玩家直呼\"这是从小玩动森就想要的功能\"。",
+          "recommendation": "WonderPaws：动森式慢生活+魔法药水变身毛茸茸动物，海外玩家狂喜"
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Game*Spark · 新游公布",
+          "tags": ["防御战", "巨大少女", "怪兽"],
+          "unselected": true,
+          "title": "大海兽少女防卫战：巨大少女从海面炮击怪兽的怪癖防御游戏公布",
+          "en_title": "『大海獣少女防衛戦』発表",
+          "full_text": "巨大少女同士の大激突！巨大娘が海から頭だけ出し、怪獣にヘアピン艦砲射撃する巨大vs巨大なバトルが癖なディフェンスゲーム『大海獣少女防衛戦』発表\nhttps://t.co/IkpQUtpDp5\n\n数十年前より宇宙から襲来する巨大生物「怪獣」。脅威に立ち向かうため、新たに発見された意思疎通が可能な怪獣改め「大海獣少女オルカ」と共に人類を守ろう。\n・怪獣の群れから本土を防衛する「海上フェーズ」\n・海中にて残骸から素材を回収、強化を行う「海中フェーズ」\n・大怪獣少女との一騎討ち\n・撃破後は捕縛して体の構造などを調査",
+          "author": "gamespark",
+          "date": "2026-09-28",
+          "likes": 3284,
+          "views": 165730,
+          "link": "https://x.com/gamespark/status/2104394586416435357",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2104394433399840768/pu/img/uziTZ-aqIrnj_nuU.jpg",
+            "video_url": "https://x.com/gamespark/status/2104394586416435357/video/1"
+          },
+          "summary": "巨大少女从海面探头、对怪兽实施舰炮射击的巨大 vs 巨大防御战。玩法含海上防御、海中回收残骸强化、大怪兽少女单挑、击破后捕获调查结构等循环。",
+          "recommendation": "大海兽少女防卫战：巨大少女海上舰炮防御战，击破后还能捕获研究怪兽构造"
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "AUTOMATON · Steam 亮相",
+          "tags": ["竞速", "多人", "水上乐园"],
+          "unselected": true,
+          "title": "AQUA FALL：最高 8 人水滑梯爆走竞速，Steam 亮相",
+          "en_title": "『AQUA FALL』Steamにてお披露目",
+          "full_text": "最大8人マルチ対応・ウォータースライダー爆走レース『AQUA FALL』Steamにてお披露目。時速100キロでゴールまっしぐら、一か八かの\"場外ショートカット\"も可\nhttps://t.co/UwqD1uKfvG https://t.co/i7HG5nezsm",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-28",
+          "likes": 698,
+          "views": 132813,
+          "link": "https://x.com/AUTOMATONJapan/status/2104485735881654563",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104485623390466048/img/vFizsJ5A5J7Mvi2M.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2104485735881654563/video/1"
+          },
+          "summary": "最高 8 人同场的水滑梯爆走竞速，以时速 100 公里冲向终点，也可以赌一把\"场外捷径\"。",
+          "recommendation": "AQUA FALL：8人水滑梯竞速，时速100公里外加一场豪赌式场外捷径"
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Niche Gamer · 发售消息",
+          "tags": ["动作", "动漫风", "已发售"],
+          "unselected": true,
+          "title": "Ved: Recure：快节奏动漫风动作游戏现已发售",
+          "en_title": "Fast-paced anime action game Ved: Recure is out now",
+          "full_text": "Fast-paced anime action game Ved: Recure is out now: https://t.co/q7oWTzVWIt https://t.co/wRM9efiiIF",
+          "author": "nichegamer",
+          "date": "2026-09-28",
+          "likes": 104,
+          "views": 2708,
+          "link": "https://x.com/nichegamer/status/2104592157415706946",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2104592118928850944/pu/img/cU-M7XPXJ6MW8SEV.jpg",
+            "video_url": "https://x.com/nichegamer/status/2104592157415706946/video/1"
+          },
+          "summary": "快节奏动漫风动作游戏 Ved: Recure 现已发售。",
+          "recommendation": "Ved: Recure：快节奏动漫动作游戏现已上线"
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "Niche Gamer · 平台动态",
+          "tags": ["RPG", "Xbox", "Unicorn Overlord"],
+          "unselected": true,
+          "title": "DAWNGAZER：Unicorn Overlord 监督新作因玩家需求追加 Xbox 版",
+          "en_title": "Unicorn Overlord director's new RPG DAWNGAZER adds Xbox port after player demand",
+          "full_text": "Unicorn Overlord director's new RPG DAWNGAZER adds Xbox port after player demand: https://t.co/tVX44ExIeq https://t.co/XezTP1RJ5D",
+          "author": "nichegamer",
+          "date": "2026-09-28",
+          "likes": 32,
+          "views": 1754,
+          "link": "https://x.com/nichegamer/status/2104566421157978292",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTTsAZxWsAE4HSU.jpg"
+          },
+          "summary": "Unicorn Overlord 监督的新作 RPG《DAWNGAZER》在玩家呼声下宣布追加 Xbox 版。",
+          "recommendation": "DAWNGAZER：Unicorn Overlord 监督新作响应玩家需求追加 Xbox 版"
+        },
+        {
+          "idx": "新游参考 06",
+          "source": "Niche Gamer · 发行动态",
+          "tags": ["生存", "发行商", "Playism"],
+          "unselected": true,
+          "title": "Full Belly Breakout：荒诞食物生存游戏获新发行商 Playism",
+          "en_title": "Full Belly Breakout gets new publisher Playism",
+          "full_text": "Full Belly Breakout is an absurdist food survival game where each dish is a risk~\n\nhttps://t.co/7uUrLgC3RU \n\nStudy each dish carefully and figure out how to safely devour your offering. Every dish you get must be eaten as chowing down is your only path to freedom~ https://t.co/pN9Jh0psXy",
+          "author": "nichegamer",
+          "date": "2026-09-27",
+          "likes": 266,
+          "views": 22597,
+          "link": "https://x.com/nichegamer/status/2104199810664345999",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2104199781039882241/pu/img/SoQluxN7Ka2h1Zjt.jpg",
+            "video_url": "https://x.com/nichegamer/status/2104199810664345999/video/1"
+          },
+          "summary": "荒诞的食物生存游戏：每道菜都是风险，仔细研究后安全地把它吃下去，吃光所有菜是通往自由的唯一出路。已获发行商 Playism 加持。",
+          "recommendation": "Full Belly Breakout：每道菜都是风险的荒诞食物生存，获 Playism 发行"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Guillermo Rauch · 工具发布",
+          "tags": ["Rust", "桌面开发", "AI Agent"],
+          "featured": true,
+          "title": "Vercel CEO 把 Mini 浏览器从 Electron 移植到 Rust+Swift：更快更安全，内嵌 MCP 驱动的 AI Agent",
+          "en_title": "I ported my Mini web browser to Rust & Swift.",
+          "full_text": "I¹ ported my Mini web browser to Rust & Swift. It's faster, more secure, and shockingly, nicer to iterate on than Electron + Bun.\n\nI always wanted Safari-like UX but… Chrome 😁. Thanks to the 𝚌𝚎𝚏 crate, I can bundle up-to-date Chromium.\n\n𝚏𝚡 𝚊𝚌𝚙 lets me embed an agent without bloating the app. It talks to my local fx CLI over ACP. fx can then manage the browser via an MCP server².\n\nBy ditching Electron, I was able to get Liquid Glass, faster boots, and a more Mac-native feeling. Little things like...",
+          "author": "rauchg",
+          "date": "2026-09-28",
+          "likes": 1238,
+          "views": 82588,
+          "link": "https://x.com/rauchg/status/2104428800134013205",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104423180136009728/img/LHmZPtJ8KPUd7n84.jpg",
+            "video_url": "https://x.com/rauchg/status/2104428800134013205/video/1"
+          },
+          "summary": "Vercel CEO Guillermo Rauch 将 Mini 浏览器从 Electron + Bun 移植到 Rust 与 Swift：借助 cef crate 打包最新 Chromium，通过 fx acp 内嵌 AI Agent（Agent 经 ACP 与本地 fx CLI 通信，fx 再通过 MCP server 管理浏览器）。弃用 Electron 后获得更快启动、Liquid Glass 与更接近 Mac 原生的体验。",
+          "analysis": "Electron 替代路线（cef crate + 原生 UI）出现高质量样板；\"本地 Agent 经 ACP/MCP 控制浏览器\"的架构为桌面工具 + AI 工作流提供了可复制的参考实现。对工具链团队的启示：桌面端 AI 集成的通行做法正在围绕 ACP/MCP 标准化，值得跟进。",
+          "recommendation": "Vercel CEO 用 Rust+Swift 重写 Mini 浏览器：cef 替代 Electron，内嵌 MCP 驱动的 AI Agent"
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "ShaderError · 技术分享",
+          "tags": ["像素艺术", "渲染", "3D"],
+          "title": "3D 像素渲染器攻克球体：边缘像素与深度测试修复后稳定性对齐立方体",
+          "en_title": "New update on 3D pixel-art renderer.",
+          "full_text": "New update on 3D pixel-art renderer. I tested it on sphere, turn out it was probably the hardest shape to make all the tricks works on, but now it stays same stable as cube. I also improve the edge pixels and fix depth test. Let me know what you think #gamedev #indiedev #pixelart https://t.co/oLVR1I18wt",
+          "author": "ShaderError",
+          "date": "2026-09-27",
+          "likes": 4518,
+          "views": 142273,
+          "link": "https://x.com/ShaderError/status/2104184773954715923",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104181316174614529/img/ywupc688PXGiMoXm.jpg",
+            "video_url": "https://x.com/ShaderError/status/2104184773954715923/video/1"
+          },
+          "summary": "开发者 feixiong 更新其 3D 像素画渲染器：球体——最难保持像素稳定的形状——现已与立方体同样稳定，同时改进了边缘像素并修复深度测试。技术演示获 4500+ 赞。",
+          "analysis": "3D 像素风格（2D 精灵质感 + 3D 运动）是近两年独游美术的热门方向，渲染稳定性是落地最大痛点。该渲染器的进展降低了\"伪 2D 美术管线\"的实现门槛，小团队可以借这类方案跳过逐帧手绘。",
+          "recommendation": "3D 像素渲染器新进展：最难稳定的球体已对齐立方体，伪2D美术管线门槛再降"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI 生产管线话题集中爆发，Xbox 收缩与情怀变现同日上演**\nAI 方向今天从\"儿童口述建游戏\"\"资产全代码化\"到\"AI 克隆焦虑\"覆盖创意、生产、保护全链条，Opus 5.5 相关演示持续刷屏。\n\n**行业侧：裁员与爆款并存**\nXbox \"reset\" 裁员波及 Age of Empires 开发商 World's Edge（近半员工走人、新作取消）；另一边 Wardogs 卖出 300 万份，Happy Wheels 时隔 16 年上 Steam 拿下 75 万愿望单。\n\n**新游侧：地域差异化与老 IP 升级领跑**\n零预算直播开发的伊斯坦布尔 GTA-like《ALATURKA》预告片 180 万浏览；Project Zomboid 3D 第一人称实机曝光引爆社区。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

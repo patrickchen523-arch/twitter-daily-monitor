@@ -1,0 +1,464 @@
+{
+  "date": "2026-09-19",
+  "meta": {
+    "raw_count": 189,
+    "filtered_count": 150,
+    "selected_count": 13,
+    "crawl_time": "2026-09-19 14:42"
+  },
+  "lede": "Remedy《Control Resonant》评测解禁，M站84/83/81评价分化；GTA 5 源码泄露挖出大量删减内容；Level-5 就大范围使用 AI 正式道歉；青蛙幻想 RPG《Amphibian》官宣，『只杀最丑玩家』的《MOGGED》引爆社区。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "日本厂商裁员更少的真相：团队更小，且没人给高管发 3000 万美元年薪"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 1,
+      "hook": "《MOGGED: Looksmaxx or Die》：怪物只追杀最丑玩家的 8 人合作恐怖喜剧——白天医美，晚上逃生"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 1,
+      "hook": "Tony出海 实测 Arena 流出的 Gemini 4 Pro：观感压过 GPT-6 Astra，Gemini 王者归来"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Box CEO：Agent 已占大模型推理量大头，未来一两年 token 将被后台任务型 Agent 吃掉\nTony出海 实测 Arena 流出的 Gemini 4 Pro：观感压过 GPT-6 Astra，Gemini 王者归来\njev 刷屏：被类比为大模型『传动轴』的降本提速中间件，速度、成本、无幻觉三点压制"
+    },
+    {
+      "id": "industry",
+      "text": "Eurogamer 解析日厂裁员更少的原因：团队更小，且高管没人拿美厂式 3000 万美元年薪\nGTA 5 源码泄露新进展：社区挖出大量删减内容，含早期 GTA 6 资产与被砍 DLC 计划\nLevel-5 就大范围使用 AI 正式道歉——玩家对 AI 素材的抵触正变成厂商的声誉风险"
+    },
+    {
+      "id": "indie",
+      "text": "青蛙幻想 RPG《Amphibian》官宣：2028 年四平台同步，预告 24 小时 19 万浏览\n《MOGGED》：怪物只杀最丑玩家的 8 人合作恐怖喜剧——白天医美晚上逃生，已上 Steam"
+    },
+    {
+      "id": "tools",
+      "text": "Unity 访谈：DRG Survivor 手机版千怪同屏方案——流场导航+KD-tree+GPU顶点动画+Burst"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Box CEO · 观点",
+          "tags": [
+            "AI Agent",
+            "推理成本",
+            "行业预测"
+          ],
+          "title": "Aaron Levie：Agent 已占大模型推理量大头，未来一两年将趋近全部",
+          "en_title": "Agents already make up the majority of inference. This will quickly trend toward nearly all inference over the next year or two.",
+          "full_text": "Agents already make up the majority of inference. This will quickly trend toward nearly all inference over the next year or two.\n\nThe vast majority of tokens used in the world will be agents that are executing unbelievable amounts of tasks for us in the background 24/7. \n\nAgents will be deployed to read all code changes to secure our software, process all of our data inside of workflows, handle a significant majority of the research that goes into recruiting and customer prospecting, review ever...",
+          "author": "levie",
+          "date": "2026-09-18",
+          "likes": 233,
+          "views": 64210,
+          "link": "https://x.com/levie/status/2100799668573946191",
+          "media": null,
+          "featured": true,
+          "summary": "Box CEO Aaron Levie 判断：Agent 已经占据全球大模型推理调用的大多数，未来一两年将趋近于全部；世界上绝大多数 token 将由在后台 7x24 执行任务的 Agent 消耗——审查全部代码变更做安全防护、处理工作流内的数据、承担招聘与客户开发中的大部分调研工作。",
+          "analysis": "推理量结构是观察 AI 商业化的硬指标：如果 Agent 任务真的成为 token 消耗主体，意味着 AI 收入模型从『人问 AI 答』转向『按任务量计费』，对算力供给、模型定价和游戏厂商接入 Agent 的成本结构都有直接参考意义。",
+          "recommendation": "Box CEO：Agent 已占大模型推理量大头，未来一两年 token 将被后台任务型 Agent 吃掉"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "中文KOL · 实测",
+          "tags": [
+            "Gemini 4 Pro",
+            "模型竞技场",
+            "视频生成"
+          ],
+          "title": "Gemini 4 Pro 竞技场流出效果对比 GPT-6 Astra 更佳，Tony 称 Gemini 王者归来",
+          "en_title": "Gemini 4 Pro 简直太不可思议了……Gemini王者归来吗",
+          "full_text": "Gemini 4 Pro 简直太不可思议了……\nGemini王者归来吗\n\n在  Arena  流出的这个效果比那个 GPT 6 Astra 好啊",
+          "author": "tonychuhai",
+          "date": "2026-09-18",
+          "likes": 19,
+          "views": 8317,
+          "link": "https://x.com/tonychuhai/status/2100846386153718040",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2100845555681562625/img/7QwbUZ15CqMEBQn3.jpg",
+            "video_url": "https://x.com/tonychuhai/status/2100846386153718040/video/1"
+          },
+          "featured": true,
+          "summary": "中文 KOL Tony出海 分享了 LMArena 流出的 Gemini 4 Pro 生成效果，认为其表现远超预期，观感优于 GPT-6 Astra，判断 Gemini 系列强势回归。",
+          "analysis": "竞技场匿名对战是模型真实能力的试金石。若 Gemini 4 Pro 真在视频/多模态上反超 GPT-6 Astra，内容生成工具链（含游戏 CG、宣传物料）的成本与流程将再度被压低，值得从业者优先实测。",
+          "recommendation": "Tony出海 实测 Arena 流出的 Gemini 4 Pro：观感压过 GPT-6 Astra，Gemini 王者归来"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "中文KOL · 观点",
+          "tags": [
+            "jev",
+            "AI工具",
+            "行业观察"
+          ],
+          "title": "jev 刷屏：被类比为大模型『传动轴』的降本提速中间件，Tony 判断或遭 OpenAI 收购",
+          "en_title": "很多人看不懂这个jev的潜力",
+          "full_text": "很多人看不懂这个jev的潜力\n\n这好比相当于汽车的传动轴，并不是给普通用户扛一个传动轴去用的。\n\n而是专门为大模型，企业内部结构，降低成本和加快速度的东西。\n\n很可能会被 OpenAI  200 亿收购回去。",
+          "author": "tonychuhai",
+          "date": "2026-09-18",
+          "likes": 14,
+          "views": 4514,
+          "link": "https://x.com/tonychuhai/status/2100748804358365521",
+          "media": null,
+          "summary": "jev 近日在 AI 社区刷屏。Tony出海 发表两条分析：一是 jev 定位类似汽车的传动轴——不是面向普通用户的单件工具，而是为大模型和企业内部结构降本提速的基础件；二是强调这波刷屏不是商单，其速度、成本与无幻觉表现对国产 AI 产品压力很大。",
+          "analysis": "单一产品的收购猜测不必当真，但『jev 现象』值得注意：当基础设施层（调度、缓存、推理加速）成为新的刷屏叙事，说明应用层红利正在向底层效率工具转移。做 AI 功能集成的团队可关注这类中间件对成本曲线的影响。",
+          "recommendation": "jev 刷屏：被类比为大模型『传动轴』的降本提速中间件，Tony 称其速度成本无幻觉三点压制"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 分析",
+          "tags": [
+            "裁员",
+            "日本厂商",
+            "薪酬结构"
+          ],
+          "title": "专家解析日本游戏厂商裁员为何更少：团队更小、高管薪酬远低于美厂 3000 万美元级别",
+          "en_title": "Why do Japanese studios suffer fewer layoffs? Because they have smaller teams and don't pay their execs $30m, says one expert",
+          "full_text": "Why do Japanese studios suffer fewer layoffs? Because they have smaller teams and don't pay their execs $30m, says one expert",
+          "author": "eurogamer",
+          "date": "2026-09-18",
+          "likes": 2997,
+          "views": 214059,
+          "link": "https://x.com/eurogamer/status/2100874951708278802",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSfOoWAX0AA-Hi4.jpg"
+          },
+          "featured": true,
+          "summary": "Eurogamer 引述专家观点解析日本游戏公司裁员潮较轻的结构性原因：团队规模更小、成本结构更保守，且高管薪酬远达不到欧美大厂 3000 万美元的量级，经营决策与员工利益的绑定更紧。",
+          "analysis": "在欧美大厂持续裁员的背景下，这篇文章提供了成本结构视角的对照样本：高薪高管+超大规模团队的模式在行业收缩期最先承压。对国内厂商的启示是，控制固定成本和薪酬结构比追逐规模更能穿越周期。",
+          "recommendation": "Eurogamer 解析日厂裁员更少的原因：团队更小，且高管没人拿美厂式 3000 万美元年薪"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "GameSpot · 泄露",
+          "tags": [
+            "GTA 5",
+            "源码泄露",
+            "删减内容"
+          ],
+          "title": "GTA 5 源码持续泄露：社区从代码中挖出大量被删减的未采用内容",
+          "en_title": "New GTA 5 Source Code Leak Is Uncovering A Ton Of Cut Content",
+          "full_text": "New GTA 5 Source Code Leak Is Uncovering A Ton Of Cut Content",
+          "author": "GameSpot",
+          "date": "2026-09-18",
+          "likes": 33,
+          "views": 21440,
+          "link": "https://x.com/GameSpot/status/2100938009801789834",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSgH_GUaUAA8rHF.jpg"
+          },
+          "featured": true,
+          "summary": "GTA 5 源码新的泄露内容正在被社区挖掘，大量早期删减的未采用内容（cut content）随之曝光。Polygon 同日报道泄露内容还包含早期 GTA 6 资产与被砍的 DLC 计划。",
+          "analysis": "源码泄露对 R 星是安全事故，对社区却是考古现场。对从业者的警示在于：老项目的源码、资产和内部资料都是长期风险敞口，泄露不仅影响 IP 节奏（GTA 6 营销期尤其敏感），还可能提前曝光未公布的商业计划。",
+          "recommendation": "GTA 5 源码泄露新进展：社区挖出大量删减内容，含早期 GTA 6 资产与被砍 DLC 计划"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Polygon · 官方声明",
+          "tags": [
+            "Level-5",
+            "AI争议",
+            "官方道歉"
+          ],
+          "title": "Level-5 就游戏中大范围使用 AI 正式道歉，成日厂 AI 争议标志性事件",
+          "en_title": "Level-5 Finally Issues Official Apology for Rampant AI Use",
+          "full_text": "Level-5 Finally Issues Official Apology for Rampant AI Use",
+          "author": "Polygon",
+          "date": "2026-09-17",
+          "likes": 28,
+          "views": 15058,
+          "link": "https://x.com/Polygon/status/2100620817440620761",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSbngHqWAAATSYw.jpg"
+          },
+          "featured": true,
+          "summary": "Level-5 就旗下游戏产品中大范围使用 AI 生成内容正式发布道歉声明，回应玩家社区的强烈不满。这是日本主流厂商罕见的因 AI 使用公开道歉。",
+          "analysis": "与『日本厂商裁员少』相对，日厂在 AI 议题上的舆论敏感度同样更高——玩家社区对『人味』的在意正在变成可量化的声誉风险。厂商使用 AI 的边界管理（披露、比例、场景）会逐渐成为标配的公关功课，国内团队宜提前建制度。",
+          "recommendation": "Level-5 就大范围使用 AI 正式道歉——玩家对 AI 素材的抵触正变成厂商的声誉风险"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "GameSpot · 评测汇总",
+          "tags": [
+            "Control Resonant",
+            "Remedy",
+            "评测解禁"
+          ],
+          "title": "Remedy《Control Resonant》评测解禁：M站 84/83/81，主流好评但评价分化",
+          "en_title": "Control Resonant breaks from tradition magnificently, revealing a whole new side to Remedy.",
+          "full_text": "Control Resonant breaks from tradition magnificently, revealing a whole new side to Remedy.\n\nArmed with deep, engaging combat mechanics in a stunning version of Manhattan, Control Resonant is a confident delivery of Remedy's best gameplay experience that never sacrifices the team's unique brand of weirdness.\n\nOur review:",
+          "author": "GameSpot",
+          "date": "2026-09-18",
+          "likes": 1775,
+          "views": 54522,
+          "link": "https://x.com/GameSpot/status/2100932996043882563",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSgDaPTWgAAaGdA.jpg"
+          },
+          "game_ref": "Control Resonant",
+          "summary": "Remedy 新作《Control Resonant》媒体评测解禁，Metacritic 均分 PS5 84 / PC 83 / XSX 81（97 家媒体）。GameSpot 称其战斗设计与曼哈顿舞台是 Remedy 最佳操作体验；Polygon 给出『几乎处处失手』的相反评价；Digital Foundry 认可其技术在更开阔城市场景的进步。多家报道：GameSpot, Polygon, Eurogamer, PC Gamer, Digital Foundry。",
+          "analysis": "半开放化+动作化的 Remedy 是一次高风险转型，均分 80+ 说明转型成立但未到系列巅峰共识。对关注中型厂商的团队而言，这是『系列宇宙+玩法转型』路径的最新样本，PC 低配可玩的优化口碑也值得留意。",
+          "recommendation": "Control Resonant 评测解禁：M 站 84/83/81，Remedy 动作化转型获主流认可但评价分化"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "官宣 · 多平台",
+          "tags": [
+            "幻想RPG",
+            "青蛙题材",
+            "2028"
+          ],
+          "title": "青蛙题材幻想 RPG《Amphibian》官宣：2028 年登陆 PC/Switch/PS5/Xbox",
+          "en_title": "\"Frog-based\" fantasy RPG 'Amphibian' officially announced. Coming to PC, Switch, PS5 and Xbox in 2028.",
+          "full_text": "\"Frog-based\" fantasy RPG 'Amphibian' officially announced.\n\nComing to PC, Switch, PS5 and Xbox in 2028.",
+          "author": "nexindie",
+          "date": "2026-09-17",
+          "likes": 3874,
+          "views": 189448,
+          "link": "https://x.com/nexindie/status/2100434056542384634",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2100433225063501824/img/VbqSYrU3rZwGy9Gm.jpg",
+            "video_url": "https://x.com/nexindie/status/2100434056542384634/video/1"
+          },
+          "featured": true,
+          "game_ref": "Amphibian",
+          "summary": "新作《Amphibian》正式公布，是一款以青蛙为核心意象的幻想 RPG，确认 2028 年登陆 PC、Switch、PS5 和 Xbox 全平台。官宣 24 小时内预告获得近 19 万浏览、近 4 千赞。",
+          "recommendation": "青蛙幻想 RPG《Amphibian》官宣：2028 年四平台同步，预告 24 小时 19 万浏览",
+          "enrichment": {
+            "game_name": "Amphibian",
+            "genre": "角色扮演",
+            "developer": "JARCORP Interactive",
+            "platforms": [
+              "PC",
+              "Mac",
+              "Linux"
+            ],
+            "price": "未公布",
+            "release_date": "2028年",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5014960",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5014960/a988714d32051dc21dd6d08130a22ba422af984c/header.jpg?t=1788223563",
+            "youtube_video": null,
+            "description": "一场席卷全国的干旱后，蟾蜍开始入侵池塘，迫使 Sapo 和他的青蛙盟友与蟾蜍展开对战。随着池塘逐渐干涸，饥荒开始席卷，他们必须争分夺秒，寻找解决危机的办法，并解放他们的家园。\n\n【官宣信息】《Amphibian》是一支以『青蛙』为核心意象的幻想 RPG，经 Next Indie 渠道发布官方预告，确认 2028 年登陆 PC、Switch、PS5 与 Xbox 全平台。预告展示明亮自然场景与拟人化青蛙角色，具体玩法系统与开发商身份尚未披露。\n\n【题材与定位】青蛙题材在 RPG 品类中极为稀缺，天然自带记忆点与传播度；『动物主角+幻想冒险』的对标系谱包括《Tunic》《Death's Door》等近年口碑独游。\n\n【优势】题材差异化一眼可辨，四平台同步宣发声量大。\n【不足】距发售尚有两年，玩法信息几乎为零，存在跳票与方向变更风险。\n\n【综合评价】官宣 24 小时近 19 万浏览验证了题材差异化的传播效率。建议列入观察名单，重点跟踪开发商身份与实机玩法披露。",
+            "why_notable": "青蛙题材幻想 RPG 极度稀缺，官宣即 19 万浏览，是题材差异化传播效率的近期样本"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "日区曝光 · Steam",
+          "tags": [
+            "8人合作",
+            "恐怖喜剧",
+            "Steam"
+          ],
+          "title": "《MOGGED: Looksmaxx or Die》：只追杀『最丑玩家』的 8 人合作恐怖喜剧，已上 Steam",
+          "en_title": "「一番ブサイクな奴」だけを狙う化け物から生き延びろ！最大8人協力『MOGGED: Looksmaxx or Die』",
+          "full_text": "「一番ブサイクな奴」だけを狙う化け物から生き延びろ！\n\n昼は美容グッズを買ってイケメン化\n夜はパーティでペプチドや物資を漁って脱出\n\nイケメンでなくてもいい\n誰か一人よりかっこよければ\n\nブサイクに厳しすぎるホラーコメディ\n最大8人協力『MOGGED: Looksmaxx or Die』",
+          "author": "dotpixel3d",
+          "date": "2026-09-18",
+          "likes": 3598,
+          "views": 275587,
+          "link": "https://x.com/dotpixel3d/status/2100766761482117176",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2100574586794291200/img/ZrEDYkShpcpZu372.jpg",
+            "video_url": "https://x.com/dotpixel3d/status/2100766761482117176/video/1"
+          },
+          "featured": true,
+          "game_ref": "MOGGED: Looksmaxx or Die",
+          "summary": "日区账号曝光的《MOGGED: Looksmaxx or Die》：最大 8 人合作的恐怖喜剧游戏，怪物只追杀场上『最丑』的玩家。白天在商店买美容道具变帅，晚上在派对中搜刮肽类和物资逃生，规则是『不用最帅，只要比其中一个人帅』。Steam 页面已上线（App 4917440）。",
+          "recommendation": "《MOGGED》：怪物只杀最丑玩家的 8 人合作恐怖喜剧——白天医美晚上逃生，已上 Steam",
+          "enrichment": {
+            "game_name": "MOGGED: Looksmaxx or Die",
+            "genre": "动作 / 冒险 / 独立",
+            "developer": "Sigma Labs",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "2026年10月1日（EA 抢先体验）",
+            "steam_rating": "待确认",
+            "steam_url": "https://store.steampowered.com/app/4917440",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4917440/e6716316d6b7ef61fc87884c0f38e5bc77cf665c/header.jpg?t=1789800545",
+            "youtube_video": null,
+            "description": "一款主打颜值升级的多人合作生存撤离恐怖游戏，和朋友一起把派对闹翻天。每晚潜入大学兄弟会派对，搜刮来路可疑的装备，同时躲开专挑最丑玩家下手的怪物。调配肽类药剂，挣够买防脱发药的钱，努力冲上 True Adam 段位——赶在某个东西把你拖进另一间房之前。\n\n【核心玩法】最大 8 人合作生存：每局出现一只『只攻击场上最丑玩家』的怪物，玩家要在它转移目标前完成派对搜索与逃生。白天阶段用赚到的钱购买美容道具提升颜值，夜晚阶段搜刮肽类注射剂与物资、维持颜值排名并策划撤离。胜负规则简单粗暴：不需要全场最帅，只要不是最丑。\n\n【题材与定位】把社交外貌焦虑做成恐怖喜剧，日区社区以『不必最帅，只需比其中一人帅』概括其核心张力。低多边形喜剧恐怖画风，节奏短平快，定位朋友开黑娱乐。\n\n【优势】规则一句话可讲清、天然制造朋友间互相陷害的名场面，传播梗点极强；颜值军备竞赛带来持续的局内目标。\n【不足】玩法深度依赖社交环境，单人体验可能单薄；外貌判定标准是否公平有待正式版验证。\n\n【综合】一款把『颜值即生存』做进核心循环的派对恐怖游戏，Steam 页面已上线，适合关注社交传播型独游的团队研究其梗设计。",
+            "why_notable": "『颜值即生存』机制一句话可讲清且自带撕逼名场面，27.5 万浏览验证传播梗点"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "電ファミニコゲーマー · TGS试玩",
+          "tags": [
+            "Level-5",
+            "TGS2026",
+            "妖怪Watch概念新作"
+          ],
+          "title": "Level-5《Holy Horror Mansion》TGS 首试：妖怪Watch 概念继承作，整条街变跑酷竞技场",
+          "en_title": "『妖怪ウォッチ』のコンセプトを継ぐ完全新作RPG『ホーリーホラーマンション』初の試遊を体験",
+          "full_text": "『妖怪ウォッチ』のコンセプトを継ぐ完全新作RPG『ホーリーホラーマンション』初の試遊を体験。街を“アスレチック化”して飛び回るのがめちゃくちゃ楽しい！\n\nかわいいモノノケ集めもそこそこに、屋根からベランダへ飛び回る爽快感。主人公の異常な身体能力がヤバい\n#TGS2026",
+          "author": "denfaminicogame",
+          "date": "2026-09-18",
+          "likes": 297,
+          "views": 125705,
+          "link": "https://x.com/denfaminicogame/status/2100897933898203178",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2100897892865277952/pu/img/abISyYmjqxL0EoxS.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2100897933898203178/video/1"
+          },
+          "game_ref": "Holy Horror Mansion",
+          "summary": "電ファミニコゲーマー 在 TGS2026 试玩了 Level-5 继承《妖怪ウォッチ》概念的全新型态 RPG《ホーリーホラーマンション》（Holy Horror Mansion）：整条商业街被『立体竞技场化』，主人公以夸张身体能力在屋顶与阳台间飞檐走壁，收集妖怪退居其次，移动爽感成为第一体验点。",
+          "recommendation": "Level-5 妖怪Watch 概念新作 TGS 试玩：整条街变成跑酷竞技场，飞檐走壁爽感第一",
+          "enrichment": {
+            "game_name": "Holy Horror Mansion",
+            "genre": "RPG / 立体跑酷探索",
+            "developer": "Level-5",
+            "platforms": [
+              "未公布"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【试玩信息】Level-5 在 TGS2026 提供了《ホーリーホラーマンション》（Holy Horror Mansion）的首次公开试玩。本作定位为继承《妖怪ウォッチ》概念的全新型态 RPG：依旧收集可爱的妖怪角色，但探索方式彻底重构——整条商业街被『アスレチック化』（立体竞技场化），主人公以异常夸张的身体能力在屋顶、阳台与电线之间飞檐走壁。\n\n【核心体验】電ファミ的试玩结论是移动爽感第一：『从屋顶跳到阳台的爽快感』压过了收集要素本身，城市立体化跑酷成为与世界互动的主要方式。\n\n【对标定位】玩法观感接近『妖怪Watch×立体跑酷箱庭』，是 Level-5 多线复兴计划中的关键新作。\n\n【优势】妖怪 IP 情怀扎实，跑酷化探索在日式全年龄 RPG 中差异化明显。\n【不足】平台与发售窗口未公布，跑酷手感与战斗深度的最终成色待实机验证。\n\n【综合】全年龄向 IP 情怀 + 跑酷探索的组合值得持续跟踪，建议关注 Level-5 后续实机披露。",
+            "why_notable": "妖怪Watch 概念精神续作，把城市跑酷化做成核心体验，是 Level-5 复兴计划关键作"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "AUTOMATON · 独游观察",
+          "tags": [
+            "Game&Watch风",
+            "98%好评",
+            "Narita Boy开发组"
+          ],
+          "title": "《Future Knight》：Narita Boy 开发组的液晶『Game & Watch』风动作游戏，好评率 98% 持续升温",
+          "en_title": "ぬるぬる液晶風“濃厚奇ゲー”『Future Knight』好評率98%のまま人気高まる",
+          "full_text": "ぬるぬる液晶風“濃厚奇ゲー”『Future Knight』好評率98%のまま人気高まる。滑らかドット絵名手『Narita Boy』開発元が放つ「ゲーム&ウオッチ」風アクションがじわじわ勢い増す",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-18",
+          "likes": 230,
+          "views": 48628,
+          "link": "https://x.com/AUTOMATONJapan/status/2100905966090997829",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2100905930640781312/img/2W8Up-LZanrlFfLr.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2100905966090997829/video/1"
+          },
+          "game_ref": "Future Knight",
+          "summary": "《Narita Boy》开发商的液晶屏『Game & Watch』风格动作游戏《Future Knight》好评率稳定在 98%，销量与讨论度持续走高。流畅像素动画 + 复古液晶质感的组合形成独特辨识度，AUTOMATON 称其人气正在稳步升温。",
+          "recommendation": "《Future Knight》：Narita Boy 厂商的液晶 Game&Watch 风奇游，好评率稳在 98%",
+          "enrichment": {
+            "game_name": "Future Knight",
+            "genre": "动作 / 冒险 / 休闲",
+            "developer": "Studio Koba / Aeternum Game Studios",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 59.00",
+            "release_date": "已发售 · 2026 年 8 月 13 日",
+            "steam_rating": "98% 好评（118 条评价）",
+            "steam_url": "https://store.steampowered.com/app/4235410",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4235410/363336f8b72b7c00bf817104fd2f72cafb74c581/header.jpg?t=1786636237",
+            "youtube_video": null,
+            "description": "疯狂动作与LCD美学！在这款2D射击游戏中，切换机器人与其肿瘤，阻止怪诞邪教。限时8小时拯救人类记忆：击败怪诞Boss，踩着Future Board翱翔，在复古未来东京掌控混乱。\n\n【核心玩法】《Future Knight》采用掌机时代的『Game & Watch』液晶屏逻辑做现代动作游戏：角色在预设的分层与节点间移动、攻击与闪避，操作被压缩到极简的时序博弈，节奏明快。AUTOMATON 用『ぬるぬる液晶風』（丝滑液晶风）形容其观感——把低帧液晶的僵硬感用流畅像素动画重新演绎，形成独特反差。\n\n【美术与风格】开发商是像素名作《Narita Boy》的作者，本作延续极端风格化路线：伪液晶段的色调、剪影式角色与扫描线质感构成高辨识度画面。\n\n【市场表现】好评率长期稳定在 98%，AUTOMATON 报道其人气『じわじわ勢い増す』（稳步升温），属于发售后长尾走强的典型。\n\n【优势】极端风格化带来极强的截图与传播辨识度；极简操作降低上手门槛。\n【不足】Game & Watch 式单屏玩法的内容纵深有限，长线可玩性依赖关卡量。\n\n【综合】把硬件限制转成美术语言的教科书案例，适合研究『极端风格化+极简操作』路线的团队参考。",
+            "why_notable": "液晶掌机视觉限制被转成美术卖点，98% 好评的长尾走强独游"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity for Games · 官方访谈",
+          "tags": [
+            "Unity",
+            "移动端移植",
+            "千怪同屏"
+          ],
+          "title": "Unity 官方访谈：DRG: Survivor 手机版如何做到千怪同屏——流场导航/KD树/Burst",
+          "en_title": "How do you simulate thousands of enemies on a mobile screen?",
+          "full_text": "How do you simulate thousands of enemies on a mobile screen? 📲\n\nLearn how @piktiv ported Deep Rock Galactic: Survivor to mobile: flow field navigation, KD-tree physics queries, GPU vertex animation, and Burst-compiled jobs.\n\n🔗 Read the full dev interview | @FundayGamesdk",
+          "author": "unitygames",
+          "date": "2026-09-18",
+          "likes": 3,
+          "views": 1104,
+          "link": "https://x.com/unitygames/status/2100989284153000249",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2100989176225095680/pu/img/SRqS2GWEUXu_S7x-.jpg",
+            "video_url": "https://x.com/unitygames/status/2100989284153000249/video/1"
+          },
+          "featured": true,
+          "summary": "Unity 官方发布 Piktiv 团队移植《Deep Rock Galactic: Survivor》移动版的技术访谈：用流场导航解决千级怪物寻路、KD-tree 加速物理查询、GPU 顶点动画 + Burst 编译 Job 把动画开销压到移动端可运行水位。",
+          "analysis": "吸血鬼幸存者 like 在移动端的瓶颈就是『千怪同屏』。这篇访谈给出了完整优化套路：导航走流场而不是逐体寻路、物理用空间索引裁剪、动画从骨骼计算搬到 GPU 顶点层。做同屏大量单位玩法（塔防、割草、大规模战斗）的团队可直接抄作业。",
+          "recommendation": "Unity 访谈：DRG Survivor 手机版千怪同屏方案——流场导航+KD-tree+GPU顶点动画+Burst"
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "工具发布 · Unity 资产商店",
+          "tags": [
+            "顶点绘制",
+            "美术工具",
+            "PS1/N64风"
+          ],
+          "title": "POLYPAINT 上架 Unity Asset Store：N64/PSX 风格顶点与法线绘制工具正式发售",
+          "en_title": "N64 and PSX artists rejoice - my vertex/normal painter tool POLYPAINT is now (finally) live on the Unity Asset Store!!",
+          "full_text": "RT @artofsully: N64 and PSX artists rejoice - my vertex/normal painter tool POLYPAINT is now (finally) live on the Unity Asset Store!! 🎊 G…",
+          "author": "andre_mc",
+          "date": "2026-09-16",
+          "likes": 0,
+          "views": 138,
+          "link": "https://x.com/andre_mc/status/2100333380797644986",
+          "media": null,
+          "summary": "美术工具 POLYPAINT（顶点/法线绘制）正式上架 Unity Asset Store。作者 artofsully 面向 N64/PSX 低多边形复古风格美术，可直接绘制顶点色与法线，配合复古渲染管线使用，转发量达 476 次。",
+          "analysis": "低多边形复古风是独游常用的高性价比美术路线，顶点色绘制是该管线里最缺好工具的一环。POLYPAINT 补上了 Unity 侧的空白，走 PS1/N64 风格的团队值得试用；476 次转发也说明社区需求真实存在。",
+          "recommendation": "POLYPAINT 上架 Unity 商店：N64/PSX 复古风的顶点/法线直绘工具，转发 476 次"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Remedy《Control Resonant》评测解禁，M站84/83/81**\nRemedy 的半开放动作化转型获得主流认可但评价分化：GameSpot 盛赞战斗设计与曼哈顿舞台，Polygon 给出相反的负面评价，Digital Foundry 认可技术在更开阔城市场景的进步。\n\n**GTA 5 源码泄露挖出大量删减内容**\n社区从泄露源码中持续考古，含早期 GTA 6 资产与被砍 DLC 计划，正值 GTA 6 营销敏感期，IP 安全敞口问题再次暴露。\n\n**日本厂商为何裁员更少**\nEurogamer 引专家观点：团队更小、高管没人拿 3000 万美元年薪，成本结构决定抗周期能力。\n\n**Level-5 就大范围使用 AI 正式道歉**\n日本主流厂商罕见的 AI 公开道歉，AI 素材的舆论边界正在变成厂商的必修公关课。\n\n**模型侧：Gemini 4 Pro 竞技场流出 + jev 刷屏**\nTony出海 实测 Arena 流出的 Gemini 4 Pro 效果压过 GPT-6 Astra；jev 以『大模型传动轴』定位刷屏 AI 社区，底层效率工具成为新叙事。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

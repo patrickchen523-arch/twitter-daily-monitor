@@ -1,0 +1,691 @@
+{
+  "date": "2026-09-22",
+  "meta": {
+    "raw_count": 260,
+    "filtered_count": 199,
+    "selected_count": 13,
+    "crawl_time": "2026-09-22 10:15"
+  },
+  "lede": "双 AI Agent 8分43秒速通末影龙且成本不到 1 美元；GMTK Jam 创意被一条 AI 提示词克隆上架；UNSIGHTED 两人组 3D 银河城与双足鱼开飞艇新游领衔独游批次。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "双 Agent 组合 8分43秒速通末影龙——成本不到 1 美元，代码已开源"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "UNSIGHTED 两人组新作：双主角 3D 银河城，低模却有高速爽快战斗"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "双 Agent 组合 8分43秒速通末影龙——成本不到 1 美元，代码已开源\nFable 5.2 一次生成纯 JS 可玩游戏——83 万浏览见证 AI 造游戏再跨档\na16z 数据：AI 让月新增应用翻倍，但游戏收入反降 15%——供给通胀开始"
+    },
+    {
+      "id": "industry",
+      "text": "小岛承认 Physint 上不上 PS5、用不用 Decima 都没定——索尼光环项目悬空\n打磨机制暂缓上架，Jam 创意被一条 AI 提示词克隆抢先发布——63 万人围观\n一家发行商单日上架 29 款劣质游戏——AI 量产冲击 Steam 生态的极端样本\n巫师3总监新作预算仅 4000 万美元——腾讯持股 29% 的 double-A 样本\n寂静岭：Townfall M站均分 81——Konami 借新工作室把复兴续上"
+    },
+    {
+      "id": "indie",
+      "text": "UNSIGHTED 两人组新作：双主角 3D 银河城，低模却有高速爽快战斗\n第一人称削土豆+自动化流水线：为军队供餐的物理模拟——86 万浏览\n双足鱼组队开飞艇袭击人类：最多 6 人合作的攻守倒置新作——30 万浏览"
+    },
+    {
+      "id": "tools",
+      "text": "Halo Studios 官宣全管线采用 MetaHuman——AAA 角色工业化再下一城\n开源 Mac 互动桌面 Cove：Three.js 钓鱼缸+兔子，AI 建模交付完整成品"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "featured": true,
+          "source": "X · AI开发者",
+          "tags": [
+            "AI Agent",
+            "Minecraft",
+            "开源"
+          ],
+          "title": "双 AI Agent 组合 8分43秒速通 Minecraft 末影龙，成本不到 1 美元",
+          "en_title": "Jev + Astra beats the Ender Dragon in Minecraft in 8 minutes 43 seconds!",
+          "full_text": "Jev + Astra beats the Ender Dragon in Minecraft in 8 minutes 43 seconds! ⏱️\n\nCost less than $1 ($0.01 Jev, $0.96 Astra)\n\nI open sourced the code and explain the harness setup below. This type of movement is only possible with Jev's near instant decisionmaking, and some continually learning skills from Astra.",
+          "author": "Ronak Malde",
+          "date": "2026-09-20",
+          "likes": 7696,
+          "views": 1814912,
+          "link": "https://x.com/rronak_/status/2101544156757950697",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2101542497042481152/img/edco8P9wl-DUp5z8.jpg",
+            "video_url": "https://x.com/rronak_/status/2101544156757950697/video/1"
+          },
+          "summary": "开发者 Ronak Malde 公开两个 AI Agent（Jev + Astra）协作以 8 分 43 秒击败 Minecraft 末影龙的视频：Jev 负责近乎即时的决策，Astra 提供持续学习的技能，整套运行成本合计不足 1 美元（0.01 + 0.96 美元）。作者已开源全部代码并公开 harness 搭建方式。",
+          "analysis": "LLM Agent 的实时决策加持续学习组合正在逼近人类玩家的操作上限；低于 1 美元的单次通关成本，让 AI 玩游戏从演示走向可规模化的测试与基准基础设施。对游戏行业，这类 Agent 既可做自动化 QA，也可能改变未来游戏的难度设计与反作弊边界。",
+          "recommendation": "双 Agent 组合 8分43秒速通末影龙——成本不到 1 美元，代码已开源",
+          "game_ref": "Minecraft"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "featured": true,
+          "source": "X · AI能力展示",
+          "tags": [
+            "Fable",
+            "生成式AI",
+            "Web游戏"
+          ],
+          "title": "Fable 5.2 一次性生成纯 JS 可玩游戏，83 万人围观",
+          "en_title": "Fable 5.2 holy shit this is pure JS thats it one shot",
+          "full_text": "Fable 5.2 holy shit this is pure JS thats it one shot https://t.co/7ojPHdvifQ",
+          "author": "Chetaslua",
+          "date": "2026-09-19",
+          "likes": 6100,
+          "views": 830382,
+          "link": "https://x.com/chetaslua/status/2101376238703333883",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2101375408155631616/img/CmIOhA-gaEZ3Qar4.jpg",
+            "video_url": "https://x.com/chetaslua/status/2101376238703333883/video/1"
+          },
+          "summary": "用户 Chetaslua 展示用 Fable 5.2 一次生成的纯 JavaScript 交互游戏：无引擎、无框架、单次生成即可运行，视频播放量超 83 万、点赞 6100。同期还有多起类似演示（Fable 5.1 加 GPT-6 Astra 的 3D 生存游戏、Astra 生成的浏览器赛车游戏 Spline Rush）在 48 小时内集中出现。",
+          "analysis": "从能生成到一次生成就能玩，模型对完整交互闭环的把控明显跨档。对中小团队，AI 正在压缩原型验证成本：创意到可玩 Demo 的周期从周级进入分钟级，护城河进一步转向玩法设计与内容运营。",
+          "recommendation": "Fable 5.2 一次生成纯 JS 可玩游戏——83 万浏览见证 AI 造游戏再跨档"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "X · KOL观察",
+          "tags": [
+            "AI应用",
+            "市场数据",
+            "a16z"
+          ],
+          "title": "a16z 数据：AI 冲爆应用供给，但游戏收入反降 15%",
+          "en_title": "a16z 数据：AI 把「能上架的应用」冲爆了，用户和付费没跟着爆",
+          "full_text": "a16z 数据：AI 把「能上架的应用」冲爆了，用户和付费没跟着爆。\n\n供给端，2025 年 2 月之后像换了档：\niOS 每月新增从约 3 万–5 万拉到约 12 万\nChrome 插件从约 3,000 冲到 2 万+\nAndroid 也从低谷爬回约 10 万\n\n以前最贵的是「做出来」。Claude Code、 Codex，人人都能开发应用，于是货架上全是新货。\n\n需求端却在缩：\n游戏使用时长约 -3%，收入约 -15%\n生活方式收入约 -30%\n\n少数头部 AI 应用确实掏出了新收入，但被这些成熟大类的下滑啃掉一块。大盘看起来热闹。\n\n不是「所有 AI 应用一起繁荣」，是增长趴在少数赢家身上。\n\n真正稀缺的是：谁有清晰付费场景、谁能在 7 秒短视频里讲明白、谁能把下载变成续订。供给通胀里，平庸产品死得更快。",
+          "author": "Tony出海",
+          "date": "2026-09-21",
+          "likes": 1,
+          "views": 301,
+          "link": "https://x.com/tonychuhai/status/2102054400814374983",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSv_U36bkAA_eba.jpg"
+          },
+          "summary": "Tony出海 引用 a16z 数据：2025 年 2 月后 iOS 月新增应用从 3-5 万拉升至约 12 万，Chrome 插件从约 3000 涨到 2 万以上；但需求端未跟上——游戏使用时长约 -3%、收入约 -15%，生活方式类收入约 -30%。增长集中在少数头部 AI 应用，供给通胀让平庸产品死得更快。",
+          "analysis": "中文 KOL 少见的结构化数据解读：AI 把做出来的成本打到地板，货架被新货塞满，但用户时长与钱包没变。对游戏从业者的直接启示是：分发与付费场景的稀缺性在上升，AI 降低的是开发门槛而非成功门槛。",
+          "recommendation": "a16z 数据：AI 让月新增应用翻倍，但游戏收入反降 15%——供给通胀开始"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "featured": true,
+          "source": "Eurogamer · 行业",
+          "tags": [
+            "Kojima Productions",
+            "Sony",
+            "Xbox"
+          ],
+          "title": "小岛秀夫：Physint 是否登陆 PS5、是否用 Decima 引擎均未定",
+          "en_title": "Hideo Kojima doesn't know if Physint will be released on PS5, and he hasn't decided if it's going to use Sony's Decima game engine",
+          "full_text": "Hideo Kojima doesn't know if Physint will be released on PS5, and he hasn't decided if it's going to use Sony's Decima game engine\n\nhttps://t.co/uiY0OHjdIq https://t.co/SWsXRS8w4L",
+          "author": "Eurogamer",
+          "date": "2026-09-21",
+          "likes": 17,
+          "views": 30038,
+          "link": "https://x.com/eurogamer/status/2102044570750169262",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSv1Twsa4AAa1ge.jpg"
+          },
+          "summary": "继上周 Sony 宣布退出 Physint 项目后，小岛秀夫在采访中表示：游戏是否仍登陆 PS5、是否继续使用 Sony 第一方 Guerrilla 的 Decima 引擎，他自己也无法确定；工作室强调目前处于健康且盈利的状态，与 Sony 分手并无嫌隙。GameSpot、PC Gamer、RPS、MP1st 等多家跟进报道。",
+          "analysis": "一款索尼光环项目的平台归属与引擎选择同时悬空，实属罕见。Physint 从 PS 独占叙事转向开放选项，既反映索尼对互动叙事大投入的收缩，也让 Xbox 争取头部 IP 的窗口再次打开——而 Decima 引擎归属 Sony，可能成为最大的技术障碍。",
+          "recommendation": "小岛承认 Physint 上不上 PS5、用不用 Decima 都没定——索尼光环项目悬空",
+          "game_ref": "Physint",
+          "enrichment": {
+            "game_name": "Physint",
+            "steam_url": null,
+            "header_image": null
+          }
+        },
+        {
+          "idx": "游戏行业 02",
+          "featured": true,
+          "source": "X · 独立开发者",
+          "tags": [
+            "AI伦理",
+            "游戏克隆",
+            "GMTK"
+          ],
+          "title": "独立开发者控诉：GMTK Jam 原型被 AI 克隆抢先上架 Steam",
+          "en_title": "It's every indie dev's worst nightmare. I created this concept for the GMTK game jam...",
+          "full_text": "It's every indie dev's worst nightmare.\n\nI created this concept for the GMTK game jam. I held off on my Steam page to obsessively polish the mechanics... and it just got cloned and shipped. Probably mostly with a simple AI prompt.\n\nHere's my original build vs theirs 👇",
+          "author": "Rado Klasa || 🥔WISHLIST 1,000,000 POTATOES 🥔",
+          "date": "2026-09-21",
+          "likes": 6588,
+          "views": 631143,
+          "link": "https://x.com/Radoslaw_Klasa/status/2101978143401578566",
+          "media": null,
+          "summary": "参与 GMTK Game Jam 的开发者 Rado Klasa 发文：为打磨机制暂缓创建 Steam 商店页，结果原创意被他人用大概一次 AI 提示词克隆并抢先上架。帖子附原版与克隆版对比，浏览 63 万、点赞 6588，引发社区大规模声援。",
+          "analysis": "打磨期等于空窗期的结构性风险被 AI 放大：克隆成本趋近于零，而商店页与曝光位才是稀缺资产。Jam 创意无版权保护的现实下，社区舆论与发布速度成为唯二防线——这一事件大概率会推动更多开发者先上架后打磨。",
+          "recommendation": "打磨机制暂缓上架，Jam 创意被一条 AI 提示词克隆抢先发布——63 万人围观"
+        },
+        {
+          "idx": "游戏行业 03",
+          "featured": true,
+          "source": "PC Gamer · 行业",
+          "tags": [
+            "Steam",
+            "AI量产",
+            "发行商"
+          ],
+          "title": "PC Gamer 周报观察：一家发行商单日发布 29 款劣质 Steam 游戏",
+          "en_title": "This indie publisher released 29 terrible-looking Steam games in a single day—will they make any money?",
+          "full_text": "This indie publisher released 29 terrible-looking Steam games in a single day—will they make any money? https://t.co/4S6jmfBHyu",
+          "author": "PC Gamer",
+          "date": "2026-09-21",
+          "likes": 38,
+          "views": 38664,
+          "link": "https://x.com/pcgamer/status/2101891215558050156",
+          "media": null,
+          "summary": "PC Gamer 周报追踪一家独立发行商在同一天内发布 29 款观感粗糙的 Steam 游戏，并追问其能否盈利。这与 a16z 的供给数据互为印证：AI 压低生产成本后，Steam 正被批量灌入低质内容，发现类流量面临稀释。",
+          "analysis": "单日 29 连发的本质是组合式赌注——单款成本极低，靠极少数爆款覆盖全盘。当门槛低到可批量发行，Steam 的推荐算法与玩家筛选能力将承受更大压力；对认真做长线的开发者，榜单运营与愿望单积累的权重只会更高。",
+          "recommendation": "一家发行商单日上架 29 款劣质游戏——AI 量产冲击 Steam 生态的极端样本"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 行业",
+          "tags": [
+            "Rebel Wolves",
+            "预算",
+            "Double-A"
+          ],
+          "title": "《黎明行者之血》预算 4000 万美元：前巫师 3 总监的 double-A 路线",
+          "en_title": "The Blood of Dawnwalker cost less than expected to make - it's more of a double-A game than a triple-A blockbuster",
+          "full_text": "The Blood of Dawnwalker cost less than expected to make - it's more of a double-A game than a triple-A blockbuster https://t.co/XP5NG5I3Xr https://t.co/odRgG39OEs",
+          "author": "Eurogamer",
+          "date": "2026-09-21",
+          "likes": 87,
+          "views": 8381,
+          "link": "https://x.com/eurogamer/status/2102029351764001110",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSvoelyXYAA5nCw.jpg"
+          },
+          "summary": "Rebel Wolves 联合创始人、巫师 3 总监 Konrad Tomaszkiewicz 向彭博社披露：黑暗奇幻 RPG《黎明行者之血》成本约 4000 万美元，低于外界预期，更接近 double-A 体量——对比巫师 3 当年的 8000 万美元（含大量营销）与 007 First Light 传出的 2 亿美元。腾讯持有该工作室 29% 股份，Eurogamer 给出四星评价。",
+          "analysis": "在 3A 成本失控的当下，4000 万美元做出去主线任务加时限压力的原创 RPG 结构，是 double-A 复兴的标杆案例。对国内团队尤其有参考价值：中型预算加激进玩法结构加成熟品类经验，可能比堆料更可持续。",
+          "recommendation": "巫师3总监新作预算仅 4000 万美元——腾讯持股 29% 的 double-A 样本",
+          "game_ref": "The Blood of Dawnwalker",
+          "enrichment": {
+            "game_name": "The Blood of Dawnwalker 黎明行者之血",
+            "steam_url": "https://store.steampowered.com/app/3751260",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751260/7b0c1860c7c2fca069ae53c049b737176dbfb8d4/header_schinese.jpg?t=1789144593",
+            "release_date": "已发售 · 2026 年 9 月 2 日",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 298.00",
+            "developer": "Rebel Wolves",
+            "genre": "动作 / 冒险 / 角色扮演",
+            "steam_rating": "已发售 · 17,290 条评价",
+            "description": "《The Blood of Dawnwalker》为开放世界的黑暗奇幻动作RPG。 故事背景在14世纪的欧洲，你将扮演科恩，一名白昼时为人类，黑夜时为吸血鬼的年轻人。在为了拯救家人的奋斗之中，所做出的各种抉择与揭露的秘密，将塑造成属于你的故事。\n\n"
+          }
+        },
+        {
+          "idx": "游戏行业 05",
+          "source": "Eurogamer · 评测",
+          "tags": [
+            "Silent Hill",
+            "Konami",
+            "Metacritic"
+          ],
+          "title": "《寂静岭：Townfall》M站均分 81，寂静岭复兴继续",
+          "en_title": "Silent Hill's stellar revival continues as new developer Screen Burn melds stealth, meticulous world design, and a dash of social realism",
+          "full_text": "Silent Hill's stellar revival continues as new developer Screen Burn melds stealth, meticulous world design, and a dash of social realism for a different sort of survival horror.\n\nHere's our Silent Hill: Townfall review:\n\nhttps://t.co/BuqUn11PSt https://t.co/QJPujm9cAv",
+          "author": "Eurogamer",
+          "date": "2026-09-21",
+          "likes": 261,
+          "views": 13588,
+          "link": "https://x.com/eurogamer/status/2101933703890923776",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSuRdGTXQAAF13E.jpg"
+          },
+          "summary": "Konami 委托新工作室 Screen Burn 开发的《寂静岭：Townfall》媒体口碑解禁：Metacritic 首批 84 家媒体均分 81。Eurogamer 评价其延续寂静岭的出色复兴，融合潜行、缜密关卡设计与一丝社会现实主义；RPS 称其常有灵感但步伐略沉；Polygon 指出均分不及 2025 年的《寂静岭 f》。PC Gamer、TheGamer 等多家同步刊发评测。",
+          "analysis": "Konami 把主系列交给外部新团队连打两场口碑仗，授权加监修路线初步跑通。对行业，这验证了 IP 方可以用小规模外部合作复活沉睡品牌，不必依赖内部重整——但也抬高了下一作的预期阈值。",
+          "recommendation": "寂静岭：Townfall M站均分 81——Konami 借新工作室把复兴续上",
+          "game_ref": "Silent Hill: Townfall",
+          "enrichment": {
+            "game_name": "SILENT HILL: Townfall",
+            "steam_url": "https://store.steampowered.com/app/1636440",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1636440/0ed1cb4bc30631f95b92f7f13bb06c15d49b4afa/header.jpg?t=1789974011",
+            "release_date": "2026 年 9 月 23 日",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 310.00",
+            "developer": "Screen Burn",
+            "genre": "动作 / 冒险",
+            "description": "为了“让一切重回正轨”，西蒙·奥德尔重返坐落于岛屿的神秘小镇，一步步踏入充满着紧张周旋、激烈冲突与难解谜题的世界。而圣阿米莉亚的真相，也随之悄然浮现。\n\n"
+          }
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "featured": true,
+          "source": "X · 独游曝光",
+          "tags": [
+            "Metroidvania",
+            "独立开发",
+            "低多边形"
+          ],
+          "title": "ABYSS X ZERO：UNSIGHTED 开发者两人新作，双主角 3D 银河城曝光",
+          "en_title": "『キルラキル』×『ロックマンDASH』。意味わからんがカッコいい。",
+          "full_text": "『キルラキル』×『ロックマンDASH』。意味わからんがカッコいい。\n\n互いに殺し合う運命にある2人の主人公を切り替えて進む、3Dのメトロイドヴァニア。懐かしいローポリのグラフィックなんだけど、戦闘のモーションがあまりにも滑らかでハイスピードなせいで映像の違和感がすごい。\n『UNSIGHTED』開発陣がたった2人で作ってる、完成まで気長に待ってる。\n『ABYSS X ZERO』",
+          "author": "スチまと / STEAMおすすめゲーム新作など紹介🎮 Steam",
+          "date": "2026-09-21",
+          "likes": 1895,
+          "views": 76166,
+          "link": "https://x.com/stmatomato/status/2101868518287225271",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2101862621570056192/img/CXAzjSVaCtnOD3FB.jpg",
+            "video_url": "https://x.com/stmatomato/status/2101868518287225271/video/1"
+          },
+          "summary": "日本独游博主曝光《UNSIGHTED》开发组仅 2 人打造的新作《ABYSS X ZERO》：操控命中互相残杀宿命的双主角「Codename A」与「Codename Z」切换推进的 3D 银河城，低多边形画面搭配异常流畅的高速战斗，被形容为斩服少女乘洛克人 DASH 的观感。视频 24 小时内 7.6 万浏览。",
+          "analysis": "",
+          "recommendation": "UNSIGHTED 两人组新作：双主角 3D 银河城，低模却有高速爽快战斗",
+          "game_ref": "ABYSS X ZERO",
+          "enrichment": {
+            "game_name": "ABYSS X ZERO",
+            "genre": "3D 银河城 / 动作 / RPG",
+            "developer": "Studio Pixel Punk（两人团队，UNSIGHTED 开发者）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/2872300/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2872300/header.jpg?t=1755470828",
+            "youtube_video": null,
+            "description": "【核心玩法】3D 银河城：两位命中注定互相残杀的传奇英雄「Codename A」与「Codename Z」切换推进，各自拥有独特能力，会改变战斗方式与关卡互动方式；搭配精心设计的地牢与华丽的高速战斗。\n\n【美术与氛围】刻意复古的低多边形画面，但角色与战斗动画异常丝滑，复古外观与现代手感的反差构成独特辨识度，日推社区以「斩服少女×洛克人DASH」形容其气质。\n\n【对标定位】UNSIGHTED 开发者 Studio Pixel Punk 两人团队的新作。前作 UNSIGHTED 以高完成度与时间机制拿下 2021 年多个独游奖项提名，本次为团队首次挑战 3D 化。\n\n【优势】班底口碑扎实；双主角能力差异化的银河城结构有重复可玩性；视听辨识度极高。\n【不足】发售窗口与定价均未公布；3D 制作量级远超 2D 前作，完成度需长期跟踪。\n\n【综合】目前最值得关注的小团队 3D 银河城项目之一，建议先加愿望单。",
+            "why_notable": "两人团队从 2D 顶配独游直接跳 3D 银河城，低模高手感路线再次验证独游差异化打法",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "featured": true,
+          "source": "X · 独游曝光",
+          "tags": [
+            "模拟",
+            "物理",
+            "独立开发"
+          ],
+          "title": "Potato Please：第一人称削土豆喂饱军队的物理自动化游戏",
+          "en_title": "These indie devs are making a first-person potato peeling game where you keep the army fed",
+          "full_text": "These indie devs are making a first-person potato peeling game where you keep the army fed\n\n- Peel them by hand with real physics\n- Cut thin and do not waste any of it\n- Buy machines and automate the lot\n\nGame is Potato Please https://t.co/6K1XSfNzbn",
+          "author": "Indie Game Joe",
+          "date": "2026-09-20",
+          "likes": 1193,
+          "views": 864284,
+          "link": "https://x.com/IndieGameJoe/status/2101702051088453982",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2101700131556921344/img/k8AYZa7dJMlU2iTt.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2101702051088453982/video/1"
+          },
+          "summary": "独游展示账号 Indie Game Joe（86 万浏览）介绍《Potato Please》：第一人称手持小刀削土豆，真实物理判定——削太薄浪费、留皮扣分，赚到的钱购买更好的工具与机器逐步自动化，最终削完土豆山、喂饱军队。Steam 页面已上线，暂未发售。",
+          "analysis": "",
+          "recommendation": "第一人称削土豆+自动化流水线：为军队供餐的物理模拟——86 万浏览",
+          "game_ref": "Potato Please",
+          "enrichment": {
+            "game_name": "Potato Please",
+            "genre": "模拟 / 休闲 / 物理",
+            "developer": "Golden Horn Studios",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5266240/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5266240/e289442aa6b3756109bc65b427556ea538efb849/header.jpg?t=1789851788",
+            "youtube_video": null,
+            "description": "【核心玩法】第一人称削土豆模拟：你有小刀、水桶和一座土豆山。以真实物理完成削皮——皮要薄、不能浪费、不能削烂，追求完整高产的削皮成果。\n\n【成长循环】削皮换钱 → 购买更好的工具与机器 → 从纯手工逐步过渡到自动化产线 → 最终削完土豆山，为军队供餐。\n\n【美术与氛围】低多边形厨房与营地场景，基调轻松诙谐；削皮过程的物理触感反馈是核心体验。\n\n【对标定位】Golden Horn Studios 的模拟新作，Steam 页面已上线、尚未发售。\n\n【优势】脏活拟人化的解压公式已被 PowerWash Simulator 等作品反复验证；刀与土豆的真实物理天然适配短视频传播；自动化升级线补充了长线目标。\n【不足】玩法横向宽度有限，长线留存取决于工具与产线设计的深度。\n\n【综合】话题性独游模拟新秀，最可能靠短视频出圈，建议愿望单观察。",
+            "why_notable": "把最平凡的削皮做成物理触感核心玩法，是短视频时代的天然爆款题材",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "電ファミニコゲーマー · 新游",
+          "tags": [
+            "多人合作",
+            "模拟",
+            "新游公布"
+          ],
+          "title": "Fish & Ships：双足行走的鱼乘飞艇袭击人类，最多 6 人合作",
+          "en_title": "【最大6人マルチ】「二足歩行のお魚」たちが人間を襲う飛行船操縦ゲーム『Fish & Ships』発表。",
+          "full_text": "【最大6人マルチ】「二足歩行のお魚」たちが人間を襲う飛行船操縦ゲーム『Fish & Ships』発表。プレイヤーたちは襲う側\n\nhttps://t.co/EQkt8kYyzC\n\n浮島に住む人々を襲って銃や酒、たばこ、船の燃料などを集めよう。舵の操作や傷の修理、燃料入れなどを分担しながら飛行船を操り海へ向かう",
+          "author": "電ファミニコゲーマー",
+          "date": "2026-09-21",
+          "likes": 2799,
+          "views": 299668,
+          "link": "https://x.com/denfaminicogame/status/2101886271509663926",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2101886222914445312/pu/img/vpCLiX9jYv0JMJ5W.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2101886271509663926/video/1"
+          },
+          "summary": "電ファミ报道新作《Fish & Ships》公布：玩家扮演长出双足的鱼，乘飞艇袭击浮岛居民，抢夺枪械、酒、烟草与船用燃料；船舵操作、伤口修理、加油等职责分工驾驶飞艇出海，最多 6 人多人合作。你是鱼，目标是找到大海。视频 30 万浏览、点赞 2799。",
+          "analysis": "",
+          "recommendation": "双足鱼组队开飞艇袭击人类：最多 6 人合作的攻守倒置新作——30 万浏览",
+          "game_ref": "Fish & Ships",
+          "enrichment": {
+            "game_name": "Fish & Ships",
+            "genre": "动作 / 冒险 / 多人合作",
+            "developer": "DoubleMoose Games",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4738010/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4738010/072cbd1557a435fe1242a3f6e4de86a965345c86/header.jpg?t=1789920076",
+            "youtube_video": null,
+            "description": "【核心玩法】你是鱼的多人合作驾驶游戏：操控双足行走的鱼人船员，驾驶飞艇袭击浮岛居民、抢夺枪支、啤酒与其他物资；船舵操作、船体修理、加油等职责需要队友分工承担，船体受损在所难免，唯有全员协作才能带着战利品回家。最多 6 人在线合作。\n\n【美术与氛围】卡通海洋朋克风格，双足鱼劫艇的反差设定自带梗图体质。\n\n【对标定位】DoubleMoose Games 公布的新作，Steam 页面已上线（To be announced），发售日期未定。\n\n【优势】玩家扮演袭击者的攻守倒置设计；分工合作加物理船损继承 Barotrauma、Lethal Company 一脉的社交裂变基因；鱼人题材传播度极高。\n【不足】长线内容持续性未知，该品类生命周期高度依赖更新频率。\n\n【综合】不走寻常路的多人合作新游，值得持续跟踪的病毒式传播候选。",
+            "why_notable": "把玩家放在怪物一侧的攻守倒置加分工驾驶，是多人独游最容易裂变的配方",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "unselected": true,
+          "source": "X · 独游社区",
+          "tags": [
+            "独立开发",
+            "病毒式",
+            "动作"
+          ],
+          "title": "变成蒲公英用格挡硬扛一切攻击的鬼畜游戏爆红",
+          "en_title": "タンポポになって『あらゆる攻撃』をパリィで耐える鬼畜ゲーム",
+          "full_text": "タンポポになって『あらゆる攻撃』をパリィで耐える鬼畜ゲームが笑うしかないｗｗｗ（中略）https://t.co/KA9KDVfnO5 #タンポポは耐える",
+          "author": "いぬねこ",
+          "date": "2026-09-21",
+          "likes": 3119,
+          "views": 263199,
+          "link": "https://x.com/INUNEKOOO/status/2101974970025074940",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2101808297141739520/img/tSKF0Qdz0bqoHRME.jpg",
+            "video_url": "https://x.com/INUNEKOOO/status/2101974970025074940/video/1"
+          },
+          "summary": "日本游戏博主いぬねこ转发一款变成蒲公英、以格挡硬扛一切攻击的鬼畜动作游戏，标签 #タンポポは耐える（蒲公英在坚持），视频 26 万浏览。荒诞设定加高难度格挡的组合在日推社区快速发酵。",
+          "recommendation": "蒲公英格挡硬扛一切攻击——26 万浏览的荒诞系动作新梗"
+        },
+        {
+          "idx": "新游参考 02",
+          "unselected": true,
+          "source": "ファミ通.com · 新游",
+          "tags": [
+            "合作恐怖",
+            "波比的游戏时间",
+            "发售日"
+          ],
+          "title": "波比的游戏时间衍生 4 人合作逃生游戏 10 月 21 日发售",
+          "en_title": "『ポピープレイタイム』の最大4人協力脱出ゲーム『Escape From Playtime』が10/21発売",
+          "full_text": "『ポピープレイタイム』の最大4人協力脱出ゲーム『Escape From Playtime』が10/21発売 https://t.co/OI8yd8wSau 本編チャプター3で登場した小さなおもちゃ“Smiling Critters”の視点で工場を探索。工場内には“失敗作”と呼ばれる恐ろしい存在が。",
+          "author": "ファミ通.com",
+          "date": "2026-09-21",
+          "likes": 682,
+          "views": 108280,
+          "link": "https://x.com/famitsu/status/2101857118777393607",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2101857048048832512/pu/img/YH8544vkxHNdRNTv.jpg",
+            "video_url": "https://x.com/famitsu/status/2101857118777393607/video/1"
+          },
+          "summary": "《波比的游戏时间》衍生作《Escape From Playtime》定档 10 月 21 日发售：以本篇第三章登场的小玩具 Smiling Critters 视角探索工厂，躲避被称为失败作的恐怖存在，支持最多 4 人合作逃生。",
+          "recommendation": "波比的时间衍生 4 人合作逃生 Escape From Playtime 定档 10 月 21 日"
+        },
+        {
+          "idx": "新游参考 03",
+          "unselected": true,
+          "source": "4Gamer · 新游",
+          "tags": [
+            "派对游戏",
+            "社交推理",
+            "发售日"
+          ],
+          "title": "身份隐藏派对游戏 Your Liar 9 月 24 日登陆 Steam",
+          "en_title": "正体隠匿型パーティゲーム「Your Liar」，Steamで9月24日に発売",
+          "full_text": "正体隠匿型パーティゲーム「Your Liar」，Steamで9月24日に発売 https://t.co/MtkjcA8P88 ・4人で協力してミニゲームに挑戦！　ただし，1人は「ライアー（嘘つき）」 ・ライアーの目的は，正体を隠したまま，こっそり失敗を誘発すること ・収録されているミニゲームは，全部で9種類",
+          "author": "4Gamer",
+          "date": "2026-09-21",
+          "likes": 956,
+          "views": 119223,
+          "link": "https://x.com/4GamerNews/status/2101902302487740765",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSt1ARAbgAEy-GP.jpg"
+          },
+          "summary": "身份隐藏型派对游戏《Your Liar》定档 9 月 24 日登陆 Steam：4 人合作挑战小游戏，但其中 1 人是骗子，目标是在不暴露身份的前提下悄悄诱发失败；收录 9 种小游戏。",
+          "recommendation": "4 人合作里藏一个内鬼：派对游戏 Your Liar 9 月 24 日上 Steam"
+        },
+        {
+          "idx": "新游参考 04",
+          "unselected": true,
+          "source": "Game*Spark · 新游",
+          "tags": [
+            "整理模拟",
+            "休闲",
+            "已发售"
+          ],
+          "title": "治愈系整理模拟 Screw IT 上架 Steam：分类整理 777 根钉子",
+          "en_title": "777本の釘を種類・サイズ別に仕分ける「癒やし」のお片付けシム『Screw IT』Steamで配信",
+          "full_text": "777本の釘を種類・サイズ別に仕分ける「癒やし」のお片付けシム『Screw IT』Steamで配信―“1本だけあるネジ”も探し出す https://t.co/DrZnqXzNMI",
+          "author": "⚡Game*Spark⚡",
+          "date": "2026-09-21",
+          "likes": 269,
+          "views": 42005,
+          "link": "https://x.com/gamespark/status/2101903082171121891",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2101903019734626304/pu/img/l0-KVWpfUSXHaHMJ.jpg",
+            "video_url": "https://x.com/gamespark/status/2101903082171121891/video/1"
+          },
+          "summary": "治愈系整理模拟《Screw IT》上架 Steam：按种类与尺寸分拣 777 根钉子，连那根仅存一枚的特殊螺丝也要找出来，主打治愈向收拾体验。",
+          "recommendation": "分拣 777 根钉子的治愈系整理模拟 Screw IT 已上 Steam"
+        },
+        {
+          "idx": "新游参考 05",
+          "unselected": true,
+          "source": "Niche Gamer · 新游",
+          "tags": [
+            "合作射击",
+            "抢先体验",
+            "正式版"
+          ],
+          "title": "真菌题材合作射击 Mycopunk 下月迎来 1.0 正式版",
+          "en_title": "Fungus-fighting co-op shooter Mycopunk hits full release next month",
+          "full_text": "Fungus-fighting co-op shooter Mycopunk hits full release next month: https://t.co/GyUjViqs0f",
+          "author": "Niche Gamer",
+          "date": "2026-09-20",
+          "likes": 31,
+          "views": 4656,
+          "link": "https://x.com/nichegamer/status/2101779276643102825",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSsFHTWXoAAIzbw.jpg"
+          },
+          "summary": "对抗真菌世界的合作射击游戏《Mycopunk》宣布下月推出 1.0 正式版，脱离抢先体验阶段。",
+          "recommendation": "真菌题材合作射击 Mycopunk 下月转正 1.0"
+        },
+        {
+          "idx": "新游参考 06",
+          "unselected": true,
+          "source": "Niche Gamer · 新游",
+          "tags": [
+            "弹珠",
+            "DLC",
+            "独游"
+          ],
+          "title": "BALL x PIT 公布新资料片 Risen Ballbylon",
+          "en_title": "BALL x PIT expansion Risen Ballbylon was announced",
+          "full_text": "BALL x PIT expansion “Risen Ballbylon” was announced: https://t.co/d03ppScBEc",
+          "author": "Niche Gamer",
+          "date": "2026-09-20",
+          "likes": 37,
+          "views": 4878,
+          "link": "https://x.com/nichegamer/status/2101762771125772652",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSr2Gi2WgAAodjl.jpg"
+          },
+          "summary": "弹珠肉鸽人气作《BALL x PIT》公布新资料片 Risen Ballbylon，延续打砖块与弹珠结合的玩法框架并扩充内容。",
+          "recommendation": "BALL x PIT 新资料片 Risen Ballbylon 公布"
+        },
+        {
+          "idx": "新游参考 07",
+          "unselected": true,
+          "source": "Eurogamer · 新游",
+          "tags": [
+            "恶魔城",
+            "Demo",
+            "月下游戏"
+          ],
+          "title": "恶魔城：贝尔蒙特诅咒推出试玩 Demo，进度可继承正式版",
+          "en_title": "Dead Cells studio's Castlevania: Belmont's Curse is getting a demo in time for the spooky season",
+          "full_text": "Dead Cells studio's Castlevania: Belmont's Curse is getting a demo in time for the spooky season, with any progress made carrying over to the full release https://t.co/udZlrsjmB8",
+          "author": "Eurogamer",
+          "date": "2026-09-21",
+          "likes": 50,
+          "views": 7852,
+          "link": "https://x.com/eurogamer/status/2101967115565629743",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSuv8pwWoAASNUW.png"
+          },
+          "summary": "Dead Cells 工作室操刀的《恶魔城：贝尔蒙特诅咒》在万圣档期推出试玩 Demo，试玩进度可继承到正式版。Konami 经典 IP 与活死人细胞团队的组合值得观望。",
+          "recommendation": "Dead Cells 工作室做恶魔城：Belmont's Curse Demo 上线可继承进度"
+        },
+        {
+          "idx": "新游参考 08",
+          "unselected": true,
+          "source": "X · 独立开发",
+          "tags": [
+            "独立开发",
+            "愿望单",
+            "里程碑"
+          ],
+          "title": "Direland 愿望单突破 5 万，日系独立开发者报喜",
+          "en_title": "Direland、ウィッシュリスト5万突破しました！",
+          "full_text": "Direland、ウィッシュリスト5万突破しました！\nありがとうございます！！\nハッピーーーーーーーーーーーーー！！",
+          "author": "jockie - Direland",
+          "date": "2026-09-20",
+          "likes": 1615,
+          "views": 73945,
+          "link": "https://x.com/KAIJIUUUUU/status/2101713445515305288",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2101711854250983424/img/qsD9mlrwGPJHDHI9.jpg",
+            "video_url": "https://x.com/KAIJIUUUUU/status/2101713445515305288/video/1"
+          },
+          "summary": "日系独立游戏《Direland》开发者宣布愿望单突破 5 万大关：5 万愿望单是 Steam 算法推荐的关键门槛，发售首周流量将获得显著加成。",
+          "recommendation": "Direland 愿望单破 5 万——跨过 Steam 推荐算法的关键门槛"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "featured": true,
+          "source": "Unreal Engine · 官方",
+          "tags": [
+            "MetaHuman",
+            "UE5",
+            "角色管线"
+          ],
+          "title": "Halo Studios 把 MetaHuman 引入 Halo 角色管线",
+          "en_title": "Hear from Character Artist Brad Shortt on why @Halo Studios brought MetaHuman into their character pipeline",
+          "full_text": "Hear from Character Artist Brad Shortt on why @Halo Studios brought MetaHuman into their character pipeline for 'Halo: Campaign Evolved,' and how it shaped character work across the game, from background marines to the Prophet of Harmony. Learn more in 🧵 https://t.co/2ST9ytt2yy",
+          "author": "Unreal Engine",
+          "date": "2026-09-21",
+          "likes": 167,
+          "views": 12178,
+          "link": "https://x.com/UnrealEngine/status/2102035434192900437",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2102035142785298432/img/x8Fp_Xp_iZsVstjo.jpg",
+            "video_url": "https://x.com/UnrealEngine/status/2102035434192900437/video/1"
+          },
+          "summary": "Epic 官方发布 Halo Studios 角色美术师 Brad Shortt 访谈：为《Halo: Campaign Evolved》引入 MetaHuman 数字人管线，从背景陆战队员到 Harmony 先知统一提升角色质量、性能与效率；Epic 同步开放 MetaHuman 入口供开发者上手。",
+          "analysis": "AAA 项目在正传级产品中全线采用 MetaHuman，是对扫描级数字人工业化的官方背书：面部绑定提速让中小团队也能获得过去动捕棚级别的角色质感，角色外包与数字人资产生态都会跟着重排。",
+          "recommendation": "Halo Studios 官宣全管线采用 MetaHuman——AAA 角色工业化再下一城"
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "X · 开源项目",
+          "tags": [
+            "Three.js",
+            "开源",
+            "AI开发"
+          ],
+          "title": "Cove：Tony出海开源 Mac 互动桌面（Three.js 钓鱼缸加追扫帚兔子）",
+          "en_title": "前两天非常火的那个美女互动桌面，全都是视频，不是真的桌面。现在，真互动桌面Cove来了。",
+          "full_text": "前两天非常火的那个美女互动桌面，全都是视频，不是真的桌面。\n\n现在，真互动桌面Cove来了。\n\n开源地址和下载在评论区\n\n1，Mac 屏保钓鱼🎣，\nvibe coding 累了，休息一会儿钓钓鱼，放松心情\n\n2，追咬鼠标扫帚的兔子,\n我家兔子，扫地的时候老是追咬扫帚，我现在搬到桌面上来了😂\n\n第一版的时候用Claude，非常的傻，不过效果很搞笑，\n换GPT 6 Astra 建模",
+          "author": "Tony出海",
+          "date": "2026-09-21",
+          "likes": 100,
+          "views": 24115,
+          "link": "https://x.com/tonychuhai/status/2101844327706333341",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2101843467731423233/img/AiJj1gOeP9oyI2Jv.jpg",
+            "video_url": "https://x.com/tonychuhai/status/2101844327706333341/video/1"
+          },
+          "summary": "Tony出海 开源 Mac 互动桌面 Cove：屏保状态下提供钓鱼缸与追咬扫帚的兔子两个场景，支持点击与命令行切换；作者自述第一版用 Claude 效果不佳，改用 GPT 6 Astra 完成建模后成型。获 2.4 万浏览。",
+          "analysis": "AI 一句话生成应用叙事下少见的完整开源交付：场景化屏保是验证 vibe coding 产品化能力的好样本，Three.js 在桌面端做实时交互场景的工程路径完整可参考。",
+          "recommendation": "开源 Mac 互动桌面 Cove：Three.js 钓鱼缸+兔子，AI 建模交付完整成品"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI 玩游戏与 AI 造游戏同时跨档**\n双 Agent 组合 8 分 43 秒速通末影龙、总成本不到 1 美元；另一边 Fable 5.2 一次生成纯 JS 可玩游戏。AI 在「玩」与「造」两个维度的能力天花板同步上移。\n\n**AI 伦理与内容洪水的边界正在重画**\nGMTK Jam 原型被一条 AI 提示词克隆抢先上架；一家发行商单日发布 29 款劣质游戏；a16z 数据显示 AI 让应用供给翻倍、游戏收入反降 15%。生产成本趋零正在冲击创意保护与分发生态。\n\n**行业资本动作与成本信号**\n小岛 Physint 的平台与引擎悬而未决；《黎明行者之血》以 4000 万美元预算立下 double-A 标杆；《寂静岭：Townfall》M站均分 81 延续 Konami 复兴曲线。\n\n**值得跟踪的独游批次**\nUNSIGHTED 两人组曝光双主角 3D 银河城；双足鱼 6 人开飞艇袭击人类；第一人称削土豆模拟拿下 86 万浏览。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

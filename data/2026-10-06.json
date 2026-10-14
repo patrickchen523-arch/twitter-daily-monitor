@@ -1,0 +1,587 @@
+{
+  "date": "2026-10-06",
+  "meta": {
+    "raw_count": 250,
+    "filtered_count": 179,
+    "selected_count": 18,
+    "crawl_time": "2026-10-06 22:50"
+  },
+  "lede": "Capcom 宣布将 RE Engine 进化为「AI 世代游戏引擎」；开发者用 Opus 5.5 做出策略游戏级仓储系统；《巫师 3》重制版创 13.77 万在线纪录、Ninja Theory 裁员启动，无引擎 WebGL 科幻模拟《NOMIAD》首曝。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 1,
+      "hook": "用 Opus 5.5 把仓储管理做成策略游戏：209 万播放验证「游戏化工业软件」路线"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 1,
+      "hook": "《巫师 3》重制版创 13.77 万在线新纪录——超首发峰值，日销 13 万份"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "《NOMIAD》首曝：纯 WebGL+TS 无引擎开发，1-4 人合作建造气垫船打仗采矿"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Capcom 公布项目 REX：RE Engine 将进化为「AI 世代游戏引擎」，AI 自动写程序、自动试玩查 Bug\n独立开发者用 Opus 5.5 把仓储管理做成策略游戏，209 万播放\nJagex 宣传片现六指 AI 角色道歉：几天内第二起外包 AI 事故"
+    },
+    {
+      "id": "industry",
+      "text": "Ninja Theory 裁员程序启动：两次出售告吹，Hellblade 团队面临解散\n《巫师 3》重制版创 13.77 万在线新纪录，日销 13 万份\n《皇牌空战 8》创系列最大 Steam 首发：峰值 5.27 万在线"
+    },
+    {
+      "id": "indie",
+      "text": "《NOMIAD》首曝：纯 WebGL+TypeScript 无引擎开发，1-4 人合作科幻模拟\n《Brick by Brick》10 月 15 日发售：1.8 万块积木拼小镇\n《Go Ape Ship!》：8 只黑猩猩修飞船的无内鬼合作游戏特卖中"
+    },
+    {
+      "id": "tools",
+      "text": "Vercel CEO 开源 gdp-ts：编译期验证授权证明，专治 AI Agent 安全事故\nUnity 官方 Agent 工作流：概念图进 CLI 自动建 UI 并自测迭代"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Destructoid · 报道",
+          "tags": [
+            "Capcom",
+            "RE Engine",
+            "AI 开发流程"
+          ],
+          "title": "Capcom 全面拥抱 AI：RE Engine 将进化为「AI 世代游戏引擎」",
+          "en_title": "Capcom embraces AI as 'essential' for its future games and projects",
+          "full_text": "It was fun while it lasted: Capcom ends its string of Ws, embraces AI as \"essential\" for its future games and projects. The company aims to enable AI to \"automatically create programs\" and perform playtests by itself. \n\nRead more here: https://t.co/keKRJwL1U5 https://t.co/BTEHTmsJYe",
+          "author": "destructoid",
+          "date": "2026-10-03",
+          "likes": 51,
+          "views": 14029,
+          "link": "https://x.com/destructoid/status/2106533590943051936",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTvo4_4XYAAV1FM.png"
+          },
+          "summary": "Capcom 在 10 月 2 日的 Open Conference RE:2026 上公布项目 REX：程序员石田聪展示了把 RE Engine 改造成对 AI 友好的「AI 世代游戏引擎」的计划。统一基础语言后，AI 不仅能被人读懂、也能被 AI 读懂，未来将自动创建程序、自动试玩检查 Bug，官方称「成功将 AI 整合进开发流程已成为未来提效的前提」。",
+          "analysis": "大厂把 AI 写进引擎路线图，意味着「AI 参与开发」从单点工具尝试进入基础设施层，引擎级 AI 能力未来可能像光追一样成为标配。对中小团队而言，RE Engine 这类「AI 可读」架构若跑通，会拉高行业对开发效率的基准预期；但 AI 自动试玩 QA 的可靠性仍是最大争议点，媒体与玩家社区普遍持怀疑态度。",
+          "recommendation": "Capcom：RE Engine 将进化为「AI 世代游戏引擎」，AI 自动写程序、自动试玩查 Bug",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Dilum Sanjaya · AI 应用演示",
+          "tags": [
+            "Claude Opus 5.5",
+            "AI 编程",
+            "原型开发"
+          ],
+          "title": "用 Opus 5.5 做出策略游戏级仓储管理系统：「工业软件不必长得像工业软件」",
+          "en_title": "Industrial software doesn't have to feel like industrial software. Manage warehouses like you're playing a strategy game. Built with Opus 5.5",
+          "full_text": "Industrial software doesn't have to feel like industrial software\n\nManage warehouses like you're playing a strategy game\n\nBuilt with Opus 5.5 https://t.co/Bk7KtDmLH1",
+          "author": "DilumSanjaya",
+          "date": "2026-10-03",
+          "likes": 23838,
+          "views": 2092171,
+          "link": "https://x.com/DilumSanjaya/status/2106426962738880879",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2106424641959186432/img/3yHxjLeUggq453eF.jpg",
+            "video_url": "https://x.com/DilumSanjaya/status/2106426962738880879/video/1"
+          },
+          "summary": "开发者 Dilum Sanjaya 用 Claude Opus 5.5 构建了一套可玩的仓储管理系统，把仓库运营做成策略游戏的交互形态——调度、路径与库存一目了然。视频获 209 万播放、2.4 万赞，是本周 AI 编程能力展示中传播量最高的一条。",
+          "analysis": "这是「游戏化企业软件」的最新样本：AI 编程把做一套交互原型的成本压到一个人一次会话。对游戏从业者来说，策略游戏的交互范式正在外溢到 B 端产品，懂玩法设计的开发者在企业软件市场有了新位置；反过来，这类项目也是 AI 编程工具能力天花板的公开测试场。",
+          "recommendation": "用 Opus 5.5 把仓储管理做成策略游戏：209 万播放验证「游戏化工业软件」路线",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "PC Gamer · 报道",
+          "tags": [
+            "Jagex",
+            "生成式 AI",
+            "外包审核"
+          ],
+          "title": "Jagex 就宣传片中的六指 AI 角色道歉：「这实在没法解释过去」",
+          "en_title": "RuneScape dev apologises after RuneFest debut of an AI-generated six-fingered character: 'That's pretty hard to explain away'",
+          "full_text": "Jagex apologises after AI-generated six-fingered character: 'That's pretty hard to explain away' https://t.co/cX8TY0skMY",
+          "author": "pcgamer",
+          "date": "2026-10-05",
+          "likes": 15,
+          "views": 7857,
+          "link": "https://x.com/pcgamer/status/2107143283562651871",
+          "media": null,
+          "summary": "RuneFest 上《RuneScape》龙 Slayer 2 任务宣传片被玩家发现角色有六根手指、鞋子纹理怪异，Jagex 承认是「受信任的外部合作方」违规使用生成式 AI，已下架视频并道歉。这是几天内 100 Thieves 服装联名之后第二起合作方 AI 事故，官方宣布全面整改审核流程，并改由社区创作者重制该任务的故事内容。",
+          "analysis": "即便公司自身立场明确「不在游戏与美术资产中使用 GenAI」，供应链上的 AI 泄入仍防不胜防。对大量依赖外包资产的游戏公司，合同条款与人工验收流程需要针对 AI 内容重新设计；「六根手指」也再次说明，识别 AI 生成内容的成本趋近于零，侥幸发布的风险却由品牌全额承担。",
+          "recommendation": "Jagex 宣传片惊现六指 AI 角色，几天内第二起：外包链成生成式 AI 防线最弱点",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 报道",
+          "tags": [
+            "Xbox",
+            "裁员",
+            "Ninja Theory"
+          ],
+          "title": "Ninja Theory 裁员程序启动：两次出售谈判全部告吹，Hellblade 团队面临解散",
+          "en_title": "Ninja Theory developers announce they are facing redundancy, as the studio starts laying off staff following widespread Xbox cuts",
+          "full_text": "Ninja Theory developers announce they are facing redundancy, as the studio starts laying off staff following widespread Xbox cuts\n\nhttps://t.co/Q26HpEpsjd https://t.co/fNqDb4OT9E",
+          "author": "eurogamer",
+          "date": "2026-10-05",
+          "likes": 26,
+          "views": 6055,
+          "link": "https://x.com/eurogamer/status/2107123241995346033",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HT4BacIW4AAPbKa.png"
+          },
+          "summary": "Xbox 7 月宣布 3200 人裁员重组后，Ninja Theory 的两次出售协议均告失败（Xbox COO Matt Booty 信函确认），工作室随后进入裁员咨询程序。首席音效师 Daniele Galante、 gameplay 程序员 Katrin Mair、程序主管 Stefano Prosperi 等 9 至 13 年资历的老员工已在 LinkedIn 确认面临裁撤，6 月公布的新作《Senua》前景未卜。",
+          "analysis": "Ninja Theory 是 Xbox「卖不掉就关」模式的最新样本：即便有 Hellblade 这样的获奖系列与新作曝光，也难逃重组。欧洲叙事型 A 级工作室的生存空间持续收窄，这批高端叙事与音频人才的流向值得持续观察——他们大概率流向中小团队与外部外包市场。",
+          "recommendation": "Ninja Theory 裁员启动：两次出售告吹，Hellblade 团队 13 年老兵陆续道别",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 数据报道",
+          "tags": [
+            "Steam 纪录",
+            "重制版",
+            "CDPR"
+          ],
+          "title": "《巫师 3》重制版创 Steam 新纪录：13.77 万同时在线，单日卖出 13 万份",
+          "en_title": "Millions return to The Witcher 3 as the Remastered game records another Steam personal best and sales skyrocket",
+          "full_text": "Quen it rains...\n\nMillions return to The Witcher 3 as the Remastered game records another Steam personal best and sales skyrocket https://t.co/8YWtrMkTcc https://t.co/jeMSIVnv6c",
+          "author": "eurogamer",
+          "date": "2026-10-05",
+          "likes": 41,
+          "views": 7666,
+          "link": "https://x.com/eurogamer/status/2107069361785901245",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HT3QYAqWEAAHDIL.jpg"
+          },
+          "summary": "免费重制版上线后，《巫师 3》Steam 同时在线于 10 月 4 日达 137,724，刷新自身纪录（此前峰值 12 万），远超 2015 年首发时的 9.2 万。Alinea Analytics 数据显示 9 月 30 日单日三平台销量 13 万份，创 2024 年低价促销以来单日新高，当日收入近 300 万美元，游戏终身销量突破 6600 万份。",
+          "analysis": "十一年老游戏靠免费重制打出超过首发的在线峰值，验证了「老游戏资产重制」的回报模型：一次免费升级同时拉动回流、新购与明年新资料片《Songs of the Past》的关注度。对持有长青 IP 的厂商，这是性价比最高的注意力运营手段，也解释了为什么 CDPR 敢把重制版做成免费升级。",
+          "recommendation": "《巫师 3》重制版创 13.77 万在线新纪录——超首发峰值，日销 13 万份",
+          "game_ref": "The Witcher 3: Wild Hunt",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · 数据报道",
+          "tags": [
+            "万代南梦宫",
+            "Steam",
+            "首销"
+          ],
+          "title": "《皇牌空战 8》创系列 Steam 最大首发：峰值 5.27 万在线，是 7 代的近 4 倍",
+          "en_title": "Ace Combat 8 is far and away the series' biggest launch on Steam",
+          "full_text": "Ace Combat 8 is far and away the series' biggest launch on Steam\n\nhttps://t.co/CjrRgMXJ1v https://t.co/1fc1c9iXzi",
+          "author": "eurogamer",
+          "date": "2026-10-05",
+          "likes": 34,
+          "views": 9482,
+          "link": "https://x.com/eurogamer/status/2107064061058031700",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HT3Ks5SbgAA-QDr.jpg"
+          },
+          "summary": "10 月 2 日发售的《皇牌空战 8: Wings of Theve》Steam 峰值同时在线 52,694（上周六达成），远超 7 代 2019 年创下的 13,758。Steam 评价「特别好评」（5755 条以上）。预购赠品《皇牌空战零：贝尔卡战争》无法独立启动引发争议后，万代南梦宫已就商店页误导性表述致歉并研究解决方案。",
+          "analysis": "硬核拟真空战曾是典型的主机/IP 向品类，这次近 4 倍于前作的首发证明该品类的 PC 基本盘远比预期大。对发行商的启示：2010 年代缺席 PC 的老 IP 做 PC 化迁移，仍有大量未兑现的需求；《皇牌空战 8》赶上 9-10 月发售潮还能打出这个数字，含金量更高。",
+          "recommendation": "《皇牌空战 8》Steam 峰值 5.27 万：系列最大首发，达 7 代近 4 倍",
+          "game_ref": "Ace Combat 8",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 访谈",
+          "tags": [
+            "定价",
+            "GTA 6",
+            "商业模式"
+          ],
+          "title": "《天国：拯救 2》联合创始人盼 GTA 6 带动涨价：「早该涨了，这是行业存活的必要条件」",
+          "en_title": "Kingdom Come: Deliverance 2 boss hopes GTA 6 pushes game prices up because it's 'long overdue and also necessary for this business to survive'",
+          "full_text": "Warhorse Studios co-founder Martin Klima - the developer behind last year's historical RPG Kingdom Come: Deliverance 2 - is crossing his fingers for higher game prices, and he thinks GTA 6 might be the one to usher in a new normal. https://t.co/IAhNu8t7Fj https://t.co/3RNpCfP5GA",
+          "author": "eurogamer",
+          "date": "2026-10-05",
+          "likes": 11,
+          "views": 4951,
+          "link": "https://x.com/eurogamer/status/2107131480837120013",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HT4I5hQXIAAh--D.jpg"
+          },
+          "summary": "Warhorse 联合创始人 Martin Klima 在 PC Gamer 访谈中表示，希望 GTA 6 能把更高的 3A 定价推成新常态，称涨价「早该发生，也是这个行业活下去的必要条件」。他还批评标准 RPG 公式（屠魔王+谈恋爱）至今泛滥，怀疑玩家早已审美疲劳。GTA 6 定价至今未公布，11 月 19 日发售。",
+          "analysis": "KCD2 本身以相对克制的定价拿下口碑销量双赢，此刻呼吁涨价更像是给全行业递梯子——若有 GTA 6 这样的超级 IP 先探天花板，跟随者的舆论成本会低很多。GTA 6 若定价 80 美元以上并被市场消化，将直接改写下一代 3A 的成本与定价模型；若维持 70 美元，涨价叙事将再延后一个周期。",
+          "recommendation": "《天国：拯救 2》创始人：盼 GTA 6 带头涨价，「这是行业存活的必要条件」",
+          "game_ref": "Kingdom Come: Deliverance 2",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Next Indie · 首曝",
+          "tags": [
+            "科幻模拟",
+            "1-4 人合作",
+            "首曝"
+          ],
+          "title": "《NOMIAD》首曝：不用游戏引擎、纯 WebGL+TypeScript 打造的 1-4 人科幻开放世界",
+          "en_title": "1-4 player open-world sci-fi tactical action and simulation game 'NOMIAD' has been announced.",
+          "full_text": "1-4 player open-world sci-fi tactical action and simulation game 'NOMIAD' has been announced.\n\nSteam page: https://t.co/WNre4vCzKT https://t.co/RHFyKcfQMk",
+          "author": "nexindie",
+          "date": "2026-10-04",
+          "likes": 1108,
+          "views": 25710,
+          "link": "https://x.com/nexindie/status/2106629237738185151",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2106628650472763392/img/TZR-q8LOBGn3TWTz.jpg",
+            "video_url": "https://x.com/nexindie/status/2106629237738185151/video/1"
+          },
+          "summary": "开放世界科幻模拟游戏《NOMIAD》公布并开放 Steam 页面：单人或最多 4 人在线合作，扮演被派往外星采矿作业的机器人机组成员，从零设计并驾驶气垫船，在交战派系之间承接合同、运输、采矿与战斗。发售日与定价均未公布。",
+          "analysis": "无引擎开发本已罕见，还要支撑多人开放世界模拟——技术演示价值拉满。玩法上「建造+合同+派系自治战争」的组合在合作模拟赛道有明确差异化，实感化 UI（所有界面都是世界内实体）是有辨识度的设计语言。风险在小团队首个作品的完成度与长线内容量。",
+          "recommendation": "《NOMIAD》首曝：纯 WebGL+TS 无引擎开发，1-4 人合作建造气垫船打仗采矿",
+          "game_ref": "NOMIAD",
+          "media_note": null,
+          "enrichment": {
+            "game_name": "NOMIAD",
+            "genre": "开放世界科幻模拟 / 建造 / 战术合作",
+            "developer": "Daniel Aagentah（个人开发者）",
+            "platforms": [
+              "Steam (Windows/macOS/Linux)"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5253370/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5253370/e8cedc1e7213748deb0df49c45155e585c365bff/header.jpg?t=1790677504",
+            "youtube_video": null,
+            "description": "《NOMIAD》是一款开放世界科幻模拟游戏，支持单人或最多 4 人在线合作。玩家扮演被派往异星采矿作业的机器人机组成员，从零设计并驾驶气垫船，在交战派系之间承接合同、运输、采矿与战斗。\n\n【核心玩法】建造驱动的模拟+战术合同：气垫船由数十种模块、指挥终端与人工炮塔自由拼装，可配置成隐蔽渗透、重载运输、采矿、打捞、侦察、封锁或无人机驳船等任意形态；合同类型涵盖快艇猎杀、无人机群、攻城机甲作战、货运盗窃、哨站防御与派系战争等。世界不围绕玩家运转——无论你做什么，各派系都会持续开战、发展经济、争夺资源。\n\n【技术亮点】开发者 Daniel Aagentah 自述：游戏不使用任何游戏引擎或编辑器，完全跑在 WebGL 与 TypeScript 上；每个实体都有独立生命周期与职责；所有界面、菜单、终端均为世界内实感交互（diegetic UI）。\n\n【对标定位】《Barotrauma》式多人分工 × 模块化舰船建造 × 自主运转的派系世界，题材贴近冷峻工业科幻。\n\n【优势】无引擎 WebGL 开发本身即是技术展示；建造自由度高，角色定位随舰船设计自然生成；合作体验基于真实分工。\n\n【不足】单人内容深度与优化未知；Coming soon 未公布发售日与定价；个人开发者的首个作品完成度风险高。\n\n【综合】创意与技术叙事都在线的愿望单观察对象，适合硬核科幻模拟与建造玩法爱好者。",
+            "why_notable": "完全不用游戏引擎、纯 WebGL+TypeScript 做出 4 人合作开放世界模拟，个人开发者技术上限的样本",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据"
+          },
+          "featured": true
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "電ファミニコゲーマー · 报道",
+          "tags": [
+            "合作解谜",
+            "派对游戏",
+            "10月15日发售"
+          ],
+          "title": "《Brick by Brick》10 月 15 日发售：最多 5 人用 1.8 万块积木拼出一座小镇",
+          "en_title": "【最大5人】\"1万8490個\"のレンガから小さな町を組み立てるゲーム『Brick by Brick』が10月15日にリリース",
+          "full_text": "【最大5人】\"1万8490個\"のレンガから小さな町を組み立てるゲーム『Brick by Brick』が10月15日にリリース\nhttps://t.co/lf2JH5kIGf\n\nベーカリーから薬局、図書館まで、建物ごとの設計図に沿って、必要なレンガを探して正しい場所にはめていく。磁石や手押し車といったお助けスキルもあり https://t.co/SUMYnKmdUD",
+          "author": "denfaminicogame",
+          "date": "2026-10-05",
+          "likes": 3623,
+          "views": 448531,
+          "link": "https://x.com/denfaminicogame/status/2106951962382242021",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2106951935274487808/pu/img/gM1caAwevmdwFFXi.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2106951962382242021/video/1"
+          },
+          "summary": "用 18,490 块积木按设计图拼出小镇的合作游戏《Brick by Brick》宣布 10 月 15 日发售。从面包店到药店、图书馆，每栋建筑都有独立设计图，玩家需要找到正确的积木拼到正确位置，另有磁铁、手推车等辅助技能，最多 5 人合作，相关报道获 44.8 万播放。",
+          "analysis": "把实体积木玩具的「按图拼装」乐趣数字化，5 人分工协作构成派对+解谜的混合形态，日区传播数据（44.8 万播放、3623 赞）显示派对赛道的天然流量。这类「拟物协作」品类要跑出来，关键在单人体验价值与线上联机的延迟容错，10 月 15 日发售后看实际口碑。",
+          "recommendation": "《Brick by Brick》：1.8 万块积木拼小镇，最大 5 人合作，10 月 15 日发售",
+          "game_ref": "Brick by Brick",
+          "enrichment": {
+            "game_name": "Brick by Brick: Tidy Up the Small Town!",
+            "genre": "休闲 / 模拟 / 合作整理",
+            "developer": "PaperPixel Games",
+            "platforms": [
+              "Steam (Windows)"
+            ],
+            "price": "未公布",
+            "release_date": "2026年10月15日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5228920/Brick_by_Brick_Tidy_Up_the_Small_Town/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5228920/8c57f18ab6a1940b328584fe5556f4c87839e1a0/header.jpg?t=1791042973",
+            "youtube_video": null,
+            "description": "A fast-paced fantasy brick-breaker where you control heroes with unique powers, unlock companions, and dodge deadly attacks. Build synergies, master chaos, and grow stronger with every run, all with just your mouse.\n\n《Brick by Brick》是一款以实体积木为题材的合作拼装游戏，最多支持 5 人同乐，10 月 15 日发售。\n\n【核心玩法】游戏中总计出现 18,490 块积木，玩家依照设计图，把一座小镇一栋栋建起来：面包店、药店、图书馆等每栋建筑都有独立图纸，需要从积木堆里找到正确的零件、拼到正确的位置。拼装过程中还有磁铁、手推车等「お助けスキル」（辅助技能）帮助提高效率。\n\n【体验设计】乐趣核心在于「按图施工」的心流与多人分工的混乱喜剧：谁找零件、谁负责拼、图纸怎么看，天然构成协作与沟通的派对场面，接近把乐高积木套装的时间压力版搬进游戏。\n\n【对标定位】《Move Out》《Tools Up!》式多人合作混沌派对 × 积木拼装的拟物解谜。\n\n【优势】题材老少咸宜、上手门槛低；5 人合作在派对品类里属较少见的人数上限。\n\n【不足】单人重复度与长线目标待验证；玩法深度依赖关卡设计数量。\n\n【综合】日区社媒已验证传播力（报道 44.8 万播放），适合朋友聚会与家庭场景的观察对象。",
+            "why_notable": "18,490 块积木+5 人合作的拟物派对组合，日区 44.8 万播放验证传播力"
+          },
+          "featured": false
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "ゲムのすけ · 介绍",
+          "tags": [
+            "合作",
+            "喜剧派对",
+            "Steam 特卖"
+          ],
+          "title": "《Go Ape Ship!》特卖中：8 只黑猩猩修飞船，「这船上全是憨憨」的无内鬼合作游戏",
+          "en_title": "インポスター0人 チンパンジー8匹 誰も裏切ってないのに、この船はすぐ爆発",
+          "full_text": "インポスター0人\nチンパンジー8匹\n誰も裏切ってないのに、この船はすぐ爆発\n\nチンパンジーの宇宙飛行士となり\n故障しまくる宇宙船をなんとか飛ばせ\n\n「このゲームチンパンしかいねぇ」\nお前がそう思うとき\n相手もそう思っている協力ゲー\n『Go Ape Ship!』セールで960円\nhttps://t.co/IY8CzTDO6C https://t.co/GTOHTpxyRZ",
+          "author": "dotpixel3d",
+          "date": "2026-10-05",
+          "likes": 3254,
+          "views": 272794,
+          "link": "https://x.com/dotpixel3d/status/2107002852258586837",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2106754159500546048/img/tB5-GHG1u9YklUaQ.jpg",
+            "video_url": "https://x.com/dotpixel3d/status/2107002852258586837/video/1"
+          },
+          "summary": "合作游戏《Go Ape Ship!》：8 只黑猩猩宇航员驾驶故障百出的宇宙船，没有内鬼、没有背叛，但船还是天天爆炸。日区社媒用「チンパン（黑猩猩/笨蛋）」双关梗传播，获 27.2 万播放，游戏正参与 Steam 特卖，售价 960 日元。",
+          "analysis": "把 Among Us 的「猜疑社交」反转为「全员憨憨协作」是聪明的差异化：笑点来自沟通失灵而非背叛，规避了「朋友里没有戏精就玩不起来」的门槛。「チンパンしかいねぇ」的双关传播验证了文案驱动营销在日区的效率，27 万播放对中小独立游戏是可观曝光；长线表现仍取决于内容量与更新节奏。",
+          "recommendation": "《Go Ape Ship!》：8 只黑猩猩修飞船翻车不断，无内鬼版 Among Us 特卖中",
+          "game_ref": "Go Ape Ship!",
+          "enrichment": {
+            "game_name": "Go Ape Ship!",
+            "genre": "动作 / 休闲 / 独立",
+            "developer": "Sound Games / Lightfox Games",
+            "platforms": [
+              "PC",
+              "Mac"
+            ],
+            "price": "¥ 33.60",
+            "release_date": "已发售 · 2026 年 2 月 18 日",
+            "steam_rating": null,
+            "steam_url": "https://store.steampowered.com/app/4037180",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4037180/d34c1e1c68b4cb5674ffde42c962960fdedf452e/header.jpg?t=1782508562",
+            "youtube_video": null,
+            "description": "Go Ape Ship 《太空猴子号》是一款支持1至8人合作的疯狂多人游戏。与你的太空猴子船员们携手并进，共同完成不断增加的任务，应对突发危机，解锁飞船新舱室与升级部件，最终安全抵达星辰之巅。同生共死……否则全军覆没。\n\n《Go Ape Ship!》是一款以黑猩猩宇航员为主角的多人合作游戏，现正参与 Steam 特卖，售价 960 日元。\n\n【核心设定】8 只黑猩猩组成船员，驾驶一台故障不断的宇宙船：没有内鬼、没有背叛者，但只要配合失灵，船照样说炸就炸。玩家的任务是让这台摇摇欲坠的船真正飞起来。\n\n【玩法体验】乐趣来自「全员都是憨憨」的沟通喜剧：人人都在认真干活，结果却频频翻车，宣传语「你觉得自己在看一群憨憨？对方也是这么看你的」精准点出游戏的相互吐槽体验，是 Among Us 式社交的协作面反转。\n\n【对标定位】Among Us 的无内鬼版 × 《踩墙报》式合作混乱喜剧。\n\n【优势】梗文案传播力强（日区 27.2 万播放）；无背叛设计降低开黑门槛。\n\n【不足】内容量与长线目标未知；喜剧游戏对语音沟通环境依赖高。\n\n【综合】适合固定好友团的聚会备选，特卖期入手成本低。",
+            "why_notable": "把「猜疑社交」反转为「全员憨憨协作」，日区双关梗 27 万播放验证传播力"
+          },
+          "featured": false
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "Retro Dodo · 报道",
+          "tags": [
+            "宝可梦同人",
+            "对战"
+          ],
+          "title": "《Pokémon Arena 2D》走红：把宝可梦竞技场对战装进 2D 复古画面",
+          "en_title": "Pokémon Arena 2D looks set to shake up the fangame scene!",
+          "full_text": "Pokémon Arena 2D looks set to shake up the fangame scene!\n\nFind out more: https://t.co/cLMxclOo6L https://t.co/V11ZEpAaeB",
+          "author": "retro_dodo",
+          "date": "2026-10-05",
+          "likes": 2286,
+          "views": 90324,
+          "link": "https://x.com/retro_dodo/status/2107095574302376068",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107094913112285185/img/7pMAuhxoBlCC4BVX.jpg",
+            "video_url": "https://x.com/retro_dodo/status/2107095574302376068/video/1"
+          },
+          "summary": "宝可梦同人作品《Pokémon Arena 2D》在 fangame 社区走红：复刻《宝可梦竞技场》式 3v3 对战，用 2D 复古像素画面重新演绎，Retro Dodo 称其「可能改变 fangame 格局」。",
+          "recommendation": "宝可梦同人《Pokémon Arena 2D》走红：竞技场式对战+2D 复古画面",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Eurogamer · 前瞻",
+          "tags": [
+            "Soulslike",
+            "前瞻"
+          ],
+          "title": "《Sword Sage: Awakening》前瞻：节奏更轻快的 Soulslike，还有会上茶的熊猫",
+          "en_title": "Sword Sage: Awakening feels like a breezier kind of Soulslike, and it's not just the adorable tea-serving panda that's got me intrigued",
+          "full_text": "Sword Sage: Awakening feels like a breezier kind of Soulslike, and it's not just the adorable tea-serving panda that's got me intrigued\n\nhttps://t.co/Nh9Li9vD72 https://t.co/FskMqWxrks",
+          "author": "eurogamer",
+          "date": "2026-10-05",
+          "likes": 7,
+          "views": 6292,
+          "link": "https://x.com/eurogamer/status/2107094422085308736",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HT3nJ88WoAAmQN6.jpg"
+          },
+          "summary": "Eurogamer 试玩《Sword Sage: Awakening》：一款节奏比传统 Soulslike 更轻快的作品，萌系上茶熊猫是记忆点之一，战斗手感获得记者好感。",
+          "recommendation": "《Sword Sage: Awakening》前瞻：轻量版 Soulslike+上茶熊猫，Eurogamer 好感试玩",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Niche Gamer · 报道",
+          "tags": [
+            "机甲种田",
+            "1.0 转正"
+          ],
+          "title": "机甲种田《Lightyear Frontier》11 月迎来 1.0 正式版",
+          "en_title": "Mech farming sim Lightyear Frontier hits full release in November",
+          "full_text": "Mech farming sim Lightyear Frontier hits full release in November: https://t.co/JvCIx9hmau https://t.co/1nxsw0WalS",
+          "author": "nichegamer",
+          "date": "2026-10-05",
+          "likes": 28,
+          "views": 4181,
+          "link": "https://x.com/nichegamer/status/2106934436159693041",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2106934381348622336/pu/img/Ayowr289OpwA0Z6W.jpg",
+            "video_url": "https://x.com/nichegamer/status/2106934436159693041/video/1"
+          },
+          "summary": "机甲种田模拟游戏《Lightyear Frontier》宣布 11 月结束抢先体验、推出 1.0 正式版，机甲+外星农耕的组合是其核心辨识度。",
+          "recommendation": "机甲种田《Lightyear Frontier》11 月转正：EA 两年后迎 1.0",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Gamer＠ゲーム情報 · 报道",
+          "tags": [
+            "合作",
+            "爆炸物",
+            "10月23日发售"
+          ],
+          "title": "《Want a Bomb?》10 月 23 日 Steam 发售：和朋友一起把山炸飞的爆炸物合作游戏",
+          "en_title": "友達と山を吹き飛ばす協力ゲーム「Want a Bomb?」が10月23日にSteamで発売！ダイナマイトからミサイルまで幅広い爆発物が登場",
+          "full_text": "友達と山を吹き飛ばす協力ゲーム「Want a Bomb?」が10月23日にSteamで発売！ダイナマイトからミサイルまで幅広い爆発物が登場\nhttps://t.co/7r51l0oGvA https://t.co/jUeRusqcGS",
+          "author": "GamerNeJp",
+          "date": "2026-10-05",
+          "likes": 1365,
+          "views": 87776,
+          "link": "https://x.com/GamerNeJp/status/2106937628939747337",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HT1YlByaIAAWmOI.jpg"
+          },
+          "summary": "合作游戏《Want a Bomb?》宣布 10 月 23 日登陆 Steam：与朋友一起炸飞山脉，炸药到导弹的丰富爆炸物库是卖点，日区报道获 8.8 万播放。",
+          "recommendation": "《Want a Bomb?》10 月 23 日发售：炸药到导弹，和朋友炸山的技术型合作游戏",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "clemmygames · 推荐",
+          "tags": [
+            "Roguelike",
+            "弹珠",
+            "实体工艺"
+          ],
+          "title": "《PachiRogue》：用真纸板做的 Rogue 弹珠台，回合制敌潮+属性抽卡",
+          "en_title": "The developer made this rogue-lite pachinko game out of actual cardboard!",
+          "full_text": "The developer made this rogue-lite pachinko game out of actual cardboard!\n\n- Fire balls down a papercraft board\n- The enemy horde climbsturn by turn\n- Draft STR, DEX, INT, VIT and LUK to amplify each ball\n\nThis is PachiRogue. Have you tried the demo? https://t.co/cy6mO8F372",
+          "author": "clemmygames",
+          "date": "2026-10-04",
+          "likes": 60,
+          "views": 6290,
+          "link": "https://x.com/clemmygames/status/2106882227552358734",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2106882208396894208/pu/img/_MRPZNm73efGmaz-.jpg",
+            "video_url": "https://x.com/clemmygames/status/2106882227552358734/video/1"
+          },
+          "summary": "独立开发者用真实纸板制作 Rogue-lite 弹珠游戏《PachiRogue》：弹珠射入纸艺弹珠台，敌潮逐回合攀爬，通过抽取力量/敏捷/智力/体质/幸运属性强化弹珠，Demo 已开放。",
+          "recommendation": "《PachiRogue》：真纸板弹珠台+Roguelike 抽卡，Demo 已开放",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 06",
+          "source": "Only Indies · 推荐",
+          "tags": [
+            "地牢爬行",
+            "克苏鲁",
+            "Demo 已开"
+          ],
+          "title": "《Greed & Darkness》：克苏鲁风暗黑地牢爬行，管好你的火把别吵醒迷宫之物",
+          "en_title": "Este es Greed & Darkness y deberías echarle un vistazo si te gustan los dungeon crawlers de terror lovecraftiano.",
+          "full_text": "Soy adicto a los indies dibujados a mano.\n\nEste es Greed & Darkness y deberías echarle un vistazo si te gustan los dungeon crawlers de terror lovecraftiano.\n\nVigila tu antorcha, lootea el laberinto y no despiertas a la criatura que habita en él.\n\nTenéis demo en Steam.",
+          "author": "OnlyGerier",
+          "date": "2026-10-03",
+          "likes": 1070,
+          "views": 24170,
+          "link": "https://x.com/OnlyGerier/status/2106431042244546799",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2106422430013014016/pu/img/qQ4FLelKAV7OYHlj.jpg",
+            "video_url": "https://x.com/OnlyGerier/status/2106431042244546799/video/1"
+          },
+          "summary": "手绘风克苏鲁恐怖地牢爬行游戏《Greed & Darkness》：管理火把资源、在迷宫中搜刮、避免唤醒栖息其中的怪物，Steam 试玩版已开放，西语独游社区推荐获 2.4 万播放。",
+          "recommendation": "《Greed & Darkness》：手绘克苏鲁地牢爬行，火把管理+潜行搜刮，Demo 已开",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Guillermo Rauch · 开源发布",
+          "tags": [
+            "TypeScript",
+            "API 安全",
+            "AI Agent"
+          ],
+          "title": "Vercel CEO 发布 gdp-ts：用「已验证证明」类型系统防止你和 AI Agent 写出安全事故",
+          "en_title": "Introducing gdp-ts: Ghosts of Departed Proofs for TypeScript.",
+          "full_text": "Introducing gdp-ts: Ghosts of Departed Proofs for TypeScript.\n\ngdp-ts is a library, linter and AI skill for safer API design. Under this contract, sensitive functions require 'proofs' that the caller performed an authorization check.\n\nThe typechecker verifies these proofs at compile time, preventing your team and agents from shipping catastrophic security (and other kinds of) bugs.\n\nWhile these patterns have existed for quite some time, especially in ecosystems like Haskell, ① human code review ...",
+          "author": "rauchg",
+          "date": "2026-10-05",
+          "likes": 745,
+          "views": 40171,
+          "link": "https://x.com/rauchg/status/2107119811444748555",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2107106516126044160/img/3ROIYvdWPrn9RSac.jpg",
+            "video_url": "https://x.com/rauchg/status/2107119811444748555/video/1"
+          },
+          "summary": "Vercel CEO Guillermo Rauch 发布开源项目 gdp-ts：一个库+Linter+AI Skill 的组合。敏感函数要求调用方携带「已执行授权检查」的证明，类型检查器在编译期完成验证，防止团队与 AI Agent 把灾难级安全 Bug 带上线。该模式（Ghosts of Departed Proofs）源自 Haskell 生态，此次落地 TypeScript。",
+          "analysis": "AI Agent 写代码的量级上来后，「编译期强制授权检查」从代码洁癖变成基础设施。gdp-ts 明确把 AI Skill 作为分发形态，等于为 Agent 生态定义安全 API 的默认契约；游戏行业服务端大量 TS/Node 技术栈，这套模式值得后端负责人评估接入。",
+          "recommendation": "Vercel CEO 开源 gdp-ts：编译期验证「授权证明」，专治 AI Agent 写出的安全事故",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Unity for Games · 官方教程",
+          "tags": [
+            "Unity",
+            "AI Agent",
+            "UI Toolkit"
+          ],
+          "title": "Unity 官方演示：给 Agent 一张概念图，CLI 里自动建出 UI Toolkit 主菜单",
+          "en_title": "Turn concept art into a functional game UI without leaving the terminal",
+          "full_text": "Turn concept art into a functional game UI without leaving the terminal ⏩\n\nGive an agent your concept art and a short brief, and watch it build a working UI Toolkit main menu through the Unity CLI. The agent tests its own work too: running Play mode UI tests and grabbing Game view screenshots so it can check its changes and keep iterating. \n\nYou steer it, and it does the building.\n\n🔗 Watch the full tutorial video: https://t.co/xu0Hqh9xyu",
+          "author": "unitygames",
+          "date": "2026-10-05",
+          "likes": 12,
+          "views": 1119,
+          "link": "https://x.com/unitygames/status/2107154133253754983",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2107153949321039872/pu/img/fOMUwJzBc6oa9EdO.jpg",
+            "video_url": "https://x.com/unitygames/status/2107154133253754983/video/1"
+          },
+          "summary": "Unity 官方展示 Agent 开发工作流：输入概念图+简报，Agent 通过 Unity CLI 搭建可用的 UI Toolkit 主菜单，并自动运行 Play Mode UI 测试、抓取 Game 视图截图自检迭代。官方口号「你掌舵，它盖楼」。",
+          "analysis": "引擎厂商开始官方下场定义「Agent 时代的开发流程」：把 CLI、自动化测试、截图自检打包成可被 Agent 驱动的接口。UI 搭建是重复劳动重灾区，这类官方工作流若跑通，会直接重排中小团队的 UI 产能分配——策划给图即可出可交互初版，程序聚焦交互逻辑与性能。",
+          "recommendation": "Unity 官方 Agent 流程：概念图进 CLI，自动生成主菜单 UI 并自测迭代",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Capcom 把 AI 写进引擎路线图**\nCapcom 在 Open Conference RE:2026 公布项目 REX，要将 RE Engine 进化为「AI 世代游戏引擎」——统一基础语言让 AI 理解并自动创建程序、自动试玩查 Bug。大厂首次把「与 AI 共同开发」从口号落到引擎基础设施层。\n\n**老游戏重制的回报模型再次验证**\n《巫师 3》免费重制版上线一周，Steam 在线峰值 137,724 刷新纪录（超 2015 年首发的 9.2 万），三平台单日销量 13 万份，终身销量破 6600 万；《皇牌空战 8》则以 5.27 万在线创下系列最大 PC 首发。\n\n**Xbox 重组的下一只靴子落地**\n两次出售谈判告吹后，Ninja Theory 裁员咨询程序启动，Hellblade 团队老员工陆续道别；Warhorse 联合创始人则趁势呼吁 GTA 6 带动全行业涨价。\n\n**独立侧：技术叙事与派对合作的两种路线**\n纯 WebGL 无引擎开发的《NOMIAD》首曝；1.8 万块积木的《Brick by Brick》与黑猩猩修船的《Go Ape Ship!》同期传播。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

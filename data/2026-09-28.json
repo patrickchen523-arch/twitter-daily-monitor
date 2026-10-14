@@ -1,0 +1,608 @@
+{
+ "date": "2026-09-28",
+ "meta": {
+  "raw_count": 148,
+  "filtered_count": 143,
+  "selected_count": 17,
+  "crawl_time": "2026-09-28 14:45",
+  "notes": "Steam PCU 榜单监控因有数GI登录态失效（401）跳过；数据窗口 2026-09-25~09-27（含周末）。"
+ },
+ "lede": "Xbox 二轮重组：Ninja Theory 关停、Halo/Rare 划入动视、Obsidian 并入 Bethesda；Physint 4 亿美元预算遭撤回；Opus 5.5 以 36 小时+2400 美元复刻 WoW 式 demo；四款玩法差异化的独游集中曝光。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Opus 5.5 打通 Blender+图像生成+three.js 全链路，浏览器直接跑游戏 demo——66万浏览"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Xbox 二轮重组：Ninja Theory 关停、Halo/Rare 划入动视、Obsidian 并入 Bethesda——本周再裁 268 岗"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "未眠野：动漫风开放世界狩猎动作，物理化学解谜+巨型 Boss 格挡反击——10万浏览"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Opus 5.5 打通 Blender+图像生成+three.js 全链路，浏览器直接跑游戏 demo——66万浏览\nOpus 5.5 用 36 小时+2400 美元做出 WoW 式 demo——2004 年做 WoW 要 6300 万美元\nWillowmere 零 PNG/零模型/零音频——资产管线正在变成代码，Opus 5.5 全程构建"
+  },
+  {
+   "id": "industry",
+   "text": "Xbox 二轮重组：Ninja Theory 关停、Halo/Rare 划入动视、Obsidian 并入 Bethesda——本周再裁 268 岗\nPhysint 4 亿美元预算遭撤回：多方证实 Xbox 实际出价只是零头，交易含影视改编权\nStar Wars Zero Company 卖破 100 万份、营收约 5000 万美元——但团队发售前被无薪休假\nMindsEye 开发商 Build a Rocket Boy 进入破产管理：年运营亏损 4750 万英镑、负债 6180 万"
+  },
+  {
+   "id": "indie",
+   "text": "未眠野：动漫风开放世界狩猎动作，物理化学解谜+巨型 Boss 格挡反击——10万浏览\nHostile Architect：扮演反派的逆向塔防，商店买陷阱布阵放英雄踩坑——18万浏览\nUNKNOWN PASSENGER 47：空难遇难者身份鉴别推理，Obra Dinn-like 免费浏览器可玩——19万浏览\nVaultbreakers：暗黑式砍杀×塔科夫式全损撤离，PvE/PvPvE 自由切换——12万浏览"
+  },
+  {
+   "id": "tools",
+   "text": "CAUSTIC//VOLUME：three.js 实时水面焦散开源，990 行单 HTML 文件 MIT——15万浏览"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X @xikhar · 开发者演示",
+     "tags": [
+      "AI游戏开发",
+      "Claude Opus 5.5",
+      "three.js",
+      "浏览器游戏"
+     ],
+     "title": "Opus 5.5 第三次迭代：Blender+图像生成+three.js 在浏览器里拼出完整游戏 demo",
+     "en_title": "Third iteration with Opus 5.5 medium. I am in awe. It turned blender, image-gen, and three.js into this beauty, which runs on your browser.",
+     "full_text": "Third iteration with Opus 5.5 medium. \n\nI am in awe. It turned blender, image-gen, and three.js into this beauty, which runs on your browser. \n\nAn understatement to say that Anthropic cooked. You are looking at the future of game dev. https://t.co/ht2s8rpwO3",
+     "author": "Shikhar",
+     "date": "2026-09-27",
+     "likes": 5651,
+     "views": 662716,
+     "link": "https://x.com/xikhar/status/2104001664793600012",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2103995292983193600/img/eI4itdxauhMqdVZU.jpg",
+      "video_url": "https://x.com/xikhar/status/2104001664793600012/video/1"
+     },
+     "summary": "开发者用 Claude Opus 5.5（medium）进行第三次迭代，模型自主打通 Blender 建模、图像生成与 three.js 前端整合，产出一个可直接在浏览器运行的游戏 demo。作者感叹这是\"游戏开发的未来\"。",
+     "analysis": "单模型走完\"资产生成→引擎整合→前端交付\"正在从概念演示变成可复现工作流，中小团队的资产与原型成本结构将被改写；建议跟踪这类 pipeline 的复现门槛下降速度。",
+     "recommendation": "Opus 5.5 打通 Blender+图像生成+three.js 全链路，浏览器直接跑游戏 demo——66万浏览",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X @Stefan_3D_AI · AI创作者",
+     "tags": [
+      "AI游戏开发",
+      "成本对比",
+      "Claude Opus 5.5",
+      "MMO"
+     ],
+     "title": "36 小时约 2400 美元：Opus 5.5 做出 WoW 式 demo，原版 WoW 开发花了 6300 万美元",
+     "en_title": "$63M in 2004. One weekly Claude limit in 2026.",
+     "full_text": "$63M in 2004. One weekly Claude limit in 2026.\n\nIn 36 hours Opus 5.5 built a WoW-style game: 6 races, character creation, combat, a zone and a stone city. At pay-per-use prices that's about $2,400 (breakdown below). The original WoW took $63M to develop.\n\nA game millions of people love still takes talent. But the build itself is becoming the cheap part. What's left is an idea people fall in love with, and knowing how to show it.\n\nAnd almost anyone who ever dreamed of making their own game is about to get a shot at it.",
+     "author": "Stefan 3D AI",
+     "date": "2026-09-27",
+     "likes": 421,
+     "views": 90403,
+     "link": "https://x.com/Stefan_3D_AI/status/2104109918894580091",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2104104699553325056/img/Y1g4jCFyrN63GoML.jpg",
+      "video_url": "https://x.com/Stefan_3D_AI/status/2104109918894580091/video/1"
+     },
+     "summary": "作者用 Opus 5.5 在 36 小时内构建 WoW 风格游戏：6 个种族、角色创建、战斗系统、一张地图区域和石制城市，按 API 计费约 2400 美元；对照 2004 年 WoW 约 6300 万美元的开发成本。作者认为构建本身正在变得廉价，剩下的差异化是\"让人爱上的创意\"与表达。",
+     "analysis": "demo 级别的数据点，但\"构建成本数量级下降\"对立项逻辑的冲击是实打实的：项目评估权重会进一步从\"能不能做出来\"移向\"有没有人爱玩\"。同质化供给也会随之上升，审美与发行能力变得更重要。",
+     "recommendation": "Opus 5.5 用 36 小时+2400 美元做出 WoW 式 demo——2004 年做 WoW 要 6300 万美元",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X @jurlycat · 开发者观点",
+     "tags": [
+      "程序化生成",
+      "AI游戏开发",
+      "three.js",
+      "Web Audio"
+     ],
+     "title": "资产管线正在变成代码：Willowmere 零 PNG、零模型、零音频文件",
+     "en_title": "The asset pipeline is becoming code. Willowmere was built with Claude Opus 5.5: No PNGs, No 3D model files, No audio samples.",
+     "full_text": "The asset pipeline is becoming code.\n\nWillowmere was built with Claude Opus 5.5:\n\n• No PNGs\n• No 3D model files\n• No audio samples\n\nEvery object is generated procedurally with Three.js, while the music and sound effects are synthesized in-browser through the Web Audio API.\n\nGame design still needs taste.\n\nBut the production bottlenecks are disappearing fast.",
+     "author": "Jurly",
+     "date": "2026-09-27",
+     "likes": 265,
+     "views": 10404,
+     "link": "https://x.com/jurlycat/status/2104002281641542008",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2104002235269320704/img/y9G4_zWsyjAWT9TM.jpg",
+      "video_url": "https://x.com/jurlycat/status/2104002281641542008/video/1"
+     },
+     "summary": "开发者展示用 Claude Opus 5.5 构建的 Willowmere：所有物件由 Three.js 程序化生成，音乐与音效经 Web Audio API 在浏览器内实时合成，项目不含 PNG、3D 模型与音频样本文件。作者判断\"资产管线正在变成代码\"，生产瓶颈正快速消失，但游戏设计仍需要品味。",
+     "analysis": "当资产从\"文件\"变成\"代码\"，版本管理、迭代速度与团队结构都会跟着变：美术与音频的角色会更靠近参数调优与审美把关。对独立团队是产能平权，对大厂是管线重投的信号。",
+     "recommendation": "Willowmere 零 PNG/零模型/零音频——资产管线正在变成代码，Opus 5.5 全程构建"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 媒体报道（多家报道：PC Gamer）",
+     "tags": [
+      "Xbox",
+      "裁员",
+      "工作室重组",
+      "微软"
+     ],
+     "title": "Xbox 二轮重组：Ninja Theory 关停、Halo/Rare/World's Edge 划入动视、Obsidian 并入 Bethesda",
+     "en_title": "\"It genuinely breaks my heart\" - Confusion and frustration reign as gaming communities react to Xbox's drastic restructuring this week.",
+     "full_text": "\"It genuinely breaks my heart\"- Confusion and frustration reign as gaming communities react to Xbox's drastic restructuring this week. https://t.co/heidrJkuVl https://t.co/0lR4JE3dll",
+     "author": "Eurogamer",
+     "date": "2026-09-27",
+     "likes": 33,
+     "views": 24628,
+     "link": "https://x.com/eurogamer/status/2104156869858107801",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HTN3gY_XEAArQT5.jpg"
+     },
+     "summary": "Xbox 本周完成第二轮裁员与重组：Hellblade 开发商 Ninja Theory 面临关停（新作 Senua 6 月才刚亮相展示会）、Halo Studios 大幅缩编、Age of Empires 开发商 World's Edge 裁员过半且新作据报道被取消；管理权重新划分——Obsidian 归入 Bethesda，Rare、World's Edge、Halo 划归动视，Playground 与 Turn 10 合并。本周另有 268 个岗位被裁，微软 CEO 称\"精简\"令人鼓舞。",
+     "analysis": "这是 Xbox 从\"平台式放养\"转向\"少而大的旗舰 IP\"路线的实质性落地：二线创意工作室的生存空间被系统性压缩，Hellblade 式的艺术向 3A 在该体系内的位置变得可疑。供应商与合作方需要按新组织架构重算与 Xbox 的合作风险。",
+     "recommendation": "Xbox 二轮重组：Ninja Theory 关停、Halo/Rare 划入动视、Obsidian 并入 Bethesda——本周再裁 268 岗",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 媒体报道",
+     "tags": [
+      "小岛秀夫",
+      "Xbox",
+      "预算",
+      "独占策略"
+     ],
+     "title": "Physint 4 亿美元预算传闻遭撤回：多方证实 Xbox 实际出价远低于此",
+     "en_title": "Xbox is reportedly paying a \"fraction\" of the $400 million Kojima quoted Sony for Physint",
+     "full_text": "Xbox is reportedly paying a \"fraction\" of the $400 million Kojima quoted Sony for Physint\nhttps://t.co/cqc9HhtzHS https://t.co/7XuMvRE4jP",
+     "author": "Eurogamer",
+     "date": "2026-09-27",
+     "likes": 19,
+     "views": 4582,
+     "link": "https://x.com/eurogamer/status/2104216997621825949",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HTOuFknWwAAY8NV.jpg"
+     },
+     "summary": "The Game Business 的 Christopher Dring 周五称 Xbox 以约 4 亿美元签下小岛秀夫的 Physint，周末其本人澄清 Xbox 支付额\"远低于\"小岛当年向索尼报价的数字；Bloomberg 记者 Jason Schreier 称消息源描述为\"显著低于该数\"，Windows Central 称仅为\"零头\"。交易包含 Physint 的影视改编权，以及小岛另一项目 OD 的更好条款。索尼此前因超支与延期撤出发行。",
+     "analysis": "顶级制作人项目\"报价 4 亿、成交远低于此\"的落差，说明头部独占内容的溢价空间正在缩水：索尼因超支撤资，Xbox 低价接盘还附带影视线权益。对预算谈判方的参考是——明星制作人的要价与市场成交价之间的缝隙，比想象中大。",
+     "recommendation": "Physint 4 亿美元预算遭撤回：多方证实 Xbox 实际出价只是零头，交易含影视改编权",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 媒体报道（数据源：Alinea Analytics）",
+     "tags": [
+      "销量数据",
+      "Star Wars",
+      "Bit Reactor",
+      "劳动关系"
+     ],
+     "title": "Star Wars Zero Company 销量破 100 万、营收约 5000 万美元，但团队发售前被无薪休假",
+     "en_title": "Star Wars Zero Company finds success in passing 1m sales, so can the furloughed development team be reinstated and paid now?",
+     "full_text": "Star Wars Zero Company finds success in passing 1m sales, so can the furloughed development team be reinstated and paid now? https://t.co/pSqjYnjuiN https://t.co/ZvweEj63EU",
+     "author": "Eurogamer",
+     "date": "2026-09-27",
+     "likes": 107,
+     "views": 11692,
+     "link": "https://x.com/eurogamer/status/2104020974148456539",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HTL76NeWgAA_4GQ.jpg"
+     },
+     "summary": "据 Alinea Analytics 估算，Bit Reactor 开发的 XCOM 式回合制《Star Wars Zero Company》销量破 100 万份，8 月 27 日发售以来营收约 5000 万美元；渠道分布 Steam 69.9%、PS 19.9%、Xbox 10.2%，九成销量来自北美与欧洲。但发售前团队\"大部分人\"被无薪强制休假（furlough），业主纠纷与资金短缺是主因。",
+     "analysis": "\"百万销量+核心团队无薪休假\"并存是当前行业最撕裂的注脚：IP 与渠道决定收入下限，但组织与资金纠纷可以独立于商业成败发生。IP 授权合作中，开发团队的资金保障条款值得被认真写进合同。",
+     "recommendation": "Star Wars Zero Company 卖破 100 万份、营收约 5000 万美元——但团队发售前被无薪休假",
+     "featured": true,
+     "game_ref": "Star Wars Zero Company"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 媒体报道",
+     "tags": [
+      "Build a Rocket Boy",
+      "MindsEye",
+      "破产管理",
+      "裁员"
+     ],
+     "title": "MindsEye 开发商 Build a Rocket Boy 进入破产管理：年运营亏损 4750 万英镑",
+     "en_title": "GTA veteran's MindsEye studio Build a Rocket Boy has entered administration, following yet more reports of layoffs",
+     "full_text": "GTA veteran's MindsEye studio Build a Rocket Boy has entered administration, following yet more reports of layoffs. https://t.co/kNhuvX4sz1 https://t.co/ZFst27zQFm",
+     "author": "Eurogamer",
+     "date": "2026-09-27",
+     "likes": 4,
+     "views": 4391,
+     "link": "https://x.com/eurogamer/status/2104217267831464368",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HTOucAWXAAA5g2h.jpg"
+     },
+     "summary": "由 GTA 老将 Leslie Benzies 创立的 Build a Rocket Boy 已向英国 Companies House 提交破产管理（administration）申请，聘请 Opus Advisory Group 担任管理人。截至 9 月 30 日的财年，公司运营亏损 4750 万英镑、净亏损 3620 万英镑、对债权人负债 6180 万英镑。CEO 曾多次将发售失利归咎于\"有组织的破坏与间谍行为\"。",
+     "analysis": "从高调立项到发售仅一年出头即进入破产管理，MindsEye 案例再次验证：品质失控的大制作在当前市场没有缓冲垫。\"UGC 平台+3A 叙事\"的复合故事并不能替代执行力的验证，叙事再宏大也救不了口碑崩塌的首发。",
+     "recommendation": "MindsEye 开发商 Build a Rocket Boy 进入破产管理：年运营亏损 4750 万英镑、负债 6180 万"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X @stmatomato · KOL推荐",
+     "tags": [
+      "动作冒险",
+      "开放世界",
+      "合作狩猎",
+      "新游曝光"
+     ],
+     "title": "未眠野（Sleepless Wilds）：动漫风开放世界狩猎动作，物理+化学系统改变战场",
+     "en_title": "オープンワールドのアニメ調『モンハン』。ガチの狩猟アクション。武器を現地調達しつつ、マルチでパズルを解いて巨大ボスをパリィでボコボコにする。",
+     "full_text": "オープンワールドのアニメ調『モンハン』。\n\nゼルダみたいなオープンワールドゲーかと思ったらガチの狩猟アクション。武器を現地調達しつつ、マルチでパズルを解いて巨大ボスをパリィでボコボコにするストロングスタイル。絶対友達とやったらワチャワチャして面白い。\n『Sleepless Wilds（未眠野）』 https://t.co/WMTSeqgdf3",
+     "author": "スチまと / STEAMおすすめゲーム新作など紹介🎮 Steam",
+     "date": "2026-09-27",
+     "likes": 846,
+     "views": 103134,
+     "link": "https://x.com/stmatomato/status/2104042845287965131",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2104027186382671872/img/TyLhB4sY_wSx4qLL.jpg",
+      "video_url": "https://x.com/stmatomato/status/2104042845287965131/video/1"
+     },
+     "summary": "日本 Steam KOL 推荐《未眠野（Sleepless Wilds）》：动漫渲染风的开放世界狩猎动作游戏——现场采集与制作武器、多人协作解开场景谜题、用格挡反击巨型 Boss；另一博主补充其物理与化学模拟允许玩家操控地形、物体与元素来解谜推进。被评价为\"动漫版怪物猎人\"与\"塞尔达式开放世界\"的结合。",
+     "analysis": "",
+     "recommendation": "未眠野：动漫风开放世界狩猎动作，物理化学解谜+巨型 Boss 格挡反击——10万浏览",
+     "game_ref": "Sleepless Wilds",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Sleepless Wilds",
+      "genre": "开放世界狩猎动作 / 合作冒险",
+      "developer": "未公开（待 Steam 数据补充）",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": null,
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "《未眠野（Sleepless Wilds）》是一款动漫渲染风格的开放世界狩猎动作游戏。【核心玩法】玩家在开放世界中追踪并狩猎巨型魔物：武器可现场采集与制作，战斗强调多人协作——合力解开场景谜题、以精准格挡反击巨型 Boss 的攻击节奏。【差异化】本作引入物理与化学模拟系统，地形、物体与元素可相互作用，玩家能借此改造战场、制造连锁反应对付强敌，探索与战斗的解法不唯一。【美术与氛围】明亮的动漫渲染+开阔的野外探索，社区普遍以\"动漫版怪物猎人\"\"塞尔达式开放世界\"来定位它。【定位与风险】对标《怪物猎人》品类的合作狩猎体验，卖点是低门槛入手与联机开黑氛围；风险在于实机手感、优化与长线内容量尚未经市场验证。综合来看，若联机体验成立，它有明显的\"朋友一起玩\"传播位，建议加入愿望单跟踪后续测试与发售信息。",
+      "why_notable": "狩猎×化学引擎×开放世界的组合在《旷野之息》后罕见，日本 KOL 集中曝光、10 万+浏览",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": "暂未发售",
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X @IndieGameJoe · KOL推荐",
+     "tags": [
+      "策略",
+      "逆向塔防",
+      "陷阱构筑",
+      "新游曝光"
+     ],
+     "title": "Hostile Architect：扮演反派的逆向塔防，布好陷阱放英雄入阵",
+     "en_title": "These indie devs were sick of platformers so they made one where you get to be the bad guy. Pick your traps from a small shop. Lay them out however you want. A wave of heroes is let loose on it.",
+     "full_text": "These indie devs were sick of platformers so they made one where you get to be the bad guy\n\n- Pick your traps from a small shop\n- Lay them out however you want\n- A wave of heroes is let loose on it\n- More heroes come every round\n\nGame is Hostile Architect. This is GENIUS. https://t.co/iQPQebPhMT",
+     "author": "Indie Game Joe",
+     "date": "2026-09-25",
+     "likes": 5047,
+     "views": 184078,
+     "link": "https://x.com/IndieGameJoe/status/2103556090063462460",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2103555520690827265/img/sWEhkMOKQw9sdsTz.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2103556090063462460/video/1"
+     },
+     "summary": "KOL Indie Game Joe 推荐《Hostile Architect》：玩家扮演反派，从小商店挑选陷阱自由布置在关卡中，随后放入一波波英雄让他们踩坑，每轮来袭的英雄更强，考验预算分配与陷阱组合。被博主称为 GENIUS（天才设计）。",
+     "analysis": "",
+     "recommendation": "Hostile Architect：扮演反派的逆向塔防，商店买陷阱布阵放英雄踩坑——18万浏览",
+     "game_ref": "Hostile Architect",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Hostile Architect",
+      "genre": "休闲 / 独立 / 模拟",
+      "developer": "SludgeBit",
+      "platforms": [
+       "PC",
+       "Mac"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": null,
+      "steam_url": "https://store.steampowered.com/app/4768160",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4768160/0868510c8bd079503c2f5414b92f6e7523de6db3/header.jpg?t=1790446774",
+      "youtube_video": null,
+      "description": "《Hostile Architect》是一款\"扮演反派\"的逆向塔防/陷阱构筑游戏，开发商 SludgeBit，Steam 页面已上线（发售日期待公布）。【核心玩法】玩家不再防守，而是扮演地牢的反派主人：每一轮从小商店挑选陷阱与装置、自由布置在关卡各处，随后放入一波英雄让他们闯阵；每轮来袭的英雄更强，考验预算分配与陷阱组合规划。【设计亮点】把传统塔防的攻防关系整体翻转——玩家成为\"魔王\"，来袭的怪物波次变成\"英雄冒险团\"，视角反差自带传播性；自由摆放+商店构筑提供了 roguelike 式的重开动力。【对标】精神上承接《地下城守护者》的魔王视角与《陷阱大师》的机关布置，本作用极简呈现把核心循环压缩得非常纯粹。【风险】纯策略玩法对平衡性敏感，内容量与重复可玩性决定长线留存。综合来看，概念清晰、\"让英雄踩我的陷阱\"自带梗属性，是本轮曝光中最容易出圈的独立作品之一。",
+      "why_notable": "\"扮演魔王\"的视角翻转自带传播性，18.4 万浏览、5 千+赞的周末爆款",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "電ファミニコゲーマー · 媒体报道",
+     "tags": [
+      "推理",
+      "免费游戏",
+      "Obra Dinn-like",
+      "unityroom"
+     ],
+     "title": "UNKNOWN PASSENGER 47：空难遇难者身份鉴别推理游戏，免费上架 unityroom",
+     "en_title": "【無料】\"航空事故の犠牲者\"の身元を特定する推理ゲーム『UNKNOWN PASSENGER 47』がunityroomで公開",
+     "full_text": "【無料】“航空事故の犠牲者”の身元を特定する推理ゲーム『UNKNOWN PASSENGER 47』がunityroomで公開中\nhttps://t.co/kBetardcH2\n\n48体の遺体情報を医療記録や宿泊先、手荷物などの資料と照らし合わせ、全員の身元を明らかにすることを目指す“オブラディンライク”な作品 https://t.co/K4ZpykIJly",
+     "author": "電ファミニコゲーマー",
+     "date": "2026-09-27",
+     "likes": 2070,
+     "views": 196763,
+     "link": "https://x.com/denfaminicogame/status/2104146164899799181",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HTNtyOia4AAPa5S.jpg"
+     },
+     "summary": "りりぃカンパニー（おれんじりりぃ）在 unityroom 与 itch.io 免费公开《UNKNOWN PASSENGER 47》：玩家扮演空难身份鉴别官，将 48 位遇难者的记录与乘客名册、牙科记录、住宿记录等资料交叉比对；每凑满 3 组\"暂定\"配对触发一次正误判定，错误组合保留在案需重新推理。通关约 2-3 小时，作者利用 Silver Week 假期完成制作。",
+     "analysis": "",
+     "recommendation": "UNKNOWN PASSENGER 47：空难遇难者身份鉴别推理，Obra Dinn-like 免费浏览器可玩——19万浏览",
+     "game_ref": "UNKNOWN PASSENGER 47",
+     "enrichment": {
+      "game_name": "UNKNOWN PASSENGER 47",
+      "genre": "推理 / 文档解谜 / Obra Dinn-like",
+      "developer": "りりぃカンパニー（おれんじりりぃ，个人团队）",
+      "platforms": [
+       "unityroom（浏览器）",
+       "itch.io"
+      ],
+      "price": "免费",
+      "release_date": "已发售 · 2026年9月26日",
+      "steam_rating": null,
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "《UNKNOWN PASSENGER 47》是一款免费的文档推理游戏，已上架 unityroom 与 itch.io，浏览器即可游玩。【核心玩法】玩家扮演空难事故的身份鉴别官：面对 48 位遇难者的遗体记录，与乘客名册、牙科记录、住宿记录、随身药品等资料库交叉比对，逐一确定每位遇难者的身份。【判定机制】推理出的\"遗体编号×人员身份\"组合先\"暂定\"，每凑满 3 组触发一次正误判定——正确的组合才被\"确证\"，错误的组合保留在案，需要重新推理；任何单一资料都不足以锁定身份，逼迫玩家像真正的调查员一样多源验证。【风格】像素风+克制严肃的叙事，玩法明显受《Return of the Obra Dinn》启发，属于 Obra Dinn-like 细分品类。【综合】开发者利用 Silver Week 假期完成制作，通关时长 2-3 小时，免费无门槛。对叙事解谜爱好者是一次高质量的周末体验，对品类开发者则是低成本高概念的创作范本。",
+      "why_notable": "免费浏览器可玩的 Obra Dinn-like，文档交叉验证玩法的新范本，19.7 万浏览",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": "免费游戏",
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "X @stmatomato · KOL推荐",
+     "tags": [
+      "Hack & Slash",
+      "撤离玩法",
+      "PvPvE",
+      "新游曝光"
+     ],
+     "title": "Vaultbreakers：暗黑式俯视砍杀 × 塔科夫式全损撤离",
+     "en_title": "『ディアブロ』×『タルコフ』。見下ろし型ハクスラの戦闘で、死んだら全ロスの脱出ゲー。",
+     "full_text": "『ディアブロ』×『タルコフ』。絶対俺たちの時間削りにきてる。\n\n見下ろし型ハクスラの戦闘で、死んだら全ロスの脱出ゲー。ファンタジー世界で遺物を漁って拠点を築き上げるんだけど、PvEとPvPvEを自由に行き来できるのがマジでいい。最初はPvEで仲間と平和にファームして、最強の装備が揃ったらPvPvEで他のプレイヤーを狩りに行くのアツそう。\n\n『Vaultbreakers』",
+     "author": "スチまと / STEAMおすすめゲーム新作など紹介🎮 Steam",
+     "date": "2026-09-27",
+     "likes": 1134,
+     "views": 122450,
+     "link": "https://x.com/stmatomato/status/2104148541862183345",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2104046101502586880/img/cRIbPi1pt5XjpN9-.jpg",
+      "video_url": "https://x.com/stmatomato/status/2104148541862183345/video/1"
+     },
+     "summary": "日本 KOL 推荐《Vaultbreakers》：俯视角 hack-and-slash 战斗+死亡全损的撤离玩法——在奇幻世界搜刮遗物、建设据点；PvE 与 PvPvE 模式可自由切换，先在 PvE 与朋友平和 farm，装齐最强装备后再进 PvPvE 猎杀其他玩家。博主评价\"绝对在偷走我们的时间\"。",
+     "analysis": "",
+     "recommendation": "Vaultbreakers：暗黑式砍杀×塔科夫式全损撤离，PvE/PvPvE 自由切换——12万浏览",
+     "game_ref": "Vaultbreakers",
+     "enrichment": {
+      "game_name": "Vaultbreakers",
+      "genre": "动作 / 冒险 / 大型多人在线",
+      "developer": "BetaDwarf",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": null,
+      "steam_url": "https://store.steampowered.com/app/306910",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/306910/bcb28398a74eab6b9089f13ad85901280da23af4/header_schinese.jpg?t=1790182375",
+      "youtube_video": null,
+      "description": "《Vaultbreakers》（Steam 中文名《龙窟破坏者》）是 BetaDwarf（Minion Masters 开发商）打造的俯视角 Hack & Slash 撤离游戏，玩法结构可概括为\"暗黑破坏神式战斗 × 塔科夫式全损撤离\"。【核心玩法】玩家在奇幻世界中下副本搜刮遗物与战利品——一旦死亡，本次带入的全部装备损失殆尽；成功撤离则可将收获带回据点，逐步建设升级。【模式设计】PvE 与 PvPvE 可自由切换：先在纯 PvE 模式与朋友平和地 farm 装备、熟悉 build，配置成型后再进入 PvPvE 与其他玩家互猎——同一套战斗系统承载两种压力曲线。【体验定位】俯视角+砍杀操作大幅降低撤离射击类的上手门槛，\"打宝-贪心-撤离\"的赌徒循环完整保留。【风险】全损机制对新手挫败感强，长线要看匹配生态与赛季内容更新。综合来看，它把当前最热门的撤离玩法嫁接到存量巨大的暗黑品类上，差异化清晰，值得加入愿望单跟踪测试节奏。",
+      "why_notable": "把撤离玩法嫁接到俯视砍杀，PvE/PvPvE 双轨降低门槛，12.2 万浏览",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": null
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X @Bar_After_Bar · 独立开发者",
+     "tags": [
+      "销量数据",
+      "酒吧经营"
+     ],
+     "title": "Bar After Bar：发售一个月销售额突破 12 万美元",
+     "en_title": "MY game was released 1 month ago, and it just reached 120k$ in sales.",
+     "full_text": "MY game was released 1 month ago, and it just reached 120k$ in sales. That is crazy thanks so much to everyone !!! https://t.co/AF7CIMkDex",
+     "author": "Bar After Bar 🍺 OUT NOW",
+     "date": "2026-09-27",
+     "likes": 122,
+     "views": 7520,
+     "link": "https://x.com/Bar_After_Bar/status/2104128488114459003",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2104128155686453248/img/_aZ5glELDE3QlzXR.jpg",
+      "video_url": "https://x.com/Bar_After_Bar/status/2104128488114459003/video/1"
+     },
+     "summary": "独立开发者汇报：酒吧题材游戏《Bar After Bar》发售一个月销售额达 12 万美元。小体量模拟经营+社群传播的又一个正样本。",
+     "analysis": null,
+     "recommendation": "Bar After Bar：发售一个月 12 万美元销售额的酒吧经营独游",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "X @nexindie · 众筹动态",
+     "tags": [
+      "Kickstarter",
+      "合作生存"
+     ],
+     "title": "Tenkemo：开放世界合作生存游戏，Kickstarter 众筹开启",
+     "en_title": "Open-world co-op survival adventure game 'Tenkemo' is now live on Kickstarter.",
+     "full_text": "Open-world co-op survival adventure game 'Tenkemo' is now live on Kickstarter.\n\nSteam page: https://t.co/GwLBRWExAP https://t.co/8txynYLxFB",
+     "author": "Next Indie 🔍",
+     "date": "2026-09-26",
+     "likes": 1516,
+     "views": 78560,
+     "link": "https://x.com/nexindie/status/2103780364711829782",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2103776785536077824/img/-NNL2We29CRl5uik.jpg",
+      "video_url": "https://x.com/nexindie/status/2103780364711829782/video/1"
+     },
+     "summary": "开放世界合作生存冒险游戏《Tenkemo》开启 Kickstarter 众筹，Steam 页面已上线。",
+     "analysis": null,
+     "recommendation": "Tenkemo：开放世界合作生存，Kickstarter 众筹已开启",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X @IndieGameJoe · KOL推荐",
+     "tags": [
+      "心理恐怖",
+      "灯光机制"
+     ],
+     "title": "Flick：以\"关灯恐惧\"为主题的心理恐怖游戏",
+     "en_title": "This indie dev is making a psychological horror game about the fear of turning off the lights. Must turn off lights to progress.",
+     "full_text": "This indie dev is making a psychological horror game about the fear of turning off the lights\n\n- Must turn off lights to progress\n- Flicking a switch changes the environment\n- Don't let it find you\n\nGame is Flick https://t.co/3XMtlagMcV",
+     "author": "Indie Game Joe",
+     "date": "2026-09-26",
+     "likes": 884,
+     "views": 36076,
+     "link": "https://x.com/IndieGameJoe/status/2103933310665994576",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2103930755910975488/img/uwD1HxqJUfL6f4-L.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2103933310665994576/video/1"
+     },
+     "summary": "心理恐怖游戏《Flick》：必须关灯才能推进流程，拨动开关会改变环境，且\"不要让它找到你\"——把日常开关灯的恐惧感做成了核心机制。",
+     "analysis": null,
+     "recommendation": "Flick：必须关灯才能前进的心理恐怖游戏，开关改变环境",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "X @Limited4tune · 独立开发者",
+     "tags": [
+      "休闲模拟",
+      "免费试玩"
+     ],
+     "title": "ODD ODDS：抓娃娃机×还债题材，免费 Demo 已公开",
+     "en_title": "週末の息抜きに「クレーンゲーム×借金返済」はいかがですか？無料デモ版を公開中です！！",
+     "full_text": "週末の息抜きに「クレーンゲーム×借金返済」はいかがですか？\n無料デモ版を公開中です！！\n▼ デモ版＆ウィッシュリスト ▼ https://t.co/FqMFngSiW0\n\n#インディーゲーム #gamedev https://t.co/dD9tgnvntA",
+     "author": "LimitedFourtune｜ゲーム開発中",
+     "date": "2026-09-26",
+     "likes": 434,
+     "views": 46040,
+     "link": "https://x.com/Limited4tune/status/2103848583900643739",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2103848267167797248/img/OFryrc6wKQt8MiBm.jpg",
+      "video_url": "https://x.com/Limited4tune/status/2103848583900643739/video/1"
+     },
+     "summary": "日本独游《ODD ODDS》：把抓娃娃机与还债经营结合的休闲游戏，免费 Demo 与愿望单已开放，自称\"周末消遣\"定位。",
+     "analysis": null,
+     "recommendation": "ODD ODDS：抓娃娃机×借金返済的日式休闲独游，Demo 免费试玩",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "X @tkworks_gamedev · 独立开发者",
+     "tags": [
+      "Roguelike",
+      "实时制"
+     ],
+     "title": "Rally the Parties：走路即推进时间的 hack-slash roguelike，Steam 免费 Demo",
+     "en_title": "『Rally the Parties』の特徴 #1：動いた分だけ時間が進む。操作キャラが動けば敵も味方も一斉に動き出し、立ち止まれば全員が止まります。",
+     "full_text": "『Rally the Parties』の特徴 #1：動いた分だけ時間が進む\n\nパーティーを率いる RPG ですが、手番を待つことはありません。\n操作キャラが動けば敵も味方も一斉に動き出し、立ち止まれば全員が止まります。\n\n新タイプのハクスラ風ローグライク。Steam で無料体験版を公開中！\nhttps://t.co/u8GIQzP7jh\n\n#RallyTheParties #Steam #インディーゲーム",
+     "author": "TK Works | solo game developer",
+     "date": "2026-09-27",
+     "likes": 196,
+     "views": 17844,
+     "link": "https://x.com/tkworks_gamedev/status/2104009342194524343",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2104008766505246720/img/jw5eY6QyqELMMwIU.jpg",
+      "video_url": "https://x.com/tkworks_gamedev/status/2104009342194524343/video/1"
+     },
+     "summary": "日本个人开发者的《Rally the Parties》：新型 hack-slash roguelike——角色移动才推进时间（类真实同步制），停止移动全场静止；Steam 免费体验版已公开。",
+     "analysis": null,
+     "recommendation": "Rally the Parties：移动才推进时间的同步制砍杀 roguelike，Demo 免费玩",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X @ScottieFoxTTV · 开发者开源",
+     "tags": [
+      "three.js",
+      "开源",
+      "渲染",
+      "WebGL"
+     ],
+     "title": "CAUSTIC//VOLUME：three.js 实时水面焦散开源，单 HTML 文件 MIT 协议",
+     "en_title": "Opensource. Lite & Full version. 💦 @threejs Use as you wish. Github:",
+     "full_text": "Opensource. Lite &amp; Full version. 💦 @threejs \nUse as you wish. Github:\nhttps://t.co/bCh71K77s9 https://t.co/zyyOecXmZR",
+     "author": "ScottieFox",
+     "date": "2026-09-26",
+     "likes": 3087,
+     "views": 153832,
+     "link": "https://x.com/ScottieFoxTTV/status/2103869371869212740",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2103868869320298496/img/Q1x_DyzwE33arKO0.jpg",
+      "video_url": "https://x.com/ScottieFoxTTV/status/2103869371869212740/video/1"
+     },
+     "summary": "开发者开源《CAUSTIC//VOLUME》：three.js 实现的水面焦散效果（阳光经波动水面聚焦成池底亮纹）。Lite 版约 990 行可读代码，可在旧笔记本与手机运行（无 WebGL2 时回退 CPU 计算）；沙盒版支持小船、生物、墨水、落沙、灯光与激光交互。MIT 协议，每个版本都是单个 HTML 文件。",
+     "analysis": "单文件、零依赖、可直接阅读的实时渲染 demo，既是学习素材也是可直接取用的 MIT 资产；做网页游戏、营销页或工具站的团队可以零成本引入。",
+     "recommendation": "CAUSTIC//VOLUME：three.js 实时水面焦散开源，990 行单 HTML 文件 MIT——15万浏览",
+     "featured": true
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**Xbox 第二轮重组落地，行业收缩进入深水区**\nXbox 本周完成第二轮裁员与重组：Ninja Theory 面临关停，Halo、Rare、World's Edge 划入动视管理，Obsidian 并入 Bethesda，Playground 与 Turn 10 合并，本周再裁 268 岗；微软 CEO 称\"精简\"进展\"令人鼓舞\"。小岛秀夫 Physint 的 4 亿美元预算传闻被多方撤回，证实 Xbox 实际出价远低于此。MindsEye 开发商 Build a Rocket Boy 因年运营亏损 4750 万英镑进入破产管理。Star Wars Zero Company 销量破百万、营收约 5000 万美元，但团队发售前被无薪休假。\n\n**AI 游戏开发继续降本：36 小时复刻 WoW 式 demo**\n多个独立演示显示 Claude Opus 5.5 已能打通\"建模-资产-前端\"全链路：36 小时、约 2400 美元产出 WoW 式 MMO demo（2004 年原版成本 6300 万美元）；Willowmere 实现零 PNG、零模型、零音频文件的纯程序化生成。\"资产管线代码化\"正在压缩生产瓶颈，立项评估的重心将进一步转向创意与审美。\n\n**独游侧：狩猎、推理与反派视角**\n动漫风开放世界狩猎《未眠野（Sleepless Wilds）》、Obra Dinn-like 免费推理《UNKNOWN PASSENGER 47》、反派视角逆向塔防《Hostile Architect》、暗黑×塔科夫混合《Vaultbreakers》在本轮获得集中曝光；工具侧 three.js 水面焦散 CAUSTIC//VOLUME 开源。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

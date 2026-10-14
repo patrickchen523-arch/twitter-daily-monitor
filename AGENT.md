@@ -54,7 +54,7 @@ B站榜混入非游戏名（人名/UP主/角色/电竞/泛标签如"剪辑""钓�
 
 ## 游戏关注页提交前验收（缺一不许提交）
 
-1. `data/launched/manifest.json` dates 相对上一自然日无断档（9/7 缺期事故）
+1. `data/launched/manifest.json` 最新档期距今 ≤2 天（2026-09-18 起改为断更告警制：历史断档仅 warn，过渡期欠账如 9/14→9/18 允许存在；当日档期由日报流程自动建：python tools\fetch_bili_rank.py + fetch_steamdb_trending.py 抓源后走 make_day 链）
 2. 当期四榜：steamdb=50、bilibili≥20、twitter=10、roblox=10
 3. roblox 榜 `week` == `roblox/` 目录最新周报档期（周报 HTML 入库后必须同会话跑 `node tools\update_roblox_board.cjs` + `--propagate`）
 4. twitter 榜首条目的 `day` 距今 ≤3 天（半衰期衰减排序已内置，仍要抽查）

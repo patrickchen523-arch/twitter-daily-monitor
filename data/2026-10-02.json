@@ -1,0 +1,457 @@
+{
+  "date": "2026-10-02",
+  "meta": {
+    "raw_count": 255,
+    "filtered_count": 194,
+    "selected_count": 12,
+    "crawl_time": "2026-10-03 11:45"
+  },
+  "lede": "Grasshopper Manufacture 与网易体面分手重回独立；Xbox CEO 否认出售传闻但裁员重组继续；一句 prompt 的《无人深空》长出银河战争；免费邻里乱斗《Neighbors》转正发售。",
+  "editors_pick": [
+    { "section_id": "industry", "item_index": 0, "hook": "Grasshopper 与网易体面分手重回独立：新作销量未公布，网易海外收缩又下一城" },
+    { "section_id": "ai", "item_index": 1, "hook": "1条prompt的无人深空长出银河战争：绑腿放倒巨兽+无缝空战，7000人玩过" },
+    { "section_id": "indie", "item_index": 0, "hook": "邻里互拆房屋派对乱斗《Neighbors》免费转正——单日711万浏览" }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "刘小域整理历代GPT寿命：从916天缩到7天\n一句prompt的无人深空长出银河战争\n独立开发者遭AI克隆勒索200美元"
+    },
+    {
+      "id": "industry",
+      "text": "Grasshopper与网易分手重回独立\nXbox CEO否认出售传闻\nE-Day开发者担心发售后即被裁\nReigns开发商Nerial关停\nNaughty Dog被曝开发新Uncharted"
+    },
+    {
+      "id": "indie",
+      "text": "免费邻里乱斗《Neighbors》转正发售\n潜艇co-op《S.O.N.A.R.》Demo上架"
+    },
+    {
+      "id": "tools",
+      "text": "开源文生动画UniMate：一套模型任意骨骼\nBlender→Roblox实时同步插件开源"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · 中文AI博主",
+          "tags": ["AI趋势", "GPT", "模型迭代"],
+          "featured": true,
+          "title": "历代 GPT「寿命」清单疯传：模型迭代周期从 916 天缩到 7 天",
+          "en_title": "GPT-6 Astra，活了19天 / GPT-6 Sol，活了7天 / GPT-6.1 Sol，刚出生1天",
+          "full_text": "各位AI消费者，GPT 的寿命越来越短，意味着什么？\n\nGPT-1，活了248天\nGPT-2，活了469天\nGPT-3，活了916天\nGPT-3.5，活了104天\nGPT-4，活了237天\nGPT-4 Turbo，活了189天\nGPT-4o，活了290天\nGPT-4.5，活了46天\nGPT-4.1，活了115天\nGPT-5，活了97天\nGPT-5.1，活了29天\nGPT-5.2，活了84天\nGPT-5.4，活了49天\nGPT-5.5，活了77天\nGPT-5.6，活了56天\nGPT-6 Astra，活了19天\nGPT-6 Sol，活了7天\nGPT-6.1 Sol，刚出生1天",
+          "author": "buildnomadx",
+          "date": "2026-09-30",
+          "likes": 6931,
+          "views": 1230686,
+          "link": "https://x.com/buildnomadx/status/2105210046246424671",
+          "media": null,
+          "summary": "中文博主刘小域整理了从 GPT-1 到 GPT-6.1 每一代模型的「存活时间」：GPT-3 以 916 天为最长，而 GPT-6 系列的 Astra、Sol 分别仅存活 19 天和 7 天，最新一代发布仅 1 天。该帖获得 123 万浏览与 6900+ 点赞，引发「模型生命周期加速」的广泛讨论。",
+          "analysis": "对从业者而言，模型代际更替加速意味着基于特定版本构建的产品和工作流需要更强的抽象层与快速迁移能力，「版本焦虑」也推高了评测与选型成本。口径虽粗（以下一代发布计为「死亡」），但直观呈现了头部厂商军备竞赛的烈度。",
+          "recommendation": "历代GPT寿命清单：GPT-3活916天，GPT-6 Sol只活7天——迭代加速"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "X · AI开发者",
+          "tags": ["AI生成", "three.js", "Prompt"],
+          "featured": true,
+          "title": "一句 prompt 做出《无人深空》：作者再补两次 prompt，长出完整银河战争",
+          "en_title": "My \"No Man's Sky\" game built with 1 prompt went viral: 700k+ views and 7,000+ unique players.",
+          "full_text": "My \"No Man's Sky\" game built with 1 prompt went viral: 700k+ views and 7,000+ unique players.\n\nSo I kept going and added a full galactic war. With 2 more prompts: \n\n→ Ground battle against giant Behemoth walkers. Tie their legs together to bring them down\n→ Fly straight off the surface into a space battle with Juggernaut ships and fighter squadrons\n→ Escape the war and land on a new planet to explore\n\nNo loading screens. All in the browser.\nBuilt with Opus 5.5 & @threejs on @TesanaAI\n\nPlay it below 👇",
+          "author": "Rubzem",
+          "date": "2026-09-30",
+          "likes": 1166,
+          "views": 186970,
+          "link": "https://x.com/Rubzem/status/2105425742100341240",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2105420105006129152/img/X1oraoFuCSjDZC_e.jpg",
+            "video_url": "https://x.com/Rubzem/status/2105425742100341240/video/1"
+          },
+          "summary": "开发者 Rubzem 用一条 prompt 在 TesanaAI 上以 Opus 5.5 + three.js 生成的太空探索游戏走红（70 万浏览、7000+ 独立玩家）后，又用两次 prompt 加入完整银河战争：地面巨兽战（可绑腿击倒 Behemoth）、从地表直接飞入太空的舰队战、降落新星球继续探索。全程无加载画面，浏览器直接运行。",
+          "analysis": "从「能玩」到「有玩法纵深」只隔两次 prompt，AI 生成正从原型玩具快速逼近小品级完成度。对游戏团队，这类「浏览器即发行渠道」的传播形态与会话式迭代开发流程，都值得持续跟踪。",
+          "recommendation": "1条prompt的无人深空长出银河战争：绑腿放倒巨兽+无缝空战，7000人玩过"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "X · 独立开发者",
+          "tags": ["AI滥用", "独立开发", "版权"],
+          "title": "独立开发者自曝：游戏被 AI 克隆后遭勒索 200 美元，否则抢先上 Steam",
+          "en_title": "Someone recreated my game with AI and is now threatening to publish it on Steam unless I pay him $200.",
+          "full_text": "Someone recreated my game with AI and is now threatening to publish it on Steam unless I pay him $200.\n\nObviously, I'm not paying.\n\nFirst video: my actual game.\nSecond video: the AI-generated clone.\nHe apparently found my game through Twitter, fed it into an AI tool, and recreated what he saw.\n\nNow he's asking for $200 or he'll publish it.\n\nI'm sharing this as a heads-up because I assume I'm probably not the only indie dev he's doing this to.\n\nI guess we have to be more careful about sharing our projects publicly now. You can spend months making a game, post it online, and someone can apparently try to recreate it with AI almost immediately.\n\nNot gonna lie, it's kind of funny, but also not funny at all.\n\n#indiedev #indiegame #unity",
+          "author": "WeaselPit",
+          "date": "2026-09-29",
+          "likes": 994,
+          "views": 139442,
+          "link": "https://x.com/WeaselPit/status/2105045090192261211",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2105044499474817024/img/h_ehAbjt1KTwsX18.jpg",
+            "video_url": "https://x.com/WeaselPit/status/2105045090192261211/video/1"
+          },
+          "summary": "独立团队 Weasel Pit 公开爆料：有人从 Twitter 上发现其游戏《Iron Pilgrim》的画面，喂给 AI 工具迅速复刻出克隆版，并威胁「不给 200 美元就抢先上架 Steam」。开发者拒绝支付，并公开原版与克隆版对比视频，提醒同行公开项目需更谨慎。",
+          "analysis": "「AI 克隆 + 抢先发布勒索」是独立发行的新攻击面：公开曝光（尤其是 wishlist 冲刺期的游戏）的边际风险显著上升。平台侧的抄袭举报机制与开发者的留证习惯（时间戳、过程文件）正变得更重要。",
+          "recommendation": "AI克隆独立游戏成新型勒索：不给200美元就抢先上架Steam"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Rock Paper Shotgun · 媒体",
+          "tags": ["NetEase", "工作室变动", "日本开发"],
+          "featured": true,
+          "title": "Grasshopper Manufacture 与网易分手，Suda51 带队重回独立",
+          "en_title": "Grasshopper Manufacture have leapt from the jaws of NetEase and gone indie again",
+          "full_text": "No More Heroes and Killer7 developers Grasshopper Manufacture have split from erstwhile parent company NetEase, founder Goichi \"Suda51\" Suda has announced. https://t.co/ePG71aRWBz https://t.co/LyLXhKQS6p",
+          "author": "rockpapershot",
+          "date": "2026-10-01",
+          "likes": 5,
+          "views": 2075,
+          "link": "https://x.com/rockpapershot/status/2105609947882914178",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTihEqGW0AA2zas.jpg"
+          },
+          "summary": "《No More Heroes》《Killer7》开发商 Grasshopper Manufacture 宣布与母公司网易分道扬镳，重回独立运营。网易 2021 年通过收购 Gungho 间接获得 GHM；Suda51 称此决定「与网易游戏充分讨论并获其慷慨配合」，未来以自有发行为主、不排除继续合作。RPS 指出网易近一年已撤资名越稔洋的《Gang of Dragon》、关停 T-Minus Zero，而 GHM 新作《Romeo is a Dead Man》至今未公布销量。",
+          "analysis": "这是网易海外工作室布局收缩的又一实锤——从「买买买」转向聚焦核心项目。对国内大厂的启示：创意型小团队的回报模型难以匹配大厂财务预期；「体面分手」保留了未来合作空间，比硬关停更值得借鉴。",
+          "recommendation": "Grasshopper与网易体面分手重回独立：新作销量未公布，网易海外收缩又下一城"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 媒体",
+          "tags": ["Xbox", "微软", "裁员重组"],
+          "featured": true,
+          "title": "Xbox CEO 否认出售传闻：「Xbox 不卖」，但 3200 人裁员重组仍在继续",
+          "en_title": "\"Xbox is not for sale\": CEO Asha Sharma says \"we will do whatever it takes\"",
+          "full_text": "Despite mass layoffs at multiple first-party studios and major internal shakeups, CEO Asha Sharma has shot down speculation about a potential Xbox buyout. https://t.co/lXz039I3NK https://t.co/MltwECdKCR",
+          "author": "eurogamer",
+          "date": "2026-10-01",
+          "likes": 17,
+          "views": 7413,
+          "link": "https://x.com/eurogamer/status/2105621290262372484",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTirYz2W8AANY5u.jpg"
+          },
+          "summary": "针对外界「重组是为出售铺路」的猜测，Xbox CEO Asha Sharma 对纽约时报明确否认：「Xbox 不出售，我们会做一切必要的事让公司成功。」今年 Xbox 计划裁减 3200 个岗位，Double Fine、Compulsion、Undead Labs 已转为独立，Ninja Theory 与 Arkane 去留未定，Halo 划归动视，Xbox Game Studios 旗下只剩 Coalition、Playground、Mojang、InXile 等少数工作室。她还为小岛秀夫的 Physint 签下发行合作。多家报道：Rock Paper Shotgun。",
+          "analysis": "「不出售」并未排除拆分独立运营等资本运作（分析师仍在讨论 spin-off 可能）。对从业者，Xbox 第一方生态正系统性缩编，与其绑定的人才和外包链条需要重新评估。",
+          "recommendation": "Xbox CEO否认出售：3200人裁员、Halo划归动视后，「Xbox不卖」"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · 媒体",
+          "tags": ["Xbox", "裁员", "Gears of War"],
+          "featured": true,
+          "title": "《Gears of War: E-Day》开发者担心发售后即遭裁员，奖金也拿不到",
+          "en_title": "As Xbox swings the axe, Gears of War: E-Day developers fear they'll be laid off straight after launch",
+          "full_text": "As Xbox swings the axe, Gears of War: E-Day developers fear they'll be laid off straight after launch - and right before they'd be due their bonuses.\n\n\"It's hard to believe anything they say anymore,\" Coalition devs tell Eurogamer.\n\nhttps://t.co/jeW0iFgQBl https://t.co/tk5YJWbhFO",
+          "author": "eurogamer",
+          "date": "2026-10-01",
+          "likes": 444,
+          "views": 43626,
+          "link": "https://x.com/eurogamer/status/2105597209828110810",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTiVamuXQAA8uTj.jpg"
+          },
+          "summary": "Eurogamer 采访 The Coalition 开发者：尽管《Gears of War: E-Day》媒体好评一片，团队普遍担心会在发售后立即被裁，「而且刚好卡在奖金发放周期之前」。此前 Xbox 已在发售前两周裁掉本作剧情总监，一位受访者直言「越来越难相信他们说的任何话」。",
+          "analysis": "「项目成功」与「团队安全」脱钩，是本轮大厂裁员最刺眼的结构性问题。对项目制团队，奖金周期与留任条款正在成为 offer 谈判的新焦点。",
+          "recommendation": "E-Day好评如潮，Coalition开发者却担心发售后即被裁、拿不到奖金"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Rock Paper Shotgun · 媒体",
+          "tags": ["工作室关闭", "Devolver", "独立发行"],
+          "title": "《Reigns》《Card Shark》开发商 Nerial 关停，创始人回归纯独立",
+          "en_title": "Reigns and Card Shark developers Nerial are closing down",
+          "full_text": "Reigns and Card Shark developers Nerial are closing down, laying staff off while the founders go \"back to our roots\" https://t.co/mpxyDtdtTV",
+          "author": "rockpapershot",
+          "date": "2026-10-01",
+          "likes": 0,
+          "views": 926,
+          "link": "https://x.com/rockpapershot/status/2105696885780422843",
+          "media": null,
+          "summary": "经营 13 年的 Nerial（Reigns、Card Shark、The Crush House）与母公司 Devolver Digital 商议后宣布结束开发，全员「另谋出路」，创始人 François Alliot 回归「纯独立」。RPS 指出背景或是 Devolver 自身财务压力——其 8 月已告知股东寻求从伦敦证交所退市，并计提多款表现不佳游戏的减值。",
+          "analysis": "中型独立工作室在「发行商收缩 + 品类内卷」双压下的退出案例继续增加。Devolver 的退市动作可作为独立发行板块景气度的风向标持续跟踪。",
+          "recommendation": "13年老工作室Nerial关停：Devolver酝酿退市，创始人回归纯独立"
+        },
+        {
+          "idx": "游戏行业 05",
+          "source": "Eurogamer · 媒体",
+          "tags": ["Naughty Dog", "PlayStation", "传闻"],
+          "title": "Naughty Dog 被曝开发全新《Uncharted》，非重制，或待 Intergalactic 之后",
+          "en_title": "New Uncharted game reportedly in the works at Naughty Dog, and it's not a remake",
+          "full_text": "New Uncharted game reportedly in the works at Naughty Dog, and it's not a remake\n\nhttps://t.co/euug0V8CXM https://t.co/HqQR4d4I5M",
+          "author": "eurogamer",
+          "date": "2026-10-01",
+          "likes": 51,
+          "views": 9927,
+          "link": "https://x.com/eurogamer/status/2105609162768216067",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTifhNkboAA494x.jpg"
+          },
+          "summary": "据 MP1st 报道、爆料人 NateTheHate 佐证：Naughty Dog 正早期开发全新《Uncharted》，并非重制；导演为《失落遗产》导演 Shaun Escayag（曾离开参与《漫威复仇者联盟》后回归）。Nathan Drake 会以某种形式回归但未必是主角，不排除由 Drake 女儿 Cassie 领衔。项目将在《Intergalactic: The Heretic Prophet》发售后推进，后者预计 2027 年才正式公开，新作距离面世还很久。多家报道：Destructoid。",
+          "analysis": "索尼第一方在「服务型豪赌」与「招牌单机 IP」之间再平衡的信号。Uncharted 回归将是下个主机周期的重要筹码，但对 ND 内部意味着多线作战的资源压力。",
+          "recommendation": "Naughty Dog被曝开新Uncharted：非重制，失落遗产导演操刀",
+          "game_ref": "Uncharted"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "電ファミニコゲーマー · 媒体",
+          "tags": ["派对乱斗", "免费开玩", "多人在线"],
+          "featured": true,
+          "title": "《Neighbors: Suburban Warfare》：邻里互拆房屋派对乱斗免费转正发售（Invisible Walls 独立团队开发）",
+          "en_title": "【基本プレイ無料】\"ご近所同士\"で家を荒らしあうオンライン対戦ゲーム『Neighbors: Suburban Warfare』が正式リリース",
+          "full_text": "【基本プレイ無料】\"ご近所同士\"で家を荒らしあうオンライン対戦ゲーム『Neighbors: Suburban Warfare』が正式リリース\nhttps://t.co/pndqfmxzeH\n\nチームで協力して家の守りを強化し、相手の家に攻め込んで破壊の限りを尽くす。家関係なしに殴り合う乱闘モードや迫りくる敵から家を守るPvEモードも https://t.co/syvqbdMlQx",
+          "author": "denfaminicogame",
+          "date": "2026-09-30",
+          "likes": 31734,
+          "views": 7115902,
+          "link": "https://x.com/denfaminicogame/status/2105189961268121953",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105189923536228352/pu/img/UCddAC11cfCnbINH.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2105189961268121953/video/1"
+          },
+          "summary": "電ファミ报道：免费在线对战游戏《Neighbors: Suburban Warfare》正式发售。玩家组队强化自家房屋防御，同时攻入邻居家竭尽所能搞破坏；另有不分敌我的乱斗模式与合力抵御敌人的 PvE 模式。Steam 端已积累 2000+ 玩家评价。",
+          "recommendation": "邻里互拆房屋派对乱斗《Neighbors》免费转正——单日711万浏览",
+          "game_ref": "Neighbors: Suburban Warfare",
+          "enrichment": {
+            "game_name": "Neighbors: Suburban Warfare",
+            "genre": "派对乱斗 / 在线多人 / 攻防对抗",
+            "developer": "Invisible Walls（独立团队，自发行）",
+            "platforms": ["Steam (PC)"],
+            "price": "免费（Free To Play）",
+            "release_date": "已发售 · 2026年9月29日",
+            "steam_rating": "已获 2000+ 玩家评价",
+            "steam_url": "https://store.steampowered.com/app/1732430/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1732430/fab327d310a06dd8c8e2d22ce4813c7b4c98f361/header_alt_assets_4.jpg?t=1790698746",
+            "youtube_video": null,
+            "description": "【核心玩法】在线多人派对乱斗：以「邻里」为战场的攻防对抗。队伍协作强化自家房屋防御（陷阱、道具、团队连招），同时冲进邻居家竭尽所能搞破坏；另有不分敌我全员乱斗的 Brawl 模式，以及合力抵御来袭敌人的 PvE 模式。日常家居物品皆可成为武器。\n【美术与氛围】明亮卡通化的美式郊区住宅场景，角色造型夸张搞笑，破坏演出信息量足、易读性高，符合派对游戏的传播需求。\n【对标定位】可视为《Fall Guys》《Gang Beasts》一系派对乱斗与攻防据点玩法的混合体：以「家」为据点的目标感让它比纯大乱斗多出一层策略维度。\n【优势】基本免费降低入坑门槛；PvP/PvE 多模式适配不同队伍规模；「拆家」主题自带梗传播力，日本社区反响热烈（电ファミ报道 711 万浏览）。\n【不足】上线即免费意味着长线留存与付费深度尚待验证；Steam 评价样本刚过 2000 条，口碑结构未稳；服务器与匹配体验需观察。\n【综合】典型「短视频时代派对游戏」打法：低成本、强梗、免费进场。能否延续热度取决于更新节奏与社群运营，而非首发热度本身。",
+            "why_notable": "免费派对乱斗首发即 711 万推文浏览，「拆邻居家」的强梗传播模型再次验证短视频时代的获客逻辑",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "暂无（有数GI登录态失效，本次未查询）",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "X · 日文独游博主",
+          "tags": ["合作模拟", "多人co-op", "潜艇"],
+          "title": "《S.O.N.A.R.》：4 人守 9 岗的手忙脚乱潜艇合作游戏，Demo 已公开（Abylight Barcelona 开发）",
+          "en_title": "沈没RTA潜水艦ゲーム『S.O.N.A.R. - 潜水艦クルー、準備不足！』デモ版公開",
+          "full_text": "プレイヤーは4人、持ち場は9つ\n操縦、ソナー、修理に戦闘、\n全部やるには手が足りなすぎる潜水艦で海を渡れ\n\nこれだけ忙しければ、ちょっとミスっても黙っていればバレるわけがない\n\n沈没RTA潜水艦ゲーム\n『S.O.N.A.R. - 潜水艦クルー、準備不足！』デモ版公開\nhttps://t.co/f8OWLXC4AN https://t.co/rjLtAjEOZU",
+          "author": "dotpixel3d",
+          "date": "2026-10-01",
+          "likes": 2150,
+          "views": 205364,
+          "link": "https://x.com/dotpixel3d/status/2105477806662508620",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2105338765200031747/img/G8Yb7pArgA4dYC3P.jpg",
+            "video_url": "https://x.com/dotpixel3d/status/2105477806662508620/video/1"
+          },
+          "summary": "日本独游博主推荐的「沉没 RTA」潜艇游戏：4 名玩家分守 9 个岗位（操舵、声呐、维修、战斗），人手永远不够；出了错只要闭嘴不承认，队友就发现不了——但船会沉。Demo 已上架 Steam，10 月 29 日正式发售。",
+          "recommendation": "4人9岗位手忙脚乱潜艇co-op《S.O.N.A.R.》Demo上架，10月29日发售",
+          "game_ref": "S.O.N.A.R.",
+          "enrichment": {
+            "game_name": "S.O.N.A.R. - Submarine Operators Not Actually Ready",
+            "genre": "合作模拟 / 多人co-op / 潜艇",
+            "developer": "Abylight Barcelona（西班牙独立工作室）",
+            "platforms": ["Steam (PC)"],
+            "price": "未公布（Demo 免费）",
+            "release_date": "2026年10月29日",
+            "steam_rating": "暂未发售",
+            "steam_url": "https://store.steampowered.com/app/4096830/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4096830/79e55d368aefa2c2d829264b348c7f0e8eb3d06a/header.jpg?t=1790856698",
+            "youtube_video": null,
+            "description": "【核心玩法】1-4 人合作潜艇模拟：4 名船员分守 9 个岗位——操舵、声呐、维修、武器战斗，「人手永远不够」是设计核心。玩家要驾驶潜艇跨海完成任务，而「沉没 RTA」的副玩法意味着翻车本身就是内容：出了错只要队友没发现、闭嘴不承认，船多半还能继续开。\n【美术与氛围】卡通风格的海底舱室，紧凑的多站位 UI 把「手忙脚乱」具象化；压迫感来自任务节奏与分工崩溃，而非恐怖演出。\n【对标定位】站在《Barotrauma》《Lethal Company》一类「不靠谱船员」喜剧合作赛道：信息过载 + 沟通失灵制造笑点，短局制天然适合主播场景传播。\n【优势】「岗位多于人数」的强制分工带来天然的戏剧冲突与甩锅梗；Demo 已可完整体验核心循环；日本独立游戏社区热度高（推荐推文 20 万+ 浏览）。\n【不足】模拟要素的上手门槛可能高于纯派对玩家预期；1-2 人体验如何适配未知；正式版内容量（任务多样性）待验证。\n【综合】Abylight Barcelona 出品的小而准的合作喜剧模拟，设计哲学清晰：让每个岗位都重要，让每次沉默都可能翻船。10 月 29 日发售，合作游戏爱好者值得提前 Wishlist。",
+            "why_notable": "「4 人 9 岗位」的强制分工设计自带喜剧张力，Demo 阶段已在日本社区刷屏，是合作模拟赛道值得关注的准爆款",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "暂无（未发售）",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "PC Gamer · 媒体",
+          "tags": ["Roguelike", "卡牌构筑", "桌游题材"],
+          "unselected": true,
+          "title": "Steam 新游 Til What May：以史上最古老桌游为底稿的 roguelike 卡牌构筑",
+          "en_title": "Steam's latest roguelike deckbuilder riffs on what may be the oldest board game in recorded history",
+          "full_text": "Steam's latest roguelike deckbuilder riffs on what may be the oldest board game in recorded history https://t.co/m5PA5ecaef",
+          "author": "pcgamer",
+          "date": "2026-10-01",
+          "likes": 44,
+          "views": 22331,
+          "link": "https://x.com/pcgamer/status/2105453163478442069",
+          "media": null,
+          "summary": "PC Gamer 报道：新游 Til What May 以可能是有记录以来最古老的桌游（Senet 一系）为题材底稿，做成 roguelike 卡牌构筑游戏。",
+          "recommendation": "五千年前的桌游 Senet 被改成 roguelike 卡牌构筑，题材差异化有意思",
+          "unselected_note": "非精选参考：题材有趣但热度与信息密度一般"
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Niche Gamer · 媒体",
+          "tags": ["JRPG", "成人向", "Darkest Dungeon-like"],
+          "unselected": true,
+          "title": "LitGirls 曝光：类《Darkest Dungeon》的成人向 JRPG，带服装破坏系统",
+          "en_title": "LitGirls is a new booba JRPG that's like Darkest Dungeon but with clothing destruction",
+          "full_text": "LitGirls is a new booba JRPG that's like Darkest Dungeon but with clothing destruction: https://t.co/E7p2NAV9hA https://t.co/mkffDpmTUq",
+          "author": "nichegamer",
+          "date": "2026-10-01",
+          "likes": 2188,
+          "views": 81627,
+          "link": "https://x.com/nichegamer/status/2105647241155273104",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105647206782963712/pu/img/dJDM7W-GNh8OmT4g.jpg",
+            "video_url": "https://x.com/nichegamer/status/2105647241155273104/video/1"
+          },
+          "summary": "Niche Gamer 报道：TurretGirls 开发商公布新成人向 JRPG《LitGirls: Bookbound Dungeons》，玩法框架类似《Darkest Dungeon》，加入服装破坏系统。",
+          "recommendation": "成人向+Darkest Dungeon框架的组合在细分市场屡试不爽，8万浏览",
+          "unselected_note": "非精选参考：成人向题材，受众与信息价值有限"
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Niche Gamer · 媒体",
+          "tags": ["多人对抗", "精神续作", "11月发售"],
+          "unselected": true,
+          "title": "《Fat Goblins》：Fat Princess 精神续作宣布下月发售",
+          "en_title": "Fat Princess spiritual successor Fat Goblins launches next month!",
+          "full_text": "Fat Princess spiritual successor Fat Goblins launches next month! https://t.co/QYarZRSnyB https://t.co/otWZ0XBwV8",
+          "author": "nichegamer",
+          "date": "2026-10-01",
+          "likes": 20,
+          "views": 1743,
+          "link": "https://x.com/nichegamer/status/2105662504617541981",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105662452771790848/pu/img/2pA8UDtguoQSaSMg.jpg",
+            "video_url": "https://x.com/nichegamer/status/2105662504617541981/video/1"
+          },
+          "summary": "PS3 时代经典抢公主对抗游戏《Fat Princess》的精神续作《Fat Goblins》宣布 11 月发售。",
+          "recommendation": "老IP精神续作回归多人对抗赛道，情怀牌能否奏效看首发表现",
+          "unselected_note": "非精选参考：互动量低（1743浏览）"
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Oro Interactive · 发行商",
+          "tags": ["合作游戏", "新游公布", "模拟经营"],
+          "unselected": true,
+          "title": "《Grave Mistakes》公布：co-op 经营本地殡仪馆，偷器官糊弄家属",
+          "en_title": "[GAME REVEAL] Grave Mistakes is a co-op game about running a local funeral home.",
+          "full_text": "[GAME REVEAL] Grave Mistakes is a co-op game about running a local funeral home.\n\nConduct ceremonies, steal body parts, and take care of grieving families. Keep families distracted and hopefully they won't see their loved one has a basketball for a head. https://t.co/DADtFq6tpf",
+          "author": "oro_interactive",
+          "date": "2026-10-01",
+          "likes": 34,
+          "views": 1262,
+          "link": "https://x.com/oro_interactive/status/2105657838156599779",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2105657776554831872/img/LS6_k1QNAHo1iN6-.jpg",
+            "video_url": "https://x.com/oro_interactive/status/2105657838156599779/video/1"
+          },
+          "summary": "发行商 Oro Interactive 公布合作新游《Grave Mistakes》：玩家经营本地殡仪馆，主持仪式、偷取器官、安抚家属——还得防止家属发现逝者脑袋被换成了篮球。",
+          "recommendation": "「不靠谱员工」喜剧公式搬到殡仪馆经营，题材梗足够黑",
+          "unselected_note": "非精选参考：早期公布，热度尚低"
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "TheGamer · 媒体",
+          "tags": ["跳票", "Kena", "2027"],
+          "unselected": true,
+          "title": "《Kena》续作 Scars of Kosmora 官宣推迟至 2027",
+          "en_title": "Kena: Scars Of Kosmora Has Been Officially Pushed Back To 2027",
+          "full_text": "Kena: Scars Of Kosmora Has Been Officially Pushed Back To 2027 https://t.co/I1oRYbpQm1 https://t.co/yAjvzx3TGM",
+          "author": "thegamerwebsite",
+          "date": "2026-10-01",
+          "likes": 0,
+          "views": 520,
+          "link": "https://x.com/thegamerwebsite/status/2105674180318405038",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTjbgkYW0AAhgKJ.jpg"
+          },
+          "summary": "Ember Lab 宣布《Kena》精神续作《Scars of Kosmora》推迟至 2027 年发售。",
+          "recommendation": "知名独游续作跳票一年，关注其筹资与开发节奏",
+          "unselected_note": "非精选参考：单一跳票消息，信息量薄"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "X · 3D技术博主",
+          "tags": ["AI动画", "开源", "3D管线"],
+          "featured": true,
+          "title": "开源文生动画 UniMate：一套模型驱动任意骨骼，FBX/GLB 直出（MIT 协议）",
+          "en_title": "New Open-Source AI Animator: Text-to-Animation for Humans, Animals, Creatures, Robots & More",
+          "full_text": "New Open-Source AI Animator: Text-to-Animation for Humans, Animals, Creatures, Robots & More\n\nUniMate generates motion from text prompts for rigged 3D characters. Describe an action and turn it into animation.\n\nHighlights:\n• One model, different skeletons—no separate retraining for each rig.\n• Generate transitions between existing keyframes.\n• Edit motion with text while keeping selected joints unchanged.\n• Extend animations with a sequence of prompts.\n• Export animated meshes as FBX and GLB.\n• MIT-licensed code + downloadable preview weights.\n\nhttps://t.co/iy9zRxWfep",
+          "author": "Stefan_3D_AI",
+          "date": "2026-09-29",
+          "likes": 2749,
+          "views": 231893,
+          "link": "https://x.com/Stefan_3D_AI/status/2104981826888675532",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104981708718448640/img/tlWXiRi02qLo5IDo.jpg",
+            "video_url": "https://x.com/Stefan_3D_AI/status/2104981826888675532/video/1"
+          },
+          "summary": "UniMate 开源发布：从文本提示为已绑定骨骼的 3D 角色生成动作。一套模型适配不同骨骼（无需按 rig 重训），支持关键帧间过渡生成、锁定局部关节的文字编辑、按提示序列延展动画，可导出 FBX/GLB。MIT 协议 + 可下载预览权重，代码在 GitHub（Friedrich-M/UniMate）。",
+          "analysis": "「免重训跨骨骼」直击游戏动捕/动画管线的最大成本点；FBX/GLB 导出意味着可直接进 Unity/Unreal 工作流。中小团队值得立刻试用并评估接入管线的可行性。",
+          "recommendation": "开源文生动画UniMate：一套模型任意骨骼，FBX/GLB直出进引擎"
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "X · 工具开发者",
+          "tags": ["Blender", "Roblox", "开源插件"],
+          "title": "Blender→Roblox 实时同步插件开源：websocket 直连，免手动上传",
+          "en_title": "Got sick of uploading meshes and textures, so using websockets I made a free plugin that live-syncs your blender scene to Roblox",
+          "full_text": "Got sick of uploading meshes and textures, so using websockets I made a free plugin that live-syncs your blender scene to Roblox\n\nYou can then bulk upload all the textures and meshes easily, and meshes with the same geometry get linked together as one asset\n\nhttps://t.co/ERgGvyhgp2\n\n#RobloxDev\n#Roblox",
+          "author": "rblx_tyridge77",
+          "date": "2026-09-30",
+          "likes": 813,
+          "views": 22911,
+          "link": "https://x.com/rblx_tyridge77/status/2105347936553255192",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2105342660483633152/img/Y8qHHp0wbdT4rWRU.jpg",
+            "video_url": "https://x.com/rblx_tyridge77/status/2105347936553255192/video/1"
+          },
+          "summary": "开发者 tyridge77 用 websockets 制作了免费开源插件 BlenderBridge（GitHub: TylerAtStarboard/Roblox-BlenderBridge）：Blender 场景实时同步到 Roblox Studio，支持贴图/网格批量上传，同几何体网格自动合并为单一资产。",
+          "analysis": "UGC 平台的美术迭代摩擦正被社区工具逐个消除；对 Roblox 生态内容团队，这类管线工具直接决定产能上限。",
+          "recommendation": "Blender改完秒上Roblox：websocket实时同步插件开源免上传"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**工作室格局：分手与否认出售**\nGrasshopper Manufacture 宣布与网易分手重回独立；Xbox CEO 否认出售传闻，但 3200 人裁员重组继续，E-Day 开发者担心发售后即遭裁；Reigns 开发商 Nerial 关停。\n\n**AI 侧：迭代加速与新风险**\n历代 GPT「寿命」清单疯传，模型迭代周期缩至周级；一句 prompt 生成的太空游戏长出银河战争；独立开发者遭遇 AI 克隆勒索，公开素材的风险上升。\n\n**新游与工具**\n免费邻里乱斗《Neighbors》转正发售；潜艇合作游戏《S.O.N.A.R.》Demo 上架；开源文生动画 UniMate 与 Blender→Roblox 同步插件值得关注。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

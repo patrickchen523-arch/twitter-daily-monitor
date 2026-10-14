@@ -21,7 +21,14 @@ git pull --rebase origin main          # main 只跟公网同步
 
 ## 2. 源数据落位
 
-用户给的 Downloads 导出文件，复制进 `data\launched\raw\` 并按期改规范名：
+**自动抓取（2026-09-18 起，推荐）**：
+
+```bash
+python tools\fetch_bili_rank.py <日期>          # B站游戏区日榜 Top100+tags（复用监控库登录态，headless）
+python tools\fetch_steamdb_trending.py <日期>   # SteamDB Trending（有头 Chrome 过 Cloudflare，弹窗约25s）
+```
+
+**手动导出（旧方式，仍支持）**：用户给的 Downloads 导出文件，复制进 `data\launched\raw\` 并按期改规范名：
 
 ```
 bili-rank (N).json        -> data\launched\raw\bili-rank-YYYY-MM-DD.json

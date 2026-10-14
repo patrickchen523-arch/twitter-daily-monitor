@@ -1,0 +1,675 @@
+{
+  "date": "2026-09-30",
+  "meta": {
+    "raw_count": 197,
+    "filtered_count": 188,
+    "selected_count": 20,
+    "crawl_time": "2026-09-30 15:24"
+  },
+  "lede": "一根火柴人拆掉任意网站——把物理引擎 demo 做成全网玩具，4 天 456 万播放；零预算直播两年造出 70 年代伊斯坦布尔 GTA；巫师3 免费重制把 11 年老游戏推上 Steam 在线人数历史新高。",
+  "editors_pick": [
+    {
+      "section_id": "tools",
+      "item_index": 0,
+      "hook": "一根火柴人拆掉任意网站——把物理引擎 demo 做成全网玩具，4 天 456 万播放"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "零预算、全程直播、两年业余时间——70 年代伊斯坦布尔版 PS2 风 GTA 新预告引爆社区"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "巫师3 免费重制带动 Steam 同时在线冲上约 12 万，11 年来首破历史纪录"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Opus 5.5 睡前一指、醒来复刻完整 Terraria\nAI 复刻在售 Steam 游戏被同行定性为「AI 盗版」\nUbisoft 生成式 AI 计划内部代号曝光：Motherbrain"
+    },
+    {
+      "id": "industry",
+      "text": "巫师3 免费重制带动 Steam 在线破历史纪录\n墨西哥议员推动数字游戏所有权立法\nSteam 周销榜：FC 27 登顶、WARDOGS 第二\n顽皮狗确认两款 TLOU 新作早期开发"
+    },
+    {
+      "id": "indie",
+      "text": "ALATURKA：零预算直播两年的伊斯坦布尔 GTA\nDressmaker：治愈裁缝模拟靠坏结局统治 Steam\nWARDOGS：Eurogamer 高分 EA 评测，销量已破百万\nRasterfall：全像素物理生存建造公开 Steam 页"
+    },
+    {
+      "id": "tools",
+      "text": "一根火柴人拆任意网站：SpriteFusion 物理演示 4 天 456 万播放"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · AI开发者实测",
+          "tags": [
+            "Claude Opus 5.5",
+            "AI编程",
+            "逆向复刻"
+          ],
+          "featured": true,
+          "title": "开发者用 Opus 5.5 一夜逆向出完整版 Terraria：AI 复刻进入「过夜完成」时代",
+          "en_title": "All games are open source now! I pointed opus 5.5 at terraria last night and I woke up with a fully working reverse engineered version of terraria!",
+          "full_text": "All games are open source now! I pointed opus 5.5 at terraria last night and I woke up with a fully working reverse engineered version of terraria! Added homing missile launcher, tactical nuke and bunch of new mobs (sprites + sound effects done with the @fal cli/mcp) We are truly in a new era of creativity, this is genuinely insane!",
+          "author": "rehan_shei",
+          "date": "2026-09-28",
+          "likes": 15463,
+          "views": 770786,
+          "link": "https://x.com/rehan_shei/status/2104662849624981571",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104662736697511936/img/pPjiawCbQJhAQxXs.jpg",
+            "video_url": "https://x.com/rehan_shei/status/2104662849624981571/video/1"
+          },
+          "summary": "开发者睡前把 Claude Opus 5.5 指向 Terraria，一夜之间得到可运行的逆向复刻版，还用 fal.ai 生成新敌人贴图与音效，加装追踪导弹、战术核弹等新内容。",
+          "analysis": "当「睡前丢一个任务、醒来收获成品」成为现实，IP 保护的边界正被 AI 重新定义。结合今天 Marco 帐号把「AI 复刻在售游戏」定性为 AI 盗版的争论，复刻的合规风险已是行业必须直面的议题。",
+          "recommendation": "Opus 5.5 睡前一指、醒来复刻完整 Terraria，新怪物贴图音效全由 AI 生成"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "X · 行业观点",
+          "tags": [
+            "AI伦理",
+            "版权",
+            "社区争论"
+          ],
+          "title": "AI 复刻在售 Steam 游戏被指「AI 使能的盗版」：AI 从业者公开呼吁不要这么做",
+          "en_title": "This is essentially AI-enable piracy. Don't do this. Do better.",
+          "full_text": "As a huge AI enthusiast I don't actually like this one bit. \n\nI wouldn't like anyone taking my stuff whether I made it with or without AI. \n\nIt's one thing to remake a 40-50y old arcade game that is no longer on the market but this is a game CURRENTLY selling on Steam for $9.99. \n\nThis is essentially AI-enable piracy.\n\nDon't do this. Do better.",
+          "author": "AIandDesign",
+          "date": "2026-09-28",
+          "likes": 1703,
+          "views": 293036,
+          "link": "https://x.com/AIandDesign/status/2104699161925095475",
+          "media": null,
+          "summary": "自称 AI 爱好者的 Marco 明确反对用 AI 复刻一款正在 Steam 以 9.99 美元在售的游戏：复刻四十年前绝版街机可以接受，但复刻在售作品本质是 AI 版盗版。",
+          "analysis": "AI 让「复刻」成本趋近于零，传统版权护栏（诉讼成本高、周期长）被架空。平台如何处置 AI 复刻品、开发者如何在宣发期自保，会成为 2026 年的持续议题。",
+          "recommendation": "AI 从业者公开反对复刻在售 Steam 游戏：「这本质是 AI 盗版」"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Eurogamer · 报道",
+          "tags": [
+            "Ubisoft",
+            "生成式AI",
+            "大厂战略"
+          ],
+          "title": "Ubisoft 内部代号「Motherbrain」的生成式 AI 计划曝光",
+          "en_title": "Ubisoft is internally calling its latest generative-AI initiative 'Motherbrain'",
+          "full_text": "Ubisoft is internally calling its latest generative-AI initiative 'Motherbrain' - you know, like the evil supercomputer turned gross brain-in-a-jar monster from Nintendo's Metroid series. https://t.co/ufEmmx1bCg https://t.co/8RcqkpO7Qj",
+          "author": "eurogamer",
+          "date": "2026-09-29",
+          "likes": 15,
+          "views": 6749,
+          "link": "https://x.com/eurogamer/status/2104881410439856185",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTYKeM8W0AAU3b1.jpg"
+          },
+          "summary": "Eurogamer 披露 Ubisoft 内部正推进一项生成式 AI 计划，代号借用《银河战士》反派「Motherbrain」——一台变成罐装大脑的邪恶超级电脑。",
+          "analysis": "大厂 AI 项目进入命名化、组织化阶段：继 EA、微软之后又一 3A 发行商把生成式 AI 升格为独立战略项目，其对上游工具链与外包生态的影响值得持续跟踪。",
+          "recommendation": "Ubisoft 生成式 AI 计划内部代号「Motherbrain」——以游戏反派命名的 AI 战略曝光"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 报道",
+          "tags": [
+            "CD Projekt Red",
+            "Steam纪录",
+            "免费升级"
+          ],
+          "featured": true,
+          "game_ref": "The Witcher 3: Wild Hunt",
+          "title": "巫师3 免费重制版上线即破 Steam 在线纪录：约 12 万人同时在线，超 2015 年首发峰值",
+          "en_title": "The Witcher 3 surges to its highest Steam concurrent player-count ever, following Remastered edition's release",
+          "full_text": "The Witcher 3 surges to its highest Steam concurrent player-count ever, following Remastered edition's release https://t.co/hqfCpK7M8U https://t.co/gVpIOy99Ft",
+          "author": "eurogamer",
+          "date": "2026-09-29",
+          "likes": 10,
+          "views": 1738,
+          "link": "https://x.com/eurogamer/status/2104971786374807886",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTZb1FLWkAApLSK.jpg"
+          },
+          "summary": "免费 Remastered 上线后，巫师3 Steam 同时在线冲到约 12 万，创 11 年来最高——超过 2015 年首发峰值 92K 与 2020 年剧集带动的 103K，位列 Steam 全站第 9。所有版本拥有者免费获得重制版，石之心与血之酒两资料片也一并免费，为明年新资料片 Songs of the Past 铺路。多家报道：PC Gamer、GameSpot、Polygon、TheGamer。",
+          "analysis": "面向 6500 万拥有者的免费大升级+送两资料片，本质是为新作内容做的大规模召回。对长线运营产品而言，「免费重制 + IP 影视记忆唤醒」仍是激活沉睡用户的最有效范式，也是对明年初新资料片的预售铺垫。",
+          "recommendation": "巫师3 免费重制带动 Steam 在线破纪录——约 12 万人同时在线，超首发峰值",
+          "enrichment": {
+            "game_name": "The Witcher 3: Wild Hunt",
+            "genre": "开放世界 RPG",
+            "developer": "CD Projekt Red",
+            "platforms": [
+              "Steam",
+              "GOG",
+              "Epic",
+              "PS5",
+              "Xbox Series X/S",
+              "Switch 2"
+            ],
+            "price": "重制版对本体拥有者免费",
+            "release_date": "已发售 · 2015年5月19日（重制版 2026-09-29）",
+            "steam_rating": "839,006 条评价",
+            "steam_url": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/4f75dfb90f593deac48d83b6393828c1b5a3a777/header_alt_assets_1_schinese.jpg?t=1790693338",
+            "youtube_video": null,
+            "pcu": "约 120,000（2026-09-29，Steam 历史新高）",
+            "current_players": "~120,000",
+            "estimated_sales": "全平台拥有者约 6500 万",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 报道",
+          "tags": [
+            "数字所有权",
+            "消费者权益",
+            "Stop Killing Games"
+          ],
+          "featured": true,
+          "title": "墨西哥议员推动数字游戏所有权立法：明示「买断还是租用」、停服后保留可玩版本",
+          "en_title": "Mexican lawmakers join the fight for digital games ownership with a new consumer rights initiative",
+          "full_text": "Mexican lawmakers join the fight for digital games ownership with a new consumer rights initiative\n\nhttps://t.co/TIuT6pPI7U https://t.co/zL4rtSorM3",
+          "author": "eurogamer",
+          "date": "2026-09-29",
+          "likes": 66,
+          "views": 7861,
+          "link": "https://x.com/eurogamer/status/2104917837022388245",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTYrmjdXwAE-ZZD.png"
+          },
+          "summary": "墨西哥参议院数字权利委员会主席 Luis Donaldo Colosio Riojas 与联邦议员 Iraís Reyes 提出消费者权益倡议：强制明示数字商品是买断还是许可、要求停服后提供可玩的离线版本、要求企业在墨西哥设实体经营地址以便追责。两人此前已就索尼弃用实体盘提起反垄断投诉。",
+          "analysis": "继加州法案与欧盟百万人联署后的又一国家级立法动作，且直指「停服即消失」的行业痛点。在索尼宣布 2028 年停用实体盘的背景下，数字所有权的合规成本将正式进入发行商的风险清单。",
+          "recommendation": "墨西哥议员推动数字游戏所有权立法：买断还是租用必须说清，停服也要能玩"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "SteamDB · 市场数据",
+          "tags": [
+            "Steam周销榜",
+            "市场数据"
+          ],
+          "title": "Steam 周销榜（9.22-9.29）：FC 27 登顶，WARDOGS、CONTROL Resonant 包揽二三",
+          "en_title": "#SteamTopSellers for week of 22 Sep — 29 September 2026 (No F2P)",
+          "full_text": "#SteamTopSellers for week of 22 Sep — 29 September 2026 (No F2P):\n\n#1 - EA SPORTS FC™ 27\n#2 - WARDOGS\n#3 - CONTROL Resonant\n#4 - Total War: WARHAMMER III\n#5 - ACE COMBAT 8: WINGS OF THEVE\n\nhttps://t.co/jzz1CP2z4Q",
+          "author": "SteamDB",
+          "date": "2026-09-29",
+          "likes": 36,
+          "views": 5363,
+          "link": "https://x.com/SteamDB/status/2104926755735658702",
+          "media": null,
+          "summary": "不含免费游戏的 Steam 周销榜前五：EA SPORTS FC 27、WARDOGS、CONTROL Resonant、全面战争：战锤3、皇牌空战8。两款 9 月新游挤进前三，力压战锤3 等常青 IP。",
+          "analysis": "WARDOGS 早已创下首发百万销量、35 万同时在线的战绩，CONTROL Resonant 则借 5090 路径追踪演示持续造势。付费榜由新游与 IP 常青树对半分的结构，说明 9 月末档期竞争白热化，新游若能拿下周销前三即等于拿到了年末商战门票。",
+          "recommendation": "Steam 周销榜：FC 27 登顶，WARDOGS 与 CONTROL Resonant 两款新游包揽二三"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 报道",
+          "tags": [
+            "Naughty Dog",
+            "The Last of Us",
+            "新作情报"
+          ],
+          "title": "顽皮狗确认两款《最后生还者》新项目早期开发，《Intergalactic》2027 年前不再展示",
+          "en_title": "Naughty Dog confirms two more The Last of Us projects are in the works, won't show off Intergalactic: The Heretic Prophet until 2027",
+          "full_text": "Naughty Dog confirms two more The Last of Us projects are in the works, won't show off Intergalactic: The Heretic Prophet until 2027\n\nhttps://t.co/48Q8YezxZe https://t.co/zgabmMJ716",
+          "author": "eurogamer",
+          "date": "2026-09-29",
+          "likes": 40,
+          "views": 10702,
+          "link": "https://x.com/eurogamer/status/2104852948161323380",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTXwkLhWEAAjUOa.jpg"
+          },
+          "summary": "Neil Druckmann 确认两个新的最后生还者项目处于早期开发，将把系列叙事扩展到 Part I/II 之外；同时顽皮狗公开《Intergalactic: The Heretic Prophet》新图，宣布 2027 年前不再展示该作。多家报道：GameSpot、Polygon、Destructoid、TheGamer、Niche Gamer、The Game Awards。",
+          "analysis": "夹在剧集季与下一部正作之间，顽皮狗选择用衍生项目维持 TLOU IP 热度而非仓促发售新作；「2027 前闭麦」的官宣也意味着 PlayStation 下一代硬件周期前的第一方排期仍留白。",
+          "recommendation": "顽皮狗确认两款 TLOU 新作早期开发，Intergalactic 2027 年前不再露面"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "X · 独立开发",
+          "tags": [
+            "开放世界",
+            "驾驶",
+            "土耳其"
+          ],
+          "featured": true,
+          "game_ref": "ALATURKA",
+          "title": "ALATURKA：独立开发者零预算直播两年，打造 70 年代伊斯坦布尔版 PS2 风 GTA",
+          "en_title": "it is basically a PS2-era 70s Istanbul GTA with heavy driving physics and döner kebab deliveries.",
+          "full_text": "i spent all my free time over the last two years building ALATURKA from scratch, entirely on livestreams with a $0 budget. \n\nit is basically a PS2-era 70s Istanbul GTA with heavy driving physics and döner kebab deliveries. \n\nhere is the new official trailer. RTs appreciated. https://t.co/UmjVDAYMAD",
+          "author": "bufuakgames",
+          "date": "2026-09-27",
+          "likes": 29668,
+          "views": 2665231,
+          "link": "https://x.com/bufuakgames/status/2104295576950993361",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104292194152558593/img/Bmk0mv5MOYGonUCp.jpg",
+            "video_url": "https://x.com/bufuakgames/status/2104295576950993361/video/1"
+          },
+          "summary": "开发者 bufuakgames 用两年全部业余时间、以全程直播和零预算从零构建这款 PS2 风开放世界驾驶游戏：70 年代伊斯坦布尔、重物理驾驶、烤肉外卖任务。新官方预告发布后获得 2.9 万赞、266 万播放。",
+          "analysis": "「全程直播开发+零预算」本身即是传播素材：开发过程被做成了社区连载剧，观众成了自来水。PS2 复古视角叠加土耳其在地文化的差异化，正在成为独游从红海突围的可靠公式。",
+          "recommendation": "ALATURKA：零预算直播两年造 70 年代伊斯坦布尔 GTA——29668 赞",
+          "enrichment": {
+            "game_name": "ALATURKA",
+            "genre": "动作 / 冒险 / 竞速",
+            "developer": "bufuakgames（独立开发者，全程直播开发）",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4226560",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4226560/33021a61124d90a298b4ee83ef7d96825f016b13/header.jpg?t=1790533488",
+            "youtube_video": null,
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据（Steam 愿望单阶段）",
+            "gi_summary": null,
+            "description": "【核心玩法】PS2 视角下的 70 年代伊斯坦布尔开放世界：以重物理驾驶为核心，玩家在城市中接单送烤肉（döner kebab），车辆惯性、碰撞与路面反馈刻意做旧，整体手感向 PS2 时代 GTA 看齐。玩家扮演烤肉店学徒，切肉、送卷饼，在博斯普鲁斯沿岸的老派城市里自由穿行。【开发故事】开发者 bufuakgames 把两年全部业余时间投入本作，全程在直播间公开开发、零预算零外包，素材全部自制；开发直播本身成了社区连载剧，观众一路看着城市从灰盒长成成品。【美术与氛围】低多边形加 PS2 时代分辨率质感，复刻 70 年代伊斯坦布尔的街巷、集市与海峡，在地文化浓度极高。【对标定位】GTA 式开放世界 × 送货模拟 × 复古浪潮，受众与近年爆火的复古驾驶类独游高度重叠。【优势】题材稀缺、开发故事自带传播力、驾驶物理已有辨识度。【不足】零预算意味着内容量与打磨存在不确定性，发售日期尚未公布。【综合】2026 年「开发过程即内容」营销的又一范本，愿望单转化值得跟踪。",
+            "why_notable": "零预算独立开发靠「全程直播」把开发过程做成内容，预告 2 天 266 万播放，验证了复古差异化+开发叙事的传播公式"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Polygon · 报道",
+          "tags": [
+            "模拟经营",
+            "治愈系",
+            "Steam热销"
+          ],
+          "featured": true,
+          "game_ref": "Dressmaker",
+          "title": "Dressmaker：Free Lives 旗下小团队的治愈裁缝模拟，靠「混乱邪恶结局」统治 Steam",
+          "en_title": "Dressmaker's Chaotic Evil Endings Prove Why it's Dominating Steam Right Now",
+          "full_text": "Dressmaker's Chaotic Evil Endings Prove Why it's Dominating Steam Right Now https://t.co/spscdmesZg https://t.co/ta78Wmsjjz",
+          "author": "Polygon",
+          "date": "2026-09-28",
+          "likes": 18,
+          "views": 10664,
+          "link": "https://x.com/Polygon/status/2104687654566531134",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTVaRM9WYAA4BCc.jpg"
+          },
+          "summary": "Polygon 报道：出自 Broforce 工作室 Free Lives 内部小团队 Cozy Lives 的裁缝模拟，表面是无风险的治愈系缝纫，实则埋了 5 个「混乱邪恶」破坏结局——给图书馆员缝进会响的衬纸、把哀悼面纱换成彩虹绒球。坏结局内容成为社区传播爆点，游戏正统治 Steam 榜单。",
+          "analysis": "治愈系外壳+搞破坏自由度的反差设计，让「恶劣服务」截图成为天然传播物料。Free Lives 用内部小队孵化非暴力品类的内部孵化策略，值得玩法创新型团队参考。",
+          "recommendation": "Dressmaker：治愈裁缝模拟藏 5 个混乱邪恶结局——正统治 Steam 榜单",
+          "enrichment": {
+            "game_name": "针影裁梦",
+            "genre": "休闲 / 模拟",
+            "developer": "Cozy Lives（Free Lives 内部团队）",
+            "platforms": [
+              "PC",
+              "Mac"
+            ],
+            "price": "¥ 59.00",
+            "release_date": "已发售 · 2026 年 9 月 21 日",
+            "steam_rating": "6,037 条评价",
+            "steam_url": "https://store.steampowered.com/app/4019220",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4019220/5e595cd60fb58b5d312be21ba4aa03d4a0131547/header_schinese.jpg?t=1790605593",
+            "youtube_video": null,
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "Steam 热销榜前列（Polygon 称 Dominating Steam）",
+            "gi_summary": null,
+            "description": "【核心玩法】第一人称裁缝工坊模拟：接单、选布、裁剪、手缝纽扣、交付，按客户的面料/颜色/装饰三项需求匹配，准时交付涨声誉。真正的内容在破坏面：买劣质布料、逆纹裁剪、偷换装饰、塞进会响的衬纸，可触发 5 个「混乱邪恶」结局专属剧情演出。【美术与氛围】低多边形治愈系画风，小镇人流缓慢，缝纫音效做成 ASMR 般的解压体验。【对标定位】PowerWash Simulator / Unpacking 的治愈节奏 + 《胡闹厨房》式的「友爱 chaos」反转。【优势】反差设计让坏结局截图成为天然传播物料；Free Lives 品牌背书；上手零门槛。【不足】核心循环围绕单次缝纫展开，长线留存待观察，内容量偏小。【综合】证明治愈系也能做破坏自由度，是 9 月 Steam 现象级 cozy 爆款，其「坏结局即彩蛋」的内容结构值得模拟品类借鉴。",
+            "why_notable": "治愈外壳+混乱邪恶结局的反差让它从无数 cozy 模拟里跳出来，登上 Steam 热销前列"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Eurogamer · EA评测",
+          "tags": [
+            "多人射击",
+            "买断制",
+            "Early Access"
+          ],
+          "game_ref": "WARDOGS",
+          "title": "WARDOGS：Eurogamer 高分 EA 评测——用「零工经济」重构战地式多人射击",
+          "en_title": "Wardogs is already a brilliantly refreshing take on the genre",
+          "full_text": "A mix of various competitive shooters' best bits but also something entirely new, Wardogs is already a brilliantly refreshing take on the genre.\n\nOur early access review:\n\nhttps://t.co/UDF7XImzpu https://t.co/04W8hKkD05",
+          "author": "eurogamer",
+          "date": "2026-09-29",
+          "likes": 6,
+          "views": 5012,
+          "link": "https://x.com/eurogamer/status/2104881710886498316",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTYKd_zXIAAvij7.jpg"
+          },
+          "summary": "Eurogamer EA 评测：WARDOGS 混合了战地、武装突袭与 CS 的精华，核心创新是贯穿全程的现金系统——救人打钱、开车打钱、造工事打钱，玩家自然分化出司机、医护、工程师等生态位。此前报道显示其首发销量破百万、同时在线 35 万，营收已超过 Marathon。",
+          "analysis": "把「钱」做成全局通用语言后，团队目标与个人逐利的张力既是玩法创新也是设计缺陷——趴在后方搬砖往往比冲锋更赚，热点区经常无人争夺。这种「社会实验式」争议恰是其传播杠杆，EA 期的平衡调整值得持续观察。",
+          "recommendation": "WARDOGS 用打钱机制重构多人射击：救人收费、躺平更赚——EA 销量已破百万",
+          "enrichment": {
+            "game_name": "WARDOGS",
+            "genre": "动作 / 独立 / 大型多人在线",
+            "developer": "BULKHEAD",
+            "publisher": "Team17",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 149.00",
+            "release_date": "已发售 · 2026 年 9 月 10 日",
+            "steam_rating": "85,300 条评价",
+            "steam_url": "https://store.steampowered.com/app/1867240",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/be00107d586c0bf0412e9e4acedb64629a99aa5b/header_schinese.jpg?t=1789503126",
+            "youtube_video": null,
+            "pcu": "首发日 350,000+",
+            "current_players": null,
+            "estimated_sales": "Early Access 首发销量破 100 万，营收超过 Marathon",
+            "gi_summary": null,
+            "description": "【核心玩法】三支队伍在大地图中心的控制区展开 King of the Hill 对抗：开局跳伞入场，CS 式购买阶段用个人资金购置装备；击杀、助攻、救人、驾驶、修建工事、甚至在区内挂机都产生现金收入，玩家之间还可以互相打赏小费。【生态位分化】因为一切行为都明码标价，战局自然长出司机、医护、工程师、观察员等生态位，形成 ArmA RP 服务器式的自组织协作。【设计张力】被击杀是唯一亏钱的方式，「避战搬砖」往往比冲锋更赚——团队胜利与个人逐利互相拉扯，Eurogamer 评测称之为一场实时运转的社会实验。【市场表现】EA 首发日销量破百万、同时在线 35 万，营收超过 Marathon，Steam 势头被指领先 Arc Raiders 与 Helldivers 2。【不足】追求胜利的收益低于经营个人现金流，热点区经常无人争夺，平衡性是 EA 期最大课题。【综合】2026 年最有话题性的多人射击新秀，把「零工经济」直接做成了核心玩法。",
+            "why_notable": "用现金系统把战场变成零工经济，自组织生态位+社会实验式争议带来罕见的类型新鲜感"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "X · 独立开发",
+          "tags": [
+            "生存建造",
+            "像素物理",
+            "多人"
+          ],
+          "game_ref": "Rasterfall",
+          "title": "Rasterfall：日本开发者公开「全像素物理+化学反应」生存建造游戏 Steam 页，2027 年发售",
+          "en_title": "全ピクセルが物理演算・化学反応するマルチ対応サバイバルクラフト「Rasterfall」のSteamストアページを公開",
+          "full_text": "全ピクセルが物理演算・化学反応するマルチ対応サバイバルクラフト「Rasterfall」（ラスターフォール）のSteamストアページを公開しました！\n気になったらウィッシュリスト登録お願いします！\n\nhttps://t.co/qjTQ3xGbaJ\n\n#Rasterfall #indiegame https://t.co/IbIbjxfSss",
+          "author": "ootamato",
+          "date": "2026-09-29",
+          "likes": 1763,
+          "views": 110561,
+          "link": "https://x.com/ootamato/status/2104756095172628730",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104754901297647616/img/qh65S8D94MLdildb.jpg",
+            "video_url": "https://x.com/ootamato/status/2104756095172628730/video/1"
+          },
+          "summary": "日本开发者大田マト公开 Steam 页面：每个像素都参与物理演算与化学反应的开放世界生存建造——砍树会倒、引火会烧、浇水灭火冒蒸汽；支持多人联机且像素级同步，管道电路可搭自动化产线，预计 2027 年发售。",
+          "analysis": "「全像素模拟」是 Noita 以降最受技术玩家追捧的路线，把它从 2D 平台/roguelike 升维到开放世界生存建造属于大胆尝试；对模拟类社区而言这类演示视频自带传播力，愿望单转化值得关注。",
+          "recommendation": "Rasterfall：全像素物理+化学反应的生存建造，多人像素级同步——2027 发售",
+          "enrichment": {
+            "game_name": "Rasterfall",
+            "genre": "开放世界生存建造 / 沙盒 / 自动化",
+            "developer": "Ota Mato（日本独立开发者大田マト）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2027",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5161780/Rasterfall/",
+            "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5161780/33515ddbaf3752582347d4c2645d230741a5969e/header.jpg",
+            "youtube_video": null,
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据（Steam 愿望单阶段）",
+            "gi_summary": null,
+            "description": "【核心玩法】开源世界生存建造，每个像素独立做物理与化学模拟：砍树倒伏、火焰蔓延、浇水熄火冒蒸汽；地下分层分布矿脉，以火把与梯子逐步深入；可冶炼矿石、混合火药、合成材料，用管道与电路搭建自动化产线，以弹簧与铰链制造运动机械。【多人】支持联机，像素级状态跨玩家同步，技术实现罕见。【美术与氛围】复古像素风+模拟驱动的高自由度交互，砍一棵树、点一把火都有真实反馈，天然适合出传播片段。【开发者】日本独立开发者大田マト（Ota Mato）个人开发，按 Steam 规范披露生成式 AI 仅用于编程与翻译。【发售】预计 2027 年，Steam 页面已开放，支持简体中文。【不足】未发售，完成度与优化存疑，全像素模拟的性能开销是最大风险。【综合】Noita 式全像素模拟 × 生存建造的升维尝试，技术向独游中最值得关注的新面孔之一。",
+            "why_notable": "把 Noita 式全像素模拟搬到开放世界生存建造并支持多人像素级同步，技术含量罕见"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "X · 独立开发",
+          "tags": [
+            "合作",
+            "派对",
+            "喜剧"
+          ],
+          "unselected": true,
+          "title": "Don't Let Him Cook：逆向版胡闹厨房，三人合谋搞砸叔叔的电视决赛料理，10 月 14 日 EA",
+          "en_title": "逆『オーバークック』このゲームの目標は「料理を台無しにすること」",
+          "full_text": "逆『オーバークック』\nこのゲームの目標は「料理を台無しにすること」\n\n3人で協力し、シェフおじさん（NPC）の料理を全力で妨害せよ\n塩の代わりに砂糖を入れ、フライパンを隠し、食材を奪え\n\n3人協力型料理妨害ゲーム\n『Don't Let Him Cook』10月14日発売\nhttps://t.co/WJBwvWTaxh https://t.co/2KKzTpPsMX",
+          "author": "dotpixel3d",
+          "date": "2026-09-29",
+          "likes": 2938,
+          "views": 233131,
+          "link": "https://x.com/dotpixel3d/status/2104828522384761127",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104624535647793153/img/5ur2GPjw5HsmMQYE.jpg",
+            "video_url": "https://x.com/dotpixel3d/status/2104828522384761127/video/1"
+          },
+          "summary": "目标不是做好菜而是毁掉菜：三人合作把叔叔 NPC 的决赛料理搞砸——换盐为糖、藏平底锅、偷食材；叔叔会记住你的套路并逐渐学乖。10 月 14 日以 Early Access 登陆 Steam。",
+          "recommendation": "Don't Let Him Cook：三人合谋毁掉叔叔的料理——逆向版胡闹厨房 10 月 14 日 EA"
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Warp Door · 推荐",
+          "tags": [
+            "免费",
+            "动作",
+            "PUNKCAKE"
+          ],
+          "unselected": true,
+          "title": "Spaghetti Celesti: Devour The Heavens：PUNKCAKE Délice 免费新作，全平台免费玩",
+          "en_title": "Per favore, have a seat and prepare to devour the heavens!",
+          "full_text": "Spaghetti Celesti: Devour The Heavens (@PUNKCAKE_delice )\n\n\"Per favore, have a seat and prepare to devour the heavens!\"\n\nFree - Windows, Mac, Linux: https://t.co/zstbJDjjzu https://t.co/dYOWfH55J5",
+          "author": "WarpDoor",
+          "date": "2026-09-29",
+          "likes": 3016,
+          "views": 145855,
+          "link": "https://x.com/WarpDoor/status/2104789882296304004",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/tweet_video_thumb/HTW3NyYaUAAGggj.jpg",
+            "video_url": "https://x.com/WarpDoor/status/2104789882296304004/video/1"
+          },
+          "summary": "月更游戏组合 PUNKCAKE Délice 发布免费新作 Spaghetti Celesti: Devour The Heavens，Windows/Mac/Linux 全平台免费。",
+          "recommendation": "PUNKCAKE Délice 免费新作 Spaghetti Celesti：吞噬天空——全平台免费"
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Polygon · 报道",
+          "tags": [
+            "续作",
+            "多人",
+            "休闲"
+          ],
+          "unselected": true,
+          "title": "2025 爆款《挖洞游戏》官宣续作：A Game About Digging A Hole With Friends",
+          "en_title": "Beloved 2025 Game About Digging Holes Gets Sequel Announcement",
+          "full_text": "Beloved 2025 Game About Digging Holes Gets Sequel Announcement https://t.co/7KwcFHZ0Tn https://t.co/JMLpGPRBcJ",
+          "author": "Polygon",
+          "date": "2026-09-29",
+          "likes": 4,
+          "views": 6989,
+          "link": "https://x.com/Polygon/status/2104898994987995517",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTYae1TXQAAuAeU.jpg"
+          },
+          "summary": "2025 年爆款 A Game About Digging A Hole 官宣续作，这一次「和朋友一起挖洞」，公布先导预告。",
+          "recommendation": "挖洞游戏官宣续作：这一次可以和朋友一起挖了"
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "AUTOMATON · 报道",
+          "tags": [
+            "Roguelike",
+            "Demo",
+            "柏青哥"
+          ],
+          "unselected": true,
+          "title": "High Roller Penny：柏青哥题材 roguelike 开放 Steam Demo，与兔女郎玩命赌局",
+          "en_title": "Pachinko-inspired roguelike High Roller Penny gets Steam demo",
+          "full_text": "Pachinko-inspired roguelike High Roller Penny gets Steam demo. Life-threatening gambling games against bunny girls\nhttps://t.co/6auZQLZQTj https://t.co/2SBWu5kByz",
+          "author": "AUTOMATON_ENG",
+          "date": "2026-09-29",
+          "likes": 123,
+          "views": 7289,
+          "link": "https://x.com/AUTOMATON_ENG/status/2104828116447482362",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104827873496612864/img/MNbrV3Ct97b9LOXt.jpg",
+            "video_url": "https://x.com/AUTOMATON_ENG/status/2104828116447482362/video/1"
+          },
+          "summary": "以柏青哥为灵感的 roguelike High Roller Penny 开放 Steam Demo：与兔女郎进行拿命做赌注的赌博游戏。",
+          "recommendation": "High Roller Penny：柏青哥 roguelike，与兔女郎玩命赌局——Demo 已开放"
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "Gamer · 报道",
+          "tags": [
+            "派对游戏",
+            "最多4人",
+            "已发售"
+          ],
+          "unselected": true,
+          "title": "BATTLE MEATING 发售：最多四人扮演肉块，努力别烤焦自己",
+          "en_title": "お肉となって最後まで焦げずに生き残れ！最大4人のハチャメチャパーティーゲーム「BATTLE MEATING」が発売",
+          "full_text": "お肉となって最後まで焦げずに生き残れ！最大4人のハチャメチャパーティーゲーム「BATTLE MEATING」が発売\nhttps://t.co/3UljG9T8Xp https://t.co/mHDdGnzwv5",
+          "author": "GamerNeJp",
+          "date": "2026-09-29",
+          "likes": 647,
+          "views": 64997,
+          "link": "https://x.com/GamerNeJp/status/2104816278817083418",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104816211322343425/img/8htsJJdCAZjAM-XQ.jpg",
+            "video_url": "https://x.com/GamerNeJp/status/2104816278817083418/video/1"
+          },
+          "summary": "最多四人的混乱派对游戏 BATTLE MEATING 发售：玩家扮演肉块，在烤炉上活到最后且不能被烤焦。",
+          "recommendation": "BATTLE MEATING：扮演肉块避免烤焦的四人派对游戏，现已发售"
+        },
+        {
+          "idx": "新游参考 06",
+          "source": "Niche Gamer · 报道",
+          "tags": [
+            "销量里程碑",
+            "Roguelike",
+            "TMNT"
+          ],
+          "unselected": true,
+          "title": "TMNT: Splintered Fate 销量突破 150 万份",
+          "en_title": "Teenage Mutant Ninja Turtles: Splintered Fate tops 1.5 million copies sold!",
+          "full_text": "Teenage Mutant Ninja Turtles: Splintered Fate tops 1.5 million copies sold! https://t.co/cGHxuk6C21 https://t.co/Ylw0YUJIim",
+          "author": "nichegamer",
+          "date": "2026-09-29",
+          "likes": 4,
+          "views": 592,
+          "link": "https://x.com/nichegamer/status/2104979210368418303",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTZjb7YW8AAgImj.jpg"
+          },
+          "summary": "忍者神龟 roguelike《TMNT: Splintered Fate》全平台累计销量突破 150 万份。",
+          "recommendation": "TMNT: Splintered Fate 销量突破 150 万——IP roguelike 的稳定生意"
+        },
+        {
+          "idx": "新游参考 07",
+          "source": "Rock Paper Shotgun · 报道",
+          "tags": [
+            "模拟经营",
+            "赛博朋克",
+            "已发售"
+          ],
+          "unselected": true,
+          "title": "Nivalis Nights 发售：在体素赛博朋克城市开一家拉面馆",
+          "en_title": "Set up your own ramen bar and explore a voxel cyberpunk city in the slice-of-lifey Nivalis Nights, out now",
+          "full_text": "Set up your own ramen bar and explore a voxel cyberpunk city in the slice-of-lifey Nivalis Nights, out now https://t.co/Qk2OhXqaXL",
+          "author": "rockpapershot",
+          "date": "2026-09-29",
+          "likes": 2,
+          "views": 1109,
+          "link": "https://x.com/rockpapershot/status/2104967252764176501",
+          "media": null,
+          "summary": "Nivalis Nights 现已发售：在体素风赛博朋克城市经营拉面摊，穿插日常向叙事探索。",
+          "recommendation": "Nivalis Nights：体素赛博朋克城市里的拉面馆日常，现已发售"
+        },
+        {
+          "idx": "新游参考 08",
+          "source": "X · Mod发布",
+          "tags": [
+            "VR",
+            "Mod",
+            "Titanfall 2"
+          ],
+          "unselected": true,
+          "title": "Titanfall 2 VR Mod 今晚发布：社区团队把机甲射击搬进 VR",
+          "en_title": "Titanfall 2 VR launches TONIGHT",
+          "full_text": "Titanfall 2 VR launches TONIGHT\n\nstay tuned https://t.co/qukV0B90EF",
+          "author": "CircuitLord",
+          "date": "2026-09-29",
+          "likes": 2168,
+          "views": 76911,
+          "link": "https://x.com/CircuitLord/status/2104910383773262149",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104910199614038016/img/uFySkocjWitWgjFA.jpg",
+            "video_url": "https://x.com/CircuitLord/status/2104910383773262149/video/1"
+          },
+          "summary": "CircuitLord 团队开发的 Titanfall 2 VR Mod 于当晚发布，为这款机甲射击经典加入完整 VR 支持。",
+          "recommendation": "Titanfall 2 VR Mod 今晚发布：社区把铁驭驾驶舱搬进 VR"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "X · 技术演示",
+          "tags": [
+            "网页物理",
+            "技术演示",
+            "SpriteFusion"
+          ],
+          "featured": true,
+          "title": "Destroy any website：一根火柴人拆掉任意网站——浏览器物理演示 4 天 456 万播放",
+          "en_title": "Destroy any website with a stickman.",
+          "full_text": "Destroy any website with a stickman.\n\nHave fun: https://t.co/fvLb6xd5hx https://t.co/ZPY4Fkp9ke",
+          "author": "HugoDuprez",
+          "date": "2026-09-28",
+          "likes": 63648,
+          "views": 4556309,
+          "link": "https://x.com/HugoDuprez/status/2104579137575018827",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2104577194932543488/img/ImtQhErJTkTN5Wqs.jpg",
+            "video_url": "https://x.com/HugoDuprez/status/2104579137575018827/video/1"
+          },
+          "summary": "开发者 Hugo Duprez 发布浏览器演示：在任意网页上召唤一根火柴人，把页面元素当作物理体摧毁着玩，体验地址 destroy.spritefusion.com（SpriteFusion 网页游戏引擎的物理能力展示），4 天内 456 万播放、6.3 万赞。",
+          "analysis": "借「破坏欲」把网页游戏引擎的物理能力变成全网可玩的广告，零投放拿到 456 万曝光。对工具类产品，「把 demo 做成玩具」是比宣传片便宜得多的获客路径，值得工具/引擎团队直接抄作业。",
+          "recommendation": "一根火柴人拆任意网站：SpriteFusion 物理演示 4 天 456 万播放"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**今日主线：免费重制与新游对轰的一天**\nCD Projekt Red 给巫师3 推出免费 Remastered，Steam 同时在线冲上约 12 万的历史新高，超过 2015 年首发与 2020 年剧集峰值——面向 6500 万拥有者的免费大升级外加赠送两款资料片，是长线 IP 唤醒的教科书操作。\n\n**AI 复刻的边界之争**\n一边是开发者睡前把 Opus 5.5 指向 Terraria、醒来收获完整复刻版；另一边是 AI 从业者公开把「复刻在售 Steam 游戏」定性为 AI 盗版。当复刻成本趋近于零，版权护栏怎么建，是本周最现实的行业议题。\n\n**新游市场热度**\nWARDOGS 的「零工经济射击」销量破百万、进周销榜第二；治愈裁缝模拟 Dressmaker 靠坏结局反差出圈；零预算直播两年的 ALATURKA 拿下 266 万播放。墨西哥议员推动数字所有权立法，则给所有发行商提了个醒。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

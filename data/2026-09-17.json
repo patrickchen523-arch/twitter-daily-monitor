@@ -1,0 +1,645 @@
+{
+  "date": "2026-09-17",
+  "meta": {
+    "raw_count": 251,
+    "filtered_count": 205,
+    "selected_count": 12,
+    "crawl_time": "2026-09-17 11:24"
+  },
+  "lede": "Wardogs 首日百万销量冲上 35 万同时在线；Xbox Game Pass 被曝 2027 年取消首发游戏；MindsEye 开发商疑似收尾关闭。新游侧，6 人合作拉面店模拟 3 周愿望单破 5 万，押切蓮介参与的时间循环恐怖 RPG《ノロイあやし》首曝。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Wardogs 首日卖出 100 万份，Steam 同时在线冲上 35 万——反营销式宣传的英国独立团队"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "Japanese Ramen Simulator：6 人合作拉面店经营模拟，3 周愿望单破 5 万，9 月 28 日 EA"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 1,
+      "hook": "Unity × OpenAI：官方 Codex 插件上线，Unity 工程师亲自维护引擎专属 AI 上下文"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "陈成整理 Claude Code 团队对谈：70~80% 工作已不在终端里做\nUnity 发布 OpenAI Codex 官方插件，引擎知识由官方工程师维护"
+    },
+    {
+      "id": "industry",
+      "text": "Wardogs EA 首日销量破百万、同时在线 35 万\nXbox Game Pass 被曝 2027 年取消首发游戏与云游戏\nMindsEye 开发商 Build A Rocket Boy 疑似走向关闭"
+    },
+    {
+      "id": "indie",
+      "text": "Japanese Ramen Simulator 3 周愿望单 5 万，9 月 28 日 EA\n押切蓮介参与的时间循环恐怖 RPG《ノロイあやし》首曝"
+    },
+    {
+      "id": "tools",
+      "text": "交互式 3D 东京迪士尼海洋地图，浏览器内自由漫游园区"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "陈成 · 原创观点",
+          "tags": [
+            "Claude Code",
+            "AI Agent",
+            "开发工作流"
+          ],
+          "title": "Claude Code 团队自曝：70~80% 的工作已经不在终端里做",
+          "en_title": "看完 Thariq、Sid、Robert 三个人的 22 分钟对谈，记了几条",
+          "full_text": "Claude Code 团队自己，已经有 70~80% 的工作不在终端里做了。\n\n看完 Thariq、Sid、Robert 三个人的 22 分钟对谈，记了几条。\n\n1. 大部分活在 Slack 里的 Claude Tag 上干。TUI 和桌面端只有两种时候才开，精修某个东西，或者\"想微观管理我的那些 Claude\"。给的也不再是任务，是目标。\n\n2. 以前底层技术的保质期以年计，现在是两个月。Sonnet 3.5 时代模型给它五件事只做三件就放弃，于是加了 to-do list，一下就好了。一年后这个功能没了，因为不需要了。Sid 的结论是对自己造的东西不要有感情。\n\n3. harness 里大部分功能，说白了是在给当前模型的失败模式打补丁。模型变强就主动删。但任务尺度同时在变大，又得造形态完全不同的新工具。这两句得一起记，只记前一句就是为删而删。\n\n4. AskUserQuestion 这个工具磨了很久才让模型学会调用。结果作者现在自己都不怎么用了，直接让 Claude 出一个带 mockup 的 artifact 来问他问题。\n\n5. Code review 变了。人类 revie...",
+          "author": "chenchengpro",
+          "date": "2026-09-16",
+          "likes": 130,
+          "views": 38671,
+          "link": "https://x.com/chenchengpro/status/2100190714537885938",
+          "media": null,
+          "featured": true,
+          "summary": "陈成整理了 Claude Code 团队三位成员 22 分钟对谈的核心要点：团队自己已有 70~80% 的工作转移到 Slack 里的 Claude Tag 上完成，终端与桌面端只在精修时打开；交付给 Agent 的不再是任务清单而是目标。",
+          "analysis": "两条判断最值得记：harness 的大部分功能是对当前模型失败模式的补丁，模型变强就主动删掉，但任务尺度变大又会催生形态完全不同的新工具；以及产品经理式的\"对自己造的东西不要有感情\"。对正在搭 AI 工具链的游戏团队，这是 Anthropic 一线的迭代节奏参考——底层技术保质期已从年压缩到两个月。",
+          "recommendation": "Claude Code 团队自曝：70~80% 工作已不在终端里做，Slack 里的 Claude Tag 成主战场"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Unity 官方 · 工具发布",
+          "tags": [
+            "Unity",
+            "OpenAI",
+            "AI编程"
+          ],
+          "title": "Unity 发布 OpenAI Codex 官方插件：引擎知识由第一方工程师维护",
+          "en_title": "Introducing the official Unity plugin for OpenAI's Codex - a first-party integration available now in OpenAI's universal plugin directory",
+          "full_text": "We heard you loud and clear 🔊\n\nIntroducing the official Unity plugin for @OpenAI's Codex - a first-party integration available now directly in OpenAI's universal plugin directory.\n\nDevelopers are already using OpenAI's Codex with Unity, but now with our official plugin, your agent gets direct engine expertise written and maintained by Unity's own engineers. \n\n🔗 Get started: https://t.co/qHsw8w7pXc",
+          "author": "unitygames",
+          "date": "2026-09-16",
+          "likes": 229,
+          "views": 21241,
+          "link": "https://x.com/unitygames/status/2100251614091084085",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2100251571414085632/pu/img/8METZI_QD0rCStDs.jpg",
+            "video_url": "https://x.com/unitygames/status/2100251614091084085/video/1"
+          },
+          "featured": true,
+          "summary": "Unity 发布面向 OpenAI Codex 的官方插件，属于第一方集成并直接上架 OpenAI 通用插件目录。插件内容由 Unity 官方工程师编写维护，为 Codex Agent 提供准确的引擎专业知识与上下文，接入门槛大幅降低。",
+          "analysis": "引擎厂商开始主动为通用编程 Agent 官方\"喂上下文\"，AI 辅助游戏开发从社区散装脚本走向第一方标准化，这与 Unity 此前 MUSE/自研 AI 路线收敛后的务实转向一致。对 Unreal 与 Godot，同样的第一方 Agent 集成大概率会在跟进名单上。",
+          "recommendation": "Unity × OpenAI：官方 Codex 插件上线，Unity 工程师亲自维护引擎专属 AI 上下文"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 销量里程碑",
+          "tags": [
+            "Steam EA",
+            "战术射击",
+            "市场表现"
+          ],
+          "title": "Wardogs 首日销量破百万，Steam 同时在线冲上 35 万",
+          "en_title": "UK studio Bulkhead's Wardogs sells over a million copies and tops 350,000 concurrent players on launch day",
+          "full_text": "UK studio Bulkhead's Wardogs sells over a million copies and tops 350,000 concurrent players on launch day. https://t.co/xKZAI5bUSd https://t.co/yyWQuNcQwK",
+          "author": "eurogamer",
+          "date": "2026-09-15",
+          "likes": 24,
+          "views": 12766,
+          "link": "https://x.com/eurogamer/status/2099929019604947292",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSRySxgW4AAaHdC.jpg"
+          },
+          "featured": true,
+          "game_ref": "Wardogs",
+          "summary": "英国 Derby 工作室 Bulkhead 的百人三人对抗战术射击 Wardogs 于 9 月 10 日进入 Steam 抢先体验，数小时内销量突破 100 万份、同时在线冲过 35 万，服务器一度排起长队。游戏售价 36.99 英镑，PS5/Xbox 版计划 2028 年推出。CEO 称此前曾发布\"十个不要买的理由\"预告片，不希望玩家为盲目的 hype 买单。",
+          "analysis": "36.99 英镑的高定价多人射击在 EA 首日破百万份，证明\"劝退式反营销\"加明确卖点切片的传播组合依然有效。但 Bulkhead 自己预期热度会回落、选择慢节奏内容更新而非维持首日数字——EA 多人游戏的真正考验在 90 天留存，不在发布会当天的截图。",
+          "recommendation": "Wardogs 首日卖出 100 万份，Steam 同时在线冲上 35 万——反营销式宣传的英国独立团队",
+          "enrichment": {
+            "game_name": "WARDOGS",
+            "genre": "动作 / 独立 / 大型多人在线",
+            "developer": "BULKHEAD",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 149.00",
+            "release_date": "已发售 · 2026 年 9 月 10 日",
+            "steam_rating": "57005 reviews",
+            "steam_url": "https://store.steampowered.com/app/1867240",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/be00107d586c0bf0412e9e4acedb64629a99aa5b/header_schinese.jpg?t=1789503126",
+            "youtube_video": null,
+            "description": "《WARDOGS》是一款全面战争式第一人称射击游戏，在一个最高可支持 100 名玩家的大规模军事沙盒中，融合了战术枪战、诸兵种联合作战以及建造与破坏机制等元素。\n\nWardogs 是英国 Bulkhead 工作室开发的百人三人对抗战术射击：最多 100 名玩家分成三方争夺控制点，混搭战术射击、载具战斗、基地建造与可破坏地形。\n\n【核心玩法】三人混战而非传统两队对抗，火力压制之外还要经营据点与载具，战斗节奏在快攻与经营之间切换。\n\n【传播策略】发售前发布\"十个不要买的理由\"劝退式预告片，主动管理预期，制造话题的同时过滤错误受众，EA 首日即破百万份。\n\n【运营计划】官方明示热度会自然回落，采用慢节奏内容滴灌更新，主机版留到 2028 年。\n\n【优势】玩法混搭差异化明显；首日服务器压力证明需求真实。\n【不足】EA 状态内容量未知，长期留存待验证。\n\n【综合】2026 年 Steam EA 最强开局之一，关注 90 天留存曲线。",
+            "why_notable": "高定价多人射击 EA 首日破百万份、同时在线 35 万，2026 年 Steam 最强开局之一",
+            "pcu": "350,000+（发售日 Steam 同时在线）",
+            "current_players": null,
+            "estimated_sales": "1,000,000+（首日）",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 商业模式爆料",
+          "tags": [
+            "Xbox",
+            "订阅制",
+            "Game Pass"
+          ],
+          "title": "Xbox Game Pass 被曝 2027 年大改：全线取消首发游戏，云游戏改付费加装",
+          "en_title": "Microsoft doesn't dismiss rumours a major Xbox Game Pass shake-up is on the way, which reportedly removes day-one game offerings entirely",
+          "full_text": "Microsoft doesn't dismiss rumours a major Xbox Game Pass shake-up is on the way, which reportedly removes day-one game offerings entirely\n\nhttps://t.co/JVNd3VKwWS https://t.co/aqqnHuNYWr",
+          "author": "eurogamer",
+          "date": "2026-09-16",
+          "likes": 47,
+          "views": 9281,
+          "link": "https://x.com/eurogamer/status/2100188234760552892",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSVdRhHbMAAZIZ7.jpg"
+          },
+          "featured": true,
+          "summary": "ResetEra 用户 Slayven（2025 年曾准确爆料 Game Pass 涨价与档位调整）称 2027 年 2 至 4 月将重组订阅：三档定价（13 美元广告档 / 15 美元库存+多人 / 20 美元无广告），全线取消 day-one 首发游戏，云流媒体移除、改为 6 美元加装 25 小时。微软回应\"目前没有已确定的变更\"，知名爆料者 NateTheHate 为该信源背书。",
+          "analysis": "\"首发即玩\"是 Game Pass 十年来的核心卖点，若 2027 年真被移除，订阅服务将退化为库存库+会员费的混合体，这是微软订阅业务模型的结构性转向信号。此前 Call of Duty 退出 day-one、云游戏限时被设在盈亏平衡点，方向已经一致；对第三方发行商，day-one 上架的议价逻辑需要重新算账。",
+          "recommendation": "Game Pass 被曝 2027 年取消全部首发游戏、云游戏改付费加装——微软未否认"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Polygon · 多家报道",
+          "tags": [
+            "裁员",
+            "工作室关闭",
+            "MindsEye"
+          ],
+          "title": "MindsEye 开发商 Build A Rocket Boy 再度裁员，HR 自述\"帮公司收尾\"",
+          "en_title": "MindsEye Developer Seemingly Shutting Down after New Round of Layoffs",
+          "full_text": "MindsEye Developer Seemingly Shutting Down after New Round of Layoffs https://t.co/HZxNUn5xMf https://t.co/ScsDVAWBeJ",
+          "author": "Polygon",
+          "date": "2026-09-16",
+          "likes": 85,
+          "views": 13291,
+          "link": "https://x.com/Polygon/status/2100228254669902004",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSWCd7lXEAAmDQi.jpg"
+          },
+          "featured": true,
+          "summary": "据 RPS 与 IGN 报道，Build A Rocket Boy（MindsEye 开发商）新一轮裁员进行中：招聘负责人 Dan Hawkins 在 LinkedIn 写道将\"帮 HR 部门把公司收尾到底\"，发行经理等多人确认收到裁员通知。IWGB 工会称 BARB\"长期螺旋下坠\"；IGN 信源称即使全员遣散，公司实体也可能不解散。Companies House 仍将其列为活跃公司。多家报道：RPS, Eurogamer, IGN。",
+          "analysis": "从 GTA 制作人 Leslie Benzies 的明星光环到 MindsEye 发售翻车，BARB 用一年多走完\"扩到 550 人→多轮裁员→疑似清算\"的完整弧线。两个教训：自研引擎+大型 UGC 平台叙事撑不起商业化验证周期；工会介入与监控软件诉讼正在成为英国工作室劳资冲突的标准剧本。",
+          "recommendation": "MindsEye 开发商 Build A Rocket Boy 再裁员，HR 自述\"帮公司收尾\"——工作室疑似走向关闭"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "SteamDB · CCU 异动",
+          "tags": [
+            "F2P",
+            "PCU里程碑",
+            "SteamDB"
+          ],
+          "title": "Aniimo 首次突破 10 万 Steam 同时在线，好评率仅 50%",
+          "en_title": "Aniimo has reached 101,717 concurrent players on Steam for the first time (50.22% rating)",
+          "full_text": "Aniimo has reached 101,717 concurrent players on Steam for the first time (50.22% rating) https://t.co/qoSGNaf2IT",
+          "author": "SteamDB",
+          "date": "2026-09-16",
+          "likes": 37,
+          "views": 7352,
+          "link": "https://x.com/SteamDB/status/2100085537545519349",
+          "media": null,
+          "featured": false,
+          "game_ref": "Aniimo",
+          "summary": "SteamDB 监测到开放世界收集类免费游戏 Aniimo 首次突破 101,717 同时在线，但 Steam 好评率仅 50.22%。导入规模与口碑分裂同时出现，是典型的 F2P 大推量买量曲线。",
+          "analysis": "F2P 宝可梦like 冲进 Steam 10 万 CCU 俱乐部，说明该品类需求天花板被再次验证；但 50% 好评率意味着留存与内容供给大概率跟不上导入量。对同类立项者，这个案例的价值在差评焦点（优化、内购深度、内容量）可以逐条对表排查。",
+          "recommendation": "Aniimo 首破 10 万 Steam 同时在线——F2P 收集品类需求被验证，好评率仅 50%",
+          "enrichment": {
+            "game_name": "伊莫",
+            "genre": "动作 / 冒险 / 大型多人在线",
+            "developer": "Pawprint Studio",
+            "platforms": [
+              "PC"
+            ],
+            "price": "免费",
+            "release_date": "已发售 · 2026 年 9 月 15 日",
+            "steam_rating": "已发售",
+            "steam_url": "https://store.steampowered.com/app/4126040",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/d1a1d8a5c304f61edfec2fd4d7b8680d7a7e7ed6/header_schinese.jpg?t=1789611914",
+            "youtube_video": null,
+            "description": "《伊莫》是一款多人在线大世界捉宠RPG。你将在广袤的艾德尔大陆上邂逅各种神奇生物——伊莫。和他们联结合体，还能以全新的视角和能力感受这个世界的美好。你也可以来到浮空天际的近未来都市，邂逅其他冒险家，交流旅途心得或是感受竞技的魅力。快带上你的伊莫，开启一场超越想象的大世界冒险之旅吧！\n\n",
+            "why_notable": "F2P 收集品类首次站上 Steam 十万同时在线量级，需求验证信号明确",
+            "pcu": "101,717（2026-09-16 首次突破，SteamDB）",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "游戏行业 05",
+          "source": "PC Gamer · 硬件市场",
+          "tags": [
+            "GPU",
+            "显存危机",
+            "供应链"
+          ],
+          "title": "RTX 5090 从美国线上零售渠道消失，第三方炒至 9500 美元",
+          "en_title": "RTX 5090 stock is disappearing from US online retailers.",
+          "full_text": "RTX 5090 stock is disappearing from US online retailers. https://t.co/eaM5AqFZVX",
+          "author": "pcgamer",
+          "date": "2026-09-16",
+          "likes": 20,
+          "views": 18532,
+          "link": "https://x.com/pcgamer/status/2100160437056884996",
+          "media": null,
+          "featured": false,
+          "summary": "RTX 5090 在亚马逊、Best Buy 等美国主流电商已基本无货，仅剩第三方卖家报价，最高达 9500 美元（建议零售价 1999 美元）。PC Gamer 的一年期价格追踪显示 5090 已累计上涨 83%，目前全新最低报价约 6800 美元。",
+          "analysis": "显存与存储危机正沿\"内存→整机→旗舰 GPU\"传导，Valve Steam Machine/Frame 的涨价与推迟是同一变量的下游结果。对 PC 游戏开发者，这意味着高端用户群扩张停滞、开发与测试设备的预算上调，2027 年的硬件基线规划应把 DRAM 价格当作一等变量来对待。",
+          "recommendation": "RTX 5090 美国零售渠道消失，第三方炒到 9500 美元——较建议零售价溢价近 5 倍"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "電ファミニコゲーマー · 新游报道",
+          "tags": [
+            "经营模拟",
+            "多人合作",
+            "Steam EA"
+          ],
+          "title": "Japanese Ramen Simulator：日本独立团队 6 人合作拉面店经营，愿望单 3 周破 5 万",
+          "en_title": "【最大6人マルチ】理想のラーメン店を目指す経営シミュレーションゲーム『Japanese Ramen Simulator』早期アクセス版が9月28日にリリース決定",
+          "full_text": "【最大6人マルチ】理想のラーメン店を目指す経営シミュレーションゲーム『Japanese Ramen Simulator』早期アクセス版が9月28日にリリース決定\n https://t.co/d1UhKjjQ3d\n\n仕込みから調理、接客、片付けまでを仲間と分担し、自分たちだけの最高の一杯を作り上げる。ウィッシュリスト5万件達成の注目作 https://t.co/2CE2k1fTrg",
+          "author": "denfaminicogame",
+          "date": "2026-09-16",
+          "likes": 28012,
+          "views": 3006749,
+          "link": "https://x.com/denfaminicogame/status/2100039891065463255",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2100039500785393664/pu/img/cvvntgEAV_cvb31y.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2100039891065463255/video/1"
+          },
+          "featured": true,
+          "game_ref": "Japanese Ramen Simulator",
+          "summary": "东京独立团队 Wild Dog 宣布 6 人合作拉面店经营模拟《Japanese Ramen Simulator》于 9 月 28 日进入 Steam 抢先体验。从熬汤、煮面、摆盘到收拾全流程分工，物理演算让每碗成品都不同，还有挑剔的拉面评论家、小偷与火灾等随机事件；发布 3 周愿望单突破 5 万，第三轮封测报名至 9 月 18 日。",
+          "analysis": "合作经营模拟+强物理反馈+日式题材是近两年愿望单增速最快的组合之一，PlateUp! 类的成功路径再次被复制。5 万愿望单对无发行商背书的小团队是很强的启动数据，EA 首月的 6 人开黑口碑循环能否滚起来是关键观察点。",
+          "recommendation": "Japanese Ramen Simulator：6 人合作拉面店经营模拟，3 周愿望单破 5 万，9 月 28 日 EA",
+          "enrichment": {
+            "game_name": "Japanese Ramen Simulator",
+            "genre": "休闲 / 独立 / 模拟",
+            "developer": "Wild Dog",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "2026年9月28日（早期访问，JST）",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4968640",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4968640/473d0eef8af341a191a8aba02d443ec570cc6977/header.jpg?t=1789527005",
+            "youtube_video": null,
+            "description": "《Japanese Ramen Simulator》是一款最多支持六人游玩的拉面店经营模拟游戏。准备食材、煮面、摆放配菜，制作讲究的一碗。开发原创菜品，自由设计厨房与用餐区。无论与朋友合作还是独自经营，都向理想中的人气拉面店迈进！\n\n《Japanese Ramen Simulator》是日本东京独立团队 Wild Dog 开发的拉面店经营模拟，支持最多 6 人在线合作，9 月 28 日以抢先体验形式登陆 Steam。\n\n【核心玩法】从食材备料、煮面、摆盘到接待与收拾，把拉面店的一整套工作流做成可分工的协作关卡。煮面火候、汤温、食材香气与鲜味、物理演算摆盘都会影响每碗成品，同一碗面不会有两次完全相同的出锅。单人不愁：可雇佣 NPC 店员帮忙。\n\n【系统深度】除拉面外还能拓展饺子、盖饭、啤酒等副菜单（饺子要盯烤制程度、啤酒要控泡沫比例）；店内厨房、家具、装饰自由布局，导线规划影响出餐效率；自有\"My Design\"系统支持把自绘插画用于海报、门帘与餐具。\n\n【随机事件】挑剔的拉面评论家、盯上收银台的小偷、突发火灾都会打乱营业节奏，手里剑和灭火器是保命道具；甚至可以进赌场搏一把。\n\n【氛围与细节】团队实拍了真实拉面店的制作流程与音效，部分素材实物扫描；游戏内语音聊天按距离与墙体衰减，还原后厨的临场感。视角支持第一/第三人称切换。\n\n【优势】分工合作结构天然适合主播与朋友开黑；物理摆盘提供的\"每碗都不一样\"是短视频传播利器。\n【不足】EA 阶段内容深度与长线目标待验证，物理模拟的挫败感可能劝退手残玩家。\n\n【综合】发布 3 周愿望单破 5 万，是近期日系合作模拟类最值得关注的新作之一。",
+            "why_notable": "无发行商背书的独立团队 3 周愿望单破 5 万；6 人合作+物理演算拉面的差异化组合",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "愿望单 50,000+（发布 3 周）",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "電ファミニコゲーマー · 新作首曝",
+          "tags": [
+            "恐怖RPG",
+            "时间循环",
+            "首曝PV"
+          ],
+          "title": "ノロイあやし：《高分少女》漫画家押切蓮介 × 新川宗平，时间循环校园恐怖 RPG 首曝",
+          "en_title": "『ハイスコアガール』『サユリ』押切蓮介氏が携わる完全新作ホラーRPG『ノロイあやし』PV映像が公開。2027年に発売予定",
+          "full_text": "『ハイスコアガール』『サユリ』押切蓮介氏が携わる完全新作ホラーRPG『ノロイあやし』PV映像が公開。2027年に発売予定\nhttps://t.co/Ip44zVI8Sp\n\n\"タイムループ\"する女子高生が不気味な学校に散らばる謎を解き、都市伝説の真相に迫る。『エトランジュ オーヴァーロード』新川宗平氏とのタッグで制作 https://t.co/XhvYGyLkcg",
+          "author": "denfaminicogame",
+          "date": "2026-09-16",
+          "likes": 15280,
+          "views": 995605,
+          "link": "https://x.com/denfaminicogame/status/2100049737579974657",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2100049693946654720/pu/img/cAGB3a5mhJ1R0Tj.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2100049737579974657/video/1"
+          },
+          "featured": true,
+          "game_ref": "Noroi Ayashi",
+          "summary": "Game Source Entertainment 公布全新恐怖 RPG《ノロイあやし》：漫画家押切蓮介（《高分少女》《サユリ》）与《エトランジュ オーヴァーロード》制作人新川宗平合作，Clover Lab 开发。时间循环探索型恐怖 RPG——主角为查清挚友死因，深夜潜入\"U 校\"验证七不思議与咒杀人形都市传说；每个怪异都有专属封印手法，以\"死\"积累知识、走最短生还路线。2027 年发售，登陆 Steam/Switch/Switch 2，PV 已公开。",
+          "analysis": "把恐怖探索做成\"初见必死、以死学路线\"的 RTA 式知识积累循环，是叙事恐怖品类里少见的玩法化尝试，黄昏怪谈题材+漫画家 IP 的组合在 Japanese horror 圈传播力极强。发行方 GSE 与 Clover Lab 的产能是 2027 年前的关键观察项。",
+          "recommendation": "《ノロイあやし》：押切蓮介×新川宗平合作，用\"死亡\"学路线的时间循环校园恐怖 RPG 首曝",
+          "enrichment": {
+            "game_name": "ノロイあやし（Noroi Ayashi）",
+            "genre": "动作 / 冒险 / 时间循环",
+            "developer": "Clover Lab（开发）× SuperNiche（新川宗平）× 押切蓮介（漫画）；Game Source Entertainment 发行",
+            "platforms": [
+              "Steam",
+              "Nintendo Switch",
+              "Nintendo Switch 2"
+            ],
+            "price": "未公布",
+            "release_date": "2027年（月份待定）",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5179860/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5179860/4cf07db265ffe904aac6cfeff88184f926cfba95/header.jpg?t=1789528824",
+            "youtube_video": "https://www.youtube.com/watch?v=zbZ4CCcjpI8",
+            "description": "《ノロイあやし》是由恐怖漫画家押切蓮介（《高分少女》《サユリ》）与制作人新川宗平（《エトランジュ オーヴァーロード》）联手打造的完全新作恐怖 RPG，Clover Lab 开发、GSE 发行，计划 2027 年登陆 Steam/Switch/Switch 2。\n\n【故事】主人公セイラ为查清挚友不可解的死因，与新闻部同学深夜潜入流传\"七不思議\"与\"咒杀人形アヤ\"都市传说的 U 校，执行禁断仪式后坠入无尽噩梦循环。\n\n【核心玩法】探索×恐怖×解谜三合一：校内每个怪异（七不思議）都有专属的回避法与封印步骤；设计上\"初见生存近乎绝望\"，玩家必须反复死亡，把每次轮回学到的知识变成更短的生还路线，官方直接把这套循环称为\"以死为食的最速生还术\"，恐怖 RTA 属性拉满。\n\n【美术与氛围】押切蓮介的漫画笔触主导视觉基调，以昭和怪谈式的阴湿质感区别于当今主流的和风恐怖。\n\n【优势】顶级恐怖漫画家深度参与的世界观可信度；\"死亡即攻略\"的循环设计在恐怖品类中具备玩法差异化。\n【不足】发行与开发组合的 3D 产能待验证；2027 年才发售，长线曝光存在风险。\n\n【综合】日式恐怖品类 2027 年最受期待的首曝之一，PV 已公开，愿望单已开启。",
+            "why_notable": "《高分少女》漫画家首次深度参与游戏开发；\"初见必死、以死学路线\"的恐怖 RTA 设计差异鲜明",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Indie Game Joe · 玩法展示",
+          "tags": [
+            "街机竞速",
+            "物理",
+            "病毒传播"
+          ],
+          "title": "Dumbfire：你就是一枚不能减速的导弹——贴墙飞得分、钩爪过弯",
+          "en_title": "You're a missile that can't slow down and the gaps keep getting smaller",
+          "full_text": "You're a missile that can't slow down and the gaps keep getting smaller\n\n- Steer it to the target as fast as you can\n- Fly closer to the walls for more points\n- Grapple hook to swing round corners\n\nGame is Dumbfire https://t.co/uRdb0kr1za",
+          "author": "IndieGameJoe",
+          "date": "2026-09-15",
+          "likes": 9197,
+          "views": 3897839,
+          "link": "https://x.com/IndieGameJoe/status/2099805886571057337",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099804596315041793/img/M12aQl4FL8GWVrbA.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2099805886571057337/video/1"
+          },
+          "featured": true,
+          "game_ref": "Dumbfire",
+          "summary": "《Dumbfire》把玩家设定为一枚无法减速的导弹：全速冲向目标、贴墙飞行换高分、用钩爪摆过弯道，而缺口会越来越小。一条 390 万观看的短视频讲清了全部规则。",
+          "analysis": "\"单规则+高风险奖励\"的街机结构天然适配短视频传播，Super Hexagon 到 Tunnel 类的血统一脉相承。20 秒 GIF 即可完成完整玩法表达，是把 demo 视频当发行素材设计的教科书案例；剩下要验证的是这种纯刺激循环的留存深度。",
+          "recommendation": "Dumbfire：不能减速的导弹竞速——贴墙飞行得分+钩爪过弯，390 万观看",
+          "enrichment": {
+            "game_name": "Dumbfire",
+            "steam_url": "https://store.steampowered.com/app/4944600",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4944600/9260cdbc443465e25ba1ba03b1a7c8f7e3676c4e/header.jpg?t=1788946984",
+            "release_date": "即将推出",
+            "platforms": [
+              "PC",
+              "Mac"
+            ],
+            "price": "未公布",
+            "developer": "TitanGameDev",
+            "genre": "竞速",
+            "description": "Launch a missile and thread it through tight obstacles as fast as you can to take out the target. A physics time-attack flight game — chase faster runs for more points— with a built-in level editor and Steam Workshop courses. For fans of Superflight and Clustertruck.\n\n"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "Eurogamer · Demo 上线",
+          "tags": [
+            "Team Ninja",
+            "动作RPG",
+            "Demo"
+          ],
+          "title": "Wo Long 2: Wings of Ember：Team Ninja 新作 Demo 已上线，2027 年 3 月发售",
+          "en_title": "You can play a sizeable demo of Wo Long 2: Wings of Ember right now, getting you ready for its March 2027 release date",
+          "full_text": "You can play a sizeable demo of Wo Long 2: Wings of Ember right now, getting you ready for its March 2027 release date\n\nhttps://t.co/B7cu7aNA2P https://t.co/pxliwCrcSR",
+          "author": "eurogamer",
+          "date": "2026-09-16",
+          "likes": 10,
+          "views": 6070,
+          "link": "https://x.com/eurogamer/status/2100149684417548324",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HSU68ela8AAK97D.jpg"
+          },
+          "featured": false,
+          "game_ref": "Wo Long 2: Wings of Ember",
+          "summary": "光荣特库摩确认《卧龙 2：翼焰》（Team Ninja 开发）2027 年 3 月发售，规模可观的试玩 Demo 现已上线。Eurogamer 评价本作不只是续作，而是 Team Ninja 从《仁王》《忍龙》《DOA》学到的全部积累的集大成。",
+          "analysis": "Team Ninja 延续《仁王》系列\"提前一年放 Demo 收集调参反馈\"的打法，把市场测试前置进开发管线。三国+中国神话题材的高难度动作组合，对国内市场的传播与本地化发行合作是明显的机会窗口。",
+          "recommendation": "Wo Long 2: Wings of Ember：Team Ninja 新作 Demo 已上线，2027 年 3 月发售",
+          "enrichment": {
+            "game_name": "Wo Long 2: Wings of Ember（卧龙2：凤火连天）",
+            "genre": "动作 / 冒险 / 角色扮演",
+            "developer": "KOEI TECMO GAMES CO., LTD.",
+            "platforms": [
+              "PC"
+            ],
+            "price": "¥ 298.00",
+            "release_date": "2027 年 3 月 4 日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4507990",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4507990/7e7746ce07e19dc3a0e7f9b08546b9ffb9cbefd0/header.jpg?t=1789537382",
+            "youtube_video": null,
+            "description": "战火蔽日 凤舞长空。本作为Team NINJA倾情打造的暗黑三国动作RPG——施展攻守兼备的中华武术，过关斩将、降妖除魔，纵横三国乱世。\n\n",
+            "why_notable": "Team Ninja 新作提前半年开放大规模 Demo，发售窗口确认为 2027 年 3 月",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无",
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "Alex Kunchevsky · 新游曝光",
+          "tags": [
+            "格斗",
+            "创意玩法"
+          ],
+          "title": "Tooth for Tooth：牙齿就是你的血条——Steam 9 月 30 日发售",
+          "en_title": "I made a game where your teeth are your health bar. It's called Tooth for Tooth.",
+          "full_text": "I made a game where your teeth are your health bar.\n\nIt's called Tooth for Tooth.\n\nComing to Steam September 30.\n\nWishlist:\nhttps://t.co/S7Nu8Rdl4W https://t.co/fSOEQGAvNd",
+          "author": "kunchevsky",
+          "date": "2026-09-16",
+          "likes": 548,
+          "views": 66540,
+          "link": "https://x.com/kunchevsky/status/2100027566862061944",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2100025281960357888/img/nveSN081ubo_hBLY.jpg",
+            "video_url": "https://x.com/kunchevsky/status/2100027566862061944/video/1"
+          },
+          "unselected": true,
+          "summary": "独立开发者 Alex Kunchevsky 的新作：牙齿就是血条的格斗游戏，掉一颗牙就少一分生存资本，9 月 30 日登陆 Steam，愿望单已开启。",
+          "recommendation": "Tooth for Tooth：牙齿=血条的格斗游戏，直观到疼，9 月 30 日发售"
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "電ファミニコゲーマー · 新游报道",
+          "tags": [
+            "动作RPG",
+            "村庄建设",
+            "Steam EA"
+          ],
+          "title": "ワロタ、俺の家のとなり魔王城www：在魔王城隔壁种村的动作 RPG，11 月 13 日 EA",
+          "en_title": "「魔王城の隣」で村づくりするアクションRPG『ワロタ、俺の家のとなり魔王城www』早期アクセス版が11月13日に配信決定",
+          "full_text": "「魔王城の隣」で村づくりするアクションRPG『ワロタ、俺の家のとなり魔王城www』早期アクセス版が11月13日に配信決定。体験版も近日配信予定\nhttps://t.co/S1OqNA0W1B\n\n素材を集めて家を建て、アイドル魔王のライブで熱狂した魔物たちの襲撃を迎え撃つ。TGS2026では実機試遊や試遊特典の配布も https://t.co/D2IRwLytTB",
+          "author": "denfaminicogame",
+          "date": "2026-09-16",
+          "likes": 2291,
+          "views": 266515,
+          "link": "https://x.com/denfaminicogame/status/2100083098197320053",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2100083058879922177/pu/img/8I1M85MQUy-yzA2z.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2100083098197320053/video/1"
+          },
+          "unselected": true,
+          "summary": "在魔王城隔壁建村的动作 RPG：收集素材盖房，抵御被偶像魔王演唱会点燃狂热的魔物袭城，11 月 13 日 EA，TGS 2026 提供实机试玩。",
+          "recommendation": "魔王城隔壁种村+偶像魔王演唱会的荒诞设定，11 月 13 日 EA"
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "AUTOMATON · 新作发表",
+          "tags": [
+            "养成模拟",
+            "拼接生物"
+          ],
+          "title": "Legacy Code：什么都往身上粘的\"微怪\"养成模拟正式发表",
+          "en_title": "何でもくっつく\"ちょいキモ生物\"づくりシム『Legacy Code』正式発表",
+          "full_text": "何でもくっつく\"ちょいキモ生物\"づくりシム『Legacy Code』正式発表。敵からパーツを奪いどんどん巨大化、誰にも予測がつかない謎挙動生物爆誕\nhttps://t.co/Z6omWp3hKQ https://t.co/73Usx5Hgzi",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-16",
+          "likes": 372,
+          "views": 61854,
+          "link": "https://x.com/AUTOMATONJapan/status/2100057084771565662",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HST5U3ZbUAAs7be.jpg"
+          },
+          "unselected": true,
+          "summary": "从敌人身上抢零件粘到自己身上、越长越大的\"微萌怪\"养成模拟《Legacy Code》正式发表，行为完全不可预测的谜之生物是最大卖点。",
+          "recommendation": "Legacy Code：抢敌人零件疯狂拼装的微怪养成，行为完全不可预测"
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "IndieGamesLibrary · 新游曝光",
+          "tags": [
+            "3D平台",
+            "开放世界",
+            "合作"
+          ],
+          "title": "Soft Ruin：动量式移动的开放世界 3D 平台迷宫探索",
+          "en_title": "Soft Ruin is a open world 3D platformer where you explore a vast, strange, and dangerous labyrinth.",
+          "full_text": "Soft Ruin is a open world 3D platformer where you explore a vast, strange, and dangerous labyrinth.\n\nA fluid momentum-based movement system\nPlay solo or with friends\nAn interconnected hand-crafted world to discover https://t.co/5BV15K4LII",
+          "author": "IndieGamesLib",
+          "date": "2026-09-14",
+          "likes": 4167,
+          "views": 74223,
+          "link": "https://x.com/IndieGamesLib/status/2099530846906491390",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099530629759021057/img/JoPd4-9iVvoe51MP.jpg",
+            "video_url": "https://x.com/IndieGamesLib/status/2099530846906491390/video/1"
+          },
+          "unselected": true,
+          "summary": "开放世界 3D 平台游戏《Soft Ruin》：动量驱动的流畅移动系统，可单人或与朋友一起探索手工搭建的互连巨型迷宫。",
+          "recommendation": "Soft Ruin：动量移动+巨型迷宫的开放世界 3D 平台器，支持合作"
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "電ファミニコゲーマー · 新游报道",
+          "tags": [
+            "合作",
+            "钓鱼",
+            "休闲"
+          ],
+          "title": "Paddle Cats：两只猫划一条船的双人合作钓鱼游戏开发中",
+          "en_title": "2匹のネコがボートを漕ぐふたり協力釣りゲーム『Paddle Cats』が開発中。2026年に早期アクセスで配信予定",
+          "full_text": "2匹のネコがボートを漕ぐふたり協力釣りゲーム『Paddle Cats』が開発中。2026年に早期アクセスで配信予定\nhttps://t.co/Z9fBobOBjj\n\nふたりで協力して水面を進んで一緒に釣り。釣り上げた魚の価値から持ち帰るかを話し合い、クーラーボックスに詰め込んでキャンプに戻ろう https://t.co/RZzI9mc12p",
+          "author": "denfaminicogame",
+          "date": "2026-09-16",
+          "likes": 4370,
+          "views": 367277,
+          "link": "https://x.com/denfaminicogame/status/2100158246623510714",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2100158207180341250/pu/img/5VxQqG5ErEau3OkZ.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2100158246623510714/video/1"
+          },
+          "unselected": true,
+          "summary": "双人合作划船钓鱼游戏《Paddle Cats》：两只猫协力划桨前进，钓上来的鱼要商量是吃掉还是装箱带回营地，2026 年内 EA。",
+          "recommendation": "Paddle Cats：双猫划船钓鱼，钓上来先商量带走还是吃掉"
+        },
+        {
+          "idx": "新游参考 06",
+          "source": "StormStriker JP · 测试公告",
+          "tags": [
+            "PvP",
+            "动作",
+            "OBT"
+          ],
+          "title": "StormStriker：独立开发 PvP 动作，日本服 OBT 9 月 18 日开启",
+          "en_title": "『StormStriker』日本サーバーOBTを9月18日 20:00から開始します！",
+          "full_text": "FPSとは違う感覚で楽しめる、アクションチームバトルPvP。\n\n『StormStriker』日本サーバーOBTを\n9月18日 20:00から開始します！🔥\nスキルアクションを軸にしたPvPなので、\n三人称視点のMOBAアクションや格闘ゲームに近い感覚で遊べると思います。\n\n重要なのは、スキルコンボ、間合い、そして読み合い。\n遠くからエイムを合わせ続けるようなプレイとは、かなり違います。\n格闘ゲームやアクションゲームの本場である日本の皆さんに、\nぜひ認めてもらえるゲームにしたいです。\n\n全力で運営していきます！\n今、ぜひ友だちと一緒に事前登録をお願いします👇\nhttps://t.co/f3mO8LJAJd\n\n#ゲーム制作 #インディーゲーム",
+          "author": "StormStrikerJPN",
+          "date": "2026-09-15",
+          "likes": 2290,
+          "views": 258478,
+          "link": "https://x.com/StormStrikerJPN/status/2099996690233057472",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099953002450931712/img/oEmY_h_F64lpxjNA.jpg",
+            "video_url": "https://x.com/StormStrikerJPN/status/2099996690233057472/video/1"
+          },
+          "unselected": true,
+          "summary": "独立团队开发的技能动作 PvP《StormStriker》日本服 9 月 18 日 20:00 开放测试：以技能连段、距离与心理博弈为核心，手感更接近三人称 MOBA 动作与格斗游戏。",
+          "recommendation": "StormStriker：独立 PvP 动作，技能连段+读心博弈，日本服 OBT 9 月 18 日开"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Charly Delaroche · 技术演示",
+          "tags": [
+            "three.js",
+            "3D Web",
+            "交互地图"
+          ],
+          "title": "交互式 3D 东京迪士尼海洋地图：浏览器里自由漫游整座园区",
+          "en_title": "Interactive 3D map of Tokyo DisneySea.",
+          "full_text": "Interactive 3D map of Tokyo DisneySea.\n\nTry it here:\nhttps://t.co/bmwPOxEHJH https://t.co/SX5LjCWNz8",
+          "author": "Nal_uh",
+          "date": "2026-09-14",
+          "likes": 2788,
+          "views": 195264,
+          "link": "https://x.com/Nal_uh/status/2099613358555365715",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2099610334999040000/img/vptrZAMWpTZGPL3K.jpg",
+            "video_url": "https://x.com/Nal_uh/status/2099613358555365715/video/1"
+          },
+          "featured": false,
+          "summary": "开发者 Charly Delaroche 发布可交互的东京迪士尼海洋 3D 地图：浏览器内自由漫游整座园区，建模细致、运镜流畅，获得 19.5 万观看。",
+          "analysis": "主题公园数字孪生是 3D Web 渲染能力的直观展示，同款技术栈（three.js/WebGPU、流式加载、LOD 与性能预算管理）正在被开放世界原型与虚拟场馆项目直接复用，工程细节值得前端向游戏团队拆解。",
+          "recommendation": "Tokyo DisneySea 交互式 3D 地图——浏览器里自由漫游整座园区，19.5 万观看"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**行业结构日：一喜两忧**\nWardogs 用\"劝退式营销\"把 EA 首日做成百万销量级事件；同期 Game Pass 被曝将在 2027 年取消 day-one 首发与云游戏，订阅模式核心卖点动摇；MindsEye 开发商 Build A Rocket Boy 进入收尾阶段，明星团队从扩张到清算只用了一年多。\n\n**AI × 游戏工具链继续提速**\nUnity 发布 OpenAI Codex 官方插件，把引擎知识直接喂给通用编程 Agent；陈成整理的 Claude Code 团队对谈给出\"工具即补丁、对自造物别有感情\"的一线方法论，做 AI 工具链的团队值得整篇读完。\n\n**新游与硬件市场**\n拉面店合作模拟 3 周愿望单 5 万、时间循环恐怖 RPG《ノロイあやし》首曝，两类差异化题材同日引爆；RTX 5090 在美国零售渠道消失、第三方炒到 9500 美元，显存危机开始向整机与旗舰 GPU 传导。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

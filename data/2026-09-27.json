@@ -1,0 +1,523 @@
+{
+  "date": "2026-09-27",
+  "meta": {
+    "raw_count": 190,
+    "filtered_count": 183,
+    "selected_count": 12,
+    "crawl_time": "2026-09-28 18:06"
+  },
+  "lede": "Xbox重组裁员268人CEO却称'精简令人欣慰'；小岛《Physint》转投Xbox并回应超支传闻；《巫师3》重制版9月29日解锁；三周小项目《Dressmaker》冲上畅销榜第10，2175美元tokens造出可玩MMORPG。",
+  "editors_pick": [
+    { "section_id": "indie", "item_index": 0, "hook": "三周小项目逆袭：缝纫模拟《Dressmaker》登Steam畅销第10，销量压过3A新作——压倒性好评" },
+    { "section_id": "industry", "item_index": 0, "hook": "Xbox重组裁员268人：Ninja Theory将关停、Halo移交动视，CEO称'精简令人欣慰'" },
+    { "section_id": "ai", "item_index": 0, "hook": "2175美元Opus 5.5 tokens跑36小时，产出可玩老派MMORPG——账单全公示" }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "2175美元 Opus 5.5 tokens 36小时跑出可玩老派MMORPG，账单全公示\nOpus 5.5 造的类Splatoon游戏宣布开源，代码可Fork"
+    },
+    {
+      "id": "industry",
+      "text": "Xbox重组裁员268人：Ninja Theory将关停、Halo移交动视，CEO称'精简令人欣慰'\n小岛回应Physint超支传闻：仍'热爱索尼'，Xbox以远低于4亿美元的报价接盘\n《巫师3》重制版9月29日解锁：约45GB免费升级，两部DLC对所有买家免费\n万代机甲PvPvE《SYNDUALITY Echo of Ada》官宣2027年停服，转型离线PvE版"
+    },
+    {
+      "id": "indie",
+      "text": "缝纫模拟《Dressmaker》登Steam畅销第10：三周小项目逆袭，压倒性好评\n反向塔防《Hostile Architect》公开：扮演反派给勇者布陷阱\n《守墓人2》发售一周销量破40万份\n海獭冒险《Otterly Lost》发售即100%好评"
+    },
+    {
+      "id": "tools",
+      "text": "Scenario开源GameDev OS：64项技能×9大角色装进编程Agent\n自研动画软件演示163万播放，作者考虑Gumroad买断发售"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · AI能力展示",
+          "tags": ["Opus 5.5", "AI造游戏", "成本账单"],
+          "title": "2175美元 Opus 5.5 tokens 36小时跑出可玩老派MMORPG",
+          "en_title": "This is what $2,175 of Opus 5.5 tokens can do! Let him cook on my gaming laptop and do whatever it takes, also gave Unity, Blender and APIs. 36 hours, 7.85 B tokens, $230 for 2d/3d/music generation and I got playable old school MMO RPG. That is just insane...",
+          "full_text": "This is what $2,175 of Opus 5.5 tokens can do!\n\nLet him cook on my gaming laptop and do whatever it takes, also gave Unity, Blender and APIs. 36 hours, 7.85 B tokens, $230 for 2d/3d/music generation and I got playable old school MMO RPG. \n\nThat is just insane... https://t.co/MAVQvkfx0T",
+          "author": "Stefan_3D_AI",
+          "date": "2026-09-26",
+          "likes": 2363,
+          "views": 468510,
+          "link": "https://x.com/Stefan_3D_AI/status/2103778468660162615",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103777706718691328/img/T5848Iu-Pt8lP7CM.jpg",
+            "video_url": "https://x.com/Stefan_3D_AI/status/2103778468660162615/video/1"
+          },
+          "summary": "开发者 Stefan 公示了用 Claude Opus 5.5 造游戏的完整账单：36小时、7.85B tokens、约2175美元（另有230美元的2D/3D/音乐生成费），在游戏本上让 Agent 自主发挥并接入 Unity、Blender 与外部 API，最终产出一款可玩的老派 MMO RPG。",
+          "analysis": "这类'账单透明'实验的价值在于给出成本基线：当前旗舰模型跑出一款可玩但粗糙的 MMO 需要2000美元量级，距商用仍远，但成本下降曲线才是真正的行业变量。同日还有类Splatoon、第三人称LoL等多个同主题作品出现，'Agent 长时间自主开发'正从孤例变为可复现路径。",
+          "recommendation": "2175美元Opus 5.5 tokens跑36小时，产出可玩老派MMORPG——账单全公示",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "X · AI能力展示",
+          "tags": ["Opus 5.5", "开源", "AI造游戏"],
+          "title": "Opus 5.5 打造的类 Splatoon 游戏宣布开源",
+          "en_title": "The Opus 5.5 Splatoon-inspired Game is now open source on GitHub!",
+          "full_text": "Splatoon Game made by Opus 5.5\n\nGameplay video.\nPlay Game Here: https://t.co/NIt8GH46vc https://t.co/wsz1qBdgv7",
+          "author": "JaydenDavisNC",
+          "date": "2026-09-25",
+          "likes": 5038,
+          "views": 547789,
+          "link": "https://x.com/JaydenDavisNC/status/2103357848961036304",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103357145110474752/img/MidQpU-3UgFCBxmB.jpg",
+            "video_url": "https://x.com/JaydenDavisNC/status/2103357848961036304/video/1"
+          },
+          "summary": "开发者 Jayden Davis 用 Opus 5.5 打造的类 Splatoon 墨水射击游戏以实机视频刷屏（54万+ views、5000+ 赞），9月26日作者宣布项目已在 GitHub 开源（见其后续推文 x.com/JaydenDavisNC/status/2103832431040286763），代码可自由 Fork。",
+          "analysis": "'开源'让这类 AI 造游戏演示从猎奇素材变成可拆解的工程样本：从业者可以直接检视 Agent 生成的项目结构与代码质量，评估这套工作流距'可维护的生产管线'还差几步。工程化能力而非生成能力，正在成为新的分水岭。",
+          "recommendation": "Opus 5.5 造的类Splatoon游戏宣布开源：代码可Fork，54万人围观过实机"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "GameSpot · 行业",
+          "tags": ["Xbox", "裁员", "工作室重组"],
+          "title": "Xbox重组裁员268人，CEO称'精简令人欣慰'：Ninja Theory走向关停、Halo移交动视",
+          "en_title": "Microsoft CEO Attempts To Kill Remaining Xbox Goodwill",
+          "full_text": "Microsoft CEO Attempts To Kill Remaining Xbox Goodwill https://t.co/hthF7WyrUo https://t.co/DNVztvBduw",
+          "author": "GameSpot",
+          "date": "2026-09-26",
+          "likes": 270,
+          "views": 223392,
+          "link": "https://x.com/GameSpot/status/2103638287940472875",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTGf3ybaEAA_SCR.jpg"
+          },
+          "summary": "微软CEO纳德拉称Xbox的'精简'进展'令人欣慰'，与此同时Xbox完成新一轮重组：共裁员268人，Ninja Theory在收购谈判破裂后走向关停；Rare与World's Edge划归动视管理，Playground与Turn 10合并专注Fable与Forza，Obsidian改向Bethesda汇报，Halo系列后续开发移交动视。Gears of War: E-Day叙事总监Juan Vaca在游戏发售（10月6日）前两周被裁（Eurogamer报道）。",
+          "analysis": "平台方的'效率叙事'与创意团队的代价落差正在扩大：连发售前两周的旗舰项目核心岗位也不保，说明重组已进入'与项目进度无关'的阶段。工作室归属的大挪移（Halo→动视、Rare→动视）预示Xbox第一方IP的开发重心将向动视体系靠拢，相关合作与排期逻辑需重新评估。多家报道：GameSpot、Eurogamer、PC Gamer、TheGamer。",
+          "recommendation": "Xbox重组裁员268人：Ninja Theory将关停、Halo移交动视，CEO称'精简令人欣慰'",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 行业",
+          "tags": ["小岛秀夫", "Physint", "Xbox"],
+          "title": "小岛秀夫回应Physint超支传闻：仍'热爱索尼'，Xbox接手发行",
+          "en_title": "Hideo Kojima responds to accusations of Physint being over budget and late on deadline, says he still \"loves Sony\" despite collapse of publishng deal.",
+          "full_text": "Hideo Kojima responds to accusations of Physint being over budget and late on deadline, says he still \"loves Sony\" despite collapse of publishng deal. https://t.co/eY8VhTuTei https://t.co/uVXI9parPm",
+          "author": "eurogamer",
+          "date": "2026-09-26",
+          "likes": 27,
+          "views": 9310,
+          "link": "https://x.com/eurogamer/status/2103794481518510392",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTIt6m9XcAAQgQh.jpg"
+          },
+          "summary": "针对彭博'超支、延期、Death Stranding销量不及预期导致索尼放弃Physint'的报道，小岛秀夫接受IGN专访回应：对索尼'毫无恶意、依然热爱索尼'，坦承当时'震惊到记不清会议细节'；Kojima Productions发声明否认相关指控，称工作室处于'健康且盈利'状态。后续报道称Xbox的投入远低于小岛曾向索尼报出的4亿美元。",
+          "analysis": "3A项目的资金门槛与排期风险已高到让合作三十年的平台方中途撤出，独占绑定模式在成本压力下持续松动。Xbox以'远低于4亿美元的零头'接盘，显示买断式发行的议价权正从明星制作人一侧转移；对头部工作室而言，多平台化已不是选择题而是生存策略。多家报道：Eurogamer、RPS。",
+          "recommendation": "小岛回应Physint超支传闻：仍'热爱索尼'，Xbox以远低于4亿美元的报价接盘",
+          "game_ref": "Physint",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "MP1st · 行业",
+          "tags": ["巫师3", "重制版", "CDPR"],
+          "title": "《巫师3》重制版9月29日解锁：约45GB免费升级，两部DLC对所有买家免费",
+          "en_title": "The Witcher 3 Remastered Download Size, Global Release Times and Review Embargo Lift Dates Revealed",
+          "full_text": "The Witcher 3 Remastered download size, global release times and review embargo lift revealed all in one place.\n\nCheck it: https://t.co/3K8RTqhWZy\n\nAnd yes, we are reviewing the Remastered right now, and we hope to have it up in time for embargo. https://t.co/wqenqlkBHA",
+          "author": "MPFirst",
+          "date": "2026-09-26",
+          "likes": 7,
+          "views": 685,
+          "link": "https://x.com/MPFirst/status/2103884700117086416",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTJ_7I-a4AAdDzx.jpg"
+          },
+          "summary": "CD Projekt RED确认《巫师3》重制版9月29日全球解锁：PC/PS5/Xbox升级包约45GB，Switch 2版约50GB；拥有原版的玩家免费升级，《石之心》《血与酒》两大DLC已对所有买家免费；评测解禁为9月28日。CDPR同时在开发终章剧情DLC《Songs of the Past》，剧情将与《巫师4》（目标2028）衔接，主机端还将获得Mod支持。",
+          "analysis": "'老游戏重制+DLC免费化'正在成为长线IP运营的标准动作：用免费重制维持活跃度，把付费点后置到新DLC与续作，为2028年的《巫师4》保温用户池。配合主机Mod支持，老游戏社区生态的延续周期被显著拉长，值得所有持有经典IP的发行商参考。",
+          "recommendation": "《巫师3》重制版9月29日解锁：约45GB免费升级，石之心+血与酒对所有买家免费",
+          "game_ref": "The Witcher 3: Wild Hunt",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "AUTOMATON · 行业",
+          "tags": ["万代南梦宫", "停服", "PvPvE"],
+          "title": "万代机甲PvPvE《SYNDUALITY Echo of Ada》官宣2027年停服，转型离线PvE版",
+          "en_title": "バンナムのメカPvPvE脱出シューター『SYNDUALITY Echo of Ada』、来年サービス終了へ。\"オフラインのPvE版\"として生まれ変わる",
+          "full_text": "バンナムのメカPvPvE脱出シューター『SYNDUALITY Echo of Ada』、来年サービス終了へ。\"オフラインのPvE版\"として生まれ変わる\nhttps://t.co/UDsrMvO3dw https://t.co/bgvKZCcsZr",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-26",
+          "likes": 464,
+          "views": 81540,
+          "link": "https://x.com/AUTOMATONJapan/status/2103847508623647022",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTJeVtIbEAAU-ue.jpg"
+          },
+          "summary": "万代南梦宫宣布，机甲PvPvE撤离射击《SYNDUALITY Echo of Ada》将于2027年5月后停止在线服务，转型为独立运行的离线PvE版；在线版存档与部分已购道具可继承，付费货币SYN COINS将于12月18日停售。该作2025年1月发售时Steam峰值仅3622人，好评率约40%，近期日峰值已跌至约200人。",
+          "analysis": "PvPvE撤离射击赛道退潮的又一案例：概念有辨识度但玩法循环留不住人。值得注意的是其退场方式——不停服关服，而是把资产转为离线PvE版延续价值，在数字所有权争议高企的当下提供了一个可参考的'软着陆'模板。",
+          "recommendation": "万代机甲PvPvE《SYNDUALITY Echo of Ada》官宣明年停服，转型离线PvE版",
+          "game_ref": "SYNDUALITY Echo of Ada"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Polygon · 市场表现",
+          "tags": ["模拟经营", "治愈", "Steam畅销榜"],
+          "title": "缝纫模拟《Dressmaker》登Steam畅销第10：三周小项目逆袭，压倒性好评",
+          "en_title": "This 'Overwhelmingly Positive' Steam Cozy Sim Is Officially Outselling Major Game Releases",
+          "full_text": "This 'Overwhelmingly Positive' Steam Cozy Sim Is Officially Outselling Major Game Releases https://t.co/bJhQJJeqEX https://t.co/3UExHdL7Lc",
+          "author": "Polygon",
+          "date": "2026-09-25",
+          "likes": 60,
+          "views": 12288,
+          "link": "https://x.com/Polygon/status/2103550128355246335",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTFPsdEW0AAsYmp.jpg"
+          },
+          "summary": "缝纫模拟《Dressmaker》冲上Steam畅销榜第10，销量压过《寂静岭：陨落》与《The Blood of Dawnwalker》等大作；游戏从三周side project起家，发载数日评价已破4700条、好评率'压倒性好评'（Polygon发稿时约2000条）。多家报道：Polygon、PC Gamer。",
+          "recommendation": "三周小项目变畅销黑马：缝纫模拟《Dressmaker》登Steam畅销第10，压倒性好评",
+          "game_ref": "Dressmaker",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Dressmaker",
+            "genre": "休闲 / 模拟 / 缝纫工艺",
+            "developer": "Cozy Lives（发行：Free Lives）",
+            "platforms": ["Steam"],
+            "price": "$13.49（原价 $14.99）",
+            "release_date": "已发售 · 2026年9月21日",
+            "steam_rating": "压倒性好评（4,700+ 条评价）",
+            "steam_url": "https://store.steampowered.com/app/4019220/Dressmaker/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4019220/f1cd08127872e60e4c47a4bc3e40d682d94741bf/header.jpg?t=1790484978",
+            "youtube_video": null,
+            "description": "【核心玩法】玩家扮演小镇裁缝，从挑选布料、绘制纸样、裁剪到缝合成衣全流程亲手操作，把'做一件衣服'拆解成可上手的手工化步骤。镇民带着具体情境下委托：新入职的第一套正装、聚会穿搭、预算内拿下全场焦点。NPC要求宽松但情境有趣，成品会真实穿在角色身上并进入其生活场景。\n【美术与氛围】柔和低饱和的治愈系画风配轻松日常叙事，节奏接近 Coffee Talk 式'慢职业体验'；与《无限暖暖》的华丽换装形成错位竞争——它卖的是'制作过程'而非'拥有结果'。\n【对标定位】Roblox《Dress to Impress》与《无限暖暖》证明换装需求庞大，但两者皆为F2P且受付费墙约束；《Dressmaker》用买断制承接了这批被忽视的玩家，Steam评论区高频对比上古换装神作《Barbie Fashion Show》。\n【优势】玩法密度与题材稀缺性兼具；三周原型到完整版的开发节奏极高效；Free Lives发行加持；评价增长曲线陡峭。\n【不足】体量小，耐玩度依赖委托池更新；缝纫拟真深度有限；cozy品类标签下竞争者正快速涌入。\n【综合】换装/时尚需求从免费手游向买断制单机规模化迁移的首个样本，小团队切入'被忽视刚需'的教科书案例。",
+            "why_notable": "三周side project逆袭成畅销榜Top10，验证'换装制作'是被免费手游教育过却被买断制市场忽视的刚需",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "暂无官方数据（畅销榜第10，评价4700+）",
+            "gi_summary": "「缝纫工艺模拟」套「治愈系小镇人情」新瓶，Cozy Lives开发、Free Lives发行，Steam售价$14.99"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "X · 新游曝光",
+          "tags": ["反向塔防", "策略", "新品公开"],
+          "title": "反向塔防《Hostile Architect》公开：扮演反派给闯关勇者布陷阱",
+          "en_title": "These indie devs were sick of platformers so they made one where you get to be the bad guy",
+          "full_text": "These indie devs were sick of platformers so they made one where you get to be the bad guy\n\n- Pick your traps from a small shop\n- Lay them out however you want\n- A wave of heroes is let loose on it\n- More heroes come every round\n\nGame is Hostile Architect. This is GENIUS. https://t.co/iQPQebPhMT",
+          "author": "IndieGameJoe",
+          "date": "2026-09-25",
+          "likes": 4576,
+          "views": 160250,
+          "link": "https://x.com/IndieGameJoe/status/2103556090063462460",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103555520690827265/img/sWEhkMOKQw9sdsTz.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2103556090063462460/video/1"
+          },
+          "summary": "独立团队 SludgeBit 公布《Hostile Architect》：玩家不再扮演勇者，而是经典2D横版关卡里的'恶意设计师'——从商店挑选陷阱自由布置，再放出一波波勇者进攻，每轮敌人更多更强。Steam页面已上线，发售日期未定。",
+          "recommendation": "扮演关卡里的反派：反向塔防《Hostile Architect》公开，4.6K赞——160K views",
+          "game_ref": "Hostile Architect",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Hostile Architect",
+            "genre": "策略 / 反向塔防 / 模拟",
+            "developer": "SludgeBit（独立开发）",
+            "platforms": ["Steam"],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售（Steam页面已上线）",
+            "steam_url": "https://store.steampowered.com/app/4768160/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4768160/0868510c8bd079503c2f5414b92f6e7523de6db3/header.jpg?t=1790446774",
+            "youtube_video": null,
+            "description": "【核心玩法】玩家扮演关卡的'恶意设计师'：从小商店挑选陷阱（尖刺、摆斧、落石等），自由布置在2D横版关卡中，随后放出一波波勇者进攻——每轮过后敌人更多更强，布防要让他们有来无回。布局自由度高，陷阱组合与地形利用构成核心策略深度。\n【美术与氛围】复古2D像素横版观感，刻意还原经典平台跳跃游戏的关卡语法，让'当反派'的喜剧反差成为记忆点。\n【对标定位】精神前作是 Dungeon Keeper 式'当反派'幻想 + Mario Maker 式关卡编辑，定位在两者之间的空白带；反向塔防品类近年少有破圈者。\n【优势】一句话可讲清的高概念；公告期热度高（160K views、4.6K赞）；未发售已积累愿望单势能。\n【不足】玩法深度能否撑起长线留存待验证；同类反向塔防历史上多次高开低走。\n【综合】值得列入愿望单观察的高概念新品，发售档期与定价是决定走向的关键变量。",
+            "why_notable": "把'关卡设计师'变成可玩视角，高概念在公告期即拿到160K views",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂未发售",
+            "gi_summary": "「反向塔防」套「经典横版关卡语法」新瓶，SludgeBit独立开发，Steam页面已上线未定档"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Niche Gamer · 市场表现",
+          "tags": ["模拟经营", "销量数据", "续作"],
+          "title": "《守墓人2》发售一周销量破40万份：黑色幽默墓地经营续作",
+          "en_title": "Graveyard Keeper 2 tops 400,000 sales shortly after launch",
+          "full_text": "Graveyard Keeper 2 tops 400,000 sales shortly after launch: https://t.co/LjLzaASeWB https://t.co/f7xoqRZC0L",
+          "author": "nichegamer",
+          "date": "2026-09-26",
+          "likes": 17,
+          "views": 1994,
+          "link": "https://x.com/nichegamer/status/2103829235110470074",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HTJNilCWMAALIob.jpg"
+          },
+          "summary": "Lazy Bear Games开发的墓地经营模拟《守墓人2》（tinyBuild发行）发载数日销量突破40万份。续作加入小镇修复、自动化产线与亡灵大军战斗，Steam现价$24.99，评价数已近5000条。",
+          "recommendation": "《守墓人2》发售一周销量破40万份，$24.99定价的墓地经营续作表现强劲",
+          "game_ref": "Graveyard Keeper 2",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Graveyard Keeper 2",
+            "genre": "模拟经营 / RPG / 冒险",
+            "developer": "Lazy Bear Games（发行：tinyBuild）",
+            "platforms": ["Steam"],
+            "price": "$24.99",
+            "release_date": "已发售 · 2026年9月22日",
+            "steam_rating": "评价数 4,900+ 条（口碑形成中）",
+            "steam_url": "https://store.steampowered.com/app/4358690/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4358690/77b3cff49c45431ec507e6da5e41383050362c35/header_alt_assets_1.jpg?t=1790169326",
+            "youtube_video": null,
+            "description": "【核心玩法】延续初代'最不中世纪真实'的墓地经营：修复小镇、经营墓园、搭建自动化产线、带领亡灵大军出征，把'僵尸问题'变成一门红火的生意。二代在自动化深度与经营链路上全面加码。\n【美术与氛围】粗粝像素+黑色幽默文本，用荒诞消解死亡题材的沉重感，是系列的招牌气质。\n【对标定位】初代《守墓人》是模拟经营品类'暗黑幽默'分支的代表作；二代首周40万份在tinyBuild发行史中位居前列。\n【优势】IP认知度高；销量数据已兑现；自动化+战斗的新组合拉长中期目标。\n【不足】口碑仍在形成期；对初代UI与节奏的批评是否被修复需持续观察。\n【综合】中型独游续作的标准商业样本：IP+发行商渠道+数据兑现三者齐备。",
+            "why_notable": "系列续作发载数日破40万份，证明'黑色幽默经营'长线IP的付费转化力",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "400,000+（发载数日）",
+            "gi_summary": "「墓地经营自动化」套「黑色幽默像素」新瓶，Lazy Bear Games开发、tinyBuild发行，$24.99"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "AUTOMATON · 新游曝光",
+          "tags": ["治愈", "开放世界", "好评率100%"],
+          "title": "海獭回家记《Otterly Lost》发售即100%好评：治愈系开放世界",
+          "en_title": "ラッコ冒険オープンワールド『Otterly Lost』ラッコがかわいすぎて\"好評率100%\"スタート。遠くの故郷を目指しつつ、動物たちをお手伝い",
+          "full_text": "ラッコ冒険オープンワールド『Otterly Lost』ラッコがかわいすぎて\"好評率100%\"スタート。遠くの故郷を目指しつつ、動物たちをお手伝い\nhttps://t.co/4dvUqFJxxZ https://t.co/BveRdtXtDK",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-26",
+          "likes": 892,
+          "views": 110156,
+          "link": "https://x.com/AUTOMATONJapan/status/2103732850428432846",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103732771210596352/img/UeZgWG4p-1-QYQfS.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2103732850428432846/video/1"
+          },
+          "summary": "海獭主题开放世界冒险《Otterly Lost》9月23日发售，以好评率100%开局：玩家扮演一只离家很远的小海獭，游泳潜水探索、帮助动物朋友、使用工具解开轻量谜题，揣着心爱的石头回故乡。现价$15.29（促销中）。",
+          "recommendation": "海獭回家记《Otterly Lost》发售即100%好评：治愈系开放世界小体量新作",
+          "game_ref": "Otterly Lost",
+          "enrichment": {
+            "game_name": "Otterly Lost",
+            "genre": "冒险 / 治愈系开放世界",
+            "developer": "Soulworks Interactive（独立开发）",
+            "platforms": ["Steam"],
+            "price": "$15.29（原价 $16.99）",
+            "release_date": "已发售 · 2026年9月23日",
+            "steam_rating": "好评率100%开局（130+ 条评价）",
+            "steam_url": "https://store.steampowered.com/app/3861710/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3861710/b4f3578c807168b204d4c5d937118644bfedb38e/header.jpg?t=1790188002",
+            "youtube_video": null,
+            "description": "【核心玩法】扮演一只离家很远的好奇小海獭：游泳、潜水、探索开放海域，结识动物朋友、发现隐藏地点、使用工具、解开轻量谜题，怀里揣着心爱的石头一路回家。无战斗无惩罚，探索与相遇是全部内容。\n【美术与氛围】清透的水体渲染与毛绒绒的海獭动作细节是最大卖点，日语社区以'ラッコがかわいすぎる'刷屏，天然适配短视频传播。\n【对标定位】介于《ABZÛ》式疗愈潜游与《Stray》式'动物视角'之间，体量更小、更休闲。\n【优势】题材差异化明显；开局口碑极佳；价格友好。\n【不足】内容体量小（评价基数仅百余条）；玩法深度有限，长线口碑能否守住待观察。\n【综合】治愈系小品的合格开局，适合作为'短平快'差异化题材的参考样本。",
+            "why_notable": "小体量治愈冒险凭'海獭视角'差异化开局即100%好评，动物题材传播红利仍在",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「海獭视角开放世界」套「治愈潜游」新瓶，Soulworks Interactive独立开发，$16.99"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "X · 新游参考",
+          "tags": ["非对称恐怖", "多人"],
+          "title": "非对称恐怖《SpecterMancer》公布：扮演恶灵吓生存者凑'恐惧配额'",
+          "en_title": "幽霊 vs 生存者……ポルターガイストを起こし、幻覚を見せ、ジャンプスケアでビビらせ、化け物に追い回させる",
+          "full_text": "幽霊 vs 生存者\n幽霊側は必死に脱出しようとする生存者を怖がらせましょう\n\nポルターガイストを起こし、幻覚を見せ、\nジャンプスケアでビビらせ、化け物に追い回させる\n\n幽霊側だけめちゃくちゃたのしそうなマルチプレイホラー\n『SpecterMancer』発表\nhttps://t.co/H2o4vE03D4 https://t.co/4ikXb7m6fo",
+          "author": "dotpixel3d",
+          "date": "2026-09-25",
+          "likes": 343,
+          "views": 26973,
+          "link": "https://x.com/dotpixel3d/status/2103665863916482918",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103591981444407296/img/x8b4DINXHw6ibChz.jpg",
+            "video_url": "https://x.com/dotpixel3d/status/2103665863916482918/video/1"
+          },
+          "summary": "多人恐怖《SpecterMancer》公布：玩家扮演恶灵，用灵异现象、幻觉、jump scare 吓唬试图逃离的生存者，凑满'恐惧配额'才能复活；鬼方视角的欢乐向非对称恐怖。",
+          "recommendation": "SpecterMancer：扮演恶灵吓生存者凑'恐惧配额'的非对称恐怖公布",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "GameSpark · 新游参考",
+          "tags": ["动作", "机甲"],
+          "title": "风格化战车动作《SLAM TANK》发表：不开炮的肉弹战车",
+          "en_title": "砲身でぶん殴って機械軍団をぶっ飛ばせ！ スタイリッシュ戦車アクション『SLAM TANK』発表",
+          "full_text": "砲身でぶん殴って機械軍団をぶっ飛ばせ！ スタイリッシュ戦車アクション『SLAM TANK』発表\n\n戦闘スタイルの異なる3種類の戦車が登場し、ドリフトや各戦車の攻撃・スキルを駆使して敵の大軍を蹴散らします。\n\nhttps://t.co/a34vflOLOj https://t.co/HPJWnUbWyT",
+          "author": "gamespark",
+          "date": "2026-09-26",
+          "likes": 431,
+          "views": 68920,
+          "link": "https://x.com/gamespark/status/2103733960820068353",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2103733841970278400/pu/img/VzziFLP9wBF4yJlM.jpg",
+            "video_url": "https://x.com/gamespark/status/2103733960820068353/video/1"
+          },
+          "summary": "战车动作游戏《SLAM TANK》发表：三台战斗风格迥异的战车，放弃炮击、用炮管抡翻机械军团，配合漂移与技能冲撞清场，风格化视觉辨识度高。",
+          "recommendation": "SLAM TANK：不开炮的肉弹战车动作游戏，炮管抡机械军团",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Fami通 · 新游参考",
+          "tags": ["模拟经营", "自动化"],
+          "title": "养鸡自动化模拟《Billion Egg Farm》发售：目标营收10亿",
+          "en_title": "超大量のニワトリで、目指せ売上10億。カオスな\"養鶏\"自動化シミュレーション『Billion Egg Farm』発売",
+          "full_text": "超大量のニワトリで、目指せ売上10億。カオスな\"養鶏\"自動化シミュレーション『Billion Egg Farm』発売\nhttps://t.co/khVbc4Qg49\n\n卵や肉を売ったり、品種改良したり、生産ラインを拡張したり。何をどう作って売るのかはプレイヤー次第 https://t.co/kEKRFb3NEQ",
+          "author": "famitsu",
+          "date": "2026-09-26",
+          "likes": 86,
+          "views": 60755,
+          "link": "https://x.com/famitsu/status/2103741857012535638",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2103741495308398592/pu/img/k94HupHGXuuBEUZi.jpg",
+            "video_url": "https://x.com/famitsu/status/2103741857012535638/video/1"
+          },
+          "summary": "养鸡自动化模拟《Billion Egg Farm》发售：以亿为单位养鸡，卖蛋卖肉、品种改良、扩建产线，目标营收10亿；混沌画风+自动化玩法的组合。",
+          "recommendation": "Billion Egg Farm：以亿为单位的混乱养鸡自动化模拟发售",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "X · 新游参考",
+          "tags": ["合作恐怖", "派对游戏"],
+          "title": "韩产合作恐怖《GHOSTED》发售：5人组队用真声喊话吓人",
+          "en_title": "오늘 출시된 협동 코미디 공포게임 GHOSTED",
+          "full_text": "오늘 출시된 협동 코미디 공포게임 GHOSTED\n최대 5명까지 같이 할 수 있고 몬스터 주식회사 세계관처럼 유령이 돼서 산사람들을 계속 놀래켜 공포 할당량을 채워야 하는 게임이래 다 채워서 부활하려고..\n근데 이제 직접 보이스로 말하고 소리쳐서 놀래켜야됨 https://t.co/3hwNdx2Vfn",
+          "author": "matchoking1",
+          "date": "2026-09-26",
+          "likes": 73,
+          "views": 6892,
+          "link": "https://x.com/matchoking1/status/2103742223221186858",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103742165348392960/img/1H_knGNTuLMDE4TN.jpg",
+            "video_url": "https://x.com/matchoking1/status/2103742223221186858/video/1"
+          },
+          "summary": "韩产合作喜剧恐怖《GHOSTED》发售：最多5人组队，扮演鬼怪用真人语音大喊吓唬活人，填满恐惧配额才能复活；'必须亲口喊'的派对机制是差异化点。",
+          "recommendation": "GHOSTED：5人合作恐怖，要用真声喊话吓人凑配额的韩产新作",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "Next Indie · 新游参考",
+          "tags": ["合作生存", "Kickstarter"],
+          "title": "开放世界合作生存《Tenkemo》Kickstarter开跑",
+          "en_title": "Open-world co-op survival adventure game 'Tenkemo' is now live on Kickstarter.",
+          "full_text": "Open-world co-op survival adventure game 'Tenkemo' is now live on Kickstarter.\n\nSteam page: https://t.co/GwLBRWExAP https://t.co/8txynYLxFB",
+          "author": "nexindie",
+          "date": "2026-09-26",
+          "likes": 390,
+          "views": 16698,
+          "link": "https://x.com/nexindie/status/2103780364711829782",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103776785536077824/img/-NNL2We29CRl5uik.jpg",
+            "video_url": "https://x.com/nexindie/status/2103780364711829782/video/1"
+          },
+          "summary": "开放世界合作生存冒险《Tenkemo》Kickstarter众筹开跑，Steam页面已上线（store.steampowered.com/app/3268370）。",
+          "recommendation": "Tenkemo：开放世界合作生存，Kickstarter已开跑",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 06",
+          "source": "X · 新游参考",
+          "tags": ["生存", "模拟", "推广"],
+          "title": "《Oxygen Train》：毒氧世界开火车边跑边扩建移动家园（推广推文）",
+          "en_title": "『Raft』の列車版。車内でスローライフキメる異常ゲー。",
+          "full_text": "『Raft』の列車版。車内でスローライフキメる異常ゲー。\n\n猛毒の酸欠世界を走り続けながら、列車をひたすら増築していくサバイバル。走りながら資源を拾って客車を繋げ、農作業から釣り、果ては動物の飼育まで全部\"動く車内\"で完結させられる。外のヒリヒリ感と、車内のアホみたいに平和なスローライフのギャップで完全に脳がバグる。\n『Oxygen Train』#PR",
+          "author": "stmatomato",
+          "date": "2026-09-26",
+          "likes": 3037,
+          "views": 274344,
+          "link": "https://x.com/stmatomato/status/2103786154147377267",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103667779467608064/img/KpaJGO7f7DZEP8a1.jpg",
+            "video_url": "https://x.com/stmatomato/status/2103786154147377267/video/1"
+          },
+          "summary": "生存游戏《Oxygen Train》进入推荐视野：在缺氧毒雾世界不断行驶的列车上扩建车厢，把农耕、钓鱼、养动物搬进移动的家。注意：该推文带 #PR 标签，属商业推广内容，观点仅供参考。",
+          "recommendation": "Oxygen Train：'Raft列车版'毒氧世界移动家园生存（推广推文）",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "X · 开源工具",
+          "tags": ["开源", "AI管线", "Agent技能"],
+          "title": "Scenario开源GameDev OS：64项技能×9大角色装进编程Agent",
+          "en_title": "We just open-sourced a whole game studio. Meet GameDev OS by Scenario.",
+          "full_text": "We just open-sourced a whole game studio.\n\nMeet GameDev OS by Scenario.\n\nhttps://t.co/0XXhzg3tYv\n\nThat's 64 skills across 9 roles, all inside your coding agent.\n\n📁 GameDev OS\n┃\n┣ 📁 Concept Artist\n┃ ┣ 📁 Pencil Sketch to Final Art\n┃ ┗ 📁 Sprite Sheets and Effects\n┃\n┣ 📁 3D Modeler\n┃ ┣ 📁 Image to Mesh\n┃ ┗ 📁 Rigs and Animation Retargets\n┃\n┣ 📁 World Builder\n┃ ┣ 📁 PBR Materials and Skies\n┃ ┗ 📁 Explorable 3D Scenes\n┃\n┣ 📁 Style Lead\n┃ ┣ 📁 Same Character in Every Shot\n┃ ┗ 📁 Pre-Ship Quality Gate\n┃\n┣ 📁 Audi...",
+          "author": "Scenario_gg",
+          "date": "2026-09-25",
+          "likes": 1381,
+          "views": 82057,
+          "link": "https://x.com/Scenario_gg/status/2103460573895659982",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103460053978103808/img/pkGZo_42q6C--JIS.jpg",
+            "video_url": "https://x.com/Scenario_gg/status/2103460573895659982/video/1"
+          },
+          "summary": "Scenario开源GameDev OS：64项技能覆盖9个角色（概念美术、3D建模、世界搭建、风格规范、音频等），装进 Claude Code、Cursor、Codex 等编程Agent内运行；通过 Scenario MCP 生成图片/视频/音频/3D，另有驱动 Blender、Maya、ZBrush、Unreal、Unity 的专家技能组（GitHub 650+ stars，仓库 scenario-labs/skills）。",
+          "analysis": "游戏资产AI生产正从'单点模型'演进为'角色化技能库'：把概念美术→建模→音频的完整链路拆成可组合的Agent技能，本质是把工作室SOP固化成软件。对中小团队，这类开源技能库可能比新的生成模型更能直接改变人效结构。",
+          "recommendation": "Scenario开源GameDev OS：64项技能×9大角色把整个美术管线装进编程Agent"
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "X · 独立工具",
+          "tags": ["动画工具", "独立开发", "买断制"],
+          "title": "自研动画软件爆火：'这可能改变动画制作方式'，163万播放",
+          "en_title": "This might change whole way of making animation",
+          "full_text": "This might change whole way of making animation https://t.co/LJv95Rfopq",
+          "author": "sekiun_creation",
+          "date": "2026-09-25",
+          "likes": 20730,
+          "views": 1630871,
+          "link": "https://x.com/sekiun_creation/status/2103490688470192499",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103490369803735040/img/u2gyFy3rfvqQDCMq.jpg",
+            "video_url": "https://x.com/sekiun_creation/status/2103490688470192499/video/1"
+          },
+          "summary": "日本创作者司島積雲发布自研动画软件演示，收获163万views、2万+赞；作者跟进说明这并非Blender而是自研工具（'Not Blender btw, it's my own software'），考虑以Gumroad一次性买断形式发售，为个人独立动画项目的配音与音效筹资。",
+          "analysis": "个人开发者'自研工具→工具即产品'的路径正被反复验证：当工作流痛点足够垂直，独立创作者的内部工具本身就有市场；Gumroad买断制对个人开发者是低摩擦变现选择，值得工具型独立团队参考。",
+          "recommendation": "自研动画软件演示163万播放：'不是Blender'，作者考虑Gumroad买断发售",
+          "featured": true
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Xbox大重组与CEO争议言论**\n微软对Xbox完成新一轮整合：裁员268人，Ninja Theory走向关停，Rare、World's Edge与Halo系列开发划归动视，Playground与Turn 10合并，Obsidian改向Bethesda汇报；Gears of War: E-Day叙事总监在发售前两周被裁。CEO纳德拉称'精简令人欣慰'的表态在从业者社群引发强烈反弹。\n\n**小岛秀夫回应Physint风波**\n针对'超支、延期导致索尼放弃发行'的报道，小岛称对索尼无恶意且工作室'健康盈利'；后续报道称Xbox的接盘报价远低于当初索尼收到的4亿美元报价。\n\n**《巫师3》重制版三天后解锁**\n9月29日全球解锁，约45GB免费升级，石之心与血与酒对所有买家免费，评测9月28日解禁。\n\n**独游与AI工具面**\n三周小项目《Dressmaker》冲上Steam畅销第10；反向塔防《Hostile Architect》与海獭治愈冒险《Otterly Lost》热度上行；Scenario开源GameDev OS，Opus 5.5造游戏演示持续刷屏且开始出现开源样本。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

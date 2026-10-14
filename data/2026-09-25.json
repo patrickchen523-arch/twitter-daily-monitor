@@ -1,0 +1,590 @@
+{
+  "date": "2026-09-25",
+  "meta": {
+    "raw_count": 213,
+    "filtered_count": 204,
+    "selected_count": 13,
+    "crawl_time": "2026-09-25"
+  },
+  "lede": "Opus 5.5 单条 prompt 生成可玩 Splatoon 仿作，日英双圈百万级浏览；Xbox 重组落锤，下一款 Halo 交由 Activision 开发；韩国 Next Stage 公布「不开炮」肉弹战车 SLAM TANK，首曝 224 万浏览。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Opus 5.5 单条 prompt 生成可玩 Splatoon 仿作——日英双圈 80 万浏览引爆"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "SLAM TANK：战车不开炮、抡着炮管近战的「肉弹战车」——首曝 224 万浏览"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 1,
+      "hook": "Tim Schafer 谈与 Xbox 分手：战略不合拍，且「行业裁员跌了四年，有人在贪婪」"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Opus 5.5 单条 prompt 生成可玩 Splatoon 仿作\nScenario 开源 GameDev OS：9 专家+64 技能\nTony出海评 Qclaw 停运：Agent 终局比底座"
+    },
+    {
+      "id": "industry",
+      "text": "Xbox 重组：Halo 交由 Activision 开发，268 人被裁\nTim Schafer 谈 Double Fine 独立与行业困境\nDawnwalker 预算 4500 万美元公开\nBungie 免费解封 Destiny 2 老内容\n微软专利：Boss 战后插广告换免打扰时长"
+    },
+    {
+      "id": "indie",
+      "text": "SLAM TANK 首曝：不开炮的肉弹战车\nDressmaker 上线三天 11,600 同接\nWalls Were Built to Fall 愿望单破 1.3 万\n日本开发者「画手足竞速」原型爆红"
+    },
+    {
+      "id": "tools",
+      "text": "Unity 官方 Claude Code 插件上线"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · AI vibe-coding",
+          "tags": [
+            "Opus 5.5",
+            "AI编程",
+            "vibe-coding"
+          ],
+          "featured": true,
+          "title": "Opus 5.5 单条 prompt 生成可玩《Splatoon》仿作，日英社区同日引爆",
+          "en_title": "Opus 5.5 in ONE PROMPT made a full and (nearly) polished Splatoon Game!",
+          "full_text": "Opus 5.5 in ONE PROMPT made a full and (nearly) polished Splatoon Game! \n\nWhat a crazy tome to be alive. https://t.co/tPDnfqByvm",
+          "author": "JaydenDavisNC",
+          "date": "2026-09-23",
+          "likes": 996,
+          "views": 376649,
+          "link": "https://x.com/JaydenDavisNC/status/2102828630615421223",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2102828289442127872/img/fHywahX-bcu2yMdw.jpg",
+            "video_url": "https://x.com/JaydenDavisNC/status/2102828630615421223/video/1"
+          },
+          "summary": "Claude Opus 5.5 用一条 prompt 生成完成度接近成品的《Splatoon》仿作（网页可玩）。同一演示视频在日本大众向账号【悲報】体转帖获 46.9 万浏览、原文推 37.7 万浏览，成为当天 AI 游戏编程圈最大热点。",
+          "analysis": "「AI 一句话做游戏」的传播正在从开发者圈层溢出到普通玩家圈层：同一天还有用 Opus 5.5 复刻《Dynasty Warriors》、24 小时上线 50 款小游戏等案例。玩家侧预期与工具侧能力被同步拉高，开发者需要开始认真回答「我的增量在哪」。",
+          "recommendation": "Opus 5.5 单条 prompt 生成可玩 Splatoon 仿作——日英双圈 80 万浏览引爆"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Scenario · AI工具开源",
+          "tags": [
+            "AI Agent",
+            "开源",
+            "游戏开发工作流"
+          ],
+          "featured": true,
+          "title": "Scenario 开源 GameDev OS：给编码 Agent 配 9 个专家角色和 64 项技能",
+          "en_title": "We just open-sourced an entire game studio. Introducing GameDev OS by Scenario.",
+          "full_text": "We just open-sourced an entire game studio.\n\nIntroducing GameDev OS by Scenario.\n\nIt gives your coding agent 9 specialists and 64 skills.\n\n📁 GameDev OS\n┃\n┣ 📁 2D Artist\n┃ ┣ 📁 Concept Sketches\n┃ ┗ 📁 Sprites and VFX\n┃\n┣ 📁 3D Artist\n┃ ┣ 📁 Image to 3D\n┃ ┗ 📁 Rigging and Retargeting\n┃\n┣ 📁 Environment Artist\n┃ ┣ 📁 Textures and Skyboxes\n┃ ┗ 📁 Walkable 3D Worlds\n┃\n┣ 📁 Art Director\n┃ ┣ 📁 One Character, Every Shot\n┃ ┗ 📁 Quality Check Before It Ships\n┃\n┣ 📁 Sound Designer\n┃ ┣ 📁 Music and Score",
+          "author": "emmanuel_2m",
+          "date": "2026-09-24",
+          "likes": 1479,
+          "views": 70156,
+          "link": "https://x.com/emmanuel_2m/status/2103097017073361137",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103096776446103552/img/9aCsw5tff8jB375O.jpg",
+            "video_url": "https://x.com/emmanuel_2m/status/2103097017073361137/video/1"
+          },
+          "summary": "AI 图像平台 Scenario 开源了 GameDev OS：把「整个游戏工作室」封装成编码 Agent 的技能包，含 2D/3D 美术、环境、技术美术、音效、QA 等 9 个专家角色与 64 项技能目录，推文获 682 条评论热议。",
+          "analysis": "把工作室分工直接编译成 Agent 技能树，是 AI 工作流产品化的新形态——竞争点正从「模型能力」转向「组织知识的结构化封装」。对小团队等于白嫖一整套 AI pipeline；对工具商，护城河正在从模型迁移到 workflow。",
+          "recommendation": "Scenario 开源 GameDev OS：9 专家+64 技能把整个游戏工作室装进编码 Agent"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Tony出海 · 中文KOL观点",
+          "tags": [
+            "AI Agent",
+            "国产大模型",
+            "产品分析"
+          ],
+          "featured": true,
+          "title": "Tony出海评 Qclaw 停运：Agent 产品拼到最后，比的是底座大模型",
+          "en_title": "Qclaw 停运。国内龙虾大战落幕。",
+          "full_text": "Qclaw 停运。国内龙虾大战落幕。\n\n终极还是大模型，如果没有拿得出手的大模型，WorkBuddy 终究也会落幕的。\n\nAgent 产品拼到最后，比的从来不是微信入口、迁移补贴、人格记忆、一键备份——这些都是会过期的体验层。底下没有拿得出手的大模型，壳再厚，也只是租户。\n\n对照一下你真正离不开的工具：\nCursor 火，背后是模型持续变强 + 编辑器绑定工作流\nClaude / GPT 系火，背后是推理上限在抬\nOpenClaw 生态再热闹，也得挂在能调用的强模型上\n\n腾讯手里有混元、有 Hy3、有挤爆的瞬间。问题是：这个瞬间能不能变成半年后的默认选择？用户会不会在模型变弱、配额变贵、竞品放出更强底座时，一秒切走？\n\n对 WorkBuddy 的判断很直白：\n短期，它吃掉 QClaw 的用户和团队的组织动作；\n中期，它靠办公场景和分发还能撑住位置；\n长期，如果没有持续拿得出手的大模型——不是发布会能讲、而是日常任务里让人舍不得换的那种\n——WorkBuddy 也会落幕。只是落幕方式换成「慢慢变平庸」，比今天这种官宣停运更安静。",
+          "author": "tonychuhai",
+          "date": "2026-09-24",
+          "likes": 1,
+          "views": 1072,
+          "link": "https://x.com/tonychuhai/status/2102952717413208238",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HS8vUZubkAA7XSD.png"
+          },
+          "summary": "国内 Agent 产品 Qclaw 宣布停运，Tony出海 判断国内「龙虾大战」落幕：没有拿得出手的底座大模型，微信入口、迁移补贴、人格记忆都是会过期的体验层；并预判接盘的 WorkBuddy 若模型跟不上，也会以「慢慢变平庸」的方式落幕。",
+          "analysis": "观点与全球市场同步：入口和运营只能赢短期，模型能力差距会随时间放大。对照 Cursor、Claude 的路径，Agent 产品的终局竞争力在底座。对国内从业者是一记提醒：先解决模型代差，再谈增长叙事。",
+          "recommendation": "Tony出海评 Qclaw 停运：壳再厚也只是租户，Agent 终局比的是底座大模型"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 行业重组",
+          "tags": [
+            "Xbox",
+            "Activision",
+            "Halo"
+          ],
+          "featured": true,
+          "title": "Xbox 重组落锤：下一款《Halo》由 Activision 开发，Halo Studios 等 268 人被裁",
+          "en_title": "Activision is making the next Halo game.",
+          "full_text": "We're now living in a timeline that would have been impossible to comprehend for a grunt-squashing teen in 2007: Activision is making the next Halo game. https://t.co/CPyxBRaJPV https://t.co/8vpNOUY8rJ",
+          "author": "eurogamer",
+          "date": "2026-09-24",
+          "likes": 17,
+          "views": 4557,
+          "link": "https://x.com/eurogamer/status/2103114784816202003",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HS_DvCuXsAA-ipj.jpg"
+          },
+          "summary": "Xbox 本轮重组裁撤 268 个岗位（含 Halo Studios、其他第一方及 XGS 管理层），下一款 Halo 主线将交由 Activision 新建的专职团队开发，与 CoD 现有开发线分离；Rare、World's Edge 一并划入 Activision，Obsidian 归入 Bethesda，Ninja Theory 走向关闭。粉丝最担心 25 年的 Halo 世界观被推倒重来。",
+          "analysis": "Xbox 在把「少数大 IP 集中运营」执行到底：Halo 离开 343/Halo Studios 主体、由 CoD 母厂接管，第一方组织逻辑正从工作室品牌转向 IP 资产管理。12 月 Halo Fest 是否照办、lore 是否重启是接下来的观察点。多家报道：Eurogamer、Kotaku、AUTOMATON。",
+          "recommendation": "Xbox 重组落锤：下一款 Halo 交由 Activision 开发，Halo Studios 等 268 人被裁"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 行业观点",
+          "tags": [
+            "Double Fine",
+            "Xbox",
+            "行业裁员"
+          ],
+          "featured": true,
+          "title": "Tim Schafer 谈 Double Fine 独立：Xbox 转向大 IP 路线，且「行业低迷四年，有人在贪婪」",
+          "en_title": "\"I assume someone is being greedy somewhere\" - Tim Schafer discusses current game industry woes following Double Fine's split with Xbox",
+          "full_text": "\"I assume someone is being greedy somewhere\" - Tim Schafer discusses current game industry woes following Double Fine's split with Xbox\n\nhttps://t.co/bnluyEXNkV https://t.co/ED5aMTPrsC",
+          "author": "eurogamer",
+          "date": "2026-09-24",
+          "likes": 7,
+          "views": 4626,
+          "link": "https://x.com/eurogamer/status/2103099059204686245",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HS-1b3LXQAAI_ZI.png"
+          },
+          "summary": "Double Fine 与 Xbox 分手转独立后，Schafer 首度公开解释：Xbox 七年前为填 Game Pass 而来、放了 13 款游戏进去，如今战略转向「更少更大的 IP」，与 Double Fine「做很多小 IP」不再合拍，于是好聚好散。对行业困境他说：玩家在玩、钱在赚，裁员却连续下行四年，「我猜一定有人在某个地方贪婪」。",
+          "analysis": "这是 Xbox 重组周里少见的当事人视角：分手主因是 IP 组合策略不兼容，而非产品失败——Schafer 仍然看好 Game Pass 本身。对中型团队，样本结论清晰：大厂收缩期，「多款中小 IP」的商业模式最先被牺牲。",
+          "recommendation": "Tim Schafer 谈与 Xbox 分手：战略不合拍，且「行业裁员跌了四年，有人在贪婪」"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · 预算披露",
+          "tags": [
+            "Rebel Wolves",
+            "预算",
+            "AA级制作"
+          ],
+          "featured": true,
+          "title": "《Dawnwalker》预算 4500 万美元公开：前网易投资人称「在波兰这就是 AAA」",
+          "en_title": "The Blood of Dawnwalker cost less than expected to make but former NetEase investor defends its status as a top-tier production",
+          "full_text": "The Blood of Dawnwalker cost a lot less than expected to make. https://t.co/P1ycvG87Ve https://t.co/bfC4cKvBSo",
+          "author": "eurogamer",
+          "date": "2026-09-24",
+          "likes": 122,
+          "views": 18406,
+          "link": "https://x.com/eurogamer/status/2102933811453436271",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HS8fJCNXYAA03kn.jpg"
+          },
+          "summary": "Rebel Wolves（《巫师3》导演 Konrad Tomaszkiewicz 创立）向彭博披露《The Blood of Dawnwalker》预算 4000 万美元；前网易工作室投资人、董事会成员 Simon Zhu 补充总额 4500 万且 2022 年一次性全额出资——「在波兰，这个预算就是 AAA」。工作室腾讯持股 29%。",
+          "analysis": "4500 万美元做导演级暗黑奇幻 RPG，坐实「波兰系 AA+」路线：压预算、保体量、赌创意结构（无主线任务+时间机制）。对比 007 First Light 传闻 2 亿美元的成本曲线，这条中间路线正成为欧洲新厂标准答案，也是中国资本参与 3A 叙事 RPG 的可复制样本。",
+          "recommendation": "Dawnwalker 预算 4500 万美元公开：前网易投资人背书「在波兰这就是 AAA」"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 运营转向",
+          "tags": [
+            "Bungie",
+            "Destiny 2",
+            "Marathon"
+          ],
+          "title": "Bungie 解封 Destiny 2 老内容，承认 Marathon「未达玩家预期」",
+          "en_title": "Bungie is freeing vaulted Destiny 2 campaigns after Marathon \"did not reach as many players as we had hoped\"",
+          "full_text": "Bungie is freeing vaulted Destiny 2 campaigns after Marathon \"did not reach as many players as we had hoped\". https://t.co/iVHWLzEQe7 https://t.co/C4aZXBA9g1",
+          "author": "eurogamer",
+          "date": "2026-09-24",
+          "likes": 59,
+          "views": 11833,
+          "link": "https://x.com/eurogamer/status/2102994208650846652",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HS9WEnPWoAALQTg.jpg"
+          },
+          "summary": "Bungie 新领导层公开反思「失去了信任、失去了同事、失去了优先级」，宣布未来数月免费解封 Destiny 2 此前入库的战役、地点与突袭（需适配工程）；同时承认 Marathon「未达到我们希望的玩家人数」，12 月推出常驻 PvE 模式和社交空间，并要突破提取射击的品类自我设限。",
+          "analysis": "这是少见的运营型团队公开复盘样本：当「赛季制+品类纯度」失效，回填老内容是最快的内容补充手段——活服务的资产库本身就是可再变现储备。对同类产品，Marathon 的「降门槛+PvE」转向值得跟踪。",
+          "recommendation": "Bungie 承认 Marathon 未达预期，将免费解封 Destiny 2 老战役与突袭"
+        },
+        {
+          "idx": "游戏行业 05",
+          "source": "GameSpot · 专利动态",
+          "tags": [
+            "Microsoft",
+            "广告",
+            "商业模式"
+          ],
+          "title": "微软新专利：游戏可在 Boss 战后等「自然间隙」插广告，观看换免打扰时长",
+          "en_title": "Microsoft filed a patent for a system that could show ads in PC and console games during \"breaks\" the game self-identifies",
+          "full_text": "Microsoft filed a patent for a system that could show ads in PC and console games during \"breaks\" the game self-identifies, such as after a boss fight, cutscene, or completing a quest.\n\nWatching the ad would grant the player \"credit\" which would grant another block of uninterrupted playtime.",
+          "author": "GameSpot",
+          "date": "2026-09-23",
+          "likes": 441,
+          "views": 140389,
+          "link": "https://x.com/GameSpot/status/2102866117110722595",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HS7hkqmWMAAHKDK.jpg"
+          },
+          "summary": "微软为「游戏内广告系统」申请专利：系统自动识别 Boss 战后、过场动画后、任务完成等自然停顿插入广告，玩家观看可获「credit」兑换不被打扰的连续游玩时长。推文获 14 万浏览、308 条评论，社区反应激烈。",
+          "analysis": "专利不等于落地，但方向清晰：主机/PC 生态在试探移动端成熟的「广告换时长」模型。自然间隙的自动识别是这轮专利的技术核心；对 F2P 是潜在新收入层，对买断制玩家则是定价底线的敏感议题。",
+          "recommendation": "微软专利曝光：Boss 战后自动插广告，看完换免打扰游戏时长"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "AUTOMATON · 新游首曝",
+          "tags": [
+            "动作",
+            "载具战斗",
+            "韩国开发"
+          ],
+          "featured": true,
+          "title": "SLAM TANK：韩国 Next Stage 公布「不开炮」的肉弹战车动作游戏",
+          "en_title": "体当たりハイスピードバトル戦車アクション『SLAM TANK』発表",
+          "full_text": "体当たりハイスピードバトル戦車アクション『SLAM TANK』発表。AI機械たちに砲身大回転攻撃、「砲撃なし」の“肉弾戦車”がゆく\nhttps://t.co/0V1bfZamwJ https://t.co/jypoev4D2n",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-24",
+          "likes": 27640,
+          "views": 2243017,
+          "link": "https://x.com/AUTOMATONJapan/status/2103040662526693626",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103040538954137600/img/pQAQ5G6SQG3HQ6Ut.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2103040662526693626/video/1"
+          },
+          "game_ref": "SLAM TANK",
+          "summary": "韩国 Next Stage（前作《Ultra Age》）公布战车动作游戏 SLAM TANK：世界被 AI 接管，玩家操纵战车全程近战——抡炮管横扫、炮管立地旋转鞭击、漂移撞碎集装箱，伤害按「造成财产损失金额」结算。Steam 页已上线，发售日未定，首曝视频 224 万浏览、2.76 万赞。",
+          "recommendation": "SLAM TANK：战车不开炮、抡着炮管近战的「肉弹战车」——首曝 224 万浏览",
+          "enrichment": {
+            "game_name": "SLAM TANK",
+            "genre": "高速动作 / 载具近战",
+            "developer": "Next Stage（韩国，前作 Ultra Age）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5186030/SLAM_TANK/",
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】战车动作游戏，全程放弃炮击、以近战为纲：炮管横抡、炮身大回转鞭击、立起炮管如单足旋转打击， drift 撞击与Boost Pad 加速跳跃穿插其中，Boss 战为竞技场单挑（已公开武装列车 Boss）。伤害不以血条而以「财产损失金额」结算，撞碎集装箱会散落显卡等 PC 零件，是对 AI 统治世界的揶揄。\n【内容结构】工厂、港口、军事设施三类场景推进制，可选 3 台战斗风格各异的战车，支持贴花与外装自定义。\n【开发背景】开发商 Next Stage 为韩国工作室，前作《Ultra Age》以剑技高速动作获得好评，本作延续高速动作基因但换了载具壳。\n【优势】「战车不开炮」的差异化概念一眼可懂；破坏结算的幽默叙事契合当下 AI 议题；视频表现力强。\n【不足】发售日未定，玩法深度与重复可玩性尚待验证。\n【综合】首曝 224 万浏览、2.76 万赞，是本周曝光效率最高的新概念动作游戏，值得加愿望单跟踪。",
+            "why_notable": "首曝即 224 万浏览，「不开炮的战车游戏」概念在载具动作红海里撕开差异化口子"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Niche Gamer · 市场表现",
+          "tags": [
+            "模拟经营",
+            "治愈",
+            "Steam"
+          ],
+          "title": "Dressmaker：治愈系缝纫模拟上线三天，Steam 同接突破 11,600",
+          "en_title": "Cozy sewing sim Dressmaker tops 11,000 concurrent players on Steam",
+          "full_text": "Cozy sewing sim Dressmaker tops 11,000 concurrent players on Steam: https://t.co/D2mVFjNc7G https://t.co/lCM4imrct1",
+          "author": "nichegamer",
+          "date": "2026-09-23",
+          "likes": 80,
+          "views": 7585,
+          "link": "https://x.com/nichegamer/status/2102739686510805210",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2102739655460319232/pu/img/cJmB75MTUnMNi5We.jpg",
+            "video_url": "https://x.com/nichegamer/status/2102739686510805210/video/1"
+          },
+          "game_ref": "Dressmaker",
+          "summary": "治愈系缝纫模拟《Dressmaker》9 月 21 日发售，上线三天 Steam 同接突破 11,600 人，成为本月小成本模拟经营的黑马。",
+          "recommendation": "Dressmaker：治愈缝纫模拟上线三天 11,600 同接——本月模拟经营黑马",
+          "enrichment": {
+            "game_name": "Dressmaker（国区名：针影裁梦）",
+            "genre": "休闲 / 模拟",
+            "developer": "Cozy Lives",
+            "platforms": [
+              "PC",
+              "Mac"
+            ],
+            "price": "¥ 53.10",
+            "release_date": "已发售 · 2026 年 9 月 21 日",
+            "steam_rating": "2353 reviews",
+            "steam_url": "https://store.steampowered.com/app/4019220",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4019220/5e595cd60fb58b5d312be21ba4aa03d4a0131547/header_schinese.jpg?t=1790176022",
+            "youtube_video": null,
+            "description": "在《针影裁梦》的世界，成为一名裁缝吧！选择布料、裁剪制版、缝制各类服装，来满足（或恶搞！）小镇居民。这款温馨的裁缝模拟游戏，灵感源自真实的服装制作工艺。\n\n【核心玩法】以服装裁缝流程为骨架的治愈系模拟：量体、裁剪、缝制、交货，节奏舒缓，主打 cozy 体验。\n【市场表现】2026 年 9 月 21 日上线，三天内 Steam 同时在线突破 11,600 人（Niche Gamer 报道），对一款小体量工艺模拟属于显著超出类目基准的成绩。\n【对标定位】处于《PowerWash Simulator》《Unpacking》所在的「解压劳动模拟」赛道，题材从清洁/整理换成缝纫，受众重叠度高。\n【综合】证明「手工工艺 + cozy 包装」的小成本组合依然有稳定爆款窗口，题材选择比系统深度更决定上限。",
+            "why_notable": "小成本工艺模拟三天破万同接，验证 cozy 手工题材的稳定爆款窗口",
+            "pcu": "11,600（Steam 同接，Niche Gamer 报道）"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Game*Spark · 曝光节点",
+          "tags": [
+            "防御",
+            "roguelite FPS",
+            "像素"
+          ],
+          "title": "Walls Were Built to Fall：百万敌军防御 roguelite FPS，愿望单破 1.3 万",
+          "en_title": "最大100万の軍勢が襲う防衛ローグライトFPS『Walls Were Built to Fall』ウィッシュリスト1.3万越え達成",
+          "full_text": "最大100万の軍勢が襲う防衛ローグライトFPS『Walls Were Built to Fall』ウィッシュリスト1.3万越え達成\nhttps://t.co/EBBf4ZCrAn\n\nドット絵の敵がワラワラ押し寄せる防衛ローグライト―要求スペックは優しめ https://t.co/i5R1tCrYii",
+          "author": "gamespark",
+          "date": "2026-09-24",
+          "likes": 25,
+          "views": 7130,
+          "link": "https://x.com/gamespark/status/2103145076692263218",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2103144961525030912/pu/img/hrfyjXGjfcbcl-q6.jpg",
+            "video_url": "https://x.com/gamespark/status/2103145076692263218/video/1"
+          },
+          "game_ref": "Walls Were Built to Fall",
+          "summary": "像素风防御 roguelite FPS《Walls Were Built to Fall》愿望单突破 1.3 万：最高 100 万敌人同时来袭，配置要求亲民，Steam 页显示预计 2027 年 Q2 发售。",
+          "recommendation": "Walls Were Built to Fall：百万敌军防御 roguelite FPS，愿望单破 1.3 万",
+          "enrichment": {
+            "game_name": "Walls Were Built to Fall",
+            "genre": "动作 / 独立 / 策略",
+            "developer": "Zoomy Cat Games",
+            "platforms": [
+              "PC"
+            ],
+            "price": "未公布",
+            "release_date": "2027 年第二季度",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5182350",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5182350/b1a961533d8946c480c527542f13906c66499bfb/header.jpg?t=1789471173",
+            "youtube_video": null,
+            "description": "Walls Were Built to Fall is an epic scale incremental FPS horde defense roguelite. Build your defenses, draft defenders, discover crazy builds, and hold back millions of enemies.\n\n【核心玩法】第一人称视角守城射击 + roguelite 构筑：像素群敌以最大 100 万的规模同时涌向防线，玩家在波次间构建武器与技能 build。\n【技术特点】百万级同屏敌人但配置要求亲民，走的是渲染与群体模拟的优化路线，类似 Vampire Survivors 的「规模即卖点」策略在 FPS 维度的复刻。\n【市场节点】愿望单 1.3 万达成，预计 2027 年 Q2 发售。\n【综合】「百万敌人」的数字营销点清晰，低配置策略利于主播传播，发售前值得持续跟踪愿望单斜率。",
+            "why_notable": "把 Vampire Survivors 式的「规模奇观」搬到 FPS，低配置要求利于病毒传播"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "X · 病毒式gamedev展示",
+          "tags": [
+            "独立开发",
+            "原型展示",
+            "物理"
+          ],
+          "featured": true,
+          "title": "日本开发者「画出手足去竞速」的自制游戏爆红：163 万浏览 1.8 万赞",
+          "en_title": "手足を描いてレースをするゲームを作りました",
+          "full_text": "手足を描いてレースをするゲームを作りました\n\n#ゲーム制作 #gamedev https://t.co/VM5odwuEC4",
+          "author": "x282665",
+          "date": "2026-09-23",
+          "likes": 18207,
+          "views": 1633679,
+          "link": "https://x.com/x282665/status/2102690824714891657",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2102690703801561088/img/ll7FWwI4V1hum7XW.jpg",
+            "video_url": "https://x.com/x282665/status/2102690824714891657/video/1"
+          },
+          "game_ref": "手足竞速（未命名原型）",
+          "summary": "日本独立开发者 トドネロ 公布自制原型：玩家先「画出手和脚」，再让角色靠这双手脚竞速，物理演算让每局都充满意外，视频获 163 万浏览、1.82 万赞。",
+          "recommendation": "画出手脚去竞速：日本开发者物理原型 163 万浏览——玩具感即传播力",
+          "enrichment": {
+            "game_name": null,
+            "genre": "竞速 / 物理沙盒",
+            "developer": "トドネロ（日本个人开发者）",
+            "platforms": [],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": null,
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】两段式设计：先自由画出手脚形状，再进入竞速关卡，物理引擎决定这副「自定义肢体」如何跑跳摔倒。创作的随机性直接变成节目的不可预测性。\n【传播逻辑】「画什么跑成什么样」天然适配短视频剪辑，163 万浏览是纯自然流量。\n【综合】未命名、未上架，属于原型展示；但它的爆红再次验证「玩家共创输入 + 物理意外输出」的玩具型设计在社媒的传播效率。",
+            "why_notable": "「画手脚→物理竞速」的原型传播效率极高，是玩具感设计的教科书案例"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "unselected": true,
+          "source": "電ファミニコゲーマー",
+          "tags": [
+            "模拟经营",
+            "SCP"
+          ],
+          "title": "SCP 题材模拟经营《SCP Idle》10 月 30 日发售",
+          "en_title": "「SCP財団」の収容・研究施設を運営するゲーム『SCP Idle: SECURE. CONTAIN. PROGRESS.』10月30日に配信決定",
+          "full_text": "「SCP財団」の収容・研究施設を運営するゲーム『SCP Idle: SECURE. CONTAIN. PROGRESS.』10月30日に配信決定\nhttps://t.co/SD1nSgbZNv\n\nさまざまなオブジェクトを研究しながら施設を拡張・アップグレードさせていく。作中には「SCP-049」「SCP-087」「SCP-294」「SCP-999」などが登場 https://t.co/tThp7c3Gml",
+          "author": "denfaminicogame",
+          "date": "2026-09-24",
+          "likes": 1766,
+          "views": 147775,
+          "link": "https://x.com/denfaminicogame/status/2103040130596630539",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2103040106319998976/pu/img/Nfyfj-GMrw3Vz9-q.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2103040130596630539/video/1"
+          },
+          "summary": "运营 SCP 基金会收容与研究设施的模拟游戏，SCP-049、SCP-087 等经典对象登场，10 月 30 日发售。",
+          "recommendation": "SCP Idle：收容所模拟经营，10 月 30 日发售"
+        },
+        {
+          "idx": "新游参考 02",
+          "unselected": true,
+          "source": "AUTOMATON",
+          "tags": [
+            "解谜",
+            "逃脱"
+          ],
+          "title": "「违规即死」逃脱游戏《絶対遵守》10 月 16 日发售",
+          "en_title": "「禁止事項を破ると死ぬ」脱出ゲーム『絶対遵守』10月16日リリースへ",
+          "full_text": "「禁止事項を破ると死ぬ」脱出ゲーム『絶対遵守』10月16日リリースへ。\"何があっても\"規則は絶対。見るな、触れるな、止まるな\nhttps://t.co/0aDK3sMPj8 https://t.co/nerSj0mdif",
+          "author": "AUTOMATONJapan",
+          "date": "2026-09-24",
+          "likes": 161,
+          "views": 44027,
+          "link": "https://x.com/AUTOMATONJapan/status/2103113461089947973",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HS_CrpuXAAAJnIa.jpg"
+          },
+          "summary": "以「违反禁令就会死」为规则的逃脱游戏：不看、不碰、不停下，规则绝对遵守。10 月 16 日发售。",
+          "recommendation": "絶対遵守：违规即死的规则系逃脱游戏，10 月 16 日发售"
+        },
+        {
+          "idx": "新游参考 03",
+          "unselected": true,
+          "source": "Next Indie",
+          "tags": [
+            "模拟经营",
+            "交通"
+          ],
+          "title": "俯视角修路交通模拟《Trafficity》11 月 16 日登陆 PC",
+          "en_title": "Top-down road-building and traffic sim game 'Trafficity' announced.",
+          "full_text": "Top-down road-building and traffic sim game 'Trafficity' announced.\n\nComing to PC on November 16.\n\nSteam page: https://t.co/i3BosUv8An https://t.co/BrEDqovu2H",
+          "author": "nexindie",
+          "date": "2026-09-23",
+          "likes": 599,
+          "views": 31461,
+          "link": "https://x.com/nexindie/status/2102767442959163409",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2102761406932111360/img/M8YIx9LVzF2WHn5O.jpg",
+            "video_url": "https://x.com/nexindie/status/2102767442959163409/video/1"
+          },
+          "summary": "俯视角修路+交通流模拟，11 月 16 日发售，Steam 页已上线。",
+          "recommendation": "Trafficity：俯视角修路交通模拟，11 月 16 日发售"
+        },
+        {
+          "idx": "新游参考 04",
+          "unselected": true,
+          "source": "Niche Gamer",
+          "tags": [
+            "生存恐怖",
+            "建筑美学"
+          ],
+          "title": "《Land of Nowhere》：下沉粗野主义高塔里的生存恐怖",
+          "en_title": "Land of Nowhere is a survival horror game set in a sinking brutalist tower with concrete monsters",
+          "full_text": "Land of Nowhere is a survival horror game set in a sinking brutalist tower with concrete monsters: https://t.co/JvL9tHbGls https://t.co/ZLNxZTdzOR",
+          "author": "nichegamer",
+          "date": "2026-09-24",
+          "likes": 12,
+          "views": 1282,
+          "link": "https://x.com/nichegamer/status/2103108286245380505",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2103108224366891008/pu/img/A1c19owcDZBTnWlr.jpg",
+            "video_url": "https://x.com/nichegamer/status/2103108286245380505/video/1"
+          },
+          "summary": "设定在不断下沉的粗野主义混凝土高塔中的生存恐怖游戏，敌人由混凝土构成，视觉风格罕见。",
+          "recommendation": "Land of Nowhere：粗野主义高塔生存恐怖，美术辨识度极高"
+        },
+        {
+          "idx": "新游参考 05",
+          "unselected": true,
+          "source": "X · 开发者自宣",
+          "tags": [
+            "解谜",
+            "已发售"
+          ],
+          "title": "《Doggy Don't Care》已登陆 Steam：扮演小狗捣乱解谜",
+          "en_title": "Doggy Don't Care is out now on Steam!",
+          "full_text": "Doggy Don't Care is out now on Steam! 🐶\n\nUnleash adorable chaos, solve puzzles, leave your mark (literally!), and earn all the mischievous badges by being naughty\n\nI hope you enjoy it! https://t.co/qAgipWddxy\n\n#doggydontcare #indiegames https://t.co/HNlvCyfLnp",
+          "author": "rotub",
+          "date": "2026-09-24",
+          "likes": 122,
+          "views": 6279,
+          "link": "https://x.com/rotub/status/2103106885188743429",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2103102341385949184/img/NbKYzJbGAwl_tWho.jpg",
+            "video_url": "https://x.com/rotub/status/2103106885188743429/video/1"
+          },
+          "summary": "扮演淘气小狗的解谜游戏正式发售：拆家、做标记、收集淘气徽章，开发者 rotub 自宣上线。",
+          "recommendation": "Doggy Don't Care：扮演小狗合法拆家，现已发售"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity官方 · AI工作流",
+          "tags": [
+            "Unity",
+            "Claude Code",
+            "AI编程"
+          ],
+          "title": "Unity 官方 Claude Code 插件上线，官方教程同步发布",
+          "en_title": "Now that the official Unity plugin is live, here is a quick guide on how to set it up and actually use it in your workflow.",
+          "full_text": "Ready to see Claude Code and Unity in action? 🛠️✨\n\nNow that the official Unity plugin is live, here is a quick guide on how to set it up and actually use it in your workflow. \n\n🔗 Get started: https://t.co/0jvAJ3V9ak https://t.co/pYaGTZPq1i",
+          "author": "unitygames",
+          "date": "2026-09-23",
+          "likes": 169,
+          "views": 14415,
+          "link": "https://x.com/unitygames/status/2102799051137699954",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2102798979310247936/pu/img/zihqV-gTNv_bUocm.jpg",
+            "video_url": "https://x.com/unitygames/status/2102799051137699954/video/1"
+          },
+          "summary": "Unity for Games 官宣 Claude Code 官方插件正式上线，并发布安装设置与工作流实战教程视频——引擎厂商开始为 AI 编码 Agent 铺设官方管道。",
+          "analysis": "引擎官方亲自背书 Agent 工作流，等于承认「Agent 驱动开发」是主流生产方式；同期 Unity 6.6 还在推进 Content Directories 等底层资源管线改造，工具链与 AI 双线并进是 Unity 止颓的关键动作。中小团队应尽快把「引擎内 Agent 协作」纳入 pipeline 评估。",
+          "recommendation": "Unity 官方 Claude Code 插件上线，引擎厂商开始给 AI Agent 铺官方管道"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Xbox 重组周收尾：Halo 归 Activision，Schafer 发声**\nXbox 本轮重组裁撤 268 个岗位，下一款《Halo》将交由 Activision 新建团队开发，Obsidian 并入 Bethesda，Ninja Theory 走向关闭；Double Fine 的 Tim Schafer 首度回应分手原因，并直言行业裁员已连续四年下行。\n\n**AI 做游戏从演示变成日常**\nClaude Opus 5.5 用一条 prompt 生成接近成品的《Splatoon》仿作，日英社区合计百万级浏览；Scenario 开源 GameDev OS，把 9 个工种、64 项技能打包给编码 Agent；Unity 官方 Claude Code 插件同日上线。\n\n**新游与数据点**\n韩国 Next Stage 公布「不开炮」战车动作游戏《SLAM TANK》，首曝 224 万浏览；治愈缝纫模拟《Dressmaker》上线三天同接破 1.1 万；《Dawnwalker》公开 4500 万美元预算。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

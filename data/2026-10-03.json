@@ -1,0 +1,430 @@
+{
+  "date": "2026-10-03",
+  "meta": {
+    "raw_count": 325,
+    "filtered_count": 196,
+    "selected_count": 12,
+    "crawl_time": "2026-10-03 21:10"
+  },
+  "lede": "Steam 年收入将首破 200 亿美元；Halo 传重启移交动视 Sledgehammer；AI 融合两款游戏的模组成社区新浪潮；法国独游 Invokyr 试玩版破百万下载后定档抢先体验。",
+  "editors_pick": [
+    { "section_id": "ai", "item_index": 0, "hook": "模组圈用 AI 融合两款游戏：蜘蛛侠进阿卡姆骑士保留荡蛛丝——单条视频 157 万播放" },
+    { "section_id": "industry", "item_index": 1, "hook": "曝动视重启 Halo：Sledgehammer 已出原型并转用 IW 引擎，士官长起源或成主线" },
+    { "section_id": "indie", "item_index": 0, "hook": "Invokyr 抢先体验定档 10 月 8 日：6 人合作诅咒桌游恐怖，试玩版下载破 100 万" }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "模组圈用 AI 融合两款游戏成风：蜘蛛侠进阿卡姆骑士、我的世界进艾尔登法环（NikTek）\n开发者让 Claude 造出专属跳跃动画编辑器，前后对比效果显著（trq212）\n“超级智能”si 域名成交价出炉：最高约 3.4 万美元（Tony出海）"
+    },
+    {
+      "id": "industry",
+      "text": "Steam 全年收入将首破 200 亿美元：前三季度 165 亿同比增 13%（PC Gamer/Alinea）\n曝动视重启 Halo：Sledgehammer 已出原型、转用 IW 引擎，Slipstream 引擎死亡（Eurogamer）\n美光 CEO：内存缺货恶化到 2028 年，AI 数据中心挤占消费级产能（RPS）\n曝顽皮狗开发全新神秘海域：非重制，失落的遗产总监执导（Eurogamer）"
+    },
+    {
+      "id": "indie",
+      "text": "Invokyr 10 月 8 日抢先体验：6 人合作诅咒桌游恐怖，试玩版下载破 100 万、好评 94%（電ファミ）\nFree Lives 发行的裁缝模拟 Dressmaker 成 cozy 黑马：社区连脚踏板都接上了（delty/PC Gamer）\n整理水豚玩具店 10 月 8 日发售：4800 只玩偶 240 种分类、4 人合作，中国团队开发（Fami通）"
+    },
+    {
+      "id": "tools",
+      "text": "Unity 官方插件登陆 Grok Build：继 Claude Code、Codex 后第三个 AI 代理获得 30+ 官方技能（Unity）\n单份 prompt 生成 95% 程序化像素生物引擎：Godot+C# 纯代码产出 9 大生物族谱（jurlycat）"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "NikTek · 原创观察",
+          "tags": ["AI模组", "游戏融合", "UGC", "IP合规"],
+          "featured": true,
+          "title": "AI模组融合浪潮爆发：蜘蛛侠“穿越”进阿卡姆骑士，我的世界塞进艾尔登法环",
+          "en_title": "Modders are now using AI to fuse two games together",
+          "full_text": "This is by far the most insane event that has happened to modding world that I have ever seen\n\nModders are now using AI to fuse two games together, in this instance here Marvel Spider-Man is thrown into Batman Arkham Knight with full web swinging mechanics\n\nAt this point I won't be surprised if somehow modders manage to fuse two games together like Red Dead Redemption 2 with Witcher 3 or GTA 5 with Cyberpunk 2077 and so on.\n\nSo far there have been working mods like Minecraft inside of Elden Ring...",
+          "author": "NikTek",
+          "date": "2026-10-02",
+          "likes": 4889,
+          "views": 157480,
+          "link": "https://x.com/NikTek/status/2106015141099643239",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2105931140368658432/img/ojcpQJDfSPz-CmOW.jpg",
+            "video_url": "https://x.com/NikTek/status/2106015141099643239/video/1"
+          },
+          "summary": "模组圈掀起“AI 融合两款游戏”风潮：蜘蛛侠被植入《蝙蝠侠：阿卡姆骑士》且保留完整荡蛛丝机制，此前已有《我的世界》进入《艾尔登法环》等案例。NikTek 称这是他见过最疯狂的模组事件，预言 RDR2×巫师3、GTA5×赛博朋克2077 这类组合也会出现。同日 chasm（284 万播放）与 Theyoungpixel（135 万播放，Claude 将我的世界移植进 RDR2）的展示视频互相印证，已成一股浪潮。",
+          "analysis": "过去游戏融合需要逆向工程级别的手工移植，AI 正在把“两个游戏行为对齐”的成本压到个人爱好者一晚上能完成的量级。对从业者：一方面是 UGC 玩法创新的下一个爆发口，另一方面是 IP 边界与平台合规的新灰色地带——当融合作品可以病毒式传播，版权方“默许还是打击”的决策会被提前摆上桌。",
+          "recommendation": "模组圈用 AI 融合两款游戏：蜘蛛侠进阿卡姆骑士保留荡蛛丝，我的世界进艾尔登法环"
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "trq212 · 开发者实践",
+          "tags": ["AI辅助开发", "动画工具", "独立开发"],
+          "title": "让 Claude 顺手做了个跳跃动画编辑器：独立开发者的 AI 辅助调动画工作流",
+          "en_title": "I asked Claude to make an animation editor where we could iterate on the jump",
+          "full_text": "Been trying to up the level of quality in animation in my game prototype, so been getting Claude to teach me & find references.\n\nI asked Claude to make an animation editor where we could iterate on the jump, I'm really happy with how it came out.\n\nHere's a side-by-side video",
+          "author": "trq212",
+          "date": "2026-10-02",
+          "likes": 2384,
+          "views": 114191,
+          "link": "https://x.com/trq212/status/2105849295580889208",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2105848647225393152/img/DVjuwHNw3sgGbKrF.jpg",
+            "video_url": "https://x.com/trq212/status/2105849295580889208/video/1"
+          },
+          "summary": "独立开发者 Thariq 让 Claude 先教他动画知识、找参考，再生成一个专门迭代跳跃手感的动画编辑器，并用前后对比视频展示成品效果。AI 在这里不是直接“生成游戏”，而是充当动画教练与工具作者的双重角色。",
+          "analysis": "这条代表了 AI 辅助开发最实用的模式：不是让 AI 替你做内容，而是让它把你最需要的“领域工具”当场造出来。小团队可以把这类一次性编辑器当作常规生产力，动画调优的迭代成本显著下降。",
+          "recommendation": "开发者让 Claude 边教动画边造出专属跳跃编辑器，前后对比效果显著"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Tony出海 · 原创整理",
+          "tags": ["AI行业", "域名市场", "中文KOL"],
+          "title": "“超级智能”si 域名成交价出炉：最高约 3.4 万美元，AI 公司开始抢注概念域名",
+          "en_title": "卧槽，最新的 si 超级智能域名市场成交价格出来了",
+          "full_text": "卧槽，最新的 si 超级智能域名市场成交价格出来了\n\nhttps://t.co/Zz2QFlH34F：约 3.4 万美元\nhttps://t.co/lTKseC9XU2：2 万美元\nhttps://t.co/pHhoxD0qck：2 万美元（终端买家是做超级智能的 AI 公司 Recursive）\nhttps://t.co/dQYSoAyfJ7：1.89 万美元\nhttps://t.co/3dAhts7gA8：约 1.7 万美元（2026年9月底）\nhttps://t.co/hqa8LakXX8：约 1.74 万美元\nhttps://t.co/3tYQxPPHiG：约 1.49 万美元\nhttps://t.co/xUvNydtolx：1.25 万美元\n \n$13,602 Love.si\n$8,895 Alpha.si\n$6,801 Betting.si\n$5,441 Books.si\n$5,441 Coins.si\n$5,469 Wealth.si\n$5,441 Project.si\n$5,475 BQ.si\n$5,458 Models.si\n$5,006 Crispy.ai\n$3,9...",
+          "author": "tonychuhai",
+          "date": "2026-10-02",
+          "likes": 3,
+          "views": 1030,
+          "link": "https://x.com/tonychuhai/status/2106027018928431417",
+          "media": null,
+          "summary": "中文 KOL Tony出海 整理了 .si（“超级智能”superintelligence 缩写）域名近期市场成交价：最高约 3.4 万美元，多枚 1-2 万美元成交，买家包括 AI 公司 Recursive（2 万美元购入）；Love.si、Alpha.si 等通用词域名落在 5 千-1.4 万美元区间。他另发帖称 11 美元即可在 Hostinger 注册 si 域名。",
+          "analysis": "域名市场是 AI 叙事热度的另类温度计：当“超级智能”成为行业口号，小国域名 .si 被当成概念标的炒作。对从业者的直接意义有限，但可视为观察 AI 概念外溢到投机市场的信号，中文 KOL 原创整理加分。",
+          "recommendation": "“超级智能”si 域名成交价最高约 3.4 万美元，AI 公司 Recursive 2 万美元抢注"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "PC Gamer · 报道",
+          "tags": ["Steam", "市场数据", "PC平台"],
+          "featured": true,
+          "title": "Steam 2026 年收入将首破 200 亿美元：9 月单月 17 亿创纪录，前三季度 165 亿同比增 13%",
+          "en_title": "After a record-breaking September, 'Steam's yearly revenue will blow past $20B for the first time'",
+          "full_text": "After a record-breaking September, 'Steam's yearly revenue will blow past $20B for the first time' https://t.co/olN2yn9nMk",
+          "author": "pcgamer",
+          "date": "2026-10-02",
+          "likes": 249,
+          "views": 30290,
+          "link": "https://x.com/pcgamer/status/2105854333703401866",
+          "media": null,
+          "summary": "据 Alinea Analytics 估算，Steam 2026 年 9 月收入 17 亿美元，为史上最佳 9 月（同比 +13%）；Q3 收入 55 亿美元（+12%），前三季度累计 165 亿美元（去年同期 145 亿）。9 月新游中 Wardogs 以 8690 万美元领跑，Onimusha: Way of the Sword（3040 万）、The Blood of Dawnwalker（2690 万）、Bodycam（2420 万）跟进。分析师判断全年将首破 200 亿美元。",
+          "analysis": "PC 平台大盘连续两年双位数增长，增长主力是长尾老游戏销售与新爆款的组合。对发行商的含义：Steam 的流量与付费深度仍在扩张期，而年末新作扎堆（分析师称发行表“insane”）意味着档期竞争更惨烈，错峰发行的价值进一步上升。",
+          "recommendation": "Steam 前三季度收入 165 亿美元同比增 13%，全年将首破 200 亿——9 月单月 17 亿创纪录"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 报道",
+          "tags": ["Halo", "动视暴雪", "微软", "IP重启"],
+          "featured": true,
+          "title": "曝动视正考虑重启 Halo：Sledgehammer 团队已出原型，或讲士官长起源故事",
+          "en_title": "Halo's new steward Activision reportedly considering rebooting the series",
+          "full_text": "Halo's new steward Activision reportedly considering rebooting the series, with a team in Sledgehammer Games leading the charge\n\nhttps://t.co/Iw17FIDny2 https://t.co/8aewLn4l5H",
+          "author": "eurogamer",
+          "date": "2026-10-02",
+          "likes": 25,
+          "views": 6168,
+          "link": "https://x.com/eurogamer/status/2106010089832505666",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HToNAuxWEAAoHX9.jpg"
+          },
+          "summary": "据 Halo 圈内人 Rebs Gaming，动视接手 Halo 后曾提出“F2P 多人＋纯战役”两款游戏的方案，后改为单作打包；战役原型是不接续《无限》剧情但不推翻正典的软重启，可能探索士官长起源。Sledgehammer 内的团队已在 Infinity Ward 引擎上完成基础机制原型——这意味着 Halo 将放弃 UE5 与 Halo Studios 的自研 Slipstream 引擎（后者随工作室实质关停而终结）。前作 Halo: Campaign Evolved 口碑不错但销量乏力，首两周流水约 6700 万美元。",
+          "analysis": "微软把旗舰 IP 交给 COD 体系，是用工业化产能换 IP 复兴的豪赌：IW 引擎的多人基建成熟，但 Halo 的手感、载具与叙事传统和 COD 模板差异很大。对行业观察者，这是“工作室关停→IP 迁徙→引擎统一”三连的典型案例，Slipstream 之死也说明自研引擎在新管理层手中的生存空间越来越小。多家报道：Eurogamer、GameSpot、Polygon、TheGamer。",
+          "recommendation": "曝动视重启 Halo：Sledgehammer 已出原型并转用 IW 引擎，士官长起源或成主线"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Rock Paper Shotgun · 报道",
+          "tags": ["硬件", "内存", "AI算力", "供应链"],
+          "featured": true,
+          "title": "美光 CEO：内存缺货将恶化到 2028 年，明年价格“高得多”——AI 数据中心挤占消费级产能",
+          "en_title": "RAM shortages are only getting worse and will last until at least 2028",
+          "full_text": "RAM shortages are only getting worse and will last until at least 2028, Micron boss declares from atop a mountain of money https://t.co/ULS5U0RXTv",
+          "author": "rockpapershot",
+          "date": "2026-10-02",
+          "likes": 6,
+          "views": 1524,
+          "link": "https://x.com/rockpapershot/status/2106024015156421071",
+          "media": null,
+          "summary": "美光 CEO Sanjay Mehrotra 在财报会上确认：2027、2028 两年内存需求都将超过供给，且紧缺程度高于 2026，明年买家将支付“高得多的价格”；美光 2027 年产能已基本售罄。三星、SK 海力士、美光三大厂把产能转向 AI 数据中心，消费级内存被挤压，三者还因涉嫌联合抬价面临美国集体诉讼。同日“RAM 比黄金贵”的梗图视频在 X 上获得 276 万播放。",
+          "analysis": "对游戏行业这是真实的成本传导：整机与掌机物料上涨会压制玩家换机周期，主机与显卡的定价空间也被内存吃掉，开发侧需要关注玩家硬件分布的变化。更结构性的信号是——存储三大厂已无动力回头服务消费市场，缺货不是周期波动，而是 AI 需求带来的长期再分配。",
+          "recommendation": "美光 CEO 确认内存缺货持续到 2028 年且明年更紧——AI 数据中心挤占消费级产能"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 报道",
+          "tags": ["顽皮狗", "神秘海域", "索尼"],
+          "title": "曝顽皮狗已在开发全新《神秘海域》：非重制，《失落的遗产》总监执导",
+          "en_title": "New Uncharted game reportedly in the works at Naughty Dog, and it's not a remake",
+          "full_text": "Uncharted series developer Naughty Dog is reportedly early in development on a new game in the action-adventure series. https://t.co/YFvrGwxKo5 https://t.co/poZnbWnarf",
+          "author": "eurogamer",
+          "date": "2026-10-02",
+          "likes": 14,
+          "views": 3816,
+          "link": "https://x.com/eurogamer/status/2106028988804006080",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HToeMBeXAAAghVm.jpg"
+          },
+          "summary": "据 MP1st，顽皮狗正早期开发一款全新神秘海域作品（非重制），由《失落的遗产》总监 Shaun Escayag 执导，业内人 NateTheHate 佐证；德雷克会“以某种形式”回归但未必是主角，也可能是 U4 结局登场的女儿 Cassie 的故事。项目将等《Intergalactic: The Heretic Prophet》发售后全力推进，后者官宣 2027 年正式公开，因此新作短期内见不到。",
+          "analysis": "索尼第一方的 IP 复活节奏很清晰：先靠剧与重制维持热度，再在主力项目间隙排新作。值得留意的是顽皮狗的排产方式——一个 3A 在研加一个早期储备双线滚动，正在成为大厂规避产品空窗期的标准姿势。",
+          "recommendation": "曝顽皮狗开发全新神秘海域：非重制、失落的遗产总监执导，短期难见面世"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "電ファミニコゲーマー · 报道",
+          "tags": ["合作恐怖", "骰子桌游", "抢先体验"],
+          "featured": true,
+          "game_ref": "Invokyr",
+          "title": "Invokyr：法国 20 人团队诅咒桌游恐怖游戏，10 月 8 日抢先体验——试玩版下载破 100 万",
+          "en_title": "『インボキア-呪いのダイスゲーム-』10月8日に早期アクセスを開始へ",
+          "full_text": "【最大6人】“呪われたボードゲーム”を遊ぶホラーゲーム『インボキア-呪いのダイスゲーム-』10月8日に早期アクセスを開始へ\nhttps://t.co/iK48N3iHp2\n\nダイスを振るたび命がけのチャレンジがプレイヤーを襲う。体験版のダウンロード数は100万件を突破し、レビューは「非常に好評」",
+          "author": "denfaminicogame",
+          "date": "2026-10-02",
+          "likes": 2966,
+          "views": 329111,
+          "link": "https://x.com/denfaminicogame/status/2105856004638568947",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105855971725815808/pu/img/f4r8iQws4A9Fypzv.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2105856004638568947/video/1"
+          },
+          "summary": "法国独立团队 Ludogram（约 20 人，里尔）开发的 6 人在线合作生存恐怖《Invokyr》（日版名インボキア，中文名《勇敢者之试炼》）官宣 10 月 8 日登陆 Steam 抢先体验，定价 1200 日元，松竹游戏以联合发行身份参与。试玩版自 6 月上线以来下载破 100 万，1306 条评价好评率 94%（特别好评）。玩家进入被诅咒的桌游棋盘，掷骰触发 15 种以上怪物与 20 种以上事件，靠 12 种以上特殊骰子与诅咒雕像求生逃脱。",
+          "analysis": "“桌游被诅咒”的包装把房间逃杀的社交恐惧转译成桌面规则，6 人合作加骰子随机性天然适配主播场景——100 万试玩下载主要靠内容创作者生态滚起来。发行侧值得注意的是松竹这类日本影视公司开始系统性地做全球独游联合发行。",
+          "recommendation": "Invokyr 抢先体验定档 10 月 8 日：6 人合作诅咒桌游恐怖，试玩版下载破 100 万",
+          "enrichment": {
+            "game_name": "Invokyr",
+            "genre": "合作生存恐怖 / 骰子桌游 / 多人在线",
+            "developer": "Ludogram（法国独立团队，约 20 人）",
+            "platforms": ["Steam"],
+            "price": "1200 日元（约 ¥57）",
+            "release_date": "2026年10月8日",
+            "steam_rating": "试玩版 94% 好评（1306 条，特别好评）",
+            "steam_url": "https://store.steampowered.com/app/3883570/Invokyr/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3883570/c86d8cb1aac903b8c45497c7255fea0ee64f30b2/header_schinese.jpg?t=1790887779",
+            "youtube_video": null,
+            "description": "【核心玩法】6 人在线合作生存恐怖：玩家被“游戏主宰”拖入一盒被诅咒的 70 年代桌游，在宅邸迷宫中掷骰前行，每次掷骰都会触发致命挑战。地图内藏 15 种以上怪物与 20 种以上事件，玩家要搜刮房间寻找一次性特殊骰子（治疗、隐匿、反制猎杀者等 12 种以上），配合赋予特殊能力的诅咒雕像与可购买道具求生。走到终点即可争取逃出生天，强力能力永远伴随高风险。\n【美术与氛围】写实系恐怖渲染，场景涵盖丛林、雪山、巨型玩具箱等多重异世界秘境；核心恐怖来源是“被注视感”——一位俏皮而刻薄的 GM 时刻围观玩家的一举一动。\n【对标定位】社区常拿它与《Lethal Company》《Phasmophobia》一系合作恐怖对比，差异点在于用桌游与骰子规则给随机性一个“桌面仪式感”的皮，随机事件由规则驱动而非脚本驱动。\n【优势】6 人规模在合作恐怖里偏高，社交传播面大；试玩版 100 万下载加 94% 好评验证了核心循环；骰子构筑带来的复玩性结构清晰。\n【不足】抢先体验阶段内容深度待验证；高随机性对不熟悉桌游的玩家可能有挫败感；恐怖向题材受众偏窄。\n【综合】2026 年 10 月最值得关注的合作恐怖独游之一，日区发行由松竹加持，中文名《勇敢者之试炼》已上线 Steam 页面。",
+            "why_notable": "试玩版 100 万下载加 94% 好评的 6 人合作恐怖，验证了“桌游规则化随机”的差异化包装；松竹联合发行是日本影视公司做全球独游发行的新样本",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "delty · 玩家实况（PC Gamer 专题佐证）",
+          "tags": ["cozy模拟", "UGC创作", "工艺模拟"],
+          "game_ref": "Dressmaker",
+          "title": "Dressmaker：Free Lives 发行的裁缝模拟成 2026 cozy 黑马——社区连脚踏板都接上了",
+          "en_title": "YOU CAN REMAP A FOOT PEDAL FOR THE DRESSMAKER GAME???",
+          "full_text": "YOU CAN REMAP A FOOT PEDAL FOR THE DRESSMAKER GAME??? https://t.co/f4OTCRmxuW",
+          "author": "DeltyThe73rd",
+          "date": "2026-10-02",
+          "likes": 70322,
+          "views": 2381740,
+          "link": "https://x.com/DeltyThe73rd/status/2105912221687762983",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2105912195330793472/img/Nkn5ceKLWoLxr_o2.jpg",
+            "video_url": "https://x.com/DeltyThe73rd/status/2105912221687762983/video/1"
+          },
+          "summary": "Free Lives 发行的裁缝模拟游戏《Dressmaker》9 月 21 日发售，正成为 2026 年最火的 cozy 游戏之一：玩家手绘裙样、挑选丝绸蕾丝棉麻天鹅绒面料、排版裁剪再缝合。社区已产出梵高星空礼服、《原神》至冬女皇、FF14 埃梅特赛尔克等高仿作品，甚至有人给游戏接上可自定义映射的脚踏板（本条视频 238 万播放、7 万点赞）。PC Gamer 专题称其为“在利基题材上 all-in 的典范”，Steam 现有约 7650 条评价。",
+          "analysis": "“缝合”题材的天花板被证明极高：把真实手艺的工序感（画样→裁剪→缝纫）做成核心循环，作品天然适合晒图传播，形成 cozy 玩法加创作展示的双引擎。发行商 Free Lives（Broforce 团队）的选品眼光再次得到验证——小题材加深工序模拟是他们一贯的切口。",
+          "recommendation": "Dressmaker（Free Lives 发行）成 cozy 黑马：玩家连脚踏板都接上了——单条视频 238 万播放",
+          "enrichment": {
+            "game_name": "Dressmaker",
+            "genre": "休闲模拟 / 裁缝工艺 / cozy",
+            "developer": "Cozy Lives",
+            "publisher": "Free Lives",
+            "platforms": ["Steam", "Mac"],
+            "price": "$14.99（约 ¥108）",
+            "release_date": "已发售 · 2026年9月21日",
+            "steam_rating": "约 7,650 条评价；Screenhub 五星：“原创设计的胜利”",
+            "steam_url": "https://store.steampowered.com/app/4019220/Dressmaker/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4019220/f1cd08127872e60e4c47a4bc3e40d682d94741bf/header.jpg?t=1790947386",
+            "youtube_video": null,
+            "description": "【核心玩法】全流程裁缝模拟：先在速写本设计裙装（裙型、袖型、领口自由组合），为每个衣片挑选棉、麻、丝绸、天鹅绒等面料，再排版裁剪纸样（直纹与斜裁影响成品垂坠），过缝纫机缝合，最后钉扣、加蝴蝶结与蕾丝贴花。承接小镇居民的定制订单（舞会、晚宴各有预算与偏好），也可在橱窗卖现货。\n【美术与氛围】低饱和手绘风加拟真工序交互，无限梭芯的复古缝纫机是记忆点；还有一只可以撸的猫。\n【对标定位】《Unpacking》《A Little to the Left》一系的 cozy 治愈品类，但工序深度更接近工艺模拟：每个步骤都有真实世界对应，创作自由度接近一块 3D 画布。\n【优势】UGC 属性极强——玩家作品（梵高星空裙、原神至冬女皇、FF14 埃梅特赛尔克还原）在 X 上自发病毒传播；无时限压力，支持无障碍外设（脚踏板可自定义映射）。\n【不足】题材受众明确偏 cozy 向；长线内容厚度待验证；缝合手感的上手曲线对新玩家偏陡。\n【综合】2026 年 cozy 品类的口碑黑马：利基手艺加创作展示的教科书案例，Screenhub 五星评价“原创设计的胜利”。",
+            "why_notable": "发售两周即成 cozy 品类黑马：真实裁缝工序模拟加 UGC 晒图传播双引擎，社区创造力成为免费增长飞轮",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Fami通 · 报道",
+          "tags": ["整理模拟", "合作", "治愈"],
+          "game_ref": "Sort The Capybaras",
+          "title": "Sort The Capybaras：中国团队开发，整理 4800 只水豚玩偶的治愈模拟 10 月 8 日 Steam 发售",
+          "en_title": "『カピバラを整理しよう！』4800体のカワイイぬいぐるみをひたすらお片付け",
+          "full_text": "『カピバラを整理しよう！』4800体のカワイイぬいぐるみをひたすらお片付け。整理整頓シミュが10月8日にSteamで発売\nhttps://t.co/NoNwvSJ753\n\nフルーツや恐竜などをテーマにした240種類のカピバラが登場。正しい棚に並べて稼いだお金で効率アップの能力もゲットできる。最大4人協力プレイにも対応。",
+          "author": "famitsu",
+          "date": "2026-10-02",
+          "likes": 1520,
+          "views": 149538,
+          "link": "https://x.com/famitsu/status/2105929185982329160",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105929126867841024/pu/img/X5TXNs0RDikiSpa5.jpg",
+            "video_url": "https://x.com/famitsu/status/2105929185982329160/video/1"
+          },
+          "summary": "《Sort The Capybaras》（中文名整理水豚玩具店）官宣 10 月 8 日登陆 Steam：玩家在乱成一团的水豚玩具店里把 4800 只毛绒玩偶按 240 种主题（水果、恐龙等）分类上架，赚到的钱可升级同类高亮、批量拾取、自动标记货架等能力，支持最多 4 人在线合作。开发者 CapybaraKoala 为中国团队（Steam 页面挂官方 QQ 群），已做全语言本地化并获 Fami通报道。",
+          "analysis": "“整理系”正在成为继高压水枪清洗后的下一批量品类——同日 AUTOMATON 报道两款同名 Backrooms 收纳游戏撞车，可见赛道拥挤。4800 只玩偶加数值化“爽感升级”的设计，本质是把收纳劳动改造成挂机式进步曲线，4 人合作又给了联机理由，品类公式已经非常成熟。",
+          "recommendation": "整理水豚玩具店 10 月 8 日发售：4800 只玩偶 240 种分类、4 人合作，中国团队开发",
+          "enrichment": {
+            "game_name": "Sort The Capybaras",
+            "genre": "休闲整理模拟 / 合作 / cozy",
+            "developer": "CapybaraKoala（中国团队）",
+            "platforms": ["Steam"],
+            "price": "未公布",
+            "release_date": "2026年10月8日",
+            "steam_rating": "未发售（暂无评价）",
+            "steam_url": "https://store.steampowered.com/app/5130480/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5130480/c8e0940b68f3839499ec31cf696ae2049f8c5221/header_schinese.jpg?t=1790671848",
+            "youtube_video": null,
+            "description": "【核心玩法】整理模拟：店内散落 4800 只水豚毛绒玩偶，玩家捡起、辨认其主题类型（水果、恐龙等 240 种），放上正确货架即得金钱。金钱用于升级整理能力：同类高亮、增加携带量、自动标记货架、一键吸附全场同类等，整理效率随升级指数级提升，最终从混乱收拾到井井有条。\n【美术与氛围】明亮治愈的玩具店场景，圆滚滚的水豚造型是核心卖点；无失败惩罚，随时保存，按自己的节奏游玩。\n【对标定位】PowerWash Simulator、Unpacking 一系“劳动即治愈”品类；同日 AUTOMATON 报道两款同名 Backrooms 收纳游戏撞车，显示该赛道正在批量进场。\n【优势】4800 只的规模感把数量反馈做足；4 人在线合作适配直播与好友联机；中国团队主动做日语全本地化并获 Fami通报道，海外市场意识清晰。\n【不足】玩法循环偏单一，长线留存依赖升级曲线设计；品类同质化风险高。\n【综合】“整理系”批量爆发期的标准打法样本：题材治愈、规模爽感、合作传播三件套，10 月 8 日发售。",
+            "why_notable": "“整理系”品类批量爆发的代表样本：4800 只玩偶的规模爽感加 4 人合作传播设计，中国小团队瞄准日本市场反向输出",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": null
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "Indie Game Joe · 推荐",
+          "unselected": true,
+          "title": "Pool of Madness：打台球召唤克苏鲁怪物的恐怖独游",
+          "en_title": "These indie devs are making a lovecraftian horror game where playing pool summons monsters",
+          "full_text": "These indie devs are making a lovecraftian horror game where playing pool summons monsters\n\n- Switch between your cue and your gun\n- Upgrade your cue with parts you find\n- Then hunt down the monster you summoned\n\nGame is Pool of Madness",
+          "author": "IndieGameJoe",
+          "date": "2026-10-01",
+          "likes": 284,
+          "views": 13605,
+          "link": "https://x.com/IndieGameJoe/status/2105652796594745814",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2105652050017083393/img/_TN9p7Sg0yn6WiPw.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2105652796594745814/video/1"
+          },
+          "summary": "台球与射击双武器切换的 Lovecraft 恐怖：打一杆球召唤怪物，再扛枪猎杀它；球杆可用搜刮到的零件升级。",
+          "recommendation": "Pool of Madness：打台球召唤怪物再猎杀它的 Lovecraft 恐怖玩法"
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Niche Gamer · 报道",
+          "unselected": true,
+          "title": "Fat Goblins：《肥肥公主》精神续作确认 11 月发售",
+          "en_title": "Fat Princess spiritual successor Fat Goblins launches next month!",
+          "full_text": "Fat Princess spiritual successor Fat Goblins launches next month! https://t.co/QYarZRSnyB https://t.co/otWZ0XBwV8",
+          "author": "nichegamer",
+          "date": "2026-10-01",
+          "likes": 122,
+          "views": 6157,
+          "link": "https://x.com/nichegamer/status/2105662504617541981",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105662452771790848/pu/img/2pA8UDtguoQSaSMg.jpg",
+            "video_url": "https://x.com/nichegamer/status/2105662504617541981/video/1"
+          },
+          "summary": "Fat Princess 精神续作《Fat Goblins》确认下月发售，抢公主、喂胖、推回据点的阵营对抗玩法回归。",
+          "recommendation": "Fat Goblins：肥肥公主精神续作确认 11 月发售"
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Niche Gamer · 报道",
+          "unselected": true,
+          "title": "Moadra：风格化科幻银河恶魔城本月发售",
+          "en_title": "Stylish sci-fi metroidvania Moadra launches this month",
+          "full_text": "Stylish sci-fi metroidvania Moadra launches this month: https://t.co/2LWrmFkjvw https://t.co/a5jvZoRB75",
+          "author": "nichegamer",
+          "date": "2026-10-02",
+          "likes": 41,
+          "views": 4577,
+          "link": "https://x.com/nichegamer/status/2105824068419133801",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105824045941903360/pu/img/sWddbTudMQMIZoMe.jpg",
+            "video_url": "https://x.com/nichegamer/status/2105824068419133801/video/1"
+          },
+          "summary": "Niche Gamer 报道：风格化科幻银河恶魔城 Moadra 于 10 月内发售。",
+          "recommendation": "Moadra：风格化科幻银河恶魔城本月登陆 Steam"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity for Games · 官方发布",
+          "tags": ["Unity", "AI编程", "开发工具", "Agent"],
+          "featured": true,
+          "title": "Unity 官方插件登陆 Grok Build：继 Claude Code、Codex 后第三个 AI 编程代理获得官方技能包",
+          "en_title": "Introducing the official Unity plugin for Grok Build",
+          "full_text": "Introducing the official Unity plugin for Grok Build - bringing our engineering guidance directly to your terminal in our continued effort to meet you where you work.\n\nUnlock 30+ Unity skills covering UI Toolkit, Shader Graph, multiplayer, physics, and more with nothing to configure by hand.\n\nOne install, no manual setup, built by Unity.\n\n🔗 Get started: https://t.co/u1DHKS3ASY",
+          "author": "unitygames",
+          "date": "2026-10-01",
+          "likes": 363,
+          "views": 53175,
+          "link": "https://x.com/unitygames/status/2105689813961540050",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2105689791593414656/pu/img/9gT6Hyo3brApqf58.jpg",
+            "video_url": "https://x.com/unitygames/status/2105689813961540050/video/1"
+          },
+          "summary": "Unity 官方宣布 Grok Build 插件上线——继 Claude Code、Codex 之后第三个获得官方 30+ 技能包的 AI 编程代理，覆盖 UI Toolkit 与 uGUI、2D 与 Tilemap、URP 与 Shader Graph、音频、寻路物理、IAP、多人、Web、本地化等，三条插件由同一仓库维护同步更新。Unity 官方观察是游戏开发越来越多“从终端里已打开的 agent 开始”，并将于 10 月公布 CLI 与插件使用数据（8 月 Codex 已达 1500 万活跃用户，Claude Code 仍是最广泛使用的 AI 编程代理）。",
+          "analysis": "引擎厂商亲自下场给 AI 编程代理喂官方上下文，等于承认 agent 正在成为游戏开发的默认入口。对团队的实际影响：官方技能包抹平了“AI 不懂引擎版本特性”的坑，多代理同源维护意味着换模型不换知识库，工具链选型成本进一步下降，中小团队用 agent 起项目的门槛实质消失。",
+          "recommendation": "Unity 官方插件登陆 Grok Build：30+ 技能包覆盖三大 AI 代理，10 月将公布使用数据"
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "jurlycat · 开发者实践",
+          "tags": ["Claude Code", "程序化生成", "Godot", "像素艺术"],
+          "title": "一份 prompt 生成 95% 的程序化像素生物引擎：Claude Code + Godot，9 大生物族谱",
+          "en_title": "Claude Code built roughly 95% of this procedural pixel creature engine from a single detailed prompt",
+          "full_text": "Claude Code built roughly 95% of this procedural pixel creature engine from a single detailed prompt.\n\nNo premade sprites. No AI-generated textures. Just Godot, C#, and code generating body plans, rigs, animations, mutations, and pixel art across 9 creature families.\n\nThe prompt wasn't a vibe. It was an engineering spec.\n\nCheck the repo in the comments.",
+          "author": "jurlycat",
+          "date": "2026-10-02",
+          "likes": 362,
+          "views": 15935,
+          "link": "https://x.com/jurlycat/status/2105840535835758712",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2105840355346407425/img/XQ1WdjzT2ofhyRFQ.jpg",
+            "video_url": "https://x.com/jurlycat/status/2105840535835758712/video/1"
+          },
+          "summary": "开发者 Jurly 用一份工程规格书级别的详细 prompt，让 Claude Code 生成了约 95% 的程序化像素生物引擎：不依赖预制素材、不用 AI 生图，纯靠 Godot 与 C# 代码生成体型结构、骨骼绑定、动画、突变与像素画，覆盖 9 个生物族谱。作者强调“prompt 不是氛围，是工程规格”，仓库已在评论区开放。",
+          "analysis": "与 AI 生图贴皮路线相对，这条展示的是代码生成式程序化内容：AI 产出的是可维护的生成系统而非素材本身，理论上可无限扩展生物变体。对 roguelike 与怪物图鉴类项目是直接可借鉴的管线，也再次验证规格化 prompt 是决定 AI 代码质量的关键变量。",
+          "recommendation": "单份 prompt 生成 95% 程序化像素生物引擎：Godot+C# 纯代码产出 9 大生物族谱"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**Steam 大盘再创纪录，全年收入将首破 200 亿美元**\nAlinea Analytics 估算 Steam 9 月收入 17 亿美元创史上最佳 9 月，前三季度 165 亿美元同比增 13%，全年首破 200 亿几无悬念——年末档期密集，错峰发行价值上升。\n\n**微软旗舰 IP 大挪移：Halo 传重启移交动视**\nEurogamer 援引内部消息称 Sledgehammer 团队已在 IW 引擎上做出 Halo 新作原型，战役方向或是士官长起源的软重启；Halo 自研 Slipstream 引擎随 Halo Studios 关停宣告死亡。\n\n**AI 同时改写“玩什么”与“怎么做”**\n模组圈掀起 AI 融合两款游戏浪潮（蜘蛛侠×阿卡姆骑士、我的世界×艾尔登法环）；Unity 给 Grok Build、Claude Code、Codex 三大 AI 代理配齐官方技能包。\n\n**独游两极：恐怖合作与治愈整理同时爆发**\n法国团队 Invokyr（6 人合作诅咒桌游恐怖）试玩版破百万下载后定档 10 月 8 日；Free Lives 发行的裁缝模拟 Dressmaker 与整理水豚玩具店代表的 cozy 整理系同步走热。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}

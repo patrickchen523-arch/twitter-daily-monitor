@@ -7,7 +7,7 @@ const { chromium } = require('G:/教理问答/教理问答/node_modules/playwrig
   await p.goto('http://localhost:8899/', { waitUntil: 'networkidle' });
   await p.evaluate(() => switchView('launched'));
   await p.waitForTimeout(600);
-  await p.evaluate(() => loadLaunchedDate('2026-09-14'));
+  await p.evaluate(() => loadLaunchedDate('2026-10-14'));
   await p.waitForTimeout(1200);
   const info = await p.evaluate(() => {
     const el = document.querySelector('.ld-watch-wrap');
