@@ -474,6 +474,23 @@ body.editorial-mode #content,body.editorial-mode #dailySummary,body.editorial-mo
 .tw-week-btn{min-height:40px;padding:0 18px;border:1px solid rgba(60,43,39,.14);border-radius:8px;background:#fff;color:#3c2b27;font-size:13px;font-weight:900;cursor:pointer;box-shadow:0 5px 14px rgba(91,52,46,.05);transition:all .2s ease}
 .tw-week-btn:hover{border-color:rgba(135,48,38,.42);transform:translateY(-1px)}
 .tw-week-btn.on{border-color:#C63C2F;background:#C63C2F;color:#fff;box-shadow:0 10px 22px rgba(198,60,47,.2)}
+/* 周期下拉选择器(推特周报/Roblox周报共用) */
+.wk-select{position:relative;display:inline-block;text-align:left}
+.wk-select-btn{display:flex;align-items:center;gap:10px;min-height:44px;padding:6px 16px;border:1px solid rgba(60,43,39,.14);border-radius:10px;background:#fff;color:#3c2b27;font-size:13px;font-weight:900;cursor:pointer;box-shadow:0 5px 14px rgba(91,52,46,.05);font-family:inherit}
+.wk-select-btn:hover{border-color:rgba(135,48,38,.42)}
+.wk-select-cur{display:flex;align-items:baseline;gap:8px}
+.wk-select-cur b{font-size:14px}
+.wk-select-cur i{font-style:normal;color:#8b7169;font-size:12px;font-weight:800}
+.wk-select-arrow{width:8px;height:8px;border-right:2px solid #8b7169;border-bottom:2px solid #8b7169;transform:rotate(45deg) translateY(-2px);transition:transform .2s ease}
+.wk-select.open .wk-select-arrow{transform:rotate(225deg) translateY(-1px)}
+.wk-select-panel{display:none;position:absolute;top:calc(100% + 8px);right:0;min-width:230px;max-height:430px;overflow-y:auto;background:#fff;border:1px solid rgba(60,43,39,.1);border-radius:14px;box-shadow:0 18px 44px rgba(60,43,39,.16);padding:8px;z-index:60}
+.wk-select.open .wk-select-panel{display:block}
+.wk-select-item{padding:10px 14px;border-radius:10px;cursor:pointer;line-height:1.4}
+.wk-select-item b{display:block;font-size:14px;color:#3c2b27}
+.wk-select-item i{display:block;font-style:normal;font-size:11px;color:#a4938b;font-weight:700;margin-top:2px}
+.wk-select-item:hover{background:#f6efe9}
+.wk-select-item.on{background:#e9f1fd}
+.wk-select-item.on b,.wk-select-item.on i{color:#2e6bd9}
 .tw-week-report{padding:34px 7vw 92px}
 .tw-week-report-inner{max-width:1220px;margin:0 auto}
 .tw-week-loading,.tw-week-error{max-width:1220px;margin:0 auto;padding:52px 28px;border:1px dashed rgba(135,48,38,.24);background:#fffaf4;color:#8b7169;text-align:center;font-size:14px;font-weight:900}
@@ -856,6 +873,8 @@ const robloxReportCache = new Map();
 let activeRobloxReportIndex = -1;
 let twitterWeeklyData = null;
 let activeTwitterWeeklyIndex = -1;
+let twWeekItems = [];
+let robloxWeekItems = [];
 let globalSearchToken = 0;
 let globalSearchTimer = null;
 let isGlobalSearchMode = false;
@@ -915,9 +934,13 @@ function switchView(view) {
 function renderRoblox() {
   document.getElementById('robloxEditorialNav').innerHTML = `<nav class="ed-top-nav" aria-label="日报与周报导航">${renderEditorialTopNav()}</nav>`;
   const container = document.getElementById('robloxWeeks');
-  container.innerHTML = robloxReports.map((r, i) =>
-    `<button class="roblox-week-btn ${i === robloxReports.length - 1 ? 'on' : ''}" onclick="loadRoblox(${i})">${r.label}</button>`
-  ).join('');
+  robloxWeekItems = robloxReports.map(r => {
+    const m = r.file.match(/roblox-(\d{4})-(\d{2})-(\d{2})-to-(\d{2})-(\d{2})/);
+    if (!m) return { start: new Date(2026, 0, 1), end: new Date(2026, 0, 1) };
+    const y = +m[1], ey = +m[4] < +m[2] ? y + 1 : y;
+    return { start: new Date(y, +m[2] - 1, +m[3]), end: new Date(ey, +m[4] - 1, +m[5]) };
+  });
+  container.innerHTML = renderWeekSelect('robloxWeekSelect', robloxWeekItems, robloxReports.length - 1, 'loadRoblox');
   loadRoblox(robloxReports.length - 1);
   setTimeout(scrollEditorialActiveNavIntoView, 30);
 }
@@ -926,7 +949,7 @@ async function loadRoblox(idx) {
   const report = robloxReports[idx];
   const host = document.getElementById('robloxReportHost');
   activeRobloxReportIndex = idx;
-  document.querySelectorAll('.roblox-week-btn').forEach((b, i) => b.classList.toggle('on', i === idx));
+  wkSelectSync('robloxWeekSelect', robloxWeekItems, idx);
   host.innerHTML = '<div class="roblox-loading">周报加载中...</div>';
   try {
     const html = await fetchRobloxReport(report.file);
@@ -1864,6 +1887,50 @@ function renderEditorialContentShell() {
     </main>
   </div>`;
 }
+// === 周期下拉选择器(推特周报/Roblox周报共用) ===
+const WK_CN = ['一', '二', '三', '四', '五', '六'];
+// items: [{start:Date, end:Date}]; 标题 = 周中点所在月·该月内第N周(按日期升序数, 与数组顺序无关)
+function wkWeekTitles(items) {
+  const counts = {};
+  const titles = new Array(items.length);
+  items.map((it, i) => ({ it, i })).sort((a, b) => a.it.start - b.it.start).forEach(({ it, i }) => {
+    const mid = new Date((it.start.getTime() + it.end.getTime()) / 2);
+    const m = mid.getMonth() + 1;
+    counts[m] = (counts[m] || 0) + 1;
+    titles[i] = m + '月·第' + WK_CN[Math.min(counts[m], 6) - 1] + '周';
+  });
+  return titles;
+}
+const wkFmt = d => (d.getMonth() + 1) + '.' + String(d.getDate()).padStart(2, '0');
+const wkRange = it => wkFmt(it.start) + '–' + wkFmt(it.end);
+function renderWeekSelect(id, items, activeIdx, handlerName) {
+  const titles = wkWeekTitles(items);
+  const opts = items.map((it, i) => ({ it, title: titles[i], idx: i })).sort((a, b) => b.it.start - a.it.start);
+  return `<div class="wk-select" id="${id}">
+    <button type="button" class="wk-select-btn" onclick="wkSelectToggle(event,'${id}')" aria-haspopup="listbox">
+      <span class="wk-select-cur"><b>${titles[activeIdx]}</b><i>${wkRange(items[activeIdx])}</i></span>
+      <span class="wk-select-arrow"></span>
+    </button>
+    <div class="wk-select-panel" role="listbox">${opts.map(o =>
+      `<div class="wk-select-item ${o.idx === activeIdx ? 'on' : ''}" data-idx="${o.idx}" role="option" onclick="${handlerName}(${o.idx})"><b>${o.title}</b><i>${wkRange(o.it)}</i></div>`).join('')}</div>
+  </div>`;
+}
+function wkSelectSync(id, items, activeIdx) {
+  const el = document.getElementById(id);
+  if (!el || !items[activeIdx]) return;
+  el.querySelector('.wk-select-cur').innerHTML = `<b>${wkWeekTitles(items)[activeIdx]}</b><i>${wkRange(items[activeIdx])}</i>`;
+  el.querySelectorAll('.wk-select-item').forEach(o => o.classList.toggle('on', Number(o.dataset.idx) === activeIdx));
+  el.classList.remove('open');
+}
+function wkSelectToggle(e, id) {
+  e.stopPropagation();
+  const el = document.getElementById(id);
+  const willOpen = el && !el.classList.contains('open');
+  document.querySelectorAll('.wk-select.open').forEach(o => o.classList.remove('open'));
+  if (willOpen) el.classList.add('open');
+}
+document.addEventListener('click', () => document.querySelectorAll('.wk-select.open').forEach(o => o.classList.remove('open')));
+
 async function renderTwitterWeekly() {
   const buttons = document.getElementById('twitterWeekButtons');
   const host = document.getElementById('twitterWeeklyHost');
@@ -1881,9 +1948,13 @@ async function renderTwitterWeekly() {
     const initialIndex = twitterWeeklyReturnPending
       ? Math.max(0, Math.min(reports.length - 1, twitterWeeklyReturnIndex))
       : reports.length - 1;
-    buttons.innerHTML = reports.map((report, idx) =>
-      '<button type="button" class="tw-week-btn ' + (idx === initialIndex ? 'on' : '') + '" onclick="setTwitterWeeklyReport(' + idx + ')">' + escapeHtml(report.label) + '</button>'
-    ).join('');
+    twWeekItems = reports.map(r => {
+      const m = (r.range || '').match(/(\d{4})\.(\d{2})\.(\d{2})\s*[—–-]\s*(\d{2})\.(\d{2})/);
+      if (!m) return { start: new Date(2026, 0, 1), end: new Date(2026, 0, 1) };
+      const y = +m[1], ey = +m[4] < +m[2] ? y + 1 : y;
+      return { start: new Date(y, +m[2] - 1, +m[3]), end: new Date(ey, +m[4] - 1, +m[5]) };
+    });
+    buttons.innerHTML = renderWeekSelect('twWeekSelect', twWeekItems, initialIndex, 'setTwitterWeeklyReport');
     setTwitterWeeklyReport(initialIndex);
   } catch (e) {
     host.innerHTML = '<div class="tw-week-error">推特周报加载失败<br><small>' + escapeHtml(e.message) + '</small></div>';
@@ -1898,7 +1969,7 @@ function setTwitterWeeklyReport(index) {
   const shouldRestoreWeekly = twitterWeeklyReturnPending && twitterWeeklyReturnIndex === index;
   const weeklyReturnScrollY = twitterWeeklyReturnScrollY;
   activeTwitterWeeklyIndex = index;
-  document.querySelectorAll('.tw-week-btn').forEach((button, idx) => button.classList.toggle('on', idx === index));
+  wkSelectSync('twWeekSelect', twWeekItems, index);
   host.innerHTML = renderTwitterWeeklyReport(report);
   window.scrollTo({
     top: shouldRestoreWeekly ? weeklyReturnScrollY : 0,
