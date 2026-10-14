@@ -324,6 +324,18 @@ const dayDiff = iso => Math.floor((new Date(REF_DATE) - new Date(iso)) / 8640000
 
 const MATURE_PATH = path.join(__dirname, '..', 'data', 'launched', 'bili-mature.json');
 const MATURE = fs.existsSync(MATURE_PATH) ? JSON.parse(fs.readFileSync(MATURE_PATH, 'utf8')) : {};
+// 自动沉底标灰: 上线超1年(以档期日期为准) 或 网易系; 人工名单优先('是'强制沉底, '否'豁免)
+const NETEASE = new Set([
+  '逆水寒', '第五人格', '阴阳师', '明日之后', '蛋仔派对', '永劫无间', '梦幻西游',
+  '新大话西游3', '大话西游', '率土之滨', '哈利波特：魔法觉醒', '巅峰极速', '七日世界',
+  '燕云十六声', '无限大', '射雕', '倩女幽魂', '一梦江湖', '天下3', '光·遇',
+  '超凡先锋', '萤火突击', '时空中的绘旅人', '决战平安京', '忘川风华录', '猫和老鼠',
+  '实况足球', '全明星街球派对', '破碎之地', '界外狂潮', '漫威争锋', '梦幻西游三维版'
+]);
+const autoMatureOf = (name, rel) =>
+  (rel && rel !== '9999-12-31' && dayDiff(rel) > 365 ? '上线超1年' : '') ||
+  (NETEASE.has(name) ? '网易系' : '');
+const autoMatured = [];
 const HISTORY_PATH = path.join(__dirname, '..', 'data', 'launched', 'bili-history.json');
 const HISTORY = fs.existsSync(HISTORY_PATH) ? JSON.parse(fs.readFileSync(HISTORY_PATH, 'utf8')) : {};
 const prevDates = Object.keys(HISTORY).filter(d => d < REF_DATE).sort();
@@ -369,7 +381,9 @@ for (const g of gameList) {
 for (const g of gameList) {
   const rel = await resolveReleaseDate(g.name);
   g.release = rel;
-  g.mature = MATURE[g.name] === '是';
+  if (MATURE[g.name] === '是') g.mature = true;
+  else if (MATURE[g.name] === '否') g.mature = false;
+  else { const why = autoMatureOf(g.name, rel); g.mature = !!why; if (why) autoMatured.push(`${g.name}(${why}${rel && rel !== '9999-12-31' ? ' ' + rel : ''})`); }
   g.freshScore = freshScoreOf(rel);
   g.fresh = rel ? (rel === '9999-12-31' || dayDiff(rel) <= 7) : false; // 图章"新"= 近7天上线/公布
   const mv = moveScoreOf(g.name, g.rank);
@@ -379,6 +393,7 @@ for (const g of gameList) {
   g.score = g.heatScore + g.freshScore + g.moveScore;
   if (!rel) console.log('  未知上线时间(新鲜度0):', g.name);
 }
+if (autoMatured.length) console.log('自动沉底标灰:', autoMatured.join(' / '));
 gameList.sort((a, b) => {
   if (a.mature !== b.mature) return a.mature ? 1 : -1;
   if (a.mature) return a.rank - b.rank;
@@ -399,7 +414,7 @@ if (unreleased.length) {
   launched.watch = launched.watch || { featured: [], calendar: [] };
   launched.watch.featured = launched.watch.featured || [];
   for (const g of unreleased) {
-    if (MATURE[g.name] === '是') continue; // 成熟/网易游戏不进观测区
+    if (g.mature) continue; // 成熟/网易游戏(含自动判定)不进观测区
     if (!launched.watch.featured.some(w => w.name === g.name)) {
       launched.watch.featured.push({
         name: g.name,
