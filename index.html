@@ -2920,10 +2920,10 @@ function renderLaunchedContent() {
   const host = document.getElementById('launchedContent');
   const boards = d.boards || [];
   const watch = d.watch || {};
-  // 大背景取今日推荐最大卡(picks[0])的游戏: 优先 picks[].bg 实机截图(与卡片 header 不同图), 兜底 library_hero; 都无则不留背景
+  // 大背景取今日推荐最大卡(picks[0])的游戏: 优先 picks[].bg 实机截图(与卡片 header 不同图), 其次 Steam library_hero, 兜底封面图(推特等非Steam来源); 都无则不留背景
   const feat = (d.picks || [])[0] || null;
   const featApp = feat && /store\.steampowered\.com\/app\/(\d+)/.exec(feat.link || '');
-  const heroBg = (feat && feat.bg) || (featApp ? `https://cdn.cloudflare.steamstatic.com/steam/apps/${featApp[1]}/library_hero.jpg` : '');
+  const heroBg = (feat && feat.bg) || (featApp ? `https://cdn.cloudflare.steamstatic.com/steam/apps/${featApp[1]}/library_hero.jpg` : '') || (feat && feat.cover) || '';
   const prevScroller = host.querySelector('.ed-control-dates');
   const prevLeft = prevScroller ? prevScroller.scrollLeft : 0;
   host.innerHTML = `
