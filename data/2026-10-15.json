@@ -1,0 +1,461 @@
+{
+  "date": "2026-10-15",
+  "meta": {
+    "raw_count": 240,
+    "filtered_count": 202,
+    "selected_count": 16,
+    "crawl_time": "2026-10-15"
+  },
+  "lede": "Fish Audio 开源 TTS 模型 Drama 3，支持逐词控制语气音色（1077万浏览）；育碧关闭《特技摩托》工作室 RedLynx 并再裁新加坡团队 70 人；Xbox 与 Epic 同日把生成式 AI 推上台面。",
+  "editors_pick": [
+    { "section_id": "ai", "item_index": 0, "hook": "Fish Audio 开源 TTS 模型 Drama 3，支持逐词控制语气音色——$52M 种子轮、1500万用户" },
+    { "section_id": "industry", "item_index": 0, "hook": "育碧关闭《特技摩托》工作室 RedLynx（影响52岗），黑旗 Resynced 新加坡团队裁70人——后者两周卖了350万" },
+    { "section_id": "indie", "item_index": 0, "hook": "Bocary Studios《Link Loop》：带水流体物理的 2D Portal，50+谜题＋关卡编辑器＋联机合作" }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Fish Audio 开源 TTS 模型 Drama 3，支持逐词控制语气音色，$52M 种子轮、1500 万用户。\nUnity/Unreal 接入 Claude Code：15 个开源仓库，单会话可编排 49 个 Agent。\n一人 16 天用 Opus 5.5+Tripo+Blender 做出 3D《小王子》，分工正被重写。"
+    },
+    {
+      "id": "industry",
+      "text": "育碧关闭《特技摩托》工作室 RedLynx，新加坡《黑旗》团队再裁员 70 人。\nXbox 成立 Xbox Labs 探索生成式 AI 做游戏，通稿却回避提 AI。\nEpic 承认用 AI vibe coding 重写启动器并叫板 Steam。\n报道称 GTA 6 PC 版计划 2027 年 Q1 发售。"
+    },
+    {
+      "id": "indie",
+      "text": "《Link Loop》：带水流体物理的 2D Portal，支持联机与关卡编辑器。\n《Trash Day》：6 人扮浣熊合作搬垃圾的物理游戏，已发售。\n《Modulink》：把背部模块拼成电路的动作 Roguelite。"
+    },
+    {
+      "id": "tools",
+      "text": "免费 3D 绘画工具《ドパ描き》发布，直接在模型/UV 上矢量作画。\nUnity 6.6 默认启用新版 Hierarchy 窗口。"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Fish Audio · 官方发布",
+          "tags": ["AI语音", "开源模型", "融资"],
+          "title": "Fish Audio 发布开源 TTS 模型 Drama 3，$52M 种子轮、1500 万用户",
+          "en_title": "Introducing Drama 3: the most emotive and controllable TTS model in the world — and yes, it's open-weight",
+          "full_text": "$52M seed round. 15M+ users. But this is what we're most proud of yet.\n\nIntroducing Drama 3: the most emotive and controllable TTS model in the world\n\nAnd yes, it's open-weight.\n\nYou can now control how even a single word should sound, change its tone, and shift your voice mid-sentence.\n\nUncle Roger was impressed too.\n\nTry it here:\n\nhttps://t.co/4nbz4sQ4yy\n\nComment “DRAMA” within the next 48 hours for 1 month free.",
+          "author": "FishAudio",
+          "date": "2026-10-13",
+          "likes": 15252,
+          "views": 10776605,
+          "link": "https://x.com/FishAudio/status/2110038429199450126",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110025935231881216/img/fNY7jOw1DG7Lc8D1.jpg",
+            "video_url": "https://x.com/FishAudio/status/2110038429199450126"
+          },
+          "summary": "Fish Audio 发布新一代 TTS 模型 Drama 3，称其为“全球最具表现力、最可控”的语音合成模型并开放权重；公司同时披露已完成 5200 万美元种子轮融资、用户超 1500 万。新模型支持对单个词的语气、音色做逐字控制，并可在句中途切换声音。",
+          "analysis": "语音合成正从“能读”走向“能演”，逐词级的情绪与音色控制意味着游戏配音、NPC 对话和本地化可以按句甚至按词生成，压缩传统配音与音频制作的排期与成本。开源权重叠加 1500 万用户体量，也让中小团队有机会拿到接近商业级的配音能力。",
+          "recommendation": "Fish Audio 开源 TTS 模型 Drama 3，支持逐词控制语气音色——$52M 种子轮、1500 万用户",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Mnilax · 开发者分享",
+          "tags": ["AI编程", "Unity", "Claude Code"],
+          "title": "Unity 与 Unreal 接入 Claude Code，15 个开源仓库把 Opus 5.5 变成“整间游戏工作室”",
+          "en_title": "Unity just opened their game engines to Claude Code — 15 github repos that turn Opus 5.5 into a full game studio",
+          "full_text": "it's f*cking gold\n\nUnity just opened their game engines to Claude Code\n\n15 github repos that turn Opus 5.5 into a full game studio:\n\nRUN THE WHOLE STUDIO\n\n01. Claude-Code-Game-Studios:\nhttps://t.co/ZNGkmi6uJH\n-> 49 agents from creative director to QA tester, all in one Claude Code session\n\nBUILD IN UNREAL ENGINE\n\n02. UnrealClaude:\nhttps://t.co/W2hmOL8kcc\n-> Claude Code docked in the Unreal Editor, 20+ tools for actors, Blueprints and levels\n\n03. Unreal_mcp:\nhttps://t.co/m76Bhwm7Uc",
+          "author": "Mnilax",
+          "date": "2026-10-13",
+          "likes": 2192,
+          "views": 129194,
+          "link": "https://x.com/Mnilax/status/2110039818524660135",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110036967203250176/img/EwilOYfneKAzK_xr.jpg",
+            "video_url": "https://x.com/Mnilax/status/2110039818524660135"
+          },
+          "summary": "开发者整理出 15 个 GitHub 仓库，把 Claude Code（搭配 Opus 5.5）接进 Unity 与 Unreal 工作流：其中 Claude-Code-Game-Studios 可在单次会话中编排 49 个角色 Agent（从创意总监到 QA），UnrealClaude 把 Claude Code 嵌进 Unreal 编辑器并暴露 20 多个操作 Actor、蓝图与关卡的接口。",
+          "analysis": "AI 编程工具正从“写脚本”深入到“接管引擎”，把引擎 API 变成 Agent 可调用的工具。这会显著降低原型与小型项目的实施门槛，但也意味着围绕工具链整合能力（而非单纯代码产能）将成为新的竞争点。",
+          "recommendation": "Unity/Unreal 接入 Claude Code：15 个开源仓库，单会话可编排 49 个 Agent 完成从立项到 QA",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Tony出海 · 中文 KOL 原创",
+          "tags": ["AI游戏开发", "3D", "工作流"],
+          "title": "一人 16 天用 Opus 5.5 做出可探索 3D《小王子》，中文博主拆解“人机分工”新形态",
+          "en_title": "用 Opus 5.5 将小王子的故事制作成了3D剧情游戏，这画质牛逼",
+          "full_text": "用 Opus 5.5 将小王子的故事制作成了3D剧情游戏，这画质牛逼 。\n\n一个人，16 天，把《小王子》做成了一款可探索的 3D 剧情游戏。放在以前，这是一个小型游戏工作室几个月的排期。\n\n@Saccc_c 昨天发的这条，24 小时不到就有 169 万曝光、8099 赞、4464 收藏。收藏数是点赞的一半多，说明大家不只是围观，而是想抄作业。\n\n他的组合很简单：\n一是 Opus 5.5 负责主导开发和叙事落地；\n二是 Tripo 生成 3D 资产；\n三是 Blender 做场景整合。\n最后，小王子故事里的每一颗星球都变成了能走进去的 3D 场景。\n\n我觉得真正值得看的不是“AI 能做游戏”，而是分工变了。",
+          "author": "tonychuhai",
+          "date": "2026-10-14",
+          "likes": 15,
+          "views": 1890,
+          "link": "https://x.com/tonychuhai/status/2110178902090129440",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2109941568253927424/img/mZUBc3N5H9TqmjEJ.jpg",
+            "video_url": "https://x.com/tonychuhai/status/2110178902090129440"
+          },
+          "summary": "中文博主 Tony出海 复盘一位开发者用 Opus 5.5（主导开发与叙事）+ Tripo（生成 3D 资产）+ Blender（场景整合），在 16 天内做出可探索的《小王子》3D 剧情游戏，原帖 24 小时内获 169 万曝光、4464 收藏。作者指出真正的变化是分工：模型写逻辑、生成工具出资产、人只负责审美与串联。",
+          "analysis": "3D 游戏的建模、美术、程序三道门槛正被“模型 + 生成工具”重新分配，懂叙事、会拆任务的小团队甚至个人开始具备接近工作室的交付能力。这对依赖外包美术/建模的中小团队构成直接压力，竞争要素正转向工具编排与题材品味。",
+          "recommendation": "一人 16 天用 Opus 5.5+Tripo+Blender 做出 3D《小王子》，原帖 169 万曝光——分工已被重写"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 行业新闻",
+          "tags": ["裁员", "工作室关闭", "育碧"],
+          "title": "育碧关闭《特技摩托》工作室 RedLynx，新加坡《黑旗》团队再裁员 70 人",
+          "en_title": "Ubisoft closing Trials developer RedLynx and downsizing Assassin's Creed: Black Flag Resynced team in Singapore",
+          "full_text": "Ubisoft closing Trials developer RedLynx and downsizing Assassin's Creed: Black Flag Resynced team in Singapore https://t.co/mgvBoS8S1C https://t.co/CX8csdt6j1",
+          "author": "eurogamer",
+          "date": "2026-10-14",
+          "likes": 4,
+          "views": 3865,
+          "link": "https://x.com/eurogamer/status/2110347805898506423",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUl2EkKWQAA4gLA.jpg"
+          },
+          "summary": "育碧宣布提议关闭芬兰的 RedLynx 工作室（《特技摩托》系列，最多影响 52 个岗位），并对《刺客信条：黑旗 Resynced》的新加坡工作室裁员 70 人。RedLynx 上一款独立作品是 2019 年的《Trials Rising》；而《黑旗 Resynced》两周内销量已突破 350 万。",
+          "analysis": "即便新作卖得好，“降本重组”仍在继续——育碧正把大型 IP 收拢到 Vantage 子公司并压缩支持型工作室。这提醒行业：畅销作品不必然保护团队，组织收缩更多由资本与产品线重组驱动。",
+          "recommendation": "育碧关闭《特技摩托》工作室 RedLynx（影响52岗），黑旗 Resynced 新加坡团队裁70人——后者两周卖了350万",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 行业新闻",
+          "tags": ["微软", "生成式AI", "平台政策"],
+          "title": "Xbox 成立 Xbox Labs 探索生成式 AI 做游戏，通稿却刻意回避“AI”字样",
+          "en_title": "Xbox announces what sounds like a generative AI-focused game-making department, Xbox Labs, while avoiding mentioning AI",
+          "full_text": "Xbox announces what sounds like a generative AI-focused game-making department, Xbox Labs, while avoiding mentioning AI\n\nhttps://t.co/SZEZWTUAn4 https://t.co/dQJRwZfVP4",
+          "author": "eurogamer",
+          "date": "2026-10-14",
+          "likes": 101,
+          "views": 12091,
+          "link": "https://x.com/eurogamer/status/2110288512708964676",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUk_sf0aoAALyJc.jpg"
+          },
+          "summary": "微软成立 Xbox Labs，由 CTO Scott Van Vliet（曾任微软 Azure for OpenAI 负责人）领导，宣称要探索“游戏被快速反编译重构建、甚至被重混进另一款游戏源码”等现象；CEO Asha Sharma 在公告中刻意不谈 AI，只强调要“公开构建、观察玩家行为”。背景是近几周大量 vibe coding 式移植/重编译涌现。",
+          "analysis": "平台方正从观望转向亲自下场探索 AI 与游戏的关系，但对外措辞极为谨慎，说明生成式 AI 在主机生态仍是敏感议题。对开发者而言，Xbox Labs 可能主导未来的移植/重制规则与工具，值得持续跟踪其产出。",
+          "recommendation": "Xbox 成立 Xbox Labs 探索生成式 AI 做游戏，CTO 来自 Azure for OpenAI，通稿却回避提 AI",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Epic Games Store · 官方发布",
+          "tags": ["AI编程", "平台竞争", "Epic"],
+          "title": "Epic 承认用 AI「vibe coding」重写启动器，称启动比 Steam 快 5 秒",
+          "en_title": "We vibe coded the Epic Games Launcher to be faster than the other guy.",
+          "full_text": "We vibe coded the Epic Games Launcher to be faster than the other guy.\n\nDon't believe us? Test it out for yourself in Preview:\nhttps://t.co/pdtAeEIri4 https://t.co/aMxojUUVPV",
+          "author": "EpicGames",
+          "date": "2026-10-14",
+          "likes": 5952,
+          "views": 1002843,
+          "link": "https://x.com/EpicGames/status/2110369347592229333",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUmJV_hbgAA5e_7.jpg"
+          },
+          "summary": "Epic 发布用生成式 AI 重写的 Epic Games Launcher 预览版，宣称启动比 Steam 快 5 秒，并直言“会有 bug，欢迎反馈”。配合此前 Bloomberg 报道（Epic 推行 AI 优先管线、要求 Disney 跨界项目“不再手写代码”），CEO Tim Sweeney 也暗示该转向可能延伸到 Unreal Engine。",
+          "analysis": "平台级产品开始公开把 AI 生成代码当作卖点并以此对标 Steam，标志“AI 提效”从内部口号变成对外的竞争叙事。若 Unreal Engine 也纳入 AI 工作流，将直接影响引擎用户的资产与代码生产方式。",
+          "recommendation": "Epic 承认用 AI vibe coding 重写启动器并叫板 Steam：启动快 5 秒，AI 优先管线或延伸至 Unreal",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Rock Paper Shotgun · 行业新闻",
+          "tags": ["GTA6", "发行档期", "Rockstar"],
+          "title": "报道称 GTA 6 PC 版计划 2027 年初发售，距主机首发不到半年",
+          "en_title": "GTA 6 PC release planned for early 2027, report claims",
+          "full_text": "GTA 6 PC release planned for early 2027, report claims, which could mean we're playing in time for GTA Online 2: Vice City 4 U or whatever they call it. https://t.co/JNNZ1I4X4h https://t.co/6lPdSDHYg0",
+          "author": "rockpapershot",
+          "date": "2026-10-14",
+          "likes": 0,
+          "views": 1402,
+          "link": "https://x.com/rockpapershot/status/2110320970573525461",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUldvVCXMAAszQ2.jpg"
+          },
+          "summary": "GamesBeat 引述四名知情人士称，GTA 6 计划在 2027 年第一季度登陆 PC，远早于外界按 GTA 5 经验（晚约一年）的预期；主机版定于 2026 年 11 月 19 日发售。分析认为该档期或为在 GTA Online 后续多人内容上线前尽快扩大用户盘。",
+          "analysis": "PC 版若真在主机首发后数月内跟进，将改变 Rockstar 以往“主机先行、PC 迟到”的节奏，也意味着 PC 渠道在 Take-Two 收入中的权重继续上升。对 PC 平台与硬件外设厂商是明确利好信号。",
+          "recommendation": "报道称 GTA 6 PC 版计划 2027 年 Q1 发售，主机版 11 月 19 日——PC 迟到一年的惯例或被打破"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Indie Game Joe · 新游曝光",
+          "tags": ["解谜平台", "物理", "合作"],
+          "title": "Bocary Studios 独立开发《Link Loop》：带水流体物理的“2D Portal”，支持联机合作",
+          "en_title": "This is basically a 2D Portal with physics for water and objects that pour through your portals. Game is Link Loop.",
+          "full_text": "This is basically a 2D Portal with physics for water and objects that pour through your portals\n\n- Place portals to reach the goal of a level\n- Levels are open so you find your own way\n- Over 50 puzzles plus a level editor\n- Online co-op\n\nGame is Link Loop. https://t.co/pdLTourED0",
+          "author": "IndieGameJoe",
+          "date": "2026-10-14",
+          "likes": 1139,
+          "views": 33170,
+          "link": "https://x.com/IndieGameJoe/status/2110159430436462600",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110147198474231808/img/oSxVhid3yL9HkH5S.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2110159430436462600"
+          },
+          "summary": "《Link Loop》是一款基于传送门与动量、水的物理的 2D 解谜平台游戏：放置传送门抵达关卡终点，关卡开放式让玩家自寻解法，含 50+ 谜题与关卡编辑器并支持在线合作。由 Bocary Studios 开发，目前处于“即将推出”阶段。",
+          "analysis": "把 Portal 的传送门机制与流体力学的可倾倒物理结合，是解谜品类少见的组合；开放关卡设计与关卡编辑器提升了 UGC 与长线留存潜力。对独游而言，这类机制混搭加可创作的定位更容易在社媒传播。",
+          "recommendation": "Bocary Studios 独立开发《Link Loop》：带水流体物理的 2D Portal，50+谜题＋关卡编辑器＋联机合作",
+          "featured": true,
+          "game_ref": "Link Loop",
+          "enrichment": {
+            "game_name": "Link Loop",
+            "genre": "解谜平台 / 物理 / 合作",
+            "developer": "Bocary Studios（独立开发）",
+            "platforms": ["Steam (PC)"],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5375410/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5375410/93d04bf8cd2a6909cf22182a8b090373d89c48cd/header.jpg?t=1791917272",
+            "youtube_video": null,
+            "description": "【核心玩法】以传送门（Portal）为核心的 2D 解谜平台：玩家在场景中放置成对传送门，借助动量守恒与空间折叠跨越障碍以抵达关卡终点。与线性解谜不同，关卡多为开放式，允许玩家自行寻找路线与解法，官方标注含 50 个以上谜题。\n\n【物理与机制】最大差异点在于可交互的流体物理——水与物体能从传送门中倾倒、流动并参与解谜（盛水、推动物件、利用水压），把“传送门 + 流体”组合成一套新的解谜语言。\n\n【内容与联机】内置关卡编辑器，并支持在线双人合作，鼓励玩家创作与分享自定义关卡，延长内容生命周期。\n\n【美术与氛围】清爽的 2D 剪影/矢量风格，视觉着重于清晰呈现传送门与流体这两个核心机制。\n\n【优势】机制组合新颖、关卡开放度高；编辑器加联机为长线运营埋点；水穿过传送门的传播素材视觉表现强。\n【不足】目前仅公布“即将推出”、无明确发售日；传送门解谜已有大量先例，需靠流体物理做出真正的差异化关卡。\n\n【综合评价】一款把 Portal 式空间解谜与流体物理缝合的独立解谜平台，机制上限取决于关卡设计的完成度，值得加入愿望单观察。",
+            "why_notable": "用传送门加可倾倒流体重新组合解谜语言，并叠加关卡编辑器与联机合作",
+            "pcu": "暂未发售",
+            "current_players": "—",
+            "estimated_sales": "暂无数据",
+            "gi_summary": "2D 物理传送门解谜平台，Bocary Studios 独立开发，尚未公布发售日"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "電ファミニコゲーマー · 新游报道",
+          "tags": ["合作", "物理", "动作冒险"],
+          "title": "Off by One Games 开发的《Trash Day》：最多 6 人扮浣熊收垃圾的合作物理游戏，已上架",
+          "en_title": "【最大6人マルチ】アライグマになってゴミを集めまくる協力ゲーム『Trash Day』配信開始",
+          "full_text": "【最大6人マルチ】アライグマになってゴミを集めまくる協力ゲーム『Trash Day』配信開始\nhttps://t.co/vdbFBJGQId\n\n伸縮自在のロープや板などの道具を駆使して車が行き交う道路やトラバサミ、落石、川などを乗り越えよう。すべてのアライグマが夢見る場所「アライグマ天国」を目指して大冒険 https://t.co/uvs6MXsiHT",
+          "author": "denfaminicogame",
+          "date": "2026-10-14",
+          "likes": 1594,
+          "views": 157369,
+          "link": "https://x.com/denfaminicogame/status/2110192279038386671",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2110192215645675521/pu/img/hWhEz1m0WGzW1m1y.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2110192279038386671"
+          },
+          "summary": "《Trash Day》是一款最多支持 6 人联机的物理合作冒险游戏：玩家扮演浣熊小队，用可伸缩绳索、木板等道具翻越车流、捕兽夹、落石与河流，搜刮垃圾装满偷来的手推车，合力把它拖到目标地“浣熊天堂”。由 Off by One Games 开发，已于 2026 年 10 月 13 日发售，Steam 国区售价 ¥25.20。",
+          "analysis": "多人物理沙盒一直是直播与短视频的天然素材，《Trash Day》以浣熊搬垃圾的荒诞题材叠加低价位，明显瞄准社媒传播与好友聚会场景。低价加高混乱度是当前独立合作游戏冲量的常见打法，值得关注其上线后的留存。",
+          "recommendation": "Off by One Games 的《Trash Day》：6 人扮浣熊合作搬垃圾的物理游戏，已发售（¥25.20）",
+          "featured": true,
+          "game_ref": "Trash Day",
+          "enrichment": {
+            "game_name": "Trash Day",
+            "genre": "合作 / 物理 / 动作冒险",
+            "developer": "Off by One Games（独立开发）",
+            "platforms": ["Steam (PC)"],
+            "price": "¥25.20",
+            "release_date": "已发售 · 2026年10月13日",
+            "steam_rating": "164 条评价（好评中）",
+            "steam_url": "https://store.steampowered.com/app/3314580/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3314580/6d7cb32debcbdba122624fae234c659cdff2b4bf/header.jpg?t=1791911043",
+            "youtube_video": null,
+            "description": "【核心玩法】最多 6 人联机的物理合作冒险：玩家扮演浣熊小队，用可伸缩绳索、木板等道具，搭桥、翻越车流马路、捕兽夹、落石与河流，一路搜刮垃圾装满偷来的手推车，再合力拖到所有浣熊梦想之地“浣熊天堂”。\n\n【物理与混乱】核心乐趣来自基于物理的笨拙协作——拖车、爬坡、被车流和陷阱打断，队友间互相拖拽形成大量搞笑瞬间，属于“人类一败涂地”式的混乱合作体验。\n\n【题材与定位】以浣熊捡垃圾的荒诞设定切入，天然适合直播与短视频传播；国区定价 ¥25.20 属低价位，瞄准好友聚会与聚会型联机场景。\n\n【美术】卡通低多边形风格，角色与场景夸张可爱，视觉重心放在可互动道具与物理反馈上。\n\n【优势】联机上限 6 人、题材轻松好传播、价格门槛低；物理沙盒本身自带重玩与节目效果。\n【不足】物理合作类游戏普遍面临内容量与长期留存挑战；能否在热度过后留住玩家取决于后续关卡与更新节奏。\n\n【综合评价】一款定位清晰的低成本物理合作游戏，凭题材与传播属性在社媒有爆点潜力，长线表现需观察更新与玩家留存。",
+            "why_notable": "6 人物理合作加浣熊搬垃圾的荒诞题材，低价位瞄准社媒传播与好友聚会场景",
+            "pcu": "暂无公开 PCU 数据",
+            "current_players": "—",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "六人联机物理合作游戏，扮演浣熊收集垃圾，Off by One Games 开发，2026-10-13 发售"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "電ファミニコゲーマー · 新游报道",
+          "tags": ["动作Roguelite", "模块组合", "末日"],
+          "title": "brainglyph 独立开发《Modulink》：把背部模块拼成电路的动作 Roguelite",
+          "en_title": "終末後の世界で背中の回路にモジュールを組み合わせていくアクションローグライトゲーム『Modulink』発表",
+          "full_text": "終末後の世界で背中の回路にモジュールを組み合わせていくアクションローグライトゲーム『Modulink』発表\nhttps://t.co/7n2v1abVjn\n\n順番や配置を変えると、予想外の効果を発揮することも。見つけた組み合わせは相棒のデジタル日誌に記録し、次の遠征に役立てる https://t.co/DuOmWpcFtP",
+          "author": "denfaminicogame",
+          "date": "2026-10-14",
+          "likes": 104,
+          "views": 44825,
+          "link": "https://x.com/denfaminicogame/status/2110381818600194094",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2110381785884594176/pu/img/UDrPru1zB0meL3hd.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2110381818600194094"
+          },
+          "summary": "《Modulink》是一款设定在“末日之后仍存希望的世界”的第三人称动作 Roguelite：玩家发现神秘模块、理解其原理，并像搭电路一样把它们组合到背部，从而改变自身能力，用以对抗致命机器、逐步修复世界；找到的组合会记录在数字日志中以帮助后续远征。由 brainglyph 开发，发售日未定。",
+          "analysis": "以模块拼装即能力构筑为核心的 Roguelite，把构筑深度从卡牌/词条转移到空间化的电路拼接，在视觉与概念上都更直观、更易传播。这类“知识即武器”、鼓励实验与记录的循环，正成为独立动作 Roguelite 差异化的一条路径。",
+          "recommendation": "brainglyph 独立开发《Modulink》：把背部模块拼成电路改变能力的动作 Roguelite，发售日未定",
+          "game_ref": "Modulink",
+          "enrichment": {
+            "game_name": "Modulink",
+            "genre": "动作 Roguelite / 科幻",
+            "developer": "brainglyph（独立开发）",
+            "platforms": ["Steam (PC)"],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4952760/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4952760/38b8f9eb91bb1a495748644370359cd2e9ed7f9d/header_alt_assets_0.jpg?t=1791828383",
+            "youtube_video": null,
+            "description": "【核心玩法】第三人称动作 Roguelite：玩家在一个“末日之后仍充满希望”的世界里对抗致命机器，通过不断远征逐步修复世界。核心循环是发现神秘模块、理解其工作原理、再把它们像搭电路一样组合到角色背部，从而改变自身能力。\n\n【构筑系统】差异化来自空间化的模块拼接——摆放顺序与位置不同会产生意料之外的组合效果；找到的有效组合会记录在“相棒的数字日志”中，用于规划下一次远征，形成“知识即武器”的推进感。\n\n【美术与氛围】末日废土混合科幻感的第三人称视角，机械敌人与模块电路概念构成主要视觉语言。\n\n【优势】构筑方式直观可感（电路拼接），实验与记录循环清晰，概念便于通过短视频传播；末日题材与动作 Roguelite 的结合有稳定受众。\n【不足】目前仅公布概念与预告、无发售日；模块组合系统的深度与平衡性需实机验证，避免沦为“数值换皮”。\n\n【综合评价】概念层面颇具辨识度的动作 Roguelite，把能力构筑具象为电路拼接是亮点，能否跑通取决于组合系统的深度与关卡设计。",
+            "why_notable": "把能力构筑具象为空间化的电路拼接，形成“实验并记录”的独特循环",
+            "pcu": "暂未发售",
+            "current_players": "—",
+            "estimated_sales": "暂无数据",
+            "gi_summary": "末日科幻第三人称动作 Roguelite，模块拼接即构筑，brainglyph 开发，发售日待定"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "Indie Game Joe · 新游曝光",
+          "tags": ["射击", "法术", "物理"],
+          "title": "Cowboy & Clown Games《VINCIT》：Ultrakill 式战斗融合 Magicka 法术的漫画风射击",
+          "en_title": "Ultrakill's combat meets Magicka's spellcasting in a manga style shooter. Game is VINCIT.",
+          "full_text": "Ultrakill's combat meets Magicka's spellcasting in a manga style shooter\n\n- Load bullets with fire or electricity\n- Punch them mid-air to mix the effects\n- Every bullet is a real physical object\n\nGame is VINCIT. https://t.co/TRdZmyCGyr",
+          "author": "IndieGameJoe",
+          "date": "2026-10-12",
+          "likes": 629,
+          "views": 19904,
+          "link": "https://x.com/IndieGameJoe/status/2109783082861490598",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2109782219199774720/img/Rbswzb7AK4yFGgby.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2109783082861490598"
+          },
+          "summary": "《VINCIT》是一款漫画风格射击游戏：给子弹装填火焰或电流，在空中击打子弹以混合出不同效果，每一发子弹都是真实的物理对象，支持单人及在线合作。由 Cowboy & Clown Games 开发，发售日未定。",
+          "recommendation": "Cowboy & Clown Games《VINCIT》：Ultrakill 式战斗融合 Magicka 法术的漫画风射击",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Rock Paper Shotgun · 新游报道",
+          "tags": ["竞速", "开放世界", "复古"],
+          "title": "Boxy.Poly《SHIFU: Traffic Masters》：设定在 1990 年代中国的开放世界驾驶游戏",
+          "en_title": "Consider Shifu: Traffic Masters, a jolly open world driving game set in 1990s China",
+          "full_text": "If you've sworn off genAI Crazy Taxi and dislike all the twerking in GTA 6, consider Shifu: Traffic Masters, a jolly open world driving game set in 1990s China https://t.co/n1X8SI1taa",
+          "author": "rockpapershot",
+          "date": "2026-10-14",
+          "likes": 2,
+          "views": 1428,
+          "link": "https://x.com/rockpapershot/status/2110302405287948618",
+          "media": null,
+          "summary": "《SHIFU: Traffic Masters（车水马龙）》是一款设定在 1990 年代中国的开放世界驾驶游戏：驾驶那个年代常见的车辆送货、载客、追逃，灵感来自 Midtown Madness 与 Driver 等 90 年代老游戏。由 Boxy.Poly 开发，预计 2027 年第一季度发售。",
+          "recommendation": "Boxy.Poly《SHIFU: Traffic Masters》：设定在 1990 年代中国的开放世界驾驶游戏",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Niche Gamer · 新游报道",
+          "tags": ["节奏动作", "合作", "Roguelike"],
+          "title": "《Ratatan》：Patapon 精神续作正式发售，三平台跨平台联机",
+          "en_title": "Patapon successor Ratatan launches with cross-play on three platforms",
+          "full_text": "Patapon successor Ratatan launches with cross-play on three platforms: https://t.co/P61VslMt2S https://t.co/bYe1gwM4ic",
+          "author": "nichegamer",
+          "date": "2026-10-14",
+          "likes": 6,
+          "views": 1431,
+          "link": "https://x.com/nichegamer/status/2110361737459335431",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2110361712759119872/pu/img/tJ1BS4ArivIR5aPw.jpg",
+            "video_url": "https://x.com/nichegamer/status/2110361737459335431"
+          },
+          "summary": "《啦嗒铛（Ratatan）》作为《Patapon》的精神续作正式发售，支持最多四人合作、跨三个平台联机；这是一款融合节奏与横轴动作的 Roguelike，上百只角色同场乱斗。Steam 国区售价 ¥118.00。",
+          "recommendation": "《Ratatan》Patapon 精神续作发售：节奏＋横轴动作 Roguelike，支持四人合作跨平台联机",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "IGN · 新游报道",
+          "tags": ["塔防", "合作", "棋类"],
+          "title": "《Checkmate Protocol》：用棋子主题移动能力抵御进攻、死守国王",
+          "en_title": "Fight alone, or team up with unique weapons and chess-themed movement abilities to defeat waves of oncoming attackers and protect the King at all costs in Checkmate Protocol.",
+          "full_text": "Fight alone, or team up with unique weapons and chess-themed movement abilities to defeat waves of oncoming attackers and protect the King at all costs in Checkmate Protocol. #IGNFanFest https://t.co/8B2drGhYNe",
+          "author": "IGN",
+          "date": "2026-10-14",
+          "likes": 121,
+          "views": 57795,
+          "link": "https://x.com/IGN/status/2110230652880584731",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUkLmIWWsAEyrAg.jpg"
+          },
+          "summary": "《Checkmate Protocol》是一款以国际象棋为主题的守塔玩法游戏：可单人作战或组队，使用各自独特的武器与棋子式移动能力，击退一波波进攻者、不惜一切代价保护国王。",
+          "recommendation": "《Checkmate Protocol》：用棋子主题移动能力组队守塔、死守国王的棋类动作游戏",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "sofie · 工具发布",
+          "tags": ["3D工具", "建模", "免费"],
+          "title": "可直接在 3D 模型/UV 上作画的免费工具《ドパ描き》发布，支持多语言与扩展",
+          "en_title": "3DモデルやUVに直接ペイントできる「ドパ描き」をリリースしました",
+          "full_text": "3DモデルやUVに直接ペイントできる「ドパ描き」をリリースしました💡💡💡\n\nまた、3Dペイントソフト!?と思われる人もいるかもしれませんが、ずっと秘密裡に使ってきたものになります\n\nクオリティには自信があって、Boothで無料で公開しているので一度使ってみてほしいです\n\n・ 3D上のベクターで正確なパスが描けます\n・ ポーズを決めながら描けます\n・ 筆圧や描き心地に自信ありです\n・ ペンの数が豊富にあり、自分で拡張も可能です\n・ 基本ツールに全部対応しています\n・ 右クリックPieメニューで効率的に描けます\n・ 2Dペイントソフトとしても自信があります\n・ シェイダーも複数あって、自分で拡張できます\n・ レイヤー効果も豊富にあります\n・ 日本語、英語、中国語、韓国語、スペイン語、ロシア語に対応しています\n・ ベイクも豊富にできます\n・ Mac/Windows (将来的にLinux) に対応です",
+          "author": "sofielovy",
+          "date": "2026-10-13",
+          "likes": 10719,
+          "views": 287559,
+          "link": "https://x.com/sofielovy/status/2109984153160855687",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2109984089642348544/img/rYCj2ZQY-MlejLC2.jpg",
+            "video_url": "https://x.com/sofielovy/status/2109984153160855687"
+          },
+          "summary": "开发者 sofie 发布免费 3D 绘画工具《ドパ描き》：可在 3D 模型与 UV 上直接用矢量精确绘制路径、边摆姿势边作画、支持压感与丰富笔刷、右击 Pie 菜单，并可自定义笔刷与着色器，同时兼具 2D 绘画能力；支持日/英/中/韩/西/俄多语言，Mac/Windows 平台（未来支持 Linux），在 Booth 免费公开。",
+          "analysis": "免费、可扩展且同时覆盖 3D/2D 的多语言工具，正好切中独立团队与个人美术“低成本做出可交付资产”的需求。它把 3D 纹理绘制门槛大幅拉低，对小型团队的资产管线是实用补充。",
+          "recommendation": "免费 3D 绘画工具《ドパ描き》发布：直接在模型/UV 上矢量作画，支持中英日韩等多语言与扩展",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Unity for Games · 官方发布",
+          "tags": ["Unity", "引擎更新", "编辑器"],
+          "title": "Unity 6.6 默认启用新版 Hierarchy 窗口：大场景更快、支持横向滚动",
+          "en_title": "The upgraded Hierarchy window is now enabled by default in Unity 6.6",
+          "full_text": "The upgraded Hierarchy window is now enabled by default in Unity 6.6 🪟\n\n✅ Faster performance in large scenes\n✅ Horizontal scrolling\n✅ Reorderable data columns \n✅ Native Entity &amp; UI Toolkit support https://t.co/FhxySzWhD6",
+          "author": "unitygames",
+          "date": "2026-10-14",
+          "likes": 102,
+          "views": 6614,
+          "link": "https://x.com/unitygames/status/2110354817310699974",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2110354786033815552/pu/img/j_6GEAQBl7uUficI.jpg",
+            "video_url": "https://x.com/unitygames/status/2110354817310699974"
+          },
+          "summary": "Unity 官方宣布 6.6 版本默认启用升级版 Hierarchy 窗口：大场景性能更快、支持横向滚动、数据列可重排，并原生支持 Entity 与 UI Toolkit。",
+          "analysis": "编辑器体验的持续打磨直接影响日常开发效率，尤其大场景下的 Hierarchy 性能是长期痛点。原生支持 Entity 与 UI Toolkit 也释放出一个信号：Unity 在推动 DOTS 与 UI Toolkit 成为主流工作流。",
+          "recommendation": "Unity 6.6 默认启用新版 Hierarchy：大场景更快、横向滚动、数据列可重排，原生支持 Entity/UI Toolkit",
+          "featured": true
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI 语音与游戏开发工具链同日推进**\nFish Audio 发布开源 TTS 模型 Drama 3，支持逐词控制语气与音色，公司披露 5200 万美元种子轮、1500 万用户；另一边 Unity/Unreal 通过 15 个开源仓库接入 Claude Code，单会话可编排 49 个 Agent。\n\n**平台方集体把生成式 AI 推上台面**\nXbox 成立 Xbox Labs 探索生成式 AI 做游戏（CTO 来自 Azure for OpenAI），通稿却回避提 AI；Epic 则直接用 AI vibe coding 重写启动器，宣称启动比 Steam 快 5 秒。\n\n**行业收缩仍在继续**\n育碧关闭《特技摩托》工作室 RedLynx（影响 52 岗），并对《黑旗 Resynced》新加坡团队裁员 70 人——后者两周销量已破 350 万。\n\n**独立游戏：机制混搭与低门槛合作**\n《Link Loop》把水流体物理缝进 2D Portal，《Trash Day》用浣熊搬垃圾的低价合作玩法瞄准社媒传播，《Modulink》把能力构筑做成电路拼接。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
