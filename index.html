@@ -769,6 +769,8 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
 .ld-col-rank-item:nth-child(1) .ld-col-rank-num,.ld-col-rank-item:nth-child(2) .ld-col-rank-num,.ld-col-rank-item:nth-child(3) .ld-col-rank-num{background:#A33A2F;color:#fffaf4}
 .ld-col-rank-thumb{flex:none;width:48px;height:27px;object-fit:cover;background:#eadbd2}
 .ld-col-rank-name{flex:1;min-width:0;font-size:13px;font-weight:800;color:#3c2b27;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ld-itch-item{flex-wrap:wrap;row-gap:2px}
+.ld-col-rank-mech{flex-basis:100%;font-size:11.5px;color:#7a6a63;line-height:1.45;padding-left:34px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .ld-name-mature{color:#b3a89e}
 .ld-col-rank-metric{flex:none;font-family:var(--font-serif);font-size:14px;font-weight:700;color:#873026}
 .ld-metric-long{font-family:inherit;font-size:11px;font-weight:900;color:#8b7169;white-space:nowrap}
@@ -3053,7 +3055,12 @@ function ldRankItemHtml(bi, it, i) {
     : stamp;
   const metricCls = (it.metric || '').length > 10 ? 'ld-col-rank-metric ld-metric-long' : 'ld-col-rank-metric';
   const inner = `<span class="ld-col-rank-num">${i + 1}</span>${thumb}${name}<span class="${metricCls}">${escapeHtml(it.metric || '')}</span>`;
-  return `<span class="ld-col-rank-item" onclick="ldOpenGameModal(${bi}, ${i})">${inner}</span>`;
+  // itch 榜条目多带一行 LLM 机制拆解（榜单即信号，不点弹窗也能读）
+  const boardId = ((launchedData.boards || [])[bi] || {}).id;
+  const mechLine = (boardId === 'itch' && it.mech)
+    ? `<span class="ld-col-rank-mech">⚙ ${escapeHtml(it.mech)}</span>` : '';
+  const itemCls = mechLine ? 'ld-col-rank-item ld-itch-item' : 'ld-col-rank-item';
+  return `<span class="${itemCls}" onclick="ldOpenGameModal(${bi}, ${i})">${inner}${mechLine}</span>`;
 }
 
 function ldSetPage(bi, dir) {
@@ -3190,6 +3197,8 @@ function ldOpenItchModal(it) {
       ${it.thumb ? `<img class="ld-modal-cover" src="${escapeHtml(it.thumb)}" alt="" referrerpolicy="no-referrer">` : ''}
       <div class="ld-modal-body">
         <div class="ld-modal-name">${escapeHtml(it.name)}</div>
+        ${it.mech ? `<div class="ld-modal-desc"><b>⚙ 机制拆解</b>　${escapeHtml(it.mech)}</div>` : ''}
+        ${it.why ? `<div class="ld-modal-desc"><b>🌱 为什么值得关注</b>　${escapeHtml(it.why)}</div>` : ''}
         ${it.sub ? `<div class="ld-modal-desc">${escapeHtml(it.sub)}</div>` : ''}
         <div class="ld-modal-grid ld-grid-3">
           ${cell('作者', escapeHtml(it.author || '—'))}

@@ -48,6 +48,9 @@ const items = games.map(g => ({
   comments_total: (g.comments && g.comments.total) || 0,
   platforms: (g.platforms || []).join('/'),
   tags: (g.tags || []).slice(0, 3),
+  // LLM 加工层（itch-monitor tools/enrich_llm.js 产出）
+  mech: (g.llm && g.llm.mechanic) || '',
+  why: (g.llm && g.llm.why) || '',
 }));
 
 const board = {
