@@ -3012,7 +3012,8 @@ function renderLaunchedBoard(board, bi) {
     steamdb: '按近期 Steam 关注增长排序 · 数值为新增关注数',
     bilibili: '机会分排序(新游/异动优先) · 数值为关联视频在日榜的最高名次',
     twitter: '按推文浏览量衰减排序(半衰期1.5天) · 数值为推文浏览量',
-    roblox: '按周同时在线峰值排序 · 数值为 CCU(最高同时在线人数)'
+    roblox: '按周同时在线峰值排序 · 数值为 CCU(最高同时在线人数)',
+    itch: 'itch.io featured 官方热度排序 · 数值为评分(评分人数)'
   };
   const cap = board.caption || CAPTIONS[board.id] || '';
   const head = `<div class="tw-week-section-kicker">${escapeHtml(board.title_en || '')}${board.week ? ' · ' + escapeHtml(board.week) : ''}</div><h2>${escapeHtml(board.title)}${badge}</h2>${cap ? `<div class="ld-board-cap">${escapeHtml(cap)}</div>` : ''}`;
@@ -3092,6 +3093,7 @@ async function ldOpenGameModal(bi, ii) {
   const board = launchedData.boards[bi];
   const it = board.items[ii];
   if (board.id === 'roblox') return ldOpenRobloxModal(it);
+  if (board.id === 'itch') return ldOpenItchModal(it);
   await ensureGameDetails();
   const d = findGameDetail(it) || { name: it.name };
   if (!d.release && it.release) d.release = it.release;
@@ -3178,6 +3180,33 @@ async function ldGotoDailyTab(tab) {
   const latest = dates[dates.length - 1];
   if (latest && latest !== currentDate) await loadDate(latest);
   switchTab(tab);
+}
+
+function ldOpenItchModal(it) {
+  const cell = (k, v) => `<div class="ld-modal-item"><span class="k">${k}</span><span class="v">${v || '—'}</span></div>`;
+  const html = `<div class="ld-modal-mask" onclick="if(event.target===this)ldCloseGameModal()">
+    <div class="ld-modal" role="dialog" aria-label="游戏详情">
+      <button type="button" class="ld-modal-close" onclick="ldCloseGameModal()" aria-label="关闭">✕</button>
+      ${it.thumb ? `<img class="ld-modal-cover" src="${escapeHtml(it.thumb)}" alt="" referrerpolicy="no-referrer">` : ''}
+      <div class="ld-modal-body">
+        <div class="ld-modal-name">${escapeHtml(it.name)}</div>
+        ${it.sub ? `<div class="ld-modal-desc">${escapeHtml(it.sub)}</div>` : ''}
+        <div class="ld-modal-grid ld-grid-3">
+          ${cell('作者', escapeHtml(it.author || '—'))}
+          ${cell('类型', escapeHtml(it.genre || '—'))}
+          ${cell('评分', it.metric || '—')}
+          ${cell('评论数', it.comments_total ? String(it.comments_total) : '—')}
+          ${cell('价格', escapeHtml(it.price || '—'))}
+          ${cell('平台', escapeHtml(it.platforms || '—'))}
+        </div>
+        ${(it.tags || []).length ? `<div class="ld-modal-tags">${it.tags.map(t => `<span class="lib-tag">${escapeHtml(t)}</span>`).join('')}</div>` : ''}
+        ${it.link ? `<a class="ld-modal-steam" href="${escapeHtml(it.link)}" target="_blank" rel="noopener">前往 itch.io 页面 →</a>` : ''}
+      </div>
+    </div>
+  </div>`;
+  ldCloseGameModal();
+  document.body.insertAdjacentHTML('beforeend', html);
+  document.body.style.overflow = 'hidden';
 }
 
 function ldOpenRobloxModal(it) {
