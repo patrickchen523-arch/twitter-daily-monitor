@@ -771,6 +771,16 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
 .ld-col-rank-name{flex:1;min-width:0;font-size:13px;font-weight:800;color:#3c2b27;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ld-itch-item{flex-wrap:wrap;row-gap:2px}
 .ld-col-rank-mech{flex-basis:100%;font-size:11.5px;color:#7a6a63;line-height:1.45;padding-left:34px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+/* itch 榜独占整行：双列大卡布局，字号/封面放大 */
+.ld-board.itch-board{grid-column:1/-1}
+.itch-board .ld-col-rank{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px}
+.itch-board .ld-col-rank-item{padding:12px 2px}
+.itch-board .ld-col-rank-thumb{width:76px;height:43px;border-radius:3px}
+.itch-board .ld-col-rank-num{width:26px;height:26px;font-size:13px}
+.itch-board .ld-col-rank-name{font-size:14px}
+.itch-board .ld-col-rank-metric{font-size:14px}
+.itch-board .ld-col-rank-mech{font-size:12.5px;padding-left:36px;line-height:1.5}
+@media(max-width:620px){.itch-board .ld-col-rank{grid-template-columns:1fr}}
 .ld-name-mature{color:#b3a89e}
 .ld-col-rank-metric{flex:none;font-family:var(--font-serif);font-size:14px;font-weight:700;color:#873026}
 .ld-metric-long{font-family:inherit;font-size:11px;font-weight:900;color:#8b7169;white-space:nowrap}
@@ -3036,7 +3046,7 @@ function renderLaunchedBoard(board, bi) {
     else moreLink = `<button type="button" class="roblox-week-btn" onclick="switchView('${escapeHtml(board.more.view)}')">${escapeHtml(board.more.label)} →</button>`;
   }
   const more = (pager || moreLink) ? `<div class="ld-board-more">${pager}${moreLink}</div>` : '';
-  return `<div class="tw-week-block ld-board">${head}${body}${more}</div>`;
+  return `<div class="tw-week-block ld-board ${board.id === 'itch' ? 'itch-board' : ''}">${head}${body}${more}</div>`;
 }
 
 const ldBoardPages = {};
