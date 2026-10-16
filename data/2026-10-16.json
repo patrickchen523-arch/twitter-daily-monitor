@@ -1,0 +1,478 @@
+{
+  "date": "2026-10-16",
+  "meta": {
+    "raw_count": 217,
+    "filtered_count": 170,
+    "selected_count": 16,
+    "crawl_time": "2026-10-16"
+  },
+  "lede": "GTA 6 首发预告片突袭发布、发售前一个多月 Vice City 全面亮相；Riot 宣布《英雄联盟 Classic》2027 年 1 月下线；《Big Walk》为支持 BDS 抵制微软放弃 Xbox 版；Enshrouded 结束近 3 年 EA 正式 1.0，今日 PCU 破 6.5 万。",
+  "editors_pick": [
+    { "section_id": "industry", "item_index": 0, "hook": "GTA 6 首发预告片突袭发布：发售前一个多月，Vice City、原创配乐与 Lucia 同框亮相——6414 赞" },
+    { "section_id": "ai", "item_index": 1, "hook": "花约 $2,000 Opus 5.5 token，做出完全跑在浏览器里的写实钓鱼模拟器" },
+    { "section_id": "indie", "item_index": 0, "hook": "Pandoriol 独立开发《Escape the Walls》：一拳一拳把墙打穿的增量游戏——311 万浏览" }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "陈成自研代码编辑器 Mayoi：24MB、diff 优先，为 Agent 时代重做 editor。\n花约 $2,000 Opus 5.5 token，做出完全跑在浏览器里的写实钓鱼模拟器。\nAI 泡沫未破但 5 天蒸发 1 万亿美元：20 家 AI/芯片龙头集体缩水。"
+    },
+    {
+      "id": "industry",
+      "text": "GTA 6 首发预告片突袭发布，发售前一个多月 Vice City 全面亮相。\nRiot 宣布《英雄联盟 Classic》将于 2027 年 1 月下线，上线仅数月。\n《Big Walk》为支持 BDS 抵制微软，明确不登陆 Xbox。"
+    },
+    {
+      "id": "indie",
+      "text": "《Escape the Walls》：一拳一拳把墙打穿的增量游戏，311 万浏览。\n《雾锁王国 Enshrouded》结束近 3 年 EA 正式 1.0，今日 PCU 破 6.5 万。\n《Tanuki Tag》：狸猫变形「躲猫猫」，类《めっちゃカメレオン》。\n《Livin' the Cream》：经营加勒比风情冰淇淋店，体验版配信中。"
+    },
+    {
+      "id": "tools",
+      "text": "Dean Hall 开源免费 C# 游戏框架 Brutal，炮轰 Unreal/Unity「贪婪正在腐烂行业」。\nImage-to-Pixel 3.0：浏览器内把图片/视频转像素画，免费 MIT 开源。"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "陈成 · 中文 KOL 原创",
+          "tags": ["AI编程", "开发工具", "编辑器"],
+          "title": "陈成自研代码编辑器 Mayoi：24MB、diff 优先，为 Agent 时代重做 editor",
+          "en_title": "我写了个代码编辑器，叫 Mayoi。",
+          "full_text": "我写了个代码编辑器，叫 Mayoi。\n\n现在大家的工作方式变了，已经很少手动改文件。\n\n所以，每天大部分需要用到 editor 的场景是：\n1. 看 diff\n2. review agent 写的代码\n3. 打开几个文件确认一下\n3. 开个终端，起下一个 agent\n\nVS Code 和 Cursor 是为以前那种写法造的。Cursor 装完快 1 GB，一大堆功能我从来不用。\n\n所以我给现在的写法做了一个。\n\n- 所有改动在一个 diff 里看，行内或左右对照，在行号旁直接 stage 或 revert\n- 终端用的是 Ghostty 的内核，放底部面板或单开一个 tab 都行，⌘V 能把截图直接贴给 Claude Code\n- 所有仓库开在一个窗口里，后台项目的 agent 一响铃，它的 tab 就会亮\n- 快速打开、全局搜索、Markdown 预览、Vim 模式、Remote SSH\n\n内置 Qoder、Claude 和 Matrix 等主题。Matrix 那款有代码雨。\n\n够小：\n- 应用 24 MB，Cursor 970 MB\n- 内存约 180 MB，Cursor 约 1 GB",
+          "author": "chenchengpro",
+          "date": "2026-10-15",
+          "likes": 89,
+          "views": 8617,
+          "link": "https://x.com/chenchengpro/status/2110699165051453771",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110698817758875648/img/CKbfdHrD3e9im5om.jpg",
+            "video_url": "https://x.com/chenchengpro/status/2110699165051453771"
+          },
+          "summary": "中文开发者陈成发布自研代码编辑器 Mayoi，核心前提是“现在很少手动改文件”，日常场景变成看 diff、review agent 写的代码、开终端起下一个 agent。产品定位为实现这些场景：所有改动在一个 diff 中行内/左右对照并可直接 stage/revert，终端基于 Ghostty 内核且支持把截图直接粘给 Claude Code，多仓库同窗口，后台 agent 响铃时对应 tab 高亮。体积 24MB、内存约 180MB，对标 Cursor 的 970MB/约 1GB。",
+          "analysis": "编辑器形态正被“人写代码 → 人审代码”的工作方式变化倒逼重做。Mayoi 把 diff、终端、多仓库 Agent 状态放在第一位，等于承认未来多数时间是给 AI 打工（审阅与编排）。对工具团队而言，这是一个信号：在 Agent 时代，“轻量 + 审阅友好”可能比“功能全”更有竞争力。",
+          "recommendation": "陈成自研代码编辑器 Mayoi：24MB、diff 优先，为 Agent 时代重做 editor——对比 Cursor 970MB",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "aloha · 开发者分享",
+          "tags": ["AI游戏开发", "Opus 5.5", "浏览器游戏"],
+          "title": "花约 $2,000 Opus 5.5 token，做出完全跑在浏览器里的写实钓鱼模拟器",
+          "en_title": "Someone spent around $2k worth of Opus 5.5 tokens to build this realistic-looking fishing simulator that runs entirely in the browser",
+          "full_text": "Someone spent around $2k worth of Opus 5.5 tokens to build this realistic-looking fishing simulator that runs entirely in the browser🤯 https://t.co/0jeV5AvpWd",
+          "author": "alohaproxy",
+          "date": "2026-10-15",
+          "likes": 981,
+          "views": 58840,
+          "link": "https://x.com/alohaproxy/status/2110574383400104152",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110559886027431936/img/S6FwKSudgsVh3mHB.jpg",
+            "video_url": "https://x.com/alohaproxy/status/2110574383400104152"
+          },
+          "summary": "有开发者用价值约 2,000 美元的 Opus 5.5 token，做出了一款画面写实、完全在浏览器中运行的钓鱼模拟器。推文强调其视觉质量与“无需安装、开网页即玩”的分发形态，被视为 AI 生成游戏的成本样本。",
+          "analysis": "把 $2k 直接换算成一款可玩 3D 游戏，是当前最直观的 AI 产能度量：一个程序员 + 一份 token 预算就能产出过去需要美术、程序、建模配合的成品。浏览器载体进一步省掉了发行与安装门槛，意味着“高完成度原型”的成本结构正在被彻底改写。",
+          "recommendation": "花约 $2,000 Opus 5.5 token，做出完全跑在浏览器里的写实钓鱼模拟器"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "PC Gamer · AI 行业",
+          "tags": ["AI泡沫", "融资", "半导体"],
+          "title": "AI 泡沫未破，5 天蒸发 1 万亿美元：20 家 AI/芯片龙头集体缩水",
+          "en_title": "The AI bubble may not have burst yet, but $1 trillion worth of air appears to have escaped",
+          "full_text": "Kssssss - $1 trillion worth of air is escaping the AI industry as investors sell and shares drop https://t.co/HfCf1lTa5M",
+          "author": "pcgamer",
+          "date": "2026-10-15",
+          "likes": 13,
+          "views": 5166,
+          "link": "https://x.com/pcgamer/status/2110769870434652206",
+          "media": null,
+          "summary": "据 CNBC，过去五天内 AI 与半导体板块 20 家市值最高公司合计缩水超过 1 万亿美元：Nvidia 跌约 8%、AMD 跌 13%、Intel 跌近 15%，三星电子跌近 20%、SK hynix 跌 18%、Micron 跌超 15%。诱因包括存储芯片供需或在 2029 年转为过剩、以及 Intel/Broadcom CEO 警告融资能力可能成为 AI 的最大瓶颈（利率上行下数据中心投入回报趋于失衡）。分析师称需求信号而非利率才是关键变量。",
+          "analysis": "AI 叙事开始从“能力”转向“资本”：当芯片龙头单周蒸发万亿市值，游戏行业依赖的 AI 工具降价红利与投资预期都会受到牵连。对从业者而言，值得盯住的是“算力/融资成本”而非单纯的模型能力——若资本收紧，游戏公司采购 AI 服务与自研大模型的经济性都需要重估。",
+          "recommendation": "AI 泡沫未破但 5 天蒸发 1 万亿美元：Nvidia -8%、AMD -13%、三星 -20%，20 家龙头集体缩水"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "The Game Awards · 官方发布",
+          "tags": ["GTA6", "预告片", "Rockstar"],
+          "title": "GTA 6 首发预告片突袭发布：发售前一个多月，Vice City、原创配乐与 Lucia 同框亮相",
+          "en_title": "The launch trailer for Grand Theft Auto VI has been revealed.",
+          "full_text": "The launch trailer for Grand Theft Auto VI has been revealed.\n https://t.co/xCVzecppF9",
+          "author": "thegameawards",
+          "date": "2026-10-15",
+          "likes": 6414,
+          "views": 88204,
+          "link": "https://x.com/thegameawards/status/2110722805046313244",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUq7ZHSXAAAINYP.jpg"
+          },
+          "summary": "Rockstar 于 10 月 15 日突袭发布 GTA 6 首发预告片，距离游戏发售（2026 年 11 月 19 日）还有一个多月。预告展示了 Vice City、Jason 与 Lucia 的剧情片段、惊险追车与抢劫桥段，并包含一段浴室场景。GameSpot 指出游戏将采用电子组合 Justice 的原创配乐、并带“情境性出汗系统”等拟真设定；Eurogamer 提到该作恰好卡进 The Game Awards 2026 的报名窗口。",
+          "analysis": "在发售前一个多月放出首发预告，是 Rockstar 一贯的“少说多做”节奏，但它同时把话题从“会不会跳票”拉回到产品本身。对行业而言，一条预告片能调动几乎所有主流媒体在同一时间产出多条内容，再次证明头部长线 IP 的营销杠杆，也意味着 11 月档期的其他新游将被迫避让。",
+          "recommendation": "GTA 6 首发预告片突袭发布：发售前一个多月，Vice City、原创配乐与 Lucia 同框亮相——6414 赞",
+          "featured": true,
+          "game_ref": "Grand Theft Auto VI"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "PC Gamer · 行业新闻",
+          "tags": ["Riot", "英雄联盟", "运营"],
+          "title": "Riot 宣布《英雄联盟 Classic》2027 年 1 月下线，怀旧模式商业模型受挫",
+          "en_title": "3 months after launch, Riot announces League of Legends Classic will be killed in January: 'most have gone back to other parts of League'",
+          "full_text": "3 months after launch, Riot announces League of Legends Classic will be killed in January https://t.co/PilykrgVJO",
+          "author": "pcgamer",
+          "date": "2026-10-15",
+          "likes": 1780,
+          "views": 715614,
+          "link": "https://x.com/pcgamer/status/2110521122789916952",
+          "media": null,
+          "summary": "Riot 更新公告称《英雄联盟 Classic》（怀旧模式）将在 2027 年 1 月下线，届时当前赛季成为最后一季，官方表示“多数玩家已回到 League 的其他部分”。Classic 曾剥离 2013 年后新增的英雄与系统、回滚老版召唤师峡谷并承诺更快补入“新老英雄”；Riot 称将把该模式收回，“未来可能以活动模式回归”，并会对失效内容退款。剩余英雄（Mordekaiser、Yorick 等）仍将陆续推出。",
+          "analysis": "怀旧模式被证伪为“可长期运营的产品”，说明 nostalgia 只能带来一次性回流，难以支撑常驻玩法。对做怀旧服/经典服务器的团队是明确警示：老玩家的记忆与当代体验需求并不一致，短期话题度不等于留存。Riot 选择把它转为限时活动，是更理性的成本模型。",
+          "recommendation": "Riot 宣布《英雄联盟 Classic》2027 年 1 月下线，怀旧模式仅上线数月——官方称“玩家都回去了”",
+          "featured": true,
+          "game_ref": "League of Legends"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Polygon · 行业新闻",
+          "tags": ["Big Walk", "Xbox", "发行决策"],
+          "title": "《Big Walk》为支持 BDS 抵制微软，明确不登陆 Xbox",
+          "en_title": "Big Walk Is Skipping Xbox as Part of the Pro-Palestinian BDS Boycott",
+          "full_text": "Big Walk Is Skipping Xbox as Part of the Pro-Palestinian BDS Boycott https://t.co/UiupdzIDTq https://t.co/egtdMna52G",
+          "author": "Polygon",
+          "date": "2026-10-15",
+          "likes": 303,
+          "views": 12653,
+          "link": "https://x.com/Polygon/status/2110687183795323273",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUqqzxXWAAAirqr.jpg"
+          },
+          "summary": "《Untitled Goose Game》开发商 House House 确认，其合作解谜新作《Big Walk》不会登陆 Xbox，原因是支持 BDS（抵制、撤资、制裁）运动对微软的抵制——BDS 将微软列为优先抵制目标。House House 在声明中表示此举“与让朋友们一起游玩的目标相悖，也理解由此带来的失望，我们同样失望”，并称除非微软/Xbox 被移出抵制名单，否则不会登陆该平台。报道指出《Big Walk》是 2026 年评价最高的游戏之一，也是首个因该抵制明确放弃 Xbox 的高知名度作品。",
+          "analysis": "发行渠道开始成为价值观表达的工具，且发生在一款年度口碑领跑者身上——这会迫使平台方重新评估自身在政治争议中的位置。对独立开发者而言，“上不上 Xbox”第一次变成需要权衡立场成本的商业决策，而非单纯的装机量计算。",
+          "recommendation": "《Big Walk》为支持 BDS 抵制微软，明确不登陆 Xbox——2026 GOTY 热门首次因立场弃平台",
+          "featured": true,
+          "game_ref": "Big Walk"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Pandoriol · 新游曝光",
+          "tags": ["增量游戏", "独立开发", "Steam"],
+          "title": "Pandoriol 独立开发《Escape the Walls》：一拳一拳把墙打穿的增量游戏",
+          "en_title": "Working on an incremental game, where you punch walls to escape",
+          "full_text": "Working on an incremental game, where you punch walls to escape\n #gamedev #indiegame https://t.co/y47bhsxdGj",
+          "author": "pandorioltd",
+          "date": "2026-10-14",
+          "likes": 6393,
+          "views": 3117253,
+          "link": "https://x.com/pandorioltd/status/2110335569255657628",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110335504549814272/img/uVJdm16G_EkOlP_x.jpg",
+            "video_url": "https://x.com/pandorioltd/status/2110335569255657628"
+          },
+          "summary": "开发者 Pandoriol 正在制作增量（incremental）游戏《Escape the Walls》：玩家不断挥拳把墙壁一层层打穿以“逃出去”，Steam 商店页面即将上线。推文以极简玩法 + 直观的打穿反馈短片传播，单条获得 311 万浏览、6393 赞。",
+          "analysis": "增量/放置品类的传播优势在于“一眼看懂 + 数字增长爽感”，《Escape the Walls》把它压缩成单一动作（打墙），进一步降低理解成本。311 万浏览说明这类“机制极简”的独游在社媒依然有巨大自然流量红利，适合作为小团队冷启动的切口。",
+          "recommendation": "Pandoriol 独立开发《Escape the Walls》：一拳一拳把墙打穿的增量游戏——311 万浏览",
+          "featured": true,
+          "game_ref": "Escape the Walls",
+          "enrichment": {
+            "game_name": "Escape the Walls",
+            "genre": "增量 / 休闲 / 放置",
+            "developer": "Pandoriol（独立开发）",
+            "platforms": ["Steam (PC)"],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】一款增量（incremental / 放置）游戏：核心动作是不断挥拳击打面前的墙壁，把墙一层层打穿，直到“逃出去”。玩家通过持续点击获得进度，配合力量、效率等数值成长，让打穿的速度和收益不断放大，构成典型的“数字越滚越大”的爽感循环。\n\n【题材与表达】把“越狱/逃亡”包装成“物理上把墙打没了”，动作与目标高度统一，观众一眼就能理解发生了什么，天然适合短视频与动图传播。\n\n【美术与氛围】画面克制、以打墙反馈与破碎特效为主，视觉重心放在每一次击打的即时反馈与进度可视化上。\n\n【优势】机制极简、理解门槛几乎为零；增量品类的长尾留存与“挂机收益”特性成熟；传播素材（311 万浏览）已经验证。\n【不足】目前仅公布概念短片、Steam 页面尚未上线；增量游戏普遍需要长线内容与数值设计支撑，否则容易在前 1 小时被“看穿”。\n\n【综合评价】一款以“拳头打穿墙壁”为唯一动作的增量独游，靠极简机制和强传播属性在社媒快速起量，后续表现取决于数值成长与内容更新的深度。",
+            "why_notable": "把增量玩法压缩成一个动作（打墙），单条推文 311 万浏览，验证“极简机制”的社媒传播红利",
+            "pcu": "暂未发售",
+            "current_players": "—",
+            "estimated_sales": "暂无数据",
+            "gi_summary": "打穿墙壁的增量放置独游，Pandoriol 独立开发，Steam 页面即将上线"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Rock Paper Shotgun · 新游报道",
+          "tags": ["生存", "合作", "正式发售"],
+          "title": "Keen Games《雾锁王国 Enshrouded》结束近 3 年 EA，正式 1.0——今日 PCU 破 6.5 万",
+          "en_title": "After almost three years of early access, Enshrouded has hit 1.0 with a complete story, bigger map, and way too much more to mention",
+          "full_text": "After almost three years of early access, Enshrouded has hit 1.0 with a complete story, bigger map, and way too much more to mention https://t.co/ltwf1F47QB",
+          "author": "rockpapershot",
+          "date": "2026-10-15",
+          "likes": 1,
+          "views": 201,
+          "link": "https://x.com/rockpapershot/status/2110779544521097497",
+          "media": {
+            "type": "image",
+            "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/98ca939f51b39bdd41e0e9198a9ccf8421148770/header_alt_assets_2.jpg?t=1792078032"
+          },
+          "summary": "《雾锁王国（Enshrouded）》在抢先体验近三年后正式推出 1.0 版本：完整剧情线、更大的地图以及大量新内容。据 Steam 实时数据，游戏今日 PCU 峰值达 65,204（前一日仅 17,002，历史峰值 160,405），当前在线约 42,626，Steam 累计 94,891 条评价，国区售价 ¥124.20。由德国 Keen Games 开发并自发行的生存动作 RPG。",
+          "analysis": "一款 EA 近三年的作品靠 1.0 把 PCU 从 1.7 万拉到 6.5 万，说明“正式版就是第二次首发”在长线生存品类里依然成立。对买断制合作生存团队而言，EA 期的口碑积累 + 1.0 的媒体节点，是可复用的节奏打法；但峰值能否维持，仍取决于 1.0 之后的更新速度。",
+          "recommendation": "《雾锁王国 Enshrouded》结束近 3 年 EA 正式 1.0，今日 PCU 破 6.5 万（前日 1.7 万）",
+          "featured": true,
+          "game_ref": "Enshrouded",
+          "enrichment": {
+            "game_name": "Enshrouded",
+            "genre": "生存 / 动作 RPG / 建造 / 合作",
+            "developer": "Keen Games GmbH（德国，自发行）",
+            "platforms": ["Steam (PC)"],
+            "price": "¥124.20",
+            "release_date": "已发售 · 2026年10月15日（1.0 正式版）",
+            "steam_rating": "94,891 条评价",
+            "steam_url": "https://store.steampowered.com/app/1203620/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/98ca939f51b39bdd41e0e9198a9ccf8421148770/header_alt_assets_2.jpg?t=1792078032",
+            "youtube_video": null,
+            "description": "【核心玩法】《雾锁王国》是一款单人/合作生存动作 RPG：玩家在受腐化瘴气侵蚀的“薪谷王国”中探索手工打造的世界、对抗瘴气怪物、开辟道路，并在完全支持地形改造的世界中随意建造。主线通关约 48 小时，全收集约 84 小时（HowLongToBeat）。\n\n【机制特色】最大差异点是“全地形可挖掘/可建造”与滑翔、冲刺等垂直移动能力，把生存建造的基地自由度推到接近沙盒；配合体素化地形与体素光照，破坏与重建几乎没有限制。\n\n【合作与流程】支持最多多人合作，1.0 版本补齐完整剧情线、扩大地图并加入大量新内容，为 EA 近三年的长线开发画上句号。\n\n【美术与氛围】偏写实的奇幻风格，雾气、废墟与地下城构成主要视觉语言，氛围压抑但探索感强。\n\n【优势】地形改造自由度在同类中领先；合作生存受众稳定；1.0 剧情完整、评价基数大（94,891 条）。\n【不足】生存建造赛道竞争密集，生命周期高度依赖后期更新；近三年 EA 也意味着部分玩家的新鲜感已被消耗。\n\n【综合评价】一款把“可破坏地形 + 生存建造 + 合作”做扎实的生存动作 RPG，1.0 的强势 PCU 回升证明其长线运营与口碑的兑现能力，是买断制合作生存的稳健样本。",
+            "why_notable": "EA 近三年后 1.0 正式发售，当日 PCU 从 1.7 万跃升至 6.5 万，验证“正式版即二次首发”的长线打法",
+            "pcu": "65,204（2026-10-16）",
+            "current_players": "~42,626",
+            "estimated_sales": "暂无官方数据（94,891 条 Steam 评价）",
+            "gi_summary": "「体素地形改造」套「合作生存建造」的生存动作 RPG，德国 Keen Games 自研自发，Steam 售价 ¥124.20"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "ファミ通.com · 新游报道",
+          "tags": ["休闲", "潜行", "变形"],
+          "title": "Radbot Productions《Tanuki Tag》：狸猫变形「躲猫猫」，类《めっちゃカメレオン》",
+          "en_title": "タヌキがさまざまな形に化けて「かくれんぼ」する『Tanuki Tag』が近日リリース。『めっちゃカメレオン』ライクの期待作",
+          "full_text": "タヌキがさまざまな形に化けて「かくれんぼ」する『Tanuki Tag』が近日リリース。『めっちゃカメレオン』ライクの期待作\nhttps://t.co/U4VNlqrVDZ\n\n体を自由に変形させて、周囲のグラフィックを体にコピーできる機能で簡単にカモフラージュ。本物そっくりに化けられるけど、目・鼻・耳や尻尾は隠せない。",
+          "author": "famitsu",
+          "date": "2026-10-15",
+          "likes": 932,
+          "views": 189694,
+          "link": "https://x.com/famitsu/status/2110634474186973661",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2110634390149902336/pu/img/K6XXWQRX5HfA6xOf.jpg",
+            "video_url": "https://x.com/famitsu/status/2110634474186973661"
+          },
+          "summary": "《Tanuki Tag》是一款狸猫主题的隐藏/躲猫猫游戏：玩家可自由变形身体，并把周围环境的贴图复制到身上进行伪装，但眼睛、鼻子、耳朵和尾巴无法完全隐藏，成为识别对手的破绽。玩法被ファミ通类比为《めっちゃカメレオン》，由 Radbot Productions 开发，即将在 Steam 推出。",
+          "analysis": "“伪装 + 找出破绽”的社交推理雏形，配合可复制环境贴图的视觉机制，天然适合直播与好友开黑——这正是近年派对/躲猫猫品类的流量密码。把“藏不住的五官”设为固定弱点，是聪明的规则设计：既保留可玩性，又给追捕方明确目标。",
+          "recommendation": "Radbot Productions《Tanuki Tag》：狸猫变形「躲猫猫」，能复制环境贴图但藏不住五官——189K 浏览",
+          "game_ref": "Tanuki Tag",
+          "enrichment": {
+            "game_name": "Tanuki Tag",
+            "genre": "休闲 / 潜行 / 策略 / 独立",
+            "developer": "Radbot Productions（独立开发）",
+            "platforms": ["Steam (PC)"],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5128560/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5128560/70e802ae02d2cef927aa7b20c17195a30ffb4bbf/header.jpg?t=1791713260",
+            "youtube_video": null,
+            "description": "【核心玩法】狸猫主题的变形躲猫猫：玩家自由拉伸、挤压、重塑身体变成各种离谱的伪装造型，可以变小也可以变大，并把周围环境贴图复制到身上实现变色龙式伪装，与朋友一起制造混乱。官方定位为“不是你奶奶那种躲猫猫”。\n\n【规则差异】关键设计是“无法完全伪装”——即使把身体变成环境的一部分，眼睛、鼻子、耳朵和尾巴仍会露出来，给追捕方留下可识别的破绽，把玩法从纯躲藏推向“伪装 + 找茬”的对抗。\n\n【社交属性】被ファミ通类比《めっちゃカメレオン》，属于适合好友开黑与直播的派对型隐藏游戏，玩法核心在于“伪装得像不像”带来的即时节目效果。\n\n【美术】卡通低多边形风格，角色造型荒诞夸张，视觉重心放在变形与贴图伪装的效果上。\n\n【优势】伪装规则清晰且带破绽设计，兼顾藏与找；派对属性强、传播素材好；Steam 已有商店页。\n【不足】尚未公布发售日与价格；躲猫猫品类需要足够的地图与模式支撑长线，否则新鲜感衰减快。\n\n【综合评价】一款把“变形伪装”做成核心对抗的派对躲猫猫游戏，规则设计的巧思（藏不住的五官）是亮点，能否留住玩家取决于地图与模式的内容量。",
+            "why_notable": "把“可复制环境贴图 + 藏不住的五官”做成伪装与找茬的对抗，派对躲猫猫品类的高传播设计",
+            "pcu": "暂未发售",
+            "current_players": "—",
+            "estimated_sales": "暂无数据",
+            "gi_summary": "狸猫变形私服躲猫猫，可复制环境贴图伪装，Radbot Productions 独立开发，Steam 即将推出"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "電ファミニコゲーマー · 新游报道",
+          "tags": ["模拟经营", "休闲", "体验版"],
+          "title": "Clover Rock Games《Livin' the Cream》：经营加勒比风情冰淇淋店，体验版配信中",
+          "en_title": "アイスクリームショップを経営するシミュレーター『Livin' the Cream: Ice Cream Simulator』Steamで体験版が配信中",
+          "full_text": "アイスクリームショップを経営するシミュレーター『Livin' the Cream: Ice Cream Simulator』Steamで体験版が配信中\nhttps://t.co/0G7H7EDac7\n\n好きなトッピングを乗せまくり、お気に入りのアイスクリームを作り出せる。接客や掃除、仕入れまで行い“自分の店”を育てていく https://t.co/VwVqk6LeUm",
+          "author": "denfaminicogame",
+          "date": "2026-10-15",
+          "likes": 5461,
+          "views": 460573,
+          "link": "https://x.com/denfaminicogame/status/2110620189314453616",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2110620159971078144/pu/img/tV-2rUkyDD8xHNII.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2110620189314453616"
+          },
+          "summary": "《Livin' the Cream: Ice Cream Simulator》是一款经营冰淇淋店的模拟游戏，Steam 体验版正在配信中。玩家可自由堆叠喜欢的配料做出专属冰淇淋，并完成接待顾客、打扫店铺、补货等经营环节，把自己的小店逐步培养壮大。由 Clover Rock Games 开发，Ritual Interactive 参与发行，预计 2026 年第四季度推出。",
+          "analysis": "模拟经营仍是独立游戏最稳的“低风险品类”之一：机制易懂、目标亲民、便于用短视频展示“堆料”与整洁前后的对比。《Livin' the Cream》用加勒比风情 + 高自由度配料做差异化，配合体验版提前蓄水，是当前独游常见的稳妥打法。",
+          "recommendation": "Clover Rock Games《Livin' the Cream》：经营加勒比风情冰淇淋店，体验版配信中——46 万浏览",
+          "game_ref": "Livin' the Cream",
+          "enrichment": {
+            "game_name": "Livin' the Cream",
+            "genre": "模拟经营 / 休闲",
+            "developer": "Clover Rock Games（独立开发）",
+            "platforms": ["Steam (PC)"],
+            "price": "未公布",
+            "release_date": "2026 年第四季度",
+            "steam_rating": "未发售（体验版配信中）",
+            "steam_url": "https://store.steampowered.com/app/4621810/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4621810/143debfd63a0a9f51f42633433d2584d8026656c/header.jpg?t=1792064708",
+            "youtube_video": null,
+            "description": "【核心玩法】在加勒比风情的海滨经营自己的冰淇淋店：制作冰淇淋、混合口味、自由添加配料，做出顾客想要的（或自己最爱的）冰淇淋；同时要接待顾客、保持店铺整洁、补充食材、雇佣员工，把路边小摊逐步发展成繁忙的连锁企业。\n\n【机制循环】典型的模拟经营闭环——制作 → 服务 → 清洁 → 补货 → 扩张，并叠加“自由堆料”的创意表达，让玩家在效率与创意之间自行取舍。\n\n【内容与阶段】Steam 已开放体验版（Prologue），可先行体验制作与经营循环；正式版预计 2026 年第四季度上线，由 Clover Rock Games 开发、Ritual Interactive 参与发行。\n\n【美术与氛围】明亮轻快的加勒比度假色调，视觉重点放在色彩缤纷的冰淇淋与配料的堆叠展示上，观感放松。\n\n【优势】题材亲民、上手门槛低；自由配料带来 UGC 式分享素材；体验版提前蓄水。\n【不足】模拟经营赛道产品密集，同质化风险高；长线留存取决于菜谱、员工与店面扩张系统的深度。\n\n【综合评价】一款氛围轻松、机制稳妥的冰淇淋店经营模拟，靠加勒比风情与高自由度配料做差异化，属于模拟经营赛道的安全牌。",
+            "why_notable": "加勒比风情 + 高自由度配料的冰淇淋店经营模拟，靠体验版提前蓄水，46 万浏览",
+            "pcu": "暂未发售（体验版配信中）",
+            "current_players": "—",
+            "estimated_sales": "暂无数据",
+            "gi_summary": "加勒比风情冰淇淋店经营模拟，Clover Rock Games 开发，Steam 体验版配信中"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "Indie Game Joe · 新游曝光",
+          "tags": ["平台跳跃", "元游戏", "挑战"],
+          "title": "《Refund This Game》：核心机制就是“2 小时内通关好退款”的挑战平台游戏，已上 Steam",
+          "en_title": "These indie devs made a real time refund challenge — Game is Refund This Game. It's out on Steam now.",
+          "full_text": "These indie devs made a real time refund challenge\n\n- Beat the game in under 2 hours to refund it\n- Fling yourself up walls with a bendy pole\n- One slip drops you all the way back down\n- An achievement proves you beat it in time\n\nGame is Refund This Game. It's out on Steam now. https://t.co/Hj6l5elakb",
+          "author": "IndieGameJoe",
+          "date": "2026-10-13",
+          "likes": 399,
+          "views": 22230,
+          "link": "https://x.com/IndieGameJoe/status/2110045647273390283",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110042425410330624/img/iOzzQ1NJUP7L-gfm.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2110045647273390283"
+          },
+          "summary": "《Refund This Game》把 Steam 的退款政策本身做成玩法：玩家需要用一根可弯曲的长杆把自己弹上墙壁，一旦失手就一路摔回起点；目标是在 2 小时内通关，成就系统会证明你是否“赶上了退款窗口”。游戏已在 Steam 发售。",
+          "recommendation": "《Refund This Game》：把“2 小时内通关好退款”做成核心挑战的平台游戏，已上 Steam",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Indie Game Joe · 新游曝光",
+          "tags": ["黏土定格", "动作冒险", "3D扫描"],
+          "title": "《Spectral Map》：几乎所有场景都由真实黏土定格动画 + 3D 扫描制作",
+          "en_title": "Almost everything in this game is made from real clay using stop motion and 3D scanning — Game is Spectral Map.",
+          "full_text": "Almost everything in this game is made from real clay using stop motion and 3D scanning\n\n- Surf, bunny hop & rocket jump around\n- Fight or outrun a cast of strange enemies\n- Over a hundred kinds of NPC to talk to\n- Find items that change how the game works\n\nGame is Spectral Map. https://t.co/3qZyNqM2FB",
+          "author": "IndieGameJoe",
+          "date": "2026-10-14",
+          "likes": 490,
+          "views": 13907,
+          "link": "https://x.com/IndieGameJoe/status/2110461195463352577",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110460230530117632/img/D32hg9Xo36imaiZ5.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2110461195463352577"
+          },
+          "summary": "《Spectral Map》是一款用真实黏土通过定格动画 + 3D 扫描制作的 3D 动作冒险游戏：玩家可以冲浪、兔子跳与火箭跳穿越场景，与超过 100 种 NPC 对话，并寻找能改变游戏规则的物品；敌人既可硬刚也可绕开。",
+          "recommendation": "《Spectral Map》：几乎全部由真实黏土定格动画 + 3D 扫描制作的 3D 动作冒险",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Fragoso Ent · 新游推荐",
+          "tags": ["动作", "隐藏宝石", "2D"],
+          "title": "《Homura Hime》：被开发者称为“隐藏宝石”的 2D 动作游戏",
+          "en_title": "Everybody talking about Hood Warfare 2 and I'm just over here like \"Yo Homura Hime is fucking sick as hell\" this shit a hidden gem.",
+          "full_text": "Everybody talking about Hood Warfare 2 and I'm just over here like \"Yo Homura Hime is fucking sick as hell\" this shit a hidden gem. \n\nhttps://t.co/WEdqnzSdXe https://t.co/FpbrBgo2K8",
+          "author": "FENTLLC",
+          "date": "2026-10-14",
+          "likes": 865,
+          "views": 23310,
+          "link": "https://x.com/FENTLLC/status/2110309054539354364",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110307798101729280/img/FyFFLBOErFnsKxxx.jpg",
+            "video_url": "https://x.com/FENTLLC/status/2110309054539354364"
+          },
+          "summary": "开发者 Fragoso 推荐《Homura Hime》，称其为“隐藏宝石”级别的 2D 动作游戏，认为其表现力远超热度，值得更多关注。",
+          "recommendation": "《Homura Hime》：被开发者称为“隐藏宝石”的 2D 动作游戏，游戏性远超热度",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Mike Houser · 开发者分享",
+          "tags": ["独立开发", "在线世界", "永久死亡"],
+          "title": "《Aestra》：辞掉工作、花 $1,400 做出来的游戏，已有 1.7 万人游玩",
+          "en_title": "A month ago I quit my job with no idea how to code, just a dream of making the game I always wanted to play. I spent my last $1,400 creating it.",
+          "full_text": "A month ago I quit my job with no idea how to code, just a dream of making the game I always wanted to play. I spent my last $1,400 creating it.\n\nToday over 17,000 of you have played Aestra. Seeing my game full of life, players trading, dueling and teaming up in the main city hub, doing content together. It's just amazing to see.\n\nI still have a big list of probably 50 things I want to add, and they're coming. Every player and every character lost to permadeath keeps me going. Thank you ❤️",
+          "author": "M__Houser",
+          "date": "2026-10-15",
+          "likes": 14,
+          "views": 451,
+          "link": "https://x.com/M__Houser/status/2110750857528803516",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110655269856550912/img/A3t3kaOfq0kCorWJ.jpg",
+            "video_url": "https://x.com/M__Houser/status/2110750857528803516"
+          },
+          "summary": "开发者 Mike Houser 称一个月前辞职时还不会写代码，用最后的 1,400 美元做出了游戏《Aestra》；如今已有超过 1.7 万名玩家进入游戏，在城市枢纽里交易、对决与组队。游戏含永久死亡机制，开发者表示仍有一长串待加内容，并感谢玩家支持。",
+          "recommendation": "《Aestra》：辞职、花 $1,400 做出来的游戏，已有 1.7 万人游玩",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Eurogamer · 工具/行业",
+          "tags": ["开源框架", "游戏引擎", "C#"],
+          "title": "Dean Hall 开源免费 C# 游戏框架 Brutal，炮轰 Unreal/Unity「贪婪正在腐烂行业」",
+          "en_title": "DayZ creator Dean Hall says \"our industry is rotting from its core\" because of big-company \"greed\", aiming shots at Epic's Unreal and Unity",
+          "full_text": "DayZ creator Dean Hall says \"our industry is rotting from its core\" because of big-company \"greed\", aiming shots at Epic's Unreal and Unity https://t.co/Z4YHYIaidj https://t.co/yHh5FjsnPf",
+          "author": "eurogamer",
+          "date": "2026-10-15",
+          "likes": 10,
+          "views": 5457,
+          "link": "https://x.com/eurogamer/status/2110719203867279532",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUrH2WnWMAAYQFT.jpg"
+          },
+          "summary": "《DayZ》《Icarus》《Kitten Space Agency》创作者 Dean Hall 在 Reddit 发文，称“我们的行业正在从内核向外腐烂”，根源是“贪婪”与无底线的价格战，并直言开发者“把对作品的控制权拱手让给了利益并不一致的公司”。他同时开源了免费 C# 游戏框架 Brutal（附源码、商用免费、无版税、仅需署名），Kitten Space Agency 即用其构建。他点名 Epic/Unreal 与 Unity：称其“把 AI 贴到一切上”反而在加速摧毁自身商业模式，并对 Unreal 超阈值后抽 5% 版税、以及引擎商对开发者缺乏问责表示不满。他明确 Brutal 内不含任何生成式 AI。",
+          "analysis": "这是“引擎依赖”议题近年最尖锐的一次公开表达：把引擎商抽成、控制权与生成式 AI 转向打包成同一条批判。Brutal 开源免费且无版税，给中小团队提供了现实的“逃生艇”选项，但框架而非引擎的定位也意味着生态与工具链仍需时间验证——值得关注它能否真的形成替代路径。",
+          "recommendation": "Dean Hall 开源免费 C# 游戏框架 Brutal，炮轰 Unreal/Unity「贪婪正在腐烂行业」：无版税、含源码",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Tezumie · 工具发布",
+          "tags": ["像素画", "开源", "Web工具"],
+          "title": "Tezumie 发布 Image-to-Pixel 3.0：浏览器内把图片/视频转像素画，免费 MIT 开源",
+          "en_title": "Image-to-Pixel 3.0 is out — Turn images and video into pixel art right in your browser. Free, MIT open source.",
+          "full_text": "Image-to-Pixel 3.0 is out 🎨\n\nTurn images and video into pixel art right in your browser. Free, MIT open source.\n\nTry it: https://t.co/Ib0VCA5zym\nOr use it in code: npm i image-to-pixel https://t.co/Ddv72nmmgV",
+          "author": "Tezumies",
+          "date": "2026-10-14",
+          "likes": 1857,
+          "views": 79182,
+          "link": "https://x.com/Tezumies/status/2110483316348784784",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110482786213879808/img/LAEpiIeyHoncM3Gf.jpg",
+            "video_url": "https://x.com/Tezumies/status/2110483316348784784"
+          },
+          "summary": "Tezumie 发布 Image-to-Pixel 3.0：可直接在浏览器里把图片和视频转换成像素画，免费且以 MIT 协议开源；同时提供 npm 包（npm i image-to-pixel）供开发者在代码中调用。作者此前还演示过让 coding agent 调用它来生成像素角色。",
+          "analysis": "把“图/视频 → 像素画”做成一行 npm 依赖和网页工具，等于把像素美术的一个高重复度环节自动化了。对独立项目而言，这意味着可以用现成素材快速统一美术风格；配合 Agent 调用，还能形成“生成素材 → 自动像素化”的流水线。",
+          "recommendation": "Tezumie 发布 Image-to-Pixel 3.0：浏览器内把图片/视频转像素画，免费 MIT 开源（npm i image-to-pixel）"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**GTA 6 首发预告片突袭发布**\nRockstar 在发售前一个多月放出 GTA 6 首发预告，Vice City、Jason 与 Lucia 剧情片段、原创配乐（Justice）与拟真设定一同亮相；Eurogamer 指出该作恰好卡进 The Game Awards 2026 报名窗口。\n\n**发行与运营的两面：立场与怀旧**\n《Untitled Goose Game》团队 House House 宣布《Big Walk》因支持 BDS 抵制微软而不登陆 Xbox；Riot 则宣布《英雄联盟 Classic》将在 2027 年 1 月下线，怀旧模式仅上线数月，称“多数玩家已回到 League 其他部分”。\n\n**AI 侧从能力转向算账**\n陈成自研 24MB 的 diff 优先编辑器 Mayoi；有人花约 $2,000 Opus 5.5 token 做出浏览器写实钓鱼模拟器；同时 AI 与半导体板块 5 天蒸发超 1 万亿美元。\n\n**独立游戏机制差异化集中展示**\n《Escape the Walls》用“一拳打穿墙壁”的增量玩法拿下 311 万浏览；《雾锁王国 Enshrouded》结束近 3 年 EA 正式 1.0、当日 PCU 从 1.7 万跃升至 6.5 万；《Tanuki Tag》狸猫变形躲猫猫、《Livin' the Cream》加勒比冰淇淋经营各有差异化。\n\n**开发工具：引擎权力之争与像素自动化**\nDean Hall 开源免费 C# 框架 Brutal 并炮轰 Unreal/Unity；Tezumie 发布 MIT 开源的 Image-to-Pixel 3.0。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
