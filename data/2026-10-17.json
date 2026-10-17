@@ -1,0 +1,567 @@
+{
+  "date": "2026-10-17",
+  "meta": {
+    "raw_count": 148,
+    "filtered_count": 138,
+    "selected_count": 17,
+    "crawl_time": "2026-10-17"
+  },
+  "lede": "NPCTalk 让任何游戏的 NPC 用克隆音色实时回话，GTA V 全城 NPC 延迟低于 1 秒；美国议员提出《Power To The Players Act》，主张付费买游戏即等于拥有游戏；Cygames 新品牌首作《崩落の国》把「下降」一个动词做成 1100 日元的动作冒险。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "NPCTalk 让 GTA V 全城 NPC 用克隆音色实时回话，延迟低于 1 秒——2126赞"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "《みなと食堂》：味觉失灵的幽灵开日料食堂，50 道菜都附真实食谱——4097赞"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 1,
+      "hook": "《Control Resonant》成 Remedy 史上最快畅销作品，超过《心灵杀手 2》与原版《控制》"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "NPCTalk 让任何游戏的 NPC 用克隆音色实时回话，GTA V 全城 NPC 延迟低于 1 秒。\n独立开发者用 Opus 5.5 串联 Claude Code、Unity 6、Blender 与 Tripo，单人搭出温馨农场游戏。\n爆红游戏次日被 AI 克隆上架 Roblox，克隆作者称「Claude 全干了，我只坐着」。"
+    },
+    {
+      "id": "industry",
+      "text": "美国议员提出《Power To The Players Act》：付费买游戏应等于拥有游戏，而非租许可。\nRemedy《Control Resonant》成为公司史上最快畅销作品。\nValve 公测 Achievement Sets，把 Steam 成就按 DLC 与赛季分桶。\n动视近 600 名《使命召唤》QA 员工投票授权工会罢工。"
+    },
+    {
+      "id": "indie",
+      "text": "《みなと食堂》：味觉失灵的幽灵开日料食堂，50 道菜都附真实食谱。\nCygames 新品牌 CygamesEdge 首作《崩落の国》：只需「下降」的 1100 日元动作冒险。\n《逢考弊过 Finals Week》：和朋友合作作弊撑过期末周，10 月 29 日发售。"
+    },
+    {
+      "id": "tools",
+      "text": "Unity 发布官方 CLI，统一 CI/CD 供给 Editor、跑测试与出包。\nUE5 实时流体与 VFX 工具 FluidNinja LIVE-2 免费发布，开发历时三年。"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "universal-modder · 独立开发者",
+          "tags": [
+            "AI NPC",
+            "开源模型",
+            "实时语音"
+          ],
+          "title": "NPCTalk：让任何游戏的 NPC 用克隆音色实时回话，GTA V 全城 NPC 可对话",
+          "en_title": "Introducing NPCTalk: make the NPCs of any game talk in realtime",
+          "full_text": "NPCs can talk back now!\n\nIntroducing NPCTalk: make the NPCs of any game talk in realtime. I made every NPC in GTA V answer to me in character, in their own cloned voice, in under 1s, and they act on what you say.\n\nWe packaged all the skills Claude learned into a single repo, built on open models: NVIDIA Nemotron ASR for transcription, Qwen 3.8 27B for realtime dialogue, and Fish Audio Drama 3 for the cloned voices, self-hosted on a serverless GPU. \n\nhttps://t.co/fzj9Bwd2uh",
+          "author": "universalmodhq",
+          "date": "2026-10-16",
+          "likes": 2126,
+          "views": 103891,
+          "link": "https://x.com/universalmodhq/status/2111026512057254236",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2111025000694341632/img/T7S9OGMrXKIfxwv7.jpg",
+            "video_url": "https://x.com/universalmodhq/status/2111026512057254236"
+          },
+          "summary": "开发者 universal-modder 发布 NPCTalk，目标是让任何游戏的 NPC 实时说话：他把 GTA V 里的每一个 NPC 都做成可对话对象，用 NPC 自己的克隆音色、在 1 秒内应答，并会按玩家说的话行事。整套能力打包成一个仓库，全部基于开源模型自托管在 serverless GPU 上——NVIDIA Nemotron ASR 负责转写、Qwen 3.8 27B 负责实时对话、Fish Audio Drama 3 负责音色克隆。",
+          "analysis": "AI NPC 正从「各家 demo」走向「可复用 repo + 开源模型自托管」，一旦拼接成本降到 1 秒延迟以下，开放世界的任务与对话设计就有了新的成本结构：内容量不再线性等于编剧工时。对从业者的启示是，真正的门槛在「让 NPC 按玩家的话行事」的行为一致性，而不在语音本身。",
+          "recommendation": "NPCTalk 让 GTA V 全城 NPC 用克隆音色实时回话，延迟低于 1 秒——2126赞",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Mnilax · 独立开发者",
+          "tags": [
+            "AI 辅助开发",
+            "Unity",
+            "工作流"
+          ],
+          "title": "单人用 Opus 5.5 + Unity 6 搭出温馨农场游戏：把工作室拆成「一个 prompt 一个部门」",
+          "en_title": "how i build a cozy farm game solo with Opus 5.5 and Unity 6",
+          "full_text": "game studios are cooked\n\nhow i build a cozy farm game solo with Opus 5.5 and Unity 6\n\nthe trick is building it like a studio, one department per prompt:\n\nstep 1 -> connect Claude Code to Unity 6 and Blender through MCP\nstep 2 -> write a 1-page doc: plant > water > harvest > sell, 4 seasons\nstep 3 -> generate every model in Tripo: farmer, barn, windmill, crops\nstep 4 -> Opus cleans them in Blender and builds the island in Unity\nstep 5 -> one system per prompt: planting, growth timers, market, coi...",
+          "author": "Mnilax",
+          "date": "2026-10-15",
+          "likes": 771,
+          "views": 47359,
+          "link": "https://x.com/Mnilax/status/2110773148081606775",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110763018568998912/img/hxCEZzHeFEs-E95N.jpg",
+            "video_url": "https://x.com/Mnilax/status/2110773148081606775"
+          },
+          "summary": "开发者 Mnilax 公开了单人用 Opus 5.5 + Unity 6 做温馨农场游戏的流程，核心思路是「像工作室一样组织，一个 prompt 当一个部门」：先通过 MCP 把 Claude Code 接到 Unity 6 与 Blender；写一页纸设计文档（种植 → 浇水 → 收获 → 出售，四季）；用 Tripo 生成全部模型（农夫、谷仓、风车、作物）；由 Opus 在 Blender 里清理资产并在 Unity 里搭出岛屿；再以「一个系统一个 prompt」的方式实现种植、生长计时、市场等模块。",
+          "analysis": "这条的价值不在「AI 能做完游戏」，而在于把传统工作室的部门切分（美术、关卡、系统）映射成可复用的 prompt 流水线——即用工程化的拆解方式换取单人产能。对团队而言，可迁移的部分是「资产清洗 + 系统实现」这两段最耗时的中间工序；不可迁移的是品味与验收判断。",
+          "recommendation": "独立开发者用 Opus 5.5 串起 Claude Code、Unity 6、Blender 与 Tripo，每个 prompt 当一个部门——771赞",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Game*Spark · 日媒",
+          "tags": [
+            "AI 克隆",
+            "Roblox",
+            "版权争议"
+          ],
+          "title": "爆红「拳击墙壁逃生」游戏次日被 AI 克隆上架 Roblox：克隆作者称「Claude 全干了，我只坐着」",
+          "en_title": "SNSでバズった「壁をパンチして脱出するゲーム」発表の翌日、そっくり作品がRobloxに登場─蔓延するAI使用クローンゲーム",
+          "full_text": "SNSでバズった「壁をパンチして脱出するゲーム」発表の翌日、そっくり作品がRobloxに登場─蔓延するAI使用クローンゲーム。「アイデア公開すべきではない」との声も\nhttps://t.co/Be1bF1dk5b\n\n「Claudeが全部やってくれたよ、私は椅子に座って見てただけ」。\n\n下記映像は元のバズったポストのもの。\nhttps://t.co/B8q201DLEF",
+          "author": "gamespark",
+          "date": "2026-10-16",
+          "likes": 109,
+          "views": 37471,
+          "link": "https://x.com/gamespark/status/2111011804524793955",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110335504549814272/img/uVJdm16G_EkOlP_x.jpg",
+            "video_url": "https://x.com/gamespark/status/2111011804524793955"
+          },
+          "summary": "日媒 Game*Spark 报道：一款在社交网络爆红的「拳击墙壁逃生」游戏公布后的第二天，Roblox 上就出现了几乎一模一样的作品。克隆作者直言「Claude 全都干了，我只是坐在椅子上看着」。报道指出用 AI 批量生产克隆游戏的做法正在蔓延，同时出现了「不应该公开自己的创意」的声音。",
+          "analysis": "AI 把「创意公开 → 被复刻」的窗口从数月压缩到一天，直接改变了独立开发者的曝光策略：先发 demo 吸引关注的风险正在上升。对平台方而言，这类低成本克隆会持续稀释原创者的首发红利，Roblox 这类 UGC 平台的审核与原创保护将被迫前置。",
+          "recommendation": "爆红游戏次日被 AI 克隆上架 Roblox，克隆作者称「Claude 全干了，我只坐着」——109赞",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "PC Gamer · 多家报道（PC Gamer / Destructoid）",
+          "tags": [
+            "数字所有权",
+            "立法",
+            "商业模式"
+          ],
+          "title": "美国议员提出《Power To The Players Act》：付费买游戏应等于拥有游戏，而非租用许可",
+          "en_title": "US lawmaker calls videogame purchases rentals disguised as sales: 'When you pay for a game, you should own it'",
+          "full_text": "US lawmaker calls videogame purchases rentals disguised as sales https://t.co/nzKO8tqQLQ",
+          "author": "pcgamer",
+          "date": "2026-10-16",
+          "likes": 1758,
+          "views": 96154,
+          "link": "https://x.com/pcgamer/status/2110886094569136435",
+          "media": null,
+          "summary": "一名美国议员（纽约州）公开主张「电子游戏购买是被包装成销售的租用」，并提出《Power To The Players Act》法案，目标是「close the gap between buying a game and owning it」——让玩家买到的是游戏本身，而不只是一纸游玩许可。PC Gamer 称其核心口号是「When you pay for a game, you should own it」，Destructoid 等多家媒体同步报道。",
+          "analysis": "这是「停止杀死游戏」运动之后，数字所有权议题第一次被推进到立法文本层面。若法案落地，直接受冲击的是订阅制、在线服务游戏的下架/停服条款与 EULA 结构——长线运营型产品的成本模型需要重新计算；反向看，它也给「买断 + 离线可玩」的产品形态提供了政策顺风。",
+          "recommendation": "美国议员提出《Power To The Players Act》：付费买游戏就该拥有游戏，而非租许可——1758赞",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 多家报道（Eurogamer / Polygon）",
+          "tags": [
+            "销量",
+            "Remedy",
+            "IP 运营"
+          ],
+          "title": "Remedy《Control Resonant》成为公司史上最快畅销作品，超过《心灵杀手 2》与原版《控制》",
+          "en_title": "Control Resonant becomes the fastest-selling game in Remedy's history, outpacing Alan Wake 2 and the original Control",
+          "full_text": "Control Resonant becomes the fastest-selling game in Remedy's history, outpacing Alan Wake 2 and the original Control\n\nhttps://t.co/UDBj9hjzoM https://t.co/ccFy7uyH9T",
+          "author": "eurogamer",
+          "date": "2026-10-16",
+          "likes": 79,
+          "views": 5027,
+          "link": "https://x.com/eurogamer/status/2111049747318677844",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUvz9Qwa8AA6k7j.jpg"
+          },
+          "summary": "Eurogamer 报道（Polygon 同日跟进）：《Control Resonant》已成为 Remedy 公司历史上最快畅销的作品，销售速度超过《心灵杀手 2》与原版《控制》。对过去长期「口碑好、销量平平」的 Remedy 而言，这是一次商业层面的突破。",
+          "analysis": "《控制》IP 的续作/衍生路线跑通了 Remedy 的商业化：同一世界观复用可以同时降低新作的世界观建设成本与营销获客成本。对中型工作室的启示是，与其每次押注全新 IP，不如把已验证的设定做成可持续的系列资产。",
+          "recommendation": "《Control Resonant》成 Remedy 史上最快畅销作品，超过《心灵杀手 2》与原版《控制》",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "PC Gamer · 多家报道（PC Gamer / Rock Paper Shotgun）",
+          "tags": [
+            "Steam",
+            "平台政策",
+            "成就系统"
+          ],
+          "title": "Steam 成就系统大改：Achievement Sets 公测，把膨胀的成就按 DLC 与赛季分桶",
+          "en_title": "Steam achievements are getting a huge overhaul",
+          "full_text": "Steam achievements are getting a huge overhaul https://t.co/RWrK0aRSSp",
+          "author": "pcgamer",
+          "date": "2026-10-16",
+          "likes": 619,
+          "views": 66054,
+          "link": "https://x.com/pcgamer/status/2110883589818851621",
+          "media": null,
+          "summary": "Valve 正在 beta 渠道推送 Steam 成就系统的大改版：新机制名为 Achievement Sets，把长线运营游戏里不断膨胀的成就列表按 DLC 与赛季拆分成不同分组。PC Gamer 称这是一次「huge overhaul」，Rock Paper Shotgun 也报道了该 beta 细节。",
+          "analysis": "表面是成就整理，实质是 Steam 对「长线运营游戏」这一品类的又一次平台侧适配——把成就从一次性清单变成可分组、可随赛季递进的进度结构。对发行方而言，这为赛季制产品的复玩激励提供了更细的官方承载位；对成就猎人社区，则意味着完成度口径需要重算。",
+          "recommendation": "Valve 公测 Achievement Sets：把膨胀的 Steam 成就按 DLC 与赛季分桶——619赞",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Rock Paper Shotgun · 行业",
+          "tags": [
+            "工会",
+            "动视",
+            "劳工"
+          ],
+          "title": "动视近 600 名《使命召唤》QA 员工投票授权工会罢工",
+          "en_title": "Call of Duty testers have voted to authorise a union strike",
+          "full_text": "Call of Duty testers have voted to authorise a union strike. The union, formed back in March of 2024, is made up of almost 600 quality assurance workers at Activision, and plan to strike if conditions at the publisher don't change. https://t.co/Mh1LBAopBp https://t.co/xgzqR21zkt",
+          "author": "rockpapershot",
+          "date": "2026-10-16",
+          "likes": 4,
+          "views": 1375,
+          "link": "https://x.com/rockpapershot/status/2111057088491241604",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUv7PA1XoAAdaiO.jpg"
+          },
+          "summary": "Rock Paper Shotgun 报道：《使命召唤》的测试人员已投票授权工会罢工。该工会成立于 2024 年 3 月，由动视近 600 名 QA（质量保证）员工组成，若发行商不改改善工作条件就将采取罢工行动。",
+          "analysis": "QA 是游戏业最容易被外包与自动化挤压的岗位，也因此成为工会化推进最快的一环——这次投票的意义在于把「授权罢工」变成了实际谈判筹码。对国内团队的间接启示是：当 QA 成本与 AI 测试工具同时变化时，岗位定义与人力结构会被一并重估。",
+          "recommendation": "动视近 600 名《使命召唤》QA 员工投票授权工会罢工，要求改善条件",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "み！@ゲーム開発 · 独立开发者",
+          "tags": [
+            "烹饪模拟",
+            "绘本风",
+            "Steam"
+          ],
+          "title": "電脳鈴木組《みなと食堂 大はまぐりの幻》：尝不出味道的小幽灵开日料食堂，登陆 Steam 烹饪节",
+          "en_title": "味見のできないおばけが、港の島で食堂をやるゲーム『みなと食堂』",
+          "full_text": "#インディーゲーム #ゲーム制作\n味見のできないおばけが、港の島で食堂をやるゲーム\n『みなと食堂』\nを作っています。\n\n鯵をおろしたり、だしを引いたり、定食を舟で町までとどけたりできます。\n\nいま Steam の Cooking Fest に出ているので、ウィッシュリストに入れてもらえるとよろこびます🪼 https://t.co/ZrnVn3IaGC",
+          "author": "CG2cAjtAax8033",
+          "date": "2026-10-15",
+          "likes": 4097,
+          "views": 171209,
+          "link": "https://x.com/CG2cAjtAax8033/status/2110521137168089219",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110518963679735808/img/Y-iVznOkKTAeXYQI.jpg",
+            "video_url": "https://x.com/CG2cAjtAax8033/status/2110521137168089219"
+          },
+          "summary": "独立开发者「電脳鈴木組」正在制作《みなと食堂 大はまぐりの幻》：玩家扮演一只在港湾小岛开食堂、却尝不出味道的幽灵，要亲手开鲹鱼、吊出汁，做好定食后用船送到镇上。作品目前正在 Steam Cooking Fest 出展，开发者请大家加入愿望单。",
+          "analysis": "",
+          "recommendation": "《みなと食堂》：味觉失灵的幽灵开日料食堂，50 道菜都附真实食谱——4097赞",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Minato Shokudo: Mirage of the Great Clam",
+            "genre": "休闲 / 独立 / 模拟",
+            "developer": "電脳鈴木組（独立小团队）",
+            "platforms": [
+              "Steam (Windows / macOS)"
+            ],
+            "price": "未公布",
+            "release_date": "2026年12月",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5374490/Minato_Shokudo_Mirage_of_the_Great_Clam/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5374490/09297b9c1e952a940434527d507eea142e49e3d0/header.jpg?t=1792047327",
+            "youtube_video": null,
+            "description": "味觉失灵的小幽灵在港湾小岛开日料食堂的温馨烹饪模拟。\n\n【核心玩法】照着食谱一步步做——昆布要在水将开未开时捞起，鲹鱼要开腹处理，出汁要正经吊出来；做好的定食还得趁热划船送到港湾对岸。料理工序意外地「较真」，50 道菜全部附带可以在家复现的真实食谱。\n\n【美术与氛围】低多边形绘本风，以一个起雾的夜晚灯塔熄灯作为叙事引子，整体基调安静治愈。\n\n【优势】把「主角尝不出味道、只能靠食谱」这个限制变成了玩法核心，工序感与治愈感同时成立；附带真实食谱是少见的内容延伸，能自然带来二次传播。\n【不足】料理动作若重复度过高，节奏容易偏慢；售价与完整关卡量尚未公布。\n\n【综合】Steam 烹饪节期间收获 4000+ 赞，说明「认真做饭」这一细分仍有空间，成败关键在工序深度与叙事能否撑住长线。",
+            "why_notable": "把「主角尝不出味道、只能照着食谱做」设为玩法核心，工序还原度 + 绘本风形成差异化；Steam 烹饪节期间获 4000+ 赞",
+            "pcu": "暂未发售",
+            "current_players": "暂未发售",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「日料烹饪模拟」套「幽灵食堂」新瓶，電脳鈴木組独立开发，Steam 显示 2026 年 12 月发售"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "AUTOMATON · 日媒试玩",
+          "tags": [
+            "动作冒险",
+            "Cygames",
+            "平台跳跃"
+          ],
+          "title": "Cygames 新品牌 CygamesEdge 首作《崩落の国》：只需「下降」的 1100 日元动作冒险",
+          "en_title": "Cygames新ブランド第一弾『崩落の国』先行プレイ感想。「降りる」だけの1100円ゲーム",
+          "full_text": "Cygames新ブランド第一弾『崩落の国』先行プレイ感想。「降りる」だけの1100円ゲームは、思ったよりずっと面白かった。クセあり操作が面白さにもなる落下作業\nhttps://t.co/EIdj0m1ZZs https://t.co/H6rPDkbvyd",
+          "author": "AUTOMATONJapan",
+          "date": "2026-10-16",
+          "likes": 804,
+          "views": 145869,
+          "link": "https://x.com/AUTOMATONJapan/status/2111004809977606239",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2111004778876862464/img/RdbUKfbeB3CxSgZ5.jpg",
+            "video_url": "https://x.com/AUTOMATONJapan/status/2111004809977606239"
+          },
+          "summary": "日媒 AUTOMATON 在 OSAKA INDIE GAMES SUMMIT 2026 试玩了 Cygames 新副品牌「CygamesEdge」的第一款作品《崩落の国》：一款「只靠往下走」的崩落动作冒险，玩家扮演士兵与亡女残影「祸胎」同行，一路向地表下降。评测认为操作手感偏「重」、略带个性，但这种难以驾驭的操作本身成了乐趣来源。游戏 11 月 5 日发售，PC（Steam）/Switch 2/PS5，定价 1100 日元。",
+          "analysis": "",
+          "recommendation": "Cygames 新品牌 CygamesEdge 首作《崩落の国》：只需「下降」的 1100 日元动作冒险，11 月 5 日发售",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Where the Seeds Fall（崩落之国）",
+            "genre": "动作 / 冒险 / 休闲 / 独立",
+            "developer": "CygamesEdge × ZEREO Inc.（Cygames 旗下新品牌）",
+            "platforms": [
+              "Steam (PC)",
+              "Nintendo Switch 2",
+              "PS5"
+            ],
+            "price": "1,100 日元",
+            "release_date": "2026年11月5日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4139580/Where_the_Seeds_Fall/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4139580/66f0780fdaafb7743e3ada064763522633964c95/header.jpg?t=1792147983",
+            "youtube_video": null,
+            "description": "Cygames 新副品牌 CygamesEdge 的第一款作品，一款「只往下走」的崩落动作冒险。\n\n【核心玩法】地表因污染沦为废土，人类在世界树之上建起新国度，而这片家园也正在崩塌。玩家扮演无名士兵，与残留亡女面影的「祸胎」同行，从空中遗迹一路向地表下降：踩细窄落脚点、跳跃穿行残柱与断崖、观察风向并以花朵作为缓冲。试玩版中没有任何敌人，纯粹考验角色操控与跑酷精度。\n\n【手感与设计】AUTOMATON 试玩指出角色惯性明显偏「重」，轻推摇杆就会大幅位移，在窄平台上必须谨慎操作；设计者显然把这种「难以驾驭」当作乐趣来源，而不是缺陷。\n\n【发售信息】PC（Steam）/Nintendo Switch 2/PS5 三平台，11 月 5 日发售，定价 1100 日元，支持手柄。\n\n【优势】把「下降」这单一动词做成完整玩法框架，方向极其清晰；美术概念强烈（废土地表 vs 世界树国度）。\n【不足】试玩仅有 10 分钟计时关卡且无敌人，长期节奏、关卡量与内容深度未知；偏重的手感可能劝退一部分玩家。\n\n【综合】大厂新品牌押注「单一动词 + 高精度操作」的小体量付费作品，是观察日本大厂如何做实验性小型项目的窗口。",
+            "why_notable": "Cygames 新品牌 CygamesEdge 首作，把「下降」一个动词做成完整玩法框架，1100 日元小体量定价、11 月 5 日三平台发售",
+            "pcu": "暂未发售",
+            "current_players": "暂未发售",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「下降型平台动作」套「世界树崩塌」新瓶，Cygames 新品牌 CygamesEdge 首作，11 月 5 日发售、定价 1100 日元"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "4Gamer · 日媒",
+          "tags": [
+            "合作",
+            "潜行",
+            "喜剧"
+          ],
+          "title": "DESTINYbit《逢考弊过 Finals Week》：和朋友合作作弊撑过期末周，10 月 29 日发售",
+          "en_title": "みんなで協力し、全力で試験のカンニングに挑むマルチプレイアクションゲーム「Finals Week」，10月29日にリリース決定",
+          "full_text": "みんなで協力し，全力で試験のカンニングに挑むマルチプレイアクションゲーム「Finals Week」，10月29日にリリース決定\nhttps://t.co/OrXI6n0taq\n\nあらゆる手段で答えを知り，仲間と情報を共有しよう https://t.co/oKsVMUiyzF",
+          "author": "4GamerNews",
+          "date": "2026-10-16",
+          "likes": 111,
+          "views": 23309,
+          "link": "https://x.com/4GamerNews/status/2111042064163229739",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2111041976791662592/pu/img/YPcwvUzB0lOl0QTW.jpg",
+            "video_url": "https://x.com/4GamerNews/status/2111042064163229739"
+          },
+          "summary": "4Gamer 报道：多人合作动作游戏《Finals Week》确定 10 月 29 日发售。玩法是全员协作、用尽一切手段去「知道答案」，再把情报在同伴之间共享，在期末周里完成作弊。发行商 Pretty Soon，开发者 DESTINYbit，PC（Steam），支持单人与在线合作。",
+          "analysis": "",
+          "recommendation": "《逢考弊过》：和朋友合作偷答案、躲老师，不看一页书从学校毕业——10 月 29 日发售",
+          "featured": false,
+          "enrichment": {
+            "game_name": "Finals Week（逢考弊过）",
+            "genre": "动作 / 冒险 / 独立 / 模拟",
+            "developer": "DESTINYbit",
+            "platforms": [
+              "Steam (PC)"
+            ],
+            "price": "未公布",
+            "release_date": "2026年10月29日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4715160/Finals_Week/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4715160/3d05c4f85866620b0b47754e30414cb4414b42dc/header.jpg?t=1792162525",
+            "youtube_video": null,
+            "description": "一款 4 人合作「作弊模拟」游戏：目标是撑过期末周的最后一周，不看一页书就从学校毕业。\n\n【核心玩法】偷答案、躲避老师，动用作弊工具箱里的每一件「法宝」；强调团队协作与情报共享——谁去引开监考、谁负责抄、谁负责传，分工本身就是玩法。Steam 页面描述为「不看一页书就从学校毕业」。\n\n【氛围】把考试焦虑做成了多人混乱喜剧：4Gamer 的报道口径是「用尽一切手段知道答案，再和同伴共享情报」。\n\n【发售信息】DESTINYbit 开发、Pretty Soon 发行，10 月 29 日发售，PC（Steam），支持单人与在线合作，含 Steam 成就。\n\n【优势】题材差异度极高，「合作 + 潜行 + 喜剧」的组合在派对合作赛道中少见；单局节奏短平快，天然适合直播与短视频传播。\n【不足】题材相对单一，长线重复游玩价值取决于关卡与地图数量；依赖队友配合，单人体验可能明显打折。\n\n【综合】「全员作弊对抗监考」几乎没人正面做成过合作玩法，加上 10 月 29 日的发售节点，值得关注它在直播与短视频侧的表现。",
+            "why_notable": "把「全员作弊对抗监考」做成 4 人合作玩法，题材在派对合作赛道极其罕见，10 月 29 日发售",
+            "pcu": "暂未发售",
+            "current_players": "暂未发售",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「合作作弊模拟」套「期末周」新瓶，DESTINYbit 开发 / Pretty Soon 发行，10 月 29 日发售"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "Niche Gamer · 新游曝光",
+          "tags": [
+            "动作 Roguelite",
+            "电路 Build",
+            "PC"
+          ],
+          "title": "《Modulink》：把模块组合成「电路」来改写自身能力的动作 Roguelite",
+          "en_title": "Newly revealed action roguelite Modulink combines circuit-building combat and exploration",
+          "full_text": "Newly revealed action roguelite Modulink combines circuit-building combat and exploration: https://t.co/ww8oNUdm2g https://t.co/6hcxJS8QBZ",
+          "author": "nichegamer",
+          "date": "2026-10-15",
+          "likes": 9,
+          "views": 3223,
+          "link": "https://x.com/nichegamer/status/2110863693751656647",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUtLV90WgAE0exn.jpg"
+          },
+          "summary": "Niche Gamer 曝光第三人称动作 Roguelite《Modulink》：舞台是末日之后仍抱有希望的世界，「知识」是最强武器——玩家发现神秘模块、理解其运作原理，再组合成电路来改变自身能力，对抗致命机器并修复世界。开发商 brainglyph，发行商 HypeTrain Digital，Steam 页面已上线，发售日未定。",
+          "recommendation": "《Modulink》：电路搭建 + 动作 Roguelite，模块组合直接改写角色能力",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Indie Game Joe · 新游曝光",
+          "tags": [
+            "模拟",
+            "木工",
+            "PC"
+          ],
+          "title": "《Made by Hand》：测量、锯切、打磨全靠手搓的木工模拟，成品拍照上架换赞",
+          "en_title": "Crafting in most games is holding a button but this one makes you do the whole woodworking job by hand",
+          "full_text": "Crafting in most games is holding a button but this one makes you do the whole woodworking job by hand\n\n- Measure, saw, shape and sand every piece\n- Photograph it and sell it online for likes\n- A drone collects each order you sell\n\nGame is Made by Hand. https://t.co/CfFgTGPHId",
+          "author": "IndieGameJoe",
+          "date": "2026-10-15",
+          "likes": 594,
+          "views": 19114,
+          "link": "https://x.com/IndieGameJoe/status/2110834543058182276",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110832978460909568/img/AX25GjRgbxAXe8le.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2110834543058182276"
+          },
+          "summary": "《Made by Hand》把「合成」从按键升级成整套木工流程：每一块木料都要亲手测量、锯切、塑形、打磨；成品要拍照挂到网上换取点赞与评论；卖出的订单由无人机上门取货。开发者 Alice Games，Steam 页面已上线，发售日未定。",
+          "recommendation": "《Made by Hand》：测量锯切打磨全靠手搓的木工模拟，成品拍照上架、无人机送货",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "0xPajke · 独立开发者",
+          "tags": [
+            "MMORPG",
+            "浏览器",
+            "PVP"
+          ],
+          "title": "《Foray》：浏览器里的 PVP MMO，战利品没存进银行就不算你的",
+          "en_title": "This is Foray, a PVP MMORPG in the browser where loot isn't yours until it's banked",
+          "full_text": "This is Foray, a PVP MMORPG in the browser where loot isn't yours until it's banked\n\nCraft & cook in town to prepare for expeditions, then go out into the wilds\n\n- complete quests\n- battle mobs & players\n- collect loot\n\nDo you have what it takes to become a legendary adventurer? https://t.co/vjFUOKDeNc",
+          "author": "0xPajke",
+          "date": "2026-10-15",
+          "likes": 146,
+          "views": 18804,
+          "link": "https://x.com/0xPajke/status/2110800473712210224",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2110796102513426432/img/rXBTGzZCue0sC4XJ.jpg",
+            "video_url": "https://x.com/0xPajke/status/2110800473712210224"
+          },
+          "summary": "浏览器端 PVP MMORPG《Foray》：先在城镇里制作与烹饪为远征做准备，再出城完成委托、与怪物和玩家战斗、收集战利品——但战利品只有存进银行才真正归你，把「贪心多跑一趟」做成了核心风险收益选择。",
+          "recommendation": "《Foray》：浏览器 PVP MMO，战利品没存进银行就不算你的",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "GeoGuessr · 官方",
+          "tags": [
+            "生存恐怖",
+            "Roguelite",
+            "免费"
+          ],
+          "title": "GeoGuessr 把自家游戏改成《HorrorGuessr》：猜谜变 Roguelite 生存恐怖",
+          "en_title": "We turned our game into a roguelite survival horror game",
+          "full_text": "We turned our game into a roguelite survival horror game 😱 \n\nPlay HorrorGuessr for free now! https://t.co/KR58zRxDz4",
+          "author": "geoguessr",
+          "date": "2026-10-16",
+          "likes": 3270,
+          "views": 204282,
+          "link": "https://x.com/geoguessr/status/2111027343980367883",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2111027312158212096/pu/img/Sc5sqlR6zMb0JdeC.jpg",
+            "video_url": "https://x.com/geoguessr/status/2111027343980367883"
+          },
+          "summary": "地理猜谜游戏 GeoGuessr 官方宣布转型作《HorrorGuessr》：把自家的地理猜测玩法改成 Roguelite 生存恐怖，现可免费游玩，204K 浏览显示出超预期的传播效果。",
+          "recommendation": "GeoGuessr 把游戏改成《HorrorGuessr》：地理猜谜变 Roguelite 生存恐怖——3270赞",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "IndieGamesLibrary · 新游曝光",
+          "tags": [
+            "清版动作",
+            "像素",
+            "PC"
+          ],
+          "title": "《Rose of Dragontail》：渔村少女变半龙英雄的极速横版清版动作",
+          "en_title": "This game is a crazy-fast beat'em'up where you play as Rose, the scrappy fishing village girl turned half-dragon hero",
+          "full_text": "This game is a crazy-fast beat'em'up where you play as Rose,  the scrappy fishing village girl turned half-dragon hero.\n\n* Analog stick and 3 buttons\n* Crowd-clearing move set\n* Beautiful pixel art and jammin' surf soundtrack\n\nIt is Rose of Dragontail https://t.co/eW1MeFJDXp",
+          "author": "IndieGamesLib",
+          "date": "2026-10-16",
+          "likes": 6,
+          "views": 270,
+          "link": "https://x.com/IndieGamesLib/status/2111112781168562340",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2111111684601368577/img/UPG9LC4tspZpRSR2.jpg",
+            "video_url": "https://x.com/IndieGamesLib/status/2111112781168562340"
+          },
+          "summary": "高速横版清版动作《Rose of Dragontail》：摇杆 + 三按键的极简操作，主角 Rose 是渔村少女变成的半龙英雄，主打清群招式、像素美术与 surf rock 配乐。开发者 Iori Branford，Steam 页面显示 2027 年发售，另有试玩版上线。",
+          "recommendation": "《Rose of Dragontail》：渔村少女变半龙，摇杆三键的极速清版动作",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity for Games · 官方",
+          "tags": [
+            "Unity",
+            "CI/CD",
+            "工具链"
+          ],
+          "title": "Unity 推出官方 CLI：告别 50 行 wrapper 脚本，统一 CI/CD 供给 Editor、跑测试与出包",
+          "en_title": "The new Unity CLI simplifies your CI/CD setup",
+          "full_text": "Say goodbye to 50-line wrapper scripts and brittle pre-configured build runners 🛠️\n\nThe new Unity CLI simplifies your CI/CD setup, giving you a cleaner, reproducible way to provision Editors, run tests, and produce builds across any CI provider with just a few standard commands.\n\n🔗 Read the full blog to learn more: https://t.co/J5hK3vxNZb",
+          "author": "unitygames",
+          "date": "2026-10-15",
+          "likes": 47,
+          "views": 7517,
+          "link": "https://x.com/unitygames/status/2110823155514139120",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HUsmdznXsAAVcvd.png"
+          },
+          "summary": "Unity 官方发布新的 Unity CLI，目标是把 CI/CD 配置从「50 行 wrapper 脚本 + 脆弱的预配置 build runner」中解放出来：用少量标准命令即可在任意 CI 提供者上供给 Editor、运行测试并产出构建，流程更干净、可复现。",
+          "analysis": "这是 Unity 官方把长期由社区脚本（GameCI 等）承担的工作收编为第一方能力。对团队的直接收益是构建环境从「黑盒脚本」变成可描述、可复现的标准命令；间接影响是自建 CI 模板的维护成本下降，中小团队上云构建的门槛进一步降低。",
+          "recommendation": "Unity 官方 CLI 上线：告别 50 行 wrapper 脚本，任意 CI 提供者几行命令跑测试与出包",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "FluidNinja · 工具作者",
+          "tags": [
+            "UE5",
+            "VFX",
+            "免费"
+          ],
+          "title": "开发三年，UE5 实时流体/VFX 工具 FluidNinja LIVE-2 免费发布",
+          "en_title": "Following three years of development, FluidNinja LIVE-2 released - free to download at the community server",
+          "full_text": "Following three years of development, FluidNinja LIVE-2 released - free to download at the community server\n#FluidNinja #UE5 #realtimeVFX #VFX #gamedev https://t.co/FNOF1FHNSF",
+          "author": "FluidNinjaLIVE",
+          "date": "2026-10-16",
+          "likes": 1055,
+          "views": 51771,
+          "link": "https://x.com/FluidNinjaLIVE/status/2111053136127492604",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2111052342703349760/img/v8fQd5l43zqH53Dg.jpg",
+            "video_url": "https://x.com/FluidNinjaLIVE/status/2111053136127492604"
+          },
+          "summary": "Andras Ketzer 宣布 UE5 实时流体与 VFX 工具 FluidNinja LIVE-2 在开发三年后正式发布，可在社区服务器免费下载，推文以 #UE5 #realtimeVFX 标签发布，收获 1055 赞。",
+          "analysis": "实时流体与体积 VFX一直是 UE 项目里最吃美术工时与性能预算的部分，把这类能力做成免费社区工具，等于直接压低中小团队的画面表现成本。这类「个人维护 + 免费分发」的插件生态，是 UE 相对其他引擎的隐性护城河。",
+          "recommendation": "Andras Ketzer 免费发布 UE5 实时流体与 VFX 工具 FluidNinja LIVE-2，开发历时三年——1055赞",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI 从「做 demo」走到「做成工具」**\nNPCTalk 把 GTA V 里的每一个 NPC 变成可实时对话的对象——语音克隆、对话模型全部由开源模型自托管在 serverless GPU 上，响应延迟低于 1 秒。硬币的另一面是一起 AI 克隆事故：一款爆红游戏公布次日就被 AI 复刻上架 Roblox，克隆作者直言「Claude 全干了，我只坐着」。\n\n**大厂各走一条曲线**\n美国议员提出《Power To The Players Act》，主张「付费买游戏就该拥有游戏」，把数字所有权之争推进到立法层面；Remedy 的《Control Resonant》则成为公司史上最快畅销作品，超过《心灵杀手 2》与原版《控制》。\n\n**小体量与怪题材继续跑赢关注度**\nCygames 新品牌 CygamesEdge 首作《崩落の国》把「下降」一个动词做成 1100 日元的动作冒险，11 月 5 日全平台发售；《みなと食堂》让尝不出味道的幽灵照着食谱开日料食堂，50 道菜都附真实食谱，Steam 烹饪节期间收获 4000+ 赞。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
