@@ -1,0 +1,629 @@
+{
+ "date": "2026-10-18",
+ "meta": {
+  "raw_count": 148,
+  "filtered_count": 144,
+  "selected_count": 20,
+  "crawl_time": "2026-10-18"
+ },
+ "lede": "全球愿望单第65的《Drunken Goddess Reflux》取消公开 Demo，开发商直言怕被 AI 抢先复刻；Epic 被曝对迪士尼跨界射击新作下「AI 优先」令；Steam 同时在线破 4350 万，年内第二次刷新纪录。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "全球愿望单第65的《Drunken Goddess Reflux》取消公开 Demo，怕被 AI 抢先克隆"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《万物皆可捏》：现场捏 3D 模型伪装成场景物件，躲过猎手——15万浏览"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Steam 同时在线破 4350 万，年内第二次刷新纪录——游戏内玩家超 1400 万"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "《Drunken Goddess Reflux》取消公开 Demo 改封闭测试：开发商担心被 AI 抢先复刻。\nEpic 被曝对迪士尼跨界射击新作下「AI 优先」令：不再手写代码，美术走全 AI 流程。\nAaron Levie：AI 训练模型的能力已越过人类工程师门槛，递归自我改进出现早期迹象。"
+  },
+  {
+   "id": "industry",
+   "text": "Steam 同时在线破 4350 万创历史新高，年内第二次刷新纪录。\nFuncom 再度裁员，资源全面转向《沙丘：觉醒》与《流放者柯南》长线运营。\n《Samson》发售半年后，瑞典工作室 Liquid Swords 申请破产。\nARC：在 Twitter 预告开发进度的时代结束了，要么发布要么闭嘴。"
+  },
+  {
+   "id": "indie",
+   "text": "《万物皆可捏 Mimic Busters》：现场捏 3D 模型伪装成场景物件，躲过猎手，已在 Steam 发售。\n《Flame and Blame》：4 人合作菜鸟消防员，公布前愿望单破 1 万。\n《Lightspeed Lina》：索尼克大冒险式高速 3D 平台跳跃，外星能力 + 换装。"
+  },
+  {
+   "id": "tools",
+   "text": "RimWorld 从 Unity 迁到自研 Waylith 引擎：性能 2-4 倍，1500 个 Mod 加载从 14 分钟降到 6 分钟。\nMayoi 0.10.0：在 diff 里写 Review 一键发给终端 Agent，新增中日文界面。"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Steamcito · 社区爆料",
+     "tags": [
+      "AI克隆",
+      "独立游戏",
+      "Steam"
+     ],
+     "title": "《Drunken Goddess Reflux》取消公开 Demo：开发商担心被 AI 抢先复刻",
+     "en_title": "El desarrollador de uno de los juegos más esperados de Steam CANCELÓ la demo que iba a lanzar esta semana por miedo a que la IA pueda clonarlo antes de su lanzamiento oficial",
+     "full_text": "🔴 El desarrollador de uno de los juegos más esperados de Steam CANCELÓ la demo que iba a lanzar esta semana por miedo a que la IA pueda clonarlo antes de su lanzamiento oficial:\n\n- Drunken Goddess Reflux está en el #65 mundial de más wishlisteados de Steam \n- La decompilación permite reconstruir el código de un juego a partir de su versión compilada, y la IA está acelerando terriblemente este proceso que antes era manual.\n- En los últimos días por ejemplo se reconstruyó con IA el código de Modern Warfare 2 y se multiplicaron los proyectos para recrear y portar juegos clásicos",
+     "author": "Steamcito 🧉",
+     "date": "2026-10-16",
+     "likes": 10640,
+     "views": 385571,
+     "link": "https://x.com/steamcito_ar/status/2111117974098661576",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUwwh12XEAATaJT.jpg"
+     },
+     "summary": "Alliance Arts 原定 10 月 19 日为恐怖饮酒游戏《Drunken Goddess Reflux》上线 Steam 公开 Demo，现改为限定名额的封闭线上测试。该作在全球愿望单排第 65 位。官方给出的理由有两条：Demo 附带的录播/直播限制难以管理；更担心 Demo 内容被 AI 或其它工具快速模仿，在正式发售前就被做出「同款」。PC Gamer 报道，此前已有开发者的原型在公开 5 小时后被克隆。",
+     "analysis": "Demo 是独游最主要的拉愿望单手段。一旦「先发 Demo 等于给克隆者免费素材」成为共识，独游的曝光结构会被改写：从公开试玩转向限额封闭测试、KOL 定向发放。更现实的压力落在平台审核上——商店端如果不对换皮克隆加速下架，开发者只能用延后曝光来换安全。",
+     "recommendation": "全球愿望单第65的《Drunken Goddess Reflux》取消公开 Demo 改封闭测试，怕被 AI 抢先克隆",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Eurogamer · 媒体报道",
+     "tags": [
+      "Epic",
+      "AI管线",
+      "3A"
+     ],
+     "title": "Epic 被曝对迪士尼联动射击新作下「AI 优先」令：不再手写代码，美术走全 AI 流程",
+     "en_title": "Epic Games reportedly delays Star Wars and Marvel shooter, as the Fortnite maker embraces \"AI-accelerated development\".",
+     "full_text": "Epic Games reportedly delays Star Wars and Marvel shooter, as the Fortnite maker embraces \"AI-accelerated development\". https://t.co/AEGDM7BJeC https://t.co/1QCBsfUyeC",
+     "author": "Eurogamer",
+     "date": "2026-10-17",
+     "likes": 6,
+     "views": 2499,
+     "link": "https://x.com/eurogamer/status/2111480106988278108",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU1795_WcAA2RBM.jpg"
+     },
+     "summary": "Bloomberg 记者 Jason Schreier 报道，Epic 与迪士尼合作、集结漫威与星战角色的未公布射击游戏内部延期（原计划 2027 年 3 月），公司要求团队改用「AI 优先」管线收尾，使用 Claude 等工具。内部信中一位游戏总监称「不再有手写代码」，美术应「用完整 AI 工作流生成」。CEO Tim Sweeney 公开确认公司正为「最大程度 AI 加速」重新调配人员，并强调目标是做更多更好的东西，而非用更少的人做同样的事。",
+     "analysis": "这是目前大厂中最强硬的 AI 转产声明：不是试点项目，而是把已立项的 3A 整体改成 AI 管线。对从业者，信号是 AI 能力正从「加分项」变成岗位门槛；对 Epic 自身，则是拿 Unreal 生态做样板，把 AI 工作流卖给整个行业。",
+     "recommendation": "Epic 被曝对迪士尼跨界射击新作下「AI 优先」令：不再手写代码，美术全走 AI 流程",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Aaron Levie · Box CEO",
+     "tags": [
+      "AI Agent",
+      "模型能力",
+      "行业判断"
+     ],
+     "title": "Aaron Levie：AI 训练模型的能力已越过人类工程师门槛，递归自我改进出现早期迹象",
+     "en_title": "It’s incredible to have reached a threshold where it’s practical that AI will be better at training models than humans are so quickly.",
+     "full_text": "It’s incredible to have reached a threshold where it’s practical that AI will be better at training models than humans are so quickly. One day recursive self improvement feels far off, and the next we already have signs of what it will look like.\n\nModel capability finally exceeding most human engineers, advancements in the harness and infra for long running agents, a growing array of data, and the ability to parallelize the agents to work on vastly more tasks and tests and approaches than any person could have before, creates an incredible flywheel. \n\nThis flywheel will almost certainly accelerate model progress far faster than we’ve seen before - or at a minimum enable pushing up the ceiling of the frontier at an insane rate. If you aren’t pricing in what RSI will lead to, that’s probably a mistake.",
+     "author": "Aaron Levie",
+     "date": "2026-10-17",
+     "likes": 321,
+     "views": 60021,
+     "link": "https://x.com/levie/status/2111312141609586862",
+     "media": null,
+     "summary": "Box CEO Aaron Levie 认为，模型能力已超过多数人类工程师，叠加长时运行 Agent 的 harness 与基础设施、不断扩充的数据、以及把 Agent 并行到更多任务与测试上的能力，让 AI 参与训练下一代模型从「遥远」变成「可实践」。他称「前一天递归自我改进还很远，第二天就看到了它的样子」。",
+     "analysis": "对游戏团队的直接含义不是「AI 会自己做完游戏」，而是模型迭代周期会进一步压缩，工具链每季度换一次形态。技术选型要留出替换成本，不要把生产管线焊死在某个具体模型或 Agent 框架上。",
+     "recommendation": "AI 训练模型已越过人类工程师门槛，递归自我改进出现早期迹象——Levie"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 平台数据",
+     "tags": [
+      "Steam",
+      "平台数据",
+      "PC市场"
+     ],
+     "title": "Steam 同时在线破 4350 万创历史新高，年内第二次刷新纪录",
+     "en_title": "For the second time this year, Steam has set a major new concurrent user record.",
+     "full_text": "For the second time this year, Steam has set a major new concurrent user record. https://t.co/wcOKO4YR1V https://t.co/vqwnnEYB6h",
+     "author": "Eurogamer",
+     "date": "2026-10-17",
+     "likes": 13,
+     "views": 4092,
+     "link": "https://x.com/eurogamer/status/2111404609402970459",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU03TY6XYAA2Ny5.jpg"
+     },
+     "summary": "周日 Steam 同时在线用户达到 43,505,724 人，游戏内玩家超过 1400 万，双双刷新纪录，为 Steam 23 年历史最高；今年 1 月刚突破 4200 万。Eurogamer 提到近期《Aion 2》全球上线（峰值 397,905）与 Deadlock 大版本更新（峰值 262,145）是主要推力，并援引估算称 Valve 到 9 月从 Steam 获得约 150 亿美元收入。",
+     "analysis": "纪录出现在秋促结束之后而不是促销期间，说明这轮增长由内容驱动而非折扣驱动。对发行策略的启示是 PC 用户池仍在扩张，长线运营与版本更新的拉新效率可能高于一次性买量。",
+     "recommendation": "Steam 同时在线破 4350 万，年内第二次刷新纪录——游戏内玩家超 1400 万",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "PC Gamer · 媒体报道",
+     "tags": [
+      "裁员",
+      "Funcom",
+      "长线运营"
+     ],
+     "title": "Funcom 再度裁员：资源全面转向《沙丘：觉醒》与《流放者柯南》长线支持",
+     "en_title": "Funcom is laying off yet more developers as it pivots to supporting Dune: Awakening and Conan Exiles",
+     "full_text": "Funcom is laying off yet more developers as it pivots to supporting Dune: Awakening and Conan Exiles https://t.co/T3FZ3C5THr",
+     "author": "PC Gamer",
+     "date": "2026-10-17",
+     "likes": 21,
+     "views": 14671,
+     "link": "https://x.com/pcgamer/status/2111406073085366333",
+     "media": null,
+     "summary": "PC Gamer 报道，Funcom 在新一轮调整中继续裁减开发岗位，公司称将把资源集中到《Dune: Awakening》与《Conan Exiles》的持续运营上。这是该工作室近期的又一轮裁员。",
+     "analysis": "又一个「砍新项目、保长线服务」的样本。中型工作室在 3A 成本与长线运营之间几乎没有中间地带，只有能把一款在线游戏养住的团队才拿得到预算。",
+     "recommendation": "Funcom 再度裁员，资源全面转向《沙丘：觉醒》与《流放者柯南》长线运营"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Rock Paper Shotgun · 媒体报道",
+     "tags": [
+      "工作室关闭",
+      "瑞典",
+      "动作游戏"
+     ],
+     "title": "《Samson》发售半年后，瑞典工作室 Liquid Swords 申请破产",
+     "en_title": "Oh dear, half a year after launching Samson, Swedish developer Liquid Swords have filed for bankruptcy",
+     "full_text": "Oh dear, half a year after launching Samson, Swedish developer Liquid Swords have filed for bankruptcy https://t.co/zhTAxviR3k",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-10-17",
+     "likes": 0,
+     "views": 1006,
+     "link": "https://x.com/rockpapershot/status/2111487768270422230",
+     "media": null,
+     "summary": "RPS 报道，瑞典开发商 Liquid Swords 在首作《Samson》上线约半年后提交破产申请。该工作室由前《马克思·佩恩》系列核心成员创立，《Samson》是其首款作品。",
+     "analysis": "首次创业团队用中等预算做动作游戏，在当下的曝光环境里容错极低。档期、类型饱和度与营销预算三件事任何一项失手，都可能直接终结公司。",
+     "recommendation": "《Samson》发售仅半年，瑞典工作室 Liquid Swords 申请破产"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "ARC · 独立开发者",
+     "tags": [
+      "独立开发",
+      "社区营销",
+      "build in public"
+     ],
+     "title": "ARC：在 Twitter 上「预告在做的东西」的时代结束了，要么发布要么闭嘴",
+     "en_title": "The age of teasing stuff on twitter is over. Release or shut up. this is really sad for indie devs that enjoyed showing progress on twt",
+     "full_text": "The age of teasing stuff on twitter is over. Release or shut up. \n\nthis is really sad for indie devs that enjoyed showing progress on twt https://t.co/CMNjWoaaBC",
+     "author": "ARC",
+     "date": "2026-10-16",
+     "likes": 9816,
+     "views": 415335,
+     "link": "https://x.com/arc4g/status/2111030651344363836",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUviodVWYAAc3c1.jpg"
+     },
+     "summary": "独立开发者 ARC 的这条推文获得 9800+ 赞、41.5 万浏览。他认为持续公开开发进度的做法对独游开发者已经不利，直接喊话「发布，或者闭嘴」，并称这对喜欢在 Twitter 分享进展的独游开发者「很悲哀」。",
+     "analysis": "这条与今天的 AI 克隆恐慌是同一条因果链：曝光越早，被复刻的窗口越长。社区从「build in public」转向「发布即营销」，会改变独游的传播节奏与 KOL 合作方式。",
+     "recommendation": "ARC：在 Twitter 预告开发进度的时代结束了，要么发布要么闭嘴——9800赞"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "電ファミニコゲーマー · 媒体推荐",
+     "tags": [
+      "多人",
+      "躲猫猫",
+      "3D建模"
+     ],
+     "title": "DevAdam × Tape Corps《万物皆可捏 Mimic Busters》：现场捏 3D 模型伪装成场景物件",
+     "en_title": "“3Dモデリング”で変装するかくれんぼゲーム『Mimic Busters』Steamにて配信中！作って、塗って、芸術力が試される",
+     "full_text": "“3Dモデリング”で変装するかくれんぼゲーム『Mimic Busters』Steamにて配信中！作って、塗って、芸術力が試される\nhttps://t.co/vQEWIcoZaJ\n\nシンプルな立方体から形を整え、色を塗り、そこら中にあるモノになりきってハンターの目を欺く。目についたオブジェクトは何でもお手本に https://t.co/Ejmk0n5DRj",
+     "author": "電ファミニコゲーマー",
+     "date": "2026-10-17",
+     "likes": 817,
+     "views": 150151,
+     "link": "https://x.com/denfaminicogame/status/2111291689533063669",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2111291562319806464/pu/img/3GPerEDz1BgH66YG.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2111291689533063669/video/1"
+     },
+     "summary": "一款在线多人躲猫猫：拟态方从简单立方体开始，用内置 3D 建模工具捏形、上色，把自己伪装成场景里的任意物体；猎手要在时限内把它们揪出来。10 月 15 日已在 Steam 发售，售价 ¥20.46，支持单人、多人、线上/局域网合作与对战，Windows/Mac/Linux 全平台。",
+     "recommendation": "《万物皆可捏》：现场捏 3D 模型伪装成场景物件躲过猎手——15万浏览",
+     "game_ref": "Mimic Busters",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Mimic Busters（万物皆可捏）",
+      "genre": "休闲 / 独立 / 多人躲猫猫",
+      "developer": "DevAdam、Tape Corps（发行：GameDev.ist）",
+      "platforms": [
+       "Steam（Windows / Mac / Linux）"
+      ],
+      "price": "¥20.46",
+      "release_date": "已发售 · 2026年10月15日",
+      "steam_rating": "暂无足够评价数",
+      "steam_url": "https://store.steampowered.com/app/5167420/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5167420/c3c28e11e23330d86443a17c394ccfba26179727/header_schinese.jpg?t=1792166178",
+      "youtube_video": null,
+      "description": "【核心玩法】把「躲猫猫」的伪装环节做成真正的建模工具：拟态方从一个立方体起手，拉伸、切割、上色，捏成椅子、花瓶、路灯等场景物件并混进地图；猎手拿的是时间压力与观察力，要在倒计时结束前开枪识破。伪装做得好不好，直接等于「艺术力」的评分。\n\n【差异点】同类躲猫猫游戏的伪装多是「变身成预设道具」，这里把创作过程本身变成玩法。每局的地图物件组合不同，玩家捏出来的东西也不重复，观感上更接近一场即兴雕塑比赛。\n\n【社交与传播】捏得像不像、猎手被糊弄的瞬间，天然适合切片传播；日媒报道后单条推文拿到 15 万浏览，说明这类「创作 + 整活」的组合在短视频平台很有优势。\n\n【优势】核心创意清晰、上手门槛低、¥20 的定价适合好友局冲动购买；支持局域网，线下聚会场景可用。\n【不足】建模工具的上手曲线会劝退一部分只想「变身」的玩家；玩法深度依赖地图与物件库的更新速度，长期留存看 UGC 生态。\n\n【综合评价】把 UGC 创作塞进派对游戏的一个聪明尝试：门槛比沙盒低，表达空间比固定变身大，是今年多人小品里创意最直接的一档。",
+      "why_notable": "把「伪装」从预设变身改成现场 3D 建模，创作过程本身就是玩法，天然适合切片传播",
+      "pcu": "暂无公开 PCU 数据",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「多人躲猫猫」套「3D 建模创作」新瓶，DevAdam / Tape Corps 开发，Steam 售价 ¥20.46"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Flame and Blame · 开发团队",
+     "tags": [
+      "合作",
+      "物理喜剧",
+      "消防"
+     ],
+     "title": "RetroStyle Games《Flame and Blame》：4 人合作的「菜鸟消防员」，公布前已破 1 万愿望单",
+     "en_title": "10K pyromaniacs ALREADY wishlisted Flame & Blame before we even said hi.",
+     "full_text": "WAAAAASSSSSUUUUUUUP\n\n10K pyromaniacs ALREADY wishlisted Flame &amp; Blame before we even said hi.\n\nLove to see it. Keep going!!!\n\nWishlist and press playtest button 👉\nhttps://t.co/uQ4EKyCiNd\n\n#indiegame #gamedev #coop https://t.co/xJS9hL99jy",
+     "author": "Flame and Blame",
+     "date": "2026-10-16",
+     "likes": 514,
+     "views": 123939,
+     "link": "https://x.com/FlameAndBlame_/status/2111095279571059176",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111090574241460226/img/6BUnVi3XuSH3UJc9.jpg",
+      "video_url": "https://x.com/FlameAndBlame_/status/2111095279571059176/video/1"
+     },
+     "summary": "最多 4 人合作的第一人称消防喜剧：开消防车、拖着会乱甩的水带去灭火、救熊猫，等一切烧成灰再互相甩锅。AUTOMATON 的报道提到最终手段是「炸堤放水」。团队公布消息时愿望单已突破 1 万，Steam 页面显示 2027 年发售，playtest 已开放。",
+     "recommendation": "《Flame and Blame》：4 人合作菜鸟消防员，水带乱甩、最后炸堤——公布前破万愿望单",
+     "game_ref": "Flame and Blame",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Flame and Blame",
+      "genre": "第一人称合作 / 物理喜剧 / 冒险",
+      "developer": "RetroStyle Games",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": "2027年（待定）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4908460/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4908460/bb7b59090b61954419189f5309f44b36dc3b7856/header.jpg?t=1792161042",
+      "youtube_video": null,
+      "description": "【核心玩法】4 人协作的消防模拟，但把「专业」换成了「手忙脚乱」：水带是有物理的，水压会把队友甩飞；灭火之外还要开车赶场、破门、救人（以及救熊猫）。任务失败后进入甩锅环节，把事故责任推给队友。\n\n【喜剧结构】物理引擎承担了大部分笑点——水柱反冲、灭火器乱喷、消防车倒车撞墙。和《Human: Fall Flat》《Content Warning》同一类：规则简单、事故频发、靠朋友之间的互坑产生内容。\n\n【市场信号】团队正式公布前愿望单就过了 1 万，说明「合作 + 物理 + 可切片」这个组合在 Steam 已有稳定的受众池；AUTOMATON 报道单条 7.9 万浏览，日本市场也有认知。\n\n【优势】题材差异化明显（消防题材几乎没有同类合作游戏）、天然的直播/切片素材、4 人开黑刚需。\n【不足】2027 年才发售，中间隔了两年，热度能否维持是最大变量；物理喜剧的通病是内容消耗快，关卡与工具数量决定寿命。\n\n【综合评价】在「合作物理喜剧」这条已经拥挤的赛道上，用消防员这个没人占的题材切了进去，公布前的愿望单数据说明选题判断准确。",
+      "why_notable": "公布前愿望单破 1 万：消防员题材在合作物理喜剧赛道里几乎没有竞品",
+      "pcu": "暂未发售",
+      "current_players": "暂未发售",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「4 人合作」套「菜鸟消防员物理喜剧」新瓶，RetroStyle Games 开发，2027 年发售"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Indie Game Joe · 媒体推荐",
+     "tags": [
+      "3D平台跳跃",
+      "独立",
+      "索尼克"
+     ],
+     "title": "CornflowerBlue《Lightspeed Lina》：向《索尼克大冒险》《马力欧 奥德赛》致敬的高速 3D 平台跳跃",
+     "en_title": "This 3D platformer is inspired by Sonic Adventure and Mario Odyssey",
+     "full_text": "This 3D platformer is inspired by Sonic Adventure and Mario Odyssey\n\n- Play as Lina, a fast treasure hunter\n- Race through loops, ramps and huge drops\n- Find alien powers and fight bosses\n- Dress Lina in cute and funny outfits\n\nGame is Lightspeed Lina. https://t.co/IGKF4pZsXC",
+     "author": "Indie Game Joe",
+     "date": "2026-10-16",
+     "likes": 1755,
+     "views": 40351,
+     "link": "https://x.com/IndieGameJoe/status/2111122503435174064",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111120073557491712/img/tgzQjR-9dcPiykLV.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2111122503435174064/video/1"
+     },
+     "summary": "扮演高速寻宝者 Lina，在环形轨道、斜坡与巨型落差间冲刺，获取外星能力对抗 Boss，还能给她换上搞怪服装。Steam 页面已上线，发售日待定，支持手柄与随时存档。",
+     "recommendation": "《Lightspeed Lina》：索尼克大冒险式高速 3D 平台跳跃，外星能力+换装——1755赞",
+     "game_ref": "Lightspeed Lina",
+     "enrichment": {
+      "game_name": "Lightspeed Lina",
+      "genre": "3D 平台跳跃 / 动作冒险",
+      "developer": "CornflowerBlue",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4982870/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4982870/6e1666710a4bc22bb068c80449ebb9a52df7a1bc/header.jpg?t=1790875107",
+      "youtube_video": null,
+      "description": "【核心玩法】高速 3D 平台跳跃：以环形轨道、斜坡、弹射与巨大落差构成跑图路线，主角 Lina 是「快嘴 + 快速」的寻宝猎人，通过解锁外星能力扩展探索路径，并在非线性岛屿间往返解锁星外秘密。\n\n【对标定位】开发者自己把参照系写在推文里——《Sonic Adventure》的速度感 +《超级马力欧 奥德赛》的能力解锁式探索。这个组合在独立规模里很少见，因为高速 3D 平台对镜头、碰撞与关卡密度要求极高。\n\n【美术与角色】明亮饱和的岛屿配色、卡通比例的 Lina，加上可换的搞怪服装，明显在走「角色可爱 + 高速爽感」的路线，便于做短视频素材。\n\n【优势】速度型 3D 平台跳跃供给稀缺；角色辨识度高；能力解锁 + 非线性岛屿给了探索纵深。\n【不足】高速 3D 平台是最考验打磨的类型，镜头与判定一旦不稳就会劝退；目前只有预告，内容量与关卡数未知。\n\n【综合评价】选题切在「索尼克式高速平台跳跃长期缺位」的空档上，成败取决于手感打磨，值得放进愿望单观察。",
+      "why_notable": "索尼克式高速 3D 平台跳跃在独立规模里长期缺位，角色与速度感是它的差异化",
+      "pcu": "暂未发售",
+      "current_players": "暂未发售",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「高速 3D 平台跳跃」套「索尼克大冒险 + 马力欧奥德赛」框架，CornflowerBlue 开发"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "AUTOMATON · 媒体报道",
+     "tags": [
+      "动作",
+      "高难度",
+      "绳索"
+     ],
+     "title": "《Well Up》：左右手分别操作绳子往上爬，湿滑、青苔和荆棘等着你",
+     "en_title": "井戸からの脱出目指す高難度ロープ登りゲーム『Well Up』発表。左右の手を別々に操作、“頼みの綱”は滑るしちぎれる",
+     "full_text": "井戸からの脱出目指す高難度ロープ登りゲーム『Well Up』発表。左右の手を別々に操作、“頼みの綱”は滑るしちぎれる\nhttps://t.co/tlMutLVSxQ https://t.co/GvrfjCDXhL",
+     "author": "AUTOMATON（オートマトン）",
+     "date": "2026-10-17",
+     "likes": 399,
+     "views": 80616,
+     "link": "https://x.com/AUTOMATONJapan/status/2111322195356189012",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111322065429295105/img/fYH5bZmX_DRt6mm8.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2111322195356189012/video/1"
+     },
+     "summary": "在古井底部醒来，只能靠一根旧绳子向上爬。左右手分别抓握、摆身保持平衡，湿滑绳段、青苔和荆棘会不断制造失误，失手就可能一路摔回井底。Steam 页面显示 2027 年 1 月 18 日发售。",
+     "recommendation": "《Well Up》：左右手分别抓绳往上爬井，失手就摔回井底——8万浏览",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Games Showcase · 媒体推荐",
+     "tags": [
+      "MMO",
+      "宠物养成",
+      "免费"
+     ],
+     "title": "《ROCO KINGDOM》：400+ 只精灵的免费宝可梦式 MMO，和朋友一起骑着生物跑同一张世界",
+     "en_title": "\"ROCO KINGDOM\" is a free-to-play Pokémon style MMO with 400+ Jinies where you and friends ride creatures through one shared world.",
+     "full_text": "\"ROCO KINGDOM\" is a free-to-play 'Pokémon' style MMO with 400+ Jinies where you and friends ride creatures through one shared world. https://t.co/TK7W3HLnaX",
+     "author": "Games Showcase",
+     "date": "2026-10-16",
+     "likes": 859,
+     "views": 63814,
+     "link": "https://x.com/gwrldgames/status/2111233440461058133",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111233168066199552/img/pvlX2mjF8L9M_P5b.jpg",
+      "video_url": "https://x.com/gwrldgames/status/2111233440461058133/video/1"
+     },
+     "summary": "免费游玩的宝可梦式 MMO，收录 400 多种名为 Jinies 的生物，玩家与好友骑着生物在同一个共享世界里探索。",
+     "recommendation": "《ROCO KINGDOM》：400+ 精灵的免费宝可梦式 MMO，共享世界骑乘探索——6.3万浏览",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Twilight Tavern · 开发团队",
+     "tags": [
+      "模拟经营",
+      "奇幻",
+      "温馨"
+     ],
+     "title": "《Twilight Tavern》：在魔法酒馆里给超自然客人上货、调药、识别假币",
+     "en_title": "A cozy fantasy shopkeeping game where players run their own magical tavern, stock shelves with strange products, negotiate with quirky customers",
+     "full_text": "I SPENT YEARS MAKING A GAME INSTEAD OF GETTING A REAL JOB 💀😭\n\nIf this game flops, I'm genuinely DOOMED.\nAnyway, WELCOME TO TWILIGHT TAVERN! 🍄✨\n\nA cozy fantasy shopkeeping game where players run their own magical tavern, stock shelves with strange products, negotiate with quirky customers, explore a whimsical world, and uncover mysteries along the way!\n\nPlease enjoy my questionable career decisions💀 Wishlist on Steam\n\n#indiegame #steamgame #gamedevs",
+     "author": "Twilight Tavern",
+     "date": "2026-10-16",
+     "likes": 42,
+     "views": 2019,
+     "link": "https://x.com/SiyeshGameDev/status/2111165011938750647",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111164757763915776/img/DOm4EMY1yHMOCYm6.jpg",
+      "video_url": "https://x.com/SiyeshGameDev/status/2111165011938750647/video/1"
+     },
+     "summary": "温馨奇幻的第一人称开店模拟：经营魔法酒馆、上架奇怪商品、和古怪客人讨价还价、辨认假币，还能用魔法护符改变每天的节奏。Steam 页面显示 2027 年第一季度。",
+     "recommendation": "《Twilight Tavern》：给超自然客人开魔法酒馆，还要识别假币",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Niche Gamer · 媒体报道",
+     "tags": [
+      "自走棋",
+      "Lo-fi",
+      "奇幻"
+     ],
+     "title": "《Walk Hero》：lo-fi 奇幻风自走棋，12 月发售",
+     "en_title": "Stylish, lo-fi fantasy autobattler Walk Hero launches in December",
+     "full_text": "Stylish, lo-fi fantasy autobattler Walk Hero launches in December: https://t.co/7vUbiPMPcd https://t.co/29sEgwNssH",
+     "author": "Niche Gamer",
+     "date": "2026-10-16",
+     "likes": 70,
+     "views": 5148,
+     "link": "https://x.com/nichegamer/status/2111131451550769160",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2111131423843213312/pu/img/nqGqYTYpZP66pj-b.jpg",
+      "video_url": "https://x.com/nichegamer/status/2111131451550769160/video/1"
+     },
+     "summary": "一款低饱和 lo-fi 美术风格的奇幻自走棋，玩家只专注装备与升级选择。Steam 页面显示 12 月 2 日发售。",
+     "recommendation": "《Walk Hero》：lo-fi 奇幻自走棋，只做装备与升级决策，12月2日发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "Super Sami Roll · 开发团队",
+     "tags": [
+      "3D平台跳跃",
+      "Kickstarter",
+      "休闲"
+     ],
+     "title": "《Super Sami Roll 2》：自称「喜欢马力欧 3D 世界、超级猴子球、3D 索尼克就会喜欢」，Kickstarter 已上线",
+     "en_title": "If you like SUPER MARIO 3D WORLD, you'll like our game! If you like SUPER MONKEY BALL, you'll like our game! If you like 3D SONIC GAMES, you'll like our game!",
+     "full_text": "If you like SUPER MARIO 3D WORLD, you'll like our game!\n\nIf you like SUPER MONKEY BALL, you'll like our game!\n\nIf you like 3D SONIC GAMES, you'll like our game! https://t.co/YWLVZMzrNY",
+     "author": "Super Sami Roll 2! 🚨Kickstarter is Live!!🚨",
+     "date": "2026-10-16",
+     "likes": 341,
+     "views": 13110,
+     "link": "https://x.com/SuperSamiRoll/status/2111093833828274364",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111092982128807936/img/VhAq1MaPtaCVzihd.jpg",
+      "video_url": "https://x.com/SuperSamiRoll/status/2111093833828274364/video/1"
+     },
+     "summary": "滚球式 3D 平台跳跃续作，主角 Sami 靠滚动加速、弹跳与抓钩穿越多个世界，去救回被猴子 Albert VII 抓走的朋友。Kickstarter 众筹正在进行中。",
+     "recommendation": "《Super Sami Roll 2》：滚球 3D 平台跳跃续作，Kickstarter 众筹进行中——341赞",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 06",
+     "source": "Niche Gamer · 媒体报道",
+     "tags": [
+      "竞速",
+      "PS1风格",
+      "音乐"
+     ],
+     "title": "《CD-R Racing》：PS1 画面 + 梦幻配乐，BPM 就是时速",
+     "en_title": "CD-R Racing combines PS1 visuals and a dreamy soundtrack that boosts your speed:",
+     "full_text": "CD-R Racing combines PS1 visuals and a dreamy soundtrack that boosts your speed: https://t.co/uBBpehzzTu https://t.co/gBFErMaO6K",
+     "author": "Niche Gamer",
+     "date": "2026-10-17",
+     "likes": 15,
+     "views": 1098,
+     "link": "https://x.com/nichegamer/status/2111474843241660723",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2111474765022027776/pu/img/Xzy8rnKfwAHfInZ8.jpg",
+      "video_url": "https://x.com/nichegamer/status/2111474843241660723/video/1"
+     },
+     "summary": "向 90 年代赛车游戏致敬的作品：PS1 时代的低多边形画面、rave 音乐与收集 CD-R 的目标，设定上「BPM = MPH」，音乐节奏直接决定车速。Steam 页面显示 2027 年。",
+     "recommendation": "《CD-R Racing》：PS1 画风 + rave 配乐，BPM 就是时速——2027 年",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 07",
+     "source": "Eurogamer · 媒体报道",
+     "tags": [
+      "策略",
+      "战术",
+      "执法"
+     ],
+     "title": "Strange Scaffold《Gods With Badges》：决定什么时候关掉执法记录仪的回合制战术游戏",
+     "en_title": "Strange Scaffold announces Gods With Badges, a tactics game where you decide when to switch off your bodycam.",
+     "full_text": "Strange Scaffold announces Gods With Badges, a tactics game where you decide when to switch off your bodycam. https://t.co/0kixcsLO7F https://t.co/aYDxontgnU",
+     "author": "Eurogamer",
+     "date": "2026-10-17",
+     "likes": 2,
+     "views": 3938,
+     "link": "https://x.com/eurogamer/status/2111283813301051584",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HUzJcIBXwAABcyW.jpg"
+     },
+     "summary": "在名为 Skjaerholm 的开放式枢纽巡逻、决定市民命运、用回合制战斗制服罪犯。核心机制是执法记录仪：关掉它，你只需要向自己的良心和同僚交代。Steam 页面已上线，日期待定。",
+     "recommendation": "Strange Scaffold 新作《Gods With Badges》：关掉执法记录仪后再动手的回合制战术——2.3千浏览",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 08",
+     "source": "Teeko · 开发团队",
+     "tags": [
+      "2D平台",
+      "塔防",
+      "叙事"
+     ],
+     "title": "《Teeko》：哥斯达黎加面具节背景的 2D 平台跳跃 + 塔防，靠一只树懒救小镇",
+     "en_title": "I don't know how to market my game either",
+     "full_text": "I don't know how to market my game either https://t.co/jSuLnN3kvt",
+     "author": "Teeko 🦥",
+     "date": "2026-10-15",
+     "likes": 489,
+     "views": 24497,
+     "link": "https://x.com/TeekoGame/status/2110817043230388539",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2110816814863151104/img/v8WncY_tKROyADux.jpg",
+      "video_url": "https://x.com/TeekoGame/status/2110817043230388539/video/1"
+     },
+     "summary": "结合 2D 平台跳跃与塔防的叙事游戏，灵感来自哥斯达黎加的面具节（Día de Las Mascaradas）：奶奶的孩子们被面具之灵附身，只能靠她的树懒 Teeko 拯救小镇。Steam 页面显示即将推出。",
+     "recommendation": "《Teeko》：哥斯达黎加面具节背景的 2D 平台 + 塔防，主角是只树懒——489赞",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Rock Paper Shotgun · 技术报道",
+     "tags": [
+      "引擎迁移",
+      "Unity",
+      "RimWorld"
+     ],
+     "title": "RimWorld 从 Unity 迁到自研 Waylith 引擎：性能 2-4 倍，1500 个 Mod 加载从 14 分钟降到 6 分钟",
+     "en_title": "RimWorld switches engine from Unity to the devs' own, faster Waylith Engine, all apparently without breaking mods somehow.",
+     "full_text": "RimWorld switches engine from Unity to the devs' own, faster Waylith Engine, all apparently without breaking mods somehow. https://t.co/ntN3aHb3th https://t.co/KsjhPW2uJd",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-10-17",
+     "likes": 4,
+     "views": 1672,
+     "link": "https://x.com/rockpapershot/status/2111438837322817859",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU1WbkyXkAApWSn.jpg"
+     },
+     "summary": "Ludeon 在 Steam 更新公告中宣布，1.7 版本把《RimWorld》从 Unity 迁移到自研的 Waylith Engine。官方称画面与玩法保持一致，但启动、带大量 Mod 的加载、地图与世界生成、每秒 tick 等全面提速，整体性能提升约 2-4 倍，举例称 1500 个 Mod 的整合包加载时间从 14 分钟降到 6 分钟。1.6 存档可继承，社区 Mod 基本照常工作，测试版已在 Steam beta 分支上线；官方提示 10 年以上的老机器可能跑不动。",
+     "analysis": "引擎迁移最大的风险从来不是性能而是生态，RimWorld 用「Mod 与存档不破」证明了自研引擎的可行性。对依赖 Unity 的中小团队，这是继《杀戮尖塔 2》转 Godot 之后又一个可引用的决策样本。",
+     "recommendation": "RimWorld 从 Unity 迁到自研 Waylith 引擎：性能×2-4，1500 个 Mod 加载时间减半",
+     "game_ref": "RimWorld",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "陈成 · 开发者",
+     "tags": [
+      "编辑器",
+      "AI协作",
+      "工具"
+     ],
+     "title": "Mayoi 0.10.0：在 diff 里写 Review 一键发给终端 Agent，新增中日文界面",
+     "en_title": "Mayoi 0.10.0 发布！",
+     "full_text": "Mayoi 0.10.0 发布！\n\n• 设置同步，多台机器共享配置  \n• 支持简体中文和日语界面  \n• 在 diff 里写 Review 评论，一键发给终端里的 Agent  \n• 终端面板可放在底部、左侧或右侧  \n• 锁定一栏专放终端  \n• Source Control 新增分支和远程仓库管理  \n• 项目栏支持自定义图标、标签和颜色\n\nhttps://t.co/bepMLbTRWU",
+     "author": "陈成",
+     "date": "2026-10-17",
+     "likes": 26,
+     "views": 2208,
+     "link": "https://x.com/chenchengpro/status/2111287348986307017",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111287111257292800/img/D6wOOxRzreGyHNgl.jpg",
+      "video_url": "https://x.com/chenchengpro/status/2111287348986307017/video/1"
+     },
+     "summary": "Mayoi 0.10.0 发布，新增设置同步（多台机器共享配置）、简体中文与日文界面、在 diff 中直接写 Review 评论并一键发给终端里的 Agent、终端面板可放底部/左侧/右侧并支持锁定一栏、Source Control 增加分支与远程仓库管理、项目栏支持自定义图标/标签/颜色。",
+     "analysis": "编辑器正在把「人 review、agent 执行」做成原生交互，而不是复制粘贴。对团队来说，AI 协作的瓶颈已从模型能力转到上下文交接：谁能把 diff、任务和 Agent 放在同一屏，谁的迭代就更快。",
+     "recommendation": "Mayoi 0.10.0：在 diff 里写 Review 一键发给终端 Agent，新增中日文界面"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**独游开始为「被 AI 复刻」付出实际代价**\n全球愿望单第 65 位的《Drunken Goddess Reflux》取消原定 10 月 19 日的公开 Steam Demo，改为限额封闭测试；同一天，独立开发者 ARC 的「要么发布要么闭嘴」拿到 9800 赞。曝光越早、被复刻的窗口越长，独游的营销节奏正在被迫改写。\n\n**大厂这边则把 AI 写进了生产管线**\nBloomberg 报道 Epic 与迪士尼合作的跨界射击新作内部延期，团队被要求改用「AI 优先」流程，内部信称「不再有手写代码」，美术要「用完整 AI 工作流生成」；Tim Sweeney 确认公司正为最大程度 AI 加速重新调配人力。\n\n**平台与存量市场仍在扩张**\nSteam 同时在线用户达到 43,505,724 人，游戏内玩家超过 1400 万，双双刷新 23 年历史纪录；Funcom 再度裁员、瑞典 Liquid Swords 破产，则提醒中型团队的容错空间正在收窄。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
