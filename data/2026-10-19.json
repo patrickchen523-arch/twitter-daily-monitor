@@ -1,0 +1,513 @@
+{
+ "date": "2026-10-19",
+ "meta": {
+  "raw_count": 136,
+  "filtered_count": 135,
+  "selected_count": 15,
+  "crawl_time": "2026-10-19"
+ },
+ "lede": "Claude Opus 5.5 拉低解包重编译门槛，移植与克隆激增；Epic 开源 Unreal MCP 插件，Claude Code 可直连编辑器；Xbox 成立 Xbox Labs 却避谈 AI。",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "8 人合作恐怖 + 主播模拟：拍到怪异就涨粉，队里还藏着被附身的叛徒——10.2 万浏览"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 2,
+   "hook": "一周用 Codex + Unreal 做出「全战三国 × 骑砍」融合小游戏，开发流程全公开"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Xbox 成立 Xbox Labs，CTO 出自 Azure OpenAI，通稿只谈解包重编译不提 AI"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Claude Opus 5.5 拉低解包重编译门槛，非官方移植与克隆激增，发行商开始发 DMCA\n非游戏开发者用 Claude Code + three.js 一个月做出浏览器 FPS，月成本仅 €90\n一周用 Codex + Unreal 做出「全战三国 × 骑砍」融合小游戏"
+  },
+  {
+   "id": "industry",
+   "text": "Xbox 成立 Xbox Labs，CTO 出自 Azure OpenAI，通稿只谈解包重编译不提 AI\nEpic 承认用 AI「vibe-code」重写启动器，主打启动比 Steam 快 5 秒\nDean Hall 开源 Brutal 框架并炮轰 Epic/Unity：「行业正从核心腐烂」"
+  },
+  {
+   "id": "indie",
+   "text": "《肝試しオンライン》：8 人合作恐怖 + 主播模拟，拍到怪异能涨粉\n《Mortuus》：把 Boxhead 做成第一人称，1-4 人合作刷僵尸回合\n《Stack Order》：一支独立团队为卡牌游戏手绘超过 15,000 帧"
+  },
+  {
+   "id": "tools",
+   "text": "Epic 官方开源 Unreal Engine Skills，Claude Code 可直连编辑器操作 30+ 工具集\nAiKodex 把 Learned Motion Matching 塞进 Unity，用机器学习替代状态机与脚滑\nSteam Next Fest 十月场今日开启"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Pirat_Nation · 行业观察",
+     "tags": [
+      "AI克隆",
+      "解包重编译",
+      "DMCA"
+     ],
+     "title": "AI「解包-重编译」潮冲垮旧规则：非官方移植与克隆激增，发行商开始发 DMCA",
+     "en_title": "AI “vibe coding” is starting to create a serious problem for the video game industry.",
+     "full_text": "AI “vibe coding” is starting to create a serious problem for the video game industry.\n\nThe release of Claude Opus 5.5 has made it much easier to decompile and recompile games, leading to a wave of unofficial ports, mods and game clones. Publishers are already filing DMCA takedowns over some of this activity. Kotaku\n\nFormer Take-Two AI chief Luke Dicken says developers and publishers need to take the trend seriously:\n\n“This new wave of decompile-and-port is definitely something that developers an...",
+     "author": "Pirat_Nation",
+     "date": "2026-10-17",
+     "likes": 5361,
+     "views": 297828,
+     "link": "https://x.com/Pirat_Nation/status/2111593348293128535",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU17GjrXgAEkhgD.jpg"
+     },
+     "summary": "Kotaku 报道称，Claude Opus 5.5 发布后「解包再编译」的门槛被大幅拉低，非官方移植、MOD 与克隆作品集中涌现，已有发行商开始就其中部分内容提交 DMCA 下架。前 Take-Two AI 负责人 Luke Dicken 认为开发者与发行商必须严肃对待这波趋势。",
+     "analysis": "过去解包移植是少数技术团队的活，现在变成提示词加算力的批量生产。真正的冲击不在盗版，而在「旧作被重编译到新平台」这件事绕开了发行商：谁拥有移植权、谁承担质量与合规责任，现有授权体系没有答案。DMCA 只是止血，平台侧的下架规则和引擎侧的可追溯水印，才是下一步的角力点。",
+     "recommendation": "Claude Opus 5.5 拉低解包重编译门槛，非官方移植与克隆激增，发行商开始发 DMCA",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "RoundtableSpace · 开发案例",
+     "tags": [
+      "Claude Code",
+      "three.js",
+      "浏览器游戏"
+     ],
+     "title": "非游戏开发者用 Claude Code + three.js 一个月做出浏览器 FPS《Riposte》，月成本 €90",
+     "en_title": "A developer who says he's not a game dev built Riposte, a browser FPS, with Claude Code and three.js in about a month.",
+     "full_text": "A developer who says he's not a game dev built Riposte, a browser FPS, with Claude Code and three.js in about a month.\n\n→ Weapons, characters and maps are all generated in code\n→ No Blender, no imported models\n→ Physics on props, cloth and water\n→ Built to run on PC, phone and controller\n\nThe cost breakdown is the useful part:\n\n→ Started on the €20/month plan and kept hitting limits\n→ Switched many tasks to Sonnet 5.5 to stretch it\n→ Moved to the €90/month plan in October and never hit the limit\n→ No extra credits bought\n\nOne tip: Claude Code started spinning up parallel agents for everything, so he told it to stop in the project instructions.\n\nIt's free to play in the browser.\n\nhttps://t.co/gfYmR5Jn6X\n\nReddit: https://t.co/Q6b2RAqQfG",
+     "author": "RoundtableSpace",
+     "date": "2026-10-18",
+     "likes": 151,
+     "views": 47653,
+     "link": "https://x.com/RoundtableSpace/status/2111672368540107253",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111619157045190656/img/RHtngrnqXyLpcuef.jpg",
+      "video_url": "https://x.com/RoundtableSpace/status/2111672368540107253/video/1"
+     },
+     "summary": "一位自称不是游戏开发者的作者，用 Claude Code 与 three.js 约一个月做出浏览器 FPS《Riposte》：武器、角色、地图全部由代码生成，不用 Blender、不导入模型，道具布料和水面有物理效果，同时适配 PC、手机与手柄。成本从每月 €20 档一路撞上限，切到 Sonnet 5.5 分担任务，10 月升级到 €90 档后不再触顶，全程未额外购买额度。",
+     "analysis": "这条最有价值的是成本结构，而不是 Demo 本身：一个月、€90、零美术资产，意味着「可玩原型」的边际成本已经逼近一杯咖啡。作者还发现 Claude Code 会无差别并行开 agent，需要在项目指令里明确禁止——这是新的工程管理经验。对团队而言，AI 拉平的是原型阶段，不是打磨阶段；真正的分水岭仍在于能不能把原型做到可发行。",
+     "recommendation": "非游戏开发者用 Claude Code + three.js 一个月做出浏览器 FPS，月成本仅 €90",
+     "featured": false
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "小奇说 · 中文 KOL",
+     "tags": [
+      "Codex",
+      "Unreal",
+      "AI开发流程"
+     ],
+     "title": "《小奇说》用 Codex + Unreal 一周做出「全战三国 × 骑马与砍杀」融合小游戏",
+     "en_title": "如何用 Codex + Unreal 做游戏？",
+     "full_text": "如何用 Codex + Unreal 做游戏？\n\n花了一周的时间，我将全战三国和骑马砍杀的经典玩法融合到了一起，用 AI 自制了一个小游戏\n\n为此，我将开发流程汇编成一段视频，给大家提供制作思路，还有很多的地方没有完善，仅供参考 https://t.co/OyLJbmIh6A",
+     "author": "小奇说",
+     "date": "2026-10-18",
+     "likes": 1051,
+     "views": 56107,
+     "link": "https://x.com/xingbugengming/status/2111743548945272840",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111740329607245824/img/xaSsaDxZYm3dMxWD.jpg",
+      "video_url": "https://x.com/xingbugengming/status/2111743548945272840/video/1"
+     },
+     "summary": "中文开发者「小奇说」用一周时间，以 Codex 配合 Unreal 把《全面战争：三国》的大战场指挥与《骑马与砍杀》的动作骑战揉进同一个小游戏，并把完整开发流程整理成视频公开，自述仍有大量未完善之处，仅供参考。",
+     "analysis": "这条的样本意义在于「组合式复刻」：不是从零发明玩法，而是把两个成熟品类的核心循环拼在一起，用 AI 补齐工程实现。对国内团队来说，这是一条可复制的能力验证路径——AI 负责把设计意图落成可跑的代码，人负责判断哪两个循环拼起来才成立。一周做出可玩版本，已经足以用于立项评审。",
+     "recommendation": "一周用 Codex + Unreal 做出「全战三国 × 骑砍」融合小游戏，开发流程全公开",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 平台战略",
+     "tags": [
+      "Xbox",
+      "生成式AI",
+      "组织调整"
+     ],
+     "title": "Xbox 成立 Xbox Labs：CTO 出自 Azure OpenAI，通稿只谈「解包重编译」不提 AI",
+     "en_title": "Xbox announces what sounds like a generative AI-focused game-making department, Xbox Labs, while avoiding mentioning AI",
+     "full_text": "Xbox announces what sounds like a generative AI-focused game-making department, Xbox Labs, while avoiding mentioning AI https://t.co/SpCEPigrmb https://t.co/MrrYunp3Jh",
+     "author": "Eurogamer",
+     "date": "2026-10-18",
+     "likes": 15,
+     "views": 5870,
+     "link": "https://x.com/eurogamer/status/2111616001120882856",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU33kDIXMAEnVyO.png"
+     },
+     "summary": "Xbox CEO Asha Sharma 在内部信与 Xbox Wire 中宣布成立 Xbox Labs，由 CTO Scott Van Vliet 领导——他此前负责微软 Azure 面向 OpenAI 的业务。官方表述聚焦「近期游戏被快速解包并重编译到原本不支持的硬件」「全球最大的一些游戏被重混进另一款游戏的源码」等现象，通篇回避「AI」一词，只说要探索软硬件绑定、创作与游玩的边界。团队规模为「一小群游戏制作者、工程师与科学家」，并在 labs.xbox.com 开放订阅。",
+     "analysis": "这是一次典型的「先建组织、后定叙事」：技术负责人来自 Azure OpenAI，业务描述却刻意绕开 AI，说明微软清楚「AI 做游戏」在开发者与玩家端的舆论成本。更值得注意的是选题——Xbox 把解包重编译当成战略级现象，意味着平台方开始考虑「谁来认证、谁来分发」这些由 AI 生成的移植与重混版本。对第三方团队，这可能既是新的分发口子，也是新的合规门槛。",
+     "recommendation": "Xbox 成立 Xbox Labs，CTO 出自 Azure OpenAI，通稿只谈解包重编译不提 AI",
+     "featured": true,
+     "game_ref": null
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 平台竞争",
+     "tags": [
+      "Epic",
+      "Steam",
+      "vibe coding"
+     ],
+     "title": "Epic「vibe-code」重写启动器叫板 Steam：启动快 5 秒，承认会有 bug",
+     "en_title": "Epic throws shade at Steam, admits to vibe-coding the new Epic Games Launcher with AI",
+     "full_text": "Epic throws shade at Steam, admits to vibe-coding the new Epic Games Launcher with AI \"to be faster than the other guy\". https://t.co/tizyXQUFD8 https://t.co/rTVekPmZqM",
+     "author": "Eurogamer",
+     "date": "2026-10-18",
+     "likes": 8,
+     "views": 4953,
+     "link": "https://x.com/eurogamer/status/2111766997209931862",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU6A5IeWIAAB70W.jpg"
+     },
+     "summary": "Epic 官方承认新版 Epic Games Launcher 是用生成式 AI「vibe coding」出来的，宣传点是启动比 Steam 快 5 秒，官方博客称「编程太难了，所以我们干脆 vibe code 了一个更快的新启动器」，并自嘲「第一版功能很少，是快艇不是游艇」。EGS 副总裁兼总经理 Martin Keely 对 IGN 表示这提升了效率，让小团队能重写代码库并跨平台更快发布；官方也直言「会有 bug」，请用户用启动器内反馈按钮提报。此前彭博社报道 Epic 已在迪士尼跨界项目上推行「AI 优先」流程。",
+     "analysis": "Epic 把「用 AI 写客户端」当成营销点，等于公开把工程质量和开发方式绑定成品牌叙事：速度优先、功能后补、bug 用社区反馈补。这对平台竞争是个信号——当客户端本身不再是护城河，胜负回到内容独占、分成比例和开发者关系。对做工具链的团队，更该关注的是它把「小团队重写整套代码库」当作可交付标准，这会重新定义客户端团队的规模预期。",
+     "recommendation": "Epic 承认用 AI「vibe-code」重写启动器，主打启动比 Steam 快 5 秒",
+     "featured": true,
+     "game_ref": null
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 引擎生态",
+     "tags": [
+      "引擎",
+      "开源",
+      "开发者议价权"
+     ],
+     "title": "Dean Hall 开源 Brutal 框架并炮轰 Epic/Unity：「行业正从核心腐烂」",
+     "en_title": "DayZ creator Dean Hall says \"our industry is rotting from its core\" because of big-company \"greed\"",
+     "full_text": "DayZ creator Dean Hall says \"our industry is rotting from its core\" because of big-company \"greed\", aiming shots at Epic's Unreal and Unity https://t.co/XOly1Hwazh https://t.co/0zGvldM02b",
+     "author": "Eurogamer",
+     "date": "2026-10-18",
+     "likes": 7,
+     "views": 2807,
+     "link": "https://x.com/eurogamer/status/2111842494694445566",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU7FjrJWsAApC-_.jpg"
+     },
+     "summary": "《DayZ》《Icarus》制作人 Dean Hall 公开开源 C++ 游戏框架 Brutal，源码开放、可商用，只要求署名，不收分成，并用它做出了《Kitten Space Agency》；RimWorld 团队的自研引擎 Waylith 也在用。他在 Reddit 长文里称「行业正从核心向外腐烂」，批评开发者把过多控制权交给利益不一致的引擎厂商，点名 Unreal 在授权门槛以上抽 5% 分成。他还澄清 Brutal 内部不含任何生成式 AI，并质疑 Unreal/Unity 押注 AI 与自身「以人类工作流为中心」的设计相矛盾。",
+     "analysis": "这段话的真正靶心不是 AI，而是议价权：当引擎掌握项目命脉，任何一次费率或策略调整，团队都只能接受。Hall 的论证是「自建工具的成本正在下降，所以厂商的护城河在自我瓦解」——这恰好也是 AI 带来的副作用。对中小团队，短期内不必换引擎，但「核心系统可迁移」应当成为架构评估项；对引擎厂商，这是来自头部开发者的公开不信任票。",
+     "recommendation": "Dean Hall 开源 Brutal 框架并炮轰 Epic/Unity：「行业正从核心腐烂」",
+     "featured": true,
+     "game_ref": null
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Game*Spark · 媒体推荐",
+     "tags": [
+      "合作恐怖",
+      "社交推理",
+      "主播模拟"
+     ],
+     "title": "《肝試しオンライン Kimodameshi Online》：8 人合作恐怖 + 主播模拟，拍到怪异能涨粉",
+     "en_title": "【最大8人】配信者として夜の校舎で怪異を撮影する協力ホラー『肝試しオンライン』が面白そう。",
+     "full_text": "【最大8人】配信者として夜の校舎で怪異を撮影する協力ホラー『肝試しオンライン』が面白そう。怖い目に遭うほど視聴者が増え、仲間の誰かが配信を邪魔する\nhttps://t.co/pvRs0AevGY\n\n仲間の誰かが幽霊に憑かれた裏切り者になり、配信を乱します。マップやアイテムは毎回変化し、近接ボイチャにも対応 https://t.co/5dLXq4j99g",
+     "author": "⚡Game*Spark⚡",
+     "date": "2026-10-18",
+     "likes": 1708,
+     "views": 101895,
+     "link": "https://x.com/gamespark/status/2111683891916644733",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2111683730012282880/pu/img/0lTPUKF3hsPU-2-M.jpg",
+      "video_url": "https://x.com/gamespark/status/2111683891916644733/video/1"
+     },
+     "summary": "日本独立团队开发的 4 至 8 人在线合作恐怖游戏：玩家扮演主播，深夜潜入一所时间停在事故当天的昭和中学拍摄怪异，拍到怪异、逃离险境都能推高直播同时在线人数，回合结束按峰值观众与订阅率结算涨粉。队伍中随机一人会被幽灵附身成为「叛徒」，可以穿墙、布置陷阱、干扰直播；教室布局与道具每局变化，支持近距离语音。2026 年 10 月上线 Steam，价格未定。",
+     "recommendation": "8 人合作恐怖 + 主播模拟：拍到怪异就涨粉，队里还藏着被附身的叛徒——10.2 万浏览",
+     "game_ref": "Kimodameshi Online",
+     "enrichment": {
+      "game_name": "Kimodameshi Online",
+      "genre": "合作恐怖 / 社交推理 / 主播模拟",
+      "developer": "パン田（个人开发者，联合 兎澄ツミキ）",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "未定",
+      "release_date": "2026年10月（即将推出）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5321510/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5321510/f57e734eca0a9080f79f0725c91e2b09726210a7/header.jpg?t=1791661019",
+      "youtube_video": null,
+      "description": "【核心玩法】4-8 人潜入一所时间停在事故当天的昭和中学，手持摄像机拍摄怪异。拍到怪异、从险境逃脱都会推高直播的同时在线观众数，回合结束按峰值观众与订阅率结算涨粉，把「内容创作」做成了可见的正反馈循环。队伍中随机一人被幽灵附身成为叛徒，能穿墙移动、布置陷阱、干扰其他人的直播，队伍必须在拍摄与互相怀疑之间分配注意力；教室布局和道具每局变化，支持近距离语音。\n\n【美术与氛围】昭和年代校舍的复古质感配合手持 DV 视角，恐怖感来自「被看见」与「被拍下来」的错位，而不是单纯的 jump scare。\n\n【对标定位】把《恐鬼症》的取证循环与《Among Us》的背叛结构嫁接，再用「主播涨粉」把两者的收益统一到同一个数字上，是目前「主播模拟 × 合作恐怖」交叉点上概念最完整的作品之一。\n\n【优势】题材与直播文化天然契合，观众数直接写进玩法，天然适合内容创作者传播；近距离语音放大社交张力与临场感。\n\n【不足】尚未发售，平衡性与内容量未知；强依赖语音和固定车队，野队体验存在风险，单人入口的实际可玩性也待验证。\n\n【综合评价】如果执行到位，它可能成为下一个「看别人玩比自己玩更有趣」的品类样本；对国内做派对/社交恐怖产品的团队，这套「把外部指标变成内部资源」的设计值得拆解。",
+      "why_notable": "把「观众数」直接做成游戏内资源，主播人设与背叛机制天然适配短视频传播——单条推文 10.2 万浏览已验证传播力",
+      "pcu": "未发售",
+      "current_players": "未发售",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「合作恐怖」套「主播涨粉」新瓶，日本个人开发者制作，4-8 人在线，2026 年 10 月上线 Steam"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Indie Game Joe · 独游推荐",
+     "tags": [
+      "僵尸FPS",
+      "合作",
+      "程序化地图"
+     ],
+     "title": "《Mortuus》：把 Boxhead 做成第一人称，1-4 人合作刷僵尸回合",
+     "en_title": "This indie dev is making Boxhead in first person",
+     "full_text": "This indie dev is making Boxhead in first person\n\n- 1 to 4 player online co-op\n- Survive endless rounds of zombies\n- The map is different every single run\n- Feed guns to an altar to upgrade them\n\nGame is Mortuus. https://t.co/MEImUIvqZ9",
+     "author": "Indie Game Joe",
+     "date": "2026-10-17",
+     "likes": 548,
+     "views": 19829,
+     "link": "https://x.com/IndieGameJoe/status/2111494883911319581",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111494263091437569/img/LnFXWJR2ey3RTeqk.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2111494883911319581/video/1"
+     },
+     "summary": "独游开发者 Hamuno 的《Mortuus》把自己定位为「第一人称版 Boxhead」：1-4 人在线合作，在程序生成的粗野主义地图上撑过无尽僵尸回合；每局地图不同，可以买门推进、抽神秘箱换枪，并把枪械喂给祭坛升级，最终揭开唤醒「母亲」的隐藏仪式。Steam 页面已上线，发售时间未公布。",
+     "recommendation": "把 Boxhead 做成第一人称：1-4 人合作刷僵尸回合，地图每局重生成——1.9 万浏览",
+     "game_ref": "Mortuus",
+     "enrichment": {
+      "game_name": "Mortuus",
+      "genre": "第一人称射击 / 合作僵尸波次",
+      "developer": "Hamuno（个人开发者）",
+      "platforms": [
+       "Steam (Windows / macOS / Linux)"
+      ],
+      "price": "未定",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3680170/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3680170/e167565742a0839d40027c35f3bdeb6c0a198f5a/header.jpg?t=1792357922",
+      "youtube_video": null,
+      "description": "【核心玩法】1-4 人在线合作的回合制僵尸 FPS。玩家在程序生成的粗野主义建筑里逐回合撑过尸潮，用点数开门推进路线、抽「神秘箱」换枪、再把枪械喂给祭坛升级，最终触发唤醒「母亲」的隐藏仪式。每局地图重新生成，意味着路线记忆无法直接复用，团队必须现场分工。\n\n【美术与氛围】混凝土、冷光、第一人称视角，走的是老派硬派路线，几乎没有叙事包装，靠尸潮压力和枪械手感撑住体验。\n\n【对标定位】把《使命召唤：僵尸》的「回合—开箱—彩蛋」流程压缩到独立体量，同时借程序化地图解决小团队内容量不足的问题；对老玩家来说，它更像《Boxhead》的第一人称续命版。\n\n【优势】核心循环极清晰，四人合作的刷分快感不需要教学；程序化地图提供重复可玩性，开发成本可控。\n\n【不足】尚未公布发售日与定价；同赛道产品密集，联机稳定性和内容深度是决定留存的关键；纯射击定位在传播上不如题材型产品占便宜。\n\n【综合评价】属于「结构正确、执行未知」的项目。若枪感和联机延迟达标，很适合作为固定车队的常驻刷子游戏。",
+      "why_notable": "「第一人称 Boxhead」这个定位一句话就说清了差异点，程序化地图 + 祭坛升级把老玩法做出了新循环",
+      "pcu": "未发售",
+      "current_players": "未发售",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「僵尸波次 FPS」套「程序化粗野主义建筑」新瓶，个人开发者 Hamuno 制作，1-4 人在线合作"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Indie Game Joe · 独游推荐",
+     "tags": [
+      "卡牌构筑",
+      "手绘动画",
+      "回合制"
+     ],
+     "title": "《Stack Order》：一支独立团队为卡牌游戏手绘超过 15,000 帧",
+     "en_title": "This indie team hand drew over 15,000 frames for their card game",
+     "full_text": "This indie team hand drew over 15,000 frames for their card game\n\n- Stack cards in slots to set off combos\n- See the attack first, then solve the turn\n- Each run teaches you how to beat the bosses\n\nGame is Stack Order. https://t.co/GeEOS1ewGy",
+     "author": "Indie Game Joe",
+     "date": "2026-10-17",
+     "likes": 281,
+     "views": 10640,
+     "link": "https://x.com/IndieGameJoe/status/2111594209778249813",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111592833878458368/img/asynUFkfKvSrO0CH.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2111594209778249813/video/1"
+     },
+     "summary": "独立团队 Panflip Studio 的卡牌构筑冒险《Stack Order》：把卡牌放进槽位堆叠触发连锁，属于先看清对手本回合攻击、再解题的「信息前置」回合制对决；每次推进都在教玩家如何击败 Boss。团队为这款游戏手工绘制了超过 15,000 帧动画。Steam 页面已上线，预计 2027 年推出。",
+     "recommendation": "为卡牌游戏手绘 15,000 帧：堆叠卡牌触发连锁，先看攻击再解题——1.06 万浏览",
+     "game_ref": "Stack Order",
+     "enrichment": {
+      "game_name": "Stack Order",
+      "genre": "卡牌构筑 / 回合制策略",
+      "developer": "Panflip Studio（独立团队）",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "未定",
+      "release_date": "2027年",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4338750/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4338750/484b61fa95d6d2a771d9b580bb0ffb42227128a6/header.jpg?t=1792188193",
+      "youtube_video": null,
+      "description": "【核心玩法】把卡牌放进槽位堆叠，触发连锁反应；对手本回合的攻击会提前展示，玩家在知道伤害来源的前提下解题，把随机性从「抽牌运气」转移到「如何拆解已知威胁」。每一局推进都在教玩家识别 Boss 的出招模式，构筑与读招并行。\n\n【美术与氛围】团队手工绘制超过 15,000 帧，卡牌演出是逐帧动画而非补间，风格统一、动作密度高，在一众依赖静态卡面的构筑游戏里辨识度极强。\n\n【对标定位】介于《Slay the Spire》的构筑深度与手绘演出型卡牌游戏之间，更强调单回合的解题感而非长线数值滚雪球。\n\n【优势】手绘帧数带来的演出质量是这个品类里少见的投入；「先看攻击再解题」降低理解成本的同时提高了策略纯度。\n\n【不足】2027 年发售，节奏、内容量与构筑深度都未验证；逐帧动画成本高，可能限制卡牌数量与更新速度。\n\n【综合评价】这是一款把美术投入本身当作卖点的产品，视觉即传播点。对国内卡牌团队，值得研究的是它如何用「信息前置」把运气感压下去。",
+      "why_notable": "15,000 张手绘帧把卡牌对战的演出标准抬高了一档，视觉本身就是传播素材",
+      "pcu": "未发售",
+      "current_players": "未发售",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「卡牌构筑」套「手绘逐帧演出」新瓶，Panflip Studio 独立开发，2027 年登陆 Steam"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Eurogamer · 新作公开",
+     "tags": [
+      "RPG",
+      "物理模拟",
+      "前 ZA/UM"
+     ],
+     "title": "前 ZA/UM 团队公开《Red Rooster》：物理驱动的「纵火」RPG，拒绝被叫作 Disco-like",
+     "en_title": "Ex-ZA/UM developers reveal Red Rooster, an \"incendiary RPG\" that is very intentionally not trying to be a \"Disco Elysium successor\"",
+     "full_text": "Ex-ZA/UM developers reveal Red Rooster, an \"incendiary RPG\" that is very intentionally not trying to be a \"Disco Elysium successor\" or \"Disco-like\". https://t.co/zVoF7gtOi5",
+     "author": "Eurogamer",
+     "date": "2026-10-18",
+     "likes": 16,
+     "views": 5313,
+     "link": "https://x.com/eurogamer/status/2111736798598594703",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU5lbVUWEAAjkb7.jpg"
+     },
+     "summary": "由《极乐迪斯科》编剧 Argo Tuulik 等前 ZA/UM 成员组成的 Summer Eternal 公开新作《Red Rooster》：玩家扮演一名被投入纵火调查的白领囚犯，搭档是依赖鸦片类药物的数学家，线索指向担任消防局长的兄弟。游戏在 Unreal 上实现全物理驱动，可移动、操纵、点燃场景物件，采用动态镜头的三维世界而非等距视角，目标预算是接近《光与影：33 号远征队》的 double-A 规模。团队同时以 500 页选集与玩家非营利组织持有 5% 股份的方式筹资。",
+     "recommendation": "前 ZA/UM 团队公开物理驱动纵火 RPG《Red Rooster》，明确拒当 Disco-like",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Aerial · 试玩信息",
+     "tags": [
+      "MMORPG",
+      "Next Fest",
+      "免费Demo"
+     ],
+     "title": "《ArcheAge Chronicles》加入 Steam Next Fest：10 月 19-26 日免费试玩，无需注册",
+     "en_title": "ArcheAge Chronicles joins Steam Next Fest",
+     "full_text": "ArcheAge Chronicles joins Steam Next Fest\n\n- Free playable demo\n- Runs Oct 19-26\n- No registration required https://t.co/vRNKAmi9VR",
+     "author": "Aerial",
+     "date": "2026-10-17",
+     "likes": 1128,
+     "views": 82933,
+     "link": "https://x.com/AerialZer0/status/2111398923172786330",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111398773553287168/img/HrYiy_rVCvKoQCFv.jpg",
+      "video_url": "https://x.com/AerialZer0/status/2111398923172786330/video/1"
+     },
+     "summary": "《ArcheAge Chronicles》确认参加 10 月 19 日至 26 日的 Steam Next Fest，提供免费可玩 Demo，且无需注册账号。该作是《上古世纪》IP 的续作级 MMORPG，本届 Next Fest 与它的试玩窗口完全重合。",
+     "recommendation": "《ArcheAge Chronicles》随 Next Fest 开放免费 Demo，10 月 19-26 日无需注册",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "GameSpot · 新作曝光",
+     "tags": [
+      "恐怖",
+      "2D与实拍",
+      "已发售"
+     ],
+     "title": "《Tenebris Somnia》：2D 像素画面混搭真人实拍恐怖片段，发售即打折",
+     "en_title": "Tenebris Somnia Blends 2D Visuals With Live-Action Horror Scenes, And It’s Already On Sale At Launch",
+     "full_text": "Tenebris Somnia Blends 2D Visuals With Live-Action Horror Scenes, And It’s Already On Sale At Launch dlvr.it/TVygZc https://t.co/7kIOJn9Bpd",
+     "author": "GameSpot",
+     "date": "2026-10-18",
+     "likes": 10,
+     "views": 7791,
+     "link": "https://x.com/GameSpot/status/2111847944517566624",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU7Kg6XakAEFzqi.jpg"
+     },
+     "summary": "《Tenebris Somnia》把 2D 像素探索与真人实拍恐怖片段结合：日常探索以像素风呈现，关键恐怖场面切到实拍影像。游戏已发售，并在上线首周即开启折扣。",
+     "recommendation": "2D 像素探索 + 真人实拍恐怖片段，《Tenebris Somnia》发售即打折",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Epic Games · 官方开源",
+     "tags": [
+      "Unreal",
+      "MCP",
+      "Claude Code"
+     ],
+     "title": "Epic 官方开源 Unreal Engine Skills：让 Claude Code 通过 MCP 直接驱动编辑器",
+     "en_title": "Epic Games released an official plugin that lets Claude Code control Unreal Engine directly.",
+     "full_text": "Epic Games released an official plugin that lets Claude Code control Unreal Engine directly.\n\nIt connects Claude Code to the Unreal Editor and exposes hundreds of editor tools across 30+ toolsets:\n\n→ Actors, Blueprints and materials\n→ Niagara effects, Control Rigs and Sequencer\n→ State Trees, widgets and the Gameplay Ability System\n→ Automation testing\n\nInstall it from Anthropic's official plugin marketplace:\n/plugin install unreal-engine-skills-for-claude-code@claude-plugins-official\n\nIn Unreal, enable the ModelContextProtocol and AllToolsets plugins, then start the MCP server with the editor open.\n\nWorks on Mac, Linux, and Windows through Git Bash or WSL.\n\nhttps://t.co/LYM4whQ8Ev",
+     "author": "RoundtableSpace",
+     "date": "2026-10-18",
+     "likes": 2529,
+     "views": 155547,
+     "link": "https://x.com/RoundtableSpace/status/2111702567449424226",
+     "media": null,
+     "summary": "Epic Games 在 GitHub 开源 unreal-engine-skills-for-claude-code-plugin（MIT，约 1.0k star、102 fork）：通过 MCP 把 Claude Code 接到运行中的 Unreal Editor，经 ToolsetRegistry 暴露 30 多个 toolset、数百个编辑器工具，覆盖 Actor、蓝图、材质、Niagara、Control Rig、Sequencer、State Tree、UMG 与 Gameplay Ability System，以及 C++ 自动化测试。使用前需在编辑器内启用 ModelContextProtocol 与 AllToolsets 插件，并从 Anthropic 官方插件市场安装。官方 README 明确警告：execute_tool_script 会在编辑器进程内执行任意 Python，等同授予项目与资产库的写权限。",
+     "analysis": "这是引擎厂商第一次以官方身份把「AI 直接操作编辑器」做成受支持的一等能力。它把工作流从「AI 生成代码给人粘贴」推进到「AI 直接改场景、连蓝图、跑测试」，也顺带把风险公开化：一个坏提示词可以在一次会话里删改大量资产。对团队而言，落地前提不是模型能力，而是版本控制纪律、沙箱工程和权限边界；README 里那句「当作运行任意代码来对待」应该直接写进内部规范。",
+     "recommendation": "Epic 官方开源 Unreal MCP 插件，Claude Code 可直连编辑器操作 30+ 工具集",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "3Dgamedev · 技术演示",
+     "tags": [
+      "Unity",
+      "动作匹配",
+      "机器学习"
+     ],
+     "title": "AiKodex 把 Learned Motion Matching 塞进 Unity：用机器学习替代状态机与脚滑",
+     "en_title": "Say goodbye to jittery foot sliding and rigid state machines—Learned Motion Matching is changing how 3D characters handle basic locomotion.",
+     "full_text": "Say goodbye to jittery foot sliding and rigid state machines—Learned Motion Matching is changing how 3D characters handle basic locomotion. 🏃‍♂️💨\n\nthis breakdown demonstrates AiKodex's tool for Unity, using machine learning to generate ultra-smooth, responsive human movement. https://t.co/HgkMjBRLAC",
+     "author": "3Dgamedev",
+     "date": "2026-10-17",
+     "likes": 1924,
+     "views": 100824,
+     "link": "https://x.com/unity3dvfx/status/2111349665522176177",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111349378992500736/img/wFMX9nZQsdEoGYLJ.jpg",
+      "video_url": "https://x.com/unity3dvfx/status/2111349665522176177/video/1"
+     },
+     "summary": "3Dgamedev 展示 AiKodex 面向 Unity 的工具：用「Learned Motion Matching」以机器学习生成角色的基础位移动作，替代传统状态机，解决脚滑与动作僵硬。演示为一段技术拆解视频，展示移动、转向与响应性的改善。",
+     "analysis": "动作匹配从 3A 的成本项变成 Unity 侧的插件能力，意味着「移动手感的及格线」会被整体抬高。状态机时代拼的是动画师与程序的分工效率，动作匹配时代拼的是动捕数据覆盖度与模型调优能力——中小团队的资产准备方式需要提前调整。对玩家侧，这类技术最终会表现为「一眼能看出新旧世代」的动作自然度。",
+     "recommendation": "AiKodex 把 Learned Motion Matching 带进 Unity，用机器学习替代状态机",
+     "featured": false
+    },
+    {
+     "idx": "开发工具 03",
+     "source": "SteamDB · 平台日程",
+     "tags": [
+      "Steam",
+      "Next Fest",
+      "Demo"
+     ],
+     "title": "Steam Next Fest 十月场今日开启：为期一周的 Demo 窗口",
+     "en_title": "Steam Next Fest: October 2026 will begin tomorrow",
+     "full_text": "Steam Next Fest: October 2026 will begin tomorrow https://t.co/sEdzhZcwdS",
+     "author": "SteamDB",
+     "date": "2026-10-18",
+     "likes": 20,
+     "views": 1914,
+     "link": "https://x.com/SteamDB/status/2111864909516480914",
+     "media": null,
+     "summary": "SteamDB 提醒：Steam Next Fest 十月场将于 10 月 19 日开始。这是 Valve 每年数次的独立游戏集中曝光窗口，参与作品会在一周内提供可玩 Demo，并配套开发者直播。",
+     "analysis": "Next Fest 是全年最集中的「公开 Demo」时刻，也正好撞上今年最现实的矛盾：Demo 是拉愿望单的主力手段，同时又是被 AI 快速复刻的入口。今年值得观察的是有多少开发者选择「只发 Demo 不发核心系统」，以及 Valve 会不会在活动期间对换皮克隆做更快的处理。对发行与市场团队，这一周的榜单变化是下半年独游走势的先行指标。",
+     "recommendation": "Steam Next Fest 十月场今日开启，独游迎来全年最集中的 Demo 曝光窗口",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI 把「复刻」变成了流水线，平台和引擎开始接招**\nClaude Opus 5.5 让解包重编译的门槛大幅下降，非官方移植、MOD 与克隆集中出现，发行商已开始发 DMCA；同一天，Epic 官方开源了让 Claude Code 通过 MCP 直接驱动 Unreal Editor 的插件，30 多个工具集、数百个编辑器工具全部开放，引擎厂商第一次把「AI 操作编辑器」做成一等能力。\n\n**大厂在组织与工具两侧同时下注**\nXbox 成立 Xbox Labs，负责人是前 Azure OpenAI 业务 CTO，通稿却刻意不提 AI，只谈「游戏被解包重编译」；Epic 承认新版启动器是 vibe code 出来的，主打启动比 Steam 快 5 秒；《DayZ》制作人 Dean Hall 则开源 C++ 框架 Brutal，直接批评 Unreal 与 Unity 对开发者不够负责。\n\n**独游侧仍然是「概念先行」的一周**\n日本团队把「主播涨粉」做成合作恐怖的核心资源，《Mortuus》把 Boxhead 搬进第一人称，《Stack Order》用手绘 15,000 帧把卡牌演出拉高一档；Steam Next Fest 十月场今天开启，接下来一周是新作曝光的集中窗口。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
