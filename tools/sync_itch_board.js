@@ -17,6 +17,16 @@ if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
   process.exit(1);
 }
 
+// 0) 工作区必须干净：未提交修改会让 pull --rebase 中途拒绝（2026-10-20 事故：commit 成功后才炸，状态割裂）。
+{
+  const dirty = spawnSync('git', ['status', '--porcelain'], { cwd: root, encoding: 'utf8' });
+  const dirtyFiles = (dirty.stdout || '').trim();
+  if (dirtyFiles) {
+    console.error(`[sync_itch] 工作区有未提交修改，请先提交或还原后再跑：\n${dirtyFiles}`);
+    process.exit(1);
+  }
+}
+
 function run(cmd, args, opts = {}) {
   const label = `${cmd} ${args.join(' ')}`;
   console.error(`\n=== ${label} ===`);
