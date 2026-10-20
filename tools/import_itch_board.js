@@ -64,7 +64,7 @@ const board = {
 const dayPath = path.join(root, 'data', 'launched', `${date}.json`);
 if (!fs.existsSync(dayPath)) {
   console.error(`档期不存在: ${dayPath}（请先按日常流程建当日档期）`);
-  process.exit(1);
+  process.exit(3);  // 3 = 档期未就绪（sync_itch_board 据此等待重试）
 }
 const day = JSON.parse(fs.readFileSync(dayPath, 'utf8'));
 day.boards = (day.boards || []).filter(b => b.id !== 'itch');
