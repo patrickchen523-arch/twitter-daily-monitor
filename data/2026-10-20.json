@@ -1,0 +1,584 @@
+{
+ "date": "2026-10-20",
+ "meta": {
+  "raw_count": 151,
+  "filtered_count": 145,
+  "selected_count": 16,
+  "crawl_time": "2026-10-20"
+ },
+ "lede": "Epic 的 Sweeney 说 AI 会带来游戏黄金时代；Opus 5.5 把三款商业游戏互相嵌套；Steam Next Fest 8,011 个 Demo 里，AI 克隆已开始互相抄代码；Liquid Swords 确认关闭。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "《GTA 6》进入发售前最后一个月，Q4 发行窗口开始被挤压——29.9 万浏览"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 1,
+   "hook": "Fortnite 跑进 Minecraft，Minecraft 跑进 GTA5：Opus 5.5 打通三条完全不同的路径"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "逐件穿甲、骑马冲阵、开锁扒窃：写实中世纪像素 RPG，没有魔法与怪物"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Epic CEO Sweeney：AI 让重复劳动自动化的同时，小团队能做大预算的事\nOpus 5.5 打通三条逆向路径：Fortnite 跑进 Minecraft，Minecraft 跑进 GTA5\nSteam Next Fest 8,011 个 Demo 翻倍，AI 克隆开始互相抄代码"
+  },
+  {
+   "id": "industry",
+   "text": "《GTA 6》进入发售前最后一个月，Q4 档期被挤压\n《LittleBigPlanet》PS3 代码被静态重编译成原生 PC 版\n《Samson》开发商 Liquid Swords 确认关闭\n《Dune: Awakening》主机版上线后 Funcom 重组裁员"
+  },
+  {
+   "id": "indie",
+   "text": "《Black Autumn: 1438》：没有魔法与怪物的写实中世纪像素 RPG\n《Chocolate Parade》：武装糖果 Roguelike，11 月 5 日发售\n《Ember and Blade》：LINE Games 把无双与幸存者like 缝在一起"
+  },
+  {
+   "id": "tools",
+   "text": "10 个开源仓库让 Claude Code / Codex 直连 Godot、Unity、Unreal 与 Three.js"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Pirat_Nation · 行业观点",
+     "tags": [
+      "AI 生产力",
+      "Epic Games",
+      "小团队"
+     ],
+     "title": "Epic CEO Tim Sweeney：AI 会把游戏带进「黄金时代」，小团队能做过去大预算的事",
+     "en_title": "Epic Games CEO Tim Sweeney believes AI could lead to a \"golden age of gaming.\"",
+     "full_text": "Epic Games CEO Tim Sweeney believes AI could lead to a “golden age of gaming.”\n\nHe says AI could change the way games are made by helping devs with many of the repetitive and time-consuming parts of development.\n\nAccording to Sweeney, this could allow smaller teams to create games that would normally require much larger teams and much bigger budgets.\n\n“We’re entering a golden age of gaming.”\n\nSweeney doesnt want to replace devs and believes AI can handle more of the technical work while developers spend more time on ideas and creativity.",
+     "author": "Pirat_Nation 🔴",
+     "date": "2026-10-19",
+     "likes": 3831,
+     "views": 261133,
+     "link": "https://x.com/Pirat_Nation/status/2112001285897765338",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU8lS74WgAEpyCA.jpg"
+     },
+     "summary": "Sweeney 认为 AI 能接手开发中大量重复、耗时的环节，让规模更小的团队做出过去需要更大团队和更高预算才能完成的游戏；他强调这不是要用 AI 取代开发者，而是把开发者从技术性劳动里释放出来，把时间花在创意与想法上，并称行业正在进入「游戏的黄金时代」。",
+     "analysis": "这是引擎方给出的最明确的一次表态：AI 的价值被定位在「压缩人力规模」而不是「替代岗位」，等于给中小团队画了一条可执行的降本路径。对国内团队而言，真正的变量不是能不能用 AI，而是当同规模竞品变多后，创意与审美判断重新成为稀缺资源——工具的边际收益会迅速摊薄。",
+     "recommendation": "Sweeney：AI 接管重复劳动，小团队可做出过去大预算的规模——26.1 万浏览",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Roxx · 技术观察",
+     "tags": [
+      "逆向工程",
+      "Claude Opus 5.5",
+      "MOD"
+     ],
+     "title": "Opus 5.5 把《Fortnite》塞进《Minecraft》、把《Minecraft》塞进《GTA5》：三条完全不同的入口",
+     "en_title": "opus 5.5 got Fortnite running inside Minecraft and Minecraft running inside GTA 5, with nobody's permission and nobody's documentation",
+     "full_text": "THIS IS F*CKING OBSCENE\n\nopus 5.5 got Fortnite running inside Minecraft and Minecraft running inside GTA 5, with nobody's permission and nobody's documentation\n\nthree engines, three completely different ways in, and one of them has no way in at all\n\nTHREE GAMES, THREE DIFFERENT WAYS IN\n→ Minecraft is Java and ships a loader on purpose. that one is the front door. you write against an interface somebody meant for you to use\n→ GTA 5 has no modding api and no front door. you get a compiled binary and nothing else, and the only route in is to read it\n→ Fortnite is a live service with anti cheat sitting on top. there is no way in at all, and that single fact changes the entire job\n\nWHAT READING A BINARY ACTUALLY MEANS\n→ no source, no comments, no function names. you recover what code does from what it is, which is the opposite direction from how it was written\n→ the exact build gets pinned before anything else, because one patch moves every address underneath you, and a different version is a different game\n→ nothing counts until it is confirmed inside the running process. launch it, play it, look at it. opus 5.5 does the reading, the pinning and the checking, and that loop is the part that used to be a team and a year\n\nWHAT THIS ACTUALLY CHANGES\n→ reverse engineering was the most expensive skill in modding. one person, one binary, months of evenings, and the knowledge died with the project\n→ now it is a loop that runs while you sleep, and what comes out of it is not a guess, it is something that got checked against the game while the game was running\n→ so the hard question stopped being whether you can get into an engine. it is what you do once you are standing in three of them at once\n\none layer was read out of a binary\none came through the front door\none was never touched at all, and it still had to land right",
+     "author": "Roxx",
+     "date": "2026-10-18",
+     "likes": 1959,
+     "views": 108604,
+     "link": "https://x.com/Roxx_0x/status/2111904848530555303",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111902143724556289/img/Yqj8itTTgvaO8OcI.jpg",
+      "video_url": "https://x.com/Roxx_0x/status/2111904848530555303/video/1"
+     },
+     "summary": "作者拆出三条路径：《Minecraft》是 Java 且有官方加载器，等于正门；《GTA5》没有 MOD API，只有编译后的二进制，只能靠读；《Fortnite》是带反作弊的在线服务，根本没有入口。Opus 5.5 承担了读二进制、锁定具体 build、并在进程实际运行时反复验证的闭环，原本需要一个团队做上一年。",
+     "analysis": "逆向工程曾是 MOD 生态里最贵的一项技能，作者的核心判断是它正在变成「睡觉时也能跑」的循环。这对移植、MOD、反作弊三端同时施压：平台靠二进制和在线服务建立的护城河，第一次被通用模型当作可批量处理的文本。",
+     "recommendation": "Opus 5.5 完成读二进制、锁版本、实时验证闭环，三条路径全部打通——10.9 万浏览",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "PC Gamer · 行业观察",
+     "tags": [
+      "Steam Next Fest",
+      "AI 克隆",
+      "vibe coding"
+     ],
+     "title": "Steam Next Fest 8,011 个 Demo：比 6 月翻倍，AI 克隆开始互相抄代码",
+     "en_title": "Steam Week in Review: Steam Next Fest has over 8,000 demos, as worthless vibe coded slop levels up",
+     "full_text": "Steam Week in Review: Steam Next Fest has over 8,000 demos, as worthless vibe coded slop levels up https://t.co/vFbAIQ2PGK",
+     "author": "PC Gamer",
+     "date": "2026-10-19",
+     "likes": 443,
+     "views": 67731,
+     "link": "https://x.com/pcgamer/status/2112016621179109771",
+     "media": null,
+     "summary": "本届 Next Fest 预览页已有 8,011 个 Demo，约为 2026 年 6 月的两倍，而 2022 年 6 月只有一千多个；PC Gamer 把这一轮的激增直接归因于 Anthropic 的 Claude Opus 5.5 更新。文中记录：Escape the Walls 在 Roblox 上至少已有 7 个克隆；Needle In A Haystack 的作者 NoGlyph 指控另一团队复制其代码（13 个同名类、过半函数一致、连报错文案都在），已向 Valve 提交版权通知；另有团队因担心被即时克隆，取消了原定的公开 Demo。",
+     "analysis": "供给洪水与克隆速度同时上升，最先被吃掉的是「概念首发」的窗口期：一个可传播的玩法被看见后，几小时内就能被复制到另一个平台变现。对独游团队，这意味着一部分竞争力要从「点子保密」转向「执行深度 + 社区关系 + 品牌」，发行节奏也要重新设计。",
+     "recommendation": "Next Fest 8,011 个 Demo 翻倍：AI 克隆已在互相抄代码，有团队取消公测",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "The Game Awards · 官方节点",
+     "tags": [
+      "GTA 6",
+      "发售节点",
+      "档期"
+     ],
+     "title": "《GTA 6》进入发售前最后一个月，Q4 发行窗口开始被挤压",
+     "en_title": "One month until the launch of Grand Theft Auto VI.",
+     "full_text": "One month until the launch of Grand Theft Auto VI. https://t.co/p0cB4cL30H",
+     "author": "The Game Awards",
+     "date": "2026-10-19",
+     "likes": 26532,
+     "views": 299494,
+     "link": "https://x.com/thegameawards/status/2111987367158632505",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU9JS9hbkAA_iwt.jpg"
+     },
+     "summary": "The Game Awards 官方账号发布「距离《GTA 6》发售还有一个月」的倒计时，单条获得 2.65 万点赞、29.9 万浏览。同期 PC Gamer 的 Steam 周收入榜（10 月 6-13 日）显示，这一周没有任何大作发售，Dota 2 重回第一，Aion 2 第二。",
+     "analysis": "倒计时本身是营销，但对照周收入榜可以看出结构性影响：11 月底到 12 月的大作普遍在避开这个窗口，空出来的档期被长线运营产品吃掉。对国内厂商，Q4 的买量与上线排期需要把「被 GTA 6 吸走注意力」当作确定性变量，而不是概率事件。",
+     "recommendation": "《GTA 6》进入发售前最后一个月，Q4 发行窗口开始被挤压——29.9 万浏览",
+     "featured": true,
+     "game_ref": "Grand Theft Auto VI"
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "chasm · 技术社区",
+     "tags": [
+      "静态重编译",
+      "LittleBigPlanet",
+      "PS3"
+     ],
+     "title": "《LittleBigPlanet》被静态重编译成原生 PC 版：不靠模拟器，Cell 架构被直接翻译",
+     "en_title": "LITTLEBIGPLANET IS COMING NATIVELY TO PC",
+     "full_text": "LITTLEBIGPLANET IS COMING NATIVELY TO PC 🚨\n\nWe just got an early look at a native PC port of the original LittleBigPlanet from the PS3. No emulator, no RPCS3.\n\nLBP has always been one of the hardest PS3 games to emulate because it leans so heavily on the Cell processor. Now its PS3 code is being recompiled straight into native PC code.\n\nA year ago people said PS3 recomps were years away. The decomp scene is moving insanely fast.",
+     "author": "chasm",
+     "date": "2026-10-19",
+     "likes": 7061,
+     "views": 193336,
+     "link": "https://x.com/chasmmmmmmmmmmm/status/2112012608257581101",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2112012244821131264/img/BwnwWhGOVwaSj1_h.jpg",
+      "video_url": "https://x.com/chasmmmmmmmmmmm/status/2112012608257581101/video/1"
+     },
+     "summary": "社区放出《LittleBigPlanet》初代原生 PC 移植的早期画面：不是 RPCS3 模拟，而是把 PS3 代码直接重编译成原生 PC 代码。作者指出 LBP 因为重度依赖 Cell 处理器，一直是 PS3 最难模拟的游戏之一，而一年前业内还说 PS3 的 recomp 要等好几年。",
+     "analysis": "主机独占的护城河正在技术侧变浅：静态重编译把「模拟」变成「翻译」，对 Cell 这类异构架构尤其有效。这会持续给平台方制造版权与保存政策的两难——非官方移植越多，官方重制与向下兼容的商业空间就越被提前消耗。",
+     "recommendation": "《LittleBigPlanet》PS3 代码直接重编译成原生 PC 版，绕过模拟器——19.3 万浏览",
+     "featured": true,
+     "game_ref": "LittleBigPlanet"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 工作室关闭（多家报道：GameSpot）",
+     "tags": [
+      "工作室关闭",
+      "瑞典",
+      "Samson"
+     ],
+     "title": "《Samson》开发商 Liquid Swords 确认关闭：主机表现好于 PC 也不够续命",
+     "en_title": "Liquid Swords founder confirms that the Samson studio has closed, suggesting there may yet be future support for the game",
+     "full_text": "Liquid Swords founder confirms that the Samson studio has closed, suggesting there may yet be future support for the game https://t.co/i2bll7yliP https://t.co/uMrZ57Y3gu",
+     "author": "Eurogamer",
+     "date": "2026-10-19",
+     "likes": 19,
+     "views": 2573,
+     "link": "https://x.com/eurogamer/status/2112210976263045531",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVAUoEZXQAEMAUf.jpg"
+     },
+     "summary": "瑞典工作室 Liquid Swords 创始人确认工作室已关闭，并暗示《Samson》后续可能仍会有支持。此前 Eurogamer 与 GameSpot 先后报道该公司破产/停运；GameSpot 的说法是这款开放世界犯罪题材游戏在主机端表现好于 PC，但仍不足以让开发商活下来。该作 2026 年 4 月 8 日发售、定价 ¥88，Steam 评价数约 3,208 条。",
+     "analysis": "又一个「中等规模、新 IP、全平台发行」的组合失败案例：主机端卖得比 PC 好，说明问题不在平台选择，而在总体规模与成本结构。对中型团队，这轮周期的容错率已经接近零，先做小规模验证再谈全平台，比一次押注更现实。",
+     "recommendation": "《Samson》开发商 Liquid Swords 确认关闭，主机表现好于 PC 仍未能续命",
+     "featured": true,
+     "game_ref": "Samson",
+     "enrichment": {
+      "game_name": "Samson",
+      "genre": "动作 / 冒险 / 竞速",
+      "developer": "Liquid Swords（瑞典）",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "¥ 88.00",
+      "release_date": "已发售 · 2026年4月8日",
+      "steam_rating": "3,208 条评价",
+      "steam_url": "https://store.steampowered.com/app/3634520/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3634520/139e0f223c1c0cb4f2e763c41ae7fe6e4e3e59a2/header.jpg?t=1791189910",
+      "youtube_video": null,
+      "description": "《Samson》是 Liquid Swords 的首款作品，2026 年 4 月 8 日发售，定价 ¥88。玩家扮演回到 Tyndalston 的主角 Samson，这座城市把他磨得铁石心肠：每一场搏斗都是近身缠斗，每一次逃脱都要拼尽全力，而追债的人拿他妹妹做筹码。玩法以近战格斗与驾车追逐为主，走的是写实、粗粝的开放世界犯罪题材路线。\n\n【市场表现】Steam 评价数约 3,208 条，主机端表现好于 PC 端，但整体未能撑起工作室的成本结构。\n\n【启示】典型的「新 IP + 中等规模 + 全平台」组合：口碑不算崩，主机端甚至更好，仍然在发售约半年后关门，说明问题出在规模与现金流，而不是单一平台的表现。",
+      "why_notable": "新 IP 首作发售约半年后工作室关闭，主机端表现好于 PC 仍未能续命"
+     }
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 裁员重组",
+     "tags": [
+      "Funcom",
+      "Dune: Awakening",
+      "裁员"
+     ],
+     "title": "《Dune: Awakening》主机版刚上线，Funcom 就启动重组并裁员",
+     "en_title": "Dune: Awakening studio faces layoffs as it restructures following console release",
+     "full_text": "Dune: Awakening studio faces layoffs as it restructures following console release https://t.co/7pcF0yhUkO https://t.co/FuoTQQ0TVO",
+     "author": "Eurogamer",
+     "date": "2026-10-19",
+     "likes": 29,
+     "views": 9825,
+     "link": "https://x.com/eurogamer/status/2112134633144144156",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU_PKUcXQAE9yTc.jpg"
+     },
+     "summary": "Eurogamer 报道，Funcom 在《Dune: Awakening》主机版发售后进入重组，伴随裁员，具体人数未披露。该作此前已在 PC 上线，主机版被视为扩大用户盘的关键一步。",
+     "analysis": "生存建造类 MMO 的长线成本结构决定了「多平台发行」并不自动等于收入翻倍，服务器、内容更新与运营团队的开支会同步放大。这轮重组与 Liquid Swords 关闭放在一起看，指向同一个信号：中型体量的在线服务型产品，正在被成本而非口碑淘汰。",
+     "recommendation": "《Dune: Awakening》主机版上线后即重组：Funcom 启动裁员",
+     "featured": true,
+     "game_ref": "Dune: Awakening",
+     "enrichment": {
+      "game_name": "Dune: Awakening 沙丘：觉醒",
+      "steam_url": "https://store.steampowered.com/app/1172710",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172710/4f2e53fcf023c9821d408e1d293f15c6221ef153/header_alt_assets_9_schinese.jpg?t=1792072152",
+      "release_date": "已发售 · 2025 年 6 月 10 日",
+      "platforms": [
+       "PC"
+      ],
+      "price": "¥ 160.00",
+      "developer": "Funcom",
+      "genre": "动作 / 冒险 / 大型多人在线",
+      "steam_rating": "68817 reviews",
+      "description": "《Dune: Awakening 沙丘：觉醒》支持单人及多人模式，是一款开放世界生存游戏，融合了沉浸式冒险和角色扮演玩法。探索、建造、制作，在宇宙最传奇的星球上，从求生崛起为传奇，一步步揭开一段电影级别的沙丘故事。 记住：沙虫从不缺席。\n\n"
+     }
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Next Indie · 新作公开",
+     "tags": [
+      "中世纪",
+      "像素",
+      "开放世界"
+     ],
+     "title": "《Black Autumn: 1438》：斯洛伐克 Zues Studio 的中世纪写实像素开放世界 RPG，没有魔法也没有怪物",
+     "en_title": "Medieval open-world action RPG 'Black Autumn: 1438' announced for PC.",
+     "full_text": "Medieval open-world action RPG 'Black Autumn: 1438' announced for PC. https://t.co/S86jJdpIbC",
+     "author": "Next Indie",
+     "date": "2026-10-18",
+     "likes": 1562,
+     "views": 45317,
+     "link": "https://x.com/nexindie/status/2111788633308950698",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111788043648512001/img/AttOx_rcpTA46LC3.jpg",
+      "video_url": "https://x.com/nexindie/status/2111788633308950698/video/1"
+     },
+     "summary": "故事设定在 1438 年秋天的 Hron 河谷（今斯洛伐克），主打写实：盔甲要一件件穿上身，可以骑马冲阵，也能开锁、扒窃、用纸牌和骰子赌博；没有魔法，没有怪物，只有 1438 年真实的 Hron 河谷。Steam 商店页已上线，发售日待定。",
+     "recommendation": "逐件穿甲、骑马冲阵、开锁扒窃：写实中世纪像素 RPG 没有魔法与怪物——4.5 万浏览",
+     "featured": true,
+     "game_ref": "Black Autumn: 1438",
+     "enrichment": {
+      "game_name": "Black Autumn: 1438",
+      "genre": "开放世界 / 动作 RPG / 历史写实",
+      "developer": "Zues Studio（斯洛伐克）",
+      "platforms": [
+       "Steam (Windows/Mac/Linux)"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4208990/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4208990/17bebad6a8fe988a91b554d3e7f08769f6e5ce63/header.jpg?t=1792165064",
+      "youtube_video": null,
+      "description": "【核心玩法】把「写实」当成唯一卖点：盔甲不是一件装备，而是一整套穿戴流程——内衬、锁子甲、板甲逐件加上身，防护与重量同时变化；骑枪冲锋有独立的动量判定，步战则以格挡、破甲和体力为核心。非战斗路径同样完整：开锁、扒窃、纸牌与骰子赌博都能成为主要收入来源，逼玩家在「当骑士」和「当混子」之间自己选。世界设定在 1438 年秋的 Hron 河谷，没有魔法、没有怪物，地图按真实地理与聚落还原。\n\n【美术与氛围】像素画风承担了写实考据的任务：秋色河谷、木构村庄、修道院与泥泞道路，色调克制，靠光影和地形层次制造沉浸，而不是靠特效。\n\n【对标定位】处在《Kingdom Come: Deliverance》的写实考据与《Battle Brothers》的低魔世界之间，用像素成本去表现写实盔甲、骑战与犯罪系统，属于 Steam 独游区里明显的题材空位。\n\n【优势】「没有魔法也没有怪物」本身就是差异化定位，容易被历史题材核心玩家记住；穿甲、骑战、犯罪三套系统互相咬合，系统深度有想象空间；同时登陆 Windows/Mac/Linux，对老玩家群体友好。\n\n【不足】目前只有公布向素材，内容量、战斗手感与 AI 行为都未验证；写实向对大众市场的吸引力天然有限，节奏一旦做慢很容易滑向「模拟器」；单人小团队（Zues Studio）能否撑起开放世界的填充密度是最大风险。\n\n【综合评价】它给出的启示不是「像素也能写实」，而是可以用系统写实度替代美术预算：当魔法与怪物成为同质化标配时，把考据做成卖点反而更便宜也更难被克隆。适合作为中世纪题材中小团队的一个「降维」样本持续观察。",
+      "why_notable": "在魔法与怪物泛滥的中世纪题材里，用「无魔法写实 + 穿甲/骑战/犯罪系统」切出差异化，单条推文 4.5 万浏览",
+      "pcu": "未发售",
+      "current_players": "未发售",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「开放世界动作 RPG」套「1438 年真实河谷」新瓶，斯洛伐克 Zues Studio 开发，Steam 页面已上线"
+     },
+     "analysis": ""
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "AUTOMATON · 新作公开",
+     "tags": [
+      "Roguelike",
+      "合作",
+      "荒诞题材"
+     ],
+     "title": "《Chocolate Parade（チョコレートパレード）》：Browser Land 的武装糖果 Roguelike，支持多人，11 月 5 日发售",
+     "en_title": "Steam武装お菓子ローグライク『チョコレートパレード』はマルチ対応、“パンジャンドラム風ロールケーキ”など物騒なスイーツたちが暴れ回る。11月6日発売へ",
+     "full_text": "Steam武装お菓子ローグライク『チョコレートパレード』はマルチ対応、“パンジャンドラム風ロールケーキ”など物騒なスイーツたちが暴れ回る。11月6日発売へ\nhttps://t.co/hOi1bQScwt https://t.co/osU2bh0TbT",
+     "author": "AUTOMATON（オートマトン）",
+     "date": "2026-10-19",
+     "likes": 130,
+     "views": 45588,
+     "link": "https://x.com/AUTOMATONJapan/status/2112153479322153300",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2112153434107621376/img/2tMZDWEaas0ieGtE.jpg",
+      "video_url": "https://x.com/AUTOMATONJapan/status/2112153479322153300/video/1"
+     },
+     "summary": "AUTOMATON 报道这款「武装点心」Roguelike 将支持多人游玩，蛋糕卷被做成「Panjandrum 式」的滚碾压路武器，各种危险的甜点在场上乱撞；日媒给出的发售日是 11 月 6 日，Steam 商店页目前标为 2026 年 11 月 5 日。",
+     "recommendation": "武装糖果 Roguelike：蛋糕卷当滚碾压路机，支持多人，11 月 5 日发售——4.6 万浏览",
+     "featured": true,
+     "game_ref": "Chocolate Parade",
+     "enrichment": {
+      "game_name": "Chocolate Parade",
+      "genre": "Roguelike 动作 / 合作",
+      "developer": "Browser Land（发行：WorldMap）",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "未公布",
+      "release_date": "2026年11月5日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3844360/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3844360/bec66e9783e67059044c802fcca750a73417fe72/header.jpg?t=1792408028",
+      "youtube_video": null,
+      "description": "【核心玩法】把「糖果」做成军火：玩家操控滚动的糖果角色，扛起重型武器在战场上碾压，蛋糕卷被造成类似 Panjandrum 的滚压式武器，配合单人游玩或合作模式组建自己的「游行队伍」，在 Boss 挑战战场里争夺金币。局内以构筑驱动，靠武器与队伍组合制造清屏快感，属于典型的短局 Roguelike 动作循环。\n\n【美术与氛围】日式零食拟人 + 军武荒诞感的混搭，视觉记忆点极强——草莓、巧克力、奶油被做成有威胁的机械装置，这种「可爱外形 + 暴力行为」的反差是它最主要的传播资产。\n\n【对标定位】骨架接近《Vampire Survivors》的构筑清屏，外壳借了无双式的割草规模，再用「武器本身很离谱」制造短视频段落。放在 11 月的档期里，它对标的其实是同类的甜点/食物题材 Roguelike。\n\n【优势】多人合作 + 荒诞武器天然适配直播与切片传播；发行方 WorldMap 有一定的日本市场渠道；发售日临近，Next Fest 期间有 Demo 可验证手感。\n\n【不足】甜点题材 Roguelike 已经相当拥挤，光靠美术差异化会被迅速稀释；武器互动的物理感与数值深度决定长线留存，目前公开信息不足；合作模式是本地还是在线、能否跨平台都未明确。\n\n【综合评价】这是一个「传播优先」设计的样本：先想清楚哪个画面会被截成短视频，再围绕它做系统。对做 Roguelike 的团队，值得观察的不是它的数值，而是它把武器造型当作核心卖点的做法能否支撑住首周销量。",
+      "why_notable": "把「蛋糕卷」做成滚碾压路武器，靠荒诞军武感抢短视频传播位，11 月 5 日紧接 Next Fest 发售",
+      "pcu": "未发售",
+      "current_players": "未发售",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「Roguelike 动作」套「武装糖果游行」新瓶，Browser Land 开发、WorldMap 发行，支持多人"
+     },
+     "analysis": ""
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Niche Gamer · 新作公开",
+     "tags": [
+      "无双",
+      "幸存者like",
+      "LINE Games"
+     ],
+     "title": "《Ember and Blade（烬刃交辉）》：LINE Games 把无双割草与幸存者like 混在一起，2027 年 1 月 7 日发售",
+     "en_title": "Ember & Blade is a stylish mix of musou and survivors-like action",
+     "full_text": "Ember &amp; Blade is a stylish mix of musou and survivors-like action: https://t.co/dJHd0BfChI https://t.co/JhZ44ot0MW",
+     "author": "Niche Gamer",
+     "date": "2026-10-18",
+     "likes": 110,
+     "views": 6028,
+     "link": "https://x.com/nichegamer/status/2111610000866979851",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2111609978209378305/pu/img/BWixbiTKsEHDKJbK.jpg",
+      "video_url": "https://x.com/nichegamer/status/2111610000866979851/video/1"
+     },
+     "summary": "Niche Gamer 称这款作品把「无双（musou）」的大规模割草与「幸存者like」的构筑成长混在一起，风格凌厉；Steam 商店页显示由 LINE Games 开发兼发行，中文名《烬刃交辉》，2027 年 1 月 7 日发售，已有 Demo。",
+     "recommendation": "无双割草 × 幸存者like：LINE Games 的《烬刃交辉》定档 2027 年 1 月 7 日",
+     "featured": true,
+     "game_ref": "Ember and Blade",
+     "enrichment": {
+      "game_name": "Ember and Blade",
+      "genre": "动作 / 动作 RPG（无双 × 幸存者like）",
+      "developer": "LINE Games Corporation（韩国）",
+      "platforms": [
+       "Steam (Windows/Mac/Linux)"
+      ],
+      "price": "未公布",
+      "release_date": "2027年1月7日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3470500/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3470500/ab6a4e1c6c0597d36534ca38dcaf961ce3d0d32d/header_schinese.jpg?t=1792120132",
+      "youtube_video": null,
+      "description": "【核心玩法】玩家扮演「不死身」的猎手，对抗魔王阿斯莫戴（Asmodeus）：一面要冲破汹涌的恶魔军潮，一面要与魂系级别的强敌做一对一攻防；祝福（build）系统与「轮回」机制提供局外的成长循环，死亡不是结束而是重来的资源。设计上同时保留了两套张力——清屏的爽感和单挑的压迫感。\n\n【美术与氛围】韩式暗黑奇幻，怪物设计与技能特效的规格明显高于典型独立作品，属于中型制作的美术水准，画面观感偏「血色 + 金属」。\n\n【对标定位】本质是把《真·三国无双》的清兵规模塞进《Vampire Survivors》的构筑框架，再用魂系 Boss 战做节奏高点。这类混合品类的关键不是缝合，而是让两种节奏互相成立。\n\n【优势】大厂（LINE Games）的开发与发行资源，完成度与本地化有保障；三平台同步（含 Mac/Linux）；已有 Demo 可提前验证手感；2027 年 1 月的档期相对空。\n\n【不足】无双的「主动战斗」与幸存者的「被动成长」在节奏上天然冲突，缝合得不好会两头不讨好；同类混合产品近两年数量上升，玩家对「幸存者like」标签已经疲劳；发售日距今较远，长线热度维持是挑战。\n\n【综合评价】值得当作「大厂下场做混合品类」的观察样本：如果它能把清屏与单挑两种张力调平，这个品类会多一个可复制的结构；如果失败，也能说明这类缝合的天花板在哪里。",
+      "why_notable": "LINE Games 用大厂资源做「无双 × 幸存者like」的缝合实验，2027 年 1 月档期，已有 Demo",
+      "pcu": "未发售",
+      "current_players": "未发售",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「无双割草」套「幸存者like 构筑」新瓶，韩国 LINE Games 开发发行，2027 年 1 月 7 日发售"
+     },
+     "analysis": ""
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Indie Game Joe · 新作公开",
+     "tags": [
+      "城市建造",
+      "1-bit",
+      "剧情"
+     ],
+     "title": "《GlagStone》：1988 年 Macintosh 画风的 1-bit 剧情城市建造，岛下还藏着秘密",
+     "en_title": "This city builder looks like it is running on a Macintosh from 1988 and the island you govern is hiding something",
+     "full_text": "This city builder looks like it is running on a Macintosh from 1988 and the island you govern is hiding something\n\n- Rebuild a failing island settlement\n- Keep the lighthouse lit through storms\n- Dig up the island's secret in old letters\n\nGame is GlagStone. https://t.co/6nAV9wF8kC",
+     "author": "Indie Game Joe",
+     "date": "2026-10-19",
+     "likes": 51,
+     "views": 2291,
+     "link": "https://x.com/IndieGameJoe/status/2112207226823913706",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2112206985496055808/img/Im4Al5CESKGKwks-.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2112207226823913706/video/1"
+     },
+     "summary": "受 80 年代末 Macintosh 美学启发的 1-bit 城市建造：重建一座位于交战国家之间的偏远北方岛屿聚落，靠风暴中维持灯塔运转，并从旧信件里挖出岛屿的秘密。Steam 商店页显示 2027 年推出。",
+     "recommendation": "1988 年 Mac 画风的 1-bit 城市建造：维持灯塔、从旧信件里挖出岛屿秘密",
+     "unselected": true,
+     "analysis": ""
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Niche Gamer · 新作公开",
+     "tags": [
+      "物理平台",
+      "PS1 风格",
+      "Kickstarter"
+     ],
+     "title": "《SNAPTIC》：发生在离线笔记本里的 3D 物理解谜平台，Kickstarter 已超额达标",
+     "en_title": "SNAPTIC is cozy nostalgia channeled into a stylish 3D physics platformer!",
+     "full_text": "SNAPTIC is cozy nostalgia channeled into a stylish 3D physics platformer!\n\nhttps://t.co/6K9k7bVoxe \n\nMixing a diverse blend of aesthetics from PS1 polygons, frutiger aero, and nostalgic home video, SNAPTIC has crushed its Kickstarter goal~ https://t.co/M0MPix2tBh",
+     "author": "Niche Gamer",
+     "date": "2026-10-19",
+     "likes": 10,
+     "views": 1100,
+     "link": "https://x.com/nichegamer/status/2112171589206749685",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2112171533682540544/pu/img/F2E4eausszTcOxx5.jpg",
+      "video_url": "https://x.com/nichegamer/status/2112171589206749685/video/1"
+     },
+     "summary": "把 PS1 多边形、Frutiger Aero 与家庭录像带的质感混在一起，做成发生在「一台离线笔记本」里的物理解谜平台游戏——目标是找回 Wi-Fi 密码；Kickstarter 众筹已超额完成。",
+     "recommendation": "PS1 多边形 + 离线笔记本里的物理解谜：Kickstarter 已超额达标",
+     "unselected": true,
+     "analysis": ""
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Lanstrash · 开发者",
+     "tags": [
+      "PS2 风格",
+      "ARPG",
+      "Kickstarter"
+     ],
+     "title": "《Aethercore》：PS2 风格动作 RPG，灵魂可以买卖的世界里把自己的灵魂夺回来",
+     "en_title": "Aethercore is coming to Kickstarter! A PS2-style Action RPG about taking your soul back.",
+     "full_text": "Aethercore is coming to Kickstarter! A PS2-style Action RPG about taking your soul back.\n https://t.co/Doj9egS5JS\n\nHit \"Notify me on launch\" to get the limited Early Bird tier.\n\n#Kickstarter https://t.co/9epCPuf7O1",
+     "author": "Lan - Wishlist Aethercore",
+     "date": "2026-10-19",
+     "likes": 29,
+     "views": 653,
+     "link": "https://x.com/Lanstrash/status/2112184138820362751",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2112183518197678080/img/vP1FZGfxqcx-YqJw.jpg",
+      "video_url": "https://x.com/Lanstrash/status/2112184138820362751/video/1"
+     },
+     "summary": "开发者 Lanstrash 公布 PS2 风格动作 RPG《Aethercore》：故事发生在灵魂与机器绑定、永生可以买卖的世界，玩家要击败邪恶的跨国公司夺回被盗走的灵魂；即将登陆 Kickstarter，已开放上线提醒。",
+     "recommendation": "PS2 风格动作 RPG：在灵魂可以买卖的城市里夺回自己的灵魂",
+     "unselected": true,
+     "analysis": ""
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Leafborn · 开发者",
+     "tags": [
+      "动作",
+      "形态变化",
+      "免费 Demo"
+     ],
+     "title": "《Leafborn》：Green Cat Games 的「几千片树叶」动作游戏，Steam 免费 Demo 已上线",
+     "en_title": "日本の皆さん、またこんにちは！覚えてますか？このゲームをすごく気に入ってくれていましたよね！今回、Steamで無料デモ版を公開しました！",
+     "full_text": "日本の皆さん、またこんにちは！覚えてますか？このゲームをすごく気に入ってくれていましたよね！今回、Steamで無料デモ版を公開しました！\n\n・何千枚もの葉っぱになってプレイ！\n・新しいフォームや葉っぱを発見\n・悪いロボットたちを倒そう！\n\n気に入ってくれたら、Steamで「Leafborn」と検索してみてください！",
+     "author": "Leafborn",
+     "date": "2026-10-18",
+     "likes": 335,
+     "views": 27024,
+     "link": "https://x.com/LeafbornGame/status/2111815068660723960",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111814162573574144/img/CCzcv4mFtccomkr6.jpg",
+      "video_url": "https://x.com/LeafbornGame/status/2111815068660723960/video/1"
+     },
+     "summary": "玩家操控由成千上万片树叶构成的生命体，在浮空岛屿世界里发现新形态与叶片、击碎榨取世界生命能量的 Nulls 机器人；面向日本玩家的推文宣布 Steam 免费 Demo 已上线。",
+     "recommendation": "化身几千片树叶的动作游戏：发现新形态、撕碎榨取生命的机器人，免费 Demo 已上线",
+     "unselected": true,
+     "analysis": ""
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "良竹 · 社区发现",
+     "tags": [
+      "ASCII",
+      "MMORPG",
+      "技术美术"
+     ],
+     "title": "全 ASCII 字符实时渲染的 MMORPG：世界、光影、魔法特效与巨龙 Boss 都由彩色字母构成",
+     "en_title": "见过硬核的独立开发，没见过这么浪漫的。",
+     "full_text": "见过硬核的独立开发，没见过这么浪漫的。\n\n有人正在手搓一款全 ASCII 字符构成的 MMORPG（原作者 @Ansenjeo  3D 建模，整个世界、光影、魔法特效甚至巨龙 Boss，全是由几十种彩色的字母和符号实时渲染出来的。\n\n满屏跳动的字符不仅没有违和感，反而有一种赛博迷幻的独特美感。\n\n代码即画笔，这大概就是属于程序员的极致浪漫吧。👇 https://t.co/A5eUww835o",
+     "author": "良竹",
+     "date": "2026-10-19",
+     "likes": 143,
+     "views": 10922,
+     "link": "https://x.com/liangzhu_AI/status/2112047842521166071",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111347372684926976/img/b9iXZ6d5coyIk18G.jpg",
+      "video_url": "https://x.com/liangzhu_AI/status/2112047842521166071/video/1"
+     },
+     "summary": "有开发者在手搓一款完全由 ASCII 字符构成的 MMORPG（原作者 @Ansenjeo）：整个世界、光影、魔法特效甚至巨龙 Boss，全部由几十种彩色字母与符号实时渲染出来。满屏跳动的字符没有违和感，反而呈现出一种赛博迷幻的观感。",
+     "recommendation": "全 ASCII 实时渲染的 MMORPG：光影、魔法与巨龙 Boss 全由彩色字符构成",
+     "unselected": true,
+     "analysis": ""
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Brendan Jowett · 资源清单",
+     "tags": [
+      "开源",
+      "MCP",
+      "Claude Code"
+     ],
+     "title": "10 个让 Claude Code / Codex 做 3D 游戏更顺手的开源仓库：从 Gamedev Agent Skills 到 Colyseus",
+     "en_title": "GitHub is a GOLDMINE for AI game developers.",
+     "full_text": "GitHub is a GOLDMINE for AI game developers.\n\nI picked 10 powerful open-source repos that make building 3D games with Claude Code and Codex ridiculously easier.\n\nSave these before your next project:\n\n1. Gamedev Agent Skills\n\nGive Claude Code and Codex reusable game-development skills for engines including Godot, Unity, Unreal, and Three.js.\n\nhttps://t.co/WudWTsajr7\n\n2. MCP Unity\n\nConnect your coding agent to Unity. Create scenes, modify objects, assign materials, run tests, and read console errors through prompts.\n\nhttps://t.co/cosCfK56AY\n\n3. Godot MCP\n\nLet your AI assistant create scenes, add nodes, run Godot projects, and inspect debug output while building your game.\n\nhttps://t.co/qXwHTtguqL\n\n4. TripoSR\n\nTurn a single image into a 3D model. Useful for prototyping props and exploring assets before refining them for your game.\n\nhttps://t.co/E9dR1g43n2\n\n5. Drei\n\nReady-made helpers for React Three Fiber: camera controls, environments, skies, shadows, and model loading for browser-based 3D games.\n\nhttps://t.co/eDpvF3mZUm\n\n6. React Three Rapier\n\nAdd physics to React Three Fiber games, including rigid bodies, collision detection, and joints, without writing a physics engine yourself.\n\nhttps://t.co/gkYgrb3cC5\n\n7. Yuka\n\nBuild NPC behavior with steering, pathfinding, perception, and state-driven decisions. Give your characters more to do than stand around.\n\nhttps://t.co/YCw5RHiFiQ\n\n8. Three.quarks\n\nBuild particle effects for Three.js games, from sparks and smoke to magical trails. Includes a visual editor for designing effects.\n\nhttps://t.co/ycVaphWBB4\n\n9. React Postprocessing\n\nGive React Three Fiber scenes a visual upgrade with bloom, depth of field, noise, and vignette effects.\n\nhttps://t.co/DFjsI0swlP\n\n10. Colyseus\n\nBuild multiplayer features with rooms, matchmaking, reconnections, and automatic game-state synchronization between your server and players.\n\nhttps://t.co/UlH13ZuIQJ\n\nWhich one are you using in your next game?",
+     "author": "Brendan Jowett",
+     "date": "2026-10-19",
+     "likes": 646,
+     "views": 28041,
+     "link": "https://x.com/jowettbrendan/status/2112115634335363577",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HU-9-LwaYAAAR06.png"
+     },
+     "summary": "作者整理了 10 个面向 AI 编程代理的开源项目：Gamedev Agent Skills（给 Claude Code/Codex 提供 Godot、Unity、Unreal、Three.js 的可复用技能）、MCP Unity、Godot MCP、TripoSR（单图转 3D 模型）、Drei、React Three Rapier（物理）、Yuka（NPC 行为/寻路/感知）、Three.quarks（粒子编辑器）、React Postprocessing（后期效果）、Colyseus（房间、匹配、断线重连与状态同步）。",
+     "analysis": "这份清单的价值在于它划出了「AI 做游戏」的当前拼图：资产生成（TripoSR）、编辑器直连（MCP 系列）、玩法积木（物理/寻路/粒子）、联网（Colyseus）都已经有开箱可用的开源件。真正的门槛从「写代码」转移到「把一个可玩的循环设计清楚」，以及选对代理能直接操作的那一层。",
+     "recommendation": "10 个开源仓库把 Claude Code / Codex 接进 Godot、Unity、Unreal 与 Three.js 工作流",
+     "featured": true
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI 正从「写代码」走到「改引擎」**\nEpic CEO Tim Sweeney 把 AI 定位为接走重复劳动的工具，认为小团队因此能做出过去大预算才能完成的规模；同一天，Opus 5.5 在三款商业游戏之间跑通「读二进制 → 锁定 build → 运行中验证」的闭环，逆向工程从最贵的技能变成可循环的流程。供给端同步放大：Steam Next Fest 的 Demo 数达到 8,011 个，约为 6 月的两倍，克隆产品已经开始互相抄代码。\n\n**中型团队的容错率在变小**\n《Samson》开发商 Liquid Swords 创始人确认工作室关闭，GameSpot 的说法是主机端表现好于 PC 但仍不足以续命；Funcom 在《Dune: Awakening》主机版发售后启动重组裁员。两个案例的共同点不是口碑，而是成本结构。\n\n**主机独占的技术护城河在变浅**\n《LittleBigPlanet》的 PS3 代码被静态重编译成原生 PC 版本，绕过模拟器直接翻译 Cell 架构；而《GTA 6》进入发售前最后一个月，Q4 的档期正在被抽空。\n\n**独游侧仍是概念先行**\n斯洛伐克的写实中世纪像素 RPG、把蛋糕卷做成滚碾压路机的武装糖果 Roguelike、LINE Games 的无双 × 幸存者like，分别对应历史考据、传播优先与大厂缝合三条不同路径。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
