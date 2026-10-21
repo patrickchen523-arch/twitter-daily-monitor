@@ -1,0 +1,534 @@
+{
+  "date": "2026-10-21",
+  "meta": {
+    "raw_count": 164,
+    "filtered_count": 156,
+    "selected_count": 16,
+    "crawl_time": "2026-10-21"
+  },
+  "lede": "开发者用 AI 从 100 张参考图做出完整 3D 慢生活游戏，也第一次有工作室因「怕被 AI 克隆」取消公开试玩；《宝可梦 火红》被改成实时战斗，61 万浏览。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "GPT Image 画 100 张参考图，Blender+Tripo 建模，Godot 落地：一个人做出 3D 慢生活游戏"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "《宝可梦 火红》改成实时战斗：回合制消失，宝可梦直接在地图上开打——1.4 万赞"
+    },
+    {
+      "section_id": "tools",
+      "item_index": 0,
+      "hook": "WebGPU 实时渲染 3DGS 世界，穿传送门连续跳跃——8238 赞"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "日本开发者只用 AI 做 3D 游戏《島ぐらし》，公开 7 条实操结论\n开发者不掩饰全程用 AI，公开数据估算收入 20 万美元\n游戏美术风格图鉴网站：把风格名直接发给 AI"
+    },
+    {
+      "id": "industry",
+      "text": "《ReVamp》取消公开 Steam 试玩：怕被生成式 AI 克隆抢先上架\nSteam 周销榜：MW4 登顶，《动物园之星 2》第二\n久多良木健：玩家不满停印实体盘是「心态问题」\nPEGI 新规：含开箱游戏评级上调至 16+"
+    },
+    {
+      "id": "indie",
+      "text": "《宝可梦 火红》被改成实时战斗，61 万浏览\n《Scapegoat》：民间团队复活《Hyper Scape》\nMoon Studios《恶意不息》公布 1.0 与职业系统"
+    },
+    {
+      "id": "tools",
+      "text": "WebGPU 在 3DGS 场景里做传送门跳跃，实时运行\nAMD FSR 4.1 覆盖 Xbox Series X/S 与 Z2 掌机"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "入江 慎吾 · 开发者复盘",
+          "tags": [
+            "AI 工作流",
+            "3D 独立游戏",
+            "Godot"
+          ],
+          "title": "日本开发者只用 AI 做 3D 游戏《島ぐらし》：以故乡五岛列岛为舞台，附 7 条实操结论",
+          "en_title": "本当にAIだけで3Dゲームは作れるのか？（AI 到底能不能独立做出 3D 游戏）",
+          "full_text": "本当にAIだけで3Dゲームは作れるのか？\n\nいまAIを使って、故郷の五島列島を舞台にしたスローライフゲーム「島ぐらし」を開発しています。\n\n学生時代からゲームを作りたかったけど、何度も挫折してきた僕が、今はAIを使ってかなり本格的な3Dゲームを作れるようになりました。\n\n実際に作ってみてわかったことをまとめます。\n\n① 最初に完成イメージを作るのがめちゃくちゃ大事\n\n- 最初はAIに指示して、いきなり3Dを作っていたけど、なかなか思ったものにならなかった\n-そこでGPT Imageで島全体や建物、道路などの見本画像を100枚ほど作成\n-その画像をAIに渡して、Blenderで3Dモデルを作ってもらう\n-「この見た目になるまで調整して」と指示すると、かなり精度が上がった\n\n② 3Dモデルはひとつのツールで全部作ろうとしない\n\n-GPT Image：完成イメージ、デザインの見本\n-Blender＋AI：建物や小物などの3D制作\n-Tripo：複雑な形を画像から3D化\n-Mixamo：キャラクターの基本アニメーション\n-Godot：ゲーム本体の実装\n\n例えば灯台は、GPT Imageで見本を作って、Tripoで3D化して、Blenderで調整してゲームに入れています。\n\n③ AIは作れるけど、最初から完成品は出てこない\n\n-3Dの形がよくても、ゲームに入れると違和感がある\n-キャラクターの動きも、そのままだと不自然なことが多い\n-見本の動画とAIが作った動きを比較して、何度も修正する\n-僕は基本的に出来上がった画像や動画を見て、修正指示を出す\n\nこれを何度も繰り返しています。地道だけど、ちゃんとよくなっていくのが面白い。\n\n④ AIで何でも作れるからこそ、作りすぎてしまう\n\nこれは意外な落とし穴でした。\n\n-物を自由に持つ、投げる、好きな場所に置く\n-穴を掘って水を入れる\n-家を細かく自由に建築する\n\n思いついたことをどんどん実装していたら、操作が複雑になって、動作も重くなってしまいました。\n\n現実では簡単なことでも、ゲームのコントローラーで操作できるようにするのは難しい。\n\n結局、かなりの機能を削りました。\n\n⑤ AIには専用の作業環境を与えると便利\n\n-Mac miniをゲーム開発専用にして、Godot、Blender、Claudeなどを動かす\n-Claudeに監督役を任せ、作業を別スレッドに分担\n寝ている間も、確認なしで進めていい作業は任せる\n-ChatGPTのdotsにはクラウドPCで3D素材を作ってもらう\n-外出先からスマホで指示を出すこともある\n\nAIが自分のパソコンを操作していると、その間自分が使いにくくなります。\n\n作業環境を分けると、自分の仕事をしながら、別のPCやクラウド上でAIに作業してもらえるのがいい。\n\n⑥ AIに任せても、費用と時間はそれなりにかかる\n\n現在、ClaudeとChatGPTはそれぞれ月200ドルのプランを契約しています。\n\nそれでも、ゲーム開発をずっと続けていると利用量はかなり多く、制限を気にしながら使っています。\n\n作業をAIに任せられるようになったけど、何度も修正するので時間もかかります。\n\n⑦ 一番難しいのは、どこで完成にするか\n\nAIで作れることが増えたので、次から次にアイデアが出てきます。\n\nあれもできそう、これも入れたい。でも、それを全部やっていたら、いつまでも完成しない。\n\n今は何を作るか以上に、何を作らないかを考えることが増えました。\n\n結論、AIだけでもかなり本格的な3Dゲームは作れます。\n\nただ、AIに丸投げして一発で完成するわけではなく、作りたいものを考えて、見本を用意して、出来上がったものを確認して直していく。その繰り返しです。\n\n僕自身、ゲーム制作には何度も挫折してきました。\n\nそれが今、子どもの頃に遊んだ島の風景をゲームの中に再現して、軽トラで走ったり、自販機でジュースを買ったり、空き缶を積んで石を投げたり。\n\nそんなゲームを作れているのが、めちゃくちゃ楽しいです。\n\n記事では実際のゲーム画面や制作過程、失敗した例なども画像付きで詳しく紹介しています。\n\nこれからAIでゲームを作ってみたい人の参考になれば嬉しいです。",
+          "author": "入江 慎吾",
+          "date": "2026-10-20",
+          "likes": 1230,
+          "views": 77400,
+          "link": "https://x.com/iritec_jp/status/2112343847082807393",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2112343004472283136/img/-0QXbxAeK8pI6DjR.jpg",
+            "video_url": "https://x.com/iritec_jp/status/2112343847082807393/video/1"
+          },
+          "summary": "入江慎吾用 AI 开发以长崎五岛列岛为原型的慢生活 3D 游戏《島ぐらし》，完整公开工作流：先用 GPT Image 生成约 100 张岛屿、建筑、道路的完成图作为视觉锚点，再让 Blender 按图建模，复杂造型交给 Tripo 图生 3D，角色基础动作由 Mixamo 补，主体在 Godot 里实现。他给出 7 条结论：先定完成图最关键、不要指望一个工具包打天下、AI 一次不会给出成品、可做的东西太多反而会做过头、给 AI 单独一台机器当工作环境、Claude 与 ChatGPT 各 200 美元/月的成本并不便宜，以及最难的其实是决定「什么时候算做完」。",
+          "analysis": "这是目前少见的「把 AI 当同事而不是魔法」的一手复盘：真正的瓶颈已经从技术实现转移到视觉锚定、素材一致性和范围控制，和传统项目管理关心的问题几乎重合。对团队而言可直接迁移的经验是「先生成完成图再建模」的锚点法，以及把 AI 排到独立机器上避免抢占主力工作机；对个人开发者，它同时给出了成本上限——两个 200 美元订阅，加上反复返工的时间。",
+          "recommendation": "入江慎吾用 GPT Image+Blender+Tripo+Godot 独自做 3D 慢生活游戏，7 条实测结论——1230 赞",
+          "featured": true
+        },
+        {
+          "idx": "AI 科技热点 02",
+          "source": "Hakimi Eiqbal · 行业观察",
+          "tags": [
+            "AI 商业化",
+            "独立开发",
+            "收入数据"
+          ],
+          "title": "开发者不掩饰「全程用 AI 做游戏」，公开数据估算已赚 20 万美元",
+          "en_title": "This developer didn't want to hide the fact that he uses AI — data show he did make $200k!",
+          "full_text": "This developer didn't want to hide the fact that he uses AI👏 \n\ndata show he did make $200k! https://t.co/XXPjV4KflW",
+          "author": "Hakimi Eiqbal",
+          "date": "2026-10-20",
+          "likes": 427,
+          "views": 43627,
+          "link": "https://x.com/hakimieiqbal/status/2112472147050274873",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVECOULWQAAUyZ9.jpg"
+          },
+          "summary": "该推文转发了一位开发者的公开数据：对方不回避自己用 AI 参与开发，第三方估算其游戏收入达到约 20 万美元量级。推文本身没有给出游戏名与平台细节，重点在于「公开承认 AI 参与」这件事正在从减分项变成可讲的卖点。",
+          "analysis": "过去两年 AI 参与开发往往被刻意隐藏，如今开始有人把它当作透明度叙事来做。对从业者的启示有两点：一是玩家侧的容忍度正在分层，隐蔽使用一旦被抓反而更伤信任；二是 20 万美元这个量级说明 AI 辅助仍主要落在中小体量产品上，尚未出现靠 AI 撑起的头部案例。",
+          "recommendation": "开发者公开承认全程用 AI 做游戏，公开数据估算收入 20 万美元——4.3 万浏览"
+        },
+        {
+          "idx": "AI 科技热点 03",
+          "source": "五分之1蓝 · 工具分享",
+          "tags": [
+            "AI 美术",
+            "风格参考",
+            "工作流"
+          ],
+          "title": "五分之1蓝做了个「游戏美术风格图鉴」网站：把风格名直接发给 AI，让它知道要做什么",
+          "en_title": "Game Art Style — A visual atlas of games",
+          "full_text": "为了方便使用AI做游戏时确定美术风格，我做了一个网站，收集了不少游戏的美术风格以及参考游戏，这个可以直接把风格名或风格参考发发给AI，让他知道要做什么。\n\nhttps://t.co/jt1Hvojjya",
+          "author": "五分之1蓝",
+          "date": "2026-10-20",
+          "likes": 1709,
+          "views": 83244,
+          "link": "https://x.com/onefifthblue/status/2112372790313799799",
+          "media": null,
+          "summary": "为解决用 AI 做游戏时美术风格难以对齐的问题，五分之1蓝整理了一个游戏美术风格图鉴网站，按风格收录大量游戏视觉参考。使用者可以把风格名或参考图直接发给 AI，作为提示词的风格约束，减少反复试错。推文获得 1709 赞、8.3 万浏览，说明这是普遍痛点。",
+          "analysis": "AI 生成美术的最大成本不在生成，而在「对齐」——模型不知道你要哪种脏、哪种锐、哪种色域。把风格显式命名并绑定参考作品，本质上是把模糊的审美判断转成可复用的规格，这与美术团队做 Style Guide 是同一件事。对中小团队，这类图鉴能显著压缩前期风格探索时间，但也容易造成同质化：大家都用同一批参考，产出会收敛到几个热门口味。",
+          "recommendation": "把风格名直接发给 AI：游戏美术风格图鉴网站上线——1709 赞"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 行业动态",
+          "tags": [
+            "AI 抄袭",
+            "发行策略",
+            "Steam"
+          ],
+          "title": "《ReVamp》取消公开 Steam 试玩：担心游戏在发售前就被生成式 AI 逆向克隆上架",
+          "en_title": "Digital Sun has delayed a planned Steam playtest for its next game, ReVamp, citing concerns over games being reverse-engineered, cloned and published before the original is even out.",
+          "full_text": "Digital Sun has delayed a planned Steam playtest for its next game, ReVamp, citing concerns over \"games being reverse-engineered, cloned and published before the original is even out.\" https://t.co/1W1yvvrM9J https://t.co/HfdkJ2Qc9W",
+          "author": "Eurogamer",
+          "date": "2026-10-20",
+          "likes": 30,
+          "views": 9342,
+          "link": "https://x.com/eurogamer/status/2112506873572155482",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVEhzncXkAAmmW_.jpg"
+          },
+          "summary": "《Moonlighter》《Cataclismo》开发商 Digital Sun 推迟了新作《ReVamp》的公开 Steam 试玩，理由是担心试玩版本被逆向、用生成式 AI 克隆后在原版发售前抢先上架。多家媒体（Eurogamer、Rock Paper Shotgun、Niche Gamer）同日报道了同一事件。",
+          "analysis": "这是「AI 克隆」第一次直接改变一家正规工作室的发行节奏：试玩本来是独立游戏最重要的曝光手段，现在却成了泄露原型的高风险动作。对发行侧的启示很直接——Demo 窗口、地区灰度、素材水印、版本切分这些老手段需要重新设计；更深层的问题是商店审核与下架机制跟不上克隆速度，平台责任会被反复推到台面上。",
+          "recommendation": "Digital Sun 取消《ReVamp》公开试玩：怕被生成式 AI 克隆后抢先上架",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "SteamDB · 市场数据",
+          "tags": [
+            "Steam 周销榜",
+            "市场数据",
+            "FPS"
+          ],
+          "title": "Steam 周销榜（10/13–10/20，剔除免费游戏）：《使命召唤：现代战争 4》登顶，《动物园之星 2》第二",
+          "en_title": "SteamTopSellers for week of 13 Oct — 20 October 2026 (No F2P)",
+          "full_text": "#SteamTopSellers for week of 13 Oct — 20 October 2026 (No F2P):\n\n#1 - Call of Duty®: Modern Warfare® 4\n#2 - Planet Zoo 2\n#3 - EA SPORTS FC™ 27\n#4 - Enshrouded\n#5 - Battlefield™ 6\n\nhttps://t.co/J5agEGbNl8",
+          "author": "SteamDB",
+          "date": "2026-10-20",
+          "likes": 26,
+          "views": 4357,
+          "link": "https://x.com/SteamDB/status/2112536912900616401",
+          "media": null,
+          "summary": "SteamDB 公布 10 月 13 日至 20 日全球周销榜（不含免费游戏）：第一《使命召唤：现代战争 4》，第二《动物园之星 2》，第三《EA Sports FC 27》，第四《Enshrouded（雾锁王国）》，第五《战地 6》。",
+          "analysis": "榜单结构透露出两点：一是《现代战争 4》与《EA Sports FC 27》代表的两条年货线依旧稳定吸金；二是《动物园之星 2》这种模拟经营能压过绝大多数 3A，说明「低配置、长时长、女性与休闲用户占比高」的品类在 PC 端已被验证为高确定性生意。《Enshrouded》回升到第四，对应其 10 月中版本更新后的二次拉新，属于典型的长线运营曲线。",
+          "recommendation": "Steam 周销榜：MW4 登顶，《动物园之星 2》第二，Enshrouded 回升至第四",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · 行业观点",
+          "tags": [
+            "实体媒介",
+            "PlayStation",
+            "行业结构"
+          ],
+          "title": "PlayStation 之父久多良木健：玩家不满停印实体盘，是「心态问题」",
+          "en_title": "Ken Kutaragi, the founder of PlayStation has said that people being upset about Sony's discontinuation of game discs is probably a \"mentality issue\".",
+          "full_text": "Ken Kutaragi, the founder of PlayStation has said that people being upset about Sony's discontinuation of game discs is probably a \"mentality issue\". He understands it, he noted, but that doesn't make it \"economically reasonable\" for Sony to keep printing them. https://t.co/j86qDcS97K",
+          "author": "Eurogamer",
+          "date": "2026-10-20",
+          "likes": 27,
+          "views": 9018,
+          "link": "https://x.com/eurogamer/status/2112491774165782598",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVEUEsGWcAATz-k.jpg"
+          },
+          "summary": "PlayStation 创始人久多良木健回应索尼停止印制游戏光盘引发的争议，称玩家的不满大概是「心态问题」：他表示能理解这种情绪，但这并不能让索尼继续印盘变得「经济上合理」。",
+          "analysis": "这句话把实体媒介的争论从情感拉回成本结构：光盘的生产、物流、渠道分成与库存风险，在数字占比压倒性之后已经变成纯负担。对行业的实际影响是二手交易与收藏市场将继续萎缩，而「首发实体特典」会进一步变成限量营销品。对国内厂商而言，更值得关注的是主机数字化之后，定价权与促销节奏会完全回到平台手里。",
+          "recommendation": "久多良木健称玩家反对停印实体盘是「心态问题」，经济上已不合理"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 平台政策",
+          "tags": [
+            "PEGI",
+            "开箱",
+            "监管"
+          ],
+          "title": "PEGI 新规生效：含开箱等「付费随机道具」的游戏，评级一律上调至 16+",
+          "en_title": "European age-ratings body PEGI begins raising age-limit of loot box games, like EA Sports FC, to 16",
+          "full_text": "European age-ratings body PEGI begins raising age-limit of loot box games, like EA Sports FC, to 16\n\nhttps://t.co/F42kJOxqMk https://t.co/hOGNGjqwvo",
+          "author": "Eurogamer",
+          "date": "2026-10-20",
+          "likes": 14,
+          "views": 4445,
+          "link": "https://x.com/eurogamer/status/2112510600609996800",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVElLjSWAAE3-on.png"
+          },
+          "summary": "欧洲年龄评级机构 PEGI 开始执行新规：包含开箱等「付费随机道具」的游戏评级上调至 16+，《EA Sports FC》等年货体育游戏首当其冲。新规目标是减少未成年人在游戏内接触博彩式机制。",
+          "analysis": "欧洲把开箱正式按「类博彩」处理，意味着评级、商店展示与家长控制会形成连锁约束。对依赖开箱变现的体育与手游产品，最直接的变化是买量与渠道曝光受限，长期则可能推动「开箱透明化 + 概率公示 + 地区差异化定价」。这也为其他市场的监管提供了可复制的模板。",
+          "recommendation": "PEGI 新规：含开箱的《EA Sports FC》等游戏评级上调至 16+"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Charmi · 社区作品",
+          "tags": [
+            "宝可梦",
+            "实时战斗",
+            "改版 Mod"
+          ],
+          "title": "《宝可梦 火红》被改成实时战斗：没有回合等待，宝可梦直接在地图上移动出手",
+          "en_title": "Han conseguido transformar Pokémon Rojo Fuego para que los combates sean EN TIEMPO REAL.",
+          "full_text": "NO PUEDE SER 😭\n\nHan conseguido transformar Pokémon Rojo Fuego para que los combates sean EN TIEMPO REAL.\n\nNada de esperar turnos: ahora los Pokémon se mueven y atacan directamente por el mapa, como si fuese un juego completamente distinto.\n\nImaginaos poder jugar toda la aventura de Kanto así.\n\nESTO ES UNA AUTÉNTICA BARBARIDAD. https://t.co/z1OYmkfFTl",
+          "author": "Charmi",
+          "date": "2026-10-19",
+          "likes": 14279,
+          "views": 610546,
+          "link": "https://x.com/Charmi/status/2112283509977120874",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2112168015445839872/img/ZEnezoGtLMbbemRt.jpg",
+            "video_url": "https://x.com/Charmi/status/2112283509977120874/video/1"
+          },
+          "summary": "西班牙语社区账号展示了一个《宝可梦 火红》改造版本：战斗从回合制改为实时制，宝可梦不再进入独立战斗界面，而是在地图上直接移动、追击与攻击，整条关都地区流程都能以这种形态游玩。推文获得 1.4 万赞、61 万浏览、1315 次转发，是当日互动最高的游戏相关内容之一。",
+          "analysis": "把回合制改成实时制等于重写整条战斗与关卡设计逻辑：原本靠速度值、先手与招式克制支撑的平衡，会在实时位移与冷却机制下失效。这类改造之所以病毒式传播，是因为它触碰了玩家对「正统玩法」的想象边界——同时也是在提醒商业团队，老 IP 的玩法框架仍有大量未被验证的实时化空间。",
+          "recommendation": "《宝可梦 火红》改成实时战斗：回合制消失，宝可梦直接在地图上开打——1.4 万赞",
+          "featured": true,
+          "game_ref": "Pokemon FireRed Real-Time Battle Mod",
+          "enrichment": {
+            "game_name": "Pokémon FireRed（实时战斗改造版）",
+            "genre": "RPG / 怪物养成 / 实时战斗改造",
+            "developer": "社区改版作者（非官方）",
+            "platforms": [
+              "GBA 改版（模拟器）",
+              "PC（模拟器）"
+            ],
+            "price": "非商业公开作品",
+            "release_date": null,
+            "steam_rating": "未上架 Steam",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】改造对象是 2004 年的《宝可梦 火红》。原版是严格的回合制：进入战斗界面、选择招式、按速度值决定先后手。这个版本把整套流程拆掉，宝可梦留在地图上，以实时位移、追击与技能冷却完成对抗——玩家要同时处理走位、出手时机和属性克制，节奏接近动作 RPG。\n\n【设计难点】回合制的平衡建立在「一回合只能做一件事」之上：速度值决定先手，招式有命中率与 PP 限制，换人是一次明确的资源决策。改成实时后，这些约束同时失效，原本的数值体系必须重建，否则高机动宝可梦会直接压制一切慢速坦克。这也是同类改造极少能完整跑通整条主线的原因。\n\n【传播逻辑】视频展示的是「熟悉的画面突然能动」这一认知反差，关都地区的地图、精灵球、界面全部保持不变，只有战斗逻辑被换掉，观众一眼就能理解改动幅度。\n\n【风险与边界】属于非官方改版，随时可能因版权方要求停止分发；平衡性与后期内容完整度也无法按商业作品标准衡量。\n\n【综合评价】它的价值不在于可玩性，而在于做了一次极端的玩法边界实验：证明老 IP 的回合制框架被替换成实时制后依然成立，这类实验往往是商业团队评估「正统续作能不能改玩法」时最便宜的参考样本。",
+            "why_notable": "用最低成本验证了一件事：把宝可梦的回合制换成实时制，框架依然成立",
+            "pcu": "非商业作品，无在线数据",
+            "current_players": "无",
+            "estimated_sales": "非商业作品",
+            "gi_summary": "「回合制 RPG」被改成「实时动作」的社区实验，1.4 万赞验证玩家对玩法改写的兴趣"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Fiirce · 独立开发",
+          "tags": [
+            "Hyper Scape",
+            "复活项目",
+            "多人射击"
+          ],
+          "title": "《Scapegoat》：民间团队把育碧关服的《Hyper Scape》做成续作，2026 年多人实机首曝",
+          "en_title": "Scapegoat: The Hyper Scape Revival — Here's a teaser, the first multiplayer clips of gameplay in 2026!",
+          "full_text": "Scapegoat: The Hyper Scape Revival\n\nHere's a teaser, the first multiplayer clips of gameplay in 2026!\n\nSuper excited to get you all on board, we aren't releasing quite yet, but we're closing in on it.\n\nIf you're interested in playing sooner than later, check out the post below. https://t.co/DUofTi0GgN",
+          "author": "Fiirce",
+          "date": "2026-10-19",
+          "likes": 1505,
+          "views": 110407,
+          "link": "https://x.com/fiirce/status/2112255980037922828",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2112250734310014976/img/WQtTiPXZ8nUVz5NC.jpg",
+            "video_url": "https://x.com/fiirce/status/2112255980037922828/video/1"
+          },
+          "summary": "开发团队 Fiirce 公布《Scapegoat》，定位为育碧 2022 年停服的免费BR《Hyper Scape》的民间续作。预告展示了 2026 年的首批多人实机片段，团队表示尚未到发售节点，但已接近可玩状态，并引导感兴趣的玩家通过另一条推文争取提前参与。推文获 1505 赞、11 万浏览。",
+          "analysis": "大厂停服产品的用户并没有消失，只是失去了承接方——这已经是独立团队可以规模化利用的结构性缺口。风险同样明显：IP 名称与美术风格一旦逼近原作，就可能面临下架与法律风险；而在用户侧，复活项目最大的敌人是「怀旧热度三个月」。能否留住人，取决于它有没有在原作机制上做出自己的东西。",
+          "recommendation": "《Hyper Scape》被民间复活：《Scapegoat》首曝 2026 多人实机——1505 赞",
+          "featured": true,
+          "game_ref": "Scapegoat (Hyper Scape Revival)",
+          "enrichment": {
+            "game_name": "Scapegoat",
+            "genre": "多人竞技 / 第一人称射击 / 大逃杀",
+            "developer": "Fiirce（独立团队）",
+            "platforms": [
+              "PC（开发中）"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未上架",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【项目背景】《Scapegoat》是独立团队 Fiirce 开发的多人射击游戏，定位为育碧 2022 年停服的免费大逃杀《Hyper Scape》的民间续作。原作以「垂直都市 + 黑客主题 + 观战者投票影响战局」为核心差异点，停服后仍有一批固定玩家。\n\n【当前状态】团队放出了 2026 年的首批多人实机片段，明确表示「还没到发售节点，但已经接近」。推文引导玩家通过另一条帖子争取提前参与测试，属于典型的社区共建式预热。\n\n【玩法预期】从预告片段看，保留了高机动位移与都市立体空间的对抗节奏；原作中「观众影响比赛」的机制是否延续尚未说明，而这恰恰是《Hyper Scape》当年最有辨识度、也最难复刻的部分。\n\n【风险】第一是 IP 风险：名称、美术与机制一旦被认定为贴近原作，可能面临下架或法律交涉；第二是留存风险：复活项目普遍靠怀旧拉来第一波人，三个月后能不能留住取决于有没有自己的长期玩法；第三是服务器与反作弊成本，FPS 的运营门槛远高于单机。\n\n【综合评价】它代表的是一类正在成型的模式——大厂停服产品的用户被独立团队接手。是否成立，要看的不是预告片有多还原，而是有没有在原作基础上做出属于自己的那一层设计。",
+            "why_notable": "大厂停服产品的用户仍有承接价值，独立团队正在填补这块空白",
+            "pcu": "未上线",
+            "current_players": "未上线",
+            "estimated_sales": "未上线",
+            "gi_summary": "「大逃杀」套「停服复活」的外壳，独立团队接盘《Hyper Scape》的用户资产"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Niche Gamer · 新游动态",
+          "tags": [
+            "类魂",
+            "正式版",
+            "Moon Studios"
+          ],
+          "title": "Moon Studios《恶意不息》公布 1.0 正式版与新职业系统：结束两年多抢先体验",
+          "en_title": "No Rest for the Wicked detailed its big 1.0 launch and new class system",
+          "full_text": "No Rest for the Wicked detailed its big 1.0 launch and new class system: https://t.co/R4oCJ17Rsu https://t.co/4rmSBiEPRG",
+          "author": "Niche Gamer",
+          "date": "2026-10-20",
+          "likes": 11,
+          "views": 1850,
+          "link": "https://x.com/nichegamer/status/2112520806882234691",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVEueqHX0AAYp3v.jpg"
+          },
+          "summary": "《奥日》系列开发商 Moon Studios 公布了《恶意不息（No Rest for the Wicked）》的 1.0 正式版计划与新职业系统。该作 2024 年 4 月进入 Steam 抢先体验，主打硬核类魂战斗、可建造的圣城据点和最多四人合作，目前 Steam 累计评价约 6.7 万条，国区折后价 97.3 元。",
+          "analysis": "从《奥日》的 2D 平台跳跃转向 3D 类魂是 Moon Studios 最大的一次赌注，抢先体验两年多才收口 1.0，说明这类高精度战斗调优的迭代成本远超预期。职业系统在 1.0 才补齐，本质上是把「构筑深度」这张牌留到正式发售打——这是 EA 转正时常见的二次发售策略，也意味着首发口碑会高度依赖 1.0 的平衡性。",
+          "recommendation": "《恶意不息》1.0 正式版公布：新增职业系统，结束两年抢先体验",
+          "game_ref": "No Rest for the Wicked",
+          "enrichment": {
+            "game_name": "No Rest for the Wicked",
+            "genre": "动作 RPG / 类魂 / 在线合作",
+            "developer": "Moon Studios GmbH（《奥日》系列开发商）",
+            "platforms": [
+              "Steam",
+              "PS5",
+              "Xbox Series X/S"
+            ],
+            "price": "¥97.30（原价 ¥139，-30%）",
+            "release_date": "已发售（抢先体验）· 2024年4月18日",
+            "steam_rating": "66,826 条评价",
+            "steam_url": "https://store.steampowered.com/app/1371980/No_Rest_for_the_Wicked/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1371980/331de7e745f43867f0a220339153ac6019822ea4/header.jpg",
+            "youtube_video": null,
+            "description": "【核心玩法】《恶意不息》是 Moon Studios 从 2D 平台跳跃转向 3D 类魂的关键作品：战斗强调出手时机与武器重量，每种武器有独立招式表，闪避、格挡与体力管理构成核心循环。与《黑暗之魂》不同的是，它把「圣城」做成可持续经营的据点——玩家可以购置房产、装潢、种田、钓鱼、烹饪，把生存压力与生活感放在同一条线上。\n\n【合作与结构】支持最多四人无缝在线合作，好友可共享世界进度，不需要切换独立模式；同时保留完整单人体验，官方明确表示没有微交易，所有内容靠游玩获得。\n\n【美术与氛围】圣地岛以手绘质感的材质与昼夜天气变化取胜，场景密度高，配合瘟疫、叛乱与信仰崩坏的叙事，整体气质接近「暗黑童话 + 硬核动作」。\n\n【1.0 的变化】本次公布的核心是 1.0 正式版与新职业系统。职业系统在抢先体验末期才补齐，意味着构筑深度这张牌被留到正式发售才打——这会显著改变首发期的 build 多样性与重复游玩价值，也把平衡性风险集中在 1.0 上线那一刻。\n\n【优势】战斗手感扎实；据点经营与类魂框架结合得较自然；四人合作降低了硬核门槛；无微交易。\n\n【不足】抢先体验周期长达两年多，早期内容量与性能问题消耗了不少口碑；难度曲线与掉落经济仍在调整中；对只想纯战斗的玩家，经营部分可能显得拖节奏。\n\n【综合评价】它是「类魂 + 生活模拟」这一杂交品类里完成度最高的样本之一。1.0 是否成功，取决于新职业系统能不能真正撑起构筑深度，而不只是把系统补齐。",
+            "why_notable": "《奥日》团队转做类魂的两年答卷，1.0 与新职业系统决定二次发售成败",
+            "pcu": "未进入当日 Steam Top 500",
+            "current_players": "暂无公开数据",
+            "estimated_sales": "Steam 评价 66,826 条",
+            "gi_summary": "「类魂动作」套「据点经营」的新瓶，Moon Studios 从 2D 平台跳跃转向 3D 硬核动作"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "PC Gamer · 新游动态",
+          "tags": [
+            "生存建造",
+            "抢先体验"
+          ],
+          "title": "《Subnautica 2》进入「抢先体验 2.0」：加入系列最恐怖的区域之一",
+          "en_title": "Subnautica 2 is heading for 'Early access 2.0,' bringing 'one of our scariest regions'",
+          "full_text": "Subnautica 2 is heading for 'Early access 2.0,' bringing 'one of our scariest regions' https://t.co/NOW8K4wEba",
+          "author": "PC Gamer",
+          "date": "2026-10-20",
+          "likes": 19,
+          "views": 10173,
+          "link": "https://x.com/pcgamer/status/2112492974030643636",
+          "media": null,
+          "summary": "PC Gamer 报道《Subnautica 2》将进入「抢先体验 2.0」阶段，带来被形容为系列最恐怖的区域之一的新内容。该作目前 Steam 好评率约 71%，历史峰值 46.7 万在线。",
+          "analysis": "",
+          "recommendation": "《Subnautica 2》抢先体验 2.0 将加入系列最恐怖的区域之一",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Game*Spark · 新游动态",
+          "tags": [
+            "合作恐怖",
+            "钓鱼",
+            "正式版"
+          ],
+          "title": "8 人合作钓鱼恐怖游戏正式版上线：每天向怪物献上定量的鱼，靠演奏、喝酒与赌博活下来",
+          "en_title": "【最大8人】毎日決められた量の魚を怪物に捧げる協力釣りホラーが正式リリース",
+          "full_text": "【最大8人】毎日決められた量の魚を怪物に捧げる協力釣りホラーが正式リリース。楽器を奏で、ビールを浴び、ギャンブルしながら生き残れ―採れたて！本日のSteam注目ゲーム5選\nhttps://t.co/jkzWfvtvaR\n\n正式版では“ちゃんとしたエンディング”も実装。巨大な怪物との戦闘やボス戦も用意されています。 https://t.co/0P238gqkQn",
+          "author": "⚡Game*Spark⚡",
+          "date": "2026-10-20",
+          "likes": 87,
+          "views": 13593,
+          "link": "https://x.com/gamespark/status/2112537142304129384",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2112536846270132225/pu/img/cvZBc50N9XgvZc1h.jpg",
+            "video_url": "https://x.com/gamespark/status/2112537142304129384/video/1"
+          },
+          "summary": "Game*Spark 的每日 Steam 注目五选介绍了一款最多 8 人合作的钓鱼恐怖游戏：玩家每天必须向怪物献上规定数量的鱼，过程中可以演奏乐器、泼啤酒、赌博来维持状态；正式版补上了真正的结局，以及巨型怪物战与 Boss 战。",
+          "analysis": "",
+          "recommendation": "每天向怪物交鱼：8 人合作钓鱼恐怖游戏正式版上线",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "MAGIKARP · 社区作品",
+          "tags": [
+            "宝可梦",
+            "魂like",
+            "粉丝作品"
+          ],
+          "title": "《PokéSouls》：以《黑暗之魂》为灵感的宝可梦粉丝游戏，主打实时 Boss 战",
+          "en_title": "A new Pokémon fan game inspired by Dark Souls, called PokéSouls, is in development!",
+          "full_text": "A new Pokémon fan game inspired by Dark Souls, called PokéSouls, is in development! \n\nIts main feature? Real-time battles against Pokémon bosses⚔️ https://t.co/RYFkCZg1pb",
+          "author": "MAGIKARP🦈💦",
+          "date": "2026-10-19",
+          "likes": 2286,
+          "views": 86784,
+          "link": "https://x.com/UniteVids/status/2112272577548664941",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2112260323591766016/img/rLUrr-8jMYpDydKI.jpg",
+            "video_url": "https://x.com/UniteVids/status/2112272577548664941/video/1"
+          },
+          "summary": "社区账号介绍了一款开发中的宝可梦粉丝游戏《PokéSouls》，核心卖点是实时制的宝可梦 Boss 战，玩法框架明显借鉴《黑暗之魂》。推文获 2286 赞、8.7 万浏览。",
+          "analysis": "",
+          "recommendation": "《PokéSouls》：以《黑暗之魂》为灵感的宝可梦粉丝游戏，主打实时 Boss 战",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Niche Gamer · 新游动态",
+          "tags": [
+            "Cygames",
+            "冒险",
+            "Demo"
+          ],
+          "title": "Cygames 新作《Where the Seeds Fall》公布预告与试玩 Demo",
+          "en_title": "Cygames' new adventure game Where the Seeds Fall revealed a trailer and demo",
+          "full_text": "Cygames' new adventure game Where the Seeds Fall revealed a trailer and demo: https://t.co/yrYdYHJo84 https://t.co/5xGuPAItrS",
+          "author": "Niche Gamer",
+          "date": "2026-10-20",
+          "likes": 8,
+          "views": 2288,
+          "link": "https://x.com/nichegamer/status/2112511795784978825",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2112511740533493760/pu/img/Fwohi2UmHackYI_Y.jpg",
+            "video_url": "https://x.com/nichegamer/status/2112511795784978825/video/1"
+          },
+          "summary": "Cygames 的新冒险游戏《Where the Seeds Fall》放出预告片与试玩 Demo，具体平台与发售窗口尚未公布。",
+          "analysis": "",
+          "recommendation": "Cygames 新作《Where the Seeds Fall》公布预告与试玩 Demo",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Ian Curtis · 技术演示",
+          "tags": [
+            "WebGPU",
+            "Gaussian Splatting",
+            "实时渲染"
+          ],
+          "title": "用 WebGPU 在 3D Gaussian Splatting 场景里做「传送门跳跃」，浏览器内实时运行",
+          "en_title": "Portal jumping through gaussian splat worlds with WebGPU. real time. sound on.",
+          "full_text": "Portal jumping through gaussian splat worlds with WebGPU. real time. sound on. https://t.co/Shlb0vf3xT",
+          "author": "Ian Curtis",
+          "date": "2026-10-19",
+          "likes": 8238,
+          "views": 329199,
+          "link": "https://x.com/XRarchitect/status/2112207444101541962",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2112206510973681664/img/Cg3pw0LbRv3xOKir.jpg",
+            "video_url": "https://x.com/XRarchitect/status/2112207444101541962/video/1"
+          },
+          "summary": "开发者 Ian Curtis 展示了纯浏览器端的实时演示：在由 3D Gaussian Splatting 重建的场景中放置传送门，玩家穿门即可跳转到另一个高斯泼溅世界，全程 WebGPU 实时渲染。推文获 8238 赞、32.9 万浏览、636 次转发。",
+          "analysis": "3DGS 一直被诟病「只能看不能玩」——没有碰撞体、没有光照、没有关卡逻辑。这个演示的价值在于证明实时穿行与场景切换在 Web 端已经可行，等于给「扫描现实空间做游戏场景」这条管线补上了交互环节。对工业与文旅类项目，它比传统建模重建的成本低一个量级；对游戏团队，短期更现实的用法是快速做场景灰盒与氛围验证。",
+          "recommendation": "WebGPU 实时渲染 3DGS 世界，穿传送门连续跳跃——8238 赞",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Digital Foundry · 硬件技术",
+          "tags": [
+            "FSR",
+            "AMD",
+            "超分辨率"
+          ],
+          "title": "AMD 发布 FSR 4.1：首次覆盖 Xbox Series X/S、Z2 掌机与 RX 6000 显卡",
+          "en_title": "AMD Announces FSR 4.1 for Xbox Series X/S, Z2 Extreme and Z2A Handhelds, RX 6000 GPUs and More",
+          "full_text": "AMD Announces FSR 4.1 for Xbox Series X/S, Z2 Extreme and Z2A Handhelds, RX 6000 GPUs and More https://t.co/0aqUgmwXSo",
+          "author": "Digital Foundry",
+          "date": "2026-10-20",
+          "likes": 193,
+          "views": 7787,
+          "link": "https://x.com/digitalfoundry/status/2112584650367353054",
+          "media": null,
+          "summary": "AMD 公布 FSR 4.1，支持范围从原先的 RDNA4 独显大幅扩展：新增 Xbox Series X/S 主机、ROG Ally 一类的 Z2 Extreme / Z2A 掌机，以及 RX 6000 系列显卡。Digital Foundry 同步发布了技术解析。",
+          "analysis": "FSR 4.1 把机器学习超分下放到上一代硬件与主机，真正改变的是「老设备还能撑多久」这个账：掌机与 RX 6000 用户不必换卡就能拿到更好的画质/帧率平衡，主机端则给了厂商继续压分辨率的空间。对开发者的直接影响是测试矩阵变复杂——同一套画质档位在不同超分版本下的表现差异会更大。",
+          "recommendation": "FSR 4.1 扩展到 Xbox Series X/S、Z2 掌机与 RX 6000 显卡"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI 一边在生产，一边在制造新的风险**\n日本开发者入江慎吾把「只用 AI 做 3D 游戏」拆成了 7 条可执行结论：先用 GPT Image 生成约 100 张完成图当视觉锚点，再用 Blender 与 Tripo 建模，主体在 Godot 里实现，并把 AI 排到独立机器上跑。另一边，Digital Sun 因为担心《ReVamp》在发售前就被生成式 AI 逆向克隆，取消了公开 Steam 试玩——同一项技术，一边在降门槛，一边在抬高发行风险。\n\n**老 IP 的玩法边界正在被社区反复试探**\n《宝可梦 火红》被改成实时战斗后拿到 61 万浏览，说明玩家对「经典框架换一种节奏」的兴趣远高于预期；民间团队则把育碧停服的《Hyper Scape》接过来做成《Scapegoat》。这类项目短期难以商业化，但它们是商业团队评估玩法改写时最便宜的样本。\n\n**榜单与政策给出两条结构性线索**\nSteam 周销榜上《动物园之星 2》压过绝大多数 3A，模拟经营在 PC 端的高确定性再次被验证；PEGI 把含开箱的游戏上调到 16+，欧洲正式按类博彩处理付费随机道具，依赖开箱变现的产品将首先感受到渠道曝光的收缩。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
