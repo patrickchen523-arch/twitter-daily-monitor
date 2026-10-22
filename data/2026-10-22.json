@@ -1,0 +1,440 @@
+{
+  "date": "2026-10-22",
+  "meta": {
+    "raw_count": 157,
+    "filtered_count": 155,
+    "selected_count": 12,
+    "crawl_time": "2026-10-22"
+  },
+  "lede": "EA 关闭 BioWare 并取消《质量效应》新作；Xbox 再排三轮裁员、次世代主机估价最高 1800 美元；Epic 把 Unreal 编辑器开源成 Claude Code 的 MCP 工具集；两款日本团队新作同日引爆 X。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "EA 关闭 30 年老厂 BioWare，取消《质量效应》新作，全公司裁员约 400 人"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Epic 开源 Claude Code 插件，MCP 直接接管 Unreal 编辑器 30+ 工具集"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 1,
+      "hook": "坦克甩炮管撞碎机甲，还能打空中连段——《SLAM TANK》试玩版 2522 赞"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Epic 开源 Claude Code 插件，MCP 接管 Unreal 编辑器 30+ 工具集\nOpus 5.5 编排开源视频模型：单条成本从 $11.31 降到 $0.14\nSteam Next Fest 被 AI 游戏淹没，玩家喊「AI slop fest」"
+    },
+    {
+      "id": "industry",
+      "text": "EA 关闭 BioWare、取消《质量效应》新作，裁员约 400 人\nXbox 再排三轮裁员至 2027 年 1 月，Helix 估价 1200–1800 美元\nPEGI 把含开箱游戏评级上调至 16+\n《生化危机：安魂曲》PS 实体盘收入超 Xbox 全平台"
+    },
+    {
+      "id": "indie",
+      "text": "《人間奇想計画》：UE5 免费开放世界，人与怪異共居——8989 赞\n《SLAM TANK》试玩版：坦克打出空中连段，手感被称「Tank May Cry」\n《Leafborn》：千叶之躯在浮空群岛飞掠，光移动就很爽"
+    },
+    {
+      "id": "tools",
+      "text": "10 个开源库装进 Claude Code，3D 游戏原型提速\nUnity 官方插件接入 Grok Build，30+ 引擎技能"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · 中文开发者分析",
+          "tags": [
+            "AI Agent",
+            "Unreal Engine",
+            "MCP"
+          ],
+          "title": "Epic 官方开源 Unreal × Claude Code 插件：MCP 直接接管正在运行的编辑器",
+          "en_title": "Epic Games 官方在 GitHub 开源 unreal-engine-skills-for-claude-code-plugin",
+          "full_text": "游戏开发的工作流真的要变天了。\nEpic Games 官方刚刚在 GitHub 下场，悄悄开源了 unreal-engine-skills-for-claude-code-plugin，并且已经正式上架 Anthropic 官方插件市场。\n以前用 AI 做虚幻开发，你只能让它在外面苦哈哈地写 C++ 代码片段；现在，Claude Code 可以直接通过 MCP 接管你正在运行的 Unreal Editor。\n不用切窗口，一句话就能让它在引擎里帮你创 Actor、连蓝图节点、调材质、甚至K动画。\n\n一、 核心亮点与工作机制解析\n• 全编辑器域覆盖（30+ Toolsets，数百个底层工具）\n配合虚幻引擎内置的 ModelContextProtocol 与 AllToolsets 插件，它通过 ToolsetRegistry 暴露了覆盖虚幻编辑器几乎所有核心模块的接口：\n• 场景与蓝图：生成/移动/删除 Actor，直接创建蓝图、添加节点、连线（Pin）、管理变量并编译。\n• 美术与视效：编写材质图（Material Graphs）、配置 Nanite/LOD/碰撞体、搭建 Niagara 粒子系统与 Dataflow 图。\n• 动画与演出：构建 Control Rigs、状态树（State Trees）、行为树，控制 Sequencer 关键帧与摄像机轨迹。\n• 玩法与测试：检视 GAS（Gameplay Ability System）状态、搭建 UMG 控件蓝图、自动发现并执行 C++ 自动化测试。\n• 批量 Python 执行：支持通过 ProgrammaticToolset.execute_tool_script 将多步复杂操作打包为单个 Python 脚本在编辑器进程内直接跑完。\n• 极客级 Token 优化：按需工具检索（Tool Search）\n如果把几百个虚幻工具的定义一次性塞进上下文，瞬间就会把 Token 撑爆并破坏 Prompt Cache。Epic 官方采用了非常巧妙的 3 个元工具（Meta-tools）架构：\n• 默认只暴露 list_toolsets、describe_toolset、call_tool 三个轻量接口（上下文开销极低，仅约 250+ tokens）。\n• Claude 会在对话中按需动态检索工具集并在同一轮直接调用，既保证了 Prompt Cache 持续命中（Warm），又支持并发安全调用。\n• 三大核心 Skills + 自动环境感知 Hook\n• unreal-mcp：指导 Agent 如何通过实时 MCP 连接安全、高效地操作虚幻编辑器。\n• create-toolset：指导开发者如何扩展 C++/Python 静态函数并注册到 ToolsetRegistry。\n• unreal-skill：用于在虚幻项目内创建和复用专属的引擎级 Agent Skill（支持 Python 类或 /Game/Skills/ 下的 UAsset 资产）。\n• SessionStart Hook（hooks/unreal-context.sh）：启动或恢复会话时自动注入 UE 规范提示，让 Claude 默认遵循 UObject、Slate、UHT 等虚幻编码准则。\n• 断线重连代理（unreal_mcp_proxy）\n游戏开发中编辑器经常需要重编译或重启。官方配套提供了可选的 unreal_mcp_proxy 守护代理——当 Unreal Editor 关闭或崩溃重启时，它能维持 Claude Code 侧的 MCP 会话不断开，并在编辑器恢复后自动重连。",
+          "author": "lifcc",
+          "date": "2026-10-20",
+          "likes": 1832,
+          "views": 101859,
+          "link": "https://x.com/mylifcc/status/2112408469903114580",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HU6vTtCbYAAVWAk.jpg"
+          },
+          "summary": "Epic 官方在 GitHub 开源 unreal-engine-skills-for-claude-code-plugin，并上架 Anthropic 官方插件市场。借助 UE 内置的 ModelContextProtocol 与 AllToolsets 插件，Claude Code 可通过 MCP 接管正在运行的 Unreal Editor：30+ Toolsets、数百个底层工具，覆盖 Actor/蓝图连线、材质图、Nanite 与 LOD、Niagara、Control Rig、Sequencer、GAS 状态检视、UMG 控件与 C++ 自动化测试，还支持把多步操作打包成单个 Python 脚本在编辑器进程内执行。为控制上下文，官方只默认暴露 list_toolsets / describe_toolset / call_tool 三个元工具（约 250+ tokens），按需动态检索工具集。",
+          "analysis": "引擎厂商第一次把「编辑器操作面」整体做成 MCP 工具集交给编码 Agent，AI 辅助从「在外面写代码片段」变成「在引擎里动手」。对团队意味着工作流要重写，也要先回答权限与审计问题：谁能授权 Agent 改材质、连蓝图、跑测试，改动如何回溯。",
+          "recommendation": "Epic 开源 Claude Code 插件，MCP 直接接管 Unreal 编辑器 30+ 工具集——1832 赞",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "X · AI 从业者实测",
+          "tags": [
+            "视频生成",
+            "开源模型",
+            "成本"
+          ],
+          "title": "Opus 5.5 编排开源视频模型：15 秒 1080p 单条成本从 $11.31 压到 $0.14",
+          "en_title": "opus 5.5 is underratedly good at orchestrating footage from lower quality, open source models for ~80x less than sota video models",
+          "full_text": "opus 5.5 is underratedly good at orchestrating footage from lower quality, open source models for ~80x less than sota video models\n\nsee quality comparison here in squid game demo\n\na 15-second 1080p clip costs ~$11.31 using the seedance api with references, but minimax released h3 as open weights, and fastH3-omni (a sped-up h3 that takes reference images, video, and audio) went fully open today. self-hosted on one B200, it renders a 15-second clip in ~75 seconds at ~$6.75/hr, about $0.14 a clip (768p, before upscaling)\n\nthe gpu bills by the hour whether it’s busy or not, so self-hosting pays off when you’re making a lot of video (a movie, creative tooling, or some longer project). one card does ~48 clips an hour. for smaller runs, reactor’s hosted fastH3-omni api is ~$0.18 a clip ($0.0125/sec) with no gpu to manage, still ~60x cheaper than seedance.\n\nto be clear, the clips themselves aren’t seedance quality - when you put any single fastH3-omni clip next to a seedance clip and seedance wins. the quality comes from what happens when opus stitches the clips together. using your claude subscription, a coding agent running opus 5.5 can turn your concept into a storyboard, keep characters and voices consistent across shots, review every take for artifacts and errors, reshoots what drifts, and cut the 5–15 second clips into one natural scene.\n\nno single clip matches seedance's output because it is the best video model, but the finished scene comes super close, and I think that's incredibly cool !",
+          "author": "mickey friedman",
+          "date": "2026-10-20",
+          "likes": 196,
+          "views": 55163,
+          "link": "https://x.com/mickeyxfriedman/status/2112653827644301328",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2112651411179917312/img/vm2bKUxRs_Jc2qCa.jpg",
+            "video_url": "https://x.com/mickeyxfriedman/status/2112653827644301328/video/1"
+          },
+          "summary": "作者给出完整成本对照：用 Seedance API 带参考图生成 15 秒 1080p 约 $11.31；而 MiniMax 开源了 h3 权重、fastH3-omni（支持参考图/视频/音频）当天完全开源，单张 B200 自托管约 $6.75/小时，15 秒片段约 75 秒出片、折算约 $0.14 一条（768p，未超分），单卡每小时约 48 条；托管 API 约 $0.18 一条，仍比 Seedance 便宜约 60 倍。他坦言单条画质不如 Seedance，最终质量来自 Opus 5.5 把多条低成本片段拼成故事板并保持角色一致。",
+          "analysis": "视频生产成本从「按条买 SOTA」变成「自建管线 + 智能体编排」，试错成本下降一个量级，对过场动画、宣传素材、原型预演都成立；但一致性、剪辑与后期仍要人兜底，短期内替代的是「量」而不是「质」。",
+          "recommendation": "Opus 5.5 编排开源视频模型：单条 15 秒 1080p 成本从 $11.31 降到 $0.14"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "X · 游戏媒体",
+          "tags": [
+            "AI 生成内容",
+            "Steam",
+            "平台治理"
+          ],
+          "title": "Steam Next Fest 被 AI 游戏淹没，玩家喊出「AI slop fest」：界线由谁定？",
+          "en_title": "'AI slop fest': PC gamers are annoyed with Steam Next Fest's abundance of AI titles, but where is the line drawn and who defines it?",
+          "full_text": "‘AI slop fest’: PC gamers are annoyed with Steam Next Fest’s abundance of AI titles, but where is the line drawn and who defines it? https://t.co/vg4TD3V7dc",
+          "author": "Destructoid",
+          "date": "2026-10-20",
+          "likes": 39,
+          "views": 6509,
+          "link": "https://x.com/destructoid/status/2112606013417468158",
+          "media": null,
+          "summary": "Destructoid 报道，PC 玩家对 Steam Next Fest 中大量生成式 AI 参与制作的游戏表达不满，称之为「AI slop fest」。报道没有停留在情绪，而是把问题推向机制层：什么样的 AI 使用算越界、由谁来定义与执行。",
+          "analysis": "试玩节本是曝光红利，AI 产能让这个红利迅速通胀。平台侧一旦引入 AI 披露分级或质量门槛，就会变成新的分发变量；反过来，能证明「人有实质参与」的团队会获得相对优势。",
+          "recommendation": "Steam Next Fest 被 AI 游戏淹没，玩家喊出「AI slop fest」，界线该由谁定？"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Niche Gamer · 媒体（Eurogamer/Bloomberg 交叉验证）",
+          "tags": [
+            "工作室关闭",
+            "裁员",
+            "EA"
+          ],
+          "title": "EA 关闭 BioWare 并取消《质量效应》新作，全公司裁员约 400 人",
+          "en_title": "Electronic Arts has shut down BioWare and canceled the new Mass Effect game",
+          "full_text": "Electronic Arts has shut down BioWare and canceled the new Mass Effect game: https://t.co/6oSlVC7TLW https://t.co/8b4fYT3e91",
+          "author": "Niche Gamer",
+          "date": "2026-10-21",
+          "likes": 0,
+          "views": 91,
+          "link": "https://x.com/nichegamer/status/2112958270717427922",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVK8Wb2W4AAX2oo.jpg"
+          },
+          "summary": "BioWare 官方声明确认：成立 30 余年的工作室关闭，下一代《质量效应》的早期开发终止，「现在的重心是团队与过渡安置」。Bloomberg 同日报道 EA 将在全公司裁撤约 400 个岗位（约 3% 员工），其中 BioWare 约 50 人。这发生在 PIF、Silver Lake、Affinity Partners 合组以 550 亿美元完成 EA 私有化数月之后；EA 同时宣布暂停 Sims 相关项目 Project Lotus、把 Skate 团队收缩为更小的编制，并推动 Respawn 与 DICE 合并做新项目。",
+          "analysis": "杠杆收购后的第一轮结构性收缩，精准落在「长周期、高成本、单人叙事」的工作室上。信号很明确：作品组合向年货与服务型收敛，叙事型 3A 的立项窗口进一步收窄；对从业者而言，被收购后的「整合期」往往比传闻来得更快、更彻底。",
+          "recommendation": "EA 关闭成立 30 余年的 BioWare，取消《质量效应》新作，全公司裁员约 400 人",
+          "featured": true,
+          "game_ref": "Mass Effect"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 媒体（引述 Fortune）",
+          "tags": [
+            "Xbox",
+            "裁员",
+            "次世代主机"
+          ],
+          "title": "Xbox 还有三轮裁员：本月、11 月、2027 年 1 月；Helix 内部估价 1200–1800 美元",
+          "en_title": "Xbox reportedly planning three more rounds of layoffs, with the first wave coming as early as this month",
+          "full_text": "Xbox reportedly planning three more rounds of layoffs, with the first wave coming as early as this month\n\nhttps://t.co/3fjKGwC4hW https://t.co/yauqVBrvKr",
+          "author": "Eurogamer",
+          "date": "2026-10-21",
+          "likes": 371,
+          "views": 37385,
+          "link": "https://x.com/eurogamer/status/2112858400006746493",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVJgogTbEAAh-22.jpg"
+          },
+          "summary": "据 Fortune 报道，Xbox 在 CEO Asha Sharma 的「业务重置」下还将进行三轮裁员：本月、11 月、2027 年 1 月，涉及此前 7 月裁掉 1600 余人、9 月裁 268 人之后剩余的约 1600 个岗位。同一报道称次世代 Helix 分两台设备——掌机目标 2027 年假日、主机 2028 年假日，内部预计售价 1200–1800 美元；Gears of War: E-Day 之后，The Coalition 的去留被视为最大变数。",
+          "analysis": "主机补贴模型正在失效：AI 引发的内存与存储涨价，加上内容与订阅成本，让「硬件亏钱换装机」的旧账算不平。裁员按季度排到 2027 年初，说明这是持续收缩而非一次性调整，Studio 层面的风险要按「项目交付后」这个时间点来评估。",
+          "recommendation": "Xbox 再排三轮裁员至 2027 年 1 月，次世代 Helix 内部估价最高 1800 美元",
+          "featured": true,
+          "game_ref": "Gears of War: E-Day"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · 媒体",
+          "tags": [
+            "监管",
+            "开箱",
+            "欧洲市场"
+          ],
+          "title": "PEGI 把含开箱的数字游戏评级上调至 16+，10 月内全面铺开",
+          "en_title": "PEGI has started raising the age ratings of digital games that feature loot boxes to 16",
+          "full_text": "PEGI, the European video game age rating agency, has started raising the age ratings of digital games that feature loot boxes to 16. The rollout of this new, stricter approach, is expected to occur throughout October. https://t.co/5ktTmTM5gY https://t.co/KdPnot2yVa",
+          "author": "Eurogamer",
+          "date": "2026-10-21",
+          "likes": 5,
+          "views": 3199,
+          "link": "https://x.com/eurogamer/status/2112884131256262894",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVJ466gW0AABhp-.jpg"
+          },
+          "summary": "欧洲评级机构 PEGI 开始对含开箱（loot box）机制的数字游戏上调年龄评级至 16+，新规预计在 10 月内逐步完成铺开。此前欧洲对开箱的处理以「披露 + 家长指引」为主，这次直接动评级。",
+          "analysis": "抽卡与开箱从「要不要说」进入「要不要限」的阶段。对做 F2P 与服务型内购的团队，这是新增的合规成本：商店页素材、宣传口径、地区买量策略都要跟着改；同时也会反向影响 16 岁以下用户的获取成本。",
+          "recommendation": "PEGI 新规：含开箱的数字游戏评级上调至 16+，10 月内铺开"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 媒体",
+          "tags": [
+            "实体版",
+            "平台结构",
+            "PlayStation"
+          ],
+          "title": "《生化危机：安魂曲》PS 实体盘收入据报超过 Xbox 全平台总和",
+          "en_title": "Resident Evil: Requiem made more money from PlayStation discs than on Xbox in total",
+          "full_text": "Resident Evil: Requiem made more money from PlayStation discs than on Xbox in total, reportedly, as Sony's march to a discless future continues\n\nhttps://t.co/WyrPiZmCcw https://t.co/9Bgryrh9nT",
+          "author": "Eurogamer",
+          "date": "2026-10-21",
+          "likes": 98,
+          "views": 10026,
+          "link": "https://x.com/eurogamer/status/2112837728345665548",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVJOpJLWUAAGYCF.png"
+          },
+          "summary": "据 Eurogamer 报道，《生化危机：安魂曲》在 PlayStation 实体盘上取得的收入，超过了该作在 Xbox 平台的全部收入（含数字）。报道把它放在索尼推进无光驱化的背景下讨论：一边是平台在砍光驱，一边是实体盘仍在贡献可观收入。",
+          "analysis": "实体盘在 PlayStation 用户群里的付费权重长期被低估。这类结构性数据会直接影响发行侧的定价、渠道与典藏版策略；「无光驱是趋势」成立，但还没到可以对所有品类一刀切的时候。",
+          "recommendation": "《生化危机：安魂曲》PS 实体盘收入超过 Xbox 全平台总和",
+          "game_ref": "Resident Evil Requiem"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "電ファミニコゲーマー · 媒体（厂商合作稿）",
+          "tags": [
+            "开放世界",
+            "UE5",
+            "免费"
+          ],
+          "title": "《人間奇想計画》：UE5 免费开放世界，人与「フシギ」共居的怪異都市",
+          "en_title": "新たな“怪異都市”オープンワールドRPG『人間奇想計画』の世界が奇妙でおもしろすぎる…！",
+          "full_text": "新たな“怪異都市”オープンワールドRPG『人間奇想計画』の世界が奇妙でおもしろすぎる…！「不穏」も爆盛りで考察が止まらない\nhttps://t.co/bgrz2nLLZ3\n\n基本無料のPC・コンソール向けUE5作品として登録受付中。まるで百鬼夜行のごとく動き回る異形の「フシギ」と、人間がともに暮らす世界描く https://t.co/APmpY3FIcP",
+          "author": "電ファミニコゲーマー",
+          "date": "2026-10-21",
+          "likes": 8989,
+          "views": 577748,
+          "link": "https://x.com/denfaminicogame/status/2112741034350497921",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2112740914796072960/pu/img/GsxduxAaBuTMpgr5.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2112741034350497921/video/1"
+          },
+          "summary": "10 月 21 日面向日本与欧美首次公开：PC 与主机、基本免费、UE5 制作，舞台是由浮空岛组成的空中都市「エリシアン」。玩家以「フシギ事務所」所长的身份（通称特別調査官）探索街区，战斗为可切换多名角色的连携制，另含生活模拟要素。官方站点已开放事前登录，Steam 页面「后日公开」。",
+          "analysis": "",
+          "recommendation": "《人間奇想計画》：UE5 免费开放世界，人与怪異共居的空中都市——8989 赞",
+          "featured": true,
+          "game_ref": "人間奇想計画",
+          "enrichment": {
+            "game_name": "人間奇想計画",
+            "genre": "开放世界 RPG / 动作 / 生活模拟",
+            "developer": "COSMICPUP STUDIO",
+            "platforms": [
+              "PC",
+              "主机"
+            ],
+            "price": "基本免费（F2P）",
+            "release_date": null,
+            "steam_rating": "Steam 页面尚未上架",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "pcu": "暂未发售",
+            "current_players": "—",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「开放世界」套「怪異都市」新瓶，COSMICPUP STUDIO 开发，PC/主机基本免费",
+            "why_notable": "免费 + 主机/PC + UE5，用「人与怪異共居」替代常见异世界题材，首曝一天 8989 赞、57.8 万浏览",
+            "description": "【核心玩法】玩家扮演浮空都市「エリシアン」中フシギ事務所的所长，通称「特別調査官」，在住宅区、商业街与暗市之间自由探索；战斗是可切换多名角色的连携制，每人有固有技能，面对不同「フシギ」敌人有各自机制，Boss 战演出差异化明显，并含 Just Guard 类精准防御。PV 还能看到类似钢丝摆荡的高处移动，配合生活模拟要素，探索本身被当作一条主线在做。\n\n【美术与氛围】UE5 + 风格化 3D，把卡通向造型与现实材质混用：糖果状、家电状、服饰状的「フシギ」与人同街共居，节庆游行既有主题乐园的欢快，也有恐怖片的「不穏」。评价普遍拿今敏《红辣椒》的游行做类比。\n\n【叙事】表层是「异常成为日常」的都市生活，底层埋着一条黑线：主角与ルミナー、アラベラ三人从「适配实验」设施出逃失败，主角被「适配」后亲手处理了同伴，ルミナー的敌意由此而来；PV 里反复出现的人偶暗示她一直在监视。\n\n【优势】题材稀缺——怪異都市而非异世界或二次元日常；F2P + PC/主机降低门槛；Boss 战演出与音乐是 PV 最亮的部分。\n\n【不足】目前只有 22 分钟 PV，没有实机试玩与上线时间；开放世界、生活模拟、连携战斗三线并行，商业模型未公开；本次情报主要来自厂商合作稿，需要后续独立试玩验证。\n\n【综合评价】2026 年辨识度最高的都市怪谈向开放世界项目之一；能否落地，取决于战斗深度与 F2P 付费设计是否兜得住三线并行的成本。"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "X · 日本 KOL 试玩",
+          "tags": [
+            "坦克动作",
+            "试玩版",
+            "手感"
+          ],
+          "title": "《SLAM TANK》：把坦克当动作游戏打，甩炮管撞击 + 空中连段的试玩版上线",
+          "en_title": "今日体験版が公開された『SLAM TANK』って戦車のゲーム。他の車に「フンフンフン！」ってするゲームだった。",
+          "full_text": "今日体験版が公開された『SLAM TANK』って戦車のゲーム。\n\n他の車に「フンフンフン！」ってするゲームだった。 https://t.co/Ql1HYmO7dV",
+          "author": "にょにょんば太郎＠10/17.18ゲムマ「S-25」",
+          "date": "2026-10-20",
+          "likes": 2522,
+          "views": 114815,
+          "link": "https://x.com/nyonyonba/status/2112495980872704334",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2112493816897064960/img/EURSxsm7mzQbSpLK.jpg",
+            "video_url": "https://x.com/nyonyonba/status/2112495980872704334/video/1"
+          },
+          "summary": "日本团队 Next Stage 的坦克动作游戏《SLAM TANK》于 10 月 20 日放出试玩版：核心玩法是甩动炮管把敌方 AI 机械军团撞碎、击飞，试玩者发现坦克还能打出空中连段。海外玩家直接把它称作「Tank May Cry」，强调转向、加速与碰撞反馈意外顺滑。Steam 页面已上线，发售日待定。",
+          "analysis": "",
+          "recommendation": "《SLAM TANK》试玩版：坦克甩炮管撞碎机甲，还能打空中连段——2522 赞",
+          "game_ref": "SLAM TANK",
+          "enrichment": {
+            "game_name": "SLAM TANK",
+            "genre": "动作 / 独立 / 载具动作",
+            "developer": "Next Stage Inc.",
+            "platforms": [
+              "Steam（Windows）"
+            ],
+            "price": "未公布（Steam 页面未定价）",
+            "release_date": null,
+            "steam_rating": "试玩版（Demo）已上线，正式版待定",
+            "steam_url": "https://store.steampowered.com/app/5186030/SLAM_TANK/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5186030/46bbf83331319ac674fb9c852e789bba072429ae/header.jpg?t=1792552874",
+            "youtube_video": null,
+            "pcu": "暂未发售（Demo 阶段）",
+            "current_players": "—",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「坦克动作」套「破坏爽感」新瓶，Next Stage Inc. 开发，Steam Demo 已上线",
+            "why_notable": "把坦克做成《鬼泣》式空中连段动作游戏，Demo 上线一天被日英 KOL 自发安利 5000+ 赞",
+            "description": "【核心玩法】第三人称坦克动作：以甩动、挥击炮管作为主要攻击手段，把敌方 AI 机械军团撞碎、顶飞；试玩版展示了坦克在滞空状态下的连段、把敌车顶起后追击的连招，以及「破坏越多、AI 付钱越多」的结算设定，把爽快感直接换算成收益。\n\n【操作与手感】多位试玩者的第一反应都是反差感：明明是坦克，转向、加速与碰撞反馈却像动作游戏一样跟手，有人干脆叫它「Tank May Cry」。这类「重物轻打」的手感调校，正是载具动作最难的一环。\n\n【美术与氛围】工业废土 + 夸张比例的机甲，撞击时的碎片与慢镜演出走「爽快破坏」路线，画面目标明确——让每一次撞击都有分量。\n\n【优势】把重型载具做成动作游戏是清晰的差异化；Demo 阶段已有多位日英 KOL 自发传播（合计 5000+ 赞）；单机 + 全手柄支持，移植与上架门槛低。\n\n【不足】玩法深度待验证——空中连段是真实机制还是演出噱头；发售日与价格未公布；题材相对小众，正式版内容量未知。\n\n【综合评价】2026 年最「手感向」的独立动作 Demo 之一，值得作为载具动作与打击反馈的设计参考样本。"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "X · 官方账号",
+          "tags": [
+            "平台动作",
+            "试玩版",
+            "移动机制"
+          ],
+          "title": "《Leafborn》：操控数千片叶子组成的存在，移动本身就是乐趣",
+          "en_title": "正直に言うと、このゲームでは、ただ動くだけでもめちゃくちゃ楽しい",
+          "full_text": "正直に言うと、このゲームでは、ただ動くだけでもめちゃくちゃ楽しい https://t.co/D97H0UsDyd",
+          "author": "Leafborn | Play Demo on Steam",
+          "date": "2026-10-19",
+          "likes": 2766,
+          "views": 147880,
+          "link": "https://x.com/LeafbornGame/status/2112283981307838901",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2112283527626596352/img/Nf6yXXdoLDlRWgMQ.jpg",
+            "video_url": "https://x.com/LeafbornGame/status/2112283981307838901/video/1"
+          },
+          "summary": "Green Cat Games 的快节奏动作游戏《Leafborn》：玩家操控由数千片叶子构成的生命体，在浮空群岛「Canopy」中高速移动、变形并获得新能力，对抗吸取世界生命能量的入侵机器人「Nulls」。官方账号用「说实话，光是移动就已经很好玩」作为宣传语，Steam 试玩版已上线，发售日未定。",
+          "analysis": "",
+          "recommendation": "《Leafborn》：操作一团千叶之躯在浮空群岛飞掠，光移动就很爽——2766 赞",
+          "game_ref": "Leafborn",
+          "enrichment": {
+            "game_name": "Leafborn",
+            "genre": "动作 / 冒险 / 独立",
+            "developer": "Green Cat Games",
+            "platforms": [
+              "Steam（Windows）",
+              "手柄推荐"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "试玩版（Demo）已上线，正式版待定",
+            "steam_url": "https://store.steampowered.com/app/4247440/Leafborn/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4247440/2594bd29a11cf4dfba8e1f8880845c54e3ffc627/header.jpg?t=1792596510",
+            "youtube_video": null,
+            "pcu": "暂未发售（Demo 阶段）",
+            "current_players": "—",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「高速平台动作」套「千叶拟态」新瓶，Green Cat Games 开发，Steam Demo 已上线",
+            "why_notable": "官方用「只是移动就很好玩」当宣传语，试玩一天 2766 赞、14.8 万浏览",
+            "description": "【核心玩法】玩家操控一个由数千片叶子构成的生命体，在浮空群岛「Canopy」中高速移动、变形（shapeshift）并获得新能力，对抗吸干世界生命能量的入侵机器人「Nulls」。设计核心是「移动即玩法」：冲刺、滑翔、借地形加速构成连续的动作流，而不是靠战斗数值推动。\n\n【美术与氛围】叶片的体积感与飘散效果是主要视觉卖点，浮空岛的自然景观与机械入侵形成对撞配色；整体清爽明亮，气质接近自然拟态系的平台动作。\n\n【优势】移动手感与反馈是官方最自信的部分——直接把「只是移动就很爽」当宣传语，这在动作游戏里是需要底气的表达；Steam 试玩已上线，全手柄支持并标注 DualSense 适配。\n\n【不足】发售日未公布；战斗深度、变形种类与关卡量未知；Green Cat Games 属小团队，产能与优化存在不确定性。\n\n【综合评价】典型的「手感优先」独立动作游戏，适合关注移动机制设计、平台动作品类的团队长期追踪。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "X · 中文开发者整理",
+          "tags": [
+            "开源",
+            "Claude Code",
+            "three.js"
+          ],
+          "title": "给 Claude Code 装 10 个开源库：从 MCP 接引擎到联机房间，3D 游戏原型提速",
+          "en_title": "想让 Claude Code 帮你做 3D 游戏，别让它从零手写物理和粒子特效……10 个 GitHub 免费开源库",
+          "full_text": "想让 Claude Code 帮你做 3D 游戏，别让它从零手写物理和粒子特效，太费 token，效果也一般。\n翻了一圈，挑出 10 个 GitHub 免费开源库，装上这些，做原型的时间能砍掉一大截。\n\n按用途分成三组，看完就知道该装哪个。\n\n第一组：让 AI 直接操作游戏引擎\n\n1. Gamedev Agent Skills：一次装进 74 个游戏开发技能，它会读项目文件，自己判断你用的是 Godot、Unity 还是 three.js，再调用对应的技能。一条命令装好：npx skills add gamedev-skills/awesome-gamedev-agent-skills\nhttps://t.co/aEj5c8RuZZ\n\n2. MCP Unity：Claude 直接在 Unity 编辑器里搭场景、改物体、配材质、看控制台报错，要求 Unity 6 及以上。\nhttps://t.co/W4dDJvitnu\n\n3. Godot MCP：同样的事换到 Godot 上，建场景、加节点、运行项目、读调试输出。\nhttps://t.co/J0vweOOkI3\n\n第二组：做素材\n\n4. TripoSR：一张图片生成 3D 模型，拿来做道具原型够用。需要一块 6GB 显存左右的英伟达 GPU。\nhttps://t.co/Ma1gvznMMT\n\n第三组：网页 3D 游戏的现成零件（three.js 和 React Three Fiber）\n\n5. Drei：相机控制、天空、阴影、模型加载，全是现成组件\nhttps://t.co/QEGuhzGB5d\n\n6. React Three Rapier：刚体、碰撞、关节，不用自己写物理引擎\nhttps://t.co/2UhfB1A5ke\n\n7. Yuka：NPC 寻路、感知和状态机\nhttps://t.co/lZhSentbrM\n\n8. three.quarks：火花、烟雾、魔法拖尾这类粒子特效\nhttps://t.co/0ofHqbCLqv\n\n9. React Postprocessing：泛光、景深、颗粒感，游戏画面看起来廉价不廉价，就看这一层\nhttps://t.co/vbPL5VCE9y\n\n10. Colyseus：多人联机，房间、匹配、断线重连都包了\nhttps://t.co/hrrqWRpgGI\n\n算一下成本：10 个全是 MIT 或 Apache 协议，不需要额外的 API key，后 6 个就是普通 npm 包，Claude 照着文档写代码就能用。你唯一要花的钱，就是本来就在付的 Claude 或 Codex 订阅。\n\n上手只要三步：先装 Gamedev Agent Skills；再让 Claude 用 Drei 加 Rapier 搭一个能跑能撞的小场景；最后加上 Postprocessing 和 three.quarks，画面质感立刻就上来了。",
+          "author": "爆裂队长NEXT",
+          "date": "2026-10-21",
+          "likes": 489,
+          "views": 19540,
+          "link": "https://x.com/thinkszyg/status/2112711953164730422",
+          "media": null,
+          "summary": "作者按用途整理三组共 10 个 MIT/Apache 开源库：① 让 AI 直接操作引擎——Gamedev Agent Skills（一次装 74 个游戏开发技能，自动识别 Godot/Unity/three.js）、MCP Unity、Godot MCP；② 做素材——TripoSR（单图生成 3D，需约 6GB 显存）；③ 网页 3D 零件——Drei、React Three Rapier、Yuka（寻路/感知/状态机）、three.quarks（粒子）、React Postprocessing、Colyseus（房间/匹配/重连）。全部免费、无需额外 API key，只需已有的 Claude/Codex 订阅。",
+          "analysis": "AI 编码代理的瓶颈已经从「会不会写」转到「有没有对的零件和工具接口」。把物理、粒子、寻路、联机这些成熟库接上，比让模型手写更快也更稳；这类「零件清单」正在变成新的开发者知识形态，也意味着选型能力比记 API 更值钱。",
+          "recommendation": "10 个开源库装进 Claude Code：MCP 接引擎、Rapier 管物理、Colyseus 管联机",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "X · 引擎官方",
+          "tags": [
+            "Unity",
+            "AI 插件",
+            "工作流"
+          ],
+          "title": "Unity 官方插件接入 Grok Build：一条命令给 AI 30+ 项引擎技能",
+          "en_title": "Did you know you can use the official Unity Plugin with Grok Build?",
+          "full_text": "Did you know you can use the official Unity Plugin with Grok Build?\n\nInstall it with one command, and Grok gets access to 30+ skills to help increase the speed and accuracy of your Unity workflows. \n\n🔗 Get started: https://t.co/9VWf8jH87Z https://t.co/PeSiJuL5q4",
+          "author": "Unity for Games",
+          "date": "2026-10-20",
+          "likes": 57,
+          "views": 7821,
+          "link": "https://x.com/unitygames/status/2112590679754912235",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2112590623958003713/pu/img/MqBxdQy4UIRcwbVL.jpg",
+            "video_url": "https://x.com/unitygames/status/2112590679754912235/video/1"
+          },
+          "summary": "Unity for Games 宣布官方 Unity Plugin 已可用于 Grok Build：一条命令安装后，Grok 可调用 30+ 项技能，用于提升 Unity 工作流的速度与准确度。",
+          "analysis": "引擎方开始同时对接多家编码 Agent：Epic 押 Claude Code、Unity 押 Grok，官方 MCP/技能包正在成为引擎的标配分发面。对团队来说，选型问题从「用哪个 AI」变成「哪套工具链的官方支持更完整、权限更可控」。",
+          "recommendation": "Unity 官方插件接入 Grok Build，一条命令开放 30+ 项引擎技能"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**EA 关掉了一间 30 年的工作室**\nBioWare 官方确认关闭，下一代《质量效应》的早期开发终止；Bloomberg 同日报道 EA 全公司裁员约 400 人，其中 BioWare 约 50 人。这发生在 550 亿美元私有化完成数月之后，同期 EA 还暂停了 Sims 相关项目、收缩 Skate 团队，并推动 Respawn 与 DICE 合并。\n\n**Xbox 的收缩排到了 2027 年 1 月**\n据 Fortune 报道，Xbox 还将进行三轮裁员（本月、11 月、2027 年 1 月）；同一报道称次世代 Helix 分掌机与主机两台，分别瞄准 2027、2028 年假日，内部预计售价 1200–1800 美元。硬件补贴的老账，在 AI 拉高内存与存储成本之后已经算不平。\n\n**AI 工具链在往「官方接口」收敛**\nEpic 官方开源 Unreal × Claude Code 插件，用 MCP 直接接管编辑器，30+ Toolsets 靠 3 个元工具按需检索；Unity 则把官方插件接到 Grok Build。开发者这一侧，一份 10 个开源库的清单（引擎 MCP、TriposR、Drei/Rapier/Colyseus）说明瓶颈已从「会不会写」变成「零件选得对不对」。\n\n**新游：日本团队靠差异化拿量**\n《人間奇想計画》用「人与怪異共居的空中都市」拿到 8989 赞、57.8 万浏览；《SLAM TANK》把坦克做成能打空中连段的动作游戏，试玩一天被日英 KOL 自发安利；《Leafborn》则把「移动本身就很好玩」直接写进宣传语。题材与手感，仍是小团队最有效的杠杆。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
