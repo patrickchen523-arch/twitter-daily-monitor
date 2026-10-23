@@ -1,0 +1,442 @@
+{
+ "date": "2026-10-23",
+ "meta": {
+  "raw_count": 204,
+  "filtered_count": 197,
+  "selected_count": 12,
+  "crawl_time": "2026-10-23"
+ },
+ "lede": "Codex 智能体两周攻破 Switch 2，首个软件越狱公开；《星球大战：前线 3》官宣由 DICE 与 Respawn 联合开发；Xbox 云游戏改按小时计费；24.4 万浏览的《Full Belly Breakout》把「吃饭」做成致命解谜。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Codex 智能体两周攻破 Switch 2：首个软件越狱，只需 25 美元的 SmileBASIC"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "《星球大战：前线 3》官宣：DICE 与 Respawn 联合开发，Bungie 传闻被否"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "一道菜可能致命，吃法决定结局——《Full Belly Breakout》5479 赞"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Codex 智能体农场两周攻破 Switch 2，首个软件越狱公开\nthree.js 作者用 AI 造程序化纽约：gzip 仅 784KB，代码开源\n陈成拆解 pstack：先建验证层，56 个 skill 中 55 个禁用模型调用\n樱井政博：AI 会让游戏数量暴涨，但多数是「不赚钱的复制品」"
+  },
+  {
+   "id": "industry",
+   "text": "《星球大战：前线 3》官宣：DICE 与 Respawn 联合开发\nEA 400 人裁员波及 Respawn、Maxis、Motive、Full Circle\nCapcom 数据泄露扩大到 1170 万个账号，官方致歉\nXbox 云游戏改按小时卖：50 小时 11.99 美元，无需 Game Pass"
+  },
+  {
+   "id": "indie",
+   "text": "《Full Belly Breakout》：每道菜可能致命，吃法决定结局——5479 赞\n《MIGHTREYA》：被玩家归入 stylish action，手感三件套过关\n《Last Chickenburg》：开发 10 年的硬核动作 RPG，Next Fest 首发试玩"
+  },
+  {
+   "id": "tools",
+   "text": "Unity Spark 开放预约：浏览器内直连 Asset Store，资产一键进工程"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "pepsipu · 个人研究者（Polygon 报道）",
+     "tags": [
+      "AI Agent",
+      "主机安全",
+      "越狱"
+     ],
+     "title": "首个 Switch 2 软件越狱：Codex 智能体农场跑通 WebKit 与 fs 提权，用了两周",
+     "en_title": "i jailbroke the nintendo switch 2",
+     "full_text": "i jailbroke the nintendo switch 2\n\nso i modded cinnamoroll, peter griffin, hatsune miku, and more into Mario Kart World, a switch 2 exclusive\n\nnow watch my friends and i get cooked by bots\n\nlearn more and get the exploit https://t.co/ykjgyfrFRp https://t.co/BOcFhejRz1",
+     "author": "pepsipu",
+     "date": "2026-10-22",
+     "likes": 21903,
+     "views": 2816928,
+     "link": "https://x.com/pepsipu/status/2113117920373137622",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113113973679951872/img/7nk5R-bLAjU126-p.jpg",
+      "video_url": "https://x.com/pepsipu/status/2113117920373137622/video/1"
+     },
+     "summary": "安全研究者 pepsipu 公开 ns2jb：面向 Switch 2 最新固件 23.0.1 的纯软件、需重新引导的越狱，按其自述是 Switch 2 上的首个同类漏洞。实现路径是先用《SmileBASIC 4》（eShop 售价 25 美元）在 BASIC 解释器里找到整数溢出，再借 fs 系统模块路径规范化（`/..\\`）的缓冲区溢出让 fs 获得任意读写，最终替换 loader 打开的 ExeFS 对象，把任意代码以「任意普通系统模块」乃至内置 fs 的权限跑起来。整个过程由多个 Codex 实例并行推进：一台 Switch 1 负责 SmileBASIC 路线，一台 Switch 2 试 WebKit；抓取端用 JetKVM 送手柄输入、HDMI 取画面，断电重启靠一个改装蓝牙开关按电源键。作者说明越狱本体花了近两周，而把 Cinnamoroll、初音未来等角色塞进《马力欧卡丁车世界》的 mod 是「vibecode 一天做完」。",
+     "analysis": "这不是一张「AI 又赢了」的爽文，而是一份成本结构说明书：真正被自动化的是重复的逆向循环——取证、写 PoC、撞崩溃、读崩溃、改假设，JetKVM + 断电开关把「需要人在现场按按钮」这一环也拆掉了。对平台方，安全边际的计价单位正在从「多少个研究员月」变成「多少个 agent 小时 × token 预算」；对游戏团队，同一条流水线可以直接复用到存档格式、反作弊与内部工具上。",
+     "recommendation": "Codex 智能体两周做出首个 Switch 2 软件越狱，仅需 25 美元的 SmileBASIC",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "mrdoob · three.js 作者",
+     "tags": [
+      "three.js",
+      "程序化生成",
+      "开源"
+     ],
+     "title": "three.js 作者用 AI 做出一座程序化纽约：gzip 后 784KB，全城可漫游",
+     "en_title": "Spent a bunch of tokens over the last few weeks building a fully procedural New York simulation.",
+     "full_text": "Spent a bunch of tokens over the last few weeks building a fully procedural New York simulation.\n\nhttps://t.co/YSrGNoIYsK\n\nIt's only 784KB gzipped and the code is on github, so you can do whatever you want with it ✌️ https://t.co/tj5wXVxhDR",
+     "author": "mrdoob",
+     "date": "2026-10-22",
+     "likes": 1674,
+     "views": 73338,
+     "link": "https://x.com/mrdoob/status/2113177383658561721",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113175133414367232/img/F8-KwULaPQExh0ed.jpg",
+      "video_url": "https://x.com/mrdoob/status/2113177383658561721/video/1"
+     },
+     "summary": "three.js 作者 Ricardo Cabello（mrdoob）用几周 token 做出一个完全程序化的纽约模拟，地址在 mrdoob.github.io/slop-newyork/。整个项目 gzip 后只有 784KB，代码已放到 GitHub，作者表示「想怎么改都行」。",
+     "analysis": "值得注意的不是「AI 会写 three.js」，而是产物形态：不是一段生成好的静态场景，而是一套能在浏览器里实时生成街区的规则，体积压到 784KB 意味着这套规则足够紧凑、可被当作基础设施复用。对关卡与场景量产，这比一次性出图更接近可落地的中间件；对独立团队，它示范了「用 token 换生成器，再用生成器换内容」的成本路径。",
+     "recommendation": "three.js 作者用 AI 造出程序化纽约：gzip 仅 784KB，代码已开源",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "陈成 · 中文 KOL（读 poteto 演讲）",
+     "tags": [
+      "AI Agent",
+      "工程方法论",
+      "Claude Code"
+     ],
+     "title": "陈成拆解 pstack：56 个 skill 里 55 个禁用模型调用，真正的门槛是先建验证层",
+     "en_title": "读了 @poteto 的 pstack，记一些点。",
+     "full_text": "读了 @poteto 的 pstack，记一些点。\n\n1. pstack 不是 56 个单独的 skill，而是一套方法论和工作流。先做验证 skill 和 feature map，让 agent 能自己跑起并操作应用。再用 /poteto-mode 按任务类型走固定流程。最后才轮到并行和自动合并。第一步没做好，后面多开 agent 只会更贵，不会更可信。她演讲里的分法是，验证管\"对不对\"，pstack 管\"好不好\"。\n\n2. 建验证的方法值得花时间。先把应用做成 CLI，命令能组合，破坏性操作带 --dry-run，输出 JSON，报错时告诉 agent 下一步怎么做。再建 feature map，每个功能写清从哪进、怎么用、CLI 怎么驱动、有哪些坑。她管这个叫\"物化的记忆\"。我准备先找个 demo 产品试一下，照着她的 Atlas 示例来。\n\n3. 技术栈影响生产力，这点我深有体会。那 agent 友好的技术栈是什么？我目前的答案是轻、快、可调试、可控制。Electron 和 Web 有 CDP，iOS 有模拟器。运行时越难调、越难控，agent 越难用。她说值得为此自建调试工具，甚至换栈。\n\n4. 补上下文的几个 skill 也值得一看。/teach 会调 /how 追运行机制，调 /why 去 git、PR 评论、Linear、Slack、Sentry 里查当初为什么这么写。/recall 从历史会话里捞上下文。还有 /in-your-own-words，让 agent 先用自己的话复述问题，理解偏了能早点发现。\n\n5. 她反对对抽象计划做对抗式评审。原因是 agent 会臆想风险，给不会发生的边界情况加防护。她的做法是先做两三个可切换的原型，用验证 skill 截图测量。然后让几个模型家族各出一版类型签名级的设计，互相评判，挑一个再实现。我之前一直用对抗式评审，确实能想到很多 edge case，但也有不少是多余的。下次试试拿原型换掉一部分评审，看会漏掉多少。\n\n6. 56 个 skill 里有 55 个禁了模型调用，Claude Code 的 Skill 工具会直接拒绝。镜像版建了一张映射表，让 agent 去读对应的 SKILL.md 照着做。能用，但 skill 之间每调一次都多一步，也多吃上下文。这方案比很多产品直接给你塞一堆模型可调用的 skill 好要多了。\n\n7. 她视频里讲的外循环不在 pstack 里。Grok Bot 接了 Slack、Datadog、Sentry，订阅 Slack 线程和 Sentry 告警，自动派云 agent 去复现 bug、开 PR。她一个月 2,500 个 PR，主要靠这一层和验证，pstack 只占一小块。这层得自己搭。\n\n8. 把反复纠正变成结构的四级顺序也值得一看。用架构或数据结构根除 > lint 或测试让 CI 拦 > skill 或规则 > 人工 review。第四级她直接标成 ngmi。她的 Dune 框架就是第一级的例子。每件事只留一种写法，看到坏模式先写 lint 止血，再让 agent 清理，让代码库一直保持\"agent 照抄也不会错\"。我打算挑一个 agent 老犯的错，用 /correct 试一次。\n\n详细 research 见 https://t.co/4WIxwx4wfA 。",
+     "author": "陈成",
+     "date": "2026-10-22",
+     "likes": 154,
+     "views": 10668,
+     "link": "https://x.com/chenchengpro/status/2113243170788278767",
+     "media": null,
+     "summary": "陈成把 pstack 拆成八点：一，pstack 不是 56 个散装 skill，而是一套方法论——先做验证 skill 和 feature map，让 agent 能自己跑起并操作应用，再用 /poteto-mode 按任务类型走固定流程，最后才谈并行与自动合并；验证管「对不对」，pstack 管「好不好」。二，验证要靠物化记忆：把应用做成 CLI、命令可组合、破坏性操作带 --dry-run、输出 JSON、报错时告诉 agent 下一步。三，agent 友好的技术栈是轻、快、可调试、可控制（CDP、模拟器）。另外还有 /teach、/how、/why、/recall、/in-your-own-words 等补上下文的 skill；她反对对抽象计划做对抗式评审，主张先做两三个可切换原型再测；56 个 skill 里 55 个禁了模型调用，靠映射表让 agent 读 SKILL.md；外循环靠 Slack/Datadog/Sentry 自动派单，她一个月 2500 个 PR 主要靠这一层。",
+     "analysis": "这份笔记最反直觉的点是第 6 条：把 55 个 skill 的模型调用全部禁掉，等于主动放弃「agent 自己决定用什么」的自由度，换成可预测的固定流程。对团队而言，先建 CLI + feature map 这类「物化的记忆」，收益远高于多开几个 agent；第 8 条那套「架构根除 > CI 拦 > 规则 > 人工 review」的分级，也直接适用于游戏项目的配置表与工具链治理。",
+     "recommendation": "陈成拆解 pstack：先建验证层再谈并行，56 个 skill 中 55 个禁用模型调用",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 04",
+     "source": "Eurogamer · 媒体（采访 Denfaminicogamer）",
+     "tags": [
+      "生成式 AI",
+      "行业观点",
+      "创作"
+     ],
+     "title": "樱井政博：AI 会让游戏数量继续暴涨，但绝大多数是「不赚钱的复制品」",
+     "en_title": "Smash Bros. director Masahiro Sakurai thinks gen-AI will cause a surge of unoriginal games, but says human creativity can't be replicated",
+     "full_text": "Smash Bros. director Masahiro Sakurai thinks gen-AI will cause a surge of unoriginal games, but says human creativity can't be replicated\n\nhttps://t.co/Nit78WocqX https://t.co/GrHBeAiNhJ",
+     "author": "Eurogamer",
+     "date": "2026-10-22",
+     "likes": 1,
+     "views": 841,
+     "link": "https://x.com/eurogamer/status/2113314844195664280",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVQAoeUXUAAMuH2.png"
+     },
+     "summary": "樱井政博在 Denfaminicogamer 的访谈里谈到刚卸任的 Game Designers Awards 评审经历：2010 年 Steam 一年只有 275 款游戏，今年已超过 19000 款。他认为这个数字还会继续涨，「因为 AI 会把它推上去」，但其中大多数会变成「不赚钱的作品」——多到无法逐个了解，且多是各款游戏已有系统的复制品。他点名《Librarian: Tidy Up the Arcane Library!》这类玩法极简的作品最容易被 AI 复刻，并以《Needle in a Haystack Simulator》被大量抄袭、原作者只能在 Steam 图上加「original」标签为例。他也承认 AI 未来或许能复刻《ICO》《旺达与巨像》级别的作品，但上田文人「还没被创造出来的东西」无法被复制。",
+     "analysis": "这段话的价值在于它给「AI 泛滥」划了一个可操作的分界：不是质量高低，而是「是否只重组已有系统」。对做差异化的小团队，这是利好——门槛从产能转向「定义一套别人还没做过的规则」；对平台方，19000 款/年的供给下，可发现性本身就是产品问题。",
+     "recommendation": "樱井政博：AI 会让游戏数量继续暴涨，但多数只是已有系统的复制品",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Polygon · 媒体（Variety 信源）",
+     "tags": [
+      "EA",
+      "星球大战",
+      "新作确认"
+     ],
+     "title": "《星球大战：前线 3》官宣确认：DICE 与 Respawn 联合开发",
+     "en_title": "Star Wars Battlefront 3 Is Real, EA Officially Confirms",
+     "full_text": "Star Wars Battlefront 3 Is Real, EA Officially Confirms https://t.co/z7WNsk8dLT https://t.co/8JUou2J9iL",
+     "author": "Polygon",
+     "date": "2026-10-22",
+     "likes": 2123,
+     "views": 59256,
+     "link": "https://x.com/Polygon/status/2113239031290953918",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVO7s02XoAAuJa1.jpg"
+     },
+     "summary": "在宣布关闭 BioWare、裁撤约 3% 员工的同一份沟通里，EA 总裁 Cam Weber 与 COO David Tinson 确认将「把 Respawn 与 DICE 聚到一起做一个未来项目」。Variety 多位信源称该项目即 Lucasfilm Games 的《星球大战：前线 3》，同时也否掉了 Bungie 接手的传闻。Respawn 另有《星战 绝地》系列续作在研；EA 称《战地 6》表现强劲，后续战地作品已在规划。距离 DICE 的《前线 2》（2017）已近十年。",
+     "analysis": "这是私有化后 EA 组合逻辑的一次明牌：把资源压到「已验证 IP + 服务型 FPS + 现成团队」，用 DICE 的射击底子加 Respawn 的多人运营经验复用星战资产，风险最低。反过来看，同一天被砍掉的是长周期单人叙事——买断制大作的立项窗口正在被这类「低风险续作」挤压。",
+     "recommendation": "《星球大战：前线 3》官宣：DICE 与 Respawn 联合开发，Bungie 传闻被否",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 媒体（Vertical Slice 报道 + LinkedIn 佐证）",
+     "tags": [
+      "裁员",
+      "EA",
+      "工作室重组"
+     ],
+     "title": "BioWare 之后：EA 400 人裁员波及 Respawn、Maxis、Motive、Full Circle",
+     "en_title": "Following shock BioWare closure, scope of EA job cuts becomes clear as layoffs hit Respawn, Maxis, Full Circle, EA Motive, and more",
+     "full_text": "Following shock BioWare closure, scope of EA job cuts becomes clear as layoffs hit Respawn, Maxis, Full Circle, EA Motive, and more\n\nhttps://t.co/BHCEOXeD44 https://t.co/bGz7TL5IEr",
+     "author": "Eurogamer",
+     "date": "2026-10-22",
+     "likes": 8,
+     "views": 3639,
+     "link": "https://x.com/eurogamer/status/2113234921850613810",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVO2luvacAA7uol.jpg"
+     },
+     "summary": "EA 确认本轮裁撤 400 个岗位，其中 BioWare 约 50 人、Skate 工作室 Ripple Effect 缩编，但未说明另外 350 人的分布。据 Vertical Slice 引述信源并经 LinkedIn 交叉验证：Maxis 高级总监 Anna Huerta、Ripple Effect 三位美术、Respawn/Ripple Effect 的运营产品经理、EA Motive 高级玩法设计师、Full Circle 高级设计师与季节性创意总监均在受影响之列。EA 内部备忘录同时披露：暂停未公布项目 Project Lotus，转向 Project Evergreen；Full Circle 缩编以「做长线留存」；Respawn 与 DICE 另有联合项目。EA 为完成 550 亿美元杠杆收购，曾承诺每年削减 7 亿美元成本，其中 1.7 亿来自「组织效率」。",
+     "analysis": "「BioWare 50 人」和「400 人」之间的差额，才是这轮调整的真实形状：被削的是支撑型与中型项目，留下的是能立刻产出现金流的服务型团队。对从业者，杠杆收购后的第一年通常不是终局，7 亿美元成本目标意味着后续还有动作；对市场，中型买断制项目的供给会进一步收缩。",
+     "recommendation": "EA 400 人裁员波及 Respawn、Maxis、Motive 与 Full Circle",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "GameSpot · 媒体（多家报道：PC Gamer、RPS）",
+     "tags": [
+      "数据泄露",
+      "安全",
+      "Capcom"
+     ],
+     "title": "Capcom 数据泄露扩大到 1170 万个账号，官方致歉并提醒警惕钓鱼邮件",
+     "en_title": "A total of 11.7 million Capcom ID accounts were affected by a massive data breach",
+     "full_text": "A total of 11.7 million Capcom ID accounts were affected by a massive data breach, which included information like time and date of account creation, number of logins, and last login and IP address used. No credit card information was affected.\n\nThe company has since warned users to look out for phishing and suspicious emails.",
+     "author": "GameSpot",
+     "date": "2026-10-22",
+     "likes": 13,
+     "views": 6104,
+     "link": "https://x.com/GameSpot/status/2113312651233132671",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVP-qBEWwAAJYpy.jpg"
+     },
+     "summary": "Capcom 确认约 1170 万个 Capcom ID 账号受此次数据泄露影响，涉及账号创建时间、登录次数、最后登录时间与所用 IP 地址；信用卡信息未受影响。公司已公开致歉，并提醒用户警惕钓鱼与可疑邮件。PC Gamer、Rock Paper Shotgun 同日跟进报道，RPS 指出这是 Capcom 近年规模最大的一次账号体系事件。",
+     "analysis": "泄露字段本身不含支付信息，但「登录次数 + 最后登录时间 + IP」足以做账号画像与撞库定向，风险在于后续钓鱼而非直接盗刷。对自建账号体系的厂商，这是一次现成的检查清单：登录日志保留多久、是否与 IP 强绑定、异常登录能否阻断——同一周内 FF14 因 PHP 漏洞全球宕机，也在提醒运营侧的安全预算不能只花在反作弊上。",
+     "recommendation": "Capcom 数据泄露波及 1170 万账号：登录次数与最后登录 IP 被读取",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 媒体（Xbox 官方博客）",
+     "tags": [
+      "Xbox",
+      "云游戏",
+      "商业模式"
+     ],
+     "title": "Xbox 云游戏改按小时卖：50 小时 11.99 美元，不再强制绑 Game Pass",
+     "en_title": "Xbox cloud gaming prices revealed, with 50 hours of ad-free game-time priced $11.99",
+     "full_text": "Xbox cloud gaming prices revealed, with 50 hours of ad-free game-time priced $11.99\n\nhttps://t.co/U5L1fqhBNd https://t.co/2bQ4OOpjua",
+     "author": "Eurogamer",
+     "date": "2026-10-22",
+     "likes": 6,
+     "views": 5752,
+     "link": "https://x.com/eurogamer/status/2113196862081741295",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVOVVgrWQAA8N3b.png"
+     },
+     "summary": "微软公布云游戏时长包定价：10 小时 3.99 美元、25 小时 7.99 美元、50 小时 11.99 美元（均为尝鲜价）。10 月 22 日起 Xbox Insiders 可先行体验，无需有效 Game Pass 订阅，11 月向全体玩家开放。付费版为无广告档，但高峰期仍可能排队（官方称等待更短）。此前 Xbox 已上线带广告的免费云游戏；也有报道称 15 小时是 Game Pass Ultimate 云游戏开始亏钱的临界点。",
+     "analysis": "从「订阅包月」改成「按时长零售」，本质是把云算力的单位成本直接摊到玩家面前——这也是云游戏第一次给出可横向比较的价格锚点（约每小时 0.24 美元）。对内容方意味着两件事：长流程 3A 在云上的「总价」会变得很显眼，而 1–2 小时的试玩/独立作品反而更适合按小时卖。",
+     "recommendation": "Xbox 云游戏改按小时计费：50 小时 11.99 美元，无需 Game Pass",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Indie Game Joe · 独立游戏推荐账号",
+     "tags": [
+      "解谜",
+      "叙事分支",
+      "独立游戏"
+     ],
+     "title": "《Full Belly Breakout》：每道菜都可能致命，怎么吃决定你拿到哪个结局",
+     "en_title": "Locked in a cell where the only way out is to finish every meal they bring you",
+     "full_text": "Locked in a cell where the only way out is to finish every meal they bring you and every dish can kill you\n\n- Study each dish to find the danger\n- Find the one safe way to eat it\n- How you eat decides which ending you get\n\nGame is Full Belly Breakout. https://t.co/TGCTabyrfI",
+     "author": "Indie Game Joe",
+     "date": "2026-10-21",
+     "likes": 5479,
+     "views": 244180,
+     "link": "https://x.com/IndieGameJoe/status/2112982287058891046",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2112978890431873024/img/xgqjHsZSxGuOJobZ.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2112982287058891046/video/1"
+     },
+     "summary": "玩家被关在牢房里，唯一的出路是吃完送进来的每一顿饭，而每道菜都可能致命。规则三步：观察每道菜找出危险来源、找到唯一安全的吃法、吃法本身决定结局。宣传视频在 24 小时内拿到 5479 赞、24.4 万浏览。",
+     "recommendation": "《Full Belly Breakout》：一道菜可能致命，吃法决定结局——5479 赞",
+     "game_ref": "Full Belly Breakout",
+     "enrichment": {
+      "game_name": "Full Belly Breakout",
+      "genre": "解谜 / 叙事分支 / 密室",
+      "developer": "独立小团队（推文未标注工作室）",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未公布",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【核心玩法】玩家被关在一间牢房里，唯一的出狱条件是吃完送进来的每一顿饭，而每道菜都可能是致命的。设计把「进食」做成了信息解谜：先观察菜品、餐具与上菜方式，判断危险来自毒性、异物还是机关，再找出唯一安全的入口与顺序。\n\n【结构】宣传口径是「你怎么吃决定你拿到哪个结局」——吃法本身就是分支条件。同一桌菜可以导向不同收尾，玩家必须在信息不足时做取舍，这让每顿饭都变成一次小型决策而非单纯操作。\n\n【气质与节奏】单一牢房 + 循环送餐，把密闭空间的压迫感直接做成关卡节奏；危险来自日常食物，这个反差本身就是记忆点，也让演示视频在前三秒就能讲清规则。\n\n【优势】规则一句话说得清、演示极适合短视频传播（本条推文 5479 赞、24.4 万浏览）；用规则设计替代美术堆料，体量可控。\n\n【风险】单场景循环对内容量要求极高，中段容易重复；如果毒性提示不够清晰，解谜会退化成穷举试错。\n\n【综合】典型的「一句话讲完、玩起来有信息量」的独立解谜，适合观察小团队如何用手写规则换内容密度。",
+      "why_notable": "把「吃饭」做成致命解谜，规则一句话可传播，是 Next Fest 期间少见的非 AI 手工项目",
+      "pcu": "未公布",
+      "current_players": "未公布",
+      "estimated_sales": "未公布",
+      "gi_summary": "「密室进食解谜」套「多结局叙事」，规则极简、演示友好，靠吃法本身做分支"
+     },
+     "featured": true
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "MIGHTREYA 官方账号 · 独立团队",
+     "tags": [
+      "动作",
+      "独立游戏",
+      "Steam"
+     ],
+     "title": "《MIGHTREYA》：被玩家放进 stylish action 谱系的新作，卖点是手感与节奏",
+     "en_title": "It's unmistakably in the lineage of stylish action games, and it nails all the essentials",
+     "full_text": "It’s unmistakably in the lineage of stylish action games, and it nails all the essentials: smooth controls, exhilarating combat, and great pacing. https://t.co/KTF637j8k4",
+     "author": "Wishlist MIGHTREYA on Steam",
+     "date": "2026-10-21",
+     "likes": 2137,
+     "views": 51955,
+     "link": "https://x.com/WZN__K/status/2112917166861541617",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2112915537932247040/img/lMGsiyQ8QDMRXGrL.jpg",
+      "video_url": "https://x.com/WZN__K/status/2112917166861541617/video/1"
+     },
+     "summary": "游戏官方账号转发的一条评价把《MIGHTREYA》直接放进「风格化动作游戏」的谱系：操控顺滑、战斗爽快、节奏推进稳，三点都踩在这类游戏的门槛上。原推 2137 赞、5.2 万浏览，账号主诉求是让玩家去 Steam 加愿望单。",
+     "recommendation": "《MIGHTREYA》被评「动作游戏该有的都有」：手感顺、战斗爽、节奏稳",
+     "game_ref": "MIGHTREYA",
+     "enrichment": {
+      "game_name": "MIGHTREYA",
+      "genre": "3D 动作 / stylish action",
+      "developer": "独立团队（官方账号自运营，具体阵容未公开）",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未公布",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【定位】3D 风格化动作游戏，目前处于上线前的愿望单预热阶段，官方账号以「Wishlist on Steam」为主要诉求。\n\n【口碑切入点】这条被广泛转发的评价把它与 stylish action 谱系对齐，强调三件事：操控顺滑、战斗爽快、节奏稳定。对这类游戏，这三点恰好是最难同时做到的部分——手感决定上限，节奏决定玩家能否把连段打出来。\n\n【能确认的信息】推文本身只提供方向性评价，未披露连段、格挡/闪避、武器切换等具体系统，也未公布发售日与价格；Steam 页面信息以官方页面为准，此处不做推测。\n\n【为什么值得看】被点名「三件套都过线」，说明至少在试玩/演示层面达成了动作游戏的基本盘。对团队而言，这类项目是观察「小体量如何靠打击感与演出补足规模」的样本；对发行侧，是判断「动作品类是否还有差异化空间」的一个具体案例。\n\n【风险】风格化动作的受众对判定帧、镜头与手感极其敏感，预热期口碑一旦形成很难扭转。",
+      "why_notable": "被玩家主动归入 stylish action 谱系，手感三件套（操控/战斗/节奏）都被点名过关",
+      "pcu": "未发售",
+      "current_players": "未发售",
+      "estimated_sales": "未公布",
+      "gi_summary": "「3D 风格化动作」新作，以手感与连段节奏为卖点，处于愿望单预热期"
+     },
+     "featured": true
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "YerenGame · 开发团队",
+     "tags": [
+      "ARPG",
+      "独立游戏",
+      "Steam Next Fest"
+     ],
+     "title": "《Last Chickenburg》：一支团队做了 10 年的硬核动作 RPG，试玩版上线 Next Fest",
+     "en_title": "We spent 10 years making this Hardcore Action RPG and it has finally launched a Demo on Steam Next Fest!",
+     "full_text": "We spent 10 years making this Hardcore Action #RPG and it has finally launched a Demo on Steam Next Fest!\n\nWishlist and check out the demo: https://t.co/cHRyYvd2HI\n\n#SteamNextFest #IndieGames #IndieGame #Indiedev #ARPG https://t.co/bQNXdg5ItO",
+     "author": "Last Chickenburg 🐔 Demo Available Now!",
+     "date": "2026-10-22",
+     "likes": 36,
+     "views": 1344,
+     "link": "https://x.com/YerenGame/status/2113203708502868453",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113158415870734336/img/jmxDEgeTmusYUjWE.jpg",
+      "video_url": "https://x.com/YerenGame/status/2113203708502868453/video/1"
+     },
+     "summary": "开发团队自述用 10 年时间制作这款硬核动作 RPG，本次在 Steam Next Fest 放出首个公开试玩，并呼吁玩家加愿望单。",
+     "recommendation": "开发十年的硬核动作 RPG《Last Chickenburg》，在 Next Fest 放出首个试玩",
+     "game_ref": "Last Chickenburg",
+     "enrichment": {
+      "game_name": "Last Chickenburg",
+      "genre": "硬核动作 RPG",
+      "developer": "YerenGame（团队自述开发 10 年）",
+      "platforms": [
+       "PC"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未公布",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【项目体量】团队自述「花了 10 年做这款硬核动作 RPG」，本次终于把首个公开试玩放到 Steam Next Fest。10 年周期在独立项目里通常意味着反复推翻与重做，也因此成品的手感与系统完整度最值得单独观察。\n\n【定位】「Hardcore Action RPG」的自我标签，指向高难度战斗 + 成长数值的双核心：既要判定与操作过硬，也要有装备/技能构筑支撑长线。\n\n【本次节点】Demo 上线 Next Fest，是这类长周期项目转化愿望单的唯一窗口——试玩期数据往往直接决定能否拿到发行与后续曝光资源。\n\n【优势】十年积累的内容量通常高于同类小体量作品；试玩首发即进入 Valve 官方活动流量池。\n\n【风险】超长周期项目常见问题是系统缝合痕迹重、节奏对新手不友好、美术与 UI 停留在早期标准；这次试玩反馈会直接检验这三点。\n\n【综合】适合关注「超长周期独立 ARPG 如何收尾」的从业者，本次 demo 是最直接的一次检验。",
+      "why_notable": "开发 10 年的硬核动作 RPG 首次公开试玩，是观察长周期独立项目收尾质量的样本",
+      "pcu": "未发售",
+      "current_players": "未发售",
+      "estimated_sales": "未公布",
+      "gi_summary": "「硬核动作 ARPG」小团队十年磨一剑，Next Fest 首发试玩冲愿望单"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unity for Games · 官方",
+     "tags": [
+      "Unity",
+      "开发工具",
+      "资产管理"
+     ],
+     "title": "Unity Spark：在浏览器里边搭场景边接 Asset Store，模型/环境/音频直接进工程",
+     "en_title": "With Unity Spark, you don't have to start from scratch or rely solely on placeholder graphics.",
+     "full_text": "Great ideas deserve great art 🎨\n\nWith Unity Spark, you don’t have to start from scratch or rely solely on placeholder graphics. Connect directly to the Unity Asset Store right inside your browser to discover artist-created 3D models, environments, and audio that you can add directly into your project.\n\nElevate how your game looks and feels from day one. \n\nJoin the Unity Spark waitlist: https://t.co/ss68gXT9UD",
+     "author": "Unity for Games",
+     "date": "2026-10-22",
+     "likes": 75,
+     "views": 5587,
+     "link": "https://x.com/unitygames/status/2113254162725036064",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2113254064330862592/pu/img/dINiUiKlkKWWgz-_.jpg",
+      "video_url": "https://x.com/unitygames/status/2113254162725036064/video/1"
+     },
+     "summary": "Unity 官方介绍 Spark：不必从零开始、也不必一直用占位素材，可在浏览器内直连 Unity Asset Store，查找美术制作的 3D 模型、环境与音频并直接加入项目。目前通过 waitlist 开放预约。",
+     "analysis": "这补的是原型阶段最费时间的一段：找资产、试资产、再导入。把 Asset Store 搬到编辑器内的浏览器里，等于把「素材发现」并入了迭代循环；配合近一年各家引擎把 AI 生成接进工作流的方向，引擎厂商正在把「买什么」和「怎么做」缝在同一层。对团队，值得关注的是资产授权与工程内依赖管理会不会一起被收进去。",
+     "recommendation": "Unity Spark 开放预约：浏览器内直连 Asset Store，模型/环境/音频一键进工程",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**一个 agent 农场攻破了 Switch 2**\n研究者 pepsipu 公开 ns2jb，面向 Switch 2 最新固件 23.0.1 的纯软件越狱，按作者自述是 Switch 2 首个。路线是把《SmileBASIC 4》的整数溢出接到 fs 系统模块的路径规范化溢出，最终以任意普通系统模块权限执行代码；两台 Switch、两套 JetKVM、一个改装蓝牙开关负责按电源键，多个 Codex 实例分工跑 WebKit 与 SmileBASIC 两条线，越狱本体约两周，把初音未来塞进《马力欧卡丁车世界》的 mod 只花了一天。\n\n**EA 的另一面：裁员和续作同时落地**\nBioWare 关闭之后，400 人裁员的分布逐渐清晰：Maxis、Ripple Effect、EA Motive、Full Circle 与 Respawn 都有人离场，BioWare 只占约 50 人；同时 EA 官宣把 Respawn 与 DICE 聚到一起做《星球大战：前线 3》。同一份沟通里，被砍的是长周期单人叙事，被留下的是已验证 IP 加服务型 FPS。\n\n**平台侧的两笔账：安全与计费**\nCapcom 确认 1170 万个账号信息在数据泄露中受影响，包含创建时间、登录次数与最后登录 IP，信用卡信息未涉及。Xbox 则把云游戏改成按时长零售：10/25/50 小时分别 3.99/7.99/11.99 美元，不再强制绑定 Game Pass，11 月向全体玩家开放。\n\n**AI 的两条边界线**\n樱井政博判断 AI 会让年发行量继续从 19000 款往上走，但多数会是不赚钱的复制品，「还没被创造出来的东西」无法被复制。创作者一侧，three.js 作者 mrdoob 用几周 token 做出程序化纽约，gzip 后仅 784KB 并开源；陈成则把 pstack 的方法论拆成八条，核心是先把验证层和 feature map 建起来，再谈并行。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
