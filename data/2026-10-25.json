@@ -1,0 +1,583 @@
+{
+ "date": "2026-10-25",
+ "meta": {
+  "raw_count": 156,
+  "filtered_count": 150,
+  "selected_count": 12,
+  "crawl_time": "2026-10-25 09:20"
+ },
+ "lede": "宫本茂获日本文化勋章后谈 AI：工具会接管技术活，但复制粘贴做不出长久的东西；Xbox 首任 COO 上任三个月即离职；Kimi K3.1 Pro 一张图 5 分钟生成可用 GLB，成本约 0.6 美元。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "宫本茂谈 AI：工具会接管技术活，但复制粘贴做不出长久的东西"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Xbox 首任 COO 上任三个月即离职，消息称因「政策违规」被解雇"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《Pawned Souls》：兵只能斜刺、敌人按棋步围杀——6075 赞"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "宫本茂谈 AI：工具会接管技术活，复制粘贴做不出长久的东西\nKimi K3.1 Pro 一张图 5 分钟出 GLB，成本约 0.6 美元\nNenly 用 Opus 5.5 重写全套技能 Shader，按门派建像素特效语言"
+  },
+  {
+   "id": "industry",
+   "text": "Xbox 首任 COO 上任三个月离职，消息称因「政策违规」被解雇\n久夛良木健：光盘只是「拥有」的隐喻，抵触停产是心态问题\nPEGI 把含开箱机制的游戏分级上调至 16 岁\n「Cozy」标签自 2024 年增长超 250%，治愈系供给过剩"
+  },
+  {
+   "id": "indie",
+   "text": "《Pawned Souls》：用国际象棋规则打魂系——6075 赞\n《Dream Divers》：4 人联机潜入梦境，用「做梦机制」躲怪物\n《Ordinary Oddness》：《红辣椒》式开放世界，人与神话生物共居云上之城"
+  },
+  {
+   "id": "tools",
+   "text": "Godot GridMap + Sprite3D：不建模也能搭像素风 2.5D 关卡\nTripo P2.0/Astra 接入 Blender 与 Unity，3D 生成进生产管线"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Hannyah · 现场发言",
+     "tags": [
+      "宫本茂",
+      "AI",
+      "创作"
+     ],
+     "title": "宫本茂获日本文化勋章后谈 AI：工具会接管技术活，但「复制粘贴」做不出长久的东西",
+     "en_title": "Miyamoto's response to why AI is good is so eloquent I am honestly impressed.",
+     "full_text": "Miyomoto's response to why AI is good is so eloquent I am honestly impressed. https://t.co/taTs6QZqEj",
+     "author": "Hannyah",
+     "date": "2026-10-24",
+     "likes": 2176,
+     "views": 160256,
+     "link": "https://x.com/HannyahZ/status/2113817174540431476",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVXJZa_XIAAbgA9.png"
+     },
+     "summary": "任天堂的宫本茂获日本 2026 年度文化勋章后召开记者会，被问到生成式 AI。他以打字机到文字处理机的演进作比：过去会「写美术字」就能当设计师，工具接管技术环节后，真正被看见的是布局感这类个人能力；他也提醒「工作本身太愉快，容易让人误以为『我做出来的东西不错』」，靠复制粘贴拼出来的设计「不会长久」。最后他表示人类意图仍应居于创作核心，「我们还有很多能做的事」。",
+     "analysis": "这段表态值得游戏从业者逐字读：宫本茂没有站队「AI 好/坏」，而是把问题定位在「工具把门槛降到零之后，判断力成为唯一稀缺物」。对团队的直接含义是，AI 产出必须绑定明确的美术意图与验收标准，否则只是把「套模板」规模化。另一个隐含判断是，他并不担心岗位消失，而是担心创作者失去对「什么是好」的敏感度——这恰好是 AI 时代最容易被稀释的能力。",
+     "recommendation": "宫本茂谈 AI：工具会接管技术活，但复制粘贴做不出长久的东西",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "LUCIAN · 开发者实测",
+     "tags": [
+      "Kimi K3.1",
+      "3D生成",
+      "工作流"
+     ],
+     "title": "Kimi K3.1 Pro 看图生成 3D 模型：约 5 分钟出 GLB，成本 0.6 美元",
+     "en_title": "Kimi K3.1 Pro で画像からキャラクターの3Dモデルを作らせてみたんだけど、マジで凄すぎて声出た。",
+     "full_text": "これは革命すぎないか！？\n\nMoonshot AIの最新モデル『Kimi K3.1 Pro』で画像からキャラクターの3Dモデルを作らせてみたんだけど、マジで凄すぎて声出た。\n\n一発出しでこの出来は全員驚き屋になるレベルw\nOpusにもAstraにもこんな精巧な3Dモデルは作れない。\n\nTripoのプラグインも入れていたんだけどトークン残高ゼロだったのでそれは使われず、K3.1 Proが独自でモデリングしてるのを待つこと5分程でほぼ完璧なGLBファイルを生成。\n\nこちらでスキルを用意したわけでもなく、テクスチャ―の色ムラや崩れも見当たらない。\nしかも0.6ドルくらいしかかかってない。\n\n何気にGLBファイルをハーネスアプリ上でそのままプレビューできるのも地味に凄い。\n\nKimiがあれば、もはや3Dモデル生成AIサービスは契約しなくてもいいのでは！？",
+     "author": "LUCIAN｜AI × Blockchain",
+     "date": "2026-10-24",
+     "likes": 1004,
+     "views": 76934,
+     "link": "https://x.com/lucianlamp/status/2113882041444094366",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113881957490978816/img/tyuQDaKBiu2yzvoA.jpg",
+      "video_url": "https://x.com/lucianlamp/status/2113882041444094366/video/1"
+     },
+     "summary": "日本开发者 LUCIAN 用 Moonshot 的 Kimi K3.1 Pro，仅凭一张角色图生成完整 3D 模型：等待约 5 分钟后得到几乎可直接预览的 GLB 文件，贴图无明显色块与破损，全程未使用 Tripo 插件（余额为零），花费约 0.6 美元。他认为按这个水平，独立开发者可能不再需要单独订阅 3D 模型生成服务。推文 1004 赞、7.7 万浏览。",
+     "analysis": "单次 0.6 美元、直接输出 GLB，意味着「图生 3D」第一次同时满足了成本与交付格式两个条件，能直接进 Blender/Unity/Godot 管线。对美术组，可压缩的是概念稿到灰模/低模这一段；拓扑、UV、绑定、LOD 这些下游仍需人工，所以短期定位应是「草模加速器」而不是「建模替代」。真正值得关注的是通用模型开始吞掉垂直工具的场景——这正是 Tripo 这类公司最危险的地方。",
+     "recommendation": "Kimi K3.1 Pro 一张图 5 分钟出 GLB，成本约 0.6 美元——1004 赞",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Nenly · 开发者分享",
+     "tags": [
+      "Claude Opus 5.5",
+      "Shader",
+      "特效"
+     ],
+     "title": "独立开发者用 Opus 5.5 重写全部技能特效 Shader：从 3D 模板改成 2D 俯视角像素语言",
+     "en_title": "用Claude Opus 5.5把我游戏的技能特效系统做了一个几乎可以说是“重做”式的升级。",
+     "full_text": "用Claude Opus 5.5把我游戏的技能特效系统做了一个几乎可以说是“重做”式的升级。\n\n在开发之初，我的游戏技能特效其实大部分是用社区里开源的一些Shader做出来的。虽然这些Shader在当时帮了我非常多的忙，但后续在基于它们做开发的时候，总是感觉有些束手束脚的——\n\n一方面是因为它本身的代码其实是3D的，但我硬用压缩Y轴的方式模拟了2D俯视角，导致往上方丢的技能范围描述一直很不清晰；\n另外就是这些Shader提供的解决方案更像是“套模板”，调节空间其实非常有限，很难构筑出真正符合技能特色和等阶的视觉语言。这就是为啥之前总有朋友会说不同门派和稀有度之间的招式感觉没有什么区分度。\n\n所以这次我干脆让 Opus 5.5 把所有Shader推倒重写，直接按2D俯视角做了一套像素特效语言。简单说说做了啥：\n\n- 刀光、冲击波、气爆、驻留场、飞行体分成几族，每一族有自己的生命周期；\n- 发光单独做成一层选择性辉光，只让该亮的东西亮，不靠全屏Bloom糊一层；\n- 每个门派制定一套视觉语言预设，再在各种不同形态的招式上提供实现范例；\n- 再配套制作了一系列招式编辑器、门派编辑器和特效图鉴，几个变体可以并排摆着比，也能一键进入实机体验。\n\n它让我第一次拥有了我想要的特效：纯正、真实，原汁原味的像素风特效，生动、吸引人的HD光效……并且赋予了我一个高度可控、可延展的VFX系统。\n\n伴随这波改动落地，玩家应该能更清晰地在视觉表现层面品尝到不同门派间的风味特色差异。同时，后期战斗信息的可读性也得到了非常大的改善。",
+     "author": "Nenly",
+     "date": "2026-10-24",
+     "likes": 180,
+     "views": 13615,
+     "link": "https://x.com/Nenlyonis/status/2113916518610420021",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113915922532741120/img/fg6u5PKhQeQxAgZy.jpg",
+      "video_url": "https://x.com/Nenlyonis/status/2113916518610420021/video/1"
+     },
+     "summary": "开发者 Nenly 称用 Claude Opus 5.5 把游戏的技能特效系统近乎重做：原方案基于社区开源 Shader，用压缩 Y 轴的方式模拟 2D 俯视角，导致向上释放的技能范围难以表达、各门派与稀有度的招式缺乏区分度。新方案按 2D 俯视角重建像素特效语言——刀光、冲击波、气爆、驻留场、飞行体分成不同生命周期的族，发光改为选择性辉光层而非全屏 Bloom，每个门派一套视觉语言预设，并配套招式编辑器、门派编辑器与特效图鉴。",
+     "analysis": "这是目前 AI 参与游戏开发里最工程化的一类用法：不是让模型产出一次性 demo，而是让它重构一套可扩展的特效系统与编辑工具。原文点出的痛点很典型——开源 Shader 是「套模板」，调节空间小，结果就是玩家感知不到门派差异；AI 的价值在于把「推倒重写」的成本压到个人能承担。对中小团队，这提示 AI 的正确落点是重写遗留资产、生成配套编辑器，而不是直接生成最终美术。",
+     "recommendation": "Nenly 用 Opus 5.5 重写全套技能 Shader：按门派建 2D 像素特效语言"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 行业新闻",
+     "tags": [
+      "Xbox",
+      "人事变动",
+      "重组"
+     ],
+     "title": "Xbox 首任 COO 上任三个月即离职，消息称因「政策违规」被解雇",
+     "en_title": "Xbox's first chief operating officer Helen Chiang leaves Microsoft just three months into the job",
+     "full_text": "Xbox's first chief operating officer Helen Chiang leaves Microsoft just three months into the job\nhttps://t.co/BxmolCIdKB https://t.co/yryhcBqFP2",
+     "author": "Eurogamer",
+     "date": "2026-10-24",
+     "likes": 44,
+     "views": 6815,
+     "link": "https://x.com/eurogamer/status/2113979093431566452",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVZcwo8XsAEwJX6.jpg"
+     },
+     "summary": "Eurogamer 报道，Xbox 史上首位 COO、在微软工作 21 年并曾任《Minecraft》负责人的 Helen Chiang 于 10 月 23 日离职，距 7 月设立该岗位仅三个月。Xbox CEO Asha Sharma 的内部信只写「感谢她多年的服务」，未说明原因，职责暂由其他高管分摊。Eurogamer 后续更新称，一名知情人士指其因「政策违规」被解雇，官方回应不讨论个人人事，该说法未获独立证实。该 COO 岗位本身就是 Xbox「reset」的产物，同期裁员 3200 人、四家工作室剥离。",
+     "analysis": "COO 三个月走人，说明 Xbox 的重组不是一次性裁员，而是组织仍在剧烈调整：岗位刚设立就失去负责人，决策会进一步向 CEO 集中，短期更利于「快刀式」处置资产。对行业的信号是收缩远未见底——Arkane Lyon 的 11 月买家期限、Ninja Theory 的关停风险都挂在同一条线上，欧洲中腰部第一方工作室仍是高危区。",
+     "recommendation": "Xbox 首任 COO 上任三个月离职，消息称因「政策违规」被解雇",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 行业新闻",
+     "tags": [
+      "数字所有权",
+      "实体盘",
+      "PlayStation"
+     ],
+     "title": "PlayStation 之父久夛良木健：抱怨光盘停产是「心态问题」",
+     "en_title": "PlayStation founder Ken Kutaragi says discs became \"metaphor for 'owning' games\", and that upset at their discontinuation is a \"mentality issue\".",
+     "full_text": "PlayStation founder Ken Kutaragi says discs became \"metaphor for 'owning' games\", and that upset at their discontinuation is a \"mentality issue\". https://t.co/HpBT3y3spy https://t.co/jWBuqlAWKk",
+     "author": "Eurogamer",
+     "date": "2026-10-24",
+     "likes": 22,
+     "views": 9700,
+     "link": "https://x.com/eurogamer/status/2113941323979907367",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVY6bm3W8AAdx_o.jpg"
+     },
+     "summary": "Eurogamer 报道，PlayStation 之父久夛良木健谈及实体光盘逐步停产引发的争议时表示，光盘已经变成「拥有游戏」的一种隐喻，玩家因此产生的不满属于「心态问题」。这番表态出现在索尼等平台加速转向全数字发行、实体渠道持续收缩的背景下。",
+     "analysis": "这是数字所有权争论里最直接的厂商侧表述：把玩家对实体媒介的情感与维权诉求，归因为认知没跟上。短期不会改变全数字化的推进节奏；中期真正的风险在二手交易、离线可玩与收藏市场——这三块是实体盘仅存的差异化价值，一旦消失，账号封禁、停服、授权撤回的舆论与法律成本会反噬平台。",
+     "recommendation": "久夛良木健：光盘只是「拥有」的隐喻，玩家抵触停产是心态问题",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 政策监管",
+     "tags": [
+      "PEGI",
+      "开箱",
+      "分级"
+     ],
+     "title": "PEGI 把含开箱机制的游戏年龄分级上调至 16 岁",
+     "en_title": "European age-ratings body PEGI begins raising age-limit of loot box games, like EA Sports FC, to 16.",
+     "full_text": "European age-ratings body PEGI begins raising age-limit of loot box games, like EA Sports FC, to 16. https://t.co/5ktTmTM5gY https://t.co/4aB319Ectd",
+     "author": "Eurogamer",
+     "date": "2026-10-24",
+     "likes": 2,
+     "views": 2779,
+     "link": "https://x.com/eurogamer/status/2114016822143991835",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVZ_GJ-WoAAnMko.jpg"
+     },
+     "summary": "Eurogamer 报道，欧洲年龄评级机构 PEGI 开始把含开箱（loot box）机制的游戏分级上调至 16 岁，《EA Sports FC》等足球年货在列。此前 PEGI 对开箱的处理主要是游戏内购买提示，这次等于把机制本身纳入年龄判定。",
+     "analysis": "欧洲监管第一次把「开箱」从消费提示升级为年龄门槛，路径与比利时、荷兰的赌博认定不同——不禁售，但抬高触达成本。实际影响会沿产业链传导：分级变化波及实体包装、平台展示与买量素材，而「体育年货 + Ultimate Team 开箱」正是欧洲最赚钱的组合。国内厂商出海欧洲的抽卡产品，应把 16+ 评级提前写进上线预案。",
+     "recommendation": "PEGI 将含开箱机制的游戏上调至 16 岁，EA Sports FC 等在列"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "PC Gamer · 市场分析",
+     "tags": [
+      "Cozy",
+      "Steam",
+      "品类趋势"
+     ],
+     "title": "「Cozy」标签自 2024 年在 Steam 增长超 250%，治愈系进入供给过剩期",
+     "en_title": "Are we in the cozy gaming gold rush era? 'Cozy' has grown over 250% on Steam since 2024",
+     "full_text": "Are we in the cozy gaming gold rush era? 'Cozy' has grown over 250% on Steam since 2024 https://t.co/9AXu8jGaKh",
+     "author": "PC Gamer",
+     "date": "2026-10-24",
+     "likes": 15,
+     "views": 6320,
+     "link": "https://x.com/pcgamer/status/2114012708802793858",
+     "media": null,
+     "summary": "PC Gamer 统计称，Steam 上的「cozy」标签自 2024 年以来增长超过 250%，同期媒体收件箱里的同类投稿增长约 200%，并追问「我们是否已经进入治愈系游戏的淘金热」。文章讨论的是供给端的爆发，而非某一款爆款产品。",
+     "analysis": "治愈系正在从品类变成营销标签：供给增速远超需求，同质化的农场、装修、摆摊模拟会更快陷入价格与曝光竞争。对独立团队，机会不在再做一款 cozy 生活模拟，而在把治愈感嫁接到尚未被覆盖的机制上（自动化、社交、悬疑叙事）；对发行侧，这个标签的筛选价值正在下降，需要更细的二级标签来区分。",
+     "recommendation": "「Cozy」标签自 2024 年增长超 250%，治愈系供给正在过剩",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Indie Game Joe · 独立游戏推荐",
+     "tags": [
+      "魂系",
+      "棋类",
+      "动作"
+     ],
+     "title": "《Pawned Souls》：用国际象棋规则打魂系，兵只能斜着刺",
+     "en_title": "Dark Souls but you're a single chess pawn",
+     "full_text": "Dark Souls but you're a single chess pawn\n\n- Enemies attack using real chess movements\n- Can only strike diagonally\n- Parry and dodge\n\nGame is Pawned Souls. https://t.co/fbyjkqwS0U",
+     "author": "Indie Game Joe",
+     "date": "2026-10-23",
+     "likes": 6075,
+     "views": 285907,
+     "link": "https://x.com/IndieGameJoe/status/2113763918619541956",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113763660065562624/img/WkKGNEy4nefwOCo2.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2113763918619541956/video/1"
+     },
+     "game_ref": "Pawned Souls",
+     "summary": "《Pawned Souls》把魂系战斗装进棋盘：玩家是一枚兵，只能向前移动、斜向攻击，敌人则按各自棋子的真实走法进攻；含弹反与闪避，清空棋盘即可升变。推文 6075 赞、28.6 万浏览。Steam 页面已上线，由个人开发者 Mika 制作，预计 2027 年 Q3 发售。",
+     "recommendation": "《Pawned Souls》：兵只能斜刺、敌人按棋步围杀，用棋规重写魂系——6075 赞",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Pawned Souls",
+      "genre": "魂系动作 / 策略 / 棋类",
+      "developer": "Mika（个人开发者）",
+      "platforms": [
+       "Steam",
+       "Windows",
+       "macOS",
+       "Linux"
+      ],
+      "price": "未公布",
+      "release_date": "2027年第三季度（预计）",
+      "steam_rating": "暂无评价（未发售）",
+      "steam_url": "https://store.steampowered.com/app/5327580/Pawned_Souls/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5327580/d6c088a1ecd29cc99b172e6cb750894ebd7fcaba/header.jpg?t=1791084674",
+      "youtube_video": null,
+      "description": "【核心玩法】把国际象棋的走法规则直接变成战斗规则：玩家是一枚只能向前一格的兵，攻击范围仅限斜前方，而敌方每个棋子都按真实棋步进攻——马走日、象走斜线、车直线碾压。清空棋盘后触发「升变」，这也是唯一的成长路径。战斗层面保留了魂系的三件套：锁定、翻滚闪避与弹反，节奏偏慢、惩罚偏重。\n\n【设计亮点】规则即关卡设计。棋盘天然提供网格化的空间约束，敌人的威胁范围可被玩家精确预判，于是「站位」比「手速」更重要，这与传统魂系的反应型战斗形成差异。演示里的敌人配置相当于棋局残局，玩家需要先读懂局势再动手。\n\n【美术与氛围】走低多边形暗黑风格，棋盘格与棋子造型被处理成石质废墟与甲胄，视觉方向与「棋局即战场」的概念一致，但素材量看起来仍在早期。\n\n【优势】概念一句话就能讲清，传播成本极低（28.6 万浏览主要靠这一点）；规则驱动的玩法有天然的解谜深度，容易做出「看懂棋局就能赢」的爽感。\n\n【不足】棋盘规则同时是天花板：只有六种敌人行为模式，后期容易靠堆数值维持难度；一旦玩家掌握残局套路，重复可玩性会快速下降。\n\n【综合评价】这是一款「概念先行」的独立作品，价值在于示范了如何把一套人人熟悉的规则改写成动作游戏的底层逻辑。2027 年 Q3 才发售，现阶段更值得当作设计案例观察，而非期待成品完成度。",
+      "why_notable": "把全世界都懂的象棋规则直接当成战斗规则，一句话就能说清，靠概念在 X 上拿到 28.6 万浏览。"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Ninjago · 开发者公布",
+     "tags": [
+      "合作冒险",
+      "解谜",
+      "联机"
+     ],
+     "title": "《Dream Divers》公布：4 人联机潜入超现实梦境，靠「做梦机制」躲怪物",
+     "en_title": "Dream Divers announced",
+     "full_text": "Dream Divers announced\n\nA co-op adventure where you explore surreal dream worlds, recover lost memories & escape terrifying nightmares.\n\n• Solo or 2–4 player online co-op\n• 2-player local split-screen\n• Explore 5 dream worlds filled with puzzles & dangers\n• Evade monsters using dream mechanics\n• Use tools & gadgets to complete missions\n• Proximity voice chat\n• Unlock story content, outfits & emotes",
+     "author": "Ninjago",
+     "date": "2026-10-23",
+     "likes": 812,
+     "views": 29579,
+     "link": "https://x.com/Ninjago9101/status/2113579910254006377",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113575052801376256/img/iaQiIyEA3dIAI6Jn.jpg",
+      "video_url": "https://x.com/Ninjago9101/status/2113579910254006377/video/1"
+     },
+     "game_ref": "Dream Divers",
+     "summary": "Ninjago 公布合作冒险游戏《Dream Divers》：玩家探索超现实梦境世界、找回丢失的记忆并逃离噩梦。支持单人、2–4 人在线合作与本地双人分屏，共 5 个梦境世界，含解谜、以「梦境机制」躲避怪物、工具与道具任务、邻近语音，以及剧情、服装与表情解锁。推文 812 赞、2.9 万浏览。",
+     "recommendation": "《Dream Divers》：4 人联机潜入梦境，靠「做梦机制」躲怪物——812 赞",
+     "enrichment": {
+      "game_name": "Dream Divers",
+      "genre": "合作冒险 / 解谜",
+      "developer": "Ninjago（独立开发者）",
+      "platforms": [
+       "PC（Steam 页面未上线）",
+       "2–4 人在线合作",
+       "本地双人分屏"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "暂未上架",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【核心玩法】2–4 人合作潜入梦境：每个梦境世界是一套独立的超现实空间，玩家要在其中解谜、用工具与道具完成任务，并从噩梦中脱身。关键机制是「用梦境逻辑躲避怪物」——规则不按现实物理走，玩家需要先摸清当前梦境的规则再行动。\n\n【结构】共 5 个梦境世界，每个世界围绕一个主题（记忆、恐惧等）展开，叙事以「找回丢失的记忆」串联，属于轻叙事的关卡驱动结构。\n\n【社交设计】在线 2–4 人 + 本地双人分屏 + 邻近语音，明显是为「和朋友一起被吓一跳」的体验设计；分屏与语音同时保留，说明目标是把客厅与线上两种场景都吃下。\n\n【优势】题材辨识度高，梦境天然允许美术与关卡做非常规处理；合作 + 解谜 + 轻恐怖的组合在 Steam 上仍有空间，邻近语音能显著提升传播素材的趣味性。\n\n【不足】目前只有公布信息，无实机、无 Steam 页面、无发售窗口——完成度与联机稳定性都无从判断；梦境题材若无强关卡设计支撑，很容易变成一次性奇观。\n\n【综合评价】概念讨喜、结构清楚，但证据链只到「公布」这一步。建议先关注后续实机与 Demo，而不是现在就把它当成确定产品。",
+      "why_notable": "梦境题材 + 4 人联机 + 邻近语音，是这类合作解谜最容易出传播素材的组合；但目前仅有公布信息。"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Niche Gamer · 新游报道",
+     "tags": [
+      "开放世界",
+      "RPG",
+      "免费游玩"
+     ],
+     "title": "《Ordinary Oddness》：今敏《红辣椒》式开放世界 RPG，人与神话生物共居云上之城",
+     "en_title": "Ordinary Oddness is a new open-world RPG reminiscent of Satoshi Kon's Paprika",
+     "full_text": "Ordinary Oddness is a new open-world RPG reminiscent of Satoshi Kon's Paprika: https://t.co/tnwppgxzA8 https://t.co/eyjfJtMFY4",
+     "author": "Niche Gamer",
+     "date": "2026-10-24",
+     "likes": 8,
+     "views": 1945,
+     "link": "https://x.com/nichegamer/status/2113976492988207499",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2113976402907160576/pu/img/FmYSs6k0pam4y87X.jpg",
+      "video_url": "https://x.com/nichegamer/status/2113976492988207499/video/1"
+     },
+     "game_ref": "Ordinary Oddness",
+     "summary": "Niche Gamer 报道开放世界 RPG《Ordinary Oddness》，称其气质接近今敏的《红辣椒》。Steam 页面描述：在「Albinox 审判」之后，人类与 Mythoids 共居于悬空于云海之上的城市 Elysian Skies，共享同一套日常规则；标签含动作、冒险、MMO、RPG、模拟，免费游玩，发售日未定，开发商为 COSMICPUP STUDIO。",
+     "recommendation": "《Ordinary Oddness》：《红辣椒》式开放世界，人与神话生物共居云上之城",
+     "enrichment": {
+      "game_name": "Ordinary Oddness",
+      "genre": "开放世界 RPG / 动作冒险",
+      "developer": "COSMICPUP STUDIO",
+      "platforms": [
+       "Steam",
+       "Windows"
+      ],
+      "price": "免费游玩",
+      "release_date": null,
+      "steam_rating": "暂无评价（未发售）",
+      "steam_url": "https://store.steampowered.com/app/3988530/Ordinary_Oddness/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3988530/53734ef084482ea3b92d7c6bce37793640a1cbd9/header.jpg?t=1792603330",
+      "youtube_video": null,
+      "description": "【世界观】Steam 页面给出的设定是：在「Albinox 审判」之后，人类与被称为 Mythoids 的神话生物共同生活在悬空于云海之上的城市 Elysian Skies，两者共享同一套日常规则——「Nothing-Stays-Oddinary」是它给自己定的调子。\n\n【核心玩法】官方标签同时挂了动作、冒险、MMO、RPG、模拟与免费游玩，指向一个「城市生活 + 开放世界探索」的混合体：玩家在云上城市里与两类居民共处，Mythoids 可能同时是邻居、任务发布者与战斗对象。\n\n【美术与气质】Niche Gamer 用今敏的《红辣椒》作比，意味着视觉上会有强烈的超现实与梦境感，现实街景与怪诞生物并置；这类美术在开放世界里成本很高，也是它最值得观察的部分。\n\n【商业模式】免费游玩 + MMO 标签，说明它更可能走长线运营而非买断制，这对内容产能与留存设计要求很高。\n\n【优势】题材与美术辨识度极高，「人与神话生物做邻居」的设定在开放世界品类里很少见；F2P 降低了尝试门槛。\n\n【不足】信息极少：无实机、无发售窗口、无玩法细节，标签堆得越多越难判断真实形态；超现实美术在长线运营下的产能是最大风险。\n\n【综合评价】概念与美术方向值得关注，但目前更像一支「气质预告」。在实机出现前，不建议把它当成确定产品来规划。",
+      "why_notable": "把今敏式超现实气质放进「人与神话生物共居」的开放世界，且是免费游玩 + MMO 结构，方向少见。"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Indie Game Joe · 独立游戏推荐",
+     "tags": [
+      "机甲",
+      "刷宝",
+      "Roguelike"
+     ],
+     "title": "《Frame of Suffering》：机甲版暗黑，切换机甲与战斗框架刷地牢",
+     "en_title": "This indie dev is making Diablo but with Mechs",
+     "full_text": "This indie dev is making Diablo but with Mechs\n\n- Switch between mech and combat frame\n- Procedurally generated and hand-crafted dungeons\n- Mech visually changes as you find more weapons and armour\n\nGame is Frame of Suffering. Would you play this? https://t.co/OP9V40DKoG",
+     "author": "Indie Game Joe",
+     "date": "2026-10-23",
+     "likes": 1053,
+     "views": 36757,
+     "link": "https://x.com/IndieGameJoe/status/2113677883541467192",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113675971869949952/img/LpGa6xNAj46a_rey.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2113677883541467192/video/1"
+     },
+     "summary": "《Frame of Suffering》把暗黑式刷宝放进科幻地牢：玩家可在机甲与战斗框架之间切换，地牢由程序生成与手工关卡混合构成，机甲外观会随获得的武器与护甲变化。Steam 页面已上线，由 Heavy Shield Games 开发，预计 2027 年 Q4 发售。",
+     "recommendation": "《Frame of Suffering》：机甲版暗黑，装备直接改变机甲外观",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Niche Gamer · 新游报道",
+     "tags": [
+      "赛博朋克",
+      "建造",
+      "90年代动画"
+     ],
+     "title": "《Ultrapolis》：90 年代赛博动画风城市模型玩具，百万种建筑组合",
+     "en_title": "Ultrapolis is a cyberpunk builder game inspired by 90s anime like Akira and GiTS",
+     "full_text": "Ultrapolis is a cyberpunk builder game inspired by 90s anime like Akira and GiTS: https://t.co/cyrEm45t05 https://t.co/OFG3uvjZ4V",
+     "author": "Niche Gamer",
+     "date": "2026-10-24",
+     "likes": 9,
+     "views": 1374,
+     "link": "https://x.com/nichegamer/status/2113995994073342395",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2113995918609432576/pu/img/zwPRoGc1YUmBwkc3.jpg",
+      "video_url": "https://x.com/nichegamer/status/2113995994073342395/video/1"
+     },
+     "summary": "《Ultrapolis》是一款受《阿基拉》《攻壳机动队》等 90 年代动画启发的赛博朋克城市建造游戏：官方描述为「拥有数百万种可能建筑的城市立体模型」，没有经营管理层，玩家只做布局与设计。Steam 页面已上线，开发者 mflux，发售日未定。",
+     "recommendation": "《Ultrapolis》：90 年代赛博动画风，只做设计不做经营的城市模型",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Niche Gamer · 新游报道",
+     "tags": [
+      "创意题材",
+      "冒险",
+      "竞速"
+     ],
+     "title": "《Become》：你是一颗精子，参加生命中最重要的一场赛跑",
+     "en_title": "Become is a new game where you're a sperm in life's greatest race",
+     "full_text": "Become is a new game where you're a sperm in life's greatest race: https://t.co/p2SE3okolG https://t.co/1nxn2sm84A",
+     "author": "Niche Gamer",
+     "date": "2026-10-24",
+     "likes": 4,
+     "views": 1558,
+     "link": "https://x.com/nichegamer/status/2114010041564925980",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2114009997696815104/pu/img/-sp1S20Efpsf_rlC.jpg",
+      "video_url": "https://x.com/nichegamer/status/2114010041564925980/video/1"
+     },
+     "summary": "《Become》把「生命最初的竞赛」直接做成玩法：玩家扮演一颗精子，参与这场字面意义上的赛跑。题材极端猎奇，属于靠概念本身制造传播的独立项目，具体玩法与平台信息仍然有限。",
+     "recommendation": "《Become》：扮演一颗精子参加「生命中最重要的一场赛跑」",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "jockie · 开发者公布",
+     "tags": [
+      "沙盒生存",
+      "建造",
+      "独立开发"
+     ],
+     "title": "《Direland》愿望单突破 8 万：沙盒生存建造，主打巨型 Boss",
+     "en_title": "Direlandのウィッシュリスト登録者数が 8万人 を突破しました！",
+     "full_text": "Direlandのウィッシュリスト登録者数が 8万人 を突破しました！ありがとうございます！\n100万人までいけーーーー！！\n#indiedev https://t.co/s7aEJAimR3",
+     "author": "jockie - Direland",
+     "date": "2026-10-24",
+     "likes": 649,
+     "views": 21264,
+     "link": "https://x.com/KAIJIUUUUU/status/2113929091770687521",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113927468092682241/img/R4G5vsP2STetqBEc.jpg",
+      "video_url": "https://x.com/KAIJIUUUUU/status/2113929091770687521/video/1"
+     },
+     "summary": "开发者 jockie 宣布沙盒生存建造游戏《Direland》Steam 愿望单突破 8 万人。Steam 描述为「广阔世界中的沙盒生存建造」：探索荒野、击败怪物、采集素材、挑战巨型 Boss。发售日未定，由开发者 KAIJIUUUUU 独立制作。",
+     "recommendation": "《Direland》愿望单破 8 万：沙盒生存建造，主打巨型 Boss",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "Niche Gamer · 新游报道",
+     "tags": [
+      "手绘",
+      "ARPG",
+      "复古"
+     ],
+     "title": "《Last Moon》：手绘风 ARPG，Demo 迎来更新",
+     "en_title": "Last Moon is a gorgeously hand-drawn ARPG inspired by genre classics",
+     "full_text": "Last Moon is a gorgeously hand-drawn ARPG inspired by genre classics: https://t.co/hQIz6RZBp9 https://t.co/xsBdNw62SV",
+     "author": "Niche Gamer",
+     "date": "2026-10-23",
+     "likes": 66,
+     "views": 5032,
+     "link": "https://x.com/nichegamer/status/2113751681309528080",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2113751639869841409/pu/img/H-a9iJFBHAoNcX1R.jpg",
+      "video_url": "https://x.com/nichegamer/status/2113751681309528080/video/1"
+     },
+     "summary": "Niche Gamer 报道手绘风 ARPG《Last Moon》，称其受类型经典启发、画面精美；此次为 Demo 更新，说明项目仍在打磨阶段，尚未公布发售窗口。",
+     "recommendation": "《Last Moon》：手绘风复古 ARPG，Demo 已更新",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 06",
+     "source": "Leafborn · 开发者分享",
+     "tags": [
+      "细节驱动",
+      "Demo",
+      "独立开发"
+     ],
+     "title": "《Leafborn》：为一千小时的落叶细节做一款游戏",
+     "en_title": "We spent so much time working on thousands of seemingly insignificant details to make this game good.",
+     "full_text": "We spent so much time working on thousands of seemingly insignificant details to make this game good.\n\nWe thought about how every leaf should move, how leaves affect each other, how light passes through them, how they scatter when the character lands... Sometimes we'd spend days on a single animation. There were nights when getting something to finally work kept us awake, and times when nothing went as planned and we deleted everything and started over in tears.\n\nWe probably spent over 1.000 hours playing our own game just to make the character feel both responsive and smooth.\n\nThen we started letting people play Leafborn for the first time.\n\nThey didn't care about the leaves. They just said the game felt good. They didn't even notice most of the details we'd worked so hard on...\n\n4 sec later, they started beating up robots and didn't stop until the game was over.\n\nAll those things we'd spent days working on didn't really matter to them.\n\nThat's when we realized that we could spend an entire week thinking about a single detail, and the player would experience it for a few seconds and move on.\n\nI guess that's one of the hardest parts of game development. Something that matters so much to you can be just a few seconds of someone else's experience.",
+     "author": "Leafborn | Play Demo on Steam",
+     "date": "2026-10-24",
+     "likes": 180,
+     "views": 4794,
+     "link": "https://x.com/LeafbornGame/status/2113908056383684683",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113906547470241792/img/8cN4IXJWu4sxPbjp.jpg",
+      "video_url": "https://x.com/LeafbornGame/status/2113908056383684683/video/1"
+     },
+     "summary": "《Leafborn》团队发文谈开发投入：为让游戏「好」，他们在成千上万个看似无关紧要的细节上花了大量时间——单片叶子怎么动、叶子之间怎么互相影响、光如何穿过、角色落地时叶子如何散开，单个动画常要打磨数天，累计投入超过 1000 小时。Steam Demo 现已可玩。",
+     "recommendation": "《Leafborn》：单片叶子怎么动都要磨几天，投入超 1000 小时做细节",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Heartbeast · 开发者分享",
+     "tags": [
+      "Godot",
+      "2.5D",
+      "像素"
+     ],
+     "title": "Godot 的 GridMap + Sprite3D：像素美术也能快速搭出 2.5D 立体关卡",
+     "en_title": "Godot's GridMap and Sprite3D nodes make it so easy to set up a pixel art 2.5D world.",
+     "full_text": "Godot's GridMap and Sprite3D nodes make it so easy to set up a pixel art 2.5D world. https://t.co/4CBa1JRRme",
+     "author": "Heartbeast",
+     "date": "2026-10-22",
+     "likes": 1514,
+     "views": 36879,
+     "link": "https://x.com/uheartbeast/status/2113356058119070112",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/tweet_video_thumb/HVQl0cVaYAAT2eK.jpg",
+      "video_url": "https://x.com/uheartbeast/status/2113356058119070112/video/1"
+     },
+     "summary": "开发者 Heartbeast 演示用 Godot 的 GridMap 与 Sprite3D 节点搭建像素风 2.5D 世界：用网格拼装关卡几何，再用 Sprite3D 把 2D 像素素材立体化，配合相机与光照即可得到有纵深、有遮挡的像素场景。推文 1514 赞、3.7 万浏览。",
+     "analysis": "这条的价值是「美术成本换工程成本」：不需要 3D 建模师，用现成像素素材也能做出有高度与遮挡的关卡。Godot 把 GridMap 与 2.5D 渲染做进核心节点，等于把过去要写插件或自研管线的事变成默认能力；相比 Unity 的 Tilemap + 自定义 Shader 方案，试错成本明显更低。适合像素风、俯视角、轻量 3D 项目做技术选型时参考。",
+     "recommendation": "Godot GridMap + Sprite3D：不建模也能搭出像素风 2.5D 关卡——1514 赞"
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "80 LEVEL · 技术访谈",
+     "tags": [
+      "3D生成",
+      "Blender",
+      "Unity"
+     ],
+     "title": "Tripo P2.0 + Astra 接入 Blender/Unity：3D 原生大模型进入美术工作流",
+     "en_title": "The @tripoai team explains how its latest 3D-native foundation model, P2.0, and Astra streamline 3D creation with integrations in Blender and Unity.",
+     "full_text": "The @tripoai team explains how its latest 3D-native foundation model, P2.0, and Astra streamline 3D creation with integrations in Blender and Unity, while discussing quality control and the role of human-led art direction.\n\nFull details: https://t.co/aevJswS7zD https://t.co/SSih7nvidc",
+     "author": "80 LEVEL",
+     "date": "2026-10-23",
+     "likes": 168,
+     "views": 10834,
+     "link": "https://x.com/80Level/status/2113699563173224792",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113699539211169792/img/fRbEb4AmxlyLU6q0.jpg",
+      "video_url": "https://x.com/80Level/status/2113699563173224792/video/1"
+     },
+     "summary": "80 LEVEL 刊出 Tripo 团队访谈：其 3D 原生基础模型 P2.0 与 Astra 通过 Blender、Unity 插件接入既有管线，团队重点谈及质量控制，以及「人类主导美术方向」在生成流程中的角色——生成资产需经人工筛选与修整才能进生产。",
+     "analysis": "3D 生成的关键从来不是「能不能出模型」，而是「能不能进管线」：插件化接入 Blender/Unity、把审核环节写进流程，说明这类工具开始按生产工具而非玩具来设计。结合同日 Kimi 直出 GLB 的演示，图生 3D 的竞争点已从效果转向资产可用性——拓扑、材质规范、命名与版本管理会变成新的门槛。",
+     "recommendation": "Tripo P2.0/Astra 接入 Blender 与 Unity，3D 生成开始进生产管线",
+     "featured": true
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**宫本茂给 AI 争论提供了最克制的一种答案**\n任天堂的宫本茂获日本文化勋章后谈 AI，用打字机到文字处理机的演进作比：工具接管技术环节后，被看见的是判断力。他提醒「工作本身太愉快，容易让人误以为我做出来的东西不错」，靠复制粘贴拼出来的设计不会长久。同一天还有两条 AI 生产向的消息：Kimi K3.1 Pro 看图 5 分钟出可用 GLB、成本约 0.6 美元；独立开发者用 Opus 5.5 把整套技能 Shader 推倒重写。\n\n**Xbox 的重组还在继续**\n首任 COO Helen Chiang 上任三个月即离职，Eurogamer 引述知情人士称其因「政策违规」被解雇（官方未确认）。同一周，PlayStation 之父久夛良木健称玩家抵触光盘停产是「心态问题」，PEGI 则把含开箱机制的游戏分级上调到 16 岁——平台、监管、用户三方对「拥有」的定义正在分叉。\n\n**新游里最值得看的是「规则」**\n《Pawned Souls》把国际象棋走法变成魂系战斗规则，《Dream Divers》用梦境逻辑替代物理规则，《Ordinary Oddness》把人与神话生物放进同一座云上城市。概念越清楚的项目，传播成本越低。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
