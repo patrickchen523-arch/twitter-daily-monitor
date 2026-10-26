@@ -1,0 +1,450 @@
+{
+ "date": "2026-10-26",
+ "meta": {
+  "raw_count": 157,
+  "filtered_count": 151,
+  "selected_count": 12,
+  "crawl_time": "2026-10-26 09:31"
+ },
+ "lede": "Dessa 发布纯语音训练的全双工模型，消费级显卡可跑；《不朽遗志》7 天回本，被取消的《质量效应》新作多时间线设计曝光；英伟达与 Scenario 合计放出 3800+ 个免费 3D 资产。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Dessa 全语音训练全双工模型，消费级显卡可跑——410 万浏览"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "《不朽遗志》7 天回本：40 美元定价 + 避开拥挤档期 + Game Pass 首发"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 1,
+   "hook": "《多少兄弟？》卖出 30 万份：54 元的荒诞自走棋靠更新做长尾"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Dessa 全语音训练全双工模型，消费级显卡可跑\nr/opensource 封禁所有用 AI 的项目，按此规则 Linux 也违规\nFlux 3 + Tripo 3.1 + Atlas：概念图到可动角色，手指关节可自动绑定"
+  },
+  {
+   "id": "industry",
+   "text": "《不朽遗志》7 天回本，40 美元定价避开 3A 战场\n被取消的《质量效应》新作原计划按前作选择生成时间线，请愿破 18.7 万\n《赛博朋克 2077》新更新加入跨平台 Mod 与《边缘行者》任务\n《艾尔登法环》电影预算近 2 亿美元，成 A24 最贵"
+  },
+  {
+   "id": "indie",
+   "text": "《界外狂潮》新玩法 Farlands 11 月 5 日免费抢先体验\n《多少兄弟？》卖出 30 万份并推大更新\n《卡德洞窟》资料片 Diaspora 定档 12 月 9 日抢先体验"
+  },
+  {
+   "id": "tools",
+   "text": "英伟达 2500 + Scenario 1300 个免费 3D 资产，39GB 含 Blender 源文件\n94 个 Blender 美术 Skill 开源，一句需求自动串到引擎导出"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Ragavan Thurairatnam · 模型发布",
+     "tags": [
+      "语音模型",
+      "全双工",
+      "本地部署"
+     ],
+     "title": "Dessa 发布纯语音训练的全双工模型：消费级显卡可跑，称「语音的 GPT-3 时刻」",
+     "en_title": "We made the first AI model you can have a realistic conversation with that was trained entirely on speech!",
+     "full_text": "We made the first AI model you can have a realistic conversation with that was trained entirely on speech!\n\nDessa is a full-duplex speech-to-speech model that you can run on consumer GPUs.\n\nThis is a GPT3 moment for speech. https://t.co/XVD8sSyJn8",
+     "author": "Ragavan Thurairatnam",
+     "date": "2026-10-23",
+     "likes": 16248,
+     "views": 4107408,
+     "link": "https://x.com/RagavanThurair/status/2113671324400861645",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113669735107727360/img/Xcexkww8nsjs9Hii.jpg",
+      "video_url": "https://x.com/RagavanThurair/status/2113671324400861645/video/1"
+     },
+     "summary": "Dessa 团队（Ragavan Thurairatnam）发布 Dessa：一个完全以语音数据训练、支持全双工（边说边听）的语音到语音模型，可直接在消费级 GPU 上运行。作者称这是「语音领域的 GPT-3 时刻」。推文 1.6 万赞、410 万浏览，附演示视频。",
+     "analysis": "全双工、端到端、可在本地卡上跑，这三点同时成立，意味着语音交互第一次有希望摆脱「ASR→LLM→TTS」三段式带来的延迟与语气丢失。对游戏最直接的影响是 NPC 对话：不用再为每句台词录配音，也不用接受 1-2 秒的回合制延迟，情绪与打断都能保留。真正的门槛会从「能不能说话」转到「角色设定与对话边界怎么控」，也就是叙事与状态机的工作量。",
+     "recommendation": "Dessa 全语音训练全双工模型，消费级显卡可跑，称「语音的 GPT-3 时刻」——410 万浏览",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "chasm · 社区争议",
+     "tags": [
+      "开源",
+      "AI 治理",
+      "社区规则"
+     ],
+     "title": "r/opensource 封禁一切使用 AI 的项目：按此规则，Linux 内核也算违规",
+     "en_title": "r/opensource just banned any project that uses AI.",
+     "full_text": "r/opensource just banned any project that uses AI.\n\nBy their own rule, that means the biggest open source project of all time, Linux, is now banned too. The kernel already accepts AI-assisted code.\n\nThis is the real AI psychosis. https://t.co/rdrs7bfzJB",
+     "author": "chasm",
+     "date": "2026-10-25",
+     "likes": 4738,
+     "views": 158745,
+     "link": "https://x.com/chasmmmmmmmmmmm/status/2114298704253575338",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVb1LwkXgAAEV81.jpg"
+     },
+     "summary": "Reddit 的 r/opensource 版块宣布禁止任何使用 AI 的项目。发帖者指出这条规则的荒谬之处：Linux 内核已经接受 AI 辅助编写的代码，按同一标准，史上最大的开源项目 Linux 本身也在被禁之列。推文 4738 赞、15.9 万浏览。",
+     "analysis": "开源社区正在从「工具中立」转向「来源审查」，这会传导到游戏开发：很多引擎插件、美术工具、shader 库都托管在 GitHub 上，一旦维护者被贴上「含 AI」标签，下游商用项目的合规审查成本会明显上升。对团队的实际建议是给第三方依赖留一份来源说明，尤其是会随包分发的运行时代码。",
+     "recommendation": "r/opensource 封禁所有使用 AI 的项目，按同一规则 Linux 内核也在禁令之内"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "黑箱之外 · 工作流拆解",
+     "tags": [
+      "3D 管线",
+      "自动绑定",
+      "Unreal"
+     ],
+     "title": "单人 3D 角色全流程被 AI 串起来：Flux 3 出图、Tripo 3.1 建模、Atlas 自动绑骨动画、直进 UE",
+     "en_title": "一个人开发一款 3D 游戏，可能很快就不需要自己制作角色模型了。",
+     "full_text": "一个人开发一款 3D 游戏，可能很快就不需要自己制作角色模型了。\n\nAtlas 刚展示了一条很有意思的 AI 工作流。\n\n先用 Flux 3 生成角色概念图，Tripo 3.1 生成高精度 3D 模型，再由 Blender Agent 优化模型、Atlas 自动绑定骨骼和制作动画，最后导入 Unreal Engine，连披风的布料物理效果都加上了。\n\n最让我感兴趣的是骨骼绑定。\n\n以前 AI 能生成漂亮的 3D 角色，但要让它真正跑起来、做动作，仍然需要大量人工处理。现在连手指关节都开始自动生成了。\n\n演示中的动作还有些生硬，脚底滑动和穿模问题也没完全解决。\n\n但我觉得这条路线很值得关注。\n\n当 AI 可以批量生成游戏角色、场景、道具，再加上越来越成熟的 AI 编程工具，独立游戏开发的门槛可能会下降得比我们想象中更快。\n\n未来最稀缺的，也许不再是把游戏做出来的技术，而是真正好玩的游戏创意。\n回复有中有完整工作流地址。 https://t.co/r7R52IEZyO",
+     "author": "黑箱之外",
+     "date": "2026-10-25",
+     "likes": 133,
+     "views": 6709,
+     "link": "https://x.com/BeyondTheBoxCN/status/2114291539757166883",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2114014920991768576/img/myKVlG3aU3Rx3wrr.jpg",
+      "video_url": "https://x.com/BeyondTheBoxCN/status/2114291539757166883/video/1"
+     },
+     "summary": "黑箱之外拆解了一条 AI 角色管线：Flux 3 生成角色概念图，Tripo 3.1 生成高精度 3D 模型，Blender Agent 优化模型，Atlas 自动绑定骨骼并制作动画，最后导入 Unreal Engine，连披风的布料物理也补上了。作者认为关键突破是骨骼绑定——连手指关节都开始自动生成。同时指出演示仍有动作生硬、脚底滑动、穿模等问题。推文 133 赞、6709 浏览。",
+     "analysis": "绑骨与动画是 3D 角色成本里最贵、最依赖外包的一环，也是过去 AI 生成模型「好看但不能动」的断点。这条链路一旦稳定，独立团队的角色预算结构会变：概念、建模、绑定、动画从四次采购压成一次流程，剩下的钱会流向玩法与关卡。但演示暴露的脚滑与穿模提醒我们，验收标准必须写在流程里，否则只是把返工提前。",
+     "recommendation": "Flux 3 + Tripo 3.1 + Atlas 串起「概念图到可动角色」，手指关节已能自动绑定",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 商业表现",
+     "tags": [
+      "类魂",
+      "AA 定价",
+      "回本"
+     ],
+     "title": "《不朽遗志》7 天回本：《幽灵行者》团队用 40 美元定价绕开 3A 战场",
+     "en_title": "First-person Soulslike Valor Mortis is already making a profit after seven days.",
+     "full_text": "First-person Soulslike Valor Mortis is already making a profit after seven days. https://t.co/0uAjIuGiXX https://t.co/sFfkINSsLF",
+     "author": "Eurogamer",
+     "date": "2026-10-25",
+     "likes": 181,
+     "views": 12001,
+     "link": "https://x.com/eurogamer/status/2114258413530075336",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVda0pyXIAAtfzP.jpg"
+     },
+     "summary": "Eurogamer 报道，One More Level（《幽灵行者》团队）的第一人称类魂《Valor Mortis / 不朽遗志》发售 7 天即收回制作成本，发行方为 Lyrical Games。游戏 10 月 13 日上线 PC、PS5、Xbox Series，首发进 Game Pass，定价 40 美元（Steam 国区 168 元，2264 条评价）。团队曾主动把原定 9 月 24 日的档期推后，避开了《Control Resonant》与《Silent Hill Townfall》，并公开说明定价是按「这个秋天太挤」定的。",
+     "analysis": "这是一份可复制的 AA 商业样本：40 美元定价 + 主动避开拥挤档期 + Game Pass 首发，三件事一起做，才换来 7 天回本。它同时反驳了两个常见判断——首发进订阅制不等于放弃销量，小体量类魂也不必靠 3A 规模去拼。对国内中腰部团队，最值得抄的不是玩法，而是「按竞争密度调整档期与价格」这条纪律。",
+     "recommendation": "《不朽遗志》7 天回本：40 美元定价 + 主动避开拥挤档期 + Game Pass 首发",
+     "game_ref": "Valor Mortis",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "PC Gamer · IP 动态",
+     "tags": [
+      "质量效应",
+      "BioWare",
+      "设计爆料"
+     ],
+     "title": "被取消的《质量效应》新作：原计划按前作选择「生成」时间线，请愿已破 18.7 万",
+     "en_title": "Mass Effect 5 would have let players generate timelines based on their choices in previous games",
+     "full_text": "Mass Effect 5 would have let players generate timelines based on their choices in previous games https://t.co/I6tjYNzwJN",
+     "author": "PC Gamer",
+     "date": "2026-10-25",
+     "likes": 345,
+     "views": 25158,
+     "link": "https://x.com/pcgamer/status/2114328164096979277",
+     "media": null,
+     "summary": "PC Gamer 报道，被 EA 取消的《质量效应》新作原本计划让玩家根据前作中的选择「生成」时间线。Polygon 另采访了该项目负责人，他披露了这套被称为「Mass Effect Universe」的多重宇宙系统，并称其「看起来非常惊艳」。同一天 TheGamer 报道，要求 EA 保留《质量效应》的请愿签名达到 5 万并获得剧集主创支持；Eurogamer 页面显示签名已增至 18.7 万。",
+     "analysis": "「按存档生成时间线」是 BioWare 一直想解决的老问题：预设分支的排列组合成本会指数级爆炸，程序化生成看似是唯一出路。项目被取消后，这套设计反而成了公开的设计遗产，值得存档继承类项目参考。18.7 万签名对 EA 没有法律约束力，但它会影响 IP 估值与后续授权的谈判气氛——粉丝动员已经变成一种可量化的资产。",
+     "recommendation": "被取消的《质量效应》新作原计划按前作选择生成时间线，请愿签名已破 18.7 万",
+     "game_ref": "Mass Effect",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 版本更新",
+     "tags": [
+      "赛博朋克",
+      "跨平台 Mod",
+      "长线运营"
+     ],
+     "title": "《赛博朋克 2077》新更新：双持武器、跨平台 Mod、动画联动任务",
+     "en_title": "CD Projekt Red details new Cyberpunk 2077 update - adding dual-wielding, cross-platform mods, Edgerunners story quests, and more.",
+     "full_text": "CD Projekt Red details new Cyberpunk 2077 update - adding dual-wielding, cross-platform mods, Edgerunners story quests, and more. https://t.co/veUjCDPYE4 https://t.co/OMZSzfZ4AW",
+     "author": "Eurogamer",
+     "date": "2026-10-25",
+     "likes": 27,
+     "views": 6463,
+     "link": "https://x.com/eurogamer/status/2114243314446692855",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVdNFxBWYAAHcLE.jpg"
+     },
+     "summary": "CD Projekt Red 公布《赛博朋克 2077》新一轮更新内容：加入双持武器、跨平台 Mod 支持，以及与动画《赛博朋克：边缘行者》联动的剧情任务等。推文 6463 浏览。",
+     "analysis": "「跨平台 Mod」是这条更新里最值得注意的一项：主机端长期是 Mod 的禁区，一旦官方提供跨平台通路，等于把 PC 社区的创作力接进主机生态，也意味着版本兼容与内容审核要由发行方承担。对单机长线运营的启示是，动画/影视联动已经从营销动作变成内容更新的一部分，IP 联动正在被写进版本节奏。",
+     "recommendation": "《赛博朋克 2077》新更新加入双持、跨平台 Mod 与《边缘行者》联动任务",
+     "game_ref": "Cyberpunk 2077"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · IP 影视化",
+     "tags": [
+      "艾尔登法环",
+      "影视改编",
+      "A24"
+     ],
+     "title": "《艾尔登法环》电影预算近 2 亿美元，成 A24 史上最贵项目",
+     "en_title": "Elden Ring movie has a budget of nearly $200 million",
+     "full_text": "Elden Ring movie has a budget of nearly $200 million\nhttps://t.co/14lvk5M96n https://t.co/OLJbUhoxhA",
+     "author": "Eurogamer",
+     "date": "2026-10-25",
+     "likes": 7,
+     "views": 1815,
+     "link": "https://x.com/eurogamer/status/2114396337802215915",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVfYPuBWcAAWSpi.jpg"
+     },
+     "summary": "Eurogamer 报道，《艾尔登法环》改编电影的预算接近 2 亿美元。Polygon 同日指出，这部影片已经悄然成为 A24 历史上最贵的一部电影——而 A24 一向以低成本作者电影著称。",
+     "analysis": "2 亿美元把游戏改编从「授权变现」推到了「共同投资」的量级：预算一旦进入 A 级区间，IP 方就不可能只收授权费，必然深度参与制作与分成。对国内厂商的参照是，影视化不再是周边生意，而是一次需要重新评估风险敞口的资本决策；同时它也说明「魂系叙事」这种弱台词、强氛围的 IP 在影视端反而更容易被作者导演接手。",
+     "recommendation": "《艾尔登法环》电影预算近 2 亿美元，成为 A24 史上最贵项目",
+     "game_ref": "Elden Ring"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Aerial · 新内容公布",
+     "tags": [
+      "F2P",
+      "PvPvE",
+      "搜打撤"
+     ],
+     "title": "《界外狂潮》新玩法 Farlands：11 月 5 日免费抢先体验，PvPvE 运货与背叛",
+     "en_title": "FragPunk: Farlands PvPvE Mode Arrives Nov 5",
+     "full_text": "FragPunk: Farlands PvPvE Mode Arrives Nov 5\n\n- Free-to-play Early Access on Nov 5\n- Take on missions & deliver valuable cargo\n- Changing weather & migrating resources\n- Fight monsters & other players\n- Team up or betray others for loot\n- Upgrade gear, vehicles & base\n- Coming to PC & consoles\n\nCould this mode help the game?",
+     "author": "Aerial",
+     "date": "2026-10-25",
+     "likes": 275,
+     "views": 20194,
+     "link": "https://x.com/AerialZer0/status/2114337524042629577",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2114336852647813120/img/UEpt08i95FDdzPNK.jpg",
+      "video_url": "https://x.com/AerialZer0/status/2114337524042629577/video/1"
+     },
+     "summary": "《界外狂潮（FragPunk）》公布 PvPvE 新玩法 Farlands：11 月 5 日以免费抢先体验形式上线。玩法包含运送贵重货物、动态天气与迁徙资源、与怪物和其他玩家交战、组队或背叛抢夺战利品，以及装备、载具与基地升级，登陆 PC 与主机。推文 2 万浏览。",
+     "analysis": "",
+     "recommendation": "《界外狂潮》11 月 5 日上线 PvPvE 玩法 Farlands：运货、天气变化、可组队也可背叛",
+     "game_ref": "FragPunk",
+     "enrichment": {
+      "game_name": "FragPunk",
+      "genre": "FPS / 卡牌增益 / 英雄射击",
+      "developer": "Bad Guitar Studio（网易）",
+      "platforms": [
+       "Steam",
+       "PS5",
+       "Xbox Series",
+       "PC"
+      ],
+      "price": "免费游玩",
+      "release_date": "已上线 · 2025 年 3 月 6 日",
+      "steam_rating": "1,613 条评价",
+      "steam_url": "https://store.steampowered.com/app/2943650/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2943650/17b267caa13fc8592908b3d1e263fb77fa8a3958/header_alt_assets_9_schinese.jpg?t=1792640231",
+      "youtube_video": null,
+      "description": "【核心玩法】5v5 英雄射击，核心差异点是每局开局可抽取「卡片」改变规则——从弹道、视野到复活机制都能被改写，用卡牌制造每局不同的战术前提。\n\n【本次新增】Farlands 转到 PvPvE 搜打撤：玩家接任务运送贵重货物，途中要应对动态天气、会迁徙的资源点、怪物与其他玩家，既可以组队也可以临时背叛抢货；装备、载具与基地可逐级升级。11 月 5 日以免费抢先体验形式上线，覆盖 PC 与主机。\n\n【为什么值得关注】《界外狂潮》本体已经验证了卡牌规则改写的乐趣，Farlands 是把这套「变量」放进开放撤离场景的尝试。对国内团队更有参考价值的是运营节奏：本体上线一年半后，用免费 PvPvE 模式承接射击品类的搜打撤需求，而不是另起一个新项目。\n\n【风险】搜打撤是极度内卷的赛道，玩家对「掉落—撤离—成长」的手感要求很高；PvPvE 与卡牌规则叠加后，局内信息量可能过载。抢先体验阶段的口碑将决定这个模式是长期留在主线，还是一次性活动。",
+      "why_notable": "本体运营一年半后，用免费 PvPvE 模式切入搜打撤赛道——11 月 5 日抢先体验。",
+      "pcu": "暂未列入当日 Steam 热玩 Top 500",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "免费游玩，无销量口径",
+      "gi_summary": "「卡牌改写规则」套「英雄射击」，网易 Bad Guitar Studio 开发，本体免费。"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Niche Gamer · 销量里程碑",
+     "tags": [
+      "自走棋",
+      "肉鸽",
+      "销量"
+     ],
+     "title": "《多少兄弟？》卖出 30 万份：把「兄弟养成」做成肉鸽自走棋，同步推大更新",
+     "en_title": "Outrageous autobattler How Many Dudes celebrates 300K copies sold w/a big update",
+     "full_text": "Outrageous autobattler How Many Dudes celebrates 300K copies sold w/a big update: https://t.co/tqaGalCV3H https://t.co/FJyfLEG5Cc",
+     "author": "Niche Gamer",
+     "date": "2026-10-25",
+     "likes": 9,
+     "views": 1695,
+     "link": "https://x.com/nichegamer/status/2114344693295157302",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2114344650446102528/pu/img/MuiX0-2ySg2gZb_f.jpg",
+      "video_url": "https://x.com/nichegamer/status/2114344693295157302/video/1"
+     },
+     "summary": "Niche Gamer 报道，肉鸽自走棋《多少兄弟？（How Many Dudes?）》销量突破 30 万份，并同步推出大型更新。游戏由《Crashlands》团队 Butterscotch Shenanigans 开发，7 月 30 日发售，Steam 国区 54 元，3208 条评价。",
+     "analysis": "",
+     "recommendation": "《多少兄弟？》卖出 30 万份：54 元的荒诞自走棋，靠更新把长尾做起来",
+     "game_ref": "How Many Dudes",
+     "featured": true,
+     "enrichment": {
+      "game_name": "How Many Dudes?",
+      "genre": "肉鸽 / 自走棋 / 休闲策略",
+      "developer": "Butterscotch Shenanigans（《Crashlands》团队）",
+      "platforms": [
+       "Steam",
+       "Windows"
+      ],
+      "price": "¥54（国区）",
+      "release_date": "已发售 · 2026 年 7 月 30 日",
+      "steam_rating": "3,208 条评价",
+      "steam_url": "https://store.steampowered.com/app/3934270/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3934270/4109803407c1f5e78c3a3d721478a7db0b10422e/header_schinese.jpg?t=1791487814",
+      "youtube_video": null,
+      "description": "【核心玩法】把「兄弟养成」做成肉鸽自走棋：招募一支兄弟大军，排兵布阵后自动开打，每一局的目标都是一个荒诞命题——需要多少兄弟才能揍趴大猩猩、打赢一千个熊孩子、干翻像马一样大的鸭子、击败神明。\n\n【设计亮点】叙事钩子极其廉价但极其有效：标题本身就是玩法问题，玩家不是在「变强」，而是在「求解」。自走棋的战斗自动结算，把操作门槛压到最低，乐趣集中在阵容搭配与数值滚雪球，属于典型的高下限、低门槛设计。\n\n【美术与氛围】Butterscotch 一贯的粗线条卡通风格，敌人设计走荒诞路线，配合夸张的音效，整体调性偏轻松搞怪，与「兄弟」这个中文译名的高传播性互相加成。\n\n【优势】概念一句话说清、上手成本低、价格 54 元处在冲动消费区间；发售三个月后仍能靠更新把 30 万份的长尾续上，说明留存结构健康。\n\n【不足】自走棋品类的同质化严重，长期靠新敌人与新兄弟维持新鲜感的成本会递增；数值平衡一旦失控，社区会迅速转向「最优解」而失去探索空间。\n\n【综合评价】这是一款「命题式」独立游戏的成功样本：用一个荒诞问题当标题与核心循环，54 元定价 + 自走棋框架降低决策成本，再用持续更新拉长销售尾巴。30 万份对应的是清晰的受众定位，而不是运气。",
+      "why_notable": "荒诞命题 + 自走棋框架 + 54 元定价，发售三个月后靠大更新把销量推到 30 万份。",
+      "pcu": "未进入当日 Steam 热玩 Top 500",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "30 万份（官方公布）",
+      "gi_summary": "「兄弟养成」套「肉鸽自走棋」，Butterscotch Shenanigans 开发，Steam 国区 54 元。"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Niche Gamer · 资料片公布",
+     "tags": [
+      "Roguelike",
+      "资料片",
+      "抢先体验"
+     ],
+     "title": "《卡德洞窟》公布资料片 Diaspora：扮演变异植物或动物，12 月 9 日进抢先体验",
+     "en_title": "Caves of Qud expansion Diaspora was announced!",
+     "full_text": "Caves of Qud expansion Diaspora was announced! https://t.co/nKLGYI2lVs https://t.co/ciebALbIqo",
+     "author": "Niche Gamer",
+     "date": "2026-10-25",
+     "likes": 6,
+     "views": 1470,
+     "link": "https://x.com/nichegamer/status/2114343990250062301",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVeop46WkAAqS1R.jpg"
+     },
+     "summary": "Niche Gamer 报道，深度模拟 Roguelike《卡德洞窟（Caves of Qud）》公布首个资料片 Diaspora，12 月 9 日进入抢先体验。玩家将扮演变异的植物或动物，资料片带来新突变、新生物、新物品与游荡的商队。本体 2024 年 12 月结束抢先体验，Steam 12,011 条评价、国区 109 元。",
+     "analysis": "",
+     "recommendation": "《卡德洞窟》首个资料片 Diaspora 公布：可扮演变异动植物，12 月 9 日抢先体验",
+     "game_ref": "Caves of Qud",
+     "enrichment": {
+      "game_name": "Caves of Qud",
+      "genre": "Roguelike / 深度模拟 / 开放世界",
+      "developer": "Freehold Games（发行：Kitfox Games）",
+      "platforms": [
+       "Steam",
+       "Windows",
+       "macOS",
+       "Linux"
+      ],
+      "price": "本体 ¥109（国区）/ 资料片价格未公布",
+      "release_date": "资料片 2026 年 12 月 9 日进入抢先体验",
+      "steam_rating": "12,011 条评价（本体）",
+      "steam_url": "https://store.steampowered.com/app/5249200/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5249200/2f5f5aefa3c53c9ac9cd4ecf3128b36bc049b73c/header.jpg?t=1792083456",
+      "youtube_video": null,
+      "description": "【核心玩法】复古未来主义 + 智能植物的科幻 Roguelike，以「深度模拟」著称：世界里的温度、液体、气体、派系关系都被系统化模拟，玩家可以用突变、植入体与物品组合出极端 build，也能靠挖穿地层绕过整片区域。\n\n【资料片内容】Diaspora 是本体结束抢先体验后的首个资料片，玩家可扮演变异的植物或动物，新增突变、新生物、新物品，以及会在地图上迁徙的商队（dromad caravan）——把原本静态的贸易网络变成动态系统。12 月 9 日先以抢先体验形式上线。\n\n【为什么值得关注】这是「模拟深度」路线的活标本：本体 2024 年 12 月转正后仍持续更新，靠系统之间的耦合产生涌现玩法，而不是靠内容量堆时长。资料片选择让玩家扮演非人生物，等于把最难的「身体与感知」系统再往前推一步。\n\n【优势】系统深度在同类里几乎无对手；mod 与社区生态成熟；本体已积累 1.2 万条评价，资料片有稳定基本盘。\n\n【不足】学习曲线极陡，新手引导几乎等于没有；像素 UI 与文本密度对现代玩家不友好；抢先体验上线意味着资料片初期会有大量平衡与崩溃问题。\n\n【综合评价】对做系统向游戏的团队，这是必读案例：真正支撑长线的是「系统之间的化学反应」，而不是美术或叙事。资料片进抢先体验也说明 Freehold 仍把玩家反馈当作设计流程的一部分。",
+      "why_notable": "深度模拟 Roguelike 的首个资料片：可扮演变异动植物，动态商队把贸易网络变成活系统。",
+      "pcu": "未进入当日 Steam 热玩 Top 500",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "本体评价 12,011 条，销量未公开",
+      "gi_summary": "「深度模拟」套「复古未来主义科幻」，Freehold Games 开发、Kitfox 发行，本体 109 元。"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Don Coderlione · 资源发布",
+     "tags": [
+      "免费资产",
+      "3D 模型",
+      "Hugging Face"
+     ],
+     "title": "英伟达放出 2500 个免费 3D 资产，Scenario 再补 1300+：39GB 全在 Hugging Face",
+     "en_title": "Nvidia 2500 adet 3D objeyi ücretsiz yayınladı, Scenario doğrudan 1300+ tane daha ekledi...",
+     "full_text": "3D oyun yapımcıları veya 3D oyun fikri olanlar burda mısınız. Oyunlarınızda kullanabileceğiniz +2500 assets paylaşıyorum\n\nNvidia 2500 adet 3D objeyi ücretsiz yayınladı, \n Scenario doğrudan 1300+ tane daha ekledi...  \n\n39GB'lık 3D dosyalar Hugging Face'e tamamen ücretsiz.\n\nGörseller, prompt'lar, parametre ayarları bile dahil verilmiş. GLB'ler en fazla 8K, bir de orijinal Blender dosyaları var.\n\nForklift, robot kol, motor, tıbbi cihaz... Hepsi ücretsiz olarak Hub'a yüklenmiş, üstelik aratıp bulabiliyorsun.\n\nLinkler aşağıda",
+     "author": "Don Coderlione",
+     "date": "2026-10-24",
+     "likes": 968,
+     "views": 58699,
+     "link": "https://x.com/doncoderlione/status/2113920535256039650",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2113918438334681088/img/JFqsV9vTBGCVa5Hy.jpg",
+      "video_url": "https://x.com/doncoderlione/status/2113920535256039650/video/1"
+     },
+     "summary": "开发者 Don Coderlione 汇总：英伟达免费开放了 2500 个 3D 物体资产，Scenario 又追加 1300 多个，合计约 39GB 的 3D 文件上传至 Hugging Face，可免费下载。资产包含渲染图、对应的 prompt 与参数设置，GLB 最高 8K 贴图，并附带原始 Blender 文件；内容涵盖叉车、机械臂、发动机、医疗设备等工业物件，支持在 Hub 内检索。推文 968 赞、5.9 万浏览。",
+     "analysis": "免费工业级资产库对独立团队是直接的降本：这类「不性感但必需」的物件（设备、管线、载具）恰恰是环境美术最耗时的部分。更值得注意的是随资产一起开放的 prompt 与参数——这说明数据集是为「可复现的生成」设计的，团队可以据此批量扩产出风格一致的道具，而不是逐个手工调。",
+     "recommendation": "英伟达 2500 + Scenario 1300 个免费 3D 资产，39GB 含 Blender 源文件与生成参数",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "宋宋 · 开源项目",
+     "tags": [
+      "Blender",
+      "Agent Skill",
+      "美术管线"
+     ],
+     "title": "94 个 Blender 美术 Skill 开源：一句需求自动串建模→UV→材质→优化→导出引擎",
+     "en_title": "现在做独立游戏 代码已经不是门槛了 所以美术就变得尤其重要",
+     "full_text": "现在做独立游戏 代码已经不是门槛了\n所以美术就变得尤其重要\n这个github项目 包含了\n94 个 Skill 覆盖建模、拓扑、UV、材质、灯光、绑定、动画，以及 Unity / Unreal / Godot 导出\n\n而且自动化工作流 ，给一个需求，blender-director 会自动串 hard-surface → UV → 材质 → 优化 → 导出。\n\n又非常贴合常见独立游戏美术口味自带 lowpoly、像素、手绘、horror、PSX、等距等风格包，还有解谜平台、生存、RPG 等类型向指引\n\n相当招了一个专业的美术团队啊\nhttps://t.co/GJ9jIrlGtO",
+     "author": "宋宋",
+     "date": "2026-10-25",
+     "likes": 1803,
+     "views": 66884,
+     "link": "https://x.com/songsong/status/2114196156041564631",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVch7HHaQAAJmV8.png"
+     },
+     "summary": "开发者宋宋介绍一个 GitHub 项目：包含 94 个 Skill，覆盖建模、拓扑、UV、材质、灯光、绑定、动画，以及 Unity / Unreal / Godot 导出。项目提供自动化工作流 blender-director——给一个需求即可自动串联 hard-surface → UV → 材质 → 优化 → 导出，并内置 lowpoly、像素、手绘、horror、PSX、等距等风格包与解谜平台、生存、RPG 等类型向指引。推文 1803 赞、6.7 万浏览。",
+     "analysis": "把美术流程拆成可编排的 Skill，本质是把「工具操作」标准化，这恰好是 agent 最擅长的部分。对独立团队来说，省下的不是审美判断，而是重复的拓扑与 UV 劳动；反过来，美术总监的品味与验收标准会成为整条流水线的天花板。要注意的是风格包越完备，作品越容易趋同——这也是今天「AI slop」讨论的另一面。",
+     "recommendation": "94 个 Blender 美术 Skill 开源：一句需求自动串建模、UV、材质到引擎导出"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**语音交互的门槛被压到本地显卡**\nDessa 发布完全以语音训练的全双工语音到语音模型，可在消费级 GPU 上运行，作者称这是「语音的 GPT-3 时刻」。410 万浏览背后是一个明确的技术转向：不再需要 ASR→LLM→TTS 三段拼接，延迟与语气都能保住，游戏 NPC 对话的成本结构会随之改变。同期，Flux 3 + Tripo 3.1 + Atlas 的组合把「概念图→可动角色」串成一条链路，绑骨与手指关节已经可以自动生成。\n\n**中腰部的商业纪律比玩法更值钱**\n《幽灵行者》团队的《不朽遗志》发售 7 天收回成本：40 美元定价、主动把档期从 9 月 24 日推后避开《Control Resonant》与《Silent Hill Townfall》、首发进 Game Pass。另一边，被取消的《质量效应》新作设计曝光——原计划按前作选择生成时间线，请愿签名已从 5 万涨到 18.7 万。\n\n**免费资产与「可编排」的美术管线**\n英伟达与 Scenario 合计放出 3800 多个免费 3D 资产，约 39GB，随附生成参数与 Blender 源文件；同时一个含 94 个 Blender Skill 的开源项目把建模、UV、材质到引擎导出串成自动流程。工具越完备，判断力越稀缺——r/opensource 封禁 AI 项目的争议也从另一面印证了这一点。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
