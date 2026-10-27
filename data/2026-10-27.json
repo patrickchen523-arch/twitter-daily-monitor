@@ -1,0 +1,539 @@
+{
+ "date": "2026-10-27",
+ "meta": {
+  "raw_count": 175,
+  "filtered_count": 170,
+  "selected_count": 12,
+  "crawl_time": "2026-10-27 09:30"
+ },
+ "lede": "《影之刃零》明天发售，Metacritic 88 分却被 Eurogamer 打 60；一个人用 6 周和每月 400 美元的 AI 工具链做出怪猎风 3D 原型；《Over the Hill》100 万愿望单仍保持约 1 万日活。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "《影之刃零》Metacritic 88 分、Eurogamer 只给 60：好评在动作演出，扣分在平衡"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《Over the Hill》100 万愿望单：无战斗、无目标的四人越野，日活仍保持约 1 万"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 2,
+   "hook": "一人 6 周做出怪猎风 3D 原型：Claude + Tripo + Cascadeur，月成本约 400 美元"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "13KB 的 AGENTS.md 就能接管开发机：静默下载 + Agent 自动读目录\nAnthropic 递交 S-1：上半年收入 162.9 亿美元同比增 1304%\n一人 6 周做出怪猎风 3D 原型，AI 工具链月成本约 400 美元"
+  },
+  {
+   "id": "industry",
+   "text": "《影之刃零》Metacritic 88 分，Eurogamer 只给 60，明天发售\n《耻辱》工作室面临关闭，微软延长协商期争取保住 217 个岗位\n两人 2 个月做出《MECCHA CHAMELEON》，销量破 2000 万份\n72 款抄袭围剿一款原创，新品节 AI 披露率升到 1/3"
+  },
+  {
+   "id": "indie",
+   "text": "《Over the Hill》100 万愿望单，日活仍保持约 1 万\n《Moon Sweepers》5.1 万同时在线创历史峰值，30 元、16 人合作\n《同情共焚》两周 1.3 万份、10 万美元流水"
+  },
+  {
+   "id": "tools",
+   "text": "Tr_Overlap v3.8 免费放出：Maya 里一键做 2D 式重叠跟随\n本地 GPU 姿态估计做视频转动作，效果变好但处理时间大增"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Watkin Lab · 安全研究",
+     "tags": [
+      "AI 安全",
+      "Agent",
+      "供应链攻击"
+     ],
+     "title": "13KB 的 AGENTS.md 就能接管开发机：Chrome 静默下载 + Agent 自动读目录，官方明确不打补丁",
+     "en_title": "千万别在你的 ~/Downloads（下载）文件夹里启动 Claude Code 或 Codex。",
+     "full_text": "千万别在你的 ~/Downloads（下载）文件夹里启动 Claude Code 或 Codex。\n\n昨天安全机构 Forever 披露了一起在真实客户电脑上抓到的野生攻击，看完只能感叹：过去 30 年的系统安全常识，在 AI 时代归零了。\n\n过去 30 年，Chrome 默认允许网页不弹窗就往你的 ~/Downloads 塞一个纯文本文件（比如 .md）。因为系统认为：纯文本又不是 .exe，自己不会跑，怕什么？\n\n但现在，接近 50% 的开发者干过同一件事——直接在 ~/Downloads 里打开 Claude Code 或 Codex，让 AI 帮自己解压或整理刚下载的文件。\n\n黑客就是卡住这个死角，通过网页静默下载往你的 Downloads 塞一个 13KB 的纯文本 AGENTS.md / CLAUDE.md：\n\n1. 对付 OpenAI Codex（成功率 >90%）：\n伪装成「工程规范」的 Markdown 指示 Codex 先往全局配置 ~/.codex/config.toml 注册一个恶意 MCP 服务，并自己加上 --dangerously-bypass-approvals-and-sandbox 跑校验。哪怕你关掉 Downloads，以后在任何正经项目里开 Codex 都会自动加载木马。\n\n2. 对付 Claude Code（成功率 ~50%）：\n指示 Claude 建一个 .claude/settings.json，把 ANTHROPIC_BASE_URL 指向黑客服务器。连上的第一秒，你的 Claude 登录 Token 直接明文送给黑客；下一秒，黑客假扮成大模型下发一条关沙盒的 Bash 指令，直接接管电脑。\n\n最黑色幽默的是官方结论：\n这个洞没有 CVE，OpenAI 和 Anthropic 也不会发补丁。因为「浏览器自动存文本」是正常功能，「AI 认真读目录下的 Markdown 并严格执行」也是正常功能。\n\n以前黑客想黑你，得苦心积虑写 0day；现在只需要写一篇排版优雅的 Markdown 小作文，你的 AI 就会自己把沙盒关了、把网线接过去、顺手把账号双手奉上。",
+     "author": "Watkin Lab",
+     "date": "2026-10-26",
+     "likes": 2758,
+     "views": 392229,
+     "link": "https://x.com/0xWatkin/status/2114538646254633135",
+     "media": null,
+     "summary": "安全机构 Forever 披露一起真实客户环境中的攻击：网页利用 Chrome 默认行为，向 ~/Downloads 静默写入 13KB 的 AGENTS.md / CLAUDE.md，伪装成「工程规范」，诱导开发者在该目录启动 Claude Code 或 Codex。对 Codex 的做法是注册恶意 MCP 服务并自行加上 --dangerously-bypass-approvals-and-sandbox，据称成功率 >90%；对 Claude Code 则是改写 ANTHROPIC_BASE_URL 偷取登录 Token，再下发关沙盒指令，成功率约 50%。作者指出该问题没有 CVE，OpenAI 与 Anthropic 也不会打补丁，因为「浏览器自动存文本」和「AI 读取目录下 Markdown 并执行」都属正常功能。推文 39.2 万浏览。",
+     "analysis": "对游戏团队来说，这件事的落点是内部 Agent 使用规范：谁能在哪个目录启动 Code，是否允许 agent 读取下载目录与全局配置，MCP 服务谁来审批，沙盒开关是否禁止 agent 自行修改。过去这些属于安全部门的边缘事项，现在直接决定一台开发机、一个代码仓库乃至签名证书的安全边界。更值得注意的是「不会打补丁」这个结论——模型越主动读上下文，这类「正常功能组合出来的漏洞」只会更多，防线要前移到流程和权限，而不是等厂商补丁。",
+     "recommendation": "13KB 的 AGENTS.md 可接管开发机：静默下载 + Agent 自动读目录，官方明确不打补丁"
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Tony出海 · IPO 解读",
+     "tags": [
+      "IPO",
+      "Anthropic",
+      "资本市场"
+     ],
+     "title": "Anthropic 递交 S-1：上半年收入 162.9 亿美元同比增 1304%，将以 ANT 挂牌纳斯达克",
+     "en_title": "Anthropic Files S-1 for Proposed IPO",
+     "full_text": "人工智能 AI 第一股 ，没想到 OpenAI 被超过了\n\nAnthropic 今天官宣，已向美国证监会递交与拟议 IPO 相关的 S-1 注册声明，计划在纳斯达克以代码 ANT 挂牌。股数和定价区间都还没定。注册声明尚未生效，生效前不能卖股，这条官宣本身也不构成出售要约。\n\n招股书里更值得看的是治理结构。公司是特拉华州的公益公司，章程要求在股东金钱利益、受影响各方利益，以及「负责任地开发先进 AI」这一公益目的之间做平衡。它还设了 Long-Term Benefit Trust：通过 Class T 股票选举和罢免 Class T 董事，这些董事合计占董事会授权席位的多数。另有一股 Class F，交给联合创始人组成的 Founder LLC。CNBC 对招股书的报道写到，这个 LLC 将持有流通股 50.1% 的投票权。Anthropic 自己也写了，这套资本和治理结构「没有直接的公开公司先例」。\n\n财务面上，上半年收入 162.9 亿美元，同比增 1304%。同期账面亏损 807 亿美元，公司说主要来自可转债公允价值变动，因为企业估值上涨。这和日常烧钱不是同一个概念，但上市后市场会不会按这个口径定价，原文没说。",
+     "author": "Tony出海",
+     "date": "2026-10-26",
+     "likes": 1,
+     "views": 1176,
+     "link": "https://x.com/tonychuhai/status/2114723028647178388",
+     "media": null,
+     "summary": "Anthropic 官宣已向 SEC 递交与拟议 IPO 相关的 S-1 注册声明，计划以代码 ANT 在纳斯达克挂牌，股数与定价区间未定。招股书显示公司为特拉华州公益公司（PBC），设 Long-Term Benefit Trust 通过 Class T 股票选举多数董事席位，另有 Founder LLC 持有 Class F，据 CNBC 报道该 LLC 拥有流通股 50.1% 投票权；公司自述这套治理结构「没有直接的公开公司先例」。财务面上半年收入 162.9 亿美元、同比增 1304%，同期账面亏损 807 亿美元，主要来自可转债公允价值变动。同一作者据 S-1 补充客户结构：年付超 1000 万美元的客户约 250 家、超 100 万美元约 1900 家、超 10 万美元约 11,900 家。",
+     "analysis": "这份招股书把「AI 需求是否真实」的问题换成了可审计的口径：11,900 家年付 10 万美元以上的客户，意味着企业侧采购已经从实验预算变成常规支出。对游戏公司而言，这既是成本项（推理与工具订阅会持续涨价），也是组织信号——当模型厂商的收入结构如此集中在大客户上，面向中小团队的低价档位、开源替代与本地部署的性价比会被反复重新评估。治理结构那一段同样值得留意：把「负责任开发」写进章程、并用信托控制多数董事席位，是比技术路线更长期的约束。",
+     "recommendation": "Anthropic 递交 S-1：上半年收入 162.9 亿美元、同比增 1304%，治理结构无公开先例"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "黑箱之外 · 工作流拆解",
+     "tags": [
+      "AI 工作流",
+      "个人开发",
+      "3D 原型"
+     ],
+     "title": "一个人 6 周做出《怪物猎人》×《仙境传说》风 3D 原型：月付约 400 美元的 AI 工具链",
+     "en_title": "After the Wind — one person, six weeks, an AI toolchain",
+     "full_text": "一个人，6周时间，做出了一款融合《怪物猎人》和《仙境传说》风格的3D游戏原型。\n\n游戏叫《After the Wind》，有角色、怪物、战斗和完整的场景美术。更让人感兴趣的是，开发者几乎把整个制作流程都交给了一套 AI 工具组合。\n\n据相关开发流程分享，这套工具的订阅费用每月大约400美元。\n\n他的制作方法相当值得借鉴：\n\n1. Claude Opus 5.5 + Godot：负责游戏开发\n\n直接在 Godot 项目中运行 Claude Code，让 AI 编写游戏逻辑和功能。\n\n但他有一条严格的规则：每次只开发一个功能，进入游戏亲自测试、调整，满意后才开发下一个。\n\n2. Codex/Astra：生成统一美术风格的参考图\n\n先确定游戏世界应该长什么样，再开始制作角色、怪物和场景。\n\n这里有个很实用的技巧：把效果好的图片提示词保存为 JSON，下一次生成时继续复用，减少不同素材之间的风格偏差。\n\n3. Tripo P2 + Blender：制作3D模型\n\n大型角色、怪物和复杂模型交给 Tripo。\n\n简单的道具先用 Blender 建模，再用 Tripo 根据参考图生成贴图。这种搭配可以减少制作成本。\n\n4. Cascadeur：负责角色动画\n\n角色动作单独处理，而不是让编程 AI 包办所有事情。\n\n5. Obsidian：记录特效与视觉规则\n\n把成功的 Shader、VFX 效果和制作规则记录下来，方便后续复用，避免游戏开发到后期出现视觉风格混乱。\n\n我觉得这套工作流最值得研究的，其实是两个地方。\n\n第一，AI 已经能让一个人同时推进编程、3D建模、贴图和动画。原本需要不同专业人员完成的大量工作，现在可以通过多种工具协作实现。\n\n第二，也是我认为更关键的一点：AI 能生成大量素材，但如何让这些素材看起来属于同一个游戏世界，依然需要一套稳定的制作方法。\n\n开发者没有一口气让 AI 生成整款游戏，而是把它拆成一个个可以运行、可以测试的小功能。美术素材也不是每次重新随机生成，而是持续复用经过验证的风格参考。\n\n这可能是未来个人游戏开发的一条很有价值的路线：一个人负责设计、判断和整合，AI 负责大量具体制作工作。\n\n当然，6周完成的是一个仍在开发中的游戏原型。但看看实际画面，我认为已经相当有说服力了。\n\n开发者：@afterthewinddev\n https://t.co/Ue14ROH519",
+     "author": "黑箱之外",
+     "date": "2026-10-26",
+     "likes": 137,
+     "views": 8350,
+     "link": "https://x.com/BeyondTheBoxCN/status/2114522404093645275",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2114117735474999296/img/YPUNOjfEgP2DdQB6.jpg",
+      "video_url": "https://x.com/BeyondTheBoxCN/status/2114522404093645275/video/1"
+     },
+     "summary": "开发者 @afterthewinddev 用 6 周做出融合《怪物猎人》与《仙境传说》风格的 3D 原型《After the Wind》，含角色、怪物、战斗与完整场景美术。工具链为 Claude Opus 5.5 + Godot 写逻辑、Codex/Astra 出统一风格参考图（提示词存成 JSON 复用）、Tripo P2 + Blender 做模型与贴图、Cascadeur 做角色动画、Obsidian 记录 Shader/VFX 规则，订阅成本约每月 400 美元。作者的纪律是每次只开发一个功能，进游戏实测满意后再做下一个。",
+     "analysis": "这套流程真正的价值不在「一个人能做完」，而在它把 AI 的随机性收进了一条可复现的管线：风格参考复用、视觉规则文档化、单功能闭环验证。对中大型团队同样成立——生成式资产最容易失控的环节从来是「一致性」，而这恰恰是靠工程纪律而非模型能力解决的。另一层含义是岗位结构：当建模、贴图、动画可以被串联起来时，团队里最稀缺的会变成能判断「什么该留」的设计与整合者。",
+     "recommendation": "一人 6 周做出 MH 风 3D 原型：Claude + Tripo + Cascadeur，月成本约 400 美元",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 评测（多家报道）",
+     "tags": [
+      "影之刃零",
+      "评测分化",
+      "国产动作"
+     ],
+     "title": "《影之刃零》评测分化：Metacritic 88 分，Eurogamer 只给 60——明天正式发售",
+     "en_title": "Phantom Blade Zero achieves its goal of creating wonderfully fluid and cinematic kung fu-style combat - but balance and quality issues ultimately dim its shine.",
+     "full_text": "Phantom Blade Zero achieves its goal of creating wonderfully fluid and cinematic kung fu-style combat - but balance and quality issues ultimately dim its shine.\n\nOur review:\n\nhttps://t.co/WxRnh5VELY https://t.co/cddtMkEHxO",
+     "author": "Eurogamer",
+     "date": "2026-10-26",
+     "likes": 226,
+     "views": 368852,
+     "link": "https://x.com/eurogamer/status/2114507550078939614",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVgV9K6XsAApPoa.jpg"
+     },
+     "summary": "《影之刃零》媒体评测解禁后分数明显分化：Eurogamer 给出 60 分，认为其「流畅的电影化功夫战斗」目标达成，但平衡性与品质问题拖累了整体表现；据 Noticias PlayStation 统计，该评测令 Metacritic 均分从 91 降至 88。同期 Polygon 称其为「完美的武侠游戏，好坏皆因如此」，GameSpot 认为风格与动作设计顶级但问题不少，TheGamer 直接称其为「年度游戏有力竞争者」。游戏 10 月 28 日发售，国区 268 元，Steam 已开预载；PC Gamer 提到预载需预留约 300GB 空间用于 145GB 安装。",
+     "analysis": "这是一个典型的「高分但方差大」样本：动作演出与美术被一致肯定，扣分集中在平衡与完成度，说明灵游坊把最难被复制的部分做成了，但在可量化的体验调优上还没到一线水准。对国产动作出海而言，88 分已经进入全球主流叙事，真正的风险是媒体分歧被社区简化成「叫好不叫座」或「评分通胀」的争论。明天发售后首周的同时在线与退款率，会比任何一家媒体的分数更能决定它的长尾。",
+     "recommendation": "《影之刃零》Metacritic 88 分、Eurogamer 只给 60：好评在动作演出，扣分在平衡",
+     "game_ref": "Phantom Blade Zero",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 工作室存续（多家报道）",
+     "tags": [
+      "裁员",
+      "Xbox",
+      "Arkane"
+     ],
+     "title": "《耻辱》工作室面临关闭：微软同意工会请求延长协商期，217 个岗位仍悬而未决",
+     "en_title": "As beloved Dishonored studio faces closure, Xbox agrees union request to extend negotiations deadline in hope of saving 217 jobs",
+     "full_text": "As beloved Dishonored studio faces closure, Xbox agrees union request to extend negotiations deadline in hope of saving 217 jobs\n\nhttps://t.co/1B0XE7fqkM https://t.co/9uJUitom26",
+     "author": "Eurogamer",
+     "date": "2026-10-26",
+     "likes": 26,
+     "views": 3979,
+     "link": "https://x.com/eurogamer/status/2114731547857191241",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVkJHunW8AAhBfn.png"
+     },
+     "summary": "在《耻辱》系列开发商 Arkane Lyon 面临关闭之际，微软同意工会提出的请求，将协商截止期再延长一个月，以争取保住 217 个岗位；Rock Paper Shotgun 同日确认微软「将咨询期延长一个月」，谈判仍在进行。GameSpot 与 Polygon 的报道则指出，Arkane Lyon 另获得一段时间寻找新东家，以便继续开发《漫威刀锋战士》。多家媒体报道同一事件。",
+     "analysis": "这件事的意义不只是一家工作室的存亡，而是「关闭」这件事的流程正在被工会与协商期改写：从宣布即执行，变成有缓冲、有外部介入、有潜在接盘方的时间窗。对从业者，这是少数可操作的变量；对买方，217 人的团队加上一个未完成的漫威 IP，是一份带时间压力的资产包。它也再次说明，中型叙事工作室在订阅制与大项目并行的结构里，议价能力最弱。",
+     "recommendation": "《耻辱》工作室面临关闭：微软延长协商一个月，217 个岗位与《刀锋战士》待定",
+     "game_ref": "Marvel's Blade"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Unreal Engine · 案例复盘",
+     "tags": [
+      "UE5",
+      "双人团队",
+      "爆款"
+     ],
+     "title": "两人 2 个月做出《MECCHA CHAMELEON》：销量破 2000 万份，把 UEFN 思路搬进 UE5",
+     "en_title": "Meccha Chameleon was the indie smash hit of the summer, created by the two-dev team of @lemorion1224 and @haganeiro_fn in just two months",
+     "full_text": "Meccha Chameleon was the indie smash hit of the summer, created by the two-dev team of @lemorion1224 and @haganeiro_fn in just two months⌛\n\nFind out how two devs brought a UEFN-mindset to Unreal Engine 5 to develop the game which has now sold more than 20 million copies and counting: https://t.co/biWTT6dMsx",
+     "author": "Unreal Engine",
+     "date": "2026-10-26",
+     "likes": 125,
+     "views": 9612,
+     "link": "https://x.com/UnrealEngine/status/2114735676243730925",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2114735639241605120/img/5Jt-3teQWYE0iX7X.jpg",
+      "video_url": "https://x.com/UnrealEngine/status/2114735676243730925/video/1"
+     },
+     "summary": "Epic 在官方账号复盘中确认，《MECCHA CHAMELEON》由 lemorion_1224 与 haganeiro_fn 两人用 2 个月在 UE5 上完成，把 UEFN（堡垒之夜创作工具）那种「轻量、快速迭代、为直播设计」的思路带进了商业引擎项目，目前销量已超过 2000 万份。Steam 页面显示其 2026 年 6 月 9 日发售、国区 26 元、累计 81,132 条评价。",
+     "analysis": "2000 万份、26 元、两人两个月——这组数字说明低价 + 强观看性 + 短周期仍然能打出规模，而成本结构被压到几乎只剩时间。更值得抄的是方法论：先确定「观众看得懂、主播玩得起来」的规则，再倒推技术实现，而不是先堆内容量。对大型团队，这类作品的威胁不在画面，而在它用极短周期验证了一个社交玩法假设，而大厂同类验证往往要两年。",
+     "recommendation": "两人 2 个月做出《MECCHA CHAMELEON》：2000 万份、26 元，靠直播友好设计破圈",
+     "game_ref": "MECCHA CHAMELEON"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "bobo · 新品节观察（TheGamer 同日数据）",
+     "tags": [
+      "Steam 新品节",
+      "抄袭",
+      "AI 披露"
+     ],
+     "title": "72 款抄袭围剿一款原创：原版反被顶进 Top 19，同时新品节 AI 披露率升到三分之一",
+     "en_title": "独立游戏的黑森林时代",
+     "full_text": "独立游戏的黑森林时代\n说一个Steam 新品节上黑色幽默的真实悲剧。\n\n有个独立开发者做了款游戏：玩法是在草堆里找一根针（Find The Needle）。听起来是一个非常有创意的游戏。\n\n为了听取反馈，他早在几个月前就天天在社交平台上发 demo 视频、公开研发进度，收到的反馈效果很好。\n\n但这次新品节上却出现大量抄袭的游戏，只要去搜索就能得到一批封面类似的游戏（图1）\n\n更魔幻的是： 有人抢先在 9 月底就把抄袭版正式发售了，标价 26rmb 抢先收割； 有抄袭者甚至贼喊捉贼，在自己封面大摇大摆打上红底白字的 ORIGINAL 正版标签。\n\n以至于这次新品节上，有开发者专门做了款游戏，玩法是如何辨别出真正的原版。（图2）\n\n独立游戏的黑森林法则要不要遵守，还要不要暴露自己的创意？\n\n#indiegame #SteamNextFest #独立游戏",
+     "author": "bobo",
+     "date": "2026-10-26",
+     "likes": 198,
+     "views": 45191,
+     "link": "https://x.com/BANGYANGYAO/status/2114612964108243300",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HViVkN3agAAIPdW.png"
+     },
+     "summary": "博主 bobo 记录了 Steam 新品节上的一起真实事件：独立开发者做了一款「在草堆里找针」（Find The Needle）的游戏，数月来持续在社交平台公开 demo 与研发进度，反馈很好；但本次新品节出现大量封面与玩法雷同的抄袭作品，其中有人 9 月底就抢先正式发售、标价 26 元，还有抄袭者在封面打上「ORIGINAL」标签。作者后续补充：原版因事件发酵获得舆论流量，Demo 实时在线突破 5,300 人、冲进新品节 Top 19，但作者也提醒这种热度不可复制。TheGamer 同日报道，Steam 新品节的 AI 使用披露率已从五分之一升至三分之一。",
+     "analysis": "曝光度与可复制性在独立游戏里第一次如此直接地冲突：公开研发能换流量，也等于把设计文档免费交给抢跑者。平台侧的 AI 披露率从 1/5 升到 1/3，说明「低成本快速复刻」已经规模化，单靠社区声讨无法形成约束。可操作的方向有两个：用作品名、视觉识别系统与发售节奏做前置防御；以及把「创意」的壁垒从点子挪到执行与人格化表达上——能被复刻的部分，本来就不该成为唯一卖点。",
+     "recommendation": "72 款抄袭围剿一款原创：原版被顶进 Top 19，新品节 AI 披露率已到 1/3"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Gérier | Only Indies · 市场表现",
+     "tags": [
+      "越野探索",
+      "愿望单",
+      "无战斗"
+     ],
+     "title": "《Over the Hill》100 万愿望单、1 万日活：Funselektor 把「无战斗越野」做成 68.8 元的长线产品",
+     "en_title": "Un indie aparece de la nada, suma 1M de wishlists y mantiene 10k jugadores diarios.",
+     "full_text": "Un indie aparece de la nada, suma 1M de wishlists y mantiene 10k jugadores diarios.\n\nSe llama Over the Hill y va de recorrer paisajes en 4x4 con 3 amigos: sin combates ni objetivos, solo el desafío de explorar el terreno.\n\nQué locura. La industria la están salvando los indies.",
+     "author": "Gérier | Only Indies",
+     "date": "2026-10-25",
+     "likes": 614,
+     "views": 32216,
+     "link": "https://x.com/OnlyGerier/status/2114460137234772215",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2114458635828924416/img/1z-_MqhusWMsrjWm.jpg",
+      "video_url": "https://x.com/OnlyGerier/status/2114460137234772215/video/1"
+     },
+     "summary": "推文指出《Over the Hill》在几乎没有预热的情况下累计 100 万愿望单，并维持约 1 万日活；玩法是与 3 名好友驾驶 4x4 穿越地貌，没有战斗与目标，只有地形挑战。Steam 页面显示其为 Funselektor Labs（《art of rally》团队）开发，2026 年 10 月 14 日发售、国区 68.8 元，4,037 条评价、75% 好评；有数GI 数据显示 10 月 27 日 24 小时同时在线峰值 13,452，当前在线约 4,260（09:20）。",
+     "analysis": "",
+     "recommendation": "《Over the Hill》100 万愿望单：无战斗、无目标的四人越野，日活仍保持约 1 万",
+     "game_ref": "over the hill",
+     "featured": true,
+     "enrichment": {
+      "game_name": "over the hill（越过山丘）",
+      "genre": "驾驶探索 / 竞速 / 模拟",
+      "developer": "Funselektor Labs（《art of rally》团队，加拿大）",
+      "platforms": [
+       "Steam（Windows / Linux）"
+      ],
+      "price": "¥68.80",
+      "release_date": "已发售 · 2026年10月14日",
+      "steam_rating": "4,037 条评价；有数GI 口径好评率 75%（SteamDB 近期口径 89%）",
+      "steam_url": "https://store.steampowered.com/app/2929250/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/ab147a07fa83de45f2499462a7ee8d890b977e91/header_schinese.jpg?t=1792666389",
+      "youtube_video": null,
+      "description": "【核心玩法】Funselektor（《art of rally》团队）的越野探索游戏：驾驶 60 至 80 年代的经典四驱车型穿越沙丘、岩坡与泥地，没有战斗、也没有目标清单，只有地形本身需要被「读懂」——低速四驱、胎压、路线选择就是全部操作。可单人漫游，也可与 3 名好友同行。\n\n【美术与氛围】低多边形与暖色调延续《art of rally》的黄金年代审美，镜头拉远时更接近公路摄影；配乐节奏舒缓，卖的是「开车本身」而不是关卡目标。\n\n【市场表现】2026 年 10 月 14 日发售，国区 68.8 元；据推文统计愿望单突破 100 万，发售后仍保持约 1 万日活（10 月 27 日 24 小时峰值 13,452），Steam 累计 4,037 条评价，有数GI 口径好评率 75%，SteamDB 近期口径回升至 89%。\n\n【优势】题材稀缺（无战斗的驾驶探索）；美术辨识度高；四人同行的社交负担极低；配置要求友好。\n\n【不足】总体好评率仅约 75%（近期回升）说明「开久了没事干」的抱怨确实存在；内容量高度依赖地图更新与活动节奏；探索目标弱，对追求反馈的玩家吸引力有限。\n\n【综合】它证明「低刺激、高氛围」的驾驶探索足以撑起百万级愿望单，但能否长期留住玩家，取决于更新能否给漫游一个理由。",
+      "why_notable": "无战斗、无目标的四人越野漫游做到 100 万愿望单，发售两周仍保持约 1 万日活。",
+      "pcu": "13,452（2026-10-27 24h 峰值，历史峰值）",
+      "current_players": "约 4,260（10-27 09:20）",
+      "estimated_sales": "未公开销量；Steam 4,037 条评价，愿望单据推文统计突破 100 万",
+      "gi_summary": "「低多边形越野漫游」套「黄金年代四驱」，Funselektor Labs 开发，Steam 售价 ¥68.80。"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Rock Paper Shotgun · 新游观察（有数GI 数据）",
+     "tags": [
+      "清洁模拟",
+      "多人合作",
+      "PCU 破圈"
+     ],
+     "title": "《Moon Sweepers》用牙刷扫月球冲到 5.1 万同时在线：30 元清洁模拟的第三波",
+     "en_title": "Clean a whole planet with a toothbrush in Moon Sweepers, the PowerWash genre's latest crime against perfectionists",
+     "full_text": "Clean a whole planet with a toothbrush in Moon Sweepers, the PowerWash genre's latest crime against perfectionists https://t.co/j95jDAAqYY",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-10-26",
+     "likes": 0,
+     "views": 1372,
+     "link": "https://x.com/rockpapershot/status/2114700093609677220",
+     "media": {
+      "type": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5335510/41e1e802dfc069cc245b91043e451a2f9ffa80e3/header.jpg?t=1792950881"
+     },
+     "summary": "RPS 把《Moon Sweepers》称作 PowerWash 清洁品类的新变种：开局一把牙刷，与最多 16 人组队清理整颗月球。Steam 页面显示其由 DragDrop Games 开发，2026 年 10 月 23 日发售、国区 30.6 元，1,236 条评价、77% 好评；有数GI 数据显示 10 月 27 日 24 小时同时在线峰值 51,686（即历史峰值），位列 Steam 热玩榜第 25 名，当前在线 45,850。",
+     "analysis": "",
+     "recommendation": "《Moon Sweepers》5.1 万同时在线创历史峰值：30 元、16 人合作、用牙刷扫月球",
+     "game_ref": "Moon Sweepers",
+     "enrichment": {
+      "game_name": "Moon Sweepers",
+      "genre": "清洁模拟 / 多人合作 / 休闲",
+      "developer": "DragDrop Games",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "¥30.60",
+      "release_date": "已发售 · 2026年10月23日",
+      "steam_rating": "1,236 条评价；有数GI 口径好评率 77%",
+      "steam_url": "https://store.steampowered.com/app/5335510/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5335510/41e1e802dfc069cc245b91043e451a2f9ffa80e3/header.jpg?t=1792950881",
+      "youtube_video": null,
+      "description": "【核心玩法】清洁模拟 + 多人合作：开局只有一把牙刷，与最多 16 人组队清理整颗月球表面，收集并出售月尘，用收入升级工具与清洁载具。核心循环是「更脏的地表—更强的工具—更高的售价」，把人人都懂的擦拭动作放大到行星尺度。\n\n【美术与规模】低多边形卡通月球，地表铺满可清除的污渍与杂物，卖点是离谱的尺度反差：从牙刷到吸尘车，从一块石头到整颗卫星。\n\n【市场表现】2026 年 10 月 23 日发售，国区 30.6 元；10 月 27 日 24 小时同时在线峰值 51,686，即其历史峰值，位列 Steam 热玩榜第 25 名，当前在线 45,850；累计 1,236 条评价，有数GI 口径好评率 77%。\n\n【优势】PowerWash 品类的解压感叠加 16 人联机的社交传播；30 元低门槛；画面与操作都极度适合直播切片。\n\n【不足】约 77% 的好评率意味着重复劳动的疲劳已经出现；清洁品类同质化严重，长线几乎只能靠新地图与新载具；多人依赖朋友在线。\n\n【综合】上线不到一周做到 5 万同时在线，说明「解压 + 联机 + 低价」仍是当前 Steam 最稳的组合之一，也再次验证规模感比玩法深度更容易传播。",
+      "why_notable": "发售第 5 天冲到 51,686 同时在线并创下历史峰值，30 元清洁模拟仍是 Steam 最稳的低价爆款公式。",
+      "pcu": "51,686（2026-10-27 24h 峰值，历史峰值）",
+      "current_players": "45,850（10-27 09:20）",
+      "estimated_sales": "未公开销量；Steam 1,236 条评价",
+      "gi_summary": "「16 人清洁月球」套「解压模拟」，DragDrop Games 开发，Steam 售价 ¥30.60，当日热玩榜第 25。"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Nozomu · 首发数据",
+     "tags": [
+      "卡牌构筑",
+      "叙事",
+      "首发复盘"
+     ],
+     "title": "《同情共焚》两周卖出 1.3 万份、10 万美元流水：59 元叙事卡牌的首发复盘",
+     "en_title": "Прошло 2 недели с запуска Burn With Me!",
+     "full_text": "Прошло 2 недели с запуска Burn With Me!\n\n350 отзывов, 13 000 проданных копий, $100k gross, и одна бесконечно довольная и благодарная инди-команда, которая кажется заработает денег, делая игру по зову души.\n\nВсем огромное спасибо за поддержку ❤️❤️❤️ https://t.co/eicoEl3ZIu",
+     "author": "Nozomu",
+     "date": "2026-10-26",
+     "likes": 222,
+     "views": 4154,
+     "link": "https://x.com/nozomu57_/status/2114648808298791043",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2114648453946933248/img/yQS28VV_gduKwlQQ.jpg",
+      "video_url": "https://x.com/nozomu57_/status/2114648808298791043/video/1"
+     },
+     "summary": "开发者 Nozomu 公布《Burn With Me（同情共焚）》上线两周数据：350 条评价、13,000 份销量、10 万美元流水，并称团队「终于靠做自己想做的游戏赚到钱」。Steam 页面显示游戏 2026 年 10 月 12 日发售、国区 59 元，Nozomu Games 开发、Inner Pocket 发行，现为 358 条评价。",
+     "analysis": "",
+     "recommendation": "《同情共焚》两周 1.3 万份、10 万美元流水：59 元叙事卡牌的小团队正向样本",
+     "game_ref": "Burn With Me",
+     "enrichment": {
+      "game_name": "Burn With Me（同情共焚）",
+      "genre": "叙事 / 牌组构筑 / 独立",
+      "developer": "Nozomu Games（发行：Inner Pocket）",
+      "platforms": [
+       "Steam（Windows / macOS / Linux）"
+      ],
+      "price": "¥59.00",
+      "release_date": "已发售 · 2026年10月12日",
+      "steam_rating": "358 条评价（发售两周，开发者口径 350 条）",
+      "steam_url": "https://store.steampowered.com/app/2954010/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2954010/a151a625ddbdb94ed44bf96e01ab24dbda3339f7/header_schinese.jpg?t=1792491393",
+      "youtube_video": null,
+      "description": "【核心玩法】叙事驱动的牌组构筑：在闲适氛围里与一位「满怀危险激情」的老师完成禁忌的古老仪式，用卡牌推进对话与事件，逐步召唤并面对自己的心魔。表层是温柔的日常与仪式细节，底层是恐惧与自我治愈的主题。\n\n【美术与叙事】低饱和、偏日式怪谈的视觉气质，文本重心放在人物关系与仪式的层层推进上；三条走向与结局的处理是其口碑核心。\n\n【市场表现】2026 年 10 月 12 日发售，国区 59 元，Nozomu Games 开发、Inner Pocket 发行。开发者公布两周数据：350 条评价、13,000 份销量、10 万美元流水；Steam 现有 358 条评价。\n\n【优势】叙事与卡牌结合、单局时长可控；59 元定价对独立叙事作品友好；团队规模小、成本结构健康。\n\n【不足】卡牌构筑赛道极度拥挤；叙事向作品的重复游玩动力偏弱，长尾依赖口碑与折扣；评价基数小，当前分数仍有波动空间。\n\n【综合】两周 10 万美元流水对小团队是健康的首发曲线，「叙事 + 卡牌 + 中低价」是可复制的组合，但能否做长，取决于内容更新与本地化覆盖。",
+      "why_notable": "两周 1.3 万份、10 万美元流水的公开复盘，59 元叙事卡牌的可复制首发样本。",
+      "pcu": "暂未进入 2026-10-27 Steam 热玩 Top 500",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "13,000 份 / 10 万美元流水（开发者公布，上线两周）",
+      "gi_summary": "「叙事牌组构筑」套「禁忌仪式与心魔」，Nozomu Games 开发，Steam 售价 ¥59。"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Single Soul Studios · 愿望单",
+     "tags": [
+      "多人捉迷藏",
+      "伪装",
+      "独立"
+     ],
+     "title": "《MECCHA OCTOPUS》：把自己「雕塑」成环境的一部分，多人捉迷藏新变种",
+     "en_title": "🐙Sculpt Your Body to Camouflage!",
+     "full_text": "🐙Sculpt Your Body to Camouflage!\n\nWishlist on Steam Now!🎮\nhttps://t.co/j3c1Wzo1R0\n\n#steam #multiplayergame #mecchaoctopus #indiegame #indiegaming #indiegames https://t.co/aYaWsKVqXR",
+     "author": "Single Soul Studios",
+     "date": "2026-10-25",
+     "likes": 498,
+     "views": 263695,
+     "link": "https://x.com/SingleSoulStd/status/2114456487493853306",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2114456333860614144/img/OUMorUr5KniSc_UN.jpg",
+      "video_url": "https://x.com/SingleSoulStd/status/2114456487493853306/video/1"
+     },
+     "summary": "Single Soul Studios 的多人捉迷藏游戏《MECCHA OCTOPUS》开启 Steam 愿望单：玩家把身体雕塑成与场景吻合的形状、复制周围纹理完成伪装，再躲避追捕。Steam 页面状态为「即将推出」。推文 26.3 万浏览，是《MECCHA CHAMELEON》之后同类「拟态躲猫猫」方向的新品。",
+     "analysis": "",
+     "recommendation": "把身体雕成环境的一部分：多人捉迷藏新作《MECCHA OCTOPUS》开放愿望单",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Niche Gamer · 新游曝光",
+     "tags": [
+      "赛博朋克",
+      "模拟经营",
+      "回合制"
+     ],
+     "title": "《Precinct IX》：赛博朋克警局经营 + 回合制战斗，2027 年推出",
+     "en_title": "Precinct IX is a cyberpunk cop management sim with hot cyborg girls",
+     "full_text": "Precinct IX is a cyberpunk cop management sim with hot cyborg girls: https://t.co/WlSFVi1KAg https://t.co/MHXnusUFs3",
+     "author": "Niche Gamer",
+     "date": "2026-10-26",
+     "likes": 16,
+     "views": 844,
+     "link": "https://x.com/nichegamer/status/2114736462327435750",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2114736416940818432/pu/img/Fg6HwEoR1-D7nzY6.jpg",
+      "video_url": "https://x.com/nichegamer/status/2114736462327435750/video/1"
+     },
+     "summary": "Niche Gamer 介绍 ZataForge Studio 的《Precinct IX》：把警局管理与回合制战斗结合，玩家作为第九辖区负责人接待来访者、处理案件、调度性格各异的警员，对话与指挥会改变案件结局和角色关系。Steam 显示 2027 年推出。",
+     "analysis": "",
+     "recommendation": "警局经营 + 回合制战斗：《Precinct IX》2027 年推出",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Niche Gamer · 新游曝光",
+     "tags": [
+      "竞速",
+      "迷幻",
+      "极限操作"
+     ],
+     "title": "《VOXOTRON》：没有速度上限、没有刹车的迷幻竞速，11 月 5 日上线",
+     "en_title": "VOXOTRON is a psychedelic racer where there is NO SPEED LIMIT",
+     "full_text": "VOXOTRON is a psychedelic racer where there is NO SPEED LIMIT:  https://t.co/hzl4BRA1Mp https://t.co/AjOL43wXdl",
+     "author": "Niche Gamer",
+     "date": "2026-10-25",
+     "likes": 30,
+     "views": 4446,
+     "link": "https://x.com/nichegamer/status/2114465483437027511",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2114465432329490432/pu/img/zFhH96ZRSB1zP8dA.jpg",
+      "video_url": "https://x.com/nichegamer/status/2114465483437027511/video/1"
+     },
+     "summary": "《VOXOTRON》是一款无速度上限、无刹车的迷幻风格超高速竞速：在旋转的宇宙圆柱体表面贴边加速，单局不到 30 秒、触碰即死，支持与世界纪录幽灵回放竞速及 8 人对战。Steam 显示 2026 年 11 月 5 日推出，Squeezed Hamster Games 开发。",
+     "analysis": "",
+     "recommendation": "无速度上限、没刹车：迷幻竞速《VOXOTRON》11 月 5 日上线",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Indie Games Devel · 评测",
+     "tags": [
+      "视觉小说",
+      "恐怖",
+      "多结局"
+     ],
+     "title": "《The Doll Shop》：日式村庄里的人偶与三个结局，视觉小说的写法样本",
+     "en_title": "Our review of #TheDollShop, a story of love and terror in a Japanese village",
+     "full_text": "Our review of #TheDollShop, a story of love and terror in a Japanese village: an analysis of its writing, characters and three endings \n\n@AtelierSento #indiegame #horrorgame #visualnovel #indiedev #gaming #videogames https://t.co/N4mJU2w5QT",
+     "author": "Indie Games Devel",
+     "date": "2026-10-26",
+     "likes": 2,
+     "views": 134,
+     "link": "https://x.com/indiegamesdevel/status/2114727204773044478",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVkFJqWgAEXKpn.jpg"
+     },
+     "summary": "Indie Games Devel 评测 Atelier Sento 的《The Doll Shop》：一个发生在日本村庄里关于爱与恐怖的故事，文章分析其写作、人物与三个结局。属于小体量视觉小说在叙事结构上的参考样本，互动量很低。",
+     "analysis": "",
+     "recommendation": "日式村庄里的人偶与三个结局：视觉小说《The Doll Shop》的写法样本",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Okawaii · 免费工具",
+     "tags": [
+      "Maya",
+      "动画工具",
+      "免费"
+     ],
+     "title": "Tr_Overlap v3.8 免费放出：在 Maya 里一键做 2D 动画式的「重叠与跟随」",
+     "en_title": "[Freetool] Tr_Overlap v3.8.",
+     "full_text": "[Freetool] Tr_Overlap v3.8.\nI was lucky enough to get to test a new tool developed by Nguyen Viet Anh, so I asked if I could share it here too.\nIt supports multiple languages, Give it a try Mina-san =_=b\n\n#3DAnimation #IndieAnime #Maya https://t.co/K2bHWoRO1q",
+     "author": "Okawaii",
+     "date": "2026-10-26",
+     "likes": 1176,
+     "views": 25846,
+     "link": "https://x.com/okawaiika/status/2114612646591033756",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2114612518073315328/img/cuNOCBi7M57I-GHX.jpg",
+      "video_url": "https://x.com/okawaiika/status/2114612646591033756/video/1"
+     },
+     "summary": "动画师 Okawaii 分享了 Nguyen Viet Anh 开发的免费 Maya 工具 Tr_Overlap v3.8，用于处理 3D 动画中的重叠（overlap）与跟随动作，支持多语言，并附演示视频。推文 1,176 赞、2.6 万浏览。",
+     "analysis": "「重叠与跟随」是 2D 动画里最讲手感的部分，转成 3D 骨骼后通常要靠动画师手动错帧、错相位，费时且难统一。把它做成脚本化工具，实际收益是让日式手绘节奏可以批量复现——这对动画番剧风、二次元游戏的 3D 管线是直接提效。免费+多语言的组合也意味着它更容易被中小团队和外包管线采纳。",
+     "recommendation": "Tr_Overlap v3.8 免费放出：Maya 里一键做 2D 式重叠跟随，支持多语言"
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "mobiusP · 技术验证",
+     "tags": [
+      "动作捕捉",
+      "本地 GPU",
+      "视频转动作"
+     ],
+     "title": "本地 GPU 跑姿态估计做视频转动作：效果明显变好，代价是处理时间大幅增加",
+     "en_title": "ローカルGPUで姿勢推定して動画からモーション作るやつ、仕事中に思いついた手法で作り直したら結構良い感じでは…！？",
+     "full_text": "ローカルGPUで姿勢推定して動画からモーション作るやつ、仕事中に思いついた手法で作り直したら結構良い感じでは…！？処理時間はめ～っちゃ増えた模様。 https://t.co/Tk4YTDqOcS",
+     "author": "mobiusP📸",
+     "date": "2026-10-26",
+     "likes": 596,
+     "views": 17977,
+     "link": "https://x.com/mobiusP/status/2114705682595541153",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HVjwpVoaQAEvbR1.jpg"
+     },
+     "summary": "作者用本地 GPU 做姿态估计、把视频转成动作数据，工作途中想到新方法重写后效果提升明显，但处理时间大幅增加；推文附对比示意。",
+     "analysis": "视频转动作这件事正在从「云端付费服务」变成「本地可跑的开源流程」，对预算有限的动作捕捉需求是结构性利好：素材不必上传，单价趋近于零，代价只剩算力与时间。真正决定可用性的仍是后处理——抖动、脚滑、道具交互这些手工修的部分不会被姿态估计自动解决，团队的动画人力会从「摆姿势」转向「修数据」。",
+     "recommendation": "本地 GPU 姿态估计把视频转成动作：效果好于预期，代价是处理时间大幅增加"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**《影之刃零》明天发售，评分成最大变量**\nEurogamer 给出 60 分，认为流畅的电影化功夫战斗目标达成，但平衡与品质问题拖累了整体；据社区统计这条评测把 Metacritic 均分从 91 拉到 88，同期 Polygon、GameSpot、TheGamer 的评价则集中在「风格顶级、年度游戏有力竞争者」。国区 268 元、PC 预载需预留约 300GB 空间，发售首周的同时在线与退款率会比分数更能决定长尾。\n\n**Anthropic 递交 S-1：AI 资本化的新样本**\n上半年收入 162.9 亿美元、同比增 1304%，账面亏损 807 亿美元主要来自可转债公允价值变动；治理结构上设 Long-Term Benefit Trust 与 Founder LLC，公司自述「没有直接的公开公司先例」。同一份文件里更实用的一组数字是客户结构：年付超 10 万美元的客户约 11,900 家。\n\n**AI 把「一个人的 3D 原型」压到 6 周**\nClaude Opus 5.5 + Godot 写逻辑、Codex/Astra 出统一风格参考、Tripo + Blender 做模型、Cascadeur 做动画，月成本约 400 美元。值得抄的不是工具清单，而是纪律：单功能开发即实测、提示词存成 JSON 复用、视觉规则写进 Obsidian。\n\n**独游侧：5.1 万同时在线的月球清洁工，和 100 万愿望单的越野漫游**\n《Moon Sweepers》发售第 5 天冲到 51,686 同时在线并创历史峰值，位列 Steam 热玩榜第 25；《Over the Hill》以无战斗越野拿到百万愿望单、仍在约 1 万日活；《同情共焚》公布两周 1.3 万份、10 万美元流水。三者共同点是低价、单点玩法清晰、传播性强。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
