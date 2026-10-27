@@ -19,6 +19,12 @@ git checkout main
 - **禁止直接 `git push gitlab main`**：GitLab main 含同事维护的内部项目（`sdc-platform/` 等），公网仓库不含；直接推 main 会把内网内容冲掉或把内部目录同步到公网。
 - 推送前先 `git fetch gitlab && git fetch origin`，如远端有新提交先合并/rebase 再推，避免分叉。
 
+## 工作区干净口径（2026-10-27 INC-011）
+
+- 本仓库 `core.autocrlf=true`（检出 CRLF），但所有 node 工具写 LF。同一文件被工具重写后会出现 **`git status` 报 ` M`、`git diff` 却是空** 的伪脏。
+- 任何"工作区必须干净"的前置检查（如 `tools/sync_itch_board.js`）都必须按**内容口径**判：`git diff` / `git diff --cached` / `git ls-files -o`，而不是只看 porcelain；伪脏用 `git add <path>` 刷新索引即可（内容不变、无暂存）。
+- `tools/make_day.cjs` 建当日档期时会**保留上一期的 itch 榜**（打 `stale_from` + caption 标注），需由 itch-daily 09:50 的 `sync_itch_board.js` 覆盖；当天没覆盖 = 页面显示上期 itch 数据。
+
 ## 部署校验铁律（改了日报源就必须重建派生榜）
 
 GitLab Pages CI 第一步是 `node tools/verify_launched_imgs.cjs --data-only`：**任何对 `data/*.json` 的修改**（日报增改、B站榜清洗、overrides、tags 修复）都会使热游榜/今日推荐的哈希失配，pipeline 直接失败（9/14 已发生两次）。
