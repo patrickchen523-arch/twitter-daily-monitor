@@ -17,13 +17,43 @@ if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
   process.exit(1);
 }
 
-// 0) 工作区必须干净：未提交修改会让 pull --rebase 中途拒绝（2026-10-20 事故：commit 成功后才炸，状态割裂）。
+// 0) 工作区预检（内容口径）：未提交的**内容**修改会让 pull --rebase 中途拒绝（2026-10-20 事故：commit 成功后才炸，状态割裂）。
+//    但只看 `git status --porcelain` 会误伤：CRLF/LF 重写或重序列化会让 stat 尺寸变化、内容却等价，
+//    此时 porcelain 报 " M" 而 `git diff` 是空的（2026-10-27 事故：日报流程把昨日 launched 重写成 LF，
+//    预检直接 exit 1，当日 itch 榜没上线）。故分两步：
+//      ① 纯 stat 脏项（工作区有改动但 git diff 为空）→ 自动 git add 刷新索引，不产生任何内容变更；
+//      ② 只有"内容真变了 / 有暂存改动 / 有未跟踪文件"才拦。
+//    加 --preflight-only 可单跑预检（排障/回归用）。
 {
-  const dirty = spawnSync('git', ['status', '--porcelain'], { cwd: root, encoding: 'utf8' });
-  const dirtyFiles = (dirty.stdout || '').trim();
-  if (dirtyFiles) {
-    console.error(`[sync_itch] 工作区有未提交修改，请先提交或还原后再跑：\n${dirtyFiles}`);
+  const sh = (args, opts = {}) => spawnSync('git', args, { cwd: root, encoding: 'utf8', ...opts });
+  const porcelain = (sh(['status', '--porcelain']).stdout || '')
+    .split('\n').map(s => s.replace(/\s+$/, '')).filter(Boolean);
+  const phantom = porcelain
+    .map(line => ({ code: line.slice(0, 2), p: line.slice(3).trim() }))
+    .filter(e => /^ [MD]$/.test(e.code) && e.p)
+    // quotepath 转义过的路径（带引号）不做自愈，保持保守：宁可拦也不误放
+    .filter(e => !e.p.startsWith('"') && sh(['diff', '--quiet', '--', e.p]).status === 0)
+    .map(e => e.p);
+  if (phantom.length) {
+    console.error(`[sync_itch] 检出仅行尾/stat 差异（内容等价）的项，自动刷新索引：${phantom.join(', ')}`);
+    const add = sh(['add', '--', ...phantom], { stdio: 'inherit' });
+    if (add.status !== 0) {
+      console.error('[sync_itch] 自动刷新索引失败，请人工处理工作区后重跑');
+      process.exit(1);
+    }
+  }
+  const dirty = [...new Set([
+    ...(sh(['diff', '--name-only']).stdout || '').split('\n'),
+    ...(sh(['diff', '--cached', '--name-only']).stdout || '').split('\n'),
+    ...(sh(['ls-files', '--others', '--exclude-standard']).stdout || '').split('\n'),
+  ].map(s => s.trim()).filter(Boolean))];
+  if (dirty.length) {
+    console.error(`[sync_itch] 工作区有未提交修改，请先提交或还原后再跑：\n${dirty.map(p => `\t${p}`).join('\n')}`);
     process.exit(1);
+  }
+  if (process.argv.includes('--preflight-only')) {
+    console.log('[sync_itch] 预检通过（--preflight-only）');
+    process.exit(0);
   }
 }
 
@@ -65,6 +95,20 @@ function boardsReady() {
   }
 }
 run('node', ['tools/import_itch_board.js', date]);
+// 1.1) 导入后自检：当日 itch 榜必须存在、非空，且来源日期=当日。
+//      防两类静默失败：import 没真跑成 / 页面上挂的仍是 make_day 从上期继承来的 itch 榜（2026-10-27 事故）。
+{
+  const day = JSON.parse(fs.readFileSync(path.join(root, 'data', 'launched', `${date}.json`), 'utf8'));
+  const itch = (day.boards || []).find(b => b.id === 'itch');
+  if (!itch || !Array.isArray(itch.items) || !itch.items.length) {
+    console.error('[sync_itch] 导入后 itch 榜为空，放弃（不提交）');
+    process.exit(1);
+  }
+  if (itch.source_date && itch.source_date !== date) {
+    console.error(`[sync_itch] itch 榜来源日期 ${itch.source_date} ≠ ${date}（疑似继承上期数据），放弃（不提交）`);
+    process.exit(1);
+  }
+}
 // 2) 重算推荐（itch 不参与候选，picks 应不变，仅更新哈希）→ 3) 数据闸门
 run('node', ['tools/gen_picks.cjs', date]);
 run('node', ['tools/verify_launched_imgs.cjs', date, '--data-only']);

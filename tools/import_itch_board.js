@@ -24,6 +24,10 @@ if (!fs.existsSync(snapPath)) {
   process.exit(1);
 }
 const snap = JSON.parse(fs.readFileSync(snapPath, 'utf8'));
+if (snap.date && snap.date !== date) {
+  console.error(`${date}: 快照内日期为 ${snap.date}，与目标档期不一致，拒绝导入`);
+  process.exit(1);
+}
 const games = Array.isArray(snap.games) ? snap.games : [];
 if (!games.length) {
   console.error(`${date}: itch 快照无游戏数据`);
@@ -58,6 +62,9 @@ const board = {
   title: 'itch.io 热游',
   title_en: 'ITCH.IO TRENDING',
   caption: 'itch.io featured 官方热度排序 · 数值为评分(评分人数) · 数据来源 itch-monitor 每日快照',
+  // 溯源字段：证明本榜来自"当日"快照，而不是 make_day 从上期继承来的数据
+  source_date: snap.date || date,
+  source_fetched_at: snap.fetched_at || '',
   items,
 };
 

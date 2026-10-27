@@ -25,6 +25,13 @@ for (const b of next.boards) {
     delete b.generated_from;   // 榜单待重建，旧哈希作废
   }
   if (b.id === 'twitter') delete b.data_through;  // 数据截止日同样不继承
+  if (b.id === 'itch') {
+    // itch 榜由 itch-daily 09:50 的 sync_itch_board 覆盖；覆盖前沿用上一期数据，
+    // 但必须标来源日期并写进 caption（前端渲染 board.caption），
+    // 避免"itch 同步失败 → 页面当日仍挂上期 itch 榜"被误当今日数据（2026-10-27 事故）。
+    b.stale_from = prevDate;
+    b.caption = `itch.io featured 官方热度排序 · 数值为评分(评分人数) · 数据来源 itch-monitor 每日快照（${prevDate} 数据，当日榜待 09:50 同步）`;
+  }
 }
 fs.writeFileSync(target, JSON.stringify(next, null, 1));
 man.dates.push(date);
