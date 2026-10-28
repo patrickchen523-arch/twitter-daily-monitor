@@ -77,4 +77,17 @@ const day = JSON.parse(fs.readFileSync(dayPath, 'utf8'));
 day.boards = (day.boards || []).filter(b => b.id !== 'itch');
 day.boards.push(board);  // 末尾：四榜位置(index 0-3)不动，verify 的 #ld-list-2 推特榜断言不受影响
 fs.writeFileSync(dayPath, JSON.stringify(day, null, 2) + '\n', 'utf8');
-console.log(`[import_itch] ${date}: itch ${items.length} 款（新上榜 ${items.filter(i => i.fresh).length}）→ boards=${day.boards.map(b => b.id).join(',')}`);
+const freshItems = items.filter(i => i.fresh);
+console.log(`[import_itch] ${date}: itch ${items.length} 款（新上榜 ${freshItems.length}）→ boards=${day.boards.map(b => b.id).join(',')}`);
+// 新上榜明细（名字+评分+价格+链接）：随 stdout 进入 bot 定时任务回执/晨报摘要
+if (freshItems.length) {
+  console.log('[import_itch] 新上榜明细：');
+  freshItems.slice(0, 12).forEach((g, i) => {
+    const parts = [g.name];
+    if (g.metric) parts.push(g.metric);
+    if (g.price && g.price !== '免费') parts.push(g.price);
+    if (g.link) parts.push(g.link);
+    console.log(`${i + 1}. ${parts.join('  ')}`);
+  });
+  if (freshItems.length > 12) console.log(`…等共 ${freshItems.length} 款`);
+}
