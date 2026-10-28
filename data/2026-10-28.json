@@ -1,0 +1,525 @@
+{
+  "date": "2026-10-28",
+  "meta": {
+    "raw_count": 273,
+    "filtered_count": 188,
+    "selected_count": 12,
+    "crawl_time": "2026-10-28 09:35"
+  },
+  "lede": "微软向 6 万员工开放「自愿离职」、Sucker Punch 与 Don't Nod 相继裁员，大厂收缩进入「先自愿后强制」阶段；「Save Mass Effect」把广告牌买到时代广场，请愿破 22 万；AI 标签之争转向美术——《脱毛沙龙模拟器》以 128 万浏览成为今日最热的新游消息。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "《Ghost of Yotei》卖得不差，Sucker Punch 仍在裁员——按项目配人成常态"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 1,
+      "hook": "激光、火焰喷射器都能上手：《脱毛沙龙模拟器》11 月 10 日转正式版，128 万浏览"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 2,
+      "hook": "立绘拆成带 ID 的部件再网格化：2D 转 3D 动画有了可复用链路"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "AI 代码没人计较，AI 美术却被三秒判死：Steam 标签正变成质量代理\nClaude Code 内置图像生成 skill，26.6 万浏览\n立绘拆成带 ID 的部件再网格化：2D 转 3D 动画的可复用链路"
+    },
+    {
+      "id": "industry",
+      "text": "《Ghost of Yotei》卖得不差，Sucker Punch 仍在裁员\n微软向 6 万员工开放自愿离职，含 Xbox\nDon't Nod 裁员，法国工会称面临破产风险\n「Save Mass Effect」登上时代广场广告牌，请愿破 22 万"
+    },
+    {
+      "id": "indie",
+      "text": "《Mycopunk》1.0 一周卖出 30 万份，29 元四人合作刷宝\n《脱毛沙龙模拟器》11 月 10 日转正式版，128 万浏览\n《World of Anterra》手工像素开放世界放出实机\n《Emberville》EA 前一天跳票到 2027"
+    },
+    {
+      "id": "tools",
+      "text": "开源 Claude skill：一句话生成像素 VFX，直接导出 Godot 4 资源"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "bobo · 观点",
+          "tags": [
+            "AI 披露",
+            "独游营销",
+            "平台政策"
+          ],
+          "title": "AI 代码没人计较，AI 美术却被三秒判死：bobo 拆解 Steam 的「AI 标签歧视」",
+          "en_title": "独立游戏圈中，ai代码和ai美术目前也是区别对待的。",
+          "full_text": "独立游戏圈中，ai代码和ai美术目前也是区别对待的。\n\n这周 Steam 上最难卖的游戏，不是做得差的，是看起来像 AI 做的。\n\n一个独立开发者被人当面留了一句：“我不确定你游戏好不好，但画风看着像 AI slop，所以大家不理你。”这句话里没有评价玩法，单单是因为看起来像。\n\n有意思的是这场争论的走向。Epic 的 Tim Sweeney 这两天公开说，AI 游戏不该被贴标签、不该被区别对待，矛头直指 Valve 的披露政策。评论区吵成两派，一边说玩家有知情权，一边说标签正在变成歧视工具。\n\n但两边都忘记提一件事。标签一旦存在，买家就会拿它当质量代理。因为判断玩法要玩三个小时，判断画风只要三秒。凡是三秒能判的东西，最后都会变成标签。\n\n过去，我们以为披露是让玩家更知情，现在它在做另一件事：把有没有用 AI，悄悄换成了值不值得点开。\n\n最微妙的是，同样用了 AI 的代码，几乎没人计较。\n\n因为代码的好坏要玩过才知道，而美术却很容易被立刻判断。",
+          "author": "bobo",
+          "date": "2026-10-27",
+          "likes": 124,
+          "views": 23023,
+          "link": "https://x.com/BANGYANGYAO/status/2114970318741946695",
+          "media": null,
+          "summary": "bobo 提出：本周 Steam 上最难卖的独游不是做得差的，而是「看起来像 AI 做的」，有开发者被人当面评价「画风像 AI slop，所以大家不理你」。Epic CEO Tim Sweeney 同期公开反对 Valve 的 AI 披露政策，评论区在「玩家有知情权」与「标签成了歧视工具」之间分裂。他的结论是：三秒能判断的东西最终都会变成标签，而 AI 生成的代码因为要玩过才知道，几乎没人计较。推文 124 赞、2.3 万浏览、26 条评论。",
+          "analysis": "这条判断对独游团队是可执行的：被惩罚的不是「用了 AI」，而是「看起来像默认 AI 风格」——标签一旦存在就会被当成质量代理。可行的应对是把风格化、可辨识的美术前置到首帧与胶囊图，同时保留可验证的制作过程记录（谁画的、什么工具、改了几轮），因为美术是最先被三秒判决的一环。",
+          "recommendation": "AI 代码没人计较，AI 美术却被三秒判死——Steam 标签正在变成质量代理",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "pcshipp · 工具动态",
+          "tags": [
+            "Claude Code",
+            "图像生成",
+            "工作流"
+          ],
+          "title": "Claude Code 新增图像生成 skill：编码 Agent 开始直接产出美术资源",
+          "en_title": "Bad news: Claude Code now has an image generation skill.",
+          "full_text": "Bad news: Claude Code now has an image generation skill.",
+          "author": "pc",
+          "date": "2026-10-26",
+          "likes": 1516,
+          "views": 266161,
+          "link": "https://x.com/pcshipp/status/2114830930829254843",
+          "media": null,
+          "summary": "开发者 pc 发推称 Claude Code 已内置图像生成 skill，可以在编码会话里直接出图；这条两行的推文拿到 1,516 赞、26.6 万浏览、116 条评论，是今天 AI 方向互动量最高的一条。评论集中在两件事：Agent 顺手改美术后，原型阶段的素材闭环是否还需要外部工具；以及生成物来源更难追溯。",
+          "analysis": "编码 Agent 拿到出图能力，「程序 + 占位美术」的边界被打通，一个人的原型可以在同一个会话里完成逻辑与素材，压缩的是「等美术」的时间。代价是资源可追溯性：团队需要把生成记录（模型、提示词、是否可商用）纳入管线，否则上线时的 AI 披露口径会出错。",
+          "recommendation": "Claude Code 内置图像生成 skill：编码 Agent 直接出图，26.6 万浏览"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "satounbd · 技术流程",
+          "tags": [
+            "2D 转 3D",
+            "LoRA",
+            "See-through"
+          ],
+          "title": "一张立绘拆成带 ID 的部件再网格化：satounbd 公开 2D 插画转 3D 动画链路",
+          "en_title": "イラストから3Dイラストアニメーション作成の進捗",
+          "full_text": "イラストから3Dイラストアニメーション作成の進捗\n\nイラストからLoRAで360度動画を生成→\n基準角度ごとにSee-throughでイラスト分解→\nさらに髪の毛を房ごとに画像生成で分解→\nパーツをメッシュ化してIDを付与。3D空間で一意にする→\nパーツに分解したイラストを対応づけ→\n動かす\n\n本当、See-throughニキが神すぎる",
+          "author": "satounbd",
+          "date": "2026-10-27",
+          "likes": 1699,
+          "views": 74211,
+          "link": "https://x.com/satounbd/status/2114875593162698894",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114872965116682240/img/Eps4uz9gBfqDso0v.jpg",
+            "video_url": "https://x.com/satounbd/status/2114875593162698894/video/1"
+          },
+          "summary": "流程分五步：用 LoRA 从单张插画生成 360 度旋转视频；按基准角度用 See-through 把插画分层分解；头发再按发束逐簇用图像生成拆开；每个部件网格化并赋予唯一 ID，使其在 3D 空间中唯一；最后把分解后的插画与部件一一对应并驱动动画。推文 1,699 赞、7.4 万浏览、170 次转发。",
+          "analysis": "关键不是那段旋转视频，而是「部件 ID + 空间唯一化」——这是后续绑定骨骼、做表情与换装的前提，等于把存量立绘变成可复用的动画资产。对 2D 美术为主的团队，这是把旧素材转 3D 表现的最低成本路径；风险在分割质量，拆错一束头发就会在驱动时穿帮。",
+          "recommendation": "立绘拆成带 ID 的部件再网格化：2D 转 3D 动画有了可复用链路",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "GameSpot · 工作室变动（Eurogamer / Niche Gamer 跟进）",
+          "tags": [
+            "裁员",
+            "索尼第一方",
+            "Sucker Punch"
+          ],
+          "title": "《Ghost of Yotei》卖得不错，Sucker Punch 仍在裁员",
+          "en_title": "Ghost Of Yotei Was A Hit, But Its Developer Is Reportedly Cutting Jobs",
+          "full_text": "Ghost Of Yotei Was A Hit, But Its Developer Is Reportedly Cutting Jobs dlvr.​it/TW4fWT https://t.co/9d38LUs7ao",
+          "author": "GameSpot",
+          "date": "2026-10-27",
+          "likes": 63,
+          "views": 19264,
+          "link": "https://x.com/GameSpot/status/2115071245599580177",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVo-Fv9boAAEIkW.jpg"
+          },
+          "summary": "GameSpot 报道称《对马岛之魂》《Ghost of Yotei》开发商 Sucker Punch 正在裁员；Eurogamer 与 Niche Gamer 跟进，指公司正在评估下一个项目的人员需求。Sucker Punch 是 PlayStation 全资工作室，去年刚发售《Ghost of Yotei》。推文 1.9 万浏览、34 条评论。",
+          "analysis": "索尼第一方在作品商业成功后仍收缩人力，说明主机大厂的立项逻辑已从「维持产能」转向「按项目峰值配置」，项目之间的闲置人力被优先砍掉。对从业者的含义很直接：单作成功不等于团队安全，能跨项目迁移的技术与工具能力，比待在某个 IP 组里更保值。",
+          "recommendation": "《Ghost of Yotei》卖得不差，Sucker Punch 仍在裁员——按项目配人成常态",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 大厂人力（Niche Gamer / RPS 跟进）",
+          "tags": [
+            "微软",
+            "自愿离职",
+            "Xbox"
+          ],
+          "title": "微软向 6 万名员工开放「自愿离职」：先付钱走人，再谈裁员",
+          "en_title": "Microsoft has just announced a \"Voluntary Exit Offer\"",
+          "full_text": "Xbox isn't the only Microsoft division looking to massively reduce worker headcounts. In fact, Microsoft has just announced a \"Voluntary Exit Offer\" that will essentially pay staff to move in front of any potential layoffs and voluntarily leave their jobs. https://t.co/9ujFK2zh25 https://t.co/Wg6ROzP1mA",
+          "author": "Eurogamer",
+          "date": "2026-10-27",
+          "likes": 48,
+          "views": 6756,
+          "link": "https://x.com/eurogamer/status/2115043352093630726",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVokuB3W0AAsCjA.jpg"
+          },
+          "summary": "微软宣布面向符合条件员工推出 Voluntary Exit Offer（自愿离职补偿），让员工在潜在裁员前主动离开；Eurogamer 指出 Xbox 并不是微软唯一在大幅压缩人力的部门，Niche Gamer 给出的符合条件人数为 6 万，其中包含 Xbox 员工。推文 6,756 浏览。",
+          "analysis": "「先自愿、后强制」是这轮大厂降本的标准动作：把裁员的舆论与法律成本前置成一笔补偿支出，同时给组织留出重新洗牌的空间。对 Xbox 而言，硬件与第一方同时收缩，意味着未来两年的产出会更依赖外部合作和既有 IP 复刻，而不是新 IP 豪赌。",
+          "recommendation": "微软向 6 万员工开放自愿离职，含 Xbox：先付钱走人，再谈裁员",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Rock Paper Shotgun · 工作室危机",
+          "tags": [
+            "Don't Nod",
+            "裁员",
+            "破产风险"
+          ],
+          "title": "《奇异人生》开发商 Don't Nod 裁员，法国工会称面临破产风险",
+          "en_title": "Life is Strange makers Don't Nod face layoffs and possible insolvency",
+          "full_text": "Life is Strange makers Don't Nod face layoffs and possible insolvency, French workers union STJV state https://t.co/MCwp2fihjH",
+          "author": "Rock Paper Shotgun",
+          "date": "2026-10-27",
+          "likes": 11,
+          "views": 2268,
+          "link": "https://x.com/rockpapershot/status/2115057535354888696",
+          "media": null,
+          "summary": "法国工会 STJV 称《奇异人生》系列开发商 Don't Nod 正在裁员，并可能走向破产；RPS 转述了工会说法，公司层面的具体方案尚未公开，推文 2,268 浏览、6 条评论。",
+          "analysis": "叙事驱动型中型工作室是这轮收缩里最脆弱的一类：单作开发周期长、成本高，缺少能长期供血的运营型产品。如果 Don't Nod 真的倒下，受影响的不是一个 IP，而是「中等体量叙事游戏」这条产品线的融资信心——它本来就已经被大厂砍得只剩少数样本。",
+          "recommendation": "《奇异人生》开发商 Don't Nod 裁员，法国工会称面临破产风险"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer · 社区运动（TheGamer / RPS / GameSpot 跟进）",
+          "tags": [
+            "BioWare",
+            "质量效应",
+            "玩家社区"
+          ],
+          "title": "「Save Mass Effect」买到时代广场广告牌：请愿已破 22 万签名",
+          "en_title": "Fans continue to rally around the 'Save Mass Effect' movement, this time with a billboard at Times Square",
+          "full_text": "Fans continue to rally around the 'Save Mass Effect' movement, this time with a billboard at Times Square and more initiatives planned throughout the rest of the year. https://t.co/wO9HUvQ7xI https://t.co/BP9aNgCBcz",
+          "author": "Eurogamer",
+          "date": "2026-10-27",
+          "likes": 634,
+          "views": 9011,
+          "link": "https://x.com/eurogamer/status/2115028251491917851",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVoW_JWXEAAyo9d.jpg"
+          },
+          "summary": "在 BioWare 关闭、相关项目被取消后，玩家自发组织的 Save Mass Effect 运动继续升级：在纽约时代广场投放广告牌，并计划在年内推进更多行动；RPS 统计相关请愿签名已达约 22 万。同日 GameSpot 放出又一批《质量效应 5》被砍内容。推文 634 赞、9,011 浏览、115 次转发。",
+          "analysis": "这是玩家情绪第一次以「买媒体位」的方式介入发行决策——它几乎不可能改变 EA 的商业判断，但会把「砍掉成熟 IP」的声誉成本抬到董事会层面。对从业者的参考是：社区运动的杠杆不在请愿数字，而在能不能持续制造公共可见度，这决定了它是情绪出口还是谈判筹码。",
+          "recommendation": "「Save Mass Effect」登上时代广场广告牌，请愿签名破 22 万",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Niche Gamer · 销量里程碑",
+          "tags": [
+            "合作射击",
+            "刷宝",
+            "1.0 发售"
+          ],
+          "title": "《Mycopunk》1.0 上线一周销量破 30 万：29 元的四人合作刷宝射击",
+          "en_title": "Mycopunk tops 300,000 Steam sales following its 1.0 launch",
+          "full_text": "Mycopunk tops 300,000 Steam sales following its 1.0 launch: https://t.co/Dd4guJ4K1j https://t.co/KgYN0MC4Fz",
+          "author": "Niche Gamer",
+          "date": "2026-10-27",
+          "likes": 11,
+          "views": 1151,
+          "link": "https://x.com/nichegamer/status/2115074036405248036",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVpAoKiXgAE316J.jpg"
+          },
+          "summary": "Niche Gamer 报道《Mycopunk》在 1.0 正式版发售后销量突破 30 万份。Steam 页面显示由 Pigeons at Play 开发，2026 年 10 月 20 日发售，国区现价 ¥29（原价 ¥58，五折），累计 4,572 条评价。推文 1,151 浏览。",
+          "analysis": "",
+          "recommendation": "《Mycopunk》1.0 一周卖出 30 万份：29 元的四人合作刷宝射击",
+          "game_ref": "mycopunk",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Mycopunk（真菌朋克）",
+            "genre": "合作射击 / 刷宝 / 动作（Steam 标签：动作、独立）",
+            "developer": "Pigeons at Play（发行：Devolver Digital）",
+            "platforms": [
+              "Steam（Windows）"
+            ],
+            "price": "¥29.00（原价 ¥58，五折）",
+            "release_date": "已发售 · 2026年10月20日",
+            "steam_rating": "4,572 条评价",
+            "steam_url": "https://store.steampowered.com/app/3247750/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3247750/67b1dc819a93d4e855b213b518f25a9700f46434/header.jpg?t=1792787251",
+            "youtube_video": null,
+            "description": "【核心玩法】任务制的四人合作刷宝射击：杀穿真菌异形，靠数以百计的升级项自定义武器与角色，局内 build 与局外成长叠加；支持单人、在线合作与手柄。\n\n【美术与氛围】真菌/生物朋克题材，敌人与场景主打有机黏液质感和夸张造型，整体是「爽快 + 荒诞」的调性，宣传语里连「小蟑螂人」都算卖点。\n\n【市场表现】2026 年 10 月 20 日结束抢先体验发 1.0，国区现价 ¥29（原价 ¥58，五折），发售一周后销量突破 30 万份，Steam 累计 4,572 条评价。\n\n【优势】低价 + 四人合作 + 刷宝成长三件套，进入门槛低、传播性强；1.0 的升级项规模足以支撑一段长线刷取。\n\n【不足】刷宝射击同质化严重，若后续内容更新跟不上，留存会掉得很快；单人体验的深度天然弱于组队。\n\n【综合】30 万份再次验证「29 元、四个人、打得爽」仍是当前独游最高效的公式之一——它卖的不是创新，而是把成熟循环做到位。",
+            "why_notable": "以 ¥29 的五折价格、四人合作刷宝的成熟循环，一周做到 30 万份，是低价合作射击的可复制样本",
+            "pcu": "未获取（有数GI 当日 Top500 未收录）",
+            "gi_summary": "「任务制刷宝射击」套「真菌朋克」外壳，支持四人合作，国区五折 ¥29"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "電ファミニコゲーマー · 发售节点（4Gamer 同日报道）",
+          "tags": [
+            "模拟经营",
+            "猎奇题材",
+            "日本独游"
+          ],
+          "title": "激光、火焰喷射器、魔术贴都能上：《脱毛沙龙模拟器》11 月 10 日转正式版",
+          "en_title": "レーザー、火炎放射器、マジックテープなど“脱毛”でやりたい放題できるゲーム『脱毛サロンシミュレーター』11月10日に正式版がリリース",
+          "full_text": "レーザー、火炎放射器、マジックテープなど“脱毛”でやりたい放題できるゲーム『脱毛サロンシミュレーター』11月10日に正式版がリリース\nhttps://t.co/QsoFWdxxgm\n\nサロンに訪れる男性客のニーズに答えていく。完璧な施術を施せばレビューで「星5つ」を獲得するが、事故れば中指をたてられることも https://t.co/BViBRjXIt4",
+          "author": "電ファミニコゲーマー",
+          "date": "2026-10-27",
+          "likes": 5556,
+          "views": 1284976,
+          "link": "https://x.com/denfaminicogame/status/2114919694461518125",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2114919664757440512/pu/img/8TpfADHF7WlZFzXM.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2114919694461518125/video/1"
+          },
+          "summary": "本作原本计划以抢先体验上线，因开发顺利改为直接发正式版，官方宣布 11 月 10 日发售。玩家经营男士专用脱毛沙龙，按到店顾客的需求施术：完美施术拿五星好评，失手会被竖中指，工具从医疗级激光到火焰喷射器、魔术贴一应俱全。推文 5,556 赞、128 万浏览、1,733 次转发，是今日热度最高的新游消息；Steam 页面（Yoshio Games 开发）标注发售日为 2026 年 11 月 9 日。",
+          "analysis": "",
+          "recommendation": "激光、火焰喷射器都能上手：《脱毛沙龙模拟器》11 月 10 日转正式版，128 万浏览",
+          "game_ref": "hair removal salon simulator",
+          "featured": true,
+          "enrichment": {
+            "game_name": "脱毛沙龙模拟器（脱毛サロンシミュレーター）",
+            "genre": "模拟经营 / 搞怪模拟",
+            "developer": "Yoshio Games",
+            "platforms": [
+              "Steam（Windows）"
+            ],
+            "price": "未公布（Steam 页面暂无价格）",
+            "release_date": "2026年11月10日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4351380/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4351380/f2851d6c4dccdb5dedb0e8aad9a8fae97ba5768d/header_schinese.jpg?t=1793064489",
+            "youtube_video": null,
+            "description": "【核心玩法】经营男士专用脱毛沙龙：用医疗级激光在顾客的痛觉边缘「极限微操」，按施术表现结算——完美就拿到五星好评，出事会被竖中指；用收入升级设备、招募员工、向客人推销天价护理套餐，把小店做成「猛男净身圣地」。\n\n【美术与氛围】日式搞怪模拟器路线：题材猎奇、演出夸张，宣传素材以激光、火焰喷射器、魔术贴等离谱施术工具为记忆点，天然适合短视频传播。\n\n【发售情况】原计划抢先体验，因开发顺利改为直接发正式版：官方推文宣布 11 月 10 日发售，Steam 页面标注 2026 年 11 月 9 日，价格尚未公布。\n\n【优势】题材自带传播力——单条官方推文 128 万浏览、5,556 赞，等于省掉一轮买量；「施术手感 + 门店经营」的双层循环让它不至于只剩噱头。\n\n【不足】猎奇题材的复玩性通常有限，热度集中在首周；门店经营的单一循环若缺少中期目标，几小时后容易失去驱动力。\n\n【综合】这是「题材即营销」的典型样本：荒谬感本身就是流量入口，但能不能把首周流量转成留存，取决于经营层的深度。",
+            "why_notable": "官方推文 128 万浏览，靠「荒谬题材 + 施术手感」零买量拿到曝光，是猎奇模拟器的最新样本",
+            "pcu": "暂未发售",
+            "gi_summary": "「男士脱毛沙龙经营」套「搞怪模拟」外壳，Yoshio Games 开发，2026 年 11 月发售"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Niche Gamer · 新游曝光",
+          "tags": [
+            "像素 RPG",
+            "开放世界",
+            "合作"
+          ],
+          "title": "《World of Anterra》：手工搭出来的像素开放世界，81monkeys 的野心之作",
+          "en_title": "World of Anterra is an insanely ambitious open-world pixel RPG!",
+          "full_text": "World of Anterra is an insanely ambitious open-world pixel RPG!\n\nhttps://t.co/HIDK408y8K \n\nEnter a sprawling, handcrafted pixel fantasy world and follow a non-linear story alongside rich lore, lots of quests, deep progression, and engaging combat~ https://t.co/HYmzXihxEd",
+          "author": "Niche Gamer",
+          "date": "2026-10-26",
+          "likes": 530,
+          "views": 15751,
+          "link": "https://x.com/nichegamer/status/2114775981848162603",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2114775906258399232/pu/img/EK5f2Q6zVZSpl9Kg.jpg",
+            "video_url": "https://x.com/nichegamer/status/2114775981848162603/video/1"
+          },
+          "summary": "Niche Gamer 称《World of Anterra》是「极度野心」的开放世界像素 RPG：手工搭建的像素奇幻世界、非线性剧情与大量任务、深度成长与战斗。Steam 页面显示由 81monkeys 开发，类型为冒险/独立/角色扮演，支持单人、在线合作与同屏分屏合作，发售日标注 2026 年（尚未定档）。推文 530 赞、1.6 万浏览，附实机视频。",
+          "analysis": "",
+          "recommendation": "手工像素开放世界 + 非线性叙事：《World of Anterra》放出实机，支持分屏合作",
+          "game_ref": "world of anterra",
+          "enrichment": {
+            "game_name": "World of Anterra",
+            "genre": "开放世界 / 像素 RPG / 冒险",
+            "developer": "81monkeys",
+            "platforms": [
+              "Steam（Windows）"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/2402470/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2402470/484806ff256a577a6a33001be44f14c7c958296d/header.jpg?t=1791929294",
+            "youtube_video": null,
+            "description": "【核心玩法】手工搭建的开放世界像素 RPG：地图不是程序生成，而是逐块手工设计；主线非线性，围绕「预言」与 Eye 之谜推进，过程中有会自行运转的城镇、野生动物、怪物地牢与大量支线。支持单人、在线合作以及同屏/分屏合作。\n\n【美术与氛围】像素奇幻 + 高密度手工细节，官方强调的是一个「living world」——城镇与生态在玩家不干预时也会继续运转，探索感来自密度而不是地图尺寸。\n\n【开发与档期】81monkeys 开发，Steam 页面类型为冒险/独立/角色扮演，发售日仅标注 2026 年，尚未定档。\n\n【优势】手工世界的密度是目前像素 RPG 的稀缺卖点；分屏/在线合作让它在本地社交场景有额外入口。\n\n【不足】野心与团队规模不匹配是最大风险——手工世界的内容填充速度决定了它会不会变成「前 10 小时惊艳、之后空转」；发售日迟迟不定也说明产能仍在爬坡。\n\n【综合】如果能在「手工密度」和「内容量」之间站住脚，它会是像素 RPG 对标长尾运营的候选；现在下判断还太早，值得放进愿望单观察。",
+            "why_notable": "手工搭建的开放世界 + 分屏合作，是像素 RPG 里少见的「密度优先」路线，档期未定但值得观察",
+            "pcu": "暂未发售",
+            "gi_summary": "「手工像素开放世界」+ 非线性叙事 + 分屏合作，81monkeys 开发"
+          }
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "GameSpot · 发售延期（Niche Gamer 同日报道）",
+          "tags": [
+            "种田 ARPG",
+            "延期",
+            "抢先体验"
+          ],
+          "title": "EA 前一天跳票：《余烬之镇 Emberville》从抢先体验推迟到 2027 年",
+          "en_title": "One Day Out From Early Access, Emberville Has Been Delayed To 2027",
+          "full_text": "One Day Out From Early Access, Emberville Has Been Delayed To 2027 dlvr.​it/TW4j8H https://t.co/yBc7tjTds6",
+          "author": "GameSpot",
+          "date": "2026-10-27",
+          "likes": 17,
+          "views": 10194,
+          "link": "https://x.com/GameSpot/status/2115088334217511030",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVpNoaEaUAABZ0O.jpg"
+          },
+          "summary": "种田向动作 RPG《Emberville》原定进入 Steam 抢先体验，却在开卖前一天宣布延期到 2027 年；Niche Gamer 同日报道了这一「最后一刻」的推迟。Steam 页面（Cygnus Cross 开发）仍显示「即将推出」，类型标注动作/冒险/独立/RPG/抢先体验。推文 1 万浏览。",
+          "analysis": "",
+          "recommendation": "EA 前一天跳票：《Emberville》从抢先体验推迟到 2027 年",
+          "game_ref": "emberville",
+          "enrichment": {
+            "game_name": "余烬之镇 Emberville",
+            "genre": "种田 / 动作 RPG / 冒险（含抢先体验）",
+            "developer": "Cygnus Cross",
+            "platforms": [
+              "Steam（Windows）"
+            ],
+            "price": "未公布",
+            "release_date": "2027年",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/2295170/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2295170/f5a2a4f9a84b904b455035a2943ed9e512fda847/header_schinese.jpg?t=1793058515",
+            "youtube_video": null,
+            "description": "【核心玩法】种田 + 动作 RPG 的复合结构：主角失忆后从「维特莫图斯」中苏醒，一边在破败的余烬镇重建家园、营救幸存者，一边进入被遗忘的秘境与异形魔兽战斗，每一次推进都会撕开这座「永恒监狱」真相的一角。\n\n【美术与氛围】暗黑奇幻包装下的经营玩法：温暖的重建循环与阴森地牢形成反差，叙事权重高于同类种田游戏。\n\n【发售情况】原定 2026 年 10 月进入 Steam 抢先体验，在开卖前一天宣布推迟到 2027 年；Steam 页面仍为「即将推出」，开发商 Cygnus Cross，类型标注动作/冒险/独立/RPG/抢先体验。\n\n【优势】「种田 + 战斗」正是当前最热的复合循环之一，加上更重的世界观包装，辨识度高于纯种田竞品。\n\n【不足】临门跳票通常意味着性能或内容量未达标，而 2027 年的档期会撞上更拥挤的同类产品，已积累的愿望单存在转化流失风险。\n\n【综合】值得盯的是它下一次公开的时间点：能不能给出可信的完成度，决定这次延期是「打磨」还是「难产」。",
+            "why_notable": "种田 + 暗黑动作 RPG 的组合切中热门区间，但 EA 前一天跳票到 2027，完成度存疑",
+            "pcu": "暂未发售",
+            "gi_summary": "「余烬镇重建」套「暗黑动作 RPG」，Cygnus Cross 开发，延期至 2027"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "Indie Game Joe · 新游曝光",
+          "tags": [
+            "像素格斗",
+            "怀旧",
+            "独立"
+          ],
+          "title": "《MythicTale》：GBA 时代「失落的龙珠游戏」式武道格斗",
+          "en_title": "This looks like a lost Dragon Ball game from the Game Boy Advance days",
+          "full_text": "This looks like a lost Dragon Ball game from the Game Boy Advance days\n\n- Fight rivals with fast martial arts combos\n- Charge your aura to fire energy attacks\n- Rise through the Super Fighter League\n\nGame is MythicTale. https://t.co/S49LftQhlw",
+          "author": "Indie Game Joe",
+          "date": "2026-10-26",
+          "likes": 703,
+          "views": 20826,
+          "link": "https://x.com/IndieGameJoe/status/2114832421791420854",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114831579625226240/img/kNhViEgA6eRuMsxw.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2114832421791420854/video/1"
+          },
+          "summary": "Indie Game Joe 称《MythicTale》像一款「GBA 时代失落的龙珠游戏」：快速武术连招对战宿敌、蓄气释放能量波、在 Super Fighter League 里一路打上去。推文 703 赞、2 万浏览，附对战视频。",
+          "analysis": "",
+          "recommendation": "GBA 龙珠味的武道格斗：《MythicTale》连招 + 蓄气放波，2 万浏览",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Aetheria · UEFN 地图更新",
+          "tags": [
+            "Fortnite",
+            "UEFN",
+            "自制地图"
+          ],
+          "title": "《Aetheria》：Fortnite UEFN 自制地图持续更新，地图码 1314-6986-8879",
+          "en_title": "Aetheria keeps growing with every update!",
+          "full_text": "Aetheria keeps growing with every update! ✨\n\nMap Code: 1314-6986-8879\n#UEFN #Fortnite https://t.co/GMAOiFelP7",
+          "author": "Aetheria",
+          "date": "2026-10-27",
+          "likes": 257,
+          "views": 10656,
+          "link": "https://x.com/CooliSushi/status/2115013036331430383",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115011166703681536/img/k-NKqi9YQPfzFbez.jpg",
+            "video_url": "https://x.com/CooliSushi/status/2115013036331430383/video/1"
+          },
+          "summary": "Aetheria 团队宣布 UEFN（Fortnite 虚幻编辑器）自制地图随版本持续扩张，公开地图码 1314-6986-8879 供玩家进入；推文 257 赞、1.1 万浏览，附场景视频。它代表的是「平台内自制内容」这条与 Steam 独游并行的分发路径。",
+          "analysis": "",
+          "recommendation": "Fortnite UEFN 自制地图《Aetheria》持续扩张，地图码已公开",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "123studio · 个人开发",
+          "tags": [
+            "浏览器游戏",
+            "多人对战",
+            "个人开发"
+          ],
+          "title": "《雪合战》：4 位合言码开房、最多 4 人对战的浏览器雪仗",
+          "en_title": "友達を誘って、雪合戦しよう",
+          "full_text": "友達を誘って、雪合戦しよう⛄\n\n4桁の合言葉で、最大4人まで対戦。\n当てたら帽子が吹っ飛んで、負けたら雪に埋もれます。\nおしりペンペンで煽ることも…\n\n1人でもCOM戦で遊べます。いちばん強い「おに」に勝てるか、挑戦してみてください。\n\n#ゲーム制作 #個人開発 #ブラウザゲーム #対戦ゲーム https://t.co/z8PBXyuYis",
+          "author": "123studio",
+          "date": "2026-10-27",
+          "likes": 5,
+          "views": 234,
+          "link": "https://x.com/123studio_games/status/2115082303215165666",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115082095869689856/img/_3bcHJpTe2iKK0wZ.jpg",
+            "video_url": "https://x.com/123studio_games/status/2115082303215165666/video/1"
+          },
+          "summary": "日本个人开发者 123studio 放出浏览器雪仗对战：输入 4 位合言码开房，最多 4 人同场；命中会把对手帽子打飞、输了会被埋进雪里，还能「拍屁股」嘲讽；单人可对 COM，挑战最强「鬼」。推文 234 浏览，属个人开发的小体量作品。",
+          "analysis": "",
+          "recommendation": "4 位合言码开房就能打的浏览器雪仗：《雪合战》支持 4 人对战与 COM",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Emm | scenario.com · 开源工具",
+          "tags": [
+            "像素 VFX",
+            "Claude Skill",
+            "Godot 4"
+          ],
+          "title": "开源一个 Claude skill：说一句法术，自动分层渲染出像素 VFX 并导出 Godot 4 资源",
+          "en_title": "We finally cracked pixel VFX. And we just open-sourced the Claude skill behind it.",
+          "full_text": "We finally cracked pixel VFX.\n\nAnd we just open-sourced the Claude skill behind it.\n\nDownload here: https://t.co/Jf9tHqIEYC\n\n> describe a spell and Claude stacks the layers: fireball, shockwave, sparks\n\n> the engine renders every frame locally, for free\n\n> export a sprite sheet, GIF or Godot 4 pack",
+          "author": "Emm | scenario.com",
+          "date": "2026-10-26",
+          "likes": 890,
+          "views": 44007,
+          "link": "https://x.com/emmanuel_2m/status/2114763793284857865",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114763729640316928/img/0ixAGTCVYZ7fDrqj.jpg",
+            "video_url": "https://x.com/emmanuel_2m/status/2114763793284857865/video/1"
+          },
+          "summary": "scenario.com 的 Emm 开源了他们的像素 VFX 方案：输入法术描述（火球、冲击波、火花），Claude 负责把效果分层堆叠；本地引擎逐帧渲染且不收费，最后导出精灵表、GIF 或 Godot 4 资源包。推文 890 赞、4.4 万浏览、69 次转发。中文圈已有开发者（码农暖爸）转述同一工具，说明跨语言传播已经启动。",
+          "analysis": "像素特效一直是 2D 独游最耗时的手工环节：一帧一帧画、逐层对齐、再导入引擎。这个 skill 把「分层堆叠」这一步交给模型、把渲染留在本地，等于用算力换掉了美术工时，同时避开了云端生成带来的风格不可控。对 Godot 团队尤其划算——导出即资源包，省掉管线胶水。",
+          "recommendation": "开源 Claude skill 做像素 VFX：一句话生成法术，直接导出 Godot 4 资源",
+          "featured": true
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**大厂收缩进入「先自愿后强制」阶段**\n微软宣布面向 6 万名符合条件员工推出自愿离职补偿，Xbox 也在其中——把裁员的舆论与法律成本前置成一笔支出。同一天，《Ghost of Yotei》开发商 Sucker Punch 被曝裁员，《奇异人生》开发商 Don't Nod 被法国工会指面临破产风险。三家公司的共同点是：作品本身并不失败，收缩来自「按项目峰值配人」的新预算逻辑。\n\n**玩家第一次把广告牌买到时代广场**\nBioWare 关闭、相关项目被砍后，「Save Mass Effect」运动在时代广场投放广告牌，请愿签名突破 22 万，并计划在年内继续推进。它改变不了 EA 的商业判断，但把「砍掉成熟 IP」的声誉成本抬到了董事会层面。\n\n**AI 标签之争，杀到美术这一环**\nbobo 的判断值得记住：标签一旦存在就会变成质量代理——判断玩法要三小时，判断画风只要三秒，所以「看起来像 AI」成了最难卖的理由；而同样用了 AI 的代码，几乎没人计较。同一天 Claude Code 被曝内置图像生成 skill，编码 Agent 开始直接产出美术；satounbd 则公开了「插画→360° 动画→带 ID 部件网格化」的 2D 转 3D 链路。\n\n**独游侧：29 元的合作刷宝，和 128 万浏览的脱毛沙龙**\n《Mycopunk》1.0 发售后一周卖出 30 万份；《脱毛沙龙模拟器》靠荒谬题材零买量拿到 128 万浏览，11 月 10 日转正式版；《World of Anterra》以手工像素开放世界 + 分屏合作放出实机；《余烬之镇 Emberville》则在 EA 前一天跳票到 2027。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
