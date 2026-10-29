@@ -1,0 +1,525 @@
+{
+  "date": "2026-10-29",
+  "meta": {
+    "raw_count": 286,
+    "filtered_count": 170,
+    "selected_count": 12,
+    "crawl_time": "2026-10-29 00:00"
+  },
+  "lede": "Valve 把反克隆的责任推回开发者：不设工具门槛，只建议把游戏做难抄；Steam 送审新增「开发者亲玩 5 分钟」，对准未验证就上架的批量作品。\n被克隆到分不清原版的小游戏，把「找出正版」做成了新玩法；Steam Next Fest 参展量已达 7300 款，是去年的 2.5 倍。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Valve 不拦 AI 克隆，只建议开发者把游戏做得更难抄"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "被克隆到分不清原版，他把「找出正版」做成了新玩法——2.9 万赞"
+    },
+    {
+      "section_id": "tools",
+      "item_index": 0,
+      "hook": "2600+ 免费游戏级 3D 模型，参数化可调外观与磨损"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Epic 确认 UE6 与 Fortnite 已在 vibe-coding，工程师不再手写大部分代码\nMolyneux：行业都在假装不用 AI，但如今几乎无法不用 AI 写代码\n日本委托方停掉重度用 AI 的工程师：交付质量逐日下滑"
+    },
+    {
+      "id": "industry",
+      "text": "Valve 不拦 AI 克隆，只建议开发者把游戏做得更难抄\nSteam 送审前必须开发者亲玩 5 分钟\nSteam Next Fest 参展 7300 款，同比 2.5 倍\n爆款独立游戏占 43%，2A 销量占比跌到 14%"
+    },
+    {
+      "id": "indie",
+      "text": "《Needle in a Haystack Simulator》把被克隆做成新玩法，80 万浏览\n《战争黎明 4》预览：Eurogamer 称“最慷慨的 RTS”\n《无人深空》'Forsaken' 恐怖更新，同日登陆移动端"
+    },
+    {
+      "id": "tools",
+      "text": "Polyfork 放出 2600+ 免费参数化 3D 模型，每周再加 200 个\nUE 5.8 MegaLights 官方 webinar 上线"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "PC Gamer · 科技媒体",
+          "tags": [
+            "AI编程",
+            "引擎",
+            "Epic"
+          ],
+          "title": "Epic 承认全面 vibe-coding：UE6 与 Fortnite 的大部分代码已不由工程师手写",
+          "en_title": "Epic is all-in on AI, 'vibe-coding' more than just its games launcher and Fortnite",
+          "full_text": "Epic is all-in on AI, 'vibe-coding' more than just its games launcher and Fortnite https://t.co/y8ykmbFIg2",
+          "author": "PC Gamer",
+          "date": "2026-10-28",
+          "likes": 18,
+          "views": 8534,
+          "link": "https://x.com/pcgamer/status/2115445986030236112",
+          "media": null,
+          "summary": "PC Gamer 报道，Epic 确认正在用 AI 工具编写 Unreal Engine 6、Fortnite 及更多产品的代码，官方说法是“我们确实在 vibe-coding”。Eurogamer 同日引述 Epic 的表态：工程师已不再手写大部分代码，公司更担心“动作太慢”的风险，而不是 AI 出错。",
+          "analysis": "引擎厂商自己先用 AI 重构自家代码，意味着下一代工具链的默认工作方式会向“提示词 + 验证”迁移。对中小团队，门槛从“会不会写代码”变成“能不能审出 AI 写的代码哪里错”，评审、自动化测试与可回滚的工程纪律必须前置。",
+          "recommendation": "Epic 确认 UE6 与 Fortnite 已在 vibe-coding，工程师不再手写大部分代码",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "PC Gamer · 媒体访谈",
+          "tags": [
+            "AI",
+            "行业观点",
+            "从业者"
+          ],
+          "title": "Peter Molyneux：行业在假装不用 AI，但今天几乎无法不用 AI 写代码",
+          "en_title": "We as the industry are pretending we're not using AI, but the reality is it's almost impossible to code now without using AI",
+          "full_text": "Molyneux is a gaming industry veteran, having been active in the gaming industry for over 40 years, so naturally his take on the rise of AI in game development was of interest. This is what he said when I asked if the gaming industry should embrace AI.\n\nhttps://t.co/xjDu5VOXcf\n\n#pcgamer #pcgaming #petermolyneux #ai #artificialintelligence",
+          "author": "PC Gamer",
+          "date": "2026-10-28",
+          "likes": 36,
+          "views": 18890,
+          "link": "https://x.com/pcgamer/status/2115413481088569513",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVt1WdObQAA51Gb.jpg"
+          },
+          "summary": "从业 40 余年的 Peter Molyneux 在受访时被问到“游戏业是否该拥抱 AI”，他直言业界公开场合都在“假装没用 AI”，现实是如今写代码几乎无法离开 AI 辅助。",
+          "analysis": "老牌制作人公开承认行业默契，说明 AI 已进入“默认使用但不公开宣传”的阶段。宣发口径与真实生产流程的落差会越来越大，团队更需要在内部明确哪些环节可用、如何留痕与验收，而不是只在公关层面回避。",
+          "recommendation": "Molyneux：行业都在假装不用 AI，但如今几乎无法不用 AI 写代码",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "日本受托开发方 · 从业者自述",
+          "tags": [
+            "AI",
+            "外包",
+            "交付质量"
+          ],
+          "title": "日本委托方终止与“重度使用 AI”的工程师合作：交付质量逐日下滑",
+          "en_title": "AI をめっちゃ使ってるエンジニアへの開発依頼を、やめることになりました…",
+          "full_text": "AI をめっちゃ使ってるエンジニアへの開発依頼を、やめることになりました…\n\n多分、改めてお願いすることもないので、また探していこうかなと！\n\n去年とかまでは良かったのですが、日に日に成果物のクオリティが、明らかに下がっていました。\n記載する文章やサイトの構造、配色などに謎が増えていきました。\n元々はすごく論理的な方で、全てに理由をつけて配置するようなタイプの方だったんです。\n\nこうなってしまった理由は察しがついていて、AI を使いすぎていることが原因だと思います。\n\n自分で実際に使ってみると感じる違和感があるUI も、テストを自動化して、触って確認していないんだろうなということがよく分かってしまいました。\n\n受け答えも「そこは…えーっと…なんでそうしたんだっけ。」みたいな対応が増えてしまっていました。これはクライアント様がめっちゃ不安になります…\n\n気持ちは分かる！\n考えなくても出来上がってくので、どんどん自分の経験を使わなくなってしまうわけです。\nただ、それだとエンジニアである自分達がやる理由がないわけですー\nクリエイティブ系の仕事はAI の使い方を考えないと、自分の芽を潰すことになるので気をつけます！",
+          "author": "げん🍎営業したくない受託開発の人",
+          "date": "2026-10-28",
+          "likes": 1572,
+          "views": 258080,
+          "link": "https://x.com/engineerHiyoko/status/2115270177415954798",
+          "media": null,
+          "summary": "一位日本受托开发从业者称已停止向长期合作、重度使用 AI 的工程师下单：近一年交付物的文案、站点结构与配色开始出现“说不清理由”的改动，UI 明显未经实际操作验证，沟通中常出现“当时为什么这么做”答不上来的情况。推文 1572 赞、25.8 万浏览。",
+          "analysis": "这是甲方视角的 AI 质量衰减样本：问题不在 AI 生成本身，而在跳过验证与判断。可操作的启示是把“人工确认过的验收项”写进交付标准，让 AI 提速的部分不侵蚀最后一道检查，否则省下的时间会以信任成本偿还。",
+          "recommendation": "日本委托方停掉重度用 AI 的工程师：交付质量逐日下滑，UI 没被真正验证"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 多家报道（GameSpot / Destructoid / TheGamer）",
+          "tags": [
+            "Valve",
+            "AI克隆",
+            "平台政策"
+          ],
+          "title": "Valve 回应 Steam 的 AI 克隆问题：不设工具门槛，建议开发者把游戏做得更难抄",
+          "en_title": "Valve addresses Steam's AI game cloning problem - by suggesting developers make their games less copyable",
+          "full_text": "Valve addresses Steam's AI game cloning problem - by suggesting developers make their games less copyable https://t.co/8AdFKLMbvR https://t.co/KIA28Eh6uk",
+          "author": "Eurogamer",
+          "date": "2026-10-28",
+          "likes": 30,
+          "views": 5737,
+          "link": "https://x.com/eurogamer/status/2115455440209506363",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVubZ2CWYAAQuZE.jpg"
+          },
+          "summary": "在韩国 Steam Indie Connect 上，Valve 商务团队的 Tom Giardino 与 Marc Wilkinson 被问及是否会阻止 AI 克隆游戏。Valve 表示不想当“告诉开发者该用哪些工具”的守门人，给出的方案是开发者自保：建立社区信任、保证正版是最好的版本、用复合机制代替单一易抄玩法。现场还有开发者反映曾被威胁“不付钱就克隆你的游戏”，Valve 称这类勒索应交给执法部门。",
+          "analysis": "平台把反克隆成本转移给开发者，短期内不会有大动作。实际应对只能落在“结构复杂度 + 社区资产 + 品牌识别”三件事上；对靠单一机制爆火的小团队，防盗版设计应当提前进立项讨论，而不是等被抄之后再想办法。",
+          "recommendation": "Valve 不拦 AI 克隆，只建议开发者把游戏做得更难抄",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "AUTOMATON · 日本游戏媒体",
+          "tags": [
+            "Steam",
+            "审核",
+            "平台规则"
+          ],
+          "title": "Steam 审核新增硬性要求：开发者须亲自在 Steam 上玩满 5 分钟才能送审",
+          "en_title": "Steamのリリース審査では、「開発者が5分間プレイしていること」がいつのまにか必須に",
+          "full_text": "Steamのリリース審査では、「開発者が5分間プレイしていること」がいつのまにか必須に。その作品、“本当に”遊べますか\nhttps://t.co/4YkMts5csz https://t.co/fHxH6Xzpug",
+          "author": "AUTOMATON（オートマトン）",
+          "date": "2026-10-28",
+          "likes": 689,
+          "views": 127205,
+          "link": "https://x.com/AUTOMATONJapan/status/2115349183498801453",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVs6yWfaIAAHTI2.jpg"
+          },
+          "summary": "Steam 的产品构建审核清单近期新增一条：送审前开发者须用开发者账号在 Steam 上启动该游戏并至少游玩 5 分钟，且需在过去 7 天内、或当前构建上传之后玩过，等于禁止“没跑过就送审”。AUTOMATON 引述 r/gamedev 讨论认为，这是针对粗制滥造（含 AI 批量生成）作品的低成本对策。推文 12.7 万浏览。",
+          "analysis": "这是 Valve 少见的“用流程门槛筛质量”动作：成本极低，但对批量铺货的自动化流水线有实质摩擦。对正规团队几乎无感，更值得注意的信号是——平台正在用可验证的行为数据替代内容审查来压缩低质供给。",
+          "recommendation": "Steam 送审前必须开发者亲玩 5 分钟，针对未验证就上架的批量作品",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "日本独立开发者 ししょう · 一线观察",
+          "tags": [
+            "Steam Next Fest",
+            "独立游戏",
+            "供给"
+          ],
+          "title": "Steam Next Fest 参展量约 7300 款，为去年 2.5 倍——开发者称“把游戏做完”已不再稀缺",
+          "en_title": "「ゲームを完成させるだけですごい」と言われた時代が終わった",
+          "full_text": "「ゲームを完成させるだけですごい」と言われた時代が終わった、今回のSteam Nextフェスに初参戦して感じたこと。\n\n今回のSteam Nextフェス、参加作品数は約7,300本。\n\n1年前の約2.5倍です。\n\nしかも、最近Xでゲーム開発をしている人をたくさんフォローするようになって感じたのは、7,300本でも全然少ないんじゃないかということです。\n\n私がゲームを作り始めた4年くらい前は、まだAIにコードを聞きながら、自分でコーディングするのが関の山でした。\n\n当時は個人でゲームを1本完成させるだけでもすごいと言われていました。\n\n今では、AIの進化によってゲームを完成させるハードルがすっかり下がりましたが、Claude Opus 5.5が登場したのは9月22日、CodexのGPT-6.1 Solが登場したのは9月29日。\n\nつい先月のことです。\n\nつまり今回の約7,300本という数字には、これら最新AIの影響はまだほとんど反映されていないはずです。\n\nそして、AIの進化はまだまだ続きます。\n\n今までなら技術的に難しくて諦めていた人も、もうゲームを完成させられるようになっている。\n\nそう考えると、次回、その次のNextフェスは一体何本になるんでしょうか。\n\nもちろん、作品数が増えた理由がすべてAIだとは思いません。\n\nでも、ゲームを作れる人が今後さらに増えるのは間違いないと思っています。\n\nそうなったとき、何が求められるんでしょうか。\n\n以前は「ゲームを完成させること」自体に価値がありました。\n\nでも、これからは完成させることが当たり前になっていく。\n\nグラフィックがきれいなゲームも、システムが凝っているゲームも、大量に出てくると思います。\n\n面白いアイデアを思いついても、似たようなゲームがすぐに出てくるかもしれません。\n\nそうなると、単純にクオリティを上げれば売れるという話でもなくなってきます。\n\n個人的には、これから重要になるのは「そのゲームでしかできない体験」と「それをどう伝えるか」なのかなと思っています。\n\nどんなに面白く作っても、そもそも見つけてもらえなければ遊んでもらえません。\n\n逆に、見た瞬間に「これ面白そう！」と思ってもらえるゲームは、それだけで大きな強みになります。\n\nただ、それもAIで簡単に真似できるようになったら？\n\nと考えると、結局はゲームデザインそのものの力が、より重要になるのかもしれません。\n\nAIがいろいろなものを作ってくれるからこそ、何を作るのか、何を入れないのか、どこを面白くするのか。\n\nそこを判断する人間の力が問われる気がします。\n\n自分も今回初めてNextフェスに参加して、ゲームを作ることと、実際に多くの人に遊んでもらうことは、まったく別の難しさがあると感じました。(結果の詳細はまた報告します。)\n\n4年前は、どうやったらゲームを完成させられるかを考えていました。\n\n今は、どうやったら数千本の中から自分のゲームを選んでもらえるかを考えています。\n\nそして1年後には、数万本の中から選んでもらうことを考えなければいけないのかもしれません。\n\nゲームを作ること自体は、どんどん簡単になる。\n\nでも、ゲームを遊んでもらうことは、どんどん難しくなる。\n\nつまり、何が言いたいかというと、\n数万人と戦う覚悟はできているか？\n私はできているぞ！",
+          "author": "ししょう Arcane Abyss｜Steam体験版公開中",
+          "date": "2026-10-28",
+          "likes": 104,
+          "views": 11532,
+          "link": "https://x.com/SSFworks/status/2115379060465713408",
+          "media": null,
+          "summary": "首次参加 Steam Next Fest 的日本独立开发者 ししょう 记录：本届参展作品约 7300 款，是去年的约 2.5 倍；而 Claude Opus 5.5（9 月 22 日）与 Codex 的 GPT-6.1 Sol（9 月 29 日）都在上个月才发布，因此这个数字还没反映最新一轮 AI 能力。他的判断是：把游戏做完已不值钱，稀缺的是“只有这个游戏能提供的体验”和“让人一眼想玩”的表达。",
+          "analysis": "供给侧的膨胀速度已经超过平台的分发能力，Next Fest 正在从“曝光机会”退化为“抽签”。对发行与立项来说，首屏可读性、社区与可传播的机制，比完成度更决定生死；这也解释了为什么同一天 Valve 开始用流程摩擦压供给。",
+          "recommendation": "Steam Next Fest 参展 7300 款、同比 2.5 倍，且尚未反映最新一轮 AI"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "五分之1蓝 · 中文从业者解读行业报告",
+          "tags": [
+            "市场数据",
+            "独立游戏",
+            "2A"
+          ],
+          "title": "行业报告解读：今年爆款独立游戏翻倍至 33 款、占爆款总量 43%，2A 销量占比跌至 14%",
+          "en_title": "最新游戏行业报告出来了。对于产品创作有一定导向作用",
+          "full_text": "最新游戏行业报告出来了。对于产品创作有一定导向作用，可以看一下。\n\n首先游戏市场整体在暴涨，而且增量几乎全是独立游戏和全新原创 IP 带来的，整个整个蛋糕变大了！\n\n其中最亮眼的，绝对是独立游戏的逆袭。\n去年能成为爆款的独立游戏只有 13 款，占比才 24%；今年直接翻倍涨到 33 款，占比冲到 43%，几乎撑起了近半的游戏爆款市场。\n\n很多人以为独立游戏火的都是小众小游戏，但今年完全不一样。今年销量顶流的独立游戏成绩极其夸张，《超级变色龙》首月卖了 1390 万份、《How to Fish》790 万份，就连大家期待已久的《杀戮尖塔 2》《空洞骑士：丝之歌》，销量全部稳居前列。\n\n现在的爆款独立游戏不再局限单一品类。\n此前大家印象里，独立出圈的大多是低价友尽联机小游戏，这次数据也能看出来，这类游戏确实是主力军。但除此之外，优质单人新作、口碑独立续作，同样能卖出爆炸销量。小工作室不靠堆预算，靠创意和打磨，真的能跑出百万、千万级销量。\n\n同时 2A 游戏的处境反而有点尴尬，数量没变，但销量占比逐年下滑，从 21% 跌到 14%，夹在 3A 大厂和黑马独立游戏中间，越来越难突围。",
+          "author": "五分之1蓝",
+          "date": "2026-10-28",
+          "likes": 20,
+          "views": 3726,
+          "link": "https://x.com/onefifthblue/status/2115295049982570715",
+          "media": null,
+          "summary": "中文开发者五分之1蓝 总结最新行业报告：市场整体增长几乎全部由独立游戏与全新原创 IP 带来；成为爆款的独立游戏从去年 13 款（24%）增至 33 款（43%），《超级变色龙》首月 1390 万份、《How to Fish》790 万份；2A 数量未变但销量占比从 21% 降至 14%。",
+          "analysis": "爆款结构正在向“小团队 + 原创 IP”倾斜，中间层 2A 被两头挤压。对中型团队，这组数据支持两个方向：要么把预算压到能承受失败的独游规模，要么直接对标 3A 工业化；维持不上不下的 2A 产能，是目前风险最高的位置。",
+          "recommendation": "爆款独立游戏从 13 款增至 33 款占 43%，2A 销量占比跌到 14%",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "开发者 Nas · 独立游戏",
+          "tags": [
+            "独立游戏",
+            "AI克隆",
+            "元玩法"
+          ],
+          "title": "《Needle in a Haystack Simulator》开发者把“被克隆”做成了新玩法：从一堆仿品里找出正版",
+          "en_title": "Our needle in a haystack game has been cloned so many times we made a new game mode: find the original game",
+          "full_text": "Our needle in a haystack game has been cloned so many times we made a new game mode\n\nfind the original game https://t.co/DH4nBMoYhg",
+          "author": "Nas",
+          "date": "2026-10-27",
+          "likes": 29183,
+          "views": 805588,
+          "link": "https://x.com/NasNakarus/status/2115146693889183955",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115146632014548992/img/OMAro76ZjdbP9dhw.jpg",
+            "video_url": "https://x.com/NasNakarus/status/2115146693889183955/video/1"
+          },
+          "summary": "尚未发售的《Needle in a Haystack Simulator》在 Roblox 与 Steam 上出现大量克隆品，原作者索性新增一个模式：在一堆相似游戏里找出“正版”。推文 2.9 万赞、80.5 万浏览，Eurogamer 与 GameSpark 均跟进报道，Eurogamer 指出 Valve 对此的回应只是建议开发者把游戏做得更难抄。",
+          "analysis": "",
+          "recommendation": "被克隆到分不清原版，他把“找出正版”做成了新玩法——2.9 万赞",
+          "game_ref": "Needle in a Haystack Simulator",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Needle in a Haystack Simulator（大海捞针模拟器）",
+            "genre": "休闲 / 模拟（视觉搜索、找物）",
+            "developer": "Studio Bitdot（发行：Polden Publishing）",
+            "platforms": [
+              "Steam（Windows）"
+            ],
+            "price": "未公布",
+            "release_date": "2026 年第四季度",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5159870/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5159870/bf2f92ec369414ec9a58880f01b68aeaa0794ac2/header_schinese.jpg?t=1793124354",
+            "youtube_video": null,
+            "description": "【核心玩法】极致的视觉搜索：Steam 页面写得很直白——在 500 万根干草中找出唯一那根针。玩法靠高密度画面里的耐心搜索与“找到了”的确认时刻驱动，规则一句话能讲完。\n\n【为什么突然爆火】游戏还没发售，Roblox 与 Steam 上就冒出大量克隆品，多到难以分辨哪款是正版。开发者没有走维权路线，而是新增一个模式：让玩家从一堆仿品里找出原作本身——把被抄袭的处境直接变成内容。\n\n【形式与传播】极简玩法 + 反常识设定，是典型的社交传播型小体量作品：一张截图或十几秒视频就能完整表达，天然适配 X 的传播结构。\n\n【优势】概念清晰、成本极低、话题自带；反向营销把负面处境转成流量，单条推文 80 万浏览。\n\n【风险】单一机制极易被复制，长期留存依赖持续更新与社区；元玩法的新鲜感也会快速衰减。\n\n【综合】2026 年 AI 克隆潮的活样本：当玩法护城河不深时，社区、叙事与“正版身份”本身就是资产。开发 Studio Bitdot，发行 Polden Publishing，预计 2026 年第四季度上线。",
+            "why_notable": "被 AI 克隆围困的独立小游戏，把“找出正版”做成了新玩法，单条推文 80 万浏览",
+            "pcu": "未发售",
+            "current_players": null,
+            "estimated_sales": "暂无公开数据",
+            "gi_summary": "「500 万根干草里找一根针」的极简找物游戏，因被大量克隆而以元玩法出圈"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Eurogamer · 预览与制作人访谈",
+          "tags": [
+            "RTS",
+            "战锤40K",
+            "新作"
+          ],
+          "title": "《战锤 40K：战争黎明 4》预览：Eurogamer 称“我玩过最慷慨的 RTS”",
+          "en_title": "After dozens of hours with it, Dawn of War 4 may be the most generous RTS I've played",
+          "full_text": "Da boyz are back in DoW...\n\nAfter dozens of hours with it, Dawn of War 4 may be the most generous RTS I've played:\n\nHere's our big preview - and interview with game director Jan Theysen:\n\nhttps://t.co/csInA21H4j https://t.co/NQU1mPJSdI",
+          "author": "Eurogamer",
+          "date": "2026-10-28",
+          "likes": 27,
+          "views": 3393,
+          "link": "https://x.com/eurogamer/status/2115442651004834185",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVuP2rNWQAAhKs4.jpg"
+          },
+          "summary": "Eurogamer 在数十小时试玩后发布预览，称《战争黎明 4》可能是“我玩过最慷慨的 RTS”，并附游戏总监 Jan Theysen 访谈。Steam 页面显示由 KING Art 开发、Deep Silver 发行，四个阵营（含首次登场的机械修会）、70+ 战役任务，以及 Last Stand、小规模冲突与多人模式，2026 年 12 月 3 日发售，国区 ¥232.20。",
+          "analysis": "",
+          "recommendation": "Eurogamer 试玩数十小时后称《战争黎明 4》是“最慷慨的 RTS”",
+          "game_ref": "Warhammer 40,000: Dawn of War IV",
+          "enrichment": {
+            "game_name": "Warhammer 40,000: Dawn of War IV（战锤 40K：战争黎明 4）",
+            "genre": "即时战略 / 策略 / 动作",
+            "developer": "KING Art（发行：Deep Silver）",
+            "platforms": [
+              "Steam（Windows）"
+            ],
+            "price": "¥232.20",
+            "release_date": "2026 年 12 月 3 日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/2272360/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2272360/f50a309da98ef75cbdae400a7d492e36314ce415/header.jpg?t=1792764286",
+            "youtube_video": null,
+            "description": "【核心玩法】回归系列根源的正统 RTS：指挥四个独特阵营（含本系列初次登场的机械修会），在超过 70 个战役任务里推进战线，另有 Last Stand、小规模冲突与多人对战模式。\n\n【为什么被称作“最慷慨”】Eurogamer 试玩数十小时后的判断是内容一次性给足：战役长度、模式数量与阵营差异都超出同类新品，而不是靠后续 DLC 补齐骨架。\n\n【开发与发行】由 KING Art 开发、Deep Silver 发行，2026 年 12 月 3 日发售，国区预购 ¥232.20，属中高价位的买断制 RTS。\n\n【优势】老 IP 认知度高，内容量对 RTS 存量用户吸引力明确；单人战役与多人模式覆盖面完整。\n\n【风险】RTS 品类整体萎缩、新手门槛高；价位偏高，需要足够的口碑支撑首周转化；多人平衡与 AI 质量决定长线。\n\n【综合】典型的存量品类“内容饱和”打法——不追求品类创新，而是把老玩家的内容焦虑一次性解决掉。成败取决于战役质量与多人平衡，而不是宣传声量。",
+            "why_notable": "老牌 RTS 以“内容给足”回归，Eurogamer 数十小时试玩给出高评价",
+            "pcu": "未发售",
+            "current_players": null,
+            "estimated_sales": "暂无公开数据",
+            "gi_summary": "经典 RTS 系列新作，四阵营 + 70 余战役任务，12 月 3 日发售"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Polygon · 游戏媒体",
+          "tags": [
+            "大版本更新",
+            "恐怖",
+            "移动端"
+          ],
+          "title": "《无人深空》'Forsaken' 更新转向恐怖，同日登陆移动端",
+          "en_title": "No Man's Sky Goes Full Horror in New 'Forsaken' Update",
+          "full_text": "No Man’s Sky Goes Full Horror in New 'Forsaken' Update https://t.co/0Hq5bqby9G https://t.co/NXiQYd8Bhe",
+          "author": "Polygon",
+          "date": "2026-10-28",
+          "likes": 5,
+          "views": 3402,
+          "link": "https://x.com/Polygon/status/2115453579905360249",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVuZ0i2WUAAg07u.jpg"
+          },
+          "summary": "Hello Games 为《无人深空》推送 'Forsaken' 更新，整体氛围转向恐怖，新增配送任务与“无缝”星际航行；Eurogamer 同日报道游戏正式登陆移动端，并称此次更新对所有平台开放。",
+          "analysis": "",
+          "recommendation": "《无人深空》'Forsaken' 更新转恐怖题材，同日登陆移动端",
+          "game_ref": "No Man's Sky",
+          "enrichment": {
+            "game_name": "No Man's Sky（无人深空）",
+            "genre": "动作 / 冒险 / 太空探索",
+            "developer": "Hello Games",
+            "platforms": [
+              "Steam（Windows / Mac）",
+              "移动端"
+            ],
+            "price": "¥70.00",
+            "release_date": "已发售 · 2016年8月12日",
+            "steam_rating": "318,935 条评价",
+            "steam_url": "https://store.steampowered.com/app/275850/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/9f1ca9e3b7d1dccb7b5af404a6739ddc1118ef32/header_alt_assets_26.jpg?t=1793196605",
+            "youtube_video": null,
+            "description": "【更新内容】'Forsaken' 把《无人深空》的整体氛围推向恐怖：新增配送任务线与“无缝”星际航行，同时游戏正式登陆移动端，更新对所有平台开放。\n\n【定位】2016 年发售时因内容落差遭遇口碑崩塌，此后靠持续免费大版本（Next、Beyond、Origins 等）完成逆袭，如今仍是“长线免费更新”的样板案例。\n\n【为什么值得看】把一个以“广袤探索”为卖点的游戏切到恐怖调性，是一次题材层面的自我重启：用既有资产做新情绪，而不是开发新作。\n\n【优势】内容资产复用效率极高，一次更新同时服务 PC、主机与移动端；Steam 累计 31.9 万条评价，用户基数足以支撑实验。\n\n【风险】恐怖方向与原有探索基调存在错位，可能劝退偏好轻松探索的老玩家；移动端操作与性能适配是新增变量。\n\n【综合】用题材切换延长十年老游戏的生命周期，本质是把“更新”当作产品迭代而非售后。",
+            "why_notable": "十年老游戏靠免费恐怖大版本 + 移动端继续扩张用户场景",
+            "pcu": "暂无公开数据",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "太空探索长线运营标杆，'Forsaken' 恐怖更新同步登陆移动端"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "Charcher · 独立游戏",
+          "tags": [
+            "独立游戏",
+            "每日玩法",
+            "对战"
+          ],
+          "title": "《PokéBonk》加入 Daily Mutation：每天改一条规则，全服同图共用日榜",
+          "en_title": "NEW in PokéBonk: Daily Mutation!",
+          "full_text": "🧬 NEW in PokéBonk: Daily Mutation!\n\nEach day a twist changes the rules: giant Dynamax wilds, double XP, a quarter of your HP… Same map for all, daily leaderboard.\n\nWe kick off TODAY with 🎵 Metronome: every 30s one of your moves becomes a random one! https://t.co/JcwMEg9SSe",
+          "author": "Charcher",
+          "date": "2026-10-27",
+          "likes": 132,
+          "views": 13395,
+          "link": "https://x.com/ImCharcher/status/2115156531108774318",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVqKdpdXMAAU3bV.jpg"
+          },
+          "summary": "独立开发者 Charcher 为《PokéBonk》加入 Daily Mutation 模式：每天一条规则改动（巨型极巨化野生怪、双倍经验、血量只剩四分之一等），所有人同一张地图，配每日排行榜；首日规则是 Metronome——每 30 秒有一个招式变成随机招式。推文 132 赞、1.3 万浏览。",
+          "analysis": "",
+          "recommendation": "每天换一条规则的宝可梦式对战，全服同图共用日榜",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "みずみず · 个人开发",
+          "tags": [
+            "独立游戏",
+            "竞技场",
+            "技能设计"
+          ],
+          "title": "《TOKUGI ARENA》展示能量屏障：己方子弹可穿透，可持盾移动但更易碎",
+          "en_title": "【スキル紹介：エネルギー障壁】",
+          "full_text": "【スキル紹介：エネルギー障壁】\n物理障壁とは異なり、味方の弾はすり抜けます\n持ったまま移動できますが、固定したときよりも脆く、結構簡単に割れてしまいます。\n\n得意な特技でエネルギーをためて戦う『TOKUGI ARENA』。\n#個人開発 #ゲーム制作 https://t.co/KXA3VVFnBa",
+          "author": "みずみず@ゲーム開発",
+          "date": "2026-10-27",
+          "likes": 94,
+          "views": 4517,
+          "link": "https://x.com/tokugi_arena/status/2115126090553557449",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2115126051345174528/pu/img/MGWJAg_wmszzcvtH.jpg",
+            "video_url": "https://x.com/tokugi_arena/status/2115126090553557449/video/1"
+          },
+          "summary": "日本个人开发者 みずみず 展示《TOKUGI ARENA》的能量屏障技能：与物理屏障不同，己方子弹可以穿过；屏障可随身携带移动，但比固定放置时更脆弱，容易被打碎。游戏以“用得意技积攒能量再作战”为核心。推文 94 赞、4517 浏览。",
+          "analysis": "",
+          "recommendation": "可移动的能量盾：己方子弹穿得过去，但比固定盾更脆",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Rock Paper Shotgun · 试玩",
+          "tags": [
+            "独立游戏",
+            "放置",
+            "自动化"
+          ],
+          "title": "《Moon Sweepers》：放置 + 自动化的混合体，RPS 称同时戳中 Satisfactory 与 Cookie Clicker 的瘾",
+          "en_title": "Part idle game, part automation game, Moon Sweepers exploits the sickness in me that adores both Satisfactory and Cookie Clicker",
+          "full_text": "Part idle game, part automation game, Moon Sweepers exploits the sickness in me that adores both Satisfactory and Cookie Clicker https://t.co/5kIawxskLK",
+          "author": "Rock Paper Shotgun",
+          "date": "2026-10-28",
+          "likes": 0,
+          "views": 1355,
+          "link": "https://x.com/rockpapershot/status/2115375788618850365",
+          "media": null,
+          "summary": "Rock Paper Shotgun 试玩《Moon Sweepers》后将其概括为“一半放置、一半自动化”，称它精准命中了同时喜欢《幸福工厂》和《Cookie Clicker》的那类玩家。Steam 页面已上线。",
+          "analysis": "",
+          "recommendation": "放置 + 自动化混合的《Moon Sweepers》，RPS 试玩后点名推荐",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Rock Paper Shotgun · 试玩",
+          "tags": [
+            "独立游戏",
+            "解谜",
+            "恐怖氛围"
+          ],
+          "title": "《Hot Wax》：把俄罗斯方块规则改成慢热解谜，外加一层克苏鲁式压迫感",
+          "en_title": "Hot Wax sets fire to the Tetris playbook with slow-burn puzzle mechanics and a dollop of eldritch menace",
+          "full_text": "Hot Wax sets fire to the Tetris playbook with slow-burn puzzle mechanics and a dollop of eldritch menace https://t.co/bVQzp9CZhi",
+          "author": "Rock Paper Shotgun",
+          "date": "2026-10-28",
+          "likes": 0,
+          "views": 1103,
+          "link": "https://x.com/rockpapershot/status/2115436259476656484",
+          "media": null,
+          "summary": "Rock Paper Shotgun 介绍《Hot Wax》：以俄罗斯方块的落块规则为底，改成慢节奏的解谜机制，并叠加克苏鲁式的诡异氛围。Steam 页面（含 Demo）已上线。",
+          "analysis": "",
+          "recommendation": "俄罗斯方块底子 + 慢热解谜 + 克苏鲁氛围的《Hot Wax》",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Polyfork · 工具发布",
+          "tags": [
+            "3D资产",
+            "程序化",
+            "免费"
+          ],
+          "title": "Polyfork 放出 2600+ 免费游戏级 3D 模型，每周再加 200 个，且每个模型都可参数化调节",
+          "en_title": "NVIDIA did it first, now we are releasing 2,600+ free game-ready 3D models (+200 each week). For good.",
+          "full_text": "📦 NVIDIA did it first, now we are releasing 2,600+ free game-ready 3D models (+200 each week). For good.\n\n🎛️ Each model is a program, with parameters you can tweak to customize look, state, season, color, wear, etc.\n\nAll thanks to the $500,000 in funding we received from @xprize and @GeminiApp and all of our early individual funders, thank you all!\n\nGo build.\n\nhttps://t.co/YxZGLcP0fG",
+          "author": "Polyfork",
+          "date": "2026-10-27",
+          "likes": 2334,
+          "views": 144019,
+          "link": "https://x.com/Polyfork3d/status/2115097607634551081",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115097114040487938/img/pyLf2D2FNGJFDKMD.jpg",
+            "video_url": "https://x.com/Polyfork3d/status/2115097607634551081/video/1"
+          },
+          "summary": "Polyfork 宣布开放 2600 多个免费、可直接用于游戏的 3D 模型，每周新增 200 个。每个模型以“程序”形式提供，可调外观、状态、季节、颜色、磨损等参数。团队称资金来自 XPRIZE 与 Gemini 共 50 万美元及早期个人支持者。推文 2334 赞、14.4 万浏览。",
+          "analysis": "参数化资产把一部分“美术外包”转成“配置参数”，对原型阶段与场景填充的价值最大，也降低了小团队做风格一致场景的成本。需要注意两点：程序化资产容易让不同项目看起来趋同；商用授权条款要提前确认，别把免费资产直接堆进正式版。",
+          "recommendation": "2600+ 免费游戏级 3D 模型，参数化可调外观与磨损，每周再加 200 个",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Unreal Engine · 官方",
+          "tags": [
+            "UE5.8",
+            "光照",
+            "官方教程"
+          ],
+          "title": "UE 5.8 MegaLights 官方 webinar 回放上线：上千个动态投影光源下维持性能",
+          "en_title": "Discover how MegaLights in Unreal Engine 5.8 can transform the way you light your environments",
+          "full_text": "Discover how MegaLights in Unreal Engine 5.8 can transform the way you light your environments with thousands of dynamic, shadow-casting lights while maintaining performance 🔦\n\nGet yourself started with the latest VOD form our recent Megalights in Unreal Engine 5.8 webinar, now available on the UE YouTube channel!: https://t.co/yIzk8qTlxD",
+          "author": "Unreal Engine",
+          "date": "2026-10-28",
+          "likes": 68,
+          "views": 4111,
+          "link": "https://x.com/UnrealEngine/status/2115473928890286516",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVusGFPbEAAFK1E.jpg"
+          },
+          "summary": "Epic 发布 UE 5.8 MegaLights 的 webinar 录像，演示在上千个动态、带阴影的光源同时存在时如何维持性能，并给出上手路径；录像已上传到 UE 官方 YouTube 频道。",
+          "analysis": "光照长期是写实场景的性能瓶颈，MegaLights 把“多光源”从美术限制变成可负担选项，直接影响关卡与场景预算的分配方式。对中小团队，建议先在小场景验证再扩大使用范围，避免在项目中期做光照架构迁移。",
+          "recommendation": "UE 5.8 MegaLights 官方 webinar 上线：上千动态阴影光源仍保性能",
+          "featured": true
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**平台把反克隆的成本推回开发者**\nValve 在韩国 Steam Indie Connect 上的表态很直接：不当“告诉开发者用什么工具”的守门人，反克隆靠开发者自己把游戏做复杂、做社区、做正版体验。同日 Steam 送审清单新增“开发者须亲玩 5 分钟”，AUTOMATON 与 r/gamedev 讨论均认为这是针对未运行验证就送审的批量作品。两个动作指向同一件事：平台正在用流程摩擦替代内容审查。\n\n**供给膨胀的速度已经超过分发能力**\n首次参加 Steam Next Fest 的日本开发者记录：本届约 7300 款，是去年 2.5 倍，而且还没算上 9 月底才发布的 Opus 5.5 与 GPT-6.1 Sol 带来的增量。同期一份行业报告显示，爆款独立游戏从 13 款增至 33 款、占比 43%，2A 销量占比从 21% 跌到 14%。\n\n**AI 已是默认生产工具，公开口径仍在回避**\nEpic 承认 UE6 与 Fortnite 的大部分代码已不由工程师手写；Molyneux 说行业“在假装不用 AI”；另一边，日本委托方因交付质量逐日下滑停掉了重度使用 AI 的工程师。三种立场共同说明：验证与判断正在成为新的稀缺能力。\n\n**今日最热的新游消息**\n《Needle in a Haystack Simulator》被克隆到分不清原版，开发者把“找出正版”做成了新玩法，2.9 万赞、80 万浏览。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
