@@ -1,0 +1,503 @@
+{
+  "date": "2026-10-30",
+  "meta": {
+    "raw_count": 301,
+    "filtered_count": 198,
+    "selected_count": 12,
+    "crawl_time": "2026-10-30 09:32"
+  },
+  "lede": "《GTA V》除线上模式外整包被搬进 Roblox，Opus 5.5 生成、稳定 60fps；《深空当铺》首日 20 万份、90 分钟内 8.6 万人同时在线；《影之刃零》首日 43.15 万 CCU 冲上 Steam 第二，分析师估销量破百万。",
+  "editors_pick": [
+    { "section_id": "ai", "item_index": 0, "hook": "《GTA V》除线上模式外整包搬进 Roblox，Opus 5.5 生成、稳定 60fps——8105 赞" },
+    { "section_id": "industry", "item_index": 0, "hook": "《影之刃零》首日 43.15 万 CCU 冲上 Steam 第二，分析师估销量破百万——¥268 买断" },
+    { "section_id": "indie", "item_index": 0, "hook": "《深空当铺》首日 20 万份、90 分钟内 8.6 万人同时在线——95% 好评" }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "《GTA V》除线上模式外整包搬进 Roblox，Opus 5.5 生成、稳定 60fps\nGitHub 单月 74 亿次 commit，微软紧急扩容 400 万核与 160PB\nNVIDIA MotionBricks 接进 Godot：0 关键帧，纯 CPU 约 30ms 生成一次"
+    },
+    {
+      "id": "industry",
+      "text": "《影之刃零》首日 43.15 万 CCU，分析师估销量已破 100 万\nEA 员工爆料裁员后的秘密文化：被裁只能从 LinkedIn 得知\nXbox 硬件同比 -14%，负责人称「需求大于供给」\n《上古卷轴 6》据称定名 Sentinel、舞台在 Hammerfell"
+    },
+    {
+      "id": "indie",
+      "text": "《深空当铺：可能是偷的》首日数小时 20 万份，90 分钟 8.6 万人同时在线\n《缄默祸运》Steam 销量破 80 万，同日登陆 Xbox 与 Game Pass\n《Nomad Drive》把末日生存做成房车露营，支持 4 人合作"
+    },
+    {
+      "id": "tools",
+      "text": "Claude Code 原作者公开 28 分钟提示词课：CLAUDE.md、并行会话与提示词模式\nUnity 6.6：UI Toolkit 原生磨砂玻璃景深，uGUI 自动处理 SafeArea"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "开发者社群 · AI能力演示",
+          "tags": ["AI生成", "Roblox", "GTA V"],
+          "title": "《GTA V》整包被搬进 Roblox：Opus 5.5 生成、除线上模式外全可玩，稳定 60fps",
+          "en_title": "another clip of GTA V imported in ROBLOX using opus 5.5 / runs at a stable 60 fps / full game exported btw except online mode",
+          "full_text": "ROBLOX DEVS ARE COOKED...😭\n\nanother clip of GTA V imported in ROBLOX using opus 5.5\nruns at a stable 60 fps 😰\n\nfull game exported btw except online mode\n#roblox #RobloxDevs https://t.co/Ngs90c20Os",
+          "author": "el1xx_td",
+          "date": "2026-10-28",
+          "likes": 8105,
+          "views": 556376,
+          "link": "https://x.com/el1xx_td/status/2115504699868696613",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115504024204001280/img/NiQ3pR-VVqCgZWgy.jpg",
+            "video_url": "https://x.com/el1xx_td/status/2115504699868696613/video/1"
+          },
+          "summary": "博主展示了另一段“把《GTA V》搬进 Roblox”的实机画面：用 Opus 5.5 生成，稳定跑 60fps，并称除线上模式外整个游戏都已导出。推文 8105 赞、55.6 万浏览，评论区集中在“Roblox 开发者要被卷死”。",
+          "analysis": "这条的意义不在“AI 能写代码”，而在于整款商业 3A 的资产、逻辑、UI 被打包迁移到另一套运行时上，且性能可用。对平台方，这类内容一旦常态化，正版边界与 UGC 审核会同时承压；对开发者，移植与重制的成本曲线正在被改写。",
+          "recommendation": "《GTA V》除线上模式外整包搬进 Roblox，Opus 5.5 生成、稳定 60fps——8105 赞",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "中文博主 · 平台观察",
+          "tags": ["Agent", "GitHub", "工程治理"],
+          "title": "AI Agent 把 GitHub 撑爆：单月 74 亿次 commit，微软紧急扩容 400 万核",
+          "en_title": "GitHub 刚宣布要紧急扩容 400 万个 CPU 核心和 160 PB 存储，9 月单月 Commit 飙到了 74 亿次",
+          "full_text": "笑死了，AI 造的屎，快把 GitHub 拉满了。\n\nGitHub 刚宣布要紧急扩容 400 万个 CPU 核心和 160 PB 存储。\n9 月单月 Commit 飙到了 74 亿次，整整是去年的 5 倍。\n\n今年 GitHub 动不动就挂，90 天可用性一度掉到 84%，之前还以为是微软运维拉胯，\n现在破案了：全是这帮无脑 Agent 害的。\n\n人写代码好歹在本地测通了才推，现在的 Agent 是改个空格推一次，报错了换个变量推一次，疯狂跑 Actions 流水线试错。一晚上正经功能没憋出来几个，git log 刷出几十页。\n\n最恶心的是，真人要提个正经 PR，流水线排队还要排在几万个死循环重试的 Agent 屁股后面。\n\n天天吹 AI 提高生产力，代码质量没见提升多少，先把平台给拖垮了，倒逼微软买 400 万核服务器去擦屁股。",
+          "author": "Unicorn",
+          "date": "2026-10-29",
+          "likes": 1813,
+          "views": 292775,
+          "link": "https://x.com/ohayou792/status/2115688877797286011",
+          "media": null,
+          "summary": "博主称 GitHub 宣布紧急扩容 400 万个 CPU 核与 160PB 存储：9 月单月 commit 达 74 亿次、为去年 5 倍，今年 90 天可用性一度降到 84%。他把崩盘归因于 Agent 高频试错式提交与 Actions 重跑，认为真人 PR 被挤在数万个循环重试任务之后。（数据为博主转述，未附公告原文）",
+          "analysis": "即便数字口径有偏差，现象值得当真：Agent 把“提交”从里程碑变成了试错动作，成本从开发者时间转移到了平台与 CI 预算。团队真正需要的是提交与流水线的配额治理、Agent 分支隔离、以及把 Actions 分钟数当成本项看，而不是继续按人头配额度。",
+          "recommendation": "GitHub 单月 74 亿次 commit、紧急扩 400 万核：Agent 试错式提交开始反噬平台",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "AI 影像创作者 · 技术实测",
+          "tags": ["动作生成", "Godot", "开源可商用"],
+          "title": "NVIDIA MotionBricks 人体动作模型接入 Godot：0 关键帧，纯 CPU 约 30ms 生成一次",
+          "en_title": "NVIDIAのモーション生成AI「MotionBricks」…今回はこれをゲームエンジンのGodotに組み込んで、ふつうの人型キャラを動かしてみました",
+          "full_text": "ええええ、待って 🤯\nNVIDIAのモーション生成AI「MotionBricks」。\nSIGGRAPH 2026の研究で、ロボット版に続いて10月に人間版のモデルが公開されたばかり。\nこれが、ほんとにヤバい。\n\n手付けアニメ0コマで、こんなに人間っぽく動くの……？\n走って、壁をひょいっと越えて、ゾンビ歩きして、椅子にちょこんと座る。\nこれ、ぜんぶAIがその場で生成してます。\n\n■ 何がすごいのか\n・「今の動き」と「ゴールのポーズ」を渡すだけで、そのあいだの自然な動きを一瞬で生成\n・走る、止まる、振り向く、どれもリアルタイム。ゾンビ歩きやスキップなど、歩き方もボタンひとつで切り替え\n・壁越えや着席は「Smart Primitive」という動きのパーツ。MotionBricksの名前どおり、ブロックみたいに組み合わせるだけで使えて、再学習もいらない\n・学習元は約700時間、35万クリップのモーションキャプチャ。だから重心の移し方や腕の振りまで、ちゃんと人間らしい\n・しかもモデル本体は公開済みで、商用利用もOK\n\n今回はこれをゲームエンジンのGodotに組み込んで、ふつうの人型キャラを動かしてみました。\nGPUは使わずCPUだけで、1回の生成は約30ミリ秒。ノートPCでもサクサク動きます。\n\nキャラアニメの作り方、ここから本当に変わっていくと思う🐰",
+          "author": "KANA｜東京AI映像",
+          "date": "2026-10-29",
+          "likes": 258,
+          "views": 9332,
+          "link": "https://x.com/KanaWorks_AI/status/2115798609467933083",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115798004196425728/img/RSCX31qyDbeEMSvi.jpg",
+            "video_url": "https://x.com/KanaWorks_AI/status/2115798609467933083/video/1"
+          },
+          "summary": "博主把 NVIDIA 的 MotionBricks 人体动作模型接进 Godot 实测：只需给出当前动作与目标姿态，即可实时生成中间动作，跑、停、转身、僵尸步、翻墙、坐下都支持，姿态切换为可组合的 Smart Primitive，无需重训。模型基于约 700 小时、35 万段动捕训练，权重已公开且可商用；实测纯 CPU 单次生成约 30ms，笔记本可跑。",
+          "analysis": "角色动画一直是独立团队最贵的环节：一个动作要动捕、要清、要重定向。现在“动作之间怎么过渡”变成了推理问题，成本从人力转向算力，且不依赖 GPU。短期它替代的是过渡与位移类动画，表演性的关键帧仍需手调——但美术外包的报价结构会被重新谈判。",
+          "recommendation": "NVIDIA MotionBricks 接进 Godot：0 关键帧、纯 CPU 约 30ms 生成一次，权重开源可商用",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "SteamDB · 首发市场数据",
+          "tags": ["中国厂商", "首发数据", "买断制动作"],
+          "title": "《影之刃零》首日 43.15 万 CCU 冲上 Steam 第二：分析师估销量已破 100 万",
+          "en_title": "Phantom Blade Zero has reached 431,541 concurrent players on Steam for the first time (76.26% rating)",
+          "full_text": "Phantom Blade Zero has reached 431,541 concurrent players on Steam for the first time (76.26% rating) https://t.co/KUtqMFTtpt",
+          "author": "SteamDB",
+          "date": "2026-10-29",
+          "likes": 190,
+          "views": 12624,
+          "link": "https://x.com/SteamDB/status/2115683315864756682",
+          "media": {
+            "type": "image",
+            "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976"
+          },
+          "summary": "SteamDB 记录《影之刃零》首次达到 431,541 同时在线（当时好评率 76.26%）。Eurogamer 跟进：它已升至 Steam 同时在玩第二（仅次于 CS2）、全球畅销榜首；Alinea Analytics 的 Rhys Elliott 估算 PC+PS5 已售 85 万份，计入腾讯 WeGame 后总量超 100 万。有数GI 10-30 榜单记录的 24 小时峰值为 723,876、好评率 81%、售价 ¥268、排名第 6。",
+          "analysis": "这是《黑神话：悟空》之后中国团队第二款验证“高规格 + 全球同步买断发行”的作品，但量级约为前者的五分之一（悟空首发峰值 241.6 万）。更值得关注的是口碑曲线：首日 76% → 次日 81%，Eurogamer 评测批评节奏与 Boss 设计——说明图形与战斗演出已经能卖票，打磨与关卡节奏仍是天花板。",
+          "recommendation": "《影之刃零》首日 43.15 万 CCU 冲上 Steam 第二，分析师估销量破百万——¥268 买断",
+          "featured": true,
+          "game_ref": "Phantom Blade Zero",
+          "enrichment": {
+            "game_name": "影之刃零（Phantom Blade Zero）",
+            "genre": "暗黑武侠 / 动作 / 角色扮演",
+            "developer": "S-GAME Studio（灵游坊自研自发）",
+            "platforms": ["Steam", "PS5", "腾讯 WeGame"],
+            "price": "¥268.00",
+            "release_date": "已发售 · 2026年10月28日",
+            "steam_rating": "81% 好评（有数GI 10-30）；首日 76.26%（SteamDB）",
+            "steam_url": "https://store.steampowered.com/app/4115450/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
+            "youtube_video": null,
+            "description": "【产品定位】灵游坊自研自发的暗黑武侠动作冒险，虚幻 5 打造，2026 年 10 月 28 日全球同步发售，Steam 国区定价 ¥268。\n\n【核心玩法】快节奏剑斗：以连段、弹反、闪避与“影杀”处决构成攻防循环，武器与招式可组合切换；主角心脏受创、只剩六十六天寿命的设定，把叙事压进高强度连续战斗。整体更接近《只狼》式的节奏型动作，而非刷装备的 ARPG。\n\n【市场表现】SteamDB 记录首日峰值 431,541，好评率 76.26%（次日回升至 81%）；Eurogamer 报道其登上 Steam 同时在玩第二、全球畅销榜首；Alinea Analytics 估算 PC+PS5 已售 85 万份，计入 WeGame 后超 100 万；Steam 现有 15,611 条评价。\n\n【优势】战斗演出与美术规格在同价位买断制中属第一梯队；全球同步发行与主机/PC 双端铺开，说明中国团队的发行能力已成型。\n\n【不足】Eurogamer 评测指出整体打磨不足、Boss 战节奏拖沓，好评率未进“特别好评”，说明从“能打”到“耐打”仍有距离。\n\n【综合】中国买断制动作的第二张答卷：体量约为《黑神话：悟空》的五分之一，但验证了同一条路径可复制；后续靠口碑与更新拉长曲线的能力，比首日峰值更值得观察。",
+            "why_notable": "《黑神话：悟空》之后中国买断制动作的第二个样本：首日 43 万 CCU、估销量破百万",
+            "pcu": "723,876（2026-10-30 当日峰值）",
+            "current_players": null,
+            "estimated_sales": "分析师估算 PC+PS5 85 万份，计入 WeGame 后超 100 万",
+            "gi_summary": "「暗黑武侠 + 快节奏剑斗」套「虚幻5 高规格全球同步发行」新瓶，S-GAME 自研自发，Steam ¥268"
+          }
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 组织变动",
+          "tags": ["裁员", "BioWare", "组织文化"],
+          "title": "EA 员工爆料裁员后的秘密文化：被裁只能从 LinkedIn 得知，上季度关停 BioWare",
+          "en_title": "\"A cold dead place that's slowly decaying\" - EA employees reveal a culture of secrecy and terrible morale following layoffs",
+          "full_text": "\"A cold dead place that's slowly decaying\" - EA employees reveal a culture of secrecy and terrible morale following layoffs\n\nhttps://t.co/FbjCIxhJkj https://t.co/0QvX7lGYHX",
+          "author": "Eurogamer",
+          "date": "2026-10-29",
+          "likes": 121,
+          "views": 4824,
+          "link": "https://x.com/eurogamer/status/2115808099764478130",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVzcLVqagAEFZOr.jpg"
+          },
+          "summary": "上周 EA 裁撤 400 人、取消多个项目，并关停 BioWare（剩余约 50 人离职）。Eurogamer 引用 Vertical Slice 对在职与离职员工的采访：裁员以禁用聊天、隐藏参会人的 Zoom 单方面通知，有人是通过 LinkedIn 才得知同事被裁；因 550 亿美元收购背负约 200 亿美元债务；员工称“做少做精”的口号实际是“同样的事、更少的人”，并表示高层对 Claude 与生成式 AI 非常兴奋。",
+          "analysis": "收购杠杆 → 降本 → 沟通黑箱，这条链条几乎成了 2026 年大厂的模板。对从业者最刺眼的一句是“上层对 Claude 很兴奋”：AI 提效与裁员被绑进同一套叙事，会直接摧毁团队对工具的信任。对管理层的启示是，降本方案里如果缺一条可解释的沟通机制，省下的钱会以士气和留存的形式还回去。",
+          "recommendation": "EA 员工爆料：被裁只能从 LinkedIn 得知，550 亿美元收购留下 200 亿债务",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · 财报",
+          "tags": ["Xbox", "硬件", "财报"],
+          "title": "Xbox 硬件同比下滑 14%：负责人称「需求大于供给」，CFO 归因第三方内容与 Game Pass 下滑",
+          "en_title": "Xbox leader Asha Sharma says there's \"more demand than consoles available\" as Xbox hardware sales dip by 14%",
+          "full_text": "Xbox leader Asha Sharma says there's \"more demand than consoles available\" as Xbox hardware sales dip by 14% https://t.co/Zs6QxgGnd7 https://t.co/zyor3k2UKi",
+          "author": "Eurogamer",
+          "date": "2026-10-29",
+          "likes": 55,
+          "views": 10584,
+          "link": "https://x.com/eurogamer/status/2115766680353722867",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVy2VyJWsAAF9Q-.jpg"
+          },
+          "summary": "微软 FY2027 Q1 财报显示 Xbox 收入同比下滑 2%，硬件下滑 14%（销量减少）。CFO Amy Hood 称下滑主要来自第三方内容与 Game Pass，被第一方内容部分抵消。Xbox 负责人 Asha Sharma 回应称“主机销售受供给约束、需求大于可售数量”，并提到翻新机计划与 11 月上市的周年限定 Series X；其重组已累计涉及逾 1800 人离职，后续仍有裁员波次。",
+          "analysis": "硬件 -14% 与 Game Pass 下滑同时出现，说明这套“低价硬件 + 订阅”的组合在增长端遇到上限。“供给约束”的说法与同期 GameSpot 的质疑并存——如果是真缺货，为什么收入也跌？对第三方发行来说，Xbox 装机与订阅双降意味着首发窗口的议价空间会更依赖 PC 与 PS5。",
+          "recommendation": "Xbox 硬件同比 -14%、收入 -2%，负责人称「需求大于供给」",
+          "featured": false
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "GameSpot · 情报",
+          "tags": ["Bethesda", "上古卷轴", "爆料"],
+          "title": "《上古卷轴 6》据称定名 Sentinel、舞台设在 Hammerfell：最快下月正式公开",
+          "en_title": "Sources tell The Verge that the next game in the Elder Scrolls series is called The Elder Scrolls VI: Sentinel and will be set in Hammerfell. An official reveal could come as soon as next month.",
+          "full_text": "Sources tell The Verge that the next game in the Elder Scrolls series is called The Elder Scrolls VI: Sentinel and will be set in Hammerfell.\n\nAn official reveal could come as soon as next month. https://t.co/h4XybzpRmo",
+          "author": "GameSpot",
+          "date": "2026-10-29",
+          "likes": 10,
+          "views": 3275,
+          "link": "https://x.com/GameSpot/status/2115849440971952572",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HV0B2o6XIAA2vNg.jpg"
+          },
+          "summary": "GameSpot 引述 The Verge 信源：系列新作名为《The Elder Scrolls VI: Sentinel》，背景设在 Hammerfell，最快下个月正式公开。目前 Bethesda 尚未回应。",
+          "analysis": "Hammerfell 与此前多轮传闻及 2018 年那张预告地形吻合，因此可信度较高；真正值得注意的是节奏——若下月官宣，2027 年的大作档期会再被压紧一层，中小团队的窗口期相应变窄。",
+          "recommendation": "《上古卷轴 6》据称定名 Sentinel、舞台 Hammerfell，最快下月公开",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "官方账号 · 首发数据",
+          "tags": ["买断制", "模拟经营", "tinyBuild"],
+          "title": "《深空当铺：可能是偷的》首日数小时 20 万份：90 分钟内 8.6 万人同时在线",
+          "en_title": "Day one so far 🎉 200,000 copies sold in the first few hours / 86,000+ peak concurrent players (reached within 90min of launch!)",
+          "full_text": "Day one so far 🎉\n\n💰200,000 copies sold in the first few hours\n🎮86,000+ peak concurrent players (reached within 90min of launch!)\n👍95% positive reviews (of 400+ reviews currently)\n🥈#2 in Global Top Sellers on Steam https://t.co/0cdFDnTmbm",
+          "author": "Probably Stolen: Cyberpunk Pawnshop Simulator",
+          "date": "2026-10-28",
+          "likes": 259,
+          "views": 32482,
+          "link": "https://x.com/Probably_Stolen/status/2115514087744651637",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVvQH3OaEAAHC2N.jpg"
+          },
+          "summary": "官方公布首日成绩：数小时内售出 20 万份，90 分钟内峰值 8.6 万同时在线，95% 好评（当时 400+ 评价），登 Steam 全球畅销榜第 2。SteamDB 随后记录峰值 112,145（好评率 91.86%）；有数GI 10-30 榜单显示其 24 小时峰值 112,145、总榜第 31、好评率 95%、售价 ¥49.50。",
+          "analysis": "",
+          "recommendation": "《深空当铺》首日 20 万份、90 分钟内 8.6 万人同时在线——¥49.5 的赛博当铺模拟",
+          "game_ref": "Probably Stolen",
+          "featured": true,
+          "enrichment": {
+            "game_name": "深空当铺：可能是偷的（Probably Stolen: Cyberpunk Pawnshop Simulator）",
+            "genre": "赛博朋克 / 店铺经营模拟 / 制造与走私",
+            "developer": "Questing Goose Studio（发行：tinyBuild）",
+            "platforms": ["Steam（Windows）"],
+            "price": "¥49.50",
+            "release_date": "已发售 · 2026年10月28日",
+            "steam_rating": "95% 好评（有数GI 10-30）；SteamDB 91.86%",
+            "steam_url": "https://store.steampowered.com/app/4348910/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4348910/d9938fa30354c82c9549c17864145e3e92e23847/header_alt_assets_3_schinese.jpg?t=1793220934",
+            "youtube_video": null,
+            "description": "【核心玩法】反乌托邦空间站里的赛博朋克当铺经营：制作、交易、走私来历不明的货物，在各方派系之间周旋，用利润把铺子彻底买下来——上涨的租金是唯一稳定的压力来源。\n\n【为什么上手快】规则是“进货—加工—定价—卖出”的老骨架，但把风险做成了玩法变量：赃物来源、派系关系与租金倒计时同时作用，让每一笔交易都在赌自己的执照与性命。这类“店铺经营 + 灰色地带”的组合，比纯放置模拟更容易讲出一句话卖点。\n\n【市场表现】首日数小时内售出 20 万份，90 分钟即达 8.6 万同时在线，登 Steam 全球畅销榜第 2；当日峰值 11.2 万，好评率 91%–95%，现价 ¥49.50，Steam 评价 2289 条。发行方 tinyBuild 的渠道能力在其中扮演了关键角色。\n\n【优势】概念一句话说清、单价低、题材有辨识度；tinyBuild 参与发行，首发曝光与全球榜单联动明显。\n\n【不足】经营模拟的长期留存高度依赖内容更新与平衡调整；95% 好评建立在首日玩家预期上，热度过后能否守住“特别好评”仍需观察。\n\n【综合】2026 年最典型的“小而准”案例：不做大世界，把单一场景（一间铺子）做到极致，再用低价 + 发行渠道冲榜。",
+            "why_notable": "首日数小时 20 万份、90 分钟 8.6 万人同时在线，是本期数据最硬的独游爆款",
+            "pcu": "112,145（2026-10-30 当日峰值）",
+            "current_players": null,
+            "estimated_sales": "首日数小时官方公布 20 万份",
+            "gi_summary": "「赛博当铺经营」套「反乌托邦空间站」新瓶，Questing Goose 开发、tinyBuild 发行，Steam ¥49.50"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "中文博主 · 独立游戏观察",
+          "tags": ["心理恐怖", "销量", "Game Pass"],
+          "title": "《缄默祸运》Steam 销量破 80 万，同日登陆 Xbox 与 Game Pass",
+          "en_title": "一个恐怖游戏居然卖了 80 万份，着实牛逼。Mouthwashing 今天上架了XBox，但在此之前已经在Steam销量破80万份了。",
+          "full_text": "一个恐怖游戏居然卖了 80 万份，着实牛逼。\n\nMouthwashing 今天上架了XBox，但在此之前已经在Steam销量破80万份了。这个游戏的美术只能说一般，玩法也比较简单。\n\n没有庞大的开放世界，也没有几十种养成系统，主要就是在一艘出事的太空货船上，讲几个船员之间发生的故事。\n\n但它有非常强烈的个人风格，甚至光看画面，就能感觉到那种不舒服的氛围。\n\n这里面有很多值得我们学习的思路，做独立游戏有个很现实的问题：资源有限，到底应该把时间花在增加内容上，还是花在让游戏变得与众不同上？\n\n尤其现在 AI 可以快速生成代码、美术和各种玩法，往游戏里塞东西已经越来越容易了。\n\n但玩家一天还是只有24小时。\n\n如果一个游戏没有任何让人记住的地方，哪怕内容量翻十倍，也未必有人愿意多玩一分钟。",
+          "author": "五分之1蓝",
+          "date": "2026-10-29",
+          "likes": 6,
+          "views": 552,
+          "link": "https://x.com/onefifthblue/status/2115806636296348032",
+          "media": {
+            "type": "image",
+            "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475490/header_schinese.jpg?t=1793118014"
+          },
+          "summary": "博主指出《缄默祸运》（Mouthwashing）在登陆 Xbox 之前，Steam 销量已破 80 万份：游戏没有开放世界也没有复杂养成，只在一艘出事的太空货船上讲几名船员的故事，靠强烈个人风格与不适感取胜。Eurogamer 同日确认其已登陆主机与 Xbox Game Pass。Steam 现有 34,797 条评价，售价 ¥31.20，开发商 Wrong Organ，发行 CRITICAL REFLEX。",
+          "analysis": "",
+          "recommendation": "《缄默祸运》Steam 销量破 80 万、同步进 Game Pass：风格比内容量更值钱",
+          "game_ref": "Mouthwashing",
+          "featured": true,
+          "enrichment": {
+            "game_name": "缄默祸运（Mouthwashing）",
+            "genre": "心理恐怖 / 叙事冒险",
+            "developer": "Wrong Organ（发行：CRITICAL REFLEX）",
+            "platforms": ["Steam", "Xbox Series X|S", "Xbox Game Pass"],
+            "price": "¥31.20",
+            "release_date": "已发售 · 2024年9月26日（2026年10月29日登陆主机与 Game Pass）",
+            "steam_rating": "34,797 条 Steam 评价",
+            "steam_url": "https://store.steampowered.com/app/2475490/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475490/header_schinese.jpg?t=1793118014",
+            "youtube_video": null,
+            "description": "【核心玩法】第一人称叙事恐怖：五个船员困在一艘货运飞船上，你只能在极有限的场景里走动、对话、做最基础的操作，推进方式靠回忆与视角切换，而不是战斗或解谜系统。\n\n【为什么有效】它几乎把“内容量”降到最低——没有开放世界、没有养成、没有关卡堆叠，全部预算压在一件事上：让人不舒服。低多边形建模、脏污的界面、突兀的镜头角度共同构成一种持续的生理性厌恶，这在恐怖品类里比 jump scare 更难复制。\n\n【市场表现】2024 年 9 月发售，售价 ¥31.20，Steam 累计 34,797 条评价；据中文博主转述，登陆 Xbox 前 Steam 销量已破 80 万份。2026 年 10 月 29 日登陆主机并进入 Xbox Game Pass，Eurogamer 将其列为万圣节恐怖必玩。\n\n【优势】32 元档的“高记忆点”作品：风格即卖点，二创与解说传播极强；Game Pass 入场进一步放大触达。\n\n【不足】玩法薄、时长短，复玩价值低；对恐怖阈值高的玩家吸引力有限。\n\n【综合】和同期靠体量堆料的作品形成对照：在 AI 让“塞内容”变得便宜的年份，能被记住的风格反而更稀缺。",
+            "why_notable": "32 元的极小体量恐怖游戏卖到 80 万份，同日进 Game Pass——风格即护城河",
+            "pcu": "未进 10-30 榜单前 500（2024 年作品）",
+            "current_players": null,
+            "estimated_sales": "据博主转述 Steam 破 80 万份",
+            "gi_summary": "「太空货船心理恐怖」套「极低体量 + 强风格」新瓶，Wrong Organ 开发、CRITICAL REFLEX 发行，Steam ¥31.20"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "海外玩家账号 · 新游观察",
+          "tags": ["合作生存", "抢先体验", "房车"],
+          "title": "《Nomad Drive》抢先体验上线即「特别好评」：开房车在末日世界种田做饭，支持 4 人合作",
+          "en_title": "어제 새로 출시된 협동 생존게임 Nomad Drive 가 나오자마자 매우 긍정적이 붙었네요",
+          "full_text": "어제 새로 출시된 협동 생존게임 Nomad Drive 가 나오자마자 매우 긍정적이 붙었네요\n싱글부터 최대 4인까지 포스트 아포칼립스 세계관에서 캠핑카 타고 다니며 농사, 요리, 낚시, 수리, 커피 제조 등 일상적인 생존과 인테리어도 가능한 너무 어둡지 않은 게임이라 가볍게 하기 조아보여 https://t.co/RRbZH8T38l",
+          "author": "모카",
+          "date": "2026-10-29",
+          "likes": 581,
+          "views": 69039,
+          "link": "https://x.com/matchoking1/status/2115736648956727640",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115710221079433216/img/JtYJstNWAXkf3Knf.jpg",
+            "video_url": "https://x.com/matchoking1/status/2115736648956727640/video/1"
+          },
+          "summary": "10 月 27 日进入抢先体验的合作生存游戏，支持单人至 4 人，在末日世界里开房车移动，可种田、烹饪、钓鱼、修理、煮咖啡并做内饰装修；博主称其上线即获得“特别好评”，且基调不压抑、适合轻松上手。有数GI 10-30 显示其当日峰值 2,371、好评率 82%，售价 ¥48.60，开发者 Indie Devil。",
+          "analysis": "",
+          "recommendation": "《Nomad Drive》把末日生存做成房车露营：4 人合作种田做饭，上线即特别好评",
+          "game_ref": "Nomad Drive",
+          "featured": false,
+          "enrichment": {
+            "game_name": "Nomad Drive",
+            "genre": "末日生存 / 合作冒险 / 模拟",
+            "developer": "Indie Devil（独立开发，自研自发）",
+            "platforms": ["Steam（Windows）"],
+            "price": "¥48.60（抢先体验）",
+            "release_date": "已发售 · 抢先体验 2026年10月27日",
+            "steam_rating": "82% 好评（有数GI 10-30）",
+            "steam_url": "https://store.steampowered.com/app/2223980/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2223980/433d5727162af686f0e7d56de539f8476fb0cf0e/header.jpg?t=1793283217",
+            "youtube_video": null,
+            "description": "【核心玩法】单人或 1–4 人合作的末日生存：把一辆破房车修好，驶向程序生成的废土世界，沿途收集资源、升级房车、装饰内饰，支撑尽可能长的生存周期。农业、烹饪、钓鱼、维修、煮咖啡这些“日常”环节是主要节奏点，而不是高强度战斗。\n\n【差异点】把“移动基地”做成核心载体：房车既是存档点、工作台和仓库，也是角色的家。程序生成的世界 + 内饰自定义，让小团队的合作重心落在分工与生活化流程上，与《Raft》《Project Zomboid》那类“压迫感生存”形成区隔。\n\n【市场表现】2026 年 10 月 27 日进入抢先体验，售价 ¥48.60，上线即获“特别好评”，中文圈玩家转述其“基调不压抑、适合轻量上手”；有数GI 10-30 记录当日峰值 2,371、好评率 82%，Steam 现有 229 条评价。\n\n【优势】题材组合（末日 + 房车 + 装修）辨识度高；合作门槛低，适合朋友局；开发者小团队，更新迭代速度快。\n\n【不足】抢先体验阶段内容量有限，程序生成的长期新鲜感待验证；峰值仅两千余，商业上仍属早期观察对象。\n\n【综合】“低压生存”这一细分在 2026 年持续升温，Nomad Drive 的房车载体是目前最有画面感的一种解法。",
+            "why_notable": "把末日生存做成房车露营：上线即特别好评，6.9 万浏览的差异化题材",
+            "pcu": "2,371（2026-10-30 当日峰值）",
+            "current_players": null,
+            "estimated_sales": "暂无公开数据",
+            "gi_summary": "「开房车末日生存」套「4 人合作 + 内饰装修」新瓶，Indie Devil 独立开发，Steam ¥48.60"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "中文博主 · 独立开发者故事",
+          "tags": ["AI 辅助", "Godot", "个人开发"],
+          "title": "《The Last Reel》：4 个月、约 60% 自己做，AI 帮他在 Godot 上搭引擎层",
+          "en_title": "你可以骂我的游戏烂，但别替我决定，它对我意味着什么。",
+          "full_text": "“你可以骂我的游戏烂，但别替我决定，它对我意味着什么。”\n\n这位开发者的回应，挺戳人的。\n\n他花了 4 个月制作《The Last Reel》，自述约 60% 的工作由自己完成，AI 帮他在 Godot 上搭建自己的引擎层，把游戏世界逐渐做出来。\n\n游戏的主角，是他小时候就画过的角色。\n\n很多年里，这个角色只能留在纸上，因为动画和美术的费用，他根本承担不起。现在，他终于能看着它走动、探索，生活在自己想象的世界里。\n\n他欢迎别人指出画面哪里差、玩法哪里不好，也公开自己使用的工具，但不会因为用了 AI 就觉得羞耻。\n\n评论区有人问能不能移植 Switch 2，他也很坦白：移植太贵，目前负担不起。\n\nAI 在这个故事里最打动我的地方，就是让一个付不起制作费用的人，终于有机会把惦记了大半辈子的游戏做出来。\n\nSteam：The Last Reel https://t.co/mjzrnKzjNd",
+          "author": "Rainy",
+          "date": "2026-10-28",
+          "likes": 24,
+          "views": 2320,
+          "link": "https://x.com/jiangjiangling/status/2115490515097677882",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115207668184842240/img/yrP3brIU31Pw3Smw.jpg",
+            "video_url": "https://x.com/jiangjiangling/status/2115490515097677882/video/1"
+          },
+          "recommendation": "4 个月做出惦记半辈子的角色游戏：AI 搭 Godot 引擎层，约 60% 自己动手",
+          "summary": "开发者用 4 个月做《The Last Reel》，自述约 60% 工作自己完成，AI 协助在 Godot 上搭建引擎层；主角是他儿时画过的角色。他接受对画面和玩法的批评，但拒绝“用了 AI 就该羞耻”的标签，也坦言移植 Switch 2 成本过高。",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "开发者官方 · 玩法演示",
+          "tags": ["独立开发", "实拍素材", "恐怖"],
+          "title": "《Jiri Kara Simulator》：敌人不用一帧动画，全部实拍后再合成进游戏",
+          "en_title": "We filmed every enemy instead of animating them",
+          "full_text": "We filmed every enemy instead of animating them\n\n#gamedev #indiegamedev #indiedev #indiegame https://t.co/pmSdcQwAYN",
+          "author": "Jiri Kara Simulator",
+          "date": "2026-10-29",
+          "likes": 159,
+          "views": 12507,
+          "link": "https://x.com/JiriKaraSim/status/2115804357841261011",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115803671116009472/img/5FhgREejQidfxymk.jpg",
+            "video_url": "https://x.com/JiriKaraSim/status/2115804357841261011/video/1"
+          },
+          "recommendation": "敌人全部实拍、不用一帧动画：《Jiri Kara Simulator》的取巧做法——159 赞",
+          "summary": "开发者公布做法：游戏里的敌人不做动画，而是全部真人实拍后合成进游戏，用素材来源本身制造不适感。视频 159 赞、1.25 万浏览。",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Niche Gamer · 新游曝光",
+          "tags": ["球类格斗", "动漫风", "2027"],
+          "title": "《BAKUDO》：把球类运动和格斗缝在一起的 3D 竞技，2027 年推出",
+          "en_title": "BAKUDO is a wild 3D sport combat game with anime girls launching in 2027",
+          "full_text": "BAKUDO is a wild 3D sport combat game with anime girls launching in 2027: https://t.co/jpbmavGkB5 https://t.co/zC0sQ59iWk",
+          "author": "Niche Gamer",
+          "date": "2026-10-29",
+          "likes": 136,
+          "views": 4871,
+          "link": "https://x.com/nichegamer/status/2115652892610658448",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2115652826957283328/pu/img/OwDijA7BSf-B5JLQ.jpg",
+            "video_url": "https://x.com/nichegamer/status/2115652892610658448/video/1"
+          },
+          "recommendation": "把球类运动与格斗缝在一起：《BAKUDO》2027 年上线——136 赞",
+          "summary": "Niche Gamer 报道一款 3D 球类格斗竞技游戏《BAKUDO》，动漫风角色、2027 年发售，预告片展示高速移动与近身对抗。",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Niche Gamer · 新游曝光",
+          "tags": ["滑雪板", "复古美学", "2027"],
+          "title": "《HYPERyuki: Snowboard Syndicate》：00 年代风格的滑雪板游戏，2027 年推出",
+          "en_title": "00s-inspired snowboard game HYPERyuki: Snowboard Syndicate launches in 2027",
+          "full_text": "00s-inspired snowboard game HYPERyuki: Snowboard Syndicate launches in 2027: https://t.co/benP8Xur8y https://t.co/bfvAkrOKOe",
+          "author": "Niche Gamer",
+          "date": "2026-10-29",
+          "likes": 54,
+          "views": 3735,
+          "link": "https://x.com/nichegamer/status/2115660918218530899",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2115660871938510849/pu/img/eIxFejP2JNRBHsFM.jpg",
+            "video_url": "https://x.com/nichegamer/status/2115660918218530899/video/1"
+          },
+          "recommendation": "把 00 年代滑雪游戏的美学重做一遍：《HYPERyuki》2027 年见",
+          "summary": "复古向滑雪板游戏《HYPERyuki: Snowboard Syndicate》确定 2027 年发售，主打 00 年代极限运动游戏的视觉与音乐气质。",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "Indie Game Joe · 新游曝光",
+          "tags": ["怪物恐怖", "房间蔓延", "实验装备"],
+          "title": "《Demon Spore》：实验室养出的怪物会一间间房间蔓延，边跑边砍触手",
+          "en_title": "Scientists went too far gene editing a new breed of livestock to grow 100x faster and this is what came out",
+          "full_text": "Scientists went too far gene editing a new breed of livestock to grow 100x faster and this is what came out\n\n- It adapts and spreads room to room\n- Use lab gear to slow it down\n- Cut its tentacles & hit its weak spots\n- Escape each floor before it mutates\n\nGame is Demon Spore. https://t.co/wnUb6AUZ3B",
+          "author": "Indie Game Joe",
+          "date": "2026-10-28",
+          "likes": 527,
+          "views": 24073,
+          "link": "https://x.com/IndieGameJoe/status/2115531456139374817",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115516664443813888/img/XsdXI4DQsELwv1Fq.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2115531456139374817/video/1"
+          },
+          "recommendation": "怪物会一间间房间蔓延过来：《Demon Spore》把逃生做成了清房间",
+          "summary": "《Demon Spore》设定为基因编辑失控产出的怪物：会随房间蔓延并变异，玩家要用实验室装备减速、砍触手、打弱点，在它变异前逃离每一层。推文 527 赞、2.4 万浏览。",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "AI 工程 · 实操教程",
+          "tags": ["Claude Code", "Prompt", "工作流"],
+          "title": "Claude Code 原作者公开 28 分钟课：CLAUDE.md、记忆快捷键、并行会话与提示词模式",
+          "en_title": "El ingeniero que creó Claude Code publicó un video de 28 minutos enseñando a escribir prompts que de verdad funcionan",
+          "full_text": "El ingeniero que creó Claude Code publicó un video de 28 minutos enseñando a escribir prompts que de verdad funcionan\n\nHe visto cursos de 300 dólares que no cubren ni la mitad de lo que explica en los primeros 10 minutos\n\nHabla de archivos CLAUDE.md, atajos de memoria, sesiones paralelas y patrones de prompting que cambian cómo usas la herramienta\n\nTodo gratis\n\nDa igual si estás empezando o ya llevas meses con Claude\n\nSi piensas que te va a servir GUARDALO",
+          "author": "kento iv",
+          "date": "2026-10-28",
+          "likes": 23927,
+          "views": 1310288,
+          "link": "https://x.com/0xKento_/status/2115521909119181008",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115521784724213760/img/VgVVwr0X4d0SJRW1.jpg",
+            "video_url": "https://x.com/0xKento_/status/2115521909119181008/video/1"
+          },
+          "summary": "博主称 Claude Code 的作者本人发布了一支 28 分钟免费视频，讲解如何写出真正有效的提示词，内容包括 CLAUDE.md 配置文件、记忆快捷键、并行会话以及能改变使用方式的提示词模式；他认为市面 300 美元课程连前 10 分钟的密度都达不到。推文 2.39 万赞、131 万浏览。",
+          "analysis": "真正稀缺的不是提示词模板，而是“官方作者讲设计意图”：为什么要有 CLAUDE.md、什么时候该开并行会话。这类知识的正确落地方式是写进仓库——把团队约定沉淀为 CLAUDE.md 与 review 规范，比收藏视频有用。",
+          "recommendation": "Claude Code 原作者公开 28 分钟提示词课，单条 131 万浏览——全部免费",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Unity 官方 · 版本更新",
+          "tags": ["Unity 6.6", "UI Toolkit", "uGUI"],
+          "title": "Unity 6.6 UI 更新：UI Toolkit 原生磨砂玻璃景深，uGUI 自动处理刘海 SafeArea",
+          "en_title": "Check out some of our newest UI updates in Unity 6.6 — From native frosted glass depth effects in UI Toolkit to zero-hassle SafeArea notch handling in uGUI",
+          "full_text": "Check out some of our newest UI updates in Unity 6.6 🎨\n\nFrom native frosted glass depth effects in UI Toolkit to zero-hassle SafeArea notch handling in uGUI, here’s a quick breakdown! https://t.co/6PxQTVZ0TY",
+          "author": "Unity for Games",
+          "date": "2026-10-29",
+          "likes": 113,
+          "views": 7794,
+          "link": "https://x.com/unitygames/status/2115793962912874513",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2115793879580442624/pu/img/3xENozHMK_W8UPcM.jpg",
+            "video_url": "https://x.com/unitygames/status/2115793962912874513/video/1"
+          },
+          "summary": "Unity 官方展示 6.6 版本 UI 更新：UI Toolkit 加入原生磨砂玻璃（frosted glass）景深效果，uGUI 增加零配置的 SafeArea 刘海适配。",
+          "analysis": "两件都是长期靠插件、后处理或手写适配方案凑出来的活：磨砂玻璃进引擎原生后不必再叠 GrabPass 或第三方 UI 包，SafeArea 自动化则直接消灭移动端最常见的上线返工点。对中小团队，这类“引擎把脏活做完”的更新比新渲染特性更省钱。",
+          "recommendation": "Unity 6.6 把磨砂玻璃与刘海适配做进引擎：UI Toolkit 景深、uGUI 自动 SafeArea",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI 产能过剩的两面，同一天出现**\n一边是《GTA V》除线上模式外被整包搬进 Roblox、用 Opus 5.5 生成并稳定跑 60fps；一边是博主爆料 GitHub 单月 commit 飙到 74 亿次、紧急扩容 400 万核。同一个产能，在作品侧是震撼，在基础设施侧是负担。\n\n**中国买断制动作的第二张答卷**\n《影之刃零》首日 43.15 万 CCU 冲上 Steam 同时在玩第二、全球畅销榜首，分析师估算销量已破 100 万；有数GI 记录当日峰值 72.4 万、好评率 81%。量级约为《黑神话：悟空》的五分之一，路径被验证可复制，天花板仍在打磨。\n\n**大厂收缩进入「信任崩塌」阶段**\nEA 员工向媒体描述裁员后的公司：被裁只能从 LinkedIn 得知，Zoom 单方面通知，550 亿美元收购留下 200 亿债务，而高层“对 Claude 很兴奋”。同一天 Xbox 硬件同比 -14%，负责人称“需求大于供给”。\n\n**独游：风格比体量更值钱**\n《深空当铺：可能是偷的》首日数小时 20 万份、90 分钟 8.6 万人同时在线；《缄默祸运》以 32 元、极小体量卖到 80 万份并进 Game Pass。当 AI 让“塞内容”变便宜，能被记住的风格反而更稀缺。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
