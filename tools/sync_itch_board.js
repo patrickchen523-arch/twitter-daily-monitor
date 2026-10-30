@@ -72,25 +72,54 @@ function runOut(cmd, args) {
   return { status: r.status, out: (r.stdout || '').trim() };
 }
 
-// 1) 等档期四榜就绪后再导入。档期由日报流程（09:30+）创建并填满，itch 任务（09:00）跑得更早。
+// 1) 等档期就绪后再导入。档期由日报流程（09:30+）创建并填满，itch 任务（09:50）跑在其后。
 //    必须等 steamdb/bilibili/twitter 三榜有内容：import 写进半成品骨架会被日报后续重建覆盖，
 //    gen_picks 也会因榜单未完成而失败（2026-10-17 事故）。
-//    每 5 分钟探测一次，最多等 80 分钟；探测只读文件，不动档期。
-function boardsReady() {
-  try {
-    const d = JSON.parse(fs.readFileSync(path.join(root, 'data', 'launched', `${date}.json`), 'utf8'));
-    return ['steamdb', 'bilibili', 'twitter'].every(
-      id => ((d.boards.find(b => b.id === id) || {}).items || []).length > 0);
-  } catch { return false; }
+//    探测只读文件，不动档期。
+//
+//    两种"未就绪"必须分开对待（2026-10-30 INC-012）：
+//      A. 档期文件不存在 = 日报没建成当日档期（常见于日报走 C 兜底：steamdb/bili 抓取失败）。
+//         这种情况再等也不会出现，等满 80 分钟只是把告警拖到 11:22 —— 故只等 15 分钟即报错，
+//         并在 stderr 直接给出建期命令，让失败在 10:05 前就变成可执行的动作。
+//      B. 档期存在但三榜还没填满 = 日报正在跑，按 80 分钟耐心等（原行为）。
+//    等待上限可用 ITCH_SYNC_WAIT_NO_DAY_MIN / ITCH_SYNC_WAIT_EMPTY_MIN（分钟）覆盖，便于回归测试。
+const DAY_PATH = path.join(root, 'data', 'launched', `${date}.json`);
+const REQUIRED_BOARDS = ['steamdb', 'bilibili', 'twitter'];
+const waitMs = (envName, defaultMin) => {
+  const v = Number(process.env[envName]);
+  return (Number.isFinite(v) && v >= 0 ? v : defaultMin) * 60 * 1000;
+};
+const WAIT_NO_DAY = waitMs('ITCH_SYNC_WAIT_NO_DAY_MIN', 15);
+const WAIT_EMPTY_BOARDS = waitMs('ITCH_SYNC_WAIT_EMPTY_MIN', 80);
+
+function readDay() {
+  try { return JSON.parse(fs.readFileSync(DAY_PATH, 'utf8')); } catch { return null; }
+}
+function notReadyBoards(day) {
+  if (!day) return [...REQUIRED_BOARDS];
+  return REQUIRED_BOARDS.filter(
+    id => !((((day.boards || []).find(b => b.id === id) || {}).items) || []).length);
 }
 {
-  const waitDeadline = Date.now() + 80 * 60 * 1000;
-  while (!boardsReady()) {
-    if (Date.now() >= waitDeadline) {
-      console.error('[sync_itch] 等档期四榜就绪超时（80 分钟），日报可能未完成，放弃');
+  let deadline = 0;
+  for (;;) {
+    const day = readDay();
+    const missing = notReadyBoards(day);
+    if (!missing.length) break;
+    const now = Date.now();
+    if (!deadline) deadline = now + (day ? WAIT_EMPTY_BOARDS : WAIT_NO_DAY);
+    if (now >= deadline) {
+      if (!day) {
+        console.error(`[sync_itch] 当日档期不存在（等了 ${WAIT_NO_DAY / 60000} 分钟）：data/launched/${date}.json`);
+        console.error('[sync_itch] 日报大概率走了 C 兜底（steamdb/bili 抓取失败 → 没建当日档期），itch 榜无处挂载。');
+      } else {
+        console.error(`[sync_itch] 等档期榜单就绪超时（${WAIT_EMPTY_BOARDS / 60000} 分钟），仍为空：${missing.join(', ')}`);
+        console.error(`[sync_itch] 日报可能未完成，检查 data/launched/${date}.json 后重跑本脚本`);
+      }
+      console.error(`[sync_itch] 处理：按 x-daily-brief Step 4.7 分支 B 建期（fetch_bili_rank + fetch_steamdb_trending → make_day → import_steamdb_trending / import_bilibili_rank / import_twitter_board → gen_picks → verify_launched_imgs --data-only），再重跑 node tools/sync_itch_board.js ${date}`);
       process.exit(1);
     }
-    console.error('[sync_itch] 档期四榜未就绪（日报还在跑），5 分钟后重试…');
+    console.error(`[sync_itch] 档期未就绪（缺：${day ? missing.join(', ') : '档期文件'}），5 分钟后重试…`);
     Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 300000);
   }
 }
