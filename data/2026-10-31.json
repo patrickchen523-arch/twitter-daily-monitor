@@ -1,0 +1,580 @@
+{
+ "date": "2026-10-31",
+ "meta": {
+  "raw_count": 308,
+  "filtered_count": 208,
+  "selected_count": 12,
+  "crawl_time": "2026-10-31 09:34"
+ },
+ "lede": "Epic 开放 UE 与 MetaHuman 项目自愿用于 AI 训练；EA 因押注尚未开工的《星球大战：前线 3》而关闭 BioWare；《影之刃零》第三天峰值 73.1 万；手绘养鱼的《Drawquarium》预告片 449 万播放。",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "画的鱼会活过来，水族箱还能当动态壁纸——449 万播放、13.3 万赞"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "彭博社：EA 选尚未开工的《前线 3》而非《质量效应 5》，BioWare 因此关闭"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 2,
+   "hook": "只收人手制作的游戏：「Games Without AI」独立展 11 月 25 日首播"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Epic 改 UE EULA：开发者可自愿授权用 UE/MetaHuman 项目训练 AI\nCursor 插件市场混入假冒 Claude Code 扩展，约 11 小时、最多 5000 人受影响\n只收人手制作游戏的「Games Without AI」展 11 月 25 日首播"
+  },
+  {
+   "id": "industry",
+   "text": "彭博社：EA 选尚未开工的《星球大战：前线 3》而非《质量效应 5》，BioWare 因此关闭\n《影之刃零》第三天峰值 73.1 万、好评率 84%，Metacritic 88\n《蔚蓝》《塔倒》从 Xbox 下架，开发商声援 BDS 抵制\nFromSoftware《The Duskbloods》延至 2027 年"
+  },
+  {
+   "id": "indie",
+   "text": "《Drawquarium》：画的鱼会活过来，预告片 449 万播放\n《逢考弊过》上线 Steam：4 人合作期末作弊，首发 ¥17.36\n《深空当铺》前身同接仅 28 人，改名换画后冲到 12.5 万峰值"
+  },
+  {
+   "id": "tools",
+   "text": "微软重做 DirectX 光追管线：官方称帧率升、显存降\nUnity Spark：在浏览器里和 AI Agent 同屏改游戏，无需安装"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "官方账号 · 引擎政策",
+     "tags": [
+      "引擎政策",
+      "AI 训练数据",
+      "Unreal"
+     ],
+     "title": "Epic 改 UE EULA：开发者可自愿授权用 UE 与 MetaHuman 项目训练 AI",
+     "en_title": "We've updated the Unreal Engine EULA so devs can now choose to train AI models on their UE and MetaHuman projects, and benefit from AI models that understand their code and content.",
+     "full_text": "We’ve updated the Unreal Engine EULA so devs can now choose to train AI models on their UE and MetaHuman projects, and benefit from AI models that understand their code and content.\n\nThis change does not give Epic any rights to your content or code.\n\nCheck out the blog for the details: https://t.co/1vwSoPLvGq",
+     "author": "Unreal Engine",
+     "date": "2026-10-30",
+     "likes": 300,
+     "views": 15955,
+     "link": "https://x.com/UnrealEngine/status/2116185368819372148",
+     "media": null,
+     "summary": "Epic 更新虚幻引擎 EULA，开发者可以选择（opt-in）是否允许用自家 UE 与 MetaHuman 项目训练 AI 模型，以获得更理解自己代码与内容的模型；官方明确该变更不赋予 Epic 对开发者内容或代码的任何权利，具体条款在博客说明，需在协议页主动同意。",
+     "analysis": "这是引擎厂把「训练数据授权」做成可选项的标准动作：一边给愿意换能力的团队开口子，一边用「不取得版权」划线安抚。对中小团队，真正的决策点不是条款措辞，而是自家美术与代码资产会不会进入一个自己无法审计的模型；对 Epic，这是它在 AI 工具链上追赶对手的前置条件。",
+     "recommendation": "Epic 开放 UE/MetaHuman 项目训练 AI，自愿 opt-in 且声明不取内容版权",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "中文博主 · 安全事件复盘",
+     "tags": [
+      "供应链安全",
+      "AI 编程",
+      "Cursor"
+     ],
+     "title": "Cursor 插件市场混入假冒 Claude Code 扩展：约 11 小时、最多 5000 人受影响",
+     "en_title": "Cursor 插件市场的恶意 Claude Code 扩展",
+     "full_text": "Cursor 插件市场的恶意 Claude Code 扩展\n\n1/ Cursor 10/29 披露安全事件：自家 VS Code 扩展市场里出现了被改过的 Anthropic.claude-code 2.1.313，这个版本不是 Anthropic 发布的。上架时间是太平洋时间 2:27am 到 1:35pm，约 11 小时，最多影响 5000 个用户，Cursor 说会逐个联系。\n\n2/ 扩展会做四件事：\n- 收集主机名、用户名、系统、架构、home 路径、环境变量名、工作目录、Git 邮箱和公网 IP。官方写的是变量名，不是变量值。\n- 往 authorized_keys 写入攻击者的 SSH 公钥（备注 svc-telemetry），尝试开启本机 SSH 服务并建立反向隧道。\n- 做持久化，macOS 用 LaunchAgent，Windows 用计划任务，加上启动项兜底，脚本约每 60 秒重试一次隧道。\n- 把主机信息和后门状态 POST 到攻击者服务器的 8099 端口。\n\n3/ 实际危害比\"SSH 后门\"听起来小，但不是没事。开启 SSH 服务要管理员权限，大多数 macOS 和 Windows 机器上这一步会失败，攻击者也就无法通过隧道登录。不过公钥、持久化脚本和信息上报照常发生。攻击者的服务器已经被云厂商下线。\n\n4/ 处置：Cursor 先下架恶意版本，再关停整个市场，审计访问记录后确认没有其他扩展被改，然后轮换密钥、重建市场并恢复上线。官方要求所有用户升级到 2.1.314。\n\n5/ 自查方法（macOS）：\n\ngrep -qs svc-telemetry ~/.ssh/authorized_keys && echo \"svc-telemetry key found\" || echo \"No key found; machine not impacted\"\n\n找到就算中招。只卸载扩展不够，因为持久化脚本会继续跑。要运行官方的 https://t.co/yAGcxxfPSE，并从可信的机器上轮换这台机器能访问到的凭据。macOS 还要看 ~/Library/LaunchAgents/com.apple.sysmond.plist、~/.config/.smt 和 ~/.config/.smtk。名字都起得像系统组件和遥测服务，肉眼扫一遍未必能发现。\n\n6/ 博客没说攻击者怎么把包放上去。只提到审计了访问记录、轮换了密钥、重建了市场。这几步看起来像是发布链路或凭据出了问题，但这是我的推测，官方没有确认。这一点最值得等后续说明。\n\n7/ 官方公告只提到 macOS（darwin-arm64）和 Windows（win32-x64）两个包，没提 Linux。推文下有人抱怨 Cursor 没在 IDE 内推送通知，市场关停期间只看到 503，不知道是自己的问题。5000 人和 11 小时都不算大，麻烦的是用户装的是官方名字的官方扩展，看发布者名字防不住这种情况。",
+     "author": "陈成",
+     "date": "2026-10-30",
+     "likes": 4,
+     "views": 1572,
+     "link": "https://x.com/chenchengpro/status/2116083740942143762",
+     "media": null,
+     "summary": "陈成复盘 Cursor 10/29 披露的安全事件：市场里出现被改过的 Anthropic.claude-code 2.1.313，并非 Anthropic 发布，上架约 11 小时（太平洋时间 2:27am–1:35pm），最多影响 5000 名用户。扩展会收集主机名、用户名、系统、架构、home 路径、环境变量名、工作目录、Git 邮箱与公网 IP；向 authorized_keys 写入备注 svc-telemetry 的攻击者公钥，尝试开启 SSH 并建立反向隧道；macOS 用 LaunchAgent、Windows 用计划任务做持久化，约每 60 秒重试一次；并把主机信息与后门状态 POST 到攻击者服务器 8099 端口。开启 SSH 需管理员权限，多数机器上这一步会失败，因此实际危害低于「SSH 后门」的字面含义，但公钥写入、持久化与信息上报照常发生。官方要求所有用户升级到 2.1.314。",
+     "analysis": "AI 编程工具的供应链风险正在从「模型输出错」移到「分发渠道被投毒」：IDE 扩展市场是继 npm 之后最适合攻击者的入口，因为它天然拿到开发者机器与凭证。团队层面可执行的只有三件事——扩展白名单、版本锁定、把「市场里能搜到」当作不可信信号。",
+     "recommendation": "假冒 Claude Code 扩展混进 Cursor 市场约 11 小时，最多 5000 人中招",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "日本媒体 · 行业活动",
+     "tags": [
+      "独立游戏",
+      "AI 争议",
+      "展会"
+     ],
+     "title": "「Games Without AI」独立游戏展 11 月 25 日首播：只收人手做的游戏",
+     "en_title": "生成AIを使わない“人の手で作ったゲーム”を集めた世界規模のインディーゲームショーケース「Games Without AI」始動！11月25日配信へ",
+     "full_text": "生成AIを使わない“人の手で作ったゲーム”を集めた世界規模のインディーゲームショーケース「Games Without AI」始動！11月25日配信へ\nhttps://t.co/hWq3t34Jj0 https://t.co/0B0xgw8fkt",
+     "author": "⚡Game*Spark⚡",
+     "date": "2026-10-30",
+     "likes": 990,
+     "views": 79235,
+     "link": "https://x.com/gamespark/status/2116104110546305148",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HV3pdMVagAAOrdg.jpg"
+     },
+     "summary": "Game*Spark 报道，一个只收录「不用生成式 AI、由人手制作」游戏的独立游戏展示活动「Games Without AI」正式启动，定位为全球规模的 indie showcase，将于 11 月 25 日线上播出。推文未公布参展作品名单与主办方细节。",
+     "analysis": "这是把「无 AI」从道德表态变成可参与的发行渠道：对中小团队，参加这类展会等于用制作方式换一次曝光位；对平台与媒体，AI 使用透明度正在从标签演变为分类。真正的看点是 11/25 的片单能否证明「纯手工」在玩法层面仍有区别度，而不只是宣传口号。",
+     "recommendation": "只收人手制作的游戏：「Games Without AI」独立展 11 月 25 日首播"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "彭博社 · 多家报道",
+     "tags": [
+      "EA",
+      "BioWare",
+      "工作室关闭"
+     ],
+     "title": "彭博社：EA 在《质量效应 5》与尚未开工的《星球大战：前线 3》之间选了后者，BioWare 因此关闭",
+     "en_title": "Star Wars: Battlefront 3 has not even begun development yet, but EA executives saw it as a less risky, more predictable bet than a new Mass Effect–and the publisher behind Battlefield has always been more comfortable with shooters than RPGs.",
+     "full_text": "In a recent Bloomberg report, Jason Schreier states:\n\n“Star Wars: Battlefront 3 has not even begun development yet, but EA executives saw it as a less risky, more predictable bet than a new Mass Effect–and the publisher behind Battlefield has always been more comfortable with shooters than RPGs.”\n\nWith the added pressure of paying off $18 billion in leveraged debt after its sale to a business consortium and Saudi Arabia’s investment fund, Battlefront 3 made more financial sense.",
+     "author": "GameSpot",
+     "date": "2026-10-30",
+     "likes": 40,
+     "views": 6338,
+     "link": "https://x.com/GameSpot/status/2116209785599152314",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HV5JlcyWoAAF0Vy.jpg"
+     },
+     "summary": "Jason Schreier 在彭博社报道中称，《星球大战：前线 3》甚至还没进入开发，但 EA 高层认为它比新的《质量效应》是「风险更低、更可预测的赌注」——这家靠《战地》起家的发行商对射击游戏的把握远高于 RPG。叠加出售给含沙特基金财团后 180 亿美元杠杆债务的还款压力，选《前线 3》在财务上更「合理」。Eurogamer、PC Gamer、Destructoid、MP1st 同日跟进；Eurogamer 另称 EA 上周裁撤 400 人、关闭 BioWare 并遣散剩余约 50 人。",
+     "analysis": "这条把「工作室关闭」从人事新闻变成产品组合决策的样本：在 180 亿美元债务面前，IP 的确定性溢价压过了创作声誉。对做叙事/RPG 的团队，含义很直接——发行商衡量的是「下一款能不能预测收入」，而不是「上一款拿了多少奖」。",
+     "recommendation": "彭博社：EA 选未开工的《前线 3》而非《质量效应 5》，BioWare 因此关闭",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "有数GI 数据 · 媒体访谈",
+     "tags": [
+      "国产单机",
+      "UE5",
+      "Steam 数据"
+     ],
+     "title": "《影之刃零》上线第三天 Steam 峰值 73.1 万、好评率 84%，Metacritic 88",
+     "en_title": "Phantom Blade Zero Director Reveals How He Made 'A Playable Kung Fu Movie' with Donnie Yen",
+     "full_text": "Phantom Blade Zero Director Reveals How He Made 'A Playable Kung Fu Movie’ with Donnie Yen https://t.co/zMvnnbFlWh https://t.co/UYYzDqrxt4",
+     "author": "Polygon",
+     "date": "2026-10-30",
+     "likes": 23,
+     "views": 4653,
+     "link": "https://x.com/Polygon/status/2116143122438643834",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HV4M9KiXgAACr9M.jpg"
+     },
+     "summary": "有数GI 10-31 榜单显示，《影之刃零》24 小时峰值 731,026、位列 Steam 全球热玩第 4，历史峰值同为 731,026；好评率 84%，售价 ¥268，Steam 评价 26,014 条，Metacritic 88 分。游戏 10 月 28 日发售，由灵游坊（S-GAME）使用 UE5 开发。Polygon 同日刊出导演访谈，谈如何与甄子丹合作把游戏做成「可玩的功夫电影」；GameSpot 另报道其主角配音在临上线前疑似被替换。",
+     "analysis": "首日 43 万到第三天 73 万，说明口碑在周末继续放大，而不是首日冲高即回落；84% 好评对一款 ¥268 的国产武侠动作是「及格但不保险」的位置——Metacritic 88 与 Steam 84% 的落差，通常出现在优化与本地化体验而非核心战斗。对国产单机，这是可复用的样本：高价买断 + UE5 + 功夫动作，靠全球榜单而不是本土市场撑住峰值。",
+     "recommendation": "《影之刃零》第三天峰值 73.1 万、好评率 84%，Metacritic 88——¥268 买断",
+     "game_ref": "Phantom Blade Zero",
+     "featured": true,
+     "enrichment": {
+      "game_name": "影之刃零（Phantom Blade Zero）",
+      "genre": "动作 / 角色扮演 / 暗黑武侠",
+      "developer": "灵游坊 S-GAME（S-GAME Studio 开发，S-GAME Publishing 发行）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "¥268.00",
+      "release_date": "已发售 · 2026年10月28日",
+      "steam_rating": "好评率 84%（26,014 条评价，有数GI 10-31）；Metacritic 88",
+      "steam_url": "https://store.steampowered.com/app/4115450/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg",
+      "youtube_video": null,
+      "description": "【核心玩法】虚幻引擎 5 打造的暗黑武侠动作游戏：主角是心脏遭受重创、只剩 66 天寿命的剑客，在失序的武林中逃亡、追查并粉碎一桩笼罩整个武林的阴谋。战斗强调高速连段、招架与兵器切换，官方与媒体把它概括为「可玩的功夫电影」，动作设计与甄子丹有合作。\n\n【美术与氛围】以中式武侠的雨夜、客栈、竹林等意象为骨架，UE5 的材质与光照被用来做「电影感」而非写实感；演出密度高，是它区别于同类国产动作的主要辨识度。\n\n【市场表现】10 月 28 日发售，¥268 买断；首日 43.15 万 CCU，第三天 24 小时峰值 731,026，位列 Steam 全球热玩第 4、历史峰值同为 73.1 万；好评率 84%（26,014 条评价），Metacritic 88。\n\n【优势】题材与动作演出有明确差异；高价买断仍能靠全球榜单撑住峰值，说明海外需求被有效触达；媒体评分（88）为长尾口碑提供了背书。\n\n【不足】Steam 84% 与 Metacritic 88 的落差，指向优化、键位与本地化体验等「非核心战斗」问题；主角配音临上线前疑似更换也带来叙事一致性质疑。\n\n【综合评价】这是国产单机在「高价买断 + 全球同步」路径上目前最硬的一次验证：峰值够高，但好评率说明它离「口碑爆款」还差一层体验打磨。",
+      "why_notable": "国产 UE5 武侠动作第三天把 Steam 峰值推到 73.1 万，是本期数据量级最大的单品",
+      "pcu": "731,026（2026-10-31 当日峰值，历史峰值同）",
+      "current_players": null,
+      "estimated_sales": "首日 43.15 万 CCU，分析师估销量破百万（10-30 报道）",
+      "gi_summary": "「高速连段武侠动作」套「66 天寿命复仇」叙事，灵游坊自研自发、UE5 打造，Steam ¥268"
+     }
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "多家报道 · 平台政策",
+     "tags": [
+      "下架",
+      "平台政策",
+      "独立游戏"
+     ],
+     "title": "《蔚蓝》《塔倒》从 Xbox 商店下架：开发商以声援 BDS 抵制运动为由",
+     "en_title": "Celeste and TowerFall dev explains why both games were suddenly delisted from Xbox",
+     "full_text": "Celeste and TowerFall dev explains why both games were suddenly delisted from Xbox\n\nhttps://t.co/EQrBuOG1or https://t.co/s0GQ9om8hu",
+     "author": "Eurogamer",
+     "date": "2026-10-30",
+     "likes": 24,
+     "views": 7463,
+     "link": "https://x.com/eurogamer/status/2116111836118749480",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HV3wfzxXsAIu7fk.jpg"
+     },
+     "summary": "Eurogamer 报道，Extremely OK Games 首次解释《蔚蓝》（Celeste）与《塔倒》（TowerFall）为何突然从 Xbox 商店下架；Niche Gamer 与 TheGamer 称原因是开发商加入 BDS（抵制、撤资、制裁）运动，以撤下 Xbox 版本表达立场。两款游戏目前在 Xbox 端无法购买，其他平台未受影响。",
+     "analysis": "这是「平台立场—开发者立场」冲突的最新一例：下架不是商业决策，而是政治表态，代价是 Xbox 玩家的可及性与一段平台关系。对发行与商务的提醒是，平台协议里几乎没有为「价值观退出」设计的条款，未来类似事件会更多落在合同、地区合规与分成结算上。",
+     "recommendation": "《蔚蓝》《塔倒》从 Xbox 下架：开发商以声援 BDS 抵制为由"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "欧洲媒体 · 档期变动",
+     "tags": [
+      "FromSoftware",
+      "延期",
+      "Switch 2"
+     ],
+     "title": "FromSoftware《The Duskbloods》从 2026 延至 2027，具体档期未定",
+     "en_title": "FromSoftware's The Duskbloods has been delayed from its 2026 launch window into an unspecified time in 2027.",
+     "full_text": "FromSoftware's The Duskbloods - a game that is best described as Bloodborne meets Sekiro meets Dark Souls, with jetpacks and dinos thrown in - has been delayed from its 2026 launch window into an unspecified time in 2027. https://t.co/uyDq6MHkjZ https://t.co/JYqGwuXjOQ",
+     "author": "Eurogamer",
+     "date": "2026-10-30",
+     "likes": 11,
+     "views": 2735,
+     "link": "https://x.com/eurogamer/status/2116160732882444498",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HV4c-OkXkAAK23J.jpg"
+     },
+     "summary": "Eurogamer 报道，FromSoftware 的《The Duskbloods》已从原定 2026 年发售窗口推迟到 2027 年某个未公布时间。该作被形容为「《血源》+《只狼》+《黑暗之魂》，再加喷气背包与恐龙」的组合，是 Switch 2 平台的重点项目之一。Niche Gamer 同日跟进。",
+     "analysis": "对平台方，这是 Switch 2 首发后第一年阵容的一次缺口；对 FromSoftware，延期意味着它宁愿错过窗口，也不重复「内容不足」的口碑风险。值得观察的是延期是否伴随玩法方向调整——这类「多作缝合」概念在公布阶段最容易被误读。",
+     "recommendation": "FromSoftware《The Duskbloods》从 2026 延到 2027，档期未定"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "预告片 · 高传播",
+     "tags": [
+      "手绘",
+      "模拟养成",
+      "桌面壁纸"
+     ],
+     "title": "《Drawquarium 画个水族馆》：画什么鱼就养什么鱼，预告片 449 万播放",
+     "en_title": "El emotivo tráiler de DRAWQUARIUM: Un juego indie de arte donde dibujas y crías a los peces que nacieron de tu imaginación.",
+     "full_text": "El emotivo tráiler de DRAWQUARIUM:\n\nUn juego indie de arte donde dibujas y crías a los peces que nacieron de tu imaginación. https://t.co/LdtkaVrISa",
+     "author": "Cartoons On The Moon",
+     "date": "2026-10-29",
+     "likes": 133424,
+     "views": 4493441,
+     "link": "https://x.com/CartoonsOTMoon/status/2115613055396765773",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2115612854309011456/img/tF1LlAJPERmbaCz3.jpg",
+      "video_url": "https://x.com/CartoonsOTMoon/status/2115613055396765773/video/1"
+     },
+     "summary": "预告片展示《Drawquarium》：玩家手绘的鱼会活过来，在自己的水族箱里游动、被喂养照料，收集金色鱼鳞解锁装饰，还能把水族箱设为动态桌面壁纸，并附带专注计时等工具。Steam 页面显示由 byKaleb 开发、rokaplay 发行，2026 年 11 月 13 日发售、目前有 Demo。该推文 449 万播放、13.3 万赞。",
+     "analysis": "",
+     "recommendation": "《Drawquarium》：画的鱼会活过来，水族箱还能当动态壁纸——449 万播放",
+     "game_ref": "Drawquarium",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Drawquarium 画个水族馆：鱼你箱绘",
+      "genre": "手绘 / 模拟养成 / 桌面壁纸",
+      "developer": "byKaleb（发行：rokaplay）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": "2026年11月13日",
+      "steam_rating": "未发售（Demo 已上线，暂无评价）",
+      "steam_url": "https://store.steampowered.com/app/4045480/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4045480/84e76865a2649679dfb1687354ba0e5a05f44b0b/header.jpg",
+      "youtube_video": null,
+      "description": "【核心玩法】玩家用画笔勾勒鱼的身体、鳍与花纹，画完的鱼会立即「活」过来，在水族箱里游动、进食、成长；收集金色鱼鳞解锁装饰与新品种，把空缸逐步变成自己的水族馆。Steam 页面还标注了「动态桌面壁纸」与专注计时等工具属性。\n\n【美术与氛围】手绘线条直接成为游戏资产，画面风格完全取决于玩家自己，因此每个存档都不一样；官方 Demo 的基调是温暖、低压力，几乎没有失败惩罚。\n\n【对标定位】介于《ABZÛ》式观赏水族箱与电子宠物式养成之间，更像「可玩的桌面摆件」，而不是目标驱动的模拟经营。\n\n【优势】创作即内容，玩家对自己的画有天然情感投入；桌面壁纸定位让它有机会脱离「必须打开游戏」的场景限制；Demo 先行也降低了发售前的验证成本。\n\n【不足】养成深度尚未验证：如果鱼的成长主要靠时间与投喂，长期留存会很快见顶；手绘识别在鼠标与触屏上的体验差异，也可能造成口碑分化。\n\n【综合评价】11 月 13 日发售，是本季最典型的「情绪价值型」小品：卖点不在系统复杂度，而在「这是我画的」。",
+      "why_notable": "预告片 449 万播放、13.3 万赞，把「画画」变成养成循环，是本日传播量最大的独游",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「手绘鱼养成」套「水族箱 + 桌面壁纸」新瓶，byKaleb 开发、rokaplay 发行，2026-11-13 发售"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "开发者账号 · 发售",
+     "tags": [
+      "合作",
+      "模拟",
+      "低价"
+     ],
+     "title": "《逢考弊过》上线 Steam：1–4 人合作作弊模拟，首发 38% 折扣",
+     "en_title": "FINALS WEEK is OUT on Steam — Co-op cheating sim about surviving final week of exams",
+     "full_text": "FINALS WEEK is OUT on Steam\n\nCo-op cheating sim about surviving final week of exams\n\n- Survive increasingly difficult exams\n- Cheat together in 1–4 player co-op\n- Steal & share answers using gadgets\n- Avoid teacher & ridiculous punishments\n- Write answers on walls, paper & friends\n- Play basketball & hang out between exams\n- Unlock outfits & accessories\n\n38% launch discount",
+     "author": "Aerial",
+     "date": "2026-10-29",
+     "likes": 10804,
+     "views": 904246,
+     "link": "https://x.com/AerialZer0/status/2115847388707332483",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2115847109458931713/img/G3_vsljzPATzIMlJ.jpg",
+      "video_url": "https://x.com/AerialZer0/status/2115847388707332483/video/1"
+     },
+     "summary": "《FINALS WEEK》（Steam 中文名《逢考弊过》）已在 Steam 发售：1–4 人合作，在期末周里作弊求生——难度递增的考试、用道具偷答案并共享、躲老师和夸张惩罚、把答案写在墙上/纸上/同学身上，考间还能打篮球，首发 38% 折扣（¥17.36）。Steam 页面显示由 DESTINYbit 开发、Pretty Soon 发行，10 月 29 日发售。推文 90 万播放、1.08 万赞。",
+     "analysis": "",
+     "recommendation": "《逢考弊过》：4 人合作在期末周作弊，Steam 首发 38% 折扣（¥17.36）",
+     "game_ref": "FINALS WEEK",
+     "featured": true,
+     "enrichment": {
+      "game_name": "FINALS WEEK（逢考弊过）",
+      "genre": "合作 / 动作冒险 / 模拟",
+      "developer": "DESTINYbit（发行：Pretty Soon）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "¥17.36（首发 38% 折扣，原价 ¥28）",
+      "release_date": "已发售 · 2026年10月29日",
+      "steam_rating": "暂无评价（上线不足两日）",
+      "steam_url": "https://store.steampowered.com/app/4715160/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4715160/3d05c4f85866620b0b47754e30414cb4414b42dc/header.jpg",
+      "youtube_video": null,
+      "description": "【核心玩法】1–4 人合作的「作弊模拟」：在期末周里应付一场场难度递增的考试，用道具偷答案并与队友共享，把答案写在墙上、纸上甚至同学身上，同时躲开监考老师与夸张的惩罚；考试间隙可以打篮球、闲逛、解锁服装与配件。\n\n【美术与氛围】卡通夸张的校园喜剧调性，惩罚演出是主要笑点来源，明显为短视频与直播切片设计。\n\n【对标定位】与《Human: Fall Flat》《Pico Park》同属「多人社交喜剧」，但把场景换成考场，题材更贴近学生共同记忆。\n\n【优势】失败即笑点，天然适合直播与切片传播；¥17.36 的首发价把决策成本压到一顿饭；中文名《逢考弊过》本地化到位。\n\n【不足】内容量是硬伤：关卡与惩罚看几遍就失去新鲜感，需要靠更新或 UGC 维持；单人游玩体验明显弱于多人。\n\n【综合评价】10 月 29 日上线的「低价 + 强社交梗」标准打法，短期冲量可期，长期要看更新节奏。",
+      "why_notable": "90 万播放的考场作弊合作玩法，是本期最典型的「短视频友好型」独游",
+      "pcu": "未进入 Steam Top 500（峰值低于约 2 万）",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「4 人合作作弊」套「期末考场」新瓶，DESTINYbit 开发、Pretty Soon 发行，Steam 首发 ¥17.36"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "日本媒体 · 案例复盘",
+     "tags": [
+      "爆款复盘",
+      "改名换皮",
+      "Steam"
+     ],
+     "title": "《深空当铺》前身同接只有 28 人：改名换画之后冲到 12.5 万峰值",
+     "en_title": "「Steam同接わずか28人の無名ゲーム」が同接11万人超に大化け、ヒット中『Probably Stolen』の“地味だった”過去。名を変え、絵を変え大逆転",
+     "full_text": "「Steam同接わずか28人の無名ゲーム」が同接11万人超に大化け、ヒット中『Probably Stolen』の“地味だった”過去。名を変え、絵を変え大逆転\nhttps://t.co/NvcXkf6MKu https://t.co/kqc8nQa08I",
+     "author": "AUTOMATON（オートマトン）",
+     "date": "2026-10-30",
+     "likes": 558,
+     "views": 91533,
+     "link": "https://x.com/AUTOMATONJapan/status/2116111644728393806",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HV3wQ6nagAANrUt.jpg"
+     },
+     "summary": "AUTOMATON 复盘《深空当铺：可能是偷的》（Probably Stolen）：这款如今同接破 11 万的爆款，曾以另一个名字上线，Steam 同时在线最低只有 28 人；团队改名、重做美术后重新出发。推文 9.1 万播放。Niche Gamer 另称其首日 24 小时销量超过 35 万份；有数GI 10-31 榜单显示其 24 小时峰值 125,292、好评率 96%、售价 ¥49.50。",
+     "analysis": "",
+     "recommendation": "《深空当铺》前身同接仅 28 人，改名换画后冲到 12.5 万峰值——好评率 96%",
+     "game_ref": "Probably Stolen",
+     "enrichment": {
+      "game_name": "深空当铺：可能是偷的（Probably Stolen: Cyberpunk Pawnshop Simulator）",
+      "genre": "赛博朋克 / 店铺经营模拟 / 制造与走私",
+      "developer": "Questing Goose Studio（发行：tinyBuild）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "¥49.50",
+      "release_date": "已发售 · 2026年10月28日",
+      "steam_rating": "好评率 96%（有数GI 10-31，3,478 条评价）",
+      "steam_url": "https://store.steampowered.com/app/4348910/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4348910/d9938fa30354c82c9549c17864145e3e92e23847/header_alt_assets_3_schinese.jpg",
+      "youtube_video": null,
+      "description": "【本期新增的背景】AUTOMATON 的复盘是这条最有价值的增量：这款现在叫《深空当铺：可能是偷的》的游戏，曾以另一个名字上线，Steam 同时在线最低只有 28 人；团队改名、重做美术后重新出发，如今同接突破 11 万。\n\n【核心玩法】反乌托邦空间站里的赛博朋克当铺经营：制作、交易、走私来历不明的货物，在各方派系之间周旋，用利润把铺子彻底买下来——上涨的租金是唯一稳定的压力来源。\n\n【美术与氛围】霓虹 + 脏乱的太空站街区，界面信息密度高，整体气质向《赛博朋克 2077》的市井侧靠拢。\n\n【市场表现】10 月 28 日发售，¥49.50；首日数小时售出 20 万份、90 分钟 8.6 万同时在线；10-31 榜单峰值 125,292、好评率 96%（3,478 条评价），Niche Gamer 称首日 24 小时销量超 35 万份。\n\n【优势】概念一句话说清；低价 + tinyBuild 渠道让首发曝光被放大；改名换画证明「包装」在 Steam 冷启动中的权重可能高于玩法微调。\n\n【不足】同一套玩法曾只有 28 人在线，说明产品本身没有变化，变化的是定位与呈现——这种「第二次机会」需要重做美术的预算，多数团队没有。\n\n【综合评价】2026 年最值得存档的冷启动案例：失败一次不等于玩法失败，但能翻身的前提是你还付得起一次重启。",
+      "why_notable": "同一套玩法从 28 人同接到 12.5 万峰值，是 Steam 冷启动最反常识的案例",
+      "pcu": "125,292（2026-10-31 当日峰值）",
+      "current_players": null,
+      "estimated_sales": "首日 24 小时超 35 万份（Niche Gamer）",
+      "gi_summary": "「赛博当铺经营」套「反乌托邦空间站」新瓶，Questing Goose 开发、tinyBuild 发行，Steam ¥49.50"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "开发者账号 · 实机片段",
+     "tags": [
+      "恐怖",
+      "第一人称",
+      "独立开发"
+     ],
+     "title": "《GHOSTPUNCH》：把鬼按在地上打的恐怖游戏，开发者放出实机片段",
+     "en_title": "We're making a game where you punch a ghost really, really hard",
+     "full_text": "We’re making a game where you punch a ghost really, really hard #indiedev #indiegames #showcasethursday https://t.co/rehPbP8o4b",
+     "author": "Rat in a Bag | Making GHOSTPUNCH",
+     "date": "2026-10-29",
+     "likes": 3098,
+     "views": 65214,
+     "link": "https://x.com/GhostpunchGame/status/2115884024938008706",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2115883982025805824/img/cJXC4NLPVliuYaU0.jpg",
+      "video_url": "https://x.com/GhostpunchGame/status/2115884024938008706/video/1"
+     },
+     "summary": "独立开发者 Rat in a Bag 放出《GHOSTPUNCH》实机片段：一款把「狠狠揍鬼」作为核心动作的恐怖游戏，用第一人称近战对抗灵体。Niche Gamer 同日跟进报道。推文 6.5 万播放、3,098 赞。",
+     "analysis": "",
+     "recommendation": "把鬼按在地上打：《GHOSTPUNCH》用近战把恐怖片变成动作片——3098 赞",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "游戏媒体 · 新游曝光",
+     "tags": [
+      "开放世界",
+      "复古",
+      "土耳其"
+     ],
+     "title": "《ALATURKA》：70 年代伊斯坦布尔的复古 GTA，烤肉与混乱齐飞",
+     "en_title": "ALATURKA is a retro GTA-like set in 70s Istanbul w/lots of craziness and kebabs",
+     "full_text": "ALATURKA is a retro GTA-like set in 70s Istanbul w/lots of craziness and kebabs: https://t.co/J45QlRsbhv https://t.co/Sow5f0zrCW",
+     "author": "Niche Gamer",
+     "date": "2026-10-30",
+     "likes": 65,
+     "views": 2916,
+     "link": "https://x.com/nichegamer/status/2116155540237664359",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2116155502618918912/pu/img/akmZSLiehMDU98eA.jpg",
+      "video_url": "https://x.com/nichegamer/status/2116155540237664359/video/1"
+     },
+     "summary": "Niche Gamer 介绍《ALATURKA》：一款以 1970 年代伊斯坦布尔为舞台的复古 GTA-like 开放世界游戏，主打荒诞情节与烤肉元素，附实机视频。",
+     "analysis": "",
+     "recommendation": "70 年代伊斯坦布尔版 GTA：《ALATURKA》把烤肉和混乱一起端上来",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "欧洲媒体 · 上手体验",
+     "tags": [
+      "恐怖",
+      "实拍",
+      "像素"
+     ],
+     "title": "《Tenebris Somnia》：8-bit 冒险里插入实拍恐怖片段",
+     "en_title": "8-bit horror Tenebris Somnia mixes weird live-action horror with a retro 2D adventure to impressive and unsettling effect",
+     "full_text": "8-bit horror Tenebris Somnia mixes weird live-action horror with a retro 2D adventure to impressive and unsettling effect https://t.co/LIBa5kID58 https://t.co/JnTABEgB2n",
+     "author": "Eurogamer",
+     "date": "2026-10-30",
+     "likes": 10,
+     "views": 2313,
+     "link": "https://x.com/eurogamer/status/2116188301619322888",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HV4179OXAAAft_Q.jpg"
+     },
+     "summary": "Eurogamer 上手《Tenebris Somnia》：把诡异的真人实拍恐怖片段与复古 2D 冒险混在一起，效果既惊艳又令人不安，文章认为这种「实拍 + 像素」的拼接在氛围上意外成立。",
+     "analysis": "",
+     "recommendation": "8-bit 冒险里插实拍恐怖：《Tenebris Somnia》的拼接意外成立",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "日本媒体 · 话题作",
+     "tags": [
+      "黑色幽默",
+      "Steam",
+      "日本独立"
+     ],
+     "title": "《がんばれ相棒》：把好友改造成兵器送上前线，明年推出正式版",
+     "en_title": "親友を改造して戦場へ送り出すゲーム『がんばれ相棒』Steamにてお披露目。人の心がない話題作が、ついに来年製品版に",
+     "full_text": "親友を改造して戦場へ送り出すゲーム『がんばれ相棒』Steamにてお披露目。人の心がない話題作が、ついに来年製品版に\nhttps://t.co/psgPUjvQua\n\n動画はunityroom版のもの https://t.co/7QZPyxDYX4",
+     "author": "AUTOMATON（オートマトン）",
+     "date": "2026-10-30",
+     "likes": 2221,
+     "views": 158243,
+     "link": "https://x.com/AUTOMATONJapan/status/2116121333864288685",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HV35NZUWwAAWNuN.jpg"
+     },
+     "summary": "AUTOMATON 报道，因「把挚友改造后送去战场」而被称为「没有人心」的话题作《がんばれ相棒》在 Steam 亮相，将于明年推出正式版；推文中的视频为 unityroom 版本。推文 15.8 万播放、2,221 赞。",
+     "analysis": "",
+     "recommendation": "把挚友改造成兵器送上战场：《がんばれ相棒》明年出正式版",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "开发者账号 · 项目中止",
+     "tags": [
+      "独立开发",
+      "项目中止",
+      "解压玩法"
+     ],
+     "title": "《ぷるぷるスライム》开发者宣布中止：资金耗尽，拔史莱姆的游戏做不下去了",
+     "en_title": "壁や床に埋まったスライムを引っこ抜く、ぷるぷるスライムというゲームを作っていましたが、開発資金が尽きたので開発中止します",
+     "full_text": "壁や床に埋まったスライムを引っこ抜く、ぷるぷるスライムというゲームを作っていました\nが、開発資金が尽きたので開発中止します\nなにか感想あればください https://t.co/oWyZMovaSt",
+     "author": "Mizufeed@ゲーム開発",
+     "date": "2026-10-30",
+     "likes": 2307,
+     "views": 339769,
+     "link": "https://x.com/Mizuhy_gamedev/status/2116065062649794980",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2116033081178271744/img/CCBmGJdxGJLzr_qg.jpg",
+      "video_url": "https://x.com/Mizuhy_gamedev/status/2116065062649794980/video/1"
+     },
+     "summary": "日本开发者 Mizufeed 公布，一直在做的《ぷるぷるスライム》——把嵌在墙壁和地板里的史莱姆拔出来的解压玩法——因开发资金耗尽决定中止开发，并向玩家征求反馈。推文 34 万播放、2,307 赞。",
+     "analysis": "",
+     "recommendation": "把墙里的史莱姆拔出来：开发者资金耗尽，《ぷるぷるスライム》中止",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "数毛社 · 图形技术",
+     "tags": [
+      "DirectX",
+      "光追",
+      "PC 图形"
+     ],
+     "title": "微软重做 DirectX 光追管线：官方称帧率提升、显存占用下降",
+     "en_title": "Microsoft Overhauls DirectX Raytracing, Boosting Frame-Rates and Cutting VRAM",
+     "full_text": "Microsoft Overhauls DirectX Raytracing, Boosting Frame-Rates and Cutting VRAM https://t.co/RZQT1FVEzi",
+     "author": "Digital Foundry",
+     "date": "2026-10-30",
+     "likes": 209,
+     "views": 15219,
+     "link": "https://x.com/digitalfoundry/status/2116198497623978136",
+     "media": null,
+     "summary": "Digital Foundry 报道，微软对 DirectX 的光线追踪管线做了结构性改造，官方称可在提升帧率的同时降低显存占用。推文未给出具体游戏与硬件测试数据，详细分析见其视频与文章。",
+     "analysis": "对 PC 端团队，DXR 的开销结构一直决定「光追是卖点还是负担」；如果这次改造真的同时降低 VRAM 与每帧成本，受益最大的是 8GB 显卡用户与需要同时跑光追和 Upscaler 的中端配置。风险在于新路径需要驱动与引擎侧适配，短期只在少数标题上可见效果。",
+     "recommendation": "微软重做 DirectX 光追管线：官方称帧率升、显存降"
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "官方账号 · 新工具",
+     "tags": [
+      "Unity",
+      "AI Agent",
+      "协作"
+     ],
+     "title": "Unity 推出 Spark：浏览器里和 AI Agent 一起实时做游戏，无需安装",
+     "en_title": "With Unity Spark, a new way to make and share games without prior game dev experience required, real-time co-creation happens right in your web browser.",
+     "full_text": "Make your next game with the people you play games with 🎮👥\n\nWith Unity Spark, a new way to make and share games without prior game dev experience required, real-time co-creation happens right in your web browser. \n\nWatch teammates and AI agents build track sections, tweak mechanics, and test gameplay simultaneously with no installs required. \n\nTag a friend you’d build with!\n\n🔗 Join the Unity Spark waitlist: https://t.co/errRgUXXDT",
+     "author": "Unity for Games",
+     "date": "2026-10-30",
+     "likes": 62,
+     "views": 5350,
+     "link": "https://x.com/unitygames/status/2116147801193087145",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2116147716040339457/pu/img/-Ee3S5j87fcSVgT7.jpg",
+      "video_url": "https://x.com/unitygames/status/2116147801193087145/video/1"
+     },
+     "summary": "Unity 公布 Unity Spark，定位是「不需要游戏开发经验」的实时共创工具：在浏览器里，队友与 AI Agent 可以同时搭建赛道段落、调玩法、试玩，无需安装客户端；目前开放 waitlist。官方演示视频 5,350 播放。",
+     "analysis": "这是引擎厂把「AI 生成」包装成协作场景而非一键生成：真正卖点是多人 + Agent 同屏修改同一份工程，这对原型评审与教学场景比「生成一整款游戏」更实际。限制同样明显——复杂项目的版本管理与性能瓶颈不会因为搬进浏览器而消失。",
+     "recommendation": "Unity Spark：在浏览器里和 AI Agent 同屏改游戏，无需安装"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**引擎厂开始给 AI 训练数据划界**\nEpic 更新 UE EULA，开发者可自愿授权用自家 UE 与 MetaHuman 项目训练 AI 模型，官方强调不取得内容与代码权利；同一天，只收「人手制作」游戏的「Games Without AI」展宣布 11 月 25 日首播。\n\n**发行商的选择比作品质量更致命**\n彭博社称 EA 在《质量效应 5》与尚未开工的《星球大战：前线 3》之间选了后者，BioWare 因此关闭；《影之刃零》上线第三天把 Steam 峰值推到 73.1 万，好评率 84%。\n\n**独游的第二次机会**\n《深空当铺》前身同接只有 28 人，改名换画后冲到 12.5 万峰值；《Drawquarium》让玩家画的鱼活过来，预告 449 万播放；《逢考弊过》用 4 人合作作弊把考场变成喜剧现场。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
