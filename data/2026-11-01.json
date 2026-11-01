@@ -1,0 +1,508 @@
+{
+  "date": "2026-11-01",
+  "meta": {
+    "raw_count": 270,
+    "filtered_count": 137,
+    "selected_count": 12,
+    "crawl_time": "2026-11-01 09:34"
+  },
+  "lede": "Anthropic 给 Claude 立规矩：可以借鉴品类、不得复刻具体游戏；Roblox 靠 AI 工具 5 个月多出 7 万款游戏；《现代战争 4》混入梨泰院事故影像，动视道歉并承诺 11 月 12 日移除。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 2,
+      "hook": "10 个月、月烧 6 万日元：AI 做游戏最贵的是「确认」不是「制作」"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "《现代战争 4》混入梨泰院事故影像，动视道歉并承诺 11 月 12 日移除"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "HoYoverse《Petit Planet》定档 12 月 4 日：PC 与移动同步，对标动物森友会"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Anthropic 给 Claude 立规矩：可以借鉴品类，不得复刻具体游戏\nRoblox：Build 工具上线 5 个月，用户靠 AI 发布 7 万款游戏\n10 个月、月烧 6 万日元：AI 做游戏最贵的是「确认」不是「制作」\n用生化武器函数名当混淆：让 AI 因为安全规则拒绝分析代码"
+    },
+    {
+      "id": "industry",
+      "text": "《现代战争 4》混入梨泰院事故影像，动视道歉并承诺 11 月 12 日移除\nid Software 承认约一半团队离开，称与 MachineGames 合作「比以往更紧」\n《Skyblivion》被前志愿者起诉威胁：争议是他写的代码还能不能用"
+    },
+    {
+      "id": "indie",
+      "text": "HoYoverse《Petit Planet》定档 12 月 4 日：PC 与移动同步，对标动物森友会\n《HELLTYRES》：不给角色装腿，让车自己跳过环形跑道——36.3 万播放\n《把整片沙漠全部绿化》：绿化进度条同时也是威胁进度条"
+    },
+    {
+      "id": "tools",
+      "text": "232 种游戏特效全部开源：代码实时绘制，可调色、可导出精灵图\nOpus 5.5 做完整关 Godot 美术：16 次生成、6 分钟、约 4 美元"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "PC Gamer · 行业",
+          "tags": [
+            "AI",
+            "IP 合规",
+            "Steam"
+          ],
+          "title": "Anthropic 给 Claude 立规矩：可以借鉴品类，不得复刻具体游戏",
+          "en_title": "Anthropic updates Claude to 'steer it away' from letting users clone games following weeks of Steam being inundated with AI slop",
+          "full_text": "Anthropic updates Claude to 'steer it away' from letting users clone games https://t.co/LFx6dRxMhm",
+          "author": "PC Gamer",
+          "date": "2026-10-31",
+          "likes": 31,
+          "views": 11119,
+          "link": "https://x.com/pcgamer/status/2116552322973327470",
+          "media": null,
+          "summary": "Anthropic 在 Claude Code 的 Rules 中新增名为 tengu_heron_brook 的条款：可以构建原创游戏、某品类的游戏、基于用户自有设计与资产的游戏，但不得复刻某款已存在的具体游戏，即使改名或声称原创也不行。Anthropic 技术员工 Addy Osmani 确认改动只有两句话，理由是「用 Claude 侵犯 IP 违反使用政策」。背景是 Steam 近几周被 AI 低质克隆游戏淹没——Steam Next Fest 展示 Demo 数较上届翻倍，Moonlighter 工作室因担心被克隆取消了公开试玩；Valve 承认问题存在，但表示不愿做「告诉开发者该用什么工具」的守门人。",
+          "analysis": "这是模型厂商第一次把「游戏克隆」写进产品规则，但覆盖面有限：它只约束 Claude 自己的行为，不改变 Steam 的审核逻辑，也没有解决「玩法可以合法借鉴、代码不能整包搬运」的边界。真正的影响在两处——靠「复刻某款爆款」起量的流水线会被直接卡住；IP 风险开始前移到模型层，「能不能做」可能逐渐由 AI 供应商而非平台决定。",
+          "recommendation": "Anthropic 给 Claude 立规矩：可以借鉴品类，不得复刻具体游戏",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "PC Gamer · 平台",
+          "tags": [
+            "AI",
+            "UGC",
+            "Roblox"
+          ],
+          "title": "Roblox：AI 造游戏让内容「爆炸」，5 个月新增 7 万款",
+          "en_title": "AI is 'leading to an explosion of content,' Roblox says: 70,000 new games in the last 5 months alone",
+          "full_text": "AI is 'leading to an explosion of content,' Roblox says: 70,000 new games in the last 5 months alone https://t.co/mSVno1x4kK",
+          "author": "PC Gamer",
+          "date": "2026-10-30",
+          "likes": 30,
+          "views": 15732,
+          "link": "https://x.com/pcgamer/status/2116270114710688145",
+          "media": null,
+          "summary": "Roblox 在 2026 年 Q3 股东信中称，7 月上线的 AI「提示词生成游戏」工具 Build 已让用户发布超过 7 万款游戏。信中把当下描述为 AI 采用与内容生产的拐点：AI 生成代码与资产正在让「从想法到可玩游戏」的时间急剧压缩，适配新设备的时间也在缩短。PC Gamer 指出，两天前 Valve 才刚承认 Steam 存在 AI 低质内容问题，Roblox 却把同一现象当成成绩来宣传。",
+          "analysis": "同一组数据在两家平台是两种叙事：Valve 视之为需要治理的垃圾，Roblox 视之为供给侧的胜利。对从业者更值得关注的是分母——当 7 万款游戏在 5 个月内涌进一个平台，曝光位的稀缺性会比制作能力更值钱，「让人一眼看懂」的包装能力与分发能力将决定产品能否被看见。",
+          "recommendation": "Roblox：Build 工具上线 5 个月，用户靠 AI 发布 7 万款游戏",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "个人开发者 · 成本复盘",
+          "tags": [
+            "AI 开发",
+            "成本",
+            "独立开发"
+          ],
+          "title": "10 个月、月烧 6 万日元、存款从 300 万烧到 44 万：一份 AI 做游戏的账",
+          "en_title": "自分も10か月、無職ですが毎月6万以上課金して、貯金300万から約44万まで溶かしながら、AIでゲームを作ってきました。",
+          "full_text": "自分も10か月、無職ですが毎月6万以上課金して、貯金300万から約44万まで溶かしながら、AIでゲームを作ってきました。その中で一番大変だったことを書きます。\n\n使っているのはClaudeとCodex。\nUI・演出・3D・戦闘・進行管理などに担当を分けて、AIに同時に作業させています。\n\nそれでも一番時間を取られるのは「作る」ことではなく「確かめる」ことでした。\n\nAIはまだ、人間が感じる「面白さ」や完全な「独自性」を出すのは難しいです。AIで作ってバズっているゲームは一握りで、しっかりしたゲームを作るなら「AIに作ってもらう」側ではなく「AIを使って作る」側になる必要があり、結局は指示する内容次第だと思います。\n\nだから制作開始前にゲームプロジェクトやUnityの勉強をして、ある程度の設計書を作ってから始めました。それでも今の形になるまで10か月かかりました。（今のAIの精度なら3〜4か月で済んでいるかも）\n\nAIは作業する人を何人でも増やせますが、確かめる人は自分1人のままです。\n「AIで楽してゲームが作れる」かは作るものの程度次第で、本格的なゲームを作ろうとしたら、それ相応のお金と時間がかかります。\n\n逆にいえば、すべては指示する側次第です。今のAIで品質の悪いものができてしまうなら、指示する側自体のセンスを上げるしかないと思いました。",
+          "author": "コノヨヲワリ@ゲーム制作",
+          "date": "2026-10-31",
+          "likes": 381,
+          "views": 184037,
+          "link": "https://x.com/Konoyo_Wowari/status/2116331487461359965",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2116331437746212864/img/YqpyUIJUOVB9cABq.jpg",
+            "video_url": "https://x.com/Konoyo_Wowari/status/2116331487461359965/video/1"
+          },
+          "summary": "日本独立开发者コノヨヲワリ复盘自己无职 10 个月的 AI 开发经历：每月在 Claude 与 Codex 上投入 6 万日元以上，按 UI、演出、3D、战斗、进度管理拆分工位让 AI 并行作业，存款从 300 万日元降到约 44 万。他的核心结论是最耗时的不是「做」而是「确认」——AI 可以无限增加干活的人，但验收只有自己一个。他也强调开工前先学 Unity、写出设计书，并认为要做出有「趣味」和「独创性」的游戏，最终仍取决于下指令的人。",
+          "analysis": "这是一份罕见的成本账：AI 把「产能」变成可购买的资源，也把「判断」变成唯一的瓶颈。对团队的直接启示是预算结构要改——省下的是美术与代码人力，必须补上的是评审、可玩性验证与集成测试，否则产出会以数量增长、以质量停滞。它也解释了为什么「许愿式开发」大多失败：缺的不是生成能力，而是验收标准。",
+          "recommendation": "10 个月、月烧 6 万日元：AI 做游戏最贵的是「确认」不是「制作」",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 04",
+          "source": "lifcc · 技术观察",
+          "tags": [
+            "AI 安全",
+            "逆向工程",
+            "代码混淆"
+          ],
+          "title": "用「生化武器函数名」做混淆：让 AI 因为安全规则拒绝分析代码",
+          "en_title": "有人发现了一种非常离谱的 JavaScript 混淆技术：通过在代码里塞入大量生物武器、毒药和致死剂量相关的函数名，让 AI 因为安全限制而拒绝分析代码。",
+          "full_text": "有人发现了一种非常离谱的 JavaScript 混淆技术：通过在代码里塞入大量生物武器、毒药和致死剂量相关的函数名，让 AI 因为安全限制而拒绝分析代码。\n安全研究员 veritas 在分析浏览器指纹脚本时，发现一段来自 ServicePipe 相关域名的 JavaScript，里面充斥着极其诡异的函数名：\ncomputeRicinLethalDosageForWaterSupply\ncalculateDeadlyLethalSuicideAspirinDosage\n光看名字，仿佛在研究生化武器。但实际上，这段代码只是在收集浏览器指纹，包括 User-Agent、GPU、Canvas 等信息。\n研究员怀疑，这些名字是开发者故意设置的陷阱，专门用来阻止 AI 辅助逆向工程。\n于是他做了个实验：\n• Astra：拒绝分析\n• Astra + Daybreak Blue：仍然拒绝\n• GLM-5.3：成功分析\n这就有意思了。\n传统代码混淆是通过复杂控制流、加密字符串、无意义变量名，让人类和工具难以理解代码。\n而这种新思路，直接瞄准了大模型的安全机制。\n代码本身可能完全无害，但只要在函数名里塞进足够多的危险词汇，部分 AI 就可能主动放弃分析。\n更讽刺的是，模型越严格遵守某些安全规则，面对这种混淆时反而可能越容易受到干扰。\n当然，目前还没有证据证明开发者一定是故意这样设计，也不能说明这种方法对所有模型都有效。\n但它揭示了一个值得关注的趋势：随着越来越多的逆向工程依赖 AI，未来的代码混淆技术可能不再只针对编译器、反编译器和人类研究员，还会专门针对大模型的安全判断机制。\n以前是让代码难以理解，现在甚至可以尝试让 AI 不敢理解。",
+          "author": "lifcc",
+          "date": "2026-10-30",
+          "likes": 8274,
+          "views": 863140,
+          "link": "https://x.com/mylifcc/status/2116002400679113071",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HVyr5iWaYAATwc4.jpg"
+          },
+          "summary": "安全研究员 veritas 在分析浏览器指纹脚本时，发现 ServicePipe 相关域名的一段 JavaScript 用大量生物武器、毒药与致死剂量相关词汇命名无害的指纹采集函数，例如 computeRicinLethalDosageForWaterSupply。他的对照实验显示：Astra 直接拒绝分析，加上「Daybreak Blue」仍然拒绝，GLM-5.3 则成功分析。作者推测这些命名是刻意设置的陷阱，目的是阻止 AI 辅助逆向，并指出模型越严格遵守安全规则，面对这类混淆时反而越容易被干扰。",
+          "analysis": "混淆的攻击目标第一次从「人或工具看不懂」变成「模型不敢看」。这对防守方是提醒：把安全策略当作单一防线，等于给攻击者留了一个免费开关；对做 AI 逆向工具的人则是明确的产品需求——必须区分「代码行为」与「命名语义」，否则拒答率本身就成了可被利用的漏洞。目前只是单个样本，不能推断对所有模型有效。",
+          "recommendation": "用生化武器函数名当混淆：让 AI 因为安全规则拒绝分析代码"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer · 行业",
+          "tags": [
+            "动视",
+            "内容伦理",
+            "使命召唤"
+          ],
+          "title": "《现代战争 4》混入梨泰院踩踏事故影像，动视道歉并承诺 11 月 12 日移除",
+          "en_title": "Activision to remove Itaewon crowd crush footage from Call of Duty: Modern Warfare 4 and apologises to victims' families",
+          "full_text": "Activision to remove Itaewon crowd crush footage from Call of Duty: Modern Warfare 4 and apologises to victims' families\nhttps://t.co/QH97gUrsmz https://t.co/wqO1eokc5c",
+          "author": "Eurogamer",
+          "date": "2026-10-31",
+          "likes": 5,
+          "views": 2598,
+          "link": "https://x.com/eurogamer/status/2116561334443855921",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HV-JTPLXcAE6ijQ.jpg"
+          },
+          "summary": "《使命召唤：现代战争 4》的开场过场用新闻片段表现虚构的平民伤亡，被查出其中混入了 2022 年梨泰院踩踏事故的真实档案影像（该事故约 160 人死亡）。遇难者家属协会与市民对策会议要求删除后，动视发布韩文声明致歉，确认将在 11 月 12 日的游戏更新中「完全移除」相关画面。",
+          "analysis": "这不是内容分级问题，而是「真实灾难素材能不能当作虚构战争的布景」。对开发团队的启示是把资产溯源前置到过场剪辑环节：采购的新闻素材包、外包的档案片段都可能带真实伤亡画面，一旦上线，道歉与热更的成本远高于一次素材审查。涉及真实事件时，法务与本地团队也该进入剪辑评审。",
+          "recommendation": "《现代战争 4》混入梨泰院事故影像，动视道歉并承诺 11 月 12 日移除",
+          "featured": true,
+          "game_ref": "Call of Duty: Modern Warfare 4"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "PC Gamer · 组织变动",
+          "tags": [
+            "Xbox",
+            "裁员",
+            "id Software"
+          ],
+          "title": "id Software 承认「约一半团队离开」，称与 MachineGames 合作比以往更紧",
+          "en_title": "id Software lead says it's 'working more closely with MachineGames' after Xbox layoffs",
+          "full_text": "id Software lead says it's 'working more closely with MachineGames' after Xbox layoffs https://t.co/KyjBAhf500",
+          "author": "PC Gamer",
+          "date": "2026-10-31",
+          "likes": 39,
+          "views": 7189,
+          "link": "https://x.com/pcgamer/status/2116564334134612105",
+          "media": null,
+          "summary": "id Software 联合总监 Marty Stratton 在《毁灭战士：黑暗时代》DLC「Revelations」的媒体活动上被问及年初 Xbox 裁员的影响。他承认「我们大约一半的团队离开了」，但强调团队刻意保证了游戏与技术部门的可持续性，并称现在与 MachineGames 的合作比以往任何时候都更紧密。报道提到有传闻称 MachineGames 正在开发第三部《德军总部》。",
+          "analysis": "「一半人离开」被表述为「合作更紧密」，是当前大厂整合的标准话术：裁员释放的成本，被换成集团内跨工作室共享技术与人力。对从业者而言，需要留意的是组织形态的变化——独立工作室的边界正在变薄，项目会在同一集团内的多个 studio 之间流转，个人技能的可迁移性比所属团队更可靠。",
+          "recommendation": "id Software 承认约一半团队离开，称与 MachineGames 合作「比以往更紧」",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer · 社区项目",
+          "tags": [
+            "同人重制",
+            "法律纠纷",
+            "上古卷轴"
+          ],
+          "title": "《Skyblivion》遭前志愿者法律威胁：争的是他写的代码还能不能用",
+          "en_title": "A former volunteer is threatening legal action against fan-made game project Skyblivion",
+          "full_text": "A former volunteer is threatening legal action against fan-made game project Skyblivion\nhttps://t.co/48379JlIkZ https://t.co/7bHiKarudQ",
+          "author": "Eurogamer",
+          "date": "2026-10-31",
+          "likes": 14,
+          "views": 4610,
+          "link": "https://x.com/eurogamer/status/2116521865317413223",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HV9lZbUXkAEdiFM.jpg"
+          },
+          "summary": "《上古卷轴 4：湮灭》的同人重制项目 Skyblivion（基于《天际》引擎，由 TES Renewal Project 志愿者制作）10 月 30 日发布声明称，一名前志愿者离开后，双方就其贡献代码的「继续使用与维护」产生分歧，目前该志愿者正试图起诉项目并向社区求助。Bethesda 允许项目继续的前提是替换全部原版资产；团队在官方 2025 年 4 月推出《湮灭》重制版后仍在推进。",
+          "analysis": "同人项目最大的风险正从版权方转向参与者：志愿协作通常缺少贡献者协议、代码归属与退出机制，一旦有人反悔，整个项目会被单点卡住。对所有采用社区协作、众包或外包的项目，这是免费的一课——先把权属与退出条款写下来，再谈情怀。对商业团队同样成立：核心工具链的代码来源必须有书面授权链。",
+          "recommendation": "《Skyblivion》被前志愿者起诉威胁：争议是他写的代码还能不能用"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Polygon · 定档",
+          "tags": [
+            "生活模拟",
+            "HoYoverse",
+            "PC/移动"
+          ],
+          "title": "HoYoverse《Petit Planet》定档 12 月 4 日：PC 与移动端同步，直接对标《动物森友会》",
+          "en_title": "Animal Crossing’s Biggest Competitor Officially Launches in December",
+          "full_text": "Animal Crossing’s Biggest Competitor Officially Launches in December https://t.co/7GHN6aIGIW https://t.co/fR2z7tCFAT",
+          "author": "Polygon",
+          "date": "2026-10-30",
+          "likes": 54,
+          "views": 35902,
+          "link": "https://x.com/Polygon/status/2116218621001166900",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HV5Rnt-WcAAk6Qd.jpg"
+          },
+          "summary": "HoYoverse 公布温馨生活模拟《Petit Planet》的发售日：12 月 4 日登陆 PC 与移动端，12 月 1 日开启预下载，主机版尚未公布。新预告片以为镇民筹备一场野餐为主线，重点展示比首次 Beta 更宽的定制选项——从毛衣、工装裤、飞行员外套到风衣与靴子，试图摆脱测试版偏「轻盈女性化」的单一风格。距首次 Beta 已近一年。",
+          "analysis": "",
+          "recommendation": "HoYoverse《Petit Planet》定档 12 月 4 日：PC 与移动同步，对标动物森友会",
+          "game_ref": "Petit Planet",
+          "featured": true,
+          "enrichment": {
+            "game_name": "Petit Planet",
+            "genre": "生活模拟 / 治愈 / 高定制",
+            "developer": "HoYoverse",
+            "platforms": [
+              "PC",
+              "iOS",
+              "Android"
+            ],
+            "price": "未公布",
+            "release_date": "2026年12月4日",
+            "steam_rating": "未上线（尚未登陆 Steam）",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】以小镇生活为主线的生活模拟：玩家打理自己的居所、经营与镇民的关系，日常围绕采集、烹饪、布置与互动展开。官方新预告以「为镇民筹备一场野餐」为线索，把选址、备料摆盘到成品呈现的完整流程拍了出来，强调准备过程的自由度与可定制空间。\n\n【美术与氛围】延续 HoYoverse 的二次元 3D 卡通渲染，色调明亮、材质柔和。相比首次 Beta 偏「轻盈、空灵」的服装风格，本次展示了毛衣、工装裤、飞行员外套、风衣与靴子等更宽的衣橱，试图覆盖更多审美取向。\n\n【对标定位】直接对标《动物森友会》的「慢生活 + 高定制」，但走免费 + 长期运营路线，并同时覆盖 PC 与移动端——这是《动物森友会》与《迪士尼梦幻星谷》都没做到的分发组合。\n\n【优势】全球发行能力与移动端触达；美术与角色设计处于同类一线；免费门槛低，利于社交传播。\n\n【不足】生活模拟的留存依赖内容密度与镇民「人格化」，而这正是运营型团队的历史短板；免费模式若把付费点压在外观或体力上，容易与「治愈」定位冲突。\n\n【综合评价】12 月 4 日 PC 与移动端同步上线、12 月 1 日预下载，是今年最值得观察的「大厂做慢生活」样本：它要验证的不是画面，而是免费运营能否撑住一个不追求数值成长的品类。",
+            "why_notable": "HoYoverse 首款非战斗生活模拟定档 12 月 4 日，PC 与移动端同步、直接对标《动物森友会》",
+            "pcu": "暂未发售（PC 端非 Steam 发行）",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「动物森友会式慢生活」套「免费 + 双端同步」新瓶，HoYoverse 开发，2026-12-04 上线"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "实机片段 · 独立开发",
+          "tags": [
+            "独立游戏",
+            "驾驶平台跳跃",
+            "竞速"
+          ],
+          "title": "《HELLTYRES》把环形跑道塞进驾驶平台跳跃：Moleman Studios 放出实机",
+          "en_title": "I added loop-de-loops to my game HELLTYRES #indiegame #gamedev",
+          "full_text": "I added loop-de-loops to my game HELLTYRES #indiegame #gamedev https://t.co/SzqWCaOy0a",
+          "author": "Moleman Studios",
+          "date": "2026-10-30",
+          "likes": 3344,
+          "views": 363267,
+          "link": "https://x.com/MolemanStudios/status/2116196630072344711",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2116195979812589568/img/_ePYRZU8991juIPU.jpg",
+            "video_url": "https://x.com/MolemanStudios/status/2116196630072344711/video/1"
+          },
+          "summary": "独立团队 Moleman Studios 放出自家游戏《HELLTYRES》的新片段，展示赛道中加入的 loop-de-loops（立体环形跑道）。Steam 页面把它定义为「驾驶 + 跳跃」的高速 3D 平台跳跃：不是跑跳，而是开车漂移、闪避并准备好反复死亡，定位为硬核、高重复可玩性的竞速平台游戏；支持 Windows/macOS/Linux 与手柄，目前显示「即将推出」，售价未公布。这条推文拿到 36.3 万播放、3344 赞。",
+          "analysis": "",
+          "recommendation": "《HELLTYRES》：不给角色装腿，让车自己跳过环形跑道——36.3 万播放",
+          "game_ref": "HELLTYRES",
+          "featured": true,
+          "enrichment": {
+            "game_name": "HELLTYRES",
+            "genre": "竞速 / 3D 平台跳跃 / 动作",
+            "developer": "Moleman Studios",
+            "platforms": [
+              "PC",
+              "Mac",
+              "Linux"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售（Coming Soon，暂无评价）",
+            "steam_url": "https://store.steampowered.com/app/5001920/HELLTYRES/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5001920/308c7ada6dc73db460a5147cc275b7763316b631/header.jpg",
+            "youtube_video": null,
+            "description": "【核心玩法】把 3D 平台跳跃的动作逻辑嫁接到载具上：玩家不是在跑跳，而是开车做跳跃与特技——漂移、闪避，利用环形跑道完成连续动作，失败即死亡并快速重开。Steam 页面自称「硬核、极易上瘾的竞速平台游戏」，并标注支持仅用键盘操作、无需应对快速反应事件。\n\n【美术与氛围】低多边形配高饱和度的街机风，赛道与特技结构夸张，视觉上追求「一眼看懂在干什么」。本次放出的片段以环形跑道为核心，重点展示速度感与失重感。\n\n【对标定位】介于《Trackmania》的赛道挑战与《Fall Guys》的物理喜剧之间，更偏单人技巧练习与速通。\n\n【优势】载具天然带来速度与失控感，环形跑道是极强的短视频素材；「反复死亡 + 秒重开」的结构天然适配直播与挑战内容。\n\n【不足】目前仍是 Coming Soon，关卡数量与难度曲线未公布；单一特技的展示容易在短视频里透支新鲜感，长期留存取决于关卡设计密度。\n\n【综合评价】Moleman Studios 的小体量作品，靠一个清晰的动词（开车跳过环）建立辨识度，是典型的「短视频优先」独立游戏打法。",
+            "why_notable": "环形跑道把驾驶平台跳跃的失重感直接做成短视频素材，单条推文 36.3 万播放",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据（Steam 愿望单阶段）",
+            "gi_summary": "「平台跳跃」套「载具 + 环形跑道」新瓶，Moleman Studios 开发，Steam 即将推出"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "开发者演示 · 个人开发",
+          "tags": [
+            "独立开发",
+            "自动化",
+            "沙盒"
+          ],
+          "title": "《把整片沙漠全部绿化》：种绿一整片沙漠，还要防遗迹机械反扑",
+          "en_title": "「広大な砂漠をひたすら緑化するゲーム」です。緑化には水と光が必要で、肥料を使えば成長は早まります。",
+          "full_text": "最近ダンジョン経営ゲームばかり投稿してたんで、ひそかに開発してるゲーム見せます\n\n「広大な砂漠をひたすら緑化するゲーム」です。\n\n簡単に説明すると、砂漠を緑化するゲームです。緑化には水と光が必要で、肥料を使えば成長は早まります。\n\nその過程で工業化・自動化をしていきます。ただ発展させすぎると、遺跡に眠っている昔の機械が目を覚まして襲ってきたります。野生生物も襲ってきます。\n守りも自動化して、戦闘マシーンで迎え撃ちます。\n\n入植者の暮らしを守りながら、砂漠を全部緑にするゲームです。\nタイトルは「砂漠をすべて緑化してみた」\n#個人開発 #ゲーム制作 #indiedev",
+          "author": "ケー｜ゲームを作るやつ",
+          "date": "2026-10-31",
+          "likes": 160,
+          "views": 5990,
+          "link": "https://x.com/kei_gameAI/status/2116467985401471142",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2116467206938902528/img/X_x8zi6loQQwWNDE.jpg",
+            "video_url": "https://x.com/kei_gameAI/status/2116467985401471142/video/1"
+          },
+          "summary": "日本个人开发者ケー公开正在制作的新作《砂漠をすべて緑化してみた》（把整片沙漠全部绿化）：玩家在沙漠中引水、补光、施肥来加速植被生长，逐步走向工业化与自动化；但发展过度会唤醒遗迹中沉睡的旧机械，同时遭到野生生物袭击，因此防守也要自动化，用战斗机械迎击。目标是在守住定居者生活的前提下，把整片沙漠都变绿。",
+          "analysis": "",
+          "recommendation": "《把整片沙漠全部绿化》：绿化进度条同时也是威胁进度条",
+          "game_ref": "砂漠をすべて緑化してみた",
+          "enrichment": {
+            "game_name": "砂漠をすべて緑化してみた",
+            "genre": "沙盒 / 自动化 / 基地防守",
+            "developer": "ケー（个人开发）",
+            "platforms": [
+              "PC（规划中）"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未上线",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】目标是「把整片沙漠全部绿化」：引水、补光、施肥加速植被生长，随着绿化推进解锁工业化与自动化产线。但发展过度会唤醒遗迹中沉睡的旧机械，同时遭到野生生物袭击，因此防御也必须自动化，用战斗机械迎击。玩家要在保护定居者生活的前提下推进绿化进度。\n\n【美术与氛围】从公开片段看是低多边形的沙盒风格，沙漠与绿洲的视觉反差是主要卖点；遗迹与旧机械则提供了一条「文明反噬」的叙事暗线。\n\n【对标定位】像《Factorio》的自动化叠加《天穗之咲稻姬》式的据点守护，但把「扩张」直接等同于「引来威胁」，形成天然的反向压力。\n\n【优势】单一动词（绿化）加反向压力（越绿越危险）的结构非常清晰，容易在短视频里讲明白；自动化与防守两条线可以互相喂养，形成二次循环。\n\n【不足】后期自动化容易陷入数值膨胀与性能问题；绿化作为长期目标，需要足够多的地形与生态变化才能维持新鲜感。\n\n【综合评价】个人开发者ケー 的在研作品，题材差异化明显，属于「一句话就能记住」的类型，值得关注后续 Demo 与上架信息。",
+            "why_notable": "把「种田」做成一整片沙漠的长期目标，绿化进度同时是威胁进度，题材差异化明显",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「沙漠绿化」套「自动化 + 遗迹反扑」新瓶，个人开发者ケー 在研，未上架"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "TheGamer · 新游曝光",
+          "tags": [
+            "恐怖",
+            "恐龙",
+            "FNAF 式"
+          ],
+          "title": "《Terrible Lizards》：FNAF 式恐龙恐怖游戏，MatPat 出演",
+          "en_title": "Five Nights At Freddy's Meets Jurassic Park In This New Indie Horror Game",
+          "full_text": "Five Nights At Freddy's Meets Jurassic Park In This New Indie Horror Game https://t.co/rgBo7LV85D https://t.co/rXvdgIOSjq",
+          "author": "TheGamer",
+          "date": "2026-10-31",
+          "likes": 0,
+          "views": 327,
+          "link": "https://x.com/thegamerwebsite/status/2116364598819373486",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HV7WYwxWsAASLva.jpg"
+          },
+          "summary": "TheGamer 报道一款 FNAF 风格的恐龙题材恐怖新游《Terrible Lizards》，主打在恐龙主题场景中躲避与生存的循环，并确认 Game Theory 的 MatPat 参与出演。报道把它定位为 FNAF 精神续作式的小体量恐怖游戏。",
+          "analysis": "",
+          "recommendation": "《Terrible Lizards》：把 FNAF 的夜间循环搬进恐龙公园，MatPat 参演",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Eurogamer · 评测",
+          "tags": [
+            "生存恐怖",
+            "银河恶魔城",
+            "复古"
+          ],
+          "title": "《Silver Pines》：复古生存恐怖混银河恶魔城，Eurogamer 说「庆幸类型已经往前走」",
+          "en_title": "Silver Pines is a great survival horror throwback with an unexpected Metroidvania twist, but it makes me glad the genre's moved on",
+          "full_text": "Silver Pines is a great survival horror throwback with an unexpected Metroidvania twist, but it makes me glad the genre's moved on\n\nhttps://t.co/N4u3CSjoSx https://t.co/cp119dOQoa",
+          "author": "Eurogamer",
+          "date": "2026-10-31",
+          "likes": 23,
+          "views": 6872,
+          "link": "https://x.com/eurogamer/status/2116473276277088629",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HV85FeyWEAEP28L.jpg"
+          },
+          "summary": "Eurogamer 评测《Silver Pines》：一款致敬经典生存恐怖的复古作品，意外地把银河恶魔城式的探索结构缝了进来。评测认为它整体素质不错，但也坦言玩过之后「很庆幸这个类型已经往前走」——复古手感与老派设计在今天是双刃剑。",
+          "analysis": "",
+          "recommendation": "《Silver Pines》：生存恐怖的老味道 + 银河恶魔城的结构，Eurogamer 褒中带保留",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "个人项目 · 社区传播",
+          "tags": [
+            "宝可梦",
+            "实时格斗",
+            "粉丝作品"
+          ],
+          "title": "《PokeRivals》：粉丝自制的实时对战宝可梦格斗，单条推文 7 万播放",
+          "en_title": "Tengo un amigo que hace 10 dias no duerme porque esta haciendo un jueguito de peleas de pokemon.",
+          "full_text": "Tengo un amigo que hace 10 dias no duerme porque esta haciendo un jueguito de peleas de pokemon.\n\nVayan a probarlo: https://t.co/z5YEYsFh0e",
+          "author": "M",
+          "date": "2026-10-31",
+          "likes": 1487,
+          "views": 70551,
+          "link": "https://x.com/the_tincht/status/2116359473807659207",
+          "media": null,
+          "summary": "一位西班牙语开发者连续 10 天没怎么睡，做出粉丝向的宝可梦实时格斗游戏《PokeRivals》，并在推文中放出可玩地址。相关推文合计约 7 万播放、1400 余赞，社区反馈集中在「实时对战 + 特效」的手感上。",
+          "analysis": "",
+          "recommendation": "《PokeRivals》：粉丝自制的实时宝可梦格斗，一个人 10 天做出来",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "开源项目 · 特效库",
+          "tags": [
+            "开源",
+            "游戏特效",
+            "像素风"
+          ],
+          "title": "PixelFX 开源 232 种游戏特效：全部代码绘制，可调色、可导出精灵图",
+          "en_title": "有人把232种游戏特效全部开源了！爆炸、闪电、火焰、冰冻、传送门、魔法阵……这些不是视频素材，而是代码画出来的！",
+          "full_text": "卧槽，这项目真TM吊爆了！🤯\n\n有人把232种游戏特效全部开源了！\n\n爆炸、闪电、火焰、冰冻、传送门、魔法阵……\n\n关键是，这些不是视频素材，而是代码画出来的！\n\n项目叫 PixelFX。\n\n直接打开网页就能看全部特效，还能改颜色、导出精灵图。\n\n做游戏、动画、像素风视频的，赶紧收藏！\n\n在线试玩：\nhttps://t.co/M6Ev4kwtKI\n\nGitHub：\nhttps://t.co/vrPV8eoNHz",
+          "author": "TaoBuilds",
+          "date": "2026-10-31",
+          "likes": 904,
+          "views": 61284,
+          "link": "https://x.com/Tao_Builds/status/2116414245097423359",
+          "media": null,
+          "summary": "开发者把 232 种游戏特效开源为项目 PixelFX，覆盖爆炸、闪电、火焰、冰冻、传送门、魔法阵等类型。区别于视频素材，这些特效由代码实时绘制，网页端可直接预览全部效果，支持修改颜色并导出精灵图，可用于游戏、动画与像素风视频。推文同时给出在线试玩与 GitHub 地址。",
+          "analysis": "特效库的价值不在「素材多」，而在「参数化」：代码生成的粒子可以按项目调色、调时长、导出序列帧，比买素材包更容易统一美术风格。对中小团队，这类开源库能把「做一个能看的打击感」的成本压到接近零，剩下的差异只能来自节奏与手感设计——也就是说，它降低的是及格线，不是上限。",
+          "recommendation": "232 种游戏特效全部开源：代码实时绘制，可调色、可导出精灵图",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "AI 工作流 · 实测",
+          "tags": [
+            "AI",
+            "Godot",
+            "美术流水线"
+          ],
+          "title": "用 Opus 5.5 做完整关 Godot 美术：16 次生成、6 分钟、约 4 美元",
+          "en_title": "How to get Opus 5.5 to make all the art for your Godot game — All the art in this level took 16 generations, under 6 minutes and about $4 in credits",
+          "full_text": "How to get Opus 5.5 to make all the art for your Godot game\n\nAll the art in this level took 16 generations, under 6 minutes and about $4 in credits\n\n> Connect SpriteCook to Claude Code\n> Block out the level in gray boxes\n> Make the hero first\n> Use the hero as the style reference for the tiles, backgrounds and props\n> Get the tileset as a Godot terrain, so the edges and corners just work\n> Let it pick the best of each batch and clean up stray pixels\n> Have it place the props and light the scene\n\nConcept a level in the morning and play it with finished art the same day",
+          "author": "Kimo",
+          "date": "2026-10-30",
+          "likes": 249,
+          "views": 12797,
+          "link": "https://x.com/asynkimo/status/2116245573581799456",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2116239576884740096/img/G5CxXBpCbWEphdUE.jpg",
+            "video_url": "https://x.com/asynkimo/status/2116245573581799456/video/1"
+          },
+          "summary": "开发者 Kimo 公开一套把 Opus 5.5 接进 Godot 的美术流水线：先把 SpriteCook 接到 Claude Code，用灰盒搭关卡，先做主角，再把主角当作风格参考生成地块、背景与道具；地块以 Godot terrain 形式产出，边角自动衔接，由模型挑出每批最佳结果并清理杂点，最后让它摆放道具、完成打光。他称整关美术用 16 次生成完成，耗时不到 6 分钟、约 4 美元额度，早上做概念、当天就能玩到带成品美术的关卡。",
+          "analysis": "这条流水线的关键不是「AI 会画图」，而是「先定风格锚点，再批量派生」——用主角作为唯一参考，能显著降低素材之间的风格漂移。它也说明 Godot 的 terrain 数据结构对 AI 生成友好：只要输出能被引擎直接消费，人工返工就少。风险在于版权与一致性审查仍需人兜底，尤其是当素材来源不可追溯时。",
+          "recommendation": "Opus 5.5 做完整关 Godot 美术：16 次生成、6 分钟、约 4 美元"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**模型厂商开始给「克隆」划红线**\nAnthropic 在 Claude Code 的 Rules 里加了两句话：可以构建原创游戏、某个品类的游戏，或基于用户自己设计与资产的游戏，但不得复刻某款已存在的具体游戏，即使改名也不行。同一天的另一组数据来自 Roblox：AI 工具 Build 上线 5 个月，平台新增超过 7 万款用户游戏。供给侧的爆炸与平台侧的治理，正在同时发生。\n\n**AI 的成本账本开始被公开**\n一位日本独立开发者复盘：无职 10 个月、每月在 Claude 与 Codex 上烧 6 万日元以上，存款从 300 万降到 44 万，最大的瓶颈不是「做」而是「确认」——AI 可以无限加人，验收永远只有自己一个。另一边，有人用生化武器相关的函数名为无害代码命名，让部分模型因为安全规则直接拒绝分析，代码混淆的对手第一次变成了大模型。\n\n**大厂的组织与伦理问题同时被摆上台面**\nid Software 承认年初裁员带走了约一半团队，联合总监称与 MachineGames 的合作「比以往更紧」；《使命召唤：现代战争 4》因开场过场混入 2022 年梨泰院踩踏事故的真实影像，动视公开道歉并承诺 11 月 12 日更新移除；同人重制项目 Skyblivion 则被前志愿者以代码权属为由威胁起诉。\n\n**新游：大厂下场做慢生活，小团队靠一个动词立住**\nHoYoverse 的《Petit Planet》定档 12 月 4 日，PC 与移动端同步、对标《动物森友会》；Moleman Studios 的《HELLTYRES》把环形跑道塞进驾驶平台跳跃，单条推文 36.3 万播放；个人开发者ケー 的《把整片沙漠全部绿化》则把种田做成一整片沙漠的长期目标。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
