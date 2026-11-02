@@ -1,0 +1,570 @@
+{
+ "date": "2026-11-02",
+ "meta": {
+  "raw_count": 210,
+  "filtered_count": 136,
+  "selected_count": 12,
+  "crawl_time": "2026-11-02 12:00"
+ },
+ "lede": "《GTA 6》确认本月发售；《影之刃零》峰值 83.4 万挤进 Steam 全球前二档；AI 侧既有 Claude Code 误伤开发者的抱怨，也有一张图生成 460 零件机器蜘蛛的新工具演示。",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《Harmonie》用水墨作画：血条就是墨水，越强越接近死亡"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 1,
+   "hook": "《影之刃零》峰值 83.4 万，仅次于 CS2：国产买断动作首次进全球前二档"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 1,
+   "hook": "一张图变 460 个零件的机器人跳蛛：几何、步态和仪表共用同一套数学"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Claude Code 误伤正常开发：反编译、做 Mod、反作弊调试都被拒\n一张图生成 460 个零件，Claude Skill 做出可拆解机器跳蛛\n约 2000 美元 AI 额度做出可玩机甲切片\nAI 能把功能做全，却把决定手感的环节做到“最低限度”"
+  },
+  {
+   "id": "industry",
+   "text": "《GTA 6》确认本月发售，TGA 一条推文 2.7 万赞\n《影之刃零》Steam 峰值 83.4 万，国产买断动作首次进全球前二档\nitch.io 每日新建页面两个月翻倍，AI slop 抬高发现成本"
+  },
+  {
+   "id": "indie",
+   "text": "《Harmonie》：血条即墨水的水墨 Boss Rush\n《女神异闻录 1》重制影像泄露，30 周年联动几乎坐实\n《Lethal Company》V85 版本预告放出，发售日未定"
+  },
+  {
+   "id": "tools",
+   "text": "HairDeck 单图生成带骨骼发片，Apache 2.0 开源直出 GLB\npixelfx 开源 244 种代码生成的像素特效，MIT 商用"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 行业观察",
+     "tags": [
+      "Claude Code",
+      "AI 编程",
+      "风控误伤"
+     ],
+     "title": "Claude Code 拦截正常开发：反编译、做 Mod、反作弊调试都被拒",
+     "en_title": "Claude Code is blocking legitimate game developers from doing their work, and users are getting frustrated.",
+     "full_text": "Claude Code is blocking legitimate game developers from doing their work, and users are getting frustrated.\n\nAnthropic recently introduced restrictions to stop its AI from recreating existing video games, but the filters appear to be catching far more than just game clones.\n\nDevs report Claude refusing perfectly legitimate tasks, including reverse-engineering, game modding, crash dump analysis, anti-cheat development and debugging their own projects.\n\nThe problem is that Claude seems unable to distinguish between someone trying to copy a commercial game and a developer working on their own sof...",
+     "author": "Pirat_Nation",
+     "date": "2026-11-01",
+     "likes": 593,
+     "views": 24513,
+     "link": "https://x.com/Pirat_Nation/status/2116908874175234270",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWB-hkHWUAEa0Jy.jpg"
+     },
+     "summary": "Anthropic 为阻止 AI 复刻现有游戏上了限制，但开发者反馈过滤范围远超“克隆游戏”：反编译、游戏模组、崩溃转储分析、反作弊开发，乃至调试自己的项目都被拒绝。核心问题在于模型无法区分“抄袭商业游戏”和“开发自己的软件”。",
+     "analysis": "对国内团队的直接含义是：把大模型放进管线时必须预留“被误判”的兜底通道，不能当成唯一执行路径。这类风控差异也会加速团队在本地模型/开源模型上做备份能力，把“可用性”当成工具选型的一级指标。",
+     "recommendation": "Claude Code 误判扩大：反编译、做 Mod、反作弊调试都被当成“复刻游戏”拒掉",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 技术展示",
+     "tags": [
+      "Claude Skill",
+      "three.js",
+      "程序化建模"
+     ],
+     "title": "一张图生成 460 个零件：Claude Skill 做出可拆解的机器人跳蛛",
+     "en_title": "I'm starting to get scared of my own Claude skill.",
+     "full_text": "I'm starting to get scared of my own Claude skill.\n\ni keep testing its limits, so today it got one picture of a robot jumping spider.\n\nhow the skill built it:\n\n> the picture only sets the look, all 460 parts are code, down to the glass shins with a piston and a spring inside\n> the motion is math before anything gets drawn: 8 legs step in 2 sets of 4, it sinks down, then straightens them in 0.12 s to launch\n> every panel reads that same math, so the gait chart, the servo bars and the jump gauge never disagree\n> the iris in the 2 big eyes stops down every time it jumps\n> one click and it blows a...",
+     "author": "elvar_official",
+     "date": "2026-10-31",
+     "likes": 1085,
+     "views": 88613,
+     "link": "https://x.com/elvar_official/status/2116618736371118544",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2116617941512802304/img/_HenuYOkhDA4ChIJ.jpg",
+      "video_url": "https://x.com/elvar_official/status/2116618736371118544/video/1"
+     },
+     "summary": "作者只给一张机器人跳蛛的图片，Skill 用纯代码搭出 460 个零件，连玻璃小腿里的活塞和弹簧都是建模出来的；动作是先定义数学再渲染——8 条腿分两组各 4 条迈步，下蹲后 0.12 秒蹬直起跳；步态图、伺服条、跳跃仪表读取同一套数学，不会互相矛盾，大眼睛的虹膜每次起跳都会收缩。",
+     "analysis": "值得注意的不是“AI 会建模”，而是零件级可解释的生成：同一份参数同时驱动几何、运动与调试面板，这正是游戏里 procedural rig 和可视化调试的做法。工具链一旦稳定，硬表面机械资产的初稿成本会趋近于零，策划阶段就能看到可拆解、可交互的原型，而不是一张概念图。",
+     "recommendation": "一张图变 460 个零件的机器人跳蛛：几何、步态和仪表共用同一套数学",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · AI 游戏原型",
+     "tags": [
+      "AI 制作",
+      "原型验证",
+      "机甲"
+     ],
+     "title": "约 2000 美元 AI 额度 + 一个月 Claude，做出可驾驶机甲的 Pre-alpha",
+     "en_title": "~$2k in @fal, @ElevenLabs, @tripoai credits and one month of Claude 20x. This is what I made.",
+     "full_text": "~$2k in @fal, @ElevenLabs, @tripoai credits and one month of Claude 20x. This is what I made. \n\n• build your mech piece by piece\n• dual wield by default\n• fight on a spinning space station\n• grapple off and duel in open space\n\nPre-alpha out now. Multiplayer soon. Inspired by @TimSweeneyEpic's recent perspective on the space",
+     "author": "MeticulAi",
+     "date": "2026-10-31",
+     "likes": 1401,
+     "views": 141846,
+     "link": "https://x.com/MeticulAi/status/2116658173683593289",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2116657508378972160/img/QVNSu_zhWNhsh4zo.jpg",
+      "video_url": "https://x.com/MeticulAi/status/2116658173683593289/video/1"
+     },
+     "summary": "作者用 fal、ElevenLabs、tripoai 的额度加上一个月 Claude 20x，做出了一个太空机甲原型：机甲可以逐块拼装、默认双持武器、在旋转的空间站上交战，还能用钩索脱离机甲在太空中决斗。Pre-alpha 现已可玩，多人模式在计划中。",
+     "analysis": "这条的价值在“成本口径”：两千美元级别的模型调用就能换来一个可玩的垂直切片，说明 AI 把原型期的成本从“人力月”换成了“API 账单”。但原型能做出来不等于能发售——资产一致性、手感调优、关卡密度依然只能靠人，团队更需要的是把 AI 产能接到一条能收敛的管线上。",
+     "recommendation": "约 2000 美元 AI 额度换来可玩机甲切片：逐块拼装 + 钩索太空决斗",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 04",
+     "source": "X · 开发复盘",
+     "tags": [
+      "AI 开发",
+      "手感",
+      "验收标准"
+     ],
+     "title": "AI 做游戏的天花板不在功能：“有射击功能”和“射击手感好”差一个世界",
+     "en_title": "AI에게 게임 개발을 시키면",
+     "full_text": "AI에게 게임 개발을 시키면\n'시킨 일'을 끝내는 데 집중하느라\n몰입감을 만드는 '부가적인' 부분은 대충 넘어가는 게 느껴짐\n\n예를 들어서 총 쏘는 기능을 만들자고 하면\n1. 총 쏘는 기능에 대한 기획\n2. 총 쏘는 프로그래밍\n3. 총기 모델링\n4. 총의 여러 이펙트\n5. 총의 사운드\n6. 총 쏠때 반응\n등으로 나뉘는데\n \nAI는 1과 2까지는 잘 진행하지만 3~6의 경우는 최소한의 노력으로 해결함\n분명 완성은 됨. 잘 작동함. 있을 건 다 있음\n\n하지만 플레이어가 직접 보게될 부분은 오히려 3~6\n'기능이 있다'와 '총 쏘는 느낌 너무 좋다'는 천지차이임\n\n문제를 '해결'했다. 라는 관점에서는 AI의 개발 방식이 합리적이지만\n'좋은 경험을 줄 수 있는 기능' 입장에서는 전혀 아님",
+     "author": "arti_memo",
+     "date": "2026-11-01",
+     "likes": 10,
+     "views": 769,
+     "link": "https://x.com/arti_memo/status/2116891257293476349",
+     "media": null,
+     "summary": "韩国开发者拆解 AI 接手游戏开发时的取舍：把“做射击”拆成策划、程序、建模、特效、音效、受击反馈六件事之后，AI 能把前两项做扎实，后四项只用最低成本打发——功能齐全、能跑通，但玩家真正看到和感受到的恰好是后四项。",
+     "analysis": "这条给“AI 提效”划了边界：AI 优化的是“问题是否被解决”，而游戏卖的是“体验是否成立”。团队引入 AI 后验收标准必须从“功能有没有”改成“手感达标没”，否则产出会集体滑向“可运行但没魅力”的中间态——这也是 AI 项目最容易集体失守的地方。",
+     "recommendation": "AI 能把功能做全，却把决定手感的建模、特效、音效做到“最低限度”"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "X · 发售日历",
+     "tags": [
+      "GTA6",
+      "Rockstar",
+      "档期"
+     ],
+     "title": "《GTA 6》本月发售：TGA 一句提醒把社区点燃",
+     "en_title": "GTA6 releases this month.",
+     "full_text": "GTA6 releases this month. https://t.co/7PSo5QX1Mj",
+     "author": "thegameawards",
+     "date": "2026-11-01",
+     "likes": 27642,
+     "views": 287545,
+     "link": "https://x.com/thegameawards/status/2116771115066646716",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWBIHE0aAAAtiae.jpg"
+     },
+     "summary": "The Game Awards 官推只发了一句“GTA6 releases this month”，即获得 2.76 万赞、28.8 万浏览，社区正式进入发售月倒计时。",
+     "analysis": "对行业来说这是一次档期地震：11 月上线意味着同期产品的买量节奏与发售窗口要重新排布，年末 TGA 的年度游戏讨论版图也会被改写。做发行与买量的团队应把 11—12 月的获客成本预期上调，避开正面对撞。",
+     "recommendation": "《GTA 6》确认本月发售，TGA 一条推文 2.7 万赞",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "有数GI · Steam 榜单",
+     "tags": [
+      "影之刃零",
+      "国产买断",
+      "PCU"
+     ],
+     "title": "《影之刃零》Steam 峰值 83.4 万：国产买断动作首次挤进全球前二档",
+     "en_title": "Phantom Blade Zero really said “you're NOT him”.",
+     "full_text": "Phantom Blade Zero really said “you're NOT him”.\n\nI got humbled so badly here lmao. https://t.co/8RaKblwE45",
+     "author": "ashenone_vi",
+     "date": "2026-10-31",
+     "likes": 5135,
+     "views": 314742,
+     "link": "https://x.com/ashenone_vi/status/2116617877398892925",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2116615275114098688/img/LOg6ZiHYH7OMZoOy.jpg",
+      "video_url": "https://x.com/ashenone_vi/status/2116617877398892925/video/1"
+     },
+     "summary": "据有数GI 11 月 2 日 Steam 热玩榜，10 月 28 日发售的《影之刃零》24 小时峰值达 833,921，售价 ¥268、好评率 90%，峰值仅次于 CS2（128.8 万），高于 Dota 2 与 PUBG（各约 80 万）。玩家侧的讨论则集中在 Boss 难度——“被打服了”。",
+     "analysis": "这是国产买断制动作游戏第一次把在线量做到全球前二档，说明“中式武侠 + 高难度动作”在 Steam 全球市场已经具备票仓。对国内团队的启示是定价（¥268）与发行规模不必再自我压低；但难度争议会同步放大，首周口碑管理比首周销量更关键。",
+     "recommendation": "《影之刃零》峰值 83.4 万，仅次于 CS2：国产买断动作首次进全球前二档",
+     "featured": true,
+     "game_ref": "Phantom Blade Zero"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "X · 平台数据",
+     "tags": [
+      "itch.io",
+      "AI 内容洪水",
+      "独立游戏"
+     ],
+     "title": "itch.io：每日新建游戏页面两个月翻倍，AI 生成内容被指为主因",
+     "en_title": "The number of game pages being created per day has doubled in the past 2 months",
+     "full_text": "The number of game pages being created per day has doubled in the past 2 months https://t.co/SLY0bGq0BC",
+     "author": "itchio",
+     "date": "2026-11-01",
+     "likes": 1712,
+     "views": 150433,
+     "link": "https://x.com/itchio/status/2116740112801477119",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWAr2wdbQAAhsDk.png"
+     },
+     "summary": "itch.io 官推称，平台每天新建的游戏页面数量在过去两个月翻倍；PC Gamer、Polygon 同日跟进报道，把原因指向 AI 批量生成的“slop”内容。",
+     "analysis": "独立游戏的发现成本正被 AI 洪水抬高：上架门槛趋近于零之后，平台的分发权重必然从“新”转向“可验证的质量与社区”。靠“上新”拿自然流量的时代基本结束，愿望单和社区资产的重要性进一步上升——这是所有小团队今年最现实的一课。",
+     "recommendation": "itch.io 每日新建页面两个月翻倍，AI 批量上架正在抬高独立游戏的发现成本",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 独立游戏",
+     "tags": [
+      "Boss Rush",
+      "水墨美术",
+      "高风险高回报"
+     ],
+     "title": "《Harmonie》：以水彩与水墨为皮，把生命值当墨水的 Boss Rush",
+     "en_title": "This indie game is inspired by watercolour and Chinese ink paintings and your weapon is a paintbrush that turns your own health into ink",
+     "full_text": "This indie game is inspired by watercolour and Chinese ink paintings and your weapon is a paintbrush that turns your own health into ink\n\n- More ink means more power but less health\n- High risk/high reward boss fights\n- Each win reveals your enemy's tragic past\n\nGame is Harmonie. https://t.co/dqLlqmaQVS",
+     "author": "IndieGameJoe",
+     "date": "2026-10-31",
+     "likes": 1493,
+     "views": 67650,
+     "link": "https://x.com/IndieGameJoe/status/2116680179372171300",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2116673410327609344/img/8R9llerHg3EK0a5P.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2116680179372171300/video/1"
+     },
+     "summary": "《Harmonie》以水彩与中国水墨为视觉基底，武器是一支把自身体力转成墨的画笔：墨越多攻击越强、血量越低；Boss 战强调高风险高回报，每场胜利都会揭开对手的悲惨过往。Steam 页面已上线，支持 Windows，发售日待定。",
+     "analysis": "",
+     "recommendation": "《Harmonie》用水墨作画：血条就是墨水，越强越接近死亡",
+     "featured": true,
+     "game_ref": "Harmonie",
+     "enrichment": {
+      "game_name": "Harmonie",
+      "genre": "动作 / 冒险 / 独立 / Boss Rush",
+      "developer": "L'Atelier",
+      "platforms": [
+       "Steam",
+       "Windows"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4522230/Harmonie/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4522230/441d50fb9a8e4068f555370fb304d07e727c538e/header.jpg?t=1787122487",
+      "youtube_video": null,
+      "description": "【核心玩法】《Harmonie》是一款受水彩画与中国水墨启发的 Boss Rush 动作游戏。主角的武器是一支画笔，而墨水直接来自自身生命：出招消耗血量、墨量越高伤害越强，等于把“贪输出”和“保命”压进同一条资源条。每场 Boss 战都对应一段独立的故事，胜利会逐步揭开对手的悲惨过去，战斗与叙事是同一套节奏。\n\n【美术与氛围】视觉上刻意保留水彩的晕染和水墨的枯笔，招式表现为笔触与墨点飞散，命中反馈靠墨迹扩散而非传统火花，整体更像“在画布上打斗”。这类表现对特效与着色要求高，但也天然具备了与同类动作游戏区隔的记忆点。\n\n【对标定位】结构接近《Furi》《Sifu》一类的纯 Boss 战动作游戏，但把资源系统换成“血量即弹药”，风险回报曲线比传统动作游戏陡得多；题材上则更接近《大神》《Gris》一类的美术驱动作品。\n\n【优势】核心机制一句话讲得清、视觉风格辨识度极高、叙事与战斗绑定紧密，适合短视频传播。\n【不足】高风险机制容易劝退轻度玩家，Boss Rush 的内容量天然偏少，长期留存取决于每场战斗的设计密度；目前公开信息仍以预告为主，实际手感与判定尚待验证。\n\n【综合评价】值得放进愿望单观察：它不是靠美术贴皮，而是把“作画”这件事做成了资源系统，这类“机制与美术同源”的独立作品往往能在同质化严重的动作品类里跑出来。",
+      "why_notable": "把“作画”做成资源系统：墨量即战力、血量即弹药，机制与美术同源",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "水彩与水墨风的 Boss Rush，用生命值换墨量的高风险动作游戏"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 新作泄露",
+     "tags": [
+      "重制版",
+      "Atlus",
+      "泄露"
+     ],
+     "title": "《女神异闻录 1》重制版影像泄露，30 周年联动几乎坐实传闻",
+     "en_title": "Footage of a Persona 1 remake has seemingly leaked online",
+     "full_text": "Footage of a Persona 1 remake has seemingly leaked online\nhttps://t.co/v3cchGG8L1 https://t.co/mQP6Bt0nKa",
+     "author": "eurogamer",
+     "date": "2026-11-01",
+     "likes": 32,
+     "views": 2898,
+     "link": "https://x.com/eurogamer/status/2116933570115559820",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWDb1MZWMAE9HKR.jpg"
+     },
+     "summary": "Eurogamer 报道称，《Persona 1》重制版的实机影像已在网上流出；Polygon 与 TheGamer 同日跟进，指出 Atlus 的 Persona 30 周年联动内容几乎等于侧面确认了这次重制。",
+     "analysis": "",
+     "recommendation": "《女神异闻录 1》重制影像泄露，30 周年联动几乎坐实",
+     "game_ref": "Persona 1",
+     "enrichment": {
+      "game_name": "Persona 1 Remake",
+      "genre": "JRPG",
+      "developer": "Atlus（传闻）",
+      "platforms": [
+       "未公布"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "泄露影像显示 Atlus 正在推进《女神异闻录 1》的重制。原作 1996 年发售于 PS1，是系列唯一以“Persona 游戏”设定展开、基调最阴郁的一作，主角团在御影町对抗神取鹰久。若重制属实，它会是 Atlus 继 P3 Reload、P4 Revival 之后对旧作的又一次系统级翻新，涉及战斗系统、迷宫结构与美术全面重做。目前官方尚未回应，发售日与平台均未公布。",
+      "why_notable": "系列最老一作若被重制，意味着 Atlus 把“旧作资产化”推进到 PS1 世代",
+      "pcu": "未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "泄露影像指向 Atlus 的初代 Persona 重制项目"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 版本预告",
+     "tags": [
+      "合作恐怖",
+      "版本更新",
+      "Steam"
+     ],
+     "title": "《Lethal Company》V85 版本预告放出，发售日未定",
+     "en_title": "Lethal Company V85 Update Teaser",
+     "full_text": "Lethal Company V85 Update Teaser\n\n- Release date TBA https://t.co/EMH1nT27s5",
+     "author": "AerialZer0",
+     "date": "2026-11-01",
+     "likes": 403,
+     "views": 15532,
+     "link": "https://x.com/AerialZer0/status/2116885739375939847",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2116885664885022720/img/aGK2PSR_Zts4KL43.jpg",
+      "video_url": "https://x.com/AerialZer0/status/2116885739375939847/video/1"
+     },
+     "summary": "作者 Aerial 放出《Lethal Company》V85 更新预告片，官方尚未公布上线日期。这款 Zeekerss 单人开发的合作恐怖游戏在 Steam 已有 41.2 万条评价，售价 ¥42。",
+     "analysis": "",
+     "recommendation": "《Lethal Company》V85 更新预告放出，发售日仍未公布",
+     "game_ref": "Lethal Company",
+     "enrichment": {
+      "game_name": "Lethal Company",
+      "genre": "合作恐怖 / 拾荒 / 抢先体验",
+      "developer": "Zeekerss（单人开发）",
+      "platforms": [
+       "Steam",
+       "Windows"
+      ],
+      "price": "¥42",
+      "release_date": "已发售 · 2023年10月23日",
+      "steam_rating": "41.2 万条评价",
+      "steam_url": "https://store.steampowered.com/app/1966720/Lethal_Company/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg?t=1775380053",
+      "youtube_video": null,
+      "description": "【核心玩法】四名玩家组成回收小队，前往废弃卫星工厂捡废料达成公司配额，语音沟通是核心——怪物依靠声音和视线捕猎，玩家必须在“多拿一件”与“活着回船”之间做取舍。\n\n【为什么持续有人玩】单局时长 20 分钟上下、失败极其滑稽，天然适合直播与二创；更新以“新星球 + 新怪物 + 新道具”为单位，每次都能把老玩家拉回来。V85 属于同一路线上的内容版本。\n\n【优势】单人开发者做出 41 万评价的口碑；玩法与语音强绑定，社交传播效率高。\n【不足】内容更新节奏慢，老玩家容易在版本末期流失；对新玩家而言引导薄弱。\n\n【综合评价】它是“低多边形 + 高社交”组合的教科书案例，V85 的看点在于能否继续把“恐怖 + 搞笑”的平衡往前推。",
+      "why_notable": "单人开发、41 万评价的合作恐怖标杆，新版本预告即引发社区回流",
+      "pcu": "历史峰值约 24 万（2023 年末）",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "四人合作拾荒恐怖，语音沟通即生存机制，单人开发卖出千万级"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X · 试玩影像",
+     "tags": [
+      "抽卡动作",
+      "CBT",
+      "二次元"
+     ],
+     "title": "《Silver Palace》CBT2 实机：女仆 Alf 的战斗表现",
+     "en_title": "Silver Palace – Alf (Maid) Gameplay",
+     "full_text": "Silver Palace – Alf (Maid) Gameplay\n\nNote: Recorded during CBT 2 (Non-NDA)\n\n#SilverPalace https://t.co/cpH6jFFUPa",
+     "author": "iKaito_1",
+     "date": "2026-11-01",
+     "likes": 1434,
+     "views": 51834,
+     "link": "https://x.com/iKaito_1/status/2116746688706875758",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2116746393683632128/img/ABe2wl0LEAaxuKgS.jpg",
+      "video_url": "https://x.com/iKaito_1/status/2116746688706875758/video/1"
+     },
+     "summary": "《Silver Palace》第二轮内测（非保密）实机流出，展示角色 Alf 的女仆形态战斗，5.1 万浏览。属于二次元抽卡动作赛道的早期曝光。",
+     "analysis": "看点是战斗节奏与角色演出密度，但 CBT 阶段的画面不代表成品，仅作赛道参考。",
+     "recommendation": "《Silver Palace》CBT2 实机：女仆 Alf 的连段与演出",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "X · 独立开发",
+     "tags": [
+      "卡牌肉鸽",
+      "像素",
+      "共享牌池"
+     ],
+     "title": "《Undercurrent: The Hollow Crown》：从共享牌池偷牌的像素卡牌肉鸽",
+     "en_title": "Drew some attack VFX in Aseprite. This is just a standalone showcase of the effects. What do you think?",
+     "full_text": "Drew some attack VFX in Aseprite. This is just a standalone showcase of the effects. What do you think?\n\nI'm making Undercurrent: The Hollow Crown, an indie dark pixel card roguelike on Steam. Steal cards from a shared pool, chain them into combos.\n\n#gamedev #ゲーム制作 #pixelart #UndercurrentDev",
+     "author": "UndercurrentLog",
+     "date": "2026-10-31",
+     "likes": 233,
+     "views": 5499,
+     "link": "https://x.com/UndercurrentLog/status/2116544712480096595",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2116541287981854720/img/fbuN8jY2Ku15Ma_O.jpg",
+      "video_url": "https://x.com/UndercurrentLog/status/2116544712480096595/video/1"
+     },
+     "summary": "开发中的像素卡牌肉鸽《Undercurrent: The Hollow Crown》，核心差异点是玩家与敌人共享一个牌池——从公共池中“偷牌”再串联成 combo，作者本次展示了 Aseprite 手绘的攻击特效。",
+     "analysis": "共享牌池把“构筑”从私有变公共，理论上会让资源争夺的博弈更硬核，值得关注后续平衡设计。",
+     "recommendation": "像素卡牌肉鸽《Undercurrent》用“共享牌池偷牌”做差异化",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X · 主机移植",
+     "tags": [
+      "朋友派对",
+      "搞笑",
+      "主机"
+     ],
+     "title": "《Dumpster Gang》：一群浣熊的合作整活，2027 年上主机",
+     "en_title": "Friendslop raccoon game Dumpster Gang comes to consoles in 2027",
+     "full_text": "Friendslop raccoon game Dumpster Gang comes to consoles in 2027: https://t.co/Qg4JvsCgHF https://t.co/hxozs9bOqM",
+     "author": "nichegamer",
+     "date": "2026-11-01",
+     "likes": 4,
+     "views": 1058,
+     "link": "https://x.com/nichegamer/status/2116892844514296048",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWC20wRXMAAnQB4.jpg"
+     },
+     "summary": "被归类为“friendslop”（朋友整活型合作游戏）的浣熊题材作品《Dumpster Gang》确认 2027 年登陆主机平台。",
+     "analysis": "friendslop 靠低价 + 高社交传播跑量，主机移植意味着这一赛道正在从 PC 向客厅扩张。",
+     "recommendation": "浣熊合作整活《Dumpster Gang》2027 年登陆主机",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "X · 平台新作",
+     "tags": [
+      "Switch 2",
+      "生活模拟",
+      "2027"
+     ],
+     "title": "《Petit Planet》确认 2027 年登陆 Switch 2",
+     "en_title": "Petit Planet is coming to Switch 2 in 2027!",
+     "full_text": "Petit Planet is coming to Switch 2 in 2027! https://t.co/W5KvFTgLDW https://t.co/j8iI6IDm8D",
+     "author": "nichegamer",
+     "date": "2026-11-01",
+     "likes": 7,
+     "views": 1318,
+     "link": "https://x.com/nichegamer/status/2116880326693724212",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWCrcEEWMAAhHDy.jpg"
+     },
+     "summary": "《Petit Planet》确认将于 2027 年登陆 Switch 2，此前 Polygon 也在讨论 Switch 2 上“动物森友会”类产品的竞争格局。",
+     "analysis": "生活模拟品类在 Switch 2 上仍是空档，这类作品会直接竞争“合家欢长线”位置。",
+     "recommendation": "《Petit Planet》2027 年登陆 Switch 2，瞄准生活模拟空档",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "X · 独立开发",
+     "tags": [
+      "叙事解谜",
+      "宇宙恐怖",
+      "Steam"
+     ],
+     "title": "以为是语言解谜，一小时后变成宇宙恐怖：《Achimphang》新作的叙事反转",
+     "en_title": "언어 퍼즐인 줄 알았는데 사실은..........",
+     "full_text": "#IndieDev \n언어 퍼즐인 줄 알았는데 사실은..........\n\n시작한 지 1시간만에 코스믹 호러를 느끼고 플레이를 중단했다....\n'뭔가'를 깨닫는 순간 San 수치 고갈....",
+     "author": "achimphang",
+     "date": "2026-11-01",
+     "likes": 741,
+     "views": 47507,
+     "link": "https://x.com/achimphang/status/2116779838870893006",
+     "media": null,
+     "summary": "韩国独立工作室 Achimphang 放出新作片段：表面是语言解谜，开玩一小时后转向宇宙恐怖，玩家在“意识到某件事”的瞬间理智值清零。",
+     "analysis": "“类型欺骗”是近年独立叙事作品最有效的钩子之一，成本低、传播强，但极其依赖转折的铺陈质量。",
+     "recommendation": "语言解谜开场、宇宙恐怖收尾：Achimphang 新作的类型反转",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 开源工具",
+     "tags": [
+      "3D 生成",
+      "毛发",
+      "开源"
+     ],
+     "title": "HairDeck：一张角色图生成带骨骼的 3D 发片，Apache 2.0 开源",
+     "en_title": "Finally! Rigged hair cards from a single image.",
+     "full_text": "Finally! Rigged hair cards from a single image.\n\nHairDeck (Tsinghua + CMU + CUHK) takes one character image and builds a stylized haircut as separate 3D hair cards, with bone chains already attached. The hair sways when the head turns.\n\nExports to GLB, or straight onto a VRM avatar.\n\nCode and weights are open under Apache 2.0. You get geometry and UVs, no textures yet. Local run wants Linux and CUDA.\n\nhttps://t.co/CgcH4YdUXZ",
+     "author": "Stefan_3D_AI",
+     "date": "2026-10-31",
+     "likes": 4764,
+     "views": 300512,
+     "link": "https://x.com/Stefan_3D_AI/status/2116475792331022690",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2116475709539700737/img/R4fAU1fhYDThkulO.jpg",
+      "video_url": "https://x.com/Stefan_3D_AI/status/2116475792331022690/video/1"
+     },
+     "summary": "清华 + CMU + 港中文的 HairDeck 从单张角色图生成风格化发型，输出为一片片独立的 3D hair cards，并直接挂好骨骼链，转头时头发会随之摆动；可导出 GLB 或直接套到 VRM 虚拟形象上。代码与权重以 Apache 2.0 开源，目前只提供几何与 UV、不含贴图，本地运行需要 Linux + CUDA。",
+     "analysis": "毛发是角色管线里最贵的环节之一，它把“建模 + 绑骨”压缩成一次推理，并且直接输出游戏与虚拟人可用的 GLB。缺贴图意味着现阶段只能拿到结构稿，但用于造型快速迭代、给外包定基准已经够用；对 VTuber、换装手游这类高频换发的产品线价值最直接。",
+     "recommendation": "HairDeck 单图生成带骨骼发片，Apache 2.0 开源、直出 GLB",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · 开源工具",
+     "tags": [
+      "像素特效",
+      "MIT",
+      "Claude Code Skill"
+     ],
+     "title": "pixelfx：244 种像素特效全由代码生成，MIT 开源还带 Claude Code Skill",
+     "en_title": "ドット絵エフェクト244種類が、全部コードで生成されるライブラリ「pixelfx」が公開。",
+     "full_text": "ドット絵エフェクト244種類が、全部コードで生成されるライブラリ「pixelfx」が公開。\n\n炎・爆発・魔法・天気・UIまで画像素材なしで全部入り。スプライトシートに書き出せばUnity等でも使えます。\nMITライセンスで商用利用OK、さらにClaude Code用のスキル付きで新しいエフェクトも作れる。 https://t.co/bzMFbT0wQU",
+     "author": "hirohasusan",
+     "date": "2026-11-01",
+     "likes": 1473,
+     "views": 66371,
+     "link": "https://x.com/hirohasusan/status/2116739816968823011",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/tweet_video_thumb/HWArn0MacAAJSFs.jpg",
+      "video_url": "https://x.com/hirohasusan/status/2116739816968823011/video/1"
+     },
+     "summary": "pixelfx 公开了 244 种像素特效库，火焰、爆炸、魔法、天气、UI 全部由代码实时生成，不含任何图片素材；可导出 spritesheet 直接给 Unity 等引擎使用，MIT 协议允许商用，另附一套 Claude Code Skill 用来按同样风格继续生产新特效。",
+     "analysis": "对 2D 团队来说这是“特效即参数”的典型收益：颜色、尺寸、镜像都能实时改，不必等美术重出图；spritesheet 导出保证它不是只能看的 demo。Skill 的存在意味着后续特效可以跟着项目风格持续扩产，而不是锁死在 244 个里。",
+     "recommendation": "pixelfx 开源 244 种代码生成的像素特效，MIT 商用 + 自带 Claude Code Skill"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**《GTA 6》进入发售月，档期地震开始**\nThe Game Awards 一句“GTA6 releases this month”拿到 2.76 万赞。11 月上线意味着同期产品的买量与发售窗口要重排，年末 TGA 的讨论版图也会被改写。\n\n**《影之刃零》峰值 83.4 万，国产买断动作首次进全球前二档**\n据有数GI 榜单，10 月 28 日发售的《影之刃零》24 小时峰值 833,921，仅次于 CS2，高于 Dota 2 与 PUBG；售价 ¥268、好评率 90%。玩家侧争议集中在 Boss 难度。\n\n**AI 侧两面：误伤与产能**\n一边是开发者抱怨 Claude Code 把反编译、做 Mod、反作弊调试当作“复刻游戏”拒绝；另一边是一张图生成 460 个零件机器跳蛛、2000 美元额度做出可玩机甲切片。同时 itch.io 每日新建页面两个月翻倍，AI 内容洪水开始抬高独立游戏的发现成本。\n\n**新游与工具**\n《Harmonie》把生命值当墨水做水墨 Boss Rush；《女神异闻录 1》重制影像泄露；《Lethal Company》放出 V85 预告。工具侧 HairDeck 与 pixelfx 均以开源方式放出。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
