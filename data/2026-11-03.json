@@ -1,0 +1,570 @@
+{
+ "date": "2026-11-03",
+ "meta": {
+  "raw_count": 232,
+  "filtered_count": 170,
+  "selected_count": 12,
+  "crawl_time": "2026-11-03 09:40"
+ },
+ "lede": "Anthropic 首次给 Claude Code 划红线，禁止复刻现有游戏；名越稔洋工作室解散，《龙帮》终止；《影之刃零》72 小时 400 万份，国产武侠动作打进全球票仓。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Anthropic 给 Claude Code 加规则：不得复刻现有游戏，只做原创"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "名越稔洋工作室 10 月 31 日解散——《龙帮》终止，网易放弃追加 4400 万美元"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《Potato Please》：第一人称物理削土豆，削薄一点别浪费"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Anthropic 给 Claude Code 加规则，禁止复刻现有游戏\nStrata 本地模型推高 12–16GB 显存显卡价格\n“玩家不看 AI 写的代码，只看画面”：独游门槛往美术倾斜"
+  },
+  {
+   "id": "industry",
+   "text": "名越稔洋工作室 10 月 31 日解散，《龙帮》终止\n1.1 万愿望单首发哑火，开发者指 Steam 审核队列被 AI 内容挤爆\n《影之刃零》72 小时 400 万份、M 站 88 分\n2026 裁员总数已超 2025 全年"
+  },
+  {
+   "id": "indie",
+   "text": "《Potato Please》第一人称物理削土豆，今日发售\n《银松镇》生存恐怖 + 类银河城，¥90\n《EXODUS》40 分钟实机，2027 年 4 月发售"
+  },
+  {
+   "id": "tools",
+   "text": "three.js r187 浏览器 60fps 跑 19.7 亿三角面\n不打开 UE 编辑器做完整游戏：三条约束交给 Agent"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Polygon · 生成式 AI",
+     "tags": [
+      "Anthropic",
+      "Claude Code",
+      "AI 复刻"
+     ],
+     "title": "Anthropic 给 Claude Code 加规则：禁止复刻现有游戏，只做原创",
+     "en_title": "Anthropic Is Officially Stepping In to Stop Claude from Cloning Games",
+     "full_text": "Anthropic Is Officially Stepping In to Stop Claude from Cloning Games https://t.co/qgLiSCHHMY https://t.co/YtVn0BHgUG",
+     "author": "Polygon",
+     "date": "2026-11-02",
+     "likes": 0,
+     "views": 2822,
+     "link": "https://x.com/Polygon/status/2117285721459347500",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWIcJM-WgAAr8pg.jpg"
+     },
+     "summary": "10 月 30 日，Claude Code 的规则新增两句：可以“做原创游戏、某一类型的游戏、基于用户自己的设计与素材的游戏”，但“不要复刻某个具体现有游戏，即使改名或声称原创”。Anthropic 向 Game Developer 确认改动属实，技术员工 Addy Osmani 解释这是为防止用 Claude 侵犯他人 IP。背景是 AI 游戏已淹没 Steam Next Fest：itch.io 称近两个月每日新建游戏页翻倍；带 2.5 万愿望单的《Drunken Goddess Reflux》退出 Next Fest，Digital Sun 也把《ReVamp》公测改成 Discord 定向测试。",
+     "analysis": "平台方开始把“AI 复刻”当成可治理对象，但规则只约束 Claude Code 的提示词层，开源权重模型仍可绕过。对从业者更现实的影响在 demo 分发：公测的泄密成本已经高到需要重新设计（定向测试、版本切片、水印），而不是事发后补一纸声明。",
+     "recommendation": "Anthropic 新增规则：Claude 不得复刻现有游戏，只做原创题材",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 硬件观察",
+     "tags": [
+      "本地大模型",
+      "显卡",
+      "显存"
+     ],
+     "title": "Strata 让消费级显卡涨价：能本地跑 Claude 级模型，玩家得插两张卡",
+     "en_title": "ここ1ヶ月で普通のグラボ（VRAM 12～16GB）が一気に高騰した理由はだいたい「 Strata 」のせい",
+     "full_text": "ここ1ヶ月で普通のグラボ（VRAM 12～16GB）が一気に高騰した理由はだいたい「 Strata 」のせい\nヒトって頭がピンクになると財布の紐が緩むらしいです。ガードレールなし、検閲なしでClaude Opus 4.6 (Max) 相当のAIが自宅のゲーミングPCで動くんだよ？\n・GPU 0：Strata\n・GPU 1：画像生成\n2枚必須です https://t.co/7bcZamLKpl",
+     "author": "Yacamochi_db",
+     "date": "2026-11-01",
+     "likes": 6427,
+     "views": 736714,
+     "link": "https://x.com/Yacamochi_db/status/2116758932903625122",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWA78ElaoAAFTXv.jpg"
+     },
+     "summary": "日本博主やかもち称，过去一个月 12–16GB 显存的普通显卡集体涨价，主因是本地模型 Strata：它能在自宅游戏 PC 上跑出接近 Claude Opus 4.6（Max）的效果，且没有护栏与审查。按他的配置需要两张卡——一张跑 Strata，一张跑图像生成。该帖 73.7 万浏览、6427 赞。",
+     "analysis": "本地推理需求正在把“显存”变成消费级硬件的定价锚，游戏团队的显卡采购与云端推理成本都要重算。另一层含义是治理：无护栏的本地权重模型是 AI 复刻与版权问题的兜底漏洞，平台侧规则堵不住。",
+     "recommendation": "Strata 带火大显存显卡：一张跑推理、一张跑图像生成"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 从业者观点",
+     "tags": [
+      "独立开发",
+      "美术",
+      "AI 分工"
+     ],
+     "title": "日本开发者观察：AI 时代，会画画的比会写代码的更适合做独游",
+     "en_title": "最近Xで個人開発のゲームを大量に見て、ひとつ確信した。プログラマーより、絵を描ける人の方がインディーゲーム開発に向いてるんじゃないか。",
+     "full_text": "最近Xで個人開発のゲームを大量に見て、ひとつ確信した。\n\nプログラマーより、絵を描ける人の方がインディーゲーム開発に向いてるんじゃないか。\n\nプレイヤーはAIが書いたコードなんて見ない。\n\nでもビジュアルはゲームの顔。第一印象を一瞬で決めてしまう。\n\n当たり前のことだとは分かっているけど、それでも挫折感を感じてしまった。\n#個人開発 #インディーゲーム",
+     "author": "haku8023",
+     "date": "2026-11-02",
+     "likes": 187,
+     "views": 16637,
+     "link": "https://x.com/haku8023/status/2117158697277567199",
+     "media": null,
+     "summary": "这位日本开发者在集中看了大量个人开发游戏后得出结论：比起程序员，会画画的人更适合做独立游戏。理由是玩家不会去看 AI 写的代码，但视觉是游戏的脸，第一印象在一瞬间就被决定。帖子 1.7 万浏览。",
+     "analysis": "代码的边际成本被压平后，差异化确实回到美术、动画与题材表达；但“会画”不等于“会做游戏”，关卡节奏与系统深度仍是护城河。现实策略是让视觉主导的人掌握 AI 工具链，而不是让工程主导的人临时补美术。",
+     "recommendation": "“玩家不看 AI 写的代码，只看画面”：独游门槛正往美术倾斜"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "GameSpot · 工作室关闭",
+     "tags": [
+      "Nagoshi Studio",
+      "网易",
+      "工作室关闭"
+     ],
+     "title": "名越稔洋工作室关闭：《龙帮》终止，网易不愿再追投 4400 万美元",
+     "en_title": "In March of this year, Nagoshi was seeking another $44 million to get Gang of Dragon across the finish line, a figure NetEase may have decided wasn’t worth investing in further.",
+     "full_text": "In March of this year, Nagoshi was seeking another $44 million to get Gang of Dragon across the finish line, a figure NetEase may have decided wasn’t worth investing in further.\n\nShareholders officially dissolved the developer on October 31. https://t.co/qkhwUgzQz1",
+     "author": "GameSpot",
+     "date": "2026-11-02",
+     "likes": 6,
+     "views": 3414,
+     "link": "https://x.com/GameSpot/status/2117303749735539048",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWIsiiBWAAAWPdW.jpg"
+     },
+     "summary": "《如龙》系列创造者名越稔洋创办、网易投资的 Nagoshi Studio 于 10 月 31 日经股东决议解散，在研新作《Gang of Dragon》（龙帮）随工作室终止。GameSpot 称今年 3 月团队仍在寻求追加 4400 万美元完成开发，网易最终判断不值得继续投入。多家报道：Polygon、PC Gamer、Niche Gamer、TheGamer。",
+     "analysis": "这是“明星制作人 + 中国资本 + 主机级新 IP”模式的又一次失败样本：买断制新 IP 的开发周期与成本已超出多数外部投资方的容忍区间。对国内发行方的含义是，签约明星团队要更早设里程碑与止损线，而不是拖到末期再决定加不加钱。",
+     "recommendation": "名越稔洋工作室 10 月 31 日解散，《龙帮》终止——网易放弃追加 4400 万美元",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "X · 开发者控诉",
+     "tags": [
+      "Steam",
+      "AI slop",
+      "独立发行"
+     ],
+     "title": "1.1 万愿望单换来一个哑火的首发：开发者指 Steam 审核队列被 AI slop 挤爆",
+     "en_title": "We were assured by Steam that missing our launch - as a result of the tidal wave of AI-slop that destroyed their review queue - would not affect the usual mechanisms of launch visibility",
+     "full_text": "We were assured by Steam that missing our launch - as a result of the tidal wave of AI-slop that destroyed their review queue - would not affect the usual mechanisms of launch visibility\n\nI beg to differ...\n\n11,000+ wishlists and this is what our launch turned into https://t.co/t7gR2yFj8x",
+     "author": "2_left_thumbs",
+     "date": "2026-11-02",
+     "likes": 2466,
+     "views": 517006,
+     "link": "https://x.com/2_left_thumbs/status/2117053876356383065",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWFIuw_XEAEVBgE.jpg"
+     },
+     "summary": "独立团队 2 Left Thumbs 称，因为 Steam 审核队列被大量 AI 生成内容挤爆，他们的游戏错过原定上线日；Valve 事前保证“迟上线不会影响曝光机制”，但实际首发几乎拿不到推荐位——“1.1 万+ 愿望单，这就是我们的首发”。该帖 51.7 万浏览、2466 赞。",
+     "analysis": "平台审核能力正在变成独立开发者的不可控风险项，而且不可投保、不可预期。操作含义很直接：把“过审时间”写进排期并留缓冲，同时把首发流量押在自有渠道（社区、邮件列表、主播关系），别把生死交给平台推荐。",
+     "recommendation": "1.1 万愿望单首发哑火：开发者指 Steam 审核队列被 AI 内容挤爆",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Polygon · 销量",
+     "tags": [
+      "影之刃零",
+      "国产买断",
+      "销量"
+     ],
+     "title": "《影之刃零》72 小时卖 400 万份、M 站 88 分：国产武侠动作的全球票仓",
+     "en_title": "Phantom Blade Zero Became One of 2026's Best-Selling Games in Just 72 Hours",
+     "full_text": "Phantom Blade Zero Became One of 2026's Best-Selling Games in Just 72 Hours https://t.co/7WH3AhhZgb https://t.co/FJzF21TnvP",
+     "author": "Polygon",
+     "date": "2026-11-02",
+     "likes": 12,
+     "views": 4424,
+     "link": "https://x.com/Polygon/status/2117220211103297847",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWHgj_1XUAA6If_.jpg"
+     },
+     "summary": "S-Game 确认《影之刃零》发售 72 小时全球销量 400 万份：Metacritic 88 分、登顶 Steam 畅销榜，发售数小时内同时在线达 83.3 万，为今年单机游戏第二（仅次于《幻兽帕鲁》）。对比《黑神话：悟空》首周末 1000 万份仍有差距；本作为 PS5 限时独占、纯数字发行，2027 年出实体版。",
+     "analysis": "400 万份验证了“高品质武侠动作 + 中等定价 + 全球同步”的可行性，也说明首周口碑（88 分）比预热更决定天花板。首发之后的关键变量是内容更新节奏与主机版扩量，而不是再刷一轮营销。",
+     "recommendation": "《影之刃零》72 小时 400 万份、M 站 88 分，登顶 Steam 畅销榜",
+     "game_ref": "Phantom Blade Zero"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Niche Gamer · 行业数据",
+     "tags": [
+      "裁员",
+      "行业收缩",
+      "2026"
+     ],
+     "title": "2026 年游戏业裁员人数已超 2025 全年：还剩两个月才结束",
+     "en_title": "Games industry layoffs in 2026 have already surpassed all of 2025",
+     "full_text": "Games industry layoffs in 2026 have already surpassed all of 2025: https://t.co/sdA5HclCxM https://t.co/CDSTJlC5fp",
+     "author": "nichegamer",
+     "date": "2026-11-02",
+     "likes": 5,
+     "views": 819,
+     "link": "https://x.com/nichegamer/status/2117282637416915052",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWIZVpzXoAE4fIP.jpg"
+     },
+     "summary": "据 Niche Gamer 的年度汇总，2026 年游戏行业已公布的裁员规模超过 2025 年全年总量，而今年还有约两个月才结束。这一数字出现在 BioWare、Nagoshi Studio 等工作室关闭与多个项目取消之后。",
+     "analysis": "裁员性质已从“疫情后回调”转为结构性收缩：发行方压缩新 IP，把资源集中到已验证的系列与 live-service。对个人与团队的含义是，能力组合要向能直接产生收入的位置靠拢——发行、变现、已有 IP 的续作与移植。",
+     "recommendation": "2026 裁员总数已超 2025 全年，行业收缩还在加速"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "4Gamer · 新游",
+     "tags": [
+      "模拟",
+      "物理玩法",
+      "Steam"
+     ],
+     "title": "《Potato Please》：第一人称物理削土豆，独立团队把“军队口粮”做成一整座山",
+     "en_title": "山積みのジャガイモの皮をひたすらむいていくシミュレーションゲーム「Potato Please」，日本時間の11月4日にリリース",
+     "full_text": "山積みのジャガイモの皮をひたすらむいていくシミュレーションゲーム「Potato Please」，日本時間の11月4日にリリース\nhttps://t.co/yKeb2WuDTG\n\n軍隊の胃袋を満たすため，ありえないほど大量のジャガイモに立ち向かおう https://t.co/XVG6KppI3I",
+     "author": "4GamerNews",
+     "date": "2026-11-02",
+     "likes": 565,
+     "views": 79086,
+     "link": "https://x.com/4GamerNews/status/2117222496789520895",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2117222416858648576/pu/img/sl8XbZjCBXjuNJZa.jpg",
+      "video_url": "https://x.com/4GamerNews/status/2117222496789520895/video/1"
+     },
+     "summary": "Golden Horn Studios 的《Potato Please》今日（11 月 3 日）在 Steam 发售，日本时间 4 日上线：第一人称削土豆，真实物理削皮，削薄不浪费，靠卖土豆升级刀具，目标是削完整座土豆山，为“军队的胃”供粮。推文 7.9 万浏览。",
+     "analysis": "",
+     "recommendation": "《Potato Please》：第一人称物理削土豆，削薄一点别浪费",
+     "game_ref": "Potato Please",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Potato Please",
+      "genre": "第一人称模拟 / 休闲 / 独立",
+      "developer": "Golden Horn Studios",
+      "platforms": [
+       "Steam（Windows / macOS / Linux）"
+      ],
+      "price": "发售日未显示定价",
+      "release_date": "2026年11月3日",
+      "steam_rating": "未发售，暂无评价",
+      "steam_url": "https://store.steampowered.com/app/5266240/Potato_Please/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5266240/e289442aa6b3756109bc65b427556ea538efb849/header.jpg?t=1793452256",
+      "youtube_video": null,
+      "description": "【核心玩法】把“削皮”这一个动作做成完整的物理模拟：刀贴着土豆表面走，削得薄就省料，削得厚就浪费，削完的土豆要装桶交付。工具可以升级（更顺的刀、更快的处理线），土豆山的规模也随之放大，最终目标是把整座山削空。\n\n【节奏设计】这类“单一动作模拟”靠的是手感的微差：削皮的阻力、皮断的瞬间、土豆滚走的失误，都会形成短循环的成败反馈。短会话友好，适合直播与短视频切片，这也是它在 X 上拿到 7.9 万浏览的原因。\n\n【美术与气质】低多边形加夸张比例的土豆堆，配合第一人称的近景视角，把“劳动”本身变成景观。\n\n【优势】概念一句话说清、传播成本极低；物理交互有真实手感；题材荒诞但逻辑自洽（军队口粮）。\n\n【不足】玩法纵深依赖工具升级曲线，若后期只是“更大的土豆山”，容易在第两小时失去新鲜感；单一动作也意味着失误惩罚必须做得有趣，否则只剩重复劳动。\n\n【综合】典型的小体量高概念独游：用一个人人都懂的日常动作，换一个能在信息流里被立刻记住的卖点。",
+      "why_notable": "“第一人称削土豆”这类把日常劳动做成物理玩法的概念，是当前小体量独游最容易在社交平台破圈的形态",
+      "pcu": "暂未发售",
+      "current_players": "暂未发售",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「第一人称物理削皮」套「军队口粮」的荒诞模拟，Golden Horn Studios 开发，今日上架 Steam"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Niche Gamer · 评测",
+     "tags": [
+      "生存恐怖",
+      "类银河城",
+      "Steam"
+     ],
+     "title": "《银松镇 Silver Pines》：把生存恐怖塞进类银河城，Wych Elm 的 90 元小体量赌注",
+     "en_title": "[REVIEW] Silver Pines is a stylish, spooky, survival horror metroidvania!",
+     "full_text": "[REVIEW] Silver Pines is a stylish, spooky, survival horror metroidvania!\n\nhttps://t.co/QyyDsfw4I0\n\nWhile it may have stiff controls and goofy jumping, Silver Pines pushes the boundaries of horror and leans into an identity all its own~ https://t.co/ae2GngC5oM",
+     "author": "nichegamer",
+     "date": "2026-11-02",
+     "likes": 7,
+     "views": 1129,
+     "link": "https://x.com/nichegamer/status/2117261451186286919",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2117261218326974464/img/G0G9W9IFrY318SCL.jpg",
+      "video_url": "https://x.com/nichegamer/status/2117261451186286919/video/1"
+     },
+     "summary": "Niche Gamer 评测《Silver Pines》：风格化的恐怖生存类银河城，舞台是美国小镇，玩家要在噩梦中战斗、解谜并管理稀缺资源。评测承认操作偏硬、跳跃手感笨拙，但认为它在恐怖氛围与自我风格上走得足够远。Steam 售价 ¥90，10 月 8 日发售，已有 5,019 条评价。",
+     "analysis": "",
+     "recommendation": "《银松镇》：生存恐怖 + 类银河城，氛围到位但操作偏硬",
+     "game_ref": "Silver Pines",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Silver Pines",
+      "genre": "生存恐怖 / 类银河战士恶魔城 / 动作冒险",
+      "developer": "Wych Elm",
+      "platforms": [
+       "Steam（Windows / macOS / Linux）"
+      ],
+      "price": "¥90.00",
+      "release_date": "已发售 · 2026年10月8日",
+      "steam_rating": "5,019 条评价",
+      "steam_url": "https://store.steampowered.com/app/2333000/Silver_Pines/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2333000/4a1a2b88d7536022bba475e7d13879c03853f8b5/header_schinese.jpg?t=1793349304",
+      "youtube_video": null,
+      "description": "【核心玩法】以美国小镇为舞台的生存恐怖类银河城：探索连通的地图、破解谜题、在资源稀缺的前提下与噩梦般的敌人战斗。资源管理是核心压力源——弹药、治疗与照明都有限，逼玩家在“绕路省资源”和“硬闯省时间”之间做取舍。\n\n【恐怖表达】比起 jump scare，更依赖美术风格与声音设计营造持续的不安感；评测特别提到它在恐怖边界上的推进，说明氛围塑造是团队最用力的一环。\n\n【手感问题】评测明确指出操作偏硬、跳跃笨拙。这在类银河城里代价很大：平台段落的容错一旦不足，玩家会把挫败感归因到设计而非难度。\n\n【优势】美术风格辨识度高；恐怖氛围与地图结构结合得紧；¥90 的定价对 5,000 条评价量级的体量是合理区间。\n\n【不足】操作与跳跃手感拖累平台段落；资源紧张与硬手感的叠加，容易在中段劝退休闲玩家。\n\n【综合】一部“气质大于手感”的恐怖银河城，适合把它当氛围体验而不是硬核动作游戏来买。",
+      "why_notable": "独立团队把生存恐怖的资源压力与类银河城的地图结构拼在一起，是今年小众赛道里辨识度较高的一款",
+      "pcu": "暂无公开数据",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "暂无官方数据（Steam 5,019 条评价）",
+      "gi_summary": "「生存恐怖」套「美式小镇类银河城」新瓶，Wych Elm 开发，Steam 售价 ¥90"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Niche Gamer · 实机",
+     "tags": [
+      "科幻 RPG",
+      "实机演示",
+      "2027"
+     ],
+     "title": "《EXODUS》：Archetype 放出 40 分钟实机，用“时间膨胀”讲星际殖民",
+     "en_title": "Grandiose sci-fi RPG EXODUS got a big 40min gameplay block",
+     "full_text": "Grandiose sci-fi RPG EXODUS got a big 40min gameplay block: https://t.co/FDWyT8wdOJ https://t.co/1gHFONPDiC",
+     "author": "nichegamer",
+     "date": "2026-11-02",
+     "likes": 10,
+     "views": 830,
+     "link": "https://x.com/nichegamer/status/2117276090393636952",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWITYllWQAAwe82.jpg"
+     },
+     "summary": "Niche Gamer 汇总《EXODUS》的 40 分钟实机演示：科幻动作 RPG，玩家从拾荒者成长为“巡星使”，在被时间摧残的星球之间探索，为人类寻找延续的可能。Steam 页面显示 2027 年 4 月 7 日发售，Archetype Entertainment 开发。",
+     "analysis": "",
+     "recommendation": "《EXODUS》40 分钟实机：时间膨胀设定下的星际殖民动作 RPG",
+     "game_ref": "EXODUS",
+     "enrichment": {
+      "game_name": "EXODUS",
+      "genre": "科幻动作 RPG / 单人叙事",
+      "developer": "Archetype Entertainment",
+      "platforms": [
+       "Steam（Windows / macOS / Linux）",
+       "PS5",
+       "Xbox Series"
+      ],
+      "price": "未公布",
+      "release_date": "2027年4月7日",
+      "steam_rating": "未发售，暂无评价",
+      "steam_url": "https://store.steampowered.com/app/3230960/EXODUS/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3230960/c0fbd58953137c5e6643198d7412ac4e67382a4b/header_schinese.jpg",
+      "youtube_video": null,
+      "description": "【核心玩法】电影化单人动作 RPG：玩家扮演从拾荒者起步的角色，逐步成为“巡星使”，在不同星球间穿梭、战斗、做选择。设定核心是“时间膨胀”——星际旅行让同一家族/同伴之间产生巨大的时间错位，选择的代价被拉长到几十年尺度。\n\n【40 分钟实机看点】这段演示主要展示探索—战斗—对话的完整循环，以及不同星球的美术差异；对这类叙事 RPG，实机长度本身就是信心信号，说明核心循环已经能连续跑通。\n\n【团队背景】Archetype Entertainment 由一批 BioWare 老将组成，这也是它被拿来与前 BioWare 作品对比的原因；叙事密度与同伴塑造会是评判重点。\n\n【优势】时间膨胀设定给了叙事真正的结构创新空间；电影化演出规格高；老将团队的 RPG 叙事经验。\n\n【风险】2027 年 4 月的档期意味着还要与更多 3A 争抢注意力；时间跳跃的设定若只用于过场，而不影响玩法决策，会很快沦为噱头。\n\n【综合】目前是“设定最值得期待、玩法仍需验证”的状态，40 分钟实机把它从概念推进到可信的候选名单。",
+      "why_notable": "用“星际旅行的时间膨胀”作为叙事与选择的底层机制，是近几年科幻 RPG 里少有结构性创新的设定",
+      "pcu": "暂未发售",
+      "current_players": "暂未发售",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「电影化科幻动作 RPG」套「时间膨胀」新瓶，BioWare 老将组建的 Archetype 开发，2027 年 4 月发售"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Niche Gamer · 新游公布",
+     "tags": [
+      "复古动作冒险",
+      "新游公布",
+      "2027"
+     ],
+     "title": "《翠域之风 Winds of Viridia》：复古动作冒险公布，2027 年 Q1 上线",
+     "en_title": "Throwback action-adventure game Winds of Viridia was announced",
+     "full_text": "Throwback action-adventure game Winds of Viridia was announced: https://t.co/AvNMCAwtdV https://t.co/PuHYjRudSL",
+     "author": "nichegamer",
+     "date": "2026-11-02",
+     "likes": 6,
+     "views": 746,
+     "link": "https://x.com/nichegamer/status/2117288109754704326",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2117288073922772992/pu/img/zGJ2gtbsK2J5c5mq.jpg",
+      "video_url": "https://x.com/nichegamer/status/2117288109754704326/video/1"
+     },
+     "summary": "Niche Gamer 报道：复古风格动作冒险游戏《Winds of Viridia》（Steam 中文名《翠域之风》）公布，团队为 Shark Jump / Matt Trobbiani，Steam 页面标注 2027 年第一季度。设定是探索巨树所在的山谷，查明让生物陷入疯狂的原因。",
+     "analysis": "",
+     "recommendation": "《翠域之风》：复古动作冒险新作，2027 年 Q1 见",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Niche Gamer · 定档",
+     "tags": [
+      "治愈模拟",
+      "多平台",
+      "定档"
+     ],
+     "title": "《狸狸：胖哒的夏日》定档 11 月 10 日，追加多平台发行",
+     "en_title": "Delivery adventure game TANUKI: Pon’s Summer gets a release date and more ports",
+     "full_text": "Delivery adventure game TANUKI: Pon’s Summer gets a release date and more ports: https://t.co/7EoSxREg3R https://t.co/uGovHKJtem",
+     "author": "nichegamer",
+     "date": "2026-11-02",
+     "likes": 5,
+     "views": 748,
+     "link": "https://x.com/nichegamer/status/2117282514431520798",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2117282482903035905/pu/img/r-TfQx14rWSdY13R.jpg",
+      "video_url": "https://x.com/nichegamer/status/2117282514431520798/video/1"
+     },
+     "summary": "Niche Gamer 报道：狸猫主题的送货冒险游戏《TANUKI: Pon's Summer》（Steam 中文名《狸狸：胖哒的夏日》）确定 11 月 10 日发售，并追加更多平台。玩家扮演兼职邮差胖哒，在庆典前把神社修好。",
+     "analysis": "",
+     "recommendation": "《狸狸：胖哒的夏日》定档 11 月 10 日，送货 + 神社修缮的治愈系",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Niche Gamer · 定档",
+     "tags": [
+      "科学ADV",
+      "视觉小说",
+      "定档"
+     ],
+     "title": "《Seeker Eye》定档：科学 ADV 系列团队的新作",
+     "en_title": "Science Adventure series devs' new game Seeker Eye gets a release date",
+     "full_text": "Science Adventure series devs' new game Seeker Eye gets a release date: https://t.co/BuvhnWJ8It https://t.co/M1NNCisXaj",
+     "author": "nichegamer",
+     "date": "2026-11-02",
+     "likes": 6,
+     "views": 737,
+     "link": "https://x.com/nichegamer/status/2117283651968745604",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWIaQsIXgAAv_m6.jpg"
+     },
+     "summary": "Niche Gamer 报道：参与《科学 ADV》系列（《命运石之门》一系）的开发团队新作《Seeker Eye》公布发售日期。属于视觉小说/文字冒险赛道，适合关注日式叙事游戏的读者跟踪。",
+     "analysis": "",
+     "recommendation": "《Seeker Eye》定档：科学 ADV 系列团队的新叙事作",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "X · 独立开发",
+     "tags": [
+      "合作攀爬",
+      "肉鸽",
+      "语音"
+     ],
+     "title": "合作攀爬肉鸽：钩爪 + 近距离语音，从洞穴里往上爬",
+     "en_title": "hello twitter friends I'm making a game! It's a coop proximity voice chat climbing game roguelike all about grappling hook out of a cave",
+     "full_text": "hello twitter friends I'm making a game! It's a coop proximity voice chat climbing game roguelike all about grappling hook out of a cave, been pretty happy with how it's starting to feel and look so wanted to share! https://t.co/eRZ8M1J1U0",
+     "author": "Jackspektra",
+     "date": "2026-11-02",
+     "likes": 40,
+     "views": 2218,
+     "link": "https://x.com/Jackspektra/status/2117257225513381916",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2117256864689733633/img/AsfMtNWUOfvWyHkO.jpg",
+      "video_url": "https://x.com/Jackspektra/status/2117257225513381916/video/1"
+     },
+     "summary": "独立开发者 Jackspektra 公布在研项目：合作攀爬肉鸽，核心是钩爪，配合近距离语音聊天，目标是从洞穴一路爬到地面。目前处于很早期，先放出观感片段征集反馈。",
+     "analysis": "",
+     "recommendation": "合作攀爬肉鸽 + 近距离语音：钩爪爬出洞穴的早期原型",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "X · Roblox",
+     "tags": [
+      "Roblox",
+      "解压玩法",
+      "UGC"
+     ],
+     "title": "Roblox 灭虫游戏：在一栋房子里压扁一万只虫子",
+     "en_title": "I made a Roblox game where you are a exterminator and have to clean a house by squishing 10,000 bugs",
+     "full_text": "I  made a Roblox game where you are a exterminator and have to clean a house by squishing 10,000 bugs\n\nTry it out: https://t.co/zs5XG3d7kO https://t.co/O4r7We2P5E",
+     "author": "StarMarine614",
+     "date": "2026-11-01",
+     "likes": 444,
+     "views": 27559,
+     "link": "https://x.com/StarMarine614/status/2116922137311363478",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2116921646057402368/img/0JawhNldyKfcle9z.jpg",
+      "video_url": "https://x.com/StarMarine614/status/2116922137311363478/video/1"
+     },
+     "summary": "开发者 StarMarine614 在 Roblox 做了个灭虫游戏：玩家扮演除虫工，要靠压扁一万只虫子把一栋房子清干净。帖子 2.8 万浏览，属于 Roblox UGC 里典型的“单一解压目标 + 短视频传播”形态。",
+     "analysis": "",
+     "recommendation": "Roblox 灭虫游戏：压扁一万只虫子清空一栋房子",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 技术演示",
+     "tags": [
+      "three.js",
+      "Web 渲染",
+      "LOD"
+     ],
+     "title": "three.js r187 在浏览器跑 19.7 亿三角面：Meshlet 管线把剔除交给 GPU",
+     "en_title": "1,967,478,960 triangles at 60 fps in a desktop browser 🤯 three.js r187's MeshletDrawingPipeline splits meshes into 64-triangle clusters.",
+     "full_text": "1,967,478,960 triangles at 60 fps in a desktop browser 🤯\nthree.js r187's MeshletDrawingPipeline splits meshes into 64-triangle clusters. the gpu culls the hidden ones and far stuff drops to coarser LODs.\nBILLION, made with opus 5.5 #threejs #gamedev https://t.co/F8y3gjlrJb",
+     "author": "sara_kumodeck",
+     "date": "2026-11-02",
+     "likes": 256,
+     "views": 13938,
+     "link": "https://x.com/sara_kumodeck/status/2117062532439671028",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2117061912148267008/img/3X-A1a-5F4MvHEtM.jpg",
+      "video_url": "https://x.com/sara_kumodeck/status/2117062532439671028/video/1"
+     },
+     "summary": "开发者 Sara Chen 演示 three.js r187 新增的 MeshletDrawingPipeline：把网格切成 64 三角面的 cluster，由 GPU 剔除不可见部分，远处物体自动降级到更粗的 LOD，最终在桌面浏览器以 60fps 渲染 1,967,478,960 个三角面。她注明该演示在 Opus 5.5 协助下完成。",
+     "analysis": "Web 端实时渲染的上限被继续推高，“打开网页就能跑接近 3A 的场景”正在从演示变成工程可行项。对独立团队，网页试玩、云化 demo 与跨端发行的分发成本会进一步下降；对引擎团队，meshlet + GPU 剔除不再是自研渲染器的专属能力。",
+     "recommendation": "three.js r187 在浏览器 60fps 跑 19.7 亿三角面，Meshlet 管线立功",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · AI 工作流",
+     "tags": [
+      "Unreal",
+      "Agent",
+      "工作流"
+     ],
+     "title": "不打开虚幻编辑器也能做 UE 游戏：给 Agent 三条约束，全流程命令行完成",
+     "en_title": "Over the weekend I made more progress on the Unreal game that I have been vibe coding.",
+     "full_text": "Over the weekend I made more progress on the Unreal game that I have been vibe coding. More enemies and a final boss with a roguelike progression system.\n\nI did not have to open Unreal Editor at all to make this game.\n\nHere's how you can set up in a way that you can build an Unreal game without having to use the Editor:\n\nJust mention these rules to the agent:\n- Write everything in C++, and build maps and assets with code instead of the editor.\n- Build and run the game from the command line.\n- A...",
+     "author": "DannyLimanseta",
+     "date": "2026-11-02",
+     "likes": 78,
+     "views": 2966,
+     "link": "https://x.com/DannyLimanseta/status/2117272094941856045",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2117269682600464384/img/fpyiU7NNP532KyRi.jpg",
+      "video_url": "https://x.com/DannyLimanseta/status/2117272094941856045/video/1"
+     },
+     "summary": "开发者 Danny Limanseta 用 vibe coding 做虚幻引擎游戏，全程没有打开过 UE 编辑器：约束是“全部用 C++ 写、地图与资产用代码构建、构建与运行都走命令行”。他称上周末补齐了更多敌人、最终 Boss 与 roguelike 成长系统。",
+     "analysis": "把引擎当成“可编程的构建目标”而不是可视化编辑器，是 AI 编程进入重型工具链的关键一步。代价在前期：项目结构、构建脚本与资产规范必须先被写成 Agent 能稳定执行的硬约束，否则生成内容会迅速失控。",
+     "recommendation": "不打开 UE 编辑器做出完整游戏：三条规则让 Agent 接管引擎"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI 开始被反向约束**\nAnthropic 在 10 月 30 日给 Claude Code 的规则加了约束：可以做原创、做某一类型、做基于自己素材的游戏，但不得复刻某个具体现有游戏，即使改名也不行。背景是 AI 游戏已经把 Steam Next Fest 与 itch.io 的审核与发现机制冲垮——带 2.5 万愿望单的《Drunken Goddess Reflux》直接退出 Next Fest，改做定向测试。\n\n**新 IP 的成本墙**\n名越稔洋创办、网易投资的 Nagoshi Studio 于 10 月 31 日解散，《龙帮》随之中止；GameSpot 称今年 3 月团队仍在寻求追加 4400 万美元，网易判断不值得继续投入。同一周，Niche Gamer 的统计显示 2026 年游戏业裁员人数已超过 2025 年全年。\n\n**卖得动的仍然卖得动**\nS-Game 确认《影之刃零》72 小时卖出 400 万份，Metacritic 88 分、登顶 Steam 畅销榜，同时在线一度达 83.3 万。另一侧，独立团队 2 Left Thumbs 用 1.1 万愿望单换来一个几乎无声的首发，把矛头指向被 AI 内容挤爆的 Steam 审核队列。\n\n**工具侧的两个信号**\nthree.js r187 用 meshlet 管线在浏览器里 60fps 跑出 19.7 亿三角面；另一位开发者则用三条硬约束让 Agent 全程不打开虚幻编辑器把游戏做完。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
