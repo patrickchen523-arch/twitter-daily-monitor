@@ -49,6 +49,16 @@ if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
   ].map(s => s.trim()).filter(Boolean))];
   if (dirty.length) {
     console.error(`[sync_itch] 工作区有未提交修改，请先提交或还原后再跑：\n${dirty.map(p => `\t${p}`).join('\n')}`);
+    // 最常见成因（2026-11-04 INC-014）：x-daily 在 commit 之前被中断（bot 重启/进程被杀），
+    // 当日日报产物留在工作区，itch 同步只是第一个撞上的下游任务。这里直接给出可执行动作，
+    // 免得再从头查一遍"为什么脏"。
+    const dailyArtifacts = dirty.filter(p => /^data\/(?:launched\/)?[^\s]*\d{4}-\d{2}-\d{2}\.json$/.test(p));
+    if (dailyArtifacts.some(p => p.includes(date))) {
+      console.error(
+        `[sync_itch] 其中 ${dailyArtifacts.length} 个是当日(${date})日报产物：疑似 x-daily 提交前被中断。\n` +
+        `[sync_itch] 正确顺序：node tools/verify_launched_imgs.cjs ${date} --data-only`
+        + ` → git add <上述文件> → git commit → 推 GitHub+GitLab → 再重跑本脚本。`);
+    }
     process.exit(1);
   }
   if (process.argv.includes('--preflight-only')) {
