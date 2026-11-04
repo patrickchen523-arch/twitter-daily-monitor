@@ -1,0 +1,529 @@
+{
+ "date": "2026-11-04",
+ "meta": {
+  "raw_count": 159,
+  "filtered_count": 133,
+  "selected_count": 12,
+  "crawl_time": "2026-11-04 09:34"
+ },
+ "lede": "《上古卷轴6》定名 Sentinel 并放出预告，8 年 4 个月后终于有了画面；10 月 Steam 新游 49.9% 申报使用 AI 内容；零经验开发者用 Claude Code + Godot 做出四人合作防御游戏。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "《上古卷轴6》定名 Sentinel，8 年 4 个月后终于放出预告"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "10 月 Steam 新游近半申报用 AI——2024 年初只有 1.7%"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 1,
+   "hook": "零经验用 Claude Code + Godot 做出四人合作防御游戏，免费 demo 已上线"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "10 月 Steam 新游 49.9% 申报使用 AI 生成内容\nitch.io 删除数 TB AI slop，搜索页加「No AI」过滤\n免费 Claude Skill「teardown」：一张图迭代出可动 3D 生物"
+  },
+  {
+   "id": "industry",
+   "text": "《上古卷轴6》定名 Sentinel，仍无发售日\nRemedy 三季度营收 +226%，近半玩家是系列新人\nSteam 周销榜：《影之刃零》登顶\nEmbark 回应 AI 配音争议，正换回真人"
+  },
+  {
+   "id": "indie",
+   "text": "《深空当铺》上线一周 75 万份，Steam 周销第三\n零经验用 Claude Code + Godot 做出合作防御游戏\n《Leafborn》叶子数跟着愿望单涨到 1.5 万"
+  },
+  {
+   "id": "tools",
+   "text": "UE 5.9 下周进 Preview：AI 工作流 + Web 目标平台\n传 UE6 废除蓝图与 C++ 框架，逻辑全走 Verse"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Dexerto · 行业数据",
+     "tags": [
+      "AI生成内容",
+      "Steam",
+      "披露数据"
+     ],
+     "title": "10 月 Steam 新游 49.9% 申报使用 AI 生成内容，2024 年 1 月仅 1.7%",
+     "en_title": "49.9% of all new games released on Steam in October disclosed using AI-generated content",
+     "full_text": "49.9% of all new games released on Steam in October disclosed using AI-generated content\n\nIt was only 1.7% of games in January 2024 https://t.co/bX3YSKCMsk",
+     "link": "https://x.com/Dexerto/status/2117301155919208769",
+     "author": "Dexerto",
+     "date": "2026-11-02",
+     "likes": 56770,
+     "views": 2152912,
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWIqLkhXYAADcId.jpg"
+     },
+     "summary": "Dexerto 引用统计：2026 年 10 月在 Steam 上架的新游中，49.9% 在商店页申报使用了 AI 生成内容；2024 年 1 月这一比例只有 1.7%。该字段由开发者自行申报，但口径统一，可横向比较。这条推文拿到 5.7 万赞、215 万浏览。",
+     "analysis": "从 1.7% 到 49.9% 不到三年，说明 AI 已经从「少数团队的尝试」变成 Steam 新游的默认工作流之一。对从业者的直接含义是：披露不再是差异化卖点，而是基础设施；真正稀缺的是披露之后还能被玩家记住的东西——美术方向、手感、循环设计。副作用是平台和媒体开始拿披露字段做过滤，这又会反向影响团队的申报策略。",
+     "recommendation": "10 月 Steam 新游近半申报用 AI——2024 年初只有 1.7%",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "itch.io · 平台政策",
+     "tags": [
+      "AI治理",
+      "平台政策",
+      "独立游戏"
+     ],
+     "title": "itch.io 删除数 TB「AI slop」，搜索页新增「No AI」过滤",
+     "en_title": "Just deleted a couple terabytes of ai slop",
+     "full_text": "Just deleted a couple terabytes of ai slop 😌",
+     "link": "https://x.com/itchio/status/2117458324920967549",
+     "author": "itchio",
+     "date": "2026-11-03",
+     "likes": 133700,
+     "views": 1979180,
+     "media": null,
+     "summary": "itch.io 官方账号称「刚删掉了几 TB 的 AI slop」，133,700 赞、198 万浏览。Eurogamer 同日报道：itch.io 扩展了 AI 披露过滤，搜索页新增「No AI」勾选项，勾选后隐藏所有带生成式 AI 披露的作品。平台还披露，过去两个月每日新建游戏页面数量翻倍，但下载量与购买量并未同步翻倍。",
+     "analysis": "独立平台的供给已经明显超过需求端的消化能力，AI 只是把这条曲线拉陡。对独游团队来说，「能被检索到的位置」正在变成稀缺资源：一边是平台加过滤，一边是玩家主动勾选排除 AI，作品能否被看见，越来越取决于人工打磨的截图、预告和第一眼差异化。反过来，「明确标注无 AI」也可能成为一个小众信任标签。",
+     "recommendation": "itch.io 删掉数 TB AI slop，搜索页上线「No AI」过滤",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Nyxera · AI 工作流",
+     "tags": [
+      "Claude",
+      "3D动画",
+      "开源Skill"
+     ],
+     "title": "免费 Claude Skill「teardown」：给一张图，迭代渲染出可动 3D 生物",
+     "en_title": "a dev just dropped a free Claude skill called 'teardown' and anyone who animates 3d for money should pay attention",
+     "full_text": "🚨this is going to END some careers.\n\na dev just dropped a free Claude skill called \"teardown\" and anyone who animates 3d for money should pay attention.\n\nthe skill is ridiculously good but the dev is crazy enough to give it away anyway.\n\nhow it runs:\n\n> you hand it a picture and say what the creature is\n> claude codes the octopus, renders a still beside your picture and patches the differences round after round before any animation\n> every arm is a chain of links that shrink toward the tip, so each one curls into a true spiral with 2 rows of suction wheels underneath\n> one timeline drives the whole thing: the jet gauge, the operator's cursor, the console rows and the audio all tick off it\n> it can't watch footage, so it reviews a grid of frames at every beat, fixes what looks off and re-renders until a full pass comes back clean\n> the frames come off your own GPU at 60 fps and python writes the soundtrack on the same beats\n\none picture went in and this octopus is what came back out.\n\nfree skill, full write-up in the article 👇",
+     "link": "https://x.com/Nyxera0x/status/2117320669838880781",
+     "author": "Nyxera0x",
+     "date": "2026-11-02",
+     "likes": 1248,
+     "views": 122646,
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2117318505154363392/img/cIKgeKpy9SmC76To.jpg",
+      "video_url": "https://x.com/Nyxera0x/status/2117320669838880781/video/1"
+     },
+     "summary": "开发者开源了名为 teardown 的 Claude Skill：输入一张参考图和生物名称，Claude 先用代码把模型搭出来，渲染静帧贴到参考图旁边逐轮比对差异并修正，最后才做动画。触手被实现为逐节收缩的链条，每条都能卷成真正的螺旋；一条时间轴同时驱动喷气表、鼠标指针、控制台行和音效。推文 12.2 万浏览、1,248 赞。",
+     "analysis": "「渲染图对比 → 自动改代码」的闭环，把 3D 资产从「手工建模 + 手工调」推向「规格描述 + 自动迭代」，最先被压缩的是概念阶段的验证成本。但它也暴露了边界：复杂绑定和动作质感仍要人判断，Skill 的价值是把重复比对自动化，而不是替代动画师的审美决策。对中小团队，值得学的是这种把专业流程封装成可复用 Skill 的组织方式。",
+     "recommendation": "免费 Claude Skill「teardown」：一张图迭代渲染出可动 3D 生物"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Bethesda / The Game Awards · 新作公布",
+     "tags": [
+      "上古卷轴6",
+      "Bethesda",
+      "3A"
+     ],
+     "title": "《上古卷轴6》正式定名 Sentinel：预告放出，距首次公布已 8 年 4 个月",
+     "en_title": "Today we're sharing with you all the name of the next Elder Scrolls title (did you guess correctly?).",
+     "full_text": "Today we're sharing with you all the name of the next Elder Scrolls title (did you guess correctly?). https://t.co/zjhpJXQNtF",
+     "link": "https://x.com/BethesdaStudios/status/2117635313921077514",
+     "author": "BethesdaStudios",
+     "date": "2026-11-03",
+     "likes": 35029,
+     "views": 1292658,
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWNaGFyW4AAq6qm.jpg"
+     },
+     "summary": "Bethesda 在 11 月 3 日公布系列新作正式名称《The Elder Scrolls VI: Sentinel》，并放出首支预告，The Game Awards 同步转发。Eurogamer 计算，此时距离 2018 年 E3 的首次公布已过去 8 年 4 个月 23 天。Rock Paper Shotgun 认为预告基本坐实了 Hammerfell 地区设定。Bethesda 表示「距离可以分享更多信息还有一段时间」，仍未给出上市日期。",
+     "analysis": "定名加预告、但依然没有档期，说明项目已经进入可对外展示的阶段，却还没进入发行排期。对行业的信号意义大于产品意义：微软系体量最大的单机 RPG 仍在推进，Xbox 第一方管线没有塌。对竞品而言，真正的窗口期是它上市前的一两年——那段时间开放世界 RPG 的供给会被明显挤压。",
+     "recommendation": "《上古卷轴6》定名 Sentinel，8 年 4 个月后终于放出预告",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 财报",
+     "tags": [
+      "Remedy",
+      "财报",
+      "Control Resonant"
+     ],
+     "title": "Remedy 三季度营收 3960 万欧元同比 +226%，Control Resonant 成史上最快卖座作",
+     "en_title": "Remedy revenue soars by 226% following release of Control Resonant, the developer's fastest-selling game ever",
+     "full_text": "Remedy revenue soars by 226% following release of Control Resonant, the developer's fastest-selling game ever\n\nhttps://t.co/HLZgMacjDo https://t.co/y01LJAqnSJ",
+     "link": "https://x.com/eurogamer/status/2117557760703574207",
+     "author": "eurogamer",
+     "date": "2026-11-03",
+     "likes": 3968,
+     "views": 113966,
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWMTivdXcAAyVFK.png"
+     },
+     "summary": "Remedy 三季度营收 3,960 万欧元，同比增长 226%；营业利润 60 万欧元，去年同期为亏损 1,640 万欧元。CEO Jean-Charles Gaudechon 称这是「公司的决定性里程碑」。Control Resonant 的玩家中美国约占一半，其次为中文地区和英国；近半玩家是该系列新用户，2019 年的《Control》销量也被带动回升。Max Payne 1&2 重制仍在推进。",
+     "analysis": "单机叙事动作游戏在 2026 年依然能打出这种曲线，关键不是买量，而是把新 IP 的入门门槛压低到「没玩过前作也能进」。近半新增用户是这份财报里最值钱的数字：它意味着续作不再只是存量收割，而是真正扩大了盘子。对国内团队的启示是，做系列化之前先想清楚「新玩家从哪一部进来」。",
+     "recommendation": "Remedy 三季度营收同比 +226%，Control Resonant 近半玩家是新用户",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "SteamDB · 周销榜",
+     "tags": [
+      "Steam周销榜",
+      "影之刃零",
+      "市场数据"
+     ],
+     "title": "Steam 周销榜（10/27–11/3）：《影之刃零》登顶，两款独游挤进前四",
+     "en_title": "#SteamTopSellers for week of 27 Oct — 3 November 2026 (No F2P)",
+     "full_text": "#SteamTopSellers for week of 27 Oct — 3 November 2026 (No F2P):\n\n#1 - Phantom Blade Zero\n#2 - Call of Duty®: Modern Warfare® 4\n#3 - Probably Stolen - Cyberpunk Shopkeeper Sim\n#4 - Moon Sweepers\n#5 - EA SPORTS FC™ 27\n\nhttps://t.co/LBFQepVEMF",
+     "link": "https://x.com/SteamDB/status/2117618075600081190",
+     "author": "SteamDB",
+     "date": "2026-11-03",
+     "likes": 32,
+     "views": 4209,
+     "media": null,
+     "summary": "SteamDB 公布 10 月 27 日至 11 月 3 日全球周销榜（不含免费游戏）：第 1《影之刃零》、第 2《使命召唤：现代战争 4》、第 3《深空当铺：可能是偷的》、第 4《Moon Sweepers》、第 5《EA SPORTS FC 27》。第 3、4 名都是体量不大的独立作品。Moon Sweepers 今日 Steam 峰值 57,471，历史峰值 83,138。",
+     "analysis": "榜首是国产武侠动作，前三里还有两部小体量作品，这个结构比单看冠军更有信息量：在 3A 定价普遍上探的周期里，30–50 元档「高概念 + 强循环」的独游反而能吃到周销高位。Moon Sweepers 用「16 人一起打扫月球」的一句话卖点拿到第 4，再次验证社交化玩法在榜单上的爆发力。",
+     "recommendation": "Steam 周销榜：《影之刃零》登顶，两款独游挤进前四",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 行业",
+     "tags": [
+      "AI配音",
+      "Embark",
+      "ARC Raiders"
+     ],
+     "title": "Embark 回应《ARC Raiders》AI 配音：演员「读那么多会疯」，但正在换回真人",
+     "en_title": "Arc Raiders devs say that using generative AI voice acting was necessary as actors 'would just go crazy if they had to read all of that'",
+     "full_text": "Arc Raiders devs say that using generative AI voice acting was necessary as actors \"would just go crazy if they had to read all of that\"\n\nhttps://t.co/RnALou8UH3 https://t.co/ag1wTFRsed",
+     "link": "https://x.com/eurogamer/status/2117641830452064741",
+     "author": "eurogamer",
+     "date": "2026-11-03",
+     "likes": 5,
+     "views": 2403,
+     "media": null,
+     "summary": "Embark 发布《ARC Raiders》音频制作视频。音频总监 Bence Pajor 称最初用生成式 AI 完成台词初版，训练数据来自配音演员本人的表演；由于每把新武器、每个道具和功能都要新增台词，「让演员把所有这些都读一遍，他们会疯掉」。CCO Stefan Strandberg 强调「我们不是在做替代演员的生意」，并承认 AI 台词的出戏感，正在逐步替换为真人录制。Nexon 曾把《ARC Raiders》称作生成式 AI 进入小团队开发的「特洛伊木马」。",
+     "analysis": "这是目前最完整的一次厂商自述：AI 在配音环节的真实位置是「高频变更下的临时占位」，而不是终态。它同时给出两条经验——训练数据来自演员本人、合同与演员谈清楚，法律风险可控；玩家能听出差别，占位稿必须在正式版前替换。对准备用 AI 配音的团队，这段访谈基本就是一份风险清单。",
+     "recommendation": "Embark：AI 配音是高频改台词的占位方案，正在换回真人"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Niche Gamer · 新游",
+     "tags": [
+      "模拟经营",
+      "赛博朋克",
+      "小团队"
+     ],
+     "title": "《深空当铺：可能是偷的》上线不到一周卖出 75 万份，tinyBuild 发行",
+     "en_title": "Probably Stolen sells 750,000 copies less than a week after launch",
+     "full_text": "Probably Stolen sells 750,000 copies less than a week after launch: https://t.co/nJASXrR8Zq https://t.co/UDuWKssll1",
+     "link": "https://x.com/nichegamer/status/2117626038503018826",
+     "author": "nichegamer",
+     "date": "2026-11-03",
+     "likes": 12,
+     "views": 1065,
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWNRqP3WIAA1zgK.jpg"
+     },
+     "summary": "Niche Gamer 报道：赛博朋克空间站当铺模拟《深空当铺：可能是偷的》（Probably Stolen）10 月 28 日上线 Steam，不到一周卖出 75 万份，售价 ¥49.50，目前 8,297 条评价，并进入 SteamDB 当周周销榜第 3。开发为 Questing Goose Studio，发行 tinyBuild。玩法是在反乌托邦空间站里制造、交易、走私来路不明的货物，在派系之间周旋，同时应付不断上涨的租金，最终买下这间店铺。",
+     "analysis": "",
+     "recommendation": "《深空当铺》上线不到一周 75 万份，Steam 周销第三",
+     "game_ref": "Probably Stolen",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Probably Stolen",
+      "genre": "模拟经营 / 赛博朋克 / 角色扮演 / 独立",
+      "developer": "Questing Goose Studio（发行：tinyBuild）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "¥49.50",
+      "release_date": "已发售 · 2026年10月28日",
+      "steam_rating": "8,297 条评价",
+      "steam_url": "https://store.steampowered.com/app/4348910/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4348910/d9938fa30354c82c9549c17864145e3e92e23847/header_alt_assets_3_schinese.jpg?t=1793711740",
+      "youtube_video": null,
+      "description": "【核心玩法】把「当铺」做成一套带道德压力的经营循环：进货、鉴定、制造、交易，还要走私来路不明的货物。玩家要在空间站的几方派系之间周旋，同时面对一项硬性支出——不断上涨的租金。目标是用利润彻底买下这间店铺，租赁关系由此转成资产关系，这也是整局游戏最明确的长期目标。\n\n【循环结构】短周期是「收一件货 → 判断来源与风险 → 定价卖出」，长周期是「交付给谁、得罪哪个派系、能不能撑到下个月租金」。这类结构的关键在于取舍：高价往往意味着更高的风险与更复杂的关系后果，玩家每一次成交都在给自己未来的选项做减法。\n\n【美术与气质】反乌托邦空间站 + 赛博朋克当铺，题材本身就带黑色幽默：你经营的不是普通商店，而是别人不敢明着卖的东西。店铺模拟的「柜台视角」天然适合做信息不对称玩法——顾客知道货的来路，你不知道。\n\n【市场表现】上线不到一周 75 万份，¥49.50 的定价下拿到 8,297 条评价，并冲进 SteamDB 当周全球周销第 3，对一个 Questing Goose Studio 这样的小团队来说属于超预期开局，tinyBuild 的发行能力也起了作用。\n\n【优势】一句话卖点清楚（赛博朋克当铺 + 可能是赃物）；经营循环自带道德张力；租金压力提供了明确的失败条件，不会变成无风险的挂机模拟。\n\n【不足】店铺模拟的通病是中期容易退化成数值堆叠，派系关系如果只停留在对话选项层面，会浪费「货的来路」这个最有意思的设定；内容量能否撑住 75 万份带来的长尾口碑，是接下来两个月的关键。\n\n【综合评价】2026 年又一款用「道德灰度 + 小店经营」跑出来的独游样本：玩法不新，但题材和定价踩得很准，适合作为小团队做差异化题材的参考案例。",
+      "why_notable": "上线不到一周 75 万份、Steam 周销第 3，再次证明「一句话说得清的题材 + 小店经营循环」在 50 元档的爆发力",
+      "pcu": "未进今日 Steam Top500（24h 峰值低于 2 万）",
+      "current_players": "未进今日 Top500",
+      "estimated_sales": "约 75 万份（上线不到一周，Niche Gamer 报道）",
+      "gi_summary": "「赛博朋克空间站当铺」套「店铺模拟 + 道德取舍」，Questing Goose Studio 开发、tinyBuild 发行，¥49.50"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "0xMarioNawfal · AI 开发",
+     "tags": [
+      "AI开发",
+      "合作防御",
+      "Godot"
+     ],
+     "title": "零游戏开发经验用 Claude Code + Godot 做出四人合作防御游戏，Steam 免费 demo 已上线",
+     "en_title": "Someone with very little game dev experience used Claude Code with Godot to build 100 Bodies in the Grass",
+     "full_text": "Someone with very little game dev experience used Claude Code with Godot to build 100 Bodies in the Grass, a 4 player co-op game where you defend a Vietnamese village from the Yuan army during the 1287 Mongol invasion, and a free demo is now live on Steam.\n\n→ Claude Code could test, iterate and implement Godot’s open documentation, which made the plain text engine a strong fit\n→ Architecture came out stable instead of the buggy mess he expected\n→ Weak spot is animation: Claude with Blender handles small cleanups but should not be relied on for anything complex\n→ Free demo available on Steam\n\nReddit: https://t.co/bMizwHEbZl",
+     "link": "https://x.com/RoundtableSpace/status/2117470574201188458",
+     "author": "RoundtableSpace",
+     "date": "2026-11-03",
+     "likes": 152,
+     "views": 51271,
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2117429549709357057/img/6re1319DVQ5lK6XS.jpg",
+      "video_url": "https://x.com/RoundtableSpace/status/2117470574201188458/video/1"
+     },
+     "summary": "开发者（Steam 页面署名为 Hipfire）用 Claude Code 配合 Godot 做出《100 Bodies in the Grass》：4 人合作波次防御，背景是 1287 年元朝第三次入侵越南，玩家守住村庄。作者总结：Godot 的文档是开放纯文本，Claude Code 能直接读取、测试、迭代，因此特别适配；架构比预期稳定；弱项是动画，Claude 配合 Blender 只能做小幅修补，复杂动画仍要人来。Steam 页面已上线，标注 2027 年 Q1，免费 demo 现在可玩。推文 5.1 万浏览。",
+     "analysis": "",
+     "recommendation": "零经验用 Claude Code + Godot 做出四人合作防御游戏，免费 demo 已上线",
+     "game_ref": "100 Bodies in the Grass",
+     "enrichment": {
+      "game_name": "100 Bodies in the Grass",
+      "genre": "合作波次防御 / Roguelike / 等距视角 ARPG",
+      "developer": "Hipfire",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未定价（demo 免费）",
+      "release_date": "2027年第一季度",
+      "steam_rating": "demo 阶段，暂无评价",
+      "steam_url": "https://store.steampowered.com/app/5357660/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5357660/bf04baaf41ef794d147d870b26e578ab8076a01a/header.jpg?t=1793464761",
+      "youtube_video": null,
+      "description": "【核心玩法】4 人合作的波次防御，背景设定在 1287 年元朝第三次入侵越南，玩家要守住一座村庄。Steam 页面把类型写成「Roguelike + 塔防/英雄防御 + 等距视角 ARPG 战斗」的混合体：既有需要布置的防线，也有直接操作的近战与技能，波次之间做构筑取舍。\n\n【为什么值得单独看】它的开发过程比游戏本身更有信息量。作者几乎没有游戏开发经验，用 Claude Code 配合 Godot 从零做出可玩 demo，并总结了三条：Godot 的开放文档是纯文本，模型能直接读、直接改、直接测；最终代码架构比预期稳定；动画是明显短板，Claude 加 Blender 只能做小幅修补，复杂动作仍要人来做。\n\n【题材选择】1287 年越南抗元的设定在独立游戏里很少见，本地视角 + 村庄保卫战天然适合做「以少打多」的波次结构，也让美术与叙事有一个明确的锚点，而不是又一个泛泛的奇幻防御。\n\n【产能与门槛】这类案例真正的意义是给出了一条可复制的路径：引擎选文档开放、结构简单的（Godot），把重复性的编码、测试、迭代交给模型，人负责玩法判断和美术底线。它不证明「AI 能替代开发者」，但证明了「一个人 + 模型」能把验证成本压到很低。\n\n【风险】demo 阶段的完成度和 2027 Q1 的档期之间还有距离；等距 ARPG 战斗的手感、四人联机的同步、以及长期内容量，都是模型帮不上太多忙的部分，也是这类项目最容易掉队的地方。\n\n【综合评价】把它当作一个「AI 辅助开发的可行性样本」来看更有价值：题材有辨识度，玩法组合合理，而开发路径本身就是 2026 年最值得记录的一种生产方式。",
+      "why_notable": "零开发经验 + Claude Code + Godot 做出可玩 demo，验证了「模型读开放文档、人管玩法与美术」这条低成本路径",
+      "pcu": "demo 阶段，未进 PCU 榜",
+      "current_players": "demo 阶段",
+      "estimated_sales": "暂无数据（demo 免费）",
+      "gi_summary": "「1287 抗元村庄保卫战」套「四人合作波次防御」，Hipfire 开发，demo 已上 Steam"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Leafborn · 开发日志",
+     "tags": [
+      "动作",
+      "性能优化",
+      "愿望单"
+     ],
+     "title": "《Leafborn》把树叶数量做成愿望单 KPI：1.5 万愿望单 = 1.5 万片叶子",
+     "en_title": "we hit 15,000 wishlists, so we optimized the game and raised it to 15,000",
+     "full_text": "saw a rblox game in development with a Leaf character like ours\n\nheard they had 1400 leaves and it lagged so much they’re dropping to 73\n\nwe had 10,000. then we hit 15,000 wishlists, so we optimized the game and raised it to 15,000🎉\n\nso one leaf per wishlist 🥬 https://t.co/PGCrQN7Czt",
+     "link": "https://x.com/LeafbornGame/status/2117361753528951171",
+     "author": "LeafbornGame",
+     "date": "2026-11-02",
+     "likes": 627,
+     "views": 41175,
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2117359549434757120/img/ULhp7Y_fOlWWBHwr.jpg",
+      "video_url": "https://x.com/LeafbornGame/status/2117361753528951171/video/1"
+     },
+     "summary": "独立团队 Green Cat Games 的动作游戏《Leafborn》，主角是由成千上万片树叶构成的生命体。团队称最初用 10,000 片叶子，愿望单到 15,000 时优化了性能并把叶子数提到 15,000，「一片叶子换一个愿望单」；对比另一个 Roblox 项目 1,400 片叶子就卡到要降到 73 片。Steam 免费 demo 已上线，推文 4.1 万浏览、627 赞。",
+     "analysis": "",
+     "recommendation": "《Leafborn》：愿望单涨到 1.5 万，主角叶子也从 1 万加到 1.5 万片",
+     "game_ref": "Leafborn",
+     "enrichment": {
+      "game_name": "Leafborn",
+      "genre": "快节奏动作 / 冒险 / 独立",
+      "developer": "Green Cat Games",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "免费 demo",
+      "release_date": "demo 已上线 · 2026年10月16日（正式版待定）",
+      "steam_rating": "demo 阶段，暂无评价",
+      "steam_url": "https://store.steampowered.com/app/5156680/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5156680/f923db0824e681bab9f5094e9d8bb00773663ca3/header_schinese.jpg?t=1793741415",
+      "youtube_video": null,
+      "description": "【核心玩法】玩家操控一个由成千上万片树叶构成的生命体，在浮空岛屿之间高速移动、战斗，通过发现新能力与变换形态来推进。Steam 页面给出的对手是正在榨取世界生命能量的 Nulls 机器人，整体是快节奏动作而非慢节奏探索。\n\n【技术卖点】真正让它在信息流里被记住的是树叶本身：每片叶子都是独立的可视元素，数量直接和性能预算挂钩。团队公开的对比很直观——另一个 Roblox 项目 1,400 片叶子就卡到要把数量降到 73，而他们把叶子做到了 10,000。\n\n【营销设计】愿望单到 15,000 时，团队做了性能优化并把叶子数提到 15,000，「一片叶子换一个愿望单」。这是一个成本不高但很聪明的传播结构：数字本身可验证、可追踪，也给玩家一个「我的愿望单真的改变了游戏」的参与感，适合在社交平台上被反复引用。\n\n【美术与气质】由树叶构成的主角天然带「破碎又重组」的视觉张力，高速移动时叶片的飘散与聚拢就是最好的动效，这类视觉在短视频里非常占便宜。\n\n【风险】把性能预算绑定在一个可增长的视觉指标上，本质是把技术债写进了营销承诺：愿望单继续涨，叶子数还跟不跟？demo 阶段的优化手段（LOD、实例化）在正式版的复杂场景里未必撑得住。\n\n【综合评价】一个把「技术难点」直接翻译成「传播素材」的正面样本，比起抽象地讲优化，玩家更容易记住「1.5 万愿望单 = 1.5 万片叶子」这句话。",
+      "why_notable": "把性能优化做成可追踪的愿望单 KPI，是 2026 年小团队最低成本的传播设计之一",
+      "pcu": "demo 阶段，未进 PCU 榜",
+      "current_players": "demo 阶段",
+      "estimated_sales": "暂无数据（demo 免费）",
+      "gi_summary": "「成千上万片树叶构成的主角」套「浮空岛高速动作」，Green Cat Games 开发，免费 demo 已上线"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Niche Gamer · 新游公布",
+     "tags": [
+      "Roguelite",
+      "蒸汽朋克",
+      "2027"
+     ],
+     "title": "《HellPunk: Purgatorium》：蒸汽朋克地狱 + 背包网格构筑的 Roguelite",
+     "en_title": "HellPunk: Purgatorium combines steampunk hell with inventory-based builds",
+     "full_text": "HellPunk: Purgatorium combines steampunk hell with inventory-based builds: https://t.co/AvXk9tpwtS https://t.co/ny6NRVaXSt",
+     "link": "https://x.com/nichegamer/status/2117337151742341282",
+     "author": "nichegamer",
+     "date": "2026-11-02",
+     "likes": 19,
+     "views": 3252,
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2117337124538032129/pu/img/nGu67jFqN40z6lzG.jpg",
+      "video_url": "https://x.com/nichegamer/status/2117337151742341282/video/1"
+     },
+     "summary": "Niche Gamer 报道《HellPunk: Purgatorium》：把蒸汽朋克地狱和「背包/网格式构筑」结合起来的 Roguelite。Steam 页面显示由 Urban Oasis 开发与发行，标注 2027 年第一季度，玩法是在塔里推进、给装备分配网格空间来形成 Build。推文 3,252 浏览。",
+     "analysis": "",
+     "recommendation": "《HellPunk: Purgatorium》：蒸汽朋克地狱里的背包构筑 Roguelite",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Niche Gamer · 新游更新",
+     "tags": [
+      "生存恐怖",
+      "复古",
+      "demo"
+     ],
+     "title": "复古恐怖《BECROWNED》更新 demo：VHS 时代的超现实黑色讽刺",
+     "en_title": "Retro horror game BECROWNED gets an updated demo",
+     "full_text": "Retro horror game BECROWNED gets an updated demo: https://t.co/6jbcp3BrQ4 https://t.co/3V9hCOdKIW",
+     "link": "https://x.com/nichegamer/status/2117632940867719285",
+     "author": "nichegamer",
+     "date": "2026-11-03",
+     "likes": 7,
+     "views": 815,
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWNX73xWkAAW9PA.jpg"
+     },
+     "summary": "Niche Gamer 报道复古恐怖游戏《BECROWNED》更新了 demo。Steam 页面显示由 13th Street Studio 开发、Top Hat Studios 发行，标注 2027 年第一季度：非线性生存恐怖，灵感来自 VHS 时代的超现实黑色讽刺与 Grindhouse 电影气质，玩家扮演 Richard Torrance，在工业废墟与一个悲剧性的幻想王国之间切换。",
+     "analysis": "",
+     "recommendation": "《BECROWNED》：VHS 超现实恐怖，更新 demo",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "LeftOver · 独立发售",
+     "tags": [
+      "轨道射击",
+      "街机",
+      "Steam"
+     ],
+     "title": "《閃攻機人アスラ》街机风 3D 轨道射击，主打 80–90 年代手感",
+     "en_title": "80〜90年代アーケードゲームへのリスペクトとオマージュを込めた、スピードと爽快感あふれる3Dアーケードスタイル・レールシューティング！",
+     "full_text": "80〜90年代アーケードゲームへのリスペクトとオマージュを込めた、\nスピードと爽快感あふれる3Dアーケードスタイル・レールシューティング！\n✨『閃攻機人アスラ - ASURA THE STRIKER -』好評発売中！✨\n🎮 https://t.co/XilPyY55Qr\n#Steam #3Dシューティング #レールシューター #インディーゲーム https://t.co/64zPv3Szmd",
+     "link": "https://x.com/LeftOver1985/status/2117028922881622497",
+     "author": "LeftOver1985",
+     "date": "2026-11-01",
+     "likes": 1468,
+     "views": 52077,
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2027962550508498944/img/83nzgxPSNtc8rxuR.jpg",
+      "video_url": "https://x.com/LeftOver1985/status/2117028922881622497/video/1"
+     },
+     "summary": "日本独立团队 LeftOver 的《閃攻機人アスラ - ASURA THE STRIKER -》，致敬 80–90 年代街机的 3D 轨道射击：Energy Shot、Shining Knuckle，以及可以减缓时间的 Lightning Over Drive。Steam 页面显示 2025 年 4 月 23 日发售，¥46.40，153 条评价。推文 5.2 万浏览、1,468 赞。",
+     "analysis": "",
+     "recommendation": "《閃攻機人アスラ》：80–90 年代街机味的 3D 轨道射击",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Charcher · 赛季更新",
+     "tags": [
+      "Roblox",
+      "赛季更新",
+      "宠物"
+     ],
+     "title": "《PokéBonk》第三赛季 11 月 4 日开启：加入第二世代与新地图",
+     "en_title": "PokéBonk Season 3 is coming.",
+     "full_text": "PokéBonk Season 3 is coming.\n\nGen 2, new content, new maps, and much more. \"Pokebonkin\" begins on November 4th.\n\nAre you ready to catch them all? https://t.co/40GxsrIDXc",
+     "link": "https://x.com/ImCharcher/status/2117610656744579379",
+     "author": "ImCharcher",
+     "date": "2026-11-03",
+     "likes": 443,
+     "views": 17440,
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2117610090597388288/img/zfeE3BS1DrWw7YSE.jpg",
+      "video_url": "https://x.com/ImCharcher/status/2117610656744579379/video/1"
+     },
+     "summary": "Charcher 宣布《PokéBonk》第三赛季于 11 月 4 日开启，加入第二世代内容、新地图等更新。推文 1.7 万浏览、443 赞，属于 Roblox 平台上宝可梦题材项目的常规赛季运营。",
+     "analysis": "",
+     "recommendation": "《PokéBonk》第三赛季 11 月 4 日开跑，加入第二世代",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unreal Engine · 版本发布",
+     "tags": [
+      "Unreal Engine",
+      "AI工作流",
+      "Web平台"
+     ],
+     "title": "Unreal Engine 5.9 下周进 Preview：AI 工作流改进，Web 成为目标平台",
+     "en_title": "It's official: 5.9 is happening and it's coming in Preview next week.",
+     "full_text": "It’s official: 5.9 is happening and it's coming in Preview next week. \n\nIt’ll include improved AI workflows, web as a target platform, rendering and animation updates, plus more. \n\nWe’re making a few changes in 5.9 branch over on GitHub, and more will come in over the next few days. More details coming soon!",
+     "link": "https://x.com/UnrealEngine/status/2117603978489811012",
+     "author": "UnrealEngine",
+     "date": "2026-11-03",
+     "likes": 1286,
+     "views": 66574,
+     "media": null,
+     "summary": "Epic 官方宣布 Unreal Engine 5.9 将于下周进入 Preview：改进 AI 工作流，把 Web 列为目标平台，并带来渲染与动画更新。5.9 分支在 GitHub 上已经开始改动，未来几天还会陆续合入，更多细节稍后公布。推文 6.7 万浏览。",
+     "analysis": "「Web 作为目标平台」是这次最需要留意的变化——它意味着 UE 想把手游/买量小游戏的交付链路也纳入自己的管线，直接对上 Unity 的 WebGL 生态。AI 工作流的具体形态还没公布，但如果 5.9 就把 AI 辅助接进编辑器主流程，2027 年的团队默认工具链会明显不同。",
+     "recommendation": "UE 5.9 下周进 Preview：加 AI 工作流，Web 成为目标平台",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "UEFEST 东京现场 · 爆料",
+     "tags": [
+      "Unreal Engine",
+      "Verse",
+      "技术路线"
+     ],
+     "title": "UEFEST 东京现场：UE6 拟废除蓝图与 C++ Gameplay Framework，逻辑全走 Verse",
+     "en_title": "UE6 ・Blueprintは廃止 ・C++ Gameplay Frameworkも廃止 ・ゲームロジックはすべてVerseで書く",
+     "full_text": "UE6\n\n・Blueprintは廃止\n・C++ Gameplay Frameworkも廃止\n・ゲームロジックはすべてVerseで書く\n\nAIを前提としているので、書くという表現すら違う気がする。\n時代が大きく変わる！\n\n#UE6 #UEFESTTOKYO26",
+     "link": "https://x.com/s_ssk13/status/2117440671502176763",
+     "author": "s_ssk13",
+     "date": "2026-11-03",
+     "likes": 427,
+     "views": 44973,
+     "media": null,
+     "summary": "参会者 佐々木瞬 在 UEFEST TOKYO 26 后称 UE6 的方向是：蓝图（Blueprint）废止、C++ Gameplay Framework 废止、游戏逻辑全部用 Verse 编写，整体以 AI 为前提。另一位韩国开发者给出相同描述：蓝图与 C++ 均取消，只保留 Verse 与 Python。Epic 尚未发布正式公告，上述为现场爆料，需等官方确认。",
+     "analysis": "如果落地，影响的是整条工具链和人才结构：蓝图是过去十年 UE 降低门槛的核心，C++ 框架是大量项目的地基，而 Verse 面向的是并发生成逻辑与 AI 协作。对团队最现实的动作是先把 5.9 的 AI 工作流吃透，不要现在就开始迁移——但招聘与长期技术选型可以把「Verse 可读性」列进评估项。",
+     "recommendation": "UEFEST 现场爆料：UE6 砍掉蓝图与 C++ 框架，逻辑全走 Verse"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI 从「用不用」变成「怎么管」**\n10 月 Steam 新游 49.9% 申报使用 AI 生成内容，2024 年 1 月还只有 1.7%；itch.io 一边删掉数 TB 的 AI slop，一边把「No AI」做成搜索过滤项。供给端已经饱和，平台开始把「是否使用 AI」变成可检索、可排除的字段。\n\n**两端同时出现结构性信号**\n《上古卷轴6》定名 Sentinel 并放出预告，但依然没有档期；Remedy 靠 Control Resonant 把三季度营收拉高 226%，近半玩家是系列新人。周销榜上《影之刃零》登顶，两部小体量独游（《深空当铺》《Moon Sweepers》）挤进前四。\n\n**引擎路线开始重写**\nUE 5.9 下周进 Preview，明确加 AI 工作流并把 Web 作为目标平台；UEFEST 东京现场传出 UE6 将废除蓝图与 C++ Gameplay Framework、逻辑全部改用 Verse——如果落地，影响的是未来五年的工具链与人才结构。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
