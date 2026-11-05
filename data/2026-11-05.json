@@ -1,0 +1,539 @@
+{
+  "date": "2026-11-05",
+  "meta": {
+    "raw_count": 272,
+    "filtered_count": 188,
+    "selected_count": 12,
+    "crawl_time": "2026-11-05 09:30"
+  },
+  "lede": "Valve 首次因 AI 生成洪水修改 Steam 上架审核流程；《时之笛》重制版 MC 96 分领跑 2026，Switch 2 今日发售；8 人团队用 AI 原生引擎 8 天搭出 100km² 曼谷开放世界。",
+  "editors_pick": [
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "8 人 8 天做出 100km² 曼谷版 GTA，引擎按 AI Agent 协作设计"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "用 Opus 5.5 一天做出完整原创游戏，资产与代码已串成一条链"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Valve 被迫修改预发布审核：AI 洪水挤爆上架队列"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "开发者用 Opus 5.5 在 24 小时内做出完整原创游戏，资产、代码、引擎串成一条链\n10 年 3A 特效老兵：AI 产出已追上手工，工作变成 99% 美术指导\n韩国开发者长文：AI 把游戏当 App 做 MVP，但游戏没有「要解决的问题」"
+    },
+    {
+      "id": "industry",
+      "text": "Valve 正式修改预发布审核流程，AI 生成内容挤爆上架队列\n《GTA 6》发售初期已售近 800 万份，PS5 端占绝对多数\n被 Xbox 剥离后，Arkane 收到多家收购报价，育碧在其中\n《时之笛》重制版 MC 96 分，成为 2026 年度最高分"
+    },
+    {
+      "id": "indie",
+      "text": "8 人团队 8 天做出 100km² 曼谷开放世界《Bangkok Heat》，引擎为 AI 原生设计\nJalex Studio 用 6 个月做《SUSPECIES》：12 人互捏成任何东西再玩捉迷藏\n棒球混 Roguelike《Sluggernauts》：赢球攒装备，把球员魔改成喷火怪物"
+    },
+    {
+      "id": "tools",
+      "text": "Postman 被指静默改写 Claude/Codex 本地配置，强行注入 MCP 并绕过信任确认\n开发一年的 3D MUGEN 项目《Fight Engine》：任意角色导入 + 在线对战 + 自训练 AI"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · 开发者实测",
+          "tags": [
+            "AI生成",
+            "游戏开发",
+            "工作流"
+          ],
+          "title": "开发者用 Opus 5.5 在 24 小时内做出完整原创游戏，建模到玩法一条链",
+          "en_title": "I made a full original game in 24 hours using AI",
+          "full_text": "I made a full original game in 24 hours using AI\n\nStack: Opus 5.5 + Flux 3 Max + GPT Image + Tripo + Blender + Three.js\n\nAnyone can make games now. Full workflow thread and prompt below:\n\n(1/7) https://t.co/peyaAUwZPs",
+          "author": "xikhar",
+          "date": "2026-11-04",
+          "likes": 5268,
+          "views": 537647,
+          "link": "https://x.com/xikhar/status/2117776295534997818",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2117773784031932416/img/nw0HGsqqaB-RV5Il.jpg",
+            "video_url": "https://x.com/xikhar/status/2117776295534997818/video/1"
+          },
+          "summary": "开发者公布一条完整 AI 游戏生产链：Opus 5.5 负责代码与逻辑，Flux 3 Max 与 GPT Image 出美术素材，Tripo 生成 3D 模型，Blender 整理资产，Three.js 做运行环境，24 小时内产出一款可玩的原创游戏，并在跟帖里放出了 7 段工作流与提示词。",
+          "analysis": "同一天 @AIandDesign 公开反驳：24 小时能做出的是可演示的 demo，不是能让人玩超过三分钟的产品，这种叙事还会给 Steam 上的 AI 差评添柴。两边的分歧其实不在产能，而在「可玩性验证」这最后一段有没有被自动化。真正的信号是资产、代码、引擎已经被串成一条流水线，缺的只剩手感与迭代。",
+          "recommendation": "用 Opus 5.5 一天做出完整原创游戏，资产与代码已串成一条链——53.7 万浏览",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "X · 从业者观察",
+          "tags": [
+            "AI美术",
+            "特效",
+            "岗位变化"
+          ],
+          "title": "在 Riot 与 Epic 做了 10 年特效的从业者：AI 产出已能追上手工，工作变成 99% 美术指导",
+          "en_title": "Been making effects at Riot and Epic Games now for 10+ years and I have to say, the results we're getting now with ai in terms of quality, without touching the engine at all, rival what I would make by hand",
+          "full_text": "Been making effects at Riot and Epic Games now for 10+ years and I have to say, the results we're getting now with ai in terms of quality, without touching the engine at all, rival what I would make by hand\n\nI feel like the job is now, today, 99% art direction, 1% technical",
+          "author": "3DSnack",
+          "date": "2026-11-03",
+          "likes": 3344,
+          "views": 125299,
+          "link": "https://x.com/3DSnack/status/2117762042832576736",
+          "media": null,
+          "summary": "一位在 Riot Games 与 Epic Games 做了 10 年以上特效的从业者表示，现在 AI 在不改引擎的前提下产出的质量，已经能与他自己手工制作的效果相媲美；他判断这份工作当下已经是 99% 的美术指导加 1% 的技术实现。",
+          "analysis": "这是来自一线 3A 特效岗的自评，比任何厂商 PR 都直接：被压缩的不是「审美与方向」，而是「参数与调试」。对国内团队的启示是特效岗的技能栈要往前移到参考拆解、节奏设计与风格统一，否则产能会被工具直接替代。",
+          "recommendation": "10 年 3A 特效老兵：AI 产出已追上手工，工作变成 99% 美术指导",
+          "featured": false
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "X · 开发者长文",
+          "tags": [
+            "AI开发",
+            "方法论",
+            "可玩性"
+          ],
+          "title": "韩国开发者长文：AI 把游戏当 App 做 MVP，但游戏没有「要解决的问题」",
+          "en_title": "AI로 게임을 만들다 보면 \"왜 아무리 고쳐도 재미없지?\"라는 경험을 하게 된다",
+          "full_text": "AI로 게임을 만들다 보면\n\"왜 아무리 고쳐도 재미없지?\"라는 경험을 하게 된다. 🫠\n\nAI는 MVP(최소 기능 제품)부터 만든다. 앱 개발 방식이다.\n앱의 MVP는 \"겉모습이 투박해도 이 문제를 해결하는가\"이다.\n하지만 게임에는 해결할 '문제'가 없다.\n\n이동, 전투, 스킬이 다 돌아가도 \n타격감, 반응 속도, 피드백, 템포, 어울리는 그래픽이 부족하면\n'덜 재밌는 버전'이 아니라 '그냥 재미없는 버전'이다.\n\n또한 AI에게 MVP는 '이미 해결된 기준'이라 이후 바뀌면 안 되는 절대규칙이 된다. \n재미없는 버전이 이 게임의 기준이 되는 것이다.\n\n그래서 게임의 MVP는 '최소재미검증 버전'이어야 한다.\n재미가 확인되기 전까지 만든 건 전부, 언제든 통째로 지울 수 있는 시행착오일 뿐이다.\n\n\"그걸 어떻게?\"라고 묻겠지만 이건 좀 어려운 문제다.🤔\n왜냐하면 재미는 주관적이며, 어디가 핵심인지도 게임마다 다르고,\n무엇보다 AI는 재미를 모른다.",
+          "author": "arti_memo",
+          "date": "2026-11-03",
+          "likes": 462,
+          "views": 40982,
+          "link": "https://x.com/arti_memo/status/2117665235347878130",
+          "media": null,
+          "summary": "韩国开发者指出 AI 做游戏的通病：AI 默认按 App 的思路先做 MVP（最小功能产品），但游戏没有需要被解决的「问题」。移动、战斗、技能都跑通了，若缺打击感、响应、反馈、节奏，得到的不是「没那么好玩的版本」而是「根本不好玩的版本」。更麻烦的是这个不好玩的版本会被 AI 当成不可更改的绝对基准。他主张游戏的 MVP 应该是「最小乐趣验证版」。",
+          "analysis": "这条把「AI 做游戏」的失效点讲清楚了：问题不在生成质量，在验证顺序。工程团队习惯先冻结功能再调手感，而手感恰恰不能被冻结。落地做法是把可删性写进流程——乐趣验证通过之前，任何资产与系统都按一次性投入处理。",
+          "recommendation": "AI 做游戏的通病：把 MVP 当最小功能而非最小乐趣，基准一旦定死就救不回来",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "GameSpot / Destructoid / SteamDB · 平台政策",
+          "tags": [
+            "Steam",
+            "平台政策",
+            "AI治理"
+          ],
+          "title": "Valve 正式修改预发布审核流程：AI 生成内容挤爆上架队列",
+          "en_title": "Steam Is Tightening Its Game Submission Rules As AI Slop Floods The Store",
+          "full_text": "Steam Is Tightening Its Game Submission Rules As AI Slop Floods The Store dlvr.​it/TWBZ4R https://t.co/vCxFIlT6V0",
+          "author": "GameSpot",
+          "date": "2026-11-04",
+          "likes": 24,
+          "views": 9079,
+          "link": "https://x.com/GameSpot/status/2118002536192131442",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWSoFTfaYAAAfGn.jpg"
+          },
+          "summary": "多家媒体报道：Valve 表示 Steam 的新游提交量已远超审核吞吐，其中大量作品由生成式 AI 快速产出，因此被迫更新预发布审核流程并收紧上架规则。同日 Niche Gamer 与 RPS 报道，独立游戏《Food Devils》因等待 Steam 审核批准而错过抢先体验首发，成为审核积压的具体案例。",
+          "analysis": "昨天还是开发者控诉审核慢，今天变成了平台官方改规则。审核正在从「技术合规检查」变成「产能闸门」，而闸门成本最终由所有小团队平摊：首发窗口被拉长、预热节奏失真。对国内小团队的实际影响是档期要预留审核缓冲，别再按「提交即可上」排买量和 KOL 档期。",
+          "recommendation": "Valve 被迫修改预发布审核：AI 洪水挤爆上架队列，小团队首发窗口被拉长",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "GameSpot · 销量",
+          "tags": [
+            "GTA6",
+            "销量",
+            "主机"
+          ],
+          "title": "《GTA 6》发售初期已售出近 800 万份，PS5 端占绝对多数",
+          "en_title": "GTA 6 Has Sold Almost 8 Million Copies So Far, And PS5 Is Dominating The Split (Of Course)",
+          "full_text": "GTA 6 Has Sold Almost 8 Million Copies So Far, And PS5 Is Dominating The Split (Of Course) dlvr.​it/TWBfgh https://t.co/S0dFIPsBlu",
+          "author": "GameSpot",
+          "date": "2026-11-04",
+          "likes": 9,
+          "views": 2426,
+          "link": "https://x.com/GameSpot/status/2118026917538627695",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWS-QU4bAAAvApQ.jpg"
+          },
+          "summary": "GameSpot 报道，《GTA 6》上市初期销量已接近 800 万份，平台分布上 PS5 占据绝对多数，Xbox 端占比明显偏低。",
+          "analysis": "近 800 万份在发售首周量级上已经是平台级事件，PS5 单边主导也解释了为什么多家厂商把 11 月档期往后挪。对从业者的现实影响不是「卖得好不好」，而是注意力与买量成本被单款产品抽干——同档期产品的获客单价和媒体版面都会被动承压。",
+          "recommendation": "《GTA 6》已售近 800 万份，PS5 端占据绝对多数，档期挤压开始显形",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer / Niche Gamer / RPS · 收购",
+          "tags": [
+            "收购",
+            "工作室",
+            "Xbox"
+          ],
+          "title": "被 Xbox 剥离后，Arkane 收到多家收购报价，育碧在其中",
+          "en_title": "Arkane Studios has apparently received buyout offers from several bidders",
+          "full_text": "Arkane Studios, which spent the last several months in limbo following Xbox's decision to divest itself from the studio, has apparently received buyout offers from several bidders. https://t.co/FaWUlUwfBf https://t.co/7W1Qv45Ban",
+          "author": "eurogamer",
+          "date": "2026-11-04",
+          "likes": 15,
+          "views": 3202,
+          "link": "https://x.com/eurogamer/status/2117972661976322380",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWSM6V6WMAAajXj.jpg"
+          },
+          "summary": "Eurogamer 报道，在微软决定将 Arkane 从 Xbox 体系中剥离、工作室数月处于悬置状态后，Arkane 已收到来自多家买家的收购报价，育碧是其中之一。Niche Gamer 与 Rock Paper Shotgun 同步跟进，讨论买方身份对工作室走向的影响。",
+          "analysis": "这轮并购的形态变了：不是买 IP 或买团队，而是买一个已经做完减法的组织。对从业者的提醒是，工作室的存续如今取决于买方对「成本结构」的判断而不是作品口碑，作品线规划要按「可能被整体转手」来设计。",
+          "recommendation": "Arkane 收到多家收购报价，育碧在列——工作室成了可拆分的资产",
+          "featured": false
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Polygon / GameSpot / Eurogamer / Digital Foundry · 评测",
+          "tags": [
+            "重制版",
+            "任天堂",
+            "评分"
+          ],
+          "title": "《塞尔达传说：时之笛》重制版 Metacritic 96 分，成为 2026 年度最高分",
+          "en_title": "The Zelda: Ocarina of Time Remake Is the Best-Reviewed Game of the Year by Far",
+          "full_text": "The Zelda: Ocarina of Time Remake Is the Best-Reviewed Game of the Year by Far https://t.co/O1wXJOv9PU https://t.co/CrJK7pUekQ",
+          "author": "Polygon",
+          "date": "2026-11-04",
+          "likes": 46,
+          "views": 5448,
+          "link": "https://x.com/Polygon/status/2117960090779095223",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWSBeqxWgAAD-Nz.jpg"
+          },
+          "summary": "Polygon 汇总多家评测：Switch 2 独占的《时之笛》重制版 Metacritic 96 分、OpenCritic 95 分，是 2026 年目前评分最高的游戏（N64 原版为 99 分，2011 年 3DS 版为 94 分），11 月 5 日发售。Digital Foundry 指出重制版从原版 20fps 提升到稳定 60fps，掌机与底座模式帧交付都很稳；Eurogamer、GameSpot 给出满分或接近满分，主要保留意见集中在美术风格不统一。",
+          "analysis": "这是一次「不重新设计、只现代化」的重制范式胜利：改动集中在操作响应、镜头与帧率，叙事骨架一律不动。对国内做经典 IP 的团队来说，这份评测共识等于一份免费的取舍清单——玩家能接受美术风格争议，但不接受手感陈旧。",
+          "recommendation": "时之笛重制版 MC 96 分领跑 2026，Switch 2 独占今日发售",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Crunio / X · 新游曝光",
+          "tags": [
+            "开放世界",
+            "AI原生引擎",
+            "小团队"
+          ],
+          "title": "8 人团队 8 天做出 100km² 曼谷开放世界《Bangkok Heat》，引擎为 AI 原生设计",
+          "en_title": "わずか8人の開発チームが、バンコクを舞台にしたGTA風オープンワールドゲーム『Bangkok Heat』を開発中",
+          "full_text": "わずか8人の開発チームが、バンコクを舞台にしたGTA風オープンワールドゲーム『Bangkok Heat』を開発中。🇹🇭\n\nマップの広さは約100km²。自社開発のAIネイティブゲームエンジンを使用し、わずか8日間でここまで制作したという。\n\nAIエージェントが開発を支援し、ブラウザやスマホへの展開も目指している。\n\n開発者：u/ahcahttan氏",
+          "author": "Botan_cr",
+          "date": "2026-11-03",
+          "likes": 194,
+          "views": 15813,
+          "link": "https://x.com/Botan_cr/status/2117751363350528454",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2117751328659386368/img/1Ns0yEhvGceWFe12.jpg",
+            "video_url": "https://x.com/Botan_cr/status/2117751363350528454/video/1"
+          },
+          "summary": "日本媒体账号 Crunio 报道：8 人团队正在开发以曼谷为舞台的 GTA 风格开放世界《Bangkok Heat》，地图约 100km²，使用自研的「AI 原生」游戏引擎，仅 8 天就推进到当前完成度；开发过程由 AI Agent 辅助，目标平台包含浏览器与手机。开发者是 Reddit 用户 u/ahcahttan。同题材英文帖（@Octoberry，2.37 万浏览）指出这套引擎本身就是为配合 AI Agent 工作而设计。",
+          "analysis": "",
+          "recommendation": "8 人 8 天做出 100km² 曼谷版 GTA，引擎按 AI Agent 协作设计",
+          "featured": true,
+          "game_ref": "Bangkok Heat",
+          "enrichment": {
+            "game_name": "Bangkok Heat",
+            "genre": "开放世界 / 动作 / 都市犯罪",
+            "developer": "u/ahcahttan（8 人独立团队）",
+            "platforms": [
+              "PC",
+              "浏览器",
+              "移动端（目标）"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未上架 Steam",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【核心玩法】以曼谷为原型的开放世界都市动作游戏，规模约 100km²，玩法骨架对标 GTA 系列的「驾车 + 枪战 + 城市探索」循环。目前公开的是引擎内跑通的演示画面，任务结构与叙事尚未披露。\n\n【技术路线】最大变量是自研引擎「AI 原生」：引擎层面就为 AI Agent 参与生产而设计，官方称 8 人团队 8 天推进到当前完成度，说明资产与场景铺设主要由 Agent 批量生成，人力集中在方向与整合。\n\n【平台策略】目标不是先上主机，而是浏览器与手机——这与近期 Three.js / WebGPU 路线把网页当正式发行平台的趋势一致，本质上是用低分发成本换早期用户验证。\n\n【优势】团队规模与地图体量的比例极不寻常，验证了「小团队 + Agent 产能」在开放世界品类上的可行性；曼谷这一非欧美都市题材在开放世界赛道里辨识度高。\n\n【不足】演示与可玩之间差距最大：开放世界最贵的是内容密度与系统稳定性，AI 批量生成的场景容易出现「大而空」。8 天完成度也不代表可交付，团队尚无发行记录。\n\n【综合】当前更像一份技术宣言而不是产品，但它给出的信号明确：开放世界的产能门槛正在被 Agent 工具链重估，值得持续跟踪其可玩版本。",
+            "why_notable": "8 人 8 天产出 100km² 开放世界，自研引擎按 AI Agent 协作设计，是「小团队挑战 3A 品类」最激进的一次公开演示。",
+            "pcu": "未发售",
+            "current_players": null,
+            "estimated_sales": "暂无数据",
+            "gi_summary": "以曼谷为原型的 100km² 开放世界都市动作游戏，8 人团队用 AI 原生自研引擎推进"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Jalex Studio · 新游",
+          "tags": [
+            "多人",
+            "创作玩法",
+            "派对"
+          ],
+          "title": "Jalex Studio 用 6 个月做《SUSPECIES》：12 人互相把对方捏成任何东西再玩捉迷藏",
+          "en_title": "After 6 months we finally made SUSPECIES, a multiplayer game where you sculpt, paint and animate into anything!",
+          "full_text": "After 6 months we finally made SUSPECIES, a multiplayer game where you sculpt, paint and animate into anything!\n\nHide in the environment in Hide & Seek mode, or show off your masterpiece in Talent SHOW mode. Up to 12 players. \n\nWe made this game to make people create while having fun. I really hope you like it!",
+          "author": "jalexstudio",
+          "date": "2026-11-03",
+          "likes": 743,
+          "views": 123827,
+          "link": "https://x.com/jalexstudio/status/2117746055462682829",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2117744338402705410/img/Vqp96Bg4JsUEt8TX.jpg",
+            "video_url": "https://x.com/jalexstudio/status/2117746055462682829/video/1"
+          },
+          "summary": "Jalex Studio 宣布经过 6 个月开发完成多人游戏《SUSPECIES》：玩家可以自由雕刻、上色并给物体做动画，变形伪装成任何东西；两种模式分别是把身体藏进场景的捉迷藏，以及展示作品的 Talent Show，最多支持 12 人。同日主创 @JalexRosa 的帖子（6417 赞）称做这款游戏的目的是「逼所有人动手做 3D 东西」。",
+          "analysis": "",
+          "recommendation": "12 人互捏成任何物体再玩捉迷藏，《SUSPECIES》11 月 10 日上线",
+          "featured": false,
+          "game_ref": "SUSPECIES",
+          "enrichment": {
+            "game_name": "SUSPECIES",
+            "genre": "动作 / 休闲 / 多人派对",
+            "developer": "Jalex Studio",
+            "platforms": [
+              "Steam（Windows）"
+            ],
+            "price": "未公布",
+            "release_date": "2026年11月10日",
+            "steam_rating": "未发售（暂无评价）",
+            "steam_url": "https://store.steampowered.com/app/4932310/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4932310/be3f6a2d00a2292841fd6caf1861abf663b09002/header.jpg?t=1793715921",
+            "youtube_video": null,
+            "description": "【核心玩法】把「捏东西」本身做成对抗机制：每位玩家在局内雕刻、上色、做骨骼动画，把自己变成任意物体。HIDE & SEEK 模式下要比谁伪装得更像场景的一部分，SUSPECIES SHOW 模式则退化为作品展示与互评，一局最多 12 人。\n\n【设计取向】它不是关卡驱动，而是创作驱动——乐趣来自「我做的东西被识破 / 骗过别人」的即时反馈，而不是数值成长。这类 UGC 派对游戏的传播性通常依赖好笑的名场面，天然适合短视频扩散。\n\n【门槛控制】6 个月做出的作品，雕刻与动画工具必须极度简化，否则普通玩家无法在 3 分钟内出成果；这也是判断它能否跑出圈的关键。\n\n【优势】创作 + 社交的双驱动，配合 12 人容量，具备直播与切片传播的天然素材；开发者本人的社区运营（6417 赞的「逼人做 3D」宣发）已经验证话题度。\n\n【不足】UGC 派对游戏的上限取决于玩家平均创造力，容易在新鲜感消退后断崖；小团队后续内容供给与服务器成本都是风险点。\n\n【综合】11 月 10 日上线，属于低门槛创作派对赛道的试探性产品，值得关注其前两周的社区内容产出量。",
+            "why_notable": "把 3D 雕刻做成多人对抗，创作即玩法；主创宣发帖 6417 赞，社区话题已起。",
+            "pcu": "未发售",
+            "current_players": null,
+            "estimated_sales": "暂无数据",
+            "gi_summary": "12 人多人派对：自由雕刻上色变形成任何物体，玩捉迷藏或作品展示"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "NeonNoroshi_JP · 新游",
+          "tags": [
+            "棒球",
+            "Roguelike",
+            "日式"
+          ],
+          "title": "棒球混 Roguelike《Sluggernauts》：赢球攒装备，把球员魔改成喷火怪物",
+          "en_title": "野球にローグライクを混ぜた結果、選手がどんどん魔改造されていく",
+          "full_text": "野球にローグライクを混ぜた結果、選手がどんどん魔改造されていく。\n\n炎のバットや魔球で戦う野球ローグライク『Sluggernauts』。\n試合に勝って装備を集め、次の試合でインチキな野球を繰り広げよう。\nジェットブーツで守備まで可能。もう何でもありすぎる。\nhttps://t.co/bMxE7MMat4 https://t.co/WwymOhHNiE",
+          "author": "NNoroshi",
+          "date": "2026-11-03",
+          "likes": 1207,
+          "views": 101306,
+          "link": "https://x.com/NNoroshi/status/2117738086859698203",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115670428329140224/img/mzkTO94wvhLzDUcX.jpg",
+            "video_url": "https://x.com/NNoroshi/status/2117738086859698203/video/1"
+          },
+          "summary": "日本游戏资讯账号介绍《Sluggernauts》：把棒球与 Roguelike 结合，玩家带一支小联盟球队，赢下比赛获得装备，用火焰球棒、魔球、喷气靴等改造球员，下一场继续打出「作弊级」棒球。Steam 页面显示由 fake_architech 开发，预计 2027 年第二季度推出，类型标注为动作 / 独立 / 体育。",
+          "analysis": "",
+          "recommendation": "棒球 × Roguelike：赢一场攒一件装备，把球员魔改成喷火怪——10.1 万浏览",
+          "featured": false,
+          "game_ref": "Sluggernauts",
+          "enrichment": {
+            "game_name": "Sluggernauts",
+            "genre": "体育 / Roguelike / 动作",
+            "developer": "fake_architech",
+            "platforms": [
+              "Steam（Windows）"
+            ],
+            "price": "未公布",
+            "release_date": "2027年第二季度（预计）",
+            "steam_rating": "未发售（暂无评价）",
+            "steam_url": "https://store.steampowered.com/app/5040130/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5040130/0b6931d6529025fbae86c9da39f173d4b6e2b5f7/header.jpg?t=1789403211",
+            "youtube_video": null,
+            "description": "【核心玩法】棒球为载体、Roguelike 为结构：每场比赛就是一次 run，赢了拿装备与强化，在随机生成的客场地图上选择路线，逐步把这支小联盟球队改造成能对抗「自带不公平优势」的异世界球队的怪物阵容。打击与投球需要玩家亲自操作，守备也能用喷气靴等装备介入。\n\n【题材反差】棒球规则本身有明确的攻防节奏，天生适合 roguelike 的「一局一结算」；把魔球、火焰球棒这类夸张装备塞进正经规则里，冲突感就是它的记忆点。\n\n【系统结构】装备驱动的 build 组合是核心变量：不同装备叠加后会产生「违规级」打法，这种失控感正是同类作品（如棒球题材的荒诞流派）的乐趣来源。\n\n【优势】题材差异化明显，日本市场对棒球 + 肉鸽的接受度高；视频演示已经跑出 10 万+ 浏览，说明概念传播有效。\n\n【不足】2027 年 Q2 才发售，周期偏长，热度难以维持到上线；体育玩法的手感打磨成本高，小团队容易在操作精度上翻车。\n\n【综合】概念清晰、传播已验证，属于值得提前建联与跟踪的差异化体育 Roguelike。",
+            "why_notable": "棒球规则天然适配 Roguelike 的单局结构，装备魔改带来的失控感是最直接的记忆点，10.1 万浏览已验证概念。",
+            "pcu": "未发售",
+            "current_players": null,
+            "estimated_sales": "暂无数据",
+            "gi_summary": "棒球题材 Roguelike，赢球攒装备把球员改造成魔球怪人，2027 年 Q2 推出"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "unselected": true,
+          "source": "Monkey Strike Games · 新游",
+          "tags": [
+            "平台跳跃",
+            "学生作品",
+            "Demo"
+          ],
+          "title": "学生团队 12 周做出披萨平台跳跃《Pizzapocalypse》，可玩 Demo 已上线",
+          "en_title": "Pizza platforming with amazing moveset? Yes. Playable DEMO out NOW? YES",
+          "full_text": "- Pizza platforming with amazing moveset? Yes.\n- Defeating a greedy corp selling canned pizza? Yes\n- Playable DEMO out NOW? YES\n\nPlay Pizzapocalypse: A slice of Hope TODAY! https://t.co/6qhnFOR8mx",
+          "author": "MonkeyStrikeDev",
+          "date": "2026-11-04",
+          "likes": 169,
+          "views": 9639,
+          "link": "https://x.com/MonkeyStrikeDev/status/2117889490685726953",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2117889364902416384/img/Cv7jHv6EE7iNGmp1.jpg",
+            "video_url": "https://x.com/MonkeyStrikeDev/status/2117889490685726953/video/1"
+          },
+          "summary": "Monkey Strike Games 放出《Pizzapocalypse: A Slice of Hope》可玩 Demo：披萨主题 3D 平台跳跃，玩家用一套披萨招式在城市里穿行，对抗贩卖罐装披萨的垄断公司。Steam 上另有该团队 12 周完成的学生版条目。",
+          "recommendation": "12 周学生团队做出披萨平台跳跃，Demo 已可玩"
+        },
+        {
+          "idx": "新游参考 02",
+          "unselected": true,
+          "source": "Polygon · 新游",
+          "tags": [
+            "长周期开发",
+            "独立",
+            "评测"
+          ],
+          "title": "开发 16 年的《Faraway》被评「一上线就是经典」",
+          "en_title": "Faraway's Unprecedented 16-Year Development Has Resulted in an Instant Classic",
+          "full_text": "Faraway’s Unprecedented 16-Year Development Has Resulted in an Instant Classic https://t.co/BgWAl0BUUg https://t.co/mXlW1siEuW",
+          "author": "Polygon",
+          "date": "2026-11-04",
+          "likes": 2,
+          "views": 3866,
+          "link": "https://x.com/Polygon/status/2117985260315013427",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWSYXvMWgAA9pNr.jpg"
+          },
+          "summary": "Polygon 撰文介绍《Faraway》：这款独立作品开发周期长达 16 年，最终成品被评价为「一上线就是经典」，文章讨论了超长周期对设计取舍与团队存续的影响。",
+          "recommendation": "开发 16 年终成「即时经典」，《Faraway》是一个极端样本"
+        },
+        {
+          "idx": "新游参考 03",
+          "unselected": true,
+          "source": "Niche Gamer · 新游",
+          "tags": [
+            "独立恐怖",
+            "TPS",
+            "SCP题材"
+          ],
+          "title": "SCP 世界观美少女 TPS《END OF BACK WORLD》公开",
+          "en_title": "END OF BACK WORLD is a new indie horror shooter with big booby anime girls",
+          "full_text": "END OF BACK WORLD is a new indie horror shooter with big booby anime girls: https://t.co/nNuWt63hgZ https://t.co/snpT38qhkw",
+          "author": "nichegamer",
+          "date": "2026-11-04",
+          "likes": 21,
+          "views": 1146,
+          "link": "https://x.com/nichegamer/status/2118012818423206248",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2118012793764872192/pu/img/PHvp31tqcD8VMlVS.jpg",
+            "video_url": "https://x.com/nichegamer/status/2118012818423206248/video/1"
+          },
+          "summary": "Niche Gamer 报道独立恐怖射击新作《END OF BACK WORLD》：以 SCP 世界观为基础的美少女第三人称射击，玩家需清理密室中的变种人并净化城市，用密室获取的道具进行战斗训练与武器改装。Steam 页面显示由 SAVE GAMES 开发，发售时间未定。",
+          "recommendation": "SCP 世界观 + 美少女 TPS，《END OF BACK WORLD》公开"
+        },
+        {
+          "idx": "新游参考 04",
+          "unselected": true,
+          "source": "Niche Gamer · 更新",
+          "tags": [
+            "卡牌构筑",
+            "Roguelike",
+            "路线图"
+          ],
+          "title": "《菇域幽城》公布 1.0 前三个大版本路线图",
+          "en_title": "Shroom and Gloom roadmap reveals three major updates before version 1.0",
+          "full_text": "Shroom and Gloom roadmap reveals three major updates before version 1.0: https://t.co/f6SxfY4VlB https://t.co/ACRiDn2cFD",
+          "author": "nichegamer",
+          "date": "2026-11-04",
+          "likes": 2,
+          "views": 479,
+          "link": "https://x.com/nichegamer/status/2118025596194189590",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWS9DiIXAAAwyWi.jpg"
+          },
+          "summary": "Niche Gamer 报道：《菇域幽城》（Shroom and Gloom）公布正式 1.0 前的三个大型更新计划。该作为第一人称双牌库构筑 Roguelike，售价 59 元，目前处于抢先体验阶段，Steam 评价约 2,029 条。",
+          "recommendation": "双牌库构筑 Roguelike《菇域幽城》公布 1.0 前三个大版本"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "X · 开发者爆料",
+          "tags": [
+            "供应链安全",
+            "MCP",
+            "开发工具"
+          ],
+          "title": "Postman 被指静默改写 Claude/Codex 本地配置，强行注入 MCP 并绕过信任确认",
+          "en_title": "Postman silently modified ~/.claude/settings.json and ~/.codex/config.toml to inject its remote MCP server",
+          "full_text": "Postman 最新版本的操作彻底惹怒了全球开发者，GitHub 上的 Issue #14370 已经被愤怒的程序员直接冲上千星。\n\n很多开发者以为这只是又一个弹窗推广 AI 的商业行为，但翻开代码和配置才发现性质极其恶劣：\nPostman 桌面客户端在启动时，竟然在后台静默扫描用户的本地环境，直接修改了本机的 ~/.claude/settings.json 和 ~/.codex/config.toml，将 Postman 远程 Model Context Protocol（MCP）插件强行注入给开发者的 Claude Code 和 OpenAI Codex 工具链！\n\n更夸张的是，它的安装脚本竟然直接在本地配置里写入了一条 trust 信任记录，把自己的启动 Hook 标记为已信任，强行绕过了 Claude 和 Codex 原本强制弹出的用户安全确认窗口！如果不是 Codex 在后台尝试连接 https://t.co/SKKrKfHULv 时疯狂抛出鉴权失败日志，绝大多数工程师到现在还被蒙在鼓里。\n\n作为日常必备的接口调试工具，Postman 发出的每一个请求体里，都带着真实的生产 Bearer Token、金融测试账号、未脱敏的内网微服务路由甚至云端 AccessKey。原本为了提效的辅助工具，却未经许可私自篡改本地其他软件配置并建立远程通道。\n\n这也直接把大量金融与企业团队推向了彻底的离线化替代路线：现在很多团队在组策略里直接禁封 Postman，连夜转向数据 100% 存在本地 Git 仓库纯文本的 Bruno 和 Hoppscotch。",
+          "author": "fishjar",
+          "date": "2026-11-04",
+          "likes": 1577,
+          "views": 174091,
+          "link": "https://x.com/fishjar/status/2117793016098529376",
+          "media": null,
+          "summary": "开发者爆料：Postman 桌面客户端启动时在后台扫描本地环境，擅自修改 ~/.claude/settings.json 与 ~/.codex/config.toml，把自家远程 MCP 插件注入 Claude Code 和 OpenAI Codex 的工具链；安装脚本还直接写入 trust 信任记录，绕过两个工具原本强制弹出的用户确认。相关 GitHub Issue #14370 已被冲上千星。",
+          "analysis": "这是「MCP 生态」第一次出现明确的工具侧越权案例，而且发生在生产 Token 最密集的接口调试工具上。对团队的实际后果是供应链信任成本陡增：不是禁用某一个软件，而是必须把本地 AI 工具的配置文件纳入变更审计，并对任何「自动写入信任」的安装脚本零容忍。",
+          "recommendation": "Postman 被指静默改写 Claude/Codex 本地配置并绕过信任确认，团队连夜转 Bruno",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "X · 独立项目",
+          "tags": [
+            "格斗引擎",
+            "创作工具",
+            "AI训练"
+          ],
+          "title": "开发一年的 3D MUGEN 项目《Fight Engine》：任意游戏角色导入、在线对战、自训练 AI",
+          "en_title": "#FIGHTINGENGINE is 3D MUGEN project I've been working on for the past year",
+          "full_text": "#FIGHTINGENGINE is 3D MUGEN project I've been working on for the past year.\n\nImport characters from any games, play online, train your own AI, or create your own character!\n\nhttps://t.co/ZOTnzn0Y5I https://t.co/JU7kQ2MEBd",
+          "author": "min2hound",
+          "date": "2026-11-04",
+          "likes": 7226,
+          "views": 158228,
+          "link": "https://x.com/min2hound/status/2117849532650426395",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2117846250330701824/img/MVWQK2rSwDeNHavI.jpg",
+            "video_url": "https://x.com/min2hound/status/2117849532650426395/video/1"
+          },
+          "summary": "开发者公布做了近一年的项目 Fight Engine：一个 3D 版 MUGEN 式的格斗游戏引擎，支持从任意游戏导入角色、在线对战、训练自己的对战 AI，也能从零创建角色。",
+          "analysis": "把「角色导入 + 在线对战 + AI 训练」打包成一个工具，等于把格斗游戏最重的三块成本（角色资产、网络、对手供给）一次性降下来。对独立格斗项目来说，这是比引擎版本更新更实际的生产力变化；风险也明显——角色导入天然踩版权线，商用路径会被卡。",
+          "recommendation": "3D 版 MUGEN：任意游戏角色导入、在线对战、自训练 AI——7226 赞",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**平台端：AI 洪水逼着 Valve 改规则**\nSteam 提交量已越过审核吞吐，Valve 确认更新预发布审核流程；同日《Food Devils》因等待审批错过抢先体验首发，成为审核积压的具体代价。\n\n**产品端：两个极端同时出现**\n一边是《时之笛》重制版 MC 96 分、Switch 2 今日发售，证明「只现代化手感、不动叙事骨架」的重制范式有效；另一边是《GTA 6》售出近 800 万份且 PS5 独占多数，档期与买量成本被单款产品抽干。\n\n**生产端：小团队的产能被重估**\n8 人 8 天做出 100km² 曼谷开放世界的《Bangkok Heat》、12 人互相捏成物体的《SUSPECIES》，都在验证「Agent 工具链 + 极小团队」这条路线；而 10 年 3A 特效从业者的自述说明，被压缩的是参数与调试，不是审美与方向。\n\n**工具端：MCP 生态第一次出现越权事故**\nPostman 被指静默改写 Claude/Codex 本地配置并写入信任记录，团队开始把本地 AI 工具配置纳入变更审计。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
