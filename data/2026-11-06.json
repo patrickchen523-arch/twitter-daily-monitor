@@ -1,0 +1,543 @@
+{
+ "date": "2026-11-06",
+ "meta": {
+  "raw_count": 200,
+  "filtered_count": 137,
+  "selected_count": 12,
+  "crawl_time": "2026-11-06 09:30"
+ },
+ "lede": "日本开发者全程用 AI 做完一款游戏：AI 是电饭煲，做得无聊是我的责任；ROB RUN 单服 5000 名真人玩家、警察与罪犯全由玩家扮演，次日 PCU 冲到 4.37 万。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 1,
+   "hook": "日本开发者全程用 AI 做完一款游戏：AI 是电饭煲，做得无聊是我的责任"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "ROB RUN：单服 5000 名真人玩家、警察和罪犯全由玩家扮演——次日 PCU 4.37 万"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "「给我举一个真正值得玩的 AI 游戏」——这条挑战帖收到 201 条开发者回复\n日本开发者全程用 AI 做完一款游戏：AI 是电饭煲，做得无聊是我的责任——8.5 万浏览\n中文开发者 bobo：一键生成出来的都是「大路货」，AI 生图走过的路游戏会再走一遍"
+  },
+  {
+   "id": "industry",
+   "text": "BioWare 关闭后 1,662 人联署请愿加拿大政府出资买回工作室与 IP——已过国会受理门槛\nPlayStation 季度营业利润同比 +83%，PSN 月活 1.27 亿，硬件销量却跌了 35%\nSwitch 2 半年卖 649 万台同比降 37%，任天堂把全年预期下调 16.9% 至 1650 万台\nSteam 一周上架 1,656 款新游，日增约 200 款，其中四成连一条评价都拿不到"
+  },
+  {
+   "id": "indie",
+   "text": "ROB RUN：单服 5000 名真人玩家、警察和罪犯全由玩家扮演——次日 PCU 4.37 万\nFresco：把神庙壁画做成可玩的 2D 关卡层，3D/2D 切换一次说清玩法——3.5 万浏览\nQueen's Domain：复古硬核动作 RPG，发售 5 天卖出 10 万份——定价 16.99 美元"
+  },
+  {
+   "id": "tools",
+   "text": "Quixel Megascans 全库免费，Fab 资产 11 月 12 日前全部更新——UE 项目的美术地基成本归零\nSteam 官方文档：愿望单数量并不是推荐排序的直接因素——别把发行预算压在刷数字上"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 开发者观点",
+     "tags": [
+      "AI生成",
+      "质量争议",
+      "游戏开发"
+     ],
+     "title": "「AI 生成的游戏全是难看的垃圾」：一条挑战帖收到 201 条开发者回复",
+     "en_title": "AI-generated games are mostly ugly, boring, unplayable slop. Everyone keeps saying AI is changing game development, so where are the good games? Prove me wrong. Show me ONE AI-generated game that's actually worth playing.",
+     "full_text": "AI-generated games are mostly ugly, boring, unplayable slop.\n\nEveryone keeps saying AI is changing game development, so where are the good games?\n\nProve me wrong. Show me ONE AI-generated game that's actually worth playing.",
+     "author": "eshlox",
+     "date": "2026-11-04",
+     "likes": 426,
+     "views": 38026,
+     "link": "https://x.com/eshlox/status/2118101556264350135",
+     "media": null,
+     "summary": "开发者 Przemysław Kołodziejczyk 公开质疑 AI 游戏的实际质量：所谓 AI 正在改变游戏开发，但好游戏在哪里？他要求对方举出一个真正值得玩的 AI 生成游戏来反驳自己。帖子发布后收到 201 条回复、3.8 万浏览，成为当天 AI 游戏争论的中心。",
+     "analysis": "这条帖子的价值在于它把争论变成可验证的标准，而不是情绪。就在前一天，另一条「24 小时用 AI 做出完整原创游戏」的演示拿了 200 万浏览——可玩、可传播，但离「愿意花 20 小时」仍有距离。两边的分歧其实不在 AI 能不能做出东西，而在「做出来」与「做完」之间那段没人愿意支付的打磨成本。",
+     "recommendation": "「给我举一个真正值得玩的 AI 游戏」——这条挑战帖收到 201 条开发者回复",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 开发者实践",
+     "tags": [
+      "AI生成",
+      "独立开发",
+      "日本"
+     ],
+     "title": "日本开发者全程用 AI 做完一款游戏：AI 是电饭煲，无聊的话是我的责任",
+     "en_title": "「ＡＩでゲームを作る」ということについて、ゲーム屋の自分なりの実験と解答がこれである。どこからどこまでも徹底的にＡＩを使い倒した。そして、どこからどこまでも徹底的にオレのゲームである。",
+     "full_text": "「ＡＩでゲームを作る」ということについて、ゲーム屋の自分なりの実験と解答がこれである。\nどこからどこまでも徹底的にＡＩを使い倒した。\nそして、\nどこからどこまでも徹底的にオレのゲームである。\nだってオレが作ってるんだもん。\n「ＡＩでゲームを作るなんて」という意見は、10年もすれば炊飯ジャーや電子レンジに大騒ぎした昭和の人々と何も変わらんようになると見ている。\n要するにまず人間の側に「何を表現したいか」があるべきで、「なくてもそれらしいものが作れてしまう」のはＡＩの責任ではない。表現したい何かのない人間がボンクラなだけと感じた。\nつまり、このゲームがしょーもなければ、それもオレのせいでオレがボンクラでしょーもない。\n遊んでみてくれ。\nＡＩは、組んでみて久々に手応えを感じた相手だ。\nなんたって無限にやりあって、付き合ってくれる。\nオレが仕事でどれだけしつこいか、知ってる人は知ってるだろう。",
+     "author": "zolge1",
+     "date": "2026-11-05",
+     "likes": 635,
+     "views": 84558,
+     "link": "https://x.com/zolge1/status/2118144241977450813",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2118140948995796992/img/-1hgZBGKGAYur-2S.jpg",
+      "video_url": "https://x.com/zolge1/status/2118144241977450813/video/1"
+     },
+     "summary": "日本游戏开发者ゾルゲ市蔵 公布自己完全用 AI 制作的游戏，并给出立场：把「用 AI 做游戏」当成稀奇事，十年后会和当年为电饭煲、微波炉大惊小怪的昭和一代没什么区别。他强调人类一侧首先要有「想表达什么」——「即使没有表达欲也能做出像样的东西」不是 AI 的责任，而是人的问题。",
+     "analysis": "他把评判标准落回到作者身上：如果这个游戏很无聊，那也是我的责任。这个说法比单纯站队有用得多。当执行门槛被 AI 抹平后，策划与创意岗位的价值反而被放大——产出速度不再是差异化来源，「要做什么、为什么这么做」才是。",
+     "recommendation": "日本开发者全程用 AI 做完一款游戏：AI 是电饭煲，做得无聊是我的责任——8.5 万浏览",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 中文开发者观点",
+     "tags": [
+      "AI生成",
+      "方法论",
+      "中文观点"
+     ],
+     "title": "「一键生成不是游戏制作方式」：中文开发者用 AI 生图史类比当前 AI 游戏热",
+     "en_title": "通过一个提示词让模型把整个游戏做完，这并不是游戏的制作方式。",
+     "full_text": "以下是给想做游戏的初学者看的，如果只是想做 AI slop，请略过。\n\n现在人人都想试着做游戏。看起来游戏是一个很好的自我表达载体，也是一种测试模型强度的能力。\n\n但我想提醒一句：通过一个提示词让模型把整个游戏做完，这并不是游戏的制作方式。\n\n这一点可以参考 AI 生图的发展。最开始模型生成的图片马马虎虎还能看，后来 MJ 的发展让图片生成变得很精美，再往后又处理了图片里的文字问题和真实性问题。\n\n进入这个阶段之后，图片生成后续的变化就很小了，因为它成了底层的一个能力——没人再炫耀这张图生成得多好看，而是关心它合不合适需求。\n\n游戏也一样。现在的一键生成游戏，让游戏好像很容易就能做出来，但这些问题最后也变成了合不合适的问题：因为能生成出来的都是“大路货”、很“大众”、很浅薄的玩法。真正的游戏是创新的，要问的是这个游戏是否真的表达了你的需求。",
+     "author": "BANGYANGYAO",
+     "date": "2026-11-05",
+     "likes": 12,
+     "views": 1721,
+     "link": "https://x.com/BANGYANGYAO/status/2118288302323163164",
+     "media": null,
+     "summary": "中文开发者 bobo 认为，把一句话变成整个游戏并不等于游戏制作。他以 AI 生图的发展轨迹作参照：模型从「勉强能看」到「精美」，再到解决图片里的文字与真实性问题，之后就很少再有质变——因为它变成了底层能力，没人再炫耀图生成得多好看，只关心合不合适需求。游戏正走在这条路的起点。",
+     "analysis": "「能生成的都是大路货」这句点到了核心：模型的输出分布决定了它天然倾向于产出最常见、最安全的玩法组合。真正的游戏需要创新，而创新无法从概率最高的解里长出来。对团队来说，AI 更适合当产能放大器，把创意决策交给模型会直接导致产品同质化。",
+     "recommendation": "中文开发者 bobo：一键生成出来的都是「大路货」，AI 生图走过的路游戏会再走一遍"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Rock Paper Shotgun · 行业",
+     "tags": [
+      "工作室关闭",
+      "产业政策",
+      "加拿大"
+     ],
+     "title": "BioWare 关闭引发国会请愿：1,662 人联署，要求政府出资买回工作室与 IP",
+     "en_title": "BioWare's closure represents an immense loss to and possibly a targeted attack on Canada's cultural legacy",
+     "full_text": "\"BioWare's closure represents an immense loss to and possibly a targeted attack on Canada's cultural legacy\" argues petition calling on Canadian government to step in https://t.co/RXgIYdjaE0",
+     "author": "rockpapershot",
+     "date": "2026-11-05",
+     "likes": 178,
+     "views": 3904,
+     "link": "https://x.com/rockpapershot/status/2118296515420586338",
+     "media": null,
+     "summary": "EA 关闭 BioWare 数周后，由 Brendan Routh 发起、温哥华 Kingsway 选区议员 Don Davies 认证的请愿书 e-7898 已收集 1,662 个有效签名，超过向加拿大众议院提交所需的 500 人门槛，后续将进入政府正式回应程序。请愿要求政府提供资金，帮助 BioWare 及其 IP 从 EA 独立，并称此次关闭是「对加拿大文化传承的巨大损失，甚至可能是针对性打击」。",
+     "analysis": "这是「工作室关闭」第一次被正式抬到文化产业政策层面：请愿书直接把 EA 的股权结构（沙特公共投资基金 PIF 与 Affinity Partners）写进了诉求。实际结果是政府出资回购的概率很低，但它把「外资并购导致本土创作能力流失」变成了可以在国会程序里讨论的议题。对任何面临产业集中度上升的市场，这套叙事都可能被复用。",
+     "recommendation": "BioWare 关闭后 1,662 人联署请愿加拿大政府出资买回工作室与 IP——已过国会受理门槛",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Destructoid · 财报",
+     "tags": [
+      "PlayStation",
+      "财报",
+      "硬件"
+     ],
+     "title": "PlayStation 季度营业利润同比 +83%：软件拉动，硬件销量反而跌 35%",
+     "en_title": "No disc, no buy? Not quite: PlayStation boasts profits in its latest quarterly earnings report, including an 83 percent increase in its operating income",
+     "full_text": "No disc, no buy? Not quite: PlayStation boasts profits in its latest quarterly earnings report, including an 83 percent increase in its operating income compared to the same period in 2025: the 3 months directly following its decision to end disc-based games https://t.co/Bu9MDhVujL",
+     "author": "destructoid",
+     "date": "2026-11-05",
+     "likes": 0,
+     "views": 1094,
+     "link": "https://x.com/destructoid/status/2118368458438033908",
+     "media": null,
+     "summary": "索尼 2027 财年第二季度（2026 年 7-9 月）游戏业务营业利润同比增长 83%。软件销售 +10%、第一方 +30%、游戏与网络服务收入 +9%，PSN 月活从 1.19 亿升至 1.27 亿；硬件销量同比下滑 35%。截至 9 月 30 日 PS5 累计售出 9,800 万台，索尼同时把游戏业务全年销售预期上调 6%。",
+     "analysis": "这是「停售实体盘」决定之后的第一个完整财季，结果说明网上的抵制口号没有传导到财报上。结构性信号更值得注意：收入越来越依赖软件与网络服务，硬件退化成纯粹的装机入口。对平台方而言，主机生命周期的盈利模型已经彻底从「卖机器」转向「卖内容与订阅」，这也解释了为什么硬件下滑 35% 仍能换来利润大涨。",
+     "recommendation": "PlayStation 季度营业利润同比 +83%，PSN 月活 1.27 亿，硬件销量却跌了 35%"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "PC Gamer · 财报",
+     "tags": [
+      "任天堂",
+      "Switch 2",
+      "销量"
+     ],
+     "title": "Switch 2 半年卖 649 万台同比降 37%，任天堂把全年预期下调至 1,650 万台",
+     "en_title": "Switch 2 sales dropped 37% this summer, mostly before the price hike hit; Nintendo now expects sales to slump 16.9% in console's second year",
+     "full_text": "Nintendo expects Switch 2 sales to slump 16.9% in its second year after slow summer https://t.co/5AeW3LriIU",
+     "author": "pcgamer",
+     "date": "2026-11-05",
+     "likes": 27,
+     "views": 9888,
+     "link": "https://x.com/pcgamer/status/2118311590776942950",
+     "media": null,
+     "summary": "任天堂 2026 年 4-9 月财报显示，Switch 2 售出 649 万台，较去年同期 1,036 万台减少 387 万台。公司把截至 2027 年 3 月的全年预期下调至 1,650 万台，同比下降 16.9%。硬件下滑的同时软件增长 18.8% 至 2,449 万份；9 月 1 日起主机售价上调至 500 美元，官方解释为「市场环境变化」。",
+     "analysis": "硬件降、软件涨，是主机进入第二年的标准曲线。真正需要观察的是假日季：售价上调 50 美元与《时之笛》重制发售这两个变量叠在一起，会决定这次下调是保守还是低估。对第三方开发者而言，装机增速放缓意味着 Switch 2 的窗口期比预期更短，早入场的边际收益在上升。",
+     "recommendation": "Switch 2 半年卖 649 万台同比降 37%，任天堂把全年预期下调 16.9% 至 1650 万台"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "X · 行业数据",
+     "tags": [
+      "Steam",
+      "供给侧",
+      "独立游戏"
+     ],
+     "title": "韩国开发者统计：Steam 一周上架 1,656 款新游，约四成连一条评价都拿不到",
+     "en_title": "저번 주 스팀에 출시된 게임이 1,656건이래요... 출시 물량이 많아지는만큼 출시 게임 중에 약 40%는 이용자 리뷰를 한 건도 얻지 못했다고 하는데",
+     "full_text": "저번 주 스팀에 출시된 게임이 1,656건이래요. 몇 주전에 최초로 하루 100개 페이스를 돌파했다는 이야기를 넘어서 1주일만에 하루 200개 페이스까지 올라왔답니다. 출시 물량이 많아지는만큼 출시 게임 중에 약 40%는 이용자 리뷰를 한 건도 얻지 못했다고 하는데, 이거 참 어지러운 판국입니다. https://t.co/8CrTuRvJTC",
+     "author": "maestrolee_kr",
+     "date": "2026-11-05",
+     "likes": 132,
+     "views": 11693,
+     "link": "https://x.com/maestrolee_kr/status/2118222298331418814",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWVvg7ebAAAiI6v.jpg"
+     },
+     "summary": "韩国开发者 maestrolee 引述统计：上周 Steam 上架新游 1,656 款。日上架量在数周前首次突破 100 款后，已进一步升到约 200 款/天。在供给量暴涨的同时，约 40% 的新游发布后没有获得任何一条用户评价。",
+     "analysis": "供给爆炸的直接后果是曝光位稀缺性上升：当每天有 200 款游戏争夺同一批推荐位，算法筛选门槛和玩家注意力会同步收紧。对独立团队来说，「把游戏做出来」不再是瓶颈，「被看见」才是。这也解释了为什么 Steam 的上架审核排队与 AI 内容治理会在同一周集中成为议题——平台侧的闸门是被供给量顶开的。",
+     "recommendation": "Steam 一周上架 1,656 款新游，日增约 200 款，其中四成连一条评价都拿不到"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Kefir / X · 新游上线",
+     "tags": [
+      "开放世界",
+      "犯罪沙盒",
+      "免费游玩"
+     ],
+     "title": "ROB RUN：Kefir 的免费开放世界犯罪 MMO，单服 5,000 人同日开启抢先体验",
+     "en_title": "ROB RUN is OUT in Early Access on Steam — Free-to-play open-world crime MMO. 5,000 players in one living world. Every cop & criminal is controlled by a real player.",
+     "full_text": "ROB RUN is OUT in Early Access on Steam\n\nFree-to-play open-world crime MMO\n\n- 5,000 players in one living world\n- Every cop & criminal is controlled by a real player\n- Create clans, assign roles & organize raids\n- Capture territories & wage gang wars\n- Rob banks, raid hideouts & evade police\n- High-risk PvP where you can lose everything\n- Build, upgrade & defend your hideout\n- Store loot, vehicles & gear at your base\n- Weekly server wipes reset world",
+     "author": "AerialZer0",
+     "date": "2026-11-04",
+     "likes": 4917,
+     "views": 573987,
+     "link": "https://x.com/AerialZer0/status/2118039250595959068",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2118039054558093312/img/SQx7MxlwpC7URGEo.jpg",
+      "video_url": "https://x.com/AerialZer0/status/2118039250595959068/video/1"
+     },
+     "summary": "ROB RUN 以抢先体验形式登陆 Steam，免费游玩。卖点是单一世界容纳 5,000 名玩家、所有警察与罪犯都由真人扮演，支持帮派分工、领地争夺、银行抢劫、藏身处建造与防守，服务器每周重置。推文获得 4,917 赞、57 万浏览。据 Steam 榜单，游戏上线次日 PCU 峰值达到 43,745。",
+     "analysis": "",
+     "recommendation": "ROB RUN：单服 5000 名真人玩家、警察和罪犯全由玩家扮演——次日 PCU 4.37 万",
+     "featured": true,
+     "game_ref": "ROB RUN",
+     "enrichment": {
+      "game_name": "ROB RUN",
+      "genre": "开放世界 / 犯罪沙盒 / MMO",
+      "developer": "Kefir",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "免费游玩",
+      "release_date": "已发售 · 2026年11月4日（抢先体验）",
+      "steam_rating": "抢先体验中，暂无足够评价",
+      "steam_url": "https://store.steampowered.com/app/4262460/ROB_RUN/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg?t=1793811654",
+      "youtube_video": null,
+      "description": "【核心玩法】ROB RUN 把生存沙盒那套「从一无所有到滚雪球」的结构搬进城市犯罪题材：单一服务器容纳 5,000 名玩家，所有警察与罪犯都由真人扮演，NPC 只是背景板。玩家从贫民窟起步，靠抢银行、洗劫据点、走私载具积累资产，同时躲开由真人玩家组成的警队。系统支持建立帮派、分配角色、组织突袭、占领地盘并发动帮派战争。\n\n【风险设计】主打高风险 PvP：死亡可能失去随身全部物资，藏身处要自建、升级与防守，战利品、载具和装备必须存放进基地。这套「输得起才敢玩」的经济压力是留存与劝退的双刃剑。\n\n【节奏控制】服务器每周重置，把滚雪球压回同一起跑线，避免早期玩家彻底锁死新人的生存空间，也让每一轮都重新产生内容。\n\n【美术与表现】写实向都市贫民窟风格，视觉重心放在脏乱环境与「阶级跃迁」的反差上。\n\n【优势】5,000 人同服加全真人执法，在当前犯罪沙盒里属于少见的规模；免费 + 抢先体验把入场门槛压到最低，首日 4.37 万 PCU 说明这套组合有效。\n\n【不足】抢先体验阶段的内容量与反作弊都未经检验；纯 PvP 经济对新手极不友好，开服期玩家流失往往就发生在前几小时。\n\n【综合】Kefir 相当于用 MMO 体量重做一遍 Rust 式社交博弈。题材与免费策略已经跑通第一步，真正的胜负手是外挂治理与经济平衡。",
+      "why_notable": "免费 + 单服 5000 人 + 全真人执法，上线次日 PCU 冲到 4.37 万，是本周最值得观察的犯罪沙盒实验",
+      "pcu": "43,745（2026-11-06 峰值）",
+      "current_players": null,
+      "estimated_sales": "免费游玩，无销量口径",
+      "gi_summary": "免费开放世界犯罪沙盒 MMO，单服 5,000 名真人玩家，警察与罪犯全部由玩家扮演"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "3Dgamedev / X · 新游曝光",
+     "tags": [
+      "动作冒险",
+      "古埃及",
+      "概念创新"
+     ],
+     "title": "Fresco：在古埃及壁画里当「画中人」，3D 探索与 2D 壁画穿行的双形态动作冒险",
+     "en_title": "An indie dev is making a game where you can literally play as Ancient Egyptian wall art. It's called Fresco.",
+     "full_text": "An indie dev is making a game where you can literally play as Ancient Egyptian wall art.\n\nIt's called Fresco.\n\n[🎮 Kelonia Games] https://t.co/fN4ZWRRd56",
+     "author": "unity3dvfx",
+     "date": "2026-11-03",
+     "likes": 696,
+     "views": 34656,
+     "link": "https://x.com/unity3dvfx/status/2117673684865339427",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2117673139672940544/img/jpElLAtiGeSZlDKo.jpg",
+      "video_url": "https://x.com/unity3dvfx/status/2117673684865339427/video/1"
+     },
+     "summary": "Kelonia Games 公布的《Fresco》把神庙壁画本身做成了关卡：玩家平时以 3D 视角扮演进入神庙的考古学家，遇到刻在石墙上的壁画时可以切换成画中的彩绘人物，在 2D 平面内穿行、解谜与战斗。推文获得 696 赞、3.5 万浏览。Steam 页面已建立，发售日未定。",
+     "analysis": "",
+     "recommendation": "Fresco：把神庙壁画做成可玩的 2D 关卡层，3D/2D 切换一次说清玩法——3.5 万浏览",
+     "featured": true,
+     "game_ref": "Fresco",
+     "enrichment": {
+      "game_name": "Fresco",
+      "genre": "动作 / 冒险 / 解谜",
+      "developer": "Kelonia Games",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4373620/Fresco/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4373620/7015006e99b59c6651036b98a9abea0e06cfac43/header.jpg?t=1771317475",
+      "youtube_video": null,
+      "description": "【核心玩法】《Fresco》把古埃及神庙的壁画变成真正的关卡层。玩家在 3D 视角下扮演进入神庙的考古学家，遇到刻在石墙上的壁画时可以「进入」画中，成为彩绘人物，在 2D 平面内移动、解谜与战斗，两个形态共享同一套空间叙事。\n\n【设计看点】这是把「画中世界」从美术概念做成机制的典型例子：2D 壁画不是贴图，而是可通行、可交互的独立关卡。形态切换本身即解谜手段——3D 里翻不过去的墙，在壁画里可能是一条通道，反之亦然。\n\n【题材】古埃及神庙、壁画与考古，是独立游戏中相当少见的文化母题，辨识度天然高于同质化的奇幻世界。\n\n【美术】以壁画质感为核心：2D 层需要保持手绘线条与褪色矿物颜料的一致性，3D 层则要做出「扫描出来的真实石壁」的重量感，两套渲染语言要在切换瞬间不打架。\n\n【优势】概念分极高，一段演示就能讲清玩法；双形态切换为关卡设计提供了大量现成的不对称结构。\n\n【不足】目前只有一段演示，战斗深度、解谜密度与切换节奏都未展示；Kelonia Games 是小团队，发售日未定，项目风险仍在早期。\n\n【综合】典型的「看演示就想玩」型概念作。成色取决于 2D/3D 切换是否真的承担玩法核心，而不是只在过场里表演一次。",
+      "why_notable": "把神庙壁画做成可玩的 2D 关卡层，3D/2D 双形态切换是今年辨识度最高的独立游戏概念之一",
+      "pcu": "未发售",
+      "current_players": null,
+      "estimated_sales": "暂无数据",
+      "gi_summary": "古埃及题材动作冒险，玩家可在 3D 神庙探索与 2D 壁画穿行之间切换形态"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Niche Gamer / X · 新游数据",
+     "tags": [
+      "复古RPG",
+      "硬核动作",
+      "销量"
+     ],
+     "title": "Queen's Domain：复古奇幻动作 RPG，发售 5 天销量突破 10 万份",
+     "en_title": "Retro RPG Queen's Domain sells over 100,000 copies within 5 days",
+     "full_text": "Retro RPG Queen’s Domain sells over 100,000 copies within 5 days: https://t.co/ZLOwbZkHNf https://t.co/hNo7PdDPAd",
+     "author": "nichegamer",
+     "date": "2026-11-05",
+     "likes": 11,
+     "views": 1115,
+     "link": "https://x.com/nichegamer/status/2118348770924523845",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWXi-zbXUAA6WN6.jpg"
+     },
+     "summary": "由 Freshly Baked Games 开发、Future Friends Games 发行的《Queen's Domain》于 10 月 30 日发售，5 天内销量突破 10 万份。游戏是复古奇幻题材的动作 RPG，主打硬核近战判定与以位移为核心的探索，Steam 现价 16.99 美元（-15%），已有 2,699 条评价。",
+     "analysis": "",
+     "recommendation": "Queen's Domain：复古硬核动作 RPG，发售 5 天卖出 10 万份——定价 16.99 美元",
+     "featured": true,
+     "game_ref": "Queen's Domain",
+     "enrichment": {
+      "game_name": "Queen's Domain",
+      "genre": "动作 / 冒险 / 复古 RPG",
+      "developer": "Freshly Baked Games LLC（发行：Future Friends Games）",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "$16.99（原价 $19.99，-15%）",
+      "release_date": "已发售 · 2026年10月30日",
+      "steam_rating": "2,699 条评价",
+      "steam_url": "https://store.steampowered.com/app/1799840/Queens_Domain/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1799840/1a209734951f53b019ec9fa03f835def14f2a968/header.jpg?t=1793628353",
+      "youtube_video": null,
+      "description": "【核心玩法】《Queen's Domain》是一款复古奇幻动作 RPG：玩家为寻找在神秘岛屿 Neasied 上失踪的父亲而踏上旅途，岛上邪教势力正在集结，沉睡的女王开始苏醒。战斗走「硬核近战」路线，强调精准攻防节奏与耐力管理，容错低，依赖背板与走位。\n\n【探索结构】地图围绕位移能力展开：获得新的移动手段后回头解锁旧区域，接近类银河城的结构，把「探索」而非「刷等级」当成主要推进动力。\n\n【美术】16-bit 复古奇幻风格，整体配色偏暗，怪物与场景设计带有宗教、民俗元素，与「邪教 + 沉睡女王」的叙事基调整体一致。\n\n【定价与发行】16.99 美元（原价 19.99，-15%）处于独立动作 RPG 的甜点价位；发行商 Future Friends Games 长期做小而美的动作类产品，渠道与节奏把控是这款游戏能快速起量的重要原因。\n\n【优势】发售 5 天破 10 万份，2,699 条 Steam 评价说明口碑基数已经成型；低价 + 高难度 + 复古美学在细分人群里穿透力强。\n\n【不足】硬核战斗对轻度玩家不友好，用户盘子有天花板；复古像素风在当下独立市场同质化严重，长期曝光要靠社区口碑而非美术辨识度。\n\n【综合】典型的口碑驱动型独立动作 RPG：没有大宣发，靠定价、难度与复古美学在两周内完成冷启动，是本月独立市场最稳的一匹黑马。",
+      "why_notable": "发售 5 天销量破 10 万份，低价 + 硬核复古动作的组合，是本月口碑驱动型独游的代表样本",
+      "pcu": "暂未进入 Steam Top 500 峰值榜",
+      "current_players": null,
+      "estimated_sales": "10 万份以上（发售 5 天，发行方披露）",
+      "gi_summary": "复古奇幻硬核动作 RPG，Freshly Baked Games 开发，发售 5 天销量破 10 万份"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "DUNK / X · 新游曝光",
+     "tags": [
+      "篮球",
+      "试玩",
+      "多人"
+     ],
+     "title": "DUNK：街头篮球对抗新作预告开放试玩，单条预告 6.8 万浏览",
+     "en_title": "word on the court is the playtest opens tomorrow",
+     "full_text": "word on the court is the playtest opens tomorrow 🤫 https://t.co/iuIZuQpt81",
+     "author": "DUNKthegame",
+     "date": "2026-11-04",
+     "likes": 1135,
+     "views": 68569,
+     "link": "https://x.com/DUNKthegame/status/2118024031152828631",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2117980918224760832/img/V3BYcO7aS3yGmGOY.jpg",
+      "video_url": "https://x.com/DUNKthegame/status/2118024031152828631/video/1"
+     },
+     "summary": "篮球题材新作《DUNK》放出预告，宣布试玩将于次日开放。预告以球场氛围与对抗片段为主，未披露具体平台与发售窗口。推文获得 1,135 赞、6.8 万浏览。",
+     "analysis": "",
+     "recommendation": "DUNK 预告开放试玩，单条预告 6.8 万浏览",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Samir / X · 新游更新",
+     "tags": [
+      "多人联机",
+      "跨平台",
+      "独立游戏"
+     ],
+     "title": "pokopia 多人模式大幅升级：Windows / Mac / iPhone 全平台互通",
+     "en_title": "pokopia multiplayer just got a HUGE upgrade — you can now play together on pc, with full crossplay across windows, mac and iphone. even android support is coming next",
+     "full_text": "pokopia multiplayer just got a HUGE upgrade\n\nyou can now play together on pc, with full crossplay across windows, mac and iphone\n\neven android support is coming next https://t.co/H4Tbkb9J4M",
+     "author": "samiirr_0",
+     "date": "2026-11-05",
+     "likes": 2875,
+     "views": 63122,
+     "link": "https://x.com/samiirr_0/status/2118302003067805731",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2118301968578043904/img/BdUUjSUl-YUv3lJJ.jpg",
+      "video_url": "https://x.com/samiirr_0/status/2118302003067805731/video/1"
+     },
+     "summary": "《pokopia》宣布多人模式升级，现已支持 PC 端与 Windows、Mac、iPhone 全平台互通联机，安卓版本随后跟进。推文获得 2,875 赞、6.3 万浏览。",
+     "analysis": "",
+     "recommendation": "pokopia 多人模式支持 PC / Mac / iPhone 全平台互通，安卓随后",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Richard LuminaVeil / X · 独立开发",
+     "tags": [
+      "独立开发",
+      "免费",
+      "反AI"
+     ],
+     "title": "LuminaVeil：不用 AI、没有融资、没有发行商，仍在 Steam 免费提供",
+     "en_title": "My game made with - no AI - no funding - no publisher. And it's still free on Steam. I just love making games and thanks to friends and fans it's now also available in German, Russian, Spanish, Chinese and Italian.",
+     "full_text": "My game made with \n - no AI\n - no funding\n - no publisher\n\nAnd it's till free on Steam.\n\nI just love making games and thanks to friends and fans it's now also available in German, Russian, Spanish, Chinese and Italian. https://t.co/E1zKzz2Q0P",
+     "author": "rori_richard_",
+     "date": "2026-11-04",
+     "likes": 2824,
+     "views": 67276,
+     "link": "https://x.com/rori_richard_/status/2118052201490731454",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2118052119513092096/img/UR9JaCg1WpibYD0s.jpg",
+      "video_url": "https://x.com/rori_richard_/status/2118052201490731454/video/1"
+     },
+     "summary": "开发者 Richard 介绍自己的独立游戏：没有使用 AI、没有融资、没有发行商，至今在 Steam 免费提供。依靠朋友与玩家帮忙，游戏已追加德语、俄语、西班牙语、中文与意大利语本地化。推文获得 2,824 赞、6.7 万浏览，是当天「反 AI 叙事」下最受关注的一条独立开发自述。",
+     "analysis": "",
+     "recommendation": "不用 AI、没有融资、没有发行商，LuminaVeil 至今在 Steam 免费——6700 赞",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Niche Gamer / X · 新游曝光",
+     "tags": [
+      "银河恶魔城",
+      "题材差异化"
+     ],
+     "title": "Among the Waves：「正统朋克」银河恶魔城，怀孕主角要管理胎儿的属性与情绪",
+     "en_title": "Among the Waves is an \"orthodoxpunk\" metroidvania with a preggo protagonist! Carry the divine child, bend the laws of physics while uncovering a mystery of cosmic proportions. Manage the baby's stats and mood as they affect the divine mother~",
+     "full_text": "Among the Waves is an \"orthodoxpunk\" metroidvania with a preggo protagonist!\n\nhttps://t.co/AOi7tlt9hh \n\nCarry the divine child, bend the laws of physics while uncovering a mystery of cosmic proportions. Manage the baby's stats and mood as they affect the divine mother~ https://t.co/rBJF9B3R9l",
+     "author": "nichegamer",
+     "date": "2026-11-05",
+     "likes": 24,
+     "views": 1154,
+     "link": "https://x.com/nichegamer/status/2118366067600891986",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2118366007702036480/pu/img/lmXiOqa6FgCIYhhY.jpg",
+      "video_url": "https://x.com/nichegamer/status/2118366067600891986/video/1"
+     },
+     "summary": "Niche Gamer 介绍《Among the Waves》：自称「正统朋克（orthodoxpunk）」的银河恶魔城，主角是怀有神子的女性。玩家需要在探索中管理胎儿的属性与情绪，而胎儿状态会反过来影响母亲的能力，同时可以扭曲物理法则以推进剧情。",
+     "analysis": "",
+     "recommendation": "「正统朋克」银河恶魔城《Among the Waves》：胎儿状态会反向影响母亲能力",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "TheGamer / X · 新游报道",
+     "tags": [
+      "MMO",
+      "独立团队",
+      "社区驱动"
+     ],
+     "title": "Loftia：从 TikTok 上的兴趣项目，长成一款完整 MMO",
+     "en_title": "Loftia's Founders Never Expected Their TikTok Hobby Project To Become A Full-Fledged MMO",
+     "full_text": "Loftia's Founders Never Expected Their TikTok Hobby Project To Become A Full-Fledged MMO https://t.co/sPlQAFhCsu https://t.co/aQPpqPokk6",
+     "author": "thegamerwebsite",
+     "date": "2026-11-05",
+     "likes": 0,
+     "views": 350,
+     "link": "https://x.com/thegamerwebsite/status/2118221811523449282",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWVvgzAXUAAEqkB.jpg"
+     },
+     "summary": "TheGamer 报道《Loftia》的起源：几位创始人在 TikTok 上发布的一个兴趣项目，最终演变成一款完整的 MMO。文章聚焦小团队如何依靠短视频社区持续获得反馈与用户，把「内容账号」当成产品验证与获客的主渠道。",
+     "analysis": "",
+     "recommendation": "Loftia：TikTok 上的兴趣项目长成完整 MMO，短视频账号就是获客渠道",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unreal Engine · 工具",
+     "tags": [
+      "素材库",
+      "Quixel",
+      "Fab"
+     ],
+     "title": "Quixel Megascans 全库转为免费，Fab 商城条目将在 11 月 12 日前完成更新",
+     "en_title": "The full Quixel Megascans library is going free. Fab listings will update between now & Nov 12, so check back if an asset...",
+     "full_text": "RT @quixeltools: The full Quixel Megascans library is going free. Fab listings will update between now &amp; Nov 12, so check back if an asset…",
+     "author": "UnrealEngine",
+     "date": "2026-11-05",
+     "likes": 0,
+     "views": 1713,
+     "link": "https://x.com/UnrealEngine/status/2118346621536899311",
+     "media": null,
+     "summary": "Epic 宣布 Quixel Megascans 全部资产转为免费，Fab 商城中的对应条目将在即日起至 11 月 12 日之间陆续更新。该库是虚幻生态里被使用最广的扫描素材来源之一，涵盖材质、贴图与 3D 资产，长期按订阅或单件计费。",
+     "analysis": "Megascans 一直是「UE 项目默认美术地基」，收费模式改变会直接改写中小团队的美术预算结构：原本按资产计费的背景素材成本归零，预算可以挪到差异化内容上。副作用同样明显——当所有人用同一套扫描库，场景辨识度只能靠美术指导而不是素材本身，同质化会被进一步放大。",
+     "recommendation": "Quixel Megascans 全库免费，Fab 资产 11 月 12 日前全部更新——UE 项目的美术地基成本归零",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · 开发者经验",
+     "tags": [
+      "Steam",
+      "愿望单",
+      "发行"
+     ],
+     "title": "中文开发者：愿望单数量并不是 Steam 算法曝光的直接决定因素",
+     "en_title": "很多独立游戏开发者在 Steam 上架之前，最关心的就是愿望单数量。因为大家普遍认为，愿望单越多 Steam 就越愿意推荐你的游戏。但是其实 Steam 官方文档已经做了详细的说明。",
+     "full_text": "很多独立游戏开发者在 Steam 上架之前，最关心的就是愿望单数量。因为大家普遍认为，愿望单越多Steam 就越愿意推荐你的游戏。\n\n但是其实 Steam官方文档已经做了详细的说明。愿望单数量不是算法曝光的直接决定因素。商店页面访问量本身不是推荐排序因素。商店访问转购买的转化率本身，也不是推荐排序因素。\n\n但愿望单仍然有一定价值的。商店访问量和转化率不是直接的算法排序因素，并不代表它们不重要。访问量决定你有多少销售机会，转化率影响最终销量，而真实销量又可能影响后续曝光。\n\n平台的算法目标和开发者的经营目标，并不是同一个东西。对小团队来说，研究算法当然有用，但把游戏做成一个让目标玩家愿意掏钱的优质产品，才是第一位的。",
+     "author": "onefifthblue",
+     "date": "2026-11-05",
+     "likes": 17,
+     "views": 4045,
+     "link": "https://x.com/onefifthblue/status/2118187931441692728",
+     "media": null,
+     "summary": "开发者五分之1蓝 引用 Steam 官方文档指出：愿望单数量不是算法曝光的直接决定因素，商店页面访问量本身不是推荐排序因素，访问转购买的转化率本身也不是推荐排序因素。但愿望单仍有价值——访问量决定销售机会，转化率影响最终销量，真实销量又可能反过来影响后续曝光。",
+     "analysis": "这条纠正了一个在中文独立开发社区广泛流传的因果倒置：把「愿望单」当成算法投喂的开关。平台的目标函数和开发者的经营目标是两套东西。对小团队来说，把资源压在刷数字上的回报，远低于把商店页第一眼的信息做清楚——后者才真正决定访问量能不能变成购买。",
+     "recommendation": "Steam 官方文档：愿望单数量并不是推荐排序的直接因素——别把发行预算压在刷数字上"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI 游戏之争从「能不能做」转向「值不值得玩」**\n24 小时用 AI 做出完整原创游戏的演示冲到 200 万浏览之后，反对方在同一周把问题换了个问法：请举出一个真正值得玩的 AI 生成游戏。这条挑战帖收到 201 条回复。另一边，日本开发者用全程 AI 做完一款游戏后给出的答案是——AI 只是电饭煲，做得无聊仍然是作者的责任。\n\n**BioWare 关闭被抬进国会程序**\nEA 关闭 BioWare 数周后，一份要求政府出资买回工作室与 IP 的请愿书已收集 1,662 个有效签名，超过向加拿大众议院提交所需的 500 人门槛。请愿书把 EA 的股权结构直接写进了诉求。\n\n**主机战争的两种曲线**\nPlayStation 季度营业利润同比涨 83%，硬件销量却跌 35%；Switch 2 半年卖 649 万台同比降 37%，任天堂把全年预期下调 16.9%。两家的共同点是：硬件越来越像装机入口，钱都从软件与服务里赚。\n\n**Steam 的供给端正在失控**\n上周 Steam 上架 1,656 款新游，日增约 200 款，其中约四成连一条用户评价都拿不到。与此同时 Quixel Megascans 全库转为免费，中小团队的美术成本被改写——而素材同质化也会跟着加剧。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
