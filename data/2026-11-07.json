@@ -1,0 +1,629 @@
+{
+  "date": "2026-11-07",
+  "meta": {
+    "raw_count": 192,
+    "filtered_count": 166,
+    "selected_count": 14,
+    "crawl_time": "2026-11-07 09:30"
+  },
+  "lede": "沙特 PIF 与 Silver Lake 据报以 250 亿美元洽购 Unity；Warren Spector 列出 EA 高管年薪追问问责；一个人带 AI Agent 用 4,558 次提交做出卡通 FPS 的免费 Demo 已上 Steam。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "沙特 PIF 与 Silver Lake 据报洽购 Unity，估值约 250 亿美元"
+    },
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "一个人带一队 AI Agent：4,558 次提交做出卡通 FPS，Demo 已上 Steam"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "一个人带一队 AI Agent：4,558 次提交做出卡通 FPS，免费 Demo 已上 Steam\n一句话生成或修改动作：港科大+腾讯+MIT 的 Möbius 把动捕变成可编辑文本\nVercel CEO：人类写的软件大多又慢又不安全，AI 会把它们全部重写——7,220 赞"
+    },
+    {
+      "id": "industry",
+      "text": "沙特 PIF 与 Silver Lake 据报洽购 Unity，估值约 250 亿美元\nWarren Spector 列出 EA 高管年薪最高 3,865 万美元：数万人失业，问责在哪\n微信小游戏：个人单机小游戏可不备案直接发布，开发者已实测\nNieR: Automata 更新把 50GB 变 366GB：DLC 打包 bug，更新还不可跳过"
+    },
+    {
+      "id": "indie",
+      "text": "Airframe Ultra：Rain World 团队的 PS1 赛博低空竞速，11/5 发售 ¥39\n反向魂类：你演最终 Boss，勇者却无限复活——Mortholme 将登主机\nLaica：和太空站少女同居、再下黑暗世界打异形——3,610 赞"
+    },
+    {
+      "id": "tools",
+      "text": "Pixel Art Lighter：免费开源的像素法线/光照遮罩工具，4,885 赞\nKlang Games：Unity 6.3 下 SEED 的 CPU Draw Call 与移动端内存怎么解"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "Whale Dev Studios / X · AI 开发实录",
+          "tags": [
+            "AI Agent",
+            "Godot",
+            "单人开发"
+          ],
+          "title": "一个人带一队 AI Agent：4,558 次提交做出卡通 FPS，免费 Demo 已上 Steam",
+          "en_title": "I'm building a cartoon FPS with a team of AI agents. First commit Sep 29, free demo on Steam Oct 23, 4,558 commits. I wrote almost no code. @GodotEngine + Claude Code + @ElevenLabs",
+          "full_text": "I'm building a cartoon FPS with a team of AI agents.\n\nFirst commit Sep 29, free demo on Steam Oct 23, 4,558 commits. I wrote almost no code.\n\n@GodotEngine + Claude Code @claudeai + @ElevenLabs\n\nOne person can build a game now. Workflow and agent brief below (1/8)",
+          "author": "whaledevstudios",
+          "date": "2026-11-06",
+          "likes": 918,
+          "views": 57420,
+          "link": "https://x.com/whaledevstudios/status/2118500903783141660",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2118399335322845184/pu/img/r-uOSFIWJ4Okewr7.jpg",
+            "video_url": "https://x.com/whaledevstudios/status/2118500903783141660/video/1"
+          },
+          "summary": "Whale Dev Studios 用一队 AI Agent 开发卡通风格 FPS：9 月 29 日首次提交，10 月 23 日免费 Demo 上线 Steam，累计 4,558 次提交，作者称自己几乎没写代码。技术栈为 Godot + Claude Code + ElevenLabs（语音）。作者同时公开了工作流与 agent 简报模板。",
+          "analysis": "值得注意的不是「AI 能做游戏」，而是它把「一个人」的产能拉到了接近小团队的量级：4,558 次提交说明这不是一次性生成，而是高频迭代的常规工程流程，agent 承担的是执行密度，人只负责判断。免费 Demo + Steam 上架也把验证环节提前了。但代码量与成品质量之间没有等号，卡通风格的统一性、关卡节奏与手感仍是 AI 最难代劳的部分。",
+          "recommendation": "一个人带一队 AI Agent：4,558 次提交做出卡通 FPS，Demo 已上 Steam",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "黑箱之外 / X · AI 研究",
+          "tags": [
+            "动作生成",
+            "文生动作",
+            "研究"
+          ],
+          "title": "Möbius：港科大 + 腾讯 Games Motus + MIT 的文本-动作模型，一句话改动作",
+          "en_title": "Möbius 是港科大、腾讯 Games Motus 和 MIT 研究人员共同参与的动作与语言模型。它能根据文字生成动作，也能把一段动作描述成文字，还支持动作补全和指令修改。",
+          "full_text": "我艹，游戏人物不再需要动捕，不再需要动画？？一句话生成任何动作？？？\n\nMöbius 是港科大、腾讯 Games Motus 和 MIT 研究人员共同参与的动作与语言模型。它能根据文字生成动作，也能把一段动作描述成文字，还支持动作补全和指令修改。\n\n演示里，可以要求把双腿张开的幅度减小，或把现有动作改成拉小提琴的姿势；也可以沿着已有片段，补上前后动作，替换中间的一段。\n\n想想我们以后做游戏动画或者视频，直接一句话就可以生成理想中的动作并调整！",
+          "author": "BeyondTheBoxCN",
+          "date": "2026-11-06",
+          "likes": 169,
+          "views": 7821,
+          "link": "https://x.com/BeyondTheBoxCN/status/2118609934870815001",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2118533721418813440/img/iTlz5_vLlOeGEneS.jpg",
+            "video_url": "https://x.com/BeyondTheBoxCN/status/2118609934870815001/video/1"
+          },
+          "summary": "Möbius 是由港科大、腾讯 Games Motus 与 MIT 研究者共同参与的动作-语言模型：支持文本生成动作、动作反解为文字描述、片段补全与前后的动作续写，也支持指令级的局部修改（如减小双腿张开幅度、把姿势改成拉小提琴）。",
+          "analysis": "它真正改的是动画资产的「编辑方式」：过去改一版动作要么重捕、要么在 DCC 里手动重定向，现在可以变成一句自然语言指令。对中型团队来说，动捕库会从「素材」变成「可检索、可局部改写的数据库」。制约仍在工程侧——骨骼命名标准化、实时性、批量导出的确定性，才是能不能进管线的关键。",
+          "recommendation": "一句话生成或修改动作：港科大+腾讯+MIT 的 Möbius 把动捕变成可编辑文本"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Guillermo Rauch (Vercel CEO) / X · 观点",
+          "tags": [
+            "AI 编程",
+            "软件工程",
+            "观点"
+          ],
+          "title": "Vercel CEO：人类写的软件大多又慢又不安全，AI 会把它们全部重写",
+          "en_title": "We will all be learning in coming weeks & months, that most human-made software: Was really slow / Had many security vulnerabilities / Was under-specified and incorrect. AI will rewrite it all.",
+          "full_text": "We will all be learning in coming weeks & months, that most human-made software:\n\n▫️ Was really slow\n▫️ Had many security vulnerabilities\n▫️ Was under-specified and incorrect\n\nAI will rewrite it all. Many times. It will make it fast, cost-efficient, and secure. It will think about failure modes we couldn't wrap our heads around.\n\nIt will prove, formally verify, load test, harden. It will turn memory-unsafe foundations into robust, optimized ones. If you ask, it'll thoroughly document it, teach you about it, make diagrams, animations, and slide decks.\n\nIn many ways, we are witnessing the true birth of software engineering.",
+          "author": "rauchg",
+          "date": "2026-11-05",
+          "likes": 7220,
+          "views": 307572,
+          "link": "https://x.com/rauchg/status/2118166970273292299",
+          "media": null,
+          "summary": "Vercel CEO Guillermo Rauch 认为，接下来几周到几个月人们会共同意识到：多数人写的软件其实很慢、存在大量安全漏洞、规格不足且不正确。AI 会把它们重写很多遍，让它变快、低成本、安全，并主动做形式化验证、压测、加固、文档化与讲解。他称这是「软件工程真正的诞生」。推文获 7,220 赞、30.7 万浏览。",
+          "analysis": "把存量代码当作待重构资产而不是资产本身，这是对现有工程组织方式的直接挑战。对游戏业来说，引擎层、工具链、后端服务都会被卷进这轮重写——但重写成本由谁承担、验证标准由谁定义，眼下没有答案。这场争论真正的分歧点不是 AI 能力，而是「谁来为看不见的质量背书」。",
+          "recommendation": "Vercel CEO：人类写的软件大多又慢又不安全，AI 会把它们全部重写"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Eurogamer / Reuters · 行业并购",
+          "tags": [
+            "Unity",
+            "沙特 PIF",
+            "并购"
+          ],
+          "title": "沙特 PIF 与 Silver Lake 据报洽购 Unity，估值约 250 亿美元",
+          "en_title": "After gobbling up EA, Saudi Arabia and private equity firm Silver Lake reportedly looking to buy Unity",
+          "full_text": "After gobbling up EA, Saudi Arabia and private equity firm Silver Lake reportedly looking to buy Unity  https://t.co/Sj4WKeEwyZ https://t.co/JmgPKokt75",
+          "author": "eurogamer",
+          "date": "2026-11-06",
+          "likes": 8,
+          "views": 3410,
+          "link": "https://x.com/eurogamer/status/2118645042214539296",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWbwbTwW0AAAYWe.png"
+          },
+          "summary": "据 Reuters 报道，今年以 550 亿美元收购 EA 的沙特主权基金 PIF 与私募 Silver Lake，正就收购 Unity 进行谈判，估值约 250 亿美元。Silver Lake 的 Egon Durban 已在 Unity 董事会任职，该机构此前以 4 亿美元投资持有约 8% 股份。这一估值在 Unity 最新财报之前确定——该季度 Unity 战略收入同比增 59%、净利润 1.22 亿美元，为其 2020 年上市以来首次 GAAP 盈利。",
+          "analysis": "引擎层的所有权正在从「中立工具」变成「资本资产」。对开发者最现实的两个问题：许可证与分成政策会不会再来一次 runtime fee 式的突然变脸；以及 EA 被杠杆收购后裁员、关工作室的路径，会不会在 Unity 生态复制。注意这次交易性质尚未确认——如果不是杠杆收购，债务压力路径会完全不同。",
+          "recommendation": "沙特 PIF 与 Silver Lake 据报洽购 Unity，估值约 250 亿美元",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer / X · 行业争议",
+          "tags": [
+            "BioWare",
+            "EA",
+            "裁员"
+          ],
+          "title": "Warren Spector 列出 EA 高管年薪：CEO 3,865 万美元，数万人却失业",
+          "en_title": "«Is there any accountability left in this world?» Warren Spector pops off at EA executives and their massive payouts as BioWare shuts down",
+          "full_text": "\"Is there any accountability left in this world?\" Warren Spector pops off at EA executives and their massive payouts as BioWare shuts down\n\nhttps://t.co/Bplf2Klo2D https://t.co/ndlRIetIM5",
+          "author": "eurogamer",
+          "date": "2026-11-06",
+          "likes": 261,
+          "views": 6817,
+          "link": "https://x.com/eurogamer/status/2118648606429454711",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWbzp16XgAAlQ76.jpg"
+          },
+          "summary": "BioWare 关闭两周后，Warren Spector 在 LinkedIn 再次开火，反问「决策失误的人是否也像开发者一样付出代价」。他列出 EA 高管年薪：CEO Andrew Wilson 3,865 万美元、总裁 Laura Miele 1,370 万、CFO Stuart Canfield 1,130 万、CLO Jake Schatz 840 万、CPO Mala Singh 830 万，并驳斥「工作室辉煌期已过、关闭是合理商业决策」的说法。",
+          "analysis": "这段话把「关闭是理性决策」拆成了责任归属问题：人才流失、过度招聘、营销投入不足，都是可归因的管理动作，而不是市场宿命。对从业者而言，它的意义在于把薪酬与问责放到同一张表上对比——这比情绪宣泄更难被反驳，也更容易引发关于治理结构的讨论。",
+          "recommendation": "Warren Spector 列出 EA 高管年薪最高 3,865 万美元：数万人失业，问责在哪",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "clanhj / X · 平台政策",
+          "tags": [
+            "微信小游戏",
+            "备案",
+            "个人开发者"
+          ],
+          "title": "微信小游戏政策变化：个人开发的单机小游戏可不完成备案直接发布",
+          "en_title": "兄弟们，微信小游戏政策史诗级变化！个人开发的单机小游戏可以不完成备案直接发布了！",
+          "full_text": "兄弟们，微信小游戏政策史诗级变化！\n个人开发的单机小游戏可以不完成备案直接发布了！\n自己试了一下，是真的！！！\n准备好批量上游戏了吗兄弟们",
+          "author": "clanhj611",
+          "date": "2026-11-06",
+          "likes": 328,
+          "views": 60932,
+          "link": "https://x.com/clanhj611/status/2118521970060910691",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWaAdJabkAA7ZPW.png"
+          },
+          "summary": "开发者 clanhj 称微信小游戏规则发生变化：个人开发的单机小游戏可以不做备案直接发布，并附上后台截图表示自己已实测成功。该推文获 328 赞、6.1 万浏览、101 条评论，评论区大量讨论批量上架的可能性。",
+          "analysis": "被释放的其实是「小体量、无内购、单机」这一段供给——恰好是 AI 工具已经把开发成本压到最低的一档。真正的变化不在数量，而在于小游戏渠道重新变成一个低成本试玩场：验证成本下降之后，批量试错、快速淘汰会变成常态，能跑出来的仍然是留存与买量效率，而不是上架数量。",
+          "recommendation": "微信小游戏：个人单机小游戏可不备案直接发布，开发者已实测",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "Eurogamer / X · 产品事故",
+          "tags": [
+            "NieR:Automata",
+            "更新事故",
+            "Square Enix"
+          ],
+          "title": "NieR: Automata 一次语言更新把 50GB 装成 366GB，且不可跳过",
+          "en_title": "Square Enix accidentally botches a Nier: Automata update, balloons required file size from 50GB to 366GB on PC",
+          "full_text": "Square Enix accidentally botches a Nier: Automata update, balloons required file size from 50GB to 366GB on PC\n\nhttps://t.co/90pZAOD0sk https://t.co/i0bKHIhLeM",
+          "author": "eurogamer",
+          "date": "2026-11-06",
+          "likes": 10,
+          "views": 3114,
+          "link": "https://x.com/eurogamer/status/2118681991365513317",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWcSCOrWUAAeltL.jpg"
+          },
+          "summary": "Steam 版 NieR: Automata 更新新增韩文与简繁中文支持，却把 PC 安装体积从约 50GB 撑到 366GB，且更新不可选。原因据报是 bug 让 YoRHa Edition 的每个 DLC 都被处理成与本体同尺寸，下载时全部叠加。Square Enix 已确认问题并给出临时方案：在 Steam 属性→DLC 中取消勾选，只下载本体。",
+          "analysis": "典型的内容打包与依赖管理事故：多语言支持本身是加分项，但把 DLC 当独立全量包叠加，暴露的是构建管线缺少体积回归检查。对做多语言、多 SKU 的团队来说，这是现成的反面教材——发布前一次安装体积断言，就能省掉整轮公关成本。",
+          "recommendation": "NieR: Automata 更新把 50GB 变 366GB：DLC 打包 bug，更新还不可跳过"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Rock Paper Shotgun / X · 新游上线",
+          "tags": [
+            "战斗竞速",
+            "PS1 风格",
+            "多人"
+          ],
+          "title": "Airframe Ultra：Rain World 团队新作，PS1 风格赛博都市低空竞速 11/5 发售",
+          "en_title": "Airframe Ultra's PS1 cyberpunk city is an amazing tribute to G-Police and WipEout, and I wish you people would slow down to appreciate it",
+          "full_text": "Airframe Ultra's PS1 cyberpunk city is an amazing tribute to G-Police and WipEout, and I wish you people would slow down to appreciate it https://t.co/1wYxvi4SPN",
+          "author": "rockpapershot",
+          "date": "2026-11-06",
+          "likes": 8,
+          "views": 1304,
+          "link": "https://x.com/rockpapershot/status/2118705471179628550",
+          "media": null,
+          "summary": "Rock Paper Shotgun 撰文称《Airframe Ultra》的 PS1 风格赛博都市是对 G-Police 与 WipEout 的出色致敬。游戏由 Rain World 开发商 Videocult 与 Akupara Games 合作，11 月 5 日以 39 元在 Steam 发售，是支持分屏与在线多人的快节奏战斗竞速。",
+          "analysis": "",
+          "recommendation": "Airframe Ultra：Rain World 团队的 PS1 赛博低空竞速，11/5 发售 ¥39",
+          "featured": true,
+          "game_ref": "Airframe Ultra",
+          "enrichment": {
+            "game_name": "Airframe Ultra",
+            "genre": "战斗竞速 / 动作 / 独立",
+            "developer": "Videocult、Akupara Games",
+            "platforms": [
+              "Steam (Windows)"
+            ],
+            "price": "¥39.00",
+            "release_date": "已发售 · 2026年11月5日",
+            "steam_rating": "242 条评价（好评率未公布）",
+            "steam_url": "https://store.steampowered.com/app/2522120/Airframe_Ultra/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2522120/85ae9c79253627eb019c581e2fb2ace76f12cc97/header.jpg?t=1793904667",
+            "youtube_video": null,
+            "description": "【核心玩法】柏油路面上方三英尺，是另一座城市。玩家驾驶简易拼装飞行器，在西大都会的龟裂街道上方低空狂飙，用铁管、铁链、等离子火炬把对手打下赛道，也可以靠加速和走线甩开他们。核心是「竞速 + 近战互殴」双线并行：速度决定位置，武器决定位置能不能守住。\n\n【模式】支持分屏与在线多人，主打跟朋友和对手同场竞技；单人也有一条从街头混混打到巡回赛冠军的成长线，十场巡回赛层层加码。\n\n【美术与氛围】刻意做成 PS1 时代的低多边形赛博都市，粗糙贴图与雾化远景不是妥协而是风格宣言——RPS 的评论直接把它类比 G-Police 与 WipEout 那一代作品。\n\n【成长与自定义】赢比赛积累恶名，解锁头盔与服装；收集零件可以拼出一台全新飞行器，标识与制服也能自定义，走的是「从无名到传奇」的老派朋克路线。\n\n【优势】Videocult（Rain World）在氛围塑造上一向有辨识度；39 元定价 + 分屏本地多人，在当前同类型里性价比突出。\n\n【不足】发售首日评价数仅两百余条，热度有限；低多边形画面对大众用户是门槛，战斗竞速这一细分类目本身盘子也小。\n\n【综合评价】不是要抢 Mario Kart 的位子，而是把 90 年代末那种又脏又快的赛博竞速重新做了一遍。适合怀念 G-Police、WipEout 的玩家，也适合想研究「低成本风格化」怎么做的小团队参考。",
+            "why_notable": "Rain World 团队转做低空战斗竞速，PS1 风格 + 分屏多人，39 元定价相当激进",
+            "pcu": "未进入当日 Steam Top 500",
+            "current_players": null,
+            "estimated_sales": "暂无公开数据",
+            "gi_summary": "PS1 风格赛博都市低空战斗竞速，分屏/在线多人，2026 年 11 月 5 日发售"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Niche Gamer / X · 新游动态",
+          "tags": [
+            "反向魂类",
+            "像素",
+            "多结局"
+          ],
+          "title": "The Dark Queen of Mortholme：你演最终 Boss，勇者却无限复活——反向魂类将登主机",
+          "en_title": "Reverse soulslike game The Dark Queen of Mortholme is coming to consoles",
+          "full_text": "Reverse soulslike game The Dark Queen of Mortholme is coming to consoles: https://t.co/0ZACo4eZo6 https://t.co/Iq8kgaGPML",
+          "author": "nichegamer",
+          "date": "2026-11-06",
+          "likes": 10,
+          "views": 1216,
+          "link": "https://x.com/nichegamer/status/2118707703551824082",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2118707663856955392/pu/img/tXUJ8lQmmB59PO-I.jpg",
+            "video_url": "https://x.com/nichegamer/status/2118707703551824082/video/1"
+          },
+          "summary": "Niche Gamer 报道，反向魂类《The Dark Queen of Mortholme》将登陆主机平台。游戏设定玩家扮演摩斯霍姆的「暗黑女王」，即勇者通关前最后一道屏障，但勇者会不断死而复生。Steam 版已于 2025 年 8 月 15 日发售，22 元，累计 4,314 条评价。",
+          "analysis": "",
+          "recommendation": "反向魂类：你演最终 Boss，勇者却无限复活——Mortholme 将登主机",
+          "featured": true,
+          "game_ref": "The Dark Queen of Mortholme",
+          "enrichment": {
+            "game_name": "The Dark Queen of Mortholme",
+            "genre": "动作 / 独立 / 像素",
+            "developer": "Mosu",
+            "platforms": [
+              "Steam (Windows / Linux)",
+              "主机（即将）"
+            ],
+            "price": "¥22.00",
+            "release_date": "已发售 · 2025年8月15日（Steam）",
+            "steam_rating": "4,314 条评价（好评率未公布）",
+            "steam_url": "https://store.steampowered.com/app/3587610/The_Dark_Queen_of_Mortholme/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3587610/8f213139ea000b925f2be9d837cff1cf75d148b5/header.jpg?t=1793848673",
+            "youtube_video": null,
+            "description": "【核心玩法】把魂类视角整个翻过来：你不是挑战 Boss 的勇者，你就是那个 Boss。玩家扮演摩斯霍姆的「暗黑女王」，用一套不断进化的毁灭性招式库迎战勇者，把他斩于马下——然后他会站起来，再来一次。\n\n【结构设计】本质是一场固定画面下的单场 Boss 战，围绕「重复击杀」做叙事：每一次复活都在推进对话与信息，玩家的选择会把故事导向不同结局。你是站在勇者视角去共情，还是继续做永恒女王，决定了整段体验的落点。\n\n【美术与音乐】精细像素美术 + 暗色调的幽暗旋律，走的是小体量但氛围拉满的路线；固定镜头让每帧画面都像插画，也把战斗读招的负担降了下来。\n\n【体量】设计目标是「单次游玩就能走完一段完整情感旅程」的短篇，不靠时长取胜，适合一口气打完。\n\n【优势】「你才是最终 Boss」这个切入点足够新鲜，且不是噱头——它直接支撑了多结局与情感羁绊的设计；22 元的定价 + 4,300 多条评价说明口碑站住了。\n\n【不足】固定画面 + 单场战斗的形式对重度玩家偏薄；重复击杀的循环如果节奏处理不好，容易变成机械劳作。\n\n【综合评价】一个用「反转视角」把老套 Boss 战重新讲一遍的短篇实验，能进主机说明这套叙事结构经得起更大屏幕的检验。",
+            "why_notable": "把魂类视角反过来演 Boss，靠「勇者无限复活」承载多结局叙事，22 元的短篇实验即将登陆主机",
+            "pcu": "未进入当日 Steam Top 500",
+            "current_players": null,
+            "estimated_sales": "暂无公开数据",
+            "gi_summary": "反向魂类短篇像素游戏：玩家扮演最终 Boss，勇者不断复活，多结局叙事"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "【公式】Laica / X · 新游曝光",
+          "tags": [
+            "生存恐怖",
+            "第一人称",
+            "日式"
+          ],
+          "title": "Laica 莱卡：和太空站少女同居，再下黑暗世界打异形——日式生存恐怖的双循环",
+          "en_title": "タイトルメニューで、ライカにちょっかいを出せます",
+          "full_text": "タイトルメニューで、ライカにちょっかいを出せます",
+          "author": "projectLaica",
+          "date": "2026-11-06",
+          "likes": 3610,
+          "views": 161025,
+          "link": "https://x.com/projectLaica/status/2118614510726705352",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2118614378438418432/img/azUDkJsjLuGeUwQD.jpg",
+            "video_url": "https://x.com/projectLaica/status/2118614510726705352/video/1"
+          },
+          "summary": "日本独立团队 Santa Studio 公布第一人称生存恐怖新作《Laica 莱卡》（2027 年）：玩家在漂浮于宇宙的居住设施「HOME」与独自生活的少女莱卡共同生活，吃饭、听音乐、在失重空间里漂浮，同时要往返被异形怪物占据的黑暗世界探索。官方新推文展示标题画面可以逗弄莱卡，获 3,610 赞、16.1 万浏览。",
+          "analysis": "",
+          "recommendation": "Laica：和太空站少女同居、再下黑暗世界打异形——3,610 赞",
+          "game_ref": "Laica 莱卡",
+          "enrichment": {
+            "game_name": "Laica 莱卡",
+            "genre": "第一人称生存恐怖 / 冒险 / 模拟",
+            "developer": "Santa Studio",
+            "platforms": [
+              "Steam (Windows)"
+            ],
+            "price": "未公布",
+            "release_date": "2027年",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4037370/Laica/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4037370/b05c39343d9e99955127d2429426b0fa8951052e/header.jpg?t=1791657122",
+            "youtube_video": null,
+            "description": "【核心玩法】双世界循环：一半时间在宇宙居住设施「HOME」里和少女莱卡过日子——一起吃饭、听音乐、聊天、在失重的空间里相伴漂浮；另一半时间进入被异形怪物盘踞的黑暗世界做 3D 探索，收集物资、规避战斗、向更深处推进。\n\n【叙事结构】探索归来会推进同居生活，而探索越深，异常就越渗进 HOME：腐烂的世界、逐渐失去原形的设施、开始被侵蚀的莱卡本身。玩家要一边建立羁绊，一边逼近「她是谁、这片宇宙发生了什么、你为什么在这里」的真相。\n\n【选择与结局】对话与行动中的选择会改变与莱卡的距离，并导向不同结局——本质是把「你相信什么」做成玩法变量。\n\n【美术与氛围】日式第一人称恐怖路线，HOME 的明亮日常与黑暗废墟的污浊形成强对比，恐怖感建立在「家正在被污染」而不是单纯跳吓。\n\n【优势】日常陪伴与生存恐怖的组合在同类型里不多见，情感投资让恐怖桥段更有分量；官方推文 16 万浏览说明角色本身已经有吸引力。\n\n【不足】2027 年发售，处在很早期；双循环如果节奏失衡，容易变成「打怪打断恋爱」或「日常拖慢探索」两难。\n\n【综合评价】把「和谁一起活下去」做成了恐怖游戏的驱动力，值得关注其能否把陪伴感真正做成机制而不是演出。",
+            "why_notable": "日式独立团队把「太空同居日常」与「异形生存恐怖」做成双循环，角色推文 16 万浏览",
+            "pcu": "未发售",
+            "current_players": null,
+            "estimated_sales": "未发售",
+            "gi_summary": "第一人称生存恐怖：太空站同居日常 + 黑暗世界探索，2027 年发售"
+          },
+          "featured": true
+        },
+        {
+          "idx": "新游推文 04",
+          "source": "電ファミニコゲーマー / X · 限免活动",
+          "tags": [
+            "城市建造",
+            "生存",
+            "Epic 限免"
+          ],
+          "title": "Flotsam：在垃圾海上建漂浮城市，Epic 限免至 11/13（原价 2,580 日元）",
+          "en_title": "【無料】海に浮かぶゴミで街を作るゲーム『Flotsam 漂流ガラクタウン』エピックゲームズにて無料配布中！2580円→「0円」に、11月13日までの期間限定",
+          "full_text": "【無料】海に浮かぶゴミで街を作るゲーム『Flotsam 漂流ガラクタウン』エピックゲームズにて無料配布中！2580円→「0円」に、11月13日までの期間限定\nhttps://t.co/lHAFj6qj9S\n\n水没した世界を舞台に、漂流都市を築いていく箱庭ゲーム。研究ツリーや技能持ち漂流者を救って自分だけの楽園を創造 https://t.co/anEx6xWTcs",
+          "author": "denfaminicogame",
+          "date": "2026-11-06",
+          "likes": 17270,
+          "views": 1511574,
+          "link": "https://x.com/denfaminicogame/status/2118548921651970220",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2118548889200652288/pu/img/g9w6BFHMRS9OKJSi.jpg",
+            "video_url": "https://x.com/denfaminicogame/status/2118548921651970220/video/1"
+          },
+          "summary": "電ファミニコゲーマー 报道，水没世界漂浮城市建造游戏《Flotsam》正在 Epic 游戏商城限时免费发放，原价 2,580 日元降至 0 元，截止 11 月 13 日。玩家用海上漂浮的垃圾搭建城市、营救带技能的漂流者、解锁研究树，打造自己的乐园。该推文获 1.7 万赞、151 万浏览。",
+          "analysis": "",
+          "recommendation": "Flotsam 在 Epic 限免至 11/13：垃圾海上建漂浮城市，原价 2580 日元归零",
+          "featured": false,
+          "game_ref": "Flotsam",
+          "enrichment": {
+            "game_name": "Flotsam",
+            "genre": "城市建造 / 生存 / 策略",
+            "developer": "Pajama Llama Games",
+            "platforms": [
+              "Steam (Windows)",
+              "Epic Games Store"
+            ],
+            "price": "¥80.00（Epic 限免至 11 月 13 日）",
+            "release_date": "已发售 · 2025年12月4日",
+            "steam_rating": "4,407 条评价（好评率未公布）",
+            "steam_url": "https://store.steampowered.com/app/821250/Flotsam/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/821250/f315ca1083e0922c8e5415adf3dfac1fd3d63fa4/header_schinese.jpg?t=1782735785",
+            "youtube_video": null,
+            "description": "【核心玩法】把海洋垃圾变成家：收集漂浮的塑料与浮木、打捞旧世界废料，回收后建成可漂浮的房屋、工坊与小花园；淡化海水、清理鱼内脏、搭木板避难所，保证所有漂流者的安全，再用植物、翻新家具和雕像维持士气。\n\n【世界探索】整座城镇可以扬帆出海，探索被淹没的废墟、生锈工厂与遗忘岛屿，营救被困幸存者和友好动物，重新发现旧世界科技——但要小心污染，旧世界的遗留物会让漂流者染病。\n\n【角色与成长】每个漂流者都有自己的故事，可招募养鸟人、化学家、电工等专家，解锁新建筑、任务与发现；完成个人故事线还能解锁新机制。\n\n【系统深度】研究树推动能源迭代，从烧木柴一路过渡到鳗鱼发电这类绿色方案，最终把漂浮城镇做成自给自足的生产生态。\n\n【优势】「垃圾重建文明」的题材与漂浮城市的美术执行都很有辨识度，4,400 多条 Steam 评价说明内容量站得住；这次 Epic 限免等于零成本入场。\n\n【不足】城市建造 + 生存模拟的节奏偏慢，前期资源管理压力大；同类作品多，玩法创新主要在题材包装而非机制。\n\n【综合评价】一款完成度不错的治愈系末世建造游戏，限免是入手的最佳窗口。",
+            "why_notable": "Epic 限免至 11 月 13 日，原价 2,580 日元归零——推文 151 万浏览",
+            "pcu": "未进入当日 Steam Top 500",
+            "current_players": null,
+            "estimated_sales": "暂无公开数据（Steam 4,407 条评价）",
+            "gi_summary": "水没世界漂浮城市建造 + 生存模拟，Epic 商城限时免费"
+          }
+        },
+        {
+          "idx": "新游推文 05",
+          "source": "Teeko / X · 独立开发",
+          "tags": [
+            "平台跳跃",
+            "塔防",
+            "叙事"
+          ],
+          "title": "Teeko：哥斯达黎加面具节题材，树懒用水果砸巨人，2D 平台跳跃混塔防",
+          "en_title": "No publisher. No funding. No AI. Just a game made with love from a small indie team.",
+          "full_text": "No publisher.\nNo funding.\nNo AI.\n\nJust a game made with love from a small indie team. https://t.co/gB1yc4x2Nv",
+          "author": "TeekoGame",
+          "date": "2026-11-05",
+          "likes": 537,
+          "views": 16595,
+          "link": "https://x.com/TeekoGame/status/2118418074378403899",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2118306015045107712/img/a0jdW7-W-JwreVO-.jpg",
+            "video_url": "https://x.com/TeekoGame/status/2118418074378403899/video/1"
+          },
+          "summary": "独立团队 Ripe Render Games 公布《Teeko》：灵感来自哥斯达黎加「面具节」（Día de Las Mascaradas），奶奶 Tita 的孩子们被面具之灵附身，玩家操作树懒 Teeko 在小镇平台间跳跃、用本地水果砸向入侵的巨人，玩法是 2D 平台跳跃与塔防的结合。团队强调「无发行、无融资、无 AI」，Steam 页面已上线，发售日未定。",
+          "analysis": "",
+          "recommendation": "Teeko：树懒扛起哥斯达黎加面具节，2D 平台跳跃混塔防——537 赞",
+          "featured": false,
+          "game_ref": "Teeko",
+          "enrichment": {
+            "game_name": "Teeko",
+            "genre": "2D 平台跳跃 / 塔防 / 叙事",
+            "developer": "Ripe Render Games",
+            "platforms": [
+              "Steam (Windows / macOS)"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/3650150/Teeko/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3650150/ac6174ac6eb406a092c19bb5f3c90b648527613e/header.jpg?t=1790357398",
+            "youtube_video": null,
+            "description": "【核心玩法】奶奶提塔存了一堆色彩缤纷的本地水果，用来朝敌人猛扔——树懒 Teeko 要在平台之间弹跳、砸退入侵小镇的巨人，必要时还能小睡一下。玩法主体是 2D 平台跳跃，叠加塔防式的「守住小镇」压力，用水果当弹药。\n\n【题材来源】整个设定建立在哥斯达黎加的「面具节」（Día de Las Mascaradas）上：面具之灵附身了提塔奶奶的孩子们，引发混乱，玩家要一边推进关卡一边揭开被腐化巨人背后的真相。\n\n【结构】七个独特世界、七场头目战，对应「七种树懒感官」的能力解锁，形成逐关加码的关卡节奏。\n\n【叙事】对话驱动的冒险，晚餐时间临近，香喷喷的 Casado 摆在桌上，但家人没到齐——把「团圆」做成情感落点。\n\n【美术与氛围】中美洲民俗色彩浓厚，面具与节庆元素在独立游戏里很少见，视觉上有天然辨识度。\n\n【优势】题材差异化明显，水果投掷 + 树懒的设定自带亲和力；团队明确「无发行、无融资、无 AI」，在当下是清晰的身份声明。\n\n【不足】Steam 页面尚未公布发售日与价格，实际手感与关卡深度无从判断；平台跳跃 + 塔防的组合容易两头都不够深。\n\n【综合评价】靠地域文化做出差异的小体量作品，值得放进愿望单观察。",
+            "why_notable": "哥斯达黎加面具节 + 树懒 + 平台跳跃塔防，题材差异化在独游里相当少见",
+            "pcu": "未发售",
+            "current_players": null,
+            "estimated_sales": "未发售",
+            "gi_summary": "哥斯达黎加面具节题材的 2D 平台跳跃 + 塔防叙事游戏，发售日未定"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "Niche Gamer / X · 新游动态",
+          "tags": [
+            "农场模拟",
+            "超自然",
+            "主机"
+          ],
+          "title": "Moonlight Peaks：吸血鬼经营哥特农场，本月登陆 PS5",
+          "en_title": "Gothic farm sim game Moonlight Peaks comes to PS5 this month",
+          "full_text": "Gothic farm sim game Moonlight Peaks comes to PS5 this month: https://t.co/2nU04OnevA https://t.co/OEZALipatJ",
+          "author": "nichegamer",
+          "date": "2026-11-06",
+          "likes": 4,
+          "views": 978,
+          "link": "https://x.com/nichegamer/status/2118713438633377795",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWcupQtXcAAPSNe.jpg"
+          },
+          "summary": "Niche Gamer 报道，超自然生活模拟《Moonlight Peaks》本月登陆 PS5。玩家扮演吸血鬼经营哥特农场，种植魔法作物、制作药水、学习魔法，并与狼人、女巫、美人鱼等 20 多位居民发展关系，同时揭开镇上七大家族的秘密。Steam 版 2026 年 7 月 6 日已发售，189 元，1,939 条评价。",
+          "analysis": "",
+          "recommendation": "Moonlight Peaks：吸血鬼经营哥特农场，本月登陆 PS5",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Niche Gamer / X · 新游评测",
+          "tags": [
+            "动作 Roguelite",
+            "像素",
+            "小体量"
+          ],
+          "title": "Eternal Palace Sakura：预算级动作 Roguelite，风格有余打磨不足",
+          "en_title": "[REVIEW] Eternal Palace Sakura is a jiggly and decent action-roguelite romp!",
+          "full_text": "[REVIEW] Eternal Palace Sakura is a jiggly and decent action-roguelite romp!\n\nhttps://t.co/g2UHdQQVfb \n\nWhile it may feel like an average action roguelite with some rough edges, this budget indie game is full of style and jiggly-goodness~",
+          "author": "nichegamer",
+          "date": "2026-11-06",
+          "likes": 12,
+          "views": 902,
+          "link": "https://x.com/nichegamer/status/2118727819551248760",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2118727792795787265/pu/img/Q8JqR7NGK5G5xgBW.jpg",
+            "video_url": "https://x.com/nichegamer/status/2118727819551248760/video/1"
+          },
+          "summary": "Niche Gamer 评测《Eternal Palace Sakura》：一款预算级动作 Roguelite，整体玩法中规中矩、边缘打磨粗糙，但美术风格与演出相当有味道。评测认为它更像「风格优先」的小体量作品，适合吃这一口的玩家。",
+          "analysis": "",
+          "recommendation": "Eternal Palace Sakura 评测：预算级动作 Roguelite，风格大于打磨",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Meticulai / X · AI 开发",
+          "tags": [
+            "动作 Roguelite",
+            "Three.js",
+            "AI 开发"
+          ],
+          "title": "Scrapfall：用 Claude + three.js 做的落块 Roguelite，5 分钟实机公开",
+          "en_title": "Can your Claude do this? ... So here is 5 minutes of gameplay, with some uncut gameplay starting at min ~1:30. As always, huge shoutout to @fal and @threejs",
+          "full_text": "Can your Claude do this? A couple of days ago my first clip for Scrapfall went viral here, you all loved it, really warmed my heart. So here is 5 minutes of gameplay, with some uncut gameplay starting at min ~1:30 \n\nAs always, huge shoutout to @fal and @threejs",
+          "author": "MeticulAi",
+          "date": "2026-11-05",
+          "likes": 106,
+          "views": 7320,
+          "link": "https://x.com/MeticulAi/status/2118428390965289344",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2118427113967489026/img/RU4Ty3vtPC-4AdBI.jpg",
+            "video_url": "https://x.com/MeticulAi/status/2118428390965289344/video/1"
+          },
+          "summary": "开发者 Meticulai 公开《Scrapfall》5 分钟实机，约 1 分 30 秒后为未剪辑的连续游玩片段。游戏基于 three.js 与 fal 构建，把经典落块玩法改造成快节奏动作 Roguelite：重力不断增强、物理逐渐失控、多套系统互相碰撞。Steam 页面显示 2027 年第一季度发售。",
+          "analysis": "",
+          "recommendation": "Scrapfall：Claude + three.js 做的落块 Roguelite，5 分钟实机公开",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "PCIndieMRace / X · 众筹",
+          "tags": [
+            "推理",
+            "Kickstarter",
+            "独立"
+          ],
+          "title": "Nuits Rouges – The Quantum Case 启动 Kickstarter 众筹",
+          "en_title": "Nuits Rouges – The Quantum Case da inicio a su campaña de Kickstarter",
+          "full_text": "Nuits Rouges – The Quantum Case da inicio a su campaña de Kickstarter\nhttps://t.co/TjnIfggHX0",
+          "author": "PCIndieMR",
+          "date": "2026-11-06",
+          "likes": 1,
+          "views": 13,
+          "link": "https://x.com/PCIndieMR/status/2118722357913428396",
+          "media": null,
+          "summary": "独立作品《Nuits Rouges – The Quantum Case》宣布启动 Kickstarter 众筹，目前公开信息有限，主要面向关注叙事/推理类独立游戏的玩家。该推文互动量很低（1 赞、13 浏览），属于早期曝光。",
+          "analysis": "",
+          "recommendation": "Nuits Rouges – The Quantum Case 启动 Kickstarter 众筹",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Moonfell RPG / X · 开源工具",
+          "tags": [
+            "像素美术",
+            "法线贴图",
+            "开源"
+          ],
+          "title": "Pixel Art Lighter：免费开源的像素法线/光照遮罩工具，专治「像素被模糊」",
+          "en_title": "Pixel Art Lighter is out now! I first made this tool for my game, but am releasing it free and open source for everyone. Generate and edit normal maps and light masks, while keeping your sprites pixel perfect.",
+          "full_text": "Pixel Art Lighter is out now! ✨\n\nI first made this tool for my game, but am releasing it free and open source for everyone.\n\nGenerate and edit normal maps and light masks, while keeping your sprites pixel perfect.\n\nHope it helps with your art or gamedev! https://t.co/4wfinfKzhl",
+          "author": "moonfell_rpg",
+          "date": "2026-11-06",
+          "likes": 4885,
+          "views": 113713,
+          "link": "https://x.com/moonfell_rpg/status/2118649709879607345",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2118646951755517953/img/L8yo_W15pLw9sMOU.jpg",
+            "video_url": "https://x.com/moonfell_rpg/status/2118649709879607345/video/1"
+          },
+          "summary": "开发者 moonfell_rpg 发布 Pixel Art Lighter：一款免费开源工具，用于生成与编辑法线贴图和光照遮罩，同时保持像素图不发生插值模糊。作者最初为自己的游戏《Moonfell》开发，现向所有像素美术与独立开发者开放。推文获 4,885 赞、11.4 万浏览。",
+          "analysis": "像素游戏想要动态光照，绕不开「法线贴图与像素完美」这对矛盾——常规流程一上 3D 光照，精灵图就被双线性插值糊掉。这个工具把问题收窄到两个具体产物（法线图、光照遮罩），并且免费开源，等于把中型团队才有的 2.5D 光照流程下放给个人开发者。真正稀缺的不是算法，而是「愿意把自己工作流里的一环抽出来做成工具」的人。",
+          "recommendation": "Pixel Art Lighter：免费开源的像素法线/光照遮罩工具，4,885 赞",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Unity for Games / X · 技术访谈",
+          "tags": [
+            "Unity 6.3",
+            "MMO",
+            "性能优化"
+          ],
+          "title": "Klang Games 用 Unity 6.3 解决 SEED 的 CPU Draw Call 与移动端内存瓶颈",
+          "en_title": "How do you render an MMO world that players never stop building? @KlangGames profiled real player-built societies in SEED, built with Unity 6.3, to fix a CPU draw call bottleneck on PC, and a memory constraint on mobile.",
+          "full_text": "How do you render an MMO world that players never stop building? 🏙️\n\n@KlangGames profiled real player-built societies in SEED, built with Unity 6.3, to fix a CPU draw call bottleneck on PC, and a memory constraint on mobile. \n\n🔗 Read the full dev interview: https://t.co/6dMi03ponA",
+          "author": "unitygames",
+          "date": "2026-11-06",
+          "likes": 20,
+          "views": 2280,
+          "link": "https://x.com/unitygames/status/2118731912533389672",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2118731823433822208/pu/img/S7T0vsk5su-JTVGn.jpg",
+            "video_url": "https://x.com/unitygames/status/2118731912533389672/video/1"
+          },
+          "summary": "Unity 官方技术访谈：Klang Games 在《SEED》中基于 Unity 6.3 处理「玩家持续建造」的 MMO 世界渲染难题，分别针对 PC 端的 CPU Draw Call 瓶颈与移动端的内存限制做了优化，并对真实玩家自建社会做了性能剖析。完整访谈由 Unity 博客发布。",
+          "analysis": "MMO + 用户生成内容是最难做性能的交叉点：场景不能预烘焙、批次无法预设、LOD 也难套模板。这篇访谈的价值在于它给的是两个具体约束（CPU draw call / 移动端内存）而不是「我们优化了性能」的泛泛结论，对做 UGC 或沙盒的团队可直接对照自己的瓶颈清单。",
+          "recommendation": "Klang Games：Unity 6.3 下 SEED 的 CPU Draw Call 与移动端内存怎么解"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**沙特资本把手伸向引擎层**\nReuters 报道，今年以 550 亿美元收购 EA 的沙特 PIF 与 Silver Lake 正就收购 Unity 谈判，估值约 250 亿美元——Silver Lake 已持有约 8% 股份、其合伙人还在 Unity 董事会。若成真，两大引擎之一将并入同一批资本手中；EA 被杠杆收购后裁员关工作室的路径，成了开发者最担心的先例。\n\n**Warren Spector 把「商业决策」拆成问责问题**\nBioWare 关闭两周后，他列出 EA 高管年薪：CEO 3,865 万美元、总裁 1,370 万、CFO 1,130 万，反问「决策失误的人是否也像开发者一样付出代价」。同一天，Square Enix 一次语言更新把 NieR: Automata 从 50GB 撑到 366GB 且不可跳过——两件事都指向同一件事：组织层的失误，最后由玩家和开发者承担。\n\n**AI 这一侧在给出可验证的进度**\nWhale Dev Studios 用一队 AI Agent 从首次提交到免费 Demo 上 Steam 用了 24 天、4,558 次提交；港科大 + 腾讯 Games Motus + MIT 的 Möbius 把「改动作」变成一句自然语言指令；Vercel CEO 则断言多数人写的软件都会被 AI 重写。工具侧的 Pixel Art Lighter 把 2.5D 像素光照这套中型团队流程做成免费开源，四小时拿到 4,885 赞。\n\n**国内小游戏的门槛被重新划线**\n开发者实测微信小游戏个人单机作品可不做备案直接发布。按 AI 工具压下来的开发成本，这条规则真正释放的是「批量试错」——上架数量会涨，能不能跑出来仍然取决于留存与买量。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
