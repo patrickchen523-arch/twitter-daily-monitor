@@ -1,0 +1,517 @@
+{
+ "date": "2026-11-08",
+ "meta": {
+  "raw_count": 186,
+  "filtered_count": 142,
+  "selected_count": 15,
+  "crawl_time": "2026-11-08 09:32"
+ },
+ "lede": "名越稔洋新工作室因网易撤资解散；Xbox 裁员后 id Software 少了约一半人；《轨界新生》把《Raft》搬到火车上，用捡来的资源拼一列移动要塞。",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "把《Raft》搬到火车上：《轨界新生》用捡来的资源拼一列移动要塞——11.5 万浏览"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "名越稔洋新工作室解散，《Gang of Dragon》因网易撤资终止开发"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Vercel CEO：生成式 UI 将成人机交互主流范式——LLM 直出可交互界面"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Vercel CEO：生成式 UI 将成人机交互主流范式，LLM 直出可交互界面\n5.6GB 无审查蒸馏模型上架 Hugging Face，称 100 条测试只拒 3 条\nAI 复刻游戏争议发酵，Anthropic 疑似收紧 Claude 的克隆能力"
+  },
+  {
+   "id": "industry",
+   "text": "名越稔洋新工作室解散，《Gang of Dragon》因网易撤资终止开发\nXbox 裁员砍掉 id Software 约一半成员，负责人仍称「我们做得很好」\nRemedy 营收同比 +226%：《控制：共振》成其史上最快卖座作品\n《无主之地》系列销量破 1 亿份，Gearbox 明年继续加码《无主之地 4》"
+  },
+  {
+   "id": "indie",
+   "text": "《轨界新生 Railborn》：把《Raft》搬到火车上，用捡来的资源拼移动要塞\n《Hitch Happens》：搭陌生人的车，对话选项决定整段剧情\n《Petal Runner》：Game Boy 调色板上的开放世界 RPG，定档 2027 年 3 月 8 日"
+  },
+  {
+   "id": "tools",
+   "text": "94 个 Blender Skill 串起建模到导出，还带 lowpoly/像素/PSX 风格包\n有人用 Rust 从零重写了 Minecraft，再往里塞了一场海啸"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Vercel CEO / X · AI 交互范式",
+     "tags": [
+      "生成式 UI",
+      "Agent",
+      "人机交互"
+     ],
+     "title": "Vercel CEO：生成式 UI 将成人机交互主流范式，LLM 直出 Slack/Teams 可交互界面",
+     "en_title": "Generative UI for conversational agents.",
+     "full_text": "Generative UI for conversational agents.\n\nCombining @aisdk with Chat SDK and 𝚓𝚜𝚘𝚗-𝚛𝚎𝚗𝚍𝚎𝚛, you can go straight from LLM to UI on platforms like Slack and Teams.\n\nI believe this will become the dominant Human-Agent Interaction (HAI) paradigm:\nhttps://t.co/MHxtLyoy7t https://t.co/tRgxRi5Hey",
+     "author": "rauchg",
+     "date": "2026-11-07",
+     "likes": 1941,
+     "views": 125259,
+     "link": "https://x.com/rauchg/status/2118856239719608353",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2118855022205394944/img/n1xesw87UlaiDiUo.jpg",
+      "video_url": "https://x.com/rauchg/status/2118856239719608353/video/1"
+     },
+     "summary": "Guillermo Rauch 提出「生成式 UI」路线：把 aisdk 与 Chat SDK、json-render 组合，模型可以直接输出可交互界面，在 Slack、Teams 等平台完成从 LLM 到 UI 的闭环，而不是只吐一段文字。他认为这将成为人机交互（HAI）的主导范式。",
+     "analysis": "对工具型产品，Agent 的输出形态正从「一段话」变成「一个能点的界面」；对游戏而言，NPC 对话框、任务面板、商店页这类高度结构化的 UI，未来可能由模型按上下文即时生成，前端需要提前预留 schema 渲染层。",
+     "recommendation": "Vercel CEO：生成式 UI 将成人机交互主流范式——LLM 直出可交互界面",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "Hugging Face / X · 开源模型",
+     "tags": [
+      "开源模型",
+      "本地推理",
+      "蒸馏"
+     ],
+     "title": "5.6GB 无审查蒸馏模型上架 Hugging Face：DeepSeek-V4-Pro 蒸馏进 Qwen3.5 9B",
+     "en_title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic · Hugging Face",
+     "full_text": "来了个大的\n\nHugging Face 上最近杀出一个核弹级无审查模型，直接被挤爆了\n\nDeepSeek-V4-Pro + Qwen3.5 9B 的混血完全体，体积只有 5.6GB，上线就被狂下 1.8 万次。\n\n它的测试结果极其残暴： \n\n· 拒答率暴跌：实测 100 个刁钻测试提示词，原版直接 100% 拒答，它硬生生只拒了 3 个 \n· 顶配推理蒸馏：用 DeepSeek-V4-Pro 约 25 万条高质量数据蒸馏，逻辑与数学推理能力完全拉满 \n· 零损耗去审查：底层用 Heretic 的 ARA 算法消融限制，彻底卸掉道德锁，智商分毫不损\n· 普通电脑本地直跑：Q4_K_M 的 GGUF 格式仅 5.6GB，显存要求极低，核显本和轻薄本也能秒开\n\n完全开源免费，Apache 2.0 协议，想在本地跑一个完全听话、推理极强的大模型的兄弟建议直接马住！\n\n模型体验：https://t.co/9AdjNFYrmk\n\n你平时在本地跑大模型，遇到拒答最严重的是写代码还是角色扮演？ #AI #大模型 #开源",
+     "author": "mingzi206",
+     "date": "2026-11-06",
+     "likes": 7275,
+     "views": 537290,
+     "link": "https://x.com/mingzi206/status/2118655841024753692",
+     "media": null,
+     "summary": "Hugging Face 上线 xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic：用 DeepSeek-V4-Pro 约 25 万条数据蒸馏进 Qwen3.5 9B，Q4_K_M 量化后仅 5.6GB，作者称上线下载量 1.8 万次。其称 100 个刁钻提示词中原版 100% 拒答、该版本仅拒 3 个，采用 Heretic 的 ARA 算法移除对齐约束，Apache 2.0 开源。",
+     "analysis": "真正的信号不是「能写什么」，而是 9B 级模型 + 本地推理把 NPC 对话、剧情生成、内容审核旁路的成本压到消费级硬件。一旦社区版本绕过上游对齐，合规责任就从模型厂商转移到产品方——自研 NPC 系统的团队要提前想好审核放在哪一层。",
+     "recommendation": "5.6GB 无审查蒸馏模型上架 Hugging Face，称 100 条测试只拒 3 条",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Eurogamer / X · AI 与版权",
+     "tags": [
+      "AI 版权",
+      "模型能力边界",
+      "平台政策"
+     ],
+     "title": "AI 复刻游戏争议升温，Anthropic 疑似收紧 Claude 的「克隆」能力",
+     "en_title": "As the controversy around AI-created video game copies continues, Anthropic seemingly restricts Claude's cloning abilities.",
+     "full_text": "As the controversy around AI-created video game copies continues, Anthropic seemingly restricts Claude's cloning abilities. https://t.co/CA1WEUrAOh https://t.co/v4spxlgsi7",
+     "author": "eurogamer",
+     "date": "2026-11-07",
+     "likes": 5,
+     "views": 5422,
+     "link": "https://x.com/eurogamer/status/2118909058488967383",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWfgj0BXYAATX8m.jpg"
+     },
+     "summary": "Eurogamer 报道，围绕 AI 直接复刻现有电子游戏的争议持续发酵，Anthropic 似乎已经限制了 Claude 的相应能力。报道称这是对「AI 生成游戏克隆」风波的回应，具体限制方式尚未公开说明。",
+     "analysis": "这是模型厂商第一次为「游戏抄袭」主动收窄能力边界。对从业者的直接信号是靠 prompt 复刻成熟玩法与美术的取巧路线正在被上游掐掉，长期价值回到原创设计与自有资产。",
+     "recommendation": "AI 复刻游戏争议发酵，Anthropic 疑似收紧 Claude 的克隆能力"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer / X · 工作室关闭",
+     "tags": [
+      "工作室关闭",
+      "网易",
+      "海外投资"
+     ],
+     "title": "名越稔洋新工作室解散：《Gang of Dragon》因网易撤资终止开发",
+     "en_title": "Yakuza creator's new studio and its debut game Gang of Dragon are no more after losing funding from NetEase.",
+     "full_text": "Yakuza creator's new studio and its debut game Gang of Dragon are no more after losing funding from NetEase. https://t.co/bM6Wm7pei8 https://t.co/1oS7Dxs2Zr",
+     "author": "eurogamer",
+     "date": "2026-11-07",
+     "likes": 32,
+     "views": 8031,
+     "link": "https://x.com/eurogamer/status/2118969456999239803",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWgXfdXWIAAQWm5.jpg"
+     },
+     "summary": "Eurogamer 报道，《如龙》系列创作者名越稔洋创立的新工作室及其首作《Gang of Dragon》，在失去网易投资后已不复存在，项目与团队一并终止。",
+     "analysis": "这是网易海外投资收缩的又一处落地。对接受大厂投资或出海的工作室，教训很具体：单一资金方断供时若没有 Plan B 就直接归零，签约阶段对 IP 归属、里程碑付款与过渡期资金的条款必须更硬。",
+     "recommendation": "名越稔洋新工作室解散，《Gang of Dragon》因网易撤资终止开发",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer / X · 裁员",
+     "tags": [
+      "Xbox 裁员",
+      "3A 产能",
+      "工作室重组"
+     ],
+     "title": "Xbox 裁员后 id Software 少了约一半成员，负责人仍称「我们做得很好」",
+     "en_title": "\"We're doing great,\" says id Software boss, despite losing \"about half of our studio\" amid devastating Xbox cuts.",
+     "full_text": "\"We're doing great,\" says id Software boss, despite losing \"about half of our studio\" amid devastating Xbox cuts. https://t.co/ZuzCEHpbrB https://t.co/nQACEwMldM",
+     "author": "eurogamer",
+     "date": "2026-11-07",
+     "likes": 6,
+     "views": 4219,
+     "link": "https://x.com/eurogamer/status/2118878858556436911",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWfFF9pWMAAzFgY.jpg"
+     },
+     "summary": "Eurogamer 报道，在 Xbox 本轮大规模裁员中，id Software 失去了「大约一半的工作室成员」，但工作室负责人对外表示「我们做得很好」。报道未披露具体人数与被取消的项目。",
+     "analysis": "「人少了一半但状态很好」正在成为 3A 工作室的标准叙事：团队压缩到核心产能，靠既有 IP 与引擎资产维持产出。对从业者意味着 3A 岗位继续收缩，中腰部团队的机会更多来自低成本高完成度项目。",
+     "recommendation": "Xbox 裁员砍掉 id Software 约一半成员，负责人仍称「我们做得很好」",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer / X · 财报",
+     "tags": [
+      "财报",
+      "Control",
+      "Remedy"
+     ],
+     "title": "Remedy 营收同比暴涨 226%：《控制：共振》成其史上最快卖座作品",
+     "en_title": "Remedy revenue soars by 226% following release of Control Resonant, the developer's fastest-selling game ever.",
+     "full_text": "Remedy revenue soars by 226% following release of Control Resonant, the developer's fastest-selling game ever. https://t.co/BfIr0eDUfm https://t.co/mZWBXh8GQO",
+     "author": "eurogamer",
+     "date": "2026-11-07",
+     "likes": 60,
+     "views": 6441,
+     "link": "https://x.com/eurogamer/status/2118999654788374679",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWgy9OcWAAAcKYE.jpg"
+     },
+     "summary": "Eurogamer 报道，随《控制：共振》（Control Resonant）发售，Remedy 营收同比上升 226%，该作成为工作室历史上卖得最快的一款游戏。",
+     "analysis": "在普遍裁员的年份里，Remedy 用「中等体量 + 强美术风格 + 系列化」跑出正向曲线。《控制》从 2019 年的小众作品变成现金牛，说明长线运营与续作复用资产的价值仍被低估。",
+     "recommendation": "Remedy 营收同比 +226%：《控制：共振》成其史上最快卖座作品"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer / X · 销量里程碑",
+     "tags": [
+      "销量破亿",
+      "Gearbox",
+      "长线运营"
+     ],
+     "title": "《无主之地》系列累计销量破 1 亿份，Gearbox 明年继续加码《无主之地 4》内容",
+     "en_title": "The Borderlands series has sold over 100 million copies, and Gearbox is \"cooking hard on more Borderlands 4 content for next year\".",
+     "full_text": "The Borderlands series has sold over 100 million copies, and Gearbox is \"cooking hard on more Borderlands 4 content for next year\". https://t.co/i3ZD39SFwl https://t.co/HZEkxTAAiy",
+     "author": "eurogamer",
+     "date": "2026-11-07",
+     "likes": 21,
+     "views": 4968,
+     "link": "https://x.com/eurogamer/status/2118954357307716005",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWgJwhlWQAA2647.jpg"
+     },
+     "summary": "Eurogamer 报道，《无主之地》系列全球累计销量已超过 1 亿份；Gearbox 表示正在「大力开发」《无主之地 4》明年的后续内容。",
+     "analysis": "1 亿份是一个 IP 生命周期的分水岭：玩法框架已被大规模验证，后续风险主要落在内容供给节奏而非创新。对做长线服务型产品的团队，「本体 + 持续内容」仍是当前性价比最高的结构。",
+     "recommendation": "《无主之地》系列销量破 1 亿份，Gearbox 明年继续加码《无主之地 4》"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "スチまと / X · 新游推荐",
+     "tags": [
+      "生存建造",
+      "联机合作",
+      "抢先体验"
+     ],
+     "title": "《轨界新生 Railborn》：把《Raft》搬到火车上，用捡来的资源拼一列移动要塞（Washbear Studio 开发）",
+     "en_title": "列車で『Raft』やる異常ゲー。走る要塞、ロマンしかない。",
+     "full_text": "列車で『Raft』やる異常ゲー。走る要塞、ロマンしかない。\n\n見渡す限りの線路が続く異星を舞台にしたサバイバルクラフト。最初はちっぽけなトロッコからスタートして、拾った資源で壁や居住区を積み上げ、自分だけの「動く巨大要塞」を作り上げていくワクワク感が滅茶苦茶アツすぎる。\n『Railborn』 https://t.co/irsfcWom9E",
+     "author": "stmatomato",
+     "date": "2026-11-07",
+     "likes": 1557,
+     "views": 115373,
+     "link": "https://x.com/stmatomato/status/2118900747735818518",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2118873086229663744/img/5wVMgj-Tv0VDb1KW.jpg",
+      "video_url": "https://x.com/stmatomato/status/2118900747735818518/video/1"
+     },
+     "summary": "日本推主 スチまと 推荐的《Railborn》：外星铁轨世界里的生存建造，从一辆小矿车起步，收集资源往上叠墙、建居住区，最终拼成属于自己的移动巨要塞，支持 1-4 人联机。Steam 中文名《轨界新生》，开发商 Washbear Studio，预计 2027 年以抢先体验形式推出。",
+     "analysis": "",
+     "recommendation": "把《Raft》搬到火车上：《轨界新生》用捡来的资源拼一列移动要塞——11.5 万浏览",
+     "featured": true,
+     "game_ref": "Railborn",
+     "enrichment": {
+      "game_name": "Railborn / 轨界新生",
+      "genre": "生存建造 / 冒险 / 联机合作",
+      "developer": "Washbear Studio",
+      "platforms": [
+       "Steam (Windows/macOS/Linux)"
+      ],
+      "price": "未公布",
+      "release_date": "2027 年（抢先体验）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2340970/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2340970/27b13a82ce7ec3d0f2bc173b170c5e881223f2c5/header_schinese.jpg?t=1793819441",
+      "youtube_video": null,
+      "description": "【核心玩法】把《Raft》的「移动庇护所」逻辑从海上搬到铁轨上。玩家从一辆只能勉强站稳的小矿车开始，在轨道纵横的异星世界里搜刮资源，逐节加装车厢：先造墙和储物，再造居住区与工作台，最后把整列车拼成一座会跑的要塞。列车既是基地也是载具，往哪开就等于往哪扩张。\n\n【世界与目标】地图上散布着濒危植物与外星方尖碑两类关键点：前者用于重建生态群落，后者承担探索与叙事推进的作用。玩家需要在「跑得远」和「守得住」之间做取舍——车厢越重越强，但机动性越差。\n\n【联机】支持 1-4 人协作，分工天然明确：一人开车控节奏，其余人负责搜刮、建造与防守，是典型的分工型生存建造结构。\n\n【美术与气质】低多边形的异星铁轨景观，空旷感和「走不完的路」是主要情绪来源，而非恐怖或压迫感。\n\n【优势】题材组合新颖，「列车 = 家 = 载具」一个设定同时解决移动、建造与叙事三个问题；联机半径合理，适合小团队做内容更新。\n\n【不足】目前仅有概念级展示，没有战斗与生存压力的实机细节；抢先体验 2027 年才开，节奏风险偏高。\n\n【综合评价】如果只想看一个点：它把「基地建造」从静态变成了动态，光这一点就足以支撑一个差异化的生存建造产品。",
+      "why_notable": "「列车即基地」把《Raft》的海上漂流逻辑平移到铁轨，题材组合在生存建造品类里足够新鲜",
+      "pcu": "未发售",
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": "《轨界新生》是生存建造游戏，在异星铁轨上组装专属列车、采集濒危植物重建生态，支持 1-4 人联机"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "スチまと / X · 新游推荐",
+     "tags": [
+      "分支叙事",
+      "模拟",
+      "剧情驱动"
+     ],
+     "title": "《Hitch Happens》：搭陌生人的车，选错一次就上错车——分支叙事的搭车模拟器（PopsiHops 开发）",
+     "en_title": "ヒッチハイクで「絶対乗っちゃダメな車」を引き当てるゲーム。",
+     "full_text": "ヒッチハイクで「絶対乗っちゃダメな車」を引き当てるゲーム。\n\n見知らぬ人の車に乗せてもらい、会話の選択肢で物語が分岐するヒッチハイクシミュレーター。陽気なパーティーバスからヤバい犯罪の匂いがする車まで、誰に乗せてもらうかで展開が丸ごと変わるのが最高。\n『Hitch Happens』 https://t.co/PbLg36W9O1",
+     "author": "stmatomato",
+     "date": "2026-11-07",
+     "likes": 406,
+     "views": 29487,
+     "link": "https://x.com/stmatomato/status/2119006444187951324",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2118888870150635520/img/G5F0C1xDriYDj9dK.jpg",
+      "video_url": "https://x.com/stmatomato/status/2119006444187951324/video/1"
+     },
+     "summary": "《Hitch Happens》是一款以搭便车为核心的分支叙事模拟器：玩家在路边拦下陌生人的车，靠对话选项推进剧情，从欢快的派对巴士到透着犯罪气息的车，抽到谁决定整段展开。Steam 页面显示开发商为 PopsiHops，预计 2027 年第二季度推出。",
+     "analysis": "",
+     "recommendation": "拦下陌生人的车，对话选项决定遇到派对巴士还是犯罪现场——2.9 万浏览",
+     "game_ref": "Hitch Happens",
+     "enrichment": {
+      "game_name": "Hitch Happens",
+      "genre": "分支叙事 / 模拟 / 冒险",
+      "developer": "PopsiHops",
+      "platforms": [
+       "Steam (Windows/macOS/Linux)"
+      ],
+      "price": "未公布",
+      "release_date": "2027 年第二季度",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5398980/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5398980/ee29963f449296e2060eb46019c87e1d1eed4b1c/header.jpg?t=1793867798",
+      "youtube_video": null,
+      "description": "【核心玩法】以「搭便车」为唯一核心动作的分支叙事模拟器：玩家站在路边拦车，上车后与司机对话，靠选项推进剧情。每一辆车都是一个独立小故事，从气氛欢快的派对巴士，到一开门就有犯罪气息的车，上车决定的不只是聊什么，而是整段经历会往哪个方向走。\n\n【结构】「一辆车 = 一个场景」的短篇集结构，天然适合碎片化游玩；同时用一个「绝对不该上的那辆车」作为悬念钩子，让玩家明知危险也想试试看会发生什么。\n\n【叙事取向】重点不在解谜或操作，而在人际判断：你从司机的语气、车内陈设里判断这个人靠不靠谱，代价由剧情直接兑现。\n\n【美术与气质】公路片式的美式路边风景，角色造型偏卡通，与潜在的危险形成反差，这类反差正是该类叙事作品的主要张力来源。\n\n【优势】核心动作极其简单，开发成本可控；「选错车」的失败反馈本身就是内容，重复游玩价值高；天然适合做短视频传播。\n\n【不足】分支叙事对文本量的要求极高，一辆车写不好就整段垮掉；题材偏小众，缺少操作型玩法，难以撬动竞速/动作向用户。\n\n【综合评价】本质上是一台「人际关系赌博机」，卖点是好奇心而不是技巧。对小团队来说，这是文本驱动品类里性价比很高的切入点。",
+      "why_notable": "「上车 = 打开一个故事」的短篇集结构，用最简单的交互做出可传播的悬念",
+      "pcu": "未发售",
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": "以搭便车为核心的剧情向模拟器，每位司机对应一条独立分支故事"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Niche Gamer / X · 定档",
+     "tags": [
+      "开放世界",
+      "像素风",
+      "定档"
+     ],
+     "title": "《Petal Runner》：Game Boy 调色板上的开放世界 RPG，定档 2027 年 3 月 8 日（Nano Park Studios 开发）",
+     "en_title": "Game Boy style open-world RPG Petal Runner got a release date!",
+     "full_text": "Game Boy style open-world RPG Petal Runner got a release date! https://t.co/mBU7zeDzQa https://t.co/fjw98zjnRs",
+     "author": "nichegamer",
+     "date": "2026-11-06",
+     "likes": 54,
+     "views": 4210,
+     "link": "https://x.com/nichegamer/status/2118792625465545196",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2118792594616385536/pu/img/CbCMEGl8Fd49cnDY.jpg",
+      "video_url": "https://x.com/nichegamer/status/2118792625465545196/video/1"
+     },
+     "summary": "Niche Gamer 报道，《Petal Runner》确定发售日为 2027 年 3 月 8 日。玩家骑着小摩托与伙伴卡利、琦拉穿行在阳光朋克的蓝宝石谷，做快递、交朋友、玩小游戏，画面刻意做成 Game Boy 时代的像素调色板风格，开发商为 Nano Park Studios。",
+     "analysis": "",
+     "recommendation": "Game Boy 调色板上的开放世界：《Petal Runner》定档 2027 年 3 月 8 日",
+     "game_ref": "Petal Runner",
+     "enrichment": {
+      "game_name": "Petal Runner",
+      "genre": "开放世界 / 冒险 / 角色扮演",
+      "developer": "Nano Park Studios",
+      "platforms": [
+       "Steam (Windows/macOS/Linux)"
+      ],
+      "price": "未公布",
+      "release_date": "2027 年 3 月 8 日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2795110/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2795110/header.jpg?t=1793201268",
+      "youtube_video": null,
+      "description": "【核心玩法】玩家骑着小摩托，与伙伴卡利、琦拉一起在阳光朋克的蓝宝石谷做「花娜精灵配送员」：接单、跑图、按时送达，路上顺手交朋友、玩小游戏。核心循环接近《宝可梦》的城镇巡游 + 干线移动，但没有战斗，压力来自路线规划与角色关系推进。\n\n【世界与气质】「阳光朋克」是它最明确的差异化标签——不是末世，而是一个明亮、悠哉、科技与花草共存的谷地，情绪基调接近治愈系。\n\n【美术】刻意压到 Game Boy 级别的四阶色板与像素分辨率，不是买不起高清，而是把限制当风格：画面粗糙但构图讲究，靠色调和光影氛围拿分。\n\n【内容结构】开放世界 + 配送任务 + 小游戏三件套，节奏松、无失败惩罚，适合短时段游玩。\n\n【优势】「GB 色板 + 开放世界」这个组合在市场上极稀有，视觉辨识度极高；无战斗设计大幅降低开发成本，也避开了与主流 RPG 的正面竞争；情绪价值明确，容易在社媒传播。\n\n【不足】没有战斗意味着缺少目标张力，容易变成「散步模拟器」；像素风加治愈系在商业上属于窄众，销量天花板不高。\n\n【综合评价】它的赌注是「玩家愿意为氛围买单」。这类项目更适合小团队做口碑型作品，而不是冲量。",
+      "why_notable": "Game Boy 四阶色板做开放世界 RPG，无战斗的「阳光朋克」配送生活，视觉与品类组合罕见",
+      "pcu": "未发售",
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": "阳光朋克像素风开放世界 RPG，玩家骑摩托在蓝宝石谷做配送员，预计 2027 年 3 月 8 日发售"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Rat in a Bag / X · 开发者自荐",
+     "tags": [
+      "恐怖动作",
+      "Roguelite",
+      "独立"
+     ],
+     "title": "《GHOSTPUNCH》：怪物就是你——每局都在变强的恐怖动作 Roguelite（Rat in a Bag 开发）",
+     "en_title": "yeah, this is my #indiegame",
+     "full_text": "yeah, this is my #indiegame https://t.co/7lDP2T8NM8",
+     "author": "GhostpunchGame",
+     "date": "2026-11-06",
+     "likes": 2797,
+     "views": 54820,
+     "link": "https://x.com/GhostpunchGame/status/2118765339194376310",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2118765282223075328/img/lVKgOqUynbGB5mcq.jpg",
+      "video_url": "https://x.com/GhostpunchGame/status/2118765339194376310/video/1"
+     },
+     "summary": "开发者自荐的《GHOSTPUNCH》主打「怪物就是你」：每局结束都会变强，靠独特道具、可解锁能力与强调表现力的战斗系统，一步步夺回自己的房子。Steam 页面显示开发商为 Rat in a Bag，预计 2027 年第二季度推出，类型为动作。",
+     "analysis": "",
+     "recommendation": "怪物就是你的恐怖 Roguelite：《GHOSTPUNCH》每局结束都变强——5.4 万浏览",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Zietes / X · 同人作品",
+     "tags": [
+      "Godot",
+      "同人",
+      "竞速"
+     ],
+     "title": "用 Godot 做的宝可梦同人赛车跑完 2,200 米：Viridian Forest 赛道 8 倍速实机",
+     "en_title": "I made a Pokémon racing game in Godot, and it's out now.",
+     "full_text": "I made a Pokémon racing game in Godot, and it's out now.\n\nHere's a whole 2,200 m race through Viridian Forest at 8x speed, then the last stretch at normal speed 🏁\n\n#indiedev #MadeWithGodot https://t.co/yFbWRVmczr",
+     "author": "Zietes_",
+     "date": "2026-11-06",
+     "likes": 264,
+     "views": 14280,
+     "link": "https://x.com/Zietes_/status/2118796342130602458",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2118796315261857793/pu/img/XCZ3CYNYJGOWqoHV.jpg",
+      "video_url": "https://x.com/Zietes_/status/2118796342130602458/video/1"
+     },
+     "summary": "开发者 Zietes 用 Godot 制作的宝可梦同人赛车已上线，并公开穿越 Viridian Forest 的 2,200 米完整赛道实机：前段 8 倍速、最后一段恢复常速。可作为 Godot 做小型竞速或同人项目的技术参考。",
+     "analysis": "",
+     "recommendation": "Godot 里做宝可梦同人赛车，2,200 米 Viridian Forest 8 倍速实机",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "d954mas / X · 数据迭代",
+     "tags": [
+      "网页游戏",
+      "留存优化",
+      "小游戏"
+     ],
+     "title": "《Dig a Million》8 次 Poki 测试：平均游玩时长从 2 分 11 秒拉到 6 分 46 秒",
+     "en_title": "This is what iterating on a game looks like.",
+     "full_text": "This is what iterating on a game looks like.\n\nAcross 8 @Poki tests, average playtime went from 2m 11s to 6m 46s.\n\nWith 500 players per test, results are noisy. Not every test shows a gain, but the overall progress is clear.\n\nHere's how Dig a Million evolved 👇\n\n#gamedev #indiedev https://t.co/rQyeNdZn8k",
+     "author": "d954mas",
+     "date": "2026-11-07",
+     "likes": 43,
+     "views": 3143,
+     "link": "https://x.com/d954mas/status/2118936577552318783",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2118935948905881600/img/PIyCE51zj9er3-_H.jpg",
+      "video_url": "https://x.com/d954mas/status/2118936577552318783/video/1"
+     },
+     "summary": "开发者 d954mas 公开《Dig a Million》的迭代数据：在 Poki 做了 8 次测试、每次约 500 名玩家，平均游玩时长从 2 分 11 秒提升到 6 分 46 秒。作者强调单次测试噪声很大、并非每次都有提升，但整体趋势明确。",
+     "analysis": "",
+     "recommendation": "8 次 Poki 测试把平均游玩时长从 2 分 11 秒拉到 6 分 46 秒",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "陈发财 / X · 开发工具",
+     "tags": [
+      "Blender",
+      "AI 工作流",
+      "美术管线"
+     ],
+     "title": "94 个 Blender Skill 串起建模到导出：给 AI 配一套「美术总监」工作流",
+     "en_title": "如今做独立游戏，写代码已经算不上门槛了",
+     "full_text": "如今做独立游戏，写代码已经算不上门槛了\n因此美术的重要性就格外突出\n\n这个 GitHub 项目里包含了\n94 个 Skill，覆盖建模、拓扑、UV、材质、灯光、绑定、动画，以及面向 Unity / Unreal / Godot 的导出\n\n此外还有自动化工作流：只要给出一个需求，blender-director 就会自动把 hard-surface → UV → 材质 → 优化 → 导出这一串流程串联执行。\n\n它还非常契合常见独立游戏的美术口味，自带 lowpoly、像素、手绘、horror、PSX、等距等风格包，另外还有解谜平台、生存、RPG 等类型向的指引\n\n简直相当于招了一个专业的美术团队\nhttps://t.co/gTNPhOS76i",
+     "author": "Chenfacai0",
+     "date": "2026-11-07",
+     "likes": 116,
+     "views": 5458,
+     "link": "https://x.com/Chenfacai0/status/2119026074176860353",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWbdF8sa8AAHR3C.jpg"
+     },
+     "summary": "推主 陈发财 介绍一个 GitHub 项目：内含 94 个 Skill，覆盖建模、拓扑、UV、材质、灯光、绑定、动画，以及面向 Unity / Unreal / Godot 的导出。项目还配套 blender-director 自动化流程，把 hard-surface → UV → 材质 → 优化 → 导出串成一条链，并自带 lowpoly、像素、手绘、horror、PSX、等距等风格包。",
+     "analysis": "把美术管线拆成可被 Agent 调用的原子 Skill，是「AI 做美术」真正落地的形态——不是一键生成模型，而是把标准工序自动化。对小团队，价值在于把美术流程里的隐性经验显性化、可复用。",
+     "recommendation": "94 个 Blender Skill 串起建模到导出，还带 lowpoly/像素/PSX 风格包",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "stink-O / X · 工程实践",
+     "tags": [
+      "Rust",
+      "引擎重写",
+      "物理模拟"
+     ],
+     "title": "有人用 Rust 从零重写了 Minecraft，然后往里塞了一场海啸",
+     "en_title": "Minecraft was rewritten from scratch in Rust. So I modded in a tsunami",
+     "full_text": "Minecraft was rewritten from scratch in Rust.\n\nSo I modded in a tsunami https://t.co/Z8OSzmD00j",
+     "author": "Stinkysunstep",
+     "date": "2026-11-06",
+     "likes": 16005,
+     "views": 821964,
+     "link": "https://x.com/Stinkysunstep/status/2118712858326302770",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2118708099078930432/img/wlC7QHfc-4wVUf_E.jpg",
+      "video_url": "https://x.com/Stinkysunstep/status/2118712858326302770/video/1"
+     },
+     "summary": "推主 stink-O 展示：一个用 Rust 从头重写的 Minecraft 实现，他在其中加入了完整的水体模拟海啸，村庄被整片冲毁。推文获 1.6 万赞、82 万浏览，属于「重写引擎 + 物理模组」的典型技术展示。",
+     "analysis": "看点不在复刻 Minecraft，而在于「高性能重写 + 现代渲染/物理」的成本已经低到个人可做。对做沙盒或建造类产品的团队，Rust 在客户端模拟这块的可行性又多了一个样本。",
+     "recommendation": "用 Rust 从零重写 Minecraft，再往里塞一场能冲毁村庄的海啸——82 万浏览"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**中资退潮与 3A 减法**\n名越稔洋创立的新工作室连同首作《Gang of Dragon》在失去网易投资后终止；同一周，Xbox 裁员让 id Software 少了约一半成员。另一边 Remedy 靠《控制：共振》把营收拉高 226%，《无主之地》系列累计销量破 1 亿份——收缩与增长同时发生。\n\n**AI 的两条边界**\nVercel CEO 提出生成式 UI 会成为人机交互主流范式，模型直接产出可交互界面；Hugging Face 上出现 5.6GB 的无审查蒸馏模型；而在游戏抄袭争议中，Anthropic 疑似收紧了 Claude 的克隆能力。\n\n**小团队的作品**\n《轨界新生》把《Raft》搬到铁轨上，用捡来的资源拼移动要塞；《Hitch Happens》把搭便车做成一辆车一个故事的分支叙事；Game Boy 色调的《Petal Runner》定档 2027 年 3 月。开发侧，94 个 Blender Skill 把美术管线拆成 Agent 可调用的工序。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
