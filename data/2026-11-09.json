@@ -1,0 +1,521 @@
+{
+  "date": "2026-11-09",
+  "meta": {
+    "raw_count": 170,
+    "filtered_count": 90,
+    "selected_count": 15,
+    "crawl_time": "2026-11-09 09:33"
+  },
+  "lede": "《时之笛》Switch 2 重制版被空中无限跳 Bug 打穿速通规则；BioWare 纪录片拍到一半工作室被关，联合创始人估算救回《质量效应》要 2 亿美元起；Anthropic 悄悄改写 Claude Code 条款，放行「相似机制」却仍把角色与美术算作复刻。",
+  "editors_pick": [
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "《时之笛》Switch 2 重制版可空中无限跳，速通规则被打穿——196 万浏览"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "说话才能看见路，出声就会被抓：《Echo Mates》把麦克风做成核心机制——170 万浏览"
+    },
+    {
+      "section_id": "tools",
+      "item_index": 0,
+      "hook": "2600 个 three.js 3D 模型开源，每个都是可调参数的程序——10.9 万浏览"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Anthropic 改写 Claude Code 条款：放行「相似机制」，仍禁止复刻角色与美术\n「AI 只擅长做像卖场电视屏保的游戏」——3.6 万赞的行业共鸣\n「AI 几个月做 3A」被开发者反驳：先读《门的问题》"
+    },
+    {
+      "id": "industry",
+      "text": "《时之笛》Switch 2 重制版可空中无限跳，速通规则被打穿\nBioWare 纪录片拍到一半工作室被关；联合创始人称救回《质量效应》要 2 亿美元起\n《魔兽世界：Forever》创系列最大上线，新玩家数为 15 年最高\n「加载界面放小游戏还算侵权吗」——4.4 万赞，专利到期十年仍无人敢用"
+    },
+    {
+      "id": "indie",
+      "text": "《Echo Mates》：说话才能看见路，出声又会被怪物听见\n《CHRONO PUNK》：跑酷接连段的第三人称 Roguelite\n《Mouse Chef: Dig Out》：用勺子挖穿监狱的 1930 年代动画风越狱"
+    },
+    {
+      "id": "tools",
+      "text": "2600 个 three.js 3D 模型开源，每个都是可调参数的程序\n10 万美元网页游戏 Jam：ElevenLabs、fal、MeshyAI 赞助"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "chasm / X · AI 平台政策",
+          "tags": [
+            "AI 版权",
+            "Claude Code",
+            "游戏复刻"
+          ],
+          "title": "Anthropic 悄悄改写 Claude Code 的「禁止复刻游戏」条款：明确放行「相似机制」",
+          "en_title": "Less than a week after the \"no game recreations\" rule showed up in Claude Code, Anthropic quietly rewrote it.",
+          "full_text": "ANTHROPIC IS NOW IN DAMAGE CONTROL 🚨\n\nLess than a week after the “no game recreations” rule showed up in Claude Code, Anthropic quietly rewrote it. Same server flag, “tengu_heron_brook”.\n\nTwo things got added:\n• “or with similar mechanics”: copying a game’s gameplay is now explicitly allowed\n• “(its name, characters, art, music, levels or look)”: now spells out what actually counts as a “recreation”\n\nThey also added a second flag, “original_games_guidance”, and Claude Code 2.1.317 now has the new wording built straight into the app.\n\nStill no setting to turn it off.",
+          "author": "chasmmmmmmmmmmm",
+          "date": "2026-11-07",
+          "likes": 1371,
+          "views": 251210,
+          "link": "https://x.com/chasmmmmmmmmmmm/status/2119151603764646099",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWi84gcWoAElHLS.jpg"
+          },
+          "summary": "距离 Claude Code 出现「不得复刻游戏」条款不到一周，Anthropic 用同一个服务端开关 «tengu_heron_brook» 重写了措辞：新增「或相似机制」，等于明确允许复制玩法；同时补齐「复刻」的定义——指游戏的名称、角色、美术、音乐、关卡与外观。另加入第二个开关 «original_games_guidance»，Claude Code 2.1.317 已内置新文案，但仍然没有让用户关闭这项限制的设置。",
+          "analysis": "这条规则的边界从「玩法」退回到「表达」，与版权法上的思想/表达二分法基本对齐。对独立开发者的实际含义是：拿 AI 做玩法原型、机制参考的风险下降，但角色、美术、音乐、关卡仍然高危；而「服务端旗标 + 无开关」说明这是一次可随时再调整的灰度策略，不宜当成稳定承诺来规划产线。",
+          "recommendation": "Anthropic 改写 Claude Code 条款：复制玩法放行，角色美术仍算「复刻」——25.1 万浏览",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "SkyGenz / X · AI 观点",
+          "tags": [
+            "AI 生成",
+            "美术同质化",
+            "行业讨论"
+          ],
+          "title": "「AI 只擅长做看起来像卖场电视屏保的游戏」——一句吐槽拿到 3.6 万赞",
+          "en_title": "It’s fascinating that AI is really only good at making games that look like Best Buy TV screensavers",
+          "full_text": "It’s fascinating that AI is really only good at making games that look like Best Buy TV screensavers",
+          "author": "SkyGenz",
+          "date": "2026-11-07",
+          "likes": 35830,
+          "views": 721441,
+          "media": null,
+          "summary": "推主 @SkyGenz 用一句比喻概括当下 AI 生成游戏的视觉同质化：高饱和、光滑、找不到叙事重心的「卖场电视屏保」质感。该推获得 3.58 万赞、72 万浏览，评论区里大量开发者贴出自己见过的同款 AI demo。",
+          "analysis": "这句吐槽点中了当前生成模型的能力分布：最擅长第一眼惊艳，最不擅长交互节奏、关卡意图与长时段反馈。对团队来说，AI 目前更适合产出概念图与素材，而不是替代玩法设计；把「看起来像游戏」当成「是游戏」，是这一轮 AI 热潮里最常见的误判。",
+          "recommendation": "「AI 只会做像卖场电视屏保的游戏」——3.6 万赞的行业共鸣",
+          "featured": false
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Di Huang / X · 开发认知",
+          "tags": [
+            "AI 与开发",
+            "3A 产能",
+            "设计复杂度"
+          ],
+          "title": "「AI 几个月做出 3A」被开发者反驳：先读一遍《门的问题》",
+          "en_title": "Some of my friends think AI will make it possible to build AAA games in just a couple of months.",
+          "full_text": "Some of my friends think AI will make it possible to build AAA games in just a couple of months. I think that seriously underestimates how complex game development is.\n\nI often point them to game designer Liz England’s “The Door Problem.” It’s a great example of how much thought goes into game design. Making a good game still takes hard work and experience.\n\n#gamedev #game",
+          "author": "dihuang111",
+          "date": "2026-11-08",
+          "likes": 853,
+          "views": 58212,
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HWmbmGiaEAAo8n-.jpg"
+          },
+          "summary": "开发者 Di Huang 回应「AI 让几个月做 3A 成为可能」的说法：这严重低估了游戏开发的复杂度，并推荐设计师 Liz England 的经典文章《The Door Problem》——一扇门就要牵动动画、程序、音效、任务、QA 多条线。他的结论是：做好游戏依然需要硬功夫与经验。",
+          "analysis": "这条与当天的「AI 屏保论」互为补充：真正的瓶颈不在写代码，而在需求收敛与跨工种协作。《门的问题》十年后仍被反复引用，是因为它描述的正是 AI 目前最难接管的部分——把模糊的人类意图拆成可验证的工程约束。",
+          "recommendation": "「AI 几个月做 3A」被开发者反驳：先读《门的问题》——5.8 万浏览",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "れあ / X · 玩家事件",
+          "tags": [
+            "塞尔达传说",
+            "Switch 2",
+            "速通"
+          ],
+          "title": "《时之笛》Switch 2 重制版出现空中无限跳 Bug，速通圈直接炸锅",
+          "en_title": "このバグ存在しちゃダメでしょｗ 慣れると空中で無限にジャンプできちゃう RTAがぶっ壊れるぞコレｗ",
+          "full_text": "このバグ存在しちゃダメでしょｗ\n慣れると空中で無限にジャンプできちゃう\nRTAがぶっ壊れるぞコレｗ\n\n#NintendoSwitch2\n#ゼルダの伝説\n#時のオカリナ https://t.co/WA3kLYgplS",
+          "author": "ORCinfo",
+          "date": "2026-11-08",
+          "likes": 11100,
+          "views": 1959682,
+          "link": "https://x.com/ORCinfo/status/2119287501592613245",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2119286835151278080/img/_7xKgC4fEDJ1qE6J.jpg",
+            "video_url": "https://x.com/ORCinfo/status/2119287501592613245/video/1"
+          },
+          "summary": "玩家上传的实机片段显示，《塞尔达传说：时之笛》Switch 2 重制版存在可复现的空中连续跳跃 Bug：掌握节奏后能在空中无限起跳，直接绕过地形与关卡限制。推主点名这会摧毁 RTA（速通）规则，视频播放量已接近 196 万。",
+          "analysis": "重制版重做手感与判定后，最容易出问题的就是移动系统的边界条件。对做重制/移植的团队，这提醒得很直接：老游戏里「已知的边界」在新物理与帧率下会重新变成未知；上线后 48 小时内速通社区的反馈，往往比常规 QA 更早暴露系统性 Bug。",
+          "recommendation": "《时之笛》Switch 2 重制版可空中无限跳，速通规则被打穿——196 万浏览",
+          "featured": true,
+          "game_ref": "The Legend of Zelda: Ocarina of Time"
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "PC Gamer / Eurogamer · 工作室关闭",
+          "tags": [
+            "BioWare",
+            "EA",
+            "纪录片"
+          ],
+          "title": "BioWare 纪录片拍到一半工作室被关：《Massive Effect》变成一场告别",
+          "en_title": "A BioWare documentary was already in the works when the shutdown was announced",
+          "full_text": "A BioWare documentary was already in the works when the shutdown was announced https://t.co/Xb0zZx0zDm",
+          "author": "pcgamer",
+          "date": "2026-11-08",
+          "likes": 185,
+          "views": 16128,
+          "link": "https://x.com/pcgamer/status/2119242995480604920",
+          "media": {
+            "type": "image",
+            "url": "https://assetsio.gnwcdn.com/mass-effect-shepard-sad.jpg"
+          },
+          "summary": "PC Gamer 与 Eurogamer 报道：纪录片《Massive Effect: The BioWare Story》在 EA 宣布关闭工作室之前已拍摄两年，采访了 Ray Muzyka、Greg Zeschuk、Casey Hudson、David Gaider 等创始与核心成员，计划明年上映。同期，BioWare 联合创始人 Trent Oster 估算，要让新《质量效应》达到玩家期待的 3A 水准，预算需 2 亿美元以上；#SaveMassEffect 请愿签名已超过 31.7 万。（多家报道：PC Gamer、Eurogamer）",
+          "analysis": "一个工作室的关闭同时产出了纪录片、请愿书与「复活报价」，说明 IP 的情感资产寿命远长于组织本身。对从业者的现实提示：3A 续作的成本门槛已经高到必须配一个「更大的 IP 计划」才算得过账，靠单作翻身的窗口正在关闭。",
+          "recommendation": "BioWare 纪录片拍到一半工作室被关；联合创始人称救回《质量效应》要 2 亿美元起",
+          "featured": true,
+          "game_ref": "Mass Effect"
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer / X · 产品表现",
+          "tags": [
+            "魔兽世界",
+            "暴雪",
+            "MMO"
+          ],
+          "title": "《魔兽世界：Forever》成 WoW 史上最大规模上线，新玩家数为 15 年最高",
+          "en_title": "WoW: Forever is the biggest launch in World of Warcraft history, says Blizzard",
+          "full_text": "WoW: Forever is the biggest launch in World of Warcraft history, says Blizzard\nhttps://t.co/qYWQm4v3oY https://t.co/YFHFbFyb2D",
+          "author": "eurogamer",
+          "date": "2026-11-08",
+          "likes": 4,
+          "views": 3866,
+          "link": "https://x.com/eurogamer/status/2119417448843673735",
+          "media": {
+            "type": "image",
+            "url": "https://assetsio.gnwcdn.com/wow-forever.png"
+          },
+          "summary": "暴雪称 11 月 4 日上线的《魔兽世界：Forever》创下系列最高的同时在线人数与回归玩家纪录，官方口径是「WoW 史上最大规模上线」；执行制作人 Holly Longdale 补充，这是 15 年来新玩家最多的一次 WoW 上线。暴雪尚未公布具体数字。",
+          "analysis": "把经典旧世重制成「Classic Plus」，等于把怀旧做成了新客获取渠道，而不是只服务老玩家的情怀产品——15 年新玩家新高是关键信号。对长线运营产品，重开一个「干净起点」的服务器，可能比再加一个资料片更能拉新，也更适合做社交裂变。",
+          "recommendation": "《魔兽世界：Forever》创系列最大上线，新玩家数为 15 年最高",
+          "featured": true,
+          "game_ref": "World of Warcraft: Forever"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "ashlee! / X · 设计与专利",
+          "tags": [
+            "游戏专利",
+            "加载界面",
+            "设计空间"
+          ],
+          "title": "「加载界面里放小游戏还算侵权吗？」一条提问拿到 4.4 万赞",
+          "en_title": "so are we allowed to put minigames in our loading screens or is that still patented",
+          "full_text": "so are we allowed to put minigames in our loading screens or is that still patented",
+          "author": "ashlee3dee",
+          "date": "2026-11-07",
+          "likes": 44263,
+          "views": 964940,
+          "media": null,
+          "summary": "开发者 @ashlee3dee 发问：现在可以在加载界面里塞小游戏了吗，还是仍然受专利保护？这条一句话推文获得 4.43 万赞、96 万浏览，评论区围绕南梦宫著名的「加载界面小游戏」专利展开讨论。",
+          "analysis": "南梦宫那项加载界面小游戏专利早已过了 20 年保护期，但行业的记忆比法律期限长——大量团队仍默认这是禁区。它提示一件事：被专利吓退的设计空间，在专利失效后往往还要很久才被重新发现；做玩法盘点时，「能不能做」和「有没有人做」是两个不同的问题。",
+          "recommendation": "「加载界面放小游戏还算侵权吗」——4.4 万赞，专利到期十年仍无人敢用",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "ゲムのすけ / X · 抢先体验",
+          "tags": [
+            "合作恐怖",
+            "语音机制",
+            "抢先体验"
+          ],
+          "title": "《Echo Mates》：对着麦克风说话才能看见路，出声又会被怪物听见（个人开发者 Vasilii Privalov）",
+          "en_title": "「声出していこう！」→死。喋らないと何も見えない、でも喋ると怪物に見つかる",
+          "full_text": "「声出していこう！」→死\n\n喋らないと何も見えない\nでも、喋ると怪物に見つかる\n\n声が暗闇を照らす“懐中電灯”になる\nしかも仲間の声を真似る怪物までいる\n\n声を出しても出さなくても地獄\n1～4人協力ホラー『Echo Mates』早期アクセス開始\nセールで1,190円\nhttps://t.co/L4ukrkgqQj https://t.co/dzaHixOmen",
+          "author": "dotpixel3d",
+          "date": "2026-11-08",
+          "likes": 15957,
+          "views": 1702924,
+          "link": "https://x.com/dotpixel3d/status/2119248543315853423",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2119078983476162560/img/-NODGifBXXyabF1u.jpg",
+            "video_url": "https://x.com/dotpixel3d/status/2119248543315853423/video/1"
+          },
+          "summary": "1-4 人合作恐怖游戏《Echo Mates》已在 Steam 开启抢先体验：声音是唯一光源，说话会照亮周围，也会把怪物引过来；部分怪物会用队友的声音讲话，还有怪物会让你把队友看成敌人。麦克风是核心机制而非语音聊天，必须戴耳机；国区首发 85 折约 29.75 元。",
+          "analysis": "",
+          "recommendation": "说话才能看见路，出声就会被抓：《Echo Mates》把麦克风做成核心机制——170 万浏览",
+          "featured": true,
+          "game_ref": "Echo Mates",
+          "enrichment": {
+            "game_name": "Echo Mates",
+            "genre": "合作恐怖 / 生存恐怖 / 第一人称",
+            "developer": "Vasilii Privalov（个人开发者）",
+            "platforms": [
+              "Steam (Windows)"
+            ],
+            "price": "¥29.75（首发 85 折，原价 ¥35；日区 1,190 日元）",
+            "release_date": "已发售 · 2026 年 11 月 4 日（抢先体验）",
+            "steam_rating": "92% 好评（26 条评价）",
+            "steam_url": "https://store.steampowered.com/app/5113760/Echo_Mates/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5113760/2b764f74f7e07eac468ffa380c84166348e91814/header.jpg?t=1793808570",
+            "youtube_video": null,
+            "description": "【核心玩法】把「声音」同时变成光源和仇恨值。玩家在近乎全黑的地下设施里，说话、脚步、掉落的箱子都会产生一圈声波，短暂照亮周围；照亮范围越大，看得越清楚，被听见的概率也越高。麦克风不是语音聊天，而是操作的一部分——系统读取真实音量，低声说话只照亮几米，尖叫能照亮半层楼，也会把整层的东西招来。\n\n【关卡结构】合同制下潜：选一份合约、坐电梯下去，在当班时间内完成任务，把货装上车。每次下潜都是新生成的关卡，越深报酬越高、生还率越低；两次下潜之间的基地与商店持续成长。\n\n【心理机制】怪物不只靠听觉：有一种会用队友的声音说话，另一种会让你把队友看成怪物——「先开枪还是先确认」被做成了机制，多人局的信任成本被刻意拉高。部分门还需要用正确的音高唱开。\n\n【美术与实现】个人开发者 Vasilii Privalov 主导，商店页明确披露使用生成式 AI 辅助部分 3D 模型、音效与宣传图，但全部经手工修改、绑定与混音，游戏中不调用任何 AI 服务。\n\n【优势】把「语音」从社交功能变成核心资源，是这个品类少见的机制级创新；抢先体验版即含完整 1-4 人战役、十余种声敏怪物、五处场景与三个存档位。\n\n【不足】评价样本仍少（26 条），内容深度与重复可玩性待验证；强制麦克风 + 耳机把一部分玩家挡在门外，本地化与网络质量也会直接影响体验。\n\n【综合评价】它证明恐怖游戏还剩没被用过的输入方式——不是手，是嘴。",
+            "why_notable": "把麦克风做成光源与仇恨值的双重开关，一条预告片 170 万浏览；同时是「个人开发者 + AI 辅助资产」的公开样本",
+            "pcu": "未公布",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": "《Echo Mates》是 1-4 人合作恐怖游戏，声音既是唯一光源也是怪物的诱饵，需麦克风与耳机，2026 年 11 月 4 日开启抢先体验"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "スチまと / X · 新游推荐",
+          "tags": [
+            "动作 Roguelite",
+            "跑酷",
+            "风格化战斗"
+          ],
+          "title": "《CHRONO PUNK》：跑酷接连段的第三人称 Roguelite，被形容成「噬魂师 × 王国之心」（SoulGear Studios 开发）",
+          "en_title": "「ソウルイーター × キングダムハーツ」？？？ アートもスピードも、全部クソかっこいい。",
+          "full_text": "「ソウルイーター × キングダムハーツ」？？？\nアートもスピードも、全部クソかっこいい。\n\nパルクールとスタイリッシュな戦闘を組み合わせたローグライト。重力無視の動きでステージを飛び回り、敵の群れをなぎ倒していく。海外ニキも「10代の頃の妄想が全部詰まってる」って絶賛。\n『CHRONO PUNK』 https://t.co/aTIF9OpwNT",
+          "author": "stmatomato",
+          "date": "2026-11-08",
+          "likes": 2825,
+          "views": 130668,
+          "link": "https://x.com/stmatomato/status/2119263135575994525",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2119085422475399169/img/JNqDv-nkjIaCXHYa.jpg",
+            "video_url": "https://x.com/stmatomato/status/2119263135575994525/video/1"
+          },
+          "summary": "日本推主 スチまと 推荐的《CHRONO PUNK》：第三人称动作 Roguelite，把高速跑酷与连段战斗结合，靠接近「无视重力」的位移在关卡里穿梭、成片清怪；可单人也可组队。Steam 页面显示开发商 SoulGear Studios，发售日未定，标注支持 Windows 与 Linux。",
+          "analysis": "",
+          "recommendation": "《CHRONO PUNK》：跑酷接连段的第三人称 Roguelite，被称「噬魂师 × 王国之心」——13 万浏览",
+          "featured": false,
+          "game_ref": "CHRONO PUNK",
+          "enrichment": {
+            "game_name": "CHRONO PUNK",
+            "genre": "第三人称动作 / Roguelite / 跑酷",
+            "developer": "SoulGear Studios",
+            "platforms": [
+              "Steam (Windows/Linux)"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5081550/CHRONO_PUNK/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5081550/c59f2bb2a541b4c600432c7597acbbf61ad7be33/header.jpg?t=1793917974",
+            "youtube_video": null,
+            "description": "【核心玩法】高速位移 + 连段战斗。角色可以在场景中做接近「无视重力」的跑酷机动，快速贴身、上挑、横扫，把成群的敌人一次性清掉；战斗强调节奏与连段，而不是站桩输出。\n\n【构筑结构】Roguelite 框架：自定义 Stitch（机体）、选择武器、每局堆叠加成，形成不同流派的打法；单人可玩，也支持组队（官方描述为 Go Alone or Team up）。\n\n【世界观与美术】舞台名为 Clockwork，玩家对抗名为 Consortium 的势力；视觉走高饱和、强动效的风格化路线，这也是推主把它类比「噬魂师 × 王国之心」的原因。\n\n【优势】把跑酷的移动自由度直接接进战斗循环，观感上限很高；风格化表现在短视频平台天然占优——一条推荐推就带来 13 万浏览，海外玩家的反馈是「把 10 代时的妄想全塞进去了」。\n\n【不足】目前只有展示片段与商店页，发售日未定；高速战斗的动作手感、命中反馈与镜头控制是这类产品的生死线，现阶段无法判断。\n\n【综合评价】它卖的不是题材而是速度感。如果正式版能把跑酷与连段真正缝在一起，会是 Roguelite 品类里辨识度很高的一作。",
+            "why_notable": "把跑酷接进动作 Roguelite 的战斗循环，风格化表现在社交平台已经验证过一轮",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": "《CHRONO PUNK》是第三人称动作 Roguelite，结合高速跑酷与连段战斗，开发商 SoulGear Studios，发售日未定"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "Mouse Chef: Dig Out / X · 官方账号",
+          "tags": [
+            "越狱",
+            "烹饪制作",
+            "1930s 动画风"
+          ],
+          "title": "《Mouse Chef: Dig Out》：用一把勺子挖穿监狱，1930 年代动画风的越狱冒险（Paiband Game Studio 开发）",
+          "en_title": "INDIE GAMES ARE ART. Just look at the potato",
+          "full_text": "INDIE GAMES ARE ART. Just look at the potato https://t.co/gk5ZRaIMOt",
+          "author": "MouseDigOut",
+          "date": "2026-11-07",
+          "likes": 4149,
+          "views": 955088,
+          "link": "https://x.com/MouseDigOut/status/2119088234726600982",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2119087351351668736/img/rKt6eS6RwZ8f_T-t.jpg",
+            "video_url": "https://x.com/MouseDigOut/status/2119088234726600982/video/1"
+          },
+          "summary": "官方账号放出的实机片段里，一只老鼠厨师用勺子挖墙、制作工具、烹饪食物，一路打穿监狱。Steam 页面显示类型为动作/冒险/独立，开发商 Paiband Game Studio，发售日未公布；美术走 20 世纪 30 年代经典动画的橡皮管风格。",
+          "analysis": "",
+          "recommendation": "一只老鼠用勺子挖穿监狱：《Mouse Chef: Dig Out》把越狱做成 1930 年代动画——95.5 万浏览",
+          "featured": false,
+          "game_ref": "Mouse Chef: Dig Out",
+          "enrichment": {
+            "game_name": "Mouse Chef: Dig Out",
+            "genre": "动作 / 冒险 / 独立",
+            "developer": "Paiband Game Studio",
+            "platforms": [
+              "Steam (Windows)"
+            ],
+            "price": "未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4298700/Mouse_Chef_Dig_Out/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4298700/d7ac662eba384c4cb30dcb7a0040ea8fc54f76e4/header.jpg?t=1793880080",
+            "youtube_video": null,
+            "description": "【核心玩法】挖掘式越狱：用一把勺子从牢房一路挖出去，边挖边把材料做成工具与食物，遇到守卫和障碍就现场解决。「挖掘—制作—烹饪」三条线互相供料，构成一个很短的高频循环，适合用手柄或键鼠反复刷。\n\n【美术与表演】1930 年代橡皮管动画（rubber hose）质感：圆润线条、弹性形变、近似无对白的夸张表演，单帧截图就像老动画赛璐璐。推文只写了一句「看看这颗土豆」，就拿到 95.5 万浏览。\n\n【题材与氛围】厨房与监狱的组合天然带黑色幽默：你是厨师，也是囚犯，食物既是资源也是武器，这种「温和外表 + 越狱内核」的反差是它的记忆点。\n\n【优势】视觉辨识度极高，在信息流里几乎不会被误认；「挖」这个动作本身就很适合短视频传播，传播成本极低。\n\n【不足】尚未公布发售日；挖掘与制作双系统在中后期容易滑向资源管理疲劳，节奏与关卡长度是成败关键。\n\n【综合评价】用美术风格换传播效率的典型案例——它的第一卖点不是玩法，而是「看起来不像别的游戏」。",
+            "why_notable": "1930 年代橡皮管动画风格的越狱 + 烹饪玩法，单条实机片段 95.5 万浏览",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": "《Mouse Chef: Dig Out》是 1930 年代动画风格的越狱动作游戏，用勺子挖墙、制作工具与烹饪食物逃出监狱"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "ZombieDev / X · 开发者自荐",
+          "tags": [
+            "横版格斗",
+            "PS2 复古",
+            "多时代"
+          ],
+          "title": "《Dead Set Warriors》：40+ 角色的 PS2 风横版格斗，让不同时代的战士互殴（ZombieDev 开发）",
+          "en_title": "#PitchYaGame PS2 style inspired beat-em-up with different time periods brawling it out!",
+          "full_text": "#PitchYaGame\nPS2 style inspired beat-em-up with different time periods brawling it out! 🥊\n\n- Large Roster (40+ Fighters) 💪\n- Deep Mechanics 🖱️\n- Travel through different eras with wild scenarios! ☣️\n- Survival Mode! 🔢\n- Planned PvP Online! ⚔️\n\n#Indiegame #indiedev https://t.co/BIyBFy9xzY",
+          "author": "DeadSetWarriors",
+          "date": "2026-11-07",
+          "likes": 544,
+          "views": 12823,
+          "link": "https://x.com/DeadSetWarriors/status/2119073431966601725",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2119073090059522048/img/O6DCWtgk73LtvAQS.jpg",
+            "video_url": "https://x.com/DeadSetWarriors/status/2119073431966601725/video/1"
+          },
+          "summary": "开发者以 #PitchYaGame 自荐《Dead Set Warriors》：PS2 质感的横版格斗，40 名以上角色、强调深度的连段机制，玩家可穿越不同时代与场景作战，含生存模式，并计划加入线上 PvP。Steam 页面显示开发商 ZombieDev，发售日未定。",
+          "analysis": "",
+          "recommendation": "40+ 角色的 PS2 风横版格斗：《Dead Set Warriors》让不同时代的战士互殴",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "GiantessPlayground / X · 玩法更新",
+          "tags": [
+            "非对称对抗",
+            "动作",
+            "模式更新"
+          ],
+          "title": "《Giantess Metropolis》新增对抗模式：扮演巨人碾压，或加入军队守住城市",
+          "en_title": "New combat mode in Giantess Metropolis! Play as giantess and crush the tiny army, or join the military.",
+          "full_text": "New combat mode in Giantess Metropolis!\nPlay as giantess and crush the tiny army, or join the military and try to take her down before your city falls? \n#Sizetwitter #GiantessMetropolis https://t.co/mPEx94EMbe",
+          "author": "gtsplayground",
+          "date": "2026-11-07",
+          "likes": 1342,
+          "views": 59265,
+          "link": "https://x.com/gtsplayground/status/2119140030753223153",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2119139499850735616/img/yVU2UMa4JSE8cXfp.jpg",
+            "video_url": "https://x.com/gtsplayground/status/2119140030753223153/video/1"
+          },
+          "summary": "《Giantess Metropolis》上线新的战斗模式：一边扮演巨人角色碾压小型军队，另一边加入军队、在城市被攻陷前把她击倒，形成非对称对抗。推文附实机片段，5.9 万浏览。",
+          "analysis": "",
+          "recommendation": "扮演巨人或指挥军队：《Giantess Metropolis》新非对称对抗模式——5.9 万浏览",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Fictions / X · 开发进度",
+          "tags": [
+            "塔防",
+            "策略",
+            "独立"
+          ],
+          "title": "Fictions 团队放出开发片段：边推进边布防的塔防式战斗",
+          "en_title": "keep moving, deploy your defenses",
+          "full_text": "keep moving, deploy your defenses https://t.co/BTMpgq79qT",
+          "author": "fictionsinc",
+          "date": "2026-11-07",
+          "likes": 334,
+          "views": 40373,
+          "link": "https://x.com/fictionsinc/status/2119157947984933315",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2118869348748251136/img/sYUXltJVAAN6SA4c.jpg",
+            "video_url": "https://x.com/fictionsinc/status/2119157947984933315/video/1"
+          },
+          "summary": "独立团队 Fictions 放出一段开发中片段：单位在推进过程中不断部署防线、抵御来袭，核心是「移动 + 布防」的节奏控制。推文未给出游戏正式名称与发售信息。",
+          "analysis": "",
+          "recommendation": "边推进边布防：Fictions 团队放出塔防式战斗开发片段",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "左海 / X · 开源资产",
+          "tags": [
+            "three.js",
+            "3D 资产",
+            "开源"
+          ],
+          "title": "2600 个 three.js 3D 模型开源：每个模型都是可调参数的程序，推主称开发者获 Google 50 万美元支持",
+          "en_title": "这位开发者开源了整整 2600 个 3D 模型，每个模型都是一个程序（three.js ES 模块）",
+          "full_text": "卧槽！最近Reddit 上有一位开发者获得 Google 50 万美元支持。\n\n原因是这个开发者开源了整整 2600 个 3D 模型，每个模型都是一个程序（three.js ES 模块），开发者可以调整参数来自定义外观、状态、季节、颜色、穿着等。\n\n你拿到这些ES模块可以任意用在游戏、动画、3D 网站、作品集以及能想到的任何项目上。\n\n太帅啦！！网站地址放在评论区了，看样子 threeJs 也要让 Agent 学起来啦，大家去看看效果～",
+          "author": "heizolshao",
+          "date": "2026-11-07",
+          "likes": 2327,
+          "views": 108947,
+          "link": "https://x.com/heizolshao/status/2119010722474545311",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2119009717959921664/img/EidqTt7r1b0zHB4A.jpg",
+            "video_url": "https://x.com/heizolshao/status/2119010722474545311/video/1"
+          },
+          "summary": "推主 左海 介绍：一位开发者把 2600 个 3D 模型全部做成 three.js ES 模块并开源，每个模型都是可调参数的程序——外观、状态、季节、颜色、穿着都能改，可直接用于游戏、动画、3D 网站与作品集。推主称该项目获得 Google 50 万美元支持（该金额为推文说法，未见官方公告）。",
+          "analysis": "参数化模型把「资产」变成「可调用的函数」，这恰好是 Agent 最容易消费的形态：模型不再需要美术逐件返工，给参数就能出变体。对独立团队，它显著降低了场景填充成本；但要注意授权条款与观感一致性——参数化很容易产出「参数都对、组合起来不好看」的结果，仍需要人工做最后的搭配与打光。",
+          "recommendation": "2600 个 three.js 3D 模型开源，每个都是可调参数的程序——10.9 万浏览",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Rishi / X · 赛事",
+          "tags": [
+            "Game Jam",
+            "AI 工具",
+            "网页游戏"
+          ],
+          "title": "10 万美元奖金的网页游戏 Jam：ElevenLabs、fal、MeshyAI 赞助，11 月 18 日开跑",
+          "en_title": "A new game jam is coming from @opengameio... - $100K cash prizes - Sponsored by @ElevenLabs, @fal, and @MeshyAI",
+          "full_text": "A new game jam is coming from @opengameio... \n\n- $100K cash prizes\n- Sponsored by @ElevenLabs, @fal, and @MeshyAI \n- 1 month (Nov 18-Dec 18) to show off your creativity\n- Build a game using any tool / game engine that exports to the web\n\nDrop your email: https://t.co/3LYTaZqaus https://t.co/5sjyS1PtF9",
+          "author": "0xRishi",
+          "date": "2026-11-07",
+          "likes": 568,
+          "views": 54654,
+          "link": "https://x.com/0xRishi/status/2119178512665845854",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2119178344654684161/img/JrGyZZNFh3gBG6qF.jpg",
+            "video_url": "https://x.com/0xRishi/status/2119178512665845854/video/1"
+          },
+          "summary": "由 @opengameio 主办的新 Game Jam：总奖金 10 万美元，由 ElevenLabs（语音生成）、fal（生成模型推理）、MeshyAI（3D 生成）赞助；赛期 11 月 18 日至 12 月 18 日，用任意工具或引擎做一款能导出到网页的游戏即可参赛。",
+          "analysis": "三家赞助商正好覆盖「语音 / 图像视频 / 3D」三类生成能力，赛制又强制 web 导出——本质是在为 AI 生成的资产找一个可分发、可试玩的标准出口。对团队，这是低成本验证「AI 辅助 + 浏览器即玩」工作流的机会；对工具商，则是一次集中的公开案例采集。",
+          "recommendation": "10 万美元网页游戏 Jam：ElevenLabs、fal、MeshyAI 赞助，一个月做出可玩网页版",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI 的边界被重新划线**\nAnthropic 在「禁止复刻游戏」条款上线不到一周后悄悄改写措辞：明确允许复制玩法（「或相似机制」），同时把「复刻」限定为名称、角色、美术、音乐、关卡与外观。同一天，社区仍在争论 AI 到底能做出什么——「像卖场电视屏保」的吐槽拿到 3.6 万赞，而「AI 几个月做 3A」的说法被开发者用《门的问题》反驳。\n\n**工作室的告别与重生**\nBioWare 的纪录片拍到第二年时工作室被 EA 关闭，影片因此变成告别之作；联合创始人估算，要让新《质量效应》达到玩家期待的水准，预算需要 2 亿美元以上。另一边，暴雪称《魔兽世界：Forever》是系列史上最大规模上线，新玩家数为 15 年最高。\n\n**玩法记忆与新游**\n《时之笛》Switch 2 重制版被空中无限跳 Bug 打穿速通规则，196 万浏览；「加载界面能不能放小游戏」的老专利问题再次被翻出，4.4 万赞。新游侧，靠语音当光源的《Echo Mates》、跑酷接连段的《CHRONO PUNK》，以及 1930 年代动画风的《Mouse Chef: Dig Out》各有明确记忆点。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
