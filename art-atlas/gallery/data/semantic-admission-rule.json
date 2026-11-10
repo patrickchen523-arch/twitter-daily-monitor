@@ -1,0 +1,41 @@
+{
+  "version": "2026-11-10-semantic-v2",
+  "scope": "steam_purchase",
+  "min_art_related_reviews": 500,
+  "min_pure_positive_rate": 0.5,
+  "inclusive": true,
+  "pending_policy": "only_existing_provisional_cases",
+  "source_snapshot": "ART_ATLAS_分析资料交接_20261110_000605.zip",
+  "note": "按作者去重的Steam购买者评论；纯正向/全部已确认美术相关。未完成分析暂留，不以部分结果判定，不代表创意评审通过。",
+  "new_entries": "必须完成V2全文语义分析，Steam购买者美术相关≥500、纯正向率≥50%，不可用旧版统计替代",
+  "grandfathered_ids": [
+    "STEAM-2198150-ART-20261101",
+    "STEAM-2162800-ART-20261101",
+    "STEAM-1569580-ART-20261101",
+    "STEAM-2416450-ART-20261101",
+    "STEAM-1657630-ART-20261101",
+    "STEAM-1177980-ART-20261101",
+    "STEAM-2592160-ART-20261101",
+    "STEAM-813230-ART-20261101",
+    "STEAM-858210-ART-20261101",
+    "STEAM-2379780-ART-20261101",
+    "STEAM-1574820-ART-20261101",
+    "STEAM-3862670-ART-20261101",
+    "STEAM-2444750-ART-20261101",
+    "STEAM-1809540-ART-20261101",
+    "STEAM-2420660-ART-20261101",
+    "STEAM-2218750-ART-20261101",
+    "STEAM-1030300-ART-20261101",
+    "CURATED-3629430-20261101",
+    "CURATED-1562430-20261101",
+    "CURATED-4067370-20261101",
+    "CURATED-3804800-20261101",
+    "CURATED-bowser-20261101"
+  ],
+  "quote_policy": {
+    "sentiment": "positive",
+    "minimum_per_completed_case": 5,
+    "translation": "所有外文摘录配中文翻译",
+    "pending": "未完成V2不得用旧评论补足"
+  }
+}

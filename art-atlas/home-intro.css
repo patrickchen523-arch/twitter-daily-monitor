@@ -1,0 +1,75 @@
+/* Opening title curtain. Kept outside Nuxt's scene transforms. */
+.home-intro { position:fixed; inset:0; z-index:90; pointer-events:none; --intro-inset:25px; background:transparent; }
+.home-intro__frame { position:absolute; inset:var(--intro-inset); border:1px solid #dedfe2; border-radius:22px; box-shadow:0 0 0 30px #fff; transition:opacity .85s ease; }
+.home-intro__curtain { position:absolute; top:0; left:0; width:100%; height:56vh; height:56svh; background:rgba(255,255,255,.86); overflow:hidden; transform:translate3d(0,0,0); transition:transform 1s cubic-bezier(.76,0,.24,1); will-change:transform; }
+.home-intro__title { position:absolute; top:125px; bottom:30px; left:4%; right:4%; margin:0; }
+.home-intro__title svg { display:block; height:100%; width:100%; }
+.home-intro__caption { position:absolute; left:8.4%; bottom:9%; color:#fff; transition:opacity .35s ease,transform .65s ease; }
+.home-intro__caption small { display:block; margin-bottom:16px; font:400 10px/1.3 'GT America Mono Regular',monospace; letter-spacing:.07em; }
+.home-intro__caption p { font:300 clamp(24px,3vw,42px)/1.05 Roobert,sans-serif; letter-spacing:-.035em; }
+.home-intro__skip { position:absolute; right:8.4%; bottom:9%; display:flex; align-items:center; gap:15px; border:0; padding:12px 0; background:none; color:white; font:400 10px/1.4 'GT America Mono Regular',monospace; letter-spacing:.05em; pointer-events:auto; cursor:pointer; transition:opacity .3s ease; }
+.home-intro__skip span:last-child { display:grid; place-items:center; width:40px; height:40px; border:1px solid #ffffff70; border-radius:50%; font-size:21px; }
+.home-intro__skip:focus-visible { outline:2px solid white; outline-offset:8px; }
+.home-intro.is-closing .home-intro__curtain { transform:translate3d(0,-101%,0); }
+.home-intro.is-closing .home-intro__frame { opacity:0; }
+.home-intro.is-closing .home-intro__caption { opacity:0; transform:translateY(-25px); }
+.home-intro.is-closing .home-intro__skip { opacity:0; pointer-events:none; }
+/* Keep the same light navigation layer throughout the opening sequence.
+   The map is dark enough for this layer once the curtain leaves, and holding
+   it from the first frame removes the black-to-white flash at the seam. */
+html.home-intro-home .header,
+html.home-intro-home .header__el { --color:#fff!important; --color-rgb:255,255,255!important; color:#fff!important; }
+html.home-intro-home .header__el>div { border-color:rgba(255,255,255,.18); background:transparent; }
+html.home-intro-home .header__el.--white { clip-path:none!important; visibility:visible!important; }
+html.home-intro-home .header__el.--black { clip-path:none!important; visibility:hidden!important; }
+html.home-intro-home .header__progress { visibility:hidden!important; }
+html.home-intro-home .header__el.--white .header__logo,
+html.home-intro-home .header__el.--white .header__nav { opacity:1!important; visibility:visible!important; }
+/* The curtain replaces the page entrance. Keep the page wrappers in their
+   final position for the entire home visit: a delayed Nuxt entrance must not
+   move them after the curtain leaves. Section scrolling stays independent. */
+html.home-intro-home .index.page { opacity:1!important; visibility:visible!important; transform:none!important; }
+html.home-intro-home .index__transform { transform:none!important; }
+/* Nuxt keeps the first scene image hidden until its page entrance event. The
+   opening curtain already covers the title, so expose the artwork immediately
+   and keep it running underneath the mask. */
+html.home-intro-home .index .section:first-child .section__asset img { opacity:1!important; visibility:visible!important; }
+html.home-intro-open .index .section:first-child .section__content>div { opacity:0!important; pointer-events:none; }
+html.home-intro-revealing .index .section:first-child .section__content>div { animation:intro-content-slide .8s cubic-bezier(.19,1,.22,1) both; pointer-events:auto; }
+@keyframes intro-content-slide { from { opacity:0; transform:translate3d(-28px,0,0); } to { opacity:1; transform:translate3d(0,0,0); } }
+@media(max-width:700px) {
+  .home-intro { --intro-inset:15px; }
+  .home-intro__frame { border-radius:16px; box-shadow:0 0 0 20px white; }
+  .home-intro__curtain { height:51svh; }
+  .home-intro__title { top:116px; bottom:32px; left:7%; right:7%; }
+  .home-intro__caption { left:9%; bottom:16%; }
+  .home-intro__caption p { font-size:31px; }
+  .home-intro__skip { left:9%; right:auto; bottom:5%; padding:0; }
+  .home-intro__skip span:last-child { width:30px; height:30px; font-size:17px; }
+}
+@media(max-height:520px) and (min-width:701px) { .home-intro__title { top:100px; bottom:18px; } }
+@media(prefers-reduced-motion:reduce) {
+  .home-intro__curtain,.home-intro__frame,.home-intro__caption { transition-duration:.15s; }
+  html.home-intro-revealing .index .section:first-child .section__content>div { animation-duration:.15s; }
+}
+/* The scene's midpoint follows the original two-viewport scroll composition. */
+.index .section__content>div[data-align]{position:absolute;grid-column:auto;grid-row:auto;left:8.4%;right:auto;top:calc(50% + 30vh);width:min(650px,75vw);text-align:left;transform:translateY(-100%)}
+.index .section__content>div[data-align=right]{left:auto;right:8.4%;top:calc(50% - 30vh);text-align:right;transform:none}
+.index .section__content .title{margin:0;text-transform:none;font-family:Roobert,'Microsoft YaHei','PingFang SC',sans-serif;text-shadow:0 2px 18px #0005}
+.index .section__content .title>div{opacity:.75!important;font-size:clamp(16px,1.7vw,26px);font-weight:400;line-height:1.6;letter-spacing:.06em}
+.index .section__content .title>div:first-child{opacity:1!important;font-size:clamp(30px,3.5vw,58px);font-weight:600;line-height:1.2;letter-spacing:0;margin-bottom:18px}
+.index .section__content .title>div>span:before,.index .section__content .title>div>span:after{display:none}
+.index .section__content .title>div:first-child>span{border-bottom:2px solid currentColor;padding-bottom:5px}
+@media(max-width:700px){
+ .index .section__content>div[data-align]{left:8%;right:auto;top:calc(50% + 34vh);width:84%;text-align:left;transform:translateY(-100%)}
+ .index .section__content>div[data-align=right]{left:auto;right:8%;top:calc(50% - 28vh);text-align:right;transform:none}
+ .index .section__content .title>div:first-child{font-size:clamp(24px,6.5vw,36px);margin-bottom:12px}
+ .index .section__content .title>div{font-size:15px;line-height:1.6}
+}
+/* Caption offsets are computed against the visible scene, not its 200vh center. */
+.index .section__content>div[data-align]{transform:none!important}
+@keyframes intro-content-slide {from{opacity:0}to{opacity:1}}
+.home-intro__caption{max-width:68%;bottom:9%}
+.home-intro__caption .home-intro__tagline{font-size:clamp(24px,3vw,42px);line-height:1.15;letter-spacing:-.025em}
+.home-intro__caption .home-intro__tagline-zh{font:400 clamp(16px,1.4vw,22px)/1.6 "Microsoft YaHei",sans-serif;letter-spacing:.02em;margin-top:18px}
+@media(max-width:700px){.home-intro__caption{max-width:84%;bottom:17%}.home-intro__caption .home-intro__tagline{font-size:clamp(22px,6vw,30px)}}
