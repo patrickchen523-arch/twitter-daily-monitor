@@ -1,0 +1,517 @@
+{
+ "date": "2026-11-10",
+ "meta": {
+  "raw_count": 218,
+  "filtered_count": 137,
+  "selected_count": 12,
+  "crawl_time": "2026-11-10 09:30"
+ },
+ "lede": "《GTA 6》预载开启，文件里已现多人模式接口与 PS5 Pro 120Hz / PSSR 痕迹；英伟达董事会就黄仁勋「涉中国间谍婚外情」启动独立调查；樱井政博首次系统谈生成式 AI：还没赢得我的信任，但什么都不做也不是答案。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 1,
+   "hook": "《GTA 6》预载开放，文件里已挖出多人模式接口与 PS5 Pro 120Hz / PSSR"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "枪械与长弓混搭的 4 人合作 Roguelite FPS，试玩只开到 11/23——140 万浏览"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "樱井政博：AI 还没赢得我的信任，但「什么都不做也不是答案」"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "樱井政博谈生成式 AI：还没赢得我的信任，但「什么都不做也不是答案」\n一个人用 Tripo + Blender + Opus 5.5 + Unity 6 做完钓鱼游戏：每个工具只给一个职责\n陈成实测 Qoduck：3D 与前端底子好，单 prompt 大 case 要跑 86–111 分钟"
+  },
+  {
+   "id": "industry",
+   "text": "英伟达董事会调查黄仁勋：承认婚外情对象被指中国间谍，本人继续任 CEO\n《GTA 6》预载开放，文件已现多人模式接口与 PS5 Pro 120Hz / PSSR\n索尼日版 PlayStation Portal 首加内置存储，39,980 日元，仍主打串流\n《ROB RUN》6 天同时在线破 14 万，Steam 峰值从 4.37 万涨到 15.1 万"
+  },
+  {
+   "id": "indie",
+   "text": "《Guns and Dragons》：枪械+长弓的 4 人合作 Roguelite FPS，试玩开到 11/23\n《白银之城》Morgane 实机泄露：单条 32 万浏览\n单人做的后室网页游戏上线 36 小时：3.5 万玩家、1,200 人同时在线"
+  },
+  {
+   "id": "tools",
+   "text": "Unity 7 官宣：CoreCLR 前置迁移、URP 图形升级、MethodReload 方法级热重载\n7 个开源 Skill 把 AI 做游戏拆成工序：从 49 智能体工作室到 Blender 全流程"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Eurogamer · 采访",
+     "tags": [
+      "生成式AI",
+      "制作人立场",
+      "日本"
+     ],
+     "title": "樱井政博谈生成式 AI：「它还没赢得我的信任」，但什么都不做也不是办法",
+     "en_title": "\"It has yet to gain my trust\" — Masahiro Sakurai on generative AI in game development",
+     "full_text": "Nintendo's legendary Kirby designer Masahiro Sakurai weighs in on gen-AI, saying \"it has yet to gain my trust\" but not to reject it completely\n\nhttps://t.co/nB1GkaW3H1 https://t.co/pemgiyrvaZ",
+     "author": "eurogamer",
+     "date": "2026-11-09",
+     "likes": 11,
+     "views": 3091,
+     "link": "https://x.com/eurogamer/status/2119801089671438801",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWsLHhCasAAja0K.jpg"
+     },
+     "summary": "在新书《樱井政博的游戏思考》出版活动上接受 Famitsu 采访，樱井政博表示自己目前没有、也不打算用生成式 AI 做游戏，理由是「它还没赢得我的信任」，并强调用在图像上时「绝不能构成任何形式的剥削」，暂时靠人自己想创意能做出更好的结果。但他不主张全面拒绝：现在做游戏「太难了」，有些作品卖出数百万份仍在亏损，立场完全不变的公司可能撑不下去，所以「什么都不做大概也不是正确答案」；具体用在哪、怎么用仍然复杂，他选择慢速推进。",
+     "analysis": "这是日本一线制作人对 AI 最具体的「有条件接受」表态：先把美术伦理与设计师职责划成红线，再承认成本结构已经逼到不改不行的地步。对国内团队的意义不在于站队，而在于这套分层——工具层可以试，创作判断与署名边界不能退。",
+     "recommendation": "樱井政博：AI 还没赢得我的信任，但「什么都不做也不是答案」",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "nevian / X · 开发实录",
+     "tags": [
+      "AI 管线",
+      "独立开发",
+      "3D"
+     ],
+     "title": "一个人用 Tripo + Blender + Opus 5.5 + Unity 6 做完钓鱼游戏：每个工具只给一个职责",
+     "en_title": "a whole cozy fishing game built solo with Claude Opus 5.5 + Blender + 3D AI + Unity 6",
+     "full_text": "this is wild... a whole cozy fishing game built solo with Claude Opus 5.5 + Blender + 3D AI + Unity 6\n\nthe trick is giving every tool one job:\n\n→ generate every 3D model with Tripo Smart Mesh P2: palms, rocks, pier, boat, hut, character\n→ connect Claude Code to Blender through MCP\n→ let Opus 5.5 set up each model: scale, pivots, materials, clean export\n→ Opus animates in Blender too: the walk, the cast, the rod, the boat on the water\n→ bring it all into Unity 6 and build the world: forest, river, waterfall, beach, pier\n→ add one system at a time: walking, fishing, bait choice, time of day\n→ play after every step and fix one thing at a time\n\nwho does what:\n\n• Tripo: the 3D models\n• Opus 5.5 + Blender: setup and animation\n• Unity 6: the world and the game\n\none person. one stack. a game you'd actually want to play",
+     "author": "neviannn",
+     "date": "2026-11-08",
+     "likes": 266,
+     "views": 11923,
+     "link": "https://x.com/neviannn/status/2119538130470457833",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2119538077085392896/img/rqYZfoXs4WNC7ile.jpg",
+      "video_url": "https://x.com/neviannn/status/2119538130470457833/video/1"
+     },
+     "summary": "开发者 nevian 公开自己单人做完整 cozy 钓鱼游戏的工具分工：Tripo Smart Mesh P2 生成全部 3D 模型（棕榈、岩石、码头、船、小屋、角色）；Claude Code 通过 MCP 接入 Blender，由 Opus 5.5 统一设置缩放、轴心与材质并做干净导出，同时负责走路、抛竿、鱼竿与船在水面的动画；最后进 Unity 6 搭森林、河流、瀑布、海滩与码头，再逐个系统叠加走路、钓鱼、鱼饵、时间变化，每加一步都先玩一遍、一次只修一个问题。",
+     "analysis": "真正值得抄的不是「用 AI 做游戏」，而是「每个工具一个职责 + 每步都跑起来」的工程纪律：模型生成、DCC 整理、引擎落地拆成三段，任何一段出问题都能局部回滚。这比堆模型数量更决定 AI 管线的稳定性。",
+     "recommendation": "一个人一条 AI 管线做完钓鱼游戏：模型交给 Tripo，Blender 交给 Opus，世界交给 Unity 6",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "陈成 / X · 实测",
+     "tags": [
+      "模型实测",
+      "3D 生成",
+      "中文 KOL"
+     ],
+     "title": "陈成实测 Qoduck：3D 与前端「底子比传言好」，单 prompt 大 case 仍要等 86–111 分钟",
+     "en_title": "Qoduck 实测 — 每条一个 prompt 跑一轮，中间不插话",
+     "full_text": "Qoduck 实测。\n\n1/ 昨天用各种 case 跑了下 Qoduck，大多都放到 https://t.co/eE21pTouuH 了，包含 3D、前端、2D 等。每条都是一个 prompt 跑一轮，中间不插话，页面、HTML 和 prompt 都能直接看。\n\n3/ 3D 效果还是不错的，无论是美感还是逻辑。showcase 里有比较多 case，个人感觉其中效果比较好的是龙堡风暴、灯塔风暴、樱花谷、海盗船。\n\n4/ 前端底子比传言好，配上我昨天写的 frontend-rails 效果更佳。不加 skill 的版本大多已经不错，偶尔会滑回紫粉渐变。加了 skill 好在细处，信息层级排得更对。\n\n5/ 设计上有点像 GPT。\n\n6/ 速度体感上比较快，主要是交互时回得快。大题照样要等，弹珠机跑了 111 分钟，樱花谷 86 分钟。\n\n7/ 当然和日常在用的 Opus 5.5 比还是有不少差距的，也有跑产品动画生成，细节和完成度上都还差一些。",
+     "author": "chenchengpro",
+     "date": "2026-11-09",
+     "likes": 6,
+     "views": 2116,
+     "link": "https://x.com/chenchengpro/status/2119690611691577706",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2119690332665466880/img/R-H--SjG7znCKbC9.jpg",
+      "video_url": "https://x.com/chenchengpro/status/2119690611691577706/video/1"
+     },
+     "summary": "陈成用 3D、前端、2D 等一批 case 跑 Qoduck，每条只给一个 prompt、中途不插话，页面、HTML 与 prompt 全部公开。结论：3D 的美感与逻辑都不错（龙堡风暴、灯塔风暴、樱花谷、海盗船等）；前端底子比传言好，配上他写的 frontend-rails skill 更稳，不加 skill 时偶尔会滑回紫粉渐变；设计风格偏 GPT。交互响应快，但大题仍要久等——弹珠机 111 分钟、樱花谷 86 分钟；与日常在用的 Opus 5.5 相比，细节与完成度仍有差距。",
+     "analysis": "这类「单 prompt 长跑」实测比跑分更有参考价值：它暴露的不是能不能生成，而是 1–2 小时等待在生产流程里是否可接受。可并行的短任务与必须串行的大题，调度策略完全不同。",
+     "recommendation": "陈成实测 Qoduck：3D 与前端底子好，单 prompt 大 case 要跑 86–111 分钟"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "GameSpot / Eurogamer · 多家报道",
+     "tags": [
+      "英伟达",
+      "公司治理",
+      "AI 芯片"
+     ],
+     "title": "英伟达董事会就黄仁勋「与涉嫌中国间谍有染」启动独立调查，本人继续担任 CEO",
+     "en_title": "Nvidia board launches investigation into Jensen Huang after he admits affair with alleged Chinese spy",
+     "full_text": "Nvidia CEO Jensen Huang Under Investigation Following Affair With Suspected Chinese Spy dlvr.it/TWG1Z4 https://t.co/VP3drVrcWQ",
+     "author": "GameSpot",
+     "date": "2026-11-09",
+     "likes": 41,
+     "views": 14622,
+     "link": "https://x.com/GameSpot/status/2119797264847978529",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWsIYSSbEAAvPsA.jpg"
+     },
+     "summary": "据《纽约时报》报道，英伟达董事会已对 CEO 黄仁勋启动调查，起因是他在全公司内部信中承认与一名被指为中国情报人员的女性存在婚外情，并向妻子与员工道歉，称「我的行为没有任何借口」「我支持调查并会全面配合」。董事会表示将核查他是否成为「外国情报行动」的目标，同时称「没有理由认为国家安全或英伟达机密遭到泄露」；调查期间黄继续担任 CEO。报道称美方官员不认为黄知晓对方的情报活动。GameSpot、Eurogamer、PC Gamer 等多家跟进。",
+     "analysis": "事件本身是公司治理问题，但落在最敏感的位置：英伟达既是游戏显卡的供给方，也是当前生成式 AI 算力的总闸门。董事会选择「继续留任 + 独立调查」，说明短期产品与供应链节奏不会变化；真正的风险在于出口管制与在华业务被重新摆上台面。",
+     "recommendation": "英伟达董事会调查黄仁勋：承认婚外情对象被指中国间谍，本人继续任 CEO",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "GameSpot · 多家报道",
+     "tags": [
+      "GTA 6",
+      "发售前",
+      "平台特性"
+     ],
+     "title": "《GTA 6》预载开启：文件里挖出多人模式接口与 PS5 Pro 120Hz / PSSR 痕迹",
+     "en_title": "GTA 6 Preloading Is Officially Live, Files Mention Multiplayer And PS5 Pro Features",
+     "full_text": "GTA 6 Preloading Is Officially Live, Files Mention Multiplayer And PS5 Pro Features dlvr.it/TWG61m https://t.co/go9g0JR979",
+     "author": "GameSpot",
+     "date": "2026-11-09",
+     "likes": 28,
+     "views": 9375,
+     "link": "https://x.com/GameSpot/status/2119823772920467776",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWsgfGZbsAA8XDE.jpg"
+     },
+     "summary": "《GTA 6》预载按各地午夜陆续开启，澳新率先解锁。玩家拆包发现 joinSession、launchActivity、launchMultiplayerActivity 等接口，被解读为新形态的 GTA Online；还有人发现「故事」在文件里是独立下载项，并挖出 PS5 Pro 的 120Hz 与 PSSR 多帧超分相关引用。Rockstar 此前称本作是单人游戏，业内普遍预期线上部分要到 2027 年才上线。游戏 11 月 19 日登陆 PS5 与 Xbox Series X|S。",
+     "analysis": "预载文件成了事实上的产品发布会：多人接口与 PS5 Pro 特性都还没官宣，就先被玩家逐条挖出来。对平台方而言，首发窗口的舆论主动权已经从 PR 转移到拆包社区；对从业者的启示是，预载包的内容审查已经是发行流程的一环。",
+     "recommendation": "《GTA 6》预载开放，文件已现多人模式接口与 PS5 Pro 120Hz / PSSR",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Polygon · 硬件",
+     "tags": [
+      "PlayStation",
+      "掌机",
+      "日本市场"
+     ],
+     "title": "索尼官宣日版《PlayStation Portal》：首次内置存储，仍是串流掌机、39,980 日元",
+     "en_title": "Sony officially announces new PlayStation handheld",
+     "full_text": "Sony Officially Announces New Playstation Handheld https://t.co/jgeAB4kCjp https://t.co/IriKq7iZGD",
+     "author": "Polygon",
+     "date": "2026-11-09",
+     "likes": 67,
+     "views": 51353,
+     "link": "https://x.com/Polygon/status/2119812281164824809",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWsWCVXWQAAMDSB.jpg"
+     },
+     "summary": "索尼公布一款日本限定版 PlayStation Portal：规格基本不变（1080p LCD，仍以串流 PS5 为主），最大变化是首次加入内置存储，售价与日本现行版本持平为 39,980 日元（约 252 美元），配色为 Midnight Black。索尼在说明里称这块硬盘是「着眼于未来功能」而加。Portal 此前在美国首年卖出约 42 万台；在内存涨价、硬件成本上行的背景下，云游戏重新成为主机厂的选项。",
+     "analysis": "标题写「新手持」，实质是一次区域定价加硬件预留：用日本限定版对冲日元购买力下滑，同时给「不只能串流」留接口。真正值得盯的是这块存储最终服务 PS5 云游戏还是下一代主机——这决定索尼会不会重新进入掌机硬件赛道。",
+     "recommendation": "索尼日版 PlayStation Portal 首加内置存储，39,980 日元，仍主打串流"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Game*Spark · 市场表现",
+     "tags": [
+      "免费游戏",
+      "犯罪沙盒",
+      "PCU"
+     ],
+     "title": "《ROB RUN》抢先体验 6 天同时在线破 14 万：Steam 峰值从 4.37 万涨到 15.1 万",
+     "en_title": "【基本無料】PvP犯罪サンドボックス『ROB RUN』人気急上昇中！同時プレイヤー数は14万人を突破",
+     "full_text": "【基本無料】PvP犯罪サンドボックス『ROB RUN』人気急上昇中！数千人のギャングが覇権を巡って街中で犯罪&amp;銃撃戦。警察になって逮捕もできる\nhttps://t.co/AqjB07sc2k\n\n同時プレイヤー数は14万人を突破しました。 https://t.co/QRnpoHFJoH",
+     "author": "gamespark",
+     "date": "2026-11-09",
+     "likes": 3157,
+     "views": 259394,
+     "link": "https://x.com/gamespark/status/2119705611252412553",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2119705319031091200/pu/img/rePPf0LhfmDzLsOZ.jpg",
+      "video_url": "https://x.com/gamespark/status/2119705611252412553/video/1"
+     },
+     "summary": "Game*Spark 报道，Kefir 的免费 PvP 犯罪沙盒《ROB RUN》热度急升：数千名玩家在同一座城市里抢地盘、抢劫、枪战，也可以扮演警察抓人，同时在线人数突破 14 万。对照 Steam 榜单，本作 11 月 4 日开启抢先体验、次日 PCU 峰值为 43,745，如今 24 小时峰值已到 151,032。",
+     "analysis": "免费 + 单世界大量真人 + 每周清档，是这套犯罪沙盒在数天内翻三倍多的组合拳：低门槛拉新，清档维持新鲜感，真人警察与罪犯的对立自带内容。风险同样明显——这类结构对反作弊与服务端稳定性要求极高，热度曲线很容易被一次大面积作弊或宕机打回原形。",
+     "recommendation": "《ROB RUN》6 天同时在线破 14 万，Steam 峰值从 4.37 万涨到 15.1 万",
+     "game_ref": "ROB RUN",
+     "enrichment": {
+      "game_name": "ROB RUN",
+      "genre": "动作 / 大型多人在线 / 犯罪沙盒",
+      "developer": "Kefir",
+      "platforms": [
+       "Steam"
+      ],
+      "price": "免费游玩",
+      "release_date": "已发售 · 2026年11月4日（抢先体验）",
+      "steam_rating": "评价数暂未积累到 Steam 展示门槛",
+      "steam_url": "https://store.steampowered.com/app/4262460/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg?t=1793811654",
+      "youtube_video": null,
+      "pcu": "151,032（2026-11-09 峰值）",
+      "current_players": "待抓取",
+      "estimated_sales": "免费游玩，暂无销量口径",
+      "description": "【核心玩法】免费 PvP 犯罪沙盒，强调「单世界大量真人」：所有警察与罪犯都由玩家扮演，可组帮派、分角色、组织突袭，抢银行、抄据点、躲警察，还能建造与防守自己的藏身处；服务器每周清档重置世界。\n\n【市场表现】11 月 4 日开启抢先体验，次日 Steam PCU 峰值 43,745；到 11 月 9 日 24 小时峰值已升至 151,032，同时在线突破 14 万（Game*Spark）。\n\n【结构特点】风险与收益绑定：高风险 PvP 可以让你失去一切，清档机制则周期性重置经济与领地，避免早期玩家永久占优。\n\n【优势】免费门槛低；真人警察/罪犯的对立天然产出内容；清档维持新鲜度。\n【风险】对反作弊与服务端稳定性要求极高；热度高度依赖社区氛围，一次大面积作弊或长时间宕机就可能击穿留存。\n\n【综合】把《GTA Online》式的犯罪幻想做成免费 MMO 沙盒，是本周最典型的「低门槛 + 高密度真人互动」增长样本。",
+      "why_notable": "免费+单世界真人+每周清档，6 天内 PCU 从 4.37 万涨到 15.1 万，是本周最强的增长曲线"
+     }
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "ファミ通 / X · 试玩",
+     "tags": [
+      "Roguelite FPS",
+      "合作",
+      "试玩"
+     ],
+     "title": "《Guns and Dragons》：枪械与长弓混搭的 4 人合作 Roguelite FPS，试玩开放至 11/23（ABUTTON 开发）",
+     "en_title": "最大4人で協力可能なローグライトFPS『Guns and Dragons』のプレイテストが開催【11/23まで】",
+     "full_text": "最大4人で協力可能なローグライトFPS『Guns and Dragons』のプレイテストが開催【11/23まで】\nhttps://t.co/SrnuptXqXW\n\nリボルバーやショットガンといった銃器だけでなく、ロングボウやクロスボウなども登場するファンタジー世界が舞台。戦いで得た素材を使って拠点を改築していく要素も楽しめる。 https://t.co/SfVQOrxqBL",
+     "author": "famitsu",
+     "date": "2026-11-09",
+     "likes": 11398,
+     "views": 1400708,
+     "link": "https://x.com/famitsu/status/2119621394271191311",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2119621113567469568/pu/img/J2VVTBf9I_zHifIP.jpg",
+      "video_url": "https://x.com/famitsu/status/2119621394271191311/video/1"
+     },
+     "summary": "ファミ通 报道，可 4 人合作的 Roguelite FPS《Guns and Dragons》开放试玩至 11 月 23 日。舞台是奇幻世界，武器不止左轮与霰弹枪，还有长弓与十字弓；战斗获得的素材可用于改建据点。官方同步列出本轮内容：新增「诅咒森林」区域与森林系敌人、会孵出敌人的寄生孢子、角色技能可升级、符文与神器重做、新增任务/教学/小地图，单人至 4 人合作均可，Boss 难度按合作调平。Steam 页面显示由 ABUTTON Inc. 开发发行，尚未公布发售日。",
+     "analysis": "",
+     "recommendation": "《Guns and Dragons》：枪械+长弓的 4 人合作 Roguelite FPS，试玩开到 11/23",
+     "featured": true,
+     "game_ref": "Guns and Dragons",
+     "enrichment": {
+      "game_name": "Guns and Dragons",
+      "genre": "动作 / 冒险 / Roguelite FPS",
+      "developer": "ABUTTON Inc.（开发兼发行）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4687860/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4687860/e683d4a1be5443ea6fa44feb1a16dfcb5c5d9c04/header.jpg?t=1793950582",
+      "youtube_video": null,
+      "pcu": "未发售",
+      "current_players": null,
+      "estimated_sales": null,
+      "description": "【核心玩法】最多 4 人合作的 Roguelite FPS：用不断进化的武器清怪、收集素材，每次挑战结束后扩建据点、强化武器，再进入下一轮。官方强调「没有任何两次挑战是相同的」。\n\n【题材与武器】奇幻世界设定，除了左轮、霰弹枪等火器，还提供长弓与十字弓这类冷兵器，射击手感与冷兵器节奏混搭是主要差异化。\n\n【本轮试玩内容】新增「诅咒森林」区域与森林系敌人；会孵出敌人的寄生孢子；角色技能可升级；符文与神器重做；新增任务、教学与小地图；Boss 难度按合作人数调平；试玩开放至 11 月 23 日。\n\n【优势】题材混搭的新鲜感强；合作向的 Boss 调平与技能成长给出清晰的四人分工；据点改扩建把局外成长做成了可见的进度。\n【不足】尚未公布发售日；试玩期内容以区域与系统调整为主，长期打磨深度仍需观察。\n\n【综合】在「合作射击 + 局外基地建设」这条已被验证的赛道里，用奇幻冷热兵器混搭切出一个记忆点，试玩窗口到 11/23，适合四人组队先验手感。",
+      "why_notable": "枪械与长弓混搭的合作 Roguelite FPS，1,400 万级曝光，试玩窗口只到 11/23"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "SP Central / X · 泄露片段",
+     "tags": [
+      "泄露",
+      "动作RPG",
+      "待官方确认"
+     ],
+     "title": "《白银之城 Silver Palace》新角色 Morgane 实机片段泄露：7,570 赞、32 万浏览",
+     "en_title": "LEAKS - Morgane Gameplay! Via Lighthouse Leaks #SilverPalace",
+     "full_text": "LEAKS - Morgane Gameplay!\n\nVia Lighthouse Leaks \n#SilverPalace https://t.co/pFuWjZ7RzF",
+     "author": "SilverPalace_C",
+     "date": "2026-11-09",
+     "likes": 7570,
+     "views": 319763,
+     "link": "https://x.com/SilverPalace_C/status/2119689136160276881",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2119689053578620928/img/a6i5nYQv7bcfxN-_.jpg",
+      "video_url": "https://x.com/SilverPalace_C/status/2119689136160276881/video/1"
+     },
+     "summary": "粉丝账号 SP Central 转引 Lighthouse Leaks，放出一段标注为《白银之城 Silver Palace》角色 Morgane 的实机片段，单条获得 7,570 赞、31.9 万浏览。片段未标注版本与录制时间，官方也未回应，画质、UI 与技能表现均需以正式发布内容为准。",
+     "analysis": "",
+     "recommendation": "《白银之城》Morgane 实机泄露：单条 32 万浏览，官方未回应",
+     "featured": true,
+     "game_ref": "Silver Palace"
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "apek / X · 独立开发",
+     "tags": [
+      "网页游戏",
+      "多人同服",
+      "独立开发"
+     ],
+     "title": "单人开发者在网页上做出「无限演化」的后室游戏：上线 36 小时 3.5 万玩家、1,200 人同时在线",
+     "en_title": "i'm a solo dev and i built an infinitely evolving backrooms game and released it on the web",
+     "full_text": "i'm a solo dev and i built an infinitely evolving backrooms game and released it on the web. \n\n35,000 players and ~9,600 hours played. these are my metrics under 36 hours of launch. \n\neach blue dot below is a player on the map i recorded a moment ago. there's ~1,200 players playing the game at THIS moment. SIMULTANEOUSLY. let that sink in.  \n\nthis is incredible. we're entering a new era for sure.\n\nnote for video: only shows 200 players in total because my server chunks the shared space into worlds of 200, so 1200 players would be 6 different worlds and you're seeing one of em. \n\ni'm building out a shared space server that can sustain 2000 players in a single world. launching real soon.",
+     "author": "apekshik",
+     "date": "2026-11-08",
+     "likes": 1538,
+     "views": 179151,
+     "link": "https://x.com/apekshik/status/2119517930300076261",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2119516015931613184/img/OZUXb-wVW2atjYru.jpg",
+      "video_url": "https://x.com/apekshik/status/2119517930300076261/video/1"
+     },
+     "summary": "开发者 apek 把一款「无限演化」的后室（backrooms）游戏直接发布到网页端，上线 36 小时内累计 3.5 万名玩家、约 9,600 小时游玩，录制时刻约有 1,200 人在同时游玩。他解释视频里只显示 200 人，是因为共享空间按 200 人一个世界切分；目前正在做单世界可承载 2,000 人的共享服务器，即将上线。",
+     "analysis": "",
+     "recommendation": "单人做的后室网页游戏上线 36 小时：3.5 万玩家、1,200 人同时在线"
+    },
+    {
+     "idx": "新游参考 01",
+     "unselected": true,
+     "source": "Niche Gamer · 新游",
+     "tags": [
+      "4X策略",
+      "历史题材",
+      "待定档"
+     ],
+     "title": "《Colonerra Age of Exploration》：把大航海时代的贸易、探索与海盗做成回合制 4X（The Game Tzar 开发）",
+     "en_title": "Historical 4X strategy game Colonerra combines trade, exploration, and pirating",
+     "full_text": "Historical 4X strategy game Colonerra combines trade, exploration, and pirating: https://t.co/FusyEDdKvn https://t.co/mOHOF2D7iQ",
+     "author": "nichegamer",
+     "date": "2026-11-09",
+     "likes": 7,
+     "views": 777,
+     "link": "https://x.com/nichegamer/status/2119819654277271596",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWscvfGXkAA_i45.jpg"
+     },
+     "summary": "Niche Gamer 介绍历史题材回合制 4X《Colonerra Age of Exploration》：玩家以国王任命的总督身份统治新大陆，探索未知土地、建设殖民地、经营跨大西洋贸易、发动战争，最终建立独立国家。Steam 页面显示由 The Game Tzar 开发，发售时间待定。",
+     "recommendation": "《Colonerra》把大航海贸易与海盗做成回合制 4X，档期待定"
+    },
+    {
+     "idx": "新游参考 02",
+     "unselected": true,
+     "source": "Niche Gamer · 同人",
+     "tags": [
+      "同人游戏",
+      "宝可梦",
+      "育成"
+     ],
+     "title": "同人游戏《Poke Derby》：把赛马娘式育成套进宝可梦",
+     "en_title": "Poke Derby is an insane fan game that's like Umamusume w/Pokemon",
+     "full_text": "Poke Derby is an insane fan game that's like Umamusume w/Pokemon: https://t.co/34TYliuSk8 https://t.co/njJqveqLDw",
+     "author": "nichegamer",
+     "date": "2026-11-09",
+     "likes": 3,
+     "views": 490,
+     "link": "https://x.com/nichegamer/status/2119818799356539127",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2119818754766884864/pu/img/z6jsYF0i3JuotOr9.jpg",
+      "video_url": "https://x.com/nichegamer/status/2119818799356539127/video/1"
+     },
+     "summary": "Niche Gamer 报道一款名为《Poke Derby》的同人作品，玩法被形容为「宝可梦版赛马娘」：以育成加竞速为核心，把宝可梦当作参赛个体培养。作为粉丝作品，其版权状态与后续发行方式尚未明确。",
+     "recommendation": "同人《Poke Derby》把赛马娘式育成套进宝可梦，版权状态待明"
+    },
+    {
+     "idx": "新游参考 03",
+     "unselected": true,
+     "source": "Eurogamer · 定档",
+     "tags": [
+      "战锤40K",
+      "CRPG",
+      "定档"
+     ],
+     "title": "Owlcat 的《战锤 40K：Dark Heresy》定档，接在《Rogue Trader》之后",
+     "en_title": "Owlcat's awaited Warhammer 40K RPG Dark Heresy gets a release date",
+     "full_text": "Owlcat's awaited Warhammer 40K RPG Dark Heresy gets a release date, hoping to follow the good work of Rogue Trader https://t.co/K5Sya1VxkC https://t.co/Qu0dOMySLn",
+     "author": "eurogamer",
+     "date": "2026-11-09",
+     "likes": 11,
+     "views": 1556,
+     "link": "https://x.com/eurogamer/status/2119835364189962342",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWsq-aeXUAA-DYz.jpg"
+     },
+     "summary": "Eurogamer 报道，Owlcat 的《战锤 40K：Dark Heresy》公布发售日期，媒体普遍期待它能延续《Warhammer 40,000: Rogue Trader》的成绩，进一步巩固这家工作室在 CRPG 上的口碑。",
+     "recommendation": "Owlcat《战锤 40K：Dark Heresy》定档，接棒《Rogue Trader》"
+    },
+    {
+     "idx": "新游参考 04",
+     "unselected": true,
+     "source": "Niche Gamer · 重制",
+     "tags": [
+      "Flash 重制",
+      "休闲",
+      "官宣"
+     ],
+     "title": "经典 Flash 游戏《Bad Ice-Cream》重制：《Triple Scoop》公布",
+     "en_title": "Classic flash game remaster Bad Ice-Cream Triple Scoop was announced!",
+     "full_text": "Classic flash game remaster Bad Ice-Cream Triple Scoop was announced! https://t.co/WCDXB9pr5F https://t.co/ZTvimJkrik",
+     "author": "nichegamer",
+     "date": "2026-11-09",
+     "likes": 4,
+     "views": 644,
+     "link": "https://x.com/nichegamer/status/2119823820206850466",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2119823790880227328/pu/img/UmaUAvPDqk_NmMIh.jpg",
+      "video_url": "https://x.com/nichegamer/status/2119823820206850466/video/1"
+     },
+     "summary": "Niche Gamer 报道，经典 Flash 休闲游戏《Bad Ice-Cream》推出重制版《Bad Ice-Cream Triple Scoop》，官方已放出公布影像，具体平台与档期尚未披露。",
+     "recommendation": "经典 Flash 游戏《Bad Ice-Cream》重制版《Triple Scoop》公布"
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unity for Games / X · 官方",
+     "tags": [
+      "Unity 7",
+      "引擎",
+      "热重载"
+     ],
+     "title": "Unity 7 官宣在路上：CoreCLR 迁移、URP 图形升级与 MethodReload 方法级热重载",
+     "en_title": "Unity 7 is coming — From CoreCLR prep and URP graphics upgrades to MethodReload",
+     "full_text": "Unity 7 is coming 👀\n\nFrom CoreCLR prep and URP graphics upgrades to MethodReload, here is how the Engine evolves into the next generation. \n\nWhich feature are you benchmarking first? https://t.co/UeE5vGDGQc",
+     "author": "unitygames",
+     "date": "2026-11-09",
+     "likes": 273,
+     "views": 15183,
+     "link": "https://x.com/unitygames/status/2119782374292476287",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWr61AmXsAAAwSW.jpg"
+     },
+     "summary": "Unity 官方账号预告 Unity 7，并列出三条主线：为切换到 CoreCLR 做前置准备、URP 渲染管线的图形能力升级，以及 MethodReload——把方法级热重载做成引擎能力。官方在推文里直接问开发者「会先基准测试哪个特性」。",
+     "analysis": "CoreCLR 是这轮里最实质的一条：运行时性能、GC 行为与 C# 现代特性都会随之变化，老项目的迁移成本要提前评估。MethodReload 若真做到方法级，迭代循环会从「重进 Play 模式」变成「改完即生效」，对中大型项目的工时影响比表面更大。",
+     "recommendation": "Unity 7 官宣：CoreCLR 前置迁移、URP 图形升级、MethodReload 方法级热重载",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "硅基废话 / X · 工具清单",
+     "tags": [
+      "开源",
+      "AI 工作流",
+      "清单"
+     ],
+     "title": "7 个可接 Claude Code / Codex 的开源游戏开发 Skill：从 49 个智能体工作室到 Blender 全流程",
+     "en_title": "想用 Claude Code、Codex 做游戏、做 3D 的，这 7 个开源 Skill 建议收藏",
+     "full_text": "想用 Claude Code、Codex 做游戏、做 3D 的，这 7 个开源 Skill 建议收藏：\n\n1.Claude-Code-Game-Studios（约 3.7 万 star）\n把一个 Claude Code 变成游戏工作室，49 个智能体分工做策划、程序、美术、测试，Godot、Unity、虚幻都能接。作者拿同一份需求做了 4 款，都跑起来了。\n\n2.agent-sprite-forge（约 5400 star）\n定好一张角色图，它把站立、跑、跳、攻击、受伤一个个做成循环动画，打包成 Godot 和网页游戏能直接用的素材。有简体中文说明。\n\n3.teardown（约 2600 star）\n问它摩托车发动机怎么转，Claude 做出一个能拆开看的 3D 模拟页面，零件在转、数字在跳，还能录成 60 帧视频。\n\n4.blender-skills（约 780 star）\n28 个 Blender 技能，建模、贴图、绑骨、动画、渲染全流程，每个脚本都在真 Blender 里测过。要装 Blender 5.2。\n\n5.3D OS（约 3500 star）\nScenario 开源的一整套 3D 工作室，80 个技能。大部分要接它家平台，驱动 Blender、Unity、Godot、虚幻、Roblox 的那部分不用。\n\n6.prompt2rig（约 530 star）\n打一句动作，视频模型先演一遍，再把动作套到 Mixamo 角色上，手指都能动，能导进 Blender 和 Unity。要 fal 的 API 和一张 N 卡。\n\n7.open-3d-skills（约 300 star）\n8 个做 3D 网页的技能：纯代码搭 three.js 场景、跟着滚动放的影片、机器爆炸图，做完自己开浏览器检查，再录成视频。",
+     "author": "DDJCXX",
+     "date": "2026-11-09",
+     "likes": 828,
+     "views": 56341,
+     "link": "https://x.com/DDJCXX/status/2119675145627599356",
+     "media": null,
+     "summary": "一条中文清单整理了 7 个可用在 Claude Code / Codex 上的游戏与 3D 开源 Skill：Claude-Code-Game-Studios（约 3.7 万 star，49 个智能体分工策划/程序/美术/测试，可接 Godot、Unity、虚幻）、agent-sprite-forge（约 5,400 star，一张角色图生成站立/跑/跳/攻击/受伤循环动画并打包成 Godot 与网页可用素材）、teardown（约 2,600 star，可拆解的 3D 机械模拟）、blender-skills（约 780 star，28 个 Blender 技能，需 Blender 5.2）、3D OS（约 3,500 star，80 个技能）、prompt2rig（约 530 star，文字动作→Mixamo 绑定）、open-3d-skills（约 300 star，8 个 three.js 网页技能）。",
+     "analysis": "这份清单的价值在于把「AI 做游戏」拆成了可安装的工序：立项、素材、绑定、DCC、引擎落地各有对应仓库，star 数也给出了社区验证强度。选型时优先看是否必须接它家平台（如 3D OS 大部分技能要连官方服务），以及是否绑定特定版本（blender-skills 要 Blender 5.2）。",
+     "recommendation": "7 个开源 Skill 把 AI 做游戏拆成工序：从 49 智能体工作室到 Blender 全流程"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI 的边界之争从口号落到预算表**\n樱井政博在新书活动上给出日本一线制作人少见的明确表态：生成式 AI「还没赢得我的信任」，用于美术时「绝不能构成任何形式的剥削」，但也不该全面拒绝——现在做游戏太难，有些作品卖出数百万份仍在亏损，「什么都不做大概也不是正确答案」。同一天，单人开发者用 Tripo + Blender + Opus 5.5 + Unity 6 走通了一条完整的钓鱼游戏管线，陈成的 Qoduck 实测则给出了另一面：底子不错，但单个大 case 仍要等 86–111 分钟。\n\n**英伟达与 GTA 6 同时占据头条**\n英伟达董事会就 CEO 黄仁勋承认婚外情、对方被指为中国情报人员一事启动独立调查，董事会称没有理由认为公司机密受损，黄继续担任 CEO。游戏侧，《GTA 6》预载按各地午夜陆续开启，拆包玩家从文件里挖出多人模式接口与 PS5 Pro 的 120Hz / PSSR 痕迹；索尼则公布日本限定、首加内置存储的 PlayStation Portal，39,980 日元，仍以串流为核心。\n\n**免费沙盒与新游窗口**\nKefir 的免费犯罪沙盒《ROB RUN》同时在线突破 14 万，Steam 峰值由首发次日的 4.37 万涨到 15.1 万。新游侧，枪械与长弓混搭的 4 人合作 Roguelite FPS《Guns and Dragons》试玩开放至 11 月 23 日，《白银之城 Silver Palace》角色 Morgane 的实机片段泄露拿到 32 万浏览，还有单人发布到网页、36 小时涌入 3.5 万玩家的后室游戏。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
