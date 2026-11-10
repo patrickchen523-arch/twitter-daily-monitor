@@ -817,7 +817,7 @@ body.editorial-mode.roblox-mode{background:#f6f0e8;color:#3c2b27;font-family:"Nu
   <a class="top-nav-item active" onclick="switchView('twitter')" id="navTwitter">Twitter 日报</a>
   <a class="top-nav-item" onclick="switchView('launched')" id="navLaunched">游戏关注</a>
   <a class="top-nav-item" onclick="switchView('roblox')" id="navRoblox">Roblox 监控周报</a>
-  <a class="top-nav-item" href="./art-atlas/" id="navArtAtlas">美术库</a>
+  <a class="top-nav-item" href="https://patrickchen523-arch.github.io/art-atlas/" id="navArtAtlas">美术库</a>
   <a class="top-nav-item" onclick="switchView('library')" id="navLibrary">游戏库</a>
 </div>
 
@@ -1287,7 +1287,7 @@ function renderEditorialTopNav() {
     <button type="button" class="ed-category-tab ed-brand ${activeClass('digest')}" data-nav="digest" onclick="switchTab('digest')" aria-label="返回日精选">DAILY</button>
     ${tab('weekly', '推特周报', null)}
     ${tab('roblox', 'ROBLOX周报', null, `switchView('roblox')`)}
-    ${tab('artatlas', '美术库', null, `window.location.href='./art-atlas/'`)}
+    ${tab('artatlas', '美术库', null, `window.open('https://patrickchen523-arch.github.io/art-atlas/','_blank')`)}
     ${tab('library', '游戏库', null, `switchView('library')`)}
     <form class="ed-search-entry" role="search" aria-label="全库搜索" onsubmit="return submitEditorialSearch(event)"><button type="submit" class="ed-search-button" aria-label="搜索">&#x2315;</button><input type="search" value="${escapeHtml(query)}" placeholder="搜索" oninput="handleEditorialSearchInput(this.value)" oncompositionstart="isSearchComposing=true" oncompositionend="isSearchComposing=false; handleEditorialSearchInput(this.value)" onkeydown="handleEditorialSearchKey(event)"></form>`;
 }
