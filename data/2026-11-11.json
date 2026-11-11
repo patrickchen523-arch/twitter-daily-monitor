@@ -1,0 +1,542 @@
+{
+ "date": "2026-11-11",
+ "meta": {
+  "raw_count": 205,
+  "filtered_count": 196,
+  "selected_count": 12,
+  "crawl_time": "2026-11-11 09:45"
+ },
+ "lede": "《GTA 6》成为 PlayStation 与微软商店史上预购最多的游戏，同时确认全平台锁 30fps；Claude Fable 5.2 单条 prompt 跑 9 小时产出可玩 AAA 级 FPS（1.79 亿 token、约 550 美元）；《Big Walk》承认末期为修 Bug 用过生成式 AI，IGF 评委拒评引发行业撕裂。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "《GTA 6》创 PS 与 Xbox 商店预购纪录，但全平台锁 30fps"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "魔法是能研究、改写、自创的系统，不是技能树——1.4 万赞"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Fable 5.2 用 1.79 亿 token、27 个子代理跑 9 小时，单 prompt 出可玩 FPS"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Fable 5.2 单 prompt 跑 9 小时产出可玩 AAA 级浏览器 FPS，1.79 亿 token、约 550 美元\nFable 5.2 能力清单：三块电路板、8 天造 OS 原型、30 小时形式化费马大定理\nVercel 安全扫描一周识别 5.79 万漏洞，Agent 自动修掉 1.47 万"
+  },
+  {
+   "id": "industry",
+   "text": "《GTA 6》成 PS 与微软商店史上预购最多游戏，全平台锁 30fps、11/19 解锁\n《Big Walk》承认 <0.1% 代码用过 LLM，IGF 评委拒评、玩家差评洗版\n《ARC Raiders》一年卖出 1700 万，Nexon 预警 Q4 收入下滑\nSteam 周销榜：MW4 登顶、影之刃零第 2、足球经理 27 第 3（首日 PCU 7.2 万）"
+  },
+  {
+   "id": "indie",
+   "text": "《Aveltuner》：魔法是系统不是技能树，1.4 万赞\n《SUBJECT 404》：限时微游戏变成服从机制的心理恐怖\n《Worst Class Ever》：1 老师 vs 7 学生的教室非对称派对"
+  },
+  {
+   "id": "tools",
+   "text": "《死亡细胞》主设计师开源关卡编辑器 LDtk，4 年 50+ 版本\nUnity CLI 批量烘焙多场景光照，自动生成对照表"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · AI 生成内容",
+     "tags": [
+      "AI造游戏",
+      "WebGPU",
+      "Fable 5.2"
+     ],
+     "title": "Claude Fable 5.2 单条 prompt 跑 9 小时，产出一款可直接玩的 AAA 级浏览器 FPS",
+     "en_title": "I gave Fable 5.2 (max) a single prompt ... 179 million tokens across 27 autonomous sub-agents over a continuous 9 hour run",
+     "full_text": "I am shaking right now...🤯\n\nI gave Fable 5.2 (max) a single prompt: \"build a hyper-realistic first person shooter set on a tropical island, AAA quality visuals and sound effects, make no mistakes\" and let it run unattended.\n\nThe result looks absolutely stunning. Everything procedural in raw WebGPU, no engine.\n\nHere are the actual telemetry stats from the run:\n- Consumed 179 million tokens across 27 autonomous sub-agents over a continuous 9 hour run\n- Rendering ~30 million polygons per frame with real-time subsurface scattering on every palm frond\n- Y-axis heightmaps and coastal erosion patterns generated procedurally using 4K compute shaders\n- Self-verified 124K output tokens of custom GLSL shaders using its internal headless browser loop to fix shadow-map acne\n- Instanced 4,200 destuctible bamboo huts and rigid-body physics barrels at a locked 60 FPS\n- Simulated volumetric god-rays, ocean FFT wave dynamics, and inverse kinematics\n\nTraditional AAA game studios are officially cooked",
+     "author": "Ant",
+     "date": "2026-11-10",
+     "likes": 426,
+     "views": 74083,
+     "link": "https://x.com/imantiai/status/2119979537320534135",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2119977740925378560/img/IEwm3Zi2CIJAn8UC.jpg",
+      "video_url": "https://x.com/i/status/2119979537320534135/video/1"
+     },
+     "summary": "开发者给 Fable 5.2（max）一条 prompt：「做一个热带岛屿上的超写实第一人称射击游戏，AAA 级画面与音效，不许出错」，随后完全无人值守。结果全部在原生 WebGPU 里程序化生成、不用任何引擎：27 个子代理连续跑 9 小时、消耗 1.79 亿 token，单帧约 3000 万多边形，棕榈叶带实时次表面散射，海面用 FFT 波形，4200 个可破坏竹屋与刚体木桶锁 60fps。作者称模型还用内置无头浏览器自检了 12.4 万 token 的 GLSL，修掉 shadow-map 的阴影瑕疵。",
+     "analysis": "这条的价值不在「demo 好看」，而在工程指标的公开：token 总量、子代理数量、无人值守时长、自检闭环——这些恰好是评估 AI 产线可复现性的四个变量。对国内团队更现实的问题是：当原型成本降到几百美元，稀缺的就不再是产能，而是「判断什么值得做」以及把这些素材接进可上线管线的能力。",
+     "recommendation": "Fable 5.2 用 1.79 亿 token、27 个子代理跑 9 小时，单条 prompt 产出可玩 AAA 级 FPS demo",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 博主总结",
+     "tags": [
+      "Fable 5.2",
+      "跨学科",
+      "模型能力"
+     ],
+     "title": "Fable 5.2 能力清单：一段话画出三块能用的电路板，8 天从空目录造出可启动的 OS 原型",
+     "en_title": "Anthropic vient de sortir Claude Fable 5.2 ... 1. En ingénierie des système éléctronique c'est le choc",
+     "full_text": "🚨 Je crois qu'on ne se rend pas bien compte de ce qui vient de se passer cette nuit\n\nAnthropic vient de sortir Claude Fable 5.2\n\nAlors, je vous ai résumé ce qu'il peut faire, c'est tout aussi magnifique que terrifiant\n\n1. En ingénierie des système éléctronique c'est le choc\n\nÀ partir d'un seul paragraphe, il a conçu trois appareils électroniques qui marchent. Dont un assistant vocal pour la maison. Il a écrit les specs, choisi les composants, routé une carte à quatre couches, dessiné le boîtier pour l'impression 3D, et programmé le logiciel. Selon Anthropic, les trois ont fonctionné sans aucune modification. \n\n2. Il a refait un Windows solo sans se baser sur rien\n\nUn ingénieur d'Anthropic lui a demandé de construire un système d'exploitation à partir d'un dossier vide. Plus de 1 000 agents, 8 jours, sans interruption. Le prototype, d'après eux, démarre sur un laptop : kernel, pilotes, fenêtres, écran de connexion, installeur. \n\n3. En Mathématiques il a formalisé tout le théorème de Fermat\n\n1 000 agents. 30 heures. Le théorème de Fermat, entièrement formalisé, traduit dans un langage qu'un ordinateur peut vérifier étape par étape. Avec le même protocole, Opus 5.5 était à 26 % au bout de 18 heures, et n'avançait presque plus après 30.\n\n4. Sur les Jeux vidéo, c'est limite criminel\n\nUn ingénieur d'Anthropic lui a envoyé des prompts en une seule passe, sans aucune correction humaine. 8 heures plus tard : un FPS 3D jouable dans le navigateur. Modèles, sons, textures, tout créé de zéro. Environ 550 dollars de compute. On peut le lancer je vous en ai mis d'autres dans les commentaires\n\n5. En imagerie et peinture\n\nALors c'est un peu contre intuitif mais Il peint. Pas avec un modèle d'image mais avec du code. Des programmes Python de 1 000 à 2 000 lignes, qui placent chaque coup de pinceau un par un. Une des toiles, poussée jusqu'à ressembler à une photo, fait environ 700 000 coups de brosse \n\n6. En physique théorique\n\nSelon Anthropic, il a résolu deux problèmes ouverts en physique des trous noirs. Sur le premier, il a terminé un calcul qui restait ouvert depuis 23 ans. Les preprints sont en ligne.\n\n7. En robotique \n\nIl pilote des robots, y compris sur des tâches pour lesquelles il n'a jamais été entraîné. Sur RoboDojo, un benchmark avec un robot à deux bras en simulation, il devance les autres modèles et la plupart des systèmes conçus pour ça.\n\nEt sur le classement indépendant d'Artificial Analysis, il passe n°1, à 65. Devant Gemini 4 Carbon (60) et Opus 5.5 (59)\n\nC'est juste avant l'IPO, ils ont all in sur cette sortie, je vous avoue que c'est un gros tour de force. Evidemment, ça a vocation à pousser l'IPO, mais la lecture va au dela\n\nOn vit dans une période incroyable",
+     "author": "Frenchie",
+     "date": "2026-11-10",
+     "likes": 5479,
+     "views": 929023,
+     "link": "https://x.com/Frenchie_/status/2120071833617568076",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2120070566702944256/img/i6GHJ2NjRhFqP4Qk.jpg",
+      "video_url": "https://x.com/i/status/2120071833617568076/video/1"
+     },
+     "summary": "法国开发者 Frenchie 汇总了 Fable 5.2 发布后被验证的七项能力（数据引自 Anthropic 与公开结果）：①一段文字描述后设计出三块电子设备、含四层 PCB 布线与 3D 外壳，据称无需修改即可工作；②1000+ 代理连续 8 天从空文件夹写出可开机原型（内核、驱动、窗口、登录、安装器）；③1000 代理 30 小时把费马大定理完整形式化，而 Opus 5.5 在 18 小时只到 26%；④一次 prompt、8 小时、约 550 美元算力做出浏览器 3D FPS；⑤用 1000–2000 行 Python 逐笔「画」出约 70 万笔触的油画；⑥据称解决两个黑洞物理开放问题，其中一个已悬置 23 年；⑦在 RoboDojo 双臂机器人基准上超过专用系统。Artificial Analysis 独立榜上以 65 分登顶，领先 Gemini 4 Carbon（60）与 Opus 5.5（59）。",
+     "analysis": "值得注意的不是单项炫技，而是能力分布的形状：同一模型在电子工程、系统编程、形式化数学、实时图形、机器人控制上同时过线，说明「专业工具链」的护城河正在被通用推理侵蚀。对游戏团队的直接含义是：中间件、导表工具、构建脚本这类「窄而深」的自研投入，未来两年的性价比需要重新算一遍。",
+     "recommendation": "Fable 5.2 独立榜 65 分登顶：三块电路板、8 天造 OS、30 小时形式化费马大定理"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 工具链",
+     "tags": [
+      "AI Agent",
+      "代码安全",
+      "Vercel"
+     ],
+     "title": "Vercel 安全扫描上线不到一周：识别 57,897 个漏洞，Agent 自动修掉 14,665 个",
+     "en_title": "Vercel Security Review, less than 1 week since launch: 57,897 vulnerabilities identified / 6,029 critical or high / 14,665 already patched by Agent",
+     "full_text": "Vercel Security Review, less than 1 week since launch:\n✓ 𝟱𝟳,𝟴𝟵𝟳 vulnerabilities identified\n✓ 𝟲,𝟬𝟮𝟵 critical or high \n✓ 𝟭𝟰,𝟲𝟲𝟱 already patched by Agent\n\nI'm shocked at ① the number of critical vulnerabilities that would go unnoticed and ② the ease at which the agent automatically fixes them.\n\nYou can turn it on for any repo, no matter where you deploy to.",
+     "author": "Guillermo Rauch",
+     "date": "2026-11-10",
+     "likes": 152,
+     "views": 12523,
+     "link": "https://x.com/rauchg/status/2120188488628977819",
+     "media": null,
+     "summary": "Vercel CEO Guillermo Rauch 公布 Security Review 上线不到一周的数据：共识别 57,897 个漏洞，其中 6,029 个为严重或高危，Agent 已自动修复 14,665 个。他表示意外的有两件事——这么多高危漏洞原本根本不会被发现，以及 Agent 自动修补的顺畅程度。该功能可对任意仓库开启，不限于部署在 Vercel 的项目。",
+     "analysis": "这组数字的真正含义是「存量债的可见性」：大量中小团队的项目里躺着无人扫描的高危漏洞，一旦扫描成本趋近于零，安全基线会被动抬高。游戏侧同样适用——账号、支付、对战服务的服务端代码往往缺少持续审计，把它接进 CI 只是配置问题。",
+     "recommendation": "Vercel 一周扫出 5.79 万个漏洞，Agent 自动修掉 1.47 万个——其中 6,029 个高危",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "The Game Awards / Eurogamer · 行业",
+     "tags": [
+      "GTA 6",
+      "预购纪录",
+      "30fps"
+     ],
+     "title": "《GTA 6》成为 PlayStation 与微软商店史上预购最多的游戏，同时确认全平台锁 30fps",
+     "en_title": "GTA6 is the most pre ordered game in the history of PlayStation and Microsoft online stores.",
+     "full_text": "GTA6 is the most pre ordered game in the history of PlayStation and Microsoft online stores. https://t.co/gGu41TelGo",
+     "author": "The Game Awards",
+     "date": "2026-11-10",
+     "likes": 5644,
+     "views": 61862,
+     "link": "https://x.com/thegameawards/status/2120182634689221029",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWxm3o5bcAAy-GR.jpg"
+     },
+     "summary": "Sony 在 PlayStation Blog 确认《GTA 6》已成为 PlayStation Store 历史上预购量最高的游戏，并联合 Rockstar 开放提前 9 天预载；游戏将于 11 月 19 日按各区零点解锁（新西兰最早）。Take-Two CEO Strauss Zelnick 在财报电话会上称预购「远超预期」，会为公司在成功度上「设定新基线」。另一方面 Rockstar 已确认本作在所有主机上目标 30fps，PS5 Pro 提供增强但帧率上限不变，且不支持从 Xbox 串流到 PC。",
+     "analysis": "预购纪录与 30fps 同时成立，说明这一代主机的性能天花板已经被写进产品决策：厂商用画质与规模换帧率，把 60fps 留给下一代或 PC 版。对国内团队的参照意义在于——顶配 3A 都在做这种取舍，中小团队更没必要为了营销口径牺牲可玩性指标。",
+     "recommendation": "《GTA 6》创 PS 与 Xbox 商店预购纪录，同时确认全平台锁 30fps、11/19 解锁",
+     "featured": true,
+     "game_ref": "Grand Theft Auto VI"
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "X / PC Gamer / Eurogamer · 行业",
+     "tags": [
+      "生成式AI",
+      "IGF",
+      "披露机制"
+     ],
+     "title": "《Big Walk》承认末期为修 Bug 用过 LLM：不到 0.1% 代码，IGF 评委集体拒评并引发差评洗版",
+     "en_title": "Big Walk developers disclosed the use of AI to meet the final stretch of production.",
+     "full_text": "Big Walk developers disclosed the use of AI to meet the final stretch of production.\n\nThe outcome shows two things:\n1) A studio as big as House House required AI to survive the market.\n2) A smaller studio would have not survived the very people demanding disclosure. https://t.co/e7xXo6UqpO",
+     "author": "Andrea Intg.",
+     "date": "2026-11-10",
+     "likes": 1104,
+     "views": 270205,
+     "link": "https://x.com/andreintg/status/2120091055949488197",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWwOl28XQAAJGcA.png"
+     },
+     "summary": "2027 IGF 一批评委先发声明，称今年提交作品中「用生成式 AI 开发」的数量显著增加，明确把 AI 生成代码也列为不可接受，并引发评审池内激烈分歧。随后 House House 在《Big Walk》官网 FAQ 补上 AI 声明：开发末期「少量」使用 LLM 处理棘手技术问题与 Bug，部分片段被复制后改写为游戏代码，估计涉及不到 0.1% 的代码量，其余环节未使用生成式 AI——举例是约 10 行代码，用来解决一个连 Unity 工程师都没能定位的问题。工作室同时说明 Steam 并不要求披露代码/聊天机器人用法，此次公开是因为「已成为公众议题」，并承认当时没有内部 AI 使用政策是一种失职。事件后游戏遭到大量差评。",
+     "analysis": "这不是「用没用 AI」的站队问题，而是披露时机问题：团队在两年开发期里没有政策、没有留痕，等到评审与玩家开始追问才补声明，任何解释都会被读成事后辩护。对从业者最实用的一条是「先写政策再写代码」——把允许的工具、允许的环节、留痕方式提前定好，成本远低于危机公关。",
+     "recommendation": "《Big Walk》披露不到 0.1% 代码用过 LLM，IGF 评委拒评、玩家差评洗版",
+     "featured": true,
+     "game_ref": "Big Walk"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 行业",
+     "tags": [
+      "撤离射击",
+      "销量",
+      "Nexon"
+     ],
+     "title": "《ARC Raiders》发售一年销量突破 1700 万，Nexon 却预警 Q4 收入下滑",
+     "en_title": "As Arc Raiders celebrates its first birthday, publisher Nexon reveals the extraction shooter has topped 17 million sales, but revenue is set to decline",
+     "full_text": "As Arc Raiders celebrates its first birthday, publisher Nexon reveals the extraction shooter has topped 17 million sales, but revenue is set to decline\n\nhttps://t.co/KSNc5xy8Jh https://t.co/Oro1RfA5z8",
+     "author": "Eurogamer",
+     "date": "2026-11-10",
+     "likes": 4,
+     "views": 3459,
+     "link": "https://x.com/eurogamer/status/2120131457847013734",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWwvIp_akAAiTUU.jpg"
+     },
+     "summary": "在《ARC Raiders》推出一周年之际，发行商 Nexon 披露这款撤离射击游戏的累计销量已超过 1700 万份，但同时预计第四季度收入将出现下滑。游戏当日 Steam 峰值约 5.75 万，仍稳居热玩榜前列。",
+     "analysis": "1700 万套是买断制撤离射击的头部成绩，但「销量见顶 + 收入下滑」的组合说明这类产品进入长线运营阶段后，收入更依赖赛季与内购转化而非新增用户。对做买断 + 服务的团队是个提醒：首年销量决定口碑，第二年的现金流取决于留存设计。",
+     "recommendation": "《ARC Raiders》一年卖出 1700 万份，Nexon 却预警 Q4 收入下滑",
+     "game_ref": "ARC Raiders"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "SteamDB / 有数GI · 榜单",
+     "tags": [
+      "Steam周销",
+      "PCU",
+      "榜单"
+     ],
+     "title": "Steam 周销榜（11/3–11/10）：《现代战争 4》登顶，《影之刃零》第 2，足球经理 27 第 3",
+     "en_title": "#SteamTopSellers for week of 3 Nov — 10 November 2026 (No F2P)",
+     "full_text": "#SteamTopSellers for week of 3 Nov — 10 November 2026 (No F2P):\n\n#1 - Call of Duty®: Modern Warfare® 4\n#2 - Phantom Blade Zero\n#3 - Football Manager 27\n#4 - Probably Stolen - Cyberpunk Shopkeeper Sim\n#5 - EA SPORTS FC™ 27\n\nhttps://t.co/VA8nZ7yDV5",
+     "author": "SteamDB",
+     "date": "2026-11-10",
+     "likes": 30,
+     "views": 4547,
+     "link": "https://x.com/SteamDB/status/2120162153139175684",
+     "media": null,
+     "summary": "SteamDB 公布 11 月 3 日至 10 日（不含免费游戏）的 Steam 周销榜：①《使命召唤：现代战争 4》②《影之刃零》③《足球经理 27》④《深空当铺：可能是偷的》⑤《EA SPORTS FC 27》。其中《足球经理 27》于 11 月 10 日发售，首日 Steam 峰值达 72,471，好评率 92%，是本周唯一首次突破 2 万 PCU 的新品。",
+     "analysis": "前五里有三款是「单机/体育管理/模拟经营」类买断制产品，而非服务型大作——本周的付费意愿集中在确定性强的品类上。对国内团队的两点观察：国产《影之刃零》发售后第二周仍守住第 2，说明口碑驱动的长尾成立；《足球经理 27》这种「年货 + 深度模拟」的模式在 PC 端依旧有稳定盘子。",
+     "recommendation": "Steam 周销榜 MW4 登顶、影之刃零第 2、足球经理 27 第 3——首日 PCU 7.2 万",
+     "game_ref": "Football Manager 27"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 独立开发",
+     "tags": [
+      "奇幻探索",
+      "魔法系统",
+      "开放世界"
+     ],
+     "title": "《Aveltuner》：把魔法做成可研究、可改写、可自创的系统，而不是一棵技能树（Karigami 开发）",
+     "en_title": "A game about actually understanding magic - Magic is a system not a skill tree to unlock",
+     "full_text": "A game about actually understanding magic\n\n- Magic is a system not a skill tree to unlock\n- Study magic, alter it and create your own\n- What you learn changes what you can do\n- Small but deeply layered open world\n\nIt's called Aveltuner. https://t.co/tE8kW0bdh3",
+     "author": "Indie Game Joe",
+     "date": "2026-11-09",
+     "likes": 14682,
+     "views": 921810,
+     "link": "https://x.com/IndieGameJoe/status/2119919751069618554",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2119915402998206464/img/QrxtvxvMwjq8nYOA.jpg",
+      "video_url": "https://x.com/i/status/2119919751069618554/video/1"
+     },
+     "summary": "这条推文用四点说明设计主张：魔法是一套可以被理解的系统，而不是靠解锁的技能树；玩家学习魔法、改造它、并创造属于自己的法术；学到的东西会改变你能做的事；世界不大但层次很深。游戏名为《Aveltuner》，Steam 页面已上线（Coming Soon），由 Karigami 开发发行，支持 Windows，类型标注为冒险 / 模拟。",
+     "analysis": "",
+     "recommendation": "《Aveltuner》：魔法是能被研究、改写、自创的系统，不是技能树——1.4 万赞",
+     "featured": true,
+     "game_ref": "Aveltuner",
+     "enrichment": {
+      "game_name": "Aveltuner",
+      "genre": "奇幻探索 / 知识驱动 / 开放世界",
+      "developer": "Karigami（独立工作室）",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "尚未发售",
+      "steam_url": "https://store.steampowered.com/app/5534190/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5534190/7c2392a633811b4aa8271029c9c5dbaaf13da7f3/header.jpg?t=1794329286",
+      "youtube_video": null,
+      "description": "【核心玩法】核心不是「加点解锁技能」，而是建立一套可推演的魔法规则：玩家先通过阅读、实验理解元素与效果的组合逻辑，再改写既有法术，最终自创属于自己的咒式。「学到什么」直接决定「能做什么」，所以进度感来自知识而非数值。\n\n【世界结构】官方描述为「小而深」的开放世界：地图规模刻意收窄，但每处地点都埋着与魔法系统相关的线索与可交互对象，探索回报偏向认知而非掉落。\n\n【对标定位】思路接近《Noita》的元素反应与《Tunic》的知识即钥匙，但把重心从战斗转向「理解规则本身」，更接近解谜 + 沉浸模拟的混合体。\n\n【优势】卖点单句就能讲清（魔法是系统不是技能树），且天然适合短视频传播——这条推文拿到 1.4 万赞、92 万浏览，说明钩子成立；对厌倦技能树模板的玩家有明确吸引力。\n\n【风险】知识型系统对引导设计要求极高，做得不好会变成「查攻略才能玩」；同时缺少战斗/成长的正反馈，可能劝退轻度玩家。\n\n【综合评价】目前仍是 Coming Soon 状态，没有价格与发售窗口，可玩性还无法验证。但「把魔法当系统」这个立意是今年独立游戏里少见的清晰表达，值得加愿望单观察。",
+      "why_notable": "单条推文 1.4 万赞、92 万浏览，用「魔法是系统而不是技能树」一句话把设计主张讲透，是今年独立游戏里最清晰的概念钩子之一",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「知识驱动魔法」套「小而深开放世界」新瓶，Karigami 独立开发，Steam 页面已上线待发售"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 独立开发",
+     "tags": [
+      "心理恐怖",
+      "PSX风",
+      "小游戏"
+     ],
+     "title": "《SUBJECT 404》：把限时小游戏做成一套服从机制，PSX 风心理恐怖（BESK 开发，11/9 发售）",
+     "en_title": "【新作】未知の施設で実験体になるゲーム『SUBJECT 404』本日リリース",
+     "full_text": "【新作】未知の施設で実験体になるゲーム\n『SUBJECT 404』\n\n本日リリース。突然、謎の施設にワープする。説明もなく当たり前のように実験がはじまる。与えられるのは番号と指示のみ。\n\n絶え間なく発生するワンアクションの命令をひたすらクリアするローポリサイコホラー。 https://t.co/r1eygJE8Si",
+     "author": "ごだか",
+     "date": "2026-11-10",
+     "likes": 522,
+     "views": 18138,
+     "link": "https://x.com/G_Godaka/status/2119958145074442621",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HIms-lfWEAEFS5Y.jpg"
+     },
+     "summary": "日本开发者ごだか 介绍新作《SUBJECT 404》：玩家突然被传送到一座不明设施，没有任何说明，实验就理所当然地开始，你只拿到一个编号和一连串指令。玩法是不断完成「一个动作」的限时命令——反应慢或做错就要面对处刑人，整体是低多边形（low-poly）风格的心理恐怖。Steam 页面显示由 BESK Entertainment 开发发行，11 月 9 日发售，售价 5.09 美元。",
+     "analysis": "",
+     "recommendation": "《SUBJECT 404》：把限时小游戏做成服从机制，答错就处刑——PSX 风心理恐怖",
+     "game_ref": "SUBJECT 404",
+     "enrichment": {
+      "game_name": "SUBJECT 404",
+      "genre": "心理恐怖 / 微游戏合集 / PSX 复古",
+      "developer": "BESK Entertainment",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "$5.09",
+      "release_date": "已发售 · 2026年11月9日",
+      "steam_rating": "评价数不足，暂无好评率",
+      "steam_url": "https://store.steampowered.com/app/4281210/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4281210/fc10bfe40912198c5e28cf41bcf05113501c5f6b/header.jpg?t=1794242592",
+      "youtube_video": null,
+      "description": "【核心玩法】把「微游戏（microgame）」做成叙事装置：屏幕上的「面板」不断下达单动作指令，玩家必须在倒计时内完成——反应、点击、输入都有，失败即触发处刑。规则随房间推进逐步加码，形成一种被测试、被规训的压迫感。\n\n【美术与氛围】刻意采用 PSX 时代的低多边形与低分辨率贴图，配合冷色照明与近乎空白的场景，把「设施」的失重感做出来；恐怖来源不是跳吓，而是持续被观测、被评分的不适。\n\n【对标定位】机制上接近《WarioWare》的限时指令 + 《P.T.》式循环走廊，叙事外壳接近实验体题材的日式恐怖小游戏。\n\n【优势】单局时长短、失败惩罚明确，天然适合直播切片；5 美元定价与「一天通关」体量匹配；指令式玩法对本地化依赖低。\n\n【风险】微游戏重复度高，若后期只靠缩短时限提升难度，容易疲劳；恐怖表达依赖氛围而非内容，长尾传播可能有限。\n\n【综合评价】属于典型的「低成本高概念」日式独立恐怖：机制一句话讲得清，氛围有辨识度。适合作为短内容创作者的素材型产品，商业上限不高但完成度可控。",
+      "why_notable": "把微游戏做成服从机制的心理恐怖，5 美元小体量、适合直播切片，是日式高概念独立恐怖的代表做法",
+      "pcu": "销量体量过小，未进入 Steam 热玩榜",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「限时微游戏」套「实验体恐怖」新瓶，BESK Entertainment 开发，Steam 售价 $5.09"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 独立开发",
+     "tags": [
+      "非对称对抗",
+      "派对游戏",
+      "潜行"
+     ],
+     "title": "《Worst Class Ever》：1 个老师 vs 7 个学生的非对称派对游戏，藏在 NPC 同学里偷吃、传纸条（11/9 发售）",
+     "en_title": "An asymmetric party game where students prank 1 teacher. - Hide among dozens of NPC classmates",
+     "full_text": "An asymmetric party game where students prank 1 teacher.\n\n- Hide among dozens of NPC classmates\n- Secretly gobble snacks and pass notes\n- The teacher hunts down every troublemaker\n\nThis is Worst Class Ever and it's out today, tag some friends! https://t.co/ie3ZXxMHkK",
+     "author": "Best Indie Games",
+     "date": "2026-11-10",
+     "likes": 45,
+     "views": 4573,
+     "link": "https://x.com/clemmygames/status/2119943411000054020",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2119943374559993856/pu/img/tA0GqP4cQdJqpaL3.jpg",
+      "video_url": "https://x.com/i/status/2119943411000054020/video/1"
+     },
+     "summary": "《Worst Class Ever》是一款非对称派对游戏：7 名学生对抗 1 名老师。学生要混进几十个 NPC 同学中隐藏身份，偷偷吃零食、传纸条、搞恶作剧；老师则要在一屋子人里揪出所有捣蛋鬼。游戏于 11 月 9 日发售，支持最多 8 人联机，Steam 售价 4.54 美元，目前有 125 条评测。开发者 Funcore Games，发行商 2P Games / Elegoose Games。",
+     "analysis": "",
+     "recommendation": "《Worst Class Ever》：1 老师抓 7 个捣蛋学生，藏在 NPC 同学里偷吃传纸条——$4.54",
+     "featured": true,
+     "game_ref": "Worst Class Ever",
+     "enrichment": {
+      "game_name": "Worst Class Ever",
+      "genre": "非对称派对 / 潜行捉迷藏 / 多人联机",
+      "developer": "Funcore Games（2P Games / Elegoose Games 发行）",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "$4.54",
+      "release_date": "已发售 · 2026年11月9日",
+      "steam_rating": "125 条评测（暂无稳定好评率）",
+      "steam_url": "https://store.steampowered.com/app/5175310/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5175310/a53c176293212f69941c443bf595238853135ae3/header.jpg?t=1794305415",
+      "youtube_video": null,
+      "description": "【核心玩法】非对称 1v7：学生方要在教室里完成一系列「违纪」目标——偷吃零食、传纸条、搞破坏，同时藏在几十个 NPC 同学中间伪装行为；老师方则通过观察异常动作、逐个排查把人揪出来。胜负取决于双方对「群体行为基线」的把握。\n\n【设计要点】把《Among Us》的社交推理压力换成了「行为模拟」：NPC 提供掩护，玩家必须模仿 NPC 的动作节奏，任何多余动作都可能暴露。这类设计对局内信息噪音的要求很高。\n\n【美术与氛围】卡通低多边形风格，教室场景高密度摆件，视觉上刻意让玩家与 NPC 难以一眼区分，直接服务于玩法。\n\n【优势】4.5 美元的定价 + 8 人联机 + 直播友好，天然适合 Friendslop 场景；「伪装成 NPC」的钩子比传统狼人杀更容易出短视频高光。\n\n【风险】非对称派对游戏极度依赖同时在线人数，冷启动失败就很难翻盘；平衡性（老师太强/太弱）需要持续调参，小团队维护成本不低。\n\n【综合评价】玩法概念清晰、价格门槛低，属于典型的「靠主播扩散」型产品。125 条评测说明已有初始盘子，能否长起来取决于匹配与调参节奏。",
+      "why_notable": "1v7 非对称 + 「伪装成 NPC 同学」的行为模拟玩法，4.5 美元定价、8 人联机，是最适合主播扩散的派对品类",
+      "pcu": "未进入 Steam 热玩榜 Top 500",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「非对称派对」套「教室违纪」新瓶，Funcore Games 开发，Steam 售价 $4.54"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X · 独立开发",
+     "tags": [
+      "物理破坏",
+      "解谜",
+      "即将发售"
+     ],
+     "title": "《LOADPATH》：找承重结构的物理拆除游戏，11/12 发售，Steam 已有免费 demo",
+     "en_title": "Four Endless mutators at once: GIANT TOWER, LOW GRAVITY, BULLET TIME and PAINTBOX.",
+     "full_text": "Four Endless mutators at once: GIANT TOWER, LOW GRAVITY, BULLET TIME and PAINTBOX. 2,023 blocks come down slowly, in every colour.\n\nLOADPATH is out 12 November. Free demo on Steam now: https://t.co/eqA2Eid8W7\n\n#indiegame #gamedev https://t.co/pOVo0c7ciR",
+     "author": "Happy Sidequest | LOADPATH",
+     "date": "2026-11-10",
+     "likes": 4,
+     "views": 55,
+     "link": "https://x.com/HappySidequest/status/2120169614793474294",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2118462361677807616/img/SmUzaO7er4X7tvZs.jpg",
+      "video_url": "https://x.com/i/status/2120169614793474294/video/1"
+     },
+     "summary": "开发者 Happy Sidequest 介绍《LOADPATH》：一款以「找到真正吃力的承重结构」为核心的物理拆除游戏，玩家切割工业结构的支撑点、触发大规模坍塌、回收 Salvage 并升级拆除装备。本条展示无尽模式可同时叠四种变异：巨型塔、低重力、子弹时间与调色盘，2023 块方块会缓慢落下。游戏 11 月 12 日发售，Steam 现有免费 demo。",
+     "analysis": "",
+     "recommendation": "《LOADPATH》：找承重结构的物理拆除游戏，11/12 发售、Steam 免费 demo",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Niche Gamer · 新游",
+     "tags": [
+      "塔防",
+      "Roguelike",
+      "像素"
+     ],
+     "title": "《Cannon Keep》：像素风「背包管理 + 塔防」混合策略，12/2 发售",
+     "en_title": "Cannon Keep is a pixel-y inventory and TD hybrid strategy game",
+     "full_text": "Cannon Keep is a pixel-y inventory and TD hybrid strategy game: https://t.co/RZGBKaYp3C https://t.co/iwrjTxHNp5",
+     "author": "Niche Gamer",
+     "date": "2026-11-10",
+     "likes": 5,
+     "views": 1173,
+     "link": "https://x.com/nichegamer/status/2120161176759709856",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2120161130945343488/pu/img/A7q_B6zbPdTb7z9c.jpg",
+      "video_url": "https://x.com/i/status/2120161176759709856/video/1"
+     },
+     "summary": "Niche Gamer 介绍《Cannon Keep》：像素风、把背包管理与塔防混在一起的策略游戏。Steam 页面描述为一款塔防 Roguelike——按方块搭建自己的城区、抵挡一波波机甲，把不同效果的加农炮组合起来，在荒原中求生并探索地下区域。预计 12 月 2 日发售。",
+     "analysis": "",
+     "recommendation": "《Cannon Keep》：背包管理 + 塔防的像素 Roguelike，12/2 发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Rock Paper Shotgun · 新游",
+     "tags": [
+      "模拟经营",
+      "手绘",
+      "赛马"
+     ],
+     "title": "《Horses of Hoofprint Bay》：手绘 2D 育马场经营，被 RPS 形容成「有小说级抓马」",
+     "en_title": "Don't be fooled by Horses of Hoofprint Bay's hand-drawn art, this stable management game has all the drama of a Jilly Cooper novel",
+     "full_text": "Don't be fooled by Horses of Hoofprint Bay's hand-drawn art, this stable management game has all the drama of a Jilly Cooper novel https://t.co/HUt762vQY5",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-11-10",
+     "likes": 0,
+     "views": 1291,
+     "link": "https://x.com/rockpapershot/status/2120080907369353383",
+     "media": null,
+     "summary": "RPS 的推荐语是「别被手绘画风骗了」：这款育马场经营模拟的戏剧性堪比 Jilly Cooper 的通俗小说。Steam 页面显示它是主打「手绘 2D 马厩建设 + 模拟」的作品，你要照料马匹、通过训练提升它们的力量与自信、参加比赛赢奖金并繁育后代。11 月 4 日发售，售价 22.94 美元，已有 1,360 条评测。",
+     "analysis": "",
+     "recommendation": "《Horses of Hoofprint Bay》：手绘育马场经营，1360 条评测、$22.94",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Niche Gamer · 同人游戏",
+     "tags": [
+      "同人游戏",
+      "赛马娘",
+      "宝可梦"
+     ],
+     "title": "《Poke Derby》：把宝可梦做成「赛马娘」式养成竞速的同人游戏",
+     "en_title": "Poke Derby is an insane fan game that's like Umamusume w/ Pokemon",
+     "full_text": "Poke Derby is an insane fan game that's like Umamusume w/Pokemon: https://t.co/34TYliuSk8 https://t.co/njJqveqLDw",
+     "author": "Niche Gamer",
+     "date": "2026-11-09",
+     "likes": 1152,
+     "views": 47574,
+     "link": "https://x.com/nichegamer/status/2119818799356539127",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2119818754766884864/pu/img/z6jsYF0i3JuotOr9.jpg",
+      "video_url": "https://x.com/i/status/2119818799356539127/video/1"
+     },
+     "summary": "Niche Gamer 推荐了一款名为《Poke Derby》的同人游戏，形容它是「宝可梦版的赛马娘」——把宝可梦当赛马进行养成与竞速。推文附带的视频展示了比赛画面，互动量 1,152 赞、4.7 万浏览。作为粉丝作品，它不会上架 Steam，只在社区渠道流通。",
+     "analysis": "",
+     "recommendation": "《Poke Derby》：宝可梦版「赛马娘」，同人养成竞速游戏",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 开发工具",
+     "tags": [
+      "关卡编辑",
+      "开源",
+      "2D"
+     ],
+     "title": "《死亡细胞》主设计师把二十年功力开源成关卡编辑器 LDtk：4 年 50+ 版本，免费可商用",
+     "en_title": "死亡细胞的主设计师 二十年功力全部做成了这个关卡编辑器 而且免费开源了 四年多五十多个版本",
+     "full_text": "死亡细胞的主设计师\n\n二十年功力全部做成了这个关卡编辑器\n\n而且免费开源了\n四年多五十多个版本\n\n特别适合 快速编辑关卡，迅速迭代\n\n真实感慨啊，我们现在都站在巨人的肩膀上\n\n有什么理由做不下去呢\nhttps://t.co/3XEuFMV7NU https://t.co/5x9lzZoNwq",
+     "author": "宋宋",
+     "date": "2026-11-10",
+     "likes": 1562,
+     "views": 58048,
+     "link": "https://x.com/songsong/status/2119968804591825321",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2119967971464585217/img/40A_TG460p-vO4_S.jpg",
+      "video_url": "https://x.com/i/status/2119968804591825321/video/1"
+     },
+     "summary": "中文开发者宋宋 推荐了 LDtk——由《死亡细胞》主设计师 Sébastien Benard（deepnight）开发的 2D 关卡编辑器，采用 MIT 类开源协议、免费可商用，四年多迭代了 50 多个版本。它的定位是「快速编辑关卡、迅速迭代」：图层化设计、自动图块（auto-layer）、实体与关卡字段可视化配置，导出为通用 JSON，可直接接进自研引擎或 Godot/Unity 管线。",
+     "analysis": "工具链里最容易被低估的就是关卡编辑器：它决定了策划能不能在 5 分钟内验一个想法，而这直接决定迭代次数。LDtk 值得关注的另一点是「验证过的品味」——出自做出《死亡细胞》这类高密度关卡的人，字段与图层的抽象方式本身就是经验。中小团队完全可以用它替掉自研编辑器的一半工作量。",
+     "recommendation": "《死亡细胞》主设计师开源了关卡编辑器 LDtk：4 年 50+ 版本，免费可商用",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "Unity for Games · 工具链",
+     "tags": [
+      "Unity",
+      "自动化",
+      "光照烘焙"
+     ],
+     "title": "Unity CLI 批量烘焙多场景光照：把重复劳动变成可排队的终端命令",
+     "en_title": "Batch bake lighting across multiple scenes with the Unity CLI",
+     "full_text": "Batch bake lighting across multiple scenes with the Unity CLI ⚡\n\nTurn your routine into custom terminal commands to queue scenes, bake in batches, and auto-generate contact sheets for review. \n\n🔗 Learn more with the full video: https://t.co/g4hhVrtKzK https://t.co/K9GAhu1K7C",
+     "author": "Unity for Games",
+     "date": "2026-11-10",
+     "likes": 41,
+     "views": 3620,
+     "link": "https://x.com/unitygames/status/2120154717791608990",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2120154611034071040/pu/img/R1IlaYOXcjAQfdIP.jpg",
+      "video_url": "https://x.com/i/status/2120154717791608990/video/1"
+     },
+     "summary": "Unity 官方账号演示用 Unity CLI 批量烘焙多个场景的光照：把日常操作封装成自定义终端命令，实现场景排队、批量烘焙，并自动生成 contact sheet（缩略图对照表）方便美术审核。官方附带了完整教学视频。",
+     "analysis": "批量烘焙是最典型的「必须做但没人想做」的环节：以前靠人守着编辑器点，现在可以塞进 CI 夜里跑，第二天直接看对照表。这类官方示例的价值在于给出「把编辑器能力脚本化」的范式，团队可以照着把它扩成资源检查、打包、截图回归的一整套流水线。",
+     "recommendation": "Unity CLI 批量烘焙光照并自动生成对照表，把重复劳动塞进终端命令"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**预购纪录与 30fps 同时成立**\n《GTA 6》被 Sony 官方确认成为 PlayStation Store 史上预购最多的游戏，微软商店口径同样成立；Rockstar 同时确认全平台目标 30fps，PS5 Pro 只做画质增强。厂商用帧率换规模的选择，和国内团队讨论「要不要为营销口径牺牲可玩性」是同一个问题的两端。\n\n**AI 披露成了新的雷区**\n《Big Walk》在 IGF 评委集体表态后才补上 AI 声明：不到 0.1% 的代码用过 LLM，举例是约 10 行修复代码，但没有内部政策、也没有留痕，结果是评审拒评 + 玩家差评洗版。同期 Fable 5.2 把「单 prompt 出一条可玩产线」的成本压到几百美元——能力扩散和信任赤字正在同时加速。\n\n**工具侧的两条实用更新**\n《死亡细胞》主设计师的 LDtk 继续以免费开源方式迭代到 50 多个版本；Unity 官方给出用 CLI 批量烘焙光照的范式，可以把「必须做但没人想做」的环节塞进夜间流水线。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
