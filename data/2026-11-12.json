@@ -1,0 +1,535 @@
+{
+ "date": "2026-11-12",
+ "meta": {
+  "raw_count": 224,
+  "filtered_count": 146,
+  "selected_count": 12,
+  "crawl_time": "2026-11-12 09:20"
+ },
+ "lede": "PS5 出货突破 1 亿台，但单季 260 万台创同期新低——里程碑与下滑同时成立；《Hell Let Loose》原班团队把撤离玩法搬进拿破仑时代，公开测试前愿望单已超 70 万；澳洲办了 12 年的学生游戏开发赛因生成式 AI 停办。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "PS5 出货破 1 亿台，Q2 却只卖出 260 万台——里程碑与衰退同时成立"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《Hell Let Loose》原班人马做拿破仑时代近战撤离，70 万愿望单"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 2,
+   "hook": "重写 TFT 战斗引擎、喂 400 万场对局，AI 预测任意两套阵容胜负"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "澳洲 STEM 电子游戏挑战赛办 12 年后停办，官方确认原因是生成式 AI 让评审分不清学生作品\n游戏制作 YouTuber：AI 让「5 分钟做出游戏」不再稀奇，挑战系内容集体失速，只剩收益公开类\n重写 TFT 战斗引擎并用 400 万场对局训练 AI，可预测任意两套阵容的胜负与掉血"
+  },
+  {
+   "id": "industry",
+   "text": "PS5 累计出货破 1 亿台，但 Q2 仅 260 万台创同期新低\nSony 取消《Fairgame$》：playtest 留存不达标，Haven 不关不裁\n新 Steamworks 账号审批要等 45 个工作日，商店页窗口被拉长两个月\n《时之笛》重制版四天 520 万份，成 Switch 2 最快销售游戏"
+  },
+  {
+   "id": "indie",
+   "text": "《Hunger》：拿破仑时代近战撤离 RPG，12/3 抢先体验、愿望单超 70 万\n《Minerva Rising》：扮演地下城管理 AI，市民不满会黑掉你的摄像头\n《Athran》：建国 + 塔防 + 第三人称动作，白天造城夜里守恶魔潮"
+  },
+  {
+   "id": "tools",
+   "text": "Cascadeur 接入 TRELLIS.2 / SkinTokens / Kimodo / SAM 3D Body，僵尸资产从建模到动画全流程 AI\nUnity 6.7 Beta 开放测试，11/27 前提交原创 Bug 可参与评奖"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "PC Gamer · AI 行业",
+     "tags": [
+      "生成式 AI",
+      "游戏教育",
+      "评审失效"
+     ],
+     "title": "澳洲 STEM 电子游戏挑战赛办了 12 年后停办：主办方确认原因是生成式 AI 让评审分不清谁做的",
+     "en_title": "Educational game dev program cancelled because students were submitting games made entirely with AI",
+     "full_text": "Educational game dev program cancelled because students were submitting games made entirely with AI https://t.co/0Xz99tXDHK",
+     "author": "PC Gamer",
+     "date": "2026-11-10",
+     "likes": 612,
+     "views": 52116,
+     "link": "https://x.com/pcgamer/status/2120201181708615714",
+     "media": null,
+     "summary": "澳大利亚 STEM 电子游戏挑战赛（面向学生的免费全国游戏开发赛）确认 2026 年为最后一届，结束 12 年历史。澳大利亚教育研究委员会（ACER）学生学习和进步部门负责人 Cathy Zemaitis 向 PC Gamer 确认，停办「由生成式 AI 在游戏开发中的快速且复杂的普及」驱动：它让评审更难判断哪些内容出自学生本人，也让赛事偏离原本目的，且没有推出替代方案的计划。此前 Reddit 上有自称评委者称收到停办邮件，指出「有些学生完全用 AI 生成游戏」，并说「你没法直接给零分」。",
+     "analysis": "这是「AI 让能力评估失效」而不是「AI 让作品变差」的典型案例：当交付物不再能反推过程，任何靠成品评判学习的机制都会先崩。对游戏行业的现实映射是招聘与外包验收——作品集和工作测试正在同时失去区分度，团队迟早要把「过程留痕」（版本历史、设计决策记录、面试实操）补回流程里。",
+     "recommendation": "澳洲 STEM 游戏开发赛办 12 年后停办，官方确认原因是生成式 AI 让评审分不清学生作品",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 游戏制作 KOL",
+     "tags": [
+      "AI 内容生态",
+      "创作者经济",
+      "游戏制作"
+     ],
+     "title": "日本游戏制作 YouTuber：AI 让「挑战系」内容失去意义，如今只剩收益公开类还有流量",
+     "en_title": "ゲーム制作界隈のYouTubeなんだけど 最近は企画系はマジで伸びなくなってきてると感じる。",
+     "full_text": "ゲーム制作界隈のYouTubeなんだけど\n最近は企画系はマジで伸びなくなってきてると感じる。\n\n少し前までは\n「こんな短時間でこのゲームが作れた！」\n「こんなに時間かけたのにこれしか作れなかった...」\nとチャレンジすること自体に価値があると認められてたけど、AIが普及したせいで誰でも5分である程度のゲームっぽいものが作れてしまうから人間ドラマの感動系が無くなってきてるんだと思う。\n\nだからと言ってAIでここまでやれます\nみたいな情報は市場に出回りまくってるからYouTubeで見るほどの価値も薄れてきてるし本当に難しいと感じる。\n\n依然として強いのは収益発表系。\nみんな結局いくら稼げるのかの結果が気になってる。\n\n努力の尊さが失われてるのは悲しいなぁ",
+     "author": "めてお＠ゲーム制作YouTuber",
+     "date": "2026-11-11",
+     "likes": 58,
+     "views": 12270,
+     "link": "https://x.com/Meteobji2/status/2120315739014111272",
+     "media": null,
+     "summary": "长期做游戏制作内容的主播めてお给出一个观察：YouTube 游戏制作圈的「企划系」内容近期明显涨不动。过去「这么短时间就做出这种游戏」「花这么多时间只做出这么点」这类挑战本身就有价值，观众看的是人的戏剧性；AI 普及后谁都能在 5 分钟做出像样的游戏，这种感动消失了。反过来「用 AI 能做到什么程度」的信息又已经烂大街，没有在 YouTube 上专门看的价值。目前仍然有效的只剩收益公开类——观众真正想知道的是赚了多少钱。",
+     "analysis": "这条比大多数「AI 取代开发者」的讨论都具体：被替代的不是开发技能，而是「努力本身作为内容」的定价权。对市场侧的启示是，当制作门槛坍塌，创作者的差异化会从「我做出了什么」转向「我为什么这么做、赚到了什么」——这也解释了为什么近期独立游戏的开发日志越来越像商业复盘。",
+     "recommendation": "游戏制作 YouTuber：AI 让「5 分钟做出游戏」失去挑战感，只剩收益公开类还有流量"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 玩家开发",
+     "tags": [
+      "AI 训练",
+      "自走棋",
+      "数值推演"
+     ],
+     "title": "从零重写 TFT 战斗引擎再用 400 万场对局训练 AI：输入两套阵容就能预测谁赢、剩几个单位、掉多少血",
+     "en_title": "I rebuilt TFT's fight engine from scratch and trained an AI on over 4 million fights from it.",
+     "full_text": "I rebuilt TFT's fight engine from scratch and trained an AI on over 4 million fights from it.\n\nNow you can set up any two boards and see who wins, how many units survive and how much damage you take 👇\n\n#TFT #TeamFightTactics https://t.co/Q5RiidUeaA",
+     "author": "Samy",
+     "date": "2026-11-10",
+     "likes": 945,
+     "views": 86084,
+     "link": "https://x.com/justsamyyyy_/status/2120204163019891072",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2120184540593262592/img/S4RmMRwE8uouXIt3.jpg",
+      "video_url": "https://x.com/i/status/2120204163019891072/video/1"
+     },
+     "summary": "开发者 Samy 用自己从零重写的《云顶之弈》（TFT）战斗引擎批量生成对局数据，在此基础上训练 AI 模型：输入任意两套棋盘阵容，输出谁会赢、多少单位存活、以及会掉多少血。推文附带演示视频，标注 #TFT #TeamFightTactics。",
+     "analysis": "价值不在「AI 会预测游戏」，而在数据获取方式：官方引擎不开放，就用重写引擎自己造 400 万场带标注的对局。对做自走棋、卡牌、塔防这类强数值推演的团队，「先做可批量跑的模拟器，再谈 AI 平衡」是可复用路径——同一个模拟器既解决内部平衡性验证，也能变成面向玩家的阵容工具。",
+     "recommendation": "重写 TFT 战斗引擎并喂 400 万场对局，AI 可预测任意两套阵容的胜负与掉血",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 主机市场",
+     "tags": [
+      "PS5",
+      "销量里程碑",
+      "主机周期"
+     ],
+     "title": "PS5 累计出货突破 1 亿台：11 月 10 日达成，但单季 260 万台创下上市以来同期新低",
+     "en_title": "As of this week, PlayStation 5 has surpassed 100 million consoles sold",
+     "full_text": "As of this week, PlayStation 5 has surpassed 100 million consoles sold\n\nhttps://t.co/HsJTj3FzJD https://t.co/HiurcgFwg3",
+     "author": "Eurogamer",
+     "date": "2026-11-11",
+     "likes": 53,
+     "views": 4235,
+     "link": "https://x.com/eurogamer/status/2120499185971765447",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW2GByLbEAAOvAv.jpg"
+     },
+     "summary": "索尼更新销量数据，PS5 全球出货突破 1 亿台，里程碑出现在 11 月 10 日，距 2020 年 11 月发售约六年。该数字为 sell-in（出货给渠道），与消费者实际持有量存在差距。参照系是 PS4 在 2022 年 6 月达到 1.17 亿台、初代 PlayStation 为 1.024 亿台。但 FY2026 第二季度仅出货 260 万台，低于去年同期的 400 万台，是 PS5 上市以来最差的第二季度、也是单季销量次低（仅高于 FY2025 Q4 的 150 万台）。Eurogamer 指出若下半财年不回升，本财年可能成为 PS5 销量最低的一年，主因是主机价格持续上涨。",
+     "analysis": "一个「里程碑」与「衰退」同时成立的样本：装机量见顶后，索尼把重心从卖硬件转向从既有用户身上榨收入（订阅、服务型游戏、配件），这也正是 Fairgame$ 这类项目被立项又被砍掉的背景。对国内团队的参照是结构性事实——跨代红利结束，2027 年后新项目的用户盘子主要来自存量迁移而非增量。",
+     "recommendation": "PS5 出货破 1 亿台，但 Q2 仅 260 万台创同期新低（去年同期 400 万）",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 服务型游戏",
+     "tags": [
+      "索尼",
+      "服务型游戏",
+      "项目取消"
+     ],
+     "title": "Sony 取消《Fairgame$》：playtest 留存不达标，Haven 不关不裁、全员转投其他项目",
+     "en_title": "After years of silence, we finally know the fate of PlayStation's embattled live service game Fairgames.",
+     "full_text": "After years of silence, we finally know the fate of PlayStation's embattled live service game Fairgames. The Haven-developed co-op heist shooter has been cancelled, with the silver lining that the studio is not closing down or laying off staff. https://t.co/RLiCGoCUiw https://t.co/dQ5kaF6nO0",
+     "author": "Eurogamer",
+     "date": "2026-11-11",
+     "likes": 0,
+     "views": 2893,
+     "link": "https://x.com/eurogamer/status/2120524495999881509",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW2dyqZXgAA6ZnF.jpg"
+     },
+     "summary": "Eurogamer 报道，Haven Studios 开发的合作抢劫射击游戏《Fairgame$》已被取消。决定来自最近一次 playtest：高管 Sean Decker 与 John Doyle 在内部邮件中称，测试在运营准备度与社区参与上表现良好，但「玩家反馈与留存结果混杂，未达到设定目标」，叠加 PvP 射击品类的市场环境艰难，因此停止开发。PlayStation 发言人确认 Haven 不会关闭也不裁员，开发者将支援 PlayStation Studios 内其他团队。游戏 2023 年公布、原定 2025 年发售，期间经历创始人 Jade Raymond 离职与多次重做，曾传闻改名《Break In》。",
+     "analysis": "这是 Jim Ryan「十几个服务型游戏」战略的清算尾声：绝大多数项目无声取消，剩下的也难产，连 Guerrilla 的 Horizon 多人项目都在退回传统合作结构。可操作的经验是两端——playtest 的留存指标一旦不达标，越晚砍越贵；而 Sony 这次「砍项目不砍团队」的处理值得学，把人转到别的项目而不是整体裁员，保住了下一个项目的人力。",
+     "recommendation": "Sony 取消《Fairgame$》：playtest 留存不达标，Haven 不关不裁、人员转投其他项目",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "X · 独立开发",
+     "tags": [
+      "Steam",
+      "上架流程",
+      "独立开发"
+     ],
+     "title": "新 Steamworks 账号审批要等 45 个工作日：开发者吐槽 Valve 的上架流程已排到两个月后",
+     "en_title": "Friend is crashing out cause Steam is taking months now to approve new Steamworks accounts. Current wait time? 45 Business Days",
+     "full_text": "Friend is crashing out cause Steam is taking months now to approve new Steamworks accounts. \n\nCurrent wait time? 45 Business Days\n\n@valvesoftware needs to figure something out with the approval pipelines https://t.co/EJo7ssT48z",
+     "author": "Chris Kaleiki",
+     "date": "2026-11-10",
+     "likes": 83,
+     "views": 11192,
+     "link": "https://x.com/ckaleiki/status/2120302484359102833",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWzTyASagAAoaEg.jpg"
+     },
+     "summary": "开发者 Chris Kaleiki 称朋友因为 Steam 审批新 Steamworks 账号耗时数月而崩溃，当前等待时间是 45 个工作日（约两个月），并 @Valve 要求改审批管线。推文附有 Steam 后台/邮件的等待时长截图，评论区有多位开发者反馈类似情况。",
+     "analysis": "对排期敏感的团队这是硬约束：45 个工作日意味着现在才注册账号的项目，最早要到 2027 年 1 月下旬才能拿到商店页，而商店页上线时间直接决定愿望单积累窗口。实操建议是把 Steamworks 注册、税务与银行信息、商店页素材全部前置到立项后第一个月，而不是等 demo 做完——审核排队和开发是两条不该串联的流水线。",
+     "recommendation": "新 Steamworks 账号审批现需 45 个工作日，商店页上线时间要提前两个月排"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 平台数据",
+     "tags": [
+      "任天堂",
+      "重制",
+      "Switch 2"
+     ],
+     "title": "《塞尔达传说：时之笛》重制版四天卖出 520 万份，成为 Switch 2 史上最快销售游戏",
+     "en_title": "The Legend of Zelda: Ocarina of Time remake has been a huge success for Nintendo, becoming the fastest-selling Switch 2 game ever, shifting more than 5.2 million copies in four days.",
+     "full_text": "The Legend of Zelda: Ocarina of Time remake has been a huge success for Nintendo, becoming the fastest-selling Switch 2 game ever, shifting more than 5.2 million copies in four days. https://t.co/S8wIvoPi24 https://t.co/kMNWhNberl",
+     "author": "Eurogamer",
+     "date": "2026-11-11",
+     "likes": 28,
+     "views": 3096,
+     "link": "https://x.com/eurogamer/status/2120509400787894637",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW2QD9_X0AAsQFk.jpg"
+     },
+     "summary": "任天堂在新闻稿中宣布，《时之笛》重制版发售四天销量超过 520 万份，成为 Switch 2 上最快销售的游戏（口径仅限任天堂自家发行的作品，但任天堂作品本就是该平台最畅销的一批，该纪录基本成立）。Eurogamer 给出五星评价，称重制在保留原作判断力的同时做了聪明调整。业界随后开始讨论任天堂是否会继续重制更多旧作。",
+     "analysis": "520 万 / 4 天这个数字的意义是验证「情怀重制」在 Switch 2 上的转化效率——它不是新 IP，却跑赢了平台所有新作。对做重制/复刻的团队，说明「原作口碑 + 现代化手感 + 首发作档期」三件套的杠杆有多大；对原创团队则是提醒：2027 年的档期竞争里，你面对的是刚被重制版重新教育过一遍的老玩家预期。",
+     "recommendation": "《时之笛》重制版四天 520 万份，成 Switch 2 最快销售游戏"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "Eurogamer · 新游曝光",
+     "tags": [
+      "撤离 RPG",
+      "拿破仑时代",
+      "多人 PvPvE"
+     ],
+     "title": "《Hunger》：《Hell Let Loose》原班人马做的拿破仑时代近战撤离 RPG，12/3 抢先体验、愿望单已超 70 万",
+     "en_title": "Hell Let Loose's original developers' Napoleonic-era extraction game, Hunger, gets December early access release, and an open beta this month",
+     "full_text": "Hell Let Loose's original developers' Napoleonic-era extraction game, Hunger, gets December early access release, and an open beta this month\n\nhttps://t.co/7uagoJjvJJ https://t.co/oN0mlTDeaI",
+     "author": "Eurogamer",
+     "date": "2026-11-11",
+     "likes": 4,
+     "views": 2261,
+     "link": "https://x.com/eurogamer/status/2120542622540521590",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW2g7ZAakAEMZYu.jpg"
+     },
+     "summary": "Eurogamer 报道，由《Hell Let Loose》原班开发者组成的 Good Fun Corp 公布《Hunger》发售计划：12 月 3 日进入 Steam 抢先体验，11 月 27–29 日开放唯一一次公开测试。游戏背景是瘟疫肆虐的拿破仑时代架空欧洲，属 PvPvE 撤离 RPG：战斗以近战为主、火枪数量少且刻意笨重，环境侧包含 RPG 式解谜、任务链与副本探索。上线版本含 3 张大型地图、6 名可玩角色、5 条精通树与 100+ 精通项，并有 MMO 式成长与带独立角色的 hub 区域。开发者称愿望单已超 70 万，目前仅公布 PC 平台。",
+     "analysis": "",
+     "recommendation": "《Hunger》：拿破仑时代近战撤离 RPG，12/3 抢先体验、愿望单超 70 万",
+     "featured": true,
+     "game_ref": "HUNGER",
+     "enrichment": {
+      "game_name": "HUNGER",
+      "genre": "撤离射击 / 近战动作 / PvPvE RPG",
+      "developer": "GOOD FUN CORP（《Hell Let Loose》原班团队）",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "未公布",
+      "release_date": "2026年12月3日",
+      "steam_rating": "尚未发售",
+      "steam_url": "https://store.steampowered.com/app/1752080/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1752080/header.jpg?t=1794322378",
+      "youtube_video": null,
+      "description": "【核心玩法】PvPvE 撤离 RPG：进入瘟疫肆虐的拿破仑时代欧洲战场，带装备进场、搜刮资源、完成任务并活着撤离。战斗以近战为主，火枪数量稀少且「刻意笨重」，逼玩家用刀剑、阵型与地形解决问题。环境侧不是纯刷怪，包含 RPG 式解谜、任务链与副本式地下城，压力来自其他玩家小队与怪物双重威胁。\n\n【成长结构】MMO 式长线养成：hub 区域有独立角色与多种职业，正式版提供 5 条精通树、100+ 精通项，角色强度靠跨局积累而非单局运气。这套「撤离 + MMO 进度」的组合，让失败局的挫败感被长线收益部分抵消。\n\n【美术与氛围】灰绿泥浆、钢板与血迹的架空历史质感，是同类撤离游戏里少见的视觉方向；单张地图的叙事密度明显高于纯 PvP 竞技向作品。\n\n【优势】开发团队是《Hell Let Loose》原班人马，硬核多人射击的组织与平衡经验可直接复用；官方口径愿望单已超 70 万，冷启动已有基本盘。\n\n【风险】近战为主的撤离玩法节奏慢、门槛高，11/27–29 公开测试的口碑会直接决定首月留存；目前只公布 PC。\n\n【综合评价】12 月 3 日 EA 上线，3 张地图 / 6 名角色 / 5 条精通树的内容量对抢先体验来说算厚。属于「玩法组合罕见 + 团队履历可信」的一类，值得放进观察位。",
+      "why_notable": "《Hell Let Loose》原班团队转身做拿破仑时代近战撤离 RPG，公开测试前愿望单已超 70 万",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "愿望单 70 万+（官方口径）",
+      "gi_summary": "「近战撤离」套「拿破仑瘟疫欧洲」新瓶，Hell Let Loose 原班团队开发，12/3 抢先体验"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Rock Paper Shotgun · 新游曝光",
+     "tags": [
+      "反乌托邦",
+      "城市建造",
+      "叙事模拟"
+     ],
+     "title": "《Minerva Rising》：你扮演地下城市的管理 AI，市民不满时会直接黑掉你的摄像头（Frostpunk × Silo）",
+     "en_title": "Minerva Rising is a Frostpunk-meets-Silo underground city builder in which rebel citizens can hack your camera",
+     "full_text": "Minerva Rising is a Frostpunk-meets-Silo underground city builder in which rebel citizens can hack your camera https://t.co/jvgbvCcYVq",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-11-11",
+     "likes": 0,
+     "views": 115,
+     "link": "https://x.com/rockpapershot/status/2120564083615219785",
+     "media": null,
+     "summary": "Rock Paper Shotgun 介绍单人开发者 Jonny Strellman（GoJonnyGames）的《Minerva Rising》：末世地下城市建造，城市按层向下扩张，每层有自己的资源、产业与社群，玩家扮演统管全城的人工智能。若某层被长期忽视（例如忘了供氧）而离心，颠覆者会黑掉你的摄像头，让你对该层彻底失明。游戏内置宣传工具，可以放《汽船威利》这类版权过期的旧世界影像提振士气。官方强调每次通关都要穿过新的地层与新的伦理问题：一局可能遭遇枯萎与饥荒，另一局则卡在发电用煤。Steam 页面已上线，发售日未定。",
+     "analysis": "",
+     "recommendation": "《Minerva Rising》：当城市管理 AI，市民不满就黑掉你的摄像头——Frostpunk × Silo",
+     "featured": true,
+     "game_ref": "Minerva Rising",
+     "enrichment": {
+      "game_name": "Minerva Rising",
+      "genre": "城市建造 / 反乌托邦 / 叙事模拟",
+      "developer": "GoJonnyGames（单人开发 Jonny Strellman）",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "尚未发售",
+      "steam_url": "https://store.steampowered.com/app/5538040/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5538040/7b212cff0d6ec32d52335601cd1e7bcf2b765cfc/header.jpg?t=1794328588",
+      "youtube_video": null,
+      "description": "【核心玩法】你不是市长，而是城市的管理 AI：末世地下城市按层向下扩张，每层有自己的资源、产业与社群，你决定供氧、供电、生产与扩张节奏。真正的对手是民心——某一层被长期忽视就会离心，颠覆者会直接黑掉你的摄像头，让那一层从界面上消失，你只能盲调参数。\n\n【叙事与治理】玩法内置宣传工具：可以给居民放《汽船威利》这类版权过期的旧世界影像来稳士气，也可以引导他们爱上洞穴里的瀑布与发光蘑菇。官方描述强调每次通关要穿过新的地层与新的伦理问题，一局可能面对枯萎与饥荒，另一局则卡在发电用煤，没有两局相同。\n\n【对标定位】开发者自己给的定位是「Frostpunk × Silo」：Frostpunk 的资源—道德两难，加上 Silo 的垂直社会分层。差别在于视角从「人对人统治」换成「AI 对人管理」，让「监控失效」成为核心机制而不是叙事装饰。\n\n【优势】单人开发但概念极完整，一句「市民会黑掉你的摄像头」就能讲清差异点；垂直分层天然带来关卡与政策的设计空间。\n\n【风险】AI 视角容易让玩家失去情感投射对象；分层资源系统若缺少可读的因果反馈，很容易变成盲调参数。发售日尚未公布，Steam 仅有 Coming Soon 页面，可玩性完全未验证。\n\n【综合评价】目前是「概念清晰、玩法待验证」的状态。如果你在做模拟经营或叙事驱动的建造游戏，这个「监控即治理」的切入点值得记住。",
+      "why_notable": "把「城市管理 AI」做成主角，把「市民黑你摄像头」做成核心失败机制，是今年独立游戏里少见的结构级创意",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「垂直分层城市建造」套「AI 管理者视角」新瓶，单人开发 GoJonnyGames，发售日未定"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 独立开发",
+     "tags": [
+      "王国建造",
+      "塔防",
+      "第三人称动作"
+     ],
+     "title": "《Athran》：建国 + 塔防 + 第三人称动作三合一，白天造城、夜里守恶魔潮（Oddspire Games 开发）",
+     "en_title": "Athran announced! A third-person kingdom defense game combining kingdom building, tower defense & action combat.",
+     "full_text": "Athran announced!\n\nA third-person kingdom defense game combining kingdom building, tower defense & action combat.\n\n• Build and fortify your kingdom\n• Defend against massive demon hordes\n• Fight alongside soldiers & command troops\n• Unleash powerful spells and abilities\n• Gather resources & prepare for nightly invasions\n• Explore lost kingdoms and reclaim the corrupted world",
+     "author": "Ninjago",
+     "date": "2026-11-11",
+     "likes": 62,
+     "views": 2912,
+     "link": "https://x.com/Ninjago9101/status/2120519970656567787",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2120516658045534208/img/JWOIST65sgUX2a6C.jpg",
+      "video_url": "https://x.com/i/status/2120519970656567787/video/1"
+     },
+     "summary": "团队公布《Athran》：第三人称王国防御游戏，把王国建造、塔防与动作战斗拼在一起。官方列出的循环是建设并加固王国、抵御大规模恶魔潮、与士兵并肩作战并指挥部队、释放法术与技能、采集资源准备夜间入侵，并探索失落王国、收复被腐化的世界。Steam 页面已上线（Oddspire Games 开发发行），类型标注动作 / 冒险 / 独立 / 策略，支持完整手柄，发售日与价格未定。",
+     "analysis": "",
+     "recommendation": "《Athran》：白天建国、夜里守恶魔潮，建国+塔防+第三人称动作三合一",
+     "game_ref": "Athran",
+     "enrichment": {
+      "game_name": "Athran",
+      "genre": "王国建造 / 塔防 / 第三人称动作",
+      "developer": "Oddspire Games",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "尚未发售",
+      "steam_url": "https://store.steampowered.com/app/5509160/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5509160/ef7c736a3ffdfcb077fb1cba371f78da8e881130/header.jpg?t=1794301210",
+      "youtube_video": null,
+      "description": "【核心玩法】第三人称王国防御：白天建设与加固王国、采集资源、布置塔防工事，夜里迎战大规模恶魔潮，同时可以亲自下场与士兵并肩作战、指挥部队、释放法术。核心张力来自「建造—防守—亲自战斗」三套节奏的来回切换。\n\n【结构设计】官方给出的循环是：建设王国防线 → 抵御恶魔潮 → 与士兵并肩作战并指挥部队 → 释放强力法术 → 采集资源、为夜袭做准备 → 探索失落王国、收复被腐化的世界。塔防的规划性与动作战斗的操作性被放进同一个循环，属于近年独立团队常尝试但很少做成的组合。\n\n【对标定位】接近《暗黑破坏神》式动作 + 《They Are Billions》式潮水防御 + 《骑马与砍杀》式带队指挥的混合体，但体量与画面明显偏中小团队。\n\n【优势】题材组合有辨识度，「建国 + 守夜」的日夜节奏天然适合短视频传播，公布推文带演示视频。\n\n【风险】三条玩法线都要做到及格以上，对独立团队的人力是极大考验；分层系统很容易让每条线都变浅，变成三样都能玩、没有一样耐玩。\n\n【综合评价】Oddspire Games 首曝，Steam 页面已上线但发售日与价格未定，属于「概念观赏性高、可玩性待验证」的早期项目。",
+      "why_notable": "建国 + 塔防 + 亲自下场砍杀的三线循环，是独立团队反复尝试却很少做成的组合",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「王国建造」套「塔防 + 第三人称动作」新瓶，Oddspire Games 开发，Steam 页面已上线待定档"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Niche Gamer · 新游曝光",
+     "tags": [
+      "自走棋",
+      "Roguelike",
+      "Devolver"
+     ],
+     "title": "《All Army Attack》：Devolver 发行的「AAA」大规模 Roguelike 自走棋，联合动物与植物组军，2027 年",
+     "en_title": "Devolver Digital announces \"AAA\" roguelike autobattler game All Army Attack:",
+     "full_text": "Devolver Digital announces \"AAA\" roguelike autobattler game All Army Attack: https://t.co/p2vEUJn74u https://t.co/yky8ubg5WC",
+     "author": "Niche Gamer",
+     "date": "2026-11-11",
+     "likes": 7,
+     "views": 1318,
+     "link": "https://x.com/nichegamer/status/2120512610046992523",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2120512555403661312/pu/img/NUKinptdjG_Ycwy5.jpg",
+      "video_url": "https://x.com/i/status/2120512610046992523/video/1"
+     },
+     "summary": "Devolver Digital 公布《All Army Attack》，由 Blacklight Games 开发：一款混乱的大规模 Roguelike 自走棋，玩家联合动物与植物组成溢出屏幕的军队，每一战都在押上全部阵容，一路打向宇宙级威胁。Steam 页面标注 2027 年发售、动作 / 休闲 / 策略，支持完整手柄与 Steam 成就。推文附演示视频。",
+     "analysis": "",
+     "recommendation": "《All Army Attack》：动物植物组军的 Roguelike 自走棋，Devolver 发行 2027 年",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Niche Gamer · 新游曝光",
+     "tags": [
+      "卡牌",
+      "回合制 RPG",
+      "超能力"
+     ],
+     "title": "《Sudden Soul》：停电后的城市里人人觉醒超能力，回合制 + 卡牌 + 连携组招",
+     "en_title": "Sudden Soul is a turn-based RPG with cards, combos, and illegal fishing!",
+     "full_text": "Sudden Soul is a turn-based RPG with cards, combos, and illegal fishing!\n\nhttps://t.co/Ev70YaaaUX \n\nExplore a city after a blackout causes mass havoc with new creatures and people gaining new powers. Combo elements together, collect cards, and win! https://t.co/ExZZEZIDbM",
+     "author": "Niche Gamer",
+     "date": "2026-11-11",
+     "likes": 9,
+     "views": 731,
+     "link": "https://x.com/nichegamer/status/2120553564409880740",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2120553506373259265/pu/img/ef14nHHV9-tphx-5.jpg",
+      "video_url": "https://x.com/i/status/2120553564409880740/video/1"
+     },
+     "summary": "《Sudden Soul》由 Croc Byte 开发：回合制 RPG 加卡牌收集。一场突如其来的停电让城市 Oasys 陷入混乱，人与生物开始觉醒新的能力；玩家把不同元素组合起来，让每一招都为下一招做铺垫，通过收集卡牌推进战斗。Steam 页面已上线，发售日未定，支持完整手柄。官方还强调游戏里存在「非法钓鱼」玩法。",
+     "analysis": "",
+     "recommendation": "《Sudden Soul》：停电后城市人人觉醒超能力，回合制卡牌连携组招",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Niche Gamer · 预览",
+     "tags": [
+      "恐怖射击",
+      "超能力",
+      "第三人称"
+     ],
+     "title": "《PSYCHO DEAD》：拿超能力打血腥动作的第三人称恐怖射击，官方预览称有《妖精的旋律》的影子",
+     "en_title": "[PREVIEW] PSYCHO DEAD is promising classic horror with a psychic twist!",
+     "full_text": "[PREVIEW] PSYCHO DEAD is promising classic horror with a psychic twist!\n\nhttps://t.co/u4xB7aVnVH \n\nHints of Elfen Lied abound, this third-person horror game has fantastically bloody action and grotesque creatures to boot~ https://t.co/LRJkXcOgpW",
+     "author": "Niche Gamer",
+     "date": "2026-11-11",
+     "likes": 8,
+     "views": 675,
+     "link": "https://x.com/nichegamer/status/2120558134401933456",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2120558084061892609/pu/img/TZ2EfNqe6gOr-Wrs.jpg",
+      "video_url": "https://x.com/i/status/2120558134401933456/video/1"
+     },
+     "summary": "Niche Gamer 放出《PSYCHO DEAD》预览：一款第三人称恐怖游戏，把经典恐怖题材与超能力结合，动作表现血腥、怪物造型怪诞，文中称其带有《妖精的旋律》的影子。推文附实机视频片段。",
+     "analysis": "",
+     "recommendation": "《PSYCHO DEAD》：超能力 + 血腥动作的第三人称恐怖射击，带《妖精的旋律》气质",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Niche Gamer · 平台消息",
+     "tags": [
+      "经典重制",
+      "机甲",
+      "PC 移植"
+     ],
+     "title": "《Medabots Classics Plus》确认登陆 PC：机甲收集对战系列首次成规模移植",
+     "en_title": "Medabots Classics Plus is coming to PC!",
+     "full_text": "Medabots Classics Plus is coming to PC! https://t.co/w1kDVPsL1V https://t.co/gZ5F1PwRBR",
+     "author": "Niche Gamer",
+     "date": "2026-11-11",
+     "likes": 44,
+     "views": 2524,
+     "link": "https://x.com/nichegamer/status/2120326907312955845",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HWzqFfjWsAA11dm.jpg"
+     },
+     "summary": "Niche Gamer 报道，《Medabots Classics Plus》确认将登陆 PC。该作是《徽章战士（Medabots）》系列的经典合集作品，以机甲收集、部件组装与对战为核心玩法，此前主要在日本与主机/掌机平台发行，这次是系列首次成规模进入 PC 平台。",
+     "analysis": "",
+     "recommendation": "《Medabots Classics Plus》确认登陆 PC：机甲收集对战合集首次成规模上 PC",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 动画工具",
+     "tags": [
+      "动画工具",
+      "AI 管线",
+      "3D 资产"
+     ],
+     "title": "Cascadeur 把四个 AI 工具接进动画管线：僵尸角色的建模、蒙皮、绑定、动捕全部自动生成",
+     "en_title": "For this game prototype, all zombies were entirely AI-generated, skinned, rigged, and animated.",
+     "full_text": "For this game prototype, all zombies were entirely AI-generated, skinned, rigged, and animated.\n\nWe've integrated a stack of third-party AI tools into the upcoming version of Cascadeur:\n\nMesh: TRELLIS.2\nSkinning: SkinTokens\nText-to-Motion: Kimodo\nVideoMocap: SAM 3D Body https://t.co/Y1Y4ppeVKL",
+     "author": "Eugene Dyabin",
+     "date": "2026-11-11",
+     "likes": 122,
+     "views": 3714,
+     "link": "https://x.com/EugeneDyabin/status/2120510464090357925",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2120508900491362304/img/r82kEdgtPvZMtI2V.jpg",
+      "video_url": "https://x.com/i/status/2120510464090357925/video/1"
+     },
+     "summary": "Cascadeur 团队的 Eugene Dyabin 展示一个游戏原型：所有僵尸角色完全由 AI 生成、蒙皮、绑定并完成动画。即将发布的 Cascadeur 版本接入了四款第三方 AI 工具——TRELLIS.2 负责网格生成、SkinTokens 负责蒙皮、Kimodo 负责文字生成动作、SAM 3D Body 负责视频动捕。推文附演示视频。",
+     "analysis": "这条比「AI 生成模型」更有价值的地方在于分工表：每个环节挑一个专用模型，而不是指望单个大模型端到端包办。对 3D 动画管线的现实影响是「批量杂兵」的生产成本快速下降——僵尸、平民、动物这类高数量、低叙事权重的角色最容易被替换，而主角与 Boss 的动作表演仍然需要人来做判断。",
+     "recommendation": "Cascadeur 接入 TRELLIS.2 / SkinTokens / Kimodo / SAM 3D Body，僵尸资产从建模到动画全流程 AI",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "Unity · 官方",
+     "tags": [
+      "Unity",
+      "Beta 测试",
+      "引擎"
+     ],
+     "title": "Unity 6.7 Beta 开放测试：官方征集原创 Bug，11 月 27 日前提交可参与评奖",
+     "en_title": "Help us test the Unity 6.7 Beta and get a chance to win a prize",
+     "full_text": "Help us test the Unity 6.7 Beta and get a chance to win a prize 🧪\n\nDive into the beta, test out the new features, and report original bugs to earn entries toward exclusive prizes.\n\n📅 Entries open through Nov 27, 2026.\n🔗 Check out the full prize list, official rules, and get started: https://t.co/scjCuFBpmp\n\n#Unity #UnityBeta #Unity7 #BugTesting #GameDev",
+     "author": "Unity for Games",
+     "date": "2026-11-11",
+     "likes": 25,
+     "views": 2559,
+     "link": "https://x.com/unitygames/status/2120540607852478562",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW2sb9KWYAALuih.jpg"
+     },
+     "summary": "Unity 官方开放 Unity 6.7 Beta 测试，邀请开发者体验新功能并提交原创 bug，提交可累积评奖资格，活动截止 2026 年 11 月 27 日，官方同步放出完整奖品清单与规则。推文标签同时出现 #UnityBeta 与 #Unity7。",
+     "analysis": "对在研项目要说清一件事：6.7 是 6.x 系列的迭代 Beta，不是此前官宣的「Unity 7」（CoreCLR 迁移、MethodReload 那一批）。把它当「提前踩坑」的窗口而非升级目标更合适——真正值得关注的是 6.7 中 URP 与构建管线的改动是否会在 7 里延续。顺手提 bug 还能换奖品，是低成本了解下一版行为差异的方式。",
+     "recommendation": "Unity 6.7 Beta 开放测试，11/27 前提交原创 Bug 可参与评奖"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**同一个 PS5，里程碑与衰退并存**\n索尼确认 PS5 累计出货突破 1 亿台，11 月 10 日达成，六年走完 PS4 走七年的路。但同一份财报里，FY2026 Q2 只出货 260 万台，去年同期是 400 万，创下上市以来最差的第二季度。装机量见顶后，索尼的应对是把重心从卖硬件转向服务型游戏，可《Fairgame$》恰恰在这一周被取消——战略方向没问题，执行成功率是另一回事。\n\n**AI 正在先吃掉「评估」而不是「开发」**\n澳洲办了 12 年的 STEM 电子游戏挑战赛确认停办，官方给出的原因不是作品变差，而是「生成式 AI 让评审分不清哪些是学生自己做的」。同一周，一位日本游戏制作 YouTuber 说挑战系内容已经失去意义——AI 让「5 分钟做出游戏」不再稀奇。两件事指向同一个结论：当交付物无法反推过程，评估体系会先崩，作品本身反而没变。\n\n**撤离玩法被搬进拿破仑时代**\n《Hell Let Loose》原班团队 Good Fun Corp 公布《Hunger》：拿破仑时代、瘟疫肆虐欧洲的近战撤离 RPG，12 月 3 日抢先体验，公开测试前愿望单已超 70 万。同期还有把「城市管理 AI」做成主角的《Minerva Rising》与「建国 + 塔防 + 动作」三合一的《Athran》，独立团队仍在用系统性创意抢差异。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
