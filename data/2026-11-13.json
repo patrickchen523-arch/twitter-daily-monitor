@@ -1,0 +1,532 @@
+{
+ "date": "2026-11-13",
+ "meta": {
+  "raw_count": 214,
+  "filtered_count": 169,
+  "selected_count": 12,
+  "crawl_time": "2026-11-13 09:20"
+ },
+ "lede": "黄仁勋辞去英伟达全部职务，游戏业务仅占营收 7.4%；GTA 6 预售 1127 万套、10.9 亿美元，PS5 占 75%；两人团队 5 个月做出的《Meccha Chameleon》卖出 2000 万份，一夜拿下 4 座金摇杆。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "黄仁勋辞去英伟达全部职务，CFO 暂代 CEO，游戏业务仅占营收 7.4%"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "两人 5 个月做出《Meccha Chameleon》，卖出 2000 万份并一夜拿下 4 座金摇杆"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "CD Projekt 用 AI 把中风后杰洛特的波兰声线修回 12 年前，配音演员本人同意"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "CD Projekt 用 AI 把中风后的波兰版杰洛特声线修回 12 年前，配音演员本人知情同意\n腾讯《鹅次元》开测：四位 AI 角色把陪伴 AI 装进游戏运行时\nGoogle 上线 Gemini Decision 1：100 万输入 token $0.10，单次可判 1000 个问题"
+  },
+  {
+   "id": "industry",
+   "text": "黄仁勋辞去英伟达全部职务，CFO Colette Kress 暂代 CEO，游戏业务仅占营收 7.4%\nGTA 6 预售 1127 万套、10.9 亿美元，PS5 占 75%\n《Big Walk》如实披露代码 AI 反被 19 位 IGF 评委拒投，Steam 单日 366 条差评\n日本 Falcom 年收入 2818 万美元创历史新高"
+  },
+  {
+   "id": "indie",
+   "text": "两人 5 个月做出《Meccha Chameleon》，卖出 2000 万份并一夜拿下 4 座金摇杆\n《Queen's Domain》把魂系搬回复古低多边形，92% 好评\n《勇者斗恶龙：诅咒之树与天选之岛》正式公开"
+  },
+  {
+   "id": "tools",
+   "text": "UE5.9 在浏览器里跑起 Lumen，MeshBlend/FPOM/TileShuffle 开箱可用\n角色走到树后的四种处理方案对比，4000+ 赞讨论"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "PC Gamer · AI 与配音（多家报道：Eurogamer / Rock Paper Shotgun / Niche Gamer / TheGamer）",
+     "tags": [
+      "生成式 AI",
+      "配音",
+      "伦理边界"
+     ],
+     "title": "CD Projekt 用 AI 把中风后的波兰版杰洛特声线修回 12 年前，配音演员本人知情并同意",
+     "en_title": "CD Projekt used AI to modify the voice of Geralt's Polish actor after a stroke left it significantly changed: 'This was a special case'",
+     "full_text": "CD Projekt used AI to modify the voice of Geralt's Polish actor after a stroke left it changed https://t.co/JH0zUn9PRv",
+     "author": "PC Gamer",
+     "date": "2026-11-12",
+     "likes": 124,
+     "views": 37574,
+     "link": "https://x.com/pcgamer/status/2120670716861546503",
+     "media": null,
+     "summary": "据 Game File 报道并经 PC Gamer 证实，CD Projekt 在《巫师 3》新资料片《Songs of the Past》中，与 AI 语音公司 Respeecher 合作调整了波兰语版杰洛特配音 Jacek Rozenek 的声音。Rozenek 为历代《巫师》波兰语版杰洛特配音，2019 年中风后一度失语，2021 年虽恢复并补录过次世代版台词，但过程让他「精疲力尽」，此后嗓音变得明显更低更沙哑。由于新资料片时间线位于《巫师 3》中期，声线落差构成实际问题，CD Projekt 在取得本人许可后让 Respeecher 把他的声音调回十年前的音色。Rozenek 仍在演出，只是经过后期调整；他本人表示支持，理由是「这个声音应该尽可能接近 12 年前的我」。CD Projekt 本地化制作人 Mikołaj Szwed 强调「这是特例」，不会对英文版 Doug Cockle 做同样处理，未来设定在更晚时间线的作品中也不会再改。此前《赛博朋克 2077》曾用同一家公司复现已故配音 Miłogost Reczek 的声音，并取得家属同意。",
+     "analysis": "这是 AI 配音争议里少见的「正面授权样本」：本人同意、本人仍在演、目的不是替代而是还原不可逆的损失。对从业者的启示是——AI 声线最有说服力、也最容易拿到同意的场景，是「修复」而不是「生成新表演」；一旦跨过这条线去做省成本的新台词合成，就会立刻撞上配音工会与玩家的信任红线。CD Projekt 自己把话说得很死（特例、不做英文版、不做未来作品），这份克制本身就是可复用的公关与合规模板。",
+     "recommendation": "CD Projekt 用 AI 把中风后杰洛特的波兰声线修回 12 年前，配音演员本人同意",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "腾讯《鹅次元》官网 · X 用户 cxuan（Niche Gamer 跟进报道）",
+     "tags": [
+      "AI 陪伴",
+      "游戏助手",
+      "腾讯"
+     ],
+     "title": "腾讯《鹅次元》开测：把 AI 角色做成陪打游戏的桌面伙伴，夏夏/沈露白/谷雨/贝拉四套人设上线",
+     "en_title": "腾讯《鹅次元》官网 — 你的专属 AI 游戏伙伴（元气首测开启）",
+     "full_text": "？？？？？？\n\nhttps://t.co/f78baxaxaK\n\n腾讯你认真的吗？",
+     "author": "criscxuan",
+     "date": "2026-11-12",
+     "likes": 1237,
+     "views": 728606,
+     "link": "https://x.com/criscxuan/status/2120785537850319024",
+     "media": null,
+     "summary": "腾讯上线 PC 客户端产品《鹅次元》（eciyuan.qq.com），官网定位「你的专属 AI 游戏伙伴」，当前处于「元气首测」阶段。官方给出四位 AI 角色及完整人设：夏夏（19 岁、新传专业大二、ENFP）、沈露白（24 岁、目标是万众瞩目的电竞女解说、INTP）、谷雨（22 岁、红油粤菜新派料理大师、INFJ）、贝拉（24 岁、ESTP）。官网试听片段全是游戏过程中的陪聊与情绪反馈，例如「赢了我陪你笑，输了我陪你待一会儿，或者我们干点别的什么也行」「这把输了下把赢回来」。Niche Gamer 的描述口径是「腾讯在测试一款能看到你在玩什么、并出声陪你聊的 Windows 应用」。",
+     "analysis": "把「AI 陪伴」从独立聊天 App 搬进游戏运行时，卖点不是攻略正确率而是情绪价值与人格一致性——这是国内大厂第一次把陪伴型 AI 明确做成游戏外设。《鹅次元》真正的产品壁垒在角色设定与长期记忆，而不是模型能力；同时它把 PC 端读屏/进程识别这个隐私边界摆到了台面上，后续能否过审、能否被玩家接受，很大程度取决于它敢不敢把「看到了什么」讲清楚。",
+     "recommendation": "腾讯《鹅次元》开测：四位 AI 角色陪玩陪聊，把陪伴 AI 装进游戏运行时",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Tony出海 · AI 基础设施",
+     "tags": [
+      "决策模型",
+      "Agent",
+      "Google"
+     ],
+     "title": "Google 上线 Gemini Decision 1：只做选择题的决策模型，100 万输入 token $0.10、输出免费",
+     "en_title": "Gemini Decision 1 来了，决策模型赛道正式进入大厂时代。",
+     "full_text": "Gemini Decision 1 来了，决策模型赛道正式进入大厂时代。\n\n前两周还在火的，是 TypeSafe 的 Jev。它几乎重新定义了一类模型：不写字、不推理、不生成文本，只做一件事——在你预先给定的选项里，快速、便宜、带置信度地做出选择。\n\n决策模型突然成了 Agent 工作流里最香的基础设施。\n\n昨天，Google 也加入了。\n\nGemini Decision 1（模型 ID：gemini-decision-1）正式上线 Gemini Decisions API，直接把这个品类拉到了新高度：\n\n•每 1M 输入 token 只要 $0.10，输出 token 完全免费\n•原生支持文本、图像、音频、视频、PDF\n•单次请求最多评估 1000 个独立问题\n•上下文窗口 256K\n•端到端延迟 150–250ms，1–100 题时几乎持平\n•支持 noul（是/否）、choice（单选）、score（量表评分）\n\n三种类型，返回校准概率 + 置信度\n和 Jev 那一代相比，最大的变化是多模态能力和超高问题吞吐。以前要分多次调用的分类、路由、策略检查、内容审核，现在可以打包成一次请...",
+     "author": "tonychuhai",
+     "date": "2026-11-12",
+     "likes": 0,
+     "views": 545,
+     "link": "https://x.com/tonychuhai/status/2120677638130069948",
+     "media": null,
+     "summary": "Google 上线 Gemini Decisions API，模型 ID 为 gemini-decision-1，定位是「不生成文本、只在给定选项里带置信度做选择」的决策模型。定价每 1M 输入 token $0.10、输出 token 免费；原生支持文本、图像、音频、视频、PDF；单次请求最多评估 1000 个独立问题；上下文窗口 256K；端到端延迟 150–250ms，且在 1–100 题区间几乎持平；输出支持 yes-no、choice（单选）、score（量表）三类，返回校准后的概率与置信度。Tony出海 指出该品类此前由 TypeSafe 的 Jev 定义，Gemini 的加入把竞争直接推到「多模态 + 高吞吐」这一层。",
+     "analysis": "把分类、路由、审核这类「判断」从通用 LLM 里剥离成专用模型，是 Agent 工程化最划算的一条捷径：成本降一个数量级，一次请求吃下上千个判断，延迟压进 200ms 级。对游戏团队的直接落地场景是 UGC 审核、客服工单分流、活动资格判定、A/B 策略裁决这些「高频但不需要创造性」的决策——这类活今天还在用大模型硬扛，属于典型的成本浪费。",
+     "recommendation": "Google 上线 Gemini Decision 1：100 万输入 token 一毛钱，单次可判 1000 个问题",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "GameSpot · 硬件行业（多家报道：PC Gamer / Polygon / Eurogamer / Rock Paper Shotgun / Destructoid）",
+     "tags": [
+      "Nvidia",
+      "人事变动",
+      "GPU 供给"
+     ],
+     "title": "黄仁勋辞去英伟达总裁兼 CEO 全部职务即刻生效，CFO Colette Kress 出任临时 CEO",
+     "en_title": "Nvidia announced that Jensen Huang has resigned as president and CEO of the company, effective immediately.",
+     "full_text": "Nvidia announced that Jensen Huang has resigned as president and CEO of the company, effective immediately.\n\nNvidia's current Chief Financial Officer, Colette Kress, will serve as interim CEO while keeping her CFO duties until a permanent replacement for Huang can be found. https://t.co/wThTuqhWGZ",
+     "author": "GameSpot",
+     "date": "2026-11-12",
+     "likes": 11,
+     "views": 4837,
+     "link": "https://x.com/GameSpot/status/2120924248940122517",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW8JXTiWsAALLnI.jpg"
+     },
+     "summary": "英伟达宣布黄仁勋辞去总裁兼 CEO 等全部职务，即刻生效；现任 CFO Colette Kress 在寻找正式继任者期间兼任临时 CEO，同时保留 CFO 职责。事件导火索为第二起婚外情指控以及随后的间谍传闻（多家外媒表述为 alleged spying scandal），英伟达盘后股价跌至一年多来最低。PC Gamer 的解读文章补上了最关键的一组数字：FY2026 数据中心收入 1937 亿美元，游戏业务 160 亿美元，仅占 7.4%，尽管英伟达在 PC 显卡市场的份额约 90%。PC Gamer 同时指出，Kress 接手的首要任务不是产品路线，而是向投资人证明 AI 增长仍在延续。",
+     "analysis": "对 PC 玩家与游戏团队来说，重点不是谁坐那把椅子，而是游戏业务在英伟达收入结构里只剩 7.4%——这意味着消费级显卡在公司内部的议价权已经极低。PC Gamer 的判断值得记下来：黄仁勋虽被 AI 浪潮推上神坛，却是少数仍对 PC 游戏抱有情感偏好的决策者；换人之后，显卡在资源分配里的排位只会更靠后，而 RAM、显存涨价这些已经在发生的事，短期内不会有人替玩家说话。",
+     "recommendation": "黄仁勋辞去英伟达全部职务，CFO 暂代 CEO，游戏业务仅占营收 7.4%",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "GameSpot · 市场数据（Sensor Tower）",
+     "tags": [
+      "GTA 6",
+      "预售",
+      "平台结构"
+     ],
+     "title": "Sensor Tower：GTA 6 预售已售 1127 万套、收入 10.9 亿美元，PS5 占 75%",
+     "en_title": "According to Sensor Tower, GTA 6 has now sold 11.27 million total units via pre-purchases, which works out to about $1.09 billion in gross revenue.",
+     "full_text": "According to Sensor Tower, GTA 6 has now sold 11.27 million total units via pre-purchases, which works out to about $1.09 billion in gross revenue.\n\nPS5 sales are dominating the mix, with sales accounting for 75% compared to 25% on Xbox Series X|S. https://t.co/kQWASmATvW",
+     "author": "GameSpot",
+     "date": "2026-11-12",
+     "likes": 4,
+     "views": 1962,
+     "link": "https://x.com/GameSpot/status/2120932191420981476",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW8QlobW0AEX3eB.jpg"
+     },
+     "summary": "Sensor Tower 数据显示，GTA 6 通过预购已售出 1127 万套，粗收入约 10.9 亿美元。平台结构上 PS5 占 75%，Xbox Series X|S 占 25%。游戏将于 11 月 19 日全球上市，结束自 2013 年《GTA 5》以来长达 13 年的等待。同一天还有两条相关动静：Eurogamer 报道日本等地区的版本会有本地化差异，TheGamer 则指出玩家在澳新版本文件里发现约 704 KB 的内容缺块，怀疑存在区域删改。",
+     "analysis": "发售前预售破 10 亿美元，等于把首年现金流的确定性提前锁死，这在 AAA 史上没有先例，也解释了为什么 11 月 19 日那周几乎所有发行商都在主动让路。更值得记的是 75:25 的平台比例——PS5 的装机优势被完整转化成了销量偏斜，而 Xbox 端连「同价同内容」都换不回份额，这对正在做平台策略的团队是很硬的一条参考数据。",
+     "recommendation": "GTA 6 预售 1127 万套、10.9 亿美元，PS5 占 75%",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "X 用户 NineT_Dev · 独立开发（TheGamer 跟进报道）",
+     "tags": [
+      "AI 披露",
+      "IGF",
+      "评审规则"
+     ],
+     "title": "《Big Walk》如实填报 AI 使用反被 19 位 IGF 评委拒投，Steam 单日涌入 366 条差评",
+     "en_title": "구스 게임 만든 하우스 하우스 신작 '빅 워크' AI 논란",
+     "full_text": "쪼끔 씁쓸한 얘기 이면서 요즘 계속 고민중이던 \"어디까지가 AI 사용 인가\" 에 대한 이야기.\n\n구스 게임 만든 하우스 하우스 신작 '빅 워크' AI 논란,\n참신하고 재미있어서 나도 꽤 했었는데\n\n 작업 과정에서 AI 도움을 받았다는걸 밝힘\n -> 이걸 공개하자 IGF 심사위원 19명이 투표 거부 선언\n\n[AI 사용]\n 일출·일몰 때 그림자 계산이 폭주해서 20초쯤 성능이 반토막 나는 유니티 버그\n 팀이 아무리 해봐도 안돼서 문의했으나 -> 유니티 엔지니어도 못 잡음\n AI한테 분석 요청했더니 바로 답을 찾아줘서\n -> 챗봇이 준 코드 조각을 크게 손봐서 10줄 정도로 고침.\n\n[왜 투표 거부 당했나]\n스팀은 코드 보조 AI는 공개 대상이 아닌데, IGF 출품 서류는 모든 AI 사용을 물어봐서 그냥 솔직하게 적었다고 함\n -> AI 사용으로 투표 거부\n\n[스팀]\n스팀에 하루 만에 부정 리뷰 366개 몰림\n -> '압도적 긍정적'에서 '매우 긍정적'으로 \n\n작년에 '클레르 옵스퀴르: ...",
+     "author": "NineT_Dev",
+     "date": "2026-11-12",
+     "likes": 41,
+     "views": 4200,
+     "link": "https://x.com/NineT_Dev/status/2120670743344398524",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW4gRQOa4AACe07.jpg"
+     },
+     "summary": "韩国开发者 NineT_Dev 复盘 House House（《Untitled Goose Game》团队）新作《Big Walk》的 AI 争议。团队承认制作中用过 AI 辅助，具体案例是一个「日出日落时阴影计算爆炸、约 20 秒内性能掉一半」的 Unity bug：团队试不出来、问 Unity 官方工程师也没解决，最后让 AI 分析找到原因，把给出的代码片段大改后缩到约 10 行修好。问题出在表格上——Steam 只要求披露代码生成类 AI，而 IGF 报名表要求披露所有 AI 使用，团队照实全填，结果 19 位 IGF 评委宣布拒绝投票。连锁反应是 Steam 一天内涌入 366 条差评，评价从「好评如潮」掉到「特别好评」。TheGamer 的跟进报道补充：引发争议的 AI 代码占比据称不到 0.1%。",
+     "analysis": "这是「两套披露规则互相打架」的典型事故：越诚实越吃亏。同一份填报，在商店侧只是走流程，在评奖侧却直接变成失格理由，而团队根本没有渠道去解释「10 行 shadow bug 修复」和「AI 生成美术」在性质上的差别。对独游团队的现实提醒是，报名参赛前必须逐条读奖项的 AI 条款，不能照搬商店页口径；对赛事方而言，把「代码辅助」与「内容生成」分开计分，比一刀切更能留住好作品——否则下一个被推上舆论场的，会是更不敢说真话的团队。",
+     "recommendation": "《Big Walk》如实披露代码 AI 反被 19 位 IGF 评委拒投，Steam 单日 366 条差评",
+     "featured": false
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Niche Gamer · 财报",
+     "tags": [
+      "日本 Falcom",
+      "财报",
+      "轨迹系列"
+     ],
+     "title": "日本 Falcom 年收入 2818 万美元创历史新高，《轨迹》系列销量带动增长",
+     "en_title": "Nihon Falcom posts record $28.18 million in annual revenue as Trails sales grow",
+     "full_text": "Nihon Falcom posts record $28.18 million in annual revenue as Trails sales grow: https://t.co/DRw3dUZXVg https://t.co/gqEvzb6aAg",
+     "author": "Niche Gamer",
+     "date": "2026-11-12",
+     "likes": 27,
+     "views": 1013,
+     "link": "https://x.com/nichegamer/status/2120896513349996851",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW7wI7JWgAADwOQ.jpg"
+     },
+     "summary": "日本 Falcom 公布年度财报，收入 2818 万美元，创公司历史新高，增长主要由《轨迹》系列销量推动。同一天 Niche Gamer 还报道了两条相关消息：《Trails Beyond the Horizon》续作将于 2027 年 9 月前发售；《Romancing SaGa 3》重制版把发售日提前了两周。",
+     "analysis": "2818 万美元放进 3A 语境不值一提，但对一家坚持自研引擎、几十人规模、年年稳定出货的日本老牌 RPG 厂，这已经是能跑通的商业模型：低成本、固定受众、内容年更。对中型团队的参照价值不在单品爆款，而在「用长线 IP 复利把研发成本摊薄」——这恰好是很多国内团队最缺的那一段耐心。",
+     "recommendation": "日本 Falcom 年收入 2818 万美元创历史新高，靠轨迹系列稳定复利",
+     "featured": false
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "TheGamer · 独立游戏",
+     "tags": [
+      "派对游戏",
+      "独立开发",
+      "金摇杆"
+     ],
+     "title": "《Meccha Chameleon》：两个人 5 个月做出、卖出 2000 万份，一夜拿下 4 座金摇杆创独游纪录",
+     "en_title": "Meccha Chameleon Broke A 44-Year-Old Record At The Golden Joysticks",
+     "full_text": "Meccha Chameleon Broke A 44-Year-Old Record At The Golden Joysticks https://t.co/WZWKW6iZc5 https://t.co/fUlDYW13Hc",
+     "author": "TheGamer",
+     "date": "2026-11-12",
+     "likes": 2,
+     "views": 319,
+     "link": "https://x.com/thegamerwebsite/status/2120803847119507563",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW6b3EVWQAAsolH.jpg"
+     },
+     "summary": "《Meccha Chameleon》在金摇杆奖一夜拿下 4 座奖杯：最佳多人、最佳自主发行独立游戏、开发者之选、主播之选，成为单届金摇杆获奖最多的独立游戏——此前该纪录由多款作品以 2 座并列（名单里有《空洞骑士：丝之歌》《小丑牌》《咩咩启示录》《哈迪斯》《星际拓荒》）。游戏由 Lemorion 与 Haganeiro 两人开发，耗时约 5 个月，2026 年 6 月发售，售价 26 元，报道称销量已超 2000 万份，超过《宝可梦传说 Z-A》《战神：诸神黄昏》《生化危机 8》的生涯销量。同场金摇杆中，《巫师 3》凭最佳重制/复刻奖成为该奖史上获奖最多的游戏（10 座），《生化危机：安魂曲》拿下年度游戏，Capcom 以 57% 得票率获年度工作室。",
+     "analysis": "",
+     "recommendation": "两人 5 个月做出《Meccha Chameleon》，卖出 2000 万份并一夜拿下 4 座金摇杆",
+     "featured": true,
+     "game_ref": "MECCHA CHAMELEON",
+     "enrichment": {
+      "game_name": "Meccha Chameleon",
+      "genre": "派对游戏 / 捉迷藏 / 绘画拟态",
+      "developer": "lemorion_1224（Lemorion 与 Haganeiro 两人）",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "¥26",
+      "release_date": "已发售 · 2026年6月9日",
+      "steam_rating": "81,793 条 Steam 评价（好评如潮）",
+      "steam_url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1789464996",
+      "youtube_video": null,
+      "description": "【核心玩法】把自己涂成环境的一部分。玩家操控一只纯白色的变色龙，开局身上没有任何颜色，必须在关卡里观察背景、调色上色，用「画功」伪装成墙面、地板、道具，在时限内躲过追捕者的眼睛。躲藏地点、姿势和涂装精度三者共同决定生死，判定靠视觉相似度而不是简单的碰撞体积。\n\n【社交结构】支持 2–10 人在线，含随机匹配，并专门做了观众参与型直播设计——观众能影响对局，这也是它在主播圈层快速扩散的关键。\n\n【美术与氛围】低多边形卡通造型加高对比色块，故意把「不够像」这件事暴露出来，让失败本身变成笑点。视觉门槛低，反而成就了它的传播性。\n\n【优势】规则一句话说清、失败画面天然适合切片传播、26 元定价几乎零决策成本；两人 5 个月做完，验证了「小体量 + 强直播适配」的极端性价比。\n\n【风险】玩法单薄，长期留存在于地图与规则更新速度；一旦头部主播热度退潮，2000 万份的基数能否转化成持续在线，取决于 UGC 与联机生态能不能接住。\n\n【综合评价】2026 年最典型的「内容形态被传播渠道反向塑造」案例：为直播和短视频设计对局节奏，而不是为单机体验设计深度。金摇杆四奖是结果，不是原因。",
+      "why_notable": "两人 5 个月开发、26 元定价，卖出 2000 万份并在单届金摇杆拿下 4 座奖，刷新独立游戏纪录",
+      "pcu": "未进 2026-11-13 PCU Top 500（派对型产品，非长在线结构）",
+      "current_players": null,
+      "estimated_sales": "2000 万份以上（TheGamer 报道口径）",
+      "gi_summary": "「捉迷藏」套「自己动手涂装拟态」新瓶，Lemorion 与 Haganeiro 两人开发，Steam 售价 ¥26"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Polygon · 独立游戏评测",
+     "tags": [
+      "King's Field-like",
+      "魂系",
+      "复古奇幻"
+     ],
+     "title": "《Queen's Domain》：两人工作室做的 King's Field 式复古奇幻 ARPG，Polygon 称其为当下最好的 Skyrim 替代品",
+     "en_title": "Queen's Domain is the perfect Soulslike for Skyrim fans",
+     "full_text": "Skyrim Meets Dark Souls In 2026's Most Exciting New Action RPG https://t.co/rvMszBiVkN https://t.co/NUoHWPrOPa",
+     "author": "Polygon",
+     "date": "2026-11-12",
+     "likes": 46,
+     "views": 10347,
+     "link": "https://x.com/Polygon/status/2120688060073402629",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW4yjYUW4AAbYLp.jpg"
+     },
+     "summary": "Polygon 发布《Queen's Domain》上手评测，称其为「Skyrim 粉丝当下最合适的魂系替代品」，并在《上古卷轴 6：Sentinel》还要等两年的空窗期里「已经病毒式传播」。游戏由 Freshly Baked Games 的两人团队开发，刻意复刻 FromSoftware 早期《King's Field》的低多边形复古质感，但按现代标准做了完整可探索的开放岛屿：遗迹、隧道、山体、几乎看不清的岩架都能走上去，地图不断自我交叉。战斗采用轻/重/斩/刺四类武器，武器本身也会随使用次数升级；存档与休息分离，休息回血但会重置敌人。Polygon 作者玩了 10 小时以上，评价是「难度凶悍但极度上瘾」。",
+     "analysis": "",
+     "recommendation": "《Queen's Domain》把魂系搬回复古低多边形，Polygon 称其为当下最好的 Skyrim 替代品",
+     "featured": true,
+     "game_ref": "Queen's Domain",
+     "enrichment": {
+      "game_name": "Queen's Domain",
+      "genre": "动作 / 冒险 / 角色扮演 / 魂系",
+      "developer": "Freshly Baked Games LLC（两人团队）",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "¥70",
+      "release_date": "已发售 · 2026年10月30日",
+      "steam_rating": "5,611 条 Steam 评价 · 92% 好评",
+      "steam_url": "https://store.steampowered.com/app/1799840/Queens_Domain/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1799840/1a209734951f53b019ec9fa03f835def14f2a968/header.jpg?t=1793982850",
+      "youtube_video": null,
+      "description": "【核心玩法】复古第一人称动作 RPG，精神上直接对标 FromSoftware 在《恶魔之魂》之前的《King's Field》系列：没有小地图、没有任务指引、没有自动回血，玩家只能靠观察地形和记忆路线推进。主角作为流亡的王子被冲上尼亚希德岛，寻找失踪的父王，岛上每一处遗迹、隧道与岩架都可探索。\n\n【战斗与成长】武器分轻量、重型、斩击、穿刺四类，后期可附魔；除角色属性外，武器本身也会随使用次数升级，一把锈剑能练成利器。存档点与休息点分离——休息能回满生命，代价是全图敌人重置，逼玩家自己权衡推进节奏。\n\n【关卡设计】地图高度自我交叉：前期路过的柱子可能是后期才能抵达的隐藏平台，早期拿到「Legendary Holy Sword Endu」后可飞越此前被当作背景的区域。Polygon 的描述是「没有一寸地图是没设计过的」。\n\n【美术与氛围】刻意保留 1996 年式的低多边形与朦胧雾气，怪物造型走荒诞路线——喷毒的大嘴鲈鱼、会杀人的精装书、无法命名的地穴生物。\n\n【优势】两人团队做出完整可探索开放岛，92% 好评、5,611 条评价；70 元定价对应 10 小时以上仍未见底的内容量，性价比极高；正好卡在《上古卷轴 6》空窗期。\n\n【风险】复古操作手感与零引导设计会劝退主流玩家；加载时间问题在评测中被点名；后续内容更新节奏决定长尾。\n\n【综合评价】用 1996 年的图形词汇重做 2026 年的探索体验，证明「复古」不是滤镜而是设计约束。对独立团队的最大启示是：技术预算省下来的部分，全部投进关卡密度。",
+      "why_notable": "两人工作室做出完整可探索的 King's Field 式开放岛，92% 好评并在《上古卷轴 6》空窗期病毒式传播",
+      "pcu": "11,514（2026-11-13 峰值，为其历史最高）",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「King's Field」套「现代开放岛」新瓶，Freshly Baked Games 两人开发，Steam 售价 ¥70"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Niche Gamer · 新游曝光",
+     "tags": [
+      "勇者斗恶龙",
+      "JRPG",
+      "新作公布"
+     ],
+     "title": "《勇者斗恶龙：诅咒之树与天选之岛》正式公开，DQ 系列新作落地",
+     "en_title": "ICYMI - Dragon Quest: The Cursed Tree and the Chosen Isle was announced!",
+     "full_text": "ICYMI - Dragon Quest: The Cursed Tree and the Chosen Isle was announced! https://t.co/W9RiGf0dxj https://t.co/82rxXvQraO",
+     "author": "Niche Gamer",
+     "date": "2026-11-12",
+     "likes": 9,
+     "views": 681,
+     "link": "https://x.com/nichegamer/status/2120921752591077744",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW8HGCGXkAASY3U.jpg"
+     },
+     "summary": "Niche Gamer 以 ICYMI（补发）形式确认《Dragon Quest: The Cursed Tree and the Chosen Isle》（勇者斗恶龙：诅咒之树与天选之岛）已正式公开，并放出完整揭晓信息。目前公开内容集中在官方标题、主视觉与世界观关键词（诅咒之树 / 天选之岛），具体的玩法细节、平台阵容与发售窗口尚未在推文中给出。",
+     "analysis": "",
+     "recommendation": "《勇者斗恶龙：诅咒之树与天选之岛》公开，DQ 系列新作落地",
+     "featured": false,
+     "game_ref": "Dragon Quest: The Cursed Tree and the Chosen Isle",
+     "enrichment": {
+      "game_name": "Dragon Quest: The Cursed Tree and the Chosen Isle",
+      "genre": "JRPG",
+      "developer": "Square Enix（《勇者斗恶龙》系列）",
+      "platforms": [],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "尚未发售",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "【目前已知】官方已确认的只有标题与主视觉：《Dragon Quest: The Cursed Tree and the Chosen Isle》，中文可直译为「诅咒之树与天选之岛」。两个关键词直接点出本作的核心母题——一棵被诅咒的树、一座被选中的岛，属于 DQ 系列惯用的「单地图 + 单核心奇观」结构。玩法、平台、发售窗口均未公布。\n\n【系列定位】DQ 是日本国民级 JRPG，正统编号作品与衍生作并行，近年 Square Enix 采取「重制 + 新作」双线策略：一边把《III》《I & II》的 HD-2D 重制推向全球，一边维持新作公布节奏。本作标题不带编号，更接近《DQ 怪兽篇》《DQ 创世小玩家》这类分支作品，也可能是一个全新子系列的首作。\n\n【观察点】第一，是否沿用 HD-2D 视觉语言——如果沿用，说明 SE 已把该风格固化为中等预算产品线；第二，平台是否同步 PC/Steam，这决定它能否吃到 DQ XI S 之后建立的海外 PC 用户；第三，发售窗口是否落在 2027 财年，与《Trails Beyond the Horizon》续作等 JRPG 挤在同一周期。\n\n【风险提示】本条信息量有限，除标题与主视觉外的所有细节均属推断，正式情报需等官方发布会。\n\n【综合评价】对 JRPG 受众是明确的正面信号：DQ 新作在公布阶段，且题材回到了系列最擅长的「一座岛、一个诅咒、一段旅程」的经典框架。",
+      "why_notable": "勇者斗恶龙系列新作首次公开，标题与主视觉指向「诅咒之树 + 天选之岛」的单地图经典结构",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「经典单地图 JRPG」套「诅咒之树 + 天选之岛」新瓶，Square Enix 出品，平台与档期待公布"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Polygon · 新游曝光",
+     "tags": [
+      "The Expanse",
+      "科幻RPG",
+      "新预告"
+     ],
+     "title": "《The Expanse: Osiris Reborn》放出新预告，首次展示实机玩法",
+     "en_title": "The Expanse: Osiris Reborn Shows Off Promising Gameplay in New Trailer",
+     "full_text": "The Expanse: Osiris Reborn Shows Off Promising Gameplay in New Trailer https://t.co/EkwqucgX3r https://t.co/yFwpBM4pXU",
+     "author": "Polygon",
+     "date": "2026-11-12",
+     "likes": 1,
+     "views": 4742,
+     "link": "https://x.com/Polygon/status/2120874276446183568",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW7b6mDWgAAb8Db.jpg"
+     },
+     "summary": "Polygon 报道《The Expanse: Osiris Reborn》发布新预告，首次集中展示实机玩法片段，并给出「值得期待」的评价。",
+     "analysis": "",
+     "recommendation": "《The Expanse: Osiris Reborn》新预告首曝实机玩法",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Niche Gamer · 复古重发",
+     "tags": [
+      "模拟RPG",
+      "复古",
+      "重发"
+     ],
+     "title": "《Nobunaga Oda den》32 位模拟 RPG 迎来现代重发",
+     "en_title": "32-bit simulation RPG Nobunaga Oda den gets a modern re-release",
+     "full_text": "32-bit simulation RPG Nobunaga Oda den gets a modern re-release: https://t.co/Q7TN9EZDaO https://t.co/41NHCxcWKj",
+     "author": "Niche Gamer",
+     "date": "2026-11-12",
+     "likes": 26,
+     "views": 3190,
+     "link": "https://x.com/nichegamer/status/2120687268465680680",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2120687217441976320/pu/img/G6jaAMc4DImPENe8.jpg",
+      "video_url": "https://x.com/nichegamer/status/2120687268465680680/video/1"
+     },
+     "summary": "Niche Gamer 报道 32 位时代的模拟 RPG《Nobunaga Oda den》推出现代重发版本，推文附宣传视频。这是近期复古重发潮的又一款——同一天该账号还报道了 80 年代竞速游戏《Shot Rider》重发，以及《El Shaddai: Zero Nine Reversi》突袭式 PC 移植。",
+     "analysis": "",
+     "recommendation": "32 位模拟 RPG《Nobunaga Oda den》现代重发，附宣传片",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Rock Paper Shotgun · 独立新游",
+     "tags": [
+      "动作",
+      "音乐",
+      "奇幻"
+     ],
+     "title": "《The Sound of Fury》：把钢琴当武器打魔鬼的奇幻音乐砍杀游戏",
+     "en_title": "The hills are alive with The Sound of Fury, a fantasy musical hack 'n' slash about weaponising pianos to fight the Devil",
+     "full_text": "The hills are alive with The Sound of Fury, a fantasy musical hack 'n' slash about weaponising pianos to fight the Devil https://t.co/4vmWH110aZ",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-11-12",
+     "likes": 3,
+     "views": 743,
+     "link": "https://x.com/rockpapershot/status/2120903592555024741",
+     "media": null,
+     "summary": "RPS 介绍《The Sound of Fury》：一款奇幻音乐题材的砍杀游戏，核心设定是把钢琴等乐器武器化，用来对抗魔鬼。标题玩的是《音乐之声》的梗，定位偏荒诞喜剧向的动作游戏。",
+     "analysis": "",
+     "recommendation": "《The Sound of Fury》：把钢琴变成武器打魔鬼的音乐砍杀游戏",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Niche Gamer · 新游曝光",
+     "tags": [
+      "益智",
+      "重制",
+      "PC移植"
+     ],
+     "title": "《El Shaddai: Zero Nine Reversi》突袭式推出 PC 版",
+     "en_title": "El Shaddai: Zero Nine Reversi got a surprise PC port",
+     "full_text": "El Shaddai: Zero Nine Reversi got a surprise PC port: https://t.co/ji0mMrFunv https://t.co/5XaVjkJ3vh",
+     "author": "Niche Gamer",
+     "date": "2026-11-12",
+     "likes": 2,
+     "views": 263,
+     "link": "https://x.com/nichegamer/status/2120933729333924092",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW8R_MUXoAAIjT0.jpg"
+     },
+     "summary": "Niche Gamer 报道《El Shaddai: Zero Nine Reversi》在没有预告的情况下突然上线 PC 版。《El Shaddai》系列以独特美术风格著称，本条为系列衍生作的 PC 移植消息。",
+     "analysis": "",
+     "recommendation": "《El Shaddai: Zero Nine Reversi》突袭式上线 PC 版",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unreal Engine 官方 · 引擎技术（@toreler 演示）",
+     "tags": [
+      "Unreal Engine",
+      "WebGPU",
+      "Lumen"
+     ],
+     "title": "UE5.9 在浏览器里跑起 Lumen，MeshBlend、FPOM、TileShuffle 全部开箱可用",
+     "en_title": "UE5.9 running with Lumen in the browser. MeshBlend, FPOM and TileShuffle all working out of the box!",
+     "full_text": "RT @toreler: UE5.9 running with Lumen in the browser.\n\nMeshBlend, FPOM and TileShuffle all working out of the box! https://t.co/zgFJHNUxeH",
+     "author": "UnrealEngine",
+     "date": "2026-11-10",
+     "likes": 0,
+     "views": 2270,
+     "link": "https://x.com/UnrealEngine/status/2120191101801996669",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2119862014692495360/img/ULy0T73VR-k_b-Jx.jpg",
+      "video_url": "https://x.com/toreler/status/2119862440167145492/video/1"
+     },
+     "summary": "Unreal Engine 官方账号转发开发者 @toreler 的演示视频：UE5.9 在浏览器环境中运行，并启用 Lumen 全局光照，MeshBlend、FPOM、TileShuffle 三项特性全部开箱即用。推文附的短片展示的是网页端直接渲染的实时画面，不是云端串流。",
+     "analysis": "引擎级实时 GI 跑进浏览器，把「点链接即玩」的画质上限又抬高一档。对游戏团队更现实的收益在发行侧：试玩 Demo、买量素材、落地页可以直接复用同一套 UE 资产出网页版，不必再单独维护一条 H5 或轻量引擎管线——这条链路省下的不是渲染性能，而是美术资产的第二套制作成本。",
+     "recommendation": "UE5.9 在浏览器里跑起 Lumen，MeshBlend/FPOM/TileShuffle 开箱可用",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X 用户 Kimo · 渲染技巧",
+     "tags": [
+      "遮挡处理",
+      "角色可见性",
+      "技术美术"
+     ],
+     "title": "角色走到树后怎么办：淡出到 40%、抖动开窗、硬开洞、剪影叠加，四种解法对比",
+     "en_title": "Your player just walked behind a tree. What do you do?",
+     "full_text": "Your player just walked behind a tree. What do you do?\n\nA: Fade the tree to 40% (easy, but blends colors)\nB: Dither a window around the player\nC: Cut a hard hole around them\nD: draw the player on top as a flat silhouette https://t.co/ixntkQco8s",
+     "author": "asynkimo",
+     "date": "2026-11-12",
+     "likes": 4040,
+     "views": 411174,
+     "link": "https://x.com/asynkimo/status/2120855461528244226",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2120854970056474624/img/c99Hwf2MuVZV6I7C.jpg",
+      "video_url": "https://x.com/asynkimo/status/2120855461528244226/video/1"
+     },
+     "summary": "开发者 Kimo 抛出一道几乎所有第三人称 3D 游戏都会遇到的工程题——角色走到树后如何处理可见性——并给出四套方案：A 把树淡到 40% 不透明度（实现最简单，但颜色会互相串）；B 在角色周围做抖动（dither）挖一个窗口；C 以角色为中心硬开一个洞；D 把角色作为扁平剪影直接画在最上层。推文附四段并排对比视频，以投票形式提问，获 4000+ 赞、41 万浏览。",
+     "analysis": "这类「没有标准答案的渲染细节」最能看出一支团队的取舍能力：A 省事但破坏美术一致性，B 移动端代价低却不适合写实风，C 便宜但切断树形轮廓，D 牺牲体积感换绝对可读。选哪一套，本质是在「画面质量 / 性能 / 可读性」三角里排优先级——把它写成团队的技术美术规范，比每次临时拍脑袋要省得多。",
+     "recommendation": "角色被树挡住怎么处理：淡出/抖动/开洞/剪影四套方案对比，4000+ 赞讨论",
+     "featured": false
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**英伟达换了 CEO，但玩家该关心的不是换人**\n黄仁勋辞去英伟达总裁兼 CEO 等全部职务，即刻生效，CFO Colette Kress 兼任临时 CEO。导火索是第二起婚外情指控与间谍传闻，盘后股价跌至一年多最低。PC Gamer 给出的数字才是关键：FY2026 数据中心收入 1937 亿美元，游戏业务 160 亿美元，占 7.4%，而英伟达在 PC 显卡市场份额约 90%。换句话说，消费级显卡在公司内部的议价权已经低到可以忽略，换谁上台都不会改变这个方向的斜率。\n\n**GTA 6 在开卖前就锁定了 10.9 亿美元**\nSensor Tower 数据显示，《GTA 6》预售已售出 1127 万套、粗收入约 10.9 亿美元，PS5 占 75%、Xbox Series X|S 占 25%，游戏 11 月 19 日全球上市。与此同时，《Meccha Chameleon》用两个人、5 个月、26 元定价换来 2000 万份销量和单届金摇杆 4 座奖杯，刷新独立游戏纪录；《Queen's Domain》则用两人团队做出 92% 好评的 King's Field 式开放岛，被 Polygon 称为当下最好的 Skyrim 替代品。头部与尾部的成本结构，正在同时走向两个极端。\n\n**AI 的争议已经从「用不用」转向「怎么披露」**\nCD Projekt 在取得配音演员 Jacek Rozenek 本人同意后，用 Respeecher 把他中风后变化的波兰语杰洛特声线调回 12 年前的音色——本人仍在演，AI 只做还原，是少见的正面授权样本。反面案例是 House House 的《Big Walk》：团队按要求向 IGF 披露了「用 AI 修一个 10 行的 Unity shadow bug」，结果 19 位评委拒投、Steam 单日涌入 366 条差评。同一件事，在商店口径里不必披露，在评奖口径里却成了失格理由。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
