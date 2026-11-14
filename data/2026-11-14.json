@@ -1,0 +1,607 @@
+{
+ "date": "2026-11-14",
+ "meta": {
+  "raw_count": 230,
+  "filtered_count": 153,
+  "selected_count": 12,
+  "crawl_time": "2026-11-14 09:30"
+ },
+ "lede": "GDC 调研：40% 开发者在用生成式 AI，但 55% 认为它对行业有害；黄仁勋辞职后员工请愿要他回归、国会要求作证；Xbox 官宣《德军总部 3》，GTA 6 带着史上最高预购量进入发售周。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "黄仁勋辞职后：员工请愿要他回归，第二段办公室关系曝光，国会要求作证"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "GDC 调研：40% 开发者在用生成式 AI，但 55% 认为它对行业有害"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "ShatterRush：墙面奔跑 + 钩索 + 全可破坏场景的多人跑酷 FPS，Pre-Alpha 开测"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "GDC 调研 2,300+ 从业者：40% 用生成式 AI（+4pp），但 55% 认为它对行业有害；AAA 27% 感到被施压，独立团队仅 9%\n傅盛用一句提示词让 Fable 5.2 跑 20 小时做出网页版类王者荣耀，整包 600KB、成本 200 美元\nAgent Sprite Forge v0.6.0 让 Agent 产出「一格一色」的真像素，整套战斗动作可自动生成"
+  },
+  {
+   "id": "industry",
+   "text": "黄仁勋辞职后涟漪：员工请愿要他回归，第二段办公室关系被曝，国会要求就芯片走私作证\nXbox 官宣《德军总部 3》在 MachineGames 制作，id Software 新作已开工（此前 136 人裁 96 人）\nGTA 6 成为 PS Store 与 Xbox Store 史上预购第一，11 月 19 日发售，英国宽带备战下载纪录\n《Mewgenics》主机版前销量破 200 万，Steam 5.1 万条评价、Metacritic 88"
+  },
+  {
+   "id": "indie",
+   "text": "ShatterRush：可墙面奔跑、钩索上房、全场景破坏的多人跑酷 FPS，Pre-Alpha 免费测试中\nZombies Aren't Real：输入城市名或邮编就能生成战场的丧尸围城策略，$8.99 抢先体验\nAQUANAUT：深海弹幕 roguelike，用气泡和垃圾对抗深渊，$5.99 刚上线\nElements Destiny：Deck13 发行的德国像素回合制幻想 RPG，12 月 8 日发售"
+  },
+  {
+   "id": "tools",
+   "text": "日本开发者把樱井政博 257 集《游戏制作》字幕做成 Agent Skill，3,043 赞\nUnity 官方推 CLI：首个可玩版本从「跨团队数周」压到分钟级"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Eurogamer · 行业调研",
+     "tags": [
+      "生成式AI",
+      "GDC",
+      "行业调研"
+     ],
+     "title": "GDC 2026 调研：40% 开发者在用生成式 AI，但 55% 认为它对行业有害",
+     "en_title": "A new report reckons 40% of developers in the video games industry are using generative AI - but even more think it's harmful",
+     "full_text": "A new report reckons 40% of developers in the video games industry are using generative AI - but even more think it's harmful\n\nhttps://t.co/TtGgqQY1ZG https://t.co/2JvB9ucrNS",
+     "author": "Eurogamer",
+     "date": "2026-11-13",
+     "likes": 5,
+     "views": 2170,
+     "link": "https://x.com/eurogamer/status/2121265601553260768",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXA_zB3WsAETGnH.jpg"
+     },
+     "summary": "GDC《State of the Game Industry 2026》调研 2,300 余名从业者：40% 在工作中使用生成式 AI，同比上升 4 个百分点；但 55% 认为 AI 对游戏行业有负面影响，比去年还高 1 个百分点。使用者中 57% 只用于文本生成、资料调研、早期原型、写代码和做汇报；AAA 有 27% 表示「被鼓励或被施压」要用 AI，独立开发者仅 9%。45 岁以上使用率 54%，男性 45%、女性 33%。",
+     "analysis": "这组数据把「在用」和「认可」彻底分开了：工具已经进了流水线，但从业者的价值判断在恶化。对管理者，真正的风险不是员工不用 AI，而是 AAA 与独立团队之间 27% vs 9% 的压力差——它会直接改写招人、外包与美术产能的结构。",
+     "recommendation": "GDC 调研：40% 开发者在用生成式 AI，但 55% 认为它对行业有害",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 中文 KOL",
+     "tags": [
+      "AI编程",
+      "Fable",
+      "网页游戏"
+     ],
+     "title": "傅盛：一句提示词、20 小时、200 美元，Fable 5.2 做出网页版类王者荣耀",
+     "en_title": "我等了三年，而 Fable 5.2 只用了一个晚上，就做出了网页版的类王者荣耀",
+     "full_text": "我等了三年，而 Fable 5.2只用了一个晚上，就做出了网页版的类王者荣耀（由于版权问题 Fable 坚决不肯做成原版的样子），发布在了 https://t.co/Gz3BN4cVxW 上：\n1.我只用了一句提示词：你能帮我写个网页版的知道王者荣耀吗，只需要5个不同英雄，一个人类玩家，剩下的都是 npc。\n2.fable5.2 大约工作了 20 小时，200 美金包月用户，没有额外充值，但免费重置了两次\n3.整个网页包压缩后 600 多 k，人物是 3d 的，动作和光影效果是即时生成的.\n4.可玩性相当可以，横屏竖屏都支持",
+     "author": "傅盛",
+     "date": "2026-11-13",
+     "likes": 302,
+     "views": 87994,
+     "link": "https://x.com/FuSheng_0306/status/2121184697405624350",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW_2McBbAAAHOa5.jpg"
+     },
+     "summary": "傅盛称自己等了三年，Fable 5.2 用一个晚上做出网页版类王者荣耀（因版权问题刻意避开原版美术）：一句提示词指定 5 个英雄、1 名真人玩家、其余为 NPC，模型连续工作约 20 小时，200 美元包月额度、无额外充值、免费重置两次。成品整包压缩后 600 多 KB，3D 人物，动作与光影实时生成，横竖屏均可玩。",
+     "analysis": "真正值得记的不是「AI 能做出 MOBA」，而是成本结构：20 小时算力换一个可玩原型。原型成本被压到千元级后，团队间的差距不再是能不能做出来，而是要做什么、以及能不能把粗糙原型打磨成留得住的商品。",
+     "recommendation": "一句提示词 + 20 小时，Fable 5.2 做出网页版类王者荣耀，包体 600KB",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 独立开发者",
+     "tags": [
+      "AI美术",
+      "像素",
+      "Agent"
+     ],
+     "title": "Agent Sprite Forge v0.6.0：让 Agent 吐出「一格一色」的真像素，整套动作自动生成",
+     "en_title": "相信大家這陣子都看到 Fable 5.2 做 3D 遊戲有多強了，那 2D pixel 呢？",
+     "full_text": "相信大家這陣子都看到 Fable 5.2 做 3D 遊戲有多強了，那 2D pixel 呢？\n\nAI 生圖模型畫出來的 pixel art，基本上都是假像素，最明顯的就是角色的輪廓。你以為劍尖是一格白色，放大才發現，那一格裡面還糊了好幾層灰。\n\n這次花了不少時間研究 pixel art，把 Agent Sprite Forge 升級到了 v0.6.0，終於可以讓 Agent 做成真正的 pixel art 了，每一格就是一個顏色。\n\n想把眼睛改成紅的？放到像素編輯器，吸一個紅色，點三格就好。\n\n影片裡那場戰鬥，從待機、揮劍到受擊，整套動作都是 Agent 做出來的。￼\n\n這版加了兩種風格。\n\nPixel looks｜給 Agent 一張你喜歡的 sprite 當參考，就能做出自己的像素小人，再從同一張母圖延伸出整套動作。\n\nHibit｜喜歡大隻一點、細節多一點的角色，可以玩這個。AI 負責畫平塗原畫，像素交給程式算，背景也能一起做。特效用的是 Patch 的 pixelfx（MIT）。\n\nClaude Code、Codex、Grok 都能用。",
+     "author": "0xFunky",
+     "date": "2026-11-13",
+     "likes": 478,
+     "views": 18387,
+     "link": "https://x.com/0x0funky/status/2121074413789725164",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121074315827503104/img/IWbxzgjLO9TqdG6Q.jpg",
+      "video_url": "https://x.com/0x0funky/status/2121074413789725164/video/1"
+     },
+     "summary": "开发者 0xFunky 指出 AI 生成的 pixel art 普遍是「假像素」——放大后发现轮廓格里混着多层灰阶；v0.6.0 改为按像素网格生成，一格一色，可直接导入像素编辑器改色（把眼睛点成红色只需吸色点三格）。视频里的战斗从待机、挥剑到受击整套动作都由 Agent 产出；新增 Pixel looks（给一张参考 sprite 延伸整套动作）与 Hibit（平涂原画由 AI 画、像素交给程序算）两种风格，Claude Code、Codex、Grok 都可调用。",
+     "analysis": "像素风是 AI 最容易「看着对、实际不可用」的品类，因为下游要求逐帧、可编辑、风格统一。把生成结果对齐到网格与调色板，本质是把 AI 输出接进既有美术管线——这比再提高一点生成质量更能解决问题。",
+     "recommendation": "Agent Sprite Forge v0.6.0 做出「一格一色」的真像素，整套战斗动作由 Agent 生成"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "TheGamer · 综合（多家报道：PC Gamer / Reuters / FT / NYT）",
+     "tags": [
+      "英伟达",
+      "人事变动",
+      "半导体"
+     ],
+     "title": "黄仁勋辞职后一夜：员工请愿要他回归，第二段办公室关系曝光，国会要求作证",
+     "en_title": "After 33 years at the helm of @nvidia Jensen Huang has resigned as CEO amid a scandal involving two alleged affairs",
+     "full_text": "After 33 years at the helm of @nvidia Jensen Huang has resigned as CEO amid a scandal involving two alleged affairs, one with a woman suspected of being a Chinese spy. CFO Colette Kress will serve as interim CEO. https://t.co/3gEUhxN1gS https://t.co/JZsEV7Fhvo",
+     "author": "TheGamer",
+     "date": "2026-11-13",
+     "likes": 0,
+     "views": 333,
+     "link": "https://x.com/thegamerwebsite/status/2121251245679628397",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXAyxHJXEAAJSa6.jpg"
+     },
+     "summary": "黄仁勋于 11 月 12 日即时辞去英伟达 CEO、总裁与董事职务，CFO Colette Kress 临时接任，董事会同步寻找继任者；TheGamer 引述 FT 称辞职与董事会调查的两段关系有关（其中 Alice Huang 被美情报部门指为中方间谍，中方否认），消息后股价再跌 13%，一个月市值蒸发约 1.8 万亿美元。11 月 13 日 PC Gamer 连发多条跟进：NYT 报道第二段关系对象是向其直接汇报的 VP Kimberly Powell；部分英伟达员工发起请愿要求他回归；美国国会已要求其就芯片走私问题作证。",
+     "analysis": "对游戏行业，这是算力上游的一次治理风险事件。短期看，CFO 接任意味着财务纪律优先，数据中心扩产与显卡定价节奏都可能被重估；中期看，「单一供应商 + 单一强人」的结构性风险被摆上台面，云厂商与自研芯片的议价空间会变大。",
+     "recommendation": "黄仁勋辞职后：员工请愿要他回归，第二段办公室关系曝光，国会要求作证",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 行业媒体（多家报道：GameSpot / PC Gamer / Rock Paper Shotgun / The Game Awards）",
+     "tags": [
+      "Xbox",
+      "MachineGames",
+      "裁员"
+     ],
+     "title": "Xbox 官宣《德军总部 3》在 MachineGames 制作，id Software 新作也已开工",
+     "en_title": "Xbox boss announces Wolfenstein 3 and confirms new game in development at idSoftware despite reported job cut \"bloodbath\"",
+     "full_text": "Xbox boss announces Wolfenstein 3 and confirms new game in development at idSoftware despite reported job cut \"bloodbath\"\n\nhttps://t.co/Lpu7lT10bX https://t.co/rAoHwswI8v",
+     "author": "Eurogamer",
+     "date": "2026-11-13",
+     "likes": 24,
+     "views": 4414,
+     "link": "https://x.com/eurogamer/status/2121219997574017192",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXAVrcHXkAARrEA.jpg"
+     },
+     "summary": "Xbox 负责人 Asha Sharma 直接在个人 X 账号宣布《Wolfenstein 3》已在 MachineGames 正式制作；同日 Bethesda 官网确认《Doom: The Dark Ages - Revelations》将于周一上线 Slaughter 模式，且 id Software 团队「已在开发下一款游戏」。背景是 7 月 id Software 136 人中 96 人被裁（前员工称「血洗」），Xbox 本轮重组累计将裁 3,200 人。",
+     "analysis": "用老 IP 复活 + 免费模式更新来对冲裁员叙事，是微软当下标准的公关节奏。对从业者的信号很直白：工作室规模在缩，但头部 IP 的产能正被收拢到少数「安全团队」手里，中型团队的空间继续变窄。",
+     "recommendation": "Xbox 官宣《德军总部 3》，同周确认 id Software 新作已在开发",
+     "featured": true,
+     "game_ref": "Wolfenstein 3"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 行业媒体",
+     "tags": [
+      "GTA6",
+      "预购",
+      "渠道"
+     ],
+     "title": "GTA 6 成为 PS Store 与 Xbox Store 史上预购量最高游戏，11 月 19 日发售",
+     "en_title": "As Grand Theft Auto 6 breaks pre-order records on the PlayStation and Xbox stores",
+     "full_text": "As Grand Theft Auto 6 breaks pre-order records on the PlayStation and Xbox stores, and looks poised to break many more sales records once it launches next week, questions of whether it will also break the internet arise. https://t.co/qAsKS8PkLn https://t.co/fdfszEqW0c",
+     "author": "Eurogamer",
+     "date": "2026-11-13",
+     "likes": 5,
+     "views": 2775,
+     "link": "https://x.com/eurogamer/status/2121249268505723281",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXAw9-DXMAAHRnN.jpg"
+     },
+     "summary": "索尼与微软同日均确认《GTA 6》已是各自商店历史上预购量最高的游戏，并同时提醒玩家提前预载，以应对「前所未有的需求」。英国最大宽带网络 Openreach 表示「GTA 6 长期在我们的雷达上」，会盯着新的下载纪录；监管机构 Ofcom 也按惯例协调档期。游戏定于 11 月 19 日（周四）发售。",
+     "analysis": "一款主机游戏能让 ISP 与监管机构提前排班，说明头部内容的「基础设施级」影响力还在放大。对平台方，这是预载与 CDN 能力的压力测试；对其他发行商，这一周的买量与曝光基本只能让路。",
+     "recommendation": "GTA 6 成为 PS 与 Xbox 商店史上预购第一，11 月 19 日发售，英国宽带备战下载纪录",
+     "game_ref": "Grand Theft Auto VI"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Niche Gamer · 行业媒体",
+     "tags": [
+      "销量",
+      "独立游戏",
+      "roguelite"
+     ],
+     "title": "《Mewgenics》主机版发售前销量破 200 万，Steam 5.1 万条评价、Metacritic 88",
+     "en_title": "Mewgenics sold over two million copies before its console launch",
+     "full_text": "Mewgenics sold over two million copies before its console launch: https://t.co/HCQrpdrhDb https://t.co/4BxAqisLPY",
+     "author": "Niche Gamer",
+     "date": "2026-11-13",
+     "likes": 3,
+     "views": 928,
+     "link": "https://x.com/nichegamer/status/2121248632800161860",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXAwY-_WYAA5wEb.jpg"
+     },
+     "summary": "Edmund McMillen（《以撒的结合》）与 Tyler Glaiel（《The End Is Nigh》）联合开发的回合制猫咪遗传 roguelite《Mewgenics》，在主机版发售前宣布销量突破 200 万份。PC 版 2026 年 2 月 10 日上线，$29.99，Steam 累计 51,547 条评价，Metacritic 88 分。",
+     "analysis": "以撒之父 + 长线养成 + 回合制战术，这套组合把「小体量高复玩」做到了头部价位。值得注意的是它靠一年长尾而不是首周爆发拿到 200 万——对独立团队，发行节奏与内容更新排期比首发买量更决定天花板。",
+     "recommendation": "《Mewgenics》主机版前销量破 200 万：以撒之父的猫咪遗传 roguelite，MC 88 分",
+     "game_ref": "Mewgenics",
+     "enrichment": {
+      "game_name": "Mewgenics",
+      "genre": "回合制战术 / roguelite / 养成",
+      "developer": "Edmund McMillen & Tyler Glaiel",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "$29.99",
+      "release_date": "已发售 · 2026年2月10日",
+      "steam_rating": "51,547 条 Steam 评价（Metacritic 88）",
+      "steam_url": "https://store.steampowered.com/app/686060/Mewgenics/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/686060/aa8075d11165fef4d4d0d09c156f0da0623b5da1/header.jpg?t=1788661023",
+      "youtube_video": null,
+      "description": "【核心玩法】繁殖出最强的猫军团，再派它们去打深层回合制战斗。玩家在窝里做基因层面的育种（体型、性格、变异、技能），外出则是典型战术回合制：抽技能、捡道具、算走位，一代代把「家族」养成下去。\n\n【结构】单局失败不可怕，损失由育种链吸收——这是它区别于普通 roguelite 的地方，失败成本被摊到长期资产上。\n\n【综合评价】2026 年「长尾型独立游戏」的样本：靠一年内容更新与口碑累积到 200 万份，而不是首周爆发。",
+      "why_notable": "主机版发售前销量破 200 万，验证「以撒之父 + 长线养成 roguelite」的商业天花板",
+      "pcu": "未进 2026-11-13 PCU Top 500（长尾发售型产品，峰值不在本期）",
+      "current_players": null,
+      "estimated_sales": "200 万份以上（主机版发售前，官方口径）",
+      "gi_summary": "「回合制战术」套「猫咪遗传养成」新瓶，Edmund McMillen 与 Tyler Glaiel 联合开发，Steam $29.99"
+     }
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 独立团队 Tetra Studios",
+     "tags": [
+      "FPS",
+      "跑酷",
+      "可破坏场景"
+     ],
+     "title": "ShatterRush：墙面奔跑 + 钩索 + 全可破坏场景的多人跑酷 FPS，Pre-Alpha 已开测",
+     "en_title": "This is my FPS ShatterRush: Extremely fluid parkour-based movement, Combined-arms warfare, Fully destructible environments",
+     "full_text": "This is my FPS ShatterRush:\n- Extremely fluid parkour-based movement\n- Combined-arms warfare\n- Fully destructible environments\nWe have a playtest on Steam, would love to get your feedback! https://t.co/JrqqzIgmJ9",
+     "author": "TetraStudios",
+     "date": "2026-11-13",
+     "likes": 975,
+     "views": 29694,
+     "link": "https://x.com/TetraStudiosDev/status/2121063110496968738",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121061544536772608/img/PsgwzAzn6bxcxbcD.jpg",
+      "video_url": "https://x.com/TetraStudiosDev/status/2121063110496968738/video/1"
+     },
+     "summary": "Tetra Studios 公开自己的多人 FPS《ShatterRush》：以极流畅的跑酷位移为核心，混合兵种对抗，场景可完全破坏；目前在 Steam 开放 Pre-Alpha 试玩并征集反馈。推文 975 赞、120 次转发。",
+     "analysis": "",
+     "recommendation": "ShatterRush：墙面奔跑 + 钩索 + 全可破坏场景的多人跑酷 FPS，Pre-Alpha 开测",
+     "featured": true,
+     "game_ref": "ShatterRush",
+     "enrichment": {
+      "game_name": "ShatterRush",
+      "genre": "跑酷 FPS / 多人竞技 / 可破坏场景",
+      "developer": "Tetra Studios",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "未定价（Pre-Alpha 免费试玩）",
+      "release_date": "Q3 2027 抢先体验",
+      "steam_rating": "未发售（Pre-Alpha 试玩中）",
+      "steam_url": "https://store.steampowered.com/app/3668330/ShatterRush/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3668330/aef534c6c59a2e44689eca331579561ae12a2f23/header.jpg?t=1794529277",
+      "youtube_video": null,
+      "description": "【核心玩法】把「跑酷」当成射击的地形学：任意墙面都可跑，钩索可以拉上屋顶，所有掩体都能被打穿或炸掉。战斗强度建立在动能上——高速位移 + 实时改写战场，节奏比传统战术射击更快，也更依赖地图理解。\n\n【战场单位】除步兵外还有大型机甲参战，玩家需要同时处理快速机动的步兵与重装目标，形成「打不过就换地形」的对抗节奏。\n\n【进度状态】Steam 页面已上线，提供免费 Open Pre-Alpha 测试，正式版计划 2027 年 Q3 进入抢先体验。\n\n【美术与定位】科幻竞技场风格，强调高对比度与可读性，因为地图会随破坏实时变化，画面必须让人一眼看懂局势。\n\n【优势】「破坏 + 跑酷」的组合在小团队里罕见，实机视频在 X 上 975 赞、120 次转发，说明动作表现本身已经有传播力。\n\n【风险】多人跑酷射击对网络同步、地图设计和平衡精度要求极高；破坏系统一旦影响帧率，竞技公平性会被立刻质疑，而这两项恰恰是小团队最难扛的成本。\n\n【综合评价】值得关注的是它对「可破坏竞技场」的野心，而不是当前品质——这类项目通常死在打磨期，需要观察后续测试迭代的频率与规模。",
+      "why_notable": "墙面奔跑 + 钩索 + 全可破坏场景的多人 FPS，Pre-Alpha 免费开放测试，975 赞",
+      "pcu": "未进 2026-11-13 PCU Top 500（未发售，Pre-Alpha 阶段）",
+      "current_players": null,
+      "estimated_sales": "暂无（未发售）",
+      "gi_summary": "「跑酷射击」套「全可破坏竞技场」新瓶，Tetra Studios 独立开发，Steam 免费 Pre-Alpha 试玩中"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 单人开发者 Jogamedev",
+     "tags": [
+      "策略",
+      "丧尸",
+      "抢先体验"
+     ],
+     "title": "Zombies Aren't Real：输入城市名或邮编就能生成战场地图的丧尸围城策略，$8.99 抢先体验",
+     "en_title": "Zombies Aren't Real launches in Early Access THIS FRIDAY, November 13",
+     "full_text": "Zombies Aren’t Real launches in Early Access THIS FRIDAY, November 13 at 11am EST / 8am PST!\n\nWhat’s in the game at launch:\n🌍 13 real-world campaign maps, from Boston and Chicago to Paris, Venice and New York City\n🏗️ A map editor that turns most city names or postal codes into a playable map\n🛠️ Steam Workshop support for player-made maps and mutators\n🎲 A Daily Challenge with its own leaderboard\n🧪 Sandbox mode, where you can stop the zombie apocalypse however you want\n\n🕒 Launches 11am EST / 8am PST on Friday, Nov 13\n💲 $9.99 USD with a 10% Launch Discount\n👉 Wishlist now so Steam tells you the moment it’s live: https://t.co/GdEd1mVNnC",
+     "author": "Jo",
+     "date": "2026-11-11",
+     "likes": 39,
+     "views": 1015,
+     "link": "https://x.com/jogamedev/status/2120645035867689023",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2120644851339296768/img/8XkF59C5y_b29RNI.jpg",
+      "video_url": "https://x.com/jogamedev/status/2120645035867689023/video/1"
+     },
+     "summary": "单人开发者 Jogamedev 的《Zombies Aren't Real》于 11 月 13 日进入抢先体验：首发含 13 张真实城市战役地图（波士顿、芝加哥、巴黎、威尼斯、纽约等），地图编辑器可把大部分城市名或邮编直接变成可玩地图，支持 Steam 创意工坊分享地图与 mutator，另有每日挑战排行榜与沙盒模式。定价 $9.99，首发 9 折 $8.99。",
+     "analysis": "",
+     "recommendation": "Zombies Aren't Real：输入城市名或邮编就生成战场地图，丧尸围城策略 $8.99 抢先体验",
+     "game_ref": "Zombies Aren't Real",
+     "enrichment": {
+      "game_name": "Zombies Aren't Real",
+      "genre": "丧尸围城 / 策略 / 基地防御",
+      "developer": "Jogamedev（单人开发者）",
+      "platforms": [
+       "Steam (Windows)"
+      ],
+      "price": "$9.99（首发 9 折 $8.99）",
+      "release_date": "已发售 · 2026年11月13日（抢先体验）",
+      "steam_rating": "158 条 Steam 评价（抢先体验首日）",
+      "steam_url": "https://store.steampowered.com/app/5185890/Zombies_Arent_Real/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5185890/cd54755b9d15a2cad33471464fb630d6a5363ff0/header.jpg?t=1794584628",
+      "youtube_video": null,
+      "description": "【核心玩法】上帝视角的「丧尸围城」策略：开局就告诉你感染会从城市哪个点爆发，你有时间提前布置；随后用有限军力封锁、疏散、清剿，目标是在资源耗尽前救下尽可能多的平民。每一次决策都对应真实的兵力与时间成本，而不是数值对拼。\n\n【内容结构】首发 13 张真实城市战役地图；地图编辑器能把大部分城市名或邮编直接转成可玩地图，并支持 Steam 创意工坊分享地图与 mutator；另有每日挑战排行榜与可自由暂停感染的沙盒模式。\n\n【定位与价格】$9.99，首发 9 折 $8.99；由单人开发者 Jogamedev 制作，以抢先体验形式上线。\n\n【优势】「真实城市 + 邮编生成 + 创意工坊」这套组合给了内容长尾，地图生成门槛低到输入邮编即可，天然适合短视频传播——玩家会主动去搜自己所在的城市。\n\n【风险】作为 EA 首发，AI 寻路、军力平衡与后期难度曲线都还没被验证；158 条评价的样本量不足以判断长期留存，单人开发的更新速度也是硬约束。\n\n【综合评价】典型的「一个人 + 强编辑器」策略小品，买的是地图自由度而不是画面表现。对做 UGC 工具链的团队，这种把现实地名直接变成内容的做法值得抄。",
+      "why_notable": "输入城市名或邮编就能生成战场地图，单人开发的丧尸围城策略，$8.99 抢先体验",
+      "pcu": "未进 2026-11-13 PCU Top 500（首日 EA，体量较小）",
+      "current_players": null,
+      "estimated_sales": "暂无（抢先体验首日）",
+      "gi_summary": "「丧尸围城」套「真实地图编辑器」新瓶，单人开发者 Jogamedev，Steam $9.99"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Niche Gamer · 独立游戏",
+     "tags": [
+      "roguelike",
+      "弹幕",
+      "深海"
+     ],
+     "title": "AQUANAUT：深海弹幕 roguelike，用气泡和垃圾对抗深渊，$5.99 已发售",
+     "en_title": "Underwater bullet hell roguelike game AQUANAUT is out now",
+     "full_text": "Underwater bullet hell roguelike game AQUANAUT is out now: https://t.co/SPyKpaJI6P https://t.co/ILseNLXPdM",
+     "author": "Niche Gamer",
+     "date": "2026-11-13",
+     "likes": 1,
+     "views": 1236,
+     "link": "https://x.com/nichegamer/status/2121226177872310470",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2121226148981944320/pu/img/N16XUI3gOzwZ9OVJ.jpg",
+      "video_url": "https://x.com/nichegamer/status/2121226177872310470/video/1"
+     },
+     "summary": "俯视角弹幕 roguelike《AQUANAUT》已于 11 月 11 日登陆 Steam：玩家驾驶实验性潜水器下潜到「Grand Deep」海底文明坟场，用气泡、子弹和捡来的垃圾对抗深渊生物，边搜刮边变强。Jacob V 开发、Pixeljam 发行，$5.99，支持 Windows/macOS。",
+     "analysis": "",
+     "recommendation": "AQUANAUT：深海弹幕 roguelike，用气泡与垃圾对抗深渊，$5.99 已发售",
+     "game_ref": "Aquanaut",
+     "enrichment": {
+      "game_name": "Aquanaut",
+      "genre": "弹幕 roguelike / 俯视角动作",
+      "developer": "Jacob V（Pixeljam 发行）",
+      "platforms": [
+       "Steam (Windows / macOS)"
+      ],
+      "price": "$5.99",
+      "release_date": "已发售 · 2026年11月11日",
+      "steam_rating": "暂无足够评价（上线两日）",
+      "steam_url": "https://store.steampowered.com/app/5091050/Aquanaut/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5091050/247447ddc6cf87b92c87d03249af85a1354a96f3/header.jpg?t=1794403460",
+      "youtube_video": null,
+      "description": "【核心玩法】俯视角弹幕 roguelike：你是一台实验性潜水器，下潜到海底文明坟场「Grand Deep」，用气泡、子弹和大量捡来的垃圾对抗深渊生物。单局内滚雪球——要么变得极强，要么沉底。\n\n【场景设定】冒险者公会盯上了亿万年间沉入深海的文明遗物，玩家作为打捞机器同时要面对遗迹守卫与深渊生物，敌人密度与弹幕强度按层数递增。\n\n【体量与价格】$5.99，由 Pixeljam 发行、Jacob V 开发，11 月 11 日刚刚上线，支持 Windows 与 macOS，含 Steam 成就与部分手柄支持。\n\n【美术与氛围】深海、遗迹、机械潜水器，复古像素配高荧光色，在同类低价作品里辨识度明显更高。\n\n【优势】小体量、低价、一句话说清规则，适合当作高难度弹幕品类的低成本入口；发行方 Pixeljam 擅长此类复古动作小品。\n\n【风险】弹幕 roguelike 的供给极度过剩，缺乏长线运营与社区机制的独立小作，通常在两周内就失去曝光窗口。\n\n【综合评价】设计上没有硬伤也没有惊喜，属于「买来玩十小时」的扎实小品；观察重点是它能否靠口碑爬出长尾，而不是首周销量。",
+      "why_notable": "深海弹幕 roguelike，用气泡与垃圾对抗深渊，$5.99 已发售",
+      "pcu": "未进 2026-11-13 PCU Top 500（小体量新作）",
+      "current_players": null,
+      "estimated_sales": "暂无（上线两日）",
+      "gi_summary": "「弹幕地狱」套「深海打捞」新瓶，Jacob V 开发、Pixeljam 发行，Steam $5.99"
+     }
+    },
+    {
+     "idx": "新游推文 04",
+     "source": "Niche Gamer · 独立游戏",
+     "tags": [
+      "RPG",
+      "像素",
+      "回合制"
+     ],
+     "title": "Elements Destiny：Deck13 发行的德国像素回合制幻想 RPG，12 月 8 日发售",
+     "en_title": "German 2D fantasy RPG Elements Destiny launches next month",
+     "full_text": "German 2D fantasy RPG Elements Destiny launches next month: https://t.co/HrzYkuaII9 https://t.co/cEF3zKIz0o",
+     "author": "Niche Gamer",
+     "date": "2026-11-13",
+     "likes": 2,
+     "views": 788,
+     "link": "https://x.com/nichegamer/status/2121268481161080858",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2121268455835848704/pu/img/KC-CeEaysYO3eSwX.jpg",
+      "video_url": "https://x.com/nichegamer/status/2121268481161080858/video/1"
+     },
+     "summary": "德国团队 ShrooMoon UG 开发、Deck13 发行的 2D 幻想 RPG《Elements Destiny》将于 12 月 8 日发售：像素复古画面，元素力量系统配回合制战斗，主打情感向长线与手绘美术，官方把「庞大配乐」列为卖点之一，支持 Windows/macOS/Linux。",
+     "analysis": "",
+     "recommendation": "Elements Destiny：Deck13 发行的德国像素回合制幻想 RPG，12 月 8 日发售",
+     "game_ref": "Elements Destiny",
+     "enrichment": {
+      "game_name": "Elements Destiny",
+      "genre": "2D 幻想 RPG / 回合制 / 元素系统",
+      "developer": "ShrooMoon UG（Deck13 发行）",
+      "platforms": [
+       "Steam (Windows / macOS / Linux)"
+      ],
+      "price": "未公布",
+      "release_date": "2026年12月8日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/1635500/Elements_Destiny/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1635500/bd1b5b72b15d39fa4c5c9b6b2eab1276a1b6f47e/header.jpg?t=1794491387",
+      "youtube_video": null,
+      "description": "【核心玩法】2D 像素幻想 RPG，战斗为回合制，核心是元素力量系统：不同元素之间存在相克与联动，队伍配置与出手顺序决定战斗解法，而不是单纯堆数值。\n\n【内容与叙事】主打情感向长线剧情与手绘美术，官方把「庞大的配乐」直接列为卖点之一，说明它希望用氛围和叙事而不是难度曲线留住玩家。\n\n【发行背景】德国团队 ShrooMoon UG 开发，由 Deck13（《堕落之王》《迸发》系列发行方）负责发行，12 月 8 日同步登陆 Windows / macOS / Linux。\n\n【优势】有成熟发行方背书，跨三平台首发，叙事 + 回合制的组合在德语区独立圈有稳定受众；手绘资产与配乐是它的差异化筹码。\n\n【风险】像素回合制 RPG 是 2026 年最拥挤的赛道之一，缺乏玩法级差异时很难从《八方旅人》类产品的阴影里走出来；12 月 8 日又紧贴年末大作潮，曝光窗口极窄。\n\n【综合评价】稳健但保守的项目。对从业者，它的价值在于观察 Deck13 如何用发行能力托举中型独立 RPG，而不是玩法创新本身。",
+      "why_notable": "德国团队开发、Deck13 发行的像素回合制幻想 RPG，12 月 8 日发售",
+      "pcu": "未进 2026-11-13 PCU Top 500（未发售）",
+      "current_players": null,
+      "estimated_sales": "暂无（未发售）",
+      "gi_summary": "「回合制 RPG」套「元素相克 + 手绘叙事」新瓶，ShrooMoon UG 开发、Deck13 发行"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Niche Gamer · 独立游戏",
+     "tags": [
+      "模拟",
+      "增量",
+      "环保"
+     ],
+     "title": "SCRAPSCRAP：WALL-E 式的机器人环保增量游戏，12 月 1 日上线",
+     "en_title": "SCRAPSCRAP is like WALL-E but you're a robot punching and automating the cleaning!",
+     "full_text": "SCRAPSCRAP is like WALL-E but you're a robot punching and automating the cleaning!\n\nhttps://t.co/r1WFul70DN \n\nPunch your way through the filth of mankind and slowly automate the process with more robot helpers. Unlock upgrades and blast away the waste~ https://t.co/lvo6uqXZfQ",
+     "author": "Niche Gamer",
+     "date": "2026-11-13",
+     "likes": 8,
+     "views": 1237,
+     "link": "https://x.com/nichegamer/status/2121248599975604658",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2121248548851175424/pu/img/6v0zbHuRkbRLcpc3.jpg",
+      "video_url": "https://x.com/nichegamer/status/2121248599975604658/video/1"
+     },
+     "summary": "人类早已离开，只留一个机器人清理满星球垃圾：所有废弃物都跑真实物理、都能被拆解，压成垃圾块后堆在发电压机上不断加高，换取升级材料并解锁更多帮手机器人，逐步把清理自动化。12 月 1 日上线，开发者 Maison Bap。",
+     "analysis": "",
+     "recommendation": "SCRAPSCRAP：把垃圾压成方块堆塔的机器人增量游戏，12 月 1 日上线",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Niche Gamer · 独立游戏",
+     "tags": [
+      "叙事",
+      "手绘",
+      "美食"
+     ],
+     "title": "The Snackbar at the End of the World：手绘意大利美食叙事 RPG",
+     "en_title": "The Snackbar at the End of the World is an extremely Italian culinary adventure!",
+     "full_text": "The Snackbar at the End of the World is an extremely Italian culinary adventure!\n\nhttps://t.co/ovzqKnjLf7 \n\nFollow a hand-drawn story of love, defiance, and pasta. Return to nostalgic Italy as you take over a struggling restaurant and save your family~ https://t.co/y3hRD8H4Tj",
+     "author": "Niche Gamer",
+     "date": "2026-11-13",
+     "likes": 3,
+     "views": 415,
+     "link": "https://x.com/nichegamer/status/2121289494909350271",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2121289453566115840/pu/img/w4dmINSava1PI1dG.jpg",
+      "video_url": "https://x.com/nichegamer/status/2121289494909350271/video/1"
+     },
+     "summary": "设定在魔幻 1960 年代意大利：玩家作为厨师接手一家濒临倒闭的小餐馆，为救家人而战。手绘叙事 RPG，敌人是会爆炸的番茄、失控的西葫芦和带复仇动机的家禽，打完再用它们做菜。开发者 Snackbar Studio，发售时间待定。",
+     "analysis": "",
+     "recommendation": "魔幻 1960 年代意大利开餐馆：手绘美食叙事 RPG",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X · 独立开发者 Dream Mix",
+     "tags": [
+      "恐怖",
+      "PSX",
+      "独立开发"
+     ],
+     "title": "Dream Mix：2 美元的 PSX 风格恐怖游戏，作者吐槽「无营销首发十万」是最大谎言",
+     "en_title": "\"how I released my game with no marketing & got 100,000 sales on day one\" is the biggest lie ever told.",
+     "full_text": "\"how I released my game with no marketing &amp; got 100,000 sales on day one\"\n\nis the biggest lie ever told.\n\nWish me luck. My $2 PSX horror game comes out tomorrow.😬 https://t.co/Jons71Jwhi",
+     "author": "Dream Mix",
+     "date": "2026-11-12",
+     "likes": 119,
+     "views": 4076,
+     "link": "https://x.com/DreamMixGames/status/2120967747601338484",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HW8tiBTXgAApUpq.jpg"
+     },
+     "summary": "开发者 Dream Mix 用一句自嘲开场：「零营销首日卖十万」是史上最大的谎言，祝我好运——我的 2 美元 PSX 风格恐怖游戏明天发售。定价 2 美元的复古恐怖小品，走的是低价 + 猎奇美术的独立路线。",
+     "analysis": "",
+     "recommendation": "2 美元的 PSX 恐怖小品，作者自嘲「零营销首日十万」是最大谎言",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Rock Paper Shotgun · 独立游戏",
+     "tags": [
+      "4X",
+      "RTS",
+      "科幻"
+     ],
+     "title": "Horu：战舰是会施法的「法师」，能召唤黑洞的科幻 4X RTS",
+     "en_title": "Horu is a sci-fi 4X RTS inspired by Star Wars: Empire at War in which spaceships are spellcasters who can summon black holes",
+     "full_text": "Horu is a sci-fi 4X RTS inspired by Star Wars: Empire at War in which spaceships are spellcasters who can summon black holes https://t.co/M2CHMiFGu9",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-11-13",
+     "likes": 2,
+     "views": 2086,
+     "link": "https://x.com/rockpapershot/status/2121196798505005444",
+     "media": null,
+     "summary": "受《星球大战：帝国战争》启发的科幻 4X 与 RTS 混合体：陆战可投送数十万单位，太空战以庞大舰队对决；世界观把战舰设定成能施法的「法师」，可以召唤黑洞。开发者 GlassBeaver，Steam 页面标注 2027 年 Q4。",
+     "analysis": "",
+     "recommendation": "Horu：战舰是会施法、能召唤黑洞的科幻 4X RTS，2027 年见",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 独立开发者",
+     "tags": [
+      "Agent Skill",
+      "游戏设计",
+      "开源"
+     ],
+     "title": "把樱井政博 257 集《游戏制作的思考》字幕做成 Agent Skill，3,043 赞",
+     "en_title": "桜井政博さんのskillを作りました。全本編257本の字幕から作った、ゲーム制作の原則をまとめた Agent Skillです",
+     "full_text": "これ何度も宣伝しますが、桜井政博さんのskillを作りました。\n\nYouTube「桜井政博のゲーム作るには」の全本編257本の字幕から作った、ゲーム制作の原則をまとめた Agent Skillです。\n\nGithubリンクはリプライに貼っておきます。\n#ゲーム制作 #ゲーム開発者と繋がりたい #個人開発者と繋がりたい https://t.co/uIHeUHGGYz",
+     "author": "淫マン/麻雀美少女ゲーム制作",
+     "date": "2026-11-12",
+     "likes": 3043,
+     "views": 573588,
+     "link": "https://x.com/MvKWt5XpPV36233/status/2120977715864252887",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2120977431846928384/img/S8BQKwQ6yl5mKOa5.jpg",
+      "video_url": "https://x.com/MvKWt5XpPV36233/status/2120977715864252887/video/1"
+     },
+     "summary": "日本开发者把 YouTube 节目「樱井政博的游戏制作」全部 257 集正片字幕抽取出来，整理成一份「游戏制作原则」的 Agent Skill，GitHub 链接放在回复里。推文 3,043 赞、231 次转发、57 万浏览。",
+     "analysis": "这是「把专家方法论编译成可执行上下文」的具体样本：不训练模型，而是把公开知识结构化后喂给 agent。对策划团队，把内部设计规范沉淀成同类 skill / 提示库，是低成本可复制的资产化路径。",
+     "recommendation": "把樱井政博 257 集《游戏制作》字幕做成 Agent Skill，3,043 赞",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "Unity for Games · 官方账号",
+     "tags": [
+      "Unity",
+      "CLI",
+      "工作流"
+     ],
+     "title": "Unity 官方推 CLI：首个可玩原型从「跨团队数周」压到分钟级",
+     "en_title": "Prototypes like this used to take weeks of back-and-forth across teams. Now you can get a first playable in minutes",
+     "full_text": "Prototypes like this used to take weeks of back-and-forth across teams. Now you can get a first playable in minutes and spend your time refining the idea to fit your vision. \n\n🔗 Get started with the Unity CLI: https://t.co/h9jxiX52Hj",
+     "author": "Unity for Games",
+     "date": "2026-11-13",
+     "likes": 3,
+     "views": 1400,
+     "link": "https://x.com/unitygames/status/2121235428703392169",
+     "media": null,
+     "summary": "Unity 官方账号推广 Unity CLI：以往需要跨团队反复沟通数周才能拿出的原型，现在「几分钟就能得到第一个可玩版本」，把时间留给打磨创意本身；同账号另发一条对比图——「IRL 制作周期：年 / Unity CLI：分钟」，链接指向 CLI 入门文档。",
+     "analysis": "引擎厂商正在把「可被 agent 调用」当作卖点：CLI 化的意义不在省几次点击，而在让 AI 编程代理能直接驱动场景创建、构建与打包。这决定了「AI 写游戏」能不能真正落到自有工程里，而不只是停在网页 demo。",
+     "recommendation": "Unity 官方推 CLI：首个可玩版本从数周压缩到分钟，为 AI 代理开工程入口"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI 从「能不能用」进入「用了怎么算」**\nGDC 年度调研给出第一组硬数据：40% 的开发者已经在工作里使用生成式 AI，同比涨 4 个百分点；但认为 AI 对行业有负面影响的比例更高，达到 55%。同一天，傅盛用一句提示词加 20 小时算力做出网页版类王者荣耀，把「原型成本」重新标了个价。\n\n**上游震荡：英伟达换帅余波与 Xbox 的 IP 续命**\n黄仁勋辞职后 24 小时，员工请愿、第二段办公室关系、国会传票接连出现，英伟达一个月市值蒸发约 1.8 万亿美元。下游的 Xbox 则在裁员 3,200 人的背景下，用《德军总部 3》和 id Software 新作稳住 IP 叙事。\n\n**GTA 6 进入发售周，独游用小体量找位置**\nGTA 6 拿下 PS 与 Xbox 商店史上最高预购量，11 月 19 日发售，英国宽带运营商提前备战下载纪录。独游侧则是 ShatterRush 这类「破坏 + 跑酷」的小团队项目在 Pre-Alpha 阶段试水。\n\n**引擎厂商开始为 AI 代理铺路**\nUnity 官方把「分钟级出可玩原型」当作 CLI 的卖点；社区侧则把樱井政博 257 集游戏制作课编译成 Agent Skill——一边是工具链，一边是方法论，方向是一致的。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
