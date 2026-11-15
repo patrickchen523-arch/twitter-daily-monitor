@@ -1,0 +1,532 @@
+{
+ "date": "2026-11-15",
+ "meta": {
+  "raw_count": 226,
+  "filtered_count": 155,
+  "selected_count": 12,
+  "crawl_time": "2026-11-15 09:30"
+ },
+ "lede": "xAI 的 Grok Imagine 团队被曝裁员约 60 人；GTA 6 发售前一周确认全主机 30fps 目标；《Super Meat Boy Again+》与《Trouble Tennis》两则老 IP 与街机网球的新动静；OpenDCAI 用 Agent Skill 把资产生成接到 UE5 与 Godot。",
+ "editors_pick": [
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "3 分钟临摹名画、没有橡皮只能鼠标硬画——《Sloppy Forgeries》已上线 Steam"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "BioWare 联合创始人：救活《质量效应》要 2 亿美元以上，请愿已破 31.7 万"
+  },
+  {
+   "section_id": "tools",
+   "item_index": 0,
+   "hook": "OpenDCAI 开源 3A 游戏生成框架：Agent Skill 串起图片/3D/动作/音频到 UE5 与 Godot"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "xAI 的 Grok Imagine 团队被曝裁员约 60 人，多语种账号同步 @grok 求核实，官方未回应\n月烧 2000 美元的 AI 宝可梦同人游戏被 Claude 版权护栏卡住，作者仍要 12 月上线\n52 项编码任务：Opus 5.5 与 Fable 5.2 几乎打平，后者每个成功任务成本高 2.8 倍"
+  },
+  {
+   "id": "industry",
+   "text": "BioWare 联合创始人：救活《质量效应》要 2 亿美元以上，#SaveMassEffect 请愿破 31.7 万\n发售前一周：GTA 6 全主机目标 30fps，55 个成就，部分实体版预购码出问题\n《魔兽世界：Forever》成系列史上最大首发，15 年来最多新玩家\nPearl Abyss 把 AI 推进整个开发管线，同时确认《DokeV》目标 2028 下半年"
+  },
+  {
+   "id": "indie",
+   "text": "《Sloppy Forgeries》：3 分钟临摹名画、没有橡皮只能鼠标硬画的多人竞技，已上线 Steam\nTeam Meat 公布《Super Meat Boy Again+》：新美术+新音乐+新关卡的原版重做\n《Trouble Tennis》：每一拍像出拳、球会着火的街机网球，15 个角色各有大招"
+  },
+  {
+   "id": "tools",
+   "text": "OpenDCAI 开源 GameFactory-3A：Agent Skill 串起图/3D/动作/音频，直通 UE5、Blender、Unity、Godot 4\n像素树不加动画帧也能在风里摆动：树冠切块按整像素位移的程序化做法"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 多账号报道（@aiZttt__ / @O_PontoX / @Wbalcerzak87）",
+     "tags": [
+      "AI视频",
+      "xAI",
+      "人事变动"
+     ],
+     "title": "xAI 的 Grok Imagine 团队被曝几乎全员裁撤，多语种账号同步求 @grok 核实",
+     "en_title": "🚨 突发 几乎整个Grok Imagine团队都被裁员了 @grok 核实一下",
+     "full_text": "🚨 突发\n\n几乎整个Grok Imagine团队都被裁员了\n\n@grok 核实一下",
+     "author": "aiZttt__",
+     "date": "2026-11-14",
+     "likes": 2392,
+     "views": 1131843,
+     "link": "https://x.com/aiZttt__/status/2121477425762836915",
+     "media": null,
+     "summary": "中文、葡萄牙语、波兰语三个账号在 11 月 14 日的数小时内先后称 Grok Imagine 团队被裁，其中葡萄牙语账号给出「约 60 人」的数字，三条推文都直接 @grok 要求核实。截至抓取时，xAI 官方与 Grok 账号均未公开回应。",
+     "analysis": "Grok Imagine 是 xAI 的图像/视频生成产品线，也是外部团队最常用的「快速出概念图和动态分镜」工具之一。如果裁员规模确如爆料，短期影响不是模型下线，而是产品迭代速度与素材风格稳定性的下降——依赖它做预研的团队要准备第二方案。",
+     "recommendation": "xAI 的 Grok Imagine 团队被曝裁掉约 60 人，多语种账号同步求 @grok 核实",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 游戏资讯账号",
+     "tags": [
+      "AI版权",
+      "同人游戏",
+      "Anthropic"
+     ],
+     "title": "月烧 2000 美元的 AI 宝可梦同人游戏，被 Claude 的版权护栏卡住了",
+     "en_title": "A Pokémon fan has spent up to $2,000 a month building an AI-powered fan game, and now Claude is refusing to help him continue.",
+     "full_text": "A Pokémon fan has spent up to $2,000 a month building an AI-powered fan game, and now Claude is refusing to help him continue.\n\nThe developer behind Pokémon Arena 2D says Anthropic has tightened its copyright restrictions, preventing Claude from working with official Pokémon characters and sprites.\n\nHe claims to have invested thousands of dollars and spent 10–14 hours a day working on the project, which has been heavily developed using AI tools.\n\nDespite the restrictions, the dev says he plans to continue working on the game, which is still targeting a December release.",
+     "author": "Pirat_Nation",
+     "date": "2026-11-14",
+     "likes": 6558,
+     "views": 782883,
+     "link": "https://x.com/Pirat_Nation/status/2121454324651888668",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXAQjkoWsAAxbQI.jpg"
+     },
+     "summary": "《Pokémon Arena 2D》的开发者称项目主要靠 AI 工具完成，每月投入最高 2000 美元、每天工作 10–14 小时；Anthropic 收紧版权策略后，Claude 拒绝继续处理官方宝可梦角色与精灵图。作者表示仍会继续开发，目标 12 月上线。",
+     "analysis": "模型厂商的版权策略正在变成事实上的「发行审核」：它不问你有没有授权，只按训练与生成政策直接拒答。对做 IP 同人的小团队，这意味着技术选型要提前把「哪家模型敢碰官方素材」算进风险表，而不是等美术资产做完才发现生成链断了。",
+     "recommendation": "月烧 2000 美元的 AI 宝可梦同人游戏，被 Claude 的版权护栏卡住"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · YC 总裁 Garry Tan（中文圈同日讨论：@Dav338876）",
+     "tags": [
+      "模型选型",
+      "Claude Code",
+      "成本"
+     ],
+     "title": "Opus 5.5 vs Fable 5.2：52 项编码任务几乎打平，后者每个成功任务贵 2.8 倍",
+     "en_title": "Keep Opus 5.5 as your coding default in Claude Code. On 52 coding tasks in Claude Code 2.1.322, Fable 5.2 solved about as many (82.7% vs 84.6%) but cost 2.80x as much per solved task.",
+     "full_text": "Keep Opus 5.5 as your coding default in Claude Code. On 52 coding tasks in Claude Code 2.1.322, Fable 5.2 solved about as many (82.7% vs 84.6%) but cost 2.80x as much per solved task.\n\nOpus already solves most of these tasks, though, so telling the two apart will take harder ones.\n\nhttps://t.co/SfIvr9pHNg",
+     "author": "garrytan",
+     "date": "2026-11-14",
+     "likes": 407,
+     "views": 35174,
+     "link": "https://x.com/garrytan/status/2121464508225053153",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXD0p2EbwAAZ5iA.jpg"
+     },
+     "summary": "Garry Tan 在 Claude Code 2.1.322 上跑 52 个编码任务：Opus 5.5 解决率 84.6%，Fable 5.2 为 82.7%，差距不到 2 个百分点；但按「每个成功任务的成本」算，Fable 5.2 是 Opus 5.5 的 2.80 倍。他的结论是继续把 Opus 5.5 当作默认，除非任务足够难到能拉开差距。",
+     "analysis": "当头部模型的解题率差距缩到个位数百分点，选型指标就从「谁更强」变成「每个完成任务多少钱」。对项目组更实际的做法是按任务分布分层：常规功能开发用便宜模型，只有疑难重构才切到高价模型——这也意味着团队需要自己的评测集，而不是看榜单。",
+     "recommendation": "52 项编码任务几乎打平，但 Fable 5.2 每个成功任务贵 2.8 倍"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Eurogamer · 行业媒体",
+     "tags": [
+      "质量效应",
+      "EA",
+      "IP 交易"
+     ],
+     "title": "BioWare 联合创始人：救活《质量效应》要 2 亿美元以上，请愿已破 31.7 万",
+     "en_title": "Saving Mass Effect would take $200m+, says BioWare co-founder.",
+     "full_text": "Saving Mass Effect would take $200m+, says BioWare co-founder. https://t.co/No7O0PUAxS https://t.co/f7VZlFunax",
+     "author": "eurogamer",
+     "date": "2026-11-14",
+     "likes": 41,
+     "views": 5806,
+     "link": "https://x.com/eurogamer/status/2121506170959540375",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXEanrIXYAA8euV.jpg"
+     },
+     "summary": "BioWare 联合创始人 Trent Oster 估算，按同代 AAA 水准重启《质量效应》需要 2 亿美元以上，且必须先解决 IP 归属，「否则账算不过来」；他也认为有经验的团队用更精简的做法可以低于这个数。背景是 EA 已关闭 BioWare 并取消《质量效应 5》，#SaveMassEffect 请愿从 18.5 万涨到 31.7 万签名，有报道称 EA 是在《质量效应》与《星球大战：前线 3》之间二选一。",
+     "analysis": "这条把「情怀能不能救 IP」翻译成了具体的账：2 亿美元是一次性买断风险，而 IP 不在自己手里时没人愿意出这笔钱。对从业者的启示是，IP 交易的定价权正从开发能力转回所有权，独立团队尤其要早做商标与 IP 归属安排。",
+     "recommendation": "BioWare 联合创始人：救活《质量效应》要 2 亿美元以上，请愿已破 31.7 万",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Rock Paper Shotgun · 行业媒体（多家报道：Eurogamer / Polygon）",
+     "tags": [
+      "GTA6",
+      "发售周",
+      "性能目标"
+     ],
+     "title": "发售前一周：GTA 6 全主机目标 30fps，55 个成就，实体版预购码出问题",
+     "en_title": "In a reveal that might worry eventual PC players glancing at their GPUs, GTA 6 will target 30fps on all consoles.",
+     "full_text": "In a reveal that might worry eventual PC players glancing at their GPUs, GTA 6 will target 30fps on all consoles. https://t.co/JQFmCYJnhK https://t.co/5sofchTBrG",
+     "author": "rockpapershot",
+     "date": "2026-11-14",
+     "likes": 0,
+     "views": 474,
+     "link": "https://x.com/rockpapershot/status/2121646093230321858",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXGZ4NdWcAAaHlp.jpg"
+     },
+     "summary": "距 11 月 19 日发售一周，Rock Paper Shotgun 报道 GTA 6 将在所有主机上以 30fps 为目标；Eurogamer 称本作成就/奖杯共 55 个，数量超过 GTA 5 与《荒野大镖客 2》首发；Polygon 报道部分玩家反馈实体版预购码存在问题。",
+     "analysis": "30fps 目标首先是主机侧的性能取舍，但它同时给 PC 版定了预期锚点：如果主机只能 30fps，PC 移植的硬件门槛会被显著抬高。发售周的三条信息（帧率、成就量、渠道故障）拼在一起，是一张典型的超大作发布风险清单。",
+     "recommendation": "发售前一周：GTA 6 全主机目标 30fps，本作共 55 个成就",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 行业媒体",
+     "tags": [
+      "魔兽世界",
+      "MMO",
+      "首发纪录"
+     ],
+     "title": "《魔兽世界：Forever》成系列史上最大首发，新玩家数为 15 年来最高",
+     "en_title": "WoW: Forever is the biggest launch in World of Warcraft history, says Blizzard.",
+     "full_text": "WoW: Forever is the biggest launch in World of Warcraft history, says Blizzard. https://t.co/TNhqIydF1N https://t.co/oDrBqnVGrE",
+     "author": "eurogamer",
+     "date": "2026-11-14",
+     "likes": 39,
+     "views": 6488,
+     "link": "https://x.com/eurogamer/status/2121475971639284092",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXD_J4AXkAAus92.jpg"
+     },
+     "summary": "《魔兽世界：Forever》11 月 4 日上线，暴雪称其峰值同时在线人数与回归玩家数均创系列历史新高；执行制作人 Holly Longdale 补充，本次是 15 年来新玩家最多的一次 WoW 首发，官方暂未公布具体数字。首周已推送修复 PvP 战场移速 bug 的热修补丁。",
+     "analysis": "这是「经典+」路线最强的一次商业验证：不用做全新 IP，只要把老地图、老职业重新包装成一次「可被当成新游戏」的首发，就能同时拉回老玩家和 15 年没玩过的新人。对国内长线 MMO 的启示是，怀旧服不是过渡产品，可以是一条独立的产品线。",
+     "recommendation": "《魔兽世界：Forever》成系列史上最大首发，新玩家数为 15 年来最高",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "PC Gamer · 行业媒体（Eurogamer 同步）",
+     "tags": [
+      "生成式AI",
+      "Pearl Abyss",
+      "研发管线"
+     ],
+     "title": "Pearl Abyss 把 AI 推进「整个开发管线」，《DokeV》目标 2028 下半年",
+     "en_title": "Crimson Desert studio Pearl Abyss is expanding AI usage 'throughout our entire development pipeline'",
+     "full_text": "Crimson Desert studio Pearl Abyss is expanding AI usage 'throughout our entire development pipeline' https://t.co/RZNJ7kfjw8",
+     "author": "pcgamer",
+     "date": "2026-11-13",
+     "likes": 92,
+     "views": 31561,
+     "link": "https://x.com/pcgamer/status/2121367992458219870",
+     "media": null,
+     "summary": "Pearl Abyss 在 Q3 2026 财报说明信中写明，AI 已用于重复任务自动化、内容创作支持与测试优化，并将「扩展到整个开发管线」；同时强调 AI 是工具而非人力的替代品。今年早些时候该公司曾为《红色沙漠》中出现 AI 生成 2D 素材道歉，称将提高透明度。信中另确认《DokeV》目标 2028 年下半年推出。",
+     "analysis": "从「被发现后道歉」到「在财报里主动写成策略」，Pearl Abyss 一年内把 AI 使用的叙事从公关危机换成了效率叙事。值得注意的不是他们用了多少 AI，而是把 AI 写进了给投资人的正式披露——这可能成为上市公司的默认动作。",
+     "recommendation": "Pearl Abyss 把 AI 推进整个开发管线，《DokeV》定档 2028 下半年"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 韩国 KOL 推荐（@matchoking1）",
+     "tags": [
+      "多人竞技",
+      "绘画",
+      "派对游戏"
+     ],
+     "title": "《Sloppy Forgeries》：3 分钟临摹名画，没有橡皮、只能用鼠标的多人竞技",
+     "en_title": "친구들이랑 같이 3분 안에 명화 따라그려야 하는 멀티게임 Sloppy Forgeries 가 드디어 오늘 출시",
+     "full_text": "친구들이랑 같이 3분 안에 명화 따라그려야 하는 멀티게임 Sloppy Forgeries 가 드디어 오늘 출시\n이거 지우개도 없고 그냥 오로지 마우스로만 그려야되고 경쟁으로 그려서 더 높은 점수 받는 사람이 이긴다고하는 게 개웃겨보여 https://t.co/oCfpW7I8UM",
+     "author": "matchoking1",
+     "date": "2026-11-14",
+     "likes": 4429,
+     "views": 244128,
+     "link": "https://x.com/matchoking1/status/2121516373981495589",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121516340062326785/img/9AktLriBzVfii9sI.jpg",
+      "video_url": "https://x.com/matchoking1/status/2121516373981495589/video/1"
+     },
+     "summary": "11 月 13 日登陆 Steam（AppID 3030560）。玩法是同场多名玩家在 3 分钟内临摹同一幅经典名画，只能用鼠标、没有橡皮，画错只能将错就错；系统逐像素比对你的画与原作的接近程度并实时算分，回合结束按准确度决胜。国区折后 45.90 元。",
+     "analysis": "",
+     "recommendation": "3 分钟临摹名画、没有橡皮只能鼠标硬画——《Sloppy Forgeries》已上线 Steam",
+     "featured": true,
+     "game_ref": "Sloppy Forgeries",
+     "enrichment": {
+      "game_name": "Sloppy Forgeries",
+      "genre": "派对竞技 / 绘画 / 休闲",
+      "developer": "Playful Systems LLC（发行：Playful Systems / ENJOYN GAMES）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "¥45.90（-15%，原价 ¥54.00）",
+      "release_date": "已发售 · 2026年11月13日",
+      "steam_rating": "刚发售，暂无评价数据",
+      "steam_url": "https://store.steampowered.com/app/3030560/Sloppy_Forgeries/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3030560/3eec630946545b5a7df00896cd735c3c110f7c0a/header.jpg?t=1794679334",
+      "youtube_video": null,
+      "description": "【核心玩法】多名玩家同场临摹同一幅经典名画，限时 3 分钟，全程只能用鼠标，没有橡皮，画错只能将错就错。系统逐像素比对你的画与原作的接近程度并实时给出分数，回合结束按准确度排名决胜。\n\n【设计取舍】把「画不好」直接变成笑点：名画的脸被画歪、比例被拉长，判分却依然客观严格，形成强烈的喜剧张力。\n\n【对标定位】介于 Jackbox 系派对游戏与《Pictionary》之间，但用逐像素比对替代了「猜词」环节，一局 3 分钟、节奏极快。\n\n【优势】门槛近乎为零，开麦即笑；逐像素判分让「画得丑且不像」很难混过去；天然适合直播与短视频传播。\n\n【不足】内容量取决于内置名画库，长时间游玩容易疲劳；单人价值有限，依赖凑人。\n\n【综合评价】把最枯燥的美术临摹练习改造成最适合开麦的派对竞技——短局、低门槛、强喜剧感，是典型的小体量高传播产品。",
+      "why_notable": "把「逐像素判分」这种硬核比对做成了派对玩法，上线首日就被韩国 KOL 推到 24 万浏览",
+      "pcu": "刚发售，暂无公开数据",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "暂无公开数据",
+      "gi_summary": "「限时临摹名画 + 逐像素判分」套「多人派对竞技」外壳，美国 Playful Systems 开发，Steam 国区折后 ¥45.90"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Niche Gamer · 独立游戏",
+     "tags": [
+      "平台动作",
+      "重制",
+      "Team Meat"
+     ],
+     "title": "Team Meat 公布《Super Meat Boy Again+》：新美术、新音乐、新关卡的原版完全重做",
+     "en_title": "Super Meat Boy Again+ was announced!",
+     "full_text": "Super Meat Boy Again+ was announced! https://t.co/bDdPYNgcYA https://t.co/hgecL3qPEF",
+     "author": "nichegamer",
+     "date": "2026-11-14",
+     "likes": 6,
+     "views": 1262,
+     "link": "https://x.com/nichegamer/status/2121603686396743985",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2121603661906206720/pu/img/YpE27xQ6NxYAFTFU.jpg",
+      "video_url": "https://x.com/nichegamer/status/2121603686396743985/video/1"
+     },
+     "summary": "Team Meat 公布《Super Meat Boy Again+》，Steam 页面（AppID 4269060）已上线、发售日写「即将宣布」。官方定位是对 2010 年原版的完全重做：新美术、新音乐、新过场动画、新关卡、新秘密与解锁内容——「一切都是新的」。",
+     "analysis": "",
+     "recommendation": "《Super Meat Boy Again+》公布：新美术+新音乐+新关卡，原版完全重做",
+     "game_ref": "Super Meat Boy Again+",
+     "enrichment": {
+      "game_name": "Super Meat Boy Again+",
+      "genre": "平台动作 / 高难度 / 独立",
+      "developer": "Team Meat",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4269060/Super_Meat_Boy_Again/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4269060/a473773b47c75db9c86509268bee908223ac565c/header.jpg?t=1794632244",
+      "youtube_video": null,
+      "description": "【核心玩法】2010 年《Super Meat Boy》的完全重制，仍以极高难度与秒级重试为核心：玩家在布满电锯、盐池与激光的关卡里，靠冲刺、蹬墙与滞空拼出最短通关路线，死亡即刻重开。\n\n【重制内容】Steam 页面写明「新美术、新音乐、新过场动画、新关卡、新秘密与解锁内容，新的一切」，宣传语是「第一次玩，或者当作第一次再玩一次」。\n\n【对标定位】属于近年「重制即重做」路线里最激进的一档——不是高清化贴图，而是把美术与音轨整条替换。\n\n【优势】原作的关卡设计与操作手感是独立平台动作的教科书，重制能降低新玩家的视觉门槛；对老玩家则是完整的情怀重录。\n\n【风险】原版的速度感与像素观感高度绑定，换美术有可能伤到老玩家的肌肉记忆与审美认同；发售日与定价均未公布。\n\n【综合评价】Team Meat 给 16 年前的作品第二次首发机会，成败取决于新美术能否守住原作那条极细的手感线。",
+      "why_notable": "2010 年独立平台动作标杆的完全重做版，且是在「重制潮」里少见的换掉全部美术与音乐的做法",
+      "pcu": "暂未发售",
+      "current_players": "暂未发售",
+      "estimated_sales": "暂无数据",
+      "gi_summary": "原版《Super Meat Boy》的完全重制版，Team Meat 自研自发，Steam 页面已上线、发售日待定"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Next Indie · 独立游戏",
+     "tags": [
+      "街机网球",
+      "多人对战",
+      "新游公布"
+     ],
+     "title": "《Trouble Tennis》：每一拍都像出拳的街机网球，15 个俱乐部常客各有离谱大招",
+     "en_title": "Arcade tennis game 'Trouble Tennis' announced.",
+     "full_text": "Arcade tennis game 'Trouble Tennis' announced. https://t.co/kyn3jKR7xR",
+     "author": "nexindie",
+     "date": "2026-11-13",
+     "likes": 124,
+     "views": 6877,
+     "link": "https://x.com/nexindie/status/2121373279936184702",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121371434551259136/img/0bHpU1vEIn_wu-Dz.jpg",
+      "video_url": "https://x.com/nexindie/status/2121373279936184702/video/1"
+     },
+     "summary": "开发商 Gamassis 公布街机网球新作《Trouble Tennis》（Steam AppID 5571090）。设定是「每一拍都像一记重拳」，回合越长球速越快，最后整颗球会着火；15 名俱乐部常客各有招牌技能与终极技，含「球场之王」、线上锦标赛与快速对战，支持单人或双人。发售日待定。",
+     "analysis": "",
+     "recommendation": "《Trouble Tennis》：球打到着火、15 个角色各有离谱大招的街机网球",
+     "game_ref": "Trouble Tennis",
+     "enrichment": {
+      "game_name": "Trouble Tennis",
+      "genre": "街机体育 / 网球 / 派对对战",
+      "developer": "Gamassis",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5571090/Trouble_Tennis/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5571090/e68e2a0cb9598a60a135dbdfae5c2c505ce686fd/header.jpg?t=1794424444",
+      "youtube_video": null,
+      "description": "【核心玩法】街机化网球：每一次击球都带拳击般的重量感，回合拖得越久球速越快，最终整颗球着火，逼出对攻与反超。玩家从 15 名「俱乐部常客」中选角，每人配有荒诞的招牌技能与终极技。\n\n【模式】包含「球场之王」、线上锦标赛与快速对战，支持单人游玩或与朋友本地双人。\n\n【对标定位】介于《Windjammers》与《马里奥网球》之间：不追求拟真，追求对攻节奏与角色差异带来的博弈。\n\n【优势】「越打越热」的升温曲线天然制造高潮与逆转；15 个角色提供足够的打法分化与重复可玩性；视觉辨识度高，适合展会与短视频切条。\n\n【风险】街机网球高度依赖联机人口与手感打磨，目前只有一支宣传片，实际击球反馈、判定宽容度均未验证。\n\n【综合评价】用「击打感 + 升温机制」把网球改造成格斗节奏的快攻游戏，题材轻、辨识度高，是典型适合首发入订阅库或独立展会的类型。",
+      "why_notable": "把网球做成「打到着火」的对攻节奏，并用 15 个角色的技能/大招做差异化",
+      "pcu": "暂未发售",
+      "current_players": "暂未发售",
+      "estimated_sales": "暂无数据",
+      "gi_summary": "「街机网球 + 角色技能」组合，Gamassis 开发，Steam 页面已上线、发售日待定"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Niche Gamer · 独立游戏",
+     "tags": [
+      "冒险",
+      "Switch 2",
+      "移植"
+     ],
+     "title": "风格化冒险《Herdling》突然登陆 Switch 2",
+     "en_title": "Stylish adventure game Herdling gets a surprise Switch 2 port",
+     "full_text": "Stylish adventure game Herdling gets a surprise Switch 2 port: https://t.co/MSsW2Wrpjf https://t.co/NdsPH0lYfR",
+     "author": "nichegamer",
+     "date": "2026-11-14",
+     "likes": 3,
+     "views": 1859,
+     "link": "https://x.com/nichegamer/status/2121397449008861650",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXC3vQBXAAERRd9.jpg"
+     },
+     "summary": "风格化冒险游戏《Herdling》在没有预告的情况下上线 Switch 2 版本，属于「突然移植」型的平台扩展。",
+     "analysis": "",
+     "recommendation": "《Herdling》突然登陆 Switch 2：一款风格化冒险的无声扩张",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Niche Gamer · 独立游戏",
+     "tags": [
+      "反乌托邦",
+      "叙事冒险",
+      "续作"
+     ],
+     "title": "反乌托邦叙事冒险《Beholder 4》公布",
+     "en_title": "Dystopian narrative adventure sequel Beholder 4 was announced",
+     "full_text": "Dystopian narrative adventure sequel Beholder 4 was announced: https://t.co/XJ1IGHkmuN https://t.co/s9jrVdeQ7h",
+     "author": "nichegamer",
+     "date": "2026-11-14",
+     "likes": 3,
+     "views": 751,
+     "link": "https://x.com/nichegamer/status/2121625981181948278",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXGHljRXUAAdLco.jpg"
+     },
+     "summary": "《Beholder》系列公布第四作，延续反乌托邦监控题材的叙事冒险路线，具体平台与发售日未披露。",
+     "analysis": "",
+     "recommendation": "《Beholder 4》公布：反乌托邦监控题材的叙事冒险继续往下写",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Niche Gamer · 独立游戏",
+     "tags": [
+      "弹幕射击",
+      "东方风",
+      "主机版"
+     ],
+     "title": "和风弹幕《Shikhondo: Blue Pieta》下月登陆主机",
+     "en_title": "Fantasy bullet hell game Shikhondo: Blue Pieta comes to consoles next month",
+     "full_text": "Fantasy bullet hell game Shikhondo: Blue Pieta comes to consoles next month: https://t.co/lw6FlMznjf https://t.co/O55ummneQU",
+     "author": "nichegamer",
+     "date": "2026-11-14",
+     "likes": 3,
+     "views": 1106,
+     "link": "https://x.com/nichegamer/status/2121607184362414301",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXF2fatXoAAqMZz.jpg"
+     },
+     "summary": "幻想题材弹幕射击《Shikhondo: Blue Pieta》将于下月登陆主机平台，是《Shikhondo》系列的新作/移植动作。",
+     "analysis": "",
+     "recommendation": "《Shikhondo: Blue Pieta》下月登陆主机：和风弹幕的又一次小规模扩张",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "X · 独立开发者 @omidjm",
+     "tags": [
+      "整理模拟",
+      "Demo",
+      "试玩"
+     ],
+     "title": "《Please Fix The Mess》上线免费 Demo，进入 Tidy Up Games 展示周",
+     "en_title": "Please fix the mess is free to try on Steam, and it's in the Tidy Up Games Showcase all week.",
+     "full_text": "Let's play a demo now.\n\nPlease fix the mess is free to try on Steam, and it's in the Tidy Up Games Showcase all week. #screenshotsaturday #indiegame https://t.co/mnAPRkw6lV",
+     "author": "omidjm",
+     "date": "2026-11-14",
+     "likes": 4,
+     "views": 67,
+     "link": "https://x.com/omidjm/status/2121610872229654829",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121610809100935168/img/lDTEbWgyMM5FuIbD.jpg",
+      "video_url": "https://x.com/omidjm/status/2121610872229654829/video/1"
+     },
+     "summary": "个人开发者放出的整理/清洁题材游戏《Please Fix The Mess》免费 Demo 已在 Steam 开放，并参与本周的 Tidy Up Games 展示活动。",
+     "analysis": "",
+     "recommendation": "《Please Fix The Mess》免费 Demo 上线，主打「把烂摊子收拾干净」",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 中文 KOL（@songsong）",
+     "tags": [
+      "开源框架",
+      "Agent Skill",
+      "资产生成"
+     ],
+     "title": "OpenDCAI 开源 3A 游戏生成框架：Agent Skill 串起图片/3D/动作/音频，直通 UE5 与 Godot",
+     "en_title": "OpenDCAI 开源了 3A 游戏生成 Skill 与资产框架",
+     "full_text": "这下可好了\n独立开发者也能做3A大作了\n\nOpenDCAI开源 了3A 游戏生成 Skill 与资产框架\n\nhttps://t.co/1TGVNaRHyh\n\n覆盖了图片、3D 资产、动作、音频与 CG 视频生成，并支持使用 UE5、Blender、Unity、Godot 4 和 three.js 构建游戏。\n\n赶紧立刻马上拿下 https://t.co/YQP2W9lmSk",
+     "author": "songsong",
+     "date": "2026-11-14",
+     "likes": 513,
+     "views": 24264,
+     "link": "https://x.com/songsong/status/2121425237539778991",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121425083264901120/img/09opoU5nALaR7HHM.jpg"
+     },
+     "summary": "OpenDCAI 的 GameFactory-3A 仓库（Apache-2.0，1.3k stars / 139 forks）以 Agent Skill 驱动 Codex、Claude Code、Gemini CLI：入口是 setting_overview.md，往下接图片与 T-pose、3D 物件/场景、动作、音频、CG 视频，以及玩法与 UI 代码生成；同时提供 UE5、Blender、Unity、Godot 4、three.js 的引擎 API 上下文与参考适配层，官方给出各引擎的格斗、FPS、竞速与探索 demo。",
+     "analysis": "值得注意的不是「一键 3A」的口号，而是工程结构：它把资产生成拆成可被 Agent 读取的技能包，并给每个引擎单独写一份 API 上下文，避免模型瞎猜引擎接口。这种「技能包 + 引擎适配层」的形态，很可能成为 Agent 介入引擎工作流的默认范式。",
+     "recommendation": "OpenDCAI 开源 3A 游戏生成框架：Agent Skill 串起图片/3D/动作/音频到 UE5 与 Godot",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · 中文开发者（@vikingmute）",
+     "tags": [
+      "像素美术",
+      "程序动画",
+      "工艺"
+     ],
+     "title": "像素树在风里摆却不加一帧动画：把树冠切成区块按整像素位移",
+     "en_title": "还有人写这么认真的游戏技术文章让我感动",
+     "full_text": "还有人写这么认真的游戏技术文章让我感动，https://t.co/5z645FEX3a\n大意就是如何让像素艺术树木在风中自然摆动，而不需要额外的动画帧，他的做法是树干保持不动，只让树冠上的分成好几个区块按整像素移动，模拟手绘像素风动画的效果，太细了太细了，能感觉到对游戏品质要求的精益求精。\n\n看了这篇文章我越来越感觉游戏中的细节太多了，不是那种 one shot fable5.2 的垃圾 demo  能比的。",
+     "author": "vikingmute",
+     "date": "2026-11-14",
+     "likes": 106,
+     "views": 5372,
+     "link": "https://x.com/vikingmute/status/2121584360247988409",
+     "media": null,
+     "summary": "一篇像素美术技术文章的做法：树干保持静止，只把树冠拆成若干区块、按整像素做位移，模拟手绘像素动画的抖动，因此不需要额外的动画帧。Viking 认为这种细节密度是「一次生成的 demo」无法替代的。",
+     "analysis": "在生成式美术把单张图成本压到接近零之后，真正拉开差距的是这类受约束的程序化微动效：像素风动不了半像素，只能在整像素范围内想办法，于是手感全靠设计者的手工调参。对做像素项目的美术/TA，这是可以直接抄进管线的低成本方案。",
+     "recommendation": "不加一帧动画，用整像素区块位移让像素树在风里摆动"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI 供应链的坏消息，先落在视频与美术这一端**\nxAI 的 Grok Imagine 团队被多语种账号同时爆料「几乎全员被裁」，其中一条给出约 60 人的数字，三条推文都在 @grok 求核实，官方尚无回应。同一天，一位月烧 2000 美元做 AI 宝可梦同人游戏的开发者发现，Claude 因版权策略拒绝继续处理官方角色与精灵图——模型的护栏正在变成事实上的发行审核。\n\n**模型选型回归账本**\nGarry Tan 在 Claude Code 上跑 52 个编码任务：Opus 5.5 解决率 84.6%，Fable 5.2 为 82.7%，但后者每个成功任务贵 2.80 倍。当差距缩到两个百分点，选型指标从「谁更强」变成「每个完成任务多少钱」。\n\n**GTA 6 进入发售周，老 IP 各有各的活法**\n距 11 月 19 日一周，GTA 6 被确认全主机目标 30fps、共 55 个成就，部分玩家反馈实体版预购码出问题。另一侧，BioWare 联合创始人估算重启《质量效应》需要 2 亿美元以上、请愿已破 31.7 万；《魔兽世界：Forever》则拿下系列史上最大首发和 15 年来最多的新玩家。\n\n**工具与手艺同时往前走**\nOpenDCAI 开源 GameFactory-3A，用 Agent Skill 把图片、3D、动作、音频、CG 视频串到 UE5/Blender/Unity/Godot 4/three.js，仓库已 1.3k stars；社区里另一条线是「像素树不加一帧动画」的整像素位移做法——一边是规模化生成，一边是受约束的手工微动效。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
