@@ -922,7 +922,8 @@ const robloxReports = [
   { label: '10.12 - 10.18', file: 'roblox/roblox-2026-10-12-to-10-18.html' },
   { label: '10.19 - 10.25', file: 'roblox/roblox-2026-10-19-to-10-25.html' },
   { label: '10.26 - 11.1', file: 'roblox/roblox-2026-10-26-to-11-01.html' },
-  { label: '11.2 - 11.8', file: 'roblox/roblox-2026-11-02-to-11-08.html' }
+  { label: '11.2 - 11.8', file: 'roblox/roblox-2026-11-02-to-11-08.html' },
+  { label: '11.9 - 11.15', file: 'roblox/roblox-2026-11-09-to-11-15.html' }
 ];
 
 function switchView(view) {
@@ -1227,15 +1228,19 @@ function findEditorialHeroPicks() {
 
   // Priority: use explicit editors_pick if available
   if (currentData.editors_pick && currentData.editors_pick.length) {
-    let aiPick = null, gamePick = null;
+    let aiPick = null, indiePick = null, industryPick = null;
     for (const pick of currentData.editors_pick) {
       const section = getSectionById(pick.section_id);
       const item = section && section.items[pick.item_index];
       if (!item) continue;
       const result = { section, item, itemIndex: pick.item_index, hook: pick.hook || item.recommendation || item.title };
-      if (!aiPick && (pick.section_id === 'ai' || pick.section_id === 'tools')) { aiPick = result; }
-      else if (!gamePick) { gamePick = result; }
+      if (pick.section_id === 'ai' || pick.section_id === 'tools') { if (!aiPick) aiPick = result; }
+      else if (pick.section_id === 'indie') { if (!indiePick) indiePick = result; }
+      else { if (!industryPick) industryPick = result; }
     }
+    // Right hero card = new game by design: an indie pick always wins the slot;
+    // industry fills in only when editors_pick has no indie entry (2026-11-16).
+    let gamePick = indiePick || industryPick;
     // If editors_pick only specified one, fill the other with hottest
     if (!aiPick) aiPick = findHottestPick(['ai', 'tools']) || findPick(firstSectionId, 0);
     if (!gamePick) gamePick = findHottestPick(['indie']) || findPick('indie', 0) || findPick(((currentData.sections[1] || currentData.sections[0]) || {}).id, 0);
