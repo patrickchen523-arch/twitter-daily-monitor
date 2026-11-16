@@ -1,0 +1,581 @@
+{
+ "date": "2026-11-16",
+ "meta": {
+  "raw_count": 247,
+  "filtered_count": 166,
+  "selected_count": 12,
+  "crawl_time": "2026-11-16 09:30"
+ },
+ "lede": "英伟达 CEO 黄仁勋在连续争议中辞职，CFO 临时接任；欧盟《数字公平法案》公布，未成年人禁买付费开箱；单人开发的《Slotbound》48 小时卖出 5 万份；Fable 5.2 一天做出可玩物理沙盒。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 1,
+   "hook": "欧盟《数字公平法案》公布：未成年人禁付费开箱，违规最高罚全球营收 6%"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "单人开发《Slotbound》48 小时卖 5 万份、营收 35.6 万美元——老虎机转出单位的自动战斗"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 2,
+   "hook": "Fable 5.2 一天做出可玩巫师沙盒：7 种法术、1800 个物理碎片，全代码零美术资产"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Claude Code 默认把 Co-Authored-By 写进每个 commit，连 OpenAI 的 whisper 仓库也挂上 Claude 署名\nFable 5.2 跑 23 小时花 483 美元只做出一车一枪，11 次返工里 7 次是交互问题\nFable 5.2 一天做出可玩巫师沙盒：7 种法术、1800 个物理碎片，零模型零贴图全代码"
+  },
+  {
+   "id": "industry",
+   "text": "英伟达 CEO 黄仁勋在连续争议中辞职，CFO Colette Kress 出任临时 CEO\n欧盟《数字公平法案》公布：未成年人不得购买付费开箱，违规最高罚全球营收 6%\nGTA 6 同时刷新 PS Store 与 Xbox Store 预购纪录，索尼提前 9 天开预载\n《时之笛》重制版成为 Switch 2 史上销售最快的游戏"
+  },
+  {
+   "id": "indie",
+   "text": "单人开发《Slotbound》48 小时卖 5 万份、营收 35.6 万美元、峰值 9,377 人\n《Balitti》把墙壁变成地板：漫画墨线风 FPS + 径向重力，Godot 制作\n《Spellogger》白天种田晚上打怪，把 cozy 种田做成暴力童话，Demo 已上线"
+  },
+  {
+   "id": "tools",
+   "text": "输入种子就生成整张银河恶魔城地图，还自动算好能力解锁顺序，可导出 JSON\nSteam 商店页开始显示 Steam Deck 平均帧率，Valve 考虑扩展到其他硬件"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 中文开发者 @Jenzin",
+     "tags": [
+      "Claude Code",
+      "Git",
+      "AI 署名"
+     ],
+     "title": "Claude Code 默认往每个 commit 里塞 Co-Authored-By 署名，连 OpenAI 的 whisper 仓库都挂上了 Claude",
+     "en_title": "Anthropic 这波真是把广告位焊死在 GitHub 上了。",
+     "full_text": "Anthropic 这波真是把广告位焊死在 GitHub 上了。\n\nClaude Code 默认给每个 git commit 塞一条 Co-Authored-By，也不问你同不同意，直接把 Claude 的橘色图标挂在提交记录旁边。\n\n结果就是连 OpenAI 的 whisper 仓库首页，都挂上了 Claude 的署名。\n\n奥特曼哥，这波算不算免费给竞品打广告？？？ https://t.co/hlD0J2ezrd",
+     "author": "zujingpgg",
+     "date": "2026-11-15",
+     "likes": 247,
+     "views": 66233,
+     "link": "https://x.com/zujingpgg/status/2121831938902409638",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXGEDCXW4AEEwdu.png"
+     },
+     "summary": "Claude Code 默认在每个 git commit 末尾追加 Co-Authored-By 署名，无需用户确认；作者发现连 OpenAI 的 whisper 仓库贡献者位置也出现了 Claude 的图标与署名。推文配图展示了提交记录与仓库首页的署名情况。",
+     "analysis": "提交身份是工程团队最底层的归属记录，默认写入等于让模型供应商进入开发历史：企业仓库的贡献者列表、审计日志、DCO/CLA 归属都会被污染，反过来它又成了「团队 AI 参与度」最直接的事实度量。可预期的是团队级配置开关、提交钩子清洗，以及围绕「AI 是否算贡献者」的内部规范讨论。",
+     "recommendation": "Claude Code 默认把 Co-Authored-By 写进每个 commit，连 OpenAI 仓库都挂上 Claude 署名"
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 中文账号 @BeyondTheBoxCN（黑箱之外）",
+     "tags": [
+      "AI 游戏开发",
+      "成本结构",
+      "Fable 5.2"
+     ],
+     "title": "Fable 5.2 跑 23 小时、花 483 美元只做出一辆车和一把冰冻枪，11 次返工里 7 次是交互问题",
+     "en_title": "现在 X 上到处都是「AI 24 小时做出一款游戏」的展示，但这个项目让我看到了 AI 游戏开发更真实的一面。",
+     "full_text": "现在 X 上到处都是“AI 24 小时做出一款游戏”的展示，但这个项目让我看到了 AI 游戏开发更真实的一面。\n\nAndrei Provkin 用 Fable 5.2 跑了整整 23 小时，按 API 价格算，花费约 483 美元，就做了一辆超级跑车和一把冰冻武器。\n\n你可以把跑车冻住，再用球棒砸碎。整个场景没有使用现成的 3D 模型、贴图或音频文件，全部靠代码实现。\n\n视频效果确实很漂亮，但更有意思的是作者公开的制作过程。\n\n跑车做了 18 个会话，只返工了 2 次；冰冻炮做了 9 个会话，却返工了 9 次。\n\n11 次返工中，有 7 次是交互问题：枪管穿进车身、蒸汽穿过汽车、结冰太慢、融化太快……\n\n我觉得这里暴露了 AI 做游戏目前一个很实际的问题。\n\n模型可以对照参考图把汽车做得很漂亮，但物理效果、交互反馈这些东西，只有真正运行起来、亲自玩过才能发现问题。\n\n未来 AI 制作游戏的成本，恐怕很大一部分会花在不断测试和修正这些细节上。\n\n这份 23 小时、483 美元的开发记录，我觉得比那些号称一天做出完整游戏的演示更有参考价值。\n\n https://t.co/oVvnua8WEU",
+     "author": "BeyondTheBoxCN",
+     "date": "2026-11-15",
+     "likes": 12,
+     "views": 1237,
+     "link": "https://x.com/BeyondTheBoxCN/status/2121890955783483723",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121154178403733504/img/sxchy6ROUlSOnfCs.jpg",
+      "video_url": "https://x.com/BeyondTheBoxCN/status/2121890955783483723/video/1"
+     },
+     "summary": "Andrei Provkin 公开了用 Fable 5.2 做场景的完整记录：23 小时、按 API 价格约 483 美元，产出超级跑车与冰冻武器两个可交互对象，全程不用现成 3D 模型、贴图与音频。超跑用了 18 个会话仅返工 2 次，冰冻炮 9 个会话返工 9 次；11 次返工中 7 次是交互问题，如枪管穿车、蒸汽穿模、结冰太慢、融化太快。",
+     "analysis": "这条把「AI 做游戏」的成本结构拆开了：生成几何与材质便宜，调交互与反馈贵。返工集中在物理与手感而非建模，说明瓶颈已从「能不能做出来」变成「玩起来对不对」，测试与手调会成为 AI 原生工作流的主要开销——这恰好是当前演示文化最不愿意展示的部分。",
+     "recommendation": "23 小时、483 美元，11 次返工里 7 次是交互问题——AI 做游戏的真实成本在这儿"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 独立开发者 @BlendiByl",
+     "tags": [
+      "Fable 5.2",
+      "开源",
+      "物理沙盒"
+     ],
+     "title": "Fable 5.2 一天做出浏览器巫师沙盒：7 种法术、约 1800 个物理碎片，零模型零贴图全代码",
+     "en_title": "i used fable 5.2 to make this wizard sandbox game in 1 day",
+     "full_text": "i used fable 5.2 to make this wizard sandbox game in 1 day 🧙‍♂️\n\nthere are 7 spells right now, about 1800 physics pieces to destroy and zero 3D models or textures, it's ALL CODE, and runs in the browser.\n\nopen source and playable, go build something cool! https://t.co/z7UXPYPCCx https://t.co/yHYCl62Qbp",
+     "author": "BlendiByl",
+     "date": "2026-11-14",
+     "likes": 2375,
+     "views": 139079,
+     "link": "https://x.com/BlendiByl/status/2121594536153718972",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121593955557179392/img/kiEaWsmIqUo_kjre.jpg",
+      "video_url": "https://x.com/BlendiByl/status/2121594536153718972/video/1"
+     },
+     "summary": "作者用 Fable 5.2 在一天内做出浏览器可玩的巫师沙盒：目前 7 种法术、约 1800 个可破坏的物理碎片；场景不使用任何 3D 模型与贴图，全部由代码生成，项目已开源可玩。",
+     "analysis": "和「23 小时 483 美元」那条对照看，AI 生成的边际成本高度取决于资产形态：纯程序化几何 + 物理交互不需要美术资产，正好落在模型最擅长的区间，一天就能出可玩版本；一旦涉及角色、动画与关卡叙事，成本曲线立刻抬升。这也解释了为什么当前 AI 游戏演示集中在沙盒与射击玩法。",
+     "recommendation": "Fable 5.2 一天做出可玩巫师沙盒：7 种法术、1800 个物理碎片，全代码零美术资产",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "X · 播客 @EasyAllies（交叉信源：Eurogamer）",
+     "tags": [
+      "英伟达",
+      "人事变动",
+      "AI 芯片"
+     ],
+     "title": "英伟达 CEO 黄仁勋在连续争议中辞职，CFO Colette Kress 出任临时 CEO",
+     "en_title": "After days of controversy, Nvidia CEO Jensen Huang has resigned",
+     "full_text": "It's time for us to share our full thoughts on the Ocarina of Time remake. Huber gets cozy with Tanuki: Pon's Summer, and the head of Nvidia is out after multiple scandals.\n\nhttps://t.co/E3Wx9ojUDS\n\n#ZeldaOcarinaofTimeRemake @critical_reflex https://t.co/nLHsL9nE2Z",
+     "author": "EasyAllies",
+     "date": "2026-11-15",
+     "likes": 3,
+     "views": 552,
+     "link": "https://x.com/EasyAllies/status/2122011999185838535",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXAq7XkboAERyNI.jpg"
+     },
+     "summary": "Eurogamer 报道，英伟达宣布黄仁勋辞去公司总裁、CEO 与董事职务并立即生效。事件起点是此前被曝与中国间谍有不当关系、随后又曝出与下属的第二段关系，董事会于周三开会决定其去留；CFO Colette Kress 出任临时 CEO，直到选出正式继任者。Easy Allies 当天的播客摘要也提到「英伟达掌门人在多起丑闻后离任」。",
+     "analysis": "这是本周科技与硬件交叉面上最大的变量。英伟达同时握着 AI 算力供给和 PC 显卡供给，CEO 更替会直接影响对华出口口径、显卡路线图以及云厂商长约的谈判节奏。董事会声明强调运营与产品路线不中断，但过渡期里供应链与人才通常会先观望；游戏显卡历来是优先级最低的一环，接下来要看下一季财报与 GTC 议程怎么排。",
+     "recommendation": "英伟达 CEO 黄仁勋在连续争议中辞职，CFO Colette Kress 出任临时 CEO",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 政策监管",
+     "tags": [
+      "欧盟",
+      "开箱",
+      "监管"
+     ],
+     "title": "欧盟《数字公平法案》公布：未成年人不得购买付费开箱，违规最高罚全球营收 6%",
+     "en_title": "Europe is about to get very tough on loot boxes in games, according to a leaked draft of the landmark Digital Fairness Act.",
+     "full_text": "Europe is about to get very tough on loot boxes in games, according to a leaked draft of the landmark Digital Fairness Act. https://t.co/XlSZU2IIgR https://t.co/8QioAmDDgm",
+     "author": "eurogamer",
+     "date": "2026-11-15",
+     "likes": 4,
+     "views": 4525,
+     "link": "https://x.com/eurogamer/status/2121823259997929817",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXI7Aq5WgAAp5r4.jpg"
+     },
+     "summary": "欧盟委员会正式公布《数字公平法案》提案（此前一天草案泄露）：付费虚拟货币对未成年人默认关闭、需监护人开启；付费开箱不得向未成年人提供；所有玩家必须能彻底关闭付费开箱，并明确公示掉落概率。法案预计 2028–2029 年生效，违规最高罚全球年营收 6%（无营收数据时最高 200 万欧元）。",
+     "analysis": "关键不在「欧盟要不要管」，而在域外效应：发行商通常按最严辖区统一改产品，等于全球开箱设计被这条法案牵动。对国内出海团队，「付费货币默认关闭 + 概率公示 + 可关闭开关」会成为新的合规基线，抽卡商店与 UI 层要提前留改造空间；对纯买断制产品，这反而是一次相对利好。",
+     "recommendation": "欧盟《数字公平法案》公布：未成年人禁付费开箱，违规最高罚全球营收 6%",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Eurogamer · 行业媒体（补充：PC Gamer / TheGamer）",
+     "tags": [
+      "GTA 6",
+      "预购纪录",
+      "数字渠道"
+     ],
+     "title": "GTA 6 同时刷新 PlayStation Store 与 Xbox Store 预购纪录，索尼为它提前 9 天开放预载",
+     "en_title": "Grand Theft Auto 6 becomes the most pre-ordered game in PlayStation Store history.",
+     "full_text": "Grand Theft Auto 6 becomes the most pre-ordered game in PlayStation Store history. https://t.co/f4DetkBZqt https://t.co/auj2uy5XAv",
+     "author": "eurogamer",
+     "date": "2026-11-15",
+     "likes": 22,
+     "views": 9364,
+     "link": "https://x.com/eurogamer/status/2121853459242574311",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXJWef2XYAE5l4t.jpg"
+     },
+     "summary": "索尼宣布 GTA 6 成为 PlayStation Store 历史预购量最高的游戏，并联合 Rockstar 提前 9 天开放预载，理由是「前所未有的需求」；微软随后称它同样是 Xbox Store「有史以来」预购最高的游戏。Eurogamer 提示这是「数字商店」纪录而非全 PlayStation 历史纪录，背景是索尼正推进全数字化。PC Gamer 则确认此前泄露的 34 首原声曲目属实。",
+     "analysis": "这条真正的信息是渠道结构：纪录由数字商店而非实体渠道创造，提前 9 天预载相当于对服务器与 CDN 做一次压力测试。对平台方，这是「全数字未来」最有说服力的材料；对其他发行商，则意味着首发窗口的曝光与流量会被这一部作品整块吃掉，错峰几乎是唯一选择。",
+     "recommendation": "GTA 6 同时刷新 PS Store 与 Xbox Store 预购纪录，索尼为它提前 9 天开预载",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 行业媒体",
+     "tags": [
+      "塞尔达",
+      "Switch 2",
+      "销量"
+     ],
+     "title": "《塞尔达传说：时之笛》重制版成为 Switch 2 史上销售最快的游戏",
+     "en_title": "The Legend of Zelda: Ocarina of Time remake sells in huge numbers, becoming the fastest-selling Switch 2 game.",
+     "full_text": "The Legend of Zelda: Ocarina of Time remake sells in huge numbers, becoming the fastest-selling Switch 2 game. https://t.co/S8wIvoPi24 https://t.co/EKN5UhGi3T",
+     "author": "eurogamer",
+     "date": "2026-11-15",
+     "likes": 182,
+     "views": 10318,
+     "link": "https://x.com/eurogamer/status/2121883658319544753",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXJx8U5X0AAvvFf.jpg"
+     },
+     "summary": "Eurogamer 报道，《时之笛》重制版销量巨大，成为 Switch 2 发售以来销售最快的一款游戏；同期 Eurogamer 给出重制版评测，认为三十年后它依然值得讲给别人听。Polygon 则从另一角度报道了原版最被忽视的 Boss。",
+     "analysis": "新平台早期靠「独占 + 情怀重制」拉动装机的路径再次被验证。一款 1998 年游戏的重制能拿下最快销售纪录，说明 Switch 2 早期用户里核心玩家占比仍高，且对「原汁原味 + 现代操作」的改造接受度极高；这会鼓励更多厂商把重制排进首发窗口，也意味着新 IP 的窗口期更挤。",
+     "recommendation": "《时之笛》重制版成为 Switch 2 销售最快游戏，三十年后仍被评测称为杰作"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 独立开发者 @OptimaArchGames（韩文圈二次传播：@lalalalarulu）",
+     "tags": [
+      "Roguelike",
+      "自动战斗",
+      "单人开发"
+     ],
+     "title": "单人开发《Slotbound》：老虎机转出单位，上线 48 小时卖出 5 万份、营收 35.6 万美元、峰值 9,377 人",
+     "en_title": "My first solo developed game Slotbound just crossed $356K in gross revenue and 50,000 copies sold in its first 48 hours on Steam!",
+     "full_text": "My first solo developed game Slotbound just crossed $356K in gross revenue and 50,000 copies sold in its first 48 hours on Steam!\n\nWe also hit 9,377 peak concurrent players.\n\nStill feels unreal. Thank you so much to everyone who gave my game a chance! ❤️\n\n#indiedev #gamedev #Slotbound",
+     "author": "OptimaArchGames",
+     "date": "2026-11-15",
+     "likes": 199,
+     "views": 7729,
+     "link": "https://x.com/OptimaArchGames/status/2121818614571622489",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXI2qrhaYAACcR3.jpg"
+     },
+     "summary": "开发者称这是自己第一款单人作品：Steam 上线 48 小时卖出 5 万份、总营收 35.6 万美元、峰值同时在线 9,377 人。玩法是用 3x3 老虎机转出单位、再吸收其他单位壮大军团的 Roguelike 自动战斗防守。韩文圈传播补充，作者是非开发者转全职、开发约一年，48 小时收入约 4.7 亿韩元。",
+     "analysis": "又一个「小体量机制 + 极低定价」的样本：¥37.8 把决策成本压进冲动区间，老虎机的随机性天然适合直播和短视频展示。但真正稀缺的是把随机产出与防守策略绑成一条可读的成长曲线——先做一个十秒内能被看懂的战斗循环，比堆内容更可能跑出来。",
+     "recommendation": "单人开发《Slotbound》48 小时卖 5 万份、营收 35.6 万美元——老虎机转出单位的自动战斗",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Slotbound（转运军团）",
+      "genre": "独立 / 策略 / Roguelike 自动战斗防守",
+      "developer": "Optima Arch（单人开发）",
+      "platforms": [
+       "Steam（Windows / macOS）"
+      ],
+      "price": "¥37.80（首发 9 折）",
+      "release_date": "已发售 · 2026年11月12日",
+      "steam_rating": "675 条用户评测",
+      "steam_url": "https://store.steampowered.com/app/4459590/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4459590/560f439f789caa08634fbf9ff462c73bf06fbf41/header.jpg",
+      "youtube_video": null,
+      "description": "单人开发者 Optima Arch 的第一款作品，把老虎机与塔防式自动战斗拼在一起。\n\n【核心玩法】棋盘就是一台被打乱的 3x3 老虎机：支付金币转动滚轮，按出现的符号召唤单位；把单位互相吞噬即可升阶，滚轮里还混入道具与「核心」，能改变下一次转动的概率分布。每轮结束进入审判波次，必须在有限回合内清场，随后是 Boss 战。\n\n【策略层】随机性看起来很大，但玩家能用道具和核心调整权重，把「赌」变成「下注」——什么时候花光金币追一手，什么时候留钱换稳定产线，是每局的核心决策。\n\n【表现】像素风单位配赌场式明亮配色，界面信息密度高但读得懂；战斗自动进行，单局约 20–30 分钟。\n\n【优势】机制一句话就能讲清，直播与短视频天然好展示；¥37.8 定价决策成本低；单局节奏快，适合碎片时间。\n【不足】自动战斗意味着操作上限有限，后期容易滑向数值碾压；随机性带来的挫败感需要靠核心道具的补偿机制兜住。\n\n【综合】不是重内容型作品，而是把一个小机制打磨到能反复开局的样本，适合作为「小体量机制创新」的参考。",
+      "why_notable": "单人开发、¥37.8 定价，靠一个十秒内能看懂的老虎机机制在 48 小时卖出 5 万份",
+      "pcu": "9,377（发售 48 小时峰值，开发者自述）",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "50,000 份（发售 48 小时，开发者自述）"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "80 LEVEL · 技术媒体",
+     "tags": [
+      "FPS",
+      "Godot",
+      "径向重力"
+     ],
+     "title": "《Balitti》：漫画墨线风 FPS，墙壁随时变成地板，径向重力重写身法",
+     "en_title": "Walls become floors in Balitti, a manga-style action FPS with radial gravity, developed by sembask.",
+     "full_text": "Walls become floors in Balitti, a manga-style action FPS with radial gravity, developed by sembask.\n\nRead how it was made in Godot and wishlist: https://t.co/lcuuVWsnTp https://t.co/B4okt89iu4",
+     "author": "80Level",
+     "date": "2026-11-14",
+     "likes": 403,
+     "views": 24184,
+     "link": "https://x.com/80Level/status/2121634836427293059",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121634810913296385/img/xz4xryLXXB3ZVki7.jpg",
+      "video_url": "https://x.com/80Level/status/2121634836427293059/video/1"
+     },
+     "summary": "80 LEVEL 介绍独立开发者 sembask 的《Balitti》：漫画墨线风格的动作 FPS，核心是径向重力——墙壁可以变成地面；玩家用系绳苦无在空中飞驰、滑铲，并把连续击杀串成连击冲击风格评级。文章同时拆解了它在 Godot 里的实现方式。",
+     "analysis": "径向重力不是新点子，但把它做成「跑图 + 连击评级」的主循环，等于把 3D 空间的方向感变成可消耗的资源；而用 Godot 做出这种视觉密度，说明开源引擎在风格化小体量项目上的表现力已经够用，工具门槛不再是差异化的借口。",
+     "recommendation": "《Balitti》把墙壁变成地板：漫画墨线风 FPS + 径向重力，Godot 制作",
+     "featured": true,
+     "enrichment": {
+      "game_name": "Balitti",
+      "genre": "动作 / 独立 / 第一人称射击",
+      "developer": "sembask（独立开发者）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5492780/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5492780/1994b2f3818b63a25e78465e809345446ad49565/header.jpg",
+      "youtube_video": null,
+      "description": "【核心玩法】漫画墨线风的第一人称动作射击，核心设定是「径向重力」——墙壁、天花板都可能随时变成地面。玩家用系绳苦无在空间里摆荡、滑铲，把连续击杀串成连击，冲击风格评级。\n\n【视觉】黑白墨线配高对比色块，击中时有速度线与分镜式停顿，画面辨识度在同类 FPS 里很高。\n\n【技术】由独立开发者 sembask 用 Godot 实现，80 LEVEL 专门做了技术拆解；能在开源引擎上做出这种视觉密度与流体运动，说明中小团队的工具链门槛正在下降。\n\n【优势】重力方向切换带来的空间感是真正的差异化；连击评级天然适合短视频传播。\n【不足】径向重力对关卡设计与玩家晕动症都是考验，目前只有宣传片与预告，尚无实机评测。\n\n【综合】机制有辨识度的一类项目，成败取决于关卡能否持续给出「换方向」的新鲜感，建议先加愿望单观察。",
+      "why_notable": "把径向重力做成主循环的漫画风 FPS，证明 Godot 也能撑起高辨识度视觉",
+      "pcu": "暂未发售",
+      "current_players": "暂无",
+      "estimated_sales": "暂无官方数据"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 独立开发者 BASTI GAMES",
+     "tags": [
+      "种田",
+      "RPG",
+      "Demo"
+     ],
+     "title": "《Spellogger》把种田做成暴力童话：巫师伐木工白天干活、晚上打怪，Demo 已上线",
+     "en_title": "Violent cozy farming RPG is now a thing, I'm making it",
+     "full_text": "Violent cozy farming RPG is now a thing, I'm making it https://t.co/0mwPA41D0A",
+     "author": "BastiArtGames",
+     "date": "2026-11-14",
+     "likes": 856,
+     "views": 31728,
+     "link": "https://x.com/BastiArtGames/status/2121608521489993742",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121608212520607744/img/v4m2Ck5YjtCnc3HO.jpg",
+      "video_url": "https://x.com/BastiArtGames/status/2121608521489993742/video/1"
+     },
+     "summary": "开发者自述在做一款「暴力又治愈的种田 RPG」：白天像《星露谷物语》一样砍树采集、经营林地，晚上转入《上古卷轴》式的任务与探索，用魔法对付林间威胁。Steam Demo 已上线，正式版预计 2027 年。",
+     "analysis": "「cozy + 暴力」是近两年最有效的反差配方：放松循环负责留存，战斗负责短视频传播点。这类项目真正的难点是两条循环的节奏咬合——白天做的事必须决定晚上打不打得动，否则就会退化成两个互不相干的游戏。",
+     "recommendation": "《Spellogger》白天种田晚上打怪：把 cozy 种田做成暴力童话，Demo 已上线",
+     "enrichment": {
+      "game_name": "Spellogger",
+      "genre": "冒险 / 休闲 / 独立 / RPG",
+      "developer": "BASTI GAMES（独立开发者）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布（Demo 免费）",
+      "release_date": "2027年（预计）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4429710/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4429710/67c273a193625b6e47630d5de073fed61ae65acc/header.jpg",
+      "youtube_video": null,
+      "description": "【核心玩法】白天是《星露谷物语》式的经营循环：作为巫师伐木工砍树、采集、加工木材、维护林地；晚上转入《上古卷轴》式的任务与探索，用魔法对付林间威胁。「暴力且治愈」是开发者自己给它的定位。\n\n【节奏设计】两条循环共享同一套资源：白天攒的材料与等级决定晚上打不打得动，晚上的战利品又反哺白天的生产效率。\n\n【美术】手绘卡通配温暖色调，白天明亮、夜晚压低饱和度，靠光影切换提示节奏。\n\n【优势】反差配方在短视频平台极易传播；种田品类基本盘稳定，免费 Demo 降低门槛。\n【不足】两条循环若咬合不好会退化成两个独立游戏；正式版要等到 2027 年，长线留存尚未验证。\n\n【综合】cozy 品类的下一步不是更放松，而是给放松找一个有张力的对立面，这个项目选的是暴力。",
+      "why_notable": "「暴力种田」的反差配方，是 cozy 品类寻找新增量的一条可行路径",
+      "pcu": "暂未发售",
+      "current_players": "暂无",
+      "estimated_sales": "暂无官方数据"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X · 日本独立开发者 @TomatSource",
+     "tags": [
+      "Roguelite",
+      "3D 动作",
+      "开发中"
+     ],
+     "title": "《Ring's Guard》：无限循环战场上的 3D Roguelite 动作，新被动「打上」「背水」上线",
+     "en_title": "ローグライト3Dアクションゲーム『リングスガード』を開発中です",
+     "full_text": "ローグライト3Dアクションゲーム『リングスガード』を開発中です\n#スーパーゲ制デー #indiedev\n\nパッシブスキルに打ち上げ、背水を追加しました\n\n打ち上げを獲得すると、ジャンプ攻撃と必殺技で敵を空中に浮かせられるようになります\nまた、空中にいる間は攻撃力が上昇します\n\n背水を獲得すると、残りHPが低いほど攻撃力が上昇します\n現時点では効果が出ているのか見た目には分からない状態なのでエフェクトの追加などを検討中です",
+     "author": "TomatSource",
+     "date": "2026-11-14",
+     "likes": 1377,
+     "views": 47871,
+     "link": "https://x.com/TomatSource/status/2121574039563157654",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121573705629540352/img/325VDSCgcc30vvns.jpg",
+      "video_url": "https://x.com/TomatSource/status/2121574039563157654/video/1"
+     },
+     "summary": "开发中的 3D Roguelite 动作游戏，舞台是无限循环的战场，玩家用战斗与探索强化角色、并利用道具甚至敌人本身退敌。本次更新加入「打上」（跳跃攻击与必杀把敌人浮空，滞空期间攻击力上升）与「背水」（残血越高攻击力越强）两个被动。",
+     "analysis": "两个被动都指向同一件事：把玩家的空间位置与血量当成可交易的资源，鼓励「浮空连段 + 残血搏杀」的高风险打法。这类设计对演出反馈依赖极重，开发者自己也承认「目前看不出效果、准备补特效」——也正是独立动作游戏最常见的打磨断点。",
+     "recommendation": "《Ring's Guard》加「打上」「背水」被动：浮空增伤与残血增伤，逼出高风险打法",
+     "unselected": true,
+     "enrichment": {
+      "game_name": "Ring's Guard",
+      "genre": "动作 / 独立 / 3D Roguelite",
+      "developer": "Tomat（个人开发）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4947090/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4947090/4622147c85369d8006d8f7bf9c9cd97a118063ac/header.jpg",
+      "youtube_video": null,
+      "description": "以无限循环的战场为舞台，不断迎击接踵而来的敌人与 Boss 的 3D Roguelite 动作游戏；通过战斗与探索强化角色，并利用道具甚至敌人本身击退威胁。目前处于公开开发阶段，被动技能与打击反馈仍在持续调整。",
+      "why_notable": "把浮空与残血做成增伤条件的被动组合，方向明确但演出尚未补完"
+     }
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "PC Gamer · 行业媒体",
+     "tags": [
+      "RTS",
+      "4X",
+      "太空"
+     ],
+     "title": "《Horu》：受《星球大战：帝国战争》启发的 RTS/4X 混合体，宣称支持「数十万单位」同屏",
+     "en_title": "This RTS inspired by Star Wars: Empire at War promises battles with 'hundreds of thousands of units'",
+     "full_text": "This RTS inspired by Star Wars: Empire at War promises battles with 'hundreds of thousands of units' https://t.co/VVzFRuo7DX",
+     "author": "pcgamer",
+     "date": "2026-11-15",
+     "likes": 39,
+     "views": 10090,
+     "link": "https://x.com/pcgamer/status/2121975646574571693",
+     "media": null,
+     "summary": "PC Gamer 报道《Horu》：一款横跨陆地与太空的 RTS 与 4X 混合体，官方宣称单场战斗可容纳「数十万个单位」，预计 2027 年第四季度推出。",
+     "analysis": "「数十万单位」是典型的性能承诺型卖点，真正决定成败的是寻路与阵型在低配机器上的表现。帝国战争式的大战场 + 4X 经营如果能跑通，会填补近年空出来的位置；但同类项目大多倒在优化与 AI 上。",
+     "recommendation": "《Horu》宣称单场战斗支持数十万单位，RTS 与 4X 混合，2027 年第四季度",
+     "unselected": true,
+     "enrichment": {
+      "game_name": "Horu",
+      "genre": "策略 / RTS + 4X",
+      "developer": "GlassBeaver",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": "2027年第四季度（预计）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/1297450/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1297450/f478f185f8d8bd4ca324cae4ae5bbca3948717e7/header.jpg",
+      "youtube_video": null,
+      "description": "横跨陆地与太空的 RTS 与 4X 混合体，宣称可指挥数十万个单位；2027 年第四季度发售。",
+      "why_notable": "大战场 RTS 的空位仍在，但性能承诺需要用实机演示兑现"
+     }
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X · 媒体 @nichegamer",
+     "tags": [
+      "复古合集",
+      "横版动作",
+      "Atari"
+     ],
+     "title": "《Lucky Luke: The Lonesome Cowboy Collection》公布：收录六款牛仔漫画改编复古游戏",
+     "en_title": "Lucky Luke: The Lonesome Cowboy Collection was announced!",
+     "full_text": "Lucky Luke: The Lonesome Cowboy Collection was announced! https://t.co/72AKNPBjHF https://t.co/qRarGacUJA",
+     "author": "nichegamer",
+     "date": "2026-11-14",
+     "likes": 79,
+     "views": 4972,
+     "link": "https://x.com/nichegamer/status/2121687037006725544",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2121686995936149505/pu/img/QeiViHgvjfMgX-fh.jpg",
+      "video_url": "https://x.com/nichegamer/status/2121687037006725544/video/1"
+     },
+     "summary": "Atari 与 Infogrames 公布《Lucky Luke: The Lonesome Cowboy Collection》，收录六款改编自经典讽刺漫画的复古像素横版动作游戏，由 Graphite Lab 与 Implicit Conversions 负责移植。",
+     "analysis": "复古合集的核心不是游戏本身，而是版权方愿不愿意做「可运行的历史存档」。这类产品对老玩家的价值在于一次买齐 + 现代平台兼容，对发行方的价值在于低成本复用 IP，属于典型的长尾生意。",
+     "recommendation": "《Lucky Luke》六款复古牛仔游戏打包重发，Atari 与 Infogrames 操盘",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "PC Gamer · 媒体评测",
+     "tags": [
+      "魂类",
+      "复古动作",
+      "已发售"
+     ],
+     "title": "PC Gamer：《Queen's Domain》是「自《黑暗之魂 1》以来最好的《黑暗之魂 1》」",
+     "en_title": "Queen's Domain is the best Dark Souls 1 since Dark Souls 1",
+     "full_text": "Queen's Domain is the best Dark Souls 1 since Dark Souls 1 https://t.co/nAtsXMwcC5",
+     "author": "pcgamer",
+     "date": "2026-11-15",
+     "likes": 176,
+     "views": 13747,
+     "link": "https://x.com/pcgamer/status/2121982230843273706",
+     "media": null,
+     "summary": "PC Gamer 给出评价标题「自《黑暗之魂 1》以来最好的《黑暗之魂 1》」。《Queen's Domain》是复古奇幻动作 RPG，玩家前往尼亚希德岛寻找失踪的父王，10 月 30 日已发售，Steam 累计约 6,659 条评测、售价 ¥70。",
+     "analysis": "用一句话把产品坐标钉在魂 1 上，是评测里最高效也最危险的定位：它同时承诺了关卡连通性与笨重的手感。对独立团队，这说明「精准复刻某一代手感」本身就是一个可被识别的卖点，而不只是缺点。",
+     "recommendation": "PC Gamer 称《Queen's Domain》是「最好的魂 1 复刻」，已发售、¥70",
+     "unselected": true,
+     "enrichment": {
+      "game_name": "Queen's Domain",
+      "genre": "动作 / 冒险 / 独立 / RPG（魂类）",
+      "developer": "Freshly Baked Games LLC",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "¥70.00",
+      "release_date": "已发售 · 2026年10月30日",
+      "steam_rating": "约 6,659 条用户评测",
+      "steam_url": "https://store.steampowered.com/app/1799840/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1799840/1a209734951f53b019ec9fa03f835def14f2a968/header.jpg",
+      "youtube_video": null,
+      "description": "主打硬核战斗与穿行探索的复古奇幻动作 RPG：玩家前往神秘的尼亚希德岛寻找失踪的父王，岛上盘踞着邪恶势力，沉睡的女王也在渐渐苏醒。",
+      "why_notable": "PC Gamer 用「最好的魂 1 复刻」给它定位，说明精准复刻手感本身可以成为卖点"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 中文账号 @BeyondTheBoxCN（黑箱之外）",
+     "tags": [
+      "关卡生成",
+      "银河恶魔城",
+      "开源工具"
+     ],
+     "title": "免费银河恶魔城地图生成器：输入种子生成整张探索地图，还自动考虑能力解锁顺序",
+     "en_title": "卧槽，现在连《空洞骑士》这种游戏的地图，都能一键生成了？？？",
+     "full_text": "卧槽，现在连《空洞骑士》这种游戏的地图，都能一键生成了？？？\n\n玩过银河恶魔城游戏的应该都知道，这类地图设计起来有多头疼！\n\n哪里要二段跳才能过去，哪里必须拿到冲刺技能才能解锁，Boss、存档点、隐藏房间、捷径还得安排得明明白白……\n\n结果 Majid 搞了个免费的关卡生成器，只需要输入一个随机种子，就能直接生成一整张探索地图！\n\n最离谱的是，它连玩家的能力解锁顺序都考虑进去了！\n\n你还可以调整角色的跳跃高度、冲刺能力，让生成的地图适配自己的游戏，最后直接导出 JSON！\n\n我感觉这东西对独立游戏开发者简直是个宝藏啊！\n\n以前设计一张复杂地图，光是规划路线、调整关卡，估计就得折腾好几天。\n\n现在直接生成几十张，挑出有意思的布局再改！\n\n我甚至在想，以后要是把这玩意接上 AI，让它顺手把场景美术、怪物、机关也一起生成……\n\n好家伙，独立开发者是不是离一个人搓出《空洞骑士》又近了一步？？？\n\n免费体验：https://t.co/WLAquwsWxR\n\n https://t.co/P4WiIQIKkN",
+     "author": "BeyondTheBoxCN",
+     "date": "2026-11-15",
+     "likes": 165,
+     "views": 7262,
+     "link": "https://x.com/BeyondTheBoxCN/status/2121769903543730531",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121428238773768192/img/xda5SG0ukvMFfsIs.jpg",
+      "video_url": "https://x.com/BeyondTheBoxCN/status/2121769903543730531/video/1"
+     },
+     "summary": "作者介绍 Majid 做的免费关卡生成器：给定随机种子即可生成一整张银河恶魔城式探索地图，并把玩家的能力解锁顺序纳入约束（哪里需要二段跳、哪里要冲刺技能）；可调角色跳跃高度与冲刺能力以适配自己的游戏，结果可导出 JSON。",
+     "analysis": "这类工具的价值不在「替代关卡策划」，而在把最耗时的结构校验自动化：先批量生成几十张合法布局，再由人挑一张改。对小型团队，它能显著缩短白盒阶段的迭代轮次；更关键的是导出 JSON 这个中间格式，让程序化生成与手工调整可以混用，而不是二选一。",
+     "recommendation": "输入种子就生成整张银河恶魔城地图，还自动算好能力解锁顺序，可导出 JSON",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "Eurogamer · 平台功能",
+     "tags": [
+      "Steam Deck",
+      "Steam",
+      "性能指标"
+     ],
+     "title": "Steam 商店页开始显示 Steam Deck 平均帧率，Valve 考虑把这套指标扩展到其他硬件",
+     "en_title": "Steam now shows average Steam Deck framerates when browsing games, but Valve says it's considering expanding the feature to other hardware.",
+     "full_text": "Steam now shows average Steam Deck framerates when browsing games, but Valve says it's considering expanding the feature to other hardware. https://t.co/3g3tC0BoVP https://t.co/ZnrE9Fw81E",
+     "author": "eurogamer",
+     "date": "2026-11-15",
+     "likes": 15,
+     "views": 5901,
+     "link": "https://x.com/eurogamer/status/2121793060761698471",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXIfi4IXgAACGL4.jpg"
+     },
+     "summary": "Steam 现在浏览游戏时会显示该作在 Steam Deck 上的平均帧率；Valve 表示正考虑把这项能力扩展到其他硬件。此前 Deck 兼容性只有「已验证 / 可玩 / 不支持」这类定性标签。",
+     "analysis": "从「能不能跑」到「跑多少帧」，Deck 验证正从标签变成可量化指标。对开发者，商店页等于多了一个无法用文案修饰的性能字段，优化清单会更早进入发行准备；对 Valve，这套数据是未来做硬件分级（掌机 / 低配 PC）的基础设施，也是在为更多形态的设备铺路。",
+     "recommendation": "Steam 商店页开始显示 Steam Deck 平均帧率，Valve 考虑扩展到其他硬件"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**英伟达换帅，AI 与显卡同时进入观察期**\nEurogamer 报道，黄仁勋辞去英伟达总裁、CEO 与董事职务并立即生效，起因是连续两起私人关系争议，董事会周三开会决定；CFO Colette Kress 出任临时 CEO。英伟达同时是 AI 算力与 PC 显卡的供给方，过渡期的出口口径与显卡路线图都值得盯。\n\n**欧盟把开箱写进法案**\n《数字公平法案》提案正式公布：付费虚拟货币对未成年人默认关闭、需监护人开启，付费开箱不得向未成年人提供，所有玩家必须能彻底关闭并看到概率公示；违规最高罚全球年营收 6%，预计 2028–2029 年生效。发行商通常按最严辖区统一改产品，影响会外溢到全球。\n\n**AI 游戏开发的两张面孔**\n一边是 Fable 5.2 一天做出零美术资产的物理沙盒；另一边是同一模型跑 23 小时、花 483 美元只做出一车一枪，11 次返工里 7 次是交互问题。生成便宜、调交互贵，这个成本结构比任何「一天做出游戏」的演示都更接近真实。\n\n**小体量机制还在赢**\n单人开发的《Slotbound》用老虎机转出单位，48 小时卖出 5 万份、营收 35.6 万美元；《Balitti》把墙壁变成地板做径向重力 FPS；《Spellogger》把种田和暴力拼在一起。共同点是：一句话能讲清，十秒内能被看懂。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
