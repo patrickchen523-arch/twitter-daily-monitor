@@ -1,0 +1,526 @@
+{
+ "date": "2026-11-17",
+ "meta": {
+  "raw_count": 264,
+  "filtered_count": 174,
+  "selected_count": 12,
+  "crawl_time": "2026-11-17 09:45"
+ },
+ "lede": "Steam 提交通道被「AI slop」堵塞、独游被迫延期；微软澄清下一代 Xbox 是「能跑 PC 游戏的主机」；分析师估 GTA 6 首周末破 20 亿美元；一人开发的《群侠传：幸存者》移植安卓拿到 TapTap 双榜第一。",
+ "editors_pick": [
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "Steam 提交通道积压致独游延期，开发者指队列被「AI slop」堵塞——21.3 万浏览"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "一人开发的《群侠传：幸存者》移植安卓：TapTap 双榜第一、次日留存 32.6%"
+  },
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "无 3D 引擎、无多边形，32 KB 代码堆出可飞行的伪 3D 世界——165 万浏览"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "零 3D 引擎、零多边形，32 KB 代码堆出可飞行的伪 3D 世界\n别再对 Fable 5.2 说「修 bug」：6 条可直接复制的提示词\n全 AI 做完战斗与上百个技能数值：逻辑自洽，体验却对不上"
+  },
+  {
+   "id": "industry",
+   "text": "Steam 提交通道积压致独游延期，开发者指队列被「AI slop」堵塞\n微软澄清 Project Helix：能跑 PC 游戏的主机，2027 年给开发者 alpha 机\n分析师估 GTA 6 首周末 20 亿美元：1000 万预购撑起一半\nEA 再挖动视系高管：Sam Cooper 接管 Battlefield"
+  },
+  {
+   "id": "indie",
+   "text": "一人开发《群侠传：幸存者》移植安卓：TapTap 双榜第一、次日留存 32.6%\n《9 Kings》正式发售：¥29.50 的卡牌王国建造 Roguelike\nFable + Agent 做出「宋代版城市天际线」，开发者称要上 Steam"
+  },
+  {
+   "id": "tools",
+   "text": "纯 Rust/wasm 渲染器 xeet：1 毫秒出 PNG，用 Chrome 当 oracle 喂 Agent\nUnity Fellowship：10 支独游团队各拿 5 万美元，不占股、不限用途"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 技术演示 @creativedash",
+     "tags": [
+      "极简渲染",
+      "技术演示",
+      "32KB"
+     ],
+     "title": "零 3D 引擎、零多边形、32 KB 代码：纯条纹叠加的飞行模拟器",
+     "en_title": "No 3D engine, no polygons, 32 KB of code.",
+     "full_text": "https://t.co/oc5HsDDtXd\nNo 3D engine, no polygons, 32 KB of code. https://t.co/pBkOKgxfR8",
+     "author": "creativedash",
+     "date": "2026-11-15",
+     "likes": 23634,
+     "views": 1655314,
+     "link": "https://x.com/creativedash/status/2122000830895386680",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121999091551047681/img/K2NPAWOKLUxd_23A.jpg",
+      "video_url": "https://x.com/creativedash/status/2122000830895386680/video/1"
+     },
+     "summary": "作者发布一个不带 3D 引擎、不使用多边形、整份代码只有 32 KB 的飞行模拟器演示：画面由二维条纹按深度叠合出伪 3D 空间，可直接在浏览器里飞行。推文正文只有一行，却拿到 2.36 万赞、165 万浏览、2,046 次转发。",
+     "analysis": "真正被讨论的不是画面，而是「不建模型也能做出体量感」这条路径：用程序化条纹替代几何体与贴图，把资产成本压到接近零。韩文圈的转发普遍认为，这类演示之所以最近密集出现，是因为 AI 代理把这种极其繁琐的手工堆叠成本摊平了——AI 改变的不是创意上限，而是「这件事值得做」的阈值。",
+     "recommendation": "无 3D 引擎、无多边形，32 KB 代码堆出可飞行的伪 3D 世界——165 万浏览",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · AI 工具博主 @Voxyz_ai",
+     "tags": [
+      "提示词",
+      "Fable 5.2",
+      "Claude Code"
+     ],
+     "title": "别再对 Fable 5.2 说「修 bug」：6 条可直接复制的提示词",
+     "en_title": "Don't tell Fable 5.2 \"find the bugs.\" ... Here are 6 prompts to copy and paste:",
+     "full_text": "Don't tell Fable 5.2 \"find the bugs.\"\nDon't tell Fable 5.2 \"build this feature.\"\nDon't tell Fable 5.2 \"why is CI so slow.\"\n\nYou're using the smartest coding model out there 𝗹𝗶𝗸𝗲 𝗶𝘁'𝘀 𝗮𝗻 𝗶𝗻𝘁𝗲𝗿𝗻.\n\nHere are 6 prompts to copy and paste:",
+     "author": "Voxyz_ai",
+     "date": "2026-11-15",
+     "likes": 3846,
+     "views": 785236,
+     "link": "https://x.com/Voxyz_ai/status/2122011755240984607",
+     "media": null,
+     "summary": "博主认为把当前最强的编程模型当实习生用（「找出 bug」「把这个功能做了」「CI 为什么这么慢」）是最浪费的用法，并给出 6 条可直接复制的提示词模板，主张改为给它目标与约束、让它自己规划与验证。推文 3,846 赞、78.5 万浏览。",
+     "analysis": "这条的传播量说明「怎么用」比「用哪个模型」更稀缺：同一个 Fable 5.2，用法差异会直接体现在返工率上。对开发团队来说，提示词正在从个人技巧变成可沉淀的工程资产——把「分析先行、分步落地、自查验证」固化进模板，比换模型更早见效。",
+     "recommendation": "把 Fable 5.2 当实习生是最贵的用法：6 条提示词模板获 78 万浏览",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 中文独立开发者 @onefifthblue",
+     "tags": [
+      "AI 工作流",
+      "数值设计",
+      "独立开发"
+     ],
+     "title": "全 AI 做完战斗系统与上百个技能之后：逻辑对得上，体验对不上",
+     "en_title": "我最近上线的一款游戏，经过玩家这几天的体验，我发现了一些问题。",
+     "full_text": "我最近上线的一款游戏，经过玩家这几天的体验，我发现了一些问题。\n\n因为我的战斗系统、上百个技能以及装备系统，包括数值在内，全都是用 AI 做的。这就出现了一个问题：数值的强度在逻辑上是符合的，但在玩家看来，体验上并不符合预期。\n\n而且，我也没法去手动平衡，因为数值实在是太多了，不可能一件一件装备、一个一个技能去挨着看。也不能因为玩家说某个东西太弱，就去盲目地改数值、直接加强，那样可能导致整个游戏的推进节奏产生变化。\n\n目前我也不想寻求什么技术上的解决方案，比如说增加什么边界验证、什么 AI 的约束之类的。我只是客观地表达我在用 AI 做东西时所遇到的问题。\n\n后面的一些还是会继续用 AI 去做的，但是我可能会多关注一下它做的内容在体验上到底是怎样的。",
+     "author": "onefifthblue",
+     "date": "2026-11-16",
+     "likes": 27,
+     "views": 6674,
+     "link": "https://x.com/onefifthblue/status/2122144458116579652",
+     "media": null,
+     "summary": "作者用 AI 做完了自己新游的战斗系统、上百个技能、装备与全部数值，上线后发现一个结构性问题：数值强度在逻辑上自洽，但玩家体验不符合预期；而因为量太大，既无法逐条手调，也不能按玩家反馈单点加强，否则会打乱整体推进节奏。他表示后续仍会用 AI，但会更关注产出的内容在体验上到底是什么样。",
+     "analysis": "这是目前关于「AI 做游戏」最诚实的一手复盘之一：AI 能保证「可验证的正确」，保证不了「可感知的合理」。数值系统的本质是把设计意图翻译成体验节奏，而这层翻译依赖对玩家行为的观察，恰好是可验证性最弱的部分。可行的解法不是给 AI 加约束，而是先把体验目标写成可测指标，再交给它执行。",
+     "recommendation": "全 AI 做完战斗与上百个技能数值：逻辑自洽，玩家体验却对不上"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "X · 媒体 @Dexerto",
+     "tags": [
+      "Steam",
+      "平台审核",
+      "AI slop"
+     ],
+     "title": "Steam 提交通道积压：独立开发者被迫推迟发售，开发者指队列被「AI slop」堵塞",
+     "en_title": "Indie devs are being forced to delay game releases as Steam is struggling with a massive backlog of submissions",
+     "full_text": "Indie devs are being forced to delay game releases as Steam is struggling with a massive backlog of submissions\n\nDevelopers believe the queue is “clogged up by AI slop” https://t.co/Ro27PjhH7s",
+     "author": "Dexerto",
+     "date": "2026-11-16",
+     "likes": 13775,
+     "views": 213266,
+     "link": "https://x.com/Dexerto/status/2122268477352292838",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXPP7voWEAAvdek.jpg"
+     },
+     "summary": "Dexerto 报道：Steam 的提交队列出现大规模积压，独立开发者被迫推迟既定发售日；受访开发者认为队列被大量低质量 AI 生成内容（「AI slop」）挤占。该推文 1.38 万赞、21.3 万浏览，是当日互动最高的行业消息。",
+     "analysis": "如果积压属实，受影响的不只是排期，而是「发行节奏」这项独立开发最稀缺的资源：Steam 的曝光窗口与新品榜位置高度依赖发售时点，一次被动延期可能连带错过整个档期。更值得关注的是平台侧的治理难题——AI 内容本身并不违规，但审核成本会先被它吃掉，最后变成所有开发者共同承担的更长等待。",
+     "recommendation": "Steam 提交通道积压致独游延期，开发者指队列被「AI slop」堵塞——21.3 万浏览",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "X · 媒体 @GameSpot（多家报道：GameSpot / Polygon / Eurogamer）",
+     "tags": [
+      "Xbox",
+      "下一代主机",
+      "硬件"
+     ],
+     "title": "微软澄清 Project Helix：是「能跑 PC 游戏的主机」，不是「能跑主机游戏的 PC」",
+     "en_title": "Xbox Project Helix Is A Console That Plays PC Games, Not The Other Way Around",
+     "full_text": "Xbox Project Helix Is A Console That Plays PC Games, Not The Other Way Around dlvr.​it/TWLs9Q https://t.co/q9gcWKvyUf",
+     "author": "GameSpot",
+     "date": "2026-11-16",
+     "likes": 60,
+     "views": 14633,
+     "link": "https://x.com/GameSpot/status/2122333993471500639",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXQLhSoawAAmVv4.jpg"
+     },
+     "summary": "在 Xbox 25 周年数字特刊中，Xbox 次世代副总裁 Jason Ronald 首次系统解释 Project Helix：定位是「一台还能玩 PC 游戏的主机，而不是一台还能玩主机游戏的 PC」。它向下兼容此前所有 Xbox 世代，目标是统一游戏库、多商店与接近 PC 的自定义程度，设计参考了 ROG Ally 与 Xbox Mode 的玩家反馈；alpha 硬件计划 2027 年交付开发者，定价受元器件涨价影响，是否带光驱仍无定论。",
+     "analysis": "这句话把 Xbox 的战略位置讲清楚了：不跟 PC 抢「可玩性」，而是把主机形态往「带手柄的通用设备」挪。对开发者的直接影响是 SKU 与兼容性测试的成本结构——若统一游戏库成立，多商店分发与 PC 端画质档位会变成主机侧的现实问题，而不只是一次移植工作。",
+     "recommendation": "微软澄清 Project Helix：能跑 PC 游戏的主机，向下兼容全世代，2027 给开发者 alpha 机",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "X · 媒体 @eurogamer（引 SuperJoost 分析师 Joost van Dreunen）",
+     "tags": [
+      "GTA 6",
+      "市场预测",
+      "Take-Two"
+     ],
+     "title": "分析师预测 GTA 6 首周末破 20 亿美元：1000 万预购撑起一半",
+     "en_title": "Can GTA 6 make $2 billion in its opening weekend? One industry analyst has run the numbers, and seems to think so",
+     "full_text": "Can GTA 6 make $2 billion in its opening weekend? One industry analyst has run the numbers, and seems to think so\n\nhttps://t.co/pAVGmxhTYR https://t.co/ZzWgRmQlO4",
+     "author": "eurogamer",
+     "date": "2026-11-16",
+     "likes": 17,
+     "views": 4202,
+     "link": "https://x.com/eurogamer/status/2122319235200495695",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXP92_UX0AAu3Y8.jpg"
+     },
+     "summary": "分析师 Joost van Dreunen 预测 Take-Two 将在 11 月 23 日（周一）前公布超过 20 亿美元的首周末销售额，比 GTA 5 的「三天 10 亿美元」再快两天；依据是约 1000 万份预购与高价 Ultimate Edition 的高占比，Take-Two 已把下季营收预期上调至 35 亿美元。他同时预测首年销量约 3800 万份，仅略高于 GTA 5 的 3500 万份。Eurogamer 补充：Rockstar 因解雇 30 余名员工被指打压工会，裁决将在本周（发售后）给出；2022 年泄露事件的原黑客已认罪。",
+     "analysis": "这组数字的意义不在「卖得多」，而在结构：预购加豪华版把收入前置到发售前，首年销量增幅却有限，说明 GTA 6 打的是「单价更高、回收更快」，而不是「用户规模更大」。对行业的参照价值是定价与版本分层——当 3A 成本继续上涨，用高价版本撬动前期现金流正在被验证为可行。",
+     "recommendation": "分析师估 GTA 6 首周末 20 亿美元：1000 万预购撑起一半，首年 3800 万份",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "X · 媒体 @eurogamer",
+     "tags": [
+      "EA",
+      "Battlefield",
+      "人事"
+     ],
+     "title": "EA 再挖动视系高管：Sam Cooper 接管 Battlefield，Byron Beede 升任集团总经理",
+     "en_title": "EA hires another former Call of Duty boss to take the lead on all Battlefield Studios' projects",
+     "full_text": "EA hires another former Call of Duty boss to take the lead on all Battlefield Studios' projects\n\nhttps://t.co/IU0skMk6RH https://t.co/3pPOwc6og4",
+     "author": "eurogamer",
+     "date": "2026-11-16",
+     "likes": 29,
+     "views": 8978,
+     "link": "https://x.com/eurogamer/status/2122259469128368498",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXPGtE7aUAAA3vM.jpg"
+     },
+     "summary": "Byron Beede 从 Battlefield 总经理升任集团总经理，统管 EA 射击与动作 RPG 产品线（补上 Vince Zampella 去世后空出的位置）；Battlefield 负责人由 Sam Cooper 接任，他此前在 EA Sports，更早在动视做了约五年《使命召唤》全球产品管理与 Live Service 负责人。报道指出，这是 EA 自 2021 年起持续复刻动视 CoD 组织模式的又一步。",
+     "analysis": "人事变动本身不新鲜，但组织形状值得记：把多个工作室收进「Battlefield Studios」统一供一款产品，是动视验证过的产能控制方式，代价是产品调性趋同——报道自己也承认 BF 与 CoD 在 UI、限时活动、战斗通行证上越来越像。55 亿美元私有化之后，EA 更依赖少数大 IP 的确定性，这类调整只会更频繁。",
+     "recommendation": "EA 再挖动视系高管：Sam Cooper 接管 Battlefield，CoD 式组织继续复制"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 中文独立开发者 @Nenlyonis（Nenly Studio）",
+     "tags": [
+      "幸存者类",
+      "武侠",
+      "跨端移植"
+     ],
+     "title": "一人开发《群侠传：幸存者》移植安卓：TapTap 双榜第一、单日峰值 DAU 48,235、次日留存 32.6%",
+     "en_title": "在 Steam 突破了 20 万玩家之后，第一次尝试把《群侠传：幸存者》移植到安卓端。",
+     "full_text": "在 Steam 突破了 20 万玩家之后，第一次尝试把《群侠传：幸存者》移植到安卓端。TapTap 上线一周，拿到了一组自己也没想到的数：\n\n· 热门榜 & 新品榜双榜第 1，评分 9.3\n· 新增 11.3 万+，单日峰值 DAU 48,235，累计开局 45 万+ 次\n· 次日留存 32.6%（在暂时没有做任何局外成长的情况下）\n\n作为第一次做手游的“新人”，这周大半时间都在和首日卡死、发热掉帧、机型适配肉搏。能以一个免费单机在移动端跑出这个留存和口碑，算是在 PC 之后，又替自己验证了一遍「跨端交付」这件事，也教会了我很多新东西。\n\n而比起兴奋，我现在心里更多的是诚惶诚恐。这个游戏现在还有不少粗糙的地方。能被这么多手游玩家点开、游玩、讨论，真的让人受宠若惊。\n\n感谢每一位愿意给这个小作品机会的手机玩家！🙏 \n\n如果你也有安卓设备，也希望这个小游戏可以得到你的试玩和体验。十分欢迎！",
+     "author": "Nenlyonis",
+     "date": "2026-11-16",
+     "likes": 78,
+     "views": 9740,
+     "link": "https://x.com/Nenlyonis/status/2122294732323987861",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXPZOYgaIAAOcpH.jpg"
+     },
+     "summary": "开发者 Nenly 自述：Steam 玩家数突破 20 万后，第一次把《群侠传：幸存者》移植到安卓。TapTap 上线一周拿到热门榜与新品榜双第一、评分 9.3，新增 11.3 万+、单日峰值 DAU 48,235、累计开局 45 万+ 次，次日留存 32.6%（尚未做任何局外成长）。他也承认这周大半时间在打首日卡死、发热掉帧与机型适配的仗。",
+     "analysis": "对国内独立团队最有参考价值的是「32.6% 次日留存」这个数：在完全没有局外成长的前提下，说明核心战斗循环本身留得住人。另一面是一次真实的跨端成本披露——从 PC 到安卓的功课几乎全在工程侧（卡死、发热、适配），而不是玩法改造。",
+     "recommendation": "一人开发的《群侠传：幸存者》移植安卓：TapTap 双榜第一、次日留存 32.6%",
+     "featured": true,
+     "enrichment": {
+      "game_name": "群侠传：幸存者",
+      "genre": "动作 / 独立 / 幸存者类 Roguelite（武侠）",
+      "developer": "Nenly Studio（单人开发）",
+      "platforms": [
+       "Steam（Windows）",
+       "Android（TapTap）"
+      ],
+      "price": "免费开玩",
+      "release_date": "已发售 · 2026年8月11日（抢先体验）",
+      "steam_rating": "抢先体验中；Steam 商店页自述玩家数突破 10 万",
+      "steam_url": "https://store.steampowered.com/app/4957110/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4957110/e82ff33bfe95cdc876bd2c9c24fb2d420fb5d69a/header.jpg?t=1793025424",
+      "youtube_video": null,
+      "description": "单人开发者在武侠题材上重做《吸血鬼幸存者》式循环，免费游玩、目前处于抢先体验。\n\n【核心玩法】选择角色、门派与武学路数后进入 20 波江湖围攻：已掌握的武功按玩家设定的顺序自动施展，玩家只负责走位、闪避与捡满地的银钱战利品。外功负责破阵、内功负责筑基、轻功负责游身，三条线叠在同一套自动战斗里。\n\n【构筑深度】153 门武学、247 件道具可搭配，迎战来自 8 方势力的 55 种敌人；武学共鸣、蓄势连携与修炼加成构成三条独立的成长路径，组合空间远大于单线升级。\n\n【表现与体验】像素/手绘武侠风，界面信息量偏大但可读；单局节奏按 Survivors-like 惯例压缩在十几分钟内，适合移动端碎片时间。\n\n【优势】免费 + 轻量，任何设备都能上手；武侠包装在同类里辨识度极高；自动施展降低了操作门槛，决策集中在构筑与走位。\n【不足】靠自动战斗意味着手感天花板受限；内容量（153 门武学）对单人开发的平衡工作量是长期债务。\n\n【综合】把成熟循环换上一层本土题材外壳，并用免费 + 跨端把试玩门槛压到最低——留存数据说明这套组合在国内手游环境里成立。",
+      "why_notable": "免费单机武侠幸存者类，一人开发；从 Steam 20 万玩家跨到 TapTap 双榜第一，次日留存 32.6%",
+      "pcu": "暂无公开数据（未进当日 Steam Top 500）",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "免费游玩，无销量口径；开发者称 Steam 玩家数已突破 20 万"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "卡牌构筑",
+      "Roguelike",
+      "正式发售"
+     ],
+     "title": "《9 Kings》结束抢先体验正式发售：¥29.50 的卡牌王国建造 Roguelike，累计 2.2 万条评测",
+     "en_title": "Fast-paced roguelike autobattler 9 Kings hits full release",
+     "full_text": "Fast-paced roguelike autobattler 9 Kings hits full release: https://t.co/HSynOtmtBY https://t.co/hDmXfasR9C",
+     "author": "nichegamer",
+     "date": "2026-11-15",
+     "likes": 30,
+     "views": 5208,
+     "link": "https://x.com/nichegamer/status/2122003476481810630",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2122003428314386432/pu/img/nuq9Y5gj0OpijcMU.jpg",
+      "video_url": "https://x.com/nichegamer/status/2122003476481810630/video/1"
+     },
+     "summary": "快节奏 Roguelike 自走棋式王国建造游戏《9 Kings》结束抢先体验、正式发售：用卡牌搭建初始城邦，组合建筑、部队、法术与布局对抗九王并扩张帝国，支持单人及异步多人模式。Steam 售价 ¥29.50，已累计 22,327 条用户评测。",
+     "analysis": "「卡组 + 自走棋 + 建造」是这两年最拥挤的缝合方向，《9 Kings》的解法是把决策压进布局：单位位置本身参与战斗结算，玩家每回合在改棋盘而不是改数值。¥29.5 的定价也说明这一品类仍在用低价换评测量与曝光，靠长尾攒口碑。",
+     "recommendation": "《9 Kings》正式发售：¥29.50 的卡牌王国建造 Roguelike，2.2 万条评测",
+     "enrichment": {
+      "game_name": "9 Kings（九王）",
+      "genre": "角色扮演 / 策略 / 卡牌构筑 Roguelike",
+      "developer": "Sad Socket（发行：Hooded Horse / Sidekick Publishing）",
+      "platforms": [
+       "Steam（Windows / macOS）"
+      ],
+      "price": "¥29.50",
+      "release_date": "已发售 · 2026年11月12日",
+      "steam_rating": "22,327 条用户评测（当日好评率 77%）",
+      "steam_url": "https://store.steampowered.com/app/2784470/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2784470/e0e0c7c79f8d3e25f8231fc7f2255a669b29c07e/header_alt_assets_0_schinese.jpg?t=1794803229",
+      "youtube_video": null,
+      "description": "把卡牌构筑、自走棋与王国建造压进一张棋盘的快节奏 Roguelike，本月结束抢先体验转正。\n\n【核心玩法】每局从搭建初始城邦开始：抽牌放置建筑、部队与法术，回合结束后自动结算战斗，再继续建、继续打。数百张卡牌与数千种构筑组合，围绕「位置 + 数值 + 触发顺序」产生连锁。\n\n【策略层】棋盘布局本身就是玩法——把部队放在哪一格、让建筑相邻还是隔开，直接决定伤害与增益的结算路径；这让玩家每回合都在调整结构，而不是单纯堆数字。\n\n【模式】单人战役之外提供异步多人模式，玩家可以按自己的节奏规划王国发展路径，再与他人比较结果。\n\n【表现】低多边形 + 明亮配色，界面信息密度高；单局时长较短，适合连续开多把。\n\n【优势】把「建造」真正接进战斗结算，缝合得比同类更紧；¥29.5 的定价决策成本极低；2.2 万条评测说明内容量经得起反复开局。\n【不足】数值与随机的耦合度高，容易出现「开局定胜负」的挫败；美术与叙事几乎为零，靠机制撑留存。\n\n【综合】一个把玩法缝合做得足够干净的样本：低价、轻表现、重结构，适合作为「卡牌 + 放置」路线的参考。",
+      "why_notable": "结束抢先体验转正，¥29.50 的低价卡牌建造 Roguelike，靠 2.2 万条评测堆出口碑",
+      "pcu": "5,612（2026-11-17 当日峰值）",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "暂无官方数据（22,327 条评测）"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 中文独立开发者 @holooooox",
+     "tags": [
+      "AI 工作流",
+      "城市建造",
+      "开发中"
+     ],
+     "title": "独立开发者用 Fable 加各路 Agent 做出「宋代版城市天际线」，称这次真得上 Steam 了",
+     "en_title": "我用 fable 结合各路 agent 做了一个宋代版本的城市天际线，画面巨好看。",
+     "full_text": "我用fable结合各路agent做了一个宋代版本的城市天际线，画面巨好看。\n这次真得上线steam了 https://t.co/nPMjMb4fAQ",
+     "author": "holooooox",
+     "date": "2026-11-16",
+     "likes": 80,
+     "views": 6990,
+     "link": "https://x.com/holooooox/status/2122235418167156865",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXOx1nxa4AA0oje.jpg"
+     },
+     "summary": "开发者展示用 Fable 结合多个 Agent 做出的宋代题材城市建造原型，自称画面效果超出预期，表示「这次真得上线 Steam 了」。目前仍处于原型阶段，尚无商店页与发售时间。",
+     "analysis": "值得注意的不是「AI 做城市建造」，而是题材选择：宋代市井恰好落在现有美术与素材体系之外，靠通用大模型反而更容易一次性生成统一风格。这类「低产能团队 + 高辨识题材」的组合，可能会成为接下来一段时间独立游戏曝光的主流形态。",
+     "recommendation": "Fable + Agent 做出「宋代版城市天际线」，开发者称这次真得上 Steam 了",
+     "enrichment": {
+      "game_name": "宋代城市天际线（暂名）",
+      "genre": "城市建造 / 模拟经营",
+      "developer": "个人开发者（@holooooox）",
+      "platforms": [
+       "Steam（计划）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未上线",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "开发者以宋代市井为题材、用 Fable 配合多个 Agent 做出的城市建造原型：以天际线式的道路、区块与建筑布局为核心，美术由 AI 生成，追求统一的古风画面观感。目前只有展示片段，玩法细节（人口、税收、物流等系统）尚未公开。",
+      "why_notable": "把「AI 生成美术」用在现有素材体系之外的题材上，用统一风格换取辨识度"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X · 独立开发者 @GtzaStudio",
+     "tags": [
+      "单人开发",
+      "开发中"
+     ],
+     "title": "「4 年单人开发是很长，但看看这个」：一段实机演示拿到 7 万浏览",
+     "en_title": "Yes, 4 years of solo dev is a LONG time, but... LOOK AT THIS!",
+     "full_text": "Yes, 4 years of solo dev is a LONG time, but...\n\nLOOK AT THIS! 👀 https://t.co/n87SnFr5oT",
+     "author": "GtzaStudio",
+     "date": "2026-11-14",
+     "likes": 890,
+     "views": 70218,
+     "link": "https://x.com/GtzaStudio/status/2121703968850219471",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121691848477454336/img/-Vu5u6FgX2fa1YEO.jpg",
+      "video_url": "https://x.com/GtzaStudio/status/2121703968850219471/video/1"
+     },
+     "summary": "开发者一句「4 年单人开发是很长，但……看看这个」配上实机演示视频，收获 890 赞、7 万浏览。推文未公布游戏名、平台与发售时间，仅作进度展示。",
+     "analysis": "这类「长周期单人开发」的进度贴之所以能起量，靠的是画面完成度与「一个人做的」之间的落差感。对同行的实际参考是：把四年拆成可对外展示的阶段性成果，是单人项目维持关注度的唯一办法。",
+     "recommendation": "「4 年单人开发是很长，但看看这个」：一段实机演示 7 万浏览",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "X · 独立开发者 @BlendiByl（开源项目）",
+     "tags": [
+      "开源",
+      "法术构筑",
+      "可玩 Demo"
+     ],
+     "title": "《Small Magic》加第 8 个法术「时间回溯」：退休巫师的草地生活，开源可玩",
+     "en_title": "i'm making a game called Small Magic, where you're a retired wizard living out your days in this meadow",
+     "full_text": "i'm making a game called Small Magic, where you're a retired wizard living out your days in this meadow 🧙‍♂️\n\njust added the 8th spell: Time Rewind!\n\nit's playable and open-source, so follow along or build something with it: https://t.co/z7UXPYPCCx https://t.co/8KHDpaoeYD",
+     "author": "BlendiByl",
+     "date": "2026-11-16",
+     "likes": 134,
+     "views": 4734,
+     "link": "https://x.com/BlendiByl/status/2122194008382521718",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2122193828463730688/img/56ms6tY5VjqAPV9-.jpg",
+      "video_url": "https://x.com/BlendiByl/status/2122194008382521718/video/1"
+     },
+     "summary": "作者正在开发的《Small Magic》中新增第 8 个法术「时间回溯」；游戏设定是退休巫师在草地上度过余生，目前可玩且完全开源，鼓励其他人基于它继续搭建。",
+     "analysis": "同一个开发者此前用一天做出巫师物理沙盒，现在把它扩展成有主题的生活化作品——这条路径值得记：先用极短周期验证机制手感，再用开源换社区贡献，最后才谈商业化。",
+     "recommendation": "《Small Magic》第 8 个法术「时间回溯」：退休巫师的草地生活，开源可玩",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X · 媒体 @IndieDB",
+     "tags": [
+      "物理沙盒",
+      "黑色幽默",
+      "体素"
+     ],
+     "title": "《FLESHBAG》：用零件拼杀戮机器，砸在「有感情的体素小人」身上的物理沙盒",
+     "en_title": "FLESHBAG has arrived! a 3D physics sandbox where you build murder machines to test on a voxel man with feelings.",
+     "full_text": "FLESHBAG has arrived! a 3D physics sandbox where you build murder machines to test on a voxel man with feelings. Check it out!\n\nhttps://t.co/5Hjo7eWNJ4",
+     "author": "IndieDB",
+     "date": "2026-11-16",
+     "likes": 1,
+     "views": 268,
+     "link": "https://x.com/IndieDB/status/2122328832577511490",
+     "media": null,
+     "summary": "IndieDB 介绍的一款 3D 物理沙盒：玩家用零件组装「杀戮机器」，对会痛的体素小人进行测试，主打破坏反馈与荒诞幽默。",
+     "analysis": "物理沙盒的传播点几乎全在「反馈是否可信」：体素被砸碎、形变、发出声音的细节决定短视频能不能爆。这类作品玩法上限不高，但演示价值极高。",
+     "recommendation": "《FLESHBAG》：组装杀戮机器砸「有感情的体素小人」的物理沙盒",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "生活模拟",
+      "Cozy",
+      "下月发售"
+     ],
+     "title": "《Wish Upon a Llama》下月发售：一款围绕羊驼的 cozy 生活模拟",
+     "en_title": "Cozy life sim game Wish Upon a Llama launches next month",
+     "full_text": "Cozy life sim game Wish Upon a Llama launches next month: https://t.co/PQhRriHrNR https://t.co/Ybn66F3BTi",
+     "author": "nichegamer",
+     "date": "2026-11-16",
+     "likes": 2,
+     "views": 677,
+     "link": "https://x.com/nichegamer/status/2122356286121533727",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXQfy5-W8AAm9UK.jpg"
+     },
+     "summary": "温馨生活模拟游戏《Wish Upon a Llama》将于下月发售，Steam 商店页已上线（AppID 2262630）。题材围绕羊驼与乡村生活，主打低压力日常循环。",
+     "analysis": "cozy 品类的竞争已经从「有没有战斗」转向「日常动作是否够具体」：喂食、清洁、装饰这些小事的手感，比美术风格更决定留存。",
+     "recommendation": "《Wish Upon a Llama》下月发售：围绕羊驼的 cozy 生活模拟",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · Vercel CEO @rauchg",
+     "tags": [
+      "Rust",
+      "wasm",
+      "Agent 工程"
+     ],
+     "title": "Rauch 发布 xeet：纯 Rust/wasm 的推文渲染器，1 毫秒出 PNG",
+     "en_title": "Introducing xeet: A hermetic, pixel-perfect X post renderer in safe Rust / wasm.",
+     "full_text": "Introducing 𝚡𝚎𝚎𝚝: https://t.co/YaLEMbmKwf.\n\nA hermetic, pixel-perfect X post renderer in safe Rust / wasm. Zero browser, network, filesystem, system fonts. Renders a post to PNG in ~1ms (and 0.4 ms for @jack's \"setting up my twttr\" 😁).\n\nX is the global town square, and the medium is the message. Being able to preview what things will look like before posting is great for both humans and agents.\n\nRendering with xeet is is 100x-1000x faster than booting up a browser and taking a screenshot, yet it's just as accurate.\n\nIt reproduces Blink & HarfBuzz text shaping, 1/64px line breaking, RTL bidi, 28 Chirp font subsets, CJK/Math/Emoji fallbacks, \"Show more\" rules, etc. It's the kind of thing that would be wildly impractical, if not impossible, for a human engineer to pull off.\n\nExcept 𝚡𝚎𝚎𝚝 is structured as an \"autorepo.\" An oracle boots up Chrome, and verifies tens of thousands of text layout rules. A CI canary then watches the evolution of the original, and files signed PRs for agents to act on. It was conceived from the ground up around 'verification engineering', and the result speaks for itself.\n\nEnjoy!",
+     "author": "rauchg",
+     "date": "2026-11-16",
+     "likes": 1805,
+     "views": 84084,
+     "link": "https://x.com/rauchg/status/2122184794209714368",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2122179763309883393/img/lpUKKhwQvbgHkqUg.jpg",
+      "video_url": "https://x.com/rauchg/status/2122184794209714368/video/1"
+     },
+     "summary": "Guillermo Rauch 发布 xeet：一个封闭式的 X 推文渲染器，用安全 Rust / wasm 实现，不依赖浏览器、网络、文件系统与系统字体，渲染一条推文约 1 毫秒、最快 0.4 毫秒，比启动浏览器截图快 100–1000 倍。它复刻了 Blink 与 HarfBuzz 的文字排版、1/64 像素换行、RTL 双向文本、28 个 Chirp 字体子集以及 CJK/数学/Emoji 回退等规则，并以「autorepo」方式维护——用 Chrome 当 oracle 校验数万条排版规则，CI 再给 Agent 提交签名 PR。",
+     "analysis": "这条对 Agent 工程化的参考价值大于工具本身：先用浏览器定义「正确答案」，再让 Agent 在可验证的边界内迭代，是把视觉类任务交给 AI 的通用解法。对游戏团队同样适用——UI 布局、本地化换行这类「看起来只能人工调」的活，一旦有可自动比对的基准，就能被 Agent 接管。",
+     "recommendation": "纯 Rust/wasm 渲染器 xeet：1 毫秒出 PNG，用 Chrome 当 oracle 喂 Agent",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · Unity 官方 @unitygames（日文报道：@denfaminicogame）",
+     "tags": [
+      "Unity",
+      "资金扶持",
+      "独立游戏"
+     ],
+     "title": "Unity 推出 Fellowship：10 支临近发售的独游团队各拿 5 万美元现金 + 技术营销支持",
+     "en_title": "Introducing the Unity Fellowship",
+     "full_text": "Introducing the Unity Fellowship 🎮\n\nThe final stretch before a game launch is where support, connections, and funding can make a meaningful impact.\n\nThat’s why we’re selecting a cohort of 10 indie Made with Unity teams to back on their road to launch with hands-on technical, marketing, & industry support, and a $50K USD cash grant.\n\nAre you close to launching your game? Submissions are open now through Dec 18.",
+     "author": "unitygames",
+     "date": "2026-11-16",
+     "likes": 130,
+     "views": 9578,
+     "link": "https://x.com/unitygames/status/2122314887736983899",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2122314806073970689/pu/img/f4YVhLHQ1WB4i9Jj.jpg",
+      "video_url": "https://x.com/unitygames/status/2122314887736983899/video/1"
+     },
+     "summary": "Unity 公布 Fellowship 计划：选出 10 支使用 Unity、一年内计划发售且未签发行商的独立团队，各提供 5 万美元现金资助，外加实操技术支持、营销与行业人脉。不换取股权、不需要还款，资金用途自由；报名截止 12 月 18 日。",
+     "analysis": "这笔钱的绝对额不大，但对「发售前最后一段」的团队来说，恰好是补美术外包、做本地化或买曝光的关键缺口；不占股、不限定用途的条件也比多数加速器友好。对引擎方而言，这是把扶持前置到「作品能不能上线」这一环——比事后分成更能绑定长期使用。",
+     "recommendation": "Unity Fellowship：10 支独游团队各拿 5 万美元，不占股、不限用途"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**Steam 的提交通道被 AI 内容挤爆了**\nDexerto 报道称 Steam 提交队列出现大规模积压，独立开发者被迫推迟发售日，开发者认为队列被大量低质量 AI 生成内容挤占。这件事真正影响的是「发行节奏」——Steam 的新品曝光窗口高度依赖发售时点，一次被动延期可能连带错过整个档期。\n\n**下一代 Xbox 的定义被说清了**\nJason Ronald 在 Xbox 25 周年特刊中澄清：Project Helix 是「能玩 PC 游戏的主机」，不是「能玩主机游戏的 PC」，向下兼容全世代，alpha 硬件 2027 年给开发者。若统一游戏库成立，多商店分发与画质档位会变成主机侧的现实工程问题。\n\n**GTA 6 的 20 亿美元**\n分析师按 1000 万预购与高价豪华版推算，Take-Two 会在 11 月 23 日前公布超过 20 亿美元首周末销售额，比 GTA 5 的三天 10 亿再快两天；但首年销量预测只有 3800 万份，说明打法是「单价更高、回收更快」。\n\n**新游侧：跨端与低价**\n一人开发的《群侠传：幸存者》把免费武侠幸存者类搬到安卓，TapTap 上线一周双榜第一、次日留存 32.6%；《9 Kings》以 ¥29.50 转正，靠 2.2 万条评测堆口碑；另有开发者用 Fable 加 Agent 做出宋代题材城市建造原型。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
