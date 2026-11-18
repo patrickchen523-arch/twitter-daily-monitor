@@ -1,0 +1,511 @@
+{
+ "date": "2026-11-18",
+ "meta": {
+  "raw_count": 273,
+  "filtered_count": 182,
+  "selected_count": 12,
+  "crawl_time": "2026-11-18 10:05"
+ },
+ "lede": "TGA 2026 提名公布，GTA 6 未发售已拿 8 项提名；一批开发者反其道而行，把新作排进 GTA 6 档期；xAI 工程师用 Lint 约束 Agent，一人月合 3000 个 PR；多人街机排球《just volleyball》以 ¥17.36 发售。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "xAI 工程师一人月合 3000 个 PR：把 Agent 的错固化成 Lint，回滚率 0.5%"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《just volleyball》发售：¥17.36 的 6v6 街机排球，首日 1300+ 条评测"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "TGA 2026 提名公布：GTA 6 未发售已拿 8 项提名，进入年度游戏六强"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "xAI 工程师一人月合 3000 个 PR：把 Agent 的错固化成 Lint，回滚率 0.5%\n零开发经验靠 AI 做出《Slotbound》：48 小时收入 35.6 万美元\n不会画画，用 Fable 5.2 四小时做出 14 章绘本游戏"
+  },
+  {
+   "id": "industry",
+   "text": "TGA 2026 提名公布：GTA 6 未发售已拿 8 项提名，进入年度游戏六强\n反着排期：以撒 Repentance+ 选在 GTA 6 同日上主机，Atari 用 Barbie 填 11 月空窗\nPlayStation 赢下 20 亿英镑集体诉讼：法院认定主机市场存在竞争\n时之笛 Switch 2 版成今年美国最畅销实体游戏，销量破百万"
+  },
+  {
+   "id": "indie",
+   "text": "《just volleyball》发售：¥17.36 的 6v6 街机排球，首日 1300+ 条评测\n中世纪沙盒《Chronicles: Medieval》从破产边缘被救回，2027 年仍要发\n《High Roller Penny》定档 2027-01-11：柏青哥式肉鸽，Steam 免费开玩"
+  },
+  {
+   "id": "tools",
+   "text": "Unity 公布 6.7 与 Unity 7 路线，URP 动态全局光照示例 Atrio 已可下载\n18 个单人做游戏的 AI 工具清单：从 Claude Code 企划书到 Unity 官方 skills"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 中文技术博主 @huxlab（转述 AI Engineer Code Summit 演讲）",
+     "tags": [
+      "Agent 工程",
+      "代码审查",
+      "Lint"
+     ],
+     "title": "xAI 工程师一个月合 3000 个 PR、回滚率 0.5%：把 Agent 的错固化成 Lint，而不是写进 AGENTS.md",
+     "en_title": "\"All code is slop, except mine.\" Lauren Tan from SpaceX / xAI GrokBot at AI Engineer Code Summit...",
+     "full_text": "“所有代码都是垃圾（slop），除了我的。”\n\n在 AI Engineer Code Summit 上，SpaceX / xAI 的 GrokBot 工程师 Lauren Tan 抛出这句暴论后，直接甩出一组硬核数据： \n\n上个月她一个人往生产环境合了 3,000 个 PR（全团队 1.1 万个），回滚率只有 0.5% 左右。\n\n大多数人还在死磕 Prompt，她却靠一套反直觉的工程化打法，让 Agent 在她睡觉时自己写代码、自己验、自己合：\n\n1. 代码库本身才是最大的输入\nAgent极其擅长“照猫画虎”。与其在文档里苦口婆心写规矩，不如直接把容易出错的路径物理封死：比如产品代码里禁用 useEffect、跨进程 import 直接报错、注释几乎全禁。\n\n2. 每次 Agent 犯错，改成 Lint 而不是改 AGENTS.md\n自然语言规则（prose）是最脆弱的。每次纠正完 Agent，她都会把教训固化成确定性的静态检查或架构约束，让同类错误在提交前就绝无可能发生。\n\n3. 用运行时验证让 Agent “自证清白”\n写完不算完，强制 Agent 自己跑测试、抓截图、录视频，甚至上形式化验证，拿实打实的运行结果证明功能没问题。\n\n4. 搭建自下而上的“信任金字塔”代码库约束 > 静态分析 > 运行时验证 > 人眼 Review。\n把确定性交给工具，把人的精力留到最后一道关口。\n很多团队花几个月试错才摸到的门道，她用 17 分钟就讲透了。\n\n真正拉开人机协作差距的，从来不是模型有多聪明，而是你有没有把环境改造成“最短路径就是正确路径”：\n\n把约束写进代码里，而不是写在文档里。 https://t.co/QeJaRN0SVt",
+     "author": "huxlab",
+     "date": "2026-11-17",
+     "likes": 1888,
+     "views": 286015,
+     "link": "https://x.com/huxlab/status/2122525595322204273",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2121705772543332352/img/Sy5GHB84DxnzjxeQ.jpg",
+      "video_url": "https://x.com/huxlab/status/2122525595322204273/video/1"
+     },
+     "summary": "Hux 整理的 Lauren Tan 演讲内容：她上个月一个人往生产环境合了 3,000 个 PR（全团队 1.1 万个），回滚率约 0.5%。三条做法是：把代码库本身当成最大的输入，用物理约束（禁用 useEffect、跨进程 import 直接报错、几乎禁止注释）封死易错路径；每次 Agent 犯错就把教训固化成确定性的静态检查或架构约束，而不是改 AGENTS.md 里的自然语言规则；要求 Agent 自己跑测试、抓截图、录视频来自证清白。",
+     "analysis": "这套方法的价值在于把「提示词调优」换成「工程约束」：自然语言规则会随上下文漂移，而 Lint 与架构约束是编译期就生效的硬边界，Agent 再聪明也绕不过去。对团队的直接启示是，与其反复在指令里写「不要这样做」，不如一次性让这种写法无法通过提交——返工率下降来自约束的确定性，而不是模型变强。",
+     "recommendation": "xAI 工程师一人月合 3000 个 PR：把 Agent 的错固化成 Lint，回滚率 0.5%",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 游戏行业 KOL @Grummz（转述开发者 @OptimaArchGames 收入截图）",
+     "tags": [
+      "AI 生成",
+      "独立开发",
+      "收入数据"
+     ],
+     "title": "零开发经验靠 AI 做出《Slotbound》：48 小时收入 35.6 万美元，峰值 1.7 万人仍在上冲",
+     "en_title": "Vibe-coded and Gen AI game makes over $356k in 48 hours. Developer @OptimaArchGames is one guy, zero dev experience.",
+     "full_text": "Vibe-coded and Gen AI game makes over $356k in 48 hours.\n\nDeveloper @OptimaArchGames is one guy, zero dev experience.  He just posted his earnings (see screenshots).\n\n11 months ago he was broke and barely able to make rent. He did the demo with AI in 8 months and it went viral. \n\nToday Slotbound's peak of 17k players is still growing. 1-2M in lifetime revenue possible.\n\nYou're gonna see see bigger and bigger vibe coding successes in 2027. It will be undeniable. Gamers just don't care how it was made.\n\nGame is a rougelike auto-battler. The demo went viral 100k wishlist.",
+     "author": "Grummz",
+     "date": "2026-11-16",
+     "likes": 2586,
+     "views": 180296,
+     "link": "https://x.com/Grummz/status/2122293129504338190",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXPmWpxbkAAiTq8.jpg"
+     },
+     "summary": "Grummz 转述：开发者 @OptimaArchGames 一个人、零开发经验，11 个月前还在为房租发愁；他用 AI 花 8 个月做出 demo 后作品爆火，公布的收入截图显示《Slotbound》48 小时进账超过 35.6 万美元，Steam 峰值 17,000 人仍在增长，他估计生命周期收入可能达到 100 万至 200 万美元。推文 2,586 赞、18 万浏览。",
+     "analysis": "这条最容易读出错误的结论。真正稀缺的不是「AI 会写代码」，而是他在 8 个月里反复试错、直到某个玩法循环踩中传播点的过程——AI 压缩的是实现成本，不是验证成本。对团队的参考是反面用法：不要用「AI 能不能做出来」判断项目，而要用「做出来之后有没有人愿意玩」判断投入。",
+     "recommendation": "零开发经验靠 AI 做出《Slotbound》：48 小时收入 35.6 万美元，峰值 1.7 万人",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 开发者 @Rubzem",
+     "tags": [
+      "Fable 5.2",
+      "程序化生成",
+      "AI 做游戏"
+     ],
+     "title": "不会画画的人用 Fable 5.2 四小时做出 14 章绘本游戏：素材与音效全程序生成",
+     "en_title": "I asked Fable 5.2 for a beautiful & low-cortisol 2D game with a hand-painted feel. Made from scratch in 4 hours.",
+     "full_text": "I asked Fable 5.2 for a beautiful & low-cortisol 2D game with a hand-painted feel. Made from scratch in 4 hours.\n\nI can’t draw, but somehow I made a little storybook game about a kid, a dog and a long way home. \n\n14 chapters to play through. You travel by fot, canoe, train, hot air balloon, mine cart and biplane.\n\nIt’s called Getting There 🐕  \nAll assets & sounds are made fully procedurally.\n\nGame link in the comments. Claude guarantees lower cortisol after an entire playthrough.",
+     "author": "Rubzem",
+     "date": "2026-11-15",
+     "likes": 2555,
+     "views": 144993,
+     "link": "https://x.com/Rubzem/status/2122013352755126431",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2122012845512744960/img/bkZQfV-qoBFjDMzz.jpg",
+      "video_url": "https://x.com/Rubzem/status/2122013352755126431/video/1"
+     },
+     "summary": "作者自述不会画画，却用 Fable 5.2 在 4 小时内从零做出手绘质感的 2D 故事书游戏《Getting There》：小孩与狗回家的故事，共 14 章，可以步行、划独木舟、坐火车、热气球、矿车与双翼飞机赶路，全部素材与音效都由程序生成。推文 2,555 赞、14.5 万浏览。",
+     "analysis": "四小时产出 14 章内容，说明模型已经能把「有统一美术风格的小体量叙事」一次性做出来，关键变量从「美术产能」变成了「内容结构设计」。但这类作品的天花板也很清楚：程序化生成的素材适合绘本式的克制表达，一旦要求角色动画与打击反馈的一致性，仍需人工介入。",
+     "recommendation": "不会画画，用 Fable 5.2 四小时做出 14 章绘本游戏，素材全程序生成",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "X · The Game Awards 官方（多家报道：Eurogamer / Polygon / GameSpot）",
+     "tags": [
+      "TGA",
+      "年度游戏",
+      "GTA 6"
+     ],
+     "title": "TGA 2026 年度游戏提名公布：GTA 6 未发售已获 8 项提名，进入年度游戏六强",
+     "en_title": "Your nominees for Game of the Year at #TheGameAwards 2026: 007 First Light / Control Resonant / Grand Theft Auto VI / Phantom Blade Zero / Resident Evil Requiem / The Legend of Zelda: Ocarina of Time",
+     "full_text": "Your nominees for Game of the Year at #TheGameAwards 2026:  \n\n🏆 007 First Light \n🏆 Control Resonant\n🏆 Grand Theft Auto VI\n🏆 Phantom Blade Zero\n🏆 Resident Evil Requiem\n🏆 The Legend of Zelda: Ocarina of Time\n \n🗳️ Start Your Ballot: https://t.co/pU2wYZClZj https://t.co/n4cxuTlozq",
+     "author": "thegameawards",
+     "date": "2026-11-17",
+     "likes": 6048,
+     "views": 284247,
+     "link": "https://x.com/thegameawards/status/2122739039316971629",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXV1ZbcagAMQlSd.jpg"
+     },
+     "summary": "The Game Awards 公布 2026 年度游戏六强：007 First Light、Control Resonant、Grand Theft Auto VI、Phantom Blade Zero、Resident Evil Requiem、The Legend of Zelda: Ocarina of Time；提名由 160 家全球媒体组成的评审团选出，颁奖礼 12 月 10 日直播。Eurogamer 统计 GTA 6 在发售前已拿到 8 项提名，同时也出现在最佳配乐（Justice 的原创配乐）与最佳演出（Lucia 演员 Manni L. Perez）等单项提名名单里。",
+     "analysis": "把一款还没发售的游戏放进年度游戏候选，是评审机制对「文化事件」而非「已完成作品」的让步；它也顺带把 TGA 变成了 GTA 6 营销周期的一环。对从业者的现实意义在档期：12 月 10 日的颁奖与年末促销叠加，会让 11 月至年底的曝光进一步向少数作品集中，中腰部产品的窗口只会更窄。",
+     "recommendation": "TGA 2026 提名公布：GTA 6 未发售已拿 8 项提名，进入年度游戏六强",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "X · 媒体 @eurogamer（采访 Coin Crew Games / Atari / Nicalis）",
+     "tags": [
+      "档期策略",
+      "GTA 6",
+      "独立发行"
+     ],
+     "title": "反着排期：以撒 Repentance+ 选在 GTA 6 同日上主机，Atari 用《Barbie Rewind》填 11 月空窗",
+     "en_title": "As blockbuster game releases run scared from GTA 6, meet the brave developers tackling Rockstar's behemoth head-on.",
+     "full_text": "As blockbuster game releases run scared from GTA 6, meet the brave developers tackling Rockstar's behemoth head-on\n\nhttps://t.co/EnOfggBG4i https://t.co/l5xhzE3e3R",
+     "author": "eurogamer",
+     "date": "2026-11-17",
+     "likes": 5,
+     "views": 3338,
+     "link": "https://x.com/eurogamer/status/2122661507003482309",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXU1Ya8WEAEHLyn.jpg"
+     },
+     "summary": "Eurogamer 采访了几家主动贴近 GTA 6 档期的团队：Escape Academy 2 原本 9 月发售，主动挪进 GTA 6 窗口，理由是「比起一部巨作，更怕一周里挤着 15 部好游戏」；Atari 把《Barbie Rewind》（11 月 12 日）和《哥斯拉：怪兽大乱斗 复刻版》（11 月 3 日）放进几乎空掉的 11 月；Nicalis 把《以撒的结合：忏悔+》主机版定在 11 月 19 日——与 GTA 6 同日。Edmund McMillen 提到《Mewgenics》销量破 200 万后被《杀戮尖塔 2》抽走玩家的经历，认为新作带来的主机保有量上升对所有人都是「水涨船高」。",
+     "analysis": "这是一份少见的反向发行样本：当所有人都在躲，空出来的货架反而便宜。逻辑成立的前提是产品与 GTA 6 的用户群差异足够大——解谜、复古、roguelike 与开放世界犯罪几乎不重叠，且数字发行让长尾销售取代了「首两周决定生死」。对中型团队的启示是排期要看「同期竞争密度」而不是「最大竞品是谁」。",
+     "recommendation": "反着排期：以撒 Repentance+ 选在 GTA 6 同日上主机，Atari 用 Barbie 填 11 月空窗",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "X · 媒体 @eurogamer（引 TheGameBusiness 报道）",
+     "tags": [
+      "PlayStation",
+      "法律诉讼",
+      "平台定价"
+     ],
+     "title": "PlayStation 击败 20 亿英镑英国集体诉讼：法院认定主机与 PC、任天堂同处一个竞争市场",
+     "en_title": "PlayStation defeats £2 billion UK lawsuit that alleged Sony forced consumers into \"excessive and unfair prices\"",
+     "full_text": "PlayStation defeats £2 billion UK lawsuit that alleged Sony forced consumers into \"excessive and unfair prices\" https://t.co/jkGwPcHBl6 https://t.co/nng8NrDx7T",
+     "author": "eurogamer",
+     "date": "2026-11-17",
+     "likes": 4,
+     "views": 1325,
+     "link": "https://x.com/eurogamer/status/2122728822151770157",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXVyjWCWkAAEnCe.jpg"
+     },
+     "summary": "伦敦竞争上诉法庭（CAT）驳回了针对索尼的 20 亿英镑集体诉讼。原告 Alex Neill 代表约 1,220 万玩家，主张索尼通过 PlayStation Store 消除了数字游戏销售的实际与潜在竞争、收取「过高且不公平」的价格。经过 30 天审理，法庭认为原告使用的市场定义「不安全」，认定消费者在购买主机时能获得足够信息并据此决策，且索尼是在包含 Xbox、任天堂与 PC 的更广阔「系统市场」中竞争；法庭还指出没有证据表明其他数字商店的存在会压低 PS Store 定价。",
+     "analysis": "判决的关键在于「市场定义」：只要主机被认定为与 PC、其他主机同处一个竞争市场，平台对自家商店的定价权就很难被反垄断口径挑战。这对所有平台方都是一次边界确认，但也留下缺口——本案并未触及数字游戏的「所有权」问题，而索尼已宣布 2028 年 1 月起停止光盘介质，实体替代方案消失后，同类诉讼很可能换个角度再来。",
+     "recommendation": "PlayStation 赢下 20 亿英镑集体诉讼：法院认定主机市场存在竞争",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "X · 媒体 @eurogamer（多家报道：Polygon / GameSpot）",
+     "tags": [
+      "任天堂",
+      "实体游戏",
+      "销量"
+     ],
+     "title": "《塞尔达传说：时之笛》Switch 2 版成为 2026 年美国最畅销实体游戏，销量破百万",
+     "en_title": "The Legend of Zelda: Ocarina of Time on Switch 2 is the US' best-selling physical game so far this year",
+     "full_text": "The Legend of Zelda: Ocarina of Time on Switch 2 is the US' best-selling physical game so far this year\n\nhttps://t.co/Jf2J1dwMmq https://t.co/rVqVYV8kTM",
+     "author": "eurogamer",
+     "date": "2026-11-17",
+     "likes": 15,
+     "views": 2939,
+     "link": "https://x.com/eurogamer/status/2122696482159829200",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXVUjMbbsAAKef_.jpg"
+     },
+     "summary": "Eurogamer 报道：《塞尔达传说：时之笛》Switch 2 版是 2026 年截至目前美国最畅销的实体游戏，销量已破 100 万份（Polygon 与 GameSpot 同日跟进）。在一个数字版占比持续上升、索尼已宣布 2028 年停止光盘的市场里，这款重制作品成了实体渠道少见的百万级样本。",
+     "analysis": "重制 + 情怀 + 单平台独占，是实体版仍能卖动的三个条件同时成立的结果；它证明的不是「实体复兴」，而是「实体正在变成收藏品与礼物属性的载体」。对发行方的启示是版本策略：当数字版成为默认，实体首发的附加价值（包装、特典、可陈列性）比折扣更能驱动购买。",
+     "recommendation": "时之笛 Switch 2 版成今年美国最畅销实体游戏，销量破百万"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 独立开发者 @temkosoft",
+     "tags": [
+      "体育",
+      "多人派对",
+      "街机"
+     ],
+     "title": "temkosoft 的《just volleyball》发售：¥17.36 的多人街机排球，支持 1v1 到 6v6",
+     "en_title": "my multiplayer arcade volleyball game 'just volleyball' is OUT NOW",
+     "full_text": "my multiplayer arcade volleyball game 'just volleyball' is OUT NOW🏐\n\ncatch the launch discount and pick it up for $4.95 while you can! https://t.co/FGjvWN90WK",
+     "author": "temkosoft",
+     "date": "2026-11-16",
+     "likes": 3576,
+     "views": 182109,
+     "link": "https://x.com/temkosoft/status/2122371137502126402",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2122361908674088960/img/r8atlkxaUv4sVdT4.jpg",
+      "video_url": "https://x.com/temkosoft/status/2122371137502126402/video/1"
+     },
+     "summary": "temkosoft 宣布多人街机排球《just volleyball》发售，首发折扣价 4.95 美元（Steam 国区 ¥17.36）。游戏支持 1v1、2v2 到 6v6 的在线与本地对战，强调「独特但直觉」的操作与高操作上限。推文 3,576 赞、18.2 万浏览，Steam 已有 1,328 条用户评测。",
+     "analysis": "",
+     "recommendation": "《just volleyball》发售：¥17.36 的 6v6 街机排球，首日 1300+ 条评测",
+     "featured": true,
+     "game_ref": "just volleyball",
+     "enrichment": {
+      "game_name": "just volleyball",
+      "genre": "体育 / 休闲 / 动作 / 独立",
+      "developer": "temkosoft（小型独立团队）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "¥17.36（首发折扣 4.95 美元）",
+      "release_date": "已发售 · 2026年11月16日",
+      "steam_rating": "1,328 条用户评测",
+      "steam_url": "https://store.steampowered.com/app/5037200/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5037200/cd1b5a290d15e7379b31dcacc12f1e5b25d37577/header.jpg?t=1794852941",
+      "youtube_video": null,
+      "description": "把排球做成「谁都能上手、但打得深」的多人街机游戏，发售两天就攒下千余条评测。\n\n【核心玩法】在线与本地对战，支持 1v1、2v2 直到 6v6 的整队对抗。规则就是排球：过网、落地、得分，但操作被重新设计——移动、起跳与击球的方向由输入时机与角度决定，因此同一次扣球可以打出完全不同的轨迹。\n\n【操作与深度】作者强调「独特但直觉」的控制方案：入门只需要移动与一次击球，进阶则要处理拦网时机、二传角度与队友站位。6v6 模式下每个人只负责一小块区域，配合失误会立刻被放大，这也是它比同类派对游戏更耐玩的原因。\n\n【模式与节奏】单局时长短，适合连续开局；本地多人让它天然适合聚会场景，在线模式则承担长线留存。\n\n【优势】规则零学习成本，操作上限却很高；¥17 级别的定价把决策成本压到最低；6v6 的团队配合在同类街机体育里少见。\n【不足】内容体量偏小，长期靠社区与平衡性更新支撑；单人玩家缺少可推进的目标线。\n\n【综合】一个典型的「小体量、强手感」独立作品：不靠美术与叙事，靠操作表达与多人对抗立足。",
+      "why_notable": "发售两天 1,328 条评测、3,576 赞；把排球做到 6v6 的街机手感，是低价多人派对里少见的深操作样本",
+      "pcu": "暂无公开数据（未进当日 Steam Top 500）",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "暂无官方数据（1,328 条评测）"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "中世纪",
+      "沙盒",
+      "破产重组"
+     ],
+     "title": "中世纪沙盒《Chronicles: Medieval》从破产边缘被救回，Steam 仍定 2027 年推出",
+     "en_title": "Medieval sandbox game Chronicles: Medieval gets saved from bankruptcy",
+     "full_text": "Medieval sandbox game Chronicles: Medieval gets saved from bankruptcy: https://t.co/6pAsZIVodD https://t.co/4LisgiGY4P",
+     "author": "nichegamer",
+     "date": "2026-11-17",
+     "likes": 7,
+     "views": 656,
+     "link": "https://x.com/nichegamer/status/2122727527810560021",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXVxb-NXEAAUnCl.jpg"
+     },
+     "summary": "Niche Gamer 报道：中世纪沙盒游戏《Chronicles: Medieval》已从破产危机中被救回，项目得以继续。Steam 商店页显示本作由 Raw Power Games 开发兼发行，定位是「百年战争时代」的开放沙盒：探索基于真实历史构建的欧洲大陆、率领军队投入大规模战役、靠战功累积声望，目前标注 2027 年推出，含抢先体验标签。",
+     "analysis": "",
+     "recommendation": "中世纪沙盒《Chronicles: Medieval》从破产边缘被救回，2027 年仍要发",
+     "game_ref": "Chronicles: Medieval",
+     "enrichment": {
+      "game_name": "Chronicles: Medieval",
+      "genre": "动作 / 角色扮演 / 策略 / 沙盒",
+      "developer": "Raw Power Games（开发兼发行）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": "2027年（未定）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2231020/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2231020/322a3e5e98ce955972508f8ae5a6eb569ee40742/header.jpg?t=1791486435",
+      "youtube_video": null,
+      "description": "一款以百年战争时代欧洲为舞台的中世纪沙盒，卖点是「真实历史骨架 + 大规模会战」。\n\n【核心玩法】玩家在开放的中世纪欧洲大陆上行动：接任务、经营声望、招募并率领部队，把个人战斗与军队级会战接在同一套系统里。商店页强调「刀光剑影」的近战体验与「扬名立万」的成长线。\n\n【世界与历史】地图与势力基于真实历史构建，城镇、贵族与战场都有对应原型；这类作品的表现力高度依赖历史考据与战场调度，而不是奇幻设定。\n\n【开发状态】项目一度陷入破产危机，据 Niche Gamer 报道已被救回并继续推进；Steam 页面标注 2027 年，并带抢先体验标签，说明正式版仍远。\n\n【优势】中世纪写实沙盒是供给稀缺的品类；「个人 + 军队」双层玩法若做通，差异化明显。\n【不足】历史向沙盒的内容与平衡成本极高；经历破产重组后，团队与工期风险仍是最大变量。\n\n【综合】题材与系统方向都对，但现阶段更像一份「活下来了」的进度报告，实际品质要看抢先体验后能否兑现会战规模。",
+      "why_notable": "破产边缘被救回的中世纪写实沙盒，2027 年仍计划推出；写实历史向沙盒本身是稀缺品类",
+      "pcu": "暂未发售",
+      "current_players": "暂未发售",
+      "estimated_sales": "暂无官方数据"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "柏青哥",
+      "Roguelike",
+      "免费开玩"
+     ],
+     "title": "《High Roller Penny》定档 2027 年 1 月 11 日：柏青哥式肉鸽，Steam 免费开玩",
+     "en_title": "Bouncy anime girl puzzle game High Roller Penny has a release date",
+     "full_text": "Bouncy anime girl puzzle game High Roller Penny has a release date: https://t.co/aUND2PFMPG https://t.co/5dGkXGqt5H",
+     "author": "nichegamer",
+     "date": "2026-11-17",
+     "likes": 96,
+     "views": 4653,
+     "link": "https://x.com/nichegamer/status/2122484715236024786",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2122484657279180800/pu/img/I_N4o0LQgSozPh1M.jpg",
+      "video_url": "https://x.com/nichegamer/status/2122484715236024786/video/1"
+     },
+     "summary": "Niche Gamer 报道《High Roller Penny》确定发售日：Steam 商店页（国区名《赌命兔女郎》）显示 2027 年 1 月 11 日推出，免费开玩，开发商为 Kniv Studio。玩法是柏青哥式的钉板构筑：用特殊钉子、弹球与被动效果搭出最高分的板面，失败即被「当场处决」，整体包装走暗黑荒诞路线。",
+     "analysis": "",
+     "recommendation": "《High Roller Penny》定档 2027-01-11：柏青哥式肉鸽，Steam 免费开玩",
+     "game_ref": "High Roller Penny",
+     "enrichment": {
+      "game_name": "High Roller Penny",
+      "genre": "Roguelike / 模拟 / 休闲（柏青哥）",
+      "developer": "Kniv Studio",
+      "platforms": [
+       "Steam（Windows / macOS）"
+      ],
+      "price": "免费开玩",
+      "release_date": "2027年1月11日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4944410/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4944410/1792869bb69b4e87280c488e5ddd37d6b72dba93/header_schinese.jpg?t=1794899817",
+      "youtube_video": null,
+      "description": "把柏青哥改造成肉鸽构筑的免费游戏，靠「钉板布局」而不是数值堆叠做深度。\n\n【核心玩法】每局先搭建钉板：放置特殊钉子、弹球与被动效果，形成一条能把球送进高分区、又能反复触发的路径。球路一旦跑顺，分数会指数级增长；跑不顺就直接进入「处决」结算。\n\n【构筑与随机】柏青哥天然的物理随机性提供了肉鸽所需的波动，玩家的决策集中在板面结构与触发顺序上——这与《9 Kings》式的「布局即玩法」同源，但物理反馈更直观。\n\n【表现与定位】强风格化包装（兔女郎 + 死亡游戏），明显面向直播与短视频传播；免费开玩，靠内购或后续内容变现。\n\n【优势】钉板物理的即时反馈极适合演示；免费门槛 + 荒诞题材的组合容易拿到第一波流量。\n【不足】物理随机容易带来「看运气」的挫败感；玩法外延较窄，长期留存要靠持续加钉子与模式。\n\n【综合】一个把柏青哥的赌博快感转成构筑决策的小体量作品，传播潜力大于内容厚度。",
+      "why_notable": "柏青哥 + 肉鸽 + 免费开玩，2027 年 1 月定档；物理钉板的即时反馈天然适合传播",
+      "pcu": "暂未发售",
+      "current_players": "暂未发售",
+      "estimated_sales": "暂无官方数据"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X · 媒体 @IndieGamesDevel（转 @gameralphabeta）",
+     "tags": [
+      "类银河城",
+      "手绘动画",
+      "开发中"
+     ],
+     "title": "《Lola's Familiars: Prison of Argnoh》：手绘动画的轻量类银河城，主角只为赢下「使魔大赛」",
+     "en_title": "Hand-animated lite-vania adventure, Lola's Familiars: Prison of Argnoh",
+     "full_text": "RT @gameralphabeta: She only wanted to win a Familiar Contest!\n\nHand-animated lite-vania adventure, Lola's Familiars: Prison of Argnoh\n\nWis…",
+     "author": "indiegamesdevel",
+     "date": "2026-11-17",
+     "likes": 0,
+     "views": 8,
+     "link": "https://x.com/indiegamesdevel/status/2122625968569270388",
+     "media": null,
+     "summary": "媒体转发一款手绘动画风格的轻量类银河城《Lola's Familiars: Prison of Argnoh》：故事起点是主角 Lola 只想赢下一场「使魔大赛」，却卷进恶魔地牢。Steam 页面显示由 Caracal Games 开发，发售时间「即将宣布」，主打与强大使魔签订契约、探索魔法领域。",
+     "analysis": "轻量类银河城（lite-vania）这两年靠「短时长 + 高完成度」抢到了不少注意力，这类作品的胜负点通常不在系统深度，而在动画手感与情感线是否成立。手绘动画本身就是最强的短视频素材，适合作为曝光抓手。",
+     "recommendation": "《Lola's Familiars: Prison of Argnoh》：手绘动画的轻量类银河城，发售日待定",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "派对游戏",
+      "暴力美学",
+      "主机移植"
+     ],
+     "title": "《机械狂欢》（Machine Party）确认登陆主机：一款「输了就死」的暴力派对合集",
+     "en_title": "Bloody friendslop Mario Party-esque game Machine Party is coming to consoles",
+     "full_text": "Bloody friendslop Mario Party-esque game Machine Party is coming to consoles: https://t.co/gsdCwONWtF https://t.co/UePLnUhooy",
+     "author": "nichegamer",
+     "date": "2026-11-16",
+     "likes": 10,
+     "views": 3890,
+     "link": "https://x.com/nichegamer/status/2122458643748606217",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2122458616129011712/pu/img/PyelnE8i_HbSaVef.jpg",
+      "video_url": "https://x.com/nichegamer/status/2122458643748606217/video/1"
+     },
+     "summary": "Niche Gamer 报道：被形容为「血腥版马力欧派对」的《机械狂欢》（Machine Party）确认将登陆主机。Steam 版已于 2026 年 7 月 30 日发售，售价 ¥33，累计 5,147 条评测，由 Mike Klubnika 等开发、Oro Interactive 发行，玩法是主打暴力美学的派对游戏合集——输掉比赛等于「命丧黄泉」。",
+     "analysis": "「friendslop」这个标签本身就是需求信号：玩家要的是可以和朋友一起出丑、一起爆笑的低门槛场景，而不是精密的胜负。主机移植意味着它已经验证过 PC 端的传播模型，接下来拼的是手柄操作与本地多人的适配质量。",
+     "recommendation": "《机械狂欢》确认登陆主机：「输了就死」的暴力派对合集，Steam 已有 5,147 条评测",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "模拟经营",
+      "怀旧",
+      "建造"
+     ],
+     "title": "《Boardwalk Builders》评测：把海边栈道做成一座「怀旧主题公园」的建造模拟",
+     "en_title": "Boardwalk Builders is a nostalgic trip to make the best shore destination",
+     "full_text": "Boardwalk Builders is a nostalgic trip to make the best shore destination: https://t.co/NqM1j9oCGT https://t.co/jYsPWnj6iR",
+     "author": "nichegamer",
+     "date": "2026-11-17",
+     "likes": 3,
+     "views": 945,
+     "link": "https://x.com/nichegamer/status/2122701872947483087",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXVaGsbXEAAhgDI.jpg"
+     },
+     "summary": "Niche Gamer 介绍建造模拟《Boardwalk Builders》：玩家规划一条滨海栈道，建造过山车等游乐设施、特色商铺与主题餐厅，靠景点组合吸引人流，举办节庆活动、争取贵宾并维护本地商家关系。Steam 版由 Studio Primitive 开发、Liminal Pendulum 发行，2026 年 5 月 11 日发售，售价 ¥24.75。",
+     "analysis": "模拟经营的竞争点已经从「造得多」转向「造得像」：这套系统的核心是景点组合产生的连锁吸引力，而不是单纯的数值升级。¥25 的定价与海滨怀旧题材，瞄准的是低压力、长会话的休闲玩家。",
+     "recommendation": "《Boardwalk Builders》：把海边栈道做成怀旧主题公园的建造模拟，¥24.75",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · Unity 官方 @unitygames（同口径：@unitygames 官方示例场景公告）",
+     "tags": [
+      "Unity",
+      "引擎版本",
+      "全局光照"
+     ],
+     "title": "Unity 在东京直播公布 Unity 6.7 与 Unity 7 路线，同时放出 URP 动态全局光照示例场景 Atrio",
+     "en_title": "We are LIVE from Tokyo revealing what's next in Unity 6.7 and Unity 7",
+     "full_text": "We are LIVE from Tokyo revealing what’s next in Unity 6.7 and Unity 7 🚨\n\nTune in or else… \n\n🔗 https://t.co/1TmpQCv5NK https://t.co/9cZs1W5KgC",
+     "author": "unitygames",
+     "date": "2026-11-17",
+     "likes": 41,
+     "views": 6877,
+     "link": "https://x.com/unitygames/status/2122495062214897845",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2122495034704441345/pu/img/ZG7y8bwwQBNXDSs8.jpg",
+      "video_url": "https://x.com/unitygames/status/2122495062214897845/video/1"
+     },
+     "summary": "Unity 在东京举行直播，公布 Unity 6.7 与 Unity 7 的后续路线；同日官方发布新示例场景 Atrio，用于展示 URP 新增的动态全局光照系统 Surface Cache GI：可实时计算间接光照、完整支持动态几何体，画面中的光照与反射全部实时捕获。",
+     "analysis": "对开发者真正有决策价值的是 GI 落地到 URP：此前实时全局光照基本是 HDRP 的专属能力，一旦 URP 可用，中低配项目也能在不换管线的前提下拿到间接光效果，代价是 GPU 预算与场景优化方式的改变。建议在 6.7 上先跑 Atrio 做一次真机性能基线，再决定是否把现有项目迁移。",
+     "recommendation": "Unity 公布 6.7 与 Unity 7 路线，URP 动态全局光照示例 Atrio 已可下载",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · 韩文技术博主 @stellargent_lab",
+     "tags": [
+      "AI 工具",
+      "单人开发",
+      "工具清单"
+     ],
+     "title": "韩国开发者整理 18 个「一个人做游戏」的 AI 工具：从企划、引擎操作到 Blender 全链路",
+     "en_title": "혼자 게임 만드는 분들을 위한 AI 도구 18개, 용도별 정리",
+     "full_text": "혼자 게임 만드는 분들을 위한 AI 도구 18개, 용도별 정리\n\n1. 기획 & 진행 관리\n- eremes81/game-design-ai-practice: 24년 차 게임 기획자가 쓴 Claude Code 실무서예요. 전투·밸런스·레벨 중 필요한 챕터를 골라 예제 코드를 돌려보면 됩니다\n- dudwns0921/claude-gamedev-kit: 게임 폴더에 설치하고 \"아늑한 농장 게임 만들고 싶어\"라고 말하면 에이전트들이 스펙, 디자인, 빌드를 돌려요. 진행 상황은 대시보드로 봅니다\n- OpenDCAI/GameFactory-3A: 요구사항을 주면 이미지·3D·모션·사운드를 만들고 UE5·Unity·Godot·three.js 코드까지 짜줘요\n\n2. AI가 엔진과 툴을 직접 조작\n- Unity-Technologies/skills: 유니티 공식 스킬이에요. 프로젝트 생성·빌드·패키지 관리를 에이전트가 맡아요\n- EL4CTEO/blender-skills: 블렌더 스킬 28개. 모델링·UV·리깅·베이킹·익스포트를 말로 시킬 수 있어요\n- scenario-labs/skills: 텍스처·스카이박스·3D 에셋을 만들고, Blender·Maya·ZBrush·Unreal·Unity를 다루는 전문가 스킬도 들어 있어요\n\n3. three.js 웹게임\n- majidmanzarpour/threejs-game-skills: \"threejs-game-director로 만들어줘\" 하면 게임플레이·그래픽·UI·사운드·검증을 나눠 맡겨요\n- MengTo/Skills: 디자인 스킬 모음인데, 전투 애니메이션·몬스터 시스템·레벨 작성·플레이 테스트 같은 게임 스킬도 골라 쓸 수 있어요\n- lovisdotio/video-to-game: 게임플레이 영상을 넣으면 프레임을 분석하고 에셋을 만들어 브라우저 게임으로 바꿔요 (fal API 키 필요)\n- viettranx/3dviz-pro-max: 아이디어 한 줄을 돌아다닐 수 있는 3D 씬으로 바꿔줘요\n\n4. 이펙트·예제·최적화\n- achrefelouafi/LinearAbiltyCastingThreeJS: 이펙트를 셰이더 코드로 직접 짠 롤식 스킬샷 샌드박스. 이펙트 코드 공부하기 좋아요\n- boona13/mykonos-island-voxels: 14×14 격자에 클릭으로 블록을 쌓는 아이소메트릭 마을 빌더. 빌드 시스템 참고용으로 좋아요\n- gykim80/andrew_game_perf: AI가 짠 게임 코드에서 프레임 드랍 패턴 10가지를 찾아 고쳐줘요 (Three.js·PixiJS·Phaser·React)\n\n5. 2D 스프라이트 & 픽셀아트\n- aldegad/sprite-gen: 기준 이미지 한 장으로 같은 캐릭터를 유지한 채 포즈별 투명 프레임과 스프라이트 시트를 뽑아줘요. 모션 루프 영상도 됩니다\n- handsupmin/mono-pix: AI가 만든 가짜 픽셀아트의 흐린 경계와 어긋난 격자를 진짜 픽셀 그리드로 고쳐줘요. 브라우저에서 무료, 설치 필요 없어요\n\n6. 3D 모션 & 애니메이션\n- MaxLiu22/Motion2MixamoRig: 한 사람이 나오는 동작 영상(사진도 가능)을 Mixamo 캐릭터에 입혀 내보내요. 블렌더 애드온 버전은 코딩 없이 쓸 수 있어요\n- Friedrich-M/UniMate: 사람·네발짐승·새·뱀처럼 뼈대가 달라도 텍스트 한 줄로 애니메이션을 만들어요. 내가 리깅한 GLB·FBX 모델도 넣을 수 있어요\n- alchaincyf/3d-vibe-coding-handbook: 이미지로 3D 모델을 만든 뒤 폴리곤 줄이기·리깅·애니메이션까지 직접 해보고 쓴 386쪽 핸드북(중국어). 문제 증상별 색인이 알짜예요\n\n일부는 비영리 라이선스라, 상업 게임에 쓸 땐 꼭 확인하세요.\n\n혼자 게임 만드는 분들은 에셋이랑 모션만 AI한테 맡겨도 체감이 확 달라요.\n써보고 괜찮았던 도구 있으면 댓글로 알려주세요.",
+     "author": "stellargent_lab",
+     "date": "2026-11-16",
+     "likes": 614,
+     "views": 33856,
+     "link": "https://x.com/stellargent_lab/status/2122476903743582280",
+     "media": null,
+     "summary": "博主按用途整理了 18 个面向单人开发者的 AI 工具，并按四类组织：企划与进度管理（如 24 年从业者写的 Claude Code 实战书 game-design-ai-practice、装进游戏目录后由 Agent 产出规格/设计/构建的 claude-gamedev-kit、给需求就能出图出 3D 出动作并生成 UE5/Unity/Godot/three.js 代码的 GameFactory-3A）；让 AI 直接操作引擎与工具（Unity 官方的 skills 仓库负责建项目、构建与包管理，blender-skills 提供 28 个建模与 UV 技能）等。",
+     "analysis": "这类清单的价值不在工具本身，而在它揭示了当前的分工边界：AI 已经能接管「有明确输入输出」的环节（规格文档、构建脚本、模型 UV），但企划与玩法判断仍留在人这边。对团队来说，最实际的用法是先照清单把 pipeline 里重复度最高的两三步自动化，而不是一次性替换整条链路。",
+     "recommendation": "18 个单人做游戏的 AI 工具清单：从 Claude Code 企划书到 Unity 官方 skills"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**GTA 6 还没发售，已经进了年度游戏六强**\nThe Game Awards 公布 2026 年度游戏提名：007 First Light、Control Resonant、Grand Theft Auto VI、Phantom Blade Zero、Resident Evil Requiem、The Legend of Zelda: Ocarina of Time。提名由 160 家媒体组成的评审团选出，Eurogamer 统计 GTA 6 在发售前已拿到 8 项提名。颁奖礼 12 月 10 日直播。\n\n**有人选择躲开，也有人选择贴上去**\nEurogamer 采访了几家主动贴近 GTA 6 档期的团队：Escape Academy 2 从 9 月挪进 11 月，理由是「比起一部巨作，更怕一周里挤着 15 部好游戏」；Atari 把《Barbie Rewind》《哥斯拉》复刻版填进空掉的 11 月；Nicalis 干脆把《以撒的结合：忏悔+》主机版定在 11 月 19 日，与 GTA 6 同日。空出来的货架，反而便宜。\n\n**Agent 的纪律：Lint 比提示词硬**\nxAI 工程师 Lauren Tan 上个月一个人合了 3,000 个 PR，回滚率约 0.5%。她的做法不是把规则写进 AGENTS.md，而是每次 Agent 犯错就固化成静态检查或架构约束——让错误在提交前就不可能发生。这类「把提示词换成工程约束」的思路，比换模型更能降低返工。\n\n**新游侧：小体量与免费**\n多人街机排球《just volleyball》以 ¥17.36 发售，支持 6v6，首日已有 1,328 条评测；中世纪沙盒《Chronicles: Medieval》从破产边缘被救回，仍定 2027 年；柏青哥肉鸽《High Roller Penny》定档 2027 年 1 月 11 日，免费开玩。\n\n**平台与法律**\n伦敦竞争上诉法庭驳回针对索尼的 20 亿英镑集体诉讼，认定主机与 PC、任天堂同处一个竞争市场；《塞尔达传说：时之笛》Switch 2 版成为 2026 年美国最畅销实体游戏，销量破百万。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
