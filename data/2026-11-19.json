@@ -1,0 +1,563 @@
+{
+ "date": "2026-11-19",
+ "meta": {
+  "raw_count": 308,
+  "filtered_count": 209,
+  "selected_count": 12,
+  "crawl_time": "2026-11-19 10:30"
+ },
+ "lede": "Epic 千万日元奖金的 AI Game Jam 上，全程不用 AI 的《LSD:FIH》冲上 itch.io 人气第一；GTA 6 媒体评分 99，追平《时之笛》的 Metacritic 史上最高分，而 1,600 名 Rockstar 英国员工正在发售前夜投票组建工会；《Dungeonbound》靠「任意两件装备熔合」上线 48 小时卖出 4 万份。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "Epic 千万日元 AI Game Jam 上，全程不用 AI 的《LSD:FIH》冲上人气第一"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《Dungeonbound》：任意两件装备可熔合，上线 48 小时卖出 4 万份"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "GTA 6 开分 99，追平 1998 年《时之笛》的 Metacritic 史上最高分"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "Epic 千万日元 AI Game Jam 上，全程不用 AI 的《LSD:FIH》冲上人气第一\nBarret李靖：团队不精通 Rust 也交给 AI 写核心系统，编程正变成黑盒编程\n日本开发者 10 条 AI 做游戏经验：关键不是提示词，是给 AI 造不易失败的环境"
+  },
+  {
+   "id": "industry",
+   "text": "GTA 6 开分 99，追平 1998 年《时之笛》的 Metacritic 史上最高分\nRockstar 1,600 名英国员工投票组建工会，若通过将是英国游戏业最大工会\n《Slay the Spire 2》790 万份、1.576 亿美元，只上 PC 就排进 2026 全平台第六\nPlayStation 11 年来首次无缘 TGA 年度游戏提名"
+  },
+  {
+   "id": "indie",
+   "text": "《Dungeonbound》：任意两件装备可熔合，上线 48 小时卖出 4 万份\n《Calame》：战斗中可以改写地形的战术 RPG，定档 2027 年 2 月\n《EXODUS》公开女主实机：前 BioWare 团队操刀的科幻 RPG，2027 年 4 月发售"
+  },
+  {
+   "id": "tools",
+   "text": "Unity CLI 1.0 正式版：Agent 能搭关卡、写代码、编译修错并试玩场景\nInk Studio 开源：3D 像素叠高斯泼溅，独立开发者免费做可走进的场景"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 日本媒体 @AUTOMATONJapan",
+     "tags": [
+      "AI游戏",
+      "Game Jam",
+      "行业风向"
+     ],
+     "title": "Epic 的「AI 推荐」Game Jam 上，一个全程不用 AI 的作品冲上人气第一",
+     "en_title": "賞金総額1000万円のAI利用推奨ゲームコンテストで「AI不使用ゲーム」が人気トップに。“逆張り参戦”ゲームが謎の躍進",
+     "full_text": "賞金総額1000万円のAI利用推奨ゲームコンテストで「AI不使用ゲーム」が人気トップに。“逆張り参戦”ゲームが謎の躍進\nhttps://t.co/WTpgqHTH27 https://t.co/tLPwnc80WT",
+     "author": "AUTOMATONJapan",
+     "date": "2026-11-19",
+     "likes": 2171,
+     "views": 246770,
+     "link": "https://x.com/AUTOMATONJapan/status/2122998631989202953",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXZoGTTa0AArv9D.jpg"
+     },
+     "summary": "Epic Games 于 11 月 12—15 日举办「2026 Epic AI MegaJam」，主题「DIRECTOR'S CUT」，四天内收到 2,782 件投稿，奖金总额 6.5 万美元（约 1,000 万日元），并鼓励参赛者使用 AI 工具（赞助方包括 Anthropic、Google、OpenAI、NVIDIA 等）。但 itch.io 的「Popular」人气排序第一名《LSD:FIH》由波兰个人开发者 PolyCube 制作，明确声明全程未使用 AI，作者还以「我在 AI 垃圾的战争里站 LSD:FIH 这边」的梗图自嘲参赛。",
+     "analysis": "这不是「AI 输了」的证明——人气排序只反映曝光与下载，和评委打分是两套体系。真正值得看的是信号：当官方赛事公开鼓励 AI 时，反 AI 反而成了一个可传播的立场标签，作品能靠「态度」先拿到注意力。对做发行和传播的人来说，AI 使用与否正在从技术选择变成叙事资产，这一点比名次更重要。",
+     "recommendation": "Epic 千万日元 AI Game Jam 上，全程不用 AI 的《LSD:FIH》冲上人气第一",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 中文 KOL @Barret_China",
+     "tags": [
+      "AI编程",
+      "工程管理",
+      "组织变革"
+     ],
+     "title": "Barret李靖：Rust 系统也敢交给 AI 写，编程正在变成「黑盒编程」",
+     "en_title": "程序员需要逐渐接受一个现实，未来很多编程工作会变成黑盒编程。",
+     "full_text": "程序员需要逐渐接受一个现实，未来很多编程工作会变成黑盒编程。\n\n我们团队有不少系统是用 Rust 写的，但真正精通 Rust 的人并不多。有些系统很复杂，承载着高并发、高流量的业务，我们仍然敢让 AI 去开发。\n\n为什么？\n\n因为我们开始把更多精力放在需求、架构约束和验收标准上。系统应该具备什么能力，性能和稳定性要达到什么水位，哪些安全规范必须遵守，哪些测试必须通过，这些事情需要提前定义清楚。\n\n至于代码具体怎么写、函数怎么组织，很多时候可以交给 AI。\n\n当然，架构设计还是要关注，尤其是复杂的重系统。只不过，工程师不需要再盯着每一行代码、每一个实现细节。\n\n我们真正需要做的事情，是深入理解业务想要什么，为什么要做，以及如何建立一套可靠的工程体系，让 AI 能够持续交付。\n\n写代码这件事情，正在逐渐从工程师的核心工作中退出。",
+     "author": "Barret_China",
+     "date": "2026-11-19",
+     "likes": 222,
+     "views": 20994,
+     "link": "https://x.com/Barret_China/status/2123058891869098232",
+     "media": null,
+     "summary": "Barret李靖（技术负责人、公众号作者）称团队里真正精通 Rust 的人不多，但承载高并发业务的核心系统仍然敢交给 AI 写。原因是团队把精力前移到需求、架构约束、性能水位、安全规范与测试验收这几件事上，代码怎么写、函数怎么组织则放手给 AI。他的结论是：写代码正逐渐从工程师的核心工作中退出。",
+     "analysis": "这条的价值在于它给出了一个可操作的分界线：不是「AI 能不能写」，而是「团队有没有能力在写之前把约束和验收定义清楚」。对游戏团队同样成立——能让 Agent 稳定产出代码的，是有明确接口、有测试、有性能门槛的模块；反过来，那些没人说得清「做对了是什么样」的系统，交给 AI 只会放大返工。",
+     "recommendation": "Barret李靖：团队不精通 Rust 也交给 AI 写核心系统，编程正变成黑盒编程",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 日本开发者 @kagetica（株式会社インベーダーズ）",
+     "tags": [
+      "AI游戏开发",
+      "工作流",
+      "方法论"
+     ],
+     "title": "日本开发者总结 10 条 AI 做游戏的经验：关键不是提示词，是给 AI 造一个不容易失败的环境",
+     "en_title": "AIゲーム制作での個人的知見まとめ。",
+     "full_text": "AIゲーム制作での個人的知見まとめ。\n\n・「一発ポン出し」でいいものを作るのは無理\n\n・遊びのメカニクスとユーザー体験をちゃんと言語化してゴールを認識一致する必要あり。\n\n・AIに全部丸投げするより、先に「AIが操作するツール」や「品質のブレ（ボラティリティ）を下げる仕組み」を作ることが超重要\n\n・感覚的な微調整はテキストで伝えきれない。HTMLベースの調整ツールをAIに作らせ、手動でいじった数値をそのままAIに渡せるようにすると強い\n\n・そのHTML監修ツールには「変更箇所を一括でプロンプト化するボタン」をつけるのがおすすめ。あちこち触った後に指示文を考える手間が消える\n\n・ゼロイチのテキスト指示より、まず画像生成や動画生成でビジュアルの正解を作ってから渡すほうが圧倒的にいいものになる\n\n・目的に対しての手段が適切かを確認できるシートが必要　これやるためにこのツール使う、これを表現するためにこれを使う\nその上でもっといい手段や方法を探したり探してもらうと良い\n\n・ちゃんとオントロジーやナレッジグラフを作ってもらう。ゲームは情報の関係性が複雑すぎるのでテキストやAIが理解しやすい情報データベースを作る。\n\n・同じように制作の成功例失敗例をまとめて成功を引きやすいようにする。\n\n結論：AIに「作らせる」だけでなく「AIが失敗しにくい環境とツール」を整えることで、本当にいいものが作りやすくなる。",
+     "author": "kagetica",
+     "date": "2026-11-19",
+     "likes": 318,
+     "views": 24154,
+     "link": "https://x.com/kagetica/status/2122936751106961430",
+     "media": null,
+     "summary": "吉田影近（株式会社インベーダーズ）把自己用 AI 做游戏的踩坑总结成 10 条：一次提示出不了好作品；必须先把玩法和体验语言化、和 AI 对齐目标；与其全丢给 AI，不如先做出「AI 可以操作的工具」和降低质量波动的机制；让 AI 生成一个基于 HTML 的调参工具，手动调完直接把数值回灌给 AI，并加一个「把改动一键转成提示词」的按钮；先用图像/视频生成锁定视觉答案再交给 AI；维护本体论与知识图谱，并沉淀成功/失败案例库。",
+     "analysis": "这份清单几乎是「Agent 时代的游戏工业化」：把人的判断从「描述想要什么」换成「构造让 AI 不容易做错的结构」。其中「把手工调参的结果一键转成提示词」这条最实用——它解决了策划改数值、程序看不懂意图的老问题，本质上是把可调参数与自然语言指令打通。",
+     "recommendation": "日本开发者 10 条 AI 做游戏经验：关键不是提示词，是给 AI 造不易失败的环境"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "X · 媒体 @eurogamer",
+     "tags": [
+      "GTA 6",
+      "评分",
+      "市场"
+     ],
+     "title": "GTA 6 媒体评分 99，追平《塞尔达传说：时之笛》成为 Metacritic 史上并列最高分",
+     "en_title": "Just a couple of hours after reviews have gone live, with a score of 99 on Meta Critic, GTA 6 shares the crown for highest rated game of all time with The Legend of Zelda: Ocarina of Time (1998).",
+     "full_text": "Just a couple of hours after reviews have gone live, with a score of 99 on Meta Critic, GTA 6 shares the crown for highest rated game of all time with The Legend of Zelda: Ocarina of Time (1998). https://t.co/d8PZY6C11W",
+     "author": "eurogamer",
+     "date": "2026-11-19",
+     "likes": 51,
+     "views": 4121,
+     "link": "https://x.com/eurogamer/status/2123042302293615078",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXaPuSeWUAARthN.jpg"
+     },
+     "summary": "评测解禁数小时后，GTA 6 的 Metacritic 均分达到 99，与 1998 年的《塞尔达传说：时之笛》并列成为 Metacritic 史上评分最高的游戏。Digital Foundry 称其为「重新定义一代主机的里程碑」，GameSpot 形容它「体量惊人、痴迷于会被浩瀚淹没的细节」。多家报道：Eurogamer、GameSpot、Digital Foundry、Polygon、TheGamer。",
+     "analysis": "99 分意味着 Rockstar 又把「开放世界」的评分天花板顶了一次，但这次的关键不在画面，而在密度——大量可被发现的小细节撑起了「这世界是真的」的幻觉。对从业者的提醒是：这种投入产出比只有 GTA 这一档能撑住，把它当行业标准去追，会直接踩进成本陷阱。",
+     "recommendation": "GTA 6 开分 99，追平 1998 年《时之笛》的 Metacritic 史上最高分",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "X · 媒体 @pcgamer",
+     "tags": [
+      "劳工",
+      "Rockstar",
+      "工会"
+     ],
+     "title": "GTA 6 发售前夜：1,600 名 Rockstar 英国员工正在投票组建工会",
+     "en_title": "'We need to come together': On the eve of GTA 6, 1,600 Rockstar workers are voting on unionization",
+     "full_text": "'We need to come together': On the eve of GTA 6, 1,600 Rockstar workers are voting on unionization https://t.co/9TVy1mWc6p",
+     "author": "pcgamer",
+     "date": "2026-11-19",
+     "likes": 18,
+     "views": 2714,
+     "link": "https://x.com/pcgamer/status/2123098472262017170",
+     "media": null,
+     "summary": "PC Gamer 报道：超过 1,600 名 Rockstar 英国员工正在投票，决定是否成立 Rockstar Games Workers Union，投票 11 月 26 日截止；若获承认，它将是英国游戏行业规模最大的工会。同期格拉斯哥仲裁庭正在审理公司被指打压工会、解雇 34 名员工一案。工会代表 Nestor Uriarte 在《卫报》撰文指出，GTA 6 仅预购收入已超 16 亿美元，而员工仍在担心被裁——母公司 2K 近日被曝裁掉 Firaxis 三分之一员工。",
+     "analysis": "这是整条 GTA 6 叙事里最容易被忽略、但对从业者最相关的一条：产品创下历史纪录的同时，做产品的人在为最基本的议价权投票，而他们点名的最新变量是 AI。当「史上最大游戏」的团队都需要工会来对冲裁员与 AI 带来的岗位贬值，说明行业的结构性风险已经从个别工作室扩散到头部。",
+     "recommendation": "Rockstar 1,600 名英国员工投票组建工会，若通过将是英国游戏业最大工会",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "X · 媒体 @eurogamer",
+     "tags": [
+      "销量",
+      "独立游戏",
+      "Steam"
+     ],
+     "title": "《Slay the Spire 2》卖出 790 万份、1.576 亿美元，只上 PC 就排进 2026 全平台销量第六",
+     "en_title": "Slay the Spire 2 is one of this year's best selling games despite only being available on PC, and its players are \"obsessed\"",
+     "full_text": "Slay the Spire 2 is one of this year's best selling games despite only being available on PC, and its players are \"obsessed\"\n\nhttps://t.co/DusE9nmEx3 https://t.co/nxJnaGyrS7",
+     "author": "eurogamer",
+     "date": "2026-11-19",
+     "likes": 23,
+     "views": 4277,
+     "link": "https://x.com/eurogamer/status/2123016684785242166",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXZ3nuFbkAAe3Ew.jpg"
+     },
+     "summary": "Alinea Analytics 分析师 Rhys Elliott 估算，《Slay the Spire 2》自 3 月进入 Steam 抢先体验以来已售出约 790 万份，收入约 1.576 亿美元，成为 2026 年全平台销量第六——而它只登陆了 Steam。上线后月活从未低于 250 万，玩家平均游玩近 84 小时，190 万人超过 100 小时；约 10 万人买了没玩。近期新增角色的 beta 补丁让日活翻倍，创下六个月新高。",
+     "analysis": "一组值得记住的数字：单人向的策略卡牌、只发 PC、没有 3A 预算，却压过一票多平台大作。它的留存结构也很典型——超高时长 + 极高口碑，靠的是「构筑深度」这类可无限重玩的内容，而不是内容消耗量。对于做长线产品的团队，这比销量本身更有参考价值：能让人重复玩同一套系统的设计，才是低成本留存的来源。",
+     "recommendation": "《Slay the Spire 2》790 万份、1.576 亿美元，只上 PC 就排进 2026 全平台第六",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "X · 媒体 @eurogamer",
+     "tags": [
+      "PlayStation",
+      "TGA",
+      "平台格局"
+     ],
+     "title": "PlayStation 11 年来首次在 TGA 年度游戏提名中挂零",
+     "en_title": "PlayStation has no Game of the Year nominations at The Game Awards for the first time in 11 years",
+     "full_text": "PlayStation has no Game of the Year nominations at The Game Awards for the first time in 11 years\n\nhttps://t.co/MdBGuCe2wf https://t.co/Q30HjXp1q7",
+     "author": "eurogamer",
+     "date": "2026-11-19",
+     "likes": 21,
+     "views": 4741,
+     "link": "https://x.com/eurogamer/status/2123073149004828901",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXarNqEbQAArRMV.jpg"
+     },
+     "summary": "Eurogamer 统计，2026 年 The Game Awards 的年度游戏提名名单中没有任何一款 PlayStation 第一方作品，这是 11 年来的首次。本届提名由 GTA 6 领跑，Niche Gamer 也以「索尼 11 年 GOTY 提名纪录终结」报道了同一结果。",
+     "analysis": "连续 11 年的提名纪录中断，指向的不是某一年发挥失常，而是第一方节奏的空窗：单机大作开发周期被拉长到 5 年以上，中间年份很难维持密度。这与同期「AAA 越来越不可持续」的讨论是同一件事——当一部作品要吃掉整个世代的人力，平台方就必须靠第三方与独立作品填档期。",
+     "recommendation": "PlayStation 11 年来首次无缘 TGA 年度游戏提名，第一方今年集体缺席"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "肉鸽",
+      "自动战斗",
+      "独立游戏"
+     ],
+     "title": "louidev 的《Dungeonbound》上线 48 小时卖出 4 万份：把「任意两件装备熔合」做成肉鸽自动战斗的核心",
+     "en_title": "Roguelike autobattler Dungeonbound is an instant hit, sells over 40,000 copies",
+     "full_text": "Roguelike autobattler Dungeonbound is an instant hit, sells over 40,000 copies: https://t.co/yXg29xSzlR https://t.co/nuOqbkR11B",
+     "author": "nichegamer",
+     "date": "2026-11-19",
+     "likes": 5,
+     "views": 881,
+     "link": "https://x.com/nichegamer/status/2123077657747247491",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2123077599211458560/pu/img/MUzjYOBiEHp43Mbg.jpg",
+      "video_url": "https://x.com/nichegamer/status/2123077657747247491/video/1"
+     },
+     "summary": "Niche Gamer 报道：肉鸽自动战斗游戏《Dungeonbound》上线不到 48 小时售出超过 4 万份（开发者 louidev 公布）。游戏把地牢探索与背包管理结合，装备在网格中占格、位置会改变效果，战斗自动结算，玩家负责在战前把构筑做好。核心机制是「锻造」——任意两件道具可以熔合成一件同时保留两者能力的新装备。对手阵容来自其他玩家的构筑，打赢继续爬塔，自己的构筑也会进入别人的对手池。",
+     "analysis": "",
+     "recommendation": "《Dungeonbound》：任意两件装备可熔合，上线 48 小时卖出 4 万份",
+     "featured": true,
+     "game_ref": "Dungeonbound",
+     "enrichment": {
+      "game_name": "Dungeonbound",
+      "genre": "肉鸽 / 自动战斗 / 地牢探索 / 角色扮演",
+      "developer": "louidev（小型独立团队）",
+      "platforms": [
+       "Steam（Windows / macOS）"
+      ],
+      "price": "¥37.80",
+      "release_date": "已发售 · 2026年11月16日",
+      "steam_rating": "456 条用户评测",
+      "steam_url": "https://store.steampowered.com/app/5200620/Dungeonbound/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5200620/b3a32d9086038acf42c9457c2bc062f93d90ea3e/header.jpg?t=1794984507",
+      "youtube_video": "https://www.youtube.com/watch?v=gGWRC4vwXLs",
+      "description": "把「背包管理 + 自动战斗 + 肉鸽」三条线拧在一起，用一套装备熔合规则撑起整个构筑深度。\n\n【核心玩法】复古第一人称视角推进地牢，战斗自动进行，玩家真正要做的是战前配置：装备在网格里占格，放的位置会改变它的作用范围与效果，因此「摆得下」和「摆得好」是两件事。每次冒险失败，战利品照样带回家，转化为下一轮的成长。\n\n【熔合机制】整套系统的支点在锻造：任意两件道具可以合成一件同时保留双方能力的新装备。这意味着组合空间是指数级的——玩家不是在「找更强的装备」，而是在「造出别人想不到的装备」，单件道具的价值因此取决于它能不能被熔进某个组合。\n\n【对抗循环】对手阵容由其他玩家上传的构筑生成，打赢继续爬塔，自己的构筑也会被丢进对手池让别人挑战。这让版本环境变成玩家之间互相塑造的结果，而不是官方调平衡的产物。\n\n【内容体量】30 名可解锁英雄、740 件道具、100 件遗物；支持 2—4 人合作，另有独立的对战模式，并带有排位、每日爬塔、排行榜与增量式战役。\n\n【优势】熔合机制带来的构筑自由度极高；异步 PvP 让单机内容具备长线对抗；¥37.8 的定价把尝试门槛压得很低。\n【不足】自动战斗意味着操作表达空间有限，喜欢手操的玩家会觉得被动；复古画面与信息密度对小屏幕和新人都不算友好；平衡性高度依赖道具池，长线需要持续的版本维护。\n\n【综合】典型的「一个机制撑起一个游戏」：不靠美术和叙事，靠组合规则的可玩性取胜。48 小时 4 万份说明这类小而深的构筑游戏在 Steam 仍有稳定的需求。",
+      "why_notable": "上线 48 小时卖出 4 万份；用「任意两件装备熔合」这一条规则撬出指数级构筑空间，并靠玩家构筑互相成为对手实现异步对抗",
+      "pcu": "暂无公开数据（未进当日 Steam Top 500）",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "48 小时内超过 4 万份（开发者公布）",
+      "gi_summary": "「背包管理肉鸽」套「自动战斗」新瓶，louidev 独立开发，Steam 售价 ¥37.80"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "战术RPG",
+      "独立游戏",
+      "2027"
+     ],
+     "title": "Nextale Games 的《Calame》：能在战斗中途改写地形的战术 RPG，定档 2027 年 2 月",
+     "en_title": "Tactical RPG with a twist Calame launches in February 2027",
+     "full_text": "Tactical RPG with a twist Calame launches in February 2027: https://t.co/8DwhJ7A4Nj https://t.co/EFArXQui7u",
+     "author": "nichegamer",
+     "date": "2026-11-19",
+     "likes": 5,
+     "views": 1033,
+     "link": "https://x.com/nichegamer/status/2123058670212731245",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXaem_TWkAIOUFZ.jpg"
+     },
+     "summary": "Niche Gamer 报道：独立工作室 Nextale Games 的等距视角单机战术 RPG《Calame》定档 2027 年 2 月，登陆 PC（Steam）、Xbox Series X|S 与 PS5，PC 端已有可玩 Demo。玩家同时指挥肯梅尔与黑豹两支理念对立的叛军，在两者之间做取舍。核心机制叫「Correction」：战斗中可以实时改写地形，清路、炸桥、切断增援，把战场本身当成武器。",
+     "analysis": "",
+     "recommendation": "《Calame》：战斗中可以改写地形的战术 RPG，定档 2027 年 2 月",
+     "game_ref": "Calame",
+     "enrichment": {
+      "game_name": "Calame",
+      "genre": "战术 RPG / 回合制策略 / 独立",
+      "developer": "Nextale Games（独立工作室）",
+      "platforms": [
+       "Steam（Windows）",
+       "Xbox Series X|S",
+       "PS5"
+      ],
+      "price": "未公布",
+      "release_date": "2027年2月",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3299450/Calame/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3299450/b158fba50758c1410b9ae51b8eeab2306d651bf4/header.jpg?t=1793368643",
+      "youtube_video": null,
+      "description": "把「地形」从背景板变成可消耗的资源，是这个等距战术 RPG 最核心的差异点。\n\n【核心玩法】标准回合制战术：站位、朝向、职业协同决定命中与伤害，最多招募 15 名可操作角色，涵盖近战、远程、法系与辅助，靠队伍组合触发连锁。\n\n【Correction 机制】招牌系统允许玩家在战斗中「改写战场」——清出通路、让桥梁坍塌、切断敌方增援。它把传统战棋里「地图是给定的」这一前提推翻，代价是每次改写都会产生后果，玩家要在关键回合权衡「用掉一次修正」换来的即时优势值不值。\n\n【叙事与选择】玩家同时领导肯梅尔与黑豹两支盟友：前者为人民自由而战，后者要夺回王位，两者目标不可调和。每次重大决策会写进「编年史」，影响后续任务、同伴关系与故事走向，并解锁改变小队玩法的高级特质。\n\n【势力与养成】战斗之间升级、解锁技能、寻找传说装备；阵营倾向会持久影响部队数值与关系，形成「你如何打仗，决定你成为谁」的闭环。\n\n【优势】Correction 提供了战棋品类里少见的临场叙事感，把「操作」和「剧情」串在同一个动作上；双阵营设定天然带来重玩动机；PC 端 Demo 已验证可玩性。\n【不足】地形改写这类机制最怕规则边界不清，做不好会变成「一次性的演出技能」；独立团队能否撑起 15 名角色的平衡与关卡量，是最大不确定项；2027 年 2 月档期对手尚未明朗。\n\n【综合】在战棋这个高度成熟的品类里，它选了一条正确的差异化路径：不去比谁的系统更多，而是改掉一个所有人都默认的规则。",
+      "why_notable": "把「战斗中改写地形」做成核心机制，让战棋的地图从固定背景变成可消耗资源；双阵营不可调和的叙事是同类少见的设定",
+      "pcu": "暂未发售",
+      "current_players": "暂未发售",
+      "estimated_sales": "暂未发售",
+      "gi_summary": "「回合制战术」套「改写战场」新瓶，Nextale Games 独立开发，2027 年 2 月发售"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "科幻RPG",
+      "好莱坞阵容",
+      "2027"
+     ],
+     "title": "Wizards of the Coast 的《EXODUS》公开女主版实机：双主角可选，2027 年 4 月 7 日发售",
+     "en_title": "Grandiose sci-fi RPG EXODUS reveals its female MC variant with new gameplay",
+     "full_text": "Grandiose sci-fi RPG EXODUS reveals its female MC variant with new gameplay: https://t.co/JneoMY6Ynv https://t.co/x1zjWvcoPW",
+     "author": "nichegamer",
+     "date": "2026-11-19",
+     "likes": 11,
+     "views": 901,
+     "link": "https://x.com/nichegamer/status/2123065636813234588",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXak8ifWoAAVSTP.jpg"
+     },
+     "summary": "Niche Gamer 报道：威世智（Wizards of the Coast）与 Archetype Entertainment、Certain Affinity 联合开发的科幻 RPG《EXODUS》公开女主版主角 Jun 的实机片段，宣布玩家可选择男性或女性 Jun，选择会改变后续旅程。女主由 Carina Conti 饰演（《Mafia: The Old Country》女主），男主由 Stephen Oyoung 饰演（《漫威蜘蛛侠》底片先生）。游戏 2027 年 4 月 7 日登陆 PC、Xbox Series X|S 与 PS5。",
+     "analysis": "",
+     "recommendation": "《EXODUS》公开女主实机：BioWare 老将操刀的科幻 RPG，2027 年 4 月发售",
+     "game_ref": "EXODUS",
+     "enrichment": {
+      "game_name": "EXODUS",
+      "genre": "动作 / 冒险 / 角色扮演",
+      "developer": "Archetype Entertainment（联合 Certain Affinity）",
+      "platforms": [
+       "Steam",
+       "Epic Games Store",
+       "Xbox Series X|S",
+       "PS5"
+      ],
+      "price": "未公布",
+      "release_date": "2027年4月7日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3230960/EXODUS/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3230960/c0fbd58953137c5e6643198d7412ac4e67382a4b/header_schinese.jpg?t=1792685162",
+      "youtube_video": null,
+      "description": "由前 BioWare 核心成员组成的 Archetype Entertainment 主导、威世智发行的电影级单人科幻动作 RPG，被媒体普遍视作《质量效应》的精神续作。\n\n【核心玩法】玩家从「拾荒匠」成长为「巡星使（Traveler）」，在时间被相对论扭曲的遥远未来世界间穿梭。设定上加入了「时间膨胀」：一次远行归来，家乡可能已过去数十年，你认识的人老去甚至离世——这让任务选择天然带有代际代价。\n\n【主角设定】主角 Jun 支持男女双版本，本次公开的是女主版实机与新角色特写。玩家选择不只是外观，而是决定这段旅程的讲述视角与部分互动关系。\n\n【叙事与阵容】威世智与 Archetype 明确以「电影级单人冒险」为卖点，配音启用影视演员：女主 Carina Conti、男主 Stephen Oyoung。这让它在宣发上更接近跨媒介产品，而非传统 RPG。\n\n【品类的意义】《质量效应：仙女座》与 BioWare 的收缩之后，太空歌剧 RPG 长期缺位。EXODUS 是这一空档里体量最大的补位者，也因此承载了「老派 BioWare 叙事是否还有市场」的验证任务。\n\n【优势】团队背景与题材稀缺性极强；时间膨胀设定提供了区别于同类的情感结构；双主角配音卡司具备传播度。\n【不足】距离发售还有一年半，实机展示仍以氛围为主，战斗与同伴系统的深度尚未验证；威世智近年在游戏业务的投入稳定性存疑；太空歌剧 RPG 的开发风险一向极高。\n\n【综合】当前最值得跟踪的西方单人 RPG 之一：它要证明的不是技术，而是「选择与同伴」这套老派叙事在 2027 年是否还成立。",
+      "why_notable": "前 BioWare 团队 + 威世智发行，被视为《质量效应》精神续作；「时间膨胀」设定让任务选择带上代际代价，是太空歌剧 RPG 稀缺期的重点补位作品",
+      "pcu": "暂未发售",
+      "current_players": "暂未发售",
+      "estimated_sales": "暂未发售",
+      "gi_summary": "「太空歌剧 RPG」套「时间膨胀」新瓶，Archetype Entertainment 开发、威世智发行，2027 年 4 月发售"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X · 独立开发者 @frka_an",
+     "tags": [
+      "休闲",
+      "移动端",
+      "AI工作流"
+     ],
+     "title": "《Squish Hop》上架 App Store：单人可玩的跳跃小游戏，宣传片由 Fable 5.2 生成",
+     "en_title": "Sonunda o gün geldi! Uzun zamandır üzerinde çalıştığım oyunum Squish Hop, artık App Store'da!",
+     "full_text": "Sonunda o gün geldi! 🥹💙\n\nUzun zamandır üzerinde çalıştığım oyunum Squish Hop, artık App Store’da! 🎮🚀\n\nTek parmakla oynanıyor ama “bir kez daha” dedirtiyor. 😅\n\nİndirip denerseniz çok mutlu olurum. Yorumlarınızı da gerçekten merak ediyorum. İlk desteğiniz benim için çok değerli! 🙌\n\nHe bu arada video Fable 5.2 ile yapıldı!\n\n📲 [https://t.co/iKSWGScIEp]\n\n#indiedev #gamedev #indiegame",
+     "author": "frka_an",
+     "date": "2026-11-19",
+     "likes": 111,
+     "views": 123632,
+     "link": "https://x.com/frka_an/status/2122770522735870265",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2122770334734548992/img/p_WU57IiixyzVMjB.jpg",
+      "video_url": "https://x.com/frka_an/status/2122770522735870265/video/1"
+     },
+     "summary": "土耳其独立开发者 Furkaan 宣布单指操作的休闲跳跃游戏《Squish Hop》上架 App Store，主打「玩一把还想再来」的短会话循环。他在推文里特别注明：宣传视频是用 Fable 5.2 生成的。推文 12.4 万浏览。",
+     "analysis": "真正值得记的不是这个游戏，而是「一个人的宣发产能」：美术、视频、文案曾经是独立开发者最贵的外包项，现在可以用一个 AI 工具补齐。这类样本会越来越多，意味着独立游戏的竞争门槛正从「能不能做出来」转向「能不能被看见」。",
+     "recommendation": "《Squish Hop》上架 App Store：单手可玩的跳跃小游戏，宣传片用 Fable 5.2 生成",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "战棋",
+      "复古",
+      "日式SRPG"
+     ],
+     "title": "《Mercenaries Grace》：复古日式战棋 SRPG，本月内发售",
+     "en_title": "Retro Japanese SRPG Mercenaries Grace launches this month",
+     "full_text": "Retro Japanese SRPG Mercenaries Grace launches this month: https://t.co/QUipY3qoKe https://t.co/Ou4SgR1ynH",
+     "author": "nichegamer",
+     "date": "2026-11-19",
+     "likes": 8,
+     "views": 873,
+     "link": "https://x.com/nichegamer/status/2123075864493466017",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXauP2qWMAEaHTj.jpg"
+     },
+     "summary": "Niche Gamer 报道：复古日式战棋 SRPG《Mercenaries Grace》确认本月发售，走的是经典 SFC/PS 时代网格战棋路线，以雇佣兵小队为核心组织战斗。",
+     "analysis": "怀旧战棋是一个稳定但拥挤的小众赛道：受众明确、口碑转化高，但很难破圈。这类作品的关键通常在难度曲线与关卡设计密度，而非画面。",
+     "recommendation": "《Mercenaries Grace》：复古日式战棋 SRPG，本月内发售",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "肉鸽",
+      "暗黑奇幻",
+      "抢先体验"
+     ],
+     "title": "《HARMA》：高难度暗黑奇幻肉鸽，公布抢先体验更新路线",
+     "en_title": "Challenging dark fantasy roguelike HARMA reveals its early access roadmap",
+     "full_text": "Challenging dark fantasy roguelike HARMA reveals its early access roadmap: https://t.co/oBnVHmr6mr https://t.co/qvxEYorvp9",
+     "author": "nichegamer",
+     "date": "2026-11-19",
+     "likes": 6,
+     "views": 759,
+     "link": "https://x.com/nichegamer/status/2123074468650107031",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXas-mqXAAI0i4F.jpg"
+     },
+     "summary": "Niche Gamer 报道：暗黑奇幻肉鸽《HARMA》公布抢先体验阶段的内容更新路线，主打高难度战斗与惩罚性循环，属于当前 Steam 上供给最密集的「硬核肉鸽」细分。",
+     "analysis": "抢先体验 + 更新路线图是这类小体量肉鸽的标准打法：先用低定价换首批玩家与评价，再用路线图维持「还在做」的预期。成败取决于首版的战斗手感是否已经立得住。",
+     "recommendation": "《HARMA》：高难度暗黑奇幻肉鸽，公布抢先体验更新路线",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "冒险",
+      "动物主角",
+      "主机"
+     ],
+     "title": "《Hounded》：以狗为主角的冒险游戏追加 PS5 版，2027 年发售",
+     "en_title": "Dog-adventure game Hounded adds PS5 version to its 2027 release",
+     "full_text": "Dog-adventure game Hounded adds PS5 version to its 2027 release: https://t.co/5OJrayTg4h https://t.co/PNCNeqXdxr",
+     "author": "nichegamer",
+     "date": "2026-11-19",
+     "likes": 3,
+     "views": 774,
+     "link": "https://x.com/nichegamer/status/2123067941407031312",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXanCs1WUAADQAv.jpg"
+     },
+     "summary": "Niche Gamer 报道：以狗为主角的冒险游戏《Hounded》确认在 2027 年发售计划中加入 PS5 版本，多平台同步推进。",
+     "analysis": "动物主角的冒险游戏天然适合短视频传播，画面与情绪就是卖点。这类作品的价值更多在「能不能做出让人想转发的十秒」，而不是系统深度。",
+     "recommendation": "《Hounded》确认追加 PS5 版，狗狗冒险游戏定档 2027",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 05",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "生存建造",
+      "大版本更新",
+      "僵尸"
+     ],
+     "title": "《7 Days to Die》确认 2027 年大更新加入「强盗」阵营，发售前就有的构想终于落地",
+     "en_title": "7 Days to Die is finally adding bandits in a big 2027 update",
+     "full_text": "7 Days to Die is finally adding bandits in a big 2027 update: https://t.co/9WihUxXLS5 https://t.co/OTsJk2BofI",
+     "author": "nichegamer",
+     "date": "2026-11-19",
+     "likes": 6,
+     "views": 849,
+     "link": "https://x.com/nichegamer/status/2123067470218920361",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXamnRkW8AAKaJD.jpg"
+     },
+     "summary": "Niche Gamer 报道：生存建造游戏《7 Days to Die》确认将在 2027 年的大更新中加入「强盗（Bandits）」阵营——这是发售前就写在构想里、玩家等了十余年的内容。AUTOMATON 同期也报道「等了 13 年」的强盗势力将于明年初实装。",
+     "analysis": "对一个上线十余年的生存游戏来说，加入人形敌对势力是结构性的改动：它把「对抗环境」变成「对抗有策略的对手」，会牵动 AI、掉落与据点设计。老游戏靠这种量级的更新续命，比做续作性价比高得多。",
+     "recommendation": "《7 Days to Die》2027 年大更新加入「强盗」阵营，发售后首次",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 官方 @unitygames",
+     "tags": [
+      "Unity",
+      "Agent",
+      "工具链"
+     ],
+     "title": "Unity CLI 1.0 正式版发布：Claude Code、Codex 可以直接搭关卡、写代码、编译修错并试玩",
+     "en_title": "The Unity CLI is officially out of beta with Version 1.0 and the Pipeline package",
+     "full_text": "The Unity CLI is officially out of beta with Version 1.0 and the Pipeline package 🎉\n\nUsing official Unity plugins for agents like Claude Code and Codex, agents can block out levels, write code, trigger compilation, fix errors, and playtest your scene. https://t.co/nw1BmAP0gV",
+     "author": "unitygames",
+     "date": "2026-11-19",
+     "likes": 159,
+     "views": 7636,
+     "link": "https://x.com/unitygames/status/2123054768704655824",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2123054713503354880/pu/img/WeDslH2jqjUfVfgQ.jpg",
+      "video_url": "https://x.com/unitygames/status/2123054768704655824/video/1"
+     },
+     "summary": "Unity 宣布 Unity CLI 结束 beta、发布 1.0 正式版，并同步推出 Pipeline 包。通过官方提供的 Claude Code、Codex 等 Agent 插件，Agent 可以搭建关卡白盒、编写代码、触发编译、修复报错，并直接在场景里试玩验证。",
+     "analysis": "这是引擎官方第一次把「Agent 的完整闭环」写进产品：改代码 → 编译 → 报错 → 修 → 进场景验证，全部由 Agent 自己跑通。相比社区自己拼 MCP 和脚本，官方插件意味着版本兼容与权限边界有了责任人。对团队的实际影响在验收环节——引擎侧一旦支持自动试玩，Agent 产出的代码就有了可执行的回归验证，而不只是「看起来对」。",
+     "recommendation": "Unity CLI 1.0 正式版：Agent 能搭关卡、写代码、编译修错并试玩场景",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · 中文博主 @BeyondTheBoxCN",
+     "tags": [
+      "开源",
+      "3D像素",
+      "场景工具"
+     ],
+     "title": "开源工具 Ink Studio：3D 像素艺术 + 高斯泼溅，做「能走进去」的像素场景",
+     "en_title": "制作这种效果的工具 Ink Studio 免费开源了",
+     "full_text": "要是独立游戏都能做成这种画风，我的 Steam 愿望单估计要爆炸了。\n\n明明是复古像素风，却有完整的 3D 空间。森林、怪物、漂浮岛屿、雪地、熔岩，每个场景都像一个可以走进去探索的小世界。\n\n现在，制作这种效果的工具 Ink Studio 免费开源了。\n\n它结合了 3D 像素艺术和 Gaussian Splatting（高斯泼溅），还提供动画、粒子、物理模拟、破坏效果等功能，可以用来制作动态、可交互的场景。\n\n我一直觉得，这种画风很有市场。\n\n不一定需要庞大的地图或者复杂的玩法。只要场景足够漂亮，藏着一些值得发现的东西，就能让人愿意花时间探索。\n\n目前它还是偏开发者的工具，并不是点几下就能自动生成游戏。\n\n但如果这些能力能进一步降低制作成本，我觉得未来会出现更多这种风格的独立游戏。\n\nGitHub：https://t.co/Ere0og7KFR\n\n https://t.co/8GV4eyX6y7",
+     "author": "BeyondTheBoxCN",
+     "date": "2026-11-19",
+     "likes": 216,
+     "views": 8709,
+     "link": "https://x.com/BeyondTheBoxCN/status/2123038520302596442",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2122242970686717952/img/5953itG_YSjQ77io.jpg",
+      "video_url": "https://x.com/BeyondTheBoxCN/status/2123038520302596442/video/1"
+     },
+     "summary": "博主「黑箱之外」介绍免费开源工具 Ink Studio（GitHub: siliconjungle/shapeshift-labs-ink-studio）：把 3D 像素艺术与 Gaussian Splatting（高斯泼溅）结合，支持动画、粒子、物理模拟与破坏效果，用于制作动态、可交互的场景。它仍是偏开发者的工具，不是「点几下生成游戏」的一键方案。",
+     "analysis": "这个组合值得注意：像素风格本身极省美术成本，高斯泼溅又能用照片或少量素材还原高密度场景，两者叠起来，等于让小团队做出「低成本但看起来不像低成本」的空间。它不解决玩法，但解决的正是独立团队最缺的那块——让人第一眼就想点进商店页的画面。",
+     "recommendation": "Ink Studio 开源：3D 像素叠高斯泼溅，独立开发者免费做可走进的场景"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**GTA 6 拿到 Metacritic 99，追平 1998 年的《时之笛》**\nGTA 6 评测解禁数小时后，Metacritic 均分达到 99，与《塞尔达传说：时之笛》并列 Metacritic 史上最高分。Digital Foundry 称其为「重新定义一代主机的里程碑」，Eurogamer、GameSpot、Polygon 等多家媒体给出高分。\n\n**同一时刻，做游戏的人在投票要不要工会**\n超过 1,600 名 Rockstar 英国员工正在投票决定是否成立工会，11 月 26 日截止；若获承认，将是英国游戏行业规模最大的工会。同期格拉斯哥仲裁庭正在审理公司被指打压工会、解雇 34 名员工一案，工会代表点名的最新变量是 AI 对岗位的冲击。\n\n**AI 侧：反 AI 成了可传播的立场**\nEpic Games 的「2026 Epic AI MegaJam」收到 2,782 件投稿、奖金 6.5 万美元，但 itch.io 人气第一的《LSD:FIH》由波兰个人开发者全程不用 AI 完成，作者以「我在 AI 垃圾的战争里站这边」的梗自嘲参赛。另一侧，Barret李靖指出团队里真正精通 Rust 的人不多，仍敢让 AI 写核心系统——因为约束、性能水位与验收标准被提前定义清楚了。\n\n**产品侧：只上 PC 也能进全平台销量前六**\nAlinea Analytics 估算《Slay the Spire 2》已售出约 790 万份、收入约 1.576 亿美元，成为 2026 年全平台销量第六，而它只登陆 Steam；玩家平均游玩近 84 小时，190 万人超过 100 小时。\n\n**新游与工具**\n《Dungeonbound》靠「任意两件装备熔合」的机制，上线 48 小时卖出 4 万份；《Calame》把「战斗中改写地形」做成战术 RPG 的核心，定档 2027 年 2 月；Unity CLI 1.0 正式发布，官方插件让 Claude Code、Codex 等 Agent 能搭关卡、写代码、编译修错并试玩；开源工具 Ink Studio 用 3D 像素 + 高斯泼溅降低场景制作成本。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
