@@ -1087,7 +1087,7 @@
    "title_en": "ITCH.IO TRENDING",
    "caption": "itch.io featured 官方热度排序 · 数值为评分(评分人数) · 数据来源 itch-monitor 每日快照",
    "source_date": "2026-11-20",
-   "source_fetched_at": "2026-11-20T03:16:17Z",
+   "source_fetched_at": "2026-11-20T03:06:07Z",
    "items": [
     {
      "name": "Ambermoon.net",
@@ -1107,8 +1107,8 @@
       "3d",
       "atmospheric"
      ],
-     "mech": "保留原版岛屿与双月大地图自由探索、对话、战斗和魔法成长循环。",
-     "why": "经典Amiga RPG完整重写并跨端，显示复古开放世界与硬核探索的移植保存价值。"
+     "mech": "沿用岛屿与双月探索、回合战斗，重写引擎但规则基本不变",
+     "why": "经典RPG引擎级重制与跨平台，验证老机制在移动端复用的可行性"
     },
     {
      "name": "Cult of PiN",
@@ -1128,8 +1128,8 @@
       "deck-building",
       "physics"
      ],
-     "mech": "用左右挡板与推撞控球，收集符文改造弹珠台并组合得分与战斗循环。",
-     "why": "弹珠物理、牌组构筑与肉鸽组合，预示街机物理和策略构筑融合的混合品类。"
+     "mech": "弹珠反弹触发构筑效果，局内收集符文强化连击并闯关",
+     "why": "弹珠物理、牌组构筑与肉鸽路线合流，是物理构筑品类的早期信号"
     },
     {
      "name": "Juice Galaxy (formerly Juice World)",
@@ -1149,8 +1149,8 @@
       "action-rpg",
       "atmospheric"
      ],
-     "mech": "操控软体布娃娃飞行、挥武器击打并吞噬或喝果汁，探索开放关卡。",
-     "why": "布娃娃物理驱动ARPG与沙盒探索，验证搞怪物理反馈本身可成为核心战斗乐趣。"
+     "mech": "以布娃娃飞行、挥武器击打和喝果汁增益，自由探索开放沙盒",
+     "why": "把布娃娃物理当作移动与战斗核心，荒诞沙盒降低动作RPG制作门槛"
     },
     {
      "name": "Doki Doki Literature Club!",
@@ -1170,8 +1170,8 @@
       "cute",
       "horror"
      ],
-     "mech": "通过写诗选词影响角色关系与剧情分支，异常事件逐步打破VN界面规则。",
-     "why": "用恋爱视觉小说日常伪装做元叙事恐怖，证明类型界面与存档可成为叙事机关。"
+     "mech": "写诗与对话选择推进恋爱线，角色越层篡改界面、存档与文件",
+     "why": "视觉小说借元叙事与文件层越界制造恐怖，奠定Meta品类传播模板"
     },
     {
      "name": "[FULL] DECOGEAR DIMENSIONS",
@@ -1191,29 +1191,25 @@
       "arcade",
       "beat-em-up"
      ],
-     "mech": "横版推进中组合近战连段与位移，清理波次敌人并推进关卡。",
-     "why": "2D街机清版借itch网页demo试水手感，反映独立动作对连段与手感优先的回潮。"
+     "mech": "横版街机清版：连续击打敌群推进关卡；demo仅验证手感",
+     "why": "网页demo直发Steam key，测试独立动作游戏的发行转化与愿望单预热"
     },
     {
      "name": "Mindustry",
      "sub": "The automation tower defense game",
      "thumb": "https://img.itch.zone/aW1nLzI2NjkyMjUxLnBuZw==/315x250%23c/ojkigl.png",
-     "metric": "★4.8·2623人",
+     "metric": "",
      "link": "https://anuke.itch.io/mindustry",
      "fresh": false,
      "author": "AnukeVerified Account",
      "genre": "Strategy",
      "price": "免费",
-     "rating_count": 2623,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS/Android",
-     "tags": [
-      "blocks",
-      "multiplayer",
-      "sandbox"
-     ],
-     "mech": "铺传送带建生产线，将材料与弹药送炮塔，抵御敌潮并扩张基地。",
-     "why": "把工厂自动化供应链直接接入塔防弹药与建造，预示生产链即战斗策略的融合品类。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "ULTRAKILL Prelude",
@@ -1233,29 +1229,25 @@
       "fast-paced",
       "first-person"
      ],
-     "mech": "用多段位移与武器切换连续击杀，以血回血维持高速侵略循环。",
-     "why": "将角色动作的连段评级思维注入复古FPS，推动高速移动射击与风格化战斗融合。"
+     "mech": "移动能力与多武器切换维持高速连杀，风格评分驱动重挑战",
+     "why": "把角色动作游戏的连段评价注入复古FPS，推动高速射击动作化"
     },
     {
      "name": "Friday Night Funkin'",
      "sub": "The coolest rhythm game",
      "thumb": "https://img.itch.zone/aW1nLzQ1MjMxODcuZ2lm/315x250%23c/wGMbNL.gif",
-     "metric": "★4.7·12492人",
+     "metric": "",
      "link": "https://ninja-muffin24.itch.io/funkin",
      "fresh": false,
      "author": "ninjamuffin99Verified Account",
      "genre": "Rhythm",
      "price": "免费",
-     "rating_count": 12492,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "rhythm",
-      "2d",
-      "no-ai"
-     ],
-     "mech": "按方向键或字母匹配箭头节拍，与对手轮唱对拍，失误扣血直至曲终。",
-     "why": "极简四键节奏对抗加网络模组生态，显示UGC角色与曲包可延长节奏品类生命周期。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Night of the Nun... aka Nun Massacre",
@@ -1275,8 +1267,8 @@
       "creepy",
       "horror"
      ],
-     "mech": "第一人称在寄宿学校潜行躲藏，借声音与路线判断避开修女追捕并求生。",
-     "why": "PSX/VHS低多边形追猎恐怖把短流程、强压迫与直播反应绑定，是复古恐怖原型的信号。"
+     "mech": "在低多边形场景躲藏逃跑，有限资源周旋，被修女追上即重开",
+     "why": "PSX低多边形与VHS质感成为低成本恐怖风格信号，靠追逐压缩资源"
     },
     {
      "name": "Stellar Fury",
@@ -1296,8 +1288,8 @@
       "arcade",
       "bullet-hell"
      ],
-     "mech": "纵版弹幕射击：在密集弹幕中走位、切换火力，以高分和通关路线驱动重玩。",
-     "why": "用90年代PC像素质感包装弹幕射击，说明复古显示限制也能成为品类辨识度与卖点。"
+     "mech": "双机体在8关弹幕中走位射击，以分数攻击驱动重玩",
+     "why": "以90年代PC像素美学包装弹幕射击，指向复古硬核STG的细分回潮"
     },
     {
      "name": "Die in the Dungeon CLASSIC",
@@ -1317,8 +1309,8 @@
       "cute",
       "deck-building"
      ],
-     "mech": "收集骰子构筑牌组，回合内掷骰并组合点数效果，探索随机地牢。",
-     "why": "把牌组换成骰子，验证随机组合与构筑决策的融合，是从itch原型跑向Steam的典型信号。"
+     "mech": "用骰子替代卡牌，找最佳组合闯多层地牢，核心是骰面联动与回合取舍。",
+     "why": "把卡组换成骰子组合，预示骰子构筑从随机工具转向策略核心。"
     },
     {
      "name": "an average day at the cat cafe",
@@ -1338,8 +1330,8 @@
       "cats",
       "characters"
      ],
-     "mech": "按日调制饮品服务顾客，识别异常需求并维持营业，推进昼夜事件。",
-     "why": "温馨猫咖日常逐步混入夜间异常，提示轻模拟与微恐怖、怪谈叙事融合的短原型方向。"
+     "mech": "按天调制饮品接待顾客，普通订单中混入夜间异常客，经营推进剧情。",
+     "why": "日常咖啡店包裹夜间怪客，预示cozy模拟可用叙事异变制造留存钩子。"
     },
     {
      "name": "Fears to Fathom - Home Alone",
@@ -1359,48 +1351,42 @@
       "atmospheric",
       "creepy"
      ],
-     "mech": "第一人称处理居家琐事，靠电话与环境线索察觉入侵者，并在躲藏与决策中求生。",
-     "why": "用幸存者口述串起单元式心理恐怖，把家庭入侵做成可低成本试播的短篇季播模型。"
+     "mech": "扮演独自在家的少年，在宅家日常中探索异常线索并应对入侵，撑过一夜。",
+     "why": "以幸存者口述做单元短篇恐怖，预示日常入侵题材靠真实感与短流程扩散。"
     },
     {
      "name": "Behind the Broadcast: The Director's Cut",
      "sub": "What happens when an insecure screenwriter meets highly admired city's famous director?",
      "thumb": "https://img.itch.zone/aW1nLzI4NDk3Mzg1LnBuZw==/315x250%23c/p25G8n.png",
-     "metric": "★4.6·133人",
+     "metric": "",
      "link": "https://eliscz.itch.io/behind-the-broadcast",
      "fresh": false,
      "author": "ElisCZ",
      "genre": "Visual Novel",
      "price": "免费",
-     "rating_count": 133,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS/Android",
-     "tags": [
-      "2d",
-      "cute",
-      "dating-sim"
-     ],
-     "mech": "扮演新编剧在电影工作室对话导演，选项分支推进关系并导向多结局。",
-     "why": "借既有创作者IP的AU做前传恋爱VN，显示粉丝叙事可低成本延展成独立视觉小说。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Helltaker",
      "sub": "Sharply dressed demon girls.",
      "thumb": "https://img.itch.zone/aW1nLzU5MTQxMTQucG5n/315x250%23c/Ku%2FqBv.png",
-     "metric": "★4.8·1144人",
+     "metric": "",
      "link": "https://vanripper.itch.io/helltaker",
      "fresh": false,
      "author": "vanripper",
      "genre": "Puzzle",
      "price": "免费",
-     "rating_count": 1144,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "sharply-dressed-demon-girls"
-     ],
-     "mech": "网格推箱解谜，规划步数到达目标或收集恶魔娘，并解锁角色结局。",
-     "why": "短小推箱解谜加角色收集与恋爱奖励，展示玩法加人设梗驱动低成本病毒传播。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Odd Realm",
@@ -1420,8 +1406,8 @@
       "2d",
       "fantasy"
      ],
-     "mech": "指派定居者采集建造，沿种族科技树发展聚落，应对季节天气与生态压力。",
-     "why": "多种族差异科技树叠加动态季节生态，让殖民地模拟在重玩与可读性上折中。"
+     "mech": "选种族在程序化群系建聚落，按季节调配资源、研究解锁房间并装备居民。",
+     "why": "多种族差异规则叠加季节生态，预示殖民地模拟转向种族玩法与群系耦合。"
     },
     {
      "name": "Dweller's Empty Path",
@@ -1439,8 +1425,8 @@
      "tags": [
       "rpgmaker"
      ],
-     "mech": "玩家在夜晚散步中可随时回床终止流程，以休息选择推进或截断叙事。",
-     "why": "把随时回床结束做成叙事选择，让玩家用休息意愿控制游戏长度与情绪节奏。"
+     "mech": "扮演Yoki夜间散步，可随时回床结束当前夜，探索与选择构成无压力短循环。",
+     "why": "允许随时回床结束游戏，把退出做成叙事选择，预示短篇RPG的自主收束。"
     },
     {
      "name": "ROLLA",
@@ -1481,8 +1467,8 @@
       "combos",
       "cozy"
      ],
-     "mech": "在盒中摆放带效果骰面，按相邻位置触发连锁，再用贴纸永久改面。",
-     "why": "骰面效果取决于盒内相对位置，把摆放变成构筑，指向空间化骰组加轻肉鸽组合趋势。"
+     "mech": "把骰子装盒售卖，利用相对位置触发骰面效果，贴纸改面并叠加商店升级。",
+     "why": "按盒内位置联动骰面，预示构筑roguelike从牌组转向空间排列与改面。"
     },
     {
      "name": "Celeste",
@@ -1502,8 +1488,8 @@
       "fna",
       "miniboss"
      ],
-     "mech": "单屏房间内用冲刺、攀爬和空中变向解谜，死亡即瞬重开串联关卡。",
-     "why": "以高精度平台挑战配合可调辅助模式与叙事自洽，示范硬核关卡如何兼顾可及性与作者表达。"
+     "mech": "逐屏跳跃闯关，死亡后快速重试，并解锁B面高难章节。",
+     "why": "高难单屏挑战配即时重试，预示硬核平台用低挫败循环与叙事扩大受众。"
     },
     {
      "name": "Adventures With Anxiety!",
@@ -1523,8 +1509,8 @@
       "mental-health",
       "narrative"
      ],
-     "mech": "玩家扮演焦虑狼，通过预警与施压影响主角决策，在安全与关系间取舍。",
-     "why": "让玩家扮演心理症状而非受害者，用机制体验焦虑的保护性与破坏性，指向心理叙事角色反转。"
+     "mech": "玩家扮演焦虑，通过对话与选择影响主角行动，模拟内心干预与放大的博弈。",
+     "why": "让玩家扮演焦虑本身，预示叙事游戏把情绪系统做成可操作的反角色机制。"
     },
     {
      "name": "Dungeonbound",
@@ -1565,232 +1551,193 @@
       "exploration",
       "jrpg"
      ],
-     "mech": "回合制探索战斗，随机文本生成招式与对白，以荒诞反��替代传统叙事驱动。",
-     "why": "用随机文本、超现实美术和轻JRPG规则做作者化表达，预示氛围优先的怪诞微型RPG实验路线。"
+     "mech": "在荒诞地图探索，触发回合制战斗，并用随机生成文本推动非逻辑叙事。",
+     "why": "预示超现实叙事与随机文本可成为独立RPG的差异化卖点，而非只靠战斗数值。"
     },
     {
      "name": "Dragonsweeper",
      "sub": "A roguelike minesweeper adventure",
      "thumb": "https://img.itch.zone/aW1nLzE5MzgwNzUyLnBuZw==/315x250%23c/tDlKwM.png",
-     "metric": "★4.9·2226人",
+     "metric": "",
      "link": "https://danielben.itch.io/dragonsweeper",
      "fresh": false,
      "author": "Daniel Benmergui",
      "genre": "Puzzle",
      "price": "免费",
-     "rating_count": 2226,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "",
-     "tags": [
-      "minesweeper",
-      "roguelike",
-      "no-ai"
-     ],
-     "mech": "用数字线索推断怪物格，读图鉴识别规则，在血量与升级压力下逐层排雷。",
-     "why": "把扫雷确定推理改为需读图鉴的肉鸽观察谜题，示范经典逻辑玩法与知识型风险系统融合。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Dwarf Fortress",
      "sub": "Remember: Losing is fun!",
      "thumb": "https://img.itch.zone/aW1nLzEwNDE1NzAwLnBuZw==/315x250%23c/qmNkBh.png",
-     "metric": "★4.9·403人",
+     "metric": "",
      "link": "https://kitfoxgames.itch.io/dwarf-fortress",
      "fresh": false,
      "author": "KitfoxgamesVerified Account",
      "genre": "Simulation",
      "price": "$29.99",
-     "rating_count": 403,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux",
-     "tags": [
-      "endless",
-      "fantasy",
-      "procedural"
-     ],
-     "mech": "先生成世界与文明，再管理矮人聚落，靠物理与社会规则连锁推演，失败也生成故事。",
-     "why": "程序生成文明史与个体性格，让系统叙事自然涌现，持续为深度模拟品类提供源头信号。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Family",
      "sub": "A detective game of musical genealogy",
      "thumb": "https://img.itch.zone/aW1nLzM4ODMwODgucG5n/315x250%23c/YbFmv0.png",
-     "metric": "★4.8·400人",
+     "metric": "",
      "link": "https://owlskip-games.itch.io/family",
      "fresh": false,
      "author": "Owlskip Games",
      "genre": "Puzzle",
      "price": "免费",
-     "rating_count": 400,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows",
-     "tags": [
-      "indie",
-      "music",
-      "music-production"
-     ],
-     "mech": "听音乐片段比对风格特征，推断音乐家间的亲缘或影响关系并补全家谱。",
-     "why": "把侦探推理从证词物件转到音乐风格遗传，用听觉线索建立谱系，预示非视觉证据型推理玩法。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Keepsake County",
      "sub": "A midwestern stealth game",
      "thumb": "https://img.itch.zone/aW1nLzExNDY4Njc1LnBuZw==/315x250%23c/cqQ6ym.png",
-     "metric": "★4.8·9人",
+     "metric": "",
      "link": "https://forwardinstinct.itch.io/keepsake-county",
      "fresh": false,
      "author": "Forward Instinct",
      "genre": "Shooter",
      "price": "$19.99",
-     "rating_count": 9,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "3d",
-      "atmospheric",
-      "cartoon"
-     ],
-     "mech": "限时潜入随机宅邸搜刮，居民目击会加速报警，需在围捕前撤离。",
-     "why": "把撤离射击的限时搜刮压力移植到单人沉浸式模拟，预示PvE偷窃原型化。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Combo Pool",
      "sub": "A game about colliding and merging balls",
      "thumb": "https://img.itch.zone/aW1hZ2UvNzUxNTIvMzUyNTEwLmdpZg==/315x250%23c/EPNw%2Fr.gif",
-     "metric": "★4.7·663人",
+     "metric": "",
      "link": "https://nusan.itch.io/combo-pool",
      "fresh": false,
      "author": "NuSan",
      "genre": "Puzzle",
      "price": "免费",
-     "rating_count": 663,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS/Android",
-     "tags": [
-      "2d",
-      "8-bit",
-      "arcade"
-     ],
-     "mech": "发射彩球撞击同色球合并升级，场上球数持续耗血，濒死靠最后一球清场自救。",
-     "why": "用生命值把合并球从休闲解谜逼成动态资源管理，适合短局街机化。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Sort the Court!",
      "sub": "Give your decree in simple yes or no answers, and help the kingdom grow!",
      "thumb": "https://img.itch.zone/aW1hZ2UvNDczNjcvMjA1ODcxLnBuZw==/315x250%23c/NsZPxC.png",
-     "metric": "★4.7·11166人",
+     "metric": "",
      "link": "https://graebor.itch.io/sort-the-court",
      "fresh": false,
      "author": "Graeme Borland",
      "genre": "Simulation",
      "price": "免费",
-     "rating_count": 11166,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux",
-     "tags": [
-      "cute",
-      "ludum-dare-34"
-     ],
-     "mech": "逐条对请愿作是/否裁决，金币、民心与人口即时变化并触发后续事件。",
-     "why": "把治理压缩成连续二元选择，是轻量策略与道德叙事的早期信号。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Escaped Chasm",
      "sub": "​A small little RPGmaker game about a lonely girl with a connection to another world that she sees in her dreams.",
      "thumb": "https://img.itch.zone/aW1nLzE4OTE4MDcucG5n/315x250%23c/8k3cTs.png",
-     "metric": "★4.6·1644人",
+     "metric": "",
      "link": "https://tuyoki.itch.io/escaped-chasm",
      "fresh": false,
      "author": "temmie",
      "genre": "Role Playing",
      "price": "免费",
-     "rating_count": 1644,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/macOS",
      "tags": [],
-     "mech": "以RPG Maker探索串联现实公寓与梦境异界，借物件和对话触发剧情。",
-     "why": "个人化梦境叙事与RPG Maker低成本表达结合，展示短篇作者向原型的传播力。"
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Alpine",
      "sub": "",
      "thumb": "https://img.itch.zone/aW1nLzI2ODE4NDgwLnBuZw==/315x250%23c/DvIkXe.png",
-     "metric": "★4.7·255人",
+     "metric": "",
      "link": "https://oddly-shaped-pixels.itch.io/alpine",
      "fresh": false,
      "author": "Oddly Shaped Pixels",
      "genre": "Platformer",
      "price": "免费",
-     "rating_count": 255,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/macOS",
-     "tags": [
-      "2d",
-      "ludum-dare",
-      "ludum-dare-59"
-     ],
-     "mech": "攀爬山地并在房屋间拉接光缆，连接端口恢复网络，同时与居民对话推进。",
-     "why": "把基础设施修复做成平台解谜核心，提示公共系统维护正成为小体量叙事母题。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Rulehouse",
      "sub": "Think you know chess? Forget some of that. Rulehouse is a pawn chess adventure where every stage rewrites the game.",
      "thumb": "https://img.itch.zone/aW1nLzMwNjExOTk1LmdpZg==/315x250%23c/n%2BYq0S.gif",
-     "metric": "★4.7·129人",
+     "metric": "",
      "link": "https://dalichrome.itch.io/house-rules",
      "fresh": false,
      "author": "Dalichrome",
      "genre": "Puzzle",
      "price": "免费",
-     "rating_count": 129,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/macOS",
-     "tags": [
-      "2d",
-      "chess",
-      "comedy"
-     ],
-     "mech": "操控兵棋逐关通过按钮和地形改写移动规则，用不断变化的合法步解局。",
-     "why": "每关重写象棋规则，把棋类从固定竞技变为可编辑规则解谜，具品类信号。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "First Kiss at a Spooky Soiree",
      "sub": "a light halloween-themed romance story",
      "thumb": "https://img.itch.zone/aW1hZ2UvOTIwMDIvNDM2NTQ2LmdpZg==/315x250%23c/4T%2F3ZI.gif",
-     "metric": "★4.7·1136人",
+     "metric": "",
      "link": "https://nomnomnami.itch.io/first-kiss-at-a-spooky-soiree",
      "fresh": false,
      "author": "NomnomNami",
      "genre": "Visual Novel",
      "price": "免费",
-     "rating_count": 1136,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "anime",
-      "cute",
-      "fantasy"
-     ],
-     "mech": "在派对场景选择对话与亲吻对象，分支导向10种结局并收集不同关系线。",
-     "why": "高密度分支亲吻目标与节日短篇命题，展现Romance VN靠结局收集提升复玩。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "REDDER",
      "sub": "A Normal indie puzzle platformer",
      "thumb": "https://img.itch.zone/aW1nLzMyNDk0MTQ2LnBuZw==/315x250%23c/dMRcxe.png",
-     "metric": "★4.5·29人",
+     "metric": "",
      "link": "https://w.itch.io/redder",
      "fresh": false,
      "author": "Anna AnthropyVerified Account",
      "genre": "Platformer",
      "price": "$5",
-     "rating_count": 29,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/macOS",
-     "tags": [
-      "astronaut",
-      "collecting",
-      "horror"
-     ],
+     "tags": [],
      "mech": "",
      "why": ""
     },
@@ -1815,22 +1762,18 @@
      "name": "Sally Face",
      "sub": "A Dark Mystery is Unfolding...",
      "thumb": "https://img.itch.zone/aW1nLzQ5NjE0OTkucG5n/315x250%23c/D1LQTx.png",
-     "metric": "★4.8·398人",
+     "metric": "",
      "link": "https://portablemoose.itch.io/sallyface",
      "fresh": false,
      "author": "Portable Moose",
      "genre": "Adventure",
      "price": "$2.99",
-     "rating_count": 398,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "cartoon",
-      "dark-humor",
-      "hand-drawn"
-     ],
-     "mech": "横版探索公寓与点击解谜交替，通过物件线索和对话推进五章悬疑。",
-     "why": "章节式手绘冒险混合点击与横版探索，早期验证作者向恐怖叙事可持续连载。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Lockpicks-11",
@@ -1853,43 +1796,35 @@
      "name": "Paper Lily - Chapter 1",
      "sub": "A slightly larger unconventional horror RPG in which there is always another way!",
      "thumb": "https://img.itch.zone/aW1nLzE0ODAwNzU4LnBuZw==/315x250%23c/WjK12q.png",
-     "metric": "★4.9·1149人",
+     "metric": "",
      "link": "https://leef6010.itch.io/paper-lily-chapter-1",
      "fresh": false,
      "author": "Leef 6010Verified Account",
      "genre": "Role Playing",
      "price": "免费",
-     "rating_count": 1149,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "2d",
-      "anime",
-      "cute"
-     ],
-     "mech": "探索隐藏世界并遇角色，每个谜题可用不同道具、路线或对话解法推进，选择带来分支。",
-     "why": "恐怖RPG把每个谜题做成多解，预示叙事冒险从单线解谜转向玩家能动性与重复可玩性。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Root Bear",
      "sub": "Root Beer for Bears",
      "thumb": "https://img.itch.zone/aW1nLzE0MDk0MzI5LnBuZw==/315x250%23c/FdMvEB.png",
-     "metric": "★4.9·56人",
+     "metric": "",
      "link": "https://alexsussy.itch.io/root-bear",
      "fresh": false,
      "author": "alexsussy",
      "genre": "Simulation",
      "price": "免费",
-     "rating_count": 56,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "",
-     "tags": [
-      "1-bit",
-      "bear",
-      "beer"
-     ],
-     "mech": "转动曲柄控制流量与角度，按熊的挑剔要求调整液面泡沫，完成完美倒酒。",
-     "why": "专用曲柄把倒酒精度变成核心操作，示范硬件微操如何撑起休闲模拟的重复挑战。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Idlecraft",
@@ -1912,22 +1847,18 @@
      "name": "Samorost 1",
      "sub": "Back to the roots",
      "thumb": "https://img.itch.zone/aW1nLzU5OTIyMDAuanBn/315x250%23c/XwoQFw.jpg",
-     "metric": "★4.8·258人",
+     "metric": "",
      "link": "https://amanitadesign.itch.io/samorost-1",
      "fresh": false,
      "author": "Amanita Design",
      "genre": "Adventure",
      "price": "免费",
-     "rating_count": 258,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/macOS",
-     "tags": [
-      "2d",
-      "atmospheric",
-      "cute"
-     ],
-     "mech": "点击场景生物与机械触发连锁动画，调整环境机关，为小侏儒清出前进路径。",
-     "why": "经典点击解谜重制回归，提示无文本生态叙事与有机机关仍是短篇实验的高效原型。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Butterfly Soup",
@@ -1950,64 +1881,52 @@
      "name": "Death Flush",
      "sub": "Will this trip to the bathroom be your last?",
      "thumb": "https://img.itch.zone/aW1nLzQxNjM4NjIucG5n/315x250%23c/99uM7j.png",
-     "metric": "★4.5·417人",
+     "metric": "",
      "link": "https://impostersyndrome.itch.io/death-flush",
      "fresh": false,
      "author": "Impostersyndrome",
      "genre": "Survival",
      "price": "免费",
-     "rating_count": 417,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows",
-     "tags": [
-      "survival",
-      "3d",
-      "comedy"
-     ],
-     "mech": "第一人称在浴室与房屋搜证解谜，靠荒诞音效和追逐桥段推进，逃脱厕所杀手。",
-     "why": "把独自如厕的日常恐惧做成20分钟荒诞恐怖，示范低门槛题材+短篇体验的传播力。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Alisa | Demo",
      "sub": "classic retro late-90s horror themed action adventure",
      "thumb": "https://img.itch.zone/aW1nLzUwNjEzNDAucG5n/315x250%23c/L6Bev6.png",
-     "metric": "★4.6·210人",
+     "metric": "",
      "link": "https://caspercroes.itch.io/alisa-demo",
      "fresh": false,
      "author": "Casper Croes",
      "genre": "Adventure",
      "price": "免费",
-     "rating_count": 210,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "3d",
-      "90s",
-      "female-protagonist"
-     ],
-     "mech": "第三人称探索维多利亚宅邸，用枪械近战对抗人偶，收集钥匙解机关寻找出口。",
-     "why": "PSX低模第三视角动作冒险复刻90年代生存恐怖，叠加人偶美学，切中复古恐怖细分。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "A Short Hike",
      "sub": "a little exploration game about hiking up a mountain",
      "thumb": "https://img.itch.zone/aW1nLzIyNDgzNjgucG5n/315x250%23c/pCHU15.png",
-     "metric": "★4.9·4406人",
+     "metric": "",
      "link": "https://adamgryu.itch.io/a-short-hike",
      "fresh": false,
      "author": "adamgryu",
      "genre": "Adventure",
      "price": "$7.99",
-     "rating_count": 4406,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "3d",
-      "atmospheric",
-      "cute"
-     ],
-     "mech": "攀爬、滑翔、游泳自由选路，收集羽毛提升耐力，以登顶为软目标探索山体。",
-     "why": "把无压力登顶做成开放探索，证明短篇步行模拟可靠移动能力与微目标持续驱动。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Pixross Remastered",
@@ -2022,10 +1941,7 @@
      "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux",
-     "tags": [
-      "nonogram",
-      "picross"
-     ],
+     "tags": [],
      "mech": "",
      "why": ""
     },
@@ -2033,211 +1949,171 @@
      "name": "Dungeons & Degenerate Gamblers",
      "sub": "You've never played blackjack with cards like these!",
      "thumb": "https://img.itch.zone/aW1nLzE2Mjc3NjU5LnBuZw==/315x250%23c/lGH%2BUI.png",
-     "metric": "★4.8·1231人",
+     "metric": "",
      "link": "https://purplemosscollectors.itch.io/dndg",
      "fresh": false,
      "author": "Purple Moss Collectors",
      "genre": "Card Game",
      "price": "免费",
-     "rating_count": 1231,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "",
-     "tags": [
-      "card-game",
-      "blackjack",
-      "deck-building"
-     ],
-     "mech": "以21点比点为核心，抽牌触发特效并改造牌组，在路线中凑点数击败对手。",
-     "why": "把21点改造成roguelike牌组构筑，证明传统赌桌规则可被卡牌效果重写为策略循环。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Oceanwork",
      "sub": "A short PS1 styled survival game",
      "thumb": "https://img.itch.zone/aW1nLzU3OTMyMjMucG5n/315x250%23c/fB%2BfHm.png",
-     "metric": "★4.5·342人",
+     "metric": "",
      "link": "https://warrrkus.itch.io/oceanwork",
      "fresh": false,
      "author": "Warkus",
      "genre": "Survival",
      "price": "免费",
-     "rating_count": 342,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "survival",
-      "3d",
-      "horror"
-     ],
-     "mech": "下潜采集→回店出售→升级装备→更深下潜，深度越高资源越稀有、威胁越强。",
-     "why": "把深海采集、售卖、升级压缩成短篇生存恐怖，用深度风险放大资源循环张力。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Rising Up",
      "sub": "Climb the Corporate Ladder... with Your Fists!",
      "thumb": "https://img.itch.zone/aW1nLzEyNjU1MTAyLnBuZw==/315x250%23c/Wt64YH.png",
-     "metric": "★4.7·382人",
+     "metric": "",
      "link": "https://twitwi.itch.io/risingup",
      "fresh": false,
      "author": "Eva Jørgensen",
      "genre": "Fighting",
      "price": "免费",
-     "rating_count": 382,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "fighting",
-      "beat-em-up",
-      "demake"
-     ],
-     "mech": "逐层办公室横版推进，攻击、格挡与跳跃连段清理同事和家具，以职位攀升作为关卡目标。",
-     "why": "职场晋升被包装成横版清版格斗，主题叙事替代传统关卡动机，适合观察题材混搭原型。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Terra - A Terraria Demake",
      "sub": "A demake of Terraria, in PICO-8!",
      "thumb": "https://img.itch.zone/aW1nLzEzMTQxNjI5LnBuZw==/315x250%23c/nd4lc5.png",
-     "metric": "★4.6·154人",
+     "metric": "",
      "link": "https://cubeegames.itch.io/terra-a-terraria-demake",
      "fresh": false,
      "author": "cubee",
      "genre": "Action",
      "price": "免费",
-     "rating_count": 154,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "2d",
-      "demake",
-      "exploration"
-     ],
-     "mech": "在256×128瓦片地图分区探索，采集与战斗成长，逐个击破四个Boss推进流程。",
-     "why": "PICO-8极限容量下保留大地图、多群系与Boss，验证复古沙盒探索的可压缩原型路径。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "A Dance of Fire and Ice",
      "sub": "Keep your focus as you guide two orbiting planets along a winding path without breaking their perfect equilibrium.",
      "thumb": "https://img.itch.zone/aW1nLzE4MDIwODUucG5n/315x250%23c/NT7ou3.png",
-     "metric": "★4.7·1168人",
+     "metric": "",
      "link": "https://fizzd.itch.io/a-dance-of-fire-and-ice",
      "fresh": false,
      "author": "fizzd",
      "genre": "Rhythm",
      "price": "$3.99",
-     "rating_count": 1168,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "rhythm",
-      "adofai",
-      "arcade"
-     ],
-     "mech": "单键切换双星绕行方向，沿蜿蜒路径保持等距旋转，踩准节拍并按轨道预判下一次点击。",
-     "why": "单键操作把节奏判定转为双星轨道平衡，降低输入门槛却提高读谱与路径预判，极简节奏信号强。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Moss Moss",
      "sub": "Moss the world and find secrets (PICO-8).",
      "thumb": "https://img.itch.zone/aW1nLzI2MTExNDM4LmdpZg==/315x250%23c/aAQoz7.gif",
-     "metric": "★4.9·1657人",
+     "metric": "",
      "link": "https://noelcody.itch.io/moss-moss",
      "fresh": false,
      "author": "Noel Cody",
      "genre": "Platformer",
      "price": "免费",
-     "rating_count": 1657,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "2d",
-      "atmospheric",
-      "exploration"
-     ],
-     "mech": "跳跃与冲刺穿越平台，用冲刺改变移动节奏，苔藓化路径并寻找隐藏区域。",
-     "why": "仅靠跳跃与冲刺支撑短篇探索，秘密密度和移动手感成为微型银河城的核心，而非能力锁。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Baldi's Basics in Education and Learning",
      "sub": "Learn with Baldi in his fully 3D interactive schoolhouse! ...Just don't get any questions wrong.",
      "thumb": "https://img.itch.zone/aW1hZ2UvMjM5ODQxLzExNDIzNTAucG5n/315x250%23c/GBHLqT.png",
-     "metric": "★4.7·1800人",
+     "metric": "",
      "link": "https://basically-games.itch.io/baldis-basics",
      "fresh": false,
      "author": "Basically GamesVerified Account",
      "genre": "",
      "price": "免费",
-     "rating_count": 1800,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS/Android",
-     "tags": [
-      "first-person",
-      "horror",
-      "metagamejam"
-     ],
-     "mech": "第一人称校园内找题解和道具，答错触发Baldi追击，靠路线与物品躲避并完成任务。",
-     "why": "把教育软件UI与答错惩罚转成恐怖追逐，伪教学元恐怖模板影响了一波短篇怪谈与梗传播。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "GET YOKED: Extreme Bodybuilding",
      "sub": "Bodybuilding Roguelike Deckbuilder.",
      "thumb": "https://img.itch.zone/aW1nLzE5NDg3OTk2LnBuZw==/315x250%23c/GbzzwM.png",
-     "metric": "★4.6·595人",
+     "metric": "",
      "link": "https://gregs-games.itch.io/get-yoked-2",
      "fresh": false,
      "author": "gregs-games",
      "genre": "Card Game",
      "price": "免费",
-     "rating_count": 595,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows",
-     "tags": [
-      "card-game",
-      "bodybuilding",
-      "comedy"
-     ],
-     "mech": "打训练牌累积Gains，疲劳超阈值转受伤；休息与补剂调资源，达成比赛最低线。",
-     "why": "健身训练被拆成增肌与疲劳双资源，题材压力天然适配牌组管理，垂直题材肉鸽卡牌信号明确。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Project Kat",
      "sub": "A small, unconventional horror rpg.",
      "thumb": "https://img.itch.zone/aW1nLzMwOTcyMjIucG5n/315x250%23c/a0NL9j.png",
-     "metric": "★4.8·4628人",
+     "metric": "",
      "link": "https://leef6010.itch.io/projectkat",
      "fresh": false,
      "author": "Leef 6010Verified Account",
      "genre": "Role Playing",
      "price": "免费",
-     "rating_count": 4628,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "2d",
-      "anime",
-      "cute"
-     ],
-     "mech": "探索场景触发谜题，同一谜题可选不同解法并改变关系与结局，持续追问另一条路。",
-     "why": "每个谜题多解且多结果，让叙事分支下沉到规则层，短篇恐怖RPG靠解谜重玩而非吓点堆叠。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "My Sweet Zombie!",
      "sub": "When you crave cookies instead of brains.",
      "thumb": "https://img.itch.zone/aW1nLzc4MzY3MTYucG5n/315x250%23c/dt0ISZ.png",
-     "metric": "★4.7·272人",
+     "metric": "",
      "link": "https://tsundere-studio.itch.io/my-sweet-zombie",
      "fresh": false,
      "author": "Tsundere StudioVerified Account",
      "genre": "Visual Novel",
      "price": "免费",
-     "rating_count": 272,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS/Android",
-     "tags": [
-      "dating-sim",
-      "female-protagonist",
-      "lgbt"
-     ],
-     "mech": "扮演咖啡师处理顾客、设备事故和夜遇，通过对话选择推进与僵尸的恋爱关系。",
-     "why": "把丧尸恐怖扭转为咖啡店职场恋爱，酷儿日常与类型反差拓宽视觉小说的轻恐怖受众。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "I Wanna be the Guy",
@@ -2294,127 +2170,103 @@
      "name": "Samsara Room",
      "sub": "Can you find a way out?",
      "thumb": "https://img.itch.zone/aW1nLzMzNDU0NjQuanBn/315x250%23c/OF2C1J.jpg",
-     "metric": "★4.7·261人",
+     "metric": "",
      "link": "https://rustylake.itch.io/samsara-room",
      "fresh": false,
      "author": "Rusty LakeVerified Account",
      "genre": "Adventure",
      "price": "免费",
-     "rating_count": 261,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/macOS",
-     "tags": [
-      "atmospheric",
-      "escape-game",
-      "point-and-click"
-     ],
-     "mech": "点选房间物件获取线索，操作机关解谜，以“觉悟”为条件逃出。",
-     "why": "锈湖前身重制，显示密室解谜靠氛围叙事孵化系列宇宙的路径。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Slay the Princess - The Pristine Cut",
      "sub": "You're here to slay the Princess. Don't believe her lies.",
      "thumb": "https://img.itch.zone/aW1nLzE4MjkyMDE0LnBuZw==/315x250%23c/3shEBV.png",
-     "metric": "★4.9·341人",
+     "metric": "",
      "link": "https://blacktabbygames.itch.io/slay-the-princess",
      "fresh": false,
      "author": "Black Tabby Games",
      "genre": "Visual Novel",
      "price": "$17.99",
-     "rating_count": 341,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux",
-     "tags": [
-      "interactive-fiction",
-      "creepy",
-      "dating-sim"
-     ],
-     "mech": "围绕是否杀死公主的对话选择触发分支与变身，每次轮回重写真相。",
-     "why": "用重复轮回把单一刺杀任务变出多层叙事，示范选择驱动恐怖VN的可扩展性。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Goodboy Galaxy DEMO",
      "sub": "Exploration platform game for Game Boy Advance (and more!)",
      "thumb": "https://img.itch.zone/aW1nLzYwMzIyMTUucG5n/315x250%23c/bti8VQ.png",
-     "metric": "★4.8·233人",
+     "metric": "",
      "link": "https://goodboygalaxy.itch.io/goodboy-galaxy-demo",
      "fresh": false,
      "author": "Goodboy GalaxyVerified Account",
      "genre": "Platformer",
      "price": "免费",
-     "rating_count": 233,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows",
-     "tags": [
-      "16-bit",
-      "2d",
-      "dogs"
-     ],
-     "mech": "操控狗主角在星球用射击与蓄力解锁能力，回头探索新路径。",
-     "why": "GBA自制银河城Demo证明复古掌机限制能反向激发探索型关卡与现代发行。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Iketsuki",
      "sub": "An atmospheric platformer set in a dying world.",
      "thumb": "https://img.itch.zone/aW1nLzI2MzkzOTQuZ2lm/315x250%23c/xcZikM.gif",
-     "metric": "★4.6·369人",
+     "metric": "",
      "link": "https://modus-interactive.itch.io/iketsuki",
      "fresh": false,
      "author": "Modus Interactive",
      "genre": "Platformer",
      "price": "免费",
-     "rating_count": 369,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "3d",
-      "3d-platformer",
-      "atmospheric"
-     ],
-     "mech": "第一人称跳跃跨越深渊收集星种，并养育月鱼群推进末日探索。",
-     "why": "PS1恐怖美学加第一人称平台跳跃，低模空间把“信仰之跃”做成核心风险叙事。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Burn the Midnight Oil",
      "sub": "A supernatural neon-noir romance game about monsters, love, and other horrors.",
      "thumb": "https://img.itch.zone/aW1nLzIxNTk4NjU1LnBuZw==/315x250%23c/a1ilVu.png",
-     "metric": "★4.8·467人",
+     "metric": "",
      "link": "https://teamfoxglove.itch.io/burn-the-midnight-oil",
      "fresh": false,
      "author": "Foxglove Games",
      "genre": "Visual Novel",
      "price": "免费",
-     "rating_count": 467,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "amare",
-      "dating-sim",
-      "detective"
-     ],
-     "mech": "扮演吸血鬼侦探或地狱犬警察，在办案对话中平衡调查与亲密关系。",
-     "why": "把侦探办案与怪物恋爱合并，用双主角和案件揭开过去，拓展酷儿恋爱VN的类型混合。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Make Ten",
      "sub": "math arcade blitz",
      "thumb": "https://img.itch.zone/aW1nLzE2MDg4NTM4LmdpZg==/315x250%23c/YKgoQn.gif",
-     "metric": "★4.7·312人",
+     "metric": "新上榜",
      "link": "https://pancelor.itch.io/make-ten",
      "fresh": true,
      "author": "pancelor",
      "genre": "Puzzle",
      "price": "免费",
-     "rating_count": 312,
+     "rating_count": 0,
      "comments_total": 143,
      "platforms": "Windows/Linux/macOS",
-     "tags": [
-      "high-score",
-      "math",
-      "no-ai"
-     ],
-     "mech": "拖选数字凑十消除，限时两分钟刷高分，Deluxe加入无计时与重力变体。",
-     "why": "极简算术消除加两分钟计时，展示PICO-8小体量靠高分循环和变体模式延长复玩。"
+     "tags": [],
+     "mech": "限时内组合数字凑出10，连续解题维持节奏，失误即断连或结束。",
+     "why": "快节奏算术被做成街机闪电局，提示轻量数学玩法适合原型验证与短会话。"
     },
     {
      "name": "Pixel Dungeon",
@@ -2454,98 +2306,86 @@
      "name": "Night in the Woods",
      "sub": "At the end of everything, hold onto anything.",
      "thumb": "https://img.itch.zone/aW1hZ2UvOTM2NjQvNDM4OTk3LnBuZw==/315x250%23c/bY3lZb.png",
-     "metric": "★4.8·2828人",
+     "metric": "",
      "link": "https://finji.itch.io/night-in-the-woods",
      "fresh": false,
      "author": "FinjiVerified Account",
      "genre": "Adventure",
      "price": "$19.99",
-     "rating_count": 2828,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/macOS",
      "tags": [],
-     "mech": "在衰退小镇探索对话、重连旧友，同时追查林中异象推进悬疑。",
-     "why": "叙事冒险以日常社交与小镇衰败并置，证明低机制强度也能靠角色写作驱动。"
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Cartomancy Anthology",
      "sub": "A collection of 22 unique games, based on the tarot's Major Arcana!",
      "thumb": "https://img.itch.zone/aW1nLzkxOTU5NjAucG5n/315x250%23c/vNZm5i.png",
-     "metric": "★5·13人",
+     "metric": "",
      "link": "https://cartomancyanthology.itch.io/cartomancy-anthology",
      "fresh": false,
      "author": "Cartomancy Anthology",
      "genre": "",
      "price": "免费",
-     "rating_count": 13,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/macOS",
-     "tags": [
-      "anthology",
-      "collection",
-      "short"
-     ],
-     "mech": "抽牌形成牌阵，每张牌对应一个独立小游戏，游玩结果回填为一次占卜。",
-     "why": "以塔罗牌阵作为合集导航与意义框架，探索“合集即一套牌”的策展式发行。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Feed the Scorchpot",
      "sub": "A dice roguelike about feeding a dragon for twenty years.",
      "thumb": "https://img.itch.zone/aW1nLzI4MTU1ODExLnBuZw==/315x250%23c/6HW8RN.png",
-     "metric": "★5·3人",
+     "metric": "",
      "link": "https://indieformer.itch.io/feed-the-scorchpot",
      "fresh": false,
      "author": "Indieformer",
      "genre": "Strategy",
      "price": "$14.99",
-     "rating_count": 3,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/macOS",
-     "tags": [
-      "deck-building",
-      "dice",
-      "dragons"
-     ],
-     "mech": "掷骰与卡牌构筑形成投喂组合，在二十年时间轴管理龙的成长、资源与风险。",
-     "why": "Balatro式骰子构筑+桌面策略融合，显示长周期投喂叙事包装Roguelite的潜力。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Super Hexagon",
      "sub": "A minimal action game by Terry Cavanagh, with music by Chipzel.",
      "thumb": "https://img.itch.zone/aW1hZ2UvMjk2NTUvMTI0OTMwLnBuZw==/315x250%23c/S8xFxd.png",
-     "metric": "★4.6·386人",
+     "metric": "",
      "link": "https://terrycavanagh.itch.io/super-hexagon",
      "fresh": false,
      "author": "Terry CavanaghVerified Account",
      "genre": "Action",
      "price": "$2.99",
-     "rating_count": 386,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "Windows/Linux/Android",
      "tags": [],
-     "mech": "旋转三角标躲避收缩六边形墙，音乐加速推动节奏，靠毫秒级转向存活。",
-     "why": "极简几何+音乐同步的高压反应玩法，证明单一核心机制靠节奏曲线也能成原型。"
+     "mech": "",
+     "why": ""
     },
     {
      "name": "Horse Master: The Game of Horse Mastery",
      "sub": "Master a horse. Become a Horse Master.",
      "thumb": "https://img.itch.zone/aW1hZ2UvMzM5MjgvMTQ2MjMxLnBuZw==/315x250%23c/N8hs6m.png",
-     "metric": "★4.8·250人",
+     "metric": "",
      "link": "https://tommchenry.itch.io/horse-master",
      "fresh": false,
      "author": "Tom McHenry",
      "genre": "",
      "price": "免费",
-     "rating_count": 250,
+     "rating_count": 0,
      "comments_total": 0,
      "platforms": "",
-     "tags": [
-      "horses",
-      "text-based",
-      "twine"
-     ],
-     "mech": "通过文本选项训练马匹并管理状态事件，荒诞分支与失败结局构成核心循环。",
-     "why": "Twine文本叙事+荒诞马匹养成，预示叙事驱动、黑色幽默模拟的早期实验方向。"
+     "tags": [],
+     "mech": "",
+     "why": ""
     }
    ]
   }
@@ -6504,5 +6344,5 @@
   }
  },
  "hero_bg": "https://bigwalk.panicfiles.com/BigWalk_Screenshot_May25_03.png",
- "picks_generated_from": "bbb766273210ca85c6f78754aca0577815b11cdeb64361af364aa494e72272c0"
+ "picks_generated_from": "2b3a1fce104295a9dec53bf7ae48cecc4697029495c3d17d1e3aab859b1aeb42"
 }
