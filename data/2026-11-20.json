@@ -1,0 +1,560 @@
+{
+  "date": "2026-11-20",
+  "meta": {
+    "raw_count": 294,
+    "filtered_count": 202,
+    "selected_count": 12,
+    "crawl_time": "2026-11-20 09:40"
+  },
+  "lede": "GTA 6 全球解锁首日：约 210 万英美 Xbox 玩家改「新西兰区」提前进场，超新西兰全国人口三分之一；同一天 Firaxis 裁掉约三分之一员工、Ubisoft 蒙特利尔与魁北克城再裁 166 人；UE 5.9 Preview 2 把 AI 动画生成接进 Sequencer。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Fable 5.2 把魔兽与 GTA 揉成《World of Hoodcraft》：6000 个联网 NPC，浏览器可玩"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "《Keepsake County》：程序生成的农舍连环盗窃，警察到之前必须跑掉——今日发售"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "约 210 万英美 Xbox 玩家改用新西兰区提前玩 GTA 6，超新西兰全国人口三分之一"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Fable 5.2 做出《World of Hoodcraft》：魔兽 × GTA，6000 个联网 NPC、开放 PvP、浏览器可玩\nOpenGame 启动 10 万美元 Web 游戏 Jam，ElevenLabs / fal / MeshyAI 赞助，4 周任意引擎\n前游戏公司创始人 Thariq：不要把游戏创作完全外包给 AI，试错过程本身就是价值"
+    },
+    {
+      "id": "industry",
+      "text": "约 210 万英美 Xbox 玩家改新西兰区提前解锁 GTA 6（美国 150 万 / 英国 60 万）\nFiraxis 裁员约三分之一（约 60 人），工作室负责人 Heather Hazen 离职\nUbisoft 蒙特利尔与魁北克城再裁 166 人，约占两地工作室 4%\nWarren Spector 批评 GTA 6 十亿美元开发模式：宁愿要上百款游戏和充分就业"
+    },
+    {
+      "id": "indie",
+      "text": "《Keepsake County》今日发售：程序生成的农舍连环盗窃，2000 年代 Cartoon Network 画风\n《The First Zombie》定档 12 月 16 日：扮演人类第一只僵尸，把东京变成僵尸之城\nKRAFTON 发行的《TARAE: The Unbound》公布近战职业 Warfiend，六职业各自成流派"
+    },
+    {
+      "id": "tools",
+      "text": "UE 5.9 Preview 2：Sequencer 内直接生成动画，NVIDIA Kimodo 支持用文字描述动作\nGame UI Database 收录突破 2000 款游戏、79,886 张界面截图"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · 开发者 @Izkimar",
+          "tags": [
+            "AI生成",
+            "浏览器游戏",
+            "多人PvP"
+          ],
+          "title": "Izkimar 用 Fable 5.2 把《魔兽世界》嫁接到 GTA：6000 个联网 NPC、开放 PvP，浏览器直接开玩",
+          "en_title": "On the eve of GTA 6, I used Fable 5.2 to combine World of Warcraft with GTA. I present to you: The World of Hoodcraft.",
+          "full_text": "On the eve of GTA 6, I used Fable 5.2 to combine World of Warcraft with GTA. \n\nI present to you: The World of Hoodcraft. \n\nHijack wagons mid-fight, rack up 5-star heat until battlemages turn you to a sheep, or get locked in the public stocks for the whole server to see. \n\n6,000 networked NPCs, fully multiplayer with open PvP, and playable in your browser today.",
+          "author": "Izkimar",
+          "date": "2026-11-19",
+          "likes": 246,
+          "views": 15774,
+          "link": "https://x.com/Izkimar/status/2123188582836031910",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2123185758286536704/img/4a5OmPt4dnvgdR_N.jpg",
+            "video_url": "https://x.com/Izkimar/status/2123188582836031910/video/1"
+          },
+          "summary": "开发者 Izkimar 在 GTA 6 发售前夜发了一个用 Fable 5.2 做的混血项目《World of Hoodcraft》：把《魔兽世界》的奇幻设定塞进 GTA 的犯罪沙盒。玩家可以在战斗中途劫掠马车、把通缉星级刷到 5 星直到战斗法师把你变成绵羊，或者被关进广场的枷锁里让整个服务器围观。作者给出的硬指标是 6,000 个联网 NPC、完整多人 + 开放 PvP，且当天就能在浏览器里玩。",
+          "analysis": "值得注意的不是「AI 又做了一个 demo」，而是三个指标同时出现在网页端：6000 个联网 NPC、开放 PvP、零安装。这类项目过去在浏览器里要靠专门的网络与同步方案堆几个月，现在一个人用一个生成式工具就能把「世界骨架 + 玩法规则 + 美术」一起拉起来。对从业者的启示是：AI 生成正在把竞争点从「能不能做出来」推到「规则设计得好不好玩」。",
+          "recommendation": "Fable 5.2 把魔兽与 GTA 揉成《World of Hoodcraft》：6000 个联网 NPC，浏览器可玩",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "X · 产品 @0xRishi",
+          "tags": [
+            "游戏Jam",
+            "Web游戏",
+            "AI工具链"
+          ],
+          "title": "OpenGame 上线并启动 OpenGame Jam：10 万美元现金奖池、ElevenLabs 与 fal、MeshyAI 赞助、4 周任意引擎",
+          "en_title": "Today, we're unveiling @opengameio with one goal: create the most fun place on the internet",
+          "full_text": "Today, we’re unveiling @opengameio with one goal: create the most fun place on the internet\n\nWe’re kicking off our OpenGame Jam for the best web games\n- Sponsored by @ElevenLabs @fal @MeshyAI\n- $100K cash prize pool\n- 4 weeks, any engine\n\nMore info in 🧵\n\nhttps://t.co/3LYTaZqIk0 https://t.co/qWztb4aNgR",
+          "author": "0xRishi",
+          "date": "2026-11-18",
+          "likes": 400,
+          "views": 46835,
+          "link": "https://x.com/0xRishi/status/2123099546922402206",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2123098935653007361/img/hztVFOk9xIP7XMd_.jpg",
+            "video_url": "https://x.com/0xRishi/status/2123099546922402206/video/1"
+          },
+          "summary": "Rishi 公布 OpenGame 平台并同步启动 OpenGame Jam，目标是把「最好玩的 Web 游戏」聚到一处。规则很直白：10 万美元现金奖池、周期 4 周、不限制引擎，赞助方是 ElevenLabs（语音/音频）、fal（生成式推理）与 MeshyAI（3D 生成）——三家都是生成式工具供应商。",
+          "analysis": "Jam 的赞助名单本身就是判断行业走向的信号：音频、3D、推理三条生成链路被同时摆上台面，说明「AI 原生网页游戏」已经有了自己的工具栈和分发入口。4 周 + 任意引擎的设定，本质是在压低「从想法到可玩」的时间成本；对独立开发者来说，这类平台的奖金与曝光正在成为新的发行渠道之一。",
+          "recommendation": "OpenGame 启动 10 万美元 Web 游戏 Jam，ElevenLabs/fal/MeshyAI 赞助，4 周任意引擎"
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "X · 博主 @FinanceYF5",
+          "tags": [
+            "AI工作流",
+            "独立开发",
+            "方法论"
+          ],
+          "title": "前游戏公司创始人 Thariq 用 AI 做自己的游戏，但主张「不要把游戏创作完全外包给 AI」",
+          "en_title": "曾经创办过游戏公司的开发者 Thariq，最近开始用 AI 制作一款自己的游戏。但他的观点很有意思：不要把游戏创作完全外包给 AI",
+          "full_text": "1/ 曾经创办过游戏公司的开发者 Thariq，最近开始用 AI 制作一款自己的游戏。\n\n但他的观点很有意思：\n不要把游戏创作完全外包给 AI\n\n设计角色、打磨玩法、反复试错，本身就是最有创造力、最有成就感的过程。\n\nAI 应该帮助开发者实现自己的想法，而不是替他们决定游戏该是什么样。 https://t.co/dcETxUeLtA",
+          "author": "FinanceYF5",
+          "date": "2026-11-19",
+          "likes": 74,
+          "views": 11040,
+          "link": "https://x.com/FinanceYF5/status/2123246100769587408",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2123235038309314560/img/sXPnyftQ1Y0PsZcp.jpg",
+            "video_url": "https://x.com/FinanceYF5/status/2123246100769587408/video/1"
+          },
+          "summary": "中文博主「AI Will」转述开发者 Thariq 的观点：他创办过游戏公司，现在用 AI 做自己的新项目，但明确反对把游戏创作整体外包给 AI。理由是做角色、打磨玩法、反复试错本身就是最有创造力和成就感的部分；AI 的正确定位是帮开发者实现自己的想法，而不是替开发者决定游戏该长什么样。",
+          "analysis": "在一个所有人都在比「AI 产出速度」的月份里，这条是反方向的校准。它指向一个可验证的判断：当生成成本趋近于零，稀缺的不是产能而是「品味与决策」——谁来决定砍掉哪个机制、保留哪种手感。对团队的实际含义是，把 AI 放在执行层而把方向盘留在人手里，可能比全面外包跑得更远。",
+          "recommendation": "前游戏公司创始人 Thariq：AI 该帮开发者实现想法，而不是替他们决定游戏该是什么样"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "X · 媒体 @eurogamer（数据：Ampere Analysis）",
+          "tags": [
+            "GTA6",
+            "主机市场",
+            "发售数据"
+          ],
+          "title": "约 210 万英美 Xbox 玩家改「新西兰区」提前解锁 GTA 6：美国 150 万、英国 60 万",
+          "en_title": "Over 2 million Xbox players in the UK and US reportedly used the 'New Zealand trick' to play GTA 6 early - that's more than a third of the country's population",
+          "full_text": "Over 2 million Xbox players in the UK and US reportedly used the 'New Zealand trick' to play GTA 6 early - that's more than a third of the country's population\n\nhttps://t.co/KXnpDCGJZ6 https://t.co/owhFuZt9P2",
+          "author": "eurogamer",
+          "date": "2026-11-19",
+          "likes": 61,
+          "views": 12560,
+          "link": "https://x.com/eurogamer/status/2123443760965333144",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HXf8oc2WkAAVaIq.jpg"
+          },
+          "summary": "Eurogamer 引用分析机构 Ampere Analysis 的数据：GTA 6 按各地当地时间 11 月 19 日零点解锁，新西兰因时区成为全球第一个上线的国家，大量玩家把 Xbox 主机区域改成新西兰提前进入。美国约 150 万、英国约 60 万 Xbox 玩家这么做了，合计超过 210 万——超过新西兰全国人口的三分之一；加拿大与巴西各约 20 万、墨西哥约 10 万。相比之下，美国只有约 10 万 PlayStation 玩家选择提前解锁，Ampere 认为原因是 Xbox 换区只需改账号设置。",
+          "analysis": "这条数据的价值在于它量化了一个结构性差异：同一款游戏、同一时间窗口，Xbox 的「换区成本几乎为零」直接把一部分需求提前兑现，而 PlayStation 因为需要区域账号与本地货币支付，转化率低一个数量级。对发行方来说，区域定价与时区解锁策略已经不只是合规问题，而是可以被玩家用脚投票的运营变量；对平台方，账号体系的摩擦成本正在变成可观测的收入差。",
+          "recommendation": "约 210 万英美 Xbox 玩家改用新西兰区提前玩 GTA 6，超新西兰全国人口三分之一",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "X · 媒体 @NicheGamer（引 Bloomberg）",
+          "tags": [
+            "裁员",
+            "2K",
+            "策略游戏"
+          ],
+          "title": "Firaxis 裁掉约三分之一员工（约 60 人），工作室负责人 Heather Hazen 同日离职",
+          "en_title": "Firaxis lays off roughly 1/3 of staff as studio head Heather Hazen resigns",
+          "full_text": "Firaxis lays off roughly 1/3 of staff as studio head Heather Hazen resigns: https://t.co/YDBUFrBiYt https://t.co/UqKWCUSt9t",
+          "author": "nichegamer",
+          "date": "2026-11-19",
+          "likes": 4,
+          "views": 534,
+          "link": "https://x.com/nichegamer/status/2123454921181683874",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HXgG_2BXUAA4SGn.jpg"
+          },
+          "summary": "《文明》与《XCOM》的开发商 Firaxis 于 2026 年 11 月 17 日裁掉约 60 人，约为全员的三分之一；母公司 2K 确认工作室负责人 Heather Hazen 也将离开。2K 的说法是重组、让更小的团队专注设计、技术与玩家体验。Hazen 2020 年以 COO 身份加入，2023 年接任工作室负责人。2025 年发售的《文明 VII》在 Steam 英文评价为 Mixed，官方声明未给销量。Bloomberg 另称 Firaxis 有一款未公布的《XCOM》新作开发不顺、今夏错过一个重要里程碑，裁员后项目预计继续推进。裁员发生在 GTA 6 发售前两天。",
+          "analysis": "两家同属 Take-Two 的工作室，一边是十亿美元级的 GTA 6 如期落地，一边是砍掉三分之一人手的 Firaxis——这正是「头部超大作 + 中型项目收缩」这一结构在当前行业里的直观切面。更值得留意的是 2K 给出的理由：不是砍项目，而是「用更小的团队做同样的方向」。当《文明 VII》拿到 Mixed 评价后，系列招牌的容错空间在变窄，这对所有靠长线 IP 续作吃饭的中型工作室都是提醒。",
+          "recommendation": "Firaxis 裁掉约三分之一员工（约 60 人），工作室负责人 Heather Hazen 同日离职",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "X · 媒体 @rockpapershot（引 GamesIndustry.biz）",
+          "tags": [
+            "裁员",
+            "育碧",
+            "组织重组"
+          ],
+          "title": "Ubisoft 蒙特利尔与魁北克城再裁 166 人，约占两地工作室总人数的 4%",
+          "en_title": "Ubisoft lay off 166 more staff, this time at their Montreal and Quebec City studios",
+          "full_text": "Ubisoft lay off 166 more staff, this time at their Montreal and Quebec City studios, while mumbling about \"current production priorities and business needs\" https://t.co/VUhRS0iEo1",
+          "author": "rockpapershot",
+          "date": "2026-11-19",
+          "likes": 0,
+          "views": 726,
+          "link": "https://x.com/rockpapershot/status/2123450498661396850",
+          "media": null,
+          "summary": "Ubisoft 确认在蒙特利尔与魁北克城工作室裁减 166 个岗位，约占两地总人数的 4%，主要影响制作与支持岗位，涉及育碧与腾讯合资的 Vantage Studios（负责刺客信条、孤岛惊魂、彩虹六号等主力 IP）。官方表述为「让资源与当前制作优先级和业务需求对齐」，将提供遣散、延长医疗保险与职业过渡服务。这是 2026 年 1 月宣布的「重大组织、运营与产品线重置」的延续：此前已关闭 Halifax 移动与斯德哥尔摩工作室、取消含《波斯王子：时之沙》重制在内的 6 个项目，此后 Red Storm 裁 105 人、Winnipeg 与贝尔格莱德关闭影响约 380 人、10 月关闭 RedLynx 并缩减新加坡团队约 120 人。",
+          "analysis": "把这条和 Firaxis 放在同一天看，信息就很清楚了：2026 年的裁员不是某一家的经营事故，而是「产品线重置」这一动作在全行业同步执行。要注意的是 Vantage Studios 也被波及——被寄予厚望的合资主力 IP 团队同样在缩编，说明收缩已经越过边缘项目、进入核心资产。对求职者的现实含义是，履历上的「大 IP 项目经验」不再等于稳定性。",
+          "recommendation": "Ubisoft 蒙特利尔与魁北克城再裁 166 人，约占两地工作室 4%"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "X · 媒体 @eurogamer",
+          "tags": [
+            "GTA6",
+            "开发成本",
+            "行业观点"
+          ],
+          "title": "Warren Spector 评 GTA 6 的十亿美元开发：「我宁愿要上百款游戏和充分就业，也不要一款无论多惊艳的游戏」",
+          "en_title": "Warren Spector lambasts GTA 6's \"billion dollar\" development",
+          "full_text": "Warren Spector lambasts GTA 6's \"billion dollar\" development - 'I just hope it's is the last of its kind even if it's the best we have to offer'\n\nhttps://t.co/DNFSmbzQ0Q https://t.co/PjqSxoG3ik",
+          "author": "eurogamer",
+          "date": "2026-11-19",
+          "likes": 10,
+          "views": 2415,
+          "link": "https://x.com/eurogamer/status/2123422668057612690",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HXfphVSWIAA9c7x.jpg"
+          },
+          "summary": "《杀出重围》之父 Warren Spector 在 GTA 6 发售当天于 LinkedIn 发文：先祝贺所有参与者，称这可能是「这个媒介与这个行业的一个高点」；随后批评其十亿美元开发成本与必然同样夸张的营销预算「不代表任何人能、或应该效仿的商业模式」，尤其在数千名开发者失业的当下——「十亿美元能买很多游戏、发很多份薪水」。他的结论是「我宁愿要上百款游戏和充分就业，也不要一款无论多惊艳的游戏」，并希望 GTA 6 是同类作品的最后一个。Spector 于 2026 年 8 月宣布从游戏开发一线退休。",
+          "analysis": "这是一条容易被当成「老炮抱怨」的评论，但它其实给出了可操作的判断标准：把一部超大作的成本折算成「能养活多少个中型项目」，答案往往是几十个。对国内团队的直接启发是，不要用 GTA 6 的预算规模去设定自己的目标函数——它验证的是「给足时间与钱就能做出杰作」，而不是「必须给足时间与钱才能做出杰作」。",
+          "recommendation": "Warren Spector：GTA 6 十亿美元开发模式不该被效仿，这笔钱能养活很多游戏和很多人"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "X · 媒体 @rockpapershot",
+          "tags": [
+            "潜行",
+            "程序生成",
+            "独立游戏"
+          ],
+          "title": "Forward Instinct 的《Keepsake County》今日发售：程序生成的农舍连环盗窃，2000 年代 Cartoon Network 画风",
+          "en_title": "Ignore that other game about crime that's out and burgle some ugly farmhouses in Keepsake County, a \"midwestern stealth game\" with a 2000s Cartoon Network vibe",
+          "full_text": "Ignore that other game about crime that's out and burgle some ugly farmhouses in Keepsake County, a \"midwestern stealth game\" with a 2000s Cartoon Network vibe https://t.co/0dIAHRX6Gu",
+          "author": "rockpapershot",
+          "date": "2026-11-19",
+          "likes": 1,
+          "views": 341,
+          "link": "https://x.com/rockpapershot/status/2123463060316623106",
+          "media": null,
+          "summary": "RPS 在 GTA 6 发售当天推了一款完全反向的小游戏：《Keepsake County》，自称「中西部潜行游戏」，画风是 2000 年代 Cartoon Network 的味道。玩法是闯进荒郊野外的丑农舍、在你从没见过的程序生成房子里限时搜刮、警察赶到前撤离；如果被住户发现，对方会更早报警，或者干脆自己动手。Steam 于 2026 年 11 月 19 日发售，¥74.40（原价 ¥93，-20%），支持 Windows / macOS / Linux。",
+          "analysis": "",
+          "recommendation": "《Keepsake County》：程序生成的农舍连环盗窃，警察到之前必须跑掉——今日发售",
+          "featured": true,
+          "game_ref": "Keepsake County",
+          "enrichment": {
+            "game_name": "Keepsake County",
+            "genre": "动作 / 冒险 / 独立（程序生成潜行盗窃）",
+            "developer": "Forward Instinct（自研自发，小型独立团队）",
+            "platforms": [
+              "Steam（Windows / macOS / Linux）"
+            ],
+            "price": "¥74.40（原价 ¥93，发售 -20%）",
+            "release_date": "已发售 · 2026年11月19日",
+            "steam_rating": "发售首日，暂无成规模用户评价",
+            "steam_url": "https://store.steampowered.com/app/1162860/Keepsake_County/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1162860/533a896c1950936d829bf7e6287882ce5c8c9667/header.jpg?t=1795123717",
+            "youtube_video": null,
+            "description": "把「限时搜刮」做成核心循环的第一人称潜行盗窃游戏，用程序生成把「每次都是陌生房子」变成机制而不是噱头。\n\n【核心玩法】每局的目标是闯进一栋你没见过的农舍，在警察抵达前把值钱的东西搬走并撤离。房子由程序生成，因此不存在背地图这条路——你必须现场判断动线、找入口、估算哪个房间值得花时间。时间压力来自外部：报警不是失败条件，而是倒计时开始。\n\n【被发现之后】如果被住户撞见，对方会更快报警，或者不报警、直接自己动手收拾你。这条设计把「潜行」从「躲开视野」变成了「风险管理」：你可以在被发现后赌一把继续搜，也可以立刻撤。\n\n【美术与氛围】刻意做成 2000 年代 Cartoon Network 的卡通质感，配「中西部荒郊」的破败农舍场景，与同期铺天盖地的写实犯罪大作形成强烈反差。丑得有理有据的美术，反而让「翻箱倒柜」这件事显得滑稽而不沉重。\n\n【优势】程序生成直接解决了潜行游戏「背板之后就没意思」的老问题；单局时长短、失败成本低，适合碎片时间；三平台同发（含 macOS / Linux）对小团队来说覆盖面很实在。\n\n【不足】卡通低模画面在「搜刮反馈」上的表现力有限，长期动力高度依赖道具与房屋模板的丰富度；程序生成容易出现结构重复，首日评价样本还不足以判断后期疲劳速度。\n\n【综合评价】一款把「反 GTA」做成卖点的小体量作品：不拼规模，拼的是每局重新学习一栋房子的紧张感。在 11 月 19 日这个所有玩家都在谈论 GTA 6 的日子里，它提供了一个成本只有 74 元的对照选项。",
+            "why_notable": "与 GTA 6 同日发售、明确以「反向犯罪游戏」定位；用程序生成农舍把限时潜行盗窃做成可重复的核心循环",
+            "pcu": "暂无公开数据（未进当日 Steam Top 500）",
+            "current_players": "暂无公开数据",
+            "estimated_sales": "暂无官方数据（发售首日）",
+            "gi_summary": "「程序生成潜行盗窃」套「2000 年代 Cartoon Network 画风」新瓶，Forward Instinct 自研自发，Steam 售价 ¥74.40"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "X · 媒体 @NicheGamer",
+          "tags": [
+            "动作",
+            "僵尸",
+            "反向玩法"
+          ],
+          "title": "Phoenixx 的《The First Zombie》定档 12 月 16 日：扮演人类第一只僵尸，把东京人「交朋友」变成同伙",
+          "en_title": "Reverse zombie game The First Zombie launches in December",
+          "full_text": "Reverse zombie game The First Zombie launches in December: https://t.co/M0yZDgkE8h https://t.co/NGqcnI29tp",
+          "author": "nichegamer",
+          "date": "2026-11-19",
+          "likes": 6,
+          "views": 1129,
+          "link": "https://x.com/nichegamer/status/2123413820378939435",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HXfhngAXcAAcRRu.jpg"
+          },
+          "summary": "发行商 Phoenixx 公布《The First Zombie》发售日：2026 年 12 月 16 日登陆 PC（Steam）与 Switch，与日本综艺《星期三的 Downtown》制作人藤井健太郎合作。玩法是「反向僵尸游戏」——你不是杀僵尸，而是扮演人类史上第一只僵尸，去和日常生活中的普通人「交朋友」，把他们变成僵尸，滚起越来越大的尸群，逐区占领涩谷、新宿、上野，把东京变成僵尸之城。官方定位是休闲动作，主角是「可爱系僵尸」。",
+          "analysis": "",
+          "recommendation": "《The First Zombie》：扮演人类第一只僵尸，把东京人「交朋友」变成同伙——12 月 16 日发售",
+          "featured": true,
+          "game_ref": "The First Zombie",
+          "enrichment": {
+            "game_name": "The First Zombie",
+            "genre": "动作 / 休闲（反向僵尸、群体扩张）",
+            "developer": "THE FIRST ZOMBIE 製作委員会（发行 Phoenixx，制作人藤井健太郎）",
+            "platforms": [
+              "Steam（Windows）",
+              "Nintendo Switch"
+            ],
+            "price": "尚未公布（商店页未开放价格）",
+            "release_date": "2026年12月16日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5099420/THE_FIRST_ZOMBIE/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5099420/4776521c87ef3eda8cd0e6e7c6a0cc2a6b79a513/header.jpg?t=1795060770",
+            "youtube_video": null,
+            "description": "把「僵尸题材」的阵营整个翻转：你不再是幸存者，而是这场灾难的起点。\n\n【核心玩法】目标不是消灭僵尸，而是增加僵尸。操作主角走上东京街头，靠近正在过日常生活的普通人，通过「交朋友」把他们变成同类；尸群越大，能推进的街区越多。\n\n【关卡结构】以东京真实街区为舞台——涩谷、新宿、上野——逐区占领，把普通街区改造成「僵尸小镇」。这决定了它的节奏偏「清扫 + 扩张」，而不是单局 Roguelike。\n\n【角色与调性】主角被设定为「可爱系僵尸」，整体走轻松搞笑路线，与《星期三的 Downtown》制作人藤井健太郎的综艺背景一致：把恐怖题材做成荒诞喜剧。\n\n【平台与操作】PC（Steam）与 Switch 双平台，商店页标注完全支持手柄，属休闲动作定位，门槛明显低于硬核动作游戏。\n\n【优势】概念一句话就能讲清、且天然适合短视频传播；「反向」设定让它在拥挤的僵尸品类里有辨识度；12 月 16 日的档期避开了年末 3A 混战。\n\n【不足】休闲动作 + 群体扩张容易在数小时后陷入重复；「交朋友」这一核心动词的深度尚未展示，若只是靠近即转化，玩法上限会偏低；价格与内容体量都还没公布。\n\n【综合评价】一款靠概念取胜的日本小体量作品。它真正的考题是：当「把城市变僵尸」的新鲜感过去，剩下的循环能不能撑住十小时。",
+            "why_notable": "把僵尸题材的阵营彻底反转——玩家扮演第一只僵尸扩张尸群、逐区占领东京；由综艺制作人藤井健太郎参与，PC/Switch 同步定档 12 月 16 日",
+            "pcu": "未发售",
+            "current_players": "未发售",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「反向僵尸扩张」套「东京街区占领」新瓶，Phoenixx 发行、藤井健太郎参与，Steam 12 月 16 日发售"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "X · 媒体 @NicheGamer",
+          "tags": [
+            "动作RPG",
+            "韩国",
+            "多职业"
+          ],
+          "title": "KRAFTON 发行的《TARAE: The Unbound》公布近战职业 Warfiend：六职业各自独立流派，东方暗黑奇幻动作 RPG",
+          "en_title": "TARAE: The Unbound reveals new melee class Warfiend",
+          "full_text": "TARAE: The Unbound reveals new melee class Warfiend: https://t.co/hxHeYRIgaL https://t.co/rU9bGjmp84",
+          "author": "nichegamer",
+          "date": "2026-11-19",
+          "likes": 2,
+          "views": 549,
+          "link": "https://x.com/nichegamer/status/2123453670599622878",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HXgF3EJXAAAAkyr.jpg"
+          },
+          "summary": "Niche Gamer 报道《TARAE: The Unbound》公开新近战职业 Warfiend。游戏由 Boundary 开发、KRAFTON 发行，舞台是「六界裂隙之上」的岛屿太归岛（Taegwido），六个职业各有独立的战斗风格与 build 方向，支持单人与在线合作，发售日尚未公布。",
+          "analysis": "",
+          "recommendation": "《TARAE: The Unbound》公布近战职业 Warfiend：KRAFTON 发行的六职业东方暗黑动作 RPG",
+          "game_ref": "TARAE: The Unbound",
+          "enrichment": {
+            "game_name": "TARAE: The Unbound",
+            "genre": "动作 / 冒险 / 角色扮演（东方暗黑奇幻）",
+            "developer": "Boundary（发行 KRAFTON）",
+            "platforms": [
+              "Steam（Windows）"
+            ],
+            "price": "尚未公布",
+            "release_date": null,
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/4604540/TARAE_The_Unbound/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4604540/a629a9ec664628d71b542525f442b9926e449a2b/header.jpg?t=1787791832",
+            "youtube_video": null,
+            "description": "以「六界裂隙」为世界观的东方暗黑奇幻动作 RPG，卖点是把职业做成六条互相独立的战斗流派。\n\n【世界观】舞台是太归岛（Taegwido）——一座诞生于六界破碎边界之上的岛屿。这个设定给了美术与怪物设计很大的自由度：不同界域对应不同材质、光影与敌群，也让「六职业」在视觉上有了出处。\n\n【职业系统】六个职业各自拥有独立的战斗风格与 build 方向，本次公布的 Warfiend 是近战向。设计取向上更像「每个职业都是一套独立游戏」，而不是共用一套技能树换皮。\n\n【玩法结构】动作 RPG 基底，支持单人推进与在线合作，商店页标注完全支持手柄，并提供了可调难度、无需快速反应事件等辅助选项。\n\n【发行背景】Boundary 开发、KRAFTON 发行。对一个尚未公布发售日的新 IP 来说，KRAFTON 的发行资源意味着它会被放进「重点产品」的观察名单。\n\n【优势】六职业独立流派的野心在动作 RPG 里属高投入方向；东方暗黑奇幻题材在韩国厂商里辨识度不错；合作模式给了长线运营空间。\n\n【不足】发售日仍为「即将宣布」，实机与手感尚未验证；六职业若每条都要达到独立游戏的内容密度，开发量与平衡成本极高；多人合作的动作 RPG 首发稳定性历来是风险点。\n\n【综合评价】值得放进观察名单的韩国新 IP：概念完整、发行方够硬，接下来要看的是首段可玩实机能否撑住「六职业各自成流派」这句承诺。",
+            "why_notable": "KRAFTON 发行的东方暗黑奇幻动作 RPG，用「六职业各自独立流派」把自己和同类竞品区分开，本次公开近战职业 Warfiend",
+            "pcu": "未发售",
+            "current_players": "未发售",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「六职业独立流派」套「东方暗黑奇幻」新瓶，Boundary 开发、KRAFTON 发行，Steam 发售日待定"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "X · 媒体 @NicheGamer",
+          "tags": [
+            "动作",
+            "动漫风",
+            "主机"
+          ],
+          "title": "《炎姬》（Homura Hime）追加 PS5 版：在立体弹幕中穿梭的 3D 动作游戏，Steam 已积累 2,468 条评价",
+          "en_title": "Anime 3D action game Homura Hime is coming to PS5",
+          "full_text": "Anime 3D action game Homura Hime is coming to PS5: https://t.co/vcc4T6WiW7 https://t.co/Ja21HyqlMV",
+          "author": "nichegamer",
+          "date": "2026-11-19",
+          "likes": 6,
+          "views": 880,
+          "link": "https://x.com/nichegamer/status/2123428210348085697",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HXfutGLWQAAj75P.jpg"
+          },
+          "summary": "Niche Gamer 报道《炎姬》将登陆 PS5。这是 Crimson Dusk 开发、PLAYISM 发行的动漫风 3D 动作游戏，核心是在立体弹幕中闪避穿行，结合近战与远程攻击打出连招，用闪避与格挡应对一波波妖魔。Steam 版 2026 年 3 月 4 日已发售，¥88，累计 2,468 条用户评价。",
+          "analysis": "对已经在 Steam 上验证过手感的动漫风动作游戏来说，追加主机版是典型的第二波收入曲线。",
+          "recommendation": "《炎姬》追加 PS5 版：在立体弹幕中穿梭的动漫风 3D 动作游戏",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "X · 媒体 @NicheGamer",
+          "tags": [
+            "模拟经营",
+            "抢先体验",
+            "农场"
+          ],
+          "title": "《Farmer's Dynasty 2》明年 1 月结束抢先体验转正，随后登陆主机",
+          "en_title": "Farmer's Dynasty 2 leaves Early Access in January, with consoles to follow",
+          "full_text": "Farmer’s Dynasty 2 leaves Early Access in January, with consoles to follow: https://t.co/wNcGu7XlAY https://t.co/DzXRTRDCDq",
+          "author": "nichegamer",
+          "date": "2026-11-19",
+          "likes": 2,
+          "views": 755,
+          "link": "https://x.com/nichegamer/status/2123435852353134964",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HXf1p6IWsAEbXlo.jpg"
+          },
+          "summary": "UMEO Studios 开发、Toplitz Productions 发行的《农夫王朝 2》（Farmer's Dynasty 2）将于 2027 年 1 月结束抢先体验正式发售，随后推出主机版。游戏是「生活 + 农耕」模拟：耕种、饲养、多代家族传承。Steam 抢先体验自 2026 年 4 月 2 日开始，售价 ¥119，目前有 1,283 条用户评价。",
+          "analysis": "抢先体验两个月内转正 + 主机版跟进，是模拟经营类小团队常见的收口节奏。",
+          "recommendation": "《Farmer's Dynasty 2》明年 1 月结束抢先体验转正，随后登陆主机",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "X · 媒体 @NicheGamer",
+          "tags": [
+            "二次元",
+            "策略",
+            "手游IP"
+          ],
+          "title": "《少女前线：Lunasia Covenant》定档 2027 年",
+          "en_title": "Girls' Frontline: The Lunasia Covenant launches in 2027",
+          "full_text": "Girls' Frontline: The Lunasia Covenant launches in 2027: https://t.co/jtycO04sQ6 https://t.co/zlXeFfz64i",
+          "author": "nichegamer",
+          "date": "2026-11-19",
+          "likes": 28,
+          "views": 881,
+          "link": "https://x.com/nichegamer/status/2123449232338100701",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HXgB0vjW0AEI1k6.jpg"
+          },
+          "summary": "Niche Gamer 报道《少女前线：Lunasia Covenant》将于 2027 年推出。这是《少女前线》IP 的新作，官方目前只公布了档期年份，玩法与平台细节尚未展开。",
+          "analysis": "老 IP 的新作官宣往往先给年份再给平台，属于典型的预热节奏。",
+          "recommendation": "《少女前线：Lunasia Covenant》定档 2027 年",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "X · 媒体 @NicheGamer",
+          "tags": [
+            "经典重制",
+            "动作",
+            "消防"
+          ],
+          "title": "1990 年代消防动作游戏《The Firemen 2: Pete & Danny》推出现代化重制版",
+          "en_title": "Firefighting action game The Firemen 2: Pete & Danny gets a modern re-release",
+          "full_text": "Firefighting action game The Firemen 2: Pete &amp; Danny gets a modern re-release: https://t.co/etPp53U1ZL https://t.co/UNpQeu738u",
+          "author": "nichegamer",
+          "date": "2026-11-19",
+          "likes": 24,
+          "views": 3054,
+          "link": "https://x.com/nichegamer/status/2123209429973635495",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2123209381462364160/pu/img/yqLw4QwNXeIZEShp.jpg",
+            "video_url": "https://x.com/nichegamer/status/2123209429973635495/video/1"
+          },
+          "summary": "Niche Gamer 报道，SFC 时代的消防题材动作游戏《The Firemen 2: Pete & Danny》推出现代化重制版。原作以「用水枪灭火而不是开枪」的差异化动作玩法著称。",
+          "analysis": "老游戏重制在当下的价值，很大程度取决于原作玩法是否仍稀缺——消防题材恰好属于稀缺项。",
+          "recommendation": "《The Firemen 2: Pete & Danny》推出现代化重制版：SFC 时代的水枪灭火动作游戏",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 05",
+          "source": "X · 媒体 @digitalfoundry",
+          "tags": [
+            "Kickstarter",
+            "众筹",
+            "复古"
+          ],
+          "title": "资深媒体人 Jaz Rignall 的众筹项目《Golden Age》已达成全额目标，正在冲延伸目标",
+          "en_title": "Congrats to @JazRignall on fully funding his dream project, Golden Age!",
+          "full_text": "Congrats to @JazRignall on fully funding his dream project, Golden Age! If you read ZZAP! 64 or Mean Machines back in the day, check it out. Hoping the stretch goal will be met in the remaining days!",
+          "author": "digitalfoundry",
+          "date": "2026-11-19",
+          "likes": 16,
+          "views": 5587,
+          "link": "https://x.com/digitalfoundry/status/2123415640493146467",
+          "media": null,
+          "summary": "Digital Foundry 发文祝贺资深游戏媒体人 Jaz Rignall 的众筹项目《Golden Age》达成全额目标，并希望剩余几天里能冲过延伸目标。Rignall 是英国老牌杂志 ZZAP! 64 与 Mean Machines 时代的标志性作者。",
+          "analysis": "知名媒体人转向做游戏，众筹本身就是一次读者资产的直接变现。",
+          "recommendation": "Jaz Rignall 的众筹项目《Golden Age》达成全额目标，正在冲延伸目标",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "X · 官方 @UnrealEngine",
+          "tags": [
+            "Unreal Engine",
+            "AI动画",
+            "工作流"
+          ],
+          "title": "UE 5.9 Preview 2：可在 Sequencer 里直接生成动画，接上 NVIDIA Kimodo 后用文字描述动作",
+          "en_title": "Introducing improved character animation workflows in the UE 5.9 Preview 2!",
+          "full_text": "Introducing improved character animation workflows in the UE 5.9 Preview 2!\n\nYou can now generate animation directly inside Sequencer using the new AnimGenOffline plugin, and use the new @NVIDIAGameDev Kimodo plugin with it to make characters follow trajectories, set key poses and describe animations based on text descriptions.\n\nOur new Guided AI Animation plugin integrates NVIDIA Kimodo with Sequencer and animation tools, enabling AI-assisted animation generation from text prompts, trajectory paths, and frame-specific target poses.\n\nLearn more➡️ https://t.co/nTOwecIi46",
+          "author": "UnrealEngine",
+          "date": "2026-11-19",
+          "likes": 301,
+          "views": 11842,
+          "link": "https://x.com/UnrealEngine/status/2123431363403829356",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2123431105659625472/img/3Y0yahQRej7MUo2F.jpg",
+            "video_url": "https://x.com/UnrealEngine/status/2123431363403829356/video/1"
+          },
+          "summary": "Epic 在 UE 5.9 Preview 2 中重做了角色动画工作流：新增 AnimGenOffline 插件，可以在 Sequencer 内直接生成动画；配合新的 NVIDIA Kimodo 插件，让角色跟随轨迹运动、设置关键姿势、并按文字描述生成动画。新的 Guided AI Animation 插件把 Kimodo 与 Sequencer 及动画工具打通，支持用文本提示、轨迹路径与指定帧的目标姿势来驱动 AI 动画生成。",
+          "analysis": "关键变化是「AI 动画」被放进了 Sequencer 这条既有时间轴里，而不是单独一个生成网页。这意味着动捕/手 K 与 AI 生成可以混在同一条镜头里迭代——对中小团队来说，真正省掉的不是某一个环节，而是「返工成本」。值得警惕的是同一件事的另一面：当基础动画变得廉价，动作设计与表演判断会更直接地暴露在评审面前。",
+          "recommendation": "UE 5.9 Preview 2：Sequencer 内直接生成动画，接 NVIDIA Kimodo 后可写文字描述出动作",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "X · 维护者 @EddCoates",
+          "tags": [
+            "UI参考",
+            "资料库",
+            "设计"
+          ],
+          "title": "Game UI Database 收录突破 2000 款游戏、79,886 张界面截图",
+          "en_title": "WE DID IT! The Game UI Database has reached 2000 Games!!",
+          "full_text": "WE DID IT! The Game UI Database has reached 2000 Games!!\nThat's 79,886 Screens of neatly catalogued game UI references for you to peruse at your leisure. Whew.\nThanks for all the support folks, stay tuned for some huge feature announcements coming soon! We're just getting started 🥳\nhttps://t.co/0y9swrIlJ1",
+          "author": "EddCoates",
+          "date": "2026-11-17",
+          "likes": 1950,
+          "views": 57402,
+          "link": "https://x.com/EddCoates/status/2122837421708697746",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2122834890601226240/img/k5ZG8sCRDdmehJLr.jpg",
+            "video_url": "https://x.com/EddCoates/status/2122837421708697746/video/1"
+          },
+          "summary": "Edd Coates 宣布 Game UI Database 收录规模达到 2,000 款游戏、共 79,886 张经过整理的界面截图，并预告近期会公布重要功能更新。该站点是关卡/界面设计师常用的参考库，可按游戏、界面类型检索。",
+          "analysis": "对界面与交互设计岗来说，这类结构化参考库的价值在于「带上下文」：不是零散截图，而是能看出同一款游戏里菜单、HUD、商店之间的设计一致性。收录到 2000 款之后，它已经从个人项目变成了事实上的行业基础设施。",
+          "recommendation": "Game UI Database 收录突破 2000 款游戏、79,886 张界面截图，设计师可直接检索参考"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**GTA 6 解锁首日：真正的数据在换区人数上**\nAmpere Analysis 估算约 210 万英国与美国 Xbox 玩家把主机区域改成新西兰，提前解锁 GTA 6——美国 150 万、英国 60 万，合计超过新西兰全国人口的三分之一；加拿大与巴西各约 20 万、墨西哥约 10 万。作为对照，美国只有约 10 万 PlayStation 玩家这么做，差别来自 Xbox 换区只需改账号设置。\n\n**同一天两台裁员通知**\n《文明》《XCOM》的开发商 Firaxis 在 11 月 17 日裁掉约 60 人（约全员三分之一），工作室负责人 Heather Hazen 离职；Bloomberg 称一款未公布的 XCOM 新作开发不顺、今夏错过重要里程碑。同日 Ubisoft 确认蒙特利尔与魁北克城裁减 166 个岗位，约占两地 4%，涉及其与腾讯合资的 Vantage Studios。\n\n**Warren Spector 的冷水**\n《杀出重围》之父在 GTA 6 发售当天发文：先祝贺，再批评十亿美元开发成本「不是任何人能或应该效仿的商业模式」，尤其在数千名开发者失业的当下——「我宁愿要上百款游戏和充分就业，也不要一款无论多惊艳的游戏」。\n\n**AI 侧：世界可以被生成，但方向盘要留在人手里**\n开发者 Izkimar 用 Fable 5.2 把魔兽与 GTA 揉成《World of Hoodcraft》，6000 个联网 NPC、开放 PvP、浏览器直接开玩；OpenGame 掏出 10 万美元办 Web 游戏 Jam，赞助方是 ElevenLabs、fal 与 MeshyAI。与之相对，前游戏公司创始人 Thariq 的观点是：AI 该帮开发者实现想法，而不是替他们决定游戏该是什么样。\n\n**新游与工具**\n与 GTA 6 同日发售的《Keepsake County》用程序生成农舍做「限时潜行盗窃」，画风是 2000 年代 Cartoon Network；《The First Zombie》让你扮演人类第一只僵尸把东京人「交朋友」变成同伙，12 月 16 日发售；KRAFTON 发行的《TARAE: The Unbound》公布近战职业 Warfiend。工具侧，UE 5.9 Preview 2 把动画生成放进了 Sequencer，Game UI Database 收录突破 2000 款游戏。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
