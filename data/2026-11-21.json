@@ -1,0 +1,538 @@
+{
+ "date": "2026-11-21",
+ "meta": {
+  "raw_count": 289,
+  "filtered_count": 183,
+  "selected_count": 12,
+  "crawl_time": "2026-11-21 09:25"
+ },
+ "lede": "GTA 6 首日估算 2458 万份、23.6 亿美元，PS5 占约四分之三；黎曼猜想据称被 Anthropic 数学家证明；Epic 确认 UE6 砍掉 Blueprints，玩法改用 Verse + 新 Scene Graph。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "黎曼猜想据称被证明，论文指向 Anthropic 数学家 Levent Alpöge——43 万浏览"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "个人开发一年的《Slotbound》首周流水近 133 万美元——3x3 老虎机召单位、吞噬升级"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "GTA 6 首日估算 2458 万份、23.6 亿美元——PS5 占约四分之三"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "黎曼猜想据称被证明，论文指向 Anthropic 数学家 Levent Alpöge，单条推文 43 万浏览（暂无同行评议结论）\n开发者称 GPT-6.2 Astra 已打通建模、动画与玩法，「便宜」成选型理由——26 万浏览\n开源 Claude 技能把一张图变成可逐层拆解的 3D 机械模型，全用 Three.js 现搭，19 秒整体解体"
+  },
+  {
+   "id": "industry",
+   "text": "GTA 6 首日估算 2458 万份、收入 23.6 亿美元，PS5 约占四分之三（Sensor Tower，官方未确认）\n育碧蒙特利尔与魁北克城再裁 166 人，「重置」计划波及《刺客信条》《孤岛惊魂》团队\n《杀戮尖塔 2》EA 期估算卖出 790 万份、流水 1.576 亿美元，新角色让日活 50 万→110 万\n《魔兽世界：Forever》周活创 15 年新高，暴雪称回到 2010 年量级"
+  },
+  {
+   "id": "indie",
+   "text": "个人开发一年的《Slotbound》首周流水近 133 万美元，今日 PCU 峰值 32,581\n单人开发的《just volleyball》2.5 天卖出 10 万份，$4.95 的街机排球支持 6v6 与分屏\n《OUTLIER》定档 12 月 2 日：16 人混进 160 个 NPC 躲猫猫，靠跳霹雳舞缓解「症状」"
+  },
+  {
+   "id": "tools",
+   "text": "Epic 确认 UE6 不再包含 Blueprints 与 Actor 游戏框架，玩法改用 Verse + 新 Scene Graph\nUnity 7 让 Entities 与 GameObject 并存，引擎系统全面转向 ECS，项目默认吃性能红利"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 研究者 @yifanzhang_",
+     "tags": [
+      "数学突破",
+      "AI研究",
+      "前沿模型"
+     ],
+     "title": "黎曼猜想据称被证明：论文指向 Anthropic 数学家 Levent Alpöge，单条推文 43 万浏览",
+     "en_title": "JUST IN: Riemann Hypothesis has been solved.",
+     "full_text": "JUST IN: Riemann Hypothesis has been solved.\n\nhttps://t.co/Co2Cf7SIbG",
+     "author": "yifanzhang_",
+     "date": "2026-11-20",
+     "likes": 5536,
+     "views": 433324,
+     "link": "https://x.com/yifanzhang_/status/2123789252756414577",
+     "media": null,
+     "summary": "11 月 20 日，NeurIPS 学者 Yifan Zhang 发帖称「黎曼猜想已被证明」，附链指向 alpo.ge 上的一份论文 PDF。同日多位 AI 从业者跟进：Box CEO Aaron Levie 说「今天数学界有大事件」、普林斯顿学者 Shunyu Yao 转发「OMG，黎曼猜想?!」，以及 Garry Tan 转发的消息明确提到「又一个千禧年大奖难题可能倒下了，这次属于 Anthropic 的数学家 Levent Alpöge」。截至目前尚无正式同行评议结论，论文本身也仍以预印本形式流传。",
+     "analysis": "如果这一结果成立，它的意义不止于一条数学新闻：它把「前沿模型公司」的科研边界从工程与产品，推到了基础科学的公开竞争上。对游戏与内容行业来说，更现实的影响是叙事与资源——当模型公司开始用「解决千禧年难题」证明自己的研究实力，算力与人才的定价逻辑会被再次抬高，AI 工具的可信度与采购决策也会被这类事件间接推动。需要保持克制：预印本不等于定论，历史上被广泛转发的「证明」最终被证伪的案例并不少。",
+     "recommendation": "黎曼猜想据称被证明，论文指向 Anthropic 数学家 Levent Alpöge——43 万浏览",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 开发者 @soya_da_yoot",
+     "tags": [
+      "AI建模",
+      "游戏开发",
+      "工作流"
+     ],
+     "title": "开发者称 GPT-6.2 Astra 打通建模、动画与游戏开发，「而且便宜」成为选型理由",
+     "en_title": "GPT-6.2 Astra is now my favorite tool for game development. It finally solved 3D modeling, animations, and game development, and it's cheap.",
+     "full_text": "GPT-6.2 Astra is now my favorite tool for game development. It finally solved 3D modeling, animations, and game development, and it's cheap. https://t.co/uwoIsACsvu",
+     "author": "soya_da_yoot",
+     "date": "2026-11-19",
+     "likes": 1234,
+     "views": 261053,
+     "link": "https://x.com/soya_da_yoot/status/2123268369369514311",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2123268316550615040/img/wEbqXEFEQHD-63Nr.jpg",
+      "video_url": "https://x.com/soya_da_yoot/status/2123268369369514311/video/1"
+     },
+     "summary": "AI 自动化方向的开发者 Soya 发帖称 GPT-6.2 Astra 已成为他的游戏开发主力工具，理由是它在 3D 建模、动画和玩法实现三件事上都「终于能用」，且价格便宜，并附上一段实机/生成效果视频。同一时间另一位开发者 Anshu 用 dream-loop 基准测试了 6.2 Astra，结论是「游戏开发场景下的性价比无人能敌」，同时承认社区里对它的评价两极分化。",
+     "analysis": "对开发者的实际含义是「工具链的默认选项正在被重置」：过去建模、动画、玩法要用 Blender + 引擎 + 脚本三套技能，现在一个模型能力边界足够宽的入口就能覆盖原型阶段的大部分工作。真正的分水岭不在能不能生成，而在成本与可控性——「便宜」被反复提到，说明团队在做选型时已经把每千次生成的价格当成硬指标。副作用是原型期产出过剩、后期整合与资产规范反而成为新的瓶颈。",
+     "recommendation": "GPT-6.2 Astra 被开发者当作游戏开发主力：建模、动画、玩法一并覆盖，理由是便宜",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 中文 KOL @HeLi8866",
+     "tags": [
+      "3D生成",
+      "Claude",
+      "Three.js"
+     ],
+     "title": "开源 Claude 技能把一张图变成可逐层拆解的 3D 机械模型：全用 Three.js 逐件建模，19 秒整体解体",
+     "en_title": "Claude skill turns a single image into a detailed, disassemblable 3D mechanical model built entirely with Three.js",
+     "full_text": "😱卧槽！这以后谁还用 Blender 啊？\n\n有位老哥开源了个 Claude 技能，你只要丢给它一张图片，它能直接给你生成一个极其精细、甚至能逐层拆解的 3D 机械模型！\n\n我用一张 ChatGPT 渲染的图，发给它一个词：章鱼，结果出乎意料的好。\n\nClaude 直接拿那张图当参考，硬生生用 Three.js 从零把每一个外壳、轮子和镜头全给建了出来。\n\n细节夸张到什么程度？\n\n眼睛打开，里面是个 10 叶片的机械虹膜，后面还带 62mm 的光环。\n4 毫米厚的硼硅玻璃穹顶能升起来，在半空中翻转。\n8 条机械臂，每条臂上两排吸盘轮，一直延伸到 16 节组成的螺旋尖端。\n这 8 条臂全连在一个 48 齿的轮毂上，一解开，16 根软管直接散开。\n\n离谱的是它的拆解动画：每 3 秒脱落一个部件，到第 19 秒时，整个模型完全解体，什么都不剩。\n\n并且这只细节拉满的章鱼，甚至都不在这个技能官方预设的 3 种动物模板里。\n\n详细的安装命令在下面 👇",
+     "author": "HeLi8866",
+     "date": "2026-11-20",
+     "likes": 828,
+     "views": 57187,
+     "link": "https://x.com/HeLi8866/status/2123655255720378860",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2123655207422963712/img/N7j--yQhCM9e_Xb0.jpg",
+      "video_url": "https://x.com/HeLi8866/status/2123655255720378860/video/1"
+     },
+     "summary": "中文开发者何笠同学介绍了一个开源的 Claude「技能」（skill）：给一张参考图和一个关键词，它就用 Three.js 从零把 3D 机械模型的所有零件建出来。他用一张 ChatGPT 渲染的图 + 一个词「章鱼」测试，得到的结果包含 10 叶片机械虹膜、4mm 硼硅玻璃穹顶、8 条机械臂（每条两排吸盘轮、末端 16 节螺旋）、48 齿轮毂与 16 根软管，并能每 3 秒脱落一个部件、19 秒完全解体——而且这只章鱼并不在技能自带的 3 种模板里。",
+     "analysis": "这类「技能」的本质是把 3D 资产的构建过程代码化：模型不是一个不可编辑的网格，而是一段可读、可改、可参数化的 Three.js 场景脚本。对游戏团队的直接价值是在原型期快速产出可拆解、可做动画的机械/道具资产，且天然带层级与命名；局限也很清楚——它产出的是程序化几何，不是带规范 UV、LOD 与骨骼的成品资产，离生产管线还有一段距离。真正会被替代的不是 Blender，而是「从一张图到第一版可动原型」这段时间。",
+     "recommendation": "开源 Claude 技能：一张图生成可逐层拆解的 3D 机械模型，全部用 Three.js 现搭"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "GTA6",
+      "首发数据",
+      "Sensor Tower"
+     ],
+     "title": "GTA 6 首日估算卖出 2458 万份、收入 23.6 亿美元：PS5 约占四分之三",
+     "en_title": "Grand Theft Auto 6 sold an estimated 24.6 million copies at launch",
+     "full_text": "Grand Theft Auto 6 sold an estimated 24.6 million copies at launch: https://t.co/3q05WHBnmA https://t.co/Cmbm3GBLTO",
+     "author": "nichegamer",
+     "date": "2026-11-20",
+     "likes": 14,
+     "views": 2144,
+     "link": "https://x.com/nichegamer/status/2123795985641931012",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXk9McKWAAAzdF9.jpg"
+     },
+     "summary": "Niche Gamer 援引 Sensor Tower 的追踪数据：GTA 6 在 11 月 19 日发售当天卖出约 2458 万份数字版（PS5 约 1840 万、Xbox Series X|S 约 615 万），含预订在内收入约 23.6 亿美元，接近 GTA 5 首日 8 亿美元的三倍。Rockstar 与 Take-Two 尚未公布官方首发数字，此前只称需求「前所未有」；PC 版仍未公布。多家报道：Destructoid 给出同样的 23.6 亿美元与「近 2500 万份」，Polygon 称其刷新 Rockstar 首日销售纪录。",
+     "analysis": "这组数字的真正信息量在平台结构：PS5 拿走约 75%，说明在「买一台主机只为这一款游戏」的决策里，索尼这一代已经把 Xbox 甩开一个量级——同一周 GameSpot 的标题直接写「主机战争已经结束，Xbox 输了」。对行业的启示是双刃的：一款产品能在 24 小时内吃掉 23.6 亿美元，意味着发行窗口的头部效应继续极端化；但对中型团队而言，这也意味着同一档期几乎不存在「顺手被发现」的空间，错峰与差异化定价比任何时候都重要。附带一句冷静：Sensor Tower 是估算机构，官方数字未出，网络流传的「史上退款最多」说法同样没有数据支撑。",
+     "recommendation": "GTA 6 首日估算 2458 万份、23.6 亿美元——PS5 占约四分之三",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "X · 媒体 @eurogamer",
+     "tags": [
+      "裁员",
+      "育碧",
+      "组织重组"
+     ],
+     "title": "育碧蒙特利尔与魁北克城再裁 166 人：「重置」计划波及《刺客信条》《孤岛惊魂》团队",
+     "en_title": "Ubisoft has confirmed more layoffs as part of its previously announced operational \"reset\", this time affecting 166 employees at its major Montréal and Québec City studios",
+     "full_text": "Ubisoft has confirmed more layoffs as part of its previously announced operational \"reset\", this time affecting 166 employees at its major Montréal and Québec City studios - the teams responsible for game series including Assassin's Creed and Far Cry. https://t.co/pt3fMIqa1A https://t.co/AumXj3EoGY",
+     "author": "eurogamer",
+     "date": "2026-11-20",
+     "likes": 13,
+     "views": 3580,
+     "link": "https://x.com/eurogamer/status/2123725557611245663",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXj9I9yXMAAtu3w.jpg"
+     },
+     "summary": "Eurogamer 报道，育碧确认作为此前宣布的运营「重置」的一部分再度裁员，本次影响蒙特利尔与魁北克城两大工作室共 166 名员工——这两个团队负责《刺客信条》《孤岛惊魂》等主力系列。这是育碧这一轮重组中最新的一批岗位削减，此前公司已多次以「重置」名义调整组织架构。",
+     "analysis": "把这 166 人和前一天的 Firaxis 裁员放在一起看，趋势很清楚：裁员已经从「关停边缘项目」变成「对主力工作室做结构性瘦身」，而《刺客信条》《孤岛惊魂》这类确定性最高的 IP 也不再是安全区。对从业者的现实提示是，大型发行商正在把成本从「维持多线并行的大团队」转向「更少的人 + 更长周期 + 更多外包与工具化」；对中小团队来说，这既是人才流入的窗口，也意味着同档期竞争会更集中在低成本高完成度的产品上。",
+     "recommendation": "育碧蒙特利尔与魁北克城再裁 166 人，涉及《刺客信条》《孤岛惊魂》团队",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "杀戮尖塔2",
+      "EA数据",
+      "卡牌肉鸽"
+     ],
+     "title": "《杀戮尖塔 2》Steam 估算卖出 790 万份、流水 1.576 亿美元：新角色让日活从 50 万涨到 110 万",
+     "en_title": "Slay the Spire 2 has sold 7.9 million copies on Steam",
+     "full_text": "Slay the Spire 2 has sold 7.9 million copies on Steam: https://t.co/g4merPCZAF https://t.co/5tGB8H3awJ",
+     "author": "nichegamer",
+     "date": "2026-11-20",
+     "likes": 11,
+     "views": 1047,
+     "link": "https://x.com/nichegamer/status/2123794787308359815",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXk8GswW8AAr-lF.jpg"
+     },
+     "summary": "Niche Gamer 引用 Alinea Analytics 分析师 Rhys Elliott 的数据：《杀戮尖塔 2》自 3 月 5 日进入抢先体验以来，Steam 估算卖出 790 万份、流水约 1.576 亿美元；3 月首月约 525 万份，之后稳定在每月 15–20 万份。11 月 13 日更新加入首个新角色「The Fool」与两个新模式并开启 20% 折扣后，日活从约 50 万涨到 110 万以上，日均销量从约 5,000 份升到 2 万份以上。玩家平均时长接近 84 小时，约 190 万人超过 100 小时。",
+     "analysis": "这是一份教科书级的「抢先体验 + 内容更新驱动二次增长」样本：真正的拐点不是发售日，而是七个月后的一次角色更新 + 折扣组合拳——日活翻倍、日均销量四倍，说明卡牌肉鸽的生命周期可以靠「新角色 = 新构筑空间」反复点火。对做长线运营的团队，可复用的结论是：把角色/职业当作可编排的内容资产，而不是一次性内容；同时 84 小时的平均时长提醒我们，这类游戏的商业模型其实建立在「极低时长的边际成本 + 极高的留存」上。",
+     "recommendation": "《杀戮尖塔 2》EA 期卖出 790 万份、流水 1.58 亿美元——新角色让日活翻倍"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "X · 媒体 @eurogamer",
+     "tags": [
+      "魔兽世界",
+      "留存",
+      "MMO"
+     ],
+     "title": "《魔兽世界：Forever》周活创 15 年新高：暴雪称每周在线人数超过 2010 年以来任何时期",
+     "en_title": "World of Warcraft: Forever now has more people playing each week than World of Warcraft has seen in 15 years, according to Blizzard",
+     "full_text": "World of Warcraft: Forever now has more people playing each week than World of Warcraft has seen in 15 years, according to Blizzard. https://t.co/BFlcP7LVSI https://t.co/L5Fy88sxGA",
+     "author": "eurogamer",
+     "date": "2026-11-20",
+     "likes": 25,
+     "views": 2992,
+     "link": "https://x.com/eurogamer/status/2123755763948572881",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXkYnNhWUAA5LWD.jpg"
+     },
+     "summary": "Eurogamer 援引暴雪的说法：《魔兽世界：Forever》目前的每周活跃玩家数，是《魔兽世界》过去 15 年里最高的水平，也就是回到了 2010 年前后的量级。同一周，项目组的物品设计师还在采访中表示想「干掉 BiS（最佳装备）」、改用情境性更强的装备来替代固定最优解。",
+     "analysis": "在所有人都在讨论新作首日销量的一周里，这条数据的反向价值更大：一个 20 年级别的 IP 通过「Forever」这种版本形态把周活拉回 15 年高点，说明长青 MMO 的竞争点已从「新内容产量」转向「版本结构与回流机制」。对做服务型游戏的团队，值得抄的是它的两个动作：一是用版本名重设叙事锚点（让老玩家有回来的理由），二是主动打散「唯一最优解」，把配装从查询题变回决策题。",
+     "recommendation": "《魔兽世界：Forever》周活创 15 年新高——暴雪称已回到 2010 年量级"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 开发者 @OptimaArchGames",
+     "tags": [
+      "老虎机肉鸽",
+      "自动战斗",
+      "个人开发"
+     ],
+     "title": "个人开发一年的《Slotbound》（转运军团）首周流水近 133 万美元：3x3 老虎机决定你召出什么",
+     "en_title": "My first game, Slotbound has made nearly $1.33 million in gross revenue in just its first week on Steam!",
+     "full_text": "My first game, Slotbound has made nearly $1.33 million in gross revenue in just its first week on Steam!\n\nI've barely had time to process any of this between fixing bugs and pushing updates😅\n\nI started developing the game alone just over a year ago, and I honestly never imagined it would reach this point.\n\nThank you so much to everyone who's played and supported it. There's still plenty to improve, and I'll keep working hard to make it better!\n\n#Slotbound #indiedev",
+     "author": "OptimaArchGames",
+     "date": "2026-11-20",
+     "likes": 910,
+     "views": 50322,
+     "link": "https://x.com/OptimaArchGames/status/2123646478472368502",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXi0_kjaoAATRHt.jpg"
+     },
+     "summary": "开发者 OptimaArch 宣布其首部作品《Slotbound》在 Steam 上线首周流水接近 133 万美元，自己从零独自开发至今一年出头，期间基本都在修 bug 与推更新。Steam 国区名为《转运军团 - Slotbound》，11 月 12 日发售，¥37.80（$8.99），类型为 Roguelike 自动战斗防守：转 3x3 老虎机召唤单位、吞噬单位壮大军队，靠道具与核心改写概率，在审判波次与 Boss 战中守住核心。当前累计约 1,535–1,538 条评价、79% 好评，今日 24 小时 PCU 峰值 32,581。",
+     "analysis": "",
+     "recommendation": "个人开发一年的《Slotbound》首周流水近 133 万美元——3x3 老虎机召单位、吞噬升级",
+     "featured": true,
+     "game_ref": "Slotbound",
+     "enrichment": {
+      "game_name": "Slotbound",
+      "genre": "Roguelike / 自动战斗 / 策略（老虎机随机性）",
+      "developer": "Optima Arch（个人 / 极小团队，自研自发）",
+      "platforms": [
+       "Steam（Windows / macOS）"
+      ],
+      "price": "¥37.80（$8.99）",
+      "release_date": "已发售 · 2026年11月12日",
+      "steam_rating": "79% 好评（约 1,538 条评价）",
+      "steam_url": "https://store.steampowered.com/app/4459590/Slotbound/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4459590/560f439f789caa08634fbf9ff462c73bf06fbf41/header.jpg?t=1795095339",
+      "youtube_video": null,
+      "description": "把老虎机当成 Build 引擎的 Roguelike 自动战斗防守游戏：随机性不是外挂的运气，而是你可以动手改参数的资源。\n\n【核心玩法】每一轮先转 3x3 老虎机，靠图标连线决定这一波召唤出什么单位、强度多少；把多余单位互相吞噬来壮大军队，再用道具与核心修改概率分布、扭转局势，最终在「审判波次」与 Boss 战中守住核心。随机数在这里是可交互的：你可以为了凑连线留单位，也可以立刻吞噬换即时战力，这一转该不该赌就是单局的核心决策。\n\n【节奏与手感】自动战斗把操作门槛压到最低，重心落在「构筑 + 概率管理」上：前期滚雪球很快，中后期靠道具组合与核心取舍拉开差距。演出克制，数字反馈夸张，是典型的「上头型」而非「舒适型」体验。\n\n【体量与美术】低成本卡通 UI、极简场景，把资源几乎全部投在数值与 Build 上；个人开发一年完成，量小而完整，没有大团队常见的半成品感。\n\n【优势】随机与可控之间留了一条真正可玩的缝——玩家能「改概率」而不是「求好运」；自动战斗适合直播与碎片时间；定价 ¥37.80 属于低决策成本的冲动区间。\n\n【不足】79% 好评在 Steam 属于中位水平，批评多集中在后期重复度与 Build 差异不足；老虎机演出频繁时节奏偏碎，长时间连续游玩容易疲劳。\n\n【综合评价】一个干净的「单人开发 + 强机制钩子」样本：用老虎机把随机性变成可操作的对象，再用自动战斗把玩家留在局内。它的爆发不靠美术堆料，靠的是一个能被一句话说清的机制差异点。",
+      "why_notable": "个人开发一年、首周流水近 133 万美元，主打「可改概率的老虎机 Build」，是本周最能说明小体量机制创新仍有爆发空间的样本",
+      "pcu": "32,581（11月21日 24h 峰值；历史峰值 32,770）",
+      "current_players": "约 6,638（11月21日 09:20 快照）",
+      "estimated_sales": "开发者自述首周流水近 133 万美元；第三方记录 48 小时约 5 万份、毛收入约 35.6 万美元",
+      "gi_summary": "3x3 老虎机决定召唤结果，吞噬单位滚雪球，靠道具改概率守住核心——个人开发的 Roguelike 自动战斗防守"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "体育街机",
+      "多人联机",
+      "单人开发"
+     ],
+     "title": "单人开发的《just volleyball》2.5 天卖出 10 万份：光标指哪打哪的街机排球，1v1 到 6v6 全场",
+     "en_title": "Multiplayer sports game just volleyball sells over 100,000 copies in 2.5 days",
+     "full_text": "Multiplayer sports game just volleyball sells over 100,000 copies in 2.5 days: https://t.co/27tzQpmc7P https://t.co/6wLWJzaRBN",
+     "author": "nichegamer",
+     "date": "2026-11-20",
+     "likes": 12,
+     "views": 750,
+     "link": "https://x.com/nichegamer/status/2123813267554414726",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2123813221966475264/pu/img/Pyf4CRBYcOwW7S01.jpg",
+      "video_url": "https://x.com/nichegamer/status/2123813267554414726/video/1"
+     },
+     "summary": "Niche Gamer 报道，单人开发者 temkosoft 的街机排球游戏《just volleyball》在 11 月 16 日 Steam 上线后 2.5 天内卖出超过 10 万份。玩法是用光标瞄准发球、二传与扣杀的落点，同时手动移动角色卡位与把握时机；支持 1v1 到 6v6、在线联机、局域网与本地分屏，也可离线打 bot，自定义房间能开关玩家碰撞、调整球路指示器。正式版新增三个球场（含太空场）、更衣室照相馆与 500+ 可解锁头衔，目前 $4.95（原价 $7.99，优惠至 11 月 24 日）。",
+     "analysis": "",
+     "recommendation": "单人开发的《just volleyball》2.5 天卖出 10 万份——光标指哪打哪的 $4.95 街机排球",
+     "featured": true,
+     "game_ref": "just volleyball",
+     "enrichment": {
+      "game_name": "just volleyball",
+      "genre": "体育 / 街机 / 多人联机",
+      "developer": "temkosoft（单人开发）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "¥17.36（$4.95，原价 $7.99，优惠至 11 月 24 日）",
+      "release_date": "已发售 · 2026年11月16日",
+      "steam_rating": "约 2,478 条用户评价（发售 5 天）",
+      "steam_url": "https://store.steampowered.com/app/5037200/just_volleyball/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5037200/cd1b5a290d15e7379b31dcacc12f1e5b25d37577/header.jpg?t=1794852941",
+      "youtube_video": "https://www.youtube.com/watch?v=hyem8Xf-ukY",
+      "description": "把排球拆到只剩「瞄准 + 跑位」两件事的街机体育游戏，靠极低的价格与极强的社交属性在 2.5 天内卖出 10 万份。\n\n【核心玩法】发球、接球、二传、扣杀全部用光标指定球路——你可以精确决定球要落在哪，但仍然必须自己跑到位、卡住击球时机。这套「指针决定意图、身体决定结果」的双输入，让新手第一局就能打出像样的回合，同时给老手留了搓球、假动作与拦网判断的空间。\n\n【模式与人机】从 1v1、2v2 一直到 6v6 全场，支持在线联机、局域网与本地分屏，也能离线打 bot。自定义房间可开关玩家碰撞、调整球路指示器、用 bot 填空位，等于把「这局怎么玩」交给玩家自己定规则。\n\n【内容体量】正式版比 demo 多了三个球场（其中一个在太空）、更衣室照相馆与 500 多个可解锁头衔；开发者表示发售后先短休，之后改成更大、更少频次的补丁，计划加入练习模式、自由play 与新球场新玩法。\n\n【优势】$4.95 的定价几乎消除了决策成本；分屏 + 局域网让它天然适合宿舍/客厅场景；单人开发却能做到 6v6 联机稳定，工程完成度可观。\n\n【不足】长期动力高度依赖玩家自组织（约朋友、开自定义房），单人对抗 AI 的深度有限；物理与判定的细节打磨会长期占用单人开发者的时间。\n\n【综合评价】它不试图拟真排球，而是把排球做成「一晚上能开黑的派对游戏」。低价、低门槛、高社交密度，三者叠在一起就是它爆量的原因。",
+      "why_notable": "单人开发、$4.95 定价，2.5 天卖出 10 万份——验证了「轻量体育 + 分屏/局域网社交」在低价区间的爆发力",
+      "pcu": "未进当日 Steam Top 500（峰值低于 20,000）",
+      "current_players": "暂无公开数据",
+      "estimated_sales": "开发者称 2.5 天售出 10 万份以上",
+      "gi_summary": "光标瞄准落点 + 手动跑位的街机排球，1v1 到 6v6 全支持，单人开发、$4.95、2.5 天 10 万份"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 媒体 @famitsu",
+     "tags": [
+      "社交推理",
+      "躲猫猫",
+      "后室题材"
+     ],
+     "title": "《OUTLIER》定档 12 月 2 日：16 人混进 160 个 NPC 里躲猫猫，靠跳霹雳舞缓解「症状」",
+     "en_title": "最大160人のNPCに紛れるオンラインかくれんぼ『OUTLIER』が12月2日に発売決定",
+     "full_text": "最大160人のNPCに紛れるオンラインかくれんぼ『OUTLIER』が12月2日に発売決定\nhttps://t.co/G4dXchpvuU\n\n監視員に見られないように「ブレイクダンス」や「おなら」などで欲求を解き放つ必要が。監視員はNPCに点呼をかけて感染者を見破る。 https://t.co/HSgNCZDCFs",
+     "author": "famitsu",
+     "date": "2026-11-20",
+     "likes": 1761,
+     "views": 224753,
+     "link": "https://x.com/famitsu/status/2123773318285426953",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2123773212584808448/pu/img/G2o5vgz72SV9IvZw.jpg",
+      "video_url": "https://x.com/famitsu/status/2123773318285426953/video/1"
+     },
+     "summary": "Famitsu 报道，PEPPERTUNA 的在线躲猫猫游戏《OUTLIER》定于 2026 年 12 月 2 日 12:00（JST）在 Steam 发售，880 日元，并将举办发售纪念促销——原本计划 2027 年初推出，这次提前到了 12 月。玩法是「感染者」混进最多 160 名 NPC 员工中，但会周期性出现症状，必须靠霹雳舞、月球漫步、放屁、beatbox 等动作缓解，且不能被监管者看到；监管者可随时对 NPC 点名叫其敬礼，全体 NPC 会同时敬礼，敬礼时机不同的人就是感染者。最多 16 人联机（官方建议 8 人），除标准模式外还有被抓后转为监管者的「增鬼」模式与类吃鸡模式。",
+     "analysis": "",
+     "recommendation": "《OUTLIER》12 月 2 日发售：16 人混进 160 个 NPC 躲猫猫，靠跳舞缓解「症状」",
+     "game_ref": "OUTLIER",
+     "enrichment": {
+      "game_name": "OUTLIER",
+      "genre": "社交推理 / 躲猫猫 / 派对联机",
+      "developer": "PEPPERTUNA",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "880 日元（约合人民币 40 元；发售纪念促销待公布）",
+      "release_date": "2026年12月2日（JST 12:00 解锁）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5207980/OUTLIER/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5207980/c50ef37cc1e9a35b026f4e7f659ef20cf8a6cd1b/header.jpg?t=1795100997",
+      "youtube_video": null,
+      "description": "后室题材的 16 人社交推理躲猫猫：你要做的不是藏起来，而是「看起来正常」。\n\n【核心玩法】玩家分为「感染者」与「监管者」。感染者要混进最多 160 名穿同款防护服的 NPC 员工里，搬到未勘测的后室区域；问题是感染者会周期性出现「症状」，必须用街舞、月球漫步、放屁、beatbox、醉酒步态等夸张动作把冲动释放掉——这些动作在整齐的人群里极其显眼。真正的紧张感来自「我必须做奇怪的事，但不能被看到」这对矛盾。\n\n【监管者玩法】监管者能随时对 NPC 点名，全体 NPC 会在同一时刻敬礼；感染者因为反应延迟会露出破绽。这让排查更像一套流程（点名—观察—锁定），而不是「看谁在动」的粗筛。\n\n【模式】标准模式是感染者活到时间结束、监管者抓光感染者；此外还有被抓后转为监管者的「增鬼」模式，以及感染者与 NPC 一起混战求生的类吃鸡模式。最多 16 人联机，官方推荐 8 人局。\n\n【体量与定价】880 日元，12 月 2 日中午（JST）解锁，发售纪念促销待公布；Steam 页面已可加愿望单，支持中文。\n\n【优势】把「混入人群」从静态躲藏变成持续表演，天然适合直播与短视频二创；160 个 NPC 带来的「人海压迫感」是同类产品里少有的；敬礼点名的排查机制比单纯的视野判定更耐玩。\n\n【不足】高度依赖玩家社区与语音配合，冷启动期人不够会直接毁掉体验；搞怪动作看多了会脱敏，需要靠地图与模式更新维持新鲜度；后室题材的美术同质化风险较高。\n\n【综合评价】如果说《Among Us》考的是「说谎」，OUTLIER 考的是「表演正常」——机制与题材咬合得很紧，是这个冬天值得盯的社交派对新品。",
+      "why_notable": "把「躲猫猫」改造成「在 160 个 NPC 里表演正常」的社交推理，点名敬礼的排查机制有辨识度，12 月 2 日发售",
+      "pcu": "暂未发售",
+      "current_players": "暂未发售",
+      "estimated_sales": "暂未发售",
+      "gi_summary": "后室题材 16 人社交推理躲猫猫，混进 160 个 NPC 里偷偷跳街舞缓解症状，监管者靠点名敬礼抓人"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "模拟经营",
+      "萌系",
+      "小体量"
+     ],
+     "title": "萌系送货游戏《Milki Delivery》2 天卖出 1 万份：小体量治愈向仍在稳定出货",
+     "en_title": "Cute delivery game Milki Delivery sells 10,000 copies in 2 days",
+     "full_text": "Cute delivery game Milki Delivery sells 10,000 copies in 2 days: https://t.co/e4lwp0QoUA https://t.co/g7Eo94iZ2d",
+     "author": "nichegamer",
+     "date": "2026-11-20",
+     "likes": 8,
+     "views": 786,
+     "link": "https://x.com/nichegamer/status/2123801844858208729",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2123801818786353152/pu/img/WgBAz7RGgDwXvA8f.jpg",
+      "video_url": "https://x.com/nichegamer/status/2123801844858208729/video/1"
+     },
+     "summary": "Niche Gamer 报道，萌系送货小游戏《Milki Delivery》上线 2 天卖出 1 万份。数量级不大，但在 GTA 6 吃掉几乎所有曝光的一周里，这类低成本治愈向作品仍能靠题材与画面自洽拿到稳定首周成绩。",
+     "recommendation": "《Milki Delivery》2 天卖出 1 万份——萌系送货小游戏在 GTA 6 档期稳住了基本盘",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "模拟经营",
+      "治愈",
+      "日本题材"
+     ],
+     "title": "《Hakoniwa Electric》即将上线：在日式街角修电器的治愈系模拟经营",
+     "en_title": "Cozy Japanese electronics repair shop sim Hakoniwa Electric launches soon",
+     "full_text": "Cozy Japanese electronics repair shop sim Hakoniwa Electric launches soon: https://t.co/Jao3ConTnc https://t.co/tdSv4n2cfw",
+     "author": "nichegamer",
+     "date": "2026-11-20",
+     "likes": 10,
+     "views": 2349,
+     "link": "https://x.com/nichegamer/status/2123579069694386617",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2123579032067342336/pu/img/GGYgYNzrDNj6SAtT.jpg",
+      "video_url": "https://x.com/nichegamer/status/2123579069694386617/video/1"
+     },
+     "summary": "Niche Gamer 报道，日式电器修理铺模拟经营游戏《Hakoniwa Electric》即将上线。题材是「街角小店 + 修电器 + 慢生活」，属于近年稳定的治愈系模拟经营赛道，画面走低多边形温暖色调。具体发售日与价格官方尚未同步。",
+     "recommendation": "《Hakoniwa Electric》：在日式街角修电器的治愈系小店模拟，即将上线",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X · 媒体 @gwrldgames",
+     "tags": [
+      "跑酷FPS",
+      "机甲",
+      "可破坏场景"
+     ],
+     "title": "《ShatterRush》曝光：「泰坦陨落 × The Finals」式跑酷 FPS，巨型机甲 + 全可破坏关卡",
+     "en_title": "\"ShatterRush\" is 'Titanfall' meets 'The Finals' in a multiplayer parkour FPS with massive mechs and fully destructible levels.",
+     "full_text": "\"ShatterRush\" is 'Titanfall' meets 'The Finals' in a multiplayer parkour FPS with massive mechs and fully destructible levels. https://t.co/4fwtFxsf0U",
+     "author": "gwrldgames",
+     "date": "2026-11-19",
+     "likes": 206,
+     "views": 13704,
+     "link": "https://x.com/gwrldgames/status/2123538712516772295",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2123537473703931907/img/oUE-uBuUTg3dIO0W.jpg",
+      "video_url": "https://x.com/gwrldgames/status/2123538712516772295/video/1"
+     },
+     "summary": "Games Showcase 推介多人跑酷 FPS《ShatterRush》，定位是「《泰坦陨落》遇上《The Finals》」：跑墙、抓钩式机动加巨型机甲，并宣称关卡可完全破坏。目前仅有概念演示与定位描述，平台与发售窗口未公布。",
+     "recommendation": "《ShatterRush》：「泰坦陨落 × The Finals」，跑酷 FPS + 巨型机甲 + 全可破坏关卡",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "武侠",
+      "动作",
+      "已发售"
+     ],
+     "title": "《Burning Sword: Death Sun》已发售：风格化武侠动作，主打刀光与快速斩击",
+     "en_title": "Stylish wuxia action game Burning Sword: Death Sun is out now",
+     "full_text": "Stylish wuxia action game Burning Sword: Death Sun is out now: https://t.co/pmpFE6CY7m https://t.co/8sRGfSIBnj",
+     "author": "nichegamer",
+     "date": "2026-11-20",
+     "likes": 24,
+     "views": 1365,
+     "link": "https://x.com/nichegamer/status/2123811992125235245",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2123811959095123968/pu/img/KmNXQOiqzQOK91Zy.jpg",
+      "video_url": "https://x.com/nichegamer/status/2123811992125235245/video/1"
+     },
+     "summary": "Niche Gamer 报道，武侠动作游戏《Burning Sword: Death Sun》已正式发售。影片呈现的是强风格化的近身斩击与刀光演出，主打快节奏对拆；具体售价、平台与评价量级官方尚未在推文中给出。",
+     "recommendation": "《Burning Sword: Death Sun》已发售：强风格化刀光演出的武侠动作游戏",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 官方 @UnrealEngine",
+     "tags": [
+      "Unreal Engine",
+      "Verse",
+      "引擎架构"
+     ],
+     "title": "Epic 确认 UE6 不再包含 Blueprints 与 Actor 游戏框架：玩法改用 Verse + 全新 Scene Graph",
+     "en_title": "We've updated the plan and UE6 will not include Blueprints or the Actor Gameplay Framework. Gameplay in UE6 will be built in Verse and on the new Scene Graph framework, starting with UE6 Early Access.",
+     "full_text": "We’ve updated the plan and UE6 will not include Blueprints or the Actor Gameplay Framework. Gameplay in UE6 will be built in Verse and on the new Scene Graph framework, starting with UE6 Early Access.\n\nMarcus Wassmer explains what’s changing, how we plan to make converting UE5 projects practical, and the UE6 AI tools you can use today in UE 5.9.\nhttps://t.co/42TveaOcBd",
+     "author": "UnrealEngine",
+     "date": "2026-11-20",
+     "likes": 235,
+     "views": 18972,
+     "link": "https://x.com/UnrealEngine/status/2123810138117067123",
+     "media": null,
+     "summary": "Epic 在官方账号确认了计划变更：UE6 将不再包含 Blueprints（蓝图）与 Actor Gameplay Framework，玩法逻辑从 UE6 抢先体验版开始改为建立在 Verse 语言与全新的 Scene Graph 框架之上。同一条推文提到 Marcus Wassmer 会解释三件事——具体改变了什么、如何让 UE5 项目迁移到 UE6 变得可行、以及在 UE 5.9 里现在就能用的 UE6 AI 工具。",
+     "analysis": "这是本次周期内对生产管线影响最大的一条工具消息。蓝图是过去十年里中小团队与美术向开发者的核心生产力，把它从「运行时玩法层」拿掉，等于把整个教程生态、外包协作方式、招聘要求都要重写一遍。Epic 同步放出迁移方案与 5.9 的 AI 工具，说明他们清楚迁移阻力在哪。现实建议：现在就开始在 5.9 里用 Verse 做小模块（尤其是玩法原型与工具脚本），把「蓝图思维」逐块翻译成 Verse，而不是等到 UE6 Early Access 再一次性跳。",
+     "recommendation": "UE6 砍掉 Blueprints：玩法改用 Verse + 新 Scene Graph，迁移方案同步公布",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · 官方 @unitygames",
+     "tags": [
+      "Unity 7",
+      "ECS",
+      "性能"
+     ],
+     "title": "Unity 7 让 Entities 与 GameObject 并存：引擎系统全面转向 ECS，项目默认吃性能红利",
+     "en_title": "Entities alongside GameObjects are finally coming in Unity 7! What does ECS for All mean for you?",
+     "full_text": "Entities alongside GameObjects are finally coming in Unity 7! \n\nWhat does ECS for All mean for you?\n\n✅ Projects gain performance by default as engine systems move to ECS\n✅ Tap into raw ECS speed where you need it\n✅ Easier synchronization if you're already using Entities\n\n🔗 Learn more: https://t.co/GwiYcVIlRJ",
+     "author": "unitygames",
+     "date": "2026-11-20",
+     "likes": 122,
+     "views": 5902,
+     "link": "https://x.com/unitygames/status/2123770764247683154",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2123770584014204928/pu/img/ubsRdaO7qlDQ_S17.jpg",
+      "video_url": "https://x.com/unitygames/status/2123770764247683154/video/1"
+     },
+     "summary": "Unity 官方宣布 Unity 7 将支持 Entities 与 GameObject 并存（「ECS for All」）：引擎自身的系统会迁移到 ECS，因此项目默认就能拿到性能收益；需要在热点路径上要极限性能时仍可直接使用原生 ECS；已经在用 Entities 的项目同步会更简单。同一天 Unity 还宣布 6.6 的 WebGPU 正式可用于生产（VFX Graph、compute shader、GPU skinning，并自动回退 WebGL 2）。",
+     "analysis": "Unity 这条路线和 UE6 的取舍正好相反：Epic 选择砍掉旧抽象、把玩法推向新语言；Unity 选择让旧抽象与 ECS 共存，靠引擎内部先迁移来「白送」性能。对团队而言，Unity 的迁移风险明显更低——现有 GameObject 项目不需要重写，收益来自引擎底层；但代价是两套模型长期并存，团队需要自己划清「哪些系统用 ECS、哪些继续 GameObject」的边界，否则会积累新的架构债。结合 6.6 WebGPU 转正，Web 端中重度项目的技术选项也变多了。",
+     "recommendation": "Unity 7：Entities 与 GameObject 并存，引擎系统默认转向 ECS 带来性能红利",
+     "featured": true
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**GTA 6 首日：23.6 亿美元与 2458 万份**\nSensor Tower 估算 GTA 6 在 11 月 19 日发售当天卖出约 2458 万份数字版（PS5 约 1840 万、Xbox 约 615 万），含预订收入约 23.6 亿美元，接近 GTA 5 首日 8 亿美元的三倍。Rockstar 与 Take-Two 尚未公布官方数字，PC 版仍未宣布；网络流传的「史上退款最多」说法同样没有数据支撑。平台结构比总量更值得记：PS5 拿走约四分之三。\n\n**AI 侧：数学与工具同时前移**\n11 月 20 日多位研究者与 AI 从业者转发一份署名 Levent Alpöge（Anthropic 数学家）的预印本，称黎曼猜想已被证明，NeurIPS 学者 Yifan Zhang 的单条推文获得 43 万浏览——需要强调，预印本不等于定论。工具侧，开发者称 GPT-6.2 Astra 已能覆盖建模、动画与玩法实现，「便宜」被反复当作选型理由；还有人用开源 Claude 技能把一张图变成可逐层拆解、19 秒整体解体的 3D 机械模型。\n\n**引擎的两条相反路线**\nEpic 确认 UE6 不再包含 Blueprints 与 Actor Gameplay Framework，玩法改用 Verse 与全新 Scene Graph，并同步给出 UE5 迁移方案与 UE 5.9 里可用的 AI 工具；Unity 则选择让 Entities 与 GameObject 在 Unity 7 里并存，靠引擎系统底层转向 ECS 把性能「白送」给现有项目。一个是要重写心智模型，一个是尽量不动现有工程，团队该按自己的技术债结构选边。\n\n**行业与独游：裁员与新血同时发生**\n育碧蒙特利尔与魁北克城再裁 166 人，涉及《刺客信条》《孤岛惊魂》团队；另一边《杀戮尖塔 2》靠一个新角色把日活从 50 万拉到 110 万，《魔兽世界：Forever》周活回到 15 年新高。独游里，个人开发一年的《Slotbound》首周流水近 133 万美元，单人开发的《just volleyball》2.5 天卖出 10 万份——GTA 6 吃掉几乎所有曝光的一周里，小体量作品仍在靠机制差异与低价出货。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
