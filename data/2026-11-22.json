@@ -1,0 +1,544 @@
+{
+ "date": "2026-11-22",
+ "meta": {
+  "raw_count": 205,
+  "filtered_count": 147,
+  "selected_count": 12,
+  "crawl_time": "2026-11-22 09:30"
+ },
+ "lede": "AnyPS5 让 AI 代理把 PS5 游戏编译成 Windows 原生程序，GTA 6 只差一个文件；《MMORPG NPC Simulator》把「在 MMO 里当 NPC」做成经营与夺权的玩法。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "AnyPS5 让 AI 代理连夜把 PS5 游戏编译成 Windows 原生程序，GTA 6 只差一个文件——57 万浏览"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《MMORPG NPC Simulator》：在 MMO 里当 NPC，靠服务玩家夺取服务器控制权"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "GTA 6 首发 37.9 亿美元，成娱乐史上最大首发——超过任何电影与游戏"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "AnyPS5 用 AI 代理把 PS5 游戏编译成 Windows 原生程序，GTA 6 只差一个固件 dump\n别让 AI 画像素切片：让它写体素几何代码，图鉴与大世界共用一份数据\n22 个开源仓库串成 GTA 6 短视频流水线，作者称已进账 1.8 万美元"
+  },
+  {
+   "id": "industry",
+   "text": "GTA 6 首发 37.9 亿美元，Niche Gamer 称其为娱乐史最大首发\n媒体 99 分 vs 玩家刷差评：GTA 6 的评分彻底分裂\nIWGB 等欧洲工会联合宣言：呼吁抵制生成式 AI\n内存涨价诉讼进入实质审理：三星、SK 海力士、美光被指操纵价格"
+  },
+  {
+   "id": "indie",
+   "text": "《MMORPG NPC Simulator》：在 MMO 里当 NPC，从世界内部夺服务器控制权\nオクトレイン新作：一键冻结流水并自由塑形\n《Dungeon Automata》：节点编程指挥队伍，把地牢跑成全自动流水线"
+  },
+  {
+   "id": "tools",
+   "text": "24 小时做出 three.js 赛博朋克游戏，顺手开源 3 个 Skill\n治「一眼 AI」的 10 个设计 Skill，建议只装 2-3 个"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 开发者 @mojeskoqq",
+     "tags": [
+      "AI编程",
+      "逆向工程",
+      "GTA6"
+     ],
+     "title": "AnyPS5 让 AI 代理连夜把 PS5 游戏编译成原生 Windows 程序：GTA 6 PC 版只差一个文件",
+     "en_title": "the GTA 6 PC port is already built. it is missing one file",
+     "full_text": "holy f*cking sh*t. the GTA 6 PC port is already built. it is missing one file\n\nAnyPS5 is sitting on github with 57.7K stars. turns PS5 games into native Windows programs. no emulator. native\n\ni cloned the repo and ran git log. that is the top window in the video\n\n82 of the last 400 commits end with \"Co-Authored-By: Claude\"\n\nSonnet 5.5. Opus 5.5. Fable 5.2. all of it landed in about 15 hours of real work\n\nthe bottom window is the shader recompiler. PS5 graphics code being rewritten for Vulkan so the thing runs on any Nvidia or AMD card. shader coverage went from 52% to 100% in a few months\n\nMinecraft already runs on it. Wolverine boots to the logos\n\nthe only missing piece is a clean GTA 6 dump from the latest firmware. two days before launch a hacker claimed they pulled exactly that. no files yet. everyone is waiting\n\nRockstar is targeting early 2027 for the official PC release. the people porting it have 3 Claude models committing around the clock while the official devs sleep\n\nthe PC version of the biggest game of the decade is being built by AI in public on github. and almost nobody is watching\n\nwhat are you shipping this week?",
+     "author": "mojesko",
+     "date": "2026-11-20",
+     "likes": 7643,
+     "views": 566979,
+     "link": "https://x.com/mojeskoqq/status/2123863104069234952",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2123862905351471104/img/hHv_-CbYSi4SHiiT.jpg",
+      "video_url": "https://x.com/mojeskoqq/status/2123863104069234952/video/1"
+     },
+     "summary": "作者翻查开源项目 AnyPS5（GitHub 57.7K star）的提交记录：这个把 PS5 游戏转成原生 Windows 程序、不用模拟器的项目，最近 400 次提交里有 82 次带「Co-Authored-By: Claude」，涉及 Sonnet 5.5、Opus 5.5、Fable 5.2，约 15 个真实工时完成；底部的着色器重编译器把 PS5 图形代码改写成 Vulkan，覆盖率数月内从 52% 升到 100%。Minecraft 已能运行，Wolverine 能跑进 logo；GTA 6 只差一份来自最新固件的干净 dump。",
+     "recommendation": "AnyPS5 让 AI 代理连夜把 PS5 游戏编译成 Windows 原生程序，GTA 6 只差一个文件——57 万浏览",
+     "analysis": "对从业者最直接的信息是：在可验证的工程任务（二进制转译、shader 重写、覆盖率回归）上，AI 代理已经能持续、批量地产出可合并的提交，人的角色从写代码变成定目标与验收。其次，「公开在 GitHub 上边做边发」把移植类工作的透明度推到前所未有的程度，绕过平台与 DRM 的技术门槛正在被摊平——这对发行方的法务与保护策略是新的压力。需要保留的前提：这是社区说法，Rockstar 未证实，目前也没有可玩的 GTA 6 PC 版本。",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 中文开发者 @BeyondTheBoxCN",
+     "tags": [
+      "AI工作流",
+      "像素美术",
+      "SpriteStacking"
+     ],
+     "title": "做 3D 像素游戏别让 AI 画切片：让 AI 写体素几何代码，图鉴与开放世界共用一份数据",
+     "en_title": "别让 AI「画切片」，让 AI「写三维数学和体素雕刻代码」",
+     "full_text": "看到不少人在尝试让 AI 生图直接画「精灵堆叠（Sprite Stacking）」切片，结果几乎全军覆没。\n\n我觉得问题不在 AI，而在于用错了方法。\n\n文生图模型擅长在 2D 像素空间里做视觉联想，但很难保证三维物体沿 Z 轴水平横切时的几何一致性。\n\n你让它画 64 层切片，它可能给你画出 64 张正面小图标。\n\n叠起来就是一摞纸片，根本成不了立体模型。\n\n我们在开发 3D 宋代开放世界像素游戏《汴河一日》时，也遇到了这个问题。\n\n为了制作蓬驴车、太平货车、乌篷漕船、驮驴等资产，我们换了一条路线，目前已经完整跑通。\n\n核心原则：别让 AI「画切片」，让 AI「写三维数学和体素雕刻代码」。\n\n我们实际实现了三套相互衔接的方案。\n\n01｜程序化高精体素切片：让每一层都真正对齐\n\n不再靠 AI 生图碰运气，而是直接让 AI 编写代码，构建 36×52×32 级高精度体素模型。\n\n例如：\n\n八辐木轮：用极坐标方程生成。\n\n弧形竹篷：采用 2.5 体素实心厚壁，避免斜角破洞。\n车辕、货箱、青瓷坛、提灯：通过三维坐标精确定位。\n模型完成后，由程序导出真正的水平横截面。\n\n渲染端则采用：\n\n逐像素精确逆映射 + 26 邻域 3D 法线光照 + Voxel AO。\n\n这样生成的 Sprite Stack，每一层都有严格的空间对应关系，360° 旋转也不会错位。\n\n我们还实现了三种实时查看模式：\n\n360° 立体旋转\n\n等轴测拆层爆炸视图\n左侧 CT 切片表 + 右侧实时堆叠成品\n视觉上也能随时切换「宋画墨线」与无黑边的「微缩柔光」风格，后者还加入了流动水波和提灯倒影。\n\n02｜如果一定要结合 AI 生图，就让它负责外观\n\n我们在引擎里加入了「四视图视觉外壳雕刻（Visual Hull）」。\n\n思路很简单：\n\n让 AI 或美术只画它擅长的四张正交视图：\n\n顶视图、侧视图、正视图、背视图。\n\n然后交给代码，根据这些视图的轮廓求空间交集，自动雕刻出三维体积，再生成水平切片并补齐边缘着色。\n\n这不是完美的三维重建，四视图无法还原所有凹陷和遮挡结构，但至少能让不同切片共享同一套几何约束。\n\n让 AI 生图决定外观，让几何算法保证空间一致性。\n\n03｜同一份体素，直接进入真正的 3D 开放世界\n\n这是我觉得最有价值的一步。\n\n在《汴河一日》实际运行的汴河街市中，我们没有为了游戏再重新建一套模型。\n\n而是直接把第一步生成的体素数据，通过：\n\n贪心合并（Greedy Meshing）+ 26 邻域平滑法线烘焙\n\n转换成 WebGL2 3D 网格。\n\n同时解决了体素弧面使用 90° 硬法线时容易出现的台阶横纹问题。\n\n最后接入游戏的正交像素与微缩柔光渲染管线。\n\n于是，同一辆驴车可以同时出现在两个地方：\n\n在图鉴里，它是由 32 层真实水平切片构成、可以 360° 旋转和拆解的 Sprite Stack。\n\n在开放世界里，它是真正的 3D 资产。\n\n八辐木轮可以转动，车身可以铰接拐弯，白天接受真实太阳阴影，夜晚融入汴河河灯与水面波光。\n\n最关键的是：\n\n图鉴里的切片和大世界里的 3D 模型，来自同一份体素数据。\n\n这就是 Single Source of Truth。\n\n以后调整车轮尺寸、竹篷弧度或货箱结构，只需要修改同一份模型数据，两种表现就能一起更新。\n\n我的一个判断：AI 辅助制作像素游戏资产，可能从一开始就不应该把生图当作唯一入口。\n\nAI 生图很擅长提供美术风格和视觉参考，但要让几十层切片在三维空间中精确对应，几何代码往往更可靠。\n\n而且，一旦建立起这样的资产管线，最大的收益就不只是生成一辆驴车。\n\n以后做马车、货船、房屋、桥梁，都可以复用同样的建模、切片、渲染和转换流程。\n\n让 AI 负责生成几何结构，让程序保证一致性，让渲染系统决定最终风格。\n\n对于独立游戏开发者来说，这可能比反复让 AI 生图碰运气更值得投入。\n\n#indiedev #pixelart #gamedev #AI #SpriteStacking #汴河一日",
+     "author": "黑箱之外",
+     "date": "2026-11-21",
+     "likes": 16,
+     "views": 946,
+     "link": "https://x.com/BeyondTheBoxCN/status/2124140778574487866",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2124085433751498752/img/SGD0Plz7V22oR9z_.jpg",
+      "video_url": "https://x.com/BeyondTheBoxCN/status/2124140778574487866/video/1"
+     },
+     "summary": "《汴河一日》团队发现，用文生图直接做 Sprite Stacking 切片几乎全军覆没——模型能画 64 张正面小图标，却保证不了沿 Z 轴横切时的几何一致性，叠起来只是一摞纸片。他们改成三条路线：程序化体素（36×52×32）导出真实水平横截面；若要用 AI 生图，只让它画四张正交视图，再由 Visual Hull 求交雕刻体积；最后用贪心合并 + 26 邻域法线烘焙，把同一份体素转成 WebGL2 3D 网格，图鉴切片与大世界模型共用一套数据。",
+     "recommendation": "别让 AI 画切片：AI 写体素几何代码，图鉴与开放世界共用一份数据",
+     "analysis": "这条给「AI 生图能干什么」划了条很实用的边界：风格与轮廓交给模型，空间一致性交给几何代码。对中小团队来说，真正可复用的不是一个模型，而是一条资产管线——车、船、房、桥共用同一套建模、切片、渲染与转换流程；改一次参数，图鉴与大世界同步更新。",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 开发者 @e1genqq",
+     "tags": [
+      "AI变现",
+      "内容流水线",
+      "GTA6"
+     ],
+     "title": "GTA 6 短视频工厂：22 个开源仓库串成流水线，Opus 5.5 做出 1.8 万美元收入",
+     "en_title": "GTA 6 clips studio in 22 repos. I made $18K+ with Opus 5.5",
+     "full_text": "HOLY F*CK, GTA 6 clips studio in 22 repos.\n\nI made $18K+ with Opus 5.5 and GTA VI Reels, TikToks, Shorts.\n\nHighlights. Face tracking. Captions. Audio. Export.\n\n01 yt-dlp → Download source videos\nhttps://t.co/D1bnuwK5uJ\n\n02 OpenCut → Edit clips on a timeline\nhttps://t.co/l9uFAvlnw0\n\n03 OpenCV → Build tracking and crop logic\nhttps://t.co/NOQU5V0pSr\n\n04 OBS Studio → Record gameplay and reactions\nhttps://t.co/8tbe47USHo\n\n05 AI Shorts Generator → Find highlights and crop vertical clips\nhttps://t.co/QeRvE0lrNY\n\n06 Mediabunny → Convert and export media in-browser\nhttps://t.co/0QbI2Gyz6k\n\n07 Whisper → Turn dialogue into transcripts\nhttps://t.co/lVSRoNQKYI\n\n08 whisper.cpp → Run transcription on your laptop\nhttps://t.co/7IDy1LbDxh\n\n09 stable-ts → Refine word-level timestamps\nhttps://t.co/je4JPj46tN\n\n10 https://t.co/aWKNrPWbW8 → Identify who speaks when\nhttps://t.co/2X7UMqzXhv\n\n11 Supervision → Build tracking and detection overlays\nhttps://t.co/RpWv1hHwqy\n\n12 Norfair → Track subjects between frames\nhttps://t.co/3HA7Ktptno\n\n13 DeepFilterNet → Clean noisy microphone audio\nhttps://t.co/Jfa0UrnPBO\n\n14 Demucs → Separate vocals and music stems\nhttps://t.co/GJjr3QX95L\n\n15 pysubs2 → Batch-edit subtitle timing and styles\nhttps://t.co/7FH3oeh8V3\n\n16 libass → Render styled ASS subtitles\nhttps://t.co/LNUivaRuxV\n\n17 Editly → Assemble clips with code\nhttps://t.co/zU7Wx0AkLA\n\n18 Kdenlive → Cut and keyframe your final edit\nhttps://t.co/PQrSzCXCS2\n\n19 Shotcut → Mix tracks and apply video filters\nhttps://t.co/DkGWdCyYXk\n\n20 Real-ESRGAN → Restore and upscale video frames\nhttps://t.co/YUcUlDEVk2\n\n21 RIFE → Interpolate intermediate frames\nhttps://t.co/YM7FhHmvBz\n\n22 PyAV → Decode and process video in Python\nhttps://t.co/onzf4Sg9Po\n\nVOD → find the reaction → cut → punch in → caption → ship.\n\nBookmark this. Go build something worth watching ↓",
+     "author": "eigen",
+     "date": "2026-11-20",
+     "likes": 2532,
+     "views": 294716,
+     "link": "https://x.com/e1genqq/status/2123903235467387381",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2123903098292699136/img/BlSMBJ46-TVZTzoK.jpg",
+      "video_url": "https://x.com/e1genqq/status/2123903235467387381/video/1"
+     },
+     "summary": "作者用 22 个开源工具搭出「VOD→找反应→切片→推近→字幕→发布」的短视频产线：yt-dlp 下载源视频、OpenCut 时间线剪辑、OpenCV + Supervision + Norfair 做跟踪与裁切、Whisper/stable-ts 出词级时间轴、DeepFilterNet/Demucs 清音轨、Real-ESRGAN/RIFE 修帧插帧、pysubs2/libass 渲染字幕。他称靠 GTA 6 的 Reels/TikTok/Shorts 已进账 1.8 万美元以上。",
+     "recommendation": "22 个开源仓库串成 GTA 6 短视频流水线，作者称已进账 1.8 万美元",
+     "analysis": "值得注意的不是金额，而是「工具链即产品」：同一套开源组件换成任何爆款游戏都能复用，边际成本只有算力。这条流水线的天花板不在技术，而在平台对二次剪辑的版权政策，以及所有人用同一套工具后内容的同质化竞争。"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "GTA6",
+      "首发数据",
+      "娱乐产业"
+     ],
+     "title": "GTA 6 首发 37.9 亿美元：Niche Gamer 称其成为史上最大规模娱乐产品首发",
+     "en_title": "GTA 6 hits $3.79 billion at launch, now biggest entertainment release of all time",
+     "full_text": "GTA 6 hits $3.79 billion at launch, now biggest entertainment release of all time: https://t.co/qdYpCauEvP https://t.co/hMwrC40tOx",
+     "author": "Niche Gamer",
+     "date": "2026-11-21",
+     "likes": 1,
+     "views": 826,
+     "link": "https://x.com/nichegamer/status/2124166131829137853",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXqN1yHWoAAREMv.jpg"
+     },
+     "summary": "Niche Gamer 报道 GTA 6 首发销售额达 37.9 亿美元，称其已成为娱乐史上规模最大的首发，超过此前任何电影与游戏。此前 Sensor Tower 估算首日数字版约 2458 万份、23.6 亿美元（PS5 约占四分之三）；Rockstar 与 Take-Two 尚未公布官方口径。",
+     "recommendation": "GTA 6 首发 37.9 亿美元，成娱乐史上最大首发——超过任何电影与游戏",
+     "analysis": "37.9 亿美元这个量级，把「游戏首发」直接推到与全球院线档期同一比较维度：单款作品的现金流已能覆盖多数 3A 的全部研发与营销成本。对从业者的含义是头部 IP 的议价能力继续集中，中型项目在渠道与曝光上拿到的资源会更紧；同时它也会被当作「高价 + 主机独占期」这套策略可行性的最强证据。",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "X · 媒体 @eurogamer",
+     "tags": [
+      "GTA6",
+      "玩家口碑",
+      "评分"
+     ],
+     "title": "GTA 6 媒体均分 99，玩家却在集中刷差评：Metacritic 媒体分与用户分彻底分裂",
+     "en_title": "GTA 6 has a 99 Metascore from critics, but players are review bombing it",
+     "full_text": "GTA 6 has a 99 Metascore from critics, but players are review bombing it\nhttps://t.co/oYSNK7Q9bZ https://t.co/cZz4cbiOlK",
+     "author": "Eurogamer",
+     "date": "2026-11-21",
+     "likes": 15,
+     "views": 5399,
+     "link": "https://x.com/eurogamer/status/2124147015374278967",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXp8b4IWUAADFVw.jpg"
+     },
+     "summary": "Eurogamer 报道，GTA 6 的 Metacritic 媒体均分达到 99，但玩家端正在集中刷差评，形成罕见的媒体/用户分裂。",
+     "recommendation": "GTA 6 媒体均分 99，玩家却在 Metacritic 集中刷差评",
+     "analysis": "99 分意味着评论界几乎一致认可，差评潮则更多指向定价、平台（主机独占期、锁 30fps）与设计取向等非质量因素。对发行方来说，Metacritic 媒体分已经不再是口碑的代理指标；首发 72 小时内的用户评分管理——回应节奏、补丁、沟通口径——正在变成独立的一门功课。"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "X · 媒体 @rockpapershot",
+     "tags": [
+      "生成式AI",
+      "劳工组织",
+      "行业政策"
+     ],
+     "title": "IWGB 等欧洲工会联合发布宣言：呼吁劳动者、雇主与玩家共同抵制生成式 AI",
+     "en_title": "\"Games are best made by people\": unions publish joint manifesto calling to reject genAI",
+     "full_text": "\"Games are best made by people\": The IWGB and other European unions publish joint manifesto calling on workers, employers and consumers to reject genAI. https://t.co/fzfnHq8bhY https://t.co/seb5VQTO3d",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-11-21",
+     "likes": 3,
+     "views": 720,
+     "link": "https://x.com/rockpapershot/status/2124182809048662113",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXqdAeCXsAAzdtP.jpg"
+     },
+     "summary": "英国 IWGB 与多家欧洲游戏工会发布联合宣言，主张「游戏最好由人来做」，呼吁从业者、雇主与消费者共同拒绝生成式 AI 在游戏生产中的使用。",
+     "recommendation": "IWGB 等欧洲工会联合宣言：呼吁从业者、雇主与玩家抵制生成式 AI",
+     "analysis": "这是把「AI 与岗位」的争论从公司内部推到行业公约层面。对国内团队的现实影响有限，但它提示：AI 使用政策、署名与授权条款，未来可能像工会协议一样进入发行合同与外包条款。提前把「哪里可以用 AI、如何披露」写进流程，比事后解释便宜得多。",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "X · 媒体 @rockpapershot",
+     "tags": [
+      "硬件成本",
+      "反垄断",
+      "内存涨价"
+     ],
+     "title": "法院驳回三星、SK 海力士、美光的撤诉动议：内存涨价与供应操纵诉讼进入实质审理",
+     "en_title": "Judge denies motion to dismiss lawsuit accusing Samsung, SK Hynix and Micron of fixing memory prices",
+     "full_text": "Judge denies motion to dismiss lawsuit accusing Samsung, SK Hynix and Micron of worsening RAM crisis by fixing memory prices and supply. https://t.co/sB4pnqoxHM https://t.co/dgFSOXxUwR",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-11-21",
+     "likes": 2,
+     "views": 1420,
+     "link": "https://x.com/rockpapershot/status/2124137509328134428",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXpzztHWgAEv6ME.jpg"
+     },
+     "summary": "美国法院驳回三星、SK 海力士与美光要求驳回诉讼的动议。原告指控三家内存厂商通过操纵价格与供应加剧了 RAM 危机，诉讼将继续推进。",
+     "recommendation": "内存涨价诉讼进入实质审理：三星、SK 海力士、美光被指操纵价格与供应",
+     "analysis": "内存价格直接决定主机与 PC 的 BOM，也决定次世代硬件（例如定价明确受元器件涨价影响的 Project Helix）的上市策略。若诉讼成立，可能带来赔偿与供应行为的强制调整；即便不成立，「AI 数据中心挤占内存产能」这个结构性因素短期内也不会消失，硬件团队做 2027 年预算时应把内存价格当作高波动项。"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 媒体 @GamerNeJp",
+     "tags": [
+      "NPC视角",
+      "模拟经营",
+      "MMORPG"
+     ],
+     "title": "《MMORPG NPC Simulator》：在 MMO 里当 NPC，从世界内部夺走服务器控制权",
+     "en_title": "MMORPGのNPCとして暮らすシミュレーションゲーム「MMORPG NPC Simulator」が2027年に発売！",
+     "full_text": "MMORPGのNPCとして暮らすシミュレーションゲーム「MMORPG NPC Simulator」が2027年に発売！\nhttps://t.co/WDnXvrXUyX\n\n“プレイヤー”との取引やクエスト依頼などで世界の内側からサーバーの主導権を握ろう https://t.co/3sT7bfEaUm",
+     "author": "Gamer＠ゲーム情報",
+     "date": "2026-11-21",
+     "likes": 76,
+     "views": 9087,
+     "link": "https://x.com/GamerNeJp/status/2123991663463039390",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2123991579396648961/img/PcRAs6TV70xowCHR.jpg",
+      "video_url": "https://x.com/GamerNeJp/status/2123991663463039390/video/1"
+     },
+     "summary": "日本媒体报道，Enca Games 的《MMORPG NPC Simulator》定档 2027 年：玩家扮演一个活着的 MMO 世界里的 NPC——经营店铺、与「玩家」交易、发布任务、派队伍下副本找稀有战利品，靠声望解锁 GM 能力，最终从世界内部掌控服务器。",
+     "recommendation": "《MMORPG NPC Simulator》：在 MMO 里当 NPC，靠服务玩家夺取服务器控制权",
+     "analysis": "把「玩家 vs NPC」的主客关系倒过来：玩家不再是主角，而是你可预测、可利用的资源。这种视角反转天然带来大量博弈空间，但它也把难题摆在明面上——「玩家」由 AI 模拟时的可信度，或真接入在线玩家时的冷启动，二者都不好解。",
+     "featured": true,
+     "game_ref": "MMORPG NPC Simulator",
+     "enrichment": {
+      "game_name": "MMORPG NPC Simulator",
+      "genre": "模拟 / 经营 / 角色扮演（NPC 视角）",
+      "developer": "Enca Games（自研自发）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": "2027 年（待定）",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3964340/MMORPG_NPC_Simulator/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3964340/a7dcfe716ef143634f0a0ba51f9fc33380d76951/header.jpg?t=1794843196",
+      "youtube_video": null,
+      "description": "把 MMORPG 的主客体倒过来：你不是玩家，而是服务器里一个要活下去的 NPC。\n\n【核心玩法】经营自己的店铺，与路过的「玩家」讨价还价、发布任务、兑现奖励；派出 NPC 小队下副本刷稀有战利品，再把战利品卖回给玩家，形成经济循环。声望积累到一定程度可以解锁 GM 权限——改刷新率、调任务链，甚至影响服务器规则。\n\n【视角反转】传统 MMO 里 NPC 是功能性背景板；这里 NPC 是主体，玩家的行为是可预测、可利用的资源。目标不是打怪升级，而是设计一套让玩家愿意反复回来的服务。\n\n【美术与氛围】公开片段是典型的日式 MMO 卡通 3D，界面围绕店铺经营与订单面板展开，调性偏轻松经营，而不是战斗演出。\n\n【优势】题材切口新，「服务玩家」天然带来持续博弈；经营、自动战斗与权限解锁三条线互相供给目标感。\n【风险】「玩家」若由 AI 模拟，行为真实感决定体验上限；若真接入在线玩家，冷启动与服务器人口是硬门槛。\n\n【综合】把 MMO 的「系统视角」做成玩法的好样本，2027 年上线时最值得看它如何处理「假玩家」的可信度。",
+      "why_notable": "少见的 NPC 视角 MMO 模拟：把「给玩家打工」做成经营与夺权的核心循环",
+      "pcu": "暂未发售",
+      "current_players": "—",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「NPC 视角经营」套「MMORPG 世界」，Enca Games 独立开发，2027 年登陆 Steam"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 独立开发者 @octo_rain_game",
+     "tags": [
+      "物理沙盒",
+      "解谜",
+      "个人开发"
+     ],
+     "title": "オクトレイン新作：一键冻结流动的水并自由塑形，把「水」变成可编辑的关卡素材",
+     "en_title": "流れる水をボタン一つで凍らせて、自由自在に使うゲームを制作中です！",
+     "full_text": "流れる水をボタン一つで凍らせて、自由自在に使うゲームを制作中です！\n\n近日公開予定。\n\n#gamedev #ゲーム制作 https://t.co/9KgL5OMpoZ",
+     "author": "オクトレイン",
+     "date": "2026-11-21",
+     "likes": 902,
+     "views": 72626,
+     "link": "https://x.com/octo_rain_game/status/2124137123230154807",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2124136099228598272/img/DAcubvMGQO7X_VR3.jpg",
+      "video_url": "https://x.com/octo_rain_game/status/2124137123230154807/video/1"
+     },
+     "summary": "日本独立开发者 オクトレイン 公布在研新作：按一个键就能把流动的水瞬间冻结成固体，再自由使用、塑形，近期公开详情。目前只有一段实机片段，正式名称与平台尚未公布。",
+     "recommendation": "一键冻结流水再自由塑形：日本独立开发者的「水作为关卡素材」新作",
+     "analysis": "单一机制作品的说服力全在关卡设计：冻结可以搭桥、挡水、卡机关，也可以当武器，机制越简单，越要靠水流方向与空间布局做出变化。这类原型值得当作解谜关卡设计的参考样本持续观察。",
+     "featured": true,
+     "game_ref": "Octo Rain water-freeze project",
+     "enrichment": {
+      "game_name": "オクトレイン 水冻结新作（未定名）",
+      "genre": "解谜 / 物理沙盒",
+      "developer": "オクトレイン（个人开发，日本）",
+      "platforms": [
+       "待公布"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "一个以「水」为唯一核心素材的物理向新作，目前只放出了概念片段。\n\n【核心玩法】场景里有持续流动的水体；按一个键即可把指定水流瞬间冻结成固体，再推动、堆叠、当桥、当武器。解冻后水流恢复，关卡地形随之改变——等于把「地形」变成可以随时写入和擦除的资源。\n\n【设计看点】这类机制的价值在于「同一场景有多种解法」：冻结可以搭路、可以挡水、可以卡住机关，也可以用冰块砸敌人。机制越单一，关卡越要靠空间布局与水流方向做出差异。\n\n【美术与氛围】从片段看是低多边形 + 冷色调的实验风格，水的材质与冻结瞬间的结晶反馈是视觉重点。\n\n【风险】单一机制很容易在十关之后失去新鲜感，需要复合机制（蒸汽、冰面滑行、水位控制）续命；目前连正式名称与平台都未公布，能否变成完整产品仍有距离。\n\n【综合】属于「机制先行」的独立作品，适合作为解谜关卡设计的参考样本，而不是近期可期待的产品。",
+      "why_notable": "把「冻结流水」做成可写入/擦除的地形编辑，是解谜品类里少见的干净机制切口",
+      "pcu": "暂未发售",
+      "current_players": "—",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「一键冻结流水 + 自由塑形」的解谜原型，日本个人开发者，平台与档期未定"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "节点编程",
+      "自动化",
+      "RPG"
+     ],
+     "title": "《Dungeon Automata》：用可视化节点编程指挥队伍，把地牢探险跑成全自动流水线",
+     "en_title": "Dungeon Automata brings programmable golems in late January",
+     "full_text": "Dungeon Automata brings programmable golems in late January: https://t.co/NRs29xSfKn https://t.co/TT4b6yChKs",
+     "author": "Niche Gamer",
+     "date": "2026-11-21",
+     "likes": 14,
+     "views": 961,
+     "link": "https://x.com/nichegamer/status/2124160280120672378",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2124160218837749760/pu/img/O6-8fv3GLhr5Ny_K.jpg",
+      "video_url": "https://x.com/nichegamer/status/2124160280120672378/video/1"
+     },
+     "summary": "Niche Gamer 报道，原名 Algolemeth 的《Dungeon Automata》定档 2027 年 1 月 26 日：把日式 RPG 的地下城探险与自动战斗结合，玩家用可视化节点编程指挥队伍，在反复试错中把探索流程优化成「全自动征服地牢」。",
+     "recommendation": "《Dungeon Automata》：节点编程指挥队伍，把地牢探险跑成全自动流水线",
+     "analysis": "它把 RPG 的「策略」从战斗中抽出来，变成编程与调试：失败不是手滑，而是流程图有 bug。这类逻辑自动化（Zachtronics 式）在 PC 上有稳定受众，难点在于可视化编程的 UI 复杂度会劝退普通玩家。",
+     "game_ref": "Dungeon Automata",
+     "enrichment": {
+      "game_name": "Dungeon Automata",
+      "genre": "独立 / 角色扮演 / 逻辑自动化",
+      "developer": "Medium-Rare Games",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": "2027 年 1 月 26 日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/2731030/Dungeon_Automata/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2731030/d205d16937d7f09410fd1a0ccf70cffd6ad2729a/header_alt_assets_1.jpg?t=1794500531",
+      "youtube_video": null,
+      "description": "把「地下城探险」做成一条可调试的自动化流水线。\n\n【核心玩法】玩家不直接操作角色，而是用可视化节点编程给队伍下指令：什么时候前进、遇敌用什么技能、血量低于多少撤退、宝箱优先级如何。节点连起来就是一套自动战斗逻辑，跑起来之后观察结果、改参数、再跑。\n\n【为什么有意思】它把 RPG 的策略从「战斗操作」抽出来，变成编程与调试：失败不是手滑，而是流程图有 bug。跑通一条稳定产出的流程，本身就是玩法奖励。\n\n【定位】原名《Algolemeth》，Medium-Rare Games 开发，Kakehashi Games 与 Raw Fury 发行，2027 年 1 月 26 日登陆 PC。\n\n【优势】节点编程降低了写代码的门槛，却保留了「优化到全自动」的爽感；Raw Fury 在独游发行上有成熟经验，试玩 Demo 也已经在 Steam 上放出。\n【风险】可视化编程的 UI 复杂度容易劝退普通玩家；自动化跑到后期可能变成「看动画」，需要足够的瓶颈设计来维持参与感。\n\n【综合】「用编程代替操作」这一品类里定位清晰的一作，适合喜欢调试胜过手速的玩家。",
+      "why_notable": "把地牢 Roguelike 做成节点编程的自动化谜题，是自动战斗品类里少见的「写逻辑」而非「配阵容」",
+      "pcu": "暂未发售",
+      "current_players": "—",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「节点编程 + 自动战斗 + 地牢探险」，Medium-Rare 开发、Raw Fury 发行，2027-01-26"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "生存恐怖",
+      "摄影机制",
+      "Demo"
+     ],
+     "title": "《残魂显影 Echograph》开放 Demo：用相机拍幽灵的《零》系生存恐怖",
+     "en_title": "Fatal Frame-inspired survival horror game Echograph gets a demo",
+     "full_text": "Fatal Frame-inspired survival horror game Echograph gets a demo: https://t.co/W6SeER4qKg https://t.co/O1sSnJMolU",
+     "author": "Niche Gamer",
+     "date": "2026-11-21",
+     "likes": 23,
+     "views": 1191,
+     "link": "https://x.com/nichegamer/status/2124151131655795093",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2124151085203914753/pu/img/WQygWZ_CSEYXDop7.jpg",
+      "video_url": "https://x.com/nichegamer/status/2124151131655795093/video/1"
+     },
+     "summary": "Niche Gamer 报道，《零》系生存恐怖游戏《Echograph》（中文名《残魂显影》）放出 Demo：进入经典生存恐怖框架，用相机拍摄幽灵，破解基于环境设计的谜题，管理有限资源，解开家族诅咒背后的谜团。",
+     "recommendation": "《残魂显影》开放 Demo：用相机拍幽灵的《零》系生存恐怖",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "重制",
+      "沙盒生存",
+      "Xbox 360"
+     ],
+     "title": "《CastleMiner Z》重制版公开：Xbox 360 时代的方块生存游戏回归",
+     "en_title": "Cult Xbox 360 game CastleMiner Z is getting a big remake",
+     "full_text": "Cult Xbox 360 game CastleMiner Z is getting a big remake: https://t.co/RHIXVuc86R https://t.co/bFzcrv2sPi",
+     "author": "Niche Gamer",
+     "date": "2026-11-21",
+     "likes": 6,
+     "views": 915,
+     "link": "https://x.com/nichegamer/status/2124154379972251769",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2124154327753191424/pu/img/Llathj9Yjnc1o7Y_.jpg",
+      "video_url": "https://x.com/nichegamer/status/2124154379972251769/video/1"
+     },
+     "summary": "Niche Gamer 报道，Xbox 360 时代的方块沙盒生存游戏《CastleMiner Z》将推出大规模重制版（Resurrection）。原作用方块建造、用原材料打造武器工具、在无限世界里对抗怪物。",
+     "recommendation": "《CastleMiner Z》重制版公开：Xbox 360 方块生存老游戏回归",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "音乐",
+      "合作",
+      "沙盒"
+     ],
+     "title": "《Musicality》定档 2027 Q1：把合成器、鼓机、效果器连起来，和朋友一起 Jam",
+     "en_title": "Musicality lets you wire up synths and jam with friends in early 2027",
+     "full_text": "Musicality lets you wire up synths and jam with friends in early 2027: https://t.co/WMmBFXWjo2 https://t.co/Vq7ynwCs6l",
+     "author": "Niche Gamer",
+     "date": "2026-11-21",
+     "likes": 7,
+     "views": 669,
+     "link": "https://x.com/nichegamer/status/2124165877431926836",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXqNm-PWQAARvyS.jpg"
+     },
+     "summary": "Niche Gamer 报道，《Musicality》将于 2027 年第一季度推出：一款舒适的 co-op 音乐玩具，在自己的小屋里把合成器、鼓机与踏板连成一套系统，录下段落给邻居听，并通过 Steam 和朋友一起即兴演奏。",
+     "recommendation": "《Musicality》定档 2027 Q1：连线合成器，和朋友在线 Jam",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "PICO-8",
+      "合集",
+      "免费"
+     ],
+     "title": "《Pico32: The Lost Pages》收录 32 款原创 PICO-8 游戏，免费发布",
+     "en_title": "Pico32: The Lost Pages collects 32 original PICO-8 games for free",
+     "full_text": "Pico32: The Lost Pages collects 32 original PICO-8 games for free: https://t.co/WpKgyFE2yZ https://t.co/XSS5VqyL90",
+     "author": "Niche Gamer",
+     "date": "2026-11-21",
+     "likes": 4,
+     "views": 686,
+     "link": "https://x.com/nichegamer/status/2124172288048173083",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXqTcJJX0AACWeG.jpg"
+     },
+     "summary": "Niche Gamer 报道，《Pico32: The Lost Pages》把 32 款原创 PICO-8 游戏打包成一本「魔法书」，覆盖多种类型，免费发布，定档 2027 年 1 月 14 日。",
+     "recommendation": "《Pico32》收录 32 款原创 PICO-8 游戏，免费发布",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 设计师 @MengTo",
+     "tags": [
+      "three.js",
+      "AI编程",
+      "开源Skill"
+     ],
+     "title": "24 小时用 GPT-6.2 Astra 做出 three.js 赛博朋克游戏，顺手开源 3 个 Skill",
+     "en_title": "I spent about 24 hours on a three.js cyberpunk game with GPT-6.2 Astra.",
+     "full_text": "I spent about 24 hours on a three.js cyberpunk game with GPT-6.2 Astra. \n\nPick a character and drive through the city. Strong visual refs, ThreeUI, real 3D.\n\nI open-sourced 3 skills\n\n3D scans https://t.co/W86pRp4oxu\nLens rain https://t.co/LOAOxj6QKZ\nSelector https://t.co/JdYQpRzZst",
+     "author": "Meng To",
+     "date": "2026-11-21",
+     "likes": 895,
+     "views": 59916,
+     "link": "https://x.com/MengTo/status/2124015852592988367",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2124015717297393664/pu/img/fepbZCru40sbVCTm.jpg",
+      "video_url": "https://x.com/MengTo/status/2124015852592988367/video/1"
+     },
+     "summary": "Meng To 称用 GPT-6.2 Astra 花约 24 小时做出一个 three.js 赛博朋克游戏：选角色后开车穿城，靠强视觉参考与 ThreeUI 做出真 3D；同时开源了 3 个 Skill——3D 扫描、镜头雨效与选择器。",
+     "recommendation": "24 小时做出 three.js 赛博朋克游戏，顺手开源 3 个可复用 Skill",
+     "analysis": "这类「技能包」正在变成 AI 做 3D 网页游戏的标准件：把一次调好的效果沉淀成可复用 Skill，比每次重写 prompt 稳定得多。对团队的意义是把个人手感转成可继承的资产，新人接上就能复用。",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · 中文 KOL @bozhou_ai",
+     "tags": [
+      "AI UI",
+      "Claude Code",
+      "设计规范"
+     ],
+     "title": "治「一眼 AI」的 10 个设计 Skill：紫色渐变、毛玻璃、emoji 图标的默认审美有解",
+     "en_title": "AI 做的网页，现在一眼就能认出来。",
+     "full_text": "AI 做的网页，现在一眼就能认出来。\n\n紫色渐变、毛玻璃卡片、emoji 当图标，十个站有九个长一个样。\n下面这 10 个 Skill 专门治这个毛病，装进 Claude Code 或 Cursor 就能用：\n\n1. Anti UI Slop\n   https://t.co/SxZc0YOtYz\n2. Impeccable：一整套设计命令，审查、打磨、加动效都包了\n   https://t.co/DRWwPadmCq\n3. Taste Skill\n   https://t.co/q3RaNhxuA1\n4. Emil Kowalski：Sonner 的作者，教 AI 抠交互和动效细节\n   https://t.co/QXclyZwtY8\n5. Vercel 官方的网页设计规范：一份界面检查清单\n   https://t.co/sFBnxYw19a\n6. Anthropic 官方的 frontend-design\n   https://t.co/MFBLvyz5Ba\n7. Hallmark\n   https://t.co/X4Pq9qmPma\n8. Make Interfaces Feel Better：专抠让界面用着顺手的小地方\n   https://t.co/J2bxRA8OaG\n9. UI UX Pro Max：现成的风格、配色、字体组合一大堆\n   https://t.co/ONc92npCB2\n10. Stageshow（Benji Taylor）\n    https://t.co/LYdobQtsKK\n\n别全装，挑 2 到 3 个就够了。装多了规则会互相打架，AI 反而不知道该听谁的。\n\n我自己用的是 Impeccable 和 frontend-design。\n\n先收藏，下次让 AI 做页面之前翻出来。 https://t.co/mYGtxX7Yb7",
+     "author": "泊舟",
+     "date": "2026-11-20",
+     "likes": 395,
+     "views": 22878,
+     "link": "https://x.com/bozhou_ai/status/2123807528777863217",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2122286135728910338/img/hBCZ_SBSnRSfODtB.jpg",
+      "video_url": "https://x.com/bozhou_ai/status/2123807528777863217/video/1"
+     },
+     "summary": "泊舟列出 10 个可直接装进 Claude Code / Cursor 的设计类 Skill——Anti UI Slop、Impeccable、Taste、Vercel 设计规范、Anthropic frontend-design 等，专门针对 AI 生成网页的同质化（紫色渐变、毛玻璃卡片、emoji 当图标）。他的建议是只装 2-3 个，装多了规则互相打架，AI 反而不知道听谁的。",
+     "recommendation": "10 个设计 Skill 治「一眼 AI」：建议只装 2-3 个，规则多了会打架",
+     "analysis": "AI 前端的问题已经从「能不能做」变成「长得都一样」。可迁移的经验是：约束要少而硬（一份检查清单胜过十套风格库），并且把评审标准写进工具，而不是靠人反复返工。"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**GTA 6 首发 37.9 亿美元，评分却分裂**\nNiche Gamer 报道 GTA 6 首发销售额 37.9 亿美元，称其已是娱乐史上最大规模首发；此前 Sensor Tower 估算首日数字版 2458 万份、23.6 亿美元，PS5 约占四分之三。另一边 Eurogamer 指出媒体均分 99 的同时，玩家正在 Metacritic 集中刷差评——定价、独占期与 30fps 是主要火力点。\n\n**AI 侧：把「移植」和「资产」都变成流水线**\n最醒目的是 AnyPS5：这个把 PS5 游戏转成原生 Windows 程序的开源项目，最近 400 次提交里有 82 次由 Claude 共同署名，着色器覆盖率数月内从 52% 到 100%，GTA 6 只差一份干净 dump。另一边《汴河一日》团队给出方法论：别让 AI 画像素切片，让它写体素几何代码，图鉴与开放世界共用同一份数据。\n\n**行业与工具：约束正在被写进制度**\nIWGB 等欧洲工会联合发布宣言呼吁抵制生成式 AI，把「AI 与岗位」的争论推到行业公约层面；美国法院驳回三星、SK 海力士、美光的撤诉动议，内存涨价诉讼进入实质审理。工具侧，Meng To 开源 3 个 three.js Skill，泊舟整理 10 个治「一眼 AI」的设计 Skill。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
