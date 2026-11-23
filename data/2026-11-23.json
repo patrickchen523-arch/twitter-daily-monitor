@@ -1,0 +1,540 @@
+{
+ "date": "2026-11-23",
+ "meta": {
+  "raw_count": 273,
+  "filtered_count": 171,
+  "selected_count": 12,
+  "crawl_time": "2026-11-23 09:30"
+ },
+ "lede": "辞职花光 1400 美元的开发者用 Opus 5.5 + Fable 5.2 几天搭出两倍于天际的世界并已回本；GTA 6 刚发完，Rockstar 员工开始担心被裁。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "辞职花光 1400 美元做 AI 游戏：AOD 几天搭出两倍于天际的世界，已回本"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《Everrest》：2D 像素画面一转镜头就变成可自由探索的 3D"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "GTA 6 刚发完 Rockstar 员工就在担心被裁——今年全行业已裁 1.2 万人"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "AOD：辞职花光 1400 美元，几天搭出两倍于天际的世界，已回本\n一小时做出 190KB 的「变形水」物理解谜，浏览器直接开玩\nEpic 的 AI Jam 人气第一，是一款明确不用 AI 的四天 meme 游戏"
+  },
+  {
+   "id": "industry",
+   "text": "GTA 6 发完，Rockstar 员工担心被裁；今年全行业已裁 1.2 万人\n育碧再裁 166 人：蒙特利尔、魁北克城约占 4% 编制\n《魔兽世界：Forever》周活创 15 年新高\n《以撒》GTA 6 主题局混入 Suno 音乐，官方连夜删文件"
+  },
+  {
+   "id": "indie",
+   "text": "《Everrest》：Godot 4 + C++ 让 2D 像素一转眼变 3D\n《KORRIDOR》：把竖屏射击广告做成「闸门射击」，16.8 元 83% 好评\n《Castlevania: Belmont's Curse》：1499 年巴黎的贝尔蒙特家银河城"
+  },
+  {
+   "id": "tools",
+   "text": "14 个开源项目把 Claude Code 接进 Roblox Studio\n一张照片量产 Unity 植被：三档 LOD，成本 4 美元 + 8 小时算力"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "X · 独立开发者 @M__Houser",
+     "tags": [
+      "AI 生成",
+      "开放世界",
+      "独立开发"
+     ],
+     "title": "《AOD - Age of Dragon》一人几天搭出两倍于天际的世界：辞职花光 1400 美元，现在已回本",
+     "en_title": "Two months ago, I quit my job to make games with AI and spent my last $1,400. Now I'm profitable.",
+     "full_text": "Two months ago, I quit my job to make games with AI and spent my last $1,400. Now I'm profitable and can keep making games.\n\nThe response to my newest game AOD - Age of Dragon reveal was incredible.\n\nI built it solo in just a few days with Opus 5.5 and Fable 5.2. Since then, I've been expanding the game and improving it every day.\n\nThe world is already twice the size of Skyrim, and I'm just getting started! Over 150 quests so far, aiming for around 500.",
+     "author": "Mike Houser",
+     "date": "2026-11-21",
+     "likes": 2356,
+     "views": 657371,
+     "link": "https://x.com/M__Houser/status/2124153573718307003",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2124151533650718720/img/QvVpCf7sUl1j038k.jpg",
+      "video_url": "https://x.com/M__Houser/status/2124153573718307003/video/1"
+     },
+     "summary": "开发者 Mike Houser 称两个月前辞职、把最后 1400 美元投进「用 AI 做游戏」，如今已回本。新作《AOD - Age of Dragon》单人用 Opus 5.5 + Fable 5.2 几天搭出，世界规模已达天际的两倍，现有 150 多个任务、目标约 500 个，仍在每日迭代。",
+     "analysis": "这条的价值不在「AI 能做开放世界」的口号，而在成本结构：1400 美元 + 两个人的订阅额度就能把「世界规模」这种过去靠人力堆的指标先做出来。但它也暴露了新的分水岭——生成世界变便宜之后，任务密度、演出与打磨才是真正的开销，150 到 500 个任务之间的距离，正好是 AI 帮不上忙的那部分。",
+     "recommendation": "辞职花光 1400 美元做 AI 游戏：AOD 几天搭出两倍于天际的世界，已回本",
+     "featured": true,
+     "game_ref": "AOD - Age of Dragon"
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "X · 独立开发者 @Rubzem",
+     "tags": [
+      "AI 生成",
+      "物理玩法",
+      "浏览器游戏"
+     ],
+     "title": "一小时做出 190KB 的水流解谜平台游戏：Fable 5.2 全程序化生成，浏览器直接开玩",
+     "en_title": "I built this original game with AI in just 1 hour. A physics platformer where you play as shapeshifting water.",
+     "full_text": "I built this original game with AI in just 1 hour.\n\nA physics platformer where you play as shapeshifting water to solve puzzles.\n\nEntirely procedural. Only 190 KB. Made with Fable 5.2\n\nPlay it in your browser https://t.co/5lNJ0t4fVL",
+     "author": "S",
+     "date": "2026-11-21",
+     "likes": 590,
+     "views": 42917,
+     "link": "https://x.com/Rubzem/status/2124142554371502140",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2124050659196784640/img/jj6zHqD1nVWP42-0.jpg",
+      "video_url": "https://x.com/Rubzem/status/2124142554371502140/video/1"
+     },
+     "summary": "开发者展示一个用 Fable 5.2 一小时做出的原创小游戏：玩家扮演会变形的「水」，靠物理特性解谜的平台跳跃；全部内容程序化生成，体积只有 190KB，可在浏览器直接游玩。",
+     "analysis": "190KB 这个数字比「一小时」更值得注意：它说明生成的是代码与规则，而不是贴图与模型堆出来的资产。对原型阶段的项目，这意味着「玩法验证」可以便宜到一次对话的成本；但同样清楚的是，体积小也意味着它在美术、音效和内容量上仍是 demo 级别，验证的是机制而不是产品。",
+     "recommendation": "一小时、190KB、纯程序化：Fable 5.2 做出会变形的「水」解谜平台游戏"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "X · 媒体 @rockpapershot",
+     "tags": [
+      "AI 争议",
+      "Game Jam",
+      "Epic Games"
+     ],
+     "title": "Epic 的 AI 游戏 Jam 人气榜首，被一款「全程不用生成式 AI」的鱼开枪 meme 游戏拿走",
+     "en_title": "Fish with a sniper rifle takes aim at Tim Sweeney's hopes and dreams, as genAI-free meme game tops Epic Games' vibe-coding megajam",
+     "full_text": "Fish with a sniper rifle takes aim at Tim Sweeney's hopes and dreams, as genAI-free meme game tops Epic Games' vibe-coding megajam. https://t.co/caMzn7xUwD https://t.co/p4oUh6lUvS",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-11-22",
+     "likes": 4,
+     "views": 1807,
+     "link": "https://x.com/rockpapershot/status/2124424399629467759",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXt4u8vX0AAK3Qm.jpg"
+     },
+     "summary": "Epic 办了一场鼓励使用 AI 的「vibe-coding」Megajam，但按 Popular 排序，榜首是开发者 PolyCube 四天做出来的《LSD:FIH》——描述里明确写着「本游戏未使用任何 AI」。Epic 此前已澄清参赛不强制使用生成式 AI，投稿里同时也有《THIS GAME IS AI SLOP》这类作品。",
+     "analysis": "这场比赛本来是「AI 产能」的展示场，结果最受欢迎的作品靠的是梗、手感和四天的工期控制。它提醒的是评审与玩家的真实取向：工具门槛下降后，稀缺的不是产出速度，而是能让人记住的点子与执行完成度。对想用 AI 提效的团队，这比任何跑分都更值得当作验收标准。",
+     "recommendation": "Epic 的 AI 游戏 Jam 人气第一，是一款「明确不用 AI」的四天 meme 游戏",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "X · 媒体 @eurogamer",
+     "tags": [
+      "裁员",
+      "工会",
+      "Rockstar"
+     ],
+     "title": "GTA 6 刚发完，Rockstar 员工就在担心被裁：今年全行业已有 1.2 万开发者失业",
+     "en_title": "GTA 6 developers at Rockstar are worried about being laid off after shipping \"the biggest game of all time\"",
+     "full_text": "GTA 6 developers at Rockstar are worried about being laid off after shipping \"the biggest game of all time\". https://t.co/8SIDTVRA8J https://t.co/y6WQGba98j",
+     "author": "Eurogamer",
+     "date": "2026-11-22",
+     "likes": 53,
+     "views": 8704,
+     "link": "https://x.com/eurogamer/status/2124375073989513713",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXtL31dWAAAQb5d.jpg"
+     },
+     "summary": "Eurogamer 报道：Rockstar North 动画程序员 Nestor Uriarte 在《卫报》撰文称，GTA 6 发售后公司没有裁员迹象，但「很难不担心未来」，「连做史上最大游戏的人都在担心被裁，这很说明行业现状」。Rockstar 英国工作室正在就承认工会进行投票，与 IWGB 被解雇成员的仲裁刚结束、判决要等数周甚至数月。文中给出两个数字：Rockstar 员工在 GTA 6 开发期增至 4711 人；ASGC 统计今年已有超过 1.2 万名开发者失业（去年 9000+）。",
+     "analysis": "把「史上最大首发」和「员工担心被裁」放进同一篇报道，是今年行业最尖锐的对照。它说明风险已经从「项目失败」转移到「项目成功之后」——预付款、营销与人员规模在发售后进入收缩期，而工会承认投票与仲裁结果会决定员工有没有议价工具。对国内团队，同样值得盯的是「项目峰值人数 → 上线后编制」这条曲线怎么设计。",
+     "recommendation": "GTA 6 刚发完 Rockstar 员工就在担心被裁——今年全行业已裁 1.2 万人",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "X · 媒体 @rockpapershot",
+     "tags": [
+      "裁员",
+      "育碧",
+      "工作室重组"
+     ],
+     "title": "育碧再裁 166 人：蒙特利尔与魁北克工作室，约占两地总人数 4%",
+     "en_title": "Ubisoft lay off 166 more staff, this time at their Montreal and Quebec City studios",
+     "full_text": "Ubisoft lay off 166 more staff, this time at their Montreal and Quebec City studios, while mumbling about \"current production priorities and business needs\". https://t.co/VUhRS0iEo1 https://t.co/uOfQIgMGdU",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-11-22",
+     "likes": 4,
+     "views": 1616,
+     "link": "https://x.com/rockpapershot/status/2124439498750595095",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXuGd0mXUAAOkmO.jpg"
+     },
+     "summary": "育碧确认在蒙特利尔与魁北克城裁撤 166 个岗位，约占两地合计人数的 4%，受影响员工来自「近期被取消或大幅调整的项目」，公司将提供遣散费、延长医保与转职服务。蒙特利尔目前在做《刺客信条 Hexe》。多家报道：Rock Paper Shotgun、Eurogamer（标题指向《刺客信条》《孤岛惊魂》工作室）、IGN、GamesIndustry.biz。这是育碧今年全球裁员链条上的最新一轮，此前新加坡、Redlynx、温尼伯、贝尔格莱德、巴塞罗那、Red Storm、巴黎总部与三家德国工作室都已动过刀。",
+     "analysis": "166 人、4% 这样的「小步快跑式裁员」比一次性大裁员更能说明问题：它不是砍掉某个失败项目，而是按季度把编制往「在研管线」上重新对齐。对从业者的含义是，项目被取消/改向已经成为比绩效更常见的失业触发器；对管理者的含义是，用「production priorities」解释裁员，正在变成行业通用话术。",
+     "recommendation": "育碧再裁 166 人：蒙特利尔、魁北克城两地约 4% 编制，来自被砍或改向的项目"
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "X · 媒体 @eurogamer",
+     "tags": [
+      "MMO",
+      "运营数据",
+      "暴雪"
+     ],
+     "title": "《魔兽世界：Forever》周活创 15 年新高：1516 万角色、14.8 亿任务、1.97 亿次死亡",
+     "en_title": "World of Warcraft: Forever has more weekly players than WoW has seen in 15 years, says Blizzard",
+     "full_text": "World of Warcraft: Forever has more weekly players than WoW has seen in 15 years, says Blizzard https://t.co/BFlcP7LVSI https://t.co/zp7y8YP4z9",
+     "author": "Eurogamer",
+     "date": "2026-11-22",
+     "likes": 9,
+     "views": 2912,
+     "link": "https://x.com/eurogamer/status/2124510970303119369",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXvHd-mXkAA_DYN.jpg"
+     },
+     "summary": "暴雪执行制作人 Holly Longdale 称《魔兽世界：Forever》的周活玩家数已达 15 年来最高。官方「By the Numbers」：11 月 4 日上线以来创建 1516 万个角色、14.1 万个公会，完成 14.8 亿个任务、击败 97.9 亿个敌人，累计死亡 1.97 亿次，PvP 击杀 2894 万次。此前暴雪已称它是 WoW 史上峰值同时在线最高的发售，并带回 15 年来最多的新玩家。",
+     "analysis": "老 IP 做「重制型大版本」能拉回 15 年量级的周活，说明 MMO 的护城河仍是社交结构而不是画面。更值得记的是它的口径：暴雪给的是角色数、任务数、死亡数这类「行为量」，而不是订阅数——在订阅制退场之后，这套指标体系本身就是给资本市场的叙事工具，也解释了为什么各家都在往「周活/参与度」上换口径。",
+     "recommendation": "《魔兽世界：Forever》周活创 15 年新高——1516 万角色、1.97 亿次死亡"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "X · 媒体 @eurogamer",
+     "tags": [
+      "AI 音乐",
+      "玩家反弹",
+      "Steam 差评"
+     ],
+     "title": "《以撒的结合》GTA 6 主题日常局用了 Suno 生成的音乐：玩家扒出元数据，官方连夜撤下",
+     "en_title": "Binding of Isaac dev pulls AI-generated music from Repentance+ after players expose it",
+     "full_text": "Binding of Isaac dev pulls AI-generated music from Repentance+ after players expose it\nhttps://t.co/A7q7brTzej https://t.co/WgES7TM8CZ",
+     "author": "Eurogamer",
+     "date": "2026-11-22",
+     "likes": 4,
+     "views": 2888,
+     "link": "https://x.com/eurogamer/status/2124493605062455748",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXu3pvkWwAA6RU_.jpg"
+     },
+     "summary": "《以撒的结合：Repentance+》与 GTA 6 同日（11 月 19 日）上线的 GTA 6 主题日常局被发现音乐来自 Suno：Reddit 用户 ShweetsStuff 从曲目元数据找到证据。创作者 Edmund McMillen 回应「一觉醒来就是一场烂摊子，我完全不知道日常局里有生成音乐，正在查怎么发生的并移除」；发行方 Nicalis 随后推送补丁删除生成音乐文件，主机版已提交微软、任天堂、索尼。Steam 上出现大量差评，有玩家要求「加入 AI 应当成为退款理由」。",
+     "analysis": "这事的严重性不在「用了 AI」，而在「创作者不知道」——日常局是自动轮换内容，生成音乐混进了没人逐项复核的流水线。它给所有做 Live 内容更新的团队提了一个具体问题：自动生成的内容由谁签收、版权与元数据如何留痕。玩家的反应也说明，AI 已经从「技术选择」变成「信任问题」：一旦被发现且未披露，反噬会直接打在评价曲线上。",
+     "recommendation": "《以撒》GTA 6 主题局混入 Suno 音乐，创作者称毫不知情，官方连夜删文件",
+     "featured": true
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "X · 中文开发者 @BeyondTheBoxCN",
+     "tags": [
+      "Godot",
+      "视角切换",
+      "像素肉鸽"
+     ],
+     "title": "《Everrest》：Godot 4 + C++ GDExtension，让 2D 像素世界一转镜头就变成可探索的 3D",
+     "en_title": "这视角切换也太离谱了！！！上一秒还是传统的 2D 像素游戏，下一秒镜头突然转到人物背后",
+     "full_text": "这视角切换也太离谱了！！！\n\n上一秒还是传统的 2D 像素游戏，下一秒镜头突然转到人物背后，整个世界居然直接变成了可以自由探索的 3D 场景？？？\n\n独立游戏《Everrest》的这个效果，我是真有点被惊艳到了！\n\n更厉害的是，它的底层实现居然这么复杂！\n\n开发者用 Godot 4 + C++ GDExtension，让原本看起来扁平的 2D 精灵，也拥有真实的高度、深度和物理碰撞！\n\n镜头旋转时，系统会临时重建 3D 场景，再把当前的 2D 画面投影上去，让整个切换过程尽量无缝衔接！\n\n最头疼的还是视角匹配！\n\n传统 2:1 等距像素画面，和真正的 3D 摄像机投影根本不是一回事！\n\n镜头和场景比例只要没校准好，一转视角，整个世界就可能直接变形……\n\n而且你猜作者为了做出这个效果花了多久？\n\n底层框架整整开发了一年半！光视频里这段镜头转换，就折腾了两个星期！！！",
+     "author": "黑箱之外",
+     "date": "2026-11-21",
+     "likes": 529,
+     "views": 23045,
+     "link": "https://x.com/BeyondTheBoxCN/status/2124170983829582293",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2123794619074764800/img/yjgEDw5XLHDO34pA.jpg",
+      "video_url": "https://x.com/BeyondTheBoxCN/status/2124170983829582293/video/1"
+     },
+     "summary": "中文开发者拆解独立游戏《Everrest》的技术实现：平时是 2D 等距像素画面，镜头旋转时系统临时重建 3D 场景，再把当前 2D 画面投影上去，让扁平的精灵拥有真实高度、深度与物理碰撞。底层用 Godot 4 + C++ GDExtension，框架开发约一年半，视频里这段镜头转换单独打磨两周；最大难点是 2:1 等距像素与真实 3D 摄像机投影的比例校准。",
+     "recommendation": "《Everrest》：2D 像素画面一转镜头就变成可自由探索的 3D——Godot 4 + C++ 实现",
+     "featured": true,
+     "game_ref": "Everrest",
+     "enrichment": {
+      "game_name": "Everrest",
+      "genre": "等距视角肉鸽动作 / 梦境冒险",
+      "developer": "YesNinja Games（自研自发）",
+      "platforms": [
+       "Steam（Windows / Linux）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5272870/Everrest/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5272870/3490c78d45a60ab177fb0956b89ef1dd0a276748/header.jpg?t=1795211469",
+      "youtube_video": null,
+      "description": "把「2D 像素」和「3D 世界」接在同一套坐标里：平时是等距视角的肉鸽动作游戏，镜头一转，系统会临时重建 3D 场景，再把 2D 画面投影上去，得到有真实高度与碰撞、可以自由探索的立体空间。\n\n【核心玩法】男孩抱着枕头掉进一个不肯放他走的梦境，用连招、投掷、空中下砸、冲刺与格挡打「幻影」；蘑菇会蓄力挥大叶、鬼火远程喷吐、扎人的家伙从地下冒刺，看前兆找破绽再反击。\n\n【构筑】每颗落星是一个愿望，落星处会激起两个愿望、只能带一个进本局；愿望改造战斗方式（枕头环绕、投掷物追踪、炸弹引雷），部分组合有额外收益，每局都能凑出不同构筑。\n\n【技术看点】Godot 4 + C++ GDExtension；底层框架开发约一年半，这段镜头转换单独打磨两周。难点是 2:1 等距像素画面与真实 3D 摄像机投影不对齐——镜头或比例没校准，转视角时整个世界会变形。\n\n【美术与氛围】雾林 Whisperwood、琥珀树流 Amberfall、雨中衰朽堡垒 Wanehold，三处地貌各有专属恐惧；毛绒伙伴 MurMur、不情愿带路的提灯、自己是飞毯的商人 Mr.Habibi，走温柔怪诞路线。\n\n【优势】视角切换不是炫技，而是「换个角度看见新路」的可探索空间；枕头战斗与愿望构筑互相供给目标感。\n【风险】视角切换对关卡设计与读图要求极高；能否把「换角度」做成解谜核心而非一段过场，是成品成败关键。\n\n【综合】2026 年最值得跟的 Godot 技术样本之一：用引擎扩展把 2D 美术资产直接变成 3D 玩法空间。",
+      "why_notable": "把 2D 像素与 3D 空间接成同一张地图：技术方案（Godot 4 + C++ GDExtension）比效果本身更有参考价值",
+      "pcu": "暂未发售",
+      "current_players": "—",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「等距像素肉鸽」套「梦境 2D/3D 切换」，YesNinja Games 独立开发，Steam 页面已上、发售日未定"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "X · 媒体 @rockpapershot",
+     "tags": [
+      "肉鸽射击",
+      "竖屏",
+      "小体量"
+     ],
+     "title": "《KORRIDOR》：把「手游竖屏射击广告」做成真要讲策略的「闸门射击」，16.8 元 83% 好评",
+     "en_title": "Korridor turns those Youtube ads for vertical mobile shooters into a new, \"deeply strategic\" genre",
+     "full_text": "Korridor turns those Youtube ads for vertical mobile shooters into a new, \"deeply strategic\" genre, and I can't decide if it's lying. https://t.co/VSQ37js7Hz https://t.co/tiqd9A5Q31",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-11-22",
+     "likes": 3,
+     "views": 2651,
+     "link": "https://x.com/rockpapershot/status/2124364002482389444",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXtBzUVXYAAzYAz.jpg"
+     },
+     "summary": "RPS 试玩《KORRIDOR》：它自称把「竖屏手游射击广告」升级成叫「gates shooter（闸门射击）」的新品类，混入肉鸽与弹幕天堂元素。玩家是一个缓慢沿走廊前进的板甲修士，靠判断「能否在敌人撞上来前把血量打空」并穿过闸门拿强化。开发者 TinyToad、发行 TARK，11 月 18 日发售、售价 16.8 元，Steam 290 篇评价 83% 好评；RPS 对「深度策略」的说法持保留态度，但认可电子金属配乐与击杀巨魔的爽感。",
+     "recommendation": "《KORRIDOR》：把竖屏射击广告做成「闸门射击」，16.8 元、83% 好评",
+     "game_ref": "KORRIDOR",
+     "enrichment": {
+      "game_name": "KORRIDOR",
+      "genre": "闸门射击 / 肉鸽 / 弹幕天堂",
+      "developer": "TinyToad（发行 TARK）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "¥16.80",
+      "release_date": "已发售 · 2026年11月18日",
+      "steam_rating": "特别好评 · 83%（290 篇）",
+      "steam_url": "https://store.steampowered.com/app/3739580/KORRIDOR/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3739580/6d6fea5275ce8f5455c72b50aa44581147329ec5/header.jpg?t=1795097898",
+      "youtube_video": null,
+      "description": "把人人刷到过的「竖屏射击广告」真的做成游戏：你是一个穿板甲的秃头中世纪修士，只能沿走廊缓慢前进，一边射击一边看著哥布林、幽灵和恶魔迎面冲来。\n\n【核心玩法】敌人头顶有血量数字，核心判断是「在它撞到你之前能不能把血打空」——撞上按比例扣血，护甲减伤。纵向推进速度不可控，所以节奏被固定，怪物潮能与轰鸣的配乐严格对齐。\n\n【构筑】每 15 秒经过一道闸门拿一次强化（更快的回血、子弹穿透、横向机动等），35 枚符文 + 100 多件商店道具；撑进无尽模式后成长不设上限，另有排行榜。\n\n【内容量】6 场首领战、45 分钟原创电子金属配乐；关卡之间的商店塞满中世纪真实历史人物与冷知识，可逐步填满画册。\n\n【优势】把「广告里那 20 秒」的可读性做成系统性判断；16.8 元的定价与单点机制非常匹配，83% 好评说明目标用户买账。\n【不足】操作维度刻意收窄，玩久了容易退化成数值与闸门选择的重复；RPS 也在质疑「深度策略」的说法是否成立。\n\n【综合】小体量、单点机制、低价——把广告梗转成可玩品类的样本，值得研究它如何用「不可控速度」制造节奏。",
+      "why_notable": "把「手游广告里那 20 秒」做成低价可玩的单点机制，是今年最小成本的品类转化样本",
+      "pcu": "未进当日 Steam Top 500 榜",
+      "current_players": "—",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「竖屏射击广告」套「肉鸽构筑」，TinyToad 开发、TARK 发行，Steam ¥16.8"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "X · 媒体 @indiegamesdevel",
+     "tags": [
+      "银河城",
+      "恶魔城",
+      "Konami"
+     ],
+     "title": "《Castlevania: Belmont's Curse》：KONAMI × Evil Empire 把 1499 年的巴黎做成贝尔蒙特家的新舞台",
+     "en_title": "Evil Empire brings Castlevania back with a confident Metroidvania that excels in level design and combat",
+     "full_text": "Evil Empire brings Castlevania back with a confident Metroidvania that excels in level design and combat, while making some unexpected compromises in its approach to progression, music and RPG mechanics.\n\n@Studio_Evil @Konami #Castlevania #metroidvania #gaming #videogames https://t.co/xRjMuPiiVT",
+     "author": "Indie Games Devel",
+     "date": "2026-11-22",
+     "likes": 11,
+     "views": 261,
+     "link": "https://x.com/indiegamesdevel/status/2124503003126272400",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXu9eABXcAAIpxG.jpg"
+     },
+     "summary": "《Castlevania: Belmont's Curse》由 KONAMI 与 Evil Empire（《死亡细胞》团队）、Motion Twin 联合开发：1499 年巴黎遭魔物袭击，特雷弗·贝尔蒙特的女儿 Rose 持圣鞭进城追查。媒体评价其关卡设计与鞭击手感扎实，但在进度、音乐与 RPG 机制上做了意料之外的妥协。10 月 14 日发售、128 元，Steam 约 9500 篇评价，近 30 天 2981 篇 83% 好评，简中区 1390 篇仅 38% 好评。",
+     "recommendation": "《Castlevania: Belmont's Curse》：KONAMI × Evil Empire 的 1499 年巴黎银河城",
+     "game_ref": "Castlevania: Belmont's Curse",
+     "enrichment": {
+      "game_name": "Castlevania: Belmont's Curse",
+      "genre": "2D 探索型动作（银河城）",
+      "developer": "KONAMI × Evil Empire × Motion Twin",
+      "platforms": [
+       "Steam（Windows）",
+       "PS5",
+       "Xbox Series X/S",
+       "Switch"
+      ],
+      "price": "¥128.00",
+      "release_date": "已发售 · 2026年10月14日",
+      "steam_rating": "特别好评 · 近 30 天 83%（2981 篇）；简中区仅 38%（1390 篇）",
+      "steam_url": "https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4231820/6b65aec2c398006aea8b76e1463cc34d0e4ba68b/header.jpg?t=1793067818",
+      "youtube_video": null,
+      "description": "把《恶魔城》正统续作交给 KONAMI × Evil Empire（《死亡细胞》团队）× Motion Twin：1499 年的巴黎遭魔物袭击，特雷弗·贝尔蒙特的女儿 Rose 提着圣鞭「吸血鬼杀手」进城追查元凶。\n\n【核心玩法】2D 探索型动作：关卡纵横连通，鞭击在系列基础上加速，强调跑图速度与自由度；击败死神、美杜莎、卡蜜拉等传统头目，以及以贞德为首的新头目后，会被封印进 Rose 的塔罗牌，借「塔罗奥秘」获得法术与特殊动作。\n\n【构筑】7 类武器 + 多种魔导器自由搭配，按探索所得装备决定战斗风格。\n\n【美术与音乐】哥特基底上做更鲜明精致的画面；配乐与美术设定集单独发行（Midnight Edition 为游戏 + 数字原声/画廊 + 3 种游戏内特典）。\n\n【市场反馈】10 月 14 日发售、128 元；Steam 总评价约 9500 篇，近 30 天 2981 篇 83% 好评，但简中区 1390 篇只有 38% 好评——本地化、难度曲线与定价是主要争议点。\n\n【优势】关卡设计与鞭击手感被媒体认为达到系列水准；塔罗系统给头目战之后的成长开了新出口。\n【不足】进度、音乐与 RPG 机制被认为做了「意料之外的妥协」，简中口碑明显分化。\n\n【综合】老 IP + 独立团队的合作样本：动作底子扎实，但内容体量与本地化决定它能否留住非情怀玩家。",
+      "why_notable": "《死亡细胞》团队接手老 IP 的合作样本：动作与关卡达标，但简中区口碑只有 38% 好评",
+      "pcu": "未进当日 Steam Top 500 榜",
+      "current_players": "—",
+      "estimated_sales": "暂无官方数据",
+      "gi_summary": "「贝尔蒙特家银河城」套「1499 年巴黎」，KONAMI × Evil Empire × Motion Twin，Steam ¥128"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "生存恐怖",
+      "超能力",
+      "第三人称"
+     ],
+     "title": "《PSYCHO DEAD》定档 2027 年 4 月：超能力少女逃离秘密实验室的第三人称生存恐怖",
+     "en_title": "Stylish horror game PSYCHO DEAD launches in April 2027",
+     "full_text": "Stylish horror game PSYCHO DEAD launches in April 2027: https://t.co/salolth3Tx https://t.co/zesxXS2LOn",
+     "author": "Niche Gamer",
+     "date": "2026-11-22",
+     "likes": 18,
+     "views": 1060,
+     "link": "https://x.com/nichegamer/status/2124522022294229364",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXvRhVKXQAA0bDR.jpg"
+     },
+     "summary": "Niche Gamer 报道，第三人称生存恐怖游戏《PSYCHO DEAD》定档 2027 年 4 月 15 日：玩家扮演拥有超能力的少女，在致命追猎者的追杀下逃离一座秘密实验室。Steam 页面已上线，开发商与发行商同为 MOON CATALYST。",
+     "recommendation": "《PSYCHO DEAD》定档 2027 年 4 月：超能力少女逃离秘密实验室",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "卡牌构筑",
+      "恐怖",
+      "Behaviour 发行"
+     ],
+     "title": "《Mr. Magpie's Harmless Card Game》定档 2027 年 2 月：职场惊悚卡牌构筑，避开「杰瑞牌」往上爬",
+     "en_title": "Horror deckbuilder Mr. Magpie's Harmless Card Game launches in February 2027",
+     "full_text": "Horror deckbuilder Mr. Magpie's Harmless Card Game launches in February 2027: https://t.co/Uf3Gqqg37f https://t.co/NIBPrrkgc0",
+     "author": "Niche Gamer",
+     "date": "2026-11-22",
+     "likes": 3,
+     "views": 761,
+     "link": "https://x.com/nichegamer/status/2124524745928405020",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXvT_48XkAAQYPa.jpg"
+     },
+     "summary": "《Mr. Magpie's Harmless Card Game》（喜鹊先生贪心卡牌）定档 2027 年 2 月 18 日：超现实企业惊悚题材的卡牌构筑，为钱赌命、避开致命的「杰瑞牌」，靠「极致协同效应」在职场噩梦里往上爬。Giant Light Studios 开发，Behaviour Interactive 与 Gambit Digital 发行。",
+     "recommendation": "《喜鹊先生贪心卡牌》定档 2027 年 2 月：职场惊悚卡牌构筑",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "日式恐怖",
+      "第一人称",
+      "Switch 2"
+     ],
+     "title": "《破碎怪谈：米琪酱》确认移植 Switch 2：日本高中舞台的第一人称心理恐怖",
+     "en_title": "Psycho anime girl game BrokenLore: MIKI-CHAN confirms a Switch 2 port",
+     "full_text": "Psycho anime girl game BrokenLore: MIKI-CHAN confirms a Switch 2 port: https://t.co/FdQEiPvWAc https://t.co/M2ViKgBrgT",
+     "author": "Niche Gamer",
+     "date": "2026-11-22",
+     "likes": 7,
+     "views": 753,
+     "link": "https://x.com/nichegamer/status/2124532049390235798",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXvapAtWEAEpYH6.jpg"
+     },
+     "summary": "《BrokenLore: MIKI-CHAN》（破碎怪谈：米琪）确认推出 Switch 2 版本。游戏以日本高中为舞台，玩家与虚拟助手「米琪酱」共处，在嫉妒与执念扭曲现实的噩梦中求生；由 Serafini Productions 开发，Soft Source 参与发行，Steam 页面标注 2027 年。",
+     "recommendation": "《破碎怪谈：米琪酱》确认移植 Switch 2：日式高中心理恐怖",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "X · 媒体 @NicheGamer",
+     "tags": [
+      "二次元",
+      "恋爱",
+      "封测"
+     ],
+     "title": "《Chasing Kaleidorider》开启封闭测试：节奏感强烈的二次元少女恋爱游戏",
+     "en_title": "Heart-pumping anime girl romance game Chasing Kaleidorider gets a closed beta",
+     "full_text": "Heart-pumping anime girl romance game Chasing Kaleidorider gets a closed beta: https://t.co/Vi45RBqHTN https://t.co/xcYHGE1YgI",
+     "author": "Niche Gamer",
+     "date": "2026-11-22",
+     "likes": 81,
+     "views": 4658,
+     "link": "https://x.com/nichegamer/status/2124305319819976990",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2124305266401239040/pu/img/5YS02ib-_k-j4C6f.jpg",
+      "video_url": "https://x.com/nichegamer/status/2124305319819976990/video/1"
+     },
+     "summary": "Niche Gamer 报道，二次元少女恋爱游戏《Chasing Kaleidorider》开启封闭测试，公开片段强调「心跳加速」的恋爱体验与角色演出；目前未在 Steam 上架页面，平台与发售时间未公布。",
+     "recommendation": "《Chasing Kaleidorider》开启封测：二次元少女恋爱题材",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "X · 开发者 @0xKense1",
+     "tags": [
+      "Claude Code",
+      "Roblox",
+      "MCP"
+     ],
+     "title": "把 Claude Code 接进 Roblox Studio：14 个开源项目拼出「AI 做 Roblox 游戏」的完整工具链",
+     "en_title": "you're still writing every ROBLOX script and clicking through every playtest by hand while CLAUDE CODE CAN DO MOST OF IT inside Studio",
+     "full_text": "THIS IS F*CKING WILD.\n\nyou're still writing every ROBLOX script and clicking through every playtest by hand while CLAUDE CODE CAN DO MOST OF IT inside Studio.\n\nOne tool plugs Claude into Studio. One teaches it Luau. One syncs the code. One checks it. One saves your players' data.\n\nHere are 14 GitHub projects to build Roblox games with Claude Code:\n\nSTART HERE\n01 / Roblox Game Boilerplate\n02 / Roblox Studio MCP → Lets Claude run Luau in a live game, start playtests, read logs and take screenshots.\n03 / Awesome Gamedev Agent Skills → 79 game dev skills for 12 engines\n04 / Roblox Dev Skill → 14 guides so Claude writes current Luau\n05 / roblox-brain → Skill sets for networking, security, saving data, NPCs, camera and UI\n06 / Rojo → Syncs scripts from files into Studio\n07 / Rokit / 08 / Wally\n09 / luau-lsp / 10 / selene / 11 / StyLua\n12 / ProfileStore / 13 / Blink / 14 / Fusion",
+     "author": "Kensei",
+     "date": "2026-11-21",
+     "likes": 1003,
+     "views": 67758,
+     "link": "https://x.com/0xKense1/status/2124248203629306061",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2124244111339237376/img/BQ4eNRBNsYXaYokC.jpg",
+      "video_url": "https://x.com/0xKense1/status/2124248203629306061/video/1"
+     },
+     "summary": "Kensei 整理出用 Claude Code 做 Roblox 游戏的 14 个开源项目，按用途分组：Roblox Studio MCP 让 Claude 在运行中的游戏里跑 Luau、发起 playtest、读日志并截图；Roblox Dev Skill / roblox-brain 补齐 Luau 写法与联网、存档、NPC、UI 的技能包；Rojo / Rokit / Wally 负责把 Studio 变成可版本管理的工程；luau-lsp、selene、StyLua 做类型检查、lint 与格式化；ProfileStore、Blink、Fusion 提供存档、网络与 UI 库。",
+     "analysis": "这套组合的关键不是「AI 会写 Luau」，而是把闭环补全：代码在 Studio 外可编辑、进 Studio 可运行、运行后能被检查和回归。这恰好是国内团队评估 AI 接入时最常漏掉的一段——只算生成速度，不算校验与回滚成本。Roblox 先跑通，是因为它的工程化生态（Rojo/Wally/LSP）本来就齐全，换成 Unity/UE 要先补同样的基础设施。",
+     "recommendation": "14 个开源项目把 Claude Code 接进 Roblox Studio：写码、跑测、读日志全闭环",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "X · 3D 艺术家 @Stefan_3D_AI",
+     "tags": [
+      "AI 资产",
+      "Unity",
+      "程序化植被"
+     ],
+     "title": "一张照片生成 Unity 地形植被：Fable 5.2 流水线成本是 4 美元图片 + 8 小时算力",
+     "en_title": "Fable 5.2 Built a Workflow That Turns Photos Into AAA-Quality Foliage for Unity. Full Guide and Costs",
+     "full_text": "Fable 5.2 Built a Workflow That Turns Photos Into AAA-Quality Foliage for Unity. Full Guide and Costs\n\nThe idea: one photo in, game-ready plants in any art style out, painted onto Unity terrain with a brush.\nStack: Fable 5.2 via Hermes Agent, Nano Banana Pro, Meshy AI (Smart Low Poly, 2.5T), Blender, Unity 6 URP\n\nHighlights:\n- 18 plant models. A grass blade is 18 triangles and bends in the wind\n- Three LODs: a tulip is 500, 250 and 100 triangles\n- Normal and transmission maps, wind masks, a shared atlas\n- An ordinary daffodil photo became a usable 3D plant on the first pass\n\nCost: $4 of images at 1K, ~8 hours of Fable 5.2 on Extra High (Claude Max)",
+     "author": "Stefan 3D AI",
+     "date": "2026-11-21",
+     "likes": 1410,
+     "views": 43363,
+     "link": "https://x.com/Stefan_3D_AI/status/2124152437493969090",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2124152327565361152/img/ms8nq9PZyC4WVUS0.jpg",
+      "video_url": "https://x.com/Stefan_3D_AI/status/2124152437493969090/video/1"
+     },
+     "summary": "3D 艺术家公开一条 Unity 植被生产流水线：输入一张植物照片，输出任意美术风格的可用 3D 植物，再用笔刷铺到 Unity 地形上。栈为 Fable 5.2（经 Hermes Agent）+ Nano Banana Pro + Meshy AI（Smart Low Poly）+ Blender + Unity 6 URP；产出 18 个植物模型，草叶 18 个三角面且随风摆动，郁金香三档 LOD 为 500/250/100 面，含法线、透射贴图、风动遮罩与共享图集。成本：1K 图片约 4 美元 + 约 8 小时 Fable 5.2（Extra High，Claude Max）。",
+     "analysis": "这是少见把「AI 资产」讲到面数与 LOD 的案例——它没有停在「生成好看」，而是交付了引擎真正需要的规格：三角面预算、三档 LOD、法线与透射、共享图集。意义在于资产生产的第一道门槛（建模）被压低后，竞争点前移到「规格与风格一致性」，这恰恰是 AI 目前最不稳的部分，也是流水线里必须由人做 QA 的环节。",
+     "recommendation": "一张照片量产 Unity 植被：18 个模型、三档 LOD，成本 4 美元 + 8 小时算力"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI 侧：产能叙事让位给「闭环」与「反例」**\n一边是《AOD - Age of Dragon》：开发者辞职、把最后 1400 美元投进去，单人用 Opus 5.5 + Fable 5.2 几天搭出两倍于天际的世界并已回本；另一边是 Epic 的 AI 游戏 Jam——按人气排序，榜首被一款明确「未使用任何生成式 AI」的四天 meme 游戏拿走。工具侧更务实：14 个开源项目把 Claude Code 接进 Roblox Studio，补齐写码、playtest、日志与检查的闭环；Unity 植被流水线则把成本摊开讲——4 美元图片 + 8 小时算力，产出 18 个带三档 LOD 的植物模型。\n\n**行业侧：首发纪录与裁员焦虑同时出现**\nGTA 6 发售后，Rockstar North 动画程序员在《卫报》撰文称「很难不担心未来」，而 ASGC 统计今年已有超过 1.2 万名开发者失业；Rockstar 英国工作室正在就承认工会投票，与 IWGB 被解雇成员的仲裁刚结束、判决要等数周甚至数月。育碧同日在蒙特利尔与魁北克城裁撤 166 个岗位（约两地 4%），受影响者来自被取消或改向的项目。另一边，《魔兽世界：Forever》周活创 15 年新高，暴雪给出的 1516 万角色、14.8 亿任务、1.97 亿次死亡，是 MMO 老 IP 重制能力的一次硬数据。\n\n**AI 争议：从「技术选择」变成「信任问题」**\n《以撒的结合：Repentance+》与 GTA 6 同日上线的主题日常局，被玩家从曲目元数据扒出音乐来自 Suno；Edmund McMillen 称完全不知情，Nicalis 随即推补丁删除生成音乐文件，Steam 上出现差评潮。同一周，《Castlevania: Belmont's Curse》交出 83% 的近期好评、却在简中区只有 38%——老 IP 与新团队的合作，仍要过本地化与内容量这关。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
