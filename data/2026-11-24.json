@@ -1,0 +1,554 @@
+{
+  "date": "2026-11-24",
+  "meta": {
+    "raw_count": 181,
+    "filtered_count": 172,
+    "selected_count": 12,
+    "crawl_time": "2026-11-24 09:40"
+  },
+  "lede": "英伟达董事会全票恢复黄仁勋 CEO，公告罕见写明已听取美国政府高层意见；社区放出 GTA 6 可执行文件，PC 移植进入倒计时；Eurogamer 用一篇长评测把《Queen's Domain》推进 GOTY 讨论。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "Astra 6.2：28 个子智能体 6 小时造出可探索的机器人城市"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 1,
+      "hook": "《Hardpack Rally》：一个人做的街机拉力赛，12 月 16 日抢先体验"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "Astra 6.2：28 个子智能体 6 小时造出可探索的机器人城市\n没有剧本的开放世界：AI 村民自己开店、施舍、立约，物理法则由「神」AI 试出来\n阿里 Qwen 团队被外媒传大规模离职，官方未回应"
+    },
+    {
+      "id": "industry",
+      "text": "英伟达董事会全票恢复黄仁勋 CEO，公告写明已听取美国政府高层意见\nGTA 6 可执行文件被社区放出：PC 移植开始，预测 1-3 天能进游戏\n前《龙腾世纪》负责人：BioWare 关闭部分源于 EA 管理不善\nRockstar 前员工：老 GTA 对女性一直不好，Lucia 是迟到的正确"
+    },
+    {
+      "id": "indie",
+      "text": "《Queen's Domain》：把整座岛做成可飞跃的立体解谜，Steam 90% 好评\n《Hardpack Rally》：一个人做的街机拉力生涯，12 月 16 日抢先体验\n《Bee Shrimp Aquarium》：只用来观察蜜蜂虾的 3D 水族箱"
+    },
+    {
+      "id": "tools",
+      "text": "Unity 7 新图形后端 UGK：统一 DX12 / Vulkan / Metal，样例光追提升 62%\nSteam 预扣税 30% 可降到 10%：补填 TIN + 中美税收协定"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "X · 独立开发者 @anshuc",
+          "tags": [
+            "多智能体",
+            "程序化生成",
+            "浏览器 3D"
+          ],
+          "title": "Astra 6.2：28 个子智能体并行 6 小时，从零搭出一座可探索的机器人城市",
+          "en_title": "Every pixel of this was built from scratch by 28 Astra subagents in 6 hours. A massive, explorable robot city.",
+          "full_text": "ok maybe I have AI psychosis but everyone is wrong, Astra 6.2 is absolutely insane\n\nEvery pixel of this was built from scratch by 28 Astra subagents in 6 hours. A massive, explorable robot city.\n\n(workflow &amp; skill below) https://t.co/8LZPh5RPwH",
+          "author": "Anshu",
+          "date": "2026-11-22",
+          "likes": 1318,
+          "views": 71702,
+          "link": "https://x.com/anshuc/status/2124295323602542976",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2124295178743877632/img/WhSr2XohgahurawM.jpg",
+            "video_url": "https://x.com/anshuc/status/2124295323602542976/video/1"
+          },
+          "summary": "开发者 Anshu 称这座机器人城市「每一个像素」都由 Astra 6.2 的 28 个子智能体在 6 小时内从零构建，玩家可以在城市里自由行走探索；作者同时放出了 workflow 与 skill。该条 71,702 次浏览、1,318 赞。",
+          "analysis": "信息量不在画面，而在「并行编排」跑通：28 个 agent 同时写城市的不同区域，还能拼成风格一致的整体，说明多智能体分工 + 资产规范已经能越过单个长上下文的能力上限。代价在审查——6 小时的产物要人花多久才能变成游戏，推文没说，而这正是工业化能不能成立的门槛。",
+          "recommendation": "Astra 6.2：28 个子智能体 6 小时造出可探索的机器人城市——1318 赞",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "X · 中文博主 @xingzengji",
+          "tags": [
+            "AI 行业",
+            "人才流动",
+            "Qwen"
+          ],
+          "title": "阿里 Qwen 团队被外媒传「大规模离职」，中文 AI 圈一夜刷屏",
+          "en_title": "怎么外媒都在传正在发生大规模人员离职事件？？？",
+          "full_text": "卧槽，阿里 Qwen 团队发生了什么？😱\n\n怎么外媒都在传正在发生大规模人员离职事件？？？ https://t.co/qT4MAawbhY",
+          "author": "知一",
+          "date": "2026-11-23",
+          "likes": 587,
+          "views": 431778,
+          "link": "https://x.com/xingzengji/status/2124707258760306865",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HXxvGu7aUAAJ8Mi.jpg"
+          },
+          "summary": "中文博主知一称外媒正在流传阿里 Qwen 团队发生大规模人员离职，并向社区求证；截至抓取时阿里与 Qwen 官方均未回应，消息仍属传闻。该条在中文圈快速扩散，431,778 次浏览、177 条评论。",
+          "analysis": "对从业者的意义不在八卦，而在开源模型团队的「组织稳定性风险」：Qwen 是国内少数持续产出高质量开源权重的团队，核心成员一旦流动，下游依赖其微调与部署的项目都要重估路线。另一面是信息质量——外媒传闻加二手转述半天就能形成 40 万级曝光，官方沉默本身就是放大器。",
+          "recommendation": "阿里 Qwen 团队被外媒传大规模离职——单条 43 万浏览，官方未回应",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "X · 独立开发者 @GKCH2412",
+          "tags": [
+            "AI NPC",
+            "涌现叙事",
+            "端侧模型"
+          ],
+          "title": "日本开发者做「没有剧本」的中世纪开放世界：村民由端侧 AI 自主生活，连自然法则都由「神」AI 试出来",
+          "en_title": "中世ファンタジーのオープンワールドRPGを作ってます。テーマは「誰も台本を書いていない世界」です。",
+          "full_text": "中世ファンタジーのオープンワールドRPGを作ってます。テーマは「誰も台本を書いていない世界」です。\n\n普通のゲームのNPCは、決まった日課と決まったセリフで動きます。このゲームの村人はAIで、性格・記憶・人間関係から、次に何をするかを自分で決めます。話す言葉もその時の気分で生まれ、声も付きます。主人公が見ていない所でも暮らし続けます。AIはゲームの中に入っているので、ネット接続も事前の設定もいりません。\n\n経済も用意していません。渡しているのは、お金・食べ物・鉱石・木・作物などの資源と、「物は無くなる」「腹が減る、喉が渇く、限界が来ると死ぬ」ということだけ。値段表も店もレシピも仕事の決まりもありません。\n試しにそのまま放っておくと、鍛冶屋は修理屋を開き、パン屋は貧しい人にパンを施し、山賊は「薪を肉や薬草と交換する」店を始めました。「明日返す」という約束も生まれました。\n\nさらに、暑さ寒さや火・水が体にどう効くかといった自然の法則も、こちらでは決めません。世界をうろつく“神”のAIが、見たものから法則を考え、試してから世界に入れていきます。人の社会は住人が、自然の理は神が作る世界です。\n\nまだ神の作る法則がうまく噛み合わないことも多く、試行錯誤の最中です。",
+          "author": "げーきち",
+          "date": "2026-11-21",
+          "likes": 2739,
+          "views": 89781,
+          "link": "https://x.com/GKCH2412/status/2124208795945763299",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2124208527908712448/img/qYC59HzGq1lWBQqs.jpg",
+            "video_url": "https://x.com/GKCH2412/status/2124208795945763299/video/1"
+          },
+          "summary": "开发者げーきち 正在制作一款主题为「没有人写剧本的世界」的中世纪幻想开放世界 RPG。村民由本地运行的 AI 驱动，依据性格、记忆与人际关系自行决定下一步行动，台词按当时心情生成并配音，玩家不在场时生活也继续；游戏不设经济系统，只给资源与「东西会消耗、会饿会渴、到极限会死」的约束，结果是铁匠开了修理铺、面包师给穷人施舍、山贼做起以柴换肉和药草的交易。自然法则同样不预设，由在世界上游荡的「神」AI 观察、试错后再写入世界。",
+          "analysis": "野心不是「AI NPC 会说话」，而是把传统系统设计的抓手（价格表、商店、配方、职业规则）全部撤掉，只留资源与生理约束，让社会结构从 agent 互动里长出来。工程上最关键的一句是「AI 在游戏内运行，不需要联网也不需要预先配置」——端侧模型把成本从「每次对话一次 API 调用」变成「一次买断的推理预算」，这才让持续模拟在经济上可行。风险同样直接：涌现出的社会可能无趣、失序或难以调试，作者自己也承认「神」制定的法则经常对不上。",
+          "recommendation": "没有剧本的开放世界：AI 村民自己开店、施舍、立约，物理法则由「神」AI 试出来——2739 赞",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "X · 官方 @nvidianewsroom",
+          "tags": [
+            "NVIDIA",
+            "公司治理",
+            "黄仁勋"
+          ],
+          "title": "英伟达董事会全票恢复黄仁勋 CEO：公告罕见写明「已听取美国政府高层意见」",
+          "en_title": "NVIDIA Board reinstates Jensen Huang as President, CEO and Board Director.",
+          "full_text": "NVIDIA Board reinstates Jensen Huang as President, CEO and Board Director.\n\nRead the release: https://t.co/x4bnjiSVil",
+          "author": "NVIDIA Newsroom",
+          "date": "2026-11-23",
+          "likes": 232667,
+          "views": 12272946,
+          "link": "https://x.com/nvidianewsroom/status/2124865060397019480",
+          "media": null,
+          "summary": "NVIDIA 于 11 月 23 日宣布，黄仁勋即刻恢复担任总裁、CEO 与董事会成员，董事会一致通过；公告称决策过程中收到美国政府高层意见，并据此确信其复职不构成国家安全风险。临时 CEO Colette Kress 继续担任 CFO；针对黄仁勋遭外国情报活动的调查仍将继续，公司另设国家安全与出口管制委员会，并新设首席合规官一职。该推文 1,227 万浏览、23.2 万赞。",
+          "analysis": "两周内去职又回归，且把「政府高层意见」写进决策依据，这在大型科技公司的治理文件里极少见——它说明今天的 GPU 公司已经不再是纯商业实体，合规与出口管制成了 CEO 任免的变量之一。对游戏行业短期是政策连续性（显卡供给、驱动与 DLSS 路线不变），中长期要看新设的合规委员会如何影响对华出口与区域定价。",
+          "recommendation": "英伟达董事会全票恢复黄仁勋 CEO，公告写明已听取美国政府高层意见——232K 赞",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "X · 技术博主 @chasmmmmmmmmmmm",
+          "tags": [
+            "GTA 6",
+            "PC 移植",
+            "逆向工程"
+          ],
+          "title": "CYBERLEEK 放出 GTA 6 可执行文件：社区 PC 移植正式开始，但离能玩还有距离",
+          "en_title": "CYBERLEEK HAS OFFICIALLY RELEASED THE GTA 6 .EXE",
+          "full_text": "CYBERLEEK HAS OFFICIALLY RELEASED THE GTA 6 .EXE 🚨\n\nNote this does NOT mean you can simply boot it up immediately on a windows PC. If this is the real deal then people will need to get to work recomping it for PC in some way (various methods may be used).\n\nMy prediction: 1-3 Days to get in game and 2-4 weeks to start seeing higher than 30FPS on higher end hardware.",
+          "author": "chasm",
+          "date": "2026-11-23",
+          "likes": 2378,
+          "views": 99981,
+          "link": "https://x.com/chasmmmmmmmmmmm/status/2124880984298430486",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HX0X_j-WAAAQX2c.jpg"
+          },
+          "summary": "社区人士 CYBERLEEK 放出据称是 GTA 6 的可执行文件，多语种账号在半小时内跟进（西语一条 17.2 万浏览，称其把「火炬交给开源社区」）。技术博主 chasm 提醒：这不代表能直接在 Windows 上启动，仍需社区用各种方式重编译；他预测 1-3 天内能进游戏、2-4 周后高端硬件才可能出现 30FPS 以上。",
+          "analysis": "GTA 6 目前只有主机版，PC 玩家对「什么时候能玩」的焦虑被这条消息点燃。但从工程角度看，拿到可执行文件离可玩还差重编译、图形后端与输入层三座山，chasm 的时间预估反而更值得参考。风险同样明显：这类分发同时踩版权与恶意软件两条线，下载即运行的版本尤其危险。",
+          "recommendation": "GTA 6 可执行文件被社区放出：PC 移植开始，预测 1-3 天能进游戏",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "X · 媒体 @pcgamer",
+          "tags": [
+            "BioWare",
+            "工作室关闭",
+            "EA"
+          ],
+          "title": "前《龙腾世纪》负责人：BioWare 关闭「部分要归因于 EA 的管理不善」",
+          "en_title": "BioWare's closure is in part thanks to EA's mismanagement according to former Dragon Age boss",
+          "full_text": "BioWare's closure is in part thanks to EA's mismanagement according to former Dragon Age boss https://t.co/JgtUO6WWsi",
+          "author": "PC Gamer",
+          "date": "2026-11-23",
+          "likes": 32,
+          "views": 16276,
+          "link": "https://x.com/pcgamer/status/2124874629391257818",
+          "media": null,
+          "summary": "PC Gamer 报道，前《龙腾世纪》负责人将 BioWare 的关闭部分归因于 EA 的管理不善，报道把矛头指向发行商层面而非市场表现。",
+          "analysis": "「管理不善导致工作室关闭」是这几年反复出现的归因：发行商把工作室当产品线管理，砍掉中等体量项目、把团队拆去支援大项目，等作品失败时被追责的却是工作室本身。对仍在做叙事 RPG 的团队来说，BioWare 退场意味着这一品类的组织经验又断了一层。",
+          "recommendation": "前《龙腾世纪》负责人：BioWare 关闭部分源于 EA 管理不善"
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "X · 媒体 @pcgamer",
+          "tags": [
+            "GTA 6",
+            "女性主角",
+            "创作视角"
+          ],
+          "title": "Rockstar 前员工：老 GTA 对女性「一直不好」，Lucia 是「迟到的正确」",
+          "en_title": "Older GTAs weren't good to women, says Rockstar vet delighted by Lucia",
+          "full_text": "Older GTAs weren't good to women, says Rockstar vet delighted by Lucia https://t.co/DZbosISLyr",
+          "author": "PC Gamer",
+          "date": "2026-11-23",
+          "likes": 228,
+          "views": 40005,
+          "link": "https://x.com/pcgamer/status/2124840151998451753",
+          "media": null,
+          "summary": "PC Gamer 报道，一位 Rockstar 资深前员工评价系列过往对女性的处理「一直不好」，并对 GTA 6 首次启用可玩的女性主角 Lucia 表示「早就该这样」。该条收获 202 条评论，是当日 GTA 6 讨论里少见的创作侧视角。",
+          "analysis": "从「玩家能不能接受」转向「开发者怎么看自己做过的东西」，是 GTA 6 舆论里更有价值的一层。Lucia 不只是形象替换，它要求任务设计、对白与镜头语言同步改写——这也是老团队真正要补的课。",
+          "recommendation": "Rockstar 前员工：老 GTA 对女性一直不好，Lucia 是迟到的正确——202 条评论"
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "X · 媒体 @eurogamer",
+          "tags": [
+            "类魂",
+            "立体探索",
+            "Steam 90% 好评"
+          ],
+          "title": "《Queen's Domain》：Eurogamer 称它把整座岛做成「极度精巧的立体穿越谜题」",
+          "en_title": "A fascinating, richly rewarding action-RPG whose extraordinary island setting - a vastly intricate traversal puzzle of secrets and discoveries - inspires real wonder.",
+          "full_text": "A fascinating, richly rewarding action-RPG whose extraordinary island setting - a vastly intricate traversal puzzle of secrets and discoveries - inspires real wonder.\n\nHere's our Queen's Domain review:\n\nhttps://t.co/pjYXfxLTsz https://t.co/PaZMnzjQCX",
+          "author": "Eurogamer",
+          "date": "2026-11-23",
+          "likes": 415,
+          "views": 15815,
+          "link": "https://x.com/eurogamer/status/2124808931935682727",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HXzWYcFX0AA8bRz.jpg"
+          },
+          "summary": "Eurogamer 发布《Queen's Domain》评测（作者 Matt Wales，约 40 小时通关）：玩家扮演漂流到 Neasied 岛的王子 Beruim，寻找失踪的父王；作品明确受《King's Field》《黑暗之魂》影响，深层更像《塞尔达》与银河城。拿到「圣剑 Endu」后可用其长距离突进飞跃断崖，整座岛随之变成可自由飞跃的立体穿越谜题；100 多种敌人、约 100 把武器，升级随游玩被动增长，没有尸体回收，存档点由玩家决定何时刷新。评测称游戏在中期还有一次「音调突变」，后半段藏着更密集的秘密。Steam 售价 19.99 美元、10 月 30 日发售，9,765 条评价、90% 好评。",
+          "recommendation": "《Queen's Domain》：把整座岛做成可飞跃的立体解谜——Steam 9765 条评价、90% 好评",
+          "featured": true,
+          "game_ref": "Queen's Domain",
+          "enrichment": {
+            "game_name": "Queen's Domain",
+            "genre": "第一人称动作 RPG / 类魂 / 探索解谜",
+            "developer": "Freshly Baked Games LLC",
+            "publisher": "Future Friends Games",
+            "platforms": [
+              "Steam（Windows）",
+              "PS5",
+              "Switch 2",
+              "Xbox Series X|S"
+            ],
+            "price": "$19.99",
+            "release_date": "已发售 · 2026年10月30日",
+            "steam_rating": "90% 好评（9,765 条评价）",
+            "steam_url": "https://store.steampowered.com/app/1799840/Queens_Domain/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1799840/1a209734951f53b019ec9fa03f835def14f2a968/header.jpg?t=1795428375",
+            "youtube_video": "https://www.youtube.com/watch?v=NAoVHgAWzpI",
+            "description": "一款把「类魂战斗」和「塞尔达式立体探索」焊在一起的第一人称动作 RPG。玩家是漂流到 Neasied 岛的王子 Beruim，为寻找失踪的父王开始爬岛，越爬越发现这座岛本身就是一台巨大的机关。\n\n【核心玩法】战斗没有锁定、没有专门的翻滚键，回避靠走位与后撤，出手时机由耐力条决定——耐力越满伤害越高，挥空就是浪费。投掷物（飞刀、毒镖、追踪刃）是对付远程与拉怪的核心，回收有延迟，逼你每次出手都想清楚。中后期多种武器交替，形成「投掷 → 法术 → 蓄力斩 → 再投掷」的连段节奏。\n\n【世界设计】拿到圣剑 Endu 后，它的长距离突进可以把你甩过原本无法跨越的断崖，整座岛随即变成一个可飞跃的立体穿越谜题：远处的金字塔、石墓、高塔，只要你找得到合适的起跳点就都能抵达，而从每一个新落点又会展开两三条新支线。没有小地图指引，发现完全靠自己。\n\n【系统取舍】升级被动、武器独立成长、没有掉魂与尸体回收，存档点由你决定何时「休息刷新」，整体比传统类魂宽松，节奏更接近「一回合再来一次」。\n\n【优势】关卡密度极高，几乎每个「如果我从这里跳下去会怎样」的念头都有回应；100 多把武器各有机制；中期一次音调突变把后半段变成另一款游戏。\n【不足】后期部分谜题过于隐晦，需要大量回溯找线索；真正有分量的 Boss 战偏少；个别后期堆怪点难度陡增。\n\n【综合】不是又一个类魂仿作，而是把「探索」做成主玩法的一次成功实验：如果 2026 年只玩一款小工作室的动作 RPG，它是最有力的候选。",
+            "why_notable": "类魂外壳 + 塞尔达式立体探索：一座岛被做成一整块可以飞跃的机关，Eurogamer 用长评测把它推进 GOTY 讨论",
+            "pcu": "11,625（2026-11-24 Steam 峰值）",
+            "current_players": "—",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「第一人称类魂」套「整岛立体解谜」，Freshly Baked Games 开发、Future Friends 发行，Steam 售价 $19.99，90% 好评"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "X · 独立游戏推荐 @IndieGameJoe",
+          "tags": [
+            "单人开发",
+            "竞速",
+            "抢先体验"
+          ],
+          "title": "《Hardpack Rally》：一个人做的街机拉力生涯，从一辆旧双门车和一张便条开始",
+          "en_title": "This indie game is called Hardpack Rally, and it's a gorgeous little rally game being made by ONE developer!",
+          "full_text": "This indie game is called Hardpack Rally, and it's a gorgeous little rally game being made by ONE developer! https://t.co/RXonAG2lKj",
+          "author": "Indie Game Joe",
+          "date": "2026-11-23",
+          "likes": 2685,
+          "views": 72475,
+          "link": "https://x.com/IndieGameJoe/status/2124656204861346024",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2124655370878545922/img/EJ-S9iIrLpjuO5E8.jpg",
+            "video_url": "https://x.com/IndieGameJoe/status/2124656204861346024/video/1"
+          },
+          "summary": "Indie Game Joe 推荐《Hardpack Rally》：一款由单人开发的街机拉力游戏，被形容为「gorgeous little rally game」，单条 72,475 次浏览、2,685 赞。Steam 页面已上线并标注 12 月 16 日进入抢先体验，开发者为 Andre Gomes、发行 Little Top Creations，支持 Windows 与 Linux；商店简介写的是「一辆旧双门车 + Vern 留下的一张便条」起步的拉力生涯：四辆车、林间弯道/山口/雪地三种路况，追自己的幽灵车，还能自建赛道。",
+          "recommendation": "《Hardpack Rally》：一个人做的街机拉力生涯，12 月 16 日抢先体验——2685 赞",
+          "featured": true,
+          "game_ref": "Hardpack Rally",
+          "enrichment": {
+            "game_name": "Hardpack Rally",
+            "genre": "街机拉力 / 竞速生涯",
+            "developer": "Andre Gomes（单人开发）",
+            "publisher": "Little Top Creations",
+            "platforms": [
+              "Steam（Windows / Linux）"
+            ],
+            "price": "未公布",
+            "release_date": "2026年12月16日（抢先体验）",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5337420/Hardpack_Rally/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5337420/58dbbea7a9138301cba2070c693d4fb6d2cbd31e/header.jpg?t=1795313651",
+            "youtube_video": null,
+            "description": "一辆旧双门车、一张 Vern 留下的便条，就是整段拉力生涯的起点。这款由一名开发者独立完成的街机拉力游戏，把重点放在「开得爽」而不是拟真模拟上。\n\n【核心玩法】以生涯模式推进：在林间弯道、山口与雪地路况上驾驶四辆车，逐个赛段去挑战 Vern 留下的成绩；对手不是实时 AI，而是你自己的幽灵车——反复重跑同一赛段、把每个弯的角度磨进肌肉记忆，是核心循环。\n\n【自定义】除了跑赛段，玩家还能自己搭建拉力赛道，把「刷圈」和「造图」两条线接起来，延长单机寿命。\n\n【美术与手感】视频里的画面明显走「小体量但质感在线」的路线：雪地反光、车身姿态和扬尘都在水准之上，这也是它被独立游戏推荐账号单独拎出来讲的原因——很难相信是单人作品。\n\n【优势】单人所做的画面与手感完成度高；幽灵车追逐天然适合碎片时间刷成绩；自建赛道给了社区内容的基础。\n【风险】抢先体验意味着车辆与赛段数量仍在扩充；街机手感能否长期留住拟真拉力玩家，要看后续调校。\n\n【综合】12 月 16 日抢先体验上线，值得当作「一个人能做出什么级别的竞速游戏」的观察样本。",
+            "why_notable": "单人开发的拉力游戏，把「追幽灵车 + 自建赛道」做成核心循环，画面完成度远超体量预期",
+            "pcu": "暂未发售",
+            "current_players": "—",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「街机拉力生涯」套「追幽灵车 + 自建赛道」，Andre Gomes 单人开发、Little Top Creations 发行，12 月 16 日抢先体验"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "X · 媒体 @NicheGamer",
+          "tags": [
+            "治愈",
+            "模拟",
+            "水族箱"
+          ],
+          "title": "《Bee Shrimp Aquarium》：一个只用来「看虾」的 3D 水族箱，11 月 20 日已上线",
+          "en_title": "Cozy aquatic sim Bee Shrimp Aquarium is out now",
+          "full_text": "Cozy aquatic sim Bee Shrimp Aquarium is out now: https://t.co/f24YAOxtFv https://t.co/jza5EBYGRf",
+          "author": "Niche Gamer",
+          "date": "2026-11-22",
+          "likes": 15,
+          "views": 3269,
+          "link": "https://x.com/nichegamer/status/2124577384896585974",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2124577331859664896/pu/img/JEPMc36CAgOxInDv.jpg",
+            "video_url": "https://x.com/nichegamer/status/2124577384896585974/video/1"
+          },
+          "summary": "Niche Gamer 报道，治愈系水族模拟《Bee Shrimp Aquarium》已于 11 月 20 日发售：可以拉近镜头看蜜蜂虾啃藻、理须、游动，也能投喂看它们聚集；提供 12 种造景、可调灯光，并支持自定义虾的花纹、颜色与体型。开发者与发行商同为 TRANAZ，Steam 现价 4.24 美元（-15%），仅 Windows。",
+          "recommendation": "《Bee Shrimp Aquarium》：一个只用来观察蜜蜂虾的 3D 水族箱，折后 4.24 美元",
+          "game_ref": "Bee Shrimp Aquarium",
+          "enrichment": {
+            "game_name": "Bee Shrimp Aquarium",
+            "genre": "治愈系模拟 / 水族箱",
+            "developer": "TRANAZ（自研自发）",
+            "publisher": "TRANAZ",
+            "platforms": [
+              "Steam（Windows）"
+            ],
+            "price": "$4.24（-15%，原价 $4.99）",
+            "release_date": "已发售 · 2026年11月20日",
+            "steam_rating": "评价数不足",
+            "steam_url": "https://store.steampowered.com/app/5472200/Bee_Shrimp_Aquarium/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5472200/dfb152c6f8cf52bd789de5627ad148db828c8d30/header.jpg?t=1795179610",
+            "youtube_video": null,
+            "description": "一个几乎不设目标的 3D 水族箱：你唯一要做的事，就是把镜头拉近，看蜜蜂虾怎么啃藻、理须、游动。\n\n【核心玩法】投喂时虾会聚过来进食，其余时间自由活动；可微调灯光与视角，观察它们在不同造景里的行为。12 种造景可切换，虾的花纹、颜色、体型都能自定义。\n\n【定位】典型的「桌面陪伴型」小体量作品：没有胜负、没有进度条，卖点是低压力与视觉细节，和《Viridi》《Aquarium Simulator》一类同属一个需求。\n\n【优势】价格极低（折后 4.24 美元），题材精准击中养虾/水族爱好者；3D 模型与行为细节做得比同类认真。\n【不足】内容体量有限，缺少长期目标；只支持 Windows。\n\n【综合】不是给所有人做的游戏，但对「只想安静看虾」的玩家，它把这件事做得足够好。",
+            "why_notable": "把「观察」本身做成玩法：极低定价 + 精确题材，是治愈系小品的一种典型活法",
+            "pcu": "—",
+            "current_players": "—",
+            "estimated_sales": "暂无官方数据",
+            "gi_summary": "「水族箱观察」套「低压力治愈」，TRANAZ 自研自发，Steam 折后 $4.24"
+          }
+        },
+        {
+          "source": "X · 媒体 @NicheGamer",
+          "tags": [
+            "像素",
+            "经营模拟",
+            "怪物"
+          ],
+          "title": "《Monsterest》：给怪物开旅馆的像素经营模拟",
+          "en_title": "Monsterest is a cute pixel inn management sim, themed around monsters!",
+          "full_text": "Monsterest is a cute pixel inn management sim, themed around monsters!\n\nhttps://t.co/3t1zYCgSBh \n\nManage a monster-friendly inn, chop down trees and make furniture to decorate rooms for the monster guests~ Hunt, fish, and explore with monster friends! https://t.co/NCcbWtHPnf",
+          "author": "Niche Gamer",
+          "date": "2026-11-23",
+          "likes": 4,
+          "views": 1184,
+          "link": "https://x.com/nichegamer/status/2124869517381681389",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2124869496905109504/pu/img/SnxgXLq3EGyRp-wT.jpg",
+            "video_url": "https://x.com/nichegamer/status/2124869517381681389/video/1"
+          },
+          "summary": "Niche Gamer 介绍《Monsterest》：一款以怪物为主题的可爱像素旅馆经营模拟，玩家经营一家对怪物友好的旅馆，砍树、做家具、布置客房，和怪物朋友一起狩猎、钓鱼与探索。",
+          "recommendation": "《Monsterest》：给怪物开旅馆、砍树做家具的像素经营模拟",
+          "unselected": true,
+          "idx": "新游参考 01"
+        },
+        {
+          "source": "X · 媒体 @NicheGamer",
+          "tags": [
+            "恐怖",
+            "教堂",
+            "实机预告"
+          ],
+          "title": "《Shadow Sacrament: The Roots of Evil》放出新实机预告：阴森教堂里的邪典恐怖",
+          "en_title": "Shadow Sacrament: The Roots of Evil got a spooky new gameplay trailer: https://t.co/gAtEa5QzAo https://t.co/0QHK5oxZEM",
+          "full_text": "Shadow Sacrament: The Roots of Evil got a spooky new gameplay trailer: https://t.co/gAtEa5QzAo https://t.co/0QHK5oxZEM",
+          "author": "Niche Gamer",
+          "date": "2026-11-23",
+          "likes": 6,
+          "views": 875,
+          "link": "https://x.com/nichegamer/status/2124884741837000845",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HX0baaGXIAAh-vL.jpg"
+          },
+          "summary": "Niche Gamer 报道，《Shadow Sacrament: The Roots of Evil》放出一段新的实机预告，延续阴森教堂与邪典仪式题材的恐怖氛围。",
+          "recommendation": "《Shadow Sacrament》新实机预告：阴森教堂题材恐怖游戏",
+          "unselected": true,
+          "idx": "新游参考 02"
+        },
+        {
+          "source": "X · 媒体 @NicheGamer",
+          "tags": [
+            "JRPG",
+            "复刻",
+            "合集"
+          ],
+          "title": "《Dual Orb Collection》公布：经典 JRPG 合集复刻",
+          "en_title": "Classic JRPG re-release Dual Orb Collection was announced! https://t.co/cn6yulvJHn https://t.co/n5dQo9EPTb",
+          "full_text": "Classic JRPG re-release Dual Orb Collection was announced! https://t.co/cn6yulvJHn https://t.co/n5dQo9EPTb",
+          "author": "Niche Gamer",
+          "date": "2026-11-23",
+          "likes": 12,
+          "views": 1066,
+          "link": "https://x.com/nichegamer/status/2124869952200949783",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HX0N9htWoAAvac8.jpg"
+          },
+          "summary": "Niche Gamer 报道，经典 JRPG 复刻合集《Dual Orb Collection》正式公布，把这一系列旧作重新带回现代平台。",
+          "recommendation": "《Dual Orb Collection》公布：经典 JRPG 合集复刻",
+          "unselected": true,
+          "idx": "新游参考 03"
+        },
+        {
+          "source": "X · 媒体 @NicheGamer",
+          "tags": [
+            "肉鸽",
+            "联机",
+            "Switch"
+          ],
+          "title": "《Temtem: Swarm》2027 年 1 月登陆 Switch",
+          "en_title": "Temtem: Swarm launches for Switch in January 2027: https://t.co/iksWzpAsPA https://t.co/U5MJBVthp1",
+          "full_text": "Temtem: Swarm launches for Switch in January 2027: https://t.co/iksWzpAsPA https://t.co/U5MJBVthp1",
+          "author": "Niche Gamer",
+          "date": "2026-11-23",
+          "likes": 4,
+          "views": 1160,
+          "link": "https://x.com/nichegamer/status/2124869580614983698",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HX0Nn3WW8AA0gGZ.jpg"
+          },
+          "summary": "Niche Gamer 报道，Temtem 衍生的生存肉鸽《Temtem: Swarm》将于 2027 年 1 月登陆 Switch。",
+          "recommendation": "《Temtem: Swarm》2027 年 1 月登陆 Switch",
+          "unselected": true,
+          "idx": "新游参考 04"
+        },
+        {
+          "source": "X · 媒体 @NicheGamer",
+          "tags": [
+            "FPS",
+            "beta",
+            "老游戏"
+          ],
+          "title": "《Serious Sam Fusion》结束近十年 beta",
+          "en_title": "Serious Sam Fusion leaves beta after nearly a decade: https://t.co/I8CaZAsJ7K https://t.co/XqaUOjN6Js",
+          "full_text": "Serious Sam Fusion leaves beta after nearly a decade: https://t.co/I8CaZAsJ7K https://t.co/XqaUOjN6Js",
+          "author": "Niche Gamer",
+          "date": "2026-11-23",
+          "likes": 13,
+          "views": 1085,
+          "link": "https://x.com/nichegamer/status/2124870543090258268",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HX0Of5pX0AAnNX2.jpg"
+          },
+          "summary": "Niche Gamer 报道，合集版《Serious Sam Fusion》在 beta 状态近十年后终于转正。",
+          "recommendation": "《Serious Sam Fusion》结束近十年 beta",
+          "unselected": true,
+          "idx": "新游参考 05"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "X · 官方 @unitygames",
+          "tags": [
+            "Unity 7",
+            "图形后端",
+            "光追"
+          ],
+          "title": "Unity 7 将换用新图形后端 UGK：统一面向 DX12 / Vulkan / Metal，官方样例光追提升最多 62%",
+          "en_title": "In Unity 7, we're introducing a new, modern graphics backend built for DirectX 12, Vulkan, and Metal.",
+          "full_text": "In Unity 7, we’re introducing a new, modern graphics backend built for DirectX 12, Vulkan, and Metal.\n\nUGK maximizes modern GPU architectures to deliver higher stability, and longer player battery life. In our Atrio sample scene, we observed up to a 62% ray tracing boost with UGK.\n\n🔗 Learn more: https://t.co/E2B4uvnrg2",
+          "author": "Unity for Games",
+          "date": "2026-11-23",
+          "likes": 454,
+          "views": 21969,
+          "link": "https://x.com/unitygames/status/2124850604182757555",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2124850517201289216/pu/img/mHmUTp0AKSX-pnYb.jpg",
+            "video_url": "https://x.com/unitygames/status/2124850604182757555/video/1"
+          },
+          "summary": "Unity 官方宣布 Unity 7 将引入名为 UGK 的新一代图形后端，面向 DirectX 12、Vulkan 与 Metal，官方称其能充分利用现代 GPU 架构，带来更高稳定性与更长的手持设备续航；在 Atrio 示例场景中，UGK 的光线追踪性能提升最高达 62%。",
+          "analysis": "换掉自研多年的旧渲染后端，是「自研管线 vs 通用图形 API」这道题的重新作答。对团队最实际的影响是升级迁移成本与移动端功耗——官方把「续航」和「光追」并列，说明目标不只是画面，而是移动与掌机市场。62% 来自自家样例场景，真实项目收益还要等实测。",
+          "recommendation": "Unity 7 新图形后端 UGK：统一 DX12 / Vulkan / Metal，官方样例光追提升 62%",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "X · 开发者 @DFarm_club",
+          "tags": [
+            "Steam 上架",
+            "税务",
+            "独立开发"
+          ],
+          "title": "中国开发者上架 Steam 被预扣 30% 税：补填 TIN 并申请中美税收协定后降到 10%",
+          "en_title": "等了好久的Steam开发者审核刚下来，结果发现预扣税是30%！",
+          "full_text": "等了好久的Steam开发者审核刚下来，结果发现预扣税是30%！\n\n原来是税务问卷里没填TIN。\n\n中国开发者把身份证号当外国TIN填上、申请中美税收协定，就能降到10%：美区每卖$100，到手从$49变$63。\n\n改之前已扣的税不退，准备上架的朋友记得先检查！\n\n原以为又要等45个工作日，结果几分钟就更新好了！ https://t.co/Ndn3HvX7xA",
+          "author": "DFarm",
+          "date": "2026-11-23",
+          "likes": 36,
+          "views": 3623,
+          "link": "https://x.com/DFarm_club/status/2124810469542441075",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HXzW6YSaoAAM46P.png"
+          },
+          "summary": "开发者 DFarm 分享亲身经历：Steam 开发者审核通过后发现预扣税为 30%，原因是税务问卷里没有填写 TIN；把身份证号作为外国 TIN 填入并申请中美税收协定后，税率降到 10%——美区每卖出 100 美元，到手从 49 美元变成 63 美元。作者提醒修改前已被扣的税不会退，原本以为要等 45 个工作日，实际几分钟就更新完成。",
+          "analysis": "这是每个中国独立开发者上架前都会撞上的一次性成本，而平台不会主动提醒。信息点很具体：30% 到 10% 的差额接近售价的四分之一，早改一天就少亏一天；「已扣不退」则意味着要在正式开卖前把问卷填完。",
+          "recommendation": "Steam 预扣税 30% 可降到 10%：中国开发者补填 TIN + 中美税收协定，几分钟生效"
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI 侧：多智能体开始交付「完整场景」**\nAstra 6.2 的 28 个子智能体用 6 小时从零搭出一座可在浏览器里自由行走的机器人城市，作者顺手放出了 workflow 与 skill——真正的信号是「并行分工 + 统一资产规范」已经能拼出风格一致的大场景。另一头，日本开发者げーきち 把「不写剧本」推到极致：村民由端侧 AI 自主生活，经济系统整个不设，只给资源与生理约束，结果铁匠开修理铺、面包师施舍、山贼做起以柴换肉的交易。而阿里 Qwen 团队被外媒传大规模离职，官方尚未回应，提醒着开源模型的供给并不稳定。\n\n**行业侧：黄仁勋回归与 GTA 6 的溢出效应**\nNVIDIA 董事会全票恢复黄仁勋 CEO，公告罕见地把「收到美国政府高层意见」写进决策依据，并同步新设国家安全与出口管制委员会、增补首席合规官——GPU 公司已经完全按战略资产管理。GTA 6 的溢出仍在继续：社区放出可执行文件，PC 移植进入倒计时，但技术博主提醒离能玩还有重编译与图形后端的距离；Rockstar 前员工评价 Lucia 是「迟到的正确」；BioWare 的关闭则被前《龙腾世纪》负责人部分归因于 EA 的管理不善。\n\n**新游侧：一座岛与一条雪道**\nEurogamer 用一篇 40 小时通关的长评测把《Queen's Domain》推到 GOTY 讨论里：圣剑突进把整座岛变成可飞跃的立体解谜，Steam 9,765 条评价、90% 好评。单人开发的《Hardpack Rally》用「追自己的幽灵车 + 自建赛道」撑起街机拉力生涯，12 月 16 日抢先体验；《Bee Shrimp Aquarium》则是另一种极端——一个只用来安静看虾的 3D 水族箱。\n\n**工具侧：Unity 7 换后端，开发者补税课**\nUnity 7 将引入 UGK 新图形后端，统一面向 DX12 / Vulkan / Metal，官方称 Atrio 样例场景光追提升最高 62%，并把「手持设备续航」与画面并列作为卖点。Steam 侧则是一条容易被忽略的实操：中国开发者补填 TIN 并申请中美税收协定，预扣税可从 30% 降到 10%，且已扣部分不退，上架前就要处理。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
