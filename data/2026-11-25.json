@@ -1,0 +1,540 @@
+{
+  "date": "2026-11-25",
+  "meta": {
+    "raw_count": 232,
+    "filtered_count": 174,
+    "selected_count": 12,
+    "crawl_time": "2026-11-25 09:33"
+  },
+  "lede": "索尼公布 GTA 6 在 PS5 已有 3,900 万独立玩家、首日跨平台 3,250 万份；零开发经验的单人作者用 AI 做出《Slotbound》，上线一周卖出 20 万份；Xbox 次世代曾被评估取消付费联机，却在量产阶段可能反悔。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "零开发经验单人作者用 AI 做出《Slotbound》，上线一周 20 万份、约 18 亿韩元"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "开卡丁车抢麻将牌凑牌型——《Mahjong Kart》4 人派对竞速"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "索尼：GTA 6 在 PS5 已有 3,900 万独立玩家，创 PlayStation 首发纪录"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "零开发经验的单人作者用 AI 做出《Slotbound》，上线一周 20 万份、约 18 亿韩元\n6,528 美元 Claude 代币 + 一周：单人用 AI 在 UE5.9 做出 5 种族、16 任务、6 坐骑\nGarry Tan 引 Ramp 数据：AI 推理成本在跌、用量停滞，杰文斯悖论暂时失效"
+    },
+    {
+      "id": "industry",
+      "text": "索尼：GTA 6 在 PS5 吸引 3,900 万独立玩家，首日跨平台 3,250 万份\nRockstar 下架 Project Leonida，社区称 20 小时内把 GTA 6 跑上 PC\nXbox Helix 曾被评估取消付费联机，量产阶段可能反悔\nROB RUN 封禁 20 万账号，拟上硬件封禁与内购/时长分池"
+    },
+    {
+      "id": "indie",
+      "text": "《Mahjong Kart》：麻将凑牌 × 卡丁车竞速，2027 年 1 月 7 日上线\n《Saints of Swagger》：《Mortal Sin》作者的 4 人合作 roguelike\n《WTF - Waifu Tactical Force》：12 月 15 日开放限时 Demo"
+    },
+    {
+      "id": "tools",
+      "text": "Unity Asset Store 开放 CLI：AI agent 可检索、下载并部署资产进场景\nNVIDIA 开源 MotionBricks：走跑蹲转身与交互动作可实时 AI 生成"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "인벤 · 韩媒",
+          "tags": [
+            "AI开发",
+            "独立游戏",
+            "销量"
+          ],
+          "title": "《Slotbound 转运军团》：零开发经验的单人作者用 AI 编程，上线一周卖出 20 万份",
+          "en_title": "게임 개발 경험이 없던 1인 개발자 김민 대표가 AI를 활용해 만든 '슬롯바운드'가 스팀 출시 일주일 만에 판매량 20만 장을 돌파했습니다.",
+          "full_text": "게임 개발 경험이 없던 1인 개발자 김민 대표가 AI를 활용해 만든 '슬롯바운드'가 스팀 출시 일주일 만에 판매량 20만 장을 돌파했습니다.\n\nOptima Arch가 개발한 이 게임은 출시 일주일 만에 약 18억 원의 매출을 기록했으며, 김 대표는 AI 코딩 도구를 활용해 개발 문턱을 낮추고 핵심 재미 구현에 집중해 성과를 거뒀다고 밝혔습니다. https://t.co/wO487AyA0S",
+          "author": "inventeam",
+          "date": "2026-11-24",
+          "likes": 319,
+          "views": 38225,
+          "link": "https://x.com/inventeam/status/2125110506667298875",
+          "media": {
+            "type": "image",
+            "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4459590/560f439f789caa08634fbf9ff462c73bf06fbf41/header.jpg"
+          },
+          "summary": "韩国游戏媒体 인벤 报道：从没有游戏开发经验的单人开发者金敏（Optima Arch）用 AI 编程工具做出 Roguelike 自动战斗防守游戏《Slotbound 转运军团》，Steam 上线一周销量突破 20 万份、营收约 18 亿韩元（约 120 万美元）。作者自述做法是把 AI 当成降低编码门槛的工具，把精力集中投在「核心乐趣」的实现上。",
+          "analysis": "「能不能做出来」的门槛被压到接近零之后，胜负手回到玩法判断与迭代速度：同样的模型谁都在用，差距来自对核心循环的取舍和对反馈的响应。对团队而言，这更像一条新的成本曲线——用 AI 换人力，但换不掉品味。",
+          "recommendation": "零开发经验单人作者用 AI 做出《Slotbound》，上线一周 20 万份、约 18 亿韩元",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "个人开发者 · X",
+          "tags": [
+            "AI生产管线",
+            "UE5.9",
+            "成本"
+          ],
+          "title": "6,528 美元 Claude 代币 + 一周：单人用 AI 在 UE5.9 里做出 5 个种族、16 个任务、6 种坐骑",
+          "en_title": "This is what $6,528 of Claude Fable 5.2 tokens can create in ONE week.",
+          "full_text": "This is what $6,528 of Claude Fable 5.2 tokens can create in ONE week.\n\nI had to run 5 Claude Ultra subscriptions plus a ChatGPT one on a cloud PC with 24GB VRAM to get it done.\n\nFrom scratch in the new Unreal Engine 5.9: five races (each male and female), 16 quests with combat, AI players, and 6 mounts with foot IK and gliders to fly🎮\n\nArt and sound made with Higgsfield MCP, including 119 3D models on Tripo and 1000+ images.",
+          "author": "Stefan_3D_AI",
+          "date": "2026-11-24",
+          "likes": 1126,
+          "views": 100814,
+          "link": "https://x.com/Stefan_3D_AI/status/2125143321098264592",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125142257435279360/img/hj3ZaLrvxXb2RipC.jpg",
+            "video_url": "https://x.com/Stefan_3D_AI/status/2125143321098264592/video/1"
+          },
+          "summary": "开发者 Stefan 花 6,528 美元的 Claude Fable 5.2 代币（5 个 Claude Ultra 订阅 + 1 个 ChatGPT 订阅，跑在 24GB 显存的云 PC 上），一周内在虚幻引擎 5.9 里从零做出 5 个种族（男女各一）、16 个含战斗的任务、AI 玩家、6 种带足部 IK 与滑翔翼的坐骑；美术与音效用 Higgsfield MCP 生成，含 Tripo 上 119 个 3D 模型与 1000+ 张图。",
+          "analysis": "把 AI 生产成本明码标价之后，一个可玩的 3A 风格原型约等于四万多人民币——这给独立团队一条新的自研工具链基准线，也给中型团队一个「原型验证可以压缩到周级」的参照。真正的瓶颈从产能转向评审与取舍：一周能产出的东西，已经超过一周能看清的东西。",
+          "recommendation": "6,528 美元 Claude 代币 + 一周，单人做出 UE5.9 多任务开放原型",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Y Combinator · 投资人",
+          "tags": [
+            "AI经济学",
+            "推理成本",
+            "采用曲线"
+          ],
+          "title": "Garry Tan：AI 的杰文斯悖论暂时失效——单位智能成本在跌，用量却没跟上",
+          "en_title": "Ramp credit card spending data suggests recently Jevon’s Paradox broke for AI.",
+          "full_text": "Ramp credit card spending data suggests recently Jevon’s Paradox broke for AI. \n\nAI inference per unit of intelligence keeps coming down but usage is not spiking up accordingly of late https://t.co/L8yxLOsSpf",
+          "author": "garrytan",
+          "date": "2026-11-24",
+          "likes": 280,
+          "views": 51262,
+          "link": "https://x.com/garrytan/status/2125239920545366347",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125239890036101120/img/v0jynvSGOd1Lxgfy.jpg",
+            "video_url": "https://x.com/garrytan/status/2125239920545366347/video/1"
+          },
+          "summary": "YC 合伙人 Garry Tan 引用 Ramp 的信用卡消费数据指出：AI 单位智能的推理成本持续下降，但近期使用量并没有相应暴涨，杰文斯悖论（成本下降带来用量增长）在 AI 上暂时失效。他在后续推文里补了两个解释：模型能力已经超出部分客户的实际需求；社会吸收技术变革的速度触顶，agent 系统复杂度上升，让早期采用者与大众之间出现断层。",
+          "analysis": "对游戏公司来说，「模型更强」不再自动等于「用量更多」，采购假设要按流程改造成本来算；真正的卡点是组织吸收能力，而不是 token 单价。能替客户跨过这道断层的工具与服务，是当下更确定的生意。",
+          "recommendation": "Garry Tan 引 Ramp 数据：AI 推理成本在跌，用量却停滞——杰文斯悖论暂时失效",
+          "featured": null
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "Sony / Eurogamer · 平台数据",
+          "tags": [
+            "GTA6",
+            "首发纪录",
+            "平台数据"
+          ],
+          "title": "索尼：GTA 6 在 PS5 上吸引 3,900 万独立玩家，首日跨平台 3,250 万份",
+          "en_title": "Sony's revealed staggering statistics relating to the popularity of Grand Theft Auto on PlayStation 5, not least that more than 39 million unique people have played the game there. That's more than the official GTA 6 day-one sales tally of 32.5m copies across all platforms.",
+          "full_text": "Sony's revealed staggering statistics relating to the popularity of Grand Theft Auto on PlayStation 5, not least that more than 39 million unique people have played the game there. That's more than the official GTA 6 day-one sales tally of 32.5m copies across all platforms. https://t.co/bM3jPEq9eK",
+          "author": "eurogamer",
+          "date": "2026-11-24",
+          "likes": 9,
+          "views": 3683,
+          "link": "https://x.com/eurogamer/status/2125190215190933975",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HX4xPP-XYAAeaEi.jpg"
+          },
+          "summary": "索尼公布 GTA 6 在 PlayStation 5 上的数据：已有超过 3,900 万名独立玩家玩过该作，超过官方公布的跨平台首日 3,250 万份销量；PC Gamer 另引索尼说法称其创下「PlayStation 史上任何游戏最高同时在线人数」。玩家数大于销量，通常来自同一台主机上的多账号与实体盘流转。",
+          "analysis": "首日 3,250 万份已接近 GTA5 用一个多月才达到的量级，说明主机端玩家密度被单款产品拉到了极限。这既解释了 Rockstar 为何敢于把 PC 版排在后面，也让 PlayStation 的网络与商店在这次压力测试里成了隐形赢家。",
+          "recommendation": "索尼：GTA 6 在 PS5 已有 3,900 万独立玩家，首日跨平台 3,250 万份",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer · 版权与逆向",
+          "tags": [
+            "GTA6",
+            "PC移植",
+            "下架"
+          ],
+          "title": "Rockstar 下架 Project Leonida：社区称 20 小时内已把 GTA 6 跑上 PC 第三人称实机",
+          "en_title": "Unofficial GTA 6 PC port effort suffers setback as Rockstar seemingly takes down Project Leonida, one of the internet's biggest recompilation projects",
+          "full_text": "Unofficial GTA 6 PC port effort suffers setback as Rockstar seemingly takes down Project Leonida, one of the internet's biggest recompilation projects\n\nhttps://t.co/OUDs4wOWSM https://t.co/U613Q0FV1k",
+          "author": "eurogamer",
+          "date": "2026-11-24",
+          "likes": 25,
+          "views": 5304,
+          "link": "https://x.com/eurogamer/status/2125223261378326940",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HX5O57eaAAE---Z.jpg"
+          },
+          "summary": "Eurogamer 报道：Rockstar 似乎已下架社区规模最大的 GTA 6 重编译项目 Project Leonida。此前泄漏者 CyberLeek 放出了近乎完整的 Xbox 版本与可执行文件，社区侧的时间线是 0h 泄漏、3h 首个黑屏、12h 菜单 45FPS、14h 首个 3D 过场、20h 第三人称实机可操作；另有开发者用 M5 Max 笔记本推进 Mac 版，进度一度快过 Windows 版。",
+          "analysis": "厂商的法务速度和社区的逆向速度同时在刷新纪录：一边是定点清除，一边是 24 小时内从可执行文件跑出可玩帧。这轮拉锯说明「主机限时独占挡不住 PC 版预期」，也提醒做加密与反作弊的团队，重编译社区已经必须被建模成对手。",
+          "recommendation": "Rockstar 下架 Project Leonida，社区仍称 20 小时内把 GTA 6 跑上 PC",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Windows Central / Eurogamer · 平台政策",
+          "tags": [
+            "Xbox",
+            "付费联机",
+            "次世代"
+          ],
+          "title": "报道称 Xbox 次世代 Helix 原计划取消付费联机，量产阶段又可能反悔",
+          "en_title": "A new report from Windows Central details how Xbox was reportedly looking into removing the paywall that prevents players without Xbox Live from playing online games, only to potentially renege on its decision sometime during production of the next-gen device.",
+          "full_text": "A new report from Windows Central details how Xbox was reportedly looking into removing the paywall that prevents players without Xbox Live from playing online games, only to potentially renege on its decision sometime during production of the next-gen device. https://t.co/ghOd4gB7Qv",
+          "author": "eurogamer",
+          "date": "2026-11-24",
+          "likes": 22,
+          "views": 5178,
+          "link": "https://x.com/eurogamer/status/2125205320855085235",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HX4--c6WoAAZMJB.jpg"
+          },
+          "summary": "Windows Central 报告称，微软在规划次世代 Xbox「Helix」时曾认真评估取消付费联机墙，让没有 Xbox Live 订阅的玩家也能联机，但在设备量产阶段的某个时间点又可能放弃该决定。Polygon、GameSpot 等多家媒体同日跟进。",
+          "analysis": "付费联机是主机最稳的现金流之一，也是 PC 与手机时代最被诟病的收费。「评估过又收回」说明内部对用免费联机换装机量仍有分歧。若次世代最终保留付费墙，来自云游戏与 PC 掌机的替代压力只会更大。",
+          "recommendation": "Xbox Helix 曾被评估取消付费联机，却在量产阶段可能反悔",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "玩家社区 · 运营",
+          "tags": [
+            "反外挂",
+            "封号",
+            "竞技"
+          ],
+          "title": "ROB RUN 反外挂升级：封禁超 20 万账号，开始探索硬件封禁与独立匹配池",
+          "en_title": "ROB RUN introduces new Anti-Cheat measures",
+          "full_text": "ROB RUN introduces new Anti-Cheat measures\n\n- Over 200,000 accounts banned\n- Developing in-house cheat-detection tools\n- Expanding the anti-cheat team & working with EAC team\n- Devs exploring hardware bans\n- New restricted servers with separate matchmaking\n- Access based on minimum jail time or total in-game purchases\n- Some gameplay mechanics temporarily delayed https://t.co/uCjyuuCaGy",
+          "author": "AerialZer0",
+          "date": "2026-11-23",
+          "likes": 573,
+          "views": 135931,
+          "link": "https://x.com/AerialZer0/status/2124924766155084110",
+          "media": null,
+          "summary": "社区整理的 ROB RUN 反外挂措施：已封禁超过 20 万个账号；正在开发自研作弊检测工具、扩充反作弊团队并与 EAC 团队合作；探索硬件封禁；上线独立匹配的受限服务器；按最低服刑时长或累计内购决定准入；部分玩法机制暂时延后。",
+          "analysis": "ROB RUN 凭 43 万 PCU 挤进 Steam 前四，作弊问题随之放大。「硬件封禁 + 按时长或付费分池」是把治理成本部分转嫁给玩家的激进做法，但对免费竞技产品而言，可能是目前少数能同时保住留存与公平性的组合。",
+          "recommendation": "ROB RUN 封禁 20 万账号，拟上硬件封禁与按内购/时长分池",
+          "featured": null
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "开发者 · 日本独立",
+          "tags": [
+            "麻将",
+            "卡丁车",
+            "派对游戏"
+          ],
+          "title": "《Mahjong Kart 麻雀カート》：开卡丁车抢麻将牌凑牌型的 4 人派对竞速，2027 年 1 月 7 日上线",
+          "en_title": "麻雀とカートレースを融合させたパーティーゲーム「Mahjong Kart (麻雀カート)」のSteamストアページをオープンしました！来年1月発売予定です！",
+          "full_text": "麻雀とカートレースを融合させたパーティーゲーム「Mahjong Kart (麻雀カート)」のSteamストアページをオープンしました！\n来年1月発売予定です！ウィッシュリストへの登録よろしくお願いします！\nリンクは👇️ https://t.co/Tb2HiRnURH",
+          "author": "hirohasusan",
+          "date": "2026-11-24",
+          "likes": 201,
+          "views": 29007,
+          "link": "https://x.com/hirohasusan/status/2125070527006113855",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125068477555957760/img/iP8RhVJZWCbZaEiy.jpg",
+            "video_url": "https://x.com/hirohasusan/status/2125070527006113855/video/1"
+          },
+          "summary": "日本独立开发者 hirohasu 公布《Mahjong Kart 麻雀カート》Steam 页面：把麻将牌型搬到卡丁车赛道上——玩家开车把需要的牌运回自己的区域，用道具干扰对手，先凑齐牌型完成和牌者获胜；支持最多 4 人在线对战与同机分屏，2027 年 1 月 7 日发售。",
+          "recommendation": "《Mahjong Kart》：开卡丁车抢麻将牌凑牌型，4 人派对竞速 2027 年 1 月上线",
+          "featured": true,
+          "game_ref": "Mahjong Kart",
+          "enrichment": {
+            "game_name": "Mahjong Kart",
+            "genre": "动作 / 竞速 / 策略 / 派对",
+            "developer": "hirohasu（日本独立开发者）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2027年1月7日",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5515940/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5515940/161f01089cc38b1bdc41ebb2bd12c61ccb6a4a22/header.jpg",
+            "youtube_video": null,
+            "description": "【核心玩法】把麻将的「凑牌型」搬到赛道：玩家驾驶卡丁车在场地内抢夺散落的麻将牌，把需要的牌运回自己的区域，同时用道具干扰对手的运输线。先集齐并完成和牌的一方获胜，因此每一局都在「抢牌效率」与「拆别人牌型」之间做取舍。\n\n【结构设计】麻将是四人零和的信息博弈，卡丁车是实时空间竞争，二者结合后把麻将的「等牌」焦虑换成了「跑图」焦虑——玩家不会闲等，而是一直在移动中做决策，这对派对场景的节奏是加分项。\n\n【社交与门槛】支持最多 4 人在线对战与同机分屏，明显面向朋友局与直播场景。牌型规则沿用麻将直觉，但不需要记番种，属于「看着就懂、精通要练」的设计。\n\n【优势】题材组合罕见且自解释；单局节奏快，适合短视频传播；分屏对线下聚会友好。\n\n【风险】麻将玩家的牌理预期与竞速玩家的操作预期需要平衡，若牌型随机性过大，容易变成运气游戏；在线 4 人匹配在冷启动期可能排队过久。\n\n【综合】典型「旧瓶装新酒」型独立产品：不发明新规则，靠两个成熟系统的接口错位创造新鲜感，是小团队做差异化最现实的一条路。",
+            "why_notable": "麻将牌型 × 卡丁车竞速的错位组合，兼顾派对与直播场景，是「成熟系统重组」型创新的样本",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": "「麻将牌型」套「卡丁车竞速」新瓶，日本单人开发，最多 4 人在线/分屏，2027 年 1 月 7 日发售"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "Niche Gamer · 新游曝光",
+          "tags": [
+            "Roguelike",
+            "4人合作",
+            "动作"
+          ],
+          "title": "《Saints of Swagger》公布：《Mortal Sin》作者的新作，4 人合作 roguelike 打亡灵军团",
+          "en_title": "Mortal Sin creator reveals four-player roguelike Saints of Swagger",
+          "full_text": "Mortal Sin creator reveals four-player roguelike Saints of Swagger: https://t.co/RvfJKOoKw9 https://t.co/8HeFEVeAjp",
+          "author": "nichegamer",
+          "date": "2026-11-24",
+          "likes": 14,
+          "views": 1186,
+          "link": "https://x.com/nichegamer/status/2125252125588328608",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2125252091648069632/pu/img/0dmqQdVJIF0FYDCX.jpg",
+            "video_url": "https://x.com/nichegamer/status/2125252125588328608/video/1"
+          },
+          "summary": "Niche Gamer 报道：《Mortal Sin》作者 Nikola Todorovic 公布新作《Saints of Swagger》，定位 4 人合作 roguelike——玩家要把自己从罪人打成圣徒，与朋友一起横扫亡灵大军，并与「明显不怀好意」的古老偶像做交易。2027 年推出。",
+          "recommendation": "《Mortal Sin》作者新作《Saints of Swagger》：4 人合作 roguelike 打亡灵军团",
+          "featured": null,
+          "game_ref": "Saints of Swagger",
+          "enrichment": {
+            "game_name": "Saints of Swagger",
+            "genre": "动作 / Roguelike / 角色扮演",
+            "developer": "Nikola Todorovic（《Mortal Sin》作者）",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布",
+            "release_date": "2027年（具体日期待定）",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5155160/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5155160/4266d6f90296d3208662a3411dd4a3ae0aadc654/header.jpg",
+            "youtube_video": null,
+            "description": "【核心玩法】4 人合作 roguelike 动作游戏：玩家从「罪人」出发，通过战斗与交易逐步成为「圣徒」，在随机关卡里横扫亡灵军团，并与古老偶像签订代价不明的契约。前作《Mortal Sin》以近战手感与血腥演出见长，本作把单人高压战斗扩展为四人协作。\n\n【与前作的关系】《Mortal Sin》是单人第一人称近战 roguelike，靠攻击连段与部位破坏建立节奏；续作式的新作把「打点」压力分摊到四人，理论上会提高容错、降低单人操作门槛，但也会稀释前作那种孤身闯地牢的压迫感。\n\n【设计看点】「与偶像做交易」听上去是把 roguelike 的构筑系统叙事化：拿到强力增益的同时背负后果，这类设计天然适合多人局内的讨论与互相甩锅。\n\n【优势】作者在近战手感上有已验证积累；四人合作 roguelike 是近年留存表现稳定的品类；题材的宗教/邪典气质有辨识度。\n\n【风险】四人合作对关卡同步与网络品质要求高；若构筑深度不足，容易变成「一起砍」的重复劳动；2027 年窗口竞争激烈。\n\n【综合】属于「已验证手感 + 品类扩容」的稳妥路径，成败取决于联机体验与构筑系统能否撑住几十小时的重复游玩。",
+            "why_notable": "单人硬核近战 roguelike 作者转向 4 人合作，是观察「小团队如何用手感资产扩容」的样本",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": "《Mortal Sin》作者的 4 人合作 roguelike，罪人升圣徒 + 与古老偶像交易，2027 年推出"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "开发团队 · 独立",
+          "tags": [
+            "二次元",
+            "多人FPS",
+            "限时Demo"
+          ],
+          "title": "《WTF - Waifu Tactical Force》：二次元高机动多人 FPS，12 月 15 日开放限时 Demo",
+          "en_title": "To all the movement shooter fans, we made this game for you.",
+          "full_text": "To all the movement shooter fans, we made this game for you. \n\nTry our limited-time demo, December 15 to January 4. Wishlist and follow on Steam to stay up to date. https://t.co/r8jrinsI5k https://t.co/my3CsZDl80",
+          "author": "WaifuWTF",
+          "date": "2026-11-24",
+          "likes": 85,
+          "views": 3848,
+          "link": "https://x.com/WaifuWTF/status/2125229030009978943",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2125228598470520832/pu/img/5gRrtGNr86tqN2jV.jpg",
+            "video_url": "https://x.com/WaifuWTF/status/2125229030009978943/video/1"
+          },
+          "summary": "开发团队 Extremely Normal 宣布《WTF - Waifu Tactical Force》将于 12 月 15 日至 1 月 4 日开放限时 Demo。游戏定位二次元画风的高机动性多人 FPS：垂直立体战场的身法对抗、战斗中收集角色与战利品、经营母基地并与队友建立羁绊，同时覆盖 PvP 与 PvE。",
+          "recommendation": "《WTF - Waifu Tactical Force》：二次元身法 FPS，12 月 15 日限时 Demo",
+          "featured": null,
+          "game_ref": "WTF - Waifu Tactical Force",
+          "enrichment": {
+            "game_name": "WTF - Waifu Tactical Force",
+            "genre": "动作 / 多人 FPS / 模拟 / 策略",
+            "developer": "Extremely Normal",
+            "platforms": [
+              "Steam"
+            ],
+            "price": "未公布（抢先体验）",
+            "release_date": "2027年（抢先体验）",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/2353050/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2353050/e93a569bc6325ec45d1a11f29d38282ba2fea33c/header.jpg",
+            "youtube_video": null,
+            "description": "【核心玩法】二次元画风的高机动多人 FPS，主打「身法」：在垂直立体化的战场里靠冲刺、蹬墙、空中变向摆脱对手，枪法与位移各占一半权重。战斗中可以收集角色与战利品，带回母基地做长期养成，并与队友建立羁绊。\n\n【结构设计】把抽卡/收集放进一场 FPS 的对局内，等于把「角色养成」从局外账号系统搬进局内节奏：每一局既是战斗也是刷取，这会明显拉高单局信息密度，也容易让新手在前几十小时处于「看不懂别人在干什么」的状态。\n\n【养成与留存】母基地 + 羁绊是典型的二次元留存结构，用情感叙事对冲 FPS 的高挫败感，逻辑上成立；但养成线一旦与数值绑定，就会与「身法决定胜负」的竞技承诺冲突。\n\n【优势】美术与题材明确吸引二次元射击人群；PvP + PvE 双线给了内容弹性；限时 Demo 是低成本验证匹配与手感的好方式。\n\n【风险】多人 FPS 的服务器与反作弊成本对小团队极重；垂直身法对关卡设计要求高，容易变成「只有几个高点」；收集与养成的商业化会直接影响口碑。\n\n【综合】题材诱人、结构偏重，成败取决于 Demo 期间能否证明「身法够爽、匹配够快、养成不逼氪」。",
+            "why_notable": "12 月 15 日起限时 Demo，是近期少见的「二次元 + 高机动身法 FPS」公开验证窗口",
+            "pcu": "暂未发售",
+            "current_players": null,
+            "estimated_sales": null,
+            "gi_summary": "「二次元」套「高机动身法 FPS」新瓶，Extremely Normal 开发，12 月 15 日限时 Demo"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "IndieDB · 已上线",
+          "tags": [
+            "空战",
+            "二战",
+            "多人"
+          ],
+          "title": "《Aceborne》：18 架一战/二战战机、7 条战线、最多 8 人狗斗，已上线",
+          "en_title": "Aceborne is out now! 18 WW1/WW2 fighters across 7 fronts, missions for both wars, and up to 8-player dogfights.",
+          "full_text": "Aceborne is out now! 18 WW1/WW2 fighters across 7 fronts, missions for both wars, and up to 8-player dogfights. Check it out!\n\nhttps://t.co/oNgkzDVy62",
+          "author": "IndieDB",
+          "date": "2026-11-24",
+          "likes": 1,
+          "views": 415,
+          "link": "https://x.com/IndieDB/status/2125076939744637377",
+          "media": null,
+          "summary": "IndieDB 宣布《Aceborne》已上线：收录 18 架一战与二战战斗机、横跨 7 条战线，包含两场战争各自的战役任务，并支持最多 8 人参与的空中狗斗。",
+          "recommendation": "《Aceborne》上线：18 架一战/二战战机、7 条战线、8 人狗斗",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Kimmie Studio · 国产独立",
+          "tags": [
+            "模拟经营",
+            "像素",
+            "国风"
+          ],
+          "title": "《只有姐姐的世界》：西南少数民族元素的像素模拟经营 + 冒险养成",
+          "en_title": "Hiking the mountain like a real tourist... Even the corner store at the foot of the mountain has become a must-visit!",
+          "full_text": "Hiking the mountain like a real tourist... 🥾⛰️\nEven the corner store at the foot of the mountain has become a must-visit!✨ Grab a cold Muyue soda and enjoy nature!! 🥤🌿Meet you at the top~\n#TheSisterhoodPasture #cozygames #indiegamedev #pixelart #IndieDevs https://t.co/5xRZNoxrph",
+          "author": "KimmieStudio",
+          "date": "2026-11-24",
+          "likes": 90,
+          "views": 1797,
+          "link": "https://x.com/KimmieStudio/status/2125190197789016246",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125165355765297152/img/cBQ-pEsqIVt2EUIZ.jpg",
+            "video_url": "https://x.com/KimmieStudio/status/2125190197789016246/video/1"
+          },
+          "summary": "Kimmie Studio 放出《只有姐姐的世界》玩法片段：玩家继承姥姥留下的度假村「蓝楹山庄」，在以女性为主的西南山谷里经营、探索「沐月山谷」，与姐姐们建立友谊。像素风 + 少数民族元素的轻奇幻模拟经营 + 冒险养成。",
+          "recommendation": "《只有姐姐的世界》：西南少数民族元素的像素模拟经营，继承一座山谷度假村",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "Niche Gamer · 延期",
+          "tags": [
+            "丧尸生存",
+            "合作",
+            "延期"
+          ],
+          "title": "《Never Be Alone》：开放世界丧尸生存合作游戏延期至 2027 年",
+          "en_title": "Co-op zombie survival game Never Be Alone gets delayed to 2027",
+          "full_text": "Co-op zombie survival game Never Be Alone gets delayed to 2027: https://t.co/v9qPOULtWE https://t.co/4XxEIBqjBX",
+          "author": "nichegamer",
+          "date": "2026-11-24",
+          "likes": 5,
+          "views": 923,
+          "link": "https://x.com/nichegamer/status/2125247684667723855",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2125247658969223168/pu/img/5cEWQ4ljdb0VLH2e.jpg",
+            "video_url": "https://x.com/nichegamer/status/2125247684667723855/video/1"
+          },
+          "summary": "《Never Be Alone》宣布延期至 2027 年。这是一款开放世界丧尸生存游戏，支持单人游玩与无缝合作：疫情暴发十年后，玩家在被自然重新占领的世界里守住脆弱的安全区，并揭开自己失落过往的真相。",
+          "recommendation": "《Never Be Alone》开放世界丧尸生存合作，延期至 2027 年",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Niche Gamer · 新游曝光",
+          "tags": [
+            "解谜",
+            "平台跳跃",
+            "分屏"
+          ],
+          "title": "《Mirror》：分屏解谜平台跳跃，2027 年推出",
+          "en_title": "Split-screen puzzle platformer Mirror launches in 2027",
+          "full_text": "Split-screen puzzle platformer Mirror launches in 2027: https://t.co/XsIrfBAraZ https://t.co/OHASM5H3iY",
+          "author": "nichegamer",
+          "date": "2026-11-24",
+          "likes": 5,
+          "views": 832,
+          "link": "https://x.com/nichegamer/status/2125251820264051163",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/media/HX5pRLGWwAEDev-.jpg",
+            "video_url": "https://x.com/nichegamer/status/2125251820264051163/video/1"
+          },
+          "summary": "Niche Gamer 报道：分屏解谜平台跳跃游戏《Mirror》将于 2027 年推出，核心是两块屏幕之间的对照与同步操作。",
+          "recommendation": "《Mirror》：分屏解谜平台跳跃，2027 年推出",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity 官方 · 工具链",
+          "tags": [
+            "Unity",
+            "AI Agent",
+            "资产管线"
+          ],
+          "title": "Unity Asset Store 开放 AI 取用通道：CLI 让 agent 直接找资源、下载并部署进场景",
+          "en_title": "Introducing two new ways to discover and use assets from the Unity Asset Store",
+          "full_text": "Introducing two new ways to discover and use assets from the Unity Asset Store 🎨\n\n1️⃣ Unity CLI: Let your agent of choice find, download, and deploy individual assets directly into your scene.\n2️⃣ Asset Library plugin: Describe what you want in plain language, find it, and drag it into your scene.\n\nWe’re making it easy and seamless for you to grab just the asset you need from free assets and packs you own and integrate it directly into your Unity projects. \n\n🔗 In open beta now.",
+          "author": "unitygames",
+          "date": "2026-11-24",
+          "likes": 0,
+          "views": 427,
+          "link": "https://x.com/unitygames/status/2125277970281406741",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/ext_tw_video_thumb/2125277845740019712/pu/img/tRMs98ztIG-7ABPi.jpg",
+            "video_url": "https://x.com/unitygames/status/2125277970281406741/video/1"
+          },
+          "summary": "Unity 公布 Asset Store 的两种新取用方式（公测中）：Unity CLI 允许任意 AI agent 查找、下载单个资产并直接部署到场景；Asset Library 插件支持用自然语言描述需求后检索并拖入场景。两者都只取用免费资产与自己已购的包。",
+          "analysis": "资产商店第一次把「检索 → 下载 → 落场景」做成可被 agent 调用的接口，意味着 AI 工作流可以直接消费商业资产，而不只是生成。随之而来的新问题是中间层：资产授权、版本与依赖、场景内引用一致性，谁来做。",
+          "recommendation": "Unity Asset Store 开放 CLI：AI agent 可直接检索、下载并部署资产进场景",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "开发者实测 · 开源",
+          "tags": [
+            "开源",
+            "动画生成",
+            "NVIDIA"
+          ],
+          "title": "NVIDIA 开源 MotionBricks：走跑蹲转身与物体交互动作可实时 AI 生成",
+          "en_title": "NVIDIA oyun karakterleri ve insansı robotlar için geliştirdiği MotionBricks'i açık kaynak olarak paylaşmış.",
+          "full_text": "bakın, NVIDIA oyun karakterleri ve insansı robotlar için geliştirdiği MotionBricks'i açık kaynak olarak paylaşmış. :D\n\nkarakterlerin yürüme, koşma, eğilme, yön değiştirme ve nesnelerle etkileşim gibi hareketlerini AI ile gerçek zamanlı üretebiliyorsunuz.\n\nüstelik her hareket için tek tek animasyon ve geçiş hazırlamanız gerekmiyor.\n\nben de denedim, videoda nasıl çalıştığını görebilirsiniz. \n\nRepoyu altta paylaştım kullanabilrsiniz.👇",
+          "author": "theozguratillay",
+          "date": "2026-11-24",
+          "likes": 140,
+          "views": 9820,
+          "link": "https://x.com/theozguratillay/status/2125182646779306353",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2124963919965872129/img/Xwbj8-VWzhV2tyON.jpg",
+            "video_url": "https://x.com/theozguratillay/status/2125182646779306353/video/1"
+          },
+          "summary": "开发者 Özgür Atilla 实测并转发：NVIDIA 已将面向游戏角色与人形机器人的 MotionBricks 开源。它用 AI 实时生成走、跑、弯腰、转向以及物体交互等动作，无需为每个动作单独制作动画与过渡，实测视频见推文。",
+          "analysis": "动作匹配（motion matching）从论文走向开箱可用，直接冲击「每个动作都手 K + 状态机过渡」的传统动画管线。对中小团队而言，最大的变化是「动作库规模」不再是动作表现力的上限，重心转到位移手感调校与动画风格统一。",
+          "recommendation": "NVIDIA 开源 MotionBricks：走跑蹲转身与交互动作实时 AI 生成，免手作过渡",
+          "featured": null
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**GTA 6 的首发数据正在刷新主机历史**\n索尼称游戏在 PS5 上已吸引超过 3,900 万名独立玩家，官方首日跨平台销量 3,250 万份，创下 PlayStation 史上最大首发与最高同时在线。同时 Rockstar 下架了社区最大的重编译项目 Project Leonida，但泄漏版仍在 20 小时内在 PC 上跑出了第三人称实机。\n\n**AI 正在把「做出来」变成最便宜的一步**\n零开发经验的单人作者用 AI 编程做出《Slotbound》，上线一周卖出 20 万份；另一位开发者把 6,528 美元的 Claude 代币换成 UE5.9 里 5 个种族、16 个任务、6 种坐骑的可玩原型。YC 的 Garry Tan 则提醒：推理成本在跌，但用量没有跟上，杰文斯悖论暂时失效。\n\n**小体量团队继续在「系统组合」上找差异**\n《Mahjong Kart》把麻将牌型搬上卡丁车赛道，《Saints of Swagger》把单人硬核近战扩成 4 人合作，《WTF - Waifu Tactical Force》用二次元包装高机动身法 FPS；工具侧，Unity Asset Store 开放了让 AI agent 直接取用资产的 CLI。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
