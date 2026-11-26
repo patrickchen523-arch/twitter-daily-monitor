@@ -1,0 +1,596 @@
+{
+ "date": "2026-11-26",
+ "meta": {
+  "raw_count": 254,
+  "filtered_count": 184,
+  "selected_count": 12,
+  "crawl_time": "2026-11-26 09:33"
+ },
+ "lede": "同一提示词横评四款编程模型：GPT-6.2 Sol 用 3.26 美元、40 分钟做出 Three.js 场景，比 Fable 5.2 便宜约 23 倍；4 人合作把 10 亿张钞票喂进碎钞机，《SHRED A BILLION》首日 97% 好评；GTA 6 的 AI 移植被 Take-Two 打掉 3,007 个 fork。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "同一提示词四模型横评：GPT-6.2 Sol 3.26 美元、40 分钟，比 Fable 5.2 便宜约 23 倍"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "4 人合作把 10 亿张钞票喂进碎钞机，首日 97% 好评、国区 20 元"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "GTA 6 AI 移植被清剿：3,007 个 fork 被 DMCA，15 岁主创退出"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "同一提示词四模型横评：GPT-6.2 Sol 3.26 美元/40 分钟，比 Fable 5.2 便宜约 23 倍\nAtari Homebrew Awards 停办 8 年赛事：LLM 让“谁写的代码”无法判定\nOpus 5.6 纯代码生成《咒术回战》动画：6 张参考图、20 分钟、5.75M Token"
+  },
+  {
+   "id": "industry",
+   "text": "GTA 6 AI 移植被清剿：3,007 个 fork 被 DMCA，15 岁主创退出\nGTA 6 发售后 CoD 日活 750 万→440 万，四天仍低 41%\nSteam 商城一年内第二次改版：按在玩游戏推荐物品、支持直接改价\nCDPR 与索尼签《巫师 4》营销协议，加深 PS 平台合作"
+  },
+  {
+   "id": "indie",
+   "text": "《SHRED A BILLION》：4 人合作碎钞，首日 97% 好评、国区 20 元\n《INARI》：苦无传送像素动作平台，愿望单 15 万、12 月开测\n《KeyCapy》：给水豚做定制键盘的治愈模拟，测试报名开放"
+  },
+  {
+   "id": "tools",
+   "text": "Unity Spark 新增 Annotate：在场景里直接画/选/指给 AI 视觉上下文\n樱井政博 257 期视频做成 Agent Skill：14 类要点、每条带视频编号"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "开发者实测 · 模型横评",
+     "tags": [
+      "LLM",
+      "成本对比",
+      "Three.js"
+     ],
+     "title": "同一 Three.js 提示词横评四模型：GPT-6.2 Sol 用 3.26 美元/40 分钟，比 Fable 5.2 便宜约 23 倍",
+     "en_title": "GPT-6.2 Astra vs Fable 5.2 vs Opus 5.5 vs GPT-6.2 Sol",
+     "full_text": "GPT-6.2 Astra vs Fable 5.2 vs Opus 5.5 vs GPT-6.2 Sol 🌊\n\nIt's always kind of hard to create real people in Three.js. 🏄\nI think Fable 5.2 did pretty well on this one. 👀\nBut it took over 2 hours. GPT-6.2 Sol did it in under 40 minutes, for $3.26. 🤯\n\nSame Emerald Wave prompt:\nGPT-6.2 Astra: $12.52 · 46m 54s\nFable 5.2: $74.26 · 2h 7m 57s\nOpus 5.5: $34.51 · 2h 43m 25s\nGPT-6.2 Sol: $3.26 · 39m 54s\n\nGPT-6.2 Sol: almost 23x cheaper and over 3x faster than Fable 5.2. 😱\nGPT-6.2 Sol: over 10x cheaper and over 4x faster than Opus 5.5. 💀\nGPT-6.2 Astra: almost 6x cheaper and almost 3x faster than Fable 5.2.\n\nWhat do you guys think? 👇",
+     "author": "Tony",
+     "date": "2026-11-24",
+     "likes": 639,
+     "views": 167860,
+     "link": "https://x.com/EnvolDev/status/2125270367187169782",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2125270273310195712/img/sst59RGVcFXjsLg6.jpg",
+      "video_url": "https://x.com/EnvolDev/status/2125270367187169782/video/1"
+     },
+     "summary": "开发者 Tony 用同一条“翡翠海浪”提示词，让四款模型各写一个 Three.js 场景，量了成本与耗时：GPT-6.2 Astra 12.52 美元/46 分 54 秒；Fable 5.2 74.26 美元/2 小时 7 分 57 秒；Opus 5.5 34.51 美元/2 小时 43 分 25 秒；GPT-6.2 Sol 3.26 美元/39 分 54 秒。按他的统计，Sol 比 Fable 5.2 便宜近 23 倍、快 3 倍以上。",
+     "recommendation": "同一提示词四模型横评：GPT-6.2 Sol 3.26 美元/40 分钟，比 Fable 5.2 便宜约 23 倍",
+     "analysis": "成本差 20 倍意味着原型迭代次数的差 20 倍——对做玩法验证的小团队，选型的判断标准已经从“谁生成得最好”变成“单位预算能跑多少轮”。但耗时也不是白花的：Fable 5.2 用了两小时，细节是否更好，这条推文没有给对比结论，只给了价格与时间，读者别把它当成质量排行榜。",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "PC Gamer · 行业观察",
+     "tags": [
+      "AI生成",
+      "赛事",
+      "版权"
+     ],
+     "title": "8 年历史的 Atari Homebrew Awards 停办：主办方称已无法区分“人写的游戏”与 LLM 产出",
+     "en_title": "AI kills another coding competition: 'I was not at all interested in giving awards to the output of large language models'",
+     "full_text": "After 8 years of operation the Atari Homebrew Awards is no more, and AI is to blame https://t.co/aUbXEemQEe",
+     "author": "PC Gamer",
+     "date": "2026-11-25",
+     "likes": 0,
+     "views": 558,
+     "link": "https://x.com/pcgamer/status/2125637570021478609",
+     "media": null,
+     "summary": "Atari Homebrew Awards 主办方 ZeroPage Homebrew 在 AtariAge 论坛宣布停办这项办了 8 年的复古游戏评选。理由是今年 LLM 能力大涨后，大量参赛作品在不同环节使用 AI，部分开发者甚至一周发布多款“零代码”游戏；全禁会误伤只是少量用 AI 的开发者，放任又无法判定边界，还要面对误判与“猎巫”。今年 11 月，澳洲 STEM Videogame Challenge 也已宣布 2026 为最后一届。",
+     "recommendation": "Atari Homebrew Awards 停办 8 年赛事：LLM 让“谁写的代码”无法判定",
+     "analysis": "这是游戏圈第一个公开承认“评审标准被 AI 打穿”的案例：组织者不是不愿意评，而是没有工具验证代码来源，只能在“误伤”和“放水”之间选，最后选择取消。对国内 game jam 和独立评奖是同一个问题——AI 使用披露、人工可验证产出、评审口径，必须写进规则，否则只能整体放弃。",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "中文开发者实测 · 能力边界",
+     "tags": [
+      "Opus 5.6",
+      "纯代码生成",
+      "动画"
+     ],
+     "title": "Opus 5.6 用 6 张参考图 + 一条提示词，20 分 42 秒纯写代码生成《咒术回战》动画，配乐也由模型自己合成",
+     "en_title": "卧槽！opus5.6彻底疯了！再这么发展下去视频模型怕是要下岗了？",
+     "full_text": "卧槽！opus5.6彻底疯了！\n再这么发展下去视频模型怕是要下岗了？\n\n灰度的opus5.6 耗时 20 分 42 秒、消耗5.75M Token，零外部库、零 TTS 语音包，纯靠写代码直接写出了一部《咒术回战》高燃动漫\n\n而实际只给了6张参考图和一条提示词\nprompt：现在开始创作一部新的动漫作品，基于相同的细节和纯代码。\n这些素材旨在为你提供灵感，每个决定都由你自主掌握，甚至需要你自己演唱背景音乐一不使用TTS(文本转语音)和外部库。\n音乐和歌曲必须与画面内容相匹配，应具备《咒术回战》的品质和艺术风格，并确保涵盖所有情绪和著名动作场景，包括悲伤、温暖、恐惧、喜剧、愤怒等。\n务必使用子代理来查看你所创造的内容并聆听，将这部杰作制作成每段视频时长不超过2分钟的作品，每一帧都应呈现出大师级的艺术水准。\n\n剩下的全程是直接让opus 5.6 模型开启多个subagents进行分工，写代码、画每一帧、合成配乐，照这个迭代速度再进化两三代，专门的视频模型真的要下岗了！ https://t.co/7ctQ2D63Jc",
+     "author": "CF长风",
+     "date": "2026-11-24",
+     "likes": 413,
+     "views": 71173,
+     "link": "https://x.com/cfenghub/status/2125372139817799715",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HX6yAgjbMAANFQv.jpg"
+     },
+     "summary": "开发者 CF长风 实测灰度的 Opus 5.6：给 6 张参考图和一条提示词，要求“基于相同细节、纯代码”创作一部《咒术回战》风格动画，不使用 TTS 与外部库，配乐与歌曲要和画面情绪匹配。模型开启多个 subagent 分工写代码、逐帧绘制、合成配乐，20 分 42 秒、消耗 5.75M Token 完成，成品按每段不超过 2 分钟切分。",
+     "recommendation": "Opus 5.6 纯代码生成《咒术回战》动画：6 张参考图、20 分钟、5.75M Token",
+     "analysis": "这条的价值不在“AI 会做动画”，而在“逐帧画面是代码渲染出来的”——它说明程序化生成过场、特效、甚至整段演出的门槛又降了一档。但要清醒：这是单点 demo，没有给可复现的产线与稳定性数据，离替代视频模型还差得远，更现实的是拿来做原型分镜与风格试验。"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "Rock Paper Shotgun · 版权执法",
+     "tags": [
+      "GTA 6",
+      "DMCA",
+      "AI移植"
+     ],
+     "title": "Rockstar/Take-Two 清剿 AI 版 GTA 6 PC 移植：3,007 个 GitHub fork 被 DMCA，Discord 关停、15 岁主创退出",
+     "en_title": "AI-generated GTA 6 PC ports get nuked in alleged Rockstar takedown spree",
+     "full_text": "AI-generated GTA 6 PC ports get nuked in alleged Rockstar takedown spree, as former Bungie dev hails \"most ridiculous dumpster fire ever\" https://t.co/viQPrYSOF5",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-11-25",
+     "likes": 6,
+     "views": 2668,
+     "link": "https://x.com/rockpapershot/status/2125540512744480851",
+     "media": null,
+     "summary": "RPS 报道：基于本周泄露的 GTA 6 Xbox 近完成版做重编译的 Project Leonida，已被 Take-Two 通过 GitHub DMCA 打掉 3,007 个 fork，Leonida 的 Discord 与代码仓库关停。主创 NotRexed（自述 15 岁）与 Shayder 退出，理由是“Rockstar 关服务器只是部分原因，还要管学业和运动”。过程被前 Bungie 开发者 Amy Hendricks 在 Bluesky 逐条记录，称其为“史上最离谱的垃圾场火灾”；跟踪进度的 X 账号也因版权举报被删帖。剩余团队已能把游戏跑起来，但帧率不足 5fps。",
+     "recommendation": "GTA 6 AI 移植被清剿：3,007 个 fork 被 DMCA，15 岁主创退出",
+     "analysis": "这是“生成式 AI 压低逆向门槛”之后的第一次大规模 IP 执法演练：泄露的可执行文件 + Claude/Antigravity，把过去要团队做数月的事压到几天，版权方的回应不是技术封锁，而是法务清剿加平台下架。对从业者的提醒很直接——AI 让“能做出来”和“能合法发布”之间的鸿沟变得更宽，中间那段没有商业路径。",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "PC Gamer · 市场数据",
+     "tags": [
+      "GTA 6",
+      "DAU",
+      "服务型游戏"
+     ],
+     "title": "Alinea 估算：GTA 6 发售后《使命召唤》日活从 750 万跌到 440 万，四天后仍低约 41%",
+     "en_title": "Analyst estimates Call of Duty lost 44% of its players when GTA 6 came out, and unlike fans of its live-service competitors they've been slow to come back",
+     "full_text": "Call of Duty lost 44% of its players when GTA 6 came out, and they've been slow to come back https://t.co/HZmO7vwpqN",
+     "author": "PC Gamer",
+     "date": "2026-11-25",
+     "likes": 96,
+     "views": 15718,
+     "link": "https://x.com/pcgamer/status/2125433741669712288",
+     "media": null,
+     "summary": "Alinea Analytics 基于 PlayStation/Xbox 数据估算，GTA 6 发售当天《使命召唤》日活从平均 750 万降到 440 万（约 -42%），《堡垒之夜》下降 28%（约 500 万），《EA Sports FC 27》从 590 万降到 430 万（-27%）。四天后 Fortnite 与 FC 27 都在回升，CoD 仍比基线低约 41%，即便期间有感恩节活动。Alinea 判断，等 GTA 6 的 Online 与 PC 版同时上线，“回弹就没那么容易了”。",
+     "recommendation": "GTA 6 发售后 CoD 日活 750 万→440 万，四天仍低 41%",
+     "analysis": "一款纯单机游戏在没开 Online 的情况下就能抽走长线服务型产品的日活，而且恢复最慢的是 CoD——说明“内容型大作”对“节奏型年货”的替代性最强。真正的结构性冲击还在后面：Online + PC 同时上线时，被拿走的不只是几天的时长，而可能是一整个赛季的留存。",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "PC Gamer · 平台政策",
+     "tags": [
+      "Steam",
+      "市场",
+      "平台"
+     ],
+     "title": "Steam 商城一年内第二次改版：首页按你在玩的游戏推荐物品，改价不必下架重挂",
+     "en_title": "Steam revamps its marketplace for the 2nd time this year",
+     "full_text": "Steam revamps its marketplace for the 2nd time this year https://t.co/MApS4p81kn",
+     "author": "PC Gamer",
+     "date": "2026-11-24",
+     "likes": 187,
+     "views": 35411,
+     "link": "https://x.com/pcgamer/status/2125196214882930923",
+     "media": null,
+     "summary": "Valve 重建了 Steam 社区市场首页：加载更快，原先几乎只展示 CS2 箱子的 Popular Items 换成 Trending Items，按你实际玩过的游戏推荐热门物品；新增跨游戏 watchlist（可收藏单品、类型或某个搜索）；出售与改价简化，可直接改价而不用下架重挂，手机端出售改为弹窗确认；我的在售与历史移到独立页面；搜索结果加列表视图与 Trending 排序，CS2 箱子会显示可能内容。",
+     "recommendation": "Steam 商城改版：按在玩游戏推荐物品，改价不必下架重挂",
+     "analysis": "对做皮肤/交易经济的团队是个信号：Valve 在把 market 从“CS2 箱子市场”改造成按游戏个性化的通用物品市场，中小作品的内购物品拿到曝光的机会变大，但分发权也更集中在算法手里。改价不必下架这一条，则是直接降低了做价格实验的操作成本。"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 平台合作",
+     "tags": [
+      "巫师4",
+      "CDPR",
+      "平台营销"
+     ],
+     "title": "CDPR 与索尼签《巫师 4》营销协议，并把自家游戏更深地放进 PS Store / PS Plus",
+     "en_title": "CD Projekt Red signs new marketing partnership deal with Sony for The Witcher 4",
+     "full_text": "CD Projekt Red signs new marketing partnership deal with Sony for The Witcher 4, and to increase \"the presence\" of its games on PlayStation\n\nhttps://t.co/vQhMIvB9zy https://t.co/Ts46vAfpki",
+     "author": "Eurogamer",
+     "date": "2026-11-25",
+     "likes": 24,
+     "views": 3992,
+     "link": "https://x.com/eurogamer/status/2125561484944261236",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HX-CIlJWoAEO8F0.jpg"
+     },
+     "summary": "CDPR 在 Q3 财报电话会上披露，已与索尼互动娱乐签署新的合作协议，覆盖旗下游戏在 PlayStation 与 PS Plus 的存在感，以及《巫师 4》的营销活动。CFO 称这会支撑今明两年的业务与财务预期，《巫师 4》目前目标 2028 年。这被视为一次转向：CDPR 历史上更亲近 Xbox——《巫师 2》只出过 Xbox 360，Cyberpunk 2077 的基努·里维斯公布是在 Xbox E3 舞台。同日联合 CEO 还表示，《巫师 3》到《巫师 4》的跃迁可以对标 GTA 5 到 GTA 6。",
+     "recommendation": "CDPR 转向索尼：签下《巫师 4》营销协议，加深 PS 平台合作",
+     "analysis": "平台营销权正在向“能给最大首发曝光”的一方集中，3A 的营销预算与平台绑定越来越深。对中小团队的现实含义是反过来的：拿不到这种资源位，就更该把有限资源压在可自传播的玩法切片上。"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "電ファミニコゲーマー · 日本独立",
+     "tags": [
+      "增量游戏",
+      "4人合作",
+      "解压"
+     ],
+     "title": "《SHRED A BILLION》：4 人合作把 10 亿张钞票喂进碎钞机，发售首日 97% 好评、国区 20 元",
+     "en_title": "【最大4人協力】“10億枚”の紙幣をシュレッダーにかけまくるゲーム『SHRED A BILLION』がSteamで「非常に好評」スタート",
+     "full_text": "【最大4人協力】“10億枚”の紙幣をシュレッダーにかけまくるゲーム『SHRED A BILLION』がSteamで「非常に好評」スタート\nhttps://t.co/0dMmpRvpwd\n\n大量のお札を刻んでいく爽快感やマルチプレイの楽しさが高く評価。「コンセプトはシンプルなのに意外なほど面白い」といった声も https://t.co/b8WU3nuRZj",
+     "author": "電ファミニコゲーマー",
+     "date": "2026-11-25",
+     "likes": 636,
+     "views": 113943,
+     "link": "https://x.com/denfaminicogame/status/2125515334425956616",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2125515237063622656/pu/img/VIHrrg2uCmTHYtiz.jpg",
+      "video_url": "https://x.com/denfaminicogame/status/2125515334425956616/video/1"
+     },
+     "summary": "ImSoTiredStudio 开发、LightTriadGames 发行的第一人称增量游戏，11 月 24 日登陆 Steam。玩家在堆满钞票的金库里把钱喂进碎钞机，每碎一张就有收益，用来解锁更大的容器与自动化设备：从徒手抓一张，到水桶、铁铲、吸尘器、自动搬运无人机；工具/碎钞机/无人机合计 100 多种强化，金库向下 5 层，越深面额越高。支持最多 4 人合作，发稿时 375 条评价中 97% 好评。日区定价 985 日元，12 月 9 日前 8 折 788 日元，官方称约一个月后免费更新第二座金库。",
+     "recommendation": "4 人合作把 10 亿张钞票喂进碎钞机，首日 97% 好评、国区 20 元",
+     "featured": true,
+     "game_ref": "SHRED A BILLION",
+     "enrichment": {
+      "game_name": "SHRED A BILLION",
+      "genre": "休闲 / 独立 / 模拟（增量）",
+      "developer": "ImSoTiredStudio（发行：LightTriadGames）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "¥20（首发 8 折至 12 月 9 日）",
+      "release_date": "已发售 · 2026年11月24日",
+      "steam_rating": "97% 好评（发稿时 375 条，现 752 条评价）",
+      "steam_url": "https://store.steampowered.com/app/5472080/SHRED_A_BILLION/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5472080/4584864fda356b4d391b69cc2c0ea73bc286db3d/header.jpg",
+      "youtube_video": null,
+      "description": "【核心玩法】把“增量/放置”做成第一人称体力劳动：金库里堆着一层层钞票，玩家先用手一张张抓进碎钞机，赚到的钱立刻换成更大的搬运工具——水桶、铁铲、吸尘器，最后是自动往返的无人机。碎钞即收益、收益即产能，这条循环被压到最短，几乎没有等待动画。\n\n【结构设计】金库向下 5 层，越深钞票面额越高，形成“向下挖”的天然目标线；工具、碎钞机、无人机三条线共 100 多种强化，配技能树，玩家可以走“手动高效率”或“全自动挂机”两种完全不同的节奏。最后一张钞票进机器后打开最深处的门，给了一个收集型终点。\n\n【社交与场景】最多 4 人合作，四个人挤在同一台碎钞机前抢钞票、分工搬运，天然适合直播和朋友局；画面是夸张的钞票瀑布与机械噪音，解压感来自“破坏”而不是“积累”，这是它和多数增量游戏最大的差别。\n\n【优势】概念一句话说清、视频传播成本极低；首日 97% 好评说明“简单但意外好玩”的预期管理成功；20 元定价 + Demo 试玩把决策门槛压到最低；官方承诺一个月内免费加第二座金库，内容节奏给得明确。\n\n【风险】增量游戏的通病是中期数值膨胀后的重复感，5 层金库能否撑住 10 小时以上存疑；4 人合作的匹配与同步在冷启动期是硬门槛；同类“碎纸/碎钞”题材已出现跟风者（如 2027 年的 Paper Shredder），先发优势需要靠更新维持。\n\n【综合评价】把“放置游戏的数字增长”翻译成“可以亲手做的体力活”，再用四人合作把解压感放大——是 2026 年小团队用极低成本做出高传播性玩法切片的典型样本。",
+      "why_notable": "首日 97% 好评、国区 20 元的四人合作增量游戏，验证了“把放置循环做成第一人称体力活”这条低成本高传播路径",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": "暂无官方数据（首日 752 条评价）",
+      "gi_summary": "「第一人称碎钞」套「增量放置」新瓶，ImSoTiredStudio 开发、LightTriadGames 发行，最多 4 人合作，国区 20 元"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "Niche Gamer · 韩国独立",
+     "tags": [
+      "像素动作",
+      "平台跳跃",
+      "苦无"
+     ],
+     "title": "《INARI》：苦无当传送锚点、一击必杀的像素动作平台，Steam 愿望单破 15 万、12 月开放测试",
+     "en_title": "Stylish action game INARI tops 150,000 Steam wishlists ahead of its playtest",
+     "full_text": "Stylish action game INARI tops 150,000 Steam wishlists ahead of its playtest: https://t.co/aeMNTVgsEM https://t.co/oyWSB8E6HK",
+     "author": "Niche Gamer",
+     "date": "2026-11-25",
+     "likes": 34,
+     "views": 1378,
+     "link": "https://x.com/nichegamer/status/2125610279702528446",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2125610216917991424/pu/img/nbUUkmVgyjriLXHu.jpg",
+      "video_url": "https://x.com/nichegamer/status/2125610279702528446/video/1"
+     },
+     "summary": "韩国 1HP STUDIO 宣布 12 月在 Steam 举办《INARI》公开测试。玩家扮演天帝派出的处决者 Izna，追杀七位叛变皇女；苦无既能远程攻击，也能作为传送锚点，扔到哪就闪到哪，用来跨沟、绕开敌人或续接连段。测试版约 1 小时、含 3 场 Boss 战（其中一位皇女未在 Kickstarter Demo 出现），新增 Perfect Dodge——在攻击命中前闪避可回满体力，还支持背刺先清掉一部分敌人。游戏一次受击即结束战斗，Story Mode 提供额外血量。Kickstarter 3,443 人支持、筹得 145,785 美元（目标 1 万美元），Steam 愿望单已破 15 万。",
+     "recommendation": "苦无当传送锚点的像素动作平台，愿望单 15 万、12 月开测",
+     "featured": true,
+     "game_ref": "INARI",
+     "enrichment": {
+      "game_name": "INARI",
+      "genre": "动作 / 冒险 / 独立（像素平台动作）",
+      "developer": "1HP STUDIO（韩国）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/3910680/INARI/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3910680/b46765fad9b8be398d25a85ce04b330d2a80bfb0/header.jpg",
+      "youtube_video": "https://www.youtube.com/watch?v=yqddi0oLea4",
+      "description": "【核心玩法】苦无是整套动作的唯一支点：投出去是攻击，也是位移锚点，按一下就能闪到落点。于是“打”和“走”被合并成同一个动作——跨沟、绕过敌人、在空中续连段，都靠同一把武器完成。一次受击即结束战斗，逼玩家把闪避与传送当成进攻的一部分，而不是失误后的补救。\n\n【战斗设计】12 月测试版新增 Perfect Dodge：在敌人攻击命中前的窗口闪避可回满体力，等于给“高风险贴身”发奖励；配合背刺，可以先清掉场上杂兵再开 Boss，节奏从“硬刚”变成“读招—穿位—处决”。3 场 Boss 战里有一位是新皇女，用来验证玩家是否真的掌握了传送节奏。\n\n【美术与叙事】像素风 + 东方奇幻（天帝、七皇女、处决者），角色剪影和苦无的轨迹线是画面里的主要信息；Story Mode 给额外血量，说明团队知道“一击必杀”对叙事体验是负担，做了难度分层。\n\n【市场验证】Kickstarter 目标 1 万美元、实筹 145,785 美元（3,443 人），是最能说明“玩法切片被看懂”的数据；Steam 愿望单破 15 万，对一个韩国小团队的首作来说，公开测试就是上线前的最后一次转化。\n\n【优势】“苦无=传送”是能一句话讲清、看 3 秒视频就懂的机制；一击必杀 + Perfect Dodge 把难度上限做得很高；像素动作在短视频平台天然有传播力。\n\n【风险】一击必杀对新手极不友好，Story Mode 能否留住轻度玩家是关键；传送类动作对手柄/键鼠的判定精度要求高，公开测试的口碑会直接决定首发；发售日仍未定，愿望单转化窗口不确定。\n\n【综合评价】用一把苦无把移动与攻击合并，是 2026 年像素动作里少见的“机制先行”设计；Kickstarter 与愿望单数据说明它已经跨过了“有人想要”的门槛，剩下的是手感能否兑现。",
+      "why_notable": "苦无兼作攻击与传送锚点，把位移和连段合成一个操作；15 万愿望单 + 14.6 万美元众筹证明机制切片已被验证",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": "「苦无传送」套「一击必杀像素动作」新瓶，韩国 1HP STUDIO 开发，Steam 愿望单 15 万，12 月公开测试"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Indie Game Joe · 捷克独立",
+     "tags": [
+      "模拟",
+      "客制键盘",
+      "治愈"
+     ],
+     "title": "《KeyCapy》：给水豚做定制键盘的治愈模拟，单人 PC、无发售日、Steam 测试报名已开放",
+     "en_title": "You build custom keyboards for capybaras",
+     "full_text": "You build custom keyboards for capybaras\n\n- Every part you choose changes the sound\n- Clean and repair old keyboards too\n- Decorate your workspace how you like\n\nIt's called KeyCapy. Key info:\n• Screenshots and Steam page below 👇\n• Single-player\n• PC on Steam\n• No release date or demo yet\n• Playtest sign-ups are open on Steam\n• Text in 15 languages including English\n• Made by Vojtěch Peták\n\nI didn't expect a keyboard game to have capybaras in it, but I am all for it! I think I'd spend hours trying to find the best sounding keyboard.",
+     "author": "Indie Game Joe",
+     "date": "2026-11-24",
+     "likes": 1485,
+     "views": 71133,
+     "link": "https://x.com/IndieGameJoe/status/2125331244745740557",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2125330945540538369/img/q6F68RRc3DcGj6Yf.jpg",
+      "video_url": "https://x.com/IndieGameJoe/status/2125331244745740557/video/1"
+     },
+     "summary": "独立开发者 Vojtěch Peták 的《KeyCapy》是一款给水豚顾客组装客制化键盘的模拟游戏：每个部件都会改变敲击声音，也可以清洁、维修旧键盘，并自由装饰自己的工位。单人游玩、PC/Steam，文本支持 15 种语言（含英文），目前没有发售日和 Demo，但 Steam 上的 Playtest 报名已开放。推荐者 Indie Game Joe 称“没想到键盘游戏里会有水豚，但我完全接受”。",
+     "recommendation": "给水豚组装客制化键盘的治愈模拟，PC 测试报名已开放",
+     "featured": true,
+     "game_ref": "KeyCapy",
+     "enrichment": {
+      "game_name": "KeyCapy",
+      "genre": "休闲 / 独立 / 模拟",
+      "developer": "Vojtěch Peták（个人开发者，捷克）",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/5427070/KeyCapy/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5427070/6dcd9c0267b483e77c14ea512a2f381907eb868b/header.jpg",
+      "youtube_video": null,
+      "description": "【核心玩法】把“客制化键盘”这件极客爱好做成可玩的装机组：轴体、键帽、外壳逐件选择，每一件都会改变最终的声音表现；玩家要按顾客（水豚）的偏好调出“好听”的组合。除了装新键盘，还要清洗、维修旧键盘，并装饰自己的工位。\n\n【为什么是水豚】客制化键盘圈的核心情绪是“手感与声音的个人偏好”，这很难用数值表达；用水豚这种无攻击性的角色承接“顾客满意度”，把评测标准从“对不对”换成“合不合口味”，冲突被降到最低，符合治愈系的定位。\n\n【结构与节奏】单人、无战斗、无计时压力，Steam 分类里明确标注“可自行掌握节奏”“无需应对快速反应事件”“随时保存”——这是给“下班后想动手做点小事”的人群设计的，不是给挑战型玩家。\n\n【优势】题材空白且高度自解释：键盘圈本身有庞大的装机内容生态，天然适配短视频与 ASMR；水豚带来的反差萌是极低成本的传播点；15 种语言说明首发就打算做全球。\n\n【风险】“装键盘”作为核心循环，重复度很高，需要足够多的部件与顾客故事撑住时长；没有发售日与 Demo，热度容易在等待中流失；同类治愈模拟在 Steam 已经拥挤，声音品质本身会成为硬门槛。\n\n【综合评价】典型的“把小众爱好做成治愈模拟”路线：不发明玩法，靠题材错位（水豚 × 客制键盘）和情绪定位取胜；成败取决于部件数量与声音打磨，而不是机制创新。",
+      "why_notable": "客制键盘 × 水豚顾客的题材错位，踩中键盘圈的装机内容生态与治愈系需求，是低成本差异化选题的样本",
+      "pcu": "暂未发售",
+      "current_players": null,
+      "estimated_sales": null,
+      "gi_summary": "「客制键盘组装」套「水豚治愈模拟」新瓶，捷克个人开发者 Vojtěch Peták 制作，单人 PC，Steam 测试报名中"
+     }
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Ninjago · 腾讯新作",
+     "tags": [
+      "动作竞技",
+      "跨平台",
+      "腾讯"
+     ],
+     "title": "腾讯 Cube Studio 公布《Showtime》：PC/安卓/iOS 跨平台、强调破招与跑酷的风格化动作竞技",
+     "en_title": "Tencent’s New Game Showtime announced",
+     "full_text": "Tencent’s New Game Showtime announced\n\nA stylish multiplayer action competitive game focused on flashy combat and skill-based gameplay from Cube Studio.\n\n• PC, Android & iOS Cross-platform\n• Stylish characters with unique abilities\n• Dozens of weapons & flashy combat moves\n• Parkour across the battlefield\n• Light, heavy & counter-break attacks\n• Trigger Showtime by breaking enemy moves\n• Fast respawns & customizable playstyles\n• Customize weapons & chips",
+     "author": "Ninjago",
+     "date": "2026-11-25",
+     "likes": 1364,
+     "views": 58599,
+     "link": "https://x.com/Ninjago9101/status/2125577702514307099",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HX-RpkTa8AAAp6h.jpg"
+     },
+     "summary": "腾讯 Cube Studio 公布新作《Showtime》：风格化多人动作竞技，主打华丽战斗与技巧向操作。已披露要素包括 PC/Android/iOS 跨平台、角色各有独特能力、数十种武器与华丽连招、战场跑酷、轻/重/反击破招、通过打断对手招式触发 Showtime、快速复活与可定制打法、武器与芯片可改。",
+     "recommendation": "腾讯 Cube Studio 公布《Showtime》：跨平台风格化动作竞技，破招触发 Showtime",
+     "unselected": true,
+     "game_ref": "Showtime",
+     "enrichment": {
+      "game_name": "Showtime",
+      "genre": "动作 / 竞技（多人）",
+      "developer": "Cube Studio（腾讯）",
+      "platforms": [
+       "PC",
+       "Android",
+       "iOS"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "腾讯 Cube Studio 的新作，定位是风格化多人动作竞技：核心是“破招触发 Showtime”——打断对手招式后进入高光输出窗口，把传统动作游戏的弹反收益做成了可被观赏的演出。跨 PC/移动端，角色能力、武器与芯片均提供构筑空间。",
+      "why_notable": "腾讯在跨平台动作竞技上的新尝试，破招→Showtime 的收益设计值得关注"
+     }
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Culture Crave · 漫改新作",
+     "tags": [
+      "进击的巨人",
+      "漫改",
+      "全平台"
+     ],
+     "title": "《Attack on Titan 3》12 月 10 日全平台发售：PC 需 125GB、约 70 小时流程、覆盖动画全篇",
+     "en_title": "‘Attack on Titan 3’ requires 125 GB of storage on PC",
+     "full_text": "‘Attack on Titan 3’ requires 125 GB of storage on PC 🖥️\n\n• Features ~70 hours of total gameplay\n\n• Covers the entire anime from start to finish\n\nReleasing December 10 on all platforms https://t.co/IGodjrKqtM",
+     "author": "Culture Crave 🍿",
+     "date": "2026-11-25",
+     "likes": 20441,
+     "views": 1348448,
+     "link": "https://x.com/CultureCrave/status/2125533793721446793",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2125533263250997249/img/KCF8HEzTa-fleF4q.jpg",
+      "video_url": "https://x.com/CultureCrave/status/2125533793721446793/video/1"
+     },
+     "summary": "《Attack on Titan 3》公布发售信息：PC 版需要 125GB 存储空间，总流程约 70 小时，剧情覆盖动画从开头到结尾的全篇，12 月 10 日登陆全平台。",
+     "recommendation": "《进击的巨人 3》12 月 10 日全平台：125GB、约 70 小时、覆盖动画全篇",
+     "unselected": true,
+     "game_ref": "Attack on Titan 3",
+     "enrichment": {
+      "game_name": "Attack on Titan 3",
+      "genre": "动作 / 漫改",
+      "developer": "未披露",
+      "platforms": [
+       "PC",
+       "PS5",
+       "Xbox Series",
+       "Switch"
+      ],
+      "price": "未公布",
+      "release_date": "2026年12月10日",
+      "steam_rating": "未发售",
+      "steam_url": null,
+      "header_image": null,
+      "youtube_video": null,
+      "description": "《进击的巨人》系列新作，官方口径为覆盖动画全篇剧情、约 70 小时流程，PC 版安装体积 125GB，12 月 10 日全平台同步发售。",
+      "why_notable": "漫改大作的规格标杆：125GB / 70 小时的“全篇重制”路线，对存储与内容量都是压力测试"
+     }
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "ごだか · 日本独立新作",
+     "tags": [
+      "合作解谜",
+      "2v2",
+      "抢先体验"
+     ],
+     "title": "《Death Row》：2v2 拷问室解谜死亡游戏，输的一队被天花板巨锯处刑",
+     "en_title": "【新作】拷問部屋で2対2のデスゲーム『Death Row』",
+     "full_text": "【新作】拷問部屋で2対2のデスゲーム\n『Death Row』\n\n死刑宣告された4人。天井には巨大ノコギリ。\n2人ずつの協力プレイで相手チームより先にパズルを解読し脱出するゲーム。\n\n負けたチームは処刑。両断される。\n新作オンラインマルチ協力デスゲーム。 https://t.co/15YGIHYzFc",
+     "author": "ごだか",
+     "date": "2026-11-24",
+     "likes": 2247,
+     "views": 279457,
+     "link": "https://x.com/G_Godaka/status/2125348747005554762",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HXzdv7Ba8AAQ1V9.jpg"
+     },
+     "summary": "日本独立新作《Death Row》：4 名死刑犯被关进拷问室，天花板悬着巨型电锯。玩家两人一队合作解谜，先于对手解开机关并逃脱者存活，落败一队被处刑（两断）。已以抢先体验形式在 Steam 上线，国区 17.99 元，支持 2 人合作与 4 人 2v2 在线对战。",
+     "recommendation": "2v2 拷问室解谜：先解开电锯机关的一队活，输的一队被处刑",
+     "unselected": true,
+     "game_ref": "Death Row",
+     "enrichment": {
+      "game_name": "Death Row",
+      "genre": "休闲 / 独立 / 合作解谜（非对称对抗）",
+      "developer": "Dynamic Dice",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "¥17.99",
+      "release_date": "已发售（抢先体验）· 2026年11月13日",
+      "steam_rating": "抢先体验",
+      "steam_url": "https://store.steampowered.com/app/5015330/Death_Row/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5015330/f51109a84ea33b75e074c9152624982f1899ac67/header.jpg",
+      "youtube_video": null,
+      "description": "拷问室里的 2v2 解谜竞速：一队负责破译电路、一队负责干扰，天花板电锯持续逼近，先解开机关的一队逃脱，另一队被处刑。把“合作解谜”和“非对称对抗”压进同一个房间，节奏由电锯倒计时统一。",
+      "why_notable": "合作解谜 + 2v2 对抗的紧凑结构，用统一倒计时解决两类玩法的节奏冲突"
+     }
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Niche Gamer · 新游曝光",
+     "tags": [
+      "增量游戏",
+      "破坏解压",
+      "2027"
+     ],
+     "title": "《Paper Shredder》：把公司机密文件一路碎成高塔的增量游戏，2027 年 1 月 12 日上线",
+     "en_title": "Incremental destruction game Paper Shredder launches in January 2027",
+     "full_text": "Incremental destruction game Paper Shredder launches in January 2027: https://t.co/vbjSzWiiZ4 https://t.co/bu2PKlKm9C",
+     "author": "Niche Gamer",
+     "date": "2026-11-25",
+     "likes": 5,
+     "views": 1144,
+     "link": "https://x.com/nichegamer/status/2125587499741319591",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HX-akPBWsAAsE4c.jpg"
+     },
+     "summary": "《Paper Shredder》是一款渐进式放置/破坏游戏：玩家把公司的办公文件一张张碎掉，逐步升级成大规模销毁，清扫、升级、推倒如高塔般堆叠的机密档案，目标是拿到 100 万美元奖金并揭开底部的秘密。2027 年 1 月 12 日登陆 Steam，开发者 Embers。",
+     "recommendation": "把公司机密文件一路碎成塔的增量游戏，2027 年 1 月上线",
+     "unselected": true,
+     "game_ref": "Paper Shredder",
+     "enrichment": {
+      "game_name": "Paper Shredder",
+      "genre": "休闲 / 独立 / 模拟（增量破坏）",
+      "developer": "Embers",
+      "platforms": [
+       "Steam（Windows）"
+      ],
+      "price": "未公布",
+      "release_date": "2027年1月12日",
+      "steam_rating": "未发售",
+      "steam_url": "https://store.steampowered.com/app/4894750/Paper_Shredder/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4894750/83d9422ad06611a0a64e0203495ac64524533677/header.jpg",
+      "youtube_video": null,
+      "description": "同样是“碎纸解压 + 增量放置”，但走的是文件塔而不是钞票：碎纸、清扫、升级，把单张文件的枯燥打磨逐步放大成整层档案的销毁，最终揭开埋在底部的秘密。与已发售的《SHRED A BILLION》构成同一题材的两条路线，可对照观察这一细分品类的演化。",
+      "why_notable": "与《SHRED A BILLION》同题材不同切口，可作为“碎纸/碎钞”增量品类的对照样本"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "Unity for Games · 官方",
+     "tags": [
+      "Unity Spark",
+      "AI编辑器",
+      "场景标注"
+     ],
+     "title": "Unity Spark 新增 Annotate：可在场景里直接画、框选、指认，给 AI 精确的视觉上下文",
+     "en_title": "Instead of just describing where things go, you can annotate (draw, select, point) in the scene",
+     "full_text": "Instead of just describing where things go, you can annotate (draw, select, point) in the scene ✏️\n\nWith the Annotate feature in Unity Spark, you can annotate directly onto your game scene or anywhere in your workspace to give Unity Spark the exact visual context it needs. \n\nJoin the Unity Spark closed beta waitlist: https://t.co/VXc2WVQewh\n\n@tryplayground",
+     "author": "Unity for Games",
+     "date": "2026-11-25",
+     "likes": 44,
+     "views": 4185,
+     "link": "https://x.com/unitygames/status/2125589002883395909",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2125588892292141057/pu/img/1Eo-FdakT0r3XatS.jpg",
+      "video_url": "https://x.com/unitygames/status/2125589002883395909/video/1"
+     },
+     "summary": "Unity for Games 公布 Unity Spark 的 Annotate 功能：不再只靠文字描述“东西该放哪”，可以直接在游戏场景或工作区的任意位置标注——画线、框选对象、指认位置，把视觉上下文精确交给 Spark。目前该功能处于 closed beta，官方开放了等候名单（与 @tryplayground 合作）。",
+     "recommendation": "Unity Spark 支持在场景里直接画/选/指，让 AI 拿到精确视觉上下文",
+     "analysis": "AI 编辑器竞争的关键一步：文本 prompt 最难传达的是空间关系，而“在场景里画一笔”把意图直接变成坐标与对象引用。对关卡白模、UI 布局、特效摆位这类需要反复微调的环节，价值远大于“让 AI 从零生成一个场景”。",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "中文开发者 · Agent Skill",
+     "tags": [
+      "Agent Skill",
+      "游戏手感",
+      "樱井政博"
+     ],
+     "title": "有人把樱井政博 257 期游戏制作视频做成 Agent Skill：14 类要点、按需读取、每条带视频编号",
+     "en_title": "用 Claude Code 做小游戏，做完被人说「没手感」「操作发肉」，可以试试这个 Skill",
+     "full_text": "用 Claude Code 做小游戏，做完被人说「没手感」「操作发肉」，自己又说不清该改哪，可以试试这个 Skill。\n\n樱井政博有个讲游戏制作的 YouTube 频道，正片 257 期。有人把这 257 期字幕全拉下来，让 AI 总结成了一个 Agent Skill，要点按 gameplay、planning、motion、effects、ui、sound 等 14 个类别分好了。\n\n装好后问它「樱井会怎么做？」或者「帮我评审一下这个游戏的手感」，它就会去读这些内容。\n\n作者拿它做了个例子：装了这个 Skill 的 agent 从企划一路做到打磨、起标题、做图标，出来一个 Godot 4.6 的单屏动作游戏，敌人的子弹放得越近再打回去，威力越大。作者还附了一份说明，写这个游戏参考了 Skill 的哪些地方，带视频编号。\n\n主文件约 2.7 万字，具体数值和做法拆进按类分的参考文件，用到哪类读哪类。每条要点都带视频编号和标题，能回原视频核对。\n\n装法：克隆仓库，把里面的 skills/sakurai 文件夹拷进 ~/.claude/skills/。\n\n注意这是粉丝做的非官方版本，全日文，内容是 AI 对视频的总结，不是樱井本人的原话。",
+     "author": "Larry 🍀 Orbi",
+     "date": "2026-11-25",
+     "likes": 414,
+     "views": 28335,
+     "link": "https://x.com/xqliu/status/2125409558973813099",
+     "media": null,
+     "summary": "一个粉丝项目把樱井政博 YouTube 频道 257 期正片字幕全部抓下来，用 AI 总结成 Claude Code 的 Agent Skill：主文件约 2.7 万字，要点按 gameplay、planning、motion、effects、ui、sound 等 14 个类别拆进参考文件，用到哪类读哪类，每条都带视频编号可回原片核对。作者示例：装了这个 Skill 的 agent 从企划做到打磨、起标题、做图标，产出一个 Godot 4.6 单屏动作游戏（敌人子弹越近打回去威力越大），并附了“参考了哪几条”的说明。安装方式是克隆仓库，把 skills/sakurai 拷进 ~/.claude/skills/。作者注明这是非官方版本、全日文、内容是 AI 总结而非樱井原话。",
+     "recommendation": "樱井政博 257 期视频做成 Agent Skill，按手感/企划等 14 类检索",
+     "analysis": "“把大师的方法论做成可检索上下文”比“让 AI 写代码”更接近当下的真实收益：模型不缺产出代码的能力，缺的是判断“什么算好手感”的依据。这类领域知识包复用成本极低，但要注意两点——版权归属，以及 AI 二次总结带来的失真。"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**AI 的成本曲线开始决定创作方式**\n同一提示词横评四款模型，GPT-6.2 Sol 用 3.26 美元、40 分钟完成，Fable 5.2 花了 74.26 美元、2 小时 8 分；Opus 5.6 用 6 张参考图纯代码生成《咒术回战》动画。另一边，办了 8 年的 Atari Homebrew Awards 宣布停办——主办方说，已经无法在 LLM 生成的作品里判出“谁真的写了代码”。\n\n**GTA 6 的余波：法务清剿与日活迁移**\nTake-Two 通过 DMCA 打掉 3,007 个 GTA 6 AI 移植的 GitHub fork，Discord 关停、15 岁主创退出；Alinea 估算 GTA 6 发售后《使命召唤》日活从 750 万跌到 440 万，四天后仍低约 41%。平台侧，Steam 一年内第二次改版商城，CDPR 则与索尼签下《巫师 4》营销协议。\n\n**新游：碎钞、苦无与水豚键盘**\n《SHRED A BILLION》把放置循环做成四人合作的体力活，首日 97% 好评；《INARI》用一把苦无把攻击与传送合并，愿望单破 15 万；《KeyCapy》让玩家给水豚组装客制化键盘。开发工具侧，Unity Spark 支持在场景里直接画/选/指，樱井政博 257 期视频被做成了可按手感检索的 Agent Skill。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
