@@ -1,0 +1,562 @@
+{
+  "date": "2026-11-27",
+  "meta": {
+    "raw_count": 247,
+    "filtered_count": 184,
+    "selected_count": 12,
+    "crawl_time": "2026-11-27 09:32"
+  },
+  "lede": "零编程的 28 岁开发者靠 AI 做出首周 1.9 亿日元的《Slotbound》；育碧被曝把生成式 AI 变成立项默认项，不用要写理由；GTA 6 发售前一周把美国 PS5/Xbox 销量拉到去年同期的 2.4/2.3 倍。",
+  "editors_pick": [
+    {
+      "section_id": "ai",
+      "item_index": 0,
+      "hook": "零编程的韩国开发者用 AI 做《Slotbound》，首周 1.9 亿日元、20 万份"
+    },
+    {
+      "section_id": "indie",
+      "item_index": 0,
+      "hook": "单人开发者用 AI 做 Minecraft MMO，首周 Tebex 收入 30 万美元"
+    },
+    {
+      "section_id": "industry",
+      "item_index": 0,
+      "hook": "Rockstar 工会承认投票 75% 反对，1,544 人投票、投票率 93%"
+    }
+  ],
+  "digest": [
+    {
+      "id": "ai",
+      "text": "零编程开发者用 AI 做《Slotbound》，首周 1.9 亿日元、20 万份\n育碧把生成式 AI 变成立项默认项：不用 AI 要逐条解释\nOpenGame 开源：100+ 小游戏模板，号称打通微信/抖音上架变现"
+    },
+    {
+      "id": "industry",
+      "text": "Rockstar 工会承认投票 75% 反对，投票率 93%\nGTA 6 发售前一周：美国 PS5 销量同比 2.4 倍、Xbox 2.3 倍\nGTA 6 首周直播 4.2 亿小时，接近上一个纪录的 3 倍\nSteam 审核最长 12 个工作日，建议提前 3 周提交"
+    },
+    {
+      "id": "indie",
+      "text": "单人开发者用 AI 做 Minecraft MMO，首周 Tebex 收入 30 万美元\n玩家自制宝可梦 MMO《PokeZen》开放丰缘地区，PC/安卓免费\n《SPELLOT》把施法做成停老虎机：三格组合即魔法"
+    },
+    {
+      "id": "tools",
+      "text": "Unity Fellowship：10 支团队各 5 万美元，0 分成、IP 归开发者\n虚幻 Mesh Terrain 教程：非破坏性堆叠修改器 + 自适应细分"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI科技热点",
+      "title_en": "AI & TECH",
+      "color": "#a78bfa",
+      "items": [
+        {
+          "idx": "AI科技热点 01",
+          "source": "サークルきなこ棒 · 游戏开发观察",
+          "tags": [
+            "AI开发",
+            "独立游戏",
+            "市场数据"
+          ],
+          "title": "《Slotbound》：零编程的 28 岁韩国开发者用 AI 做出首周 1.9 亿日元、20 万份的独游",
+          "en_title": "初めて作ったゲームが、1週間で約2億円売れたらしい。韓国の28歳、Optima Archさん。",
+          "full_text": "初めて作ったゲームが、1週間で約2億円売れたらしい。\n\n韓国の28歳、Optima Archさん。プログラミングも絵も経験なしで、1年前、AIへの最初の指示は「WASDで動く四角を作って」だったらしい。そこからスロットで軍隊を召喚するゲーム『Slotbound』を作って、11月12日にSteamで発売。48時間で5万本、6日で20万本超え、初週の売上は約1億9000万円。評価も91%が好評。\n\n僕が一番すごいと思ったのは、発売の4ヶ月前に無料版を出して、発売前に欲しいものリスト10万件を集めてたこと。AIの話題だけ見てると「AIが作ったから売れた」に見えるけど、数字を追うと、無料版で遊んでもらって直して、待ってる人を増やした積み重ねが効いてる。\n\n#Steam #ゲーム制作",
+          "author": "サークルきなこ棒",
+          "date": "2026-11-26",
+          "likes": 613,
+          "views": 67026,
+          "link": "https://x.com/circlekinakoboo/status/2125779574500037032",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HYAhD0gaoAAqk9f.jpg"
+          },
+          "summary": "韩国 28 岁开发者 Optima Arch 此前没有编程和美术经验，一年前给 AI 的第一条指令是「做一个用 WASD 移动的方块」。他用 AI 做出老虎机召唤军队的 Roguelike《Slotbound》，11 月 12 日登陆 Steam：48 小时卖 5 万份，6 天超过 20 万份，首周销售额约 1.9 亿日元，Steam 好评率 91%。博主指出真正的关键动作是发售前 4 个月放出免费版、攒到 10 万愿望单，再用反馈迭代。",
+          "analysis": "AI 把「做出能玩的原型」的成本压到接近零，直接后果是同类供给暴增，发行端的注意力反而更贵。Slotbound 的可复制之处不是「用 AI」，而是把免费 Demo 当作品牌预热与测试池：4 个月里用真实玩家反馈改玩法、把愿望单堆到 10 万，发售日只是收网。对国内小团队，这套「Demo先行 + 愿望单蓄水」比追新模型更值得抄。",
+          "recommendation": "零编程的韩国开发者用 AI 做《Slotbound》，首周 1.9 亿日元、20 万份",
+          "featured": true,
+          "game_ref": "Slotbound",
+          "enrichment": {
+            "game_name": "Slotbound",
+            "genre": "Roguelike / 自动战斗 / 策略",
+            "developer": "Optima Arch（个人开发）",
+            "platforms": [
+              "Steam（Windows / macOS）"
+            ],
+            "price": "¥42",
+            "release_date": "已发售 · 2026年11月12日",
+            "steam_rating": "91% 好评（报道口径）· Steam 现有 2,745 条评价",
+            "steam_url": "https://store.steampowered.com/app/4459590/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4459590/560f439f789caa08634fbf9ff462c73bf06fbf41/header.jpg",
+            "youtube_video": null,
+            "description": "【核心玩法】把「老虎机」和「自走军团」缝在一起：战斗中转动 3x3 老虎机来召唤单位，停下的图案决定你这一轮拿到什么兵种，再通过吸收其他单位把军队滚大。道具与核心可以改变出率、扭转局势，玩家在「赌一把」和「稳住阵容」之间做取舍，最后扛过审判波次与 Boss。\n\n【为什么上手快】操作只有「转」和「摆」，一局时长被压得很短，失败成本低；但概率、吸收、道具三条线叠起来后，又有足够的构筑深度，属于典型的「易学难精」Roguelike 结构。\n\n【买量友好】画面是高饱和的卡通单位与满屏数字，短视频里三秒就能看懂「转出 army」的爽点，天然适合做投放素材——这也是它能在发售前后快速扩散的原因之一。\n\n【AI 的真实位置】开发者没有编程和美术背景，靠 AI 完成实现与部分资产；但从结果看，决定成败的是玩法选题、Demo 节奏与愿望单运营，AI 只是把执行门槛降到了他能独立完成的水平。\n\n【风险】老虎机随机性在长线游玩里容易变成「读脸」体验，需要靠核心与道具持续给玩家可控感；同类「转盘召唤」玩法出现后，先发优势要靠更新与内容量维持。\n\n【综合评价】2026 年「AI 做出第一款游戏就卖爆」最完整的样本：低成本实现 + 强传播玩法 + 四个月 Demo 蓄水，三件事缺一不可。",
+            "why_notable": "首周约 1.9 亿日元、20 万份，证明零基础开发者用 AI + Demo 蓄水也能跑出商业成绩",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "首周超 20 万份（报道口径）",
+            "gi_summary": "「老虎机转盘」套「自走军团 Roguelike」新瓶，Optima Arch 个人开发，Steam 国区 42 元"
+          }
+        },
+        {
+          "idx": "AI科技热点 02",
+          "source": "Eurogamer · 行业政策",
+          "tags": [
+            "生成式AI",
+            "育碧",
+            "工作室管理"
+          ],
+          "title": "育碧被曝把生成式 AI 变成立项默认项：不用 AI，要逐条解释为什么",
+          "en_title": "Ubisoft reportedly goes all in on company-wide generative-AI use, and if developers don't want to use it, they have to explain why in detail",
+          "full_text": "Ubisoft reportedly goes all in on company-wide generative-AI use, and if developers don't want to use it, they have to explain why in detail\n\nhttps://t.co/DEG2B8ai2N https://t.co/6YUntpUGKM",
+          "author": "Eurogamer",
+          "date": "2026-11-26",
+          "likes": 46,
+          "views": 8505,
+          "link": "https://x.com/eurogamer/status/2125926702882967671",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HYDOTW8bcAE-Hsg.jpg"
+          },
+          "summary": "Vertical Slice 援引多名育碧在职员工称：现在提交新项目立项，团队需要说明生成式 AI 会如何帮助开发；不想用的团队必须向高层详细解释理由，否则提案可能进不了评审。育碧此前成立了内部 AI 部门 Motherbrain，官方否认「强制使用」，但受访者称感到「被逼到墙角」，有人形容这是「自上而下的 AI 精神病」。",
+          "analysis": "这件事的信号意义大于育碧本身：大厂正在把生成式 AI 从「可选工具」变成「立项默认项」，并把举证责任转移给不用的人。对从业者，这意味着「会不会用 AI」逐渐不再是加分项，而是岗位基线；对管理者，真正的风险不是用不用，而是把 AI 当成绩效指标后，团队为了过审而堆砌无意义的 AI 产出。",
+          "recommendation": "育碧立项新规：不用生成式 AI，须逐条解释理由",
+          "featured": true
+        },
+        {
+          "idx": "AI科技热点 03",
+          "source": "Tom Huang · 开源项目",
+          "tags": [
+            "游戏Agent",
+            "开源",
+            "AI工作流"
+          ],
+          "title": "OpenGame 开源：号称 72 小时 90 万行的「游戏 Agent」，一键复刻小游戏并打通微信/抖音上架",
+          "en_title": "正式开源 OpenGame！游戏界的 DeepSeek 时刻来了！Code Agent 一键复刻 GTA6、黑神话等大作和 100+ 印钞机小游戏",
+          "full_text": "正式开源 OpenGame🎮！游戏界的 DeepSeek 时刻来了！无需 Fable 5.2 也能做爆款🔥\n\nCode Agent 一键复刻 GTA6、黑神话等大作和 100+ 印钞机小游戏，打通微信/抖音/TikTok 发布变现全流程⚡️\n\n72 小时 90w+ 行代码！全网首个能赚钱的 Super Game Agent，Codex/CC/DSH 等 29 种 Agent、15+多模态模型🔥 https://t.co/soOvj8S4WP",
+          "author": "Tom Huang",
+          "date": "2026-11-26",
+          "likes": 982,
+          "views": 80956,
+          "link": "https://x.com/tuturetom/status/2125885818816561502",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125882685008875520/img/q7JE2PjO5RSXWnQZ.jpg",
+            "video_url": "https://x.com/tuturetom/status/2125885818816561502/video/1"
+          },
+          "summary": "Tom Huang 宣布开源 OpenGame，定位「Super Game Agent」：内置 100+ 爆款小游戏模板，支持 Codex、Claude Code、DeepSeek Harness 等 29 种 Agent 与 15+ 多模态模型，宣称打通微信小游戏/抖音/TikTok 的发布与广告变现流程，项目规模为「72 小时 90 万行代码」。同批推文还放出了英文、日文版本与贡献者名单。",
+          "analysis": "它真正想解决的不是「生成游戏」，而是生成之后的发布与变现链路——这恰好是此前 AI 游戏 demo 最短的一环。但「90 万行」「一键复刻 GTA6」属于营销口径，模板化小游戏同质化、IP 侵权与平台审核风险都会在上架阶段集中暴露；把它当工作流脚手架可以，当印钞机不行。",
+          "recommendation": "OpenGame 开源：100+ 小游戏模板，打通微信/抖音上架与变现",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "title": "游戏行业动态",
+      "title_en": "INDUSTRY",
+      "color": "#D7263D",
+      "items": [
+        {
+          "idx": "游戏行业 01",
+          "source": "PC Gamer / Eurogamer（多家报道）· 劳工关系",
+          "tags": [
+            "Rockstar",
+            "工会",
+            "劳工关系"
+          ],
+          "title": "Rockstar 工会承认投票未过：75% 反对，投票率超 93%",
+          "en_title": "Rockstar workers vote overwhelmingly against union recognition",
+          "full_text": "Rockstar workers vote overwhelmingly against union recognition https://t.co/G0g60ne4kz",
+          "author": "PC Gamer",
+          "date": "2026-11-26",
+          "likes": 26,
+          "views": 7541,
+          "link": "https://x.com/pcgamer/status/2125987597424181317",
+          "media": null,
+          "summary": "投票横跨 GTA 6 发售前后两周，共 1,544 名员工参与，投票率超过 93%：25% 赞成与 IWGB 旗下的 Rockstar Game Workers Union 达成承认协议，75% 反对。工会表示结果不影响员工组织与行使工会权利，但 Rockstar 无需定期与工会代表进行集体谈判；IWGB 称会继续组织工作。背景是 2025 年 10 月 30 余名员工因加入工会 Discord 被解雇，相关就业仲裁刚结束结案陈词。",
+          "analysis": "在史上最大规模发行周投出 75% 反对，说明「工会 = 影响项目与奖金」的叙事在英国游戏业仍占上风，也说明高压发行期的员工更倾向与公司直接对话。对国内团队的启示不在劳资立场，而在组织能力：超大作把工作室推到极限时，沟通机制缺失会以离职率和舆论的形式反噬。",
+          "recommendation": "Rockstar 工会承认投票 75% 反对，1,544 人投票、投票率 93%",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 02",
+          "source": "Eurogamer / Circana · 市场数据",
+          "tags": [
+            "GTA6",
+            "主机硬件",
+            "市场数据"
+          ],
+          "title": "GTA 6 把美国主机销量拉回增长：PS5 同比 2.4 倍、Xbox 2.3 倍，涨价也拦不住",
+          "en_title": "GTA 6 reinvigorates PlayStation 5 and Xbox Series S/X console sales in the US, even at their inflated prices",
+          "full_text": "Despite the far higher prices of PlayStation and Xbox consoles today compared to their launch, or even the same period last year, both brands of console saw a significant boost in US sales leading up to the launch of this generation's biggest game: Grand Theft Auto 6. https://t.co/qlR6YADAK8",
+          "author": "Eurogamer",
+          "date": "2026-11-26",
+          "likes": 2,
+          "views": 3181,
+          "link": "https://x.com/eurogamer/status/2125915683808489853",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HYDFDGuWoAMD5Hv.jpg"
+          },
+          "summary": "Circana 的 Mat Piscatella 数据显示，截至 11 月 14 日当周（GTA 6 于 11 月 19 日发售），美国 PS5 硬件销量为去年同期的 2.4 倍，Xbox 为 2.3 倍。涨价并没有抑制需求：PS5 现价 650 美元（去年 550）、PS5 Pro 900 美元（750）、Xbox Series X 800 美元（650）、Series S 500 美元（400）。Switch 2 同期也涨 40%，主要由《塞尔达传说：时之笛》重制版带动。GTA 6 首日卖出 3,250 万份、收入 37.9 亿美元。",
+          "analysis": "成熟主机周期里，一款超大作仍能把硬件需求整体抬起来，说明「内容驱动硬件」这条规律没变；但结构性代价是价格带上移，新用户的进入门槛更高。对发行团队，这意味着主机端的短期装机脉冲值得押注，但长期要看这批新机用户能否被其他内容留住。",
+          "recommendation": "GTA 6 发售前一周：美国 PS5 销量同比 2.4 倍、Xbox 2.3 倍",
+          "featured": true
+        },
+        {
+          "idx": "游戏行业 03",
+          "source": "Eurogamer / Streams Charts · 市场数据",
+          "tags": [
+            "GTA6",
+            "直播",
+            "观看时长"
+          ],
+          "title": "GTA 6 首周直播观看 4.2 亿小时，接近上一个纪录的 3 倍",
+          "en_title": "GTA 6 reportedly sets massive livestreaming record, watched more in its first week than Elden Ring, Diablo 4, Valorant, and Lost Ark combined",
+          "full_text": "GTA 6 reportedly sets massive livestreaming record, watched more in its first week than Elden Ring, Diablo 4, Valorant, and Lost Ark combined\n\nhttps://t.co/B030Ptm66T https://t.co/KMXAomlYa7",
+          "author": "Eurogamer",
+          "date": "2026-11-26",
+          "likes": 9,
+          "views": 2072,
+          "link": "https://x.com/eurogamer/status/2125976107417842034",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HYD5VjtaQAAPNW5.jpg"
+          },
+          "summary": "Streams Charts 统计，GTA 6 发售首 7 天在 Twitch、YouTube、Kick 等平台累计超过 4.2 亿小时观看，接近上一个纪录（2020 年 Valorant 内测）的 3 倍，且超过 Valorant、艾尔登法环、暗黑 4、失落方舟四款游戏首周观看时长之和。YouTube 在发售前 6 小时平均观众领先，随后 Twitch 在内容量上反超并创下平台历史新高；1,056 个频道借 GTA 6 刷新自身峰值。",
+          "analysis": "直播已经是超大作事实上的第二发行渠道：4.2 亿小时相当于把首发营销预算外包给了主播生态。副作用是中小团队的首发窗口被进一步压缩——同一周内几乎所有注意力都流向单一产品，错峰发行比抢档期更现实。",
+          "recommendation": "GTA 6 首周直播 4.2 亿小时，是上一个纪录的近 3 倍",
+          "featured": false
+        },
+        {
+          "idx": "游戏行业 04",
+          "source": "빌더 딘 · 开发者经验",
+          "tags": [
+            "Steam",
+            "发行流程",
+            "审核"
+          ],
+          "title": "Steam 商店审核最长要 12 个工作日，Valve 称重提交积压所致",
+          "en_title": "스팀에 게임을 내려면 심사를 통과해야 합니다. 그런데 요즘은 이 심사가 최대 12영업일까지 걸립니다.",
+          "full_text": "스팀에 게임을 내려면 심사를 통과해야 합니다. 그런데 요즘은 이 심사가 최대 12영업일까지 걸립니다.\n\n밸브가 11월 3일에 직접 밝혔습니다. 원래는 3~5일이면 보는데, 한 번 떨어져서 다시 내는 게임이 많아 밀리고 있다고요.\n\n그래서 처음에 한 번에 붙는 게 제일 빠릅니다. 스팀 공식 문서의 확인 항목은 이렇습니다.\n\n1. 스팀의 초록색 '플레이' 버튼으로 실행해서 5분 이상 해보기\n2. 게임에 필요한 프로그램(DirectX 등) 골라두기\n3. 업적이 있다면 이름·설명·아이콘을 채우고 실제로 열리는지 확인\n4. 클라우드 저장을 쓴다면 두 컴퓨터에서 이어지는지 확인\n5. 게임 화면 스크린샷 5장 이상\n\n2번이 의외로 놓치기 쉽습니다. 심사는 아무것도 안 깔린 컴퓨터에서 하는데, 내 컴퓨터엔 이미 깔려 있어서 잘 돌아가거든요. 바이브코딩으로 만들었다면 AI에게 \"이 게임 실행에 필요한 프로그램 목록 알려줘\"부터 물어보세요.\n\n출시일을 정했다면 3주 정도 여유를 두고 제출하는 게 안전합니다.\n\n원문 링크는 답글에 달아뒀습니다.",
+          "author": "빌더 딘",
+          "date": "2026-11-26",
+          "likes": 166,
+          "views": 14095,
+          "link": "https://x.com/JungkwanDean/status/2125758197944426651",
+          "media": null,
+          "summary": "韩国开发者整理 Valve 11 月 3 日的说明：Steam 商店审核目前最长要 12 个工作日，正常是 3–5 天，积压主要来自被打回后重新提交的游戏。他列出官方检查清单：用绿色「开始游戏」按钮实际运行满 5 分钟、勾选 DirectX 等必需运行库、成就的名称/描述/图标要能实际弹出、云存档要在两台机器上验证、至少 5 张游戏截图；并建议按计划发售日提前约 3 周提交。",
+          "analysis": "对赶圣诞档、或想从 EA 转正式的团队，审核周期是硬约束而不是软提醒。清单里最容易漏的是运行库勾选——审核在干净机器上跑，本地能启动不代表审核机也能；用 AI 生成的项目尤其容易只在本机验证过。把「提前 3 周提交」写进排期，比事后催审有效。",
+          "recommendation": "Steam 审核最长 12 个工作日，建议按发售日提前 3 周提交",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "title": "新游推文",
+      "title_en": "INDIE GAMES",
+      "color": "#E8B04B",
+      "items": [
+        {
+          "idx": "新游推文 01",
+          "source": "Rinaorc Studios · 独立开发者",
+          "tags": [
+            "Minecraft",
+            "UGC",
+            "AI开发"
+          ],
+          "title": "《ZombieZ》：单人开发者用 AI 做 Minecraft MMORPG，首周 Tebex 收入 30 万美元",
+          "en_title": "A solo developer vibe-coded his first Minecraft MMORPG and made $300k on Tebex in its first week in March 2026.",
+          "full_text": "A solo developer vibe-coded his first Minecraft MMORPG and made $300k on Tebex in its first week in March 2026.\n\n100,000 players have since joined the server.\n\nThe dev says he used AI for coding and some of the art.\n\nZombieZ V2 drops this Saturday, fully remastered.\n\nhttps://t.co/yqD9draZwg",
+          "author": "Rinaorc Studios",
+          "date": "2026-11-25",
+          "likes": 646,
+          "views": 89570,
+          "link": "https://x.com/Rinaorc/status/2125664491891470828",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125661244610760704/img/rp6OYRYWencKLz6N.jpg",
+            "video_url": "https://x.com/Rinaorc/status/2125664491891470828/video/1"
+          },
+          "summary": "单人开发者用 AI 辅助编程和部分美术，做出自己的第一款 Minecraft MMORPG 服务器：2026 年 3 月上线首周在 Tebex 收入 30 万美元，此后累计 10 万玩家进服。11 月 28 日（本周六）推出完全重制的 ZombieZ V2。",
+          "analysis": "",
+          "recommendation": "单人开发者用 AI 做 Minecraft MMO，首周 Tebex 收入 30 万美元",
+          "featured": true,
+          "game_ref": "ZombieZ",
+          "enrichment": {
+            "game_name": "ZombieZ",
+            "genre": "Minecraft MMORPG / 服务器玩法",
+            "developer": "Rinaorc Studios（单人开发）",
+            "platforms": [
+              "Minecraft Java（私服）"
+            ],
+            "price": "服务器内购（Tebex 商店）",
+            "release_date": "V2 于 2026年11月28日 上线",
+            "steam_rating": "未上 Steam",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【是什么】ZombieZ 不是独立客户端，而是架在 Minecraft 里的 MMORPG 服务器：靠 Minecraft 本体加自定义插件与资源包，承载等级、装备、任务、Boss、团本这一整套 MMO 循环，玩家通过服务器地址进入同一个持久世界。\n\n【商业化路径】它完全绕开 Steam，在 Tebex 上开店卖通行证、外观、加速等虚拟物品。报道称首个上线周（2026 年 3 月）Tebex 流水 30 万美元，累计 10 万玩家进服——放在 Minecraft 私服生态里属于头部成绩。\n\n【AI 的位置】开发者承认用 AI 写代码、也用它做了部分美术。但真正稀缺的不是「AI 能写插件」，而是把服务端、经济系统、内容更新节奏整合成一个能持续收钱的运营体；AI 只是让一个人扛得下这些工作量。\n\n【V2 的意义】11 月 28 日的 ZombieZ V2 是「完全重制」：重置进度曲线与内容，用来承接老玩家回流，也给新玩家一个干净的起点。对长期运营的私服，这种「赛季式重启」是续命手段。\n\n【风险】私服高度依赖 Minecraft 官方 EULA 与社区口碑，收入波动大；「AI 做的」既是传播点，也是内容质量被质疑时的靶子；一旦官方收紧商业化政策，整个模型会被重置。\n\n【综合评价】它证明在 Steam 之外，UGC 平台 + 私服 + Tebex 足以支撑一个人做出六位数美元的首周流水——这条路的天花板取决于平台政策，而不是开发能力。",
+            "why_notable": "绕开 Steam，用 Minecraft 私服 + Tebex 让单人开发首周拿到 30 万美元流水",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "首周 Tebex 流水 30 万美元，累计 10 万玩家",
+            "gi_summary": "「Minecraft 私服」套「MMORPG 运营」新瓶，Rinaorc 单人开发，收入走 Tebex 内购"
+          }
+        },
+        {
+          "idx": "新游推文 02",
+          "source": "PokeZen 官方 · 同人项目",
+          "tags": [
+            "宝可梦同人",
+            "MMO",
+            "开放测试"
+          ],
+          "title": "《PokeZen》：玩家自制的宝可梦 MMO 开放测试加入丰缘地区，PC/安卓免费",
+          "en_title": "Hoenn is now LIVE in the PokeZen open beta! A whole new region to explore, online with friends.",
+          "full_text": "🌴 Hoenn is now LIVE in the PokeZen open beta!\n\nA whole new region to explore, online with friends. Become Champion, head home to Twinleaf Town… and see where the road takes you. 👀\n\nFree to play on Windows & Android 👇\nhttps://t.co/fYiX1XUi3w\n\n#PokeZen #IndieGame #MMO https://t.co/lNDdjFXZkq",
+          "author": "PokeZen",
+          "date": "2026-11-25",
+          "likes": 1255,
+          "views": 97844,
+          "link": "https://x.com/PlayPokeZen/status/2125645861405577288",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125645433133559809/img/mZiMOtHBczaV1mPV.jpg",
+            "video_url": "https://x.com/PlayPokeZen/status/2125645861405577288/video/1"
+          },
+          "summary": "粉丝自制的宝可梦题材 MMO《PokeZen》在开放测试中上线丰缘（Hoenn）地区：完整区域、道馆挑战、冠军路线全部开放，支持与好友在线同行，并把神奥的 Twinleaf Town 保留为「家」。Windows 与 Android 免费游玩，官方同步放出宣传视频。",
+          "analysis": "",
+          "recommendation": "玩家自制宝可梦 MMO《PokeZen》开放丰缘地区，PC/安卓免费",
+          "featured": true,
+          "game_ref": "PokeZen",
+          "enrichment": {
+            "game_name": "PokeZen",
+            "genre": "宝可梦同人 / MMO / 开放世界",
+            "developer": "PokeZen 团队（非官方同人项目）",
+            "platforms": [
+              "Windows",
+              "Android"
+            ],
+            "price": "免费",
+            "release_date": "开放测试中（无正式发售日）",
+            "steam_rating": "未上 Steam",
+            "steam_url": null,
+            "header_image": null,
+            "youtube_video": null,
+            "description": "【是什么】PokeZen 是粉丝自制的宝可梦题材 MMO，跨 Windows 与 Android 运行，免费游玩。玩家在开放地图上捕捉、对战、挑战道馆，并可以和朋友在线一起推进剧情，定位介于「同人复刻」和「轻量 MMO」之间。\n\n【本次更新】开放测试新增丰缘（Hoenn）地区：完整区域、道馆战与冠军路线全部开放，官方同时把神奥的 Twinleaf Town 保留为玩家「家」的起点，形成多个地区并存的结构——这是同人项目少见的内容量。\n\n【为什么传播快】免费 + 跨端 + 情怀 IP，三个条件叠加，一条推文就拿到近 10 万浏览。视频里是熟悉的宝可梦美术和 MMO 视角，几乎不需要解释，天然适合社交平台二次传播。\n\n【产品上的看点】它把「宝可梦 + MMO」这个官方长期没做的组合真正做出来了：多人同屏、道馆协作、跨地区旅行，都是正作里被玩家反复要求却一直缺席的体验。\n\n【风险】这是非官方项目，IP 授权是悬在头顶的刀——任天堂/宝可梦公司一旦出手，服务器和社区可能一夜消失；同时 MMO 的长期运营（反作弊、经济、内容更新）远超同人项目的常规能力，热度越高越难维持。\n\n【综合评价】从产品角度看，它验证了「宝可梦 MMO」的需求真实存在；从商业角度看，它是一个随时可能归零的流量实验，不适合被当成可复制的路线。",
+            "why_notable": "免费跨端的宝可梦同人 MMO，内容量已做到多地区 + 在线道馆，单条推文近 10 万浏览",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "免费项目，无销售数据",
+            "gi_summary": "「宝可梦」套「同人 MMO」新瓶，非官方团队开发，Windows/Android 免费"
+          }
+        },
+        {
+          "idx": "新游推文 03",
+          "source": "soyukke · 日本独立开发者",
+          "tags": [
+            "Roguelite",
+            "老虎机",
+            "Steam"
+          ],
+          "title": "《SPELLOT》：停三格老虎机来拼魔法的 Roguelite，Steam 页面已上线、2027 年发售",
+          "en_title": "スロットを止めて呪文を組むローグライト「SPELLOT」Steamストア公開しました！",
+          "full_text": "スロットを止めて呪文を組むローグライト「SPELLOT」\nSteamストア公開しました！\n\n燃える × 剣が × 降り注ぐ！\n巨大な × 鎚が × 回る！\n止めた3本のリールの組み合わせがそのまま魔法になります\n\n2027年内発売予定で開発していきます！\n#SPELLOT #ゲーム制作 https://t.co/PSOtWZufLe",
+          "author": "soyukke",
+          "date": "2026-11-26",
+          "likes": 33,
+          "views": 2384,
+          "link": "https://x.com/soyukke_game/status/2125879404664598739",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125879129677639681/img/bDP35EsM-zazT_gI.jpg",
+            "video_url": "https://x.com/soyukke_game/status/2125879404664598739/video/1"
+          },
+          "summary": "日本独立开发者 soyukke 公布 Roguelite 新作《SPELLOT》并上线 Steam 商店页：战斗中以停三条老虎机转轴的方式施法，停下的三个图标组合直接构成魔法——火 × 剑 = 燃烧的剑雨，巨 × 锤 = 旋转的巨锤。计划 2027 年内发售。",
+          "analysis": "",
+          "recommendation": "《SPELLOT》把施法做成停老虎机：三格组合即魔法，2027 年发售",
+          "featured": false,
+          "game_ref": "SPELLOT",
+          "enrichment": {
+            "game_name": "SPELLOT",
+            "genre": "动作 / Roguelite / 休闲（幸存者类）",
+            "developer": "soyukke（个人开发）",
+            "platforms": [
+              "Steam（Windows）"
+            ],
+            "price": "未公布",
+            "release_date": "2027年（Steam 页面标注 2027 年）",
+            "steam_rating": "未发售",
+            "steam_url": "https://store.steampowered.com/app/5631950/",
+            "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5631950/00d7666841e9af50dc92f05523d5417fef6c48de/header.jpg",
+            "youtube_video": null,
+            "description": "【核心玩法】SPELLOT 把「施法」交给老虎机：你要在战斗中停下三条转轴，停下的图标组合起来就是这一发魔法的构成——火 × 剑 = 燃烧的剑雨，巨 × 锤 = 旋转的巨锤。停得越准，法术越强；停歪了就是一次失败的施法。\n\n【类型定位】Roguelite + 幸存者类：一波波敌人涌来，靠不断改写的法术组合清场，中途拿强化、改概率、堆连锁，最后打 Boss。老虎机的随机性不是惩罚，而是每一发攻击的输入方式。\n\n【差异化】多数 Roguelite 的随机发生在「选什么强化」，SPELLOT 把随机前置到「每一次攻击怎么打出来」，玩家操作从走位扩展到「读条 + 停轴」。这类机制天然适合短视频：三格一停、满屏法术，一眼能看懂。\n\n【现状】Steam 商店页已上线，计划 2027 年内发售、价格未公布；开发者 soyukke 是日本独立开发者，目前公开信息以商店页与演示视频为主。\n\n【风险】停轴玩法在高压战斗里的容错与手感是最大难点：停早了没伤害、停晚了被打断，需要大量调参；「老虎机」外观也可能被误读为赌博机制，商店页表述与地区合规要提前处理。\n\n【综合评价】把随机性做成核心输入而不是惩罚，是今年独立 Roguelite 里少见的机制级差异点，值得关注它最终的手感调校。",
+            "why_notable": "把「停老虎机」做成施法输入，机制层面区别于常规幸存者类，短视频传播性极强",
+            "pcu": null,
+            "current_players": null,
+            "estimated_sales": "未发售",
+            "gi_summary": "「老虎机停轴」套「幸存者类 Roguelite」新瓶，soyukke 个人开发，2027 年登陆 Steam"
+          }
+        },
+        {
+          "idx": "新游参考 01",
+          "source": "Eurogamer · 独立新作专访",
+          "tags": [
+            "RPG",
+            "叙事",
+            "菌朋克"
+          ],
+          "title": "《Signet City》：《Citizen Sleeper》作者新作，演一个寄生在他人脑中的真菌",
+          "en_title": "\"I'm betting on the sickos\" - How Signet City plans to 'expand the scope of RPGs'",
+          "full_text": "\"I'm betting on the sickos\" - How Signet City plans to 'expand the scope of RPGs' by drawing on the success of Citizen Sleeper and Britain's murky social history https://t.co/AhfJWRf8Nw https://t.co/wmyucYGSjJ",
+          "author": "Eurogamer",
+          "date": "2026-11-26",
+          "likes": 6,
+          "views": 2420,
+          "link": "https://x.com/eurogamer/status/2125952349701312930",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HYDmSpGXcAAFFV6.jpg"
+          },
+          "summary": "《Citizen Sleeper》作者 Gareth Damian Martin（Jump Over the Age）的新作《Signet City》公布玩法细节：舞台是 1980 年代英格兰北部的「菌朋克」城市，玩家扮演寄生在他人脑中的真菌，白天钻进不同宿主的意识里行动，用骰子 + 情绪修正值判定成败；推动宿主走向某种情绪会永久改变其性格。尚无发售日期。",
+          "recommendation": "《Signet City》：寄生他人脑中、用情绪当技能修正的菌朋克 RPG",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 02",
+          "source": "Aniket J · 独立开发者",
+          "tags": [
+            "同人游戏",
+            "Three.js",
+            "AI开发"
+          ],
+          "title": "《Dragon Ball: Red Ribbon》：用 Fable 5.2 + Three.js 做的龙珠同人迷宫游戏",
+          "en_title": "Fresh update on Dragon Ball: Red Ribbon fan game! eighter joins goku to help exit the maze.",
+          "full_text": "Fresh update on Dragon Ball: Red Ribbon fan game! eighter joins goku to help exit the maze. Two more levels to go, I'll share more details along the way! \n\nPlay here: https://t.co/on6U4HT3LR\n\nCreated with Fable 5.2, Threejs, @usecrayon https://t.co/of1MuZ2bKK",
+          "author": "Aniket J",
+          "date": "2026-11-26",
+          "likes": 435,
+          "views": 22921,
+          "link": "https://x.com/aniketjart/status/2125840506131522003",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125836724559581184/img/EmqZpZSuYDj8WpZc.jpg",
+            "video_url": "https://x.com/aniketjart/status/2125840506131522003/video/1"
+          },
+          "summary": "开发者 Aniket J 更新龙珠同人游戏《Dragon Ball: Red Ribbon》：人造人 8 号加入悟空一起走出迷宫，还剩两个关卡，可直接在浏览器里玩。技术栈为 Fable 5.2 + Three.js + Crayon，是「AI 生成 + Web 3D」做同人动作游戏的样本。",
+          "recommendation": "龙珠同人《Red Ribbon》：Fable 5.2 + Three.js 做的浏览器迷宫动作游戏",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 03",
+          "source": "The Dude · 独立开发日志",
+          "tags": [
+            "沙盒",
+            "多人",
+            "开发日志"
+          ],
+          "title": "256 人共享世界的动漫沙盒：开发者第 6 天做完跑酷系统",
+          "en_title": "Day 6 of making my dream anime sandbox game where you can be and do...anything in shared 256 player worlds.",
+          "full_text": "Day 6 of making my dream anime sandbox game where you can be and do...anything in shared 256 player worlds.\nToday's order of work was the running and parkour system. Still a WIP but getting there slowly.\nAnd yes, you can get THE run. https://t.co/sx1IQEbRhP",
+          "author": "The Dude",
+          "date": "2026-11-25",
+          "likes": 262,
+          "views": 18606,
+          "link": "https://x.com/TheDudee/status/2125661747856187442",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125660741961420800/img/Bu3cj24k6UIuofEV.jpg",
+            "video_url": "https://x.com/TheDudee/status/2125661747856187442/video/1"
+          },
+          "summary": "开发者 The Dude 连载自己的「梦想项目」：一个最多 256 人共享世界的动漫风沙盒，玩家可以扮演任何人、做任何事。第 6 天完成跑步与跑酷系统，视频里演示了动漫式奔跑动作，项目仍处于早期 WIP。",
+          "recommendation": "256 人共享世界的动漫沙盒，开发第 6 天跑通跑酷系统",
+          "unselected": true
+        },
+        {
+          "idx": "新游参考 04",
+          "source": "Anna Sin · 独立开发者",
+          "tags": [
+            "实验玩法",
+            "移动端",
+            "注意力"
+          ],
+          "title": "给 ADHD 玩家做的手机游戏：要求你一边玩一边盯路况",
+          "en_title": "Did some game for ADHD people. The idea is to play a game on your phone while keeping an eye on the road.",
+          "full_text": "Did some game for ADHD people\nThe idea is to play a game on your phone while keeping an eye on the road and staying aware of what's happening around you.\n \nPlay : https://t.co/jK8sAjybYn\n\ninspired by a Pelican Party games and @muammarfaiq game https://t.co/W05uZbDAM9",
+          "author": "Anna Sin",
+          "date": "2026-11-25",
+          "likes": 757,
+          "views": 46016,
+          "link": "https://x.com/anna_si3231/status/2125646979590160419",
+          "media": {
+            "type": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125645433431031808/img/ZmnlagXsFv5soUXQ.jpg",
+            "video_url": "https://x.com/anna_si3231/status/2125646979590160419/video/1"
+          },
+          "summary": "开发者 Anna Sin 做了一个面向 ADHD 玩家的手机游戏实验：玩法要求玩家一边操作手机，一边留意前方路况与周围环境，灵感来自 Pelican Party games 与另一位开发者的作品，目前可直接在线试玩。",
+          "recommendation": "给 ADHD 玩家做的手机游戏：一边玩一边必须盯住路况",
+          "unselected": true
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "开发工具",
+      "title_en": "DEV TOOLS",
+      "color": "#60a5fa",
+      "items": [
+        {
+          "idx": "开发工具 01",
+          "source": "Unity for Games · 官方扶持",
+          "tags": [
+            "Unity",
+            "独立扶持",
+            "资金"
+          ],
+          "title": "Unity Fellowship 开放申请：10 支团队各拿 5 万美元，0 分成、0 回收、IP 全归自己",
+          "en_title": "With the Unity Fellowship, we're backing 10 indie teams on their final stretch to launch",
+          "full_text": "$50k cash. 0% rev share. 0 recoup. 100% your IP. \n\nFinishing a game is tough, but it helps to have the right people in your corner. With the Unity Fellowship, we're backing 10 indie teams on their final stretch to launch - with technical guidance, marketing support, and money to help get your game across the finish line.\n\n🔗 Learn more on how to apply: https://t.co/85YdIKAVQi",
+          "author": "Unity for Games",
+          "date": "2026-11-25",
+          "likes": 93,
+          "views": 10330,
+          "link": "https://x.com/unitygames/status/2125700542408045033",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HYABXdbXgAEB2Ay.jpg"
+          },
+          "summary": "Unity 官方公布 Unity Fellowship：面向 10 支独立团队，每队 5 万美元现金，不抽分成、不回收成本、IP 100% 归开发者，并提供技术指导与市场营销支持。定位是支持「离上线只差最后一段」的项目，申请入口已开放。",
+          "analysis": "这类「不拿发行权、不占 IP」的资助在行业里很少见，对差最后一口气的团队价值极高；但门槛也很明确——它要的是接近完成、能讲清上线计划的项目，而不是只有想法。对国内独立团队，值得把它和平台扶持、政府基金放在同一张表里比较。",
+          "recommendation": "Unity Fellowship：10 支团队各 5 万美元，0 分成、IP 归开发者",
+          "featured": true
+        },
+        {
+          "idx": "开发工具 02",
+          "source": "Unreal Engine · 官方教程",
+          "tags": [
+            "Unreal Engine",
+            "地形",
+            "教程"
+          ],
+          "title": "虚幻引擎 Mesh Terrain 研讨会上线：用非破坏性修改器堆叠大地形",
+          "en_title": "Explore our recent Webinar on Mesh Terrain, now available on the Unreal Engine YouTube",
+          "full_text": "Explore our recent Webinar on Mesh Terrain, now available on the Unreal Engine YouTube, which includes how to:\n\n⚫ Enable the plugins and create a mesh partition\n⚫ Stack mesh, texture, noise, and Boolean modifiers non-destructively\n⚫ Control detail with the remesher and adaptive tessellation\n⚫ Paint terrain layers with a mesh partition definition\n⚫ Build sections for runtime\n\nWatch now: https://t.co/N2bhbf5CTS",
+          "author": "Unreal Engine",
+          "date": "2026-11-26",
+          "likes": 31,
+          "views": 3028,
+          "link": "https://x.com/UnrealEngine/status/2125998417654784384",
+          "media": {
+            "type": "image",
+            "url": "https://pbs.twimg.com/media/HYEP8YjbMAAKlf-.jpg"
+          },
+          "summary": "Epic 把最新的 Mesh Terrain 网络研讨会放到 UE 官方 YouTube：内容包括启用插件并创建 mesh partition、以非破坏性方式堆叠网格/贴图/噪声/布尔修改器、用 remesher 与自适应细分控制精度、按 mesh partition 定义绘制地形层，以及为运行时构建分区。",
+          "analysis": "地形从 heightmap 转向「网格 + 非破坏性修改器」，意味着美术可以像搭材质一样反复调地形，而不必每次重刷高度图——对开放世界和大规模场景是实打实的产能变化。建议当作 UE 地形管线升级的入口资料，配合项目里的 World Partition 一起评估。",
+          "recommendation": "虚幻 Mesh Terrain 教程：非破坏性堆叠修改器 + 自适应细分",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "daily_summary": "**AI 造富出现可复现样本**\n韩国开发者 Optima Arch 没有编程和美术经验，一年前给 AI 的第一条指令是「做一个用 WASD 移动的方块」。用 AI 做出的《Slotbound》11 月 12 日登陆 Steam，48 小时 5 万份、6 天 20 万份、首周约 1.9 亿日元、好评率 91%。更值得抄的是发售前 4 个月放免费版、攒到 10 万愿望单的动作。\n\n**大厂把生成式 AI 写进立项流程**\nVertical Slice 报道称，育碧现在要求新项目提案说明 gen-AI 如何帮助开发，不想用的团队必须向高层详细解释理由；内部 Motherbrain 部门持续推进，官方否认强制。与此同时，Rockstar 员工以 75% 反对否决了工会承认协议，投票率 93%。\n\n**GTA 6 的外溢效应还在扩大**\nCircana 数据显示，发售前一周美国 PS5 销量同比 2.4 倍、Xbox 2.3 倍，且是在主机普遍涨价的情况下；Streams Charts 统计首周直播观看超 4.2 亿小时，接近上一个纪录的 3 倍，超过四款大作首周之和。\n\n**独立侧的机会在平台之外**\n单人开发者用 AI 做的 Minecraft MMORPG《ZombieZ》首周在 Tebex 拿到 30 万美元流水、累计 10 万玩家；玩家自制的宝可梦 MMO《PokeZen》开放丰缘地区，免费支持 PC/安卓。两者都绕开了 Steam，也都在 IP 与平台政策的灰色地带。\n\n**工具与发行节奏**\nUnity Fellowship 开放申请，10 支团队各 5 万美元、0 分成、IP 归开发者；Valve 提示 Steam 商店审核最长已到 12 个工作日，建议按发售日提前 3 周提交。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
