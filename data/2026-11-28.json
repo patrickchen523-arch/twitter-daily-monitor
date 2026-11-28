@@ -1,0 +1,527 @@
+{
+ "date": "2026-11-28",
+ "meta": {
+  "raw_count": 242,
+  "filtered_count": 169,
+  "selected_count": 12,
+  "crawl_time": "2026-11-28 09:20"
+ },
+ "lede": "10 亿 token 造一座 265 栋房子的 MMORPG 世界；社区用 PS5 模拟器把 GTA 6 跑上锁定 60fps；《丝之歌》首个大型资料片 12 月 11 日免费上线。",
+ "editors_pick": [
+  {
+   "section_id": "ai",
+   "item_index": 0,
+   "hook": "10 亿 token + 5 个 Claude Ultra 订阅，在 UE5.9 里堆出 265 栋房子的 MMORPG 世界"
+  },
+  {
+   "section_id": "indie",
+   "item_index": 0,
+   "hook": "《丝之歌》首个大型资料片 Sea of Sorrow 12 月 11 日免费上线，含钓鱼小游戏"
+  },
+  {
+   "section_id": "industry",
+   "item_index": 0,
+   "hook": "社区用 PS5 模拟器把 GTA 6 跑到锁定 60fps，Take-Two 已批量下架 GitHub 仓库"
+  }
+ ],
+ "digest": [
+  {
+   "id": "ai",
+   "text": "10 亿 token + 5 个 Claude Ultra 订阅，在 UE5.9 造出 265 栋房子的 MMORPG 世界\n爆料：DeepSeek 四个核心库专为昇腾 950 优化，算力利用率 98.5%（425 TFLOPS）\nTeam Ninja 把 AI 接进部分流程，但称好玩仍要「人手打造」"
+  },
+  {
+   "id": "industry",
+   "text": "GTA 6 非官方 PC 方案跑出锁定 60fps，Take-Two 一周下架上万 GitHub 仓库\n《牧场物语》Marvelous 目标裁 65 人重组主机业务，上半年利润却 +1105%\n独立开发者主张 Steam 上架费从 100 涨到 999 美元\nEA 砍掉《Skate》赛季更新，削减实时服务内容"
+  },
+  {
+   "id": "indie",
+   "text": "《丝之歌》资料片 Sea of Sorrow 12 月 11 日免费上线，含钓鱼小游戏\n《世界虚幻管理联盟：WPCA》三人合作怪谈讨伐，Steam/PS5 封测报名\n独立开发者 Blendi 的巫师游戏新增「Cleave」横扫法术"
+  },
+  {
+   "id": "tools",
+   "text": "用 AI 做游戏别从零写物理：Jolt、Recast 等 9 个开源底座直接丢给 Codex\nUE5 冲击帧蓝图：战斗手感 90% 靠节奏、10% 靠粒子"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI科技热点",
+   "title_en": "AI & TECH",
+   "color": "#a78bfa",
+   "items": [
+    {
+     "idx": "AI科技热点 01",
+     "source": "Stefan 3D AI · AI工作流实测",
+     "tags": [
+      "AI开发",
+      "UE5",
+      "MMORPG",
+      "成本"
+     ],
+     "title": "10 亿 token 造一座 MMORPG 世界：Claude Fable 5.2 在 UE5.9 里堆出 265 栋房子的城市",
+     "en_title": "I gave the most powerful AI 10 billion tokens to build a whole MMORPG world. Claude Fable 5.2 burned through five Ultra subscriptions in a week...",
+     "full_text": "I gave the most powerful AI 10 billion tokens to build a whole MMORPG world.\n\nClaude Fable 5.2 burned through five Ultra subscriptions in a week, with ChatGPT for second opinions.\n\nIt started from an empty project in the new Unreal Engine 5.9, on one cloud PC with a 24GB GPU. Fable built the game with Opus 5.5 helpers on the simple tasks. The 119 3D models came from Tripo.\n\nNow there's a city of 265 houses, five races, 16 quests, AI players, six mounts and a glider 🎮\n\nFull video: https://t.co/ah...",
+     "author": "Stefan 3D AI",
+     "date": "2026-11-27",
+     "likes": 146,
+     "views": 8062,
+     "link": "https://x.com/Stefan_3D_AI/status/2126307553269469189",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2126285702489059328/img/0CUUUL-pk_vsKQ7J.jpg",
+      "video_url": "https://x.com/Stefan_3D_AI/status/2126307553269469189/video/1"
+     },
+     "summary": "3D 创作者 Stefan 公布一次「全 AI 造世界」实验：一周内用掉 5 个 Claude Ultra 订阅（合计约 10 亿 token），在新版 Unreal Engine 5.9 里从空工程起步，跑在一台 24GB 显存的云 PC 上。最终产出包含 265 栋房屋的城市、5 个种族、16 个任务、AI 控制的玩家、6 种坐骑和滑翔翼；119 个 3D 模型由 Tripo 生成，复杂任务交给 Fable 5.2、简单任务交给 Opus 5.5。",
+     "analysis": "这条的价值不在「AI 能做大世界」，而在把成本结构摊开了：订阅费 + token 量 + 显存门槛 + 第三方模型服务，是一个可复算的配方。对团队的意义是——AI 已经把「造资源」压到很便宜，剩下的瓶颈是系统整合、关卡编排和性能优化，这些恰恰是 token 买不到的。",
+     "recommendation": "10 亿 token + 5 个 Ultra 订阅：Claude 在 UE5.9 里堆出 265 栋房子的 MMORPG 世界",
+     "featured": true
+    },
+    {
+     "idx": "AI科技热点 02",
+     "source": "老青蛙 · 中文爆料",
+     "tags": [
+      "DeepSeek",
+      "国产芯片",
+      "昇腾",
+      "推理效率"
+     ],
+     "title": "爆料：DeepSeek 升级四个核心代码库，专为华为昇腾 950 优化，算力利用率冲到 98.5%",
+     "en_title": "卧槽卧槽！！Deepseek今天核心代码库重大升级！！外区爆料：DeepSeek今天更新了四个核心代码库...",
+     "full_text": "卧槽卧槽！！Deepseek今天核心代码库重大升级！！\n\n外区爆料：DeepSeek今天更新了四个核心代码库，主要就是为了让模型在华为昇腾950芯片上跑得更快、更高效。\n\n这次从底层缓存、计算效率到多芯片互联都做了深度优化。效果非常惊人：在昇腾950上的算力利用率直接飙到了98.5%（425 TFLOPS），几乎把芯片性能榨干了。\n\n以后用国产芯片跑大模型，速度会更快，成本也会更低。",
+     "author": "老青蛙",
+     "date": "2026-11-27",
+     "likes": 151,
+     "views": 16477,
+     "link": "https://x.com/oldfrog123/status/2126274681041027438",
+     "media": null,
+     "summary": "中文博主「老青蛙」引述其称的「外区爆料」：DeepSeek 当天更新了四个核心代码库，目标是把模型在华为昇腾 950 上跑得更快，改动覆盖底层缓存、计算效率与多芯片互联；其称昇腾 950 上的算力利用率达到 98.5%（425 TFLOPS）。该说法目前只有推文单一来源，DeepSeek 与华为均未公开确认。",
+     "analysis": "如果数字成立，含义是「模型侧为国产算力做深度定制」进入实操阶段——不是等硬件追上来，而是改软件把硬件榨干。对做 AI 游戏工具链的团队，这关系到未来国内推理成本曲线；但当前属未经证实的二手爆料，只能当信号看，不宜当结论用。",
+     "recommendation": "爆料：DeepSeek 四个核心库专为昇腾 950 优化，算力利用率达 98.5%（425 TFLOPS）"
+    },
+    {
+     "idx": "AI科技热点 03",
+     "source": "Eurogamer · 厂商访谈",
+     "tags": [
+      "AI工作流",
+      "Team Ninja",
+      "大厂实践"
+     ],
+     "title": "Team Ninja 把 AI 接进部分开发流程，但制作人坚持「好玩的游戏得靠人手做出来」",
+     "en_title": "Team Ninja (Nioh, Ninja Gaiden) is the latest game development studio to implement AI into some of its workflow, but producer Kohei Shibata still believes that fun games need to be \"crafted by human hands.\"",
+     "full_text": "Team Ninja (Nioh, Ninja Gaiden) is the latest game development studio to implement AI into some of its workflow, but producer Kohei Shibata still believes that fun games need to be \"crafted by human hands.\" https://t.co/M1qpf7YzbH https://t.co/RFItXIZp2A",
+     "author": "Eurogamer",
+     "date": "2026-11-27",
+     "likes": 7,
+     "views": 2986,
+     "link": "https://x.com/eurogamer/status/2126307589193416956",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HYIpe_kWYAALU2B.jpg"
+     },
+     "summary": "Eurogamer 报道：《仁王》《忍者龙剑传》开发商 Team Ninja 成为又一家把 AI 引入部分工作流的日本工作室；制作人柴田浩平（Kohei Shibata）同时表态，好玩的游戏仍然需要「由人的双手打造」。报道未披露具体用在哪些环节。",
+     "analysis": "这是本轮「大厂 AI 落地」里比较少见的完整表述：一边承认已经在用，一边划出「手感/乐趣」这条不交给 AI 的线。对照同一天欧洲厂商裁员重组、独立开发者讨论 Steam 门槛，可以看出行业的共识正在收敛到「AI 提效、人来定手感」。",
+     "recommendation": "Team Ninja 把 AI 接进部分开发流程，制作人：好玩仍要「人手打造」"
+    }
+   ]
+  },
+  {
+   "id": "industry",
+   "title": "游戏行业动态",
+   "title_en": "INDUSTRY",
+   "color": "#D7263D",
+   "items": [
+    {
+     "idx": "游戏行业 01",
+     "source": "社区实测 · 版权争议",
+     "tags": [
+      "GTA6",
+      "模拟器",
+      "DMCA",
+      "主机独占"
+     ],
+     "title": "GTA 6 非官方 PC 方案跑出锁定 60fps：社区借 PS5 模拟器跑通，Take-Two 一周下架上万仓库",
+     "en_title": "GTA 6 PC PORT is already running at a locked 60 fps.",
+     "full_text": "GTA 6 PC PORT is already running at a locked 60 fps. https://t.co/V9N494XSbi",
+     "author": "Butterfly",
+     "date": "2026-11-26",
+     "likes": 39025,
+     "views": 3316904,
+     "link": "https://x.com/Butterflya1x/status/2126046194686210255",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2126046003228753920/img/3DpZJpsjDFNo1wkt.jpg",
+      "video_url": "https://x.com/Butterflya1x/status/2126046194686210255/video/1"
+     },
+     "summary": "GTA 6 主机版发售后一周，社区的非官方「PC 运行方案」接连跑通：一条播放量 330 万次的视频显示其在 PC 上以锁定 60fps 运行；同期有开发者称自己从零做起，三天做到 25fps、随后有人跑到 4K 原生 119–123fps（帧时间 8.2ms、显存占用 11.4GB）。方案走的是 PS5 模拟器路线，而非 Rockstar 官方 PC 版。Take-Two 本周已批量下架 GitHub 上相关仓库。",
+     "analysis": "这已经不是「能不能跑」的技术八卦，而是一场版权与平台策略的正面碰撞：模拟器把主机独占窗口压缩到一周，发行商只能用 DMCA 打地鼠。对从业者更现实的启示是——独占期的商业价值正在被工具链速度重估，同时「用修改版跑游戏」这条路随时可能被法律与平台政策一刀切断，别把它当产品基础。",
+     "recommendation": "社区用 PS5 模拟器把 GTA 6 跑到锁定 60fps，Take-Two 已批量下架 GitHub 仓库",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 02",
+     "source": "Eurogamer · 厂商重组",
+     "tags": [
+      "裁员",
+      "Marvelous",
+      "主机业务",
+      "日本工作室"
+     ],
+     "title": "《牧场物语》Marvelous 推自愿离职：目标减 65 人、重组主机业务，上半年利润却同比 +1105%",
+     "en_title": "Marvelous, developer of the Story of Seasons series, opens up voluntary redundancy scheme as it seeks to reduce headcount by 65 employees",
+     "full_text": "Marvelous, developer of the Story of Seasons series, opens up voluntary redundancy scheme as it seeks to reduce headcount by 65 employees\n\nhttps://t.co/hQ0nNfaz0f https://t.co/zsVfkKN06B",
+     "author": "Eurogamer",
+     "date": "2026-11-27",
+     "likes": 9,
+     "views": 3880,
+     "link": "https://x.com/eurogamer/status/2126253212722413775",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HYH4A2NWkAA2hOk.png"
+     },
+     "summary": "Eurogamer 报道：《牧场物语》系列开发商 Marvelous 启动「提前退休」自愿离职计划，目标减少 65 名员工，用于重组其主机游戏业务（不含手游与实时服务）。申请者将于 2027 年 3 月财年结束时离职，公司提供额外补偿与再就业协助；官方理由是开发规模扩大与开发周期拉长，需要更灵活的用人结构，并强调主机业务仍是核心。同一财年上半年，Marvelous 曾公布利润同比大增 1105%，主要来自海外新作与旧作销量。",
+     "analysis": "一家「利润大涨」的公司同时在裁人，说明这轮调整不是财务求生，而是项目结构的重置：把固定人力换成按项目波动的弹性配置。对国内团队的参照点是——大厂正在用「少而稳的核心 + 外包/短期」替代「大团队长周期」，这个趋势与 AI 提效是同一枚硬币。",
+     "recommendation": "《牧场物语》Marvelous 推自愿离职，目标裁 65 人重组主机业务",
+     "featured": true
+    },
+    {
+     "idx": "游戏行业 03",
+     "source": "Stefan（dadbod games） · 独立开发者观点",
+     "tags": [
+      "Steam",
+      "上架门槛",
+      "独立开发",
+      "平台政策"
+     ],
+     "title": "独立开发者喊话 Valve：Steam 上架费该从 100 美元涨到 999 美元，治的是「质量/数量」问题",
+     "en_title": "I'm an indie developer working on my third game, and I think Valve needs to drastically raise the price of admission to Steam. I'd argue that the $100 Steam Direct fee should be raised to $999.",
+     "full_text": "I'm an indie developer working on my third game, and I think Valve needs to drastically raise the price of admission to Steam.\n\nI'd argue that the $100 Steam Direct fee should be raised to $999.\n\nSteam has an quality/quantity problem that extends well beyond the storefront.\n\na thread",
+     "author": "Stefan (dadbod games)",
+     "date": "2026-11-27",
+     "likes": 168,
+     "views": 26495,
+     "link": "https://x.com/Dadbod_Games/status/2126235263575671120",
+     "media": null,
+     "summary": "做第三款游戏的独立开发者 Stefan 发起长帖，主张把 Steam Direct 的上架费从 100 美元提高到 999 美元，理由是 Steam 面临「质量与数量」双重问题，且问题不止在商店首页，还延伸到整个生态。帖子引发大量独立开发者讨论（2.6 万浏览、115 条回复）。",
+     "analysis": "涨价论的本质是「谁为筛选成本买单」：把门槛抬到 999 美元能挡住批量灌水，但也会把真正没钱的小团队挡在门外。这条值得留意，是因为它代表了一部分认真做游戏的独立开发者，开始主动要求平台收紧入口——而不是像过去那样只抱怨算法不给流量。",
+     "recommendation": "独立开发者主张 Steam 上架费从 100 涨到 999 美元，理由是要治「质量/数量」问题"
+    },
+    {
+     "idx": "游戏行业 04",
+     "source": "Eurogamer · 服务型游戏转向",
+     "tags": [
+      "EA",
+      "Skate",
+      "实时服务",
+      "运营策略"
+     ],
+     "title": "EA 砍掉《Skate》的赛季更新：把实时服务的水分挤掉，回归常规内容节奏",
+     "en_title": "EA is ditching seasonal updates and shaving some of the live service fluff off Skate (for some reason stylised as skate.) going forward.",
+     "full_text": "EA is ditching seasonal updates and shaving some of the live service fluff off Skate (for some reason stylised as skate.) going forward. https://t.co/gBKSuYXDHv https://t.co/pYAzEUPTfH",
+     "author": "Eurogamer",
+     "date": "2026-11-27",
+     "likes": 12,
+     "views": 4085,
+     "link": "https://x.com/eurogamer/status/2126278736957849888",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HYIPPkzXMAAO_Cu.jpg"
+     },
+     "summary": "Eurogamer 报道：EA 宣布《Skate》（官方写作 skate.）今后不再采用赛季制更新，并削减一部分实时服务式的内容设计，转向常规内容节奏。报道未给出具体改动清单与时间表。",
+     "analysis": "赛季制是过去五年服务型游戏的默认答案，如今连 EA 都在往回缩——说明「用赛季撑留存」的边际收益在下降，玩家对重复的通行证循环已经疲劳。对做长线运营的团队，这是重新评估「内容节奏 vs 留存指标」的信号，而不是单纯的运营调整。",
+     "recommendation": "EA 砍掉《Skate》赛季更新，削减实时服务内容、转向常规节奏"
+    }
+   ]
+  },
+  {
+   "id": "indie",
+   "title": "新游推文",
+   "title_en": "INDIE GAMES",
+   "color": "#E8B04B",
+   "items": [
+    {
+     "idx": "新游推文 01",
+     "source": "The Game Awards · 官方公布",
+     "tags": [
+      "类银河战士恶魔城",
+      "资料片",
+      "免费更新"
+     ],
+     "title": "《丝之歌》首个大型资料片「Sea of Sorrow」12 月 11 日免费上线：加钓鱼小游戏，还能把 Hornet 塞进大炮",
+     "en_title": "Hollow Knight Silksong - Sea of Sorrow launches on December 11 for free.",
+     "full_text": "Hollow Knight Silksong - Sea of Sorrow launches on December 11 for free. https://t.co/fjKpSCDswM",
+     "author": "The Game Awards",
+     "date": "2026-11-27",
+     "likes": 21464,
+     "views": 405606,
+     "link": "https://x.com/thegameawards/status/2126342078175350959",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HYJI2eoaMAA5SRw.jpg"
+     },
+     "summary": "The Game Awards 官推宣布：《空洞骑士：丝之歌》首个大型资料片 Sea of Sorrow 将于 12 月 11 日免费上线（21.5 万浏览、2.1 万赞）。Eurogamer / RPS 补充细节：资料片包含钓鱼小游戏，以及把主角 Hornet 当炮弹从大炮射出去的玩法；Team Cherry 称这次内容「unlike anything we've done before」。Polygon 亦确认了发售日。",
+     "analysis": "",
+     "recommendation": "《丝之歌》首个大型资料片 Sea of Sorrow 12 月 11 日免费上线，含钓鱼小游戏",
+     "featured": true,
+     "game_ref": "Hollow Knight: Silksong",
+     "enrichment": {
+      "game_name": "Hollow Knight: Silksong",
+      "genre": "类银河战士恶魔城 / 动作冒险 / 独立",
+      "developer": "Team Cherry（澳大利亚，小型团队）",
+      "platforms": [
+       "Steam",
+       "Switch",
+       "PS4/PS5",
+       "Xbox"
+      ],
+      "price": "¥76（资料片 Sea of Sorrow 免费）",
+      "release_date": "已发售 · 2025年9月4日（Sea of Sorrow 于 2026年12月11日 免费更新）",
+      "steam_rating": "398,992 条评测",
+      "steam_url": "https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?t=1776125736",
+      "youtube_video": null,
+      "description": "【是什么】《空洞骑士：丝之歌》是 Team Cherry 在《空洞骑士》之后推出的续作，玩家扮演 Hornet，在被丝线与歌声统治的新王国里攀爬、战斗、探索。2025 年 9 月发售，Steam 售价 ¥76，累计评测近 40 万条。\n\n【这次更新是什么】Sea of Sorrow 是发售后第一个「大型」资料片，官方给出的关键信息只有一句：12 月 11 日免费上线。媒体补充的细节更有信息量——包含钓鱼小游戏，以及能把 Hornet 装进大炮射出去的玩法段落；Team Cherry 自述这次内容「unlike anything we've done before」，暗示不是常规的加地图加 Boss。\n\n【为什么值得单独拎出来】《丝之歌》是本世代最受关注的小团队作品之一，它的每一次内容更新都会被当成「小团队如何做长线」的样板。免费资料片意味着 Team Cherry 选择用内容换口碑与留存，而不是卖 DLC 变现。\n\n【当下的量级】据 Steam 榜单数据，更新消息公布当日游戏 24 小时峰值约 1.1 万人在线，历史峰值约 58.7 万——说明大部分玩家早已通关，资料片是一次典型的「回流窗口」，12 月 11 日当周在线大概率会明显反弹。\n\n【不确定的地方】资料片体量、是否需要通关进度才能进入、是否有新武器/新区域，官方目前都没有系统说明；「12 月 11 日」是 TGA 官推与多家媒体的口径，仍建议以 Team Cherry 官方公告为准。\n\n【综合评价】对玩家这是全年最值得等的免费更新之一；对从业者，这是一个「发售后一年用免费大版本拉回流」的清晰案例，值得记一下节奏。",
+      "why_notable": "《丝之歌》发售后首个大型资料片，选择免费上线，是本季度最强的回流窗口",
+      "pcu": "11,202（24h 峰值）· 历史峰值 587,150",
+      "current_players": "~9,619",
+      "estimated_sales": "暂无官方数据（Steam 评测 398,992 条）",
+      "gi_summary": "「类银河战士恶魔城」套「丝线王国」新瓶，Team Cherry 开发，Steam ¥76，资料片免费"
+     }
+    },
+    {
+     "idx": "新游推文 02",
+     "source": "AUTOMATON · 新作封测",
+     "tags": [
+      "动作",
+      "多人合作",
+      "怪谈",
+      "封测"
+     ],
+     "title": "《世界虚幻管理联盟：WPCA》：三人合作怪谈讨伐动作，刀 + 打桩枪的武斗派战斗首次可玩",
+     "en_title": "最大３人マルチ・怪異討伐アクション『世界虚構管理連盟: WPCA』Steam/PS5クローズドアルファテストの参加者募集開始。刀や”パイルバンカー”の武闘派バトルを初めて遊べる",
+     "full_text": "最大３人マルチ・怪異討伐アクション『世界虚構管理連盟: WPCA』Steam/PS5クローズドアルファテストの参加者募集開始。刀や”パイルバンカー”の武闘派バトルを初めて遊べる\nhttps://t.co/jfFhmAlHpd https://t.co/SAzqy4LolL",
+     "author": "AUTOMATON（オートマトン）",
+     "date": "2026-11-27",
+     "likes": 9492,
+     "views": 450603,
+     "link": "https://x.com/AUTOMATONJapan/status/2126204663620104550",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HYHL7NKaYAEIRcI.jpg"
+     },
+     "summary": "AUTOMATON 报道：最多 3 人合作的怪谈讨伐动作游戏《世界虚幻管理联盟：WPCA》（Steam/PS5）开启封闭 Alpha 测试招募，这是玩家第一次能亲手体验刀与「打桩枪（パイルバンカー）」的近距离武斗。Steam 页面显示发行商与开发商均为韩国 5minlab Corp.，类型标签为动作，发售日「即将宣布」。",
+     "analysis": "",
+     "recommendation": "《世界虚幻管理联盟：WPCA》三人合作怪谈讨伐，刀 + 打桩枪，Steam/PS5 封测报名",
+     "featured": true,
+     "game_ref": "WPCA",
+     "enrichment": {
+      "game_name": "WPCA",
+      "genre": "动作 / 怪谈讨伐 / 多人合作",
+      "developer": "5minlab Corp.（韩国）",
+      "platforms": [
+       "Steam（Windows）",
+       "PS5"
+      ],
+      "price": "未公布",
+      "release_date": null,
+      "steam_rating": "未发售（Steam 页面已上线）",
+      "steam_url": "https://store.steampowered.com/app/4455810/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4455810/84b51ff9d70ebca376dcb3a1031d5161df407531/header_schinese.jpg?t=1795749418",
+      "youtube_video": null,
+      "description": "【是什么】《世界虚幻管理联盟：WPCA》是一款「异常现象隔离狩猎」题材的动作游戏。Steam 官方简介写得很直白：玩家扮演潜伏在城市阴影中的少年少女，对抗超自然恐怖，隔离那些侵蚀现实、威胁人类的异常现象「虚幻」。\n\n【玩法结构】核心是最多 3 人合作讨伐怪谈。战斗走「武斗派」路线而不是远程射击——AUTOMATON 点出了两件标志性武器：刀，和被称为「パイルバンカー」的打桩枪。前者贴身连段，后者是重型突刺，组合起来指向一种近身压制、节奏偏快的动作手感。\n\n【这次节点为什么重要】本次是封闭 Alpha 测试招募，官方口径是玩家「第一次能亲手玩到」这套战斗。也就是说此前公开的都只是影像，这次才开始收真实手感反馈——对一款尚未公布发售日的动作游戏，这是判断它靠不靠谱的第一个硬节点。\n\n【团队背景】Steam 页面标注开发商与发行商都是韩国 5minlab Corp.，属中小团队自研自发。题材（都市怪谈 + 少男少女 + 组织化讨伐）在日韩独立动作里不算新鲜，但三人合作 + 双武器近战的组合，比同类的单人 Roguelite 更依赖配合设计。\n\n【不确定的地方】发售日仍为「即将宣布」，价格、平台差异、是否有 PvE 战役与重复游玩循环都未公布；封测招募多在日本媒体渠道，国内玩家参与门槛需要看官方公告。\n\n【综合评价】值得关注但不急着期待：它的上限取决于三人配合与打击感能否撑住，而这两项恰好要等封测反馈才能验证。",
+      "why_notable": "三人合作 + 刀与打桩枪的近距离怪谈讨伐，封测开放报名是首个可玩节点",
+      "pcu": null,
+      "current_players": null,
+      "estimated_sales": "暂无",
+      "gi_summary": "「怪谈讨伐」套「三人合作动作」新瓶，韩国 5minlab 开发，Steam/PS5 未发售"
+     }
+    },
+    {
+     "idx": "新游推文 03",
+     "source": "Blendi · 独立开发者devlog",
+     "tags": [
+      "独立开发",
+      "法术设计",
+      "战斗手感"
+     ],
+     "title": "独立开发者给自己的巫师游戏加入「Cleave」横扫法术：45 万浏览的武器/法术手感样例",
+     "en_title": "I added a new spell called \"Cleave\" to my wizard game ⚔️",
+     "full_text": "I added a new spell called \"Cleave\" to my wizard game ⚔️ https://t.co/OQkTZ8Yc8k",
+     "author": "Blendi",
+     "date": "2026-11-27",
+     "likes": 10844,
+     "views": 453479,
+     "link": "https://x.com/BlendiByl/status/2126227003057865207",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2126226441188876288/img/9wvrV5y_N-cFdABN.jpg",
+      "video_url": "https://x.com/BlendiByl/status/2126227003057865207/video/1"
+     },
+     "summary": "独立开发者 Blendi 发布开发日志：给自己的巫师题材游戏新增了一个叫「Cleave」的法术，附实机演示视频（45.3 万浏览、1.08 万赞）。推文未公布游戏名、平台与发售时间，属于典型的「单人开发 + 高频分享战斗手感」的进度贴。",
+     "analysis": "",
+     "recommendation": "独立开发者的巫师游戏新增「Cleave」横扫法术——45.3 万浏览",
+     "game_ref": null
+    },
+    {
+     "idx": "新游参考 01",
+     "source": "Rock Paper Shotgun · 新作曝光",
+     "tags": [
+      "城市建造",
+      "1-bit",
+      "剧情驱动"
+     ],
+     "title": "《GlagStone》：80 年代末 Macintosh 美学的 1-bit 岛屿城建，要守住灯塔、还要让村民听话",
+     "en_title": "Keep the lighthouse on and the villagers obedient in Glagstone, an eerie island city-builder with Macintosh-style graphics",
+     "full_text": "Keep the lighthouse on and the villagers obedient in Glagstone, an eerie island city-builder with Macintosh-style graphics https://t.co/8CutejEqS4",
+     "author": "Rock Paper Shotgun",
+     "date": "2026-11-27",
+     "likes": 2,
+     "views": 1103,
+     "link": "https://x.com/rockpapershot/status/2126337062127243697",
+     "media": {
+      "type": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4198840/ba1bdd69ce933cad96add3a4ad5c12b96ccee285/header.jpg?t=1792420251"
+     },
+     "summary": "RPS 介绍独立新作《GlagStone》：一款受 80 年代末 Macintosh 美学启发的 1-bit 剧情驱动城市建造游戏，舞台是交战国家之间的偏远北方岛屿聚落，玩家要维持灯塔照明、管理村民，并揭开岛屿深处的秘密。Steam 页面显示开发商为两人小组（Valerii Krasnoselskii / Evgenii Kirichenko），发行 VTRON LTD，2027 年推出。",
+     "recommendation": "《GlagStone》：1-bit Macintosh 美学的诡异岛屿城建，2027 年推出",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 02",
+     "source": "Z3 Studio · 独立开发进度",
+     "tags": [
+      "低多边形",
+      "动作",
+      "洛克人风"
+     ],
+     "title": "《EXOGEAR》：低多边形洛克人风动作，演示蓄力攻击 + 火焰踢腿",
+     "en_title": "Charged attack + Fire kick / Some audios are temporary / #gamedev #indiedev #lowpoly #megaman",
+     "full_text": "Charged attack + Fire kick\n\nSome audios are temporary \n\n#gamedev #indiedev #lowpoly #megaman https://t.co/dhIUlQTfAe",
+     "author": "Z3 Studio | Working on EXOGEAR",
+     "date": "2026-11-25",
+     "likes": 1427,
+     "views": 27401,
+     "link": "https://x.com/Z3Studio/status/2125659777879716140",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2125659678545788928/img/97zs5kIyZnqjplME.jpg",
+      "video_url": "https://x.com/Z3Studio/status/2125659777879716140/video/1"
+     },
+     "summary": "独立团队 Z3 Studio 放出正在开发的《EXOGEAR》战斗片段：蓄力攻击 + 火焰踢腿，画面走低多边形、洛克人式的横版动作风。作者注明部分音效仍是临时素材，属开发中版本，未公布平台与发售时间。",
+     "recommendation": "《EXOGEAR》低多边形洛克人风：蓄力攻击 + 火焰踢腿实机片段",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 03",
+     "source": "Unity for Games · 官方样例",
+     "tags": [
+      "治愈",
+      "模拟经营",
+      "Unity Spark"
+     ],
+     "title": "《Witchwood》：Unity 员工用 Unity Spark 做的第一款游戏，女巫 + 猫的药水小店",
+     "en_title": "Check out Witchwood, a potion-brewing game created by Diana, a Unity employee who created her first game with Unity Spark.",
+     "full_text": "Spend 2 minutes escaping from the Black Friday chaos and step into a cozy potion shop instead 🧪🐈‍⬛\n\nCheck out Witchwood, a potion-brewing game created by Diana, a Unity employee who created her first game with Unity Spark. \n\nYou play a young witch who runs a tiny potion shop at the edge of an enchanted forest with her cat, Pip. Villagers come with their problems: you check your recipe book, gather ingredients in the forest and brew the potion in a short minigame. \n\n“I love cozy games about cooki...",
+     "author": "Unity for Games",
+     "date": "2026-11-27",
+     "likes": 8,
+     "views": 937,
+     "link": "https://x.com/unitygames/status/2126360851128995884",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/ext_tw_video_thumb/2126360522199076864/pu/img/N5oUdn_FNXmIIZnK.jpg",
+      "video_url": "https://x.com/unitygames/status/2126360851128995884/video/1"
+     },
+     "summary": "Unity 官方账号展示《Witchwood》：一款药水店经营 + 治愈风的短游戏，由 Unity 员工 Diana 用 Unity Spark 做出（她的第一款游戏）。玩法是扮演在魔法森林边缘开店的小女巫，和猫 Pip 一起查配方、去森林采药、在小游戏里熬制药水，帮村民解决问题。",
+     "recommendation": "《Witchwood》：Unity 员工用 Unity Spark 做的女巫药水店，治愈向首作",
+     "unselected": true
+    },
+    {
+     "idx": "新游参考 04",
+     "source": "Indie Games Devel · 独立新作",
+     "tags": [
+      "策略",
+      "Roguelite",
+      "链式反应"
+     ],
+     "title": "《Dog in the Machine》：训练机械狗逃离反乌托邦城市的回合制战棋 Roguelite",
+     "en_title": "In Dog in the Machine, @StudioChahut builds a tactical roguelite in which a robotic dog flees from a dystopian city, betting on chain reactions and customizable abilities",
+     "full_text": "In Dog in the Machine, @StudioChahut builds a tactical roguelite in which a robotic dog flees from a dystopian city, betting on chain reactions and customizable abilities\n\n@GoblinzPub #gamedev #indiegame #reviewcode #review #TacticalGame #PuzzleGame #GameDev https://t.co/ETMBKDVFYL",
+     "author": "Indie Games Devel",
+     "date": "2026-11-27",
+     "likes": 0,
+     "views": 26,
+     "link": "https://x.com/indiegamesdevel/status/2126364879825096743",
+     "media": {
+      "type": "image",
+      "url": "https://pbs.twimg.com/media/HYJdjYUXYAAZeow.jpg"
+     },
+     "summary": "独立游戏媒体介绍《Dog in the Machine》：Studio Chahut 开发的回合制策略 + 轻度 Roguelite，玩家训练一只机械狗逃离反乌托邦机械之城，玩法核心是模块化攻击、实时预览布局与链式反应。Steam 页面显示由 Goblinz Publishing 发行，2026 年 9 月 29 日已发售，售价 ¥69。",
+     "recommendation": "《Dog in the Machine》：训练机械狗逃离反乌托邦，靠链式反应的战棋 Roguelite",
+     "unselected": true
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "title": "开发工具",
+   "title_en": "DEV TOOLS",
+   "color": "#60a5fa",
+   "items": [
+    {
+     "idx": "开发工具 01",
+     "source": "부키로드 BOOKIROAD · 韩语开发教程",
+     "tags": [
+      "开源工具链",
+      "AI编程",
+      "物理引擎",
+      "引擎选型"
+     ],
+     "title": "用 AI 做游戏别从零写物理：韩国开发者列出 Jolt、Recast、meshoptimizer 等 9 个开源底座",
+     "en_title": "바이브코딩으로 게임 만들 때 AI한테 처음부터 다 짜라고 하지 마세요 / 물리, 지형, 길찾기 같은 건 이미 검증된 오픈소스가 있어서...",
+     "full_text": "바이브코딩으로 게임 만들 때 AI한테 처음부터 다 짜라고 하지 마세요\n\n물리, 지형, 길찾기 같은 건 이미 검증된 오픈소스가 있어서\n레포 문서째 Claude Code나 Codex에 넘기고 붙여 달라고 하는 게 훨씬 빠름\n\n엔진 상관없이 쓰는 것\n- Jolt Physics: 물리 엔진. Horizon Forbidden West, Death Stranding 2에 들어간 그거임\n- Recast Navigation: NPC 길찾기랑 군중 이동\n- ozz-animation: 캐릭터 애니메이션 재생·블렌딩\n- meshoptimizer: 3D 모델 가볍게 최적화\n- FastNoise2: 절차적 지형용 노이즈\n- Effekseer: 파티클 이펙트 편집\n- Material Maker: 텍스처 만들고 3D 모델에 직접 칠하기\n\nGodot 쓰면\n- Terrain3D: 큰 지형 제작\n- Voxel Tools: 마인크래프트처럼 부서지는 복셀 지형\n\n엔진 기반부터 직접 짤 거면\n- The Forge: 멀티...",
+     "author": "부키로드 BOOKIROAD 🥷💿",
+     "date": "2026-11-26",
+     "likes": 429,
+     "views": 19829,
+     "link": "https://x.com/bookiroad1/status/2125990721954185710",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2125990458367328260/img/UVoGh5ecsZCq4uzd.jpg",
+      "video_url": "https://x.com/bookiroad1/status/2125990721954185710/video/1"
+     },
+     "summary": "韩国开发者 BO KIROAD 给「用 AI 写游戏」的人一条实用建议：别让 AI 从零实现物理、地形、寻路这些基础系统，直接把成熟开源库连同文档丢给 Claude Code / Codex 让它接线更快。清单含引擎无关的 Jolt Physics（物理，据其称用于《地平线：西之绝境》《死亡搁浅 2》）、Recast Navigation（NPC 寻路与群体移动）、ozz-animation（动画播放与混合）、meshoptimizer（模型优化）、FastNoise2（程序化地形噪声）、Effekseer（粒子特效）、Material Maker（贴图与 3D 直绘），Godot 侧还有 Terrain3D 与 Voxel Tools，自研引擎侧提到 The Forge。",
+     "analysis": "这条的实操价值在于「把 AI 的定位调准」：AI 擅长接线和改参数，不擅长从零手搓物理求解器。把已验证的库交给它装配，既省 token 也省调错时间——这比在群里问「哪个引擎能用」更接近真实工作流。对做原型的小团队，这份清单可以直接当技术选型表用。",
+     "recommendation": "用 AI 做游戏别从零写物理：Jolt、Recast 等 9 个开源底座直接丢给 Codex 接线",
+     "featured": true
+    },
+    {
+     "idx": "开发工具 02",
+     "source": "3Dgamedev · 技术分享",
+     "tags": [
+      "UE5",
+      "打击感",
+      "VFX",
+      "蓝图资源"
+     ],
+     "title": "冲击帧（Impact frames）为什么让动画打戏更痛：UE5 有现成蓝图资源，作者称手感 90% 靠节奏",
+     "en_title": "Impact frames — are why anime fight scenes land so hard. There's a Blueprint asset for Unreal Engine 5 that adds them to your game's attacks. Combat feel is 90% timing and 10% particles...",
+     "full_text": "Impact frames — are why anime fight scenes land so hard.\n\nThere's a Blueprint asset for Unreal Engine 5 that adds them to your game's attacks.\n\nCombat feel is 90% timing and 10% particles, and most projects get that ratio backwards.\n\n #UE5 #gamedev https://t.co/GBXSMnXZYE",
+     "author": "3Dgamedev",
+     "date": "2026-11-27",
+     "likes": 436,
+     "views": 12564,
+     "link": "https://x.com/unity3dvfx/status/2126206036075806942",
+     "media": {
+      "type": "video",
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2126205861731221504/img/vsIyEi4tFx44Q_5I.jpg",
+      "video_url": "https://x.com/unity3dvfx/status/2126206036075806942/video/1"
+     },
+     "summary": "账号 3Dgamedev 讲「冲击帧」为什么让动画打戏打得痛：日式动画靠插入单帧强对比画面制造冲击，UE5 有一个蓝图资源可以把同样的手法加到游戏攻击里。作者给出一句经验判断：战斗手感 90% 来自节奏（timing）、10% 来自粒子，而大多数项目把比例做反了。",
+     "analysis": "「90% timing / 10% particles」是个可执行的校准原则：先把手感调在帧数和停顿上，再补特效。它对正在做动作原型的小团队尤其实用——把预算从「堆粒子」挪到「调节奏」，往往比换引擎更快见效。",
+     "recommendation": "UE5 冲击帧蓝图：战斗手感 90% 靠节奏、10% 靠粒子，多数项目做反了"
+    }
+   ]
+  }
+ ],
+ "daily_summary": "**10 亿 token 造一座世界，AI 造游戏的账本摊开了**\n独立创作者 Stefan 用一周时间、5 个 Claude Ultra 订阅（约 10 亿 token），在 Unreal Engine 5.9 里从空工程堆出含 265 栋房屋、5 个种族、16 个任务的 MMORPG 世界，119 个 3D 模型来自 Tripo。同一天还有爆料称 DeepSeek 为华为昇腾 950 深度优化了四个核心代码库；而 Team Ninja 的表态更像行业共识：AI 可以接进流程，手感还得人来定。\n\n**GTA 6 的 PC 窗口被社区压到一周，代价是法律风险**\n主机版发售后一周，社区用 PS5 模拟器把 GTA 6 在 PC 上跑到锁定 60fps，后续还有人跑到 4K 原生 119–123fps。Take-Two 本周批量下架 GitHub 相关仓库，GitHub 甚至发过一条后来删除的帖子讨论「变更运行平台是否踩线」。同一时间，Marvelous 宣布目标裁 65 人重组主机业务（上半年利润却同比 +1105%），EA 砍掉《Skate》赛季更新，独立开发者则在呼吁把 Steam 上架费从 100 美元涨到 999 美元。\n\n**《丝之歌》用免费资料片拉回流，新作靠封测验手感**\nThe Game Awards 确认《丝之歌》首个大型资料片 Sea of Sorrow 于 12 月 11 日免费上线，Eurogamer 补充了钓鱼小游戏、把 Hornet 塞进大炮等细节。新作侧，韩国 5minlab 的三人合作怪谈讨伐动作《世界虚幻管理联盟：WPCA》开启 Steam/PS5 封测招募，是它第一次可上手。\n\n**工具侧的两个实用结论**：用 AI 做游戏不要从零写物理与寻路，把 Jolt、Recast、meshoptimizer 这些开源库连文档丢给 Codex 更快；战斗手感 90% 靠节奏、10% 靠粒子，多数项目把比例做反了。\n\n详情请点击下方【当日速览】的条目跳转到对应推文。"
+}
